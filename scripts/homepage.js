@@ -98,6 +98,15 @@
     set('[data-count-pantry]', pantryCount);
     set('[data-count-skills]', skillsCount);
 
+    // Inject family card art (single source of truth in build/lib/family-render)
+    try {
+      const art = await loadJson('data/family-art.json');
+      document.querySelectorAll('[data-family-art]').forEach(el => {
+        const key = el.dataset.familyArt;
+        if (art[key]) el.innerHTML = art[key];
+      });
+    } catch {}
+
     initSearch(entries);
   }
 

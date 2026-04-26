@@ -57,44 +57,133 @@ function relPath(fromPath, toPath) {
   return ('../'.repeat(ups) + downs.join('/')) || './';
 }
 
-function familyCardArt(family) {
-  // Subtle SVG art — geometric, draws on the family's category palette.
-  // Each family gets a distinctive shape language.
+export function familyCardArt(family) {
+  // Hand-tuned line-art icons. Each family gets a recognizable, distinctive
+  // mark drawn in its category color, with a paper-soft background wash.
+  // viewBox 200x160, designed to feel weighted toward the bottom (kitchen objects sit).
   if (family === 'cook') {
+    // Saucepan in profile + steam wisps. Reads as cooking.
     return `<svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="100" cy="90" r="60" fill="none" stroke="var(--cat-recipes)" stroke-width="2" opacity="0.5"/>
-      <ellipse cx="100" cy="55" rx="44" ry="10" fill="none" stroke="var(--cat-recipes)" stroke-width="1.4" opacity="0.4"/>
-      <line x1="65" y1="55" x2="65" y2="40" stroke="var(--cat-recipes)" stroke-width="1.4" opacity="0.45" stroke-linecap="round"/>
-      <line x1="100" y1="55" x2="100" y2="35" stroke="var(--cat-recipes)" stroke-width="1.4" opacity="0.45" stroke-linecap="round"/>
-      <line x1="135" y1="55" x2="135" y2="40" stroke="var(--cat-recipes)" stroke-width="1.4" opacity="0.45" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="pan-wash" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="var(--cat-recipes)" stop-opacity="0.04"/>
+          <stop offset="100%" stop-color="var(--cat-recipes)" stop-opacity="0.10"/>
+        </linearGradient>
+      </defs>
+      <!-- steam -->
+      <path d="M76 38 Q 70 28, 80 22 T 78 6" fill="none" stroke="var(--cat-recipes)" stroke-width="1.6" stroke-linecap="round" opacity="0.45"/>
+      <path d="M100 36 Q 94 26, 104 18 T 100 2" fill="none" stroke="var(--cat-recipes)" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
+      <path d="M124 38 Q 118 28, 128 22 T 126 6" fill="none" stroke="var(--cat-recipes)" stroke-width="1.6" stroke-linecap="round" opacity="0.45"/>
+      <!-- pan body -->
+      <path d="M50 60 L 150 60 Q 152 60, 152 62 L 142 130 Q 141 138, 132 138 L 68 138 Q 59 138, 58 130 L 48 62 Q 48 60, 50 60 Z"
+            fill="url(#pan-wash)" stroke="var(--cat-recipes)" stroke-width="2" stroke-linejoin="round"/>
+      <!-- rim highlight -->
+      <ellipse cx="100" cy="60" rx="51" ry="4" fill="none" stroke="var(--cat-recipes)" stroke-width="1.5" opacity="0.85"/>
+      <!-- handle -->
+      <path d="M152 78 L 184 70 Q 192 68, 192 62 Q 192 56, 184 58 L 150 66"
+            fill="none" stroke="var(--cat-recipes)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- inner contents line (subtle) -->
+      <ellipse cx="100" cy="70" rx="43" ry="3" fill="none" stroke="var(--cat-recipes)" stroke-width="1" opacity="0.35"/>
     </svg>`;
   }
+
   if (family === 'pantry') {
+    // Three pantry jars — one tall, two short. Reads as ingredients/storage.
     return `<svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-      <rect x="40" y="38" width="36" height="100" rx="3" fill="none" stroke="var(--cat-ingredients)" stroke-width="1.6" opacity="0.55"/>
-      <rect x="84" y="58" width="36" height="80" rx="3" fill="none" stroke="var(--cat-equipment)" stroke-width="1.6" opacity="0.55"/>
-      <rect x="128" y="48" width="36" height="90" rx="3" fill="none" stroke="var(--cat-ingredients)" stroke-width="1.6" opacity="0.55"/>
-      <line x1="40" y1="50" x2="76" y2="50" stroke="var(--cat-ingredients)" stroke-width="1" opacity="0.4"/>
-      <line x1="84" y1="70" x2="120" y2="70" stroke="var(--cat-equipment)" stroke-width="1" opacity="0.4"/>
-      <line x1="128" y1="60" x2="164" y2="60" stroke="var(--cat-ingredients)" stroke-width="1" opacity="0.4"/>
+      <defs>
+        <linearGradient id="jar-wash-a" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="var(--cat-ingredients)" stop-opacity="0.04"/>
+          <stop offset="100%" stop-color="var(--cat-ingredients)" stop-opacity="0.12"/>
+        </linearGradient>
+        <linearGradient id="jar-wash-b" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="var(--cat-equipment)" stop-opacity="0.04"/>
+          <stop offset="100%" stop-color="var(--cat-equipment)" stop-opacity="0.12"/>
+        </linearGradient>
+      </defs>
+      <!-- shelf line -->
+      <line x1="14" y1="142" x2="186" y2="142" stroke="var(--cat-ingredients)" stroke-width="1.4" opacity="0.4" stroke-linecap="round"/>
+      <!-- left jar (tall) -->
+      <rect x="34" y="44" width="36" height="8" rx="1.5" fill="none" stroke="var(--cat-ingredients)" stroke-width="1.8"/>
+      <path d="M36 52 Q 36 56, 38 56 L 66 56 Q 68 56, 68 52 L 70 142 L 32 142 Z"
+            fill="url(#jar-wash-a)" stroke="var(--cat-ingredients)" stroke-width="1.8" stroke-linejoin="round"/>
+      <!-- contents fill -->
+      <path d="M38 100 L 66 100 L 67 142 L 35 142 Z" fill="var(--cat-ingredients)" opacity="0.18"/>
+      <!-- middle jar (medium, equipment palette) -->
+      <rect x="84" y="68" width="32" height="7" rx="1.5" fill="none" stroke="var(--cat-equipment)" stroke-width="1.8"/>
+      <path d="M86 75 Q 86 79, 88 79 L 112 79 Q 114 79, 114 75 L 116 142 L 84 142 Z"
+            fill="url(#jar-wash-b)" stroke="var(--cat-equipment)" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M86 110 L 114 110 L 115 142 L 85 142 Z" fill="var(--cat-equipment)" opacity="0.16"/>
+      <!-- right jar (medium-tall) -->
+      <rect x="128" y="56" width="38" height="8" rx="1.5" fill="none" stroke="var(--cat-ingredients)" stroke-width="1.8"/>
+      <path d="M130 64 Q 130 68, 132 68 L 162 68 Q 164 68, 164 64 L 166 142 L 128 142 Z"
+            fill="url(#jar-wash-a)" stroke="var(--cat-ingredients)" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M132 92 L 164 92 L 165 142 L 131 142 Z" fill="var(--cat-ingredients)" opacity="0.14"/>
+      <!-- contents grain (dots in middle jar) -->
+      <circle cx="92" cy="118" r="1.2" fill="var(--cat-equipment)" opacity="0.55"/>
+      <circle cx="100" cy="124" r="1.2" fill="var(--cat-equipment)" opacity="0.55"/>
+      <circle cx="108" cy="120" r="1.2" fill="var(--cat-equipment)" opacity="0.55"/>
+      <circle cx="96" cy="132" r="1.2" fill="var(--cat-equipment)" opacity="0.55"/>
+      <circle cx="106" cy="135" r="1.2" fill="var(--cat-equipment)" opacity="0.55"/>
     </svg>`;
   }
+
   if (family === 'skills') {
+    // Chef's knife at an angle — direct, confident, "skill" reads instantly.
     return `<svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="60" cy="80" r="22" fill="none" stroke="var(--cat-techniques)" stroke-width="1.6" opacity="0.55"/>
-      <circle cx="100" cy="50" r="22" fill="none" stroke="var(--cat-cuisines)" stroke-width="1.6" opacity="0.55"/>
-      <circle cx="140" cy="80" r="22" fill="none" stroke="var(--cat-hubs)" stroke-width="1.6" opacity="0.55"/>
-      <circle cx="100" cy="115" r="22" fill="none" stroke="var(--cat-techniques)" stroke-width="1.4" opacity="0.4"/>
-      <line x1="78" y1="68" x2="86" y2="58" stroke="var(--ink-faint)" stroke-width="0.8" opacity="0.4"/>
-      <line x1="114" y1="58" x2="122" y2="68" stroke="var(--ink-faint)" stroke-width="0.8" opacity="0.4"/>
-      <line x1="100" y1="72" x2="100" y2="93" stroke="var(--ink-faint)" stroke-width="0.8" opacity="0.4"/>
+      <defs>
+        <linearGradient id="blade-wash" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="var(--cat-techniques)" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="var(--cat-techniques)" stop-opacity="0.04"/>
+        </linearGradient>
+      </defs>
+      <!-- cutting board (subtle grain) -->
+      <rect x="22" y="118" width="156" height="22" rx="3" fill="none" stroke="var(--cat-cuisines)" stroke-width="1.4" opacity="0.45"/>
+      <line x1="40" y1="125" x2="60" y2="125" stroke="var(--cat-cuisines)" stroke-width="0.8" opacity="0.35"/>
+      <line x1="78" y1="132" x2="106" y2="132" stroke="var(--cat-cuisines)" stroke-width="0.8" opacity="0.35"/>
+      <line x1="124" y1="125" x2="158" y2="125" stroke="var(--cat-cuisines)" stroke-width="0.8" opacity="0.35"/>
+      <!-- knife blade -->
+      <path d="M30 96 L 138 70 L 144 92 L 30 96 Z"
+            fill="url(#blade-wash)" stroke="var(--cat-techniques)" stroke-width="2" stroke-linejoin="round"/>
+      <!-- spine highlight -->
+      <line x1="32" y1="96" x2="138" y2="72" stroke="var(--cat-techniques)" stroke-width="1" opacity="0.5"/>
+      <!-- bolster -->
+      <rect x="138" y="84" width="10" height="14" rx="1.5" fill="var(--cat-techniques)" opacity="0.85"/>
+      <!-- handle -->
+      <path d="M148 86 L 180 84 Q 184 84, 184 88 L 184 96 Q 184 100, 180 100 L 148 98 Z"
+            fill="var(--cat-techniques)" opacity="0.7" stroke="var(--cat-techniques)" stroke-width="1.4" stroke-linejoin="round"/>
+      <!-- rivets -->
+      <circle cx="158" cy="92" r="1.4" fill="var(--bg)" stroke="var(--cat-techniques)" stroke-width="0.8"/>
+      <circle cx="172" cy="92" r="1.4" fill="var(--bg)" stroke="var(--cat-techniques)" stroke-width="0.8"/>
     </svg>`;
   }
-  // explore — composite of all three
+
+  // explore — three small cards showing the families together
   return `<svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-    <rect x="35" y="30" width="48" height="48" rx="4" fill="none" stroke="var(--cat-recipes)" stroke-width="1.6" opacity="0.55"/>
-    <rect x="118" y="30" width="48" height="48" rx="4" fill="none" stroke="var(--cat-ingredients)" stroke-width="1.6" opacity="0.55"/>
-    <rect x="76" y="82" width="48" height="48" rx="4" fill="none" stroke="var(--cat-techniques)" stroke-width="1.6" opacity="0.55"/>
+    <defs>
+      <linearGradient id="exp-r" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="var(--cat-recipes)" stop-opacity="0.06"/>
+        <stop offset="100%" stop-color="var(--cat-recipes)" stop-opacity="0.18"/>
+      </linearGradient>
+      <linearGradient id="exp-i" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="var(--cat-ingredients)" stop-opacity="0.06"/>
+        <stop offset="100%" stop-color="var(--cat-ingredients)" stop-opacity="0.18"/>
+      </linearGradient>
+      <linearGradient id="exp-t" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="var(--cat-techniques)" stop-opacity="0.06"/>
+        <stop offset="100%" stop-color="var(--cat-techniques)" stop-opacity="0.18"/>
+      </linearGradient>
+    </defs>
+    <rect x="22" y="36" width="52" height="52" rx="6" fill="url(#exp-r)" stroke="var(--cat-recipes)" stroke-width="1.8"/>
+    <circle cx="48" cy="62" r="14" fill="none" stroke="var(--cat-recipes)" stroke-width="1.4" opacity="0.7"/>
+    <ellipse cx="48" cy="51" rx="11" ry="2.2" fill="none" stroke="var(--cat-recipes)" stroke-width="1.2" opacity="0.7"/>
+
+    <rect x="126" y="36" width="52" height="52" rx="6" fill="url(#exp-i)" stroke="var(--cat-ingredients)" stroke-width="1.8"/>
+    <rect x="138" y="48" width="10" height="32" rx="1.5" fill="none" stroke="var(--cat-ingredients)" stroke-width="1.4" opacity="0.75"/>
+    <rect x="156" y="54" width="10" height="26" rx="1.5" fill="none" stroke="var(--cat-ingredients)" stroke-width="1.4" opacity="0.75"/>
+
+    <rect x="74" y="84" width="52" height="52" rx="6" fill="url(#exp-t)" stroke="var(--cat-techniques)" stroke-width="1.8"/>
+    <path d="M85 116 L 113 102 L 116 110 L 85 116 Z" fill="none" stroke="var(--cat-techniques)" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
+    <rect x="115" y="106" width="6" height="6" rx="1" fill="var(--cat-techniques)" opacity="0.65"/>
   </svg>`;
 }
 
@@ -188,10 +277,20 @@ export function renderFamilyContent(family, entries, fromPath) {
   const meta = FAMILY_META[family];
   const totalEntries = memberKeys.reduce((n, k) => n + (byCategory.get(k)?.length || 0), 0);
 
+  // Per-category breakdown for the intro stats strip
+  const catStats = memberKeys.map(k => {
+    const list = byCategory.get(k) || [];
+    const cm = categoryMeta()[k] || { label: k };
+    return `<a class="fam-stat" href="#cat-${escapeHtml(k)}" data-category="${escapeHtml(k)}">
+        <span class="fam-stat-num">${list.length}</span>
+        <span class="fam-stat-label">${escapeHtml(cm.label)}</span>
+      </a>`;
+  }).join('');
+
   const intro = `
     <div class="fam-intro">
-      <span class="fam-intro-stat">${totalEntries} ${totalEntries === 1 ? 'entry' : 'entries'} · ${memberKeys.length} categor${memberKeys.length === 1 ? 'y' : 'ies'}</span>
       <p class="fam-intro-text">${escapeHtml(meta.desc)}</p>
+      <div class="fam-stats" role="navigation" aria-label="Jump to category">${catStats}</div>
     </div>`;
 
   // For 'cook' (the recipe explore), include filter bar

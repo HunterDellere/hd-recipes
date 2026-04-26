@@ -25,7 +25,7 @@ import { renderOgSvg, categoryFaviconDataUri } from './lib/og.mjs';
 import {
   renderRecipeBody, renderIngredientBody, renderTechniqueBody, renderHubBody,
 } from './lib/recipe-render.mjs';
-import { renderFamilyContent, renderFamilyCrosslinks } from './lib/family-render.mjs';
+import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -352,6 +352,14 @@ entries.sort((a, b) => {
 });
 
 writeFileSync(join(dataDir, 'entries.json'), JSON.stringify(entries, null, 2), 'utf8');
+
+// Family art SVGs for the homepage (browser injects via [data-family-art])
+writeFileSync(join(dataDir, 'family-art.json'), JSON.stringify({
+  cook: familyCardArt('cook'),
+  pantry: familyCardArt('pantry'),
+  skills: familyCardArt('skills'),
+  explore: familyCardArt('explore'),
+}, null, 2), 'utf8');
 writeFileSync(join(dataDir, 'nutrition.json'), JSON.stringify(nutritionByPath, null, 2), 'utf8');
 
 // search index
