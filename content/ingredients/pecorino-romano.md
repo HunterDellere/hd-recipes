@@ -9,7 +9,7 @@ desc: 'Hard sheep''s-milk cheese from Lazio. Salty, sharp, lactic — the canoni
 tags: ['dairy', 'umami', 'italian']
 updated: '2026-04-26'
 
-usda_fdc_id: 173417
+usda_fdc_id: 171249
 
 about: |
   Hard sheep's-milk cheese aged 5–8 months. Saltier and more aggressive than parmigiano (which is cow's milk). The lactic tang and salt level are why it's the canonical cheese for cacio e pepe and amatriciana — the salt does double duty as seasoning, and the sharp lactic note balances the fat.

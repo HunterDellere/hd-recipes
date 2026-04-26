@@ -117,8 +117,14 @@ export async function fetchFdcFood(fdcId, apiKey, opts = {}) {
       nutrients: {}, fetchedAt: new Date().toISOString(),
     };
     const nutrients = data.foodNutrients || [];
+    // SR Legacy / Foundation: nutrient.id is the numeric FDC nutrient id
+    //   (e.g. 1008 = energy kcal). Branded foods sometimes use nutrientId at
+    //   the top level. Try both.
     for (const [key, id] of Object.entries(NUTRIENT_IDS)) {
-      const n = nutrients.find(x => (x.nutrient && x.nutrient.number === String(id)) || x.nutrientId === id);
+      const n = nutrients.find(x =>
+        (x.nutrient && x.nutrient.id === id) ||
+        x.nutrientId === id
+      );
       if (n) out.nutrients[key] = n.amount ?? n.value ?? null;
     }
     return { food: out, rateRemaining, rateLimit };
