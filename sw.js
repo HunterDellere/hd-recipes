@@ -1,67 +1,104 @@
-/* sw.js — minimal offline cache for hd-recipes.
- * Network-first for HTML, JS, CSS, and JSON data (so authoring updates
- * always show); cache-first for static assets (images, fonts).
+/* hd · recipes — service worker
  *
- * Bump CACHE when shipping a breaking change to invalidate older caches.
+ * Strategy:
+ *   - Install: pre-cache the shell (style, scripts, core data, manifest, icons).
+ *   - Fetch (HTML): network-first, fall back to cache, fall back to cached homepage.
+ *   - Fetch (other GET, same-origin): stale-while-revalidate so visited pages and JSON load instantly.
+ *   - Cross-origin (Google Fonts): cache-first with refresh so offline reading still works.
+ *
+ * Bump VERSION when shipping a breaking change to invalidate older caches.
  */
-const CACHE = 'hdr-v3';
-const SHELL = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/style-home.css',
-  '/scripts/homepage.js',
-  '/scripts/recipe.js',
-  '/scripts/enhance.js',
-  '/scripts/toc-scroll.js',
-  '/data/entries.json',
-  '/data/recent.json',
-  '/data/category-meta.json',
-  '/data/search-index.json',
+const VERSION = 'hdr-v4';
+const SHELL_CACHE = `${VERSION}-shell`;
+const RUNTIME_CACHE = `${VERSION}-runtime`;
+
+const SHELL_ASSETS = [
+  './',
+  './index.html',
+  './style.css',
+  './style-home.css',
+  './scripts/homepage.js',
+  './scripts/recipe.js',
+  './scripts/toc-scroll.js',
+  './scripts/enhance.js',
+  './data/entries.json',
+  './data/recent.json',
+  './data/category-meta.json',
+  './data/search-index.json',
+  './data/featured.json',
+  './data/family-art.json',
+  './manifest.webmanifest',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
+  './icons/icon-maskable-512.png',
+  './icons/apple-touch-icon.png'
 ];
 
-self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL).catch(() => {})));
+self.addEventListener('install', event => {
   self.skipWaiting();
+  event.waitUntil(
+    caches.open(SHELL_CACHE)
+      .then(cache => cache.addAll(SHELL_ASSETS).catch(() => null))
+  );
 });
 
-self.addEventListener('activate', e => {
-  e.waitUntil(caches.keys().then(keys =>
-    Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-  ));
-  self.clients.claim();
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => !k.startsWith(VERSION)).map(k => caches.delete(k)))
+    ).then(() => self.clients.claim())
+  );
 });
 
-function isFreshAsset(url) {
-  // Files that change with deploys → network-first so stale caches don't bite
-  return /\.(html|js|css|json)(\?|$)/.test(url.pathname) || url.pathname === '/';
+function isHtmlRequest(req) {
+  return req.mode === 'navigate' ||
+    (req.method === 'GET' && req.headers.get('accept') && req.headers.get('accept').includes('text/html'));
 }
 
-self.addEventListener('fetch', e => {
-  const url = new URL(e.request.url);
-  if (url.origin !== location.origin) return;
+self.addEventListener('fetch', event => {
+  const req = event.request;
+  if (req.method !== 'GET') return;
 
-  if (isFreshAsset(url) || e.request.mode === 'navigate') {
-    e.respondWith(
-      fetch(e.request).then(r => {
-        if (r.ok) {
-          const copy = r.clone();
-          caches.open(CACHE).then(c => c.put(e.request, copy)).catch(() => {});
-        }
-        return r;
-      }).catch(() => caches.match(e.request).then(m => m || caches.match('/index.html')))
+  const url = new URL(req.url);
+
+  // HTML: network-first
+  if (isHtmlRequest(req)) {
+    event.respondWith(
+      fetch(req).then(res => {
+        const copy = res.clone();
+        caches.open(RUNTIME_CACHE).then(c => c.put(req, copy));
+        return res;
+      }).catch(() => caches.match(req).then(m => m || caches.match('./index.html')))
     );
     return;
   }
 
-  // Other assets (images, fonts, OG SVGs) — cache-first is fine
-  e.respondWith(
-    caches.match(e.request).then(m => m || fetch(e.request).then(r => {
-      if (r.ok) {
-        const copy = r.clone();
-        caches.open(CACHE).then(c => c.put(e.request, copy)).catch(() => {});
-      }
-      return r;
-    }))
+  // Same-origin static / data: stale-while-revalidate
+  if (url.origin === location.origin) {
+    event.respondWith(
+      caches.match(req).then(cached => {
+        const network = fetch(req).then(res => {
+          const copy = res.clone();
+          caches.open(RUNTIME_CACHE).then(c => c.put(req, copy));
+          return res;
+        }).catch(() => cached);
+        return cached || network;
+      })
+    );
+    return;
+  }
+
+  // Cross-origin (Google Fonts): cache-first with refresh
+  event.respondWith(
+    caches.match(req).then(cached => {
+      if (cached) return cached;
+      return fetch(req).then(res => {
+        if (res && res.status === 200) {
+          const copy = res.clone();
+          caches.open(RUNTIME_CACHE).then(c => c.put(req, copy));
+        }
+        return res;
+      }).catch(() => cached);
+    })
   );
 });
