@@ -122,4 +122,64 @@
     initShop(root);
     initStrike(root);
   });
+
+  // ── filter bar (cook explore page) ─────────────────────────────────
+  const filterBar = document.querySelector('.filter-bar');
+  if (filterBar) initExploreFilters(filterBar);
+
+  function initExploreFilters(bar) {
+    const grid = document.querySelector('[data-grid]');
+    const status = document.querySelector('[data-filter-status]');
+    if (!grid) return;
+    const cards = Array.from(grid.querySelectorAll('[data-card]'));
+    const state = { cuisine: null, course: null, diet: null, time: null, difficulty: null };
+
+    function apply() {
+      let visible = 0;
+      for (const card of cards) {
+        const matchCuisine = !state.cuisine || card.dataset.cuisine === state.cuisine;
+        const matchCourse = !state.course || card.dataset.course === state.course;
+        const matchDiet = !state.diet || (card.dataset.diet || '').split('|').includes(state.diet);
+        const matchDiff = !state.difficulty || card.dataset.difficulty === state.difficulty;
+        const matchTime = !state.time || (card.dataset.time && parseInt(card.dataset.time, 10) <= parseInt(state.time, 10));
+        const show = matchCuisine && matchCourse && matchDiet && matchDiff && matchTime;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      }
+      const filters = [];
+      if (state.cuisine) filters.push(state.cuisine);
+      if (state.course) filters.push(state.course);
+      if (state.diet) filters.push(state.diet);
+      if (state.difficulty) filters.push(state.difficulty);
+      if (state.time) filters.push(`≤ ${state.time} min`);
+      if (status) {
+        status.textContent = filters.length
+          ? `${visible} ${visible === 1 ? 'recipe' : 'recipes'} matching ${filters.join(' · ')}`
+          : '';
+      }
+    }
+
+    bar.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      if (btn.hasAttribute('data-filter-clear')) {
+        for (const k of Object.keys(state)) state[k] = null;
+        bar.querySelectorAll('.filter-pill.active').forEach(b => b.classList.remove('active'));
+        apply();
+        return;
+      }
+      const groups = ['cuisine','course','diet','time','difficulty'];
+      let group = null, val = null;
+      for (const g of groups) {
+        const k = `filter${g.charAt(0).toUpperCase() + g.slice(1)}`;
+        if (btn.dataset[k] !== undefined) { group = g; val = btn.dataset[k]; }
+      }
+      if (!group) return;
+      const wasActive = btn.classList.contains('active');
+      bar.querySelectorAll(`[data-filter-${group}]`).forEach(b => b.classList.remove('active'));
+      if (wasActive) state[group] = null;
+      else { state[group] = val; btn.classList.add('active'); }
+      apply();
+    });
+  }
 })();

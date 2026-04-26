@@ -1,5 +1,49 @@
 [
   {
+    "path": "pages/explore/cook.html",
+    "type": "family",
+    "category": "explore",
+    "title": "Cook",
+    "desc": "Tested recipes. Filter by cuisine, course, diet, time, and difficulty.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "cook",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/explore/index.html",
+    "type": "family",
+    "category": "explore",
+    "title": "Explore",
+    "desc": "Three families gather every entry. Pick a family for a focused walk, or jump straight to a category.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "index",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/explore/pantry.html",
+    "type": "family",
+    "category": "explore",
+    "title": "Pantry",
+    "desc": "What ingredients are, how to choose and store them, what to swap. Plus the equipment that earns its drawer.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "pantry",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/explore/skills.html",
+    "type": "family",
+    "category": "explore",
+    "title": "Skills",
+    "desc": "Methods that show up across many recipes. Cuisines built from a pantry. Curated reading paths.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "skills",
+    "updated": "2026-04-26"
+  },
+  {
     "path": "pages/hubs/weeknight-pasta.html",
     "type": "hub",
     "category": "hubs",
@@ -225,168 +269,5 @@
     "status": "complete",
     "_slug": "star-anise",
     "updated": "2026-04-26"
-  },
-  {
-    "path": "pages/ingredients/vanilla-bean-paste.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Vanilla bean paste",
-    "desc": "Vanilla extract suspended in a syrup with the scraped seeds of the pod. Same flavor as a whole bean, a fraction of the price, and you get the visible black flecks.",
-    "tags": [
-      "aromatic"
-    ],
-    "status": "complete",
-    "_slug": "vanilla-bean-paste",
-    "updated": "2026-04-26"
-  },
-  {
-    "path": "pages/ingredients/whole-milk.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Whole milk",
-    "desc": "Cow's milk at ~3.25% fat. The fat carries flavor and the casein binds tannins, which is why it shows up in everything from chai to custard.",
-    "tags": [
-      "dairy"
-    ],
-    "status": "complete",
-    "_slug": "whole-milk",
-    "updated": "2026-04-26"
-  },
-  {
-    "path": "pages/recipes/brown-butter-cacio-e-pepe.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Brown butter cacio e pepe",
-    "desc": "Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttiness over the pecorino lactic-tang and bloomed peppercorn piperine.",
-    "tags": [
-      "weeknight",
-      "pasta",
-      "italian",
-      "umami",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "brown-butter-cacio-e-pepe",
-    "cuisine": "Italian",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 12,
-      "total_min": 17,
-      "active_min": 12
-    },
-    "rating": 5,
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "kosher salt",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "pecorino romano",
-        "slug": "pecorino-romano",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "tonnarelli or spaghetti",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "brown-butter",
-      "pan-emulsion"
-    ],
-    "equipment": []
-  },
-  {
-    "path": "pages/recipes/brown-butter-sugar-cookies.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Brown butter sugar cookies",
-    "desc": "Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar shell on top.",
-    "tags": [
-      "cookies",
-      "dessert",
-      "american",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "brown-butter-sugar-cookies",
-    "course": "dessert",
-    "difficulty": "easy",
-    "servings": 12,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 12,
-      "total_min": 22,
-      "active_min": 12
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "light brown sugar",
-        "optional": false
-      },
-      {
-        "item": "large egg",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar, for rolling",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": []
   }
 ]

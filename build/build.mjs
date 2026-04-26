@@ -25,6 +25,7 @@ import { renderOgSvg, categoryFaviconDataUri } from './lib/og.mjs';
 import {
   renderRecipeBody, renderIngredientBody, renderTechniqueBody, renderHubBody,
 } from './lib/recipe-render.mjs';
+import { renderFamilyContent, renderFamilyCrosslinks } from './lib/family-render.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -257,6 +258,13 @@ let autoLinkCount = 0;
 for (const { fm, body, slug, category, outDir, entry } of pending) {
   try {
     let augmentedBody = body.trim();
+
+    // Family-explore pages: replace markers with rendered content + crosslinks
+    if (fm.family && augmentedBody.includes('<!--FAMILY_CONTENT-->')) {
+      augmentedBody = augmentedBody
+        .replace('<!--FAMILY_CONTENT-->',    renderFamilyContent(fm.family, entries, entry.path))
+        .replace('<!--FAMILY_CROSSLINKS-->', renderFamilyCrosslinks(fm.family, entry.path));
+    }
 
     // Auto-render recipe / ingredient / technique / hub bodies if no body authored
     if (!augmentedBody) {

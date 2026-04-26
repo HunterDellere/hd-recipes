@@ -6,11 +6,15 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["recipe", "ingredient", "technique", "cuisine", "equipment", "hub"]
+      "enum": ["recipe", "ingredient", "technique", "cuisine", "equipment", "hub", "family"]
     },
     "category": {
       "type": "string",
-      "enum": ["recipes", "ingredients", "techniques", "cuisines", "equipment", "hubs"]
+      "enum": ["recipes", "ingredients", "techniques", "cuisines", "equipment", "hubs", "explore"]
+    },
+    "family": {
+      "type": "string",
+      "enum": ["cook", "pantry", "skills", "explore"]
     },
     "status": { "type": "string", "enum": ["stub", "draft", "complete"] },
     "content_review": { "type": "string", "enum": ["pending", "verified", "needs-work"] },

@@ -781,3 +781,233 @@ pre code { background: none; padding: 0; }
   a { color: #000 !important; text-decoration: none; border: none !important; }
   .ing-link, .x-link, .step-tech { border: none !important; }
 }
+
+/* ── explore family pages ────────────────────────────── */
+.fam-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+.fam-main { min-width: 0; }
+
+.fam-hero {
+  text-align: center;
+  padding: 2.5rem 1rem 3rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule-soft);
+  position: relative;
+}
+.fam-hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .25em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--accent-soft);
+}
+.fam-hero[data-family="cook"]    .fam-hero-eyebrow { color: var(--cat-recipes);     border-bottom-color: rgba(184,66,58,.18); }
+.fam-hero[data-family="pantry"]  .fam-hero-eyebrow { color: var(--cat-ingredients); border-bottom-color: rgba(58,122,58,.18); }
+.fam-hero[data-family="skills"]  .fam-hero-eyebrow { color: var(--cat-techniques);  border-bottom-color: rgba(165,90,26,.18); }
+.fam-hero[data-family="explore"] .fam-hero-eyebrow { color: var(--accent);          border-bottom-color: var(--accent-soft); }
+.fam-hero-title {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 0 0 .55em; letter-spacing: -0.02em; line-height: 1.1;
+}
+.fam-hero-desc {
+  font-size: 1.1rem; color: var(--ink-soft);
+  max-width: 56ch; margin: 0 auto;
+  line-height: 1.55;
+}
+
+.fam-intro {
+  display: flex; flex-direction: column; align-items: center; gap: .5rem;
+  margin: 0 0 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed var(--rule);
+  text-align: center;
+}
+.fam-intro-stat {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--ink-faint);
+}
+.fam-intro-text {
+  font-family: var(--font-serif); font-style: italic;
+  color: var(--ink-soft); font-size: 1rem; max-width: 60ch; margin: 0;
+}
+
+.fam-cat {
+  margin-bottom: 3rem;
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+.fam-cat-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+  margin-bottom: .35rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--rule);
+}
+.fam-cat[data-category="recipes"]     .fam-cat-head { border-bottom-color: var(--cat-recipes); }
+.fam-cat[data-category="ingredients"] .fam-cat-head { border-bottom-color: var(--cat-ingredients); }
+.fam-cat[data-category="techniques"]  .fam-cat-head { border-bottom-color: var(--cat-techniques); }
+.fam-cat[data-category="cuisines"]    .fam-cat-head { border-bottom-color: var(--cat-cuisines); }
+.fam-cat[data-category="equipment"]   .fam-cat-head { border-bottom-color: var(--cat-equipment); }
+.fam-cat[data-category="hubs"]        .fam-cat-head { border-bottom-color: var(--cat-hubs); }
+.fam-cat-title {
+  font-family: var(--font-serif); font-weight: 700;
+  font-size: 1.7rem; margin: 0;
+  letter-spacing: -0.01em;
+}
+.fam-cat-count {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--ink-faint);
+}
+.fam-cat-blurb {
+  color: var(--ink-soft); font-style: italic;
+  margin: 0 0 1.25rem;
+  font-size: 15px;
+}
+.fam-cat-empty {
+  color: var(--ink-faint); font-style: italic; padding: 1rem 0;
+  font-family: var(--font-sans); font-size: 14px;
+}
+
+/* explore page: category strip below family cards */
+.fam-cat-strip {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px dashed var(--rule);
+}
+.fam-cat-strip-h {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--ink-faint);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+.cat-link-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: .5rem;
+}
+.cat-link {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .65rem 1rem;
+  background: var(--bg-elev); border: 1px solid var(--rule);
+  border-radius: 8px;
+  font-family: var(--font-sans); font-size: 14px; font-weight: 500;
+  color: var(--ink-soft);
+  transition: border-color 120ms, color 120ms, background 120ms;
+}
+.cat-link:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.cat-link[data-category="recipes"]:hover     { border-color: var(--cat-recipes); color: var(--cat-recipes); }
+.cat-link[data-category="ingredients"]:hover { border-color: var(--cat-ingredients); color: var(--cat-ingredients); }
+.cat-link[data-category="techniques"]:hover  { border-color: var(--cat-techniques); color: var(--cat-techniques); }
+.cat-link[data-category="cuisines"]:hover    { border-color: var(--cat-cuisines); color: var(--cat-cuisines); }
+.cat-link[data-category="equipment"]:hover   { border-color: var(--cat-equipment); color: var(--cat-equipment); }
+.cat-link[data-category="hubs"]:hover        { border-color: var(--cat-hubs); color: var(--cat-hubs); }
+.cl-label { font-weight: 500; }
+.cl-count {
+  font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint);
+  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+}
+
+/* explore page: cross-links footer */
+.fam-cross {
+  margin-top: 4rem; padding-top: 2rem;
+  border-top: 1px dashed var(--rule);
+  text-align: center;
+}
+.fam-cross-label {
+  display: block;
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--ink-faint);
+  margin-bottom: 1rem;
+}
+.fam-cross-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .85rem; max-width: 760px; margin: 0 auto;
+}
+.fam-cross-link {
+  display: flex; flex-direction: column; gap: .25rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-elev); border: 1px solid var(--rule);
+  border-radius: 10px;
+  font-family: var(--font-sans);
+  text-align: left;
+  color: var(--ink);
+  transition: border-color 120ms, transform 100ms;
+}
+.fam-cross-link:hover { border-color: var(--accent); transform: translateY(-1px); text-decoration: none; }
+.fam-cross-link[data-family="cook"]   { border-left: 3px solid var(--cat-recipes); }
+.fam-cross-link[data-family="pantry"] { border-left: 3px solid var(--cat-ingredients); }
+.fam-cross-link[data-family="skills"] { border-left: 3px solid var(--cat-techniques); }
+.fcl-label { font-family: var(--font-serif); font-weight: 700; font-size: 17px; color: var(--ink); }
+.fcl-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.4; }
+
+/* Hide mobile toc-toggle when there's no sidebar to toggle (family pages) */
+body:not(:has(#sidebar)) .toc-toggle { display: none !important; }
+
+/* ── filter bar (used on cook explore page) ──────────── */
+.filter-bar {
+  display: flex; flex-direction: column; gap: .85rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: 10px;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-sans);
+}
+.filter-group {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .35rem;
+}
+.filter-label {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--ink-faint);
+  margin-right: .5rem;
+  min-width: 70px;
+}
+.filter-pill {
+  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+  padding: 5px 12px;
+  background: var(--bg);
+  color: var(--ink-soft);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 120ms, color 120ms, background 120ms;
+}
+.filter-pill:hover { border-color: var(--accent); color: var(--accent); }
+.filter-pill.active {
+  background: var(--accent); color: #fff;
+  border-color: var(--accent);
+}
+.filter-clear-btn {
+  margin-left: auto;
+  color: var(--ink-faint);
+  border-style: dashed;
+}
+.filter-clear-btn:hover { color: var(--accent); border-color: var(--accent); border-style: solid; }
+.filter-status {
+  font-family: var(--font-sans); font-size: 13px;
+  color: var(--ink-faint); margin: 0 0 1.5rem;
+  min-height: 1.2em;
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  .filter-bar { padding: .85rem 1rem; }
+  .filter-label { min-width: 0; flex-basis: 100%; margin: 0 0 .25rem; }
+  .filter-clear-btn { margin-left: 0; align-self: flex-start; }
+}
+
+@media (max-width: 700px) {
+  .families-grid { grid-template-columns: 1fr; }
+  .fam-shell { padding: 1.25rem 1.25rem 4rem; }
+  .fam-hero { padding: 2rem .5rem 2rem; margin-bottom: 1.5rem; }
+  .fam-hero-title { font-size: 1.9rem; }
+  .fam-cat-title { font-size: 1.4rem; }
+  .cat-link-grid { grid-template-columns: 1fr 1fr; }
+}

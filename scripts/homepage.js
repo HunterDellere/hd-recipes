@@ -1,6 +1,9 @@
 /**
  * homepage.js — hd-recipes index rendering.
  * Loads data/entries.json, data/recent.json, data/category-meta.json, data/search-index.json.
+ *
+ * Renders: featured pick, recently added, family counts, search.
+ * The full all-entries grid lives at /pages/explore/* — not on the home.
  */
 (function () {
   'use strict';
@@ -30,6 +33,24 @@
       </a>`;
   }
 
+  function featuredCard(e) {
+    const meta = [];
+    if (e.servings) meta.push(`<strong>${e.servings}</strong> servings`);
+    if (e.time && e.time.total_min) meta.push(`<strong>${e.time.total_min}</strong> min`);
+    if (e.difficulty) meta.push(`<span class="ff-diff ff-d-${escapeHtml(e.difficulty)}">${escapeHtml(e.difficulty)}</span>`);
+    if (e.cuisine) meta.push(escapeHtml(e.cuisine));
+    return `
+      <a class="ff-card" href="${escapeHtml(e.path)}" data-category="${escapeHtml(e.category)}">
+        <div class="ff-body">
+          <span class="ff-eyebrow">Recipe</span>
+          <h3 class="ff-title">${escapeHtml(e.title || '')}</h3>
+          ${e.desc ? `<p class="ff-desc">${escapeHtml(e.desc)}</p>` : ''}
+          ${meta.length ? `<div class="ff-meta">${meta.join(' · ')}</div>` : ''}
+        </div>
+        <span class="ff-arrow" aria-hidden="true">→</span>
+      </a>`;
+  }
+
   async function loadJson(path) {
     const r = await fetch(path);
     if (!r.ok) throw new Error(`Failed to load ${path}`);
@@ -49,128 +70,35 @@
       return;
     }
 
+    // Featured: a complete recipe, biased to recently added but rotated daily-ish
+    const recipes = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
+    const featuredEl = $('#featured-card');
+    if (recipes.length) {
+      const dayKey = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
+      const pick = recipes[dayKey % recipes.length];
+      featuredEl.innerHTML = featuredCard(pick);
+    } else {
+      featuredEl.innerHTML = `<p class="empty">No recipes yet.</p>`;
+    }
+
+    // Recent
     const recentEl = $('#recent-list');
-    if (recent.length) recentEl.innerHTML = recent.slice(0, 8).map(entryCard).join('');
-    else recentEl.innerHTML = `<p class="empty">No entries yet.</p>`;
-
-    const catEl = $('#cat-list');
-    const catCounts = {};
-    for (const e of entries) {
-      if (e.status !== 'complete') continue;
-      catCounts[e.category] = (catCounts[e.category] || 0) + 1;
-    }
-    catEl.innerHTML = Object.entries(catMeta).map(([key, m]) => `
-      <a class="cat-card" href="#cat-${escapeHtml(key)}" data-category="${escapeHtml(key)}">
-        <span class="cc-label">${escapeHtml(m.label)}</span>
-        <span class="cc-blurb">${escapeHtml(m.blurb || '')}</span>
-        <span class="cc-count">${catCounts[key] || 0}</span>
-      </a>`).join('');
-
-    const allEl = $('#all-list');
-    const complete = entries.filter(e => e.status === 'complete');
-
-    // Build filter pills from tags + cuisines + courses + diets
-    const allTags = new Map();   // tag → count
-    const cuisines = new Set();
-    const courses = new Set();
-    const diets = new Set();
-    for (const e of complete) {
-      for (const t of (e.tags || [])) allTags.set(t, (allTags.get(t) || 0) + 1);
-      if (e.cuisine) cuisines.add(e.cuisine);
-      if (e.course) courses.add(e.course);
-      for (const d of (e.diet || [])) diets.add(d);
+    if (recent.length) {
+      recentEl.innerHTML = recent.slice(0, 8).map(entryCard).join('');
+    } else {
+      recentEl.innerHTML = `<p class="empty">No entries yet.</p>`;
     }
 
-    const filterBar = `
-      <div class="filter-bar" role="toolbar" aria-label="Filter entries">
-        <div class="filter-group">
-          <span class="filter-label">Type</span>
-          <button type="button" class="filter-pill active" data-filter-type="all">All</button>
-          ${Object.keys(catMeta).map(cat => `<button type="button" class="filter-pill" data-filter-type="${escapeHtml(cat)}">${escapeHtml(catMeta[cat].label)}</button>`).join('')}
-        </div>
-        ${cuisines.size ? `<div class="filter-group">
-          <span class="filter-label">Cuisine</span>
-          ${[...cuisines].sort().map(c => `<button type="button" class="filter-pill" data-filter-cuisine="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
-        </div>` : ''}
-        ${courses.size ? `<div class="filter-group">
-          <span class="filter-label">Course</span>
-          ${[...courses].sort().map(c => `<button type="button" class="filter-pill" data-filter-course="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
-        </div>` : ''}
-        ${diets.size ? `<div class="filter-group">
-          <span class="filter-label">Diet</span>
-          ${[...diets].sort().map(d => `<button type="button" class="filter-pill" data-filter-diet="${escapeHtml(d)}">${escapeHtml(d)}</button>`).join('')}
-        </div>` : ''}
-      </div>
-      <p class="filter-status" data-filter-status></p>`;
+    // Family counts
+    const cookCount = entries.filter(e => e.status === 'complete' && e.category === 'recipes').length;
+    const pantryCount = entries.filter(e => e.status === 'complete' && (e.category === 'ingredients' || e.category === 'equipment')).length;
+    const skillsCount = entries.filter(e => e.status === 'complete' && (e.category === 'techniques' || e.category === 'cuisines' || e.category === 'hubs')).length;
+    const set = (sel, n) => { const el = document.querySelector(sel); if (el) el.textContent = `${n} ${n === 1 ? 'entry' : 'entries'}`; };
+    set('[data-count-cook]', cookCount);
+    set('[data-count-pantry]', pantryCount);
+    set('[data-count-skills]', skillsCount);
 
-    const cardsHtml = complete.map(e => {
-      const cardData = `data-card data-cat="${escapeHtml(e.category)}" data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`;
-      return entryCard(e).replace('class="entry-card"', `class="entry-card" ${cardData}`);
-    }).join('');
-
-    allEl.innerHTML = complete.length
-      ? `${filterBar}<div class="card-grid" id="all-grid">${cardsHtml}</div>`
-      : `<p class="empty">Add a recipe in <code>content/recipes/</code> and run <code>npm run build</code>.</p>`;
-
-    initFilters();
     initSearch(entries);
-  }
-
-  function initFilters() {
-    const bar = document.querySelector('.filter-bar');
-    if (!bar) return;
-    const grid = document.getElementById('all-grid');
-    const status = document.querySelector('[data-filter-status]');
-    const cards = Array.from(grid.querySelectorAll('[data-card]'));
-    const state = { type: 'all', cuisine: null, course: null, diet: null };
-
-    function apply() {
-      let visible = 0;
-      for (const card of cards) {
-        const matchType = state.type === 'all' || card.dataset.cat === state.type;
-        const matchCuisine = !state.cuisine || card.dataset.cuisine === state.cuisine;
-        const matchCourse = !state.course || card.dataset.course === state.course;
-        const matchDiet = !state.diet || (card.dataset.diet || '').split('|').includes(state.diet);
-        const show = matchType && matchCuisine && matchCourse && matchDiet;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-      }
-      const filters = [];
-      if (state.type !== 'all') filters.push(state.type);
-      if (state.cuisine) filters.push(state.cuisine);
-      if (state.course) filters.push(state.course);
-      if (state.diet) filters.push(state.diet);
-      status.textContent = filters.length
-        ? `${visible} ${visible === 1 ? 'entry' : 'entries'} matching ${filters.join(' · ')}`
-        : '';
-    }
-
-    bar.addEventListener('click', (e) => {
-      const btn = e.target.closest('.filter-pill');
-      if (!btn) return;
-      const types = ['type','cuisine','course','diet'];
-      let group = null;
-      for (const t of types) if (btn.dataset[`filter${t.charAt(0).toUpperCase() + t.slice(1)}`] !== undefined) group = t;
-      if (!group) return;
-      const val = btn.dataset[`filter${group.charAt(0).toUpperCase() + group.slice(1)}`];
-      // Toggle: clicking active pill clears the filter (except 'type all')
-      const wasActive = btn.classList.contains('active');
-      bar.querySelectorAll(`[data-filter-${group}]`).forEach(b => b.classList.remove('active'));
-      if (group === 'type' && val === 'all') {
-        state.type = 'all';
-        btn.classList.add('active');
-      } else if (wasActive) {
-        state[group] = null;
-        if (group === 'type') {
-          bar.querySelector('[data-filter-type="all"]').classList.add('active');
-          state.type = 'all';
-        }
-      } else {
-        state[group] = val;
-        btn.classList.add('active');
-      }
-      apply();
-    });
   }
 
   async function initSearch(entries) {
@@ -179,7 +107,7 @@
     if (!input) return;
     let index = null;
     const pathToEntry = new Map(entries.map(e => [e.path, e]));
-    let activeIndex = -1; // for keyboard navigation
+    let activeIndex = -1;
 
     input.setAttribute('role', 'combobox');
     input.setAttribute('aria-autocomplete', 'list');
@@ -203,7 +131,7 @@
         const path = index.paths[pid];
         const e = pathToEntry.get(path);
         if (!e) return '';
-        return `<li role="option" id="sr-opt-${i}"><a href="${escapeHtml(path)}"><span class="sr-cat">${escapeHtml(e.category)}</span><span class="sr-title">${escapeHtml(e.title || '')}</span></a></li>`;
+        return `<li role="option" id="sr-opt-${i}"><a href="${escapeHtml(path)}" data-category="${escapeHtml(e.category)}"><span class="sr-cat">${escapeHtml(e.category)}</span><span class="sr-title">${escapeHtml(e.title || '')}</span></a></li>`;
       }).join('');
       resultsEl.hidden = false;
       input.setAttribute('aria-expanded', 'true');
@@ -266,7 +194,6 @@
       input.setAttribute('aria-expanded', 'false');
     }, 200));
 
-    // global '/' shortcut to focus search
     document.addEventListener('keydown', (e) => {
       if (e.key === '/' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) {
         e.preventDefault();

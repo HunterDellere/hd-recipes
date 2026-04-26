@@ -74,7 +74,7 @@ function isExternal(v) { return /^(https?:|mailto:|tel:|javascript:|data:)/i.tes
 
 const LAYOUT_INVARIANTS = [
   { name: 'layout.topnav',     test: h => /<nav class="topnav"/.test(h) },
-  { name: 'layout.main',       test: h => /<main class="main"/.test(h) },
+  { name: 'layout.main',       test: h => /<main[^>]*class="(main|fam-main)"/.test(h) },
   { name: 'layout.footer',     test: h => /<footer class="page-footer"/.test(h) },
   { name: 'layout.stylesheet', test: h => /href="[^"]*style\.css/.test(h) },
   { name: 'layout.toc-scroll', test: h => /toc-scroll\.js/.test(h) },
@@ -92,6 +92,7 @@ const TYPE_INVARIANTS = {
   cuisine:    [{ name: 'cuisine.topic-hero',    test: h => /<header[^>]*class="topic-hero"/.test(h) }],
   equipment:  [{ name: 'equipment.topic-hero',  test: h => /<header[^>]*class="topic-hero"/.test(h) }],
   hub:        [{ name: 'hub.topic-hero',        test: h => /<header[^>]*class="topic-hero"/.test(h) }],
+  family:     [{ name: 'family.fam-hero',       test: h => /<header[^>]*class="fam-hero"/.test(h) }],
 };
 
 const errors = [];

@@ -77,7 +77,9 @@ export function buildPageFooter(body, fm, slug, category) {
 
 export function ensureMainContentId(body) {
   if (/\bid="main-content"/.test(body)) return body;
-  return body.replace('<main class="main">', '<main class="main" id="main-content">');
+  return body
+    .replace('<main class="main">', '<main class="main" id="main-content">')
+    .replace('<main class="fam-main">', '<main class="fam-main" id="main-content">');
 }
 
 /**
