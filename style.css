@@ -167,8 +167,8 @@ pre code { background: none; padding: 0; }
   transition: color 120ms, border-color 120ms;
 }
 .theme-toggle:hover { border-color: var(--rule); color: var(--accent); }
-.tt-sun { display: none; } .tt-moon { display: inline; }
-[data-theme="dark"] .tt-sun { display: inline; } [data-theme="dark"] .tt-moon { display: none; }
+.tt-sun { display: inline; } .tt-moon { display: none; }
+[data-theme="dark"] .tt-sun { display: none; } [data-theme="dark"] .tt-moon { display: inline; }
 
 /* ── reading progress bar ────────────────────────────────── */
 .reading-progress {
