@@ -1,0 +1,55 @@
+{
+  "generated": "2026-04-26T13:58:24.490Z",
+  "summary": {
+    "errors": 0,
+    "warnings": 3,
+    "info": 4
+  },
+  "findings": [
+    {
+      "level": "WARN",
+      "category": "relations",
+      "file": "content/hubs/weeknight-pasta.md",
+      "msg": "only 2 related entries (min 4)",
+      "fix": "Add tags from content/_schema/tags.json or link more ingredients/techniques"
+    },
+    {
+      "level": "WARN",
+      "category": "relations",
+      "file": "content/ingredients/black-pepper.md",
+      "msg": "only 3 related entries (min 4)",
+      "fix": "Add tags from content/_schema/tags.json or link more ingredients/techniques"
+    },
+    {
+      "level": "WARN",
+      "category": "relations",
+      "file": "content/techniques/pan-emulsion.md",
+      "msg": "only 3 related entries (min 4)",
+      "fix": "Add tags from content/_schema/tags.json or link more ingredients/techniques"
+    },
+    {
+      "level": "INFO",
+      "category": "tags",
+      "file": "content/_schema/tags.json",
+      "msg": "37 tags defined but unused: weekend-project, one-pot, sheet-pan, no-cook, make-ahead, freezer-friendly, spicy, fermentation, braise, roast, stir-fry, soup, stew, noodles, rice, bread, salad, chinese, japanese, korean…"
+    },
+    {
+      "level": "INFO",
+      "category": "tags",
+      "file": "content/_schema/tags.json",
+      "msg": "10 tags in use across 7 entries. Top: pasta(3), umami(3), weeknight(2), dairy(2), fat(2), italian(2), spice(1), aromatic(1), comfort(1), sauce(1)"
+    },
+    {
+      "level": "INFO",
+      "category": "search",
+      "file": "data/search-index.json",
+      "msg": "index stats: 7 pages, 102 tokens, 2.2 KB"
+    },
+    {
+      "level": "INFO",
+      "category": "search",
+      "file": "data/search-index.json",
+      "msg": "77 singleton tokens (appear in exactly 1 entry). Sample: three-ingredient, pecorino-romano, black-pepper, sacrificing, lactic-tang, weaponized, peppercorn, tonnarelli, technique, canonical, nuttiness, spaghetti, mantecare, finishing, terpenes, grinding, aromatic, replaces, noisette, hazelnut, toasting, emulsion, off-heat, minutes, without, cooking, bloomed, recipes, comfort, foaming"
+    }
+  ]
+}

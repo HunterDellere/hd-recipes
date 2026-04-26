@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- {"type":"admin","category":"_admin","status":"complete"} -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Review · hd recipes admin</title>
+<style>
+body { font-family: 'Inter', system-ui, sans-serif; background: #faf6ee; color: #2a1f10; margin: 0; padding: 1.5rem 2rem; }
+h1 { font-family: 'EB Garamond', serif; margin: 0 0 1rem; }
+.bar { display: flex; flex-wrap: wrap; gap: 1.5rem; padding: 1rem; background: #fffaf0; border: 1px solid #e6dcc6; border-radius: 8px; margin-bottom: 1rem; }
+.stat { display: flex; flex-direction: column; }
+.stat-num { font-size: 24px; font-weight: 700; color: #b8423a; }
+.stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: #8a7a60; }
+.filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .75rem; align-items: center; }
+.filters input, .filters select { font: inherit; padding: 6px 10px; border: 1px solid #e6dcc6; border-radius: 6px; background: #fff; }
+table { width: 100%; border-collapse: collapse; background: #fffaf0; }
+th, td { padding: .5rem .75rem; text-align: left; border-bottom: 1px solid #f0e8d4; font-size: 14px; }
+th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #5a4a36; cursor: pointer; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.st-complete { background: #dde9d4; color: #3a6e1a; }
+.st-draft    { background: #fff0d0; color: #8a5a10; }
+.st-stub     { background: #ddd; color: #666; }
+.rv-verified { background: #dde9d4; color: #3a6e1a; }
+.rv-pending  { background: #fff0d0; color: #8a5a10; }
+.rv-needs-work { background: #fce0d8; color: #8b2e26; }
+.rv-missing  { background: #fce0d8; color: #8b2e26; }
+.warn        { background: #fce0d8; color: #8b2e26; }
+.gen { font-size: 11px; color: #8a7a60; margin-top: 1rem; }
+.note { background: #fff0d0; padding: .75rem 1rem; border-radius: 6px; margin: 1rem 0; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>hd · recipes — admin</h1>
+<div class="bar">
+  <div class="stat"><span class="stat-num">7</span><span class="stat-label">Complete</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">Draft</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">Stub</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">7</span><span class="stat-label">missing</span></div>
+  <div class="stat"><span class="stat-num">1</span><span class="stat-label">No nutrition</span></div>
+</div>
+
+<div class="note"><strong>Recipes missing nutrition data:</strong> <a href="../../pages/recipes/brown-butter-cacio-e-pepe.html">Brown butter cacio e pepe</a>. Add <code>usda_fdc_id</code> to ingredient pages, or per-recipe overrides on each ingredient line.</div>
+
+<div class="filters">
+  <input type="search" id="filter-q" placeholder="Filter title…" />
+  <select id="filter-cat"><option value="">All categories</option><option value="hubs">hubs</option><option value="ingredients">ingredients</option><option value="recipes">recipes</option><option value="techniques">techniques</option></select>
+  <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
+  <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
+</div>
+
+<table id="entries-table">
+  <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
+  <tbody>
+    <tr data-status="complete" data-review="missing" data-category="hubs" data-type="hub">
+      <td><a href="../../pages/hubs/weeknight-pasta.html">Weeknight pasta</a></td>
+      <td>hubs</td>
+      <td>hub</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-26</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/black-pepper.html">Black peppercorns</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-26</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/butter.html">Butter (unsalted)</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-26</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/pecorino-romano.html">Pecorino romano</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-26</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/brown-butter-cacio-e-pepe.html">Brown butter cacio e pepe</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-26</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="techniques" data-type="technique">
+      <td><a href="../../pages/techniques/brown-butter.html">Brown butter (beurre noisette)</a></td>
+      <td>techniques</td>
+      <td>technique</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-26</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="techniques" data-type="technique">
+      <td><a href="../../pages/techniques/pan-emulsion.html">Pan emulsion (mantecare)</a></td>
+      <td>techniques</td>
+      <td>technique</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-26</td>
+      <td></td>
+      <td></td>
+    </tr></tbody>
+</table>
+
+<p class="gen">Generated 2026-04-26T13:58:24.324Z</p>
+
+<script>
+(function () {
+  const q = document.getElementById('filter-q');
+  const cat = document.getElementById('filter-cat');
+  const st = document.getElementById('filter-status');
+  const rv = document.getElementById('filter-review');
+  const rows = Array.from(document.querySelectorAll('#entries-table tbody tr'));
+  function apply() {
+    const qv = q.value.trim().toLowerCase();
+    const catV = cat.value, stV = st.value, rvV = rv.value;
+    for (const r of rows) {
+      const matchQ = !qv || r.cells[0].textContent.toLowerCase().includes(qv);
+      const matchC = !catV || r.dataset.category === catV;
+      const matchS = !stV || r.dataset.status === stV;
+      const matchR = !rvV || r.dataset.review === rvV;
+      r.style.display = (matchQ && matchC && matchS && matchR) ? '' : 'none';
+    }
+  }
+  [q, cat, st, rv].forEach(el => el.addEventListener('input', apply));
+})();
+</script>
+</body>
+</html>

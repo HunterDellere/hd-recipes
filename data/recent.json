@@ -1,0 +1,152 @@
+[
+  {
+    "path": "pages/hubs/weeknight-pasta.html",
+    "type": "hub",
+    "category": "hubs",
+    "title": "Weeknight pasta",
+    "desc": "Pasta dishes that hit the table in under 30 minutes without sacrificing technique.",
+    "tags": [
+      "pasta",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "weeknight-pasta",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/ingredients/black-pepper.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Black peppercorns",
+    "desc": "Dried unripe fruit of Piper nigrum. Heat from piperine; aroma from terpenes that vanish on grinding.",
+    "tags": [
+      "spice",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "black-pepper",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/ingredients/butter.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Butter (unsalted)",
+    "desc": "Cow's-milk fat with ~16% water and ~2% milk solids. The solids are the flavor lever in cooking.",
+    "tags": [
+      "dairy",
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "butter",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/ingredients/pecorino-romano.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Pecorino romano",
+    "desc": "Hard sheep's-milk cheese from Lazio. Salty, sharp, lactic — the canonical cheese for Roman pasta.",
+    "tags": [
+      "dairy",
+      "umami",
+      "italian"
+    ],
+    "status": "complete",
+    "_slug": "pecorino-romano",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/recipes/brown-butter-cacio-e-pepe.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Brown butter cacio e pepe",
+    "desc": "Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttiness over the pecorino lactic-tang and bloomed peppercorn piperine.",
+    "tags": [
+      "weeknight",
+      "pasta",
+      "italian",
+      "umami",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "brown-butter-cacio-e-pepe",
+    "cuisine": "Italian",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 12,
+      "total_min": 17,
+      "active_min": 12
+    },
+    "rating": 5,
+    "updated": "2026-04-26",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "kosher salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "pecorino romano",
+        "slug": "pecorino-romano",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "tonnarelli or spaghetti",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter",
+      "pan-emulsion"
+    ],
+    "equipment": []
+  },
+  {
+    "path": "pages/techniques/brown-butter.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Brown butter (beurre noisette)",
+    "desc": "Cook butter past the foaming stage until milk solids turn amber — yields hazelnut aroma and Maillard depth from the casein toasting.",
+    "tags": [
+      "fat",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "brown-butter",
+    "updated": "2026-04-26"
+  },
+  {
+    "path": "pages/techniques/pan-emulsion.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Pan emulsion (mantecare)",
+    "desc": "Bind starchy pasta water and fat into a glossy sauce by tossing pasta with fat over low heat, finishing off-heat with cheese.",
+    "tags": [
+      "pasta",
+      "sauce"
+    ],
+    "status": "complete",
+    "_slug": "pan-emulsion",
+    "updated": "2026-04-26"
+  }
+]

@@ -1,0 +1,194 @@
+# Recipe drafting spec — hd-recipes
+
+This document is the authoring guide. Every recipe in `content/recipes/<slug>.md`
+follows the structure below. Most recipes have **no body** — the entire page
+renders from frontmatter. If you want to inject custom prose (a paragraph above
+the steps, a story), you can author HTML in the body and the build will inject
+the auto-generated sections after it.
+
+## Voice & approach (the generator prompt)
+
+Recipes are written in the voice of a specialist in molecular gastronomy and
+nutritional biochemistry. Authoritative, clinical, technique-driven —
+Serious Eats / America's Test Kitchen, not Bon Appétit. Engineer flavor through
+layering, pH balance, and thermal kinetics.
+
+**Operational directives:**
+
+1. **Naming rule** — `title` is the dish name, full stop. No filler.
+2. **Anti-bland mandate** — excellent technique is baseline, not "upgrade." Maximize flavor through Maillard browning, blooming, enzymatic transformation, reduction, fermentation. No "for a flavor boost, you can…" — bake it in.
+3. **Umami + acid requirement** — savory recipes MUST include a glutamate source (parmesan, anchovy, miso, soy, tomato paste, fish sauce, mushroom) and a finishing acid (lemon, vinegar, lime). These are non-negotiable phases, not "modifications."
+4. **Seasoning curve** — instruct the cook to season at every stage. Explain how salt + heat interact at each phase.
+5. **Measurement integrity** — every ingredient gets BOTH measurements: standard and grams. The schema field `qty` should be the gram value (numeric, scalable). Use the `note` field for the standard equivalent in parens, e.g. `note: '(1 tbsp / 15g)'` — or just put the standard form in the `prep` field.
+6. **Linguistic precision** — concise, specific verbs: render, emulsify, bloom, sweat, temper, hydrate. No flowery filler. No "it's not X, it's Y."
+7. **Modifications are pivots, not patches** — `substitutions` are for genuine alternatives (texture contrast, regional variant, dietary swap). Never use this section to fix bland baseline recipes.
+8. **Flat structure** — `steps[]` is a flat numbered list. `ingredients[]` is a flat list grouped by phase via the `group` field. No nesting.
+
+## Frontmatter shape (recipe)
+
+```yaml
+---
+type: 'recipe'
+category: 'recipes'
+status: 'complete'                    # 'stub' | 'draft' | 'complete'
+content_review: 'pending'             # 'pending' | 'verified' | 'needs-work'
+
+title: 'Brown butter cacio e pepe'    # the dish name
+desc: 'Two-sentence overview of the logic and flavor profile.'
+metaDesc: 'SEO description, ~155 chars.'
+tags: ['weeknight', 'pasta', 'italian', 'umami']
+updated: '2026-04-26'
+last_made: '2026-04-20'               # optional
+rating: 5                             # optional, 1-5
+
+servings: 2
+yield_note: 'or 1 hungry serving'     # optional
+time:
+  prep_min: 5
+  cook_min: 12
+  total_min: 17
+  active_min: 12                      # optional, hands-on time
+difficulty: 'easy'                    # 'easy' | 'medium' | 'hard'
+cuisine: 'Italian'
+course: 'dinner'                      # see schema for full enum
+diet: ['vegetarian']                  # see schema for full enum
+
+source:
+  name: 'Adapted from Roman tradition'
+  url: ''
+  note: 'Brown butter is the divergence; classic uses olive oil only.'
+
+ingredients:
+  - group: 'Phase 1 — pasta water'
+    item: 'kosher salt'
+    qty: 25
+    unit: 'g'
+    note: '(2 tbsp Diamond Crystal)'
+  - group: 'Phase 1 — pasta water'
+    item: 'water'
+    qty: 1500
+    unit: 'ml'
+    note: '(6 cups)'
+
+  - group: 'Phase 2 — emulsion'
+    item: 'pecorino romano'
+    slug: 'pecorino-romano'           # links to ingredients/pecorino-romano.md
+    qty: 90
+    unit: 'g'
+    prep: 'finely grated on microplane'
+    note: '(1 cup)'
+  - group: 'Phase 2 — emulsion'
+    item: 'unsalted butter'
+    slug: 'butter'
+    qty: 60
+    unit: 'g'
+    note: '(4 tbsp / ½ stick)'
+  - group: 'Phase 2 — emulsion'
+    item: 'black peppercorns'
+    qty: 6
+    unit: 'g'
+    prep: 'cracked coarse'
+    note: '(1½ tbsp whole)'
+
+  - group: 'Phase 3 — pasta'
+    item: 'tonnarelli or spaghetti'
+    qty: 200
+    unit: 'g'
+    note: '(7 oz dried)'
+
+steps:
+  - text: 'Set a 4-quart pot of water to boil with the salt — taste it; it must be aggressively saline like the sea, because this water will season the dish from the inside out.'
+    time_min: 8
+  - text: 'While the water heats, melt butter in a wide stainless skillet over medium-low. Cook past the foaming stage until the milk solids turn deep amber and smell like toasted hazelnut, ~4 minutes. Pull off heat.'
+    technique: 'brown-butter'
+    time_min: 4
+  - text: 'Bloom the cracked pepper directly in the brown butter — return the pan to low heat for 30 seconds until fragrant. The fat carries the piperine; this is non-negotiable.'
+    time_min: 1
+  - text: 'Drop the pasta. Cook 1 minute shy of al dente. Reserve 200ml (¾ cup) of starchy pasta water in a heatproof measuring cup.'
+    time_min: 8
+  - text: 'Transfer pasta directly into the skillet with tongs (carrying water with it). Add 60ml (¼ cup) reserved pasta water. Toss vigorously over low heat for 30 seconds to emulsify.'
+    technique: 'pan-emulsion'
+    time_min: 1
+  - text: 'Pull from heat. Add pecorino in three additions, tossing constantly between each. The temperature is critical: too hot and the cheese seizes into clumps; too cool and it doesn''t hydrate. The sauce should coat the back of a spoon like cream.'
+    time_min: 1
+  - text: 'The Adjustment: if the sauce is too thick, splash more pasta water; if it''s broken/grainy, more water + harder tossing rebuilds the emulsion. Taste — pecorino brings salt and umami; if it tastes flat, more cracked pepper. No finishing acid here; the pecorino lactic tang carries.'
+
+techniques: ['brown-butter', 'pan-emulsion']
+equipment: ['microplane', 'wide-skillet']
+
+substitutions:
+  - for: 'pecorino romano'
+    use: 'parmigiano reggiano'
+    note: 'Less sharp, more nutty. Bump black pepper to compensate for the missing aggressive salt-tang.'
+  - for: 'tonnarelli'
+    use: 'bucatini'
+    note: 'Different mouthfeel — the hollow holds sauce differently. Cooks ~2 min longer.'
+
+notes: |
+  The dish lives or dies on emulsion. If you skip the brown butter and pepper bloom, you have boiled pasta with cheese, not cacio e pepe.
+
+  Why brown butter: the Maillard products in the milk solids replace the missing pancetta of carbonara as a savory anchor without adding meat.
+---
+```
+
+## Frontmatter shape (ingredient)
+
+```yaml
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+title: 'Pecorino romano'
+desc: 'Hard sheep''s-milk cheese from Lazio. Salty, sharp, lactic.'
+tags: ['dairy', 'umami', 'italian']
+updated: '2026-04-26'
+
+usda_fdc_id: 173417       # https://fdc.nal.usda.gov/fdc-app.html#/food-details/173417/nutrients
+
+about: |
+  Hard sheep's-milk cheese aged 5–8 months. Saltier and more aggressive than parmigiano (which is cow's milk). The lactic tang and salt level are why it's the canonical cheese for cacio e pepe and amatriciana.
+
+seasonality: 'Year-round; lots produced in winter milk season have higher fat.'
+storage: 'Wrap in parchment, then loose foil, in the cheese drawer. Lasts 3–4 weeks. Never plastic — it sweats.'
+
+substitutions:
+  - for: 'pecorino romano'
+    use: 'parmigiano reggiano'
+    note: 'Lower salt, less sharp. Add ~10% more salt.'
+---
+```
+
+## Frontmatter shape (technique)
+
+```yaml
+---
+type: 'technique'
+category: 'techniques'
+status: 'complete'
+title: 'Brown butter (beurre noisette)'
+desc: 'Cook butter past the foam to amber milk solids — yields hazelnut-aroma fat.'
+tags: ['fat', 'maillard']
+updated: '2026-04-26'
+
+about: |
+  Browning butter is a Maillard reaction on the milk-solid proteins (caseins) and lactose. As water boils off, the solids drop to the pan bottom and toast. The signal is color (amber) AND smell (hazelnut/nut-skin); pull at the first hint of nuttiness, not when it goes black.
+
+  Use a stainless or light-colored pan so you can see the color through the foam. Non-stick masks the visual cue.
+---
+```
+
+## Workflow
+
+1. `npm run draft recipe my-dish` — scaffolds `local/drafts/recipes/my-dish.md`
+2. Fill in frontmatter (paste from your generator and adapt)
+3. For ingredients you reference with a `slug:`, ensure `content/ingredients/<slug>.md` exists (or scaffold them too)
+4. `mv local/drafts/recipes/my-dish.md content/recipes/my-dish.md`
+5. `npm run build` — generates the page; admin dashboard updates
+6. (optional) `npm run refresh:nutrition` — fetches USDA records for any new `usda_fdc_id`s
+
+## Source attribution
+
+If a recipe is adapted from a published source, fill `source.name` + `source.url`. The build renders these into the Sources block on the page. For your own original recipes, leave `source` empty.
+
+`content_review` flips to `'verified'` only when you've made the recipe at least twice with consistent results, or you have a trusted source. Bump `updated` and (if applicable) populate `content_sources` when you flip.

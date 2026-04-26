@@ -1,0 +1,458 @@
+#!/usr/bin/env node
+/**
+ * build.mjs — hd-recipes build system
+ *
+ * Reads:  content/<category>/<slug>.md
+ * Writes: pages/<category>/<slug>.html
+ *         data/entries.json
+ *         data/search-index.json
+ *         data/recent.json
+ *         data/nutrition.json (per-recipe nutrition snapshot)
+ *         data/featured.json
+ *         og/<category>/<slug>.svg
+ *         sitemap.xml, robots.txt, feed.xml, manifest.webmanifest
+ */
+
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, unlinkSync, existsSync } from 'fs';
+import { join, dirname, basename, relative } from 'path';
+import { fileURLToPath } from 'url';
+import matter from 'gray-matter';
+import { validateEntry } from './lib/validate.mjs';
+import { buildSearchIndex } from './lib/search-index.mjs';
+import { buildRelations, buildAdjacency, renderRelatedHtml, renderAdjacencyHtml } from './lib/relations.mjs';
+import { buildLinkMap, autoLinkBody, buildPageFooter, renderSourcesHtml, ensureMainContentId } from './lib/augment.mjs';
+import { renderOgSvg, categoryFaviconDataUri } from './lib/og.mjs';
+import {
+  renderRecipeBody, renderIngredientBody, renderTechniqueBody, renderHubBody,
+} from './lib/recipe-render.mjs';
+import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(__dirname, '..');
+
+const LAYOUT = readFileSync(join(ROOT, 'templates/_layout.html'), 'utf8');
+
+const SITE_URL = 'https://recipes.hd.dev';
+const SITE_NAME = 'hd · recipes';
+
+const CATEGORY_LABELS = {
+  recipes: 'Recipes', ingredients: 'Ingredients', techniques: 'Techniques',
+  cuisines: 'Cuisines', equipment: 'Equipment', hubs: 'Collections',
+};
+
+function escapeHtml(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function escapeAttr(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+function walk(dir) {
+  const results = [];
+  if (!existsSync(dir)) return results;
+  for (const name of readdirSync(dir)) {
+    if (name.startsWith('_')) continue;
+    const full = join(dir, name);
+    if (statSync(full).isDirectory()) results.push(...walk(full));
+    else if (name.endsWith('.md') && !name.startsWith('_')) results.push(full);
+  }
+  return results;
+}
+
+function buildJsonLd(fm, slug, category) {
+  if (fm.status !== 'complete') return '';
+  const url = `${SITE_URL}/pages/${category}/${slug}.html`;
+  const description = fm.metaDesc || fm.desc || '';
+  const author = { '@type': 'Person', name: 'Hunter Dellere' };
+
+  let data;
+  if (fm.type === 'recipe') {
+    const ingredients = (fm.ingredients || []).map(i => {
+      const qty = i.qty != null ? `${i.qty}${i.unit ? ' ' + i.unit : ''} ` : '';
+      return `${qty}${i.item}${i.prep ? ', ' + i.prep : ''}`;
+    });
+    const time = fm.time || {};
+    data = {
+      '@context': 'https://schema.org',
+      '@type': 'Recipe',
+      name: fm.title || slug,
+      description,
+      url,
+      author,
+      datePublished: fm.updated,
+      recipeYield: fm.servings ? `${fm.servings} servings` : undefined,
+      recipeCuisine: fm.cuisine,
+      recipeCategory: fm.course,
+      keywords: (fm.tags || []).join(', ') || undefined,
+      prepTime: time.prep_min ? `PT${time.prep_min}M` : undefined,
+      cookTime: time.cook_min ? `PT${time.cook_min}M` : undefined,
+      totalTime: time.total_min ? `PT${time.total_min}M` : undefined,
+      recipeIngredient: ingredients,
+      recipeInstructions: (fm.steps || []).map(s => ({ '@type': 'HowToStep', text: s.text })),
+    };
+  } else {
+    data = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: fm.title || slug,
+      description, url, author,
+      datePublished: fm.updated, dateModified: fm.updated,
+      publisher: { '@type': 'Organization', name: SITE_NAME },
+      mainEntityOfPage: url,
+    };
+  }
+  for (const k of Object.keys(data)) if (data[k] === undefined) delete data[k];
+
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: SITE_NAME, item: SITE_URL + '/' },
+      { '@type': 'ListItem', position: 2, name: CATEGORY_LABELS[category] || category, item: `${SITE_URL}/#cat-${category}` },
+      { '@type': 'ListItem', position: 3, name: fm.title || slug, item: url },
+    ],
+  };
+  return [
+    `<script type="application/ld+json">${JSON.stringify(data)}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>`,
+  ].join('\n');
+}
+
+function buildOgTags(fm, slug, category) {
+  if (fm.status !== 'complete') return '';
+  const url = `${SITE_URL}/pages/${category}/${slug}.html`;
+  const ogImg = `${SITE_URL}/og/${category}/${slug}.svg`;
+  const title = fm.pageTitle || fm.title || slug;
+  const desc = fm.metaDesc || fm.desc || '';
+  return [
+    `<meta property="og:type" content="article">`,
+    `<meta property="og:title" content="${escapeAttr(title)}">`,
+    `<meta property="og:description" content="${escapeAttr(desc)}">`,
+    `<meta property="og:url" content="${url}">`,
+    `<meta property="og:image" content="${ogImg}">`,
+    `<meta property="og:site_name" content="${SITE_NAME}">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escapeAttr(title)}">`,
+    `<meta name="twitter:description" content="${escapeAttr(desc)}">`,
+    `<meta name="twitter:image" content="${ogImg}">`,
+  ].join('\n');
+}
+
+function buildMetaComment(fm) {
+  const obj = {};
+  for (const k of ['type','category','title','status','tags','cuisine','course','difficulty']) {
+    if (fm[k] !== undefined) obj[k] = fm[k];
+  }
+  return JSON.stringify(obj);
+}
+
+function renderPage(fm, body, slug, category) {
+  const metaComment = buildMetaComment(fm);
+  const pageTitle = fm.pageTitle || fm.title || slug;
+  const metaDesc = fm.metaDesc || fm.desc || '';
+  const jsonLd = buildJsonLd(fm, slug, category);
+  const ogTags = buildOgTags(fm, slug, category);
+  const favicon = categoryFaviconDataUri(category);
+  const canonicalUrl = `${SITE_URL}/pages/${category}/${slug}.html`;
+
+  return LAYOUT
+    .replace('{{{metaComment}}}', metaComment)
+    .replace('{{{pageTitle}}}', escapeHtml(pageTitle))
+    .replace('{{{metaDesc}}}', escapeAttr(metaDesc))
+    .replace('{{{jsonLd}}}', jsonLd)
+    .replace('{{{ogTags}}}', ogTags)
+    .replace('{{{favicon}}}', favicon)
+    .replace('{{{canonicalUrl}}}', canonicalUrl)
+    .replace('{{{pageBody}}}', body.trim());
+}
+
+function toEntryObject(fm, slug, category) {
+  const path = `pages/${category}/${slug}.html`;
+  const entry = {
+    path,
+    type: fm.type,
+    category: fm.category || category,
+    title: fm.title,
+    desc: fm.desc,
+    tags: fm.tags || [],
+    status: fm.status,
+    _slug: slug,
+  };
+  for (const k of ['cuisine','course','difficulty','servings','time','rating','last_made','updated','diet']) {
+    if (fm[k] !== undefined) entry[k] = fm[k];
+  }
+  if (fm.type === 'recipe') {
+    entry.ingredients = (fm.ingredients || []).map(i => ({ item: i.item, slug: i.slug, optional: !!i.optional }));
+    entry.techniques = fm.techniques || [];
+    entry.equipment = fm.equipment || [];
+  }
+  return entry;
+}
+
+// ── main ─────────────────────────────────────────────────────────────────────
+
+const contentDir = join(ROOT, 'content');
+const pagesDir   = join(ROOT, 'pages');
+const dataDir    = join(ROOT, 'data');
+mkdirSync(dataDir, { recursive: true });
+
+const files = walk(contentDir).filter(f => !relative(contentDir, f).startsWith('_'));
+
+const entries = [];
+const pending = [];
+let errors = 0;
+
+for (const filePath of files) {
+  const rel = relative(contentDir, filePath);
+  const parts = rel.split('/');
+  const category = parts[0];
+  const slug = basename(filePath, '.md');
+  try {
+    const raw = readFileSync(filePath, 'utf8');
+    const { data: fm, content: body } = matter(raw);
+    validateEntry(fm, filePath);
+    const outDir = join(pagesDir, category);
+    mkdirSync(outDir, { recursive: true });
+    const entry = toEntryObject(fm, slug, category);
+    // Attach raw frontmatter for nutrition lookup (ingredient pages carry usda_fdc_id)
+    entry._fm = fm;
+    entries.push(entry);
+    pending.push({ fm, body, slug, category, outDir, entry });
+  } catch (err) {
+    console.error(`\n✗ ${rel}\n${err.message}`);
+    errors++;
+  }
+}
+
+// Build slug-keyed lookups for crosslinking
+const ingredientBySlug = new Map();
+const techniqueBySlug = new Map();
+const equipmentBySlug = new Map();
+const entriesByPath = new Map();
+for (const e of entries) {
+  entriesByPath.set(e.path, e);
+  if (e.type === 'ingredient') {
+    ingredientBySlug.set(e._slug, e);
+    ingredientBySlug.set(`ingredients/${e._slug}`, e);
+    e.fm = e._fm; // needed for nutrition fdc id lookup
+  } else if (e.type === 'technique') {
+    techniqueBySlug.set(e._slug, e);
+    techniqueBySlug.set(`techniques/${e._slug}`, e);
+  } else if (e.type === 'equipment') {
+    equipmentBySlug.set(e._slug, e);
+    equipmentBySlug.set(`equipment/${e._slug}`, e);
+  }
+}
+
+const relations = buildRelations(entries);
+const adjacency = buildAdjacency(entries);
+const usdaCache = loadCache(ROOT);
+
+const nutritionByPath = {};
+
+let built = 0;
+let autoLinkCount = 0;
+
+for (const { fm, body, slug, category, outDir, entry } of pending) {
+  try {
+    let augmentedBody = body.trim();
+
+    // Auto-render recipe / ingredient / technique / hub bodies if no body authored
+    if (!augmentedBody) {
+      if (fm.type === 'recipe') {
+        const nutrition = roundNutritionWrap(computeRecipeNutrition(fm, ingredientBySlug, usdaCache));
+        nutritionByPath[entry.path] = nutrition;
+        augmentedBody = renderRecipeBody(fm, slug, category, {
+          ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition,
+        });
+      } else if (fm.type === 'ingredient') {
+        augmentedBody = renderIngredientBody(fm, slug, category);
+      } else if (fm.type === 'technique') {
+        augmentedBody = renderTechniqueBody(fm, slug, category);
+      } else if (fm.type === 'hub') {
+        augmentedBody = renderHubBody(fm, slug, category, entriesByPath);
+      } else {
+        augmentedBody = `<div class="shell"><main class="main" id="main-content"><header class="topic-hero"><h1 class="topic-hero-title">${escapeHtml(fm.title || slug)}</h1></header></main></div>`;
+      }
+    } else if (fm.type === 'recipe') {
+      // If a body is authored, we still compute and stash nutrition for /data/nutrition.json
+      const nutrition = roundNutritionWrap(computeRecipeNutrition(fm, ingredientBySlug, usdaCache));
+      nutritionByPath[entry.path] = nutrition;
+    }
+
+    if (entry.status === 'complete') {
+      const linkMap = buildLinkMap(entries, entry);
+      const beforeLen = augmentedBody.length;
+      augmentedBody = autoLinkBody(augmentedBody, linkMap, entry);
+      if (augmentedBody.length !== beforeLen) autoLinkCount++;
+
+      const sourcesHtml = renderSourcesHtml(fm);
+      const relatedHtml = renderRelatedHtml(relations.get(entry.path) || [], entry.path);
+      const adjacencyHtml = renderAdjacencyHtml(adjacency.get(entry.path), entry.path);
+      const injection = `${sourcesHtml}${relatedHtml}${adjacencyHtml}`;
+      if (injection && augmentedBody.includes('</main>')) {
+        augmentedBody = augmentedBody.replace('</main>', `${injection}\n  </main>`);
+      }
+    }
+
+    augmentedBody = buildPageFooter(augmentedBody, fm, slug, category);
+    augmentedBody = ensureMainContentId(augmentedBody);
+
+    const html = renderPage(fm, augmentedBody, slug, category);
+    writeFileSync(join(outDir, `${slug}.html`), html, 'utf8');
+    built++;
+  } catch (err) {
+    console.error(`\n✗ ${category}/${slug}\n${err.message}`);
+    errors++;
+  }
+}
+
+function roundNutritionWrap(n) {
+  return { perServing: roundNutrition(n.perServing), total: roundNutrition(n.total), missing: n.missing };
+}
+
+// Strip _fm before serializing
+for (const e of entries) { delete e._fm; delete e.fm; }
+
+// Prune orphan pages
+const expectedPaths = new Set(entries.map(e => e.path));
+let pruned = 0;
+const pagesRoot = join(ROOT, 'pages');
+const PRUNE_SKIP = new Set(['_admin']);
+if (existsSync(pagesRoot)) {
+  for (const cat of readdirSync(pagesRoot)) {
+    if (PRUNE_SKIP.has(cat)) continue;
+    const catDir = join(pagesRoot, cat);
+    if (!statSync(catDir).isDirectory()) continue;
+    for (const name of readdirSync(catDir)) {
+      if (!name.endsWith('.html')) continue;
+      const rel = `pages/${cat}/${name}`;
+      if (!expectedPaths.has(rel)) {
+        unlinkSync(join(catDir, name));
+        console.log(`  ⌫  pruned orphan: ${rel}`);
+        pruned++;
+      }
+    }
+  }
+}
+
+entries.sort((a, b) => {
+  if (a.status !== b.status) return a.status === 'complete' ? -1 : 1;
+  if (a.updated && b.updated) return b.updated.localeCompare(a.updated);
+  return 0;
+});
+
+writeFileSync(join(dataDir, 'entries.json'), JSON.stringify(entries, null, 2), 'utf8');
+writeFileSync(join(dataDir, 'nutrition.json'), JSON.stringify(nutritionByPath, null, 2), 'utf8');
+
+// search index
+function extractBodyText(raw) {
+  return raw
+    .replace(/<aside[^>]*class="sidebar"[^>]*>[\s\S]*?<\/aside>/g, ' ')
+    .replace(/<footer[^>]*>[\s\S]*?<\/footer>/g, ' ')
+    .replace(/<(script|style)[\s\S]*?<\/\1>/g, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/\s+/g, ' ').trim();
+}
+const bodies = {};
+for (const { body, entry } of pending) {
+  if (entry.status !== 'complete') continue;
+  bodies[entry.path] = extractBodyText(body || '');
+}
+const searchIndex = buildSearchIndex(entries, bodies);
+writeFileSync(join(dataDir, 'search-index.json'), JSON.stringify(searchIndex), 'utf8');
+
+const recent = entries
+  .filter(e => e.status === 'complete' && e.updated)
+  .sort((a, b) => b.updated.localeCompare(a.updated))
+  .slice(0, 20);
+writeFileSync(join(dataDir, 'recent.json'), JSON.stringify(recent, null, 2), 'utf8');
+
+try {
+  const featuredSrc = join(ROOT, 'content', '_featured', 'daily.json');
+  const featured = JSON.parse(readFileSync(featuredSrc, 'utf8'));
+  writeFileSync(join(dataDir, 'featured.json'), JSON.stringify(featured), 'utf8');
+} catch (err) {
+  console.warn('No featured.json:', err.message);
+}
+
+// sitemap + robots + feed
+const today = new Date().toISOString().slice(0, 10);
+const urls = [
+  { loc: SITE_URL + '/', lastmod: today, priority: '1.0', changefreq: 'weekly' },
+  ...entries.filter(e => e.status === 'complete').map(e => ({
+    loc: `${SITE_URL}/${e.path}`,
+    lastmod: e.updated || today,
+    priority: '0.8', changefreq: 'monthly',
+  })),
+];
+writeFileSync(join(ROOT, 'sitemap.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+  urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n') +
+  `\n</urlset>\n`, 'utf8');
+
+writeFileSync(join(ROOT, 'robots.txt'),
+  `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`, 'utf8');
+
+function rssEscape(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+}
+const rssItems = entries.filter(e => e.status === 'complete' && e.updated).slice(0, 30).map(e => {
+  const url = `${SITE_URL}/${e.path}`;
+  const pubDate = new Date(e.updated + 'T00:00:00Z').toUTCString();
+  return `    <item>\n      <title>${rssEscape(e.title)}</title>\n      <link>${url}</link>\n      <guid isPermaLink="true">${url}</guid>\n      <pubDate>${pubDate}</pubDate>\n      <description>${rssEscape(e.desc)}</description>\n      <category>${rssEscape(e.category)}</category>\n    </item>`;
+}).join('\n');
+writeFileSync(join(ROOT, 'feed.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n  <channel>\n    <title>${SITE_NAME}</title>\n    <link>${SITE_URL}/</link>\n    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />\n    <description>Recipes — tested, scaled, sourced.</description>\n    <language>en</language>\n    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>\n` +
+  rssItems + `\n  </channel>\n</rss>\n`, 'utf8');
+
+// OG cards
+const ogDir = join(ROOT, 'og');
+mkdirSync(ogDir, { recursive: true });
+let ogWritten = 0;
+for (const e of entries) {
+  if (e.status !== 'complete') continue;
+  const slug = basename(e.path, '.html');
+  const dir = join(ogDir, e.category);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, `${slug}.svg`), renderOgSvg(e), 'utf8');
+  ogWritten++;
+}
+
+// PWA manifest
+const manifest = {
+  name: 'hd · recipes',
+  short_name: 'recipes',
+  description: 'Recipes — tested, scaled, sourced.',
+  start_url: '/',
+  scope: '/',
+  display: 'standalone',
+  background_color: '#faf6ee',
+  theme_color: '#b8423a',
+  lang: 'en',
+  icons: [
+    { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+    { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+    { src: '/icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+  ],
+};
+writeFileSync(join(ROOT, 'manifest.webmanifest'), JSON.stringify(manifest, null, 2), 'utf8');
+
+console.log(`\nBuild complete: ${built} pages, ${pruned} pruned, ${errors} errors.`);
+console.log(`OG cards: ${ogWritten}.  Auto-linked: ${autoLinkCount}/${pending.length} pages.`);
+
+// Admin dashboard (best-effort)
+try {
+  const { spawnSync } = await import('node:child_process');
+  const admin = spawnSync(process.execPath, [join(__dirname, 'build-admin.mjs')], { stdio: 'inherit' });
+  if (admin.status !== 0) console.warn('build-admin: exited non-zero (admin page may be stale)');
+} catch (e) {
+  console.warn('admin pipeline failed:', e.message);
+}
+
+if (errors) process.exit(1);

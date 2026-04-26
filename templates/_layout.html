@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- {{{metaComment}}} -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{{pageTitle}}} — hd · recipes</title>
+<meta name="description" content="{{{metaDesc}}}">
+<meta name="theme-color" content="#b8423a" id="meta-theme-color">
+<script>(function(){try{var t=localStorage.getItem('hdr-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+<meta name="apple-mobile-web-app-title" content="hd recipes">
+<meta name="application-name" content="hd recipes">
+<link rel="alternate" type="application/rss+xml" title="hd · recipes" href="../../feed.xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="icon" href="{{{favicon}}}">
+<link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
+<link rel="canonical" href="{{{canonicalUrl}}}">
+{{{ogTags}}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../../style.css?v=1">
+{{{jsonLd}}}
+</head>
+<body>
+<script>(function(){var m=document.documentElement.previousSibling;if(m&&m.nodeType===8){try{var d=JSON.parse(m.data);if(d.category)document.body.dataset.category=d.category;}catch(e){}}})();</script>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<nav class="topnav" aria-label="Site">
+  <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+  </a>
+  <div class="topnav-right">
+    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
+    <a href="../../index.html#all" class="topnav-back" aria-label="All recipes">All recipes</a>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
+      <span class="tt-sun" aria-hidden="true">☀</span>
+      <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+  </div>
+</nav>
+
+<div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
+
+<button class="toc-toggle" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle contents"><span class="toc-toggle-label">Contents</span><span class="toc-toggle-chevron" aria-hidden="true">▾</span></button>
+
+{{{pageBody}}}
+
+<script src="../../scripts/toc-scroll.js"></script>
+<script src="../../scripts/recipe.js" defer></script>
+<script src="../../scripts/enhance.js" defer></script>
+
+</body>
+</html>

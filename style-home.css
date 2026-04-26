@@ -1,0 +1,118 @@
+/* ── hd · recipes — homepage ──────────────────────────── */
+.home-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+.home-hero {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2.5rem;
+}
+.home-title {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  margin: 0 0 .5em;
+}
+.home-tagline {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin: 0 auto 2rem;
+}
+.home-search-wrap { position: relative; max-width: 520px; margin: 0 auto; }
+.home-search {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  padding: 12px 18px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--bg-elev);
+  color: var(--ink);
+}
+.home-search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(184,66,58,.12);
+}
+.home-search-results {
+  position: absolute; top: 100%; left: 0; right: 0;
+  margin-top: 8px; padding: 0; list-style: none;
+  background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 8px;
+  max-height: 60vh; overflow-y: auto;
+  z-index: 10;
+  font-family: var(--font-sans);
+  text-align: left;
+}
+.home-search-results li { border-bottom: 1px solid var(--rule-soft); }
+.home-search-results li:last-child { border-bottom: none; }
+.home-search-results a {
+  display: flex; flex-direction: column; gap: .15rem;
+  padding: .6rem .9rem; color: var(--ink);
+}
+.home-search-results a:hover { background: var(--rule-soft); text-decoration: none; }
+.sr-cat { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
+.sr-title { font-weight: 600; font-size: 15px; }
+
+.home-section { margin-bottom: 3rem; }
+.home-section-h {
+  font-size: 1.35rem; margin-bottom: 1rem;
+  border-bottom: 2px solid var(--rule); padding-bottom: .35em;
+}
+
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: .85rem;
+  margin-bottom: 1.5rem;
+}
+.entry-card {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule); border-radius: 8px;
+  background: var(--bg-elev); border-left: 3px solid var(--rule);
+  font-family: var(--font-sans); color: var(--ink);
+  transition: transform .12s ease, border-color .12s ease;
+}
+.entry-card:hover { transform: translateY(-1px); border-color: var(--accent); text-decoration: none; }
+.entry-card[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
+.entry-card[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
+.entry-card[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
+.entry-card[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
+.entry-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
+.entry-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
+.ec-cat { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
+.ec-title { font-family: var(--font-serif); font-weight: 600; font-size: 17px; line-height: 1.25; }
+.ec-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.4; }
+.ec-meta { font-size: 12px; color: var(--ink-faint); margin-top: .25rem; }
+
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.cat-card {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: 1.25rem;
+  border: 1px solid var(--rule); border-radius: 8px;
+  background: var(--bg-elev); border-top: 3px solid var(--rule);
+  font-family: var(--font-sans); color: var(--ink);
+  position: relative;
+}
+.cat-card:hover { border-color: var(--accent); text-decoration: none; }
+.cat-card[data-category="recipes"]     { border-top-color: var(--cat-recipes); }
+.cat-card[data-category="ingredients"] { border-top-color: var(--cat-ingredients); }
+.cat-card[data-category="techniques"]  { border-top-color: var(--cat-techniques); }
+.cat-card[data-category="cuisines"]    { border-top-color: var(--cat-cuisines); }
+.cat-card[data-category="equipment"]   { border-top-color: var(--cat-equipment); }
+.cat-card[data-category="hubs"]        { border-top-color: var(--cat-hubs); }
+.cc-label { font-family: var(--font-serif); font-weight: 700; font-size: 22px; color: var(--ink); }
+.cc-blurb { font-size: 14px; color: var(--ink-soft); line-height: 1.4; }
+.cc-count { position: absolute; top: 1rem; right: 1rem; font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint); }
+
+.cat-h { font-size: 1.1rem; color: var(--ink-soft); margin: 1.5rem 0 .75rem; text-transform: uppercase; letter-spacing: .08em; }
+
+.empty { color: var(--ink-faint); font-style: italic; }
+
+.home-footer {
+  text-align: center; padding: 2rem 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-sans); font-size: 13px; color: var(--ink-faint);
+}
+.home-footer a { color: var(--ink-soft); }
