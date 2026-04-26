@@ -18,6 +18,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { renderEntryCard } from './cards.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..', '..');
@@ -187,19 +188,8 @@ export function familyCardArt(family) {
   </svg>`;
 }
 
-function entryCard(entry, fromPath) {
-  const href = relPath(fromPath, entry.path);
-  const meta = [];
-  if (entry.cuisine) meta.push(escapeHtml(entry.cuisine));
-  if (entry.course) meta.push(escapeHtml(entry.course));
-  if (entry.time && entry.time.total_min) meta.push(`${entry.time.total_min} min`);
-  return `
-        <a class="entry-card" href="${escapeHtml(href)}" data-category="${escapeHtml(entry.category)}">
-          <span class="ec-cat">${escapeHtml(entry.category)}</span>
-          <span class="ec-title">${escapeHtml(entry.title || '')}</span>
-          ${entry.desc ? `<span class="ec-desc">${escapeHtml(entry.desc.slice(0, 110))}</span>` : ''}
-          ${meta.length ? `<span class="ec-meta">${meta.join(' · ')}</span>` : ''}
-        </a>`;
+function entryCard(entry, fromPath, opts) {
+  return renderEntryCard(entry, fromPath, opts);
 }
 
 function renderCategorySection(catKey, entries, fromPath) {
@@ -335,12 +325,12 @@ export function renderFamilyContent(family, entries, fromPath) {
 
   // Augment entry cards with filter data attributes for 'cook'
   const augment = (e) => family === 'cook'
-    ? ` data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${(e.time && e.time.total_min) || ''}"`
+    ? `data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${(e.time && e.time.total_min) || ''}"`
     : '';
 
   const sections = memberKeys.map(catKey => {
     const list = byCategory.get(catKey) || [];
-    const cardsHtml = list.map(e => entryCard(e, fromPath).replace('class="entry-card"', `class="entry-card"${augment(e)}`)).join('');
+    const cardsHtml = list.map(e => entryCard(e, fromPath, { extraData: augment(e) })).join('');
     const meta = categoryMeta()[catKey] || { label: catKey, blurb: '' };
     return `
     <section class="fam-cat" id="cat-${escapeHtml(catKey)}" data-category="${escapeHtml(catKey)}">

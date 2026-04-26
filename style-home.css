@@ -217,36 +217,7 @@
 }
 .ff-card:hover .ff-arrow { transform: translateX(4px); }
 
-/* ── recent grid (also used on explore) ──────────────── */
-.card-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: .85rem;
-  margin-bottom: 1.5rem;
-}
-.entry-card {
-  display: flex; flex-direction: column; gap: .35rem;
-  padding: .9rem 1rem;
-  border: 1px solid var(--rule); border-radius: 10px;
-  background: var(--bg-elev); border-left: 3px solid var(--rule);
-  font-family: var(--font-sans); color: var(--ink);
-  transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
-}
-.entry-card:hover {
-  transform: translateY(-1px);
-  border-color: var(--accent);
-  box-shadow: var(--shadow-sm);
-  text-decoration: none;
-}
-.entry-card[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
-.entry-card[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
-.entry-card[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
-.entry-card[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
-.entry-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
-.entry-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
-.ec-cat { font-family: var(--font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
-.ec-title { font-family: var(--font-serif); font-weight: 700; font-size: 17px; line-height: 1.25; }
-.ec-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
-.ec-meta { font-size: 12px; color: var(--ink-faint); margin-top: .25rem; font-weight: 500; }
+/* card-grid + entry-card live in style.css now (used on family pages too) */
 
 /* ── families grid (homepage + explore index) ────────── */
 .families-grid {

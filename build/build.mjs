@@ -27,6 +27,7 @@ import {
 } from './lib/recipe-render.mjs';
 import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
+import { computeReverseLinks, enrichEntry } from './lib/cards.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -246,6 +247,17 @@ for (const e of entries) {
   }
 }
 
+// Enrich entries with card-display fields BEFORE rendering pages, so the
+// family pages and related sections all use the same type-specific cards.
+const ingHasNutrition = new Set();
+for (const e of entries) {
+  if (e.type === 'ingredient' && e._fm && e._fm.usda_fdc_id != null) {
+    ingHasNutrition.add(e._slug);
+  }
+}
+const reverseLinks = computeReverseLinks(entries);
+for (const e of entries) enrichEntry(e, { ...reverseLinks, ingHasNutrition });
+
 const relations = buildRelations(entries);
 const adjacency = buildAdjacency(entries);
 const usdaCache = loadCache(ROOT);
@@ -382,10 +394,20 @@ for (const { body, entry } of pending) {
 const searchIndex = buildSearchIndex(entries, bodies);
 writeFileSync(join(dataDir, 'search-index.json'), JSON.stringify(searchIndex), 'utf8');
 
+// "Recently added" surfaces real content only (skip families + hubs which are
+// navigational scaffolding). Recipes get priority — they're what people come
+// here for. When updated dates tie, we prefer recipes, then techniques,
+// ingredients, then anything else.
+const RECENT_EXCLUDE = new Set(['family']);
+const TYPE_RANK = { recipe: 0, technique: 1, hub: 2, cuisine: 3, ingredient: 4, equipment: 5 };
 const recent = entries
-  .filter(e => e.status === 'complete' && e.updated)
-  .sort((a, b) => b.updated.localeCompare(a.updated))
-  .slice(0, 20);
+  .filter(e => e.status === 'complete' && e.updated && !RECENT_EXCLUDE.has(e.type))
+  .sort((a, b) => {
+    const cmp = b.updated.localeCompare(a.updated);
+    if (cmp !== 0) return cmp;
+    return (TYPE_RANK[a.type] ?? 99) - (TYPE_RANK[b.type] ?? 99);
+  })
+  .slice(0, 12);
 writeFileSync(join(dataDir, 'recent.json'), JSON.stringify(recent, null, 2), 'utf8');
 
 try {

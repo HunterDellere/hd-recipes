@@ -1034,6 +1034,143 @@ pre code { background: none; padding: 0; }
 /* Hide mobile toc-toggle when there's no sidebar to toggle (family pages) */
 body:not(:has(#sidebar)) .toc-toggle { display: none !important; }
 
+/* ── card-grid + entry-card (shared across home + explore) ───── */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .85rem;
+  margin-bottom: 1.5rem;
+}
+.entry-card {
+  display: flex; flex-direction: column; gap: .4rem;
+  padding: 1rem 1.1rem .85rem;
+  border: 1px solid var(--rule); border-radius: 10px;
+  background: var(--bg-elev);
+  font-family: var(--font-sans); color: var(--ink);
+  transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 148px;
+}
+.entry-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--rule);
+  transition: background 120ms, height 120ms;
+}
+.entry-card[data-category="recipes"]::before     { background: var(--cat-recipes); }
+.entry-card[data-category="ingredients"]::before { background: var(--cat-ingredients); }
+.entry-card[data-category="techniques"]::before  { background: var(--cat-techniques); }
+.entry-card[data-category="cuisines"]::before    { background: var(--cat-cuisines); }
+.entry-card[data-category="equipment"]::before   { background: var(--cat-equipment); }
+.entry-card[data-category="hubs"]::before        { background: var(--cat-hubs); }
+.entry-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+.entry-card:hover::before { height: 4px; }
+
+.ec-cat {
+  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--ink-faint);
+}
+.entry-card[data-category="recipes"]     .ec-cat { color: var(--cat-recipes); }
+.entry-card[data-category="ingredients"] .ec-cat { color: var(--cat-ingredients); }
+.entry-card[data-category="techniques"]  .ec-cat { color: var(--cat-techniques); }
+.entry-card[data-category="cuisines"]    .ec-cat { color: var(--cat-cuisines); }
+.entry-card[data-category="equipment"]   .ec-cat { color: var(--cat-equipment); }
+.entry-card[data-category="hubs"]        .ec-cat { color: var(--cat-hubs); }
+.ec-title {
+  font-family: var(--font-serif); font-weight: 700;
+  font-size: 17px; line-height: 1.25;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+.ec-desc {
+  font-size: 13px; color: var(--ink-soft);
+  line-height: 1.45;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ec-foot {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: .5rem;
+  margin-top: auto; padding-top: .35rem;
+  font-size: 12px;
+  color: var(--ink-faint);
+  flex-wrap: wrap;
+}
+.ec-meta {
+  display: flex; flex-wrap: wrap; gap: .15rem .5rem;
+  align-items: center;
+  min-width: 0;
+}
+.ec-meta-item {
+  font-family: var(--font-sans); font-size: 12px;
+  color: var(--ink-soft);
+  font-weight: 500;
+  display: inline-flex; align-items: baseline;
+}
+.ec-meta-item:not(:last-child)::after {
+  content: '·';
+  margin-left: .5rem;
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+.ec-meta-time strong {
+  color: var(--ink); font-weight: 700;
+  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+}
+.ec-stat {
+  font-family: var(--font-sans); font-size: 12px;
+  color: var(--ink-soft); font-weight: 500;
+  white-space: nowrap;
+}
+.ec-stat strong {
+  color: var(--ink); font-weight: 700;
+  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+}
+.ec-stat-link::before {
+  content: '↳ ';
+  color: var(--ink-faint); font-weight: 400;
+}
+.ec-stats {
+  margin-top: .25rem;
+  font-size: 12px; color: var(--ink-faint);
+}
+.ec-pill {
+  display: inline-flex; align-items: center;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-family: var(--font-sans); font-size: 10.5px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .07em;
+  white-space: nowrap;
+}
+.ec-pill-tag {
+  background: var(--bg-soft);
+  color: var(--ink-soft);
+  border: 1px solid var(--rule);
+}
+.ec-pill-data {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+  font-family: var(--font-mono);
+  letter-spacing: .12em;
+}
+[data-theme="dark"] .ec-pill-data { color: var(--accent); }
+.ec-diff { font-weight: 700; }
+.ec-d-easy   { background: #e7f3e0; color: #3a6e1a; }
+.ec-d-medium { background: #fff0d0; color: #8a5a10; }
+.ec-d-hard   { background: #fce0d8; color: #8b2e26; }
+[data-theme="dark"] .ec-d-easy   { background: #2a3a1a; color: #b3d99a; }
+[data-theme="dark"] .ec-d-medium { background: #3a2e1a; color: #e6c890; }
+[data-theme="dark"] .ec-d-hard   { background: #3a1e1a; color: #e69990; }
+
 /* ── filter bar (used on cook explore page) ──────────── */
 .filter-bar {
   display: flex; flex-direction: column; gap: .85rem;

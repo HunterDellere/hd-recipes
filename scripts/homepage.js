@@ -14,22 +14,47 @@
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  function fmtTime(t) {
-    if (!t || !t.total_min) return '';
-    return `${t.total_min} min`;
+  function cardBody(e) {
+    const c = e._card || {};
+    const title = `<span class="ec-title">${escapeHtml(e.title || '')}</span>`;
+    const desc = e.desc ? `<span class="ec-desc">${escapeHtml(e.desc.slice(0, 110))}</span>` : '';
+    const cat = `<span class="ec-cat">${escapeHtml(e.category)}</span>`;
+
+    if (e.type === 'recipe') {
+      const meta = [];
+      if (e.cuisine) meta.push(`<span class="ec-meta-item">${escapeHtml(e.cuisine)}</span>`);
+      if (e.course)  meta.push(`<span class="ec-meta-item">${escapeHtml(e.course)}</span>`);
+      if (c.totalMinutes) meta.push(`<span class="ec-meta-item ec-meta-time"><strong>${c.totalMinutes}</strong> min</span>`);
+      const stats = e.servings ? `<span class="ec-stat"><strong>${e.servings}</strong> serving${e.servings === 1 ? '' : 's'}</span>` : '';
+      const diff = c.diffLabel ? `<span class="ec-pill ec-diff ec-d-${escapeHtml(c.diffLabel)}">${escapeHtml(c.diffLabel)}</span>` : '';
+      return `${cat}${title}${desc}<div class="ec-foot"><div class="ec-meta">${meta.join('')}</div>${diff}</div>${stats ? `<div class="ec-stats">${stats}</div>` : ''}`;
+    }
+    if (e.type === 'ingredient') {
+      const tag = c.primaryTag ? `<span class="ec-pill ec-pill-tag">${escapeHtml(c.primaryTag)}</span>` : '';
+      const used = c.usedInCount > 0 ? `<span class="ec-stat ec-stat-link"><strong>${c.usedInCount}</strong> ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>` : '';
+      const nut = c.hasNutrition ? `<span class="ec-pill ec-pill-data" title="USDA nutrition data available">USDA</span>` : '';
+      return `${cat}${title}${desc}<div class="ec-foot"><div class="ec-meta">${tag}${nut}</div>${used}</div>`;
+    }
+    if (e.type === 'technique' || e.type === 'cuisine') {
+      const used = c.usedInCount > 0 ? `<span class="ec-stat ec-stat-link"><strong>${c.usedInCount}</strong> ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>` : '';
+      return `${cat}${title}${desc}<div class="ec-foot">${used}</div>`;
+    }
+    if (e.type === 'equipment') {
+      const tag = c.primaryTag ? `<span class="ec-pill ec-pill-tag">${escapeHtml(c.primaryTag)}</span>` : '';
+      return `${cat}${title}${desc}<div class="ec-foot">${tag}</div>`;
+    }
+    if (e.type === 'hub') {
+      const m = c.memberCount;
+      const stat = m > 0 ? `<span class="ec-stat"><strong>${m}</strong> ${m === 1 ? 'entry' : 'entries'}</span>` : '';
+      return `${cat}${title}${desc}<div class="ec-foot">${stat}</div>`;
+    }
+    return `${cat}${title}${desc}`;
   }
 
   function entryCard(e) {
-    const meta = [];
-    if (e.cuisine) meta.push(escapeHtml(e.cuisine));
-    if (e.course) meta.push(escapeHtml(e.course));
-    if (e.time && e.time.total_min) meta.push(fmtTime(e.time));
     return `
-      <a class="entry-card" href="${escapeHtml(e.path)}" data-category="${escapeHtml(e.category)}">
-        <span class="ec-cat">${escapeHtml(e.category)}</span>
-        <span class="ec-title">${escapeHtml(e.title || '')}</span>
-        ${e.desc ? `<span class="ec-desc">${escapeHtml(e.desc.slice(0, 110))}</span>` : ''}
-        ${meta.length ? `<span class="ec-meta">${meta.join(' · ')}</span>` : ''}
+      <a class="entry-card" href="${escapeHtml(e.path)}" data-category="${escapeHtml(e.category)}" data-type="${escapeHtml(e.type)}">
+        ${cardBody(e)}
       </a>`;
   }
 
