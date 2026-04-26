@@ -72,7 +72,7 @@ jobs:
           fi
 
   build:
-    name: Build site
+    name: Build & check site
     needs: [validate, nutrition]
     if: |
       always() &&
@@ -89,68 +89,23 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      - name: Upload built site
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: |
-            index.html
-            404.html
-            random.html
-            pages/
-            data/
-            og/
-            style.css
-            style-home.css
-            scripts/
-            sitemap.xml
-            robots.txt
-            feed.xml
-            manifest.webmanifest
-            sw.js
-            icons/
-          if-no-files-found: error
-          retention-days: 1
-
-  check:
-    name: Post-build invariants & link check
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-      - run: npm ci
-      - name: Download built site
-        uses: actions/download-artifact@v4
-        with:
-          name: site
       - run: npm run check
+      - name: Upload Pages artifact
+        # `upload-pages-artifact` always names the artifact `github-pages`,
+        # which is what `deploy-pages` expects. Single upload, single name.
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
 
   deploy:
     name: Deploy to GitHub Pages
     if: github.ref == 'refs/heads/main'
-    needs: [build, check]
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
