@@ -131,7 +131,9 @@ jobs:
 
   deploy:
     name: Deploy to GitHub Pages
-    if: github.ref == 'refs/heads/main'
+    # Disabled until repo is made public OR Pages enabled in settings.
+    # To re-enable: change `if: false` → `if: github.ref == 'refs/heads/main'`
+    if: false
     needs: [build, check]
     runs-on: ubuntu-latest
     environment:
