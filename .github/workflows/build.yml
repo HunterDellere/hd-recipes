@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write    # need write so audio job can commit synthesized MP3s back
+  contents: write   # nutrition job commits cache updates back
   pages: write
   id-token: write
 
@@ -28,8 +28,8 @@ jobs:
       - run: npm ci
       - run: npm run validate
 
-  audio:
-    name: Synthesize audio (incremental)
+  nutrition:
+    name: Refresh USDA nutrition cache (rate-limited)
     needs: validate
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -44,41 +44,44 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
-      - run: npm run build
-      - name: Synthesize new/changed audio clips
+      - name: Fetch any new USDA records
         env:
-          AZURE_TTS_KEY: ${{ secrets.AZURE_TTS_KEY }}
-          AZURE_TTS_REGION: ${{ secrets.AZURE_TTS_REGION }}
-        run: npm run build:audio
-      - name: Commit synthesized audio if changed
+          USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
+        run: |
+          if [ -z "$USDA_API_KEY" ]; then
+            echo "USDA_API_KEY not set — skipping nutrition refresh."
+            exit 0
+          fi
+          # Conservative: 100 ids/run, 4s pacing → ~7 min wall time, ~100 req/hr
+          # well under the 1000/hr USDA cap. Multiple pushes per hour are safe.
+          # Exit 1 (rate-limit) is treated as soft-fail so deploy still ships.
+          npm run refresh:nutrition -- --max=100 --pace=4000 || echo "::warning::nutrition refresh hit rate limit; will catch up next run"
+      - name: Commit cache if changed
         id: commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audio/ data/audio-manifest.json
+          git add data/_reference/usda-cache.json
           if git diff --cached --quiet; then
             echo "committed=false" >> "$GITHUB_OUTPUT"
-            echo "No new audio clips."
+            echo "USDA cache up to date."
           else
-            git commit -m "chore: synthesize audio clips [skip ci]"
+            git commit -m "chore: refresh USDA nutrition cache [skip ci]"
             git push
             echo "committed=true" >> "$GITHUB_OUTPUT"
           fi
 
   build:
     name: Build site
-    needs: [validate, audio]
-    # `audio` only runs on push-to-main; on PR / dispatch we still want build
-    # to run, so don't fail when audio was skipped.
+    needs: [validate, nutrition]
     if: |
       always() &&
       needs.validate.result == 'success' &&
-      (needs.audio.result == 'success' || needs.audio.result == 'skipped')
+      (needs.nutrition.result == 'success' || needs.nutrition.result == 'skipped' || needs.nutrition.result == 'failure')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          # Pull the latest commit (which may include the audio commit just pushed)
           ref: ${{ github.ref }}
       - uses: actions/setup-node@v4
         with:
@@ -92,11 +95,13 @@ jobs:
           name: site
           path: |
             index.html
+            404.html
+            random.html
             pages/
             data/
             og/
-            audio/
             style.css
+            style-home.css
             scripts/
             sitemap.xml
             robots.txt
