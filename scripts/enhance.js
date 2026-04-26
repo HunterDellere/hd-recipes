@@ -34,23 +34,6 @@ else { window.__enhanceInit = true; (function () {
     });
   }
 
-  // ── Reading progress bar ──────────────────────────────────────────────
-  const bar = document.querySelector('.reading-progress-bar');
-  if (bar) {
-    let ticking = false;
-    function update() {
-      const h = document.documentElement;
-      const total = h.scrollHeight - h.clientHeight;
-      const pct = total > 0 ? Math.min(100, Math.max(0, (h.scrollTop / total) * 100)) : 0;
-      bar.style.width = pct + '%';
-      ticking = false;
-    }
-    window.addEventListener('scroll', () => {
-      if (!ticking) { requestAnimationFrame(update); ticking = true; }
-    }, { passive: true });
-    update();
-  }
-
   // ── Share button (Web Share API + clipboard fallback) ─────────────────
   document.querySelectorAll('[data-share]').forEach(btn => {
     const labelEl = btn.querySelector('[data-share-label]');

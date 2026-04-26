@@ -27,31 +27,31 @@ source:
   note: 'Brown butter is the divergence; classic uses olive oil only.'
 
 ingredients:
-  - group: 'Phase 1 — pasta water'
+  - group: 'Pasta water'
     item: 'kosher salt'
     qty: 25
     unit: 'g'
     note: '(2 tbsp Diamond Crystal)'
-  - group: 'Phase 1 — pasta water'
+  - group: 'Pasta water'
     item: 'water'
     qty: 1500
     unit: 'ml'
     note: '(6 cups)'
 
-  - group: 'Phase 2 — emulsion'
+  - group: 'Emulsion'
     item: 'pecorino romano'
     slug: 'pecorino-romano'
     qty: 90
     unit: 'g'
     prep: 'finely grated on microplane'
     note: '(1 cup)'
-  - group: 'Phase 2 — emulsion'
+  - group: 'Emulsion'
     item: 'unsalted butter'
     slug: 'butter'
     qty: 60
     unit: 'g'
     note: '(4 tbsp / ½ stick)'
-  - group: 'Phase 2 — emulsion'
+  - group: 'Emulsion'
     item: 'black peppercorns'
     slug: 'black-pepper'
     qty: 6
@@ -59,7 +59,7 @@ ingredients:
     prep: 'cracked coarse'
     note: '(1½ tbsp whole)'
 
-  - group: 'Phase 3 — pasta'
+  - group: 'Pasta'
     item: 'tonnarelli or spaghetti'
     qty: 200
     unit: 'g'

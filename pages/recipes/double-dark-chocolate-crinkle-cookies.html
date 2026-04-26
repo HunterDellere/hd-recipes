@@ -58,8 +58,7 @@
 
 <div class="shell">
   
-    <aside class="sidebar" id="sidebar">
-      <button class="toc-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">Contents ▾</button>
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
       <span class="toc-topic">Double dark chocolate crinkle cookies</span>
       <div class="toc-divider"></div>
       <span class="toc-label">On this page</span>
@@ -67,6 +66,7 @@
         <li><a href="#ingredients">Mise en Place</a></li>
         <li><a href="#execution">Execution</a></li>
         <li><a href="#notes">Notes</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
       </ul>
     </aside>
   <main class="main" id="main-content">
@@ -90,7 +90,7 @@
           <input type="number" class="ing-scale-input" data-scale-input value="16" min="1" max="100">
           <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
         </div>
-        <button type="button" class="ing-shop-btn" data-shop-export>📋 Copy shopping list</button>
+        <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
       </div>
       <h3 class="ing-group-head">Chocolate base</h3><ol class="ing-list">
         <li class="ing-row" data-qty="60" data-unit="g" data-scalable="1">
@@ -212,6 +212,16 @@
     <div class="section-head"><h2>Notes</h2></div>
     <div class="recipe-notes"><p>Use chopped bar chocolate, not chips. Chips contain stabilizers that hold their shape — fine for chocolate-chip cookies, wrong here. Bar chocolate melts into actual puddles, leaving strata of chocolate in the cookie.</p><p>The double dredge is what makes the crinkle. The granulated layer is a moisture barrier; the powdered sugar above it stays white and snowy as the cookie spreads, opening into the cracked, contrast-y top.
 </p></div>
+
+    
+    <span class="section-anchor" id="nutrition"></span>
+    <div class="section-head"><h2>Nutrition <span class="sh-sub">per serving</span></h2></div>
+    <div class="recipe-nutrition">
+      <div class="nut-col"><div class="nut-row"><span class="nut-label">Calories</span><span class="nut-val">56<span class="nut-unit"> kcal</span></span></div><div class="nut-row"><span class="nut-label">Protein</span><span class="nut-val">0.9<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fat</span><span class="nut-val">3.1<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Carbs</span><span class="nut-val">6.2<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fiber</span><span class="nut-val">0.2<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sugar</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sat. fat</span><span class="nut-val">1.9<span class="nut-unit"> g</span></span></div></div>
+      <div class="nut-col"><div class="nut-row"><span class="nut-label">Sodium</span><span class="nut-val">1<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Potassium</span><span class="nut-val">10<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Calcium</span><span class="nut-val">2<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Iron</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin C</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin A</span><span class="nut-val">94<span class="nut-unit"> IU</span></span></div></div>
+      <p class="nut-missing">Estimated. 2 ingredients not yet mapped to USDA data.</p>
+      <p class="nut-source">Data: USDA FoodData Central</p>
+    </div>
   
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related</h2></div>

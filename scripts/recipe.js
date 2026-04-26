@@ -97,7 +97,7 @@
       try {
         await navigator.clipboard.writeText(text);
         const orig = btn.textContent;
-        btn.textContent = '✓ Copied';
+        btn.textContent = 'Copied';
         setTimeout(() => { btn.textContent = orig; }, 1600);
       } catch (e) {
         // fallback: open in a new window

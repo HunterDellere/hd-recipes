@@ -103,7 +103,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
           <input type="number" class="ing-scale-input" data-scale-input value="${baseServings}" min="1" max="100">
           <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
         </div>
-        <button type="button" class="ing-shop-btn" data-shop-export>📋 Copy shopping list</button>
+        <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
       </div>
       ${groupHtml}
     </div>`;
@@ -118,7 +118,7 @@ export function renderSteps(fm, currentPath, techniqueBySlug) {
       if (target) {
         const href = relPath(currentPath, target.path);
         const techTitle = (target.title || step.technique).split('—')[0].split('·')[0].trim();
-        body += ` <a class="step-tech" href="${escapeHtml(href)}">→ ${escapeHtml(techTitle)}</a>`;
+        body += ` <a class="step-tech" href="${escapeHtml(href)}">${escapeHtml(techTitle)}</a>`;
       }
     }
     const time = step.time_min ? `<span class="step-time">${step.time_min} min</span>` : '';
@@ -242,8 +242,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
   if (nutHtml) { sections.push(nutHtml); sidebarLinks.push({ id: 'nutrition', label: 'Nutrition' }); }
 
   const sidebar = `
-    <aside class="sidebar" id="sidebar">
-      <button class="toc-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">Contents ▾</button>
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
       <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
       <div class="toc-divider"></div>
       <span class="toc-label">On this page</span>
@@ -263,8 +262,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
 export function renderIngredientBody(fm, slug, category) {
   const sidebar = `
-    <aside class="sidebar" id="sidebar">
-      <button class="toc-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">Contents ▾</button>
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
       <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
       <div class="toc-divider"></div>
       <span class="toc-label">On this page</span>
@@ -318,8 +316,7 @@ export function renderIngredientBody(fm, slug, category) {
 
 export function renderTechniqueBody(fm, slug, category) {
   const sidebar = `
-    <aside class="sidebar" id="sidebar">
-      <button class="toc-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">Contents ▾</button>
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
       <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
       <div class="toc-divider"></div>
       <span class="toc-label">On this page</span>
@@ -361,8 +358,7 @@ export function renderHubBody(fm, slug, category, entriesByPath) {
 
   return `
 <div class="shell">
-  <aside class="sidebar" id="sidebar">
-    <button class="toc-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">Contents ▾</button>
+  <aside class="sidebar" id="sidebar" aria-label="Collection contents">
     <span class="toc-topic">${escapeHtml(fm.title || slug)}</span>
     <div class="toc-divider"></div>
     <span class="toc-label">In this collection</span>

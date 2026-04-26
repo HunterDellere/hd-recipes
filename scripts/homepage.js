@@ -67,20 +67,110 @@
       </a>`).join('');
 
     const allEl = $('#all-list');
-    const groups = new Map();
-    for (const e of entries) {
-      if (e.status !== 'complete') continue;
-      if (!groups.has(e.category)) groups.set(e.category, []);
-      groups.get(e.category).push(e);
-    }
-    const out = [];
-    for (const [cat, list] of groups) {
-      out.push(`<h3 id="cat-${cat}" class="cat-h">${escapeHtml((catMeta[cat] || {}).label || cat)}</h3>`);
-      out.push(`<div class="card-grid">${list.map(entryCard).join('')}</div>`);
-    }
-    allEl.innerHTML = out.join('') || `<p class="empty">Add a recipe in <code>content/recipes/</code> and run <code>npm run build</code>.</p>`;
+    const complete = entries.filter(e => e.status === 'complete');
 
+    // Build filter pills from tags + cuisines + courses + diets
+    const allTags = new Map();   // tag → count
+    const cuisines = new Set();
+    const courses = new Set();
+    const diets = new Set();
+    for (const e of complete) {
+      for (const t of (e.tags || [])) allTags.set(t, (allTags.get(t) || 0) + 1);
+      if (e.cuisine) cuisines.add(e.cuisine);
+      if (e.course) courses.add(e.course);
+      for (const d of (e.diet || [])) diets.add(d);
+    }
+
+    const filterBar = `
+      <div class="filter-bar" role="toolbar" aria-label="Filter entries">
+        <div class="filter-group">
+          <span class="filter-label">Type</span>
+          <button type="button" class="filter-pill active" data-filter-type="all">All</button>
+          ${Object.keys(catMeta).map(cat => `<button type="button" class="filter-pill" data-filter-type="${escapeHtml(cat)}">${escapeHtml(catMeta[cat].label)}</button>`).join('')}
+        </div>
+        ${cuisines.size ? `<div class="filter-group">
+          <span class="filter-label">Cuisine</span>
+          ${[...cuisines].sort().map(c => `<button type="button" class="filter-pill" data-filter-cuisine="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
+        </div>` : ''}
+        ${courses.size ? `<div class="filter-group">
+          <span class="filter-label">Course</span>
+          ${[...courses].sort().map(c => `<button type="button" class="filter-pill" data-filter-course="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
+        </div>` : ''}
+        ${diets.size ? `<div class="filter-group">
+          <span class="filter-label">Diet</span>
+          ${[...diets].sort().map(d => `<button type="button" class="filter-pill" data-filter-diet="${escapeHtml(d)}">${escapeHtml(d)}</button>`).join('')}
+        </div>` : ''}
+      </div>
+      <p class="filter-status" data-filter-status></p>`;
+
+    const cardsHtml = complete.map(e => {
+      const cardData = `data-card data-cat="${escapeHtml(e.category)}" data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`;
+      return entryCard(e).replace('class="entry-card"', `class="entry-card" ${cardData}`);
+    }).join('');
+
+    allEl.innerHTML = complete.length
+      ? `${filterBar}<div class="card-grid" id="all-grid">${cardsHtml}</div>`
+      : `<p class="empty">Add a recipe in <code>content/recipes/</code> and run <code>npm run build</code>.</p>`;
+
+    initFilters();
     initSearch(entries);
+  }
+
+  function initFilters() {
+    const bar = document.querySelector('.filter-bar');
+    if (!bar) return;
+    const grid = document.getElementById('all-grid');
+    const status = document.querySelector('[data-filter-status]');
+    const cards = Array.from(grid.querySelectorAll('[data-card]'));
+    const state = { type: 'all', cuisine: null, course: null, diet: null };
+
+    function apply() {
+      let visible = 0;
+      for (const card of cards) {
+        const matchType = state.type === 'all' || card.dataset.cat === state.type;
+        const matchCuisine = !state.cuisine || card.dataset.cuisine === state.cuisine;
+        const matchCourse = !state.course || card.dataset.course === state.course;
+        const matchDiet = !state.diet || (card.dataset.diet || '').split('|').includes(state.diet);
+        const show = matchType && matchCuisine && matchCourse && matchDiet;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      }
+      const filters = [];
+      if (state.type !== 'all') filters.push(state.type);
+      if (state.cuisine) filters.push(state.cuisine);
+      if (state.course) filters.push(state.course);
+      if (state.diet) filters.push(state.diet);
+      status.textContent = filters.length
+        ? `${visible} ${visible === 1 ? 'entry' : 'entries'} matching ${filters.join(' · ')}`
+        : '';
+    }
+
+    bar.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      const types = ['type','cuisine','course','diet'];
+      let group = null;
+      for (const t of types) if (btn.dataset[`filter${t.charAt(0).toUpperCase() + t.slice(1)}`] !== undefined) group = t;
+      if (!group) return;
+      const val = btn.dataset[`filter${group.charAt(0).toUpperCase() + group.slice(1)}`];
+      // Toggle: clicking active pill clears the filter (except 'type all')
+      const wasActive = btn.classList.contains('active');
+      bar.querySelectorAll(`[data-filter-${group}]`).forEach(b => b.classList.remove('active'));
+      if (group === 'type' && val === 'all') {
+        state.type = 'all';
+        btn.classList.add('active');
+      } else if (wasActive) {
+        state[group] = null;
+        if (group === 'type') {
+          bar.querySelector('[data-filter-type="all"]').classList.add('active');
+          state.type = 'all';
+        }
+      } else {
+        state[group] = val;
+        btn.classList.add('active');
+      }
+      apply();
+    });
   }
 
   async function initSearch(entries) {
@@ -89,15 +179,45 @@
     if (!input) return;
     let index = null;
     const pathToEntry = new Map(entries.map(e => [e.path, e]));
+    let activeIndex = -1; // for keyboard navigation
+
+    input.setAttribute('role', 'combobox');
+    input.setAttribute('aria-autocomplete', 'list');
+    input.setAttribute('aria-controls', 'home-search-results');
+    input.setAttribute('aria-expanded', 'false');
+    resultsEl.setAttribute('role', 'listbox');
 
     input.addEventListener('focus', async () => {
       if (index) return;
       try { index = await loadJson('data/search-index.json'); } catch {}
     });
 
+    function render(results) {
+      if (!results.length) {
+        resultsEl.innerHTML = '<li class="sr-empty">No matches</li>';
+        resultsEl.hidden = false;
+        input.setAttribute('aria-expanded', 'true');
+        return;
+      }
+      resultsEl.innerHTML = results.map(([pid], i) => {
+        const path = index.paths[pid];
+        const e = pathToEntry.get(path);
+        if (!e) return '';
+        return `<li role="option" id="sr-opt-${i}"><a href="${escapeHtml(path)}"><span class="sr-cat">${escapeHtml(e.category)}</span><span class="sr-title">${escapeHtml(e.title || '')}</span></a></li>`;
+      }).join('');
+      resultsEl.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+      activeIndex = -1;
+    }
+
     input.addEventListener('input', () => {
       const q = input.value.trim().toLowerCase();
-      if (!q || !index) { resultsEl.hidden = true; resultsEl.innerHTML = ''; return; }
+      if (!q || !index) {
+        resultsEl.hidden = true;
+        resultsEl.innerHTML = '';
+        input.setAttribute('aria-expanded', 'false');
+        return;
+      }
       const tokens = q.split(/\s+/).filter(Boolean);
       const scores = new Map();
       for (const tok of tokens) {
@@ -105,17 +225,54 @@
         for (const [pid, score] of postings) scores.set(pid, (scores.get(pid) || 0) + score);
       }
       const top = Array.from(scores.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
-      if (!top.length) { resultsEl.hidden = true; resultsEl.innerHTML = ''; return; }
-      resultsEl.innerHTML = top.map(([pid]) => {
-        const path = index.paths[pid];
-        const e = pathToEntry.get(path);
-        if (!e) return '';
-        return `<li><a href="${escapeHtml(path)}"><span class="sr-cat">${escapeHtml(e.category)}</span><span class="sr-title">${escapeHtml(e.title || '')}</span></a></li>`;
-      }).join('');
-      resultsEl.hidden = false;
+      render(top);
     });
 
-    input.addEventListener('blur', () => setTimeout(() => { resultsEl.hidden = true; }, 200));
+    input.addEventListener('keydown', (e) => {
+      const items = resultsEl.querySelectorAll('li[role="option"]');
+      if (!items.length) return;
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        activeIndex = Math.min(activeIndex + 1, items.length - 1);
+        updateActive(items);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        activeIndex = Math.max(activeIndex - 1, 0);
+        updateActive(items);
+      } else if (e.key === 'Enter') {
+        if (activeIndex >= 0) {
+          e.preventDefault();
+          const link = items[activeIndex].querySelector('a');
+          if (link) link.click();
+        }
+      } else if (e.key === 'Escape') {
+        input.blur();
+        resultsEl.hidden = true;
+      }
+    });
+
+    function updateActive(items) {
+      items.forEach((it, i) => it.classList.toggle('active', i === activeIndex));
+      if (activeIndex >= 0) {
+        input.setAttribute('aria-activedescendant', `sr-opt-${activeIndex}`);
+        items[activeIndex].scrollIntoView({ block: 'nearest' });
+      } else {
+        input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    input.addEventListener('blur', () => setTimeout(() => {
+      resultsEl.hidden = true;
+      input.setAttribute('aria-expanded', 'false');
+    }, 200));
+
+    // global '/' shortcut to focus search
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) {
+        e.preventDefault();
+        input.focus();
+      }
+    });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
