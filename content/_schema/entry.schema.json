@@ -14,7 +14,7 @@
     },
     "family": {
       "type": "string",
-      "enum": ["cook", "pantry", "skills", "explore"]
+      "enum": ["cook", "pantry", "learn", "traverse", "explore"]
     },
     "status": { "type": "string", "enum": ["stub", "draft", "complete"] },
     "content_review": { "type": "string", "enum": ["pending", "verified", "needs-work"] },

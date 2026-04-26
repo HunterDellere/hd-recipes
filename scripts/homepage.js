@@ -114,14 +114,16 @@
       recentEl.innerHTML = `<p class="empty">No entries yet.</p>`;
     }
 
-    // Family counts
-    const cookCount = entries.filter(e => e.status === 'complete' && e.category === 'recipes').length;
-    const pantryCount = entries.filter(e => e.status === 'complete' && (e.category === 'ingredients' || e.category === 'equipment')).length;
-    const skillsCount = entries.filter(e => e.status === 'complete' && (e.category === 'techniques' || e.category === 'cuisines' || e.category === 'hubs')).length;
+    // Family counts — Cook / Pantry / Learn / Traverse
+    const cookCount     = entries.filter(e => e.status === 'complete' && e.category === 'recipes').length;
+    const pantryCount   = entries.filter(e => e.status === 'complete' && (e.category === 'ingredients' || e.category === 'equipment')).length;
+    const learnCount    = entries.filter(e => e.status === 'complete' && e.category === 'techniques').length;
+    const traverseCount = entries.filter(e => e.status === 'complete' && (e.category === 'cuisines' || e.category === 'hubs')).length;
     const set = (sel, n) => { const el = document.querySelector(sel); if (el) el.textContent = `${n} ${n === 1 ? 'entry' : 'entries'}`; };
     set('[data-count-cook]', cookCount);
     set('[data-count-pantry]', pantryCount);
-    set('[data-count-skills]', skillsCount);
+    set('[data-count-learn]', learnCount);
+    set('[data-count-traverse]', traverseCount);
 
     // Inject family card art (single source of truth in build/lib/family-render)
     try {

@@ -1,16 +1,22 @@
 /**
  * family-render.mjs — render explore-family pages for hd-recipes.
  *
- * Three families, mapped from categories:
- *   cook    → recipes
- *   pantry  → ingredients, equipment
- *   skills  → techniques, cuisines, hubs
+ * Four families, mapped from categories:
+ *   cook     → recipes
+ *   pantry   → ingredients, equipment
+ *   learn    → techniques
+ *   traverse → cuisines, hubs   (cross-cutting indices into the recipe library;
+ *                                tags index page joins this family in C3)
  *
- * The explore index page renders three family cards + a flat all-categories
+ * Cook/Pantry/Learn answer "what kind of thing this entry IS." Traverse answers
+ * "how you slice across the library" — by region (cuisines), by curated path
+ * (hubs/collections), and (soon) by attribute (tags).
+ *
+ * The explore index page renders four family cards + a flat all-categories
  * reference grid below.
  *
  * Each family page renders:
- *   - hero (handled in content/families/<key>.md frontmatter + body)
+ *   - hero (authored in content/explore/<family>.md)
  *   - <!--FAMILY_CONTENT--> → category sections with entry-card grids
  *   - <!--FAMILY_CROSSLINKS--> → links to the other families
  */
@@ -24,17 +30,19 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..', '..');
 
 export const FAMILY_MEMBERS = {
-  cook:    ['recipes'],
-  pantry:  ['ingredients', 'equipment'],
-  skills:  ['techniques', 'cuisines', 'hubs'],
-  explore: [],
+  cook:     ['recipes'],
+  pantry:   ['ingredients', 'equipment'],
+  learn:    ['techniques'],
+  traverse: ['cuisines', 'hubs'],
+  explore:  [],
 };
 
 export const FAMILY_META = {
-  explore: { en: 'Explore',  desc: 'The master entry point. Three families, every category.' },
-  cook:    { en: 'Cook',     desc: 'Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.' },
-  pantry:  { en: 'Pantry',   desc: 'What ingredients are, how to choose them, store them, swap them. Plus the equipment that earns its drawer.' },
-  skills:  { en: 'Skills',   desc: 'Techniques that show up across many recipes, cuisines built from a pantry, and curated reading paths.' },
+  explore:  { en: 'Explore',  desc: 'The master entry point. Four families, every category.' },
+  cook:     { en: 'Cook',     desc: 'Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.' },
+  pantry:   { en: 'Pantry',   desc: 'What ingredients are, how to choose them, store them, swap them. Plus the equipment that earns its drawer.' },
+  learn:    { en: 'Learn',    desc: 'Techniques that show up across many recipes — what they are, when they matter, how they fail.' },
+  traverse: { en: 'Traverse', desc: 'Cross-cutting indices into the library: cuisines built from a pantry, curated reading paths, attribute slices.' },
 };
 
 let _categoryMeta = null;
@@ -128,7 +136,7 @@ export function familyCardArt(family) {
     </svg>`;
   }
 
-  if (family === 'skills') {
+  if (family === 'learn') {
     // Chef's knife at an angle — direct, confident, "skill" reads instantly.
     return `<svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -138,10 +146,10 @@ export function familyCardArt(family) {
         </linearGradient>
       </defs>
       <!-- cutting board (subtle grain) -->
-      <rect x="22" y="118" width="156" height="22" rx="3" fill="none" stroke="var(--cat-cuisines)" stroke-width="1.4" opacity="0.45"/>
-      <line x1="40" y1="125" x2="60" y2="125" stroke="var(--cat-cuisines)" stroke-width="0.8" opacity="0.35"/>
-      <line x1="78" y1="132" x2="106" y2="132" stroke="var(--cat-cuisines)" stroke-width="0.8" opacity="0.35"/>
-      <line x1="124" y1="125" x2="158" y2="125" stroke="var(--cat-cuisines)" stroke-width="0.8" opacity="0.35"/>
+      <rect x="22" y="118" width="156" height="22" rx="3" fill="none" stroke="var(--cat-techniques)" stroke-width="1.4" opacity="0.35"/>
+      <line x1="40" y1="125" x2="60" y2="125" stroke="var(--cat-techniques)" stroke-width="0.8" opacity="0.3"/>
+      <line x1="78" y1="132" x2="106" y2="132" stroke="var(--cat-techniques)" stroke-width="0.8" opacity="0.3"/>
+      <line x1="124" y1="125" x2="158" y2="125" stroke="var(--cat-techniques)" stroke-width="0.8" opacity="0.3"/>
       <!-- knife blade -->
       <path d="M30 96 L 138 70 L 144 92 L 30 96 Z"
             fill="url(#blade-wash)" stroke="var(--cat-techniques)" stroke-width="2" stroke-linejoin="round"/>
@@ -155,6 +163,37 @@ export function familyCardArt(family) {
       <!-- rivets -->
       <circle cx="158" cy="92" r="1.4" fill="var(--bg)" stroke="var(--cat-techniques)" stroke-width="0.8"/>
       <circle cx="172" cy="92" r="1.4" fill="var(--bg)" stroke="var(--cat-techniques)" stroke-width="0.8"/>
+    </svg>`;
+  }
+
+  if (family === 'traverse') {
+    // Compass rose over a horizon. Reads as "navigate", "indices", "across".
+    return `<svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="trv-wash" cx="50%" cy="50%" r="60%">
+          <stop offset="0%" stop-color="var(--cat-cuisines)" stop-opacity="0.16"/>
+          <stop offset="100%" stop-color="var(--cat-cuisines)" stop-opacity="0.02"/>
+        </radialGradient>
+      </defs>
+      <!-- horizon line -->
+      <line x1="14" y1="138" x2="186" y2="138" stroke="var(--cat-cuisines)" stroke-width="1.2" opacity="0.4" stroke-linecap="round"/>
+      <line x1="30" y1="146" x2="170" y2="146" stroke="var(--cat-cuisines)" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/>
+      <!-- outer ring -->
+      <circle cx="100" cy="80" r="48" fill="url(#trv-wash)" stroke="var(--cat-cuisines)" stroke-width="1.6" opacity="0.85"/>
+      <!-- inner ring -->
+      <circle cx="100" cy="80" r="34" fill="none" stroke="var(--cat-cuisines)" stroke-width="1" opacity="0.45"/>
+      <!-- N/S/E/W tick marks -->
+      <line x1="100" y1="32" x2="100" y2="40" stroke="var(--cat-cuisines)" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="100" y1="120" x2="100" y2="128" stroke="var(--cat-cuisines)" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="52" y1="80" x2="60" y2="80" stroke="var(--cat-cuisines)" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="140" y1="80" x2="148" y2="80" stroke="var(--cat-cuisines)" stroke-width="1.4" stroke-linecap="round"/>
+      <!-- compass needle (long N point) -->
+      <path d="M100 36 L 106 80 L 100 124 L 94 80 Z"
+            fill="var(--cat-hubs)" opacity="0.7" stroke="var(--cat-cuisines)" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- needle pivot -->
+      <circle cx="100" cy="80" r="3" fill="var(--bg)" stroke="var(--cat-cuisines)" stroke-width="1.4"/>
+      <!-- N label dot -->
+      <circle cx="100" cy="28" r="2" fill="var(--cat-hubs)" opacity="0.85"/>
     </svg>`;
   }
 
@@ -207,8 +246,8 @@ function renderCategorySection(catKey, entries, fromPath) {
 }
 
 function renderExploreContent(entries, fromPath) {
-  // Three big family cards
-  const families = ['cook', 'pantry', 'skills'];
+  // Four family cards: Cook, Pantry, Learn, Traverse
+  const families = ['cook', 'pantry', 'learn', 'traverse'];
   const familyCards = families.map(f => {
     const meta = FAMILY_META[f];
     const memberLabels = FAMILY_MEMBERS[f].map(k => categoryMeta()[k]?.label || k).join(' · ');
@@ -232,7 +271,11 @@ function renderExploreContent(entries, fromPath) {
   const catLinks = allCats.map(k => {
     const meta = categoryMeta()[k] || { label: k };
     const count = entries.filter(e => e.status === 'complete' && e.category === k).length;
-    const href = relPath(fromPath, `pages/explore/${k === 'recipes' ? 'cook' : (k === 'ingredients' || k === 'equipment') ? 'pantry' : 'skills'}.html#cat-${k}`);
+    const familyForCat = k === 'recipes' ? 'cook'
+      : (k === 'ingredients' || k === 'equipment') ? 'pantry'
+      : k === 'techniques' ? 'learn'
+      : 'traverse'; // cuisines, hubs
+    const href = relPath(fromPath, `pages/explore/${familyForCat}.html#cat-${k}`);
     return `
         <a class="cat-link" href="${escapeHtml(href)}" data-category="${escapeHtml(k)}">
           <span class="cl-label">${escapeHtml(meta.label)}</span>
@@ -348,7 +391,7 @@ export function renderFamilyContent(family, entries, fromPath) {
 
 export function renderFamilyCrosslinks(family, fromPath) {
   if (family === 'explore') return '';
-  const others = ['cook', 'pantry', 'skills', 'explore'].filter(f => f !== family);
+  const others = ['cook', 'pantry', 'learn', 'traverse', 'explore'].filter(f => f !== family);
   const links = others.map(f => {
     const meta = FAMILY_META[f];
     const href = relPath(fromPath, `pages/explore/${f === 'explore' ? 'index' : f}.html`);

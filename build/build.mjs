@@ -369,7 +369,8 @@ writeFileSync(join(dataDir, 'entries.json'), JSON.stringify(entries, null, 2), '
 writeFileSync(join(dataDir, 'family-art.json'), JSON.stringify({
   cook: familyCardArt('cook'),
   pantry: familyCardArt('pantry'),
-  skills: familyCardArt('skills'),
+  learn: familyCardArt('learn'),
+  traverse: familyCardArt('traverse'),
   explore: familyCardArt('explore'),
 }, null, 2), 'utf8');
 writeFileSync(join(dataDir, 'nutrition.json'), JSON.stringify(nutritionByPath, null, 2), 'utf8');

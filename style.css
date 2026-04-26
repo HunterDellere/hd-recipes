@@ -805,10 +805,11 @@ pre code { background: none; padding: 0; }
   background: var(--accent);
   border-radius: 2px;
 }
-.fam-hero[data-family="cook"]::after    { background: var(--cat-recipes); }
-.fam-hero[data-family="pantry"]::after  { background: var(--cat-ingredients); }
-.fam-hero[data-family="skills"]::after  { background: var(--cat-techniques); }
-.fam-hero[data-family="explore"]::after { background: var(--accent); }
+.fam-hero[data-family="cook"]::after     { background: var(--cat-recipes); }
+.fam-hero[data-family="pantry"]::after   { background: var(--cat-ingredients); }
+.fam-hero[data-family="learn"]::after    { background: var(--cat-techniques); }
+.fam-hero[data-family="traverse"]::after { background: var(--cat-cuisines); }
+.fam-hero[data-family="explore"]::after  { background: var(--accent); }
 
 .fam-hero-eyebrow {
   display: inline-block;
@@ -821,10 +822,11 @@ pre code { background: none; padding: 0; }
   border-radius: 999px;
   background: var(--bg-elev);
 }
-.fam-hero[data-family="cook"]    .fam-hero-eyebrow { color: var(--cat-recipes);     border-color: rgba(184,66,58,.22); }
-.fam-hero[data-family="pantry"]  .fam-hero-eyebrow { color: var(--cat-ingredients); border-color: rgba(58,122,58,.22); }
-.fam-hero[data-family="skills"]  .fam-hero-eyebrow { color: var(--cat-techniques);  border-color: rgba(165,90,26,.22); }
-.fam-hero[data-family="explore"] .fam-hero-eyebrow { color: var(--accent);          border-color: var(--accent-soft); }
+.fam-hero[data-family="cook"]     .fam-hero-eyebrow { color: var(--cat-recipes);     border-color: rgba(184,66,58,.22); }
+.fam-hero[data-family="pantry"]   .fam-hero-eyebrow { color: var(--cat-ingredients); border-color: rgba(58,122,58,.22); }
+.fam-hero[data-family="learn"]    .fam-hero-eyebrow { color: var(--cat-techniques);  border-color: rgba(165,90,26,.22); }
+.fam-hero[data-family="traverse"] .fam-hero-eyebrow { color: var(--cat-cuisines);    border-color: rgba(58,90,138,.22); }
+.fam-hero[data-family="explore"]  .fam-hero-eyebrow { color: var(--accent);          border-color: var(--accent-soft); }
 
 .fam-hero-title {
   font-size: clamp(2.4rem, 5.5vw, 3.6rem);
@@ -845,9 +847,10 @@ pre code { background: none; padding: 0; }
   margin: 0 auto;
   color: var(--ink-faint);
 }
-.fam-hero[data-family="cook"]    .fam-hero-ornament { color: var(--cat-recipes); }
-.fam-hero[data-family="pantry"]  .fam-hero-ornament { color: var(--cat-ingredients); }
-.fam-hero[data-family="skills"]  .fam-hero-ornament { color: var(--cat-techniques); }
+.fam-hero[data-family="cook"]     .fam-hero-ornament { color: var(--cat-recipes); }
+.fam-hero[data-family="pantry"]   .fam-hero-ornament { color: var(--cat-ingredients); }
+.fam-hero[data-family="learn"]    .fam-hero-ornament { color: var(--cat-techniques); }
+.fam-hero[data-family="traverse"] .fam-hero-ornament { color: var(--cat-cuisines); }
 
 .fam-intro {
   margin: 2.5rem auto 3rem;
@@ -1025,9 +1028,10 @@ pre code { background: none; padding: 0; }
   transition: border-color 120ms, transform 100ms;
 }
 .fam-cross-link:hover { border-color: var(--accent); transform: translateY(-1px); text-decoration: none; }
-.fam-cross-link[data-family="cook"]   { border-left: 3px solid var(--cat-recipes); }
-.fam-cross-link[data-family="pantry"] { border-left: 3px solid var(--cat-ingredients); }
-.fam-cross-link[data-family="skills"] { border-left: 3px solid var(--cat-techniques); }
+.fam-cross-link[data-family="cook"]     { border-left: 3px solid var(--cat-recipes); }
+.fam-cross-link[data-family="pantry"]   { border-left: 3px solid var(--cat-ingredients); }
+.fam-cross-link[data-family="learn"]    { border-left: 3px solid var(--cat-techniques); }
+.fam-cross-link[data-family="traverse"] { border-left: 3px solid var(--cat-cuisines); }
 .fcl-label { font-family: var(--font-serif); font-weight: 700; font-size: 17px; color: var(--ink); }
 .fcl-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.4; }
 
