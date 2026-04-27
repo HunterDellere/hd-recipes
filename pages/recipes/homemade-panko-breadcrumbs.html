@@ -100,23 +100,40 @@
     <div class="section-head"><h2>Mise en Place</h2></div>
     <div class="recipe-ingredients" data-base-servings="1">
       <div class="ing-controls">
-        <div class="ing-scale">
-          <span class="ing-scale-label">Servings</span>
-          <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
-          <input type="number" class="ing-scale-input" data-scale-input value="1" min="1" max="100">
-          <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+        <div class="ing-control ing-scale">
+          <span class="ing-control-label">Servings</span>
+          <div class="ing-scale-stepper">
+            <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
+            <input type="number" class="ing-scale-input" data-scale-input value="1" min="1" max="100" aria-label="Number of servings">
+            <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+          </div>
         </div>
-        <div class="ing-units" role="group" aria-label="Display units">
-          <button type="button" class="ing-units-btn active" data-units="metric" aria-pressed="true">Metric</button>
-          <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">Imperial</button>
+        <div class="ing-control ing-units-control">
+          <span class="ing-control-label">Units</span>
+          <div class="ing-units" role="group" aria-label="Display units">
+            <span class="ing-units-thumb" aria-hidden="true"></span>
+            <button type="button" class="ing-units-btn" data-units="metric" aria-pressed="true">
+              <span class="ing-units-icon" aria-hidden="true">g</span>
+              <span class="ing-units-label">Metric</span>
+            </button>
+            <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">
+              <span class="ing-units-icon" aria-hidden="true">oz</span>
+              <span class="ing-units-label">Imperial</span>
+            </button>
+          </div>
         </div>
-        <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
+        <button type="button" class="ing-shop-btn" data-shop-export aria-label="Copy shopping list to clipboard">
+          <svg class="ing-shop-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5h6a2 2 0 0 1 2 2v2"/><path d="M5 9h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9 5a3 3 0 0 1 6 0"/>
+          </svg>
+          <span>Copy list</span>
+        </button>
       </div>
       <h3 class="ing-group-head">The bread</h3><ol class="ing-list">
         <li class="ing-row" data-qty="250" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>250</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">white sandwich bread<span class="ing-prep">, crusts removed</span><span class="ing-note"> — (8–10 slices, plain white pullman or shokupan; day-old is ideal but fresh works)</span></span>
+          <span class="ing-name">white sandwich bread<span class="ing-prep">, crusts removed</span> <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (8–10 slices, plain white pullman or shokupan; day-old is ideal but fresh works)</span></span>
         </li>
       </ol>
     </div>
@@ -202,55 +219,65 @@
     </aside>
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related</h2></div>
-    <div class="related-cards">
-      <a class="related-card" href="toasted-sesame-paste.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Toasted sesame paste (zhī ma jiàng)</span>
-        <span class="rl-desc">Hulled white sesame seeds toasted dark, ground to a thick caramel-brown paste with a splash of toasted sesame </span>
-        <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
-      </a>
-      <a class="related-card" href="dijon-mustard.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Dijon mustard</span>
-        <span class="rl-desc">Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and salt. Shar</span>
-        <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
-      </a>
-      <a class="related-card" href="whole-grain-mustard.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Whole-grain mustard</span>
-        <span class="rl-desc">Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing heat in w</span>
-        <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
-      </a>
-      <a class="related-card" href="sichuan-chili-oil.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Sichuan chili oil</span>
-        <span class="rl-desc">Aromatics infused into hot oil at three precise temperatures, then poured over coarse chili flakes. The crackl</span>
-        <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
-      </a>
-      <a class="related-card" href="lemony-green-beans-with-garlic-crunch.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Lemony green beans with garlic crunch</span>
-        <span class="rl-desc">Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on to</span>
-        <span class="rl-reason rl-reason-tag">weeknight</span>
-      </a>
-      <a class="related-card" href="house-blend-chai.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">House blend chai</span>
-        <span class="rl-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.</span>
-        <span class="rl-reason rl-reason-tag">weeknight</span>
-      </a>
-      <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Chinese tea eggs</span>
-        <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
-        <span class="rl-reason rl-reason-tag">make-ahead</span>
-      </a>
-      <a class="related-card" href="../hubs/weeknight-pasta.html" data-category="hubs">
-        <span class="rl-cat">hubs</span>
-        <span class="rl-title">Weeknight pasta</span>
-        <span class="rl-desc">Pasta dishes that hit the table in under 30 minutes without sacrificing technique.</span>
-        <span class="rl-reason rl-reason-tag">weeknight</span>
-      </a>
+    <div class="related-groups">
+
+      <div class="related-group" data-related-group="recipes">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="recipes" aria-hidden="true"></span>
+          Recipes
+          <span class="related-group-count">8</span>
+        </h3>
+        <div class="related-cards related-cards--recipes">
+        <a class="related-card" href="toasted-sesame-paste.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Toasted sesame paste (zhī ma jiàng)</span>
+          <span class="rl-desc">Hulled white sesame seeds toasted dark, ground to a thick caramel-brown paste with a splash of toasted sesame </span>
+          <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
+        </a>
+        <a class="related-card" href="dijon-mustard.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Dijon mustard</span>
+          <span class="rl-desc">Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and salt. Shar</span>
+          <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
+        </a>
+        <a class="related-card" href="whole-grain-mustard.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Whole-grain mustard</span>
+          <span class="rl-desc">Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing heat in w</span>
+          <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
+        </a>
+        <a class="related-card" href="sichuan-chili-oil.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Sichuan chili oil</span>
+          <span class="rl-desc">Aromatics infused into hot oil at three precise temperatures, then poured over coarse chili flakes. The crackl</span>
+          <span class="rl-reason rl-reason-tag">pantry · make-ahead</span>
+        </a>
+        <a class="related-card" href="lemony-green-beans-with-garlic-crunch.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Lemony green beans with garlic crunch</span>
+          <span class="rl-desc">Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on to</span>
+          <span class="rl-reason rl-reason-tag">weeknight</span>
+        </a>
+        <a class="related-card" href="house-blend-chai.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">House blend chai</span>
+          <span class="rl-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.</span>
+          <span class="rl-reason rl-reason-tag">weeknight</span>
+        </a>
+        <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Chinese tea eggs</span>
+          <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
+          <span class="rl-reason rl-reason-tag">make-ahead</span>
+        </a>
+        <a class="related-card" href="brown-butter-cacio-e-pepe.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Brown butter cacio e pepe</span>
+          <span class="rl-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttiness over the</span>
+          <span class="rl-reason rl-reason-tag">weeknight</span>
+        </a>
+        </div>
+      </div>
     </div><nav class="adj-nav"><a class="adj-nav-link" href="double-dark-chocolate-crinkle-cookies.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Double dark chocolate crinkle cookies</span>

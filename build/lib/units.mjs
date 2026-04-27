@@ -62,15 +62,30 @@ export function parseQty(q) {
   return Number.isFinite(n) ? n : null;
 }
 
+// Whole-piece units that need a per-ingredient grams_per_unit override to
+// resolve into a mass. `each` covers eggs, lemons, onions; `clove` covers
+// garlic; `pod` / `stick` / `pinch` are spice-shaped pieces.
+const PIECE_UNITS = new Set(['each', 'clove', 'pod', 'stick', 'pinch']);
+
 /**
  * Best-effort grams for a given ingredient line. If the unit is mass, exact.
  * If volume, use water-density conversion (rough — acceptable for nutrition
  * estimation; per-ingredient density override is supported via fm.density_g_per_ml).
+ *
+ * For piece-shaped units (each/clove/pod/stick/pinch), pass grams_per_unit
+ * (resolved by caller via per-line override → ingredient page → null).
  */
-export function ingredientGrams(ing, density_g_per_ml = 1) {
+export function ingredientGrams(ing, density_g_per_ml = 1, grams_per_unit = null) {
   const qty = parseQty(ing.qty);
   if (qty == null) return null;
   const unit = normalizeUnit(ing.unit);
+
+  if (PIECE_UNITS.has(unit)) {
+    const g = (typeof grams_per_unit === 'number' && grams_per_unit > 0) ? grams_per_unit : null;
+    if (g == null) return null;
+    return qty * g;
+  }
+
   const conv = VOLUME_TO_G[unit];
   if (conv == null) return null;
   // Treat tsp/tbsp/cup/ml/l as volume → multiply by density

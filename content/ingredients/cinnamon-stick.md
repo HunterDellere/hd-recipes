@@ -10,6 +10,7 @@ tags: ['spice', 'aromatic']
 updated: '2026-04-26'
 
 usda_fdc_id: 171320
+grams_per_unit: 3
 
 about: |
   Two species are sold as "cinnamon" and they aren't interchangeable. Cassia (Cinnamomum cassia) is what almost all US grocery cinnamon is — thick, hard, dark bark with high cinnamaldehyde content and a sharp, woody heat. Ceylon (Cinnamomum verum) is paler, brittle, with thin layers, and a softer, more complex citrus-floral character.

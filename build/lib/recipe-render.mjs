@@ -104,6 +104,23 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     groupMap.get(g).push(ing);
   }
 
+  // Strip leading measurement-paren from a note when the parenthetical is
+  // pure measurement text (e.g. "(4 tbsp)", "(1 cup)", "(½ stick)"). Runtime
+  // recomputes that parenthetical in whichever unit system is opposite the
+  // active toggle, so leaving the author's manual one in place would either
+  // duplicate or contradict it. Author prose context after the paren stays.
+  const MEAS_TOKEN = /\b(tsp|tbsp|cup|cups|oz|ounces?|lb|lbs|pound|pounds?|sticks?|tablespoons?|teaspoons?|grams?|kilo(?:gram)?s?|ml|milliliters?|liters?|kg|g)\b/i;
+  function splitNote(noteText) {
+    if (!noteText) return '';
+    const m = String(noteText).match(/^\s*\(([^)]+)\)\s*(.*)$/);
+    if (!m) return noteText;
+    const inner = m[1].trim();
+    const hasNumber = /\d|[¼½¾⅛⅜⅝⅞⅓⅔]/.test(inner);
+    const hasUnit = MEAS_TOKEN.test(inner);
+    if (hasNumber && hasUnit) return m[2].trim();
+    return noteText;
+  }
+
   const renderRow = (ing) => {
     let label = escapeHtml(ing.item);
     let target = null;
@@ -126,14 +143,20 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     const qty = fmtQty(ing.qty);
     const unit = ing.unit ? escapeHtml(ing.unit) : '';
     const prep = ing.prep ? `<span class="ing-prep">, ${escapeHtml(ing.prep)}</span>` : '';
-    const note = ing.note ? `<span class="ing-note"> — ${escapeHtml(ing.note)}</span>` : '';
+    const cleanNote = splitNote(ing.note);
+    // Alternate-unit parenthetical: rendered & populated by recipe.js. Only
+    // emitted when the row is convertible (numeric qty + a real unit).
+    const isScalable = typeof ing.qty === 'number';
+    const isConvertible = isScalable && unit && unit !== 'each' && unit !== 'pinch' && unit !== 'clove';
+    const alt = isConvertible ? ` <span class="ing-alt" data-ing-alt aria-hidden="true"></span>` : '';
+    const note = cleanNote ? `<span class="ing-note"> — ${escapeHtml(cleanNote)}</span>` : '';
     const opt = ing.optional ? `<span class="ing-opt">optional</span>` : '';
-    const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}` + (typeof ing.qty === 'number' ? ' data-scalable="1"' : '');
+    const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}` + (isScalable ? ' data-scalable="1"' : '');
     return `
         <li class="ing-row" ${dataAttrs}>
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>${qty}</span> <span data-ing-unit>${unit}</span></span>
-          <span class="ing-name">${label}${prep}${opt}${note}</span>
+          <span class="ing-name">${label}${prep}${alt}${opt}${note}</span>
         </li>`;
   };
 
@@ -149,17 +172,34 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     <div class="section-head"><h2>Mise en Place</h2></div>
     <div class="recipe-ingredients" data-base-servings="${baseServings}">
       <div class="ing-controls">
-        <div class="ing-scale">
-          <span class="ing-scale-label">Servings</span>
-          <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
-          <input type="number" class="ing-scale-input" data-scale-input value="${baseServings}" min="1" max="100">
-          <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+        <div class="ing-control ing-scale">
+          <span class="ing-control-label">Servings</span>
+          <div class="ing-scale-stepper">
+            <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
+            <input type="number" class="ing-scale-input" data-scale-input value="${baseServings}" min="1" max="100" aria-label="Number of servings">
+            <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+          </div>
         </div>
-        <div class="ing-units" role="group" aria-label="Display units">
-          <button type="button" class="ing-units-btn active" data-units="metric" aria-pressed="true">Metric</button>
-          <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">Imperial</button>
+        <div class="ing-control ing-units-control">
+          <span class="ing-control-label">Units</span>
+          <div class="ing-units" role="group" aria-label="Display units">
+            <span class="ing-units-thumb" aria-hidden="true"></span>
+            <button type="button" class="ing-units-btn" data-units="metric" aria-pressed="true">
+              <span class="ing-units-icon" aria-hidden="true">g</span>
+              <span class="ing-units-label">Metric</span>
+            </button>
+            <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">
+              <span class="ing-units-icon" aria-hidden="true">oz</span>
+              <span class="ing-units-label">Imperial</span>
+            </button>
+          </div>
         </div>
-        <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
+        <button type="button" class="ing-shop-btn" data-shop-export aria-label="Copy shopping list to clipboard">
+          <svg class="ing-shop-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5h6a2 2 0 0 1 2 2v2"/><path d="M5 9h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9 5a3 3 0 0 1 6 0"/>
+          </svg>
+          <span>Copy list</span>
+        </button>
       </div>
       ${groupHtml}
     </div>`;
@@ -216,8 +256,17 @@ export function renderNutritionBlock(nutrition) {
     row('Vitamin A', 'vitamin_a_iu', ' IU'),
   ].filter(Boolean).join('');
 
-  const missingNote = nutrition.missing && nutrition.missing.length
-    ? `<p class="nut-missing">Estimated. ${nutrition.missing.length} ingredient${nutrition.missing.length === 1 ? '' : 's'} not yet mapped to USDA data.</p>`
+  // Surface the names of ingredients excluded from the calculation so cooks
+  // know what's not counted (and contributors know what to map).
+  const missingList = (nutrition.missing || []).map(m => typeof m === 'string' ? { name: m } : m);
+  const missingNote = missingList.length
+    ? (() => {
+        const names = missingList.map(m => escapeHtml(m.name || m.slug || ''));
+        const shown = names.slice(0, 3).join(', ');
+        const more = names.length > 3 ? `, +${names.length - 3} more` : '';
+        const verb = missingList.length === 1 ? "isn't" : "aren't";
+        return `<p class="nut-missing"><span class="nut-missing-icon" aria-hidden="true">⚠</span> Estimated — ${shown}${more} ${verb} mapped to USDA data yet.</p>`;
+      })()
     : '';
 
   return `

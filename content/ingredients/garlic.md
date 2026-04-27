@@ -10,6 +10,7 @@ tags: ['aromatic']
 updated: '2026-04-26'
 
 usda_fdc_id: 169230
+grams_per_unit: 4
 
 about: |
   Garlic''s sharp bite is allicin — and allicin doesn''t exist in an intact clove. It forms when you damage cell walls (cut, crush, grate), which lets the enzyme alliinase react with the precursor alliin. The more you damage the clove, the more allicin you generate. A whole clove poached in milk is sweet and almost nutty; the same clove minced raw is hot enough to bite.

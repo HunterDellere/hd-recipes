@@ -102,45 +102,62 @@
     <div class="section-head"><h2>Mise en Place</h2></div>
     <div class="recipe-ingredients" data-base-servings="24">
       <div class="ing-controls">
-        <div class="ing-scale">
-          <span class="ing-scale-label">Servings</span>
-          <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
-          <input type="number" class="ing-scale-input" data-scale-input value="24" min="1" max="100">
-          <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+        <div class="ing-control ing-scale">
+          <span class="ing-control-label">Servings</span>
+          <div class="ing-scale-stepper">
+            <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
+            <input type="number" class="ing-scale-input" data-scale-input value="24" min="1" max="100" aria-label="Number of servings">
+            <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+          </div>
         </div>
-        <div class="ing-units" role="group" aria-label="Display units">
-          <button type="button" class="ing-units-btn active" data-units="metric" aria-pressed="true">Metric</button>
-          <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">Imperial</button>
+        <div class="ing-control ing-units-control">
+          <span class="ing-control-label">Units</span>
+          <div class="ing-units" role="group" aria-label="Display units">
+            <span class="ing-units-thumb" aria-hidden="true"></span>
+            <button type="button" class="ing-units-btn" data-units="metric" aria-pressed="true">
+              <span class="ing-units-icon" aria-hidden="true">g</span>
+              <span class="ing-units-label">Metric</span>
+            </button>
+            <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">
+              <span class="ing-units-icon" aria-hidden="true">oz</span>
+              <span class="ing-units-label">Imperial</span>
+            </button>
+          </div>
         </div>
-        <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
+        <button type="button" class="ing-shop-btn" data-shop-export aria-label="Copy shopping list to clipboard">
+          <svg class="ing-shop-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5h6a2 2 0 0 1 2 2v2"/><path d="M5 9h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9 5a3 3 0 0 1 6 0"/>
+          </svg>
+          <span>Copy list</span>
+        </button>
       </div>
       <h3 class="ing-group-head">Chili flakes</h3><ol class="ing-list">
         <li class="ing-row" data-qty="60" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>60</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">coarse Sichuan or Korean chili flakes (èrjīngtiáo / gochugaru)<span class="ing-note"> — (½ cup; for color and visible texture)</span></span>
+          <span class="ing-name">coarse Sichuan or Korean chili flakes (èrjīngtiáo / gochugaru) <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="30" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>30</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">fine Sichuan chili flakes or chili powder<span class="ing-note"> — (¼ cup; for the deep red base color and quick heat)</span></span>
+          <span class="ing-name">fine Sichuan chili flakes or chili powder <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="12" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>12</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">toasted white sesame seeds<span class="ing-note"> — (2 tbsp)</span></span>
+          <span class="ing-name">toasted white sesame seeds <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="4" data-unit="g" data-density="0.86" data-imp-pref="tsp" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>4</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="ing-link" href="../ingredients/kosher-salt.html">kosher salt</a><span class="ing-note"> — (½ tsp Diamond Crystal)</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/kosher-salt.html">kosher salt</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
       </ol>
 <h3 class="ing-group-head">Aromatic oil</h3><ol class="ing-list">
         <li class="ing-row" data-qty="500" data-unit="ml" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>500</span> <span data-ing-unit>ml</span></span>
-          <span class="ing-name">neutral oil (rice bran, peanut, or canola)<span class="ing-note"> — (2 cups)</span></span>
+          <span class="ing-name">neutral oil (rice bran, peanut, or canola) <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="4" data-unit="each" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
@@ -155,7 +172,7 @@
         <li class="ing-row" data-qty="8" data-unit="g" data-density="0.4" data-imp-pref="tsp" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>8</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="ing-link" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a><span class="ing-note"> — (1 tbsp; the red-husked, citrus-numbing kind)</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="3" data-unit="each" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
@@ -165,7 +182,7 @@
         <li class="ing-row" data-qty="30" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>30</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="ing-link" href="../ingredients/ginger.html">fresh ginger</a><span class="ing-prep">, sliced into 5mm coins</span><span class="ing-note"> — (2-inch knob)</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/ginger.html">fresh ginger</a><span class="ing-prep">, sliced into 5mm coins</span> <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (2-inch knob)</span></span>
         </li>
         <li class="ing-row" data-qty="4" data-unit="each" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
@@ -246,9 +263,9 @@
     <span class="section-anchor" id="nutrition"></span>
     <div class="section-head"><h2>Nutrition <span class="sh-sub">per serving</span></h2></div>
     <div class="recipe-nutrition">
-      <div class="nut-col"><div class="nut-row"><span class="nut-label">Calories</span><span class="nut-val">1<span class="nut-unit"> kcal</span></span></div><div class="nut-row"><span class="nut-label">Protein</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fat</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Carbs</span><span class="nut-val">0.2<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fiber</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sugar</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sat. fat</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div></div>
-      <div class="nut-col"><div class="nut-row"><span class="nut-label">Sodium</span><span class="nut-val">65<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Potassium</span><span class="nut-val">5<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Calcium</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Iron</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin C</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin A</span><span class="nut-val">0<span class="nut-unit"> IU</span></span></div></div>
-      <p class="nut-missing">Estimated. 3 ingredients not yet mapped to USDA data.</p>
+      <div class="nut-col"><div class="nut-row"><span class="nut-label">Calories</span><span class="nut-val">2<span class="nut-unit"> kcal</span></span></div><div class="nut-row"><span class="nut-label">Protein</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fat</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Carbs</span><span class="nut-val">0.4<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fiber</span><span class="nut-val">0.1<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sugar</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sat. fat</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div></div>
+      <div class="nut-col"><div class="nut-row"><span class="nut-label">Sodium</span><span class="nut-val">65<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Potassium</span><span class="nut-val">7<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Calcium</span><span class="nut-val">2<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Iron</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin C</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin A</span><span class="nut-val">1<span class="nut-unit"> IU</span></span></div></div>
+      <p class="nut-missing"><span class="nut-missing-icon" aria-hidden="true">⚠</span> Estimated — Sichuan peppercorns isn't mapped to USDA data yet.</p>
       <p class="nut-source">Data: USDA FoodData Central</p>
     </div>
 
@@ -339,55 +356,85 @@
     </aside>
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related</h2></div>
-    <div class="related-cards">
-      <a class="related-card" href="../ingredients/sichuan-peppercorns.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Sichuan peppercorns</span>
-        <span class="rl-desc">The husks of Zanthoxylum berries. Not actually pepper — they create má, the buzzing tingling numbness that def</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/cinnamon-stick.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Cinnamon stick</span>
-        <span class="rl-desc">Dried inner bark of Cinnamomum trees. Two main types: hot, sharp Cassia (the supermarket default) and floral, </span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/ginger.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Ginger (fresh)</span>
-        <span class="rl-desc">Rhizome of Zingiber officinale. Sharp, peppery heat from gingerol when raw; mellower and sweeter (zingerone) w</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/kosher-salt.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Kosher salt</span>
-        <span class="rl-desc">Coarse-grain sodium chloride, no iodine, no anti-caking agents. Cooking salt of choice because the crystal sha</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/star-anise.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Star anise</span>
-        <span class="rl-desc">The dried fruit of Illicium verum, eight-pointed and intensely licorice-aromatic. The soul of Chinese five-spi</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../techniques/blooming-aromatics.html" data-category="techniques">
-        <span class="rl-cat">techniques</span>
-        <span class="rl-title">Blooming aromatics</span>
-        <span class="rl-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
-        <span class="rl-reason rl-reason-uses">used in this recipe</span>
-      </a>
-      <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Chinese tea eggs</span>
-        <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
-        <span class="rl-reason rl-reason-shared-ings">shares star anise, cinnamon stick</span>
-      </a>
-      <a class="related-card" href="toasted-sesame-paste.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Toasted sesame paste (zhī ma jiàng)</span>
-        <span class="rl-desc">Hulled white sesame seeds toasted dark, ground to a thick caramel-brown paste with a splash of toasted sesame </span>
-        <span class="rl-reason rl-reason-cuisine">chinese</span>
-      </a>
+    <div class="related-groups">
+
+      <div class="related-group" data-related-group="recipes">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="recipes" aria-hidden="true"></span>
+          Recipes
+          <span class="related-group-count">5</span>
+        </h3>
+        <div class="related-cards related-cards--recipes">
+        <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Chinese tea eggs</span>
+          <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
+          <span class="rl-reason rl-reason-shared-ings">shares star anise, cinnamon stick</span>
+        </a>
+        <a class="related-card" href="toasted-sesame-paste.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Toasted sesame paste (zhī ma jiàng)</span>
+          <span class="rl-desc">Hulled white sesame seeds toasted dark, ground to a thick caramel-brown paste with a splash of toasted sesame </span>
+          <span class="rl-reason rl-reason-cuisine">chinese</span>
+        </a>
+        <a class="related-card" href="sichuan-dandan-mian.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Sichuan dandan mian</span>
+          <span class="rl-desc">Wheat noodles in a sesame-chili sauce, topped with crispy rendered pork and ya cai. The sauce comes together i</span>
+          <span class="rl-reason rl-reason-shared-ings">also uses sichuan peppercorns</span>
+        </a>
+        <a class="related-card" href="dijon-mustard.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Dijon mustard</span>
+          <span class="rl-desc">Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and salt. Shar</span>
+          <span class="rl-reason rl-reason-shared-ings">also uses kosher salt</span>
+        </a>
+        <a class="related-card" href="whole-grain-mustard.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Whole-grain mustard</span>
+          <span class="rl-desc">Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing heat in w</span>
+          <span class="rl-reason rl-reason-shared-ings">also uses kosher salt</span>
+        </a>
+        </div>
+      </div>
+
+      <div class="related-group" data-related-group="ingredients">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="ingredients" aria-hidden="true"></span>
+          Ingredients
+          <span class="related-group-count">2</span>
+        </h3>
+        <div class="related-cards related-cards--ingredients">
+        <a class="related-card" href="../ingredients/sichuan-peppercorns.html" data-category="ingredients">
+          <span class="rl-cat">ingredients</span>
+          <span class="rl-title">Sichuan peppercorns</span>
+          <span class="rl-desc">The husks of Zanthoxylum berries. Not actually pepper — they create má, the buzzing tingling numbness that def</span>
+          <span class="rl-reason rl-reason-uses">in this recipe</span>
+        </a>
+        <a class="related-card" href="../ingredients/cinnamon-stick.html" data-category="ingredients">
+          <span class="rl-cat">ingredients</span>
+          <span class="rl-title">Cinnamon stick</span>
+          <span class="rl-desc">Dried inner bark of Cinnamomum trees. Two main types: hot, sharp Cassia (the supermarket default) and floral, </span>
+          <span class="rl-reason rl-reason-uses">in this recipe</span>
+        </a>
+        </div>
+      </div>
+
+      <div class="related-group" data-related-group="techniques">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="techniques" aria-hidden="true"></span>
+          Techniques
+          <span class="related-group-count">1</span>
+        </h3>
+        <div class="related-cards related-cards--techniques">
+        <a class="related-card" href="../techniques/blooming-aromatics.html" data-category="techniques">
+          <span class="rl-cat">techniques</span>
+          <span class="rl-title">Blooming aromatics</span>
+          <span class="rl-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
+          <span class="rl-reason rl-reason-uses">used in this recipe</span>
+        </a>
+        </div>
+      </div>
     </div><nav class="adj-nav"><a class="adj-nav-link" href="midnight-velvet-mini-cake.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Midnight velvet mini cake with strawberry and balsamic caviar</span>

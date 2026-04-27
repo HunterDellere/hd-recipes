@@ -19,7 +19,11 @@
  * not "shared tag".
  */
 
+// Single page can show up to 8 cards total, split across three groups:
+// recipes, ingredients, techniques. We keep more raw candidates per page so
+// the renderer can balance the three groups even when one group is sparse.
 const MAX_RELATED = 8;
+const MAX_RAW_PER_PAGE = 16; // raw candidate pool before split rendering
 const MIN_SCORE = 0.12;
 const MIN_PER_PAGE = 4;
 const FALLBACK_MIN_SCORE = 0.04;
@@ -226,7 +230,9 @@ export function buildRelations(entries) {
     scored.sort((x, y) => y.score - x.score);
     let kept = scored.filter(s => s.score >= MIN_SCORE);
     if (kept.length < MIN_PER_PAGE) kept = scored.filter(s => s.score >= FALLBACK_MIN_SCORE);
-    map.set(a.path, kept.slice(0, MAX_RELATED));
+    // Keep a wider pool than MAX_RELATED so the renderer can split across
+    // recipes/ingredients/techniques without a sparse group starving the rest.
+    map.set(a.path, kept.slice(0, MAX_RAW_PER_PAGE));
   }
   return map;
 }
@@ -251,22 +257,93 @@ export function buildAdjacency(entries) {
   return map;
 }
 
-export function renderRelatedHtml(related, fromPath, _opts = {}) {
-  if (!related || !related.length) return '';
-  const cards = related.map(({ entry, reason, reasonText }) => {
+/**
+ * Distribute up to 8 cards across three groups (recipes / ingredients / techniques).
+ * Strategy:
+ *   1. Bucket candidates by category, preserving score order within each bucket.
+ *   2. Allocate quotas: recipes 4, ingredients 2, techniques 2 (totals 8).
+ *   3. If a group is sparse, redistribute its slack to the others by a stable
+ *      priority order (recipes → ingredients → techniques) until the global
+ *      cap is hit. This keeps the section dense even when a corpus is
+ *      ingredient-light or technique-light.
+ */
+function splitRelatedByGroup(related, total = 8) {
+  const buckets = { recipes: [], ingredients: [], techniques: [] };
+  for (const item of related) {
+    const cat = item.entry && item.entry.category;
+    if (buckets[cat]) buckets[cat].push(item);
+  }
+  const order = ['recipes', 'ingredients', 'techniques'];
+  const quota = { recipes: 4, ingredients: 2, techniques: 2 };
+  // First pass: take up to quota per group.
+  const out = { recipes: [], ingredients: [], techniques: [] };
+  let used = 0;
+  for (const k of order) {
+    const take = Math.min(quota[k], buckets[k].length);
+    out[k] = buckets[k].slice(0, take);
+    used += take;
+  }
+  // Second pass: redistribute remaining slots (cap - used) across whichever
+  // groups still have candidates beyond their quota.
+  let remaining = total - used;
+  while (remaining > 0) {
+    let added = false;
+    for (const k of order) {
+      if (remaining <= 0) break;
+      if (out[k].length < buckets[k].length) {
+        out[k].push(buckets[k][out[k].length]);
+        remaining--;
+        added = true;
+      }
+    }
+    if (!added) break;
+  }
+  return out;
+}
+
+const GROUP_LABEL = {
+  recipes: 'Recipes',
+  ingredients: 'Ingredients',
+  techniques: 'Techniques',
+};
+
+function renderRelatedGroup(label, slug, items, fromPath) {
+  if (!items.length) return '';
+  const cards = items.map(({ entry, reason, reasonText }) => {
     const href = relPath(fromPath, entry.path);
     return `
-      <a class="related-card" href="${escapeHtml(href)}" data-category="${escapeHtml(entry.category)}">
-        <span class="rl-cat">${escapeHtml(entry.category)}</span>
-        <span class="rl-title">${escapeHtml(entry.title || '')}</span>
-        ${entry.desc ? `<span class="rl-desc">${escapeHtml(entry.desc.slice(0, 110))}</span>` : ''}
-        <span class="rl-reason rl-reason-${escapeHtml(reason)}">${escapeHtml(reasonText || 'related')}</span>
-      </a>`;
+        <a class="related-card" href="${escapeHtml(href)}" data-category="${escapeHtml(entry.category)}">
+          <span class="rl-cat">${escapeHtml(entry.category)}</span>
+          <span class="rl-title">${escapeHtml(entry.title || '')}</span>
+          ${entry.desc ? `<span class="rl-desc">${escapeHtml(entry.desc.slice(0, 110))}</span>` : ''}
+          <span class="rl-reason rl-reason-${escapeHtml(reason)}">${escapeHtml(reasonText || 'related')}</span>
+        </a>`;
   }).join('');
+  return `
+      <div class="related-group" data-related-group="${escapeHtml(slug)}">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="${escapeHtml(slug)}" aria-hidden="true"></span>
+          ${escapeHtml(label)}
+          <span class="related-group-count">${items.length}</span>
+        </h3>
+        <div class="related-cards related-cards--${escapeHtml(slug)}">${cards}
+        </div>
+      </div>`;
+}
+
+export function renderRelatedHtml(related, fromPath, _opts = {}) {
+  if (!related || !related.length) return '';
+  const split = splitRelatedByGroup(related, 8);
+  const groups = ['recipes', 'ingredients', 'techniques']
+    .map(k => renderRelatedGroup(GROUP_LABEL[k], k, split[k], fromPath))
+    .filter(Boolean)
+    .join('\n');
+  if (!groups.trim()) return '';
   return `
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related</h2></div>
-    <div class="related-cards">${cards}
+    <div class="related-groups">
+${groups}
     </div>`;
 }
 

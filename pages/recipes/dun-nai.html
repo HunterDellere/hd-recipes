@@ -101,23 +101,40 @@
     <div class="section-head"><h2>Mise en Place</h2></div>
     <div class="recipe-ingredients" data-base-servings="2">
       <div class="ing-controls">
-        <div class="ing-scale">
-          <span class="ing-scale-label">Servings</span>
-          <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
-          <input type="number" class="ing-scale-input" data-scale-input value="2" min="1" max="100">
-          <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+        <div class="ing-control ing-scale">
+          <span class="ing-control-label">Servings</span>
+          <div class="ing-scale-stepper">
+            <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
+            <input type="number" class="ing-scale-input" data-scale-input value="2" min="1" max="100" aria-label="Number of servings">
+            <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+          </div>
         </div>
-        <div class="ing-units" role="group" aria-label="Display units">
-          <button type="button" class="ing-units-btn active" data-units="metric" aria-pressed="true">Metric</button>
-          <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">Imperial</button>
+        <div class="ing-control ing-units-control">
+          <span class="ing-control-label">Units</span>
+          <div class="ing-units" role="group" aria-label="Display units">
+            <span class="ing-units-thumb" aria-hidden="true"></span>
+            <button type="button" class="ing-units-btn" data-units="metric" aria-pressed="true">
+              <span class="ing-units-icon" aria-hidden="true">g</span>
+              <span class="ing-units-label">Metric</span>
+            </button>
+            <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">
+              <span class="ing-units-icon" aria-hidden="true">oz</span>
+              <span class="ing-units-label">Imperial</span>
+            </button>
+          </div>
         </div>
-        <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
+        <button type="button" class="ing-shop-btn" data-shop-export aria-label="Copy shopping list to clipboard">
+          <svg class="ing-shop-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5h6a2 2 0 0 1 2 2v2"/><path d="M5 9h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9 5a3 3 0 0 1 6 0"/>
+          </svg>
+          <span>Copy list</span>
+        </button>
       </div>
       <h3 class="ing-group-head">Custard</h3><ol class="ing-list">
         <li class="ing-row" data-qty="240" data-unit="ml" data-density="1.03" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>240</span> <span data-ing-unit>ml</span></span>
-          <span class="ing-name"><a class="ing-link" href="../ingredients/whole-milk.html">whole milk</a><span class="ing-note"> — (1 cup; whole only; skim won't set silken)</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/whole-milk.html">whole milk</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="2" data-unit="each" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
@@ -127,17 +144,17 @@
         <li class="ing-row" data-qty="5" data-unit="g" data-density="1.1" data-imp-pref="tsp" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>5</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="ing-link" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a><span class="ing-note"> — (1 tsp)</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="25" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>25</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a><span class="ing-note"> — (2 tbsp)</span></span>
+          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="0.5" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>0.5</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a><span class="ing-note"> — (pinch)</span></span>
+          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (pinch)</span></span>
         </li>
       </ol>
     </div>
@@ -280,55 +297,75 @@
   
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related</h2></div>
-    <div class="related-cards">
-      <a class="related-card" href="cocoa-osmanthus-dun-nai.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Cocoa-osmanthus dun nai</span>
-        <span class="rl-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral, silken.</span>
-        <span class="rl-reason rl-reason-shared-ings">shares whole milk, eggs (large)</span>
-      </a>
-      <a class="related-card" href="../ingredients/whole-milk.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Whole milk</span>
-        <span class="rl-desc">Cow's milk at ~3.25% fat. The fat carries flavor and the casein binds tannins, which is why it shows up in eve</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/eggs.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Eggs (large)</span>
-        <span class="rl-desc">Roughly 50g per large egg: ~30g white, ~18g yolk, ~6g shell. The white sets at 62°C, the yolk at 70°C — that g</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/vanilla-bean-paste.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Vanilla bean paste</span>
-        <span class="rl-desc">Vanilla extract suspended in a syrup with the scraped seeds of the pod. Same flavor as a whole bean, a fractio</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="brown-butter-sugar-cookies.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Brown butter sugar cookies</span>
-        <span class="rl-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar shell on top</span>
-        <span class="rl-reason rl-reason-shared-ings">shares eggs (large), vanilla bean paste</span>
-      </a>
-      <a class="related-card" href="double-dark-chocolate-crinkle-cookies.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Double dark chocolate crinkle cookies</span>
-        <span class="rl-desc">Fudgy crinkle cookies built on melted dark chocolate, bloomed cocoa, and a coconut-oil tweak that keeps them g</span>
-        <span class="rl-reason rl-reason-shared-ings">shares eggs (large), vanilla bean paste</span>
-      </a>
-      <a class="related-card" href="chai-pumpkin-cupcakes.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Chai pumpkin cupcakes</span>
-        <span class="rl-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream c</span>
-        <span class="rl-reason rl-reason-shared-ings">shares whole milk, eggs (large)</span>
-      </a>
-      <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Chinese tea eggs</span>
-        <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
-        <span class="rl-reason rl-reason-shared-ings">also uses eggs (large)</span>
-      </a>
+    <div class="related-groups">
+
+      <div class="related-group" data-related-group="recipes">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="recipes" aria-hidden="true"></span>
+          Recipes
+          <span class="related-group-count">5</span>
+        </h3>
+        <div class="related-cards related-cards--recipes">
+        <a class="related-card" href="cocoa-osmanthus-dun-nai.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Cocoa-osmanthus dun nai</span>
+          <span class="rl-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral, silken.</span>
+          <span class="rl-reason rl-reason-shared-ings">shares whole milk, eggs (large)</span>
+        </a>
+        <a class="related-card" href="brown-butter-sugar-cookies.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Brown butter sugar cookies</span>
+          <span class="rl-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar shell on top</span>
+          <span class="rl-reason rl-reason-shared-ings">shares eggs (large), vanilla bean paste</span>
+        </a>
+        <a class="related-card" href="double-dark-chocolate-crinkle-cookies.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Double dark chocolate crinkle cookies</span>
+          <span class="rl-desc">Fudgy crinkle cookies built on melted dark chocolate, bloomed cocoa, and a coconut-oil tweak that keeps them g</span>
+          <span class="rl-reason rl-reason-shared-ings">shares eggs (large), vanilla bean paste</span>
+        </a>
+        <a class="related-card" href="chai-pumpkin-cupcakes.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Chai pumpkin cupcakes</span>
+          <span class="rl-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream c</span>
+          <span class="rl-reason rl-reason-shared-ings">shares whole milk, eggs (large)</span>
+        </a>
+        <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Chinese tea eggs</span>
+          <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
+          <span class="rl-reason rl-reason-shared-ings">also uses eggs (large)</span>
+        </a>
+        </div>
+      </div>
+
+      <div class="related-group" data-related-group="ingredients">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="ingredients" aria-hidden="true"></span>
+          Ingredients
+          <span class="related-group-count">3</span>
+        </h3>
+        <div class="related-cards related-cards--ingredients">
+        <a class="related-card" href="../ingredients/whole-milk.html" data-category="ingredients">
+          <span class="rl-cat">ingredients</span>
+          <span class="rl-title">Whole milk</span>
+          <span class="rl-desc">Cow's milk at ~3.25% fat. The fat carries flavor and the casein binds tannins, which is why it shows up in eve</span>
+          <span class="rl-reason rl-reason-uses">in this recipe</span>
+        </a>
+        <a class="related-card" href="../ingredients/eggs.html" data-category="ingredients">
+          <span class="rl-cat">ingredients</span>
+          <span class="rl-title">Eggs (large)</span>
+          <span class="rl-desc">Roughly 50g per large egg: ~30g white, ~18g yolk, ~6g shell. The white sets at 62°C, the yolk at 70°C — that g</span>
+          <span class="rl-reason rl-reason-uses">in this recipe</span>
+        </a>
+        <a class="related-card" href="../ingredients/vanilla-bean-paste.html" data-category="ingredients">
+          <span class="rl-cat">ingredients</span>
+          <span class="rl-title">Vanilla bean paste</span>
+          <span class="rl-desc">Vanilla extract suspended in a syrup with the scraped seeds of the pod. Same flavor as a whole bean, a fractio</span>
+          <span class="rl-reason rl-reason-uses">in this recipe</span>
+        </a>
+        </div>
+      </div>
     </div><nav class="adj-nav"><a class="adj-nav-link" href="toasted-sesame-paste.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Toasted sesame paste (zhī ma jiàng)</span>
