@@ -7,6 +7,7 @@ content_review: 'pending'
 title: 'Whole milk'
 desc: 'Cow''s milk at ~3.25% fat. The fat carries flavor and the casein binds tannins, which is why it shows up in everything from chai to custard.'
 tags: ['dairy']
+density_g_per_ml: 1.03
 updated: '2026-04-26'
 
 usda_fdc_id: 746782

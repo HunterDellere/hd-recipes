@@ -8,6 +8,8 @@ title: 'White pepper'
 desc: 'The fully ripe drupe of Piper nigrum with the outer pericarp fermented and washed away, leaving only the inner seed. Floral, fermented, barnyard — a different spice from black pepper, not a milder version of it.'
 metaDesc: 'White pepper: fermented inner seed of Piper nigrum. Why it tastes nothing like black pepper, how to buy it, and when to use it in Chinese cooking.'
 tags: ['spice', 'aromatic', 'chinese']
+density_g_per_ml: 0.45
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 170932

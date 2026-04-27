@@ -8,6 +8,7 @@ title: 'Heavy cream'
 desc: 'Cow''s cream at ≥36% milkfat. The fat content is what lets it whip and what keeps it stable when reduced.'
 metaDesc: 'Heavy cream: ≥36% milkfat. Why pasteurized whips better than ultra-pasteurized, and how to store it.'
 tags: ['dairy', 'fat']
+density_g_per_ml: 1.01
 updated: '2026-04-26'
 
 usda_fdc_id: 170859

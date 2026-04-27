@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Butter (unsalted)'
 desc: 'Cow''s-milk fat with ~16% water and ~2% milk solids. The solids are the flavor lever in cooking.'
 tags: ['dairy', 'fat']
+density_g_per_ml: 0.911
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 173430

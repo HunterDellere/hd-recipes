@@ -8,6 +8,7 @@ title: 'Rock sugar (冰糖)'
 desc: 'Recrystallized sucrose in irregular amber or clear chunks. Dissolves slowly and at lower osmotic shock than granulated sugar, which is why Chinese braises use it for the finishing gloss.'
 metaDesc: 'Rock sugar: large-crystal recrystallized sucrose. Why it produces a glossy braise finish and how it differs from granulated sugar in red-cooking.'
 tags: ['chinese']
+density_g_per_ml: 1.45
 updated: '2026-04-26'
 
 usda_fdc_id: 169655

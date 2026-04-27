@@ -8,6 +8,8 @@ title: 'Dutch-process cocoa'
 desc: 'Cocoa powder treated with potassium carbonate to neutralize its natural acidity. Darker, mellower, and chemically incompatible with recipes built around natural cocoa.'
 metaDesc: 'Dutch-process cocoa: alkalized to ~pH 7. Why it pairs with baking powder, not soda, and how to substitute it for natural cocoa without breaking the lift.'
 tags: ['chocolate']
+density_g_per_ml: 0.5
+imperial_pref: 'cup'
 updated: '2026-04-26'
 
 usda_fdc_id: 169594

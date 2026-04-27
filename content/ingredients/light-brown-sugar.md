@@ -8,6 +8,8 @@ title: 'Light brown sugar'
 desc: 'Granulated sugar coated with ~3.5% molasses. The molasses adds moisture, acid, and color — and changes how a cookie spreads.'
 metaDesc: 'Light brown sugar: ~3.5% molasses content, how it affects cookie spread and Maillard browning, and the pack-by-volume problem.'
 tags: []
+density_g_per_ml: 0.93
+imperial_pref: 'cup'
 updated: '2026-04-26'
 
 usda_fdc_id: 169679

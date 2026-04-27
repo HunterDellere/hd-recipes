@@ -8,6 +8,8 @@ title: 'Fine sea salt'
 desc: 'Evaporated seawater, ground fine. Small crystals dissolve fast and distribute evenly — the right salt for baking and for anything that needs to disappear.'
 metaDesc: 'Fine sea salt: why small crystals matter for baking and finishing, iodized vs non-iodized, and how it differs from kosher salt.'
 tags: []
+density_g_per_ml: 1.2
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 173468

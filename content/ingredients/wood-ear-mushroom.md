@@ -8,6 +8,7 @@ title: 'Wood ear mushroom (木耳)'
 desc: 'Dehydrated Auricularia heimuer fungus — black, gelatinous when rehydrated, and prized for texture rather than flavor. The crunch is what it does.'
 metaDesc: 'Wood ear mushroom: dried black fungus that rehydrates 5x. How to soak it, what it adds to dishes, and the food-safety rule that matters.'
 tags: ['chinese', 'vegetable']
+density_g_per_ml: 0.1
 updated: '2026-04-26'
 
 usda_fdc_id: 169978

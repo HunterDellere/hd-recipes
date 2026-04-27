@@ -8,6 +8,7 @@ title: 'Sweetened condensed milk'
 desc: 'Milk reduced by ~60% with ~45% added sugar. The sugar is what makes it shelf-stable in the can and what gives it its emulsifying body.'
 metaDesc: 'Sweetened condensed milk: reduced milk plus sugar. How it differs from evaporated milk and how to use it.'
 tags: ['dairy']
+density_g_per_ml: 1.27
 updated: '2026-04-26'
 
 usda_fdc_id: 173441

@@ -8,6 +8,8 @@ title: 'Granulated sugar'
 desc: 'Refined sucrose, medium crystal. Does four jobs in baking — aerates, structures, browns, and holds water — and it''s the default for a reason.'
 metaDesc: 'Granulated sugar: how sucrose aerates butter, builds structure, browns via Maillard and caramelization, and keeps cookies moist.'
 tags: []
+density_g_per_ml: 0.85
+imperial_pref: 'cup'
 updated: '2026-04-26'
 
 usda_fdc_id: 169655

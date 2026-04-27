@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Light soy sauce (生抽)'
 desc: 'The everyday Chinese seasoning soy — saltier, thinner, and lighter in color than dark soy. This is what most stir-fries and dipping sauces actually want.'
 tags: ['umami', 'chinese', 'sauce']
+density_g_per_ml: 1.18
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 174278

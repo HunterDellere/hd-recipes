@@ -8,6 +8,8 @@ title: 'Toasted sesame oil'
 desc: 'Oil pressed from roasted sesame seeds. A finishing ingredient — its aromatic compounds are heat-volatile and degrade fast above 175°C.'
 metaDesc: 'Toasted sesame oil: dark, nutty finishing oil pressed from roasted sesame. Why you add it off-heat and how to spot rancidity.'
 tags: ['fat', 'chinese', 'aromatic']
+density_g_per_ml: 0.92
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 172337

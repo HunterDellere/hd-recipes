@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Chinese sesame paste (芝麻酱)'
 desc: 'Toasted sesame seeds ground to a paste. Darker, deeper, and more bitter than tahini — the toast is the whole point.'
 tags: ['umami', 'chinese']
+density_g_per_ml: 1.1
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 about: |

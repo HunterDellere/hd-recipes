@@ -8,6 +8,8 @@ title: 'Sui mi ya cai (碎米芽菜)'
 desc: 'Sichuan preserved mustard-green stems, salted and fermented dry, then minced. Carries the funk-and-salt punch that makes dandan noodles taste like dandan noodles.'
 metaDesc: 'Sui mi ya cai: minced Sichuan preserved mustard greens. Why it is non-negotiable in dandan noodles and how it differs from zha cai.'
 tags: ['pickle', 'chinese', 'vegetable', 'umami']
+density_g_per_ml: 0.45
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 about: |

@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Assam tea'
 desc: 'Robust, malty black tea from northeast India. The default base for masala chai and what gives English Breakfast its backbone.'
 tags: ['tea', 'indian']
+density_g_per_ml: 0.3
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 about: |

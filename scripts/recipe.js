@@ -44,27 +44,51 @@
   // Tiny mass stays in g/oz for precision; tiny volume stays in tsp/tbsp.
   const UNITS_KEY = 'hdr-units'; // localStorage key — global preference
 
-  function toImperial(qty, unit) {
-    // Mass
+  // Volume of one of each imperial unit, in ml. Used for mass↔volume crossings.
+  const VOL_ML = { tsp: 5, tbsp: 15, cup: 240, qt: 946.353 };
+
+  // Density-aware metric → imperial conversion.
+  //   - density: g/ml of the ingredient (defaults to 1.0 — water-equivalent — if unset)
+  //   - impPref: optional preferred imperial unit ('cup'|'tbsp'|'tsp'|'oz'|'lb').
+  //              When set + the natural unit family disagrees, we cross through
+  //              density (mass→volume) so cup/tsp/tbsp work for flour, sugar, etc.
+  function toImperial(qty, unit, density, impPref) {
+    const d = (typeof density === 'number' && density > 0) ? density : 1.0;
+
+    // Mass source
     if (unit === 'g' || unit === 'kg') {
       const g = unit === 'kg' ? qty * 1000 : qty;
-      if (g < 7)        return { qty: g, unit: 'g' };       // pinch territory; oz unhelpful
-      if (g < 28)       return { qty: g / 28.3495, unit: 'oz' };
-      if (g < 454)      return { qty: g / 28.3495, unit: 'oz' };
+      // Volume preference for a mass-source: convert g → ml via density, then ml → preferred unit
+      if (impPref === 'cup' || impPref === 'tbsp' || impPref === 'tsp') {
+        const ml = g / d;
+        return { qty: ml / VOL_ML[impPref], unit: impPref };
+      }
+      if (impPref === 'lb') return { qty: g / 453.592, unit: 'lb' };
+      if (impPref === 'oz') return { qty: g / 28.3495, unit: 'oz' };
+      // Default: size-driven
+      if (g < 7)   return { qty: g, unit: 'g' };
+      if (g < 454) return { qty: g / 28.3495, unit: 'oz' };
       return { qty: g / 453.592, unit: 'lb' };
     }
-    // Volume
+
+    // Volume source
     if (unit === 'ml' || unit === 'l') {
       const ml = unit === 'l' ? qty * 1000 : qty;
-      if (ml < 5)       return { qty: ml / 5,    unit: 'tsp' };
-      if (ml < 15)      return { qty: ml / 5,    unit: 'tsp' };
-      if (ml < 60)      return { qty: ml / 15,   unit: 'tbsp' };
-      // Cups all the way to ~1.9 L (8 cups). Above that, switch to qt for
-      // sanity. Most home recipes don't exceed 8 cups in a single ingredient.
-      if (ml < 1900)    return { qty: ml / 240,  unit: 'cup' };
+      // Mass preference for a volume-source: convert ml → g via density
+      if (impPref === 'oz') return { qty: (ml * d) / 28.3495, unit: 'oz' };
+      if (impPref === 'lb') return { qty: (ml * d) / 453.592, unit: 'lb' };
+      // Volume-to-volume preference is straightforward
+      if (impPref === 'cup' || impPref === 'tbsp' || impPref === 'tsp') {
+        return { qty: ml / VOL_ML[impPref], unit: impPref };
+      }
+      // Default: size-driven
+      if (ml < 15)   return { qty: ml / 5,    unit: 'tsp' };
+      if (ml < 60)   return { qty: ml / 15,   unit: 'tbsp' };
+      if (ml < 1900) return { qty: ml / 240,  unit: 'cup' };
       return { qty: ml / 946.353, unit: 'qt' };
     }
-    // Already imperial-style (tsp, tbsp, cup, oz, lb) or unitless — passthrough.
+
+    // Already imperial / unitless — passthrough.
     return { qty, unit };
   }
 
@@ -144,7 +168,9 @@
         }
         const scaled = orig * factor;
         if (units === 'imperial') {
-          const conv = toImperial(scaled, origUnit);
+          const density = parseFloat(row.dataset.density);
+          const impPref = row.dataset.impPref || null;
+          const conv = toImperial(scaled, origUnit, isFinite(density) ? density : undefined, impPref);
           qtyEl.textContent = fmtImperial(conv.qty, conv.unit);
           if (unitEl) unitEl.textContent = conv.unit;
         } else {

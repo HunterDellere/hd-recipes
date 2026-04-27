@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Pecorino romano'
 desc: 'Hard sheep''s-milk cheese from Lazio. Salty, sharp, lactic — the canonical cheese for Roman pasta.'
 tags: ['dairy', 'umami', 'italian']
+density_g_per_ml: 0.42
+imperial_pref: 'cup'
 updated: '2026-04-26'
 
 usda_fdc_id: 171249

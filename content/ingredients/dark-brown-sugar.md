@@ -8,6 +8,8 @@ title: 'Dark brown sugar'
 desc: 'Granulated sugar coated with ~6.5% molasses — about double the light-brown ratio. More acid, more spread, more Maillard, deeper flavor.'
 metaDesc: 'Dark brown sugar: ~6.5% molasses, how the extra acid drives cookie spread and Maillard, and accurate swap math with light brown and granulated.'
 tags: []
+density_g_per_ml: 0.93
+imperial_pref: 'cup'
 updated: '2026-04-26'
 
 usda_fdc_id: 169652

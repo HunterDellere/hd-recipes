@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Chinkiang black vinegar (镇江香醋)'
 desc: 'Aged glutinous-rice vinegar from Zhenjiang. Dark, malty, smoky, and only mildly acidic — closer in spirit to balsamic than to white vinegar.'
 tags: ['acid', 'chinese', 'fermentation']
+density_g_per_ml: 1.04
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 about: |

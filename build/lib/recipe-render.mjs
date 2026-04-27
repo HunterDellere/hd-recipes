@@ -90,19 +90,29 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
 
   const renderRow = (ing) => {
     let label = escapeHtml(ing.item);
+    let target = null;
     if (ing.slug) {
-      const target = ingredientBySlug.get(ing.slug) || ingredientBySlug.get(ing.slug.replace(/^ingredients\//, ''));
+      target = ingredientBySlug.get(ing.slug) || ingredientBySlug.get(ing.slug.replace(/^ingredients\//, ''));
       if (target) {
         const href = relPath(currentPath, target.path);
         label = `<a class="ing-link" href="${escapeHtml(href)}">${label}</a>`;
       }
     }
+    // Density + imperial preference resolution order (most specific wins):
+    //   1. Per-line override on the recipe ingredient row (ing.density_g_per_ml / ing.imperial_pref)
+    //   2. Ingredient page frontmatter (target._fm.density_g_per_ml / target._fm.imperial_pref)
+    //   3. Built-in fallback in recipe.js (water density, size-driven imperial unit)
+    const tfm = target && target._fm ? target._fm : null;
+    const density = ing.density_g_per_ml ?? (tfm && tfm.density_g_per_ml);
+    const impPref = ing.imperial_pref   ?? (tfm && tfm.imperial_pref);
+    const densityAttr = (typeof density === 'number') ? ` data-density="${density}"` : '';
+    const impPrefAttr = impPref ? ` data-imp-pref="${escapeHtml(impPref)}"` : '';
     const qty = fmtQty(ing.qty);
     const unit = ing.unit ? escapeHtml(ing.unit) : '';
     const prep = ing.prep ? `<span class="ing-prep">, ${escapeHtml(ing.prep)}</span>` : '';
     const note = ing.note ? `<span class="ing-note"> — ${escapeHtml(ing.note)}</span>` : '';
     const opt = ing.optional ? `<span class="ing-opt">optional</span>` : '';
-    const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"` + (typeof ing.qty === 'number' ? ' data-scalable="1"' : '');
+    const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}` + (typeof ing.qty === 'number' ? ' data-scalable="1"' : '');
     return `
         <li class="ing-row" ${dataAttrs}>
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>

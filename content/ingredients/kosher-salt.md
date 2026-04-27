@@ -8,6 +8,8 @@ title: 'Kosher salt'
 desc: 'Coarse-grain sodium chloride, no iodine, no anti-caking agents. Cooking salt of choice because the crystal shape distributes evenly by hand.'
 metaDesc: 'Kosher salt: Diamond Crystal vs Morton density, why grams beat tablespoons, and how to use it for cooking versus finishing.'
 tags: []
+density_g_per_ml: 0.86
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 173468

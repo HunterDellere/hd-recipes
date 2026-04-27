@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Dark soy sauce (老抽)'
 desc: 'Aged longer than light soy and cut with molasses or caramel. Used in small amounts for color and depth, not for primary salting.'
 tags: ['umami', 'chinese', 'sauce']
+density_g_per_ml: 1.2
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 about: |

@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Black peppercorns'
 desc: 'Dried unripe fruit of Piper nigrum. Heat from piperine; aroma from terpenes that vanish on grinding.'
 tags: ['spice', 'aromatic']
+density_g_per_ml: 0.45
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 170931

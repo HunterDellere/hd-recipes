@@ -8,6 +8,8 @@ title: 'Shaoxing wine (绍兴酒)'
 desc: 'Amber fermented-grain wine from Zhejiang, brewed from glutinous rice and wheat-koji starter. The aromatic backbone of Chinese marinades, braises, and stir-fries.'
 metaDesc: 'Shaoxing wine: aged Chinese rice wine for marinades, braises, and stir-fries. How to choose, store, and substitute it without ruining the dish.'
 tags: ['chinese', 'aromatic']
+density_g_per_ml: 0.99
+imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 174828

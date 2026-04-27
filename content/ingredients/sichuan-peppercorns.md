@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'Sichuan peppercorns'
 desc: 'The husks of Zanthoxylum berries. Not actually pepper — they create má, the buzzing tingling numbness that defines Sichuan cooking.'
 tags: ['spice', 'aromatic', 'chinese']
+density_g_per_ml: 0.4
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 about: |

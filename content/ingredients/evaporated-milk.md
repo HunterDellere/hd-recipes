@@ -8,6 +8,7 @@ title: 'Evaporated milk'
 desc: 'Milk reduced by ~60% with no added sugar, sterilized in the can. Adds dairy body without the sweetness load of condensed milk.'
 metaDesc: 'Evaporated milk: unsweetened reduced milk. Why it tastes faintly cooked, and where to use it instead of condensed milk.'
 tags: ['dairy']
+density_g_per_ml: 1.07
 updated: '2026-04-26'
 
 usda_fdc_id: 174201

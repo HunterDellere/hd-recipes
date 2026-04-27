@@ -7,6 +7,8 @@ content_review: 'pending'
 title: 'All-purpose flour'
 desc: 'Wheat flour at 10–12% protein. The middle of the road — strong enough for bread in a pinch, soft enough for cake if you handle it gently.'
 tags: ['grain']
+density_g_per_ml: 0.53
+imperial_pref: 'cup'
 updated: '2026-04-26'
 
 usda_fdc_id: 169761

@@ -8,6 +8,8 @@ title: 'Baking powder'
 desc: 'A pre-mixed chemical leavener: baking soda plus one or two dry acids plus a starch buffer. Double-acting versions release CO2 in two stages — once when wet, again at oven heat.'
 metaDesc: 'Baking powder: double-acting chemical leavener. How it works, the freshness test, and how to substitute baking soda + cream of tartar.'
 tags: []
+density_g_per_ml: 0.96
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 169899

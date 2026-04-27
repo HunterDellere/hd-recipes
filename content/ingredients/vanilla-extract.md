@@ -8,6 +8,8 @@ title: 'Vanilla extract'
 desc: 'Alcohol-extracted solution of vanillin and 250+ minor aromatic compounds from cured vanilla pods. The supporting chorus is what separates real extract from imitation.'
 metaDesc: 'Vanilla extract: alcohol-extracted vanillin plus hundreds of minor compounds. How to use it, when heat strips it, and how to substitute paste or beans.'
 tags: ['aromatic']
+density_g_per_ml: 0.88
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 170121

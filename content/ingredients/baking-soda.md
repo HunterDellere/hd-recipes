@@ -8,6 +8,8 @@ title: 'Baking soda'
 desc: 'Pure sodium bicarbonate. An alkali that needs an acid in the batter to release CO2 and lift — and that simultaneously raises pH, deepening browning.'
 metaDesc: 'Baking soda: sodium bicarbonate. How it lifts batters, why it deepens browning, and what happens if it doesn''t fully dissolve.'
 tags: []
+density_g_per_ml: 2.2
+imperial_pref: 'tsp'
 updated: '2026-04-26'
 
 usda_fdc_id: 175036
