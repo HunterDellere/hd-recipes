@@ -120,6 +120,14 @@ substitutions:
     use: 'rosemary or parsley'
     note: 'Rosemary for piney intensity, parsley for a fresher, lighter profile.'
 
+homemade_alternatives:
+  - for: 'whole-grain mustard'
+    recipe_slug: 'recipes/whole-grain-mustard'
+    why: 'Homemade keeps the seed integrity that delivers heat in waves rather than in a single front-loaded hit. Two-day mellow, then it holds for months.'
+  - for: 'Dijon mustard'
+    recipe_slug: 'recipes/dijon-mustard'
+    why: 'Cleaner heat than the jar, with the wine acidity dialed to the dish. The maple-mustard glaze tastes more like itself when the mustard isn''t carrying brand-flat sweetness underneath.'
+
 notes: |
   Dry brine over wet brine: wet brines water down the meat. A dry brine pulls salt into the muscle through osmosis, denaturing the proteins so they hold onto their own juices when cooked. Bonus: it dries the surface, which is the only way to get crisp skin.
 

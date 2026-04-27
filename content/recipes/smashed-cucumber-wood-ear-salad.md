@@ -95,6 +95,11 @@ substitutions:
     use: 'coconut aminos + reduce the salt step to 5 minutes'
     note: 'Lower-sodium version.'
 
+homemade_alternatives:
+  - for: 'chili oil'
+    recipe_slug: 'recipes/sichuan-chili-oil'
+    why: 'Just a teaspoon, but the homemade version''s aromatic complexity (Sichuan peppercorn, cassia, star anise) shows up clearly against the cucumber-clean base. A bottled chili oil here reads as just heat.'
+
 notes: |
   Salting before dressing is the only way this stays crisp. If you skip it, the salt in the dressing pulls water from the cucumbers after they''re mixed, and the salad becomes a watery puddle within 10 minutes.
 

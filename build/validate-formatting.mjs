@@ -89,7 +89,10 @@ for (const pageFull of walkPages(PAGES)) {
       /\bmayonnaise\b/i, /\bmayo\b/i,
       /\bricotta\b/i,
       /\bketchup\b/i,
-      /\b(dijon|yellow|hot|whole.?grain|chinese)\s*mustard\b/i,
+      // Prepared mustard the condiment, NOT raw mustard seeds.
+      // Negative lookahead on "seeds" so "yellow mustard seeds" doesn't match.
+      /\b(dijon|hot|whole.?grain|chinese)\s*mustard\b(?!\s*seeds?)/i,
+      /\byellow\s*mustard\b(?!\s*seeds?)/i,
       /\bhot\s*sauce\b/i,
       /\bbbq\s*sauce\b/i, /\bbarbecue\s*sauce\b/i,
       /\bteriyaki\s*sauce\b/i,
@@ -119,11 +122,16 @@ for (const pageFull of walkPages(PAGES)) {
     const declaredAlts = new Set((fm.homemade_alternatives || []).map(h => String(h.for || '').toLowerCase()));
     const flagged = new Set();
     for (const ing of (fm.ingredients || [])) {
-      const text = `${ing.item || ''} ${ing.note || ''} ${ing.prep || ''}`;
+      // Only the item field counts as the actual ingredient; notes/prep often
+      // contain negations ("not tahini") or qualifiers that aren't the ingredient.
+      const itemText = ing.item || '';
       for (const re of STORE_BOUGHT_PATTERNS) {
-        const m = text.match(re);
+        const m = itemText.match(re);
         if (!m) continue;
         const matchedPhrase = m[0].toLowerCase();
+        // Skip if the match is preceded by a negation in the note field
+        const note = (ing.note || '').toLowerCase();
+        if (new RegExp(`\\bnot\\s+${matchedPhrase.replace(/\s+/g, '\\s+')}\\b`).test(note)) continue;
         // Already covered by a homemade_alternatives entry whose `for` mentions this term
         const covered = [...declaredAlts].some(a => a.includes(matchedPhrase) || matchedPhrase.includes(a));
         if (!covered) flagged.add(matchedPhrase);

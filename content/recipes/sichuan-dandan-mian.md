@@ -121,6 +121,14 @@ substitutions:
     use: 'GF brown rice noodles'
     note: 'Skip the noodle-water emulsion: rice noodle water lacks the gluten-starch profile to stabilize the sauce.'
 
+homemade_alternatives:
+  - for: 'sesame paste'
+    recipe_slug: 'recipes/toasted-sesame-paste'
+    why: 'Dan dan lives or dies by the sesame paste. The dark-toasted homemade version has cocoa-coffee depth that store-bought zhī ma jiàng (especially anything that has sat on a shelf) can''t match. Don''t substitute tahini.'
+  - for: 'chili oil with sediments'
+    recipe_slug: 'recipes/sichuan-chili-oil'
+    why: 'The sediment-rich bottom of homemade chili oil is the right scoop here — full of toasted chili flakes, Sichuan peppercorn, sesame. A clear bottled "chili oil" delivers heat but no body.'
+
 notes: |
   The sauce works because hot starchy water binds sesame paste (lipid) and vinegar/soy (water-based) into a stable emulsion that coats every noodle in a uniform film. Without that step you get a puddle of oil at the bottom of the bowl.
 

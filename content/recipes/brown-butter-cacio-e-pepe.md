@@ -93,6 +93,11 @@ substitutions:
     use: 'bucatini'
     note: 'Different mouthfeel: the hollow holds sauce differently. Cooks ~2 min longer.'
 
+homemade_alternatives:
+  - for: 'tonnarelli or spaghetti'
+    recipe_slug: 'recipes/fresh-egg-pasta'
+    why: 'Fresh egg pasta has a porous surface that grabs the brown butter and binds with pasta-water starch differently than dried. It''s the upgrade this dish was built for.'
+
 notes: |
   The dish lives or dies on emulsion. If you skip the brown butter and pepper bloom, you have boiled pasta with cheese — not cacio e pepe.
 

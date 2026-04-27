@@ -1,5 +1,353 @@
 [
   {
+    "path": "pages/recipes/dijon-mustard.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Dijon mustard",
+    "desc": "Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and salt. Sharp, hot, and creamy in a way no jar ever is.",
+    "tags": [
+      "sauce",
+      "pantry",
+      "make-ahead",
+      "french"
+    ],
+    "status": "complete",
+    "_slug": "dijon-mustard",
+    "cuisine": "French",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 5,
+      "total_min": 2895,
+      "active_min": 20
+    },
+    "updated": "2026-04-27",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "brown mustard seeds",
+        "optional": false
+      },
+      {
+        "item": "yellow mustard seeds",
+        "optional": false
+      },
+      {
+        "item": "dry white wine",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "honey or sugar",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "_card": {
+      "totalMinutes": 2895,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ 2 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-panko-breadcrumbs.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade panko breadcrumbs",
+    "desc": "Crustless white bread, dried low and slow, then ground coarse. The result is the long, splintery shard of real panko, not the grainy dust of the supermarket can.",
+    "tags": [
+      "bread",
+      "pantry",
+      "make-ahead",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "homemade-panko-breadcrumbs",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 1,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 35,
+      "total_min": 50,
+      "active_min": 12
+    },
+    "updated": "2026-04-27",
+    "ingredients": [
+      {
+        "item": "white sandwich bread",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/sichuan-chili-oil.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sichuan chili oil",
+    "desc": "Aromatics infused into hot oil at three precise temperatures, then poured over coarse chili flakes. The crackle is the technique. The result has structure store-bought never does — three layers of red, with sediment that earns its bowl.",
+    "tags": [
+      "sauce",
+      "spicy",
+      "umami",
+      "chinese",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "sichuan-chili-oil",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 24,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 25,
+      "total_min": 1480,
+      "active_min": 35
+    },
+    "updated": "2026-04-27",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "coarse Sichuan or Korean chili flakes (èrjīngtiáo / gochugaru)",
+        "optional": false
+      },
+      {
+        "item": "fine Sichuan chili flakes or chili powder",
+        "optional": false
+      },
+      {
+        "item": "toasted white sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (rice bran, peanut, or canola)",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "cassia bark or cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallions",
+        "optional": false
+      },
+      {
+        "item": "shallot",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "_card": {
+      "totalMinutes": 1480,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "+ 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/toasted-sesame-paste.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Toasted sesame paste (zhī ma jiàng)",
+    "desc": "Hulled white sesame seeds toasted dark, ground to a thick caramel-brown paste with a splash of toasted sesame oil. The Chinese pantry version: deeply roasted, structurally distinct from raw Levantine tahini.",
+    "tags": [
+      "sauce",
+      "umami",
+      "chinese",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "toasted-sesame-paste",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 30,
+      "active_min": 25
+    },
+    "updated": "2026-04-27",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "hulled white sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut or rice bran)",
+        "optional": true
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "_card": {
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/whole-grain-mustard.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Whole-grain mustard",
+    "desc": "Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing heat in waves rather than all at once.",
+    "tags": [
+      "sauce",
+      "pantry",
+      "make-ahead",
+      "french"
+    ],
+    "status": "complete",
+    "_slug": "whole-grain-mustard",
+    "cuisine": "French",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 5,
+      "total_min": 2895,
+      "active_min": 20
+    },
+    "updated": "2026-04-27",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "brown mustard seeds",
+        "optional": false
+      },
+      {
+        "item": "yellow mustard seeds",
+        "optional": false
+      },
+      {
+        "item": "dry white wine",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "_card": {
+      "totalMinutes": 2895,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ 2 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/brown-butter-cacio-e-pepe.html",
     "type": "recipe",
     "category": "recipes",
@@ -614,527 +962,6 @@
       "timeMode": "total",
       "activeMinutes": 10,
       "filterMinutes": 10
-    }
-  },
-  {
-    "path": "pages/recipes/house-blend-chai.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "House blend chai",
-    "desc": "A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.",
-    "tags": [
-      "tea",
-      "indian",
-      "drink",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "house-blend-chai",
-    "cuisine": "Indian",
-    "course": "drink",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 3,
-      "cook_min": 10,
-      "total_min": 13,
-      "active_min": 10
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "black cardamom pod",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods",
-        "optional": false
-      },
-      {
-        "item": "whole cloves",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "mace petals",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh-ground nutmeg",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "Assam tea, loose leaf",
-        "slug": "assam-tea",
-        "optional": false
-      },
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "sugar",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 13,
-      "diffLabel": "easy",
-      "timeLead": "13 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
-    }
-  },
-  {
-    "path": "pages/recipes/infused-mashed-potatoes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Infused mashed potatoes",
-    "desc": "Yukon Golds boiled in their skins, riced hot, and folded with milk and butter that's been steeped with garlic, thyme, rosemary, and bay.",
-    "tags": [
-      "potato",
-      "side",
-      "holiday",
-      "comfort",
-      "american"
-    ],
-    "status": "complete",
-    "_slug": "infused-mashed-potatoes",
-    "cuisine": "American",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 8,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 35,
-      "total_min": 50,
-      "active_min": 25
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "Yukon Gold potatoes",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the water",
-        "optional": false
-      },
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, cubed",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "garlic, smashed and peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme",
-        "optional": false
-      },
-      {
-        "item": "fresh rosemary",
-        "optional": false
-      },
-      {
-        "item": "bay leaf",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, to taste",
-        "optional": false
-      },
-      {
-        "item": "white pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh chives, finely minced",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/lemony-green-beans-with-garlic-crunch.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Lemony green beans with garlic crunch",
-    "desc": "Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on top.",
-    "tags": [
-      "vegetable",
-      "side",
-      "holiday",
-      "american",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "lemony-green-beans-with-garlic-crunch",
-    "cuisine": "American",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 6,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 15,
-      "total_min": 25,
-      "active_min": 20
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh green beans, ends trimmed",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the water",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, for the sauté",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "olive oil",
-        "optional": false
-      },
-      {
-        "item": "panko breadcrumbs",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely minced",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon zest",
-        "optional": false
-      },
-      {
-        "item": "black pepper",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "salt",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "optional": false
-      },
-      {
-        "item": "parmesan, grated",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 25,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/maple-mustard-glazed-turkey-breast.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Maple and mustard glazed turkey breast",
-    "desc": "Bone-in turkey breast dry-brined overnight, roasted with herb butter under the skin, and lacquered with a maple-mustard glaze at the end.",
-    "tags": [
-      "turkey",
-      "roast",
-      "holiday",
-      "american",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "maple-mustard-glazed-turkey-breast",
-    "cuisine": "American",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 6,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 75,
-      "total_min": 1535,
-      "active_min": 30
-    },
-    "updated": "2026-04-26",
-    "ingredients": [
-      {
-        "item": "bone-in turkey breast, skin-on",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "smoked paprika",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, softened",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "fresh sage, finely minced",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme leaves",
-        "optional": false
-      },
-      {
-        "item": "garlic, grated to a paste",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "pure maple syrup",
-        "optional": false
-      },
-      {
-        "item": "whole-grain mustard",
-        "optional": false
-      },
-      {
-        "item": "Dijon mustard",
-        "optional": false
-      },
-      {
-        "item": "apple cider vinegar",
-        "optional": false
-      },
-      {
-        "item": "soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 1535,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 1 d rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/midnight-velvet-mini-cake.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Midnight velvet mini cake with strawberry and balsamic caviar",
-    "desc": "A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finished with strawberry meringue buttercream, balsamic pearls, and tempered chocolate shards.",
-    "tags": [
-      "cake",
-      "chocolate",
-      "dessert",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "midnight-velvet-mini-cake",
-    "course": "dessert",
-    "difficulty": "hard",
-    "servings": 2,
-    "time": {
-      "prep_min": 60,
-      "cook_min": 25,
-      "total_min": 180,
-      "active_min": 90
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh or frozen strawberries",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "optional": false
-      },
-      {
-        "item": "honey or maple syrup",
-        "optional": true
-      },
-      {
-        "item": "strawberry reduction (from above)",
-        "optional": false
-      },
-      {
-        "item": "aged balsamic vinegar",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "agar agar powder",
-        "optional": false
-      },
-      {
-        "item": "neutral oil, frozen 45+ minutes",
-        "optional": false
-      },
-      {
-        "item": "dark chocolate (60–70% cacao)",
-        "optional": false
-      },
-      {
-        "item": "Dutch-process cocoa powder",
-        "optional": false
-      },
-      {
-        "item": "hot brewed coffee",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "buttermilk (or kefir)",
-        "optional": false
-      },
-      {
-        "item": "avocado oil",
-        "optional": false
-      },
-      {
-        "item": "large egg, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "optional": false
-      },
-      {
-        "item": "sea salt",
-        "optional": false
-      },
-      {
-        "item": "large egg whites",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, cubed and cool",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "freeze-dried strawberries, pulverized",
-        "optional": false
-      },
-      {
-        "item": "sea salt",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 180,
-      "diffLabel": "hard",
-      "timeLead": "3 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 90,
-      "filterMinutes": 90
     }
   }
 ]

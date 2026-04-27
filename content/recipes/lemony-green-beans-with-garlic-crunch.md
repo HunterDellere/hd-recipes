@@ -99,7 +99,7 @@ steps:
     time_min: 3
   - text: 'In a large skillet over medium heat, melt 3 tbsp butter with the olive oil. Add the panko and stir constantly for 2–3 minutes until light gold.'
     time_min: 3
-  - text: 'Add the minced garlic, salt, and pepper. Stir another 1–2 minutes until both garlic and crumbs are deep golden and fragrant. Watch the garlic — it goes from raw to burnt in seconds.'
+  - text: 'Add the minced garlic, salt, and pepper. Stir another 1–2 minutes until both garlic and crumbs are deep golden and fragrant. Watch the garlic; it goes from raw to burnt in seconds.'
     time_min: 2
   - text: 'Pull off heat. Stir in the lemon zest off the heat (it would bitter on direct contact). Transfer crumbs to a small bowl.'
     time_min: 1
@@ -118,6 +118,11 @@ substitutions:
   - for: 'plain crumb'
     use: '+ 2 strips finely chopped cooked bacon'
     note: 'Smoky-salty Midwestern variation.'
+
+homemade_alternatives:
+  - for: 'panko breadcrumbs'
+    recipe_slug: 'recipes/homemade-panko-breadcrumbs'
+    why: 'Real panko has long, splintery shards that stay crisp on top of the beans for hours. Supermarket panko is graded fine by the time it reaches the can — you lose the structural advantage.'
 
 notes: |
   Blanching in heavily salted water cooks the bean and seasons it from the inside. The shock in ice water locks in the bright green — chlorophyll stays intact when cooked fast and stopped fast. Skip the shock and the beans turn olive drab as residual heat keeps cooking them.
