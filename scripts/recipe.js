@@ -34,43 +34,159 @@
     return isFinite(n) ? n : null;
   }
 
+  // ── Unit conversion (metric ↔ imperial) ────────────────────────────────────
+  // Display-only conversions. Source of truth stays metric; we never mutate the
+  // origQty/origUnit data attributes. Volume conversions assume water density,
+  // which is acceptable for cup/tsp/tbsp display (the canonical USDA-aligned
+  // quantity remains in g for nutrition).
+  //
+  // Strategy: pick the most natural imperial unit for the size of the value.
+  // Tiny mass stays in g/oz for precision; tiny volume stays in tsp/tbsp.
+  const UNITS_KEY = 'hdr-units'; // localStorage key — global preference
+
+  function toImperial(qty, unit) {
+    // Mass
+    if (unit === 'g' || unit === 'kg') {
+      const g = unit === 'kg' ? qty * 1000 : qty;
+      if (g < 7)        return { qty: g, unit: 'g' };       // pinch territory; oz unhelpful
+      if (g < 28)       return { qty: g / 28.3495, unit: 'oz' };
+      if (g < 454)      return { qty: g / 28.3495, unit: 'oz' };
+      return { qty: g / 453.592, unit: 'lb' };
+    }
+    // Volume
+    if (unit === 'ml' || unit === 'l') {
+      const ml = unit === 'l' ? qty * 1000 : qty;
+      if (ml < 5)       return { qty: ml / 5,    unit: 'tsp' };
+      if (ml < 15)      return { qty: ml / 5,    unit: 'tsp' };
+      if (ml < 60)      return { qty: ml / 15,   unit: 'tbsp' };
+      // Cups all the way to ~1.9 L (8 cups). Above that, switch to qt for
+      // sanity. Most home recipes don't exceed 8 cups in a single ingredient.
+      if (ml < 1900)    return { qty: ml / 240,  unit: 'cup' };
+      return { qty: ml / 946.353, unit: 'qt' };
+    }
+    // Already imperial-style (tsp, tbsp, cup, oz, lb) or unitless — passthrough.
+    return { qty, unit };
+  }
+
+  function toMetric(qty, unit) {
+    if (unit === 'oz') return { qty: qty * 28.3495,  unit: 'g'  };
+    if (unit === 'lb') return { qty: qty * 453.592,  unit: 'g'  };
+    if (unit === 'tsp')  return { qty: qty * 5,      unit: 'ml' };
+    if (unit === 'tbsp') return { qty: qty * 15,     unit: 'ml' };
+    if (unit === 'cup')  return { qty: qty * 240,    unit: 'ml' };
+    if (unit === 'qt')   return { qty: qty * 946.353, unit: 'ml' };
+    return { qty, unit };
+  }
+
+  // Format an imperial quantity nicely — fractions for cup/tsp/tbsp; rounded
+  // numbers for oz/lb. Keeps grams precise.
+  function fmtImperial(n, unit) {
+    if (n == null || isNaN(n)) return '';
+    if (unit === 'cup' || unit === 'tsp' || unit === 'tbsp' || unit === 'qt') {
+      // Round to nearest 1/8 below 4, nearest 1/4 below 10, integer above.
+      if (n >= 10) return String(Math.round(n));
+      const step = n < 4 ? 8 : 4;
+      const r = Math.round(n * step) / step;
+      return fmtQty(r);
+    }
+    if (unit === 'oz') return n < 4 ? n.toFixed(2).replace(/0$/, '').replace(/\.$/, '') : n.toFixed(1).replace(/\.0$/, '');
+    if (unit === 'lb') return n < 1 ? n.toFixed(2).replace(/0$/, '').replace(/\.$/, '') : n.toFixed(1).replace(/\.0$/, '');
+    return fmtQty(n);
+  }
+
+  function getStoredUnits() {
+    try { return localStorage.getItem(UNITS_KEY) === 'imperial' ? 'imperial' : 'metric'; }
+    catch { return 'metric'; }
+  }
+  function setStoredUnits(v) {
+    try { localStorage.setItem(UNITS_KEY, v); } catch {}
+  }
+
   function initScaling(root) {
     const baseServings = parseInt(root.dataset.baseServings, 10) || 1;
     const input = root.querySelector('[data-scale-input]');
     const stepBtns = root.querySelectorAll('[data-scale-step]');
+    const unitBtns = root.querySelectorAll('[data-units]');
     const rows = Array.from(root.querySelectorAll('.ing-row'));
 
-    // Snapshot original quantities (numeric only)
+    // Snapshot original metric (qty, unit) per row. The dataset.qty/unit values
+    // were emitted at build time from validated metric frontmatter; trust those.
     rows.forEach(row => {
-      const qtyEl = row.querySelector('[data-ing-qty]');
-      if (!qtyEl) return;
-      const orig = parseQty(qtyEl.textContent);
-      if (orig != null) row.dataset.origQty = orig;
+      if (row.dataset.origQty != null) return; // already set
+      const q = parseFloat(row.dataset.qty);
+      if (isFinite(q)) row.dataset.origQty = String(q);
+      if (row.dataset.unit) row.dataset.origUnit = row.dataset.unit;
     });
 
-    function apply(servings) {
-      const factor = servings / baseServings;
-      rows.forEach(row => {
-        const orig = parseFloat(row.dataset.origQty);
-        if (!isFinite(orig)) return;
-        const qtyEl = row.querySelector('[data-ing-qty]');
-        if (qtyEl) qtyEl.textContent = fmtQty(orig * factor);
+    let units = getStoredUnits();
+    syncUnitButtons();
+
+    function syncUnitButtons() {
+      unitBtns.forEach(b => {
+        const on = b.dataset.units === units;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
       });
     }
 
-    if (input) {
-      input.addEventListener('input', () => {
-        const v = Math.max(1, parseInt(input.value, 10) || 1);
-        apply(v);
+    function apply() {
+      const servings = Math.max(1, parseInt(input?.value, 10) || baseServings);
+      const factor = servings / baseServings;
+      rows.forEach(row => {
+        const orig = parseFloat(row.dataset.origQty);
+        const origUnit = row.dataset.origUnit || row.dataset.unit || '';
+        const qtyEl = row.querySelector('[data-ing-qty]');
+        const unitEl = row.querySelector('[data-ing-unit]');
+        if (!qtyEl) return;
+        if (!isFinite(orig)) {
+          // Non-numeric quantities (e.g. "to taste") aren't scaled or converted
+          return;
+        }
+        const scaled = orig * factor;
+        if (units === 'imperial') {
+          const conv = toImperial(scaled, origUnit);
+          qtyEl.textContent = fmtImperial(conv.qty, conv.unit);
+          if (unitEl) unitEl.textContent = conv.unit;
+        } else {
+          qtyEl.textContent = fmtQty(scaled);
+          if (unitEl) unitEl.textContent = origUnit;
+        }
       });
+    }
+
+    apply(); // initial render reflects stored units preference
+
+    if (input) {
+      input.addEventListener('input', apply);
     }
     stepBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         const step = parseInt(btn.dataset.scaleStep, 10) || 0;
         const cur = parseInt(input.value, 10) || baseServings;
         input.value = Math.max(1, cur + step);
-        input.dispatchEvent(new Event('input'));
+        apply();
       });
+    });
+    unitBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const next = btn.dataset.units;
+        if (next === units) return;
+        units = next;
+        setStoredUnits(units);
+        syncUnitButtons();
+        apply();
+        // Keep all recipe ingredients sections in sync if there are multiple
+        document.dispatchEvent(new CustomEvent('hdr:units', { detail: { units } }));
+      });
+    });
+
+    // Cross-section sync (rare but possible if a page has multiple ingredient blocks)
+    document.addEventListener('hdr:units', (e) => {
+      if (e.detail?.units && e.detail.units !== units) {
+        units = e.detail.units;
+        syncUnitButtons();
+        apply();
+      }
     });
   }
 
@@ -80,8 +196,8 @@
       const cb = r.querySelector('.ing-cb');
       return !cb || !cb.checked; // include unchecked (= still need to buy)
     }).map(r => {
-      const qty = (r.querySelector('[data-ing-qty]') || {}).textContent || '';
-      const unit = (r.querySelector('.ing-qty') || {}).textContent.replace(qty, '').trim() || '';
+      const qty = (r.querySelector('[data-ing-qty]') || {}).textContent.trim() || '';
+      const unit = (r.querySelector('[data-ing-unit]') || {}).textContent.trim() || '';
       const name = (r.querySelector('.ing-name') || {}).textContent.trim();
       return `- ${qty} ${unit}  ${name}`.replace(/\s+/g, ' ').trim();
     });

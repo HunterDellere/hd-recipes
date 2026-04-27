@@ -98,7 +98,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     return `
         <li class="ing-row" ${dataAttrs}>
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
-          <span class="ing-qty"><span data-ing-qty>${qty}</span> ${unit}</span>
+          <span class="ing-qty"><span data-ing-qty>${qty}</span> <span data-ing-unit>${unit}</span></span>
           <span class="ing-name">${label}${prep}${opt}${note}</span>
         </li>`;
   };
@@ -120,6 +120,10 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
           <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
           <input type="number" class="ing-scale-input" data-scale-input value="${baseServings}" min="1" max="100">
           <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+        </div>
+        <div class="ing-units" role="group" aria-label="Display units">
+          <button type="button" class="ing-units-btn active" data-units="metric" aria-pressed="true">Metric</button>
+          <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">Imperial</button>
         </div>
         <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
       </div>
