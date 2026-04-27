@@ -77,37 +77,236 @@
       </a></div>
     </div>
 
-    <div class="filter-bar" role="toolbar" aria-label="Filter recipes">
-      <div class="filter-group">
-        <span class="filter-label">Cuisine</span>
-        <button type="button" class="filter-pill" data-filter-cuisine="American"><a class="x-link" data-category="cuisines" href="../cuisines/american.html">American</a></button><button type="button" class="filter-pill" data-filter-cuisine="Chinese"><a class="x-link" data-category="cuisines" href="../cuisines/chinese.html">Chinese</a></button><button type="button" class="filter-pill" data-filter-cuisine="Indian">Indian</button><button type="button" class="filter-pill" data-filter-cuisine="Italian"><a class="x-link" data-category="cuisines" href="../cuisines/italian.html">Italian</a></button><button type="button" class="filter-pill" data-filter-cuisine="Thai"><a class="x-link" data-category="cuisines" href="../cuisines/thai.html">Thai</a></button>
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Course</span>
-        <button type="button" class="filter-pill" data-filter-course="dessert">dessert</button><button type="button" class="filter-pill" data-filter-course="dinner">dinner</button><button type="button" class="filter-pill" data-filter-course="drink">drink</button><button type="button" class="filter-pill" data-filter-course="side">side</button><button type="button" class="filter-pill" data-filter-course="snack">snack</button>
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Tag</span>
-        <button type="button" class="filter-pill" data-filter-tag="cake">cake</button><button type="button" class="filter-pill" data-filter-tag="chocolate">chocolate</button><button type="button" class="filter-pill" data-filter-tag="comfort">comfort</button><button type="button" class="filter-pill" data-filter-tag="cookies">cookies</button><button type="button" class="filter-pill" data-filter-tag="custard">custard</button><button type="button" class="filter-pill" data-filter-tag="dairy">dairy</button><button type="button" class="filter-pill" data-filter-tag="dessert">dessert</button><button type="button" class="filter-pill" data-filter-tag="drink">drink</button><button type="button" class="filter-pill" data-filter-tag="egg">egg</button><button type="button" class="filter-pill" data-filter-tag="holiday">holiday</button><button type="button" class="filter-pill" data-filter-tag="make-ahead">make-ahead</button><button type="button" class="filter-pill" data-filter-tag="no-cook">no-cook</button><button type="button" class="filter-pill" data-filter-tag="noodles">noodles</button><button type="button" class="filter-pill" data-filter-tag="pasta">pasta</button><button type="button" class="filter-pill" data-filter-tag="pork">pork</button><button type="button" class="filter-pill" data-filter-tag="potato">potato</button><button type="button" class="filter-pill" data-filter-tag="roast">roast</button><button type="button" class="filter-pill" data-filter-tag="salad">salad</button><button type="button" class="filter-pill" data-filter-tag="side">side</button><button type="button" class="filter-pill" data-filter-tag="spicy">spicy</button><button type="button" class="filter-pill" data-filter-tag="tea">tea</button><button type="button" class="filter-pill" data-filter-tag="turkey">turkey</button><button type="button" class="filter-pill" data-filter-tag="umami">umami</button><button type="button" class="filter-pill" data-filter-tag="vegetable">vegetable</button><button type="button" class="filter-pill" data-filter-tag="weekend-project">weekend-project</button><button type="button" class="filter-pill" data-filter-tag="weeknight">weeknight</button>
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Diet</span>
-        <button type="button" class="filter-pill" data-filter-diet="vegan">vegan</button><button type="button" class="filter-pill" data-filter-diet="vegetarian">vegetarian</button>
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Active time</span>
-        <button type="button" class="filter-pill" data-filter-time="30" title="30 minutes or less of engaged cooking (overnight rests don't count)">≤ 30 min</button>
-        <button type="button" class="filter-pill" data-filter-time="60" title="60 minutes or less of engaged cooking">≤ 60 min</button>
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Difficulty</span>
-        <button type="button" class="filter-pill" data-filter-difficulty="easy">easy</button>
-        <button type="button" class="filter-pill" data-filter-difficulty="medium">medium</button>
-        <button type="button" class="filter-pill" data-filter-difficulty="hard">hard</button>
-      </div>
-      <button type="button" class="filter-pill filter-clear-btn" data-filter-clear>Clear all</button>
+    <!-- auto-link-skip -->
+    <div class="filter-bar" role="toolbar" aria-label="Filter recipes" data-filter-bar>
+      <details class="filter-menu" data-filter-menu="cuisine">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Cuisine</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          <svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Cuisine">
+          
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="American" data-filter-cuisine="American">
+              <span class="filter-opt-label">American</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Chinese" data-filter-cuisine="Chinese">
+              <span class="filter-opt-label">Chinese</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Indian" data-filter-cuisine="Indian">
+              <span class="filter-opt-label">Indian</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Italian" data-filter-cuisine="Italian">
+              <span class="filter-opt-label">Italian</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Thai" data-filter-cuisine="Thai">
+              <span class="filter-opt-label">Thai</span>
+            </label>
+        </div>
+      </details>
+
+      <details class="filter-menu" data-filter-menu="course">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Course</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          <svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Course">
+          
+            <label class="filter-opt">
+              <input type="radio" name="course" value="dessert" data-filter-course="dessert">
+              <span class="filter-opt-label">dessert</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="course" value="dinner" data-filter-course="dinner">
+              <span class="filter-opt-label">dinner</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="course" value="drink" data-filter-course="drink">
+              <span class="filter-opt-label">drink</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="course" value="side" data-filter-course="side">
+              <span class="filter-opt-label">side</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="course" value="snack" data-filter-course="snack">
+              <span class="filter-opt-label">snack</span>
+            </label>
+        </div>
+      </details>
+
+      <details class="filter-menu" data-filter-menu="tag">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Tag</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          <svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="filter-panel filter-panel-multi" role="group" aria-label="Tag">
+          <p class="filter-panel-hint">Multi-select — recipes match all chosen tags</p>
+          
+            <label class="filter-opt">
+              <input type="checkbox" value="cake" data-filter-tag="cake">
+              <span class="filter-opt-label">cake</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="chocolate" data-filter-tag="chocolate">
+              <span class="filter-opt-label">chocolate</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="comfort" data-filter-tag="comfort">
+              <span class="filter-opt-label">comfort</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="cookies" data-filter-tag="cookies">
+              <span class="filter-opt-label">cookies</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="custard" data-filter-tag="custard">
+              <span class="filter-opt-label">custard</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="dairy" data-filter-tag="dairy">
+              <span class="filter-opt-label">dairy</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="dessert" data-filter-tag="dessert">
+              <span class="filter-opt-label">dessert</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="drink" data-filter-tag="drink">
+              <span class="filter-opt-label">drink</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="egg" data-filter-tag="egg">
+              <span class="filter-opt-label">egg</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="holiday" data-filter-tag="holiday">
+              <span class="filter-opt-label">holiday</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="make-ahead" data-filter-tag="make-ahead">
+              <span class="filter-opt-label">make-ahead</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="no-cook" data-filter-tag="no-cook">
+              <span class="filter-opt-label">no-cook</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="noodles" data-filter-tag="noodles">
+              <span class="filter-opt-label">noodles</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="pasta" data-filter-tag="pasta">
+              <span class="filter-opt-label">pasta</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="pork" data-filter-tag="pork">
+              <span class="filter-opt-label">pork</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="potato" data-filter-tag="potato">
+              <span class="filter-opt-label">potato</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="roast" data-filter-tag="roast">
+              <span class="filter-opt-label">roast</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="salad" data-filter-tag="salad">
+              <span class="filter-opt-label">salad</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="side" data-filter-tag="side">
+              <span class="filter-opt-label">side</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="spicy" data-filter-tag="spicy">
+              <span class="filter-opt-label">spicy</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="tea" data-filter-tag="tea">
+              <span class="filter-opt-label">tea</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="turkey" data-filter-tag="turkey">
+              <span class="filter-opt-label">turkey</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="umami" data-filter-tag="umami">
+              <span class="filter-opt-label">umami</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="vegetable" data-filter-tag="vegetable">
+              <span class="filter-opt-label">vegetable</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="weekend-project" data-filter-tag="weekend-project">
+              <span class="filter-opt-label">weekend-project</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="weeknight" data-filter-tag="weeknight">
+              <span class="filter-opt-label">weeknight</span>
+            </label>
+        </div>
+      </details>
+
+      <details class="filter-menu" data-filter-menu="diet">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Diet</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          <svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Diet">
+          
+            <label class="filter-opt">
+              <input type="radio" name="diet" value="vegan" data-filter-diet="vegan">
+              <span class="filter-opt-label">vegan</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="diet" value="vegetarian" data-filter-diet="vegetarian">
+              <span class="filter-opt-label">vegetarian</span>
+            </label>
+        </div>
+      </details>
+
+      <details class="filter-menu" data-filter-menu="time">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Active time</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          <svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Active time">
+          <p class="filter-panel-hint">Engaged cooking only — overnight rests don't count.</p>
+          <label class="filter-opt"><input type="radio" name="time" value="30" data-filter-time="30"><span class="filter-opt-label">≤ 30 min</span></label>
+          <label class="filter-opt"><input type="radio" name="time" value="60" data-filter-time="60"><span class="filter-opt-label">≤ 60 min</span></label>
+        </div>
+      </details>
+
+      <details class="filter-menu" data-filter-menu="difficulty">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Difficulty</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          <svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Difficulty">
+          <label class="filter-opt"><input type="radio" name="difficulty" value="easy" data-filter-difficulty="easy"><span class="filter-opt-label">easy</span></label>
+          <label class="filter-opt"><input type="radio" name="difficulty" value="medium" data-filter-difficulty="medium"><span class="filter-opt-label">medium</span></label>
+          <label class="filter-opt"><input type="radio" name="difficulty" value="hard" data-filter-difficulty="hard"><span class="filter-opt-label">hard</span></label>
+        </div>
+      </details>
+
+      <button type="button" class="filter-clear-btn" data-filter-clear hidden>Clear all</button>
     </div>
+    <div class="filter-chips" data-filter-chips aria-live="polite"></div>
     <p class="filter-status" data-filter-status></p>
+    <!-- /auto-link-skip -->
 
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">

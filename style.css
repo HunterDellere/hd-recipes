@@ -1622,58 +1622,170 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
 [data-theme="dark"] .ec-d-medium { background: #3a2e1a; color: #e6c890; }
 [data-theme="dark"] .ec-d-hard   { background: #3a1e1a; color: #e69990; }
 
-/* ── filter bar (used on cook explore page) ──────────── */
+/* ── filter bar with dropdown menus (cook explore page) ─────────── */
 .filter-bar {
-  display: flex; flex-direction: column; gap: .85rem;
-  padding: 1rem 1.25rem;
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .5rem;
+  padding: .75rem .85rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: 12px;
+  margin-bottom: .85rem;
+  font-family: var(--font-sans);
+  position: relative;
+}
+
+/* Each dropdown uses native <details> for free open-state + keyboard. */
+.filter-menu { position: relative; }
+.filter-menu > summary {
+  list-style: none;
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: 8px 12px 8px 14px;
+  background: var(--bg);
+  border: 1px solid var(--rule); border-radius: 8px;
+  font-family: var(--font-sans); font-size: 13.5px; font-weight: 500;
+  color: var(--ink); cursor: pointer;
+  transition: border-color 120ms, color 120ms, background 120ms, box-shadow 120ms;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.filter-menu > summary::-webkit-details-marker { display: none; }
+.filter-menu > summary:hover { border-color: var(--ink-faint); }
+.filter-menu[open] > summary {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.filter-menu.has-active > summary {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.filter-menu-label { white-space: nowrap; }
+.filter-menu-count {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 18px; height: 18px; padding: 0 5px;
+  border-radius: 999px;
+  background: var(--accent); color: #fff;
+  font-family: var(--font-mono); font-size: 10.5px; font-weight: 700;
+  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+  margin-left: .15rem;
+}
+.filter-menu-count[hidden] { display: none; }
+.filter-menu-chev {
+  transition: transform 180ms;
+  color: var(--ink-faint);
+  margin-left: .15rem;
+}
+.filter-menu[open] .filter-menu-chev { transform: rotate(180deg); color: var(--accent); }
+.filter-menu.has-active .filter-menu-chev { color: var(--accent); }
+
+/* The dropdown panel — absolute on desktop, full-width sheet on mobile. */
+.filter-panel {
+  position: absolute; top: calc(100% + 6px); left: 0;
+  z-index: 30;
+  display: flex; flex-direction: column; gap: .15rem;
+  min-width: 200px; max-width: 320px;
+  max-height: 60vh; overflow-y: auto;
+  padding: .55rem .35rem;
   background: var(--bg-elev);
   border: 1px solid var(--rule); border-radius: 10px;
-  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
   font-family: var(--font-sans);
 }
-.filter-group {
-  display: flex; flex-wrap: wrap; align-items: center;
-  gap: .35rem;
+.filter-panel-multi { min-width: 240px; max-width: 360px; }
+.filter-panel-hint {
+  font-size: 12px; color: var(--ink-faint);
+  margin: .15rem .65rem .5rem;
+  font-style: italic;
+  line-height: 1.4;
 }
-.filter-label {
-  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .12em;
-  color: var(--ink-faint);
-  margin-right: .5rem;
-  min-width: 70px;
+
+.filter-opt {
+  display: flex; align-items: center; gap: .55rem;
+  padding: .45rem .65rem;
+  border-radius: 6px;
+  font-size: 14px; color: var(--ink);
+  cursor: pointer;
+  transition: background 100ms;
 }
-.filter-pill {
-  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
-  padding: 5px 12px;
-  background: var(--bg);
-  color: var(--ink-soft);
-  border: 1px solid var(--rule);
+.filter-opt:hover { background: var(--accent-soft); }
+.filter-opt input { accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+.filter-opt:has(input:checked) { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.filter-opt-label { flex: 1; min-width: 0; }
+
+/* Active-filter chip strip below the bar — removable chips, one per filter. */
+.filter-chips {
+  display: flex; flex-wrap: wrap; gap: .35rem;
+  margin: 0 0 1rem;
+  font-family: var(--font-sans);
+}
+.filter-chips[hidden] { display: none; }
+.filter-chip {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: 4px 6px 4px 12px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 12.5px; font-weight: 500;
   border-radius: 999px;
   cursor: pointer;
-  transition: border-color 120ms, color 120ms, background 120ms;
+  transition: background 120ms, border-color 120ms, transform 80ms;
 }
-.filter-pill:hover { border-color: var(--accent); color: var(--accent); }
-.filter-pill.active {
-  background: var(--accent); color: #fff;
-  border-color: var(--accent);
+.filter-chip:hover {
+  background: var(--accent);
+  color: #fff;
 }
+.filter-chip:active { transform: scale(0.97); }
+.filter-chip-x {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px;
+  border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  line-height: 1;
+}
+.filter-chip:hover .filter-chip-x { background: rgba(255,255,255,0.2); }
+
 .filter-clear-btn {
   margin-left: auto;
+  background: transparent;
+  border: 1px dashed var(--rule);
   color: var(--ink-faint);
-  border-style: dashed;
+  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 120ms, color 120ms, border-style 120ms;
 }
-.filter-clear-btn:hover { color: var(--accent); border-color: var(--accent); border-style: solid; }
+.filter-clear-btn:hover {
+  color: var(--accent); border-color: var(--accent); border-style: solid;
+}
+.filter-clear-btn[hidden] { display: none; }
+
 .filter-status {
   font-family: var(--font-sans); font-size: 13px;
   color: var(--ink-faint); margin: 0 0 1.5rem;
   min-height: 1.2em;
-  font-style: italic;
 }
-@media (max-width: 600px) {
-  .filter-bar { padding: .85rem 1rem; }
-  .filter-label { min-width: 0; flex-basis: 100%; margin: 0 0 .25rem; }
-  .filter-clear-btn { margin-left: 0; align-self: flex-start; }
+
+/* Mobile: panels become full-width sheets anchored to the bar so they
+   never overflow the viewport. The bar itself wraps to a scrollable row
+   so all menu buttons stay reachable. */
+@media (max-width: 700px) {
+  .filter-bar { padding: .6rem .65rem; gap: .35rem; }
+  .filter-menu > summary { padding: 9px 11px; font-size: 13px; }
+  .filter-panel {
+    position: fixed;
+    left: 1rem; right: 1rem; top: auto;
+    bottom: 1rem;
+    max-width: none; width: auto;
+    max-height: 70vh;
+    border-radius: 14px;
+    padding: .85rem .65rem .65rem;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.18), 0 0 0 1px var(--rule);
+  }
+  .filter-clear-btn { margin-left: 0; flex: 1 1 100%; order: 99; }
 }
+[data-theme="dark"] .filter-chip:hover .filter-chip-x { background: rgba(255,255,255,0.15); }
 
 @media (max-width: 700px) {
   .families-grid { grid-template-columns: 1fr; }

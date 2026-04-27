@@ -358,38 +358,110 @@ export function renderFamilyContent(family, entries, fromPath) {
     const cuisineLower = new Set([...cuisines].map(c => String(c).toLowerCase()));
     const dishTags = [...tags].filter(t => !cuisineLower.has(t)).sort();
 
+    // Filter UI: a row of <details> dropdowns (one per facet) instead of a
+    // wrapping pill grid. Each dropdown shows an active-count badge; applied
+    // filters surface as removable chips below the bar. Far better at this
+    // facet density (50+ values across 6 groups) than a flat chip grid.
+    const chevron = '<svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>';
+
+    function radioGroup(name, values, attr) {
+      return values.map(v => `
+            <label class="filter-opt">
+              <input type="radio" name="${escapeHtml(name)}" value="${escapeHtml(v)}" data-filter-${escapeHtml(attr)}="${escapeHtml(v)}">
+              <span class="filter-opt-label">${escapeHtml(v)}</span>
+            </label>`).join('');
+    }
+    function checkboxGroup(values, attr) {
+      return values.map(v => `
+            <label class="filter-opt">
+              <input type="checkbox" value="${escapeHtml(v)}" data-filter-${escapeHtml(attr)}="${escapeHtml(v)}">
+              <span class="filter-opt-label">${escapeHtml(v)}</span>
+            </label>`).join('');
+    }
+
+    const cuisineList = [...cuisines].sort();
+    const courseList = [...courses].sort();
+    const dietList = [...diets].sort();
+
     filterBar = `
-    <div class="filter-bar" role="toolbar" aria-label="Filter recipes">
-      <div class="filter-group">
-        <span class="filter-label">Cuisine</span>
-        ${[...cuisines].sort().map(c => `<button type="button" class="filter-pill" data-filter-cuisine="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Course</span>
-        ${[...courses].sort().map(c => `<button type="button" class="filter-pill" data-filter-course="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
-      </div>
-      ${dishTags.length ? `<div class="filter-group">
-        <span class="filter-label">Tag</span>
-        ${dishTags.map(t => `<button type="button" class="filter-pill" data-filter-tag="${escapeHtml(t)}">${escapeHtml(t)}</button>`).join('')}
-      </div>` : ''}
-      ${diets.size ? `<div class="filter-group">
-        <span class="filter-label">Diet</span>
-        ${[...diets].sort().map(d => `<button type="button" class="filter-pill" data-filter-diet="${escapeHtml(d)}">${escapeHtml(d)}</button>`).join('')}
-      </div>` : ''}
-      <div class="filter-group">
-        <span class="filter-label">Active time</span>
-        <button type="button" class="filter-pill" data-filter-time="30" title="30 minutes or less of engaged cooking (overnight rests don't count)">≤ 30 min</button>
-        <button type="button" class="filter-pill" data-filter-time="60" title="60 minutes or less of engaged cooking">≤ 60 min</button>
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Difficulty</span>
-        <button type="button" class="filter-pill" data-filter-difficulty="easy">easy</button>
-        <button type="button" class="filter-pill" data-filter-difficulty="medium">medium</button>
-        <button type="button" class="filter-pill" data-filter-difficulty="hard">hard</button>
-      </div>
-      <button type="button" class="filter-pill filter-clear-btn" data-filter-clear>Clear all</button>
+    <!-- auto-link-skip -->
+    <div class="filter-bar" role="toolbar" aria-label="Filter recipes" data-filter-bar>
+      <details class="filter-menu" data-filter-menu="cuisine">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Cuisine</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          ${chevron}
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Cuisine">
+          ${radioGroup('cuisine', cuisineList, 'cuisine')}
+        </div>
+      </details>
+
+      <details class="filter-menu" data-filter-menu="course">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Course</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          ${chevron}
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Course">
+          ${radioGroup('course', courseList, 'course')}
+        </div>
+      </details>
+
+      ${dishTags.length ? `<details class="filter-menu" data-filter-menu="tag">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Tag</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          ${chevron}
+        </summary>
+        <div class="filter-panel filter-panel-multi" role="group" aria-label="Tag">
+          <p class="filter-panel-hint">Multi-select — recipes match all chosen tags</p>
+          ${checkboxGroup(dishTags, 'tag')}
+        </div>
+      </details>` : ''}
+
+      ${dietList.length ? `<details class="filter-menu" data-filter-menu="diet">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Diet</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          ${chevron}
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Diet">
+          ${radioGroup('diet', dietList, 'diet')}
+        </div>
+      </details>` : ''}
+
+      <details class="filter-menu" data-filter-menu="time">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Active time</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          ${chevron}
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Active time">
+          <p class="filter-panel-hint">Engaged cooking only — overnight rests don't count.</p>
+          <label class="filter-opt"><input type="radio" name="time" value="30" data-filter-time="30"><span class="filter-opt-label">≤ 30 min</span></label>
+          <label class="filter-opt"><input type="radio" name="time" value="60" data-filter-time="60"><span class="filter-opt-label">≤ 60 min</span></label>
+        </div>
+      </details>
+
+      <details class="filter-menu" data-filter-menu="difficulty">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">Difficulty</span>
+          <span class="filter-menu-count" data-menu-count></span>
+          ${chevron}
+        </summary>
+        <div class="filter-panel" role="group" aria-label="Difficulty">
+          <label class="filter-opt"><input type="radio" name="difficulty" value="easy" data-filter-difficulty="easy"><span class="filter-opt-label">easy</span></label>
+          <label class="filter-opt"><input type="radio" name="difficulty" value="medium" data-filter-difficulty="medium"><span class="filter-opt-label">medium</span></label>
+          <label class="filter-opt"><input type="radio" name="difficulty" value="hard" data-filter-difficulty="hard"><span class="filter-opt-label">hard</span></label>
+        </div>
+      </details>
+
+      <button type="button" class="filter-clear-btn" data-filter-clear hidden>Clear all</button>
     </div>
-    <p class="filter-status" data-filter-status></p>`;
+    <div class="filter-chips" data-filter-chips aria-live="polite"></div>
+    <p class="filter-status" data-filter-status></p>
+    <!-- /auto-link-skip -->`;
   }
 
   // Augment entry cards with filter data attributes for 'cook'.

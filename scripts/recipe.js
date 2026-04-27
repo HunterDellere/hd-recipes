@@ -416,18 +416,27 @@
   }
 
   // ── filter bar (cook explore page) ─────────────────────────────────
-  const filterBar = document.querySelector('.filter-bar');
+  const filterBar = document.querySelector('[data-filter-bar]');
   if (filterBar) initExploreFilters(filterBar);
 
   function initExploreFilters(bar) {
     const grid = document.querySelector('[data-grid]');
     const status = document.querySelector('[data-filter-status]');
+    const chipsEl = document.querySelector('[data-filter-chips]');
+    const clearBtn = bar.querySelector('[data-filter-clear]');
     if (!grid) return;
     const cards = Array.from(grid.querySelectorAll('[data-card]'));
-    // tag is multi-select (Set): a card must match ALL selected tags.
-    // Other facets remain single-select.
+
+    // tag is multi-select (Set, AND semantics); other facets are single-select.
     const state = { cuisine: null, course: null, diet: null, time: null, difficulty: null, tags: new Set() };
 
+    // Map facet → human label for chip display
+    const FACET_LABEL = {
+      cuisine: 'Cuisine', course: 'Course', diet: 'Diet',
+      time: 'Active time', difficulty: 'Difficulty',
+    };
+
+    // ── filtering ──────────────────────────────────────────────────────
     function apply() {
       let visible = 0;
       for (const card of cards) {
@@ -442,50 +451,172 @@
         card.style.display = show ? '' : 'none';
         if (show) visible++;
       }
-      const filters = [];
-      if (state.cuisine) filters.push(state.cuisine);
-      if (state.course) filters.push(state.course);
-      if (state.diet) filters.push(state.diet);
-      if (state.difficulty) filters.push(state.difficulty);
-      if (state.time) filters.push(`≤ ${state.time} min active`);
-      for (const t of state.tags) filters.push(`#${t}`);
+      renderChips();
+      renderCounts();
+      const totalActive = countActive();
+      if (clearBtn) clearBtn.hidden = totalActive === 0;
       if (status) {
-        status.textContent = filters.length
-          ? `${visible} ${visible === 1 ? 'recipe' : 'recipes'} matching ${filters.join(' · ')}`
-          : '';
+        if (totalActive === 0) {
+          status.textContent = '';
+        } else {
+          status.textContent = `${visible} ${visible === 1 ? 'recipe' : 'recipes'} match`;
+        }
       }
     }
 
-    bar.addEventListener('click', (e) => {
-      const btn = e.target.closest('.filter-pill');
-      if (!btn) return;
-      if (btn.hasAttribute('data-filter-clear')) {
-        state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
-        state.tags.clear();
-        bar.querySelectorAll('.filter-pill.active').forEach(b => b.classList.remove('active'));
+    function countActive() {
+      let n = 0;
+      for (const k of ['cuisine','course','diet','time','difficulty']) if (state[k]) n++;
+      n += state.tags.size;
+      return n;
+    }
+
+    // ── chip strip (active-filter summary) ─────────────────────────────
+    function renderChips() {
+      if (!chipsEl) return;
+      const out = [];
+      for (const k of ['cuisine','course','diet','difficulty']) {
+        if (state[k]) out.push(chipHtml(k, state[k], state[k]));
+      }
+      if (state.time) out.push(chipHtml('time', state.time, `≤ ${state.time} min active`));
+      for (const t of state.tags) out.push(chipHtml('tag', t, `#${t}`));
+      chipsEl.innerHTML = out.join('');
+      chipsEl.hidden = out.length === 0;
+    }
+    function chipHtml(facet, value, label) {
+      return `<button type="button" class="filter-chip" data-chip-facet="${escapeAttr(facet)}" data-chip-value="${escapeAttr(value)}" aria-label="Remove filter: ${escapeAttr(label)}">${escapeHtml(label)}<span class="filter-chip-x" aria-hidden="true">×</span></button>`;
+    }
+    function escapeHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function escapeAttr(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
+
+    if (chipsEl) {
+      chipsEl.addEventListener('click', (e) => {
+        const chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+        const facet = chip.dataset.chipFacet;
+        const value = chip.dataset.chipValue;
+        if (facet === 'tag') {
+          state.tags.delete(value);
+        } else {
+          state[facet] = null;
+        }
+        syncInputs();
         apply();
-        return;
+      });
+    }
+
+    // ── per-menu count badges ──────────────────────────────────────────
+    function renderCounts() {
+      bar.querySelectorAll('[data-filter-menu]').forEach(menu => {
+        const facet = menu.dataset.filterMenu;
+        const countEl = menu.querySelector('[data-menu-count]');
+        if (!countEl) return;
+        let n;
+        if (facet === 'tag') n = state.tags.size;
+        else n = state[facet] ? 1 : 0;
+        countEl.textContent = n > 0 ? String(n) : '';
+        countEl.hidden = n === 0;
+        menu.classList.toggle('has-active', n > 0);
+      });
+    }
+
+    // ── input → state ──────────────────────────────────────────────────
+    bar.addEventListener('change', (e) => {
+      const input = e.target.closest('input');
+      if (!input) return;
+      // Find which facet this input belongs to
+      const facets = ['cuisine','course','diet','time','difficulty','tag'];
+      let facet = null, value = null;
+      for (const f of facets) {
+        const k = `filter${f.charAt(0).toUpperCase() + f.slice(1)}`;
+        if (input.dataset[k] !== undefined) { facet = f; value = input.dataset[k]; }
       }
-      // Tag is multi-select: toggle independently, don't clear siblings.
-      if (btn.dataset.filterTag !== undefined) {
-        const tag = btn.dataset.filterTag;
-        if (state.tags.has(tag)) { state.tags.delete(tag); btn.classList.remove('active'); }
-        else { state.tags.add(tag); btn.classList.add('active'); }
-        apply();
-        return;
+      if (!facet) return;
+      if (facet === 'tag') {
+        if (input.checked) state.tags.add(value);
+        else state.tags.delete(value);
+      } else {
+        // Radio: setting same value toggles off (so user can deselect)
+        // The native radio group handles single-select; we just record.
+        state[facet] = input.checked ? value : null;
       }
-      const groups = ['cuisine','course','diet','time','difficulty'];
-      let group = null, val = null;
-      for (const g of groups) {
-        const k = `filter${g.charAt(0).toUpperCase() + g.slice(1)}`;
-        if (btn.dataset[k] !== undefined) { group = g; val = btn.dataset[k]; }
-      }
-      if (!group) return;
-      const wasActive = btn.classList.contains('active');
-      bar.querySelectorAll(`[data-filter-${group}]`).forEach(b => b.classList.remove('active'));
-      if (wasActive) state[group] = null;
-      else { state[group] = val; btn.classList.add('active'); }
       apply();
     });
+
+    // Allow re-clicking an already-checked radio to clear it.
+    bar.addEventListener('click', (e) => {
+      const input = e.target.closest('input[type="radio"]');
+      if (!input) return;
+      // If radio was already checked before this click, the click won't trigger
+      // a 'change' event. Detect via a microtask: if state matches, clear.
+      const facets = ['cuisine','course','diet','time','difficulty'];
+      let facet = null, value = null;
+      for (const f of facets) {
+        const k = `filter${f.charAt(0).toUpperCase() + f.slice(1)}`;
+        if (input.dataset[k] !== undefined) { facet = f; value = input.dataset[k]; }
+      }
+      if (!facet) return;
+      if (state[facet] === value) {
+        // User clicked the already-active radio: clear it
+        input.checked = false;
+        state[facet] = null;
+        apply();
+      }
+    });
+
+    // Sync DOM input states back from `state` (after chip removal etc.)
+    function syncInputs() {
+      bar.querySelectorAll('input[type="radio"]').forEach(input => {
+        const facets = ['cuisine','course','diet','time','difficulty'];
+        for (const f of facets) {
+          const k = `filter${f.charAt(0).toUpperCase() + f.slice(1)}`;
+          if (input.dataset[k] !== undefined) {
+            input.checked = state[f] === input.dataset[k];
+          }
+        }
+      });
+      bar.querySelectorAll('input[type="checkbox"][data-filter-tag]').forEach(input => {
+        input.checked = state.tags.has(input.dataset.filterTag);
+      });
+    }
+
+    // ── clear all ──────────────────────────────────────────────────────
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
+        state.tags.clear();
+        syncInputs();
+        // Also close any open menus
+        bar.querySelectorAll('details[data-filter-menu]').forEach(d => d.removeAttribute('open'));
+        apply();
+      });
+    }
+
+    // ── close menus on outside click / Escape ──────────────────────────
+    document.addEventListener('click', (e) => {
+      const menus = bar.querySelectorAll('details[data-filter-menu][open]');
+      if (!menus.length) return;
+      menus.forEach(menu => { if (!menu.contains(e.target)) menu.removeAttribute('open'); });
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      bar.querySelectorAll('details[data-filter-menu][open]').forEach(d => {
+        d.removeAttribute('open');
+        const sum = d.querySelector('summary'); if (sum) sum.focus();
+      });
+    });
+
+    // Only allow one menu open at a time — friendlier on mobile.
+    bar.querySelectorAll('details[data-filter-menu]').forEach(menu => {
+      menu.addEventListener('toggle', () => {
+        if (!menu.open) return;
+        bar.querySelectorAll('details[data-filter-menu][open]').forEach(other => {
+          if (other !== menu) other.removeAttribute('open');
+        });
+      });
+    });
+
+    // Initial render
+    apply();
   }
 })();
