@@ -580,6 +580,83 @@ pre code { background: none; padding: 0; }
 .eq-chip:hover { border-color: var(--cat-equipment); color: var(--cat-equipment); text-decoration: none; }
 .eq-chip-stub { color: var(--ink-faint); }
 
+/* ── pairings (intelligent recommendations on recipe pages) ─────── */
+.pair-blurb {
+  font-size: 14.5px; color: var(--ink-soft);
+  margin: -.25rem 0 1rem;
+  max-width: 60ch;
+  line-height: 1.55;
+}
+.pair-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: .75rem;
+}
+.pair-card {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .85rem 1rem .8rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: 10px;
+  border-left: 3px solid var(--rule);
+  font-family: var(--font-sans); color: var(--ink);
+  position: relative; overflow: hidden;
+  transition: border-color 140ms, transform 100ms, box-shadow 140ms;
+}
+.pair-card:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+.pair-card[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
+.pair-card[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
+.pair-card[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
+.pair-card[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
+.pair-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
+.pair-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
+.pair-head {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--ink-faint);
+}
+.pair-icon { display: inline-flex; }
+.pair-icon svg { display: block; }
+.pair-card[data-category="recipes"]     .pair-head { color: var(--cat-recipes); }
+.pair-card[data-category="ingredients"] .pair-head { color: var(--cat-ingredients); }
+.pair-card[data-category="techniques"]  .pair-head { color: var(--cat-techniques); }
+.pair-card[data-category="cuisines"]    .pair-head { color: var(--cat-cuisines); }
+.pair-card[data-category="equipment"]   .pair-head { color: var(--cat-equipment); }
+.pair-card[data-category="hubs"]        .pair-head { color: var(--cat-hubs); }
+.pair-cat { display: inline-block; }
+.pair-title {
+  font-family: var(--font-serif); font-weight: 700; font-size: 16px;
+  line-height: 1.25; letter-spacing: -0.005em;
+  color: var(--ink);
+}
+.pair-desc {
+  font-size: 13px; color: var(--ink-soft); line-height: 1.45;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pair-reason {
+  display: inline-flex; align-items: center;
+  align-self: flex-start;
+  margin-top: .25rem;
+  font-family: var(--font-sans); font-size: 11.5px; font-weight: 500;
+  color: var(--ink-soft);
+  background: var(--bg-soft);
+  border: 1px solid var(--rule-soft);
+  border-radius: 999px;
+  padding: 3px 9px;
+  text-transform: lowercase;
+  letter-spacing: .01em;
+}
+.pair-card:hover .pair-reason {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* Hub-membership chips — surfaces which collections a recipe belongs to. */
 .hub-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .hub-chip {

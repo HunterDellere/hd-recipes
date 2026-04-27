@@ -257,6 +257,43 @@ export function renderSubstitutions(fm) {
  * Build the auto-generated recipe body. Used when content/<recipe>.md has no
  * authored body — the entire page renders from frontmatter.
  */
+function renderPairings(pairings, currentPath) {
+  if (!pairings || !pairings.length) return '';
+
+  // Per-card mini icon — same line-art set used elsewhere, scoped by category
+  // for visual reinforcement of what kind of thing each pairing is.
+  const ICONS = {
+    recipes:     `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg>`,
+    ingredients: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`,
+    techniques:  `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg>`,
+    cuisines:    `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg>`,
+    equipment:   `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13 h12 a1 1 0 0 1 1 1 v3 a3 3 0 0 1 -3 3 H7 a3 3 0 0 1 -3 -3 z"/><path d="M17 14 h2 a2 2 0 0 1 0 4 h-2"/></svg>`,
+    hubs:        `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 6 V4 a1 1 0 0 1 1 -1 h8 a1 1 0 0 1 1 1 v2"/><line x1="3" y1="11" x2="21" y2="11"/></svg>`,
+  };
+
+  const cards = pairings.map(p => {
+    const icon = ICONS[p.category] || '';
+    const desc = p.desc ? `<span class="pair-desc">${escapeHtml(p.desc.slice(0, 100))}</span>` : '';
+    return `
+        <a class="pair-card" href="${escapeHtml(relPath(currentPath, p.path))}" data-category="${escapeHtml(p.category)}">
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true">${icon}</span>
+            <span class="pair-cat">${escapeHtml(p.category)}</span>
+          </span>
+          <span class="pair-title">${escapeHtml(p.title)}</span>
+          ${desc}
+          <span class="pair-reason">${escapeHtml(p.reason)}</span>
+        </a>`;
+  }).join('');
+
+  return `
+    <span class="section-anchor" id="pairs-with"></span>
+    <div class="section-head"><h2>Pairs with</h2></div>
+    <p class="pair-blurb">A handful of next moves — other dishes that round the meal, the techniques behind this one, the cuisine context, and the most distinctive ingredient.</p>
+    <div class="pair-grid">${cards}
+    </div>`;
+}
+
 function renderHubMembership(inHubs, currentPath) {
   if (!inHubs || !inHubs.length) return '';
   const chips = inHubs.map(h => `<a class="hub-chip" href="${escapeHtml(relPath(currentPath, h.path))}" data-category="hubs">${escapeHtml(h.title)}</a>`).join('');
@@ -267,7 +304,7 @@ function renderHubMembership(inHubs, currentPath) {
 }
 
 export function renderRecipeBody(fm, slug, category, opts) {
-  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs } = opts;
+  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs, pairings } = opts;
   const sidebarLinks = [];
   const sections = [];
 
@@ -293,6 +330,9 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
   const hubsHtml = renderHubMembership(inHubs, `pages/${category}/${slug}.html`);
   if (hubsHtml) { sections.push(hubsHtml); sidebarLinks.push({ id: 'in-hubs', label: 'Collections' }); }
+
+  const pairsHtml = renderPairings(pairings, `pages/${category}/${slug}.html`);
+  if (pairsHtml) { sections.push(pairsHtml); sidebarLinks.push({ id: 'pairs-with', label: 'Pairs with' }); }
 
   const sidebar = `
     <aside class="sidebar" id="sidebar" aria-label="Page contents">

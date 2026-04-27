@@ -29,6 +29,7 @@ import {
 import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
 import { computeReverseLinks, enrichEntry } from './lib/cards.mjs';
+import { computePairings } from './lib/pairings.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -296,9 +297,15 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
       if (fm.type === 'recipe') {
         const nutrition = roundNutritionWrap(computeRecipeNutrition(fm, ingredientBySlug, usdaCache));
         nutritionByPath[entry.path] = nutrition;
+        const pairings = computePairings(entry, entries, {
+          hubMembers: reverseLinks.hubMembers,
+          inHubs: reverseLinks.inHubs,
+          ingredientBySlug, techniqueBySlug,
+        }, 8);
         augmentedBody = renderRecipeBody(fm, slug, category, {
           ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition,
           inHubs: reverseLinks.inHubs.get(entry.path) || [],
+          pairings,
         });
       } else if (fm.type === 'ingredient') {
         const recipesUsing = reverseLinks.ingRecipes.get(slug) || [];
