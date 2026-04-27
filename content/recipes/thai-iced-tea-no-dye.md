@@ -85,7 +85,7 @@ ingredients:
     note: '(2–4 tbsp)'
 
 steps:
-  - text: 'Combine water, star anise, cardamom, cinnamon stick, and cloves in a small saucepan. Bring to a boil, then drop heat slightly and simmer hard for 5 minutes. Spices need active heat to release their oils.'
+  - text: 'Combine 480 ml / 2 cups water, 2 star anise pods, 2 lightly crushed green cardamom pods, 1 cinnamon stick, and the cloves in a small saucepan. Bring to a boil, then drop heat slightly and simmer hard for 5 minutes. Spices need active heat to release their oils.'
     time_min: 6
   - text: 'Pull the pot fully off the heat. Stir in the loose-leaf tea, cover, and steep exactly 5 minutes. Don''t go longer; that''s where the dry-mouth tannins come in.'
     time_min: 5

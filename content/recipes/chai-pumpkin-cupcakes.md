@@ -144,25 +144,25 @@ ingredients:
     note: '(1 tsp)'
 
 steps:
-  - text: 'Combine milk and all ground spices in a small saucepan with the smashed ginger. Bring to a low simmer and hold there 3–5 minutes; the spices need active heat to bloom.'
+  - text: 'Combine 120 ml / ½ cup whole milk, 4 g / 2 tsp ground cinnamon, 3 g / 1½ tsp ground ginger, 1 g / ½ tsp ground cardamom, 1 g / ½ tsp ground allspice, and 0.5 g / ¼ tsp ground cloves in a small saucepan with the smashed fresh ginger knob. Bring to a low simmer and hold there 3–5 minutes; the spices need active heat to bloom.'
     time_min: 5
-  - text: 'Pull from heat. Drop in the Assam tea, cover, and steep exactly 5 minutes. Strain through a fine sieve, pressing hard on the solids. You want about 90 ml (⅓ cup + 2 tbsp). Cool fully.'
+  - text: 'Pull from heat. Drop in 6 g / 2 tbsp Assam tea, cover, and steep exactly 5 minutes. Strain through a fine sieve, pressing hard on the solids. You want about 90 ml / ⅓ cup + 2 tbsp. Cool fully.'
     time_min: 8
-  - text: 'In a small skillet over medium, cook the pumpkin puree, stirring often, for 5–7 minutes. The color shifts from bright orange to a deeper rust as the water cooks off. Cool slightly.'
+  - text: 'In a small skillet over medium, cook 240 g / 1 cup pumpkin puree, stirring often, for 5–7 minutes. The color shifts from bright orange to a deeper rust as the water cooks off. Cool slightly.'
     time_min: 7
   - text: 'Heat oven to 350°F (175°C). Line a 12-cup muffin tin.'
-  - text: 'Whisk flour, baking powder, baking soda, and salt in a medium bowl.'
+  - text: 'Whisk 190 g / 1½ cups all-purpose flour, 4 g / 1 tsp baking powder, 3 g / ½ tsp baking soda, and 3 g / ½ tsp fine sea salt in a medium bowl.'
     time_min: 1
-  - text: 'In a large bowl, whisk the cooled roasted pumpkin, oil, eggs, brown sugar, maple syrup, vanilla, and the cooled chai milk until smooth.'
+  - text: 'In a large bowl, whisk the cooled roasted pumpkin, 110 g / ½ cup oil, 2 large eggs, 110 g / ½ cup packed dark brown sugar, 80 g / ⅓ cup maple syrup, 5 g / 1 tsp vanilla extract, and the cooled chai milk until smooth.'
     time_min: 2
   - text: 'Pour wet into dry. Switch to a spatula and fold gently until no flour streaks remain. The batter can be a touch lumpy.'
     time_min: 2
   - text: 'Divide between liners. Bake 18–22 minutes, until a toothpick comes out clean and the tops spring back. Cool completely on a rack.'
     time_min: 22
-  - text: 'For the frosting, brown the butter in a saucepan until amber and nutty. Pour into a bowl and refrigerate ~45 minutes until it firms back to the texture of soft butter.'
+  - text: 'For the frosting, brown 115 g / 1 stick unsalted butter in a saucepan until amber and nutty. Pour into a bowl and refrigerate ~45 minutes until it firms back to the texture of soft butter.'
     technique: 'brown-butter'
     time_min: 50
-  - text: 'Whip the solidified brown butter with the cold cream cheese until creamy. Add powdered sugar and vanilla. Whip until fluffy. Frost the cooled cupcakes.'
+  - text: 'Whip the solidified brown butter with the 225 g / 8 oz cold cream cheese until creamy. Add 180 g / 1½ cups sifted powdered sugar and 5 g / 1 tsp vanilla bean paste. Whip until fluffy. Frost the cooled cupcakes.'
     time_min: 4
 
 substitutions:

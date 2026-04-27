@@ -334,10 +334,28 @@
     });
   }
 
+  // Tap anywhere in an ingredient row to tick it. The row becomes a single
+  // big touch target — important when cooks have wet/dirty hands and small
+  // checkboxes are a struggle to hit. Native interactives inside the row
+  // (links, the checkbox itself, its label) keep handling their own clicks
+  // so a tap on a slug crosslink still navigates rather than ticking.
+  function initRowTap(root) {
+    root.addEventListener('click', e => {
+      if (e.target.closest('a, button, input, label')) return;
+      const row = e.target.closest('.ing-row');
+      if (!row || !root.contains(row)) return;
+      const cb = row.querySelector('.ing-cb');
+      if (!cb) return;
+      cb.checked = !cb.checked;
+      cb.dispatchEvent(new Event('change', { bubbles: true }));
+    });
+  }
+
   document.querySelectorAll('.recipe-ingredients').forEach(root => {
     initScaling(root);
     initShop(root);
     initStrike(root);
+    initRowTap(root);
   });
 
   // ── Cook's view: focused mode with wake-lock + per-step progression ────
@@ -393,12 +411,15 @@
       });
       const togglePanel = () => {
         const expanded = ingredientsSection.dataset.expanded === '1';
+        const cbMise = document.querySelector('.cb-mise');
         if (expanded) {
           delete ingredientsSection.dataset.expanded;
           ingPanelBtn.setAttribute('aria-expanded', 'false');
+          if (cbMise) cbMise.setAttribute('aria-pressed', 'false');
         } else {
           ingredientsSection.dataset.expanded = '1';
           ingPanelBtn.setAttribute('aria-expanded', 'true');
+          if (cbMise) cbMise.setAttribute('aria-pressed', 'true');
         }
       };
       ingPanelBtn.addEventListener('click', togglePanel);
@@ -526,13 +547,17 @@
         <div class="cb-progress" aria-hidden="true"><div class="cb-progress-fill"></div></div>
         <div class="cb-row">
           <button type="button" class="cb-btn cb-prev" aria-label="Previous step">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
             <span>Prev</span>
+          </button>
+          <button type="button" class="cb-btn cb-mise" aria-label="Toggle mise en place" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span>Mise</span>
           </button>
           <span class="cb-counter" data-cook-counter></span>
           <button type="button" class="cb-btn cb-next" aria-label="Next step">
             <span>Next</span>
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
           </button>
           <button type="button" class="cb-btn cb-exit" aria-label="Exit cook's view">Done</button>
         </div>`;
@@ -540,6 +565,35 @@
       bar.querySelector('.cb-prev').addEventListener('click', () => setActiveStep(activeStepIndex - 1));
       bar.querySelector('.cb-next').addEventListener('click', () => setActiveStep(activeStepIndex + 1));
       bar.querySelector('.cb-exit').addEventListener('click', exit);
+      bar.querySelector('.cb-mise').addEventListener('click', toggleMiseFromBar);
+    }
+
+    // Mise toggle wired into the cook-bar so the cook can flip up the
+    // per-phase ingredient list from anywhere in the steps without scrolling
+    // back to the top. Coordinates with the existing cv-ing-toggle button so
+    // the two stay in sync (both are just views onto the same data-expanded
+    // state). Opening: expand + open mise + scroll to it. Closing: collapse
+    // + return scroll to active step so the cook resumes where they were.
+    function toggleMiseFromBar() {
+      if (!ingredientsSection) return;
+      const mise = ingredientsSection.querySelector('[data-ing-panel="mise"]');
+      const cbMise = document.querySelector('.cb-mise');
+      const opening = !(ingredientsSection.dataset.expanded === '1' && mise && mise.open);
+      if (opening) {
+        ingredientsSection.dataset.expanded = '1';
+        if (ingPanelBtn) ingPanelBtn.setAttribute('aria-expanded', 'true');
+        if (mise) mise.open = true;
+        if (cbMise) cbMise.setAttribute('aria-pressed', 'true');
+        const target = mise || ingredientsSection;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        if (mise) mise.open = false;
+        delete ingredientsSection.dataset.expanded;
+        if (ingPanelBtn) ingPanelBtn.setAttribute('aria-expanded', 'false');
+        if (cbMise) cbMise.setAttribute('aria-pressed', 'false');
+        const stepEl = steps[activeStepIndex];
+        if (stepEl) stepEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     }
 
     // Keyboard navigation while in cook's view

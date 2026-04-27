@@ -68,13 +68,13 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Combine both mustard seeds, wine, and water in a glass or ceramic bowl (not metal; the heat reaction with raw mustard reads bitter against aluminum or carbon steel). Cover and refrigerate 36–48 hours. The seeds will absorb the liquid, swell, and soften enough to grind smooth.'
+  - text: 'Combine 60 g brown mustard seeds, 30 g yellow mustard seeds, 180 ml / ¾ cup dry white wine, and 60 ml / ¼ cup cold water in a glass or ceramic bowl (not metal; the heat reaction with raw mustard reads bitter against aluminum or carbon steel). Cover and refrigerate 36–48 hours. The seeds will absorb the liquid, swell, and soften enough to grind smooth.'
     time_min: 5
   - text: 'After the soak the seeds should be plump and squashable between two fingers. If they still feel hard at the core, give it another 12 hours; undersoaked seeds blend gritty.'
     time_min: 1
-  - text: 'Transfer the entire mixture (seeds plus any unabsorbed liquid) to a high-speed blender or food processor. Add the vinegar, salt, and honey if using.'
+  - text: 'Transfer the entire mixture (seeds plus any unabsorbed liquid) to a high-speed blender or food processor. Add 30 ml / 2 tbsp apple cider vinegar, 6 g / 1 tsp kosher salt, and 6 g / 1 tsp honey if using.'
     time_min: 2
-  - text: 'Blend on high for 60–90 seconds. The mixture will go from gritty paste to thick, smooth mustard with the consistency of softened butter. Scrape down the sides twice. If it seizes or refuses to move, splash in a tablespoon of cold water and keep going. The texture should be spreadable, not stiff.'
+  - text: 'Blend on high for 60–90 seconds. The mixture will go from gritty paste to thick, smooth mustard with the consistency of softened butter. Scrape down the sides twice. If it seizes or refuses to move, splash in 15 ml / 1 tbsp more cold water and keep going. The texture should be spreadable, not stiff.'
     time_min: 2
   - text: 'Taste. The mustard at this point is shockingly hot, almost wasabi-grade, because the myrosinase enzyme has just hydrolyzed the glucosinolates and released the volatile isothiocyanates. This is correct; do not panic.'
     time_min: 1

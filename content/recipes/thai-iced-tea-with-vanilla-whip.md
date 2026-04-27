@@ -115,19 +115,19 @@ ingredients:
     qty: 'to taste'
 
 steps:
-  - text: 'Toast star anise, cardamom, cinnamon stick, and cloves in a dry saucepan over medium for 1–2 minutes, shaking constantly, until they smell sharp and warm.'
+  - text: 'Toast 3 star anise pods, 3 crushed cardamom pods, 1 cinnamon stick, and 2 whole cloves in a dry saucepan over medium for 1–2 minutes, shaking constantly, until they smell sharp and warm.'
     time_min: 2
-  - text: 'Add water, orange peel, and salt. Bring to a hard boil, cover, and cook 5 minutes.'
+  - text: 'Add 480 ml / 2 cups filtered water, 1 strip orange peel, and a 1 g pinch kosher salt. Bring to a hard boil, cover, and cook 5 minutes.'
     time_min: 6
-  - text: 'Pull off the heat and let it stop bubbling, about 30 seconds. Stir in the tea leaves. Cover and steep exactly 4 minutes.'
+  - text: 'Pull off the heat and let it stop bubbling, about 30 seconds. Stir in 6 g / 2 tbsp loose-leaf black tea. Cover and steep exactly 4 minutes.'
     time_min: 4
   - text: 'Strain through a fine sieve into a heatproof pitcher. Don''t squeeze the leaves; that releases tannins.'
     time_min: 1
-  - text: 'Whisk in the brown sugar and condensed milk while still hot. Then stir in vanilla, almond extract, and orange blossom water (added off-heat to preserve the volatiles).'
+  - text: 'Whisk in 13 g / 1 tbsp dark brown sugar and 40 g / 2 tbsp sweetened condensed milk while still hot. Then stir in 2.5 g / ½ tsp vanilla extract, 1 g / ¼ tsp almond extract, and 1 g / ¼ tsp orange blossom water (added off-heat to preserve the volatiles).'
     time_min: 2
   - text: 'Chill the base in the fridge until cold (or shock in the freezer for 20 minutes). A cold base means the ice doesn''t melt instantly.'
     time_min: 20
-  - text: 'In a small cold bowl, whisk the heavy cream with powdered sugar, salt, and vanilla paste 45–60 seconds to soft peaks. The cream should hold its shape when you lift the whisk but still slump like wet paint, not stiff like shaving cream.'
+  - text: 'In a small cold bowl, whisk 120 ml / ½ cup heavy cream with 4 g / 1 tsp powdered sugar, a 0.3 g pinch kosher salt, and 2.5 g / ½ tsp vanilla bean paste 45–60 seconds to soft peaks. The cream should hold its shape when you lift the whisk but still slump like wet paint, not stiff like shaving cream.'
     time_min: 1
   - text: 'Fill glasses with ice. Pour the cold tea ¾ full. Spoon the salted whip over the top — it floats, then slowly cascades down through the tea.'
     time_min: 2

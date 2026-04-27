@@ -699,15 +699,26 @@ pre code { background: none; padding: 0; }
 
 .ing-list { list-style: none; padding: 0; margin: 0 0 1rem; }
 .ing-row {
+  /* Whole-row tap target: the row itself is clickable to toggle the
+     ingredient checkbox (see initRowTap in scripts/recipe.js). The cursor
+     and hover/active feedback below make the affordance discoverable —
+     critical when a cook is mid-recipe with messy hands and the row is
+     a much bigger target than the checkbox alone. */
   display: grid;
   grid-template-columns: 24px 110px minmax(0, 1fr);
   gap: .65rem;
   align-items: baseline;
-  padding: .55rem .25rem;
+  padding: .55rem .5rem;
   border-bottom: 1px solid var(--rule-soft);
   font-size: 15px;
-  transition: opacity 200ms;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: opacity 200ms, background 120ms;
 }
+.ing-row:hover { background: color-mix(in oklab, var(--bg-soft) 65%, transparent); }
+.ing-row:active { background: var(--accent-soft); }
+.ing-row a, .ing-row label, .ing-row input { cursor: auto; }
+.ing-row a { cursor: pointer; }
 .ing-row-done { opacity: 0.45; }
 .ing-row-done .ing-name, .ing-row-done .ing-qty {
   text-decoration: line-through;
@@ -1769,54 +1780,74 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
   transition: width 320ms cubic-bezier(.32,.72,.32,1.0);
 }
 .cb-row {
+  /* 5 controls: prev | mise | counter | next | done. Counter takes the
+     flexible center column so prev/mise hug the left and next/done hug the
+     right. Each button is a real touch target — 56 px tall (mobile-first
+     accessibility guideline). */
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto auto 1fr auto auto;
   align-items: center; gap: var(--s-3);
   padding: var(--s-3) var(--s-4);
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
   width: 100%;
 }
 .cb-btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
   background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 999px;
-  padding: 0 18px; font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+  padding: 0 20px; font-family: var(--font-sans); font-size: 15px; font-weight: 600;
   color: var(--ink); cursor: pointer;
   transition: border-color var(--d-fast), color var(--d-fast), background var(--d-fast), opacity var(--d-fast), transform 80ms;
-  min-height: 44px; min-width: 84px;
+  min-height: 56px; min-width: 96px;
 }
-.cb-btn svg { display: block; flex-shrink: 0; }
+.cb-btn svg { display: block; flex-shrink: 0; width: 18px; height: 18px; }
 .cb-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 .cb-btn:active:not(:disabled) { transform: scale(0.97); }
 .cb-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .cb-btn:disabled { opacity: .35; cursor: not-allowed; }
 .cb-prev { grid-column: 1; justify-self: start; }
+.cb-mise { grid-column: 2; justify-self: start; }
+.cb-mise[aria-pressed="true"] {
+  border-color: var(--accent); color: #fff; background: var(--accent);
+}
+.cb-mise[aria-pressed="true"]:hover:not(:disabled) {
+  background: var(--accent-deep); border-color: var(--accent-deep); color: #fff;
+}
 .cb-counter {
-  grid-column: 2;
+  grid-column: 3;
   justify-self: center;
   font-family: var(--font-mono); font-size: 14px; font-weight: 500;
   color: var(--ink-soft);
   min-width: 100px; text-align: center;
   font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
 }
-.cb-next { grid-column: 3; justify-self: end; }
+.cb-next { grid-column: 4; justify-self: end; }
 .cb-exit {
-  grid-column: 4;
+  grid-column: 5;
   background: var(--accent); color: #fff; border-color: var(--accent);
-  padding: 0 22px;
+  padding: 0 24px;
   box-shadow: 0 2px 8px rgba(165, 90, 26, 0.25);
 }
 .cb-exit:hover:not(:disabled) {
   background: var(--accent-deep); color: #fff; border-color: var(--accent-deep);
 }
-@media (max-width: 600px) {
-  .cb-row { padding: .55rem .65rem; gap: .45rem; grid-template-columns: auto 1fr auto auto; }
-  .cb-btn { padding: 0 12px; font-size: 13px; min-width: 56px; }
-  .cb-btn span { display: none; }
-  .cb-btn svg { width: 16px; height: 16px; }
-  .cb-exit { padding: 0 14px; }
-  .cb-exit span { display: inline; } /* keep the "Done" word visible */
-  .cb-counter { font-size: 12px; min-width: 60px; }
+@media (max-width: 720px) {
+  /* Tablet: keep all 5 controls on one row but trim padding. Buttons stay
+     56 px tall — the whole point of the redesign was making them easy to hit
+     with wet/dirty hands. */
+  .cb-row { padding: .65rem .75rem; gap: .55rem; }
+  .cb-btn { padding: 0 16px; font-size: 14px; min-width: 56px; }
+}
+@media (max-width: 480px) {
+  /* Phone: drop button labels (icons only) for prev/mise/next so the row
+     fits without cramping. Done keeps its label so the exit affordance
+     stays unmistakable. Counter gets a slightly smaller font. */
+  .cb-row { padding: .55rem .55rem; gap: .4rem; }
+  .cb-prev span, .cb-next span, .cb-mise span { display: none; }
+  .cb-btn { padding: 0 12px; min-width: 56px; }
+  .cb-btn svg { width: 22px; height: 22px; }
+  .cb-counter { font-size: 12px; min-width: 56px; }
+  .cb-exit { padding: 0 16px; }
 }
 
 /* Step done state in cook view — completed steps show a soft check tint to

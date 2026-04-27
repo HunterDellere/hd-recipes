@@ -158,6 +158,67 @@ for (const pageFull of walkPages(PAGES)) {
       }
     }
 
+    // Step measurements: every step that names an ingredient by its `item:`
+    // word should also include a measurement. Bake-in measurements (rather
+    // than expecting the cook to scroll back to the ingredients list) are a
+    // hand-soiled-on-the-counter accessibility issue. Authors who reference
+    // an ingredient generically ("season with salt", "add the butter")
+    // should specify "season with 6 g / 1 tsp salt", "add the 60 g / 4 tbsp
+    // butter".
+    //
+    // Heuristic: tokenize each step. If the step text mentions an ingredient
+    // (matched by the first word of its `item:` field, case-insensitive)
+    // AND does NOT contain any number followed by a unit (g/kg/ml/l/oz/lb/
+    // tsp/tbsp/cup) or unicode fraction + unit, flag it.
+    const MEAS_TOKEN_STEP = /(?:\d+(?:\.\d+)?|[¼½¾⅓⅔⅛⅜⅝⅞])\s*(?:g|kg|mg|ml|l|oz|lb|tsp|tbsp|cups?|tablespoons?|teaspoons?|grams?|kilo(?:gram)?s?|ounces?|pounds?|sticks?|cans?|bottles?|cloves?|pods?|stalks?|sprigs?|bunch(?:es)?|leaves?|pinch(?:es)?)\b/i;
+    // Drop preparation adjectives so "fresh ginger" → "ginger" and
+    // "kosher salt" → "salt". "Baking" stays because "baking powder" /
+    // "baking soda" need both words to land — we match by phrase below.
+    const PREP_ADJ = new Set(['fresh', 'ground', 'dried', 'whole', 'crushed', 'minced', 'diced', 'chopped', 'sliced', 'grated', 'cracked', 'large', 'small', 'medium', 'thick', 'thin', 'unsalted', 'salted', 'cold', 'cooked', 'raw', 'extra', 'finely', 'coarsely', 'kosher', 'sea', 'fine', 'light', 'dark', 'hot', 'warm', 'room-temperature']);
+    const stepIngTokens = [];
+    for (const ing of (fm.ingredients || [])) {
+      if (typeof ing.qty !== 'number') continue;  // "to taste" rows skip
+      if (ing.derive_from) continue;              // covered by parent pack
+      const item = (ing.item || '').toLowerCase();
+      const tokens = item.split(/[\s,()]+/).filter(Boolean);
+      const meaningful = tokens.filter(t => !PREP_ADJ.has(t));
+      if (!meaningful.length) continue;
+      // Match the 1-2 word phrase that uniquely identifies this ingredient.
+      // Prefer 2 words for multi-noun foods ("soy sauce", "baking powder")
+      // so a step talking about a generic "baking sheet" or "soy" doesn't
+      // false-positive.
+      const phrase = meaningful.slice(0, Math.min(2, meaningful.length)).join(' ');
+      if (phrase.length < 3) continue;
+      stepIngTokens.push({ phrase, item: ing.item, qty: ing.qty, unit: ing.unit });
+    }
+    // Piece-counted patterns: "12 eggs", "2 cinnamon sticks", "3 garlic
+    // cloves" — a number + 0–3 modifying words + the ingredient's phrase —
+    // also count as measurements. Without this the validator would flag
+    // "Lay the 12 large eggs in a pan" because "eggs" alone isn't in the
+    // standard unit list.
+    const phrasePiecePat = stepIngTokens.length
+      ? new RegExp(
+          `\\b\\d+(?:\\s+[\\w-]+){0,4}\\s+(?:` +
+          stepIngTokens.map(t => t.phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') +
+          `)\\b`, 'i')
+      : null;
+    for (let i = 0; i < (fm.steps || []).length; i++) {
+      const step = fm.steps[i];
+      const text = (step.text || '');
+      const lower = text.toLowerCase();
+      const hasMeas = MEAS_TOKEN_STEP.test(text) || (phrasePiecePat && phrasePiecePat.test(text));
+      if (hasMeas) continue;
+      const hit = stepIngTokens.find(t => {
+        const escaped = t.phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return new RegExp(`\\b${escaped}\\b`).test(lower);
+      });
+      if (hit) {
+        emit('WARN', contentRel,
+          `step ${i + 1} names "${hit.phrase}" but has no measurement — bake the qty into the step text`,
+          { fix: `Inline the quantity, e.g. "${hit.qty}${hit.unit ? ' ' + hit.unit : ''} ${hit.item}" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook.` });
+      }
+    }
+
     // Pack/derive accounting: every derive_from must reference an existing
     // pack id, and the sum of derived grams must not exceed the pack's total
     // grams (with a 5% tolerance for cling/loss). Catches math mistakes when

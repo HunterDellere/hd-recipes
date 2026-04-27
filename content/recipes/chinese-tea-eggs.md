@@ -78,15 +78,15 @@ ingredients:
     note: '(3 tbsp)'
 
 steps:
-  - text: 'Lay the eggs in a single layer in a Dutch oven and cover with cold water. Bring to a boil, then drop to a low simmer for 7 minutes — set yolks but not chalky.'
+  - text: 'Lay the 12 large eggs in a single layer in a Dutch oven and cover with cold water. Bring to a boil, then drop to a low simmer for 7 minutes — set yolks but not chalky.'
     time_min: 9
   - text: 'Transfer to an ice bath for 5 minutes. The egg contracts away from the shell, which is what makes the next step easy.'
     time_min: 5
   - text: 'Tap each shell all over with the back of a spoon until you see a fine network of cracks. Do not peel. The cracks are the channels for the brine.'
     time_min: 5
-  - text: 'In the same Dutch oven, combine water, both soy sauces, sugar, star anise, cinnamon sticks, Sichuan peppercorns, and tea leaves. Bring to a simmer.'
+  - text: 'In the same Dutch oven, combine 960 ml / 4 cups water, 120 g / ½ cup light soy sauce, 30 g / 2 tbsp dark soy sauce, 15 g / 1 tbsp rock sugar, 3 star anise pods, 2 cinnamon sticks, 2 g / 1 tsp Sichuan peppercorns, and 15 g / 3 tbsp loose black tea. Bring to a simmer.'
     time_min: 5
-  - text: 'Submerge the cracked eggs. Bring back to a bare simmer, then cut the heat. Cover and let steep at least 4 hours at room temperature, or (better) refrigerate and steep 24 hours. Longer steep, deeper marbling and flavor.'
+  - text: 'Submerge all 12 cracked eggs in the brine. Bring back to a bare simmer, then cut the heat. Cover and let steep at least 4 hours at room temperature, or (better) refrigerate and steep 24 hours. Longer steep, deeper marbling and flavor.'
     time_min: 1440
   - text: 'Peel one to check the marble pattern and the seasoning. If the flavor is faint, return the rest to the brine for another 4 hours.'
     time_min: 2

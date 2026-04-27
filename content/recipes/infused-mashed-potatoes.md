@@ -83,7 +83,7 @@ ingredients:
 steps:
   - text: 'Put the unpeeled potatoes in a large pot, cover with cold water by an inch, add the salt. Bring to a boil, then drop to a simmer. Cook 20–30 minutes; a knife should slide in with no resistance.'
     time_min: 25
-  - text: 'While the potatoes go, combine milk, butter, smashed garlic, thyme, rosemary, and bay in a small saucepan. Heat gently on low until the butter melts and steam rises. Do not boil. Cover, pull from heat, and steep 15 minutes. Strain out the solids before using.'
+  - text: 'While the potatoes go, combine 240 ml / 1 cup whole milk, 115 g / 1 stick unsalted butter, the 4 smashed garlic cloves, 2 thyme sprigs, 1 rosemary sprig, and 1 bay leaf in a small saucepan. Heat gently on low until the butter melts and steam rises. Do not boil. Cover, pull from heat, and steep 15 minutes. Strain out the solids before using.'
     time_min: 18
   - text: 'Drain the potatoes thoroughly. Return them to the empty hot pot over low heat. Shake gently 1–2 minutes until the skins look dry and chalky. Cut the heat. This is the steam-dry: the drier the potato cells, the more fat they''ll absorb.'
     time_min: 2
@@ -91,7 +91,7 @@ steps:
     time_min: 8
   - text: 'Pour the warm infused dairy over the riced potatoes in three additions. Fold gently with a spatula. Do not whip — high-speed shear ruptures the starch granules and turns the dish into glue.'
     time_min: 3
-  - text: 'Taste and season with salt and white pepper. Top with chives. Serve immediately.'
+  - text: 'Taste and season with kosher salt and the 1 g / ½ tsp white pepper. Top with the 6 g / 2 tbsp minced chives. Serve immediately.'
     time_min: 1
 
 substitutions:

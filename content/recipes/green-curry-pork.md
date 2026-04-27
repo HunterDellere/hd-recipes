@@ -151,13 +151,13 @@ ingredients:
     note: '(as base, ~3 cups cooked)'
 
 steps:
-  - text: 'Combine green curry paste, minced lemongrass, grated ginger, and shrimp paste in a small bowl. Work together with the back of a spoon until fully integrated. You are pre-augmenting the paste so the bloom step extracts everything at once.'
+  - text: 'Combine 48 g / 3 tbsp green curry paste, 15 g minced lemongrass, 5 g / 1 tsp grated ginger, and 6 g / 1 tsp shrimp paste in a small bowl. Work together with the back of a spoon until fully integrated. You are pre-augmenting the paste so the bloom step extracts everything at once.'
     time_min: 3
   - text: 'Open both cans of full-fat coconut milk without shaking. Skim the thick cream from the top of each (about ¾ cup / 180g total) into a wide skillet or wok. Reserve the remaining liquid coconut milk and a final 3 tbsp / 45g of cream separately for the off-heat finish.'
     time_min: 3
   - text: 'Set the skillet over medium-high heat. Cook the cream until the fat splits and the surface shimmers with clear oil, 3 to 4 minutes. This is the canonical "cracking the cream" step: you need the oil released before the paste goes in or it will steam rather than fry.'
     time_min: 4
-  - text: 'Add the augmented paste. Fry hard, pressing, folding, scraping the pan floor, for 3 to 4 full minutes until the paste darkens one shade and the surrounding oil runs green-tinged and clear. Season with a small pinch of kosher salt. Under-frying here is the single biggest reason home green curries taste flat.'
+  - text: 'Add the augmented paste. Fry hard, pressing, folding, scraping the pan floor, for 3 to 4 full minutes until the paste darkens one shade and the surrounding oil runs green-tinged and clear. Season with a 1 g pinch of kosher salt. Under-frying here is the single biggest reason home green curries taste flat.'
     time_min: 4
   - text: 'Pour in everything left in the cans (about 2¼ cups / 575g — the watery serum plus any cream you did not skim) and the fish sauce. Stir hard to lift the paste off the pan floor and integrate. Add the bruised makrut lime leaves and the galangal coin.'
     time_min: 1
@@ -165,7 +165,7 @@ steps:
     time_min: 10
   - text: 'Add the bamboo shoots and shimeji clusters. Slice the pork thin against the grain, season with ¼ tsp / 1.5g kosher salt, and temper by spooning hot curry liquid over it before adding to the pan. Tempering prevents thermal shock and tightening.'
     time_min: 2
-  - text: 'Add the pork. Cook 4 to 5 minutes to 145°F (63°C) internal, then pull from heat immediately. Pork tenderloin past 150°F goes tight and chalky.'
+  - text: 'Add all 450 g / 1 lb of the seasoned pork to the curry. Cook 4 to 5 minutes to 145°F (63°C) internal, then pull from heat immediately. Pork tenderloin past 150°F goes tight and chalky.'
     time_min: 5
   - text: 'Off heat, stir in the reserved 3 tbsp / 45g coconut cream to restore body and silk; the cream gels back the emulsion that the simmer thinned. Fold in most of the Thai basil; the residual heat will release its anise compounds without bruising the leaves.'
     time_min: 1

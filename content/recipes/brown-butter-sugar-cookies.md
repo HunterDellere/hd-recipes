@@ -73,14 +73,14 @@ ingredients:
     note: '(⅓ cup)'
 
 steps:
-  - text: 'Brown the butter in a light-colored saucepan over medium heat. It will foam, sizzle, then go quiet as the milk solids drop and turn amber. Pull when you smell toasted hazelnut, about 4 minutes. Pour into a large heatproof bowl and let cool 5 minutes.'
+  - text: 'Brown 115 g / 1 stick unsalted butter in a light-colored saucepan over medium heat. It will foam, sizzle, then go quiet as the milk solids drop and turn amber. Pull when you smell toasted hazelnut, about 4 minutes. Pour into a large heatproof bowl and let cool 5 minutes.'
     technique: 'brown-butter'
     time_min: 5
-  - text: 'Whisk the granulated and brown sugars into the warm butter for a full minute. The mixture looks gritty; that''s correct.'
+  - text: 'Whisk 150 g / ¾ cup granulated sugar and 55 g / ¼ cup packed light brown sugar into the warm butter for a full minute. The mixture looks gritty; that''s correct.'
     time_min: 2
-  - text: 'Whisk in the egg and vanilla. Beat hard for 30–60 seconds until glossy and ribbon-thick. This is what creates the crackle on top.'
+  - text: 'Whisk in 1 large egg and 5 g / 1 tsp vanilla bean paste. Beat hard for 30–60 seconds until glossy and ribbon-thick. This is what creates the crackle on top.'
     time_min: 1
-  - text: 'Stir in flour, baking soda, and salt with a spatula. Mix until the streaks just disappear.'
+  - text: 'Stir in 165 g / 1⅓ cups all-purpose flour, 3 g / ½ tsp baking soda, and 3 g / ½ tsp fine sea salt with a spatula. Mix until the streaks just disappear.'
     time_min: 1
   - text: 'Heat oven to 350°F (175°C). Scoop dough into 1.5-tbsp balls, roll generously in the reserved sugar, and space 2 inches apart on a parchment-lined sheet.'
     time_min: 5

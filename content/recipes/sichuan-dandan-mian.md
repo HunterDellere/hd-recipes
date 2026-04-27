@@ -101,19 +101,19 @@ ingredients:
     note: '(½ cup)'
 
 steps:
-  - text: 'Heat the oil in a Dutch oven over medium-high. Add the pork and salt. Sauté hard, breaking it up, until the pork is deep golden brown and the fat runs clear, about 8–10 minutes. If your pan is small, brown in two batches; crowding steams the pork instead of crisping it.'
+  - text: 'Heat 38 g / 2.5 tbsp avocado oil in a Dutch oven over medium-high. Add 680 g / 1.5 lb ground pork and 4 g / ¾ tsp fine sea salt. Sauté hard, breaking it up, until the pork is deep golden brown and the fat runs clear, about 8–10 minutes. If your pan is small, brown in two batches; crowding steams the pork instead of crisping it.'
     time_min: 10
-  - text: 'Stir in the ya cai and dark soy. Cook 3 minutes until the preserved greens crisp slightly at the edges.'
+  - text: 'Stir in 150 g / ¾ cup ya cai and 15 g / 1 tbsp dark soy sauce. Cook 3 minutes until the preserved greens crisp slightly at the edges.'
     time_min: 3
-  - text: 'Add the minced garlic and Sichuan peppercorn powder. Stir 45 seconds until fragrant. Pull the entire mixture out of the pan and set aside.'
+  - text: 'Add 6 minced garlic cloves and 6 g / 1 tbsp Sichuan peppercorn powder. Stir 45 seconds until fragrant. Pull the entire mixture out of the pan and set aside.'
     time_min: 1
-  - text: 'In a large heatproof bowl, whisk the sesame paste, chili oil, Chinkiang vinegar, and light soy. The sesame paste will fight you at first — keep at it.'
+  - text: 'In a large heatproof bowl, whisk 192 g / ¾ cup Chinese sesame paste, 180 g / ¾ cup chili oil with sediments, 90 g / 6 tbsp Chinkiang vinegar, and 45 g / 3 tbsp light soy sauce. The sesame paste will fight you at first — keep at it.'
     time_min: 3
-  - text: 'Wipe the Dutch oven, fill with salted water, bring to a boil. Cook the noodles per the package; for fresh wheat noodles, usually 2–3 minutes.'
+  - text: 'Wipe the Dutch oven, fill with salted water, bring to a boil. Cook 820 g / 1.8 lb fresh wheat noodles per the package; usually 2–3 minutes.'
     time_min: 8
-  - text: 'Just before draining, ladle ½ cup (120 ml) of the boiling noodle water into the sauce bowl and whisk hard. The starch turns the sauce into a creamy emulsion that clings to the noodles.'
+  - text: 'Just before draining, ladle ½ cup / 120 ml of the boiling noodle water into the sauce bowl and whisk hard. The starch turns the sauce into a creamy emulsion that clings to the noodles.'
     time_min: 1
-  - text: 'Drain the noodles and toss them straight into the sauce. If too thick, add more noodle water a tablespoon at a time. Top with the reserved pork and the crushed peanuts. Serve immediately.'
+  - text: 'Drain the noodles and toss them straight into the sauce. If too thick, add more noodle water 15 ml / 1 tbsp at a time. Top with the reserved pork and the 75 g / ½ cup crushed roasted peanuts. Serve immediately.'
     time_min: 2
 
 substitutions:
