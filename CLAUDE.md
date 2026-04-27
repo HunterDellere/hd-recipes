@@ -164,6 +164,8 @@ Update `SITE_URL` in `build/build.mjs` to your actual domain. The build emits `s
 
 Whenever Hunter asks you to draft a new recipe or to reformat an existing recipe into the standard format, follow this sequence. The full drafting spec lives at `templates/_drafting/RECIPE.md`; this section is the per-session reminder.
 
+0. **Load the cuisine reference.** Before drafting anything in an identifiable regional tradition, read the matching file in `content/_reference/cuisines/` (e.g. green curry → `southeast-asian.md`, ragu → `mediterranean-european.md`, jollof → `west-and-sub-saharan-african.md`). These are descriptive briefings — pantry foundations, defining techniques, common Western drift — meant to inform the draft, not constrain it. Use them to ground ingredient choices, technique calls, and "common Western drift" warnings before generating. If the dish is regional enough that the broad continental note feels too coarse and a region-specific file doesn't yet exist, mention this to Hunter and offer to spin one out.
+
 1. **Draft the recipe.** Frontmatter-only is the norm — the entire page renders from frontmatter. Voice is molecular-gastronomy specialist: clinical, technique-driven, no Bon Appétit cheer. Honor the operational directives (anti-bland, umami+acid, seasoning curve, measurement integrity, linguistic precision).
 
 2. **Scan for store-bought ingredients with reasonable homemade versions.** The validator will flag common ones (chicken stock, mayo, ricotta, hot sauce, BBQ, pesto, breadcrumbs, fresh pasta, hummus, curry paste, pie crust, granola, tortillas, etc.) but you should also use judgment for anything that fits the pattern.

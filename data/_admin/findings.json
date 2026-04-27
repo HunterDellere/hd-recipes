@@ -1,8 +1,8 @@
 {
-  "generated": "2026-04-27T18:50:24.675Z",
+  "generated": "2026-04-27T21:04:15.047Z",
   "summary": {
     "errors": 0,
-    "warnings": 8,
+    "warnings": 9,
     "info": 4
   },
   "findings": [
@@ -85,6 +85,13 @@
       "file": "content/explore/traverse.md",
       "msg": "no section-anchor elements — TOC scroll-spy disabled",
       "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/green-curry-pork.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: coconut milk",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
     }
   ]
 }

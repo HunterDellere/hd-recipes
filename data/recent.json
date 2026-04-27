@@ -72,6 +72,135 @@
     }
   },
   {
+    "path": "pages/recipes/green-curry-pork.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Green curry pork",
+    "desc": "A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shrimp paste. Chinese eggplant absorbs the curry liquor; bamboo and shimeji carry the texture. Two cans of full-fat coconut milk give the dish enough lipid phase to braise without diluting with stock.",
+    "tags": [
+      "weeknight",
+      "thai",
+      "pork",
+      "spicy",
+      "umami",
+      "stew"
+    ],
+    "status": "complete",
+    "_slug": "green-curry-pork",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 30,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-04-27",
+    "ingredients": [
+      {
+        "item": "green curry paste (store-bought)",
+        "optional": false
+      },
+      {
+        "item": "lemongrass, white part only, minced fine",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, grated",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "shrimp paste (kapi)",
+        "optional": false
+      },
+      {
+        "item": "coconut cream, skimmed from both cans",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "optional": false
+      },
+      {
+        "item": "remaining coconut milk, both cans",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "optional": false
+      },
+      {
+        "item": "makrut lime leaves, bruised",
+        "optional": false
+      },
+      {
+        "item": "fresh galangal, one coin",
+        "optional": false
+      },
+      {
+        "item": "Chinese eggplant, cut in 1-inch oblique chunks",
+        "optional": false
+      },
+      {
+        "item": "bamboo shoots, drained and rinsed",
+        "optional": false
+      },
+      {
+        "item": "shimeji mushrooms, trimmed into small clusters",
+        "optional": false
+      },
+      {
+        "item": "pork tenderloin, sliced thin against the grain",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "optional": false
+      },
+      {
+        "item": "reserved coconut cream, off heat",
+        "optional": false
+      },
+      {
+        "item": "Thai basil leaves",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or light brown sugar)",
+        "optional": false
+      },
+      {
+        "item": "fresh Thai chiles, sliced",
+        "optional": false
+      },
+      {
+        "item": "jasmine rice, cooked",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "wide-skillet",
+      "wok"
+    ],
+    "_card": {
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/recipes/homemade-panko-breadcrumbs.html",
     "type": "recipe",
     "category": "recipes",
@@ -897,71 +1026,6 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/dun-nai.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Vanilla dun nai (steamed milk custard)",
-    "desc": "Cantonese steamed milk custard with vanilla bean — silken, barely set, and finished in a Dutch oven using residual heat to avoid honeycomb.",
-    "tags": [
-      "custard",
-      "dessert",
-      "chinese",
-      "dairy"
-    ],
-    "status": "complete",
-    "_slug": "dun-nai",
-    "cuisine": "Chinese",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 18,
-      "total_min": 25,
-      "active_min": 10
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 25,
-      "diffLabel": "medium",
-      "timeLead": "25 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
     }
   }
 ]
