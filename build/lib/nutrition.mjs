@@ -137,26 +137,42 @@ export { sleep };
 /**
  * Compute total + per-serving nutrition for a recipe.
  * Resolves each ingredient to an FDC food (via ing.usda_fdc_id, or ingredient page's fdc_id).
- * Returns { perServing, total, missing: [...slugs without nutrition] }.
+ * Returns { perServing, total, missing: [{ name, slug, reason }] }.
+ *   reason ∈ 'no-fdc' | 'no-cache' | 'no-grams'
  */
 export function computeRecipeNutrition(recipe, ingredientPagesBySlug, cache) {
   const totals = {};
   const missing = [];
+  const addMissing = (ing, reason) => {
+    missing.push({ name: ing.item || ing.slug || 'ingredient', slug: ing.slug || null, reason });
+  };
   for (const ing of (recipe.ingredients || [])) {
     if (ing.optional) continue;
+
+    // Resolve ingredient page once; used for fdc_id, density, grams_per_unit.
+    const page = ing.slug
+      ? (ingredientPagesBySlug.get(ing.slug) || ingredientPagesBySlug.get(ing.slug.replace(/^ingredients\//, '')))
+      : null;
+    const pageFm = page && page.fm ? page.fm : null;
+
     let fdcId = ing.usda_fdc_id;
-    if (!fdcId && ing.slug) {
-      const page = ingredientPagesBySlug.get(ing.slug) || ingredientPagesBySlug.get(ing.slug.replace(/^ingredients\//, ''));
-      if (page && page.fm && page.fm.usda_fdc_id) fdcId = page.fm.usda_fdc_id;
-    }
+    if (!fdcId && pageFm && pageFm.usda_fdc_id) fdcId = pageFm.usda_fdc_id;
     if (!fdcId) {
-      if (ing.slug) missing.push(ing.slug);
+      // Only flag as "missing nutrition" when the recipe author intended this
+      // line to be mapped (a slug exists). Free-text rows like "water" /
+      // "kosher salt, to taste" are presumed deliberately unmapped.
+      if (ing.slug) addMissing(ing, 'no-fdc');
       continue;
     }
+
     const food = cache.foods[String(fdcId)];
-    if (!food) { missing.push(ing.slug || ing.item); continue; }
-    const grams = ingredientGrams(ing);
-    if (grams == null) { missing.push(ing.slug || ing.item); continue; }
+    if (!food) { addMissing(ing, 'no-cache'); continue; }
+
+    const density = ing.density_g_per_ml ?? (pageFm && pageFm.density_g_per_ml) ?? 1;
+    const gpu = ing.grams_per_unit ?? (pageFm && pageFm.grams_per_unit) ?? null;
+    const grams = ingredientGrams(ing, density, gpu);
+    if (grams == null) { addMissing(ing, 'no-grams'); continue; }
+
     const factor = grams / 100; // FDC nutrients are per 100g
     for (const [key, val] of Object.entries(food.nutrients || {})) {
       if (val == null) continue;

@@ -153,6 +153,28 @@
       });
     }
 
+    // Convert metric → metric (size-driven readability — show kg above 1000g, l above 1000ml)
+    function metricDisplay(qty, unit) {
+      if (unit === 'g' && qty >= 1000) return { qty: qty / 1000, unit: 'kg' };
+      if (unit === 'ml' && qty >= 1000) return { qty: qty / 1000, unit: 'l' };
+      return { qty, unit };
+    }
+    function fmtMetric(n, unit) {
+      if (n == null || isNaN(n)) return '';
+      if (unit === 'kg' || unit === 'l') return n < 10 ? n.toFixed(2).replace(/0+$/, '').replace(/\.$/, '') : n.toFixed(1).replace(/\.0$/, '');
+      // grams / ml — round to integer above 10, one decimal under
+      if (n >= 10) return String(Math.round(n));
+      return fmtQty(n);
+    }
+    // Active-unit formatter for the alt parenthetical: dispatches to the right
+    // formatter for the unit family.
+    function fmtActive(qty, unit) {
+      if (unit === 'g' || unit === 'kg' || unit === 'mg' || unit === 'ml' || unit === 'l') {
+        return fmtMetric(qty, unit);
+      }
+      return fmtImperial(qty, unit);
+    }
+
     function apply() {
       const servings = Math.max(1, parseInt(input?.value, 10) || baseServings);
       const factor = servings / baseServings;
@@ -161,21 +183,43 @@
         const origUnit = row.dataset.origUnit || row.dataset.unit || '';
         const qtyEl = row.querySelector('[data-ing-qty]');
         const unitEl = row.querySelector('[data-ing-unit]');
+        const altEl = row.querySelector('[data-ing-alt]');
         if (!qtyEl) return;
         if (!isFinite(orig)) {
           // Non-numeric quantities (e.g. "to taste") aren't scaled or converted
+          if (altEl) altEl.textContent = '';
           return;
         }
         const scaled = orig * factor;
+        const density = parseFloat(row.dataset.density);
+        const impPref = row.dataset.impPref || null;
+        let mainDisp, altDisp;
         if (units === 'imperial') {
-          const density = parseFloat(row.dataset.density);
-          const impPref = row.dataset.impPref || null;
-          const conv = toImperial(scaled, origUnit, isFinite(density) ? density : undefined, impPref);
-          qtyEl.textContent = fmtImperial(conv.qty, conv.unit);
-          if (unitEl) unitEl.textContent = conv.unit;
+          mainDisp = toImperial(scaled, origUnit, isFinite(density) ? density : undefined, impPref);
+          // Alt = metric form of the original metric value (rebased to kg/l for big quantities).
+          const m = metricDisplay(scaled, origUnit);
+          altDisp = m;
         } else {
-          qtyEl.textContent = fmtQty(scaled);
-          if (unitEl) unitEl.textContent = origUnit;
+          mainDisp = metricDisplay(scaled, origUnit);
+          // Alt = imperial form of the original metric value.
+          altDisp = toImperial(scaled, origUnit, isFinite(density) ? density : undefined, impPref);
+        }
+        // Main column
+        qtyEl.textContent = (units === 'imperial' ? fmtImperial : fmtMetric)(mainDisp.qty, mainDisp.unit);
+        if (unitEl) unitEl.textContent = mainDisp.unit;
+        // Alternate-unit parenthetical — empty when there's no meaningful conversion
+        if (altEl) {
+          const altQty = fmtActive(altDisp.qty, altDisp.unit);
+          // Only show the alt if the alt unit is *different* from the main unit
+          // (otherwise it's redundant noise — e.g. unit-less rows or when
+          // metric→imperial fell through to passthrough).
+          if (altQty && altDisp.unit && altDisp.unit !== mainDisp.unit) {
+            altEl.textContent = `(${altQty} ${altDisp.unit})`;
+            altEl.setAttribute('aria-hidden', 'false');
+          } else {
+            altEl.textContent = '';
+            altEl.setAttribute('aria-hidden', 'true');
+          }
         }
       });
     }
@@ -276,53 +320,77 @@
     let wakeLock = null;
     let active = false;
     let activeStepIndex = 0;
+    const completedSteps = new Set();
     const steps = Array.from(document.querySelectorAll('.recipe-steps .step-item'));
+    const ingredientsSection = document.querySelector('.recipe-ingredients');
+    const labelEl = toggle.querySelector('.rh-cook-label');
 
-    // Restore prior state on load
-    let stored = null;
-    try { stored = JSON.parse(localStorage.getItem(recipeKey) || 'null'); } catch {}
-    if (stored && stored.active) {
-      enter();
-      if (typeof stored.step === 'number' && stored.step >= 0 && stored.step < steps.length) {
-        setActiveStep(stored.step);
+    // Build a real button element for ingredients-toggle in cooks view rather
+    // than retrofitting the H2 with role=button. Inserted but kept hidden when
+    // not in cooks view via CSS.
+    let ingPanelBtn = null;
+    if (ingredientsSection) {
+      const anchor = document.querySelector('[id="ingredients"]');
+      ingPanelBtn = document.createElement('button');
+      ingPanelBtn.type = 'button';
+      ingPanelBtn.className = 'cv-ing-toggle';
+      ingPanelBtn.setAttribute('aria-expanded', 'false');
+      ingPanelBtn.setAttribute('aria-controls', 'cv-ingredients-panel');
+      ingPanelBtn.hidden = true;
+      ingPanelBtn.innerHTML = `
+        <span class="cv-ing-toggle-label">Mise en Place</span>
+        <span class="cv-ing-toggle-meta"><span class="cv-ing-count"></span><span class="cv-ing-toggle-chev" aria-hidden="true">▾</span></span>`;
+      ingredientsSection.id = 'cv-ingredients-panel';
+      if (anchor && anchor.parentNode) {
+        anchor.parentNode.insertBefore(ingPanelBtn, ingredientsSection);
+      } else {
+        ingredientsSection.parentNode.insertBefore(ingPanelBtn, ingredientsSection);
       }
+      const ingCountEl = ingPanelBtn.querySelector('.cv-ing-count');
+      const totalIng = ingredientsSection.querySelectorAll('.ing-row').length;
+      const updateIngCount = () => {
+        const checked = ingredientsSection.querySelectorAll('.ing-cb:checked').length;
+        ingCountEl.textContent = `${checked}/${totalIng} ready`;
+      };
+      updateIngCount();
+      ingredientsSection.addEventListener('change', e => {
+        if (e.target.classList && e.target.classList.contains('ing-cb')) updateIngCount();
+      });
+      const togglePanel = () => {
+        const expanded = ingredientsSection.dataset.expanded === '1';
+        if (expanded) {
+          delete ingredientsSection.dataset.expanded;
+          ingPanelBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          ingredientsSection.dataset.expanded = '1';
+          ingPanelBtn.setAttribute('aria-expanded', 'true');
+        }
+      };
+      ingPanelBtn.addEventListener('click', togglePanel);
     }
 
     toggle.addEventListener('click', () => {
       if (active) exit(); else enter();
     });
 
-    // Wire expand/collapse on the Mise-en-place section-head.
-    // While in cook's view, the H2 above the ingredients becomes a toggle
-    // (real button via the click handler — CSS styles it as one).
-    const ingredientsSection = document.querySelector('.recipe-ingredients');
-    const ingredientsHead = document.querySelector('[id="ingredients"] + .section-head h2');
-    if (ingredientsHead && ingredientsSection) {
-      ingredientsHead.setAttribute('role', 'button');
-      ingredientsHead.setAttribute('tabindex', '0');
-      ingredientsHead.setAttribute('aria-expanded', 'false');
-      const toggleIngredients = () => {
-        if (!active) return;
-        const expanded = ingredientsSection.dataset.expanded === '1';
-        if (expanded) {
-          ingredientsSection.removeAttribute('data-expanded');
-          ingredientsHead.setAttribute('aria-expanded', 'false');
-        } else {
-          ingredientsSection.dataset.expanded = '1';
-          ingredientsHead.setAttribute('aria-expanded', 'true');
-        }
-      };
-      ingredientsHead.addEventListener('click', toggleIngredients);
-      ingredientsHead.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleIngredients(); }
-      });
+    // Restore prior state on load — done after handlers are wired so the
+    // toggle is fully ready by the time enter() flips the state.
+    let stored = null;
+    try { stored = JSON.parse(localStorage.getItem(recipeKey) || 'null'); } catch {}
+    if (stored && stored.active) {
+      if (Array.isArray(stored.completed)) for (const i of stored.completed) completedSteps.add(i);
+      enter();
+      if (typeof stored.step === 'number' && stored.step >= 0 && stored.step < steps.length) {
+        setActiveStep(stored.step);
+      }
     }
 
     async function enter() {
       active = true;
       document.body.dataset.cooksView = 'on';
       toggle.setAttribute('aria-pressed', 'true');
-      toggle.querySelector('.rh-cook-label').textContent = "Exit cook's view";
+      if (labelEl) labelEl.textContent = "Exit cook's view";
+      if (ingPanelBtn) ingPanelBtn.hidden = false;
 
       // Wake lock — graceful no-op if unsupported or denied
       if ('wakeLock' in navigator) {
@@ -335,18 +403,17 @@
       // Re-acquire wake lock when tab becomes visible again
       document.addEventListener('visibilitychange', reacquireWakeLock);
 
-      // Build the floating exit/control bar if not present
+      // Build the floating exit/control bar
       buildCookBar();
-      // Wire per-step click → activate
+      // Wire per-step click → activate (idempotent)
       steps.forEach((s, i) => {
-        s.style.cursor = 'pointer';
         if (!s.dataset.cookBound) {
           s.addEventListener('click', () => setActiveStep(i));
           s.dataset.cookBound = '1';
         }
       });
-      // Activate first uncompleted step (or first step)
-      setActiveStep(activeStepIndex);
+      // Activate the stored step (or first), guarding against zero-step recipes.
+      if (steps.length > 0) setActiveStep(activeStepIndex);
       persist();
     }
 
@@ -354,10 +421,16 @@
       active = false;
       delete document.body.dataset.cooksView;
       toggle.setAttribute('aria-pressed', 'false');
-      toggle.querySelector('.rh-cook-label').textContent = "Cook's view";
+      if (labelEl) labelEl.textContent = "Cook's view";
+      if (ingPanelBtn) {
+        ingPanelBtn.hidden = true;
+        ingPanelBtn.setAttribute('aria-expanded', 'false');
+      }
+      if (ingredientsSection) delete ingredientsSection.dataset.expanded;
       if (wakeLock) { try { wakeLock.release(); } catch {} wakeLock = null; }
       document.removeEventListener('visibilitychange', reacquireWakeLock);
-      steps.forEach(s => s.classList.remove('step-active'));
+      steps.forEach(s => { s.classList.remove('step-active'); s.classList.remove('step-done'); });
+      completedSteps.clear();
       const bar = document.querySelector('.cook-bar');
       if (bar) bar.remove();
       try { localStorage.removeItem(recipeKey); } catch {}
@@ -370,29 +443,64 @@
       }
     }
 
+    function renderProgressBar() {
+      const bar = document.querySelector('.cb-progress-fill');
+      if (!bar || !steps.length) return;
+      const pct = Math.max(0, Math.min(100, ((activeStepIndex + 1) / steps.length) * 100));
+      bar.style.width = `${pct}%`;
+    }
+
     function setActiveStep(i) {
+      if (steps.length === 0) return;
+      // Mark the current step done before moving forward — gives visible
+      // progress as the cook advances.
+      if (i > activeStepIndex) completedSteps.add(activeStepIndex);
       activeStepIndex = Math.max(0, Math.min(i, steps.length - 1));
-      steps.forEach((s, idx) => s.classList.toggle('step-active', idx === activeStepIndex));
+      steps.forEach((s, idx) => {
+        s.classList.toggle('step-active', idx === activeStepIndex);
+        s.classList.toggle('step-done', completedSteps.has(idx) && idx !== activeStepIndex);
+      });
       const target = steps[activeStepIndex];
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
       const counter = document.querySelector('[data-cook-counter]');
-      if (counter) counter.textContent = `Step ${activeStepIndex + 1} / ${steps.length}`;
+      if (counter) counter.textContent = `Step ${activeStepIndex + 1} of ${steps.length}`;
+      // Disable prev/next at the boundaries so a tap doesn't feel dead.
+      const prev = document.querySelector('.cb-prev');
+      const next = document.querySelector('.cb-next');
+      if (prev) prev.disabled = activeStepIndex === 0;
+      if (next) next.disabled = activeStepIndex === steps.length - 1;
+      renderProgressBar();
       persist();
     }
 
     function persist() {
-      try { localStorage.setItem(recipeKey, JSON.stringify({ active, step: activeStepIndex })); } catch {}
+      try {
+        localStorage.setItem(recipeKey, JSON.stringify({
+          active, step: activeStepIndex, completed: [...completedSteps],
+        }));
+      } catch {}
     }
 
     function buildCookBar() {
       if (document.querySelector('.cook-bar')) return;
       const bar = document.createElement('div');
       bar.className = 'cook-bar';
+      bar.setAttribute('role', 'toolbar');
+      bar.setAttribute('aria-label', "Cook's view controls");
       bar.innerHTML = `
-        <button type="button" class="cb-btn cb-prev" aria-label="Previous step">‹ Prev</button>
-        <span class="cb-counter" data-cook-counter></span>
-        <button type="button" class="cb-btn cb-next" aria-label="Next step">Next ›</button>
-        <button type="button" class="cb-btn cb-exit" aria-label="Exit cook's view">Done</button>`;
+        <div class="cb-progress" aria-hidden="true"><div class="cb-progress-fill"></div></div>
+        <div class="cb-row">
+          <button type="button" class="cb-btn cb-prev" aria-label="Previous step">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+            <span>Prev</span>
+          </button>
+          <span class="cb-counter" data-cook-counter></span>
+          <button type="button" class="cb-btn cb-next" aria-label="Next step">
+            <span>Next</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+          <button type="button" class="cb-btn cb-exit" aria-label="Exit cook's view">Done</button>
+        </div>`;
       document.body.appendChild(bar);
       bar.querySelector('.cb-prev').addEventListener('click', () => setActiveStep(activeStepIndex - 1));
       bar.querySelector('.cb-next').addEventListener('click', () => setActiveStep(activeStepIndex + 1));

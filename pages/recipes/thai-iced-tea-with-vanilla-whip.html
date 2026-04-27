@@ -74,6 +74,7 @@
         <li><a href="#execution">Execution</a></li>
         <li><a href="#substitutions">Substitutions</a></li>
         <li><a href="#notes">Notes</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
         <li><a href="#in-hubs">Collections</a></li>
         <li><a href="#pairs-with">Pairs with</a></li>
       </ul>
@@ -101,28 +102,45 @@
     <div class="section-head"><h2>Mise en Place</h2></div>
     <div class="recipe-ingredients" data-base-servings="2">
       <div class="ing-controls">
-        <div class="ing-scale">
-          <span class="ing-scale-label">Servings</span>
-          <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
-          <input type="number" class="ing-scale-input" data-scale-input value="2" min="1" max="100">
-          <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+        <div class="ing-control ing-scale">
+          <span class="ing-control-label">Servings</span>
+          <div class="ing-scale-stepper">
+            <button type="button" class="ing-scale-btn" data-scale-step="-1" aria-label="Decrease servings">−</button>
+            <input type="number" class="ing-scale-input" data-scale-input value="2" min="1" max="100" aria-label="Number of servings">
+            <button type="button" class="ing-scale-btn" data-scale-step="1" aria-label="Increase servings">+</button>
+          </div>
         </div>
-        <div class="ing-units" role="group" aria-label="Display units">
-          <button type="button" class="ing-units-btn active" data-units="metric" aria-pressed="true">Metric</button>
-          <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">Imperial</button>
+        <div class="ing-control ing-units-control">
+          <span class="ing-control-label">Units</span>
+          <div class="ing-units" role="group" aria-label="Display units">
+            <span class="ing-units-thumb" aria-hidden="true"></span>
+            <button type="button" class="ing-units-btn" data-units="metric" aria-pressed="true">
+              <span class="ing-units-icon" aria-hidden="true">g</span>
+              <span class="ing-units-label">Metric</span>
+            </button>
+            <button type="button" class="ing-units-btn" data-units="imperial" aria-pressed="false">
+              <span class="ing-units-icon" aria-hidden="true">oz</span>
+              <span class="ing-units-label">Imperial</span>
+            </button>
+          </div>
         </div>
-        <button type="button" class="ing-shop-btn" data-shop-export>Copy shopping list</button>
+        <button type="button" class="ing-shop-btn" data-shop-export aria-label="Copy shopping list to clipboard">
+          <svg class="ing-shop-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5h6a2 2 0 0 1 2 2v2"/><path d="M5 9h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9 5a3 3 0 0 1 6 0"/>
+          </svg>
+          <span>Copy list</span>
+        </button>
       </div>
       <h3 class="ing-group-head">Spiced tea base</h3><ol class="ing-list">
         <li class="ing-row" data-qty="480" data-unit="ml" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>480</span> <span data-ing-unit>ml</span></span>
-          <span class="ing-name">filtered water<span class="ing-note"> — (2 cups)</span></span>
+          <span class="ing-name">filtered water <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="6" data-unit="g" data-density="0.3" data-imp-pref="tsp" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>6</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="ing-link" href="../ingredients/assam-tea.html">loose-leaf black tea (Assam or Ceylon)</a><span class="ing-note"> — (2 tbsp)</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/assam-tea.html">loose-leaf black tea (Assam or Ceylon)</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="3" data-unit="each" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
@@ -152,56 +170,56 @@
         <li class="ing-row" data-qty="1" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>1</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a><span class="ing-note"> — (pinch)</span></span>
+          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (pinch)</span></span>
         </li>
       </ol>
 <h3 class="ing-group-head">Sweetener and aromatics</h3><ol class="ing-list">
         <li class="ing-row" data-qty="40" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>40</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/sweetened-condensed-milk.html">sweetened condensed milk</a><span class="ing-note"> — (2 tbsp)</span></span>
+          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/sweetened-condensed-milk.html">sweetened condensed milk</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="13" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>13</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/dark-brown-sugar.html">dark brown sugar</a> (or turbinado)<span class="ing-note"> — (1 tbsp)</span></span>
+          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/dark-brown-sugar.html">dark brown sugar</a> (or turbinado) <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="2.5" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>2.5</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/vanilla-extract.html">vanilla extract</a><span class="ing-note"> — (½ tsp)</span></span>
+          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/vanilla-extract.html">vanilla extract</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="1" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>1</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">almond extract<span class="ing-note"> — (¼ tsp)</span></span>
+          <span class="ing-name">almond extract <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="1" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>1</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">orange blossom water<span class="ing-note"> — (¼ tsp)</span></span>
+          <span class="ing-name">orange blossom water <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
       </ol>
 <h3 class="ing-group-head">Salted vanilla whip</h3><ol class="ing-list">
         <li class="ing-row" data-qty="120" data-unit="ml" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>120</span> <span data-ing-unit>ml</span></span>
-          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/heavy-cream.html">heavy cream</a>, very cold<span class="ing-note"> — (½ cup)</span></span>
+          <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/heavy-cream.html">heavy cream</a>, very cold <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="4" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>4</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">powdered sugar<span class="ing-note"> — (1 tsp)</span></span>
+          <span class="ing-name">powdered sugar <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
         <li class="ing-row" data-qty="0.3" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>0.3</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name">kosher salt<span class="ing-note"> — (tiny pinch)</span></span>
+          <span class="ing-name">kosher salt <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (tiny pinch)</span></span>
         </li>
         <li class="ing-row" data-qty="2.5" data-unit="g" data-density="1.1" data-imp-pref="tsp" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>2.5</span> <span data-ing-unit>g</span></span>
-          <span class="ing-name"><a class="ing-link" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a><span class="ing-note"> — (½ tsp)</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
       </ol>
 <h3 class="ing-group-head">Service</h3><ol class="ing-list">
@@ -265,6 +283,16 @@
     <div class="section-head"><h2>Notes</h2></div>
     <div class="recipe-notes"><p>Brown sugar over white because the molasses shares phenolic flavor compounds with vanilla and toasted spice, which makes the tea taste deeper and less cloying than the same drink built on white sugar.</p><p>The tiny pinch of salt in the whip is doing real work. It cuts the cream''s fat and contrasts the sweet tea, hitting the same circuitry as salted caramel.</p><p>For an authentic frothy texture under the whip, &quot;pull&quot; the cooled base by pouring it back and forth between two pitchers a few times before serving over ice.
 </p></div>
+
+    
+    <span class="section-anchor" id="nutrition"></span>
+    <div class="section-head"><h2>Nutrition <span class="sh-sub">per serving</span></h2></div>
+    <div class="recipe-nutrition">
+      <div class="nut-col"><div class="nut-row"><span class="nut-label">Calories</span><span class="nut-val">6<span class="nut-unit"> kcal</span></span></div><div class="nut-row"><span class="nut-label">Protein</span><span class="nut-val">0.2<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fat</span><span class="nut-val">0.1<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Carbs</span><span class="nut-val">1.6<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Fiber</span><span class="nut-val">0.9<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sugar</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div><div class="nut-row"><span class="nut-label">Sat. fat</span><span class="nut-val">0<span class="nut-unit"> g</span></span></div></div>
+      <div class="nut-col"><div class="nut-row"><span class="nut-label">Sodium</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Potassium</span><span class="nut-val">17<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Calcium</span><span class="nut-val">20<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Iron</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin C</span><span class="nut-val">0<span class="nut-unit"> mg</span></span></div><div class="nut-row"><span class="nut-label">Vitamin A</span><span class="nut-val">7<span class="nut-unit"> IU</span></span></div></div>
+      <p class="nut-missing"><span class="nut-missing-icon" aria-hidden="true">⚠</span> Estimated — loose-leaf black tea (Assam or Ceylon), <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a> aren't mapped to USDA data yet.</p>
+      <p class="nut-source">Data: USDA FoodData Central</p>
+    </div>
 
     
     <span class="section-anchor" id="in-hubs"></span>
@@ -352,55 +380,85 @@
   
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related</h2></div>
-    <div class="related-cards">
-      <a class="related-card" href="thai-iced-tea-no-dye.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Thai iced tea (no dye)</span>
-        <span class="rl-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, low astrin</span>
-        <span class="rl-reason rl-reason-shared-ings">shares assam tea, star anise</span>
-      </a>
-      <a class="related-card" href="../ingredients/assam-tea.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Assam tea</span>
-        <span class="rl-desc">Robust, malty black tea from northeast India. The default base for masala chai and what gives English Breakfas</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/cinnamon-stick.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Cinnamon stick</span>
-        <span class="rl-desc">Dried inner bark of Cinnamomum trees. Two main types: hot, sharp Cassia (the supermarket default) and floral, </span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/star-anise.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Star anise</span>
-        <span class="rl-desc">The dried fruit of Illicium verum, eight-pointed and intensely licorice-aromatic. The soul of Chinese five-spi</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="../ingredients/vanilla-bean-paste.html" data-category="ingredients">
-        <span class="rl-cat">ingredients</span>
-        <span class="rl-title">Vanilla bean paste</span>
-        <span class="rl-desc">Vanilla extract suspended in a syrup with the scraped seeds of the pod. Same flavor as a whole bean, a fractio</span>
-        <span class="rl-reason rl-reason-uses">in this recipe</span>
-      </a>
-      <a class="related-card" href="house-blend-chai.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">House blend chai</span>
-        <span class="rl-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.</span>
-        <span class="rl-reason rl-reason-shared-ings">shares assam tea, cinnamon stick</span>
-      </a>
-      <a class="related-card" href="chai-pumpkin-cupcakes.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Chai pumpkin cupcakes</span>
-        <span class="rl-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream c</span>
-        <span class="rl-reason rl-reason-shared-ings">shares assam tea, vanilla bean paste</span>
-      </a>
-      <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
-        <span class="rl-cat">recipes</span>
-        <span class="rl-title">Chinese tea eggs</span>
-        <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
-        <span class="rl-reason rl-reason-shared-ings">shares star anise, cinnamon stick</span>
-      </a>
+    <div class="related-groups">
+
+      <div class="related-group" data-related-group="recipes">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="recipes" aria-hidden="true"></span>
+          Recipes
+          <span class="related-group-count">5</span>
+        </h3>
+        <div class="related-cards related-cards--recipes">
+        <a class="related-card" href="thai-iced-tea-no-dye.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Thai iced tea (no dye)</span>
+          <span class="rl-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, low astrin</span>
+          <span class="rl-reason rl-reason-shared-ings">shares assam tea, star anise</span>
+        </a>
+        <a class="related-card" href="house-blend-chai.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">House blend chai</span>
+          <span class="rl-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.</span>
+          <span class="rl-reason rl-reason-shared-ings">shares assam tea, cinnamon stick</span>
+        </a>
+        <a class="related-card" href="chai-pumpkin-cupcakes.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Chai pumpkin cupcakes</span>
+          <span class="rl-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream c</span>
+          <span class="rl-reason rl-reason-shared-ings">shares assam tea, vanilla bean paste</span>
+        </a>
+        <a class="related-card" href="chinese-tea-eggs.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Chinese tea eggs</span>
+          <span class="rl-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern </span>
+          <span class="rl-reason rl-reason-shared-ings">shares star anise, cinnamon stick</span>
+        </a>
+        <a class="related-card" href="sichuan-chili-oil.html" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">Sichuan chili oil</span>
+          <span class="rl-desc">Aromatics infused into hot oil at three precise temperatures, then poured over coarse chili flakes. The crackl</span>
+          <span class="rl-reason rl-reason-shared-ings">shares star anise, cinnamon stick</span>
+        </a>
+        </div>
+      </div>
+
+      <div class="related-group" data-related-group="ingredients">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="ingredients" aria-hidden="true"></span>
+          Ingredients
+          <span class="related-group-count">2</span>
+        </h3>
+        <div class="related-cards related-cards--ingredients">
+        <a class="related-card" href="../ingredients/assam-tea.html" data-category="ingredients">
+          <span class="rl-cat">ingredients</span>
+          <span class="rl-title">Assam tea</span>
+          <span class="rl-desc">Robust, malty black tea from northeast India. The default base for masala chai and what gives English Breakfas</span>
+          <span class="rl-reason rl-reason-uses">in this recipe</span>
+        </a>
+        <a class="related-card" href="../ingredients/cinnamon-stick.html" data-category="ingredients">
+          <span class="rl-cat">ingredients</span>
+          <span class="rl-title">Cinnamon stick</span>
+          <span class="rl-desc">Dried inner bark of Cinnamomum trees. Two main types: hot, sharp Cassia (the supermarket default) and floral, </span>
+          <span class="rl-reason rl-reason-uses">in this recipe</span>
+        </a>
+        </div>
+      </div>
+
+      <div class="related-group" data-related-group="techniques">
+        <h3 class="related-group-head">
+          <span class="related-group-dot" data-category="techniques" aria-hidden="true"></span>
+          Techniques
+          <span class="related-group-count">1</span>
+        </h3>
+        <div class="related-cards related-cards--techniques">
+        <a class="related-card" href="../techniques/steeping-tea.html" data-category="techniques">
+          <span class="rl-cat">techniques</span>
+          <span class="rl-title">Steeping tea</span>
+          <span class="rl-desc">Extract polyphenols, theanine, and tannins from tea leaves on a time-and-temperature curve that the leaf grade</span>
+          <span class="rl-reason rl-reason-tag">tea</span>
+        </a>
+        </div>
+      </div>
     </div><nav class="adj-nav"><a class="adj-nav-link" href="thai-iced-tea-no-dye.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Thai iced tea (no dye)</span>

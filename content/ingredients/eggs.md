@@ -10,6 +10,7 @@ tags: ['egg', 'dairy']
 updated: '2026-04-26'
 
 usda_fdc_id: 748967
+grams_per_unit: 50
 
 about: |
   A large US egg is around 50g out of shell: 30g white (mostly water plus ovalbumin), 18g yolk (lecithin, fat, more protein), 6g shell.

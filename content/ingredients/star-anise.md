@@ -10,6 +10,7 @@ tags: ['spice', 'aromatic']
 updated: '2026-04-26'
 
 usda_fdc_id: 171316
+grams_per_unit: 0.5
 
 about: |
   Star anise gets its flavor from anethole — the same compound that drives anise seed, fennel, and licorice. There''s a lot of it in star anise (around 80–90% of the essential oil), which is why a single pod perfumes a whole pot.
