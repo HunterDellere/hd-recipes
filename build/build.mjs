@@ -24,7 +24,7 @@ import { buildLinkMap, autoLinkBody, buildPageFooter, renderSourcesHtml, ensureM
 import { renderOgSvg, categoryFaviconDataUri } from './lib/og.mjs';
 import {
   renderRecipeBody, renderIngredientBody, renderTechniqueBody, renderHubBody,
-  renderEquipmentBody, renderCuisineBody,
+  renderEquipmentBody, renderCuisineBody, renderTagBody,
 } from './lib/recipe-render.mjs';
 import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
@@ -352,11 +352,66 @@ function roundNutritionWrap(n) {
   return { perServing: roundNutrition(n.perServing), total: roundNutrition(n.total), missing: n.missing };
 }
 
+// ── Tag pages (virtual) ───────────────────────────────────────────────
+// One page per tag that has at least one complete entry. These are not
+// content/<...>.md sources — they're indices generated from the union of
+// all entry tags[]. Lives at pages/tags/<slug>.html.
+const tagToEntries = new Map(); // tag_slug → entries[]
+for (const e of entries) {
+  if (e.status !== 'complete') continue;
+  for (const t of (e.tags || [])) {
+    if (!tagToEntries.has(t)) tagToEntries.set(t, []);
+    tagToEntries.get(t).push(e);
+  }
+}
+
+// Read the canonical tag list (for label lookups; tags not in the schema still
+// render — we just fall back to slug-as-label).
+let tagSchema = [];
+try { tagSchema = JSON.parse(readFileSync(join(ROOT, 'content/_schema/tags.json'), 'utf8')); } catch {}
+const tagLabel = new Map(tagSchema.map(t => [t.slug, t.label]));
+
+const tagsDir = join(ROOT, 'pages', 'tags');
+mkdirSync(tagsDir, { recursive: true });
+const tagPagePaths = new Set();
+const CATEGORY_ORDER = ['recipes','ingredients','techniques','equipment','cuisines','hubs'];
+for (const [tagSlug, tagEntries] of tagToEntries.entries()) {
+  // Sort + group by category
+  const grouped = {};
+  for (const cat of CATEGORY_ORDER) grouped[cat] = [];
+  for (const e of tagEntries) {
+    if (grouped[e.category]) grouped[e.category].push(e);
+  }
+  for (const cat of CATEGORY_ORDER) {
+    grouped[cat].sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+  }
+
+  const label = tagLabel.get(tagSlug) || tagSlug;
+  const synthFm = {
+    type: 'tag',
+    category: 'tags',
+    title: `#${tagSlug}`,
+    pageTitle: `#${tagSlug}`,
+    desc: `${tagEntries.length} entries tagged ${label}.`,
+    metaDesc: `Every entry tagged ${label} across hd-recipes — recipes, ingredients, techniques, and more.`,
+    status: 'complete',
+    updated: new Date().toISOString().slice(0, 10),
+    tags: [tagSlug],
+  };
+  const currentPath = `pages/tags/${tagSlug}.html`;
+  let pageBody = renderTagBody(tagSlug, label, grouped, currentPath);
+  pageBody = buildPageFooter(pageBody, synthFm, tagSlug, 'tags');
+  pageBody = ensureMainContentId(pageBody);
+  const html = renderPage(synthFm, pageBody, tagSlug, 'tags');
+  writeFileSync(join(tagsDir, `${tagSlug}.html`), html, 'utf8');
+  tagPagePaths.add(currentPath);
+}
+
 // Strip _fm before serializing
 for (const e of entries) { delete e._fm; delete e.fm; }
 
-// Prune orphan pages
-const expectedPaths = new Set(entries.map(e => e.path));
+// Prune orphan pages — but include tag pages in expectedPaths so they survive.
+const expectedPaths = new Set([...entries.map(e => e.path), ...tagPagePaths]);
 let pruned = 0;
 const pagesRoot = join(ROOT, 'pages');
 const PRUNE_SKIP = new Set(['_admin']);

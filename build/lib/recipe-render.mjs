@@ -381,6 +381,58 @@ export function renderEquipmentBody(fm, slug, category, opts = {}) {
 </div>`;
 }
 
+/**
+ * Render a tag landing page — every entry that carries this tag, grouped by category.
+ * Tag pages are virtual: they have no content/<...>.md source, just a slug.
+ * Called from build.mjs with a synthetic fm-like object: { title, slug, entries: [...] }.
+ */
+export function renderTagBody(tagSlug, tagLabel, entriesByCategory, currentPath) {
+  const total = Object.values(entriesByCategory).reduce((n, list) => n + list.length, 0);
+  const sidebar = `
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
+      <span class="toc-topic">#${escapeHtml(tagSlug)}</span>
+      <div class="toc-divider"></div>
+      <span class="toc-label">By category</span>
+      <ul class="toc-list">
+        ${Object.entries(entriesByCategory)
+          .filter(([, list]) => list.length > 0)
+          .map(([cat, list]) => `<li><a href="#cat-${escapeHtml(cat)}">${escapeHtml(cat)} <span style="color:var(--ink-faint);">${list.length}</span></a></li>`)
+          .join('\n        ')}
+      </ul>
+    </aside>`;
+
+  const sections = [];
+  sections.push(`
+    <header class="topic-hero">
+      <span class="topic-hero-eyebrow">Tag</span>
+      <h1 class="topic-hero-title">#${escapeHtml(tagSlug)}</h1>
+      <p class="topic-hero-desc">${total} ${total === 1 ? 'entry' : 'entries'} tagged <strong>${escapeHtml(tagLabel)}</strong> across the library.</p>
+    </header>`);
+
+  for (const [cat, list] of Object.entries(entriesByCategory)) {
+    if (!list.length) continue;
+    const cards = list.map(e => `
+        <a class="related-card" href="${escapeHtml(relPath(currentPath, e.path))}" data-category="${escapeHtml(e.category)}">
+          <span class="rl-cat">${escapeHtml(e.category)}</span>
+          <span class="rl-title">${escapeHtml(e.title)}</span>
+          ${e.desc ? `<span class="rl-desc">${escapeHtml(e.desc.slice(0, 110))}</span>` : ''}
+        </a>`).join('');
+    sections.push(`
+    <span class="section-anchor" id="cat-${escapeHtml(cat)}"></span>
+    <div class="section-head"><h2>${escapeHtml(cat)} <span class="sh-sub">${list.length}</span></h2></div>
+    <div class="related-cards">${cards}
+    </div>`);
+  }
+
+  return `
+<div class="shell">
+  ${sidebar}
+  <main class="main" id="main-content">
+    ${sections.join('\n\n    ')}
+  </main>
+</div>`;
+}
+
 export function renderCuisineBody(fm, slug, category, opts = {}) {
   // Fallback renderer for cuisine pages with no authored body.
   // Cuisines with rich authored bodies (like italian.md) keep them and bypass this renderer.

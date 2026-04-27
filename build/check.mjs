@@ -179,6 +179,8 @@ for (const slug of contentSlugs) {
 }
 for (const slug of pageSlugs) {
   if (slug.startsWith('_')) continue;
+  // pages/tags/<slug>.html are generated indices, not content-backed
+  if (slug.startsWith('tags/')) continue;
   if (!contentSlugs.has(slug)) fail(join(pagesDir, slug + '.html'), `orphan page: no content/${slug}.md`);
 }
 

@@ -330,12 +330,18 @@ export function renderFamilyContent(family, entries, fromPath) {
   let filterBar = '';
   if (family === 'cook') {
     const recipes = byCategory.get('recipes') || [];
-    const cuisines = new Set(), courses = new Set(), diets = new Set();
+    const cuisines = new Set(), courses = new Set(), diets = new Set(), tags = new Set();
     for (const r of recipes) {
       if (r.cuisine) cuisines.add(r.cuisine);
       if (r.course) courses.add(r.course);
       for (const d of (r.diet || [])) diets.add(d);
+      for (const t of (r.tags || [])) tags.add(t);
     }
+    // Drop tag values that just duplicate cuisine names (e.g. "italian", "chinese"),
+    // since cuisine has its own facet. Keep dish-type/method/attribute tags.
+    const cuisineLower = new Set([...cuisines].map(c => String(c).toLowerCase()));
+    const dishTags = [...tags].filter(t => !cuisineLower.has(t)).sort();
+
     filterBar = `
     <div class="filter-bar" role="toolbar" aria-label="Filter recipes">
       <div class="filter-group">
@@ -346,6 +352,10 @@ export function renderFamilyContent(family, entries, fromPath) {
         <span class="filter-label">Course</span>
         ${[...courses].sort().map(c => `<button type="button" class="filter-pill" data-filter-course="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
       </div>
+      ${dishTags.length ? `<div class="filter-group">
+        <span class="filter-label">Tag</span>
+        ${dishTags.map(t => `<button type="button" class="filter-pill" data-filter-tag="${escapeHtml(t)}">${escapeHtml(t)}</button>`).join('')}
+      </div>` : ''}
       ${diets.size ? `<div class="filter-group">
         <span class="filter-label">Diet</span>
         ${[...diets].sort().map(d => `<button type="button" class="filter-pill" data-filter-diet="${escapeHtml(d)}">${escapeHtml(d)}</button>`).join('')}
@@ -368,13 +378,52 @@ export function renderFamilyContent(family, entries, fromPath) {
 
   // Augment entry cards with filter data attributes for 'cook'
   const augment = (e) => family === 'cook'
-    ? `data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${(e.time && e.time.total_min) || ''}"`
+    ? `data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${(e.time && e.time.total_min) || ''}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
     : '';
+
+  // Pantry: enable A–Z anchor strip when a category has ≥20 entries.
+  // The strip lets users jump to a letter when scrolling becomes painful.
+  const ALPHA_THRESHOLD = 20;
 
   const sections = memberKeys.map(catKey => {
     const list = byCategory.get(catKey) || [];
-    const cardsHtml = list.map(e => entryCard(e, fromPath, { extraData: augment(e) })).join('');
     const meta = categoryMeta()[catKey] || { label: catKey, blurb: '' };
+
+    // Alphabetic anchor strip + per-letter grouping for large list-style categories
+    // (ingredients today, equipment if it grows). Skip for cook (recipes need
+    // filterable card grid, not alphabetic grouping).
+    const useAlpha = family !== 'cook' && list.length >= ALPHA_THRESHOLD;
+
+    let body;
+    if (useAlpha) {
+      const byLetter = new Map();
+      for (const e of list) {
+        const letter = ((e.title || '').trim()[0] || '#').toUpperCase();
+        const k = /[A-Z]/.test(letter) ? letter : '#';
+        if (!byLetter.has(k)) byLetter.set(k, []);
+        byLetter.get(k).push(e);
+      }
+      const letters = [...byLetter.keys()].sort();
+      const stripLinks = letters.map(L =>
+        `<a class="alpha-link" href="#cat-${escapeHtml(catKey)}-${escapeHtml(L.toLowerCase())}">${escapeHtml(L)}</a>`).join('');
+      const groups = letters.map(L => {
+        const cardsHtml = byLetter.get(L).map(e => entryCard(e, fromPath, { extraData: augment(e) })).join('');
+        return `
+      <div class="alpha-group" id="cat-${escapeHtml(catKey)}-${escapeHtml(L.toLowerCase())}">
+        <h3 class="alpha-head">${escapeHtml(L)}</h3>
+        <div class="card-grid" data-grid>${cardsHtml}\n        </div>
+      </div>`;
+      }).join('\n');
+      body = `
+      <nav class="alpha-strip" aria-label="Jump to letter">${stripLinks}</nav>
+      ${groups}`;
+    } else {
+      const cardsHtml = list.map(e => entryCard(e, fromPath, { extraData: augment(e) })).join('');
+      body = list.length
+        ? `<div class="card-grid" data-grid>${cardsHtml}\n      </div>`
+        : `<p class="fam-cat-empty">No entries yet.</p>`;
+    }
+
     return `
     <section class="fam-cat" id="cat-${escapeHtml(catKey)}" data-category="${escapeHtml(catKey)}">
       <div class="fam-cat-head">
@@ -382,11 +431,44 @@ export function renderFamilyContent(family, entries, fromPath) {
         <span class="fam-cat-count">${list.length} ${list.length === 1 ? 'entry' : 'entries'}</span>
       </div>
       ${meta.blurb ? `<p class="fam-cat-blurb">${escapeHtml(meta.blurb)}</p>` : ''}
-      ${list.length ? `<div class="card-grid" data-grid>${cardsHtml}\n      </div>` : `<p class="fam-cat-empty">No entries yet.</p>`}
+      ${body}
     </section>`;
   }).join('\n');
 
-  return `${intro}\n${filterBar}\n${sections}`;
+  // Traverse family: append a virtual Tags section listing every tag with ≥1 entry,
+  // each linking to its generated /pages/tags/<slug>.html landing page.
+  let tagsSection = '';
+  if (family === 'traverse') {
+    const tagCount = new Map();
+    for (const e of entries) {
+      if (e.status !== 'complete') continue;
+      for (const t of (e.tags || [])) tagCount.set(t, (tagCount.get(t) || 0) + 1);
+    }
+    const tagList = [...tagCount.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    if (tagList.length) {
+      const tiles = tagList.map(([slug, n]) => {
+        const href = relPath(fromPath, `pages/tags/${slug}.html`);
+        return `
+        <a class="tag-tile" href="${escapeHtml(href)}">
+          <span class="tt-label">#${escapeHtml(slug)}</span>
+          <span class="tt-count">${n}</span>
+        </a>`;
+      }).join('');
+      tagsSection = `
+    <section class="fam-cat" id="cat-tags" data-category="tags">
+      <div class="fam-cat-head">
+        <h2 class="fam-cat-title">Tags</h2>
+        <span class="fam-cat-count">${tagList.length} active</span>
+      </div>
+      <p class="fam-cat-blurb">Attribute slices across the library. Click a tag to see every entry that carries it.</p>
+      <div class="tag-tile-grid">${tiles}
+      </div>
+    </section>`;
+    }
+  }
+
+  return `${intro}\n${filterBar}\n${sections}\n${tagsSection}`;
 }
 
 export function renderFamilyCrosslinks(family, fromPath) {

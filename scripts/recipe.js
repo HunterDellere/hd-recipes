@@ -132,7 +132,9 @@
     const status = document.querySelector('[data-filter-status]');
     if (!grid) return;
     const cards = Array.from(grid.querySelectorAll('[data-card]'));
-    const state = { cuisine: null, course: null, diet: null, time: null, difficulty: null };
+    // tag is multi-select (Set): a card must match ALL selected tags.
+    // Other facets remain single-select.
+    const state = { cuisine: null, course: null, diet: null, time: null, difficulty: null, tags: new Set() };
 
     function apply() {
       let visible = 0;
@@ -142,7 +144,9 @@
         const matchDiet = !state.diet || (card.dataset.diet || '').split('|').includes(state.diet);
         const matchDiff = !state.difficulty || card.dataset.difficulty === state.difficulty;
         const matchTime = !state.time || (card.dataset.time && parseInt(card.dataset.time, 10) <= parseInt(state.time, 10));
-        const show = matchCuisine && matchCourse && matchDiet && matchDiff && matchTime;
+        const cardTags = (card.dataset.tags || '').split('|').filter(Boolean);
+        const matchTags = state.tags.size === 0 || [...state.tags].every(t => cardTags.includes(t));
+        const show = matchCuisine && matchCourse && matchDiet && matchDiff && matchTime && matchTags;
         card.style.display = show ? '' : 'none';
         if (show) visible++;
       }
@@ -152,6 +156,7 @@
       if (state.diet) filters.push(state.diet);
       if (state.difficulty) filters.push(state.difficulty);
       if (state.time) filters.push(`≤ ${state.time} min`);
+      for (const t of state.tags) filters.push(`#${t}`);
       if (status) {
         status.textContent = filters.length
           ? `${visible} ${visible === 1 ? 'recipe' : 'recipes'} matching ${filters.join(' · ')}`
@@ -163,8 +168,17 @@
       const btn = e.target.closest('.filter-pill');
       if (!btn) return;
       if (btn.hasAttribute('data-filter-clear')) {
-        for (const k of Object.keys(state)) state[k] = null;
+        state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
+        state.tags.clear();
         bar.querySelectorAll('.filter-pill.active').forEach(b => b.classList.remove('active'));
+        apply();
+        return;
+      }
+      // Tag is multi-select: toggle independently, don't clear siblings.
+      if (btn.dataset.filterTag !== undefined) {
+        const tag = btn.dataset.filterTag;
+        if (state.tags.has(tag)) { state.tags.delete(tag); btn.classList.remove('active'); }
+        else { state.tags.add(tag); btn.classList.add('active'); }
         apply();
         return;
       }
