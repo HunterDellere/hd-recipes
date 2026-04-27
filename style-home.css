@@ -280,10 +280,22 @@
 /* card-grid + entry-card live in style.css now (used on family pages too) */
 
 /* ── families grid (homepage + explore index) ────────── */
+/* Families grid — explicit breakpoints to avoid orphan cards (3 + 1 row).
+   With 4 family cards we want: 1 col on phones, 2 col on tablets and mid
+   desktops, 4 col only when there's genuine room for 4 wide cards. The
+   minmax(280px) auto-fit was producing a 3+1 orphan in the 880–1180px
+   range. Using max-width media queries gives us full control over the
+   transitions without relying on auto-fit math. */
 .families-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.25rem;
   margin-bottom: 1.5rem;
+}
+@media (max-width: 1180px) {
+  .families-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .families-grid { grid-template-columns: 1fr; gap: 1rem; }
 }
 .family-card {
   display: flex; flex-direction: column;
@@ -394,6 +406,6 @@
   .home-cta-row { flex-direction: column; align-items: stretch; max-width: 280px; margin: 0 auto 1.5rem; }
   .ff-card { flex-direction: column; align-items: stretch; padding: 1.25rem 1.5rem; }
   .ff-arrow { display: none; }
-  .families-grid { grid-template-columns: 1fr; }
+  /* .families-grid handled by its own breakpoints (560/1180) above */
   .home-section-h { font-size: 1.4rem; }
 }
