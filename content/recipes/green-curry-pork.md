@@ -26,6 +26,17 @@ source:
   note: 'Augments store-bought paste rather than pounding from scratch; doubles the coconut milk to extend the lipid phase for the eggplant braise.'
 
 ingredients:
+  # Buying unit: two 400 ml cans of full-fat coconut milk. Inherits density
+  # 1.00 g/ml and pack size 13.5 oz / 400 ml from the ingredient page. The
+  # cream/remainder split happens in the per-phase mise breakdown below as
+  # derived rows, which the build skips for nutrition + shopping list.
+  - id: 'coconut-milk'
+    item: 'full-fat coconut milk'
+    slug: 'coconut-milk'
+    qty: 800
+    unit: 'ml'
+    note: 'Aroy-D or Chaokoh — two-ingredient brands only (coconut, water).'
+
   - group: 'Phase 1, augmented paste bloom'
     item: 'green curry paste (store-bought)'
     qty: 48
@@ -48,10 +59,11 @@ ingredients:
     unit: 'g'
     note: '(1 tsp)'
   - group: 'Phase 1, augmented paste bloom'
-    item: 'coconut cream, skimmed from both cans'
+    derive_from: 'coconut-milk'
+    item: 'coconut cream, skimmed off the cans'
     qty: 180
     unit: 'g'
-    note: '(¾ cup)'
+    note: '(¾ cup, the thick layer at the top of each can)'
   - group: 'Phase 1, augmented paste bloom'
     item: 'kosher salt'
     qty: 1
@@ -59,10 +71,11 @@ ingredients:
     note: '(small pinch)'
 
   - group: 'Phase 2, base & eggplant'
-    item: 'remaining coconut milk, both cans'
-    qty: 360
+    derive_from: 'coconut-milk'
+    item: 'remaining coconut liquid'
+    qty: 575
     unit: 'g'
-    note: '(1½ cups)'
+    note: '(everything left in the cans after skimming, ~2¼ cups)'
   - group: 'Phase 2, base & eggplant'
     item: 'fish sauce'
     qty: 15
@@ -105,10 +118,11 @@ ingredients:
     unit: 'g'
     note: '(¼ tsp)'
   - group: 'Phase 3, vegetables & pork'
+    derive_from: 'coconut-milk'
     item: 'reserved coconut cream, off heat'
     qty: 45
     unit: 'g'
-    note: '(3 tbsp)'
+    note: '(3 tbsp set aside before Phase 1)'
   - group: 'Phase 3, vegetables & pork'
     item: 'Thai basil leaves'
     qty: 10
@@ -145,7 +159,7 @@ steps:
     time_min: 4
   - text: 'Add the augmented paste. Fry hard, pressing, folding, scraping the pan floor, for 3 to 4 full minutes until the paste darkens one shade and the surrounding oil runs green-tinged and clear. Season with a small pinch of kosher salt. Under-frying here is the single biggest reason home green curries taste flat.'
     time_min: 4
-  - text: 'Pour in the remaining coconut milk from both cans (about 1½ cups / 360g) and the fish sauce. Stir hard to lift the paste off the pan floor and integrate. Add the bruised makrut lime leaves and the galangal coin.'
+  - text: 'Pour in everything left in the cans (about 2¼ cups / 575g — the watery serum plus any cream you did not skim) and the fish sauce. Stir hard to lift the paste off the pan floor and integrate. Add the bruised makrut lime leaves and the galangal coin.'
     time_min: 1
   - text: 'Add the eggplant. Bring to a low, steady simmer at about 190°F (88°C). The doubled coconut volume means a hard boil at this fat-to-water ratio will permanently break the emulsion into greasy pools. Poach the eggplant 8 to 10 minutes until fully tender and curry-stained throughout.'
     time_min: 10
@@ -179,6 +193,9 @@ homemade_alternatives:
   - for: 'green curry paste (store-bought)'
     recipe_slug: 'recipes/thai-green-curry-paste'
     why: 'A pounded-fresh paste in a stone mortar releases oils and integrates aromatics in a way no jarred paste matches. The augmentation step in this recipe is a workaround; from-scratch paste eliminates the need for it entirely.'
+
+homemade_exempt:
+  - 'coconut milk'
 
 notes: |
   Why two cans of coconut milk: the doubled lipid phase carries fat-soluble aromatic compounds (the terpenes from lemongrass and galangal, the capsaicinoids from chili, the indole and methyl chavicol from Thai basil) more thoroughly through the dish. The tradeoff is emulsion stability. At this fat-to-water ratio a hard boil drives permanent separation. Hold at a low simmer (around 190°F / 88°C) and the emulsion stays intact and silky rather than oily.

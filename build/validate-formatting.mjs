@@ -29,6 +29,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { createFinding, mergeFindings, reportFindings } from './lib/findings.mjs';
+import { ingredientGrams } from './lib/units.mjs';
 
 const ROOT = path.resolve(new URL('.', import.meta.url).pathname, '..');
 const PAGES = path.join(ROOT, 'pages');
@@ -120,6 +121,7 @@ for (const pageFull of walkPages(PAGES)) {
       /\b(tonnarelli|fettuccine|tagliatelle|pappardelle|ravioli|tortellini|gnocchi)\b/i,
     ];
     const declaredAlts = new Set((fm.homemade_alternatives || []).map(h => String(h.for || '').toLowerCase()));
+    const exemptions = new Set((fm.homemade_exempt || []).map(s => String(s).toLowerCase()));
     const flagged = new Set();
     for (const ing of (fm.ingredients || [])) {
       // Only the item field counts as the actual ingredient; notes/prep often
@@ -134,7 +136,11 @@ for (const pageFull of walkPages(PAGES)) {
         if (new RegExp(`\\bnot\\s+${matchedPhrase.replace(/\s+/g, '\\s+')}\\b`).test(note)) continue;
         // Already covered by a homemade_alternatives entry whose `for` mentions this term
         const covered = [...declaredAlts].some(a => a.includes(matchedPhrase) || matchedPhrase.includes(a));
-        if (!covered) flagged.add(matchedPhrase);
+        // Or explicitly exempted by fm.homemade_exempt — for ingredients that
+        // genuinely have no reasonable home version (canned coconut milk,
+        // kosher salt, fish sauce).
+        const exempt = [...exemptions].some(e => e.includes(matchedPhrase) || matchedPhrase.includes(e));
+        if (!covered && !exempt) flagged.add(matchedPhrase);
       }
     }
     if (flagged.size) {
@@ -149,6 +155,53 @@ for (const pageFull of walkPages(PAGES)) {
         emit('ERROR', contentRel, `homemade_alternatives entry for "${h.for}" missing recipe_slug`, {});
       } else if (!/^recipes\//.test(h.recipe_slug)) {
         emit('ERROR', contentRel, `homemade_alternatives recipe_slug "${h.recipe_slug}" must start with 'recipes/'`, {});
+      }
+    }
+
+    // Pack/derive accounting: every derive_from must reference an existing
+    // pack id, and the sum of derived grams must not exceed the pack's total
+    // grams (with a 5% tolerance for cling/loss). Catches math mistakes when
+    // an author splits a can across phases by hand.
+    const idMap = new Map();
+    for (const ing of (fm.ingredients || [])) {
+      if (ing.id) idMap.set(ing.id, ing);
+    }
+    const derivedByPack = new Map();
+    for (const ing of (fm.ingredients || [])) {
+      if (!ing.derive_from) continue;
+      const parent = idMap.get(ing.derive_from);
+      if (!parent) {
+        emit('ERROR', contentRel,
+          `ingredient "${ing.item}" derive_from: "${ing.derive_from}" — no ingredient with that id in this recipe`,
+          { fix: 'Set the parent row\'s id field, or fix the derive_from spelling.' });
+        continue;
+      }
+      if (!derivedByPack.has(ing.derive_from)) derivedByPack.set(ing.derive_from, []);
+      derivedByPack.get(ing.derive_from).push(ing);
+    }
+    for (const [packId, derived] of derivedByPack) {
+      const parent = idMap.get(packId);
+      if (!parent) continue;
+      // Use the same density resolution rule the build uses: per-line override
+      // wins, then we'd consult the ingredient page (skipped here — close
+      // enough for accounting). Density 1.0 default.
+      const density = parent.density_g_per_ml ?? 1;
+      const parentGrams = ingredientGrams(parent, density, parent.grams_per_unit ?? null);
+      if (parentGrams == null) continue;
+      let derivedTotal = 0;
+      for (const d of derived) {
+        const g = ingredientGrams(d, d.density_g_per_ml ?? density, d.grams_per_unit ?? null);
+        if (g == null) continue;
+        derivedTotal += g;
+      }
+      if (derivedTotal > parentGrams * 1.05) {
+        emit('ERROR', contentRel,
+          `pack "${packId}" overflow: derived rows total ${Math.round(derivedTotal)}g but pack holds only ${Math.round(parentGrams)}g`,
+          { fix: 'Either bump the pack qty (buy another can/bottle) or trim the derived row quantities.' });
+      } else if (derivedTotal < parentGrams * 0.6) {
+        emit('WARN', contentRel,
+          `pack "${packId}" under-used: derived rows total ${Math.round(derivedTotal)}g out of ${Math.round(parentGrams)}g — ${Math.round(parentGrams - derivedTotal)}g left unaccounted`,
+          { fix: 'If the recipe really uses less than 60% of the pack, reduce pack qty so the cook does not buy more than they need.' });
       }
     }
   }

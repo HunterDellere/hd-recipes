@@ -5,6 +5,7 @@
 
 import MarkdownIt from 'markdown-it';
 import { fmtMinutes, frameRecipeTime } from './cards.mjs';
+import { classifyIngredients } from './units.mjs';
 
 const md = new MarkdownIt({ html: false, linkify: false, typographer: false, breaks: false });
 
@@ -92,18 +93,6 @@ export function renderRecipeHero(fm, slug, category) {
 export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
   if (!fm.ingredients || !fm.ingredients.length) return '';
 
-  // Group by `group` field (preserves order of first appearance)
-  const groups = [];
-  const groupMap = new Map();
-  for (const ing of fm.ingredients) {
-    const g = ing.group || '';
-    if (!groupMap.has(g)) {
-      groupMap.set(g, []);
-      groups.push(g);
-    }
-    groupMap.get(g).push(ing);
-  }
-
   // Strip leading measurement-paren from a note when the parenthetical is
   // pure measurement text (e.g. "(4 tbsp)", "(1 cup)", "(½ stick)"). Runtime
   // recomputes that parenthetical in whichever unit system is opposite the
@@ -121,21 +110,21 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     return noteText;
   }
 
-  const renderRow = (ing) => {
+  // Resolve ingredient roles + packs once. classified[i] = { ing, page, pack, role, parent? }
+  const classified = classifyIngredients(fm.ingredients, ingredientBySlug);
+
+  const renderRow = (entry, opts = {}) => {
+    const { ing, page, pack, role, parent } = entry;
     let label = escapeHtml(ing.item);
-    let target = null;
-    if (ing.slug) {
-      target = ingredientBySlug.get(ing.slug) || ingredientBySlug.get(ing.slug.replace(/^ingredients\//, ''));
-      if (target) {
-        const href = relPath(currentPath, target.path);
-        label = `<a class="ing-link" href="${escapeHtml(href)}">${label}</a>`;
-      }
+    if (ing.slug && page) {
+      const href = relPath(currentPath, page.path);
+      label = `<a class="ing-link" href="${escapeHtml(href)}">${label}</a>`;
     }
     // Density + imperial preference resolution order (most specific wins):
-    //   1. Per-line override on the recipe ingredient row (ing.density_g_per_ml / ing.imperial_pref)
-    //   2. Ingredient page frontmatter (target._fm.density_g_per_ml / target._fm.imperial_pref)
+    //   1. Per-line override on the recipe ingredient row
+    //   2. Ingredient page frontmatter
     //   3. Built-in fallback in recipe.js (water density, size-driven imperial unit)
-    const tfm = target && target._fm ? target._fm : null;
+    const tfm = page && (page._fm || page.fm) ? (page._fm || page.fm) : null;
     const density = ing.density_g_per_ml ?? (tfm && tfm.density_g_per_ml);
     const impPref = ing.imperial_pref   ?? (tfm && tfm.imperial_pref);
     const densityAttr = (typeof density === 'number') ? ` data-density="${density}"` : '';
@@ -144,28 +133,93 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     const unit = ing.unit ? escapeHtml(ing.unit) : '';
     const prep = ing.prep ? `<span class="ing-prep">, ${escapeHtml(ing.prep)}</span>` : '';
     const cleanNote = splitNote(ing.note);
-    // Alternate-unit parenthetical: rendered & populated by recipe.js. Only
-    // emitted when the row is convertible (numeric qty + a real unit).
     const isScalable = typeof ing.qty === 'number';
     const isConvertible = isScalable && unit && unit !== 'each' && unit !== 'pinch' && unit !== 'clove';
     const alt = isConvertible ? ` <span class="ing-alt" data-ing-alt aria-hidden="true"></span>` : '';
     const note = cleanNote ? `<span class="ing-note"> — ${escapeHtml(cleanNote)}</span>` : '';
     const opt = ing.optional ? `<span class="ing-opt">optional</span>` : '';
-    const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}` + (isScalable ? ' data-scalable="1"' : '');
+
+    // Pack rows in shop view show "N × <label>" instead of qty/unit. The
+    // underlying numeric stays in data-qty/data-unit so scaling math is
+    // identical between views.
+    const packAttrs = (role === 'pack' && pack)
+      ? ` data-pack-role="pack"` +
+        (pack.size_ml != null ? ` data-pack-size-ml="${pack.size_ml}"` : '') +
+        (pack.size_g  != null ? ` data-pack-size-g="${pack.size_g}"`  : '') +
+        (pack.size_label ? ` data-pack-label="${escapeHtml(pack.size_label)}"` : '')
+      : '';
+    const deriveAttrs = (role === 'derived' && ing.derive_from)
+      ? ` data-derive-from="${escapeHtml(ing.derive_from)}"`
+      : '';
+    const idAttr = ing.id ? ` data-ing-id="${escapeHtml(ing.id)}"` : '';
+
+    const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${idAttr}${packAttrs}${deriveAttrs}` + (isScalable ? ' data-scalable="1"' : '');
+
+    // Pack rows render as "N × <pack label>" in both shop and mise views — a
+    // can is always counted in cans, never in ml. recipe.js keeps the count
+    // current as the user scales servings (rounding up; you can't buy half).
+    let qtyCol;
+    if (role === 'pack' && pack && (pack.size_ml || pack.size_g) && pack.size_label) {
+      const sizeBase = pack.size_ml || pack.size_g;
+      const initialCount = isScalable ? Math.max(1, Math.ceil(parseFloat(qty) / sizeBase)) : '';
+      qtyCol = `<span class="ing-qty ing-qty-pack">
+            <span data-pack-count>${initialCount}</span> × <span data-pack-label-text>${escapeHtml(pack.size_label)}</span>
+          </span>`;
+    } else {
+      qtyCol = `<span class="ing-qty"><span data-ing-qty>${qty}</span> <span data-ing-unit>${unit}</span></span>`;
+    }
+
+    // Derived rows surface their parent's identity inline so a cook reading
+    // the mise sees "(from coconut milk)" rather than guessing.
+    let derivedHint = '';
+    if (role === 'derived' && parent && opts.variant === 'mise') {
+      const parentLabel = parent.ing.item || parent.ing.id || '';
+      derivedHint = parentLabel
+        ? ` <span class="ing-derived-hint">from ${escapeHtml(parentLabel)}</span>`
+        : '';
+    }
+
     return `
-        <li class="ing-row" ${dataAttrs}>
+        <li class="ing-row${role === 'pack' ? ' ing-row-pack' : ''}${role === 'derived' ? ' ing-row-derived' : ''}" ${dataAttrs}>
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
-          <span class="ing-qty"><span data-ing-qty>${qty}</span> <span data-ing-unit>${unit}</span></span>
-          <span class="ing-name">${label}${prep}${alt}${opt}${note}</span>
+          ${qtyCol}
+          <span class="ing-name">${label}${prep}${alt}${opt}${note}${derivedHint}</span>
         </li>`;
   };
 
-  const groupHtml = groups.map(g => {
+  // Shopping list = pack + plain rows in declaration order. Hides derived
+  // (their grams already roll up into the parent pack).
+  const shopRows = classified.filter(r => r.role !== 'derived');
+  const shopHtml = shopRows.map(r => renderRow(r, { variant: 'shop' })).join('');
+
+  // Mise breakdown = plain + derived rows, grouped by phase. Hides packs that
+  // are split into derived rows (those slices already cover what each phase
+  // uses). Packs without derived children stay in mise — the author hasn't
+  // split them, so the whole buying-unit gets used as-is in its declared
+  // group.
+  const packsWithDerived = new Set();
+  for (const r of classified) {
+    if (r.role === 'derived' && r.parent) packsWithDerived.add(r.parent.idx);
+  }
+  const miseRows = classified.filter(r => {
+    if (r.role !== 'pack') return true;
+    return !packsWithDerived.has(r.idx);
+  });
+  const phaseGroups = [];
+  const phaseMap = new Map();
+  for (const r of miseRows) {
+    const g = r.ing.group || '';
+    if (!phaseMap.has(g)) { phaseMap.set(g, []); phaseGroups.push(g); }
+    phaseMap.get(g).push(r);
+  }
+  const miseHtml = phaseGroups.map(g => {
     const head = g ? `<h3 class="ing-group-head">${escapeHtml(g)}</h3>` : '';
-    const rows = groupMap.get(g).map(renderRow).join('');
+    const rows = phaseMap.get(g).map(r => renderRow(r, { variant: 'mise' })).join('');
     return `${head}<ol class="ing-list">${rows}\n      </ol>`;
   }).join('\n');
 
+  const phaseCount = phaseGroups.filter(Boolean).length;
+  const itemCount = shopRows.length;
   const baseServings = fm.servings || 1;
   return `
     <span class="section-anchor" id="ingredients"></span>
@@ -201,7 +255,28 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
           <span>Copy list</span>
         </button>
       </div>
-      ${groupHtml}
+      <details class="ing-panel ing-panel-shop" open data-ing-panel="shop">
+        <summary class="ing-panel-summary">
+          <span class="ing-panel-title">Shopping list</span>
+          <span class="ing-panel-meta">
+            <span class="ing-panel-count"><span data-shop-count>${itemCount}</span> ${itemCount === 1 ? 'item' : 'items'}</span>
+            <span class="ing-panel-chev" aria-hidden="true">▾</span>
+          </span>
+        </summary>
+        <ol class="ing-list ing-list-shop">${shopHtml}
+        </ol>
+      </details>
+      ${phaseCount > 0 ? `<details class="ing-panel ing-panel-mise" data-ing-panel="mise">
+        <summary class="ing-panel-summary">
+          <span class="ing-panel-title">Mise en place by phase</span>
+          <span class="ing-panel-meta">
+            <span class="ing-panel-count">${phaseCount} ${phaseCount === 1 ? 'phase' : 'phases'}</span>
+            <span class="ing-panel-chev" aria-hidden="true">▾</span>
+          </span>
+        </summary>
+        <div class="ing-mise-body">${miseHtml}
+        </div>
+      </details>` : ''}
     </div>`;
 }
 

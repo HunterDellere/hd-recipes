@@ -181,9 +181,26 @@
       rows.forEach(row => {
         const orig = parseFloat(row.dataset.origQty);
         const origUnit = row.dataset.origUnit || row.dataset.unit || '';
+        const altEl = row.querySelector('[data-ing-alt]');
+
+        // Pack rows render "N × <label>" instead of qty + unit. Recalculate
+        // the count whenever servings change. Round up because cans/bottles
+        // come in whole units — overshoot honestly rather than underbuy.
+        const packCountEl = row.querySelector('[data-pack-count]');
+        if (packCountEl) {
+          const sizeMl = parseFloat(row.dataset.packSizeMl);
+          const sizeG  = parseFloat(row.dataset.packSizeG);
+          const size = isFinite(sizeMl) ? sizeMl : (isFinite(sizeG) ? sizeG : null);
+          if (isFinite(orig) && size) {
+            const count = Math.max(1, Math.ceil((orig * factor) / size));
+            packCountEl.textContent = String(count);
+          }
+          if (altEl) altEl.textContent = '';
+          return;
+        }
+
         const qtyEl = row.querySelector('[data-ing-qty]');
         const unitEl = row.querySelector('[data-ing-unit]');
-        const altEl = row.querySelector('[data-ing-alt]');
         if (!qtyEl) return;
         if (!isFinite(orig)) {
           // Non-numeric quantities (e.g. "to taste") aren't scaled or converted
@@ -261,11 +278,25 @@
   }
 
   function buildShoppingList(root) {
-    const rows = Array.from(root.querySelectorAll('.ing-row'));
+    // Scope to the shop panel so we don't duplicate plain rows that also
+    // appear in the mise-en-place breakdown. Fall back to all rows if the
+    // panel structure isn't there (older recipes).
+    const shopRoot = root.querySelector('[data-ing-panel="shop"] .ing-list-shop') || root;
+    const rows = Array.from(shopRoot.querySelectorAll('.ing-row'));
     const lines = rows.filter(r => {
       const cb = r.querySelector('.ing-cb');
       return !cb || !cb.checked; // include unchecked (= still need to buy)
     }).map(r => {
+      // Pack rows render "N × <label>" — read those directly so the export
+      // says "2 × 13.5 oz / 400 ml can full-fat coconut milk" rather than the
+      // underlying ml.
+      const packCountEl = r.querySelector('[data-pack-count]');
+      if (packCountEl) {
+        const count = packCountEl.textContent.trim();
+        const labelText = (r.querySelector('[data-pack-label-text]') || {}).textContent?.trim() || '';
+        const name = (r.querySelector('.ing-name') || {}).textContent.trim();
+        return `- ${count} × ${labelText}  ${name}`.replace(/\s+/g, ' ').trim();
+      }
       const qty = (r.querySelector('[data-ing-qty]') || {}).textContent.trim() || '';
       const unit = (r.querySelector('[data-ing-unit]') || {}).textContent.trim() || '';
       const name = (r.querySelector('.ing-name') || {}).textContent.trim();
@@ -346,10 +377,14 @@
       } else {
         ingredientsSection.parentNode.insertBefore(ingPanelBtn, ingredientsSection);
       }
+      // Scope the count to the shop panel — plain rows otherwise double-count
+      // (they render in both shop and mise panels). The shop panel is the
+      // canonical "what do I have" view, so it's the right denominator.
+      const countRoot = ingredientsSection.querySelector('[data-ing-panel="shop"] .ing-list-shop') || ingredientsSection;
       const ingCountEl = ingPanelBtn.querySelector('.cv-ing-count');
-      const totalIng = ingredientsSection.querySelectorAll('.ing-row').length;
+      const totalIng = countRoot.querySelectorAll('.ing-row').length;
       const updateIngCount = () => {
-        const checked = ingredientsSection.querySelectorAll('.ing-cb:checked').length;
+        const checked = countRoot.querySelectorAll('.ing-cb:checked').length;
         ingCountEl.textContent = `${checked}/${totalIng} ready`;
       };
       updateIngCount();

@@ -129,13 +129,39 @@
           <span>Copy list</span>
         </button>
       </div>
-      <h3 class="ing-group-head">The bread</h3><ol class="ing-list">
+      <details class="ing-panel ing-panel-shop" open data-ing-panel="shop">
+        <summary class="ing-panel-summary">
+          <span class="ing-panel-title">Shopping list</span>
+          <span class="ing-panel-meta">
+            <span class="ing-panel-count"><span data-shop-count>1</span> item</span>
+            <span class="ing-panel-chev" aria-hidden="true">▾</span>
+          </span>
+        </summary>
+        <ol class="ing-list ing-list-shop">
+        <li class="ing-row" data-qty="250" data-unit="g" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>250</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name">white sandwich bread<span class="ing-prep">, crusts removed</span> <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (8–10 slices, plain white pullman or shokupan; day-old is ideal but fresh works)</span></span>
+        </li>
+        </ol>
+      </details>
+      <details class="ing-panel ing-panel-mise" data-ing-panel="mise">
+        <summary class="ing-panel-summary">
+          <span class="ing-panel-title">Mise en place by phase</span>
+          <span class="ing-panel-meta">
+            <span class="ing-panel-count">1 phase</span>
+            <span class="ing-panel-chev" aria-hidden="true">▾</span>
+          </span>
+        </summary>
+        <div class="ing-mise-body"><h3 class="ing-group-head">The bread</h3><ol class="ing-list">
         <li class="ing-row" data-qty="250" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>250</span> <span data-ing-unit>g</span></span>
           <span class="ing-name">white sandwich bread<span class="ing-prep">, crusts removed</span> <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (8–10 slices, plain white pullman or shokupan; day-old is ideal but fresh works)</span></span>
         </li>
       </ol>
+        </div>
+      </details>
     </div>
 
     

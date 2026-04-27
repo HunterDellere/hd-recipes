@@ -100,6 +100,11 @@
     "updated": "2026-04-27",
     "ingredients": [
       {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
         "item": "green curry paste (store-bought)",
         "optional": false
       },
@@ -117,7 +122,7 @@
         "optional": false
       },
       {
-        "item": "coconut cream, skimmed from both cans",
+        "item": "coconut cream, skimmed off the cans",
         "optional": false
       },
       {
@@ -125,7 +130,7 @@
         "optional": false
       },
       {
-        "item": "remaining coconut milk, both cans",
+        "item": "remaining coconut liquid",
         "optional": false
       },
       {
@@ -474,6 +479,25 @@
       "timeMode": "active",
       "activeMinutes": 20,
       "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/ingredients/coconut-milk.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Coconut milk (canned, full-fat)",
+    "desc": "Pressed coconut emulsion, ~17–22% fat. The lipid phase that carries fat-soluble aromatics in Thai and Southeast Asian curries.",
+    "tags": [
+      "fat",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "coconut-milk",
+    "updated": "2026-04-27",
+    "_card": {
+      "primaryTag": "fat",
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   },
   {
@@ -920,112 +944,6 @@
       "timeMode": "total",
       "activeMinutes": 15,
       "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/recipes/double-dark-chocolate-crinkle-cookies.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Double dark chocolate crinkle cookies",
-    "desc": "Fudgy crinkle cookies built on melted dark chocolate, bloomed cocoa, and a coconut-oil tweak that keeps them glossy and chewy.",
-    "tags": [
-      "cookies",
-      "chocolate",
-      "dessert",
-      "american",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "double-dark-chocolate-crinkle-cookies",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 16,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 11,
-      "total_min": 26,
-      "active_min": 20
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "coconut oil",
-        "optional": false
-      },
-      {
-        "item": "dark chocolate, chopped",
-        "optional": false
-      },
-      {
-        "item": "Dutch-process cocoa powder",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "light brown sugar",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "espresso powder",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "optional": false
-      },
-      {
-        "item": "dark or semi-sweet chocolate chunks",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar, for rolling",
-        "optional": false
-      },
-      {
-        "item": "powdered sugar, for rolling",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 26,
-      "diffLabel": "medium",
-      "timeLead": "26 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
     }
   }
 ]

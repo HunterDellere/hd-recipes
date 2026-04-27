@@ -591,6 +591,112 @@ pre code { background: none; padding: 0; }
 }
 .ing-group-head:first-child { margin-top: 0; }
 
+/* ── two-panel ingredients IA ─────────────────────────────────────────────
+   Native <details> drives the collapse. Shop list opens by default (the
+   most-asked question is "what do I buy"); per-phase mise opens on demand
+   when the cook is planning setup. Same controls (servings, units, copy)
+   sit above both, since scaling is global. */
+.ing-panel {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--bg-elev);
+  margin-bottom: .85rem;
+  overflow: hidden; /* keeps the rounded corners during open/close */
+}
+.ing-panel-summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .85rem 1.05rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 120ms;
+}
+.ing-panel-summary::-webkit-details-marker { display: none; }
+.ing-panel-summary:hover { background: var(--accent-soft); }
+.ing-panel-summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.ing-panel-title {
+  font-family: var(--font-serif); font-size: 18px; font-weight: 600;
+  color: var(--ink);
+  letter-spacing: var(--ls-tight);
+}
+.ing-panel-meta {
+  display: inline-flex; align-items: center; gap: .65rem;
+}
+.ing-panel-count {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+  color: var(--ink-faint);
+  background: var(--bg-soft);
+  border: 1px solid var(--rule-soft);
+  border-radius: 999px;
+  padding: 2px 9px;
+  letter-spacing: .02em;
+}
+.ing-panel-chev {
+  display: inline-block;
+  color: var(--ink-faint);
+  transition: transform 200ms ease;
+  font-size: 13px;
+  width: 14px; text-align: center;
+}
+.ing-panel[open] .ing-panel-chev { transform: rotate(180deg); }
+.ing-panel[open] .ing-panel-summary {
+  border-bottom: 1px solid var(--rule-soft);
+  background: color-mix(in oklab, var(--bg-elev) 92%, var(--accent-soft));
+}
+.ing-list-shop,
+.ing-mise-body {
+  padding: .55rem 1.05rem .9rem;
+  margin: 0;
+}
+.ing-list-shop { list-style: none; }
+.ing-mise-body .ing-list { padding: 0; }
+.ing-mise-body .ing-group-head:first-child { margin-top: .25rem; }
+
+/* Pack rows: render "N × can-label" instead of qty/unit. Pack labels are
+   long ("13.5 oz / 400 ml can"), so the row's grid relaxes its qty column
+   from 110px → auto to fit the label without truncation. */
+.ing-row-pack { grid-template-columns: 24px auto minmax(0, 1fr); }
+.ing-qty-pack {
+  display: inline-flex; align-items: baseline; gap: .35em;
+  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+  color: var(--ink); font-weight: 500;
+  font-size: 14.5px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+.ing-qty-pack [data-pack-count] {
+  font-family: var(--font-sans); font-size: 16px; font-weight: 600;
+  color: var(--ink);
+}
+.ing-qty-pack [data-pack-label-text] {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+  color: var(--ink-faint);
+  letter-spacing: .02em;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+.ing-row-pack { background: linear-gradient(180deg, transparent 0%, color-mix(in oklab, var(--bg-soft) 50%, transparent) 100%); }
+
+/* Derived rows: a thin chip that points back to the parent pack so the cook
+   sees "180 g coconut cream — from full-fat coconut milk" without having to
+   trace the relationship in their head. */
+.ing-derived-hint {
+  display: inline-block;
+  margin-left: .55em;
+  font-family: var(--font-mono); font-size: 10.5px; font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: .04em;
+  color: var(--ink-faint);
+  background: var(--bg-soft);
+  border: 1px solid var(--rule-soft);
+  border-radius: 4px;
+  padding: 1px 6px;
+  vertical-align: 1px;
+}
+
 .ing-list { list-style: none; padding: 0; margin: 0 0 1rem; }
 .ing-row {
   display: grid;
@@ -1154,6 +1260,9 @@ pre code { background: none; padding: 0; }
   .recipe-nutrition { grid-template-columns: 1fr; gap: 1rem; padding: 1.25rem; }
   h1, .rh-title, .topic-hero-title { font-size: 2rem; }
   .ing-row { grid-template-columns: 22px 90px minmax(0, 1fr); gap: .5rem; font-size: 14.5px; }
+  /* Pack rows hold their relaxed qty column at every breakpoint so the
+     pack label ("13.5 oz / 400 ml can") never gets clipped. */
+  .ing-row-pack { grid-template-columns: 22px auto minmax(0, 1fr); }
   .step-body { font-size: 16px; }
   .step-num { width: 28px; height: 28px; line-height: 28px; font-size: 13px; }
   .step-item { grid-template-columns: 28px minmax(0, 1fr); gap: .85rem; padding: .9rem 0; }

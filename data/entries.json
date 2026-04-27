@@ -1,5 +1,24 @@
 [
   {
+    "path": "pages/ingredients/coconut-milk.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Coconut milk (canned, full-fat)",
+    "desc": "Pressed coconut emulsion, ~17–22% fat. The lipid phase that carries fat-soluble aromatics in Thai and Southeast Asian curries.",
+    "tags": [
+      "fat",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "coconut-milk",
+    "updated": "2026-04-27",
+    "_card": {
+      "primaryTag": "fat",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/recipes/dijon-mustard.html",
     "type": "recipe",
     "category": "recipes",
@@ -100,6 +119,11 @@
     "updated": "2026-04-27",
     "ingredients": [
       {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
         "item": "green curry paste (store-bought)",
         "optional": false
       },
@@ -117,7 +141,7 @@
         "optional": false
       },
       {
-        "item": "coconut cream, skimmed from both cans",
+        "item": "coconut cream, skimmed off the cans",
         "optional": false
       },
       {
@@ -125,7 +149,7 @@
         "optional": false
       },
       {
-        "item": "remaining coconut milk, both cans",
+        "item": "remaining coconut liquid",
         "optional": false
       },
       {

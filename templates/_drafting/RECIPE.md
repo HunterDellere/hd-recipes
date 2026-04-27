@@ -191,6 +191,59 @@ about: |
 ---
 ```
 
+## Buying units (cans, bottles, bricks)
+
+Some ingredients come in fixed packs that the cook buys whole — coconut milk in 400 ml cans, tomato paste in 6 oz tubes, mascarpone in 250 g tubs. Splitting them across phases by hand ("180 g cream skimmed, 360 g remainder") is internally inconsistent: the parts don't sum to a whole pack, scaling falsifies the cup conversions, and the shopping list reads as fractional grams instead of "buy 2 cans". The `pack` + `derive_from` schema fixes that.
+
+**Pattern.** Declare one ingredient row as the buying-unit, with `id`, total `qty` in ml/g, and the `pack` annotation. Then split it into per-phase derived rows that reference the pack via `derive_from`. The build does the rest:
+
+```yaml
+ingredients:
+  # Buying unit. Inherits density (1.00 g/ml) and pack size (13.5 oz / 400 ml)
+  # from content/ingredients/coconut-milk.md. The shopping list shows this
+  # as "2 × 13.5 oz / 400 ml can"; the mise breakdown skips it (the derived
+  # rows below cover what each phase consumes).
+  - id: 'coconut-milk'
+    item: 'full-fat coconut milk'
+    slug: 'coconut-milk'
+    qty: 800
+    unit: 'ml'
+
+  - group: 'Phase 1, paste bloom'
+    derive_from: 'coconut-milk'
+    item: 'coconut cream, skimmed off the cans'
+    qty: 180
+    unit: 'g'
+
+  - group: 'Phase 2, base'
+    derive_from: 'coconut-milk'
+    item: 'remaining coconut liquid'
+    qty: 575
+    unit: 'g'
+
+  - group: 'Phase 3, finish'
+    derive_from: 'coconut-milk'
+    item: 'reserved coconut cream, off heat'
+    qty: 45
+    unit: 'g'
+```
+
+**Rules.**
+
+1. Pack rows belong at the top of `ingredients[]`, before any rows that reference them.
+2. The pack ingredient page (`content/ingredients/<slug>.md`) provides the canonical `density_g_per_ml` and a default `pack: { size_ml, size_label }`. The recipe row inherits those — only override on the recipe row when a specific recipe needs a different pack size.
+3. Sum of derived `qty` (in grams, after density conversion) must land between 60% and 105% of the pack's total grams. The validator (`validate-formatting.mjs`) errors above 105% and warns below 60%. If the recipe genuinely uses less than 60% of the pack, lower the pack `qty` instead of leaving cans half-used.
+4. Derived rows are display-only — the build skips them for nutrition and the shopping list; only the parent pack contributes.
+5. When scaling, the pack count rounds up (you can't buy half a can). Derived rows scale linearly; the `<60% under-used` warning catches recipes where rounding up creates large leftovers.
+
+**When NOT to use packs.** If an ingredient is used as a single contiguous quantity (one can, no per-phase split), skip the pack/derive machinery and write a normal row. The pack semantics earn their complexity only when an ingredient is split across phases.
+
+## Ingredient density and verified math
+
+Every ingredient page that has a meaningful volume↔mass relationship should declare `density_g_per_ml` from a verified source — USDA FoodData Central per-cup figures, peer-reviewed food density tables, or the brand's published nutrition panel weights. The build uses density for: (1) imperial unit display (cups → grams via density), (2) nutrition computation (volume → grams for per-100g USDA records), and (3) pack mass (pack volume × density = total grams). Density 1.0 (water-equivalent) is the silent default; explicit annotation beats default.
+
+For piece-shaped ingredients (eggs, garlic cloves, star-anise pods), set `grams_per_unit` instead. Same rule: cite the source in the page's `about:` section so future maintenance sees the math is grounded.
+
 ## Workflow
 
 1. `npm run draft recipe my-dish` — scaffolds `local/drafts/recipes/my-dish.md`

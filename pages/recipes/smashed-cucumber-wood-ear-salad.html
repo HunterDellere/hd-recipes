@@ -132,7 +132,15 @@
           <span>Copy list</span>
         </button>
       </div>
-      <h3 class="ing-group-head">Vegetables</h3><ol class="ing-list">
+      <details class="ing-panel ing-panel-shop" open data-ing-panel="shop">
+        <summary class="ing-panel-summary">
+          <span class="ing-panel-title">Shopping list</span>
+          <span class="ing-panel-meta">
+            <span class="ing-panel-count"><span data-shop-count>9</span> items</span>
+            <span class="ing-panel-chev" aria-hidden="true">▾</span>
+          </span>
+        </summary>
+        <ol class="ing-list ing-list-shop">
         <li class="ing-row" data-qty="600" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>600</span> <span data-ing-unit>g</span></span>
@@ -148,8 +156,6 @@
           <span class="ing-qty"><span data-ing-qty>6</span> <span data-ing-unit>g</span></span>
           <span class="ing-name"><a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
-      </ol>
-<h3 class="ing-group-head">Dressing</h3><ol class="ing-list">
         <li class="ing-row" data-qty="60" data-unit="g" data-density="1.04" data-imp-pref="tbsp" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>60</span> <span data-ing-unit>g</span></span>
@@ -180,7 +186,67 @@
           <span class="ing-qty"><span data-ing-qty>5</span> <span data-ing-unit>g</span></span>
           <span class="ing-name">chili oil <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-opt">optional</span></span>
         </li>
+        </ol>
+      </details>
+      <details class="ing-panel ing-panel-mise" data-ing-panel="mise">
+        <summary class="ing-panel-summary">
+          <span class="ing-panel-title">Mise en place by phase</span>
+          <span class="ing-panel-meta">
+            <span class="ing-panel-count">2 phases</span>
+            <span class="ing-panel-chev" aria-hidden="true">▾</span>
+          </span>
+        </summary>
+        <div class="ing-mise-body"><h3 class="ing-group-head">Vegetables</h3><ol class="ing-list">
+        <li class="ing-row" data-qty="600" data-unit="g" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>600</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name">Persian cucumbers <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-note"> — (6 small)</span></span>
+        </li>
+        <li class="ing-row" data-qty="300" data-unit="g" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>300</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name">wood ear mushrooms, rehydrated and trimmed <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
+        </li>
+        <li class="ing-row" data-qty="6" data-unit="g" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>6</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name">fine sea salt <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
+        </li>
       </ol>
+<h3 class="ing-group-head">Dressing</h3><ol class="ing-list">
+        <li class="ing-row" data-qty="60" data-unit="g" data-density="1.04" data-imp-pref="tbsp" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>60</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/chinkiang-vinegar.html">Chinkiang black vinegar</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
+        </li>
+        <li class="ing-row" data-qty="10" data-unit="g" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>10</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name">sugar <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
+        </li>
+        <li class="ing-row" data-qty="15" data-unit="g" data-density="1.18" data-imp-pref="tbsp" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>15</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/light-soy-sauce.html">light soy sauce</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
+        </li>
+        <li class="ing-row" data-qty="3" data-unit="each" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>3</span> <span data-ing-unit>each</span></span>
+          <span class="ing-name"><a class="ing-link" href="../ingredients/garlic.html">garlic, grated</a><span class="ing-note"> — (3 cloves)</span></span>
+        </li>
+        <li class="ing-row" data-qty="15" data-unit="g" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>15</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name">toasted sesame oil <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
+        </li>
+        <li class="ing-row" data-qty="5" data-unit="g" data-scalable="1">
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          <span class="ing-qty"><span data-ing-qty>5</span> <span data-ing-unit>g</span></span>
+          <span class="ing-name">chili oil <span class="ing-alt" data-ing-alt aria-hidden="true"></span><span class="ing-opt">optional</span></span>
+        </li>
+      </ol>
+        </div>
+      </details>
     </div>
 
     
