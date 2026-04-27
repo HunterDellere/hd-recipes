@@ -314,6 +314,115 @@ export function renderIngredientBody(fm, slug, category) {
 </div>`;
 }
 
+export function renderEquipmentBody(fm, slug, category, opts = {}) {
+  const recipesUsing = (opts.recipesUsing || []); // [{ title, path }] populated in C2
+  const sidebar = `
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
+      <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
+      <div class="toc-divider"></div>
+      <span class="toc-label">On this page</span>
+      <ul class="toc-list">
+        <li><a href="#about">About</a></li>
+        ${(fm.substitutions || []).length ? '<li><a href="#substitutions">Substitutes</a></li>' : ''}
+        ${recipesUsing.length ? '<li><a href="#used-in">Recipes using this</a></li>' : ''}
+      </ul>
+    </aside>`;
+
+  const sections = [];
+  sections.push(`
+    <header class="topic-hero">
+      <span class="topic-hero-eyebrow">Equipment</span>
+      <h1 class="topic-hero-title">${escapeHtml(fm.title || slug)}</h1>
+      ${fm.desc ? `<p class="topic-hero-desc">${escapeHtml(fm.desc)}</p>` : ''}
+    </header>`);
+
+  if (fm.about || fm.desc) {
+    sections.push(`
+    <span class="section-anchor" id="about"></span>
+    <div class="section-head"><h2>About</h2></div>
+    <div class="scholar">
+      <p>${escapeHtml(fm.about || fm.desc)}</p>
+    </div>`);
+  }
+
+  if (fm.substitutions && fm.substitutions.length) sections.push(renderSubstitutions(fm));
+
+  if (recipesUsing.length) {
+    const cards = recipesUsing.map(r => `
+        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">${escapeHtml(r.title)}</span>
+        </a>`).join('');
+    sections.push(`
+    <span class="section-anchor" id="used-in"></span>
+    <div class="section-head"><h2>Recipes using this</h2></div>
+    <div class="related-cards">${cards}
+    </div>`);
+  }
+
+  return `
+<div class="shell">
+  ${sidebar}
+  <main class="main" id="main-content">
+    ${sections.join('\n\n    ')}
+  </main>
+</div>`;
+}
+
+export function renderCuisineBody(fm, slug, category, opts = {}) {
+  // Fallback renderer for cuisine pages with no authored body.
+  // Cuisines with rich authored bodies (like italian.md) keep them and bypass this renderer.
+  const recipes = (opts.recipes || []);  // [{ title, path, course }]
+  const sidebar = `
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
+      <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
+      <div class="toc-divider"></div>
+      <span class="toc-label">On this page</span>
+      <ul class="toc-list">
+        <li><a href="#about">About</a></li>
+        ${recipes.length ? '<li><a href="#recipes">Recipes</a></li>' : ''}
+      </ul>
+    </aside>`;
+
+  const sections = [];
+  sections.push(`
+    <header class="topic-hero">
+      <span class="topic-hero-eyebrow">Cuisine</span>
+      <h1 class="topic-hero-title">${escapeHtml(fm.title || slug)}</h1>
+      ${fm.desc ? `<p class="topic-hero-desc">${escapeHtml(fm.desc)}</p>` : ''}
+    </header>`);
+
+  if (fm.about || fm.desc) {
+    sections.push(`
+    <span class="section-anchor" id="about"></span>
+    <div class="section-head"><h2>About</h2></div>
+    <div class="scholar">
+      <p>${escapeHtml(fm.about || fm.desc)}</p>
+    </div>`);
+  }
+
+  if (recipes.length) {
+    const cards = recipes.map(r => `
+        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-cat">${escapeHtml(r.course || 'recipe')}</span>
+          <span class="rl-title">${escapeHtml(r.title)}</span>
+        </a>`).join('');
+    sections.push(`
+    <span class="section-anchor" id="recipes"></span>
+    <div class="section-head"><h2>Recipes</h2></div>
+    <div class="related-cards">${cards}
+    </div>`);
+  }
+
+  return `
+<div class="shell">
+  ${sidebar}
+  <main class="main" id="main-content">
+    ${sections.join('\n\n    ')}
+  </main>
+</div>`;
+}
+
 export function renderTechniqueBody(fm, slug, category) {
   const sidebar = `
     <aside class="sidebar" id="sidebar" aria-label="Page contents">

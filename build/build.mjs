@@ -24,6 +24,7 @@ import { buildLinkMap, autoLinkBody, buildPageFooter, renderSourcesHtml, ensureM
 import { renderOgSvg, categoryFaviconDataUri } from './lib/og.mjs';
 import {
   renderRecipeBody, renderIngredientBody, renderTechniqueBody, renderHubBody,
+  renderEquipmentBody, renderCuisineBody,
 } from './lib/recipe-render.mjs';
 import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
@@ -262,6 +263,18 @@ const relations = buildRelations(entries);
 const adjacency = buildAdjacency(entries);
 const usdaCache = loadCache(ROOT);
 
+// Cuisine → recipes index (for renderCuisineBody fallback). Cuisines with
+// authored bodies bypass this; this only matters for cuisine entries that
+// land with frontmatter only and need an auto-rendered Recipes section.
+const cuisineRecipes = new Map(); // cuisine_title (case-insensitive) → [{ title, path, course }]
+for (const e of entries) {
+  if (e.type !== 'recipe' || e.status !== 'complete' || !e.cuisine) continue;
+  const key = String(e.cuisine).trim().toLowerCase();
+  if (!cuisineRecipes.has(key)) cuisineRecipes.set(key, []);
+  cuisineRecipes.get(key).push({ title: e.title, path: e.path, course: e.course });
+}
+for (const list of cuisineRecipes.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+
 const nutritionByPath = {};
 
 let built = 0;
@@ -290,6 +303,12 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
         augmentedBody = renderIngredientBody(fm, slug, category);
       } else if (fm.type === 'technique') {
         augmentedBody = renderTechniqueBody(fm, slug, category);
+      } else if (fm.type === 'equipment') {
+        // recipesUsing is empty for now; C2 will populate via reverse links.
+        augmentedBody = renderEquipmentBody(fm, slug, category, { recipesUsing: [] });
+      } else if (fm.type === 'cuisine') {
+        const recipes = cuisineRecipes.get(String(fm.title || slug).toLowerCase()) || [];
+        augmentedBody = renderCuisineBody(fm, slug, category, { recipes });
       } else if (fm.type === 'hub') {
         augmentedBody = renderHubBody(fm, slug, category, entriesByPath);
       } else {
