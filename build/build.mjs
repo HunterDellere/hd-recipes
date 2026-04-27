@@ -301,9 +301,11 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
           inHubs: reverseLinks.inHubs.get(entry.path) || [],
         });
       } else if (fm.type === 'ingredient') {
-        augmentedBody = renderIngredientBody(fm, slug, category);
+        const recipesUsing = reverseLinks.ingRecipes.get(slug) || [];
+        augmentedBody = renderIngredientBody(fm, slug, category, { recipesUsing });
       } else if (fm.type === 'technique') {
-        augmentedBody = renderTechniqueBody(fm, slug, category);
+        const recipesPracticing = reverseLinks.techRecipes.get(slug) || [];
+        augmentedBody = renderTechniqueBody(fm, slug, category, { recipesPracticing });
       } else if (fm.type === 'equipment') {
         const recipesUsing = reverseLinks.eqUsedIn.get(slug) || [];
         augmentedBody = renderEquipmentBody(fm, slug, category, { recipesUsing });

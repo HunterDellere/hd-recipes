@@ -56,23 +56,42 @@ function pickPrimaryTag(entry) {
  *                   hubs that include it.
  */
 export function computeReverseLinks(entries) {
-  const ingUsedIn = new Map();
-  const techUsedIn = new Map();
-  const eqUsedIn = new Map();
+  const ingUsedIn = new Map();   // slug → count (card stats)
+  const ingRecipes = new Map();  // slug → [{title, path}] (ingredient pages)
+  const techUsedIn = new Map();  // slug → count (card stats)
+  const techRecipes = new Map(); // slug → [{title, path}] (technique pages)
+  const eqUsedIn = new Map();    // slug → [{title, path}]
   const cuisineCount = new Map();
   const hubMembers = new Map();
   const inHubs = new Map();
+
+  // Helper: register a recipe → technique link, avoiding double counts when the
+  // same technique appears in both fm.techniques[] and step.technique.
+  function registerTech(slug, recipe) {
+    if (!slug) return;
+    if (!techRecipes.has(slug)) techRecipes.set(slug, []);
+    const list = techRecipes.get(slug);
+    if (!list.some(x => x.path === recipe.path)) {
+      list.push({ title: recipe.title, path: recipe.path });
+      techUsedIn.set(slug, (techUsedIn.get(slug) || 0) + 1);
+    }
+  }
 
   for (const e of entries) {
     if (e.status !== 'complete') continue;
     if (e.type === 'recipe') {
       for (const ing of (e.ingredients || [])) {
         const s = (ing.slug || '').replace(/^ingredients\//, '');
-        if (s) ingUsedIn.set(s, (ingUsedIn.get(s) || 0) + 1);
+        if (!s) continue;
+        ingUsedIn.set(s, (ingUsedIn.get(s) || 0) + 1);
+        if (!ingRecipes.has(s)) ingRecipes.set(s, []);
+        ingRecipes.get(s).push({ title: e.title, path: e.path });
       }
       for (const t of (e.techniques || [])) {
-        const s = String(t).replace(/^techniques\//, '');
-        if (s) techUsedIn.set(s, (techUsedIn.get(s) || 0) + 1);
+        registerTech(String(t).replace(/^techniques\//, ''), e);
+      }
+      for (const step of (e.steps || [])) {
+        if (step && step.technique) registerTech(String(step.technique).replace(/^techniques\//, ''), e);
       }
       for (const eq of (e.equipment || [])) {
         const s = String(eq).replace(/^equipment\//, '');
@@ -100,10 +119,12 @@ export function computeReverseLinks(entries) {
       }
     }
   }
-  // Stable sort hub-membership lists for deterministic output
-  for (const list of inHubs.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
-  for (const list of eqUsedIn.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
-  return { ingUsedIn, techUsedIn, eqUsedIn, cuisineCount, hubMembers, inHubs };
+  // Stable sort lists for deterministic output
+  for (const list of inHubs.values())      list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+  for (const list of eqUsedIn.values())    list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+  for (const list of techRecipes.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+  for (const list of ingRecipes.values())  list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+  return { ingUsedIn, ingRecipes, techUsedIn, techRecipes, eqUsedIn, cuisineCount, hubMembers, inHubs };
 }
 
 /**

@@ -3,8 +3,26 @@
  * scaling controls, equipment chips).
  */
 
+import MarkdownIt from 'markdown-it';
+
+const md = new MarkdownIt({ html: false, linkify: false, typographer: false, breaks: false });
+
 function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+/**
+ * Render a multi-paragraph prose block from frontmatter (e.g. fm.about) as proper
+ * HTML — paragraphs, bold, italics, ordered/unordered lists, inline code.
+ * If the input is empty or one short line, returns a single <p>.
+ */
+function prosify(s) {
+  if (!s) return '';
+  const trimmed = String(s).trim();
+  if (!trimmed) return '';
+  // markdown-it handles its own escaping for inline content. We disabled HTML so
+  // raw <tags> in the source are escaped, which is the safe behavior.
+  return md.render(trimmed);
 }
 
 function relPath(fromPath, toPath) {
@@ -272,7 +290,8 @@ export function renderRecipeBody(fm, slug, category, opts) {
 </div>`;
 }
 
-export function renderIngredientBody(fm, slug, category) {
+export function renderIngredientBody(fm, slug, category, opts = {}) {
+  const recipesUsing = opts.recipesUsing || [];
   const sidebar = `
     <aside class="sidebar" id="sidebar" aria-label="Page contents">
       <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
@@ -283,6 +302,7 @@ export function renderIngredientBody(fm, slug, category) {
         ${fm.seasonality ? '<li><a href="#seasonality">Seasonality</a></li>' : ''}
         ${fm.storage ? '<li><a href="#storage">Storage</a></li>' : ''}
         ${(fm.substitutions || []).length ? '<li><a href="#substitutions">Substitutes</a></li>' : ''}
+        ${recipesUsing.length ? '<li><a href="#used-in">Recipes</a></li>' : ''}
       </ul>
     </aside>`;
 
@@ -299,7 +319,7 @@ export function renderIngredientBody(fm, slug, category) {
     <span class="section-anchor" id="about"></span>
     <div class="section-head"><h2>About</h2></div>
     <div class="scholar">
-      <p>${escapeHtml(fm.about || fm.desc)}</p>
+      ${prosify(fm.about || fm.desc)}
     </div>`);
   }
 
@@ -307,15 +327,28 @@ export function renderIngredientBody(fm, slug, category) {
     sections.push(`
     <span class="section-anchor" id="seasonality"></span>
     <div class="section-head"><h2>Seasonality</h2></div>
-    <div class="scholar"><p>${escapeHtml(fm.seasonality)}</p></div>`);
+    <div class="scholar">${prosify(fm.seasonality)}</div>`);
   }
   if (fm.storage) {
     sections.push(`
     <span class="section-anchor" id="storage"></span>
     <div class="section-head"><h2>Storage</h2></div>
-    <div class="scholar"><p>${escapeHtml(fm.storage)}</p></div>`);
+    <div class="scholar">${prosify(fm.storage)}</div>`);
   }
   if (fm.substitutions && fm.substitutions.length) sections.push(renderSubstitutions(fm));
+
+  if (recipesUsing.length) {
+    const cards = recipesUsing.map(r => `
+        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">${escapeHtml(r.title)}</span>
+        </a>`).join('');
+    sections.push(`
+    <span class="section-anchor" id="used-in"></span>
+    <div class="section-head"><h2>Recipes using this</h2></div>
+    <div class="related-cards">${cards}
+    </div>`);
+  }
 
   return `
 <div class="shell">
@@ -353,7 +386,7 @@ export function renderEquipmentBody(fm, slug, category, opts = {}) {
     <span class="section-anchor" id="about"></span>
     <div class="section-head"><h2>About</h2></div>
     <div class="scholar">
-      <p>${escapeHtml(fm.about || fm.desc)}</p>
+      ${prosify(fm.about || fm.desc)}
     </div>`);
   }
 
@@ -461,7 +494,7 @@ export function renderCuisineBody(fm, slug, category, opts = {}) {
     <span class="section-anchor" id="about"></span>
     <div class="section-head"><h2>About</h2></div>
     <div class="scholar">
-      <p>${escapeHtml(fm.about || fm.desc)}</p>
+      ${prosify(fm.about || fm.desc)}
     </div>`);
   }
 
@@ -487,30 +520,70 @@ export function renderCuisineBody(fm, slug, category, opts = {}) {
 </div>`;
 }
 
-export function renderTechniqueBody(fm, slug, category) {
+export function renderTechniqueBody(fm, slug, category, opts = {}) {
+  const recipesPracticing = opts.recipesPracticing || []; // [{ title, path }] from C2 reverse links
+  const sidebarLinks = [{ id: 'about', label: 'About' }];
+  if (fm.when_to_use)    sidebarLinks.push({ id: 'when-to-use',   label: 'When to use'   });
+  if (fm.failure_modes)  sidebarLinks.push({ id: 'failure-modes', label: 'Failure modes' });
+  if (fm.practice_notes) sidebarLinks.push({ id: 'practice',      label: 'Practice'      });
+  if (recipesPracticing.length) sidebarLinks.push({ id: 'practiced-in', label: 'Recipes' });
+
   const sidebar = `
     <aside class="sidebar" id="sidebar" aria-label="Page contents">
       <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
       <div class="toc-divider"></div>
       <span class="toc-label">On this page</span>
       <ul class="toc-list">
-        <li><a href="#about">About</a></li>
+        ${sidebarLinks.map(l => `<li><a href="#${l.id}">${escapeHtml(l.label)}</a></li>`).join('\n        ')}
       </ul>
     </aside>`;
-  return `
-<div class="shell">
-  ${sidebar}
-  <main class="main" id="main-content">
+
+  const sections = [];
+  sections.push(`
     <header class="topic-hero">
       <span class="topic-hero-eyebrow">Technique</span>
       <h1 class="topic-hero-title">${escapeHtml(fm.title || slug)}</h1>
       ${fm.desc ? `<p class="topic-hero-desc">${escapeHtml(fm.desc)}</p>` : ''}
-    </header>
+    </header>`);
+
+  sections.push(`
     <span class="section-anchor" id="about"></span>
     <div class="section-head"><h2>About</h2></div>
-    <div class="scholar">
-      <p>${escapeHtml(fm.about || fm.desc || '')}</p>
-    </div>
+    <div class="scholar">${prosify(fm.about || fm.desc || '')}</div>`);
+
+  if (fm.when_to_use) sections.push(`
+    <span class="section-anchor" id="when-to-use"></span>
+    <div class="section-head"><h2>When to use</h2></div>
+    <div class="scholar">${prosify(fm.when_to_use)}</div>`);
+
+  if (fm.failure_modes) sections.push(`
+    <span class="section-anchor" id="failure-modes"></span>
+    <div class="section-head"><h2>Failure modes</h2></div>
+    <div class="scholar">${prosify(fm.failure_modes)}</div>`);
+
+  if (fm.practice_notes) sections.push(`
+    <span class="section-anchor" id="practice"></span>
+    <div class="section-head"><h2>Practice</h2></div>
+    <div class="scholar">${prosify(fm.practice_notes)}</div>`);
+
+  if (recipesPracticing.length) {
+    const cards = recipesPracticing.map(r => `
+        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-cat">recipes</span>
+          <span class="rl-title">${escapeHtml(r.title)}</span>
+        </a>`).join('');
+    sections.push(`
+    <span class="section-anchor" id="practiced-in"></span>
+    <div class="section-head"><h2>Recipes that practice this</h2></div>
+    <div class="related-cards">${cards}
+    </div>`);
+  }
+
+  return `
+<div class="shell">
+  ${sidebar}
+  <main class="main" id="main-content">
+    ${sections.join('\n\n    ')}
   </main>
 </div>`;
 }
