@@ -216,8 +216,17 @@ export function renderSubstitutions(fm) {
  * Build the auto-generated recipe body. Used when content/<recipe>.md has no
  * authored body — the entire page renders from frontmatter.
  */
+function renderHubMembership(inHubs, currentPath) {
+  if (!inHubs || !inHubs.length) return '';
+  const chips = inHubs.map(h => `<a class="hub-chip" href="${escapeHtml(relPath(currentPath, h.path))}" data-category="hubs">${escapeHtml(h.title)}</a>`).join('');
+  return `
+    <span class="section-anchor" id="in-hubs"></span>
+    <div class="section-head"><h2>In collections</h2></div>
+    <div class="hub-chips">${chips}</div>`;
+}
+
 export function renderRecipeBody(fm, slug, category, opts) {
-  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition } = opts;
+  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs } = opts;
   const sidebarLinks = [];
   const sections = [];
 
@@ -240,6 +249,9 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
   const nutHtml = renderNutritionBlock(nutrition);
   if (nutHtml) { sections.push(nutHtml); sidebarLinks.push({ id: 'nutrition', label: 'Nutrition' }); }
+
+  const hubsHtml = renderHubMembership(inHubs, `pages/${category}/${slug}.html`);
+  if (hubsHtml) { sections.push(hubsHtml); sidebarLinks.push({ id: 'in-hubs', label: 'Collections' }); }
 
   const sidebar = `
     <aside class="sidebar" id="sidebar" aria-label="Page contents">

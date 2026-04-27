@@ -298,14 +298,15 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
         nutritionByPath[entry.path] = nutrition;
         augmentedBody = renderRecipeBody(fm, slug, category, {
           ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition,
+          inHubs: reverseLinks.inHubs.get(entry.path) || [],
         });
       } else if (fm.type === 'ingredient') {
         augmentedBody = renderIngredientBody(fm, slug, category);
       } else if (fm.type === 'technique') {
         augmentedBody = renderTechniqueBody(fm, slug, category);
       } else if (fm.type === 'equipment') {
-        // recipesUsing is empty for now; C2 will populate via reverse links.
-        augmentedBody = renderEquipmentBody(fm, slug, category, { recipesUsing: [] });
+        const recipesUsing = reverseLinks.eqUsedIn.get(slug) || [];
+        augmentedBody = renderEquipmentBody(fm, slug, category, { recipesUsing });
       } else if (fm.type === 'cuisine') {
         const recipes = cuisineRecipes.get(String(fm.title || slug).toLowerCase()) || [];
         augmentedBody = renderCuisineBody(fm, slug, category, { recipes });

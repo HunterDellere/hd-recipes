@@ -41,18 +41,27 @@ function pickPrimaryTag(entry) {
 }
 
 /**
- * Compute reverse-link counts from all entries in one O(n) pass.
+ * Compute reverse-link counts and lists from all entries in one O(n) pass.
  * Returns:
- *   ingUsedIn:  Map<ingredient_slug, number_of_recipes>
- *   techUsedIn: Map<technique_slug,  number_of_recipes>
- *   cuisineCount: Map<cuisine_name,  number_of_recipes>
- *   hubMembers:   Map<hub_path,      number_of_members>
+ *   ingUsedIn:    Map<ingredient_slug, number_of_recipes>
+ *   techUsedIn:   Map<technique_slug,  number_of_recipes>
+ *   eqUsedIn:     Map<equipment_slug,  Array<{title, path}>>
+ *                   Populated from recipe `equipment[]` frontmatter; empty
+ *                   for any equipment slug not yet referenced by a recipe.
+ *   cuisineCount: Map<cuisine_name,    number_of_recipes>
+ *   hubMembers:   Map<hub_path,        number_of_members>
+ *   inHubs:       Map<entry_path,      Array<{title, path}>>
+ *                   Reverse hub-membership: every recipe (or other entry)
+ *                   referenced in a hub's members[] gets a list of the
+ *                   hubs that include it.
  */
 export function computeReverseLinks(entries) {
   const ingUsedIn = new Map();
   const techUsedIn = new Map();
+  const eqUsedIn = new Map();
   const cuisineCount = new Map();
   const hubMembers = new Map();
+  const inHubs = new Map();
 
   for (const e of entries) {
     if (e.status !== 'complete') continue;
@@ -65,14 +74,36 @@ export function computeReverseLinks(entries) {
         const s = String(t).replace(/^techniques\//, '');
         if (s) techUsedIn.set(s, (techUsedIn.get(s) || 0) + 1);
       }
+      for (const eq of (e.equipment || [])) {
+        const s = String(eq).replace(/^equipment\//, '');
+        if (!s) continue;
+        if (!eqUsedIn.has(s)) eqUsedIn.set(s, []);
+        eqUsedIn.get(s).push({ title: e.title, path: e.path });
+      }
       if (e.cuisine) cuisineCount.set(e.cuisine, (cuisineCount.get(e.cuisine) || 0) + 1);
     }
     if (e.type === 'hub') {
       const members = (e.members || (e._fm && e._fm.members) || []);
-      if (Array.isArray(members)) hubMembers.set(e.path, members.length);
+      if (Array.isArray(members)) {
+        hubMembers.set(e.path, members.length);
+        for (const m of members) {
+          // Members reference targets by slug-with-category, e.g. "recipes/foo".
+          // We resolve to a full pages/X/Y.html path in build.mjs context, but
+          // here we capture the bare slug; resolution happens at render time.
+          const key = m.slug || m;
+          if (!key) continue;
+          // Normalize to "pages/<key>.html" so it matches entry.path.
+          const normalized = `pages/${String(key).replace(/^pages\//, '').replace(/\.html$/, '')}.html`;
+          if (!inHubs.has(normalized)) inHubs.set(normalized, []);
+          inHubs.get(normalized).push({ title: e.title, path: e.path });
+        }
+      }
     }
   }
-  return { ingUsedIn, techUsedIn, cuisineCount, hubMembers };
+  // Stable sort hub-membership lists for deterministic output
+  for (const list of inHubs.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+  for (const list of eqUsedIn.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
+  return { ingUsedIn, techUsedIn, eqUsedIn, cuisineCount, hubMembers, inHubs };
 }
 
 /**

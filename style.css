@@ -527,6 +527,20 @@ pre code { background: none; padding: 0; }
 .eq-chip:hover { border-color: var(--cat-equipment); color: var(--cat-equipment); text-decoration: none; }
 .eq-chip-stub { color: var(--ink-faint); }
 
+/* Hub-membership chips — surfaces which collections a recipe belongs to. */
+.hub-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.hub-chip {
+  display: inline-flex; align-items: center;
+  background: var(--bg-elev); border: 1px solid var(--rule);
+  border-left: 3px solid var(--cat-hubs);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: var(--font-sans); font-size: 14px;
+  color: var(--ink);
+  transition: border-color 120ms, color 120ms;
+}
+.hub-chip:hover { border-color: var(--cat-hubs); color: var(--cat-hubs); text-decoration: none; }
+
 /* ── substitutions / notes ──────────────────────────────── */
 .recipe-subs { padding-left: 1.25rem; font-size: 16px; line-height: 1.6; }
 .recipe-subs li { margin: .5em 0; }
