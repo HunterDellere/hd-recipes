@@ -1,13 +1,25 @@
 {
   "name": "hd · recipes",
   "short_name": "recipes",
-  "description": "Recipes — tested, scaled, sourced.",
-  "start_url": "/",
+  "description": "Recipes — tested, scaled, sourced. Every ingredient links, every macro is real, scales on the fly.",
+  "start_url": "/?utm_source=pwa",
   "scope": "/",
+  "id": "/",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait-primary",
   "background_color": "#faf6ee",
   "theme_color": "#b8423a",
   "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "food",
+    "lifestyle",
+    "books"
+  ],
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -26,6 +38,32 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Surprise me",
+      "short_name": "Random",
+      "description": "Open a random recipe",
+      "url": "/random.html",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Browse recipes",
+      "short_name": "Recipes",
+      "description": "Browse all recipes",
+      "url": "/pages/explore/cook.html",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }

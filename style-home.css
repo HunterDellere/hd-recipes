@@ -150,7 +150,11 @@
   border-radius: 10px 10px 0 0;
   z-index: 11;
   box-shadow: var(--shadow-md);
+  /* Fade-in instead of instant pop */
+  opacity: 1; transform: translateY(0);
+  transition: opacity var(--d-fast) var(--ease-out), transform var(--d-fast) var(--ease-out);
 }
+.home-search-tabs[hidden] { display: flex; opacity: 0; transform: translateY(-4px); pointer-events: none; visibility: hidden; }
 .home-search-tab {
   background: transparent; border: 1px solid transparent; border-radius: 6px;
   padding: 5px 12px;
@@ -169,8 +173,6 @@
 
 .home-search-results {
   position: absolute; left: 0; right: 0;
-  /* Sit flush below the tab strip when present; tabs absolute-position from
-     the input. Tabs ~38px tall; offset is calc(100% + tab-height + 8px gap). */
   top: calc(100% + 8px + 38px);
   margin-top: 0; padding: 0; list-style: none;
   background: var(--bg-elev); border: 1px solid var(--rule);
@@ -179,8 +181,11 @@
   z-index: 10;
   font-family: var(--font-sans);
   text-align: left;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+  opacity: 1;
+  transition: opacity var(--d-fast) var(--ease-out);
 }
+.home-search-results[hidden] { display: block; opacity: 0; pointer-events: none; visibility: hidden; }
 /* When tabs are hidden (empty query / no results path), fall back to the
    original positioning right under the input. */
 .home-search-tabs[hidden] + .home-search-results {

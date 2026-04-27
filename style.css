@@ -11,8 +11,6 @@
   --rule-soft: #f0e8d4;
   --accent: #b8423a;
   --accent-deep: #8b2e26;
-  /* Bumped from .10 → .18: at .10 the hover background failed WCAG AA
-     contrast (~1.8:1) on the light page background. .18 hits ~3.2:1. */
   --accent-soft: rgba(184, 66, 58, 0.18);
   --link: #1f5b8a;
   --focus-ring: 0 0 0 3px rgba(184, 66, 58, 0.35);
@@ -28,15 +26,40 @@
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
 
-  /* Type scale — single source of truth. Existing one-off sizes around the
-     stylesheet should migrate to these over time. The font-family per role
-     stays where it's used; only sizes are tokenized. */
-  --t-display: 2.4rem;   /* h1, hero titles */
-  --t-lead:    1.15rem;  /* hero descriptions, prominent body */
-  --t-body:    1rem;     /* default body */
-  --t-small:   0.875rem; /* secondary copy, card meta */
-  --t-meta:    0.8125rem; /* labels, eyebrows, footer-style */
-  --t-tiny:    0.6875rem; /* uppercase mono labels */
+  /* ── Type scale (modular ratio 1.2 from a 1rem = 16px base) ─────────
+     Use these instead of one-off rem values. The serif gets a slightly
+     wider scale at the top end (--t-display) than 1.2 alone would give,
+     to earn its editorial weight. */
+  --t-tiny:     0.6875rem;  /* 11px — uppercase mono labels (eyebrows, pills) */
+  --t-meta:     0.8125rem;  /* 13px — meta lines, captions */
+  --t-small:    0.875rem;   /* 14px — secondary copy, card meta */
+  --t-body:     1rem;       /* 16px — UI body */
+  --t-prose:    1.1875rem;  /* 19px — long-form reading */
+  --t-lead:     1.25rem;    /* 20px — hero descriptions, callouts */
+  --t-h3:       1.25rem;    /* 20px — sub-section heads */
+  --t-h2:       1.5rem;     /* 24px — section heads (1.2 × 1.25) */
+  --t-h1:       2rem;       /* 32px — page heads, H1 */
+  --t-display:  2.5rem;     /* 40px — hero/recipe titles */
+
+  /* Letter-spacing — single source of truth for the mono-uppercase rhythm */
+  --ls-eyebrow: 0.14em;
+  --ls-tight:   -0.015em;   /* big serif heads */
+
+  /* ── Spacing scale (4-step) ─────────────────────────────────────── */
+  --s-1: 0.25rem;  /* 4 */
+  --s-2: 0.5rem;   /* 8 */
+  --s-3: 0.75rem;  /* 12 */
+  --s-4: 1rem;     /* 16 */
+  --s-5: 1.5rem;   /* 24 */
+  --s-6: 2rem;     /* 32 */
+  --s-7: 3rem;     /* 48 */
+  --s-8: 4.5rem;   /* 72 */
+
+  /* Radii */
+  --r-1: 6px;
+  --r-2: 10px;
+  --r-3: 14px;
+  --r-pill: 999px;
 
   --nav-h: 56px;
   --max-w: 1100px;
@@ -44,6 +67,12 @@
 
   --shadow-sm: 0 1px 2px rgba(42, 31, 16, 0.04), 0 1px 3px rgba(42, 31, 16, 0.06);
   --shadow-md: 0 2px 4px rgba(42, 31, 16, 0.06), 0 4px 12px rgba(42, 31, 16, 0.08);
+  --shadow-lg: 0 4px 8px rgba(42, 31, 16, 0.06), 0 12px 32px rgba(42, 31, 16, 0.10);
+
+  /* Easing + duration tokens */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --d-fast: 120ms;
+  --d-base: 200ms;
 }
 
 [data-theme="dark"] {
@@ -52,15 +81,21 @@
   --bg-soft: #1a140d;
   --ink: #f1ead8;
   --ink-soft: #c4b89b;
-  --ink-faint: #8a7a60;
+  /* Lifted ink-faint from #8a7a60 — the light-mode value disappeared on dark
+     bg (~2.1:1). #a99878 hits ~3.4:1, still feels recessed but readable. */
+  --ink-faint: #a99878;
   --rule: #2e2618;
   --rule-soft: #251e12;
   --accent: #d75c52;
   --accent-deep: #b8423a;
-  /* Bumped from .12 → .22 for the same WCAG AA reason as light mode. */
-  --accent-soft: rgba(215, 92, 82, 0.22);
+  /* Lifted from .22 → .28 for AA contrast on hover backgrounds against the
+     dark bg. .22 was too faint to read as a state change. */
+  --accent-soft: rgba(215, 92, 82, 0.28);
   --link: #6db1e6;
   --focus-ring: 0 0 0 3px rgba(215, 92, 82, 0.45);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.30), 0 1px 3px rgba(0, 0, 0, 0.20);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.40), 0 16px 40px rgba(0, 0, 0, 0.30);
 }
 
 * { box-sizing: border-box; }
@@ -80,11 +115,14 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-serif);
-  font-size: 18px;
-  line-height: 1.65;
+  /* 19px serif body (was 18) — EB Garamond wants the breathing room and the
+     lh of 1.7 (was 1.65) makes long-form prose less cramped. */
+  font-size: var(--t-prose);
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
 a {
@@ -107,13 +145,14 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   margin: 0 0 0.5em;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--ls-tight);
 }
-h1 { font-size: 2.4rem; }
-h2 { font-size: 1.55rem; }
-h3 { font-size: 1.2rem; }
+h1 { font-size: var(--t-h1); }
+h2 { font-size: var(--t-h2); }
+h3 { font-size: var(--t-h3); }
+h4 { font-size: var(--t-body); text-transform: uppercase; letter-spacing: var(--ls-eyebrow); font-family: var(--font-mono); font-weight: 600; }
 
 code, pre {
   font-family: var(--font-mono);
@@ -141,17 +180,20 @@ pre code { background: none; padding: 0; }
 /* ── topnav ─────────────────────────────────────────────── */
 .topnav {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(250, 246, 238, 0.92);
-  backdrop-filter: saturate(180%) blur(8px);
-  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  background: rgba(250, 246, 238, 0.85);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--rule);
   height: var(--nav-h);
-  padding: 0 1.5rem;
+  padding: 0 var(--s-5);
+  /* iOS notch-aware padding so brand + controls breathe past the inset */
+  padding-left: max(var(--s-5), env(safe-area-inset-left));
+  padding-right: max(var(--s-5), env(safe-area-inset-right));
   display: flex; align-items: center; justify-content: space-between;
   font-family: var(--font-sans);
   font-size: 14px;
 }
-[data-theme="dark"] .topnav { background: rgba(21, 17, 10, 0.92); }
+[data-theme="dark"] .topnav { background: rgba(21, 17, 10, 0.85); }
 
 .topnav-brand {
   color: var(--ink); font-weight: 600; letter-spacing: 0.02em;
@@ -164,22 +206,27 @@ pre code { background: none; padding: 0; }
 .topnav-brand-en { color: var(--ink-soft); font-weight: 500; }
 .topnav-brand:hover .topnav-brand-en { color: var(--ink); }
 
-.topnav-right { display: flex; align-items: center; gap: 1.25rem; }
+.topnav-right { display: flex; align-items: center; gap: 1rem; }
 .topnav-right a {
   color: var(--ink-soft);
-  display: inline-flex; align-items: center; gap: 4px;
-  padding: 6px 0;
+  display: inline-flex; align-items: center; gap: var(--s-1);
+  padding: var(--s-2) var(--s-3);
+  min-height: 40px;
+  border-radius: var(--r-1);
+  transition: color var(--d-fast), background var(--d-fast);
 }
-.topnav-right a:hover { color: var(--accent); text-decoration: none; }
+.topnav-right a:hover { color: var(--accent); background: var(--accent-soft); text-decoration: none; }
 .topnav-random span { font-size: 16px; }
 
 .theme-toggle {
-  background: none; border: 1px solid transparent; border-radius: 6px;
-  padding: 6px 10px; cursor: pointer; color: var(--ink-soft);
-  font-size: 16px; line-height: 1;
-  transition: color 120ms, border-color 120ms;
+  background: none; border: 1px solid transparent; border-radius: var(--r-1);
+  padding: var(--s-2) var(--s-3); cursor: pointer; color: var(--ink-soft);
+  font-size: 18px; line-height: 1;
+  min-width: 40px; min-height: 40px;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: color var(--d-fast), border-color var(--d-fast), background var(--d-fast);
 }
-.theme-toggle:hover { border-color: var(--rule); color: var(--accent); }
+.theme-toggle:hover { border-color: var(--rule); color: var(--accent); background: var(--accent-soft); }
 .tt-sun { display: inline; } .tt-moon { display: none; }
 [data-theme="dark"] .tt-sun { display: none; } [data-theme="dark"] .tt-moon { display: inline; }
 
@@ -190,8 +237,12 @@ pre code { background: none; padding: 0; }
   pointer-events: none;
 }
 .reading-progress-bar {
-  height: 100%; width: 0%; background: var(--accent);
-  transition: width 80ms linear;
+  /* Use scaleX instead of width — GPU-composited, no per-frame layout. */
+  height: 100%; width: 100%;
+  transform: scaleX(0); transform-origin: left center;
+  background: var(--accent);
+  transition: transform 80ms linear;
+  will-change: transform;
 }
 
 /* ── shell + sidebar ────────────────────────────────────── */
@@ -206,19 +257,23 @@ pre code { background: none; padding: 0; }
 .sidebar {
   position: sticky; top: calc(var(--nav-h) + 1.5rem);
   align-self: start;
-  font-family: var(--font-sans); font-size: 13.5px;
+  font-family: var(--font-sans); font-size: var(--t-small);
   border-right: 1px solid var(--rule);
   padding-right: 1.25rem;
-  max-height: calc(100vh - var(--nav-h) - 3rem);
+  /* dvh accounts for the mobile address-bar collapse so the sticky panel
+     never gets clipped while the bar animates in/out. */
+  max-height: calc(100dvh - var(--nav-h) - 3rem);
   overflow-y: auto;
 }
 
 .toc-toggle {
   display: none;
   background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 999px;
-  padding: 8px 16px; font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+  padding: 10px 18px; min-height: 44px; font-family: var(--font-sans); font-size: 14px; font-weight: 500;
   color: var(--ink); cursor: pointer;
-  position: fixed; bottom: 1.25rem; right: 1.25rem; z-index: 90;
+  position: fixed; right: 1.25rem;
+  bottom: max(1.25rem, env(safe-area-inset-bottom));
+  z-index: 90;
   box-shadow: var(--shadow-md);
   align-items: center; gap: 6px;
 }
@@ -232,12 +287,16 @@ pre code { background: none; padding: 0; }
 }
 
 .sidebar-backdrop {
-  display: none;
+  /* Always rendered; opacity + visibility transitions instead of display
+     toggling — gives a smooth fade rather than a hard pop. */
   position: fixed; inset: 0; background: rgba(20, 12, 4, 0.45);
   z-index: 89;
-  cursor: pointer; /* signals clickable */
+  cursor: pointer;
+  opacity: 0; visibility: hidden;
+  display: flex; align-items: flex-end; justify-content: center; padding-bottom: 5rem;
+  transition: opacity var(--d-base) var(--ease-out), visibility var(--d-base);
 }
-.sidebar-backdrop.visible { display: flex; align-items: flex-end; justify-content: center; padding-bottom: 5rem; }
+.sidebar-backdrop.visible { opacity: 1; visibility: visible; }
 /* Visible affordance so users know the backdrop dismisses the sidebar.
    Sits at the bottom of the dim layer, above the toc-toggle button. */
 .sidebar-backdrop::after {
@@ -259,7 +318,7 @@ pre code { background: none; padding: 0; }
 }
 .toc-divider { height: 1px; background: var(--rule); margin: 1em 0; border: none; }
 .toc-label {
-  display: block; text-transform: uppercase; letter-spacing: .1em;
+  display: block; text-transform: uppercase; letter-spacing: var(--ls-eyebrow);
   font-size: 11px; font-weight: 600; color: var(--ink-faint);
   margin-bottom: .5em;
 }
@@ -302,7 +361,7 @@ pre code { background: none; padding: 0; }
   color: var(--accent); font-weight: 500;
   margin-bottom: .85rem;
 }
-.topic-hero-title { font-size: 2.6rem; line-height: 1.1; margin: 0 0 .4em; color: var(--ink); }
+.topic-hero-title { font-size: clamp(2rem, 4vw + 1rem, 2.75rem); line-height: 1.08; letter-spacing: var(--ls-tight); margin: 0 0 .4em; color: var(--ink); }
 .topic-hero-desc { font-size: 1.1rem; color: var(--ink-soft); max-width: 60ch; margin: 0; line-height: 1.5; }
 
 /* ── recipe hero ────────────────────────────────────────── */
@@ -314,7 +373,7 @@ pre code { background: none; padding: 0; }
   color: var(--accent); font-weight: 500;
   margin-bottom: .85rem;
 }
-.rh-title { font-size: 2.6rem; line-height: 1.08; margin: 0 0 .35em; color: var(--ink); }
+.rh-title { font-size: clamp(2rem, 4vw + 1rem, 2.75rem); line-height: 1.06; letter-spacing: var(--ls-tight); margin: 0 0 .35em; color: var(--ink); }
 .rh-desc {
   font-size: 1.15rem; color: var(--ink-soft);
   max-width: 60ch; margin: 0 0 1.25rem;
@@ -517,7 +576,8 @@ pre code { background: none; padding: 0; }
   font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
 }
 .step-body {
-  font-size: 17px; line-height: 1.6; color: var(--ink);
+  /* 18px serif at 1.7lh — readable from across a counter while cooking. */
+  font-size: 1.125rem; line-height: 1.7; color: var(--ink);
 }
 .step-tech {
   display: inline-block; margin-left: .5em;
@@ -728,7 +788,7 @@ pre code { background: none; padding: 0; }
 .related-card[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
 .related-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
 .related-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
-.rl-cat { font-family: var(--font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
+.rl-cat { font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600; text-transform: uppercase; letter-spacing: var(--ls-eyebrow); color: var(--ink-faint); }
 .rl-title { font-family: var(--font-serif); font-weight: 600; color: var(--ink); font-size: 16px; line-height: 1.3; }
 .rl-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
 .rl-reason {
@@ -801,7 +861,7 @@ pre code { background: none; padding: 0; }
 .hub-card[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
 .hub-card[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
 .hub-card[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
-.hc-cat { font-family: var(--font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
+.hc-cat { font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600; text-transform: uppercase; letter-spacing: var(--ls-eyebrow); color: var(--ink-faint); }
 .hc-title { font-family: var(--font-serif); font-weight: 600; font-size: 18px; line-height: 1.25; }
 .hc-note { font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; }
 
@@ -1364,8 +1424,12 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
 /* Sticky cook-bar at the bottom — prev / counter / next / done */
 .cook-bar {
   position: fixed; bottom: 0; left: 0; right: 0;
-  display: flex; align-items: center; justify-content: center; gap: .75rem;
-  padding: .75rem 1rem;
+  display: flex; align-items: center; justify-content: center; gap: var(--s-3);
+  /* Pad the bottom by safe-area-inset so the bar doesn't sit on the iOS home
+     indicator territory. Falls back to .75rem on browsers without env(). */
+  padding: var(--s-3) var(--s-4) calc(var(--s-3) + env(safe-area-inset-bottom, 0px));
+  padding-left: max(var(--s-4), env(safe-area-inset-left));
+  padding-right: max(var(--s-4), env(safe-area-inset-right));
   background: rgba(250, 246, 238, 0.96);
   backdrop-filter: saturate(180%) blur(10px);
   -webkit-backdrop-filter: saturate(180%) blur(10px);
@@ -1375,11 +1439,11 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
 }
 [data-theme="dark"] .cook-bar { background: rgba(21, 17, 10, 0.96); }
 .cb-btn {
-  background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 8px;
+  background: var(--bg-elev); border: 1px solid var(--rule); border-radius: var(--r-1);
   padding: 10px 18px; font-family: var(--font-sans); font-size: 14px; font-weight: 600;
   color: var(--ink); cursor: pointer;
-  transition: border-color 120ms, color 120ms, background 120ms;
-  min-height: 44px; /* tap target */
+  transition: border-color var(--d-fast), color var(--d-fast), background var(--d-fast);
+  min-height: 44px; min-width: 56px;
 }
 .cb-btn:hover { border-color: var(--accent); color: var(--accent); }
 .cb-btn:active { transform: scale(0.97); }
@@ -1473,7 +1537,7 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
 .entry-card[data-category="equipment"]::before   { background: var(--cat-equipment); }
 .entry-card[data-category="hubs"]::before        { background: var(--cat-hubs); }
 .entry-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   border-color: var(--accent);
   box-shadow: var(--shadow-md);
   text-decoration: none;
@@ -1799,4 +1863,47 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
   .fam-stats { gap: .15rem; padding: .85rem 1rem; }
   .fam-stat { padding: .4rem .75rem; min-width: 78px; }
   .fam-stat-num { font-size: 1.5rem; }
+}
+
+/* ── editorial callout ──────────────────────────────────
+   For pull-out asides on recipe and technique pages: tips, warnings,
+   "why this works." Authors mark up as:
+     <aside class="callout callout-tip">
+       <p><strong>Why this works.</strong> The starch in pasta water…</p>
+     </aside>
+   Variants: callout-tip (accent), callout-warn (orange), callout-note (neutral).
+*/
+.callout {
+  position: relative;
+  margin: var(--s-5) 0;
+  padding: var(--s-4) var(--s-5) var(--s-4) calc(var(--s-5) + var(--s-4));
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--r-2);
+  font-family: var(--font-serif);
+  font-size: var(--t-prose);
+  line-height: 1.7;
+  color: var(--ink);
+}
+.callout > *:first-child { margin-top: 0; }
+.callout > *:last-child { margin-bottom: 0; }
+.callout::before {
+  position: absolute;
+  left: var(--s-4); top: var(--s-4);
+  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 700;
+  text-transform: uppercase; letter-spacing: var(--ls-eyebrow);
+  color: var(--accent);
+}
+.callout-tip::before  { content: 'Tip'; }
+.callout-warn { border-left-color: var(--cat-techniques); }
+.callout-warn::before { content: 'Watch out'; color: var(--cat-techniques); }
+.callout-note { border-left-color: var(--ink-faint); }
+.callout-note::before { content: 'Note'; color: var(--ink-soft); }
+.callout-why  { border-left-color: var(--cat-cuisines); }
+.callout-why::before  { content: 'Why this works'; color: var(--cat-cuisines); }
+.callout strong:first-child { font-family: var(--font-sans); font-weight: 700; }
+@media (max-width: 600px) {
+  .callout { padding: var(--s-4) var(--s-4) var(--s-4) var(--s-5); padding-top: calc(var(--s-4) + 18px); }
+  .callout::before { top: var(--s-3); }
 }

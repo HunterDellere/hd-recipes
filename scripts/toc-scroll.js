@@ -91,8 +91,9 @@ else { window.__tocScrollInit = true; (function () {
     function update() {
       const scrolled = window.scrollY;
       const total = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = total > 0 ? Math.min(100, Math.max(0, (scrolled / total) * 100)) : 0;
-      bar.style.width = pct.toFixed(2) + '%';
+      const pct = total > 0 ? Math.min(1, Math.max(0, scrolled / total)) : 0;
+      // scaleX is GPU-composited — no layout cost on every scroll frame.
+      bar.style.transform = `scaleX(${pct.toFixed(4)})`;
       raf = null;
     }
     window.addEventListener('scroll', function () {
