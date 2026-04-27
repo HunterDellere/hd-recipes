@@ -16,14 +16,14 @@ about: |
   start to lie, bread internal, deep-fry oil temperature.
 
   Spec that matters: 1°C resolution, calibratable (an ice bath should read 0°C, boiling water should read 100°C
-  at sea level — adjust for altitude), a food-safe sheath, and IP67 if you ever cook with steam or spatter near
+  at sea level; adjust for altitude), a food-safe sheath, and IP67 if you ever cook with steam or spatter near
   the unit. Brand-agnostic at the budget level for home use; precision-grade thermocouples are overkill outside
   a professional kitchen.
 
 substitutions:
   - for: 'instant-read thermometer (oil/sugar)'
     use: 'candy thermometer'
-    note: 'Covers high-temperature work — frying oil, sugar stages, caramel — but can''t probe a protein internal and is clumsy for custards.'
+    note: 'Covers high-temperature work (frying oil, sugar stages, caramel) but can''t probe a protein internal and is clumsy for custards.'
   - for: 'instant-read thermometer (protein doneness)'
     use: 'touch-and-feel'
     note: 'Works for steaks after years of calibration. Doesn''t transfer to chicken thighs, custard, or bread.'

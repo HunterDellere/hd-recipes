@@ -87,7 +87,7 @@ ingredients:
 steps:
   - text: 'Combine water, star anise, cardamom, cinnamon stick, and cloves in a small saucepan. Bring to a boil, then drop heat slightly and simmer hard for 5 minutes. Spices need active heat to release their oils.'
     time_min: 6
-  - text: 'Pull the pot fully off the heat. Stir in the loose-leaf tea, cover, and steep exactly 5 minutes. Don''t go longer — that''s where the dry-mouth tannins come in.'
+  - text: 'Pull the pot fully off the heat. Stir in the loose-leaf tea, cover, and steep exactly 5 minutes. Don''t go longer; that''s where the dry-mouth tannins come in.'
     time_min: 5
   - text: 'Strain through a fine sieve into a heatproof jar. Discard the spent leaves and spices.'
     time_min: 1
@@ -112,7 +112,7 @@ substitutions:
     note: 'For drinks you''ll sip slowly with a lot of melting ice.'
 
 notes: |
-  The split between spice decoction and tea steep is the whole game. Spices are tough wood fibers — they need active heat to release oils. Tea leaves are delicate — boil them and you pull bitter tannins. Two phases, one drink, no astringency.
+  The split between spice decoction and tea steep is the whole game. Spices are tough wood fibers: they need active heat to release oils. Tea leaves are delicate; boil them and you pull bitter tannins. Two phases, one drink, no astringency.
 
   The condensed milk does double duty. It sweetens and provides casein proteins that bind whatever residual tannins made it through, smoothing the finish. The evaporated milk float adds visual drama plus a fat coating on the tongue that mitigates any remaining bitterness.
 

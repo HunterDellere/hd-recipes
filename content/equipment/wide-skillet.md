@@ -26,7 +26,7 @@ substitutions:
     note: 'Sears fine but loses the sloped-side ergonomics for tossing pasta and sauce.'
   - for: 'wide skillet (pan emulsion)'
     use: 'non-stick pan'
-    note: 'Wrong tool — no fond develops, and the surface masks color cues you need to read doneness.'
+    note: 'Wrong tool: no fond develops, and the surface masks color cues you need to read doneness.'
   - for: 'wide skillet (12-inch)'
     use: '10-inch skillet'
     note: 'Cook in two batches. The surface area gap doesn''t forgive crowding.'

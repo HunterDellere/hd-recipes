@@ -10,7 +10,7 @@ tags: ['tea', 'indian']
 updated: '2026-04-26'
 
 about: |
-  Assam is grown in the Brahmaputra valley and produced from Camellia sinensis var. assamica — a different varietal from the Chinese sinensis used in most other black teas. The leaves are larger and the resulting brew is darker, more tannic, and distinctly malty.
+  Assam is grown in the Brahmaputra valley and produced from Camellia sinensis var. assamica, a different varietal from the Chinese sinensis used in most other black teas. The leaves are larger and the resulting brew is darker, more tannic, and distinctly malty.
 
   This robustness is the point in chai: Assam stands up to milk, sugar, and heavy spicing without disappearing. Lighter Darjeelings or Chinese black teas get drowned. CTC (crush-tear-curl) Assam — the small pellet form — extracts faster and is what most Indian households actually use.
 

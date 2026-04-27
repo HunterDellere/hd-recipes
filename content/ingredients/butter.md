@@ -23,7 +23,7 @@ storage: 'Refrigerator, wrapped. Freezes well for 6 months. Keep away from stron
 substitutions:
   - for: 'unsalted butter (browning)'
     use: 'ghee'
-    note: 'Already-clarified — has no milk solids to brown. Different ingredient, not a sub for brown butter.'
+    note: 'Already clarified: has no milk solids to brown. Different ingredient, not a sub for brown butter.'
   - for: 'unsalted butter'
     use: 'salted butter'
     note: 'Reduce added salt by ~1g per 30g butter swapped.'

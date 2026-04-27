@@ -19,15 +19,15 @@ about: |
 
   Cold equipment matters. Both the bowl and the whisk should be near-freezing — warm fat globules deform instead of fracturing, and the foam collapses. Stick the bowl in the freezer for 15 minutes before you start.
 
-storage: 'Original carton in the coldest fridge zone (back, bottom). UHT cream keeps 30–60 days unopened; once opened, ~7 days. Off-smell or bitter taste means lipase has gone to work — discard.'
+storage: 'Original carton in the coldest fridge zone (back, bottom). UHT cream keeps 30–60 days unopened; once opened, ~7 days. Off-smell or bitter taste means lipase has gone to work; discard.'
 
 substitutions:
   - for: 'heavy cream (whipping)'
     use: 'mascarpone, loosened with a splash of milk'
-    note: 'Whips to a similar texture but tastes richer and tangier. Not a 1:1 by volume — start with 75% mascarpone by weight.'
+    note: 'Whips to a similar texture but tastes richer and tangier. Not a 1:1 by volume: start with 75% mascarpone by weight.'
   - for: 'heavy cream (whipping, vegan)'
     use: 'full-fat coconut cream, chilled overnight'
-    note: 'Whips when the solid fat layer is scooped off the watery base. Coconut flavor reads through — fine for tropical desserts, wrong for a classic chantilly.'
+    note: 'Whips when the solid fat layer is scooped off the watery base. Coconut flavor reads through: fine for tropical desserts, wrong for a classic chantilly.'
   - for: 'heavy cream (sauces, reductions)'
     use: 'crème fraîche or whole milk + butter'
     note: 'Crème fraîche is closer in fat and won''t break under acid. Whole milk + butter (3:1 by weight) approximates the fat ratio but lacks the body.'

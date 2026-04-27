@@ -91,7 +91,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Bring a large pot of water to a hard boil with the salt — it should taste like seawater. Set a bowl of ice water nearby.'
+  - text: 'Bring a large pot of water to a hard boil with the salt; it should taste like seawater. Set a bowl of ice water nearby.'
     time_min: 6
   - text: 'Drop the beans in the boiling water. Boil 3–5 minutes, until tender with a slight snap. Pull one and bite.'
     time_min: 4
@@ -124,5 +124,5 @@ notes: |
 
   Why panko: the flakes are larger and airier than standard breadcrumbs, so they absorb less fat and stay crisp longer.
 
-  Lemon zest carries the limonene — the smell of lemon — without the sour bite. Juice is the acid; zest is the perfume. Most of the lemon character belongs to the zest, in the topping; just a teaspoon of juice goes into the pan to cut the butter.
+  Lemon zest carries the limonene (the smell of lemon) without the sour bite. Juice is the acid; zest is the perfume. Most of the lemon character belongs to the zest, in the topping; just a teaspoon of juice goes into the pan to cut the butter.
 ---

@@ -71,60 +71,60 @@ ingredients:
     unit: 'g'
     note: '(4 oz; 3 oz for melting, 1 oz finely chopped to seed)'
 
-  - group: 'Cocoa sponge — bloom'
+  - group: 'Cocoa sponge: bloom'
     item: 'Dutch-process cocoa powder'
     qty: 25
     unit: 'g'
     note: '(¼ cup)'
-  - group: 'Cocoa sponge — bloom'
+  - group: 'Cocoa sponge: bloom'
     item: 'hot brewed coffee'
     qty: 60
     unit: 'ml'
     note: '(¼ cup, near boiling)'
 
-  - group: 'Cocoa sponge — wet'
+  - group: 'Cocoa sponge: wet'
     item: 'granulated sugar'
     qty: 100
     unit: 'g'
     note: '(½ cup)'
-  - group: 'Cocoa sponge — wet'
+  - group: 'Cocoa sponge: wet'
     item: 'buttermilk (or kefir)'
     qty: 60
     unit: 'ml'
     note: '(¼ cup)'
-  - group: 'Cocoa sponge — wet'
+  - group: 'Cocoa sponge: wet'
     item: 'avocado oil'
     qty: 30
     unit: 'ml'
     note: '(2 tbsp)'
-  - group: 'Cocoa sponge — wet'
+  - group: 'Cocoa sponge: wet'
     item: 'large egg, room temp'
     slug: 'eggs'
     qty: 1
     unit: 'each'
-  - group: 'Cocoa sponge — wet'
+  - group: 'Cocoa sponge: wet'
     item: 'vanilla extract'
     qty: 2.5
     unit: 'g'
     note: '(½ tsp)'
 
-  - group: 'Cocoa sponge — dry'
+  - group: 'Cocoa sponge: dry'
     item: 'all-purpose flour'
     slug: 'all-purpose-flour'
     qty: 65
     unit: 'g'
     note: '(½ cup)'
-  - group: 'Cocoa sponge — dry'
+  - group: 'Cocoa sponge: dry'
     item: 'baking soda'
     qty: 3
     unit: 'g'
     note: '(½ tsp)'
-  - group: 'Cocoa sponge — dry'
+  - group: 'Cocoa sponge: dry'
     item: 'baking powder'
     qty: 1
     unit: 'g'
     note: '(¼ tsp)'
-  - group: 'Cocoa sponge — dry'
+  - group: 'Cocoa sponge: dry'
     item: 'sea salt'
     qty: 1.5
     unit: 'g'
@@ -162,13 +162,13 @@ steps:
     time_min: 15
   - text: 'Balsamic caviar: confirm your tall glass of oil has been in the freezer at least 45 minutes. In a clean saucepan, whisk the ⅓ cup reduction with balsamic, water, and agar. Bring to a boil, simmer 2 minutes to activate the agar.'
     time_min: 8
-  - text: 'Pull off heat, cool briefly to ~125°F (50°C). Using a pipette, drop droplets into the cold oil — they''ll set into pearls as they fall. Strain the pearls out, rinse gently with cold water. Refrigerate.'
+  - text: 'Pull off heat, cool briefly to ~125°F (50°C). Using a pipette, drop droplets into the cold oil; they''ll set into pearls as they fall. Strain the pearls out, rinse gently with cold water. Refrigerate.'
     time_min: 10
   - text: 'Tempered chocolate shards: melt the 3 oz portion of chocolate in a bowl (microwave bursts or double boiler) to 115°F (46°C). Pull off heat, immediately add the 1 oz finely chopped seed chocolate, and stir constantly.'
     time_min: 8
-  - text: 'Continue stirring until the chocolate cools to 82°F (27°C). Briefly reheat (3–5 second microwave bursts) back to 88–90°F (31–32°C) — do not exceed 91°F. Spread thinly on parchment, let set at room temp until matte, then refrigerate 10 minutes. Snap into shards.'
+  - text: 'Continue stirring until the chocolate cools to 82°F (27°C). Briefly reheat (3–5 second microwave bursts) back to 88–90°F (31–32°C); do not exceed 91°F. Spread thinly on parchment, let set at room temp until matte, then refrigerate 10 minutes. Snap into shards.'
     time_min: 20
-  - text: 'Sponge: heat oven to 350°F (175°C). Grease two 4-inch round pans. Whisk the cocoa with hot coffee in a large bowl until it forms a dark glossy paste. Let sit 2 minutes — the heat melts the cocoa butter and hydrates the starch, opening the flavor.'
+  - text: 'Sponge: heat oven to 350°F (175°C). Grease two 4-inch round pans. Whisk the cocoa with hot coffee in a large bowl until it forms a dark glossy paste. Let sit 2 minutes; the heat melts the cocoa butter and hydrates the starch, opening the flavor.'
     time_min: 5
   - text: 'Whisk sugar and buttermilk into the hot cocoa paste. The cold buttermilk drops the temperature so the egg won''t scramble. Whisk in oil, vanilla, and the egg until smooth.'
     time_min: 2
@@ -199,9 +199,9 @@ substitutions:
 notes: |
   The "true bloom" — mixing cocoa with hot coffee before flour or eggs — does what dry-blending the cocoa with flour can''t. Heat melts the cocoa butter and hydrates the starch granules, releasing flavor compounds that would otherwise stay locked away. The cake comes out a shade of brown most all-cocoa cakes never reach.
 
-  Tempering is about cocoa butter crystals. Cocoa butter is polymorphic — it can solidify in several crystal forms, only one of which (Form V) is shiny, hard, and snappy. Melting fully (115°F) wipes the slate. Cooling with seed chocolate (82°F) seeds Form V. Reheating slightly (90°F) melts any inferior crystals while leaving Form V intact. Skip the temper and the chocolate goes dull and bendy at room temp.
+  Tempering is about cocoa butter crystals. Cocoa butter is polymorphic: it can solidify in several crystal forms, only one of which (Form V) is shiny, hard, and snappy. Melting fully (115°F) wipes the slate. Cooling with seed chocolate (82°F) seeds Form V. Reheating slightly (90°F) melts any inferior crystals while leaving Form V intact. Skip the temper and the chocolate goes dull and bendy at room temp.
 
   The balsamic caviar is straight cold-oil spherification. Agar sets when it cools below ~40°C, and the frozen oil drops the temperature instantly when each droplet enters. Drop too high and the pearls develop tails; drop too close and they merge.
 
-  The reduction is doing more than flavor work for the filling — by boiling out the free water, you get a thick, pectin-rich jam that doesn''t make the cake soggy.
+  The reduction is doing more than flavor work for the filling: by boiling out the free water, you get a thick, pectin-rich jam that doesn''t make the cake soggy.
 ---

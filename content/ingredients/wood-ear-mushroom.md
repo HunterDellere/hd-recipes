@@ -19,7 +19,7 @@ about: |
 
   One food-safety note worth taking seriously: rehydrate in cool water for under two hours, or in the refrigerator for longer soaks. Wood ear left rehydrating at room temperature for 12+ hours has caused cases of bongkrekic acid poisoning from Burkholderia gladioli contamination. The toxin is heat-stable. Soak short and cold.
 
-  At the store, look for whole pieces rather than shredded — whole gives you control over the size and the shredded product is often older stock. Two main varieties: 木耳 (heimuer, the standard) and 银耳 (silver/snow ear, Tremella fuciformis), which is white and used in sweet desserts. They are not interchangeable.
+  At the store, look for whole pieces rather than shredded: whole gives you control over the size and the shredded product is often older stock. Two main varieties: 木耳 (heimuer, the standard) and 银耳 (silver/snow ear, Tremella fuciformis), which is white and used in sweet desserts. They are not interchangeable.
 
 storage: 'Dried, airtight, dry pantry. 1+ year. Once rehydrated, refrigerate and use within 2 days; do not re-dry rehydrated pieces.'
 

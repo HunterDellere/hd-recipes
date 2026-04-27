@@ -86,7 +86,7 @@ ingredients:
 steps:
   - text: 'Toast the whole spices in a dry small saucepan over low heat for about a minute, until they smell sharp and warm.'
     time_min: 2
-  - text: 'Crush the toasted spices in a mortar — or just mash with the back of a spoon — and combine with the ground nutmeg.'
+  - text: 'Crush the toasted spices in a mortar (or just mash with the back of a spoon) and combine with the ground nutmeg.'
     time_min: 1
   - text: 'Add water, the masala blend, and the smashed ginger knob. Bring to a boil over medium-high and let it bubble hard for 3–4 minutes.'
     time_min: 4

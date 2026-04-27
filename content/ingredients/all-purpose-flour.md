@@ -18,7 +18,7 @@ about: |
 
   Weigh, don't scoop. A cup measured by dipping can vary 20% depending on how packed it is. 1 cup ≈ 125g if spooned and leveled.
 
-storage: 'Airtight container, cool dry pantry. Six months at room temperature; longer in the freezer. Whole-wheat flour goes rancid faster — refrigerate it.'
+storage: 'Airtight container, cool dry pantry. Six months at room temperature; longer in the freezer. Whole-wheat flour goes rancid faster; refrigerate it.'
 
 substitutions:
   - for: 'all-purpose flour'

@@ -144,7 +144,7 @@ ingredients:
     note: '(1 tsp)'
 
 steps:
-  - text: 'Combine milk and all ground spices in a small saucepan with the smashed ginger. Bring to a low simmer and hold there 3–5 minutes — the spices need active heat to bloom.'
+  - text: 'Combine milk and all ground spices in a small saucepan with the smashed ginger. Bring to a low simmer and hold there 3–5 minutes; the spices need active heat to bloom.'
     time_min: 5
   - text: 'Pull from heat. Drop in the Assam tea, cover, and steep exactly 5 minutes. Strain through a fine sieve, pressing hard on the solids. You want about 90 ml (⅓ cup + 2 tbsp). Cool fully.'
     time_min: 8

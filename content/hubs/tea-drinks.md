@@ -16,7 +16,7 @@ members:
     note: 'The extraction primer. Whole spices bloomed in fat-rich milk; tea added late.'
   - slug: 'recipes/thai-iced-tea-no-dye'
     label: 'Thai iced tea (no dye)'
-    note: "Hard tannin extraction balanced with condensed milk's sugar wall. No food coloring — the color is the leaf."
+    note: "Hard tannin extraction balanced with condensed milk's sugar wall. No food coloring; the color is the leaf."
   - slug: 'recipes/thai-iced-tea-with-vanilla-whip'
     label: 'Thai iced tea with vanilla whip'
     note: 'The pivot version. Vanilla bean paste + cream finish. Same extraction discipline, more polish.'

@@ -16,7 +16,7 @@ about: |
 
   The oil separates and rises to the top. Stir vigorously before measuring. To loosen for a sauce, whisk in warm water or noodle water in small additions until the texture is pourable.
 
-storage: 'Pantry before opening; refrigerate after to slow oxidation. The paste keeps 6+ months but the surface oil can go rancid — give it a sniff.'
+storage: 'Pantry before opening; refrigerate after to slow oxidation. The paste keeps 6+ months but the surface oil can go rancid; give it a sniff.'
 
 substitutions:
   - for: 'Chinese sesame paste'

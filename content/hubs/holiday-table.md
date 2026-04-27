@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Holiday table'
 desc: 'A curated meal — protein, sides, dessert — that holds together as one table rather than four good dishes that happen to share a date.'
-metaDesc: 'Holiday table: a curated meal — turkey, sharp side, fat-anchor side, dark closer — ordered as it serves, built to read as one cohesive plate.'
+metaDesc: 'Holiday table: a curated meal (turkey, sharp side, fat-anchor side, dark closer) ordered as it serves, built to read as one cohesive plate.'
 tags: ['holiday']
 updated: '2026-04-26'
 

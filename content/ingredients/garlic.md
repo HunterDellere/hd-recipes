@@ -18,5 +18,5 @@ about: |
 
   Pre-minced jarred garlic is a flat, slightly metallic shadow of the real thing. The chemistry has already happened and stalled; you''re tasting day-old allicin breakdown products. Buy whole heads, mince fresh.
 
-storage: 'Cool dark place with airflow — never the fridge (turns rubbery). Whole heads keep 1–2 months. Once a head is broken open, individual cloves last 1–2 weeks.'
+storage: 'Cool dark place with airflow; never the fridge (turns rubbery). Whole heads keep 1–2 months. Once a head is broken open, individual cloves last 1–2 weeks.'
 ---

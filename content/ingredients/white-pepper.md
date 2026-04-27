@@ -17,14 +17,14 @@ about: |
 
   Used heavily in Chinese cooking precisely because it disappears visually into pale dishes (egg drop soup, hot and sour soup, dun nai custard, white-cooked chicken) while contributing a low, persistent warmth. The piperine is the same as black pepper, so the heat is comparable, but the aromatic top notes that signal "black pepper" to a Western palate are gone.
 
-  Buy whole peppercorns and grind to order. Pre-ground white pepper loses the volatile fermentation aromatics within weeks and reads as dusty, urine-adjacent funk — the smell people complain about when they say they don't like white pepper. Sarawak (Malaysia) and Muntok (Indonesia) are the two reference origins.
+  Buy whole peppercorns and grind to order. Pre-ground white pepper loses the volatile fermentation aromatics within weeks and reads as dusty, urine-adjacent funk: the smell people complain about when they say they don't like white pepper. Sarawak (Malaysia) and Muntok (Indonesia) are the two reference origins.
 
 storage: 'Whole peppercorns, airtight, dark cupboard. 1–2 years. Pre-ground loses aroma in 2–3 months and develops an off note.'
 
 substitutions:
   - for: 'white pepper'
     use: 'black pepper (half quantity)'
-    note: 'Different aromatic profile — adds visible specks and pine/citrus top notes the dish was avoiding. Acceptable in stir-fries; wrong for pale soups and custards.'
+    note: 'Different aromatic profile: adds visible specks and pine/citrus top notes the dish was avoiding. Acceptable in stir-fries; wrong for pale soups and custards.'
   - for: 'white pepper'
     use: 'no real substitute in dun nai or egg drop soup'
     note: 'The fermented funk is the point. Skip it before you sub black pepper into a delicate custard.'

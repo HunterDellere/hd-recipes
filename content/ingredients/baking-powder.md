@@ -17,16 +17,16 @@ about: |
 
   Because baking powder brings its own acid, it works in batters that have no acidic ingredient — plain milk, butter, sugar, flour. That's its job: lift without needing buttermilk or cocoa.
 
-  Test for freshness: drop ½ tsp into a cup of warm water. It should fizz vigorously and immediately. A weak hiss means it's spent — replace it. Powder loses potency fast once moisture sneaks into the can.
+  Test for freshness: drop ½ tsp into a cup of warm water. It should fizz vigorously and immediately. A weak hiss means it's spent; replace it. Powder loses potency fast once moisture sneaks into the can.
 
   Overdose is its own failure mode. Too much baking powder leaves a soapy, metallic finish (excess sodium salts) and can cause cakes to rise fast, then collapse as the gas outpaces structure.
 
-storage: 'Airtight container, cool dry pantry. Replace every 6 months — humidity is the killer. Use a dry spoon every time; one wet dip starts the reaction in the can.'
+storage: 'Airtight container, cool dry pantry. Replace every 6 months; humidity is the killer. Use a dry spoon every time; one wet dip starts the reaction in the can.'
 
 substitutions:
   - for: '1 tsp baking powder'
     use: '¼ tsp baking soda + ½ tsp cream of tartar + ¼ tsp cornstarch'
-    note: 'Single-acting — reacts immediately on contact with liquid. Get the batter into the oven without delay or you lose the lift.'
+    note: 'Single-acting: reacts immediately on contact with liquid. Get the batter into the oven without delay or you lose the lift.'
   - for: '1 tsp baking powder'
     use: '¼ tsp baking soda + ½ cup buttermilk (replacing ½ cup of the recipe''s liquid)'
     note: 'Works if the recipe has room for the liquid swap. Adds tang and softens crumb; recalibrate sugar if the dish is delicate.'

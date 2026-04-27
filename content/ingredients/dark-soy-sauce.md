@@ -16,7 +16,7 @@ about: |
 
   A typical recipe uses 1–2 tbsp dark soy alongside 3–4 tbsp light soy. Dark for the look, light for the salt and umami.
 
-storage: 'Pantry. Refrigerate after opening to preserve the molasses notes. The bottle can sit for a year — you use it slowly.'
+storage: 'Pantry. Refrigerate after opening to preserve the molasses notes. The bottle can sit for a year; you use it slowly.'
 
 substitutions:
   - for: 'dark soy sauce'
@@ -24,5 +24,5 @@ substitutions:
     note: 'Approximate but workable. Color won''t be as deep.'
   - for: 'dark soy sauce'
     use: 'kecap manis (Indonesian sweet soy)'
-    note: 'Much sweeter — only works in dishes that can take the extra sugar.'
+    note: 'Much sweeter; only works in dishes that can take the extra sugar.'
 ---

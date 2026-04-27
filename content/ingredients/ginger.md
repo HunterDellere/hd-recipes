@@ -18,5 +18,5 @@ about: |
 
   Skin is thin and edible. If it bothers you, scrape it off with the edge of a spoon — wastes less than peeling with a knife. Younger ginger (pale skin, pink-tipped, found in Asian groceries) needs no peeling and is milder.
 
-storage: 'Refrigerator, in a paper bag in the crisper, 2–3 weeks. Freezes well — peel, slice, freeze in a bag; grate from frozen straight into pots.'
+storage: 'Refrigerator, in a paper bag in the crisper, 2–3 weeks. Freezes well: peel, slice, freeze in a bag; grate from frozen straight into pots.'
 ---

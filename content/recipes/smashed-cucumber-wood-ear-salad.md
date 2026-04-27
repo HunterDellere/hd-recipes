@@ -76,13 +76,13 @@ ingredients:
 steps:
   - text: 'Lay the cucumbers on a board. Smash them with the side of a heavy knife or a rolling pin until they split and flatten. Cut into rough 1-inch chunks. The jagged edges grab the dressing in a way that smooth slices can''t.'
     time_min: 4
-  - text: 'Toss the cucumbers and wood ear with the salt in a colander. Let sit 15 minutes. The salt pulls cellular water out — the salad won''t weep into the dressing later.'
+  - text: 'Toss the cucumbers and wood ear with the salt in a colander. Let sit 15 minutes. The salt pulls cellular water out, so the salad won''t weep into the dressing later.'
     time_min: 15
   - text: 'In a separate bowl, whisk the Chinkiang vinegar, sugar, soy sauce, and grated garlic until the sugar dissolves.'
     time_min: 2
   - text: 'Slowly whisk in the sesame oil and the chili oil if using. The oil should suspend in a thin film over the vinegar base.'
     time_min: 1
-  - text: 'Pat the cucumbers and wood ear dry with a paper towel. Toss them into the dressing, making sure the folds in the wood ear get coated — they hold flavor better than anything else in the bowl.'
+  - text: 'Pat the cucumbers and wood ear dry with a paper towel. Toss them into the dressing, making sure the folds in the wood ear get coated; they hold flavor better than anything else in the bowl.'
     time_min: 2
   - text: 'Taste. If too sharp, a pinch more sugar. If flat, more salt or a drop of fish sauce. Serve cold.'
     time_min: 1

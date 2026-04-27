@@ -101,7 +101,7 @@ ingredients:
     note: '(½ cup)'
 
 steps:
-  - text: 'Heat the oil in a Dutch oven over medium-high. Add the pork and salt. Sauté hard, breaking it up, until the pork is deep golden brown and the fat runs clear — about 8–10 minutes. If your pan is small, brown in two batches; crowding steams the pork instead of crisping it.'
+  - text: 'Heat the oil in a Dutch oven over medium-high. Add the pork and salt. Sauté hard, breaking it up, until the pork is deep golden brown and the fat runs clear, about 8–10 minutes. If your pan is small, brown in two batches; crowding steams the pork instead of crisping it.'
     time_min: 10
   - text: 'Stir in the ya cai and dark soy. Cook 3 minutes until the preserved greens crisp slightly at the edges.'
     time_min: 3
@@ -109,7 +109,7 @@ steps:
     time_min: 1
   - text: 'In a large heatproof bowl, whisk the sesame paste, chili oil, Chinkiang vinegar, and light soy. The sesame paste will fight you at first — keep at it.'
     time_min: 3
-  - text: 'Wipe the Dutch oven, fill with salted water, bring to a boil. Cook the noodles per the package — for fresh wheat noodles, usually 2–3 minutes.'
+  - text: 'Wipe the Dutch oven, fill with salted water, bring to a boil. Cook the noodles per the package; for fresh wheat noodles, usually 2–3 minutes.'
     time_min: 8
   - text: 'Just before draining, ladle ½ cup (120 ml) of the boiling noodle water into the sauce bowl and whisk hard. The starch turns the sauce into a creamy emulsion that clings to the noodles.'
     time_min: 1
@@ -119,12 +119,12 @@ steps:
 substitutions:
   - for: 'fresh wheat noodles'
     use: 'GF brown rice noodles'
-    note: 'Skip the noodle-water emulsion — rice noodle water lacks the gluten-starch profile to stabilize the sauce.'
+    note: 'Skip the noodle-water emulsion: rice noodle water lacks the gluten-starch profile to stabilize the sauce.'
 
 notes: |
   The sauce works because hot starchy water binds sesame paste (lipid) and vinegar/soy (water-based) into a stable emulsion that coats every noodle in a uniform film. Without that step you get a puddle of oil at the bottom of the bowl.
 
-  Render the pork hard and dry. Soft, sad pork ruins the texture contrast that defines this dish. The goal is something close to crispy bits — they should crackle when you bite through them against the silky noodles.
+  Render the pork hard and dry. Soft, sad pork ruins the texture contrast that defines this dish. The goal is something close to crispy bits: they should crackle when you bite through them against the silky noodles.
 
   Ya cai is non-negotiable. The fermented mustard greens contribute the funky-savory backbone. Most Asian groceries carry it under the brand "Yibin Sui Mi Ya Cai." If you absolutely cannot find it, finely chopped Tianjin preserved vegetable (dong cai) is an okay stand-in.
 ---

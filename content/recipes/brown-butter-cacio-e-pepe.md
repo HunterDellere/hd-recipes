@@ -66,12 +66,12 @@ ingredients:
     note: '(7 oz dried)'
 
 steps:
-  - text: 'Set a 4-quart pot of water to boil with the salt. Taste it — it must be aggressively saline, like the sea. This water seasons the pasta from the inside out.'
+  - text: 'Set a 4-quart pot of water to boil with the salt. Taste it: it must be aggressively saline, like the sea. This water seasons the pasta from the inside out.'
     time_min: 8
   - text: 'Melt butter in a wide stainless skillet over medium-low. Cook past the foaming stage until milk solids turn deep amber and the pan smells like toasted hazelnut, ~4 minutes. Pull off heat.'
     technique: 'brown-butter'
     time_min: 4
-  - text: 'Bloom the cracked pepper directly in the brown butter. Return the pan to low heat for 30 seconds until fragrant. The fat carries the piperine — this step is non-negotiable.'
+  - text: 'Bloom the cracked pepper directly in the brown butter. Return the pan to low heat for 30 seconds until fragrant. The fat carries the piperine; this step is non-negotiable.'
     time_min: 1
   - text: 'Drop the pasta. Cook 1 minute shy of al dente. Reserve 200ml (¾ cup) of starchy pasta water in a heatproof measuring cup before draining.'
     time_min: 8
@@ -80,7 +80,7 @@ steps:
     time_min: 1
   - text: 'Pull from heat. Add pecorino in three additions, tossing constantly between each. Temperature is critical: too hot and the cheese seizes; too cool and it does not hydrate. The sauce should coat the back of a spoon like cream.'
     time_min: 1
-  - text: 'The Adjustment: if the sauce is too thick, splash more pasta water; if it is broken or grainy, more water plus harder tossing rebuilds the emulsion. Taste — pecorino brings salt and umami; if flat, add more cracked pepper. No finishing acid here; the pecorino lactic tang carries.'
+  - text: 'The Adjustment: if the sauce is too thick, splash more pasta water; if it is broken or grainy, more water plus harder tossing rebuilds the emulsion. Taste: pecorino brings salt and umami; if flat, add more cracked pepper. No finishing acid here; the pecorino lactic tang carries.'
 
 techniques: ['brown-butter', 'pan-emulsion']
 equipment: []
@@ -91,7 +91,7 @@ substitutions:
     note: 'Less sharp, more nutty. Bump black pepper to compensate for the missing aggressive salt-tang.'
   - for: 'tonnarelli'
     use: 'bucatini'
-    note: 'Different mouthfeel — the hollow holds sauce differently. Cooks ~2 min longer.'
+    note: 'Different mouthfeel: the hollow holds sauce differently. Cooks ~2 min longer.'
 
 notes: |
   The dish lives or dies on emulsion. If you skip the brown butter and pepper bloom, you have boiled pasta with cheese — not cacio e pepe.

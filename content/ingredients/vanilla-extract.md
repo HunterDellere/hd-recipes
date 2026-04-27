@@ -21,7 +21,7 @@ about: |
 
   Double-strength extract (2x) exists for commercial use; halve the quantity if you've got it.
 
-storage: 'Dark cupboard, tightly capped. Indefinite shelf life — alcohol preserves it. Light and air slowly oxidize the aromatics, so don''t leave the bottle open or on a sunny shelf.'
+storage: 'Dark cupboard, tightly capped. Indefinite shelf life; alcohol preserves it. Light and air slowly oxidize the aromatics, so don''t leave the bottle open or on a sunny shelf.'
 
 substitutions:
   - for: 'vanilla extract'

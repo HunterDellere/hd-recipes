@@ -19,9 +19,9 @@ about: |
 
   Iodized vs non-iodized matters at the edges. Potassium iodide adds a faint metallic, slightly bitter note that's invisible in a stew but audible in a pastry cream, a panna cotta, or an egg-yolk-heavy sauce. Use non-iodized for delicate dishes. Iodized is fine for general cooking and is genuinely useful as a dietary iodine source.
 
-  Fine sea salt is not a stand-in for kosher salt by volume. It's roughly 1.5–2× as dense as Diamond Crystal — a teaspoon weighs ~6g vs ~3g. Salt by weight when crossing between them.
+  Fine sea salt is not a stand-in for kosher salt by volume. It's roughly 1.5–2× as dense as Diamond Crystal: a teaspoon weighs ~6g vs ~3g. Salt by weight when crossing between them.
 
-storage: 'Airtight container, dry shelf. Indefinite. Failure mode is clumping from kitchen humidity — keep the lid on, store away from the stove and dishwasher.'
+storage: 'Airtight container, dry shelf. Indefinite. Failure mode is clumping from kitchen humidity; keep the lid on, store away from the stove and dishwasher.'
 
 substitutions:
   - for: 'fine sea salt (baking)'
@@ -29,8 +29,8 @@ substitutions:
     note: 'By weight, 1:1. Watch for iodized off-notes in delicate baked goods (shortbread, custards).'
   - for: 'fine sea salt'
     use: 'kosher salt'
-    note: 'By weight, 1:1. By volume, use ~1.5–2× the measure. Coarse flakes may not fully dissolve in brief mixes — grind first or hydrate before adding.'
+    note: 'By weight, 1:1. By volume, use ~1.5–2× the measure. Coarse flakes may not fully dissolve in brief mixes; grind first or hydrate before adding.'
   - for: 'fine sea salt (finishing)'
     use: 'flaky sea salt (Maldon)'
-    note: 'Different job — flake salt is for crunch and visible sparkle. Fine sea salt finishes invisibly; Maldon finishes texturally.'
+    note: 'Different job: flake salt is for crunch and visible sparkle. Fine sea salt finishes invisibly; Maldon finishes texturally.'
 ---

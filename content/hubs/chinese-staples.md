@@ -5,7 +5,7 @@ status: 'complete'
 content_review: 'pending'
 
 title: 'Chinese staples'
-desc: 'The dishes that teach the Chinese pantry — the light/dark soy distinction, Chinkiang acid, Sichuan má-là, and sesame-paste body.'
+desc: 'The dishes that teach the Chinese pantry: the light/dark soy distinction, Chinkiang acid, Sichuan má-là, and sesame-paste body.'
 metaDesc: 'Chinese staples: a curated reading path through the pantry — soy, Chinkiang, Sichuan peppercorn, sesame paste — ordered from foundation to riff.'
 tags: ['chinese']
 updated: '2026-04-26'
@@ -22,7 +22,7 @@ members:
     note: 'Tempering eggs in milk for the silken set. The white pepper is the unmissable note.'
   - slug: 'recipes/sichuan-dandan-mian'
     label: 'Sichuan dandan mian'
-    note: 'Now you assemble — chili oil, sesame paste, Sichuan peppercorn powder, sui mi ya cai. Six pantry items reading clearly in one bowl.'
+    note: 'Now you assemble: chili oil, sesame paste, Sichuan peppercorn powder, sui mi ya cai. Six pantry items reading clearly in one bowl.'
   - slug: 'recipes/cocoa-osmanthus-dun-nai'
     label: 'Cocoa osmanthus dun nai'
     note: 'Once dun nai is fluent, the floral + cocoa pivot is where you start to riff.'

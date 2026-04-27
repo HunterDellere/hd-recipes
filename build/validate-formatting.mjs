@@ -4,7 +4,26 @@
  *   - Recipe pages must have section-anchors for ingredients + execution
  *   - Verified entries should have a sources block
  *   - Recipes should declare servings and at least 2 steps
+ *   - Content pieces must contain at most MAX_EMDASH em-dashes (style constraint).
+ *     Code fences are skipped. Counts run against the source markdown so this
+ *     reflects authoring intent, not post-build auto-link artifacts.
  */
+
+const MAX_EMDASH = 2;
+
+function countEmdashesOutsideCodeFences(raw) {
+  let total = 0;
+  let inFence = false;
+  for (const line of raw.split('\n')) {
+    if (/^\s*```/.test(line)) { inFence = !inFence; continue; }
+    if (inFence) continue;
+    // Strip inline code spans before counting
+    const stripped = line.replace(/`[^`]*`/g, '');
+    const matches = stripped.match(/—/g);
+    if (matches) total += matches.length;
+  }
+  return total;
+}
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -34,8 +53,20 @@ for (const pageFull of walkPages(PAGES)) {
   const contentFull = path.join(ROOT, contentRel);
   if (!fs.existsSync(contentFull)) continue;
   const html = fs.readFileSync(pageFull, 'utf8');
-  const { data: fm } = matter(fs.readFileSync(contentFull, 'utf8'));
+  const rawMd = fs.readFileSync(contentFull, 'utf8');
+  const { data: fm } = matter(rawMd);
   if (fm.status !== 'complete') continue;
+
+  // Em-dash style cap. Family/explore index pages are rendered shells, not
+  // editorial prose, so they're exempt.
+  if (fm.type !== 'family') {
+    const emdashes = countEmdashesOutsideCodeFences(rawMd);
+    if (emdashes > MAX_EMDASH) {
+      emit('ERROR', contentRel, `${emdashes} em-dashes — limit is ${MAX_EMDASH}`, {
+        fix: 'Replace surplus em-dashes with colons, commas, periods, or parentheticals — em-dash should be reserved for the strongest pauses.',
+      });
+    }
+  }
 
   if (!html.includes('class="section-anchor"')) {
     emit('WARN', contentRel, 'no section-anchor elements — TOC scroll-spy disabled', { fix: 'Add section anchors with ids' });

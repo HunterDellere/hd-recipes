@@ -18,5 +18,5 @@ about: |
 
   Skim won't substitute in custards or puddings — without the fat you lose the silken mouthfeel, and the proteins set chalkier.
 
-storage: 'Refrigerator at 4°C or colder. Opened cartons last about a week. Freezes (texture suffers slightly on thaw — fine for cooking, not for drinking).'
+storage: 'Refrigerator at 4°C or colder. Opened cartons last about a week. Freezes (texture suffers slightly on thaw; fine for cooking, not for drinking).'
 ---

@@ -27,7 +27,7 @@ ingredients:
     slug: 'whole-milk'
     qty: 240
     unit: 'ml'
-    note: '(1 cup; whole only — skim won''t set silken)'
+    note: '(1 cup; whole only; skim won''t set silken)'
   - group: 'Custard'
     item: 'large eggs'
     slug: 'eggs'
@@ -53,13 +53,13 @@ ingredients:
 steps:
   - text: 'Combine milk, sugar, salt, and vanilla paste in a small saucepan. Heat until hot to the touch (60°C / 140°F) and the sugar dissolves. Do not boil. You should smell the vanilla bloom and see the seeds suspend.'
     time_min: 3
-  - text: 'Whisk the eggs in a separate bowl, gently — no foam.'
+  - text: 'Whisk the eggs in a separate bowl, gently, no foam.'
     time_min: 1
   - text: 'Slowly stream the warm milk into the eggs while whisking. This brings the eggs up gradually so they don''t scramble on contact.'
     time_min: 2
   - text: 'Strain through a fine-mesh sieve into a heatproof bowl. Cover tightly with foil and poke two small holes in the top.'
     time_min: 2
-  - text: 'Set a trivet or folded kitchen towel in the bottom of a Dutch oven (insulates the bowl from direct heat). Add water to about 1 inch — it should come halfway up the bowl once the bowl is in. Bring to a boil with the lid off.'
+  - text: 'Set a trivet or folded kitchen towel in the bottom of a Dutch oven (insulates the bowl from direct heat). Add water to about 1 inch; it should come halfway up the bowl once the bowl is in. Bring to a boil with the lid off.'
     time_min: 5
   - text: 'Drop the heat to low. Place the foil-covered bowl on the trivet. Cover. Steam 8 minutes.'
     time_min: 8

@@ -76,7 +76,7 @@ steps:
   - text: 'Brown the butter in a light-colored saucepan over medium heat. It will foam, sizzle, then go quiet as the milk solids drop and turn amber. Pull when you smell toasted hazelnut, about 4 minutes. Pour into a large heatproof bowl and let cool 5 minutes.'
     technique: 'brown-butter'
     time_min: 5
-  - text: 'Whisk the granulated and brown sugars into the warm butter for a full minute. The mixture looks gritty — that''s correct.'
+  - text: 'Whisk the granulated and brown sugars into the warm butter for a full minute. The mixture looks gritty; that''s correct.'
     time_min: 2
   - text: 'Whisk in the egg and vanilla. Beat hard for 30–60 seconds until glossy and ribbon-thick. This is what creates the crackle on top.'
     time_min: 1
@@ -84,7 +84,7 @@ steps:
     time_min: 1
   - text: 'Heat oven to 350°F (175°C). Scoop dough into 1.5-tbsp balls, roll generously in the reserved sugar, and space 2 inches apart on a parchment-lined sheet.'
     time_min: 5
-  - text: 'Bake 10–12 minutes. At the 8-minute mark, lift the pan an inch and drop it on the rack — this collapses the centers and gives you the rippled top.'
+  - text: 'Bake 10–12 minutes. At the 8-minute mark, lift the pan an inch and drop it on the rack: this collapses the centers and gives you the rippled top.'
     time_min: 12
   - text: 'Pull when edges are set and golden but centers look underbaked. Cool on the pan 10 minutes; the residual heat finishes the chew.'
     time_min: 10

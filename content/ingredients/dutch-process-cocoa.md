@@ -21,12 +21,12 @@ about: |
 
   Recipes that specify "cocoa powder" without qualification usually mean natural in the US and Dutch in Europe. If a recipe doesn't say which and the leavener is soda, it's natural. If it's powder, either works.
 
-storage: 'Airtight container, cool dry pantry, away from light. 1–2 years. Cocoa is dry but oxidizes slowly; old cocoa tastes flat and dusty. Don''t refrigerate — condensation clumps it.'
+storage: 'Airtight container, cool dry pantry, away from light. 1–2 years. Cocoa is dry but oxidizes slowly; old cocoa tastes flat and dusty. Don''t refrigerate; condensation clumps it.'
 
 substitutions:
   - for: 'Dutch-process cocoa (in a recipe with baking powder)'
     use: 'natural cocoa'
-    note: 'Not 1:1 without recalibration. For every 3 tbsp natural cocoa, also reduce baking powder by ⅛ tsp and add ⅛ tsp baking soda — the soda neutralizes the natural cocoa''s extra acidity. Color and flavor will shift lighter and tangier.'
+    note: 'Not 1:1 without recalibration. For every 3 tbsp natural cocoa, also reduce baking powder by ⅛ tsp and add ⅛ tsp baking soda; the soda neutralizes the natural cocoa''s extra acidity. Color and flavor will shift lighter and tangier.'
   - for: 'natural cocoa (in a recipe with baking soda)'
     use: 'Dutch-process cocoa'
     note: 'Same problem in reverse. Swap each ¼ tsp baking soda for 1 tsp baking powder. Otherwise the lift collapses and the dish tastes flat.'

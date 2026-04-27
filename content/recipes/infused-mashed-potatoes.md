@@ -81,11 +81,11 @@ ingredients:
     note: '(2 tbsp)'
 
 steps:
-  - text: 'Put the unpeeled potatoes in a large pot, cover with cold water by an inch, add the salt. Bring to a boil, then drop to a simmer. Cook 20–30 minutes — a knife should slide in with no resistance.'
+  - text: 'Put the unpeeled potatoes in a large pot, cover with cold water by an inch, add the salt. Bring to a boil, then drop to a simmer. Cook 20–30 minutes; a knife should slide in with no resistance.'
     time_min: 25
   - text: 'While the potatoes go, combine milk, butter, smashed garlic, thyme, rosemary, and bay in a small saucepan. Heat gently on low until the butter melts and steam rises. Do not boil. Cover, pull from heat, and steep 15 minutes. Strain out the solids before using.'
     time_min: 18
-  - text: 'Drain the potatoes thoroughly. Return them to the empty hot pot over low heat. Shake gently 1–2 minutes until the skins look dry and chalky. Cut the heat. This is the steam-dry — the drier the potato cells, the more fat they''ll absorb.'
+  - text: 'Drain the potatoes thoroughly. Return them to the empty hot pot over low heat. Shake gently 1–2 minutes until the skins look dry and chalky. Cut the heat. This is the steam-dry: the drier the potato cells, the more fat they''ll absorb.'
     time_min: 2
   - text: 'Holding each hot potato in a kitchen towel, slip the skin off (it should peel easily). Pass through a ricer or food mill into a large serving bowl.'
     time_min: 8
@@ -108,7 +108,7 @@ substitutions:
 notes: |
   Boiling potatoes whole and unpeeled keeps water out. Water dilutes flavor. The skin acts as a steamer jacket — the potato cooks in its own moisture, holds onto its starch and minerals, and is ready to absorb fat the moment you peel and rice it.
 
-  The ricer matters. Food processors and blenders shear starch granules open and the released amylose turns the mash gluey. A ricer pushes potato through small holes intact — same starch, no glue.
+  The ricer matters. Food processors and blenders shear starch granules open and the released amylose turns the mash gluey. A ricer pushes potato through small holes intact: same starch, no glue.
 
   Yukon Golds (medium starch) over Russets (high) or Reds (low). Yukons have natural butter color and creaminess; Russets need more fat to taste rich; Reds stay too dense.
 ---

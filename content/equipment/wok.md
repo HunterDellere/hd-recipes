@@ -25,5 +25,5 @@ about: |
 substitutions:
   - for: 'wok'
     use: 'wide skillet'
-    note: 'Handles some stir-fries (proteins that sit flat and brown) but loses the wall geometry that lets you push food up and out of the heat. Browns less, steams more — fakeable for 1–2 portions, not 4.'
+    note: 'Handles some stir-fries (proteins that sit flat and brown) but loses the wall geometry that lets you push food up and out of the heat. Browns less, steams more; fakeable for 1–2 portions, not 4.'
 ---

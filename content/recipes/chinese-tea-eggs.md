@@ -86,7 +86,7 @@ steps:
     time_min: 5
   - text: 'In the same Dutch oven, combine water, both soy sauces, sugar, star anise, cinnamon sticks, Sichuan peppercorns, and tea leaves. Bring to a simmer.'
     time_min: 5
-  - text: 'Submerge the cracked eggs. Bring back to a bare simmer, then cut the heat. Cover and let steep at least 4 hours at room temperature, or — better — refrigerate and steep 24 hours. Longer steep, deeper marbling and flavor.'
+  - text: 'Submerge the cracked eggs. Bring back to a bare simmer, then cut the heat. Cover and let steep at least 4 hours at room temperature, or (better) refrigerate and steep 24 hours. Longer steep, deeper marbling and flavor.'
     time_min: 1440
   - text: 'Peel one to check the marble pattern and the seasoning. If the flavor is faint, return the rest to the brine for another 4 hours.'
     time_min: 2

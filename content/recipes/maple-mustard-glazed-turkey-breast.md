@@ -100,16 +100,16 @@ steps:
     time_min: 5
   - text: 'Slide your fingers between skin and meat to loosen the skin without tearing it. Push the herb butter into that pocket and massage it across the breast.'
     time_min: 5
-  - text: 'Set the turkey on a rack in a roasting pan. Roast at 425°F (220°C) for 20 minutes — this jumpstarts the Maillard on the skin.'
+  - text: 'Set the turkey on a rack in a roasting pan. Roast at 425°F (220°C) for 20 minutes; this jumpstarts the Maillard on the skin.'
     time_min: 20
   - text: 'Drop oven to 325°F (165°C). Continue roasting.'
   - text: 'Whisk maple syrup, both mustards, vinegar, and soy in a small bowl while the turkey roasts.'
     time_min: 2
-  - text: 'When the thickest part of the breast hits 150°F (65°C) — usually 45–60 minutes total — brush liberally with the glaze. Return to the oven.'
+  - text: 'When the thickest part of the breast hits 150°F (65°C), usually 45–60 minutes total, brush liberally with the glaze. Return to the oven.'
     time_min: 1
   - text: 'Roast another 10–15 minutes until the breast hits 160°F (71°C) and the glaze is bubbly and sticky. If it''s pale, broil 60 seconds, watching constantly.'
     time_min: 15
-  - text: 'Pull from the oven. Rest at least 20 minutes — carryover takes it to a safe 165°F (74°C) and the fibers reabsorb the juice. Slice against the grain.'
+  - text: 'Pull from the oven. Rest at least 20 minutes; carryover takes it to a safe 165°F (74°C) and the fibers reabsorb the juice. Slice against the grain.'
     time_min: 20
 
 substitutions:
