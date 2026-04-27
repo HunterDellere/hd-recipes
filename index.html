@@ -68,9 +68,15 @@
     <h2 class="home-section-h" id="search-heading">Find a recipe, ingredient, or technique</h2>
     <div class="home-search-wrap">
       <input type="search" id="home-search" class="home-search" placeholder="cacio e pepe, tea egg, brown butter…" autocomplete="off" spellcheck="false" aria-label="Search">
+      <div id="home-search-tabs" class="home-search-tabs" role="tablist" aria-label="Filter results by type" hidden>
+        <button type="button" class="home-search-tab active" role="tab" aria-selected="true" data-scope="all">All <span class="hst-count" data-scope-count="all"></span></button>
+        <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="recipe">Recipes <span class="hst-count" data-scope-count="recipe"></span></button>
+        <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="ingredient">Ingredients <span class="hst-count" data-scope-count="ingredient"></span></button>
+        <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="technique">Techniques <span class="hst-count" data-scope-count="technique"></span></button>
+      </div>
       <ul id="home-search-results" class="home-search-results" hidden></ul>
     </div>
-    <p class="home-search-hint">Press <kbd>/</kbd> anywhere · <kbd>↑</kbd> <kbd>↓</kbd> to navigate · <kbd>Enter</kbd> to open</p>
+    <p class="home-search-hint">Press <kbd>/</kbd> anywhere · <kbd>↑</kbd> <kbd>↓</kbd> to navigate · <kbd>Enter</kbd> to open · typo-tolerant</p>
   </section>
 
   <section class="home-section home-featured-section" aria-labelledby="featured-heading">

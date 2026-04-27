@@ -137,13 +137,46 @@
     initSearch(entries);
   }
 
+  // ── Levenshtein distance with early-out at maxDist (typo-tolerance core) ──
+  // Returns the actual distance if ≤ maxDist, else maxDist + 1.
+  // Using two rolling rows; allocates O(n) once, no per-call alloc.
+  const _lvRow = new Int32Array(64);
+  const _lvNext = new Int32Array(64);
+  function levenshteinBounded(a, b, maxDist) {
+    const la = a.length, lb = b.length;
+    if (Math.abs(la - lb) > maxDist) return maxDist + 1;
+    if (la === 0) return lb;
+    if (lb === 0) return la;
+    const row = lb + 1 <= _lvRow.length ? _lvRow : new Int32Array(lb + 1);
+    const next = lb + 1 <= _lvNext.length ? _lvNext : new Int32Array(lb + 1);
+    for (let j = 0; j <= lb; j++) row[j] = j;
+    for (let i = 1; i <= la; i++) {
+      next[0] = i;
+      let rowMin = i;
+      for (let j = 1; j <= lb; j++) {
+        const cost = a.charCodeAt(i - 1) === b.charCodeAt(j - 1) ? 0 : 1;
+        const v = Math.min(next[j - 1] + 1, row[j] + 1, row[j - 1] + cost);
+        next[j] = v;
+        if (v < rowMin) rowMin = v;
+      }
+      if (rowMin > maxDist) return maxDist + 1; // can't recover
+      // swap rows
+      for (let j = 0; j <= lb; j++) row[j] = next[j];
+    }
+    return row[lb];
+  }
+
   async function initSearch(entries) {
     const input = $('#home-search');
     const resultsEl = $('#home-search-results');
+    const tabsEl = $('#home-search-tabs');
     if (!input) return;
     let index = null;
+    let indexKeysCache = null; // cached Object.keys for fuzzy/prefix scans
     const pathToEntry = new Map(entries.map(e => [e.path, e]));
     let activeIndex = -1;
+    let scope = 'all'; // 'all' | 'recipe' | 'ingredient' | 'technique'
+    let lastScored = []; // [{pid, score, type}] across all scopes — drives tab counts + render
 
     input.setAttribute('role', 'combobox');
     input.setAttribute('aria-autocomplete', 'list');
@@ -153,47 +186,159 @@
 
     input.addEventListener('focus', async () => {
       if (index) return;
-      try { index = await loadJson('data/search-index.json'); } catch {}
+      try {
+        index = await loadJson('data/search-index.json');
+        indexKeysCache = Object.keys(index.index);
+      } catch {}
     });
 
-    function render(results) {
-      if (!results.length) {
-        resultsEl.innerHTML = '<li class="sr-empty">No matches</li>';
-        resultsEl.hidden = false;
-        input.setAttribute('aria-expanded', 'true');
-        return;
+    // ── postings lookup with prefix + substring + bounded Levenshtein ──
+    function postingsFor(token) {
+      const postings = new Map(); // pid → best score from this token
+      const idx = index.index;
+
+      function add(list, multiplier, boost) {
+        for (const [pid, s] of list) {
+          const score = s * multiplier + (boost || 0);
+          const prev = postings.get(pid);
+          if (prev === undefined || score > prev) postings.set(pid, score);
+        }
       }
-      resultsEl.innerHTML = results.map(([pid], i) => {
+
+      // 1. Exact match (highest weight)
+      if (idx[token]) add(idx[token], 1.0, 500);
+
+      const tlen = token.length;
+      const isShort = tlen <= 2;
+      let foundPrefix = false;
+
+      // 2. Prefix + substring scan over all keys
+      for (const key of indexKeysCache) {
+        if (key === token) continue;
+        if (key.startsWith(token)) {
+          add(idx[key], isShort ? 0.6 : 0.7, 0);
+          foundPrefix = true;
+        } else if (!isShort && key.includes(token)) {
+          add(idx[key], 0.4, 0);
+        }
+      }
+
+      // 3. Levenshtein-1 (typo tolerance) — only when:
+      //    - token is ≥4 chars (avoids over-matching short words)
+      //    - we have no prefix or exact hit (so "pecorin" → "pecorino" is already
+      //      handled by prefix; "peccorino" → "pecorino" needs Levenshtein)
+      if (tlen >= 4 && postings.size === 0) {
+        for (const key of indexKeysCache) {
+          if (Math.abs(key.length - tlen) > 1) continue;
+          if (levenshteinBounded(token, key, 1) <= 1) {
+            add(idx[key], 0.3, 0);
+          }
+        }
+      }
+      return postings;
+    }
+
+    function search(query) {
+      const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
+      if (!tokens.length) return [];
+      let combined = null;
+      for (const tok of tokens) {
+        const partial = postingsFor(tok);
+        if (combined === null) {
+          combined = partial;
+        } else {
+          // AND across tokens; sum scores
+          const next = new Map();
+          for (const [pid, s] of combined) {
+            const o = partial.get(pid);
+            if (o !== undefined) next.set(pid, s + o);
+          }
+          combined = next;
+        }
+        if (combined.size === 0) break;
+      }
+      // Annotate with type for scoping; keep full ordered list (scoping filters render)
+      const out = [];
+      for (const [pid, score] of combined) {
         const path = index.paths[pid];
         const e = pathToEntry.get(path);
-        if (!e) return '';
-        return `<li role="option" id="sr-opt-${i}"><a href="${escapeHtml(path)}" data-category="${escapeHtml(e.category)}"><span class="sr-cat">${escapeHtml(e.category)}</span><span class="sr-title">${escapeHtml(e.title || '')}</span></a></li>`;
-      }).join('');
+        if (!e) continue;
+        out.push({ pid, score, type: e.type });
+      }
+      out.sort((a, b) => b.score - a.score);
+      return out;
+    }
+
+    function render(scored, q) {
+      lastScored = scored;
+      const counts = { all: scored.length, recipe: 0, ingredient: 0, technique: 0 };
+      for (const r of scored) {
+        if (counts[r.type] !== undefined) counts[r.type]++;
+      }
+      // Update tab counts + visibility
+      tabsEl.hidden = !scored.length;
+      tabsEl.querySelectorAll('[data-scope-count]').forEach(el => {
+        const k = el.dataset.scopeCount;
+        el.textContent = counts[k] != null ? `(${counts[k]})` : '';
+      });
+
+      const filtered = scope === 'all' ? scored : scored.filter(r => r.type === scope);
+      if (!filtered.length) {
+        if (scored.length && scope !== 'all') {
+          resultsEl.innerHTML = `<li class="sr-empty">No ${scope}s match. Try the All tab.</li>`;
+        } else {
+          resultsEl.innerHTML = '<li class="sr-empty">No matches</li>';
+        }
+      } else {
+        resultsEl.innerHTML = filtered.slice(0, 12).map((r, i) => {
+          const path = index.paths[r.pid];
+          const e = pathToEntry.get(path);
+          if (!e) return '';
+          return `<li role="option" id="sr-opt-${i}"><a href="${escapeHtml(path)}" data-category="${escapeHtml(e.category)}"><span class="sr-cat">${escapeHtml(e.category)}</span><span class="sr-title">${escapeHtml(e.title || '')}</span></a></li>`;
+        }).join('');
+      }
       resultsEl.hidden = false;
       input.setAttribute('aria-expanded', 'true');
       activeIndex = -1;
     }
 
+    function clearResults() {
+      resultsEl.hidden = true;
+      resultsEl.innerHTML = '';
+      tabsEl.hidden = true;
+      lastScored = [];
+      input.setAttribute('aria-expanded', 'false');
+    }
+
     input.addEventListener('input', () => {
-      const q = input.value.trim().toLowerCase();
-      if (!q || !index) {
-        resultsEl.hidden = true;
-        resultsEl.innerHTML = '';
-        input.setAttribute('aria-expanded', 'false');
-        return;
-      }
-      const tokens = q.split(/\s+/).filter(Boolean);
-      const scores = new Map();
-      for (const tok of tokens) {
-        const postings = index.index[tok] || [];
-        for (const [pid, score] of postings) scores.set(pid, (scores.get(pid) || 0) + score);
-      }
-      const top = Array.from(scores.entries()).sort((a, b) => b[1] - a[1]).slice(0, 8);
-      render(top);
+      const q = input.value.trim();
+      if (!q || !index) { clearResults(); return; }
+      render(search(q), q);
+    });
+
+    // Tab clicks scope without re-running search
+    tabsEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('.home-search-tab');
+      if (!btn) return;
+      const newScope = btn.dataset.scope;
+      if (newScope === scope) return;
+      scope = newScope;
+      tabsEl.querySelectorAll('.home-search-tab').forEach(b => {
+        const on = b.dataset.scope === scope;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      render(lastScored, input.value.trim());
+      input.focus();
     });
 
     input.addEventListener('keydown', (e) => {
       const items = resultsEl.querySelectorAll('li[role="option"]');
+      if (e.key === 'Escape') {
+        input.blur();
+        clearResults();
+        return;
+      }
       if (!items.length) return;
       if (e.key === 'ArrowDown') {
         e.preventDefault();
@@ -209,9 +354,6 @@
           const link = items[activeIndex].querySelector('a');
           if (link) link.click();
         }
-      } else if (e.key === 'Escape') {
-        input.blur();
-        resultsEl.hidden = true;
       }
     });
 
@@ -226,7 +368,10 @@
     }
 
     input.addEventListener('blur', () => setTimeout(() => {
+      // Don't auto-hide if focus moved into the tabs
+      if (document.activeElement && document.activeElement.closest && document.activeElement.closest('#home-search-tabs')) return;
       resultsEl.hidden = true;
+      tabsEl.hidden = true;
       input.setAttribute('aria-expanded', 'false');
     }, 200));
 
