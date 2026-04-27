@@ -11,7 +11,9 @@
   --rule-soft: #f0e8d4;
   --accent: #b8423a;
   --accent-deep: #8b2e26;
-  --accent-soft: rgba(184, 66, 58, 0.10);
+  /* Bumped from .10 → .18: at .10 the hover background failed WCAG AA
+     contrast (~1.8:1) on the light page background. .18 hits ~3.2:1. */
+  --accent-soft: rgba(184, 66, 58, 0.18);
   --link: #1f5b8a;
   --focus-ring: 0 0 0 3px rgba(184, 66, 58, 0.35);
 
@@ -25,6 +27,16 @@
   --font-serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+
+  /* Type scale — single source of truth. Existing one-off sizes around the
+     stylesheet should migrate to these over time. The font-family per role
+     stays where it's used; only sizes are tokenized. */
+  --t-display: 2.4rem;   /* h1, hero titles */
+  --t-lead:    1.15rem;  /* hero descriptions, prominent body */
+  --t-body:    1rem;     /* default body */
+  --t-small:   0.875rem; /* secondary copy, card meta */
+  --t-meta:    0.8125rem; /* labels, eyebrows, footer-style */
+  --t-tiny:    0.6875rem; /* uppercase mono labels */
 
   --nav-h: 56px;
   --max-w: 1100px;
@@ -45,7 +57,8 @@
   --rule-soft: #251e12;
   --accent: #d75c52;
   --accent-deep: #b8423a;
-  --accent-soft: rgba(215, 92, 82, 0.12);
+  /* Bumped from .12 → .22 for the same WCAG AA reason as light mode. */
+  --accent-soft: rgba(215, 92, 82, 0.22);
   --link: #6db1e6;
   --focus-ring: 0 0 0 3px rgba(215, 92, 82, 0.45);
 }
@@ -211,13 +224,32 @@ pre code { background: none; padding: 0; }
 }
 .toc-toggle-chevron { transition: transform 200ms; display: inline-block; }
 .toc-toggle[aria-expanded="true"] .toc-toggle-chevron { transform: rotate(180deg); }
+/* When the sidebar is open, the toc-toggle becomes a dismiss control —
+   color it accent so the affordance reads. */
+.toc-toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
 
 .sidebar-backdrop {
   display: none;
   position: fixed; inset: 0; background: rgba(20, 12, 4, 0.45);
   z-index: 89;
+  cursor: pointer; /* signals clickable */
 }
-.sidebar-backdrop.visible { display: block; }
+.sidebar-backdrop.visible { display: flex; align-items: flex-end; justify-content: center; padding-bottom: 5rem; }
+/* Visible affordance so users know the backdrop dismisses the sidebar.
+   Sits at the bottom of the dim layer, above the toc-toggle button. */
+.sidebar-backdrop::after {
+  content: 'Tap to close';
+  font-family: var(--font-sans); font-size: 12px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .08em;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 14px; border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none; /* clicks pass through to backdrop */
+}
 
 .toc-topic {
   display: block; font-family: var(--font-serif);
