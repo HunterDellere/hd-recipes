@@ -62,6 +62,14 @@ export function renderRecipeHero(fm, slug, category) {
       ${fm.desc ? `<p class="rh-desc">${escapeHtml(fm.desc)}</p>` : ''}
       ${meta.length ? `<div class="rh-meta">${meta.join('')}</div>` : ''}
       ${diet ? `<div class="rh-diet">${diet}</div>` : ''}
+      <button type="button" class="rh-cook-btn" data-cook-toggle aria-pressed="false" aria-label="Enter cook's view — focus on steps with screen kept on">
+        <span class="rh-cook-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 18h18l-2 3H5z"/><path d="M5 14h14a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4z"/><path d="M12 6v4"/><path d="M9 3v3"/><path d="M15 3v3"/>
+          </svg>
+        </span>
+        <span class="rh-cook-label">Cook's view</span>
+      </button>
     </header>`;
 }
 

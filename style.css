@@ -1105,6 +1105,204 @@ pre code { background: none; padding: 0; }
 /* Hide mobile toc-toggle when there's no sidebar to toggle (family pages) */
 body:not(:has(#sidebar)) .toc-toggle { display: none !important; }
 
+/* ── cook's view button (recipe hero) ───────────────────────────── */
+.rh-cook-btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  margin-top: 1rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 8px 16px 8px 14px;
+  font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+  color: var(--ink); cursor: pointer;
+  transition: border-color 120ms, color 120ms, background 120ms, transform 80ms;
+}
+.rh-cook-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.rh-cook-btn:active { transform: scale(0.97); }
+.rh-cook-btn[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.rh-cook-btn[aria-pressed="true"]:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+.rh-cook-icon { display: inline-flex; align-items: center; }
+.rh-cook-icon svg { display: block; }
+
+/* ── cook's view active state ───────────────────────────────────── */
+body[data-cooks-view="on"] {
+  /* Slightly mute the page chrome so the steps come forward */
+  background: var(--bg-soft);
+}
+body[data-cooks-view="on"] .topnav,
+body[data-cooks-view="on"] .reading-progress,
+body[data-cooks-view="on"] .sidebar,
+body[data-cooks-view="on"] .toc-toggle,
+body[data-cooks-view="on"] .recipe-hero .rh-eyebrow,
+body[data-cooks-view="on"] .recipe-hero .rh-desc,
+body[data-cooks-view="on"] .recipe-hero .rh-meta,
+body[data-cooks-view="on"] .recipe-hero .rh-diet,
+body[data-cooks-view="on"] .related,
+body[data-cooks-view="on"] .recipe-nutrition,
+body[data-cooks-view="on"] .recipe-notes,
+body[data-cooks-view="on"] .page-footer,
+body[data-cooks-view="on"] .sources,
+body[data-cooks-view="on"] section.adj,
+body[data-cooks-view="on"] .hub-chips,
+body[data-cooks-view="on"] [id="related"],
+body[data-cooks-view="on"] [id="in-hubs"],
+body[data-cooks-view="on"] [id="nutrition"],
+body[data-cooks-view="on"] [id="notes"],
+body[data-cooks-view="on"] [id="substitutions"],
+body[data-cooks-view="on"] [id="equipment"] {
+  display: none !important;
+}
+body[data-cooks-view="on"] .shell {
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 7rem; /* leave room for the sticky cook-bar */
+}
+body[data-cooks-view="on"] .recipe-hero {
+  text-align: center;
+  border-bottom: none;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+body[data-cooks-view="on"] .rh-title {
+  font-size: 1.6rem;
+  margin-bottom: .5em;
+}
+/* Collapse ingredients section to a thin expandable strip.
+   The Mise-en-place section-head becomes the toggle (real <h2> with role=button via JS).
+   Steps section-head is hidden — steps are the page focus. */
+body[data-cooks-view="on"] [id="execution"] + .section-head {
+  display: none;
+}
+body[data-cooks-view="on"] [id="ingredients"] + .section-head {
+  margin: 0 0 .75rem;
+  padding: 0;
+  border-bottom: none;
+}
+body[data-cooks-view="on"] [id="ingredients"] + .section-head h2 {
+  font-size: 14px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: 10px;
+  padding: .85rem 1.1rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  margin: 0;
+  transition: color 120ms, border-color 120ms;
+}
+body[data-cooks-view="on"] [id="ingredients"] + .section-head h2::after {
+  content: 'tap to expand ▾';
+  font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+  color: var(--ink-faint);
+  letter-spacing: .04em;
+}
+body[data-cooks-view="on"] [id="ingredients"] + .section-head h2:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+body[data-cooks-view="on"] [id="ingredients"] + .section-head h2:hover::after { color: var(--accent); }
+
+body[data-cooks-view="on"] .recipe-ingredients {
+  display: none;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+body[data-cooks-view="on"] .recipe-ingredients[data-expanded="1"] { display: block; }
+body[data-cooks-view="on"] .recipe-ingredients[data-expanded="1"] .ing-controls {
+  background: transparent;
+  border: none;
+  padding: 0 0 .75rem;
+  margin-bottom: .75rem;
+  border-bottom: 1px solid var(--rule-soft);
+  border-radius: 0;
+}
+/* When expanded, swap the section-head label via aria-expanded state */
+body[data-cooks-view="on"] .recipe-ingredients[data-expanded="1"] {
+  margin-top: -.5rem;
+  border-top-left-radius: 0; border-top-right-radius: 0;
+}
+body[data-cooks-view="on"] [id="ingredients"] + .section-head h2[aria-expanded="true"] {
+  border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+}
+body[data-cooks-view="on"] [id="ingredients"] + .section-head h2[aria-expanded="true"]::after {
+  content: 'tap to collapse ▴';
+}
+body[data-cooks-view="on"] .recipe-steps {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+body[data-cooks-view="on"] .step-item {
+  padding: 1.5rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: background 200ms, box-shadow 200ms, transform 200ms;
+}
+body[data-cooks-view="on"] .step-item.step-active {
+  background: var(--bg-elev);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--accent);
+}
+body[data-cooks-view="on"] .step-item:not(.step-active) {
+  opacity: 0.55;
+  cursor: pointer;
+}
+body[data-cooks-view="on"] .step-item:not(.step-active):hover { opacity: 0.85; }
+body[data-cooks-view="on"] .step-num {
+  width: 36px; height: 36px; line-height: 36px;
+  font-size: 16px;
+}
+body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
+
+/* Sticky cook-bar at the bottom — prev / counter / next / done */
+.cook-bar {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  display: flex; align-items: center; justify-content: center; gap: .75rem;
+  padding: .75rem 1rem;
+  background: rgba(250, 246, 238, 0.96);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-top: 1px solid var(--rule);
+  z-index: 100;
+  font-family: var(--font-sans);
+}
+[data-theme="dark"] .cook-bar { background: rgba(21, 17, 10, 0.96); }
+.cb-btn {
+  background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 8px;
+  padding: 10px 18px; font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+  color: var(--ink); cursor: pointer;
+  transition: border-color 120ms, color 120ms, background 120ms;
+  min-height: 44px; /* tap target */
+}
+.cb-btn:hover { border-color: var(--accent); color: var(--accent); }
+.cb-btn:active { transform: scale(0.97); }
+.cb-exit {
+  background: var(--accent); color: #fff; border-color: var(--accent);
+  margin-left: auto;
+}
+.cb-exit:hover { background: var(--accent-deep); color: #fff; border-color: var(--accent-deep); }
+.cb-counter {
+  font-family: var(--font-mono); font-size: 14px; font-weight: 500;
+  color: var(--ink-soft);
+  min-width: 100px; text-align: center;
+}
+@media (max-width: 600px) {
+  .cook-bar { padding: .5rem .6rem; gap: .4rem; }
+  .cb-btn { padding: 10px 12px; font-size: 13px; }
+  .cb-counter { font-size: 12px; min-width: 60px; }
+}
+
 /* ── alphabetic A-Z strip (Pantry and similar large flat indexes) ── */
 .alpha-strip {
   display: flex; flex-wrap: wrap; gap: .25rem;

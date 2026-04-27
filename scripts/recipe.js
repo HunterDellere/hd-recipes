@@ -239,6 +239,156 @@
     initStrike(root);
   });
 
+  // ── Cook's view: focused mode with wake-lock + per-step progression ────
+  // Activated via [data-cook-toggle]. State persists per-recipe (so picking
+  // up mid-cook restores the active step) plus a global wake-lock.
+  const cookToggle = document.querySelector('[data-cook-toggle]');
+  if (cookToggle) initCooksView(cookToggle);
+
+  function initCooksView(toggle) {
+    const recipeKey = `hdr-cook:${location.pathname}`;
+    let wakeLock = null;
+    let active = false;
+    let activeStepIndex = 0;
+    const steps = Array.from(document.querySelectorAll('.recipe-steps .step-item'));
+
+    // Restore prior state on load
+    let stored = null;
+    try { stored = JSON.parse(localStorage.getItem(recipeKey) || 'null'); } catch {}
+    if (stored && stored.active) {
+      enter();
+      if (typeof stored.step === 'number' && stored.step >= 0 && stored.step < steps.length) {
+        setActiveStep(stored.step);
+      }
+    }
+
+    toggle.addEventListener('click', () => {
+      if (active) exit(); else enter();
+    });
+
+    // Wire expand/collapse on the Mise-en-place section-head.
+    // While in cook's view, the H2 above the ingredients becomes a toggle
+    // (real button via the click handler — CSS styles it as one).
+    const ingredientsSection = document.querySelector('.recipe-ingredients');
+    const ingredientsHead = document.querySelector('[id="ingredients"] + .section-head h2');
+    if (ingredientsHead && ingredientsSection) {
+      ingredientsHead.setAttribute('role', 'button');
+      ingredientsHead.setAttribute('tabindex', '0');
+      ingredientsHead.setAttribute('aria-expanded', 'false');
+      const toggleIngredients = () => {
+        if (!active) return;
+        const expanded = ingredientsSection.dataset.expanded === '1';
+        if (expanded) {
+          ingredientsSection.removeAttribute('data-expanded');
+          ingredientsHead.setAttribute('aria-expanded', 'false');
+        } else {
+          ingredientsSection.dataset.expanded = '1';
+          ingredientsHead.setAttribute('aria-expanded', 'true');
+        }
+      };
+      ingredientsHead.addEventListener('click', toggleIngredients);
+      ingredientsHead.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleIngredients(); }
+      });
+    }
+
+    async function enter() {
+      active = true;
+      document.body.dataset.cooksView = 'on';
+      toggle.setAttribute('aria-pressed', 'true');
+      toggle.querySelector('.rh-cook-label').textContent = "Exit cook's view";
+
+      // Wake lock — graceful no-op if unsupported or denied
+      if ('wakeLock' in navigator) {
+        try {
+          wakeLock = await navigator.wakeLock.request('screen');
+          wakeLock.addEventListener('release', () => { wakeLock = null; });
+        } catch {}
+      }
+
+      // Re-acquire wake lock when tab becomes visible again
+      document.addEventListener('visibilitychange', reacquireWakeLock);
+
+      // Build the floating exit/control bar if not present
+      buildCookBar();
+      // Wire per-step click → activate
+      steps.forEach((s, i) => {
+        s.style.cursor = 'pointer';
+        if (!s.dataset.cookBound) {
+          s.addEventListener('click', () => setActiveStep(i));
+          s.dataset.cookBound = '1';
+        }
+      });
+      // Activate first uncompleted step (or first step)
+      setActiveStep(activeStepIndex);
+      persist();
+    }
+
+    function exit() {
+      active = false;
+      delete document.body.dataset.cooksView;
+      toggle.setAttribute('aria-pressed', 'false');
+      toggle.querySelector('.rh-cook-label').textContent = "Cook's view";
+      if (wakeLock) { try { wakeLock.release(); } catch {} wakeLock = null; }
+      document.removeEventListener('visibilitychange', reacquireWakeLock);
+      steps.forEach(s => s.classList.remove('step-active'));
+      const bar = document.querySelector('.cook-bar');
+      if (bar) bar.remove();
+      try { localStorage.removeItem(recipeKey); } catch {}
+    }
+
+    async function reacquireWakeLock() {
+      if (!active || document.visibilityState !== 'visible' || wakeLock) return;
+      if ('wakeLock' in navigator) {
+        try { wakeLock = await navigator.wakeLock.request('screen'); } catch {}
+      }
+    }
+
+    function setActiveStep(i) {
+      activeStepIndex = Math.max(0, Math.min(i, steps.length - 1));
+      steps.forEach((s, idx) => s.classList.toggle('step-active', idx === activeStepIndex));
+      const target = steps[activeStepIndex];
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const counter = document.querySelector('[data-cook-counter]');
+      if (counter) counter.textContent = `Step ${activeStepIndex + 1} / ${steps.length}`;
+      persist();
+    }
+
+    function persist() {
+      try { localStorage.setItem(recipeKey, JSON.stringify({ active, step: activeStepIndex })); } catch {}
+    }
+
+    function buildCookBar() {
+      if (document.querySelector('.cook-bar')) return;
+      const bar = document.createElement('div');
+      bar.className = 'cook-bar';
+      bar.innerHTML = `
+        <button type="button" class="cb-btn cb-prev" aria-label="Previous step">‹ Prev</button>
+        <span class="cb-counter" data-cook-counter></span>
+        <button type="button" class="cb-btn cb-next" aria-label="Next step">Next ›</button>
+        <button type="button" class="cb-btn cb-exit" aria-label="Exit cook's view">Done</button>`;
+      document.body.appendChild(bar);
+      bar.querySelector('.cb-prev').addEventListener('click', () => setActiveStep(activeStepIndex - 1));
+      bar.querySelector('.cb-next').addEventListener('click', () => setActiveStep(activeStepIndex + 1));
+      bar.querySelector('.cb-exit').addEventListener('click', exit);
+    }
+
+    // Keyboard navigation while in cook's view
+    document.addEventListener('keydown', (e) => {
+      if (!active) return;
+      if (['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)) return;
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        setActiveStep(activeStepIndex + 1);
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        setActiveStep(activeStepIndex - 1);
+      } else if (e.key === 'Escape') {
+        exit();
+      }
+    });
+  }
+
   // ── filter bar (cook explore page) ─────────────────────────────────
   const filterBar = document.querySelector('.filter-bar');
   if (filterBar) initExploreFilters(filterBar);
