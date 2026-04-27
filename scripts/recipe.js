@@ -447,7 +447,7 @@
       if (state.course) filters.push(state.course);
       if (state.diet) filters.push(state.diet);
       if (state.difficulty) filters.push(state.difficulty);
-      if (state.time) filters.push(`≤ ${state.time} min`);
+      if (state.time) filters.push(`≤ ${state.time} min active`);
       for (const t of state.tags) filters.push(`#${t}`);
       if (status) {
         status.textContent = filters.length

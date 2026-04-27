@@ -4,7 +4,7 @@
  */
 
 import MarkdownIt from 'markdown-it';
-import { fmtMinutes } from './cards.mjs';
+import { fmtMinutes, frameRecipeTime } from './cards.mjs';
 
 const md = new MarkdownIt({ html: false, linkify: false, typographer: false, breaks: false });
 
@@ -46,11 +46,26 @@ function fmtQty(qty) {
 
 export function renderRecipeHero(fm, slug, category) {
   const time = fm.time || {};
-  const totalMin = time.total_min ?? ((time.prep_min || 0) + (time.cook_min || 0));
   const meta = [];
   if (fm.servings) meta.push(`<span class="rh-meta-item"><strong>${fm.servings}</strong> servings</span>`);
-  if (totalMin) meta.push(`<span class="rh-meta-item">${escapeHtml(fmtMinutes(totalMin))} total</span>`);
-  if (time.active_min != null) meta.push(`<span class="rh-meta-item">${escapeHtml(fmtMinutes(time.active_min))} active</span>`);
+
+  // Time framing: when passive (brine/marinate/rest) dwarfs active, lead with
+  // active so the cook sees how much of their evening this needs. Annotate
+  // the passive phase as "+ overnight" / "+ 4 h rest" / etc.
+  const framed = frameRecipeTime(time);
+  if (framed && framed.lead) {
+    if (framed.mode === 'active') {
+      meta.push(`<span class="rh-meta-item rh-time-active"><strong>${escapeHtml(framed.lead)}</strong> active</span>`);
+      if (framed.annotation) meta.push(`<span class="rh-meta-item rh-time-passive">${escapeHtml(framed.annotation)}</span>`);
+    } else {
+      meta.push(`<span class="rh-meta-item">${escapeHtml(framed.lead)} total</span>`);
+      // For short recipes, still surface active separately when declared and
+      // it's meaningfully less than total (e.g., 75 min cook + 30 min active).
+      if (time.active_min != null && time.active_min < (time.total_min || 0) - 5) {
+        meta.push(`<span class="rh-meta-item">${escapeHtml(fmtMinutes(time.active_min))} active</span>`);
+      }
+    }
+  }
   if (fm.difficulty) meta.push(`<span class="rh-meta-item rh-difficulty rh-d-${fm.difficulty}">${fm.difficulty}</span>`);
   if (fm.cuisine) meta.push(`<span class="rh-meta-item">${escapeHtml(fm.cuisine)}</span>`);
   if (fm.course) meta.push(`<span class="rh-meta-item">${escapeHtml(fm.course)}</span>`);

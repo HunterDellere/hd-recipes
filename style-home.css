@@ -255,6 +255,14 @@
   font-size: 13px; color: var(--ink-soft);
 }
 .ff-meta strong { color: var(--ink); font-weight: 700; font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
+.ff-passive {
+  display: inline-flex; align-items: center;
+  font-size: 11.5px; font-weight: 500; color: var(--ink-faint);
+  background: var(--bg-soft);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: .35rem;
+}
 .ff-diff { padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
 .ff-d-easy { background: #e7f3e0; color: #3a6e1a; }
 .ff-d-medium { background: #fff0d0; color: #8a5a10; }

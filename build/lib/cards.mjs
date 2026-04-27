@@ -48,6 +48,81 @@ export function fmtMinutes(min) {
   return parts.join(' ');
 }
 
+/**
+ * Compact framing for the passive (unattended) phase of a recipe — the brine,
+ * marinate, chill, rest, ferment portion that doesn't tie up the cook.
+ *   <60         → "" (no annotation; gets folded into total)
+ *   60–179      → "+ 2 h rest"
+ *   180–479     → "+ 4 h rest"
+ *   480–1080    → "+ overnight"  (8–18 h is the canonical overnight window)
+ *   1081–2520   → "+ 1 d rest"   (≥18 h up to ~42 h)
+ *   >2520       → "+ N d rest"
+ */
+function fmtPassive(passiveMin) {
+  const n = Number(passiveMin);
+  if (!isFinite(n) || n < 60) return '';
+  if (n < 480) {
+    const h = Math.round(n / 60);
+    return `+ ${h} h rest`;
+  }
+  if (n <= 1080) return '+ overnight';
+  const days = Math.round(n / 1440);
+  return `+ ${days} d rest`;
+}
+
+/**
+ * Decide how to frame a recipe's time. Returns:
+ *   { active, passive, lead, annotation }
+ *     active     — minutes the cook is engaged (best estimate)
+ *     passive    — unattended minutes (total - active)
+ *     lead       — "25 min" (the headline number, formatted)
+ *     annotation — "+ overnight" or "" (secondary chip; empty when passive ≪ active)
+ *     mode       — 'active' | 'total' (which framing is in use)
+ *
+ * Heuristic: when passive ≥ max(60, 2×active), lead with active. Otherwise
+ * lead with total (the standard framing for short recipes where rest is
+ * negligible or already folded into total).
+ */
+export function frameRecipeTime(time) {
+  if (!time) return null;
+  const total = Number(time.total_min) || 0;
+  const prep = Number(time.prep_min) || 0;
+  const cook = Number(time.cook_min) || 0;
+  const declaredActive = Number(time.active_min);
+  const active = isFinite(declaredActive) && declaredActive > 0
+    ? declaredActive
+    : (prep + cook) || total;
+  const passive = Math.max(0, total - active);
+
+  // If active and total are roughly the same, just show total — the standard
+  // recipe-card affordance.
+  const passiveDominant = passive >= Math.max(60, 2 * active);
+  if (!passiveDominant || !active) {
+    return { active, passive, total, lead: fmtMinutes(total || active), annotation: '', mode: 'total' };
+  }
+  return {
+    active, passive, total,
+    lead: fmtMinutes(active),
+    annotation: fmtPassive(passive),
+    mode: 'active',
+  };
+}
+
+/**
+ * For sort/filter purposes — the time dimension users actually care about
+ * is "how much of my evening does this take." That's active, with passive
+ * folded in only when active isn't declared.
+ */
+export function filterableTime(time) {
+  if (!time) return null;
+  const declaredActive = Number(time.active_min);
+  if (isFinite(declaredActive) && declaredActive > 0) return declaredActive;
+  const prep = Number(time.prep_min) || 0;
+  const cook = Number(time.cook_min) || 0;
+  if (prep + cook > 0) return prep + cook;
+  return Number(time.total_min) || null;
+}
+
 // Tags that are good as the "primary" badge — semantic ingredient class.
 // Ordered; first match wins.
 const PRIMARY_TAGS = [
@@ -171,6 +246,14 @@ export function enrichEntry(entry, ctx) {
   if (entry.type === 'recipe') {
     c.totalMinutes = entry.time && entry.time.total_min || null;
     c.diffLabel = entry.difficulty || null;
+    const framed = frameRecipeTime(entry.time);
+    if (framed) {
+      c.timeLead = framed.lead;
+      c.timeAnnotation = framed.annotation;
+      c.timeMode = framed.mode; // 'active' | 'total'
+      c.activeMinutes = framed.active;
+    }
+    c.filterMinutes = filterableTime(entry.time);
   } else if (entry.type === 'ingredient') {
     c.primaryTag = pickPrimaryTag(entry);
     c.usedInCount = ingUsedIn.get(entry._slug) || 0;
@@ -220,7 +303,17 @@ export function renderCardBody(entry) {
     const meta = [];
     if (entry.cuisine) meta.push(`<span class="ec-meta-item">${escapeHtml(entry.cuisine)}</span>`);
     if (entry.course)  meta.push(`<span class="ec-meta-item">${escapeHtml(entry.course)}</span>`);
-    if (card.totalMinutes) meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(card.totalMinutes))}</span>`);
+    if (card.timeLead) {
+      const annot = card.timeAnnotation
+        ? `<span class="ec-time-annot">${escapeHtml(card.timeAnnotation)}</span>`
+        : '';
+      const lead = card.timeMode === 'active'
+        ? `<span class="ec-time-active"><strong>${escapeHtml(card.timeLead)}</strong> active</span>`
+        : `<strong>${escapeHtml(card.timeLead)}</strong>`;
+      meta.push(`<span class="ec-meta-item ec-meta-time">${lead}${annot}</span>`);
+    } else if (card.totalMinutes) {
+      meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(card.totalMinutes))}</span>`);
+    }
     const stats = entry.servings ? `<span class="ec-stat"><strong>${entry.servings}</strong> serving${entry.servings === 1 ? '' : 's'}</span>` : '';
     const diff = card.diffLabel
       ? `<span class="ec-pill ec-diff ec-d-${escapeHtml(card.diffLabel)}">${escapeHtml(card.diffLabel)}</span>`

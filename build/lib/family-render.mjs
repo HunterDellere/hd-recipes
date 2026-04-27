@@ -377,9 +377,9 @@ export function renderFamilyContent(family, entries, fromPath) {
         ${[...diets].sort().map(d => `<button type="button" class="filter-pill" data-filter-diet="${escapeHtml(d)}">${escapeHtml(d)}</button>`).join('')}
       </div>` : ''}
       <div class="filter-group">
-        <span class="filter-label">Time</span>
-        <button type="button" class="filter-pill" data-filter-time="30">≤ 30 min</button>
-        <button type="button" class="filter-pill" data-filter-time="60">≤ 60 min</button>
+        <span class="filter-label">Active time</span>
+        <button type="button" class="filter-pill" data-filter-time="30" title="30 minutes or less of engaged cooking (overnight rests don't count)">≤ 30 min</button>
+        <button type="button" class="filter-pill" data-filter-time="60" title="60 minutes or less of engaged cooking">≤ 60 min</button>
       </div>
       <div class="filter-group">
         <span class="filter-label">Difficulty</span>
@@ -392,9 +392,21 @@ export function renderFamilyContent(family, entries, fromPath) {
     <p class="filter-status" data-filter-status></p>`;
   }
 
-  // Augment entry cards with filter data attributes for 'cook'
+  // Augment entry cards with filter data attributes for 'cook'.
+  // data-time is the *active* (engaged-cook) time when declared, else prep+cook,
+  // else total. This is what a user means when they ask for "≤ 30 min" recipes —
+  // 30 minutes of their evening, not 30 minutes of wall-clock that includes
+  // overnight brining.
+  const filterTime = (e) => {
+    const t = e.time || {};
+    if (typeof t.active_min === 'number' && t.active_min > 0) return t.active_min;
+    const prep = Number(t.prep_min) || 0;
+    const cook = Number(t.cook_min) || 0;
+    if (prep + cook > 0) return prep + cook;
+    return Number(t.total_min) || '';
+  };
   const augment = (e) => family === 'cook'
-    ? `data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${(e.time && e.time.total_min) || ''}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
+    ? `data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${filterTime(e)}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
     : '';
 
   // Pantry: enable A–Z anchor strip when a category has ≥20 entries.

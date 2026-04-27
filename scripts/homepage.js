@@ -29,6 +29,30 @@
     return parts.join(' ');
   }
 
+  // Mirror of build/lib/cards.mjs::fmtPassive + frameRecipeTime — keep in sync.
+  function fmtPassive(p) {
+    const n = Number(p);
+    if (!isFinite(n) || n < 60) return '';
+    if (n < 480) return `+ ${Math.round(n / 60)} h rest`;
+    if (n <= 1080) return '+ overnight';
+    return `+ ${Math.round(n / 1440)} d rest`;
+  }
+  function frameRecipeTime(time) {
+    if (!time) return null;
+    const total = Number(time.total_min) || 0;
+    const prep = Number(time.prep_min) || 0;
+    const cook = Number(time.cook_min) || 0;
+    const declaredActive = Number(time.active_min);
+    const active = isFinite(declaredActive) && declaredActive > 0
+      ? declaredActive : (prep + cook) || total;
+    const passive = Math.max(0, total - active);
+    const passiveDominant = passive >= Math.max(60, 2 * active);
+    if (!passiveDominant || !active) {
+      return { active, passive, total, lead: fmtMinutes(total || active), annotation: '', mode: 'total' };
+    }
+    return { active, passive, total, lead: fmtMinutes(active), annotation: fmtPassive(passive), mode: 'active' };
+  }
+
   function cardBody(e) {
     const c = e._card || {};
     const title = `<span class="ec-title">${escapeHtml(e.title || '')}</span>`;
@@ -39,7 +63,15 @@
       const meta = [];
       if (e.cuisine) meta.push(`<span class="ec-meta-item">${escapeHtml(e.cuisine)}</span>`);
       if (e.course)  meta.push(`<span class="ec-meta-item">${escapeHtml(e.course)}</span>`);
-      if (c.totalMinutes) meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(c.totalMinutes))}</span>`);
+      if (c.timeLead) {
+        const annot = c.timeAnnotation ? `<span class="ec-time-annot">${escapeHtml(c.timeAnnotation)}</span>` : '';
+        const lead = c.timeMode === 'active'
+          ? `<span class="ec-time-active"><strong>${escapeHtml(c.timeLead)}</strong> active</span>`
+          : `<strong>${escapeHtml(c.timeLead)}</strong>`;
+        meta.push(`<span class="ec-meta-item ec-meta-time">${lead}${annot}</span>`);
+      } else if (c.totalMinutes) {
+        meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(c.totalMinutes))}</span>`);
+      }
       const stats = e.servings ? `<span class="ec-stat"><strong>${e.servings}</strong> serving${e.servings === 1 ? '' : 's'}</span>` : '';
       const diff = c.diffLabel ? `<span class="ec-pill ec-diff ec-d-${escapeHtml(c.diffLabel)}">${escapeHtml(c.diffLabel)}</span>` : '';
       return `${cat}${title}${desc}<div class="ec-foot"><div class="ec-meta">${meta.join('')}</div>${diff}</div>${stats ? `<div class="ec-stats">${stats}</div>` : ''}`;
@@ -76,7 +108,14 @@
   function featuredCard(e) {
     const meta = [];
     if (e.servings) meta.push(`<strong>${e.servings}</strong> servings`);
-    if (e.time && e.time.total_min) meta.push(escapeHtml(fmtMinutes(e.time.total_min)));
+    const framed = frameRecipeTime(e.time);
+    if (framed && framed.lead) {
+      if (framed.mode === 'active') {
+        meta.push(`<strong>${escapeHtml(framed.lead)}</strong> active${framed.annotation ? ' <span class="ff-passive">' + escapeHtml(framed.annotation) + '</span>' : ''}`);
+      } else {
+        meta.push(escapeHtml(framed.lead));
+      }
+    }
     if (e.difficulty) meta.push(`<span class="ff-diff ff-d-${escapeHtml(e.difficulty)}">${escapeHtml(e.difficulty)}</span>`);
     if (e.cuisine) meta.push(escapeHtml(e.cuisine));
     return `
