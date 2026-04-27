@@ -29,11 +29,11 @@
     .then(r => r.json())
     .then(entries => {
       const recipes = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
-      if (!recipes.length) { window.location.replace('/'); return; }
+      if (!recipes.length) { window.location.replace('./'); return; }
       const pick = recipes[Math.floor(Math.random() * recipes.length)];
-      window.location.replace('/' + pick.path);
+      window.location.replace(pick.path);
     })
-    .catch(() => window.location.replace('/'));
+    .catch(() => window.location.replace('./'));
 })();
 </script>
 </body>
