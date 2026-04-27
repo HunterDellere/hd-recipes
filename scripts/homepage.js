@@ -14,6 +14,21 @@
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
+  // Mirror of build/lib/cards.mjs::fmtMinutes — keep in sync.
+  function fmtMinutes(min) {
+    const n = Number(min);
+    if (!isFinite(n) || n <= 0) return '';
+    if (n < 60) return `${Math.round(n)} min`;
+    const days = Math.floor(n / 1440);
+    const hours = Math.floor((n - days * 1440) / 60);
+    const mins = Math.round(n - days * 1440 - hours * 60);
+    const parts = [];
+    if (days)  parts.push(`${days} d`);
+    if (hours || days) parts.push(`${hours} h`);
+    if (mins)  parts.push(`${mins} min`);
+    return parts.join(' ');
+  }
+
   function cardBody(e) {
     const c = e._card || {};
     const title = `<span class="ec-title">${escapeHtml(e.title || '')}</span>`;
@@ -24,7 +39,7 @@
       const meta = [];
       if (e.cuisine) meta.push(`<span class="ec-meta-item">${escapeHtml(e.cuisine)}</span>`);
       if (e.course)  meta.push(`<span class="ec-meta-item">${escapeHtml(e.course)}</span>`);
-      if (c.totalMinutes) meta.push(`<span class="ec-meta-item ec-meta-time"><strong>${c.totalMinutes}</strong> min</span>`);
+      if (c.totalMinutes) meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(c.totalMinutes))}</span>`);
       const stats = e.servings ? `<span class="ec-stat"><strong>${e.servings}</strong> serving${e.servings === 1 ? '' : 's'}</span>` : '';
       const diff = c.diffLabel ? `<span class="ec-pill ec-diff ec-d-${escapeHtml(c.diffLabel)}">${escapeHtml(c.diffLabel)}</span>` : '';
       return `${cat}${title}${desc}<div class="ec-foot"><div class="ec-meta">${meta.join('')}</div>${diff}</div>${stats ? `<div class="ec-stats">${stats}</div>` : ''}`;
@@ -61,7 +76,7 @@
   function featuredCard(e) {
     const meta = [];
     if (e.servings) meta.push(`<strong>${e.servings}</strong> servings`);
-    if (e.time && e.time.total_min) meta.push(`<strong>${e.time.total_min}</strong> min`);
+    if (e.time && e.time.total_min) meta.push(escapeHtml(fmtMinutes(e.time.total_min)));
     if (e.difficulty) meta.push(`<span class="ff-diff ff-d-${escapeHtml(e.difficulty)}">${escapeHtml(e.difficulty)}</span>`);
     if (e.cuisine) meta.push(escapeHtml(e.cuisine));
     return `
@@ -316,7 +331,13 @@
       render(search(q), q);
     });
 
-    // Tab clicks scope without re-running search
+    // Tab clicks scope without re-running search.
+    // Capture the click via mousedown + preventDefault so the tab never steals
+    // focus from the input — this avoids the blur→hide race that was wiping
+    // the dropdown when users tried to switch scope.
+    tabsEl.addEventListener('mousedown', (e) => {
+      if (e.target.closest('.home-search-tab')) e.preventDefault();
+    });
     tabsEl.addEventListener('click', (e) => {
       const btn = e.target.closest('.home-search-tab');
       if (!btn) return;
@@ -329,7 +350,6 @@
         b.setAttribute('aria-selected', on ? 'true' : 'false');
       });
       render(lastScored, input.value.trim());
-      input.focus();
     });
 
     input.addEventListener('keydown', (e) => {
@@ -368,8 +388,9 @@
     }
 
     input.addEventListener('blur', () => setTimeout(() => {
-      // Don't auto-hide if focus moved into the tabs
-      if (document.activeElement && document.activeElement.closest && document.activeElement.closest('#home-search-tabs')) return;
+      // Don't auto-hide if focus moved into the search container (tabs / results)
+      const wrap = input.closest('.home-search-wrap');
+      if (wrap && document.activeElement && wrap.contains(document.activeElement)) return;
       resultsEl.hidden = true;
       tabsEl.hidden = true;
       input.setAttribute('aria-expanded', 'false');

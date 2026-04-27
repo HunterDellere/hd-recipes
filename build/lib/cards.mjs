@@ -26,6 +26,28 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+/**
+ * Format a duration in minutes to a compact human string.
+ *   45    → "45 min"
+ *   90    → "1 h 30 min"
+ *   120   → "2 h"
+ *   1455  → "1 d 0 h 15 min"  (mostly for brining/marinating recipes)
+ *   1535  → "1 d 1 h 35 min"
+ */
+export function fmtMinutes(min) {
+  const n = Number(min);
+  if (!isFinite(n) || n <= 0) return '';
+  if (n < 60) return `${Math.round(n)} min`;
+  const days = Math.floor(n / 1440);
+  const hours = Math.floor((n - days * 1440) / 60);
+  const mins = Math.round(n - days * 1440 - hours * 60);
+  const parts = [];
+  if (days)  parts.push(`${days} d`);
+  if (hours || days) parts.push(`${hours} h`);
+  if (mins)  parts.push(`${mins} min`);
+  return parts.join(' ');
+}
+
 // Tags that are good as the "primary" badge — semantic ingredient class.
 // Ordered; first match wins.
 const PRIMARY_TAGS = [
@@ -63,6 +85,7 @@ export function computeReverseLinks(entries) {
   const eqUsedIn = new Map();    // slug → [{title, path}]
   const cuisineCount = new Map();
   const hubMembers = new Map();
+  const hubMix = new Map();    // hub_path → { recipes: n, techniques: n, ... }
   const inHubs = new Map();
 
   // Helper: register a recipe → technique link, avoiding double counts when the
@@ -105,17 +128,20 @@ export function computeReverseLinks(entries) {
       const members = (e.members || (e._fm && e._fm.members) || []);
       if (Array.isArray(members)) {
         hubMembers.set(e.path, members.length);
+        const mix = {};
         for (const m of members) {
           // Members reference targets by slug-with-category, e.g. "recipes/foo".
-          // We resolve to a full pages/X/Y.html path in build.mjs context, but
-          // here we capture the bare slug; resolution happens at render time.
           const key = m.slug || m;
           if (!key) continue;
-          // Normalize to "pages/<key>.html" so it matches entry.path.
-          const normalized = `pages/${String(key).replace(/^pages\//, '').replace(/\.html$/, '')}.html`;
+          const slugStr = String(key).replace(/^pages\//, '').replace(/\.html$/, '');
+          const normalized = `pages/${slugStr}.html`;
           if (!inHubs.has(normalized)) inHubs.set(normalized, []);
           inHubs.get(normalized).push({ title: e.title, path: e.path });
+          // Category mix: derive from the slug prefix (e.g. "recipes/foo" → recipes)
+          const cat = slugStr.split('/')[0] || 'other';
+          mix[cat] = (mix[cat] || 0) + 1;
         }
+        hubMix.set(e.path, mix);
       }
     }
   }
@@ -124,7 +150,7 @@ export function computeReverseLinks(entries) {
   for (const list of eqUsedIn.values())    list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
   for (const list of techRecipes.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
   for (const list of ingRecipes.values())  list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
-  return { ingUsedIn, ingRecipes, techUsedIn, techRecipes, eqUsedIn, cuisineCount, hubMembers, inHubs };
+  return { ingUsedIn, ingRecipes, techUsedIn, techRecipes, eqUsedIn, cuisineCount, hubMembers, hubMix, inHubs };
 }
 
 /**
@@ -140,7 +166,7 @@ export function computeReverseLinks(entries) {
  *   }
  */
 export function enrichEntry(entry, ctx) {
-  const { ingUsedIn, techUsedIn, cuisineCount, hubMembers, ingHasNutrition } = ctx;
+  const { ingUsedIn, techUsedIn, cuisineCount, hubMembers, hubMix, ingHasNutrition } = ctx;
   const c = {};
   if (entry.type === 'recipe') {
     c.totalMinutes = entry.time && entry.time.total_min || null;
@@ -157,6 +183,7 @@ export function enrichEntry(entry, ctx) {
     c.primaryTag = pickPrimaryTag(entry);
   } else if (entry.type === 'hub') {
     c.memberCount = hubMembers.get(entry.path) || 0;
+    c.memberMix = (hubMix && hubMix.get(entry.path)) || {};
   }
   entry._card = c;
   return entry;
@@ -193,7 +220,7 @@ export function renderCardBody(entry) {
     const meta = [];
     if (entry.cuisine) meta.push(`<span class="ec-meta-item">${escapeHtml(entry.cuisine)}</span>`);
     if (entry.course)  meta.push(`<span class="ec-meta-item">${escapeHtml(entry.course)}</span>`);
-    if (card.totalMinutes) meta.push(`<span class="ec-meta-item ec-meta-time"><strong>${card.totalMinutes}</strong> min</span>`);
+    if (card.totalMinutes) meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(card.totalMinutes))}</span>`);
     const stats = entry.servings ? `<span class="ec-stat"><strong>${entry.servings}</strong> serving${entry.servings === 1 ? '' : 's'}</span>` : '';
     const diff = card.diffLabel
       ? `<span class="ec-pill ec-diff ec-d-${escapeHtml(card.diffLabel)}">${escapeHtml(card.diffLabel)}</span>`
@@ -246,9 +273,22 @@ export function renderCardBody(entry) {
 
   if (entry.type === 'hub') {
     const m = card.memberCount;
-    const stat = m > 0 ? `<span class="ec-stat"><strong>${m}</strong> ${m === 1 ? 'entry' : 'entries'}</span>` : '';
-    return `${cat}<span class="ec-title">${title}</span>${desc}
-        <div class="ec-foot">${stat}</div>`;
+    const mix = card.memberMix || {};
+    // Build "5 recipes · 2 techniques" label from the mix in canonical order
+    const ORDER = ['recipes', 'ingredients', 'techniques', 'cuisines', 'equipment'];
+    const parts = [];
+    for (const k of ORDER) {
+      if (mix[k]) {
+        const singular = k.replace(/s$/, '');
+        parts.push(`<span class="ec-mix-item ec-mix-${k}"><strong>${mix[k]}</strong> ${mix[k] === 1 ? singular : k}</span>`);
+      }
+    }
+    const mixHtml = parts.length
+      ? `<div class="ec-mix">${parts.join('')}</div>`
+      : (m > 0 ? `<span class="ec-stat"><strong>${m}</strong> ${m === 1 ? 'entry' : 'entries'}</span>` : '');
+    const stack = `<span class="ec-hub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 6 V4 a1 1 0 0 1 1 -1 h8 a1 1 0 0 1 1 1 v2"/><line x1="3" y1="11" x2="21" y2="11"/></svg></span>`;
+    return `<span class="ec-cat-row">${stack}<span class="ec-cat">collection</span></span><span class="ec-title">${title}</span>${desc}
+        <div class="ec-foot">${mixHtml}</div>`;
   }
 
   // fallback

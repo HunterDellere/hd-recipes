@@ -56,6 +56,21 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// Per-category line-art icons used in the Explore index quick-jump grid and
+// anywhere else we need a compact visual marker per category. 16px native size,
+// scales cleanly. Strokes pick up currentColor so the cat-link hover state
+// re-tints them automatically.
+const CATEGORY_ICONS = {
+  recipes:     `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg>`,
+  ingredients: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`,
+  techniques:  `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg>`,
+  cuisines:    `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg>`,
+  equipment:   `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13 h12 a1 1 0 0 1 1 1 v3 a3 3 0 0 1 -3 3 H7 a3 3 0 0 1 -3 -3 z"/><path d="M17 14 h2 a2 2 0 0 1 0 4 h-2"/><path d="M8 9 v-2"/><path d="M12 9 v-3"/></svg>`,
+  hubs:        `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5 h10 a2 2 0 0 1 2 2 v12 a2 2 0 0 1 -2 2 H6 a2 2 0 0 1 -2 -2 z"/><path d="M8 3 v4"/><path d="M12 3 v4"/><line x1="7" y1="11" x2="13" y2="11"/><line x1="7" y1="14" x2="13" y2="14"/></svg>`,
+  tags:        `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 V4 a1 1 0 0 1 1 -1 h8 l9 9 -9 9 z"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor"/></svg>`,
+};
+export function categoryIcon(catKey) { return CATEGORY_ICONS[catKey] || ''; }
+
 function relPath(fromPath, toPath) {
   const fromParts = fromPath.split('/').slice(0, -1);
   const toParts = toPath.split('/');
@@ -278,6 +293,7 @@ function renderExploreContent(entries, fromPath) {
     const href = relPath(fromPath, `pages/explore/${familyForCat}.html#cat-${k}`);
     return `
         <a class="cat-link" href="${escapeHtml(href)}" data-category="${escapeHtml(k)}">
+          <span class="cl-icon" aria-hidden="true">${CATEGORY_ICONS[k] || ''}</span>
           <span class="cl-label">${escapeHtml(meta.label)}</span>
           <span class="cl-count">${count}</span>
         </a>`;

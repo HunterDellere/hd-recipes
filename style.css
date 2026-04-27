@@ -1046,14 +1046,23 @@ pre code { background: none; padding: 0; }
   gap: .5rem;
 }
 .cat-link {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: .65rem 1rem;
+  display: flex; align-items: center; gap: .55rem;
+  padding: .7rem .95rem;
   background: var(--bg-elev); border: 1px solid var(--rule);
   border-radius: 8px;
   font-family: var(--font-sans); font-size: 14px; font-weight: 500;
   color: var(--ink-soft);
   transition: border-color 120ms, color 120ms, background 120ms;
 }
+.cl-icon { display: inline-flex; align-items: center; color: var(--ink-faint); flex-shrink: 0; transition: color 120ms; }
+.cl-icon svg { display: block; }
+.cat-link[data-category="recipes"]     .cl-icon { color: var(--cat-recipes); }
+.cat-link[data-category="ingredients"] .cl-icon { color: var(--cat-ingredients); }
+.cat-link[data-category="techniques"]  .cl-icon { color: var(--cat-techniques); }
+.cat-link[data-category="cuisines"]    .cl-icon { color: var(--cat-cuisines); }
+.cat-link[data-category="equipment"]   .cl-icon { color: var(--cat-equipment); }
+.cat-link[data-category="hubs"]        .cl-icon { color: var(--cat-hubs); }
+.cat-link .cl-label { flex: 1; }
 .cat-link:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 .cat-link[data-category="recipes"]:hover     { border-color: var(--cat-recipes); color: var(--cat-recipes); }
 .cat-link[data-category="ingredients"]:hover { border-color: var(--cat-ingredients); color: var(--cat-ingredients); }
@@ -1350,20 +1359,19 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
 
 /* ── card-grid + entry-card (shared across home + explore) ───── */
 .card-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: .85rem;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: .75rem;
   margin-bottom: 1.5rem;
 }
 .entry-card {
-  display: flex; flex-direction: column; gap: .4rem;
-  padding: 1rem 1.1rem .85rem;
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .85rem 1rem .75rem;
   border: 1px solid var(--rule); border-radius: 10px;
   background: var(--bg-elev);
   font-family: var(--font-sans); color: var(--ink);
   transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
   position: relative;
   overflow: hidden;
-  min-height: 148px;
 }
 .entry-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0;
@@ -1457,6 +1465,30 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
   margin-top: .25rem;
   font-size: 12px; color: var(--ink-faint);
 }
+
+/* Hub-card mix indicators ("5 recipes · 2 techniques") */
+.ec-cat-row { display: inline-flex; align-items: center; gap: .35rem; }
+.ec-hub-icon { color: var(--cat-hubs); display: inline-flex; }
+.ec-hub-icon svg { display: block; }
+.ec-mix {
+  display: flex; flex-wrap: wrap; gap: .15rem .5rem;
+  font-family: var(--font-sans); font-size: 12px;
+  color: var(--ink-soft);
+}
+.ec-mix-item { display: inline-flex; align-items: baseline; }
+.ec-mix-item strong {
+  color: var(--ink); font-weight: 700; margin-right: 2px;
+  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+}
+.ec-mix-item:not(:last-child)::after {
+  content: '·'; margin-left: .5rem; color: var(--ink-faint);
+}
+.ec-mix-recipes    { --mix-color: var(--cat-recipes); }
+.ec-mix-ingredients{ --mix-color: var(--cat-ingredients); }
+.ec-mix-techniques { --mix-color: var(--cat-techniques); }
+.ec-mix-cuisines   { --mix-color: var(--cat-cuisines); }
+.ec-mix-equipment  { --mix-color: var(--cat-equipment); }
+.ec-mix-item strong { color: var(--mix-color, var(--ink)); }
 .ec-pill {
   display: inline-flex; align-items: center;
   padding: 2px 9px;

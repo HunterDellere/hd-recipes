@@ -4,6 +4,7 @@
  */
 
 import MarkdownIt from 'markdown-it';
+import { fmtMinutes } from './cards.mjs';
 
 const md = new MarkdownIt({ html: false, linkify: false, typographer: false, breaks: false });
 
@@ -48,8 +49,8 @@ export function renderRecipeHero(fm, slug, category) {
   const totalMin = time.total_min ?? ((time.prep_min || 0) + (time.cook_min || 0));
   const meta = [];
   if (fm.servings) meta.push(`<span class="rh-meta-item"><strong>${fm.servings}</strong> servings</span>`);
-  if (totalMin) meta.push(`<span class="rh-meta-item"><strong>${totalMin}</strong> min total</span>`);
-  if (time.active_min != null) meta.push(`<span class="rh-meta-item"><strong>${time.active_min}</strong> min active</span>`);
+  if (totalMin) meta.push(`<span class="rh-meta-item">${escapeHtml(fmtMinutes(totalMin))} total</span>`);
+  if (time.active_min != null) meta.push(`<span class="rh-meta-item">${escapeHtml(fmtMinutes(time.active_min))} active</span>`);
   if (fm.difficulty) meta.push(`<span class="rh-meta-item rh-difficulty rh-d-${fm.difficulty}">${fm.difficulty}</span>`);
   if (fm.cuisine) meta.push(`<span class="rh-meta-item">${escapeHtml(fm.cuisine)}</span>`);
   if (fm.course) meta.push(`<span class="rh-meta-item">${escapeHtml(fm.course)}</span>`);
@@ -161,7 +162,7 @@ export function renderSteps(fm, currentPath, techniqueBySlug) {
         body += ` <a class="step-tech" href="${escapeHtml(href)}">${escapeHtml(techTitle)}</a>`;
       }
     }
-    const time = step.time_min ? `<span class="step-time">${step.time_min} min</span>` : '';
+    const time = step.time_min ? `<span class="step-time">${escapeHtml(fmtMinutes(step.time_min))}</span>` : '';
     return `
       <li class="step-item">
         <span class="step-num">${i + 1}</span>

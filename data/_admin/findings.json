@@ -1,8 +1,8 @@
 {
-  "generated": "2026-04-27T02:55:41.777Z",
+  "generated": "2026-04-27T03:15:28.278Z",
   "summary": {
     "errors": 0,
-    "warnings": 3,
+    "warnings": 8,
     "info": 4
   },
   "findings": [
@@ -50,6 +50,41 @@
       "category": "search",
       "file": "data/search-index.json",
       "msg": "77 singleton tokens (appear in exactly 1 entry). Sample: three-ingredient, pecorino-romano, black-pepper, sacrificing, lactic-tang, weaponized, peppercorn, tonnarelli, technique, canonical, nuttiness, spaghetti, mantecare, finishing, terpenes, grinding, aromatic, replaces, noisette, hazelnut, toasting, emulsion, off-heat, minutes, without, cooking, bloomed, recipes, comfort, foaming"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/explore/cook.md",
+      "msg": "no section-anchor elements — TOC scroll-spy disabled",
+      "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/explore/index.md",
+      "msg": "no section-anchor elements — TOC scroll-spy disabled",
+      "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/explore/learn.md",
+      "msg": "no section-anchor elements — TOC scroll-spy disabled",
+      "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/explore/pantry.md",
+      "msg": "no section-anchor elements — TOC scroll-spy disabled",
+      "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/explore/traverse.md",
+      "msg": "no section-anchor elements — TOC scroll-spy disabled",
+      "fix": "Add section anchors with ids"
     }
   ]
 }
