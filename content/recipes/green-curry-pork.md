@@ -26,6 +26,17 @@ source:
   note: 'Augments store-bought paste rather than pounding from scratch; doubles the coconut milk to extend the lipid phase for the eggplant braise.'
 
 ingredients:
+  # Buying unit: two 400 ml cans of full-fat coconut milk. Inherits density
+  # 1.00 g/ml and pack size 13.5 oz / 400 ml from the ingredient page. The
+  # cream/remainder split happens in the per-phase mise breakdown below as
+  # derived rows, which the build skips for nutrition + shopping list.
+  - id: 'coconut-milk'
+    item: 'full-fat coconut milk'
+    slug: 'coconut-milk'
+    qty: 800
+    unit: 'ml'
+    note: 'Aroy-D or Chaokoh — two-ingredient brands only (coconut, water).'
+
   - group: 'Phase 1, augmented paste bloom'
     item: 'green curry paste (store-bought)'
     qty: 48
@@ -48,10 +59,11 @@ ingredients:
     unit: 'g'
     note: '(1 tsp)'
   - group: 'Phase 1, augmented paste bloom'
-    item: 'coconut cream, skimmed from both cans'
+    derive_from: 'coconut-milk'
+    item: 'coconut cream, skimmed off the cans'
     qty: 180
     unit: 'g'
-    note: '(¾ cup)'
+    note: '(¾ cup, the thick layer at the top of each can)'
   - group: 'Phase 1, augmented paste bloom'
     item: 'kosher salt'
     qty: 1
@@ -59,10 +71,11 @@ ingredients:
     note: '(small pinch)'
 
   - group: 'Phase 2, base & eggplant'
-    item: 'remaining coconut milk, both cans'
-    qty: 360
+    derive_from: 'coconut-milk'
+    item: 'remaining coconut liquid'
+    qty: 575
     unit: 'g'
-    note: '(1½ cups)'
+    note: '(everything left in the cans after skimming, ~2¼ cups)'
   - group: 'Phase 2, base & eggplant'
     item: 'fish sauce'
     qty: 15
@@ -105,10 +118,11 @@ ingredients:
     unit: 'g'
     note: '(¼ tsp)'
   - group: 'Phase 3, vegetables & pork'
+    derive_from: 'coconut-milk'
     item: 'reserved coconut cream, off heat'
     qty: 45
     unit: 'g'
-    note: '(3 tbsp)'
+    note: '(3 tbsp set aside before Phase 1)'
   - group: 'Phase 3, vegetables & pork'
     item: 'Thai basil leaves'
     qty: 10
@@ -137,21 +151,21 @@ ingredients:
     note: '(as base, ~3 cups cooked)'
 
 steps:
-  - text: 'Combine green curry paste, minced lemongrass, grated ginger, and shrimp paste in a small bowl. Work together with the back of a spoon until fully integrated. You are pre-augmenting the paste so the bloom step extracts everything at once.'
+  - text: 'Combine 48 g / 3 tbsp green curry paste, 15 g minced lemongrass, 5 g / 1 tsp grated ginger, and 6 g / 1 tsp shrimp paste in a small bowl. Work together with the back of a spoon until fully integrated. You are pre-augmenting the paste so the bloom step extracts everything at once.'
     time_min: 3
   - text: 'Open both cans of full-fat coconut milk without shaking. Skim the thick cream from the top of each (about ¾ cup / 180g total) into a wide skillet or wok. Reserve the remaining liquid coconut milk and a final 3 tbsp / 45g of cream separately for the off-heat finish.'
     time_min: 3
   - text: 'Set the skillet over medium-high heat. Cook the cream until the fat splits and the surface shimmers with clear oil, 3 to 4 minutes. This is the canonical "cracking the cream" step: you need the oil released before the paste goes in or it will steam rather than fry.'
     time_min: 4
-  - text: 'Add the augmented paste. Fry hard, pressing, folding, scraping the pan floor, for 3 to 4 full minutes until the paste darkens one shade and the surrounding oil runs green-tinged and clear. Season with a small pinch of kosher salt. Under-frying here is the single biggest reason home green curries taste flat.'
+  - text: 'Add the augmented paste. Fry hard, pressing, folding, scraping the pan floor, for 3 to 4 full minutes until the paste darkens one shade and the surrounding oil runs green-tinged and clear. Season with a 1 g pinch of kosher salt. Under-frying here is the single biggest reason home green curries taste flat.'
     time_min: 4
-  - text: 'Pour in the remaining coconut milk from both cans (about 1½ cups / 360g) and the fish sauce. Stir hard to lift the paste off the pan floor and integrate. Add the bruised makrut lime leaves and the galangal coin.'
+  - text: 'Pour in everything left in the cans (about 2¼ cups / 575g — the watery serum plus any cream you did not skim) and the fish sauce. Stir hard to lift the paste off the pan floor and integrate. Add the bruised makrut lime leaves and the galangal coin.'
     time_min: 1
   - text: 'Add the eggplant. Bring to a low, steady simmer at about 190°F (88°C). The doubled coconut volume means a hard boil at this fat-to-water ratio will permanently break the emulsion into greasy pools. Poach the eggplant 8 to 10 minutes until fully tender and curry-stained throughout.'
     time_min: 10
   - text: 'Add the bamboo shoots and shimeji clusters. Slice the pork thin against the grain, season with ¼ tsp / 1.5g kosher salt, and temper by spooning hot curry liquid over it before adding to the pan. Tempering prevents thermal shock and tightening.'
     time_min: 2
-  - text: 'Add the pork. Cook 4 to 5 minutes to 145°F (63°C) internal, then pull from heat immediately. Pork tenderloin past 150°F goes tight and chalky.'
+  - text: 'Add all 450 g / 1 lb of the seasoned pork to the curry. Cook 4 to 5 minutes to 145°F (63°C) internal, then pull from heat immediately. Pork tenderloin past 150°F goes tight and chalky.'
     time_min: 5
   - text: 'Off heat, stir in the reserved 3 tbsp / 45g coconut cream to restore body and silk; the cream gels back the emulsion that the simmer thinned. Fold in most of the Thai basil; the residual heat will release its anise compounds without bruising the leaves.'
     time_min: 1
@@ -179,6 +193,9 @@ homemade_alternatives:
   - for: 'green curry paste (store-bought)'
     recipe_slug: 'recipes/thai-green-curry-paste'
     why: 'A pounded-fresh paste in a stone mortar releases oils and integrates aromatics in a way no jarred paste matches. The augmentation step in this recipe is a workaround; from-scratch paste eliminates the need for it entirely.'
+
+homemade_exempt:
+  - 'coconut milk'
 
 notes: |
   Why two cans of coconut milk: the doubled lipid phase carries fat-soluble aromatic compounds (the terpenes from lemongrass and galangal, the capsaicinoids from chili, the indole and methyl chavicol from Thai basil) more thoroughly through the dish. The tradeoff is emulsion stability. At this fat-to-water ratio a hard boil drives permanent separation. Hold at a low simmer (around 190°F / 88°C) and the emulsion stays intact and silky rather than oily.

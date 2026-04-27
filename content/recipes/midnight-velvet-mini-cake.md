@@ -162,7 +162,7 @@ steps:
     time_min: 15
   - text: 'Balsamic caviar: confirm your tall glass of oil has been in the freezer at least 45 minutes. In a clean saucepan, whisk the ⅓ cup reduction with balsamic, water, and agar. Bring to a boil, simmer 2 minutes to activate the agar.'
     time_min: 8
-  - text: 'Pull off heat, cool briefly to ~125°F (50°C). Using a pipette, drop droplets into the cold oil; they''ll set into pearls as they fall. Strain the pearls out, rinse gently with cold water. Refrigerate.'
+  - text: 'Pull off heat, cool briefly to ~125°F (50°C). Using a pipette, drop droplets into the 240 ml / 1 cup frozen oil; they''ll set into pearls as they fall. Strain the pearls out, rinse gently with cold water. Refrigerate.'
     time_min: 10
   - text: 'Tempered chocolate shards: melt the 3 oz portion of chocolate in a bowl (microwave bursts or double boiler) to 115°F (46°C). Pull off heat, immediately add the 1 oz finely chopped seed chocolate, and stir constantly.'
     time_min: 8
@@ -172,15 +172,15 @@ steps:
     time_min: 5
   - text: 'Whisk sugar and buttermilk into the hot cocoa paste. The cold buttermilk drops the temperature so the egg won''t scramble. Whisk in oil, vanilla, and the egg until smooth.'
     time_min: 2
-  - text: 'In a small bowl, whisk flour, baking soda, baking powder, and salt. Dump dry into the wet bowl and whisk just until no streaks remain.'
+  - text: 'In a small bowl, whisk 65 g / ½ cup all-purpose flour, 3 g / ½ tsp baking soda, 1 g / ¼ tsp baking powder, and 1.5 g / ¼ tsp sea salt. Dump dry into the wet bowl and whisk just until no streaks remain.'
     time_min: 2
   - text: 'Divide between the two pans. Bake 22–25 minutes, until a toothpick comes out clean. Cool completely before assembling.'
     time_min: 25
-  - text: 'Buttercream: whisk egg whites and sugar over a double boiler until they hit 160°F (71°C) and the sugar dissolves.'
+  - text: 'Buttercream: whisk 2 large egg whites and 100 g / ½ cup granulated sugar over a double boiler until they hit 160°F (71°C) and the sugar dissolves.'
     time_min: 5
-  - text: 'Transfer to a stand mixer; whip on high to stiff peaks, until the bowl is cool to the touch. Add butter cubes one at a time on low speed; whip until silky. Fold in the freeze-dried strawberry powder and a pinch of salt.'
+  - text: 'Transfer to a stand mixer; whip on high to stiff peaks, until the bowl is cool to the touch. Add the 170 g / ¾ cup cubed cool butter one piece at a time on low speed; whip until silky. Fold in the 25 g / 1 cup pulverized freeze-dried strawberries and a 0.5 g pinch of sea salt.'
     time_min: 8
-  - text: 'Assemble: level the cakes. Pipe a dam of buttercream around the edge of the bottom layer. Fill the center with the reserved strawberry reduction. Top with the second layer.'
+  - text: 'Assemble: level the cakes. Pipe a dam of buttercream around the edge of the bottom layer. Fill the center with the remaining strawberry reduction (about 145 g / ½ cup, what''s left after the caviar). Top with the second layer.'
     time_min: 5
   - text: 'Coat the outside in a full layer of buttercream and smooth the sides. Spoon the balsamic caviar onto the center. Press the chocolate shards into the cake at varying angles for height.'
     time_min: 5

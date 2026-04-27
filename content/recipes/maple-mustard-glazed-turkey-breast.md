@@ -94,9 +94,9 @@ ingredients:
     note: '(1 tsp; the umami bridge)'
 
 steps:
-  - text: 'Up to 24 hours ahead (1 hour minimum), pat the breast bone-dry with paper towels. Mix salt, pepper, and paprika; rub all over, focusing on the meatier areas. Set on a rack in a sheet pan, uncovered, in the fridge. The salt seasons deep; the air dries the skin for crispness.'
+  - text: 'Up to 24 hours ahead (1 hour minimum), pat the 2700 g / 5–7 lb turkey breast bone-dry with paper towels. Mix 22 g / 1.5 tbsp kosher salt, 2 g / 1 tsp cracked black pepper, and 1 g / ½ tsp smoked paprika; rub all over, focusing on the meatier areas. Set on a rack in a sheet pan, uncovered, in the fridge. The salt seasons deep; the air dries the skin for crispness.'
     time_min: 1440
-  - text: 'Heat oven to 425°F (220°C). Mash the softened butter with sage, thyme, and grated garlic.'
+  - text: 'Heat oven to 425°F (220°C). Mash the 60 g / 4 tbsp softened butter with 4 g / 1 tbsp minced sage, 3 g / 1 tbsp thyme leaves, and 2 grated garlic cloves.'
     time_min: 5
   - text: 'Slide your fingers between skin and meat to loosen the skin without tearing it. Push the herb butter into that pocket and massage it across the breast.'
     time_min: 5

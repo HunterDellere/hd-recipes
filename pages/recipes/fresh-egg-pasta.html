@@ -119,7 +119,15 @@
           <span>Copy list</span>
         </button>
       </div>
-      <ol class="ing-list">
+      <details class="ing-panel ing-panel-shop" open data-ing-panel="shop">
+        <summary class="ing-panel-summary">
+          <span class="ing-panel-title">Shopping list</span>
+          <span class="ing-panel-meta">
+            <span class="ing-panel-count"><span data-shop-count>4</span> items</span>
+            <span class="ing-panel-chev" aria-hidden="true">▾</span>
+          </span>
+        </summary>
+        <ol class="ing-list ing-list-shop">
         <li class="ing-row" data-qty="300" data-unit="g" data-density="0.53" data-imp-pref="cup" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>300</span> <span data-ing-unit>g</span></span>
@@ -140,7 +148,9 @@
           <span class="ing-qty"><span data-ing-qty>4</span> <span data-ing-unit>g</span></span>
           <span class="ing-name"><a class="ing-link" href="../ingredients/fine-sea-salt.html">fine sea salt</a> <span class="ing-alt" data-ing-alt aria-hidden="true"></span></span>
         </li>
-      </ol>
+        </ol>
+      </details>
+      
     </div>
 
     

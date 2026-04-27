@@ -59,9 +59,9 @@ steps:
     time_min: 1
   - text: 'Tip immediately onto a cool plate or sheet pan to stop the cooking. Let cool 5 minutes, until they''re warm but no longer steaming. Hot seeds clog the food processor; cold seeds refuse to release their oil.'
     time_min: 5
-  - text: 'Transfer the warm seeds to a food processor with the salt. Run continuously for 4–5 minutes. The texture passes through three stages: crumbly powder (1 min) → wet sand (2 min) → seizing dough-ball (3 min) → loose paste (4–5 min). Scrape down the sides every minute.'
+  - text: 'Transfer the warm seeds to a food processor with the 2 g / ¼ tsp fine sea salt. Run continuously for 4–5 minutes. The texture passes through three stages: crumbly powder (1 min) → wet sand (2 min) → seizing dough-ball (3 min) → loose paste (4–5 min). Scrape down the sides every minute.'
     time_min: 5
-  - text: 'When the mixture has passed the dough-ball stage and is starting to spin smoothly as a paste, drizzle in the toasted sesame oil with the motor running. The paste loosens immediately. If you want it thinner, add the neutral oil now. Process another 30 seconds until uniform and glossy.'
+  - text: 'When the mixture has passed the dough-ball stage and is starting to spin smoothly as a paste, drizzle in 30 g / 2 tbsp toasted sesame oil with the motor running. The paste loosens immediately. If you want it thinner, add the optional 15 g / 1 tbsp neutral oil now. Process another 30 seconds until uniform and glossy.'
     time_min: 1
   - text: 'Test the texture: it should be the consistency of natural peanut butter: thick enough to mound on a spoon, loose enough to drop slowly off it. For dan dan and dipping sauces this is the right viscosity; the recipe will thin it further with soy and vinegar.'
     time_min: 1

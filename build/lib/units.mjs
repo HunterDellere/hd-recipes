@@ -93,3 +93,60 @@ export function ingredientGrams(ing, density_g_per_ml = 1, grams_per_unit = null
   if (VOLUME_UNITS.has(unit)) return qty * conv * density_g_per_ml;
   return qty * conv;
 }
+
+// ── Pack & derive resolution ────────────────────────────────────────────────
+//
+// A "pack" row is a buying-unit (can, bottle, brick) — it answers "what do you
+// take off the shelf". Pack info lives either on the ingredient page (canonical
+// shelf size for that ingredient) or on the recipe row (override). The recipe
+// row's qty/unit still drives nutrition + scaling math; the pack annotation is
+// purely a display layer for the shopping-list view.
+//
+// A "derived" row references a pack row by id and represents one phase's slice
+// of that pack (e.g. 180g cream skimmed off two 400ml cans). Derived rows show
+// only in the per-phase mise breakdown — their grams are already accounted for
+// inside the parent pack so they never count toward shopping list or nutrition.
+//
+// resolvePack(): merge ingredient-page defaults into a recipe row's `pack:`.
+// Returns null when neither source defines a pack (i.e. row is "plain").
+export function resolvePack(ing, ingredientPage) {
+  const pageFm = ingredientPage && ingredientPage._fm ? ingredientPage._fm
+               : (ingredientPage && ingredientPage.fm ? ingredientPage.fm : null);
+  const linePack = ing.pack || null;
+  const pagePack = (pageFm && pageFm.pack) ? pageFm.pack : null;
+  if (!linePack && !pagePack) return null;
+  return {
+    size_ml:    linePack?.size_ml    ?? pagePack?.size_ml    ?? null,
+    size_g:     linePack?.size_g     ?? pagePack?.size_g     ?? null,
+    size_label: linePack?.size_label ?? pagePack?.size_label ?? null,
+  };
+}
+
+// classifyIngredients(): walk the recipe's ingredients[] once and tag each row
+// with a role — 'pack', 'derived', or 'plain'. Also resolves the per-row pack
+// (size_ml, size_label) and the derive_from reference.
+//
+// This is the single source of truth that the renderer, scaler, and nutrition
+// pass all consume — keeps role logic from drifting between server and client.
+export function classifyIngredients(ingredients, ingredientBySlug) {
+  const idIndex = new Map();
+  const rows = (ingredients || []).map((ing, i) => {
+    const page = ing.slug
+      ? (ingredientBySlug.get(ing.slug) || ingredientBySlug.get(ing.slug.replace(/^ingredients\//, '')))
+      : null;
+    const pack = resolvePack(ing, page);
+    let role = 'plain';
+    if (pack && (pack.size_ml || pack.size_g)) role = 'pack';
+    if (ing.derive_from) role = 'derived';
+    const row = { ing, page, pack, role, idx: i };
+    if (ing.id) idIndex.set(ing.id, row);
+    return row;
+  });
+  // Hook each derived row up to its parent. Derived rows whose parent is
+  // missing render as plain (with a warning at validate time).
+  for (const r of rows) {
+    if (r.role !== 'derived') continue;
+    r.parent = idIndex.get(r.ing.derive_from) || null;
+  }
+  return rows;
+}

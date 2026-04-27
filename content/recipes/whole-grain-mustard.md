@@ -65,7 +65,7 @@ ingredients:
 steps:
   - text: 'Combine both mustard seeds, wine, and vinegar in a glass or ceramic bowl. Cover and refrigerate 36–48 hours. The seeds will swell and soften but should still feel firm in the center; for whole-grain you want the pop, not full softness.'
     time_min: 5
-  - text: 'After the soak, transfer to a food processor. Add salt and honey.'
+  - text: 'After the soak, transfer to a food processor. Add 6 g / 1 tsp kosher salt and 12 g / 2 tsp honey.'
     time_min: 2
   - text: 'Pulse (emphatically pulse, do not run continuously) in 1-second bursts, 8 to 12 times. The goal is to crush half the seeds while leaving the other half intact. Stop when the mixture has a thick, scoopable texture and roughly half the seeds are still whole.'
     time_min: 2

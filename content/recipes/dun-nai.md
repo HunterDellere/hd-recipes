@@ -51,11 +51,11 @@ ingredients:
     note: '(pinch)'
 
 steps:
-  - text: 'Combine milk, sugar, salt, and vanilla paste in a small saucepan. Heat until hot to the touch (60°C / 140°F) and the sugar dissolves. Do not boil. You should smell the vanilla bloom and see the seeds suspend.'
+  - text: 'Combine 240 ml / 1 cup whole milk, 25 g / 2 tbsp granulated sugar, a 0.5 g pinch fine sea salt, and 5 g / 1 tsp vanilla bean paste in a small saucepan. Heat until hot to the touch (60°C / 140°F) and the sugar dissolves. Do not boil. You should smell the vanilla bloom and see the seeds suspend.'
     time_min: 3
-  - text: 'Whisk the eggs in a separate bowl, gently, no foam.'
+  - text: 'Whisk 2 large eggs in a separate bowl, gently, no foam.'
     time_min: 1
-  - text: 'Slowly stream the warm milk into the eggs while whisking. This brings the eggs up gradually so they don''t scramble on contact.'
+  - text: 'Slowly stream the warm 240 ml of milk into the eggs while whisking. This brings the eggs up gradually so they don''t scramble on contact.'
     time_min: 2
   - text: 'Strain through a fine-mesh sieve into a heatproof bowl. Cover tightly with foil and poke two small holes in the top.'
     time_min: 2

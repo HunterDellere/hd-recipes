@@ -88,13 +88,13 @@ steps:
     time_min: 2
   - text: 'Crush the toasted spices in a mortar (or just mash with the back of a spoon) and combine with the ground nutmeg.'
     time_min: 1
-  - text: 'Add water, the masala blend, and the smashed ginger knob. Bring to a boil over medium-high and let it bubble hard for 3–4 minutes.'
+  - text: 'Add 360 ml / 1½ cups water, the masala blend, and the smashed 1-inch ginger knob. Bring to a boil over medium-high and let it bubble hard for 3–4 minutes.'
     time_min: 4
-  - text: 'Add the tea leaves and boil 2–3 minutes. The brew should darken to a deep mahogany.'
+  - text: 'Add 5 g / 2 tsp Assam tea leaves and boil 2–3 minutes. The brew should darken to a deep mahogany.'
     time_min: 3
-  - text: 'Fish out the ginger, then pour in the milk. Bring back up to a boil; just before it climbs the pan, pull off the heat. Return to heat and let it climb again. Repeat 2–3 times — this is the pulling that gives chai its body.'
+  - text: 'Fish out the ginger knob, then pour in 240 ml / 1 cup whole milk. Bring back up to a boil; just before it climbs the pan, pull off the heat. Return to heat and let it climb again. Repeat 2–3 times — this is the pulling that gives chai its body.'
     time_min: 3
-  - text: 'Pull off, stir in sugar to taste, strain through a fine sieve into cups. Serve hot — with cake rusk or roti if you have it.'
+  - text: 'Pull off, stir in 5 g / 1 tsp sugar (to taste), strain through a fine sieve into cups. Serve hot — with cake rusk or roti if you have it.'
     time_min: 1
 
 notes: |

@@ -91,7 +91,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Bring a large pot of water to a hard boil with the salt; it should taste like seawater. Set a bowl of ice water nearby.'
+  - text: 'Bring a large pot of water to a hard boil with 15 g / 1 tbsp kosher salt; it should taste like seawater. Set a bowl of ice water nearby.'
     time_min: 6
   - text: 'Drop the beans in the boiling water. Boil 3–5 minutes, until tender with a slight snap. Pull one and bite.'
     time_min: 4
@@ -101,11 +101,11 @@ steps:
     time_min: 3
   - text: 'Add the minced garlic, salt, and pepper. Stir another 1–2 minutes until both garlic and crumbs are deep golden and fragrant. Watch the garlic; it goes from raw to burnt in seconds.'
     time_min: 2
-  - text: 'Pull off heat. Stir in the lemon zest off the heat (it would bitter on direct contact). Transfer crumbs to a small bowl.'
+  - text: 'Pull off heat. Stir in 2 g / 1 tsp fresh lemon zest off the heat (it would bitter on direct contact). Transfer crumbs to a small bowl.'
     time_min: 1
   - text: 'Wipe the skillet, set back on medium-high, melt 1 tbsp butter. Add the dried beans and toss 2–3 minutes until hot and starting to blister in spots. Add lemon juice; toss once more.'
     time_min: 3
-  - text: 'Cut the heat. Add half the crumb (and parmesan if using) to the pan; toss to coat. Plate, then top with the remaining crumb so the top layer stays crisp. Serve immediately.'
+  - text: 'Cut the heat. Add half the crumb (and the optional 12 g / 2 tbsp grated parmesan if using) to the pan; toss to coat. Plate, then top with the remaining crumb so the top layer stays crisp. Serve immediately.'
     time_min: 2
 
 substitutions:

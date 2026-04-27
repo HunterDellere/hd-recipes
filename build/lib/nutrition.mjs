@@ -148,6 +148,10 @@ export function computeRecipeNutrition(recipe, ingredientPagesBySlug, cache) {
   };
   for (const ing of (recipe.ingredients || [])) {
     if (ing.optional) continue;
+    // Derived rows are display-only splits of a pack row — their grams are
+    // already accounted for in the parent pack's qty. Skip to avoid double
+    // counting.
+    if (ing.derive_from) continue;
 
     // Resolve ingredient page once; used for fdc_id, density, grams_per_unit.
     const page = ing.slug

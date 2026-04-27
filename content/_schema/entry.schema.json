@@ -30,6 +30,15 @@
     "density_g_per_ml": { "type": "number", "minimum": 0.1, "maximum": 3, "description": "Ingredient bulk density in grams per ml. Used for mass↔volume display conversions and nutrition. Defaults to 1.0 (water-equivalent) when absent. Examples: AP flour 0.53, granulated sugar 0.85, butter 0.911." },
     "imperial_pref": { "type": "string", "enum": ["cup", "tbsp", "tsp", "oz", "lb"], "description": "Preferred imperial unit for this ingredient when displayed under imperial mode. Defaults to a size-driven choice. Set 'cup' for flour/sugar where volume is the cook's idiom even when mass-measured." },
     "grams_per_unit": { "type": "number", "minimum": 0.01, "maximum": 5000, "description": "Grams in one piece/whole/clove/pod/stick. Lets nutrition compute when a recipe uses unit: 'each' / 'clove' / 'pod' / 'stick'. Examples: large egg 50, garlic clove 4, star-anise pod 0.5, cinnamon stick 3." },
+    "pack": {
+      "type": "object",
+      "description": "Default purchase-unit for this ingredient (canned/bottled/boxed). When a recipe references this ingredient, the shopping-list view rolls quantity up into whole packs.",
+      "properties": {
+        "size_ml": { "type": "number", "minimum": 1, "description": "Volume of one pack in ml. Used with the ingredient's density to compute pack mass." },
+        "size_g":  { "type": "number", "minimum": 1, "description": "Mass of one pack in grams (use when packs are sold by mass, not volume)." },
+        "size_label": { "type": "string", "description": "How a pack reads on the shelf, e.g. '13.5 oz / 400 ml can', '500 g brick', '1 L carton'." }
+      }
+    },
     "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
     "rating": { "type": "integer", "minimum": 1, "maximum": 5 },
     "last_made": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
@@ -72,6 +81,7 @@
         "properties": {
           "item": { "type": "string", "description": "Display text, e.g. 'yellow onion'" },
           "slug": { "type": "string", "description": "Optional: ingredients/<slug>.md to crosslink" },
+          "id":   { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$", "description": "Internal id within this recipe so derived rows can reference this row via derive_from. Lowercase slug-style." },
           "qty": { "type": ["number", "string"], "description": "Numeric for scaling; string allowed for 'to taste'" },
           "unit": { "type": "string", "description": "g, kg, ml, l, tsp, tbsp, cup, oz, lb, each, pinch" },
           "prep": { "type": "string", "description": "e.g. 'finely diced'" },
@@ -81,7 +91,17 @@
           "density_g_per_ml": { "type": "number", "minimum": 0.1, "maximum": 3, "description": "Per-line density override. Falls back to the linked ingredient's density, then to water (1.0)." },
           "imperial_pref": { "type": "string", "enum": ["cup", "tbsp", "tsp", "oz", "lb"], "description": "Per-line imperial unit preference. Falls back to the linked ingredient's preference, then to size-driven default." },
           "grams_per_unit": { "type": "number", "minimum": 0.01, "maximum": 5000, "description": "Per-line override for grams in one piece/clove/pod/stick. Falls back to the linked ingredient's grams_per_unit." },
-          "usda_fdc_id": { "type": "integer", "description": "Override per-recipe nutrition lookup" }
+          "usda_fdc_id": { "type": "integer", "description": "Override per-recipe nutrition lookup" },
+          "pack": {
+            "type": "object",
+            "description": "Marks this row as a buying-unit (can/bottle/brick). Inherits size_ml/size_label from the linked ingredient page when set there. Pack rows render as 'N × <label>' in the shopping list and never appear in the per-phase mise breakdown.",
+            "properties": {
+              "size_ml":    { "type": "number", "minimum": 1 },
+              "size_g":     { "type": "number", "minimum": 1 },
+              "size_label": { "type": "string" }
+            }
+          },
+          "derive_from": { "type": "string", "description": "Marks this row as a derived split of another ingredient row (referenced by its id). Derived rows show only in the per-phase mise breakdown — their grams come out of the parent pack and are not double-counted in shopping list or nutrition." }
         }
       }
     },
@@ -125,6 +145,11 @@
           "why":         { "type": "string", "description": "One sentence on why making it yourself is worth the effort (depth, cost, control)." }
         }
       }
+    },
+    "homemade_exempt": {
+      "type": "array",
+      "description": "Store-bought ingredients for which there is no reasonable homemade version (e.g. canned coconut milk, kosher salt, fish sauce). Strings here suppress the validate-formatting homemade-alternatives warning for the matching ingredient. Use sparingly — most pantry items DO have a worthwhile homemade form.",
+      "items": { "type": "string" }
     },
     "seasonality": { "type": "string" },
     "storage": { "type": "string" },

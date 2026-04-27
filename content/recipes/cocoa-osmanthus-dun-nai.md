@@ -58,11 +58,11 @@ ingredients:
     note: '(2 tbsp)'
 
 steps:
-  - text: 'Combine milk and cocoa nibs in a saucepan. Bring to a bare simmer (~80°C / 175°F) and hold there 8 minutes. Don''t boil; boiling scorches the milk proteins and gives a cooked-milk off-note.'
+  - text: 'Combine 960 ml / 4 cups whole milk and 40 g / 4 tbsp cocoa nibs in a saucepan. Bring to a bare simmer (~80°C / 175°F) and hold there 8 minutes. Don''t boil; boiling scorches the milk proteins and gives a cooked-milk off-note.'
     time_min: 10
-  - text: 'Strain through a fine sieve to pull out the nibs. Cool the infused milk to about 45°C (warm to the touch, not hot). Pouring hot milk into the egg whites curds them on contact.'
+  - text: 'Strain through a fine sieve to pull out the nibs. Cool the infused 960 ml of milk to about 45°C (warm to the touch, not hot). Pouring hot milk into the egg whites curds them on contact.'
     time_min: 8
-  - text: 'In a large bowl, whisk egg whites and sugar gently until the sugar dissolves. Slowly pour the cooled cocoa milk into the whites while whisking softly, no foam.'
+  - text: 'In a large bowl, whisk 8 large egg whites (~240 g) and 100 g / ½ cup granulated sugar gently until the sugar dissolves. Slowly pour the cooled cocoa milk into the whites while whisking softly, no foam.'
     time_min: 3
   - text: 'Strain the mixture once more through a fine sieve into 6 ramekins (or one shallow heatproof dish). Pop any surface bubbles with a toothpick.'
     time_min: 3
