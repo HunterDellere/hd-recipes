@@ -111,6 +111,19 @@
         }
       }
     },
+    "homemade_alternatives": {
+      "type": "array",
+      "description": "Store-bought ingredients in this recipe that have a reasonable homemade version. Each entry links to a recipe page (or a stub for one) that teaches the homemade form. Different from substitutions — substitutions are 'use this instead'; homemade_alternatives are 'or make it yourself'.",
+      "items": {
+        "type": "object",
+        "required": ["for", "recipe_slug"],
+        "properties": {
+          "for":         { "type": "string", "description": "The store-bought ingredient as it reads in this recipe (e.g. 'chicken stock', 'ricotta')." },
+          "recipe_slug": { "type": "string", "description": "Recipe path like 'recipes/chicken-stock'. Stub the page if not yet drafted." },
+          "why":         { "type": "string", "description": "One sentence on why making it yourself is worth the effort (depth, cost, control)." }
+        }
+      }
+    },
     "seasonality": { "type": "string" },
     "storage": { "type": "string" },
 

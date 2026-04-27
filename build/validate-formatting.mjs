@@ -76,6 +76,73 @@ for (const pageFull of walkPages(PAGES)) {
     if (!html.includes('id="ingredients"')) emit('WARN', contentRel, 'recipe missing ingredients section', {});
     if (!html.includes('id="execution"')) emit('WARN', contentRel, 'recipe missing execution section', {});
     if (!fm.steps || fm.steps.length < 2) emit('WARN', contentRel, `recipe has ${(fm.steps || []).length} step(s) — typically need 2+`, {});
+
+    // Homemade-alternatives check: warn when an ingredient line reads like a
+    // store-bought item that has a reasonable homemade version, but the recipe
+    // doesn't surface a fm.homemade_alternatives entry pointing to one.
+    // Author either fills the field or, deliberately, declares why not.
+    const STORE_BOUGHT_PATTERNS = [
+      /\bchicken\s*(stock|broth|bouillon)\b/i,
+      /\bbeef\s*(stock|broth|bouillon)\b/i,
+      /\bvegetable\s*(stock|broth|bouillon)\b/i,
+      /\bfish\s*(stock|broth)\b/i,
+      /\bmayonnaise\b/i, /\bmayo\b/i,
+      /\bricotta\b/i,
+      /\bketchup\b/i,
+      /\b(dijon|yellow|hot|whole.?grain|chinese)\s*mustard\b/i,
+      /\bhot\s*sauce\b/i,
+      /\bbbq\s*sauce\b/i, /\bbarbecue\s*sauce\b/i,
+      /\bteriyaki\s*sauce\b/i,
+      /\boyster\s*sauce\b/i,
+      /\bhoisin\b/i,
+      /\bgochujang\b/i,
+      /\bsalsa\b/i,
+      /\bpesto\b/i,
+      /\bcurry\s*paste\b/i,
+      /\bharissa\b/i,
+      /\bgaram\s*masala\b/i,
+      /\b(tomato|marinara|pasta)\s*sauce\b/i,
+      /\bbreadcrumbs?\b/i, /\bpanko\b/i,
+      /\bgranola\b/i,
+      /\bwhipped\s*cream\b/i,
+      /\b(vanilla|almond|oat|coconut)\s*milk\b/i,
+      /\bnut\s*butter\b/i, /\bpeanut\s*butter\b/i, /\balmond\s*butter\b/i,
+      /\b(yellow|red|green)\s*curry\s*paste\b/i,
+      /\bchili\s*oil\b/i,                // we have this as ingredient; recipes still benefit
+      /\btahini\b/i,
+      /\bhummus\b/i,
+      /\bpie\s*crust\b/i, /\bpuff\s*pastry\b/i, /\bphyllo\b/i,
+      /\b(corn|flour)\s*tortillas?\b/i,
+      /\bfresh\s*pasta\b/i,              // dried pasta is canonical; only flag fresh
+      /\b(tonnarelli|fettuccine|tagliatelle|pappardelle|ravioli|tortellini|gnocchi)\b/i,
+    ];
+    const declaredAlts = new Set((fm.homemade_alternatives || []).map(h => String(h.for || '').toLowerCase()));
+    const flagged = new Set();
+    for (const ing of (fm.ingredients || [])) {
+      const text = `${ing.item || ''} ${ing.note || ''} ${ing.prep || ''}`;
+      for (const re of STORE_BOUGHT_PATTERNS) {
+        const m = text.match(re);
+        if (!m) continue;
+        const matchedPhrase = m[0].toLowerCase();
+        // Already covered by a homemade_alternatives entry whose `for` mentions this term
+        const covered = [...declaredAlts].some(a => a.includes(matchedPhrase) || matchedPhrase.includes(a));
+        if (!covered) flagged.add(matchedPhrase);
+      }
+    }
+    if (flagged.size) {
+      emit('WARN', contentRel,
+        `store-bought ingredient(s) without homemade_alternatives: ${[...flagged].join(', ')}`,
+        { fix: 'Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here.' });
+    }
+
+    // Sanity-check: every homemade_alternatives entry must point to a recipe slug
+    for (const h of (fm.homemade_alternatives || [])) {
+      if (!h.recipe_slug) {
+        emit('ERROR', contentRel, `homemade_alternatives entry for "${h.for}" missing recipe_slug`, {});
+      } else if (!/^recipes\//.test(h.recipe_slug)) {
+        emit('ERROR', contentRel, `homemade_alternatives recipe_slug "${h.recipe_slug}" must start with 'recipes/'`, {});
+      }
+    }
   }
 
   if (fm.content_review === 'verified') {

@@ -160,6 +160,28 @@ Update `SITE_URL` in `build/build.mjs` to your actual domain. The build emits `s
 
 ---
 
+## Content intake workflow
+
+Whenever Hunter asks you to draft a new recipe or to reformat an existing recipe into the standard format, follow this sequence. The full drafting spec lives at `templates/_drafting/RECIPE.md`; this section is the per-session reminder.
+
+1. **Draft the recipe.** Frontmatter-only is the norm — the entire page renders from frontmatter. Voice is molecular-gastronomy specialist: clinical, technique-driven, no Bon Appétit cheer. Honor the operational directives (anti-bland, umami+acid, seasoning curve, measurement integrity, linguistic precision).
+
+2. **Scan for store-bought ingredients with reasonable homemade versions.** The validator will flag common ones (chicken stock, mayo, ricotta, hot sauce, BBQ, pesto, breadcrumbs, fresh pasta, hummus, curry paste, pie crust, granola, tortillas, etc.) but you should also use judgment for anything that fits the pattern.
+
+3. **For each flagged ingredient, ask Hunter once:** "Want me to fully draft `<name>` now?" Accept yes/no per item. Don't re-ask.
+   - **Yes** → draft a complete recipe page at `content/recipes/<slug>.md` with `status: 'complete'`. Same voice and rigor as the parent recipe.
+   - **No** → create a high-quality stub at `content/recipes/<slug>.md` with `status: 'stub'`. Stubs follow the template at the bottom of `templates/_drafting/RECIPE.md`: full ingredients list at real quantities, skeleton steps, framing notes that explain the technique angle so a future drafting session can flesh it out without rebuilding the conceptual scaffolding.
+
+4. **Always link from the calling recipe** via `homemade_alternatives: [{ for: '<as the recipe lists it>', recipe_slug: 'recipes/<slug>', why: '<one sentence on why making it yourself earns the time>' }]`. Stub or complete, the link should resolve.
+
+5. **Append anything left as a stub** to `local/homemade-queue.md` — that's the rolling list of recipes waiting for a real drafting pass. Format: one line per stub, `- recipes/<slug> — <one-line context>`.
+
+6. **Run `npm run verify`.** The validator will catch missed homemade-alternatives, schema violations, em-dash overruns, and broken links.
+
+The goal is that every recipe published to the site offers an "or make it yourself" path for every store-bought ingredient where one is reasonable, and that the link always lands on a page — even if that page is currently a stub.
+
+---
+
 ## Git Commit Format
 ```
 feat: add recipe <slug>

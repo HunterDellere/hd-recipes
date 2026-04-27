@@ -1,8 +1,8 @@
 {
-  "generated": "2026-04-27T04:21:36.994Z",
+  "generated": "2026-04-27T04:42:37.695Z",
   "summary": {
     "errors": 0,
-    "warnings": 8,
+    "warnings": 13,
     "info": 4
   },
   "findings": [
@@ -85,6 +85,41 @@
       "file": "content/explore/traverse.md",
       "msg": "no section-anchor elements — TOC scroll-spy disabled",
       "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/brown-butter-cacio-e-pepe.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: tonnarelli",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/lemony-green-beans-with-garlic-crunch.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: breadcrumbs, panko",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/maple-mustard-glazed-turkey-breast.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: whole-grain mustard, dijon mustard",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/sichuan-dandan-mian.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: tahini, chili oil",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/smashed-cucumber-wood-ear-salad.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: chili oil",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
     }
   ]
 }

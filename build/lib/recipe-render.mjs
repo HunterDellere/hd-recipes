@@ -269,6 +269,41 @@ export function renderSubstitutions(fm) {
 }
 
 /**
+ * "Make it from scratch" — links to homemade-version recipes for store-bought
+ * ingredients used in this recipe. Distinct from substitutions: this is an
+ * invitation to upgrade, not a fallback.
+ */
+export function renderHomemadeAlternatives(fm, currentPath, entriesByPath) {
+  const list = fm.homemade_alternatives || [];
+  if (!list.length) return '';
+  const items = list.map(h => {
+    const slug = String(h.recipe_slug || '').replace(/^pages\//, '').replace(/\.html$/, '');
+    const targetPath = `pages/${slug}.html`;
+    const target = entriesByPath && entriesByPath.get(targetPath);
+    const href = relPath(currentPath, targetPath);
+    const isStub = !target || target.status !== 'complete';
+    const stubBadge = isStub ? `<span class="hm-stub" title="Stub recipe — placeholder">stub</span>` : '';
+    return `
+        <li class="hm-item">
+          <a class="hm-link" href="${escapeHtml(href)}" data-category="recipes">
+            <span class="hm-arrow" aria-hidden="true">→</span>
+            <span class="hm-text">
+              <span class="hm-for">${escapeHtml(h.for)}</span>
+              <span class="hm-target">make it yourself${stubBadge}</span>
+              ${h.why ? `<span class="hm-why">${escapeHtml(h.why)}</span>` : ''}
+            </span>
+          </a>
+        </li>`;
+  }).join('');
+  return `
+    <span class="section-anchor" id="homemade"></span>
+    <div class="section-head"><h2>Make it from scratch</h2></div>
+    <p class="hm-blurb">Store-bought is fine, but each of these has a homemade version that earns the time.</p>
+    <ul class="hm-list">${items}
+    </ul>`;
+}
+
+/**
  * Build the auto-generated recipe body. Used when content/<recipe>.md has no
  * authored body — the entire page renders from frontmatter.
  */
@@ -319,7 +354,7 @@ function renderHubMembership(inHubs, currentPath) {
 }
 
 export function renderRecipeBody(fm, slug, category, opts) {
-  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs, pairings } = opts;
+  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs, pairings, entriesByPath } = opts;
   const sidebarLinks = [];
   const sections = [];
 
@@ -336,6 +371,9 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
   const subHtml = renderSubstitutions(fm);
   if (subHtml) { sections.push(subHtml); sidebarLinks.push({ id: 'substitutions', label: 'Substitutions' }); }
+
+  const hmHtml = renderHomemadeAlternatives(fm, `pages/${category}/${slug}.html`, entriesByPath);
+  if (hmHtml) { sections.push(hmHtml); sidebarLinks.push({ id: 'homemade', label: 'Make it from scratch' }); }
 
   const notesHtml = renderRecipeNotes(fm);
   if (notesHtml) { sections.push(notesHtml); sidebarLinks.push({ id: 'notes', label: 'Notes' }); }

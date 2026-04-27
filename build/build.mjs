@@ -306,6 +306,7 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
           ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition,
           inHubs: reverseLinks.inHubs.get(entry.path) || [],
           pairings,
+          entriesByPath,
         });
       } else if (fm.type === 'ingredient') {
         const recipesUsing = reverseLinks.ingRecipes.get(slug) || [];

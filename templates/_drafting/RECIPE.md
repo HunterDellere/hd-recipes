@@ -23,6 +23,12 @@ layering, pH balance, and thermal kinetics.
 6. **Linguistic precision** — concise, specific verbs: render, emulsify, bloom, sweat, temper, hydrate. No flowery filler. No "it's not X, it's Y."
 7. **Modifications are pivots, not patches** — `substitutions` are for genuine alternatives (texture contrast, regional variant, dietary swap). Never use this section to fix bland baseline recipes.
 8. **Flat structure** — `steps[]` is a flat numbered list. `ingredients[]` is a flat list grouped by phase via the `group` field. No nesting.
+9. **Homemade alternatives are mandatory** — when a recipe lists a store-bought ingredient that has a reasonable homemade version (chicken stock, mayo, ricotta, hot sauce, BBQ sauce, hummus, breadcrumbs, fresh pasta, curry paste, pie crust, etc.), populate `homemade_alternatives` with a link to a recipe page that teaches it. **Workflow during intake:**
+    1. After drafting the main recipe, scan its ingredients for store-bought items with reasonable homemade counterparts. The validator (`validate-formatting.mjs`) flags common ones automatically.
+    2. **Offer to draft each homemade recipe in the same session.** Ask the user once per item — accept yes/no — then either (a) draft a full recipe page for items they want now, or (b) create a quality stub for the rest.
+    3. Stubs use `status: 'stub'` and follow the stub template at the bottom of this file. Each stub is a placeholder with enough framing that a future drafting session can fill it in without rebuilding the conceptual scaffolding.
+    4. Either way, link from the calling recipe via `homemade_alternatives: [{ for: '<as the recipe lists it>', recipe_slug: 'recipes/<slug>', why: '<one sentence on why bother>' }]`.
+    5. Add anything left as a stub to `local/homemade-queue.md` so it surfaces for follow-up.
 
 ## Frontmatter shape (recipe)
 
@@ -124,6 +130,13 @@ substitutions:
     use: 'bucatini'
     note: 'Different mouthfeel — the hollow holds sauce differently. Cooks ~2 min longer.'
 
+# Optional: homemade alternatives. Surfaces as the "Make it from scratch"
+# section. Each entry must point to a recipe page (full or stub).
+homemade_alternatives:
+  - for: 'tonnarelli or spaghetti'
+    recipe_slug: 'recipes/fresh-egg-pasta'
+    why: 'Fresh egg dough holds the brown butter differently — silkier mouthfeel, more starch into the sauce.'
+
 notes: |
   The dish lives or dies on emulsion. If you skip the brown butter and pepper bloom, you have boiled pasta with cheese, not cacio e pepe.
 
@@ -192,3 +205,82 @@ about: |
 If a recipe is adapted from a published source, fill `source.name` + `source.url`. The build renders these into the Sources block on the page. For your own original recipes, leave `source` empty.
 
 `content_review` flips to `'verified'` only when you've made the recipe at least twice with consistent results, or you have a trusted source. Bump `updated` and (if applicable) populate `content_sources` when you flip.
+
+## Homemade-alternatives stub template
+
+When the user declines to fully draft a homemade alternative in the same session, create a stub page at `content/recipes/<slug>.md`. A good stub gives a future drafting session enough framing that it doesn't have to rebuild the conceptual scaffolding — premise, why-bother, the technique-shaped story.
+
+```yaml
+---
+type: 'recipe'
+category: 'recipes'
+status: 'stub'                        # NOT 'complete' — stubs are placeholders
+content_review: 'pending'
+
+title: 'Chicken stock'                # the dish name
+desc: 'A clear, gelatin-rich chicken stock — the base under every soup, braise, and risotto. Stub.'
+metaDesc: 'Homemade chicken stock — clear, gelatinous, and dramatically better than store-bought. Stub recipe.'
+tags: ['weekend-project', 'make-ahead', 'umami']
+updated: '2026-04-26'
+
+# Servings + time can be approximate on a stub; they exist to satisfy schema and
+# give the cook orientation. Update on real draft.
+servings: 8                           # ~ in cups, treat as yield
+yield_note: 'about 2 L (~8 cups)'
+time:
+  prep_min: 15
+  cook_min: 240
+  total_min: 270
+  active_min: 20
+difficulty: 'easy'
+cuisine: ''                           # leave blank when broadly applicable
+course: 'stock'
+
+# Sketch a full ingredients list at quantities you'd actually use. The point of
+# a stub is that someone (you, future-you, or a draft session) can flesh out
+# the prose and cook the recipe straight from this — no scaffolding work needed.
+ingredients:
+  - item: 'raw chicken bones (carcasses, backs, wings)'
+    qty: 1500
+    unit: 'g'
+    note: '(~3 lb)'
+  - item: 'cold water'
+    qty: 3000
+    unit: 'ml'
+    note: '(~12 cups)'
+  - item: 'yellow onion'
+    qty: 1
+    unit: 'each'
+    prep: 'halved, skin-on'
+  - item: 'carrots'
+    qty: 2
+    unit: 'each'
+    prep: 'rough chunks'
+  - item: 'celery'
+    qty: 2
+    unit: 'each'
+    prep: 'rough chunks'
+  - item: 'bay leaf'
+    qty: 2
+    unit: 'each'
+  - item: 'black peppercorns'
+    qty: 5
+    unit: 'g'
+    note: '(1 tsp)'
+
+# Skeleton steps — enough that a cook can follow, but a real draft will deepen
+# each step with the specific molecular/temperature reasoning.
+steps:
+  - text: 'Stub: rinse the bones, cover with cold water in a stockpot, bring to a bare simmer, skim off the gray scum that rises in the first 20 minutes.'
+    time_min: 25
+  - text: 'Stub: add aromatics (onion, carrot, celery, bay, peppercorns). Simmer at a tremor (not a boil) for 3–4 hours. Boiling emulsifies fat into the broth and clouds it; the goal is a clear, glossy liquid.'
+    time_min: 220
+  - text: 'Stub: strain through a fine-mesh sieve, then cheesecloth if you want it crystal. Cool quickly (ice bath or shallow pans), refrigerate. The fat layer that solidifies on top is gold — save separately.'
+    time_min: 30
+
+notes: |
+  This is a stub. Flesh out: the gelatin-extraction reasoning (collagen → gelatin via slow heat), why cold-water start matters (extracts proteins gradually rather than searing them sealed), why no-boil (emulsified fat clouds the stock and tastes greasy), the difference between bones-only stock and broth (flesh-on bones), salt timing (don't salt the stock; salt the dish it goes into), freezing strategy (cubes for sauces, deli containers for soup base).
+---
+```
+
+A stub at `status: 'stub'` is excluded from `data/entries.json` "complete" filters and the recently-added feed, but renders normally so the link from the calling recipe still resolves. The validator + admin dashboard will surface stubs as "unwritten" so they don't get forgotten.
