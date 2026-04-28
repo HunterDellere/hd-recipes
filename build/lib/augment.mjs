@@ -110,7 +110,10 @@ function relPath(fromPath, toPath) {
   return ('../'.repeat(ups) + downs.join('/')) || './';
 }
 
-const SKIP_TAGS = new Set(['a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'code', 'pre', 'script', 'style']);
+// Buttons are excluded so the auto-linker can never bury an <a> inside an
+// interactive control — clicking the inner link would steal the button's
+// click and navigate away. Same reason headings/code are excluded.
+const SKIP_TAGS = new Set(['a', 'button', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'code', 'pre', 'script', 'style']);
 
 /**
  * Auto-link first occurrence of each link-map phrase in the body.

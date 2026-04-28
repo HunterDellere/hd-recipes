@@ -875,6 +875,115 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   vertical-align: middle;
   font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
 }
+/* Interactive variant: same pill, but a real button that launches a
+   countdown timer when tapped. Keeps the visual rhythm of the static pill
+   so the steps don't feel cluttered, with a clock glyph as the affordance. */
+button.step-time-btn {
+  border: 1px solid var(--rule-soft);
+  cursor: pointer;
+  padding: 2px 10px 2px 8px;
+  display: inline-flex; align-items: center; gap: .35em;
+  color: var(--ink-soft);
+  transition: background 120ms, color 120ms, border-color 120ms;
+  line-height: 1.4;
+}
+button.step-time-btn:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+button.step-time-btn:active { transform: scale(0.97); }
+button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.step-time-icon { font-size: 12px; line-height: 1; }
+.step-time-text { font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
+@media print { button.step-time-btn { border: 1px solid var(--rule-soft) !important; } }
+
+/* Floating step-timer dock — anchored top-right on desktop, top-stretched
+   on mobile. Stacks multiple cards. Kept above the cook-bar via z-index. */
+.step-timer-dock {
+  position: fixed;
+  top: max(1rem, env(safe-area-inset-top));
+  right: max(1rem, env(safe-area-inset-right));
+  z-index: 110;
+  display: flex; flex-direction: column; gap: .6rem;
+  pointer-events: none; /* per-card pointer-events:auto so the gaps don't block clicks */
+  max-width: min(320px, calc(100vw - 2rem));
+}
+.step-timer-card {
+  pointer-events: auto;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  padding: .65rem .85rem .75rem;
+  font-family: var(--font-sans);
+  display: grid; gap: .35rem;
+  min-width: 220px;
+  animation: st-in 180ms ease-out;
+}
+@keyframes st-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.st-head {
+  display: flex; align-items: center; justify-content: space-between;
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-faint);
+}
+.st-status { color: var(--accent); font-weight: 600; }
+.step-timer-card.is-paused .st-status { color: var(--ink-faint); }
+.step-timer-card.is-done .st-status { color: var(--cat-recipes); }
+.st-x {
+  background: transparent; border: none; cursor: pointer;
+  font-size: 18px; line-height: 1; color: var(--ink-faint);
+  padding: 0 4px; border-radius: 4px;
+}
+.st-x:hover { color: var(--ink); background: var(--rule-soft); }
+.st-label {
+  font-size: 12px; color: var(--ink-soft); line-height: 1.3;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.st-time {
+  font-family: var(--font-mono); font-size: 28px; font-weight: 600;
+  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+  color: var(--ink); letter-spacing: .02em;
+  line-height: 1.05;
+}
+.step-timer-card.is-done .st-time { color: var(--cat-recipes); }
+.step-timer-card.is-done {
+  border-color: var(--cat-recipes);
+  animation: st-pulse 1.4s ease-in-out infinite;
+}
+@keyframes st-pulse {
+  0%, 100% { box-shadow: var(--shadow-md); }
+  50%      { box-shadow: 0 0 0 6px color-mix(in oklab, var(--cat-recipes) 22%, transparent), var(--shadow-md); }
+}
+.st-controls { display: flex; gap: .35rem; flex-wrap: wrap; }
+.st-btn {
+  flex: 1 1 auto;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule-soft);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-family: var(--font-sans); font-size: 12px; font-weight: 500;
+  color: var(--ink-soft); cursor: pointer;
+  transition: color 120ms, border-color 120ms, background 120ms;
+  min-height: 30px;
+}
+.st-btn:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.st-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) {
+  /* Phone: dock anchors to the top edge full-width minus inset; cards
+     get slightly larger touch targets. */
+  .step-timer-dock {
+    left: max(.6rem, env(safe-area-inset-left));
+    right: max(.6rem, env(safe-area-inset-right));
+    max-width: none;
+  }
+  .step-timer-card { min-width: 0; }
+  .st-btn { min-height: 36px; font-size: 13px; }
+}
+@media print { .step-timer-dock { display: none !important; } }
 
 /* Step image: full-width below step text. Tap to expand via lightbox. */
 .step-figure {

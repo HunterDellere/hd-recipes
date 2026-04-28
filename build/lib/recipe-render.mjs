@@ -351,7 +351,20 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images) {
         body += ` <a class="step-tech" href="${escapeHtml(href)}">${escapeHtml(techTitle)}</a>`;
       }
     }
-    const time = step.time_min ? `<span class="step-time">${escapeHtml(fmtMinutes(step.time_min))}</span>` : '';
+    // The time pill doubles as a one-tap timer launcher when the duration is
+    // a live cooking window (≤ 4 h). Anything longer is a marinade / overnight
+    // rest — those stay static text since an in-page countdown isn't useful
+    // across that horizon.
+    let time = '';
+    if (step.time_min) {
+      const label = escapeHtml(fmtMinutes(step.time_min));
+      if (Number(step.time_min) > 0 && Number(step.time_min) <= 240) {
+        const stepLabel = escapeHtml((step.text || '').slice(0, 80));
+        time = `<button type="button" class="step-time step-time-btn" data-step-timer="${Number(step.time_min)}" data-step-label="Step ${stepNum}: ${stepLabel}" aria-label="Start ${label} timer for step ${stepNum}"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">${label}</span></button>`;
+      } else {
+        time = `<span class="step-time">${label}</span>`;
+      }
+    }
 
     // Image source: convention-detected step-N.jpg wins; explicit fm.steps[i].image is reserved
     // for legacy or external-asset use.
