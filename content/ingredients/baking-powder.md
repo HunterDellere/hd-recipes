@@ -12,7 +12,7 @@ density_g_per_ml: 0.96
 imperial_pref: 'tsp'
 updated: '2026-04-26'
 
-usda_fdc_id: 169899
+usda_fdc_id: 168839
 
 about: |
   Baking powder is sodium bicarbonate paired with one or two dry acids and cut with cornstarch to keep it from reacting in the can. "Double-acting" means two acids: one (usually monocalcium phosphate) reacts with water at room temperature, giving an immediate burst of CO2; the second (sodium acid pyrophosphate or sodium aluminum sulfate) only activates above ~60°C, finishing the lift in the oven. That two-stage release is why a batter can sit briefly without going flat and still rise properly when it bakes.

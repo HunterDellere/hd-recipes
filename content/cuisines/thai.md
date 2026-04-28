@@ -16,7 +16,7 @@ updated: '2026-04-26'
     <header class="topic-hero">
       <span class="topic-hero-eyebrow">Cuisine</span>
       <h1 class="topic-hero-title">Thai</h1>
-      <p class="topic-hero-desc">Balance across four registers — sweet, salt, heat, sour — held within a single dish, not separated across courses. The Thai catalog here is drinks, for now, and they teach extraction.</p>
+      <p class="topic-hero-desc">Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated across courses. The Thai catalog here is drinks, for now, and they teach extraction.</p>
     </header>
 
     <span class="section-anchor" id="flavor-logic"></span>
@@ -51,6 +51,7 @@ updated: '2026-04-26'
     <div class="scholar">
       <p><strong><a href="../recipes/thai-iced-tea-no-dye.html">Thai iced tea (no dye)</a>.</strong> The teaching unit is extraction without shortcuts: a spice decoction simmered separately, a gentle off-heat tea steep (long enough to pull tannin and color, short enough not to go bitter), condensed milk as both sweetener and body, evaporated milk as the float on top. There's no orange food coloring; the color comes from the steep, which means the steep has to be right. Get fluent here and the same extraction logic carries into chai, hojicha lattes, and any milk-tea-style drink built on whole spices and loose leaf.</p>
       <p>The <a href="../recipes/thai-iced-tea-with-vanilla-whip.html">vanilla whip variant</a> is the same base with a whipped-cream cap, useful once the no-dye version feels automatic and you want to push the dessert register.</p>
+      <p>For the first savory entry, <strong><a href="../recipes/green-curry-pork.html">green curry pork</a></strong> is the four-register balance in a bowl: store-bought paste augmented with fresh aromatics (lemongrass, ginger, shrimp paste) for depth, two cans of full-fat coconut milk as the fat buffer, and the eggplant-bamboo-shimeji combination to carry texture at different bite sizes. It teaches the augmentation principle (how to push a jar paste toward restaurant flavor with twenty minutes of prep) and the coconut milk management (keep it lipid-rich; diluting with stock kills the register).</p>
     </div>
   </main>
 </div>

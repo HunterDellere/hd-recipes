@@ -10,6 +10,7 @@ tags: ['umami', 'chinese']
 density_g_per_ml: 1.1
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
+usda_fdc_id: 170189  # proxy: tahini from roasted/toasted kernels (closest FDC entry)
 
 about: |
   Chinese sesame paste (zhima jiang) is made from heavily toasted seeds, which gives it a dark amber color, a thicker texture, and a pronounced roasted bitterness. Tahini, by contrast, uses raw or only lightly toasted seeds and is lighter, looser, and milder.

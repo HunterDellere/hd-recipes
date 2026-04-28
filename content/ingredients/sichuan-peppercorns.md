@@ -10,6 +10,7 @@ tags: ['spice', 'aromatic', 'chinese']
 density_g_per_ml: 0.4
 imperial_pref: 'tsp'
 updated: '2026-04-26'
+usda_fdc_id: 170931  # proxy: black pepper (FDC has no Zanthoxylum entry)
 
 about: |
   The active compound is hydroxy-alpha-sanshool, which interacts with touch receptors (specifically RA1 mechanoreceptors) to produce what Sichuan cooks call má — a buzzing, tingling numbness on the lips and tongue distinct from chili heat (là). Together, má-là is the defining signature of Sichuan food.

@@ -11,7 +11,7 @@ tags: ['dairy']
 density_g_per_ml: 1.07
 updated: '2026-04-26'
 
-usda_fdc_id: 174201
+usda_fdc_id: 173569
 
 about: |
   Cow''s milk reduced to about 40% of its original volume, no sugar added, then sterilized inside the sealed can. The faint cooked-caramel flavor comes from Maillard reactions between the lactose and milk proteins during that in-can sterilization — it''s a feature, not a defect, and it''s why evaporated milk reads richer than fresh milk reduced at home.

@@ -11,7 +11,7 @@ density_g_per_ml: 1.18
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
-usda_fdc_id: 174278
+usda_fdc_id: 174277
 
 about: |
   Light soy sauce (sheng chou / 生抽) is the first pressing of soy fermentation. It carries most of the salt and most of the glutamates: that's the umami.

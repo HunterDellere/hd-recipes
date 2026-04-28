@@ -12,7 +12,7 @@ density_g_per_ml: 0.88
 imperial_pref: 'tsp'
 updated: '2026-04-26'
 
-usda_fdc_id: 170121
+usda_fdc_id: 170276
 
 about: |
   Real vanilla extract is cured vanilla beans steeped in ~35% ethanol. The alcohol pulls out vanillin (the dominant aroma) plus 250+ minor compounds — guaiacol, anisaldehyde, hydroxybenzaldehyde, and a long tail of esters and phenolics. Those minor compounds are the difference between vanilla that smells round and vanilla that smells flat.

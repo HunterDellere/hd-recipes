@@ -6,13 +6,16 @@
 <title>Random recipe · hd · recipes</title>
 <meta name="description" content="Pull a random recipe from hd · recipes.">
 <meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23b8423a'/%3E%3Ctext x='50' y='62' text-anchor='middle' dominant-baseline='central' font-family='EB Garamond, serif' font-size='66' font-weight='700' fill='%23faf6ee'%3E?%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23b8423a'/%3E%3Ctext x='50' y='62' text-anchor='middle' dominant-baseline='central' font-family='EB Garamond, serif' font-size='66' font-weight='700' fill='%23faf6ee'%3E?%3C/text%3E%3C%2Fsvg%3E">
+<script>(function(){try{var t=localStorage.getItem('hdr-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
 <style>
-  html, body { margin: 0; padding: 0; background: #faf6ee; color: #2a1f10; font-family: 'EB Garamond', Georgia, serif; }
+  :root { --bg: #faf6ee; --ink: #2a1f10; --accent: #b8423a; --link: #1f5b8a; }
+  [data-theme="dark"] { --bg: #15110a; --ink: #f1ead8; --accent: #d75c52; --link: #6db1e6; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'EB Garamond', Georgia, serif; }
   main { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 2rem; }
-  .mark { font-size: 3.5rem; color: #b8423a; margin-bottom: .5rem; font-weight: 700; }
+  .mark { font-size: 3.5rem; color: var(--accent); margin-bottom: .5rem; font-weight: 700; }
   p { font-size: 1.15rem; opacity: .75; }
-  a { color: #1f5b8a; }
+  a { color: var(--link); }
 </style>
 </head>
 <body>
@@ -20,7 +23,7 @@
   <div>
     <div class="mark">?</div>
     <p>Pulling a recipe…</p>
-    <p><a href="/">← back to all recipes</a></p>
+    <p><a href="index.html">← back to all recipes</a></p>
   </div>
 </main>
 <script>
@@ -29,11 +32,11 @@
     .then(r => r.json())
     .then(entries => {
       const recipes = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
-      if (!recipes.length) { window.location.replace('./'); return; }
+      if (!recipes.length) { window.location.replace('index.html'); return; }
       const pick = recipes[Math.floor(Math.random() * recipes.length)];
       window.location.replace(pick.path);
     })
-    .catch(() => window.location.replace('./'));
+    .catch(() => window.location.replace('index.html'));
 })();
 </script>
 </body>

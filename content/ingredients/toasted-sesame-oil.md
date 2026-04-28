@@ -12,7 +12,7 @@ density_g_per_ml: 0.92
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
-usda_fdc_id: 172337
+usda_fdc_id: 172336
 
 about: |
   The aroma comes from pyrazines and furans generated when sesame seeds are roasted before pressing — the same Maillard family that gives roasted coffee and toasted bread their character. Those compounds are volatile and heat-sensitive. Drop toasted sesame oil into a hot wok and most of the aromatic load flashes off in seconds, leaving you with the underlying bland sesame triglycerides. That's why every Chinese, Korean, and Japanese recipe that uses it adds it at the end, off the heat or just before plating.

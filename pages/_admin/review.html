@@ -34,10 +34,10 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <body>
 <h1>hd · recipes — admin</h1>
 <div class="bar">
-  <div class="stat"><span class="stat-num">96</span><span class="stat-label">Complete</span></div>
+  <div class="stat"><span class="stat-num">99</span><span class="stat-label">Complete</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Draft</span></div>
   <div class="stat"><span class="stat-num">2</span><span class="stat-label">Stub</span></div>
-  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">96</span><span class="stat-label">missing</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">99</span><span class="stat-label">missing</span></div>
   <div class="stat"><span class="stat-num">3</span><span class="stat-label">No nutrition</span></div>
 </div>
 
@@ -45,7 +45,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 
 <div class="filters">
   <input type="search" id="filter-q" placeholder="Filter title…" />
-  <select id="filter-cat"><option value="">All categories</option><option value="ingredients">ingredients</option><option value="recipes">recipes</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option><option value="hubs">hubs</option><option value="techniques">techniques</option></select>
+  <select id="filter-cat"><option value="">All categories</option><option value="cuisines">cuisines</option><option value="hubs">hubs</option><option value="ingredients">ingredients</option><option value="recipes">recipes</option><option value="equipment">equipment</option><option value="explore">explore</option><option value="techniques">techniques</option></select>
   <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
   <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
 </div>
@@ -53,6 +53,36 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <table id="entries-table">
   <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
   <tbody>
+    <tr data-status="complete" data-review="missing" data-category="cuisines" data-type="cuisine">
+      <td><a href="../../pages/cuisines/french.html">French</a></td>
+      <td>cuisines</td>
+      <td>cuisine</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-27</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="cuisines" data-type="cuisine">
+      <td><a href="../../pages/cuisines/indian.html">Indian</a></td>
+      <td>cuisines</td>
+      <td>cuisine</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-27</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="hubs" data-type="hub">
+      <td><a href="../../pages/hubs/pantry-makes.html">Pantry makes</a></td>
+      <td>hubs</td>
+      <td>hub</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-04-27</td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
       <td><a href="../../pages/ingredients/coconut-milk.html">Coconut milk (canned, full-fat)</a></td>
       <td>ingredients</td>
@@ -81,7 +111,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-04-27</td>
       <td></td>
-      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/homemade-panko-breadcrumbs.html">Homemade panko breadcrumbs</a></td>
@@ -101,7 +131,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-04-27</td>
       <td></td>
-      <td><span class="pill warn">1 FDC</span></td>
+      <td></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/toasted-sesame-paste.html">Toasted sesame paste (zhī ma jiàng)</a></td>
@@ -111,7 +141,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-04-27</td>
       <td></td>
-      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/whole-grain-mustard.html">Whole-grain mustard</a></td>
@@ -831,7 +861,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-04-26</td>
       <td></td>
-      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/midnight-velvet-mini-cake.html">Midnight velvet mini cake with strawberry and balsamic caviar</a></td>
@@ -861,7 +891,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-04-26</td>
       <td></td>
-      <td><span class="pill warn">1 FDC</span></td>
+      <td><span class="pill warn">2 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/thai-iced-tea-no-dye.html">Thai iced tea (no dye)</a></td>
@@ -1035,7 +1065,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr></tbody>
 </table>
 
-<p class="gen">Generated 2026-04-28T02:03:51.406Z</p>
+<p class="gen">Generated 2026-04-28T05:54:21.918Z</p>
 
 <script>
 (function () {

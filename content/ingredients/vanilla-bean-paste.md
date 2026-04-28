@@ -10,6 +10,7 @@ tags: ['aromatic']
 density_g_per_ml: 1.1
 imperial_pref: 'tsp'
 updated: '2026-04-26'
+usda_fdc_id: 170276
 
 about: |
   Paste is the practical middle ground between extract and a whole vanilla pod. You get the actual seeds (which look beautiful in custards, ice cream, and frosting) plus a more concentrated flavor than extract because the syrup base carries less alcohol burn-off.

@@ -11,6 +11,7 @@ tags: ['pickle', 'chinese', 'vegetable', 'umami']
 density_g_per_ml: 0.45
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
+usda_fdc_id: 169248  # proxy: mustard greens boiled (FDC has no preserved mustard greens)
 
 about: |
   Sui mi ya cai is the tender stem of a mustard-green cultivar (Brassica juncea var. tumida) that's been salt-cured, sun-dried, fermented in jars with sugar and spices for months, then minced fine. The result is dark brown, almost black, and reads as a concentrated savory paste with a slight sweet-musty finish from the long anaerobic ferment. It is dry-textured, not wet like a pickle — closer in handling to a furikake than a kraut.

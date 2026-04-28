@@ -11,7 +11,7 @@ tags: ['dairy']
 density_g_per_ml: 1.27
 updated: '2026-04-26'
 
-usda_fdc_id: 173441
+usda_fdc_id: 175215
 
 about: |
   Cow''s milk reduced to about 40% of its original volume, then dosed with sugar to roughly 45% by weight. The sugar is doing structural work — it raises osmotic pressure high enough to inhibit microbial growth, which is why an unopened can keeps indefinitely without refrigeration. Evaporated milk needs sterilization in the can to do the same job; condensed milk does it with sugar chemistry.

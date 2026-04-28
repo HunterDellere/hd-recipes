@@ -12,7 +12,7 @@ density_g_per_ml: 2.2
 imperial_pref: 'tsp'
 updated: '2026-04-26'
 
-usda_fdc_id: 175036
+usda_fdc_id: 167562
 
 about: |
   Baking soda is sodium bicarbonate, nothing else. It's an alkali, and on its own with just heat and water it gives only a weak, slow release of CO2. To work as a leavener it needs an acid partner in the batter: buttermilk, brown sugar (which carries molasses), natural cocoa, yogurt, lemon juice, vinegar, or honey. Acid plus base in solution gives an immediate, vigorous CO2 release.

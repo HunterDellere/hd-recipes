@@ -10,6 +10,7 @@ tags: ['acid', 'chinese', 'fermentation']
 density_g_per_ml: 1.04
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
+usda_fdc_id: 172234  # proxy: distilled vinegar (FDC has no Chinese black vinegar)
 
 about: |
   Chinkiang vinegar is fermented from glutinous rice and aged for months (sometimes years) in earthenware jars. The result is dark like soy sauce, with a complex malty smokiness and only modest acidity (around 4–5%, less sharp than white wine vinegar).

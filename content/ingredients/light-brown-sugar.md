@@ -12,7 +12,7 @@ density_g_per_ml: 0.93
 imperial_pref: 'cup'
 updated: '2026-04-26'
 
-usda_fdc_id: 169679
+usda_fdc_id: 168833
 
 about: |
   Most commercial light brown sugar is white granulated sugar with refinery molasses sprayed back on — roughly 3.5% by weight. It is not an "unrefined" sugar in any meaningful sense. The molasses is the active ingredient.

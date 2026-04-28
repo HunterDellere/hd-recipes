@@ -12,7 +12,7 @@ density_g_per_ml: 0.91
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
-usda_fdc_id: 171413
+usda_fdc_id: 173573
 
 about: |
   Pressed from the flesh of the avocado, not the pit. The fatty acid profile is mostly oleic acid — the same monounsaturated fat that dominates olive oil — with smaller amounts of palmitic and linoleic. That profile is why it behaves like olive oil nutritionally but not flavor-wise.

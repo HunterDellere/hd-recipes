@@ -12,7 +12,7 @@ density_g_per_ml: 0.93
 imperial_pref: 'cup'
 updated: '2026-04-26'
 
-usda_fdc_id: 169652
+usda_fdc_id: 168833
 
 about: |
   Dark brown sugar is the same construction as light (refined sucrose plus molasses) but with roughly twice the molasses, ~6.5% by weight. Everything that molasses does to a baked good, it does more of here.

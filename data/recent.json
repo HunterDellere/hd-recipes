@@ -482,6 +482,58 @@
     }
   },
   {
+    "path": "pages/hubs/pantry-makes.html",
+    "type": "hub",
+    "category": "hubs",
+    "title": "Pantry makes",
+    "desc": "Store-bought replacements that are not actually hard to make and taste meaningfully different. One session sets you up for months.",
+    "tags": [
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "pantry-makes",
+    "updated": "2026-04-27",
+    "_card": {
+      "memberCount": 3,
+      "memberMix": {
+        "recipes": 3
+      }
+    }
+  },
+  {
+    "path": "pages/cuisines/french.html",
+    "type": "cuisine",
+    "category": "cuisines",
+    "title": "French",
+    "desc": "Technique as the transferable unit. The French canon is less about ingredients than about a vocabulary of methods: emulsification, reduction, the roux. These travel across the full range of the cuisine.",
+    "tags": [
+      "french"
+    ],
+    "status": "complete",
+    "_slug": "french",
+    "updated": "2026-04-27",
+    "_card": {
+      "usedInCount": 2
+    }
+  },
+  {
+    "path": "pages/cuisines/indian.html",
+    "type": "cuisine",
+    "category": "cuisines",
+    "title": "Indian",
+    "desc": "Spice as a layered system, not a heat dial. Each spice enters at a specific moment (bloomed in fat, ground dry, added raw at the end) because the volatile compounds respond differently to heat at different stages.",
+    "tags": [
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "indian",
+    "updated": "2026-04-27",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/ingredients/coconut-milk.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -653,297 +705,6 @@
       "timeMode": "total",
       "activeMinutes": 12,
       "filterMinutes": 12
-    }
-  },
-  {
-    "path": "pages/recipes/chai-pumpkin-cupcakes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chai pumpkin cupcakes",
-    "desc": "Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream cheese.",
-    "tags": [
-      "cake",
-      "dessert",
-      "tea",
-      "comfort",
-      "holiday"
-    ],
-    "status": "complete",
-    "_slug": "chai-pumpkin-cupcakes",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 12,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 22,
-      "total_min": 90,
-      "active_min": 40
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "ground Ceylon cinnamon",
-        "optional": false
-      },
-      {
-        "item": "ground ginger",
-        "optional": false
-      },
-      {
-        "item": "ground cardamom",
-        "optional": false
-      },
-      {
-        "item": "ground allspice",
-        "optional": false
-      },
-      {
-        "item": "ground cloves",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger",
-        "slug": "ginger",
-        "optional": true
-      },
-      {
-        "item": "Assam tea, loose leaf",
-        "slug": "assam-tea",
-        "optional": false
-      },
-      {
-        "item": "pumpkin puree",
-        "optional": false
-      },
-      {
-        "item": "avocado oil or light olive oil",
-        "optional": false
-      },
-      {
-        "item": "large eggs, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "dark brown sugar, packed",
-        "optional": false
-      },
-      {
-        "item": "maple syrup",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "cream cheese, brick-style, cold",
-        "optional": false
-      },
-      {
-        "item": "powdered sugar, sifted",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 90,
-      "diffLabel": "medium",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 40,
-      "filterMinutes": 40
-    }
-  },
-  {
-    "path": "pages/recipes/chinese-tea-eggs.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chinese tea eggs",
-    "desc": "Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern in the white.",
-    "tags": [
-      "egg",
-      "chinese",
-      "tea",
-      "make-ahead",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "chinese-tea-eggs",
-    "cuisine": "Chinese",
-    "course": "snack",
-    "difficulty": "easy",
-    "servings": 12,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 15,
-      "total_min": 1455,
-      "active_min": 25
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "dark soy sauce",
-        "slug": "dark-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "rock sugar or granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "star anise",
-        "slug": "star-anise",
-        "optional": false
-      },
-      {
-        "item": "cinnamon sticks",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "Sichuan peppercorns",
-        "slug": "sichuan-peppercorns",
-        "optional": false
-      },
-      {
-        "item": "loose black tea (Pu-erh or Ceylon)",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 1455,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "+ 1 d rest",
-      "timeMode": "active",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/cocoa-osmanthus-dun-nai.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Cocoa-osmanthus dun nai",
-    "desc": "Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral, silken.",
-    "tags": [
-      "custard",
-      "dessert",
-      "chinese",
-      "chocolate",
-      "tea"
-    ],
-    "status": "complete",
-    "_slug": "cocoa-osmanthus-dun-nai",
-    "cuisine": "Chinese",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 6,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 30,
-      "total_min": 40,
-      "active_min": 15
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "cocoa nibs",
-        "optional": false
-      },
-      {
-        "item": "egg whites",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "dried osmanthus flowers",
-        "optional": false
-      },
-      {
-        "item": "brewed oolong tea, concentrated",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 40,
-      "diffLabel": "medium",
-      "timeLead": "40 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 15,
-      "filterMinutes": 15
     }
   }
 ]

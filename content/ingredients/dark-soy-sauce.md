@@ -10,6 +10,7 @@ tags: ['umami', 'chinese', 'sauce']
 density_g_per_ml: 1.2
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
+usda_fdc_id: 174277  # proxy: shoyu soy sauce (closest FDC entry)
 
 about: |
   Dark soy (lao chou / 老抽) is aged longer than light soy and finished with molasses or caramel. The result is thicker, less salty, and dramatically darker — the color of strong coffee.

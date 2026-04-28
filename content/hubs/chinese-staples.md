@@ -26,4 +26,10 @@ members:
   - slug: 'recipes/cocoa-osmanthus-dun-nai'
     label: 'Cocoa osmanthus dun nai'
     note: 'Once dun nai is fluent, the floral + cocoa pivot is where you start to riff.'
+  - slug: 'recipes/sichuan-chili-oil'
+    label: 'Sichuan chili oil'
+    note: 'Make this once and you will stop buying it. Three heat stages, whole aromatics, structured sediment.'
+  - slug: 'recipes/toasted-sesame-paste'
+    label: 'Toasted sesame paste'
+    note: 'The dandan sauce base made from scratch. Deeper and more bitter than store-bought; the toast level is the only variable that matters.'
 ---

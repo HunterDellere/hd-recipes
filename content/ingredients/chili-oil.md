@@ -11,6 +11,7 @@ tags: ['fat', 'chinese', 'spicy']
 density_g_per_ml: 0.93
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
+usda_fdc_id: 172336  # proxy: sesame oil (nutrition is effectively pure fat)
 
 about: |
   Chili oil is a two-phase ingredient. The clear oil on top has extracted the fat-soluble compounds from the chilies: capsaicin (heat), capsanthin and capsorubin (the red color), and the aromatic terpenes from any added spices. The sediment underneath is the toasted chili flake itself, which carries a different load: roasted-chili Maillard notes, residual capsaicin in the suspended particles, and any added sesame seeds, peanuts, or fermented black beans depending on the style. Recipes that call for "chili oil" usually mean the oil only; recipes that say "chili crisp" or "spoon from the bottom" mean the sediment.

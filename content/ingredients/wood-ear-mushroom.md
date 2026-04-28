@@ -11,7 +11,7 @@ tags: ['chinese', 'vegetable']
 density_g_per_ml: 0.1
 updated: '2026-04-26'
 
-usda_fdc_id: 169978
+usda_fdc_id: 169403
 
 about: |
   Wood ear is sold dried as small, brittle, black-brown chips. Rehydrated in cool water for 30–60 minutes it expands roughly 5x by weight, going from leather-crisp to a translucent, jellied sheet with a distinct crunch that survives cooking. The crunch is structural — wood ear is rich in chitin-glucan polymers and a polysaccharide gel matrix that holds its shape against heat far longer than any cap mushroom does.

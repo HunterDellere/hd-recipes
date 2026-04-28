@@ -12,7 +12,7 @@ density_g_per_ml: 0.99
 imperial_pref: 'tbsp'
 updated: '2026-04-26'
 
-usda_fdc_id: 174828
+usda_fdc_id: 174835
 
 about: |
   Brewed from glutinous rice and a wheat-based qū starter, then aged in earthenware for one to ten years. The fermentation produces ethanol around 14–18% along with a wide pool of esters, higher alcohols, and amino acids. Those amino acids (especially glutamate and proline from broken-down wheat protein) are why a splash of Shaoxing carries weight a dry sherry can't quite reach.

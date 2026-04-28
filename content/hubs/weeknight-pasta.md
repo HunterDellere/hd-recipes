@@ -12,4 +12,7 @@ members:
   - slug: 'recipes/brown-butter-cacio-e-pepe'
     label: 'Brown butter cacio e pepe'
     note: 'Three ingredients, seventeen minutes, full Roman pleasure.'
+  - slug: 'recipes/sichuan-dandan-mian'
+    label: 'Sichuan dandan mian'
+    note: 'The sauce assembles in the bowl while the noodles boil — the weeknight logic is the same, the flavor register is different.'
 ---

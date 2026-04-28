@@ -1521,6 +1521,8 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 /* ── back-to-top ────────────────────────────────────────── */
 .back-to-top {
   position: fixed; bottom: 1.25rem; right: 1.25rem;
+  /* On mobile when the toc-toggle is visible, shift back-to-top above it so
+     they don't stack. toc-toggle is 44px tall + 1.25rem gap. */
   width: 44px; height: 44px;
   border-radius: 50%; border: 1px solid var(--rule);
   background: var(--bg-elev); color: var(--accent);
@@ -1533,6 +1535,10 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 }
 .back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .back-to-top:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+@media (max-width: 860px) {
+  /* toc-toggle occupies bottom-right at 44px height; push back-to-top above it */
+  .back-to-top { bottom: calc(1.25rem + 44px + 0.75rem); }
+}
 
 /* ── responsive ─────────────────────────────────────────── */
 @media (max-width: 860px) {
@@ -1924,7 +1930,9 @@ body[data-cooks-view="on"] [id="in-hubs"],
 body[data-cooks-view="on"] [id="nutrition"],
 body[data-cooks-view="on"] [id="notes"],
 body[data-cooks-view="on"] [id="substitutions"],
-body[data-cooks-view="on"] [id="equipment"] {
+body[data-cooks-view="on"] [id="equipment"],
+body[data-cooks-view="on"] [id="homemade"],
+body[data-cooks-view="on"] [id="pairs-with"] {
   display: none !important;
 }
 body[data-cooks-view="on"] .shell {
@@ -1947,7 +1955,9 @@ body[data-cooks-view="on"] .rh-title {
    The Mise-en-place section-head becomes the toggle (real <h2> with role=button via JS).
    Steps section-head is hidden — steps are the page focus. */
 body[data-cooks-view="on"] [id="execution"] + .section-head,
-body[data-cooks-view="on"] [id="ingredients"] + .section-head {
+body[data-cooks-view="on"] [id="ingredients"] + .section-head,
+body[data-cooks-view="on"] [id="homemade"] + .section-head,
+body[data-cooks-view="on"] [id="pairs-with"] + .section-head {
   display: none;
 }
 

@@ -11,7 +11,7 @@ tags: ['fat', 'umami']
 density_g_per_ml: 1.00
 updated: '2026-04-27'
 
-usda_fdc_id: 173805
+usda_fdc_id: 169113
 
 # Canonical pack on supermarket shelves outside the tropics. Recipes that
 # specify quantities in cans rely on this default; per-recipe overrides via

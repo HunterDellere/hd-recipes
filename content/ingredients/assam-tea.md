@@ -10,6 +10,7 @@ tags: ['tea', 'indian']
 density_g_per_ml: 0.3
 imperial_pref: 'tsp'
 updated: '2026-04-26'
+usda_fdc_id: 174155  # proxy: brewed black tea (FDC has no dry-leaf entry)
 
 about: |
   Assam is grown in the Brahmaputra valley and produced from Camellia sinensis var. assamica, a different varietal from the Chinese sinensis used in most other black teas. The leaves are larger and the resulting brew is darker, more tannic, and distinctly malty.
