@@ -86,11 +86,17 @@ export function ensureMainContentId(body) {
  * Build a map of phrase → target entry, used by autoLinkBody.
  * Each entry contributes its title (first segment before " — ") and any aliases.
  */
+// Navigation/hub categories should never auto-link into prose — they are
+// structural pages, not reference entries, and matching words like "cook",
+// "french", or "traverse" in recipe steps creates misleading links.
+const LINK_EXCLUDED_CATEGORIES = new Set(['explore', 'hubs', 'cuisines', 'equipment']);
+
 export function buildLinkMap(entries, currentEntry) {
   const map = new Map();
   for (const e of entries) {
     if (e.path === currentEntry.path) continue;
     if (e.status !== 'complete') continue;
+    if (LINK_EXCLUDED_CATEGORIES.has(e.category)) continue;
     const title = (e.title || '').split('—')[0].split('·')[0].trim();
     if (!title) continue;
     if (title.length < 4) continue; // skip ultra-short titles to avoid noise

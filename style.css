@@ -733,6 +733,9 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   font-size: 14.5px;
   line-height: 1.3;
   white-space: nowrap;
+  /* Allow the pack qty column to wrap rather than push the row wider */
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 .ing-qty-pack [data-pack-count] {
   font-family: var(--font-sans); font-size: 16px; font-weight: 600;
@@ -743,7 +746,10 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   color: var(--ink-faint);
   letter-spacing: .02em;
   text-transform: lowercase;
-  white-space: nowrap;
+  /* Allow label to wrap on very narrow screens instead of overflowing */
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 .ing-row-pack { background: linear-gradient(180deg, transparent 0%, color-mix(in oklab, var(--bg-soft) 50%, transparent) 100%); }
 
@@ -807,6 +813,7 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
 .ing-qty {
   color: var(--ink); font-weight: 500;
   font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
 }
 .ing-name { color: var(--ink); line-height: 1.5; }
 .ing-prep { color: var(--ink-soft); font-style: italic; }
@@ -1393,13 +1400,21 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 .related-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
 .related-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
 .rl-cat { font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600; text-transform: uppercase; letter-spacing: var(--ls-eyebrow); color: var(--ink-faint); }
+.related-card[data-category="recipes"]     .rl-cat { color: var(--cat-recipes); }
+.related-card[data-category="ingredients"] .rl-cat { color: var(--cat-ingredients); }
+.related-card[data-category="techniques"]  .rl-cat { color: var(--cat-techniques); }
+.related-card[data-category="cuisines"]    .rl-cat { color: var(--cat-cuisines); }
+.related-card[data-category="equipment"]   .rl-cat { color: var(--cat-equipment); }
+.related-card[data-category="hubs"]        .rl-cat { color: var(--cat-hubs); }
 .rl-title { font-family: var(--font-serif); font-weight: 600; color: var(--ink); font-size: 16px; line-height: 1.3; }
 .rl-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
 .rl-reason {
   font-family: var(--font-mono); font-size: 10px; font-weight: 500;
   text-transform: uppercase; letter-spacing: .08em;
   color: var(--ink-faint); margin-top: .25rem;
+  transition: color 120ms;
 }
+.related-card:hover .rl-reason { color: var(--accent); }
 
 /* ── adjacency nav (prev/next) ──────────────────────────── */
 .adj-nav {
@@ -1441,6 +1456,14 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   color: var(--cat-recipes); border-bottom-color: var(--cat-recipes);
 }
 .x-link[data-category="recipes"]:hover { background: rgba(184,66,58,.10); }
+.x-link[data-category="cuisines"] {
+  color: var(--cat-cuisines); border-bottom-color: var(--cat-cuisines);
+}
+.x-link[data-category="cuisines"]:hover { background: rgba(58,90,138,.10); }
+.x-link[data-category="equipment"] {
+  color: var(--cat-equipment); border-bottom-color: var(--cat-equipment);
+}
+.x-link[data-category="equipment"]:hover { background: rgba(90,74,58,.10); }
 
 /* ── hub cards ──────────────────────────────────────────── */
 .hub-cards {
