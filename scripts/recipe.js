@@ -612,6 +612,293 @@
     });
   }
 
+  // ── Step timers ────────────────────────────────────────────────────────
+  // Every step that declares `time_min` ≤ 240 emits a `data-step-timer`
+  // button. Tapping it spawns a floating countdown card. Multiple timers can
+  // run at once (stacked). Timers persist across reload via the absolute
+  // `endsAt` timestamp, so a refresh mid-cook never resets the clock.
+  // On completion: chime (Web Audio synth — no asset to ship), Notification
+  // if the user has granted permission, vibrate on supported hardware. Works
+  // identically on desktop, tablet, and phone — the systemic answer for
+  // "launch a timer on whatever device".
+  if (document.querySelector('[data-step-timer]')) initStepTimers();
+
+  function initStepTimers() {
+    const STORE_KEY = `hdr-timers:${location.pathname}`;
+    const timers = []; // { id, label, totalSec, endsAt, paused, remainingSec, doneAt, el }
+    let dock = null;
+    let tickHandle = null;
+    let audioCtx = null;
+    let nextId = 1;
+
+    function getDock() {
+      if (dock) return dock;
+      dock = document.createElement('div');
+      dock.className = 'step-timer-dock';
+      dock.setAttribute('aria-live', 'polite');
+      dock.setAttribute('aria-label', 'Active step timers');
+      document.body.appendChild(dock);
+      return dock;
+    }
+
+    function persist() {
+      try {
+        const snap = timers.map(t => ({
+          id: t.id, label: t.label, totalSec: t.totalSec,
+          endsAt: t.endsAt, paused: t.paused, remainingSec: t.remainingSec,
+          doneAt: t.doneAt,
+        }));
+        if (snap.length) localStorage.setItem(STORE_KEY, JSON.stringify(snap));
+        else localStorage.removeItem(STORE_KEY);
+      } catch {}
+    }
+
+    function ensureTick() {
+      if (tickHandle) return;
+      tickHandle = setInterval(tick, 250);
+    }
+    function maybeStopTick() {
+      if (timers.length === 0 && tickHandle) {
+        clearInterval(tickHandle); tickHandle = null;
+      }
+    }
+
+    function tick() {
+      const now = Date.now();
+      for (const t of timers) {
+        if (t.doneAt) continue;
+        let remaining;
+        if (t.paused) remaining = t.remainingSec;
+        else remaining = Math.max(0, Math.round((t.endsAt - now) / 1000));
+        const display = t.el.querySelector('.st-time');
+        if (display) display.textContent = fmtClock(remaining);
+        if (!t.paused && remaining <= 0) {
+          t.doneAt = now;
+          t.el.classList.add('is-done');
+          const status = t.el.querySelector('.st-status');
+          if (status) status.textContent = 'Done';
+          ringChime();
+          notifyDone(t);
+          if (navigator.vibrate) { try { navigator.vibrate([300, 120, 300]); } catch {} }
+        }
+      }
+      persist();
+    }
+
+    function fmtClock(sec) {
+      sec = Math.max(0, Math.floor(sec));
+      const h = Math.floor(sec / 3600);
+      const m = Math.floor((sec % 3600) / 60);
+      const s = sec % 60;
+      const pad = (n) => String(n).padStart(2, '0');
+      return h > 0 ? `${h}:${pad(m)}:${pad(s)}` : `${m}:${pad(s)}`;
+    }
+
+    function ringChime() {
+      try {
+        if (!audioCtx) {
+          const Ctx = window.AudioContext || window.webkitAudioContext;
+          if (!Ctx) return;
+          audioCtx = new Ctx();
+        }
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        // Two short rising chimes — pleasant, audible without being startling.
+        const now = audioCtx.currentTime;
+        [880, 1175].forEach((freq, i) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.value = freq;
+          osc.connect(gain).connect(audioCtx.destination);
+          const start = now + i * 0.32;
+          gain.gain.setValueAtTime(0.0001, start);
+          gain.gain.exponentialRampToValueAtTime(0.32, start + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, start + 0.55);
+          osc.start(start);
+          osc.stop(start + 0.6);
+        });
+      } catch {}
+    }
+
+    function notifyDone(t) {
+      try {
+        if (!('Notification' in window)) return;
+        if (Notification.permission !== 'granted') return;
+        const body = t.label || 'Timer complete';
+        const n = new Notification('Timer done', { body, tag: `hdr-timer-${t.id}` });
+        n.onclick = () => { window.focus(); n.close(); };
+      } catch {}
+    }
+
+    function maybeRequestNotificationPermission() {
+      try {
+        if (!('Notification' in window)) return;
+        if (Notification.permission === 'default') Notification.requestPermission().catch(() => {});
+      } catch {}
+    }
+
+    function buildCard(t) {
+      const card = document.createElement('div');
+      card.className = 'step-timer-card';
+      card.setAttribute('role', 'group');
+      card.setAttribute('aria-label', `Timer: ${t.label}`);
+      card.innerHTML = `
+        <div class="st-head">
+          <span class="st-status" aria-live="polite">${t.paused ? 'Paused' : 'Running'}</span>
+          <button type="button" class="st-x" aria-label="Dismiss timer">×</button>
+        </div>
+        <div class="st-label" title="${escapeAttr(t.label)}">${escapeText(t.label)}</div>
+        <div class="st-time" aria-label="Time remaining">${fmtClock(remainingFor(t))}</div>
+        <div class="st-controls">
+          <button type="button" class="st-btn st-pause" aria-label="${t.paused ? 'Resume timer' : 'Pause timer'}">${t.paused ? 'Resume' : 'Pause'}</button>
+          <button type="button" class="st-btn st-add" aria-label="Add 30 seconds">+30s</button>
+          <button type="button" class="st-btn st-reset" aria-label="Reset timer">Reset</button>
+        </div>`;
+      card.querySelector('.st-x').addEventListener('click', () => removeTimer(t.id));
+      card.querySelector('.st-pause').addEventListener('click', () => togglePause(t.id));
+      card.querySelector('.st-add').addEventListener('click', () => addSeconds(t.id, 30));
+      card.querySelector('.st-reset').addEventListener('click', () => resetTimer(t.id));
+      return card;
+    }
+
+    function escapeText(s) { return String(s == null ? '' : s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+    function escapeAttr(s) { return escapeText(s).replace(/"/g, '&quot;'); }
+
+    function remainingFor(t) {
+      if (t.doneAt) return 0;
+      if (t.paused) return t.remainingSec;
+      return Math.max(0, Math.round((t.endsAt - Date.now()) / 1000));
+    }
+
+    function startTimer(minutes, label) {
+      maybeRequestNotificationPermission();
+      const totalSec = Math.round(Number(minutes) * 60);
+      if (!isFinite(totalSec) || totalSec <= 0) return;
+      const t = {
+        id: nextId++,
+        label: label || `${minutes} min timer`,
+        totalSec,
+        endsAt: Date.now() + totalSec * 1000,
+        paused: false,
+        remainingSec: totalSec,
+        doneAt: null,
+        el: null,
+      };
+      t.el = buildCard(t);
+      getDock().appendChild(t.el);
+      timers.push(t);
+      ensureTick();
+      persist();
+    }
+
+    function removeTimer(id) {
+      const i = timers.findIndex(x => x.id === id);
+      if (i < 0) return;
+      const t = timers[i];
+      if (t.el && t.el.parentNode) t.el.parentNode.removeChild(t.el);
+      timers.splice(i, 1);
+      persist();
+      maybeStopTick();
+    }
+
+    function togglePause(id) {
+      const t = timers.find(x => x.id === id);
+      if (!t || t.doneAt) return;
+      if (t.paused) {
+        t.paused = false;
+        t.endsAt = Date.now() + t.remainingSec * 1000;
+      } else {
+        t.paused = true;
+        t.remainingSec = Math.max(0, Math.round((t.endsAt - Date.now()) / 1000));
+      }
+      const status = t.el.querySelector('.st-status');
+      const btn = t.el.querySelector('.st-pause');
+      if (status) status.textContent = t.paused ? 'Paused' : 'Running';
+      if (btn) {
+        btn.textContent = t.paused ? 'Resume' : 'Pause';
+        btn.setAttribute('aria-label', t.paused ? 'Resume timer' : 'Pause timer');
+      }
+      t.el.classList.toggle('is-paused', t.paused);
+      persist();
+    }
+
+    function addSeconds(id, sec) {
+      const t = timers.find(x => x.id === id);
+      if (!t) return;
+      if (t.doneAt) {
+        t.doneAt = null;
+        t.el.classList.remove('is-done');
+        const status = t.el.querySelector('.st-status');
+        if (status) status.textContent = t.paused ? 'Paused' : 'Running';
+      }
+      if (t.paused) t.remainingSec += sec;
+      else t.endsAt += sec * 1000;
+      t.totalSec += sec;
+      ensureTick();
+      tick();
+    }
+
+    function resetTimer(id) {
+      const t = timers.find(x => x.id === id);
+      if (!t) return;
+      t.doneAt = null;
+      t.paused = false;
+      t.remainingSec = t.totalSec;
+      t.endsAt = Date.now() + t.totalSec * 1000;
+      t.el.classList.remove('is-done', 'is-paused');
+      const status = t.el.querySelector('.st-status');
+      const btn = t.el.querySelector('.st-pause');
+      if (status) status.textContent = 'Running';
+      if (btn) { btn.textContent = 'Pause'; btn.setAttribute('aria-label', 'Pause timer'); }
+      ensureTick();
+      tick();
+    }
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest && e.target.closest('[data-step-timer]');
+      if (!btn) return;
+      e.preventDefault();
+      // Stop the click from bubbling to the cook's-view step handler — the
+      // cook is launching a timer, not signaling "I'm now on this step".
+      e.stopPropagation();
+      const minutes = parseFloat(btn.getAttribute('data-step-timer'));
+      const label = btn.getAttribute('data-step-label') || '';
+      startTimer(minutes, label);
+    });
+
+    // Restore prior timers on load — guard against absurd clock jumps so a
+    // stale entry from a different machine/timezone can't leak forward.
+    try {
+      const raw = localStorage.getItem(STORE_KEY);
+      if (raw) {
+        const arr = JSON.parse(raw);
+        if (Array.isArray(arr)) {
+          for (const s of arr) {
+            if (!s || typeof s.totalSec !== 'number') continue;
+            // Drop entries that ended more than an hour ago — the cook has moved on.
+            if (s.doneAt && (Date.now() - s.doneAt) > 60 * 60 * 1000) continue;
+            const t = {
+              id: nextId++,
+              label: s.label || '',
+              totalSec: s.totalSec,
+              endsAt: typeof s.endsAt === 'number' ? s.endsAt : Date.now() + s.totalSec * 1000,
+              paused: !!s.paused,
+              remainingSec: typeof s.remainingSec === 'number' ? s.remainingSec : s.totalSec,
+              doneAt: s.doneAt || null,
+              el: null,
+            };
+            t.el = buildCard(t);
+            if (t.doneAt) t.el.classList.add('is-done');
+            if (t.paused) t.el.classList.add('is-paused');
+            getDock().appendChild(t.el);
+            timers.push(t);
+          }
+          if (timers.length) ensureTick();
+        }
+      }
+    } catch {}
+  }
+
   // ── filter bar (cook explore page) ─────────────────────────────────
   const filterBar = document.querySelector('[data-filter-bar]');
   if (filterBar) initExploreFilters(filterBar);
