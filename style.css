@@ -1041,11 +1041,107 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
 }
 .hub-chip:hover { border-color: var(--cat-hubs); color: var(--cat-hubs); text-decoration: none; }
 
-/* ── substitutions / notes ──────────────────────────────── */
-.recipe-subs { padding-left: 1.25rem; font-size: 16px; line-height: 1.6; }
-.recipe-subs li { margin: .5em 0; }
-.recipe-subs strong { color: var(--accent); font-weight: 600; }
-.sub-note { color: var(--ink-faint); font-size: 13.5px; display: block; margin-top: 2px; }
+/* ── modifications + substitutions ──────────────────────────
+   Two distinct sections.
+   - Modifications: pivots that change the dish. Card layout, kind chip.
+   - Substitutions: 1:1 swaps. Compact list.
+*/
+.section-blurb {
+  font-family: var(--font-sans); font-size: 13.5px;
+  color: var(--ink-soft);
+  margin: .35rem 0 0;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+.recipe-mods {
+  list-style: none; padding: 0; margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+}
+@media (min-width: 760px) {
+  .recipe-mods { grid-template-columns: 1fr 1fr; gap: 1rem; }
+}
+.mod-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--rule);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  display: flex; flex-direction: column; gap: .55rem;
+  transition: border-color 160ms, box-shadow 160ms;
+}
+.mod-card:hover {
+  box-shadow: 0 2px 8px rgba(42, 31, 16, 0.06);
+}
+.mod-card-regional { border-left-color: #b07a3a; }
+.mod-card-dietary  { border-left-color: #6a8b3a; }
+.mod-card-protein  { border-left-color: #a44e3a; }
+.mod-card-texture  { border-left-color: #5a8aa6; }
+.mod-card-heat     { border-left-color: #c84030; }
+.mod-card-occasion { border-left-color: #8a4a8a; }
+
+.mod-head {
+  display: flex; align-items: center; gap: .65rem; flex-wrap: wrap;
+}
+.mod-chip {
+  font-family: var(--font-mono); font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em;
+  padding: 3px 8px; border-radius: 4px;
+  background: var(--bg-soft); color: var(--ink-soft);
+  border: 1px solid var(--rule-soft);
+  flex-shrink: 0;
+}
+.mod-chip-regional { background: #fbeed8; color: #7a4f1a; border-color: #ecd9ad; }
+.mod-chip-dietary  { background: #e7f3e0; color: #3a6e1a; border-color: #cbe2bd; }
+.mod-chip-protein  { background: #fce0d8; color: #8b2e26; border-color: #f0c2b6; }
+.mod-chip-texture  { background: #e0ecf3; color: #2a5a7a; border-color: #b8d2e3; }
+.mod-chip-heat     { background: #fce0d8; color: #c83020; border-color: #f0c2b6; }
+.mod-chip-occasion { background: #f0e0f0; color: #6a2a6a; border-color: #d8b8d8; }
+[data-theme="dark"] .mod-chip-regional { background: #3a2e1a; color: #e6c890; border-color: #524026; }
+[data-theme="dark"] .mod-chip-dietary  { background: #2a3a1a; color: #b3d99a; border-color: #3c5126; }
+[data-theme="dark"] .mod-chip-protein  { background: #3a1e1a; color: #e69990; border-color: #523026; }
+[data-theme="dark"] .mod-chip-texture  { background: #1a2a3a; color: #9abce0; border-color: #26384e; }
+[data-theme="dark"] .mod-chip-heat     { background: #3a1e1a; color: #f29080; border-color: #523026; }
+[data-theme="dark"] .mod-chip-occasion { background: #2a1a2a; color: #d8a8d8; border-color: #3a263a; }
+
+.mod-arrow {
+  display: inline-flex; align-items: baseline; flex-wrap: wrap;
+  gap: .35rem;
+  font-family: var(--font-sans); font-size: 14px;
+  color: var(--ink);
+}
+.mod-for { color: var(--ink-soft); }
+.mod-arrow-glyph { color: var(--ink-faint); padding: 0 .15rem; font-size: 13px; }
+.mod-to { font-weight: 600; color: var(--ink); }
+.mod-how {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 15px; line-height: 1.55; color: var(--ink);
+}
+
+/* Substitutions: clean compact list. */
+.recipe-subs {
+  list-style: none; padding: 0; margin: 0;
+  font-size: 15.5px; line-height: 1.55;
+}
+.recipe-subs li {
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .5rem;
+}
+.recipe-subs li:last-child { border-bottom: none; }
+.recipe-subs strong {
+  color: var(--accent); font-weight: 600;
+  margin-right: .2rem;
+}
+.sub-note {
+  display: block; flex-basis: 100%;
+  color: var(--ink-soft); font-size: 13.5px;
+  margin-top: 4px; line-height: 1.5;
+}
+
 .recipe-notes { font-size: 16.5px; line-height: 1.65; }
 .recipe-notes p { margin: .65em 0; color: var(--ink); }
 

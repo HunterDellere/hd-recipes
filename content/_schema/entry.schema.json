@@ -124,12 +124,27 @@
 
     "substitutions": {
       "type": "array",
+      "description": "1:1 ingredient swaps. Use only when the dish stays fundamentally the same dish. For variations that change the dish's character (protein swap with technique adjustment, regional pivot, dietary recasting), use 'modifications' instead.",
       "items": {
         "type": "object",
         "properties": {
           "for": { "type": "string" },
           "use": { "type": "string" },
           "note": { "type": "string" }
+        }
+      }
+    },
+    "modifications": {
+      "type": "array",
+      "description": "Genuine pivots: regional variants, dietary recastings, texture or protein swaps that require technique or timing changes. Distinct from 'substitutions' which are direct ingredient-for-ingredient swaps.",
+      "items": {
+        "type": "object",
+        "required": ["for", "to", "how"],
+        "properties": {
+          "for":  { "type": "string", "description": "What is changing. e.g. 'protein', 'spice level', 'cuisine', 'dietary'." },
+          "to":   { "type": "string", "description": "What it becomes. e.g. 'bone-in chicken thighs', 'vegan'." },
+          "how":  { "type": "string", "description": "What the cook actually has to do differently — quantities, technique, timing." },
+          "kind": { "type": "string", "enum": ["regional", "dietary", "protein", "texture", "heat", "occasion"], "description": "Optional pivot kind for visual grouping." }
         }
       }
     },

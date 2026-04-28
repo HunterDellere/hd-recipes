@@ -175,19 +175,30 @@ steps:
 
 equipment: ['wide-skillet', 'wok']
 
+modifications:
+  - for: 'protein'
+    to: 'bone-in chicken thighs, skin removed'
+    how: 'Add in Phase 2 alongside the eggplant and extend the simmer to 25 minutes. Chicken thigh collagen partially hydrates into the curry, adding body that complements the doubled coconut volume.'
+    kind: 'protein'
+  - for: 'dietary'
+    to: 'vegetarian'
+    how: 'Swap shrimp paste for white miso (1 tsp / 6g), fish sauce for soy sauce (1 tbsp / 15g, or reduce to 2 tsp / 10g when combining with miso to avoid over-salting), and pork for pressed extra-firm tofu seared golden before adding in Phase 3.'
+    kind: 'dietary'
+  - for: 'cuisine'
+    to: 'closer to canonical Central Thai'
+    how: 'Replace Chinese eggplant with Thai pea eggplants (stay firm and pop) or Thai apple eggplants (quarter and braise). Either is more textural and traditional than Chinese eggplant in this dish.'
+    kind: 'regional'
+
 substitutions:
-  - for: 'pork tenderloin'
-    use: 'bone-in chicken thighs, skin removed'
-    note: 'Differentiated pivot. Add in Phase 2 alongside the eggplant and extend the simmer to 25 minutes. Chicken thigh collagen partially hydrates into the curry, adding body that complements the doubled coconut volume.'
-  - for: 'shrimp paste + fish sauce + pork (vegetarian)'
-    use: 'white miso (1 tsp / 6g) + soy sauce (1 tbsp / 15g) + pressed extra-firm tofu, seared golden'
-    note: 'Replaces the salt-funk axis. Sear tofu before adding in Phase 3 alongside bamboo and shimeji. Reduce fish-sauce-equivalent (soy) to 2 tsp / 10g if combining with miso to avoid over-salting.'
-  - for: 'Chinese eggplant'
-    use: 'Thai pea eggplant or Thai apple eggplant'
-    note: 'Closer to the canonical Central Thai version. Pea eggplants stay firm and pop; apple eggplants quarter and braise. Either is more textural than Chinese eggplant.'
   - for: 'fresh galangal'
     use: 'frozen galangal'
     note: 'Frozen is acceptable and standard outside Thailand. Do not substitute ginger. Galangal is piney and citrusy where ginger is warm and pungent; the dish reads wrong.'
+  - for: 'palm sugar'
+    use: 'light brown sugar'
+    note: 'Works but flattens the caramel-butterscotch note that defines the Thai sweet axis.'
+  - for: 'makrut lime leaves'
+    use: 'lime zest from 1 lime'
+    note: 'Misses the floral terpene profile of the leaf but carries acid and aromatic citrus oils.'
 
 homemade_alternatives:
   - for: 'green curry paste (store-bought)'

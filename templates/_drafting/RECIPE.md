@@ -122,6 +122,23 @@ steps:
 techniques: ['brown-butter', 'pan-emulsion']
 equipment: ['microplane', 'wide-skillet']
 
+# Modifications: pivots that change the dish's character. Render as cards
+# with a kind chip ('regional' | 'dietary' | 'protein' | 'texture' | 'heat' | 'occasion').
+# Each entry needs `for` (what's changing), `to` (what it becomes), `how` (the
+# actual technique change). Use this for variations where the cook has to do
+# something materially different, not for ingredient-for-ingredient swaps.
+modifications:
+  - for: 'protein'
+    to: 'add 4 oz / 110g pancetta, diced'
+    how: 'Render in the same pan before melting butter; pour off all but 2 tbsp / 28g rendered fat and proceed with butter. The dish is now adjacent to carbonara without the eggs.'
+    kind: 'protein'
+  - for: 'cuisine'
+    to: 'gricia-leaning'
+    how: 'Use rendered guanciale fat instead of brown butter; halve the pecorino. Lean into pork-fat aromatics over Maillard milk-solid notes.'
+    kind: 'regional'
+
+# Substitutions: 1:1 ingredient swaps where the dish stays fundamentally the same.
+# If the swap requires technique or timing changes, it belongs in `modifications`.
 substitutions:
   - for: 'pecorino romano'
     use: 'parmigiano reggiano'

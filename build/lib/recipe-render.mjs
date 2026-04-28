@@ -460,8 +460,41 @@ export function renderSubstitutions(fm) {
         <li><strong>${escapeHtml(s.for)}</strong> → ${escapeHtml(s.use)}${s.note ? ` <span class="sub-note">${escapeHtml(s.note)}</span>` : ''}</li>`).join('');
   return `
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2>Substitutions</h2></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">1:1 ingredient swaps where the dish stays the same dish.</p></div>
     <ul class="recipe-subs">${items}
+    </ul>`;
+}
+
+/**
+ * Modifications: pivots that change the dish's character (protein, regional,
+ * dietary, texture). Cards with a kind chip + the technique change spelled out.
+ */
+export function renderModifications(fm) {
+  if (!fm.modifications || !fm.modifications.length) return '';
+  const KIND_LABEL = {
+    regional: 'Regional',
+    dietary:  'Dietary',
+    protein:  'Protein',
+    texture:  'Texture',
+    heat:     'Heat',
+    occasion: 'Occasion',
+  };
+  const items = fm.modifications.map(m => {
+    const kind = m.kind && KIND_LABEL[m.kind] ? m.kind : '';
+    const chip = kind ? `<span class="mod-chip mod-chip-${kind}">${KIND_LABEL[kind]}</span>` : '';
+    return `
+      <li class="mod-card${kind ? ` mod-card-${kind}` : ''}">
+        <div class="mod-head">
+          ${chip}
+          <span class="mod-arrow"><span class="mod-for">${escapeHtml(m.for)}</span><span class="mod-arrow-glyph" aria-hidden="true">→</span><span class="mod-to">${escapeHtml(m.to)}</span></span>
+        </div>
+        <p class="mod-how">${escapeHtml(m.how)}</p>
+      </li>`;
+  }).join('');
+  return `
+    <span class="section-anchor" id="modifications"></span>
+    <div class="section-head"><h2>Modifications</h2><p class="section-blurb">Pivots that change the dish's character — protein swaps, regional variants, dietary recastings.</p></div>
+    <ul class="recipe-mods">${items}
     </ul>`;
 }
 
@@ -565,6 +598,11 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
   const eqHtml = renderEquipment(fm, `pages/${category}/${slug}.html`, equipmentBySlug);
   if (eqHtml) { sections.push(eqHtml); sidebarLinks.push({ id: 'equipment', label: 'Equipment' }); }
+
+  // Modifications (pivots) come BEFORE substitutions (1:1 swaps): pivots are
+  // higher-leverage and likelier what a returning cook is scanning for.
+  const modHtml = renderModifications(fm);
+  if (modHtml) { sections.push(modHtml); sidebarLinks.push({ id: 'modifications', label: 'Modifications' }); }
 
   const subHtml = renderSubstitutions(fm);
   if (subHtml) { sections.push(subHtml); sidebarLinks.push({ id: 'substitutions', label: 'Substitutions' }); }
