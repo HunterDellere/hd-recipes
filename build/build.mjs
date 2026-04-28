@@ -30,6 +30,7 @@ import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './li
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
 import { computeReverseLinks, enrichEntry } from './lib/cards.mjs';
 import { computePairings } from './lib/pairings.mjs';
+import { buildRecipeImages } from './lib/images.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -123,10 +124,10 @@ function buildJsonLd(fm, slug, category) {
   ].join('\n');
 }
 
-function buildOgTags(fm, slug, category) {
+function buildOgTags(fm, slug, category, photoOg) {
   if (fm.status !== 'complete') return '';
   const url = `${SITE_URL}/pages/${category}/${slug}.html`;
-  const ogImg = `${SITE_URL}/og/${category}/${slug}.svg`;
+  const ogImg = photoOg || `${SITE_URL}/og/${category}/${slug}.svg`;
   const title = fm.pageTitle || fm.title || slug;
   const desc = fm.metaDesc || fm.desc || '';
   return [
@@ -156,7 +157,17 @@ function renderPage(fm, body, slug, category) {
   const pageTitle = fm.pageTitle || fm.title || slug;
   const metaDesc = fm.metaDesc || fm.desc || '';
   const jsonLd = buildJsonLd(fm, slug, category);
-  const ogTags = buildOgTags(fm, slug, category);
+  // Prefer a real photo for social cards if a hero is present.
+  let photoOg = null;
+  if (category === 'recipes') {
+    const imgs = recipeImages.get(slug);
+    if (imgs && imgs.hero) {
+      const v = imgs.hero.variants.jpeg;
+      const widest = v[v.length - 1];
+      photoOg = `${SITE_URL}/assets/images/recipes/${slug}/hero-${widest.width}.jpg`;
+    }
+  }
+  const ogTags = buildOgTags(fm, slug, category, photoOg);
   const favicon = categoryFaviconDataUri(category);
   const canonicalUrl = `${SITE_URL}/pages/${category}/${slug}.html`;
 
@@ -278,6 +289,9 @@ for (const list of cuisineRecipes.values()) list.sort((a, b) => (a.title || '').
 
 const nutritionByPath = {};
 
+// Build responsive image variants for any photos under content/images/recipes/<slug>/
+const recipeImages = await buildRecipeImages(ROOT);
+
 let built = 0;
 let autoLinkCount = 0;
 
@@ -307,6 +321,7 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
           inHubs: reverseLinks.inHubs.get(entry.path) || [],
           pairings,
           entriesByPath,
+          images: recipeImages.get(slug) || null,
         });
       } else if (fm.type === 'ingredient') {
         const recipesUsing = reverseLinks.ingRecipes.get(slug) || [];

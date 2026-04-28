@@ -6,6 +6,7 @@
 import MarkdownIt from 'markdown-it';
 import { fmtMinutes, frameRecipeTime } from './cards.mjs';
 import { classifyIngredients } from './units.mjs';
+import { renderPicture, relPrefixFor } from './images.mjs';
 
 const md = new MarkdownIt({ html: false, linkify: false, typographer: false, breaks: false });
 
@@ -45,48 +46,102 @@ function fmtQty(qty) {
   return String(rounded);
 }
 
-export function renderRecipeHero(fm, slug, category) {
+export function renderRecipeHero(fm, slug, category, opts = {}) {
   const time = fm.time || {};
-  const meta = [];
-  if (fm.servings) meta.push(`<span class="rh-meta-item"><strong>${fm.servings}</strong> servings</span>`);
+  const stats = []; // primary scannables: servings, time, difficulty
+  const tags  = []; // secondary metadata: cuisine, course, diet
 
-  // Time framing: when passive (brine/marinate/rest) dwarfs active, lead with
-  // active so the cook sees how much of their evening this needs. Annotate
-  // the passive phase as "+ overnight" / "+ 4 h rest" / etc.
+  // ── stats ────────────────────────────────────────────
+  if (fm.servings) {
+    const note = fm.yield_note ? `<span class="rh-stat-sub">${escapeHtml(fm.yield_note)}</span>` : '';
+    stats.push(`<div class="rh-stat" data-stat="servings">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19a8 8 0 0 1 16 0"/><circle cx="12" cy="9" r="4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">${fm.servings}</span><span class="rh-stat-label">servings</span>${note}</span>
+    </div>`);
+  }
+
   const framed = frameRecipeTime(time);
   if (framed && framed.lead) {
-    if (framed.mode === 'active') {
-      meta.push(`<span class="rh-meta-item rh-time-active"><strong>${escapeHtml(framed.lead)}</strong> active</span>`);
-      if (framed.annotation) meta.push(`<span class="rh-meta-item rh-time-passive">${escapeHtml(framed.annotation)}</span>`);
+    const isActive = framed.mode === 'active';
+    const sub = isActive
+      ? (framed.annotation ? `<span class="rh-stat-sub">${escapeHtml(framed.annotation)}</span>` : '')
+      : (time.active_min != null && time.active_min < (time.total_min || 0) - 5
+          ? `<span class="rh-stat-sub">${escapeHtml(fmtMinutes(time.active_min))} active</span>`
+          : '');
+    stats.push(`<div class="rh-stat" data-stat="time">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">${escapeHtml(framed.lead)}</span><span class="rh-stat-label">${isActive ? 'active' : 'total'}</span>${sub}</span>
+    </div>`);
+  }
+
+  if (fm.difficulty) {
+    stats.push(`<div class="rh-stat" data-stat="difficulty">
+      <span class="rh-stat-icon rh-d-${fm.difficulty}" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          ${fm.difficulty === 'easy'   ? '<path d="M5 12h14"/>'
+          : fm.difficulty === 'medium' ? '<path d="M5 9h14"/><path d="M5 15h14"/>'
+          : /* hard */                   '<path d="M5 7h14"/><path d="M5 12h14"/><path d="M5 17h14"/>'}
+        </svg>
+      </span>
+      <span class="rh-stat-text"><span class="rh-stat-value">${escapeHtml(fm.difficulty)}</span><span class="rh-stat-label">difficulty</span></span>
+    </div>`);
+  }
+
+  // ── tags (cuisine / course / diet) ──────────────────
+  // All are bg-soft pills, all linkable to their respective tag pages where possible.
+  const currentPath = `pages/${category}/${slug}.html`;
+  if (fm.cuisine) {
+    const cuisineSlug = String(fm.cuisine).toLowerCase().replace(/\s+/g, '-');
+    const targetPath = `pages/cuisines/${cuisineSlug}.html`;
+    const cuisineExists = opts.entriesByPath && opts.entriesByPath.has(targetPath);
+    if (cuisineExists) {
+      const href = relPath(currentPath, targetPath);
+      tags.push(`<a class="rh-tag rh-tag-cuisine" href="${escapeHtml(href)}" data-category="cuisines">${escapeHtml(fm.cuisine)}</a>`);
     } else {
-      meta.push(`<span class="rh-meta-item">${escapeHtml(framed.lead)} total</span>`);
-      // For short recipes, still surface active separately when declared and
-      // it's meaningfully less than total (e.g., 75 min cook + 30 min active).
-      if (time.active_min != null && time.active_min < (time.total_min || 0) - 5) {
-        meta.push(`<span class="rh-meta-item">${escapeHtml(fmtMinutes(time.active_min))} active</span>`);
-      }
+      tags.push(`<span class="rh-tag rh-tag-cuisine">${escapeHtml(fm.cuisine)}</span>`);
     }
   }
-  if (fm.difficulty) meta.push(`<span class="rh-meta-item rh-difficulty rh-d-${fm.difficulty}">${fm.difficulty}</span>`);
-  if (fm.cuisine) meta.push(`<span class="rh-meta-item">${escapeHtml(fm.cuisine)}</span>`);
-  if (fm.course) meta.push(`<span class="rh-meta-item">${escapeHtml(fm.course)}</span>`);
+  if (fm.course) {
+    tags.push(`<span class="rh-tag rh-tag-course">${escapeHtml(fm.course)}</span>`);
+  }
+  for (const d of (fm.diet || [])) {
+    tags.push(`<span class="rh-tag rh-tag-diet">${escapeHtml(d)}</span>`);
+  }
 
-  const diet = (fm.diet || []).map(d => `<span class="rh-diet-chip">${escapeHtml(d)}</span>`).join('');
+  // ── photo column ─────────────────────────────────────
+  let photoHtml = '';
+  if (opts.images && opts.images.hero) {
+    const relTo = relPrefixFor(currentPath);
+    photoHtml = `<div class="rh-photo">${renderPicture(opts.images.hero, {
+      sizes: '(min-width: 900px) 44vw, 100vw',
+      alt: fm.title || slug,
+      className: 'rh-img',
+      eager: true,
+      fetchPriority: 'high',
+      aspect: '3 / 2',
+    }, relTo)}</div>`;
+  }
+
   return `
-    <header class="recipe-hero">
-      <span class="rh-eyebrow">Recipe</span>
-      <h1 class="rh-title">${escapeHtml(fm.title || slug)}</h1>
-      ${fm.desc ? `<p class="rh-desc">${escapeHtml(fm.desc)}</p>` : ''}
-      ${meta.length ? `<div class="rh-meta">${meta.join('')}</div>` : ''}
-      ${diet ? `<div class="rh-diet">${diet}</div>` : ''}
-      <button type="button" class="rh-cook-btn" data-cook-toggle aria-pressed="false" aria-label="Enter cook's view — focus on steps with screen kept on">
-        <span class="rh-cook-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 18h18l-2 3H5z"/><path d="M5 14h14a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4z"/><path d="M12 6v4"/><path d="M9 3v3"/><path d="M15 3v3"/>
-          </svg>
-        </span>
-        <span class="rh-cook-label">Cook's view</span>
-      </button>
+    <header class="recipe-hero${photoHtml ? ' has-photo' : ''}">
+      <div class="rh-info">
+        <span class="rh-eyebrow">Recipe</span>
+        <h1 class="rh-title">${escapeHtml(fm.title || slug)}</h1>
+        ${fm.desc ? `<p class="rh-desc">${escapeHtml(fm.desc)}</p>` : ''}
+        ${stats.length ? `<div class="rh-stats" role="list">${stats.join('')}</div>` : ''}
+        ${tags.length ? `<div class="rh-tags">${tags.join('')}</div>` : ''}
+        <div class="rh-actions">
+          <button type="button" class="rh-cook-btn" data-cook-toggle aria-pressed="false" aria-label="Enter cook's view, focus on steps with screen kept on">
+            <span class="rh-cook-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18h18l-2 3H5z"/><path d="M5 14h14a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4z"/><path d="M12 6v4"/><path d="M9 3v3"/><path d="M15 3v3"/>
+              </svg>
+            </span>
+            <span class="rh-cook-label">Cook's view</span>
+          </button>
+        </div>
+      </div>
+      ${photoHtml}
     </header>`;
 }
 
@@ -280,9 +335,13 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     </div>`;
 }
 
-export function renderSteps(fm, currentPath, techniqueBySlug) {
+export function renderSteps(fm, currentPath, techniqueBySlug, images) {
   if (!fm.steps || !fm.steps.length) return '';
+  const relTo = relPrefixFor(currentPath);
+  const stepImages = images && images.steps ? images.steps : {};
+
   const items = fm.steps.map((step, i) => {
+    const stepNum = i + 1;
     let body = escapeHtml(step.text);
     if (step.technique) {
       const target = techniqueBySlug.get(step.technique) || techniqueBySlug.get(step.technique.replace(/^techniques\//, ''));
@@ -293,10 +352,24 @@ export function renderSteps(fm, currentPath, techniqueBySlug) {
       }
     }
     const time = step.time_min ? `<span class="step-time">${escapeHtml(fmtMinutes(step.time_min))}</span>` : '';
+
+    // Image source: convention-detected step-N.jpg wins; explicit fm.steps[i].image is reserved
+    // for legacy or external-asset use.
+    const img = stepImages[stepNum];
+    const imgHtml = img
+      ? `<figure class="step-figure" data-step-img="${stepNum}">${renderPicture(img, {
+          sizes: '(min-width: 1100px) 720px, 100vw',
+          alt: `Step ${stepNum}: ${(step.text || '').slice(0, 80)}`,
+          className: 'step-img',
+          aspect: `${img.intrinsic.width} / ${img.intrinsic.height}`,
+        }, relTo)}</figure>`
+      : '';
+
     return `
-      <li class="step-item">
-        <span class="step-num">${i + 1}</span>
+      <li class="step-item${imgHtml ? ' has-image' : ''}">
+        <span class="step-num">${stepNum}</span>
         <div class="step-body">${body}${time}</div>
+        ${imgHtml}
       </li>`;
   }).join('');
   return `
@@ -478,16 +551,16 @@ function renderHubMembership(inHubs, currentPath) {
 }
 
 export function renderRecipeBody(fm, slug, category, opts) {
-  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs, pairings, entriesByPath } = opts;
+  const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs, pairings, entriesByPath, images } = opts;
   const sidebarLinks = [];
   const sections = [];
 
-  sections.push(renderRecipeHero(fm, slug, category));
+  sections.push(renderRecipeHero(fm, slug, category, { images, entriesByPath }));
 
   const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
   if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Mise en Place' }); }
 
-  const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug);
+  const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images);
   if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Execution' }); }
 
   const eqHtml = renderEquipment(fm, `pages/${category}/${slug}.html`, equipmentBySlug);

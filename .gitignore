@@ -3,3 +3,8 @@ local/
 .DS_Store
 .env
 *.log
+
+# Generated responsive image variants. Source photos live under content/images/
+# and ARE committed; the build emits resized AVIF/WebP/JPEG into assets/images/.
+assets/images/
+data/_cache/

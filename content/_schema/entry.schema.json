@@ -151,6 +151,7 @@
       "description": "Store-bought ingredients for which there is no reasonable homemade version (e.g. canned coconut milk, kosher salt, fish sauce). Strings here suppress the validate-formatting homemade-alternatives warning for the matching ingredient. Use sparingly — most pantry items DO have a worthwhile homemade form.",
       "items": { "type": "string" }
     },
+    "hero_image": { "type": "string", "description": "Optional override of the hero image filename. Default convention: content/images/recipes/<slug>/hero.jpg auto-detected." },
     "seasonality": { "type": "string" },
     "storage": { "type": "string" },
 

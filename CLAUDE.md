@@ -108,6 +108,25 @@ If you want nutrition data on your recipes, add `usda_fdc_id` to the ingredient 
 
 ---
 
+## Photos
+
+Convention-based, no frontmatter required.
+
+```
+content/images/recipes/<slug>/hero.jpg     # hero image, shown in hero block
+content/images/recipes/<slug>/step-1.jpg   # appears below step 1
+content/images/recipes/<slug>/step-2.jpg   # appears below step 2
+...
+```
+
+After cooking the dish, drop a JPEG into the slug folder using these names. `npm run build` picks them up automatically and emits responsive AVIF + WebP + JPEG variants at 480w, 960w, and 1600w into `assets/images/recipes/<slug>/`. EXIF is stripped, the image is auto-rotated by orientation, and a tiny base64 LQIP is embedded for blur-up.
+
+The build is content-hash cached — re-running on unchanged photos is a no-op.
+
+If a hero is present, the build prefers it for OG / Twitter social cards over the SVG fallback.
+
+---
+
 ## Content Categories
 
 | Category      | Type slug    | Purpose |
