@@ -271,6 +271,30 @@ for (const pageFull of walkPages(PAGES)) {
     const hasSources = /class="sources"/.test(html) || (fm.content_sources && fm.content_sources.length) || (fm.source && fm.source.name);
     if (!hasSources) emit('WARN', contentRel, 'content_review:verified but no sources', { fix: 'Add fm.source or fm.content_sources' });
   }
+
+  // Ingredient-page substitution framing: 2+ rows whose `for:` is a bare repeat
+  // of the title (no parenthetical use case, no extra qualifiers) means each
+  // row hangs on no scenario. The reader can't tell why one swap belongs in
+  // row A and another in row B. Each `for:` should name a use case — heat
+  // regime, application class, role in a dish. See templates/_drafting/INGREDIENT.md.
+  // A row counts as use-case-framed if either it has a parenthetical
+  // ("butter (browning)") or its non-parenthesized text differs from the title
+  // by more than the bare ingredient name.
+  if (fm.type === 'ingredient' && Array.isArray(fm.substitutions) && fm.substitutions.length >= 2) {
+    const titleNorm = String(fm.title || '').trim().toLowerCase().replace(/\s*\(.*?\)\s*/g, '').trim();
+    const isBareRow = (s) => {
+      const f = String(s.for || '').trim().toLowerCase();
+      const hasParenthetical = /\(.+\)/.test(f);
+      if (hasParenthetical) return false;
+      return f === titleNorm;
+    };
+    const allBare = fm.substitutions.every(isBareRow);
+    if (allBare && titleNorm) {
+      emit('WARN', contentRel,
+        `ingredient has ${fm.substitutions.length} substitution rows but every "for:" is just the ingredient name with no use case`,
+        { fix: 'Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md.' });
+    }
+  }
 }
 
 reportFindings('validate-formatting', findings);

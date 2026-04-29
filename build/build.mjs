@@ -356,7 +356,7 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
       // Family / explore pages ARE the index — auto-Related there is just
       // duplicate links to siblings that the user is already browsing. Skip.
       const isFamilyOrExplore = fm.type === 'family' || fm.category === 'explore';
-      const relatedHtml = isFamilyOrExplore ? '' : renderRelatedHtml(relations.get(entry.path) || [], entry.path);
+      const relatedHtml = isFamilyOrExplore ? '' : renderRelatedHtml(relations.get(entry.path) || [], entry.path, { fromType: fm.type });
       const adjacencyHtml = isFamilyOrExplore ? '' : renderAdjacencyHtml(adjacency.get(entry.path), entry.path);
       const injection = `${sourcesHtml}${relatedHtml}${adjacencyHtml}`;
       if (injection && augmentedBody.includes('</main>')) {

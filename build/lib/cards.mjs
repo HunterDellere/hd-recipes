@@ -178,9 +178,15 @@ export function computeReverseLinks(entries) {
   for (const e of entries) {
     if (e.status !== 'complete') continue;
     if (e.type === 'recipe') {
+      // Recipes can reference the same ingredient on multiple rows (one per
+      // phase). Dedupe per recipe so "Recipes using this" doesn't list the
+      // same recipe twice.
+      const seenIngs = new Set();
       for (const ing of (e.ingredients || [])) {
         const s = (ing.slug || '').replace(/^ingredients\//, '');
         if (!s) continue;
+        if (seenIngs.has(s)) continue;
+        seenIngs.add(s);
         ingUsedIn.set(s, (ingUsedIn.get(s) || 0) + 1);
         if (!ingRecipes.has(s)) ingRecipes.set(s, []);
         ingRecipes.get(s).push({ title: e.title, path: e.path });

@@ -1,8 +1,8 @@
 {
-  "generated": "2026-04-28T06:09:57.517Z",
+  "generated": "2026-04-29T05:48:01.569Z",
   "summary": {
     "errors": 0,
-    "warnings": 5,
+    "warnings": 18,
     "info": 4
   },
   "findings": [
@@ -64,6 +64,97 @@
       "file": "content/explore/traverse.md",
       "msg": "no section-anchor elements — TOC scroll-spy disabled",
       "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/all-purpose-flour.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/dark-brown-sugar.md",
+      "msg": "ingredient has 3 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/dark-soy-sauce.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/light-brown-sugar.md",
+      "msg": "ingredient has 3 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/light-soy-sauce.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/pecorino-romano.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/rock-sugar.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/sesame-paste.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/shaoxing-wine.md",
+      "msg": "ingredient has 3 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/star-anise.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/vanilla-bean-paste.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/vanilla-extract.md",
+      "msg": "ingredient has 3 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/white-pepper.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
     }
   ]
 }
