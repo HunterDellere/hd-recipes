@@ -22,10 +22,13 @@ about: |
 storage: 'Cool dark place, 6–12 months unopened. Once opened, refrigerate; flavor stays good for 2–3 weeks, fine for cooking up to 2 months.'
 
 substitutions:
-  - for: 'sake'
-    use: 'dry sherry'
-    note: 'Best 1:1 functional substitute. A touch nuttier and oxidative; works in nearly all sake-cooked applications.'
-  - for: 'sake'
+  - for: 'sake (washoku cooking: glazes, simmered dishes, dashi-based)'
+    use: 'dry sherry, fino or manzanilla'
+    note: 'Best 1:1 functional substitute. A touch nuttier and oxidative; the difference is mostly invisible once soy and mirin enter.'
+  - for: 'sake (deglazing, protein tenderizing marinades)'
+    use: 'dry vermouth or dry white wine'
+    note: 'Covers the alcohol-driven volatile carry and the dry character. Adds a touch of fruit; fine in non-purist applications.'
+  - for: 'sake (red-cooked or Chinese-leaning braises)'
     use: 'Shaoxing wine'
-    note: 'Closer in fermentation style but more Chinese in flavor. Fine in red-cooked dishes; pulls washoku off-profile.'
+    note: 'Closer in fermentation style but more Chinese in flavor. Right when the dish is already cross-pollinated; pulls washoku off-profile.'
 ---

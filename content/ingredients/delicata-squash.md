@@ -25,10 +25,13 @@ seasonality: 'Late summer through early winter (Sept–Feb US). Cures and sweete
 storage: 'Cool dry pantry, 4–6 weeks whole. Once cut, refrigerated, 4 days.'
 
 substitutions:
-  - for: 'delicata squash'
-    use: 'kabocha squash, peeled'
-    note: 'Closest flavor (sweet, chestnut-y) but the skin is too tough to leave on. Peel before slicing.'
-  - for: 'delicata squash'
-    use: 'butternut squash, peeled and sliced'
-    note: 'More water, less concentrated. Roast hotter and a touch longer to compensate.'
+  - for: 'delicata squash (high-heat roast, skin-on, half-moon presentation)'
+    use: 'kabocha squash, peeled, sliced 1 cm thick'
+    note: 'Closest flavor (sweet, chestnut-y) but the skin is too tough to leave on. Peel before slicing; the Maillard depth still comes through at the cut surface.'
+  - for: 'delicata squash (purées, soups, where texture matters less)'
+    use: 'butternut squash, peeled and cubed'
+    note: 'More water, less concentrated sweetness. Fine for blending; underwhelming in roasts where edge-char is the goal.'
+  - for: 'delicata squash (general winter-squash sweetness, fall menus)'
+    use: 'red kuri or honeynut squash'
+    note: 'Both are sweeter and denser than butternut. Honeynut is the closest one-to-one in flavor; red kuri runs nuttier and starchier.'
 ---

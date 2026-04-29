@@ -25,10 +25,13 @@ about: |
 storage: 'Frozen at -18°C indefinitely. Thaw in cold water (15 min) or overnight in the fridge; never at room temp. Once thawed, cook within 24 hours.'
 
 substitutions:
-  - for: 'shrimp'
-    use: 'sea scallops'
-    note: 'Bigger heat window, sears beautifully. Cut to similar size pieces and treat the same way.'
-  - for: 'shrimp'
-    use: 'firm white fish (cod, halibut)'
-    note: 'Different flavor profile and texture; cube to 2 cm and reduce final cook by 30 seconds.'
+  - for: 'shrimp (high-heat sear or broil, brief cook)'
+    use: 'sea scallops, U/10 dry-pack'
+    note: 'Bigger heat window, sears beautifully. Skip the brine; dry-pack scallops are already at peak texture and salting pulls water.'
+  - for: 'shrimp (poached or simmered in sauce)'
+    use: 'firm white fish (cod, halibut), cubed to 2 cm'
+    note: 'Different flavor profile and texture. Reduce cook time by 30 seconds; fish overcooks faster once it flakes.'
+  - for: 'shrimp (cold preparations, salads, ceviche)'
+    use: 'cooked bay shrimp or lump crab'
+    note: 'Pre-cooked options skip the heat window entirely. Dress with acid + fat instead of cooking-derived flavor.'
 ---

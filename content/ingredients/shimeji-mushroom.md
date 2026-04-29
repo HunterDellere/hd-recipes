@@ -22,10 +22,13 @@ about: |
 storage: 'Refrigerated in their original pack or a paper bag (never sealed plastic; they sweat and rot). 5–7 days.'
 
 substitutions:
-  - for: 'shimeji'
+  - for: 'shimeji (dry sear, sheet-pan roast, structural bite)'
+    use: 'maitake (hen of the woods), pulled into clusters'
+    note: 'More earthy, less briny-sweet. Crisps even better than shimeji under dry heat; the cluster architecture handles the same way.'
+  - for: 'shimeji (stir-fries, soups, mixed mushroom dishes)'
     use: 'oyster mushroom, torn into small pieces'
-    note: 'Different flavor (more anise-floral) but similar single-piece architecture. Trim the same way.'
-  - for: 'shimeji'
-    use: 'maitake (hen of the woods), pulled apart'
-    note: 'More earthy, less briny-sweet. Crisps even better than shimeji under dry heat.'
+    note: 'Different flavor (more anise-floral) but similar single-piece architecture. Holds up in liquid better than shiitake.'
+  - for: 'shimeji (dashi-based soups, where umami matters more than texture)'
+    use: 'rehydrated dried shiitake'
+    note: 'Stronger umami, softer texture. Reserve the soaking liquid as part of the dashi.'
 ---

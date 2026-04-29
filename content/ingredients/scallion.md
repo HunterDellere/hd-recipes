@@ -23,10 +23,13 @@ about: |
 storage: 'Refrigerator crisper, loose in a paper bag or upright in a glass with the roots in 1 cm of water. 7–10 days. Roots regrow if you replant the white base in soil.'
 
 substitutions:
-  - for: 'scallion'
-    use: 'chives'
-    note: 'Only as a garnish — chives lack the white-base body that does the cooked-aromatic work.'
-  - for: 'scallion'
-    use: 'shallot, finely sliced'
-    note: 'For raw applications. Sharper and sweeter; soak in cold water for 5 minutes if you want to mute the bite.'
+  - for: 'scallion (raw garnish, finishing herb-tier lift)'
+    use: 'chives, finely sliced'
+    note: 'Closest visual and aromatic match for the green tops. Lacks the white-base body, so wrong for any cooked application.'
+  - for: 'scallion white parts (cooked aromatic base, stir-fry start)'
+    use: 'shallot, thinly sliced'
+    note: 'Stronger, sweeter, more onion-forward when cooked. Use about 60% the amount; brings more sugar to the Maillard reaction.'
+  - for: 'scallion (general all-purpose, when only one form is on hand)'
+    use: 'spring onion (true bulb-form young onion)'
+    note: 'Bulb is meatier and slightly stronger; greens behave the same. Most British "spring onions" are actually scallions — check what you have.'
 ---

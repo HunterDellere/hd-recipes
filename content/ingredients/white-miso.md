@@ -24,10 +24,13 @@ about: |
 storage: 'Refrigerated in its tub, surface covered with parchment to prevent oxidation darkening, 6–12 months. The color deepens over time; this is fine; it just means continuing fermentation.'
 
 substitutions:
-  - for: 'white miso'
-    use: 'red miso (aka), reduced by 30%'
-    note: 'Saltier, funkier, longer-fermented. Use less and lose the sweet edge; better for braises than for delicate finishes.'
-  - for: 'white miso'
-    use: 'doenjang, reduced by 40%'
-    note: 'Korean fermented soybean paste. Funkier and saltier; works in rustic dishes, wrong for delicate Japanese applications.'
+  - for: 'white miso (delicate finishes, dressings, miso butter, light glazes)'
+    use: 'awase miso (white-red blend)'
+    note: 'Closest functional swap. Slightly more savory and less sweet, but holds the same delicate-finish role without going funky.'
+  - for: 'white miso (braises, marinades, robust glazes for fatty fish or pork)'
+    use: 'red miso (aka), reduced by 30% by weight'
+    note: 'Saltier, funkier, longer-fermented. Right for applications where depth beats restraint; wrong for anything where the sweet-mellow edge is the point.'
+  - for: 'white miso (rustic stews, hearty Korean-leaning dishes)'
+    use: 'doenjang, reduced by 40% by weight'
+    note: 'Korean fermented soybean paste. Earthier and saltier with a sharper funk. Pulls washoku off-profile; right for cross-pollinated dishes only.'
 ---

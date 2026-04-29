@@ -24,10 +24,13 @@ about: |
 storage: 'Refrigerator crisper drawer, loosely wrapped in a damp paper towel, 5–7 days. Do not store in airtight bags; broccoli respires and goes off-flavor in trapped ethylene.'
 
 substitutions:
-  - for: 'broccoli'
+  - for: 'broccoli (high-heat roast or hard sear)'
     use: 'broccolini (sprouting broccoli)'
-    note: 'Sweeter, more tender stems; cooks faster. Reduce sear time by 1 minute.'
-  - for: 'broccoli'
+    note: 'Sweeter, more tender stems; cooks faster. Reduce sear time by 1 minute and watch for stem-end char.'
+  - for: 'broccoli (stir-fry with oyster sauce or garlic)'
     use: 'Chinese broccoli (gai lan)'
-    note: 'More bitter, more leafy. Excellent for stir-fries with oyster sauce; less ideal for roasting.'
+    note: 'More bitter, more leafy. Built for the wok; treat the stems and leaves as separate timing windows.'
+  - for: 'broccoli (raw salads, slaws, crudité)'
+    use: 'cauliflower or romanesco, finely shaved'
+    note: 'Less sulfurous raw than broccoli florets. Romanesco holds visual structure better; cauliflower goes more neutral.'
 ---

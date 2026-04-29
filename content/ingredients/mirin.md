@@ -20,10 +20,13 @@ about: |
 storage: 'Pantry, sealed, 6–12 months. After opening, refrigerate hon-mirin for longest aroma retention.'
 
 substitutions:
-  - for: 'hon-mirin'
-    use: 'sake + sugar (3:1 ratio by weight)'
-    note: 'Decent emergency substitute. Lacks the koji-driven complexity but covers the alcohol + sweetness pair.'
-  - for: 'hon-mirin'
-    use: 'dry sherry + sugar'
-    note: 'Wider flavor mismatch but workable. Use 1:1 by volume sherry to mirin, then add sugar to taste.'
+  - for: 'hon-mirin (glazes, teriyaki, simmered nimono)'
+    use: 'sake + sugar (3 parts sake : 1 part sugar by weight)'
+    note: 'Best emergency substitute. Covers the alcohol + sweetness pair; lacks koji-derived complexity but the difference is mostly invisible under heavier glazes.'
+  - for: 'hon-mirin (dressings, sushi rice, raw or barely-cooked applications)'
+    use: 'rice vinegar + sugar (4 parts vinegar : 1 part sugar)'
+    note: 'When the alcohol carry is not the point and you need sweet-tart balance instead. Wrong for glazes; no body or gloss.'
+  - for: 'hon-mirin (Western kitchens with no Japanese pantry)'
+    use: 'dry sherry + sugar to taste'
+    note: 'Wider flavor mismatch but workable as a last resort. Use 1:1 by volume sherry to mirin, then add sugar; the oxidative sherry note is detectable but recedes under soy.'
 ---

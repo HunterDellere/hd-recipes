@@ -20,10 +20,13 @@ about: |
 storage: 'Pantry, sealed, indefinitely. The acidity self-preserves. Color may darken over years; flavor stays usable.'
 
 substitutions:
-  - for: 'rice vinegar'
-    use: 'apple cider vinegar, diluted to 4% (3 parts vinegar to 1 part water)'
-    note: 'Closest in mildness once diluted. Apple character is detectable but mostly recedes.'
-  - for: 'rice vinegar'
+  - for: 'rice vinegar (finishing acid in stir-fries, dressings, gentle pickle brines)'
     use: 'champagne vinegar'
-    note: 'Closer in acid level than white wine vinegar, gentler on the palate. Different aromatics but workable.'
+    note: 'Closest in acid level and gentleness. Different aromatics (more grape-floral, less rice-sweet) but the body and pH are right.'
+  - for: 'rice vinegar (sushi rice or applications where mildness is the point)'
+    use: 'apple cider vinegar, diluted (3 parts vinegar : 1 part water)'
+    note: 'Dilution drops it into the 4% acid range. Apple character is detectable but mostly recedes once sugar and salt are added.'
+  - for: 'rice vinegar (cooked applications, sauces where acid carries through)'
+    use: 'white wine vinegar, used in 75% the amount'
+    note: 'Sharper, more acidic, more aromatic. Works once the heat takes the top off; aggressive in raw applications.'
 ---
