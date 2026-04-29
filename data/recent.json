@@ -1,5 +1,23 @@
 [
   {
+    "path": "pages/ingredients/all-purpose-flour.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "All-purpose flour",
+    "desc": "Wheat flour at 10–12% protein. The middle of the wheat-flour band: enough gluten potential for chew, soft enough for tender crumbs when handled gently.",
+    "tags": [
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "all-purpose-flour",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 4,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/black-pepper.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -53,6 +71,42 @@
     "updated": "2026-04-29",
     "_card": {
       "primaryTag": "acid",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/dark-brown-sugar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dark brown sugar",
+    "desc": "Granulated sucrose coated with ~6.5% refinery molasses, roughly twice the light-brown ratio. Everything molasses does to a baked good, it does more of here.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "dark-brown-sugar",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 0,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/dark-soy-sauce.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dark soy sauce (老抽)",
+    "desc": "Long-aged Chinese soy sauce finished with molasses or caramel. Used for color and a touch of caramelized depth, not for primary salting.",
+    "tags": [
+      "umami",
+      "chinese",
+      "sauce"
+    ],
+    "status": "complete",
+    "_slug": "dark-soy-sauce",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": null,
       "usedInCount": 2,
       "hasNutrition": true
     }
@@ -113,285 +167,59 @@
     }
   },
   {
-    "path": "pages/ingredients/sui-mi-ya-cai.html",
+    "path": "pages/ingredients/light-brown-sugar.html",
     "type": "ingredient",
     "category": "ingredients",
-    "title": "Sui mi ya cai (碎米芽菜)",
-    "desc": "Salt-cured, sun-dried, long-fermented and minced stems of a mustard-green cultivar from Sichuan. A dry, dark, glutamate-dense seasoning paste in pickle form.",
-    "tags": [
-      "pickle",
-      "chinese",
-      "vegetable",
-      "umami"
-    ],
+    "title": "Light brown sugar",
+    "desc": "Granulated sucrose coated with ~3.5% refinery molasses. The molasses adds water, acid, and a toffee-leaning flavor that changes spread, browning, and crumb in everything it touches.",
+    "tags": [],
     "status": "complete",
-    "_slug": "sui-mi-ya-cai",
+    "_slug": "light-brown-sugar",
     "updated": "2026-04-29",
     "_card": {
-      "primaryTag": "vegetable",
+      "primaryTag": null,
       "usedInCount": 0,
       "hasNutrition": true
     }
   },
   {
-    "path": "pages/ingredients/sweetened-condensed-milk.html",
+    "path": "pages/ingredients/light-soy-sauce.html",
     "type": "ingredient",
     "category": "ingredients",
-    "title": "Sweetened condensed milk",
-    "desc": "Cow's milk reduced by ~60% with ~45% added sugar. The sugar is structural: it shelf-stabilizes the can by osmotic pressure and binds the protein-fat-water emulsion together.",
+    "title": "Light soy sauce (生抽)",
+    "desc": "The first pressing of Chinese soy fermentation. Light in color and body, not in salt; carries the bulk of the salinity and glutamates that make soy sauce read as umami.",
     "tags": [
-      "dairy"
-    ],
-    "status": "complete",
-    "_slug": "sweetened-condensed-milk",
-    "updated": "2026-04-29",
-    "_card": {
-      "primaryTag": "dairy",
-      "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/whole-milk.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Whole milk",
-    "desc": "Cow's milk at ~3.25% fat. Fat carries fat-soluble flavor; casein binds tannins and acid; lactose drives Maillard browning under heat.",
-    "tags": [
-      "dairy"
-    ],
-    "status": "complete",
-    "_slug": "whole-milk",
-    "updated": "2026-04-29",
-    "_card": {
-      "primaryTag": "dairy",
-      "usedInCount": 5,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/wood-ear-mushroom.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Wood ear mushroom (木耳)",
-    "desc": "Dehydrated Auricularia heimuer fungus. Nearly flavorless, structurally chitinous, and bought primarily for the gel-and-crunch texture that survives long cooking.",
-    "tags": [
-      "chinese",
-      "vegetable"
-    ],
-    "status": "complete",
-    "_slug": "wood-ear-mushroom",
-    "updated": "2026-04-29",
-    "_card": {
-      "primaryTag": "vegetable",
-      "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/recipes/dijon-mustard.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Dijon mustard",
-    "desc": "Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and salt. Sharp, hot, and creamy in a way no jar ever is.",
-    "tags": [
-      "sauce",
-      "pantry",
-      "make-ahead",
-      "french"
-    ],
-    "status": "complete",
-    "_slug": "dijon-mustard",
-    "cuisine": "French",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 16,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 5,
-      "total_min": 2895,
-      "active_min": 20
-    },
-    "updated": "2026-04-27",
-    "diet": [
-      "vegan",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "brown mustard seeds",
-        "optional": false
-      },
-      {
-        "item": "yellow mustard seeds",
-        "optional": false
-      },
-      {
-        "item": "dry white wine",
-        "optional": false
-      },
-      {
-        "item": "cold water",
-        "optional": false
-      },
-      {
-        "item": "apple cider vinegar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "honey or sugar",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "_card": {
-      "totalMinutes": 2895,
-      "diffLabel": "easy",
-      "timeLead": "20 min",
-      "timeAnnotation": "+ 2 d rest",
-      "timeMode": "active",
-      "activeMinutes": 20,
-      "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/green-curry-pork.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Green curry pork",
-    "desc": "A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shrimp paste. Chinese eggplant absorbs the curry liquor; bamboo and shimeji carry the texture. Two cans of full-fat coconut milk give the dish enough lipid phase to braise without diluting with stock.",
-    "tags": [
-      "weeknight",
-      "thai",
-      "pork",
-      "spicy",
       "umami",
-      "stew"
+      "chinese",
+      "sauce"
     ],
     "status": "complete",
-    "_slug": "green-curry-pork",
-    "cuisine": "Thai",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 30,
-      "total_min": 45,
-      "active_min": 35
-    },
-    "updated": "2026-04-27",
-    "ingredients": [
-      {
-        "item": "full-fat coconut milk",
-        "slug": "coconut-milk",
-        "optional": false
-      },
-      {
-        "item": "green curry paste (store-bought)",
-        "optional": false
-      },
-      {
-        "item": "lemongrass, white part only, minced fine",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, grated",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "shrimp paste (kapi)",
-        "optional": false
-      },
-      {
-        "item": "coconut cream, skimmed off the cans",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "optional": false
-      },
-      {
-        "item": "remaining coconut liquid",
-        "optional": false
-      },
-      {
-        "item": "fish sauce",
-        "optional": false
-      },
-      {
-        "item": "makrut lime leaves, bruised",
-        "optional": false
-      },
-      {
-        "item": "fresh galangal, one coin",
-        "optional": false
-      },
-      {
-        "item": "Chinese eggplant, cut in 1-inch oblique chunks",
-        "optional": false
-      },
-      {
-        "item": "bamboo shoots, drained and rinsed",
-        "optional": false
-      },
-      {
-        "item": "shimeji mushrooms, trimmed into small clusters",
-        "optional": false
-      },
-      {
-        "item": "pork tenderloin, sliced thin against the grain",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "optional": false
-      },
-      {
-        "item": "reserved coconut cream, off heat",
-        "optional": false
-      },
-      {
-        "item": "Thai basil leaves",
-        "optional": false
-      },
-      {
-        "item": "fresh lime juice",
-        "optional": false
-      },
-      {
-        "item": "palm sugar (or light brown sugar)",
-        "optional": false
-      },
-      {
-        "item": "fresh Thai chiles, sliced",
-        "optional": false
-      },
-      {
-        "item": "jasmine rice, cooked",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "wide-skillet",
-      "wok"
-    ],
+    "_slug": "light-soy-sauce",
+    "updated": "2026-04-29",
     "_card": {
-      "totalMinutes": 45,
-      "diffLabel": "medium",
-      "timeLead": "45 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 35,
-      "filterMinutes": 35
+      "primaryTag": null,
+      "usedInCount": 4,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/pecorino-romano.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Pecorino romano",
+    "desc": "Hard sheep's-milk cheese from Lazio and Sardinia, aged 5–8 months and DOP-protected. Salty, sharp, and lactic; functions as a seasoning cheese as much as a flavor cheese.",
+    "tags": [
+      "dairy",
+      "umami",
+      "italian"
+    ],
+    "status": "complete",
+    "_slug": "pecorino-romano",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   }
 ]

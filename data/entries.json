@@ -1,5 +1,23 @@
 [
   {
+    "path": "pages/ingredients/all-purpose-flour.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "All-purpose flour",
+    "desc": "Wheat flour at 10–12% protein. The middle of the wheat-flour band: enough gluten potential for chew, soft enough for tender crumbs when handled gently.",
+    "tags": [
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "all-purpose-flour",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 4,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/black-pepper.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -53,6 +71,42 @@
     "updated": "2026-04-29",
     "_card": {
       "primaryTag": "acid",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/dark-brown-sugar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dark brown sugar",
+    "desc": "Granulated sucrose coated with ~6.5% refinery molasses, roughly twice the light-brown ratio. Everything molasses does to a baked good, it does more of here.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "dark-brown-sugar",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 0,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/dark-soy-sauce.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dark soy sauce (老抽)",
+    "desc": "Long-aged Chinese soy sauce finished with molasses or caramel. Used for color and a touch of caramelized depth, not for primary salting.",
+    "tags": [
+      "umami",
+      "chinese",
+      "sauce"
+    ],
+    "status": "complete",
+    "_slug": "dark-soy-sauce",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": null,
       "usedInCount": 2,
       "hasNutrition": true
     }
@@ -113,6 +167,100 @@
     }
   },
   {
+    "path": "pages/ingredients/light-brown-sugar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Light brown sugar",
+    "desc": "Granulated sucrose coated with ~3.5% refinery molasses. The molasses adds water, acid, and a toffee-leaning flavor that changes spread, browning, and crumb in everything it touches.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "light-brown-sugar",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 0,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/light-soy-sauce.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Light soy sauce (生抽)",
+    "desc": "The first pressing of Chinese soy fermentation. Light in color and body, not in salt; carries the bulk of the salinity and glutamates that make soy sauce read as umami.",
+    "tags": [
+      "umami",
+      "chinese",
+      "sauce"
+    ],
+    "status": "complete",
+    "_slug": "light-soy-sauce",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 4,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/pecorino-romano.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Pecorino romano",
+    "desc": "Hard sheep's-milk cheese from Lazio and Sardinia, aged 5–8 months and DOP-protected. Salty, sharp, and lactic; functions as a seasoning cheese as much as a flavor cheese.",
+    "tags": [
+      "dairy",
+      "umami",
+      "italian"
+    ],
+    "status": "complete",
+    "_slug": "pecorino-romano",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/sesame-paste.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chinese sesame paste (芝麻酱)",
+    "desc": "Heavily toasted sesame seeds ground to a paste. Darker, deeper, and more bitter than tahini; the toast is the entire reason it exists as a separate ingredient.",
+    "tags": [
+      "umami",
+      "chinese"
+    ],
+    "status": "complete",
+    "_slug": "sesame-paste",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/shaoxing-wine.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Shaoxing wine (绍兴酒)",
+    "desc": "Amber fermented-grain wine from Zhejiang, brewed from glutinous rice and wheat-koji starter and aged in earthenware. The aromatic and amino-acid backbone of Chinese marinades, braises, and stir-fries.",
+    "tags": [
+      "chinese",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "shaoxing-wine",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 0,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/sui-mi-ya-cai.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -147,6 +295,44 @@
     "updated": "2026-04-29",
     "_card": {
       "primaryTag": "dairy",
+      "usedInCount": 0,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/vanilla-extract.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Vanilla extract",
+    "desc": "Cured vanilla pods steeped in ethanol. Vanillin is the headline aromatic; the 250+ supporting compounds are what separates real extract from synthetic.",
+    "tags": [
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "vanilla-extract",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 0,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/white-pepper.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "White pepper",
+    "desc": "The fully ripened Piper nigrum drupe, fermented to break down the outer fruit, then dried as the inner seed alone. Floral, fermented, barnyard. A different spice from black pepper, not a milder version.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "chinese"
+    ],
+    "status": "complete",
+    "_slug": "white-pepper",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "spice",
       "usedInCount": 0,
       "hasNutrition": true
     }
@@ -1063,24 +1249,6 @@
     }
   },
   {
-    "path": "pages/ingredients/all-purpose-flour.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "All-purpose flour",
-    "desc": "Wheat flour at 10–12% protein. The middle of the road — strong enough for bread in a pinch, soft enough for cake if you handle it gently.",
-    "tags": [
-      "grain"
-    ],
-    "status": "complete",
-    "_slug": "all-purpose-flour",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": "grain",
-      "usedInCount": 4,
-      "hasNutrition": true
-    }
-  },
-  {
     "path": "pages/ingredients/assam-tea.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -1189,22 +1357,6 @@
     }
   },
   {
-    "path": "pages/ingredients/dark-brown-sugar.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Dark brown sugar",
-    "desc": "Granulated sugar coated with ~6.5% molasses — about double the light-brown ratio. More acid, more spread, more Maillard, deeper flavor.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "dark-brown-sugar",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
     "path": "pages/ingredients/dark-chocolate.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -1219,26 +1371,6 @@
     "_card": {
       "primaryTag": null,
       "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/dark-soy-sauce.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Dark soy sauce (老抽)",
-    "desc": "Aged longer than light soy and cut with molasses or caramel. Used in small amounts for color and depth, not for primary salting.",
-    "tags": [
-      "umami",
-      "chinese",
-      "sauce"
-    ],
-    "status": "complete",
-    "_slug": "dark-soy-sauce",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1367,62 +1499,6 @@
     }
   },
   {
-    "path": "pages/ingredients/light-brown-sugar.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Light brown sugar",
-    "desc": "Granulated sugar coated with ~3.5% molasses. The molasses adds moisture, acid, and color — and changes how a cookie spreads.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "light-brown-sugar",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/light-soy-sauce.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Light soy sauce (生抽)",
-    "desc": "The everyday Chinese seasoning soy — saltier, thinner, and lighter in color than dark soy. This is what most stir-fries and dipping sauces actually want.",
-    "tags": [
-      "umami",
-      "chinese",
-      "sauce"
-    ],
-    "status": "complete",
-    "_slug": "light-soy-sauce",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 4,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/pecorino-romano.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Pecorino romano",
-    "desc": "Hard sheep's-milk cheese from Lazio. Salty, sharp, lactic — the canonical cheese for Roman pasta.",
-    "tags": [
-      "dairy",
-      "umami",
-      "italian"
-    ],
-    "status": "complete",
-    "_slug": "pecorino-romano",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": "dairy",
-      "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
     "path": "pages/ingredients/rock-sugar.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -1436,44 +1512,6 @@
     "updated": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/sesame-paste.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Chinese sesame paste (芝麻酱)",
-    "desc": "Toasted sesame seeds ground to a paste. Darker, deeper, and more bitter than tahini — the toast is the whole point.",
-    "tags": [
-      "umami",
-      "chinese"
-    ],
-    "status": "complete",
-    "_slug": "sesame-paste",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/shaoxing-wine.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Shaoxing wine (绍兴酒)",
-    "desc": "Amber fermented-grain wine from Zhejiang, brewed from glutinous rice and wheat-koji starter. The aromatic backbone of Chinese marinades, braises, and stir-fries.",
-    "tags": [
-      "chinese",
-      "aromatic"
-    ],
-    "status": "complete",
-    "_slug": "shaoxing-wine",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": "aromatic",
       "usedInCount": 0,
       "hasNutrition": true
     }
@@ -1552,44 +1590,6 @@
     "_card": {
       "primaryTag": "aromatic",
       "usedInCount": 5,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/vanilla-extract.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Vanilla extract",
-    "desc": "Alcohol-extracted solution of vanillin and 250+ minor aromatic compounds from cured vanilla pods. The supporting chorus is what separates real extract from imitation.",
-    "tags": [
-      "aromatic"
-    ],
-    "status": "complete",
-    "_slug": "vanilla-extract",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": "aromatic",
-      "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/white-pepper.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "White pepper",
-    "desc": "The fully ripe drupe of Piper nigrum with the outer pericarp fermented and washed away, leaving only the inner seed. Floral, fermented, barnyard — a different spice from black pepper, not a milder version of it.",
-    "tags": [
-      "spice",
-      "aromatic",
-      "chinese"
-    ],
-    "status": "complete",
-    "_slug": "white-pepper",
-    "updated": "2026-04-26",
-    "_card": {
-      "primaryTag": "spice",
-      "usedInCount": 0,
       "hasNutrition": true
     }
   },
