@@ -46,6 +46,64 @@ function fmtQty(qty) {
   return String(rounded);
 }
 
+// Match metric/imperial paired quantities in step text — `115 g / 1 stick`,
+// `1500 ml / 6 cups`, `1 g / ½ tsp`, etc. — and wrap them so client-side
+// scaling can recompute both halves when servings change. The slash-pair is
+// the recipe authoring convention for ingredient masses inside step prose;
+// times, temperatures, distances, and bare-count items don't follow it, so
+// the wrap is safe by construction.
+const FRAC_TO_NUM = { '½':0.5,'¼':0.25,'¾':0.75,'⅓':1/3,'⅔':2/3,'⅛':0.125,'⅜':0.375,'⅝':0.625,'⅞':0.875 };
+const FRAC_CHARS = '½¼¾⅓⅔⅛⅜⅝⅞';
+
+function parseQtyText(s) {
+  if (!s) return null;
+  s = String(s).trim();
+  if (FRAC_TO_NUM[s] != null) return FRAC_TO_NUM[s];
+  let m = s.match(/^(\d+(?:\.\d+)?)\s+(\d+)\/(\d+)$/);
+  if (m) return +m[1] + (+m[2]) / (+m[3]);
+  m = s.match(new RegExp(`^(\\d+(?:\\.\\d+)?)\\s*([${FRAC_CHARS}])$`));
+  if (m) return +m[1] + FRAC_TO_NUM[m[2]];
+  m = s.match(/^(\d+)\/(\d+)$/);
+  if (m) return (+m[1]) / (+m[2]);
+  const n = parseFloat(s);
+  return isFinite(n) ? n : null;
+}
+
+const QTY_PATTERN_SRC = `(?:\\d+(?:\\.\\d+)?\\s+\\d+\\/\\d+|\\d+(?:\\.\\d+)?\\s*[${FRAC_CHARS}]|\\d+\\/\\d+|\\d+(?:\\.\\d+)?|[${FRAC_CHARS}])`;
+const METRIC_UNIT_SRC = '(?:kg|mg|ml|g|l)';
+const IMPERIAL_UNIT_SRC = '(?:tablespoons?|teaspoons?|tbsp|tsp|cups?|sticks?|pounds?|lbs?|oz)';
+function buildPairRegex() {
+  return new RegExp(
+    `(${QTY_PATTERN_SRC})\\s+(${METRIC_UNIT_SRC})\\s*\\/\\s*(${QTY_PATTERN_SRC})\\s+(${IMPERIAL_UNIT_SRC})\\b`,
+    'g'
+  );
+}
+
+function wrapStepQuantities(text) {
+  if (!text) return '';
+  const re = buildPairRegex();
+  let out = '';
+  let last = 0;
+  let m;
+  while ((m = re.exec(text))) {
+    const [full, mq, mu, iq, iu] = m;
+    out += escapeHtml(text.slice(last, m.index));
+    const mqNum = parseQtyText(mq);
+    const iqNum = parseQtyText(iq);
+    if (mqNum == null || iqNum == null || !isFinite(mqNum) || !isFinite(iqNum)) {
+      out += escapeHtml(full);
+    } else {
+      // Wrap with auto-link-skip sentinels so augment.autoLinkBody can't bury
+      // an <a> inside the span — runtime updates via textContent would wipe
+      // such a link, and there's nothing meaningful to link inside a quantity.
+      out += `<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="${mqNum}" data-metric-unit="${escapeHtml(mu)}" data-imp-qty="${iqNum}" data-imp-unit="${escapeHtml(iu)}">${escapeHtml(full)}</span><!-- /auto-link-skip -->`;
+    }
+    last = m.index + full.length;
+  }
+  out += escapeHtml(text.slice(last));
+  return out;
+}
+
 export function renderRecipeHero(fm, slug, category, opts = {}) {
   const time = fm.time || {};
   const stats = []; // primary scannables: servings, time, difficulty
@@ -342,7 +400,7 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images) {
 
   const items = fm.steps.map((step, i) => {
     const stepNum = i + 1;
-    let body = escapeHtml(step.text);
+    let body = wrapStepQuantities(step.text);
     if (step.technique) {
       const target = techniqueBySlug.get(step.technique) || techniqueBySlug.get(step.technique.replace(/^techniques\//, ''));
       if (target) {

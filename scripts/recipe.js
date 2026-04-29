@@ -126,12 +126,33 @@
     try { localStorage.setItem(UNITS_KEY, v); } catch {}
   }
 
+  // Adjust word-form imperial units (cup/cups, stick/sticks, …) to match the
+  // scaled quantity. Abbreviations (tsp/tbsp/oz/lb) don't pluralize so they
+  // pass through. Returning the original unit text (preserving authored case)
+  // when the lookup misses keeps anything we don't know about as-is.
+  const IMP_SINGULAR_TO_PLURAL = { cup: 'cups', stick: 'sticks', pound: 'pounds', tablespoon: 'tablespoons', teaspoon: 'teaspoons' };
+  const IMP_PLURAL_TO_SINGULAR = Object.fromEntries(Object.entries(IMP_SINGULAR_TO_PLURAL).map(([s, p]) => [p, s]));
+  function pluralizeUnit(unit, qty) {
+    if (!unit) return unit;
+    const lc = unit.toLowerCase();
+    if (qty > 1 && IMP_SINGULAR_TO_PLURAL[lc]) return IMP_SINGULAR_TO_PLURAL[lc];
+    if (qty <= 1 && IMP_PLURAL_TO_SINGULAR[lc]) return IMP_PLURAL_TO_SINGULAR[lc];
+    return unit;
+  }
+
   function initScaling(root) {
     const baseServings = parseInt(root.dataset.baseServings, 10) || 1;
     const input = root.querySelector('[data-scale-input]');
     const stepBtns = root.querySelectorAll('[data-scale-step]');
     const unitBtns = root.querySelectorAll('[data-units]');
     const rows = Array.from(root.querySelectorAll('.ing-row'));
+    // Quantities embedded in step prose, wrapped at build time as
+    // <span data-step-qty …>. Scaling these keeps the instructions in sync
+    // with the ingredients table when the cook adjusts servings.
+    const stepQtyEls = Array.from(document.querySelectorAll('[data-step-qty]'));
+    // The hero "N servings" stat — updated alongside the input so the page
+    // header reflects the chosen yield, not the static recipe default.
+    const heroServingsEl = document.querySelector('[data-stat="servings"] .rh-stat-value');
 
     // Snapshot original metric (qty, unit) per row. The dataset.qty/unit values
     // were emitted at build time from validated metric frontmatter; trust those.
@@ -140,6 +161,12 @@
       const q = parseFloat(row.dataset.qty);
       if (isFinite(q)) row.dataset.origQty = String(q);
       if (row.dataset.unit) row.dataset.origUnit = row.dataset.unit;
+    });
+    // Snapshot the authored step-quantity text once. At factor=1 we restore
+    // this verbatim instead of re-formatting — fmtImperial would otherwise
+    // round 1⅓ to 1⅜ on the no-op render.
+    stepQtyEls.forEach(el => {
+      if (el.dataset.origText == null) el.dataset.origText = el.textContent;
     });
 
     let units = getStoredUnits();
@@ -239,6 +266,25 @@
           }
         }
       });
+
+      stepQtyEls.forEach(el => {
+        if (Math.abs(factor - 1) < 1e-9 && el.dataset.origText != null) {
+          el.textContent = el.dataset.origText;
+          return;
+        }
+        const mq = parseFloat(el.dataset.metricQty);
+        const mu = el.dataset.metricUnit || '';
+        const iq = parseFloat(el.dataset.impQty);
+        const iu = el.dataset.impUnit || '';
+        if (!isFinite(mq) || !isFinite(iq)) return;
+        const mScaled = mq * factor;
+        const iScaled = iq * factor;
+        const metricText = `${fmtMetric(mScaled, mu)} ${mu}`;
+        const impText = `${fmtImperial(iScaled, iu)} ${pluralizeUnit(iu, iScaled)}`;
+        el.textContent = `${metricText} / ${impText}`;
+      });
+
+      if (heroServingsEl) heroServingsEl.textContent = String(servings);
     }
 
     apply(); // initial render reflects stored units preference
