@@ -97,7 +97,7 @@ mv local/drafts/recipes/brown-butter-cacio-e-pepe.md content/recipes/
 npm run build
 ```
 
-**Ingredients** — most recipes will reference ingredients by `slug:` for crosslinking. Create the ingredient page first if it doesn't exist:
+**Ingredients** — read `templates/_drafting/INGREDIENT.md` first. Voice and `about` structure rules apply across the whole `content/ingredients/` folder. Most recipes will reference ingredients by `slug:` for crosslinking. Create the ingredient page first if it doesn't exist:
 ```bash
 npm run draft ingredient pecorino-romano
 ```
@@ -200,6 +200,37 @@ Whenever Hunter asks you to draft a new recipe or to reformat an existing recipe
 6. **Run `npm run verify`.** The validator will catch missed homemade-alternatives, schema violations, em-dash overruns, and broken links.
 
 The goal is that every recipe published to the site offers an "or make it yourself" path for every store-bought ingredient where one is reasonable, and that the link always lands on a page — even if that page is currently a stub.
+
+---
+
+## Ingredient drafting workflow
+
+When Hunter asks you to draft a new ingredient page, or to reformat or improve an existing one, follow this sequence. The full spec is in `templates/_drafting/INGREDIENT.md`; this section is the per-session reminder.
+
+The single rule that drives everything else: **an ingredient page is not the prose footnote of a recipe.** It is a standalone reference, written for a reader who may have arrived from any direction and may have no specific recipe in mind. If you find yourself writing "this is what's used in our dandan noodles," stop and reframe.
+
+1. **Lead with what the ingredient physically is.** Species, cultivar, fat percentage, key compound, pH, production process. The chemistry or biology that anchors everything downstream.
+
+2. **Explain the role generally.** Functional category — leaven, emulsifier, glutamate source, finishing acid, structural fat, bridging aromatic — and *why* it does that role at the molecular level. This is the paragraph that travels across recipes.
+
+3. **Cover transformation curves.** What heat, time, cutting, hydration, or oxidation does to it. Inflection points the cook needs to know (smoke point, gel temperature, allicin half-life under heat, the Maillard threshold).
+
+4. **Anchor in dishes by category, not by single recipe.** When you cite recipes, span at least two contexts (Chinese braises *and* Southeast Asian curries; cookies *and* custards). A single named dish is a hint that the page is too narrowly framed. Re-read every paragraph and ask whether it would still make sense if that recipe didn't exist.
+
+5. **Frame substitutions by use case, not by recipe.** Each `substitutions[].for` row should name the cooking scenario the swap is being judged against — `'butter (browning)'`, `'butter (sauce mounting)'`, `'butter (laminated dough)'` — not the recipe the cook happens to be on. When the ingredient genuinely has only one job, the bare ingredient name is fine; when it does several, each job is its own row. The validator emits a warning when every `for:` field on a page is an exact match of `title` and there are 2+ rows, since that's the smell of a missed scenario split.
+
+6. **Write storage as a failure mode.** Name what spoils, what it smells or looks like when it has spoiled, and the time-to-failure under both ideal and abusive conditions. Not just "keep in pantry."
+
+7. **Run `npm run verify`.** The validators will catch schema issues, broken slug crosslinks, em-dash overruns, and any ingredient page where the `about` text reads as if it belongs inside one recipe.
+
+For brand-new ingredients, scaffold first:
+
+```bash
+npm run draft ingredient <slug>
+# fill in chemistry → role → transformation → dishes → buying → storage
+mv local/drafts/ingredients/<slug>.md content/ingredients/
+npm run verify
+```
 
 ---
 

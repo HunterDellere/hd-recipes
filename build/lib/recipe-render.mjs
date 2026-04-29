@@ -467,13 +467,18 @@ export function renderRecipeNotes(fm) {
     <div class="recipe-notes">${notesHtml}</div>`;
 }
 
-export function renderSubstitutions(fm) {
+export function renderSubstitutions(fm, opts = {}) {
   if (!fm.substitutions || !fm.substitutions.length) return '';
   const items = fm.substitutions.map(s => `
         <li><strong>${escapeHtml(s.for)}</strong> → ${escapeHtml(s.use)}${s.note ? ` <span class="sub-note">${escapeHtml(s.note)}</span>` : ''}</li>`).join('');
+  const blurb = opts.context === 'ingredient'
+    ? 'What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.'
+    : opts.context === 'equipment'
+      ? 'Workable alternatives when this tool is unavailable. The use case sets the bar each swap has to clear.'
+      : '1:1 ingredient swaps where the dish stays the same dish.';
   return `
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">1:1 ingredient swaps where the dish stays the same dish.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">${blurb}</p></div>
     <ul class="recipe-subs">${items}
     </ul>`;
 }
@@ -699,7 +704,7 @@ export function renderIngredientBody(fm, slug, category, opts = {}) {
     <div class="section-head"><h2>Storage</h2></div>
     <div class="scholar">${prosify(fm.storage)}</div>`);
   }
-  if (fm.substitutions && fm.substitutions.length) sections.push(renderSubstitutions(fm));
+  if (fm.substitutions && fm.substitutions.length) sections.push(renderSubstitutions(fm, { context: 'ingredient' }));
 
   if (recipesUsing.length) {
     const cards = recipesUsing.map(r => `
@@ -754,7 +759,7 @@ export function renderEquipmentBody(fm, slug, category, opts = {}) {
     </div>`);
   }
 
-  if (fm.substitutions && fm.substitutions.length) sections.push(renderSubstitutions(fm));
+  if (fm.substitutions && fm.substitutions.length) sections.push(renderSubstitutions(fm, { context: 'equipment' }));
 
   if (recipesUsing.length) {
     const cards = recipesUsing.map(r => `

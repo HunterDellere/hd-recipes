@@ -331,9 +331,18 @@ function renderRelatedGroup(label, slug, items, fromPath) {
       </div>`;
 }
 
-export function renderRelatedHtml(related, fromPath, _opts = {}) {
+export function renderRelatedHtml(related, fromPath, opts = {}) {
   if (!related || !related.length) return '';
-  const split = splitRelatedByGroup(related, 8);
+  // On ingredient and equipment pages, the "Recipes using this" section already
+  // lists every recipe that directly uses this entry. Filter those direct-usage
+  // recipes out of Related so it surfaces genuinely lateral connections —
+  // sibling ingredients, related techniques, recipes that share the surrounding
+  // flavor profile rather than just the ingredient itself.
+  let scoped = related;
+  if (opts.fromType === 'ingredient' || opts.fromType === 'equipment') {
+    scoped = related.filter(r => r.reason !== 'used-in');
+  }
+  const split = splitRelatedByGroup(scoped, 8);
   const groups = ['recipes', 'ingredients', 'techniques']
     .map(k => renderRelatedGroup(GROUP_LABEL[k], k, split[k], fromPath))
     .filter(Boolean)
