@@ -16,6 +16,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, unlinkSync, existsSync } from 'fs';
 import { join, dirname, basename, relative } from 'path';
 import { fileURLToPath } from 'url';
+import { spawnSync } from 'node:child_process';
 import matter from 'gray-matter';
 import { validateEntry } from './lib/validate.mjs';
 import { buildSearchIndex } from './lib/search-index.mjs';
@@ -214,6 +215,42 @@ mkdirSync(dataDir, { recursive: true });
 
 const files = walk(contentDir).filter(f => !relative(contentDir, f).startsWith('_'));
 
+// "Recently added" needs the date a content file first landed in the repo —
+// distinct from `updated`, which advances on every edit. We read it once from
+// git history (`--diff-filter=A` over content/) into a map keyed by the path
+// git prints, e.g. `content/recipes/brown-butter.md`. Files not yet committed
+// fall back to mtime so brand-new drafts still surface as recent.
+const addedByContentPath = (() => {
+  const map = new Map();
+  const out = spawnSync(
+    'git',
+    ['-C', ROOT, 'log', '--diff-filter=AR', '--name-only', '--reverse', '--format=COMMIT %aI', '--', 'content/'],
+    { encoding: 'utf8' }
+  );
+  if (out.status !== 0 || !out.stdout) return map;
+  let commitDate = null;
+  for (const line of out.stdout.split('\n')) {
+    if (!line) continue;
+    if (line.startsWith('COMMIT ')) {
+      commitDate = line.slice(7, 17); // YYYY-MM-DD
+    } else if (commitDate && !map.has(line)) {
+      map.set(line, commitDate);
+    }
+  }
+  return map;
+})();
+
+function addedDateFor(filePath) {
+  const key = relative(ROOT, filePath).split('\\').join('/');
+  const fromGit = addedByContentPath.get(key);
+  if (fromGit) return fromGit;
+  try {
+    return statSync(filePath).mtime.toISOString().slice(0, 10);
+  } catch {
+    return null;
+  }
+}
+
 const entries = [];
 const pending = [];
 let errors = 0;
@@ -232,6 +269,8 @@ for (const filePath of files) {
     const entry = toEntryObject(fm, slug, category);
     // Attach raw frontmatter for nutrition lookup (ingredient pages carry usda_fdc_id)
     entry._fm = fm;
+    const added = addedDateFor(filePath);
+    if (added) entry.added = added;
     entries.push(entry);
     pending.push({ fm, body, slug, category, outDir, entry });
   } catch (err) {
@@ -498,16 +537,17 @@ for (const { body, entry } of pending) {
 const searchIndex = buildSearchIndex(entries, bodies);
 writeFileSync(join(dataDir, 'search-index.json'), JSON.stringify(searchIndex), 'utf8');
 
-// "Recently added" surfaces real content only (skip families + hubs which are
-// navigational scaffolding). Recipes get priority — they're what people come
-// here for. When updated dates tie, we prefer recipes, then techniques,
-// ingredients, then anything else.
+// "Recently added" surfaces real content only (skip families which are
+// navigational scaffolding). Sort by when the entry first landed in the repo
+// (git first-add date, mtime fallback) — *not* `updated`, which advances on
+// every edit and would resurface old entries after a small fix. Recipes get
+// priority on date ties — they're what people come here for.
 const RECENT_EXCLUDE = new Set(['family']);
 const TYPE_RANK = { recipe: 0, technique: 1, hub: 2, cuisine: 3, ingredient: 4, equipment: 5 };
 const recent = entries
-  .filter(e => e.status === 'complete' && e.updated && !RECENT_EXCLUDE.has(e.type))
+  .filter(e => e.status === 'complete' && e.added && !RECENT_EXCLUDE.has(e.type))
   .sort((a, b) => {
-    const cmp = b.updated.localeCompare(a.updated);
+    const cmp = b.added.localeCompare(a.added);
     if (cmp !== 0) return cmp;
     return (TYPE_RANK[a.type] ?? 99) - (TYPE_RANK[b.type] ?? 99);
   })
