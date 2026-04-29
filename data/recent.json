@@ -1,5 +1,141 @@
 [
   {
+    "path": "pages/recipes/miso-butter-shrimp-with-delicata-shimeji-and-charred-broccoli.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Miso-butter shrimp with delicata, shimeji, and charred broccoli",
+    "desc": "A one-pan washoku-leaning sheet dish. Delicata roasts to chestnut-sweet edges, broccoli and shimeji char dry, shrimp hit the pan last and the whole thing gets glossed with a miso-mirin-butter sauce finished with rice vinegar.",
+    "tags": [
+      "weeknight",
+      "sheet-pan",
+      "seafood",
+      "japanese",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "miso-butter-shrimp-with-delicata-shimeji-and-charred-broccoli",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 25,
+      "total_min": 40,
+      "active_min": 30
+    },
+    "updated": "2026-04-29",
+    "ingredients": [
+      {
+        "item": "shrimp, 21/25 count, peeled and deveined, tails on",
+        "slug": "shrimp",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "delicata squash",
+        "slug": "delicata-squash",
+        "optional": false
+      },
+      {
+        "item": "broccoli",
+        "slug": "broccoli",
+        "optional": false
+      },
+      {
+        "item": "shimeji mushrooms",
+        "slug": "shimeji-mushroom",
+        "optional": false
+      },
+      {
+        "item": "avocado oil",
+        "slug": "avocado-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "white miso (shiro)",
+        "slug": "white-miso",
+        "optional": false
+      },
+      {
+        "item": "hon-mirin",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "sake",
+        "slug": "sake",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "scallions",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [],
+    "_card": {
+      "totalMinutes": 40,
+      "diffLabel": "medium",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/ingredients/all-purpose-flour.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -37,6 +173,24 @@
     }
   },
   {
+    "path": "pages/ingredients/broccoli.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Broccoli",
+    "desc": "Brassica oleracea var. italica. Sulfur-forward when overcooked; nutty and sweet with a hard, dry sear.",
+    "tags": [
+      "vegetable"
+    ],
+    "status": "complete",
+    "_slug": "broccoli",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/butter.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -51,7 +205,7 @@
     "updated": "2026-04-29",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -112,6 +266,24 @@
     }
   },
   {
+    "path": "pages/ingredients/delicata-squash.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Delicata squash",
+    "desc": "Cucurbita pepo, Delicata cultivar. Thin edible skin, sweet chestnut-vanilla flesh; the only winter squash you don't have to peel.",
+    "tags": [
+      "vegetable"
+    ],
+    "status": "complete",
+    "_slug": "delicata-squash",
+    "updated": "2026-04-29",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/eggs.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -162,63 +334,7 @@
     "updated": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 5,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/light-brown-sugar.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Light brown sugar",
-    "desc": "Granulated sucrose coated with ~3.5% refinery molasses. The molasses adds water, acid, and a toffee-leaning flavor that changes spread, browning, and crumb in everything it touches.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "light-brown-sugar",
-    "updated": "2026-04-29",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 0,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/light-soy-sauce.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Light soy sauce (生抽)",
-    "desc": "The first pressing of Chinese soy fermentation. Light in color and body, not in salt; carries the bulk of the salinity and glutamates that make soy sauce read as umami.",
-    "tags": [
-      "umami",
-      "chinese",
-      "sauce"
-    ],
-    "status": "complete",
-    "_slug": "light-soy-sauce",
-    "updated": "2026-04-29",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 4,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/pecorino-romano.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Pecorino romano",
-    "desc": "Hard sheep's-milk cheese from Lazio and Sardinia, aged 5–8 months and DOP-protected. Salty, sharp, and lactic; functions as a seasoning cheese as much as a flavor cheese.",
-    "tags": [
-      "dairy",
-      "umami",
-      "italian"
-    ],
-    "status": "complete",
-    "_slug": "pecorino-romano",
-    "updated": "2026-04-29",
-    "_card": {
-      "primaryTag": "dairy",
-      "usedInCount": 1,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   }
