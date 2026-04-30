@@ -1338,83 +1338,82 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 .scholar p { margin: .5em 0; }
 .scholar p:first-child { margin-top: 0; } .scholar p:last-child { margin-bottom: 0; }
 
-/* ── related (grouped: recipes / ingredients / techniques) ─────── */
-.related-groups {
+/* ── Related (new): grouped recipes / ingredients / techniques ───
+   The Related section surfaces lateral connections only — direct ingredient
+   and technique usage is filtered out on the page where it'd duplicate the
+   on-page list. Cards lead with the "why" (shared ingredients, same cuisine,
+   shared technique) since that's the actual signal a reader scans for. */
+.rl-groups {
   display: flex; flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.4rem;
 }
-.related-group { display: flex; flex-direction: column; gap: .65rem; }
-.related-group-head {
-  display: inline-flex; align-items: center; gap: .55rem;
+.rl-group { display: flex; flex-direction: column; gap: .55rem; }
+.rl-group-head {
+  display: flex; align-items: baseline; gap: .55rem;
   font-family: var(--font-mono); font-size: 11px; font-weight: 600;
   text-transform: uppercase; letter-spacing: .14em;
   color: var(--ink-soft);
   margin: 0;
-  padding-bottom: .45rem;
+  padding-bottom: .35rem;
   border-bottom: 1px solid var(--rule-soft);
 }
-.related-group-dot {
-  display: inline-block;
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: var(--rule);
-}
-.related-group-dot[data-category="recipes"]     { background: var(--cat-recipes); }
-.related-group-dot[data-category="ingredients"] { background: var(--cat-ingredients); }
-.related-group-dot[data-category="techniques"]  { background: var(--cat-techniques); }
-.related-group-count {
+.rl-group[data-related-group="recipes"]     .rl-group-label { color: var(--cat-recipes); }
+.rl-group[data-related-group="ingredients"] .rl-group-label { color: var(--cat-ingredients); }
+.rl-group[data-related-group="techniques"]  .rl-group-label { color: var(--cat-techniques); }
+.rl-group-count {
   margin-left: auto;
   font-family: var(--font-mono); font-size: 11px; font-weight: 500;
   color: var(--ink-faint);
-  background: var(--bg-soft);
-  border: 1px solid var(--rule-soft);
-  border-radius: 999px;
-  padding: 1px 7px;
   letter-spacing: 0;
 }
-.related-cards {
+.rl-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: .65rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: .5rem;
 }
-.related-card {
-  display: flex; flex-direction: column; gap: .35rem;
-  padding: .85rem 1rem;
+.rl-card {
+  display: flex; flex-direction: column; gap: .2rem;
+  padding: .7rem .85rem;
   border: 1px solid var(--rule);
-  border-radius: 8px;
+  border-radius: 7px;
   background: var(--bg-elev);
   border-left: 3px solid var(--rule);
   font-family: var(--font-sans); color: var(--ink);
-  transition: border-color 120ms, transform 100ms, box-shadow 120ms;
+  transition: border-color 120ms, transform 100ms, box-shadow 120ms, background 120ms;
 }
-.related-card:hover {
+.rl-card:hover {
   border-color: var(--accent);
   transform: translateY(-1px);
   box-shadow: var(--shadow-sm);
   text-decoration: none;
 }
-.related-card[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
-.related-card[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
-.related-card[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
-.related-card[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
-.related-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
-.related-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
-.rl-cat { font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600; text-transform: uppercase; letter-spacing: var(--ls-eyebrow); color: var(--ink-faint); }
-.related-card[data-category="recipes"]     .rl-cat { color: var(--cat-recipes); }
-.related-card[data-category="ingredients"] .rl-cat { color: var(--cat-ingredients); }
-.related-card[data-category="techniques"]  .rl-cat { color: var(--cat-techniques); }
-.related-card[data-category="cuisines"]    .rl-cat { color: var(--cat-cuisines); }
-.related-card[data-category="equipment"]   .rl-cat { color: var(--cat-equipment); }
-.related-card[data-category="hubs"]        .rl-cat { color: var(--cat-hubs); }
-.rl-title { font-family: var(--font-serif); font-weight: 600; color: var(--ink); font-size: 16px; line-height: 1.3; }
-.rl-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
-.rl-reason {
-  font-family: var(--font-mono); font-size: 10px; font-weight: 500;
-  text-transform: uppercase; letter-spacing: .08em;
-  color: var(--ink-faint); margin-top: .25rem;
-  transition: color 120ms;
+.rl-card[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
+.rl-card[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
+.rl-card[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
+.rl-card[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
+.rl-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
+.rl-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
+/* Strong matches (top quartile of scores on this page) get a thicker rail
+   and a hint of background tint so the eye prioritizes them in scan. */
+.rl-card.is-strong {
+  border-left-width: 4px;
+  background: var(--bg-soft);
 }
-.related-card:hover .rl-reason { color: var(--accent); }
+.rl-card-title {
+  font-family: var(--font-serif); font-weight: 600;
+  color: var(--ink);
+  font-size: 15px; line-height: 1.3;
+}
+.rl-card-why {
+  font-family: var(--font-sans);
+  font-size: 12.5px; font-weight: 400;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+.rl-card[data-reason="shared-ings"] .rl-card-why,
+.rl-card[data-reason="shared-tech"] .rl-card-why,
+.rl-card[data-reason="cuisine"]     .rl-card-why { color: var(--ink); }
+.rl-card:hover .rl-card-why { color: var(--accent); }
 
 /* ── adjacency nav (prev/next) ──────────────────────────── */
 .adj-nav {
@@ -1598,7 +1597,7 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   .topnav-right { gap: 1rem; }
   .topnav-back { display: none; }   /* Random + theme are enough on mobile */
   .ing-controls { padding: .75rem 1rem; }
-  .related-cards { grid-template-columns: 1fr; }
+  .related-cards, .rl-cards { grid-template-columns: 1fr; }
   .adj-nav { flex-direction: column; gap: .5rem; }
   .adj-nav-link { max-width: 100%; }
   .recipe-hero, .topic-hero { margin-bottom: 2rem; padding-bottom: 1rem; }
@@ -1613,7 +1612,8 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 /* ── print ──────────────────────────────────────────────── */
 @media print {
   .topnav, .reading-progress, .toc-toggle, .sidebar, .page-footer,
-  .related-cards, .related-groups, .related-group, .adj-nav, .ing-controls,
+  .related-cards, .related-groups, .related-group,
+  .rl-cards, .rl-groups, .rl-group, .adj-nav, .ing-controls,
   .back-to-top, .skip-link, .topic-hero-eyebrow, .rh-eyebrow,
   .ing-shop-btn, .rh-cook-btn, .cook-bar, .cv-ing-toggle { display: none !important; }
   .ing-alt { color: #555 !important; }
