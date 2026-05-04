@@ -1,5 +1,126 @@
 [
   {
+    "path": "pages/recipes/classic-pancakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Classic pancakes",
+    "desc": "Whole milk soured with vinegar replaces buttermilk — the acid drives CO2 from baking soda and pushes pH high enough for rapid Maillard browning. The result is tall, tender stacks with a caramelized underside.",
+    "tags": [
+      "weeknight",
+      "american",
+      "comfort",
+      "egg",
+      "dairy",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "classic-pancakes",
+    "cuisine": "American",
+    "course": "breakfast",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 8,
+      "cook_min": 15,
+      "total_min": 23,
+      "active_min": 20
+    },
+    "updated": "2026-05-04",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "white vinegar",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large egg",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "vanilla extract",
+        "slug": "vanilla-extract",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "acid-milk-sour"
+    ],
+    "equipment": [
+      "wide-skillet"
+    ],
+    "added": "2026-05-04",
+    "_card": {
+      "totalMinutes": 23,
+      "diffLabel": "easy",
+      "timeLead": "23 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/techniques/acid-milk-sour.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Acid-milk souring",
+    "desc": "Add a food acid (vinegar or lemon juice) to whole milk — casein micelles destabilize, viscosity rises, and the liquid is now functionally equivalent to buttermilk for leavening and batter behavior.",
+    "tags": [
+      "dairy",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "acid-milk-sour",
+    "updated": "2026-05-04",
+    "added": "2026-05-04",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/recipes/miso-butter-shrimp-with-delicata-shimeji-and-charred-broccoli.html",
     "type": "recipe",
     "category": "recipes",
@@ -314,44 +435,6 @@
       "primaryTag": null,
       "usedInCount": 1,
       "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/hubs/pantry-makes.html",
-    "type": "hub",
-    "category": "hubs",
-    "title": "Pantry makes",
-    "desc": "Store-bought replacements that are not actually hard to make and taste meaningfully different. One session sets you up for months.",
-    "tags": [
-      "pantry",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "pantry-makes",
-    "updated": "2026-04-27",
-    "added": "2026-04-28",
-    "_card": {
-      "memberCount": 3,
-      "memberMix": {
-        "recipes": 3
-      }
-    }
-  },
-  {
-    "path": "pages/cuisines/french.html",
-    "type": "cuisine",
-    "category": "cuisines",
-    "title": "French",
-    "desc": "Technique as the transferable unit. The French canon is less about ingredients than about a vocabulary of methods: emulsification, reduction, the roux. These travel across the full range of the cuisine.",
-    "tags": [
-      "french"
-    ],
-    "status": "complete",
-    "_slug": "french",
-    "updated": "2026-04-27",
-    "added": "2026-04-28",
-    "_card": {
-      "usedInCount": 2
     }
   }
 ]
