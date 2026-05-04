@@ -85,8 +85,8 @@ ingredients:
     prep: 'melted and slightly cooled'
     note: '(2 tbsp)'
   - group: 'Phase 3: wet'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 4
     unit: 'ml'
     note: '(1 tsp)'
@@ -105,7 +105,7 @@ steps:
     time_min: 5
   - text: 'Whisk together in a large bowl: 150 g / 1¼ cups all-purpose flour, 14 g / 1 tbsp granulated sugar, 5 g / 1¼ tsp baking powder, 3 g / ½ tsp baking soda, and 3 g / ½ tsp fine sea salt. The baking soda must meet the acid from the soured milk to release CO2; the baking powder provides a second thermal lift in the pan. Both are required.'
     time_min: 1
-  - text: 'Whisk the 50 g / 1 large egg into the soured milk. Add 28 g / 2 tbsp melted cooled butter and 4 ml / 1 tsp vanilla extract. The butter must not be hot; above ~70 °C it begins to cook the egg proteins and the batter will be lumpy from the outset.'
+  - text: 'Whisk the 50 g / 1 large egg into the soured milk. Add 28 g / 2 tbsp melted cooled butter and 4 ml / 1 tsp vanilla bean paste. The butter must not be hot; above ~70 °C it begins to cook the egg proteins and the batter will be lumpy from the outset.'
     time_min: 1
   - text: 'Pour the wet into the dry. Fold with a spatula, 8 to 10 strokes maximum. Lumps are correct and intentional; overmixing develops gluten and produces tough, flat pancakes. The batter should be barely combined. Let it rest 3 minutes while you heat the pan. The starch granules hydrate and the initial CO2 reaction begins, building the first wave of structure.'
     time_min: 4
