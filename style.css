@@ -1814,15 +1814,18 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 .families-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: .875rem;
   margin-bottom: 3rem;
+}
+@media (min-width: 900px) {
+  .families-grid { grid-template-columns: repeat(4, 1fr); }
 }
 .family-card {
   display: flex;
   flex-direction: column;
   background: var(--bg-elev);
   border: 1px solid var(--rule);
-  border-radius: 14px;
+  border-radius: 12px;
   overflow: hidden;
   color: var(--ink);
   text-decoration: none;
@@ -1830,7 +1833,7 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 }
 .family-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 4px 18px rgba(42, 31, 16, 0.08);
+  box-shadow: 0 3px 14px rgba(42, 31, 16, 0.07);
   transform: translateY(-2px);
   text-decoration: none;
 }
@@ -1842,26 +1845,27 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 1.25rem 1.25rem .75rem;
   background: var(--bg-soft);
   border-bottom: 1px solid var(--rule);
 }
-.family-card-art svg { width: 100%; max-width: 200px; height: auto; display: block; }
+.family-card-art svg { width: 80px; height: 64px; display: block; }
 .family-card-meta {
   display: flex;
   flex-direction: column;
-  padding: 1.25rem 1.5rem 1.5rem;
+  padding: .875rem 1rem 1rem;
   flex: 1;
 }
 .family-card-eyebrow {
-  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  font-family: var(--font-mono); font-size: 9px; font-weight: 600;
   text-transform: uppercase; letter-spacing: .18em;
   color: var(--ink-faint);
-  margin-bottom: .6rem;
+  margin-bottom: .4rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .family-card-title {
   font-family: var(--font-serif); font-weight: 700;
-  font-size: 1.65rem; margin: 0 0 .45rem;
+  font-size: 1.3rem; margin: 0 0 .35rem;
   letter-spacing: -0.015em; line-height: 1.1;
   color: var(--ink);
 }
@@ -1870,15 +1874,15 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 .family-card[data-family="learn"]    .family-card-title { color: var(--cat-techniques); }
 .family-card[data-family="traverse"] .family-card-title { color: var(--cat-cuisines); }
 .family-card-desc {
-  font-size: 14px; color: var(--ink-soft); line-height: 1.5;
-  margin: 0 0 1rem; flex: 1;
+  font-size: 13px; color: var(--ink-soft); line-height: 1.45;
+  margin: 0 0 .75rem; flex: 1;
 }
 .family-card-count {
-  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
   text-transform: uppercase; letter-spacing: .12em;
   color: var(--ink-faint);
   align-self: flex-start;
-  padding: 3px 10px;
+  padding: 2px 8px;
   background: var(--bg);
   border: 1px solid var(--rule);
   border-radius: 999px;
@@ -2645,7 +2649,7 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 [data-theme="dark"] .filter-chip:hover .filter-chip-x { background: rgba(255,255,255,0.15); }
 
 @media (max-width: 700px) {
-  .families-grid { grid-template-columns: 1fr; }
+  .families-grid { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
   .fam-shell { padding: 1.25rem 1.25rem 4rem; }
   .fam-hero { padding: 2rem .5rem 2rem; margin-bottom: 1.5rem; }
   .fam-hero-title { font-size: 2rem; }
