@@ -397,7 +397,7 @@ export function renderRelatedHtml(related, fromPath, opts = {}) {
   if (!groups.trim()) return '';
   return `
     <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related</h2><span class="sh-sub">${flat.length}</span></div>
+    <div class="section-head"><h2>Related <span class="sh-sub">${flat.length}</span></h2></div>
     <div class="rl-groups">
 ${groups}
     </div>`;

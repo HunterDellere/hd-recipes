@@ -368,7 +368,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
           <span>Copy list</span>
         </button>
       </div>
-      <details class="ing-panel ing-panel-shop" open data-ing-panel="shop">
+      <details class="ing-panel ing-panel-shop" data-ing-panel="shop">
         <summary class="ing-panel-summary">
           <span class="ing-panel-title">Shopping list</span>
           <span class="ing-panel-meta">

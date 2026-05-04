@@ -1810,6 +1810,80 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   font-family: var(--font-sans); font-size: 14px;
 }
 
+/* explore page: 2×2 family card grid */
+.families-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+.family-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  overflow: hidden;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 140ms, box-shadow 140ms, transform 100ms;
+}
+.family-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px rgba(42, 31, 16, 0.08);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.family-card[data-family="cook"]:hover     { border-color: var(--cat-recipes); }
+.family-card[data-family="pantry"]:hover   { border-color: var(--cat-ingredients); }
+.family-card[data-family="learn"]:hover    { border-color: var(--cat-techniques); }
+.family-card[data-family="traverse"]:hover { border-color: var(--cat-cuisines); }
+.family-card-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 1rem;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--rule);
+}
+.family-card-art svg { width: 100%; max-width: 200px; height: auto; display: block; }
+.family-card-meta {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem 1.5rem;
+  flex: 1;
+}
+.family-card-eyebrow {
+  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .18em;
+  color: var(--ink-faint);
+  margin-bottom: .6rem;
+}
+.family-card-title {
+  font-family: var(--font-serif); font-weight: 700;
+  font-size: 1.65rem; margin: 0 0 .45rem;
+  letter-spacing: -0.015em; line-height: 1.1;
+  color: var(--ink);
+}
+.family-card[data-family="cook"]     .family-card-title { color: var(--cat-recipes); }
+.family-card[data-family="pantry"]   .family-card-title { color: var(--cat-ingredients); }
+.family-card[data-family="learn"]    .family-card-title { color: var(--cat-techniques); }
+.family-card[data-family="traverse"] .family-card-title { color: var(--cat-cuisines); }
+.family-card-desc {
+  font-size: 14px; color: var(--ink-soft); line-height: 1.5;
+  margin: 0 0 1rem; flex: 1;
+}
+.family-card-count {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--ink-faint);
+  align-self: flex-start;
+  padding: 3px 10px;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
+
 /* explore page: category strip below family cards */
 .fam-cat-strip {
   margin-top: 2.5rem;
