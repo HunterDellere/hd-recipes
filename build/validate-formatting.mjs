@@ -69,7 +69,8 @@ for (const pageFull of walkPages(PAGES)) {
     }
   }
 
-  if (!html.includes('class="section-anchor"')) {
+  // Family/explore pages are rendered shells with no authored prose sections.
+  if (fm.type !== 'family' && !html.includes('class="section-anchor"')) {
     emit('WARN', contentRel, 'no section-anchor elements — TOC scroll-spy disabled', { fix: 'Add section anchors with ids' });
   }
 

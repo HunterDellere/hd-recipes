@@ -22,10 +22,10 @@ about: |
 storage: 'Airtight jar, dark cool pantry. Whole pods last 1+ year. Discard when they no longer smell sharply of licorice when crushed.'
 
 substitutions:
-  - for: 'star anise'
+  - for: 'star anise (braises, broths, five-spice blends)'
     use: 'anise seed'
     note: 'Use 1 tsp seed per pod. Similar flavor profile but more delicate — add late.'
-  - for: 'star anise'
+  - for: 'star anise (cold infusions, tea)'
     use: 'fennel seed + a clove'
     note: 'Fennel for the licorice, a single clove for the warmth. Approximate but workable.'
 ---

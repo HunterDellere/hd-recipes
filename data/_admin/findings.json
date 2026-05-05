@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-04T21:43:49.467Z",
+  "generated": "2026-05-05T01:12:14.228Z",
   "summary": {
     "errors": 0,
-    "warnings": 8,
+    "warnings": 0,
     "info": 4
   },
   "findings": [
@@ -29,62 +29,6 @@
       "category": "search",
       "file": "data/search-index.json",
       "msg": "936 singleton tokens (appear in exactly 1 entry). Sample: sesame-paste-plus-hot-water, rendered-pork-plus-ya-cai, raw-garlic-plus-chinkiang, time-and-temperature, toasted-sesame-oil, guanciale-rendered, licorice-aromatic, alcohol-extracted, stovetop-to-oven, three-ingredient, forward-looking, monounsaturated, fermented-grain, pecorino-romano, cocoa-osmanthus, salt-and-umami, flavor-loading, milk-tea-style, glutinous-rice, recrystallized, coconut-based, caramel-brown, fine-sea-salt, savory-finish, bright-finish, concentration, bitter-tannic, whipped-cream, consequential, cross-cutting"
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/explore/cook.md",
-      "msg": "no section-anchor elements — TOC scroll-spy disabled",
-      "fix": "Add section anchors with ids"
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/explore/index.md",
-      "msg": "no section-anchor elements — TOC scroll-spy disabled",
-      "fix": "Add section anchors with ids"
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/explore/learn.md",
-      "msg": "no section-anchor elements — TOC scroll-spy disabled",
-      "fix": "Add section anchors with ids"
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/explore/pantry.md",
-      "msg": "no section-anchor elements — TOC scroll-spy disabled",
-      "fix": "Add section anchors with ids"
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/explore/traverse.md",
-      "msg": "no section-anchor elements — TOC scroll-spy disabled",
-      "fix": "Add section anchors with ids"
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/ingredients/rock-sugar.md",
-      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
-      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/ingredients/star-anise.md",
-      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
-      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
-    },
-    {
-      "level": "WARN",
-      "category": "formatting",
-      "file": "content/ingredients/vanilla-bean-paste.md",
-      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
-      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
     }
   ]
 }

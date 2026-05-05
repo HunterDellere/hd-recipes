@@ -1,17 +1,17 @@
 ---
 type: 'recipe'
 category: 'recipes'
-status: 'stub'
+status: 'complete'
 content_review: 'pending'
 
 title: 'Thai green curry paste'
-desc: 'A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zest, coriander root, garlic, shallot, shrimp paste. Stub.'
-metaDesc: 'Homemade Thai green curry paste pounded in a stone mortar. Fresher, oilier, and dramatically more aromatic than jarred. Stub recipe.'
+desc: 'A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zest, coriander root, garlic, shallot, shrimp paste. Fresher, oilier, and more aromatic than jarred. The difference is cell-wall rupture: a mortar achieves it and a blade does not.'
+metaDesc: 'Homemade Thai green curry paste pounded in a stone mortar. Green chilies, lemongrass, galangal, makrut lime, kapi. Fresher and more aromatic than jarred.'
 tags: ['weekend-project', 'make-ahead', 'thai', 'spicy', 'aromatic', 'pantry']
-updated: '2026-04-27'
+updated: '2026-05-04'
 
 servings: 8
-yield_note: 'about 1 cup paste (~240g)'
+yield_note: 'about 1 cup paste (~240g); supports 3 to 4 curries at 3 tbsp per'
 time:
   prep_min: 25
   cook_min: 0
@@ -84,29 +84,31 @@ ingredients:
     unit: 'g'
     note: '(2 tsp)'
   - group: 'Spice & funk'
-    item: 'kosher salt'
+    item: 'fine sea salt'
     qty: 4
     unit: 'g'
-    note: '(¾ tsp)'
+    note: '(½ tsp)'
 
 steps:
-  - text: 'Stub: toast coriander, cumin, and white peppercorns in a dry skillet over medium until fragrant, about 2 minutes. Cool, then grind to a fine powder in a spice grinder or mortar. Toast the shrimp paste separately by wrapping in foil and charring over an open flame, or dry-frying, until pungent and slightly smoky. Raw kapi tastes harshly fishy; toasting transforms the funk.'
+  - text: 'Toast 4 g / 2 tsp coriander seeds, 2 g / 1 tsp cumin seeds, and 2 g / 1 tsp white peppercorns together in a dry skillet over medium heat until they darken one shade and the room smells of warm spice, about 2 minutes. Shake the pan constantly; white pepper scorches fast. Cool completely, then grind to a fine powder in a spice grinder or mortar. Toast the shrimp paste separately: wrap it in foil and hold it over an open burner flame, turning, for 30 to 45 seconds per side until it smells smoky and pungent. Alternatively, dry-fry the unwrapped paste in the dry skillet, pressing with a spatula, until the exterior darkens. Raw kapi tastes harshly marine and fermented; toasting converts the sulfurous top notes into something deeper and more aromatic. This step is not about cooking the paste into the dish. It is about transforming its flavor before it goes into the mortar.'
     time_min: 5
-  - text: 'Stub: in a heavy granite mortar (krok hin), pound the salt and dry aromatics first (lemongrass, galangal, makrut zest, coriander root) until fully fibrous and broken down, 6 to 8 minutes of steady pounding. Salt acts as an abrasive. Add chilies, then garlic and shallots, pounding each addition into the previous before continuing. The order matters: hardest fibers first, soft alliums last.'
-    time_min: 12
-  - text: 'Stub: add the toasted shrimp paste and ground spice powder. Pound and stir until the paste is uniform, glossy, and releases an oil sheen on top. That sheen is the signal that you have broken down the cell walls enough to release the lipids that carry flavor in the curry. A food processor will get you 70% of the way; the mortar gets the last 30% that defines the technique.'
-    time_min: 8
+  - text: 'Add 4 g / ½ tsp salt to a heavy granite mortar (krok hin). Begin with the fibrous dry aromatics: 45 g lemongrass (white part), 20 g galangal, 4 g / 2 tsp makrut lime zest, and 10 g coriander root. Pound steadily for 6 to 8 minutes until the fibers are fully broken down and the mass is homogeneous. Salt acts as an abrasive, accelerating the rupture. This order is not preference. Lemongrass and galangal have cell walls that resist bruising; if you add soft aromatics first, the hard fibers never fully break and the paste will taste of lemongrass texture, not lemongrass oil. When the fibrous base is smooth, add the chilies and pound until incorporated. Add the garlic and shallots last. They are soft and release liquid quickly; added too early they turn the paste wet and prevent the fibrous aromatics from grinding fine. The heat calibration of the final paste comes from the bird''s eye chilies alone. The serrano and long green chilies are primarily structural: they supply green color and bulk, not capsaicin. To reduce heat, reduce bird''s eye count; to increase, add more. The paste will always be green regardless of chili ratio as long as the aromatics and green chilies are present.'
+    time_min: 15
+  - text: 'Add 12 g / 2 tsp toasted shrimp paste and the ground spice powder. Pound and stir (the motion alternates between downward pounding and lateral grinding) until the paste is uniform and releases a visible oil sheen on top. That sheen is the signal that cell walls have ruptured enough to release the lipids bound inside the lemongrass, galangal, and kaffir. A food processor gets you roughly 70% of the way: the blade cuts rather than shears, producing a coarser, wetter paste that lacks the emulsified texture. The mortar shears the cell structure and physically integrates the components into a paste where the oils are dispersed rather than separated. The functional difference matters in the curry pan: a properly pounded paste cracks in coconut cream without releasing a pool of water; a processor paste tends to weep.'
+    time_min: 5
 
 substitutions:
   - for: 'fresh coriander root'
     use: 'lower stems of cilantro bunches'
     note: 'Acceptable substitute outside Thailand. Use the bottom 2 inches where the stems thicken.'
-  - for: 'shrimp paste'
-    use: 'fermented soybean paste (for vegetarian)'
-    note: 'Loses the marine funk that defines green curry; replace with a tablespoon of dark miso plus a pinch of dried kombu powder for adjacent umami.'
+  - for: 'shrimp paste (vegetarian)'
+    use: 'fermented soybean paste'
+    note: 'Loses the marine funk that defines green curry. Replace with 1 tbsp dark miso plus a pinch of dried kombu powder for adjacent umami.'
 
 notes: |
-  This is a stub. Flesh out: the role of the mortar (the pounding shears cell walls, releases oils, and emulsifies the paste in a way a processor's blade cannot; processor paste reads watery and granular where pounded paste reads thick and oily); the green-color logic (the green chilies and herbs do the color, so substituting only red chilies gives you a brown paste, not green); the heat calibration (Thai bird's eyes carry most of the capsaicin; serranos are mostly for green color and bulk); storage (fridge 1 week, freezer 3 months in a sealed jar with a thin film of neutral oil on top to prevent oxidation); yield logic (this batch supports 3 to 4 curries at 3 tbsp per).
+  Yield and storage: this batch is about 240 g, enough for 3 to 4 curries at 3 tablespoons per. Transfer to a small jar, press a thin film of neutral oil across the surface to prevent oxidation, and refrigerate. Lasts one week refrigerated, three months frozen. Freeze in a single-layer ice cube tray for pre-portioned amounts, then transfer cubes to a bag.
 
-  Note for follow-up drafting: cross-reference Thompson's "Thai Food" and Hot Thai Kitchen's green curry paste video for any technique details to deepen.
+  Green-color logic: the color comes from the green chilies and herbs, not from any single ingredient. Substituting only red bird''s eye chilies produces a brown or orange paste, not green. The serrano contributes bulk of the color; the birds'' eye chilies and lemongrass flesh reinforce it. Color fades slightly with cooking. This is normal.
+
+  Calibrating to jarred paste: when using this to replace store-bought in a recipe that calls for 2 to 3 tablespoons of jarred paste, start with 2 tablespoons of homemade and taste before adding more. Homemade paste is more concentrated and aromatic than jarred; the ratio is not 1:1.
 ---

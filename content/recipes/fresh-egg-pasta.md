@@ -1,17 +1,17 @@
 ---
 type: 'recipe'
 category: 'recipes'
-status: 'stub'
+status: 'complete'
 content_review: 'pending'
 
 title: 'Fresh egg pasta'
-desc: 'Tipo 00 flour and whole eggs, kneaded to silk and rolled thin. The base for tonnarelli, tagliatelle, ravioli — anywhere fresh sheet pasta belongs. Stub.'
-metaDesc: 'Homemade fresh egg pasta: tipo 00 flour, whole eggs, kneaded smooth, rolled thin. Stub recipe.'
+desc: 'Tipo 00 flour and whole eggs, kneaded to silk and rolled thin. The base for tonnarelli, tagliatelle, pappardelle: anywhere a starchy, porous fresh sheet belongs. The gluten structure here is fundamentally different from dried pasta: lower protein, no durum, no extrusion.'
+metaDesc: 'Homemade fresh egg pasta: tipo 00 flour, whole eggs, kneaded smooth, rolled thin. Covers tagliatelle, tonnarelli, pappardelle, and hand-cut shapes.'
 tags: ['pasta', 'italian', 'pantry', 'weekend-project']
-updated: '2026-04-27'
+updated: '2026-05-04'
 
 servings: 4
-yield_note: 'about 500 g pasta dough — enough for 4 generous portions'
+yield_note: 'about 500 g pasta dough, enough for 4 generous portions'
 time:
   prep_min: 20
   cook_min: 5
@@ -23,15 +23,15 @@ course: 'dinner'
 diet: ['vegetarian']
 
 source:
-  name: 'Adapted from the Emilian (Bolognese) tradition'
-  note: 'Stub: flesh out with the egg-yolk-only variant for richer pasta, the durum/00 split, and the gluten development discussion.'
+  name: 'Emilian (Bolognese) tradition'
+  note: ''
 
 ingredients:
   - item: 'tipo 00 flour'
     qty: 300
     unit: 'g'
     slug: 'all-purpose-flour'
-    note: '(2½ cups; AP flour works but tipo 00 gives a silkier sheet)'
+    note: '(2½ cups spooned and leveled; AP flour works but tipo 00 gives a silkier sheet at ~10–11% protein vs AP at ~11–12%)'
   - item: 'whole eggs'
     qty: 3
     unit: 'each'
@@ -41,7 +41,7 @@ ingredients:
     qty: 1
     unit: 'each'
     slug: 'eggs'
-    note: 'optional, for richer mouthfeel'
+    note: '(optional; adds richness and deepens yellow. Omit for a more neutral sheet.)'
     optional: true
   - item: 'fine sea salt'
     qty: 4
@@ -50,25 +50,25 @@ ingredients:
     note: '(½ tsp)'
 
 steps:
-  - text: 'Stub: mound the flour on a clean surface, make a well in the center, crack the eggs into the well, add salt. With a fork, gradually beat the eggs and pull in flour from the inner wall of the well. Switch to hand-kneading once a shaggy dough forms.'
-    time_min: 5
-  - text: 'Stub: knead 8 to 10 minutes. The dough goes from rough to smooth to silky. The visual signal is a satin sheen on the surface and a thumb-press that bounces back slowly. Rest the dough wrapped in plastic for at least 30 minutes at room temperature; this lets the gluten relax so it rolls without tearing.'
-    time_min: 30
-  - text: 'Stub: divide into 4 portions, keep 3 covered. Flatten the first into a rough rectangle, then run through a pasta machine starting at the widest setting, folding and re-rolling 3–4 times to laminate, then progressing through narrower settings until you can almost see your hand through the sheet (typically setting 6 or 7 of 9).'
+  - text: 'Mound 300 g / 2½ cups tipo 00 flour on a clean work surface or in a large bowl. Make a well in the center wide enough to hold the eggs without overflow. Crack in 3 whole eggs plus the optional yolk. Add 4 g / ½ tsp salt. With a fork, beat the eggs in small circles, gradually pulling in flour from the inner wall of the well. Work from the inside out: if you pull too much flour too fast, the eggs breach the wall and run. Once the mixture is thick enough to lose its liquidity, abandon the fork and switch to your hands.'
+    time_min: 3
+  - text: 'Bring the remaining flour into the dough and knead by hand on the work surface for 8 to 10 minutes. The dough starts rough and tears. After 3 to 4 minutes it smooths. After 8 minutes it should have a satin sheen on the surface and a thumb-press should sink in and bounce back slowly. That is the gluten test. The windowpane check works here exactly as in bread: pull a small piece thin between two fingers; if it stretches to near-translucency without tearing, gluten is developed. If it tears immediately, knead another minute. Lower-protein flours develop slightly faster than high-protein ones because they build a more extensible network more quickly.'
     time_min: 10
-  - text: 'Stub: cut to shape (tonnarelli = 2mm square strands; tagliatelle = 6mm ribbons; pappardelle = 25mm ribbons). Toss with semolina flour to prevent sticking and rest on a tray or hang on a pasta rack for at least 15 minutes before cooking.'
+  - text: 'Wrap the dough tightly in plastic wrap and rest at room temperature for at least 30 minutes, up to 2 hours. The rest is not optional. Kneading aligns gluten strands into tension; resting relaxes that tension so the sheet can be rolled without snapping back or tearing. A dough that just came off the board will fight you on the machine. The same dough after 30 minutes rolls almost without resistance.'
+    time_min: 30
+  - text: 'Divide the dough into 4 equal portions, keeping 3 under plastic while you work the first. Flatten the portion into a rough rectangle with your palm. Set the pasta machine to its widest setting (1 of 9 on most Atlas-style machines). Feed the dough through, then fold it letter-style onto itself and pass it through again. Repeat this lamination 3 to 4 times on setting 1: you are building layer alignment and evening out the structure. Then progress through settings 2, 3, 4, 5, 6 without doubling back. At setting 6 the sheet is thin enough to almost see your hand through it; that is correct for tagliatelle and tonnarelli. For filled pasta or delicate ribbon shapes, go to setting 7.'
+    time_min: 10
+  - text: 'Cut the sheet to shape while it is still slightly tacky; fully dry sheets crack. Tonnarelli: pass through the square-cut attachment (2 mm). Tagliatelle: fold the sheet loosely into thirds and cut 6 mm ribbons with a knife. Pappardelle: cut 25 mm ribbons. Immediately toss the cut pasta with semolina flour rather than the same flour used for the dough; semolina is coarser and prevents sticking without absorbing and compacting. Pile loosely on a tray or hang on a pasta rack. Rest 15 minutes before cooking; the surface firms slightly and the pasta holds its shape in boiling water.'
     time_min: 5
-  - text: 'Stub: cook in heavily salted boiling water for 2–3 minutes (fresh pasta is shockingly fast; taste at the 90-second mark). Reserve pasta water before draining. The dough is delicate; don''t over-stir.'
+  - text: 'Cook in heavily salted boiling water; the water should taste of the sea. Fresh pasta cooks in 2 to 3 minutes. Taste at the 90-second mark. The window between underdone and overcooked is narrow. Reserve at least one ladle of pasta water before draining; the starch load in it is the binding agent for any pan-emulsion sauce. Drain and transfer directly to the pan: fresh pasta should never sit in a colander.'
     time_min: 3
 
 notes: |
-  This is a stub. Flesh out: the gluten development logic (kneading aligns gluten strands; resting lets them relax, both are needed), the protein content sweet spot (tipo 00 sits at ~10–11% protein, AP at 11–12%; durum is 13%+ which makes a chewier, more rustic noodle better suited to dried shapes), the egg ratio choices (whole eggs give balance; egg-yolks-only give richness and a deeper yellow but tear more easily), the difference between this and semolina-and-water southern pasta (orecchiette, cavatelli, which are eggless and need no rest because the gluten works differently with durum).
+  Tipo 00 vs alternatives: tipo 00 sits at 10–11% protein. AP flour at 11–12% produces a slightly chewier sheet, acceptable but noticeably different from Italian restaurant pasta. Durum semolina at 13%+ is used in extruded dried shapes (rigatoni, spaghetti), where the high gluten is necessary for the shape to hold under extrusion pressure; in fresh sheet pasta, durum produces a rustic, tougher noodle better suited to wide hand-torn formats (pappardelle-style) than to delicate tonnarelli.
 
-  The kneading test (windowpane): pull a small piece of dough thin between two fingers. If you can stretch it to translucency without tearing, the gluten is developed. If it tears, knead another minute. This works the same as bread dough.
+  Whole eggs vs yolks-only: the Bolognese sfoglia tradition uses roughly 3 to 4 whole eggs per 300 g flour. A yolk-heavy version (7 to 8 yolks, no whites) produces a richer, more golden pasta with a silkier mouthfeel but less structural extensibility; it tears more easily when rolling thin. The whole-egg version here is more forgiving for a first roll. Yolk-heavy pasta is worth making once you have the hand feel.
 
-  The roll-thin test: lay the sheet on parchment paper with print on it. You should be able to read the print through the dough. Anywhere it goes opaque is a thick spot that won't cook evenly.
+  Why fresh beats dried for emulsion sauces: the porous, starchy surface of fresh pasta bonds differently with fat than the smooth, extruded surface of dried. Cacio e pepe, carbonara, aglio e olio all rely on released starch reacting with the fat phase. Fresh pasta contributes far more starch to the sauce water and has a higher surface area. Dried pasta is canonical for hard, oil-based sauces (puttanesca, amatriciana) where structure matters more than surface interaction.
 
-  Storage: fresh-cut pasta keeps 24 hours in the fridge under semolina dust, or 2 months in the freezer if dried first (let cut pasta sit out 30 minutes before cooking from frozen, then drop straight into boiling water and add 30 seconds).
-
-  Where this earns its place over dried: any pan-emulsion sauce (cacio e pepe, carbonara, aglio e olio) where the released starch and the porous fresh surface bond differently with the fat. Dried pasta is canonical for hard, oil-based sauces (puttanesca, amatriciana); fresh is for cream, butter, egg, cheese. The thicker the sauce idea, the more fresh pasta wants to be the substrate.
+  Storage: fresh-cut pasta holds 24 hours in the fridge under a dusting of semolina. For longer storage, let cut pasta air-dry 30 minutes to an hour until stiff, then freeze in nests. Cook from frozen in boiling water, add 30 extra seconds.
 ---

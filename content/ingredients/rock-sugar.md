@@ -23,10 +23,10 @@ about: |
 storage: 'Airtight, dry pantry. Indefinite; sucrose does not spoil. The chunks can fuse into a single mass in humid kitchens; break apart with the back of a heavy knife.'
 
 substitutions:
-  - for: 'rock sugar'
+  - for: 'rock sugar (braises, red-cooking)'
     use: 'granulated white sugar'
     note: 'Use 90% by weight: granulated is denser per volume but slightly less pure. Dissolves faster, so the braise gloss sets earlier and can scorch if the pan is hot. Stir more.'
-  - for: 'rock sugar'
+  - for: 'rock sugar (amber variety — medicinal soups, tea brines)'
     use: 'demerara or turbinado'
-    note: 'For amber rock sugar specifically. Carries similar trace molasses. Use 1:1.'
+    note: 'Carries similar trace molasses. Use 1:1.'
 ---

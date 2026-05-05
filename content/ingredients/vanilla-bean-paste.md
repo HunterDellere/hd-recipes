@@ -17,15 +17,15 @@ about: |
 
   Use 1:1 in place of extract. In recipes that need the visual of vanilla bean (vanilla ice cream, panna cotta, dun nai, sugar cookies), paste is the move. In recipes where you don't see it (chocolate cake, brownies), extract is fine.
 
-  Avoid "imitation vanilla" — it's vanillin alone, missing the hundreds of secondary aromatic compounds that real vanilla brings.
+  Avoid "imitation vanilla": it is vanillin alone, missing the hundreds of secondary aromatic compounds that real vanilla brings.
 
-storage: 'Pantry, tightly capped. Indefinite shelf life — it''s syrup and alcohol. Don''t refrigerate; the sugar can crystallize.'
+storage: 'Pantry, tightly capped. Indefinite shelf life: it''s syrup and alcohol. Don''t refrigerate; the sugar can crystallize.'
 
 substitutions:
-  - for: 'vanilla bean paste'
+  - for: 'vanilla bean paste (custards, ice cream, panna cotta — visible seeds matter)'
     use: 'vanilla extract'
     note: '1:1 swap. You lose the visible seeds and a bit of intensity.'
-  - for: 'vanilla bean paste'
+  - for: 'vanilla bean paste (whole-pod flavor in baked goods)'
     use: 'whole vanilla pod'
     note: '1 pod = ~1 tbsp paste. Split, scrape, use the pod too (steep in milk, then discard).'
 ---
