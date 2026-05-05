@@ -234,6 +234,37 @@ npm run verify
 
 ---
 
+## Technique drafting workflow
+
+When Hunter asks you to draft a new technique page, or to add one in service of a specific recipe, follow this sequence. Techniques live at `content/techniques/<slug>.md`.
+
+The single rule that drives everything else: **a technique page is named for the technique itself, never for the dish or protein that triggered it.** Velveting, dry brining, blooming aromatics, pan emulsion. Not "chicken breast for Thai curry." Not "tofu for mapo." Not "pasta for cacio e pepe." If the slug or title couples the technique to one recipe, you have crippled cross-linking and the page will not be reused. When the surface request is dish-specific ("how to use chicken breast in our green curry"), recover the underlying technique that solves it (`velveting`, `tempering`, `low-temperature poaching`) and write that page. The dish is one example among several.
+
+1. **Identify the underlying technique.** What pretreatment, thermal regime, or transformation actually solves the cook's problem? Look for an existing tradition or a named procedure (Cantonese velveting, French monter au beurre, Italian pasta acqua emulsion, Mexican tatemado). If no name exists, invent a generic functional one (`pan emulsion`, `acid-milk sour`). Never use a dish or protein name in the slug.
+
+2. **Lead with the mechanism.** Chemistry, physics, or biology that explains *why* the technique works. The pH shift, the protein cross-linking, the lipid coalescence, the enzymatic transformation. This anchors everything downstream.
+
+3. **Cover ratios, timing, and inflection points.** Specific numbers: salt percentages, temperature thresholds, rest windows, failure modes. The validator-defying detail that makes a technique page worth reading.
+
+4. **Anchor in applications by category, not by single recipe.** When you cite recipes, span at least two contexts (stir-fries *and* curries; sauces *and* braises). A single named dish is a hint that the page is too narrowly framed. Re-read every paragraph and ask whether it would still make sense if that recipe didn't exist.
+
+5. **Wire the calling recipe through `modifications` or step text** that references `techniques/<slug>` rather than embedding the technique inline. Recipes call techniques; techniques never name a single recipe as their reason for existing.
+
+6. **Run `npm run verify`.**
+
+For brand-new techniques, scaffold first:
+
+```bash
+npm run draft technique <slug>
+# fill in mechanism → ratios → inflection points → applications across categories
+mv local/drafts/techniques/<slug>.md content/techniques/
+npm run verify
+```
+
+The same anti-coupling rule applies retroactively. If you encounter a technique, ingredient, or hub page whose slug/title is welded to one dish, rename it to the general concept, generalize the body, and update any inbound links. Better to fix it once than let the bad pattern propagate.
+
+---
+
 ## Git Commit Format
 ```
 feat: add recipe <slug>
