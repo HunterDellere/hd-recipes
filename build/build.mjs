@@ -537,15 +537,13 @@ for (const { body, entry } of pending) {
 const searchIndex = buildSearchIndex(entries, bodies);
 writeFileSync(join(dataDir, 'search-index.json'), JSON.stringify(searchIndex), 'utf8');
 
-// "Recently added" surfaces real content only (skip families which are
-// navigational scaffolding). Sort by when the entry first landed in the repo
-// (git first-add date, mtime fallback) — *not* `updated`, which advances on
-// every edit and would resurface old entries after a small fix. Recipes get
-// priority on date ties — they're what people come here for.
-const RECENT_EXCLUDE = new Set(['family']);
-const TYPE_RANK = { recipe: 0, technique: 1, hub: 2, cuisine: 3, ingredient: 4, equipment: 5 };
+// "Recently added" surfaces every entry type. Sort by when the entry first
+// landed in the repo (git first-add date, mtime fallback) — *not* `updated`,
+// which advances on every edit and would resurface old entries after a small
+// fix. Recipes get priority on date ties — they're what people come here for.
+const TYPE_RANK = { recipe: 0, technique: 1, hub: 2, cuisine: 3, ingredient: 4, equipment: 5, family: 6 };
 const recent = entries
-  .filter(e => e.status === 'complete' && e.added && !RECENT_EXCLUDE.has(e.type))
+  .filter(e => e.status === 'complete' && e.added)
   .sort((a, b) => {
     const cmp = b.added.localeCompare(a.added);
     if (cmp !== 0) return cmp;
