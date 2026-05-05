@@ -35,11 +35,13 @@ ingredients:
     note: '(2 tbsp; refined for neutral flavor)'
   - group: 'Chocolate base'
     item: 'dark chocolate, chopped'
+    slug: 'dark-chocolate'
     qty: 115
     unit: 'g'
     note: '(4 oz, 70% cacao)'
   - group: 'Chocolate base'
     item: 'Dutch-process cocoa powder'
+    slug: 'dutch-process-cocoa'
     qty: 50
     unit: 'g'
     note: '(½ cup)'
@@ -56,6 +58,7 @@ ingredients:
     note: '(¾ cup)'
   - group: 'Wet'
     item: 'light brown sugar'
+    slug: 'light-brown-sugar'
     qty: 110
     unit: 'g'
     note: '(½ cup, packed)'

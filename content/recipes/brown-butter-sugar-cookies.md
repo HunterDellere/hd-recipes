@@ -35,6 +35,7 @@ ingredients:
     note: '(¾ cup)'
   - group: 'Cookie dough'
     item: 'light brown sugar'
+    slug: 'light-brown-sugar'
     qty: 55
     unit: 'g'
     note: '(¼ cup, packed)'

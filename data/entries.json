@@ -1,5 +1,28 @@
 [
   {
+    "path": "pages/hubs/thai-kitchen.html",
+    "type": "hub",
+    "category": "hubs",
+    "title": "Thai kitchen",
+    "desc": "Build the paste from scratch, then cook with it. The aromatics are the same across both recipes — making the paste first makes the curry legible.",
+    "tags": [
+      "thai",
+      "spicy",
+      "aromatic",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "thai-kitchen",
+    "updated": "2026-05-04",
+    "added": "2026-05-05",
+    "_card": {
+      "memberCount": 2,
+      "memberMix": {
+        "recipes": 2
+      }
+    }
+  },
+  {
     "path": "pages/recipes/classic-pancakes.html",
     "type": "recipe",
     "category": "recipes",
@@ -227,6 +250,7 @@
       },
       {
         "item": "white peppercorns",
+        "slug": "white-pepper",
         "optional": false
       },
       {
@@ -389,7 +413,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -468,7 +492,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 0,
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -504,7 +528,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -729,7 +753,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 0,
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -748,7 +772,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -767,7 +791,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 0,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -809,7 +833,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -848,7 +872,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 0,
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -1038,9 +1062,9 @@
     "updated": "2026-04-27",
     "added": "2026-04-28",
     "_card": {
-      "memberCount": 3,
+      "memberCount": 4,
       "memberMix": {
-        "recipes": 3
+        "recipes": 4
       }
     }
   },
@@ -1880,19 +1904,20 @@
     "type": "hub",
     "category": "hubs",
     "title": "Weeknight pasta",
-    "desc": "Pasta dishes that hit the table in under 30 minutes without sacrificing technique.",
+    "desc": "Pasta and noodle dishes that hit the table fast without sacrificing technique. Start with the fresh dough to understand what the sauces are working with.",
     "tags": [
       "pasta",
-      "weeknight"
+      "weeknight",
+      "noodles"
     ],
     "status": "complete",
     "_slug": "weeknight-pasta",
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "memberCount": 2,
+      "memberCount": 3,
       "memberMix": {
-        "recipes": 2
+        "recipes": 3
       }
     }
   },
@@ -1986,7 +2011,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -2025,7 +2050,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -2046,7 +2071,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 0,
+      "usedInCount": 1,
       "hasNutrition": false
     }
   },
@@ -2065,7 +2090,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -2139,7 +2164,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 0,
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -2175,7 +2200,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -2374,6 +2399,7 @@
       },
       {
         "item": "light brown sugar",
+        "slug": "light-brown-sugar",
         "optional": false
       },
       {
@@ -2496,6 +2522,7 @@
       },
       {
         "item": "dark brown sugar, packed",
+        "slug": "dark-brown-sugar",
         "optional": false
       },
       {
@@ -2504,6 +2531,7 @@
       },
       {
         "item": "vanilla extract",
+        "slug": "vanilla-extract",
         "optional": false
       },
       {
@@ -2606,6 +2634,7 @@
       },
       {
         "item": "rock sugar or granulated sugar",
+        "slug": "rock-sugar",
         "optional": false
       },
       {
@@ -2691,6 +2720,7 @@
       },
       {
         "item": "dried osmanthus flowers",
+        "slug": "dried-osmanthus",
         "optional": false
       },
       {
@@ -2751,10 +2781,12 @@
       },
       {
         "item": "dark chocolate, chopped",
+        "slug": "dark-chocolate",
         "optional": false
       },
       {
         "item": "Dutch-process cocoa powder",
+        "slug": "dutch-process-cocoa",
         "optional": false
       },
       {
@@ -2768,6 +2800,7 @@
       },
       {
         "item": "light brown sugar",
+        "slug": "light-brown-sugar",
         "optional": false
       },
       {
@@ -3051,6 +3084,7 @@
       },
       {
         "item": "white pepper",
+        "slug": "white-pepper",
         "optional": false
       },
       {
@@ -3326,10 +3360,12 @@
       },
       {
         "item": "dark chocolate (60–70% cacao)",
+        "slug": "dark-chocolate",
         "optional": false
       },
       {
         "item": "Dutch-process cocoa powder",
+        "slug": "dutch-process-cocoa",
         "optional": false
       },
       {
@@ -3355,6 +3391,7 @@
       },
       {
         "item": "vanilla extract",
+        "slug": "vanilla-extract",
         "optional": false
       },
       {
@@ -3451,6 +3488,7 @@
       },
       {
         "item": "sui mi ya cai (preserved mustard greens)",
+        "slug": "sui-mi-ya-cai",
         "optional": false
       },
       {
@@ -3475,6 +3513,7 @@
       },
       {
         "item": "chili oil with sediments",
+        "slug": "chili-oil",
         "optional": false
       },
       {
@@ -3546,6 +3585,7 @@
       },
       {
         "item": "wood ear mushrooms, rehydrated and trimmed",
+        "slug": "wood-ear-mushroom",
         "optional": false
       },
       {
@@ -3577,6 +3617,7 @@
       },
       {
         "item": "chili oil",
+        "slug": "chili-oil",
         "optional": true
       }
     ],
@@ -3654,10 +3695,12 @@
       },
       {
         "item": "sweetened condensed milk",
+        "slug": "sweetened-condensed-milk",
         "optional": false
       },
       {
         "item": "vanilla extract",
+        "slug": "vanilla-extract",
         "optional": false
       },
       {
@@ -3670,6 +3713,7 @@
       },
       {
         "item": "evaporated milk (or half and half)",
+        "slug": "evaporated-milk",
         "optional": false
       }
     ],
@@ -3752,14 +3796,17 @@
       },
       {
         "item": "sweetened condensed milk",
+        "slug": "sweetened-condensed-milk",
         "optional": false
       },
       {
         "item": "dark brown sugar (or turbinado)",
+        "slug": "dark-brown-sugar",
         "optional": false
       },
       {
         "item": "vanilla extract",
+        "slug": "vanilla-extract",
         "optional": false
       },
       {
@@ -3772,6 +3819,7 @@
       },
       {
         "item": "heavy cream, very cold",
+        "slug": "heavy-cream",
         "optional": false
       },
       {

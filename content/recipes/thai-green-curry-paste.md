@@ -65,6 +65,7 @@ ingredients:
 
   - group: 'Spice & funk'
     item: 'white peppercorns'
+    slug: 'white-pepper'
     qty: 2
     unit: 'g'
     note: '(1 tsp)'

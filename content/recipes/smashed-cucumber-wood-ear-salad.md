@@ -29,6 +29,7 @@ ingredients:
     note: '(6 small)'
   - group: 'Vegetables'
     item: 'wood ear mushrooms, rehydrated and trimmed'
+    slug: 'wood-ear-mushroom'
     qty: 300
     unit: 'g'
     note: '(~3 cups; ~30g dried)'
@@ -68,6 +69,7 @@ ingredients:
     note: '(1 tbsp)'
   - group: 'Dressing'
     item: 'chili oil'
+    slug: 'chili-oil'
     qty: 5
     unit: 'g'
     note: '(1 tsp)'

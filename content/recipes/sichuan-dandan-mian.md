@@ -42,6 +42,7 @@ ingredients:
     note: '(¾ tsp)'
   - group: 'Pork mix'
     item: 'sui mi ya cai (preserved mustard greens)'
+    slug: 'sui-mi-ya-cai'
     qty: 150
     unit: 'g'
     note: '(¾ cup)'
@@ -73,6 +74,7 @@ ingredients:
     note: '(¾ cup; not tahini)'
   - group: 'Sauce'
     item: 'chili oil with sediments'
+    slug: 'chili-oil'
     qty: 180
     unit: 'g'
     note: '(¾ cup)'

@@ -67,12 +67,14 @@ ingredients:
 
   - group: 'Tempered chocolate shards'
     item: 'dark chocolate (60–70% cacao)'
+    slug: 'dark-chocolate'
     qty: 115
     unit: 'g'
     note: '(4 oz; 3 oz for melting, 1 oz finely chopped to seed)'
 
   - group: 'Cocoa sponge: bloom'
     item: 'Dutch-process cocoa powder'
+    slug: 'dutch-process-cocoa'
     qty: 25
     unit: 'g'
     note: '(¼ cup)'
@@ -104,6 +106,7 @@ ingredients:
     unit: 'each'
   - group: 'Cocoa sponge: wet'
     item: 'vanilla extract'
+    slug: 'vanilla-extract'
     qty: 2.5
     unit: 'g'
     note: '(½ tsp)'

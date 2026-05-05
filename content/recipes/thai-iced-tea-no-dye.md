@@ -60,11 +60,13 @@ ingredients:
     note: '(2 tbsp; adjust)'
   - group: 'Sweetener and finish'
     item: 'sweetened condensed milk'
+    slug: 'sweetened-condensed-milk'
     qty: 40
     unit: 'g'
     note: '(2 tbsp)'
   - group: 'Sweetener and finish'
     item: 'vanilla extract'
+    slug: 'vanilla-extract'
     qty: 2.5
     unit: 'g'
     note: '(½ tsp)'
@@ -80,6 +82,7 @@ ingredients:
     qty: 'to taste'
   - group: 'Service'
     item: 'evaporated milk (or half and half)'
+    slug: 'evaporated-milk'
     qty: 30
     unit: 'g'
     note: '(2–4 tbsp)'

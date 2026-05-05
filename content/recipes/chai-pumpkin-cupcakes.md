@@ -84,6 +84,7 @@ ingredients:
     unit: 'each'
   - group: 'Wet'
     item: 'dark brown sugar, packed'
+    slug: 'dark-brown-sugar'
     qty: 110
     unit: 'g'
     note: '(½ cup)'
@@ -94,6 +95,7 @@ ingredients:
     note: '(⅓ cup)'
   - group: 'Wet'
     item: 'vanilla extract'
+    slug: 'vanilla-extract'
     qty: 5
     unit: 'g'
     note: '(1 tsp)'

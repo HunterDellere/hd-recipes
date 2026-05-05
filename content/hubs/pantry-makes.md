@@ -20,4 +20,7 @@ members:
   - slug: 'recipes/homemade-panko-breadcrumbs'
     label: 'Homemade panko breadcrumbs'
     note: 'Low-and-slow drying before grinding is the only step that separates real panko from grainy dust.'
+  - slug: 'recipes/thai-green-curry-paste'
+    label: 'Thai green curry paste'
+    note: 'One session in the mortar covers three to four curries. The batch holds a week refrigerated, three months frozen.'
 ---

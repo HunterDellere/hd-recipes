@@ -64,16 +64,19 @@ ingredients:
 
   - group: 'Sweetener and aromatics'
     item: 'sweetened condensed milk'
+    slug: 'sweetened-condensed-milk'
     qty: 40
     unit: 'g'
     note: '(2 tbsp)'
   - group: 'Sweetener and aromatics'
     item: 'dark brown sugar (or turbinado)'
+    slug: 'dark-brown-sugar'
     qty: 13
     unit: 'g'
     note: '(1 tbsp)'
   - group: 'Sweetener and aromatics'
     item: 'vanilla extract'
+    slug: 'vanilla-extract'
     qty: 2.5
     unit: 'g'
     note: '(½ tsp)'
@@ -90,6 +93,7 @@ ingredients:
 
   - group: 'Salted vanilla whip'
     item: 'heavy cream, very cold'
+    slug: 'heavy-cream'
     qty: 120
     unit: 'ml'
     note: '(½ cup)'

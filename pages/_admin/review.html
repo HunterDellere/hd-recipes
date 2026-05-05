@@ -34,18 +34,18 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <body>
 <h1>hd · recipes — admin</h1>
 <div class="bar">
-  <div class="stat"><span class="stat-num">113</span><span class="stat-label">Complete</span></div>
+  <div class="stat"><span class="stat-num">114</span><span class="stat-label">Complete</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Draft</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Stub</span></div>
-  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">113</span><span class="stat-label">missing</span></div>
-  <div class="stat"><span class="stat-num">3</span><span class="stat-label">No nutrition</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">114</span><span class="stat-label">missing</span></div>
+  <div class="stat"><span class="stat-num">2</span><span class="stat-label">No nutrition</span></div>
 </div>
 
-<div class="note"><strong>Recipes missing nutrition data:</strong> <a href="../../pages/recipes/thai-green-curry-paste.html">Thai green curry paste</a>, <a href="../../pages/recipes/homemade-panko-breadcrumbs.html">Homemade panko breadcrumbs</a>, <a href="../../pages/recipes/cocoa-osmanthus-dun-nai.html">Cocoa-osmanthus dun nai</a>. Add <code>usda_fdc_id</code> to ingredient pages, or per-recipe overrides on each ingredient line.</div>
+<div class="note"><strong>Recipes missing nutrition data:</strong> <a href="../../pages/recipes/homemade-panko-breadcrumbs.html">Homemade panko breadcrumbs</a>, <a href="../../pages/recipes/cocoa-osmanthus-dun-nai.html">Cocoa-osmanthus dun nai</a>. Add <code>usda_fdc_id</code> to ingredient pages, or per-recipe overrides on each ingredient line.</div>
 
 <div class="filters">
   <input type="search" id="filter-q" placeholder="Filter title…" />
-  <select id="filter-cat"><option value="">All categories</option><option value="recipes">recipes</option><option value="techniques">techniques</option><option value="ingredients">ingredients</option><option value="cuisines">cuisines</option><option value="hubs">hubs</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
+  <select id="filter-cat"><option value="">All categories</option><option value="hubs">hubs</option><option value="recipes">recipes</option><option value="techniques">techniques</option><option value="ingredients">ingredients</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
   <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
   <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
 </div>
@@ -53,6 +53,16 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <table id="entries-table">
   <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
   <tbody>
+    <tr data-status="complete" data-review="missing" data-category="hubs" data-type="hub">
+      <td><a href="../../pages/hubs/thai-kitchen.html">Thai kitchen</a></td>
+      <td>hubs</td>
+      <td>hub</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-04</td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/classic-pancakes.html">Classic pancakes</a></td>
       <td>recipes</td>
@@ -941,7 +951,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-04-26</td>
       <td></td>
-      <td><span class="pill warn">2 FDC</span></td>
+      <td><span class="pill warn">3 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/double-dark-chocolate-crinkle-cookies.html">Double dark chocolate crinkle cookies</a></td>
@@ -1185,7 +1195,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr></tbody>
 </table>
 
-<p class="gen">Generated 2026-05-05T01:12:13.926Z</p>
+<p class="gen">Generated 2026-05-05T02:32:07.898Z</p>
 
 <script>
 (function () {

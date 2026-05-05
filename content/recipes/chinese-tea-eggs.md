@@ -49,6 +49,7 @@ ingredients:
     note: '(2 tbsp)'
   - group: 'Brine'
     item: 'rock sugar or granulated sugar'
+    slug: 'rock-sugar'
     qty: 15
     unit: 'g'
     note: '(1 tbsp)'

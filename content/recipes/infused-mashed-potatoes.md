@@ -71,6 +71,7 @@ ingredients:
     qty: 'to taste'
   - group: 'Finish'
     item: 'white pepper'
+    slug: 'white-pepper'
     qty: 1
     unit: 'g'
     note: '(½ tsp; keeps the look pristine)'

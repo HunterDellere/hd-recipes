@@ -48,6 +48,7 @@ ingredients:
 
   - group: 'Finish'
     item: 'dried osmanthus flowers'
+    slug: 'dried-osmanthus'
     qty: 4
     unit: 'g'
     note: '(2 tsp)'
