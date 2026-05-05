@@ -872,15 +872,14 @@ export function renderTagBody(tagSlug, tagLabel, entriesByCategory, currentPath)
   for (const [cat, list] of Object.entries(entriesByCategory)) {
     if (!list.length) continue;
     const cards = list.map(e => `
-        <a class="related-card" href="${escapeHtml(relPath(currentPath, e.path))}" data-category="${escapeHtml(e.category)}">
-          <span class="rl-cat">${escapeHtml(e.category)}</span>
-          <span class="rl-title">${escapeHtml(e.title)}</span>
-          ${e.desc ? `<span class="rl-desc">${escapeHtml(e.desc.slice(0, 110))}</span>` : ''}
+        <a class="rl-card" href="${escapeHtml(relPath(currentPath, e.path))}" data-category="${escapeHtml(e.category)}">
+          <span class="rl-card-title">${escapeHtml(e.title)}</span>
+          ${e.desc ? `<span class="rl-card-why">${escapeHtml(e.desc.slice(0, 120))}</span>` : ''}
         </a>`).join('');
     sections.push(`
     <span class="section-anchor" id="cat-${escapeHtml(cat)}"></span>
     <div class="section-head"><h2>${escapeHtml(cat)} <span class="sh-sub">${list.length}</span></h2></div>
-    <div class="related-cards">${cards}
+    <div class="rl-cards">${cards}
     </div>`);
   }
 
