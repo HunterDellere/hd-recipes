@@ -766,14 +766,14 @@ export function renderIngredientBody(fm, slug, category, opts = {}) {
 
   if (recipesUsing.length) {
     const cards = recipesUsing.map(r => `
-        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
-          <span class="rl-cat">recipes</span>
-          <span class="rl-title">${escapeHtml(r.title)}</span>
+        <a class="rl-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-card-title">${escapeHtml(r.title)}</span>
+          ${r.desc ? `<span class="rl-card-why">${escapeHtml(r.desc.slice(0, 120))}</span>` : ''}
         </a>`).join('');
     sections.push(`
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
-    <div class="related-cards">${cards}
+    <div class="rl-cards">${cards}
     </div>`);
   }
 
@@ -821,14 +821,14 @@ export function renderEquipmentBody(fm, slug, category, opts = {}) {
 
   if (recipesUsing.length) {
     const cards = recipesUsing.map(r => `
-        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
-          <span class="rl-cat">recipes</span>
-          <span class="rl-title">${escapeHtml(r.title)}</span>
+        <a class="rl-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-card-title">${escapeHtml(r.title)}</span>
+          ${r.desc ? `<span class="rl-card-why">${escapeHtml(r.desc.slice(0, 120))}</span>` : ''}
         </a>`).join('');
     sections.push(`
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
-    <div class="related-cards">${cards}
+    <div class="rl-cards">${cards}
     </div>`);
   }
 
@@ -926,14 +926,14 @@ export function renderCuisineBody(fm, slug, category, opts = {}) {
 
   if (recipes.length) {
     const cards = recipes.map(r => `
-        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
-          <span class="rl-cat">${escapeHtml(r.course || 'recipe')}</span>
-          <span class="rl-title">${escapeHtml(r.title)}</span>
+        <a class="rl-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-card-title">${escapeHtml(r.title)}</span>
+          ${r.desc ? `<span class="rl-card-why">${escapeHtml(r.desc.slice(0, 120))}</span>` : ''}
         </a>`).join('');
     sections.push(`
     <span class="section-anchor" id="recipes"></span>
     <div class="section-head"><h2>Recipes</h2></div>
-    <div class="related-cards">${cards}
+    <div class="rl-cards">${cards}
     </div>`);
   }
 
@@ -994,14 +994,14 @@ export function renderTechniqueBody(fm, slug, category, opts = {}) {
 
   if (recipesPracticing.length) {
     const cards = recipesPracticing.map(r => `
-        <a class="related-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
-          <span class="rl-cat">recipes</span>
-          <span class="rl-title">${escapeHtml(r.title)}</span>
+        <a class="rl-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="recipes">
+          <span class="rl-card-title">${escapeHtml(r.title)}</span>
+          ${r.desc ? `<span class="rl-card-why">${escapeHtml(r.desc.slice(0, 120))}</span>` : ''}
         </a>`).join('');
     sections.push(`
     <span class="section-anchor" id="practiced-in"></span>
     <div class="section-head"><h2>Recipes that practice this</h2></div>
-    <div class="related-cards">${cards}
+    <div class="rl-cards">${cards}
     </div>`);
   }
 
