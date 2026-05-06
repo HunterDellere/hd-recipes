@@ -701,18 +701,19 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
   sections.push(renderRecipeHero(fm, slug, category, { images, entriesByPath }));
 
-  // Safety callout sits high — between hero and mise — so a cook scanning
-  // the page catches the published-safe note before they start reading the
-  // ingredients list. Quiet visual treatment by design (see .safety-callout
-  // in style.css); it is a footnote-with-link, not a warning banner.
+  // Safety callout is rendered now but inserted after Execution below — its
+  // content is doneness/pasteurization context for the temperature calls
+  // inside the steps, so it reads as a closing note on what the cook just
+  // did rather than a banner before they've reached the heat.
   const safetyHtml = renderSafetyNotes(fm, currentPath);
-  if (safetyHtml) { sections.push(safetyHtml); sidebarLinks.push({ id: 'safety', label: 'Safety' }); }
 
   const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
   if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Mise en Place' }); }
 
   const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images);
   if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Execution' }); }
+
+  if (safetyHtml) { sections.push(safetyHtml); sidebarLinks.push({ id: 'safety', label: 'Safety' }); }
 
   const eqHtml = renderEquipment(fm, `pages/${category}/${slug}.html`, equipmentBySlug);
   if (eqHtml) { sections.push(eqHtml); sidebarLinks.push({ id: 'equipment', label: 'Equipment' }); }
@@ -993,9 +994,9 @@ export function renderTechniqueBody(fm, slug, category, opts = {}) {
   const currentPath = `pages/${category}/${slug}.html`;
   const safetyHtml = renderSafetyNotes(fm, currentPath);
   const sidebarLinks = [{ id: 'about', label: 'About' }];
-  if (safetyHtml)        sidebarLinks.push({ id: 'safety',        label: 'Safety' });
   if (fm.when_to_use)    sidebarLinks.push({ id: 'when-to-use',   label: 'When to use'   });
   if (fm.failure_modes)  sidebarLinks.push({ id: 'failure-modes', label: 'Failure modes' });
+  if (safetyHtml)        sidebarLinks.push({ id: 'safety',        label: 'Safety' });
   if (fm.practice_notes) sidebarLinks.push({ id: 'practice',      label: 'Practice'      });
   if (recipesPracticing.length) sidebarLinks.push({ id: 'practiced-in', label: 'Recipes' });
 
@@ -1022,8 +1023,6 @@ export function renderTechniqueBody(fm, slug, category, opts = {}) {
     <div class="section-head"><h2>About</h2></div>
     <div class="scholar">${prosify(fm.about || fm.desc || '')}</div>`);
 
-  if (safetyHtml) sections.push(safetyHtml);
-
   if (fm.when_to_use) sections.push(`
     <span class="section-anchor" id="when-to-use"></span>
     <div class="section-head"><h2>When to use</h2></div>
@@ -1033,6 +1032,8 @@ export function renderTechniqueBody(fm, slug, category, opts = {}) {
     <span class="section-anchor" id="failure-modes"></span>
     <div class="section-head"><h2>Failure modes</h2></div>
     <div class="scholar">${prosify(fm.failure_modes)}</div>`);
+
+  if (safetyHtml) sections.push(safetyHtml);
 
   if (fm.practice_notes) sections.push(`
     <span class="section-anchor" id="practice"></span>
