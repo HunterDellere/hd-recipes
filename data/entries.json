@@ -1,5 +1,255 @@
 [
   {
+    "path": "pages/ingredients/basmati-rice.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Basmati rice",
+    "desc": "Long-grain aromatic rice from the Indian subcontinent, low in amylopectin and high in 2-acetyl-1-pyrroline. Grains stay separate, lengthen dramatically on cooking, and carry a popcorn-pandan aroma that defines the cuisine it anchors.",
+    "tags": [
+      "rice",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "basmati-rice",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/jameed.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Jameed",
+    "desc": "Fermented sheep or goat yogurt, salted and sun-dried into stone-hard cones. Reconstitutes into a sour, funky, glutamate-heavy sauce base that no live yogurt approximates.",
+    "tags": [
+      "dairy",
+      "umami",
+      "fermentation",
+      "levantine"
+    ],
+    "status": "complete",
+    "_slug": "jameed",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/lamb-shoulder.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Lamb shoulder (bone-in)",
+    "desc": "Collagen-rich, fat-marbled forequarter cut from young sheep. Built for slow-braise temperatures where the connective tissue hydrolyzes into gelatin and the meat falls off the bone.",
+    "tags": [
+      "lamb"
+    ],
+    "status": "complete",
+    "_slug": "lamb-shoulder",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/samna.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Samna (clarified butter)",
+    "desc": "Butter cooked past its water phase and strained free of milk solids — pure butterfat, around 99% lipid, with the toasted-solid aroma already baked in. The Levantine and North African analog of Indian ghee.",
+    "tags": [
+      "dairy",
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "samna",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/recipes/mansaf.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Mansaf",
+    "desc": "Bone-in lamb shoulder simmered for hours, then bathed in a sauce built from reconstituted jameed (fermented dried sheep yogurt). Served over saffron-tinted basmati rice on a base layer of paper-thin shrak bread, crowned with samna-toasted pine nuts and almonds. The Bedouin and Jordanian feast dish, technique-faithful.",
+    "tags": [
+      "weekend-project",
+      "lamb",
+      "levantine",
+      "braise",
+      "comfort",
+      "umami",
+      "rice",
+      "fermentation"
+    ],
+    "status": "complete",
+    "_slug": "mansaf",
+    "cuisine": "Jordanian",
+    "course": "dinner",
+    "difficulty": "hard",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 240,
+      "total_min": 270,
+      "active_min": 90
+    },
+    "updated": "2026-05-06",
+    "ingredients": [
+      {
+        "item": "jameed stones",
+        "slug": "jameed",
+        "optional": false
+      },
+      {
+        "item": "cold water for the soak",
+        "optional": false
+      },
+      {
+        "item": "bone-in lamb shoulder, cut into 6 large pieces by the butcher",
+        "slug": "lamb-shoulder",
+        "optional": false
+      },
+      {
+        "item": "cold water for the braise",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, peeled and halved",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, lightly cracked",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "optional": false
+      },
+      {
+        "item": "whole black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "mastic resin, crushed (optional but traditional)",
+        "optional": true
+      },
+      {
+        "item": "kosher salt for the braise",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water for the cornstarch slurry",
+        "optional": false
+      },
+      {
+        "item": "basmati rice",
+        "slug": "basmati-rice",
+        "optional": false
+      },
+      {
+        "item": "samna (clarified butter)",
+        "slug": "samna",
+        "optional": false
+      },
+      {
+        "item": "ground turmeric",
+        "optional": false
+      },
+      {
+        "item": "hot water for the rice",
+        "optional": false
+      },
+      {
+        "item": "kosher salt for the rice",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "samna for the nuts",
+        "slug": "samna",
+        "optional": false
+      },
+      {
+        "item": "pine nuts",
+        "optional": false
+      },
+      {
+        "item": "slivered blanched almonds",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, finely chopped",
+        "optional": false
+      },
+      {
+        "item": "shrak or markook bread (paper-thin Bedouin flatbread)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "cooked-yogurt-sauce",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "heavy-saucepan",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-05-06",
+    "_card": {
+      "totalMinutes": 270,
+      "diffLabel": "hard",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "+ 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
+    "path": "pages/techniques/cooked-yogurt-sauce.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Cooked yogurt sauce",
+    "desc": "Stabilize yogurt with starch or egg, temper into the hot dish, and hold at a tremor below the boil. Casein curdles above 85 °C without help; the help is what makes a yogurt-based stew possible.",
+    "tags": [
+      "dairy",
+      "fermentation"
+    ],
+    "status": "complete",
+    "_slug": "cooked-yogurt-sauce",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/safety/cross-contamination-and-time.html",
     "type": "safety",
     "category": "safety",
@@ -416,7 +666,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -2111,7 +2361,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -2261,7 +2511,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -3948,7 +4198,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -4151,6 +4401,71 @@
     "added": "2026-04-26",
     "_card": {
       "usedInCount": 0
+    }
+  },
+  {
+    "path": "pages/recipes/shrak-flatbread.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Shrak (Bedouin paper-thin flatbread)",
+    "desc": "Hand-stretched, paper-thin whole-wheat flatbread cooked in seconds on a domed saj. The bread layer beneath mansaf, and a Bedouin staple in its own right. Stub.",
+    "tags": [
+      "bread",
+      "levantine",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "shrak-flatbread",
+    "cuisine": "Jordanian",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 30,
+      "total_min": 60,
+      "active_min": 60
+    },
+    "updated": "2026-05-06",
+    "ingredients": [
+      {
+        "item": "whole-wheat flour",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      },
+      {
+        "item": "olive oil",
+        "optional": false
+      },
+      {
+        "item": "flour for the work surface",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-06",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   }
 ]
