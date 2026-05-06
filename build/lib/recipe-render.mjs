@@ -28,6 +28,40 @@ function prosify(s) {
   return md.render(trimmed);
 }
 
+/**
+ * Slugify a heading's text into a URL anchor. Lowercases, trims, replaces
+ * runs of non-alphanumerics with single hyphens. Used by safety pages so
+ * `## Poultry` becomes `<h2 id="poultry">` and a recipe's safety_notes ref
+ * `safety/meat-doneness#poultry` resolves.
+ */
+function slugifyAnchor(text) {
+  return String(text || '')
+    .toLowerCase()
+    .replace(/<[^>]+>/g, '')
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 64);
+}
+
+/**
+ * Run prosify, then post-process the HTML to inject `id="..."` attributes on
+ * h2/h3 elements. Used on reference pages (safety, future cuisines-as-pages)
+ * where in-page anchors need to be linkable from elsewhere in the site.
+ */
+function prosifyWithHeadingAnchors(s) {
+  const html = prosify(s);
+  if (!html) return '';
+  const seen = new Map();
+  return html.replace(/<(h[23])>([\s\S]*?)<\/\1>/g, (full, tag, inner) => {
+    let base = slugifyAnchor(inner);
+    if (!base) return full;
+    const count = (seen.get(base) || 0) + 1;
+    seen.set(base, count);
+    const id = count === 1 ? base : `${base}-${count}`;
+    return `<${tag} id="${id}">${inner}</${tag}>`;
+  });
+}
+
 function relPath(fromPath, toPath) {
   const fromParts = fromPath.split('/').slice(0, -1);
   const toParts = toPath.split('/');
@@ -663,8 +697,16 @@ export function renderRecipeBody(fm, slug, category, opts) {
   const { ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition, inHubs, pairings, entriesByPath, images } = opts;
   const sidebarLinks = [];
   const sections = [];
+  const currentPath = `pages/${category}/${slug}.html`;
 
   sections.push(renderRecipeHero(fm, slug, category, { images, entriesByPath }));
+
+  // Safety callout sits high — between hero and mise — so a cook scanning
+  // the page catches the published-safe note before they start reading the
+  // ingredients list. Quiet visual treatment by design (see .safety-callout
+  // in style.css); it is a footnote-with-link, not a warning banner.
+  const safetyHtml = renderSafetyNotes(fm, currentPath);
+  if (safetyHtml) { sections.push(safetyHtml); sidebarLinks.push({ id: 'safety', label: 'Safety' }); }
 
   const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
   if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Mise en Place' }); }
@@ -948,7 +990,10 @@ export function renderCuisineBody(fm, slug, category, opts = {}) {
 
 export function renderTechniqueBody(fm, slug, category, opts = {}) {
   const recipesPracticing = opts.recipesPracticing || []; // [{ title, path }] from C2 reverse links
+  const currentPath = `pages/${category}/${slug}.html`;
+  const safetyHtml = renderSafetyNotes(fm, currentPath);
   const sidebarLinks = [{ id: 'about', label: 'About' }];
+  if (safetyHtml)        sidebarLinks.push({ id: 'safety',        label: 'Safety' });
   if (fm.when_to_use)    sidebarLinks.push({ id: 'when-to-use',   label: 'When to use'   });
   if (fm.failure_modes)  sidebarLinks.push({ id: 'failure-modes', label: 'Failure modes' });
   if (fm.practice_notes) sidebarLinks.push({ id: 'practice',      label: 'Practice'      });
@@ -976,6 +1021,8 @@ export function renderTechniqueBody(fm, slug, category, opts = {}) {
     <span class="section-anchor" id="about"></span>
     <div class="section-head"><h2>About</h2></div>
     <div class="scholar">${prosify(fm.about || fm.desc || '')}</div>`);
+
+  if (safetyHtml) sections.push(safetyHtml);
 
   if (fm.when_to_use) sections.push(`
     <span class="section-anchor" id="when-to-use"></span>
@@ -1012,6 +1059,107 @@ export function renderTechniqueBody(fm, slug, category, opts = {}) {
     ${sections.join('\n\n    ')}
   </main>
 </div>`;
+}
+
+/**
+ * Safety reference page renderer. Mirrors the technique-page shape so the
+ * design system stays consistent: hero with eyebrow + title + desc, About
+ * section rendered from fm.about (which contains the full prose with
+ * markdown headings — H2s become navigable subsections), then the
+ * referenced-from list (recipes and techniques whose safety_notes[].ref
+ * points at this page).
+ */
+export function renderSafetyBody(fm, slug, category, opts = {}) {
+  const referencedBy = opts.referencedBy || []; // [{ title, path, type, desc }]
+  const sidebarLinks = [{ id: 'about', label: 'About' }];
+  if (referencedBy.length) sidebarLinks.push({ id: 'referenced-by', label: 'Referenced by' });
+
+  const sidebar = `
+    <aside class="sidebar" id="sidebar" aria-label="Page contents">
+      <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
+      <div class="toc-divider"></div>
+      <span class="toc-label">On this page</span>
+      <ul class="toc-list">
+        ${sidebarLinks.map(l => `<li><a href="#${l.id}">${escapeHtml(l.label)}</a></li>`).join('\n        ')}
+      </ul>
+    </aside>`;
+
+  const sections = [];
+  sections.push(`
+    <header class="topic-hero">
+      <span class="topic-hero-eyebrow" data-cat="safety">Safety</span>
+      <h1 class="topic-hero-title">${escapeHtml(fm.title || slug)}</h1>
+      ${fm.desc ? `<p class="topic-hero-desc">${escapeHtml(fm.desc)}</p>` : ''}
+    </header>`);
+
+  sections.push(`
+    <span class="section-anchor" id="about"></span>
+    <div class="section-head"><h2>Reference</h2></div>
+    <div class="scholar">${prosifyWithHeadingAnchors(fm.about || fm.desc || '')}</div>`);
+
+  if (referencedBy.length) {
+    const cards = referencedBy.map(r => `
+        <a class="rl-card" href="${escapeHtml(relPath(`pages/${category}/${slug}.html`, r.path))}" data-category="${escapeHtml(r.category || 'recipes')}">
+          <span class="rl-card-title">${escapeHtml(r.title)}</span>
+          ${r.desc ? `<span class="rl-card-why">${escapeHtml(r.desc.slice(0, 120))}</span>` : ''}
+        </a>`).join('');
+    sections.push(`
+    <span class="section-anchor" id="referenced-by"></span>
+    <div class="section-head"><h2>Referenced by</h2></div>
+    <div class="rl-cards">${cards}
+    </div>`);
+  }
+
+  return `
+<div class="shell">
+  ${sidebar}
+  <main class="main" id="main-content">
+    ${sections.join('\n\n    ')}
+  </main>
+</div>`;
+}
+
+/**
+ * Render the inline Safety callout block injected into recipe and technique
+ * pages whose frontmatter declares safety_notes[]. Each note's `ref` is a
+ * `safety/<slug>#<anchor>` string; we resolve the slug into a real page link
+ * and pass the anchor through.
+ */
+export function renderSafetyNotes(fm, currentPath) {
+  const notes = fm.safety_notes || [];
+  if (!notes.length) return '';
+
+  const items = notes.map(n => {
+    if (!n || !n.ref) return '';
+    // Split "safety/meat-doneness#poultry" → ["safety/meat-doneness", "poultry"]
+    const [refSlug, anchor] = String(n.ref).split('#');
+    const targetPath = refSlug.startsWith('safety/')
+      ? `pages/${refSlug}.html`
+      : `pages/safety/${refSlug}.html`;
+    const href = relPath(currentPath, targetPath) + (anchor ? `#${anchor}` : '');
+    return `
+        <li class="safety-item">
+          <span class="safety-item-for">${escapeHtml(n.for || '')}</span>
+          ${n.why ? `<span class="safety-item-why">${escapeHtml(n.why)}</span>` : ''}
+          <a class="safety-item-link" href="${escapeHtml(href)}">Reference →</a>
+        </li>`;
+  }).filter(Boolean).join('');
+
+  if (!items) return '';
+
+  // 16x16 shield icon — same line-art family as the safety category icon.
+  const icon = `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 16.5 16.5 20 12 21 C7.5 20 4 16.5 4 12 V6 Z"/><path d="M9 12 l2 2 4-4"/></svg>`;
+
+  return `
+    <span class="section-anchor" id="safety"></span>
+    <aside class="safety-callout" aria-labelledby="safety-callout-head">
+      <span class="safety-callout-head" id="safety-callout-head">
+        <span class="safety-callout-icon">${icon}</span>
+        <span>Safety</span>
+      </span>
+      <ul class="safety-list">${items}
+      </ul>
+    </aside>`;
 }
 
 export function renderHubBody(fm, slug, category, entriesByPath) {

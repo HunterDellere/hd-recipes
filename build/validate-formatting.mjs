@@ -59,8 +59,9 @@ for (const pageFull of walkPages(PAGES)) {
   if (fm.status !== 'complete') continue;
 
   // Em-dash style cap. Family/explore index pages are rendered shells, not
-  // editorial prose, so they're exempt.
-  if (fm.type !== 'family') {
+  // editorial prose; safety pages are clinical reference material with
+  // structurally em-dash-heavy lists. Both exempt.
+  if (fm.type !== 'family' && fm.type !== 'safety') {
     const emdashes = countEmdashesOutsideCodeFences(rawMd);
     if (emdashes > MAX_EMDASH) {
       emit('ERROR', contentRel, `${emdashes} em-dashes — limit is ${MAX_EMDASH}`, {

@@ -9,6 +9,14 @@ metaDesc: 'Velveting: the Cantonese baking-soda-and-cornstarch treatment for lea
 tags: ['umami', 'chicken']
 updated: '2026-05-05'
 
+safety_notes:
+  - for: 'Pulling chicken breast at 145°F internal in a 190°F wet medium'
+    ref: 'safety/meat-doneness#poultry'
+    why: 'Thin slices (4-5 mm) held in a 190°F medium for 4 minutes spend well over 2:48 above 150°F at every cross-section, clearing FSIS Appendix A pasteurization equivalency for poultry.'
+  - for: 'Velveted lean beef and pork tenderloin at 145°F internal'
+    ref: 'safety/meat-doneness#pork-whole-muscle'
+    why: '145°F + 3-min equivalent rest is published-safe for whole-muscle pork (USDA 2011) and well within whole-muscle beef equivalency (FSIS Appendix A 6.5-log Salmonella reduction at 145°F held 4 minutes).'
+
 about: |
   Velveting is the canonical Cantonese pretreatment for lean, low-collagen proteins that are about to be cooked briefly in a hot wet medium. The technique solves a single problem: muscle fibers in cuts like chicken breast, pork tenderloin, lean beef, and shrimp contract hard above ~155F (68C), squeezing water out of the cell matrix. With no collagen to gelatinize and little intramuscular fat to lubricate, the result reads chalky and stringy in seconds. Velveting buys the cook a wider thermal window and a softer, plusher mouthfeel at the same internal temperature.
 

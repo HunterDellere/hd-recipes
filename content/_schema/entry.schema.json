@@ -6,11 +6,11 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["recipe", "ingredient", "technique", "cuisine", "equipment", "hub", "family"]
+      "enum": ["recipe", "ingredient", "technique", "cuisine", "equipment", "hub", "family", "safety"]
     },
     "category": {
       "type": "string",
-      "enum": ["recipes", "ingredients", "techniques", "cuisines", "equipment", "hubs", "explore"]
+      "enum": ["recipes", "ingredients", "techniques", "cuisines", "equipment", "hubs", "explore", "safety"]
     },
     "family": {
       "type": "string",
@@ -165,6 +165,19 @@
       "type": "array",
       "description": "Store-bought ingredients for which there is no reasonable homemade version (e.g. canned coconut milk, kosher salt, fish sauce). Strings here suppress the validate-formatting homemade-alternatives warning for the matching ingredient. Use sparingly — most pantry items DO have a worthwhile homemade form.",
       "items": { "type": "string" }
+    },
+    "safety_notes": {
+      "type": "array",
+      "description": "Annotations on a recipe or technique that flag a temperature, time, or handling call that sits at or below USDA published-safe targets (or otherwise carries a non-obvious safety dimension). Each entry points at a section in content/safety/ that explains the reasoning. The build renders these as a Safety callout block; the validate-safety validator surfaces flagged temperatures that are missing a safety_notes entry.",
+      "items": {
+        "type": "object",
+        "required": ["for", "ref"],
+        "properties": {
+          "for": { "type": "string", "description": "What the note covers as the recipe or technique states it. e.g. 'pulling chicken at 145°F', 'raw yolk in carbonara', '2-day fridge holding for tea eggs'." },
+          "ref": { "type": "string", "description": "Slug-with-anchor pointing into content/safety/. e.g. 'safety/meat-doneness#poultry', 'safety/egg-doneness#runny-yolk'." },
+          "why": { "type": "string", "description": "One sentence on why this call is safe (or what extra care it demands). The line shown to readers." }
+        }
+      }
     },
     "hero_image": { "type": "string", "description": "Optional override of the hero image filename. Default convention: content/images/recipes/<slug>/hero.jpg auto-detected." },
     "seasonality": { "type": "string" },

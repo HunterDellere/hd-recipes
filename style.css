@@ -21,6 +21,7 @@
   --cat-cuisines:    #3a5a8a;
   --cat-equipment:   #5a4a3a;
   --cat-hubs:        #6b3a78;
+  --cat-safety:      #7a3a3a;
 
   --font-serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -1100,6 +1101,7 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 .pair-card[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
 .pair-card[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
 .pair-card[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
+.pair-card[data-category="safety"]      { border-left-color: var(--cat-safety); }
 .pair-head {
   display: inline-flex; align-items: center; gap: .35rem;
   font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600;
@@ -1114,6 +1116,7 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 .pair-card[data-category="cuisines"]    .pair-head { color: var(--cat-cuisines); }
 .pair-card[data-category="equipment"]   .pair-head { color: var(--cat-equipment); }
 .pair-card[data-category="hubs"]        .pair-head { color: var(--cat-hubs); }
+.pair-card[data-category="safety"]      .pair-head { color: var(--cat-safety); }
 .pair-cat { display: inline-block; }
 .pair-title {
   font-family: var(--font-serif); font-weight: 700; font-size: 16px;
@@ -2768,3 +2771,41 @@ body.lb-locked { overflow: hidden; }
   .lb-close { top: .5rem; right: .5rem; }
 }
 @media print { .lb-overlay { display: none !important; } }
+
+/* ── Safety callouts ─────────────────────────────────────────────────
+   Rendered on recipe and technique pages whose safety_notes[] flags a
+   temperature, time, or handling call. Each entry is a labelled link
+   into a content/safety/ reference. Visually distinct but quiet — the
+   goal is "verifiable footnote," not "warning banner." */
+.safety-callout {
+  margin: 1rem 0;
+  padding: .85rem 1rem;
+  border-left: 3px solid var(--cat-safety);
+  background: color-mix(in oklab, var(--cat-safety) 5%, transparent);
+  border-radius: 4px;
+  font-size: var(--t-small);
+}
+.safety-callout-head {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600;
+  text-transform: uppercase; letter-spacing: var(--ls-eyebrow);
+  color: var(--cat-safety);
+  margin-bottom: .4rem;
+}
+.safety-callout-icon { display: inline-flex; }
+.safety-callout-icon svg { display: block; }
+.safety-list { margin: 0; padding: 0; list-style: none; display: grid; gap: .5rem; }
+.safety-item { display: grid; gap: .15rem; }
+.safety-item-for { font-weight: 600; color: var(--ink); }
+.safety-item-why { color: var(--ink-soft); line-height: 1.45; }
+.safety-item-link {
+  display: inline-block; margin-top: .15rem;
+  font-family: var(--font-mono); font-size: var(--t-tiny);
+  color: var(--cat-safety); text-decoration: none;
+  border-bottom: 1px dotted var(--cat-safety);
+}
+.safety-item-link:hover { border-bottom-style: solid; }
+
+/* Match the topic-hero eyebrow color and link decoration on safety pages. */
+.topic-hero-eyebrow[data-cat="safety"] { color: var(--cat-safety); }
+a[href*="/pages/safety/"] { color: var(--cat-safety); border-bottom: 1px dotted var(--cat-safety); }

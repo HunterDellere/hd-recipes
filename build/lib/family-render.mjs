@@ -32,7 +32,7 @@ const ROOT = join(__dirname, '..', '..');
 export const FAMILY_MEMBERS = {
   cook:     ['recipes'],
   pantry:   ['ingredients', 'equipment'],
-  learn:    ['techniques'],
+  learn:    ['techniques', 'safety'],
   traverse: ['cuisines', 'hubs'],
   explore:  [],
 };
@@ -68,6 +68,7 @@ const CATEGORY_ICONS = {
   equipment:   `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13 h12 a1 1 0 0 1 1 1 v3 a3 3 0 0 1 -3 3 H7 a3 3 0 0 1 -3 -3 z"/><path d="M17 14 h2 a2 2 0 0 1 0 4 h-2"/><path d="M8 9 v-2"/><path d="M12 9 v-3"/></svg>`,
   hubs:        `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5 h10 a2 2 0 0 1 2 2 v12 a2 2 0 0 1 -2 2 H6 a2 2 0 0 1 -2 -2 z"/><path d="M8 3 v4"/><path d="M12 3 v4"/><line x1="7" y1="11" x2="13" y2="11"/><line x1="7" y1="14" x2="13" y2="14"/></svg>`,
   tags:        `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 V4 a1 1 0 0 1 1 -1 h8 l9 9 -9 9 z"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor"/></svg>`,
+  safety:      `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 16.5 16.5 20 12 21 C7.5 20 4 16.5 4 12 V6 Z"/><path d="M9 12 l2 2 4-4"/></svg>`,
 };
 export function categoryIcon(catKey) { return CATEGORY_ICONS[catKey] || ''; }
 
