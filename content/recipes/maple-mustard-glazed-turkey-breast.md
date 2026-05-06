@@ -20,6 +20,11 @@ difficulty: 'medium'
 cuisine: 'American'
 course: 'dinner'
 
+safety_notes:
+  - for: 'Pulling turkey breast at 160°F before glaze, finishing to 165°F via carryover after rest'
+    ref: 'safety/meat-doneness#poultry'
+    why: 'A 20-minute rest under foil drives carryover from 160°F into the published-safe 165°F window for poultry. Cutting before the rest leaves the breast both juicier-on-the-board and short of the kill target.'
+
 ingredients:
   - group: 'Turkey + dry brine'
     item: 'bone-in turkey breast, skin-on'

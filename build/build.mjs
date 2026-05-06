@@ -26,6 +26,7 @@ import { renderOgSvg, categoryFaviconDataUri } from './lib/og.mjs';
 import {
   renderRecipeBody, renderIngredientBody, renderTechniqueBody, renderHubBody,
   renderEquipmentBody, renderCuisineBody, renderTagBody,
+  renderSafetyBody, renderSafetyNotes,
 } from './lib/recipe-render.mjs';
 import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
@@ -44,6 +45,7 @@ const SITE_NAME = 'hd · recipes';
 const CATEGORY_LABELS = {
   recipes: 'Recipes', ingredients: 'Ingredients', techniques: 'Techniques',
   cuisines: 'Cuisines', equipment: 'Equipment', hubs: 'Collections',
+  safety: 'Safety',
 };
 
 function escapeHtml(s) {
@@ -314,6 +316,22 @@ const relations = buildRelations(entries);
 const adjacency = buildAdjacency(entries);
 const usdaCache = loadCache(ROOT);
 
+// safety_slug → entries that reference it via safety_notes[].ref. Used to
+// render the "Referenced by" section on each safety page so readers can
+// see which recipes and techniques rely on the published-safe call.
+const safetyReferencedBy = new Map(); // slug (without "safety/" prefix) → [entry]
+for (const e of entries) {
+  const notes = e._fm && e._fm.safety_notes;
+  if (!Array.isArray(notes)) continue;
+  for (const n of notes) {
+    if (!n || !n.ref) continue;
+    const refSlug = String(n.ref).split('#')[0].replace(/^safety\//, '');
+    if (!safetyReferencedBy.has(refSlug)) safetyReferencedBy.set(refSlug, []);
+    const list = safetyReferencedBy.get(refSlug);
+    if (!list.find(x => x.path === e.path)) list.push(e);
+  }
+}
+
 // Cuisine → recipes index (for renderCuisineBody fallback). Cuisines with
 // authored bodies bypass this; this only matters for cuisine entries that
 // land with frontmatter only and need an auto-rendered Recipes section.
@@ -376,6 +394,9 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
         augmentedBody = renderCuisineBody(fm, slug, category, { recipes });
       } else if (fm.type === 'hub') {
         augmentedBody = renderHubBody(fm, slug, category, entriesByPath);
+      } else if (fm.type === 'safety') {
+        const referencedBy = safetyReferencedBy.get(slug) || [];
+        augmentedBody = renderSafetyBody(fm, slug, category, { referencedBy });
       } else {
         augmentedBody = `<div class="shell"><main class="main" id="main-content"><header class="topic-hero"><h1 class="topic-hero-title">${escapeHtml(fm.title || slug)}</h1></header></main></div>`;
       }

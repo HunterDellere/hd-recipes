@@ -9,9 +9,9 @@
     "build:admin": "node build/build-admin.mjs",
     "test:admin": "node build/test-admin.mjs",
     "refresh:nutrition": "node scripts/refresh-nutrition.mjs",
-    "check": "node build/check.mjs --emit-findings && node build/validate-formatting.mjs && node build/test-admin.mjs",
+    "check": "node build/check.mjs --emit-findings && node build/validate-formatting.mjs && node build/validate-safety.mjs && node build/test-admin.mjs",
     "verify": "npm run validate && npm run build && npm run check",
-    "validate:all": "node build/validate.mjs --emit-findings && node build/validate-relations.mjs && node build/validate-search.mjs && node build/validate-formatting.mjs",
+    "validate:all": "node build/validate.mjs --emit-findings && node build/validate-relations.mjs && node build/validate-search.mjs && node build/validate-formatting.mjs && node build/validate-safety.mjs",
     "draft": "node build/draft.mjs",
     "watch": "node build/watch.mjs"
   },

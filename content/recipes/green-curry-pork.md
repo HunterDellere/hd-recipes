@@ -25,6 +25,14 @@ source:
   url: ''
   note: 'Augments store-bought paste rather than pounding from scratch; doubles the coconut milk to extend the lipid phase for the eggplant braise.'
 
+safety_notes:
+  - for: 'Pulling pork tenderloin at 145°F internal'
+    ref: 'safety/meat-doneness#pork-whole-muscle'
+    why: 'USDA revised whole-muscle pork to 145°F + 3-min rest in 2011; the curry simmer at 190°F provides ample equivalency time. Trichinella in commercial pork is now vanishingly rare and is killed at 137°F regardless.'
+  - for: 'Chicken-breast modification velveted to 145°F'
+    ref: 'safety/meat-doneness#poultry'
+    why: 'Thin slices held in a 190°F medium clear USDA pasteurization equivalency (>2:48 above 150°F), per FSIS Appendix A.'
+
 ingredients:
   # Buying unit: two 400 ml cans of full-fat coconut milk. Inherits density
   # 1.00 g/ml and pack size 13.5 oz / 400 ml from the ingredient page. The

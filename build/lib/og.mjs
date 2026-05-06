@@ -9,6 +9,7 @@ const CATEGORY_META = {
   cuisines:    { glyph: '🌍', color: '#3a5a8a', label: 'Cuisine' },
   equipment:   { glyph: '🪓', color: '#5a4a3a', label: 'Equipment' },
   hubs:        { glyph: '📚', color: '#6b3a78', label: 'Collection' },
+  safety:      { glyph: '🛡', color: '#7a3a3a', label: 'Safety' },
 };
 
 function escXml(s) {
