@@ -79,7 +79,7 @@
     <div class="fam-intro">
       <p class="fam-intro-text">Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.</p>
       <div class="fam-stats" role="navigation" aria-label="Jump to category"><a class="fam-stat" href="#cat-recipes" data-category="recipes">
-        <span class="fam-stat-num">26</span>
+        <span class="fam-stat-num">27</span>
         <span class="fam-stat-label">Recipes</span>
       </a></div>
     </div>
@@ -117,6 +117,10 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Japanese" data-filter-cuisine="Japanese">
               <span class="filter-opt-label">Japanese</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Jordanian" data-filter-cuisine="Jordanian">
+              <span class="filter-opt-label">Jordanian</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Thai" data-filter-cuisine="Thai">
@@ -222,12 +226,24 @@
               <span class="filter-opt-label">egg</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="fermentation" data-filter-tag="fermentation">
+              <span class="filter-opt-label">fermentation</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="grain" data-filter-tag="grain">
               <span class="filter-opt-label">grain</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="holiday" data-filter-tag="holiday">
               <span class="filter-opt-label">holiday</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="lamb" data-filter-tag="lamb">
+              <span class="filter-opt-label">lamb</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="levantine" data-filter-tag="levantine">
+              <span class="filter-opt-label">levantine</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="make-ahead" data-filter-tag="make-ahead">
@@ -256,6 +272,10 @@
             <label class="filter-opt">
               <input type="checkbox" value="potato" data-filter-tag="potato">
               <span class="filter-opt-label">potato</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="rice" data-filter-tag="rice">
+              <span class="filter-opt-label">rice</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="roast" data-filter-tag="roast">
@@ -374,7 +394,7 @@
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">
         <h2 class="fam-cat-title">Recipes</h2>
-        <span class="fam-cat-count">26 entries</span>
+        <span class="fam-cat-count">27 entries</span>
       </div>
       <p class="fam-cat-blurb">Tested dishes — scale, shop, cook.</p>
       <div class="card-grid" data-grid>
@@ -474,6 +494,13 @@
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>25 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/mansaf.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Jordanian" data-course="dinner" data-diet="" data-difficulty="hard" data-time="90" data-tags="weekend-project|lamb|levantine|braise|comfort|umami|rice|fermentation">
+          <span class="ec-cat">recipes</span><span class="ec-title">Mansaf</span><span class="ec-desc">Bone-in lamb shoulder simmered for hours, then bathed in a sauce built from reconstituted jameed (fermented dr</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Jordanian</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h 30 min</strong> active</span><span class="ec-time-annot">+ 3 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-hard">hard</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/maple-mustard-glazed-turkey-breast.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="dinner" data-diet="" data-difficulty="medium" data-time="30" data-tags="turkey|roast|holiday|american|weekend-project">
