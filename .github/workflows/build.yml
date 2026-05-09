@@ -88,6 +88,13 @@ jobs:
           # the PR merges, and a fast squash-merge can race the build job's
           # checkout step (see PRs #12 and #13).
           ref: ${{ github.event_name == 'pull_request' && github.sha || github.ref }}
+          # Full history is required for "Recently added" — build.mjs reads
+          # `git log --diff-filter=AR` over content/ to derive each entry's
+          # first-add date. The default shallow clone (fetch-depth: 1) collapses
+          # every file's add-date to the latest commit, which combined with the
+          # 3/day cap produces a recent.json with only 3 entries dated today.
+          # Do not change without updating addedDateFor() in build/build.mjs.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
