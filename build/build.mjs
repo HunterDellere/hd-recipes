@@ -242,6 +242,21 @@ const addedByContentPath = (() => {
   return map;
 })();
 
+// Guardrail: a shallow clone (fetch-depth: 1 in CI) collapses every file's
+// "added" date to the latest commit, which combined with the per-day cap in
+// recent.json silently truncates "Recently added" to ~3 entries. This has
+// regressed twice. Detect it and fail loudly rather than ship a broken section.
+{
+  const isShallow = spawnSync('git', ['-C', ROOT, 'rev-parse', '--is-shallow-repository'], { encoding: 'utf8' });
+  if (isShallow.status === 0 && isShallow.stdout.trim() === 'true') {
+    console.error('\n✗ Refusing to build: git repository is a shallow clone.');
+    console.error('  "Recently added" derives each entry\'s date from `git log --diff-filter=AR`,');
+    console.error('  which silently collapses to a single date under shallow clones.');
+    console.error('  Fix: actions/checkout with `fetch-depth: 0`, or `git fetch --unshallow` locally.\n');
+    process.exit(1);
+  }
+}
+
 function addedDateFor(filePath) {
   const key = relative(ROOT, filePath).split('\\').join('/');
   const fromGit = addedByContentPath.get(key);
