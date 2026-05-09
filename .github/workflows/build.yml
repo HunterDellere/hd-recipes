@@ -82,7 +82,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
+          # On push, follow the ref so we pick up any nutrition cache commit
+          # the nutrition job just pushed back. On pull_request, pin to the
+          # immutable merge SHA — `refs/pull/N/merge` is deleted the moment
+          # the PR merges, and a fast squash-merge can race the build job's
+          # checkout step (see PRs #12 and #13).
+          ref: ${{ github.event_name == 'pull_request' && github.sha || github.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
