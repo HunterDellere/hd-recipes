@@ -284,6 +284,97 @@
 
 /* card-grid + entry-card live in style.css now (used on family pages too) */
 
+/* ── recent-by-family tabs ───────────────────────────── */
+/* Horizontal pill-tab strip above the Recently-added grid. Lets a reader
+   filter to a single family (recipes, ingredients, techniques, etc.) without
+   leaving the homepage. Visual language echoes home-search-tab — same
+   accent-soft active state — so the two filtered surfaces feel related. */
+.recent-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin: 0 0 1.25rem;
+  /* On narrow screens, allow horizontal scroll instead of awkward wrap-to-multi-row */
+  scrollbar-width: thin;
+}
+.recent-tab {
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+  display: inline-flex; align-items: center; gap: .4rem;
+  transition: background var(--d-fast) var(--ease-out),
+              color var(--d-fast) var(--ease-out),
+              border-color var(--d-fast) var(--ease-out),
+              transform var(--d-fast) var(--ease-out);
+  white-space: nowrap;
+}
+.recent-tab:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent-soft);
+}
+.recent-tab.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.recent-tab:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  border-color: var(--accent);
+}
+.rt-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-faint);
+  background: var(--bg-elev);
+  padding: 1px 7px;
+  border-radius: 999px;
+  line-height: 1.5;
+  border: 1px solid var(--rule);
+  transition: color var(--d-fast) var(--ease-out),
+              background var(--d-fast) var(--ease-out),
+              border-color var(--d-fast) var(--ease-out);
+}
+.recent-tab:hover .rt-count,
+.recent-tab.active .rt-count {
+  color: var(--accent);
+  background: var(--bg);
+  border-color: var(--accent-soft);
+}
+
+/* Smooth fade between tab content swaps. The 120ms hold matches the JS
+   timeout that swaps the innerHTML — combined the swap reads as a quick
+   crossfade rather than a jarring snap. */
+#recent-list {
+  transition: opacity var(--d-fast) var(--ease-out);
+}
+#recent-list.recent-list-fading {
+  opacity: 0;
+}
+
+/* On narrow screens, the tab strip can grow past container width with all
+   8 family options. Allow horizontal scroll with snap so each tab snaps
+   into view rather than scrolling halfway. */
+@media (max-width: 640px) {
+  .recent-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    /* Subtle gradient fade at the right edge to hint at scrollability */
+    -webkit-mask-image: linear-gradient(to right, black 90%, transparent);
+            mask-image: linear-gradient(to right, black 90%, transparent);
+    padding-right: 1rem;
+    margin-right: -1rem;
+  }
+  .recent-tab { scroll-snap-align: start; flex-shrink: 0; }
+}
+
 /* ── families grid (homepage + explore index) ────────── */
 /* Families grid — explicit breakpoints to avoid orphan cards (3 + 1 row).
    With 4 family cards we want: 1 col on phones, 2 col on tablets and mid

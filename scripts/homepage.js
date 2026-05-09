@@ -160,13 +160,12 @@
       featuredEl.innerHTML = `<p class="empty">No recipes yet.</p>`;
     }
 
-    // Recent
-    const recentEl = $('#recent-list');
-    if (recent.length) {
-      recentEl.innerHTML = recent.slice(0, 16).map(entryCard).join('');
-    } else {
-      recentEl.innerHTML = `<p class="empty">No entries yet.</p>`;
-    }
+    // Recent — grouped by family (type), 8 most recent per family with tab switcher.
+    // The "All" tab uses recent.json (build-side per-day cap of 4 prevents one
+    // big content drop from dominating). Family tabs derive from entries.json
+    // directly so each family gets its own independent top-8 by added date,
+    // unfiltered by the per-day cap.
+    renderRecentByFamily(entries, recent);
 
     // Family counts — Cook / Pantry / Learn / Traverse
     const cookCount     = entries.filter(e => e.status === 'complete' && e.category === 'recipes').length;
@@ -218,6 +217,112 @@
       for (let j = 0; j <= lb; j++) row[j] = next[j];
     }
     return row[lb];
+  }
+
+  // ── Recent-by-family tabbed grid ──────────────────────────
+  // Type → display label + plural noun. Order here is the tab display order.
+  const RECENT_FAMILIES = [
+    { type: 'all',        label: 'All',         noun: 'entries' },
+    { type: 'recipe',     label: 'Recipes',     noun: 'recipes' },
+    { type: 'ingredient', label: 'Ingredients', noun: 'ingredients' },
+    { type: 'technique',  label: 'Techniques',  noun: 'techniques' },
+    { type: 'hub',        label: 'Hubs',        noun: 'hubs' },
+    { type: 'cuisine',    label: 'Cuisines',    noun: 'cuisines' },
+    { type: 'equipment',  label: 'Equipment',   noun: 'equipment' },
+    { type: 'safety',     label: 'Safety',      noun: 'safety' },
+  ];
+
+  // How many to show in each panel. "All" gets 16 (the existing default);
+  // each family gets 8 of its own most recent.
+  const RECENT_LIMIT_ALL = 16;
+  const RECENT_LIMIT_FAMILY = 8;
+
+  function sortByAddedDesc(a, b) {
+    // b.added vs a.added — newest first; tie-break by title for determinism
+    if (b.added !== a.added) return (b.added || '').localeCompare(a.added || '');
+    return (a.title || '').localeCompare(b.title || '');
+  }
+
+  function renderRecentByFamily(entries, recent) {
+    const tabsEl = $('#recent-tabs');
+    const listEl = $('#recent-list');
+    if (!tabsEl || !listEl) return;
+
+    // Filter: only complete entries with an `added` date. Exclude `family`
+    // type — those are nav buckets (Cook/Pantry/Learn/Traverse), not content.
+    const eligible = entries.filter(e =>
+      e.status === 'complete' &&
+      e.added &&
+      e.type !== 'family'
+    ).sort(sortByAddedDesc);
+
+    if (!eligible.length) {
+      listEl.innerHTML = `<p class="empty">No entries yet.</p>`;
+      return;
+    }
+
+    // The "all" bucket uses the build's curated recent.json (which applies a
+    // per-day cap so one big content drop doesn't crowd out older entries).
+    // Family buckets derive from entries.json directly — each family is its
+    // own race and doesn't need the per-day cap.
+    const byType = { all: (recent || []).filter(e => e.status === 'complete' && e.added) };
+    for (const e of eligible) {
+      (byType[e.type] = byType[e.type] || []).push(e);
+    }
+
+    // Build tab buttons. Hide tabs with no entries (other than the always-on All).
+    const visibleFamilies = RECENT_FAMILIES.filter(f =>
+      f.type === 'all' || (byType[f.type] && byType[f.type].length > 0)
+    );
+
+    tabsEl.innerHTML = visibleFamilies.map((f, i) => {
+      const items = byType[f.type] || [];
+      const limit = f.type === 'all' ? RECENT_LIMIT_ALL : RECENT_LIMIT_FAMILY;
+      const shown = Math.min(items.length, limit);
+      return `
+        <button
+          type="button"
+          class="recent-tab${i === 0 ? ' active' : ''}"
+          role="tab"
+          aria-selected="${i === 0 ? 'true' : 'false'}"
+          data-family="${escapeHtml(f.type)}"
+        >
+          ${escapeHtml(f.label)}<span class="rt-count">${shown}</span>
+        </button>`;
+    }).join('');
+
+    function paint(family) {
+      const items = byType[family] || [];
+      const limit = family === 'all' ? RECENT_LIMIT_ALL : RECENT_LIMIT_FAMILY;
+      const shown = items.slice(0, limit);
+      listEl.classList.add('recent-list-fading');
+      // Tiny fade transition on swap so the change reads as deliberate
+      // rather than instant. ~120ms feels right against the existing 140ms
+      // home-search transitions.
+      setTimeout(() => {
+        listEl.innerHTML = shown.length
+          ? shown.map(entryCard).join('')
+          : `<p class="empty">No ${family === 'all' ? 'entries' : family + ' entries'} yet.</p>`;
+        listEl.classList.remove('recent-list-fading');
+      }, 120);
+    }
+
+    // Tab click handler — single delegate
+    tabsEl.addEventListener('click', (event) => {
+      const btn = event.target.closest('.recent-tab');
+      if (!btn) return;
+      const family = btn.dataset.family;
+      // Update active state
+      tabsEl.querySelectorAll('.recent-tab').forEach(t => {
+        const isActive = t === btn;
+        t.classList.toggle('active', isActive);
+        t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+      paint(family);
+    });
+
+    // Initial paint
+    paint('all');
   }
 
   async function initSearch(entries) {
