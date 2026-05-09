@@ -308,368 +308,6 @@
     }
   },
   {
-    "path": "pages/recipes/cured-egg-yolk.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Cured egg yolk (salt-sugar dry cure)",
-    "desc": "Raw yolks buried in a 70:30 salt-sugar bed for a week, rinsed, then dried in a low oven or dehydrator until they grate like a hard cheese. Translucent, deep amber, dense umami concentrate.",
-    "tags": [
-      "egg",
-      "pantry",
-      "umami",
-      "fermentation",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "cured-egg-yolk",
-    "cuisine": "",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 12,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 720,
-      "total_min": 13440,
-      "active_min": 30
-    },
-    "updated": "2026-05-08",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "whole black peppercorns, optional aromatic",
-        "slug": "black-pepper",
-        "optional": true
-      },
-      {
-        "item": "star anise, optional aromatic",
-        "slug": "star-anise",
-        "optional": true
-      },
-      {
-        "item": "fresh large eggs (the freshest you can buy)",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "cheesecloth or fine muslin",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "dry-brining"
-    ],
-    "equipment": [
-      "fine-mesh-sieve",
-      "microplane",
-      "wire-rack"
-    ],
-    "added": "2026-05-08",
-    "_card": {
-      "totalMinutes": 13440,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 9 d rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/ginger-scallion-oil.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ginger-scallion oil (薑蔥油, geung chung yau)",
-    "desc": "Cantonese aromatic finishing oil. Minced ginger and scallion shocked with smoking-hot neutral oil into a paste that perfumes plain rice, congee, poached chicken, steamed fish, and noodles.",
-    "tags": [
-      "sauce",
-      "aromatic",
-      "chinese",
-      "pantry",
-      "make-ahead",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "ginger-scallion-oil",
-    "cuisine": "Chinese",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 16,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 5,
-      "total_min": 20,
-      "active_min": 20
-    },
-    "updated": "2026-05-08",
-    "diet": [
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh ginger",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "scallions",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": true
-      },
-      {
-        "item": "neutral oil (peanut, rice bran, or canola)",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "rice vinegar, optional acid",
-        "slug": "rice-vinegar",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "blooming-aromatics",
-      "dry-brining"
-    ],
-    "equipment": [
-      "heavy-saucepan",
-      "heatproof-bowl"
-    ],
-    "added": "2026-05-08",
-    "_card": {
-      "totalMinutes": 20,
-      "diffLabel": "easy",
-      "timeLead": "20 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/pork-century-egg-congee.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Pork and century egg congee (皮蛋瘦肉粥)",
-    "desc": "The canonical Cantonese savory congee. Bone-in pork shoulder simmered into the rice provides its own stock; cured pidan goes in twice, half during the simmer to bloom into the broth and half at the bowl for the textural contrast.",
-    "tags": [
-      "rice",
-      "pork",
-      "chinese",
-      "comfort",
-      "breakfast",
-      "one-pot",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "pork-century-egg-congee",
-    "cuisine": "Chinese",
-    "course": "breakfast",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 90,
-      "total_min": 110,
-      "active_min": 30
-    },
-    "updated": "2026-05-08",
-    "ingredients": [
-      {
-        "item": "jasmine rice",
-        "slug": "jasmine-rice",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (rice bran, peanut, or canola)",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "bone-in pork shoulder steak or country-style ribs",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "Shaoxing wine",
-        "slug": "shaoxing-wine",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "dried scallop (conpoy)",
-        "optional": true
-      },
-      {
-        "item": "century eggs (pidan)",
-        "slug": "century-egg",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "white pepper, freshly ground",
-        "slug": "white-pepper",
-        "optional": false
-      },
-      {
-        "item": "scallions, sliced thin on the bias",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "fresh cilantro leaves, optional",
-        "optional": true
-      },
-      {
-        "item": "rice vinegar, for the table acid",
-        "slug": "rice-vinegar",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dry-brining",
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "heavy-saucepan",
-      "spider",
-      "wooden-spoon"
-    ],
-    "added": "2026-05-08",
-    "_card": {
-      "totalMinutes": 110,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 1 h rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/ingredients/century-egg.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Century egg (皮蛋, pidan)",
-    "desc": "Duck (or chicken, quail) egg preserved by alkaline cure for weeks to months. Black-amber translucent white, dark green creamy yolk, sulfurous-savory aroma. The cure does the cooking.",
-    "tags": [
-      "egg",
-      "chinese",
-      "fermentation",
-      "umami",
-      "pickle"
-    ],
-    "status": "complete",
-    "_slug": "century-egg",
-    "updated": "2026-05-08",
-    "added": "2026-05-08",
-    "_card": {
-      "primaryTag": "egg",
-      "usedInCount": 1,
-      "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/ingredients/jasmine-rice.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Jasmine rice",
-    "desc": "Long-grain aromatic rice (Oryza sativa indica) from Thailand and adjacent regions. Floral, soft, slightly clingy, around 18% amylose.",
-    "tags": [
-      "rice",
-      "grain",
-      "pantry",
-      "thai",
-      "chinese"
-    ],
-    "status": "complete",
-    "_slug": "jasmine-rice",
-    "updated": "2026-05-08",
-    "added": "2026-05-08",
-    "_card": {
-      "primaryTag": "grain",
-      "usedInCount": 3,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/salted-duck-egg.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Salted duck egg (咸鸭蛋, xian ya dan)",
-    "desc": "Raw duck egg cured in salt brine for thirty to forty days. White stays mostly liquid and saline, yolk turns dense, deep orange-red, oil-bleeding, fudgy. A different ingredient from a century egg.",
-    "tags": [
-      "egg",
-      "chinese",
-      "fermentation",
-      "umami",
-      "pickle"
-    ],
-    "status": "complete",
-    "_slug": "salted-duck-egg",
-    "updated": "2026-05-08",
-    "added": "2026-05-08",
-    "_card": {
-      "primaryTag": "egg",
-      "usedInCount": 0,
-      "hasNutrition": false
-    }
-  },
-  {
     "path": "pages/recipes/mansaf.html",
     "type": "recipe",
     "category": "recipes",
@@ -856,6 +494,198 @@
       "primaryTag": "grain",
       "usedInCount": 1,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/techniques/velveting.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Velveting",
+    "desc": "Toss thin-sliced lean protein with salt, baking soda, and a cornstarch slurry, rest 20-30 minutes, then cook briefly in a hot wet medium. The pH shift and gel jacket keep the muscle tender at temperatures that would otherwise wreck it.",
+    "tags": [
+      "umami",
+      "chicken"
+    ],
+    "status": "complete",
+    "_slug": "velveting",
+    "updated": "2026-05-05",
+    "added": "2026-05-05",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/safety/cross-contamination-and-time.html",
+    "type": "safety",
+    "category": "safety",
+    "title": "Cross-Contamination and the Danger Zone",
+    "desc": "The 2-hour and 4-hour rules for food in the 40-140°F danger zone, board and tool separation, marinade reuse, leftover cooling, and reheat targets. The orthogonal axis to internal-temperature targets.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "cross-contamination-and-time",
+    "updated": "2026-05-05",
+    "added": "2026-05-05",
+    "_card": {}
+  },
+  {
+    "path": "pages/safety/egg-doneness.html",
+    "type": "safety",
+    "category": "safety",
+    "title": "Egg Doneness and Salmonella",
+    "desc": "Shell-egg pathogen risk math, when raw or partly cooked yolks are reasonable, and when to reach for pasteurized eggs. Covers carbonara, mayo, hollandaise, mousse, custards, and meringue.",
+    "tags": [
+      "egg"
+    ],
+    "status": "complete",
+    "_slug": "egg-doneness",
+    "updated": "2026-05-05",
+    "added": "2026-05-05",
+    "_card": {}
+  },
+  {
+    "path": "pages/recipes/classic-pancakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Classic pancakes",
+    "desc": "Whole milk soured with vinegar replaces buttermilk — the acid drives CO2 from baking soda and pushes pH high enough for rapid Maillard browning. The result is tall, tender stacks with a caramelized underside.",
+    "tags": [
+      "weeknight",
+      "american",
+      "comfort",
+      "egg",
+      "dairy",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "classic-pancakes",
+    "cuisine": "American",
+    "course": "breakfast",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 8,
+      "cook_min": 15,
+      "total_min": 23,
+      "active_min": 20
+    },
+    "updated": "2026-05-04",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "white vinegar",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large egg",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "acid-milk-sour"
+    ],
+    "equipment": [
+      "wide-skillet"
+    ],
+    "added": "2026-05-04",
+    "_card": {
+      "totalMinutes": 23,
+      "diffLabel": "easy",
+      "timeLead": "23 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/techniques/acid-milk-sour.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Acid-milk souring",
+    "desc": "Add a food acid (vinegar or lemon juice) to whole milk — casein micelles destabilize, viscosity rises, and the liquid is now functionally equivalent to buttermilk for leavening and batter behavior.",
+    "tags": [
+      "dairy",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "acid-milk-sour",
+    "updated": "2026-05-04",
+    "added": "2026-05-04",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/hubs/thai-kitchen.html",
+    "type": "hub",
+    "category": "hubs",
+    "title": "Thai kitchen",
+    "desc": "Build the paste from scratch, then cook with it. The aromatics are the same across both recipes — making the paste first makes the curry legible.",
+    "tags": [
+      "thai",
+      "spicy",
+      "aromatic",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "thai-kitchen",
+    "updated": "2026-05-04",
+    "added": "2026-05-04",
+    "_card": {
+      "memberCount": 2,
+      "memberMix": {
+        "recipes": 2
+      }
     }
   }
 ]

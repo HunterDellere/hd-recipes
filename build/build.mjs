@@ -562,13 +562,26 @@ writeFileSync(join(dataDir, 'search-index.json'), JSON.stringify(searchIndex), '
 // landed in the repo (git first-add date, mtime fallback) — *not* `updated`,
 // which advances on every edit and would resurface old entries after a small
 // fix. Recipes get priority on date ties — they're what people come here for.
+//
+// A single big drop (e.g. a new cuisine pulling in 9 entries on one day) used
+// to dominate the section so older recent additions never surfaced. Cap each
+// day to RECENT_PER_DAY_CAP entries before slicing — within a day, TYPE_RANK
+// keeps the most reader-facing entries (recipes, then techniques) at the top.
 const TYPE_RANK = { recipe: 0, technique: 1, hub: 2, cuisine: 3, ingredient: 4, equipment: 5, family: 6 };
+const RECENT_PER_DAY_CAP = 3;
+const perDayCount = new Map();
 const recent = entries
   .filter(e => e.status === 'complete' && e.added)
   .sort((a, b) => {
     const cmp = b.added.localeCompare(a.added);
     if (cmp !== 0) return cmp;
     return (TYPE_RANK[a.type] ?? 99) - (TYPE_RANK[b.type] ?? 99);
+  })
+  .filter(e => {
+    const n = perDayCount.get(e.added) || 0;
+    if (n >= RECENT_PER_DAY_CAP) return false;
+    perDayCount.set(e.added, n + 1);
+    return true;
   })
   .slice(0, 12);
 writeFileSync(join(dataDir, 'recent.json'), JSON.stringify(recent, null, 2), 'utf8');
