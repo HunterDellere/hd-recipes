@@ -1,5 +1,189 @@
 [
   {
+    "path": "pages/recipes/beef-broth.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Brown beef broth (fond brun de boeuf)",
+    "desc": "Beef bones roasted to deep mahogany, simmered with charred onions, carrot, celery, and tomato paste for a rich, dark, gelatin-heavy broth. The Western foundation under French braises, demi-glace, and onion soup. Modifications cover Vietnamese pho-style aromatics and Korean seolleongtang milky-broth technique.",
+    "tags": [
+      "beef",
+      "pantry",
+      "sauce",
+      "umami",
+      "make-ahead",
+      "weekend-project",
+      "freezer-friendly"
+    ],
+    "status": "complete",
+    "_slug": "beef-broth",
+    "cuisine": "French",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 540,
+      "total_min": 570,
+      "active_min": 40
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "beef bones (knuckle, marrow, neck, mix is best)",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "optional": false
+      },
+      {
+        "item": "yellow onions, halved (skin on)",
+        "optional": false
+      },
+      {
+        "item": "carrots, large chunks",
+        "optional": false
+      },
+      {
+        "item": "celery, large chunks",
+        "optional": false
+      },
+      {
+        "item": "garlic head, halved across (skin on)",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "red wine (dry)",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley stems (no leaves)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "dutch-oven"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 570,
+      "diffLabel": "medium",
+      "timeLead": "40 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/recipes/chicken-stock.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken stock",
+    "desc": "Cold-water start with chicken bones, slow-skim, no-boil 4-hour simmer with mirepoix and bay. Clear, deeply gelatinous, neutral enough to use across French sauce work, Italian risotti, Chinese soups, and Mexican caldos.",
+    "tags": [
+      "chicken",
+      "pantry",
+      "sauce",
+      "umami",
+      "make-ahead",
+      "weekend-project",
+      "freezer-friendly"
+    ],
+    "status": "complete",
+    "_slug": "chicken-stock",
+    "cuisine": "",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 240,
+      "total_min": 270,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "raw chicken bones (carcasses, backs, wings, necks)",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, halved (skin on)",
+        "optional": false
+      },
+      {
+        "item": "carrots, rough chunks",
+        "optional": false
+      },
+      {
+        "item": "celery, rough chunks",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley stems (no leaves)",
+        "optional": true
+      },
+      {
+        "item": "fresh thyme",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "dutch-oven"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 270,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "+ 4 h rest",
+      "timeMode": "active",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/recipes/individual-decadent-chocolate-cakes.html",
     "type": "recipe",
     "category": "recipes",
@@ -232,186 +416,6 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/pickled-mustard-greens.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Pickled mustard greens (suan cai, 酸菜)",
-    "desc": "Whole heads of mustard greens lacto-fermented in a 3% salt brine for seven to ten days into a sour, crunchy, deeply funky pickle. The Cantonese and Sichuan tables both reach for it.",
-    "tags": [
-      "vegetable",
-      "pantry",
-      "pickle",
-      "fermentation",
-      "chinese",
-      "umami",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "pickled-mustard-greens",
-    "cuisine": "Chinese",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 16,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 0,
-      "total_min": 14430,
-      "active_min": 30
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "vegetarian",
-      "vegan",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "Chinese mustard greens (gai choy / xue li hong / suan cai cabbage)",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "Sichuan peppercorns",
-        "slug": "sichuan-peppercorns",
-        "optional": true
-      },
-      {
-        "item": "fresh ginger, sliced",
-        "slug": "ginger",
-        "optional": true
-      },
-      {
-        "item": "dried Chinese chilies",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 14430,
-      "diffLabel": "easy",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 10 d rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/pork-floss.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Pork floss (rousong, 肉松)",
-    "desc": "Lean pork shoulder simmered tender with aromatics, shredded fine, then dry-fried in a wok with sugar and soy until the strands separate into a fluffy, dry, faintly sweet topping.",
-    "tags": [
-      "pork",
-      "pantry",
-      "chinese",
-      "umami",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "pork-floss",
-    "cuisine": "Chinese",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 30,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 195,
-      "total_min": 210,
-      "active_min": 75
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "pork shoulder, lean only (no skin, minimal fat)",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, smashed",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "scallion whites",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "Shaoxing wine",
-        "slug": "shaoxing-wine",
-        "optional": false
-      },
-      {
-        "item": "star anise",
-        "slug": "star-anise",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "dark soy sauce",
-        "slug": "dark-soy-sauce",
-        "optional": true
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "optional": false
-      },
-      {
-        "item": "white pepper, freshly ground",
-        "slug": "white-pepper",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "wok",
-      "wide-skillet"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 210,
-      "diffLabel": "medium",
-      "timeLead": "3 h 30 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 75,
-      "filterMinutes": 75
     }
   },
   {
@@ -1029,7 +1033,7 @@
     "updated": "2026-05-05",
     "added": "2026-05-05",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
