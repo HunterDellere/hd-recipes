@@ -34,10 +34,10 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <body>
 <h1>hd · recipes — admin</h1>
 <div class="bar">
-  <div class="stat"><span class="stat-num">134</span><span class="stat-label">Complete</span></div>
+  <div class="stat"><span class="stat-num">136</span><span class="stat-label">Complete</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Draft</span></div>
   <div class="stat"><span class="stat-num">2</span><span class="stat-label">Stub</span></div>
-  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">134</span><span class="stat-label">missing</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">136</span><span class="stat-label">missing</span></div>
   <div class="stat"><span class="stat-num">2</span><span class="stat-label">No nutrition</span></div>
 </div>
 
@@ -45,7 +45,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 
 <div class="filters">
   <input type="search" id="filter-q" placeholder="Filter title…" />
-  <select id="filter-cat"><option value="">All categories</option><option value="ingredients">ingredients</option><option value="recipes">recipes</option><option value="techniques">techniques</option><option value="safety">safety</option><option value="hubs">hubs</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
+  <select id="filter-cat"><option value="">All categories</option><option value="recipes">recipes</option><option value="techniques">techniques</option><option value="ingredients">ingredients</option><option value="safety">safety</option><option value="hubs">hubs</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
   <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
   <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
 </div>
@@ -53,6 +53,26 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <table id="entries-table">
   <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
   <tbody>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/individual-decadent-chocolate-cakes.html">Individual decadent chocolate cakes</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-09</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="techniques" data-type="technique">
+      <td><a href="../../pages/techniques/chocolate-butter-emulsion.html">Chocolate-butter emulsion</a></td>
+      <td>techniques</td>
+      <td>technique</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-09</td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
       <td><a href="../../pages/ingredients/century-egg.html">Century egg (皮蛋, pidan)</a></td>
       <td>ingredients</td>
@@ -91,7 +111,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-05-08</td>
       <td></td>
-      <td><span class="pill warn">2 FDC</span></td>
+      <td><span class="pill warn">1 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/chicken-ginger-congee.html">Chicken and ginger congee</a></td>
@@ -101,7 +121,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-05-08</td>
       <td></td>
-      <td><span class="pill warn">3 FDC</span></td>
+      <td><span class="pill warn">2 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/crispy-fried-shallots.html">Crispy fried shallots (and the shallot oil)</a></td>
@@ -141,7 +161,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td><span class="pill rv-missing">missing</span></td>
       <td>2026-05-08</td>
       <td></td>
-      <td><span class="pill warn">4 FDC</span></td>
+      <td><span class="pill warn">3 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
       <td><a href="../../pages/ingredients/basmati-rice.html">Basmati rice</a></td>
@@ -1415,7 +1435,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr></tbody>
 </table>
 
-<p class="gen">Generated 2026-05-08T15:41:52.851Z</p>
+<p class="gen">Generated 2026-05-09T05:12:21.944Z</p>
 
 <script>
 (function () {
