@@ -1,5 +1,138 @@
 [
   {
+    "path": "pages/recipes/individual-decadent-chocolate-cakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Individual decadent chocolate cakes",
+    "desc": "Two 4-inch chocolate cakes built on a chocolate-butter emulsion and bloomed Dutch cocoa, with brown sugar for moisture and a turbinado crackle top. No frosting: the cake itself is the payload.",
+    "tags": [
+      "cake",
+      "chocolate",
+      "dessert",
+      "weekend-project",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "individual-decadent-chocolate-cakes",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 26,
+      "total_min": 56,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "Dutch-process cocoa powder",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "hot brewed espresso (or strong coffee)",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate, chopped",
+        "slug": "dark-chocolate",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large eggs, room temp",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar, packed",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "vanilla extract",
+        "slug": "vanilla-extract",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "turbinado or demerara sugar",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-cocoa",
+      "chocolate-butter-emulsion"
+    ],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 56,
+      "diffLabel": "medium",
+      "timeLead": "56 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/techniques/chocolate-butter-emulsion.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Chocolate-butter emulsion",
+    "desc": "Melt chocolate and butter together into a single glossy mass before any egg, sugar, or flour. The cocoa butter and dairy fat fuse into one stable fat phase, which becomes the structural and flavor backbone of the bake.",
+    "tags": [
+      "chocolate",
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "chocolate-butter-emulsion",
+    "updated": "2026-05-09",
+    "added": "2026-05-09",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/recipes/cantonese-white-congee.html",
     "type": "recipe",
     "category": "recipes",
@@ -645,47 +778,6 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/techniques/acid-milk-sour.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Acid-milk souring",
-    "desc": "Add a food acid (vinegar or lemon juice) to whole milk — casein micelles destabilize, viscosity rises, and the liquid is now functionally equivalent to buttermilk for leavening and batter behavior.",
-    "tags": [
-      "dairy",
-      "acid"
-    ],
-    "status": "complete",
-    "_slug": "acid-milk-sour",
-    "updated": "2026-05-04",
-    "added": "2026-05-04",
-    "_card": {
-      "usedInCount": 1
-    }
-  },
-  {
-    "path": "pages/hubs/thai-kitchen.html",
-    "type": "hub",
-    "category": "hubs",
-    "title": "Thai kitchen",
-    "desc": "Build the paste from scratch, then cook with it. The aromatics are the same across both recipes — making the paste first makes the curry legible.",
-    "tags": [
-      "thai",
-      "spicy",
-      "aromatic",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "thai-kitchen",
-    "updated": "2026-05-04",
-    "added": "2026-05-04",
-    "_card": {
-      "memberCount": 2,
-      "memberMix": {
-        "recipes": 2
-      }
     }
   }
 ]
