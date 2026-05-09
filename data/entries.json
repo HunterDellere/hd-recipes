@@ -1,5 +1,26 @@
 [
   {
+    "path": "pages/ingredients/sour-cream.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Sour cream",
+    "desc": "Cultured cream at 18 to 20% milkfat with pH around 4.5. The acidity tenderizes baked goods, breaks emulsions for sauces, and adds a tangy fat that does not curdle as readily as plain cream.",
+    "tags": [
+      "dairy",
+      "fat",
+      "fermentation"
+    ],
+    "status": "complete",
+    "_slug": "sour-cream",
+    "updated": "2026-05-09",
+    "added": "2026-05-09",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/recipes/individual-decadent-chocolate-cakes.html",
     "type": "recipe",
     "category": "recipes",
@@ -112,6 +133,126 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/individual-fluffy-chocolate-cakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Individual fluffy chocolate cakes",
+    "desc": "Two 4-inch tall, light-crumbed chocolate cakes built on creamed butter, bloomed Dutch cocoa, and sour cream for tenderness. Designed to be served warm with a scoop of ice cream melting into the open crumb.",
+    "tags": [
+      "cake",
+      "chocolate",
+      "dessert",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "individual-fluffy-chocolate-cakes",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 24,
+      "total_min": 49,
+      "active_min": 20
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "Dutch-process cocoa powder",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "hot brewed coffee",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, at 18 to 20°C",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar, packed",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "large egg, room temp",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "large egg yolk, room temp",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "sour cream, full-fat, room temp",
+        "slug": "sour-cream",
+        "optional": false
+      },
+      {
+        "item": "whole milk, room temp",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "creaming-butter-sugar",
+      "blooming-cocoa"
+    ],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 49,
+      "diffLabel": "easy",
+      "timeLead": "49 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
     }
   },
   {
@@ -1449,7 +1590,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -1508,7 +1649,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -1606,7 +1747,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -1661,7 +1802,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -1985,7 +2126,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -3106,7 +3247,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -3123,7 +3264,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -3223,7 +3364,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -3240,7 +3381,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -3277,7 +3418,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -3414,7 +3555,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -5018,7 +5159,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -5051,7 +5192,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 0
+      "usedInCount": 1
     }
   },
   {
