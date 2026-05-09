@@ -235,21 +235,183 @@
     }
   },
   {
-    "path": "pages/techniques/chocolate-butter-emulsion.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Chocolate-butter emulsion",
-    "desc": "Melt chocolate and butter together into a single glossy mass before any egg, sugar, or flour. The cocoa butter and dairy fat fuse into one stable fat phase, which becomes the structural and flavor backbone of the bake.",
+    "path": "pages/recipes/pickled-mustard-greens.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pickled mustard greens (suan cai, 酸菜)",
+    "desc": "Whole heads of mustard greens lacto-fermented in a 3% salt brine for seven to ten days into a sour, crunchy, deeply funky pickle. The Cantonese and Sichuan tables both reach for it.",
     "tags": [
-      "chocolate",
-      "fat"
+      "vegetable",
+      "pantry",
+      "pickle",
+      "fermentation",
+      "chinese",
+      "umami",
+      "make-ahead"
     ],
     "status": "complete",
-    "_slug": "chocolate-butter-emulsion",
+    "_slug": "pickled-mustard-greens",
+    "cuisine": "Chinese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 14430,
+      "active_min": 30
+    },
     "updated": "2026-05-09",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "Chinese mustard greens (gai choy / xue li hong / suan cai cabbage)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns",
+        "slug": "sichuan-peppercorns",
+        "optional": true
+      },
+      {
+        "item": "fresh ginger, sliced",
+        "slug": "ginger",
+        "optional": true
+      },
+      {
+        "item": "dried Chinese chilies",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
     "added": "2026-05-09",
     "_card": {
-      "usedInCount": 1
+      "totalMinutes": 14430,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 10 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/pork-floss.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pork floss (rousong, 肉松)",
+    "desc": "Lean pork shoulder simmered tender with aromatics, shredded fine, then dry-fried in a wok with sugar and soy until the strands separate into a fluffy, dry, faintly sweet topping.",
+    "tags": [
+      "pork",
+      "pantry",
+      "chinese",
+      "umami",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "pork-floss",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 30,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 195,
+      "total_min": 210,
+      "active_min": 75
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pork shoulder, lean only (no skin, minimal fat)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, smashed",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallion whites",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": true
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "white pepper, freshly ground",
+        "slug": "white-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "wok",
+      "wide-skillet"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 210,
+      "diffLabel": "medium",
+      "timeLead": "3 h 30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 75,
+      "filterMinutes": 75
     }
   },
   {
@@ -561,6 +723,87 @@
     }
   },
   {
+    "path": "pages/recipes/cured-egg-yolk.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cured egg yolk (salt-sugar dry cure)",
+    "desc": "Raw yolks buried in a 70:30 salt-sugar bed for a week, rinsed, then dried in a low oven or dehydrator until they grate like a hard cheese. Translucent, deep amber, dense umami concentrate.",
+    "tags": [
+      "egg",
+      "pantry",
+      "umami",
+      "fermentation",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "cured-egg-yolk",
+    "cuisine": "",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 720,
+      "total_min": 13440,
+      "active_min": 30
+    },
+    "updated": "2026-05-08",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "whole black peppercorns, optional aromatic",
+        "slug": "black-pepper",
+        "optional": true
+      },
+      {
+        "item": "star anise, optional aromatic",
+        "slug": "star-anise",
+        "optional": true
+      },
+      {
+        "item": "fresh large eggs (the freshest you can buy)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "cheesecloth or fine muslin",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "dry-brining"
+    ],
+    "equipment": [
+      "fine-mesh-sieve",
+      "microplane",
+      "wire-rack"
+    ],
+    "added": "2026-05-08",
+    "_card": {
+      "totalMinutes": 13440,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 9 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/mansaf.html",
     "type": "recipe",
     "category": "recipes",
@@ -750,6 +993,28 @@
     }
   },
   {
+    "path": "pages/ingredients/jameed.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Jameed",
+    "desc": "Fermented sheep or goat yogurt, salted and sun-dried into stone-hard cones. Reconstitutes into a sour, funky, glutamate-heavy sauce base that no live yogurt approximates.",
+    "tags": [
+      "dairy",
+      "umami",
+      "fermentation",
+      "levantine"
+    ],
+    "status": "complete",
+    "_slug": "jameed",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/techniques/velveting.html",
     "type": "technique",
     "category": "techniques",
@@ -793,6 +1058,22 @@
     ],
     "status": "complete",
     "_slug": "egg-doneness",
+    "updated": "2026-05-05",
+    "added": "2026-05-05",
+    "_card": {}
+  },
+  {
+    "path": "pages/safety/meat-doneness.html",
+    "type": "safety",
+    "category": "safety",
+    "title": "Meat Doneness and Pasteurization",
+    "desc": "USDA published-safe internal temperatures for poultry, pork, beef, and lamb, plus the full time-temperature pasteurization table that explains why thin-sliced and sous-vide approaches can sit below the instantaneous number and still clear safety.",
+    "tags": [
+      "chicken",
+      "beef"
+    ],
+    "status": "complete",
+    "_slug": "meat-doneness",
     "updated": "2026-05-05",
     "added": "2026-05-05",
     "_card": {}

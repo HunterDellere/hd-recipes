@@ -92,10 +92,11 @@ for (const pageFull of walkPages(PAGES)) {
       /\bmayonnaise\b/i, /\bmayo\b/i,
       /\bricotta\b/i,
       /\bketchup\b/i,
-      // Prepared mustard the condiment, NOT raw mustard seeds.
-      // Negative lookahead on "seeds" so "yellow mustard seeds" doesn't match.
-      /\b(dijon|hot|whole.?grain|chinese)\s*mustard\b(?!\s*seeds?)/i,
-      /\byellow\s*mustard\b(?!\s*seeds?)/i,
+      // Prepared mustard the condiment, NOT raw mustard seeds or mustard greens.
+      // Negative lookahead on "seeds" / "greens" so "yellow mustard seeds" and
+      // "Chinese mustard greens" (the vegetable) don't trip the condiment rule.
+      /\b(dijon|hot|whole.?grain|chinese)\s*mustard\b(?!\s*(seeds?|greens?))/i,
+      /\byellow\s*mustard\b(?!\s*(seeds?|greens?))/i,
       /\bhot\s*sauce\b/i,
       /\bbbq\s*sauce\b/i, /\bbarbecue\s*sauce\b/i,
       /\bteriyaki\s*sauce\b/i,

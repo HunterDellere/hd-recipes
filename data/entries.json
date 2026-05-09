@@ -1,5 +1,51 @@
 [
   {
+    "path": "pages/ingredients/peanuts.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Peanuts",
+    "desc": "A legume sold raw, blanched, dry-roasted, oil-roasted, or salted. Eaten across global cooking as a textural and protein topping, sauce thickener, oil source, and confection base.",
+    "tags": [
+      "legume",
+      "pantry",
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "peanuts",
+    "updated": "2026-05-09",
+    "added": "2026-05-09",
+    "_card": {
+      "primaryTag": "legume",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/preserved-radish.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Preserved radish (chai poh, 菜脯)",
+    "desc": "Daikon radish dry-cured in salt then sun-dried into a deeply savory, chewy, salt-and-umami concentrate. Sold whole, sliced, or diced; reaches across Chinese, Taiwanese, and Southeast Asian cooking as a small-volume high-impact ingredient.",
+    "tags": [
+      "vegetable",
+      "pantry",
+      "pickle",
+      "fermentation",
+      "chinese",
+      "umami",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "preserved-radish",
+    "updated": "2026-05-09",
+    "added": "2026-05-09",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 0,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/sour-cream.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -253,6 +299,406 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/pickled-mustard-greens.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pickled mustard greens (suan cai, 酸菜)",
+    "desc": "Whole heads of mustard greens lacto-fermented in a 3% salt brine for seven to ten days into a sour, crunchy, deeply funky pickle. The Cantonese and Sichuan tables both reach for it.",
+    "tags": [
+      "vegetable",
+      "pantry",
+      "pickle",
+      "fermentation",
+      "chinese",
+      "umami",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "pickled-mustard-greens",
+    "cuisine": "Chinese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 14430,
+      "active_min": 30
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "Chinese mustard greens (gai choy / xue li hong / suan cai cabbage)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns",
+        "slug": "sichuan-peppercorns",
+        "optional": true
+      },
+      {
+        "item": "fresh ginger, sliced",
+        "slug": "ginger",
+        "optional": true
+      },
+      {
+        "item": "dried Chinese chilies",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 14430,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 10 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/pork-floss.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pork floss (rousong, 肉松)",
+    "desc": "Lean pork shoulder simmered tender with aromatics, shredded fine, then dry-fried in a wok with sugar and soy until the strands separate into a fluffy, dry, faintly sweet topping.",
+    "tags": [
+      "pork",
+      "pantry",
+      "chinese",
+      "umami",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "pork-floss",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 30,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 195,
+      "total_min": 210,
+      "active_min": 75
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pork shoulder, lean only (no skin, minimal fat)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, smashed",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallion whites",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": true
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "white pepper, freshly ground",
+        "slug": "white-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "wok",
+      "wide-skillet"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 210,
+      "diffLabel": "medium",
+      "timeLead": "3 h 30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 75,
+      "filterMinutes": 75
+    }
+  },
+  {
+    "path": "pages/recipes/salted-duck-egg-yolks.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salted duck egg yolks (home brine cure)",
+    "desc": "Raw duck eggs cured thirty-five days in saturated brine, then steamed and the yolks separated. Dense, fudgy, oil-bleeding red-orange yolks for congee, mooncakes, and salted-egg-yolk sauce.",
+    "tags": [
+      "egg",
+      "chinese",
+      "pantry",
+      "umami",
+      "fermentation",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "salted-duck-egg-yolks",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 15,
+      "total_min": 50430,
+      "active_min": 45
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, lightly toasted",
+        "slug": "sichuan-peppercorns",
+        "optional": true
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": true
+      },
+      {
+        "item": "fresh raw duck eggs",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 50430,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "+ 35 d rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/soft-boiled-congee-egg.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Soft-boiled congee egg",
+    "desc": "A 6½-minute soft-boiled egg cracked into the hot bowl just before eating: white set, yolk still molten, the heat of the porridge finishes the cook and binds yolk into broth.",
+    "tags": [
+      "egg",
+      "breakfast",
+      "chinese",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "soft-boiled-congee-egg",
+    "cuisine": "Chinese",
+    "course": "breakfast",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 2,
+      "cook_min": 7,
+      "total_min": 9,
+      "active_min": 9
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "large eggs, refrigerator-cold",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "water (enough to cover the eggs by 2 cm)",
+        "optional": false
+      },
+      {
+        "item": "ice",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "ice-bath-shock"
+    ],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 9,
+      "diffLabel": "easy",
+      "timeLead": "9 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 9,
+      "filterMinutes": 9
+    }
+  },
+  {
+    "path": "pages/recipes/soy-glazed-peanuts.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Soy-glazed peanuts",
+    "desc": "Raw peanuts toasted in oil until they smell roasted, then tossed off-heat with a soy-sugar-vinegar glaze that lacquers as it cools. Crunchy, savory, faintly sweet, perfect for a small dish on the congee table.",
+    "tags": [
+      "pantry",
+      "chinese",
+      "umami",
+      "side",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "soy-glazed-peanuts",
+    "cuisine": "Chinese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 2,
+      "cook_min": 13,
+      "total_min": 15,
+      "active_min": 13
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "raw skin-on peanuts",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "Chinkiang vinegar",
+        "slug": "chinkiang-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, lightly toasted and crushed",
+        "slug": "sichuan-peppercorns",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "wide-skillet"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 15,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 13,
+      "filterMinutes": 13
     }
   },
   {
@@ -1670,7 +2116,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -1708,7 +2154,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -1747,7 +2193,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -1823,7 +2269,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 9,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -1925,7 +2371,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -1965,7 +2411,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -2107,7 +2553,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -2882,7 +3328,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 11
+      "usedInCount": 16
     }
   },
   {
@@ -3401,7 +3847,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 9,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -3418,7 +3864,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -3455,7 +3901,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -3495,7 +3941,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 3,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -3515,7 +3961,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 5,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -5257,7 +5703,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 0
+      "usedInCount": 1
     }
   },
   {
