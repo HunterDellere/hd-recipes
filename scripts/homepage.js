@@ -163,7 +163,7 @@
     // Recent
     const recentEl = $('#recent-list');
     if (recent.length) {
-      recentEl.innerHTML = recent.slice(0, 8).map(entryCard).join('');
+      recentEl.innerHTML = recent.slice(0, 16).map(entryCard).join('');
     } else {
       recentEl.innerHTML = `<p class="empty">No entries yet.</p>`;
     }
