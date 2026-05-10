@@ -4,39 +4,295 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Random recipe · hd · recipes</title>
-<meta name="description" content="Pull a random recipe from hd · recipes.">
+<meta name="description" content="Pull a random recipe from hd · recipes — optionally filtered by cuisine, time, or difficulty.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23b8423a'/%3E%3Ctext x='50' y='62' text-anchor='middle' dominant-baseline='central' font-family='EB Garamond, serif' font-size='66' font-weight='700' fill='%23faf6ee'%3E?%3C/text%3E%3C%2Fsvg%3E">
 <script>(function(){try{var t=localStorage.getItem('hdr-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
 <style>
-  :root { --bg: #faf6ee; --ink: #2a1f10; --accent: #b8423a; --link: #1f5b8a; }
-  [data-theme="dark"] { --bg: #15110a; --ink: #f1ead8; --accent: #d75c52; --link: #6db1e6; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'EB Garamond', Georgia, serif; }
+  :root {
+    --bg: #faf6ee; --bg-elev: #fffaf0; --ink: #2a1f10; --ink-soft: #5a4a36; --ink-faint: #8a7a60;
+    --accent: #b8423a; --link: #1f5b8a;
+    --rule: rgba(0,0,0,0.08);
+  }
+  [data-theme="dark"] {
+    --bg: #15110a; --bg-elev: #1f1810; --ink: #f1ead8; --ink-soft: #c4b89b; --ink-faint: #a99878;
+    --accent: #d75c52; --link: #6db1e6;
+    --rule: rgba(255,255,255,0.1);
+  }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif; min-height: 100vh; }
   main { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 2rem; }
-  .mark { font-size: 3.5rem; color: var(--accent); margin-bottom: .5rem; font-weight: 700; }
-  p { font-size: 1.15rem; opacity: .75; }
-  a { color: var(--link); }
+  .panel { width: min(560px, calc(100vw - 2rem)); }
+  .mark { font-size: 3.5rem; color: var(--accent); margin-bottom: .5rem; font-weight: 700; line-height: 1; }
+  h1 { font-size: 2rem; margin: 0.4rem 0 0.6rem; font-weight: 600; }
+  .lede { color: var(--ink-soft); font-size: 1.05rem; line-height: 1.5; margin: 0 0 1.6rem; }
+  .filters { display: flex; flex-direction: column; gap: 1rem; margin: 1rem 0 1.4rem; text-align: left; }
+  .filter-row { display: flex; flex-direction: column; gap: 0.45rem; }
+  .filter-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .chip {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.85rem;
+    padding: 0.42rem 0.85rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--bg-elev);
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 120ms;
+  }
+  .chip:hover { color: var(--ink); border-color: var(--ink-faint); }
+  .chip.is-on {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .actions { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; margin-top: 0.6rem; }
+  .btn {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.95rem;
+    padding: 0.7rem 1.4rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+  }
+  .btn:hover { filter: brightness(1.05); }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .status { color: var(--ink-faint); font-size: 0.9rem; margin-top: 0.6rem; min-height: 1.2em; }
+  .back { display: inline-block; margin-top: 1.4rem; color: var(--link); font-size: 0.9rem; text-decoration: none; }
+  .back:hover { text-decoration: underline; }
+  .loading { animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+  @media (prefers-reduced-motion: reduce) { .loading { animation: none; } }
 </style>
 </head>
 <body>
 <main>
-  <div>
-    <div class="mark">?</div>
-    <p>Pulling a recipe…</p>
-    <p><a href="index.html">← back to all recipes</a></p>
+  <div class="panel">
+    <div class="mark" id="mark">?</div>
+    <h1 id="heading">Random recipe</h1>
+    <p class="lede" id="lede">Pulling a recipe…</p>
+    <div id="filter-ui" hidden>
+      <div class="filters">
+        <div class="filter-row">
+          <span class="filter-label">Cuisine</span>
+          <div class="chips" data-facet="cuisine"></div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Course</span>
+          <div class="chips" data-facet="course"></div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Time (active)</span>
+          <div class="chips" data-facet="time">
+            <button type="button" class="chip" data-time="20">≤ 20 min</button>
+            <button type="button" class="chip" data-time="30">≤ 30 min</button>
+            <button type="button" class="chip" data-time="60">≤ 1 h</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Difficulty</span>
+          <div class="chips" data-facet="difficulty">
+            <button type="button" class="chip" data-difficulty="easy">easy</button>
+            <button type="button" class="chip" data-difficulty="medium">medium</button>
+            <button type="button" class="chip" data-difficulty="hard">hard</button>
+          </div>
+        </div>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="actions">
+        <button type="button" class="btn" id="go">Surprise me</button>
+        <button type="button" class="btn btn-ghost" id="clear">Clear</button>
+      </div>
+    </div>
+    <a class="back" href="index.html">← back to all recipes</a>
   </div>
 </main>
 <script>
 (function () {
-  fetch('data/entries.json')
-    .then(r => r.json())
-    .then(entries => {
-      const recipes = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
-      if (!recipes.length) { window.location.replace('index.html'); return; }
-      const pick = recipes[Math.floor(Math.random() * recipes.length)];
-      window.location.replace(pick.path);
-    })
-    .catch(() => window.location.replace('index.html'));
+  'use strict';
+
+  const params = new URLSearchParams(location.search);
+  const hasParams = ['cuisine', 'course', 'max_min', 'difficulty'].some(k => params.has(k));
+  const STORE_KEY = 'hdr-random-filter';
+
+  const lede = document.getElementById('lede');
+  const heading = document.getElementById('heading');
+  const filterUI = document.getElementById('filter-ui');
+  const status = document.getElementById('status');
+  const goBtn = document.getElementById('go');
+  const clearBtn = document.getElementById('clear');
+
+  function pickFrom(recipes) {
+    return recipes[Math.floor(Math.random() * recipes.length)];
+  }
+
+  function matches(e, filt) {
+    if (filt.cuisine && (e.cuisine || '').toLowerCase() !== filt.cuisine.toLowerCase()) return false;
+    if (filt.course && (e.course || '').toLowerCase() !== filt.course.toLowerCase()) return false;
+    if (filt.difficulty && (e.difficulty || '') !== filt.difficulty) return false;
+    if (filt.max_min) {
+      const t = e.time && (e.time.active_min || e.time.total_min) || 0;
+      if (!t || t > filt.max_min) return false;
+    }
+    return true;
+  }
+
+  function loadEntries() {
+    return fetch('data/entries.json').then(r => r.json());
+  }
+
+  // Path A: query params present → filter and redirect.
+  if (hasParams) {
+    const filt = {
+      cuisine: params.get('cuisine') || null,
+      course: params.get('course') || null,
+      difficulty: params.get('difficulty') || null,
+      max_min: parseInt(params.get('max_min') || '0', 10) || null,
+    };
+    lede.textContent = 'Filtering…';
+    lede.classList.add('loading');
+    loadEntries().then(entries => {
+      const pool = entries.filter(e => e.status === 'complete' && e.type === 'recipe' && matches(e, filt));
+      if (!pool.length) {
+        lede.classList.remove('loading');
+        lede.textContent = "Nothing matches that filter.";
+        heading.textContent = 'No match';
+        // Reveal the picker so the user can adjust without backing up.
+        showPicker(filt);
+        return;
+      }
+      // Persist last filter so "Random again" can replay it
+      try { localStorage.setItem(STORE_KEY, JSON.stringify(filt)); } catch {}
+      const pick = pickFrom(pool);
+      location.replace(pick.path);
+    }).catch(() => location.replace('index.html'));
+    return;
+  }
+
+  // Path B: no params → show the picker UI.
+  showPicker(null);
+
+  function showPicker(presetFilt) {
+    heading.textContent = 'Random — your call';
+    lede.textContent = 'Optionally narrow it down. Skip everything for a true wildcard.';
+    filterUI.hidden = false;
+
+    let entriesAll = null;
+    const filt = presetFilt || (() => {
+      try { return JSON.parse(localStorage.getItem(STORE_KEY) || 'null'); } catch { return null; }
+    })() || {};
+
+    // Build cuisine + course chips dynamically from the actual data.
+    loadEntries().then(entries => {
+      entriesAll = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
+      const cuisines = new Set(); const courses = new Set();
+      for (const e of entriesAll) {
+        if (e.cuisine) cuisines.add(e.cuisine);
+        if (e.course) courses.add(e.course);
+      }
+      mountChips('cuisine', [...cuisines].sort(), filt.cuisine);
+      mountChips('course', [...courses].sort(), filt.course);
+      // Apply preset to chips that already exist (time, difficulty)
+      if (filt.max_min) markChip('time', filt.max_min);
+      if (filt.difficulty) markChip('difficulty', filt.difficulty);
+      updateCount();
+    });
+
+    function mountChips(facet, values, selectedValue) {
+      const root = document.querySelector(`.chips[data-facet="${facet}"]`);
+      if (!root) return;
+      // Insert new chips before any existing static ones (time/difficulty have presets in HTML).
+      values.forEach(v => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'chip' + (selectedValue && selectedValue === v ? ' is-on' : '');
+        b.dataset[facet] = v;
+        b.textContent = v;
+        root.appendChild(b);
+      });
+    }
+
+    function markChip(facet, value) {
+      const sel = `.chips[data-facet="${facet}"] [data-${facet}="${value}"]`;
+      const el = document.querySelector(sel);
+      if (el) el.classList.add('is-on');
+    }
+
+    function readFilters() {
+      const out = {};
+      const c = document.querySelector('.chips[data-facet="cuisine"] .is-on');
+      const co = document.querySelector('.chips[data-facet="course"] .is-on');
+      const t = document.querySelector('.chips[data-facet="time"] .is-on');
+      const d = document.querySelector('.chips[data-facet="difficulty"] .is-on');
+      if (c) out.cuisine = c.dataset.cuisine;
+      if (co) out.course = co.dataset.course;
+      if (t) out.max_min = parseInt(t.dataset.time, 10);
+      if (d) out.difficulty = d.dataset.difficulty;
+      return out;
+    }
+
+    function updateCount() {
+      if (!entriesAll) return;
+      const f = readFilters();
+      const n = entriesAll.filter(e => matches(e, f)).length;
+      const total = entriesAll.length;
+      status.textContent = `${n} of ${total} ${n === 1 ? 'recipe matches' : 'recipes match'}`;
+      goBtn.disabled = n === 0;
+    }
+
+    // Toggle chip selection — single-select per facet, click-again to clear.
+    document.querySelectorAll('.chips').forEach(root => {
+      root.addEventListener('click', (e) => {
+        const b = e.target.closest('.chip');
+        if (!b) return;
+        const wasOn = b.classList.contains('is-on');
+        root.querySelectorAll('.chip').forEach(c => c.classList.remove('is-on'));
+        if (!wasOn) b.classList.add('is-on');
+        updateCount();
+      });
+    });
+
+    goBtn.addEventListener('click', () => {
+      const f = readFilters();
+      try { localStorage.setItem(STORE_KEY, JSON.stringify(f)); } catch {}
+      const qs = new URLSearchParams();
+      if (f.cuisine) qs.set('cuisine', f.cuisine);
+      if (f.course) qs.set('course', f.course);
+      if (f.max_min) qs.set('max_min', String(f.max_min));
+      if (f.difficulty) qs.set('difficulty', f.difficulty);
+      const target = qs.toString() ? `random.html?${qs}` : 'random.html?_=1';
+      // Rerun: redirect to ourselves with params; the param-path branch handles the pick.
+      // The `_=1` cache-buster forces the param branch even with no real filters.
+      if (!qs.toString()) {
+        // No filters → just pick from all
+        const pool = entriesAll;
+        if (!pool.length) return;
+        const pick = pool[Math.floor(Math.random() * pool.length)];
+        location.replace(pick.path);
+      } else {
+        location.replace(target);
+      }
+    });
+
+    clearBtn.addEventListener('click', () => {
+      document.querySelectorAll('.chip.is-on').forEach(c => c.classList.remove('is-on'));
+      try { localStorage.removeItem(STORE_KEY); } catch {}
+      updateCount();
+    });
+  }
 })();
 </script>
 </body>
