@@ -1,27 +1,48 @@
 /* ── hd · recipes — base stylesheet ───────────────────────────────────── */
 
 :root {
-  --bg: #faf6ee;
-  --bg-elev: #fffaf0;
-  --bg-soft: #f5efe2;
+  /* Paper warmth — was #faf6ee. Slight push toward cream gives the page a
+     "linen tablecloth" quality instead of "bone china". The elev surface
+     stays a touch lighter so cards still float. */
+  --bg: #f8f2e2;
+  --bg-elev: #fdf8eb;
+  --bg-soft: #f1ead7;
   --ink: #2a1f10;
   --ink-soft: #5a4a36;
   --ink-faint: #8a7a60;
-  --rule: #e6dcc6;
-  --rule-soft: #f0e8d4;
+  /* Warm prose body — sits between --ink and --ink-soft. Use for long-form
+     reading where pure --ink can feel inky/cold. */
+  --ink-warm: #3d2e1c;
+  --rule: #e0d4b8;
+  --rule-soft: #ece2c9;
   --accent: #b8423a;
   --accent-deep: #8b2e26;
   --accent-soft: rgba(184, 66, 58, 0.18);
   --link: #1f5b8a;
   --focus-ring: 0 0 0 3px rgba(184, 66, 58, 0.35);
 
+  /* Category accents — refined. Cuisines was a flat crayon blue; the new
+     value is more ink-respectful, keeps AA contrast on cream. Hubs was a
+     plummy purple; lifted to a less-saturated wine-mauve. */
   --cat-recipes:     #b8423a;
-  --cat-ingredients: #3a7a3a;
+  --cat-ingredients: #3d7a40;
   --cat-techniques:  #a55a1a;
-  --cat-cuisines:    #3a5a8a;
+  --cat-cuisines:    #3d6a96;
   --cat-equipment:   #5a4a3a;
-  --cat-hubs:        #6b3a78;
+  --cat-hubs:        #7c4582;
   --cat-safety:      #7a3a3a;
+
+  /* Per-category page-tint backgrounds. Used as a faint wash on hero blocks,
+     section anchors, sidebar active-state. Calibrated to be nearly invisible
+     on cream — the eye registers them as "this page has a temperature" rather
+     than "this is colored". */
+  --cat-recipes-bg:     rgba(184, 66, 58, 0.05);
+  --cat-ingredients-bg: rgba(61, 122, 64, 0.05);
+  --cat-techniques-bg:  rgba(165, 90, 26, 0.05);
+  --cat-cuisines-bg:    rgba(61, 106, 150, 0.05);
+  --cat-equipment-bg:   rgba(90, 74, 58, 0.05);
+  --cat-hubs-bg:        rgba(124, 69, 130, 0.05);
+  --cat-safety-bg:      rgba(122, 58, 58, 0.05);
 
   --font-serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -77,16 +98,21 @@
 }
 
 [data-theme="dark"] {
-  --bg: #15110a;
-  --bg-elev: #1f1810;
-  --bg-soft: #1a140d;
+  /* Lifted from #15110a (near-black) to a softer warm-charcoal. The prior
+     value was crushed enough that bg-soft and bg looked identical on most
+     panels and the eye lost depth-of-field. Now bg < bg-soft < bg-elev
+     forms a real elevation ladder. */
+  --bg: #181208;
+  --bg-elev: #251c10;
+  --bg-soft: #1f1810;
   --ink: #f1ead8;
   --ink-soft: #c4b89b;
   /* Lifted ink-faint from #8a7a60 — the light-mode value disappeared on dark
      bg (~2.1:1). #a99878 hits ~3.4:1, still feels recessed but readable. */
   --ink-faint: #a99878;
-  --rule: #2e2618;
-  --rule-soft: #251e12;
+  --ink-warm: #e0d6bf;
+  --rule: #322817;
+  --rule-soft: #281f10;
   --accent: #d75c52;
   --accent-deep: #b8423a;
   /* Lifted from .22 → .28 for AA contrast on hover backgrounds against the
@@ -94,6 +120,25 @@
   --accent-soft: rgba(215, 92, 82, 0.28);
   --link: #6db1e6;
   --focus-ring: 0 0 0 3px rgba(215, 92, 82, 0.45);
+
+  /* Category colors lifted for dark-mode contrast (light-mode values too dark) */
+  --cat-recipes:     #e07269;
+  --cat-ingredients: #6cb070;
+  --cat-techniques:  #d39154;
+  --cat-cuisines:    #76a8d4;
+  --cat-equipment:   #9c8a6e;
+  --cat-hubs:        #b585bb;
+  --cat-safety:      #c97474;
+
+  /* Page tints stronger on dark since the surface absorbs more */
+  --cat-recipes-bg:     rgba(215, 92, 82, 0.08);
+  --cat-ingredients-bg: rgba(108, 176, 112, 0.07);
+  --cat-techniques-bg:  rgba(211, 145, 84, 0.07);
+  --cat-cuisines-bg:    rgba(118, 168, 212, 0.07);
+  --cat-equipment-bg:   rgba(156, 138, 110, 0.06);
+  --cat-hubs-bg:        rgba(181, 133, 187, 0.07);
+  --cat-safety-bg:      rgba(201, 116, 116, 0.07);
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.30), 0 1px 3px rgba(0, 0, 0, 0.20);
   --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.25);
   --shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.40), 0 16px 40px rgba(0, 0, 0, 0.30);
@@ -2809,3 +2854,765 @@ body.lb-locked { overflow: hidden; }
 /* Match the topic-hero eyebrow color and link decoration on safety pages. */
 .topic-hero-eyebrow[data-cat="safety"] { color: var(--cat-safety); }
 a[href*="/pages/safety/"] { color: var(--cat-safety); border-bottom: 1px dotted var(--cat-safety); }
+
+/* === Item A: Cmd+K command palette === */
+.cmd-palette-overlay {
+  position: fixed; inset: 0; z-index: 9000;
+  background: rgba(20, 14, 6, 0.42);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: grid; place-items: start center;
+  padding-top: clamp(4rem, 12vh, 9rem);
+  opacity: 0; transition: opacity 140ms ease-out;
+  /* Don't intercept clicks while fading out — that blocks the page after close. */
+  pointer-events: none;
+}
+.cmd-palette-overlay.is-open { opacity: 1; pointer-events: auto; }
+[data-theme="dark"] .cmd-palette-overlay { background: rgba(0, 0, 0, 0.55); }
+body.cmd-palette-open { overflow: hidden; }
+
+.cmd-palette {
+  width: min(620px, calc(100vw - 2rem));
+  background: var(--bg-elev);
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 14px;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.35), 0 6px 20px -6px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: transform 140ms ease-out;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.cmd-palette-overlay.is-open .cmd-palette { transform: translateY(0); }
+
+.cmd-palette-input-wrap {
+  display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.95rem 1.05rem;
+  border-bottom: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+}
+.cmd-palette-icon { color: var(--ink-faint); display: inline-flex; }
+.cmd-palette-input {
+  flex: 1; min-width: 0;
+  border: 0; outline: 0; background: transparent;
+  color: var(--ink);
+  font-size: 1rem;
+  font-family: inherit;
+}
+.cmd-palette-input::placeholder { color: var(--ink-faint); }
+.cmd-palette-esc {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 4px;
+  color: var(--ink-faint);
+  background: var(--bg);
+}
+
+.cmd-palette-results {
+  list-style: none; margin: 0; padding: 0.4rem 0;
+  max-height: min(50vh, 420px);
+  overflow-y: auto;
+}
+.cmd-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.55rem 1.05rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--ink);
+  border-left: 2px solid transparent;
+}
+.cmd-item.is-active {
+  background: var(--bg-soft);
+  border-left-color: var(--accent);
+}
+.cmd-item:hover:not(.is-active) { background: color-mix(in srgb, var(--bg-soft) 55%, transparent); }
+
+.cmd-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.42rem;
+  border-radius: 3px;
+  background: var(--bg);
+  color: var(--ink-faint);
+  flex-shrink: 0;
+  min-width: 5.5rem;
+  text-align: center;
+}
+.cmd-tag-action { color: var(--accent); }
+
+.cmd-label {
+  flex: 1; min-width: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cmd-sub {
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  flex-shrink: 1; max-width: 40%;
+}
+
+.cmd-empty {
+  padding: 1.2rem 1.05rem;
+  color: var(--ink-faint);
+  font-style: italic;
+  text-align: center;
+  list-style: none;
+}
+
+.cmd-palette-hint {
+  display: flex; gap: 1rem;
+  padding: 0.55rem 1.05rem;
+  border-top: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  background: var(--bg);
+}
+.cmd-palette-hint kbd {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  padding: 0.08rem 0.32rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 3px;
+  background: var(--bg-elev);
+  color: var(--ink-soft);
+}
+
+@media (max-width: 480px) {
+  .cmd-palette-overlay { padding-top: 4rem; }
+  .cmd-tag { min-width: 4.2rem; font-size: 0.58rem; }
+  .cmd-sub { display: none; }
+  .cmd-palette-hint { gap: 0.6rem; font-size: 0.7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cmd-palette-overlay, .cmd-palette { transition: none; }
+}
+
+@media print {
+  .cmd-palette-overlay { display: none !important; }
+}
+
+/* "Jump to step N" flash highlight */
+.recipe-steps .step-item.step-flash {
+  animation: stepFlash 1.2s ease-out;
+}
+@keyframes stepFlash {
+  0%, 100% { background: transparent; }
+  20%, 60% { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recipe-steps .step-item.step-flash { animation: none; }
+}
+
+/* === Item B: hover-card link previews === */
+.hcard {
+  position: absolute;
+  z-index: 8500;
+  width: 320px;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 10px;
+  box-shadow: 0 16px 32px -10px rgba(0,0,0,0.3), 0 4px 12px -4px rgba(0,0,0,0.18);
+  padding: 0.85rem 0.95rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 130ms ease-out, transform 130ms ease-out;
+}
+.hcard.is-open { opacity: 1; transform: translateY(0); }
+
+.hcard-eyebrow {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.35rem;
+}
+.hcard-eyebrow-recipe { color: var(--accent); }
+
+.hcard-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+.hcard-desc {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.hcard-meta {
+  display: flex; flex-wrap: wrap; gap: 0.4rem 0.7rem;
+  margin-top: 0.35rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule-soft, rgba(0,0,0,0.06));
+}
+.hcard-meta-item {
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+}
+.hcard-diff-easy { color: #5a8a3a; }
+.hcard-diff-medium { color: #b88a2a; }
+.hcard-diff-hard { color: var(--accent); }
+[data-theme="dark"] .hcard-diff-easy { color: #8acb6b; }
+[data-theme="dark"] .hcard-diff-medium { color: #e0b455; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hcard { transition: none; }
+}
+@media print {
+  .hcard { display: none !important; }
+}
+
+/* === Item D: print stylesheet — one-page recipe card === */
+/* Existing print rules at lines 908, 995, 1617, 2773 handle the basics.
+   This block fills the gaps: hide the cook log + interactive controls,
+   collapse expandable panels open, tighten spacing. */
+@media print {
+  /* Site chrome (additive to line 1617) */
+  .step-time-btn, .step-time, .step-tech,
+  .ing-panel-summary .ing-panel-chev,
+  .ing-units-control, .ing-scale,
+  .home-footer, .home-cta-row, .home-search-section, .home-families-section,
+  .recent-tabs, .home-divider, .home-hero-ornament {
+    display: none !important;
+  }
+
+  /* Force the shopping list panel open (it's a <details>); hide the mise
+     duplicate so we get one clean ingredients list. */
+  details.ing-panel-shop[open] .ing-panel-summary,
+  details.ing-panel-shop .ing-panel-summary { display: none !important; }
+  details.ing-panel-shop > .ing-list-shop { display: block !important; }
+  details.ing-panel-mise { display: none !important; }
+
+  /* Tighter ingredient rows: one line each, no checkbox */
+  .ing-cb, .ing-check { display: none !important; }
+  .ing-row { padding: 0.18rem 0 !important; border: 0 !important; }
+  .ing-qty { font-weight: 600; }
+
+  /* Steps: keep numbering but compress */
+  .recipe-steps { padding-left: 0; }
+  .step-item { display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.4rem; margin: 0.4rem 0 !important; }
+  .step-body { font-size: 11pt; line-height: 1.45; }
+
+  /* Drop low-value sections from a print of a recipe */
+  #homemade, #pairs-with, #in-hubs, #related, #notes,
+  .related-cards-wrap, .more-like-this { display: none !important; }
+
+  /* Page break between hero and steps; avoid orphan headings */
+  .recipe-hero { page-break-after: avoid; margin-bottom: 0.5rem !important; }
+  .rh-stats { font-size: 10pt; }
+  .rh-tags, .rh-actions { display: none !important; }
+
+  /* Nutrition: compact table */
+  .recipe-nutrition table { font-size: 10pt; }
+  .recipe-nutrition { padding: 0.4rem !important; margin-top: 0.6rem !important; }
+
+  /* Strip page background */
+  @page { margin: 1.4cm; }
+}
+
+/* === Item F: related-recipes — mobile horizontal carousel for the recipes group === */
+/* The full Related block (rl-groups) is already shipped — recipes/ingredients/
+   techniques rendered as 3 grouped grids with reason text. On narrow viewports
+   the recipes group reads better as a snap-scroll carousel: each card is a
+   discrete "next move" the cook glances at, not a list to read. */
+@media (max-width: 720px) {
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0.6rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Bleed past the page padding so cards reach the screen edge,
+       which signals "scroll horizontally" without a scrollbar. */
+    margin: 0 -1rem;
+    padding: 0.2rem 1rem 0.6rem;
+    scrollbar-width: thin;
+  }
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes .rl-card {
+    flex: 0 0 78%;
+    max-width: 280px;
+    scroll-snap-align: start;
+  }
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes::-webkit-scrollbar {
+    height: 4px;
+  }
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes::-webkit-scrollbar-thumb {
+    background: var(--rule);
+    border-radius: 2px;
+  }
+}
+
+/* === Item G: sidebar breadcrumb === */
+.toc-breadcrumb {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.25rem 0.4rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin-bottom: 0.55rem;
+  line-height: 1.4;
+}
+.bc-crumb {
+  color: var(--ink-faint);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: color 120ms, border-color 120ms;
+}
+.bc-crumb:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent-soft, color-mix(in srgb, var(--accent) 35%, transparent));
+}
+.bc-sep {
+  color: var(--ink-faint);
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+@media print {
+  .toc-breadcrumb { display: none !important; }
+}
+
+/* === Item 2: recipe page typography pass ============================
+   Quieter chrome, more breathing room, less sterile. The recipe page
+   should read like a pamphlet from a trusted shop, not a database row.
+*/
+
+/* Drop the redundant "RECIPE" eyebrow — the breadcrumb already names the
+   category. Save the eye for the title. Same on topic-hero pages. */
+.recipe-hero .rh-eyebrow,
+.topic-hero .topic-hero-eyebrow { display: none; }
+
+/* Lift the title; tighter leading earns the size. */
+.rh-title,
+.topic-hero-title {
+  font-size: clamp(2.1rem, 4.4vw + 1rem, 3.05rem);
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.55em;
+}
+
+/* Description: keep prose feel, slightly more breathing. */
+.rh-desc,
+.topic-hero-desc {
+  font-size: 1.18rem;
+  line-height: 1.58;
+  color: var(--ink-warm, var(--ink-soft));
+  max-width: 60ch;
+  margin: 0 0 1.6rem;
+}
+
+/* Convert the bordered stat card to an inline serif rule:
+   "Serves 4 · 27 min active · easy"
+   Hairline above and below, italic small caps for the labels.
+   We override the existing grid look without touching the markup —
+   the existing .rh-stat-icon stays inside but is hidden visually. */
+.rh-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  margin-bottom: 1.4rem;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--rule-soft);
+  border-bottom: 1px solid var(--rule-soft);
+  border-radius: 0;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--ink-warm, var(--ink-soft));
+}
+.rh-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  min-width: 0;
+  padding: 0;
+}
+/* Hide the icon chips — they were busy. */
+.rh-stat-icon { display: none !important; }
+.rh-stat-text {
+  display: inline;
+  flex-direction: row;
+}
+.rh-stat-value {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  text-transform: lowercase;
+}
+.rh-stat-label {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-faint);
+  text-transform: lowercase;
+  letter-spacing: 0;
+  margin: 0 0 0 0.2rem;
+}
+.rh-stat-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+  margin-left: 0.35rem;
+}
+/* Bullet between stats */
+.rh-stat + .rh-stat::before {
+  content: "·";
+  color: var(--ink-faint);
+  margin-right: 0.5rem;
+  opacity: 0.6;
+}
+/* The "time" stat keeps an accent emphasis on the value. */
+.rh-stat[data-stat="time"] .rh-stat-value {
+  color: var(--accent);
+  font-weight: 700;
+}
+/* Drop the difficulty's color block; just italicize it like a critic's note. */
+.rh-stat[data-stat="difficulty"] .rh-stat-value {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+/* Tags row: smaller, quieter, less pill-y. */
+.rh-tags {
+  gap: 0.3rem 0.6rem;
+  margin-bottom: 1.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+}
+.rh-tag {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--ink-faint);
+  border-radius: 0;
+  text-transform: lowercase;
+}
+a.rh-tag {
+  border-bottom: 1px dotted var(--rule);
+  padding-bottom: 1px;
+}
+a.rh-tag:hover {
+  background: transparent;
+  border-bottom-color: var(--accent);
+  border-bottom-style: solid;
+  color: var(--accent);
+}
+.rh-tag-cuisine { font-weight: 600; color: var(--ink-soft); }
+.rh-tag-cuisine::before {
+  width: 5px; height: 5px;
+  margin-right: 5px;
+  background: var(--cat-cuisines, var(--accent));
+  top: -2px;
+}
+.rh-tag-course {
+  font-style: italic;
+}
+.rh-tag-diet {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+}
+
+/* Section heads: drop the heavy 2px underline, replace with hairline +
+   small mono sub-label that names the section number. */
+.section-head {
+  margin: 3rem 0 1.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.section-head::after {
+  /* A category-tinted seam under the rule — adds quiet identity */
+  content: "";
+  position: absolute;
+  left: 0; bottom: -1px;
+  height: 2px; width: 64px;
+  background: var(--cat-recipes);
+  opacity: 0.85;
+}
+body[data-category="ingredients"] .section-head::after { background: var(--cat-ingredients); }
+body[data-category="techniques"] .section-head::after  { background: var(--cat-techniques); }
+body[data-category="cuisines"] .section-head::after    { background: var(--cat-cuisines); }
+body[data-category="equipment"] .section-head::after   { background: var(--cat-equipment); }
+body[data-category="hubs"] .section-head::after        { background: var(--cat-hubs); }
+body[data-category="safety"] .section-head::after      { background: var(--cat-safety); }
+.section-head h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.15;
+}
+
+/* TOC label: drop ALL CAPS, use italic small. */
+.toc-label {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+/* Recipe steps: more vertical air, larger numerals, calmer rule. */
+.recipe-steps {
+  margin-top: 1rem;
+}
+.recipe-steps .step-item {
+  margin: 1.2rem 0;
+  padding: 0.4rem 0 0.5rem;
+}
+.recipe-steps .step-num {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  font-style: italic;
+  background: transparent !important;
+  color: var(--accent) !important;
+  width: auto;
+  min-width: 1.6rem;
+  border: 0 !important;
+  margin-top: -0.1rem;
+}
+.recipe-steps .step-body {
+  font-size: 1.07rem;
+  line-height: 1.7;
+  color: var(--ink-warm, var(--ink));
+}
+
+/* === Item 3: motion pass ============================================
+   Card hover lift, scroll-fade reveal, theme-swap transition.
+   Everything no-ops under prefers-reduced-motion.
+*/
+
+/* Theme transitions — when the user toggles, surfaces shouldn't snap. */
+body, .recipe-hero, .topic-hero, .home-hero, .home-section,
+.entry-card, .pair-card, .rl-card, .ff-card, .family-card,
+.cmd-palette, .hcard, .rh-stats {
+  transition:
+    background var(--d-base) var(--ease-out),
+    color var(--d-base) var(--ease-out),
+    border-color var(--d-base) var(--ease-out);
+}
+
+/* Card lift on hover — works for the major card families. */
+.entry-card, .pair-card, .rl-card, .ff-card, .family-card, .hub-chip {
+  transition:
+    transform var(--d-fast) var(--ease-out),
+    box-shadow var(--d-fast) var(--ease-out),
+    border-color var(--d-fast) var(--ease-out),
+    background var(--d-base) var(--ease-out);
+  will-change: transform;
+}
+.entry-card:hover, .pair-card:hover, .rl-card:hover,
+.ff-card:hover, .family-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.hub-chip:hover {
+  transform: translateY(-1px);
+}
+
+/* Subtle press-down on click — matches a tactile feel without going
+   bouncy. Skip on hub-chip; it's text-shaped. */
+.entry-card:active, .pair-card:active, .rl-card:active,
+.ff-card:active, .family-card:active {
+  transform: translateY(0);
+  transition-duration: 60ms;
+}
+
+/* Reveal-on-scroll: items mount with rv-init then flip to rv-on once
+   they enter the viewport. The IO does the work; CSS does the look. */
+.rv-init {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 480ms var(--ease-out),
+    transform 480ms var(--ease-out);
+}
+.rv-on {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cards inside a revealing grid: stagger by one tier so the eye
+   reads them as choreographed, not synchronized. */
+.rv-on > .entry-card,
+.rv-on > .pair-card,
+.rv-on > .rl-card {
+  animation: rv-card-in 480ms var(--ease-out) backwards;
+}
+.rv-on > .entry-card:nth-child(1) { animation-delay: 40ms; }
+.rv-on > .entry-card:nth-child(2) { animation-delay: 80ms; }
+.rv-on > .entry-card:nth-child(3) { animation-delay: 120ms; }
+.rv-on > .entry-card:nth-child(4) { animation-delay: 160ms; }
+.rv-on > .entry-card:nth-child(5) { animation-delay: 200ms; }
+.rv-on > .entry-card:nth-child(n+6) { animation-delay: 240ms; }
+@keyframes rv-card-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Palette: add a small scale-from to its existing translate+fade. */
+.cmd-palette {
+  transform: translateY(-6px) scale(0.985);
+}
+.cmd-palette-overlay.is-open .cmd-palette {
+  transform: translateY(0) scale(1);
+}
+
+/* Step "tick complete" — when a step is marked done in cook's view,
+   brief scale-strike rather than instant text-decoration. */
+.recipe-steps .step-item.is-done {
+  animation: step-strike 320ms var(--ease-out);
+}
+@keyframes step-strike {
+  0%   { background: transparent; }
+  40%  { background: var(--accent-soft); }
+  100% { background: transparent; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .rv-init { opacity: 1; transform: none; transition: none; }
+  .rv-on > * { animation: none !important; }
+  .entry-card, .pair-card, .rl-card, .ff-card, .family-card, .hub-chip {
+    transition: none;
+  }
+  .entry-card:hover, .pair-card:hover, .rl-card:hover,
+  .ff-card:hover, .family-card:hover { transform: none; box-shadow: var(--shadow-sm); }
+  .recipe-steps .step-item.is-done { animation: none; }
+  body, .recipe-hero, .topic-hero, .home-hero, .home-section,
+  .entry-card, .pair-card, .rl-card, .ff-card, .family-card,
+  .cmd-palette, .hcard, .rh-stats { transition: none; }
+}
+.rv-noanim .rv-init { opacity: 1; transform: none; }
+
+/* === Item 4: per-category visual identity ============================
+   Each entry type gets a quiet temperature without becoming "themed".
+   The bg-tint is so faint it reads as paper, not color, and the
+   accent rule under section heads is the strongest tell.
+*/
+
+/* Hero gets a category-tinted top wash — like a tea stain. Implemented
+   as a vertical gradient that fades into the body bg by 220px down. */
+body[data-category="recipes"] .recipe-hero,
+body[data-category="ingredients"] .topic-hero,
+body[data-category="techniques"] .topic-hero,
+body[data-category="cuisines"] .topic-hero,
+body[data-category="equipment"] .topic-hero,
+body[data-category="hubs"] .topic-hero,
+body[data-category="safety"] .topic-hero {
+  position: relative;
+  isolation: isolate;
+}
+body[data-category] .recipe-hero::before,
+body[data-category] .topic-hero::before {
+  content: "";
+  position: absolute;
+  inset: -3rem -2rem auto -2rem;
+  height: 320px;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    var(--cat-recipes-bg) 0%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+body[data-category="ingredients"] .topic-hero::before { background: linear-gradient(180deg, var(--cat-ingredients-bg) 0%, transparent 80%); }
+body[data-category="techniques"]  .topic-hero::before { background: linear-gradient(180deg, var(--cat-techniques-bg) 0%, transparent 80%); }
+body[data-category="cuisines"]    .topic-hero::before { background: linear-gradient(180deg, var(--cat-cuisines-bg) 0%, transparent 80%); }
+body[data-category="equipment"]   .topic-hero::before { background: linear-gradient(180deg, var(--cat-equipment-bg) 0%, transparent 80%); }
+body[data-category="hubs"]        .topic-hero::before { background: linear-gradient(180deg, var(--cat-hubs-bg) 0%, transparent 80%); }
+body[data-category="safety"]      .topic-hero::before { background: linear-gradient(180deg, var(--cat-safety-bg) 0%, transparent 80%); }
+
+/* Sidebar: TOC active link picks up category color. */
+.toc-list a {
+  border-left: 2px solid transparent;
+  padding-left: 0.55rem;
+  transition: color var(--d-fast), border-color var(--d-fast);
+}
+.toc-list a:hover { color: var(--accent); }
+.toc-list a.is-active,
+.toc-list a[aria-current] {
+  color: var(--cat-recipes);
+  border-left-color: var(--cat-recipes);
+}
+body[data-category="ingredients"] .toc-list a.is-active,
+body[data-category="ingredients"] .toc-list a[aria-current] {
+  color: var(--cat-ingredients);
+  border-left-color: var(--cat-ingredients);
+}
+body[data-category="techniques"] .toc-list a.is-active,
+body[data-category="techniques"] .toc-list a[aria-current] {
+  color: var(--cat-techniques);
+  border-left-color: var(--cat-techniques);
+}
+body[data-category="cuisines"] .toc-list a.is-active,
+body[data-category="cuisines"] .toc-list a[aria-current] {
+  color: var(--cat-cuisines);
+  border-left-color: var(--cat-cuisines);
+}
+body[data-category="equipment"] .toc-list a.is-active,
+body[data-category="equipment"] .toc-list a[aria-current] {
+  color: var(--cat-equipment);
+  border-left-color: var(--cat-equipment);
+}
+body[data-category="hubs"] .toc-list a.is-active,
+body[data-category="hubs"] .toc-list a[aria-current] {
+  color: var(--cat-hubs);
+  border-left-color: var(--cat-hubs);
+}
+body[data-category="safety"] .toc-list a.is-active,
+body[data-category="safety"] .toc-list a[aria-current] {
+  color: var(--cat-safety);
+  border-left-color: var(--cat-safety);
+}
+
+/* Sidebar topic title: italic accent in category color */
+body[data-category="ingredients"] .toc-topic { color: var(--cat-ingredients); }
+body[data-category="techniques"]  .toc-topic { color: var(--cat-techniques); }
+body[data-category="cuisines"]    .toc-topic { color: var(--cat-cuisines); }
+body[data-category="equipment"]   .toc-topic { color: var(--cat-equipment); }
+body[data-category="hubs"]        .toc-topic { color: var(--cat-hubs); }
+body[data-category="safety"]      .toc-topic { color: var(--cat-safety); }
+
+/* Breadcrumb crumbs: keep the first crumb category-tinted */
+.toc-breadcrumb .bc-crumb:first-child {
+  color: var(--cat-recipes);
+  border-bottom-color: color-mix(in srgb, var(--cat-recipes) 35%, transparent);
+}
+body[data-category="ingredients"] .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-ingredients); }
+body[data-category="techniques"]  .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-techniques); }
+body[data-category="cuisines"]    .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-cuisines); }
+body[data-category="equipment"]   .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-equipment); }
+body[data-category="hubs"]        .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-hubs); }
+body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-safety); }
+
+/* The recipe-time accent in the hero stat strip already uses --accent.
+   On non-recipe topic-hero pages there's no time stat, so no change. */

@@ -1,0 +1,44 @@
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Cherry tomato'
+desc: 'Small (1.5 to 3 cm) round or oval tomato cultivars (Solanum lycopersicum), bred for high sugar concentration, dense pectin-rich flesh, and intense aromatic compounds relative to slicing tomatoes. The structural sweet tomato of salads, pastas, and pounded salads where the cook wants tomato gel and sweetness without the mass and water of a slicing tomato.'
+metaDesc: 'Cherry tomato: cultivar genetics vs slicing tomatoes, brix sugar concentration, role in pastas and som tum, blistering and roasting techniques, sourcing and seasonality.'
+tags: ['fruit', 'vegetable']
+density_g_per_ml: 0.95
+updated: '2026-05-10'
+
+usda_fdc_id: 168569
+
+about: |
+  Cherry tomatoes are small-fruited cultivars within Solanum lycopersicum, the same species as standard slicing tomatoes (beefsteak, San Marzano, brandywine), but bred over centuries for distinct horticultural traits: small fruit size (1.5 to 3 cm diameter, 8 to 25 g per fruit), high sugar concentration (brix 8 to 12%, versus 4 to 6% for slicing tomatoes), thicker pectin-rich walls, and intensified aromatic-volatile profile. The cultivar group includes "true" cherry tomatoes (round, 2 to 3 cm), grape tomatoes (oval-elongated, 2 to 3 cm long), sungold (orange, exceptionally sweet, high in beta-carotene), campari (medium-cherry, 3 to 4 cm), and dozens of heirloom small-fruited varieties (sweet 100, isis candy, black cherry). The intensity of flavor per gram is roughly twice that of a slicing tomato, which is why cherry tomatoes function differently in cooking: small inclusions deliver disproportionate flavor and structural pectin without contributing the volume of water that a chopped slicing tomato would.
+
+  Functional role across cuisines. **Italian**: in pasta sauces (cherry-tomato cacio e pepe, pomodorini con orecchiette, datterini-and-burrata), where the cherry tomatoes are halved and quickly cooked with olive oil and garlic, the dense pectin and concentrated sugar produce a thick glossy sauce in 5 to 8 minutes that a slicing tomato would need 30+ minutes of reduction to match. Also raw in panzanella (with charred or salt-cured technique) and caprese. **Thai**: in som tum, where the halved tomatoes are pounded into the mortar to release their gel and sugar into the four-flavor dressing. **Greek and Levantine**: in horiatiki (Greek salad) and in fattoush, raw and halved with feta or sumac. **Mediterranean and South-French**: in tians, in tomate provençale, in panzanella variations. **Spanish/Iberian**: in pan con tomate (rubbed onto toast) and in cold tomato soups. **Mexican**: in pico de gallo when slicing tomatoes are not at peak season.
+
+  Brix and aromatic chemistry. The brix (sugar concentration as a percent of soluble solids in juice) of a good cherry tomato runs 9 to 12%, comparable to a moderately sweet stone fruit. The high brix is what makes cherry tomatoes useful in raw-pounded and quick-cooked applications: the dressing or sauce reads sweet-tomato in a way that low-brix slicing tomatoes cannot deliver without long reduction. Aromatic compounds include cis-3-hexenal (the "freshly cut tomato" green note), 6-methyl-5-hepten-2-one (the "sweet tomato" floral note), beta-ionone (the violet-floral note from carotenoid breakdown, especially in orange and yellow varieties), and a complex set of pyrazines that develop during ripening. Cherry-tomato cultivars are bred for high concentrations of all of these, slicing tomatoes optimized for size and shippability often have substantially less aromatic complexity per gram.
+
+  Pectin and gel structure. The walls of a cherry tomato are richer in pectin than a slicing tomato's, which is the structural carbohydrate that lets a tomato sauce thicken without flour or starch. Pounding cherry tomatoes (Thai som tum) or quick-cooking them (Italian pasta) ruptures the cells and releases pectin into the surrounding liquid, where it cross-links with calcium and hydrogen ions to form a gel. The gel thickens dressings and sauces and helps them cling to vegetables and pasta. This is why cherry-tomato pasta sauces are silky-coating in 8 minutes while slicing-tomato sauces need long reduction, the cherry-tomato pectin-to-water ratio is much more favorable.
+
+  When to use cherry vs slicing. Cherry tomatoes are right when (1) the dish wants concentrated tomato flavor in small structural pieces (som tum, halved cherry tomatoes in salads, raw inclusions); (2) the dish wants a fast-thickening pectin-rich sauce (cherry-tomato pasta, blistered cherry tomatoes for chicken or fish); (3) the season is between peak slicing tomato windows and cherry-cultivar greenhouse production is more reliable than field-grown slicers. Slicing tomatoes are right when (1) the dish wants tomato as the primary mass component (Italian sandwich, BLT, sliced beefsteak with salt and olive oil); (2) the dish wants a long-reduced, deeply concentrated tomato base (Italian gravy, marinara, gazpacho); (3) when a slicing tomato is in true peak season (August in temperate-zone gardens) and is at its best brix and aromatic concentration.
+
+  Buying signals. Choose cherry tomatoes that are firm, glossy, with their stems still attached (a sign of recent harvest and freshness), and with no soft mushy patches. Color should be uniform across the fruit; uneven coloration suggests either an heirloom variety (which is fine) or premature ripening (which is not). Smell at the stem, fresh ripe cherry tomatoes carry a distinctly tomato-y, slightly green-leafy aroma; flat or absent smell signals a slicing-tomato-style hothouse cultivar that has been bred for shippability over flavor. Sungold and other orange varieties are typically sweeter and more aromatic than red varieties; campari sits between cherry and slicing in size but with cherry-like flavor concentration.
+
+  Seasonality. Field-grown cherry tomatoes peak in late summer (July through September in the Northern hemisphere temperate zone). Greenhouse-grown cherry tomatoes are available year-round but with substantially reduced aromatic complexity in winter; the brix may stay reasonable but the volatile-aromatic profile is muted. The cook can compensate in winter applications by adding lemon zest and a small drop of red wine vinegar to mimic the missing aromatic top notes; the dish will not be summer-tomato but will not read as flat winter-tomato either.
+
+storage: |
+  Whole cherry tomatoes at room temperature, stem-side down, on the counter: 3 to 5 days at peak quality. Refrigeration is widely (and incorrectly) used; cold temperatures below 12°C / 54°F damage tomato cell membranes, mute the volatile aromatics permanently, and produce mealy texture. Refrigerate only after the tomatoes have already begun to spoil and you want to extend their cooking-acceptable life by 2 to 3 days. The flavor compromise is real, refrigerated cherry tomatoes never recover their full aromatic profile even after warming to room temperature. For longer storage, oven-dry the tomatoes (200°F / 95°C for 4 to 6 hours, halved on a wire rack) into "sun-dried" cherry tomatoes that hold 3 months refrigerated and 1 year frozen, with concentrated flavor and useful texture. Spoilage cues: soft mushy patches with juice leakage, surface mold (white, gray, or black), fermented smell, splitting skin with seepage. Discard the affected fruit; the rest of the container is usually fine if removed quickly.
+
+substitutions:
+  - for: 'cherry tomato (raw salads, pasta, som tum)'
+    use: 'campari or grape tomato'
+    note: 'Both are similarly bred for sweetness and aromatic complexity. Campari are slightly larger (3 to 4 cm); grape tomatoes are oval and slightly less sweet but more shippable. Either works as a 1:1 substitute. Slicing tomatoes are not a clean substitute, the brix and pectin profiles differ enough to shift the dish.'
+  - for: 'cherry tomato (Italian quick-cook pasta sauce)'
+    use: 'datterini tomatoes (Italian small-fruited cultivar)'
+    note: 'Datterini are the Italian native equivalent, slightly oval, dense, sweet, with high pectin. The closest cultivar to traditional Italian small-tomato pasta sauces. Imported canned datterini (peeled, in juice) are sold at well-stocked Italian groceries; substitute 1:1 by drained weight.'
+  - for: 'cherry tomato (out of season, winter)'
+    use: 'canned San Marzano tomatoes, cut small + a pinch of sugar'
+    note: 'Out-of-season fresh cherry tomatoes are often flavorless. Canned San Marzanos (peeled, in juice) cut into rough 2 cm pieces, plus a small pinch of sugar to compensate for the lower brix, will out-perform a winter-fresh-cherry-tomato in cooked applications. Not suitable for raw applications (cured tomato vs fresh is a perceptible texture difference).'
+---

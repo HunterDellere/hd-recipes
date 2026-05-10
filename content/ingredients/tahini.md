@@ -1,0 +1,45 @@
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Tahini'
+desc: 'Hulled raw or lightly toasted sesame seeds, stone-ground to a pale, pourable paste. The structural backbone of Levantine cooking — hummus, tahini sauce, halva, and the dressing for half the salads of the eastern Mediterranean.'
+metaDesc: 'Tahini: hulled-sesame paste from the Levant. Why single-origin tahini is structurally different from supermarket house brands, the seizing chemistry when water hits the paste, and applications across hummus, dressings, and halva.'
+tags: ['umami', 'levantine', 'pantry']
+density_g_per_ml: 1.05
+imperial_pref: 'tbsp'
+updated: '2026-05-10'
+
+usda_fdc_id: 170189
+
+about: |
+  Tahini is paste made from sesame seeds (Sesamum indicum) that have been hulled, washed, optionally lightly toasted, and stone-ground to a thick, pourable consistency. The Levantine and Mediterranean tradition that defines the ingredient uses raw or only briefly toasted hulled seeds, which produces a pale tan paste with a sweet, faintly bitter, distinctly green-grassy aroma. This is the structural ingredient of Levantine cooking ; the binder for hummus, the structural emulsifier in tahini sauce, the fat-and-protein backbone of halva, and the dressing for roasted vegetables, falafel sandwiches, and grain salads from Lebanon to Israel to Palestine to Syria. It is the single most consequential pantry ingredient across the Levant; a kitchen with one good jar of tahini can produce dozens of canonical preparations, and a kitchen with bad tahini can produce none of them well.
+
+  The chemistry of seizing. Tahini behaves counterintuitively when water is added. Sesame seed paste is roughly 55 percent fat, 20 percent protein, and 10 percent fiber, with the fat held as discrete droplets within a protein-and-fiber matrix released by grinding. When a small amount of cold water (or lemon juice, or any water-based liquid) is whisked into tahini, the paste seizes ; it transforms from smooth and pourable into a thick, putty-like mass that resists mixing. This is not a mistake, it is the recipe. The tahini proteins (primarily 11S globulins and 7S vicilins) hydrate and unfold when water hits them, and the unfolded protein chains entangle to form a gel network. Continued whisking, with the addition of more water (and acid, and salt), gradually loosens the gel: the protein network finishes hydrating, traps water uniformly, and the paste relaxes into a creamy emulsion that is dramatically lighter and fluffier than the original tahini. The transformation is the test of tahini quality: good tahini moves through the seize cleanly and loosens to a stable, pourable sauce; bad tahini (from oxidized or poorly ground seeds) splits, stays grainy, or never fully relaxes. The technique is documented at `techniques/tahini-emulsion`.
+
+  Single-origin versus blended supermarket tahini. The variation in commercial tahini is enormous and consequential. Single-origin tahini from a known source (Soom, Seed + Mill, Karawan, Al Wadi, Mymouné, Whole Foods 365 sourced single-origin) uses sesame from one farm region, ground in small batches, and tastes recognizably of sesame ; sweet, faintly green, with a smooth pourability. Industrial-blended tahini (the supermarket house brand, the cheapest jar in the international aisle) is a blend of sesame from multiple regions that may be over-toasted to even out flavor variation, ground coarsely, and frequently tastes pasty, chalky, or aggressively bitter. The single-origin product costs two to three times more and is the only kind that works for hummus or finished tahini sauce; blended supermarket tahini can be salvaged for cooked applications (sauces that get reduced, dressings with strong other flavors) but is wrong for any preparation where tahini is the lead. The most common Levantine kitchen recommendation is: buy the better tahini, use it for everything, and the cost difference disappears in usage volume.
+
+  How it differs from Chinese sesame paste. Chinese sesame paste (zhima jiang, 芝麻酱) is made from heavily toasted sesame seeds and reads dark, deep, and aggressively roasted by comparison; the toasting is the entire flavor argument. Substituting Chinese sesame paste for tahini in hummus produces an unpleasantly bitter, dark-colored hummus that misses the bright character of the dish; substituting tahini for Chinese sesame paste in dan dan mian or sesame noodles produces a flat, sweet sauce that misses the toasted depth. The two ingredients share the underlying technology (ground sesame paste) but solve different culinary problems and are not interchangeable. The full discussion is on the Chinese sesame paste page.
+
+  Applications by category. The Levantine canon uses tahini as a structural ingredient: in hummus (the tahini-to-chickpea ratio in serious-cook hummus runs 1:2 by weight, dramatically higher than supermarket recipes); in tahini sauce (whisked with water, lemon, garlic, salt to a creamy pourable consistency); in baba ganoush and moutabal; in tarator (tahini sauce variants for fish and vegetables); in the broad family of dressings for falafel and shawarma sandwiches. The Israeli and Palestinian canon extends this with tahini-as-the-thing: drizzles over roasted vegetables (cauliflower, eggplant, sweet potato), as a sauce for grain bowls, as the binder for tahini cookies and tahini ice cream. The Mediterranean and modern Western canon uses tahini in salad dressings, swirled into yogurt or labneh, baked into halva (the Greek-Turkish-Levantine sweet of tahini, sugar, and pistachio), and as a fat substitute in vegan baking (the sesame protein performs structurally where eggs would otherwise sit).
+
+  Buying notes. Look for an ingredient list that reads only "sesame seeds" (and possibly salt). Anything with added sugar, hydrogenated oil, palm oil, or stabilizers is a downgraded product. The paste should be pale tan to light brown (single-origin Lebanese and Palestinian tahini tends pale; some Israeli tahini is slightly darker from extra toasting); aggressively dark tahini is over-toasted and reads bitter. A layer of sesame oil rises to the top of the jar in storage; this is normal and indicates an unstabilized natural product, not a defect. Stir vigorously with a long spoon or knife before measuring; an unstirred jar gives an inaccurate fat-to-paste ratio.
+
+storage: 'Pantry before opening, away from heat and light, 12 to 18 months on the shelf. After opening, refrigeration is optional but extends shelf life and slows the oxidation of the unsaturated sesame oil at the surface; refrigerated open tahini keeps 6 to 9 months. The surface oil can go rancid before the paste below, so always smell before use; a sharp, paint-thinner, or crayon-like aroma in the surface oil signals rancidity. If only the top layer smells off and the paste below smells clean after stirring, the paste is usable; if the rancid note persists through, discard. Stir vigorously before each use to redistribute oil that has separated. Failure modes: rancid surface oil (oxidation of polyunsaturated fats), grainy texture that will not relax (poor original grind, or paste held past prime), visible mold (rare; water contamination, discard).'
+
+substitutions:
+  - for: 'tahini (in hummus, baba ganoush, tahini sauce — any preparation where tahini leads)'
+    use: 'no real substitute; use better tahini if the issue is supermarket house brand'
+    note: 'Tahini is structural in these preparations; nothing else replicates the seize-and-relax emulsion behavior or the specific flavor profile. Upgrading from blended supermarket tahini to single-origin (Soom, Seed + Mill, Karawan) typically solves the underlying problem, which is usually about tahini quality rather than absence.'
+  - for: 'tahini (in salad dressings and grain-bowl sauces with strong other flavors)'
+    use: 'unsweetened natural almond butter or cashew butter, plus 1 tsp / 5 g toasted sesame oil per 3 tbsp / 45 g nut butter'
+    note: 'Almond and cashew butters mimic the textural role; the sesame oil approximates aroma. The dressing reads more nutty and less green; works in fusion contexts but not in canonical Levantine recipes where tahini is named.'
+  - for: 'tahini (homemade, when the quality of available tahini is poor)'
+    use: 'hulled sesame seeds, lightly toasted, ground in a food processor with neutral oil'
+    note: 'Toast 200 g hulled white sesame seeds in a 160°C / 325°F oven for 10 to 12 minutes until pale gold and fragrant (do not brown deeply ; the paste should stay light). Cool, then grind in a food processor with 50 g neutral oil for 8 to 10 minutes, scraping frequently, until smooth and pourable. Closer to commercial tahini than any nut-butter substitute; adjust to taste.'
+  - for: 'tahini (allergy-driven sesame avoidance)'
+    use: 'sunflower seed butter'
+    note: 'Closest seed-allergy-friendly base; loses sesame flavor entirely but retains the textural and emulsifying role. Acceptable in dressings and bowl sauces; wrong in hummus, where the sesame flavor is the dish.'
+---

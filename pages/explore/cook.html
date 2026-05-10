@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=3">
+<link rel="stylesheet" href="../../style.css?v=6">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Cook","description":"Browse all recipes — filter by cuisine, course, diet, time, and difficulty.","url":"https://recipes.hd.dev/pages/explore/cook.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-04-26","dateModified":"2026-04-26","publisher":{"@type":"Organization","name":"hd · recipes"},"mainEntityOfPage":"https://recipes.hd.dev/pages/explore/cook.html"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://recipes.hd.dev/"},{"@type":"ListItem","position":2,"name":"explore","item":"https://recipes.hd.dev/#cat-explore"},{"@type":"ListItem","position":3,"name":"Cook","item":"https://recipes.hd.dev/pages/explore/cook.html"}]}</script>
 </head>
@@ -79,7 +79,7 @@
     <div class="fam-intro">
       <p class="fam-intro-text">Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.</p>
       <div class="fam-stats" role="navigation" aria-label="Jump to category"><a class="fam-stat" href="#cat-recipes" data-category="recipes">
-        <span class="fam-stat-num">75</span>
+        <span class="fam-stat-num">91</span>
         <span class="fam-stat-label">Recipes</span>
       </a></div>
     </div>
@@ -97,6 +97,10 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="American" data-filter-cuisine="American">
               <span class="filter-opt-label">American</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Cantonese" data-filter-cuisine="Cantonese">
+              <span class="filter-opt-label">Cantonese</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Chinese" data-filter-cuisine="Chinese">
@@ -137,6 +141,18 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Korean" data-filter-cuisine="Korean">
               <span class="filter-opt-label">Korean</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Levantine" data-filter-cuisine="Levantine">
+              <span class="filter-opt-label">Levantine</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Mediterranean (Levantine lean)" data-filter-cuisine="Mediterranean (Levantine lean)">
+              <span class="filter-opt-label">Mediterranean (Levantine lean)</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Mexican" data-filter-cuisine="Mexican">
+              <span class="filter-opt-label">Mexican</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Pakistani" data-filter-cuisine="Pakistani">
@@ -217,6 +233,10 @@
         <div class="filter-panel filter-panel-multi" role="group" aria-label="Tag">
           <p class="filter-panel-hint">Multi-select — recipes match all chosen tags</p>
           
+            <label class="filter-opt">
+              <input type="checkbox" value="acid" data-filter-tag="acid">
+              <span class="filter-opt-label">acid</span>
+            </label>
             <label class="filter-opt">
               <input type="checkbox" value="aromatic" data-filter-tag="aromatic">
               <span class="filter-opt-label">aromatic</span>
@@ -310,6 +330,10 @@
               <span class="filter-opt-label">grain</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="herb" data-filter-tag="herb">
+              <span class="filter-opt-label">herb</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="holiday" data-filter-tag="holiday">
               <span class="filter-opt-label">holiday</span>
             </label>
@@ -318,12 +342,12 @@
               <span class="filter-opt-label">lamb</span>
             </label>
             <label class="filter-opt">
-              <input type="checkbox" value="levantine" data-filter-tag="levantine">
-              <span class="filter-opt-label">levantine</span>
-            </label>
-            <label class="filter-opt">
               <input type="checkbox" value="make-ahead" data-filter-tag="make-ahead">
               <span class="filter-opt-label">make-ahead</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="mediterranean" data-filter-tag="mediterranean">
+              <span class="filter-opt-label">mediterranean</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="no-cook" data-filter-tag="no-cook">
@@ -332,6 +356,10 @@
             <label class="filter-opt">
               <input type="checkbox" value="noodles" data-filter-tag="noodles">
               <span class="filter-opt-label">noodles</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="nuts" data-filter-tag="nuts">
+              <span class="filter-opt-label">nuts</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="one-pot" data-filter-tag="one-pot">
@@ -506,7 +534,7 @@
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">
         <h2 class="fam-cat-title">Recipes</h2>
-        <span class="fam-cat-count">75 entries</span>
+        <span class="fam-cat-count">91 entries</span>
       </div>
       <p class="fam-cat-blurb">Tested dishes — scale, shop, cook.</p>
       <div class="card-grid" data-grid>
@@ -537,6 +565,20 @@
           <div class="ec-meta"><span class="ec-meta-item">dessert</span><span class="ec-meta-item ec-meta-time"><strong>22 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/caesar-salad-with-anchovy-emulsion.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian-American" data-course="appetizer" data-diet="pescatarian" data-difficulty="medium" data-time="25" data-tags="salad|american|umami|egg|fish">
+          <span class="ec-cat">recipes</span><span class="ec-title">Caesar salad with anchovy emulsion</span><span class="ec-desc">Cold romaine hearts under a coddled-egg-yolk dressing built around dissolved anchovy, garlic, dijon, lemon, wo</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian-American</span><span class="ec-meta-item">appetizer</span><span class="ec-meta-item ec-meta-time"><strong>30 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/cantonese-steamed-whole-fish-with-ginger-scallion.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Cantonese" data-course="dinner" data-diet="dairy-free|gluten-free" data-difficulty="medium" data-time="20" data-tags="seafood|fish|chinese|weeknight|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Cantonese steamed whole fish with ginger and scallion</span><span class="ec-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 minutes by</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Cantonese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>27 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>2</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/cantonese-white-congee.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="breakfast" data-diet="vegetarian|dairy-free|nut-free" data-difficulty="easy" data-time="20" data-tags="rice|chinese|comfort|breakfast|one-pot|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Cantonese white congee</span><span class="ec-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The rice pretreat</span>
@@ -643,6 +685,27 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/dry-roasted-peanuts.html" data-category="recipes" data-type="recipe" data-card data-cuisine="" data-course="snack" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="5" data-tags="nuts|pantry|snack">
+          <span class="ec-cat">recipes</span><span class="ec-title">Dry-roasted peanuts</span><span class="ec-desc">Raw skin-on or blanched peanuts dry-roasted in a 175°C / 350°F oven until evenly amber, fragrant, and shatter-</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">snack</span><span class="ec-meta-item ec-meta-time"><strong>22 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/ensalada-de-nopales.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mexican" data-course="side" data-diet="vegetarian|gluten-free" data-difficulty="easy" data-time="30" data-tags="salad|mexican|vegetable|no-cook|side|weeknight|acid">
+          <span class="ec-cat">recipes</span><span class="ec-title">Ensalada de nopales</span><span class="ec-desc">Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and Maillard br</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mexican</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>38 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/fattoush-with-sumac-and-toasted-pita.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="30" data-tags="salad|levantine|mediterranean|vegetable|herb|acid|bread|no-cook">
+          <span class="ec-cat">recipes</span><span class="ec-title">Fattoush with sumac and toasted pita</span><span class="ec-desc">Levantine bread salad: oven-crisped day-old pita over chopped raw vegetables, dressed with a sumac, pomegranat</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>35 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/fresh-egg-pasta.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="dinner" data-diet="vegetarian" data-difficulty="medium" data-time="30" data-tags="pasta|italian|pantry|weekend-project">
           <span class="ec-cat">recipes</span><span class="ec-title">Fresh egg pasta</span><span class="ec-desc">Tipo 00 flour and whole eggs, kneaded to silk and rolled thin. The base for tonnarelli, tagliatelle, pappardel</span>
         <div class="ec-foot">
@@ -713,12 +776,26 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/kachumber-with-cumin-lime.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian" data-course="side" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="22" data-tags="salad|indian|vegetable|herb|acid|no-cook|side|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Kachumber with cumin and lime</span><span class="ec-desc">North Indian chopped raw salad: even fine dice of cucumber, tomato, and red onion, dressed with toasted cumin </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Indian</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>23 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/ojingeo-bokkeum.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Korean" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="25" data-tags="korean|seafood|fish|spicy|stir-fry|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)</span><span class="ec-desc">Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-gochugaru s</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>28 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>3</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/larb-gai-thai-minced-chicken-salad.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Thai" data-course="dinner" data-diet="dairy-free|gluten-free" data-difficulty="medium" data-time="25" data-tags="salad|thai|chicken|spicy|umami|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Larb gai (Thai-Lao minced chicken salad)</span><span class="ec-desc">Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili powder, a</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Thai</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>28 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/lemony-green-beans-with-garlic-crunch.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="20" data-tags="vegetable|side|holiday|american|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Lemony green beans with garlic crunch</span><span class="ec-desc">Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on to</span>
@@ -754,6 +831,13 @@
           <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>30 min</strong> active</span><span class="ec-time-annot">+ 1 d rest</span></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/maple-cider-vinaigrette.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="sauce" data-diet="vegetarian|gluten-free" data-difficulty="easy" data-time="5" data-tags="sauce|american|pantry|make-ahead|acid">
+          <span class="ec-cat">recipes</span><span class="ec-title">Maple-cider vinaigrette</span><span class="ec-desc">Apple cider vinegar, dark maple syrup, whole-grain mustard, microplaned shallot, salt, and olive oil whisked i</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>5 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/midnight-velvet-mini-cake.html" data-category="recipes" data-type="recipe" data-card data-cuisine="" data-course="dessert" data-diet="vegetarian" data-difficulty="hard" data-time="90" data-tags="cake|chocolate|dessert|weekend-project">
           <span class="ec-cat">recipes</span><span class="ec-title">Midnight velvet mini cake with strawberry and balsamic caviar</span><span class="ec-desc">A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finished with str</span>
@@ -860,12 +944,40 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/roasted-beet-and-citrus-salad-with-whipped-feta.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mediterranean (Levantine lean)" data-course="side" data-diet="vegetarian|gluten-free" data-difficulty="easy" data-time="30" data-tags="salad|roast|mediterranean|levantine|vegetable|dairy|fruit|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Roasted beet and citrus salad with whipped feta</span><span class="ec-desc">Salt-roasted red beets, segmented blood orange, urfa-warmed pistachio, and a feta-yogurt cream whipped to spre</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean (Levantine lean)</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>30 min</strong> active</span><span class="ec-time-annot">+ 1 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/roasted-cauliflower-tahini-salad-with-pomegranate.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="25" data-tags="salad|levantine|mediterranean|vegetable|roast|umami|acid">
+          <span class="ec-cat">recipes</span><span class="ec-title">Roasted cauliflower tahini salad with pomegranate</span><span class="ec-desc">Cauliflower roasted hard at 230 °C until the florets are mahogany on the cut faces, dressed warm with a fluffy</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/roasted-delicata-and-farro-salad-with-maple-vinaigrette.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="dinner" data-diet="vegetarian" data-difficulty="easy" data-time="30" data-tags="salad|american|grain|roast|vegetable|umami|acid|nuts">
+          <span class="ec-cat">recipes</span><span class="ec-title">Roasted delicata and farro salad with maple vinaigrette</span><span class="ec-desc">Hard-roasted delicata half-moons (skin on) tossed with chewy farro, lacinato kale massaged in lemon-salt, toas</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>55 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/roasted-pear-gorgonzola-tartine.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="lunch" data-diet="vegetarian" data-difficulty="easy" data-time="15" data-tags="comfort|breakfast|no-cook|side">
           <span class="ec-cat">recipes</span><span class="ec-title">Roasted pear and gorgonzola tartine</span><span class="ec-desc">Bosc pear roasted in butter and balsamic until caramelized, smeared over a toasted sourdough slice with gorgon</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Italian</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>27 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>2</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/nicoise-salad.html" data-category="recipes" data-type="recipe" data-card data-cuisine="French" data-course="lunch" data-diet="pescatarian|gluten-free|dairy-free" data-difficulty="medium" data-time="40" data-tags="salad|french|mediterranean|fish|egg|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Salade niçoise</span><span class="ec-desc">Oil-poached tuna, blanched haricots verts, jammy egg, salt-cured tomato, and nicoise olives over an anchovy-di</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">French</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>1 h 20 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/salt-and-pepper-squid.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="chinese|seafood|fish|spicy|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Salt-and-pepper squid (Cantonese jiao yan you yu, 椒盐鱿鱼)</span><span class="ec-desc">Cross-hatch-scored squid tubes dredged in a cornstarch-and-rice-flour mix, deep-fried 90 seconds at 175°C, tos</span>
@@ -930,6 +1042,20 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/som-tam-thai-green-papaya-salad.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Thai" data-course="lunch" data-diet="dairy-free|gluten-free" data-difficulty="easy" data-time="20" data-tags="salad|thai|spicy|umami|no-cook|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Som tum thai (green papaya salad)</span><span class="ec-desc">Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce, and lime,</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Thai</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>20 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/sourdough-croutons.html" data-category="recipes" data-type="recipe" data-card data-cuisine="" data-course="side" data-diet="" data-difficulty="easy" data-time="8" data-tags="salad|pantry|side|make-ahead">
+          <span class="ec-cat">recipes</span><span class="ec-title">Sourdough croutons</span><span class="ec-desc">Day-old sourdough torn into chunks, tossed in garlic-infused olive oil, oven-toasted to a uniform shatter. The</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>19 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/soy-glazed-peanuts.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="side" data-diet="vegan|vegetarian|dairy-free" data-difficulty="easy" data-time="13" data-tags="pantry|chinese|umami|side|make-ahead">
           <span class="ec-cat">recipes</span><span class="ec-title">Soy-glazed peanuts</span><span class="ec-desc">Raw peanuts toasted in oil until they smell roasted, then tossed off-heat with a soy-sugar-vinegar glaze that </span>
         <div class="ec-foot">
@@ -943,6 +1069,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Italian</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>45 min</strong> active</span><span class="ec-time-annot">+ 3 h rest</span></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/spaghetti-with-beef-oyster-mushroom-shallot-ragu.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="dinner" data-diet="" data-difficulty="medium" data-time="35" data-tags="weeknight|pasta|italian|umami|comfort">
+          <span class="ec-cat">recipes</span><span class="ec-title">Spaghetti with beef, oyster mushroom, and shallot ragu</span><span class="ec-desc">A 45-minute weeknight ragu engineered around the umami partnership between dry-seared oyster mushrooms and dee</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>45 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/squid-ink-pasta.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="italian|pasta|seafood|fish|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Squid ink pasta with calamari (linguine al nero di seppia)</span><span class="ec-desc">Squid simmered 35 minutes with white wine, San Marzano tomatoes, garlic, and chili flakes until the collagen h</span>
@@ -985,6 +1118,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Thai</span><span class="ec-meta-item">drink</span><span class="ec-meta-item ec-meta-time"><strong>1 h</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>2</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/toasted-rice-powder.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Thai" data-course="sauce" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="10" data-tags="pantry|thai|grain">
+          <span class="ec-cat">recipes</span><span class="ec-title">Toasted glutinous-rice powder (khao khua)</span><span class="ec-desc">Raw glutinous rice dry-toasted in a hot skillet to amber, cooled, and ground coarse. The structural element of</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Thai</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>12 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/toasted-sesame-paste.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="sauce" data-diet="vegan|gluten-free" data-difficulty="easy" data-time="25" data-tags="sauce|umami|chinese|pantry|make-ahead">
           <span class="ec-cat">recipes</span><span class="ec-title">Toasted sesame paste (zhī ma jiàng)</span><span class="ec-desc">Hulled white sesame seeds toasted dark, ground to a thick caramel-brown paste with a splash of toasted sesame </span>
@@ -1066,10 +1206,13 @@
   </main>
 </div>
 
-<script src="../../scripts/toc-scroll.js"></script>
-<script src="../../scripts/recipe.js" defer></script>
-<script src="../../scripts/lightbox.js" defer></script>
-<script src="../../scripts/enhance.js" defer></script>
+<script src="../../scripts/toc-scroll.js?v=6"></script>
+<script src="../../scripts/recipe.js?v=6" defer></script>
+<script src="../../scripts/lightbox.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/palette.js?v=6" defer></script>
+<script src="../../scripts/hover-card.js?v=6" defer></script>
+<script src="../../scripts/reveal.js?v=6" defer></script>
 
 </body>
 </html>
