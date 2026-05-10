@@ -1,346 +1,79 @@
 [
   {
-    "path": "pages/recipes/furikake.html",
+    "path": "pages/recipes/chicken-gnocchi-soup.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Furikake (homemade rice seasoning)",
-    "desc": "Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice-grain-sized seasoning, then mixed with toasted sesame, shredded nori, and salt. The end-of-the-batch move that turns dashi byproducts into a pantry staple.",
+    "title": "Chicken gnocchi soup (Olive Garden copycat)",
+    "desc": "A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby spinach added off-heat for color and texture. The chain-restaurant comfort soup reverse-engineered with real chicken stock, a proper roux, and gnocchi cooked to just-floating in the broth.",
     "tags": [
-      "japanese",
-      "umami",
-      "pantry",
-      "rice",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "furikake",
-    "cuisine": "Japanese",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 12,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 35,
-      "total_min": 45,
-      "active_min": 15
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "dairy-free",
-      "pescatarian"
-    ],
-    "ingredients": [
-      {
-        "item": "spent kombu (from a fresh batch of dashi)",
-        "slug": "kombu",
-        "optional": false
-      },
-      {
-        "item": "spent katsuobushi (from a fresh batch of dashi)",
-        "slug": "katsuobushi",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "mirin (hon-mirin)",
-        "slug": "mirin",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "sake",
-        "slug": "sake",
-        "optional": false
-      },
-      {
-        "item": "toasted white sesame seeds",
-        "optional": false
-      },
-      {
-        "item": "nori sheet",
-        "slug": "nori",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dashi"
-    ],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 45,
-      "diffLabel": "easy",
-      "timeLead": "45 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 15,
-      "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/recipes/miso-soup.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Miso soup (miso-shiru)",
-    "desc": "Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat through a small sieve to break up clumps, finished with rehydrated wakame, cubed silken tofu, and sliced scallion. The miso enters at the end and never sees a boil ,  that single rule separates good miso soup from flat miso soup.",
-    "tags": [
-      "japanese",
+      "italian",
       "soup",
-      "umami",
+      "chicken",
+      "comfort",
       "weeknight"
     ],
     "status": "complete",
-    "_slug": "miso-soup",
-    "cuisine": "Japanese",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 12,
-      "total_min": 17,
-      "active_min": 12
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "vegetarian",
-      "pescatarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "kombu-katsuobushi dashi (niban or ichiban)",
-        "optional": false
-      },
-      {
-        "item": "silken tofu",
-        "slug": "silken-tofu",
-        "optional": false
-      },
-      {
-        "item": "dried wakame",
-        "slug": "wakame",
-        "optional": false
-      },
-      {
-        "item": "awase miso (or 50/50 mix white and red)",
-        "slug": "white-miso",
-        "optional": false
-      },
-      {
-        "item": "scallion, thinly sliced",
-        "slug": "scallion",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dashi"
-    ],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 17,
-      "diffLabel": "easy",
-      "timeLead": "17 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 12,
-      "filterMinutes": 12
-    }
-  },
-  {
-    "path": "pages/recipes/onigiri.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Onigiri (rice triangles)",
-    "desc": "Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-salt hands, optionally filled with a savory center, and wrapped in a sheet of toasted nori at the moment of eating. Portable, room-temperature, and the canonical Japanese hand-food.",
-    "tags": [
-      "japanese",
-      "rice",
-      "snack",
-      "make-ahead",
-      "breakfast"
-    ],
-    "status": "complete",
-    "_slug": "onigiri",
-    "cuisine": "Japanese",
-    "course": "lunch",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 30,
-      "total_min": 50,
-      "active_min": 25
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "dairy-free",
-      "pescatarian"
-    ],
-    "ingredients": [
-      {
-        "item": "Japanese short-grain rice (uruchimai)",
-        "slug": "japanese-short-grain-rice",
-        "optional": false
-      },
-      {
-        "item": "water (for cooking)",
-        "optional": false
-      },
-      {
-        "item": "cold water (tezu)",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "umeboshi (pickled plum), pitted",
-        "optional": true
-      },
-      {
-        "item": "salted salmon, broiled and flaked",
-        "optional": true
-      },
-      {
-        "item": "okaka (soy-and-sesame bonito flakes)",
-        "optional": true
-      },
-      {
-        "item": "tuna mayo (canned tuna, drained, mixed with Kewpie)",
-        "optional": true
-      },
-      {
-        "item": "toasted nori sheets (yaki-nori)",
-        "slug": "nori",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/yaki-udon.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Yaki udon (stir-fried udon noodles)",
-    "desc": "Thick, chewy udon noodles stir-fried over high heat with sliced pork belly, cabbage, carrot, scallion, and a soy-mirin-oyster-sauce glaze that reduces and clings to the noodles. The Kitakyushu-origin lighter, soy-based cousin to yakisoba ,  faster, deeper, and the canonical Japanese weeknight noodle stir-fry.",
-    "tags": [
-      "japanese",
-      "noodles",
-      "stir-fry",
-      "weeknight",
-      "pork",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "yaki-udon",
-    "cuisine": "Japanese",
+    "_slug": "chicken-gnocchi-soup",
+    "cuisine": "Italian-American",
     "course": "dinner",
-    "difficulty": "medium",
-    "servings": 2,
+    "difficulty": "easy",
+    "servings": 6,
     "time": {
       "prep_min": 15,
-      "cook_min": 10,
-      "total_min": 25,
-      "active_min": 22
+      "cook_min": 35,
+      "total_min": 50,
+      "active_min": 35
     },
     "updated": "2026-05-09",
-    "diet": [
-      "dairy-free"
-    ],
     "ingredients": [
       {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
+        "item": "unsalted butter",
+        "slug": "butter",
         "optional": false
       },
       {
-        "item": "dark soy sauce",
-        "slug": "dark-soy-sauce",
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
         "optional": false
       },
       {
-        "item": "mirin (hon-mirin)",
-        "slug": "mirin",
+        "item": "yellow onion, diced (5 mm)",
         "optional": false
       },
       {
-        "item": "sake",
-        "slug": "sake",
+        "item": "carrot, diced (5 mm)",
         "optional": false
       },
       {
-        "item": "oyster sauce",
+        "item": "celery, diced (5 mm)",
         "optional": false
       },
       {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
+        "item": "garlic, minced",
+        "slug": "garlic",
         "optional": false
       },
       {
-        "item": "dashi or water",
+        "item": "fresh thyme, leaves stripped",
         "optional": false
       },
       {
-        "item": "pork belly, sliced 3 mm thick across the grain",
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
         "optional": false
       },
       {
-        "item": "green cabbage, cut into 4 cm squares",
+        "item": "chicken stock (homemade if available)",
         "optional": false
       },
       {
-        "item": "carrot, julienned",
+        "item": "whole milk",
+        "slug": "whole-milk",
         "optional": false
       },
       {
-        "item": "shimeji or shiitake mushrooms, separated/sliced",
-        "optional": false
-      },
-      {
-        "item": "scallions, cut into 4 cm batons",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "frozen udon noodles (or vacuum-pack fresh)",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (for the wok)",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
+        "item": "heavy cream",
+        "slug": "heavy-cream",
         "optional": false
       },
       {
@@ -349,30 +82,459 @@
         "optional": false
       },
       {
-        "item": "shichimi tōgarashi",
-        "optional": true
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
       },
       {
-        "item": "katsuobushi (bonito flakes) for garnish",
-        "slug": "katsuobushi",
-        "optional": true
+        "item": "freshly grated nutmeg",
+        "optional": false
+      },
+      {
+        "item": "boneless skinless chicken thigh, cubed (2 cm)",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "fresh or shelf-stable potato gnocchi",
+        "optional": false
+      },
+      {
+        "item": "baby spinach, packed loosely",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano, finely grated for finishing",
+        "slug": "parmigiano-reggiano",
+        "optional": false
       }
     ],
     "techniques": [
-      "maillard-sear"
+      "blooming-aromatics"
     ],
     "equipment": [
-      "wok"
+      "Dutch oven or heavy soup pot",
+      "whisk",
+      "wooden spoon"
     ],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 25,
-      "diffLabel": "medium",
-      "timeLead": "25 min",
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 22,
-      "filterMinutes": 22
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/olive-garden-breadsticks.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Olive Garden breadsticks (the copycat)",
+    "desc": "Lightly enriched yeast dough with bread flour, butter, milk, and a small dose of sugar, shaped into 18 cm batons, proofed to pillow-soft, baked, then brushed with garlic butter and dusted with seasoned salt. The chain-restaurant breadstick reverse-engineered to the kitchen-correct version.",
+    "tags": [
+      "italian",
+      "bread",
+      "side",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "olive-garden-breadsticks",
+    "cuisine": "Italian-American",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 15,
+      "total_min": 130,
+      "active_min": 35
+    },
+    "updated": "2026-05-09",
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "whole milk, warmed to 35 °C",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted and cooled to lukewarm",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "garlic, pressed or finely grated on a microplane",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "garlic powder",
+        "optional": false
+      },
+      {
+        "item": "dried oregano",
+        "optional": false
+      },
+      {
+        "item": "dried parsley flakes",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "enriched-dough"
+    ],
+    "equipment": [
+      "stand mixer",
+      "bench scraper",
+      "kitchen scale",
+      "pastry brush"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 130,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "+ 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/spaghetti-bolognese.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Spaghetti bolognese (ragù alla bolognese, the household version)",
+    "desc": "Long-cooked Emilia-Romagna meat ragù: pancetta rendered into the soffritto, ground beef and pork browned hard for Maillard depth, white wine deglaze, milk to tenderize the meat proteins, and a small dose of tomato to round the dish without dominating it. Served over spaghetti as the household-American convention; tagliatelle is the canonical Italian pairing.",
+    "tags": [
+      "italian",
+      "pasta",
+      "beef",
+      "pork",
+      "umami",
+      "weekend-project",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "spaghetti-bolognese",
+    "cuisine": "Italian",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 180,
+      "total_min": 200,
+      "active_min": 45
+    },
+    "updated": "2026-05-09",
+    "ingredients": [
+      {
+        "item": "pancetta, finely diced (3 mm)",
+        "slug": "pancetta",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, finely diced (3 mm)",
+        "optional": false
+      },
+      {
+        "item": "carrot, finely diced (3 mm)",
+        "optional": false
+      },
+      {
+        "item": "celery, finely diced (3 mm)",
+        "optional": false
+      },
+      {
+        "item": "garlic, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "ground beef, 80/20 lean-fat",
+        "slug": "ground-beef",
+        "optional": false
+      },
+      {
+        "item": "ground pork, 70/30 lean-fat",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the meat browning)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "dry white wine (Pinot Grigio, Trebbiano, or Verdicchio)",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "canned San Marzano tomatoes, hand-crushed (with their juice)",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "beef or chicken stock",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano rind (the freezer treasure)",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "dried spaghetti (or tagliatelle, the canonical pairing)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the pasta water)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano, finely grated, for finishing",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter (the finishing knob)",
+        "slug": "butter",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "deglazing",
+      "pan-emulsion",
+      "blooming-aromatics"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 200,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "+ 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/tandoori-chicken-salad-sandwich.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tandoori chicken salad sandwich (Hunter's version)",
+    "desc": "Poached chicken thigh shredded fine, bound with a tandoori-masala-spiced mayo, layered with crisp celery, grated carrot, and toasted walnuts, and served on a buttered toasted croissant. The American chicken-salad-sandwich form re-engineered through a Punjabi spice base; the tandoori-mayo is the structural pivot that makes the dish.",
+    "tags": [
+      "indian",
+      "pakistani",
+      "american",
+      "chicken",
+      "weeknight",
+      "no-cook"
+    ],
+    "status": "complete",
+    "_slug": "tandoori-chicken-salad-sandwich",
+    "cuisine": "Indian-American fusion",
+    "course": "lunch",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 20,
+      "total_min": 75,
+      "active_min": 35
+    },
+    "updated": "2026-05-09",
+    "ingredients": [
+      {
+        "item": "boneless skinless chicken thigh",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "water (for the poach)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the poach)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, sliced",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic, smashed",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "mayonnaise (Hellmann's or Duke's)",
+        "slug": "mayonnaise",
+        "optional": false
+      },
+      {
+        "item": "plain whole-milk yogurt",
+        "slug": "yogurt",
+        "optional": false
+      },
+      {
+        "item": "tandoori masala (Shan, MDH, or homemade blend)",
+        "slug": "tandoori-masala",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "optional": false
+      },
+      {
+        "item": "garlic powder",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "cayenne or Kashmiri chili powder (for added heat)",
+        "slug": "kashmiri-chili-powder",
+        "optional": true
+      },
+      {
+        "item": "celery, finely diced (4 mm)",
+        "optional": false
+      },
+      {
+        "item": "carrot, finely grated on the box grater",
+        "optional": false
+      },
+      {
+        "item": "walnuts, toasted and roughly chopped",
+        "slug": "walnuts",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro, finely chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "red onion, finely diced (3 mm)",
+        "optional": false
+      },
+      {
+        "item": "large butter croissants (day-old preferred)",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, softened",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "butter lettuce or red-leaf lettuce, washed and dried",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "4-quart saucepan",
+      "box grater",
+      "small skillet for walnuts",
+      "sheet pan"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 75,
+      "diffLabel": "easy",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
     }
   },
   {

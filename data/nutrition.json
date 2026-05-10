@@ -270,33 +270,77 @@
       }
     ]
   },
+  "pages/recipes/chicken-gnocchi-soup.html": {
+    "perServing": {
+      "energy_kcal": 283,
+      "protein_g": 3.3,
+      "fat_g": 27.3,
+      "saturated_fat_g": 16,
+      "carbs_g": 7.3,
+      "fiber_g": 0.3,
+      "sugar_g": 1.3,
+      "sodium_mg": 562,
+      "potassium_mg": 66,
+      "calcium_mg": 72,
+      "iron_mg": 0,
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 933
+    },
+    "total": {
+      "energy_kcal": 1699,
+      "protein_g": 19.6,
+      "fat_g": 163.9,
+      "saturated_fat_g": 96.1,
+      "carbs_g": 44,
+      "fiber_g": 1.8,
+      "sugar_g": 7.8,
+      "sodium_mg": 3375,
+      "potassium_mg": 395,
+      "calcium_mg": 433,
+      "iron_mg": 1,
+      "vitamin_c_mg": 5,
+      "vitamin_a_iu": 5596
+    },
+    "missing": [
+      {
+        "name": "whole milk",
+        "slug": "whole-milk",
+        "reason": "no-cache"
+      },
+      {
+        "name": "boneless skinless chicken thigh, cubed (2 cm)",
+        "slug": "chicken-thigh",
+        "reason": "no-cache"
+      }
+    ]
+  },
   "pages/recipes/chicken-nihari.html": {
     "perServing": {
-      "energy_kcal": 18,
+      "energy_kcal": 129,
       "protein_g": 0.6,
-      "fat_g": 0.1,
-      "saturated_fat_g": 0,
+      "fat_g": 12.6,
+      "saturated_fat_g": 1.8,
       "carbs_g": 4.2,
       "fiber_g": 0.9,
       "sugar_g": 0.2,
       "sodium_mg": 779,
-      "potassium_mg": 82,
+      "potassium_mg": 83,
       "calcium_mg": 24,
       "iron_mg": 0,
       "vitamin_c_mg": 3,
       "vitamin_a_iu": 231
     },
     "total": {
-      "energy_kcal": 109,
+      "energy_kcal": 772,
       "protein_g": 3.8,
-      "fat_g": 0.8,
-      "saturated_fat_g": 0.2,
+      "fat_g": 75.8,
+      "saturated_fat_g": 10.5,
       "carbs_g": 25.5,
       "fiber_g": 5.6,
       "sugar_g": 1.5,
-      "sodium_mg": 4673,
-      "potassium_mg": 494,
-      "calcium_mg": 142,
+      "sodium_mg": 4674,
+      "potassium_mg": 495,
+      "calcium_mg": 143,
       "iron_mg": 2,
       "vitamin_c_mg": 17,
       "vitamin_a_iu": 1383
@@ -321,11 +365,6 @@
         "name": "cumin seeds",
         "slug": "cumin-seeds",
         "reason": "no-fdc"
-      },
-      {
-        "name": "ghee",
-        "slug": "ghee",
-        "reason": "no-cache"
       },
       {
         "name": "ground coriander",
@@ -813,6 +852,45 @@
       }
     ]
   },
+  "pages/recipes/fresh-potato-gnocchi.html": {
+    "perServing": {
+      "energy_kcal": 212,
+      "protein_g": 6.9,
+      "fat_g": 3,
+      "saturated_fat_g": 1.5,
+      "carbs_g": 38.4,
+      "fiber_g": 1.4,
+      "sugar_g": 0.2,
+      "sodium_mg": 3054,
+      "potassium_mg": 60,
+      "calcium_mg": 63,
+      "iron_mg": 1,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 93
+    },
+    "total": {
+      "energy_kcal": 849,
+      "protein_g": 27.5,
+      "fat_g": 12,
+      "saturated_fat_g": 6,
+      "carbs_g": 153.6,
+      "fiber_g": 5.4,
+      "sugar_g": 0.7,
+      "sodium_mg": 12215,
+      "potassium_mg": 239,
+      "calcium_mg": 250,
+      "iron_mg": 2,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 373
+    },
+    "missing": [
+      {
+        "name": "large egg yolk (the minimum-binding choice)",
+        "slug": "eggs",
+        "reason": "no-cache"
+      }
+    ]
+  },
   "pages/recipes/fresh-soy-milk.html": {
     "perServing": {},
     "total": {},
@@ -1110,6 +1188,45 @@
     "perServing": {},
     "total": {},
     "missing": []
+  },
+  "pages/recipes/homemade-mayonnaise.html": {
+    "perServing": {
+      "energy_kcal": 251,
+      "protein_g": 0,
+      "fat_g": 28.4,
+      "saturated_fat_g": 3.3,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "sodium_mg": 145,
+      "potassium_mg": 0,
+      "calcium_mg": 0,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 2011,
+      "protein_g": 0,
+      "fat_g": 227.5,
+      "saturated_fat_g": 26.3,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "sodium_mg": 1163,
+      "potassium_mg": 0,
+      "calcium_mg": 1,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "missing": [
+      {
+        "name": "large egg yolk (or whole egg for the immersion-blender route)",
+        "slug": "eggs",
+        "reason": "no-cache"
+      }
+    ]
   },
   "pages/recipes/homemade-oyster-sauce.html": {
     "perServing": {
@@ -1884,6 +2001,55 @@
       }
     ]
   },
+  "pages/recipes/olive-garden-breadsticks.html": {
+    "perServing": {
+      "energy_kcal": 63,
+      "protein_g": 0.1,
+      "fat_g": 6.1,
+      "saturated_fat_g": 3.8,
+      "carbs_g": 2.3,
+      "fiber_g": 0,
+      "sugar_g": 2.1,
+      "sodium_mg": 356,
+      "potassium_mg": 4,
+      "calcium_mg": 3,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 187
+    },
+    "total": {
+      "energy_kcal": 751,
+      "protein_g": 1.1,
+      "fat_g": 73,
+      "saturated_fat_g": 45.4,
+      "carbs_g": 27,
+      "fiber_g": 0.1,
+      "sugar_g": 25.1,
+      "sodium_mg": 4275,
+      "potassium_mg": 47,
+      "calcium_mg": 35,
+      "iron_mg": 0,
+      "vitamin_c_mg": 2,
+      "vitamin_a_iu": 2250
+    },
+    "missing": [
+      {
+        "name": "bread flour",
+        "slug": "bread-flour",
+        "reason": "no-cache"
+      },
+      {
+        "name": "whole milk, warmed to 35 °C",
+        "slug": "whole-milk",
+        "reason": "no-cache"
+      },
+      {
+        "name": "instant yeast",
+        "slug": "instant-yeast",
+        "reason": "no-cache"
+      }
+    ]
+  },
   "pages/recipes/onigiri.html": {
     "perServing": {
       "energy_kcal": 0,
@@ -2139,41 +2305,36 @@
   },
   "pages/recipes/raita.html": {
     "perServing": {
-      "energy_kcal": 2,
-      "protein_g": 0,
-      "fat_g": 0,
-      "saturated_fat_g": 0,
-      "carbs_g": 0.4,
+      "energy_kcal": 54,
+      "protein_g": 4.4,
+      "fat_g": 1.3,
+      "saturated_fat_g": 0.8,
+      "carbs_g": 6.3,
       "fiber_g": 0,
-      "sugar_g": 0.3,
-      "sodium_mg": 0,
-      "potassium_mg": 2,
-      "calcium_mg": 1,
+      "sugar_g": 6.2,
+      "sodium_mg": 58,
+      "potassium_mg": 197,
+      "calcium_mg": 153,
       "iron_mg": 0,
-      "vitamin_c_mg": 0,
-      "vitamin_a_iu": 1
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 43
     },
     "total": {
-      "energy_kcal": 10,
-      "protein_g": 0.1,
-      "fat_g": 0,
-      "saturated_fat_g": 0,
-      "carbs_g": 2.6,
+      "energy_kcal": 325,
+      "protein_g": 26.4,
+      "fat_g": 7.8,
+      "saturated_fat_g": 5,
+      "carbs_g": 37.8,
       "fiber_g": 0.3,
-      "sugar_g": 2,
-      "sodium_mg": 0,
-      "potassium_mg": 13,
-      "calcium_mg": 4,
+      "sugar_g": 37.2,
+      "sodium_mg": 350,
+      "potassium_mg": 1183,
+      "calcium_mg": 919,
       "iron_mg": 0,
-      "vitamin_c_mg": 0,
-      "vitamin_a_iu": 5
+      "vitamin_c_mg": 4,
+      "vitamin_a_iu": 260
     },
     "missing": [
-      {
-        "name": "plain whole-milk yogurt (Indian dahi or American whole-milk plain)",
-        "slug": "yogurt",
-        "reason": "no-cache"
-      },
       {
         "name": "Kashmiri chili powder (for color)",
         "slug": "kashmiri-chili-powder",
@@ -2374,41 +2535,36 @@
   },
   "pages/recipes/shrimp-pulao.html": {
     "perServing": {
-      "energy_kcal": 525,
-      "protein_g": 31.5,
-      "fat_g": 2.1,
-      "saturated_fat_g": 0.5,
-      "carbs_g": 94.4,
-      "sodium_mg": 1124,
-      "potassium_mg": 474,
-      "calcium_mg": 108,
+      "energy_kcal": 634,
+      "protein_g": 32.2,
+      "fat_g": 13.6,
+      "saturated_fat_g": 2.2,
+      "carbs_g": 95.4,
+      "sodium_mg": 1134,
+      "potassium_mg": 510,
+      "calcium_mg": 136,
       "iron_mg": 1,
       "fiber_g": 3.7,
-      "sugar_g": 0.2,
+      "sugar_g": 1.2,
       "vitamin_c_mg": 2,
-      "vitamin_a_iu": 323
+      "vitamin_a_iu": 330
     },
     "total": {
-      "energy_kcal": 2098,
-      "protein_g": 125.8,
-      "fat_g": 8.5,
-      "saturated_fat_g": 2.1,
-      "carbs_g": 377.5,
-      "sodium_mg": 4494,
-      "potassium_mg": 1898,
-      "calcium_mg": 432,
-      "iron_mg": 5,
+      "energy_kcal": 2534,
+      "protein_g": 129,
+      "fat_g": 54.4,
+      "saturated_fat_g": 8.9,
+      "carbs_g": 381.7,
+      "sodium_mg": 4537,
+      "potassium_mg": 2039,
+      "calcium_mg": 542,
+      "iron_mg": 6,
       "fiber_g": 14.7,
-      "sugar_g": 0.7,
+      "sugar_g": 4.9,
       "vitamin_c_mg": 7,
-      "vitamin_a_iu": 1291
+      "vitamin_a_iu": 1321
     },
     "missing": [
-      {
-        "name": "plain whole-milk yogurt",
-        "slug": "yogurt",
-        "reason": "no-cache"
-      },
       {
         "name": "Kashmiri chili powder",
         "slug": "kashmiri-chili-powder",
@@ -2438,11 +2594,6 @@
         "name": "cumin seeds",
         "slug": "cumin-seeds",
         "reason": "no-fdc"
-      },
-      {
-        "name": "ghee (or 50/50 butter + neutral oil)",
-        "slug": "ghee",
-        "reason": "no-cache"
       }
     ]
   },
@@ -2672,6 +2823,65 @@
     },
     "missing": []
   },
+  "pages/recipes/spaghetti-bolognese.html": {
+    "perServing": {
+      "energy_kcal": 420,
+      "protein_g": 16.8,
+      "fat_g": 38.5,
+      "saturated_fat_g": 16.5,
+      "carbs_g": 1.4,
+      "fiber_g": 0.1,
+      "sugar_g": 0.1,
+      "sodium_mg": 2609,
+      "potassium_mg": 230,
+      "calcium_mg": 133,
+      "iron_mg": 2,
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 450
+    },
+    "total": {
+      "energy_kcal": 2522,
+      "protein_g": 100.9,
+      "fat_g": 231.1,
+      "saturated_fat_g": 98.9,
+      "carbs_g": 8.3,
+      "fiber_g": 0.8,
+      "sugar_g": 0.6,
+      "sodium_mg": 15655,
+      "potassium_mg": 1381,
+      "calcium_mg": 798,
+      "iron_mg": 10,
+      "vitamin_c_mg": 4,
+      "vitamin_a_iu": 2699
+    },
+    "missing": [
+      {
+        "name": "pancetta, finely diced (3 mm)",
+        "slug": "pancetta",
+        "reason": "no-cache"
+      },
+      {
+        "name": "tomato paste",
+        "slug": "tomato-paste",
+        "reason": "no-cache"
+      },
+      {
+        "name": "canned San Marzano tomatoes, hand-crushed (with their juice)",
+        "slug": "canned-san-marzano-tomatoes",
+        "reason": "no-cache"
+      },
+      {
+        "name": "whole milk",
+        "slug": "whole-milk",
+        "reason": "no-cache"
+      },
+      {
+        "name": "bay leaves",
+        "slug": "bay-leaf",
+        "reason": "no-fdc"
+      }
+    ]
+  },
   "pages/recipes/squid-ink-pasta.html": {
     "perServing": {
       "energy_kcal": 134,
@@ -2746,6 +2956,60 @@
         "name": "large egg, beaten",
         "slug": "eggs",
         "reason": "no-cache"
+      }
+    ]
+  },
+  "pages/recipes/tandoori-chicken-salad-sandwich.html": {
+    "perServing": {
+      "energy_kcal": 155,
+      "protein_g": 3.2,
+      "fat_g": 14.6,
+      "saturated_fat_g": 4.7,
+      "carbs_g": 5.1,
+      "fiber_g": 1.3,
+      "sugar_g": 1.5,
+      "sodium_mg": 2242,
+      "potassium_mg": 144,
+      "calcium_mg": 55,
+      "iron_mg": 1,
+      "vitamin_c_mg": 2,
+      "vitamin_a_iu": 338
+    },
+    "total": {
+      "energy_kcal": 622,
+      "protein_g": 12.6,
+      "fat_g": 58.2,
+      "saturated_fat_g": 18.9,
+      "carbs_g": 20.6,
+      "fiber_g": 5.1,
+      "sugar_g": 6,
+      "sodium_mg": 8969,
+      "potassium_mg": 575,
+      "calcium_mg": 219,
+      "iron_mg": 2,
+      "vitamin_c_mg": 8,
+      "vitamin_a_iu": 1353
+    },
+    "missing": [
+      {
+        "name": "boneless skinless chicken thigh",
+        "slug": "chicken-thigh",
+        "reason": "no-cache"
+      },
+      {
+        "name": "bay leaf",
+        "slug": "bay-leaf",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "mayonnaise (Hellmann's or Duke's)",
+        "slug": "mayonnaise",
+        "reason": "no-cache"
+      },
+      {
+        "name": "tandoori masala (Shan, MDH, or homemade blend)",
+        "slug": "tandoori-masala",
+        "reason": "no-fdc"
       }
     ]
   },

@@ -79,7 +79,7 @@
     <div class="fam-intro">
       <p class="fam-intro-text">Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.</p>
       <div class="fam-stats" role="navigation" aria-label="Jump to category"><a class="fam-stat" href="#cat-recipes" data-category="recipes">
-        <span class="fam-stat-num">68</span>
+        <span class="fam-stat-num">72</span>
         <span class="fam-stat-label">Recipes</span>
       </a></div>
     </div>
@@ -111,8 +111,16 @@
               <span class="filter-opt-label">Indian</span>
             </label>
             <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Indian-American fusion" data-filter-cuisine="Indian-American fusion">
+              <span class="filter-opt-label">Indian-American fusion</span>
+            </label>
+            <label class="filter-opt">
               <input type="radio" name="cuisine" value="Italian" data-filter-cuisine="Italian">
               <span class="filter-opt-label">Italian</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Italian-American" data-filter-cuisine="Italian-American">
+              <span class="filter-opt-label">Italian-American</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Japanese" data-filter-cuisine="Japanese">
@@ -149,6 +157,10 @@
         </summary>
         <div class="filter-panel" role="group" aria-label="Course">
           
+            <label class="filter-opt">
+              <input type="radio" name="course" value="bread" data-filter-course="bread">
+              <span class="filter-opt-label">bread</span>
+            </label>
             <label class="filter-opt">
               <input type="radio" name="course" value="breakfast" data-filter-course="breakfast">
               <span class="filter-opt-label">breakfast</span>
@@ -462,7 +474,7 @@
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">
         <h2 class="fam-cat-title">Recipes</h2>
-        <span class="fam-cat-count">68 entries</span>
+        <span class="fam-cat-count">72 entries</span>
       </div>
       <p class="fam-cat-blurb">Tested dishes — scale, shop, cook.</p>
       <div class="card-grid" data-grid>
@@ -514,6 +526,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">breakfast</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>25 min</strong> active</span><span class="ec-time-annot">+ 1 h rest</span></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/chicken-gnocchi-soup.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian-American" data-course="dinner" data-diet="" data-difficulty="easy" data-time="35" data-tags="italian|soup|chicken|comfort|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Chicken gnocchi soup (Olive Garden copycat)</span><span class="ec-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby spinach adde</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian-American</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/chicken-nihari.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Pakistani" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="50" data-tags="pakistani|indian|chicken|spicy|umami|comfort">
           <span class="ec-cat">recipes</span><span class="ec-title">Chicken nihari (Pakistani slow-braised stew)</span><span class="ec-desc">Bone-in chicken slow-braised in a deeply spiced ghee-and-onion base for 90 minutes, the gravy thickened with t</span>
@@ -718,6 +737,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/olive-garden-breadsticks.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian-American" data-course="bread" data-diet="" data-difficulty="medium" data-time="35" data-tags="italian|bread|side|comfort">
+          <span class="ec-cat">recipes</span><span class="ec-title">Olive Garden breadsticks (the copycat)</span><span class="ec-desc">Lightly enriched yeast dough with bread flour, butter, milk, and a small dose of sugar, shaped into 18 cm bato</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian-American</span><span class="ec-meta-item">bread</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>35 min</strong> active</span><span class="ec-time-annot">+ 2 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/onigiri.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Japanese" data-course="lunch" data-diet="dairy-free|pescatarian" data-difficulty="easy" data-time="25" data-tags="japanese|rice|snack|make-ahead|breakfast">
           <span class="ec-cat">recipes</span><span class="ec-title">Onigiri (rice triangles)</span><span class="ec-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-salt hands, </span>
         <div class="ec-foot">
@@ -865,6 +891,13 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/spaghetti-bolognese.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="dinner" data-diet="" data-difficulty="medium" data-time="45" data-tags="italian|pasta|beef|pork|umami|weekend-project|comfort">
+          <span class="ec-cat">recipes</span><span class="ec-title">Spaghetti bolognese (ragù alla bolognese, the household version)</span><span class="ec-desc">Long-cooked Emilia-Romagna meat ragù: pancetta rendered into the soffritto, ground beef and pork browned hard </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>45 min</strong> active</span><span class="ec-time-annot">+ 3 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/squid-ink-pasta.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="italian|pasta|seafood|fish|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Squid ink pasta with calamari (linguine al nero di seppia)</span><span class="ec-desc">Squid simmered 35 minutes with white wine, San Marzano tomatoes, garlic, and chili flakes until the collagen h</span>
         <div class="ec-foot">
@@ -877,6 +910,13 @@
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>1 h 20 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/tandoori-chicken-salad-sandwich.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian-American fusion" data-course="lunch" data-diet="" data-difficulty="easy" data-time="35" data-tags="indian|pakistani|american|chicken|weeknight|no-cook">
+          <span class="ec-cat">recipes</span><span class="ec-title">Tandoori chicken salad sandwich (Hunter's version)</span><span class="ec-desc">Poached chicken thigh shredded fine, bound with a tandoori-masala-spiced mayo, layered with crisp celery, grat</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Indian-American fusion</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>1 h 15 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/thai-green-curry-paste.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Thai" data-course="sauce" data-diet="" data-difficulty="medium" data-time="25" data-tags="weekend-project|make-ahead|thai|spicy|aromatic|pantry">
