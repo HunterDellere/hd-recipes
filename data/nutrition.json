@@ -295,6 +295,50 @@
       }
     ]
   },
+  "pages/recipes/cantonese-steamed-whole-fish-with-ginger-scallion.html": {
+    "perServing": {
+      "energy_kcal": 63,
+      "protein_g": 2.1,
+      "fat_g": 2.3,
+      "saturated_fat_g": 0.2,
+      "carbs_g": 8.1,
+      "fiber_g": 1.3,
+      "sugar_g": 3,
+      "sodium_mg": 1607,
+      "potassium_mg": 233,
+      "calcium_mg": 29,
+      "iron_mg": 1,
+      "vitamin_c_mg": 7,
+      "vitamin_a_iu": 623
+    },
+    "total": {
+      "energy_kcal": 126,
+      "protein_g": 4.2,
+      "fat_g": 4.7,
+      "saturated_fat_g": 0.4,
+      "carbs_g": 16.3,
+      "fiber_g": 2.6,
+      "sugar_g": 6,
+      "sodium_mg": 3215,
+      "potassium_mg": 466,
+      "calcium_mg": 59,
+      "iron_mg": 2,
+      "vitamin_c_mg": 14,
+      "vitamin_a_iu": 1246
+    },
+    "missing": [
+      {
+        "name": "whole white fish (branzino, black sea bass, red snapper, or porgy), gutted and scaled, gills removed",
+        "slug": "whole-white-fish",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "neutral oil (peanut, rice bran, or canola)",
+        "slug": "neutral-oil",
+        "reason": "no-fdc"
+      }
+    ]
+  },
   "pages/recipes/cantonese-white-congee.html": {
     "perServing": {
       "energy_kcal": 84,
@@ -2118,6 +2162,11 @@
     },
     "missing": []
   },
+  "pages/recipes/light-soy-sauce.html": {
+    "perServing": {},
+    "total": {},
+    "missing": []
+  },
   "pages/recipes/lotus-root-herb-bites.html": {
     "perServing": {
       "energy_kcal": 22,
@@ -3478,6 +3527,17 @@
       "vitamin_a_iu": 0
     },
     "missing": []
+  },
+  "pages/recipes/shaoxing-wine.html": {
+    "perServing": {},
+    "total": {},
+    "missing": [
+      {
+        "name": "glutinous rice (sweet rice, sticky rice)",
+        "slug": "glutinous-rice",
+        "reason": "no-fdc"
+      }
+    ]
   },
   "pages/recipes/shiozake.html": {
     "perServing": {},

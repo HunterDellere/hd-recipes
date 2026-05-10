@@ -546,6 +546,26 @@
     }
   },
   {
+    "path": "pages/ingredients/neutral-oil.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Neutral oil (peanut, rice bran, canola, refined avocado)",
+    "desc": "High-smoke-point cooking oils with little intrinsic flavor: peanut, rice bran, canola, refined avocado, refined sunflower, refined safflower, grapeseed. The category that handles high-heat cooking when olive oil would smoke and toasted oils would burn.",
+    "tags": [
+      "fat",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "neutral-oil",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fat",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/nicoise-olives.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -1061,6 +1081,26 @@
     }
   },
   {
+    "path": "pages/ingredients/whole-white-fish.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Whole white fish (branzino, sea bass, snapper, porgy)",
+    "desc": "Small-to-medium whole round fish (typically 500 g to 1 kg) with mild white flesh, flaky muscle structure, and skin that crisps cleanly. The default category for steaming, oven-roasting, and salt-baking presentations across multiple cuisines.",
+    "tags": [
+      "fish",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "whole-white-fish",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fish",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/worcestershire-sauce.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -1223,6 +1263,127 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/cantonese-steamed-whole-fish-with-ginger-scallion.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cantonese steamed whole fish with ginger and scallion",
+    "desc": "Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 minutes by thickness, the pan liquid replaced with hot soy-sesame seasoning, scattered with raw ginger-scallion, and finished with smoking-hot neutral oil poured over the aromatics. The Cantonese steaming canon: protein integrity preserved, aromatics deployed in three temperature registers (raw, warm seasoning, hot-oil bloom).",
+    "tags": [
+      "seafood",
+      "fish",
+      "chinese",
+      "weeknight",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "cantonese-steamed-whole-fish-with-ginger-scallion",
+    "cuisine": "Cantonese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 12,
+      "total_min": 27,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "whole white fish (branzino, black sea bass, red snapper, or porgy), gutted and scaled, gills removed",
+        "slug": "whole-white-fish",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, peeled",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallion, whole",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "water, hot from the kettle",
+        "optional": false
+      },
+      {
+        "item": "rock sugar, crushed (or granulated sugar)",
+        "slug": "rock-sugar",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "white pepper, freshly ground",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, fine julienne",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallion, white and pale-green parts",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut, rice bran, or canola)",
+        "slug": "neutral-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "vapor-steaming",
+      "hot-oil-finish"
+    ],
+    "equipment": [
+      "bamboo-steamer",
+      "wok-or-deep-skillet",
+      "small-saucepan"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 27,
+      "diffLabel": "medium",
+      "timeLead": "27 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
     }
   },
   {
@@ -2734,6 +2895,25 @@
     }
   },
   {
+    "path": "pages/techniques/hot-oil-finish.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Hot-oil finish (smoking-oil bloom over raw aromatics)",
+    "desc": "Pour smoking-hot neutral oil (200 °C+) over raw aromatics on top of a finished dish, flash-cooking the aromatics in place and releasing volatile aromatic compounds in a sensory burst. The Chinese, Sichuan, and broader East Asian technique that completes steamed fish, cold tofu, congee, hand-pulled noodles, and Sichuan chili oil.",
+    "tags": [
+      "fat",
+      "aromatic",
+      "chinese"
+    ],
+    "status": "complete",
+    "_slug": "hot-oil-finish",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/jammy-egg.html",
     "type": "technique",
     "category": "techniques",
@@ -2813,6 +2993,25 @@
     ],
     "status": "complete",
     "_slug": "tahini-emulsion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/vapor-steaming.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Vapor steaming (high-vapor wet-heat cookery)",
+    "desc": "Cook food suspended above a hard rolling boil of water in a covered vessel, allowing 100 °C steam (with full vapor flux) to transfer heat without immersion or fat. The technique that preserves protein integrity, vegetable color, and dough structure across cuisines, with the temperature ceiling fixed at the boiling point of water.",
+    "tags": [
+      "vegetable",
+      "fish",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "vapor-steaming",
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
@@ -3036,7 +3235,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -10643,7 +10842,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -10745,7 +10944,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -10785,7 +10984,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -10927,7 +11126,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -12221,7 +12420,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -12275,7 +12474,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 39,
+      "usedInCount": 40,
       "hasNutrition": true
     }
   },
@@ -12294,7 +12493,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -12356,7 +12555,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 14,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -14538,6 +14737,70 @@
     }
   },
   {
+    "path": "pages/recipes/light-soy-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Light soy sauce (生抽)",
+    "desc": "Soybeans and wheat fermented with Aspergillus mold for 6 to 18 months, pressed and pasteurized into the lighter, saltier seasoning soy of Chinese cooking. Stub.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "umami",
+      "chinese",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "light-soy-sauce",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "hard",
+    "servings": 32,
+    "time": {
+      "prep_min": 240,
+      "cook_min": 0,
+      "total_min": 262080,
+      "active_min": 480
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan"
+    ],
+    "ingredients": [
+      {
+        "item": "whole soybeans, dried",
+        "optional": false
+      },
+      {
+        "item": "whole wheat berries, lightly toasted and cracked",
+        "optional": false
+      },
+      {
+        "item": "koji starter (Aspergillus oryzae spores)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "optional": false
+      },
+      {
+        "item": "filtered water",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 262080,
+      "diffLabel": "hard",
+      "timeLead": "8 h",
+      "timeAnnotation": "+ 182 d rest",
+      "timeMode": "active",
+      "activeMinutes": 480,
+      "filterMinutes": 480
+    }
+  },
+  {
     "path": "pages/recipes/pomegranate-molasses.html",
     "type": "recipe",
     "category": "recipes",
@@ -14767,6 +15030,63 @@
       "timeMode": "active",
       "activeMinutes": 60,
       "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/shaoxing-wine.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Shaoxing wine (绍兴酒)",
+    "desc": "Glutinous rice and wheat fermented with qu starter for 6 to 12 months, producing the amber rice wine that anchors most Chinese cooking. Stub.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "chinese",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "shaoxing-wine",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "hard",
+    "servings": 24,
+    "time": {
+      "prep_min": 240,
+      "cook_min": 60,
+      "total_min": 175140,
+      "active_min": 360
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "glutinous rice (sweet rice, sticky rice)",
+        "slug": "glutinous-rice",
+        "optional": false
+      },
+      {
+        "item": "qu starter (Chinese rice-wine starter; jiu qu)",
+        "optional": false
+      },
+      {
+        "item": "filtered water, room temperature",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 175140,
+      "diffLabel": "hard",
+      "timeLead": "6 h",
+      "timeAnnotation": "+ 121 d rest",
+      "timeMode": "active",
+      "activeMinutes": 360,
+      "filterMinutes": 360
     }
   },
   {
