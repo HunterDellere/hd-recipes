@@ -3511,3 +3511,108 @@ body, .recipe-hero, .topic-hero, .home-hero, .home-section,
   .cmd-palette, .hcard, .rh-stats { transition: none; }
 }
 .rv-noanim .rv-init { opacity: 1; transform: none; }
+
+/* === Item 4: per-category visual identity ============================
+   Each entry type gets a quiet temperature without becoming "themed".
+   The bg-tint is so faint it reads as paper, not color, and the
+   accent rule under section heads is the strongest tell.
+*/
+
+/* Hero gets a category-tinted top wash — like a tea stain. Implemented
+   as a vertical gradient that fades into the body bg by 220px down. */
+body[data-category="recipes"] .recipe-hero,
+body[data-category="ingredients"] .topic-hero,
+body[data-category="techniques"] .topic-hero,
+body[data-category="cuisines"] .topic-hero,
+body[data-category="equipment"] .topic-hero,
+body[data-category="hubs"] .topic-hero,
+body[data-category="safety"] .topic-hero {
+  position: relative;
+  isolation: isolate;
+}
+body[data-category] .recipe-hero::before,
+body[data-category] .topic-hero::before {
+  content: "";
+  position: absolute;
+  inset: -3rem -2rem auto -2rem;
+  height: 320px;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    var(--cat-recipes-bg) 0%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+body[data-category="ingredients"] .topic-hero::before { background: linear-gradient(180deg, var(--cat-ingredients-bg) 0%, transparent 80%); }
+body[data-category="techniques"]  .topic-hero::before { background: linear-gradient(180deg, var(--cat-techniques-bg) 0%, transparent 80%); }
+body[data-category="cuisines"]    .topic-hero::before { background: linear-gradient(180deg, var(--cat-cuisines-bg) 0%, transparent 80%); }
+body[data-category="equipment"]   .topic-hero::before { background: linear-gradient(180deg, var(--cat-equipment-bg) 0%, transparent 80%); }
+body[data-category="hubs"]        .topic-hero::before { background: linear-gradient(180deg, var(--cat-hubs-bg) 0%, transparent 80%); }
+body[data-category="safety"]      .topic-hero::before { background: linear-gradient(180deg, var(--cat-safety-bg) 0%, transparent 80%); }
+
+/* Sidebar: TOC active link picks up category color. */
+.toc-list a {
+  border-left: 2px solid transparent;
+  padding-left: 0.55rem;
+  transition: color var(--d-fast), border-color var(--d-fast);
+}
+.toc-list a:hover { color: var(--accent); }
+.toc-list a.is-active,
+.toc-list a[aria-current] {
+  color: var(--cat-recipes);
+  border-left-color: var(--cat-recipes);
+}
+body[data-category="ingredients"] .toc-list a.is-active,
+body[data-category="ingredients"] .toc-list a[aria-current] {
+  color: var(--cat-ingredients);
+  border-left-color: var(--cat-ingredients);
+}
+body[data-category="techniques"] .toc-list a.is-active,
+body[data-category="techniques"] .toc-list a[aria-current] {
+  color: var(--cat-techniques);
+  border-left-color: var(--cat-techniques);
+}
+body[data-category="cuisines"] .toc-list a.is-active,
+body[data-category="cuisines"] .toc-list a[aria-current] {
+  color: var(--cat-cuisines);
+  border-left-color: var(--cat-cuisines);
+}
+body[data-category="equipment"] .toc-list a.is-active,
+body[data-category="equipment"] .toc-list a[aria-current] {
+  color: var(--cat-equipment);
+  border-left-color: var(--cat-equipment);
+}
+body[data-category="hubs"] .toc-list a.is-active,
+body[data-category="hubs"] .toc-list a[aria-current] {
+  color: var(--cat-hubs);
+  border-left-color: var(--cat-hubs);
+}
+body[data-category="safety"] .toc-list a.is-active,
+body[data-category="safety"] .toc-list a[aria-current] {
+  color: var(--cat-safety);
+  border-left-color: var(--cat-safety);
+}
+
+/* Sidebar topic title: italic accent in category color */
+body[data-category="ingredients"] .toc-topic { color: var(--cat-ingredients); }
+body[data-category="techniques"]  .toc-topic { color: var(--cat-techniques); }
+body[data-category="cuisines"]    .toc-topic { color: var(--cat-cuisines); }
+body[data-category="equipment"]   .toc-topic { color: var(--cat-equipment); }
+body[data-category="hubs"]        .toc-topic { color: var(--cat-hubs); }
+body[data-category="safety"]      .toc-topic { color: var(--cat-safety); }
+
+/* Breadcrumb crumbs: keep the first crumb category-tinted */
+.toc-breadcrumb .bc-crumb:first-child {
+  color: var(--cat-recipes);
+  border-bottom-color: color-mix(in srgb, var(--cat-recipes) 35%, transparent);
+}
+body[data-category="ingredients"] .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-ingredients); }
+body[data-category="techniques"]  .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-techniques); }
+body[data-category="cuisines"]    .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-cuisines); }
+body[data-category="equipment"]   .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-equipment); }
+body[data-category="hubs"]        .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-hubs); }
+body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color: var(--cat-safety); }
+
+/* The recipe-time accent in the hero stat strip already uses --accent.
+   On non-recipe topic-hero pages there's no time stat, so no change. */
