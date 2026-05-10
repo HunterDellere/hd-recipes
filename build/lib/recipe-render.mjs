@@ -750,8 +750,30 @@ export function renderRecipeBody(fm, slug, category, opts) {
   const pairsHtml = renderPairings(pairings, `pages/${category}/${slug}.html`);
   if (pairsHtml) { sections.push(pairsHtml); sidebarLinks.push({ id: 'pairs-with', label: 'Pairs with' }); }
 
+  // Breadcrumb in the sidebar — orientation up the IA. "Recipes › <Cuisine> ›
+  // <Course>" with each crumb pointing somewhere useful. Cuisine links to a
+  // dedicated page if one exists, otherwise to the explore filter; course
+  // always uses the explore filter (no per-course pages).
+  const breadcrumbCrumbs = [`<a class="bc-crumb" href="../explore/cook.html">Recipes</a>`];
+  if (fm.cuisine) {
+    const cuisineSlug = String(fm.cuisine).toLowerCase().replace(/\s+/g, '-');
+    const cuisinePagePath = `pages/cuisines/${cuisineSlug}.html`;
+    const cuisineHasPage = entriesByPath && (entriesByPath.has ? entriesByPath.has(cuisinePagePath) : !!entriesByPath[cuisinePagePath]);
+    const cuisineHref = cuisineHasPage
+      ? `../cuisines/${cuisineSlug}.html`
+      : `../explore/cook.html?cuisine=${encodeURIComponent(fm.cuisine)}`;
+    breadcrumbCrumbs.push(`<a class="bc-crumb" href="${escapeHtml(cuisineHref)}">${escapeHtml(fm.cuisine)}</a>`);
+  }
+  if (fm.course) {
+    breadcrumbCrumbs.push(`<a class="bc-crumb" href="../explore/cook.html?course=${encodeURIComponent(fm.course)}">${escapeHtml(fm.course)}</a>`);
+  }
+  const breadcrumbHtml = breadcrumbCrumbs.length > 1
+    ? `<nav class="toc-breadcrumb" aria-label="Breadcrumb">${breadcrumbCrumbs.join('<span class="bc-sep" aria-hidden="true">›</span>')}</nav>`
+    : '';
+
   const sidebar = `
     <aside class="sidebar" id="sidebar" aria-label="Page contents">
+      ${breadcrumbHtml}
       <span class="toc-topic">${escapeHtml((fm.title || slug).split('—')[0].split('·')[0].trim())}</span>
       <div class="toc-divider"></div>
       <span class="toc-label">On this page</span>

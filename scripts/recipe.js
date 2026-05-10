@@ -1222,6 +1222,25 @@
       });
     });
 
+    // Hydrate state from URL query params so deep-links from sidebar
+    // breadcrumbs and the random-prefilter page activate the filter on land.
+    // Recognized: ?cuisine=, ?course=, ?diet=, ?difficulty=, ?max_min=, ?tag=
+    // Unknown values silently fall through (no card matches → empty state,
+    // which is the right behavior — the filter still shows the URL intent).
+    try {
+      const qs = new URLSearchParams(location.search);
+      const single = (k) => { const v = qs.get(k); return v ? v.trim() : null; };
+      if (single('cuisine')) state.cuisine = single('cuisine');
+      if (single('course')) state.course = single('course');
+      if (single('diet')) state.diet = single('diet');
+      if (single('difficulty')) state.difficulty = single('difficulty');
+      const mx = single('max_min');
+      if (mx && /^\d+$/.test(mx)) state.time = mx;
+      qs.getAll('tag').forEach(t => { if (t) state.tags.add(t); });
+      // Reflect into UI controls so the user sees the active state, not just the result
+      syncInputs();
+    } catch {}
+
     // Initial render
     apply();
   }

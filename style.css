@@ -3158,3 +3158,33 @@ body.cmd-palette-open { overflow: hidden; }
     border-radius: 2px;
   }
 }
+
+/* === Item G: sidebar breadcrumb === */
+.toc-breadcrumb {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.25rem 0.4rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin-bottom: 0.55rem;
+  line-height: 1.4;
+}
+.bc-crumb {
+  color: var(--ink-faint);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: color 120ms, border-color 120ms;
+}
+.bc-crumb:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent-soft, color-mix(in srgb, var(--accent) 35%, transparent));
+}
+.bc-sep {
+  color: var(--ink-faint);
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+@media print {
+  .toc-breadcrumb { display: none !important; }
+}
