@@ -17,7 +17,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -458,7 +458,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -608,6 +608,26 @@
     }
   },
   {
+    "path": "pages/ingredients/oyster-mushroom.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Oyster mushroom",
+    "desc": "Pleurotus ostreatus and close relatives; a fan-shaped, gilled mushroom with a velvet-tender texture when fully cooked and a faintly anise-floral, shellfish-sweet umami. Soft and water-rich raw; transforms above ~70°C into a meaty, layered protein analog.",
+    "tags": [
+      "vegetable",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "oyster-mushroom",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/palm-sugar.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -643,7 +663,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -888,7 +908,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -2769,6 +2789,153 @@
     }
   },
   {
+    "path": "pages/recipes/spaghetti-with-beef-oyster-mushroom-shallot-ragu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Spaghetti with beef, oyster mushroom, and shallot ragu",
+    "desc": "A 45-minute weeknight ragu engineered around the umami partnership between dry-seared oyster mushrooms and deeply browned ground chuck. Shallots melted in beef fat for a silky base, anchovy and tomato paste fortifying the meat axis, finished as a pan emulsion against starchy pasta water and cold butter.",
+    "tags": [
+      "weeknight",
+      "pasta",
+      "italian",
+      "umami",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "spaghetti-with-beef-oyster-mushroom-shallot-ragu",
+    "cuisine": "Italian",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 30,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "rating": 5,
+    "updated": "2026-05-10",
+    "ingredients": [
+      {
+        "item": "shallots",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "ground beef, 80/20 chuck",
+        "slug": "ground-beef",
+        "optional": false
+      },
+      {
+        "item": "oyster mushrooms",
+        "slug": "oyster-mushroom",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "anchovy fillets in olive oil",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "dry red wine",
+        "optional": false
+      },
+      {
+        "item": "canned San Marzano tomatoes",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "fresh bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "crushed red pepper flakes",
+        "optional": false
+      },
+      {
+        "item": "freshly grated nutmeg",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "spaghetti, bronze-die-extruded",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, cold",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "freshly cracked black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "pan-emulsion",
+      "maillard-sear",
+      "blooming-aromatics",
+      "deglazing"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/recipes/toasted-rice-powder.html",
     "type": "recipe",
     "category": "recipes",
@@ -3094,7 +3261,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -3175,7 +3342,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -3388,7 +3555,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -3563,7 +3730,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "beef",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -3816,7 +3983,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -4072,7 +4239,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -10629,7 +10796,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -10668,7 +10835,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 20,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -10804,7 +10971,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 28,
+      "usedInCount": 29,
       "hasNutrition": true
     }
   },
@@ -11918,7 +12085,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 5
+      "usedInCount": 6
     }
   },
   {
@@ -12474,7 +12641,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 40,
+      "usedInCount": 41,
       "hasNutrition": true
     }
   },
@@ -14161,7 +14328,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 20
+      "usedInCount": 21
     }
   },
   {
@@ -14226,7 +14393,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -14293,7 +14460,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 9
+      "usedInCount": 10
     }
   },
   {
@@ -14311,7 +14478,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
