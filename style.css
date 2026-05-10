@@ -1,27 +1,48 @@
 /* ── hd · recipes — base stylesheet ───────────────────────────────────── */
 
 :root {
-  --bg: #faf6ee;
-  --bg-elev: #fffaf0;
-  --bg-soft: #f5efe2;
+  /* Paper warmth — was #faf6ee. Slight push toward cream gives the page a
+     "linen tablecloth" quality instead of "bone china". The elev surface
+     stays a touch lighter so cards still float. */
+  --bg: #f8f2e2;
+  --bg-elev: #fdf8eb;
+  --bg-soft: #f1ead7;
   --ink: #2a1f10;
   --ink-soft: #5a4a36;
   --ink-faint: #8a7a60;
-  --rule: #e6dcc6;
-  --rule-soft: #f0e8d4;
+  /* Warm prose body — sits between --ink and --ink-soft. Use for long-form
+     reading where pure --ink can feel inky/cold. */
+  --ink-warm: #3d2e1c;
+  --rule: #e0d4b8;
+  --rule-soft: #ece2c9;
   --accent: #b8423a;
   --accent-deep: #8b2e26;
   --accent-soft: rgba(184, 66, 58, 0.18);
   --link: #1f5b8a;
   --focus-ring: 0 0 0 3px rgba(184, 66, 58, 0.35);
 
+  /* Category accents — refined. Cuisines was a flat crayon blue; the new
+     value is more ink-respectful, keeps AA contrast on cream. Hubs was a
+     plummy purple; lifted to a less-saturated wine-mauve. */
   --cat-recipes:     #b8423a;
-  --cat-ingredients: #3a7a3a;
+  --cat-ingredients: #3d7a40;
   --cat-techniques:  #a55a1a;
-  --cat-cuisines:    #3a5a8a;
+  --cat-cuisines:    #3d6a96;
   --cat-equipment:   #5a4a3a;
-  --cat-hubs:        #6b3a78;
+  --cat-hubs:        #7c4582;
   --cat-safety:      #7a3a3a;
+
+  /* Per-category page-tint backgrounds. Used as a faint wash on hero blocks,
+     section anchors, sidebar active-state. Calibrated to be nearly invisible
+     on cream — the eye registers them as "this page has a temperature" rather
+     than "this is colored". */
+  --cat-recipes-bg:     rgba(184, 66, 58, 0.05);
+  --cat-ingredients-bg: rgba(61, 122, 64, 0.05);
+  --cat-techniques-bg:  rgba(165, 90, 26, 0.05);
+  --cat-cuisines-bg:    rgba(61, 106, 150, 0.05);
+  --cat-equipment-bg:   rgba(90, 74, 58, 0.05);
+  --cat-hubs-bg:        rgba(124, 69, 130, 0.05);
+  --cat-safety-bg:      rgba(122, 58, 58, 0.05);
 
   --font-serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -77,16 +98,21 @@
 }
 
 [data-theme="dark"] {
-  --bg: #15110a;
-  --bg-elev: #1f1810;
-  --bg-soft: #1a140d;
+  /* Lifted from #15110a (near-black) to a softer warm-charcoal. The prior
+     value was crushed enough that bg-soft and bg looked identical on most
+     panels and the eye lost depth-of-field. Now bg < bg-soft < bg-elev
+     forms a real elevation ladder. */
+  --bg: #181208;
+  --bg-elev: #251c10;
+  --bg-soft: #1f1810;
   --ink: #f1ead8;
   --ink-soft: #c4b89b;
   /* Lifted ink-faint from #8a7a60 — the light-mode value disappeared on dark
      bg (~2.1:1). #a99878 hits ~3.4:1, still feels recessed but readable. */
   --ink-faint: #a99878;
-  --rule: #2e2618;
-  --rule-soft: #251e12;
+  --ink-warm: #e0d6bf;
+  --rule: #322817;
+  --rule-soft: #281f10;
   --accent: #d75c52;
   --accent-deep: #b8423a;
   /* Lifted from .22 → .28 for AA contrast on hover backgrounds against the
@@ -94,6 +120,25 @@
   --accent-soft: rgba(215, 92, 82, 0.28);
   --link: #6db1e6;
   --focus-ring: 0 0 0 3px rgba(215, 92, 82, 0.45);
+
+  /* Category colors lifted for dark-mode contrast (light-mode values too dark) */
+  --cat-recipes:     #e07269;
+  --cat-ingredients: #6cb070;
+  --cat-techniques:  #d39154;
+  --cat-cuisines:    #76a8d4;
+  --cat-equipment:   #9c8a6e;
+  --cat-hubs:        #b585bb;
+  --cat-safety:      #c97474;
+
+  /* Page tints stronger on dark since the surface absorbs more */
+  --cat-recipes-bg:     rgba(215, 92, 82, 0.08);
+  --cat-ingredients-bg: rgba(108, 176, 112, 0.07);
+  --cat-techniques-bg:  rgba(211, 145, 84, 0.07);
+  --cat-cuisines-bg:    rgba(118, 168, 212, 0.07);
+  --cat-equipment-bg:   rgba(156, 138, 110, 0.06);
+  --cat-hubs-bg:        rgba(181, 133, 187, 0.07);
+  --cat-safety-bg:      rgba(201, 116, 116, 0.07);
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.30), 0 1px 3px rgba(0, 0, 0, 0.20);
   --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.25);
   --shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.40), 0 16px 40px rgba(0, 0, 0, 0.30);
