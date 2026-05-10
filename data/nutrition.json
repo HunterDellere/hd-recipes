@@ -810,6 +810,37 @@
       }
     ]
   },
+  "pages/recipes/dry-roasted-peanuts.html": {
+    "perServing": {
+      "energy_kcal": 134,
+      "protein_g": 10.6,
+      "fat_g": 6.8,
+      "saturated_fat_g": 1,
+      "carbs_g": 9.8,
+      "fiber_g": 4.9,
+      "sodium_mg": 0,
+      "potassium_mg": 424,
+      "calcium_mg": 41,
+      "iron_mg": 1,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 1070,
+      "protein_g": 84.5,
+      "fat_g": 54.8,
+      "saturated_fat_g": 7.6,
+      "carbs_g": 78.2,
+      "fiber_g": 39.5,
+      "sodium_mg": 3,
+      "potassium_mg": 3395,
+      "calcium_mg": 325,
+      "iron_mg": 12,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "missing": []
+  },
   "pages/recipes/dun-nai.html": {
     "perServing": {
       "energy_kcal": 7,
@@ -3056,6 +3087,80 @@
       {
         "name": "large eggs, refrigerator-cold",
         "slug": "eggs",
+        "reason": "no-cache"
+      }
+    ]
+  },
+  "pages/recipes/som-tam-thai-green-papaya-salad.html": {
+    "perServing": {
+      "energy_kcal": 58,
+      "protein_g": 4.2,
+      "fat_g": 1.7,
+      "saturated_fat_g": 0.3,
+      "carbs_g": 7.3,
+      "fiber_g": 2.3,
+      "sugar_g": 0.4,
+      "sodium_mg": 2,
+      "potassium_mg": 192,
+      "calcium_mg": 23,
+      "iron_mg": 1,
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 7
+    },
+    "total": {
+      "energy_kcal": 233,
+      "protein_g": 16.9,
+      "fat_g": 6.9,
+      "saturated_fat_g": 1,
+      "carbs_g": 29,
+      "fiber_g": 9.1,
+      "sugar_g": 1.8,
+      "sodium_mg": 6,
+      "potassium_mg": 767,
+      "calcium_mg": 94,
+      "iron_mg": 3,
+      "vitamin_c_mg": 5,
+      "vitamin_a_iu": 30
+    },
+    "missing": [
+      {
+        "name": "green (unripe) papaya",
+        "slug": "green-papaya",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "thai bird chili, fresh",
+        "slug": "thai-chili",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "palm sugar",
+        "slug": "palm-sugar",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "dried shrimp, small",
+        "slug": "dried-shrimp",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "lime juice, fresh",
+        "slug": "lime",
+        "reason": "no-cache"
+      },
+      {
+        "name": "spent lime shells",
+        "slug": "lime",
+        "reason": "no-cache"
+      },
+      {
+        "name": "yardlong bean (long bean)",
+        "slug": "yardlong-bean",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "cherry tomatoes",
+        "slug": "cherry-tomato",
         "reason": "no-cache"
       }
     ]

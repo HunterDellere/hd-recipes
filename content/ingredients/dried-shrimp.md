@@ -1,0 +1,41 @@
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Dried shrimp'
+desc: 'Small whole shrimp salt-cured and sun-dried to 10 to 15% moisture, sold loose or in sealed plastic bags. A concentrated source of glutamate and inosinate that defines the savory backbone of Thai, Vietnamese, Cambodian, southern Chinese, and West African cooking.'
+metaDesc: 'Dried shrimp: enzymatic concentration of glutamate and inosinate, role in som tum and West African groundnut stew, sourcing by size grade, rehydration technique.'
+tags: ['umami', 'pantry', 'seafood']
+updated: '2026-05-10'
+
+about: |
+  Dried shrimp are small whole shrimp (typically 1 to 4 cm long, peeled or shell-on depending on the regional tradition) salted and sun-dried until they reach 10 to 15% residual moisture, then sold loose by weight or pre-packaged in plastic bags. The drying concentrates flavor through both water removal (which raises the relative density of all soluble compounds in the remaining tissue) and slow enzymatic breakdown of muscle proteins into free amino acids during the cure. The result is a pantry ingredient that delivers an exceptionally concentrated dose of glutamate (the primary umami amino acid), inosinate (a 5'-ribonucleotide that compounds with glutamate for greater-than-additive umami), and trace amino acid mix that contributes a distinct salt-fish-savory character no fresh shrimp or fish sauce can replicate.
+
+  The chemistry of the cure. Fresh shrimp tissue is roughly 75% water, 21% protein, 1.5% fat, with substantial free glutamate (~30 mg per 100 g fresh) and inosinate (~90 mg per 100 g fresh). Drying to 12% moisture reduces the total mass by roughly 70%, which raises the per-gram concentration of all soluble compounds by 3 to 4×. Simultaneously, slow proteolytic enzyme activity during the cure breaks down some intact muscle protein into more free amino acids, particularly glutamate, which can rise to 200 to 400 mg per 100 g in the dried product. The combined effect is a shrimp that delivers 5 to 10× the umami density of an equivalent gram of fresh shrimp. The cure also concentrates the fishy-cured aromatic compounds (trimethylamine and related volatile amines) that distinguish dried-shrimp aroma from fresh-shrimp aroma; this is the smell that registers as "Asian market dried-shrimp aisle" and is what makes the ingredient structural rather than fungible.
+
+  Functional role across cuisines. **Southeast Asia**: pounded into Thai som tum dressing, into nam prik dipping sauces, into Cambodian prahok-and-shrimp pastes, and into Vietnamese caramel-braised pork (thịt kho). Often the second umami source alongside fish sauce, the fish sauce contributes liquid salinity and the dried shrimp contribute solid texture and concentrated glutamate-inosinate. **Southern Chinese (Cantonese, Hokkien, Teochew)**: rehydrated and folded into rice porridge (xia-mi zhou), into stir-fried vegetables (especially flowering chives and choy sum), into stuffings, into the foundational pantry sauce called XO sauce. **West African (Senegalese, Nigerian, Ghanaian)**: ground into peanut-and-tomato stews (mafe, groundnut stew), where the dried shrimp deliver a marine salinity that pairs with the peanut fat and tomato pectin into a deeply savory base. **Mexican (especially coastal)**: into shrimp-cake patties (tortitas de camarón) for Lent, into shrimp-stuffed chiles, into broths. **Latino-Caribbean (Brazilian, Bahian)**: into vatapá and acarajé as the structural shrimp component, alongside fresh shrimp.
+
+  Size grades and which to buy. Dried shrimp are sold by size grade, with substantial price and quality variation. **Small (1 to 1.5 cm)**: the smallest grade, sold whole, sometimes called "dried baby shrimp." Best for pounding into pastes (som tum dressing, nam prik) where the shrimp will be torn into fibers; cheapest. **Medium (2 to 3 cm)**: the standard grade for general cooking, peeled, with a clean shrimp character. Best for stir-fries, rice dishes, and stews where the shrimp stay visually intact and contribute both texture and umami. **Large (3 to 4 cm)**: premium grade, often shell-on, sold at higher prices. Best for soups and braises where the cook wants distinct shrimp pieces that read as protein, not just seasoning. The som tum recipe in this site uses small grade, the shrimp are pounded into the dressing, so size and visual integrity are not the point.
+
+  Color signals quality. Fresh-cured dried shrimp range from bright pink-orange (the natural carotenoid astaxanthin from the shrimp's diet) to a deep red-orange. Pale-pink, gray, or brown shrimp are old, oxidized, or low-quality. Bright artificial-red shrimp have been dyed (a quality shortcut) and should be avoided where possible. The smell test is more reliable than color, fresh-cured dried shrimp smell sweet-fishy-savory with a distinct "shrimp" note; old or low-quality shrimp smell rancid, ammoniated (a sign of breakdown), or moldy.
+
+  Rehydration technique. Most uses call for rinsing dried shrimp briefly in warm water (30 seconds to 1 minute) to remove surface salt and dust before pounding or chopping. For applications that want soft shrimp pieces (stir-fries, rice dishes), a 10-minute soak in warm water is standard; the soaking liquid is usually saved and folded into the dish for added flavor. For applications that want firm chewy texture (som tum, nam prik), use the rinsed shrimp without longer soaking. Over-soaking (more than 30 minutes) leaches umami into the soak water and produces a flat, watery shrimp.
+
+  Buying notes. Look for sealed plastic bags with a recent packaging date; loose bins at high-turnover Asian markets are also reliable. The ingredient should be sold refrigerated or frozen at quality markets, room-temperature shelf storage is acceptable for short windows but accelerates rancidity. The Thai brands (e.g., Pantai), Vietnamese brands (Bà Khỏe), and southern Chinese brands all produce reliable products; size grade matters more than brand for most applications.
+
+storage: |
+  Sealed in a zip-top bag in the freezer indefinitely (1+ year), with no quality loss; the cold prevents oxidation of the surface fats. Sealed in the refrigerator for 6 months. Sealed at room temperature in a cool dark pantry for 2 to 3 months; longer storage at room temperature accelerates rancidity (the smell test is reliable, old dried shrimp smell of stale fish oil, not fresh shrimp). Once opened, transfer to glass or ceramic with a tight lid; plastic absorbs odors over time. The cure salt is concentrated enough to inhibit most spoilage organisms; the failure mode is fat oxidation rather than microbial spoilage. Spoilage cues: rancid smell (oxidized lipids, discard), ammoniated smell (protein breakdown, discard), visible mold (rare in properly cured product, discard), insect contamination (storage failure, discard).
+
+substitutions:
+  - for: 'dried shrimp (Thai/SE Asian dressings, pastes)'
+    use: 'extra fish sauce + bonito flakes (katsuobushi)'
+    note: 'Increase fish sauce by 50% in the recipe and add a small handful of bonito flakes (5 to 8 g) to the mortar with the garlic. The umami profile is approximately right (glutamate-inosinate compounded) but the textural fiber of the dried shrimp is missing. Acceptable when no dried shrimp are available; the dish is recognizably present but not identical.'
+  - for: 'dried shrimp (Cantonese stir-fries, rice dishes)'
+    use: 'salted dried anchovies or dried small fish (Korean myeolchi)'
+    note: 'Korean dried anchovies (the small variety, 2 to 3 cm) carry similar concentrated glutamate but lean salty-fishy rather than sweet-shrimpy. The dish reads adjacent to the dried-shrimp original. Vietnamese dried small fish (cá cơm khô) work the same way.'
+  - for: 'dried shrimp (West African groundnut stew, vatapá)'
+    use: 'shrimp paste (belacan, terasi) or fresh shrimp + extra fish sauce'
+    note: 'Shrimp paste delivers the concentrated shrimp flavor in a different texture; toast it first (over flame or in foil) to mellow the raw funk. Fresh shrimp added with extra fish sauce produce a milder, less complex stew but is acceptable. The dried-shrimp character is genuinely hard to substitute in dishes built around it.'
+---

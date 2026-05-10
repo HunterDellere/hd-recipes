@@ -1,5 +1,61 @@
 [
   {
+    "path": "pages/recipes/dry-roasted-peanuts.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Dry-roasted peanuts",
+    "desc": "Raw skin-on or blanched peanuts dry-roasted in a 175°C / 350°F oven until evenly amber, fragrant, and shatter-crisp. The home-roasted kernel is fresher, more aromatic, and more textural than any pre-roasted bag.",
+    "tags": [
+      "nuts",
+      "pantry",
+      "snack"
+    ],
+    "status": "complete",
+    "_slug": "dry-roasted-peanuts",
+    "cuisine": "",
+    "course": "snack",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 2,
+      "cook_min": 15,
+      "total_min": 22,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "raw peanuts, skin-on or blanched",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "maillard-sear"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 22,
+      "diffLabel": "easy",
+      "timeLead": "22 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
     "path": "pages/recipes/nicoise-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -306,37 +362,111 @@
     }
   },
   {
-    "path": "pages/techniques/jammy-egg.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Jammy egg",
-    "desc": "Boil a fridge-cold large egg for 6 minutes 30 seconds, ice-shock immediately. The white sets fully (62 to 70 °C internal); the yolk holds at the chalky-cream threshold (about 68 °C): set enough to hold a dome at the cut, soft enough to weep slightly when broken.",
+    "path": "pages/recipes/som-tam-thai-green-papaya-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Som tum thai (green papaya salad)",
+    "desc": "Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce, and lime, finished with dried shrimp, peanuts, yardlong bean, and cherry tomato. The dressing is built in the mortar as the papaya is pounded; the bruise is the technique.",
     "tags": [
-      "egg"
+      "salad",
+      "thai",
+      "spicy",
+      "umami",
+      "no-cook",
+      "weeknight"
     ],
     "status": "complete",
-    "_slug": "jammy-egg",
+    "_slug": "som-tam-thai-green-papaya-salad",
+    "cuisine": "Thai",
+    "course": "lunch",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 0,
+      "total_min": 20,
+      "active_min": 20
+    },
     "updated": "2026-05-10",
-    "added": "2026-05-10",
-    "_card": {
-      "usedInCount": 1
-    }
-  },
-  {
-    "path": "pages/techniques/oil-poaching.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Oil poaching",
-    "desc": "Cook a protein submerged in oil held at 55 to 75 °C: gentle, even, with no surface evaporation. The oil becomes both heat medium and infusion vehicle; the protein arrives uniformly tender with no Maillard crust.",
-    "tags": [
-      "fat"
+    "diet": [
+      "dairy-free",
+      "gluten-free"
     ],
-    "status": "complete",
-    "_slug": "oil-poaching",
-    "updated": "2026-05-10",
+    "ingredients": [
+      {
+        "item": "green (unripe) papaya",
+        "slug": "green-papaya",
+        "optional": false
+      },
+      {
+        "item": "garlic, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "thai bird chili, fresh",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "dried shrimp, small",
+        "slug": "dried-shrimp",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (premium, 30 to 40°N)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "spent lime shells",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "tamarind paste (concentrate)",
+        "optional": true
+      },
+      {
+        "item": "yardlong bean (long bean)",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "cherry tomatoes",
+        "slug": "cherry-tomato",
+        "optional": false
+      },
+      {
+        "item": "roasted peanuts, skin-on or blanched",
+        "slug": "peanuts",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "mortar-pounding",
+      "blooming-aromatics"
+    ],
+    "equipment": [],
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 1
+      "totalMinutes": 20,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
     }
   },
   {
