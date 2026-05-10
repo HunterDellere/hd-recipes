@@ -375,9 +375,11 @@
   function close() {
     if (overlay.hidden) return;
     overlay.classList.remove('is-open');
+    // Release the body lock and pointer-event capture immediately — waiting
+    // for the 140ms fade leaves the page non-interactive after a "close".
+    document.body.classList.remove('cmd-palette-open');
     setTimeout(() => {
       overlay.hidden = true;
-      document.body.classList.remove('cmd-palette-open');
       if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
     }, 140);
   }
