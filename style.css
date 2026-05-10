@@ -3031,60 +3031,12 @@ body.cmd-palette-open { overflow: hidden; }
   .hcard { display: none !important; }
 }
 
-/* === Item C: personal cook log === */
-.rh-log-btn {
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  padding: 0.55rem 0.95rem;
-  border: 1px solid var(--rule-soft, rgba(0,0,0,0.12));
-  background: var(--bg-elev);
-  color: var(--ink-soft);
-  border-radius: 999px;
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 140ms, color 140ms, border-color 140ms;
-}
-.rh-log-btn:hover { color: var(--ink); border-color: var(--ink-soft); }
-.rh-log-btn.is-logged {
-  color: var(--accent);
-  border-color: var(--accent-soft, color-mix(in srgb, var(--accent) 35%, transparent));
-}
-.rh-log-icon { display: inline-flex; }
-.rh-log-pulse {
-  animation: rhLogPulse 500ms ease-out;
-}
-@keyframes rhLogPulse {
-  0% { transform: scale(1); }
-  35% { transform: scale(1.06); background: var(--accent-soft, color-mix(in srgb, var(--accent) 18%, transparent)); }
-  100% { transform: scale(1); }
-}
-
-.rh-log-badge {
-  display: inline-flex; align-items: center;
-  padding: 0.4rem 0.7rem;
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.78rem;
-  color: var(--accent);
-  background: var(--accent-soft, color-mix(in srgb, var(--accent) 12%, transparent));
-  border-radius: 999px;
-  font-weight: 500;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .rh-log-pulse { animation: none; }
-}
-@media print {
-  .rh-log-btn, .rh-log-badge { display: none !important; }
-}
-
 /* === Item D: print stylesheet — one-page recipe card === */
 /* Existing print rules at lines 908, 995, 1617, 2773 handle the basics.
    This block fills the gaps: hide the cook log + interactive controls,
    collapse expandable panels open, tighten spacing. */
 @media print {
   /* Site chrome (additive to line 1617) */
-  .rh-log-btn, .rh-log-badge,
   .step-time-btn, .step-time, .step-tech,
   .ing-panel-summary .ing-panel-chev,
   .ing-units-control, .ing-scale,

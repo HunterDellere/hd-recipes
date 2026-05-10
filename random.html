@@ -4,34 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Random recipe · hd · recipes</title>
-<meta name="description" content="Pull a random recipe from hd · recipes — optionally filtered by cuisine, time, or difficulty.">
+<meta name="description" content="Pull a random recipe from hd · recipes — narrow by cuisine, protein, vibe, time, or difficulty.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23b8423a'/%3E%3Ctext x='50' y='62' text-anchor='middle' dominant-baseline='central' font-family='EB Garamond, serif' font-size='66' font-weight='700' fill='%23faf6ee'%3E?%3C/text%3E%3C%2Fsvg%3E">
 <script>(function(){try{var t=localStorage.getItem('hdr-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
 <style>
   :root {
     --bg: #faf6ee; --bg-elev: #fffaf0; --ink: #2a1f10; --ink-soft: #5a4a36; --ink-faint: #8a7a60;
-    --accent: #b8423a; --link: #1f5b8a;
+    --accent: #b8423a; --accent-soft: rgba(184, 66, 58, 0.18); --link: #1f5b8a;
     --rule: rgba(0,0,0,0.08);
   }
   [data-theme="dark"] {
     --bg: #15110a; --bg-elev: #1f1810; --ink: #f1ead8; --ink-soft: #c4b89b; --ink-faint: #a99878;
-    --accent: #d75c52; --link: #6db1e6;
+    --accent: #d75c52; --accent-soft: rgba(215, 92, 82, 0.28); --link: #6db1e6;
     --rule: rgba(255,255,255,0.1);
   }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink);
     font-family: 'EB Garamond', Georgia, serif; min-height: 100vh; }
-  main { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 2rem; }
-  .panel { width: min(560px, calc(100vw - 2rem)); }
-  .mark { font-size: 3.5rem; color: var(--accent); margin-bottom: .5rem; font-weight: 700; line-height: 1; }
-  h1 { font-size: 2rem; margin: 0.4rem 0 0.6rem; font-weight: 600; }
-  .lede { color: var(--ink-soft); font-size: 1.05rem; line-height: 1.5; margin: 0 0 1.6rem; }
-  .filters { display: flex; flex-direction: column; gap: 1rem; margin: 1rem 0 1.4rem; text-align: left; }
+  main { min-height: 100vh; display: grid; place-items: start center; padding: 3rem 1.5rem 4rem; }
+  .panel { width: min(720px, 100%); }
+  .head { text-align: center; margin-bottom: 2rem; }
+  .mark { font-size: 3.2rem; color: var(--accent); margin-bottom: .3rem; font-weight: 700; line-height: 1; }
+  h1 { font-size: 2rem; margin: 0.4rem 0 0.5rem; font-weight: 600; }
+  .lede { color: var(--ink-soft); font-size: 1.05rem; line-height: 1.5; margin: 0; }
+  .filters { display: flex; flex-direction: column; gap: 1.15rem; margin: 0 0 1.6rem; }
   .filter-row { display: flex; flex-direction: column; gap: 0.45rem; }
   .filter-label {
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+    font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase;
     color: var(--ink-faint);
+    font-weight: 600;
   }
   .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .chip {
@@ -44,6 +46,7 @@
     color: var(--ink-soft);
     cursor: pointer;
     transition: all 120ms;
+    -webkit-tap-highlight-color: transparent;
   }
   .chip:hover { color: var(--ink); border-color: var(--ink-faint); }
   .chip.is-on {
@@ -51,11 +54,20 @@
     color: #fff;
     border-color: var(--accent);
   }
-  .actions { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; margin-top: 0.6rem; }
+  .chip:disabled, .chip.is-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .actions {
+    display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--rule);
+  }
   .btn {
     font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.95rem;
-    padding: 0.7rem 1.4rem;
+    padding: 0.7rem 1.5rem;
     border: 0;
     border-radius: 999px;
     background: var(--accent);
@@ -68,84 +80,230 @@
     color: var(--ink-soft);
     border: 1px solid var(--rule);
   }
-  .btn:hover { filter: brightness(1.05); }
-  .btn:disabled { opacity: 0.45; cursor: not-allowed; }
-  .status { color: var(--ink-faint); font-size: 0.9rem; margin-top: 0.6rem; min-height: 1.2em; }
-  .back { display: inline-block; margin-top: 1.4rem; color: var(--link); font-size: 0.9rem; text-decoration: none; }
-  .back:hover { text-decoration: underline; }
+  .btn:hover:not(:disabled) { filter: brightness(1.05); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .status {
+    margin-left: auto;
+    color: var(--ink-faint);
+    font-size: 0.88rem;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .status .count { color: var(--ink); font-weight: 600; }
+  .back {
+    display: inline-block; margin-top: 1.6rem;
+    color: var(--ink-faint); font-size: 0.85rem; text-decoration: none;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .back:hover { color: var(--accent); }
   .loading { animation: pulse 1.6s ease-in-out infinite; }
   @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
   @media (prefers-reduced-motion: reduce) { .loading { animation: none; } }
+  @media (max-width: 480px) {
+    main { padding: 2rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; }
+    .actions { flex-direction: column; align-items: stretch; }
+    .status { margin-left: 0; text-align: center; }
+    .btn { width: 100%; }
+  }
 </style>
 </head>
 <body>
 <main>
   <div class="panel">
-    <div class="mark" id="mark">?</div>
-    <h1 id="heading">Random recipe</h1>
-    <p class="lede" id="lede">Pulling a recipe…</p>
+    <div class="head">
+      <div class="mark" id="mark">?</div>
+      <h1 id="heading">Random recipe</h1>
+      <p class="lede" id="lede">Pulling a recipe…</p>
+    </div>
     <div id="filter-ui" hidden>
-      <div class="filters">
-        <div class="filter-row">
-          <span class="filter-label">Cuisine</span>
-          <div class="chips" data-facet="cuisine"></div>
-        </div>
-        <div class="filter-row">
-          <span class="filter-label">Course</span>
-          <div class="chips" data-facet="course"></div>
-        </div>
-        <div class="filter-row">
-          <span class="filter-label">Time (active)</span>
-          <div class="chips" data-facet="time">
-            <button type="button" class="chip" data-time="20">≤ 20 min</button>
-            <button type="button" class="chip" data-time="30">≤ 30 min</button>
-            <button type="button" class="chip" data-time="60">≤ 1 h</button>
-          </div>
-        </div>
-        <div class="filter-row">
-          <span class="filter-label">Difficulty</span>
-          <div class="chips" data-facet="difficulty">
-            <button type="button" class="chip" data-difficulty="easy">easy</button>
-            <button type="button" class="chip" data-difficulty="medium">medium</button>
-            <button type="button" class="chip" data-difficulty="hard">hard</button>
-          </div>
-        </div>
-      </div>
-      <div class="status" id="status"></div>
+      <div class="filters" id="filters"></div>
       <div class="actions">
         <button type="button" class="btn" id="go">Surprise me</button>
-        <button type="button" class="btn btn-ghost" id="clear">Clear</button>
+        <button type="button" class="btn btn-ghost" id="clear">Clear all</button>
+        <span class="status" id="status"></span>
       </div>
     </div>
-    <a class="back" href="index.html">← back to all recipes</a>
+    <div style="text-align:center"><a class="back" href="index.html">← back to all recipes</a></div>
   </div>
 </main>
 <script>
 (function () {
   'use strict';
 
-  const params = new URLSearchParams(location.search);
-  const hasParams = ['cuisine', 'course', 'max_min', 'difficulty'].some(k => params.has(k));
-  const STORE_KEY = 'hdr-random-filter';
+  // ── Facet definitions ──────────────────────────────────────────────────
+  // Each facet declares: how to extract values from a recipe and how a value
+  // matches. Multi-select within a facet means OR; across facets it's AND.
+  // Facets driven by tags inspect the tag set; "protein" derives from a small
+  // controlled vocabulary so vegetarian/vegan can also live in this row.
+  //
+  // Some facets are dynamic (cuisine/course/diet) — values come from data.
+  // Others are curated (protein/vibe/type/time/difficulty) — values pinned
+  // here so the picker reads consistently regardless of which recipes ship.
 
-  const lede = document.getElementById('lede');
-  const heading = document.getElementById('heading');
-  const filterUI = document.getElementById('filter-ui');
-  const status = document.getElementById('status');
-  const goBtn = document.getElementById('go');
-  const clearBtn = document.getElementById('clear');
+  const PROTEIN_TAGS = ['chicken', 'pork', 'beef', 'lamb', 'turkey', 'fish', 'seafood', 'egg'];
+  const VIBE_TAGS    = ['comfort', 'spicy', 'weeknight', 'weekend-project', 'holiday', 'no-cook', 'one-pot', 'make-ahead', 'freezer-friendly', 'pantry'];
+  const TYPE_TAGS    = ['pasta', 'rice', 'noodles', 'bread', 'cake', 'cookies', 'soup', 'stir-fry', 'braise', 'sauce', 'snack', 'drink', 'side', 'salad', 'dessert', 'breakfast'];
+  const DIFFICULTIES = ['easy', 'medium', 'hard'];
+  const TIME_BUCKETS = [
+    { label: '≤ 20 min', value: 20 },
+    { label: '≤ 30 min', value: 30 },
+    { label: '≤ 45 min', value: 45 },
+    { label: '≤ 1 h',    value: 60 },
+    { label: '≤ 1.5 h',  value: 90 },
+  ];
 
-  function pickFrom(recipes) {
-    return recipes[Math.floor(Math.random() * recipes.length)];
+  function tagSet(r) { return new Set(r.tags || []); }
+  function dietSet(r) {
+    if (!r.diet) return new Set();
+    return new Set(Array.isArray(r.diet) ? r.diet : String(r.diet).split('|').filter(Boolean));
+  }
+  function activeMin(r) {
+    return (r.time && (r.time.active_min || r.time.total_min)) || 0;
   }
 
-  function matches(e, filt) {
-    if (filt.cuisine && (e.cuisine || '').toLowerCase() !== filt.cuisine.toLowerCase()) return false;
-    if (filt.course && (e.course || '').toLowerCase() !== filt.course.toLowerCase()) return false;
-    if (filt.difficulty && (e.difficulty || '') !== filt.difficulty) return false;
-    if (filt.max_min) {
-      const t = e.time && (e.time.active_min || e.time.total_min) || 0;
-      if (!t || t > filt.max_min) return false;
+  // Each facet: { key, label, multi, dynamic?, values? (sync), match(r, vals) }
+  // - dynamic: values pulled from the actual data on init.
+  // - multi:   true → multi-select, OR within facet.
+  // - match:   given recipe r and selected Set, return true if r should pass.
+  const FACETS = [
+    {
+      key: 'cuisine', label: 'Cuisine', multi: true, dynamic: 'cuisine',
+      match: (r, vals) => !vals.size || vals.has(r.cuisine || ''),
+    },
+    {
+      key: 'course', label: 'Course', multi: true, dynamic: 'course',
+      match: (r, vals) => !vals.size || vals.has(r.course || ''),
+    },
+    {
+      key: 'protein', label: 'Protein / base', multi: true,
+      values: [...PROTEIN_TAGS, 'vegetarian', 'vegan'],
+      match: (r, vals) => {
+        if (!vals.size) return true;
+        const tags = tagSet(r);
+        const diet = dietSet(r);
+        for (const v of vals) {
+          if (v === 'vegetarian' || v === 'vegan') {
+            if (diet.has(v)) return true;
+          } else if (tags.has(v)) {
+            return true;
+          }
+        }
+        return false;
+      },
+    },
+    {
+      key: 'type', label: 'Type', multi: true, values: TYPE_TAGS,
+      match: (r, vals) => {
+        if (!vals.size) return true;
+        const tags = tagSet(r);
+        for (const v of vals) if (tags.has(v) || r.course === v) return true;
+        return false;
+      },
+    },
+    {
+      key: 'vibe', label: 'Vibe', multi: true, values: VIBE_TAGS,
+      match: (r, vals) => {
+        if (!vals.size) return true;
+        const tags = tagSet(r);
+        for (const v of vals) if (tags.has(v)) return true;
+        return false;
+      },
+    },
+    {
+      key: 'diet', label: 'Diet', multi: true, dynamic: 'diet',
+      match: (r, vals) => {
+        if (!vals.size) return true;
+        const d = dietSet(r);
+        // AND across diet selections — picking gluten-free + dairy-free should
+        // require both, otherwise the filter is misleading for restrictions.
+        for (const v of vals) if (!d.has(v)) return false;
+        return true;
+      },
+    },
+    {
+      key: 'time', label: 'Time (active)', multi: false,
+      values: TIME_BUCKETS.map(t => String(t.value)),
+      labelFor: v => (TIME_BUCKETS.find(t => String(t.value) === v) || {}).label || v,
+      match: (r, vals) => {
+        if (!vals.size) return true;
+        const cap = Math.min(...[...vals].map(v => parseInt(v, 10) || 0).filter(n => n > 0));
+        if (!isFinite(cap)) return true;
+        const t = activeMin(r);
+        return t > 0 && t <= cap;
+      },
+    },
+    {
+      key: 'difficulty', label: 'Difficulty', multi: true, values: DIFFICULTIES,
+      match: (r, vals) => !vals.size || vals.has(r.difficulty || ''),
+    },
+  ];
+
+  const STORE_KEY = 'hdr-random-filter-v2';
+
+  // ── Storage ─────────────────────────────────────────────────────────
+  // State is { facetKey: [v1, v2, ...] }. Stringify-friendly.
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORE_KEY);
+      if (!raw) return {};
+      const v = JSON.parse(raw);
+      return (v && typeof v === 'object') ? v : {};
+    } catch { return {}; }
+  }
+  function saveState(state) {
+    try {
+      const out = {};
+      for (const f of FACETS) {
+        const arr = [...(state[f.key] || [])];
+        if (arr.length) out[f.key] = arr;
+      }
+      if (Object.keys(out).length) localStorage.setItem(STORE_KEY, JSON.stringify(out));
+      else localStorage.removeItem(STORE_KEY);
+    } catch {}
+  }
+
+  // ── URL params ──────────────────────────────────────────────────────
+  // Multi-value: comma-separated (e.g. ?cuisine=Italian,Chinese).
+  // Legacy single-value also supported (?cuisine=Italian).
+  // Legacy ?max_min= maps to time.
+  function stateFromQuery() {
+    const out = {};
+    const qs = new URLSearchParams(location.search);
+    for (const f of FACETS) {
+      const vals = [];
+      // Repeated key: ?cuisine=A&cuisine=B
+      qs.getAll(f.key).forEach(v => {
+        if (!v) return;
+        // Comma-split for ?cuisine=A,B
+        v.split(',').map(s => s.trim()).filter(Boolean).forEach(s => vals.push(s));
+      });
+      if (vals.length) out[f.key] = vals;
+    }
+    // Legacy: ?max_min= maps to time
+    if (!out.time) {
+      const mx = qs.get('max_min');
+      if (mx && /^\d+$/.test(mx)) out.time = [mx];
+    }
+    return out;
+  }
+
+  function queryFromState(state) {
+    const qs = new URLSearchParams();
+    for (const f of FACETS) {
+      const vals = state[f.key];
+      if (!vals || !vals.length) continue;
+      // Repeated keys read more naturally in URLs than comma-joins.
+      for (const v of vals) qs.append(f.key, v);
+    }
+    return qs;
+  }
+
+  // ── Engine ─────────────────────────────────────────────────────────
+  function matches(recipe, state) {
+    for (const f of FACETS) {
+      const vals = state[f.key];
+      if (!vals || !vals.length) continue;
+      if (!f.match(recipe, new Set(vals))) return false;
     }
     return true;
   }
@@ -154,144 +312,168 @@
     return fetch('data/entries.json').then(r => r.json());
   }
 
-  // Path A: query params present → filter and redirect.
+  // ── Path A: query params present → filter and redirect ─────────────
+  const hasParams = [...new URLSearchParams(location.search).keys()].length > 0;
   if (hasParams) {
-    const filt = {
-      cuisine: params.get('cuisine') || null,
-      course: params.get('course') || null,
-      difficulty: params.get('difficulty') || null,
-      max_min: parseInt(params.get('max_min') || '0', 10) || null,
-    };
-    lede.textContent = 'Filtering…';
-    lede.classList.add('loading');
+    const state = stateFromQuery();
+    document.getElementById('lede').textContent = 'Filtering…';
+    document.getElementById('lede').classList.add('loading');
     loadEntries().then(entries => {
-      const pool = entries.filter(e => e.status === 'complete' && e.type === 'recipe' && matches(e, filt));
+      const recipes = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
+      const pool = recipes.filter(r => matches(r, state));
       if (!pool.length) {
-        lede.classList.remove('loading');
-        lede.textContent = "Nothing matches that filter.";
-        heading.textContent = 'No match';
-        // Reveal the picker so the user can adjust without backing up.
-        showPicker(filt);
+        document.getElementById('lede').classList.remove('loading');
+        document.getElementById('lede').textContent = 'Nothing matches that combination — try loosening the filters.';
+        document.getElementById('heading').textContent = 'No match';
+        showPicker(state, recipes);
         return;
       }
-      // Persist last filter so "Random again" can replay it
-      try { localStorage.setItem(STORE_KEY, JSON.stringify(filt)); } catch {}
-      const pick = pickFrom(pool);
+      saveState(state);
+      const pick = pool[Math.floor(Math.random() * pool.length)];
       location.replace(pick.path);
     }).catch(() => location.replace('index.html'));
     return;
   }
 
-  // Path B: no params → show the picker UI.
-  showPicker(null);
+  // ── Path B: no params → render the picker ──────────────────────────
+  document.getElementById('heading').textContent = 'Random — your call';
+  document.getElementById('lede').textContent = 'Pick anything to narrow down. Skip everything for a true wildcard.';
+  loadEntries().then(entries => {
+    const recipes = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
+    showPicker(loadState(), recipes);
+  });
 
-  function showPicker(presetFilt) {
-    heading.textContent = 'Random — your call';
-    lede.textContent = 'Optionally narrow it down. Skip everything for a true wildcard.';
-    filterUI.hidden = false;
+  // ── Picker UI ──────────────────────────────────────────────────────
+  function showPicker(initialState, recipes) {
+    const ui = document.getElementById('filter-ui');
+    const filtersEl = document.getElementById('filters');
+    const statusEl = document.getElementById('status');
+    const goBtn = document.getElementById('go');
+    const clearBtn = document.getElementById('clear');
+    ui.hidden = false;
 
-    let entriesAll = null;
-    const filt = presetFilt || (() => {
-      try { return JSON.parse(localStorage.getItem(STORE_KEY) || 'null'); } catch { return null; }
-    })() || {};
+    // Resolve dynamic values from data.
+    const dynamicValues = { cuisine: new Set(), course: new Set(), diet: new Set() };
+    for (const r of recipes) {
+      if (r.cuisine) dynamicValues.cuisine.add(r.cuisine);
+      if (r.course)  dynamicValues.course.add(r.course);
+      for (const d of dietSet(r)) dynamicValues.diet.add(d);
+    }
 
-    // Build cuisine + course chips dynamically from the actual data.
-    loadEntries().then(entries => {
-      entriesAll = entries.filter(e => e.status === 'complete' && e.type === 'recipe');
-      const cuisines = new Set(); const courses = new Set();
-      for (const e of entriesAll) {
-        if (e.cuisine) cuisines.add(e.cuisine);
-        if (e.course) courses.add(e.course);
-      }
-      mountChips('cuisine', [...cuisines].sort(), filt.cuisine);
-      mountChips('course', [...courses].sort(), filt.course);
-      // Apply preset to chips that already exist (time, difficulty)
-      if (filt.max_min) markChip('time', filt.max_min);
-      if (filt.difficulty) markChip('difficulty', filt.difficulty);
-      updateCount();
-    });
+    // Build state — Set per facet for fast toggle.
+    const state = {};
+    for (const f of FACETS) {
+      state[f.key] = new Set(initialState[f.key] || []);
+    }
 
-    function mountChips(facet, values, selectedValue) {
-      const root = document.querySelector(`.chips[data-facet="${facet}"]`);
-      if (!root) return;
-      // Insert new chips before any existing static ones (time/difficulty have presets in HTML).
-      values.forEach(v => {
+    // Render one facet row.
+    function valuesFor(f) {
+      if (f.dynamic) return [...dynamicValues[f.dynamic]].sort();
+      return f.values || [];
+    }
+
+    function renderFacet(f) {
+      const row = document.createElement('div');
+      row.className = 'filter-row';
+      row.innerHTML = `<span class="filter-label">${f.label}${f.multi ? '' : ' <span style="text-transform:none;letter-spacing:.05em;opacity:.7">(pick one)</span>'}</span>`;
+      const chipsEl = document.createElement('div');
+      chipsEl.className = 'chips';
+      chipsEl.dataset.facet = f.key;
+      const vals = valuesFor(f);
+      for (const v of vals) {
         const b = document.createElement('button');
         b.type = 'button';
-        b.className = 'chip' + (selectedValue && selectedValue === v ? ' is-on' : '');
-        b.dataset[facet] = v;
-        b.textContent = v;
-        root.appendChild(b);
+        b.className = 'chip' + (state[f.key].has(v) ? ' is-on' : '');
+        b.dataset.value = v;
+        b.textContent = f.labelFor ? f.labelFor(v) : v;
+        chipsEl.appendChild(b);
+      }
+      row.appendChild(chipsEl);
+      // Click delegate
+      chipsEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('.chip');
+        if (!btn) return;
+        const v = btn.dataset.value;
+        const sel = state[f.key];
+        if (f.multi) {
+          if (sel.has(v)) sel.delete(v); else sel.add(v);
+        } else {
+          // Single-select: toggle off if already selected, else replace
+          const wasOn = sel.has(v);
+          sel.clear();
+          if (!wasOn) sel.add(v);
+        }
+        // Repaint chips for THIS facet (on/off state)
+        chipsEl.querySelectorAll('.chip').forEach(c => {
+          c.classList.toggle('is-on', sel.has(c.dataset.value));
+        });
+        update();
       });
+      return row;
     }
 
-    function markChip(facet, value) {
-      const sel = `.chips[data-facet="${facet}"] [data-${facet}="${value}"]`;
-      const el = document.querySelector(sel);
-      if (el) el.classList.add('is-on');
-    }
+    // Mount all facets
+    for (const f of FACETS) filtersEl.appendChild(renderFacet(f));
 
-    function readFilters() {
+    function snapshot() {
       const out = {};
-      const c = document.querySelector('.chips[data-facet="cuisine"] .is-on');
-      const co = document.querySelector('.chips[data-facet="course"] .is-on');
-      const t = document.querySelector('.chips[data-facet="time"] .is-on');
-      const d = document.querySelector('.chips[data-facet="difficulty"] .is-on');
-      if (c) out.cuisine = c.dataset.cuisine;
-      if (co) out.course = co.dataset.course;
-      if (t) out.max_min = parseInt(t.dataset.time, 10);
-      if (d) out.difficulty = d.dataset.difficulty;
+      for (const f of FACETS) out[f.key] = [...state[f.key]];
       return out;
     }
 
-    function updateCount() {
-      if (!entriesAll) return;
-      const f = readFilters();
-      const n = entriesAll.filter(e => matches(e, f)).length;
-      const total = entriesAll.length;
-      status.textContent = `${n} of ${total} ${n === 1 ? 'recipe matches' : 'recipes match'}`;
+    function update() {
+      const snap = snapshot();
+      const n = recipes.filter(r => matches(r, snap)).length;
+      const total = recipes.length;
+      const filterCount = Object.values(snap).reduce((acc, v) => acc + v.length, 0);
+      statusEl.innerHTML = filterCount
+        ? `<span class="count">${n}</span> of ${total} ${n === 1 ? 'recipe' : 'recipes'} match · ${filterCount} filter${filterCount === 1 ? '' : 's'}`
+        : `<span class="count">${total}</span> recipes — wildcard mode`;
       goBtn.disabled = n === 0;
+      saveState(snap);
+
+      // Subtle: dim chips that would yield 0 if added (predictive disable).
+      // For each unselected chip, simulate adding it and check pool > 0.
+      // Cheap enough at 75 recipes × ~80 chips.
+      for (const f of FACETS) {
+        const chipsEl = filtersEl.querySelector(`.chips[data-facet="${f.key}"]`);
+        if (!chipsEl) continue;
+        const sel = state[f.key];
+        chipsEl.querySelectorAll('.chip').forEach(c => {
+          const v = c.dataset.value;
+          if (sel.has(v)) { c.classList.remove('is-disabled'); return; }
+          // Simulate: temp-add v, see if any matches remain.
+          const probe = { ...snap, [f.key]: f.multi ? [...sel, v] : [v] };
+          const ok = recipes.some(r => matches(r, probe));
+          c.classList.toggle('is-disabled', !ok);
+        });
+      }
     }
 
-    // Toggle chip selection — single-select per facet, click-again to clear.
-    document.querySelectorAll('.chips').forEach(root => {
-      root.addEventListener('click', (e) => {
-        const b = e.target.closest('.chip');
-        if (!b) return;
-        const wasOn = b.classList.contains('is-on');
-        root.querySelectorAll('.chip').forEach(c => c.classList.remove('is-on'));
-        if (!wasOn) b.classList.add('is-on');
-        updateCount();
-      });
-    });
-
     goBtn.addEventListener('click', () => {
-      const f = readFilters();
-      try { localStorage.setItem(STORE_KEY, JSON.stringify(f)); } catch {}
-      const qs = new URLSearchParams();
-      if (f.cuisine) qs.set('cuisine', f.cuisine);
-      if (f.course) qs.set('course', f.course);
-      if (f.max_min) qs.set('max_min', String(f.max_min));
-      if (f.difficulty) qs.set('difficulty', f.difficulty);
-      const target = qs.toString() ? `random.html?${qs}` : 'random.html?_=1';
-      // Rerun: redirect to ourselves with params; the param-path branch handles the pick.
-      // The `_=1` cache-buster forces the param branch even with no real filters.
-      if (!qs.toString()) {
-        // No filters → just pick from all
-        const pool = entriesAll;
-        if (!pool.length) return;
+      const snap = snapshot();
+      const pool = recipes.filter(r => matches(r, snap));
+      if (!pool.length) return;
+      saveState(snap);
+      // Persist filter into URL and navigate via the param-path so a back-button
+      // returns to the picker with the same selection visible.
+      const qs = queryFromState(snap);
+      if (qs.toString()) {
+        location.replace(`random.html?${qs}`);
+      } else {
         const pick = pool[Math.floor(Math.random() * pool.length)];
         location.replace(pick.path);
-      } else {
-        location.replace(target);
       }
     });
 
     clearBtn.addEventListener('click', () => {
-      document.querySelectorAll('.chip.is-on').forEach(c => c.classList.remove('is-on'));
-      try { localStorage.removeItem(STORE_KEY); } catch {}
-      updateCount();
+      for (const f of FACETS) state[f.key].clear();
+      filtersEl.querySelectorAll('.chip').forEach(c => c.classList.remove('is-on'));
+      saveState({});
+      update();
     });
+
+    update();
   }
 })();
 </script>
