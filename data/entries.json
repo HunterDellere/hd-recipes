@@ -84,6 +84,30 @@
     }
   },
   {
+    "path": "pages/ingredients/chaat-masala.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chaat masala",
+    "desc": "North Indian finishing spice blend built around kala namak (sulfurous Himalayan black salt) and amchur (dried unripe mango powder), with toasted cumin, coriander, ajwain, ginger, and chili. The signature sulfur-sour-saline axis defines its identity; not interchangeable with garam masala.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian",
+      "umami",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "chaat-masala",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/cherry-tomato.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -119,7 +143,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -229,6 +253,29 @@
     }
   },
   {
+    "path": "pages/ingredients/green-chili.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Green chili (Indian hari mirch)",
+    "desc": "Fresh unripe Capsicum annuum or C. frutescens cultivars (hari mirch, finger chili, serrano-adjacent) used across South Asian and Latin American cooking as the bright capsaicin source ; sharp, vegetal, and hot at 30,000 to 50,000 Scoville. Different ingredient from dried red chili.",
+    "tags": [
+      "vegetable",
+      "spice",
+      "aromatic",
+      "indian",
+      "spicy"
+    ],
+    "status": "complete",
+    "_slug": "green-chili",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/green-papaya.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -326,7 +373,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -346,7 +393,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -535,6 +582,27 @@
     }
   },
   {
+    "path": "pages/ingredients/red-onion.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Red onion",
+    "desc": "Allium cepa with anthocyanin-rich red-purple skin and rings, milder and sweeter than yellow onion when raw, the canonical raw-application onion across kachumber, ceviche, fattoush, salsa, and tacos. Cooks down to brown rather than red.",
+    "tags": [
+      "vegetable",
+      "aromatic",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "red-onion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/red-wine-vinegar.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -676,7 +744,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -964,6 +1032,113 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/kachumber-with-cumin-lime.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Kachumber with cumin and lime",
+    "desc": "North Indian chopped raw salad: even fine dice of cucumber, tomato, and red onion, dressed with toasted cumin bloomed in lime, chaat masala, green chili, and mint. Built as a cooling foil to rich curries; the seasoning is sour, smoky from cumin, and salt-forward, not sweet.",
+    "tags": [
+      "salad",
+      "indian",
+      "vegetable",
+      "herb",
+      "acid",
+      "no-cook",
+      "side",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "kachumber-with-cumin-lime",
+    "cuisine": "Indian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 3,
+      "total_min": 23,
+      "active_min": 22
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "cumin seeds, whole",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "chaat masala",
+        "slug": "chaat-masala",
+        "optional": false
+      },
+      {
+        "item": "green chili (Indian or Thai bird), seeded if heat-sensitive",
+        "slug": "green-chili",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "Persian or English cucumber",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "firm ripe tomato (Roma or vine)",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves",
+        "slug": "mint",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "blooming-aromatics"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 23,
+      "diffLabel": "easy",
+      "timeLead": "23 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 22,
+      "filterMinutes": 22
     }
   },
   {
@@ -1689,7 +1864,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -2012,7 +2187,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 10,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -2056,7 +2231,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -9406,7 +9581,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 20,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -10114,7 +10289,7 @@
     "updated": "2026-04-27",
     "added": "2026-04-28",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -11177,7 +11352,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -12938,7 +13113,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 16
+      "usedInCount": 17
     }
   },
   {
@@ -13141,6 +13316,91 @@
     "added": "2026-04-26",
     "_card": {
       "usedInCount": 0
+    }
+  },
+  {
+    "path": "pages/recipes/chaat-masala.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chaat masala",
+    "desc": "Toasted-and-ground North Indian finishing spice blend ; kala namak, amchur, cumin, coriander, ajwain, ginger, chili. Sulfur-sour-saline axis. Stub.",
+    "tags": [
+      "spice",
+      "pantry",
+      "indian",
+      "make-ahead"
+    ],
+    "status": "stub",
+    "_slug": "chaat-masala",
+    "cuisine": "Indian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 8,
+      "total_min": 25,
+      "active_min": 12
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "cumin seeds, whole",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "coriander seeds, whole",
+        "optional": false
+      },
+      {
+        "item": "ajwain (carom) seeds, whole",
+        "optional": false
+      },
+      {
+        "item": "kala namak (Himalayan black salt), powdered",
+        "optional": false
+      },
+      {
+        "item": "amchur (dried green mango powder)",
+        "optional": false
+      },
+      {
+        "item": "dried ginger powder",
+        "optional": false
+      },
+      {
+        "item": "asafoetida (hing) powder",
+        "optional": false
+      },
+      {
+        "item": "mild red chili powder (Kashmiri preferred)",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns, whole",
+        "slug": "black-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
     }
   },
   {

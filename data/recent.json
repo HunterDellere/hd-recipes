@@ -205,6 +205,113 @@
     }
   },
   {
+    "path": "pages/recipes/kachumber-with-cumin-lime.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Kachumber with cumin and lime",
+    "desc": "North Indian chopped raw salad: even fine dice of cucumber, tomato, and red onion, dressed with toasted cumin bloomed in lime, chaat masala, green chili, and mint. Built as a cooling foil to rich curries; the seasoning is sour, smoky from cumin, and salt-forward, not sweet.",
+    "tags": [
+      "salad",
+      "indian",
+      "vegetable",
+      "herb",
+      "acid",
+      "no-cook",
+      "side",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "kachumber-with-cumin-lime",
+    "cuisine": "Indian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 3,
+      "total_min": 23,
+      "active_min": 22
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "cumin seeds, whole",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "chaat masala",
+        "slug": "chaat-masala",
+        "optional": false
+      },
+      {
+        "item": "green chili (Indian or Thai bird), seeded if heat-sensitive",
+        "slug": "green-chili",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "Persian or English cucumber",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "firm ripe tomato (Roma or vine)",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves",
+        "slug": "mint",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "blooming-aromatics"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 23,
+      "diffLabel": "easy",
+      "timeLead": "23 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 22,
+      "filterMinutes": 22
+    }
+  },
+  {
     "path": "pages/recipes/larb-gai-thai-minced-chicken-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -322,174 +429,6 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/nicoise-salad.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Salade niçoise",
-    "desc": "Oil-poached tuna, blanched haricots verts, jammy egg, salt-cured tomato, and nicoise olives over an anchovy-dijon vinaigrette. Composed, not tossed; every component salted on its own terms.",
-    "tags": [
-      "salad",
-      "french",
-      "mediterranean",
-      "fish",
-      "egg",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "nicoise-salad",
-    "cuisine": "French",
-    "course": "lunch",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 30,
-      "total_min": 80,
-      "active_min": 40
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "pescatarian",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "sushi-grade tuna loin",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "bay leaf",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "lemon zest, in wide strips",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "garlic, smashed once",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "large eggs, fridge cold",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "small waxy potatoes (fingerling or new potato)",
-        "slug": "waxy-potato",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the boil",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "haricots verts",
-        "slug": "haricots-verts",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the blanch",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "ripe field tomatoes",
-        "slug": "tomato",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "oil-cured anchovy fillets",
-        "slug": "anchovy-fillets",
-        "optional": false
-      },
-      {
-        "item": "dijon mustard",
-        "slug": "dijon-mustard",
-        "optional": false
-      },
-      {
-        "item": "shallot, grated on a microplane",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "red wine vinegar",
-        "slug": "red-wine-vinegar",
-        "optional": false
-      },
-      {
-        "item": "lemon juice, fresh",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "nicoise olives",
-        "slug": "nicoise-olives",
-        "optional": false
-      },
-      {
-        "item": "salt-packed capers, rinsed",
-        "slug": "capers",
-        "optional": false
-      },
-      {
-        "item": "fresh basil leaves",
-        "slug": "basil",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "oil-poaching",
-      "jammy-egg",
-      "vinaigrette-emulsion",
-      "ice-bath-shock",
-      "dry-brining"
-    ],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 80,
-      "diffLabel": "medium",
-      "timeLead": "1 h 20 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 40,
-      "filterMinutes": 40
     }
   },
   {
