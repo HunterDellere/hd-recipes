@@ -179,6 +179,121 @@
     }
   },
   {
+    "path": "pages/recipes/ensalada-de-nopales.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ensalada de nopales",
+    "desc": "Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and Maillard browning develops, then sliced and tossed warm with diced tomato, white onion, serrano, cilantro, lime, and crumbled queso fresco. The thesis is heat-as-mucilage-fix, not blanching; the char is the entire flavor argument.",
+    "tags": [
+      "salad",
+      "mexican",
+      "vegetable",
+      "no-cook",
+      "side",
+      "weeknight",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "ensalada-de-nopales",
+    "cuisine": "Mexican",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 18,
+      "total_min": 38,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "nopal paddles, fresh",
+        "slug": "nopales",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "avocado oil or other neutral high-heat oil",
+        "slug": "avocado-oil",
+        "optional": false
+      },
+      {
+        "item": "firm ripe Roma tomato",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "white onion",
+        "slug": "white-onion",
+        "optional": false
+      },
+      {
+        "item": "serrano chili, fresh",
+        "slug": "serrano-chili",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano, dried",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "queso fresco",
+        "slug": "queso-fresco",
+        "optional": false
+      },
+      {
+        "item": "avocado, ripe but firm",
+        "slug": "avocado",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "comal-charring",
+      "blooming-aromatics"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 38,
+      "diffLabel": "easy",
+      "timeLead": "38 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/fattoush-with-sumac-and-toasted-pita.html",
     "type": "recipe",
     "category": "recipes",
@@ -325,113 +440,6 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/kachumber-with-cumin-lime.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Kachumber with cumin and lime",
-    "desc": "North Indian chopped raw salad: even fine dice of cucumber, tomato, and red onion, dressed with toasted cumin bloomed in lime, chaat masala, green chili, and mint. Built as a cooling foil to rich curries; the seasoning is sour, smoky from cumin, and salt-forward, not sweet.",
-    "tags": [
-      "salad",
-      "indian",
-      "vegetable",
-      "herb",
-      "acid",
-      "no-cook",
-      "side",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "kachumber-with-cumin-lime",
-    "cuisine": "Indian",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 3,
-      "total_min": 23,
-      "active_min": 22
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "cumin seeds, whole",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "lime juice, fresh",
-        "slug": "lime",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "chaat masala",
-        "slug": "chaat-masala",
-        "optional": false
-      },
-      {
-        "item": "green chili (Indian or Thai bird), seeded if heat-sensitive",
-        "slug": "green-chili",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly ground",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "Persian or English cucumber",
-        "slug": "cucumber",
-        "optional": false
-      },
-      {
-        "item": "firm ripe tomato (Roma or vine)",
-        "slug": "tomato",
-        "optional": false
-      },
-      {
-        "item": "red onion",
-        "slug": "red-onion",
-        "optional": false
-      },
-      {
-        "item": "cilantro, leaves and tender stems",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "fresh mint leaves",
-        "slug": "mint",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "blooming-aromatics"
-    ],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 23,
-      "diffLabel": "easy",
-      "timeLead": "23 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 22,
-      "filterMinutes": 22
     }
   },
   {
