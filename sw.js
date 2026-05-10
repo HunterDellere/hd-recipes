@@ -16,7 +16,7 @@
  *
  * Bump VERSION when shipping a breaking change to invalidate older caches.
  */
-const VERSION = 'hdr-v10';
+const VERSION = 'hdr-v11';
 const SHELL_CACHE = `${VERSION}-shell`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 
@@ -32,6 +32,7 @@ const SHELL_ASSETS = [
   './scripts/lightbox.js',
   './scripts/palette.js',
   './scripts/hover-card.js',
+  './scripts/reveal.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
