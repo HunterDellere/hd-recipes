@@ -16,7 +16,7 @@
  *
  * Bump VERSION when shipping a breaking change to invalidate older caches.
  */
-const VERSION = 'hdr-v8';
+const VERSION = 'hdr-v9';
 const SHELL_CACHE = `${VERSION}-shell`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 
@@ -29,6 +29,9 @@ const SHELL_ASSETS = [
   './scripts/recipe.js',
   './scripts/toc-scroll.js',
   './scripts/enhance.js',
+  './scripts/lightbox.js',
+  './scripts/palette.js',
+  './scripts/hover-card.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
