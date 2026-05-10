@@ -1,5 +1,48 @@
 [
   {
+    "path": "pages/ingredients/atta-flour.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Atta flour (whole wheat chapati flour, آٹا)",
+    "desc": "Indian-style whole wheat flour milled from durum-style hard wheat, with all the bran and germ retained, ground extra-fine for soft-pliable dough. The structural flour for roti, chapati, paratha, and naan. Lower gluten than American whole wheat flour, higher protein than all-purpose, fundamentally different milling.",
+    "tags": [
+      "grain",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "atta-flour",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/bay-leaf.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Bay leaf (tej patta, तेज पत्ता)",
+    "desc": "Dried leaves of Laurus nobilis (European bay) or Cinnamomum tamala (Indian bay, also called tej patta or malabar leaf). Used whole as an aromatic in long-simmered dishes. Indian bay is structurally different from European bay: closer to cinnamon-clove than to camphor-pine.",
+    "tags": [
+      "herb",
+      "aromatic",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "bay-leaf",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/bell-pepper.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -15,7 +58,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -35,7 +78,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -56,8 +99,52 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 4,
+      "usedInCount": 8,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/cloves.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Cloves (laung, लौंग)",
+    "desc": "Dried unopened flower buds of Syzygium aromaticum, intensely aromatic from eugenol (75 to 85% of the volatile oil). Sharp, warm, faintly numbing on the tongue. Used in tiny quantities (3 to 4 cloves per dish) in biryani, garam masala, mulled wines, and Mughlai cooking; quickly overpowers if overused.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "cloves",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/cumin-seeds.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Cumin seeds (jeera, زیرہ)",
+    "desc": "Small dry seeds of Cuminum cyminum, warm-earthy-bitter, the workhorse tempering spice across South Asian, Middle Eastern, and Latin American cooking. Whole seeds bloomed in hot fat for 15 to 30 seconds release the aromatic oils into the cooking medium; ground cumin is a different ingredient functionally.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "cumin-seeds",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 4,
+      "hasNutrition": false
     }
   },
   {
@@ -99,7 +186,7 @@
     "status": "complete",
     "_slug": "douchi",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
       "usedInCount": 3,
@@ -184,10 +271,54 @@
     "status": "complete",
     "_slug": "fish-sauce",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
       "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/garam-masala.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Garam masala (warming spice blend)",
+    "desc": "A finishing spice blend of toasted whole spices ground together. Common base: cumin, coriander, cardamom, cinnamon, cloves, black pepper, bay leaf, sometimes nutmeg or mace. The blend varies by region and household; the structural rule is that it goes in late, after the dish is mostly cooked, so the volatile aromatics survive into the eating.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "garam-masala",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/ghee.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ghee (clarified butter, घी)",
+    "desc": "Butter simmered until the water boils off and the milk solids brown to deep amber, then strained. Pure butterfat with the toasted milk-solid aromatics carried in solution. Smoke point around 250°C / 480°F, distinctly nutty, shelf-stable. The structural cooking fat of North Indian and Pakistani cuisine.",
+    "tags": [
+      "fat",
+      "dairy",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "ghee",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fat",
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -208,7 +339,7 @@
     "status": "complete",
     "_slug": "gochujang",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
       "usedInCount": 1,
@@ -238,6 +369,28 @@
     }
   },
   {
+    "path": "pages/ingredients/green-cardamom.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Green cardamom (elaichi, छोटी इलायची)",
+    "desc": "Pale green pods of Elettaria cardamomum containing 8 to 12 sticky black seeds. Aromatic top note of South Asian sweets, biryanis, masala chai, and Scandinavian baking. The aromatic compounds are in the seeds, not the pod; cracked or whole pods release more flavor than ground supermarket cardamom.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "green-cardamom",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 4,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/ground-beef.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -250,11 +403,54 @@
     "status": "complete",
     "_slug": "ground-beef",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "primaryTag": "beef",
       "usedInCount": 2,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/ground-coriander.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ground coriander (dhania powder)",
+    "desc": "Coriandrum sativum seeds toasted and ground to a fine warm-citrusy powder. The structural base spice of North Indian and Pakistani curries, present in roughly twice the quantity of any other ground spice in a typical bhuna masala. Provides body and bridges the heat of chili with the warmth of cumin.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "ground-coriander",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/kashmiri-chili-powder.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Kashmiri chili powder (deggi mirch)",
+    "desc": "Mild Indian chili powder ground from Kashmiri or Byadgi cultivars: brilliant deep red, low heat (1500 to 2500 SHU), and used primarily for color rather than spice. The structural pigment of tandoori chicken, butter chicken, rogan josh, and most North Indian curries that rely on red color without aggressive heat.",
+    "tags": [
+      "spice",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "kashmiri-chili-powder",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 5,
+      "hasNutrition": false
     }
   },
   {
@@ -344,6 +540,29 @@
     }
   },
   {
+    "path": "pages/ingredients/saffron.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Saffron (kesar, زعفران)",
+    "desc": "Hand-harvested stigmas of Crocus sativus, the most expensive spice by weight. Carotenoid pigment crocin gives the brilliant gold color, picrocrocin gives the bitter-honey flavor, and safranal gives the floral-hay aroma. Used in tiny quantities (a pinch, 0.05 to 0.1 g per dish) in biryani, pulao, paella, risotto Milanese, and rasmalai.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian",
+      "mediterranean"
+    ],
+    "status": "complete",
+    "_slug": "saffron",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/silken-tofu.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -359,7 +578,7 @@
     "status": "complete",
     "_slug": "silken-tofu",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "primaryTag": "legume",
       "usedInCount": 2,
@@ -401,7 +620,7 @@
     "status": "complete",
     "_slug": "squid",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "primaryTag": "seafood",
       "usedInCount": 4,
@@ -430,6 +649,28 @@
     }
   },
   {
+    "path": "pages/ingredients/turmeric.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Turmeric (haldi, ground)",
+    "desc": "Dried and ground rhizome of Curcuma longa, brilliant orange-yellow, faintly bitter, and structural to South Asian cooking for both color and a low-grade aromatic depth. Curcumin (the active pigment-and-aromatic compound) is fat-soluble; turmeric tempered briefly in hot oil contributes more than turmeric stirred into water-based sauces.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "turmeric",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 4,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/walnuts.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -446,6 +687,27 @@
     "_card": {
       "primaryTag": "fat",
       "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/yogurt.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Yogurt (dahi, plain whole-milk)",
+    "desc": "Whole milk fermented with Lactobacillus and Streptococcus cultures into a thick tangy curd. Around 85% water, 4% milkfat, 4% protein. The base of South Asian raita, marinades, and curry bases; tempers cooked sauces and tenderizes proteins through lactic-acid action.",
+    "tags": [
+      "dairy",
+      "pantry",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "yogurt",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -692,7 +954,7 @@
     "equipment": [
       "wok"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 27,
       "diffLabel": "easy",
@@ -701,6 +963,320 @@
       "timeMode": "total",
       "activeMinutes": 22,
       "filterMinutes": 22
+    }
+  },
+  {
+    "path": "pages/recipes/chicken-nihari.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken nihari (Pakistani slow-braised stew)",
+    "desc": "Bone-in chicken slow-braised in a deeply spiced ghee-and-onion base for 90 minutes, the gravy thickened with toasted atta flour and finished with a julienned-ginger and crisped-onion garnish, fresh lemon. The chicken adaptation of the canonical Mughlai-Pakistani beef nihari that traditionally simmered overnight; the chicken version delivers the same flavor architecture in a Sunday afternoon.",
+    "tags": [
+      "pakistani",
+      "indian",
+      "chicken",
+      "spicy",
+      "umami",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chicken-nihari",
+    "cuisine": "Pakistani",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 105,
+      "total_min": 130,
+      "active_min": 50
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh ginger, peeled and rough-chopped",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "water (for blending)",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, cracked",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "Indian bay leaves (tej patta) or 1 small piece cinnamon",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns, cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "ghee",
+        "slug": "ghee",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, finely sliced",
+        "optional": false
+      },
+      {
+        "item": "bone-in skinless chicken thighs and drumsticks",
+        "optional": false
+      },
+      {
+        "item": "ground coriander",
+        "slug": "ground-coriander",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "cayenne pepper (or hotter Indian chili powder)",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "fennel seeds, ground",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water (or chicken stock for richer gravy)",
+        "optional": false
+      },
+      {
+        "item": "atta flour (whole wheat chapati flour)",
+        "slug": "atta-flour",
+        "optional": false
+      },
+      {
+        "item": "cold water (for slurry)",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, julienned into matchsticks",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "fried onions (birista), store-bought or homemade",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), thinly sliced",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "optional": false
+      },
+      {
+        "item": "garam masala",
+        "slug": "garam-masala",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "maillard-sear",
+      "red-oil-rendering"
+    ],
+    "equipment": [
+      "heavy Dutch oven or wide pot with lid",
+      "small skillet for toasting atta"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 130,
+      "diffLabel": "medium",
+      "timeLead": "2 h 10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/recipes/chicken-patties.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken patties (Pakistani puff-pastry hand pies)",
+    "desc": "Spiced chicken keema (ground chicken cooked with onion, ginger-garlic, garam masala) folded into store-bought puff pastry, sealed, egg-washed, and baked until shatteringly crisp. The Karachi bakery-stall standard, the structural item at every Pakistani tea-and-snack gathering. Two filling traditions cover most of the spectrum: keema (dry) and creamy (with bechamel).",
+    "tags": [
+      "pakistani",
+      "indian",
+      "chicken",
+      "snack",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chicken-patties",
+    "cuisine": "Pakistani",
+    "course": "snack",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 35,
+      "total_min": 65,
+      "active_min": 50
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "ground chicken (thigh meat preferred, dark meat is more flavorful and forgiving)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, very finely chopped",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger-garlic paste",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), finely minced",
+        "optional": false
+      },
+      {
+        "item": "tomato, finely chopped or grated",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "ground coriander",
+        "slug": "ground-coriander",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "garam masala",
+        "slug": "garam-masala",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, finely chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "optional": false
+      },
+      {
+        "item": "puff pastry, frozen, all-butter (Pepperidge Farm, Dufour, or store brand)",
+        "optional": false
+      },
+      {
+        "item": "large egg (for egg wash)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "sesame seeds (for finishing topping, optional but traditional)",
+        "optional": false
+      },
+      {
+        "item": "nigella seeds (kalonji, optional)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "red-oil-rendering"
+    ],
+    "equipment": [
+      "wide skillet",
+      "rolling pin",
+      "parchment-lined baking sheet",
+      "pastry brush"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 65,
+      "diffLabel": "medium",
+      "timeLead": "1 h 5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
     }
   },
   {
@@ -902,7 +1478,7 @@
       "charcoal grill (preferred), gas grill, or grill pan",
       "tongs"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 28,
       "diffLabel": "easy",
@@ -1146,6 +1722,94 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/kheer.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Rice kheer (chawal ki kheer)",
+    "desc": "Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and saffron, finished with chopped pistachios and almonds. The structural North Indian milk-rice pudding, eaten warm or cold, served at every festival and Sunday meal. Reduction is the technique; patience is the only difficulty.",
+    "tags": [
+      "indian",
+      "dessert",
+      "rice"
+    ],
+    "status": "complete",
+    "_slug": "kheer",
+    "cuisine": "Indian",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 70,
+      "total_min": 80,
+      "active_min": 70
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk (HTST-pasteurized, not ultra-pasteurized)",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "basmati rice",
+        "slug": "basmati-rice",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar (or jaggery for traditional sweetness)",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "saffron threads",
+        "slug": "saffron",
+        "optional": false
+      },
+      {
+        "item": "rosewater (optional, traditional in some households)",
+        "optional": false
+      },
+      {
+        "item": "unsalted pistachios, slivered",
+        "optional": false
+      },
+      {
+        "item": "unsalted almonds, slivered or sliced",
+        "optional": false
+      },
+      {
+        "item": "cashews, chopped (optional)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "heavy 4-quart pot or Dutch oven",
+      "silicone spatula or wooden spoon"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 80,
+      "diffLabel": "easy",
+      "timeLead": "1 h 20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 70,
+      "filterMinutes": 70
     }
   },
   {
@@ -1586,7 +2250,7 @@
       "wok",
       "thermometer"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 60,
       "diffLabel": "medium",
@@ -1709,7 +2373,7 @@
     "equipment": [
       "wok or wide skillet"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 28,
       "diffLabel": "medium",
@@ -1718,6 +2382,171 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/pav-bhaji.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pav bhaji (Mumbai street vegetable mash)",
+    "desc": "Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghee-and-onion masala built on pav bhaji masala (a specific commercial blend) and Kashmiri chili. Served with butter-toasted soft pav rolls, raw onion, lemon, and a generous pat of butter melting on top. The defining Mumbai street food.",
+    "tags": [
+      "indian",
+      "vegetable",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "pav-bhaji",
+    "cuisine": "Indian",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 35,
+      "total_min": 60,
+      "active_min": 45
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "russet or yukon gold potatoes, peeled and chunked",
+        "optional": false
+      },
+      {
+        "item": "cauliflower, cut into florets",
+        "slug": "cauliflower",
+        "optional": false
+      },
+      {
+        "item": "frozen green peas",
+        "optional": false
+      },
+      {
+        "item": "water (for boiling)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for boiling water)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "butter (unsalted, the Mumbai signature)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for higher smoke point)",
+        "optional": false
+      },
+      {
+        "item": "red onion, finely chopped",
+        "optional": false
+      },
+      {
+        "item": "green bell pepper (capsicum), finely chopped",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger-garlic paste",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), finely minced",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "pav bhaji masala (commercial blend, MDH or Everest)",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder (for color)",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "tomatoes, finely chopped or grated",
+        "optional": false
+      },
+      {
+        "item": "tomato paste (concentrated, for color and depth)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice (or amchur powder)",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "butter (additional, for finishing each portion)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "pav rolls (soft Mumbai-style buns) or brioche dinner rolls",
+        "optional": false
+      },
+      {
+        "item": "butter (for toasting the pav)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "red onion, finely diced (for the side)",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "red-oil-rendering"
+    ],
+    "equipment": [
+      "wide heavy pan or wok",
+      "4-quart pot",
+      "potato masher",
+      "wide skillet or griddle for pav"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 45,
+      "filterMinutes": 45
     }
   },
   {
@@ -1991,6 +2820,206 @@
     }
   },
   {
+    "path": "pages/recipes/raita.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Raita (cucumber-mint, the household standard)",
+    "desc": "Plain whole-milk yogurt whisked smooth with grated cucumber, fresh mint, toasted cumin, and a small pinch of black salt or kala namak. The cooling counterpoint to spicy biryani, pulao, and curry. Five minutes of prep; structural to a South Asian meal in a way that \"side salad\" is not.",
+    "tags": [
+      "indian",
+      "pakistani",
+      "side",
+      "no-cook"
+    ],
+    "status": "complete",
+    "_slug": "raita",
+    "cuisine": "Indian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 2,
+      "total_min": 12,
+      "active_min": 12
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "plain whole-milk yogurt (Indian dahi or American whole-milk plain)",
+        "slug": "yogurt",
+        "optional": false
+      },
+      {
+        "item": "water (or milk for richer raita)",
+        "optional": false
+      },
+      {
+        "item": "English cucumber, peeled and grated",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves, finely chopped",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, finely chopped",
+        "optional": false
+      },
+      {
+        "item": "green chili (Thai bird, serrano, or jalapeño), finely minced",
+        "optional": false
+      },
+      {
+        "item": "toasted ground cumin",
+        "optional": false
+      },
+      {
+        "item": "kala namak (Indian black salt), or fine sea salt",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder (for color)",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "box grater",
+      "small skillet for cumin",
+      "mortar or spice grinder"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 12,
+      "diffLabel": "easy",
+      "timeLead": "12 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/rasmalai.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ras malai (chhena dumplings in saffron-cardamom milk)",
+    "desc": "Fresh chhena (acid-set whole-milk curds, drained and kneaded) shaped into small discs, gently simmered in light sugar syrup until they puff and float, then transferred to reduced milk perfumed with cardamom, saffron, and pistachio. Bengali in origin, North Indian and Pakistani by adoption, served chilled at every wedding and festival on the subcontinent.",
+    "tags": [
+      "indian",
+      "pakistani",
+      "dessert"
+    ],
+    "status": "complete",
+    "_slug": "rasmalai",
+    "cuisine": "Indian",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 60,
+      "total_min": 240,
+      "active_min": 90
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk (HTST-pasteurized, not ultra-pasteurized)",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice (or 30 ml white vinegar)",
+        "optional": false
+      },
+      {
+        "item": "cold water (for ice bath)",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "whole milk (HTST-pasteurized)",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, crushed (seeds only)",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "saffron threads",
+        "slug": "saffron",
+        "optional": false
+      },
+      {
+        "item": "unsalted pistachios, slivered",
+        "optional": false
+      },
+      {
+        "item": "almond slivers",
+        "optional": false
+      },
+      {
+        "item": "rose petals, dried (optional)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "acid-milk-sour"
+    ],
+    "equipment": [
+      "heavy 4-quart pot",
+      "wide saucepan or shallow Dutch oven for syrup",
+      "fine-mesh sieve",
+      "cheesecloth"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 240,
+      "diffLabel": "medium",
+      "timeLead": "4 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
     "path": "pages/recipes/roasted-pear-gorgonzola-tartine.html",
     "type": "recipe",
     "category": "recipes",
@@ -2216,7 +3245,7 @@
       "spider strainer",
       "wire rack"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 35,
       "diffLabel": "medium",
@@ -2301,6 +3330,171 @@
       "timeMode": "active",
       "activeMinutes": 45,
       "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/shrimp-pulao.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Shrimp pulao (jhinga pulao)",
+    "desc": "Coastal-Indian basmati pilaf cooked with marinated shrimp, ginger-garlic, whole spices, and a coconut-milk-and-stock cooking liquid. Less elaborate than biryani (no parboil-and-layer), more aromatic than plain rice. The shrimp-and-spice flavors infuse into each grain through absorption-method cooking.",
+    "tags": [
+      "indian",
+      "seafood",
+      "rice",
+      "one-pot",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "shrimp-pulao",
+    "cuisine": "Indian",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 65,
+      "active_min": 30
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "large shrimp (16/20 count), peeled and deveined, tails on or off",
+        "slug": "shrimp",
+        "optional": false
+      },
+      {
+        "item": "plain whole-milk yogurt",
+        "slug": "yogurt",
+        "optional": false
+      },
+      {
+        "item": "ginger-garlic paste (homemade from 15 g each ginger + garlic blended)",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "optional": false
+      },
+      {
+        "item": "basmati rice",
+        "slug": "basmati-rice",
+        "optional": false
+      },
+      {
+        "item": "water (for rinsing and soaking rice)",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, cracked",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "Indian bay leaves (tej patta)",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "ghee (or 50/50 butter + neutral oil)",
+        "slug": "ghee",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, thinly sliced",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or serrano), slit lengthwise",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "water (or shrimp/chicken stock)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves, chopped",
+        "optional": false
+      },
+      {
+        "item": "fried onions (birista)",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "heavy 4-quart Dutch oven or wide pot with tight lid"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 65,
+      "diffLabel": "medium",
+      "timeLead": "1 h 5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -2558,7 +3752,7 @@
     "equipment": [
       "wok"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 30,
       "diffLabel": "medium",
@@ -2819,7 +4013,7 @@
       "large pot for pasta",
       "tongs"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 65,
       "diffLabel": "medium",
@@ -3239,7 +4433,7 @@
     "equipment": [
       "wok"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 45,
       "diffLabel": "medium",
@@ -3300,7 +4494,7 @@
     "status": "complete",
     "_slug": "hot-set-tofu",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "usedInCount": 1
     }
@@ -3321,7 +4515,7 @@
     "updated": "2026-05-09",
     "added": "2026-05-09",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 9
     }
   },
   {
@@ -3354,7 +4548,7 @@
     "status": "complete",
     "_slug": "scoring-squid",
     "updated": "2026-05-09",
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "usedInCount": 3
     }
@@ -4045,7 +5239,7 @@
     "added": "2026-05-06",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -4658,7 +5852,7 @@
     "updated": "2026-05-04",
     "added": "2026-05-04",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -4696,7 +5890,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 12,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -4735,7 +5929,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 13,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -4833,7 +6027,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 15,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -4871,7 +6065,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -5091,7 +6285,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "seafood",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -5212,7 +6406,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 7,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -5404,7 +6598,7 @@
     "updated": "2026-04-27",
     "added": "2026-04-28",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 6
     }
   },
   {
@@ -5444,7 +6638,7 @@
     "added": "2026-04-27",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -6391,7 +7585,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 6,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -6487,7 +7681,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -6504,7 +7698,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -6541,7 +7735,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -6601,7 +7795,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -8228,7 +9422,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 12
     }
   },
   {
@@ -8360,7 +9554,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 6
     }
   },
   {
@@ -8557,7 +9751,7 @@
     ],
     "techniques": [],
     "equipment": [],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 600,
       "diffLabel": "medium",
@@ -8566,6 +9760,128 @@
       "timeMode": "active",
       "activeMinutes": 45,
       "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/ginger-garlic-paste.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ginger-garlic paste (homemade adrak-lehsun)",
+    "desc": "Fresh ginger and garlic blended in roughly equal parts with a small amount of oil and salt to a smooth paste. The structural aromatic base of nearly every South Asian curry, marinade, and stir-fry. Five minutes of work, lasts a week refrigerated. Stub.",
+    "tags": [
+      "indian",
+      "pakistani",
+      "sauce",
+      "aromatic",
+      "pantry"
+    ],
+    "status": "stub",
+    "_slug": "ginger-garlic-paste",
+    "cuisine": "Indian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 10,
+      "active_min": 10
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh ginger, peeled and rough-chopped",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water (as needed for blending)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 10,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-coconut-milk.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Coconut milk (homemade from grated mature coconut)",
+    "desc": "Mature grated coconut blended with hot water and squeezed through cheesecloth, twice. The first pressing yields thick \"coconut cream\" used for finishing curries; the second pressing yields thinner \"coconut milk\" used as a base. Stub.",
+    "tags": [
+      "indian",
+      "thai",
+      "sauce",
+      "pantry"
+    ],
+    "status": "stub",
+    "_slug": "homemade-coconut-milk",
+    "cuisine": "Indian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 5,
+      "total_min": 25,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "mature coconut, grated (fresh or frozen unsweetened)",
+        "optional": false
+      },
+      {
+        "item": "hot water (about 80°C / 175°F)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
     }
   },
   {
@@ -8692,7 +10008,7 @@
     ],
     "techniques": [],
     "equipment": [],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 525600,
       "diffLabel": "medium",
@@ -8701,6 +10017,90 @@
       "timeMode": "active",
       "activeMinutes": 60,
       "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-garam-masala.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Garam masala (homemade fresh-toasted blend)",
+    "desc": "Whole spices toasted in a dry pan until fragrant, cooled, and ground to a fine powder. Dramatically more aromatic than supermarket pre-ground; lasts 6 to 8 weeks at peak. The North Indian / Pakistani household standard. Stub.",
+    "tags": [
+      "indian",
+      "pakistani",
+      "spice",
+      "aromatic",
+      "pantry"
+    ],
+    "status": "stub",
+    "_slug": "homemade-garam-masala",
+    "cuisine": "Indian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 30,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 5,
+      "total_min": 15,
+      "active_min": 15
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "coriander seeds",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick, broken into pieces",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "Indian bay leaves (tej patta)",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "whole nutmeg, grated (optional)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 15,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
     }
   },
   {
@@ -8763,7 +10163,7 @@
     ],
     "techniques": [],
     "equipment": [],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 262800,
       "diffLabel": "hard",
@@ -8838,7 +10238,7 @@
     ],
     "techniques": [],
     "equipment": [],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 110,
       "diffLabel": "medium",
@@ -8847,6 +10247,68 @@
       "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-puff-pastry.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Puff pastry (homemade rough puff)",
+    "desc": "Flour and cold butter laminated through 4 to 6 fold-and-rest cycles into a flaky, layered dough. Quicker than classic French puff pastry (which uses a butter block) but produces 95% of the rise and flake. A weekend-baking commitment. Stub.",
+    "tags": [
+      "bread",
+      "pantry",
+      "weekend-project",
+      "make-ahead"
+    ],
+    "status": "stub",
+    "_slug": "homemade-puff-pastry",
+    "cuisine": "",
+    "course": "sauce",
+    "difficulty": "hard",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 240,
+      "active_min": 60
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "cold unsalted butter (European-style, 82%+ butterfat)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "ice-cold water",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 240,
+      "diffLabel": "hard",
+      "timeLead": "1 h",
+      "timeAnnotation": "+ 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {

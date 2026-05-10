@@ -1,5 +1,670 @@
 [
   {
+    "path": "pages/recipes/chicken-nihari.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken nihari (Pakistani slow-braised stew)",
+    "desc": "Bone-in chicken slow-braised in a deeply spiced ghee-and-onion base for 90 minutes, the gravy thickened with toasted atta flour and finished with a julienned-ginger and crisped-onion garnish, fresh lemon. The chicken adaptation of the canonical Mughlai-Pakistani beef nihari that traditionally simmered overnight; the chicken version delivers the same flavor architecture in a Sunday afternoon.",
+    "tags": [
+      "pakistani",
+      "indian",
+      "chicken",
+      "spicy",
+      "umami",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chicken-nihari",
+    "cuisine": "Pakistani",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 105,
+      "total_min": 130,
+      "active_min": 50
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh ginger, peeled and rough-chopped",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "water (for blending)",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, cracked",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "Indian bay leaves (tej patta) or 1 small piece cinnamon",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns, cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "ghee",
+        "slug": "ghee",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, finely sliced",
+        "optional": false
+      },
+      {
+        "item": "bone-in skinless chicken thighs and drumsticks",
+        "optional": false
+      },
+      {
+        "item": "ground coriander",
+        "slug": "ground-coriander",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "cayenne pepper (or hotter Indian chili powder)",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "fennel seeds, ground",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water (or chicken stock for richer gravy)",
+        "optional": false
+      },
+      {
+        "item": "atta flour (whole wheat chapati flour)",
+        "slug": "atta-flour",
+        "optional": false
+      },
+      {
+        "item": "cold water (for slurry)",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, julienned into matchsticks",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "fried onions (birista), store-bought or homemade",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), thinly sliced",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "optional": false
+      },
+      {
+        "item": "garam masala",
+        "slug": "garam-masala",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "maillard-sear",
+      "red-oil-rendering"
+    ],
+    "equipment": [
+      "heavy Dutch oven or wide pot with lid",
+      "small skillet for toasting atta"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 130,
+      "diffLabel": "medium",
+      "timeLead": "2 h 10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/recipes/chicken-patties.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken patties (Pakistani puff-pastry hand pies)",
+    "desc": "Spiced chicken keema (ground chicken cooked with onion, ginger-garlic, garam masala) folded into store-bought puff pastry, sealed, egg-washed, and baked until shatteringly crisp. The Karachi bakery-stall standard, the structural item at every Pakistani tea-and-snack gathering. Two filling traditions cover most of the spectrum: keema (dry) and creamy (with bechamel).",
+    "tags": [
+      "pakistani",
+      "indian",
+      "chicken",
+      "snack",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chicken-patties",
+    "cuisine": "Pakistani",
+    "course": "snack",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 35,
+      "total_min": 65,
+      "active_min": 50
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "ground chicken (thigh meat preferred, dark meat is more flavorful and forgiving)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, very finely chopped",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger-garlic paste",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), finely minced",
+        "optional": false
+      },
+      {
+        "item": "tomato, finely chopped or grated",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "ground coriander",
+        "slug": "ground-coriander",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "garam masala",
+        "slug": "garam-masala",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, finely chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "optional": false
+      },
+      {
+        "item": "puff pastry, frozen, all-butter (Pepperidge Farm, Dufour, or store brand)",
+        "optional": false
+      },
+      {
+        "item": "large egg (for egg wash)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "sesame seeds (for finishing topping, optional but traditional)",
+        "optional": false
+      },
+      {
+        "item": "nigella seeds (kalonji, optional)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "red-oil-rendering"
+    ],
+    "equipment": [
+      "wide skillet",
+      "rolling pin",
+      "parchment-lined baking sheet",
+      "pastry brush"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 65,
+      "diffLabel": "medium",
+      "timeLead": "1 h 5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/recipes/kheer.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Rice kheer (chawal ki kheer)",
+    "desc": "Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and saffron, finished with chopped pistachios and almonds. The structural North Indian milk-rice pudding, eaten warm or cold, served at every festival and Sunday meal. Reduction is the technique; patience is the only difficulty.",
+    "tags": [
+      "indian",
+      "dessert",
+      "rice"
+    ],
+    "status": "complete",
+    "_slug": "kheer",
+    "cuisine": "Indian",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 70,
+      "total_min": 80,
+      "active_min": 70
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk (HTST-pasteurized, not ultra-pasteurized)",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "basmati rice",
+        "slug": "basmati-rice",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar (or jaggery for traditional sweetness)",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "saffron threads",
+        "slug": "saffron",
+        "optional": false
+      },
+      {
+        "item": "rosewater (optional, traditional in some households)",
+        "optional": false
+      },
+      {
+        "item": "unsalted pistachios, slivered",
+        "optional": false
+      },
+      {
+        "item": "unsalted almonds, slivered or sliced",
+        "optional": false
+      },
+      {
+        "item": "cashews, chopped (optional)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "heavy 4-quart pot or Dutch oven",
+      "silicone spatula or wooden spoon"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 80,
+      "diffLabel": "easy",
+      "timeLead": "1 h 20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 70,
+      "filterMinutes": 70
+    }
+  },
+  {
+    "path": "pages/recipes/pav-bhaji.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pav bhaji (Mumbai street vegetable mash)",
+    "desc": "Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghee-and-onion masala built on pav bhaji masala (a specific commercial blend) and Kashmiri chili. Served with butter-toasted soft pav rolls, raw onion, lemon, and a generous pat of butter melting on top. The defining Mumbai street food.",
+    "tags": [
+      "indian",
+      "vegetable",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "pav-bhaji",
+    "cuisine": "Indian",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 35,
+      "total_min": 60,
+      "active_min": 45
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "russet or yukon gold potatoes, peeled and chunked",
+        "optional": false
+      },
+      {
+        "item": "cauliflower, cut into florets",
+        "slug": "cauliflower",
+        "optional": false
+      },
+      {
+        "item": "frozen green peas",
+        "optional": false
+      },
+      {
+        "item": "water (for boiling)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for boiling water)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "butter (unsalted, the Mumbai signature)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for higher smoke point)",
+        "optional": false
+      },
+      {
+        "item": "red onion, finely chopped",
+        "optional": false
+      },
+      {
+        "item": "green bell pepper (capsicum), finely chopped",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger-garlic paste",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), finely minced",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "pav bhaji masala (commercial blend, MDH or Everest)",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder (for color)",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "tomatoes, finely chopped or grated",
+        "optional": false
+      },
+      {
+        "item": "tomato paste (concentrated, for color and depth)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice (or amchur powder)",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "butter (additional, for finishing each portion)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "pav rolls (soft Mumbai-style buns) or brioche dinner rolls",
+        "optional": false
+      },
+      {
+        "item": "butter (for toasting the pav)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "red onion, finely diced (for the side)",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "red-oil-rendering"
+    ],
+    "equipment": [
+      "wide heavy pan or wok",
+      "4-quart pot",
+      "potato masher",
+      "wide skillet or griddle for pav"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/beef-broth.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Brown beef broth (fond brun de boeuf)",
+    "desc": "Beef bones roasted to deep mahogany, simmered with charred onions, carrot, celery, and tomato paste for a rich, dark, gelatin-heavy broth. The Western foundation under French braises, demi-glace, and onion soup. Modifications cover Vietnamese pho-style aromatics and Korean seolleongtang milky-broth technique.",
+    "tags": [
+      "beef",
+      "pantry",
+      "sauce",
+      "umami",
+      "make-ahead",
+      "weekend-project",
+      "freezer-friendly"
+    ],
+    "status": "complete",
+    "_slug": "beef-broth",
+    "cuisine": "French",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 540,
+      "total_min": 570,
+      "active_min": 40
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "beef bones (knuckle, marrow, neck, mix is best)",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "optional": false
+      },
+      {
+        "item": "yellow onions, halved (skin on)",
+        "optional": false
+      },
+      {
+        "item": "carrots, large chunks",
+        "optional": false
+      },
+      {
+        "item": "celery, large chunks",
+        "optional": false
+      },
+      {
+        "item": "garlic head, halved across (skin on)",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "red wine (dry)",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley stems (no leaves)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "dutch-oven"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 570,
+      "diffLabel": "medium",
+      "timeLead": "40 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
     "path": "pages/recipes/cantonese-mapo-pork.html",
     "type": "recipe",
     "category": "recipes",
@@ -144,7 +809,7 @@
     "equipment": [
       "wok"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 27,
       "diffLabel": "easy",
@@ -153,6 +818,92 @@
       "timeMode": "total",
       "activeMinutes": 22,
       "filterMinutes": 22
+    }
+  },
+  {
+    "path": "pages/recipes/chicken-stock.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken stock",
+    "desc": "Cold-water start with chicken bones, slow-skim, no-boil 4-hour simmer with mirepoix and bay. Clear, deeply gelatinous, neutral enough to use across French sauce work, Italian risotti, Chinese soups, and Mexican caldos.",
+    "tags": [
+      "chicken",
+      "pantry",
+      "sauce",
+      "umami",
+      "make-ahead",
+      "weekend-project",
+      "freezer-friendly"
+    ],
+    "status": "complete",
+    "_slug": "chicken-stock",
+    "cuisine": "",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 240,
+      "total_min": 270,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "raw chicken bones (carcasses, backs, wings, necks)",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, halved (skin on)",
+        "optional": false
+      },
+      {
+        "item": "carrots, rough chunks",
+        "optional": false
+      },
+      {
+        "item": "celery, rough chunks",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley stems (no leaves)",
+        "optional": true
+      },
+      {
+        "item": "fresh thyme",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "dutch-oven"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 270,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "+ 4 h rest",
+      "timeMode": "active",
+      "activeMinutes": 25,
+      "filterMinutes": 25
     }
   },
   {
@@ -268,7 +1019,7 @@
       "charcoal grill (preferred), gas grill, or grill pan",
       "tongs"
     ],
-    "added": "2026-05-10",
+    "added": "2026-05-09",
     "_card": {
       "totalMinutes": 28,
       "diffLabel": "easy",
@@ -277,695 +1028,6 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/mapo-tofu-poured-set.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Poured-set mapo tofu (douhua mapo)",
-    "desc": "Hot soy milk whisked with GDL and poured directly into the serving bowl, allowed to set into a freshly-made silken curd, then topped with a thick mapo sauce ladled over at near-boiling. The curd is softer than any commercial silken tofu, the eating experience is custard-soft cradle for the mala sauce above, and the dish hits the table at the highest possible temperature contrast.",
-    "tags": [
-      "chinese",
-      "spicy",
-      "umami",
-      "beef"
-    ],
-    "status": "complete",
-    "_slug": "mapo-tofu-poured-set",
-    "cuisine": "Chinese",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 15,
-      "total_min": 60,
-      "active_min": 30
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "plain unsweetened soy milk (no calcium fortification)",
-        "optional": false
-      },
-      {
-        "item": "glucono delta-lactone (GDL)",
-        "optional": false
-      },
-      {
-        "item": "warm water (for dissolving GDL)",
-        "optional": false
-      },
-      {
-        "item": "ground beef (80/20 chuck)",
-        "slug": "ground-beef",
-        "optional": false
-      },
-      {
-        "item": "Shaoxing wine",
-        "slug": "shaoxing-wine",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "optional": false
-      },
-      {
-        "item": "Pixian doubanjiang (chili bean paste)",
-        "slug": "doubanjiang",
-        "optional": false
-      },
-      {
-        "item": "Yongchuan douchi",
-        "slug": "douchi",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, finely minced",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely minced",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "chicken stock (or hot water)",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "dark soy sauce",
-        "slug": "dark-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "cornstarch",
-        "optional": false
-      },
-      {
-        "item": "cold water (for slurry)",
-        "optional": false
-      },
-      {
-        "item": "Sichuan peppercorns, freshly toasted and ground",
-        "slug": "sichuan-peppercorns",
-        "optional": false
-      },
-      {
-        "item": "scallion greens, sliced",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "cilantro leaves, picked",
-        "slug": "cilantro",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "hot-set-tofu",
-      "red-oil-rendering",
-      "maillard-sear"
-    ],
-    "equipment": [
-      "wok",
-      "thermometer"
-    ],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 60,
-      "diffLabel": "medium",
-      "timeLead": "1 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/ojingeo-bokkeum.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)",
-    "desc": "Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-gochugaru sauce sweetened with mirin and balanced with soy and sesame oil. The Korean expression of the 90-second high-heat squid window. Served with steamed rice or wrapped in lettuce-and-perilla.",
-    "tags": [
-      "korean",
-      "seafood",
-      "fish",
-      "spicy",
-      "stir-fry",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "ojingeo-bokkeum",
-    "cuisine": "Korean",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 3,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 8,
-      "total_min": 28,
-      "active_min": 25
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "whole cleaned squid (small to medium tubes, with tentacles)",
-        "slug": "squid",
-        "optional": false
-      },
-      {
-        "item": "gochujang (Korean fermented chili paste)",
-        "slug": "gochujang",
-        "optional": false
-      },
-      {
-        "item": "gochugaru (Korean chili flakes, coarse)",
-        "optional": false
-      },
-      {
-        "item": "soy sauce (Korean ganjang or Japanese koikuchi)",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "mirin",
-        "slug": "mirin",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely minced",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, finely minced",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, sliced into 1 cm wedges",
-        "optional": false
-      },
-      {
-        "item": "carrot, julienned",
-        "optional": false
-      },
-      {
-        "item": "scallion, cut into 4 cm pieces",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "green cabbage, cut into 4 cm squares",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame seeds",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil (additional finish)",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "scoring-squid"
-    ],
-    "equipment": [
-      "wok or wide skillet"
-    ],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 28,
-      "diffLabel": "medium",
-      "timeLead": "28 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/beef-broth.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Brown beef broth (fond brun de boeuf)",
-    "desc": "Beef bones roasted to deep mahogany, simmered with charred onions, carrot, celery, and tomato paste for a rich, dark, gelatin-heavy broth. The Western foundation under French braises, demi-glace, and onion soup. Modifications cover Vietnamese pho-style aromatics and Korean seolleongtang milky-broth technique.",
-    "tags": [
-      "beef",
-      "pantry",
-      "sauce",
-      "umami",
-      "make-ahead",
-      "weekend-project",
-      "freezer-friendly"
-    ],
-    "status": "complete",
-    "_slug": "beef-broth",
-    "cuisine": "French",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 540,
-      "total_min": 570,
-      "active_min": 40
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "beef bones (knuckle, marrow, neck, mix is best)",
-        "optional": false
-      },
-      {
-        "item": "tomato paste",
-        "optional": false
-      },
-      {
-        "item": "yellow onions, halved (skin on)",
-        "optional": false
-      },
-      {
-        "item": "carrots, large chunks",
-        "optional": false
-      },
-      {
-        "item": "celery, large chunks",
-        "optional": false
-      },
-      {
-        "item": "garlic head, halved across (skin on)",
-        "optional": false
-      },
-      {
-        "item": "cold water",
-        "optional": false
-      },
-      {
-        "item": "red wine (dry)",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme",
-        "optional": false
-      },
-      {
-        "item": "fresh parsley stems (no leaves)",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "dutch-oven"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 570,
-      "diffLabel": "medium",
-      "timeLead": "40 min",
-      "timeAnnotation": "+ overnight",
-      "timeMode": "active",
-      "activeMinutes": 40,
-      "filterMinutes": 40
-    }
-  },
-  {
-    "path": "pages/recipes/chicken-stock.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chicken stock",
-    "desc": "Cold-water start with chicken bones, slow-skim, no-boil 4-hour simmer with mirepoix and bay. Clear, deeply gelatinous, neutral enough to use across French sauce work, Italian risotti, Chinese soups, and Mexican caldos.",
-    "tags": [
-      "chicken",
-      "pantry",
-      "sauce",
-      "umami",
-      "make-ahead",
-      "weekend-project",
-      "freezer-friendly"
-    ],
-    "status": "complete",
-    "_slug": "chicken-stock",
-    "cuisine": "",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 8,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 240,
-      "total_min": 270,
-      "active_min": 25
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "raw chicken bones (carcasses, backs, wings, necks)",
-        "optional": false
-      },
-      {
-        "item": "cold water",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, halved (skin on)",
-        "optional": false
-      },
-      {
-        "item": "carrots, rough chunks",
-        "optional": false
-      },
-      {
-        "item": "celery, rough chunks",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh parsley stems (no leaves)",
-        "optional": true
-      },
-      {
-        "item": "fresh thyme",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "dutch-oven"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 270,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "+ 4 h rest",
-      "timeMode": "active",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/individual-decadent-chocolate-cakes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Individual decadent chocolate cakes",
-    "desc": "Two 4-inch chocolate cakes built on a chocolate-butter emulsion and bloomed Dutch cocoa, with brown sugar for moisture and a turbinado crackle top. No frosting: the cake itself is the payload.",
-    "tags": [
-      "cake",
-      "chocolate",
-      "dessert",
-      "weekend-project",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "individual-decadent-chocolate-cakes",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 26,
-      "total_min": 56,
-      "active_min": 25
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "Dutch-process cocoa powder",
-        "slug": "dutch-process-cocoa",
-        "optional": false
-      },
-      {
-        "item": "hot brewed espresso (or strong coffee)",
-        "optional": false
-      },
-      {
-        "item": "dark chocolate, chopped",
-        "slug": "dark-chocolate",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "large eggs, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "dark brown sugar, packed",
-        "slug": "dark-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "slug": "baking-soda",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "slug": "baking-powder",
-        "optional": false
-      },
-      {
-        "item": "turbinado or demerara sugar",
-        "optional": false
-      },
-      {
-        "item": "flaky sea salt",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "blooming-cocoa",
-      "chocolate-butter-emulsion"
-    ],
-    "equipment": [
-      "digital-scale"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 56,
-      "diffLabel": "medium",
-      "timeLead": "56 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/individual-fluffy-chocolate-cakes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Individual fluffy chocolate cakes",
-    "desc": "Two 4-inch tall, light-crumbed chocolate cakes built on creamed butter, bloomed Dutch cocoa, and sour cream for tenderness. Designed to be served warm with a scoop of ice cream melting into the open crumb.",
-    "tags": [
-      "cake",
-      "chocolate",
-      "dessert",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "individual-fluffy-chocolate-cakes",
-    "course": "dessert",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 24,
-      "total_min": 49,
-      "active_min": 20
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "Dutch-process cocoa powder",
-        "slug": "dutch-process-cocoa",
-        "optional": false
-      },
-      {
-        "item": "hot brewed coffee",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, at 18 to 20°C",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "light brown sugar, packed",
-        "slug": "light-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "large egg, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "large egg yolk, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "sour cream, full-fat, room temp",
-        "slug": "sour-cream",
-        "optional": false
-      },
-      {
-        "item": "whole milk, room temp",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "cornstarch",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "slug": "baking-powder",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "slug": "baking-soda",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "creaming-butter-sugar",
-      "blooming-cocoa"
-    ],
-    "equipment": [
-      "digital-scale"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 49,
-      "diffLabel": "easy",
-      "timeLead": "49 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
     }
   },
   {
@@ -1542,7 +1604,7 @@
     "added": "2026-05-06",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
