@@ -1,172 +1,54 @@
 [
   {
-    "path": "pages/recipes/chicken-gnocchi-soup.html",
+    "path": "pages/recipes/banana-bread.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Chicken gnocchi soup (Olive Garden copycat)",
-    "desc": "A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby spinach added off-heat for color and texture. The chain-restaurant comfort soup reverse-engineered with real chicken stock, a proper roux, and gnocchi cooked to just-floating in the broth.",
+    "title": "Banana bread",
+    "desc": "A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maximally soft crumb, deep caramel-banana aroma, no creaming, no mixer.",
     "tags": [
-      "italian",
-      "soup",
-      "chicken",
+      "american",
       "comfort",
-      "weeknight"
+      "dessert",
+      "breakfast",
+      "fruit",
+      "quick-bread",
+      "bread"
     ],
     "status": "complete",
-    "_slug": "chicken-gnocchi-soup",
-    "cuisine": "Italian-American",
-    "course": "dinner",
+    "_slug": "banana-bread",
+    "cuisine": "American",
+    "course": "dessert",
     "difficulty": "easy",
-    "servings": 6,
+    "servings": 10,
     "time": {
       "prep_min": 15,
-      "cook_min": 35,
-      "total_min": 50,
-      "active_min": 35
+      "cook_min": 55,
+      "total_min": 70,
+      "active_min": 15
     },
     "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
     "ingredients": [
+      {
+        "item": "overripe bananas, heavily speckled to black-skinned",
+        "slug": "bananas",
+        "optional": false
+      },
       {
         "item": "unsalted butter",
         "slug": "butter",
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
+        "item": "large egg",
+        "slug": "eggs",
         "optional": false
       },
       {
-        "item": "yellow onion, diced (5 mm)",
-        "optional": false
-      },
-      {
-        "item": "carrot, diced (5 mm)",
-        "optional": false
-      },
-      {
-        "item": "celery, diced (5 mm)",
-        "optional": false
-      },
-      {
-        "item": "garlic, minced",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme, leaves stripped",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "chicken stock (homemade if available)",
-        "optional": false
-      },
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "heavy cream",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "fresh-ground black pepper",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "freshly grated nutmeg",
-        "optional": false
-      },
-      {
-        "item": "boneless skinless chicken thigh, cubed (2 cm)",
-        "slug": "chicken-thigh",
-        "optional": false
-      },
-      {
-        "item": "fresh or shelf-stable potato gnocchi",
-        "optional": false
-      },
-      {
-        "item": "baby spinach, packed loosely",
-        "optional": false
-      },
-      {
-        "item": "parmigiano reggiano, finely grated for finishing",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "Dutch oven or heavy soup pot",
-      "whisk",
-      "wooden spoon"
-    ],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 35,
-      "filterMinutes": 35
-    }
-  },
-  {
-    "path": "pages/recipes/olive-garden-breadsticks.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Olive Garden breadsticks (the copycat)",
-    "desc": "Lightly enriched yeast dough with bread flour, butter, milk, and a small dose of sugar, shaped into 18 cm batons, proofed to pillow-soft, baked, then brushed with garlic butter and dusted with seasoned salt. The chain-restaurant breadstick reverse-engineered to the kitchen-correct version.",
-    "tags": [
-      "italian",
-      "bread",
-      "side",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "olive-garden-breadsticks",
-    "cuisine": "Italian-American",
-    "course": "bread",
-    "difficulty": "medium",
-    "servings": 12,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 15,
-      "total_min": 130,
-      "active_min": 35
-    },
-    "updated": "2026-05-09",
-    "ingredients": [
-      {
-        "item": "bread flour",
-        "slug": "bread-flour",
-        "optional": false
-      },
-      {
-        "item": "whole milk, warmed to 35 °C",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "instant yeast",
-        "slug": "instant-yeast",
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
         "optional": false
       },
       {
@@ -175,8 +57,81 @@
         "optional": false
       },
       {
-        "item": "unsalted butter, melted and cooled to lukewarm",
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [
+      "9x5-loaf-pan"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 70,
+      "diffLabel": "easy",
+      "timeLead": "1 h 10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/millionaire-shortbread.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Millionaire shortbread",
+    "desc": "Three-layer Scottish bar: short, salt-forward shortbread base, a thick caramel built from sweetened condensed milk cooked to a deep amber, capped by tempered dark chocolate. Each layer earns its texture from a specific cooking endpoint.",
+    "tags": [
+      "cookies",
+      "dessert",
+      "caramel",
+      "chocolate",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "millionaire-shortbread",
+    "cuisine": "Scottish",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 45,
+      "total_min": 240,
+      "active_min": 60
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
         "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
         "optional": false
       },
       {
@@ -185,90 +140,8 @@
         "optional": false
       },
       {
-        "item": "unsalted butter, melted",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "garlic, pressed or finely grated on a microplane",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "garlic powder",
-        "optional": false
-      },
-      {
-        "item": "dried oregano",
-        "optional": false
-      },
-      {
-        "item": "dried parsley flakes",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "enriched-dough"
-    ],
-    "equipment": [
-      "stand mixer",
-      "bench scraper",
-      "kitchen scale",
-      "pastry brush"
-    ],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 130,
-      "diffLabel": "medium",
-      "timeLead": "35 min",
-      "timeAnnotation": "+ 2 h rest",
-      "timeMode": "active",
-      "activeMinutes": 35,
-      "filterMinutes": 35
-    }
-  },
-  {
-    "path": "pages/recipes/spaghetti-bolognese.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Spaghetti bolognese (ragù alla bolognese, the household version)",
-    "desc": "Long-cooked Emilia-Romagna meat ragù: pancetta rendered into the soffritto, ground beef and pork browned hard for Maillard depth, white wine deglaze, milk to tenderize the meat proteins, and a small dose of tomato to round the dish without dominating it. Served over spaghetti as the household-American convention; tagliatelle is the canonical Italian pairing.",
-    "tags": [
-      "italian",
-      "pasta",
-      "beef",
-      "pork",
-      "umami",
-      "weekend-project",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "spaghetti-bolognese",
-    "cuisine": "Italian",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 6,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 180,
-      "total_min": 200,
-      "active_min": 45
-    },
-    "updated": "2026-05-09",
-    "ingredients": [
-      {
-        "item": "pancetta, finely diced (3 mm)",
-        "slug": "pancetta",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
         "optional": false
       },
       {
@@ -277,195 +150,145 @@
         "optional": false
       },
       {
-        "item": "yellow onion, finely diced (3 mm)",
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
         "optional": false
       },
       {
-        "item": "carrot, finely diced (3 mm)",
+        "item": "sweetened condensed milk",
+        "slug": "sweetened-condensed-milk",
         "optional": false
       },
       {
-        "item": "celery, finely diced (3 mm)",
+        "item": "golden syrup or light corn syrup",
         "optional": false
       },
       {
-        "item": "garlic, minced",
-        "slug": "garlic",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
         "optional": false
       },
       {
-        "item": "ground beef, 80/20 lean-fat",
-        "slug": "ground-beef",
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
         "optional": false
       },
       {
-        "item": "ground pork, 70/30 lean-fat",
+        "item": "dark chocolate, 64–70%",
+        "slug": "dark-chocolate",
         "optional": false
       },
       {
-        "item": "kosher salt (for the meat browning)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "fresh-ground black pepper",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "dry white wine (Pinot Grigio, Trebbiano, or Verdicchio)",
-        "optional": false
-      },
-      {
-        "item": "tomato paste",
-        "slug": "tomato-paste",
-        "optional": false
-      },
-      {
-        "item": "canned San Marzano tomatoes, hand-crushed (with their juice)",
-        "slug": "canned-san-marzano-tomatoes",
-        "optional": false
-      },
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "beef or chicken stock",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "parmigiano reggiano rind (the freezer treasure)",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      },
-      {
-        "item": "dried spaghetti (or tagliatelle, the canonical pairing)",
-        "optional": false
-      },
-      {
-        "item": "kosher salt (for the pasta water)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "parmigiano reggiano, finely grated, for finishing",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter (the finishing knob)",
-        "slug": "butter",
+        "item": "flaky sea salt",
         "optional": false
       }
     ],
     "techniques": [
-      "maillard-sear",
-      "deglazing",
-      "pan-emulsion",
-      "blooming-aromatics"
+      "brown-butter",
+      "creaming-butter-sugar"
     ],
-    "equipment": [],
+    "equipment": [
+      "heavy-saucepan",
+      "instant-read-thermometer"
+    ],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 200,
+      "totalMinutes": 240,
       "diffLabel": "medium",
-      "timeLead": "45 min",
+      "timeLead": "1 h",
       "timeAnnotation": "+ 3 h rest",
       "timeMode": "active",
-      "activeMinutes": 45,
-      "filterMinutes": 45
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {
-    "path": "pages/recipes/tandoori-chicken-salad-sandwich.html",
+    "path": "pages/recipes/ukoy.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Tandoori chicken salad sandwich (Hunter's version)",
-    "desc": "Poached chicken thigh shredded fine, bound with a tandoori-masala-spiced mayo, layered with crisp celery, grated carrot, and toasted walnuts, and served on a buttered toasted croissant. The American chicken-salad-sandwich form re-engineered through a Punjabi spice base; the tandoori-mayo is the structural pivot that makes the dish.",
+    "title": "Ukoy",
+    "desc": "Filipino shrimp and vegetable fritters: a thin rice-flour batter wrapped around mung bean sprouts, sweet potato, and carrot matchsticks with a single shrimp pressed into each disc, deep-fried to a glassy shatter and served with a sharp garlic-chili-cane-vinegar dip.",
     "tags": [
-      "indian",
-      "pakistani",
-      "american",
-      "chicken",
-      "weeknight",
-      "no-cook"
+      "filipino",
+      "fritter",
+      "fried",
+      "snack",
+      "seafood",
+      "vegetable"
     ],
     "status": "complete",
-    "_slug": "tandoori-chicken-salad-sandwich",
-    "cuisine": "Indian-American fusion",
-    "course": "lunch",
-    "difficulty": "easy",
+    "_slug": "ukoy",
+    "cuisine": "Filipino",
+    "course": "appetizer",
+    "difficulty": "medium",
     "servings": 4,
     "time": {
       "prep_min": 25,
-      "cook_min": 20,
-      "total_min": 75,
-      "active_min": 35
+      "cook_min": 25,
+      "total_min": 50,
+      "active_min": 50
     },
     "updated": "2026-05-09",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
     "ingredients": [
       {
-        "item": "boneless skinless chicken thigh",
-        "slug": "chicken-thigh",
+        "item": "cane vinegar",
+        "slug": "cane-vinegar",
         "optional": false
       },
       {
-        "item": "water (for the poach)",
+        "item": "fish sauce",
+        "slug": "fish-sauce",
         "optional": false
       },
       {
-        "item": "kosher salt (for the poach)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "bay leaf",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, sliced",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "garlic, smashed",
+        "item": "garlic",
         "slug": "garlic",
         "optional": false
       },
       {
-        "item": "mayonnaise (Hellmann's or Duke's)",
-        "slug": "mayonnaise",
+        "item": "bird's eye chili",
         "optional": false
       },
       {
-        "item": "plain whole-milk yogurt",
-        "slug": "yogurt",
+        "item": "large shrimp, peeled and deveined, tails removed",
+        "slug": "shrimp",
         "optional": false
       },
       {
-        "item": "tandoori masala (Shan, MDH, or homemade blend)",
-        "slug": "tandoori-masala",
+        "item": "fish sauce",
+        "slug": "fish-sauce",
         "optional": false
       },
       {
-        "item": "fresh lemon juice",
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
         "optional": false
       },
       {
-        "item": "garlic powder",
+        "item": "mung bean sprouts",
+        "slug": "mung-bean-sprouts",
+        "optional": false
+      },
+      {
+        "item": "carrots",
+        "optional": false
+      },
+      {
+        "item": "sweet potato",
+        "slug": "sweet-potato",
+        "optional": false
+      },
+      {
+        "item": "ice-cold water",
+        "optional": false
+      },
+      {
+        "item": "white rice flour",
+        "slug": "white-rice-flour",
         "optional": false
       },
       {
@@ -474,67 +297,43 @@
         "optional": false
       },
       {
-        "item": "fresh-ground black pepper",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "cayenne or Kashmiri chili powder (for added heat)",
-        "slug": "kashmiri-chili-powder",
-        "optional": true
-      },
-      {
-        "item": "celery, finely diced (4 mm)",
-        "optional": false
-      },
-      {
-        "item": "carrot, finely grated on the box grater",
-        "optional": false
-      },
-      {
-        "item": "walnuts, toasted and roughly chopped",
-        "slug": "walnuts",
-        "optional": false
-      },
-      {
-        "item": "fresh cilantro, finely chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "red onion, finely diced (3 mm)",
-        "optional": false
-      },
-      {
-        "item": "large butter croissants (day-old preferred)",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, softened",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "butter lettuce or red-leaf lettuce, washed and dried",
+        "item": "neutral oil for frying",
         "optional": false
       }
     ],
     "techniques": [],
     "equipment": [
-      "4-quart saucepan",
-      "box grater",
-      "small skillet for walnuts",
-      "sheet pan"
+      "dutch-oven",
+      "instant-read-thermometer"
     ],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 75,
-      "diffLabel": "easy",
-      "timeLead": "1 h 15 min",
+      "totalMinutes": 50,
+      "diffLabel": "medium",
+      "timeLead": "50 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 35,
-      "filterMinutes": 35
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/ingredients/bananas.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Bananas",
+    "desc": "Fruit of *Musa acuminata* / *M. balbisiana* hybrids, dominated by Cavendish in global trade. The starch-to-sugar conversion curve over a few days at room temperature is the single most important variable for cooking.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "bananas",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   },
   {
@@ -792,6 +591,135 @@
     }
   },
   {
+    "path": "pages/recipes/chicken-gnocchi-soup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken gnocchi soup (Olive Garden copycat)",
+    "desc": "A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby spinach added off-heat for color and texture. The chain-restaurant comfort soup reverse-engineered with real chicken stock, a proper roux, and gnocchi cooked to just-floating in the broth.",
+    "tags": [
+      "italian",
+      "soup",
+      "chicken",
+      "comfort",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "chicken-gnocchi-soup",
+    "cuisine": "Italian-American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 35,
+      "total_min": 50,
+      "active_min": 35
+    },
+    "updated": "2026-05-09",
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, diced (5 mm)",
+        "optional": false
+      },
+      {
+        "item": "carrot, diced (5 mm)",
+        "optional": false
+      },
+      {
+        "item": "celery, diced (5 mm)",
+        "optional": false
+      },
+      {
+        "item": "garlic, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme, leaves stripped",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "chicken stock (homemade if available)",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "heavy cream",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "freshly grated nutmeg",
+        "optional": false
+      },
+      {
+        "item": "boneless skinless chicken thigh, cubed (2 cm)",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "fresh or shelf-stable potato gnocchi",
+        "optional": false
+      },
+      {
+        "item": "baby spinach, packed loosely",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano, finely grated for finishing",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "Dutch oven or heavy soup pot",
+      "whisk",
+      "wooden spoon"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/recipes/chicken-nihari.html",
     "type": "recipe",
     "category": "recipes",
@@ -962,143 +890,6 @@
       "totalMinutes": 130,
       "diffLabel": "medium",
       "timeLead": "2 h 10 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 50,
-      "filterMinutes": 50
-    }
-  },
-  {
-    "path": "pages/recipes/chicken-patties.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chicken patties (Pakistani puff-pastry hand pies)",
-    "desc": "Spiced chicken keema (ground chicken cooked with onion, ginger-garlic, garam masala) folded into store-bought puff pastry, sealed, egg-washed, and baked until shatteringly crisp. The Karachi bakery-stall standard, the structural item at every Pakistani tea-and-snack gathering. Two filling traditions cover most of the spectrum: keema (dry) and creamy (with bechamel).",
-    "tags": [
-      "pakistani",
-      "indian",
-      "chicken",
-      "snack",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "chicken-patties",
-    "cuisine": "Pakistani",
-    "course": "snack",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 35,
-      "total_min": 65,
-      "active_min": 50
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "ground chicken (thigh meat preferred, dark meat is more flavorful and forgiving)",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, very finely chopped",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger-garlic paste",
-        "optional": false
-      },
-      {
-        "item": "green chilies (Thai bird or jalapeño), finely minced",
-        "optional": false
-      },
-      {
-        "item": "tomato, finely chopped or grated",
-        "optional": false
-      },
-      {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "ground coriander",
-        "slug": "ground-coriander",
-        "optional": false
-      },
-      {
-        "item": "Kashmiri chili powder",
-        "slug": "kashmiri-chili-powder",
-        "optional": false
-      },
-      {
-        "item": "turmeric",
-        "slug": "turmeric",
-        "optional": false
-      },
-      {
-        "item": "garam masala",
-        "slug": "garam-masala",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "fresh-ground black pepper",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh cilantro leaves, finely chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "optional": false
-      },
-      {
-        "item": "puff pastry, frozen, all-butter (Pepperidge Farm, Dufour, or store brand)",
-        "optional": false
-      },
-      {
-        "item": "large egg (for egg wash)",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "sesame seeds (for finishing topping, optional but traditional)",
-        "optional": false
-      },
-      {
-        "item": "nigella seeds (kalonji, optional)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "red-oil-rendering"
-    ],
-    "equipment": [
-      "wide skillet",
-      "rolling pin",
-      "parchment-lined baking sheet",
-      "pastry brush"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 65,
-      "diffLabel": "medium",
-      "timeLead": "1 h 5 min",
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 50,
