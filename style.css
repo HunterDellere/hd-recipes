@@ -3403,3 +3403,111 @@ body[data-category="safety"] .section-head::after      { background: var(--cat-s
   line-height: 1.7;
   color: var(--ink-warm, var(--ink));
 }
+
+/* === Item 3: motion pass ============================================
+   Card hover lift, scroll-fade reveal, theme-swap transition.
+   Everything no-ops under prefers-reduced-motion.
+*/
+
+/* Theme transitions — when the user toggles, surfaces shouldn't snap. */
+body, .recipe-hero, .topic-hero, .home-hero, .home-section,
+.entry-card, .pair-card, .rl-card, .ff-card, .family-card,
+.cmd-palette, .hcard, .rh-stats {
+  transition:
+    background var(--d-base) var(--ease-out),
+    color var(--d-base) var(--ease-out),
+    border-color var(--d-base) var(--ease-out);
+}
+
+/* Card lift on hover — works for the major card families. */
+.entry-card, .pair-card, .rl-card, .ff-card, .family-card, .hub-chip {
+  transition:
+    transform var(--d-fast) var(--ease-out),
+    box-shadow var(--d-fast) var(--ease-out),
+    border-color var(--d-fast) var(--ease-out),
+    background var(--d-base) var(--ease-out);
+  will-change: transform;
+}
+.entry-card:hover, .pair-card:hover, .rl-card:hover,
+.ff-card:hover, .family-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.hub-chip:hover {
+  transform: translateY(-1px);
+}
+
+/* Subtle press-down on click — matches a tactile feel without going
+   bouncy. Skip on hub-chip; it's text-shaped. */
+.entry-card:active, .pair-card:active, .rl-card:active,
+.ff-card:active, .family-card:active {
+  transform: translateY(0);
+  transition-duration: 60ms;
+}
+
+/* Reveal-on-scroll: items mount with rv-init then flip to rv-on once
+   they enter the viewport. The IO does the work; CSS does the look. */
+.rv-init {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 480ms var(--ease-out),
+    transform 480ms var(--ease-out);
+}
+.rv-on {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cards inside a revealing grid: stagger by one tier so the eye
+   reads them as choreographed, not synchronized. */
+.rv-on > .entry-card,
+.rv-on > .pair-card,
+.rv-on > .rl-card {
+  animation: rv-card-in 480ms var(--ease-out) backwards;
+}
+.rv-on > .entry-card:nth-child(1) { animation-delay: 40ms; }
+.rv-on > .entry-card:nth-child(2) { animation-delay: 80ms; }
+.rv-on > .entry-card:nth-child(3) { animation-delay: 120ms; }
+.rv-on > .entry-card:nth-child(4) { animation-delay: 160ms; }
+.rv-on > .entry-card:nth-child(5) { animation-delay: 200ms; }
+.rv-on > .entry-card:nth-child(n+6) { animation-delay: 240ms; }
+@keyframes rv-card-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Palette: add a small scale-from to its existing translate+fade. */
+.cmd-palette {
+  transform: translateY(-6px) scale(0.985);
+}
+.cmd-palette-overlay.is-open .cmd-palette {
+  transform: translateY(0) scale(1);
+}
+
+/* Step "tick complete" — when a step is marked done in cook's view,
+   brief scale-strike rather than instant text-decoration. */
+.recipe-steps .step-item.is-done {
+  animation: step-strike 320ms var(--ease-out);
+}
+@keyframes step-strike {
+  0%   { background: transparent; }
+  40%  { background: var(--accent-soft); }
+  100% { background: transparent; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .rv-init { opacity: 1; transform: none; transition: none; }
+  .rv-on > * { animation: none !important; }
+  .entry-card, .pair-card, .rl-card, .ff-card, .family-card, .hub-chip {
+    transition: none;
+  }
+  .entry-card:hover, .pair-card:hover, .rl-card:hover,
+  .ff-card:hover, .family-card:hover { transform: none; box-shadow: var(--shadow-sm); }
+  .recipe-steps .step-item.is-done { animation: none; }
+  body, .recipe-hero, .topic-hero, .home-hero, .home-section,
+  .entry-card, .pair-card, .rl-card, .ff-card, .family-card,
+  .cmd-palette, .hcard, .rh-stats { transition: none; }
+}
+.rv-noanim .rv-init { opacity: 1; transform: none; }
