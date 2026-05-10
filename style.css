@@ -3187,3 +3187,219 @@ body.cmd-palette-open { overflow: hidden; }
 @media print {
   .toc-breadcrumb { display: none !important; }
 }
+
+/* === Item 2: recipe page typography pass ============================
+   Quieter chrome, more breathing room, less sterile. The recipe page
+   should read like a pamphlet from a trusted shop, not a database row.
+*/
+
+/* Drop the redundant "RECIPE" eyebrow — the breadcrumb already names the
+   category. Save the eye for the title. Same on topic-hero pages. */
+.recipe-hero .rh-eyebrow,
+.topic-hero .topic-hero-eyebrow { display: none; }
+
+/* Lift the title; tighter leading earns the size. */
+.rh-title,
+.topic-hero-title {
+  font-size: clamp(2.1rem, 4.4vw + 1rem, 3.05rem);
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.55em;
+}
+
+/* Description: keep prose feel, slightly more breathing. */
+.rh-desc,
+.topic-hero-desc {
+  font-size: 1.18rem;
+  line-height: 1.58;
+  color: var(--ink-warm, var(--ink-soft));
+  max-width: 60ch;
+  margin: 0 0 1.6rem;
+}
+
+/* Convert the bordered stat card to an inline serif rule:
+   "Serves 4 · 27 min active · easy"
+   Hairline above and below, italic small caps for the labels.
+   We override the existing grid look without touching the markup —
+   the existing .rh-stat-icon stays inside but is hidden visually. */
+.rh-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  margin-bottom: 1.4rem;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--rule-soft);
+  border-bottom: 1px solid var(--rule-soft);
+  border-radius: 0;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--ink-warm, var(--ink-soft));
+}
+.rh-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  min-width: 0;
+  padding: 0;
+}
+/* Hide the icon chips — they were busy. */
+.rh-stat-icon { display: none !important; }
+.rh-stat-text {
+  display: inline;
+  flex-direction: row;
+}
+.rh-stat-value {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  text-transform: lowercase;
+}
+.rh-stat-label {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-faint);
+  text-transform: lowercase;
+  letter-spacing: 0;
+  margin: 0 0 0 0.2rem;
+}
+.rh-stat-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+  margin-left: 0.35rem;
+}
+/* Bullet between stats */
+.rh-stat + .rh-stat::before {
+  content: "·";
+  color: var(--ink-faint);
+  margin-right: 0.5rem;
+  opacity: 0.6;
+}
+/* The "time" stat keeps an accent emphasis on the value. */
+.rh-stat[data-stat="time"] .rh-stat-value {
+  color: var(--accent);
+  font-weight: 700;
+}
+/* Drop the difficulty's color block; just italicize it like a critic's note. */
+.rh-stat[data-stat="difficulty"] .rh-stat-value {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+/* Tags row: smaller, quieter, less pill-y. */
+.rh-tags {
+  gap: 0.3rem 0.6rem;
+  margin-bottom: 1.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+}
+.rh-tag {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--ink-faint);
+  border-radius: 0;
+  text-transform: lowercase;
+}
+a.rh-tag {
+  border-bottom: 1px dotted var(--rule);
+  padding-bottom: 1px;
+}
+a.rh-tag:hover {
+  background: transparent;
+  border-bottom-color: var(--accent);
+  border-bottom-style: solid;
+  color: var(--accent);
+}
+.rh-tag-cuisine { font-weight: 600; color: var(--ink-soft); }
+.rh-tag-cuisine::before {
+  width: 5px; height: 5px;
+  margin-right: 5px;
+  background: var(--cat-cuisines, var(--accent));
+  top: -2px;
+}
+.rh-tag-course {
+  font-style: italic;
+}
+.rh-tag-diet {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+}
+
+/* Section heads: drop the heavy 2px underline, replace with hairline +
+   small mono sub-label that names the section number. */
+.section-head {
+  margin: 3rem 0 1.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.section-head::after {
+  /* A category-tinted seam under the rule — adds quiet identity */
+  content: "";
+  position: absolute;
+  left: 0; bottom: -1px;
+  height: 2px; width: 64px;
+  background: var(--cat-recipes);
+  opacity: 0.85;
+}
+body[data-category="ingredients"] .section-head::after { background: var(--cat-ingredients); }
+body[data-category="techniques"] .section-head::after  { background: var(--cat-techniques); }
+body[data-category="cuisines"] .section-head::after    { background: var(--cat-cuisines); }
+body[data-category="equipment"] .section-head::after   { background: var(--cat-equipment); }
+body[data-category="hubs"] .section-head::after        { background: var(--cat-hubs); }
+body[data-category="safety"] .section-head::after      { background: var(--cat-safety); }
+.section-head h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.15;
+}
+
+/* TOC label: drop ALL CAPS, use italic small. */
+.toc-label {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+/* Recipe steps: more vertical air, larger numerals, calmer rule. */
+.recipe-steps {
+  margin-top: 1rem;
+}
+.recipe-steps .step-item {
+  margin: 1.2rem 0;
+  padding: 0.4rem 0 0.5rem;
+}
+.recipe-steps .step-num {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  font-style: italic;
+  background: transparent !important;
+  color: var(--accent) !important;
+  width: auto;
+  min-width: 1.6rem;
+  border: 0 !important;
+  margin-top: -0.1rem;
+}
+.recipe-steps .step-body {
+  font-size: 1.07rem;
+  line-height: 1.7;
+  color: var(--ink-warm, var(--ink));
+}
