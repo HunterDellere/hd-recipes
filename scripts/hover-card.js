@@ -25,7 +25,7 @@
   }
   const ROOT = resolveRoot();
 
-  const SELECTOR = 'a.x-link, a.ing-link, a.pair-card, a.hub-chip, a.rl-card, a.hm-link, a.entry-card';
+  const SELECTOR = 'a.x-link, a.ing-link, a.pair-card, a.hub-chip, a.rl-card, a.hm-link, a.entry-card, a.ff-card';
   const HOVER_DELAY = 250;
   const LONG_PRESS = 500;
 
@@ -181,21 +181,32 @@
     setTimeout(() => { if (card && !activeAnchor) card.hidden = true; }, 130);
   }
 
-  // Pointer events — hover for fine pointers, long-press for coarse.
-  document.addEventListener('mouseenter', (e) => {
+  // Pointer events — use mouseover/mouseout (which bubble) for delegation.
+  // mouseenter/mouseleave do NOT bubble, so attaching them to document with
+  // capture is unreliable across browsers — the capture phase still requires
+  // the event to be dispatched, and these two are dispatched only on the
+  // listener element itself.
+  let hoverAnchor = null;
+  document.addEventListener('mouseover', (e) => {
     if (isCoarse) return;
     const a = e.target.closest && e.target.closest(SELECTOR);
-    if (!a) return;
+    if (!a || a === hoverAnchor) return;
+    hoverAnchor = a;
     if (showTimer) clearTimeout(showTimer);
-    showTimer = setTimeout(() => show(a), HOVER_DELAY);
-  }, true);
+    showTimer = setTimeout(() => { if (hoverAnchor === a) show(a); }, HOVER_DELAY);
+  });
 
-  document.addEventListener('mouseleave', (e) => {
+  document.addEventListener('mouseout', (e) => {
     if (isCoarse) return;
     const a = e.target.closest && e.target.closest(SELECTOR);
     if (!a) return;
+    // relatedTarget is the element entering — if it's still inside the same
+    // anchor, we haven't actually left.
+    const into = e.relatedTarget;
+    if (into && a.contains(into)) return;
+    if (hoverAnchor === a) hoverAnchor = null;
     hide();
-  }, true);
+  });
 
   // Touch: long-press to preview without navigation.
   let pressTimer = null;
@@ -237,18 +248,8 @@
     hide();
   });
 
-  // Keyboard: focus on a link surfaces the card (accessibility / keyboard nav)
-  document.addEventListener('focusin', (e) => {
-    const a = e.target.closest && e.target.closest(SELECTOR);
-    if (!a) return;
-    if (showTimer) clearTimeout(showTimer);
-    showTimer = setTimeout(() => show(a), HOVER_DELAY);
-  });
-  document.addEventListener('focusout', (e) => {
-    const a = e.target.closest && e.target.closest(SELECTOR);
-    if (!a) return;
-    hide();
-  });
+  // Keyboard navigation gets the link target via the link itself; auto-popping
+  // hover-cards on every Tab press creates noise. Skip focus-driven hover-cards.
 
   // Hide on scroll — popover positioning would otherwise drift.
   window.addEventListener('scroll', () => {
