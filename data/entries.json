@@ -38,7 +38,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -458,7 +458,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -1163,6 +1163,68 @@
     }
   },
   {
+    "path": "pages/recipes/apple-cider-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Apple cider vinegar",
+    "desc": "Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. A two-stage cure: wild yeast on the apple skins converts sugar to ethanol, then airborne acetobacter converts ethanol to acetic acid. Yields a live, unpasteurized cider vinegar with apple character lost in commercial bottling.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "apple-cider-vinegar",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
+        "optional": false
+      },
+      {
+        "item": "cane sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "filtered water, room temperature",
+        "optional": false
+      },
+      {
+        "item": "splash of unfiltered raw apple cider vinegar (optional, as starter)",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/caesar-salad-with-anchovy-emulsion.html",
     "type": "recipe",
     "category": "recipes",
@@ -1727,6 +1789,62 @@
     }
   },
   {
+    "path": "pages/recipes/homemade-tahini.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade tahini",
+    "desc": "Hulled sesame seeds toasted lightly at 160 °C and ground with neutral oil to a smooth, pourable paste. Fresher and more aromatic than commercial bottles, especially against supermarket house-brand tahini.",
+    "tags": [
+      "weekend-project",
+      "pantry",
+      "levantine",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "homemade-tahini",
+    "cuisine": "Levantine",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 25,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan"
+    ],
+    "ingredients": [
+      {
+        "item": "hulled white sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (avocado, refined sunflower, or grapeseed)",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/kachumber-with-cumin-lime.html",
     "type": "recipe",
     "category": "recipes",
@@ -1951,6 +2069,77 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/lebanese-pita-bread.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Lebanese pita bread",
+    "desc": "Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The high-heat steam puff sets the surface fast enough that interior steam blows the dough into a hollow balloon; the day-after staling makes it the structural ingredient for fattoush.",
+    "tags": [
+      "bread",
+      "levantine",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "lebanese-pita-bread",
+    "cuisine": "Levantine",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 30,
+      "total_min": 180,
+      "active_min": 60
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "water, lukewarm 32 °C / 90 °F",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 180,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "+ 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {
@@ -2201,6 +2390,123 @@
       "timeMode": "total",
       "activeMinutes": 40,
       "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/recipes/pomegranate-molasses.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pomegranate molasses",
+    "desc": "Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levantine and Persian sour anchor that defines fattoush dressings, fesenjan, and muhammara.",
+    "tags": [
+      "sauce",
+      "levantine",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "pomegranate-molasses",
+    "cuisine": "Levantine",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 45,
+      "total_min": 50,
+      "active_min": 10
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pure pomegranate juice (POM Wonderful or freshly pressed)",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar (optional, for a sweeter molasses)",
+        "slug": "granulated-sugar",
+        "optional": true
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/red-wine-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Red wine vinegar",
+    "desc": "Live mother of vinegar fed leftover red wine in a wide jar — acetobacter oxidizes the ethanol to acetic acid over 60 to 90 days. Yields a vinegar with floral and tannic complexity that pasteurized commercial product lacks.",
+    "tags": [
+      "fermentation",
+      "acid",
+      "pantry",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "red-wine-vinegar",
+    "cuisine": "Mediterranean",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 30,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 86400,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "live mother of vinegar (active acetobacter culture)",
+        "optional": false
+      },
+      {
+        "item": "red wine (dry, unoaked or lightly oaked, 11 to 13.5 percent alcohol)",
+        "optional": false
+      },
+      {
+        "item": "water (filtered, non-chlorinated)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 86400,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 60 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -2611,6 +2917,126 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/salt-cured-anchovies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salt-cured anchovies",
+    "desc": "Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until cathepsin proteases hydrolyze the myofibrillar proteins into free glutamate and the texture softens into clean, pull-apart fillets.",
+    "tags": [
+      "fermentation",
+      "fish",
+      "pantry",
+      "umami",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "salt-cured-anchovies",
+    "cuisine": "Mediterranean",
+    "course": "side",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 60,
+      "cook_min": 0,
+      "total_min": 525600,
+      "active_min": 90
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "pescatarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh whole anchovies (Engraulis encrasicolus or Pacific equivalent)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt (Mediterranean grey or French sel gris)",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil for the final pack",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 525600,
+      "diffLabel": "medium",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "+ 365 d rest",
+      "timeMode": "active",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
+    "path": "pages/recipes/salt-packed-capers.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salt-packed capers",
+    "desc": "Fresh caper buds wilted, salt-packed, and cured for 30 to 60 days. The dry-salt method partially degrades glucocapparin to mellow raw harshness into a layered floral-mustard-savory finish, with crisper bite than the brined-jar version.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "pickle",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "salt-packed-capers",
+    "cuisine": "Mediterranean",
+    "course": "side",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 60
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh caper buds (Capparis spinosa, picked at first light)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt (Mediterranean grey, sel gris, or any non-iodized non-anti-caking salt)",
+        "optional": false
+      },
+      {
+        "item": "additional coarse sea salt for re-packing",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {
@@ -3300,7 +3726,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -3555,7 +3981,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 12,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -3772,7 +4198,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -12051,7 +12477,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
@@ -12567,7 +12993,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -12604,7 +13030,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -14534,68 +14960,6 @@
     }
   },
   {
-    "path": "pages/recipes/apple-cider-vinegar.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Apple cider vinegar",
-    "desc": "Apple scraps (cores and peels) plus water plus a little sugar, fermented for 4 to 6 weeks under a cloth, produce a live unpasteurized cider vinegar with complex apple character. Stub.",
-    "tags": [
-      "fermentation",
-      "pantry",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "apple-cider-vinegar",
-    "cuisine": "American",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 16,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 0,
-      "total_min": 60480,
-      "active_min": 20
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
-        "optional": false
-      },
-      {
-        "item": "cane sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "filtered water, room temperature",
-        "optional": false
-      },
-      {
-        "item": "splash of unfiltered apple cider vinegar (optional, as starter)",
-        "slug": "apple-cider-vinegar",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 60480,
-      "diffLabel": "medium",
-      "timeLead": "20 min",
-      "timeAnnotation": "+ 42 d rest",
-      "timeMode": "active",
-      "activeMinutes": 20,
-      "filterMinutes": 20
-    }
-  },
-  {
     "path": "pages/recipes/chaat-masala.html",
     "type": "recipe",
     "category": "recipes",
@@ -14732,61 +15096,6 @@
     }
   },
   {
-    "path": "pages/recipes/homemade-tahini.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Homemade tahini",
-    "desc": "Hulled sesame seeds toasted lightly and ground with neutral oil to a smooth, pourable paste. Fresher and more aromatic than commercial bottles, especially when the available commercial tahini is supermarket house brand. Stub.",
-    "tags": [
-      "weekend-project",
-      "pantry",
-      "levantine",
-      "umami"
-    ],
-    "status": "stub",
-    "_slug": "homemade-tahini",
-    "cuisine": "Levantine",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 12,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 15,
-      "total_min": 25,
-      "active_min": 20
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan"
-    ],
-    "ingredients": [
-      {
-        "item": "hulled white sesame seeds",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (avocado, refined sunflower, or grapeseed)",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 25,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
-    }
-  },
-  {
     "path": "pages/recipes/infused-honey.html",
     "type": "recipe",
     "category": "recipes",
@@ -14830,77 +15139,6 @@
       "timeMode": "active",
       "activeMinutes": 15,
       "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/recipes/lebanese-pita-bread.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Lebanese pita bread",
-    "desc": "Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The high-heat steam puff and the day-after staling that makes the bread a fattoush ingredient. Stub.",
-    "tags": [
-      "bread",
-      "levantine",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "lebanese-pita-bread",
-    "cuisine": "Levantine",
-    "course": "bread",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 30,
-      "total_min": 180,
-      "active_min": 60
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "bread flour",
-        "slug": "bread-flour",
-        "optional": false
-      },
-      {
-        "item": "water, lukewarm 32 °C / 90 °F",
-        "optional": false
-      },
-      {
-        "item": "instant yeast",
-        "slug": "instant-yeast",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 180,
-      "diffLabel": "medium",
-      "timeLead": "1 h",
-      "timeAnnotation": "+ 2 h rest",
-      "timeMode": "active",
-      "activeMinutes": 60,
-      "filterMinutes": 60
     }
   },
   {
@@ -14965,238 +15203,6 @@
       "timeMode": "active",
       "activeMinutes": 480,
       "filterMinutes": 480
-    }
-  },
-  {
-    "path": "pages/recipes/pomegranate-molasses.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Pomegranate molasses",
-    "desc": "Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levantine and Persian sour anchor — fattoush, fesenjan, muhammara. Stub.",
-    "tags": [
-      "sauce",
-      "levantine",
-      "pantry",
-      "make-ahead"
-    ],
-    "status": "stub",
-    "_slug": "pomegranate-molasses",
-    "cuisine": "Levantine",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 16,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 45,
-      "total_min": 50,
-      "active_min": 10
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "pure pomegranate juice (POM Wonderful or freshly pressed)",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar (optional, for a sweeter molasses)",
-        "slug": "granulated-sugar",
-        "optional": true
-      },
-      {
-        "item": "lemon juice, fresh",
-        "slug": "lemon",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
-    }
-  },
-  {
-    "path": "pages/recipes/red-wine-vinegar.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Red wine vinegar",
-    "desc": "Live mother of vinegar fed leftover red wine in a wide jar — produces vinegar with floral and tannic complexity that pasteurized commercial product lacks. Stub.",
-    "tags": [
-      "fermentation",
-      "acid",
-      "pantry",
-      "mediterranean",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "red-wine-vinegar",
-    "cuisine": "Mediterranean",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 1,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 0,
-      "total_min": 86400,
-      "active_min": 30
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "live mother of vinegar (active acetobacter culture)",
-        "optional": false
-      },
-      {
-        "item": "red wine (dry, unoaked or lightly oaked, 11 to 13.5 percent alcohol)",
-        "optional": false
-      },
-      {
-        "item": "water (filtered, non-chlorinated)",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 86400,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 60 d rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/salt-cured-anchovies.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Salt-cured anchovies",
-    "desc": "Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until the protein hydrolyzes and the texture softens into clean fillets. Stub.",
-    "tags": [
-      "fermentation",
-      "fish",
-      "pantry",
-      "umami",
-      "mediterranean",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "salt-cured-anchovies",
-    "cuisine": "Mediterranean",
-    "course": "side",
-    "difficulty": "medium",
-    "servings": 1,
-    "time": {
-      "prep_min": 60,
-      "cook_min": 0,
-      "total_min": 525600,
-      "active_min": 90
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "pescatarian",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh whole anchovies (Engraulis encrasicolus or Pacific equivalent)",
-        "optional": false
-      },
-      {
-        "item": "coarse sea salt (Mediterranean grey or French sel gris)",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil for final pack",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 525600,
-      "diffLabel": "medium",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "+ 365 d rest",
-      "timeMode": "active",
-      "activeMinutes": 90,
-      "filterMinutes": 90
-    }
-  },
-  {
-    "path": "pages/recipes/salt-packed-capers.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Salt-packed capers",
-    "desc": "Fresh caper buds packed in coarse sea salt for a multi-month cure. Yields capers with crisper bite and brighter mustard-pungency than the brined-jar version. Stub.",
-    "tags": [
-      "fermentation",
-      "pantry",
-      "pickle",
-      "mediterranean",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "salt-packed-capers",
-    "cuisine": "Mediterranean",
-    "course": "side",
-    "difficulty": "medium",
-    "servings": 1,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 0,
-      "total_min": 60480,
-      "active_min": 60
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh caper buds (Capparis spinosa, picked at first light)",
-        "optional": false
-      },
-      {
-        "item": "coarse sea salt (Mediterranean grey, sel gris, or any non-iodized non-anti-caking)",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 60480,
-      "diffLabel": "medium",
-      "timeLead": "1 h",
-      "timeAnnotation": "+ 42 d rest",
-      "timeMode": "active",
-      "activeMinutes": 60,
-      "filterMinutes": 60
     }
   },
   {

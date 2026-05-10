@@ -1,5 +1,67 @@
 [
   {
+    "path": "pages/recipes/apple-cider-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Apple cider vinegar",
+    "desc": "Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. A two-stage cure: wild yeast on the apple skins converts sugar to ethanol, then airborne acetobacter converts ethanol to acetic acid. Yields a live, unpasteurized cider vinegar with apple character lost in commercial bottling.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "apple-cider-vinegar",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
+        "optional": false
+      },
+      {
+        "item": "cane sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "filtered water, room temperature",
+        "optional": false
+      },
+      {
+        "item": "splash of unfiltered raw apple cider vinegar (optional, as starter)",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/caesar-salad-with-anchovy-emulsion.html",
     "type": "recipe",
     "category": "recipes",
@@ -297,121 +359,6 @@
       "timeMode": "total",
       "activeMinutes": 5,
       "filterMinutes": 5
-    }
-  },
-  {
-    "path": "pages/recipes/ensalada-de-nopales.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ensalada de nopales",
-    "desc": "Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and Maillard browning develops, then sliced and tossed warm with diced tomato, white onion, serrano, cilantro, lime, and crumbled queso fresco. The thesis is heat-as-mucilage-fix, not blanching; the char is the entire flavor argument.",
-    "tags": [
-      "salad",
-      "mexican",
-      "vegetable",
-      "no-cook",
-      "side",
-      "weeknight",
-      "acid"
-    ],
-    "status": "complete",
-    "_slug": "ensalada-de-nopales",
-    "cuisine": "Mexican",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 18,
-      "total_min": 38,
-      "active_min": 30
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "nopal paddles, fresh",
-        "slug": "nopales",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "avocado oil or other neutral high-heat oil",
-        "slug": "avocado-oil",
-        "optional": false
-      },
-      {
-        "item": "firm ripe Roma tomato",
-        "slug": "tomato",
-        "optional": false
-      },
-      {
-        "item": "white onion",
-        "slug": "white-onion",
-        "optional": false
-      },
-      {
-        "item": "serrano chili, fresh",
-        "slug": "serrano-chili",
-        "optional": false
-      },
-      {
-        "item": "lime juice, fresh",
-        "slug": "lime",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "Mexican oregano, dried",
-        "slug": "mexican-oregano",
-        "optional": false
-      },
-      {
-        "item": "cilantro, leaves and tender stems",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "queso fresco",
-        "slug": "queso-fresco",
-        "optional": false
-      },
-      {
-        "item": "avocado, ripe but firm",
-        "slug": "avocado",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "comal-charring",
-      "blooming-aromatics"
-    ],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 38,
-      "diffLabel": "easy",
-      "timeLead": "38 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 30,
-      "filterMinutes": 30
     }
   },
   {

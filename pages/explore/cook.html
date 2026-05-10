@@ -79,7 +79,7 @@
     <div class="fam-intro">
       <p class="fam-intro-text">Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.</p>
       <div class="fam-stats" role="navigation" aria-label="Jump to category"><a class="fam-stat" href="#cat-recipes" data-category="recipes">
-        <span class="fam-stat-num">91</span>
+        <span class="fam-stat-num">98</span>
         <span class="fam-stat-label">Recipes</span>
       </a></div>
     </div>
@@ -145,6 +145,10 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Levantine" data-filter-cuisine="Levantine">
               <span class="filter-opt-label">Levantine</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Mediterranean" data-filter-cuisine="Mediterranean">
+              <span class="filter-opt-label">Mediterranean</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Mediterranean (Levantine lean)" data-filter-cuisine="Mediterranean (Levantine lean)">
@@ -346,10 +350,6 @@
               <span class="filter-opt-label">make-ahead</span>
             </label>
             <label class="filter-opt">
-              <input type="checkbox" value="mediterranean" data-filter-tag="mediterranean">
-              <span class="filter-opt-label">mediterranean</span>
-            </label>
-            <label class="filter-opt">
               <input type="checkbox" value="no-cook" data-filter-tag="no-cook">
               <span class="filter-opt-label">no-cook</span>
             </label>
@@ -534,10 +534,17 @@
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">
         <h2 class="fam-cat-title">Recipes</h2>
-        <span class="fam-cat-count">91 entries</span>
+        <span class="fam-cat-count">98 entries</span>
       </div>
       <p class="fam-cat-blurb">Tested dishes — scale, shop, cook.</p>
       <div class="card-grid" data-grid>
+        <a class="entry-card" href="../recipes/apple-cider-vinegar.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="sauce" data-diet="vegan|gluten-free" data-difficulty="medium" data-time="20" data-tags="fermentation|pantry|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Apple cider vinegar</span><span class="ec-desc">Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. A two-stag</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>20 min</strong> active</span><span class="ec-time-annot">+ 42 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/banana-bread.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="dessert" data-diet="vegetarian" data-difficulty="easy" data-time="15" data-tags="american|comfort|dessert|breakfast|fruit|quick-bread|bread">
           <span class="ec-cat">recipes</span><span class="ec-title">Banana bread</span><span class="ec-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maximally soft </span>
         <div class="ec-foot">
@@ -748,6 +755,13 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
         </a>
+        <a class="entry-card" href="../recipes/homemade-tahini.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="sauce" data-diet="vegan" data-difficulty="easy" data-time="20" data-tags="weekend-project|pantry|levantine|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Homemade tahini</span><span class="ec-desc">Hulled sesame seeds toasted lightly at 160 °C and ground with neutral oil to a smooth, pourable paste. Fresher</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>25 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/house-blend-chai.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian" data-course="drink" data-diet="vegetarian" data-difficulty="easy" data-time="10" data-tags="tea|indian|drink|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">House blend chai</span><span class="ec-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.</span>
         <div class="ec-foot">
@@ -796,6 +810,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Thai</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>28 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/lebanese-pita-bread.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="bread" data-diet="vegetarian" data-difficulty="medium" data-time="60" data-tags="bread|levantine|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Lebanese pita bread</span><span class="ec-desc">Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The high-heat</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">bread</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h</strong> active</span><span class="ec-time-annot">+ 2 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/lemony-green-beans-with-garlic-crunch.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="20" data-tags="vegetable|side|holiday|american|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Lemony green beans with garlic crunch</span><span class="ec-desc">Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on to</span>
@@ -895,6 +916,13 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/pomegranate-molasses.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="sauce" data-diet="vegan|gluten-free" data-difficulty="easy" data-time="10" data-tags="sauce|levantine|pantry|make-ahead">
+          <span class="ec-cat">recipes</span><span class="ec-title">Pomegranate molasses</span><span class="ec-desc">Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levantine and Pe</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/pork-century-egg-congee.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="breakfast" data-diet="" data-difficulty="medium" data-time="30" data-tags="rice|pork|chinese|comfort|breakfast|one-pot|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Pork and century egg congee (皮蛋瘦肉粥)</span><span class="ec-desc">The canonical Cantonese savory congee. Bone-in pork shoulder simmered into the rice provides its own stock; cu</span>
         <div class="ec-foot">
@@ -936,6 +964,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Indian</span><span class="ec-meta-item">dessert</span><span class="ec-meta-item ec-meta-time"><strong>4 h</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/red-wine-vinegar.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mediterranean" data-course="sauce" data-diet="vegan|gluten-free|dairy-free" data-difficulty="medium" data-time="30" data-tags="fermentation|acid|pantry|mediterranean|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Red wine vinegar</span><span class="ec-desc">Live mother of vinegar fed leftover red wine in a wide jar — acetobacter oxidizes the ethanol to acetic acid o</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>30 min</strong> active</span><span class="ec-time-annot">+ 60 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>30</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/kheer.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian" data-course="dessert" data-diet="vegetarian" data-difficulty="easy" data-time="70" data-tags="indian|dessert|rice">
           <span class="ec-cat">recipes</span><span class="ec-title">Rice kheer (chawal ki kheer)</span><span class="ec-desc">Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and saffron, f</span>
@@ -985,6 +1020,20 @@
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>35 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>3</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/salt-cured-anchovies.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mediterranean" data-course="side" data-diet="pescatarian|gluten-free|dairy-free" data-difficulty="medium" data-time="90" data-tags="fermentation|fish|pantry|umami|mediterranean|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Salt-cured anchovies</span><span class="ec-desc">Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until cathepsin proteases h</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h 30 min</strong> active</span><span class="ec-time-annot">+ 365 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/salt-packed-capers.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mediterranean" data-course="side" data-diet="vegan|gluten-free|dairy-free" data-difficulty="medium" data-time="60" data-tags="fermentation|pantry|pickle|mediterranean|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Salt-packed capers</span><span class="ec-desc">Fresh caper buds wilted, salt-packed, and cured for 30 to 60 days. The dry-salt method partially degrades gluc</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h</strong> active</span><span class="ec-time-annot">+ 42 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
         </a>
         <a class="entry-card" href="../recipes/salted-duck-egg-yolks.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="sauce" data-diet="gluten-free" data-difficulty="medium" data-time="45" data-tags="egg|chinese|pantry|umami|fermentation|make-ahead|weekend-project">
           <span class="ec-cat">recipes</span><span class="ec-title">Salted duck egg yolks (home brine cure)</span><span class="ec-desc">Raw duck eggs cured thirty-five days in saturated brine, then steamed and the yolks separated. Dense, fudgy, o</span>
