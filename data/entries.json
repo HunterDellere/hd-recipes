@@ -56,7 +56,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -80,7 +80,29 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 6,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/douchi.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Douchi (fermented black beans, 豆豉)",
+    "desc": "Whole black soybeans inoculated with Aspergillus and salt-cured for several months until they go from black to wrinkled-jet-black, intensely savory, and smelling like aged miso crossed with soy sauce. The umami depth charge in mapo tofu, steamed fish in black bean sauce, and Cantonese black bean spareribs.",
+    "tags": [
+      "chinese",
+      "pantry",
+      "umami",
+      "fermentation"
+    ],
+    "status": "complete",
+    "_slug": "douchi",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -143,8 +165,54 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "legume",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/fish-sauce.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fish sauce",
+    "desc": "Anchovies (or other small fish) salted at a 1:3 ratio and fermented for 12 to 24 months until the proteins enzymatically hydrolyze into a clear amber-brown liquid that smells aggressively of fermented fish and tastes structurally savory. The defining seasoning of Vietnamese and Thai cooking and a major contributor across Cantonese, Filipino, and Korean kitchens.",
+    "tags": [
+      "umami",
+      "pantry",
+      "fermentation",
+      "sauce"
+    ],
+    "status": "complete",
+    "_slug": "fish-sauce",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
       "usedInCount": 1,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/gochujang.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Gochujang (Korean fermented chili paste, 고추장)",
+    "desc": "Korean ferment of glutinous rice, gochugaru chili powder, fermented soybean powder (meju), barley malt, and salt, aged in earthen jars from 6 months to several years. The structural sweet-spicy-fermented backbone of Korean cooking — present in bibimbap, tteokbokki, ojingeo bokkeum, dakgalbi, and most Korean stews.",
+    "tags": [
+      "korean",
+      "pantry",
+      "umami",
+      "fermentation",
+      "spicy",
+      "sauce"
+    ],
+    "status": "complete",
+    "_slug": "gochujang",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   },
   {
@@ -166,6 +234,26 @@
     "_card": {
       "primaryTag": "dairy",
       "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/ground-beef.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ground beef",
+    "desc": "Beef muscle ground through a fixed plate to a specified fat percentage. The fat percentage and the cut origin are the two variables that determine which dish the grind belongs in. 80/20 chuck is the workhorse default; 90/10 sirloin reads lean and serious; 70/30 short rib reads decadent.",
+    "tags": [
+      "beef",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "ground-beef",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "beef",
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -256,6 +344,29 @@
     }
   },
   {
+    "path": "pages/ingredients/silken-tofu.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Silken tofu",
+    "desc": "Soy milk coagulated into a smooth, custard-like curd at 88 to 92% water by weight, never pressed. Wobbles like a panna cotta and breaks under a spoon. The textural reference for hot-set Sichuan mapo, Japanese hiyayakko, and Korean sundubu jjigae.",
+    "tags": [
+      "legume",
+      "pantry",
+      "chinese",
+      "japanese",
+      "korean"
+    ],
+    "status": "complete",
+    "_slug": "silken-tofu",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "legume",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/sour-cream.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -274,6 +385,27 @@
       "primaryTag": "dairy",
       "usedInCount": 1,
       "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/squid.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Squid (calamari)",
+    "desc": "Cephalopod muscle composed of densely cross-linked collagen. Cooks through one of two windows: 90 seconds at high heat, or 45 minutes at low simmer. Anything between produces rubber. The defining principle of squid cookery is that the middle ground is the failure mode.",
+    "tags": [
+      "seafood",
+      "fish",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "squid",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 4,
+      "hasNutrition": true
     }
   },
   {
@@ -416,6 +548,162 @@
     }
   },
   {
+    "path": "pages/recipes/cantonese-mapo-pork.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cantonese-style mapo with pork (gateway mapo)",
+    "desc": "The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichuan peppercorn, oyster sauce contributing Cantonese sweetness, and the doubanjiang dialed back. Less aggressively numbing-spicy, more sweet-savory, and the typical entry point for Western diners. Defensibly delicious as its own dish; explicitly not the Sichuan canonical version.",
+    "tags": [
+      "chinese",
+      "spicy",
+      "umami",
+      "pork",
+      "one-pot",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "cantonese-mapo-pork",
+    "cuisine": "Chinese",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 12,
+      "total_min": 27,
+      "active_min": 22
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "ground pork (80/20 shoulder)",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "cornstarch (for coating the pork)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "medium-firm or soft tofu (not silken, not extra-firm)",
+        "slug": "firm-tofu",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "Pixian doubanjiang",
+        "slug": "doubanjiang",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, finely minced",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "scallion whites, finely chopped",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "chicken stock",
+        "optional": false
+      },
+      {
+        "item": "oyster sauce",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water (for slurry)",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, freshly toasted and ground",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "reserved scallion greens, sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "red-oil-rendering",
+      "velveting"
+    ],
+    "equipment": [
+      "wok"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 27,
+      "diffLabel": "easy",
+      "timeLead": "27 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 22,
+      "filterMinutes": 22
+    }
+  },
+  {
     "path": "pages/recipes/chicken-stock.html",
     "type": "recipe",
     "category": "recipes",
@@ -497,6 +785,130 @@
       "timeLead": "25 min",
       "timeAnnotation": "+ 4 h rest",
       "timeMode": "active",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/grilled-squid-nuoc-cham.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Grilled whole squid with nuoc cham (mực nướng)",
+    "desc": "Whole cleaned squid (tubes and tentacles intact) marinated briefly in fish sauce, garlic, and lemongrass, grilled over high heat for 90 seconds per side until charred at the edges and just opaque through, served with classic Vietnamese nuoc cham — lime, fish sauce, sugar, garlic, chili. The 90-second high-heat window over fire instead of oil.",
+    "tags": [
+      "vietnamese",
+      "seafood",
+      "fish",
+      "spicy",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "grilled-squid-nuoc-cham",
+    "cuisine": "Vietnamese",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 8,
+      "total_min": 28,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "whole cleaned squid (small to medium, 8 to 12 cm tubes, with tentacles)",
+        "slug": "squid",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (premium, 30 to 40°N nitrogen)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "lemongrass, finely minced (white tender part only)",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "shallot, finely minced",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or light brown sugar)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "fresh ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (premium)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or granulated sugar)",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red chili (Thai bird), finely minced",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves, picked",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves",
+        "optional": false
+      },
+      {
+        "item": "lime wedges",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "scoring-squid"
+    ],
+    "equipment": [
+      "charcoal grill (preferred), gas grill, or grill pan",
+      "tongs"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 28,
+      "diffLabel": "easy",
+      "timeLead": "28 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
     }
@@ -1039,6 +1451,276 @@
     }
   },
   {
+    "path": "pages/recipes/mapo-tofu-poured-set.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Poured-set mapo tofu (douhua mapo)",
+    "desc": "Hot soy milk whisked with GDL and poured directly into the serving bowl, allowed to set into a freshly-made silken curd, then topped with a thick mapo sauce ladled over at near-boiling. The curd is softer than any commercial silken tofu, the eating experience is custard-soft cradle for the mala sauce above, and the dish hits the table at the highest possible temperature contrast.",
+    "tags": [
+      "chinese",
+      "spicy",
+      "umami",
+      "beef"
+    ],
+    "status": "complete",
+    "_slug": "mapo-tofu-poured-set",
+    "cuisine": "Chinese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 15,
+      "total_min": 60,
+      "active_min": 30
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "plain unsweetened soy milk (no calcium fortification)",
+        "optional": false
+      },
+      {
+        "item": "glucono delta-lactone (GDL)",
+        "optional": false
+      },
+      {
+        "item": "warm water (for dissolving GDL)",
+        "optional": false
+      },
+      {
+        "item": "ground beef (80/20 chuck)",
+        "slug": "ground-beef",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "Pixian doubanjiang (chili bean paste)",
+        "slug": "doubanjiang",
+        "optional": false
+      },
+      {
+        "item": "Yongchuan douchi",
+        "slug": "douchi",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, finely minced",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "chicken stock (or hot water)",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water (for slurry)",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, freshly toasted and ground",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "scallion greens, sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves, picked",
+        "slug": "cilantro",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "hot-set-tofu",
+      "red-oil-rendering",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "wok",
+      "thermometer"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/ojingeo-bokkeum.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)",
+    "desc": "Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-gochugaru sauce sweetened with mirin and balanced with soy and sesame oil. The Korean expression of the 90-second high-heat squid window. Served with steamed rice or wrapped in lettuce-and-perilla.",
+    "tags": [
+      "korean",
+      "seafood",
+      "fish",
+      "spicy",
+      "stir-fry",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "ojingeo-bokkeum",
+    "cuisine": "Korean",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 3,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 8,
+      "total_min": 28,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "whole cleaned squid (small to medium tubes, with tentacles)",
+        "slug": "squid",
+        "optional": false
+      },
+      {
+        "item": "gochujang (Korean fermented chili paste)",
+        "slug": "gochujang",
+        "optional": false
+      },
+      {
+        "item": "gochugaru (Korean chili flakes, coarse)",
+        "optional": false
+      },
+      {
+        "item": "soy sauce (Korean ganjang or Japanese koikuchi)",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "mirin",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, finely minced",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, sliced into 1 cm wedges",
+        "optional": false
+      },
+      {
+        "item": "carrot, julienned",
+        "optional": false
+      },
+      {
+        "item": "scallion, cut into 4 cm pieces",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "green cabbage, cut into 4 cm squares",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil (additional finish)",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "scoring-squid"
+    ],
+    "equipment": [
+      "wok or wide skillet"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 28,
+      "diffLabel": "medium",
+      "timeLead": "28 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/recipes/pickled-mustard-greens.html",
     "type": "recipe",
     "category": "recipes",
@@ -1417,6 +2099,135 @@
     }
   },
   {
+    "path": "pages/recipes/salt-and-pepper-squid.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salt-and-pepper squid (Cantonese jiao yan you yu, 椒盐鱿鱼)",
+    "desc": "Cross-hatch-scored squid tubes dredged in a cornstarch-and-rice-flour mix, deep-fried 90 seconds at 175°C, tossed with toasted-and-ground white-pepper salt and crisped chili-garlic-scallion. The 90-second high-heat cooking window for squid, executed at deep-fry intensity. Pinecone curls from the scoring, salt-pepper crust on every cut edge.",
+    "tags": [
+      "chinese",
+      "seafood",
+      "fish",
+      "spicy",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "salt-and-pepper-squid",
+    "cuisine": "Chinese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 3,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 10,
+      "total_min": 35,
+      "active_min": 30
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "whole or cleaned squid (small to medium tubes, 8 to 12 cm)",
+        "slug": "squid",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "white pepper (freshly ground)",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "rice flour (white, fine)",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut, rice bran, or canola, any high-smoke-point neutral oil)",
+        "optional": false
+      },
+      {
+        "item": "whole white peppercorns",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns (optional but traditional)",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "five-spice powder (optional)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for aromatic stir-fry)",
+        "optional": false
+      },
+      {
+        "item": "fresh red chili (Thai bird or fresno), finely sliced",
+        "optional": false
+      },
+      {
+        "item": "garlic, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "scallion, sliced (whites and greens)",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "scoring-squid"
+    ],
+    "equipment": [
+      "wok",
+      "thermometer",
+      "spider strainer",
+      "wire rack"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 35,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/salted-duck-egg-yolks.html",
     "type": "recipe",
     "category": "recipes",
@@ -1610,6 +2421,155 @@
     }
   },
   {
+    "path": "pages/recipes/sichuan-mapo-tofu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sichuan mapo tofu (ma po dou fu)",
+    "desc": "The Chen-family Chengdu original: silken tofu cubes blanched and held in a doubanjiang-and-douchi red oil sauce thickened with three pours of cornstarch slurry, finished with freshly toasted Sichuan peppercorn powder. The seven-flavor profile (numbing, spicy, hot, fragrant, savory, fresh, tender) is the codified Sichuan target.",
+    "tags": [
+      "chinese",
+      "spicy",
+      "umami",
+      "beef",
+      "one-pot",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "sichuan-mapo-tofu",
+    "cuisine": "Chinese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 15,
+      "total_min": 30,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "ground beef (80/20 chuck)",
+        "slug": "ground-beef",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (rice bran or peanut)",
+        "optional": false
+      },
+      {
+        "item": "silken tofu (soft or extra-soft)",
+        "slug": "silken-tofu",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "Pixian doubanjiang (chili bean paste)",
+        "slug": "doubanjiang",
+        "optional": false
+      },
+      {
+        "item": "Yongchuan douchi (fermented black beans)",
+        "slug": "douchi",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, finely minced",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "chicken stock (or hot water)",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, freshly toasted and ground",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "scallion greens, sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "red-oil-rendering",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "wok"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 30,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/recipes/soft-boiled-congee-egg.html",
     "type": "recipe",
     "category": "recipes",
@@ -1751,6 +2711,123 @@
       "timeMode": "total",
       "activeMinutes": 13,
       "filterMinutes": 13
+    }
+  },
+  {
+    "path": "pages/recipes/squid-ink-pasta.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Squid ink pasta with calamari (linguine al nero di seppia)",
+    "desc": "Squid simmered 35 minutes with white wine, San Marzano tomatoes, garlic, and chili flakes until the collagen hydrolyzes from rubber to silk, finished with concentrated squid ink for the dramatic black coloration and a faint marine umami. Tossed with linguine and emulsified with starchy pasta water. The 30-minute low-simmer window for squid, in Italian.",
+    "tags": [
+      "italian",
+      "pasta",
+      "seafood",
+      "fish",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "squid-ink-pasta",
+    "cuisine": "Italian",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 50,
+      "total_min": 65,
+      "active_min": 30
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "whole cleaned squid (medium tubes, 12 to 18 cm)",
+        "slug": "squid",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely chopped",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes (peperoncino)",
+        "optional": false
+      },
+      {
+        "item": "dry white wine (verdicchio, soave, or pinot grigio)",
+        "optional": false
+      },
+      {
+        "item": "San Marzano tomatoes (whole, peeled, in juice)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "squid ink (from packets, jarred, or reserved fresh ink sacs)",
+        "optional": false
+      },
+      {
+        "item": "water (for pasta cooking)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for pasta water)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "linguine or spaghetti (dried, durum wheat)",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, finely chopped",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (finishing drizzle)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "deglazing",
+      "pan-emulsion"
+    ],
+    "equipment": [
+      "wide heavy saucepan",
+      "large pot for pasta",
+      "tongs"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 65,
+      "diffLabel": "medium",
+      "timeLead": "1 h 5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -2018,6 +3095,162 @@
     }
   },
   {
+    "path": "pages/recipes/vegetarian-mapo-tofu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Vegetarian mapo tofu (sù má pó dòu fu)",
+    "desc": "Mapo tofu rebuilt around mushroom umami: fresh shiitake browned to mushroom duxelles, dried shiitake stock as the cooking liquid, and the rest of the doubanjiang-douchi-Sichuan-peppercorn architecture intact. The mushroom granules sub for the beef granules with comparable textural and savory weight.",
+    "tags": [
+      "chinese",
+      "spicy",
+      "umami",
+      "vegetable",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "vegetarian-mapo-tofu",
+    "cuisine": "Chinese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 20,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried shiitake mushrooms",
+        "optional": false
+      },
+      {
+        "item": "hot water (for rehydration)",
+        "optional": false
+      },
+      {
+        "item": "fresh shiitake mushrooms",
+        "optional": false
+      },
+      {
+        "item": "rehydrated shiitake (from Phase 1)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "silken tofu (soft or extra-soft)",
+        "slug": "silken-tofu",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "Pixian doubanjiang",
+        "slug": "doubanjiang",
+        "optional": false
+      },
+      {
+        "item": "Yongchuan douchi",
+        "slug": "douchi",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, finely minced",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "shiitake rehydration liquid (strained through cheesecloth)",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water (for slurry)",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, freshly toasted and ground",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "scallion greens, sliced",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "red-oil-rendering",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "wok"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/techniques/chocolate-butter-emulsion.html",
     "type": "technique",
     "category": "techniques",
@@ -2054,6 +3287,25 @@
     }
   },
   {
+    "path": "pages/techniques/hot-set-tofu.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Hot-set silken tofu (pour-and-set)",
+    "desc": "Whisk glucono delta-lactone (GDL) into warm soy milk at 70 to 90°C / 160 to 195°F, pour directly into the serving bowl, leave undisturbed 15 to 25 minutes. The slow acidulation sets the soy proteins into a custard-soft curd that wobbles in place. The technique behind Chinese douhua, the poured-set mapo tofu variant, and Japanese silken-tofu desserts.",
+    "tags": [
+      "legume",
+      "chinese",
+      "japanese"
+    ],
+    "status": "complete",
+    "_slug": "hot-set-tofu",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/red-oil-rendering.html",
     "type": "technique",
     "category": "techniques",
@@ -2069,7 +3321,7 @@
     "updated": "2026-05-09",
     "added": "2026-05-09",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 6
     }
   },
   {
@@ -2087,6 +3339,24 @@
     "added": "2026-05-09",
     "_card": {
       "usedInCount": 0
+    }
+  },
+  {
+    "path": "pages/techniques/scoring-squid.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Scoring squid (cross-hatch)",
+    "desc": "Cut a shallow cross-hatch grid into the inside of a squid tube before slicing. The cuts increase surface area for char and dredge adhesion, force the tube to curl into pinecone shapes when it hits high heat, and prevent the tough collagen sheets from contracting into rubber strips.",
+    "tags": [
+      "seafood",
+      "fish"
+    ],
+    "status": "complete",
+    "_slug": "scoring-squid",
+    "updated": "2026-05-09",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 3
     }
   },
   {
@@ -3086,7 +4356,7 @@
     "updated": "2026-05-05",
     "added": "2026-05-05",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -3426,7 +4696,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 10,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -3524,7 +4794,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -3601,7 +4871,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 8,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -3639,7 +4909,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -3660,7 +4930,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -3741,7 +5011,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 11,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -3781,7 +5051,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 7,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -3923,7 +5193,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -4698,7 +5968,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 21
+      "usedInCount": 26
     }
   },
   {
@@ -4715,7 +5985,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -5063,7 +6333,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -5197,7 +6467,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -5217,7 +6487,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 16,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -5234,7 +6504,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 10,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -5271,7 +6541,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 18,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -5311,7 +6581,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 7,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -5352,7 +6622,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 10,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -6958,7 +8228,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -7023,7 +8293,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 0
+      "usedInCount": 1
     }
   },
   {
@@ -7090,7 +8360,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 0
+      "usedInCount": 3
     }
   },
   {
@@ -7108,7 +8378,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -7242,6 +8512,63 @@
     }
   },
   {
+    "path": "pages/recipes/fresh-soy-milk.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Fresh soy milk (homemade, from soaked soybeans)",
+    "desc": "Soaked soybeans blended with water, cooked at low simmer, strained through cheesecloth — the foundational base for fresh douhua, hot-set silken tofu, and any application where the soy milk itself is the dominant flavor. Stub.",
+    "tags": [
+      "legume",
+      "pantry",
+      "chinese",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "fresh-soy-milk",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 30,
+      "total_min": 600,
+      "active_min": 45
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dry soybeans (yellow, food-grade)",
+        "optional": false
+      },
+      {
+        "item": "cold water (for blending)",
+        "optional": false
+      },
+      {
+        "item": "pinch of salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 600,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
     "path": "pages/recipes/homemade-doubanjiang.html",
     "type": "recipe",
     "category": "recipes",
@@ -7321,6 +8648,205 @@
       "timeMode": "active",
       "activeMinutes": 180,
       "filterMinutes": 180
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-fish-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Fish sauce (homemade Vietnamese-style)",
+    "desc": "Anchovies layered with sea salt at a 1:3 ratio, sealed in a glass or ceramic vat, and left to ferment in a warm dark place for 12 to 18 months. The endogenous fish enzymes hydrolyze the proteins into the amber liquid that defines Southeast Asian cooking. Stub — a months-long project, not a weekend recipe.",
+    "tags": [
+      "umami",
+      "pantry",
+      "fermentation",
+      "sauce",
+      "weekend-project",
+      "make-ahead"
+    ],
+    "status": "stub",
+    "_slug": "homemade-fish-sauce",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 40,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 525600,
+      "active_min": 60
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "whole fresh anchovies (or other small oily fish — sardines, herring, smelt)",
+        "optional": false
+      },
+      {
+        "item": "unrefined sea salt (no iodine, no anti-caking agents)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 525600,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "+ 365 d rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-gochujang.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Gochujang (homemade Korean fermented chili paste)",
+    "desc": "Glutinous rice cooked into porridge, blended with meju powder, gochugaru, and salt, fermented in earthen jars or sealed containers for 6 months minimum (ideally 1 to 3 years) until the rice starches convert to sugars and the flavor deepens into the signature sweet-spicy-funky-savory paste. Stub — a multi-month commitment.",
+    "tags": [
+      "korean",
+      "fermentation",
+      "sauce",
+      "pantry",
+      "weekend-project",
+      "make-ahead"
+    ],
+    "status": "stub",
+    "_slug": "homemade-gochujang",
+    "cuisine": "Korean",
+    "course": "sauce",
+    "difficulty": "hard",
+    "servings": 32,
+    "time": {
+      "prep_min": 60,
+      "cook_min": 30,
+      "total_min": 262800,
+      "active_min": 90
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "glutinous (sweet) rice flour, fine",
+        "optional": false
+      },
+      {
+        "item": "water (for rice porridge)",
+        "optional": false
+      },
+      {
+        "item": "barley malt powder (yeotgireum garu)",
+        "optional": false
+      },
+      {
+        "item": "meju powder (fermented soybean meal)",
+        "optional": false
+      },
+      {
+        "item": "gochugaru (Korean chili flakes, fine)",
+        "optional": false
+      },
+      {
+        "item": "unrefined sea salt (no iodine)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 262800,
+      "diffLabel": "hard",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "+ 182 d rest",
+      "timeMode": "active",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-oyster-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Oyster sauce (homemade)",
+    "desc": "Fresh oysters simmered with their liquor, soy sauce, sugar, and aromatics, then strained and reduced into a glossy dark sauce. The Cantonese flavor base built from scratch — fresher and significantly more complex than commercial bottles. Stub.",
+    "tags": [
+      "chinese",
+      "umami",
+      "sauce",
+      "pantry",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "homemade-oyster-sauce",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 90,
+      "total_min": 110,
+      "active_min": 30
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh shucked oysters with their liquor",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "rock sugar (or granulated sugar)",
+        "slug": "rock-sugar",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water (for slurry)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 110,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {

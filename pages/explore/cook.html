@@ -79,7 +79,7 @@
     <div class="fam-intro">
       <p class="fam-intro-text">Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.</p>
       <div class="fam-stats" role="navigation" aria-label="Jump to category"><a class="fam-stat" href="#cat-recipes" data-category="recipes">
-        <span class="fam-stat-num">49</span>
+        <span class="fam-stat-num">57</span>
         <span class="fam-stat-label">Recipes</span>
       </a></div>
     </div>
@@ -123,8 +123,16 @@
               <span class="filter-opt-label">Jordanian</span>
             </label>
             <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Korean" data-filter-cuisine="Korean">
+              <span class="filter-opt-label">Korean</span>
+            </label>
+            <label class="filter-opt">
               <input type="radio" name="cuisine" value="Thai" data-filter-cuisine="Thai">
               <span class="filter-opt-label">Thai</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Vietnamese" data-filter-cuisine="Vietnamese">
+              <span class="filter-opt-label">Vietnamese</span>
             </label>
         </div>
       </details>
@@ -342,6 +350,10 @@
               <span class="filter-opt-label">stew</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="stir-fry" data-filter-tag="stir-fry">
+              <span class="filter-opt-label">stir-fry</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="tea" data-filter-tag="tea">
               <span class="filter-opt-label">tea</span>
             </label>
@@ -434,7 +446,7 @@
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">
         <h2 class="fam-cat-title">Recipes</h2>
-        <span class="fam-cat-count">49 entries</span>
+        <span class="fam-cat-count">57 entries</span>
       </div>
       <p class="fam-cat-blurb">Tested dishes — scale, shop, cook.</p>
       <div class="card-grid" data-grid>
@@ -463,6 +475,13 @@
           <span class="ec-cat">recipes</span><span class="ec-title">Cantonese white congee</span><span class="ec-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The rice pretreat</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">breakfast</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>20 min</strong> active</span><span class="ec-time-annot">+ 1 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/cantonese-mapo-pork.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="dinner" data-diet="dairy-free" data-difficulty="easy" data-time="22" data-tags="chinese|spicy|umami|pork|one-pot|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Cantonese-style mapo with pork (gateway mapo)</span><span class="ec-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichuan pepperc</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>27 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
@@ -557,6 +576,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/grilled-squid-nuoc-cham.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Vietnamese" data-course="dinner" data-diet="dairy-free" data-difficulty="easy" data-time="25" data-tags="vietnamese|seafood|fish|spicy|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Grilled whole squid with nuoc cham (mực nướng)</span><span class="ec-desc">Whole cleaned squid (tubes and tentacles intact) marinated briefly in fish sauce, garlic, and lemongrass, gril</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Vietnamese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>28 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/homemade-panko-breadcrumbs.html" data-category="recipes" data-type="recipe" data-card data-cuisine="" data-course="side" data-diet="" data-difficulty="easy" data-time="12" data-tags="bread|pantry|make-ahead|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Homemade panko breadcrumbs</span><span class="ec-desc">Crustless white bread, dried low and slow, then ground coarse. The result is the long, splintery shard of real</span>
         <div class="ec-foot">
@@ -591,6 +617,13 @@
           <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/ojingeo-bokkeum.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Korean" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="25" data-tags="korean|seafood|fish|spicy|stir-fry|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)</span><span class="ec-desc">Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-gochugaru s</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>28 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>3</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/lemony-green-beans-with-garlic-crunch.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="20" data-tags="vegetable|side|holiday|american|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Lemony green beans with garlic crunch</span><span class="ec-desc">Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on to</span>
@@ -669,12 +702,26 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>30</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/mapo-tofu-poured-set.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="chinese|spicy|umami|beef">
+          <span class="ec-cat">recipes</span><span class="ec-title">Poured-set mapo tofu (douhua mapo)</span><span class="ec-desc">Hot soy milk whisked with GDL and poured directly into the serving bowl, allowed to set into a freshly-made si</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>1 h</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/roasted-pear-gorgonzola-tartine.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="lunch" data-diet="vegetarian" data-difficulty="easy" data-time="15" data-tags="comfort|breakfast|no-cook|side">
           <span class="ec-cat">recipes</span><span class="ec-title">Roasted pear and gorgonzola tartine</span><span class="ec-desc">Bosc pear roasted in butter and balsamic until caramelized, smeared over a toasted sourdough slice with gorgon</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Italian</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>27 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>2</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/salt-and-pepper-squid.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="chinese|seafood|fish|spicy|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Salt-and-pepper squid (Cantonese jiao yan you yu, 椒盐鱿鱼)</span><span class="ec-desc">Cross-hatch-scored squid tubes dredged in a cornstarch-and-rice-flour mix, deep-fried 90 seconds at 175°C, tos</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>35 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>3</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/salted-duck-egg-yolks.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="sauce" data-diet="gluten-free" data-difficulty="medium" data-time="45" data-tags="egg|chinese|pantry|umami|fermentation|make-ahead|weekend-project">
           <span class="ec-cat">recipes</span><span class="ec-title">Salted duck egg yolks (home brine cure)</span><span class="ec-desc">Raw duck eggs cured thirty-five days in saturated brine, then steamed and the yolks separated. Dense, fudgy, o</span>
@@ -704,6 +751,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>3</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/sichuan-mapo-tofu.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="25" data-tags="chinese|spicy|umami|beef|one-pot|weeknight">
+          <span class="ec-cat">recipes</span><span class="ec-title">Sichuan mapo tofu (ma po dou fu)</span><span class="ec-desc">The Chen-family Chengdu original: silken tofu cubes blanched and held in a doubanjiang-and-douchi red oil sauc</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>30 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/smashed-cucumber-wood-ear-salad.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="side" data-diet="vegetarian|vegan" data-difficulty="easy" data-time="15" data-tags="salad|vegetable|chinese|no-cook|side">
           <span class="ec-cat">recipes</span><span class="ec-title">Smashed cucumber and wood ear salad</span><span class="ec-desc">Crushed Persian cucumbers and rehydrated wood ear in a Chinkiang vinegar dressing — sharp, snappy, the right c</span>
         <div class="ec-foot">
@@ -724,6 +778,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>15 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/squid-ink-pasta.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="italian|pasta|seafood|fish|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Squid ink pasta with calamari (linguine al nero di seppia)</span><span class="ec-desc">Squid simmered 35 minutes with white wine, San Marzano tomatoes, garlic, and chili flakes until the collagen h</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>1 h 5 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/stuffed-lotus-root-with-pork.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="40" data-tags="pork|chinese|umami|comfort|weekend-project">
           <span class="ec-cat">recipes</span><span class="ec-title">Stuffed lotus root with pork</span><span class="ec-desc">Lotus root rings with seasoned ground pork pressed into the air channels, pan-seared to set, then braised in s</span>
@@ -773,6 +834,13 @@
           <div class="ec-meta"><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>1 h</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/vegetarian-mapo-tofu.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="dinner" data-diet="vegetarian|vegan|dairy-free" data-difficulty="medium" data-time="35" data-tags="chinese|spicy|umami|vegetable|one-pot">
+          <span class="ec-cat">recipes</span><span class="ec-title">Vegetarian mapo tofu (sù má pó dòu fu)</span><span class="ec-desc">Mapo tofu rebuilt around mushroom umami: fresh shiitake browned to mushroom duxelles, dried shiitake stock as </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>45 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/whole-grain-mustard.html" data-category="recipes" data-type="recipe" data-card data-cuisine="French" data-course="sauce" data-diet="vegan|gluten-free" data-difficulty="easy" data-time="20" data-tags="sauce|pantry|make-ahead|french">
           <span class="ec-cat">recipes</span><span class="ec-title">Whole-grain mustard</span><span class="ec-desc">Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing heat in w</span>
