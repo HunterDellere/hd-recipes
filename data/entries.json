@@ -22,6 +22,27 @@
     }
   },
   {
+    "path": "pages/ingredients/apple-cider-vinegar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Apple cider vinegar",
+    "desc": "Acetic-acid solution (5 to 6 percent) produced by acetobacter fermentation of apple cider. The default American baking and pickling acid, with residual apple-fruit notes and a softer profile than wine vinegars.",
+    "tags": [
+      "acid",
+      "american",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "apple-cider-vinegar",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/avocado.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -185,7 +206,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -208,6 +229,28 @@
       "primaryTag": "seafood",
       "usedInCount": 1,
       "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/farro.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Farro",
+    "desc": "Whole-grain wheat (most often Triticum dicoccum, emmer) sold in three pearling grades. Chewy, nutty, with a structural starch that holds shape after long cooking. The default Italian whole grain.",
+    "tags": [
+      "grain",
+      "pantry",
+      "italian",
+      "mediterranean"
+    ],
+    "status": "complete",
+    "_slug": "farro",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   },
   {
@@ -337,6 +380,27 @@
     }
   },
   {
+    "path": "pages/ingredients/hazelnut.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Hazelnut",
+    "desc": "The seed of Corylus avellana (European hazel) and Corylus americana (American). Sweet, structural, with a papery skin that turns bitter and tannic if left on after toasting. The defining nut of Piedmontese and Turkish baking.",
+    "tags": [
+      "nuts",
+      "pantry",
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "hazelnut",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fat",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/honey.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -351,6 +415,27 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/lacinato-kale.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Lacinato kale (Tuscan, dinosaur, cavolo nero)",
+    "desc": "Brassica oleracea var. palmifolia. The dark blue-green Italian kale with long pebbled leaves. Sweeter, less bitter, and structurally more salad-friendly than curly kale.",
+    "tags": [
+      "vegetable",
+      "italian",
+      "mediterranean"
+    ],
+    "status": "complete",
+    "_slug": "lacinato-kale",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
       "usedInCount": 1,
       "hasNutrition": true
     }
@@ -373,7 +458,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -395,6 +480,26 @@
     "_card": {
       "primaryTag": "fruit",
       "usedInCount": 4,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/maple-syrup.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Maple syrup",
+    "desc": "Concentrated sap of Acer saccharum (sugar maple), boiled from a 2 percent sugar solution down to 66 percent. Sucrose-dominant with characteristic Maillard-developed maple aroma. The defining sweetener of northeastern North America.",
+    "tags": [
+      "pantry",
+      "american"
+    ],
+    "status": "complete",
+    "_slug": "maple-syrup",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -518,7 +623,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -763,7 +868,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -1668,6 +1773,88 @@
     }
   },
   {
+    "path": "pages/recipes/maple-cider-vinaigrette.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Maple-cider vinaigrette",
+    "desc": "Apple cider vinegar, dark maple syrup, whole-grain mustard, microplaned shallot, salt, and olive oil whisked into a tight emulsion. The autumn American dressing for grain salads, roasted-vegetable plates, and chicken-and-greens lunches. Doubles or triples cleanly and keeps a week refrigerated.",
+    "tags": [
+      "sauce",
+      "american",
+      "pantry",
+      "make-ahead",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "maple-cider-vinaigrette",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "apple cider vinegar, unfiltered",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "maple syrup, Grade A dark / robust",
+        "slug": "maple-syrup",
+        "optional": false
+      },
+      {
+        "item": "whole-grain mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "shallot, microplaned",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 5,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
     "path": "pages/recipes/nicoise-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -2096,6 +2283,156 @@
     }
   },
   {
+    "path": "pages/recipes/roasted-delicata-and-farro-salad-with-maple-vinaigrette.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Roasted delicata and farro salad with maple vinaigrette",
+    "desc": "Hard-roasted delicata half-moons (skin on) tossed with chewy farro, lacinato kale massaged in lemon-salt, toasted hazelnuts, and a maple-cider vinaigrette built on whole-grain mustard. The autumn North-American grain salad in its proper register: caramelized squash sweetness against bitter brassica, fruity acid carrying the dressing, hazelnut as the structural crunch.",
+    "tags": [
+      "salad",
+      "american",
+      "grain",
+      "roast",
+      "vegetable",
+      "umami",
+      "acid",
+      "nuts"
+    ],
+    "status": "complete",
+    "_slug": "roasted-delicata-and-farro-salad-with-maple-vinaigrette",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 35,
+      "total_min": 55,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "delicata squash",
+        "slug": "delicata-squash",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "semi-pearled farro",
+        "slug": "farro",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "lacinato kale (Tuscan / dinosaur kale)",
+        "slug": "lacinato-kale",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar, unfiltered",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "maple syrup, Grade A dark / robust",
+        "slug": "maple-syrup",
+        "optional": false
+      },
+      {
+        "item": "whole-grain mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "shallot, microplaned",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "hazelnuts, raw, skin-on",
+        "slug": "hazelnut",
+        "optional": false
+      },
+      {
+        "item": "pecorino romano or aged parmigiano",
+        "slug": "pecorino-romano",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, leaves picked",
+        "slug": "parsley",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-dry-roasting",
+      "dry-toasting",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 55,
+      "diffLabel": "easy",
+      "timeLead": "55 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/som-tam-thai-green-papaya-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -2356,7 +2693,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -2393,7 +2730,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -2497,7 +2834,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 5
     }
   },
   {
@@ -2852,7 +3189,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 9,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -10093,7 +10430,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 23,
+      "usedInCount": 25,
       "hasNutrition": true
     }
   },
@@ -10210,7 +10547,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -10348,7 +10685,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -11348,7 +11685,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 5
+      "usedInCount": 7
     }
   },
   {
@@ -11938,7 +12275,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 37,
+      "usedInCount": 39,
       "hasNutrition": true
     }
   },
@@ -13828,6 +14165,68 @@
     "added": "2026-04-26",
     "_card": {
       "usedInCount": 0
+    }
+  },
+  {
+    "path": "pages/recipes/apple-cider-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Apple cider vinegar",
+    "desc": "Apple scraps (cores and peels) plus water plus a little sugar, fermented for 4 to 6 weeks under a cloth, produce a live unpasteurized cider vinegar with complex apple character. Stub.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "apple-cider-vinegar",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
+        "optional": false
+      },
+      {
+        "item": "cane sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "filtered water, room temperature",
+        "optional": false
+      },
+      {
+        "item": "splash of unfiltered apple cider vinegar (optional, as starter)",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
     }
   },
   {

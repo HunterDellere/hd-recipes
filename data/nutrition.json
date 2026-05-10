@@ -1,4 +1,43 @@
 {
+  "pages/recipes/apple-cider-vinegar.html": {
+    "perServing": {
+      "energy_kcal": 12,
+      "protein_g": 0,
+      "fat_g": 0,
+      "saturated_fat_g": 0,
+      "carbs_g": 3.1,
+      "fiber_g": 0,
+      "sugar_g": 3.1,
+      "sodium_mg": 0,
+      "potassium_mg": 0,
+      "calcium_mg": 0,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 194,
+      "protein_g": 0,
+      "fat_g": 0,
+      "saturated_fat_g": 0,
+      "carbs_g": 50,
+      "fiber_g": 0,
+      "sugar_g": 49.9,
+      "sodium_mg": 1,
+      "potassium_mg": 1,
+      "calcium_mg": 1,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "missing": [
+      {
+        "name": "splash of unfiltered apple cider vinegar (optional, as starter)",
+        "slug": "apple-cider-vinegar",
+        "reason": "no-fdc"
+      }
+    ]
+  },
   "pages/recipes/banana-bread.html": {
     "perServing": {
       "energy_kcal": 183,
@@ -2221,6 +2260,60 @@
       }
     ]
   },
+  "pages/recipes/maple-cider-vinaigrette.html": {
+    "perServing": {
+      "energy_kcal": 133,
+      "protein_g": 0,
+      "fat_g": 15,
+      "saturated_fat_g": 2.1,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "sodium_mg": 146,
+      "potassium_mg": 1,
+      "calcium_mg": 1,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 1062,
+      "protein_g": 0.1,
+      "fat_g": 120,
+      "saturated_fat_g": 16.6,
+      "carbs_g": 0.3,
+      "fiber_g": 0.1,
+      "sugar_g": 0,
+      "sodium_mg": 1165,
+      "potassium_mg": 8,
+      "calcium_mg": 4,
+      "iron_mg": 1,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 3
+    },
+    "missing": [
+      {
+        "name": "apple cider vinegar, unfiltered",
+        "slug": "apple-cider-vinegar",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "maple syrup, Grade A dark / robust",
+        "slug": "maple-syrup",
+        "reason": "no-cache"
+      },
+      {
+        "name": "whole-grain mustard",
+        "slug": "dijon-mustard",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "shallot, microplaned",
+        "slug": "shallot",
+        "reason": "no-cache"
+      }
+    ]
+  },
   "pages/recipes/maple-mustard-glazed-turkey-breast.html": {
     "perServing": {
       "energy_kcal": 75,
@@ -3195,6 +3288,85 @@
         "name": "pomegranate molasses",
         "slug": "pomegranate-molasses",
         "reason": "no-fdc"
+      }
+    ]
+  },
+  "pages/recipes/roasted-delicata-and-farro-salad-with-maple-vinaigrette.html": {
+    "perServing": {
+      "energy_kcal": 318,
+      "protein_g": 4.2,
+      "fat_g": 29.7,
+      "saturated_fat_g": 5.2,
+      "carbs_g": 11.8,
+      "fiber_g": 0.9,
+      "sugar_g": 4.9,
+      "sodium_mg": 1660,
+      "potassium_mg": 605,
+      "calcium_mg": 119,
+      "iron_mg": 2,
+      "vitamin_c_mg": 16,
+      "vitamin_a_iu": 14930
+    },
+    "total": {
+      "energy_kcal": 1273,
+      "protein_g": 16.6,
+      "fat_g": 118.8,
+      "saturated_fat_g": 20.7,
+      "carbs_g": 47.2,
+      "fiber_g": 3.8,
+      "sugar_g": 19.5,
+      "sodium_mg": 6641,
+      "potassium_mg": 2421,
+      "calcium_mg": 476,
+      "iron_mg": 7,
+      "vitamin_c_mg": 63,
+      "vitamin_a_iu": 59721
+    },
+    "missing": [
+      {
+        "name": "semi-pearled farro",
+        "slug": "farro",
+        "reason": "no-cache"
+      },
+      {
+        "name": "lacinato kale (Tuscan / dinosaur kale)",
+        "slug": "lacinato-kale",
+        "reason": "no-cache"
+      },
+      {
+        "name": "lemon juice, fresh",
+        "slug": "lemon",
+        "reason": "no-cache"
+      },
+      {
+        "name": "apple cider vinegar, unfiltered",
+        "slug": "apple-cider-vinegar",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "maple syrup, Grade A dark / robust",
+        "slug": "maple-syrup",
+        "reason": "no-cache"
+      },
+      {
+        "name": "whole-grain mustard",
+        "slug": "dijon-mustard",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "shallot, microplaned",
+        "slug": "shallot",
+        "reason": "no-cache"
+      },
+      {
+        "name": "hazelnuts, raw, skin-on",
+        "slug": "hazelnut",
+        "reason": "no-cache"
+      },
+      {
+        "name": "flat-leaf parsley, leaves picked",
+        "slug": "parsley",
+        "reason": "no-cache"
       }
     ]
   },
