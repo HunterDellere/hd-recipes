@@ -283,7 +283,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -386,7 +386,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -406,7 +406,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -448,7 +448,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -595,6 +595,27 @@
     }
   },
   {
+    "path": "pages/ingredients/tahini.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Tahini",
+    "desc": "Hulled raw or lightly toasted sesame seeds, stone-ground to a pale, pourable paste. The structural backbone of Levantine cooking — hummus, tahini sauce, halva, and the dressing for half the salads of the eastern Mediterranean.",
+    "tags": [
+      "umami",
+      "levantine",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "tahini",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/thai-chili.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -673,7 +694,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -1230,6 +1251,128 @@
     }
   },
   {
+    "path": "pages/recipes/roasted-cauliflower-tahini-salad-with-pomegranate.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Roasted cauliflower tahini salad with pomegranate",
+    "desc": "Cauliflower roasted hard at 230 °C until the florets are mahogany on the cut faces, dressed warm with a fluffy lemon-tahini emulsion, and finished with pomegranate seeds, parsley, urfa biber, and toasted pistachio. The Maillard sweetness of the brassica meets the green-bitter sesame of the tahini, with pomegranate acid cutting both.",
+    "tags": [
+      "salad",
+      "levantine",
+      "mediterranean",
+      "vegetable",
+      "roast",
+      "umami",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "roasted-cauliflower-tahini-salad-with-pomegranate",
+    "cuisine": "Levantine",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 35,
+      "total_min": 50,
+      "active_min": 25
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "cauliflower",
+        "slug": "cauliflower",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "tahini, single-origin",
+        "slug": "tahini",
+        "optional": false
+      },
+      {
+        "item": "ice water",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, microplaned",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "pomegranate seeds, fresh",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, leaves and tender stems",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "shelled pistachios, raw",
+        "slug": "pistachio",
+        "optional": false
+      },
+      {
+        "item": "urfa biber",
+        "slug": "urfa-biber",
+        "optional": false
+      },
+      {
+        "item": "pomegranate molasses",
+        "slug": "pomegranate-molasses",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-dry-roasting",
+      "tahini-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/recipes/som-tam-thai-green-papaya-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -1338,6 +1481,23 @@
     }
   },
   {
+    "path": "pages/techniques/high-heat-dry-roasting.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "High-heat dry roasting",
+    "desc": "Roast cut vegetables on a heavy preheated sheet pan at 220 to 245 °C with a thin coat of oil and aggressive surface contact. The high temperature drives Maillard browning and caramelization on the cut surfaces faster than the interior cooks past tender, producing a vegetable that is deeply browned outside, sweet and yielding inside.",
+    "tags": [
+      "roast"
+    ],
+    "status": "complete",
+    "_slug": "high-heat-dry-roasting",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/jammy-egg.html",
     "type": "technique",
     "category": "techniques",
@@ -1400,6 +1560,23 @@
     ],
     "status": "complete",
     "_slug": "salt-roasting",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/tahini-emulsion.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Tahini emulsion",
+    "desc": "Whisk water into raw tahini in stages. The paste seizes (proteins hydrate and gel) before it relaxes (gel network finishes hydrating and traps water uniformly) into a creamy, fluffy, pourable sauce. The seize is not failure; it is the recipe.",
+    "tags": [
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "tahini-emulsion",
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
@@ -1583,7 +1760,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -1667,7 +1844,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -1776,7 +1953,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -9192,7 +9369,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -10788,7 +10965,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -10862,7 +11039,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 35,
+      "usedInCount": 36,
       "hasNutrition": true
     }
   },
@@ -12803,6 +12980,61 @@
       "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-tahini.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade tahini",
+    "desc": "Hulled sesame seeds toasted lightly and ground with neutral oil to a smooth, pourable paste. Fresher and more aromatic than commercial bottles, especially when the available commercial tahini is supermarket house brand. Stub.",
+    "tags": [
+      "weekend-project",
+      "pantry",
+      "levantine",
+      "umami"
+    ],
+    "status": "stub",
+    "_slug": "homemade-tahini",
+    "cuisine": "Levantine",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 25,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan"
+    ],
+    "ingredients": [
+      {
+        "item": "hulled white sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (avocado, refined sunflower, or grapeseed)",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
     }
   },
   {
