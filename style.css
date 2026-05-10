@@ -2958,3 +2958,73 @@ body.cmd-palette-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .recipe-steps .step-item.step-flash { animation: none; }
 }
+
+/* === Item B: hover-card link previews === */
+.hcard {
+  position: absolute;
+  z-index: 8500;
+  width: 320px;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 10px;
+  box-shadow: 0 16px 32px -10px rgba(0,0,0,0.3), 0 4px 12px -4px rgba(0,0,0,0.18);
+  padding: 0.85rem 0.95rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 130ms ease-out, transform 130ms ease-out;
+}
+.hcard.is-open { opacity: 1; transform: translateY(0); }
+
+.hcard-eyebrow {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.35rem;
+}
+.hcard-eyebrow-recipe { color: var(--accent); }
+
+.hcard-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+.hcard-desc {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.hcard-meta {
+  display: flex; flex-wrap: wrap; gap: 0.4rem 0.7rem;
+  margin-top: 0.35rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule-soft, rgba(0,0,0,0.06));
+}
+.hcard-meta-item {
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+}
+.hcard-diff-easy { color: #5a8a3a; }
+.hcard-diff-medium { color: #b88a2a; }
+.hcard-diff-hard { color: var(--accent); }
+[data-theme="dark"] .hcard-diff-easy { color: #8acb6b; }
+[data-theme="dark"] .hcard-diff-medium { color: #e0b455; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hcard { transition: none; }
+}
+@media print {
+  .hcard { display: none !important; }
+}
