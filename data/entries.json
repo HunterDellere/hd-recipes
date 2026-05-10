@@ -17,7 +17,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -164,7 +164,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -352,7 +352,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -639,7 +639,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -661,6 +661,27 @@
       "primaryTag": "aromatic",
       "usedInCount": 2,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/sourdough-bread.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Sourdough bread",
+    "desc": "A naturally-leavened wheat bread risen by a wild-yeast and lactic-acid bacteria culture rather than commercial yeast. Open crumb, chewy crust, characteristic acetic-and-lactic tang.",
+    "tags": [
+      "bread",
+      "pantry",
+      "fermentation"
+    ],
+    "status": "complete",
+    "_slug": "sourdough-bread",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
     }
   },
   {
@@ -810,6 +831,28 @@
     }
   },
   {
+    "path": "pages/ingredients/worcestershire-sauce.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Worcestershire sauce",
+    "desc": "A long-fermented English condiment of malt vinegar, anchovy, tamarind, molasses, garlic, onion, and spices, aged 6 to 18 months. Deep glutamate-and-acid umami; the secret weapon of Caesar dressing, bloody Marys, marinades, and pan sauces.",
+    "tags": [
+      "acid",
+      "umami",
+      "fermentation",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "worcestershire-sauce",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/yardlong-bean.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -827,6 +870,129 @@
       "primaryTag": "legume",
       "usedInCount": 1,
       "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/caesar-salad-with-anchovy-emulsion.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Caesar salad with anchovy emulsion",
+    "desc": "Cold romaine hearts under a coddled-egg-yolk dressing built around dissolved anchovy, garlic, dijon, lemon, worcestershire, and parmigiano. Sourdough croutons fried in garlic oil. The dressing is engineered as a stable yolk emulsion, not a vinaigrette.",
+    "tags": [
+      "salad",
+      "american",
+      "umami",
+      "egg",
+      "fish"
+    ],
+    "status": "complete",
+    "_slug": "caesar-salad-with-anchovy-emulsion",
+    "cuisine": "Italian-American",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 15,
+      "total_min": 30,
+      "active_min": 25
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "day-old country sourdough",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "garlic, smashed but whole",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large eggs, fridge cold",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "oil-cured anchovy fillets",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "worcestershire sauce",
+        "slug": "worcestershire-sauce",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "romaine hearts, cold",
+        "slug": "romaine-lettuce",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano, for finishing",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "egg-yolk-emulsion",
+      "blooming-aromatics",
+      "jammy-egg"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 30,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
     }
   },
   {
@@ -1798,6 +1964,73 @@
     }
   },
   {
+    "path": "pages/recipes/sourdough-croutons.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sourdough croutons",
+    "desc": "Day-old sourdough torn into chunks, tossed in garlic-infused olive oil, oven-toasted to a uniform shatter. The structural crouton of Caesar salad, panzanella, ribollita, and any salad that earns a starch component.",
+    "tags": [
+      "salad",
+      "pantry",
+      "side",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "sourdough-croutons",
+    "cuisine": "",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 14,
+      "total_min": 19,
+      "active_min": 8
+    },
+    "updated": "2026-05-10",
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "garlic, smashed but whole",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "day-old country sourdough",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 19,
+      "diffLabel": "easy",
+      "timeLead": "19 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 8,
+      "filterMinutes": 8
+    }
+  },
+  {
     "path": "pages/recipes/toasted-rice-powder.html",
     "type": "recipe",
     "category": "recipes",
@@ -1868,6 +2101,26 @@
     }
   },
   {
+    "path": "pages/techniques/egg-yolk-emulsion.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Egg-yolk emulsion",
+    "desc": "Build a stable oil-in-water emulsion using egg yolk lecithin as the primary surfactant. Underlies mayonnaise, aioli, hollandaise, and Caesar dressing: the same molecular mechanism scaled to different acid, fat, and heat regimes.",
+    "tags": [
+      "egg",
+      "fat",
+      "acid",
+      "sauce"
+    ],
+    "status": "complete",
+    "_slug": "egg-yolk-emulsion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/high-heat-dry-roasting.html",
     "type": "technique",
     "category": "techniques",
@@ -1898,7 +2151,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -2340,7 +2593,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 6,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -2768,7 +3021,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -9581,7 +9834,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 21,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -9718,7 +9971,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 18,
+      "usedInCount": 19,
       "hasNutrition": true
     }
   },
@@ -9756,7 +10009,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 26,
+      "usedInCount": 28,
       "hasNutrition": true
     }
   },
@@ -11352,7 +11605,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 18,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -13113,7 +13366,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 17
+      "usedInCount": 19
     }
   },
   {
@@ -13914,6 +14167,115 @@
       "timeMode": "active",
       "activeMinutes": 10,
       "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/worcestershire-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Worcestershire sauce",
+    "desc": "A long-fermented English condiment of malt vinegar, anchovy, tamarind, molasses, garlic, onion, and warm spices, aged 6 to 18 months in the bottle. Stub.",
+    "tags": [
+      "fermentation",
+      "umami",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "stub",
+    "_slug": "worcestershire-sauce",
+    "cuisine": "English",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 45,
+      "total_min": 75,
+      "active_min": 60
+    },
+    "updated": "2026-05-10",
+    "ingredients": [
+      {
+        "item": "malt vinegar",
+        "optional": false
+      },
+      {
+        "item": "spirit (white) vinegar",
+        "optional": false
+      },
+      {
+        "item": "molasses (unsulphured)",
+        "optional": false
+      },
+      {
+        "item": "tamarind paste (no seeds)",
+        "optional": false
+      },
+      {
+        "item": "oil-cured anchovy fillets",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "soy sauce",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, minced fine",
+        "optional": false
+      },
+      {
+        "item": "garlic, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, grated",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "whole cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns, cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "cardamom pods, cracked",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 75,
+      "diffLabel": "medium",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {
