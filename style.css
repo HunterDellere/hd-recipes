@@ -3124,3 +3124,37 @@ body.cmd-palette-open { overflow: hidden; }
   /* Strip page background */
   @page { margin: 1.4cm; }
 }
+
+/* === Item F: related-recipes — mobile horizontal carousel for the recipes group === */
+/* The full Related block (rl-groups) is already shipped — recipes/ingredients/
+   techniques rendered as 3 grouped grids with reason text. On narrow viewports
+   the recipes group reads better as a snap-scroll carousel: each card is a
+   discrete "next move" the cook glances at, not a list to read. */
+@media (max-width: 720px) {
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0.6rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Bleed past the page padding so cards reach the screen edge,
+       which signals "scroll horizontally" without a scrollbar. */
+    margin: 0 -1rem;
+    padding: 0.2rem 1rem 0.6rem;
+    scrollbar-width: thin;
+  }
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes .rl-card {
+    flex: 0 0 78%;
+    max-width: 280px;
+    scroll-snap-align: start;
+  }
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes::-webkit-scrollbar {
+    height: 4px;
+  }
+  .rl-group[data-related-group="recipes"] .rl-cards--recipes::-webkit-scrollbar-thumb {
+    background: var(--rule);
+    border-radius: 2px;
+  }
+}
