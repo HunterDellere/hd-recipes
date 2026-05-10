@@ -2809,3 +2809,152 @@ body.lb-locked { overflow: hidden; }
 /* Match the topic-hero eyebrow color and link decoration on safety pages. */
 .topic-hero-eyebrow[data-cat="safety"] { color: var(--cat-safety); }
 a[href*="/pages/safety/"] { color: var(--cat-safety); border-bottom: 1px dotted var(--cat-safety); }
+
+/* === Item A: Cmd+K command palette === */
+.cmd-palette-overlay {
+  position: fixed; inset: 0; z-index: 9000;
+  background: rgba(20, 14, 6, 0.42);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: grid; place-items: start center;
+  padding-top: clamp(4rem, 12vh, 9rem);
+  opacity: 0; transition: opacity 140ms ease-out;
+}
+.cmd-palette-overlay.is-open { opacity: 1; }
+[data-theme="dark"] .cmd-palette-overlay { background: rgba(0, 0, 0, 0.55); }
+body.cmd-palette-open { overflow: hidden; }
+
+.cmd-palette {
+  width: min(620px, calc(100vw - 2rem));
+  background: var(--bg-elev);
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 14px;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.35), 0 6px 20px -6px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: transform 140ms ease-out;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.cmd-palette-overlay.is-open .cmd-palette { transform: translateY(0); }
+
+.cmd-palette-input-wrap {
+  display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.95rem 1.05rem;
+  border-bottom: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+}
+.cmd-palette-icon { color: var(--ink-faint); display: inline-flex; }
+.cmd-palette-input {
+  flex: 1; min-width: 0;
+  border: 0; outline: 0; background: transparent;
+  color: var(--ink);
+  font-size: 1rem;
+  font-family: inherit;
+}
+.cmd-palette-input::placeholder { color: var(--ink-faint); }
+.cmd-palette-esc {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 4px;
+  color: var(--ink-faint);
+  background: var(--bg);
+}
+
+.cmd-palette-results {
+  list-style: none; margin: 0; padding: 0.4rem 0;
+  max-height: min(50vh, 420px);
+  overflow-y: auto;
+}
+.cmd-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.55rem 1.05rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--ink);
+  border-left: 2px solid transparent;
+}
+.cmd-item.is-active {
+  background: var(--bg-soft);
+  border-left-color: var(--accent);
+}
+.cmd-item:hover:not(.is-active) { background: color-mix(in srgb, var(--bg-soft) 55%, transparent); }
+
+.cmd-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.42rem;
+  border-radius: 3px;
+  background: var(--bg);
+  color: var(--ink-faint);
+  flex-shrink: 0;
+  min-width: 5.5rem;
+  text-align: center;
+}
+.cmd-tag-action { color: var(--accent); }
+
+.cmd-label {
+  flex: 1; min-width: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cmd-sub {
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  flex-shrink: 1; max-width: 40%;
+}
+
+.cmd-empty {
+  padding: 1.2rem 1.05rem;
+  color: var(--ink-faint);
+  font-style: italic;
+  text-align: center;
+  list-style: none;
+}
+
+.cmd-palette-hint {
+  display: flex; gap: 1rem;
+  padding: 0.55rem 1.05rem;
+  border-top: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  background: var(--bg);
+}
+.cmd-palette-hint kbd {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  padding: 0.08rem 0.32rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 3px;
+  background: var(--bg-elev);
+  color: var(--ink-soft);
+}
+
+@media (max-width: 480px) {
+  .cmd-palette-overlay { padding-top: 4rem; }
+  .cmd-tag { min-width: 4.2rem; font-size: 0.58rem; }
+  .cmd-sub { display: none; }
+  .cmd-palette-hint { gap: 0.6rem; font-size: 0.7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cmd-palette-overlay, .cmd-palette { transition: none; }
+}
+
+@media print {
+  .cmd-palette-overlay { display: none !important; }
+}
+
+/* "Jump to step N" flash highlight */
+.recipe-steps .step-item.step-flash {
+  animation: stepFlash 1.2s ease-out;
+}
+@keyframes stepFlash {
+  0%, 100% { background: transparent; }
+  20%, 60% { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recipe-steps .step-item.step-flash { animation: none; }
+}
