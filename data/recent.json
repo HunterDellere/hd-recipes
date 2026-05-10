@@ -1,507 +1,346 @@
 [
   {
-    "path": "pages/recipes/chicken-nihari.html",
+    "path": "pages/recipes/furikake.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Chicken nihari (Pakistani slow-braised stew)",
-    "desc": "Bone-in chicken slow-braised in a deeply spiced ghee-and-onion base for 90 minutes, the gravy thickened with toasted atta flour and finished with a julienned-ginger and crisped-onion garnish, fresh lemon. The chicken adaptation of the canonical Mughlai-Pakistani beef nihari that traditionally simmered overnight; the chicken version delivers the same flavor architecture in a Sunday afternoon.",
+    "title": "Furikake (homemade rice seasoning)",
+    "desc": "Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice-grain-sized seasoning, then mixed with toasted sesame, shredded nori, and salt. The end-of-the-batch move that turns dashi byproducts into a pantry staple.",
     "tags": [
-      "pakistani",
-      "indian",
-      "chicken",
-      "spicy",
+      "japanese",
       "umami",
-      "comfort"
+      "pantry",
+      "rice",
+      "make-ahead"
     ],
     "status": "complete",
-    "_slug": "chicken-nihari",
-    "cuisine": "Pakistani",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 6,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 105,
-      "total_min": 130,
-      "active_min": 50
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh ginger, peeled and rough-chopped",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "water (for blending)",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods, cracked",
-        "slug": "green-cardamom",
-        "optional": false
-      },
-      {
-        "item": "cloves",
-        "slug": "cloves",
-        "optional": false
-      },
-      {
-        "item": "Indian bay leaves (tej patta) or 1 small piece cinnamon",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns, cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "ghee",
-        "slug": "ghee",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, finely sliced",
-        "optional": false
-      },
-      {
-        "item": "bone-in skinless chicken thighs and drumsticks",
-        "optional": false
-      },
-      {
-        "item": "ground coriander",
-        "slug": "ground-coriander",
-        "optional": false
-      },
-      {
-        "item": "Kashmiri chili powder",
-        "slug": "kashmiri-chili-powder",
-        "optional": false
-      },
-      {
-        "item": "cayenne pepper (or hotter Indian chili powder)",
-        "optional": false
-      },
-      {
-        "item": "turmeric",
-        "slug": "turmeric",
-        "optional": false
-      },
-      {
-        "item": "fennel seeds, ground",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "water (or chicken stock for richer gravy)",
-        "optional": false
-      },
-      {
-        "item": "atta flour (whole wheat chapati flour)",
-        "slug": "atta-flour",
-        "optional": false
-      },
-      {
-        "item": "cold water (for slurry)",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, julienned into matchsticks",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "fried onions (birista), store-bought or homemade",
-        "optional": false
-      },
-      {
-        "item": "fresh cilantro leaves, chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "green chilies (Thai bird or jalapeño), thinly sliced",
-        "optional": false
-      },
-      {
-        "item": "lemon wedges",
-        "optional": false
-      },
-      {
-        "item": "garam masala",
-        "slug": "garam-masala",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "blooming-aromatics",
-      "maillard-sear",
-      "red-oil-rendering"
-    ],
-    "equipment": [
-      "heavy Dutch oven or wide pot with lid",
-      "small skillet for toasting atta"
-    ],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 130,
-      "diffLabel": "medium",
-      "timeLead": "2 h 10 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 50,
-      "filterMinutes": 50
-    }
-  },
-  {
-    "path": "pages/recipes/chicken-patties.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chicken patties (Pakistani puff-pastry hand pies)",
-    "desc": "Spiced chicken keema (ground chicken cooked with onion, ginger-garlic, garam masala) folded into store-bought puff pastry, sealed, egg-washed, and baked until shatteringly crisp. The Karachi bakery-stall standard, the structural item at every Pakistani tea-and-snack gathering. Two filling traditions cover most of the spectrum: keema (dry) and creamy (with bechamel).",
-    "tags": [
-      "pakistani",
-      "indian",
-      "chicken",
-      "snack",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "chicken-patties",
-    "cuisine": "Pakistani",
-    "course": "snack",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 35,
-      "total_min": 65,
-      "active_min": 50
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "ground chicken (thigh meat preferred, dark meat is more flavorful and forgiving)",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, very finely chopped",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger-garlic paste",
-        "optional": false
-      },
-      {
-        "item": "green chilies (Thai bird or jalapeño), finely minced",
-        "optional": false
-      },
-      {
-        "item": "tomato, finely chopped or grated",
-        "optional": false
-      },
-      {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "ground coriander",
-        "slug": "ground-coriander",
-        "optional": false
-      },
-      {
-        "item": "Kashmiri chili powder",
-        "slug": "kashmiri-chili-powder",
-        "optional": false
-      },
-      {
-        "item": "turmeric",
-        "slug": "turmeric",
-        "optional": false
-      },
-      {
-        "item": "garam masala",
-        "slug": "garam-masala",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "fresh-ground black pepper",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh cilantro leaves, finely chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "optional": false
-      },
-      {
-        "item": "puff pastry, frozen, all-butter (Pepperidge Farm, Dufour, or store brand)",
-        "optional": false
-      },
-      {
-        "item": "large egg (for egg wash)",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "sesame seeds (for finishing topping, optional but traditional)",
-        "optional": false
-      },
-      {
-        "item": "nigella seeds (kalonji, optional)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "red-oil-rendering"
-    ],
-    "equipment": [
-      "wide skillet",
-      "rolling pin",
-      "parchment-lined baking sheet",
-      "pastry brush"
-    ],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 65,
-      "diffLabel": "medium",
-      "timeLead": "1 h 5 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 50,
-      "filterMinutes": 50
-    }
-  },
-  {
-    "path": "pages/recipes/kheer.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Rice kheer (chawal ki kheer)",
-    "desc": "Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and saffron, finished with chopped pistachios and almonds. The structural North Indian milk-rice pudding, eaten warm or cold, served at every festival and Sunday meal. Reduction is the technique; patience is the only difficulty.",
-    "tags": [
-      "indian",
-      "dessert",
-      "rice"
-    ],
-    "status": "complete",
-    "_slug": "kheer",
-    "cuisine": "Indian",
-    "course": "dessert",
+    "_slug": "furikake",
+    "cuisine": "Japanese",
+    "course": "side",
     "difficulty": "easy",
-    "servings": 6,
+    "servings": 12,
     "time": {
       "prep_min": 10,
-      "cook_min": 70,
-      "total_min": 80,
-      "active_min": 70
+      "cook_min": 35,
+      "total_min": 45,
+      "active_min": 15
     },
     "updated": "2026-05-09",
     "diet": [
-      "vegetarian"
+      "dairy-free",
+      "pescatarian"
     ],
     "ingredients": [
       {
-        "item": "whole milk (HTST-pasteurized, not ultra-pasteurized)",
-        "slug": "whole-milk",
+        "item": "spent kombu (from a fresh batch of dashi)",
+        "slug": "kombu",
         "optional": false
       },
       {
-        "item": "basmati rice",
-        "slug": "basmati-rice",
+        "item": "spent katsuobushi (from a fresh batch of dashi)",
+        "slug": "katsuobushi",
         "optional": false
       },
       {
-        "item": "granulated sugar (or jaggery for traditional sweetness)",
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "mirin (hon-mirin)",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
         "slug": "granulated-sugar",
         "optional": false
       },
       {
-        "item": "green cardamom pods",
-        "slug": "green-cardamom",
+        "item": "sake",
+        "slug": "sake",
         "optional": false
       },
       {
-        "item": "saffron threads",
-        "slug": "saffron",
+        "item": "toasted white sesame seeds",
         "optional": false
       },
       {
-        "item": "rosewater (optional, traditional in some households)",
+        "item": "nori sheet",
+        "slug": "nori",
         "optional": false
       },
       {
-        "item": "unsalted pistachios, slivered",
-        "optional": false
-      },
-      {
-        "item": "unsalted almonds, slivered or sliced",
-        "optional": false
-      },
-      {
-        "item": "cashews, chopped (optional)",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
         "optional": false
       }
     ],
     "techniques": [
-      "blooming-aromatics"
+      "dashi"
     ],
-    "equipment": [
-      "heavy 4-quart pot or Dutch oven",
-      "silicone spatula or wooden spoon"
-    ],
+    "equipment": [],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 80,
+      "totalMinutes": 45,
       "diffLabel": "easy",
-      "timeLead": "1 h 20 min",
+      "timeLead": "45 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 70,
-      "filterMinutes": 70
+      "activeMinutes": 15,
+      "filterMinutes": 15
     }
   },
   {
-    "path": "pages/recipes/pav-bhaji.html",
+    "path": "pages/recipes/miso-soup.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Pav bhaji (Mumbai street vegetable mash)",
-    "desc": "Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghee-and-onion masala built on pav bhaji masala (a specific commercial blend) and Kashmiri chili. Served with butter-toasted soft pav rolls, raw onion, lemon, and a generous pat of butter melting on top. The defining Mumbai street food.",
+    "title": "Miso soup (miso-shiru)",
+    "desc": "Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat through a small sieve to break up clumps, finished with rehydrated wakame, cubed silken tofu, and sliced scallion. The miso enters at the end and never sees a boil ,  that single rule separates good miso soup from flat miso soup.",
     "tags": [
-      "indian",
-      "vegetable",
-      "comfort"
+      "japanese",
+      "soup",
+      "umami",
+      "weeknight"
     ],
     "status": "complete",
-    "_slug": "pav-bhaji",
-    "cuisine": "Indian",
-    "course": "dinner",
+    "_slug": "miso-soup",
+    "cuisine": "Japanese",
+    "course": "side",
     "difficulty": "easy",
-    "servings": 6,
+    "servings": 4,
     "time": {
-      "prep_min": 25,
-      "cook_min": 35,
-      "total_min": 60,
-      "active_min": 45
+      "prep_min": 5,
+      "cook_min": 12,
+      "total_min": 17,
+      "active_min": 12
     },
     "updated": "2026-05-09",
     "diet": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian",
+      "dairy-free"
     ],
     "ingredients": [
       {
-        "item": "russet or yukon gold potatoes, peeled and chunked",
+        "item": "kombu-katsuobushi dashi (niban or ichiban)",
         "optional": false
       },
       {
-        "item": "cauliflower, cut into florets",
-        "slug": "cauliflower",
+        "item": "silken tofu",
+        "slug": "silken-tofu",
         "optional": false
       },
       {
-        "item": "frozen green peas",
+        "item": "dried wakame",
+        "slug": "wakame",
         "optional": false
       },
       {
-        "item": "water (for boiling)",
+        "item": "awase miso (or 50/50 mix white and red)",
+        "slug": "white-miso",
         "optional": false
       },
       {
-        "item": "kosher salt (for boiling water)",
-        "slug": "kosher-salt",
+        "item": "scallion, thinly sliced",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dashi"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 17,
+      "diffLabel": "easy",
+      "timeLead": "17 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/onigiri.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Onigiri (rice triangles)",
+    "desc": "Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-salt hands, optionally filled with a savory center, and wrapped in a sheet of toasted nori at the moment of eating. Portable, room-temperature, and the canonical Japanese hand-food.",
+    "tags": [
+      "japanese",
+      "rice",
+      "snack",
+      "make-ahead",
+      "breakfast"
+    ],
+    "status": "complete",
+    "_slug": "onigiri",
+    "cuisine": "Japanese",
+    "course": "lunch",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 30,
+      "total_min": 50,
+      "active_min": 25
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "Japanese short-grain rice (uruchimai)",
+        "slug": "japanese-short-grain-rice",
         "optional": false
       },
       {
-        "item": "butter (unsalted, the Mumbai signature)",
-        "slug": "butter",
+        "item": "water (for cooking)",
         "optional": false
       },
       {
-        "item": "neutral oil (for higher smoke point)",
+        "item": "cold water (tezu)",
         "optional": false
       },
       {
-        "item": "red onion, finely chopped",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
         "optional": false
       },
       {
-        "item": "green bell pepper (capsicum), finely chopped",
-        "slug": "bell-pepper",
+        "item": "umeboshi (pickled plum), pitted",
+        "optional": true
+      },
+      {
+        "item": "salted salmon, broiled and flaked",
+        "optional": true
+      },
+      {
+        "item": "okaka (soy-and-sesame bonito flakes)",
+        "optional": true
+      },
+      {
+        "item": "tuna mayo (canned tuna, drained, mixed with Kewpie)",
+        "optional": true
+      },
+      {
+        "item": "toasted nori sheets (yaki-nori)",
+        "slug": "nori",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/yaki-udon.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Yaki udon (stir-fried udon noodles)",
+    "desc": "Thick, chewy udon noodles stir-fried over high heat with sliced pork belly, cabbage, carrot, scallion, and a soy-mirin-oyster-sauce glaze that reduces and clings to the noodles. The Kitakyushu-origin lighter, soy-based cousin to yakisoba ,  faster, deeper, and the canonical Japanese weeknight noodle stir-fry.",
+    "tags": [
+      "japanese",
+      "noodles",
+      "stir-fry",
+      "weeknight",
+      "pork",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "yaki-udon",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 10,
+      "total_min": 25,
+      "active_min": 22
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
         "optional": false
       },
       {
-        "item": "fresh ginger-garlic paste",
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
         "optional": false
       },
       {
-        "item": "green chilies (Thai bird or jalapeño), finely minced",
+        "item": "mirin (hon-mirin)",
+        "slug": "mirin",
         "optional": false
       },
       {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
+        "item": "sake",
+        "slug": "sake",
         "optional": false
       },
       {
-        "item": "pav bhaji masala (commercial blend, MDH or Everest)",
+        "item": "oyster sauce",
         "optional": false
       },
       {
-        "item": "Kashmiri chili powder (for color)",
-        "slug": "kashmiri-chili-powder",
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
         "optional": false
       },
       {
-        "item": "turmeric",
-        "slug": "turmeric",
+        "item": "dashi or water",
         "optional": false
       },
       {
-        "item": "tomatoes, finely chopped or grated",
+        "item": "pork belly, sliced 3 mm thick across the grain",
         "optional": false
       },
       {
-        "item": "tomato paste (concentrated, for color and depth)",
+        "item": "green cabbage, cut into 4 cm squares",
+        "optional": false
+      },
+      {
+        "item": "carrot, julienned",
+        "optional": false
+      },
+      {
+        "item": "shimeji or shiitake mushrooms, separated/sliced",
+        "optional": false
+      },
+      {
+        "item": "scallions, cut into 4 cm batons",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "frozen udon noodles (or vacuum-pack fresh)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for the wok)",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
         "optional": false
       },
       {
@@ -510,60 +349,30 @@
         "optional": false
       },
       {
-        "item": "water",
-        "optional": false
+        "item": "shichimi tōgarashi",
+        "optional": true
       },
       {
-        "item": "fresh lemon juice (or amchur powder)",
-        "optional": false
-      },
-      {
-        "item": "fresh cilantro leaves, chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "butter (additional, for finishing each portion)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "pav rolls (soft Mumbai-style buns) or brioche dinner rolls",
-        "optional": false
-      },
-      {
-        "item": "butter (for toasting the pav)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "red onion, finely diced (for the side)",
-        "optional": false
-      },
-      {
-        "item": "lemon wedges",
-        "optional": false
+        "item": "katsuobushi (bonito flakes) for garnish",
+        "slug": "katsuobushi",
+        "optional": true
       }
     ],
     "techniques": [
-      "blooming-aromatics",
-      "red-oil-rendering"
+      "maillard-sear"
     ],
     "equipment": [
-      "wide heavy pan or wok",
-      "4-quart pot",
-      "potato masher",
-      "wide skillet or griddle for pav"
+      "wok"
     ],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 60,
-      "diffLabel": "easy",
-      "timeLead": "1 h",
+      "totalMinutes": 25,
+      "diffLabel": "medium",
+      "timeLead": "25 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 45,
-      "filterMinutes": 45
+      "activeMinutes": 22,
+      "filterMinutes": 22
     }
   },
   {
@@ -821,115 +630,30 @@
     }
   },
   {
-    "path": "pages/recipes/chicken-stock.html",
+    "path": "pages/recipes/chicken-nihari.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Chicken stock",
-    "desc": "Cold-water start with chicken bones, slow-skim, no-boil 4-hour simmer with mirepoix and bay. Clear, deeply gelatinous, neutral enough to use across French sauce work, Italian risotti, Chinese soups, and Mexican caldos.",
+    "title": "Chicken nihari (Pakistani slow-braised stew)",
+    "desc": "Bone-in chicken slow-braised in a deeply spiced ghee-and-onion base for 90 minutes, the gravy thickened with toasted atta flour and finished with a julienned-ginger and crisped-onion garnish, fresh lemon. The chicken adaptation of the canonical Mughlai-Pakistani beef nihari that traditionally simmered overnight; the chicken version delivers the same flavor architecture in a Sunday afternoon.",
     "tags": [
+      "pakistani",
+      "indian",
       "chicken",
-      "pantry",
-      "sauce",
-      "umami",
-      "make-ahead",
-      "weekend-project",
-      "freezer-friendly"
-    ],
-    "status": "complete",
-    "_slug": "chicken-stock",
-    "cuisine": "",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 8,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 240,
-      "total_min": 270,
-      "active_min": 25
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "raw chicken bones (carcasses, backs, wings, necks)",
-        "optional": false
-      },
-      {
-        "item": "cold water",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, halved (skin on)",
-        "optional": false
-      },
-      {
-        "item": "carrots, rough chunks",
-        "optional": false
-      },
-      {
-        "item": "celery, rough chunks",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fresh parsley stems (no leaves)",
-        "optional": true
-      },
-      {
-        "item": "fresh thyme",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "dutch-oven"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "totalMinutes": 270,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "+ 4 h rest",
-      "timeMode": "active",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/grilled-squid-nuoc-cham.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Grilled whole squid with nuoc cham (mực nướng)",
-    "desc": "Whole cleaned squid (tubes and tentacles intact) marinated briefly in fish sauce, garlic, and lemongrass, grilled over high heat for 90 seconds per side until charred at the edges and just opaque through, served with classic Vietnamese nuoc cham — lime, fish sauce, sugar, garlic, chili. The 90-second high-heat window over fire instead of oil.",
-    "tags": [
-      "vietnamese",
-      "seafood",
-      "fish",
       "spicy",
-      "weeknight"
+      "umami",
+      "comfort"
     ],
     "status": "complete",
-    "_slug": "grilled-squid-nuoc-cham",
-    "cuisine": "Vietnamese",
+    "_slug": "chicken-nihari",
+    "cuisine": "Pakistani",
     "course": "dinner",
-    "difficulty": "easy",
-    "servings": 4,
+    "difficulty": "medium",
+    "servings": 6,
     "time": {
-      "prep_min": 20,
-      "cook_min": 8,
-      "total_min": 28,
-      "active_min": 25
+      "prep_min": 25,
+      "cook_min": 105,
+      "total_min": 130,
+      "active_min": 50
     },
     "updated": "2026-05-09",
     "diet": [
@@ -937,30 +661,183 @@
     ],
     "ingredients": [
       {
-        "item": "whole cleaned squid (small to medium, 8 to 12 cm tubes, with tentacles)",
-        "slug": "squid",
+        "item": "fresh ginger, peeled and rough-chopped",
+        "slug": "ginger",
         "optional": false
       },
       {
-        "item": "fish sauce (premium, 30 to 40°N nitrogen)",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "lemongrass, finely minced (white tender part only)",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely minced",
+        "item": "garlic cloves, peeled",
         "slug": "garlic",
         "optional": false
       },
       {
-        "item": "shallot, finely minced",
+        "item": "water (for blending)",
         "optional": false
       },
       {
-        "item": "palm sugar (or light brown sugar)",
+        "item": "green cardamom pods, cracked",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "Indian bay leaves (tej patta) or 1 small piece cinnamon",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns, cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "ghee",
+        "slug": "ghee",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, finely sliced",
+        "optional": false
+      },
+      {
+        "item": "bone-in skinless chicken thighs and drumsticks",
+        "optional": false
+      },
+      {
+        "item": "ground coriander",
+        "slug": "ground-coriander",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "cayenne pepper (or hotter Indian chili powder)",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "fennel seeds, ground",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water (or chicken stock for richer gravy)",
+        "optional": false
+      },
+      {
+        "item": "atta flour (whole wheat chapati flour)",
+        "slug": "atta-flour",
+        "optional": false
+      },
+      {
+        "item": "cold water (for slurry)",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, julienned into matchsticks",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "fried onions (birista), store-bought or homemade",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro leaves, chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), thinly sliced",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "optional": false
+      },
+      {
+        "item": "garam masala",
+        "slug": "garam-masala",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "maillard-sear",
+      "red-oil-rendering"
+    ],
+    "equipment": [
+      "heavy Dutch oven or wide pot with lid",
+      "small skillet for toasting atta"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "totalMinutes": 130,
+      "diffLabel": "medium",
+      "timeLead": "2 h 10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/recipes/chicken-patties.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chicken patties (Pakistani puff-pastry hand pies)",
+    "desc": "Spiced chicken keema (ground chicken cooked with onion, ginger-garlic, garam masala) folded into store-bought puff pastry, sealed, egg-washed, and baked until shatteringly crisp. The Karachi bakery-stall standard, the structural item at every Pakistani tea-and-snack gathering. Two filling traditions cover most of the spectrum: keema (dry) and creamy (with bechamel).",
+    "tags": [
+      "pakistani",
+      "indian",
+      "chicken",
+      "snack",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chicken-patties",
+    "cuisine": "Pakistani",
+    "course": "snack",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 35,
+      "total_min": 65,
+      "active_min": 50
+    },
+    "updated": "2026-05-09",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "ground chicken (thigh meat preferred, dark meat is more flavorful and forgiving)",
         "optional": false
       },
       {
@@ -968,66 +845,102 @@
         "optional": false
       },
       {
-        "item": "fresh ground black pepper",
+        "item": "yellow onion, very finely chopped",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger-garlic paste",
+        "optional": false
+      },
+      {
+        "item": "green chilies (Thai bird or jalapeño), finely minced",
+        "optional": false
+      },
+      {
+        "item": "tomato, finely chopped or grated",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "ground coriander",
+        "slug": "ground-coriander",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri chili powder",
+        "slug": "kashmiri-chili-powder",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "garam masala",
+        "slug": "garam-masala",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
         "slug": "black-pepper",
         "optional": false
       },
       {
-        "item": "fish sauce (premium)",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "fresh lime juice",
-        "optional": false
-      },
-      {
-        "item": "palm sugar (or granulated sugar)",
-        "optional": false
-      },
-      {
-        "item": "warm water",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely minced",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh red chili (Thai bird), finely minced",
-        "optional": false
-      },
-      {
-        "item": "cilantro leaves, picked",
+        "item": "fresh cilantro leaves, finely chopped",
         "slug": "cilantro",
         "optional": false
       },
       {
-        "item": "fresh mint leaves",
+        "item": "fresh lemon juice",
         "optional": false
       },
       {
-        "item": "lime wedges",
+        "item": "puff pastry, frozen, all-butter (Pepperidge Farm, Dufour, or store brand)",
+        "optional": false
+      },
+      {
+        "item": "large egg (for egg wash)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "sesame seeds (for finishing topping, optional but traditional)",
+        "optional": false
+      },
+      {
+        "item": "nigella seeds (kalonji, optional)",
         "optional": false
       }
     ],
     "techniques": [
-      "scoring-squid"
+      "maillard-sear",
+      "red-oil-rendering"
     ],
     "equipment": [
-      "charcoal grill (preferred), gas grill, or grill pan",
-      "tongs"
+      "wide skillet",
+      "rolling pin",
+      "parchment-lined baking sheet",
+      "pastry brush"
     ],
     "added": "2026-05-09",
     "_card": {
-      "totalMinutes": 28,
-      "diffLabel": "easy",
-      "timeLead": "28 min",
+      "totalMinutes": 65,
+      "diffLabel": "medium",
+      "timeLead": "1 h 5 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
+      "activeMinutes": 50,
+      "filterMinutes": 50
     }
   },
   {
