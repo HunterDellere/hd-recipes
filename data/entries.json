@@ -1,5 +1,478 @@
 [
   {
+    "path": "pages/ingredients/anchovy-fillets.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Anchovy fillets",
+    "desc": "Salt-cured Engraulis encrasicolus fillets in olive oil. The Mediterranean kitchen's primary glutamate-and-IMP umami source, used as background savory builder rather than fish flavor.",
+    "tags": [
+      "fish",
+      "mediterranean",
+      "umami",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "anchovy-fillets",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fish",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/basil.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Basil",
+    "desc": "Ocimum basilicum. The defining summer herb of Mediterranean and Southeast Asian cuisines. Volatile-oil-rich (linalool, eugenol, methyl chavicol), heat-fragile, oxidation-prone, a finishing herb in nearly every application.",
+    "tags": [
+      "herb",
+      "mediterranean",
+      "thai"
+    ],
+    "status": "complete",
+    "_slug": "basil",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/capers.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Capers",
+    "desc": "Unopened flower buds of Capparis spinosa, salt-packed or brined. The Mediterranean kitchen's primary mustard-pungent finishing pickle, dense in glucosinolates that release on chewing.",
+    "tags": [
+      "mediterranean",
+      "pickle",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "capers",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/dijon-mustard.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dijon mustard",
+    "desc": "Smooth pale-yellow mustard from Dijon, France: brown mustard seeds (Brassica juncea) ground in verjuice or white wine. Pungent, mucilaginous, the canonical French emulsifier-and-acid in vinaigrettes.",
+    "tags": [
+      "acid",
+      "french",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "dijon-mustard",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/haricots-verts.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Haricots verts",
+    "desc": "Phaseolus vulgaris bred for slim pods, picked young at 3-4 mm cross-section. Thinner walls, faster cook, more sugar than commodity green beans.",
+    "tags": [
+      "vegetable",
+      "french"
+    ],
+    "status": "complete",
+    "_slug": "haricots-verts",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/lemon.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Lemon",
+    "desc": "Citrus limon. The kitchen's primary bright finishing acid (5 to 6 percent citric acid in the juice) and aromatic carrier (limonene-rich oil in the zest).",
+    "tags": [
+      "acid",
+      "fruit",
+      "aromatic",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "lemon",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/nicoise-olives.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Nicoise olives",
+    "desc": "Cailletier-cultivar olives from the Var and Alpes-Maritimes regions of southeastern France, brine-cured with herbs. Small, dark-purple to black, with a high pit-to-flesh ratio and a wine-like cured note.",
+    "tags": [
+      "mediterranean",
+      "french",
+      "pantry",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "nicoise-olives",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/red-wine-vinegar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Red wine vinegar",
+    "desc": "Acetic-acid solution (5 to 7 percent) produced by acetobacter fermentation of red wine. The default Mediterranean vinaigrette acid, with structural notes from the underlying wine.",
+    "tags": [
+      "acid",
+      "mediterranean",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "red-wine-vinegar",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/shallot.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Shallot",
+    "desc": "Allium ascalonicum (or A. cepa var. aggregatum). Smaller, milder, more aromatic-complex than yellow onion, with a higher sugar fraction and a softer sulfur profile.",
+    "tags": [
+      "aromatic",
+      "french"
+    ],
+    "status": "complete",
+    "_slug": "shallot",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/tomato.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Tomato (fresh)",
+    "desc": "Solanum lycopersicum fruit, eaten ripe. Free-glutamate concentration runs 100 to 250 mg per 100 g: the second-highest natural source after parmigiano. The umami driver of Mediterranean cooking when ripe; a watery footnote out of season.",
+    "tags": [
+      "vegetable",
+      "fruit",
+      "mediterranean",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "tomato",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/tuna-loin.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Tuna loin",
+    "desc": "Skinless, boneless block from the dorsal muscle of yellowfin, bigeye, albacore, or bluefin tuna. Lean, deep-red, mostly slow-twitch muscle, with myoglobin levels that run higher than any other commodity fish.",
+    "tags": [
+      "fish",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "tuna-loin",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fish",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/waxy-potato.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Waxy potato",
+    "desc": "Low-starch, high-moisture potato cultivars (fingerling, new potato, La Ratte, red bliss, Yukon Gold). Cell walls hold their structure through boiling: the right potato for salads, gratins, and any dish that needs the cube to stay a cube.",
+    "tags": [
+      "potato",
+      "vegetable",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "waxy-potato",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/recipes/nicoise-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salade niçoise",
+    "desc": "Oil-poached tuna, blanched haricots verts, jammy egg, salt-cured tomato, and nicoise olives over an anchovy-dijon vinaigrette. Composed, not tossed; every component salted on its own terms.",
+    "tags": [
+      "salad",
+      "french",
+      "mediterranean",
+      "fish",
+      "egg",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "nicoise-salad",
+    "cuisine": "French",
+    "course": "lunch",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 30,
+      "total_min": 80,
+      "active_min": 40
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "pescatarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "sushi-grade tuna loin",
+        "slug": "tuna-loin",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "lemon zest, in wide strips",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "garlic, smashed once",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "large eggs, fridge cold",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "small waxy potatoes (fingerling or new potato)",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the boil",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "haricots verts",
+        "slug": "haricots-verts",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the blanch",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "ripe field tomatoes",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "oil-cured anchovy fillets",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "shallot, grated on a microplane",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "nicoise olives",
+        "slug": "nicoise-olives",
+        "optional": false
+      },
+      {
+        "item": "salt-packed capers, rinsed",
+        "slug": "capers",
+        "optional": false
+      },
+      {
+        "item": "fresh basil leaves",
+        "slug": "basil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "oil-poaching",
+      "jammy-egg",
+      "vinaigrette-emulsion",
+      "ice-bath-shock",
+      "dry-brining"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 80,
+      "diffLabel": "medium",
+      "timeLead": "1 h 20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/techniques/jammy-egg.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Jammy egg",
+    "desc": "Boil a fridge-cold large egg for 6 minutes 30 seconds, ice-shock immediately. The white sets fully (62 to 70 °C internal); the yolk holds at the chalky-cream threshold (about 68 °C): set enough to hold a dome at the cut, soft enough to weep slightly when broken.",
+    "tags": [
+      "egg"
+    ],
+    "status": "complete",
+    "_slug": "jammy-egg",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/oil-poaching.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Oil poaching",
+    "desc": "Cook a protein submerged in oil held at 55 to 75 °C: gentle, even, with no surface evaporation. The oil becomes both heat medium and infusion vehicle; the protein arrives uniformly tender with no Maillard crust.",
+    "tags": [
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "oil-poaching",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/vinaigrette-emulsion.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Vinaigrette emulsion",
+    "desc": "Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsion that holds long enough to dress a salad. The mustard provides the surface-active agents that bridge oil and water; without an emulsifier, the dressing breaks within seconds.",
+    "tags": [
+      "fat",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "vinaigrette-emulsion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/ingredients/atta-flour.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -57,7 +530,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -351,7 +824,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -7592,7 +8065,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 18,
+      "usedInCount": 19,
       "hasNutrition": true
     }
   },
@@ -7729,7 +8202,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -7767,7 +8240,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -8283,7 +8756,7 @@
     "updated": "2026-04-27",
     "added": "2026-04-28",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -9363,7 +9836,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 13,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -9437,7 +9910,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 33,
+      "usedInCount": 34,
       "hasNutrition": true
     }
   },
@@ -11204,7 +11677,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 5
+      "usedInCount": 6
     }
   },
   {
@@ -11239,7 +11712,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -11327,6 +11800,180 @@
     "added": "2026-04-26",
     "_card": {
       "usedInCount": 0
+    }
+  },
+  {
+    "path": "pages/recipes/red-wine-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Red wine vinegar",
+    "desc": "Live mother of vinegar fed leftover red wine in a wide jar — produces vinegar with floral and tannic complexity that pasteurized commercial product lacks. Stub.",
+    "tags": [
+      "fermentation",
+      "acid",
+      "pantry",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "red-wine-vinegar",
+    "cuisine": "Mediterranean",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 86400,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "live mother of vinegar (active acetobacter culture)",
+        "optional": false
+      },
+      {
+        "item": "red wine (dry, unoaked or lightly oaked, 11 to 13.5 percent alcohol)",
+        "optional": false
+      },
+      {
+        "item": "water (filtered, non-chlorinated)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 86400,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 60 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/salt-cured-anchovies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salt-cured anchovies",
+    "desc": "Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until the protein hydrolyzes and the texture softens into clean fillets. Stub.",
+    "tags": [
+      "fermentation",
+      "fish",
+      "pantry",
+      "umami",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "salt-cured-anchovies",
+    "cuisine": "Mediterranean",
+    "course": "side",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 60,
+      "cook_min": 0,
+      "total_min": 525600,
+      "active_min": 90
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "pescatarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh whole anchovies (Engraulis encrasicolus or Pacific equivalent)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt (Mediterranean grey or French sel gris)",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil for final pack",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 525600,
+      "diffLabel": "medium",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "+ 365 d rest",
+      "timeMode": "active",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
+    "path": "pages/recipes/salt-packed-capers.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salt-packed capers",
+    "desc": "Fresh caper buds packed in coarse sea salt for a multi-month cure. Yields capers with crisper bite and brighter mustard-pungency than the brined-jar version. Stub.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "pickle",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "salt-packed-capers",
+    "cuisine": "Mediterranean",
+    "course": "side",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 60
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh caper buds (Capparis spinosa, picked at first light)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt (Mediterranean grey, sel gris, or any non-iodized non-anti-caking)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {

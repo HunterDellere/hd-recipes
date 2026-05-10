@@ -1,5 +1,225 @@
 [
   {
+    "path": "pages/recipes/nicoise-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salade niçoise",
+    "desc": "Oil-poached tuna, blanched haricots verts, jammy egg, salt-cured tomato, and nicoise olives over an anchovy-dijon vinaigrette. Composed, not tossed; every component salted on its own terms.",
+    "tags": [
+      "salad",
+      "french",
+      "mediterranean",
+      "fish",
+      "egg",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "nicoise-salad",
+    "cuisine": "French",
+    "course": "lunch",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 30,
+      "total_min": 80,
+      "active_min": 40
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "pescatarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "sushi-grade tuna loin",
+        "slug": "tuna-loin",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "lemon zest, in wide strips",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "garlic, smashed once",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "large eggs, fridge cold",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "small waxy potatoes (fingerling or new potato)",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the boil",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "haricots verts",
+        "slug": "haricots-verts",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the blanch",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "ripe field tomatoes",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "oil-cured anchovy fillets",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "shallot, grated on a microplane",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "nicoise olives",
+        "slug": "nicoise-olives",
+        "optional": false
+      },
+      {
+        "item": "salt-packed capers, rinsed",
+        "slug": "capers",
+        "optional": false
+      },
+      {
+        "item": "fresh basil leaves",
+        "slug": "basil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "oil-poaching",
+      "jammy-egg",
+      "vinaigrette-emulsion",
+      "ice-bath-shock",
+      "dry-brining"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 80,
+      "diffLabel": "medium",
+      "timeLead": "1 h 20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/techniques/jammy-egg.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Jammy egg",
+    "desc": "Boil a fridge-cold large egg for 6 minutes 30 seconds, ice-shock immediately. The white sets fully (62 to 70 °C internal); the yolk holds at the chalky-cream threshold (about 68 °C): set enough to hold a dome at the cut, soft enough to weep slightly when broken.",
+    "tags": [
+      "egg"
+    ],
+    "status": "complete",
+    "_slug": "jammy-egg",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/oil-poaching.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Oil poaching",
+    "desc": "Cook a protein submerged in oil held at 55 to 75 °C: gentle, even, with no surface evaporation. The oil becomes both heat medium and infusion vehicle; the protein arrives uniformly tender with no Maillard crust.",
+    "tags": [
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "oil-poaching",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/vinaigrette-emulsion.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Vinaigrette emulsion",
+    "desc": "Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsion that holds long enough to dress a salad. The mustard provides the surface-active agents that bridge oil and water; without an emulsifier, the dressing breaks within seconds.",
+    "tags": [
+      "fat",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "vinaigrette-emulsion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/recipes/banana-bread.html",
     "type": "recipe",
     "category": "recipes",
@@ -1076,69 +1296,5 @@
       "usedInCount": 1,
       "hasNutrition": false
     }
-  },
-  {
-    "path": "pages/techniques/velveting.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Velveting",
-    "desc": "Toss thin-sliced lean protein with salt, baking soda, and a cornstarch slurry, rest 20-30 minutes, then cook briefly in a hot wet medium. The pH shift and gel jacket keep the muscle tender at temperatures that would otherwise wreck it.",
-    "tags": [
-      "umami",
-      "chicken"
-    ],
-    "status": "complete",
-    "_slug": "velveting",
-    "updated": "2026-05-05",
-    "added": "2026-05-05",
-    "_card": {
-      "usedInCount": 3
-    }
-  },
-  {
-    "path": "pages/safety/cross-contamination-and-time.html",
-    "type": "safety",
-    "category": "safety",
-    "title": "Cross-Contamination and the Danger Zone",
-    "desc": "The 2-hour and 4-hour rules for food in the 40-140°F danger zone, board and tool separation, marinade reuse, leftover cooling, and reheat targets. The orthogonal axis to internal-temperature targets.",
-    "tags": [
-      "pantry"
-    ],
-    "status": "complete",
-    "_slug": "cross-contamination-and-time",
-    "updated": "2026-05-05",
-    "added": "2026-05-05",
-    "_card": {}
-  },
-  {
-    "path": "pages/safety/egg-doneness.html",
-    "type": "safety",
-    "category": "safety",
-    "title": "Egg Doneness and Salmonella",
-    "desc": "Shell-egg pathogen risk math, when raw or partly cooked yolks are reasonable, and when to reach for pasteurized eggs. Covers carbonara, mayo, hollandaise, mousse, custards, and meringue.",
-    "tags": [
-      "egg"
-    ],
-    "status": "complete",
-    "_slug": "egg-doneness",
-    "updated": "2026-05-05",
-    "added": "2026-05-05",
-    "_card": {}
-  },
-  {
-    "path": "pages/safety/meat-doneness.html",
-    "type": "safety",
-    "category": "safety",
-    "title": "Meat Doneness and Pasteurization",
-    "desc": "USDA published-safe internal temperatures for poultry, pork, beef, and lamb, plus the full time-temperature pasteurization table that explains why thin-sliced and sous-vide approaches can sit below the instantaneous number and still clear safety.",
-    "tags": [
-      "chicken",
-      "beef"
-    ],
-    "status": "complete",
-    "_slug": "meat-doneness",
-    "updated": "2026-05-05",
-    "added": "2026-05-05",
-    "_card": {}
   }
 ]
