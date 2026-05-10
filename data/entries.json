@@ -80,7 +80,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -121,7 +121,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -165,7 +165,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -185,7 +185,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -206,7 +206,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -826,7 +826,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -847,7 +847,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -929,7 +929,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -1014,7 +1014,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -2393,6 +2393,148 @@
     }
   },
   {
+    "path": "pages/recipes/panzanella-with-charred-tomatoes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Panzanella with charred tomatoes",
+    "desc": "Tuscan bread salad rebuilt as a study in tomato states: ripe heirloom flesh salt-cured to extract its glutamate-laden water, cherry tomatoes blistered black-spotted in a smoking dry skillet for the Maillard counterpoint, stale sourdough soaked in the resulting tomato water plus red wine vinaigrette, finished with raw red onion, basil, capers, and aggressive olive oil. The thesis is that bread is a flavor sponge engineered to deliver tomato to the eater, not a starch garnish.",
+    "tags": [
+      "salad",
+      "italian",
+      "mediterranean",
+      "vegetable",
+      "side",
+      "weeknight",
+      "umami",
+      "acid",
+      "bread"
+    ],
+    "status": "complete",
+    "_slug": "panzanella-with-charred-tomatoes",
+    "cuisine": "Italian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 15,
+      "total_min": 75,
+      "active_min": 35
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "ripe heirloom or beefsteak tomato",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "cherry or grape tomatoes, ripe",
+        "slug": "cherry-tomato",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "stale sourdough bread, 2 to 4 days old",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "garlic clove",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "persian or english cucumber",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "capers, brine-packed or salt-packed",
+        "slug": "capers",
+        "optional": false
+      },
+      {
+        "item": "fresh basil leaves",
+        "slug": "basil",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tomato-salt-cure",
+      "maillard-sear",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 75,
+      "diffLabel": "easy",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/recipes/pomegranate-molasses.html",
     "type": "recipe",
     "category": "recipes",
@@ -3593,6 +3735,25 @@
     }
   },
   {
+    "path": "pages/techniques/tomato-salt-cure.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Tomato salt cure",
+    "desc": "Salt cut tomato flesh to draw out free water plus dissolved glutamate, citric and malic acid, sugars, and aromatic volatiles. The resulting tomato water is the most concentrated raw-tomato seasoning the kitchen produces; the drained flesh is firmer, sweeter, and umami-denser than the raw fruit.",
+    "tags": [
+      "vegetable",
+      "umami",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "tomato-salt-cure",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/vapor-steaming.html",
     "type": "technique",
     "category": "techniques",
@@ -3626,7 +3787,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 5
+      "usedInCount": 6
     }
   },
   {
@@ -3981,7 +4142,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 14,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -11222,7 +11383,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 26,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -11397,7 +11558,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 29,
+      "usedInCount": 30,
       "hasNutrition": true
     }
   },
@@ -12511,7 +12672,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -12993,7 +13154,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -13067,7 +13228,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 41,
+      "usedInCount": 42,
       "hasNutrition": true
     }
   },
@@ -14886,7 +15047,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 10
+      "usedInCount": 11
     }
   },
   {
@@ -15203,6 +15364,85 @@
       "timeMode": "active",
       "activeMinutes": 480,
       "filterMinutes": 480
+    }
+  },
+  {
+    "path": "pages/recipes/red-wine-vinaigrette.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Red wine vinaigrette",
+    "desc": "A canonical Mediterranean salad dressing: 1:3 red wine vinegar to extra-virgin olive oil, dijon as the emulsifier, mashed garlic and salt dissolved in the acid phase before the oil streams in. Holds 30 to 60 minutes after building. Stub.",
+    "tags": [
+      "sauce",
+      "pantry",
+      "acid",
+      "fat",
+      "weeknight",
+      "mediterranean"
+    ],
+    "status": "stub",
+    "_slug": "red-wine-vinaigrette",
+    "cuisine": "Mediterranean",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "garlic clove",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 5,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
     }
   },
   {
