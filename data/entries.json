@@ -187,6 +187,28 @@
     }
   },
   {
+    "path": "pages/ingredients/glutinous-rice.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Glutinous rice (sticky rice, sweet rice)",
+    "desc": "Short- to medium-grain rice (Oryza sativa, glutinous cultivars) whose endosperm is essentially pure amylopectin. Cooks to a translucent, chewy, fully cohesive mass with no individual-grain separation. The table rice of Laos, northeast Thailand, and parts of Yunnan; the structural rice of mochi, zongzi, sticky-rice cakes, and toasted-rice powder.",
+    "tags": [
+      "rice",
+      "grain",
+      "pantry",
+      "thai"
+    ],
+    "status": "complete",
+    "_slug": "glutinous-rice",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/greek-yogurt.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -304,7 +326,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -324,7 +346,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -365,7 +387,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -569,7 +591,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -632,7 +654,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -942,6 +964,126 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/larb-gai-thai-minced-chicken-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Larb gai (Thai-Lao minced chicken salad)",
+    "desc": "Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili powder, and toasted glutinous-rice powder, finished with shallot, mint, cilantro, scallion, and culantro. The toasted-rice powder is the structural element. Without it the dish is a wet salad; with it the dressing thickens to a slurry that clings to every fiber.",
+    "tags": [
+      "salad",
+      "thai",
+      "chicken",
+      "spicy",
+      "umami",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "larb-gai-thai-minced-chicken-salad",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 8,
+      "total_min": 28,
+      "active_min": 25
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "boneless skinless chicken thigh",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (premium, 30 to 40°N)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "toasted glutinous-rice powder (khao khua)",
+        "slug": "glutinous-rice",
+        "optional": false
+      },
+      {
+        "item": "toasted dried-chili powder (prik pon)",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "shallot",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "scallion",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "mint leaves, fresh (spearmint)",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "culantro (saw-tooth herb), if available",
+        "optional": true
+      },
+      {
+        "item": "thai sticky rice, steamed (for the table)",
+        "optional": false
+      },
+      {
+        "item": "raw vegetables for the plate",
+        "optional": false
+      },
+      {
+        "item": "extra raw chilies, sliced",
+        "slug": "thai-chili",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "blooming-aromatics"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 28,
+      "diffLabel": "medium",
+      "timeLead": "28 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
     }
   },
   {
@@ -1481,6 +1623,76 @@
     }
   },
   {
+    "path": "pages/recipes/toasted-rice-powder.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Toasted glutinous-rice powder (khao khua)",
+    "desc": "Raw glutinous rice dry-toasted in a hot skillet to amber, cooled, and ground coarse. The structural element of larb, nam tok, and many Lao dipping sauces; the powder hydrates in the dish dressing and thickens it to a clinging slurry. Aromatic compounds (popcorn pyrazines, toasted-bread furans) develop in the toast and fade quickly once ground; freshly toasted khao khua is dramatically better than commercial pre-ground versions.",
+    "tags": [
+      "pantry",
+      "thai",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "toasted-rice-powder",
+    "cuisine": "Thai",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 1,
+      "cook_min": 8,
+      "total_min": 12,
+      "active_min": 10
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "raw glutinous rice (sticky rice, sweet rice)",
+        "slug": "glutinous-rice",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 12,
+      "diffLabel": "easy",
+      "timeLead": "12 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/techniques/dry-toasting.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Dry-toasting (grains, spices, seeds, dried chilies)",
+    "desc": "Toast raw grains, whole spices, seeds, nuts, or dried chilies in a hot dry skillet (no fat) until Maillard products develop on the surface. The technique works by direct conduction from pan to dry surface; without water or fat as intermediary, the surface temperature climbs fast into the Maillard range and develops aromatic compounds that the raw ingredient does not carry.",
+    "tags": [
+      "aromatic",
+      "spice",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "dry-toasting",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 2
+    }
+  },
+  {
     "path": "pages/techniques/high-heat-dry-roasting.html",
     "type": "technique",
     "category": "techniques",
@@ -1779,7 +1991,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "chicken",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -1800,7 +2012,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 9,
+      "usedInCount": 10,
       "hasNutrition": true
     }
   },
@@ -1912,7 +2124,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -1996,7 +2208,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -9509,7 +9721,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 20,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -10500,7 +10712,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 5
+      "usedInCount": 7
     }
   },
   {
@@ -12726,7 +12938,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 15
+      "usedInCount": 16
     }
   },
   {
@@ -13384,6 +13596,64 @@
       "timeMode": "active",
       "activeMinutes": 60,
       "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/thai-sticky-rice.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Thai sticky rice (khao niao)",
+    "desc": "Glutinous rice soaked, then steamed in a bamboo basket over simmering water until each grain is translucent, chewy, and pinch-able. The table rice of Laos and northeast Thailand; the eating implement for larb, nam tok, and som tum. Stub.",
+    "tags": [
+      "rice",
+      "thai",
+      "side",
+      "pantry"
+    ],
+    "status": "stub",
+    "_slug": "thai-sticky-rice",
+    "cuisine": "Thai",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 25,
+      "total_min": 270,
+      "active_min": 10
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "raw glutinous rice (sticky rice)",
+        "slug": "glutinous-rice",
+        "optional": false
+      },
+      {
+        "item": "cold water (for soaking)",
+        "optional": false
+      },
+      {
+        "item": "water (for steaming)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 270,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "+ 4 h rest",
+      "timeMode": "active",
+      "activeMinutes": 10,
+      "filterMinutes": 10
     }
   },
   {

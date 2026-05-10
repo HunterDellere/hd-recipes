@@ -205,6 +205,126 @@
     }
   },
   {
+    "path": "pages/recipes/larb-gai-thai-minced-chicken-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Larb gai (Thai-Lao minced chicken salad)",
+    "desc": "Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili powder, and toasted glutinous-rice powder, finished with shallot, mint, cilantro, scallion, and culantro. The toasted-rice powder is the structural element. Without it the dish is a wet salad; with it the dressing thickens to a slurry that clings to every fiber.",
+    "tags": [
+      "salad",
+      "thai",
+      "chicken",
+      "spicy",
+      "umami",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "larb-gai-thai-minced-chicken-salad",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 8,
+      "total_min": 28,
+      "active_min": 25
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "boneless skinless chicken thigh",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (premium, 30 to 40°N)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "toasted glutinous-rice powder (khao khua)",
+        "slug": "glutinous-rice",
+        "optional": false
+      },
+      {
+        "item": "toasted dried-chili powder (prik pon)",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "shallot",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "scallion",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "mint leaves, fresh (spearmint)",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "culantro (saw-tooth herb), if available",
+        "optional": true
+      },
+      {
+        "item": "thai sticky rice, steamed (for the table)",
+        "optional": false
+      },
+      {
+        "item": "raw vegetables for the plate",
+        "optional": false
+      },
+      {
+        "item": "extra raw chilies, sliced",
+        "slug": "thai-chili",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "blooming-aromatics"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 28,
+      "diffLabel": "medium",
+      "timeLead": "28 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/recipes/nicoise-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -370,144 +490,6 @@
       "timeMode": "total",
       "activeMinutes": 40,
       "filterMinutes": 40
-    }
-  },
-  {
-    "path": "pages/recipes/roasted-beet-and-citrus-salad-with-whipped-feta.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Roasted beet and citrus salad with whipped feta",
-    "desc": "Salt-roasted red beets, segmented blood orange, urfa-warmed pistachio, and a feta-yogurt cream whipped to spreading texture. Composed warm-on-cold; the dressing is the cheese itself.",
-    "tags": [
-      "salad",
-      "roast",
-      "mediterranean",
-      "levantine",
-      "vegetable",
-      "dairy",
-      "fruit",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "roasted-beet-and-citrus-salad-with-whipped-feta",
-    "cuisine": "Mediterranean (Levantine lean)",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 75,
-      "total_min": 100,
-      "active_min": 30
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "red beets, similarly sized",
-        "slug": "red-beet",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the roasting bed",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme sprigs",
-        "optional": true
-      },
-      {
-        "item": "red wine vinegar",
-        "slug": "red-wine-vinegar",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "flaky sea salt",
-        "optional": false
-      },
-      {
-        "item": "sheep's-milk feta (Greek PDO)",
-        "slug": "feta",
-        "optional": false
-      },
-      {
-        "item": "full-fat Greek yogurt, strained",
-        "slug": "greek-yogurt",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "lemon juice, fresh",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "lemon zest, microplaned",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "blood oranges (or Cara Cara if blood are out of season)",
-        "slug": "blood-orange",
-        "optional": false
-      },
-      {
-        "item": "shelled raw pistachios",
-        "slug": "pistachio",
-        "optional": false
-      },
-      {
-        "item": "urfa biber (Urfa pepper)",
-        "slug": "urfa-biber",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "flaky sea salt",
-        "optional": false
-      },
-      {
-        "item": "fresh mint leaves",
-        "slug": "mint",
-        "optional": false
-      },
-      {
-        "item": "honey, runny",
-        "slug": "honey",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "salt-roasting",
-      "vinaigrette-emulsion"
-    ],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 100,
-      "diffLabel": "easy",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 1 h rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
     }
   },
   {
