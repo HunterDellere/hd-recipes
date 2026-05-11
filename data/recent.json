@@ -1,5 +1,154 @@
 [
   {
+    "path": "pages/recipes/ube-halaya-latte.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya latte with toasted coconut",
+    "desc": "Filipino-leaning espresso drink: an 18 g double shot pulled into whole milk warmed with coconut cream and coconut sugar, topped with a soft-peak ube halaya chiffon and a shower of toasted desiccated coconut.",
+    "tags": [
+      "drink",
+      "filipino",
+      "dairy",
+      "breakfast"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya-latte",
+    "cuisine": "Filipino",
+    "course": "drink",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 8,
+      "total_min": 13,
+      "active_min": 13
+    },
+    "updated": "2026-05-11",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "coconut cream, scooped off the top of a refrigerated full-fat coconut milk can",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "coconut sugar",
+        "slug": "coconut-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "heavy cream, very cold",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "whole espresso beans, fresh-roasted",
+        "slug": "espresso-beans",
+        "optional": false
+      },
+      {
+        "item": "unsweetened desiccated coconut",
+        "slug": "desiccated-coconut",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 13,
+      "diffLabel": "medium",
+      "timeLead": "13 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 13,
+      "filterMinutes": 13
+    }
+  },
+  {
+    "path": "pages/ingredients/coconut-sugar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Coconut sugar",
+    "desc": "Unrefined sugar reduced from the sap of coconut palm (Cocos nucifera) flower stalks. Granulated, soft-amber, with a butterscotch-and-floral character close to soft Thai palm sugar but slightly less floral, slightly more caramel.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "coconut-sugar",
+    "updated": "2026-05-11",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/espresso-beans.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Espresso beans",
+    "desc": "Roasted Coffea arabica seeds (with occasional Robusta), ground fine and extracted under ~9 bar pressure. The roast level and grind define everything that happens in the cup.",
+    "tags": [
+      "pantry",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "espresso-beans",
+    "updated": "2026-05-11",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/ube-halaya.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ube halaya",
+    "desc": "Filipino preserve of grated purple yam (Dioscorea alata) cooked with coconut milk, sweetened condensed milk, evaporated milk, and butter until thick, glossy, and spreadable. Vivid violet from natural anthocyanin pigment.",
+    "tags": [
+      "filipino",
+      "fruit",
+      "dessert",
+      "dairy"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya",
+    "updated": "2026-05-11",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/recipes/apple-cider-vinegar.html",
     "type": "recipe",
     "category": "recipes",
@@ -1367,217 +1516,6 @@
       "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/mansaf.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Mansaf",
-    "desc": "Bone-in lamb shoulder simmered for hours, then bathed in a sauce built from reconstituted jameed (fermented dried sheep yogurt). Served over saffron-tinted basmati rice on a base layer of paper-thin shrak bread, crowned with samna-toasted pine nuts and almonds. The Bedouin and Jordanian feast dish, technique-faithful.",
-    "tags": [
-      "weekend-project",
-      "lamb",
-      "levantine",
-      "braise",
-      "comfort",
-      "umami",
-      "rice",
-      "fermentation"
-    ],
-    "status": "complete",
-    "_slug": "mansaf",
-    "cuisine": "Jordanian",
-    "course": "dinner",
-    "difficulty": "hard",
-    "servings": 6,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 240,
-      "total_min": 270,
-      "active_min": 90
-    },
-    "updated": "2026-05-06",
-    "ingredients": [
-      {
-        "item": "jameed stones",
-        "slug": "jameed",
-        "optional": false
-      },
-      {
-        "item": "cold water for the soak",
-        "optional": false
-      },
-      {
-        "item": "bone-in lamb shoulder, cut into 6 large pieces by the butcher",
-        "slug": "lamb-shoulder",
-        "optional": false
-      },
-      {
-        "item": "cold water for the braise",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, peeled and halved",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods, lightly cracked",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "optional": false
-      },
-      {
-        "item": "whole black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "mastic resin, crushed (optional but traditional)",
-        "optional": true
-      },
-      {
-        "item": "kosher salt for the braise",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "cornstarch",
-        "optional": false
-      },
-      {
-        "item": "cold water for the cornstarch slurry",
-        "optional": false
-      },
-      {
-        "item": "basmati rice",
-        "slug": "basmati-rice",
-        "optional": false
-      },
-      {
-        "item": "samna (clarified butter)",
-        "slug": "samna",
-        "optional": false
-      },
-      {
-        "item": "ground turmeric",
-        "optional": false
-      },
-      {
-        "item": "hot water for the rice",
-        "optional": false
-      },
-      {
-        "item": "kosher salt for the rice",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "samna for the nuts",
-        "slug": "samna",
-        "optional": false
-      },
-      {
-        "item": "pine nuts",
-        "optional": false
-      },
-      {
-        "item": "slivered blanched almonds",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley, finely chopped",
-        "optional": false
-      },
-      {
-        "item": "shrak or markook bread (paper-thin Bedouin flatbread)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "cooked-yogurt-sauce",
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "heavy-saucepan",
-      "instant-read-thermometer"
-    ],
-    "added": "2026-05-06",
-    "_card": {
-      "totalMinutes": 270,
-      "diffLabel": "hard",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "+ 3 h rest",
-      "timeMode": "active",
-      "activeMinutes": 90,
-      "filterMinutes": 90
-    }
-  },
-  {
-    "path": "pages/techniques/cooked-yogurt-sauce.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Cooked yogurt sauce",
-    "desc": "Stabilize yogurt with starch or egg, temper into the hot dish, and hold at a tremor below the boil. Casein curdles above 85 °C without help; the help is what makes a yogurt-based stew possible.",
-    "tags": [
-      "dairy",
-      "fermentation"
-    ],
-    "status": "complete",
-    "_slug": "cooked-yogurt-sauce",
-    "updated": "2026-05-06",
-    "added": "2026-05-06",
-    "_card": {
-      "usedInCount": 1
-    }
-  },
-  {
-    "path": "pages/ingredients/basmati-rice.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Basmati rice",
-    "desc": "Long-grain aromatic rice from the Indian subcontinent, low in amylopectin and high in 2-acetyl-1-pyrroline. Grains stay separate, lengthen dramatically on cooking, and carry a popcorn-pandan aroma that defines the cuisine it anchors.",
-    "tags": [
-      "rice",
-      "grain"
-    ],
-    "status": "complete",
-    "_slug": "basmati-rice",
-    "updated": "2026-05-06",
-    "added": "2026-05-06",
-    "_card": {
-      "primaryTag": "grain",
-      "usedInCount": 3,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/jameed.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Jameed",
-    "desc": "Fermented sheep or goat yogurt, salted and sun-dried into stone-hard cones. Reconstitutes into a sour, funky, glutamate-heavy sauce base that no live yogurt approximates.",
-    "tags": [
-      "dairy",
-      "umami",
-      "fermentation",
-      "levantine"
-    ],
-    "status": "complete",
-    "_slug": "jameed",
-    "updated": "2026-05-06",
-    "added": "2026-05-06",
-    "_card": {
-      "primaryTag": "dairy",
-      "usedInCount": 1,
-      "hasNutrition": false
     }
   }
 ]

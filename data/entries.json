@@ -1,5 +1,154 @@
 [
   {
+    "path": "pages/ingredients/coconut-sugar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Coconut sugar",
+    "desc": "Unrefined sugar reduced from the sap of coconut palm (Cocos nucifera) flower stalks. Granulated, soft-amber, with a butterscotch-and-floral character close to soft Thai palm sugar but slightly less floral, slightly more caramel.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "coconut-sugar",
+    "updated": "2026-05-11",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/espresso-beans.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Espresso beans",
+    "desc": "Roasted Coffea arabica seeds (with occasional Robusta), ground fine and extracted under ~9 bar pressure. The roast level and grind define everything that happens in the cup.",
+    "tags": [
+      "pantry",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "espresso-beans",
+    "updated": "2026-05-11",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/ube-halaya.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ube halaya",
+    "desc": "Filipino preserve of grated purple yam (Dioscorea alata) cooked with coconut milk, sweetened condensed milk, evaporated milk, and butter until thick, glossy, and spreadable. Vivid violet from natural anthocyanin pigment.",
+    "tags": [
+      "filipino",
+      "fruit",
+      "dessert",
+      "dairy"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya",
+    "updated": "2026-05-11",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/ube-halaya-latte.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya latte with toasted coconut",
+    "desc": "Filipino-leaning espresso drink: an 18 g double shot pulled into whole milk warmed with coconut cream and coconut sugar, topped with a soft-peak ube halaya chiffon and a shower of toasted desiccated coconut.",
+    "tags": [
+      "drink",
+      "filipino",
+      "dairy",
+      "breakfast"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya-latte",
+    "cuisine": "Filipino",
+    "course": "drink",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 8,
+      "total_min": 13,
+      "active_min": 13
+    },
+    "updated": "2026-05-11",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "coconut cream, scooped off the top of a refrigerated full-fat coconut milk can",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "coconut sugar",
+        "slug": "coconut-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "heavy cream, very cold",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "whole espresso beans, fresh-roasted",
+        "slug": "espresso-beans",
+        "optional": false
+      },
+      {
+        "item": "unsweetened desiccated coconut",
+        "slug": "desiccated-coconut",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 13,
+      "diffLabel": "medium",
+      "timeLead": "13 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 13,
+      "filterMinutes": 13
+    }
+  },
+  {
     "path": "pages/ingredients/anchovy-fillets.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -416,7 +565,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -14710,7 +14859,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -14942,7 +15091,7 @@
     "added": "2026-04-27",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -15965,7 +16114,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 29,
+      "usedInCount": 30,
       "hasNutrition": true
     }
   },
@@ -16022,7 +16171,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -17929,6 +18078,83 @@
     "added": "2026-04-26",
     "_card": {
       "usedInCount": 0
+    }
+  },
+  {
+    "path": "pages/recipes/ube-halaya.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya",
+    "desc": "Filipino jam of grated purple yam (Dioscorea alata) slow-cooked with coconut milk, sweetened condensed milk, evaporated milk, and butter until thick, glossy, and spreadable. Stub.",
+    "tags": [
+      "filipino",
+      "dessert",
+      "make-ahead",
+      "pantry"
+    ],
+    "status": "stub",
+    "_slug": "ube-halaya",
+    "cuisine": "Filipino",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 75,
+      "total_min": 90,
+      "active_min": 70
+    },
+    "updated": "2026-05-11",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "grated ube (frozen, thawed and drained; or fresh boiled and riced)",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "sweetened condensed milk",
+        "slug": "sweetened-condensed-milk",
+        "optional": false
+      },
+      {
+        "item": "evaporated milk",
+        "slug": "evaporated-milk",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 90,
+      "diffLabel": "medium",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 70,
+      "filterMinutes": 70
     }
   },
   {

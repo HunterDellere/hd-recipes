@@ -1,9 +1,28 @@
 {
-  "generated": "2026-05-11T02:41:57.853Z",
+  "generated": "2026-05-11T16:20:09.066Z",
   "summary": {
     "errors": 0,
     "warnings": 0,
-    "info": 0
+    "info": 3
   },
-  "findings": []
+  "findings": [
+    {
+      "level": "INFO",
+      "category": "tags",
+      "file": "content/_schema/tags.json",
+      "msg": "75 tags in use across 430 entries. Top: pantry(165), umami(118), chinese(65), vegetable(63), aromatic(60), make-ahead(50), acid(41), spice(40), weekend-project(39), indian(37), fermentation(35), seafood(33), sauce(33), fish(31), fat(31), spicy(30), weeknight(29), japanese(28), dairy(27), comfort(27), mediterranean(24), italian(17), salad(17), fruit(16), dessert(16), grain(16), side(16), american(15), thai(15), pork(14)"
+    },
+    {
+      "level": "INFO",
+      "category": "search",
+      "file": "data/search-index.json",
+      "msg": "index stats: 398 pages, 4628 tokens, 195.9 KB"
+    },
+    {
+      "level": "INFO",
+      "category": "search",
+      "file": "data/search-index.json",
+      "msg": "2523 singleton tokens (appear in exactly 1 entry). Sample: italian-american (north beach, san francisco), pan-asian / west african pantry crossover, doubanjiang-douchi-sichuan-peppercorn, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), pectin-and-arabinogalactan-rich, mediterranean (levantine lean), citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, goan (konkan coast, india), japanese-short-grain-rice, cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil, rendered-pork-plus-ya-cai, raw-garlic-plus-chinkiang, radiative-and-conductive, butterscotch-and-floral, tomato-vinegar-aromatic, gochujang-and-gochugaru, eggplant-bamboo-shimeji, rendered-fat-and-smoke, maillard-and-pyrolysis, glutamate-and-fructose, coconut-milk-and-stock, doubanjiang-and-douchi, tandoori-masala-spiced"
+    }
+  ]
 }
