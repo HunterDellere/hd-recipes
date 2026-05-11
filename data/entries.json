@@ -77,7 +77,7 @@
     "status": "complete",
     "_slug": "bacon",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "pork",
       "usedInCount": 1,
@@ -249,7 +249,7 @@
     "status": "complete",
     "_slug": "chives",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
       "usedInCount": 1,
@@ -295,6 +295,28 @@
       "primaryTag": "vegetable",
       "usedInCount": 3,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/daikon.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Daikon (radish)",
+    "desc": "Long white winter radish (Raphanus sativus var. longipinnatus), 90 to 95% water by weight, with active myrosinase enzymes that convert intact glucosinolates into pungent isothiocyanates the moment cell walls are ruptured. The structural ingredient of oden, daikon mochi, kkakdugi, banh mi do chua, and the Japanese oroshi (raw grated radish) condiment.",
+    "tags": [
+      "vegetable",
+      "japanese",
+      "korean",
+      "chinese"
+    ],
+    "status": "complete",
+    "_slug": "daikon",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   },
   {
@@ -614,6 +636,28 @@
     }
   },
   {
+    "path": "pages/ingredients/mackerel.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mackerel (saba)",
+    "desc": "Oily blue-skinned pelagic fish, 12 to 18% fat by weight, with a dense subcutaneous lipid layer and a dark muscle band along the lateral line. The signature ingredient of saba shioyaki, shime-saba, smoked mackerel pâté, and the Mediterranean grilled-mackerel canon.",
+    "tags": [
+      "fish",
+      "seafood",
+      "japanese",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "mackerel",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "fish",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/maple-syrup.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -691,7 +735,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -1286,7 +1330,7 @@
     "status": "complete",
     "_slug": "white-wine-vinegar",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
       "usedInCount": 1,
@@ -1369,11 +1413,33 @@
     "status": "complete",
     "_slug": "yellow-onion",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
       "usedInCount": 1,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/yuzu.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Yuzu",
+    "desc": "East Asian citrus (Citrus junos), a hybrid of mandarin and Ichang papeda, with a fragrant rind heavy in limonene and aromatic terpenes and a sour, somewhat dry juice with the structural acidity of lemon and the floral character of bergamot. The aromatic anchor of ponzu, yuzu kosho, and most refined Japanese citrus applications.",
+    "tags": [
+      "fruit",
+      "acid",
+      "japanese",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "yuzu",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   },
   {
@@ -2117,7 +2183,7 @@
       "vinaigrette-emulsion"
     ],
     "equipment": [],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 60,
       "diffLabel": "easy",
@@ -2733,6 +2799,99 @@
     }
   },
   {
+    "path": "pages/recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pan-seared mackerel with daikon oroshi and ponzu",
+    "desc": "Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to firm the flesh and pull surface water, patted dry, and hard-seared skin-side-down in a smoking carbon-steel pan until the fat under the skin renders and the silver hide turns to a tile of crackling. Plated over a mound of cold daikon oroshi (raw grated radish, water pressed off) with a small pour of ponzu around the base. The Japanese saba canon: the lipid load of an oily blue fish managed by salt cure plus high-heat sear, then cut through with a citrus-soy acid and the enzymatic bite of raw daikon.",
+    "tags": [
+      "japanese",
+      "fish",
+      "seafood",
+      "weeknight",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "pan-seared-mackerel-with-daikon-oroshi-and-ponzu",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 8,
+      "total_min": 48,
+      "active_min": 18
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "mackerel fillets (saba), skin-on, pin-bones removed",
+        "slug": "mackerel",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "sake",
+        "slug": "sake",
+        "optional": false
+      },
+      {
+        "item": "daikon radish, peeled",
+        "slug": "daikon",
+        "optional": false
+      },
+      {
+        "item": "ponzu sauce",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (high smoke point: rice bran, grapeseed, or refined avocado)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "scallion, green tops only",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "shichimi tōgarashi (Japanese seven-spice)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "fish-skin-scoring",
+      "dry-brining",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "heavy-carbon-steel-or-cast-iron-skillet",
+      "fine-mesh-sieve",
+      "oroshigane-or-microplane",
+      "fish-spatula"
+    ],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 48,
+      "diffLabel": "medium",
+      "timeLead": "48 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
     "path": "pages/recipes/panzanella-with-charred-tomatoes.html",
     "type": "recipe",
     "category": "recipes",
@@ -2930,6 +3089,86 @@
       "timeMode": "total",
       "activeMinutes": 10,
       "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/ponzu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ponzu",
+    "desc": "Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and katsuobushi, then refrigerated 24 hours to extract the kombu glutamate and katsuobushi inosinate into the citrus-soy base. Strained the next day to a clear, deeply aromatic citrus-soy sauce. The canonical washoku dipping and finishing sauce; dramatically more aromatic than any bottled version because the volatile citrus top notes have not had months to fade in storage.",
+    "tags": [
+      "japanese",
+      "sauce",
+      "umami",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "ponzu",
+    "cuisine": "Japanese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 1445,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "yuzu juice (or a 3:1 blend of fresh lemon juice and lime juice)",
+        "slug": "yuzu",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "mirin (hon-mirin, not mirin-style seasoning)",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dashi"
+    ],
+    "equipment": [
+      "fine-mesh-sieve",
+      "glass-jar-or-bottle"
+    ],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 1445,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "+ 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 5,
+      "filterMinutes": 5
     }
   },
   {
@@ -4119,6 +4358,24 @@
     }
   },
   {
+    "path": "pages/techniques/fish-skin-scoring.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Fish skin scoring",
+    "desc": "Cross-hatch or parallel cuts through the skin and surface fat layer of a fish fillet to release contraction tension during the sear, expose the subcutaneous fat for rendering, and let cure salt or seasoning penetrate the silver hide uniformly.",
+    "tags": [
+      "fish",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "fish-skin-scoring",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/high-heat-dry-roasting.html",
     "type": "technique",
     "category": "techniques",
@@ -4184,7 +4441,7 @@
     "status": "complete",
     "_slug": "lardon-rendering",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "usedInCount": 1
     }
@@ -4948,7 +5205,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -4969,7 +5226,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -10458,7 +10715,7 @@
     "updated": "2026-05-09",
     "added": "2026-05-09",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -12120,7 +12377,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 24,
+      "usedInCount": 25,
       "hasNutrition": true
     }
   },
@@ -12141,7 +12398,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -12183,7 +12440,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -12203,7 +12460,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -12222,7 +12479,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -13752,7 +14009,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 44,
+      "usedInCount": 45,
       "hasNutrition": true
     }
   },
@@ -15519,7 +15776,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -15571,7 +15828,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 11
+      "usedInCount": 12
     }
   },
   {
@@ -16041,7 +16298,7 @@
     ],
     "techniques": [],
     "equipment": [],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 14400,
       "diffLabel": "medium",

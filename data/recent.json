@@ -1,38 +1,39 @@
 [
   {
-    "path": "pages/recipes/german-warm-potato-salad-with-bacon-and-mustard.html",
+    "path": "pages/recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "German warm potato salad with bacon and mustard",
-    "desc": "Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm in their own steam window with a vinegar-mustard-stock-and-bacon-fat emulsion, finished with crisp bacon lardons, sweated onion, and a deep fold of fresh chives and parsley. The dressing is built directly in the rendered bacon fat by deglazing with white wine vinegar, dissolving dijon and a measured pinch of sugar into the hot fond, then thinning with chicken stock; poured over still-warm potatoes that absorb the dressing as they cool, the salad reads tart, savory, and structurally satisfying in a way no cold mayonnaise-bound American potato salad approaches.",
+    "title": "Pan-seared mackerel with daikon oroshi and ponzu",
+    "desc": "Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to firm the flesh and pull surface water, patted dry, and hard-seared skin-side-down in a smoking carbon-steel pan until the fat under the skin renders and the silver hide turns to a tile of crackling. Plated over a mound of cold daikon oroshi (raw grated radish, water pressed off) with a small pour of ponzu around the base. The Japanese saba canon: the lipid load of an oily blue fish managed by salt cure plus high-heat sear, then cut through with a citrus-soy acid and the enzymatic bite of raw daikon.",
     "tags": [
-      "salad",
-      "german",
-      "potato",
-      "pork",
-      "side",
-      "comfort",
-      "acid",
+      "japanese",
+      "fish",
+      "seafood",
+      "weeknight",
       "umami"
     ],
     "status": "complete",
-    "_slug": "german-warm-potato-salad-with-bacon-and-mustard",
-    "cuisine": "German",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 6,
+    "_slug": "pan-seared-mackerel-with-daikon-oroshi-and-ponzu",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
     "time": {
-      "prep_min": 20,
-      "cook_min": 40,
-      "total_min": 60,
-      "active_min": 40
+      "prep_min": 10,
+      "cook_min": 8,
+      "total_min": 48,
+      "active_min": 18
     },
     "updated": "2026-05-10",
-    "diet": [],
+    "diet": [
+      "dairy-free",
+      "gluten-free",
+      "pescatarian"
+    ],
     "ingredients": [
       {
-        "item": "waxy potatoes, Yukon Gold or red new potatoes",
-        "slug": "waxy-potato",
+        "item": "mackerel fillets (saba), skin-on, pin-bones removed",
+        "slug": "mackerel",
         "optional": false
       },
       {
@@ -41,102 +42,148 @@
         "optional": false
       },
       {
-        "item": "water",
+        "item": "sake",
+        "slug": "sake",
         "optional": false
       },
       {
-        "item": "bay leaf",
-        "slug": "bay-leaf",
+        "item": "daikon radish, peeled",
+        "slug": "daikon",
         "optional": false
       },
       {
-        "item": "thick-cut bacon",
-        "slug": "bacon",
+        "item": "ponzu sauce",
         "optional": false
       },
       {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "dijon mustard",
-        "slug": "dijon-mustard",
-        "optional": false
-      },
-      {
-        "item": "whole grain mustard",
-        "optional": false
-      },
-      {
-        "item": "white wine vinegar",
-        "slug": "white-wine-vinegar",
-        "optional": false
-      },
-      {
-        "item": "chicken stock, warmed",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (sunflower or rapeseed)",
+        "item": "neutral oil (high smoke point: rice bran, grapeseed, or refined avocado)",
         "slug": "neutral-oil",
         "optional": false
       },
       {
-        "item": "fresh chives",
-        "slug": "chives",
+        "item": "scallion, green tops only",
+        "slug": "scallion",
         "optional": false
       },
       {
-        "item": "fresh parsley, flat-leaf",
-        "slug": "parsley",
+        "item": "shichimi tōgarashi (Japanese seven-spice)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "fish-skin-scoring",
+      "dry-brining",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "heavy-carbon-steel-or-cast-iron-skillet",
+      "fine-mesh-sieve",
+      "oroshigane-or-microplane",
+      "fish-spatula"
+    ],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 48,
+      "diffLabel": "medium",
+      "timeLead": "48 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/ponzu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ponzu",
+    "desc": "Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and katsuobushi, then refrigerated 24 hours to extract the kombu glutamate and katsuobushi inosinate into the citrus-soy base. Strained the next day to a clear, deeply aromatic citrus-soy sauce. The canonical washoku dipping and finishing sauce; dramatically more aromatic than any bottled version because the volatile citrus top notes have not had months to fade in storage.",
+    "tags": [
+      "japanese",
+      "sauce",
+      "umami",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "ponzu",
+    "cuisine": "Japanese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 1445,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "yuzu juice (or a 3:1 blend of fresh lemon juice and lime juice)",
+        "slug": "yuzu",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "mirin (hon-mirin, not mirin-style seasoning)",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
         "optional": false
       }
     ],
     "techniques": [
-      "lardon-rendering",
-      "deglazing",
-      "vinaigrette-emulsion"
+      "dashi"
     ],
-    "equipment": [],
+    "equipment": [
+      "fine-mesh-sieve",
+      "glass-jar-or-bottle"
+    ],
     "added": "2026-05-11",
     "_card": {
-      "totalMinutes": 60,
+      "totalMinutes": 1445,
       "diffLabel": "easy",
-      "timeLead": "1 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 40,
-      "filterMinutes": 40
+      "timeLead": "5 min",
+      "timeAnnotation": "+ 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 5,
+      "filterMinutes": 5
     }
   },
   {
-    "path": "pages/techniques/lardon-rendering.html",
+    "path": "pages/techniques/fish-skin-scoring.html",
     "type": "technique",
     "category": "techniques",
-    "title": "Lardon rendering",
-    "desc": "Slowly extract the fat from cubed or stripped cured pork (bacon, pancetta, guanciale, salt pork) by starting in a cold pan over medium-low heat, so the fat liquefies gradually as the meat browns. The rendered fat becomes the cooking medium for the dish that follows; the crisp meat lardons become the textural top note.",
+    "title": "Fish skin scoring",
+    "desc": "Cross-hatch or parallel cuts through the skin and surface fat layer of a fish fillet to release contraction tension during the sear, expose the subcutaneous fat for rendering, and let cure salt or seasoning penetrate the silver hide uniformly.",
     "tags": [
-      "fat",
-      "pork"
+      "fish",
+      "seafood"
     ],
     "status": "complete",
-    "_slug": "lardon-rendering",
+    "_slug": "fish-skin-scoring",
     "updated": "2026-05-10",
     "added": "2026-05-11",
     "_card": {
@@ -144,45 +191,25 @@
     }
   },
   {
-    "path": "pages/ingredients/bacon.html",
+    "path": "pages/ingredients/daikon.html",
     "type": "ingredient",
     "category": "ingredients",
-    "title": "Bacon",
-    "desc": "American-style smoked, sugar-brined pork belly. Structural rendered-fat-and-smoke base under American breakfasts, German warm potato salads (Schwäbischer Kartoffelsalat), New England chowders, BLTs, and any dish where smoke-and-sweet pork crisp is the load-bearing flavor.",
+    "title": "Daikon (radish)",
+    "desc": "Long white winter radish (Raphanus sativus var. longipinnatus), 90 to 95% water by weight, with active myrosinase enzymes that convert intact glucosinolates into pungent isothiocyanates the moment cell walls are ruptured. The structural ingredient of oden, daikon mochi, kkakdugi, banh mi do chua, and the Japanese oroshi (raw grated radish) condiment.",
     "tags": [
-      "pork",
-      "umami",
-      "pantry"
+      "vegetable",
+      "japanese",
+      "korean",
+      "chinese"
     ],
     "status": "complete",
-    "_slug": "bacon",
+    "_slug": "daikon",
     "updated": "2026-05-10",
     "added": "2026-05-11",
     "_card": {
-      "primaryTag": "pork",
+      "primaryTag": "vegetable",
       "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/chives.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Chives",
-    "desc": "Allium schoenoprasum, the smallest of the cultivated alliums. Hollow grass-thin green leaves, mild fresh onion aromatic, used raw or barely-heated as a finishing herb across French sauce work, German potato salads, Eastern European sour cream applications, and any dish where allium brightness is wanted without the volume or pungency of onion.",
-    "tags": [
-      "herb",
-      "aromatic",
-      "vegetable"
-    ],
-    "status": "complete",
-    "_slug": "chives",
-    "updated": "2026-05-10",
-    "added": "2026-05-11",
-    "_card": {
-      "primaryTag": "herb",
-      "usedInCount": 1,
-      "hasNutrition": true
+      "hasNutrition": false
     }
   },
   {
