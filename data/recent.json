@@ -1,5 +1,191 @@
 [
   {
+    "path": "pages/recipes/german-warm-potato-salad-with-bacon-and-mustard.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "German warm potato salad with bacon and mustard",
+    "desc": "Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm in their own steam window with a vinegar-mustard-stock-and-bacon-fat emulsion, finished with crisp bacon lardons, sweated onion, and a deep fold of fresh chives and parsley. The dressing is built directly in the rendered bacon fat by deglazing with white wine vinegar, dissolving dijon and a measured pinch of sugar into the hot fond, then thinning with chicken stock; poured over still-warm potatoes that absorb the dressing as they cool, the salad reads tart, savory, and structurally satisfying in a way no cold mayonnaise-bound American potato salad approaches.",
+    "tags": [
+      "salad",
+      "german",
+      "potato",
+      "pork",
+      "side",
+      "comfort",
+      "acid",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "german-warm-potato-salad-with-bacon-and-mustard",
+    "cuisine": "German",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 40,
+      "total_min": 60,
+      "active_min": 40
+    },
+    "updated": "2026-05-10",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "waxy potatoes, Yukon Gold or red new potatoes",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "thick-cut bacon",
+        "slug": "bacon",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "whole grain mustard",
+        "optional": false
+      },
+      {
+        "item": "white wine vinegar",
+        "slug": "white-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, warmed",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (sunflower or rapeseed)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh chives",
+        "slug": "chives",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley, flat-leaf",
+        "slug": "parsley",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "lardon-rendering",
+      "deglazing",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/techniques/lardon-rendering.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Lardon rendering",
+    "desc": "Slowly extract the fat from cubed or stripped cured pork (bacon, pancetta, guanciale, salt pork) by starting in a cold pan over medium-low heat, so the fat liquefies gradually as the meat browns. The rendered fat becomes the cooking medium for the dish that follows; the crisp meat lardons become the textural top note.",
+    "tags": [
+      "fat",
+      "pork"
+    ],
+    "status": "complete",
+    "_slug": "lardon-rendering",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/ingredients/bacon.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Bacon",
+    "desc": "American-style smoked, sugar-brined pork belly. Structural rendered-fat-and-smoke base under American breakfasts, German warm potato salads (Schwäbischer Kartoffelsalat), New England chowders, BLTs, and any dish where smoke-and-sweet pork crisp is the load-bearing flavor.",
+    "tags": [
+      "pork",
+      "umami",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "bacon",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "pork",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/chives.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chives",
+    "desc": "Allium schoenoprasum, the smallest of the cultivated alliums. Hollow grass-thin green leaves, mild fresh onion aromatic, used raw or barely-heated as a finishing herb across French sauce work, German potato salads, Eastern European sour cream applications, and any dish where allium brightness is wanted without the volume or pungency of onion.",
+    "tags": [
+      "herb",
+      "aromatic",
+      "vegetable"
+    ],
+    "status": "complete",
+    "_slug": "chives",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/recipes/apple-cider-vinegar.html",
     "type": "recipe",
     "category": "recipes",
@@ -1226,217 +1412,6 @@
       "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/mansaf.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Mansaf",
-    "desc": "Bone-in lamb shoulder simmered for hours, then bathed in a sauce built from reconstituted jameed (fermented dried sheep yogurt). Served over saffron-tinted basmati rice on a base layer of paper-thin shrak bread, crowned with samna-toasted pine nuts and almonds. The Bedouin and Jordanian feast dish, technique-faithful.",
-    "tags": [
-      "weekend-project",
-      "lamb",
-      "levantine",
-      "braise",
-      "comfort",
-      "umami",
-      "rice",
-      "fermentation"
-    ],
-    "status": "complete",
-    "_slug": "mansaf",
-    "cuisine": "Jordanian",
-    "course": "dinner",
-    "difficulty": "hard",
-    "servings": 6,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 240,
-      "total_min": 270,
-      "active_min": 90
-    },
-    "updated": "2026-05-06",
-    "ingredients": [
-      {
-        "item": "jameed stones",
-        "slug": "jameed",
-        "optional": false
-      },
-      {
-        "item": "cold water for the soak",
-        "optional": false
-      },
-      {
-        "item": "bone-in lamb shoulder, cut into 6 large pieces by the butcher",
-        "slug": "lamb-shoulder",
-        "optional": false
-      },
-      {
-        "item": "cold water for the braise",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, peeled and halved",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods, lightly cracked",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "optional": false
-      },
-      {
-        "item": "whole black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "mastic resin, crushed (optional but traditional)",
-        "optional": true
-      },
-      {
-        "item": "kosher salt for the braise",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "cornstarch",
-        "optional": false
-      },
-      {
-        "item": "cold water for the cornstarch slurry",
-        "optional": false
-      },
-      {
-        "item": "basmati rice",
-        "slug": "basmati-rice",
-        "optional": false
-      },
-      {
-        "item": "samna (clarified butter)",
-        "slug": "samna",
-        "optional": false
-      },
-      {
-        "item": "ground turmeric",
-        "optional": false
-      },
-      {
-        "item": "hot water for the rice",
-        "optional": false
-      },
-      {
-        "item": "kosher salt for the rice",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "samna for the nuts",
-        "slug": "samna",
-        "optional": false
-      },
-      {
-        "item": "pine nuts",
-        "optional": false
-      },
-      {
-        "item": "slivered blanched almonds",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley, finely chopped",
-        "optional": false
-      },
-      {
-        "item": "shrak or markook bread (paper-thin Bedouin flatbread)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "cooked-yogurt-sauce",
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "heavy-saucepan",
-      "instant-read-thermometer"
-    ],
-    "added": "2026-05-06",
-    "_card": {
-      "totalMinutes": 270,
-      "diffLabel": "hard",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "+ 3 h rest",
-      "timeMode": "active",
-      "activeMinutes": 90,
-      "filterMinutes": 90
-    }
-  },
-  {
-    "path": "pages/techniques/cooked-yogurt-sauce.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Cooked yogurt sauce",
-    "desc": "Stabilize yogurt with starch or egg, temper into the hot dish, and hold at a tremor below the boil. Casein curdles above 85 °C without help; the help is what makes a yogurt-based stew possible.",
-    "tags": [
-      "dairy",
-      "fermentation"
-    ],
-    "status": "complete",
-    "_slug": "cooked-yogurt-sauce",
-    "updated": "2026-05-06",
-    "added": "2026-05-06",
-    "_card": {
-      "usedInCount": 1
-    }
-  },
-  {
-    "path": "pages/ingredients/basmati-rice.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Basmati rice",
-    "desc": "Long-grain aromatic rice from the Indian subcontinent, low in amylopectin and high in 2-acetyl-1-pyrroline. Grains stay separate, lengthen dramatically on cooking, and carry a popcorn-pandan aroma that defines the cuisine it anchors.",
-    "tags": [
-      "rice",
-      "grain"
-    ],
-    "status": "complete",
-    "_slug": "basmati-rice",
-    "updated": "2026-05-06",
-    "added": "2026-05-06",
-    "_card": {
-      "primaryTag": "grain",
-      "usedInCount": 3,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/jameed.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Jameed",
-    "desc": "Fermented sheep or goat yogurt, salted and sun-dried into stone-hard cones. Reconstitutes into a sour, funky, glutamate-heavy sauce base that no live yogurt approximates.",
-    "tags": [
-      "dairy",
-      "umami",
-      "fermentation",
-      "levantine"
-    ],
-    "status": "complete",
-    "_slug": "jameed",
-    "updated": "2026-05-06",
-    "added": "2026-05-06",
-    "_card": {
-      "primaryTag": "dairy",
-      "usedInCount": 1,
-      "hasNutrition": false
     }
   }
 ]

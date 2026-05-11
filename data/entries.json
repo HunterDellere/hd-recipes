@@ -64,6 +64,27 @@
     }
   },
   {
+    "path": "pages/ingredients/bacon.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Bacon",
+    "desc": "American-style smoked, sugar-brined pork belly. Structural rendered-fat-and-smoke base under American breakfasts, German warm potato salads (Schwäbischer Kartoffelsalat), New England chowders, BLTs, and any dish where smoke-and-sweet pork crisp is the load-bearing flavor.",
+    "tags": [
+      "pork",
+      "umami",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "bacon",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "pork",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/basil.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -215,6 +236,27 @@
     }
   },
   {
+    "path": "pages/ingredients/chives.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chives",
+    "desc": "Allium schoenoprasum, the smallest of the cultivated alliums. Hollow grass-thin green leaves, mild fresh onion aromatic, used raw or barely-heated as a finishing herb across French sauce work, German potato salads, Eastern European sour cream applications, and any dish where allium brightness is wanted without the volume or pungency of onion.",
+    "tags": [
+      "herb",
+      "aromatic",
+      "vegetable"
+    ],
+    "status": "complete",
+    "_slug": "chives",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/cotija.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -272,7 +314,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -649,7 +691,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -751,7 +793,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -1206,7 +1248,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1229,6 +1271,26 @@
       "primaryTag": "vegetable",
       "usedInCount": 1,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/white-wine-vinegar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "White wine vinegar",
+    "desc": "Dry white wine fermented with acetobacter into a 6 to 7 percent acetic acid, lightly fruity, clean-finishing culinary vinegar. The default French and Central European vinegar for vinaigrettes, beurre blanc reductions, hollandaise acidification, German warm potato dressings, and any application where the acid should read as crisp without the wood-and-fruit weight of red wine vinegar or the harsher edge of distilled white.",
+    "tags": [
+      "acid",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "white-wine-vinegar",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   },
   {
@@ -1291,6 +1353,27 @@
       "primaryTag": "legume",
       "usedInCount": 1,
       "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/yellow-onion.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Yellow onion",
+    "desc": "The Allium cepa workhorse cultivar with brown-yellow papery skin and high sulfur volatile load. The default cooking onion across Western and many Asian cuisines: sweetens dramatically on long heat, holds together in sautées, and forms the aromatic foundation of soffritto, mirepoix, and German Speckbraten.",
+    "tags": [
+      "aromatic",
+      "vegetable",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "yellow-onion",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   },
   {
@@ -1917,6 +2000,132 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/german-warm-potato-salad-with-bacon-and-mustard.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "German warm potato salad with bacon and mustard",
+    "desc": "Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm in their own steam window with a vinegar-mustard-stock-and-bacon-fat emulsion, finished with crisp bacon lardons, sweated onion, and a deep fold of fresh chives and parsley. The dressing is built directly in the rendered bacon fat by deglazing with white wine vinegar, dissolving dijon and a measured pinch of sugar into the hot fond, then thinning with chicken stock; poured over still-warm potatoes that absorb the dressing as they cool, the salad reads tart, savory, and structurally satisfying in a way no cold mayonnaise-bound American potato salad approaches.",
+    "tags": [
+      "salad",
+      "german",
+      "potato",
+      "pork",
+      "side",
+      "comfort",
+      "acid",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "german-warm-potato-salad-with-bacon-and-mustard",
+    "cuisine": "German",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 40,
+      "total_min": 60,
+      "active_min": 40
+    },
+    "updated": "2026-05-10",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "waxy potatoes, Yukon Gold or red new potatoes",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "thick-cut bacon",
+        "slug": "bacon",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "whole grain mustard",
+        "optional": false
+      },
+      {
+        "item": "white wine vinegar",
+        "slug": "white-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, warmed",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (sunflower or rapeseed)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh chives",
+        "slug": "chives",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley, flat-leaf",
+        "slug": "parsley",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "lardon-rendering",
+      "deglazing",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
     }
   },
   {
@@ -3963,6 +4172,24 @@
     }
   },
   {
+    "path": "pages/techniques/lardon-rendering.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Lardon rendering",
+    "desc": "Slowly extract the fat from cubed or stripped cured pork (bacon, pancetta, guanciale, salt pork) by starting in a cold pan over medium-low heat, so the fat liquefies gradually as the meat browns. The rendered fat becomes the cooking medium for the dish that follows; the crisp meat lardons become the textural top note.",
+    "tags": [
+      "fat",
+      "pork"
+    ],
+    "status": "complete",
+    "_slug": "lardon-rendering",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/mortar-pounding.html",
     "type": "technique",
     "category": "techniques",
@@ -4084,7 +4311,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
@@ -4145,7 +4372,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": false
     }
   },
@@ -11680,7 +11907,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 27,
+      "usedInCount": 28,
       "hasNutrition": true
     }
   },
@@ -13488,7 +13715,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 26,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -13525,7 +13752,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 43,
+      "usedInCount": 44,
       "hasNutrition": true
     }
   },
@@ -15277,7 +15504,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -15739,6 +15966,90 @@
       "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-bacon.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade bacon",
+    "desc": "Pork belly cured for 7 days in salt, pink curing salt #1 (sodium nitrite), sugar, and aromatics, then cold-smoked over hardwood for 12 to 24 hours. The home-cured product is markedly more complex than supermarket bacon, with the cure profile tuned to the cook's preference and the smoke level chosen by the cook. Weekend project; 10 days elapsed time, 4 hours active. Stub.",
+    "tags": [
+      "weekend-project",
+      "pork",
+      "fermentation",
+      "pantry",
+      "make-ahead",
+      "umami"
+    ],
+    "status": "stub",
+    "_slug": "homemade-bacon",
+    "cuisine": "",
+    "course": "stock",
+    "difficulty": "medium",
+    "servings": 20,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 1440,
+      "total_min": 14400,
+      "active_min": 240
+    },
+    "updated": "2026-05-10",
+    "ingredients": [
+      {
+        "item": "pork belly, skin off",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "pink curing salt #1 (sodium nitrite 6.25 percent, salt 93.75 percent)",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "black pepper, coarsely cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "garlic, microplaned",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "hardwood for smoking (hickory, apple, maple, or cherry)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 14400,
+      "diffLabel": "medium",
+      "timeLead": "4 h",
+      "timeAnnotation": "+ 10 d rest",
+      "timeMode": "active",
+      "activeMinutes": 240,
+      "filterMinutes": 240
     }
   },
   {
