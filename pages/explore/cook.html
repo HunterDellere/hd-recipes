@@ -79,7 +79,7 @@
     <div class="fam-intro">
       <p class="fam-intro-text">Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.</p>
       <div class="fam-stats" role="navigation" aria-label="Jump to category"><a class="fam-stat" href="#cat-recipes" data-category="recipes">
-        <span class="fam-stat-num">91</span>
+        <span class="fam-stat-num">113</span>
         <span class="fam-stat-label">Recipes</span>
       </a></div>
     </div>
@@ -115,6 +115,18 @@
               <span class="filter-opt-label">French</span>
             </label>
             <label class="filter-opt">
+              <input type="radio" name="cuisine" value="French (Provençal, Marseille)" data-filter-cuisine="French (Provençal, Marseille)">
+              <span class="filter-opt-label">French (Provençal, Marseille)</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="German" data-filter-cuisine="German">
+              <span class="filter-opt-label">German</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Goan (Konkan coast, India)" data-filter-cuisine="Goan (Konkan coast, India)">
+              <span class="filter-opt-label">Goan (Konkan coast, India)</span>
+            </label>
+            <label class="filter-opt">
               <input type="radio" name="cuisine" value="Indian" data-filter-cuisine="Indian">
               <span class="filter-opt-label">Indian</span>
             </label>
@@ -129,6 +141,10 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Italian-American" data-filter-cuisine="Italian-American">
               <span class="filter-opt-label">Italian-American</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Italian-American (North Beach, San Francisco)" data-filter-cuisine="Italian-American (North Beach, San Francisco)">
+              <span class="filter-opt-label">Italian-American (North Beach, San Francisco)</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Japanese" data-filter-cuisine="Japanese">
@@ -147,6 +163,10 @@
               <span class="filter-opt-label">Levantine</span>
             </label>
             <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Mediterranean" data-filter-cuisine="Mediterranean">
+              <span class="filter-opt-label">Mediterranean</span>
+            </label>
+            <label class="filter-opt">
               <input type="radio" name="cuisine" value="Mediterranean (Levantine lean)" data-filter-cuisine="Mediterranean (Levantine lean)">
               <span class="filter-opt-label">Mediterranean (Levantine lean)</span>
             </label>
@@ -155,8 +175,16 @@
               <span class="filter-opt-label">Mexican</span>
             </label>
             <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Mexican-American" data-filter-cuisine="Mexican-American">
+              <span class="filter-opt-label">Mexican-American</span>
+            </label>
+            <label class="filter-opt">
               <input type="radio" name="cuisine" value="Pakistani" data-filter-cuisine="Pakistani">
               <span class="filter-opt-label">Pakistani</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Pan-Asian / West African pantry crossover" data-filter-cuisine="Pan-Asian / West African pantry crossover">
+              <span class="filter-opt-label">Pan-Asian / West African pantry crossover</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Scottish" data-filter-cuisine="Scottish">
@@ -169,6 +197,10 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Vietnamese" data-filter-cuisine="Vietnamese">
               <span class="filter-opt-label">Vietnamese</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="West African (Senegalese-inspired)" data-filter-cuisine="West African (Senegalese-inspired)">
+              <span class="filter-opt-label">West African (Senegalese-inspired)</span>
             </label>
         </div>
       </details>
@@ -342,12 +374,12 @@
               <span class="filter-opt-label">lamb</span>
             </label>
             <label class="filter-opt">
-              <input type="checkbox" value="make-ahead" data-filter-tag="make-ahead">
-              <span class="filter-opt-label">make-ahead</span>
+              <input type="checkbox" value="legume" data-filter-tag="legume">
+              <span class="filter-opt-label">legume</span>
             </label>
             <label class="filter-opt">
-              <input type="checkbox" value="mediterranean" data-filter-tag="mediterranean">
-              <span class="filter-opt-label">mediterranean</span>
+              <input type="checkbox" value="make-ahead" data-filter-tag="make-ahead">
+              <span class="filter-opt-label">make-ahead</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="no-cook" data-filter-tag="no-cook">
@@ -534,16 +566,30 @@
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">
         <h2 class="fam-cat-title">Recipes</h2>
-        <span class="fam-cat-count">91 entries</span>
+        <span class="fam-cat-count">113 entries</span>
       </div>
       <p class="fam-cat-blurb">Tested dishes — scale, shop, cook.</p>
       <div class="card-grid" data-grid>
+        <a class="entry-card" href="../recipes/apple-cider-vinegar.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="sauce" data-diet="vegan|gluten-free" data-difficulty="medium" data-time="20" data-tags="fermentation|pantry|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Apple cider vinegar</span><span class="ec-desc">Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. A two-stag</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>20 min</strong> active</span><span class="ec-time-annot">+ 42 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/banana-bread.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="dessert" data-diet="vegetarian" data-difficulty="easy" data-time="15" data-tags="american|comfort|dessert|breakfast|fruit|quick-bread|bread">
           <span class="ec-cat">recipes</span><span class="ec-title">Banana bread</span><span class="ec-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maximally soft </span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">dessert</span><span class="ec-meta-item ec-meta-time"><strong>1 h 10 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>10</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/bouillabaisse-marseillaise.html" data-category="recipes" data-type="recipe" data-card data-cuisine="French (Provençal, Marseille)" data-course="dinner" data-diet="dairy-free" data-difficulty="hard" data-time="90" data-tags="seafood|fish|stew|soup|french|mediterranean|weekend-project|umami|acid|one-pot">
+          <span class="ec-cat">recipes</span><span class="ec-title">Bouillabaisse Marseillaise</span><span class="ec-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified with the he</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">French (Provençal, Marseille)</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>2 h 15 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-hard">hard</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/beef-broth.html" data-category="recipes" data-type="recipe" data-card data-cuisine="French" data-course="sauce" data-diet="gluten-free|dairy-free" data-difficulty="medium" data-time="40" data-tags="beef|pantry|sauce|umami|make-ahead|weekend-project|freezer-friendly">
           <span class="ec-cat">recipes</span><span class="ec-title">Brown beef broth (fond brun de boeuf)</span><span class="ec-desc">Beef bones roasted to deep mahogany, simmered with charred onions, carrot, celery, and tomato paste for a rich</span>
@@ -570,6 +616,13 @@
           <span class="ec-cat">recipes</span><span class="ec-title">Caesar salad with anchovy emulsion</span><span class="ec-desc">Cold romaine hearts under a coddled-egg-yolk dressing built around dissolved anchovy, garlic, dijon, lemon, wo</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Italian-American</span><span class="ec-meta-item">appetizer</span><span class="ec-meta-item ec-meta-time"><strong>30 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/vietnamese-canh-chua-tamarind-sour-soup-with-catfish.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Vietnamese" data-course="dinner" data-diet="dairy-free|gluten-free" data-difficulty="medium" data-time="35" data-tags="vietnamese|seafood|fish|soup|weeknight|one-pot">
+          <span class="ec-cat">recipes</span><span class="ec-title">Canh chua cá (Vietnamese tamarind sour soup with catfish)</span><span class="ec-desc">Southern Vietnamese sour soup built on a tamarind-acidified broth, with pineapple, tomato, taro stem (bạc hà),</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Vietnamese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>45 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
@@ -642,6 +695,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">snack</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>25 min</strong> active</span><span class="ec-time-annot">+ 1 d rest</span></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/cioppino-san-francisco-italian-american-seafood-stew.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian-American (North Beach, San Francisco)" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="75" data-tags="seafood|fish|stew|italian|american|weekend-project|umami|acid|one-pot|comfort">
+          <span class="ec-cat">recipes</span><span class="ec-title">Cioppino (San Francisco Italian-American seafood stew)</span><span class="ec-desc">The North Beach Italian-American seafood stew built around a tomato-fennel-saffron broth fortified with seafoo</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian-American (North Beach, San Francisco)</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>1 h 45 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/classic-pancakes.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="breakfast" data-diet="vegetarian" data-difficulty="easy" data-time="20" data-tags="weeknight|american|comfort|egg|dairy|grain">
           <span class="ec-cat">recipes</span><span class="ec-title">Classic pancakes</span><span class="ec-desc">Whole milk soured with vinegar replaces buttermilk — the acid drives CO2 from baking soda and pushes pH high e</span>
@@ -720,12 +780,33 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/german-warm-potato-salad-with-bacon-and-mustard.html" data-category="recipes" data-type="recipe" data-card data-cuisine="German" data-course="side" data-diet="" data-difficulty="easy" data-time="40" data-tags="salad|german|potato|pork|side|comfort|acid|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">German warm potato salad with bacon and mustard</span><span class="ec-desc">Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm in their </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">German</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>1 h</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/ginger-lime-honey-vinaigrette.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Pan-Asian / West African pantry crossover" data-course="sauce" data-diet="vegetarian|gluten-free|dairy-free" data-difficulty="easy" data-time="5" data-tags="sauce|acid|aromatic|no-cook|make-ahead">
+          <span class="ec-cat">recipes</span><span class="ec-title">Ginger-lime-honey vinaigrette</span><span class="ec-desc">A bright, sharp, gently sweet vinaigrette built on microplaned ginger, fresh lime juice, honey, a small hit of</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Pan-Asian / West African pantry crossover</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>5 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/ginger-scallion-oil.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="sauce" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="20" data-tags="sauce|aromatic|chinese|pantry|make-ahead|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Ginger-scallion oil (薑蔥油, geung chung yau)</span><span class="ec-desc">Cantonese aromatic finishing oil. Minced ginger and scallion shocked with smoking-hot neutral oil into a paste</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>20 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/goan-fish-curry-xacuti.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Goan (Konkan coast, India)" data-course="dinner" data-diet="dairy-free|gluten-free" data-difficulty="medium" data-time="60" data-tags="seafood|fish|stew|indian|spicy|umami|acid|one-pot|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Goan fish curry (xacuti)</span><span class="ec-desc">Xacuti (sha-KU-ti): the dark, deeply aromatic Goan fish curry built on a roasted spice paste of dry-toasted de</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Goan (Konkan coast, India)</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>1 h 25 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/green-curry-pork.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Thai" data-course="dinner" data-diet="" data-difficulty="medium" data-time="35" data-tags="weeknight|thai|pork|spicy|umami|stew|braise">
           <span class="ec-cat">recipes</span><span class="ec-title">Green curry pork</span><span class="ec-desc">A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shrimp paste.</span>
@@ -741,12 +822,26 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/korean-haemul-pajeon-seafood-scallion-pancake.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Korean" data-course="appetizer" data-diet="dairy-free|pescatarian" data-difficulty="medium" data-time="30" data-tags="korean|seafood|fritter|fried|weeknight|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Haemul pajeon (Korean seafood and scallion pancake, 해물파전)</span><span class="ec-desc">A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight bed of scal</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">appetizer</span><span class="ec-meta-item ec-meta-time"><strong>35 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/homemade-panko-breadcrumbs.html" data-category="recipes" data-type="recipe" data-card data-cuisine="" data-course="side" data-diet="" data-difficulty="easy" data-time="12" data-tags="bread|pantry|make-ahead|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Homemade panko breadcrumbs</span><span class="ec-desc">Crustless white bread, dried low and slow, then ground coarse. The result is the long, splintery shard of real</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/homemade-tahini.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="sauce" data-diet="vegan" data-difficulty="easy" data-time="20" data-tags="weekend-project|pantry|levantine|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Homemade tahini</span><span class="ec-desc">Hulled sesame seeds toasted lightly at 160 °C and ground with neutral oil to a smooth, pourable paste. Fresher</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>25 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/house-blend-chai.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian" data-course="drink" data-diet="vegetarian" data-difficulty="easy" data-time="10" data-tags="tea|indian|drink|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">House blend chai</span><span class="ec-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.</span>
@@ -783,6 +878,20 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/korean-pajeon-dipping-sauce.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Korean" data-course="sauce" data-diet="vegan|dairy-free" data-difficulty="easy" data-time="4" data-tags="sauce|korean|pantry|make-ahead|umami|acid">
+          <span class="ec-cat">recipes</span><span class="ec-title">Korean pajeon dipping sauce (cho-ganjang, 초간장)</span><span class="ec-desc">Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condiment that </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>13 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/korean-oi-muchim-spicy-cucumber-salad.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Korean" data-course="side" data-diet="dairy-free|gluten-free" data-difficulty="easy" data-time="12" data-tags="korean|salad|vegetable|spicy|no-cook|side|pickle">
+          <span class="ec-cat">recipes</span><span class="ec-title">Korean spicy cucumber salad (oi-muchim, 오이무침)</span><span class="ec-desc">Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, rice vinega</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>25 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/ojingeo-bokkeum.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Korean" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="25" data-tags="korean|seafood|fish|spicy|stir-fry|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)</span><span class="ec-desc">Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-gochugaru s</span>
         <div class="ec-foot">
@@ -796,6 +905,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Thai</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>28 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/lebanese-pita-bread.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="bread" data-diet="vegetarian" data-difficulty="medium" data-time="60" data-tags="bread|levantine|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Lebanese pita bread</span><span class="ec-desc">Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The high-heat</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">bread</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h</strong> active</span><span class="ec-time-annot">+ 2 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/lemony-green-beans-with-garlic-crunch.html" data-category="recipes" data-type="recipe" data-card data-cuisine="American" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="20" data-tags="vegetable|side|holiday|american|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Lemony green beans with garlic crunch</span><span class="ec-desc">Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on to</span>
@@ -881,6 +997,20 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Japanese" data-course="dinner" data-diet="dairy-free|gluten-free|pescatarian" data-difficulty="medium" data-time="18" data-tags="japanese|fish|seafood|weeknight|umami">
+          <span class="ec-cat">recipes</span><span class="ec-title">Pan-seared mackerel with daikon oroshi and ponzu</span><span class="ec-desc">Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to firm the fles</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Japanese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>48 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>2</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/panzanella-with-charred-tomatoes.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Italian" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="35" data-tags="salad|italian|mediterranean|vegetable|side|weeknight|umami|acid|bread">
+          <span class="ec-cat">recipes</span><span class="ec-title">Panzanella with charred tomatoes</span><span class="ec-desc">Tuscan bread salad rebuilt as a study in tomato states: ripe heirloom flesh salt-cured to extract its glutamat</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Italian</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>1 h 15 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/pav-bhaji.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian" data-course="dinner" data-diet="vegetarian" data-difficulty="easy" data-time="45" data-tags="indian|vegetable|comfort">
           <span class="ec-cat">recipes</span><span class="ec-title">Pav bhaji (Mumbai street vegetable mash)</span><span class="ec-desc">Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghee-and-onio</span>
         <div class="ec-foot">
@@ -894,6 +1024,20 @@
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>30 min</strong> active</span><span class="ec-time-annot">+ 10 d rest</span></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/pomegranate-molasses.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Levantine" data-course="sauce" data-diet="vegan|gluten-free" data-difficulty="easy" data-time="10" data-tags="sauce|levantine|pantry|make-ahead">
+          <span class="ec-cat">recipes</span><span class="ec-title">Pomegranate molasses</span><span class="ec-desc">Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levantine and Pe</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Levantine</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/ponzu.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Japanese" data-course="sauce" data-diet="dairy-free|pescatarian" data-difficulty="easy" data-time="5" data-tags="japanese|sauce|umami|pantry|make-ahead">
+          <span class="ec-cat">recipes</span><span class="ec-title">Ponzu</span><span class="ec-desc">Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and katsuobushi, </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Japanese</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>5 min</strong> active</span><span class="ec-time-annot">+ 1 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/pork-century-egg-congee.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="breakfast" data-diet="" data-difficulty="medium" data-time="30" data-tags="rice|pork|chinese|comfort|breakfast|one-pot|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Pork and century egg congee (皮蛋瘦肉粥)</span><span class="ec-desc">The canonical Cantonese savory congee. Bone-in pork shoulder simmered into the rice provides its own stock; cu</span>
@@ -937,6 +1081,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/red-wine-vinegar.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mediterranean" data-course="sauce" data-diet="vegan|gluten-free|dairy-free" data-difficulty="medium" data-time="30" data-tags="fermentation|acid|pantry|mediterranean|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Red wine vinegar</span><span class="ec-desc">Live mother of vinegar fed leftover red wine in a wide jar — acetobacter oxidizes the ethanol to acetic acid o</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>30 min</strong> active</span><span class="ec-time-annot">+ 60 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>30</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/kheer.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian" data-course="dessert" data-diet="vegetarian" data-difficulty="easy" data-time="70" data-tags="indian|dessert|rice">
           <span class="ec-cat">recipes</span><span class="ec-title">Rice kheer (chawal ki kheer)</span><span class="ec-desc">Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and saffron, f</span>
         <div class="ec-foot">
@@ -972,6 +1123,20 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>2</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/roasted-sweet-potato-and-black-bean-salad-with-chipotle-lime.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mexican-American" data-course="dinner" data-diet="vegetarian|gluten-free" data-difficulty="easy" data-time="30" data-tags="salad|mexican|vegetable|roast|legume|umami|acid|spicy">
+          <span class="ec-cat">recipes</span><span class="ec-title">Roasted sweet potato and black bean salad with chipotle-lime vinaigrette</span><span class="ec-desc">Hard-roasted sweet potato cubes with caramelized edges tossed with cumin-rinsed black beans, charred corn, red</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mexican-American</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>55 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/rouille-saffron-garlic-aioli.html" data-category="recipes" data-type="recipe" data-card data-cuisine="French (Provençal, Marseille)" data-course="sauce" data-diet="vegetarian" data-difficulty="medium" data-time="15" data-tags="sauce|french|mediterranean|umami|pantry|make-ahead">
+          <span class="ec-cat">recipes</span><span class="ec-title">Rouille (saffron-garlic aioli for bouillabaisse)</span><span class="ec-desc">The Provençal saffron-and-garlic mayonnaise that crowns bouillabaisse and bourride, built from soaked bread (o</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">French (Provençal, Marseille)</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><strong>15 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/nicoise-salad.html" data-category="recipes" data-type="recipe" data-card data-cuisine="French" data-course="lunch" data-diet="pescatarian|gluten-free|dairy-free" data-difficulty="medium" data-time="40" data-tags="salad|french|mediterranean|fish|egg|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Salade niçoise</span><span class="ec-desc">Oil-poached tuna, blanched haricots verts, jammy egg, salt-cured tomato, and nicoise olives over an anchovy-di</span>
         <div class="ec-foot">
@@ -986,12 +1151,33 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>3</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/salt-cured-anchovies.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mediterranean" data-course="side" data-diet="pescatarian|gluten-free|dairy-free" data-difficulty="medium" data-time="90" data-tags="fermentation|fish|pantry|umami|mediterranean|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Salt-cured anchovies</span><span class="ec-desc">Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until cathepsin proteases h</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h 30 min</strong> active</span><span class="ec-time-annot">+ 365 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/salt-packed-capers.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Mediterranean" data-course="side" data-diet="vegan|gluten-free|dairy-free" data-difficulty="medium" data-time="60" data-tags="fermentation|pantry|pickle|mediterranean|make-ahead|weekend-project">
+          <span class="ec-cat">recipes</span><span class="ec-title">Salt-packed capers</span><span class="ec-desc">Fresh caper buds wilted, salt-packed, and cured for 30 to 60 days. The dry-salt method partially degrades gluc</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h</strong> active</span><span class="ec-time-annot">+ 42 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
+        </a>
         <a class="entry-card" href="../recipes/salted-duck-egg-yolks.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Chinese" data-course="sauce" data-diet="gluten-free" data-difficulty="medium" data-time="45" data-tags="egg|chinese|pantry|umami|fermentation|make-ahead|weekend-project">
           <span class="ec-cat">recipes</span><span class="ec-title">Salted duck egg yolks (home brine cure)</span><span class="ec-desc">Raw duck eggs cured thirty-five days in saturated brine, then steamed and the yolks separated. Dense, fudgy, o</span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">sauce</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>45 min</strong> active</span><span class="ec-time-annot">+ 35 d rest</span></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>12</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/senegalese-thiakry-millet-salad-or-west-african-grain-salad.html" data-category="recipes" data-type="recipe" data-card data-cuisine="West African (Senegalese-inspired)" data-course="dinner" data-diet="vegan|gluten-free" data-difficulty="easy" data-time="30" data-tags="salad|grain|fruit|umami|acid|no-cook|make-ahead">
+          <span class="ec-cat">recipes</span><span class="ec-title">Senegalese-inspired savory millet salad with mango, mint, and ginger-lime</span><span class="ec-desc">Pearl millet steamed to a fork-fluffed crumb, then tossed with diced ripe mango, slivered red onion macerated </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">West African (Senegalese-inspired)</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/shrimp-pulao.html" data-category="recipes" data-type="recipe" data-card data-cuisine="Indian" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="indian|seafood|rice|one-pot|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Shrimp pulao (jhinga pulao)</span><span class="ec-desc">Coastal-Indian basmati pilaf cooked with marinated shrimp, ginger-garlic, whole spices, and a coconut-milk-and</span>

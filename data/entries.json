@@ -17,7 +17,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -38,7 +38,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -59,6 +59,27 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/bacon.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Bacon",
+    "desc": "American-style smoked, sugar-brined pork belly. Structural rendered-fat-and-smoke base under American breakfasts, German warm potato salads (Schwäbischer Kartoffelsalat), New England chowders, BLTs, and any dish where smoke-and-sweet pork crisp is the load-bearing flavor.",
+    "tags": [
+      "pork",
+      "umami",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "bacon",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "pork",
       "usedInCount": 1,
       "hasNutrition": true
     }
@@ -80,6 +101,28 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
+      "usedInCount": 3,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/black-beans.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Black beans (frijoles negros)",
+    "desc": "Small to medium black-skinned legumes (Phaseolus vulgaris cv. Black Turtle) with a creamy off-white interior. The structural legume of central Mexican, Cuban, and Brazilian cooking; rich in soluble fiber, anthocyanin pigments in the seed coat, and the highest free-glutamate of any common bean.",
+    "tags": [
+      "legume",
+      "pantry",
+      "umami",
+      "mexican"
+    ],
+    "status": "complete",
+    "_slug": "black-beans",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "legume",
       "usedInCount": 1,
       "hasNutrition": true
     }
@@ -121,6 +164,26 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/catfish.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Catfish (channel, basa, swai)",
+    "desc": "Freshwater bottom-feeding finfish in several closely related families, 6 to 12% fat by weight, with a firm dense white flesh, a thin skin that crisps when seared, and a characteristic mild flavor with a slight earthy back-note from sediment-feeding biology. The structural fish of the US South, the Mississippi delta, the Mekong delta, and Bangladeshi and West African catfish traditions.",
+    "tags": [
+      "fish",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "catfish",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fish",
       "usedInCount": 1,
       "hasNutrition": false
     }
@@ -165,6 +228,91 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/chipotle-in-adobo.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chipotle in adobo",
+    "desc": "Smoke-cured ripe jalapeños (chipotle morita or chipotle meco) rehydrated in a tomato-vinegar-aromatic sauce. The most concentrated form of Mexican smoke heat in a single pantry can; carries pectin and tomato emulsifier body that makes it function as a vinaigrette base, not just a flavoring.",
+    "tags": [
+      "spice",
+      "umami",
+      "mexican",
+      "spicy",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "chipotle-in-adobo",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/chives.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chives",
+    "desc": "Allium schoenoprasum, the smallest of the cultivated alliums. Hollow grass-thin green leaves, mild fresh onion aromatic, used raw or barely-heated as a finishing herb across French sauce work, German potato salads, Eastern European sour cream applications, and any dish where allium brightness is wanted without the volume or pungency of onion.",
+    "tags": [
+      "herb",
+      "aromatic",
+      "vegetable"
+    ],
+    "status": "complete",
+    "_slug": "chives",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/cod.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Cod",
+    "desc": "Atlantic or Pacific cod (Gadus morhua, G. macrocephalus). Mild, flaky, low-fat (0.7 percent) white-fleshed groundfish; the canonical lean white fish of the North Atlantic. Cooks in a narrow window because of the very low fat content. The default firm-white-fish substitute when halibut is unavailable, and the structural protein of fish-and-chips, brandade, bacalao, and Iberian salt-cod traditions.",
+    "tags": [
+      "seafood",
+      "fish"
+    ],
+    "status": "complete",
+    "_slug": "cod",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/cotija.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Cotija",
+    "desc": "Aged Mexican cow-milk cheese from the highlands of Michoacán and Jalisco. Hard, dry, salt-forward, intensely lactic; the canonical finishing-and-grating cheese for elote, esquites, beans, and roasted-vegetable salads. Often called \"the Parmesan of Mexico\" though closer in microstructure to a young pecorino or ricotta salata.",
+    "tags": [
+      "dairy",
+      "umami",
+      "mexican"
+    ],
+    "status": "complete",
+    "_slug": "cotija",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "dairy",
       "usedInCount": 1,
       "hasNutrition": true
     }
@@ -185,7 +333,90 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 2,
+      "usedInCount": 4,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/culantro.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Culantro (ngò gai, sawtooth herb)",
+    "desc": "Long sawtooth-edged herb (Eryngium foetidum) in the same family as cilantro but with a more intense, slightly bitter aromatic profile carrying the same dodecenal compound as cilantro at 3 to 5× concentration. The defining herb of Caribbean sazón, Vietnamese pho and canh chua, and several Southeast Asian sour-soup traditions.",
+    "tags": [
+      "herb"
+    ],
+    "status": "complete",
+    "_slug": "culantro",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/curry-leaf.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Curry leaf",
+    "desc": "Murraya koenigii, fresh leaves from the curry leaf tree. Small, dark-green, shiny leaves with a distinct citrusy-anise-slightly-nutty aroma from carbazole alkaloids and linalool. Not interchangeable with bay leaves; not the source of \"curry powder.\" The defining aromatic of South Indian and Sri Lankan cooking, dropped into hot fat seconds before any liquid is added and used in virtually every South Indian tadka.",
+    "tags": [
+      "herb",
+      "aromatic",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "curry-leaf",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/daikon.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Daikon (radish)",
+    "desc": "Long white winter radish (Raphanus sativus var. longipinnatus), 90 to 95% water by weight, with active myrosinase enzymes that convert intact glucosinolates into pungent isothiocyanates the moment cell walls are ruptured. The structural ingredient of oden, daikon mochi, kkakdugi, banh mi do chua, and the Japanese oroshi (raw grated radish) condiment.",
+    "tags": [
+      "vegetable",
+      "japanese",
+      "korean",
+      "chinese"
+    ],
+    "status": "complete",
+    "_slug": "daikon",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/desiccated-coconut.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Desiccated coconut (unsweetened)",
+    "desc": "The dried, grated flesh of mature coconut (Cocos nucifera), with the water removed but the fat largely intact. Available in fine, medium, and shredded forms. Higher fat content (roughly 65 percent, predominantly lauric acid and myristic acid saturated fats) than fresh grated coconut but structurally similar in cooking applications. The pantry form used in South Asian spice pastes, Goan xacuti masala, Southeast Asian kaya, and Central American and Caribbean coconut sweets.",
+    "tags": [
+      "fat",
+      "aromatic",
+      "spice"
+    ],
+    "status": "complete",
+    "_slug": "desiccated-coconut",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fat",
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -206,7 +437,28 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 4,
+      "usedInCount": 6,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/dried-oregano.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dried oregano (Mediterranean)",
+    "desc": "Dried leaves of Origanum vulgare, the Mediterranean oregano. Carvacrol- and thymol-dominant, peppery and slightly camphoraceous; the canonical Italian-American pizza herb and a quiet structural backbone in tomato sauces and Greek cooking.",
+    "tags": [
+      "herb",
+      "spice",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "dried-oregano",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
       "hasNutrition": false
     }
   },
@@ -223,6 +475,45 @@
     ],
     "status": "complete",
     "_slug": "dried-shrimp",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/dry-white-wine.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dry white wine (for cooking)",
+    "desc": "Fermented grape wine, white, dry (residual sugar under 4 g/L), 11 to 13 percent alcohol, with acidity at 6 to 8 g/L (tartaric). The default acid-aromatic deglaze and braising liquid in French, Italian, and Spanish cooking; not \"cooking wine,\" which is salted and degraded.",
+    "tags": [
+      "acid",
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "dry-white-wine",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/dungeness-crab.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dungeness crab",
+    "desc": "Pacific brachyuran crustacean, Metacarcinus magister, harvested live from Alaska to central California. Sweet, large-flaked white meat plus rich brown mustard (the hepatopancreas); the body meat is the canonical ingredient under San Francisco cioppino and West Coast crab boils.",
+    "tags": [
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "dungeness-crab",
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
@@ -250,6 +541,46 @@
     "_card": {
       "primaryTag": "grain",
       "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/fennel-bulb.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fennel bulb",
+    "desc": "Florence or Sweet fennel, Foeniculum vulgare var. dulce. Crisp white-green basal bulb (swollen leaf bases, not a true bulb) with anise-perfumed fronds and feathery green stalks. Anethole-dominant, with parsley and tarragon undertones; the canonical bulb of Mediterranean fish cookery.",
+    "tags": [
+      "vegetable",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "fennel-bulb",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/fennel-seed.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fennel seed",
+    "desc": "Dried ripe fruit of Foeniculum vulgare. Greenish-brown ribbed seeds, intensely anise-scented from trans-anethole concentration of 30 to 50 mg per gram. The defining spice of Italian sweet sausage and a quiet structural element in seafood broths and South Asian spice blends.",
+    "tags": [
+      "spice",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "fennel-seed",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -292,6 +623,29 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "grain",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/gochugaru.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Gochugaru (Korean chili flakes, 고추가루)",
+    "desc": "Sun-dried Korean red chili (Capsicum annuum, taeyangcho cultivar) milled to flakes or fine powder. Mild to medium heat (1,500 to 10,000 Scoville), bright red color, rounded warm aromatic profile. The chili-flake top note across Korean cooking; structural in kimchi, oi-muchim, ojingeo bokkeum, and tteokbokki.",
+    "tags": [
+      "korean",
+      "pantry",
+      "spicy",
+      "aromatic",
+      "spice"
+    ],
+    "status": "complete",
+    "_slug": "gochugaru",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "aromatic",
       "usedInCount": 2,
       "hasNutrition": false
     }
@@ -360,6 +714,48 @@
     }
   },
   {
+    "path": "pages/ingredients/ground-cumin.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ground cumin",
+    "desc": "Powdered seeds of Cuminum cyminum. Functionally a different ingredient from whole cumin seeds: distributes evenly through dry rubs, doughs, and dressings without the discrete tempered-seed pop, but loses aromatic potency far faster than whole seeds. The base seasoning across Mexican, North African, and Tex-Mex cooking.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "mexican"
+    ],
+    "status": "complete",
+    "_slug": "ground-cumin",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/halibut.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Halibut",
+    "desc": "Large Pacific or Atlantic flatfish (Hippoglossus stenolepis or H. hippoglossus). Dense, mild, low-fat white flesh; cooks in a narrow window because of the low collagen and low intramuscular fat. The premium \"firm white fish\" for chunks in stews and seared fillets.",
+    "tags": [
+      "seafood",
+      "fish"
+    ],
+    "status": "complete",
+    "_slug": "halibut",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/haricots-verts.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -415,8 +811,29 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 4,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/kokum.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Kokum",
+    "desc": "Garcinia indica, a small dark-purple Indian fruit in the mangosteen family. Dried rind strips or kokum sol (kokum butter-extracted dried fruit) are the canonical souring agent of Goan and Konkan coastal cooking. The sour compound is hydroxycitric acid (HCA), which produces a mildly fruity-astringent, distinctly non-citrus sourness. The souring agent in Goan fish curry (xacuti), sol kadi (Goan drink), and the tart coastal curries of Maharashtra.",
+    "tags": [
+      "acid",
+      "spice",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "kokum",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   },
   {
@@ -432,6 +849,26 @@
     ],
     "status": "complete",
     "_slug": "lacinato-kale",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/leek.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Leek",
+    "desc": "Allium ampeloprasum var. porrum. Long, mild allium with a thick blanched white-and-pale-green stem and tougher dark-green leaf tops. Sweeter and more delicate than yellow onion, with a high sulfur-compound load that mellows fast under heat. The structural sweet-aromatic of French stocks, soups, and Provençal fish broths.",
+    "tags": [
+      "vegetable",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "leek",
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
@@ -458,7 +895,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 7,
+      "usedInCount": 10,
       "hasNutrition": true
     }
   },
@@ -479,7 +916,68 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
-      "usedInCount": 4,
+      "usedInCount": 9,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/littleneck-clams.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Littleneck clams (and Manila clams)",
+    "desc": "Hard-shell bivalve mollusc, Mercenaria mercenaria (Atlantic littleneck, the smallest size class of quahog) and Venerupis philippinarum (Manila clam, Pacific). Sweet, briny, mineral; the muscle locks at shell-open and toughens within 60 to 90 seconds of additional heat.",
+    "tags": [
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "littleneck-clams",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/mackerel.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mackerel (saba)",
+    "desc": "Oily blue-skinned pelagic fish, 12 to 18% fat by weight, with a dense subcutaneous lipid layer and a dark muscle band along the lateral line. The signature ingredient of saba shioyaki, shime-saba, smoked mackerel pâté, and the Mediterranean grilled-mackerel canon.",
+    "tags": [
+      "fish",
+      "seafood",
+      "japanese",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "mackerel",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fish",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/mango.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mango",
+    "desc": "The fruit of Mangifera indica, an Anacardiaceae-family tropical tree. Eaten ripe as a sweet-aromatic fruit, eaten unripe as a tart-acidic vegetable across South Asian, Southeast Asian, and Caribbean cooking.",
+    "tags": [
+      "fruit",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "mango",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -526,6 +1024,26 @@
     }
   },
   {
+    "path": "pages/ingredients/millet.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Millet (pearl millet, foxtail millet, finger millet)",
+    "desc": "A family of small-seeded grasses cultivated for their grains across West Africa, South Asia, and East Asia. The kernels are gluten-free, faintly sweet, and cook to a couscous-like crumb or a polenta-like porridge depending on water ratio.",
+    "tags": [
+      "grain",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "millet",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/mint.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -541,7 +1059,67 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 4,
+      "usedInCount": 5,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/monkfish.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Monkfish",
+    "desc": "Lophius americanus or L. piscatorius, the Atlantic anglerfish. A bottom-dwelling predatory fish with a famously ugly head and a single dense, sweet, lean tail loin. The flesh has a tight, lobster-like texture and reads meaty rather than flaky; nicknamed \"poor man's lobster\" for the comparison. The structural firm-fish in Provençal bouillabaisse where rockfish is unavailable, and the canonical Iberian and French rape (Spanish) or lotte (French) for stews and sears.",
+    "tags": [
+      "seafood",
+      "fish"
+    ],
+    "status": "complete",
+    "_slug": "monkfish",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/mussels.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mussels (blue mussel)",
+    "desc": "Bivalve mollusc, Mytilus edulis (Atlantic blue mussel) or Mytilus galloprovincialis (Mediterranean). Briny, sweet, fast-cooking; the muscle locks at the moment the shell hinges open and toughens within another minute.",
+    "tags": [
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "mussels",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/mustard-seeds.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mustard seeds (black / brown)",
+    "desc": "Brassica nigra (black mustard) or B. juncea (brown mustard). Small, round, very hard seeds packed with glucosinolates that release volatile isothiocyanates (the sharp, pungent \"mustard\" compound) only when the seed coat ruptures via heat or grinding. The defining tempering spice of South Indian and Sri Lankan cooking; structural in Goan fish curry, Bengali mustard fish, and every South Indian tadka.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "mustard-seeds",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -561,7 +1139,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 1,
+      "usedInCount": 8,
       "hasNutrition": false
     }
   },
@@ -608,6 +1186,45 @@
     }
   },
   {
+    "path": "pages/ingredients/okra.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Okra (lady fingers, bhindi, gumbo)",
+    "desc": "Pod of Abelmoschus esculentus, in the mallow family, characterized by ridged green five-sided pods carrying mucilaginous polysaccharides that thicken liquids. The structural thickener of Louisiana gumbo and West African stews, a vegetable of South Asian sabzi, and a finishing element in Vietnamese sour soups.",
+    "tags": [
+      "vegetable"
+    ],
+    "status": "complete",
+    "_slug": "okra",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/orange.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Orange",
+    "desc": "Citrus × sinensis, the sweet orange. Round, orange-rinded fruit with sweet-tart juice (pH 3.3 to 4.2, 8 to 12 percent sugar), a zest layer rich in d-limonene and other monoterpenes, and a bitter white pith. The canonical sweet citrus of the Mediterranean, with the rind serving as an aromatic in savory cooking and the juice as a finishing acid in sweet-sour preparations.",
+    "tags": [
+      "fruit",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "orange",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/oyster-mushroom.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -642,7 +1259,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -663,8 +1280,48 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 4,
+      "usedInCount": 7,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/pepitas.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Pepitas (raw hulled pumpkin seeds)",
+    "desc": "Hulled green seeds of the pumpkin (Cucurbita pepo) and related squash, with the hard white outer hull removed. Rich in unsaturated fat (~50%), protein (~30%), and a distinctive pumpkin-seed-oil aromatic dominated by pyrazines that develop on toasting. The structural Mexican garnish-and-pipián seed.",
+    "tags": [
+      "nuts",
+      "pantry",
+      "mexican"
+    ],
+    "status": "complete",
+    "_slug": "pepitas",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/pineapple.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Pineapple",
+    "desc": "Tropical bromeliad fruit (Ananas comosus), 11 to 15% sugars by weight, 0.6 to 1.0% citric and malic acid, carrying the proteolytic enzyme bromelain in the raw flesh. The structural sweet-acid fruit of Southeast Asian sour soups, Filipino sweet-and-sour braises, Mexican al pastor marinades, and the global tropical pantry.",
+    "tags": [
+      "fruit"
+    ],
+    "status": "complete",
+    "_slug": "pineapple",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   },
   {
@@ -730,6 +1387,47 @@
     }
   },
   {
+    "path": "pages/ingredients/poppy-seeds.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Poppy seeds",
+    "desc": "Papaver somniferum seeds. Small, kidney-shaped, blue-grey (European) or white-ivory (South Asian khus khus). Nutty, mildly earthy flavor from fatty acids (oleic, linoleic) and a small quantity of benzyl isoquinoline alkaloids. Used in South Asian cooking as a paste thickener and mild nutty aromatic (white variety); in Central European baking as a filling and topping (blue-grey variety). The paste function is distinct from the flavor function.",
+    "tags": [
+      "spice",
+      "nuts",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "poppy-seeds",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/potato-starch.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Potato starch",
+    "desc": "Pure starch extracted from potato tubers. Large granule size (50 to 100 microns), high amylose content, gelatinizes at 60 to 65°C. The defining starch for Korean and Japanese crisp coatings and clear thickening.",
+    "tags": [
+      "pantry",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "potato-starch",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/purslane.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -791,6 +1489,25 @@
     }
   },
   {
+    "path": "pages/ingredients/rau-ngo.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Rau ngổ (rice paddy herb)",
+    "desc": "Small-leaved aquatic herb (Limnophila aromatica) native to Southeast Asia, with a citrus-cumin top note from limonene and cuminaldehyde. The defining finishing herb of southern Vietnamese canh chua and several Khmer and Lao sour soups, with no exact substitute.",
+    "tags": [
+      "herb"
+    ],
+    "status": "complete",
+    "_slug": "rau-ngo",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/red-beet.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -826,8 +1543,28 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 4,
       "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/red-pepper-flakes.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Red pepper flakes (crushed red pepper)",
+    "desc": "Coarse-crushed dried red chilies, typically a blend of cayenne and other thin-walled red varieties at 30,000 to 50,000 Scoville. The default Italian-American pizzeria heat shaker; capsaicin and capsanthin are both lipid-soluble, so the flakes bloom in oil rather than water.",
+    "tags": [
+      "spice",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "red-pepper-flakes",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 3,
+      "hasNutrition": false
     }
   },
   {
@@ -847,7 +1584,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -893,6 +1630,27 @@
     }
   },
   {
+    "path": "pages/ingredients/sesame-seeds.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Sesame seeds (white, toasted)",
+    "desc": "Sesamum indicum seed, 50 to 55% oil by weight. Nutty, faintly grassy raw; deeply roasted and aromatic once toasted past the first popping window. The defining garnish across East Asian cooking.",
+    "tags": [
+      "pantry",
+      "spice",
+      "nuts"
+    ],
+    "status": "complete",
+    "_slug": "sesame-seeds",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/shallot.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -908,7 +1666,29 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 5,
+      "usedInCount": 6,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/smoked-paprika.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Smoked paprika (pimentón de la Vera)",
+    "desc": "Spanish red pepper powder made from oak-smoked Capsicum annuum dried over slow wood fires for 10 to 15 days, then stone-ground. The defining smoke aromatic of Spanish cooking and one of the most cost-effective ways to introduce wood-smoke flavor into a dish. Sweet, bittersweet, and hot grades; the sweet variety (pimentón dulce) is the workhorse.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "pantry",
+      "mediterranean"
+    ],
+    "status": "complete",
+    "_slug": "smoked-paprika",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -929,7 +1709,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -976,6 +1756,46 @@
     }
   },
   {
+    "path": "pages/ingredients/tamarind.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Tamarind (pulp, paste, concentrate)",
+    "desc": "Sticky brown fruit pulp from the seed pods of the tamarind tree (Tamarindus indica), 8 to 12% tartaric acid by weight plus malic acid and a high natural sugar load (40 to 60% by weight), giving it a sour-sweet profile with a roasted-fruit back-note. The structural acid of Indian, Thai, Vietnamese, Mexican, and West African cooking.",
+    "tags": [
+      "acid",
+      "fruit",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "tamarind",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/taro-stem.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Taro stem (bạc hà, elephant ear stem)",
+    "desc": "Spongy aerial stem of certain taro varieties (Colocasia esculenta and related), used as a textural vegetable in Vietnamese, Bangladeshi, Filipino, and West African cooking. Pale-green to slightly purple, mildly grassy in flavor, with a porous cellular structure that absorbs broth like an edible sponge.",
+    "tags": [
+      "vegetable"
+    ],
+    "status": "complete",
+    "_slug": "taro-stem",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/thai-chili.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -992,7 +1812,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 2,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -1014,7 +1834,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 4,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -1075,7 +1895,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -1101,6 +1921,26 @@
     }
   },
   {
+    "path": "pages/ingredients/white-wine-vinegar.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "White wine vinegar",
+    "desc": "Dry white wine fermented with acetobacter into a 6 to 7 percent acetic acid, lightly fruity, clean-finishing culinary vinegar. The default French and Central European vinegar for vinaigrettes, beurre blanc reductions, hollandaise acidification, German warm potato dressings, and any application where the acid should read as crisp without the wood-and-fruit weight of red wine vinegar or the harsher edge of distilled white.",
+    "tags": [
+      "acid",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "white-wine-vinegar",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "acid",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/ingredients/whole-white-fish.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -1116,7 +1956,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -1160,6 +2000,308 @@
       "primaryTag": "legume",
       "usedInCount": 1,
       "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/yellow-onion.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Yellow onion",
+    "desc": "The Allium cepa workhorse cultivar with brown-yellow papery skin and high sulfur volatile load. The default cooking onion across Western and many Asian cuisines: sweetens dramatically on long heat, holds together in sautées, and forms the aromatic foundation of soffritto, mirepoix, and German Speckbraten.",
+    "tags": [
+      "aromatic",
+      "vegetable",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "yellow-onion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 4,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/yuzu.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Yuzu",
+    "desc": "East Asian citrus (Citrus junos), a hybrid of mandarin and Ichang papeda, with a fragrant rind heavy in limonene and aromatic terpenes and a sour, somewhat dry juice with the structural acidity of lemon and the floral character of bergamot. The aromatic anchor of ponzu, yuzu kosho, and most refined Japanese citrus applications.",
+    "tags": [
+      "fruit",
+      "acid",
+      "japanese",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "yuzu",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/apple-cider-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Apple cider vinegar",
+    "desc": "Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. A two-stage cure: wild yeast on the apple skins converts sugar to ethanol, then airborne acetobacter converts ethanol to acetic acid. Yields a live, unpasteurized cider vinegar with apple character lost in commercial bottling.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "apple-cider-vinegar",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
+        "optional": false
+      },
+      {
+        "item": "cane sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "filtered water, room temperature",
+        "optional": false
+      },
+      {
+        "item": "splash of unfiltered raw apple cider vinegar (optional, as starter)",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/bouillabaisse-marseillaise.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Bouillabaisse Marseillaise",
+    "desc": "The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified with the heads and bones of multiple firm white fish (the structural Provençal canon: rascasse, conger eel, monkfish, john dory; in US markets: monkfish, cod, halibut, snapper, sea bass), simmered hard to a milky emulsion, then strained and brought back to a bare simmer to poach the fish chunks. Served in two courses: the broth first, ladled over saffron-rubbed croutons crowned with rouille (a saffron-garlic aioli); the fish second, on a separate platter with steamed potatoes and more rouille. The defining Provençal seafood dish, distinct from cioppino in the broth-strain step, the fish-on-the-side service, and the saffron-orange-fennel aromatic signature.",
+    "tags": [
+      "seafood",
+      "fish",
+      "stew",
+      "soup",
+      "french",
+      "mediterranean",
+      "weekend-project",
+      "umami",
+      "acid",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "bouillabaisse-marseillaise",
+    "cuisine": "French (Provençal, Marseille)",
+    "course": "dinner",
+    "difficulty": "hard",
+    "servings": 6,
+    "time": {
+      "prep_min": 60,
+      "cook_min": 75,
+      "total_min": 135,
+      "active_min": 90
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, large dice",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "leek, white and pale-green parts, sliced (reserve dark-green tops for stock)",
+        "slug": "leek",
+        "optional": false
+      },
+      {
+        "item": "fennel bulb, large dice (reserve fronds for finish)",
+        "slug": "fennel-bulb",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, smashed",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fennel seed",
+        "slug": "fennel-seed",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "canned San Marzano whole peeled tomatoes, crushed by hand",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "dry white wine (Provençal rosé, Sauvignon Blanc, or unoaked Mediterranean white)",
+        "slug": "dry-white-wine",
+        "optional": false
+      },
+      {
+        "item": "fish bones, heads, and trimmings (from the fish below, plus extras from the fishmonger)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "saffron threads",
+        "slug": "saffron",
+        "optional": false
+      },
+      {
+        "item": "orange peel, wide strips (no pith)",
+        "slug": "orange",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley stems (reserve leaves for finish)",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "monkfish loin, membrane removed",
+        "slug": "monkfish",
+        "optional": false
+      },
+      {
+        "item": "cod fillet, skin on or off",
+        "slug": "cod",
+        "optional": false
+      },
+      {
+        "item": "halibut fillet, skinless",
+        "slug": "halibut",
+        "optional": false
+      },
+      {
+        "item": "whole white fish (snapper, sea bass, or branzino), cleaned, head and tail removed and reserved for the broth",
+        "slug": "whole-white-fish",
+        "optional": false
+      },
+      {
+        "item": "waxy potato (Yukon Gold or fingerling), peeled, sliced 1 cm thick",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "baguette or country sourdough, sliced into 1.5 cm rounds",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, halved (for rubbing the croutons)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (for the croutons)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "rouille (saffron-garlic aioli, see homemade alternatives)",
+        "optional": false
+      },
+      {
+        "item": "fresh flat-leaf parsley, chopped (reserved leaves)",
+        "optional": false
+      },
+      {
+        "item": "fennel fronds (reserved from Phase 1)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics",
+      "deglazing",
+      "maillard-sear",
+      "pan-emulsion"
+    ],
+    "equipment": [
+      "stockpot",
+      "fine-mesh-strainer",
+      "dutch-oven"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 135,
+      "diffLabel": "hard",
+      "timeLead": "2 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 90,
+      "filterMinutes": 90
     }
   },
   {
@@ -1404,6 +2546,212 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/cioppino-san-francisco-italian-american-seafood-stew.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cioppino (San Francisco Italian-American seafood stew)",
+    "desc": "The North Beach Italian-American seafood stew built around a tomato-fennel-saffron broth fortified with seafood stock and dry white wine, loaded with Dungeness crab (in the shell), halibut chunks, head-on shrimp, littleneck clams, and mussels, finished with basil, parsley, and crushed red pepper, served with toasted sourdough rubbed with raw garlic. The clams and mussels are staged into the broth so all bivalves open within a single 60-second window. A whole-table dish: cracked shells, broth-soaked bread, hands and bibs.",
+    "tags": [
+      "seafood",
+      "fish",
+      "stew",
+      "italian",
+      "american",
+      "weekend-project",
+      "umami",
+      "acid",
+      "one-pot",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "cioppino-san-francisco-italian-american-seafood-stew",
+    "cuisine": "Italian-American (North Beach, San Francisco)",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 45,
+      "cook_min": 60,
+      "total_min": 105,
+      "active_min": 75
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, fine dice",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "fennel bulb, fine dice (reserve fronds for finish)",
+        "slug": "fennel-bulb",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fennel seed, toasted and crushed",
+        "slug": "fennel-seed",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes (crushed red pepper)",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "dried oregano (Mediterranean)",
+        "slug": "dried-oregano",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "dry white wine (Pinot Grigio, Sauvignon Blanc, or unoaked Italian white)",
+        "slug": "dry-white-wine",
+        "optional": false
+      },
+      {
+        "item": "canned San Marzano whole peeled tomatoes, crushed by hand",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "seafood stock (homemade roasted-shell version, see recipe) or 1:1 fish stock and clam juice",
+        "optional": false
+      },
+      {
+        "item": "saffron threads",
+        "slug": "saffron",
+        "optional": false
+      },
+      {
+        "item": "anchovy fillets in oil",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme",
+        "optional": false
+      },
+      {
+        "item": "lemon peel, wide strips (no pith)",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "Dungeness crab, live or pre-cooked, cleaned and quartered",
+        "slug": "dungeness-crab",
+        "optional": false
+      },
+      {
+        "item": "halibut fillet, skinless",
+        "slug": "halibut",
+        "optional": false
+      },
+      {
+        "item": "head-on shrimp (or shell-on tail-on jumbo shrimp)",
+        "slug": "shrimp",
+        "optional": false
+      },
+      {
+        "item": "littleneck clams (or Manila clams), purged in salt water",
+        "slug": "littleneck-clams",
+        "optional": false
+      },
+      {
+        "item": "mussels, debearded",
+        "slug": "mussels",
+        "optional": false
+      },
+      {
+        "item": "fresh basil, chiffonade",
+        "slug": "basil",
+        "optional": false
+      },
+      {
+        "item": "fresh flat-leaf parsley, chopped",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "fennel fronds (reserved from Phase 1)",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon, cut into wedges for the table",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (finishing pour)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "stale sourdough bread, sliced 2 cm thick",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, halved",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (for toast)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "staged-bivalve-steam",
+      "blooming-aromatics",
+      "deglazing",
+      "maillard-sear",
+      "pan-emulsion"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "large-pot",
+      "mortar-and-pestle"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 105,
+      "diffLabel": "medium",
+      "timeLead": "1 h 45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 75,
+      "filterMinutes": 75
     }
   },
   {
@@ -1727,6 +3075,447 @@
     }
   },
   {
+    "path": "pages/recipes/german-warm-potato-salad-with-bacon-and-mustard.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "German warm potato salad with bacon and mustard",
+    "desc": "Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm in their own steam window with a vinegar-mustard-stock-and-bacon-fat emulsion, finished with crisp bacon lardons, sweated onion, and a deep fold of fresh chives and parsley. The dressing is built directly in the rendered bacon fat by deglazing with white wine vinegar, dissolving dijon and a measured pinch of sugar into the hot fond, then thinning with chicken stock; poured over still-warm potatoes that absorb the dressing as they cool, the salad reads tart, savory, and structurally satisfying in a way no cold mayonnaise-bound American potato salad approaches.",
+    "tags": [
+      "salad",
+      "german",
+      "potato",
+      "pork",
+      "side",
+      "comfort",
+      "acid",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "german-warm-potato-salad-with-bacon-and-mustard",
+    "cuisine": "German",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 40,
+      "total_min": 60,
+      "active_min": 40
+    },
+    "updated": "2026-05-10",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "waxy potatoes, Yukon Gold or red new potatoes",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "thick-cut bacon",
+        "slug": "bacon",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "whole grain mustard",
+        "optional": false
+      },
+      {
+        "item": "white wine vinegar",
+        "slug": "white-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, warmed",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (sunflower or rapeseed)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh chives",
+        "slug": "chives",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley, flat-leaf",
+        "slug": "parsley",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "lardon-rendering",
+      "deglazing",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/recipes/ginger-lime-honey-vinaigrette.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ginger-lime-honey vinaigrette",
+    "desc": "A bright, sharp, gently sweet vinaigrette built on microplaned ginger, fresh lime juice, honey, a small hit of chili, and a neutral oil. The microplaned ginger acts as a structural particulate stabilizer; the dressing emulsifies on hand-whisking and holds integrated for 20 to 30 minutes, longer with a brief re-shake. Pairs across grain salads, raw cabbage slaws, charred broccoli, grilled fish, and as a quick dipping sauce for raw vegetables.",
+    "tags": [
+      "sauce",
+      "acid",
+      "aromatic",
+      "no-cook",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "ginger-lime-honey-vinaigrette",
+    "cuisine": "Pan-Asian / West African pantry crossover",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh ginger, microplaned to a paste",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "thai chili, finely minced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut, grapeseed, or rice bran)",
+        "slug": "neutral-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 5,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
+    "path": "pages/recipes/goan-fish-curry-xacuti.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Goan fish curry (xacuti)",
+    "desc": "Xacuti (sha-KU-ti): the dark, deeply aromatic Goan fish curry built on a roasted spice paste of dry-toasted desiccated coconut, white poppy seeds, Kashmiri chilies, coriander seeds, black pepper, cloves, cinnamon, and star anise, wet-ground to a coarse paste and cooked down with a mustard-seed-and-curry-leaf tadka, caramelized onion, garlic, ginger, and kokum for the sour finish. Kingfish steaks or skin-on pomfret (or whole white fish steaks) are marinated in turmeric and salt, seared briefly, then simmered in the coconut-spice gravy until just cooked through. The defining Goan-Konkan fish preparation: a curry that reads roasted, nutty, aromatic, and sour rather than the cream-thickened or blended-tomato register of North Indian fish curries.",
+    "tags": [
+      "seafood",
+      "fish",
+      "stew",
+      "indian",
+      "spicy",
+      "umami",
+      "acid",
+      "one-pot",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "goan-fish-curry-xacuti",
+    "cuisine": "Goan (Konkan coast, India)",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 45,
+      "cook_min": 40,
+      "total_min": 85,
+      "active_min": 60
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "desiccated coconut (unsweetened, fine or medium shred)",
+        "slug": "desiccated-coconut",
+        "optional": false
+      },
+      {
+        "item": "white poppy seeds (khus khus)",
+        "slug": "poppy-seeds",
+        "optional": false
+      },
+      {
+        "item": "Kashmiri dried chilies, whole",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "coriander seeds",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "cloves, whole",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick (or cassia bark), broken",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, rough chop",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "whole white fish steaks (kingfish, pomfret, snapper, or mahi-mahi), cut 3 to 4 cm thick",
+        "slug": "whole-white-fish",
+        "optional": false
+      },
+      {
+        "item": "turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil or coconut oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "mustard seeds (black or brown)",
+        "slug": "mustard-seeds",
+        "optional": false
+      },
+      {
+        "item": "curry leaves, fresh or frozen",
+        "slug": "curry-leaf",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, fine dice",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "tomato, roughly chopped",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "coconut milk, full-fat",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "kokum (dried rind strips)",
+        "slug": "kokum",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh lime, cut in wedges",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro, torn",
+        "slug": "cilantro",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "spice-tempering",
+      "maillard-sear",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "blender",
+      "dutch-oven",
+      "heavy-skillet"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 85,
+      "diffLabel": "medium",
+      "timeLead": "1 h 25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-tahini.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade tahini",
+    "desc": "Hulled sesame seeds toasted lightly at 160 °C and ground with neutral oil to a smooth, pourable paste. Fresher and more aromatic than commercial bottles, especially against supermarket house-brand tahini.",
+    "tags": [
+      "weekend-project",
+      "pantry",
+      "levantine",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "homemade-tahini",
+    "cuisine": "Levantine",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 25,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan"
+    ],
+    "ingredients": [
+      {
+        "item": "hulled white sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (avocado, refined sunflower, or grapeseed)",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/kachumber-with-cumin-lime.html",
     "type": "recipe",
     "category": "recipes",
@@ -1831,6 +3620,308 @@
       "timeMode": "total",
       "activeMinutes": 22,
       "filterMinutes": 22
+    }
+  },
+  {
+    "path": "pages/recipes/korean-haemul-pajeon-seafood-scallion-pancake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Haemul pajeon (Korean seafood and scallion pancake, 해물파전)",
+    "desc": "A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight bed of scallion whites, with squid rings, peeled shrimp, and shucked mussels worked into the surface. Set hard in a hot oil film, basted with extra oil at the edges for crisp, flipped once. The Korean canonical seafood pancake; the structural goal is shatter-crisp bottom, tender custardy middle, and a clear acid-and-soy dipping sauce cutting through. The cold-batter, high-oil, starch-loaded technique is the entire game.",
+    "tags": [
+      "korean",
+      "seafood",
+      "fritter",
+      "fried",
+      "weeknight",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "korean-haemul-pajeon-seafood-scallion-pancake",
+    "cuisine": "Korean",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 10,
+      "total_min": 35,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "potato starch",
+        "slug": "potato-starch",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "large egg, beaten",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "ice-cold water (with a few ice cubes melting in)",
+        "optional": false
+      },
+      {
+        "item": "scallions, trimmed to fit pan diameter",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "squid, cleaned",
+        "slug": "squid",
+        "optional": false
+      },
+      {
+        "item": "shrimp, peeled and deveined",
+        "slug": "shrimp",
+        "optional": false
+      },
+      {
+        "item": "mussels, shucked",
+        "slug": "mussels",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (high smoke point: rice bran, grapeseed, or refined avocado)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "pajeon dipping sauce (cho-ganjang)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "batter-frying",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "28-cm-non-stick-or-carbon-steel-skillet",
+      "wide-fish-spatula",
+      "medium-mixing-bowl",
+      "whisk",
+      "small-covered-pot-for-mussels"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 35,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/korean-oi-muchim-spicy-cucumber-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Korean spicy cucumber salad (oi-muchim, 오이무침)",
+    "desc": "Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, rice vinegar, and toasted sesame oil. The fastest Korean banchan: 10 minutes from cucumber to bowl, eaten the same hour for peak crunch.",
+    "tags": [
+      "korean",
+      "salad",
+      "vegetable",
+      "spicy",
+      "no-cook",
+      "side",
+      "pickle"
+    ],
+    "status": "complete",
+    "_slug": "korean-oi-muchim-spicy-cucumber-salad",
+    "cuisine": "Korean",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 25,
+      "active_min": 12
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "Korean or Persian cucumbers, sliced into 3 mm half-moons",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the salt cure)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "gochugaru (Korean chili flakes, coarse)",
+        "slug": "gochugaru",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely grated",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "scallion, thinly sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/korean-pajeon-dipping-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Korean pajeon dipping sauce (cho-ganjang, 초간장)",
+    "desc": "Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condiment that cuts the fried-batter richness of pajeon, haemul pajeon, kimchi-jeon, and most jeon. Built in 3 minutes; should rest 10 minutes for the gochugaru to bloom into the soy and the vinegar to integrate.",
+    "tags": [
+      "sauce",
+      "korean",
+      "pantry",
+      "make-ahead",
+      "umami",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "korean-pajeon-dipping-sauce",
+    "cuisine": "Korean",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 3,
+      "cook_min": 0,
+      "total_min": 13,
+      "active_min": 4
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "gochugaru (Korean chili flakes, coarse)",
+        "slug": "gochugaru",
+        "optional": false
+      },
+      {
+        "item": "scallion, green tops only, thinly sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely grated",
+        "slug": "garlic",
+        "optional": true
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "small-mixing-bowl",
+      "whisk"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 13,
+      "diffLabel": "easy",
+      "timeLead": "13 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 4,
+      "filterMinutes": 4
     }
   },
   {
@@ -1951,6 +4042,77 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/lebanese-pita-bread.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Lebanese pita bread",
+    "desc": "Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The high-heat steam puff sets the surface fast enough that interior steam blows the dough into a hollow balloon; the day-after staling makes it the structural ingredient for fattoush.",
+    "tags": [
+      "bread",
+      "levantine",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "lebanese-pita-bread",
+    "cuisine": "Levantine",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 30,
+      "total_min": 180,
+      "active_min": 60
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "water, lukewarm 32 °C / 90 °F",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 180,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "+ 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {
@@ -2201,6 +4363,438 @@
       "timeMode": "total",
       "activeMinutes": 40,
       "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pan-seared mackerel with daikon oroshi and ponzu",
+    "desc": "Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to firm the flesh and pull surface water, patted dry, and hard-seared skin-side-down in a smoking carbon-steel pan until the fat under the skin renders and the silver hide turns to a tile of crackling. Plated over a mound of cold daikon oroshi (raw grated radish, water pressed off) with a small pour of ponzu around the base. The Japanese saba canon: the lipid load of an oily blue fish managed by salt cure plus high-heat sear, then cut through with a citrus-soy acid and the enzymatic bite of raw daikon.",
+    "tags": [
+      "japanese",
+      "fish",
+      "seafood",
+      "weeknight",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "pan-seared-mackerel-with-daikon-oroshi-and-ponzu",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 8,
+      "total_min": 48,
+      "active_min": 18
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "mackerel fillets (saba), skin-on, pin-bones removed",
+        "slug": "mackerel",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "sake",
+        "slug": "sake",
+        "optional": false
+      },
+      {
+        "item": "daikon radish, peeled",
+        "slug": "daikon",
+        "optional": false
+      },
+      {
+        "item": "ponzu sauce",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (high smoke point: rice bran, grapeseed, or refined avocado)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "scallion, green tops only",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "shichimi tōgarashi (Japanese seven-spice)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "fish-skin-scoring",
+      "dry-brining",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "heavy-carbon-steel-or-cast-iron-skillet",
+      "fine-mesh-sieve",
+      "oroshigane-or-microplane",
+      "fish-spatula"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 48,
+      "diffLabel": "medium",
+      "timeLead": "48 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/panzanella-with-charred-tomatoes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Panzanella with charred tomatoes",
+    "desc": "Tuscan bread salad rebuilt as a study in tomato states: ripe heirloom flesh salt-cured to extract its glutamate-laden water, cherry tomatoes blistered black-spotted in a smoking dry skillet for the Maillard counterpoint, stale sourdough soaked in the resulting tomato water plus red wine vinaigrette, finished with raw red onion, basil, capers, and aggressive olive oil. The thesis is that bread is a flavor sponge engineered to deliver tomato to the eater, not a starch garnish.",
+    "tags": [
+      "salad",
+      "italian",
+      "mediterranean",
+      "vegetable",
+      "side",
+      "weeknight",
+      "umami",
+      "acid",
+      "bread"
+    ],
+    "status": "complete",
+    "_slug": "panzanella-with-charred-tomatoes",
+    "cuisine": "Italian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 15,
+      "total_min": 75,
+      "active_min": 35
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "ripe heirloom or beefsteak tomato",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "cherry or grape tomatoes, ripe",
+        "slug": "cherry-tomato",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "stale sourdough bread, 2 to 4 days old",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "garlic clove",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "persian or english cucumber",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "capers, brine-packed or salt-packed",
+        "slug": "capers",
+        "optional": false
+      },
+      {
+        "item": "fresh basil leaves",
+        "slug": "basil",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tomato-salt-cure",
+      "maillard-sear",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 75,
+      "diffLabel": "easy",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/pomegranate-molasses.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pomegranate molasses",
+    "desc": "Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levantine and Persian sour anchor that defines fattoush dressings, fesenjan, and muhammara.",
+    "tags": [
+      "sauce",
+      "levantine",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "pomegranate-molasses",
+    "cuisine": "Levantine",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 45,
+      "total_min": 50,
+      "active_min": 10
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pure pomegranate juice (POM Wonderful or freshly pressed)",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar (optional, for a sweeter molasses)",
+        "slug": "granulated-sugar",
+        "optional": true
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/ponzu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ponzu",
+    "desc": "Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and katsuobushi, then refrigerated 24 hours to extract the kombu glutamate and katsuobushi inosinate into the citrus-soy base. Strained the next day to a clear, deeply aromatic citrus-soy sauce. The canonical washoku dipping and finishing sauce; dramatically more aromatic than any bottled version because the volatile citrus top notes have not had months to fade in storage.",
+    "tags": [
+      "japanese",
+      "sauce",
+      "umami",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "ponzu",
+    "cuisine": "Japanese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 1445,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "yuzu juice (or a 3:1 blend of fresh lemon juice and lime juice)",
+        "slug": "yuzu",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "mirin (hon-mirin, not mirin-style seasoning)",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dashi"
+    ],
+    "equipment": [
+      "fine-mesh-sieve",
+      "glass-jar-or-bottle"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 1445,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "+ 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
+    "path": "pages/recipes/red-wine-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Red wine vinegar",
+    "desc": "Live mother of vinegar fed leftover red wine in a wide jar — acetobacter oxidizes the ethanol to acetic acid over 60 to 90 days. Yields a vinegar with floral and tannic complexity that pasteurized commercial product lacks.",
+    "tags": [
+      "fermentation",
+      "acid",
+      "pantry",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "red-wine-vinegar",
+    "cuisine": "Mediterranean",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 30,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 86400,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "live mother of vinegar (active acetobacter culture)",
+        "optional": false
+      },
+      {
+        "item": "red wine (dry, unoaked or lightly oaked, 11 to 13.5 percent alcohol)",
+        "optional": false
+      },
+      {
+        "item": "water (filtered, non-chlorinated)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 86400,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 60 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -2614,6 +5208,527 @@
     }
   },
   {
+    "path": "pages/recipes/roasted-sweet-potato-and-black-bean-salad-with-chipotle-lime.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Roasted sweet potato and black bean salad with chipotle-lime vinaigrette",
+    "desc": "Hard-roasted sweet potato cubes with caramelized edges tossed with cumin-rinsed black beans, charred corn, red onion macerated in lime, cilantro, pepitas toasted in their own oil, and crumbled cotija. The dressing is a chipotle-in-adobo, lime, honey, and smoked paprika emulsion built on the adobo as the natural mustard analog. The thesis is the contrast between candy-sweet roasted sweet potato and aggressive smoky-acidic dressing; the cotija and pepitas carry salt and crunch against the soft starchy bean-and-tuber base.",
+    "tags": [
+      "salad",
+      "mexican",
+      "vegetable",
+      "roast",
+      "legume",
+      "umami",
+      "acid",
+      "spicy"
+    ],
+    "status": "complete",
+    "_slug": "roasted-sweet-potato-and-black-bean-salad-with-chipotle-lime",
+    "cuisine": "Mexican-American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 35,
+      "total_min": 55,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "sweet potato (orange-flesh, Beauregard or Garnet)",
+        "slug": "sweet-potato",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika (pimentón de la Vera)",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "fresh corn kernels (or frozen, thawed and patted dry)",
+        "optional": false
+      },
+      {
+        "item": "avocado oil or other neutral high-heat oil",
+        "slug": "avocado-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "cooked black beans (canned, drained and rinsed)",
+        "slug": "black-beans",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "chipotle in adobo (chiles plus sauce)",
+        "slug": "chipotle-in-adobo",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "garlic, microplaned",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "pepitas (raw hulled pumpkin seeds)",
+        "slug": "pepitas",
+        "optional": false
+      },
+      {
+        "item": "cotija cheese",
+        "slug": "cotija",
+        "optional": false
+      },
+      {
+        "item": "avocado, ripe but firm",
+        "slug": "avocado",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-dry-roasting",
+      "vinaigrette-emulsion",
+      "dry-toasting"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 55,
+      "diffLabel": "easy",
+      "timeLead": "55 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/rouille-saffron-garlic-aioli.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Rouille (saffron-garlic aioli for bouillabaisse)",
+    "desc": "The Provençal saffron-and-garlic mayonnaise that crowns bouillabaisse and bourride, built from soaked bread (or a boiled potato), pounded raw garlic, saffron-infused broth, egg yolk, and a slow stream of olive oil. The name (literally \"rust\" in French, for the deep red-orange color) refers to the saffron-cayenne tint that distinguishes rouille from a plain aioli. Spread on toasted baguette croutons, dropped into the broth, or stirred directly into the soup as a thickener-flavor-bomb.",
+    "tags": [
+      "sauce",
+      "french",
+      "mediterranean",
+      "umami",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "rouille-saffron-garlic-aioli",
+    "cuisine": "French (Provençal, Marseille)",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 15,
+      "active_min": 15
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "stale baguette or country bread, crust removed, torn into rough pieces",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "broth from the bouillabaisse pot (or fish stock), warm",
+        "optional": false
+      },
+      {
+        "item": "saffron threads (extra, if using standalone fish stock)",
+        "slug": "saffron",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large egg yolk",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes (or piment d'Espelette if available)",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "mortar-pounding",
+      "egg-yolk-emulsion"
+    ],
+    "equipment": [
+      "mortar-and-pestle",
+      "small-food-processor"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 15,
+      "diffLabel": "medium",
+      "timeLead": "15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/salt-cured-anchovies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salt-cured anchovies",
+    "desc": "Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until cathepsin proteases hydrolyze the myofibrillar proteins into free glutamate and the texture softens into clean, pull-apart fillets.",
+    "tags": [
+      "fermentation",
+      "fish",
+      "pantry",
+      "umami",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "salt-cured-anchovies",
+    "cuisine": "Mediterranean",
+    "course": "side",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 60,
+      "cook_min": 0,
+      "total_min": 525600,
+      "active_min": 90
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "pescatarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh whole anchovies (Engraulis encrasicolus or Pacific equivalent)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt (Mediterranean grey or French sel gris)",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil for the final pack",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 525600,
+      "diffLabel": "medium",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "+ 365 d rest",
+      "timeMode": "active",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
+    "path": "pages/recipes/salt-packed-capers.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salt-packed capers",
+    "desc": "Fresh caper buds wilted, salt-packed, and cured for 30 to 60 days. The dry-salt method partially degrades glucocapparin to mellow raw harshness into a layered floral-mustard-savory finish, with crisper bite than the brined-jar version.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "pickle",
+      "mediterranean",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "salt-packed-capers",
+    "cuisine": "Mediterranean",
+    "course": "side",
+    "difficulty": "medium",
+    "servings": 1,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 60
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh caper buds (Capparis spinosa, picked at first light)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt (Mediterranean grey, sel gris, or any non-iodized non-anti-caking salt)",
+        "optional": false
+      },
+      {
+        "item": "additional coarse sea salt for re-packing",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/senegalese-thiakry-millet-salad-or-west-african-grain-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Senegalese-inspired savory millet salad with mango, mint, and ginger-lime",
+    "desc": "Pearl millet steamed to a fork-fluffed crumb, then tossed with diced ripe mango, slivered red onion macerated in lime, oil-toasted peanuts, mint, cilantro, and a ginger-lime-honey vinaigrette built on a small hit of habanero. The frame borrows from Senegalese thiakry (traditionally a sweet steamed-millet preparation with sour milk and sugar) and reroutes it into a savory grain salad on West African pantry vocabulary: peanut, ginger, scotch-bonnet heat, lime. The thesis is the contrast between the fluffy mildly-sweet grain crumb and the aggressive aromatic dressing, with the mango carrying a structural sweet-juicy load against the heat.",
+    "tags": [
+      "salad",
+      "grain",
+      "fruit",
+      "umami",
+      "acid",
+      "no-cook",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "senegalese-thiakry-millet-salad-or-west-african-grain-salad",
+    "cuisine": "West African (Senegalese-inspired)",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 25,
+      "total_min": 50,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pearl millet, raw",
+        "slug": "millet",
+        "optional": false
+      },
+      {
+        "item": "neutral oil for toasting",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, microplaned",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "thai chili, finely minced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut, grapeseed, or rice bran)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "ripe mango (Ataulfo, Kent, or Alphonso)",
+        "slug": "mango",
+        "optional": false
+      },
+      {
+        "item": "raw peanuts, skin-on",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "mint leaves, packed",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves with tender upper stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "scallion, green parts only",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "vinaigrette-emulsion",
+      "acid-milk-sour"
+    ],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/som-tam-thai-green-papaya-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -2987,6 +6102,179 @@
     }
   },
   {
+    "path": "pages/recipes/vietnamese-canh-chua-tamarind-sour-soup-with-catfish.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Canh chua cá (Vietnamese tamarind sour soup with catfish)",
+    "desc": "Southern Vietnamese sour soup built on a tamarind-acidified broth, with pineapple, tomato, taro stem (bạc hà), okra, and bean sprouts simmered briefly, catfish steaks slipped in for a 4 to 5 minute poach, and the bowl finished with raw rau ngổ, culantro, fried garlic, and Thai chili. The dish lives or dies on the acid-sugar-salt-umami curve, calibrated so the tamarind reads bright and not muddy.",
+    "tags": [
+      "vietnamese",
+      "seafood",
+      "fish",
+      "soup",
+      "weeknight",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "vietnamese-canh-chua-tamarind-sour-soup-with-catfish",
+    "cuisine": "Vietnamese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 20,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "catfish steaks (skin-on, bone-in, 2 to 3 cm thick)",
+        "slug": "catfish",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "tamarind pulp (seedless block)",
+        "slug": "tamarind",
+        "optional": false
+      },
+      {
+        "item": "water (or a light unsalted seafood broth)",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (premium, 30 to 40°N nitrogen)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or light brown sugar)",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "shallot, thinly sliced",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "garlic, smashed",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh pineapple, cored and cut into 1 cm wedges",
+        "slug": "pineapple",
+        "optional": false
+      },
+      {
+        "item": "ripe tomato, cut into 6 wedges each",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "taro stem (bạc hà), peeled and cut into 4 cm angled batons",
+        "slug": "taro-stem",
+        "optional": false
+      },
+      {
+        "item": "fresh okra, trimmed and cut into 2 cm pieces",
+        "slug": "okra",
+        "optional": false
+      },
+      {
+        "item": "mung bean sprouts",
+        "slug": "mung-bean-sprouts",
+        "optional": false
+      },
+      {
+        "item": "rau ngổ (rice paddy herb), coarsely chopped",
+        "slug": "rau-ngo",
+        "optional": false
+      },
+      {
+        "item": "culantro (ngò gai), thinly sliced",
+        "slug": "culantro",
+        "optional": false
+      },
+      {
+        "item": "Thai bird chili, thinly sliced (optional)",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "lime wedges",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tamarind-souring",
+      "blooming-aromatics",
+      "oil-poaching"
+    ],
+    "equipment": [
+      "4 L / 4 qt heavy pot",
+      "fine-mesh sieve",
+      "small frying pan for garlic"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/techniques/batter-frying.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)",
+    "desc": "A cold liquid suspension of flour, starch, and water (sometimes with egg) ladled onto a thin film of oil in a hot pan, set on the bottom into a crisp shell, then flipped to set the top. The mechanism that produces Korean jeon, pajeon, Japanese okonomiyaki, Italian frittelle, and Indian pakora variants.",
+    "tags": [
+      "fried",
+      "fritter",
+      "korean",
+      "japanese"
+    ],
+    "status": "complete",
+    "_slug": "batter-frying",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/comal-charring.html",
     "type": "technique",
     "category": "techniques",
@@ -3021,7 +6309,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 4
+      "usedInCount": 7
     }
   },
   {
@@ -3038,6 +6326,24 @@
     ],
     "status": "complete",
     "_slug": "egg-yolk-emulsion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 2
+    }
+  },
+  {
+    "path": "pages/techniques/fish-skin-scoring.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Fish skin scoring",
+    "desc": "Cross-hatch or parallel cuts through the skin and surface fat layer of a fish fillet to release contraction tension during the sear, expose the subcutaneous fat for rendering, and let cure salt or seasoning penetrate the silver hide uniformly.",
+    "tags": [
+      "fish",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "fish-skin-scoring",
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
@@ -3058,7 +6364,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -3098,6 +6404,24 @@
     }
   },
   {
+    "path": "pages/techniques/lardon-rendering.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Lardon rendering",
+    "desc": "Slowly extract the fat from cubed or stripped cured pork (bacon, pancetta, guanciale, salt pork) by starting in a cold pan over medium-low heat, so the fat liquefies gradually as the meat browns. The rendered fat becomes the cooking medium for the dish that follows; the crisp meat lardons become the textural top note.",
+    "tags": [
+      "fat",
+      "pork"
+    ],
+    "status": "complete",
+    "_slug": "lardon-rendering",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/mortar-pounding.html",
     "type": "technique",
     "category": "techniques",
@@ -3112,7 +6436,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -3129,7 +6453,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {
@@ -3150,6 +6474,42 @@
     }
   },
   {
+    "path": "pages/techniques/spice-tempering.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Spice tempering (tadka / tarka)",
+    "desc": "The South Asian technique of blooming whole spices (mustard seeds, cumin seeds, curry leaves, dried chilies, asafoetida) in very hot fat (ghee, oil, or coconut oil) for 15 to 45 seconds to activate and extract their volatile aromatics, then using that spiced fat as a cooking base or pouring it over a finished dish. The foundational technique of South Asian cooking, present from North Indian dal to South Indian sambar to Goan fish curry.",
+    "tags": [
+      "spice",
+      "aromatic",
+      "indian"
+    ],
+    "status": "complete",
+    "_slug": "spice-tempering",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/staged-bivalve-steam.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Staged bivalve steam",
+    "desc": "Cook multiple bivalve species (clams, mussels, sometimes cockles) together by adding the slower-opening species first and the faster-opening species in a second wave, so all shells open within a 60-second window and no species overcooks.",
+    "tags": [
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "staged-bivalve-steam",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/techniques/tahini-emulsion.html",
     "type": "technique",
     "category": "techniques",
@@ -3160,6 +6520,44 @@
     ],
     "status": "complete",
     "_slug": "tahini-emulsion",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/tamarind-souring.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Tamarind souring (sour-broth extraction and balance)",
+    "desc": "Soak tamarind pulp in hot water 15 to 20 minutes, mash and strain to a clean liquid, then balance the broth with fish sauce or salt (deep umami) and palm or brown sugar (round the sharp tartaric acid). The structural acid technique of canh chua, sambar, pad thai, and the global tamarind-acid cuisine.",
+    "tags": [
+      "acid",
+      "umami",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "tamarind-souring",
+    "updated": "2026-05-10",
+    "added": "2026-05-10",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/techniques/tomato-salt-cure.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Tomato salt cure",
+    "desc": "Salt cut tomato flesh to draw out free water plus dissolved glutamate, citric and malic acid, sugars, and aromatic volatiles. The resulting tomato water is the most concentrated raw-tomato seasoning the kitchen produces; the drained flesh is firmer, sweeter, and umami-denser than the raw fruit.",
+    "tags": [
+      "vegetable",
+      "umami",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "tomato-salt-cure",
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
@@ -3200,7 +6598,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 5
+      "usedInCount": 10
     }
   },
   {
@@ -3261,7 +6659,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 6,
+      "usedInCount": 9,
       "hasNutrition": false
     }
   },
@@ -3300,7 +6698,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -3342,7 +6740,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -3402,7 +6800,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 13,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -3424,7 +6822,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -3514,7 +6912,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -3555,7 +6953,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 12,
+      "usedInCount": 19,
       "hasNutrition": true
     }
   },
@@ -3598,7 +6996,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -3772,7 +7170,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -3837,7 +7235,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -3858,7 +7256,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -3920,7 +7318,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -4004,7 +7402,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "legume",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -4092,7 +7490,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 2,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -4157,7 +7555,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "seafood",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -4177,7 +7575,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -4239,7 +7637,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -4261,7 +7659,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -9347,7 +12745,7 @@
     "updated": "2026-05-09",
     "added": "2026-05-09",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -10758,7 +14156,7 @@
     "updated": "2026-05-04",
     "added": "2026-05-04",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -10776,7 +14174,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -10796,7 +14194,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 26,
+      "usedInCount": 29,
       "hasNutrition": true
     }
   },
@@ -10933,7 +14331,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 19,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -10971,7 +14369,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 29,
+      "usedInCount": 38,
       "hasNutrition": true
     }
   },
@@ -11009,7 +14407,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 24,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -11030,7 +14428,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -11072,7 +14470,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 5,
+      "usedInCount": 8,
       "hasNutrition": false
     }
   },
@@ -11092,7 +14490,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -11111,7 +14509,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 22,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -11191,7 +14589,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "seafood",
-      "usedInCount": 3,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -11544,7 +14942,7 @@
     "added": "2026-04-27",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -12051,7 +15449,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
@@ -12085,7 +15483,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -12416,7 +15814,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -12491,7 +15889,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -12567,7 +15965,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 29,
       "hasNutrition": true
     }
   },
@@ -12587,7 +15985,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 24,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -12604,7 +16002,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 29,
       "hasNutrition": true
     }
   },
@@ -12641,7 +16039,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 41,
+      "usedInCount": 49,
       "hasNutrition": true
     }
   },
@@ -12701,7 +16099,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 9,
+      "usedInCount": 10,
       "hasNutrition": true
     }
   },
@@ -12722,7 +16120,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 15,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -14328,7 +17726,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 21
+      "usedInCount": 26
     }
   },
   {
@@ -14393,7 +17791,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 6
     }
   },
   {
@@ -14408,7 +17806,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 8
     }
   },
   {
@@ -14460,7 +17858,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 10
+      "usedInCount": 16
     }
   },
   {
@@ -14478,7 +17876,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 4
+      "usedInCount": 6
     }
   },
   {
@@ -14534,28 +17932,30 @@
     }
   },
   {
-    "path": "pages/recipes/apple-cider-vinegar.html",
+    "path": "pages/recipes/black-beans-from-dried.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Apple cider vinegar",
-    "desc": "Apple scraps (cores and peels) plus water plus a little sugar, fermented for 4 to 6 weeks under a cloth, produce a live unpasteurized cider vinegar with complex apple character. Stub.",
+    "title": "Black beans from dried",
+    "desc": "Dried black beans soaked overnight then simmered with onion, bay, and a strip of kombu into a creamy bean and a richly seasoned bean liquor. The structural pot of beans for Mexican, Cuban, and African-American cooking. Stub.",
     "tags": [
-      "fermentation",
-      "pantry",
+      "legume",
+      "mexican",
+      "weekend-project",
       "make-ahead",
-      "weekend-project"
+      "umami",
+      "pantry"
     ],
     "status": "stub",
-    "_slug": "apple-cider-vinegar",
-    "cuisine": "American",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 16,
+    "_slug": "black-beans-from-dried",
+    "cuisine": "Mexican",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 8,
     "time": {
-      "prep_min": 15,
-      "cook_min": 0,
-      "total_min": 60480,
-      "active_min": 20
+      "prep_min": 5,
+      "cook_min": 90,
+      "total_min": 575,
+      "active_min": 30
     },
     "updated": "2026-05-10",
     "diet": [
@@ -14564,21 +17964,41 @@
     ],
     "ingredients": [
       {
-        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
+        "item": "dried black beans",
+        "slug": "black-beans",
         "optional": false
       },
       {
-        "item": "cane sugar",
-        "slug": "granulated-sugar",
+        "item": "cold water for soaking",
         "optional": false
       },
       {
-        "item": "filtered water, room temperature",
+        "item": "cold water for cooking",
         "optional": false
       },
       {
-        "item": "splash of unfiltered apple cider vinegar (optional, as starter)",
-        "slug": "apple-cider-vinegar",
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "white onion, halved root-on",
+        "slug": "white-onion",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "kombu, dried",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, smashed",
+        "slug": "garlic",
         "optional": false
       }
     ],
@@ -14586,13 +18006,13 @@
     "equipment": [],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 60480,
-      "diffLabel": "medium",
-      "timeLead": "20 min",
-      "timeAnnotation": "+ 42 d rest",
+      "totalMinutes": 575,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ overnight",
       "timeMode": "active",
-      "activeMinutes": 20,
-      "filterMinutes": 20
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -14681,6 +18101,110 @@
     }
   },
   {
+    "path": "pages/recipes/chipotle-in-adobo.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chipotle in adobo (homemade)",
+    "desc": "Dried chipotle morita peppers rehydrated in a tomato-vinegar-aromatic sauce. The fresher home version of the canned product, with markedly less of the metallic tinned-tomato note. Stub.",
+    "tags": [
+      "sauce",
+      "mexican",
+      "spicy",
+      "umami",
+      "make-ahead",
+      "pantry"
+    ],
+    "status": "stub",
+    "_slug": "chipotle-in-adobo",
+    "cuisine": "Mexican",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 35,
+      "total_min": 45,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried chipotle morita peppers",
+        "optional": false
+      },
+      {
+        "item": "hot water for rehydrating",
+        "optional": false
+      },
+      {
+        "item": "whole peeled tomatoes (canned)",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "white onion, quartered",
+        "slug": "white-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "piloncillo or dark brown sugar",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano, dried",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "avocado oil or other neutral high-heat oil",
+        "slug": "avocado-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 45,
+      "diffLabel": "easy",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/greek-yogurt.html",
     "type": "recipe",
     "category": "recipes",
@@ -14732,44 +18256,73 @@
     }
   },
   {
-    "path": "pages/recipes/homemade-tahini.html",
+    "path": "pages/recipes/homemade-bacon.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Homemade tahini",
-    "desc": "Hulled sesame seeds toasted lightly and ground with neutral oil to a smooth, pourable paste. Fresher and more aromatic than commercial bottles, especially when the available commercial tahini is supermarket house brand. Stub.",
+    "title": "Homemade bacon",
+    "desc": "Pork belly cured for 7 days in salt, pink curing salt #1 (sodium nitrite), sugar, and aromatics, then cold-smoked over hardwood for 12 to 24 hours. The home-cured product is markedly more complex than supermarket bacon, with the cure profile tuned to the cook's preference and the smoke level chosen by the cook. Weekend project; 10 days elapsed time, 4 hours active. Stub.",
     "tags": [
       "weekend-project",
+      "pork",
+      "fermentation",
       "pantry",
-      "levantine",
+      "make-ahead",
       "umami"
     ],
     "status": "stub",
-    "_slug": "homemade-tahini",
-    "cuisine": "Levantine",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 12,
+    "_slug": "homemade-bacon",
+    "cuisine": "",
+    "course": "stock",
+    "difficulty": "medium",
+    "servings": 20,
     "time": {
-      "prep_min": 5,
-      "cook_min": 15,
-      "total_min": 25,
-      "active_min": 20
+      "prep_min": 30,
+      "cook_min": 1440,
+      "total_min": 14400,
+      "active_min": 240
     },
     "updated": "2026-05-10",
-    "diet": [
-      "vegan"
-    ],
     "ingredients": [
       {
-        "item": "hulled white sesame seeds",
+        "item": "pork belly, skin off",
         "optional": false
       },
       {
-        "item": "neutral oil (avocado, refined sunflower, or grapeseed)",
+        "item": "kosher salt",
+        "slug": "kosher-salt",
         "optional": false
       },
       {
-        "item": "fine sea salt",
+        "item": "pink curing salt #1 (sodium nitrite 6.25 percent, salt 93.75 percent)",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "black pepper, coarsely cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "garlic, microplaned",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "hardwood for smoking (hickory, apple, maple, or cherry)",
         "optional": false
       }
     ],
@@ -14777,13 +18330,77 @@
     "equipment": [],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 25,
+      "totalMinutes": 14400,
+      "diffLabel": "medium",
+      "timeLead": "4 h",
+      "timeAnnotation": "+ 10 d rest",
+      "timeMode": "active",
+      "activeMinutes": 240,
+      "filterMinutes": 240
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-tomato-paste.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade tomato paste (slow-roasted concentrate)",
+    "desc": "Whole canned tomatoes reduced over 6 to 8 hours of low-oven roasting into a thick, deep-rust-red concentrate; the homemade tomato paste that distinguishes from the metallic can. The structural umami amplifier for cioppino, pasta sauces, and braises, with a layered flavor profile that includes caramelized fruit sugars (from Maillard browning) and reduced glutamate concentration (from water removal). A weekend project; one batch fills a small jar that lasts months in the refrigerator under a layer of olive oil.",
+    "tags": [
+      "pantry",
+      "sauce",
+      "umami",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "homemade-tomato-paste",
+    "cuisine": "Italian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 420,
+      "total_min": 435,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "canned San Marzano whole peeled tomatoes (or Bianco DiNapoli, Pomi, any good-quality)",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "half-sheet-pan",
+      "oven"
+    ],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 435,
       "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 7 h rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -14830,77 +18447,6 @@
       "timeMode": "active",
       "activeMinutes": 15,
       "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/recipes/lebanese-pita-bread.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Lebanese pita bread",
-    "desc": "Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The high-heat steam puff and the day-after staling that makes the bread a fattoush ingredient. Stub.",
-    "tags": [
-      "bread",
-      "levantine",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "lebanese-pita-bread",
-    "cuisine": "Levantine",
-    "course": "bread",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 30,
-      "total_min": 180,
-      "active_min": 60
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "bread flour",
-        "slug": "bread-flour",
-        "optional": false
-      },
-      {
-        "item": "water, lukewarm 32 °C / 90 °F",
-        "optional": false
-      },
-      {
-        "item": "instant yeast",
-        "slug": "instant-yeast",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 180,
-      "diffLabel": "medium",
-      "timeLead": "1 h",
-      "timeAnnotation": "+ 2 h rest",
-      "timeMode": "active",
-      "activeMinutes": 60,
-      "filterMinutes": 60
     }
   },
   {
@@ -14968,235 +18514,196 @@
     }
   },
   {
-    "path": "pages/recipes/pomegranate-molasses.html",
+    "path": "pages/recipes/red-wine-vinaigrette.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Pomegranate molasses",
-    "desc": "Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levantine and Persian sour anchor — fattoush, fesenjan, muhammara. Stub.",
+    "title": "Red wine vinaigrette",
+    "desc": "A canonical Mediterranean salad dressing: 1:3 red wine vinegar to extra-virgin olive oil, dijon as the emulsifier, mashed garlic and salt dissolved in the acid phase before the oil streams in. Holds 30 to 60 minutes after building. Stub.",
     "tags": [
       "sauce",
-      "levantine",
       "pantry",
-      "make-ahead"
+      "acid",
+      "fat",
+      "weeknight",
+      "mediterranean"
     ],
     "status": "stub",
-    "_slug": "pomegranate-molasses",
-    "cuisine": "Levantine",
+    "_slug": "red-wine-vinaigrette",
+    "cuisine": "Mediterranean",
     "course": "sauce",
     "difficulty": "easy",
-    "servings": 16,
+    "servings": 8,
     "time": {
       "prep_min": 5,
-      "cook_min": 45,
-      "total_min": 50,
-      "active_min": 10
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
     },
     "updated": "2026-05-10",
     "diet": [
+      "vegetarian",
       "vegan",
       "gluten-free"
     ],
     "ingredients": [
       {
-        "item": "pure pomegranate juice (POM Wonderful or freshly pressed)",
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
         "optional": false
       },
       {
-        "item": "granulated sugar (optional, for a sweeter molasses)",
-        "slug": "granulated-sugar",
-        "optional": true
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
       },
       {
-        "item": "lemon juice, fresh",
-        "slug": "lemon",
-        "optional": true
+        "item": "garlic clove",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
       }
     ],
-    "techniques": [],
+    "techniques": [
+      "vinaigrette-emulsion"
+    ],
     "equipment": [],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 50,
+      "totalMinutes": 5,
       "diffLabel": "easy",
-      "timeLead": "50 min",
+      "timeLead": "5 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
+      "activeMinutes": 5,
+      "filterMinutes": 5
     }
   },
   {
-    "path": "pages/recipes/red-wine-vinegar.html",
+    "path": "pages/recipes/seafood-stock.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Red wine vinegar",
-    "desc": "Live mother of vinegar fed leftover red wine in a wide jar — produces vinegar with floral and tannic complexity that pasteurized commercial product lacks. Stub.",
+    "title": "Seafood stock (shellfish and fin-fish bone broth)",
+    "desc": "A clean, aromatic seafood stock built from shrimp shells, white-fish bones (cod, halibut, snapper carcasses), crab shells, and a Western mirepoix (onion, fennel, leek, garlic). Roasted-shell version for cioppino and bouillabaisse depth; raw-shell version for delicate fumets and risotto al frutti di mare. The stock cooks fast (45 minutes) compared to meat broths because fish bones release their flavor and gelatin quickly, and over-simmering produces a bitter, fishy-aggressive result.",
     "tags": [
-      "fermentation",
-      "acid",
-      "pantry",
-      "mediterranean",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "red-wine-vinegar",
-    "cuisine": "Mediterranean",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 1,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 0,
-      "total_min": 86400,
-      "active_min": 30
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "live mother of vinegar (active acetobacter culture)",
-        "optional": false
-      },
-      {
-        "item": "red wine (dry, unoaked or lightly oaked, 11 to 13.5 percent alcohol)",
-        "optional": false
-      },
-      {
-        "item": "water (filtered, non-chlorinated)",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 86400,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 60 d rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/salt-cured-anchovies.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Salt-cured anchovies",
-    "desc": "Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until the protein hydrolyzes and the texture softens into clean fillets. Stub.",
-    "tags": [
-      "fermentation",
+      "seafood",
       "fish",
       "pantry",
+      "sauce",
       "umami",
-      "mediterranean",
       "make-ahead",
-      "weekend-project"
+      "freezer-friendly"
     ],
     "status": "stub",
-    "_slug": "salt-cured-anchovies",
-    "cuisine": "Mediterranean",
-    "course": "side",
+    "_slug": "seafood-stock",
+    "cuisine": "French",
+    "course": "sauce",
     "difficulty": "medium",
-    "servings": 1,
+    "servings": 8,
     "time": {
-      "prep_min": 60,
-      "cook_min": 0,
-      "total_min": 525600,
-      "active_min": 90
+      "prep_min": 15,
+      "cook_min": 50,
+      "total_min": 65,
+      "active_min": 25
     },
     "updated": "2026-05-10",
     "diet": [
-      "pescatarian",
       "gluten-free",
       "dairy-free"
     ],
     "ingredients": [
       {
-        "item": "fresh whole anchovies (Engraulis encrasicolus or Pacific equivalent)",
+        "item": "shrimp shells (saved from prep, frozen until needed)",
         "optional": false
       },
       {
-        "item": "coarse sea salt (Mediterranean grey or French sel gris)",
+        "item": "fish bones and head (cod, halibut, snapper, branzino), gills removed and rinsed",
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil for final pack",
+        "item": "crab shells (cleaned, picked, broken into pieces)",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, large dice",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "fennel bulb, large dice (reserve fronds)",
+        "slug": "fennel-bulb",
+        "optional": false
+      },
+      {
+        "item": "leek, white and pale green only, sliced",
+        "optional": false
+      },
+      {
+        "item": "garlic head, halved across (skin on)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "dry white wine",
+        "slug": "dry-white-wine",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley stems (no leaves)",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme",
         "optional": false
       }
     ],
     "techniques": [],
-    "equipment": [],
+    "equipment": [
+      "stockpot",
+      "fine-mesh-sieve"
+    ],
     "added": "2026-05-10",
     "_card": {
-      "totalMinutes": 525600,
+      "totalMinutes": 65,
       "diffLabel": "medium",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "+ 365 d rest",
-      "timeMode": "active",
-      "activeMinutes": 90,
-      "filterMinutes": 90
-    }
-  },
-  {
-    "path": "pages/recipes/salt-packed-capers.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Salt-packed capers",
-    "desc": "Fresh caper buds packed in coarse sea salt for a multi-month cure. Yields capers with crisper bite and brighter mustard-pungency than the brined-jar version. Stub.",
-    "tags": [
-      "fermentation",
-      "pantry",
-      "pickle",
-      "mediterranean",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "stub",
-    "_slug": "salt-packed-capers",
-    "cuisine": "Mediterranean",
-    "course": "side",
-    "difficulty": "medium",
-    "servings": 1,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 0,
-      "total_min": 60480,
-      "active_min": 60
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh caper buds (Capparis spinosa, picked at first light)",
-        "optional": false
-      },
-      {
-        "item": "coarse sea salt (Mediterranean grey, sel gris, or any non-iodized non-anti-caking)",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 60480,
-      "diffLabel": "medium",
-      "timeLead": "1 h",
-      "timeAnnotation": "+ 42 d rest",
-      "timeMode": "active",
-      "activeMinutes": 60,
-      "filterMinutes": 60
+      "timeLead": "1 h 5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
     }
   },
   {
