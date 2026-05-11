@@ -293,7 +293,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -423,6 +423,29 @@
     "_card": {
       "primaryTag": "grain",
       "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/gochugaru.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Gochugaru (Korean chili flakes, 고추가루)",
+    "desc": "Sun-dried Korean red chili (Capsicum annuum, taeyangcho cultivar) milled to flakes or fine powder. Mild to medium heat (1,500 to 10,000 Scoville), bright red color, rounded warm aromatic profile. The chili-flake top note across Korean cooking; structural in kimchi, oi-muchim, ojingeo bokkeum, and tteokbokki.",
+    "tags": [
+      "korean",
+      "pantry",
+      "spicy",
+      "aromatic",
+      "spice"
+    ],
+    "status": "complete",
+    "_slug": "gochugaru",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "aromatic",
+      "usedInCount": 1,
       "hasNutrition": false
     }
   },
@@ -670,7 +693,7 @@
     "status": "complete",
     "_slug": "mango",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
       "usedInCount": 1,
@@ -732,7 +755,7 @@
     "status": "complete",
     "_slug": "millet",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "grain",
       "usedInCount": 1,
@@ -2301,7 +2324,7 @@
       "vinaigrette-emulsion"
     ],
     "equipment": [],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 5,
       "diffLabel": "easy",
@@ -2473,6 +2496,104 @@
       "timeMode": "total",
       "activeMinutes": 22,
       "filterMinutes": 22
+    }
+  },
+  {
+    "path": "pages/recipes/korean-oi-muchim-spicy-cucumber-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Korean spicy cucumber salad (oi-muchim, 오이무침)",
+    "desc": "Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, rice vinegar, and toasted sesame oil. The fastest Korean banchan: 10 minutes from cucumber to bowl, eaten the same hour for peak crunch.",
+    "tags": [
+      "korean",
+      "salad",
+      "vegetable",
+      "spicy",
+      "no-cook",
+      "side",
+      "pickle"
+    ],
+    "status": "complete",
+    "_slug": "korean-oi-muchim-spicy-cucumber-salad",
+    "cuisine": "Korean",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 25,
+      "active_min": 12
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "Korean or Persian cucumbers, sliced into 3 mm half-moons",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the salt cure)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "gochugaru (Korean chili flakes, coarse)",
+        "slug": "gochugaru",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely grated",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "scallion, thinly sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining"
+    ],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
     }
   },
   {
@@ -4173,7 +4294,7 @@
       "acid-milk-sour"
     ],
     "equipment": [],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 50,
       "diffLabel": "easy",
@@ -5224,7 +5345,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -12597,7 +12718,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 31,
+      "usedInCount": 32,
       "hasNutrition": true
     }
   },
@@ -12698,7 +12819,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": false
     }
   },
@@ -12737,7 +12858,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 24,
+      "usedInCount": 25,
       "hasNutrition": true
     }
   },
@@ -14230,7 +14351,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 27,
+      "usedInCount": 28,
       "hasNutrition": true
     }
   },
@@ -14267,7 +14388,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 47,
+      "usedInCount": 48,
       "hasNutrition": true
     }
   },
@@ -14348,7 +14469,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 15,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -16034,7 +16155,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
