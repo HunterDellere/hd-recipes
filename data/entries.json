@@ -181,7 +181,7 @@
     "status": "complete",
     "_slug": "catfish",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "fish",
       "usedInCount": 1,
@@ -329,7 +329,7 @@
     "status": "complete",
     "_slug": "culantro",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
       "usedInCount": 1,
@@ -484,7 +484,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -822,6 +822,25 @@
     }
   },
   {
+    "path": "pages/ingredients/mussels.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mussels (blue mussel)",
+    "desc": "Bivalve mollusc, Mytilus edulis (Atlantic blue mussel) or Mytilus galloprovincialis (Mediterranean). Briny, sweet, fast-cooking; the muscle locks at the moment the shell hinges open and toughens within another minute.",
+    "tags": [
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "mussels",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "seafood",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/neutral-oil.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -837,7 +856,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": false
     }
   },
@@ -895,7 +914,7 @@
     "status": "complete",
     "_slug": "okra",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
       "usedInCount": 1,
@@ -995,7 +1014,7 @@
     "status": "complete",
     "_slug": "pineapple",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
       "usedInCount": 1,
@@ -1062,6 +1081,26 @@
       "primaryTag": "acid",
       "usedInCount": 2,
       "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/potato-starch.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Potato starch",
+    "desc": "Pure starch extracted from potato tubers. Large granule size (50 to 100 microns), high amylose content, gelatinizes at 60 to 65°C. The defining starch for Korean and Japanese crisp coatings and clear thickening.",
+    "tags": [
+      "pantry",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "potato-starch",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   },
   {
@@ -1137,7 +1176,7 @@
     "status": "complete",
     "_slug": "rau-ngo",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
       "usedInCount": 1,
@@ -1243,6 +1282,27 @@
     "_card": {
       "primaryTag": "vegetable",
       "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/sesame-seeds.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Sesame seeds (white, toasted)",
+    "desc": "Sesamum indicum seed, 50 to 55% oil by weight. Nutty, faintly grassy raw; deeply roasted and aromatic once toasted past the first popping window. The defining garnish across East Asian cooking.",
+    "tags": [
+      "pantry",
+      "spice",
+      "nuts"
+    ],
+    "status": "complete",
+    "_slug": "sesame-seeds",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "spice",
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1365,7 +1425,7 @@
     "status": "complete",
     "_slug": "tamarind",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
       "usedInCount": 1,
@@ -1384,7 +1444,7 @@
     "status": "complete",
     "_slug": "taro-stem",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
       "usedInCount": 1,
@@ -2635,6 +2695,119 @@
     }
   },
   {
+    "path": "pages/recipes/korean-haemul-pajeon-seafood-scallion-pancake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Haemul pajeon (Korean seafood and scallion pancake, 해물파전)",
+    "desc": "A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight bed of scallion whites, with squid rings, peeled shrimp, and shucked mussels worked into the surface. Set hard in a hot oil film, basted with extra oil at the edges for crisp, flipped once. The Korean canonical seafood pancake; the structural goal is shatter-crisp bottom, tender custardy middle, and a clear acid-and-soy dipping sauce cutting through. The cold-batter, high-oil, starch-loaded technique is the entire game.",
+    "tags": [
+      "korean",
+      "seafood",
+      "fritter",
+      "fried",
+      "weeknight",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "korean-haemul-pajeon-seafood-scallion-pancake",
+    "cuisine": "Korean",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 10,
+      "total_min": 35,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "potato starch",
+        "slug": "potato-starch",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "large egg, beaten",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "ice-cold water (with a few ice cubes melting in)",
+        "optional": false
+      },
+      {
+        "item": "scallions, trimmed to fit pan diameter",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "squid, cleaned",
+        "slug": "squid",
+        "optional": false
+      },
+      {
+        "item": "shrimp, peeled and deveined",
+        "slug": "shrimp",
+        "optional": false
+      },
+      {
+        "item": "mussels, shucked",
+        "slug": "mussels",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (high smoke point: rice bran, grapeseed, or refined avocado)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "pajeon dipping sauce (cho-ganjang)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "batter-frying",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "28-cm-non-stick-or-carbon-steel-skillet",
+      "wide-fish-spatula",
+      "medium-mixing-bowl",
+      "whisk",
+      "small-covered-pot-for-mussels"
+    ],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 35,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/korean-oi-muchim-spicy-cucumber-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -2730,6 +2903,97 @@
       "timeMode": "total",
       "activeMinutes": 12,
       "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/korean-pajeon-dipping-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Korean pajeon dipping sauce (cho-ganjang, 초간장)",
+    "desc": "Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condiment that cuts the fried-batter richness of pajeon, haemul pajeon, kimchi-jeon, and most jeon. Built in 3 minutes; should rest 10 minutes for the gochugaru to bloom into the soy and the vinegar to integrate.",
+    "tags": [
+      "sauce",
+      "korean",
+      "pantry",
+      "make-ahead",
+      "umami",
+      "acid"
+    ],
+    "status": "complete",
+    "_slug": "korean-pajeon-dipping-sauce",
+    "cuisine": "Korean",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 3,
+      "cook_min": 0,
+      "total_min": 13,
+      "active_min": 4
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "gochugaru (Korean chili flakes, coarse)",
+        "slug": "gochugaru",
+        "optional": false
+      },
+      {
+        "item": "scallion, green tops only, thinly sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely grated",
+        "slug": "garlic",
+        "optional": true
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "small-mixing-bowl",
+      "whisk"
+    ],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 13,
+      "diffLabel": "easy",
+      "timeLead": "13 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 4,
+      "filterMinutes": 4
     }
   },
   {
@@ -4956,7 +5220,7 @@
       "fine-mesh sieve",
       "small frying pan for garlic"
     ],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 45,
       "diffLabel": "medium",
@@ -4965,6 +5229,26 @@
       "timeMode": "total",
       "activeMinutes": 35,
       "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/techniques/batter-frying.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)",
+    "desc": "A cold liquid suspension of flour, starch, and water (sometimes with egg) ladled onto a thin film of oil in a hot pan, set on the bottom into a crisp shell, then flipped to set the top. The mechanism that produces Korean jeon, pajeon, Japanese okonomiyaki, Italian frittelle, and Indian pakora variants.",
+    "tags": [
+      "fried",
+      "fritter",
+      "korean",
+      "japanese"
+    ],
+    "status": "complete",
+    "_slug": "batter-frying",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "usedInCount": 1
     }
   },
   {
@@ -5197,7 +5481,7 @@
     "status": "complete",
     "_slug": "tamarind-souring",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "usedInCount": 1
     }
@@ -6212,7 +6496,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "seafood",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -12831,7 +13115,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -12988,7 +13272,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 19,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -13026,7 +13310,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 33,
+      "usedInCount": 34,
       "hasNutrition": true
     }
   },
@@ -13064,7 +13348,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -13127,7 +13411,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": false
     }
   },
@@ -13166,7 +13450,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 25,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -13246,7 +13530,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "seafood",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -14659,7 +14943,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 28,
+      "usedInCount": 29,
       "hasNutrition": true
     }
   },
@@ -14696,7 +14980,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 48,
+      "usedInCount": 49,
       "hasNutrition": true
     }
   },
@@ -14777,7 +15061,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -16383,7 +16667,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 22
+      "usedInCount": 23
     }
   },
   {
@@ -16515,7 +16799,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 12
+      "usedInCount": 13
     }
   },
   {

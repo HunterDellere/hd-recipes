@@ -1,170 +1,222 @@
 [
   {
-    "path": "pages/recipes/vietnamese-canh-chua-tamarind-sour-soup-with-catfish.html",
+    "path": "pages/recipes/korean-haemul-pajeon-seafood-scallion-pancake.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Canh chua cá (Vietnamese tamarind sour soup with catfish)",
-    "desc": "Southern Vietnamese sour soup built on a tamarind-acidified broth, with pineapple, tomato, taro stem (bạc hà), okra, and bean sprouts simmered briefly, catfish steaks slipped in for a 4 to 5 minute poach, and the bowl finished with raw rau ngổ, culantro, fried garlic, and Thai chili. The dish lives or dies on the acid-sugar-salt-umami curve, calibrated so the tamarind reads bright and not muddy.",
+    "title": "Haemul pajeon (Korean seafood and scallion pancake, 해물파전)",
+    "desc": "A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight bed of scallion whites, with squid rings, peeled shrimp, and shucked mussels worked into the surface. Set hard in a hot oil film, basted with extra oil at the edges for crisp, flipped once. The Korean canonical seafood pancake; the structural goal is shatter-crisp bottom, tender custardy middle, and a clear acid-and-soy dipping sauce cutting through. The cold-batter, high-oil, starch-loaded technique is the entire game.",
     "tags": [
-      "vietnamese",
+      "korean",
       "seafood",
-      "fish",
-      "soup",
+      "fritter",
+      "fried",
       "weeknight",
-      "one-pot"
+      "umami"
     ],
     "status": "complete",
-    "_slug": "vietnamese-canh-chua-tamarind-sour-soup-with-catfish",
-    "cuisine": "Vietnamese",
-    "course": "dinner",
+    "_slug": "korean-haemul-pajeon-seafood-scallion-pancake",
+    "cuisine": "Korean",
+    "course": "appetizer",
     "difficulty": "medium",
     "servings": 4,
     "time": {
       "prep_min": 25,
-      "cook_min": 20,
-      "total_min": 45,
-      "active_min": 35
+      "cook_min": 10,
+      "total_min": 35,
+      "active_min": 30
     },
     "updated": "2026-05-10",
     "diet": [
       "dairy-free",
-      "gluten-free"
+      "pescatarian"
     ],
     "ingredients": [
       {
-        "item": "catfish steaks (skin-on, bone-in, 2 to 3 cm thick)",
-        "slug": "catfish",
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
         "optional": false
       },
       {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
+        "item": "potato starch",
+        "slug": "potato-starch",
         "optional": false
       },
       {
-        "item": "tamarind pulp (seedless block)",
-        "slug": "tamarind",
+        "item": "kosher salt",
+        "slug": "kosher-salt",
         "optional": false
       },
       {
-        "item": "water (or a light unsalted seafood broth)",
+        "item": "large egg, beaten",
+        "slug": "eggs",
         "optional": false
       },
       {
-        "item": "fish sauce (premium, 30 to 40°N nitrogen)",
-        "slug": "fish-sauce",
+        "item": "ice-cold water (with a few ice cubes melting in)",
         "optional": false
       },
       {
-        "item": "palm sugar (or light brown sugar)",
-        "slug": "palm-sugar",
+        "item": "scallions, trimmed to fit pan diameter",
+        "slug": "scallion",
         "optional": false
       },
       {
-        "item": "shallot, thinly sliced",
-        "slug": "shallot",
+        "item": "squid, cleaned",
+        "slug": "squid",
         "optional": false
       },
       {
-        "item": "garlic, smashed",
-        "slug": "garlic",
+        "item": "shrimp, peeled and deveined",
+        "slug": "shrimp",
         "optional": false
       },
       {
-        "item": "neutral oil",
+        "item": "mussels, shucked",
+        "slug": "mussels",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (high smoke point: rice bran, grapeseed, or refined avocado)",
         "slug": "neutral-oil",
         "optional": false
       },
       {
-        "item": "fresh pineapple, cored and cut into 1 cm wedges",
-        "slug": "pineapple",
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
         "optional": false
       },
       {
-        "item": "ripe tomato, cut into 6 wedges each",
-        "slug": "tomato",
-        "optional": false
-      },
-      {
-        "item": "taro stem (bạc hà), peeled and cut into 4 cm angled batons",
-        "slug": "taro-stem",
-        "optional": false
-      },
-      {
-        "item": "fresh okra, trimmed and cut into 2 cm pieces",
-        "slug": "okra",
-        "optional": false
-      },
-      {
-        "item": "mung bean sprouts",
-        "slug": "mung-bean-sprouts",
-        "optional": false
-      },
-      {
-        "item": "rau ngổ (rice paddy herb), coarsely chopped",
-        "slug": "rau-ngo",
-        "optional": false
-      },
-      {
-        "item": "culantro (ngò gai), thinly sliced",
-        "slug": "culantro",
-        "optional": false
-      },
-      {
-        "item": "Thai bird chili, thinly sliced (optional)",
-        "slug": "thai-chili",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely minced",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "lime wedges",
-        "slug": "lime",
+        "item": "pajeon dipping sauce (cho-ganjang)",
         "optional": false
       }
     ],
     "techniques": [
-      "tamarind-souring",
-      "blooming-aromatics",
-      "oil-poaching"
+      "batter-frying",
+      "maillard-sear"
     ],
     "equipment": [
-      "4 L / 4 qt heavy pot",
-      "fine-mesh sieve",
-      "small frying pan for garlic"
+      "28-cm-non-stick-or-carbon-steel-skillet",
+      "wide-fish-spatula",
+      "medium-mixing-bowl",
+      "whisk",
+      "small-covered-pot-for-mussels"
     ],
     "added": "2026-05-11",
     "_card": {
-      "totalMinutes": 45,
+      "totalMinutes": 35,
       "diffLabel": "medium",
-      "timeLead": "45 min",
+      "timeLead": "35 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 35,
-      "filterMinutes": 35
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
-    "path": "pages/techniques/tamarind-souring.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Tamarind souring (sour-broth extraction and balance)",
-    "desc": "Soak tamarind pulp in hot water 15 to 20 minutes, mash and strain to a clean liquid, then balance the broth with fish sauce or salt (deep umami) and palm or brown sugar (round the sharp tartaric acid). The structural acid technique of canh chua, sambar, pad thai, and the global tamarind-acid cuisine.",
+    "path": "pages/recipes/korean-pajeon-dipping-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Korean pajeon dipping sauce (cho-ganjang, 초간장)",
+    "desc": "Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condiment that cuts the fried-batter richness of pajeon, haemul pajeon, kimchi-jeon, and most jeon. Built in 3 minutes; should rest 10 minutes for the gochugaru to bloom into the soy and the vinegar to integrate.",
     "tags": [
-      "acid",
+      "sauce",
+      "korean",
+      "pantry",
+      "make-ahead",
       "umami",
-      "pantry"
+      "acid"
     ],
     "status": "complete",
-    "_slug": "tamarind-souring",
+    "_slug": "korean-pajeon-dipping-sauce",
+    "cuisine": "Korean",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 3,
+      "cook_min": 0,
+      "total_min": 13,
+      "active_min": 4
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "gochugaru (Korean chili flakes, coarse)",
+        "slug": "gochugaru",
+        "optional": false
+      },
+      {
+        "item": "scallion, green tops only, thinly sliced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely grated",
+        "slug": "garlic",
+        "optional": true
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "small-mixing-bowl",
+      "whisk"
+    ],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 13,
+      "diffLabel": "easy",
+      "timeLead": "13 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 4,
+      "filterMinutes": 4
+    }
+  },
+  {
+    "path": "pages/techniques/batter-frying.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)",
+    "desc": "A cold liquid suspension of flour, starch, and water (sometimes with egg) ladled onto a thin film of oil in a hot pan, set on the bottom into a crisp shell, then flipped to set the top. The mechanism that produces Korean jeon, pajeon, Japanese okonomiyaki, Italian frittelle, and Indian pakora variants.",
+    "tags": [
+      "fried",
+      "fritter",
+      "korean",
+      "japanese"
+    ],
+    "status": "complete",
+    "_slug": "batter-frying",
     "updated": "2026-05-10",
     "added": "2026-05-11",
     "_card": {
@@ -172,42 +224,22 @@
     }
   },
   {
-    "path": "pages/ingredients/catfish.html",
+    "path": "pages/ingredients/mussels.html",
     "type": "ingredient",
     "category": "ingredients",
-    "title": "Catfish (channel, basa, swai)",
-    "desc": "Freshwater bottom-feeding finfish in several closely related families, 6 to 12% fat by weight, with a firm dense white flesh, a thin skin that crisps when seared, and a characteristic mild flavor with a slight earthy back-note from sediment-feeding biology. The structural fish of the US South, the Mississippi delta, the Mekong delta, and Bangladeshi and West African catfish traditions.",
+    "title": "Mussels (blue mussel)",
+    "desc": "Bivalve mollusc, Mytilus edulis (Atlantic blue mussel) or Mytilus galloprovincialis (Mediterranean). Briny, sweet, fast-cooking; the muscle locks at the moment the shell hinges open and toughens within another minute.",
     "tags": [
-      "fish",
       "seafood"
     ],
     "status": "complete",
-    "_slug": "catfish",
+    "_slug": "mussels",
     "updated": "2026-05-10",
     "added": "2026-05-11",
     "_card": {
-      "primaryTag": "fish",
+      "primaryTag": "seafood",
       "usedInCount": 1,
-      "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/ingredients/culantro.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Culantro (ngò gai, sawtooth herb)",
-    "desc": "Long sawtooth-edged herb (Eryngium foetidum) in the same family as cilantro but with a more intense, slightly bitter aromatic profile carrying the same dodecenal compound as cilantro at 3 to 5× concentration. The defining herb of Caribbean sazón, Vietnamese pho and canh chua, and several Southeast Asian sour-soup traditions.",
-    "tags": [
-      "herb"
-    ],
-    "status": "complete",
-    "_slug": "culantro",
-    "updated": "2026-05-10",
-    "added": "2026-05-11",
-    "_card": {
-      "primaryTag": "herb",
-      "usedInCount": 1,
-      "hasNutrition": false
+      "hasNutrition": true
     }
   },
   {
