@@ -1,0 +1,33 @@
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Kokum'
+desc: 'Garcinia indica, a small dark-purple Indian fruit in the mangosteen family. Dried rind strips or kokum sol (kokum butter-extracted dried fruit) are the canonical souring agent of Goan and Konkan coastal cooking. The sour compound is hydroxycitric acid (HCA), which produces a mildly fruity-astringent, distinctly non-citrus sourness. The souring agent in Goan fish curry (xacuti), sol kadi (Goan drink), and the tart coastal curries of Maharashtra.'
+metaDesc: 'Kokum: Garcinia indica, hydroxycitric acid sourness, the difference from tamarind and citrus, applications in Goan xacuti and Konkan coastal curries, and how to find or substitute kokum outside South Asian specialty markets.'
+tags: ['acid', 'spice', 'indian']
+updated: '2026-05-10'
+
+about: |
+  Kokum (Garcinia indica) is a small tropical tree in the family Clusiaceae, closely related to mangosteen (G. mangostana) and the Malabar tamarind or kudampuli (G. cambogia, used in South Indian cooking). It grows along the Konkan coast of India (Maharashtra, Goa, Karnataka) and is almost entirely limited to this region in its traditional use. The fruit is round, 2 to 3 cm in diameter, deep purple-red when ripe, with a thick, waxy rind surrounding a small seed cluster; the rind is the edible part. The traditional preparation is to cut and sun-dry the rind into flat, wrinkled strips that are deep purple-black, very sticky, and intensely sour; the dried strips are sold as "kokum" or "kokum agal" at Indian grocery stores specializing in Maharashtrian and Goan products. A further processed form, kokum sol or kokum syrup (the dried fruit soaked in water, strained, and concentrated), is used in sol kadi, the pink Goan digestive drink made with kokum, coconut milk, and green chili.
+
+  The primary souring compound in kokum is **hydroxycitric acid (HCA)**, which gives kokum its characteristic sour-astringent note. HCA is structurally similar to citric acid but tastes distinctly different: it reads as fruity-tart rather than bright-citrus, with a mild astringency and a faint floral backnote from the anthocyanins (the deep-purple pigment) that dissolve into the dish during cooking. The sourness is rounder and less sharp than lemon or lime, and distinctly different from the tamarind sourness (tartaric acid, which reads more tart and dates-like). In a dish context, kokum produces a deep-sour note that is present but not aggressive, and pairs particularly well with coconut milk curries where the richness of the coconut needs a lifting acid without the sharpness of citrus.
+
+  **Cooking behavior.** Kokum strips are added to the curry early in the cook, typically with the liquid; they soften over 10 to 15 minutes of simmering and the HCA leaches into the broth, turning the curry a subtle purple-red. The strips can be left in the curry (they become tender and are eaten, or pushed aside) or removed before serving. They do not need pre-soaking for most applications, though a 5-minute soak in warm water before adding to a quick-cooking dish extracts the acid faster. The color contribution (deep purple-pink from the anthocyanins) is visible in lighter curries and mild dishes; in a dark-spiced xacuti or fish curry with tomato and roasted coconut paste, the color contribution is less visible but the flavor dimension is structural. Do not add kokum to yogurt-based dishes on high heat; the HCA does not interact badly with dairy, but the acid can split thin yogurt preparations.
+
+  **Applications by category.** In Goan cooking, kokum is the canonical souring agent for fish curry (xacuti, caldine, Goan fish curry with coconut milk); it appears in nearly every Goan coastal fish preparation where the sourness is structural, alongside coconut milk and roasted spice paste. In Maharashtrian (Konkan coastal) cooking, kokum is used in sol kadi (kokum + coconut milk drink, the canonical Goan digestive after a meal), in kokum sharbat (a sweet-sour summer drink), and in kokum-based curries of the coastal Maharashtra fishing villages. In Karnataka's coastal cooking (Udupi, Mangalore), kokum is used alongside tamarind in different preparations; the Bunt community fish curry (kori gassi) uses kokum as the souring agent. Outside its native region, kokum has minimal presence in North and East Indian cooking (where tamarind is the dominant sour agent) or in West Indian cooking (where lemon and lime dominate).
+
+  **Buying notes.** Kokum dried rind strips are available at Indian grocery stores that specialize in or stock Goan, Maharashtrian, and South Indian products; look for them labeled "kokum" or "kokum agal." They are deep purple-black, wrinkled, slightly sticky (the HCA is hygroscopic), and smell sourly fruity. Avoid kokum that has dried out completely to a hard dry rind (it has lost aromatics) or kokum with mold or extensive crystallization. They are not widely stocked at general Indian groceries that focus on North Indian products; a Goan or Konkan specialty store, or an online Indian grocery (Patel Brothers ships, as does Amazon India direct). H Mart does not typically carry kokum; Patel Brothers or Apna Bazar are more reliable. In a pinch, tamarind is the closest functional substitute (different flavor profile but similar souring function in coconut milk curries).
+
+storage: 'Pantry, airtight container, dark and cool: 6 to 12 months for the dried rind strips (the HCA is stable; the aromatics fade over time). After opening a package, keep in a sealed jar away from moisture — the strips are hygroscopic and will clump in humid conditions. Kokum sol (the liquid syrup form): refrigerator, 2 to 3 weeks after opening.'
+
+substitutions:
+  - for: 'kokum (Goan fish curry souring)'
+    use: 'tamarind pulp (start with half the weight and adjust)'
+    note: 'Tamarind is the closest functional substitute: similar fruity-sour profile, used in South Indian and Goan cooking. Use ½ the weight of kokum called for (kokum is more concentrated), dissolved in 2 tbsp warm water, strained. The dish reads tartaric-acid sour rather than hydroxycitric-acid sour; slightly more aggressive and date-like. The color dimension (purple-pink) is lost. Acceptable substitute; the dish reads 80 percent of the kokum version.'
+  - for: 'kokum (sol kadi souring)'
+    use: 'lime juice plus a small pinch of food-grade dried hibiscus for color'
+    note: 'For the sol kadi drink specifically (not for cooking): lime juice approximates the sour dimension; dried hibiscus (sorrel) produces a similar purple-red color from anthocyanins. The flavor is sharper and more citrusy than kokum sol but functionally similar in the drink context.'
+---
