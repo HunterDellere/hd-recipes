@@ -1,5 +1,67 @@
 [
   {
+    "path": "pages/recipes/apple-cider-vinegar.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Apple cider vinegar",
+    "desc": "Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. A two-stage cure: wild yeast on the apple skins converts sugar to ethanol, then airborne acetobacter converts ethanol to acetic acid. Yields a live, unpasteurized cider vinegar with apple character lost in commercial bottling.",
+    "tags": [
+      "fermentation",
+      "pantry",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "apple-cider-vinegar",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 60480,
+      "active_min": 20
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
+        "optional": false
+      },
+      {
+        "item": "cane sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "filtered water, room temperature",
+        "optional": false
+      },
+      {
+        "item": "splash of unfiltered raw apple cider vinegar (optional, as starter)",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-10",
+    "_card": {
+      "totalMinutes": 60480,
+      "diffLabel": "medium",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ 42 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/bouillabaisse-marseillaise.html",
     "type": "recipe",
     "category": "recipes",
@@ -185,7 +247,7 @@
       "fine-mesh-strainer",
       "dutch-oven"
     ],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 135,
       "diffLabel": "hard",
@@ -194,203 +256,6 @@
       "timeMode": "total",
       "activeMinutes": 90,
       "filterMinutes": 90
-    }
-  },
-  {
-    "path": "pages/recipes/rouille-saffron-garlic-aioli.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Rouille (saffron-garlic aioli for bouillabaisse)",
-    "desc": "The Provençal saffron-and-garlic mayonnaise that crowns bouillabaisse and bourride, built from soaked bread (or a boiled potato), pounded raw garlic, saffron-infused broth, egg yolk, and a slow stream of olive oil. The name (literally \"rust\" in French, for the deep red-orange color) refers to the saffron-cayenne tint that distinguishes rouille from a plain aioli. Spread on toasted baguette croutons, dropped into the broth, or stirred directly into the soup as a thickener-flavor-bomb.",
-    "tags": [
-      "sauce",
-      "french",
-      "mediterranean",
-      "umami",
-      "pantry",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "rouille-saffron-garlic-aioli",
-    "cuisine": "French (Provençal, Marseille)",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 0,
-      "total_min": 15,
-      "active_min": 15
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "stale baguette or country bread, crust removed, torn into rough pieces",
-        "slug": "sourdough-bread",
-        "optional": false
-      },
-      {
-        "item": "broth from the bouillabaisse pot (or fish stock), warm",
-        "optional": false
-      },
-      {
-        "item": "saffron threads (extra, if using standalone fish stock)",
-        "slug": "saffron",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "large egg yolk",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes (or piment d'Espelette if available)",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "slug": "lemon",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "mortar-pounding",
-      "egg-yolk-emulsion"
-    ],
-    "equipment": [
-      "mortar-and-pestle",
-      "small-food-processor"
-    ],
-    "added": "2026-05-11",
-    "_card": {
-      "totalMinutes": 15,
-      "diffLabel": "medium",
-      "timeLead": "15 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 15,
-      "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/ingredients/cod.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Cod",
-    "desc": "Atlantic or Pacific cod (Gadus morhua, G. macrocephalus). Mild, flaky, low-fat (0.7 percent) white-fleshed groundfish; the canonical lean white fish of the North Atlantic. Cooks in a narrow window because of the very low fat content. The default firm-white-fish substitute when halibut is unavailable, and the structural protein of fish-and-chips, brandade, bacalao, and Iberian salt-cod traditions.",
-    "tags": [
-      "seafood",
-      "fish"
-    ],
-    "status": "complete",
-    "_slug": "cod",
-    "updated": "2026-05-10",
-    "added": "2026-05-11",
-    "_card": {
-      "primaryTag": "seafood",
-      "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/leek.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Leek",
-    "desc": "Allium ampeloprasum var. porrum. Long, mild allium with a thick blanched white-and-pale-green stem and tougher dark-green leaf tops. Sweeter and more delicate than yellow onion, with a high sulfur-compound load that mellows fast under heat. The structural sweet-aromatic of French stocks, soups, and Provençal fish broths.",
-    "tags": [
-      "vegetable",
-      "aromatic"
-    ],
-    "status": "complete",
-    "_slug": "leek",
-    "updated": "2026-05-10",
-    "added": "2026-05-11",
-    "_card": {
-      "primaryTag": "vegetable",
-      "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/recipes/apple-cider-vinegar.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Apple cider vinegar",
-    "desc": "Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. A two-stage cure: wild yeast on the apple skins converts sugar to ethanol, then airborne acetobacter converts ethanol to acetic acid. Yields a live, unpasteurized cider vinegar with apple character lost in commercial bottling.",
-    "tags": [
-      "fermentation",
-      "pantry",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "apple-cider-vinegar",
-    "cuisine": "American",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 16,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 0,
-      "total_min": 60480,
-      "active_min": 20
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "vegan",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "apple scraps (cores, peels, bruised flesh) from organic apples",
-        "optional": false
-      },
-      {
-        "item": "cane sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "filtered water, room temperature",
-        "optional": false
-      },
-      {
-        "item": "splash of unfiltered raw apple cider vinegar (optional, as starter)",
-        "slug": "apple-cider-vinegar",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 60480,
-      "diffLabel": "medium",
-      "timeLead": "20 min",
-      "timeAnnotation": "+ 42 d rest",
-      "timeMode": "active",
-      "activeMinutes": 20,
-      "filterMinutes": 20
     }
   },
   {
@@ -635,212 +500,6 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/cioppino-san-francisco-italian-american-seafood-stew.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Cioppino (San Francisco Italian-American seafood stew)",
-    "desc": "The North Beach Italian-American seafood stew built around a tomato-fennel-saffron broth fortified with seafood stock and dry white wine, loaded with Dungeness crab (in the shell), halibut chunks, head-on shrimp, littleneck clams, and mussels, finished with basil, parsley, and crushed red pepper, served with toasted sourdough rubbed with raw garlic. The clams and mussels are staged into the broth so all bivalves open within a single 60-second window. A whole-table dish: cracked shells, broth-soaked bread, hands and bibs.",
-    "tags": [
-      "seafood",
-      "fish",
-      "stew",
-      "italian",
-      "american",
-      "weekend-project",
-      "umami",
-      "acid",
-      "one-pot",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "cioppino-san-francisco-italian-american-seafood-stew",
-    "cuisine": "Italian-American (North Beach, San Francisco)",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 6,
-    "time": {
-      "prep_min": 45,
-      "cook_min": 60,
-      "total_min": 105,
-      "active_min": 75
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, fine dice",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "fennel bulb, fine dice (reserve fronds for finish)",
-        "slug": "fennel-bulb",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, minced",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fennel seed, toasted and crushed",
-        "slug": "fennel-seed",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes (crushed red pepper)",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "dried oregano (Mediterranean)",
-        "slug": "dried-oregano",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "tomato paste",
-        "slug": "tomato-paste",
-        "optional": false
-      },
-      {
-        "item": "dry white wine (Pinot Grigio, Sauvignon Blanc, or unoaked Italian white)",
-        "slug": "dry-white-wine",
-        "optional": false
-      },
-      {
-        "item": "canned San Marzano whole peeled tomatoes, crushed by hand",
-        "slug": "canned-san-marzano-tomatoes",
-        "optional": false
-      },
-      {
-        "item": "seafood stock (homemade roasted-shell version, see recipe) or 1:1 fish stock and clam juice",
-        "optional": false
-      },
-      {
-        "item": "saffron threads",
-        "slug": "saffron",
-        "optional": false
-      },
-      {
-        "item": "anchovy fillets in oil",
-        "slug": "anchovy-fillets",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme",
-        "optional": false
-      },
-      {
-        "item": "lemon peel, wide strips (no pith)",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "Dungeness crab, live or pre-cooked, cleaned and quartered",
-        "slug": "dungeness-crab",
-        "optional": false
-      },
-      {
-        "item": "halibut fillet, skinless",
-        "slug": "halibut",
-        "optional": false
-      },
-      {
-        "item": "head-on shrimp (or shell-on tail-on jumbo shrimp)",
-        "slug": "shrimp",
-        "optional": false
-      },
-      {
-        "item": "littleneck clams (or Manila clams), purged in salt water",
-        "slug": "littleneck-clams",
-        "optional": false
-      },
-      {
-        "item": "mussels, debearded",
-        "slug": "mussels",
-        "optional": false
-      },
-      {
-        "item": "fresh basil, chiffonade",
-        "slug": "basil",
-        "optional": false
-      },
-      {
-        "item": "fresh flat-leaf parsley, chopped",
-        "slug": "parsley",
-        "optional": false
-      },
-      {
-        "item": "fennel fronds (reserved from Phase 1)",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon, cut into wedges for the table",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil (finishing pour)",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "stale sourdough bread, sliced 2 cm thick",
-        "slug": "sourdough-bread",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, halved",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil (for toast)",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "staged-bivalve-steam",
-      "blooming-aromatics",
-      "deglazing",
-      "maillard-sear",
-      "pan-emulsion"
-    ],
-    "equipment": [
-      "dutch-oven",
-      "large-pot",
-      "mortar-and-pestle"
-    ],
-    "added": "2026-05-10",
-    "_card": {
-      "totalMinutes": 105,
-      "diffLabel": "medium",
-      "timeLead": "1 h 45 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 75,
-      "filterMinutes": 75
     }
   },
   {
@@ -1708,6 +1367,217 @@
       "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/mansaf.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Mansaf",
+    "desc": "Bone-in lamb shoulder simmered for hours, then bathed in a sauce built from reconstituted jameed (fermented dried sheep yogurt). Served over saffron-tinted basmati rice on a base layer of paper-thin shrak bread, crowned with samna-toasted pine nuts and almonds. The Bedouin and Jordanian feast dish, technique-faithful.",
+    "tags": [
+      "weekend-project",
+      "lamb",
+      "levantine",
+      "braise",
+      "comfort",
+      "umami",
+      "rice",
+      "fermentation"
+    ],
+    "status": "complete",
+    "_slug": "mansaf",
+    "cuisine": "Jordanian",
+    "course": "dinner",
+    "difficulty": "hard",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 240,
+      "total_min": 270,
+      "active_min": 90
+    },
+    "updated": "2026-05-06",
+    "ingredients": [
+      {
+        "item": "jameed stones",
+        "slug": "jameed",
+        "optional": false
+      },
+      {
+        "item": "cold water for the soak",
+        "optional": false
+      },
+      {
+        "item": "bone-in lamb shoulder, cut into 6 large pieces by the butcher",
+        "slug": "lamb-shoulder",
+        "optional": false
+      },
+      {
+        "item": "cold water for the braise",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, peeled and halved",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, lightly cracked",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "optional": false
+      },
+      {
+        "item": "whole black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "mastic resin, crushed (optional but traditional)",
+        "optional": true
+      },
+      {
+        "item": "kosher salt for the braise",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water for the cornstarch slurry",
+        "optional": false
+      },
+      {
+        "item": "basmati rice",
+        "slug": "basmati-rice",
+        "optional": false
+      },
+      {
+        "item": "samna (clarified butter)",
+        "slug": "samna",
+        "optional": false
+      },
+      {
+        "item": "ground turmeric",
+        "optional": false
+      },
+      {
+        "item": "hot water for the rice",
+        "optional": false
+      },
+      {
+        "item": "kosher salt for the rice",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "samna for the nuts",
+        "slug": "samna",
+        "optional": false
+      },
+      {
+        "item": "pine nuts",
+        "optional": false
+      },
+      {
+        "item": "slivered blanched almonds",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, finely chopped",
+        "optional": false
+      },
+      {
+        "item": "shrak or markook bread (paper-thin Bedouin flatbread)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "cooked-yogurt-sauce",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "heavy-saucepan",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-05-06",
+    "_card": {
+      "totalMinutes": 270,
+      "diffLabel": "hard",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "+ 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
+    "path": "pages/techniques/cooked-yogurt-sauce.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Cooked yogurt sauce",
+    "desc": "Stabilize yogurt with starch or egg, temper into the hot dish, and hold at a tremor below the boil. Casein curdles above 85 °C without help; the help is what makes a yogurt-based stew possible.",
+    "tags": [
+      "dairy",
+      "fermentation"
+    ],
+    "status": "complete",
+    "_slug": "cooked-yogurt-sauce",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/ingredients/basmati-rice.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Basmati rice",
+    "desc": "Long-grain aromatic rice from the Indian subcontinent, low in amylopectin and high in 2-acetyl-1-pyrroline. Grains stay separate, lengthen dramatically on cooking, and carry a popcorn-pandan aroma that defines the cuisine it anchors.",
+    "tags": [
+      "rice",
+      "grain"
+    ],
+    "status": "complete",
+    "_slug": "basmati-rice",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 3,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/jameed.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Jameed",
+    "desc": "Fermented sheep or goat yogurt, salted and sun-dried into stone-hard cones. Reconstitutes into a sour, funky, glutamate-heavy sauce base that no live yogurt approximates.",
+    "tags": [
+      "dairy",
+      "umami",
+      "fermentation",
+      "levantine"
+    ],
+    "status": "complete",
+    "_slug": "jameed",
+    "updated": "2026-05-06",
+    "added": "2026-05-06",
+    "_card": {
+      "primaryTag": "dairy",
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   }
 ]
