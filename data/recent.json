@@ -1,39 +1,54 @@
 [
   {
-    "path": "pages/recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.html",
+    "path": "pages/recipes/ginger-lime-honey-vinaigrette.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Pan-seared mackerel with daikon oroshi and ponzu",
-    "desc": "Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to firm the flesh and pull surface water, patted dry, and hard-seared skin-side-down in a smoking carbon-steel pan until the fat under the skin renders and the silver hide turns to a tile of crackling. Plated over a mound of cold daikon oroshi (raw grated radish, water pressed off) with a small pour of ponzu around the base. The Japanese saba canon: the lipid load of an oily blue fish managed by salt cure plus high-heat sear, then cut through with a citrus-soy acid and the enzymatic bite of raw daikon.",
+    "title": "Ginger-lime-honey vinaigrette",
+    "desc": "A bright, sharp, gently sweet vinaigrette built on microplaned ginger, fresh lime juice, honey, a small hit of chili, and a neutral oil. The microplaned ginger acts as a structural particulate stabilizer; the dressing emulsifies on hand-whisking and holds integrated for 20 to 30 minutes, longer with a brief re-shake. Pairs across grain salads, raw cabbage slaws, charred broccoli, grilled fish, and as a quick dipping sauce for raw vegetables.",
     "tags": [
-      "japanese",
-      "fish",
-      "seafood",
-      "weeknight",
-      "umami"
+      "sauce",
+      "acid",
+      "aromatic",
+      "no-cook",
+      "make-ahead"
     ],
     "status": "complete",
-    "_slug": "pan-seared-mackerel-with-daikon-oroshi-and-ponzu",
-    "cuisine": "Japanese",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 2,
+    "_slug": "ginger-lime-honey-vinaigrette",
+    "cuisine": "Pan-Asian / West African pantry crossover",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
     "time": {
-      "prep_min": 10,
-      "cook_min": 8,
-      "total_min": 48,
-      "active_min": 18
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
     },
     "updated": "2026-05-10",
     "diet": [
-      "dairy-free",
+      "vegetarian",
       "gluten-free",
-      "pescatarian"
+      "dairy-free"
     ],
     "ingredients": [
       {
-        "item": "mackerel fillets (saba), skin-on, pin-bones removed",
-        "slug": "mackerel",
+        "item": "fresh ginger, microplaned to a paste",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "thai chili, finely minced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
         "optional": false
       },
       {
@@ -42,174 +57,204 @@
         "optional": false
       },
       {
-        "item": "sake",
-        "slug": "sake",
-        "optional": false
-      },
-      {
-        "item": "daikon radish, peeled",
-        "slug": "daikon",
-        "optional": false
-      },
-      {
-        "item": "ponzu sauce",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (high smoke point: rice bran, grapeseed, or refined avocado)",
+        "item": "neutral oil (peanut, grapeseed, or rice bran)",
         "slug": "neutral-oil",
         "optional": false
-      },
-      {
-        "item": "scallion, green tops only",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "shichimi tōgarashi (Japanese seven-spice)",
-        "optional": true
       }
     ],
     "techniques": [
-      "fish-skin-scoring",
-      "dry-brining",
-      "maillard-sear"
+      "vinaigrette-emulsion"
     ],
-    "equipment": [
-      "heavy-carbon-steel-or-cast-iron-skillet",
-      "fine-mesh-sieve",
-      "oroshigane-or-microplane",
-      "fish-spatula"
-    ],
+    "equipment": [],
     "added": "2026-05-11",
     "_card": {
-      "totalMinutes": 48,
-      "diffLabel": "medium",
-      "timeLead": "48 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 18,
-      "filterMinutes": 18
-    }
-  },
-  {
-    "path": "pages/recipes/ponzu.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ponzu",
-    "desc": "Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and katsuobushi, then refrigerated 24 hours to extract the kombu glutamate and katsuobushi inosinate into the citrus-soy base. Strained the next day to a clear, deeply aromatic citrus-soy sauce. The canonical washoku dipping and finishing sauce; dramatically more aromatic than any bottled version because the volatile citrus top notes have not had months to fade in storage.",
-    "tags": [
-      "japanese",
-      "sauce",
-      "umami",
-      "pantry",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "ponzu",
-    "cuisine": "Japanese",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 12,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 0,
-      "total_min": 1445,
-      "active_min": 5
-    },
-    "updated": "2026-05-10",
-    "diet": [
-      "dairy-free",
-      "pescatarian"
-    ],
-    "ingredients": [
-      {
-        "item": "yuzu juice (or a 3:1 blend of fresh lemon juice and lime juice)",
-        "slug": "yuzu",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "mirin (hon-mirin, not mirin-style seasoning)",
-        "slug": "mirin",
-        "optional": false
-      },
-      {
-        "item": "rice vinegar",
-        "slug": "rice-vinegar",
-        "optional": false
-      },
-      {
-        "item": "kombu (dried kelp)",
-        "slug": "kombu",
-        "optional": false
-      },
-      {
-        "item": "katsuobushi (dried bonito flakes)",
-        "slug": "katsuobushi",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dashi"
-    ],
-    "equipment": [
-      "fine-mesh-sieve",
-      "glass-jar-or-bottle"
-    ],
-    "added": "2026-05-11",
-    "_card": {
-      "totalMinutes": 1445,
+      "totalMinutes": 5,
       "diffLabel": "easy",
       "timeLead": "5 min",
-      "timeAnnotation": "+ 1 d rest",
-      "timeMode": "active",
+      "timeAnnotation": "",
+      "timeMode": "total",
       "activeMinutes": 5,
       "filterMinutes": 5
     }
   },
   {
-    "path": "pages/techniques/fish-skin-scoring.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Fish skin scoring",
-    "desc": "Cross-hatch or parallel cuts through the skin and surface fat layer of a fish fillet to release contraction tension during the sear, expose the subcutaneous fat for rendering, and let cure salt or seasoning penetrate the silver hide uniformly.",
+    "path": "pages/recipes/senegalese-thiakry-millet-salad-or-west-african-grain-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Senegalese-inspired savory millet salad with mango, mint, and ginger-lime",
+    "desc": "Pearl millet steamed to a fork-fluffed crumb, then tossed with diced ripe mango, slivered red onion macerated in lime, oil-toasted peanuts, mint, cilantro, and a ginger-lime-honey vinaigrette built on a small hit of habanero. The frame borrows from Senegalese thiakry (traditionally a sweet steamed-millet preparation with sour milk and sugar) and reroutes it into a savory grain salad on West African pantry vocabulary: peanut, ginger, scotch-bonnet heat, lime. The thesis is the contrast between the fluffy mildly-sweet grain crumb and the aggressive aromatic dressing, with the mango carrying a structural sweet-juicy load against the heat.",
     "tags": [
-      "fish",
-      "seafood"
+      "salad",
+      "grain",
+      "fruit",
+      "umami",
+      "acid",
+      "no-cook",
+      "make-ahead"
     ],
     "status": "complete",
-    "_slug": "fish-skin-scoring",
+    "_slug": "senegalese-thiakry-millet-salad-or-west-african-grain-salad",
+    "cuisine": "West African (Senegalese-inspired)",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 25,
+      "total_min": 50,
+      "active_min": 30
+    },
     "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pearl millet, raw",
+        "slug": "millet",
+        "optional": false
+      },
+      {
+        "item": "neutral oil for toasting",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, microplaned",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "thai chili, finely minced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut, grapeseed, or rice bran)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "ripe mango (Ataulfo, Kent, or Alphonso)",
+        "slug": "mango",
+        "optional": false
+      },
+      {
+        "item": "raw peanuts, skin-on",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "mint leaves, packed",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves with tender upper stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "scallion, green parts only",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "vinaigrette-emulsion",
+      "acid-milk-sour"
+    ],
+    "equipment": [],
     "added": "2026-05-11",
     "_card": {
-      "usedInCount": 1
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
-    "path": "pages/ingredients/daikon.html",
+    "path": "pages/ingredients/mango.html",
     "type": "ingredient",
     "category": "ingredients",
-    "title": "Daikon (radish)",
-    "desc": "Long white winter radish (Raphanus sativus var. longipinnatus), 90 to 95% water by weight, with active myrosinase enzymes that convert intact glucosinolates into pungent isothiocyanates the moment cell walls are ruptured. The structural ingredient of oden, daikon mochi, kkakdugi, banh mi do chua, and the Japanese oroshi (raw grated radish) condiment.",
+    "title": "Mango",
+    "desc": "The fruit of Mangifera indica, an Anacardiaceae-family tropical tree. Eaten ripe as a sweet-aromatic fruit, eaten unripe as a tart-acidic vegetable across South Asian, Southeast Asian, and Caribbean cooking.",
     "tags": [
-      "vegetable",
-      "japanese",
-      "korean",
-      "chinese"
+      "fruit",
+      "pantry"
     ],
     "status": "complete",
-    "_slug": "daikon",
+    "_slug": "mango",
     "updated": "2026-05-10",
     "added": "2026-05-11",
     "_card": {
-      "primaryTag": "vegetable",
+      "primaryTag": "fruit",
       "usedInCount": 1,
-      "hasNutrition": false
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/millet.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Millet (pearl millet, foxtail millet, finger millet)",
+    "desc": "A family of small-seeded grasses cultivated for their grains across West Africa, South Asia, and East Asia. The kernels are gluten-free, faintly sweet, and cook to a couscous-like crumb or a polenta-like porridge depending on water ratio.",
+    "tags": [
+      "grain",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "millet",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   },
   {

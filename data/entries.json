@@ -312,7 +312,7 @@
     "status": "complete",
     "_slug": "daikon",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
       "usedInCount": 1,
@@ -567,7 +567,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -631,7 +631,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
-      "usedInCount": 5,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -650,11 +650,31 @@
     "status": "complete",
     "_slug": "mackerel",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "fish",
       "usedInCount": 1,
       "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/mango.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mango",
+    "desc": "The fruit of Mangifera indica, an Anacardiaceae-family tropical tree. Eaten ripe as a sweet-aromatic fruit, eaten unripe as a tart-acidic vegetable across South Asian, Southeast Asian, and Caribbean cooking.",
+    "tags": [
+      "fruit",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "mango",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "fruit",
+      "usedInCount": 1,
+      "hasNutrition": true
     }
   },
   {
@@ -700,6 +720,26 @@
     }
   },
   {
+    "path": "pages/ingredients/millet.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Millet (pearl millet, foxtail millet, finger millet)",
+    "desc": "A family of small-seeded grasses cultivated for their grains across West Africa, South Asia, and East Asia. The kernels are gluten-free, faintly sweet, and cook to a couscous-like crumb or a polenta-like porridge depending on water ratio.",
+    "tags": [
+      "grain",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "millet",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "grain",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/ingredients/mint.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -715,7 +755,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -735,7 +775,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 3,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -1021,7 +1061,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -1209,7 +1249,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -1435,7 +1475,7 @@
     "status": "complete",
     "_slug": "yuzu",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
       "usedInCount": 1,
@@ -2195,6 +2235,84 @@
     }
   },
   {
+    "path": "pages/recipes/ginger-lime-honey-vinaigrette.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ginger-lime-honey vinaigrette",
+    "desc": "A bright, sharp, gently sweet vinaigrette built on microplaned ginger, fresh lime juice, honey, a small hit of chili, and a neutral oil. The microplaned ginger acts as a structural particulate stabilizer; the dressing emulsifies on hand-whisking and holds integrated for 20 to 30 minutes, longer with a brief re-shake. Pairs across grain salads, raw cabbage slaws, charred broccoli, grilled fish, and as a quick dipping sauce for raw vegetables.",
+    "tags": [
+      "sauce",
+      "acid",
+      "aromatic",
+      "no-cook",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "ginger-lime-honey-vinaigrette",
+    "cuisine": "Pan-Asian / West African pantry crossover",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh ginger, microplaned to a paste",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "thai chili, finely minced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut, grapeseed, or rice bran)",
+        "slug": "neutral-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 5,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
     "path": "pages/recipes/homemade-tahini.html",
     "type": "recipe",
     "category": "recipes",
@@ -2880,7 +2998,7 @@
       "oroshigane-or-microplane",
       "fish-spatula"
     ],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 48,
       "diffLabel": "medium",
@@ -3160,7 +3278,7 @@
       "fine-mesh-sieve",
       "glass-jar-or-bottle"
     ],
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "totalMinutes": 1445,
       "diffLabel": "easy",
@@ -3927,6 +4045,146 @@
     }
   },
   {
+    "path": "pages/recipes/senegalese-thiakry-millet-salad-or-west-african-grain-salad.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Senegalese-inspired savory millet salad with mango, mint, and ginger-lime",
+    "desc": "Pearl millet steamed to a fork-fluffed crumb, then tossed with diced ripe mango, slivered red onion macerated in lime, oil-toasted peanuts, mint, cilantro, and a ginger-lime-honey vinaigrette built on a small hit of habanero. The frame borrows from Senegalese thiakry (traditionally a sweet steamed-millet preparation with sour milk and sugar) and reroutes it into a savory grain salad on West African pantry vocabulary: peanut, ginger, scotch-bonnet heat, lime. The thesis is the contrast between the fluffy mildly-sweet grain crumb and the aggressive aromatic dressing, with the mango carrying a structural sweet-juicy load against the heat.",
+    "tags": [
+      "salad",
+      "grain",
+      "fruit",
+      "umami",
+      "acid",
+      "no-cook",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "senegalese-thiakry-millet-salad-or-west-african-grain-salad",
+    "cuisine": "West African (Senegalese-inspired)",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 25,
+      "total_min": 50,
+      "active_min": 30
+    },
+    "updated": "2026-05-10",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pearl millet, raw",
+        "slug": "millet",
+        "optional": false
+      },
+      {
+        "item": "neutral oil for toasting",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "red onion",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, microplaned",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "lime juice, fresh",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "thai chili, finely minced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (peanut, grapeseed, or rice bran)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "ripe mango (Ataulfo, Kent, or Alphonso)",
+        "slug": "mango",
+        "optional": false
+      },
+      {
+        "item": "raw peanuts, skin-on",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "mint leaves, packed",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves with tender upper stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "scallion, green parts only",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "vinaigrette-emulsion",
+      "acid-milk-sour"
+    ],
+    "equipment": [],
+    "added": "2026-05-11",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
     "path": "pages/recipes/som-tam-thai-green-papaya-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -4334,7 +4592,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 5
+      "usedInCount": 6
     }
   },
   {
@@ -4370,7 +4628,7 @@
     "status": "complete",
     "_slug": "fish-skin-scoring",
     "updated": "2026-05-10",
-    "added": "2026-05-11",
+    "added": "2026-05-10",
     "_card": {
       "usedInCount": 1
     }
@@ -4568,7 +4826,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 8
+      "usedInCount": 10
     }
   },
   {
@@ -4770,7 +5028,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 14,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -5372,7 +5630,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "legume",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -12126,7 +12384,7 @@
     "updated": "2026-05-04",
     "added": "2026-05-04",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 3
     }
   },
   {
@@ -12479,7 +12737,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -13955,7 +14213,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 24,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -14009,7 +14267,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 45,
+      "usedInCount": 47,
       "hasNutrition": true
     }
   },
