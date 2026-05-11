@@ -1,0 +1,44 @@
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Catfish (channel, basa, swai)'
+desc: 'Freshwater bottom-feeding finfish in several closely related families, 6 to 12% fat by weight, with a firm dense white flesh, a thin skin that crisps when seared, and a characteristic mild flavor with a slight earthy back-note from sediment-feeding biology. The structural fish of the US South, the Mississippi delta, the Mekong delta, and Bangladeshi and West African catfish traditions.'
+metaDesc: 'Catfish: channel vs. basa vs. swai species comparison, the geosmin question and how to manage it, role in canh chua, blackened catfish, and South Asian curries, freshness cues.'
+tags: ['fish', 'seafood']
+updated: '2026-05-10'
+
+grams_per_unit: 150
+
+about: |
+  Catfish is a loose culinary category covering several closely related freshwater finfish, all in the order Siluriformes. The three most common in US markets are channel catfish (Ictalurus punctatus, the canonical US catfish and the species in nearly every Southern catfish dish; farmed primarily in Mississippi, Alabama, and Arkansas), basa (Pangasius bocourti, a Vietnamese pangasiid sold under the names basa or "Vietnamese catfish"; farmed in the Mekong delta and exported widely), and swai (Pangasianodon hypophthalmus, a closely-related Vietnamese pangasiid, slightly thinner and milder than basa, sold under names including swai, tra, and sometimes generically as "Vietnamese catfish"). Snakehead (cá lóc, Channa striata; technically not a catfish but often used interchangeably in Vietnamese catfish dishes), and the African catfish (Clarias gariepinus, the structural fish of much Nigerian and Cameroonian cooking) round out the category. For most cooking purposes channel and basa are functionally interchangeable; channel is slightly firmer with a slightly stronger flavor, basa is slightly oilier and milder.
+
+  Fat profile and flesh structure. Catfish runs 6 to 12% fat by weight depending on species and feeding. The fat is distributed through the flesh rather than concentrated in a subcutaneous layer (as in mackerel or salmon), and it is largely saturated and monounsaturated rather than polyunsaturated, which means the flesh holds up better to high-heat cooking (frying, blackening, grilling) without the rapid oxidative-rancidity profile that plagues mackerel. The flesh is firm, slightly dense, and breaks into wide flakes rather than the fine flakes of cod or the tight grain of tuna; this structure suits long-simmer broths (canh chua, curries) and shallow-frying (cornmeal-crusted Southern catfish) equally well. The protein content is high and the connective-tissue content is moderate; catfish does not need a brine to hold moisture through a 4 to 5 minute simmer the way a leaner white fish (cod, flounder) does.
+
+  The geosmin question. Catfish has a reputation for "muddiness", a back-note that is technically the compound geosmin (a bicyclic alcohol produced by blue-green algae and certain actinomycetes in the fish's freshwater environment, accumulated in the skin and dark muscle through bottom-feeding biology). Modern US channel-catfish farms manage geosmin tightly (the fish are flushed in clean-water tanks for several days before harvest, and water quality is actively managed against algae blooms), and well-handled farmed catfish in the 2020s rarely shows a strong mud-note. Wild catfish from a slow-moving freshwater pond can read strongly muddy; the same fish from a clean spring-fed stream reads clean. Vietnamese cooks use a salt-and-vinegar rinse (1 tbsp each rubbed gently over the skin and flesh, then a clean-water rinse) to mobilize any remaining geosmin into solution and rinse it away; this is also the standard South Asian preparation step. The mud-note is a fixable problem, not a species defect.
+
+  Cooking applications by category. **US South**: cornmeal-dredged and shallow-fried (the canonical Mississippi-delta presentation, eaten with hot sauce, white bread, and slaw); blackened (Cajun, the New Orleans-Paul-Prudhomme adaptation, high-heat cast-iron with the blackening spice rub); pan-fried with brown butter; smoked. The firm flesh and moderate fat suit the dry-heat methods. **Vietnamese**: canh chua cá (the southern Vietnamese sour soup, where catfish or snakehead is poached briefly in tamarind broth); cá kho tộ (the caramel-braised clay-pot fish, where catfish steaks simmer in a coconut-water-fish-sauce-caramel reduction); cá chiên xù (whole crispy fried catfish with nuoc cham). **South Asian (Bangladeshi, Bengali Indian, Sri Lankan)**: in tamarind or coconut-based curries; in fried-fish preparations with mustard-oil and panch phoron. **West African (Nigerian, Cameroonian)**: in pepper soups (the spicy clear-broth catfish stew is a Nigerian Igbo classic); in palm-oil stews. **Cantonese**: less common but used in clay-pot fish preparations and in some Sichuan dry-pot dishes; the firm flesh holds up to the assertive seasoning.
+
+  Buying notes. Fresh whole catfish at a Southern fishmonger or live-tank Asian grocery: clear bright eyes (cloudy is past peak), shiny moist skin with no excess slime, no ammonia smell, firm flesh that springs back from a finger press. Live catfish in a tank (common at H Mart and 99 Ranch in regions with large Vietnamese or Chinese populations) are the freshest possible source; the fishmonger will dispatch and gut on request. Fresh catfish steaks (skin-on, bone-in): white-to-pink flesh, intact skin, no brown discoloration along the dark muscle line. Frozen basa or swai fillets (most common in US supermarket freezers): vacuum-packed, look for clear-to-pale-pink flesh, unbroken seal, process date within 6 months; these are an acceptable workhorse but read slightly milder than fresh channel.
+
+  Common Western drift. Two patterns. (1) US home cooks under-buy catfish from squeamishness about the species (a hangover from the mid-20th-century "trash fish" reputation), missing one of the best-value firm white fish on the market. (2) Vietnamese-restaurant canh chua in the US is often made with frozen basa fillets instead of the bone-in steaks the tradition uses, producing a soup where the fish breaks apart and the broth reads thinner; the structural integrity of the bone-in steak is part of the dish.
+
+storage: |
+  Fresh whole catfish, gutted and on ice in the refrigerator: 1 to 2 days from purchase, with strong preference for cooking within 24 hours. Set the fish on a wire rack inside a rimmed pan, covered with crushed ice in a plastic bag (so meltwater drips below the rack), in the coldest part of the refrigerator. Fresh steaks or fillets, on ice or in a sealed container in the refrigerator: 1 to 2 days. Frozen vacuum-packed fillets: 3 to 6 months at peak quality, thaw overnight in the refrigerator in the bag. Failure modes: any ammonia smell (microbial breakdown, discard immediately and do not cook), gummy slime on the skin (bacterial surface load, surface-rinse and cook immediately or discard), gray-brown discoloration of the dark muscle line (oxidation, trim the dark muscle line before cooking), strong muddy back-note on raw smell (geosmin accumulation, the salt-and-vinegar rinse will partially fix but the fish will read earthy regardless).
+
+substitutions:
+  - for: 'catfish (Vietnamese canh chua or cá kho tộ)'
+    use: 'snakehead (cá lóc), tilapia, or sea bass'
+    note: 'Snakehead is the canonical Mekong-delta substitute and reads slightly firmer and meatier in the broth. Tilapia is the workable supermarket substitute, reads slightly milder and the flesh breaks more easily under simmer. Sea bass is acceptable but reads more delicate; reduce poach time to 3 to 4 minutes.'
+  - for: 'catfish (US Southern cornmeal-fried or blackened)'
+    use: 'tilapia, basa, or trout'
+    note: 'Tilapia is the closest US-supermarket substitute for cornmeal-fried catfish, the flesh structure and mild flavor are similar enough that most diners will not distinguish. Basa and swai (Vietnamese pangasiids) are functionally interchangeable with channel catfish for all dry-heat applications. Trout is a defensible cross-substitute for blackening but reads as a different dish.'
+  - for: 'catfish (South Asian curry)'
+    use: 'kingfish, pomfret, or tilapia'
+    note: 'Kingfish is the canonical South Asian curry fish and reads as the expected texture and flavor profile; pomfret is a milder alternative. Tilapia works as a budget substitute and is what many Bengali home cooks in the US use when fresh South Asian fish is unavailable.'
+  - for: 'catfish (Nigerian pepper soup or African catfish stew)'
+    use: 'African catfish (Clarias gariepinus) or tilapia'
+    note: 'African catfish, when available at African markets in major US cities, is the canonical species and reads firmer and slightly more flavorful than channel. Tilapia is the workable substitute when the species is unavailable.'
+---

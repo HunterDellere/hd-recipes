@@ -1,30 +1,29 @@
 [
   {
-    "path": "pages/recipes/korean-oi-muchim-spicy-cucumber-salad.html",
+    "path": "pages/recipes/vietnamese-canh-chua-tamarind-sour-soup-with-catfish.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Korean spicy cucumber salad (oi-muchim, 오이무침)",
-    "desc": "Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, rice vinegar, and toasted sesame oil. The fastest Korean banchan: 10 minutes from cucumber to bowl, eaten the same hour for peak crunch.",
+    "title": "Canh chua cá (Vietnamese tamarind sour soup with catfish)",
+    "desc": "Southern Vietnamese sour soup built on a tamarind-acidified broth, with pineapple, tomato, taro stem (bạc hà), okra, and bean sprouts simmered briefly, catfish steaks slipped in for a 4 to 5 minute poach, and the bowl finished with raw rau ngổ, culantro, fried garlic, and Thai chili. The dish lives or dies on the acid-sugar-salt-umami curve, calibrated so the tamarind reads bright and not muddy.",
     "tags": [
-      "korean",
-      "salad",
-      "vegetable",
-      "spicy",
-      "no-cook",
-      "side",
-      "pickle"
+      "vietnamese",
+      "seafood",
+      "fish",
+      "soup",
+      "weeknight",
+      "one-pot"
     ],
     "status": "complete",
-    "_slug": "korean-oi-muchim-spicy-cucumber-salad",
-    "cuisine": "Korean",
-    "course": "side",
-    "difficulty": "easy",
+    "_slug": "vietnamese-canh-chua-tamarind-sour-soup-with-catfish",
+    "cuisine": "Vietnamese",
+    "course": "dinner",
+    "difficulty": "medium",
     "servings": 4,
     "time": {
-      "prep_min": 10,
-      "cook_min": 0,
-      "total_min": 25,
-      "active_min": 12
+      "prep_min": 25,
+      "cook_min": 20,
+      "total_min": 45,
+      "active_min": 35
     },
     "updated": "2026-05-10",
     "diet": [
@@ -33,89 +32,180 @@
     ],
     "ingredients": [
       {
-        "item": "Korean or Persian cucumbers, sliced into 3 mm half-moons",
-        "slug": "cucumber",
+        "item": "catfish steaks (skin-on, bone-in, 2 to 3 cm thick)",
+        "slug": "catfish",
         "optional": false
       },
       {
-        "item": "kosher salt (for the salt cure)",
-        "slug": "kosher-salt",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
         "optional": false
       },
       {
-        "item": "gochugaru (Korean chili flakes, coarse)",
-        "slug": "gochugaru",
+        "item": "tamarind pulp (seedless block)",
+        "slug": "tamarind",
         "optional": false
       },
       {
-        "item": "fish sauce",
+        "item": "water (or a light unsalted seafood broth)",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (premium, 30 to 40°N nitrogen)",
         "slug": "fish-sauce",
         "optional": false
       },
       {
-        "item": "rice vinegar",
-        "slug": "rice-vinegar",
+        "item": "palm sugar (or light brown sugar)",
+        "slug": "palm-sugar",
         "optional": false
       },
       {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
+        "item": "shallot, thinly sliced",
+        "slug": "shallot",
         "optional": false
       },
       {
-        "item": "garlic, finely grated",
+        "item": "garlic, smashed",
         "slug": "garlic",
         "optional": false
       },
       {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
+        "item": "neutral oil",
+        "slug": "neutral-oil",
         "optional": false
       },
       {
-        "item": "scallion, thinly sliced",
-        "slug": "scallion",
+        "item": "fresh pineapple, cored and cut into 1 cm wedges",
+        "slug": "pineapple",
         "optional": false
       },
       {
-        "item": "toasted sesame seeds",
+        "item": "ripe tomato, cut into 6 wedges each",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "taro stem (bạc hà), peeled and cut into 4 cm angled batons",
+        "slug": "taro-stem",
+        "optional": false
+      },
+      {
+        "item": "fresh okra, trimmed and cut into 2 cm pieces",
+        "slug": "okra",
+        "optional": false
+      },
+      {
+        "item": "mung bean sprouts",
+        "slug": "mung-bean-sprouts",
+        "optional": false
+      },
+      {
+        "item": "rau ngổ (rice paddy herb), coarsely chopped",
+        "slug": "rau-ngo",
+        "optional": false
+      },
+      {
+        "item": "culantro (ngò gai), thinly sliced",
+        "slug": "culantro",
+        "optional": false
+      },
+      {
+        "item": "Thai bird chili, thinly sliced (optional)",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "lime wedges",
+        "slug": "lime",
         "optional": false
       }
     ],
     "techniques": [
-      "dry-brining"
+      "tamarind-souring",
+      "blooming-aromatics",
+      "oil-poaching"
     ],
-    "equipment": [],
+    "equipment": [
+      "4 L / 4 qt heavy pot",
+      "fine-mesh sieve",
+      "small frying pan for garlic"
+    ],
     "added": "2026-05-11",
     "_card": {
-      "totalMinutes": 25,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 12,
-      "filterMinutes": 12
+      "activeMinutes": 35,
+      "filterMinutes": 35
     }
   },
   {
-    "path": "pages/ingredients/gochugaru.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Gochugaru (Korean chili flakes, 고추가루)",
-    "desc": "Sun-dried Korean red chili (Capsicum annuum, taeyangcho cultivar) milled to flakes or fine powder. Mild to medium heat (1,500 to 10,000 Scoville), bright red color, rounded warm aromatic profile. The chili-flake top note across Korean cooking; structural in kimchi, oi-muchim, ojingeo bokkeum, and tteokbokki.",
+    "path": "pages/techniques/tamarind-souring.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Tamarind souring (sour-broth extraction and balance)",
+    "desc": "Soak tamarind pulp in hot water 15 to 20 minutes, mash and strain to a clean liquid, then balance the broth with fish sauce or salt (deep umami) and palm or brown sugar (round the sharp tartaric acid). The structural acid technique of canh chua, sambar, pad thai, and the global tamarind-acid cuisine.",
     "tags": [
-      "korean",
-      "pantry",
-      "spicy",
-      "aromatic",
-      "spice"
+      "acid",
+      "umami",
+      "pantry"
     ],
     "status": "complete",
-    "_slug": "gochugaru",
+    "_slug": "tamarind-souring",
     "updated": "2026-05-10",
     "added": "2026-05-11",
     "_card": {
-      "primaryTag": "aromatic",
+      "usedInCount": 1
+    }
+  },
+  {
+    "path": "pages/ingredients/catfish.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Catfish (channel, basa, swai)",
+    "desc": "Freshwater bottom-feeding finfish in several closely related families, 6 to 12% fat by weight, with a firm dense white flesh, a thin skin that crisps when seared, and a characteristic mild flavor with a slight earthy back-note from sediment-feeding biology. The structural fish of the US South, the Mississippi delta, the Mekong delta, and Bangladeshi and West African catfish traditions.",
+    "tags": [
+      "fish",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "catfish",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "fish",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/culantro.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Culantro (ngò gai, sawtooth herb)",
+    "desc": "Long sawtooth-edged herb (Eryngium foetidum) in the same family as cilantro but with a more intense, slightly bitter aromatic profile carrying the same dodecenal compound as cilantro at 3 to 5× concentration. The defining herb of Caribbean sazón, Vietnamese pho and canh chua, and several Southeast Asian sour-soup traditions.",
+    "tags": [
+      "herb"
+    ],
+    "status": "complete",
+    "_slug": "culantro",
+    "updated": "2026-05-10",
+    "added": "2026-05-11",
+    "_card": {
+      "primaryTag": "herb",
       "usedInCount": 1,
       "hasNutrition": false
     }
@@ -1347,175 +1437,6 @@
       "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/mansaf.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Mansaf",
-    "desc": "Bone-in lamb shoulder simmered for hours, then bathed in a sauce built from reconstituted jameed (fermented dried sheep yogurt). Served over saffron-tinted basmati rice on a base layer of paper-thin shrak bread, crowned with samna-toasted pine nuts and almonds. The Bedouin and Jordanian feast dish, technique-faithful.",
-    "tags": [
-      "weekend-project",
-      "lamb",
-      "levantine",
-      "braise",
-      "comfort",
-      "umami",
-      "rice",
-      "fermentation"
-    ],
-    "status": "complete",
-    "_slug": "mansaf",
-    "cuisine": "Jordanian",
-    "course": "dinner",
-    "difficulty": "hard",
-    "servings": 6,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 240,
-      "total_min": 270,
-      "active_min": 90
-    },
-    "updated": "2026-05-06",
-    "ingredients": [
-      {
-        "item": "jameed stones",
-        "slug": "jameed",
-        "optional": false
-      },
-      {
-        "item": "cold water for the soak",
-        "optional": false
-      },
-      {
-        "item": "bone-in lamb shoulder, cut into 6 large pieces by the butcher",
-        "slug": "lamb-shoulder",
-        "optional": false
-      },
-      {
-        "item": "cold water for the braise",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, peeled and halved",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods, lightly cracked",
-        "optional": false
-      },
-      {
-        "item": "bay leaves",
-        "optional": false
-      },
-      {
-        "item": "whole black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "mastic resin, crushed (optional but traditional)",
-        "optional": true
-      },
-      {
-        "item": "kosher salt for the braise",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "cornstarch",
-        "optional": false
-      },
-      {
-        "item": "cold water for the cornstarch slurry",
-        "optional": false
-      },
-      {
-        "item": "basmati rice",
-        "slug": "basmati-rice",
-        "optional": false
-      },
-      {
-        "item": "samna (clarified butter)",
-        "slug": "samna",
-        "optional": false
-      },
-      {
-        "item": "ground turmeric",
-        "optional": false
-      },
-      {
-        "item": "hot water for the rice",
-        "optional": false
-      },
-      {
-        "item": "kosher salt for the rice",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "samna for the nuts",
-        "slug": "samna",
-        "optional": false
-      },
-      {
-        "item": "pine nuts",
-        "optional": false
-      },
-      {
-        "item": "slivered blanched almonds",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley, finely chopped",
-        "optional": false
-      },
-      {
-        "item": "shrak or markook bread (paper-thin Bedouin flatbread)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "cooked-yogurt-sauce",
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "heavy-saucepan",
-      "instant-read-thermometer"
-    ],
-    "added": "2026-05-06",
-    "_card": {
-      "totalMinutes": 270,
-      "diffLabel": "hard",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "+ 3 h rest",
-      "timeMode": "active",
-      "activeMinutes": 90,
-      "filterMinutes": 90
-    }
-  },
-  {
-    "path": "pages/techniques/cooked-yogurt-sauce.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Cooked yogurt sauce",
-    "desc": "Stabilize yogurt with starch or egg, temper into the hot dish, and hold at a tremor below the boil. Casein curdles above 85 °C without help; the help is what makes a yogurt-based stew possible.",
-    "tags": [
-      "dairy",
-      "fermentation"
-    ],
-    "status": "complete",
-    "_slug": "cooked-yogurt-sauce",
-    "updated": "2026-05-06",
-    "added": "2026-05-06",
-    "_card": {
-      "usedInCount": 1
     }
   }
 ]
