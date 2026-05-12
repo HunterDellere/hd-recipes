@@ -124,7 +124,7 @@
       "medium-mixing-bowl",
       "whisk"
     ],
-    "added": "2026-05-12",
+    "added": "2026-05-11",
     "_card": {
       "totalMinutes": 70,
       "diffLabel": "medium",
@@ -258,28 +258,6 @@
     "added": "2026-05-11",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 1,
-      "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/ingredients/ube-halaya.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Ube halaya",
-    "desc": "Filipino preserve of grated purple yam (Dioscorea alata) cooked with coconut milk, sweetened condensed milk, evaporated milk, and butter until thick, glossy, and spreadable. Vivid violet from natural anthocyanin pigment.",
-    "tags": [
-      "filipino",
-      "fruit",
-      "dessert",
-      "dairy"
-    ],
-    "status": "complete",
-    "_slug": "ube-halaya",
-    "updated": "2026-05-11",
-    "added": "2026-05-11",
-    "_card": {
-      "primaryTag": "fruit",
       "usedInCount": 1,
       "hasNutrition": false
     }
@@ -1571,6 +1549,87 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/cured-egg-yolk.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cured egg yolk (salt-sugar dry cure)",
+    "desc": "Raw yolks buried in a 70:30 salt-sugar bed for a week, rinsed, then dried in a low oven or dehydrator until they grate like a hard cheese. Translucent, deep amber, dense umami concentrate.",
+    "tags": [
+      "egg",
+      "pantry",
+      "umami",
+      "fermentation",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "cured-egg-yolk",
+    "cuisine": "",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 720,
+      "total_min": 13440,
+      "active_min": 30
+    },
+    "updated": "2026-05-08",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "whole black peppercorns, optional aromatic",
+        "slug": "black-pepper",
+        "optional": true
+      },
+      {
+        "item": "star anise, optional aromatic",
+        "slug": "star-anise",
+        "optional": true
+      },
+      {
+        "item": "fresh large eggs (the freshest you can buy)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "cheesecloth or fine muslin",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "dry-brining"
+    ],
+    "equipment": [
+      "fine-mesh-sieve",
+      "microplane",
+      "wire-rack"
+    ],
+    "added": "2026-05-08",
+    "_card": {
+      "totalMinutes": 13440,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ 9 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   }
 ]

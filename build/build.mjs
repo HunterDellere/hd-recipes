@@ -39,7 +39,7 @@ const ROOT = join(__dirname, '..');
 
 const LAYOUT = readFileSync(join(ROOT, 'templates/_layout.html'), 'utf8');
 
-const SITE_URL = 'https://recipes.hd.dev';
+const SITE_URL = 'https://hunterdellere.github.io/hd-recipes';
 const SITE_NAME = 'hd · recipes';
 
 const CATEGORY_LABELS = {
@@ -658,9 +658,9 @@ const manifest = {
   name: 'hd · recipes',
   short_name: 'recipes',
   description: 'Recipes — tested, scaled, sourced. Every ingredient links, every macro is real, scales on the fly.',
-  start_url: '/?utm_source=pwa',
-  scope: '/',
-  id: '/',
+  start_url: './?utm_source=pwa',
+  scope: './',
+  id: './',
   display: 'standalone',
   display_override: ['standalone', 'minimal-ui'],
   orientation: 'portrait-primary',
@@ -670,15 +670,15 @@ const manifest = {
   dir: 'ltr',
   categories: ['food', 'lifestyle', 'books'],
   icons: [
-    { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
-    { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
-    { src: '/icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+    { src: './icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+    { src: './icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+    { src: './icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
   ],
   shortcuts: [
     { name: 'Surprise me',     short_name: 'Random',  description: 'Open a random recipe',
-      url: '/random.html',           icons: [{ src: '/icons/icon-192.png', sizes: '192x192' }] },
+      url: './random.html',           icons: [{ src: './icons/icon-192.png', sizes: '192x192' }] },
     { name: 'Browse recipes',  short_name: 'Recipes', description: 'Browse all recipes',
-      url: '/pages/explore/cook.html', icons: [{ src: '/icons/icon-192.png', sizes: '192x192' }] },
+      url: './pages/explore/cook.html', icons: [{ src: './icons/icon-192.png', sizes: '192x192' }] },
   ],
 };
 writeFileSync(join(ROOT, 'manifest.webmanifest'), JSON.stringify(manifest, null, 2), 'utf8');
