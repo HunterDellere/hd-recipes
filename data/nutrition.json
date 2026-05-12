@@ -77,6 +77,50 @@
       }
     ]
   },
+  "pages/recipes/bao-cui-thin-fried-wheat-cracker.html": {
+    "perServing": {
+      "energy_kcal": 115,
+      "protein_g": 3.2,
+      "fat_g": 0.4,
+      "saturated_fat_g": 0.1,
+      "carbs_g": 24,
+      "fiber_g": 0.9,
+      "sugar_g": 0.2,
+      "sodium_mg": 146,
+      "potassium_mg": 34,
+      "calcium_mg": 5,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 920,
+      "protein_g": 25.9,
+      "fat_g": 3,
+      "saturated_fat_g": 0.7,
+      "carbs_g": 192,
+      "fiber_g": 6.9,
+      "sugar_g": 1.6,
+      "sodium_mg": 1171,
+      "potassium_mg": 273,
+      "calcium_mg": 40,
+      "iron_mg": 3,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 1
+    },
+    "missing": [
+      {
+        "name": "neutral oil",
+        "slug": "neutral-oil",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "neutral oil for frying",
+        "slug": "neutral-oil",
+        "reason": "no-fdc"
+      }
+    ]
+  },
   "pages/recipes/beef-broth.html": {
     "perServing": {
       "energy_kcal": 3,
@@ -2110,6 +2154,39 @@
     "total": {},
     "missing": []
   },
+  "pages/recipes/homemade-tianmianjiang.html": {
+    "perServing": {
+      "energy_kcal": 61,
+      "protein_g": 1.7,
+      "fat_g": 0.2,
+      "saturated_fat_g": 0,
+      "carbs_g": 12.7,
+      "fiber_g": 0.5,
+      "sugar_g": 0,
+      "sodium_mg": 1551,
+      "potassium_mg": 18,
+      "calcium_mg": 3,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 1820,
+      "protein_g": 51.7,
+      "fat_g": 4.9,
+      "saturated_fat_g": 0.8,
+      "carbs_g": 381.6,
+      "fiber_g": 13.5,
+      "sugar_g": 1.4,
+      "sodium_mg": 46520,
+      "potassium_mg": 545,
+      "calcium_mg": 104,
+      "iron_mg": 6,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "missing": []
+  },
   "pages/recipes/homemade-tomato-paste.html": {
     "perServing": {
       "energy_kcal": 96,
@@ -2326,6 +2403,45 @@
         "name": "whole milk",
         "slug": "whole-milk",
         "reason": "no-cache"
+      }
+    ]
+  },
+  "pages/recipes/jianbing-chili-paste.html": {
+    "perServing": {
+      "energy_kcal": 64,
+      "protein_g": 0.2,
+      "fat_g": 6.9,
+      "saturated_fat_g": 0.5,
+      "carbs_g": 0.7,
+      "fiber_g": 0.1,
+      "sugar_g": 0,
+      "sodium_mg": 28,
+      "potassium_mg": 11,
+      "calcium_mg": 4,
+      "iron_mg": 0,
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 1
+    },
+    "total": {
+      "energy_kcal": 1026,
+      "protein_g": 2.8,
+      "fat_g": 110.3,
+      "saturated_fat_g": 8.2,
+      "carbs_g": 11.6,
+      "fiber_g": 1.2,
+      "sugar_g": 0.3,
+      "sodium_mg": 445,
+      "potassium_mg": 182,
+      "calcium_mg": 66,
+      "iron_mg": 1,
+      "vitamin_c_mg": 9,
+      "vitamin_a_iu": 14
+    },
+    "missing": [
+      {
+        "name": "doubanjiang (Pixian-style fermented broad bean and chili paste)",
+        "slug": "doubanjiang",
+        "reason": "no-fdc"
       }
     ]
   },
@@ -5126,6 +5242,50 @@
       {
         "name": "raw glutinous rice (sticky rice)",
         "slug": "glutinous-rice",
+        "reason": "no-fdc"
+      }
+    ]
+  },
+  "pages/recipes/tianjin-jianbing-savory-mung-bean-crepe.html": {
+    "perServing": {
+      "energy_kcal": 189,
+      "protein_g": 4.9,
+      "fat_g": 5.5,
+      "saturated_fat_g": 0.6,
+      "carbs_g": 30.3,
+      "fiber_g": 3.1,
+      "sodium_mg": 394,
+      "potassium_mg": 147,
+      "calcium_mg": 58,
+      "iron_mg": 2,
+      "vitamin_c_mg": 4,
+      "vitamin_a_iu": 555,
+      "sugar_g": 2.5
+    },
+    "total": {
+      "energy_kcal": 378,
+      "protein_g": 9.7,
+      "fat_g": 11.1,
+      "saturated_fat_g": 1.3,
+      "carbs_g": 60.6,
+      "fiber_g": 6.3,
+      "sodium_mg": 789,
+      "potassium_mg": 293,
+      "calcium_mg": 116,
+      "iron_mg": 3,
+      "vitamin_c_mg": 9,
+      "vitamin_a_iu": 1110,
+      "sugar_g": 4.9
+    },
+    "missing": [
+      {
+        "name": "large eggs",
+        "slug": "eggs",
+        "reason": "no-cache"
+      },
+      {
+        "name": "neutral oil (rice bran, grapeseed, or refined avocado)",
+        "slug": "neutral-oil",
         "reason": "no-fdc"
       }
     ]
