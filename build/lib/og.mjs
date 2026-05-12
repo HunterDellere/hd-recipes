@@ -52,7 +52,7 @@ export function categoryFaviconDataUri(_category) {
     `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>` +
     `<rect width='100' height='100' rx='18' fill='#faf6ee'/>` +
     `<text x='50' y='50' text-anchor='middle' dominant-baseline='central'` +
-    ` font-family='EB Garamond, serif' font-size='66' font-weight='700' fill='#b8423a'>R</text>` +
+    ` font-family='EB Garamond, Georgia, serif' font-size='58' font-weight='700' letter-spacing='-2' fill='#b8423a'>hd</text>` +
     `</svg>`;
   return 'data:image/svg+xml,' + encodeURIComponent(svg);
 }
