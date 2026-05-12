@@ -1,5 +1,141 @@
 [
   {
+    "path": "pages/recipes/tianjin-jianbing-savory-mung-bean-crepe.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tianjin jianbing guozi (Tianjin savory mung-bean crepe, 天津煎饼馃子)",
+    "desc": "A paper-thin mung-bean-and-millet crepe spread with a wooden T-bar on a hot round griddle, cracked with one egg and seeded with black and white sesame while the batter is still wet, flipped once, then painted with tianmianjiang (sweet bean sauce), fermented bean curd sauce, and a brushed-on roasted chili paste before a sheet of bao cui (thin shatter-crisp wheat cracker) is laid across the center and the whole disc is folded into a hand-held rectangle. The Tianjin canonical breakfast wrap; the entire dish is engineered around three textural commitments: the lacy-thin crepe edge, the wet-then-flash-cooked egg layer, and the bao cui that must stay glass-shatter under the sauce.",
+    "tags": [
+      "chinese",
+      "breakfast",
+      "weeknight",
+      "umami",
+      "fritter"
+    ],
+    "status": "complete",
+    "_slug": "tianjin-jianbing-savory-mung-bean-crepe",
+    "cuisine": "Chinese",
+    "course": "breakfast",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 10,
+      "total_min": 70,
+      "active_min": 35
+    },
+    "updated": "2026-05-12",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "mung bean flour (绿豆面)",
+        "optional": false
+      },
+      {
+        "item": "millet flour (小米面)",
+        "slug": "millet",
+        "optional": false
+      },
+      {
+        "item": "all-purpose wheat flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "five-spice powder",
+        "optional": false
+      },
+      {
+        "item": "cool water",
+        "optional": false
+      },
+      {
+        "item": "tianmianjiang (sweet bean sauce, 甜面酱)",
+        "optional": false
+      },
+      {
+        "item": "fermented red bean curd (红腐乳, hong furu)",
+        "optional": false
+      },
+      {
+        "item": "jianbing chili paste (chili oil with garlic and fermented broad bean)",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "white sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "black sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "scallions, finely chopped (greens and pale base)",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "cilantro, finely chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "bao cui (薄脆, thin fried wheat crackers, 1 sheet per crepe)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (rice bran, grapeseed, or refined avocado)",
+        "slug": "neutral-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "28-cm-flat-carbon-steel-or-non-stick-crepe-pan",
+      "t-bar-or-offset-spatula",
+      "small-pastry-brush",
+      "wide-fish-spatula",
+      "medium-mixing-bowl",
+      "whisk"
+    ],
+    "added": "2026-05-12",
+    "_card": {
+      "totalMinutes": 70,
+      "diffLabel": "medium",
+      "timeLead": "1 h 10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/recipes/ube-halaya-latte.html",
     "type": "recipe",
     "category": "recipes",
@@ -1435,87 +1571,6 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/cured-egg-yolk.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Cured egg yolk (salt-sugar dry cure)",
-    "desc": "Raw yolks buried in a 70:30 salt-sugar bed for a week, rinsed, then dried in a low oven or dehydrator until they grate like a hard cheese. Translucent, deep amber, dense umami concentrate.",
-    "tags": [
-      "egg",
-      "pantry",
-      "umami",
-      "fermentation",
-      "make-ahead",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "cured-egg-yolk",
-    "cuisine": "",
-    "course": "sauce",
-    "difficulty": "medium",
-    "servings": 12,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 720,
-      "total_min": 13440,
-      "active_min": 30
-    },
-    "updated": "2026-05-08",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "whole black peppercorns, optional aromatic",
-        "slug": "black-pepper",
-        "optional": true
-      },
-      {
-        "item": "star anise, optional aromatic",
-        "slug": "star-anise",
-        "optional": true
-      },
-      {
-        "item": "fresh large eggs (the freshest you can buy)",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "cheesecloth or fine muslin",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "dry-brining"
-    ],
-    "equipment": [
-      "fine-mesh-sieve",
-      "microplane",
-      "wire-rack"
-    ],
-    "added": "2026-05-08",
-    "_card": {
-      "totalMinutes": 13440,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "+ 9 d rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
     }
   }
 ]
