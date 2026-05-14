@@ -1,5 +1,313 @@
 [
   {
+    "path": "pages/ingredients/chuck-eye-steak.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chuck eye steak",
+    "desc": "A boneless steak cut from the 5th rib portion of the beef chuck, the same muscle (longissimus dorsi) that becomes ribeye one rib forward, with more connective tissue and intramuscular fat. The \"poor man's ribeye\": ribeye flavor at a quarter of the price, with a narrower doneness window.",
+    "tags": [
+      "beef"
+    ],
+    "status": "complete",
+    "_slug": "chuck-eye-steak",
+    "updated": "2026-05-13",
+    "added": "2026-05-14",
+    "_card": {
+      "primaryTag": "beef",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/fresh-thyme.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fresh thyme",
+    "desc": "Thymus vulgaris. A perennial Mediterranean shrub-herb whose woody-stemmed sprigs carry the most heat-stable aromatic profile in the herb cabinet, thymol and carvacrol, the same phenols found in oregano, that survive long braises where soft herbs disintegrate.",
+    "tags": [
+      "herb",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "fresh-thyme",
+    "updated": "2026-05-13",
+    "added": "2026-05-14",
+    "_card": {
+      "primaryTag": "herb",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/recipes/cast-iron-chuck-eye-steaks-with-shallot-pan-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cast-iron chuck eye steaks with shallot pan sauce",
+    "desc": "Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter-basted with smashed garlic and thyme sprigs to a 54 °C medium-rare, then rested while the same pan builds a sauce from minced shallot, red wine, beef broth, dijon, and cold butter mounted in off-heat. The American steakhouse and French bistro overlap: ribeye-grade flavor from the chuck primal, a glossy mahogany pan sauce that takes 6 minutes of attention while the steaks rest, and a finish that ties marbling, fond, and acidity into one continuous bite.",
+    "tags": [
+      "american",
+      "french",
+      "beef",
+      "weeknight",
+      "roast",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "cast-iron-chuck-eye-steaks-with-shallot-pan-sauce",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 745,
+      "active_min": 20
+    },
+    "updated": "2026-05-13",
+    "diet": [
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "chuck eye steaks, 1-inch / 2.5 cm thick",
+        "slug": "chuck-eye-steak",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, cold cubed",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, smashed (skin on)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme sprigs",
+        "slug": "fresh-thyme",
+        "optional": false
+      },
+      {
+        "item": "shallot, fine-minced",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "dry red wine (Pinot Noir, Côtes du Rhône, Chianti, or any unoaked everyday red)",
+        "optional": false
+      },
+      {
+        "item": "beef broth, low-sodium or unsalted homemade",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "optional": false
+      },
+      {
+        "item": "Worcestershire sauce",
+        "slug": "worcestershire-sauce",
+        "optional": true
+      },
+      {
+        "item": "unsalted butter, cold cubed (for mounting)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme leaves, stripped from the stem",
+        "slug": "fresh-thyme",
+        "optional": false
+      },
+      {
+        "item": "flaky salt (Maldon, Jacobsen, or any large-flake finishing salt)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining",
+      "maillard-sear",
+      "deglazing",
+      "pan-emulsion"
+    ],
+    "equipment": [
+      "heavy-cast-iron-skillet",
+      "fish-spatula",
+      "instant-read-thermometer",
+      "wire-rack-and-sheet-pan"
+    ],
+    "added": "2026-05-14",
+    "_card": {
+      "totalMinutes": 745,
+      "diffLabel": "medium",
+      "timeLead": "20 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/sheet-pan-roasted-shallots-cauliflower-and-sweet-potato-with-lemon-dijon-yogurt.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sheet-pan roasted shallots, cauliflower, and sweet potato with lemon-dijon yogurt",
+    "desc": "Halved whole shallots, cauliflower florets, and 2 cm sweet-potato chunks tossed in olive oil, smashed garlic, thyme, and 1.2% salt by weight, spread on a single screaming-hot sheet pan, roasted at 230 °C until each vegetable hits its own Maillard window: shallots collapsing into jammy halves, cauliflower mahogany on the cut faces, sweet potato caramel-edged with a fudge-soft interior. Served with a cold lemon-dijon-yogurt sauce that cuts through the sweet brassica-allium-starch register with acid and tang. The companion side to the cast-iron chuck eye, designed so the steak's shallot pan sauce can spill over the vegetables without competing.",
+    "tags": [
+      "american",
+      "mediterranean",
+      "vegetable",
+      "sheet-pan",
+      "roast",
+      "side",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "sheet-pan-roasted-shallots-cauliflower-and-sweet-potato-with-lemon-dijon-yogurt",
+    "cuisine": "American",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 40,
+      "total_min": 60,
+      "active_min": 25
+    },
+    "updated": "2026-05-13",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "shallots, peeled and halved lengthwise",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "cauliflower",
+        "slug": "cauliflower",
+        "optional": false
+      },
+      {
+        "item": "sweet potato",
+        "slug": "sweet-potato",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, side-smashed (skins on)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme sprigs",
+        "slug": "fresh-thyme",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "whole-milk Greek yogurt or strained plain yogurt",
+        "slug": "greek-yogurt",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "lemon zest, fine-grated",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, microplaned",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh parsley, leaves picked and roughly chopped",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "lemon, for wedges",
+        "slug": "lemon",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-dry-roasting"
+    ],
+    "equipment": [
+      "heavy-rimmed-half-sheet-pan",
+      "metal-spatula",
+      "large-mixing-bowl",
+      "microplane"
+    ],
+    "added": "2026-05-14",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/recipes/tianjin-jianbing-savory-mung-bean-crepe.html",
     "type": "recipe",
     "category": "recipes",
@@ -951,7 +1259,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1096,7 +1404,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -1180,7 +1488,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 10,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -1424,7 +1732,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 9,
+      "usedInCount": 10,
       "hasNutrition": false
     }
   },
@@ -1565,7 +1873,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -1951,7 +2259,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 6,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -2263,7 +2571,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -6649,7 +6957,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -7045,7 +7353,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -7238,7 +7546,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 19,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -7860,7 +8168,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -14479,7 +14787,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 29,
+      "usedInCount": 31,
       "hasNutrition": true
     }
   },
@@ -14518,7 +14826,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -14654,7 +14962,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 38,
+      "usedInCount": 40,
       "hasNutrition": true
     }
   },
@@ -15734,7 +16042,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 8
+      "usedInCount": 10
     }
   },
   {
@@ -16324,7 +16632,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 49,
+      "usedInCount": 51,
       "hasNutrition": true
     }
   },
@@ -18076,7 +18384,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -18091,7 +18399,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 8
+      "usedInCount": 9
     }
   },
   {
@@ -18143,7 +18451,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 17
+      "usedInCount": 18
     }
   },
   {
@@ -18161,7 +18469,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
