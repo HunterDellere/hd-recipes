@@ -1168,4 +1168,127 @@
     // Initial render
     apply();
   }
+
+  // ── sort bar (all family explore pages) ──────────────────────────────
+  const sortSelect = document.querySelector('[data-sort-select]');
+  const sortRoot = document.querySelector('[data-sort-root]');
+  if (sortSelect && sortRoot) initSortControl(sortSelect, sortRoot);
+
+  function initSortControl(select, root) {
+    // Each top-level <section class="fam-cat"> is a category. Within it the
+    // markup is either a single .card-grid OR an .alpha-strip plus a series
+    // of .alpha-group blocks (each containing its own .card-grid).
+    const sections = Array.from(root.querySelectorAll('section.fam-cat'));
+
+    // Snapshot the original alpha layout per section so we can restore it
+    // when the user picks A–Z again. We keep references to the original
+    // DOM nodes, not innerHTML, to preserve event listeners on cards.
+    const snapshots = sections.map((section) => {
+      const alphaStrip = section.querySelector('.alpha-strip');
+      const alphaGroups = Array.from(section.querySelectorAll('.alpha-group'));
+      if (!alphaStrip || alphaGroups.length === 0) return { section, isAlpha: false };
+      // Find the parent that contains the alpha groups (the section body)
+      const parent = alphaGroups[0].parentNode;
+      // Build a flat grid we'll swap in when sorting by date.
+      const flatGrid = document.createElement('div');
+      flatGrid.className = 'card-grid';
+      flatGrid.setAttribute('data-grid', '');
+      flatGrid.setAttribute('data-sort-flat', '');
+      // Track where alpha groups originally sit so we can put them back.
+      const firstAlphaAnchor = alphaGroups[0];
+      return {
+        section, isAlpha: true, alphaStrip, alphaGroups,
+        parent, flatGrid, firstAlphaAnchor,
+      };
+    });
+
+    function readCards(section) {
+      return Array.from(section.querySelectorAll('[data-card]'));
+    }
+
+    function compare(mode, a, b) {
+      if (mode === 'newest' || mode === 'oldest') {
+        const da = a.dataset.updated || '';
+        const db = b.dataset.updated || '';
+        // Empty updated sorts to the end regardless of direction.
+        if (!da && !db) return 0;
+        if (!da) return 1;
+        if (!db) return -1;
+        return mode === 'newest' ? db.localeCompare(da) : da.localeCompare(db);
+      }
+      const ta = a.dataset.title || '';
+      const tb = b.dataset.title || '';
+      return mode === 'az' ? ta.localeCompare(tb) : tb.localeCompare(ta);
+    }
+
+    function applySort(mode) {
+      for (const snap of snapshots) {
+        const { section, isAlpha } = snap;
+        const cards = readCards(section);
+        cards.sort((a, b) => compare(mode, a, b));
+
+        if (!isAlpha) {
+          // Single grid case: just reorder children of the first card-grid.
+          const grid = section.querySelector('.card-grid');
+          if (!grid) continue;
+          for (const c of cards) grid.appendChild(c);
+          continue;
+        }
+
+        // Alpha section: A–Z restores the original alpha layout; other
+        // sorts collapse it into a single flat grid.
+        const { alphaStrip, alphaGroups, parent, flatGrid, firstAlphaAnchor } = snap;
+        if (mode === 'az' || mode === 'za') {
+          if (mode === 'az') {
+            // Restore the original alpha layout exactly.
+            // Remove flat grid if it's currently mounted.
+            if (flatGrid.parentNode === parent) parent.removeChild(flatGrid);
+            // Re-show the strip + groups in original order.
+            alphaStrip.hidden = false;
+            // Re-attach groups in original order before firstAlphaAnchor's
+            // previous position; easiest is to append them at the end of parent.
+            for (const g of alphaGroups) {
+              g.hidden = false;
+              // Move each card back to its original group grid.
+              const grid = g.querySelector('.card-grid');
+              if (!grid) continue;
+              parent.appendChild(g);
+              // Place cards belonging to this letter back into the grid.
+              const letter = (g.id || '').split('-').pop();
+              for (const c of cards) {
+                const t = c.dataset.title || '';
+                const first = (t[0] || '#').toLowerCase();
+                const k = /[a-z]/.test(first) ? first : '#';
+                if (k === letter) grid.appendChild(c);
+              }
+            }
+            // For Z–A we keep alpha groups visible but reverse globally —
+            // skipped for simplicity; treat Z–A like a flat collapse.
+          }
+          if (mode === 'za') {
+            alphaStrip.hidden = true;
+            for (const g of alphaGroups) g.hidden = true;
+            if (flatGrid.parentNode !== parent) {
+              parent.insertBefore(flatGrid, firstAlphaAnchor);
+            }
+            for (const c of cards) flatGrid.appendChild(c);
+          }
+        } else {
+          // Date sort: collapse into the flat grid.
+          alphaStrip.hidden = true;
+          for (const g of alphaGroups) g.hidden = true;
+          if (flatGrid.parentNode !== parent) {
+            parent.insertBefore(flatGrid, firstAlphaAnchor);
+          }
+          for (const c of cards) flatGrid.appendChild(c);
+        }
+      }
+    }
+
+    select.addEventListener('change', () => applySort(select.value));
+
+    // Initial sort — default in the markup is "newest", but the cards are
+    // currently rendered A–Z, so we must run once on load to match.
+    applySort(select.value);
+  }
 })();
