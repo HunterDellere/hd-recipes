@@ -242,10 +242,11 @@
     { type: 'safety',      label: 'Safety',       noun: 'safety' },
   ];
 
-  // How many to show in each panel. "All" gets 16 (the existing default);
-  // each family gets 8 of its own most recent.
-  const RECENT_LIMIT_ALL = 16;
-  const RECENT_LIMIT_FAMILY = 8;
+  // How many to show in each panel. "All" gets 24 (matches the build-side
+  // recent.json slice); each family gets 12 of its own most recent so a
+  // multi-recipe drop on one day doesn't crowd out the prior week.
+  const RECENT_LIMIT_ALL = 24;
+  const RECENT_LIMIT_FAMILY = 12;
 
   function sortByAddedDesc(a, b) {
     // b.added vs a.added — newest first; tie-break by title for determinism
