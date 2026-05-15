@@ -644,6 +644,44 @@ export function renderHomemadeAlternatives(fm, currentPath, entriesByPath) {
 }
 
 /**
+ * "Related recipes" — authored sibling crosslinks for dishes the reader
+ * might compare against the current recipe (regional variants of the same
+ * dish, different formats of the same protein, alternative techniques for
+ * the same outcome). Distinct from homemade_alternatives (store-bought
+ * swaps) and from algorithmic relations (which key on shared tags).
+ */
+export function renderRelatedRecipes(fm, currentPath, entriesByPath) {
+  const list = fm.related_recipes || [];
+  if (!list.length) return '';
+  const items = list.map(r => {
+    const slug = String(r.recipe_slug || '').replace(/^pages\//, '').replace(/\.html$/, '');
+    const targetPath = `pages/${slug}.html`;
+    const target = entriesByPath && entriesByPath.get(targetPath);
+    const href = relPath(currentPath, targetPath);
+    const isStub = !target || target.status !== 'complete';
+    const stubBadge = isStub ? `<span class="hm-stub" title="Stub recipe — placeholder">stub</span>` : '';
+    const title = (target && target.title) || slug.replace(/^recipes\//, '');
+    return `
+        <li class="hm-item">
+          <a class="hm-link" href="${escapeHtml(href)}" data-category="recipes">
+            <span class="hm-arrow" aria-hidden="true">→</span>
+            <span class="hm-text">
+              <span class="hm-for">${escapeHtml(title)}</span>
+              ${stubBadge ? `<span class="hm-target">${stubBadge}</span>` : ''}
+              ${r.why ? `<span class="hm-why">${escapeHtml(r.why)}</span>` : ''}
+            </span>
+          </a>
+        </li>`;
+  }).join('');
+  return `
+    <span class="section-anchor" id="related-recipes"></span>
+    <div class="section-head"><h2>Related recipes</h2></div>
+    <p class="hm-blurb">Sibling dishes worth knowing about — different formats, regional variants, or alternative paths to the same idea.</p>
+    <ul class="hm-list">${items}
+    </ul>`;
+}
+
+/**
  * Build the auto-generated recipe body. Used when content/<recipe>.md has no
  * authored body — the entire page renders from frontmatter.
  */
@@ -728,6 +766,9 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
   const hmHtml = renderHomemadeAlternatives(fm, `pages/${category}/${slug}.html`, entriesByPath);
   if (hmHtml) { sections.push(hmHtml); sidebarLinks.push({ id: 'homemade', label: 'Make it from scratch' }); }
+
+  const relHtml = renderRelatedRecipes(fm, `pages/${category}/${slug}.html`, entriesByPath);
+  if (relHtml) { sections.push(relHtml); sidebarLinks.push({ id: 'related-recipes', label: 'Related recipes' }); }
 
   const notesHtml = renderRecipeNotes(fm);
   if (notesHtml) { sections.push(notesHtml); sidebarLinks.push({ id: 'notes', label: 'Notes' }); }

@@ -161,6 +161,18 @@
         }
       }
     },
+    "related_recipes": {
+      "type": "array",
+      "description": "Sibling recipes worth comparing against this one — different formats of the same protein, regional variants of the same dish family, or alternative techniques for the same outcome. Different from homemade_alternatives (which is for store-bought swaps) and from pairings (which is for what-to-serve-with). The build renders these in a 'Related recipes' section near the bottom of the page, and the validator enforces that each recipe_slug resolves. When you mention another recipe in prose, add it here too.",
+      "items": {
+        "type": "object",
+        "required": ["recipe_slug"],
+        "properties": {
+          "recipe_slug": { "type": "string", "description": "Recipe path like 'recipes/italian-american-pork-meatballs-in-tomato'." },
+          "why":         { "type": "string", "description": "One sentence on why a cook reading this recipe might also want this one." }
+        }
+      }
+    },
     "homemade_exempt": {
       "type": "array",
       "description": "Store-bought ingredients for which there is no reasonable homemade version (e.g. canned coconut milk, kosher salt, fish sauce). Strings here suppress the validate-formatting homemade-alternatives warning for the matching ingredient. Use sparingly — most pantry items DO have a worthwhile homemade form.",

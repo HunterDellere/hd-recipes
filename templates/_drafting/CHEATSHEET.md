@@ -115,9 +115,22 @@ The validator flags `silicone`, `plastic wrap`, `cling film`, `cling wrap`, and 
 - **Fermentation weights**: glass fermentation weight, small ceramic ramekin. Not a zip-top bag of brine.
 - **Freezer wrapping**: beeswax wrap, airtight glass container. Storage-section *descriptions* (e.g. "vacuum bag" as how an ingredient is sold) are fine; reader-facing wrap instructions should be non-plastic.
 
-## No cross-recipe references
+## No cross-recipe references — but DO crosslink when you mention another recipe
 
-The validator also flags suspicious phrasings like "the X meatballs above", "the X version above", "as in the section above". Each recipe is published standalone; "above" only refers to earlier sections of the same page (modifications, phases). When you need to contrast against another dish, name it specifically and describe the comparison in absolute terms ("a 25 g one-bite meatball rather than the 40 to 50 g Italian-American format"), not "smaller than the Italian meatballs above" — that's a drafting-session artifact.
+The validator flags drafting-session phrasings like "the X meatballs above", "the X version above", "as in the section above". Each recipe is published standalone; "above" only refers to earlier sections of the same page (modifications, phases).
+
+When you legitimately need to contrast with another recipe, do both:
+
+1. **Inline the actual title** so the auto-linker fires. Write "the 40 to 50 g format of Italian-American pork meatballs in tomato", not "the Italian-American meatball format". The link map is case-insensitive and matches each entry's `title:`.
+2. **Add `related_recipes` frontmatter** so the page also surfaces it as a structural crosslink near the bottom:
+
+   ```yaml
+   related_recipes:
+     - recipe_slug: 'recipes/italian-american-pork-meatballs-in-tomato'
+       why: 'The Western-canon pork meatball, at 40 to 50 g each, the format reference point this dish deliberately deviates from.'
+   ```
+
+   The validator checks slug shape and self-reference; `check.mjs` catches unresolved targets. Keep the list short (2–3 entries max).
 
 ## Pre-flight checklist before `npm run verify`
 

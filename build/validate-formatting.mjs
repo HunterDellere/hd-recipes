@@ -161,6 +161,19 @@ for (const pageFull of walkPages(PAGES)) {
       }
     }
 
+    // related_recipes entries: same shape rule. Must point at a recipes/ slug
+    // and not at the current recipe itself (self-link is a drafting slip).
+    const ownSlug = `recipes/${path.basename(contentRel, '.md')}`;
+    for (const r of (fm.related_recipes || [])) {
+      if (!r.recipe_slug) {
+        emit('ERROR', contentRel, `related_recipes entry missing recipe_slug`, {});
+      } else if (!/^recipes\//.test(r.recipe_slug)) {
+        emit('ERROR', contentRel, `related_recipes recipe_slug "${r.recipe_slug}" must start with 'recipes/'`, {});
+      } else if (r.recipe_slug === ownSlug) {
+        emit('ERROR', contentRel, `related_recipes points back at the current recipe (${r.recipe_slug})`, { fix: 'Remove the self-reference.' });
+      }
+    }
+
     // Step measurements: every step that names an ingredient by its `item:`
     // word should also include a measurement. Bake-in measurements (rather
     // than expecting the cook to scroll back to the ingredients list) are a
