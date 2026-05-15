@@ -88,7 +88,7 @@ hd-recipes/
 
 ## Adding content
 
-**Recipes** — read `templates/_drafting/RECIPE.md` first. The voice and structure rules are non-negotiable.
+**Recipes** — read `templates/_drafting/RECIPE.md` first for voice and structure. Then read `templates/_drafting/CHEATSHEET.md` for the validator gotchas that aren't in the spec (em-dash limit of 2 per file, closed `course` and `diet` enums, tags must exist in `_schema/tags.json`, `homemade_alternatives.recipe_slug` must resolve). After drafting, run `npm run preflight content/recipes/<slug>.md` to catch cheap errors before `npm run verify`.
 
 ```bash
 npm run draft recipe brown-butter-cacio-e-pepe

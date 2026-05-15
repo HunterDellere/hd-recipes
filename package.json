@@ -13,6 +13,7 @@
     "verify": "npm run validate && npm run build && npm run check",
     "validate:all": "node build/validate.mjs --emit-findings && node build/validate-relations.mjs && node build/validate-search.mjs && node build/validate-formatting.mjs && node build/validate-safety.mjs",
     "draft": "node build/draft.mjs",
+    "preflight": "node build/preflight.mjs",
     "watch": "node build/watch.mjs"
   },
   "devDependencies": {
