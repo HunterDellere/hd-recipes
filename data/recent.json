@@ -201,6 +201,100 @@
     }
   },
   {
+    "path": "pages/recipes/akadashi-clam-miso-soup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Akadashi clam miso soup (asari no akadashi)",
+    "desc": "Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari clams. The clams release their own succinic-acid umami into the dashi during a brief simmer, producing a soup where three umami nucleotides stack: glutamate from the kombu, inosinate from the katsuobushi, and succinate from the clams. The red miso supplies the dark, fermented, robust character that defines the Nagoya akadashi tradition, and the broth eats fuller, more savory, and more bracing than the everyday white-miso washoku bowl.",
+    "tags": [
+      "japanese",
+      "soup",
+      "umami",
+      "seafood",
+      "quick"
+    ],
+    "status": "complete",
+    "_slug": "akadashi-clam-miso-soup",
+    "cuisine": "Japanese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 35,
+      "cook_min": 15,
+      "total_min": 50,
+      "active_min": 20
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "littleneck or asari clams, live in the shell",
+        "slug": "littleneck-clams",
+        "optional": false
+      },
+      {
+        "item": "cold water for purging",
+        "optional": false
+      },
+      {
+        "item": "kosher salt for purging",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "cold water for the dashi",
+        "optional": false
+      },
+      {
+        "item": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "optional": false
+      },
+      {
+        "item": "red miso (hatcho or aka miso)",
+        "slug": "red-miso",
+        "optional": false
+      },
+      {
+        "item": "mitsuba leaves (Japanese parsley), or scallion greens",
+        "optional": true
+      },
+      {
+        "item": "sansho pepper (Japanese mountain pepper), freshly ground",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "clam-purging",
+      "dashi",
+      "shellfish-extraction"
+    ],
+    "equipment": [
+      "fine-mesh-sieve",
+      "cheesecloth",
+      "wide-bowl-or-container"
+    ],
+    "added": "2026-05-15",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/chinese-lions-head-meatballs.html",
     "type": "recipe",
     "category": "recipes",
@@ -529,165 +623,6 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/thai-pork-larb-meatballs.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Thai pork larb meatballs",
-    "desc": "A meatball reformatting of larb moo, the canonical northeastern Thai (Isan) and Lao minced-pork salad. The classic larb is a loose minced-meat preparation eaten with sticky rice and fresh herbs; here the same flavor system, fish sauce, lime, toasted rice powder, fresh herbs, dried chili, shallot, is rolled into bite-sized meatballs, browned hard in a skillet to maximize the toasted-meat flavor that anchors the dish, then tossed off-heat with the larb dressing and a heap of mint, cilantro, and scallion. The result eats like larb in cocktail-meatball form: high-acid, fish-sauce-forward, fresh-herb-heavy, with the toasted rice powder providing the structural toasted character and a faint sandy texture on the meatball surface.",
-    "tags": [
-      "thai",
-      "lao",
-      "pork",
-      "umami",
-      "fresh-herbs",
-      "spicy",
-      "quick"
-    ],
-    "status": "complete",
-    "_slug": "thai-pork-larb-meatballs",
-    "cuisine": "Thai",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 15,
-      "total_min": 35,
-      "active_min": 25
-    },
-    "updated": "2026-05-15",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "glutinous rice (sticky rice / sweet rice), raw",
-        "optional": false
-      },
-      {
-        "item": "makrut lime leaves (optional, for perfuming the toasting rice)",
-        "optional": true
-      },
-      {
-        "item": "ground pork (75/25 shoulder)",
-        "slug": "ground-pork",
-        "optional": false
-      },
-      {
-        "item": "shallots, very finely minced",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely grated on a microplane",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "lemongrass, tender inner core only, finely minced",
-        "optional": false
-      },
-      {
-        "item": "fish sauce",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "white pepper, freshly ground",
-        "slug": "white-pepper",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (refined avocado, rice bran, or grapeseed)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "fish sauce",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "lime juice, freshly squeezed",
-        "slug": "lime",
-        "optional": false
-      },
-      {
-        "item": "palm sugar (or light brown sugar)",
-        "slug": "palm-sugar",
-        "optional": false
-      },
-      {
-        "item": "Thai dried red chili flakes (prik bon)",
-        "slug": "dried-chilies",
-        "optional": false
-      },
-      {
-        "item": "shallots, very thinly sliced into rings",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "fresh mint leaves",
-        "slug": "mint",
-        "optional": false
-      },
-      {
-        "item": "cilantro, leaves and tender stems, roughly chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "sawtooth coriander (culantro / pak chee farang)",
-        "slug": "culantro",
-        "optional": true
-      },
-      {
-        "item": "scallions, thinly sliced on the bias",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "toasted rice powder (from Phase 1, ground)",
-        "optional": false
-      },
-      {
-        "item": "steamed sticky rice",
-        "optional": false
-      },
-      {
-        "item": "raw vegetables for scooping (Napa cabbage leaves, cucumber spears, long beans, lettuce leaves)",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "myosin-extraction",
-      "maillard-sear"
-    ],
-    "equipment": [
-      "heavy-skillet",
-      "mortar-and-pestle",
-      "microplane"
-    ],
-    "added": "2026-05-15",
-    "_card": {
-      "totalMinutes": 35,
-      "diffLabel": "medium",
-      "timeLead": "35 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
     }
   },
   {

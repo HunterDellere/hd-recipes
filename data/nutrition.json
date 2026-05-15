@@ -48,6 +48,50 @@
       }
     ]
   },
+  "pages/recipes/akadashi-clam-miso-soup.html": {
+    "perServing": {
+      "energy_kcal": 7,
+      "protein_g": 0.5,
+      "fat_g": 0.2,
+      "saturated_fat_g": 0,
+      "carbs_g": 1,
+      "fiber_g": 0.1,
+      "sugar_g": 0.1,
+      "sodium_mg": 4378,
+      "potassium_mg": 25,
+      "calcium_mg": 30,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 42
+    },
+    "total": {
+      "energy_kcal": 30,
+      "protein_g": 2.1,
+      "fat_g": 0.7,
+      "saturated_fat_g": 0.1,
+      "carbs_g": 3.8,
+      "fiber_g": 0.6,
+      "sugar_g": 0.4,
+      "sodium_mg": 17512,
+      "potassium_mg": 100,
+      "calcium_mg": 120,
+      "iron_mg": 1,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 166
+    },
+    "missing": [
+      {
+        "name": "littleneck or asari clams, live in the shell",
+        "slug": "littleneck-clams",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "reason": "no-fdc"
+      }
+    ]
+  },
   "pages/recipes/apple-cider-vinegar.html": {
     "perServing": {
       "energy_kcal": 12,
@@ -566,55 +610,40 @@
   },
   "pages/recipes/cast-iron-chuck-eye-steaks-with-shallot-pan-sauce.html": {
     "perServing": {
-      "energy_kcal": 252,
-      "protein_g": 1.2,
-      "fat_g": 24.4,
-      "saturated_fat_g": 15.2,
-      "carbs_g": 8.5,
-      "fiber_g": 0.8,
+      "energy_kcal": 856,
+      "protein_g": 61.3,
+      "fat_g": 62.3,
+      "saturated_fat_g": 29.9,
+      "carbs_g": 10.1,
+      "fiber_g": 0.9,
       "sugar_g": 2.4,
-      "sodium_mg": 782,
-      "potassium_mg": 139,
-      "calcium_mg": 32,
-      "iron_mg": 0,
-      "vitamin_c_mg": 4,
-      "vitamin_a_iu": 5973
+      "sodium_mg": 905,
+      "potassium_mg": 916,
+      "calcium_mg": 75,
+      "iron_mg": 5,
+      "vitamin_c_mg": 6,
+      "vitamin_a_iu": 5986
     },
     "total": {
-      "energy_kcal": 503,
-      "protein_g": 2.3,
-      "fat_g": 48.9,
-      "saturated_fat_g": 30.3,
-      "carbs_g": 17,
-      "fiber_g": 1.7,
+      "energy_kcal": 1711,
+      "protein_g": 122.5,
+      "fat_g": 124.6,
+      "saturated_fat_g": 59.7,
+      "carbs_g": 20.3,
+      "fiber_g": 1.9,
       "sugar_g": 4.8,
-      "sodium_mg": 1563,
-      "potassium_mg": 278,
-      "calcium_mg": 63,
-      "iron_mg": 1,
-      "vitamin_c_mg": 8,
-      "vitamin_a_iu": 11946
+      "sodium_mg": 1809,
+      "potassium_mg": 1831,
+      "calcium_mg": 150,
+      "iron_mg": 9,
+      "vitamin_c_mg": 12,
+      "vitamin_a_iu": 11973
     },
     "missing": [
-      {
-        "name": "chuck eye steaks, 1-inch / 2.5 cm thick",
-        "slug": "chuck-eye-steak",
-        "reason": "no-cache"
-      },
       {
         "name": "neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)",
         "slug": "neutral-oil",
         "reason": "no-fdc"
-      },
-      {
-        "name": "fresh thyme sprigs",
-        "slug": "fresh-thyme",
-        "reason": "no-cache"
-      },
-      {
-        "name": "fresh thyme leaves, stripped from the stem",
-        "slug": "fresh-thyme",
-        "reason": "no-cache"
       }
     ]
   },
@@ -1005,7 +1034,7 @@
       {
         "name": "pork belly, skin removed, fine-diced",
         "slug": "pork-belly",
-        "reason": "no-fdc"
+        "reason": "no-cache"
       },
       {
         "name": "water chestnuts, peeled and finely diced",
@@ -2441,6 +2470,45 @@
       }
     ]
   },
+  "pages/recipes/ichiban-dashi.html": {
+    "perServing": {
+      "energy_kcal": 1,
+      "protein_g": 0,
+      "fat_g": 0,
+      "saturated_fat_g": 0,
+      "carbs_g": 0.2,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "sodium_mg": 6,
+      "potassium_mg": 2,
+      "calcium_mg": 4,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 3
+    },
+    "total": {
+      "energy_kcal": 4,
+      "protein_g": 0.2,
+      "fat_g": 0.1,
+      "saturated_fat_g": 0,
+      "carbs_g": 1,
+      "fiber_g": 0.1,
+      "sugar_g": 0.1,
+      "sodium_mg": 23,
+      "potassium_mg": 9,
+      "calcium_mg": 17,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 12
+    },
+    "missing": [
+      {
+        "name": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "reason": "no-fdc"
+      }
+    ]
+  },
   "pages/recipes/individual-decadent-chocolate-cakes.html": {
     "perServing": {
       "energy_kcal": 1025,
@@ -2770,6 +2838,45 @@
       {
         "name": "saffron threads",
         "slug": "saffron",
+        "reason": "no-fdc"
+      }
+    ]
+  },
+  "pages/recipes/kombu-shiitake-vegetarian-dashi.html": {
+    "perServing": {
+      "energy_kcal": 1,
+      "protein_g": 0.1,
+      "fat_g": 0,
+      "saturated_fat_g": 0,
+      "carbs_g": 0.3,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "sodium_mg": 7,
+      "potassium_mg": 3,
+      "calcium_mg": 5,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 3
+    },
+    "total": {
+      "energy_kcal": 5,
+      "protein_g": 0.2,
+      "fat_g": 0.1,
+      "saturated_fat_g": 0,
+      "carbs_g": 1.1,
+      "fiber_g": 0.2,
+      "sugar_g": 0.1,
+      "sodium_mg": 28,
+      "potassium_mg": 11,
+      "calcium_mg": 20,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 14
+    },
+    "missing": [
+      {
+        "name": "dried shiitake mushroom (donko grade if available)",
+        "slug": "dried-shiitake",
         "reason": "no-fdc"
       }
     ]
@@ -4695,47 +4802,100 @@
   },
   "pages/recipes/sheet-pan-roasted-shallots-cauliflower-and-sweet-potato-with-lemon-dijon-yogurt.html": {
     "perServing": {
-      "energy_kcal": 405,
-      "protein_g": 7.8,
-      "fat_g": 17.6,
-      "saturated_fat_g": 2.8,
-      "carbs_g": 59.4,
-      "fiber_g": 10.6,
+      "energy_kcal": 410,
+      "protein_g": 7.9,
+      "fat_g": 17.7,
+      "saturated_fat_g": 2.9,
+      "carbs_g": 60.4,
+      "fiber_g": 10.7,
       "sugar_g": 23.8,
-      "sodium_mg": 1599,
-      "potassium_mg": 1131,
-      "calcium_mg": 190,
+      "sodium_mg": 1601,
+      "potassium_mg": 1157,
+      "calcium_mg": 192,
       "iron_mg": 2,
-      "vitamin_c_mg": 84,
-      "vitamin_a_iu": 25052
+      "vitamin_c_mg": 85,
+      "vitamin_a_iu": 25060
     },
     "total": {
-      "energy_kcal": 1621,
-      "protein_g": 31.1,
-      "fat_g": 70.3,
-      "saturated_fat_g": 11.3,
-      "carbs_g": 237.7,
-      "fiber_g": 42.4,
+      "energy_kcal": 1640,
+      "protein_g": 31.8,
+      "fat_g": 70.6,
+      "saturated_fat_g": 11.4,
+      "carbs_g": 241.7,
+      "fiber_g": 42.7,
       "sugar_g": 95.2,
-      "sodium_mg": 6397,
-      "potassium_mg": 4525,
-      "calcium_mg": 760,
+      "sodium_mg": 6406,
+      "potassium_mg": 4628,
+      "calcium_mg": 767,
       "iron_mg": 9,
-      "vitamin_c_mg": 335,
-      "vitamin_a_iu": 100210
+      "vitamin_c_mg": 340,
+      "vitamin_a_iu": 100241
     },
-    "missing": [
-      {
-        "name": "fresh thyme sprigs",
-        "slug": "fresh-thyme",
-        "reason": "no-cache"
-      }
-    ]
+    "missing": []
   },
   "pages/recipes/shiozake.html": {
     "perServing": {},
     "total": {},
     "missing": []
+  },
+  "pages/recipes/shojin-kenchinjiru-temple-miso-soup.html": {
+    "perServing": {
+      "energy_kcal": 146,
+      "protein_g": 7.5,
+      "fat_g": 8.9,
+      "saturated_fat_g": 1,
+      "carbs_g": 11,
+      "fiber_g": 1.6,
+      "sugar_g": 1.7,
+      "sodium_mg": 40,
+      "potassium_mg": 229,
+      "calcium_mg": 211,
+      "iron_mg": 2,
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 5360
+    },
+    "total": {
+      "energy_kcal": 585,
+      "protein_g": 29.9,
+      "fat_g": 35.8,
+      "saturated_fat_g": 4.1,
+      "carbs_g": 43.9,
+      "fiber_g": 6.4,
+      "sugar_g": 6.7,
+      "sodium_mg": 159,
+      "potassium_mg": 915,
+      "calcium_mg": 842,
+      "iron_mg": 7,
+      "vitamin_c_mg": 5,
+      "vitamin_a_iu": 21439
+    },
+    "missing": [
+      {
+        "name": "dried shiitake mushroom (donko grade if available)",
+        "slug": "dried-shiitake",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "daikon (Japanese white radish)",
+        "slug": "daikon",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "carrot",
+        "slug": "carrot",
+        "reason": "no-cache"
+      },
+      {
+        "name": "burdock root (gobō)",
+        "slug": "burdock-root",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "konnyaku (yam cake)",
+        "slug": "konnyaku",
+        "reason": "no-fdc"
+      }
+    ]
   },
   "pages/recipes/shrak-flatbread.html": {
     "perServing": {
@@ -5667,6 +5827,65 @@
       "vitamin_a_iu": 0
     },
     "missing": []
+  },
+  "pages/recipes/tonjiru-pork-vegetable-miso-soup.html": {
+    "perServing": {
+      "energy_kcal": 29,
+      "protein_g": 0.8,
+      "fat_g": 2.2,
+      "saturated_fat_g": 0.2,
+      "carbs_g": 1.5,
+      "fiber_g": 0.3,
+      "sugar_g": 0.3,
+      "sodium_mg": 17,
+      "potassium_mg": 50,
+      "calcium_mg": 36,
+      "iron_mg": 0,
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 126
+    },
+    "total": {
+      "energy_kcal": 114,
+      "protein_g": 3.2,
+      "fat_g": 8.9,
+      "saturated_fat_g": 0.7,
+      "carbs_g": 6.1,
+      "fiber_g": 1.4,
+      "sugar_g": 1.1,
+      "sodium_mg": 68,
+      "potassium_mg": 200,
+      "calcium_mg": 145,
+      "iron_mg": 1,
+      "vitamin_c_mg": 6,
+      "vitamin_a_iu": 505
+    },
+    "missing": [
+      {
+        "name": "pork belly, sliced thin (3 mm)",
+        "slug": "pork-belly",
+        "reason": "no-cache"
+      },
+      {
+        "name": "daikon (Japanese white radish)",
+        "slug": "daikon",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "carrot",
+        "slug": "carrot",
+        "reason": "no-cache"
+      },
+      {
+        "name": "burdock root (gobō)",
+        "slug": "burdock-root",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "konnyaku (yam cake)",
+        "slug": "konnyaku",
+        "reason": "no-fdc"
+      }
+    ]
   },
   "pages/recipes/ube-halaya-latte.html": {
     "perServing": {
