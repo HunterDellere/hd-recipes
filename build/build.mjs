@@ -583,7 +583,7 @@ writeFileSync(join(dataDir, 'search-index.json'), JSON.stringify(searchIndex), '
 // day to RECENT_PER_DAY_CAP entries before slicing — within a day, TYPE_RANK
 // keeps the most reader-facing entries (recipes, then techniques) at the top.
 const TYPE_RANK = { recipe: 0, technique: 1, hub: 2, cuisine: 3, ingredient: 4, equipment: 5, family: 6 };
-const RECENT_PER_DAY_CAP = 4;
+const RECENT_PER_DAY_CAP = 8;
 const perDayCount = new Map();
 const recent = entries
   .filter(e => e.status === 'complete' && e.added)
@@ -598,7 +598,7 @@ const recent = entries
     perDayCount.set(e.added, n + 1);
     return true;
   })
-  .slice(0, 16);
+  .slice(0, 24);
 writeFileSync(join(dataDir, 'recent.json'), JSON.stringify(recent, null, 2), 'utf8');
 
 try {
