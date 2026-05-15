@@ -31,11 +31,29 @@ const ROOT = join(__dirname, '..', '..');
 
 export const FAMILY_MEMBERS = {
   cook:     ['recipes'],
-  pantry:   ['ingredients', 'equipment'],
+  // 'pantry-makes' is a virtual category: recipes whose `course` is sauce / stock /
+  // bread, or whose slug begins with `homemade-`. They live physically in
+  // content/recipes/ (so URLs stay /pages/recipes/<slug>.html) but appear in
+  // the Pantry family rather than Cook. See isPantryMake() below.
+  pantry:   ['ingredients', 'equipment', 'pantry-makes'],
   learn:    ['techniques', 'safety'],
   traverse: ['cuisines', 'hubs'],
   explore:  [],
 };
+
+// Pantry-make courses: components/staples that a cook makes once and uses across
+// many dishes (stock, mustard, chili oil, vinaigrette, bread). These show up
+// under Pantry, not Cook, even though they're stored in content/recipes/.
+const PANTRY_MAKE_COURSES = new Set(['sauce', 'stock', 'bread']);
+
+export function isPantryMake(entry) {
+  if (!entry || entry.category !== 'recipes') return false;
+  if (entry.course && PANTRY_MAKE_COURSES.has(entry.course)) return true;
+  // `homemade-*` slug convention covers recipes without a sauce/stock/bread course
+  // (e.g. homemade-panko-breadcrumbs at course:'side'). Treat them as pantry too.
+  const slug = entry._slug || (entry.path || '').split('/').pop().replace(/\.html$/, '');
+  return /^homemade-/.test(slug);
+}
 
 export const FAMILY_META = {
   explore:  { en: 'Explore',  desc: 'The master entry point. Four families, every category.' },
@@ -318,9 +336,21 @@ export function renderFamilyContent(family, entries, fromPath) {
   const byCategory = new Map();
   for (const e of entries) {
     if (e.status !== 'complete') continue;
-    if (!memberKeys.includes(e.category)) continue;
-    if (!byCategory.has(e.category)) byCategory.set(e.category, []);
-    byCategory.get(e.category).push(e);
+    // Pantry-makes are recipes (category === 'recipes') routed to the virtual
+    // 'pantry-makes' bucket. On Cook we filter them out; on Pantry we add them
+    // under that bucket; on other families they stay under 'recipes' as before.
+    const pantryMake = isPantryMake(e);
+    let bucketKey;
+    if (pantryMake) {
+      if (family === 'cook') continue;          // hide from Cook
+      if (family === 'pantry') bucketKey = 'pantry-makes';
+      else bucketKey = e.category;
+    } else {
+      bucketKey = e.category;
+    }
+    if (!memberKeys.includes(bucketKey)) continue;
+    if (!byCategory.has(bucketKey)) byCategory.set(bucketKey, []);
+    byCategory.get(bucketKey).push(e);
   }
   for (const list of byCategory.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
 

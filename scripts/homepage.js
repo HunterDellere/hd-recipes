@@ -168,8 +168,17 @@
     renderRecentByFamily(entries, recent);
 
     // Family counts — Cook / Pantry / Learn / Traverse
-    const cookCount     = entries.filter(e => e.status === 'complete' && e.category === 'recipes').length;
-    const pantryCount   = entries.filter(e => e.status === 'complete' && (e.category === 'ingredients' || e.category === 'equipment')).length;
+    // Pantry-makes (recipes with course sauce/stock/bread, or slug `homemade-*`)
+    // are routed to Pantry rather than Cook. Mirror build/lib/family-render
+    // :isPantryMake — keep in sync.
+    const PANTRY_MAKE_COURSES = new Set(['sauce', 'stock', 'bread']);
+    const isPantryMake = e => e.category === 'recipes' && (
+      (e.course && PANTRY_MAKE_COURSES.has(e.course)) ||
+      /^homemade-/.test(e._slug || (e.path || '').split('/').pop().replace(/\.html$/, ''))
+    );
+    const cookCount     = entries.filter(e => e.status === 'complete' && e.category === 'recipes' && !isPantryMake(e)).length;
+    const pantryMakeCt  = entries.filter(e => e.status === 'complete' && isPantryMake(e)).length;
+    const pantryCount   = entries.filter(e => e.status === 'complete' && (e.category === 'ingredients' || e.category === 'equipment')).length + pantryMakeCt;
     const learnCount    = entries.filter(e => e.status === 'complete' && e.category === 'techniques').length;
     const traverseCount = entries.filter(e => e.status === 'complete' && (e.category === 'cuisines' || e.category === 'hubs')).length;
     const set = (sel, n) => { const el = document.querySelector(sel); if (el) el.textContent = `${n} ${n === 1 ? 'entry' : 'entries'}`; };
@@ -222,14 +231,15 @@
   // ── Recent-by-family tabbed grid ──────────────────────────
   // Type → display label + plural noun. Order here is the tab display order.
   const RECENT_FAMILIES = [
-    { type: 'all',        label: 'All',         noun: 'entries' },
-    { type: 'recipe',     label: 'Recipes',     noun: 'recipes' },
-    { type: 'ingredient', label: 'Ingredients', noun: 'ingredients' },
-    { type: 'technique',  label: 'Techniques',  noun: 'techniques' },
-    { type: 'hub',        label: 'Hubs',        noun: 'hubs' },
-    { type: 'cuisine',    label: 'Cuisines',    noun: 'cuisines' },
-    { type: 'equipment',  label: 'Equipment',   noun: 'equipment' },
-    { type: 'safety',     label: 'Safety',      noun: 'safety' },
+    { type: 'all',         label: 'All',          noun: 'entries' },
+    { type: 'recipe',      label: 'Recipes',      noun: 'recipes' },
+    { type: 'pantry-make', label: 'Pantry makes', noun: 'pantry makes' },
+    { type: 'ingredient',  label: 'Ingredients',  noun: 'ingredients' },
+    { type: 'technique',   label: 'Techniques',   noun: 'techniques' },
+    { type: 'hub',         label: 'Hubs',         noun: 'hubs' },
+    { type: 'cuisine',     label: 'Cuisines',     noun: 'cuisines' },
+    { type: 'equipment',   label: 'Equipment',    noun: 'equipment' },
+    { type: 'safety',      label: 'Safety',       noun: 'safety' },
   ];
 
   // How many to show in each panel. "All" gets 16 (the existing default);
@@ -265,9 +275,17 @@
     // per-day cap so one big content drop doesn't crowd out older entries).
     // Family buckets derive from entries.json directly — each family is its
     // own race and doesn't need the per-day cap.
+    // Pantry-makes (recipes that are really stocks/sauces/staples) are filtered
+    // off the Recipes tab; they have their own home on the Pantry page.
+    const PANTRY_MAKE_COURSES = new Set(['sauce', 'stock', 'bread']);
+    const isPantryMake = e => e.category === 'recipes' && (
+      (e.course && PANTRY_MAKE_COURSES.has(e.course)) ||
+      /^homemade-/.test(e._slug || (e.path || '').split('/').pop().replace(/\.html$/, ''))
+    );
     const byType = { all: (recent || []).filter(e => e.status === 'complete' && e.added) };
     for (const e of eligible) {
-      (byType[e.type] = byType[e.type] || []).push(e);
+      const key = e.type === 'recipe' && isPantryMake(e) ? 'pantry-make' : e.type;
+      (byType[key] = byType[key] || []).push(e);
     }
 
     // Build tab buttons. Hide tabs with no entries (other than the always-on All).
