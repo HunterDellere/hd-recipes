@@ -2677,6 +2677,36 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
   min-height: 1.2em;
 }
 
+/* Sort bar — sits above the category sections on every family page. */
+.sort-bar {
+  display: inline-flex; align-items: center; gap: .55rem;
+  padding: .45rem .65rem .45rem .8rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: 10px;
+  margin: 0 0 1.25rem;
+  font-family: var(--font-sans);
+}
+.sort-bar-label {
+  font-size: 12.5px; font-weight: 500;
+  color: var(--ink-faint); letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.sort-select {
+  appearance: none; -webkit-appearance: none;
+  background: var(--bg); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 7px;
+  padding: 6px 28px 6px 10px;
+  font-family: var(--font-sans); font-size: 13.5px; font-weight: 500;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px 12px;
+  transition: border-color var(--d-fast), color var(--d-fast);
+}
+.sort-select:hover { border-color: var(--ink-faint); }
+.sort-select:focus { outline: none; border-color: var(--accent); color: var(--accent); }
+
 /* Mobile: panels become full-width sheets anchored to the bar so they
    never overflow the viewport. The bar itself wraps to a scrollable row
    so all menu buttons stay reachable. */

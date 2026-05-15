@@ -508,9 +508,13 @@ export function renderFamilyContent(family, entries, fromPath) {
     if (prep + cook > 0) return prep + cook;
     return Number(t.total_min) || '';
   };
+  // Every card carries data-title + data-updated so the sort control can
+  // reorder by name or date. Cook also carries the filter facets.
+  const sortAttrs = (e) =>
+    `data-card data-title="${escapeHtml((e.title || '').toLowerCase())}" data-updated="${escapeHtml(e.updated || '')}"`;
   const augment = (e) => family === 'cook'
-    ? `data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${filterTime(e)}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
-    : '';
+    ? `${sortAttrs(e)} data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${filterTime(e)}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
+    : sortAttrs(e);
 
   // Pantry: enable A–Z anchor strip when a category has ≥20 entries.
   // The strip lets users jump to a letter when scrolling becomes painful.
@@ -599,7 +603,23 @@ export function renderFamilyContent(family, entries, fromPath) {
     }
   }
 
-  return `${intro}\n${filterBar}\n${sections}\n${tagsSection}`;
+  // Sort control: every family page gets one. Default = newest, since the
+  // most common reader question is "what's new". The build emits cards in
+  // A–Z order today; the sort init reorders on load to match the dropdown.
+  const sortBar = `
+    <!-- auto-link-skip -->
+    <div class="sort-bar" data-sort-bar>
+      <label class="sort-bar-label" for="sort-select">Sort</label>
+      <select id="sort-select" class="sort-select" data-sort-select>
+        <option value="newest" selected>Newest first</option>
+        <option value="oldest">Oldest first</option>
+        <option value="az">A–Z</option>
+        <option value="za">Z–A</option>
+      </select>
+    </div>
+    <!-- /auto-link-skip -->`;
+
+  return `${intro}\n${filterBar}\n${sortBar}\n<div data-sort-root>${sections}\n${tagsSection}</div>`;
 }
 
 export function renderFamilyCrosslinks(family, fromPath) {
