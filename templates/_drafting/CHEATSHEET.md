@@ -105,6 +105,20 @@ The validator doesn't hard-error, but a recipe with 8 unlinked ingredients reads
 
 Common techniques referenced often that may not exist yet: `myosin-extraction`, `panade`, `maillard-sear`, `fond-deglaze`, `pan-emulsion`, `braising`, `dry-toasting`. Creating these as proper technique pages (per `TECHNIQUE.md` workflow in the project README) is a follow-up improvement; until then, warnings are acceptable.
 
+## No plastics in active instructions
+
+The validator flags `silicone`, `plastic wrap`, `cling film`, `cling wrap`, and `saran` anywhere in step text on `content/recipes/` and `content/techniques/` pages. Defaults:
+
+- **Mixing / scraping**: wooden spoon (flat-edged for pan-corner scraping during reductions), bench scraper, metal whisk. Not silicone spatula.
+- **Bowl / dough covers**: damp tea towel, fitted lid, small plate, beeswax wrap. Not plastic wrap.
+- **Surface seal for skin/oxidation prevention** (mustards, gochujang, custards): a circle of parchment paper pressed directly onto the surface. Not plastic wrap.
+- **Fermentation weights**: glass fermentation weight, small ceramic ramekin. Not a zip-top bag of brine.
+- **Freezer wrapping**: beeswax wrap, airtight glass container. Storage-section *descriptions* (e.g. "vacuum bag" as how an ingredient is sold) are fine; reader-facing wrap instructions should be non-plastic.
+
+## No cross-recipe references
+
+The validator also flags suspicious phrasings like "the X meatballs above", "the X version above", "as in the section above". Each recipe is published standalone; "above" only refers to earlier sections of the same page (modifications, phases). When you need to contrast against another dish, name it specifically and describe the comparison in absolute terms ("a 25 g one-bite meatball rather than the 40 to 50 g Italian-American format"), not "smaller than the Italian meatballs above" — that's a drafting-session artifact.
+
 ## Pre-flight checklist before `npm run verify`
 
 Run these in order. Each one is fast.

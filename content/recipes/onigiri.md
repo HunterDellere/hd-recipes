@@ -115,7 +115,7 @@ modifications:
     kind: 'protein'
   - for: 'occasion'
     to: 'onigirazu (rice sandwich)'
-    how: 'Lay a full nori sheet (cut to a square if needed) on plastic wrap. Spread half the rice (~180 g) in the center as a square layer. Add a substantial filling: tonkatsu, fried egg, lettuce, ham, etc. Top with the other half of the rice as a second square layer. Fold the nori up around the rice from all four sides like wrapping a present. Wait 2 minutes for the nori to soften and grip, then slice in half with a wet knife. The 2014-onward "rice sandwich" format is photogenic, more substantial than triangle onigiri, and accommodates fillings that would not fit in a traditional onigiri.'
+    how: 'Lay a full nori sheet (cut to a square if needed) on a square of parchment paper. Spread half the rice (~180 g) in the center as a square layer. Add a substantial filling: tonkatsu, fried egg, lettuce, ham, etc. Top with the other half of the rice as a second square layer. Fold the nori up around the rice from all four sides like wrapping a present. Wait 2 minutes for the nori to soften and grip, then slice in half with a wet knife. The 2014-onward "rice sandwich" format is photogenic, more substantial than triangle onigiri, and accommodates fillings that would not fit in a traditional onigiri.'
     kind: 'occasion'
 
 substitutions:
@@ -153,5 +153,5 @@ notes: |
 
   Nori timing. The convenience-store plastic-wrap design ,  two layers of plastic with the nori sandwiched between, joined to the rice only when the eater pulls a tab ,  is the engineering solution to the crisp-nori-vs-moist-rice tradeoff. For home onigiri eaten immediately, wrap and serve. For onigiri packed for lunch, wrap each in plastic with the nori strip folded into a separate compartment of the same wrap or stored in a small dry bag, and assemble at the eating point.
 
-  Reheating and reuse. Day-old onigiri are best converted into yaki-onigiri (toasted; see modifications) rather than eaten cold from the fridge, because refrigerated rice retrogrades ,  the amylopectin recrystallizes ,  and the texture goes hard and chalky. The toasting step rehydrates the surface and produces a different but legitimate texture. Refrigerated onigiri keep 2 days; freeze for longer storage in plastic wrap, microwave briefly to thaw, then toast.
+  Reheating and reuse. Day-old onigiri are best converted into yaki-onigiri (toasted; see modifications) rather than eaten cold from the fridge, because refrigerated rice retrogrades ,  the amylopectin recrystallizes ,  and the texture goes hard and chalky. The toasting step rehydrates the surface and produces a different but legitimate texture. Refrigerated onigiri keep 2 days; freeze for longer storage wrapped in beeswax wrap or in an airtight glass container, microwave briefly to thaw, then toast.
 ---

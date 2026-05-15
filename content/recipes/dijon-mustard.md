@@ -78,7 +78,7 @@ steps:
     time_min: 2
   - text: 'Taste. The mustard at this point is shockingly hot, almost wasabi-grade, because the myrosinase enzyme has just hydrolyzed the glucosinolates and released the volatile isothiocyanates. This is correct; do not panic.'
     time_min: 1
-  - text: 'Transfer to a clean glass jar, press a piece of plastic wrap directly onto the surface, seal, and refrigerate. The bite mellows by half over the first 24 hours and stabilizes after 4–5 days. Once mellowed, the heat stays put for months.'
+  - text: 'Transfer to a clean glass jar, press a circle of parchment paper directly onto the surface, seal, and refrigerate. The bite mellows by half over the first 24 hours and stabilizes after 4–5 days. Once mellowed, the heat stays put for months.'
     time_min: 1
 
 techniques: []

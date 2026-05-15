@@ -270,6 +270,93 @@ for (const pageFull of walkPages(PAGES)) {
     }
   }
 
+  // Plastics in active instructions. CLAUDE.md and CHEATSHEET.md spell out the
+  // rule: default tool calls to wooden spoons and covers to damp towels /
+  // fitted lids / parchment / beeswax wrap. The validator scans the *active*
+  // surfaces of a recipe or technique — step text, modifications, frontmatter
+  // equipment list — and skips the ingredient `storage:` and `about:` fields,
+  // since those are factual descriptions of how a product is sold or kept,
+  // not reader-facing instructions. Hard error; we don't want this to drift.
+  if (fm.type === 'recipe' || fm.type === 'technique') {
+    const PLASTICS_PAT = /\b(silicone|plastic\s*wrap|cling\s*film|cling\s*wrap|saran)\b/i;
+    const surfaces = [];
+    for (let i = 0; i < (fm.steps || []).length; i++) {
+      const t = fm.steps[i]?.text;
+      if (t) surfaces.push({ label: `step ${i + 1}`, text: t });
+    }
+    for (let i = 0; i < (fm.modifications || []).length; i++) {
+      const t = fm.modifications[i]?.how;
+      if (t) surfaces.push({ label: `modifications[${i}].how`, text: t });
+    }
+    if (Array.isArray(fm.equipment)) {
+      for (const e of fm.equipment) {
+        if (typeof e === 'string') surfaces.push({ label: 'equipment', text: e });
+      }
+    }
+    // For technique pages the body lives in fm.about (markdown prose).
+    if (fm.type === 'technique' && typeof fm.about === 'string') {
+      surfaces.push({ label: 'about', text: fm.about });
+    }
+    const hits = new Set();
+    for (const s of surfaces) {
+      const m = s.text.match(PLASTICS_PAT);
+      if (m) hits.add(`${s.label}: "${m[0]}"`);
+    }
+    if (hits.size) {
+      emit('ERROR', contentRel,
+        `plastic equipment in active instructions — ${[...hits].join('; ')}`,
+        { fix: 'Use wooden spoon (flat-edged for pan-scraping), damp tea towel, fitted lid, parchment circle pressed onto surface, or beeswax wrap. See CLAUDE.md → Drafting hygiene.' });
+    }
+  }
+
+  // Cross-recipe drafting artifacts. Phrases like "the X meatballs above" or
+  // "as in the section above" leak from multi-recipe drafting sessions where
+  // sibling dishes were written together. Each page renders standalone; the
+  // reader has no "above". The pattern is a comparison phrase + "above" with
+  // either an explicit dish reference or "the section/previous/recipe".
+  if (fm.type === 'recipe' || fm.type === 'technique') {
+    const CROSS_RECIPE_PATS = [
+      // "smaller than the Italian meatballs above" / "larger than the Thai version above"
+      /\b(smaller|larger|bigger|hotter|cooler|saltier|sweeter|richer|leaner|fattier|thicker|thinner|wetter|drier|simpler|fancier|softer|firmer)\s+than\s+the\s+[^.]{1,60}\babove\b/i,
+      /\bas\s+in\s+the\s+(section|recipe|previous|prior)\s+above\b/i,
+      /\bas\s+(discussed|described|mentioned|covered)\s+(above|previously|earlier)\b/i,
+      /\bthe\s+(previous|prior)\s+recipe\b/i,
+      /\bthe\s+recipe\s+(before|we\s+just\s+(made|drafted|wrote))\b/i,
+      /\bwe\s+just\s+(made|drafted|wrote|covered)\b/i,
+    ];
+    const surfaces = [];
+    for (let i = 0; i < (fm.steps || []).length; i++) {
+      const t = fm.steps[i]?.text;
+      if (t) surfaces.push({ label: `step ${i + 1}`, text: t });
+      const n = fm.steps[i]?.note;
+      if (n) surfaces.push({ label: `step ${i + 1} note`, text: n });
+    }
+    for (let i = 0; i < (fm.ingredients || []).length; i++) {
+      const n = fm.ingredients[i]?.note;
+      if (n) surfaces.push({ label: `ingredients[${i}].note`, text: n });
+    }
+    for (let i = 0; i < (fm.modifications || []).length; i++) {
+      const t = fm.modifications[i]?.how;
+      if (t) surfaces.push({ label: `modifications[${i}].how`, text: t });
+    }
+    if (typeof fm.notes === 'string') surfaces.push({ label: 'notes', text: fm.notes });
+    if (fm.type === 'technique' && typeof fm.about === 'string') {
+      surfaces.push({ label: 'about', text: fm.about });
+    }
+    const hits = [];
+    for (const s of surfaces) {
+      for (const pat of CROSS_RECIPE_PATS) {
+        const m = s.text.match(pat);
+        if (m) hits.push(`${s.label}: "${m[0].slice(0, 80)}"`);
+      }
+    }
+    if (hits.length) {
+      emit('ERROR', contentRel,
+        `cross-recipe drafting artifact — ${hits.join('; ')}`,
+        { fix: 'Rewrite to be absolute: name the comparison dish specifically and describe in standalone terms ("a 25 g one-bite meatball rather than the 40 to 50 g Italian-American format"), not "smaller than the X above". See CLAUDE.md → Drafting hygiene.' });
+    }
+  }
+
   if (fm.content_review === 'verified') {
     const hasSources = /class="sources"/.test(html) || (fm.content_sources && fm.content_sources.length) || (fm.source && fm.source.name);
     if (!hasSources) emit('WARN', contentRel, 'content_review:verified but no sources', { fix: 'Add fm.source or fm.content_sources' });

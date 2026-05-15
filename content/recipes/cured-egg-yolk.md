@@ -78,7 +78,7 @@ steps:
     time_min: 8
   - text: 'Cover the yolks gently with the remaining cure mixture; they should be fully buried with no surface visible. Do not press; the yolk membrane is fragile in the first hour and excessive pressure breaks it.'
     time_min: 3
-  - text: 'Cover the dish with plastic wrap or a tight-fitting lid. Refrigerate at 2-4°C / 35-40°F for 7 days. The yolks dehydrate steadily over the first 5 days, going from soft and yielding to firm enough to lift cleanly with a fork. By day 7 they should feel dense and slightly rubbery to gentle pressure, deeply orange, and translucent at the edge.'
+  - text: 'Cover the dish with a tight-fitting lid. Refrigerate at 2-4°C / 35-40°F for 7 days. The yolks dehydrate steadily over the first 5 days, going from soft and yielding to firm enough to lift cleanly with a fork. By day 7 they should feel dense and slightly rubbery to gentle pressure, deeply orange, and translucent at the edge.'
     time_min: 10080
   - text: 'After 7 days, brush the cure off each yolk with the back of a teaspoon. Rinse very briefly under cold running water (no more than 5 seconds) to remove the last cure grains. Pat completely dry with paper towels. The cured yolks at this stage are eat-on-bread firm, savory, and rich; for a grate-able final product they need further drying. The 12 yolks should now weigh roughly 130 g total, down from 216 g raw.'
     time_min: 5

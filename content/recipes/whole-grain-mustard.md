@@ -71,7 +71,7 @@ steps:
     time_min: 2
   - text: 'Taste. The bite should be sharp but the texture coarse: each bite delivers a different mix of cracked-seed heat and intact-seed pop. If too thick, splash in a tablespoon of cold water and pulse twice more.'
     time_min: 1
-  - text: 'Transfer to a clean glass jar, press plastic wrap onto the surface, seal, and refrigerate. The bite mellows over 48 hours and stabilizes by day five.'
+  - text: 'Transfer to a clean glass jar, press a circle of parchment paper onto the surface, seal, and refrigerate. The bite mellows over 48 hours and stabilizes by day five.'
     time_min: 1
 
 techniques: []

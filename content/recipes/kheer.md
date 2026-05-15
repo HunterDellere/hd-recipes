@@ -86,7 +86,7 @@ steps:
     time_min: 1
   - text: 'Begin the reduction. Pour the 1500 ml / 6 cups whole milk into a heavy-bottomed 4-quart pot (a Dutch oven or thick-bottomed saucepan). Bring to a low simmer over medium heat (small bubbles forming around the edge, no rolling boil). The heavy bottom is structural, milk scorches readily on thin pans, and the burnt-milk taste cannot be removed once it forms.'
     time_min: 5
-  - text: 'Add the rice. Add the 60 g rinsed and drained basmati. Stir to distribute. Reduce heat to medium-low (the surface should bubble gently). Stirring constantly with a silicone spatula or wooden spoon, scraping the bottom of the pot every 30 seconds to prevent the milk solids from sticking and scorching. Simmer 35 to 40 minutes; the milk will reduce by approximately one-third in this period and the rice will cook through and start to break down at the edges.'
+  - text: 'Add the rice. Add the 60 g rinsed and drained basmati. Stir to distribute. Reduce heat to medium-low (the surface should bubble gently). Stirring constantly with a wooden spoon, scraping the bottom of the pot every 30 seconds to prevent the milk solids from sticking and scorching. Simmer 35 to 40 minutes; the milk will reduce by approximately one-third in this period and the rice will cook through and start to break down at the edges.'
     time_min: 38
   - text: 'Continue the reduction. After 35 to 40 minutes, the milk should have visibly reduced and the rice should be soft but still distinct. Continue simmering and stirring for another 20 to 25 minutes. The milk will continue reducing, the surface will develop a gentle skin that you fold back into the body (do not skim, that skin is concentrated milk solids and is the structural depth of kheer), and the rice will partially break down into the milk, thickening it. Pull when the volume has reduced by approximately 60% (from 1500 ml to about 600 ml of finished kheer base) and the consistency is that of a thick rice-and-cream porridge that just-coats the back of a spoon.'
     time_min: 22
@@ -98,7 +98,7 @@ steps:
     time_min: 2
 
 techniques: ['blooming-aromatics']
-equipment: ['heavy 4-quart pot or Dutch oven', 'silicone spatula or wooden spoon']
+equipment: ['heavy 4-quart pot or Dutch oven', 'wooden spoon']
 
 modifications:
   - for: 'sweetener'

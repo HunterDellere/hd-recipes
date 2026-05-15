@@ -179,6 +179,16 @@ Update `SITE_URL` in `build/build.mjs` to your actual domain. The build emits `s
 
 ---
 
+## Drafting hygiene
+
+Two recurring failure modes that the validator now flags. Both come from drafting habits that look harmless in isolation and look obviously wrong on the published page.
+
+**No cross-recipe references.** Never write "smaller than the X above", "as in the previous recipe", "see the meatballs we just covered", or any phrasing that assumes the reader is reading recipes in the order they were drafted. Each recipe is published as a standalone page; what's "above" in a drafting session does not exist in the reader's view. When you need to compare against another dish, name it specifically and reach it by `recipe_slug` if the comparison is structural enough to warrant a homemade-alternatives link, or describe the comparison in absolute terms ("a 25 g one-bite meatball rather than the 40 to 50 g Italian-American format") that hold up without context. The validator flags suspicious phrasings like "the X meatballs above", "the X version above", "as in the section above"; treat these as bugs.
+
+**Avoid plastics, especially silicone, in tool and cover instructions.** Default tool calls to wooden spoons (flat-edged for scraping pan corners during reductions), fish spatulas, bench scrapers, and metal whisks rather than silicone spatulas. Default surface covers and proofing covers to damp tea towels, fitted lids, small plates, parchment paper pressed directly onto the surface (for skin- or oxidation-prevention on mustards, gochujang, custards), and beeswax wraps (for dough rests and freezer wrapping) rather than plastic wrap, cling film, or zip-top bags. Storage-section prose can describe how an ingredient is *sold* (plastic tubs, vacuum bags) — that's factual not prescriptive — but the active cooking, fermenting, and storing steps the reader will follow should specify non-plastic equivalents. The validator flags `silicone`, `plastic wrap`, `cling film`, `cling wrap`, and `saran` anywhere in `content/recipes/` and `content/techniques/` step text.
+
+---
+
 ## Content intake workflow
 
 Whenever Hunter asks you to draft a new recipe or to reformat an existing recipe into the standard format, follow this sequence. The full drafting spec lives at `templates/_drafting/RECIPE.md`; this section is the per-session reminder.

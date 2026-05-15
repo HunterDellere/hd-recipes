@@ -82,7 +82,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; smaller than the Italian-meatball percentage because the fish sauce contributes about 1 g of additional salt, and the larb dressing adds more again on top)'
+    note: '(1 tsp Diamond Crystal; lower than the standard 1 percent salt-to-meat ratio because the fish sauce contributes about 1 g of additional salt, and the larb dressing adds more again on top)'
 
   - group: 'Phase 3, the sear'
     item: 'neutral oil (refined avocado, rice bran, or grapeseed)'
@@ -175,10 +175,10 @@ steps:
     time_min: 12
   - text: 'Grind the cooled rice. Transfer the 30 g / 3 tbsp toasted rice (and the cooled lime leaves, if used) to a mortar and pestle and pound for 60 to 90 seconds, or pulse in a spice grinder or dedicated coffee grinder for 5 to 10 seconds. The right grind is coarse-sand, you should see individual grain fragments, and no single grain should feel gritty between the teeth, but the texture should be discernibly textural rather than powder-fine. Set aside.'
     time_min: 2
-  - text: 'Mix the meatballs. While the rice cools, do the meatball mise: mince the 40 g shallots (for the meatball), microplane the 8 g garlic, mince the 8 g lemongrass inner core. In a wide bowl, combine the 500 g ground pork, the minced shallot, the microplaned garlic, the minced lemongrass, the 10 g / 2 tsp fish sauce, the 2 g / 1 tsp white pepper, and the 4 g / 1 tsp kosher salt. Mix with hands or a sturdy silicone spatula for 60 to 90 seconds, long enough to fully incorporate everything and to extract the myosin (the mixture turns from loose-and-shaggy to slightly-sticky-and-cohesive), short enough not to over-work. The end-point cue: a small pinched bit holds together when squeezed.'
+  - text: 'Mix the meatballs. While the rice cools, do the meatball mise: mince the 40 g shallots (for the meatball), microplane the 8 g garlic, mince the 8 g lemongrass inner core. In a wide bowl, combine the 500 g ground pork, the minced shallot, the microplaned garlic, the minced lemongrass, the 10 g / 2 tsp fish sauce, the 2 g / 1 tsp white pepper, and the 4 g / 1 tsp kosher salt. Mix with hands or a sturdy wooden spoon for 60 to 90 seconds, long enough to fully incorporate everything and to extract the myosin (the mixture turns from loose-and-shaggy to slightly-sticky-and-cohesive), short enough not to over-work. The end-point cue: a small pinched bit holds together when squeezed.'
     technique: 'myosin-extraction'
     time_min: 3
-  - text: 'Shape the meatballs. With damp hands, portion the mixture into 20 small meatballs of about 25 g each, a 3 cm diameter, smaller than the Italian meatballs above, sized for one-bite eating in a larb-style preparation. Roll each between damp palms with light pressure. Lay on a plate as you go. The smaller size is structural for this dish, large meatballs read as a different dish entirely, the bite-sized format is what makes this "larb in meatball form" rather than "Thai meatballs."'
+  - text: 'Shape the meatballs. With damp hands, portion the mixture into 20 small meatballs of about 25 g each, a 3 cm diameter, sized for one-bite eating in a larb-style preparation rather than the larger 40 to 50 g Italian-American meatball format. Roll each between damp palms with light pressure. Lay on a plate as you go. The smaller size is structural for this dish, large meatballs read as a different dish entirely, the bite-sized format is what makes this "larb in meatball form" rather than "Thai meatballs."'
     time_min: 5
   - text: 'Sear the meatballs. Heat the 20 g / 1.5 tbsp neutral oil in a 30 cm / 12-inch heavy skillet (or a wok) over medium-high heat until shimmering. Add the meatballs in a single layer with space between them. Sear undisturbed for 90 seconds on the first side, then turn each with tongs to expose a fresh face and sear 60 seconds; turn again, 60 seconds. After 3 faces are deeply browned, add a splash of water (about 30 g / 2 tbsp) to the pan, cover with a lid, and steam for 60 seconds, this finishes the interior cooking through to the safe-temperature 71°C / 160°F without over-drying the surface. Pull the lid, let any remaining water evaporate (30 seconds), and transfer the meatballs to a wide bowl.'
     technique: 'maillard-sear'

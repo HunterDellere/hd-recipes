@@ -41,7 +41,7 @@ ingredients:
 steps:
   - text: 'Stub: combine 1000 ml / 4 cups whole milk, 250 g / 1¼ cups granulated sugar, and 1 g / ¼ tsp fine sea salt in a heavy 3-quart saucepan. Stir to dissolve the sugar over low heat.'
     time_min: 5
-  - text: 'Stub: bring to a bare simmer over medium-low heat (no rolling boil; rolling boil scorches the proteins on the pan bottom). Stir every 10 minutes with a silicone spatula, scraping every corner of the pan, for 2 to 2.5 hours, until reduced by ~60% to roughly 400 g of pale-amber, condensed-milk-thick syrup.'
+  - text: 'Stub: bring to a bare simmer over medium-low heat (no rolling boil; rolling boil scorches the proteins on the pan bottom). Stir every 10 minutes with a flat-edged wooden spoon, scraping every corner of the pan, for 2 to 2.5 hours, until reduced by ~60% to roughly 400 g of pale-amber, condensed-milk-thick syrup.'
     time_min: 145
   - text: 'Stub: pour through a fine-mesh sieve into a clean glass jar. Cool to room temperature before sealing. Refrigerate.'
     time_min: 5

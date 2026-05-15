@@ -96,7 +96,7 @@ steps:
     time_min: 3
   - text: 'Press out remaining water. Lift the salted cucumbers in handfuls and gently squeeze over the colander to expel surface water. The cucumber half-moons should feel firm and translucent at the rim, not soggy. Do not rinse; the surface salt is part of the seasoning.'
     time_min: 2
-  - text: 'Dress. Tip the squeezed cucumbers into a serving bowl. Pour the gochugaru dressing over and toss with chopsticks or a silicone spatula until every piece is coated red. Add 10 ml / 2 tsp toasted sesame oil last and toss again, the oil should suspend in a thin film over the aqueous dressing rather than mix in fully. Adding sesame oil before the aqueous dressing causes the oil to coat the cucumbers and block the seasoning from adhering.'
+  - text: 'Dress. Tip the squeezed cucumbers into a serving bowl. Pour the gochugaru dressing over and toss with chopsticks or a wooden spoon until every piece is coated red. Add 10 ml / 2 tsp toasted sesame oil last and toss again, the oil should suspend in a thin film over the aqueous dressing rather than mix in fully. Adding sesame oil before the aqueous dressing causes the oil to coat the cucumbers and block the seasoning from adhering.'
     time_min: 1
   - text: 'Finish. Scatter 20 g sliced scallion and 4 g / 2 tsp toasted sesame seeds over the top. Serve immediately or within 30 minutes. Taste; if flat, a few drops more fish sauce. If too sharp, a 1 g pinch more sugar.'
     time_min: 1

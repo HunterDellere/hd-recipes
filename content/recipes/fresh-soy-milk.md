@@ -41,7 +41,7 @@ steps:
     time_min: 3
   - text: 'Stub: blend the drained beans with the 1500 ml / 6 cups cold water in a high-powered blender for 90 seconds, until the mixture is smooth and creamy with no visible bean fragments.'
     time_min: 2
-  - text: 'Stub: pour the blended mixture into a heavy-bottomed pot. Bring to a simmer over medium heat, stirring constantly with a silicone spatula to prevent scorching at the bottom (raw soy milk scorches readily). Once simmering, reduce heat and cook 20 minutes, stirring occasionally; the cooking eliminates the raw "beany" enzymes (especially trypsin inhibitor) and develops the characteristic flavor.'
+  - text: 'Stub: pour the blended mixture into a heavy-bottomed pot. Bring to a simmer over medium heat, stirring constantly with a wooden spoon to prevent scorching at the bottom (raw soy milk scorches readily). Once simmering, reduce heat and cook 20 minutes, stirring occasionally; the cooking eliminates the raw "beany" enzymes (especially trypsin inhibitor) and develops the characteristic flavor.'
     time_min: 20
   - text: 'Stub: line a fine-mesh sieve with two layers of cheesecloth set over a clean pot. Pour the cooked mixture through the cheesecloth. Twist the cheesecloth and squeeze (carefully — it is very hot) to extract every last drop of milk. The leftover pulp (okara) is itself an ingredient and can be used in baking or as a vegetable stir-fry base; do not discard.'
     time_min: 5
