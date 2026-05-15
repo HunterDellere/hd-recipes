@@ -61,7 +61,7 @@ ingredients:
 steps:
   - text: 'Stub: combine 454 g grated ube, 240 ml / 1 cup full-fat coconut milk, 200 g sweetened condensed milk, 150 ml / ½ cup evaporated milk, and 1 g / ¼ tsp fine sea salt in a heavy 3-quart non-reactive saucepan. Whisk to dissolve any lumps in the condensed milk.'
     time_min: 5
-  - text: 'Stub: bring to a bare simmer over medium heat (steam rising, no rolling boil — boiling above 80 °C degrades the anthocyanin pigments and the color shifts from vivid violet toward muddy brown-purple). Drop the heat to low immediately and cook 45 to 60 minutes, stirring with a silicone spatula every 2 to 3 minutes initially and constantly during the final 15 minutes, until the mass thickens to the texture of soft, glossy mashed potatoes and pulls cleanly away from the pan bottom when the spatula passes through.'
+  - text: 'Stub: bring to a bare simmer over medium heat (steam rising, no rolling boil — boiling above 80 °C degrades the anthocyanin pigments and the color shifts from vivid violet toward muddy brown-purple). Drop the heat to low immediately and cook 45 to 60 minutes, stirring with a flat-edged wooden spoon every 2 to 3 minutes initially and constantly during the final 15 minutes, until the mass thickens to the texture of soft, glossy mashed potatoes and pulls cleanly away from the pan bottom when the spatula passes through.'
     time_min: 60
   - text: 'Stub: cut the heat. Stir in 30 g / 2 tbsp unsalted butter and 3 g / ½ tsp vanilla bean paste until the butter melts and the surface goes glossy. Transfer to clean glass jars, cool to room temperature uncovered (about 30 minutes), then seal and refrigerate.'
     time_min: 5

@@ -39,7 +39,7 @@ ingredients:
     note: '(4½ cups; the kombu and shiitake absorb some water, and a small amount evaporates during the warming step)'
 
 steps:
-  - text: 'Stub: combine the 12 g kombu and the 12 g dried shiitake in a 2-quart saucepan or large measuring cup. Pour over the 1100 ml cold water. Cover with a plate or plastic wrap. Refrigerate overnight (8 to 12 hours preferred), or leave at room temperature for 4 hours minimum.'
+  - text: 'Stub: combine the 12 g kombu and the 12 g dried shiitake in a 2-quart saucepan or large measuring cup. Pour over the 1100 ml cold water. Cover with a plate or a fitted lid. Refrigerate overnight (8 to 12 hours preferred), or leave at room temperature for 4 hours minimum.'
     time_min: 480
   - text: 'Stub: after the soak, the water will be a deep amber-brown and the kombu and shiitake will be fully hydrated. Transfer the saucepan to the stove. Bring slowly to just under boiling, about 8 to 10 minutes; the water should reach about 80 to 85°C. Just before the water boils, lift out the kombu with chopsticks and remove the shiitake caps to a plate (reserve both, the kombu can be julienned and used as a vegetable, the shiitake can be sliced and used in soups or stir-fries).'
     time_min: 10
