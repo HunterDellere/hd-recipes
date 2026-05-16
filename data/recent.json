@@ -1902,6 +1902,134 @@
     }
   },
   {
+    "path": "pages/recipes/sauteed-beet-greens-with-anchovy-garlic-and-chili.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sautéed beet greens with anchovy, garlic, and chili",
+    "desc": "A bunch of beet greens, stems and leaves separated, cooked in two stages in a wide skillet of olive oil that has first dissolved 3 anchovy fillets and bloomed sliced garlic and red pepper flakes. Stems first for 2 minutes to take the fibrous edge off, leaves on top with their rinse water still clinging so they steam-wilt under a brief lid, then uncovered to drive off moisture. Finished off heat with lemon zest, lemon juice, and a splash of red wine vinegar to bridge the iron-mineral leaves to the bright top end. Built as the green-vegetable counter to the cast-iron chuck eye with shallot pan sauce; the dishes share the skillet rotation and the anchovy stands in for the steak fond on the umami axis.",
+    "tags": [
+      "italian",
+      "mediterranean",
+      "vegetable",
+      "side",
+      "weeknight",
+      "umami",
+      "stir-fry"
+    ],
+    "status": "complete",
+    "_slug": "sauteed-beet-greens-with-anchovy-garlic-and-chili",
+    "cuisine": "Italian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 8,
+      "cook_min": 7,
+      "total_min": 15,
+      "active_min": 12
+    },
+    "updated": "2026-05-14",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "beet greens (the leaves and stems off 2 to 3 medium beets)",
+        "slug": "beet-greens",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "oil-cured anchovy fillets",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, sliced thin",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "flaky salt (Maldon, Jacobsen, or any large-flake finishing salt)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "microplane"
+    ],
+    "added": "2026-05-14",
+    "_card": {
+      "totalMinutes": 15,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/ingredients/beet-greens.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Beet greens",
+    "desc": "Tender leafy tops of Beta vulgaris, the same species as Swiss chard. Mineral-iron-forward, mildly bitter, with red-veined stems that read sweeter than the leaves. Cooks like chard but faster; the stems and the leaves are two textures on one plant and want staged cooking.",
+    "tags": [
+      "vegetable",
+      "mediterranean",
+      "italian"
+    ],
+    "status": "complete",
+    "_slug": "beet-greens",
+    "updated": "2026-05-14",
+    "added": "2026-05-14",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
     "path": "pages/recipes/cast-iron-chuck-eye-steaks-with-shallot-pan-sauce.html",
     "type": "recipe",
     "category": "recipes",
@@ -2431,45 +2559,6 @@
       "timeMode": "total",
       "activeMinutes": 13,
       "filterMinutes": 13
-    }
-  },
-  {
-    "path": "pages/ingredients/coconut-sugar.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Coconut sugar",
-    "desc": "Unrefined sugar reduced from the sap of coconut palm (Cocos nucifera) flower stalks. Granulated, soft-amber, with a butterscotch-and-floral character close to soft Thai palm sugar but slightly less floral, slightly more caramel.",
-    "tags": [
-      "pantry"
-    ],
-    "status": "complete",
-    "_slug": "coconut-sugar",
-    "updated": "2026-05-11",
-    "added": "2026-05-11",
-    "_card": {
-      "primaryTag": null,
-      "usedInCount": 1,
-      "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/ingredients/espresso-beans.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Espresso beans",
-    "desc": "Roasted Coffea arabica seeds (with occasional Robusta), ground fine and extracted under ~9 bar pressure. The roast level and grind define everything that happens in the cup.",
-    "tags": [
-      "pantry",
-      "aromatic"
-    ],
-    "status": "complete",
-    "_slug": "espresso-beans",
-    "updated": "2026-05-11",
-    "added": "2026-05-11",
-    "_card": {
-      "primaryTag": "aromatic",
-      "usedInCount": 1,
-      "hasNutrition": false
     }
   }
 ]

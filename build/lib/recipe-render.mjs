@@ -80,12 +80,15 @@ function fmtQty(qty) {
   return String(rounded);
 }
 
-// Match metric/imperial paired quantities in step text — `115 g / 1 stick`,
-// `1500 ml / 6 cups`, `1 g / ½ tsp`, etc. — and wrap them so client-side
-// scaling can recompute both halves when servings change. The slash-pair is
-// the recipe authoring convention for ingredient masses inside step prose;
-// times, temperatures, distances, and bare-count items don't follow it, so
-// the wrap is safe by construction.
+// Wrap quantities inside step prose so client-side scaling can recompute them
+// when the cook changes servings. Three cases are handled, ordered most- to
+// least-specific so the regex consumes the slash-pair before its halves can
+// match as singles:
+//   1. Slash-paired metric/imperial (`115 g / 1 stick`)   — emit both as-authored
+//   2. Single metric (`100 g pancetta`, `60 ml olive oil`) — derive imperial via density
+//   3. Single imperial (`2 cups water`, `1 tbsp salt`)     — derive metric via density
+// The unit allowlists exclude °C/°F, min/h/s, cm/inch, etc., so times,
+// temperatures, distances, and bare-count items don't get wrapped by accident.
 const FRAC_TO_NUM = { '½':0.5,'¼':0.25,'¾':0.75,'⅓':1/3,'⅔':2/3,'⅛':0.125,'⅜':0.375,'⅝':0.625,'⅞':0.875 };
 const FRAC_CHARS = '½¼¾⅓⅔⅛⅜⅝⅞';
 
@@ -106,35 +109,250 @@ function parseQtyText(s) {
 const QTY_PATTERN_SRC = `(?:\\d+(?:\\.\\d+)?\\s+\\d+\\/\\d+|\\d+(?:\\.\\d+)?\\s*[${FRAC_CHARS}]|\\d+\\/\\d+|\\d+(?:\\.\\d+)?|[${FRAC_CHARS}])`;
 const METRIC_UNIT_SRC = '(?:kg|mg|ml|g|l)';
 const IMPERIAL_UNIT_SRC = '(?:tablespoons?|teaspoons?|tbsp|tsp|cups?|sticks?|pounds?|lbs?|oz)';
+
+// Volume of one of each imperial unit, in ml. Matches the runtime table.
+const VOL_ML = { tsp: 5, tbsp: 15, cup: 240, qt: 946.353 };
+function canonImperialUnit(u) {
+  const lc = String(u || '').toLowerCase();
+  if (lc === 'teaspoon' || lc === 'teaspoons' || lc === 'tsp') return 'tsp';
+  if (lc === 'tablespoon' || lc === 'tablespoons' || lc === 'tbsp') return 'tbsp';
+  if (lc === 'cup' || lc === 'cups') return 'cup';
+  if (lc === 'pound' || lc === 'pounds' || lc === 'lb' || lc === 'lbs') return 'lb';
+  if (lc === 'oz') return 'oz';
+  if (lc === 'stick' || lc === 'sticks') return 'stick';
+  return lc;
+}
+
+// Convert single-unit metric → matched imperial at build time.
+// Density (g/ml) defaults to 1.0 (water-equivalent). For mass with no impPref,
+// pick the most natural unit by size; for mass with an impPref, cross through
+// density to the requested volume unit.
+function metricToImperial(qty, unit, density, impPref) {
+  const d = (typeof density === 'number' && density > 0) ? density : 1.0;
+  if (unit === 'g' || unit === 'kg') {
+    const g = unit === 'kg' ? qty * 1000 : qty;
+    if (impPref === 'cup' || impPref === 'tbsp' || impPref === 'tsp') {
+      return { qty: (g / d) / VOL_ML[impPref], unit: impPref };
+    }
+    if (impPref === 'lb') return { qty: g / 453.592, unit: 'lb' };
+    if (impPref === 'oz') return { qty: g / 28.3495, unit: 'oz' };
+    if (g < 7) return { qty: g, unit: 'g' };
+    if (g < 454) return { qty: g / 28.3495, unit: 'oz' };
+    return { qty: g / 453.592, unit: 'lb' };
+  }
+  if (unit === 'ml' || unit === 'l') {
+    const ml = unit === 'l' ? qty * 1000 : qty;
+    if (impPref === 'oz') return { qty: (ml * d) / 28.3495, unit: 'oz' };
+    if (impPref === 'lb') return { qty: (ml * d) / 453.592, unit: 'lb' };
+    if (impPref === 'cup' || impPref === 'tbsp' || impPref === 'tsp') {
+      return { qty: ml / VOL_ML[impPref], unit: impPref };
+    }
+    if (ml < 15) return { qty: ml / 5, unit: 'tsp' };
+    if (ml < 60) return { qty: ml / 15, unit: 'tbsp' };
+    if (ml < 1900) return { qty: ml / 240, unit: 'cup' };
+    return { qty: ml / 946.353, unit: 'qt' };
+  }
+  return { qty, unit };
+}
+
+// Convert single-unit imperial → matched metric at build time.
+// Volume goes to ml (small) or l (large); mass to g (small) or kg (large).
+function imperialToMetric(qty, unitRaw, density) {
+  const d = (typeof density === 'number' && density > 0) ? density : 1.0;
+  const unit = canonImperialUnit(unitRaw);
+  if (unit === 'oz')   return { qty: qty * 28.3495, unit: 'g' };
+  if (unit === 'lb')   return { qty: qty * 453.592, unit: 'g' };
+  if (unit === 'stick') return { qty: qty * 113.4, unit: 'g' }; // US butter stick
+  if (unit === 'tsp')  return { qty: qty * 5, unit: 'ml' };
+  if (unit === 'tbsp') return { qty: qty * 15, unit: 'ml' };
+  if (unit === 'cup')  return { qty: qty * 240, unit: 'ml' };
+  return { qty, unit };
+}
+
+// Format a quantity for the build-time emitted attribute. fmtImperial /
+// fmtMetric live in scripts/recipe.js — at build we only need a friendly
+// inline string for the wrapped span body. Runtime overwrites it on every
+// re-render anyway, so this is just the initial render at factor=1.
+function fmtBuildQty(n, unit) {
+  if (!isFinite(n)) return String(n);
+  if (unit === 'g' || unit === 'ml' || unit === 'mg') {
+    return n >= 10 ? String(Math.round(n)) : (Math.round(n * 10) / 10).toString();
+  }
+  if (unit === 'kg' || unit === 'l') {
+    return n < 10 ? (Math.round(n * 100) / 100).toString() : (Math.round(n * 10) / 10).toString();
+  }
+  if (unit === 'cup' || unit === 'tsp' || unit === 'tbsp' || unit === 'qt') {
+    if (n >= 10) return String(Math.round(n));
+    const step = n < 4 ? 8 : 4;
+    const r = Math.round(n * step) / step;
+    const whole = Math.floor(r);
+    const frac = r - whole;
+    const FRAC = [[0.125,'⅛'],[0.25,'¼'],[0.333,'⅓'],[0.375,'⅜'],[0.5,'½'],[0.625,'⅝'],[0.667,'⅔'],[0.75,'¾'],[0.875,'⅞']];
+    for (const [v, sym] of FRAC) {
+      if (Math.abs(frac - v) < 0.04) return whole > 0 ? `${whole} ${sym}` : sym;
+    }
+    return String(r);
+  }
+  if (unit === 'oz' || unit === 'lb') {
+    return n < 4 ? (Math.round(n * 100) / 100).toString().replace(/\.?0+$/, '') : (Math.round(n * 10) / 10).toString();
+  }
+  return String(n);
+}
+
+// Build a step-qty span. Both metric and imperial values are baked in so
+// the runtime can swap unit systems without re-running density math.
+function buildStepQtySpan(mqNum, mu, iqNum, iu, displayText) {
+  return `<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="${mqNum}" data-metric-unit="${escapeHtml(mu)}" data-imp-qty="${iqNum}" data-imp-unit="${escapeHtml(iu)}">${escapeHtml(displayText)}</span><!-- /auto-link-skip -->`;
+}
+
 function buildPairRegex() {
   return new RegExp(
     `(${QTY_PATTERN_SRC})\\s+(${METRIC_UNIT_SRC})\\s*\\/\\s*(${QTY_PATTERN_SRC})\\s+(${IMPERIAL_UNIT_SRC})\\b`,
     'g'
   );
 }
+function buildSingleMetricRegex() {
+  // Negative lookahead `(?!\s*\/)` keeps this from consuming the metric half
+  // of a slash-pair when the pair regex didn't claim it first.
+  return new RegExp(
+    `(?<![\\w.])(${QTY_PATTERN_SRC})\\s+(${METRIC_UNIT_SRC})\\b(?!\\s*\\/\\s*\\d)`,
+    'g'
+  );
+}
+function buildSingleImperialRegex() {
+  return new RegExp(
+    `(?<![\\w.])(${QTY_PATTERN_SRC})\\s+(${IMPERIAL_UNIT_SRC})\\b(?!\\s*\\/\\s*\\d)`,
+    'g'
+  );
+}
 
-function wrapStepQuantities(text) {
+// Resolve a density (g/ml) by scanning the recipe's ingredient list for the
+// nearest match in the surrounding step text. Authors typically reference an
+// ingredient by name in the same sentence ("Add the 100 g pancetta") — the
+// closest matching ingredient slug wins. Returns { density, impPref } or {}.
+function resolveDensityForContext(stepText, matchIndex, fm, ingredientBySlug) {
+  if (!fm.ingredients || !fm.ingredients.length) return {};
+  // Authors write the noun right after the quantity ("the 8 g salt and 2 g
+  // black pepper"). Look in a short forward window first (next ~60 chars,
+  // until a comma/period/semicolon ends the noun phrase), and only fall back
+  // to a wider window if nothing fires. This keeps "8 g salt" from binding
+  // to "black pepper" that appears later in the same sentence.
+  const lowered = stepText.toLowerCase();
+  const forwardEnd = Math.min(stepText.length, matchIndex + 80);
+  let forwardWin = lowered.slice(matchIndex, forwardEnd);
+  // Truncate at the first phrase boundary OR the next quantity. Each
+  // quantity owns its immediately-following noun phrase; "8 g salt and 2 g
+  // black pepper" splits into "8 g salt" + "2 g black pepper" so salt
+  // doesn't accidentally bind to pepper.
+  const cutsRaw = [];
+  const cPunc = forwardWin.search(/[,.;]/);
+  if (cPunc > 0) cutsRaw.push(cPunc);
+  // Search for the next quantity after the leading one (skip first char so
+  // the pattern can't re-match this very quantity)
+  const nextQtyOffset = forwardWin.slice(1).search(/\b\d+(?:\.\d+)?\s*(?:g|ml|kg|l|tsp|tbsp|cup|oz|lb|stick)\b/);
+  if (nextQtyOffset > 0) cutsRaw.push(nextQtyOffset + 1);
+  const cConj = forwardWin.search(/\s+(?:and|then|with|plus)\s+/);
+  if (cConj > 0) cutsRaw.push(cConj);
+  if (cutsRaw.length) forwardWin = forwardWin.slice(0, Math.min(...cutsRaw));
+
+  function scoreIngredients(window) {
+    const out = [];
+    for (const ing of fm.ingredients) {
+      const item = String(ing.item || '').toLowerCase();
+      const slugLastSegment = ing.slug ? String(ing.slug).split('/').pop().replace(/-/g, ' ').toLowerCase() : '';
+      const probes = new Set();
+      if (slugLastSegment) probes.add(slugLastSegment);
+      for (const src of [item, slugLastSegment]) {
+        for (const w of src.split(/[\s,()\/]+/)) {
+          if (w.length >= 4 && !/^\d+$/.test(w)) probes.add(w);
+        }
+      }
+      let score = 0;
+      for (const p of probes) {
+        if (p && window.includes(p)) score = Math.max(score, p.length);
+      }
+      if (score === 0) continue;
+      const tfm = ing.slug && ingredientBySlug
+        ? (ingredientBySlug.get(ing.slug) || ingredientBySlug.get(ing.slug.replace(/^ingredients\//, '')))
+        : null;
+      const tfmFm = tfm && (tfm._fm || tfm.fm) || null;
+      const density = ing.density_g_per_ml ?? (tfmFm && tfmFm.density_g_per_ml);
+      const impPref = ing.imperial_pref ?? (tfmFm && tfmFm.imperial_pref);
+      out.push({ score, density, impPref });
+    }
+    return out.sort((a, b) => b.score - a.score)[0] || null;
+  }
+
+  // First pass: the immediate noun phrase right after the quantity.
+  let best = scoreIngredients(forwardWin);
+  if (best) return { density: best.density, impPref: best.impPref };
+  // Fallback: widen to a symmetric ±120-char window if nothing in the
+  // immediate phrase resolves.
+  const wideStart = Math.max(0, matchIndex - 120);
+  const wideEnd = Math.min(stepText.length, matchIndex + 120);
+  best = scoreIngredients(lowered.slice(wideStart, wideEnd));
+  return best ? { density: best.density, impPref: best.impPref } : {};
+}
+
+function wrapStepQuantities(text, fm, ingredientBySlug) {
   if (!text) return '';
-  const re = buildPairRegex();
-  let out = '';
-  let last = 0;
+  // Pass 1: find all match ranges from all three patterns. Earlier-priority
+  // patterns claim their bytes first; later patterns skip overlaps.
+  const claimed = []; // sorted, non-overlapping {start, end, html}
+  const overlaps = (s, e) => claimed.some(c => s < c.end && e > c.start);
+  const insertSpan = (s, e, html) => {
+    let i = 0;
+    while (i < claimed.length && claimed[i].start < s) i++;
+    claimed.splice(i, 0, { start: s, end: e, html });
+  };
+
+  // Pass 1a — slash pairs
+  let re = buildPairRegex();
   let m;
   while ((m = re.exec(text))) {
     const [full, mq, mu, iq, iu] = m;
-    out += escapeHtml(text.slice(last, m.index));
     const mqNum = parseQtyText(mq);
     const iqNum = parseQtyText(iq);
-    if (mqNum == null || iqNum == null || !isFinite(mqNum) || !isFinite(iqNum)) {
-      out += escapeHtml(full);
-    } else {
-      // Wrap with auto-link-skip sentinels so augment.autoLinkBody can't bury
-      // an <a> inside the span — runtime updates via textContent would wipe
-      // such a link, and there's nothing meaningful to link inside a quantity.
-      out += `<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="${mqNum}" data-metric-unit="${escapeHtml(mu)}" data-imp-qty="${iqNum}" data-imp-unit="${escapeHtml(iu)}">${escapeHtml(full)}</span><!-- /auto-link-skip -->`;
+    if (mqNum != null && iqNum != null && isFinite(mqNum) && isFinite(iqNum)) {
+      insertSpan(m.index, m.index + full.length, buildStepQtySpan(mqNum, mu, iqNum, iu, full));
     }
-    last = m.index + full.length;
   }
-  out += escapeHtml(text.slice(last));
+
+  // Pass 1b — single metric (derive imperial via density)
+  re = buildSingleMetricRegex();
+  while ((m = re.exec(text))) {
+    const [full, mq, mu] = m;
+    if (overlaps(m.index, m.index + full.length)) continue;
+    const mqNum = parseQtyText(mq);
+    if (mqNum == null || !isFinite(mqNum)) continue;
+    const { density, impPref } = resolveDensityForContext(text, m.index, fm || {}, ingredientBySlug);
+    const imp = metricToImperial(mqNum, mu, density, impPref);
+    if (!isFinite(imp.qty)) continue;
+    insertSpan(m.index, m.index + full.length, buildStepQtySpan(mqNum, mu, imp.qty, imp.unit, full));
+  }
+
+  // Pass 1c — single imperial (derive metric)
+  re = buildSingleImperialRegex();
+  while ((m = re.exec(text))) {
+    const [full, iq, iu] = m;
+    if (overlaps(m.index, m.index + full.length)) continue;
+    const iqNum = parseQtyText(iq);
+    if (iqNum == null || !isFinite(iqNum)) continue;
+    const { density } = resolveDensityForContext(text, m.index, fm || {}, ingredientBySlug);
+    const met = imperialToMetric(iqNum, iu, density);
+    if (!isFinite(met.qty)) continue;
+    insertSpan(m.index, m.index + full.length, buildStepQtySpan(met.qty, met.unit, iqNum, canonImperialUnit(iu), full));
+  }
+
+  // Pass 2: stitch escaped text + claimed spans together
+  let out = '';
+  let cursor = 0;
+  for (const span of claimed) {
+    out += escapeHtml(text.slice(cursor, span.start));
+    out += span.html;
+    cursor = span.end;
+  }
+  out += escapeHtml(text.slice(cursor));
   return out;
 }
 
@@ -427,14 +645,14 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     </div>`;
 }
 
-export function renderSteps(fm, currentPath, techniqueBySlug, images) {
+export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredientBySlug) {
   if (!fm.steps || !fm.steps.length) return '';
   const relTo = relPrefixFor(currentPath);
   const stepImages = images && images.steps ? images.steps : {};
 
   const items = fm.steps.map((step, i) => {
     const stepNum = i + 1;
-    let body = wrapStepQuantities(step.text);
+    let body = wrapStepQuantities(step.text, fm, ingredientBySlug);
     if (step.technique) {
       const target = techniqueBySlug.get(step.technique) || techniqueBySlug.get(step.technique.replace(/^techniques\//, ''));
       if (target) {
@@ -710,7 +928,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
   const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
   if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Mise en Place' }); }
 
-  const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images);
+  const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images, ingredientBySlug);
   if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Execution' }); }
 
   if (safetyHtml) { sections.push(safetyHtml); sidebarLinks.push({ id: 'safety', label: 'Safety' }); }

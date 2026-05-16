@@ -153,6 +153,11 @@
     // The hero "N servings" stat — updated alongside the input so the page
     // header reflects the chosen yield, not the static recipe default.
     const heroServingsEl = document.querySelector('[data-stat="servings"] .rh-stat-value');
+    // The yield_note ("serves 6 generously", "makes 12 cookies") is authored
+    // at the base servings count. When the cook scales away from that, the
+    // note contradicts the live count — hide it rather than show a wrong
+    // number alongside the right one.
+    const heroYieldNoteEl = document.querySelector('[data-stat="servings"] .rh-stat-sub');
 
     // Snapshot original metric (qty, unit) per row. The dataset.qty/unit values
     // were emitted at build time from validated metric frontmatter; trust those.
@@ -279,12 +284,45 @@
         if (!isFinite(mq) || !isFinite(iq)) return;
         const mScaled = mq * factor;
         const iScaled = iq * factor;
-        const metricText = `${fmtMetric(mScaled, mu)} ${mu}`;
+        // Dual-display "metric / imperial" — rebased to kg/l when the scaled
+        // metric crosses the 1000 threshold so 6 servings × 250 ml reads as
+        // 1.5 l rather than 1500 ml.
+        const mDisp = metricDisplay(mScaled, mu);
+        const metricText = `${fmtMetric(mDisp.qty, mDisp.unit)} ${mDisp.unit}`;
         const impText = `${fmtImperial(iScaled, iu)} ${pluralizeUnit(iu, iScaled)}`;
         el.textContent = `${metricText} / ${impText}`;
       });
 
+      // Refresh timer button aria-labels and data-step-label so the dock card
+      // shows the scaled quantities, not the as-authored ones. The button's
+      // text content lives in .step-time-text (just the duration), which is
+      // not quantity-bound, so we leave it alone.
+      document.querySelectorAll('.step-time-btn').forEach(btn => {
+        const stepBody = btn.closest('.step-body');
+        if (!stepBody) return;
+        // Reconstruct the step prose as the user now sees it. The button's
+        // own text is the timer duration — strip it so the label is just the
+        // step's narrative content.
+        const clone = stepBody.cloneNode(true);
+        clone.querySelectorAll('.step-time, .step-tech').forEach(n => n.remove());
+        const proseText = clone.textContent.trim().replace(/\s+/g, ' ');
+        if (!btn.dataset.origLabel) btn.dataset.origLabel = btn.dataset.stepLabel || '';
+        const stepLabelPrefix = (btn.dataset.origLabel || '').match(/^Step \d+:/);
+        const prefix = stepLabelPrefix ? stepLabelPrefix[0] : 'Step';
+        const newLabel = `${prefix} ${proseText.slice(0, 120)}`;
+        btn.dataset.stepLabel = newLabel;
+        const ariaMins = btn.dataset.stepTimer;
+        const stepNum = (prefix.match(/\d+/) || [''])[0];
+        if (ariaMins && stepNum) {
+          btn.setAttribute('aria-label', `Start ${ariaMins} min timer for step ${stepNum}`);
+        }
+      });
+
       if (heroServingsEl) heroServingsEl.textContent = String(servings);
+      if (heroYieldNoteEl) {
+        const atBase = servings === baseServings;
+        heroYieldNoteEl.style.display = atBase ? '' : 'none';
+      }
     }
 
     apply(); // initial render reflects stored units preference
