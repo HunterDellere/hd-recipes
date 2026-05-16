@@ -34,6 +34,11 @@
 
   els.forEach(el => el.classList.add('rv-init'));
 
+  // threshold 0 (any pixel intersecting) rather than a ratio — long lists like
+  // the Cook page's 107-recipe `.card-grid` are taller than the viewport, so
+  // max intersection ratio (viewport_height / target_height) drops below any
+  // small fixed threshold and the observer never fires. The negative bottom
+  // rootMargin keeps the reveal from triggering too eagerly at the page edge.
   const io = new IntersectionObserver((entries, obs) => {
     for (const entry of entries) {
       if (entry.isIntersecting) {
@@ -41,7 +46,7 @@
         obs.unobserve(entry.target);
       }
     }
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0 });
 
   els.forEach(el => io.observe(el));
 })();
