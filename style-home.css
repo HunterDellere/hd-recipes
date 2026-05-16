@@ -111,7 +111,14 @@
 .home-divider svg { display: inline-block; width: 320px; height: 14px; }
 
 /* ── search section ──────────────────────────────────── */
-.home-search-wrap { position: relative; max-width: 640px; }
+/* The search section needs its own stacking context above downstream
+   sections — the dropdown is absolutely positioned and would otherwise paint
+   beneath any later section that creates its own stacking context (cards
+   with transforms, transitions, backgrounds with their own z-indexes, etc).
+   Lifting the section itself, plus the wrap inside it, guarantees the tabs
+   strip and results list always sit above the rest of the page. */
+.home-search-section { position: relative; z-index: 50; }
+.home-search-wrap { position: relative; z-index: 1; max-width: 640px; }
 .home-search-icon {
   position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
   color: var(--ink-faint);
@@ -173,7 +180,11 @@
 
 .home-search-results {
   position: absolute; left: 0; right: 0;
-  top: calc(100% + 8px + 38px);
+  /* When tabs are visible, the results sit below them. The offset uses
+     --home-search-tabs-h (set by the JS once the tabs strip is rendered) so
+     the gap exactly matches the tabs strip height — no overlap, no gap.
+     Fallback 48px covers the typical single-row case before JS measures. */
+  top: calc(100% + 8px + var(--home-search-tabs-h, 48px));
   margin-top: 0; padding: 0; list-style: none;
   background: var(--bg-elev); border: 1px solid var(--rule);
   border-radius: 0 0 10px 10px;

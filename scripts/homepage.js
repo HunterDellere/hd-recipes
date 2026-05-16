@@ -478,6 +478,17 @@
       resultsEl.hidden = false;
       input.setAttribute('aria-expanded', 'true');
       activeIndex = -1;
+      // Measure the tabs strip after layout so the results panel can sit
+      // flush below it. CSS uses --home-search-tabs-h as the vertical
+      // offset; a fixed 38px assumption broke whenever the tabs wrapped to
+      // two rows on narrow viewports or when font scaling changed the row
+      // height, causing the first result to render underneath the tabs.
+      requestAnimationFrame(() => {
+        const wrap = input.closest('.home-search-wrap');
+        if (!wrap) return;
+        const tabsH = tabsEl.hidden ? 0 : tabsEl.getBoundingClientRect().height;
+        wrap.style.setProperty('--home-search-tabs-h', `${Math.round(tabsH)}px`);
+      });
     }
 
     function clearResults() {
