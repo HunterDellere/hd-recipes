@@ -1,5 +1,3582 @@
 [
   {
+    "path": "pages/recipes/omurice.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Omurice",
+    "desc": "The Japanese yōshoku canon: a chicken-and-onion ketchup-fried rice (chikin raisu) wrapped or topped with a thin omelet, often finished with a zigzag of additional ketchup. Structurally a child-friendly comfort-food dish that has become one of the most beloved cross-generational preparations in Japan; the dish exists in two visual forms (the classical fully-wrapped envelope omelet and the modern Kyoto-style tornado omelet that is split at the table to drape over the rice in a soft custardy fall). Eggs are the structural finish; the rice is the canvas; the ketchup is the unmistakable Japanese-Western flavor signature.",
+    "tags": [
+      "japanese",
+      "rice",
+      "egg",
+      "chicken",
+      "comfort",
+      "weeknight",
+      "umami",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "omurice",
+    "cuisine": "Japanese (yōshoku)",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 25,
+      "total_min": 40,
+      "active_min": 35
+    },
+    "updated": "2026-05-16",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "cooked short-grain Japanese rice (made the day before and refrigerated overnight)",
+        "slug": "japanese-short-grain-rice",
+        "optional": false
+      },
+      {
+        "item": "boneless skinless chicken thigh",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "green bell pepper (or red bell pepper)",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "frozen green peas (thawed)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "ketchup (Japanese-style or quality American)",
+        "optional": false
+      },
+      {
+        "item": "Japanese soy sauce (light, usukuchi or regular koikuchi)",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the rice)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "white pepper, ground",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "whole milk (or dashi for a more umami-forward version)",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter (for the omelet pan)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the eggs)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "ketchup (for the finishing zigzag)",
+        "optional": false
+      },
+      {
+        "item": "fresh flat-leaf parsley (optional, for the canonical green garnish)",
+        "slug": "parsley",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "ketchup-fry-and-brown",
+      "soft-set-omelet",
+      "omelet-wrap"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "small-nonstick-skillet (for omelets)",
+      "rice-cooker (optional, for the rice)"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 40,
+      "diffLabel": "medium",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/ingredients/aburaage.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Aburaage (deep-fried tofu pouches)",
+    "desc": "Thin slabs of tofu deep-fried twice (low temperature first, then high temperature) until they puff into a hollow golden pouch with a crisp surface and a soft interior. The structural pouch of Japanese inarizushi (sushi rice in a sweet-soy-simmered aburaage), the textural element in kitsune udon and many miso soups, and a high-protein vegetarian component that absorbs broth aggressively.",
+    "tags": [
+      "pantry",
+      "japanese",
+      "asian"
+    ],
+    "status": "complete",
+    "_slug": "aburaage",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 0,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/burdock-root.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Burdock root (gobō, niúbàng)",
+    "desc": "Long, slender, dark-skinned taproot of Arctium lappa, the great burdock. A fibrous, earthy, faintly astringent root that requires shaving rather than slicing and a quick water-soak to manage its oxidation. The structural root in Japanese kinpira gobō, tonjiru and kenchinjiru, and Chinese medicinal soups; nearly unknown in Western cuisine outside its herbal supplement form.",
+    "tags": [
+      "vegetable",
+      "asian",
+      "japanese"
+    ],
+    "status": "complete",
+    "_slug": "burdock-root",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/carrot.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Carrot",
+    "desc": "Taproot of Daucus carota subsp. sativus, the cultivated subspecies of the wild carrot. A sugar-and-pectin-rich orange (or purple, white, yellow) root that caramelizes to deep sweetness under high heat and softens to silk under long braise. The structural sweetness in French mirepoix, the bridge between savory and sweet in soup, glaze, and roast.",
+    "tags": [
+      "vegetable",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "carrot",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/cornstarch.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Cornstarch",
+    "desc": "Pure starch extracted from the corn (maize) endosperm. Used as a thickener for sauces and gravies, a coating for fried foods (the Chinese-restaurant velvet crust), and a tenderizer in marinades that protects protein surfaces from over-coagulation. A high-amylopectin starch that produces a glossy, translucent gel.",
+    "tags": [
+      "pantry",
+      "thickener"
+    ],
+    "status": "complete",
+    "_slug": "cornstarch",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/dried-shiitake.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Dried shiitake mushroom (donko, hoshi shiitake)",
+    "desc": "Lentinula edodes, the shiitake mushroom, dried to roughly 10% of its fresh weight. The drying intensifies the umami compounds (lentinionic acid and free glutamates, plus the guanylate nucleotide that creates the most powerful umami synergy in any vegetable). The canonical mushroom of Chinese, Japanese, and Korean cooking, the structural umami of Buddhist shōjin cuisine, and the dashi component in vegetarian Japanese dashi.",
+    "tags": [
+      "mushroom",
+      "pantry",
+      "japanese",
+      "chinese",
+      "korean",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "dried-shiitake",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/ground-pork.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ground pork",
+    "desc": "Pork muscle ground through a fixed plate, typically from shoulder (butt) at roughly 75/25 lean-to-fat. The structural protein of Italian polpette, Sichuan zha jiang sauces, Thai larb, Filipino lumpia, and the meatball traditions of nearly every cuisine that keeps pigs. Sweeter, more emulsifiable, and more forgiving than ground beef.",
+    "tags": [
+      "pork",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "ground-pork",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": "pork",
+      "usedInCount": 3,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/konnyaku.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Konnyaku (konjac, devil's tongue)",
+    "desc": "A firm, jelly-like food made from the starchy corm of Amorphophallus konjac (konjac yam), mixed with calcium hydroxide and set into blocks or noodles (shirataki). Almost pure glucomannan fiber, essentially calorie-free, with a unique chewy-bouncy texture that absorbs the flavors of its braising liquid. The structural firm-textured element of Japanese oden, nimono, tonjiru, and many vegetarian preparations.",
+    "tags": [
+      "pantry",
+      "japanese",
+      "asian"
+    ],
+    "status": "complete",
+    "_slug": "konnyaku",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/napa-cabbage.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Napa cabbage (Chinese cabbage, wombok)",
+    "desc": "Long oblong head of pale-green tender leaves on broad white ribs. Brassica rapa subsp. pekinensis, sweeter and more delicate than the round European head cabbage, with a high water content that wilts dramatically in heat. The cabbage of Korean kimchi, Chinese hot pot, lion's head braises, and the dumpling-filling base across northern Chinese cooking.",
+    "tags": [
+      "vegetable",
+      "brassica",
+      "asian"
+    ],
+    "status": "complete",
+    "_slug": "napa-cabbage",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/panko.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Panko",
+    "desc": "Japanese-style breadcrumbs made from a crustless white bread dried into airy, jagged flakes rather than ground into uniform sand. The shape is the entire point: the flakes catch and hold oil along their facets, producing a fried crust that reads dramatically crispier and lighter than European-style breadcrumbs.",
+    "tags": [
+      "pantry",
+      "japanese"
+    ],
+    "status": "complete",
+    "_slug": "panko",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/pork-belly.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Pork belly",
+    "desc": "The fatty cut from the underside of the pig, between the ribs and the back leg. Alternating layers of fat and lean meat that render slowly under low heat to silken texture, crisp dramatically under high heat. The structural cut of Chinese hong shao rou, Korean samgyeopsal, Japanese chashu and kakuni, American bacon, Filipino lechon kawali, and many of the most respected pork preparations in global cooking.",
+    "tags": [
+      "pork",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "pork-belly",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": "pork",
+      "usedInCount": 2,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/toasted-rice-powder.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Toasted rice powder (khao khua, thinh)",
+    "desc": "Raw glutinous (sticky) rice toasted in a dry pan to a deep amber color, then ground to a coarse powder. The signature flavor and textural element of Lao laab, Thai larb, and northeastern Thai-Lao salads, providing a toasted, nutty, slightly bitter character and a faintly sandy mouthfeel that thickens dressings and grips the meat. The same ingredient appears in Vietnamese cooking as thinh (a finer grind, used in nem chua and bì).",
+    "tags": [
+      "pantry",
+      "thai",
+      "lao",
+      "vietnamese"
+    ],
+    "status": "complete",
+    "_slug": "toasted-rice-powder",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": null,
+      "usedInCount": 0,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/water-chestnut.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Water chestnut",
+    "desc": "Corm of Eleocharis dulcis, an aquatic sedge cultivated in flooded paddies across southern China and Southeast Asia. A crisp, pale, faintly sweet vegetable that holds its snap through cooking by virtue of a heat-stable cell wall structure unique to the genus. The textural element in lion's head meatballs, Cantonese dumpling fillings, and many southern Chinese stir-fries.",
+    "tags": [
+      "vegetable",
+      "asian"
+    ],
+    "status": "complete",
+    "_slug": "water-chestnut",
+    "updated": "2026-05-15",
+    "added": "2026-05-16",
+    "_card": {
+      "primaryTag": "vegetable",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/air-fried-okra-with-four-flavor-finishes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Air-fried okra with four flavor finishes",
+    "desc": "Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 400°F to a blistered, crackly-edged exterior with a tender interior, the high dry heat and the starch coat solve the mucilage problem that makes okra hard to cook well, producing pods that read crispy-charred rather than slimy. The same base technique then takes four finishes: South Asian chaat-masala-and-lime for a tangy-spiced bhindi-style snack, Korean-American gochujang-honey for sweet-spicy-glossed wings-adjacent, Cajun-Creole blackened seasoning with hot honey for Louisiana barfood, and Italian lemon-parmesan with anchovy crumbs for the unexpected Mediterranean direction. The recipe is the base air-fry method plus the four finishes as modifications; pick any one (or split a batch and finish two ways for a snack spread).",
+    "tags": [
+      "vegetable",
+      "snack",
+      "side",
+      "air-fryer",
+      "umami",
+      "quick"
+    ],
+    "status": "complete",
+    "_slug": "air-fried-okra-with-four-flavor-finishes",
+    "cuisine": "",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 8,
+      "cook_min": 16,
+      "total_min": 24,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh okra pods, small to medium (5 to 10 cm long, no longer)",
+        "slug": "okra",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil with a high smoke point (refined avocado, rice bran, or grapeseed)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "chaat masala",
+        "slug": "chaat-masala",
+        "optional": true
+      },
+      {
+        "item": "lime juice, freshly squeezed",
+        "slug": "lime",
+        "optional": true
+      },
+      {
+        "item": "cilantro leaves, hand-torn",
+        "slug": "cilantro",
+        "optional": true
+      },
+      {
+        "item": "gochujang (Korean fermented chili paste)",
+        "slug": "gochujang",
+        "optional": true
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": true
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": true
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": true
+      },
+      {
+        "item": "garlic, finely grated on a microplane",
+        "slug": "garlic",
+        "optional": true
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": true
+      },
+      {
+        "item": "scallions, thinly sliced on the bias",
+        "slug": "scallion",
+        "optional": true
+      },
+      {
+        "item": "smoked paprika",
+        "slug": "smoked-paprika",
+        "optional": true
+      },
+      {
+        "item": "garlic powder",
+        "optional": true
+      },
+      {
+        "item": "onion powder",
+        "optional": true
+      },
+      {
+        "item": "dried oregano",
+        "slug": "dried-oregano",
+        "optional": true
+      },
+      {
+        "item": "cayenne pepper",
+        "optional": true
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": true
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": true
+      },
+      {
+        "item": "panko",
+        "slug": "panko",
+        "optional": true
+      },
+      {
+        "item": "anchovy fillets in oil, drained and minced",
+        "slug": "anchovy-fillets",
+        "optional": true
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": true
+      },
+      {
+        "item": "garlic clove, smashed and skin removed",
+        "slug": "garlic",
+        "optional": true
+      },
+      {
+        "item": "parmigiano reggiano, finely grated on a microplane",
+        "slug": "parmigiano-reggiano",
+        "optional": true
+      },
+      {
+        "item": "lemon zest, finely grated on a microplane",
+        "slug": "lemon",
+        "optional": true
+      },
+      {
+        "item": "lemon juice, freshly squeezed",
+        "slug": "lemon",
+        "optional": true
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": true
+      },
+      {
+        "item": "parsley, finely chopped",
+        "slug": "parsley",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "starch-coating",
+      "high-heat-dehydration",
+      "pangrattato"
+    ],
+    "equipment": [
+      "air-fryer",
+      "microplane",
+      "small-skillet"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 24,
+      "diffLabel": "easy",
+      "timeLead": "24 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/akadashi-clam-miso-soup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Akadashi clam miso soup (asari no akadashi)",
+    "desc": "Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari clams. The clams release their own succinic-acid umami into the dashi during a brief simmer, producing a soup where three umami nucleotides stack: glutamate from the kombu, inosinate from the katsuobushi, and succinate from the clams. The red miso supplies the dark, fermented, robust character that defines the Nagoya akadashi tradition, and the broth eats fuller, more savory, and more bracing than the everyday white-miso washoku bowl.",
+    "tags": [
+      "japanese",
+      "soup",
+      "umami",
+      "seafood",
+      "quick"
+    ],
+    "status": "complete",
+    "_slug": "akadashi-clam-miso-soup",
+    "cuisine": "Japanese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 35,
+      "cook_min": 15,
+      "total_min": 50,
+      "active_min": 20
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "littleneck or asari clams, live in the shell",
+        "slug": "littleneck-clams",
+        "optional": false
+      },
+      {
+        "item": "cold water for purging",
+        "optional": false
+      },
+      {
+        "item": "kosher salt for purging",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "cold water for the dashi",
+        "optional": false
+      },
+      {
+        "item": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "optional": false
+      },
+      {
+        "item": "red miso (hatcho or aka miso)",
+        "slug": "red-miso",
+        "optional": false
+      },
+      {
+        "item": "mitsuba leaves (Japanese parsley), or scallion greens",
+        "optional": true
+      },
+      {
+        "item": "sansho pepper (Japanese mountain pepper), freshly ground",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "clam-purging",
+      "dashi",
+      "shellfish-extraction"
+    ],
+    "equipment": [
+      "fine-mesh-sieve",
+      "cheesecloth",
+      "wide-bowl-or-container"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/carbonara.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Carbonara",
+    "desc": "The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta water, finished with aggressive black pepper. Structurally a raw-egg emulsion built off-heat at the moment of plating: the residual heat of the pasta and the rendered fat cooks the eggs to a glossy creamy sauce without scrambling them. No cream, no garlic, no peas, no parsley; the four canonical ingredients (eggs, pecorino, guanciale, black pepper) plus the structural starchy pasta water are the entire dish. One of the most precise egg techniques in any cuisine and one of the most consistently misunderstood dishes outside Rome.",
+    "tags": [
+      "italian",
+      "pasta",
+      "egg",
+      "umami",
+      "weeknight",
+      "sunday-sauce",
+      "pork"
+    ],
+    "status": "complete",
+    "_slug": "carbonara",
+    "cuisine": "Italian (Roman)",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 20,
+      "active_min": 18
+    },
+    "updated": "2026-05-15",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "guanciale (or pancetta as a substitute)",
+        "slug": "pancetta",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the pasta water)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water (for the pasta)",
+        "optional": false
+      },
+      {
+        "item": "large eggs (whole)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "large egg yolks (additional)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "pecorino romano DOP, aged 8 to 12 months",
+        "slug": "pecorino-romano",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked coarse",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "spaghetti or rigatoni (bronze-die-extruded preferred)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "cold-pan-render",
+      "off-heat-egg-emulsion",
+      "pan-emulsion"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "wide-heatproof-bowl",
+      "tongs"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 20,
+      "diffLabel": "medium",
+      "timeLead": "20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/chimichurri.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chimichurri",
+    "desc": "The Argentine raw herb-vinegar sauce that finishes grilled meat, fish, vegetables, eggs, and bread. Coarsely chopped (not pulverized) parsley and oregano, garlic, red wine vinegar, and a generous bath of olive oil, balanced with chili flake and salt; the sauce sits 30 minutes to let the vinegar pull pigment and flavor from the herbs before serving. Pourable, brick-acidic, and structurally raw.",
+    "tags": [
+      "sauce",
+      "argentine",
+      "fresh-herbs",
+      "no-cook",
+      "pantry",
+      "make-ahead",
+      "quick",
+      "vegan"
+    ],
+    "status": "complete",
+    "_slug": "chimichurri",
+    "cuisine": "Argentine",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 40,
+      "active_min": 10
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "flat-leaf parsley, leaves and tender stems",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "fresh oregano leaves",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes (or ají molido if available)",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "knife-chop-not-processor"
+    ],
+    "equipment": [
+      "chef-knife",
+      "cutting-board"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 40,
+      "diffLabel": "easy",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/chinese-lions-head-meatballs.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chinese lion's head meatballs (shīzi tóu)",
+    "desc": "Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion of water and finely diced water chestnut produces a tender, juicy meatball that sits among a bed of napa cabbage and braises in a clear soy-and-rice-wine broth for an hour. The dish is named for the appearance of the meatballs nestled in the cabbage, the round meatball is the lion's head, the wilted napa around it is the mane. The technique is structurally different from Italian or Thai meatballs: more water is bound into the meat by extended hand-paddling that extracts myosin, the meatballs are barely seared (just enough to set the surface) before going into the braise, and the long slow cook produces a texture closer to silky tofu than to the dense, springy meatballs of other traditions.",
+    "tags": [
+      "chinese",
+      "huaiyang",
+      "jiangsu",
+      "pork",
+      "braised",
+      "umami",
+      "banquet"
+    ],
+    "status": "complete",
+    "_slug": "chinese-lions-head-meatballs",
+    "cuisine": "Chinese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 80,
+      "total_min": 105,
+      "active_min": 35
+    },
+    "updated": "2026-05-15",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "ground pork (75/25 shoulder)",
+        "slug": "ground-pork",
+        "optional": false
+      },
+      {
+        "item": "pork belly, skin removed, fine-diced",
+        "slug": "pork-belly",
+        "optional": false
+      },
+      {
+        "item": "water chestnuts, peeled and finely diced",
+        "slug": "water-chestnut",
+        "optional": false
+      },
+      {
+        "item": "ginger, finely grated on a microplane",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallions, white-and-pale-green parts only, finely minced",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "white pepper, freshly ground",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "large egg white",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water (for paddling into the meat)",
+        "optional": false
+      },
+      {
+        "item": "napa cabbage",
+        "slug": "napa-cabbage",
+        "optional": false
+      },
+      {
+        "item": "ginger, sliced into 3 mm coins",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallions, white parts smashed lightly with the flat of a knife",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "neutral oil for searing",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "chicken or pork stock (homemade or unsalted store-bought)",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "rock sugar (or granulated sugar)",
+        "slug": "rock-sugar",
+        "optional": false
+      },
+      {
+        "item": "scallion greens, thinly sliced on the bias",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil (optional, for a few drops on the surface of the bowl)",
+        "slug": "toasted-sesame-oil",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "myosin-extraction",
+      "water-paddling",
+      "maillard-sear",
+      "braising"
+    ],
+    "equipment": [
+      "wide-heavy-pot-or-dutch-oven",
+      "wide-skillet-or-wok",
+      "microplane",
+      "wide-spatula"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 105,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "+ 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/gochujang-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Gochujang sauce",
+    "desc": "The Korean condiment-grade sauce built from gochujang: fermented chili paste thinned with rice vinegar, soy sauce, toasted sesame oil, garlic, ginger, honey, and water into a pourable-thick sauce that travels across Korean and broader contemporary cookery. Sweet-salty-fermented-spicy in equal balance, with the deep koji-fermented depth of the gochujang base. The structural finishing sauce for Korean BBQ, bibimbap, fried chicken, dumplings, rice and grain bowls, noodles, roasted vegetables, eggs, tofu, and as a brilliant cross-cuisine glaze for grilled meat and roasted vegetables.",
+    "tags": [
+      "sauce",
+      "dip",
+      "korean",
+      "spicy",
+      "fermentation",
+      "pantry",
+      "quick",
+      "umami",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "gochujang-sauce",
+    "cuisine": "Korean",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "gochujang (Korean fermented red chili paste)",
+        "slug": "gochujang",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "soy sauce (Korean ganjang or Japanese shoyu)",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, peeled",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "honey (or rice syrup, jocheong, the Korean canonical sweetener)",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      },
+      {
+        "item": "toasted white sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "mixing-bowl",
+      "whisk",
+      "microplane"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 5,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
+    "path": "pages/recipes/greens-and-ricotta-frittata.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Greens and ricotta frittata",
+    "desc": "The Italian open-faced baked omelet: wilted greens (lacinato kale, chard, spinach, or a mix) folded into beaten eggs with whole-milk ricotta, parmigiano, lemon zest, and aggressive black pepper, started in an oven-safe skillet on the stove and finished in the oven until just set with a custardy center. Structurally distinct from a frittata that is fully cooked on the stove (which produces a denser drier texture); the oven-finished version sets evenly across the depth and produces the canonical jiggly center. Eaten warm or at room temperature, sliced into wedges or squares; the structural Italian make-ahead egg dish and one of the great flexible weeknight dinners.",
+    "tags": [
+      "italian",
+      "mediterranean",
+      "egg",
+      "vegetable",
+      "make-ahead",
+      "weeknight",
+      "brassica",
+      "dairy"
+    ],
+    "status": "complete",
+    "_slug": "greens-and-ricotta-frittata",
+    "cuisine": "Italian",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 12,
+      "cook_min": 22,
+      "total_min": 34,
+      "active_min": 18
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "lacinato kale (or rainbow chard, or a mix of spinach and chard)",
+        "slug": "lacinato-kale",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the greens)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "whole-milk ricotta (drained 30 minutes in a fine-mesh sieve if watery)",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano (aged 24 months or more)",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "lemon zest (from 1 lemon)",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the eggs)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt (Maldon or similar)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "greens-wilt-and-dry",
+      "stove-set-then-oven"
+    ],
+    "equipment": [
+      "oven-safe-heavy-skillet",
+      "thermometer (optional)"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 34,
+      "diffLabel": "easy",
+      "timeLead": "34 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/gyeran-jjim.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Gyeran-jjim",
+    "desc": "The Korean steamed savory egg custard: beaten eggs whisked with anchovy-and-kombu stock (or chicken stock), salt, scallion, and a small amount of sesame oil, then cooked gently in a clay pot or a heavy bowl over low heat until set into a soft trembling custard. The structural Korean banchan (side dish) that pairs with rice, soup, and grilled meat at every Korean table. Sometimes called a Korean chawanmushi cousin, though the architecture is meaningfully different: gyeran-jjim is denser, more egg-forward, and structurally always served in the cooking vessel rather than portioned.",
+    "tags": [
+      "sauce",
+      "korean",
+      "egg",
+      "side",
+      "quick",
+      "umami",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "gyeran-jjim",
+    "cuisine": "Korean",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 15,
+      "total_min": 25,
+      "active_min": 15
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "dried anchovies (myeolchi, Korean dried anchovies, large)",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "Korean fish sauce (or Japanese soy sauce, or Korean ganjang)",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "scallion",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "toasted white sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "kombu-anchovy-stock",
+      "gentle-egg-set"
+    ],
+    "equipment": [
+      "ttukbaegi (Korean clay pot) or heavy ceramic bowl",
+      "fine-mesh sieve",
+      "thermometer (optional)"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/harissa.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Harissa",
+    "desc": "The Tunisian fermented and roasted chili paste: dried red chilies (a mix of mild and hot), roasted red pepper, garlic, caraway, coriander, cumin, smoked paprika, salt, olive oil. Pounded to a thick rust-red paste that reads hot, smoky, citrusy from the caraway, and structurally pantry-deep. The canonical North African condiment for stews, grilled meats, eggs, sandwiches, marinades, roasted vegetables, and as a flavor base for soups and broths.",
+    "tags": [
+      "sauce",
+      "mediterranean",
+      "spicy",
+      "pantry",
+      "make-ahead",
+      "umami",
+      "spice"
+    ],
+    "status": "complete",
+    "_slug": "harissa",
+    "cuisine": "Tunisian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 10,
+      "total_min": 60,
+      "active_min": 25
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried red chilies (a mix: 70 percent mild like guajillo or ancho, 30 percent hot like chile de árbol or Calabrian)",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "red bell pepper",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "caraway seeds",
+        "optional": false
+      },
+      {
+        "item": "coriander seeds",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika (pimentón de la Vera, dulce)",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (for the paste body)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (for the surface seal during storage)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "pepper-charring",
+      "spice-toasting"
+    ],
+    "equipment": [
+      "food-processor",
+      "spice-grinder",
+      "skillet"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/huevos-rancheros.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Huevos rancheros",
+    "desc": "The Mexican farmhouse breakfast: fried eggs atop lightly toasted corn tortillas, blanketed in a charred-tomato salsa ranchera with onion, garlic, and chile de árbol, served over a base of soupy refried black beans and topped with crumbled queso fresco, sliced avocado, and a fistful of cilantro. Structurally a layered breakfast plate where each element is built separately and assembled at the moment of service; the canonical Mexican breakfast dish and one of the most successful exports of central Mexican home cookery.",
+    "tags": [
+      "mexican",
+      "egg",
+      "breakfast",
+      "one-pot",
+      "legume",
+      "spicy",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "huevos-rancheros",
+    "cuisine": "Mexican",
+    "course": "breakfast",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 25,
+      "total_min": 40,
+      "active_min": 30
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "ripe tomatoes (Roma or other meaty tomato)",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "white onion",
+        "slug": "white-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "dried chile de árbol (or chipotle in adobo)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for the salsa)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "cooked black beans (with some cooking liquid, or canned with liquid)",
+        "slug": "black-beans",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (or lard, manteca, for the canonical version)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the beans)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "corn tortillas (fresh, ideally from a tortillería)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for frying the tortillas and the eggs)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "queso fresco (or queso ranchero, or cotija)",
+        "slug": "queso-fresco",
+        "optional": false
+      },
+      {
+        "item": "ripe avocado",
+        "slug": "avocado",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "lime, cut into wedges",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tomato-and-chili-char",
+      "salsa-fry",
+      "refried-beans",
+      "sunny-side-baste-fry"
+    ],
+    "equipment": [
+      "blender or molcajete",
+      "small-saucepan",
+      "small-skillet"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 40,
+      "diffLabel": "easy",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/italian-american-pork-meatballs-in-tomato.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Italian-American pork meatballs in tomato",
+    "desc": "The Sunday-sauce meatball of the Italian-American canon, scaled down to a weeknight portion: ground pork (or a pork-and-beef blend) bound with a panko-and-milk panade, microplaned parmigiano, finely grated onion and garlic, fresh parsley, oregano, fennel pollen, and an egg yolk. The meatballs are seared in a hot pan to build a Maillard crust, then finished by simmering for 30 minutes in a tomato sauce built on San Marzano canned tomatoes, blistered garlic, and a glug of olive oil, the sauce reduces around the meatballs and the meatballs release their fat and juices into the sauce, producing the integrated meat-and-tomato eating experience that is the entire point of the dish.",
+    "tags": [
+      "italian",
+      "italian-american",
+      "pork",
+      "pasta",
+      "umami",
+      "sunday-sauce"
+    ],
+    "status": "complete",
+    "_slug": "italian-american-pork-meatballs-in-tomato",
+    "cuisine": "Italian-American",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 50,
+      "total_min": 65,
+      "active_min": 30
+    },
+    "last_made": "2026-05-12",
+    "updated": "2026-05-15",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "panko",
+        "slug": "panko",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "ground pork (75/25 shoulder, the supermarket default)",
+        "slug": "ground-pork",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano, finely grated on a microplane",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, finely grated on a box grater",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely grated on a microplane",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, finely chopped",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "dried oregano",
+        "slug": "dried-oregano",
+        "optional": false
+      },
+      {
+        "item": "fennel pollen (or ground fennel seed)",
+        "slug": "fennel-seed",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": true
+      },
+      {
+        "item": "large egg yolk",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "canned San Marzano tomatoes (whole peeled, in their juice)",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, sliced thin (not crushed)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh basil sprigs, with stems",
+        "slug": "basil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": true
+      },
+      {
+        "item": "fresh basil leaves, torn",
+        "slug": "basil",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano, for grating at the table",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for drizzling",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "panade",
+      "myosin-extraction",
+      "maillard-sear",
+      "fond-deglaze"
+    ],
+    "equipment": [
+      "microplane",
+      "box-grater",
+      "heavy-skillet",
+      "wooden-spoon"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 65,
+      "diffLabel": "medium",
+      "timeLead": "1 h 5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/italian-salsa-verde.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Italian salsa verde",
+    "desc": "The Italian green sauce that finishes bollito misto, grilled and poached fish, roast meats, beans, eggs, and boiled vegetables. Parsley, capers, anchovy, garlic, lemon, and a chunk of bread or hard-boiled yolk for body, all chopped or ground to a coarse paste and mounted with olive oil. Salty, vegetal, and bracing; the sauce that turns plain protein into a meal.",
+    "tags": [
+      "sauce",
+      "italian",
+      "mediterranean",
+      "fresh-herbs",
+      "no-cook",
+      "pantry",
+      "make-ahead",
+      "quick",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "italian-salsa-verde",
+    "cuisine": "Italian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 12,
+      "cook_min": 0,
+      "total_min": 12,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "flat-leaf parsley, leaves and tender stems",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "oil-packed anchovy fillets",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "salt-packed capers, rinsed (or brined capers, drained)",
+        "slug": "capers",
+        "optional": false
+      },
+      {
+        "item": "crustless white bread (Pugliese or country loaf)",
+        "slug": "sourdough-bread",
+        "optional": false
+      },
+      {
+        "item": "white wine vinegar",
+        "slug": "white-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "knife-chop-not-processor"
+    ],
+    "equipment": [
+      "chef-knife",
+      "cutting-board"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 12,
+      "diffLabel": "easy",
+      "timeLead": "12 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/mojo-verde.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Mojo verde",
+    "desc": "The Canarian green herb-pepper-oil sauce: cilantro (or parsley), green bell pepper (or green chili for heat), garlic, cumin, sea salt, sherry vinegar (or white wine vinegar), and olive oil, pounded or processed into a vibrant green pourable sauce. The canonical pairing for papas arrugadas (Canarian wrinkled potatoes) and for grilled fish, chicken, vegetables, bread, and eggs across the Canary Islands and into mainland Spain. Structurally a pepper-thickened green sauce that bridges chimichurri (vinegar-and-herb logic) and salsa verde (paste-and-oil structure) with the singular Canarian cumin signature.",
+    "tags": [
+      "sauce",
+      "spanish",
+      "mediterranean",
+      "fresh-herbs",
+      "no-cook",
+      "pantry",
+      "make-ahead",
+      "quick",
+      "spice"
+    ],
+    "status": "complete",
+    "_slug": "mojo-verde",
+    "cuisine": "Canarian (Spanish)",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 10,
+      "active_min": 10
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "green bell pepper or Italian frying pepper, mild",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt or kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "sherry vinegar (or white wine vinegar)",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "spice-toasting",
+      "knife-chop-not-processor"
+    ],
+    "equipment": [
+      "food-processor",
+      "spice-grinder",
+      "skillet"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 10,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/nuoc-cham.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc cham",
+    "desc": "The Vietnamese fish-sauce dipping sauce: fish sauce, lime, sugar, water, garlic, chili. Pourable, brick-bright, structurally raw, and the universal dressing-and-dip across the Vietnamese table. The sauce that finishes grilled meat, fresh and fried spring rolls, broken-rice plates, noodle salads, raw vegetable plates, and rice paper rolls. Built in 3 minutes from the Southeast Asian pantry.",
+    "tags": [
+      "sauce",
+      "dip",
+      "vietnamese",
+      "no-cook",
+      "pantry",
+      "quick",
+      "umami",
+      "spicy"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-cham",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fish sauce (Vietnamese, ideally 40N or higher nitrogen content)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or light brown sugar)",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chili (or red Fresno, or a small dried red chili)",
+        "slug": "thai-chili",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "mixing-bowl",
+      "whisk"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 5,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
+    "path": "pages/recipes/peanut-lime-dipping-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Peanut-lime dipping sauce",
+    "desc": "The Southeast Asian peanut-and-coconut dipping sauce in the satay family: roasted peanuts ground to a coarse paste, coconut milk, fish sauce, lime, palm sugar, garlic, ginger, dried chili. Pourable-thick, sweet-salty-sour-spicy-nutty, and the universal partner for grilled meat skewers, raw vegetable platters, fresh and rice-paper rolls, rice noodles, grilled tofu, and rice bowls. The structurally most versatile sauce in the Indonesian-Malaysian-Thai-Vietnamese satay tradition.",
+    "tags": [
+      "sauce",
+      "dip",
+      "thai",
+      "vietnamese",
+      "no-cook",
+      "pantry",
+      "make-ahead",
+      "spicy",
+      "umami",
+      "nuts"
+    ],
+    "status": "complete",
+    "_slug": "peanut-lime-dipping-sauce",
+    "cuisine": "Southeast Asian (satay tradition)",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 5,
+      "total_min": 15,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "roasted unsalted peanuts (or use the homemade dry-roasted version)",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, peeled",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes (or sambal oelek, or a small dried chili soaked and chopped)",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "fish sauce (Vietnamese, ideally 40N or higher)",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or light brown sugar)",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil (optional)",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "aromatic-bloom-in-coconut-milk"
+    ],
+    "equipment": [
+      "food-processor",
+      "small-saucepan"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 15,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/pesto-alla-genovese.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pesto alla genovese",
+    "desc": "The Ligurian basil emulsion: small-leaf Genovese basil pounded with pine nuts, garlic, coarse salt, parmigiano reggiano, and pecorino, mounted with fruity Ligurian olive oil. Structurally a mortar-ground emulsion bound by cheese fat and the basil and nut oils, not a chopped sauce. The canonical finish for trofie and trenette pasta (the canonical pasta al pesto), minestrone alla genovese, gnocchi, fresh tomato platters, grilled fish, eggs, and grilled bread.",
+    "tags": [
+      "sauce",
+      "italian",
+      "mediterranean",
+      "fresh-herbs",
+      "no-cook",
+      "make-ahead",
+      "pantry",
+      "umami",
+      "nuts",
+      "dairy"
+    ],
+    "status": "complete",
+    "_slug": "pesto-alla-genovese",
+    "cuisine": "Italian (Ligurian)",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 15,
+      "active_min": 15
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "pine nuts (Mediterranean if available, otherwise Chinese)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt or kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh basil leaves (small Genovese leaves ideal; large basil works)",
+        "slug": "basil",
+        "optional": false
+      },
+      {
+        "item": "parmigiano reggiano (aged 24 months or more)",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "pecorino sardo (or pecorino romano)",
+        "slug": "pecorino-romano",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (Ligurian Taggiasca ideal)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "mortar-pounding"
+    ],
+    "equipment": [
+      "mortar-and-pestle",
+      "microplane"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 15,
+      "diffLabel": "medium",
+      "timeLead": "15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/romesco.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Romesco",
+    "desc": "The Catalan nut-and-pepper sauce: dried ñora peppers (or roasted red bell pepper as a substitute), almonds and hazelnuts toasted to deep brown, charred tomato, garlic, sherry vinegar, smoked paprika, olive oil, all ground to a coarse rust-red paste. The structural sauce of the Catalan calçotada (grilled spring onion festival) and a brilliantly versatile finish for grilled fish, vegetables, eggs, roast chicken, and bread. Bridges the gap between dip and sauce.",
+    "tags": [
+      "sauce",
+      "dip",
+      "spanish",
+      "mediterranean",
+      "pantry",
+      "make-ahead",
+      "umami",
+      "nuts",
+      "vegan"
+    ],
+    "status": "complete",
+    "_slug": "romesco",
+    "cuisine": "Catalan",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 10,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 15,
+      "total_min": 30,
+      "active_min": 25
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried ñora peppers (or 1 medium roasted red bell pepper as a substitute)",
+        "optional": false
+      },
+      {
+        "item": "raw almonds (Marcona ideal; standard raw almonds work)",
+        "optional": false
+      },
+      {
+        "item": "raw hazelnuts",
+        "slug": "hazelnut",
+        "optional": false
+      },
+      {
+        "item": "ripe tomato",
+        "slug": "tomato",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika (pimentón de la Vera, dulce or picante)",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "sherry vinegar (Pedro Ximénez or aged solera ideal)",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "nut-toasting",
+      "pepper-charring"
+    ],
+    "equipment": [
+      "food-processor",
+      "skillet"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 30,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/salsa-macha.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Salsa macha",
+    "desc": "The Veracruzan fried-chili-and-nut-and-seed oil sauce: dried chiles (a mix of morita, chile de árbol, and ancho or pasilla), garlic, peanuts, sesame seeds, and pepitas, fried briefly in warm neutral oil and ground to a coarse paste, with vinegar, salt, and a small amount of sugar for balance. Structurally an oil-suspended chili paste with crunchy textural ingredients, served as a condiment with everything from tacos and grilled meat to eggs, beans, soups, cheese, and roasted vegetables. The most cuisine-flexible Mexican salsa and the only one that travels naturally across non-Mexican applications.",
+    "tags": [
+      "sauce",
+      "mexican",
+      "spicy",
+      "pantry",
+      "make-ahead",
+      "umami",
+      "nuts",
+      "fat"
+    ],
+    "status": "complete",
+    "_slug": "salsa-macha",
+    "cuisine": "Mexican (Veracruzan)",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 15,
+      "total_min": 25,
+      "active_min": 20
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "neutral oil (grapeseed, sunflower, or canola)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "dried morita chilies (smoked jalapeño)",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "dried chile de árbol (or dried Thai chili)",
+        "optional": false
+      },
+      {
+        "item": "dried ancho chili (or pasilla)",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "raw unsalted peanuts",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "raw pepitas (pumpkin seeds)",
+        "optional": false
+      },
+      {
+        "item": "white sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar (or piloncillo if available)",
+        "slug": "light-brown-sugar",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "fried-chili-oil",
+      "low-temperature-fry"
+    ],
+    "equipment": [
+      "saucepan",
+      "food-processor",
+      "thermometer"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/shakshuka.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Shakshuka",
+    "desc": "The North African and Levantine one-pan dinner: eggs poached directly into a spiced tomato-pepper sauce, cumin and caraway and paprika built into a sofrito of charred bell pepper and onion, finished with crumbled feta and fresh herbs and served in the pan with grilled bread for sopping. Structurally a tomato-poach where the egg whites set into the sauce and the yolks stay liquid until broken at the table. The defining shared dish of Tunisian, Israeli, and broader eastern Mediterranean breakfast and dinner cookery.",
+    "tags": [
+      "italian",
+      "mediterranean",
+      "levantine",
+      "egg",
+      "one-pot",
+      "weeknight",
+      "umami",
+      "spice",
+      "breakfast"
+    ],
+    "status": "complete",
+    "_slug": "shakshuka",
+    "cuisine": "Tunisian (with broader Levantine and Israeli adoption)",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 8,
+      "cook_min": 22,
+      "total_min": 30,
+      "active_min": 18
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "red bell pepper",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "caraway seeds",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika (pimentón de la Vera, dulce)",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "harissa (homemade or quality commercial)",
+        "optional": false
+      },
+      {
+        "item": "whole peeled tomatoes (San Marzano, canned)",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "feta cheese (Greek or Bulgarian, in brine)",
+        "slug": "feta",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro (or flat-leaf parsley)",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "spice-bloom",
+      "covered-poach",
+      "tomato-reduction"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "tight-lid"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/shojin-kenchinjiru-temple-miso-soup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Shōjin kenchinjiru: Zen Buddhist temple vegetable miso soup",
+    "desc": "A shōjin ryōri (Japanese Buddhist temple cuisine) vegetable soup built on kombu-shiitake dashi (no animal product, the canonical Buddhist substitute for kombu-katsuobushi), with root vegetables sesame-oil-toasted before simmering, plus crumbled firm tofu and konnyaku. Originated at Kenchō-ji, the Zen temple in Kamakura founded in 1253, where the soup is said to have been a daily monastery preparation that spread through the Rinzai-school temple network and into broader Japanese cooking. A bowl of profound umami built entirely from vegetables and seaweed, the structural proof that Japanese cuisine does not need animal-based dashi to produce a complete and deeply savory soup.",
+    "tags": [
+      "japanese",
+      "soup",
+      "shojin",
+      "umami",
+      "vegetable",
+      "winter",
+      "vegan"
+    ],
+    "status": "complete",
+    "_slug": "shojin-kenchinjiru-temple-miso-soup",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 30,
+      "total_min": 55,
+      "active_min": 30
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "dried shiitake mushroom (donko grade if available)",
+        "slug": "dried-shiitake",
+        "optional": false
+      },
+      {
+        "item": "cold water for the dashi",
+        "optional": false
+      },
+      {
+        "item": "daikon (Japanese white radish)",
+        "slug": "daikon",
+        "optional": false
+      },
+      {
+        "item": "carrot",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "burdock root (gobō)",
+        "slug": "burdock-root",
+        "optional": false
+      },
+      {
+        "item": "satoimo (Japanese taro) or substitute sweet potato",
+        "slug": "sweet-potato",
+        "optional": false
+      },
+      {
+        "item": "konnyaku (yam cake)",
+        "slug": "konnyaku",
+        "optional": false
+      },
+      {
+        "item": "firm tofu (momen-dōfu)",
+        "slug": "firm-tofu",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "red miso, or awase miso",
+        "slug": "red-miso",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, peeled and finely grated on a microplane",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "shichimi togarashi or sansho pepper (optional, finishing spice)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "cold-soak-dashi",
+      "dashi",
+      "mise-en-place",
+      "sesame-oil-sear",
+      "simmering"
+    ],
+    "equipment": [
+      "heavy-pot-or-donabe",
+      "fine-mesh-sieve",
+      "sharp-knife-for-sasagaki",
+      "microplane"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 55,
+      "diffLabel": "easy",
+      "timeLead": "55 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/slow-soft-scrambled-eggs-with-brown-butter-and-chives.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Slow soft scrambled eggs with brown butter and chives",
+    "desc": "The French slow-curd scramble: eggs whisked off-heat with cold butter, cooked low and slow over a gentle burner with constant stirring, pulled the instant the curds set into a glossy custard, finished with a knob of brown butter and a heavy snowfall of fresh chives. Structurally distinct from American-style fast-scramble (which produces large dry curds at high heat); the slow French technique produces small soft curds that read almost like a savory custard. The defining example of how heat control transforms three plain ingredients (eggs, butter, salt) into a precision dish.",
+    "tags": [
+      "american",
+      "french",
+      "egg",
+      "quick",
+      "breakfast",
+      "weeknight",
+      "dairy"
+    ],
+    "status": "complete",
+    "_slug": "slow-soft-scrambled-eggs-with-brown-butter-and-chives",
+    "cuisine": "French (with broader American adoption)",
+    "course": "breakfast",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 3,
+      "cook_min": 10,
+      "total_min": 13,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter (for the brown butter finish)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter (cold, cut into small cubes)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh chives",
+        "slug": "chives",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt (Maldon or similar)",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "toasted country bread or sourdough (optional, for serving)",
+        "slug": "sourdough-bread",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter",
+      "slow-low-scramble"
+    ],
+    "equipment": [
+      "small-heavy-skillet",
+      "rubber-spatula-or-wooden-spoon"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 13,
+      "diffLabel": "easy",
+      "timeLead": "13 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/tahini-yogurt-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tahini-yogurt sauce",
+    "desc": "The Levantine drizzle: tahini, yogurt, lemon, garlic, salt, water. The structural backbone for roasted vegetables, falafel, kebabs, grain bowls, raw vegetables, and grilled bread, built in a single bowl in 5 minutes. The yogurt softens the tahini bitterness and lightens the body; the lemon and garlic carry it; the water controls the pour. A 5-ingredient sauce that travels across the Levantine, Turkish, Mediterranean, and contemporary Western table.",
+    "tags": [
+      "sauce",
+      "levantine",
+      "mediterranean",
+      "no-cook",
+      "quick",
+      "pantry",
+      "make-ahead",
+      "dairy"
+    ],
+    "status": "complete",
+    "_slug": "tahini-yogurt-sauce",
+    "cuisine": "Levantine",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 5,
+      "active_min": 5
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "tahini (well-stirred, smooth not separated)",
+        "slug": "tahini",
+        "optional": false
+      },
+      {
+        "item": "whole-milk Greek yogurt (or strained whole-milk yogurt)",
+        "slug": "greek-yogurt",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "cold water (or ice water)",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tahini-emulsion-with-water"
+    ],
+    "equipment": [
+      "mixing-bowl",
+      "whisk",
+      "microplane"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 5,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
+    "path": "pages/recipes/tamagoyaki.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tamagoyaki",
+    "desc": "The Japanese rolled omelet: a dashi-and-mirin-seasoned egg mixture poured into a rectangular pan in thin layers, each layer rolled around the previous one to build a structural cylinder of pale yellow stacked sheets. The defining technique of Japanese egg cookery and one of the most structurally precise omelet preparations in any cuisine. The sweet-savory dashi-forward seasoning makes tamagoyaki one of the most adaptable egg preparations: served as bento centerpiece, sushi component (atop nigiri rice or rolled in maki), breakfast course (with rice and miso soup), izakaya snack, or sliced cold as the structural Japanese picnic egg.",
+    "tags": [
+      "japanese",
+      "egg",
+      "breakfast",
+      "quick",
+      "umami",
+      "pantry",
+      "snack"
+    ],
+    "status": "complete",
+    "_slug": "tamagoyaki",
+    "cuisine": "Japanese",
+    "course": "breakfast",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 12,
+      "total_min": 22,
+      "active_min": 18
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "dashi (ichiban or instant)",
+        "optional": false
+      },
+      {
+        "item": "mirin",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "Japanese light soy sauce (usukuchi shoyu)",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (sunflower, grapeseed, or canola)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "daikon, peeled (for grated daikon garnish, optional but canonical)",
+        "slug": "daikon",
+        "optional": false
+      },
+      {
+        "item": "Japanese soy sauce (for the finishing drizzle, optional)",
+        "slug": "light-soy-sauce",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "layer-and-roll",
+      "dashi-egg-mixture"
+    ],
+    "equipment": [
+      "tamagoyaki pan (makiyakinabe)",
+      "chopsticks or long thin spatula",
+      "sushi mat (makisu)"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 22,
+      "diffLabel": "medium",
+      "timeLead": "22 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/thai-pork-larb-meatballs.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Thai pork larb meatballs",
+    "desc": "A meatball reformatting of larb moo, the canonical northeastern Thai (Isan) and Lao minced-pork salad. The classic larb is a loose minced-meat preparation eaten with sticky rice and fresh herbs; here the same flavor system, fish sauce, lime, toasted rice powder, fresh herbs, dried chili, shallot, is rolled into bite-sized meatballs, browned hard in a skillet to maximize the toasted-meat flavor that anchors the dish, then tossed off-heat with the larb dressing and a heap of mint, cilantro, and scallion. The result eats like larb in cocktail-meatball form: high-acid, fish-sauce-forward, fresh-herb-heavy, with the toasted rice powder providing the structural toasted character and a faint sandy texture on the meatball surface.",
+    "tags": [
+      "thai",
+      "lao",
+      "pork",
+      "umami",
+      "fresh-herbs",
+      "spicy",
+      "quick"
+    ],
+    "status": "complete",
+    "_slug": "thai-pork-larb-meatballs",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 15,
+      "total_min": 35,
+      "active_min": 25
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "glutinous rice (sticky rice / sweet rice), raw",
+        "optional": false
+      },
+      {
+        "item": "makrut lime leaves (optional, for perfuming the toasting rice)",
+        "optional": true
+      },
+      {
+        "item": "ground pork (75/25 shoulder)",
+        "slug": "ground-pork",
+        "optional": false
+      },
+      {
+        "item": "shallots, very finely minced",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely grated on a microplane",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "lemongrass, tender inner core only, finely minced",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "white pepper, freshly ground",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (refined avocado, rice bran, or grapeseed)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "lime juice, freshly squeezed",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or light brown sugar)",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "Thai dried red chili flakes (prik bon)",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "shallots, very thinly sliced into rings",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems, roughly chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "sawtooth coriander (culantro / pak chee farang)",
+        "slug": "culantro",
+        "optional": true
+      },
+      {
+        "item": "scallions, thinly sliced on the bias",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted rice powder (from Phase 1, ground)",
+        "optional": false
+      },
+      {
+        "item": "steamed sticky rice",
+        "optional": false
+      },
+      {
+        "item": "raw vegetables for scooping (Napa cabbage leaves, cucumber spears, long beans, lettuce leaves)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "myosin-extraction",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "heavy-skillet",
+      "mortar-and-pestle",
+      "microplane"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 35,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/tonjiru-pork-vegetable-miso-soup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tonjiru (豚汁): pork and root-vegetable miso soup",
+    "desc": "The substantial winter miso soup of the Japanese household, built on a base of dashi (or homemade pork broth) and loaded with sliced pork belly, daikon, carrot, burdock, konnyaku, and shimeji mushrooms. The miso enters at the end, off-heat, as always. A meal-scale soup rather than a side: tonjiru with a bowl of rice and a quick pickle is one of the standard simple winter dinners across Japan, and the dish is also the canonical \"morning after a hard work day\" recovery meal.",
+    "tags": [
+      "japanese",
+      "soup",
+      "pork",
+      "winter",
+      "umami",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "tonjiru-pork-vegetable-miso-soup",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 30,
+      "total_min": 50,
+      "active_min": 30
+    },
+    "updated": "2026-05-15",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "kombu-katsuobushi dashi (ichiban or niban)",
+        "optional": false
+      },
+      {
+        "item": "pork belly, sliced thin (3 mm)",
+        "slug": "pork-belly",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "daikon (Japanese white radish)",
+        "slug": "daikon",
+        "optional": false
+      },
+      {
+        "item": "carrot",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "burdock root (gobō)",
+        "slug": "burdock-root",
+        "optional": false
+      },
+      {
+        "item": "konnyaku (yam cake)",
+        "slug": "konnyaku",
+        "optional": false
+      },
+      {
+        "item": "shimeji mushrooms (or maitake, or shiitake)",
+        "slug": "shimeji-mushroom",
+        "optional": true
+      },
+      {
+        "item": "awase miso (or red and white blend)",
+        "slug": "red-miso",
+        "optional": false
+      },
+      {
+        "item": "scallion, thinly sliced on the bias",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "shichimi togarashi (Japanese seven-spice)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "mise-en-place",
+      "maillard-sear",
+      "simmering"
+    ],
+    "equipment": [
+      "heavy-pot-or-dutch-oven",
+      "fine-mesh-sieve",
+      "sharp-knife-for-sasagaki"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/tortilla-espanola.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tortilla española",
+    "desc": "The Spanish potato-and-onion-and-egg cake: thinly sliced waxy potatoes and onions slow-poached in a generous bath of olive oil until completely tender (not browned), drained, folded into beaten eggs to rest, then set in a smaller skillet with just enough oil and finished with the canonical plate-flip to brown both sides. Texture is structural: the inside should be just-set, almost custardy at the center; a dry tortilla is a failed tortilla. Eaten warm or at room temperature, sliced into wedges; the canonical Spanish tapas anchor and one of the great egg dishes in any cuisine.",
+    "tags": [
+      "sauce",
+      "spanish",
+      "mediterranean",
+      "egg",
+      "make-ahead",
+      "potato",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "tortilla-espanola",
+    "cuisine": "Spanish",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 35,
+      "total_min": 50,
+      "active_min": 35
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "waxy potatoes (Yukon Gold or similar)",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the poach)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the egg)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "olive-oil-poach",
+      "plate-flip"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "smaller-nonstick-skillet",
+      "mandoline",
+      "fine-mesh-sieve"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "medium",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/toum.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Toum",
+    "desc": "The Lebanese whipped garlic emulsion: raw garlic, lemon juice, neutral oil, and salt processed into a brilliant white, fluffy, mayonnaise-like sauce that contains no egg. The garlic mucilage and the gradual cold-stream oil incorporation build a stable emulsion held together by the proteins and polysaccharides in the garlic itself. Aggressively garlic-forward, structurally cousin to aioli without the yolk, and one of the most flexible condiments in the Levantine pantry.",
+    "tags": [
+      "sauce",
+      "dip",
+      "levantine",
+      "mediterranean",
+      "no-cook",
+      "pantry",
+      "make-ahead",
+      "vegan"
+    ],
+    "status": "complete",
+    "_slug": "toum",
+    "cuisine": "Lebanese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 15,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice (first acid)",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (sunflower, grapeseed, or canola), refrigerator-cold",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice (second acid)",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "ice water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "cold-oil-emulsion"
+    ],
+    "equipment": [
+      "food-processor"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 15,
+      "diffLabel": "medium",
+      "timeLead": "15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/tzatziki.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tzatziki",
+    "desc": "The Greek garlic-cucumber-yogurt dip and sauce: thick strained yogurt, salted-and-drained grated cucumber, raw garlic pounded with salt, olive oil, lemon, and fresh dill. Cool, structural, and the universal pairing for grilled lamb and chicken, gyro and souvlaki, kebabs, fried vegetables, raw vegetable platters, and grilled flatbread. Built in 15 minutes with one structural patience step (the cucumber salt-drain).",
+    "tags": [
+      "sauce",
+      "dip",
+      "greek",
+      "mediterranean",
+      "no-cook",
+      "quick",
+      "pantry",
+      "make-ahead",
+      "dairy"
+    ],
+    "status": "complete",
+    "_slug": "tzatziki",
+    "cuisine": "Greek",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 40,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "English cucumber (or 2 small Persian cucumbers)",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for salting the cucumber)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "whole-milk Greek yogurt (full-fat, true strained Greek style)",
+        "slug": "greek-yogurt",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the sauce)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice (or red wine vinegar)",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "fresh dill, leaves only",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "cucumber-salt-drain",
+      "mortar-pounding"
+    ],
+    "equipment": [
+      "box-grater",
+      "sieve",
+      "mortar-and-pestle"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 40,
+      "diffLabel": "easy",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/zhoug.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Zhoug",
+    "desc": "The Yemenite green chili-and-herb sauce: fresh green chilies (serrano or jalapeño), packed-fresh cilantro, parsley, garlic, cardamom, cumin, coriander, salt, lemon, olive oil. Pounded or processed to a coarse vibrant-green paste, structurally raw and aggressively herbal-spicy. Carried by the Yemenite Jewish diaspora into Israel where it has become a canonical Israeli condiment; now structurally embedded in modern Middle Eastern, Mediterranean, and contemporary American cooking. The sauce for eggs, hummus, falafel, grilled meat, soups, sandwiches, fish, rice and grain bowls, and as a brilliant raw counterpoint to slow-cooked or rich dishes.",
+    "tags": [
+      "sauce",
+      "levantine",
+      "mediterranean",
+      "fresh-herbs",
+      "spicy",
+      "no-cook",
+      "pantry",
+      "make-ahead",
+      "spice"
+    ],
+    "status": "complete",
+    "_slug": "zhoug",
+    "cuisine": "Yemenite (Israeli)",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 12,
+      "cook_min": 0,
+      "total_min": 12,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh green chilies (serrano, jalapeño, or a mix)",
+        "slug": "serrano-chili",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, leaves and tender stems",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "coriander seeds",
+        "optional": false
+      },
+      {
+        "item": "whole cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "spice-toasting",
+      "knife-chop-not-processor"
+    ],
+    "equipment": [
+      "food-processor",
+      "spice-grinder",
+      "skillet"
+    ],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 12,
+      "diffLabel": "easy",
+      "timeLead": "12 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
     "path": "pages/ingredients/beet-greens.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -738,7 +4315,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 5,
+      "usedInCount": 7,
       "hasNutrition": false
     }
   },
@@ -759,7 +4336,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 3,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -780,7 +4357,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -822,7 +4399,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 3,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -844,7 +4421,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "legume",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -885,7 +4462,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -929,7 +4506,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -993,7 +4570,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1054,7 +4631,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -1073,7 +4650,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -1116,7 +4693,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -1179,7 +4756,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -1301,7 +4878,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -1322,7 +4899,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1387,7 +4964,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -1513,7 +5090,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1532,7 +5109,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -1574,7 +5151,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -1616,7 +5193,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 12,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -1637,7 +5214,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fruit",
-      "usedInCount": 9,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -1656,7 +5233,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "seafood",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -1780,7 +5357,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -1860,7 +5437,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 10,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -1921,7 +5498,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -1980,7 +5557,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -2001,7 +5578,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 8,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -2185,7 +5762,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -2284,7 +5861,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 4,
+      "usedInCount": 9,
       "hasNutrition": false
     }
   },
@@ -2305,7 +5882,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -2346,7 +5923,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -2367,7 +5944,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 3,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -2387,7 +5964,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -2409,7 +5986,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 1,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -2430,7 +6007,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 6,
+      "usedInCount": 8,
       "hasNutrition": false
     }
   },
@@ -2472,7 +6049,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -2533,7 +6110,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -2555,7 +6132,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 7,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -2616,7 +6193,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -2637,7 +6214,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -2657,7 +6234,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -2740,7 +6317,7 @@
     "added": "2026-05-10",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 4,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -7030,7 +10607,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
@@ -7157,7 +10734,7 @@
     "updated": "2026-05-10",
     "added": "2026-05-10",
     "_card": {
-      "usedInCount": 2
+      "usedInCount": 4
     }
   },
   {
@@ -7400,7 +10977,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 2,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -7461,7 +11038,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -7500,7 +11077,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "chicken",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -7521,7 +11098,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 17,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -7543,7 +11120,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -7565,7 +11142,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 6,
+      "usedInCount": 10,
       "hasNutrition": false
     }
   },
@@ -7633,7 +11210,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 3,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -7674,7 +11251,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 21,
+      "usedInCount": 34,
       "hasNutrition": true
     }
   },
@@ -7695,7 +11272,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "legume",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -7717,7 +11294,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 6,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -7785,7 +11362,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -7829,7 +11406,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -7913,7 +11490,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "grain",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -7956,7 +11533,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "fish",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -7977,7 +11554,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -8081,7 +11658,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "pork",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -8102,7 +11679,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 4,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -8123,7 +11700,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "legume",
-      "usedInCount": 4,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -8188,7 +11765,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -8296,7 +11873,7 @@
     "added": "2026-05-09",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -13466,7 +17043,7 @@
     "updated": "2026-05-09",
     "added": "2026-05-09",
     "_card": {
-      "usedInCount": 3
+      "usedInCount": 5
     }
   },
   {
@@ -14915,7 +18492,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 31,
+      "usedInCount": 36,
       "hasNutrition": true
     }
   },
@@ -14954,7 +18531,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 22,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -15052,7 +18629,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "egg",
-      "usedInCount": 22,
+      "usedInCount": 33,
       "hasNutrition": true
     }
   },
@@ -15090,7 +18667,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 41,
+      "usedInCount": 61,
       "hasNutrition": true
     }
   },
@@ -15107,7 +18684,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -15128,7 +18705,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 26,
+      "usedInCount": 30,
       "hasNutrition": true
     }
   },
@@ -15149,7 +18726,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -15170,7 +18747,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -15191,7 +18768,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "acid",
-      "usedInCount": 8,
+      "usedInCount": 10,
       "hasNutrition": false
     }
   },
@@ -15230,7 +18807,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 28,
+      "usedInCount": 33,
       "hasNutrition": true
     }
   },
@@ -15270,7 +18847,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 13,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -15291,7 +18868,7 @@
     "added": "2026-04-29",
     "_card": {
       "primaryTag": "vegetable",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -15412,7 +18989,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "spice",
-      "usedInCount": 9,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -15431,7 +19008,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "dairy",
-      "usedInCount": 13,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -15663,7 +19240,7 @@
     "added": "2026-04-27",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -16187,7 +19764,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 27
+      "usedInCount": 28
     }
   },
   {
@@ -16204,7 +19781,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 8
+      "usedInCount": 10
     }
   },
   {
@@ -16221,7 +19798,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
@@ -16686,7 +20263,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 31,
+      "usedInCount": 48,
       "hasNutrition": true
     }
   },
@@ -16706,7 +20283,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "aromatic",
-      "usedInCount": 27,
+      "usedInCount": 31,
       "hasNutrition": true
     }
   },
@@ -16723,7 +20300,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 30,
+      "usedInCount": 33,
       "hasNutrition": true
     }
   },
@@ -16760,7 +20337,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 52,
+      "usedInCount": 60,
       "hasNutrition": true
     }
   },
@@ -16779,7 +20356,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -16841,7 +20418,7 @@
     "added": "2026-04-26",
     "_card": {
       "primaryTag": "fat",
-      "usedInCount": 18,
+      "usedInCount": 25,
       "hasNutrition": true
     }
   },
@@ -18482,7 +22059,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 4
+      "usedInCount": 5
     }
   },
   {
@@ -18579,7 +22156,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 18
+      "usedInCount": 22
     }
   },
   {
@@ -18597,7 +22174,7 @@
     "updated": "2026-04-26",
     "added": "2026-04-26",
     "_card": {
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
@@ -18650,6 +22227,323 @@
     "added": "2026-04-26",
     "_card": {
       "usedInCount": 0
+    }
+  },
+  {
+    "path": "pages/recipes/homemade-ketchup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade ketchup",
+    "desc": "A concentrated tomato-based ketchup built from double-concentrated tomato paste, brown sugar, apple cider vinegar, warm spices (clove, allspice, cinnamon, ginger), and a touch of mustard powder; cooked down into a thick glossy sauce that reads dramatically cleaner and more complex than industrial supermarket ketchup dominated by high-fructose corn syrup. The structural backbone of yōshoku Japanese omurice, the canonical American burger-and-fry condiment, and a useful general-purpose tomato sauce wherever sweet-tart tomato is needed. Stub.",
+    "tags": [
+      "sauce",
+      "pantry",
+      "make-ahead",
+      "umami",
+      "american"
+    ],
+    "status": "stub",
+    "_slug": "homemade-ketchup",
+    "cuisine": "American (with broader Western and Japanese yōshoku adoption)",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 40,
+      "total_min": 50,
+      "active_min": 20
+    },
+    "updated": "2026-05-16",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "double-concentrated tomato paste (good-quality Italian or American brand, in a tube or small can)",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "whole allspice berries",
+        "optional": false
+      },
+      {
+        "item": "whole cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "ground ginger",
+        "optional": false
+      },
+      {
+        "item": "ground yellow mustard",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/ichiban-dashi.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ichiban dashi (first-extraction Japanese dashi)",
+    "desc": "The first extraction of kombu and katsuobushi: cold-soak the kombu, lift just before boiling, briefly steep the bonito flakes, strain. The structural broth that underlies most of Japanese cooking, made in 20 minutes from two ingredients. Stub.",
+    "tags": [
+      "japanese",
+      "sauce",
+      "pantry",
+      "umami"
+    ],
+    "status": "stub",
+    "_slug": "ichiban-dashi",
+    "cuisine": "Japanese",
+    "course": "stock",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 2,
+      "cook_min": 18,
+      "total_min": 20,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 20,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/kombu-shiitake-vegetarian-dashi.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Kombu-shiitake vegetarian dashi (shōjin dashi)",
+    "desc": "The canonical Buddhist temple cuisine dashi: kombu and dried shiitake mushroom cold-soaked overnight, briefly warmed before straining. The structural broth of shōjin ryōri, with glutamate from the kombu and guanylate from the shiitake producing umami synergy comparable to (but distinct from) the kombu-katsuobushi ichiban dashi. Stub.",
+    "tags": [
+      "japanese",
+      "shojin",
+      "vegan",
+      "sauce",
+      "umami",
+      "pantry"
+    ],
+    "status": "stub",
+    "_slug": "kombu-shiitake-vegetarian-dashi",
+    "cuisine": "Japanese",
+    "course": "stock",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 10,
+      "total_min": 495,
+      "active_min": 12
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "dried shiitake mushroom (donko grade if available)",
+        "slug": "dried-shiitake",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 495,
+      "diffLabel": "easy",
+      "timeLead": "12 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/panko.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Homemade panko",
+    "desc": "Crustless white pullman bread oven-dried at low temperature, then pulsed in a food processor to the characteristic jagged flake shape that produces panko's signature crispy-fried texture. Stub.",
+    "tags": [
+      "pantry",
+      "make-ahead",
+      "japanese"
+    ],
+    "status": "stub",
+    "_slug": "panko",
+    "cuisine": "Japanese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 90,
+      "total_min": 100,
+      "active_min": 15
+    },
+    "updated": "2026-05-15",
+    "ingredients": [
+      {
+        "item": "crustless white pullman bread (one full loaf)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 100,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "+ 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/sticky-rice.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sticky rice (Lao-Thai khao niao)",
+    "desc": "Long-soaked glutinous rice steamed in a bamboo basket over boiling water, the canonical Lao-Thai accompaniment to larb, grilled meats, and most northeastern Thai and Lao meals. Eaten with the fingers, rolled into small balls, used as the scooping utensil. Stub.",
+    "tags": [
+      "rice",
+      "thai",
+      "lao",
+      "side"
+    ],
+    "status": "stub",
+    "_slug": "sticky-rice",
+    "cuisine": "Lao",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 25,
+      "total_min": 510,
+      "active_min": 10
+    },
+    "updated": "2026-05-15",
+    "diet": [
+      "gluten-free",
+      "vegan"
+    ],
+    "ingredients": [
+      {
+        "item": "glutinous rice (sticky rice / sweet rice / Thai sticky rice)",
+        "optional": false
+      },
+      {
+        "item": "cold water for soaking",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 510,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
+      "activeMinutes": 10,
+      "filterMinutes": 10
     }
   },
   {

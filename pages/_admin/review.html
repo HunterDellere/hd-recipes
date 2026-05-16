@@ -34,10 +34,10 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <body>
 <h1>hd · recipes — admin</h1>
 <div class="bar">
-  <div class="stat"><span class="stat-num">405</span><span class="stat-label">Complete</span></div>
+  <div class="stat"><span class="stat-num">447</span><span class="stat-label">Complete</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Draft</span></div>
-  <div class="stat"><span class="stat-num">35</span><span class="stat-label">Stub</span></div>
-  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">405</span><span class="stat-label">missing</span></div>
+  <div class="stat"><span class="stat-num">40</span><span class="stat-label">Stub</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">447</span><span class="stat-label">missing</span></div>
   <div class="stat"><span class="stat-num">8</span><span class="stat-label">No nutrition</span></div>
 </div>
 
@@ -45,7 +45,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 
 <div class="filters">
   <input type="search" id="filter-q" placeholder="Filter title…" />
-  <select id="filter-cat"><option value="">All categories</option><option value="ingredients">ingredients</option><option value="recipes">recipes</option><option value="techniques">techniques</option><option value="safety">safety</option><option value="hubs">hubs</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
+  <select id="filter-cat"><option value="">All categories</option><option value="recipes">recipes</option><option value="ingredients">ingredients</option><option value="techniques">techniques</option><option value="safety">safety</option><option value="hubs">hubs</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
   <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
   <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
 </div>
@@ -53,6 +53,426 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <table id="entries-table">
   <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
   <tbody>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/omurice.html">Omurice</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-16</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/aburaage.html">Aburaage (deep-fried tofu pouches)</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/burdock-root.html">Burdock root (gobō, niúbàng)</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/carrot.html">Carrot</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/cornstarch.html">Cornstarch</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/dried-shiitake.html">Dried shiitake mushroom (donko, hoshi shiitake)</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/ground-pork.html">Ground pork</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/konnyaku.html">Konnyaku (konjac, devil's tongue)</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/napa-cabbage.html">Napa cabbage (Chinese cabbage, wombok)</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/panko.html">Panko</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/pork-belly.html">Pork belly</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/toasted-rice-powder.html">Toasted rice powder (khao khua, thinh)</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/water-chestnut.html">Water chestnut</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/air-fried-okra-with-four-flavor-finishes.html">Air-fried okra with four flavor finishes</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/akadashi-clam-miso-soup.html">Akadashi clam miso soup (asari no akadashi)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/carbonara.html">Carbonara</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/chimichurri.html">Chimichurri</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/chinese-lions-head-meatballs.html">Chinese lion's head meatballs (shīzi tóu)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">6 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/gochujang-sauce.html">Gochujang sauce</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/greens-and-ricotta-frittata.html">Greens and ricotta frittata</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/gyeran-jjim.html">Gyeran-jjim</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/harissa.html">Harissa</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/huevos-rancheros.html">Huevos rancheros</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/italian-american-pork-meatballs-in-tomato.html">Italian-American pork meatballs in tomato</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">5 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/italian-salsa-verde.html">Italian salsa verde</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/mojo-verde.html">Mojo verde</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/nuoc-cham.html">Nuoc cham</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/peanut-lime-dipping-sauce.html">Peanut-lime dipping sauce</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/pesto-alla-genovese.html">Pesto alla genovese</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/romesco.html">Romesco</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/salsa-macha.html">Salsa macha</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/shakshuka.html">Shakshuka</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/shojin-kenchinjiru-temple-miso-soup.html">Shōjin kenchinjiru: Zen Buddhist temple vegetable miso soup</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/slow-soft-scrambled-eggs-with-brown-butter-and-chives.html">Slow soft scrambled eggs with brown butter and chives</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/tahini-yogurt-sauce.html">Tahini-yogurt sauce</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/tamagoyaki.html">Tamagoyaki</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/thai-pork-larb-meatballs.html">Thai pork larb meatballs</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/tonjiru-pork-vegetable-miso-soup.html">Tonjiru (豚汁): pork and root-vegetable miso soup</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/tortilla-espanola.html">Tortilla española</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/toum.html">Toum</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/tzatziki.html">Tzatziki</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/zhoug.html">Zhoug</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
     <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
       <td><a href="../../pages/ingredients/beet-greens.html">Beet greens</a></td>
       <td>ingredients</td>
@@ -4104,6 +4524,56 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td></td>
     </tr>
     <tr data-status="stub" data-review="—" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/homemade-ketchup.html">Homemade ketchup</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-stub">stub</span></td>
+      <td><span class="pill rv-—">—</span></td>
+      <td>2026-05-16</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="stub" data-review="—" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/ichiban-dashi.html">Ichiban dashi (first-extraction Japanese dashi)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-stub">stub</span></td>
+      <td><span class="pill rv-—">—</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="stub" data-review="—" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/kombu-shiitake-vegetarian-dashi.html">Kombu-shiitake vegetarian dashi (shōjin dashi)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-stub">stub</span></td>
+      <td><span class="pill rv-—">—</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="stub" data-review="—" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/panko.html">Homemade panko</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-stub">stub</span></td>
+      <td><span class="pill rv-—">—</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="stub" data-review="—" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/sticky-rice.html">Sticky rice (Lao-Thai khao niao)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-stub">stub</span></td>
+      <td><span class="pill rv-—">—</span></td>
+      <td>2026-05-15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="stub" data-review="—" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/bao-cui-thin-fried-wheat-cracker.html">Bao cui (薄脆, thin fried wheat cracker for jianbing)</a></td>
       <td>recipes</td>
       <td>recipe</td>
@@ -4455,7 +4925,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr></tbody>
 </table>
 
-<p class="gen">Generated 2026-05-14T01:31:03.538Z</p>
+<p class="gen">Generated 2026-05-16T18:44:57.710Z</p>
 
 <script>
 (function () {

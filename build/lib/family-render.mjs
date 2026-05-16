@@ -31,11 +31,29 @@ const ROOT = join(__dirname, '..', '..');
 
 export const FAMILY_MEMBERS = {
   cook:     ['recipes'],
-  pantry:   ['ingredients', 'equipment'],
+  // 'pantry-makes' is a virtual category: recipes whose `course` is sauce / stock /
+  // bread, or whose slug begins with `homemade-`. They live physically in
+  // content/recipes/ (so URLs stay /pages/recipes/<slug>.html) but appear in
+  // the Pantry family rather than Cook. See isPantryMake() below.
+  pantry:   ['ingredients', 'equipment', 'pantry-makes'],
   learn:    ['techniques', 'safety'],
   traverse: ['cuisines', 'hubs'],
   explore:  [],
 };
+
+// Pantry-make courses: components/staples that a cook makes once and uses across
+// many dishes (stock, mustard, chili oil, vinaigrette, bread). These show up
+// under Pantry, not Cook, even though they're stored in content/recipes/.
+const PANTRY_MAKE_COURSES = new Set(['sauce', 'stock', 'bread']);
+
+export function isPantryMake(entry) {
+  if (!entry || entry.category !== 'recipes') return false;
+  if (entry.course && PANTRY_MAKE_COURSES.has(entry.course)) return true;
+  // `homemade-*` slug convention covers recipes without a sauce/stock/bread course
+  // (e.g. homemade-panko-breadcrumbs at course:'side'). Treat them as pantry too.
+  const slug = entry._slug || (entry.path || '').split('/').pop().replace(/\.html$/, '');
+  return /^homemade-/.test(slug);
+}
 
 export const FAMILY_META = {
   explore:  { en: 'Explore',  desc: 'The master entry point. Four families, every category.' },
@@ -318,9 +336,21 @@ export function renderFamilyContent(family, entries, fromPath) {
   const byCategory = new Map();
   for (const e of entries) {
     if (e.status !== 'complete') continue;
-    if (!memberKeys.includes(e.category)) continue;
-    if (!byCategory.has(e.category)) byCategory.set(e.category, []);
-    byCategory.get(e.category).push(e);
+    // Pantry-makes are recipes (category === 'recipes') routed to the virtual
+    // 'pantry-makes' bucket. On Cook we filter them out; on Pantry we add them
+    // under that bucket; on other families they stay under 'recipes' as before.
+    const pantryMake = isPantryMake(e);
+    let bucketKey;
+    if (pantryMake) {
+      if (family === 'cook') continue;          // hide from Cook
+      if (family === 'pantry') bucketKey = 'pantry-makes';
+      else bucketKey = e.category;
+    } else {
+      bucketKey = e.category;
+    }
+    if (!memberKeys.includes(bucketKey)) continue;
+    if (!byCategory.has(bucketKey)) byCategory.set(bucketKey, []);
+    byCategory.get(bucketKey).push(e);
   }
   for (const list of byCategory.values()) list.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en'));
 
@@ -478,9 +508,13 @@ export function renderFamilyContent(family, entries, fromPath) {
     if (prep + cook > 0) return prep + cook;
     return Number(t.total_min) || '';
   };
+  // Every card carries data-title + data-updated so the sort control can
+  // reorder by name or date. Cook also carries the filter facets.
+  const sortAttrs = (e) =>
+    `data-card data-title="${escapeHtml((e.title || '').toLowerCase())}" data-updated="${escapeHtml(e.updated || '')}"`;
   const augment = (e) => family === 'cook'
-    ? `data-card data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${filterTime(e)}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
-    : '';
+    ? `${sortAttrs(e)} data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${filterTime(e)}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
+    : sortAttrs(e);
 
   // Pantry: enable A–Z anchor strip when a category has ≥20 entries.
   // The strip lets users jump to a letter when scrolling becomes painful.
@@ -569,7 +603,23 @@ export function renderFamilyContent(family, entries, fromPath) {
     }
   }
 
-  return `${intro}\n${filterBar}\n${sections}\n${tagsSection}`;
+  // Sort control: every family page gets one. Default = newest, since the
+  // most common reader question is "what's new". The build emits cards in
+  // A–Z order today; the sort init reorders on load to match the dropdown.
+  const sortBar = `
+    <!-- auto-link-skip -->
+    <div class="sort-bar" data-sort-bar>
+      <label class="sort-bar-label" for="sort-select">Sort</label>
+      <select id="sort-select" class="sort-select" data-sort-select>
+        <option value="newest" selected>Newest first</option>
+        <option value="oldest">Oldest first</option>
+        <option value="az">A–Z</option>
+        <option value="za">Z–A</option>
+      </select>
+    </div>
+    <!-- /auto-link-skip -->`;
+
+  return `${intro}\n${filterBar}\n${sortBar}\n<div data-sort-root>${sections}\n${tagsSection}</div>`;
 }
 
 export function renderFamilyCrosslinks(family, fromPath) {
