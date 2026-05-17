@@ -170,6 +170,16 @@ homemade_alternatives:
     recipe_slug: 'recipes/fresh-egg-pasta'
     why: 'Fresh egg dough holds the brown butter differently — silkier mouthfeel, more starch into the sauce.'
 
+# Optional: explicit pairings shown ahead of the auto-generated "Pairs with"
+# cards. Use for dishes whose canonical companions can't be inferred from
+# cuisine + course alone (larb wants sticky rice, pho wants the herb plate,
+# curry wants jasmine rice). Each entry needs a recipe path and a one-sentence
+# reason that explains why this pairing earns its place. The auto-generated
+# list fills out the remaining slots.
+pairings:
+  - recipe: 'recipes/grilled-bread'
+    reason: 'A toasted crumb for the sauce that always pools at the bottom of the bowl.'
+
 notes: |
   The dish lives or dies on emulsion. If you skip the brown butter and pepper bloom, you have boiled pasta with cheese, not cacio e pepe.
 

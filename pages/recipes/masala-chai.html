@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -100,6 +101,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">48</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.2</strong>g protein</span><span class="rh-macro"><strong>12.6</strong>g carbs</span><span class="rh-macro"><strong>0.1</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/indian.html" data-category="cuisines">Indian</a><span class="rh-tag rh-tag-course">drink</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -110,6 +114,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -283,32 +295,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">1</span>
         <div class="step-body">Crush the cracked 6 cardamom pods, 1 <a class="x-link" data-category="ingredients" href="../ingredients/cinnamon-stick.html">cinnamon stick</a> (broken into 2 or 3 pieces), 4 cloves, 3 peppercorns, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> fennel seeds together briefly in a mortar, break them open without grinding to powder. The break exposes the volatile-oil-rich interior; intact spices steep slowly and underdeliver.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 1: Crush the cracked 6 cardamom pods, 1 cinnamon stick (broken into 2 or 3 pieces)," aria-label="Start 1 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">2</span>
         <div class="step-body">Place a small heavy-bottomed saucepan over medium-low heat. Add the cracked spices dry, no oil, and toast for 30 to 45 seconds, swirling the pan, until you smell warm cardamom and cinnamon rising. This pre-toasting blooms the spice oils in dry heat before water dilutes them; the difference in final flavor depth is substantial.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: Place a small heavy-bottomed saucepan over medium-low heat. Add the cracked spic" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
         <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> water and the smashed <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> ginger to the spices. Bring to a hard rolling boil and hold there 4 minutes. This is the spice decoction phase, water at boiling temperature extracts the tough fibers and woody aromatic compounds in cardamom seeds, cinnamon bark, and ginger root. The water will reduce slightly and turn pale amber with a strong gingery-cardamom perfume rising from the pot.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Add the 240 ml / 1 cup water and the smashed 15 g ginger to the spices. Bring to" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Add the 12 g / 2 heaping tbsp CTC tea. Continue boiling hard for 1 minute, short, sharp extraction pulls color and body without dragging out the bitter tannins that a long steep produces. The liquid turns dark mahogany.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Add the 12 g / 2 heaping tbsp CTC tea. Continue boiling hard for 1 minute, short" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">5</span>
-        <div class="step-body">Pour in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="360" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="cups">360 ml / 1½ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a>. Stir once. Bring back to a rolling boil, watch carefully because the milk-tea will rise dramatically as it foams. Just before it threatens to boil over, lift the pot off the heat for 5 seconds, then return it; repeat this lift-and-return motion 3 times over the next 2 minutes. Each lift mixes air into the chai and integrates the milk proteins with the tea; the final color should be a deep, even tan, not patchy. This is the &quot;ubaal&quot; (boil-up) technique that defines proper chai.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Pour in the 360 ml / 1½ cups whole milk. Stir once. Bring back to a rolling boil" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Pour in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="360" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="cups">360 ml / 1½ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="whole milk" data-sub-use="full-fat oat milk" data-sub-note="Best non-dairy option for chai, oat milk has fat and protein closest to whole milk and stands up to boiling. Coconut milk produces a chai-coconut hybrid; almond milk goes thin and grainy." tabindex="0" role="button" aria-label="Substitution available for whole milk"><a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a></span>. Stir once. Bring back to a rolling boil, watch carefully because the milk-tea will rise dramatically as it foams. Just before it threatens to boil over, lift the pot off the heat for 5 seconds, then return it; repeat this lift-and-return motion 3 times over the next 2 minutes. Each lift mixes air into the chai and integrates the milk proteins with the tea; the final color should be a deep, even tan, not patchy. This is the &quot;ubaal&quot; (boil-up) technique that defines proper chai.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Pour in the 360 ml / 1½ cups whole milk. Stir once. Bring back to a rolling boil" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Drop the heat to low. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> sugar; stir until dissolved. Taste from a small spoon, should read aggressively spiced, deeply tea-tannic, and clearly sweet, with the milk binding everything into a creamy body. Adjust sweetness by <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.5" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="tsp">½ tsp</span><!-- /auto-link-skip --> at a time. Strain through a fine sieve directly into preheated cups (rinse cups with hot water first; cold cups drop the temperature of the chai noticeably).<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Drop the heat to low. Add the 20 g / 1½ tbsp sugar; stir until dissolved. Taste " aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -374,6 +386,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kachumber with cumin and lime</span>
           <span class="pair-desc">North Indian chopped raw salad: even fine dice of cucumber, tomato, and red onion, dressed with toas</span>
@@ -383,6 +396,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Rice kheer (chawal ki kheer)</span>
           <span class="pair-desc">Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and </span>
@@ -392,6 +406,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Pav bhaji (Mumbai street vegetable mash)</span>
           <span class="pair-desc">Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghe</span>
@@ -401,6 +416,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Raita (cucumber-mint, the household standard)</span>
           <span class="pair-desc">Plain whole-milk yogurt whisked smooth with grated cucumber, fresh mint, toasted cumin, and a small </span>
@@ -410,6 +426,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Indian</span>
           <span class="pair-desc">Spice as a layered system, not a heat dial. Each spice enters at a specific moment (bloomed in fat, </span>
@@ -419,6 +436,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Cloves (laung, लौंग)</span>
           <span class="pair-desc">Dried unopened flower buds of Syzygium aromaticum, intensely aromatic from eugenol (75 to 85% of the</span>
@@ -428,6 +446,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ras malai (chhena dumplings in saffron-cardamom milk)</span>
           <span class="pair-desc">Fresh chhena (acid-set whole-milk curds, drained and kneaded) shaped into small discs, gently simmer</span>
@@ -437,6 +456,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Shrimp pulao (jhinga pulao)</span>
           <span class="pair-desc">Coastal-Indian basmati pilaf cooked with marinated shrimp, ginger-garlic, whole spices, and a coconu</span>
@@ -521,6 +541,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

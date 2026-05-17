@@ -1004,9 +1004,29 @@
       time: 'Active time', difficulty: 'Difficulty',
     };
 
+    // ── URL sync ───────────────────────────────────────────────────────
+    // Round-trip filter state through the URL so a bookmarked or shared link
+    // restores the same filtered view. Uses replaceState so the back button
+    // doesn't accumulate every filter keystroke.
+    function syncUrl() {
+      try {
+        const qs = new URLSearchParams();
+        if (state.cuisine) qs.set('cuisine', state.cuisine);
+        if (state.course) qs.set('course', state.course);
+        if (state.diet) qs.set('diet', state.diet);
+        if (state.difficulty) qs.set('difficulty', state.difficulty);
+        if (state.time) qs.set('time', state.time);
+        for (const t of state.tags) qs.append('tag', t);
+        const search = qs.toString();
+        const next = location.pathname + (search ? '?' + search : '') + location.hash;
+        history.replaceState(null, '', next);
+      } catch {}
+    }
+
     // ── filtering ──────────────────────────────────────────────────────
     function apply() {
       let visible = 0;
+      const total = cards.length;
       for (const card of cards) {
         const matchCuisine = !state.cuisine || card.dataset.cuisine === state.cuisine;
         const matchCourse = !state.course || card.dataset.course === state.course;
@@ -1021,13 +1041,14 @@
       }
       renderChips();
       renderCounts();
+      syncUrl();
       const totalActive = countActive();
       if (clearBtn) clearBtn.hidden = totalActive === 0;
       if (status) {
         if (totalActive === 0) {
           status.textContent = '';
         } else {
-          status.textContent = `${visible} ${visible === 1 ? 'recipe' : 'recipes'} match`;
+          status.textContent = `Showing ${visible} of ${total} ${total === 1 ? 'recipe' : 'recipes'}`;
         }
       }
     }
@@ -1196,7 +1217,8 @@
       if (single('course')) state.course = single('course');
       if (single('diet')) state.diet = single('diet');
       if (single('difficulty')) state.difficulty = single('difficulty');
-      const mx = single('max_min');
+      // Accept ?time= (canonical, what syncUrl writes) or ?max_min= (legacy alias)
+      const mx = single('time') || single('max_min');
       if (mx && /^\d+$/.test(mx)) state.time = mx;
       qs.getAll('tag').forEach(t => { if (t) state.tags.add(t); });
       // Reflect into UI controls so the user sees the active state, not just the result
@@ -1329,4 +1351,187 @@
     // currently rendered A–Z, so we must run once on load to match.
     applySort(select.value);
   }
+})();
+
+// ── Substitution hints in step prose ──────────────────────────────────
+// Each .sub-hint span carries data-sub-for / data-sub-use / data-sub-note.
+// Hover or focus pops a small tooltip; tap on touch devices toggles it.
+(function () {
+  'use strict';
+  let pop = null;
+  let active = null;
+  let hideTimer = null;
+
+  function ensurePop() {
+    if (pop) return pop;
+    pop = document.createElement('div');
+    pop.className = 'sub-pop';
+    pop.hidden = true;
+    pop.setAttribute('role', 'tooltip');
+    document.body.appendChild(pop);
+    pop.addEventListener('mouseenter', () => { if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; } });
+    pop.addEventListener('mouseleave', hide);
+    return pop;
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function show(el) {
+    const use = el.getAttribute('data-sub-use') || '';
+    const note = el.getAttribute('data-sub-note') || '';
+    if (!use) return;
+    const p = ensurePop();
+    p.innerHTML = '<span class="sub-pop-head">Use <strong>' + escapeHtml(use) + '</strong> instead</span>' + (note ? '<span class="sub-pop-note">' + escapeHtml(note) + '</span>' : '');
+    p.hidden = false;
+    const r = el.getBoundingClientRect();
+    const popW = Math.min(320, window.innerWidth - 16);
+    p.style.maxWidth = popW + 'px';
+    p.style.left = '-9999px';
+    p.style.top = '-9999px';
+    requestAnimationFrame(() => {
+      const ph = p.offsetHeight;
+      const pw = p.offsetWidth;
+      let left = r.left + (r.width / 2) - (pw / 2);
+      let top = r.bottom + 6;
+      if (left < 8) left = 8;
+      if (left + pw > window.innerWidth - 8) left = window.innerWidth - pw - 8;
+      if (top + ph > window.innerHeight - 8) top = r.top - ph - 6;
+      p.style.left = (left + window.scrollX) + 'px';
+      p.style.top  = (top + window.scrollY) + 'px';
+      p.classList.add('is-open');
+    });
+    active = el;
+  }
+
+  function hide() {
+    if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+    if (!pop) return;
+    pop.classList.remove('is-open');
+    hideTimer = setTimeout(() => { if (pop) pop.hidden = true; active = null; }, 140);
+  }
+
+  const isCoarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+
+  document.addEventListener('mouseover', (e) => {
+    if (isCoarse) return;
+    const el = e.target.closest && e.target.closest('.sub-hint');
+    if (!el || el === active) return;
+    if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+    show(el);
+  });
+  document.addEventListener('mouseout', (e) => {
+    if (isCoarse) return;
+    const el = e.target.closest && e.target.closest('.sub-hint');
+    if (!el) return;
+    const into = e.relatedTarget;
+    if (into && (el.contains(into) || (pop && pop.contains(into)))) return;
+    hide();
+  });
+
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest && e.target.closest('.sub-hint');
+    if (el) {
+      e.preventDefault();
+      if (active === el) hide(); else show(el);
+      return;
+    }
+    if (pop && !pop.hidden && !pop.contains(e.target)) hide();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    const el = e.target.closest && e.target.closest('.sub-hint');
+    if (!el) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (active === el) hide(); else show(el);
+    } else if (e.key === 'Escape') {
+      hide();
+    }
+  });
+
+  window.addEventListener('scroll', () => { if (pop && !pop.hidden) hide(); }, { passive: true });
+})();
+
+// ── Hero kcal stat — click/hover to expand macros ─────────────────────
+(function () {
+  'use strict';
+  function toggle(el, force) {
+    const macros = el.querySelector('.rh-macros');
+    if (!macros) return;
+    const open = force != null ? force : macros.hasAttribute('hidden') ? true : false;
+    if (open) {
+      macros.removeAttribute('hidden');
+      el.setAttribute('aria-expanded', 'true');
+      el.classList.add('rh-stat-open');
+    } else {
+      macros.setAttribute('hidden', '');
+      el.setAttribute('aria-expanded', 'false');
+      el.classList.remove('rh-stat-open');
+    }
+  }
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest && e.target.closest('[data-kcal-toggle]');
+    if (!el) return;
+    toggle(el);
+  });
+  document.addEventListener('keydown', (e) => {
+    const el = e.target.closest && e.target.closest('[data-kcal-toggle]');
+    if (!el) return;
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(el); }
+  });
+})();
+
+/* Print button — fires the browser print dialog with the print stylesheet. */
+(function initPrintButton() {
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest && e.target.closest('[data-print]');
+    if (!btn) return;
+    e.preventDefault();
+    window.print();
+  });
+})();
+
+/* Mobile bottom nav — sticky 4-button bar on recipe pages, <768px only.
+ * Buttons delegate to existing hero actions so behavior stays single-source. */
+(function initBottomNav() {
+  if (!document.querySelector('.recipe-ingredients')) return;
+  if (document.querySelector('.bottom-nav')) return;
+  const nav = document.createElement('nav');
+  nav.className = 'bottom-nav';
+  nav.setAttribute('aria-label', 'Recipe actions');
+  nav.innerHTML = `
+    <button type="button" class="bn-btn" data-bn="scale" aria-label="Scale servings">
+      <span class="bn-icon" aria-hidden="true">⚖</span><span class="bn-label">Scale</span>
+    </button>
+    <button type="button" class="bn-btn" data-bn="shop" aria-label="Shopping list">
+      <span class="bn-icon" aria-hidden="true">📋</span><span class="bn-label">Shop</span>
+    </button>
+    <button type="button" class="bn-btn" data-bn="cook" aria-label="Cook's view">
+      <span class="bn-icon" aria-hidden="true">👨‍🍳</span><span class="bn-label">Cook</span>
+    </button>
+    <button type="button" class="bn-btn" data-bn="share" aria-label="Share">
+      <span class="bn-icon" aria-hidden="true">⇪</span><span class="bn-label">Share</span>
+    </button>`;
+  document.body.appendChild(nav);
+  nav.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-bn]');
+    if (!btn) return;
+    const which = btn.getAttribute('data-bn');
+    if (which === 'scale') {
+      const input = document.querySelector('[data-target-servings], .scale-input, input[name="servings"]');
+      if (input) { input.scrollIntoView({ behavior: 'smooth', block: 'center' }); input.focus(); }
+    } else if (which === 'shop') {
+      const t = document.querySelector('[data-shop-export]');
+      if (t) t.click();
+    } else if (which === 'cook') {
+      const t = document.querySelector('[data-cook-toggle]');
+      if (t) t.click();
+    } else if (which === 'share') {
+      const t = document.querySelector('[data-share]');
+      if (t) t.click();
+      else if (navigator.share) navigator.share({ title: document.title, url: location.href }).catch(() => {});
+    }
+  });
 })();

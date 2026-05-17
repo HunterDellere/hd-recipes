@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">16</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.8</strong>g protein</span><span class="rh-macro"><strong>3.4</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Korean</span><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -277,37 +289,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="35">
         <span class="step-num">1</span>
         <div class="step-body">Salt-draw the radish. In a large non-reactive bowl, toss the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="g" data-imp-qty="3.306936630275666" data-imp-unit="lb">1500 g</span><!-- /auto-link-skip --> radish cubes with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> coarse salt and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> sugar. Massage gently for 30 seconds so the salt coats every surface. Let stand at room temperature for 30 to 45 minutes; the radish will release a meaningful pool of liquid (about 150 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip -->) and the cubes will turn translucent at the edges and lose their stiff raw crispness for a more pliable bite. This step is structural; unsalted radish in the kimchi paste will ferment but the cubes will stay starchy-hard and the kimchi will read raw and harsh.<button type="button" class="step-time step-time-btn" data-step-timer="35" data-step-label="Step 1: Salt-draw the radish. In a large non-reactive bowl, toss the 1500 g radish cubes" aria-label="Start 35 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">35 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
         <div class="step-body">Drain the radish. Pour the radish-and-released-liquid into a colander. Do not rinse; the residual surface salt is part of the kimchi salinity calculation. Press the cubes gently against the colander to expel another 50 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> of liquid (you should hear the cubes squeak against each other when properly drained). Return the drained radish to the bowl. The liquid that drained off can be discarded, or saved for cooking rice (it carries radish flavor and a small amount of salt).<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Drain the radish. Pour the radish-and-released-liquid into a colander. Do not ri" aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">3</span>
-        <div class="step-body">Build the chili paste. In a medium bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">50 g / ½ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> gochugaru, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">40 g / 2½ tbsp</span><!-- /auto-link-skip --> fish sauce, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> saeujeot if using, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> microplaned <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.3527399072294044" data-imp-unit="oz">10 g</span><!-- /auto-link-skip --> microplaned ginger. Stir with a wooden spoon or gloved hands; the paste should look like a loose, vivid red sauce. Let stand 10 minutes for the gochugaru to fully hydrate and the paste to thicken slightly into the consistency of loose ketchup.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 3: Build the chili paste. In a medium bowl, combine the 50 g / ½ cup + 1 tbsp gochu" aria-label="Start 12 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
+        <div class="step-body">Build the chili paste. In a medium bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">50 g / ½ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="gochugaru" data-sub-use="a 70/30 blend of Aleppo pepper and Kashmiri chili powder" data-sub-note="See baechu kimchi notes; no single chili fully substitutes gochugaru. The Aleppo-and-Kashmiri blend approximates the color and slow heat. Generic crushed red pepper or cayenne is too sharp." tabindex="0" role="button" aria-label="Substitution available for gochugaru">gochugaru</span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">40 g / 2½ tbsp</span><!-- /auto-link-skip --> fish sauce, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="saeujeot (Korean salted shrimp)" data-sub-use="additional fish sauce, or Filipino bagoong" data-sub-note="An extra 10 g fish sauce covers the umami gap. Bagoong is stronger and slightly different in character; use 8 g and reduce fish sauce by 8 g." tabindex="0" role="button" aria-label="Substitution available for saeujeot">saeujeot</span> if using, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> microplaned <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.3527399072294044" data-imp-unit="oz">10 g</span><!-- /auto-link-skip --> microplaned ginger. Stir with a wooden spoon or gloved hands; the paste should look like a loose, vivid red sauce. Let stand 10 minutes for the gochugaru to fully hydrate and the paste to thicken slightly into the consistency of loose ketchup.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 3: Build the chili paste. In a medium bowl, combine the 50 g / ½ cup + 1 tbsp gochu" aria-label="Start 12 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
         <div class="step-body">Toss the radish with the paste. Wearing nitrile gloves, add the chili paste and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="2.1164394433764264" data-imp-unit="oz">60 g</span><!-- /auto-link-skip --> scallion pieces to the bowl with the drained radish. Toss with hands until every cube is uniformly coated, getting the paste into all the corners. The radish should turn a vivid red and the bowl bottom should pool with a small amount of bright-red brine within 1 to 2 minutes of tossing.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Toss the radish with the paste. Wearing nitrile gloves, add the chili paste and " aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Pack the kkakdugi. Transfer the radish into a clean 2 L glass jar (or two 1 L jars), pressing down firmly with a wooden spoon after every cup or so to eliminate air pockets and bring the brine to the surface. Fill the jar to about 80% capacity; the headspace allows for fermentation expansion. Scrape any remaining paste from the bowl over the top. The brine should cover the top layer of cubes within 30 minutes; if it does not, press the cubes down more aggressively or add a splash (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip -->) of filtered water.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Pack the kkakdugi. Transfer the radish into a clean 2 L glass jar (or two 1 L ja" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
         <div class="step-body">Cap with a loose-fitting lid (a quarter-turn from sealed) or an airlock lid; a fully sealed jar will build CO2 pressure during fermentation and can crack or pop. Place the jar on a small tray to catch any brine that bubbles up during active fermentation. Hold at 18 to 22 °C (room temperature, away from direct sunlight) for 2 to 4 days. Press the radish back down under the brine once daily with a clean spoon.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: Cap with a loose-fitting lid (a quarter-turn from sealed) or an airlock lid; a f" aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Taste starting on day 2. Early kkakdugi reads salty and chili-forward with no sour character; properly fermented kkakdugi reads sour, fizzy, and complex with a clear back-of-throat tang and an audible crunch when bitten. Most home cooks like day 3 for the balance. Transfer to the refrigerator (2 to 4 °C) once the kkakdugi has reached the desired sourness; fermentation slows dramatically but continues to develop complexity over the next 2 to 6 weeks.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Taste starting on day 2. Early kkakdugi reads salty and chili-forward with no so" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -375,6 +387,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Gochujang sauce</span>
           <span class="pair-desc">The Korean condiment-grade sauce built from gochujang: fermented chili paste thinned with rice vineg</span>
@@ -384,6 +397,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Haemul pajeon (Korean seafood and scallion pancake, 해물파전)</span>
           <span class="pair-desc">A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight b</span>
@@ -393,6 +407,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean pajeon dipping sauce (cho-ganjang, 초간장)</span>
           <span class="pair-desc">Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condi</span>
@@ -402,6 +417,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)</span>
           <span class="pair-desc">Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-g</span>
@@ -411,6 +427,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Gochugaru (Korean chili flakes, 고추가루)</span>
           <span class="pair-desc">Sun-dried Korean red chili (Capsicum annuum, taeyangcho cultivar) milled to flakes or fine powder. M</span>
@@ -420,6 +437,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -429,6 +447,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean spicy cucumber salad (oi-muchim, 오이무침)</span>
           <span class="pair-desc">Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, r</span>
@@ -438,6 +457,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -528,6 +548,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -113,10 +113,14 @@ const INDEX_INVARIANTS = [
   { name: 'index.homepage-js',  test: h => /homepage\.js/.test(h) },
 ];
 
+// Top-level personalization shells aren't content-backed and use a
+// minimalist layout (no sidebar, no TOC). Skip them like `_` dirs.
+const STATIC_TOPLEVEL_FILES = new Set(['saved.html', 'settings.html']);
 for (const [file, { html, meta }] of pageInfo) {
   const isIndex = file === join(ROOT, 'index.html');
   const relPath = relative(pagesDir, file);
   if (relPath.startsWith('_')) continue;
+  if (STATIC_TOPLEVEL_FILES.has(relPath)) continue;
   if (isIndex) {
     for (const inv of INDEX_INVARIANTS) if (!inv.test(html)) fail(file, `invariant failed: ${inv.name}`);
     continue;
@@ -177,10 +181,14 @@ for (const f of walkHtml(pagesDir)) {
 for (const slug of contentSlugs) {
   if (!pageSlugs.has(slug)) fail(join(contentDir, slug + '.md'), `orphan content: no pages/${slug}.html`);
 }
+const STATIC_TOPLEVEL_SLUGS = new Set(['saved', 'settings']);
 for (const slug of pageSlugs) {
   if (slug.startsWith('_')) continue;
   // pages/tags/<slug>.html are generated indices, not content-backed
   if (slug.startsWith('tags/')) continue;
+  // Personalization shells (saved.html / settings.html) intentionally have
+  // no markdown source — they render from localStorage.
+  if (STATIC_TOPLEVEL_SLUGS.has(slug)) continue;
   if (!contentSlugs.has(slug)) fail(join(pagesDir, slug + '.html'), `orphan page: no content/${slug}.md`);
 }
 

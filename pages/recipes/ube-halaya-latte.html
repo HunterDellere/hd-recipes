@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">229</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>1.8</strong>g protein</span><span class="rh-macro"><strong>8.3</strong>g carbs</span><span class="rh-macro"><strong>21.7</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Filipino</span><span class="rh-tag rh-tag-course">drink</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -286,37 +298,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">1</span>
         <div class="step-body">Toast <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> desiccated coconut in a small dry stainless skillet over medium-low heat, shaking constantly, until the shreds turn uniform pale golden and smell intensely roasted-nutty, about 90 seconds. Tip immediately onto a cold plate; the pan's carry-over heat will take it from gold to bitter in under 60 seconds.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Toast 3 g / 1½ tsp desiccated coconut in a small dry stainless skillet over medi" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
-        <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> very cold heavy cream and a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.2" data-metric-unit="g" data-imp-qty="0.03333333333333334" data-imp-unit="tsp">0.2 g</span><!-- /auto-link-skip --> pinch <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> in a small bowl that has been chilled in the freezer for 10 minutes. Whisk 45–60 seconds to soft peaks: the cream should hold a peak that slumps over at the tip, not stand up straight. Stiff cream loses the ability to fold halaya in without breaking.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Combine 60 g / ¼ cup very cold heavy cream and a 0.2 g pinch fine sea salt in a " aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> very cold <span class="sub-hint" data-sub-for="heavy cream" data-sub-use="thick top-of-can coconut cream, chilled overnight" data-sub-note="Dairy-free version. Whip the chilled coconut cream the same way; it produces a stable but slightly less fine-textured chiffon. Fold the halaya in at the same ratio." tabindex="0" role="button" aria-label="Substitution available for heavy cream">heavy cream</span> and a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.2" data-metric-unit="g" data-imp-qty="0.03333333333333334" data-imp-unit="tsp">0.2 g</span><!-- /auto-link-skip --> pinch <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> in a small bowl that has been chilled in the freezer for 10 minutes. Whisk 45–60 seconds to soft peaks: the cream should hold a peak that slumps over at the tip, not stand up straight. Stiff cream loses the ability to fold halaya in without breaking.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Combine 60 g / ¼ cup very cold heavy cream and a 0.2 g pinch fine sea salt in a " aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">In a separate small bowl, stir <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="22" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">22 g / 1½ tbsp</span><!-- /auto-link-skip --> ube halaya for 10 seconds with a spoon to loosen (the jam thickens cold and resists folding straight from the jar). Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tablespoons</span><!-- /auto-link-skip --> of the soft-whipped cream into the halaya and stir to lighten; this brings the densities closer so the next fold doesn't deflate the rest of the cream. Then scrape the lightened halaya back into the cream bowl and fold gently with a rubber spatula in 5 to 7 strokes, stopping at streaks rather than full incorporation. The cream should be lavender with darker violet veins. Refrigerate uncovered while you pull the shot.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: In a separate small bowl, stir 22 g / 1½ tbsp ube halaya for 10 seconds with a s" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
-        <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">180 g / ¾ cup</span><!-- /auto-link-skip --> whole milk, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> / scant <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> coconut cream, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">12 g / 1 tbsp</span><!-- /auto-link-skip --> coconut sugar, and a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.3" data-metric-unit="g" data-imp-qty="0.3" data-imp-unit="g">0.3 g</span><!-- /auto-link-skip --> pinch fine sea salt in a small saucepan. Heat over medium-low, whisking constantly, until the sugar fully dissolves and the milk reads 60 to 65 °C / 140 to 150 °F on an instant-read thermometer; steam visibly rises but no bubbles break the surface. Do not boil: above 75 °C the whey proteins denature and form a skin, and the casein begins to scorch on the pan bottom. Pull off the heat.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: Combine 180 g / ¾ cup whole milk, 25 g / scant 2 tbsp coconut cream, 12 g / 1 tb" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">180 g / ¾ cup</span><!-- /auto-link-skip --> whole milk, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> / scant <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="coconut cream" data-sub-use="an extra 25 g whole milk + ½ tsp coconut extract added off-heat" data-sub-note="For the cook without a can of coconut milk on hand. The extract carries the aroma but misses the coconut fat that lubricates the mouthfeel; the drink reads thinner." tabindex="0" role="button" aria-label="Substitution available for coconut cream">coconut cream</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">12 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="coconut sugar" data-sub-use="soft Thai palm sugar (nam tan pip), or light brown sugar at 1:1 by weight" data-sub-note="Palm sugar is the closer match (same family of unrefined palm sugars, slightly more floral). Light brown sugar leans molasses-aggressive but works." tabindex="0" role="button" aria-label="Substitution available for coconut sugar">coconut sugar</span>, and a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.3" data-metric-unit="g" data-imp-qty="0.3" data-imp-unit="g">0.3 g</span><!-- /auto-link-skip --> pinch fine sea salt in a small saucepan. Heat over medium-low, whisking constantly, until the sugar fully dissolves and the milk reads 60 to 65 °C / 140 to 150 °F on an instant-read thermometer; steam visibly rises but no bubbles break the surface. Do not boil: above 75 °C the whey proteins denature and form a skin, and the casein begins to scorch on the pan bottom. Pull off the heat.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: Combine 180 g / ¾ cup whole milk, 25 g / scant 2 tbsp coconut cream, 12 g / 1 tb" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Grind 18 g / 1 modest tablespoon whole <a class="x-link" data-category="ingredients" href="../ingredients/espresso-beans.html">espresso beans</a> to a fine espresso grind (just-finer than table salt, slightly tacky between fingertips). Dose the basket, distribute, and tamp level with ~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="13" data-metric-unit="kg" data-imp-qty="30" data-imp-unit="lb">13 kg / 30 lb</span><!-- /auto-link-skip --> force. Pull the shot into a pre-warmed <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="oz">60 ml / 2 oz</span><!-- /auto-link-skip --> espresso glass, targeting <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="36" data-metric-unit="g" data-imp-qty="1.269863666025856" data-imp-unit="oz">36 g</span><!-- /auto-link-skip --> / about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="34.0194" data-metric-unit="g" data-imp-qty="1.2" data-imp-unit="oz">1.2 oz</span><!-- /auto-link-skip --> of yield in 25 to 30 seconds at 9 bar pressure. The pour should start at second 6 to 8 as <a class="x-link" data-category="ingredients" href="../ingredients/honey.html">honey</a>-thick rope, lighten to <a class="x-link" data-category="ingredients" href="../ingredients/hazelnut.html">hazelnut</a>, and finish before it goes pale and watery. Crema should sit ~3 mm thick.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Grind 18 g / 1 modest tablespoon whole espresso beans to a fine espresso grind (" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Pour the warm coconut-sweetened milk into a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="ml" data-imp-qty="10" data-imp-unit="oz">300 ml / 10 oz</span><!-- /auto-link-skip --> mug, leaving 3 cm of headroom. Slip the spoon under the surface of the milk and pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="36" data-metric-unit="g" data-imp-qty="1.269863666025856" data-imp-unit="oz">36 g</span><!-- /auto-link-skip --> espresso shot through it in one steady stream. The casein in the milk binds the espresso's bitter polyphenols on contact, which is what you taste as &quot;balanced&quot; rather than &quot;bitter coffee with sweetener over top.&quot;<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Pour the warm coconut-sweetened milk into a 300 ml / 10 oz mug, leaving 3 cm of " aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Scoop the lavender ube halaya cream onto the surface in a single ~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> mound; it will sit, then slowly settle into a dome. Shower <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> of the toasted desiccated coconut over the top in an arc, concentrated at the cream-meets-coffee boundary so the toasted-coconut Maillard notes hit at the first sip. Serve immediately; the cream is at its best in the first 90 seconds before it fully melts into the drink.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Scoop the lavender ube halaya cream onto the surface in a single ~80 g mound; it" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -412,6 +424,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ukoy</span>
           <span class="pair-desc">Filipino shrimp and vegetable fritters: a thin rice-flour batter wrapped around mung bean sprouts, s</span>
@@ -421,6 +434,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Banana bread</span>
           <span class="pair-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maxim</span>
@@ -430,6 +444,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter sugar cookies</span>
           <span class="pair-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar sh</span>
@@ -439,6 +454,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chai pumpkin cupcakes</span>
           <span class="pair-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butt</span>
@@ -448,6 +464,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Coconut sugar</span>
           <span class="pair-desc">Unrefined sugar reduced from the sap of coconut palm (Cocos nucifera) flower stalks. Granulated, sof</span>
@@ -457,6 +474,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè ba màu (three-color Vietnamese sweet bean dessert)</span>
           <span class="pair-desc">Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. Th</span>
@@ -466,6 +484,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè chuối (Vietnamese banana, tapioca, and coconut chè)</span>
           <span class="pair-desc">Ripe bananas poached in a sweetened coconut milk base with small tapioca pearls. Builds in three the</span>
@@ -475,6 +494,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè đậu trắng (black-eyed pea and sticky rice chè)</span>
           <span class="pair-desc">Warm Vietnamese chè of tender black-eyed peas and chewy glutinous rice in a barely-sweet coconut mil</span>
@@ -559,6 +579,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

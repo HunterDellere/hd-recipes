@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">2</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.1</strong>g protein</span><span class="rh-macro"><strong>0.4</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -310,32 +322,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">1</span>
-        <div class="step-body">Set up the umami foundation. Place the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> kombu and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> dried shiitake in the bottom of an 8-quart stockpot. The kombu and shiitake will start extracting glutamate and ribonucleotides into the cold water before the heat goes on; this cold-soak start is the right approach for both, and saves time over a separate dashi step.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 1: Set up the umami foundation. Place the 15 g kombu and 25 g dried shiitake in the" aria-label="Start 1 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Set up the umami foundation. Place the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="kombu" data-sub-use="a tablespoon of light miso whisked in at the end" data-sub-note="Different but adjacent umami source. Add 15 g white miso to the strained broth (do not boil it; whisk into hot but not simmering broth). The broth reads slightly hazier and miso-leaning; acceptable for soups and braises, less ideal for clean sauce work." tabindex="0" role="button" aria-label="Substitution available for kombu">kombu</span> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="dried shiitake" data-sub-use="dried porcini" data-sub-note="Different mushroom flavor profile; porcini reads more European, shiitake more East Asian. Use the same weight (25 g) and proceed identically. The broth pairs better with European cooking (Italian risotto, French sauces) than the shiitake version." tabindex="0" role="button" aria-label="Substitution available for dried shiitake">dried shiitake</span> in the bottom of an 8-quart stockpot. The kombu and shiitake will start extracting glutamate and ribonucleotides into the cold water before the heat goes on; this cold-soak start is the right approach for both, and saves time over a separate dashi step.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 1: Set up the umami foundation. Place the 15 g kombu and 25 g dried shiitake in the" aria-label="Start 1 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
-        <div class="step-body">Add the vegetables. Layer the 1 onion, 1 leek, 2 carrots, 3 celery stalks, 1 plum tomato, and 1 halved garlic head over the kombu and shiitake. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3000" data-metric-unit="ml" data-imp-qty="12" data-imp-unit="cups">3000 ml / 12 cups</span><!-- /auto-link-skip --> cold water over and add the 2 bay leaves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> peppercorns, and optional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> parsley stems.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Add the vegetables. Layer the 1 onion, 1 leek, 2 carrots, 3 celery stalks, 1 plu" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Add the vegetables. Layer the 1 onion, 1 leek, 2 carrots, 3 celery stalks, 1 <span class="sub-hint" data-sub-for="plum tomato" data-sub-use="15 g sun-dried tomato or 15 g tomato paste" data-sub-note="Both contribute the natural glutamate that fresh ripe tomato provides. Acceptable substitutes when fresh ripe tomatoes are out of season." tabindex="0" role="button" aria-label="Substitution available for plum tomato">plum tomato</span>, and 1 halved garlic head over the kombu and shiitake. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3000" data-metric-unit="ml" data-imp-qty="12" data-imp-unit="cups">3000 ml / 12 cups</span><!-- /auto-link-skip --> cold water over and add the 2 bay leaves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> peppercorns, and optional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> parsley stems.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Add the vegetables. Layer the 1 onion, 1 leek, 2 carrots, 3 celery stalks, 1 plu" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">3</span>
         <div class="step-body">Bring slowly to a simmer over medium heat. Watch closely once the temperature climbs above 60°C / 140°F: if the kombu is left in past this point, it can release bitter compounds (kelp slime) that make the broth read marine-and-bitter rather than savory-and-clean. Pull the kombu out at the moment the first bubbles break the surface (about 8 to 10 minutes in); pure dashi technique calls for kombu removal before any boiling.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 3: Bring slowly to a simmer over medium heat. Watch closely once the temperature cl" aria-label="Start 12 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="35">
         <span class="step-num">4</span>
         <div class="step-body">Simmer 30 to 40 minutes at a bare tremor (just below 90°C / 195°F). Vegetable stock cooks faster than animal stocks because there are no bones to extract gelatin from; over-simmering past 45 minutes drives the vegetable flavors past sweet-and-clean into cooked-down-vegetal. The shiitake should be fully rehydrated and have given up most of their flavor by minute 30.<button type="button" class="step-time step-time-btn" data-step-timer="35" data-step-label="Step 4: Simmer 30 to 40 minutes at a bare tremor (just below 90°C / 195°F). Vegetable st" aria-label="Start 35 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">35 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Strain. Lift the vegetables and shiitake out with a spider. (The rehydrated shiitake are excellent; reserve them in fridge to use in stir-fries or as a soup garnish; they have already given their flavor to the broth but the texture is still good.) Strain the broth through a fine-mesh sieve into a second pot.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Strain. Lift the vegetables and shiitake out with a spider. (The rehydrated shii" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">6</span>
         <div class="step-body">Cool quickly. Vegetable broth is more delicate than animal stocks and develops off-flavors faster at room temperature. Divide between wide shallow pans in an ice bath, stirring every 5 minutes. Refrigerate as soon as the temperature drops below 10°C / 50°F.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 6: Cool quickly. Vegetable broth is more delicate than animal stocks and develops o" aria-label="Start 25 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
@@ -415,6 +427,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -424,6 +437,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -433,6 +447,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -442,6 +457,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -451,6 +467,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Black peppercorns</span>
           <span class="pair-desc">The unripe drupes of Piper nigrum, dried whole. Heat is piperine (fat-soluble); aroma is a stack of </span>
@@ -460,6 +477,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -469,6 +487,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -478,6 +497,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           <span class="pair-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby sp</span>
@@ -568,6 +588,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

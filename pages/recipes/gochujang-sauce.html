@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">24</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.3</strong>g protein</span><span class="rh-macro"><strong>2.6</strong>g carbs</span><span class="rh-macro"><strong>1.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Korean</span><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -277,22 +289,22 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">1</span>
-        <div class="step-body">In a medium bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">120 g / ½ cup</span><!-- /auto-link-skip --> gochujang and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> warm water; whisk vigorously with a wooden spoon for 30 seconds until the paste is fully dissolved and the mixture is smooth (the cold paste straight from the jar resists dissolving; warm water and steady whisking are structural for getting a smooth consistency).<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 1: In a medium bowl, combine the 120 g / ½ cup gochujang and the 60 g / ¼ cup warm " aria-label="Start 1 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">In a medium bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">120 g / ½ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="gochujang (Korean fermented red chili paste)" data-sub-use="no good substitute; the sauce depends on gochujang specifically" data-sub-note="Gochujang is structural in this sauce; there is no clean substitute. Sriracha is sometimes suggested but is structurally a different sauce (a fresh chili-and-vinegar paste with no fermentation depth); using sriracha produces a hot sweet sauce that bears no resemblance to gochujang sauce. Sambal oelek with a touch of miso paste comes closer (the miso provides the fermentation; the sambal provides the chili) but is still meaningfully different. If gochujang is unavailable, choose a different sauce rather than substituting; gochujang is now widely available in international supermarkets and online." tabindex="0" role="button" aria-label="Substitution available for gochujang">gochujang</span> and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> warm water; whisk vigorously with a wooden spoon for 30 seconds until the paste is fully dissolved and the mixture is smooth (the cold paste straight from the jar resists dissolving; warm water and steady whisking are structural for getting a smooth consistency).<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 1: In a medium bowl, combine the 120 g / ½ cup gochujang and the 60 g / ¼ cup warm " aria-label="Start 1 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
-        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> rice vinegar, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="5" data-imp-unit="tsp">25 g / 5 tsp</span><!-- /auto-link-skip --> soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> toasted sesame oil, 8 g / 2 grated garlic cloves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">8 g / 1½ tsp</span><!-- /auto-link-skip --> grated ginger, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">30 g / 1½ tbsp</span><!-- /auto-link-skip --> honey. Whisk until the sauce is uniform and the honey is fully integrated (about 60 seconds; the honey takes the longest to dissolve into the cool sauce, particularly if the gochujang and water mixture has cooled to room temperature).<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Add the 30 g / 2 tbsp rice vinegar, 25 g / 5 tsp soy sauce, 15 g / 1 tbsp toaste" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="rice vinegar" data-sub-use="apple cider vinegar or white wine vinegar" data-sub-note="Rice vinegar is the canonical Korean choice and reads soft and slightly sweet; apple cider vinegar reads more aggressive and slightly fruity; white wine vinegar reads sharper and cleaner. All work; the rice vinegar version reads most authentically Korean." tabindex="0" role="button" aria-label="Substitution available for rice vinegar">rice vinegar</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="5" data-imp-unit="tsp">25 g / 5 tsp</span><!-- /auto-link-skip --> soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> toasted sesame oil, 8 g / 2 grated garlic cloves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">8 g / 1½ tsp</span><!-- /auto-link-skip --> grated ginger, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">30 g / 1½ tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="honey (or rice syrup, jocheong)" data-sub-use="maple syrup, brown sugar dissolved in water, or pear puree" data-sub-note="Jocheong (Korean rice syrup) is the canonical Korean sweetener and reads more malty and less floral than honey; honey is the widely available substitute. Maple syrup reads similarly sweet but slightly more aromatic. Brown sugar (15 g dissolved in 15 g warm water) reads cleaner and less complex. Korean pear puree (15 g of grated Asian pear) is the canonical fruity variant and adds a structural enzymatic component that tenderizes proteins when the sauce is used as a marinade." tabindex="0" role="button" aria-label="Substitution available for honey">honey</span>. Whisk until the sauce is uniform and the honey is fully integrated (about 60 seconds; the honey takes the longest to dissolve into the cool sauce, particularly if the gochujang and water mixture has cooled to room temperature).<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Add the 30 g / 2 tbsp rice vinegar, 25 g / 5 tsp soy sauce, 15 g / 1 tbsp toaste" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
         <div class="step-body">Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">5 g / 2 tsp</span><!-- /auto-link-skip --> toasted sesame seeds. Taste and adjust: gochujang sauce should read in equal balance across fermented-chili depth (from the gochujang), bright acid (from the vinegar), structural salt and umami (from the soy), roasted-sesame depth (from the sesame oil), gentle sweetness (from the honey), and aromatic garlic-ginger lift; if flat, an extra <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> soy sauce; if too sharp, more honey; if too sweet, more vinegar; if too thick, more warm water (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> at a time).<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Stir in the 5 g / 2 tsp toasted sesame seeds. Taste and adjust: gochujang sauce " aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Let the sauce rest 15 minutes at room temperature for the flavors to integrate; the gochujang continues to dissolve and the garlic and ginger infuse the sauce during the rest. Use immediately or transfer to a clean glass jar and refrigerate up to 2 weeks. Serve as a dipping sauce for Korean BBQ (galbi, bulgogi, samgyeopsal, dak gui), Korean fried chicken (KFC; thicker version, see modifications), pajeon (Korean scallion pancakes; as an alternative to the traditional soy-vinegar dip), gyoza and mandu dumplings, and raw vegetable platters; as a sauce for bibimbap (the canonical mixed-rice bowl), grain bowls, and rice bowls; as a glaze for grilled or roasted meat and vegetables (brush during the last 2 minutes of grilling for a sweet-savory caramelized finish); as a stir-in for noodle dishes (japchae, kalguksu, ramen); as a topping for eggs (fried eggs over rice, scrambled eggs, omelets); as a sauce for grilled or pan-fried tofu; as a flavor base for soups and stews (gochujang jjigae, sundubu); and as a marinade for grilled chicken, pork, or fish.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Let the sauce rest 15 minutes at room temperature for the flavors to integrate; " aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -382,6 +394,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -391,6 +404,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Gyeran-jjim</span>
           <span class="pair-desc">The Korean steamed savory egg custard: beaten eggs whisked with anchovy-and-kombu stock (or chicken </span>
@@ -400,6 +414,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kkakdugi</span>
           <span class="pair-desc">Cubed daikon radish kimchi, salt-drawn for 30 minutes to firm the cube structure, tossed with a goch</span>
@@ -409,6 +424,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Haemul pajeon (Korean seafood and scallion pancake, 해물파전)</span>
           <span class="pair-desc">A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight b</span>
@@ -418,6 +434,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Gochujang (Korean fermented chili paste, 고추장)</span>
           <span class="pair-desc">Korean ferment of glutinous rice, gochugaru chili powder, fermented soybean powder (meju), barley ma</span>
@@ -427,6 +444,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean spicy cucumber salad (oi-muchim, 오이무침)</span>
           <span class="pair-desc">Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, r</span>
@@ -436,6 +454,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)</span>
           <span class="pair-desc">Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-g</span>
@@ -445,6 +464,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean pajeon dipping sauce (cho-ganjang, 초간장)</span>
           <span class="pair-desc">Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condi</span>
@@ -535,6 +555,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

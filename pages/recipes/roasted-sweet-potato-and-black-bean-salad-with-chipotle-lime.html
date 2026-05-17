@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">685</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>17.9</strong>g protein</span><span class="rh-macro"><strong>73.1</strong>g carbs</span><span class="rh-macro"><strong>38.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Mexican-American</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -424,57 +436,57 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">1</span>
-        <div class="step-body">Heat the oven to 230 °C / 450 °F with a rimmed sheet pan inside. The hot pan is structural; the 700 g / 2 sweet potato cubes laid on a cold pan steam under their own moisture for the first 5 minutes and never develop the deep caramelized edges that the dish depends on. A preheated pan starts the Maillard reaction at the cube-metal interface from the moment of contact. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Heat the oven to 230 °C / 450 °F with a rimmed sheet pan inside. The hot pan is " aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
+        <div class="step-body">Heat the oven to 230 °C / 450 °F with a rimmed sheet pan inside. The hot pan is structural; the 700 g / 2 <span class="sub-hint" data-sub-for="sweet potato (orange-flesh)" data-sub-use="butternut squash, peeled and cubed 2 cm" data-sub-note="Similar carotene, similar sweetness, similar roasting behavior. Slightly higher water content; expect a 2 to 3 minute longer roast time to develop the same char depth." tabindex="0" role="button" aria-label="Substitution available for sweet potato">sweet potato</span> cubes laid on a cold pan steam under their own moisture for the first 5 minutes and never develop the deep caramelized edges that the dish depends on. A preheated pan starts the Maillard reaction at the cube-metal interface from the moment of contact. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Heat the oven to 230 °C / 450 °F with a rimmed sheet pan inside. The hot pan is " aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">2</span>
         <div class="step-body">In a wide bowl, toss the 700 g / 2 sweet potato cubes with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="22" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">22 g / 1½ tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/ground-cumin.html">ground cumin</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> smoked paprika. Use clean hands; rub the spices and oil into every face of every cube. The oil and spice film should be uniform; bare patches of cube will read pale and unseasoned next to the well-coated faces.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 2: In a wide bowl, toss the 700 g / 2 sweet potato cubes with the 22 g / 1½ tbsp ol" aria-label="Start 4 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">3</span>
         <div class="step-body">Pull the hot sheet pan from the oven; spread the seasoned cubes in a single layer with at least 1 cm between cubes. Crowding traps steam and prevents the char; if the cubes do not fit on one pan with breathing room, use two pans on staggered racks and rotate at the halfway point. Roast 22 to 25 minutes total: do not stir or flip for the first 14 minutes (the underside develops the deep mahogany char in the un-disturbed initial contact); flip with a thin spatula at minute 14 and roast another 8 to 11 minutes until the second side is also deeply browned and the cube is tender at the center when pierced with a paring knife. Pull to a wide plate to cool; do not stack hot cubes on each other, the steam softens the char. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 3: Pull the hot sheet pan from the oven; spread the seasoned cubes in a single laye" aria-label="Start 25 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">4</span>
         <div class="step-body">While the sweet potato roasts, char the corn. Heat a heavy cast-iron or carbon-steel skillet over medium-high heat for 3 minutes until a flick of water snaps and evaporates within 2 seconds. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/avocado-oil.html">avocado oil</a>; swirl to film the pan. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> / ~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="ml" data-imp-qty="1.25" data-imp-unit="cup">1¼ cup</span><!-- /auto-link-skip --> corn kernels in a single layer; do not stir for the first 90 seconds (the kernels in contact with the metal need uninterrupted time to char). After 90 seconds, toss with a wooden spoon and let the second face char another 60 to 90 seconds. The kernels should now be mottled black and gold across most of the surface, smell deeply sweet-and-charred, and squeak slightly between the teeth when bitten. Tip onto a plate; salt with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> kosher salt while still hot.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 4: While the sweet potato roasts, char the corn. Heat a heavy cast-iron or carbon-s" aria-label="Start 6 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">5</span>
         <div class="step-body">Macerate the red onion. In a small bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> / ½ medium diced red onion with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> lime juice (additional, separate from the dressing). Press the onion gently with the back of a spoon so the lime juice fully wets every dice. Let stand 5 to 10 minutes while the rest of the components come together. The lime acid denatures the onion sulfur compounds (allyl propyl disulfide and related volatiles) and shifts the onion from sharp-and-aggressive to tart-and-mild; the dice also turns a brighter pink-magenta from the anthocyanins reacting with the acid.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 5: Macerate the red onion. In a small bowl, combine the 80 g / ½ medium diced red o" aria-label="Start 8 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
         <div class="step-body">Build the dressing. In a small bowl or wide-mouth jar, mince together 1 to 1½ chipotle chiles and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> of the adobo sauce on a cutting board with a chef knife until uniform paste, ~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="24" data-metric-unit="g" data-imp-qty="1.523809523809524" data-imp-unit="tbsp">24 g</span><!-- /auto-link-skip --> total. Scrape into the bowl. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">45 g / 3 tbsp</span><!-- /auto-link-skip --> lime juice, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="14" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">14 g / 2 tsp</span><!-- /auto-link-skip --> honey, the 6 g / 2 cloves microplaned <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> ground cumin, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. Whisk vigorously for 15 to 20 seconds; the salt dissolves into the lime acid, the garlic mucilage starts to thicken the mixture, and the chipotle-adobo paste distributes evenly. Salt always goes into the acid phase first; salt does not dissolve in oil and reads as gritty hot spots if added at the end. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: Build the dressing. In a small bowl or wide-mouth jar, mince together 1 to 1½ ch" aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">While whisking constantly with one hand, stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="75" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">75 g / ⅓ cup</span><!-- /auto-link-skip --> olive oil with the other in a thin steady drizzle (5 to 8 seconds for the full pour, not faster). The chipotle-adobo paste is the emulsifier here, replacing the mustard role; the adobo carries enough tomato-vinegar mucilage and pepper-pulp pectin to coat the oil droplets. The dressing tightens visibly into an opaque rust-<a class="x-link" data-category="ingredients" href="../ingredients/orange.html">orange</a> emulsion; by the time the last of the oil is in, it should ribbon off the whisk. Whisk an additional 15 to 20 seconds. Taste; it should read smoky-acidic-sweet in that order, fully salted, with the cumin and garlic as background. If it reads flat, more salt; if it tastes only acidic, more honey; if it reads only sweet, more lime; if it lacks the smoke, more chipotle. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: While whisking constantly with one hand, stream in the 75 g / ⅓ cup olive oil wi" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">8</span>
-        <div class="step-body">Toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">50 g / ⅓ cup</span><!-- /auto-link-skip --> pepitas. In a small dry skillet over medium heat, toast the seeds for 3 to 4 minutes, agitating the pan every 30 seconds. The seeds will pop audibly (like miniature popcorn), turn from olive-green to mottled tan-brown, and release a pronounced toasted-pumpkin-seed aroma. Pull immediately when the popping subsides and the color is set; the window from perfect to scorched is about 30 seconds. Tip onto a plate to cool; the seeds crisp further as they cool. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 8: Toast the 50 g / ⅓ cup pepitas. In a small dry skillet over medium heat, toast t" aria-label="Start 4 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">Toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">50 g / ⅓ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="pepitas (raw hulled pumpkin seeds)" data-sub-use="sunflower seeds, raw and hulled" data-sub-note="Sunflower seeds toast similarly and provide the crunch; flavor is more neutral and lacks the pumpkin-seed-oil register. Acceptable; pepitas are widely available at Mexican groceries and supermarket bulk-bin sections." tabindex="0" role="button" aria-label="Substitution available for pepitas">pepitas</span>. In a small dry skillet over medium heat, toast the seeds for 3 to 4 minutes, agitating the pan every 30 seconds. The seeds will pop audibly (like miniature popcorn), turn from olive-green to mottled tan-brown, and release a pronounced toasted-pumpkin-seed aroma. Pull immediately when the popping subsides and the color is set; the window from perfect to scorched is about 30 seconds. Tip onto a plate to cool; the seeds crisp further as they cool. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 8: Toast the 50 g / ⅓ cup pepitas. In a small dry skillet over medium heat, toast t" aria-label="Start 4 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">9</span>
         <div class="step-body">Season the beans. In a wide bowl, toss the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="1.4467592592592593" data-imp-unit="cup">250 g</span><!-- /auto-link-skip --> drained-weight black beans (from 1 × <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="425" data-metric-unit="g" data-imp-qty="15" data-imp-unit="oz">425 g / 15 oz</span><!-- /auto-link-skip --> can drained and rinsed in hot water) with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> ground cumin and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. The hot-water rinse warms the beans enough to bloom the cumin without active heat; cold beans straight from the colander leave the cumin reading raw and dusty.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 9: Season the beans. In a wide bowl, toss the 250 g drained-weight black beans (fro" aria-label="Start 2 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">10</span>
         <div class="step-body">Compose the salad. In a wide shallow serving bowl or platter (not a deep mixing bowl, the salad reads better spread thin), layer in this order: the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="1.4467592592592593" data-imp-unit="cup">250 g</span><!-- /auto-link-skip --> seasoned black beans across the bottom, the warm <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="620" data-metric-unit="g" data-imp-qty="2.5080906148867315" data-imp-unit="cup">620 g</span><!-- /auto-link-skip --> roasted sweet potato cubes on top, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> charred corn scattered across, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> macerated red onion drained from its lime soak (reserve the soak liquid for another dressing or discard), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> chopped cilantro. Drizzle two-thirds of the dressing across the top; toss gently with a large spoon, 4 to 6 turns, just enough to coat without crushing the cubes or breaking the beans. The salad should glisten with the dressing without pooling at the bottom of the bowl.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 10: Compose the salad. In a wide shallow serving bowl or platter (not a deep mixing " aria-label="Start 3 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">11</span>
         <div class="step-body">Finish. Crumble the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">60 g / ½ cup</span><!-- /auto-link-skip --> cotija across the top in 5 to 8 mm chunks; resist mixing the cheese in, the contrast between unadorned crumbles and dressed vegetables is structural. Scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">50 g / ⅓ cup</span><!-- /auto-link-skip --> toasted pepitas across the top. Dice and add the 150 g / 1 medium <a class="x-link" data-category="ingredients" href="../ingredients/avocado.html">avocado</a> last, in 1.5 cm pieces, gently nudged into place rather than tossed. Drizzle the remaining third of the dressing across the cheese and pepitas; this last drizzle hits the dry components and pulls the salad together visually. Taste; the dish should read smoky-sweet-acidic with crisp-and-creamy textural counterpoints; if flat, more lime; if undersalted, a small additional sprinkle of cotija (cotija carries salt as well as flavor); if heat is missing, a few additional dabs of straight adobo sauce from the chipotle can. Serve within 20 minutes; the salad holds for 1 hour at room temperature but the sweet potato softens further past that point.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 11: Finish. Crumble the 60 g / ½ cup cotija across the top in 5 to 8 mm chunks; resi" aria-label="Start 3 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
@@ -578,6 +590,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Air-fried okra with four flavor finishes</span>
           <span class="pair-desc">Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 40</span>
@@ -587,6 +600,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -596,6 +610,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -605,6 +620,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ensalada de nopales</span>
           <span class="pair-desc">Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and M</span>
@@ -614,6 +630,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">High-heat dry roasting</span>
           <span class="pair-desc">Roast cut vegetables on a heavy preheated sheet pan at 220 to 245 °C with a thin coat of oil and agg</span>
@@ -623,6 +640,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Vinaigrette emulsion</span>
           <span class="pair-desc">Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsio</span>
@@ -632,6 +650,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry-toasting (grains, spices, seeds, dried chilies)</span>
           <span class="pair-desc">Toast raw grains, whole spices, seeds, nuts, or dried chilies in a hot dry skillet (no fat) until Ma</span>
@@ -641,6 +660,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Chipotle in adobo</span>
           <span class="pair-desc">Smoke-cured ripe jalapeños (chipotle morita or chipotle meco) rehydrated in a tomato-vinegar-aromati</span>
@@ -731,6 +751,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

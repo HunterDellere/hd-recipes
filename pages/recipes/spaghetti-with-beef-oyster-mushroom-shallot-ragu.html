@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">666</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>27.6</strong>g protein</span><span class="rh-macro"><strong>35.9</strong>g carbs</span><span class="rh-macro"><strong>46.6</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/italian.html" data-category="cuisines">Italian</a><span class="rh-tag rh-tag-course">dinner</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -414,62 +426,62 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">1</span>
         <div class="step-body">Set the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3000" data-metric-unit="ml" data-imp-qty="12" data-imp-unit="cups">3000 ml / 12 cups</span><!-- /auto-link-skip --> water to boil in a 6-quart pot with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="35" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">35 g / 3 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>. Taste it once boiling: it must read aggressively saline, like the sea. This water seasons the pasta from the inside; under-salted pasta water cannot be corrected later in the pan.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Set the 3000 ml / 12 cups water to boil in a 6-quart pot with the 35 g / 3 tbsp " aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">2</span>
-        <div class="step-body">While the water heats, prepare your mise: dice the 180 g / 4 to 5 shallots small (~3 mm), mince the 18 g / 5 cloves <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a> fine, mince the 12 g / 3 <a class="x-link" data-category="ingredients" href="../ingredients/anchovy-fillets.html">anchovy fillets</a> to a paste, tear the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="9" data-imp-unit="oz">250 g / 9 oz</span><!-- /auto-link-skip --> oyster mushrooms into bite-sized fans by hand along the natural fiber direction (do not slice; pulled architecture is the whole point of this recipe), crush the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="1.6025641025641024" data-imp-unit="cup">400 g</span><!-- /auto-link-skip --> / one can San Marzano tomatoes by hand into rough 1 cm shreds with their juices in a bowl, grate the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">60 g / ¾ cup</span><!-- /auto-link-skip --> parmigiano on a microplane, cube the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> butter cold, zest the lemon.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 2: While the water heats, prepare your mise: dice the 180 g / 4 to 5 shallots small" aria-label="Start 10 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">While the water heats, prepare your mise: dice the 180 g / 4 to 5 shallots small (~3 mm), mince the 18 g / 5 cloves <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a> fine, mince the 12 g / 3 <span class="sub-hint" data-sub-for="anchovy fillets" data-sub-use="colatura di alici (Italian fermented anchovy sauce), 1 tbsp / 15 ml stirred in after the wine reduces" data-sub-note="A more refined substitute that delivers the same glutamate hit with no fillet texture. Worth the upgrade if you have it in the pantry." tabindex="0" role="button" aria-label="Substitution available for anchovy fillets"><a class="x-link" data-category="ingredients" href="../ingredients/anchovy-fillets.html">anchovy fillets</a></span> to a paste, tear the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="9" data-imp-unit="oz">250 g / 9 oz</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="oyster mushrooms (no mushroom available)" data-sub-use="cremini, sliced thick" data-sub-note="A real downgrade; you lose the pulled-strand texture entirely and the dish reads more conventional. Crush more anchovy in to compensate for the missing glutamate." tabindex="0" role="button" aria-label="Substitution available for oyster mushrooms">oyster mushrooms</span> into bite-sized fans by hand along the natural fiber direction (do not slice; pulled architecture is the whole point of this recipe), crush the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="1.6025641025641024" data-imp-unit="cup">400 g</span><!-- /auto-link-skip --> / one can <span class="sub-hint" data-sub-for="San Marzano tomatoes (canned)" data-sub-use="any whole-peeled DOP or DOP-style Italian canned tomato" data-sub-note="Avoid pre-crushed or pre-diced tomatoes; the calcium chloride added to keep dice intact prevents the tomato from breaking down properly into the sauce." tabindex="0" role="button" aria-label="Substitution available for San Marzano tomatoes">San Marzano tomatoes</span> by hand into rough 1 cm shreds with their juices in a bowl, grate the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">60 g / ¾ cup</span><!-- /auto-link-skip --> parmigiano on a microplane, cube the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> butter cold, zest the lemon.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 2: While the water heats, prepare your mise: dice the 180 g / 4 to 5 shallots small" aria-label="Start 10 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">3</span>
-        <div class="step-body">Heat a wide 12-inch stainless or carbon-steel skillet (not non-stick, you need fond) over high heat until a drop of water hisses and skitters. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="9" data-imp-unit="oz">250 g / 9 oz</span><!-- /auto-link-skip --> torn oyster mushrooms in a single layer with no oil. Dry-sear undisturbed for 90 seconds; the gill surfaces will hiss and release their water. Toss once; sear another 90 seconds undisturbed. The mushrooms should shrink visibly, lose their wet sheen, and pick up scattered dark-gold spots. Transfer to a bowl. This dry-sear-first is non-negotiable: fat added too early seals in water, and you end up with grey, soggy mushrooms with no Maillard depth. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 3: Heat a wide 12-inch stainless or carbon-steel skillet (not non-stick, you need f" aria-label="Start 4 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">Heat a wide 12-inch stainless or carbon-steel skillet (not non-stick, you need fond) over high heat until a drop of water hisses and skitters. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="9" data-imp-unit="oz">250 g / 9 oz</span><!-- /auto-link-skip --> torn <span class="sub-hint" data-sub-for="oyster mushrooms" data-sub-use="maitake (hen of the woods), pulled into the same fan shapes" data-sub-note="The closer match. Earthier aroma, even better Maillard browning, same pulled-strand texture. More expensive and not always available." tabindex="0" role="button" aria-label="Substitution available for oyster mushrooms">oyster mushrooms</span> in a single layer with no oil. Dry-sear undisturbed for 90 seconds; the gill surfaces will hiss and release their water. Toss once; sear another 90 seconds undisturbed. The mushrooms should shrink visibly, lose their wet sheen, and pick up scattered dark-gold spots. Transfer to a bowl. This dry-sear-first is non-negotiable: fat added too early seals in water, and you end up with grey, soggy mushrooms with no Maillard depth. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 3: Heat a wide 12-inch stainless or carbon-steel skillet (not non-stick, you need f" aria-label="Start 4 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="9">
         <span class="step-num">4</span>
         <div class="step-body">Return the pan to medium-high heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> olive oil; when it shimmers, add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="450" data-metric-unit="g" data-imp-qty="1" data-imp-unit="lb">450 g / 1 lb</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/ground-beef.html">ground beef</a> in a flat thin layer. Press it down with the back of a wooden spoon and leave it undisturbed for 2 to 3 minutes; the beef must release water and cook that water off before browning can begin. Once the underside is mahogany and the surface water has evaporated, break the meat into small irregular crumbles (not a paste, leave variation in piece size) and add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> kosher salt. Continue cooking, stirring occasionally, until the meat is dry, granular, and deeply browned with a brown fond setting on the pan bottom, 5 to 6 more minutes. Skipping this dry-out-then-brown step is the single most common failure point in any ground-beef ragu; what you get otherwise is grey steamed meat with no depth.<button type="button" class="step-time step-time-btn" data-step-timer="9" data-step-label="Step 4: Return the pan to medium-high heat. Add the 30 ml / 2 tbsp olive oil; when it sh" aria-label="Start 9 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">9 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">5</span>
         <div class="step-body">Push the beef to one side of the pan. In the cleared space, add the 180 g / 4 to 5 diced shallots with the rendered beef fat. Sweat 3 minutes over medium heat until translucent and soft, stirring occasionally; do not brown the shallots (browned shallots turn bitter, and you want their sugar to come forward, not their acridity). Add the 18 g / 5 cloves minced garlic and the 12 g / 3 minced anchovy fillets. Stir together for 60 seconds; the anchovy will dissolve completely into the fat and disappear. If you can still see white flecks, keep going. The pan should smell intensely savory at this point, not fishy. Anchovies in this role are a salt-and-glutamate builder, not a fish-flavor ingredient. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 5: Push the beef to one side of the pan. In the cleared space, add the 180 g / 4 to" aria-label="Start 4 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
         <div class="step-body">Now stir the beef back through the shallot-garlic-anchovy base. Push everything to the side again and clear a hot spot. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">45 g / 3 tbsp</span><!-- /auto-link-skip --> tomato paste directly to the bare pan and let it sit, stirring once or twice, for 90 seconds. The paste should darken from bright red to a deep brick color and smell concentrated and almost sweet. This is the tomato Maillard step: raw tomato paste reads acidic and metallic, bloomed tomato paste reads deep and savory. Stir the bloomed paste through the meat.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: Now stir the beef back through the shallot-garlic-anchovy base. Push everything " aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
-        <div class="step-body">Deglaze with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">180 ml / ¾ cup</span><!-- /auto-link-skip --> dry red wine, scraping the fond off the pan bottom with the wooden spoon. Let the wine reduce until almost all the liquid has cooked off and the pan goes glossy rather than soupy, 2 to 3 minutes. The wine deglaze pulls the soluble brown fond into the sauce; this is where most of the dish-level depth comes from. <a class="step-tech" href="../techniques/deglazing.html">Deglazing</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Deglaze with the 180 ml / ¾ cup dry red wine, scraping the fond off the pan bott" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Deglaze with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">180 ml / ¾ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="dry red wine" data-sub-use="dry white wine (Pinot Grigio, Vermentino) plus 1 tsp / 5 ml red wine vinegar" data-sub-note="White wine alone reads too thin against the beef; the vinegar adds back the acid the red was contributing. Avoid sweet or oaked wines." tabindex="0" role="button" aria-label="Substitution available for dry red wine">dry red wine</span>, scraping the fond off the pan bottom with the wooden spoon. Let the wine reduce until almost all the liquid has cooked off and the pan goes glossy rather than soupy, 2 to 3 minutes. The wine deglaze pulls the soluble brown fond into the sauce; this is where most of the dish-level depth comes from. <a class="step-tech" href="../techniques/deglazing.html">Deglazing</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Deglaze with the 180 ml / ¾ cup dry red wine, scraping the fond off the pan bott" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">8</span>
         <div class="step-body">Add the hand-crushed <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="1.6025641025641024" data-imp-unit="cup">400 g</span><!-- /auto-link-skip --> / one can San Marzano tomatoes with their juices, the 2 bay leaves, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> crushed red pepper, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.3" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">0.3 g / ¼ tsp</span><!-- /auto-link-skip --> grated nutmeg, the parmigiano rind if you have one, and the dry-seared oyster mushrooms with any liquid they have released. Stir together, bring to a simmer, then drop the heat to maintain a gentle bubble. Simmer uncovered for 12 to 15 minutes, stirring every few minutes, until the sauce thickens to a coating consistency on the spoon and the fat begins to pool red-<a class="x-link" data-category="ingredients" href="../ingredients/orange.html">orange</a> at the edge of the pan. That pool is the rendered beef fat carrying the tomato-paste color, and it is the signal the sauce has reduced to the right point. Taste; the sauce should read deeply savory, slightly sweet from the shallots and bloomed paste, with the umami stack (beef + mushroom + anchovy + tomato + parmigiano-to-come) clearly layered. Add salt only if needed; the anchovies, the cured-meat-style umami of the beef, and the salted pasta water are all contributing.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 8: Add the hand-crushed 400 g / one can San Marzano tomatoes with their juices, the" aria-label="Start 15 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="9">
         <span class="step-num">9</span>
-        <div class="step-body">When the sauce has been simmering 8 minutes, drop the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14" data-imp-unit="oz">400 g / 14 oz</span><!-- /auto-link-skip --> spaghetti into the boiling salted water. Cook 1 minute shy of the package al dente time; the pasta will finish cooking in the sauce. Before draining, reserve a full <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="cups">500 ml / 2 cups</span><!-- /auto-link-skip --> of starchy pasta water in a heatproof measuring cup. Do not skip this step or skimp on the volume.<button type="button" class="step-time step-time-btn" data-step-timer="9" data-step-label="Step 9: When the sauce has been simmering 8 minutes, drop the 400 g / 14 oz spaghetti in" aria-label="Start 9 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">9 min</span></button></div>
+        <div class="step-body">When the sauce has been simmering 8 minutes, drop the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14" data-imp-unit="oz">400 g / 14 oz</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="spaghetti" data-sub-use="rigatoni, tagliatelle, or pappardelle" data-sub-note="Rigatoni holds chunky meat sauce in the tubes (excellent here). Tagliatelle is the canonical bolognese partner; fresh egg pasta reads even silkier with the mantecatura. All three change the texture but not the ratios." tabindex="0" role="button" aria-label="Substitution available for spaghetti">spaghetti</span> into the boiling salted water. Cook 1 minute shy of the package al dente time; the pasta will finish cooking in the sauce. Before draining, reserve a full <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="cups">500 ml / 2 cups</span><!-- /auto-link-skip --> of starchy pasta water in a heatproof measuring cup. Do not skip this step or skimp on the volume.<button type="button" class="step-time step-time-btn" data-step-timer="9" data-step-label="Step 9: When the sauce has been simmering 8 minutes, drop the 400 g / 14 oz spaghetti in" aria-label="Start 9 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">9 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">10</span>
         <div class="step-body">Using tongs, lift the pasta directly from the pot into the simmering sauce (do not drain in a colander; you want the surface water that comes with it). Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml / ½ cup</span><!-- /auto-link-skip --> of the reserved pasta water and toss vigorously over medium heat for 60 to 90 seconds. The starch in the pasta water emulsifies with the rendered beef fat and the bloomed tomato to bind the sauce to every strand. Pull the bay leaves and parmigiano rind. Drop the heat to low. <a class="step-tech" href="../techniques/pan-emulsion.html">Pan emulsion (mantecare)</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 10: Using tongs, lift the pasta directly from the pot into the simmering sauce (do n" aria-label="Start 2 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">11</span>
         <div class="step-body">Pull the pan off the heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> cold cubed butter and toss aggressively until the butter melts and the sauce thickens to a glossy coat. This is *mantecatura*, the Italian finishing emulsion that turns a wet sauce into a clinging one. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">60 g / ¾ cup</span><!-- /auto-link-skip --> grated parmigiano in three handfuls, tossing constantly between each. If the sauce tightens up, splash in more pasta water <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> at a time. The final consistency should coat each strand glossily with no pooled liquid in the pan bottom; if you tilt the pan, the pasta should slide as a unit, not slosh.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 11: Pull the pan off the heat. Add the 30 g / 2 tbsp cold cubed butter and toss aggr" aria-label="Start 2 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">12</span>
         <div class="step-body">The Adjustment: taste. If flat, more cracked pepper and a pinch (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip -->) more kosher salt. If the meat or fat is reading heavy on the palate, the zest of one lemon over the top cuts through and brings every other flavor forward; the lemon oil is the finishing acid this dish is built around, do not substitute lemon juice (juice waters the sauce and reads sour rather than aromatic). Toss the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.20833333333333334" data-imp-unit="cup">10 g</span><!-- /auto-link-skip --> / small handful parsley and the lemon zest through. Divide among four warm bowls, top each with another small pinch of parmigiano and a turn of cracked black pepper. Eat within 4 minutes; pasta this thick continues to absorb sauce, and the second serving from a stalled bowl is meaningfully worse than the first.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 12: The Adjustment: taste. If flat, more cracked pepper and a pinch (1 g / ¼ tsp) mo" aria-label="Start 1 min timer for step 12"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -565,6 +577,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Italian salsa verde</span>
           <span class="pair-desc">The Italian green sauce that finishes bollito misto, grilled and poached fish, roast meats, beans, e</span>
@@ -574,6 +587,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Panzanella with charred tomatoes</span>
           <span class="pair-desc">Tuscan bread salad rebuilt as a study in tomato states: ripe heirloom flesh salt-cured to extract it</span>
@@ -583,6 +597,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Roasted pear and gorgonzola tartine</span>
           <span class="pair-desc">Bosc pear roasted in butter and balsamic until caramelized, smeared over a toasted sourdough slice w</span>
@@ -592,6 +607,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Sautéed beet greens with anchovy, garlic, and chili</span>
           <span class="pair-desc">A bunch of beet greens, stems and leaves separated, cooked in two stages in a wide skillet of olive </span>
@@ -601,6 +617,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Pan emulsion (mantecare)</span>
           <span class="pair-desc">Bind starchy pasta water and fat into a glossy sauce by tossing pasta with fat over low heat, finish</span>
@@ -610,6 +627,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -619,6 +637,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -628,6 +647,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Deglazing</span>
           <span class="pair-desc">Add liquid to a hot pan after a sear so the fond — browned protein and sugar residue — dissolves int</span>
@@ -718,6 +738,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

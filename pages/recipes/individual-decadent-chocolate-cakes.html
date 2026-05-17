@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">1025</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>10.4</strong>g protein</span><span class="rh-macro"><strong>119.1</strong>g carbs</span><span class="rh-macro"><strong>59.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -328,47 +340,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">1</span>
         <div class="step-body">Heat oven to 350°F (175°C) with a rack in the lower-middle. Butter two 4-inch round pans heavily with about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> soft butter total, line each base with a parchment circle, butter again, and dust with cocoa, knocking out the excess. Set the pans on a sheet tray.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: Heat oven to 350°F (175°C) with a rack in the lower-middle. Butter two 4-inch ro" aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
         <div class="step-body">Whisk the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">20 g / 3 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dutch-process-cocoa.html">Dutch-process cocoa</a> with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> hot espresso in a small bowl until it forms a glossy black paste with no dry pockets. Let it sit 2 minutes; the heat melts residual cocoa butter and hydrates the starch granules, which is what unlocks the deep red-brown color and the chocolate-amplifying bitterness from the coffee. <a class="step-tech" href="../techniques/blooming-cocoa.html">Blooming cocoa</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Whisk the 20 g / 3 tbsp Dutch-process cocoa with the 60 ml / ¼ cup hot espresso " aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
-        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="110" data-metric-unit="g" data-imp-qty="4" data-imp-unit="oz">110 g / 4 oz</span><!-- /auto-link-skip --> chopped <a class="x-link" data-category="ingredients" href="../ingredients/dark-chocolate.html">dark chocolate</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="85" data-metric-unit="g" data-imp-qty="6" data-imp-unit="tbsp">85 g / 6 tbsp</span><!-- /auto-link-skip --> butter, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1.5 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> in a heatproof bowl over a pan of barely simmering water (or microwave in 20-second bursts, stirring between). Stir slowly with a spatula until fully smooth and glossy: the cocoa butter and dairy fat must form a stable emulsion, not separate. Off heat. Stir in the cocoa bloom from step 2; the paste loosens immediately and the color goes near-black. <a class="step-tech" href="../techniques/chocolate-butter-emulsion.html">Chocolate-butter emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Combine the 110 g / 4 oz chopped dark chocolate, 85 g / 6 tbsp butter, and 1.5 g" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="110" data-metric-unit="g" data-imp-qty="4" data-imp-unit="oz">110 g / 4 oz</span><!-- /auto-link-skip --> chopped <span class="sub-hint" data-sub-for="dark chocolate (70% cacao)" data-sub-use="bittersweet 60% chocolate" data-sub-note="Sweeter and lower in cocoa solids. Drop the granulated sugar by 10 g to compensate, or the cake will taste candy-sweet." tabindex="0" role="button" aria-label="Substitution available for dark chocolate"><a class="x-link" data-category="ingredients" href="../ingredients/dark-chocolate.html">dark chocolate</a></span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="85" data-metric-unit="g" data-imp-qty="6" data-imp-unit="tbsp">85 g / 6 tbsp</span><!-- /auto-link-skip --> butter, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1.5 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> in a heatproof bowl over a pan of barely simmering water (or microwave in 20-second bursts, stirring between). Stir slowly with a spatula until fully smooth and glossy: the cocoa butter and dairy fat must form a stable emulsion, not separate. Off heat. Stir in the cocoa bloom from step 2; the paste loosens immediately and the color goes near-black. <a class="step-tech" href="../techniques/chocolate-butter-emulsion.html">Chocolate-butter emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Combine the 110 g / 4 oz chopped dark chocolate, 85 g / 6 tbsp butter, and 1.5 g" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">In a medium bowl, whisk the 2 eggs, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="65" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">65 g / ⅓ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">50 g / ¼ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dark-brown-sugar.html">dark brown sugar</a>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-extract.html">vanilla extract</a> until the mixture lightens visibly and runs in a smooth ribbon off the whisk, about 60 seconds. The dark brown sugar is doing two jobs: molasses adds bitterness that bridges to the cocoa, and the hygroscopic invert sugars keep the crumb moist for days.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: In a medium bowl, whisk the 2 eggs, 65 g / ⅓ cup granulated sugar, 50 g / ¼ cup " aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Pour the warm chocolate-butter mass (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="230" data-metric-unit="g" data-imp-qty="8.113017866276302" data-imp-unit="oz">230 g</span><!-- /auto-link-skip -->) into the egg mixture in a slow stream while whisking constantly. The chocolate must be warm but not hot; above 50°C / 120°F it will scramble the eggs. Whisk just until uniform and glossy.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Pour the warm chocolate-butter mass (about 230 g) into the egg mixture in a slow" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
         <div class="step-body">In a small bowl, whisk the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="75" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">75 g / ½ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="tsp">2 g / ⅓ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-soda.html">baking soda</a>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-powder.html">baking powder</a>. Sift over the chocolate-egg mixture and fold with a spatula in three passes, just until no streaks remain. Stop the moment the batter is uniform; gluten development reads as a tough crumb in a cake this rich.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: In a small bowl, whisk the 75 g / ½ cup + 1 tbsp all-purpose flour, 2 g / ⅓ tsp " aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Divide between the two pans (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="235" data-metric-unit="g" data-imp-qty="8.289387819891004" data-imp-unit="oz">235 g</span><!-- /auto-link-skip --> per pan). Tap each pan firmly on the counter twice to release any large air pockets, then sprinkle <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> turbinado sugar evenly over each surface. The turbinado will not fully dissolve in 24 minutes; it lacquers into a thin sugar crackle that is the cake's entire visual identity in place of frosting.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Divide between the two pans (about 235 g per pan). Tap each pan firmly on the co" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="26">
         <span class="step-num">8</span>
         <div class="step-body">Bake 24 to 28 minutes. Pull when the edges are set and matte, the top is fully crackled and gently domed, and a toothpick inserted halfway between the rim and the center comes out with moist crumbs clinging (not raw batter, not fully clean). The center will read as just-set; this is correct, the cake firms as it cools and produces the dense, fudge-textured interior.<button type="button" class="step-time step-time-btn" data-step-timer="26" data-step-label="Step 8: Bake 24 to 28 minutes. Pull when the edges are set and matte, the top is fully c" aria-label="Start 26 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">26 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">9</span>
         <div class="step-body">Cool in the pans on a rack 10 minutes; the structure is fragile while hot. Run a thin knife around each edge, invert onto a plate, peel the parchment, and flip back onto a second plate so the crackle top is up. Sprinkle each cake with a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="g">0.5 g</span><!-- /auto-link-skip --> pinch of flaky sea salt.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 9: Cool in the pans on a rack 10 minutes; the structure is fragile while hot. Run a" aria-label="Start 12 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
@@ -447,6 +459,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -456,6 +469,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -465,6 +479,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -474,6 +489,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Hong Kong silk-stocking milk tea (絲襪奶茶)</span>
           <span class="pair-desc">Cha chaan teng style: a blend of Ceylon black teas extracted hot, repeatedly poured between two pots</span>
@@ -483,6 +499,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming cocoa</span>
           <span class="pair-desc">Pour hot liquid or melted fat over cocoa powder and rest before incorporating — heat plus moisture e</span>
@@ -492,6 +509,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Chocolate-butter emulsion</span>
           <span class="pair-desc">Melt chocolate and butter together into a single glossy mass before any egg, sugar, or flour. The co</span>
@@ -501,6 +519,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Dutch-process cocoa</span>
           <span class="pair-desc">Cocoa powder treated with potassium carbonate to neutralize its natural acidity. Darker, mellower, a</span>
@@ -510,6 +529,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">House blend chai</span>
           <span class="pair-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no</span>
@@ -594,6 +614,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

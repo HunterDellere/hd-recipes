@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">366</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>10.9</strong>g protein</span><span class="rh-macro"><strong>20.6</strong>g carbs</span><span class="rh-macro"><strong>29.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Levantine</span><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -338,64 +350,64 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">1</span>
-        <div class="step-body">Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs to preheat for at least 10 minutes; the 900 g / 1 large head of cauliflower must hiss on contact when added. A cold pan plus cold florets means the system spends 15 minutes climbing to roasting temperature and the vegetable steams before it browns. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middl" aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
+        <div class="step-body">Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs to preheat for at least 10 minutes; the 900 g / 1 large head of <span class="sub-hint" data-sub-for="cauliflower" data-sub-use="romanesco or broccoli" data-sub-note="Romanesco roasts the same way and looks dramatic on the plate; broccoli florets need 5 minutes less roasting time and read greener and less sweet. Both work; the dish stays coherent." tabindex="0" role="button" aria-label="Substitution available for cauliflower">cauliflower</span> must hiss on contact when added. A cold pan plus cold florets means the system spends 15 minutes climbing to roasting temperature and the vegetable steams before it browns. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middl" aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Cut the 900 g / 1 large head cauliflower from the underside (where the stems hold the florets together) into 3 to 4 cm florets. Smaller pieces overcook before they brown; larger pieces stay raw at the center. Save any pale-yellow tender leaves; they crisp into something close to vegetable chips.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Cut the 900 g / 1 large head cauliflower from the underside (where the stems hol" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">3</span>
         <div class="step-body">In a wide bowl, toss the cauliflower with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="35" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">35 g / 2½ tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">3 g / 1 tsp</span><!-- /auto-link-skip --> lightly crushed cumin seeds. Every floret should glisten; pooled oil at the bottom of the bowl means too much, drag the florets through it. The crushed (not powdered) cumin holds its aromatic punch through the roast; <a class="x-link" data-category="ingredients" href="../ingredients/ground-cumin.html">ground cumin</a> scorches and turns acrid.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: In a wide bowl, toss the cauliflower with the 35 g / 2½ tbsp olive oil, the 8 g " aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">Pull the preheated sheet pan out of the oven and tip the dressed 900 g / 1 head of cauliflower onto it in a single layer, cut faces down where possible. The florets should sizzle audibly. Spread the pieces so each has 2 to 3 cm of clear pan around it; if it does not fit, use a second preheated pan rather than crowding one. Crowded vegetables steam each other, the surface stays wet, and Maillard never starts.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Pull the preheated sheet pan out of the oven and tip the dressed 900 g / 1 head " aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="28">
         <span class="step-num">5</span>
         <div class="step-body">Roast 25 to 30 minutes without disturbing for the first 18 to 20 minutes; the underside contact develops the deepest browning during this phase, and tossing too early breaks the seal. At 18 to 20 minutes, check the underside of one floret with tongs; it should be deep mahogany, almost burnt-looking. If it is still pale, push to 25 minutes. Then toss once with a spatula, scraping any browned bits from the pan, and return for 7 to 10 minutes more until the previously-up surfaces also have color and the florets are tender at a fork (the stems should yield with a small push). <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="28" data-step-label="Step 5: Roast 25 to 30 minutes without disturbing for the first 18 to 20 minutes; the un" aria-label="Start 28 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">28 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">While the cauliflower roasts, build the lemon-tahini emulsion. In a medium bowl, stir the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> tahini to integrate the oil layer, then whisk in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">40 g / 2½ tbsp</span><!-- /auto-link-skip --> of the ice water all at once. The tahini will seize ; it tightens into a thick, putty-like mass that resists the whisk. This is correct. Continue whisking 20 to 30 seconds; the paste lightens in color (a sign the proteins are hydrating and gelling). <a class="step-tech" href="../techniques/tahini-emulsion.html">Tahini emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: While the cauliflower roasts, build the lemon-tahini emulsion. In a medium bowl," aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> lemon juice, the 4 g / 1 clove microplaned <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">3 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. Whisk vigorously for 30 to 45 seconds; the paste begins to relax noticeably. The acid here is non-negotiable for the emulsion; the lemon brings citric acid (which finishes the protein gel) and the garlic' allicin reacts with sulfur compounds in the tahini to round out the flavor. Whisking through this stage incorporates air; the sauce starts to look fluffy. <a class="step-tech" href="../techniques/tahini-emulsion.html">Tahini emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Add the 30 g / 2 tbsp lemon juice, the 4 g / 1 clove microplaned garlic, and the" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">8</span>
         <div class="step-body">Stream in the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="35" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">35 g / 2½ tbsp</span><!-- /auto-link-skip --> ice water in 1 tbsp / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> additions, whisking between each, until the sauce reaches a pourable-creamy consistency that ribbons off the whisk and slowly settles back into the surface. Cold water (refrigerator-cold) makes a slightly thicker, fluffier sauce than room-temperature water; the colder water slows the protein hydration and gives the gel network time to organize before relaxing. Taste; the emulsion should read sesame-led, lemon-bright, garlic-present, and fully salted; if it tastes flat, more salt; if it tastes harsh, another splash of water. <a class="step-tech" href="../techniques/tahini-emulsion.html">Tahini emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: Stream in the remaining 35 g / 2½ tbsp ice water in 1 tbsp / 15 g additions, whi" aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">9</span>
         <div class="step-body">Toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">40 g / ¼ cup</span><!-- /auto-link-skip --> pistachios in a dry small skillet over medium heat for 4 minutes, swirling, until fragrant and one shade darker. Cool on a plate; do not chop until cool or the residual heat steams the surrounding parsley.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 9: Toast the 40 g / ¼ cup pistachios in a dry small skillet over medium heat for 4 " aria-label="Start 5 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">10</span>
         <div class="step-body">When the cauliflower is roasted, transfer it directly from the pan to a wide warm bowl. Do not let it sit on the pan; the residual heat overcooks the bottom side. While the cauliflower is still warm (not hot), drizzle two-thirds of the lemon-tahini emulsion (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="140" data-metric-unit="g" data-imp-qty="0.6666666666666666" data-imp-unit="cup">140 g / ⅔ cup</span><!-- /auto-link-skip -->) over the florets and toss gently with tongs to coat every surface. Warm cauliflower picks up the dressing differently than cool cauliflower; the cellular surfaces are more porous and the tahini reads slightly into the florets rather than just sitting on top.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 10: When the cauliflower is roasted, transfer it directly from the pan to a wide war" aria-label="Start 3 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">11</span>
-        <div class="step-body">Turn the dressed cauliflower onto a wide platter or shallow bowl. Drizzle the remaining tahini emulsion (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">70 g / ⅓ cup</span><!-- /auto-link-skip -->) in zigzag stripes over the top; the visible white-tan ribbons are part of the dish' visual structure, not just a flavor delivery. Scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">90 g / ½ cup</span><!-- /auto-link-skip --> pomegranate seeds, the 25 g / 1 medium bunch chopped parsley, and the cooled chopped pistachios across the surface in that order; layering gives the eye a path through the dish.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 11: Turn the dressed cauliflower onto a wide platter or shallow bowl. Drizzle the re" aria-label="Start 2 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Turn the dressed cauliflower onto a wide platter or shallow bowl. Drizzle the remaining tahini emulsion (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">70 g / ⅓ cup</span><!-- /auto-link-skip -->) in zigzag stripes over the top; the visible white-tan ribbons are part of the dish' visual structure, not just a flavor delivery. Scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">90 g / ½ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="pomegranate seeds" data-sub-use="fresh tart cherries (summer), or pomegranate-substitute with 30 g of dried cranberries soaked 10 minutes in hot water" data-sub-note="The pomegranate seeds are doing two jobs: textural pop and sweet-tart flavor. Tart cherries (summer) get both; dried cranberries get only the flavor and miss the pop. The pop is worth seeking out; pomegranates ship well refrigerated and last 2 weeks." tabindex="0" role="button" aria-label="Substitution available for pomegranate seeds">pomegranate seeds</span>, the 25 g / 1 medium bunch chopped parsley, and the cooled chopped pistachios across the surface in that order; layering gives the eye a path through the dish.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 11: Turn the dressed cauliflower onto a wide platter or shallow bowl. Drizzle the re" aria-label="Start 2 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">12</span>
-        <div class="step-body">Finish with a thin drizzle of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">10 g / ½ tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/pomegranate-molasses.html">pomegranate molasses</a> (zigzag stripes again, sparingly ; the molasses is a structural acid, not a sauce), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> finishing olive oil, and a sprinkle of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> urfa biber across the top. The urfa biber should land visibly as dark-burgundy flakes against the pale tahini; the cocoa-raisin profile of the cured chili reads naturally against the brassica sweetness. Serve warm or at room temperature within 30 minutes; the cauliflower stays in the right textural register for that window.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 12: Finish with a thin drizzle of the 10 g / ½ tbsp pomegranate molasses (zigzag str" aria-label="Start 1 min timer for step 12"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Finish with a thin drizzle of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">10 g / ½ tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/pomegranate-molasses.html">pomegranate molasses</a> (zigzag stripes again, sparingly ; the molasses is a structural acid, not a sauce), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> finishing olive oil, and a sprinkle of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="urfa biber" data-sub-use="Aleppo pepper plus a pinch of unsweetened cocoa, or smoked paprika as a last resort" data-sub-note="Aleppo pepper alone misses the dark cured-chili register that urfa biber brings. Smoked paprika reads smoky-sweet rather than smoky-cured-fruit; acceptable as a fallback but the dish loses some character. The full discussion is on the urfa biber page." tabindex="0" role="button" aria-label="Substitution available for urfa biber">urfa biber</span> across the top. The urfa biber should land visibly as dark-burgundy flakes against the pale tahini; the cocoa-raisin profile of the cured chili reads naturally against the brassica sweetness. Serve warm or at room temperature within 30 minutes; the cauliflower stays in the right textural register for that window.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 12: Finish with a thin drizzle of the 10 g / ½ tbsp pomegranate molasses (zigzag str" aria-label="Start 1 min timer for step 12"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
     </ol>
@@ -489,6 +501,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade tahini</span>
           <span class="pair-desc">Hulled sesame seeds toasted lightly at 160 °C and ground with neutral oil to a smooth, pourable past</span>
@@ -498,6 +511,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Lebanese pita bread</span>
           <span class="pair-desc">Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The</span>
@@ -507,6 +521,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Pomegranate molasses</span>
           <span class="pair-desc">Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levant</span>
@@ -516,6 +531,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Tahini-yogurt sauce</span>
           <span class="pair-desc">The Levantine drizzle: tahini, yogurt, lemon, garlic, salt, water. The structural backbone for roast</span>
@@ -525,6 +541,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">High-heat dry roasting</span>
           <span class="pair-desc">Roast cut vegetables on a heavy preheated sheet pan at 220 to 245 °C with a thin coat of oil and agg</span>
@@ -534,6 +551,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Tahini emulsion</span>
           <span class="pair-desc">Whisk water into raw tahini in stages. The paste seizes (proteins hydrate and gel) before it relaxes</span>
@@ -543,6 +561,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Pistachio</span>
           <span class="pair-desc">Seed of Pistacia vera, a desert-tree drupe split between Iranian, Sicilian (Bronte DOP), Turkish (An</span>
@@ -552,6 +571,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Fattoush with sumac and toasted pita</span>
           <span class="pair-desc">Levantine bread salad: oven-crisped day-old pita over chopped raw vegetables, dressed with a sumac, </span>
@@ -642,6 +662,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">24</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>1.4</strong>g protein</span><span class="rh-macro"><strong>2</strong>g carbs</span><span class="rh-macro"><strong>1.3</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Mexican (Veracruzan)</span><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -303,32 +315,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">1</span>
         <div class="step-body">Heat the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">250 g / 1 cup</span><!-- /auto-link-skip --> plus <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> neutral oil in a medium saucepan over medium-low heat until just shimmering and 130 to 150°C / 270 to 300°F (a sesame seed dropped in should sizzle gently and dance, not burst; if the oil is too hot the chilies and aromatics burn instantly and the salsa goes bitter). The oil temperature control is the single most important variable in salsa macha; warm oil produces deep clean flavor, hot oil produces burnt bitter sauce. Use a thermometer or test with a single sesame seed before adding the rest of the ingredients.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: Heat the 250 g / 1 cup plus 2 tbsp neutral oil in a medium saucepan over medium-" aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
         <div class="step-body">Add the 20 g / 4 to 5 sliced garlic cloves to the warm oil; fry gently, stirring with a wooden spoon, for 90 seconds to 2 minutes until the garlic turns a light golden color and just begins to crisp at the edges. Pull the pan off the heat the moment the garlic reads pale gold; garlic continues cooking in the residual oil heat and goes from golden to burnt in 30 seconds. Burnt garlic ruins the salsa and there is no rescue; pull early.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Add the 20 g / 4 to 5 sliced garlic cloves to the warm oil; fry gently, stirring" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">3</span>
         <div class="step-body">Return the pan to medium-low heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">50 g / ⅓ cup</span><!-- /auto-link-skip --> peanuts; fry 90 seconds, stirring constantly, until the peanuts are a shade darker and aromatic. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">20 g / 3 tbsp</span><!-- /auto-link-skip --> pepitas and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">20 g / 3 tbsp</span><!-- /auto-link-skip --> sesame seeds; fry 60 seconds, stirring, until the sesame seeds turn light golden and start to pop and the pepitas puff slightly.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: Return the pan to medium-low heat. Add the 50 g / ⅓ cup peanuts; fry 90 seconds," aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Add the 15 g / 4 to 5 morita chilies, 8 g / 10 to 12 chiles de árbol, and 12 g / 1 large ancho chili (torn into pieces); fry only 30 to 45 seconds, stirring constantly, just until the chilies darken slightly and release a deep aromatic smoke. Do not over-fry the chilies; the dried chilies absorb the warm oil quickly and burn from the inside, and burnt chilies make the entire batch bitter. Pull the pan off the heat the moment the chilies smell aggressively aromatic; the residual oil heat continues the cook.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Add the 15 g / 4 to 5 morita chilies, 8 g / 10 to 12 chiles de árbol, and 12 g /" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">5</span>
-        <div class="step-body">Let the oil-and-ingredients mixture cool 10 minutes off the heat; the residual heat continues to extract flavor into the oil during the cool-down (a brief infusion step that is structural for depth). Pour the entire mixture into the bowl of a food processor (5 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1680" data-metric-unit="ml" data-imp-qty="7" data-imp-unit="cup">7 cup</span><!-- /auto-link-skip --> capacity); add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">6 g / 1 tsp</span><!-- /auto-link-skip --> salt and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> brown sugar. Pulse 10 to 12 times in 1-second bursts to a coarse-medium grind; the texture should preserve visible bits of chili, garlic, peanut, pepita, and sesame (a chunky oil-suspended sauce, not a smooth puree). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tsp">20 g / 4 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/apple-cider-vinegar.html">apple cider vinegar</a>; pulse 3 to 4 more times to integrate.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 5: Let the oil-and-ingredients mixture cool 10 minutes off the heat; the residual h" aria-label="Start 12 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
+        <div class="step-body">Let the oil-and-ingredients mixture cool 10 minutes off the heat; the residual heat continues to extract flavor into the oil during the cool-down (a brief infusion step that is structural for depth). Pour the entire mixture into the bowl of a food processor (5 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1680" data-metric-unit="ml" data-imp-qty="7" data-imp-unit="cup">7 cup</span><!-- /auto-link-skip --> capacity); add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">6 g / 1 tsp</span><!-- /auto-link-skip --> salt and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> brown sugar. Pulse 10 to 12 times in 1-second bursts to a coarse-medium grind; the texture should preserve visible bits of chili, garlic, peanut, pepita, and sesame (a chunky oil-suspended sauce, not a smooth puree). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tsp">20 g / 4 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="apple cider vinegar" data-sub-use="white vinegar, rice vinegar, or lime juice" data-sub-note="Apple cider vinegar is the most common modern Mexican choice; white vinegar reads sharper and is canonical in some Veracruzan preparations; rice vinegar reads softer and is useful in the chili-crisp hybrid version (see modifications); lime juice (added off-heat) reads brighter and is canonical in some northern Mexican preparations. Use the same 20 g amount for any." tabindex="0" role="button" aria-label="Substitution available for apple cider vinegar"><a class="x-link" data-category="ingredients" href="../ingredients/apple-cider-vinegar.html">apple cider vinegar</a></span>; pulse 3 to 4 more times to integrate.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 5: Let the oil-and-ingredients mixture cool 10 minutes off the heat; the residual h" aria-label="Start 12 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">6</span>
         <div class="step-body">Taste and adjust: salsa macha should read deeply chili-smoky-fried with crunchy nut-and-seed texture, balanced acid from the vinegar, gentle sweetness from the brown sugar, and a long warm heat at the back; if flat, an extra <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.16666666666666669" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> / pinch of <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> apple cider vinegar; if too acidic, more sugar. Transfer to a clean glass jar (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="ml" data-imp-qty="26.666666666666668" data-imp-unit="tbsp">400 ml</span><!-- /auto-link-skip --> capacity); the salsa is meant to have visible oil pooled on top with the chunky paste below. Let rest at room temperature 2 hours before first use for the flavors to integrate fully; refrigerate after the rest period. Use as a condiment for tacos, eggs (especially fried or scrambled), grilled meat (steak, chicken, pork, lamb), grilled or roasted vegetables, beans (canonical with stewed black beans and pinto beans), soups (a spoonful stirred into a bowl of bean or tomato soup), cheese (on quesadillas, grilled cheese, <a class="x-link" data-category="ingredients" href="../ingredients/queso-fresco.html">queso fresco</a>, or just spooned over a wedge of <a class="x-link" data-category="ingredients" href="../ingredients/feta.html">feta</a>), and <a class="x-link" data-category="ingredients" href="../ingredients/avocado.html">avocado</a>.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 6: Taste and adjust: salsa macha should read deeply chili-smoky-fried with crunchy " aria-label="Start 3 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
@@ -428,6 +440,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -437,6 +450,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -446,6 +460,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -455,6 +470,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -464,6 +480,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Dried Chinese chilies</span>
           <span class="pair-desc">Sun-dried whole chilies sold by varietal: erjingtiao, chao tian jiao, da hong pao, tian tian, deng l</span>
@@ -473,6 +490,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -482,6 +500,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -491,6 +510,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           <span class="pair-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby sp</span>
@@ -581,6 +601,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

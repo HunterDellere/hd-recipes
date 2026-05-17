@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -109,6 +110,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -182,12 +191,12 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
-        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="g" data-imp-qty="4" data-imp-unit="cups">1000 g / 4 cups</span><!-- /auto-link-skip --> pomegranate juice, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">50 g / ¼ cup</span><!-- /auto-link-skip --> sugar (if using), and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/lemon.html">lemon</a> juice (if using) in a wide non-reactive saucepan: stainless steel or enamel-coated cast iron is ideal. Avoid reactive aluminum or unsealed copper, which will discolor with the acid and pick up off-flavors. The pan width matters: a 25 to 28 cm / 10 to 11 inch wide pan reduces twice as fast as a 20 cm / 8 inch tall narrow pot of the same liquid volume because surface evaporation rate scales with surface area, not pot capacity.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Combine the 1000 g / 4 cups pomegranate juice, the 50 g / ¼ cup sugar (if using)" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="g" data-imp-qty="4" data-imp-unit="cups">1000 g / 4 cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="pomegranate juice" data-sub-use="sour cherry juice, mulberry juice, or grape juice" data-sub-note="Sour cherry molasses is the Iranian rob-e-albalu and reduces by the same method. Mulberry molasses is the Lebanese rob-el-toot. Grape molasses (pekmez or dibs) is the Turkish/Middle Eastern grape syrup. Each is a distinct ingredient with its own use cases; the reduction technique is identical." tabindex="0" role="button" aria-label="Substitution available for pomegranate juice">pomegranate juice</span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">50 g / ¼ cup</span><!-- /auto-link-skip --> sugar (if using), and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/lemon.html">lemon</a> juice (if using) in a wide non-reactive saucepan: stainless steel or enamel-coated cast iron is ideal. Avoid reactive aluminum or unsealed copper, which will discolor with the acid and pick up off-flavors. The pan width matters: a 25 to 28 cm / 10 to 11 inch wide pan reduces twice as fast as a 20 cm / 8 inch tall narrow pot of the same liquid volume because surface evaporation rate scales with surface area, not pot capacity.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Combine the 1000 g / 4 cups pomegranate juice, the 50 g / ¼ cup sugar (if using)" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="40">
         <span class="step-num">2</span>
         <div class="step-body">Bring to a strong simmer over medium-high heat (active bubbles across the surface, not a rolling boil), then reduce to medium so the simmer is steady but controlled. Cook 30 to 45 minutes uncovered, stirring with a heat-proof spatula every 5 to 7 minutes to prevent scorching at the edges. The volume drops gradually; track it by eye against the side of the pan or by lifting the spatula and watching how the liquid sheets off (early-stage sheets thin and fast, mid-stage sheets thicker and slower, finished molasses coats the spatula and stays).<button type="button" class="step-time step-time-btn" data-step-timer="40" data-step-label="Step 2: Bring to a strong simmer over medium-high heat (active bubbles across the surfac" aria-label="Start 40 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">40 min</span></button></div>
         
@@ -197,12 +206,12 @@
         <div class="step-body">The cure is complete when the volume has reduced to roughly <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">250 ml / 1 cup</span><!-- /auto-link-skip --> (one quarter of the starting volume) and the liquid coats the back of the spatula. The definitive test: draw a finger across the back of a coated spoon; the line should stay clear for 2 to 3 seconds before the molasses flows back over it. Color shifts from bright pomegranate red to deep ruby-burgundy. The aroma concentrates from fresh-juice tartness to a complex sour-sweet roasted-fruit register.</div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">4</span>
         <div class="step-body">Remove from heat and let cool to room temperature in the pan; the molasses thickens further as it cools because the supersaturated sugar concentrates as the residual water cools. The finished molasses at room temperature pours like cold <a class="x-link" data-category="ingredients" href="../ingredients/honey.html">honey</a>, slightly slower; if it pours like fresh juice, it is undercooked and needs another 5 to 10 minutes of reduction. If it pours like cold molasses (very slow, in ribbons), it is overcooked and risks crystallization on storage; thin with 30 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml</span><!-- /auto-link-skip --> of water, stir, and bring back to a simmer for 1 minute to redissolve.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 4: Remove from heat and let cool to room temperature in the pan; the molasses thick" aria-label="Start 15 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Transfer the cooled molasses to a clean glass jar; cap tightly. Refrigerate; the molasses holds 2 to 3 months refrigerated, longer (up to 6 months) at high acid concentration. The Adjustment: if the molasses tastes harsh or one-note sour, the lemon juice was too much for your batch of pomegranate juice; balance with a small drizzle of honey before use. If it tastes flat or candy-sweet, the lemon juice was insufficient or omitted; bump with a small splash (5 to 10 g / 1 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">2 tsp</span><!-- /auto-link-skip -->) of fresh lemon juice when using in dressings.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Transfer the cooled molasses to a clean glass jar; cap tightly. Refrigerate; the" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -259,6 +268,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Fattoush with sumac and toasted pita</span>
           <span class="pair-desc">Levantine bread salad: oven-crisped day-old pita over chopped raw vegetables, dressed with a sumac, </span>
@@ -268,6 +278,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Lebanese pita bread</span>
           <span class="pair-desc">Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The</span>
@@ -277,6 +288,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Roasted cauliflower tahini salad with pomegranate</span>
           <span class="pair-desc">Cauliflower roasted hard at 230 °C until the florets are mahogany on the cut faces, dressed warm wit</span>
@@ -286,6 +298,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -295,6 +308,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Lemon</span>
           <span class="pair-desc">Citrus limon. The kitchen's primary bright finishing acid (5 to 6 percent citric acid in the juice) </span>
@@ -304,6 +318,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -313,6 +328,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -322,6 +338,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -412,6 +429,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

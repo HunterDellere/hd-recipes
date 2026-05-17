@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">181</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.4</strong>g protein</span><span class="rh-macro"><strong>0.4</strong>g carbs</span><span class="rh-macro"><strong>20.3</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">French (with broader American adoption)</span><span class="rh-tag rh-tag-course">breakfast</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -271,22 +283,22 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">1</span>
         <div class="step-body">Make the brown butter: in a small saucepan over medium heat, melt the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> butter (for the finish). Continue cooking 3 to 4 minutes, swirling the pan occasionally; the butter will foam, then the foam will subside, then the milk solids at the bottom will turn deep amber and the butter will smell intensely nutty (the signal that the Maillard reaction on the milk-solid proteins has produced the canonical <a class="x-link" data-category="ingredients" href="../ingredients/hazelnut.html">hazelnut</a> aroma). Pull off the heat the instant the brown butter smells nutty; the residual pan heat continues to cook the butter and the amber turns to burnt in under 30 seconds. Transfer the brown butter to a small bowl; reserve at room temperature. <a class="step-tech" href="../techniques/brown-butter.html">Brown butter (beurre noisette)</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: Make the brown butter: in a small saucepan over medium heat, melt the 20 g / 1½ " aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">2</span>
         <div class="step-body">In a small mixing bowl, crack the 200 g / 4 eggs. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> cold cubed butter and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">2 g / ¼ tsp</span><!-- /auto-link-skip --> salt. Whisk vigorously with a fork for 30 seconds; the cold butter cubes will not fully incorporate into the eggs (which is correct and structural; the cubes melt into the eggs during cooking and produce the small-curd texture). The mixture should be uniform in color (no streaks of white) with visible small butter cubes throughout.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: In a small mixing bowl, crack the 200 g / 4 eggs. Add the 30 g / 2 tbsp cold cub" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
         <div class="step-body">Heat a small heavy nonstick or carbon steel skillet (20 to 22 cm diameter) over low heat for 1 minute (or set on the lowest gas burner setting). Pour in the egg-and-butter mixture. Let sit 30 seconds undisturbed; this allows the bottom to barely start setting (look for a very thin film of cooked egg around the edge of the pan).<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Heat a small heavy nonstick or carbon steel skillet (20 to 22 cm diameter) over " aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">4</span>
         <div class="step-body">Begin stirring with a rubber spatula or wooden spoon in slow continuous figure-8 motions, scraping the bottom and the sides of the pan to prevent localized overcooking. The 200 g / 4 eggs will slowly transition through stages: liquid (first 2 minutes); thickened cream (next 2 minutes); soft custard with the first small curds appearing (next 2 minutes); fully formed small curds in a glossy custard (final 1 to 2 minutes). Total cook time is 6 to 8 minutes; the slow patient pace is the structural difference between this preparation and an American-style fast scramble. If the eggs cook too quickly (you see large curds forming rapidly, or any browning on the bottom), pull the pan off the heat for 15 seconds and continue stirring off-heat; this is a structural technique to control the cook on a burner that runs too hot.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 4: Begin stirring with a rubber spatula or wooden spoon in slow continuous figure-8" aria-label="Start 7 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
@@ -296,7 +308,7 @@
         <div class="step-body">The 200 g / 4 eggs are done the instant the curds have set into a glossy custard but the surface still glistens with visible moisture (a slight wobble when the pan is shaken; the curds barely holding together rather than fully cohesive). The residual heat in the pan continues to cook the curds for 30 seconds after the pan leaves the burner, so pull at this slightly-underdone stage; a 200 g / 4-egg scramble that looks fully set in the pan will be overcooked on the plate. Immediately remove the pan from the heat.</div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Plate immediately: spoon the soft scrambled eggs onto warm plates (or onto thick slices of toasted bread). Drizzle the reserved <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> brown butter over the top; scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">10 g / 2 tbsp</span><!-- /auto-link-skip --> chopped chives generously; sprinkle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> flaky sea salt and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.22222222222222224" data-imp-unit="tsp">0.5 g</span><!-- /auto-link-skip --> / few cranks black pepper. Serve immediately; the eggs continue to cook on the warm plate and the dish reads at peak texture within 60 seconds of plating.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Plate immediately: spoon the soft scrambled eggs onto warm plates (or onto thick" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -386,6 +398,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -395,6 +408,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -404,6 +418,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -413,6 +428,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Hong Kong silk-stocking milk tea (絲襪奶茶)</span>
           <span class="pair-desc">Cha chaan teng style: a blend of Ceylon black teas extracted hot, repeatedly poured between two pots</span>
@@ -422,6 +438,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Brown butter (beurre noisette)</span>
           <span class="pair-desc">Cook butter past the foaming stage until milk solids turn amber — yields hazelnut aroma and Maillard</span>
@@ -431,6 +448,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Chives</span>
           <span class="pair-desc">Allium schoenoprasum, the smallest of the cultivated alliums. Hollow grass-thin green leaves, mild f</span>
@@ -440,6 +458,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">House blend chai</span>
           <span class="pair-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no</span>
@@ -449,6 +468,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kashmiri noon chai (pink salt tea)</span>
           <span class="pair-desc">Green tea boiled with baking soda and aerated for 20 minutes until it turns brick red, then mixed wi</span>
@@ -539,6 +559,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

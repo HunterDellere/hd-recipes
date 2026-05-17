@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -110,6 +111,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -216,22 +225,22 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">1</span>
-        <div class="step-body">Place the 12 g / 2 heaping tbsp genmaicha in a 1.5 L glass jar or carafe. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="ml" data-imp-qty="4" data-imp-unit="cups">1000 ml / 4 cups</span><!-- /auto-link-skip --> cold filtered water. The leaves and rice grains will float; press them down with a spoon so they hydrate evenly. Do not skip filtered water, chlorinated tap water pulls metallic notes from the toasted rice that ruin the brew.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Place the 12 g / 2 heaping tbsp genmaicha in a 1.5 L glass jar or carafe. Add th" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Place the 12 g / 2 heaping tbsp <span class="sub-hint" data-sub-for="genmaicha" data-sub-use="sencha + ½ tsp toasted brown rice puffs" data-sub-note="Decent approximation. The rice puffs need to be unsweetened plain rice cereal, not flavored. Add to the cold brew alongside the sencha." tabindex="0" role="button" aria-label="Substitution available for genmaicha">genmaicha</span> in a 1.5 L glass jar or carafe. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="ml" data-imp-qty="4" data-imp-unit="cups">1000 ml / 4 cups</span><!-- /auto-link-skip --> cold filtered water. The leaves and rice grains will float; press them down with a spoon so they hydrate evenly. Do not skip filtered water, chlorinated tap water pulls metallic notes from the toasted rice that ruin the brew.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Place the 12 g / 2 heaping tbsp genmaicha in a 1.5 L glass jar or carafe. Add th" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="480">
         <span class="step-num">2</span>
         <div class="step-body">Cap the jar loosely (a tight lid is fine but a loose cover prevents pressure buildup if any fermentation occurs during a long steep). Refrigerate for 6 to 8 hours, or overnight. Cold water extracts L-theanine (the sweet umami amino acid) and most aromatic compounds slowly but extracts the bitter catechins very slowly, the result is a tea that tastes round and full-bodied without the dry-mouth tannin of hot brewing.<span class="step-time">8 h</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">After steeping, strain through a fine-mesh sieve into a clean carafe. Press the wet leaves gently with the back of a spoon to extract the last <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="ml" data-imp-qty="3.3333333333333335" data-imp-unit="tbsp">50 ml</span><!-- /auto-link-skip --> or so of tea trapped in the hydrated mass. The brew should be a pale gold-green with a faint suspended cloudiness from the rice flour, that cloudiness is correct; do not strain through a coffee filter or you remove the aromatic suspension.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: After steeping, strain through a fine-mesh sieve into a clean carafe. Press the " aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Pour over ice in tall glasses. The tea is perfectly drinkable straight out of the steep but reads brighter and more aromatic over ice, the dilution from melting ice opens the rice notes. Holds in the refrigerator 3 days; aroma slowly fades after 24 hours.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Pour over ice in tall glasses. The tea is perfectly drinkable straight out of th" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -281,6 +290,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -290,6 +300,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Furikake (homemade rice seasoning)</span>
           <span class="pair-desc">Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice</span>
@@ -299,6 +310,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso-butter shrimp with delicata, shimeji, and charred broccoli</span>
           <span class="pair-desc">A one-pan washoku-leaning sheet dish. Delicata roasts to chestnut-sweet edges, broccoli and shimeji </span>
@@ -308,6 +320,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso soup (miso-shiru)</span>
           <span class="pair-desc">Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat</span>
@@ -317,6 +330,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Genmaicha</span>
           <span class="pair-desc">Japanese green tea blended with roasted brown rice. The toasted rice contributes a warm, popcorn-lik</span>
@@ -326,6 +340,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Onigiri (rice triangles)</span>
           <span class="pair-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-sa</span>
@@ -335,6 +350,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Pan-seared mackerel with daikon oroshi and ponzu</span>
           <span class="pair-desc">Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to fir</span>
@@ -344,6 +360,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ponzu</span>
           <span class="pair-desc">Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and kat</span>
@@ -428,6 +445,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

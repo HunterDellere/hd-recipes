@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">114</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>3.7</strong>g protein</span><span class="rh-macro"><strong>22.9</strong>g carbs</span><span class="rh-macro"><strong>2.3</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/chinese.html" data-category="cuisines">Chinese</a><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -332,32 +344,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="1.3227746521102666" data-imp-unit="lb">600 g</span><!-- /auto-link-skip --> eggplant into 1.5 cm × 6 cm batons. Do not salt, Chinese and Japanese eggplant cultivars are already low in water and salting tightens the texture too much. The dry-fry technique handles moisture removal from the heat direction.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Cut the 600 g eggplant into 1.5 cm × 6 cm batons. Do not salt, Chinese and Japan" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
-        <div class="step-body">Mix the fish-fragrant sauce. In a small bowl, whisk together the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="tbsp">20 ml / 1½ tbsp</span><!-- /auto-link-skip --> soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="tbsp">20 ml / 1½ tbsp</span><!-- /auto-link-skip --> Chinkiang vinegar, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="18" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">18 g / 1½ tbsp</span><!-- /auto-link-skip --> sugar, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">5 g / ½ tbsp</span><!-- /auto-link-skip --> cornstarch, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> water until the sugar and cornstarch dissolve. The sauce is going in as a single pour; pre-mixing prevents a scramble during the high-heat finish.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Mix the fish-fragrant sauce. In a small bowl, whisk together the 20 ml / 1½ tbsp" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Mix the fish-fragrant sauce. In a small bowl, whisk together the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="tbsp">20 ml / 1½ tbsp</span><!-- /auto-link-skip --> soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="tbsp">20 ml / 1½ tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="Chinkiang vinegar" data-sub-use="rice vinegar + a few drops dark soy" data-sub-note="Chinkiang is the traditional choice. Rice vinegar reads sharper; a few drops of dark soy add back some of the malty depth. Acceptable substitute." tabindex="0" role="button" aria-label="Substitution available for Chinkiang vinegar">Chinkiang vinegar</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="18" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">18 g / 1½ tbsp</span><!-- /auto-link-skip --> sugar, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">5 g / ½ tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="cornstarch" data-sub-use="potato starch" data-sub-note="1:1 substitute. Potato starch produces a slightly glossier sauce that holds longer at table temperature." tabindex="0" role="button" aria-label="Substitution available for cornstarch">cornstarch</span>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> water until the sugar and cornstarch dissolve. The sauce is going in as a single pour; pre-mixing prevents a scramble during the high-heat finish.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Mix the fish-fragrant sauce. In a small bowl, whisk together the 20 ml / 1½ tbsp" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
         <div class="step-body">Dry-fry the eggplant. Heat a wok over high heat until smoking lightly. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> oil and the eggplant batons. Stir-fry continuously for 4 to 5 minutes; the eggplant will progress through three stages, releasing steam, collapsing and shrinking by 30 to 40%, then browning at the cut faces. Pull when the cut faces are golden-brown, the structure has collapsed inward, and the surface is dry to the touch. Transfer to a plate. <a class="step-tech" href="../techniques/dry-frying-eggplant.html">Dry-frying eggplant (gan bian)</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Dry-fry the eggplant. Heat a wok over high heat until smoking lightly. Add the 3" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">Render the aromatic base. Wipe the wok clean and return to medium heat (140 to 160°C / 285 to 320°F). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> oil and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> doubanjiang. Cook 90 seconds, breaking up the paste with a spatula, until the oil turns brilliant red and smells distinctly of chili-bean paste. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> minced ginger, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> minced garlic, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.0582197216882132" data-imp-unit="oz">30 g</span><!-- /auto-link-skip --> chopped scallion whites. Cook 30 seconds until fragrant; do not exceed medium heat or the aromatics scorch. <a class="step-tech" href="../techniques/red-oil-rendering.html">Red oil rendering</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Render the aromatic base. Wipe the wok clean and return to medium heat (140 to 1" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Build the dish. Return the dry-fried eggplant to the wok. Toss for 30 seconds in the rendered red oil to coat. Whisk the prepared sauce mixture once (the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> cornstarch settles) and pour around the edge of the wok. Toss continuously for 60 to 90 seconds; the sauce will boil, thicken, and coat the eggplant. Pull when the sauce has thickened to a glossy coat that clings to each piece, with no pooled liquid at the bottom of the wok.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Build the dish. Return the dry-fried eggplant to the wok. Toss for 30 seconds in" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Finish. Pull off heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> reserved scallion greens and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">5 ml / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a>. Toss once. Transfer to a serving plate and serve immediately with steamed jasmine rice.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Finish. Pull off heat. Add the 20 g reserved scallion greens and 5 ml / 1 tsp to" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -444,6 +456,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese white congee</span>
           <span class="pair-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The ric</span>
@@ -453,6 +466,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken and ginger congee</span>
           <span class="pair-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clea</span>
@@ -462,6 +476,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese tea eggs</span>
           <span class="pair-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marbl</span>
@@ -471,6 +486,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cocoa-osmanthus dun nai</span>
           <span class="pair-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral</span>
@@ -480,6 +496,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry-frying eggplant (gan bian)</span>
           <span class="pair-desc">Cook cut eggplant over high heat in a wok with little or no oil until the surface dehydrates and bro</span>
@@ -489,6 +506,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Red oil rendering</span>
           <span class="pair-desc">Bloom doubanjiang (Pixian chili bean paste) and dried chilies in oil at 140 to 160°C / 285 to 320°F </span>
@@ -498,6 +516,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -507,6 +526,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Eggplant (aubergine, brinjal)</span>
           <span class="pair-desc">Solanum melongena. A sponge-textured nightshade with a cell structure that absorbs oil and water agg</span>
@@ -597,6 +617,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

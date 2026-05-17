@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">134</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>22.8</strong>g protein</span><span class="rh-macro"><strong>5.7</strong>g carbs</span><span class="rh-macro"><strong>1.6</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/italian.html" data-category="cuisines">Italian</a><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -337,37 +349,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Prep the squid. Cut the tube portions into 1.5 cm rings; cut the tentacles into 4 cm pieces or leave whole if small. Pat dry with paper towels (a wet squid steams instead of searing in the initial sauté).<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Prep the squid. Cut the tube portions into 1.5 cm rings; cut the tentacles into " aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">2</span>
         <div class="step-body">Begin the squid braise. Heat the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> olive oil in a wide heavy saucepan over medium heat. When the oil is shimmering (not smoking), add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> chopped garlic and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> red pepper flakes. Sweat 60 to 90 seconds until the garlic is pale gold and fragrant, do not brown the garlic past pale gold or it goes bitter. Add the squid rings and tentacles. Stir-fry 90 seconds; the squid will release water in the first minute, then begin to firm up. The squid is in the rubber zone right now (this is normal); the long simmer will rescue it. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 2: Begin the squid braise. Heat the 60 ml / ¼ cup olive oil in a wide heavy saucepa" aria-label="Start 4 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="38">
         <span class="step-num">3</span>
-        <div class="step-body">Deglaze and braise. Pour in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> white wine. Bring to a simmer; the wine should reduce by half within 3 minutes (alcohol cooks off, the sharp wine note mellows into a savory base). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> hand-crushed San Marzano tomatoes with their juice, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> black pepper. Bring back to a simmer; reduce heat to low (the surface should tremble, not boil). Cover loosely with a lid and braise 35 minutes. The squid will progress: rubbery and contracted at 5 minutes, slightly more relaxed at 15 minutes, properly tender at 30 to 35 minutes. Test by cutting a ring with a knife, it should yield easily and the texture should read silky-tender, not chewy. <a class="step-tech" href="../techniques/deglazing.html">Deglazing</a><button type="button" class="step-time step-time-btn" data-step-timer="38" data-step-label="Step 3: Deglaze and braise. Pour in the 240 ml / 1 cup white wine. Bring to a simmer; th" aria-label="Start 38 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">38 min</span></button></div>
+        <div class="step-body">Deglaze and braise. Pour in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> white wine. Bring to a simmer; the wine should reduce by half within 3 minutes (alcohol cooks off, the sharp wine note mellows into a savory base). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> hand-crushed <span class="sub-hint" data-sub-for="San Marzano tomatoes" data-sub-use="any high-quality whole peeled tomatoes (Cento, Bianco DiNapoli, or local equivalent)" data-sub-note="San Marzano DOP is the canonical choice but quality whole-peeled tomatoes from any source work. Crushed or diced tomatoes are a step down (more processed, more aggressive cooking flavor); whole peeled and hand-crushed by the cook is the textbook approach." tabindex="0" role="button" aria-label="Substitution available for San Marzano tomatoes">San Marzano tomatoes</span> with their juice, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> black pepper. Bring back to a simmer; reduce heat to low (the surface should tremble, not boil). Cover loosely with a lid and braise 35 minutes. The squid will progress: rubbery and contracted at 5 minutes, slightly more relaxed at 15 minutes, properly tender at 30 to 35 minutes. Test by cutting a ring with a knife, it should yield easily and the texture should read silky-tender, not chewy. <a class="step-tech" href="../techniques/deglazing.html">Deglazing</a><button type="button" class="step-time step-time-btn" data-step-timer="38" data-step-label="Step 3: Deglaze and braise. Pour in the 240 ml / 1 cup white wine. Bring to a simmer; th" aria-label="Start 38 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">38 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="9">
         <span class="step-num">4</span>
         <div class="step-body">Boil the pasta. Bring <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4500" data-metric-unit="ml" data-imp-qty="18" data-imp-unit="cups">4500 ml / 18 cups</span><!-- /auto-link-skip --> water to a rolling boil in a large pot. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">70 g / ¼ cup</span><!-- /auto-link-skip --> kosher salt, the water must taste like the sea. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> linguine and cook 1 minute less than the package al dente time (typically 8 to 9 minutes; check by biting a strand at minute 8). Reserve <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">250 ml / 1 cup</span><!-- /auto-link-skip --> of the starchy pasta water before draining. Drain the pasta but do not rinse.<button type="button" class="step-time step-time-btn" data-step-timer="9" data-step-label="Step 4: Boil the pasta. Bring 4500 ml / 18 cups water to a rolling boil in a large pot. " aria-label="Start 9 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">9 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">5</span>
-        <div class="step-body">Add the squid ink. Once the squid braise has reached tenderness, stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> squid ink. The sauce will turn dramatically jet-black within seconds; whisk gently to distribute the ink evenly. Continue simmering 2 to 3 minutes for the ink to integrate into the sauce, the ink contributes a faint marine-mineral umami in addition to the color, and a brief simmer rounds out the flavor. Taste the sauce; it should land at deeply savory, faintly briny, with the long-cooked squid having transferred gelatin into the sauce body. Adjust salt if needed.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Add the squid ink. Once the squid braise has reached tenderness, stir in the 8 g" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Add the <span class="sub-hint" data-sub-for="squid ink (packets or jarred)" data-sub-use="reserved fresh ink from whole squid (the gold standard)" data-sub-note="When buying whole squid, you can carefully cut out the silver ink sacs during cleaning and reserve them. Press the ink out into a small bowl with a few drops of white wine to keep it fluid. Fresh ink is brighter, more concentrated, and produces a more dramatic dish than packet/jar ink, but packet/jar ink is widely available and works well." tabindex="0" role="button" aria-label="Substitution available for squid ink">squid ink</span>. Once the squid braise has reached tenderness, stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> squid ink. The sauce will turn dramatically jet-black within seconds; whisk gently to distribute the ink evenly. Continue simmering 2 to 3 minutes for the ink to integrate into the sauce, the ink contributes a faint marine-mineral umami in addition to the color, and a brief simmer rounds out the flavor. Taste the sauce; it should land at deeply savory, faintly briny, with the long-cooked squid having transferred gelatin into the sauce body. Adjust salt if needed.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Add the squid ink. Once the squid braise has reached tenderness, stir in the 8 g" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Toss with pasta. Add the drained linguine directly to the squid braise pan. Toss vigorously with tongs to coat every strand black. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="4" data-imp-unit="tbsp">60 ml / 4 tbsp</span><!-- /auto-link-skip --> of the reserved pasta water; the starchy water emulsifies with the olive oil and ink to produce a glossy clinging sauce that coats every strand. If the sauce is too thick, add another 30 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml</span><!-- /auto-link-skip --> of pasta water to thin. Cook on medium heat 60 seconds while tossing, the pasta finishes its last minute of cooking in the sauce, absorbing flavor in a way that draining-and-saucing later cannot match. <a class="step-tech" href="../techniques/pan-emulsion.html">Pan emulsion (mantecare)</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Toss with pasta. Add the drained linguine directly to the squid braise pan. Toss" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Finish and plate. Pull off heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> chopped parsley, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="tsp">8 ml / 1½ tsp</span><!-- /auto-link-skip --> fresh lemon juice, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> finishing olive oil. Toss once. Plate into wide pasta bowls; the pasta should be deeply black with the squid pieces visible against the dark sauce. Serve immediately. Bread on the side for sopping the sauce; a glass of the same white wine used in the braise is the canonical pairing.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Finish and plate. Pull off heat. Add the 15 g chopped parsley, 8 ml / 1½ tsp fre" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -465,6 +477,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Italian salsa verde</span>
           <span class="pair-desc">The Italian green sauce that finishes bollito misto, grilled and poached fish, roast meats, beans, e</span>
@@ -474,6 +487,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Panzanella with charred tomatoes</span>
           <span class="pair-desc">Tuscan bread salad rebuilt as a study in tomato states: ripe heirloom flesh salt-cured to extract it</span>
@@ -483,6 +497,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Roasted pear and gorgonzola tartine</span>
           <span class="pair-desc">Bosc pear roasted in butter and balsamic until caramelized, smeared over a toasted sourdough slice w</span>
@@ -492,6 +507,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Sautéed beet greens with anchovy, garlic, and chili</span>
           <span class="pair-desc">A bunch of beet greens, stems and leaves separated, cooked in two stages in a wide skillet of olive </span>
@@ -501,6 +517,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -510,6 +527,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Deglazing</span>
           <span class="pair-desc">Add liquid to a hot pan after a sear so the fond — browned protein and sugar residue — dissolves int</span>
@@ -519,6 +537,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Pan emulsion (mantecare)</span>
           <span class="pair-desc">Bind starchy pasta water and fat into a glossy sauce by tossing pasta with fat over low heat, finish</span>
@@ -528,6 +547,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Italian</span>
           <span class="pair-desc">Restraint plus fat: olive oil, cured pork, aged cheese, acid. The technique is in the ratios, not th</span>
@@ -618,6 +638,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

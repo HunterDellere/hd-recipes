@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">2</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.1</strong>g protein</span><span class="rh-macro"><strong>0.6</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Moroccan</span><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -204,27 +216,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">1</span>
-        <div class="step-body">Scrub and cut the lemons. Under cold running water, scrub the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="g" data-imp-qty="2.2046244201837775" data-imp-unit="lb">1000 g</span><!-- /auto-link-skip --> lemons with a vegetable brush to remove any wax coating (supermarket lemons are typically waxed for shelf life) and surface dirt. Pat fully dry with a clean towel; surface water dilutes the salt-cure and slows the brine formation. Stand each lemon stem-side up on a cutting board and cut lengthwise into quarters from the stem end downward, stopping about 1 cm short of cutting all the way through so the quarters stay attached at the blossom end. The lemon should open like a flower when squeezed gently from the sides.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Scrub and cut the lemons. Under cold running water, scrub the 1000 g lemons with" aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">Scrub and cut the <span class="sub-hint" data-sub-for="lemons" data-sub-use="limes" data-sub-note="Preserved limes (used in Indian and Persian cooking; &quot;loomi&quot; or &quot;amba&quot; is a dried version) substitute structurally. Use 1000 g key limes or Persian limes; the cure proceeds identically. The result is brighter and slightly more bitter; particularly good in Indian-inspired dressings and in seafood applications." tabindex="0" role="button" aria-label="Substitution available for lemons">lemons</span>. Under cold running water, scrub the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="g" data-imp-qty="2.2046244201837775" data-imp-unit="lb">1000 g</span><!-- /auto-link-skip --> lemons with a vegetable brush to remove any wax coating (supermarket lemons are typically waxed for shelf life) and surface dirt. Pat fully dry with a clean towel; surface water dilutes the salt-cure and slows the brine formation. Stand each lemon stem-side up on a cutting board and cut lengthwise into quarters from the stem end downward, stopping about 1 cm short of cutting all the way through so the quarters stay attached at the blossom end. The lemon should open like a flower when squeezed gently from the sides.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Scrub and cut the lemons. Under cold running water, scrub the 1000 g lemons with" aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">2</span>
         <div class="step-body">Pack the lemons with salt. Place <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">20 g / 2 tbsp</span><!-- /auto-link-skip --> of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="46.51162790697675" data-imp-unit="tsp">200 g</span><!-- /auto-link-skip --> salt in the bottom of the clean 1 L glass jar. Take the first lemon, gently spread the four quarters open over a small bowl, pack about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">20 g / 2 tbsp</span><!-- /auto-link-skip --> of salt into the cut surfaces (getting salt onto all four cut faces and into the center), close the lemon back up around the salt, and press it into the jar. Repeat with each lemon, packing them tightly into the jar; the lemons should compress under the pressure of the lemon above. As you press each lemon down, juice will release and begin to pool in the bottom of the jar.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 2: Pack the lemons with salt. Place 20 g / 2 tbsp of the 200 g salt in the bottom o" aria-label="Start 12 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Add the aromatics. Tuck the 2 bay leaves, the 1 <a class="x-link" data-category="ingredients" href="../ingredients/cinnamon-stick.html">cinnamon stick</a>, and the 3 cloves between the lemons if using; these are optional and the preserved lemons are equally canonical without them. The Moroccan baseline is salt and lemon only; the spice variants are regional.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Add the aromatics. Tuck the 2 bay leaves, the 1 cinnamon stick, and the 3 cloves" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">Top up with fresh lemon juice. The jar should now have 6 to 9 lemons compressed inside with a pool of released juice at the bottom and the top lemons mostly above the liquid line. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="12.944983818770226" data-imp-unit="tbsp">200 g</span><!-- /auto-link-skip --> additional fresh lemon juice (from 3 to 4 reamed lemons), pouring it over the top of the lemons to fully submerge them; the lemons should be completely covered by liquid with about 1 cm of headspace at the jar top. If the lemons float and refuse to stay submerged, weigh them down with a small piece of cabbage leaf or a clean stone (which will be removed in 1 to 2 weeks once the lemons soften and pack down).<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Top up with fresh lemon juice. The jar should now have 6 to 9 lemons compressed " aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Cap tightly and shake. Seal the jar with a tight-fitting lid (plastic preferred over metal; metal corrodes slowly in the salt-and-acid environment over months). Invert the jar once to mix the salt and juice, then return to upright. Place on a small saucer (the jar will weep a small amount of brine during the first week; this is normal).<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Cap tightly and shake. Seal the jar with a tight-fitting lid (plastic preferred " aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -234,7 +246,7 @@
         <div class="step-body">Mellow at room temperature for 4 to 6 weeks. Hold at 18 to 24 °C (room temperature, dark cupboard or pantry shelf) for the full mellow window. For the first week, invert and shake the jar once daily to redistribute the salt-and-juice brine and ensure even curing. After the first week, shake the jar every few days. The brine will start clear and yellow, then turn cloudy and pale-yellow as the salt-cure breaks down the pith proteins and the lacto-fermentation cultures bloom in the juice. The lemons themselves will go from firm-bright-yellow to soft, pliable, translucent, with the rind taking on a darker, jammier appearance.</div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Taste at week 4. Pull out one lemon quarter, rinse briefly under cold water to remove surface salt, and taste a thin strip of rind. Properly mellowed rind reads soft and pliable (you should be able to bite cleanly through it without resistance), deeply salty, intensely lemony with the harsh-bitter notes of fresh pith fully resolved, and faintly funky-floral from the lacto-fermentation that develops in parallel with the salt-cure. If the rind still reads raw or bitter, return the lemon to the jar and continue mellowing for another 1 to 2 weeks. The preserved lemons are at peak flavor between week 4 and month 3; they continue to deepen for another 6 months and remain usable for 1+ years.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Taste at week 4. Pull out one lemon quarter, rinse briefly under cold water to r" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
@@ -307,6 +319,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -316,6 +329,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -325,6 +339,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -334,6 +349,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -343,6 +359,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Cloves (laung, लौंग)</span>
           <span class="pair-desc">Dried unopened flower buds of Syzygium aromaticum, intensely aromatic from eugenol (75 to 85% of the</span>
@@ -352,6 +369,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -361,6 +379,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -370,6 +389,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           <span class="pair-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby sp</span>
@@ -460,6 +480,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

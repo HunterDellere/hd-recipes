@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">114</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>2.5</strong>g protein</span><span class="rh-macro"><strong>17.8</strong>g carbs</span><span class="rh-macro"><strong>4.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Greek</span><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -265,29 +277,29 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">1</span>
         <div class="step-body">Set a fine-mesh sieve over a bowl. Halve the 300 g / 1 large cucumber lengthwise, scrape out the seeds with a teaspoon, and grate the flesh on the large holes of a box grater into the sieve. Toss with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">5 g / ¾ tsp</span><!-- /auto-link-skip --> salt and let drain 20 to 30 minutes; the salt draws water out of the cucumber via osmosis. The drained water (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.4385964912280702" data-imp-unit="cup">100 g</span><!-- /auto-link-skip -->, half the original cucumber weight) is the failure mode of unprepared cucumber; this is the water that would otherwise dilute the sauce within an hour of mixing.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 1: Set a fine-mesh sieve over a bowl. Halve the 300 g / 1 large cucumber lengthwise" aria-label="Start 25 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
         <div class="step-body">After the salt-drain, gather the grated cucumber in a clean tea towel and squeeze firmly over the sink to remove any remaining water; the cucumber should reduce to about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="0.6578947368421052" data-imp-unit="cup">150 g</span><!-- /auto-link-skip --> of dry shreds and feel almost like <a class="x-link" data-category="recipes" href="sauerkraut.html">sauerkraut</a>. Do not skip this squeeze; the residual water is the difference between a structural dip and a runny sauce. Discard the drained liquid and the squeeze water.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: After the salt-drain, gather the grated cucumber in a clean tea towel and squeez" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">In a mortar, pound the 8 g / 2 garlic cloves with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> salt to a smooth even paste, 1 to 2 minutes; the salt is structurally abrasive and breaks the garlic down faster than pounding alone. Alternative: grate the garlic on a microplane and stir with the salt to a paste. The paste is the canonical preparation; coarsely minced garlic reads aggressive and uneven in the finished dip.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: In a mortar, pound the 8 g / 2 garlic cloves with the 3 g / ½ tsp salt to a smoo" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">In a medium bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="1.75" data-imp-unit="cups">400 g / 1¾ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/greek-yogurt.html">Greek yogurt</a> and the garlic-salt paste; whisk gently with a wooden spoon to combine without breaking the yogurt structure. Add the squeezed cucumber, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> lemon juice, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">5 g / 2 tbsp</span><!-- /auto-link-skip --> chopped dill; fold to combine.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: In a medium bowl, combine the 400 g / 1¾ cups Greek yogurt and the garlic-salt p" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
-        <div class="step-body">Taste and adjust: tzatziki should read yogurt-forward with assertive garlic, gentle cucumber crunch, fresh dill, and a clean salt-and-acid finish. If flat, more salt and lemon; if too aggressive, more yogurt; if the cucumber dominates, more garlic. Refrigerate at least 1 hour before serving so the flavors integrate; tzatziki served immediately reads disjointed and the garlic dominates. Serve cold as a dip for raw vegetables, grilled flatbread, or pita; or as a sauce for grilled or roasted lamb, chicken, fish, gyro and souvlaki, fried eggplant or zucchini, kafta and kebabs, falafel, grain bowls, or roasted vegetables.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Taste and adjust: tzatziki should read yogurt-forward with assertive garlic, gen" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Taste and adjust: tzatziki should read yogurt-forward with assertive garlic, gentle cucumber crunch, <span class="sub-hint" data-sub-for="fresh dill" data-sub-use="fresh mint, or a 50/50 dill-mint blend, or fresh oregano (sparingly)" data-sub-note="Dill is the most international Greek choice; mint is canonical in many regional and Turkish-influenced preparations; the 50/50 blend reads complex and modern; fresh oregano (1 tbsp finely chopped, less than the dill amount) is canonical in some Cretan preparations and reads more savory." tabindex="0" role="button" aria-label="Substitution available for fresh dill">fresh dill</span>, and a clean salt-and-acid finish. If flat, more salt and lemon; if too aggressive, more yogurt; if the cucumber dominates, more garlic. Refrigerate at least 1 hour before serving so the flavors integrate; tzatziki served immediately reads disjointed and the garlic dominates. Serve cold as a dip for raw vegetables, grilled flatbread, or pita; or as a sauce for grilled or roasted lamb, chicken, fish, gyro and souvlaki, fried eggplant or zucchini, kafta and kebabs, falafel, grain bowls, or roasted vegetables.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Taste and adjust: tzatziki should read yogurt-forward with assertive garlic, gen" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
     </ol>
@@ -375,6 +387,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -384,6 +397,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -393,6 +407,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -402,6 +417,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -411,6 +427,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Mortar pounding (clay vs granite)</span>
           <span class="pair-desc">Bruise vegetables, fruits, and aromatics with a pestle to rupture cell walls and force sauce into th</span>
@@ -420,6 +437,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Cucumber</span>
           <span class="pair-desc">Cucumis sativus. A 95-percent-water cucurbit grown for cool, crisp flesh and edible skin; the kitche</span>
@@ -429,6 +447,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -438,6 +457,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -528,6 +548,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

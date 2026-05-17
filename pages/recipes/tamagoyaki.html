@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">9</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.2</strong>g protein</span><span class="rh-macro"><strong>2.1</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Japanese</span><span class="rh-tag rh-tag-course">breakfast</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -281,37 +293,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">1</span>
-        <div class="step-body">In a medium bowl, beat the 200 g / 4 eggs with a fork or chopsticks for 30 seconds until just uniform (no streaks of white). Do not whip air into the eggs; the goal is gentle agitation, not aeration. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> dashi, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">12 g / 2 tsp</span><!-- /auto-link-skip --> mirin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">6 g / 1 tsp</span><!-- /auto-link-skip --> Japanese light soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> sugar, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> salt; stir to combine until the sugar is fully dissolved (the mixture should be a uniform pale yellow with the seasonings fully integrated). Pass the mixture through a fine-mesh sieve into a measuring cup with a pour spout (this removes any chalazae and produces smoother layers).<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: In a medium bowl, beat the 200 g / 4 eggs with a fork or chopsticks for 30 secon" aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">In a medium bowl, beat the 200 g / 4 eggs with a fork or chopsticks for 30 seconds until just uniform (no streaks of white). Do not whip air into the eggs; the goal is gentle agitation, not aeration. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="dashi (ichiban or instant)" data-sub-use="kombu-only dashi (vegetarian) or chicken stock" data-sub-note="Kombu-only dashi (5 g of kombu steeped 30 minutes in 200 g cold water, then warmed gently to just-bubbling and held 1 minute before straining; vegetarian-friendly) is the standard substitute for cooks who do not eat fish; chicken stock (light, unsalted) produces a tamagoyaki that reads slightly less Japanese but is structurally acceptable. Water alone is the last-resort fallback; the result reads flat and the dish loses the structural umami signature." tabindex="0" role="button" aria-label="Substitution available for dashi">dashi</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">12 g / 2 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="mirin" data-sub-use="sake plus sugar" data-sub-note="Mirin is the canonical Japanese sweet rice wine and is structurally specific; sake (12 g) plus an additional 4 g of sugar approximates the sweetness and the rice-fermentation aromatic depth. Sweet vermouth, sweet sherry, and sweet white wine are not substitutes; they read totally different." tabindex="0" role="button" aria-label="Substitution available for mirin">mirin</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">6 g / 1 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="Japanese light soy sauce (usukuchi shoyu)" data-sub-use="regular Japanese soy sauce (koikuchi shoyu)" data-sub-note="Usukuchi shoyu is the canonical Kyoto-style light soy sauce that seasons without darkening the eggs; it is available at Japanese groceries and is worth the trip for cooks who make tamagoyaki regularly. Regular Japanese soy sauce (koikuchi, the most widely available) is the standard substitute; the eggs read slightly darker but the flavor is structurally similar. Avoid Chinese light soy sauce (different fermentation profile) and dark Japanese soy sauce (too strong for this application)." tabindex="0" role="button" aria-label="Substitution available for Japanese light soy sauce">Japanese light soy sauce</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> sugar, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> salt; stir to combine until the sugar is fully dissolved (the mixture should be a uniform pale yellow with the seasonings fully integrated). Pass the mixture through a fine-mesh sieve into a measuring cup with a pour spout (this removes any chalazae and produces smoother layers).<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: In a medium bowl, beat the 200 g / 4 eggs with a fork or chopsticks for 30 secon" aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
         <div class="step-body">Heat a rectangular tamagoyaki pan (makiyakinabe; the canonical Japanese tool, approximately 13 by 19 cm; copper or non-stick) over medium heat for 90 seconds. Test the temperature: a drop of the egg mixture should sizzle gently and set within 5 seconds (if it sizzles aggressively, the pan is too hot and the eggs will set in dry curds rather than soft sheets; if it does not sizzle, the pan is too cool and the eggs will read greasy). Fold a paper towel into a small pad; dip into the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> neutral oil and wipe the pan thoroughly to coat the bottom and sides in a thin film of oil; reserve the oiled paper towel for re-greasing between layers.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Heat a rectangular tamagoyaki pan (makiyakinabe; the canonical Japanese tool, ap" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
         <div class="step-body">Pour about one-fifth of the egg mixture (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="1.763699536147022" data-imp-unit="oz">50 g</span><!-- /auto-link-skip -->) into the pan; tilt the pan to spread the egg into a thin uniform sheet covering the entire bottom. As the egg sets (about 20 to 30 seconds), use chopsticks or a long thin spatula to pop any large air bubbles. While the egg is still partially uncooked on top (the surface should be visibly wet with a few uncooked spots), begin the first roll: starting at the side of the pan farthest from you, use the chopsticks or spatula to gently roll the egg toward you in 2 or 3 turns, building a small cylinder of egg at the near edge of the pan.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Pour about one-fifth of the egg mixture (about 50 g) into the pan; tilt the pan " aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Push the rolled cylinder back to the far side of the pan. Re-grease the pan with the oiled paper towel pad, lifting the rolled cylinder briefly to oil the area underneath it. Pour another one-fifth of the egg mixture (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="1.763699536147022" data-imp-unit="oz">50 g</span><!-- /auto-link-skip -->) into the pan; tilt to spread into a thin sheet and lift the existing roll so that the new egg flows under it (this is the structural detail that bonds the layers; without it the layers slide apart when sliced). When the new layer has set on the bottom but is still wet on top, roll the existing cylinder toward you, picking up the new layer as it rolls; the result after this second roll is a slightly larger cylinder.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Push the rolled cylinder back to the far side of the pan. Re-grease the pan with" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Repeat the layer-and-roll technique 3 more times (total of 5 layers), pouring one-fifth of the remaining egg mixture each time, re-greasing the pan between layers, and rolling the cylinder forward to build each new layer onto the existing structure. By the end of the fifth roll, the cylinder should fill the pan from one short edge to the other and should be cohesive, golden-yellow, and visibly layered when viewed from the cut end. Press gently with the spatula or a sushi mat to compact and shape the cylinder into a clean rectangular block.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Repeat the layer-and-roll technique 3 more times (total of 5 layers), pouring on" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">6</span>
         <div class="step-body">Slide the finished tamagoyaki onto a sushi mat (makisu) or a clean kitchen towel; roll the mat or towel tightly around the cylinder and let rest 2 to 3 minutes; the rest tightens the layers into a single cohesive block and produces the canonical rectangular cross-section. Unroll, transfer to a cutting board, and slice crosswise into 2 cm thick pieces (about 6 pieces from a single tamagoyaki). The cross-section should show 5 visible layers spiraling around the center, the structural signature of a properly executed tamagoyaki.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 6: Slide the finished tamagoyaki onto a sushi mat (makisu) or a clean kitchen towel" aria-label="Start 3 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Plate the sliced tamagoyaki on small plates; serve warm or at room temperature with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">50 g / 2 tbsp</span><!-- /auto-link-skip --> grated daikon mounded next to the eggs and a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> drizzle of soy sauce over the daikon. The diner takes a piece of tamagoyaki with chopsticks, lifts a small mound of daikon onto it, and eats in a single bite. Tamagoyaki travels especially well as a make-ahead component: the block keeps 2 days refrigerated and can be packed cold in bento, sliced cold for sushi, or warmed briefly in a low oven (100°C, 3 minutes) for breakfast service.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Plate the sliced tamagoyaki on small plates; serve warm or at room temperature w" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -401,6 +413,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -410,6 +423,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -419,6 +433,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Furikake (homemade rice seasoning)</span>
           <span class="pair-desc">Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice</span>
@@ -428,6 +443,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Matcha usucha (thin matcha tea)</span>
           <span class="pair-desc">The everyday matcha preparation: 2 g of ceremonial matcha whisked with 60 ml of 80°C water into a fr</span>
@@ -437,6 +453,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Mirin (hon-mirin)</span>
           <span class="pair-desc">Sweet rice cooking wine — fermented, alcoholic, glossy. The gloss on teriyaki, the sweetness in dash</span>
@@ -446,6 +463,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso-butter shrimp with delicata, shimeji, and charred broccoli</span>
           <span class="pair-desc">A one-pan washoku-leaning sheet dish. Delicata roasts to chestnut-sweet edges, broccoli and shimeji </span>
@@ -455,6 +473,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso soup (miso-shiru)</span>
           <span class="pair-desc">Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat</span>
@@ -464,6 +483,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Onigiri (rice triangles)</span>
           <span class="pair-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-sa</span>
@@ -554,6 +574,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">71</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>5.2</strong>g protein</span><span class="rh-macro"><strong>9.9</strong>g carbs</span><span class="rh-macro"><strong>2</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/thai.html" data-category="cuisines">Thai</a><span class="rh-tag rh-tag-course">lunch</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -314,47 +326,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">1</span>
-        <div class="step-body">Peel the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> green papaya with a Y-peeler, then shred it into 2 mm × 5 cm matchsticks. The traditional method is to hold the peeled papaya in one hand and chop into the surface with a heavy cleaver in fast parallel cuts at 2 mm spacing, rotating the fruit slightly between strikes, then shave a thin layer of those slits off as julienne strips. A box grater on the largest tooth is the home substitute and produces a slightly more uniform but less ragged shred. Soak the shreds in ice water for 10 minutes while you build the dressing, cold water firms the cell walls so the shreds bend without breaking under the pestle. <a class="step-tech" href="../techniques/mortar-pounding.html">Mortar pounding (clay vs granite)</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Peel the 500 g green papaya with a Y-peeler, then shred it into 2 mm × 5 cm matc" aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">Peel the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="green papaya" data-sub-use="green mango (unripe), shredded the same way" data-sub-note="Slightly more acidic, more crisp. The Vietnamese cousin (gỏi đu đủ becomes gỏi xoài). Reduce lime by 25% to compensate for the mango acid." tabindex="0" role="button" aria-label="Substitution available for green papaya">green papaya</span> with a Y-peeler, then shred it into 2 mm × 5 cm matchsticks. The traditional method is to hold the peeled papaya in one hand and chop into the surface with a heavy cleaver in fast parallel cuts at 2 mm spacing, rotating the fruit slightly between strikes, then shave a thin layer of those slits off as julienne strips. A box grater on the largest tooth is the home substitute and produces a slightly more uniform but less ragged shred. Soak the shreds in ice water for 10 minutes while you build the dressing, cold water firms the cell walls so the shreds bend without breaking under the pestle. <a class="step-tech" href="../techniques/mortar-pounding.html">Mortar pounding (clay vs granite)</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Peel the 500 g green papaya with a Y-peeler, then shred it into 2 mm × 5 cm matc" aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">2</span>
         <div class="step-body">In a clay mortar (krok din), pound the 12 g / 3 cloves garlic and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="4" data-imp-unit="g">4 g</span><!-- /auto-link-skip --> Thai chilies to a coarse paste, 8 to 10 strikes, no more. The garlic should be bruised and broken, not creamed; chili seeds should be cracked but recognizable. A clay mortar with a wooden pestle is the correct tool, granite mortars (krok hin) are designed for hard curry pastes and crush som tum to mush. <a class="step-tech" href="../techniques/mortar-pounding.html">Mortar pounding (clay vs granite)</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: In a clay mortar (krok din), pound the 12 g / 3 cloves garlic and 4 g Thai chili" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
-        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip --> shaved palm sugar and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">15 g / 2 tbsp</span><!-- /auto-link-skip --> rinsed dried <a class="x-link" data-category="ingredients" href="../ingredients/shrimp.html">shrimp</a>. Pound 10 to 15 strikes until the palm sugar is broken down into the chili-garlic paste and the dried shrimp are torn into rough fibers. The sugar dissolves into the chili oil released from pounding; the dried shrimp release a glutamate-rich fishy depth that compounds with the fish sauce later. Do not pound to a smooth paste, texture is the point. <a class="step-tech" href="../techniques/mortar-pounding.html">Mortar pounding (clay vs granite)</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Add the 25 g / 2 tbsp shaved palm sugar and 15 g / 2 tbsp rinsed dried shrimp. P" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip --> shaved <span class="sub-hint" data-sub-for="palm sugar" data-sub-use="light brown sugar or coconut sugar" data-sub-note="Brown sugar is the closest commercial substitute but lacks the butterscotch-floral notes of real palm sugar. Use 90% by weight (palm sugar is slightly less sweet per gram). Coconut sugar is a closer flavor match if available." tabindex="0" role="button" aria-label="Substitution available for palm sugar">palm sugar</span> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">15 g / 2 tbsp</span><!-- /auto-link-skip --> rinsed dried <a class="x-link" data-category="ingredients" href="../ingredients/shrimp.html">shrimp</a>. Pound 10 to 15 strikes until the palm sugar is broken down into the chili-garlic paste and the dried shrimp are torn into rough fibers. The sugar dissolves into the chili oil released from pounding; the dried shrimp release a glutamate-rich fishy depth that compounds with the fish sauce later. Do not pound to a smooth paste, texture is the point. <a class="step-tech" href="../techniques/mortar-pounding.html">Mortar pounding (clay vs granite)</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Add the 25 g / 2 tbsp shaved palm sugar and 15 g / 2 tbsp rinsed dried shrimp. P" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">25 g / 1½ tbsp</span><!-- /auto-link-skip --> fish sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="35" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">35 g / 2½ tbsp</span><!-- /auto-link-skip --> lime juice, and the 2 spent lime shells. If using tamarind, add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> now. Stir with the pestle to dissolve the sugar fully into the liquid, then pound the lime shells lightly 5 to 6 times to express the citrus-peel oils into the dressing. Taste from the pestle: the dressing should read salty (fish sauce), sweet (palm sugar), sour (lime, tamarind), and hot (chili) all in audible range, none dominant. This is the four-flavor balance, adjust now, before vegetables go in. The papaya will dilute everything.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Add the 25 g / 1½ tbsp fish sauce, 35 g / 2½ tbsp lime juice, and the 2 spent li" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Drain the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> papaya shreds and shake dry. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> yardlong bean (4 cm lengths) to the mortar first and pound 4 to 6 strikes, long beans need to be bruised before the papaya goes in, or they will sit in the dressing without absorbing it. The dull thud of the pestle on bean is the cue; you should see the bean walls fracture and exude faint juice. <a class="step-tech" href="../techniques/mortar-pounding.html">Mortar pounding (clay vs granite)</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Drain the 500 g papaya shreds and shake dry. Add the 80 g yardlong bean (4 cm le" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> halved cherry tomatoes. Pound 6 to 8 strikes, rotating the mortar with one hand and pestling with the other, the tomatoes should split open and release their gel into the dressing without being completely crushed. The tomato gel adds glutamate and pectin, which thickens the dressing into something that will cling to papaya rather than running off.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Add the 150 g halved cherry tomatoes. Pound 6 to 8 strikes, rotating the mortar " aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
         <div class="step-body">Add the drained papaya in two batches. With each batch, pound and toss simultaneously: hold a long spoon in one hand and the pestle in the other, pestling the papaya from above while the spoon pulls dressing-soaked shreds up from the bottom. Forty to fifty strikes total, alternating pound and toss, until every shred is glossy with dressing and the papaya has slumped from rigid white shred to pliable pale-orange. The bruise is the technique, it ruptures the papaya cells and pulls dressing into the matrix instead of leaving it pooled at the bottom. <a class="step-tech" href="../techniques/mortar-pounding.html">Mortar pounding (clay vs granite)</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Add the drained papaya in two batches. With each batch, pound and toss simultane" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
         <div class="step-body">Lift the spent lime shells out and discard. Taste from the mortar one more time. The salad should read aggressively seasoned but balanced: chili heat in the throat, lime-and-fish-sauce on the front of the tongue, palm-sugar caramel on the back, papaya texture between crunchy and pliable. If flat, add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> more fish sauce; if too sweet, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> more lime juice; if not hot enough, pound in another half-chili. The mortar lets you adjust without dirtying another bowl.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: Lift the spent lime shells out and discard. Taste from the mortar one more time." aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">9</span>
         <div class="step-body">Pile the salad onto a plate. Scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">30 g / ¼ cup</span><!-- /auto-link-skip --> crushed peanuts over the top, peanuts are added at the plate, not the mortar, because the pounding crushes them to powder and erases the textural contrast that makes the dish read three-dimensional. Eat immediately at room temperature with sticky rice and grilled chicken, or alongside larb. The papaya begins to weep within 15 to 20 minutes; the dish does not hold.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 9: Pile the salad onto a plate. Scatter the 30 g / ¼ cup crushed peanuts over the t" aria-label="Start 1 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -458,6 +470,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Green curry pork</span>
           <span class="pair-desc">A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shr</span>
@@ -467,6 +480,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Larb gai (Thai-Lao minced chicken salad)</span>
           <span class="pair-desc">Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili</span>
@@ -476,6 +490,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai green curry paste</span>
           <span class="pair-desc">A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zes</span>
@@ -485,6 +500,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea (no dye)</span>
           <span class="pair-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, </span>
@@ -494,6 +510,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Mortar pounding (clay vs granite)</span>
           <span class="pair-desc">Bruise vegetables, fruits, and aromatics with a pestle to rupture cell walls and force sauce into th</span>
@@ -503,6 +520,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -512,6 +530,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Thai</span>
           <span class="pair-desc">Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated acr</span>
@@ -521,6 +540,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Green papaya</span>
           <span class="pair-desc">Unripe papaya (Carica papaya), firm and white-fleshed with the proteolytic enzyme papain still activ</span>
@@ -611,6 +631,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">232</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>60</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Taiwanese</span><span class="rh-tag rh-tag-course">drink</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -256,27 +268,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Build simple syrup. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml / ½ cup</span><!-- /auto-link-skip --> water and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">120 g / ½ cup</span><!-- /auto-link-skip --> sugar in a small saucepan. Bring to a simmer, stir until sugar fully dissolves (about 90 seconds), then pull off heat. Cool to room temperature. This is enough syrup for 6 drinks; it holds 2 weeks in the refrigerator.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Build simple syrup. Combine the 120 ml / ½ cup water and 120 g / ½ cup sugar in " aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">2</span>
         <div class="step-body">Brew the tea concentrate. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="360" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="cups">360 ml / 1½ cups</span><!-- /auto-link-skip --> boiling water over the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">10 g / 2 tbsp</span><!-- /auto-link-skip --> black tea in a heatproof jug. Steep 5 minutes, longer than usual because milk and ice will dilute heavily. Strain. Cool to room temperature; hot tea breaks dairy emulsions and dilutes the cold drink unevenly.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 2: Brew the tea concentrate. Pour the 360 ml / 1½ cups boiling water over the 10 g " aria-label="Start 7 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Build the drink. Spoon <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 g / ⅓ cup</span><!-- /auto-link-skip --> of the warm cooked tapioca pearls into the bottom of each of two tall glasses (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="ml" data-imp-qty="14" data-imp-unit="oz">400 ml / 14 oz</span><!-- /auto-link-skip -->). Drizzle <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> of the cooled simple syrup over the pearls in each glass, the pearls absorb sweetness directly, which is part of the textural pleasure.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Build the drink. Spoon 80 g / ⅓ cup of the warm cooked tapioca pearls into the b" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
-        <div class="step-body">Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml / ½ cup</span><!-- /auto-link-skip --> cold <a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a> into each glass over the pearls. Add a generous handful of ice (60 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> per glass), about 5 to 6 cubes.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Pour 120 ml / ½ cup cold whole milk into each glass over the pearls. Add a gener" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml / ½ cup</span><!-- /auto-link-skip --> cold <span class="sub-hint" data-sub-for="whole milk" data-sub-use="non-dairy coffee creamer" data-sub-note="The original Taiwanese formulation used powdered non-dairy creamer (Coffee-Mate type) reconstituted in hot water. Gives the slightly artificial sweetness and lighter body that defines old-school night-market boba. Use 30 g / 2 tbsp powder reconstituted with 240 ml water." tabindex="0" role="button" aria-label="Substitution available for whole milk"><a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a></span> into each glass over the pearls. Add a generous handful of ice (60 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> per glass), about 5 to 6 cubes.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Pour 120 ml / ½ cup cold whole milk into each glass over the pearls. Add a gener" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">180 ml / ¾ cup</span><!-- /auto-link-skip --> of the cooled tea concentrate down the inside wall of each glass. The tea pools above the milk briefly, then they begin to merge from the bottom up as the ice melts and shifts the column. Serve immediately with a wide boba straw.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Pour 180 ml / ¾ cup of the cooled tea concentrate down the inside wall of each g" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -366,6 +378,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade crystal boba (agar pearls)</span>
           <span class="pair-desc">Clear, jelly-bright pearls made from agar-agar dropped through cold oil into a chilled bath. A diffe</span>
@@ -375,6 +388,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade popping boba (reverse spherification)</span>
           <span class="pair-desc">Fruit-juice spheres held together by an alginate membrane around a still-liquid center. The popping </span>
@@ -384,6 +398,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade black tapioca pearls (boba)</span>
           <span class="pair-desc">From-scratch tapioca pearls. Boiling-water-hydrated dough rolled into spheres, blanched, then finish</span>
@@ -393,6 +408,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Banana bread</span>
           <span class="pair-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maxim</span>
@@ -402,6 +418,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Tapioca pearls (boba)</span>
           <span class="pair-desc">Dried starch spheres made from gelatinized tapioca dough. Cooked in boiling water, they hydrate into</span>
@@ -411,6 +428,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter sugar cookies</span>
           <span class="pair-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar sh</span>
@@ -420,6 +438,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chai pumpkin cupcakes</span>
           <span class="pair-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butt</span>
@@ -429,6 +448,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè ba màu (three-color Vietnamese sweet bean dessert)</span>
           <span class="pair-desc">Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. Th</span>
@@ -513,6 +533,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

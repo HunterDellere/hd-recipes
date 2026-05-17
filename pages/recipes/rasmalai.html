@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">145</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>37.5</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/indian.html" data-category="cuisines">Indian</a><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -312,52 +324,52 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">1</span>
-        <div class="step-body">Make the chhena. Bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2000" data-metric-unit="ml" data-imp-qty="8" data-imp-unit="cups">2000 ml / 8 cups</span><!-- /auto-link-skip --> whole milk to a strong simmer (just below boiling, around 90 to 95°C / 195 to 200°F) in a heavy 4-quart pot, stirring occasionally to prevent scorching. As soon as the milk reaches near-boil, pull off heat. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> lemon juice slowly, in 2 to 3 additions, stirring gently between each. The milk will visibly curdle within 30 to 60 seconds: the casein will coagulate into white curds, the whey will separate into a faintly yellow liquid. If the curdle is incomplete after 60 seconds, add 1 more tbsp lemon juice; if the whey is murky and white (incomplete separation), add another tbsp. <a class="step-tech" href="../techniques/acid-milk-sour.html">Acid-milk souring</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Make the chhena. Bring the 2000 ml / 8 cups whole milk to a strong simmer (just " aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
+        <div class="step-body">Make the chhena. Bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2000" data-metric-unit="ml" data-imp-qty="8" data-imp-unit="cups">2000 ml / 8 cups</span><!-- /auto-link-skip --> whole milk to a strong simmer (just below boiling, around 90 to 95°C / 195 to 200°F) in a heavy 4-quart pot, stirring occasionally to prevent scorching. As soon as the milk reaches near-boil, pull off heat. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="lemon juice (for chhena coagulation)" data-sub-use="white vinegar or 1 tsp citric acid powder + 30 ml water" data-sub-note="1:1 substitute. White vinegar produces slightly cleaner-tasting chhena (no lemon residue); citric acid is the cleanest of all but requires a quick taste check before adding to ensure it has dissolved fully." tabindex="0" role="button" aria-label="Substitution available for lemon juice">lemon juice</span> slowly, in 2 to 3 additions, stirring gently between each. The milk will visibly curdle within 30 to 60 seconds: the casein will coagulate into white curds, the whey will separate into a faintly yellow liquid. If the curdle is incomplete after 60 seconds, add 1 more tbsp lemon juice; if the whey is murky and white (incomplete separation), add another tbsp. <a class="step-tech" href="../techniques/acid-milk-sour.html">Acid-milk souring</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Make the chhena. Bring the 2000 ml / 8 cups whole milk to a strong simmer (just " aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="35">
         <span class="step-num">2</span>
         <div class="step-body">Strain and rinse the chhena. Line a large fine-mesh sieve with cheesecloth set over a deep bowl. Pour the curdled milk through. The whey drains through into the bowl below; the chhena curds collect in the cheesecloth. Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="cups">1500 ml / 6 cups</span><!-- /auto-link-skip --> cold water through the chhena to rinse off the lemon flavor and stop the coagulation; the cold water also firms the curds. Lift the cheesecloth, gather into a bundle, and squeeze gently to remove excess water. The chhena should be just-damp, holding shape, neither dripping wet nor dry-crumbly. Hang the bundle (tied to a faucet handle or wooden spoon over a bowl) for 30 minutes to drain further. The discarded whey is excellent in chapati dough or for cooking rice; do not pour down the drain unless you have no use for it.<button type="button" class="step-time step-time-btn" data-step-timer="35" data-step-label="Step 2: Strain and rinse the chhena. Line a large fine-mesh sieve with cheesecloth set o" aria-label="Start 35 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">35 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">3</span>
         <div class="step-body">Knead the chhena. Transfer the drained chhena to a clean countertop or large plate. Knead with the heel of your palm for 5 to 7 minutes; the chhena will go from crumbly-grainy to smooth-elastic-shiny. The kneading is structural — under-kneaded chhena produces ras malai dumplings that fall apart in the syrup; over-kneaded chhena produces dense, tough dumplings. The texture target is &quot;smooth, slightly tacky, holding together when pressed but yielding under fingertip pressure.&quot; A small amount of palm-warmth releases the milkfat in the chhena and binds it; this is why hand-kneading is required, not food processor.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 3: Knead the chhena. Transfer the drained chhena to a clean countertop or large pla" aria-label="Start 7 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">4</span>
         <div class="step-body">Shape the dumplings. Divide the kneaded chhena into 16 equal pieces (about 18 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> each). Roll each piece between your palms into a smooth ball, then flatten gently into a disc roughly 4 cm in diameter and 1.5 cm thick. The flattening is the ras malai signature, round dumplings would be rasgulla, the precursor dish. Place the discs on a plate; do not stack.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 4: Shape the dumplings. Divide the kneaded chhena into 16 equal pieces (about 18 to" aria-label="Start 8 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Make the sugar syrup. In a wide saucepan or shallow Dutch oven (the syrup must accommodate all 16 dumplings in a single layer with room to puff), combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="0.9803921568627452" data-imp-unit="cup">200 g</span><!-- /auto-link-skip --> sugar and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1200" data-metric-unit="ml" data-imp-qty="5" data-imp-unit="cups">1200 ml / 5 cups</span><!-- /auto-link-skip --> water. Bring to a strong simmer over medium-high heat. The syrup should be active-bubbling but not violent.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Make the sugar syrup. In a wide saucepan or shallow Dutch oven (the syrup must a" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="16">
         <span class="step-num">6</span>
         <div class="step-body">Cook the dumplings. Gently lower the chhena discs into the simmering syrup using a slotted spoon. Cover with a tight lid (the cover is essential, the steam helps the dumplings puff). Cook 15 minutes at a strong simmer; the dumplings will puff dramatically (doubling in size), float to the surface, and turn slightly translucent at the edges. Do not lift the lid in the first 10 minutes (releasing steam can cause the dumplings to deflate and toughen). At minute 12, briefly check; if the dumplings are not yet doubled in size, recover and continue 3 minutes.<button type="button" class="step-time step-time-btn" data-step-timer="16" data-step-label="Step 6: Cook the dumplings. Gently lower the chhena discs into the simmering syrup using" aria-label="Start 16 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">16 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">7</span>
         <div class="step-body">Make the malai (the milk soak). While the dumplings cook, in a separate heavy saucepan, bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="ml" data-imp-qty="4" data-imp-unit="cups">1000 ml / 4 cups</span><!-- /auto-link-skip --> whole milk for the malai to a low simmer over medium heat. Reduce, stirring every minute, for 12 to 15 minutes; the milk will reduce by approximately one-third, thickening slightly to a half-cream consistency. Pull off heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.4901960784313726" data-imp-unit="cup">100 g</span><!-- /auto-link-skip --> sugar, the crushed cardamom seeds, and the steeped saffron-milk. Stir until the sugar dissolves. Let cool 10 minutes (the reduced milk should be warm-not-hot when the dumplings join it).<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 7: Make the malai (the milk soak). While the dumplings cook, in a separate heavy sa" aria-label="Start 15 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">8</span>
         <div class="step-body">Transfer dumplings. Lift the cooked chhena dumplings out of the sugar syrup with a slotted spoon. Gently squeeze each dumpling between two spoons to expel the absorbed sugar syrup (the dumplings will deflate slightly; this is correct, the deflation is what creates the porosity that lets the dumplings absorb the malai). Drop each squeezed dumpling into the warm malai milk. The dumplings will reabsorb the malai over the next several hours.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 8: Transfer dumplings. Lift the cooked chhena dumplings out of the sugar syrup with" aria-label="Start 5 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="180">
         <span class="step-num">9</span>
         <div class="step-body">Refrigerate and rest. Cover the bowl of dumplings-in-malai. Refrigerate at least 3 hours, ideally 6 to 8 hours or overnight. The dumplings absorb the malai progressively; the longer the soak, the more saturated they become with the cardamom-saffron flavor. The dish is genuinely better after an overnight rest.<button type="button" class="step-time step-time-btn" data-step-timer="180" data-step-label="Step 9: Refrigerate and rest. Cover the bowl of dumplings-in-malai. Refrigerate at least" aria-label="Start 3 h timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 h</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">10</span>
         <div class="step-body">Plate and serve chilled. Spoon 2 dumplings per serving into small individual bowls. Pour over enough malai to barely submerge the dumplings (about 60 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 ml</span><!-- /auto-link-skip --> per portion). Garnish with slivered pistachios, almonds, and a small scatter of dried rose petals if using. Serve cold; ras malai is one of the few subcontinental sweets that is structurally a chilled dessert. The dumplings should be soft and slightly sponge-like, releasing malai when pressed by a spoon.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 10: Plate and serve chilled. Spoon 2 dumplings per serving into small individual bow" aria-label="Start 3 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
@@ -444,6 +456,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">House blend chai</span>
           <span class="pair-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no</span>
@@ -453,6 +466,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kachumber with cumin and lime</span>
           <span class="pair-desc">North Indian chopped raw salad: even fine dice of cucumber, tomato, and red onion, dressed with toas</span>
@@ -462,6 +476,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Masala chai (proper Indian milk-spice tea)</span>
           <span class="pair-desc">Black tea boiled with milk, fresh ginger, and toasted whole spices in the correct order so each phas</span>
@@ -471,6 +486,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Pav bhaji (Mumbai street vegetable mash)</span>
           <span class="pair-desc">Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghe</span>
@@ -480,6 +496,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Acid-milk souring</span>
           <span class="pair-desc">Add a food acid (vinegar or lemon juice) to whole milk — casein micelles destabilize, viscosity rise</span>
@@ -489,6 +506,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Indian</span>
           <span class="pair-desc">Spice as a layered system, not a heat dial. Each spice enters at a specific moment (bloomed in fat, </span>
@@ -498,6 +516,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Saffron (kesar, زعفران)</span>
           <span class="pair-desc">Hand-harvested stigmas of Crocus sativus, the most expensive spice by weight. Carotenoid pigment cro</span>
@@ -507,6 +526,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Raita (cucumber-mint, the household standard)</span>
           <span class="pair-desc">Plain whole-milk yogurt whisked smooth with grated cucumber, fresh mint, toasted cumin, and a small </span>
@@ -606,6 +626,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

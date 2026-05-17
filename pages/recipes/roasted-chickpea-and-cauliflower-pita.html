@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">275</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>6.8</strong>g protein</span><span class="rh-macro"><strong>14.3</strong>g carbs</span><span class="rh-macro"><strong>23.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Mediterranean</span><span class="rh-tag rh-tag-course">lunch</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">vegan</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -404,42 +416,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">1</span>
         <div class="step-body">Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs 15 minutes preheat. While the oven heats, drain the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="g" data-imp-qty="10.582197216882133" data-imp-unit="oz">300 g</span><!-- /auto-link-skip --> chickpeas and pat them bone-dry. Spread on a kitchen towel, top with a second, press gently to absorb every drop of surface moisture.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 1: Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middl" aria-label="Start 15 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">2</span>
-        <div class="step-body">Prep the cauliflower. Cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="1.3227746521102666" data-imp-unit="lb">600 g</span><!-- /auto-link-skip --> cauliflower into 2 to 3 cm florets. In a wide bowl, toss with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/ground-cumin.html">ground cumin</a>. Every floret should glisten.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 2: Prep the cauliflower. Cut the 600 g cauliflower into 2 to 3 cm florets. In a wid" aria-label="Start 4 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">Prep the <span class="sub-hint" data-sub-for="cauliflower" data-sub-use="romanesco, broccoli, or roasted sweet potato" data-sub-note="Romanesco and broccoli roast on the same timing. Sweet potato (cut into 2 cm cubes) takes 5 minutes longer and reads sweeter." tabindex="0" role="button" aria-label="Substitution available for cauliflower">cauliflower</span>. Cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="1.3227746521102666" data-imp-unit="lb">600 g</span><!-- /auto-link-skip --> cauliflower into 2 to 3 cm florets. In a wide bowl, toss with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/ground-cumin.html">ground cumin</a>. Every floret should glisten.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 2: Prep the cauliflower. Cut the 600 g cauliflower into 2 to 3 cm florets. In a wid" aria-label="Start 4 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">3</span>
         <div class="step-body">Prep the chickpeas. In a separate bowl, toss the dry chickpeas with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> cumin, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> coriander, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> smoked paprika, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">3 g / ¾ tsp</span><!-- /auto-link-skip --> kosher salt.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: Prep the chickpeas. In a separate bowl, toss the dry chickpeas with the 15 g / 1" aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">4</span>
         <div class="step-body">Pull the preheated sheet pan from the oven. Tip the cauliflower onto one half of the pan and the chickpeas onto the other, both in single layers with space between pieces. The pan should sizzle audibly. Roast 22 to 25 minutes without disturbing for the first 15 minutes, then toss each side separately and finish for 8 to 10 minutes more. The cauliflower should show deep mahogany on the cut faces, the chickpeas should rattle when shaken on the pan. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 4: Pull the preheated sheet pan from the oven. Tip the cauliflower onto one half of" aria-label="Start 25 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">5</span>
-        <div class="step-body">While the vegetables roast, massage the cabbage slaw. In a wide bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> shredded red cabbage with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> lemon juice and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. Massage with your hands for 90 seconds; the cabbage begins to release water, soften, and turn brighter pink. Let sit 5 to 10 minutes. Just before assembly, toss in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> olive oil and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.3125" data-imp-unit="cup">15 g</span><!-- /auto-link-skip --> chopped parsley.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 5: While the vegetables roast, massage the cabbage slaw. In a wide bowl, combine th" aria-label="Start 10 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">While the vegetables roast, massage the cabbage slaw. In a wide bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> shredded <span class="sub-hint" data-sub-for="red cabbage" data-sub-use="green cabbage, kale (massaged), or napa cabbage" data-sub-note="Green cabbage substitutes 1:1 but lacks the visual contrast. Massaged kale (with salt and lemon, same technique) is the sturdier whole-grain option. Napa cabbage wilts more easily and reads softer." tabindex="0" role="button" aria-label="Substitution available for red cabbage">red cabbage</span> with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> lemon juice and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. Massage with your hands for 90 seconds; the cabbage begins to release water, soften, and turn brighter pink. Let sit 5 to 10 minutes. Just before assembly, toss in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> olive oil and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.3125" data-imp-unit="cup">15 g</span><!-- /auto-link-skip --> chopped parsley.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 5: While the vegetables roast, massage the cabbage slaw. In a wide bowl, combine th" aria-label="Start 10 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
         <div class="step-body">Build the tahini sauce. In a small bowl, whisk together the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 g / ⅓ cup</span><!-- /auto-link-skip --> tahini, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> lemon juice, the 4 g / 1 clove microplaned <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. The tahini will seize into a tight paste; this is expected. Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">45 g / 3 tbsp</span><!-- /auto-link-skip --> ice water in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> additions, whisking between each, until the sauce loosens to a thick but pourable consistency that ribbons off the whisk. <a class="step-tech" href="../techniques/tahini-emulsion.html">Tahini emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: Build the tahini sauce. In a small bowl, whisk together the 80 g / ⅓ cup tahini," aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
         <div class="step-body">Warm the pitas. Heat a dry skillet (cast iron or stainless) over medium heat. Warm each of the 4 pitas for 30 seconds per side, just until pliable and slightly steamed. Stack and cover with a damp clean kitchen towel to keep warm; cold pita tears when folded.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Warm the pitas. Heat a dry skillet (cast iron or stainless) over medium heat. Wa" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">8</span>
         <div class="step-body">Assemble. Cut each pita in half through the equator to open the pocket. Schmear 1 tbsp / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.9523809523809523" data-imp-unit="tbsp">15 g</span><!-- /auto-link-skip --> of the tahini sauce on the inside of each half. Stuff each half with one-quarter of the cauliflower, one-quarter of the chickpeas, and a generous handful of the cabbage slaw. Drizzle another teaspoon of tahini sauce over the top of the filling before closing. Serve immediately with extra tahini sauce on the side for dipping.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 8: Assemble. Cut each pita in half through the equator to open the pocket. Schmear " aria-label="Start 4 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
@@ -529,6 +541,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken-zucchini meatballs with yogurt-dill</span>
           <span class="pair-desc">Ground chicken thigh mixed with salt-drained grated zucchini, grated onion, garlic, lemon zest, fres</span>
@@ -538,6 +551,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Harvest vegetable soup with white beans</span>
           <span class="pair-desc">A one-pot vegetable soup built on a foundation of slowly sweated leek and garlic, deepened with toma</span>
@@ -547,6 +561,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Red wine vinegar</span>
           <span class="pair-desc">Live mother of vinegar fed leftover red wine in a wide jar — acetobacter oxidizes the ethanol to ace</span>
@@ -556,6 +571,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Salt-cured anchovies</span>
           <span class="pair-desc">Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until cathepsin p</span>
@@ -565,6 +581,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">High-heat dry roasting</span>
           <span class="pair-desc">Roast cut vegetables on a heavy preheated sheet pan at 220 to 245 °C with a thin coat of oil and agg</span>
@@ -574,6 +591,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Tahini emulsion</span>
           <span class="pair-desc">Whisk water into raw tahini in stages. The paste seizes (proteins hydrate and gel) before it relaxes</span>
@@ -583,6 +601,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Pita bread</span>
           <span class="pair-desc">A round, leavened wheat flatbread that puffs into a hollow pocket during a high-heat bake. The struc</span>
@@ -592,6 +611,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Salt-packed capers</span>
           <span class="pair-desc">Fresh caper buds wilted, salt-packed, and cured for 30 to 60 days. The dry-salt method partially deg</span>
@@ -682,6 +702,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

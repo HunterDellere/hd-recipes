@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">480</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>10.1</strong>g protein</span><span class="rh-macro"><strong>31.7</strong>g carbs</span><span class="rh-macro"><strong>37.2</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/american.html" data-category="cuisines">American</a><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -394,57 +406,57 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">1</span>
         <div class="step-body">Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs to preheat for at least 10 minutes; the 700 g / 2 medium squash worth of half-moons must hiss on contact when added. Cold pan plus cold squash means 15 minutes spent climbing to roasting temperature and the squash steams before it browns. The thin edible skin of delicata is what differentiates this dish from a butternut version; the skin caramelizes into a savory chewy band around each half-moon and is the structural reason the dish reads as roasted-vegetable-salad rather than mashed-squash-salad. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middl" aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">2</span>
-        <div class="step-body">While the oven heats, scrub the 700 g / 2 medium <a class="x-link" data-category="ingredients" href="../ingredients/delicata-squash.html">delicata squash</a>, halve lengthwise, scoop the seeds with a spoon, and slice into 1 cm half-moons (skin on, no peeling). On a wide bowl or directly on a sheet of parchment, toss the half-moons with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> cracked black pepper until every piece is glossed. Pooled oil at the bottom of the bowl means too much, drag the pieces through it.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: While the oven heats, scrub the 700 g / 2 medium delicata squash, halve lengthwi" aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
+        <div class="step-body">While the oven heats, scrub the 700 g / 2 medium <span class="sub-hint" data-sub-for="delicata squash" data-sub-use="kabocha squash, peeled (skin too tough to leave on) and sliced 1 cm thick" data-sub-note="Closest flavor; the peeled half-moons brown the same way at 230 °C. The dish loses the textural contrast of the edible delicata skin but gains a slightly denser, sweeter flesh. Honeynut squash (peeled or skin-on if the squash is small enough) is the second-best swap." tabindex="0" role="button" aria-label="Substitution available for delicata squash"><a class="x-link" data-category="ingredients" href="../ingredients/delicata-squash.html">delicata squash</a></span>, halve lengthwise, scoop the seeds with a spoon, and slice into 1 cm half-moons (skin on, no peeling). On a wide bowl or directly on a sheet of parchment, toss the half-moons with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> cracked black pepper until every piece is glossed. Pooled oil at the bottom of the bowl means too much, drag the pieces through it.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: While the oven heats, scrub the 700 g / 2 medium delicata squash, halve lengthwi" aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">3</span>
         <div class="step-body">Pull the preheated sheet pan from the oven and tip the dressed squash onto it in a single layer, cut faces down where possible. The half-moons should sizzle audibly. Spread so each piece has 1 to 2 cm of clear pan around it; if it does not fit, use a second preheated pan. Crowded vegetables steam each other and the surface stays wet. Roast 22 to 28 minutes without disturbing for the first 18 minutes; at 18 minutes flip one piece to check the underside, which should be deep mahogany. Flip all pieces with a thin spatula and return for 4 to 8 minutes until the flesh is yielding at a fork and the second side has color too. Pull and rest on the pan; the residual heat finishes the cook. <a class="step-tech" href="../techniques/high-heat-dry-roasting.html">High-heat dry roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 3: Pull the preheated sheet pan from the oven and tip the dressed squash onto it in" aria-label="Start 25 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
         <div class="step-body">While the squash roasts, build the farro pilaf. In a 3-quart heavy saucepan over medium heat, warm the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> olive oil. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">200 g / 1 cup</span><!-- /auto-link-skip --> dry semi-pearled farro and toast in the dry oil, stirring constantly, for 90 to 120 seconds until the grains darken one shade and smell distinctly nutty. The dry-toast is what differentiates farro pilaf from farro boiled-in-water; the surface of each grain hits Maillard temperature and develops the popcorn-aromatic compounds that boiled farro lacks. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: While the squash roasts, build the farro pilaf. In a 3-quart heavy saucepan over" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="28">
         <span class="step-num">5</span>
         <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="800" data-metric-unit="ml" data-imp-qty="3.3333333333333335" data-imp-unit="cups">800 ml / 3⅓ cups</span><!-- /auto-link-skip --> water and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> kosher salt to the toasted farro. Bring to a boil, reduce to a bare simmer, cover loosely, and cook 25 to 30 minutes for semi-pearled (50+ minutes for whole; check the package). The grains should be tender with a slight chew at the center, not mushy. Drain off any excess water in a fine-mesh sieve and spread the farro on a wide plate or sheet pan to cool to warm-not-hot. Hot farro on the platter wilts the kale and breaks the dressing; warm farro picks up the vinaigrette without collapsing the structure.<button type="button" class="step-time step-time-btn" data-step-timer="28" data-step-label="Step 5: Add the 800 ml / 3⅓ cups water and the 6 g / 1½ tsp kosher salt to the toasted f" aria-label="Start 28 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">28 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
-        <div class="step-body">While the farro cooks, massage the kale. Place the 150 g / 1 medium bunch stripped-and-ribboned lacinato kale in a wide bowl. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> lemon juice and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. With clean hands, scrunch and rub the kale leaves between your palms for 60 to 90 seconds; the volume drops by half, the leaves turn a deeper green, and the texture goes from leathery-stiff to tender-pliant. The acid plus the salt plus mechanical bruising breaks down the cell walls (the same chemistry as a quick salt cure on a fish fillet); the kale becomes salad-edible rather than chewing-jaw-edible.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: While the farro cooks, massage the kale. Place the 150 g / 1 medium bunch stripp" aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">While the farro cooks, massage the kale. Place the 150 g / 1 medium bunch stripped-and-ribboned <span class="sub-hint" data-sub-for="lacinato kale" data-sub-use="curly kale, or Swiss chard (with the stems treated as a separate vegetable)" data-sub-note="Curly kale needs an extra 30 seconds of massage to break down (tougher leaf structure). Swiss chard is more tender and needs less massage; the chard stems should be diced and quick-pickled in the dressing for 10 minutes before assembly. Spinach reads too soft and wilts under the warm components." tabindex="0" role="button" aria-label="Substitution available for lacinato kale">lacinato kale</span> in a wide bowl. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> lemon juice and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. With clean hands, scrunch and rub the kale leaves between your palms for 60 to 90 seconds; the volume drops by half, the leaves turn a deeper green, and the texture goes from leathery-stiff to tender-pliant. The acid plus the salt plus mechanical bruising breaks down the cell walls (the same chemistry as a quick salt cure on a fish fillet); the kale becomes salad-edible rather than chewing-jaw-edible.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: While the farro cooks, massage the kale. Place the 150 g / 1 medium bunch stripp" aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
-        <div class="step-body">Build the maple-cider vinaigrette. In a small bowl or jar, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/apple-cider-vinegar.html">apple cider vinegar</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/maple-syrup.html">maple syrup</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">12 g / 2 tsp</span><!-- /auto-link-skip --> whole-grain mustard, the 15 g / 1 small microplaned shallot, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. Whisk vigorously to dissolve the salt and integrate the mustard. Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">80 g / ¼ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> olive oil in a thin steady drizzle while whisking constantly; the vinaigrette tightens as the oil emulsifies into the acid base. Whisk for 20 to 30 seconds after the last of the oil; the dressing should ribbon off the whisk and slowly settle back into the surface. Taste; the dressing should read sweet-acid-mustard in that order, fully salted; if flat, more salt. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Build the maple-cider vinaigrette. In a small bowl or jar, combine the 30 g / 2 " aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Build the maple-cider vinaigrette. In a small bowl or jar, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="apple cider vinegar" data-sub-use="sherry vinegar or white wine vinegar" data-sub-note="Sherry vinegar reads more European-savory and pulls the dish toward a wine-and-cheese register; white wine vinegar reads cleaner and less autumnal. The maple syrup pairs particularly well with apple cider vinegar (both fall-coded fermented-fruit acids); the dish loses some seasonal coherence with other vinegars." tabindex="0" role="button" aria-label="Substitution available for apple cider vinegar"><a class="x-link" data-category="ingredients" href="../ingredients/apple-cider-vinegar.html">apple cider vinegar</a></span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="maple syrup, Grade A dark" data-sub-use="honey, or pomegranate molasses (different acid profile, see modification)" data-sub-note="Honey reads sweeter and less complex than dark maple syrup; the dish drifts toward generic vinaigrette. Use Grade A amber light only if dark is unavailable; pancake syrup (high-fructose corn syrup with maple flavoring) is not a substitute, the flavor is wrong and the viscosity is wrong." tabindex="0" role="button" aria-label="Substitution available for maple syrup"><a class="x-link" data-category="ingredients" href="../ingredients/maple-syrup.html">maple syrup</a></span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">12 g / 2 tsp</span><!-- /auto-link-skip --> whole-grain mustard, the 15 g / 1 small microplaned shallot, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. Whisk vigorously to dissolve the salt and integrate the mustard. Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">80 g / ¼ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> olive oil in a thin steady drizzle while whisking constantly; the vinaigrette tightens as the oil emulsifies into the acid base. Whisk for 20 to 30 seconds after the last of the oil; the dressing should ribbon off the whisk and slowly settle back into the surface. Taste; the dressing should read sweet-acid-mustard in that order, fully salted; if flat, more salt. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Build the maple-cider vinaigrette. In a small bowl or jar, combine the 30 g / 2 " aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">8</span>
-        <div class="step-body">Toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">60 g / ½ cup</span><!-- /auto-link-skip --> raw skin-on hazelnuts on a small sheet pan in the same 230 °C oven (the temperature is hotter than ideal for nuts but the squash was already pulled, drop the oven to 175 °C / 350 °F if you have time, or just watch closely) for 8 to 10 minutes until the skins crack and the flesh smells distinctly toasted. Wrap the hot nuts in a clean kitchen towel and rub vigorously for 30 seconds; most of the papery skins slough off (some residual is fine, the bitterness is in the bulk skin not the wisps). Cool 2 minutes and chop roughly. The skin-rub step is the single biggest difference between a hazelnut salad that reads sweet-and-toasted and one that reads bitter-and-tannic.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 8: Toast the 60 g / ½ cup raw skin-on hazelnuts on a small sheet pan in the same 23" aria-label="Start 12 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
+        <div class="step-body">Toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">60 g / ½ cup</span><!-- /auto-link-skip --> raw skin-on <span class="sub-hint" data-sub-for="hazelnuts" data-sub-use="pecans (toasted) or walnuts (toasted)" data-sub-note="Pecans are the most American autumn-coded swap; walnuts are slightly bitter and tannic which competes with the kale. Both toast on the same schedule. Almonds work but read less seasonal." tabindex="0" role="button" aria-label="Substitution available for hazelnuts">hazelnuts</span> on a small sheet pan in the same 230 °C oven (the temperature is hotter than ideal for nuts but the squash was already pulled, drop the oven to 175 °C / 350 °F if you have time, or just watch closely) for 8 to 10 minutes until the skins crack and the flesh smells distinctly toasted. Wrap the hot nuts in a clean kitchen towel and rub vigorously for 30 seconds; most of the papery skins slough off (some residual is fine, the bitterness is in the bulk skin not the wisps). Cool 2 minutes and chop roughly. The skin-rub step is the single biggest difference between a hazelnut salad that reads sweet-and-toasted and one that reads bitter-and-tannic.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 8: Toast the 60 g / ½ cup raw skin-on hazelnuts on a small sheet pan in the same 23" aria-label="Start 12 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">9</span>
         <div class="step-body">Assemble. In a wide warm bowl or platter, spread the warm farro as the base layer. Drizzle one-third of the maple-cider vinaigrette (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">50 g / 3 tbsp</span><!-- /auto-link-skip -->) over the farro and toss gently with tongs; the warm grains absorb the dressing into their structure. Add the massaged kale and toss to integrate; the kale should distribute evenly through the farro, not sit as a separate layer. Drizzle another third of the vinaigrette and toss again.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 9: Assemble. In a wide warm bowl or platter, spread the warm farro as the base laye" aria-label="Start 3 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">10</span>
         <div class="step-body">Lay the warm roasted delicata half-moons across the top of the dressed grain-and-kale bed in a slightly overlapping pattern; do not toss the squash through the salad (the half-moons break apart and the dish reads as mush). The visible squash on top is the structural and visual centerpiece. Drizzle the remaining vinaigrette (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">50 g / 3 tbsp</span><!-- /auto-link-skip -->) over the squash specifically; the dressing pools into the cupped half-moons and reads as direct seasoning rather than coating.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 10: Lay the warm roasted delicata half-moons across the top of the dressed grain-and" aria-label="Start 1 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">11</span>
         <div class="step-body">Scatter the chopped toasted hazelnuts evenly across the top, then the shaved <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">30 g / ¼ cup</span><!-- /auto-link-skip --> pecorino curls, then the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">10 g / ½ cup</span><!-- /auto-link-skip --> parsley leaves if using. The order matters; nuts first (heavy, settles), cheese second (visible curls), herbs last (lightest, reads green on top). Serve warm or at room temperature within 30 minutes of dressing; the kale and farro hold longer than the squash, which softens after about 20 minutes off heat. Leftovers refrigerate well overnight (the kale actually improves) but the squash texture is gone the next day; eat the squash first.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 11: Scatter the chopped toasted hazelnuts evenly across the top, then the shaved 30 " aria-label="Start 2 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
@@ -558,6 +570,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Apple cider vinegar</span>
           <span class="pair-desc">Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. </span>
@@ -567,6 +580,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Banana bread</span>
           <span class="pair-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maxim</span>
@@ -576,6 +590,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Big Mac sauce (homemade copycat)</span>
           <span class="pair-desc">The McDonald's Big Mac special sauce, built on a real-egg mayonnaise base with sweet pickle relish, </span>
@@ -585,6 +600,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Buttermilk ranch dressing (proper from-scratch)</span>
           <span class="pair-desc">Real-buttermilk ranch with fresh herbs, garlic, and a backbone of mayonnaise and sour cream. The Hid</span>
@@ -594,6 +610,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">High-heat dry roasting</span>
           <span class="pair-desc">Roast cut vegetables on a heavy preheated sheet pan at 220 to 245 °C with a thin coat of oil and agg</span>
@@ -603,6 +620,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry-toasting (grains, spices, seeds, dried chilies)</span>
           <span class="pair-desc">Toast raw grains, whole spices, seeds, nuts, or dried chilies in a hot dry skillet (no fat) until Ma</span>
@@ -612,6 +630,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Vinaigrette emulsion</span>
           <span class="pair-desc">Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsio</span>
@@ -621,6 +640,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">American</span>
           <span class="pair-desc">Layered fat with restrained sweetness in bakes and bright finishes (lemon, mustard, vinegar) in savo</span>
@@ -711,6 +731,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

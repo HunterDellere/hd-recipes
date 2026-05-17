@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -100,6 +101,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">606</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>10</strong>g carbs</span><span class="rh-macro"><strong>64.2</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Hong Kong</span><span class="rh-tag rh-tag-course">drink</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -110,6 +114,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -243,37 +255,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">1</span>
         <div class="step-body">Equipment check. You need two heatproof pots or jugs (about 1 liter each), a fine cloth bag (a coffee filter sock, a clean nut-milk bag, or a long fabric tea filter, the &quot;silk stocking&quot; of the dish name). A fine wire mesh strainer will work but is the inferior version; the cloth physically absorbs tannins as the brew passes through, smoothing the bite.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 1: Equipment check. You need two heatproof pots or jugs (about 1 liter each), a fin" aria-label="Start 1 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">2</span>
         <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="10" data-imp-unit="tsp">15 g</span><!-- /auto-link-skip --> CTC Ceylon, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tsp">6 g</span><!-- /auto-link-skip --> orthodox tea, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="3" data-imp-unit="g">3 g</span><!-- /auto-link-skip --> pu-erh inside the cloth bag. Tie or fold the bag closed so leaves stay contained, they should have room to expand.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: Combine the 15 g CTC Ceylon, 6 g orthodox tea, and 3 g pu-erh inside the cloth b" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">3</span>
         <div class="step-body">Bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="ml" data-imp-qty="2.5" data-imp-unit="cups">600 ml / 2½ cups</span><!-- /auto-link-skip --> water to a rolling boil. Place the loaded cloth bag in the first pot and pour the boiling water through and over it. Cover the pot and let steep 5 minutes at high heat (set the pot back over the lowest flame to maintain temperature above 90°C). High-temperature, full-leaf-contact extraction is what gives Hong Kong tea its signature depth.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 3: Bring the 600 ml / 2½ cups water to a rolling boil. Place the loaded cloth bag i" aria-label="Start 6 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
         <div class="step-body">Now the silk-stocking pour-back. Lift the tea bag (with the leaves still inside) into the second empty pot. Pour the hot brewed tea over and through the bag, the liquid filters through the leaves and into the second pot. Then lift the bag back into the first pot and pour everything back through. Repeat this back-and-forth pour 4 times total. Each pass strips additional rough tannin compounds onto the fabric and aerates the brew; by the fourth pass the tea is noticeably smoother and slightly darker.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: Now the silk-stocking pour-back. Lift the tea bag (with the leaves still inside)" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Pre-warm two cups by rinsing with hot water. Discard the warming water. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="tsp">10 g / 1¼ tsp</span><!-- /auto-link-skip --> sugar to each cup.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Pre-warm two cups by rinsing with hot water. Discard the warming water. Add 10 g" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
-        <div class="step-body">Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> evaporated milk into the bottom of each cup over the sugar. Stir briefly to dissolve.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Pour 60 ml / ¼ cup evaporated milk into the bottom of each cup over the sugar. S" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="evaporated milk" data-sub-use="half-and-half" data-sub-note="Texturally similar but lacks the cooked, caramelized sweetness of evaporated milk. Closer to a London fog than to Hong Kong milk tea." tabindex="0" role="button" aria-label="Substitution available for evaporated milk">evaporated milk</span> into the bottom of each cup over the sugar. Stir briefly to dissolve.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Pour 60 ml / ¼ cup evaporated milk into the bottom of each cup over the sugar. S" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Pour the hot tea into each cup over the evaporated milk and sugar, about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> of tea per cup. The tea hits the cold milk and immediately turns the characteristic deep tan-mahogany of cha chaan teng milk tea. Stir once. Taste, should be strongly tea-forward, distinctly sweet, with the evaporated milk carrying body without making the drink milky. Adjust sugar by <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.5" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="tsp">½ tsp</span><!-- /auto-link-skip --> if needed.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Pour the hot tea into each cup over the evaporated milk and sugar, about 240 ml " aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -339,6 +351,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Banana bread</span>
           <span class="pair-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maxim</span>
@@ -348,6 +361,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter sugar cookies</span>
           <span class="pair-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar sh</span>
@@ -357,6 +371,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chai pumpkin cupcakes</span>
           <span class="pair-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butt</span>
@@ -366,6 +381,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè ba màu (three-color Vietnamese sweet bean dessert)</span>
           <span class="pair-desc">Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. Th</span>
@@ -375,6 +391,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Ceylon black tea</span>
           <span class="pair-desc">Sri Lankan black tea grown across multiple elevations. Bright, citrus-tinged, less malty than Assam;</span>
@@ -384,6 +401,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè chuối (Vietnamese banana, tapioca, and coconut chè)</span>
           <span class="pair-desc">Ripe bananas poached in a sweetened coconut milk base with small tapioca pearls. Builds in three the</span>
@@ -393,6 +411,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè đậu trắng (black-eyed pea and sticky rice chè)</span>
           <span class="pair-desc">Warm Vietnamese chè of tender black-eyed peas and chewy glutinous rice in a barely-sweet coconut mil</span>
@@ -402,6 +421,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè Thái (Vietnamese-Thai mixed fruit and jelly dessert)</span>
           <span class="pair-desc">Cold sweet soup of jackfruit, longan, lychee, basil seeds, and red ruby water chestnuts in sweetened</span>
@@ -486,6 +506,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

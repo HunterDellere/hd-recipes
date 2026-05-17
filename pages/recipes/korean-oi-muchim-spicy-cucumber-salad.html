@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">59</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>1.8</strong>g protein</span><span class="rh-macro"><strong>8.6</strong>g carbs</span><span class="rh-macro"><strong>2.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Korean</span><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -288,27 +300,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">1</span>
         <div class="step-body">Slice and salt-cure the cucumbers. Slice the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="2.192982456140351" data-imp-unit="cup">500 g</span><!-- /auto-link-skip --> cucumbers into 3 mm half-moons (rounds halved lengthwise first, then cut crosswise). Toss with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">6 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> in a colander set over a bowl. Let sit 15 minutes. Osmotic water leaves the cells, the cucumbers lose 10 to 15% of their weight, and what remains has dense flavor and stays crunchy under the dressing instead of weeping water into it. <a class="step-tech" href="../techniques/dry-brining.html">Dry brining</a><button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 1: Slice and salt-cure the cucumbers. Slice the 500 g cucumbers into 3 mm half-moon" aria-label="Start 15 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
-        <div class="step-body">Mix the dressing. In a small bowl, combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">8 g / 1 tbsp</span><!-- /auto-link-skip --> gochugaru, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> fish sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> rice vinegar, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> sugar, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.3527399072294044" data-imp-unit="oz">10 g</span><!-- /auto-link-skip --> grated garlic. Whisk until the gochugaru hydrates into a loose paste and the sugar dissolves. Wait 2 minutes; the gochugaru blooms in the aqueous mixture and turns from flake-dry to brick-red and glossy.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Mix the dressing. In a small bowl, combine 8 g / 1 tbsp gochugaru, 10 ml / 2 tsp" aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Mix the dressing. In a small bowl, combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">8 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="gochugaru" data-sub-use="Aleppo pepper or coarse Sichuan chili powder" data-sub-note="Both are imperfect substitutes. Aleppo pepper is the closest match in heat profile (mild to medium, rounded) but lacks the deep red color. Sichuan chili powder is similar in color but more aromatic. Korean cooking specifically; the rounded warm heat is the gochugaru signature. 1:1 by weight." tabindex="0" role="button" aria-label="Substitution available for gochugaru">gochugaru</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="fish sauce" data-sub-use="salted-shrimp paste (saeujeot, 새우젓) drained and minced, or light soy sauce" data-sub-note="Saeujeot is the canonical Korean alternative and is more traditional in some regional muchim recipes; use 1 tsp drained and minced for 2 tsp fish sauce. Light soy sauce works as a vegan substitute but the dish reads less complex." tabindex="0" role="button" aria-label="Substitution available for fish sauce">fish sauce</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="rice vinegar" data-sub-use="apple cider vinegar or distilled white vinegar reduced to 10 ml" data-sub-note="Rice vinegar is mild (4 to 5% acetic acid); apple cider is similar acid level and works 1:1. Distilled white vinegar is 5 to 7% acidity and needs reducing to about ⅔ the volume to avoid over-acidifying." tabindex="0" role="button" aria-label="Substitution available for rice vinegar">rice vinegar</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> sugar, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.3527399072294044" data-imp-unit="oz">10 g</span><!-- /auto-link-skip --> grated garlic. Whisk until the gochugaru hydrates into a loose paste and the sugar dissolves. Wait 2 minutes; the gochugaru blooms in the aqueous mixture and turns from flake-dry to brick-red and glossy.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Mix the dressing. In a small bowl, combine 8 g / 1 tbsp gochugaru, 10 ml / 2 tsp" aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Press out remaining water. Lift the salted cucumbers in handfuls and gently squeeze over the colander to expel surface water. The cucumber half-moons should feel firm and translucent at the rim, not soggy. Do not rinse; the surface salt is part of the seasoning.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Press out remaining water. Lift the salted cucumbers in handfuls and gently sque" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
-        <div class="step-body">Dress. Tip the squeezed cucumbers into a serving bowl. Pour the gochugaru dressing over and toss with chopsticks or a silicone spatula until every piece is coated red. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> toasted sesame oil last and toss again, the oil should suspend in a thin film over the aqueous dressing rather than mix in fully. Adding sesame oil before the aqueous dressing causes the oil to coat the cucumbers and block the seasoning from adhering.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Dress. Tip the squeezed cucumbers into a serving bowl. Pour the gochugaru dressi" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Dress. Tip the squeezed cucumbers into a serving bowl. Pour the gochugaru dressing over and toss with chopsticks or a silicone spatula until every piece is coated red. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="toasted sesame oil" data-sub-use="no good substitute" data-sub-note="Untoasted sesame oil lacks the roasted-aromatic compounds (sotolon, sesamol breakdown products) that define the finishing note; any other neutral oil reads flat. Korean grocery cold-pressed sesame oil is the gold standard; Kadoya (Japanese-style) is the most widely available acceptable option." tabindex="0" role="button" aria-label="Substitution available for toasted sesame oil">toasted sesame oil</span> last and toss again, the oil should suspend in a thin film over the aqueous dressing rather than mix in fully. Adding sesame oil before the aqueous dressing causes the oil to coat the cucumbers and block the seasoning from adhering.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Dress. Tip the squeezed cucumbers into a serving bowl. Pour the gochugaru dressi" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Finish. Scatter <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> sliced scallion and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> toasted sesame seeds over the top. Serve immediately or within 30 minutes. Taste; if flat, a few drops more fish sauce. If too sharp, a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.004901960784313725" data-imp-unit="cup">1 g</span><!-- /auto-link-skip --> pinch more sugar.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Finish. Scatter 20 g sliced scallion and 4 g / 2 tsp toasted sesame seeds over t" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -408,6 +420,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Gochujang sauce</span>
           <span class="pair-desc">The Korean condiment-grade sauce built from gochujang: fermented chili paste thinned with rice vineg</span>
@@ -417,6 +430,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Haemul pajeon (Korean seafood and scallion pancake, 해물파전)</span>
           <span class="pair-desc">A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight b</span>
@@ -426,6 +440,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean pajeon dipping sauce (cho-ganjang, 초간장)</span>
           <span class="pair-desc">Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condi</span>
@@ -435,6 +450,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)</span>
           <span class="pair-desc">Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-g</span>
@@ -444,6 +460,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry brining</span>
           <span class="pair-desc">Salt a protein surface and rest it long enough for osmosis to reverse — water and salt diffuse back </span>
@@ -453,6 +470,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Gochugaru (Korean chili flakes, 고추가루)</span>
           <span class="pair-desc">Sun-dried Korean red chili (Capsicum annuum, taeyangcho cultivar) milled to flakes or fine powder. M</span>
@@ -462,6 +480,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -471,6 +490,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kkakdugi</span>
           <span class="pair-desc">Cubed daikon radish kimchi, salt-drawn for 30 minutes to firm the cube structure, tossed with a goch</span>
@@ -561,6 +581,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">54</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>4.4</strong>g protein</span><span class="rh-macro"><strong>6.3</strong>g carbs</span><span class="rh-macro"><strong>1.3</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/indian.html" data-category="cuisines">Indian</a><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -294,24 +306,24 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">1</span>
         <div class="step-body">Prep the cucumber. Peel the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> cucumber and grate on the large holes of a box grater. Place the grated cucumber in a fine-mesh sieve, sprinkle with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.5" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="tsp">½ tsp</span><!-- /auto-link-skip --> salt, toss, and let stand 5 minutes. Squeeze gently with your hands to expel the water (about 60 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 ml</span><!-- /auto-link-skip --> of cucumber water will release). The squeezing is structural, un-squeezed cucumber waters down the raita as it sits and produces a thin, broken consistency. The squeezed-out cucumber water is fine to drink or to use in a vinaigrette; do not add to the raita.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 1: Prep the cucumber. Peel the 200 g cucumber and grate on the large holes of a box" aria-label="Start 6 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
-        <div class="step-body">Toast and grind the cumin (if using whole seeds, the upgrade). Heat a small dry skillet over medium heat. Add 1 tsp / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.5" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="g">2.5 g</span><!-- /auto-link-skip --> whole cumin seeds. Toast 60 to 90 seconds, swirling, until fragrant and slightly darker. Transfer to a mortar; grind to a coarse powder. The freshly toasted-and-ground cumin is dramatically more aromatic than supermarket pre-ground cumin powder, and the difference matters in a dish where cumin is the dominant aromatic. Pre-ground is acceptable but use 75% of the volume (it is more concentrated than fresh-toasted).<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Toast and grind the cumin (if using whole seeds, the upgrade). Heat a small dry " aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Toast and grind the cumin (if using whole seeds, the upgrade). Heat a small dry skillet over medium heat. Add 1 tsp / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.5" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="g">2.5 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="whole cumin seeds (for fresh-toast)" data-sub-use="pre-ground cumin powder" data-sub-note="Acceptable but the fresh-toast-and-grind version is dramatically more aromatic. If using pre-ground, use 75% of the called-for volume (pre-ground is more concentrated than fresh-toasted) and skip step 2." tabindex="0" role="button" aria-label="Substitution available for whole cumin seeds">whole cumin seeds</span>. Toast 60 to 90 seconds, swirling, until fragrant and slightly darker. Transfer to a mortar; grind to a coarse powder. The freshly toasted-and-ground cumin is dramatically more aromatic than supermarket pre-ground cumin powder, and the difference matters in a dish where cumin is the dominant aromatic. Pre-ground is acceptable but use 75% of the volume (it is more concentrated than fresh-toasted).<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Toast and grind the cumin (if using whole seeds, the upgrade). Heat a small dry " aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Whisk the yogurt base. In a medium serving bowl, whisk the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> yogurt with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml</span><!-- /auto-link-skip --> water until smooth and glossy. The whisking is structural, un-whisked yogurt has lumps and uneven texture; the whisked-and-thinned yogurt has the smooth pourable consistency that defines raita.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Whisk the yogurt base. In a medium serving bowl, whisk the 500 g yogurt with the" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
-        <div class="step-body">Combine. Add the squeezed grated cucumber, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> chopped mint, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> chopped cilantro, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="4" data-imp-unit="g">4 g</span><!-- /auto-link-skip --> minced green chili (if using) to the yogurt. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="3" data-imp-unit="g">3 g</span><!-- /auto-link-skip --> toasted cumin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="4" data-imp-unit="g">4 g</span><!-- /auto-link-skip --> salt or kala namak, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="1" data-imp-unit="g">1 g</span><!-- /auto-link-skip --> Kashmiri chili powder, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.4444444444444445" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> black pepper, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.00980392156862745" data-imp-unit="cup">2 g</span><!-- /auto-link-skip --> sugar. Stir gently to combine. Taste; adjust salt and chili. The raita should taste cooling, faintly herbal, lightly spiced, with the cumin as the dominant aromatic and the cucumber as the structural texture.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Combine. Add the squeezed grated cucumber, 8 g chopped mint, 8 g chopped cilantr" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Combine. Add the squeezed grated cucumber, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> chopped mint, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> chopped cilantro, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="4" data-imp-unit="g">4 g</span><!-- /auto-link-skip --> minced green chili (if using) to the yogurt. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="3" data-imp-unit="g">3 g</span><!-- /auto-link-skip --> toasted cumin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="4" data-imp-unit="g">4 g</span><!-- /auto-link-skip --> salt or <span class="sub-hint" data-sub-for="kala namak (black salt)" data-sub-use="fine sea salt" data-sub-note="Acceptable standard substitute. Kala namak has a distinctive sulfurous note that some cooks consider essential to raita; fine sea salt produces a cleaner-tasting raita that is correct for many regional traditions. Both are valid." tabindex="0" role="button" aria-label="Substitution available for kala namak">kala namak</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="1" data-imp-unit="g">1 g</span><!-- /auto-link-skip --> Kashmiri chili powder, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.4444444444444445" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> black pepper, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.00980392156862745" data-imp-unit="cup">2 g</span><!-- /auto-link-skip --> sugar. Stir gently to combine. Taste; adjust salt and chili. The raita should taste cooling, faintly herbal, lightly spiced, with the cumin as the dominant aromatic and the cucumber as the structural texture.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Combine. Add the squeezed grated cucumber, 8 g chopped mint, 8 g chopped cilantr" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
       <li class="step-item">
@@ -402,6 +414,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">House blend chai</span>
           <span class="pair-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no</span>
@@ -411,6 +424,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Rice kheer (chawal ki kheer)</span>
           <span class="pair-desc">Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and </span>
@@ -420,6 +434,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Masala chai (proper Indian milk-spice tea)</span>
           <span class="pair-desc">Black tea boiled with milk, fresh ginger, and toasted whole spices in the correct order so each phas</span>
@@ -429,6 +444,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Pav bhaji (Mumbai street vegetable mash)</span>
           <span class="pair-desc">Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghe</span>
@@ -438,6 +454,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -447,6 +464,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Indian</span>
           <span class="pair-desc">Spice as a layered system, not a heat dial. Each spice enters at a specific moment (bloomed in fat, </span>
@@ -456,6 +474,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Yogurt (dahi, plain whole-milk)</span>
           <span class="pair-desc">Whole milk fermented with Lactobacillus and Streptococcus cultures into a thick tangy curd. Around 8</span>
@@ -465,6 +484,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ras malai (chhena dumplings in saffron-cardamom milk)</span>
           <span class="pair-desc">Fresh chhena (acid-set whole-milk curds, drained and kneaded) shaped into small discs, gently simmer</span>
@@ -555,6 +575,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

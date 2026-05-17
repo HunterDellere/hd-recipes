@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">388</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>7.9</strong>g protein</span><span class="rh-macro"><strong>66.7</strong>g carbs</span><span class="rh-macro"><strong>9.6</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Japanese (yōshoku)</span><span class="rh-tag rh-tag-course">dinner</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -358,37 +370,37 @@
         <div class="step-body">Prepare the rice the day before: cook <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> of Japanese short-grain rice (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">1 cup</span><!-- /auto-link-skip --> uncooked) by the standard method (rinse 3 times in cold water until the water runs nearly clear; cook in a rice cooker with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="220" data-metric-unit="ml" data-imp-qty="0.9166666666666666" data-imp-unit="cup">220 ml</span><!-- /auto-link-skip --> water, or on the stove in a covered pot for 18 minutes with a 10-minute rest); spread on a sheet pan to cool; refrigerate overnight uncovered or loosely covered. The day-old refrigerated rice is structural for proper fried rice; the starch has had time to retrograde and the grains separate cleanly under the spatula rather than clumping.</div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Make the chikin raisu: heat <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.4492753623188406" data-imp-unit="tbsp">20 g</span><!-- /auto-link-skip --> neutral oil in a wide carbon-steel or nonstick skillet (25 to 28 cm / 10 to 11 inch) over medium-high heat. Add the 180 g / 1 chicken thigh (cubed); season with a small pinch of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.33333333333333337" data-imp-unit="tsp">2 g</span><!-- /auto-link-skip --> salt; cook 4 to 5 minutes, stirring occasionally, until the chicken is just cooked through and lightly golden on the surface (no longer pink at the center, with some Maillard color). Push the chicken to one side of the pan.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Make the chikin raisu: heat 15 g / 1 tbsp of the 20 g neutral oil in a wide carb" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">3</span>
         <div class="step-body">Add the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> neutral oil to the cleared space; add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> / ½ onion (diced) and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="2.1164394433764264" data-imp-unit="oz">60 g</span><!-- /auto-link-skip --> / ½ bell pepper (diced); sauté 3 to 4 minutes, stirring, until the onion is translucent-gold and the bell pepper is just-softened. Stir the chicken back into the vegetables. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="2" data-imp-unit="cups">400 g / 2 cups</span><!-- /auto-link-skip --> day-old rice; break up any clumps with the back of a wooden spoon or a flat spatula; toss to combine and heat through, 2 minutes.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 3: Add the remaining 5 g / 1 tsp neutral oil to the cleared space; add the 100 g / " aria-label="Start 6 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
-        <div class="step-body">Push the rice mixture to one side of the pan; in the cleared space, add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> ketchup directly to the pan (not stirred into the rice yet). Let the ketchup cook on the hot pan surface for 60 to 90 seconds without stirring; the ketchup will visibly darken from bright red to a deeper rust color as the sugars in the ketchup undergo Maillard browning. This is the structural fried-ketchup step that separates a canonical chikin raisu from a generic ketchup-stirred-in fried rice; the browned ketchup reads deeper, less sweet, and more complex.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Push the rice mixture to one side of the pan; in the cleared space, add the 60 g" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Push the rice mixture to one side of the pan; in the cleared space, add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="ketchup (Japanese-style or quality American)" data-sub-use="tomato paste plus sugar plus vinegar (an approximation)" data-sub-note="Ketchup is structurally specific to this dish and there is no clean substitute; cheap ketchup produces a sweet flat fried rice and the dish is meaningfully degraded. If ketchup is unavailable, an approximation can be made: 40 g tomato paste plus 15 g sugar plus 5 g rice vinegar plus 1 g salt, whisked to combine; this approximates the structural Japanese-Western flavor signature but reads less refined. Worth the trip to find quality ketchup (Kagome, Heinz, or a craft ketchup) for a canonical preparation." tabindex="0" role="button" aria-label="Substitution available for ketchup">ketchup</span> directly to the pan (not stirred into the rice yet). Let the ketchup cook on the hot pan surface for 60 to 90 seconds without stirring; the ketchup will visibly darken from bright red to a deeper rust color as the sugars in the ketchup undergo Maillard browning. This is the structural fried-ketchup step that separates a canonical chikin raisu from a generic ketchup-stirred-in fried rice; the browned ketchup reads deeper, less sweet, and more complex.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Push the rice mixture to one side of the pan; in the cleared space, add the 60 g" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Stir the browned ketchup into the rice mixture vigorously, coating every grain in the rust-red sauce. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">40 g / ¼ cup</span><!-- /auto-link-skip --> thawed peas, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">6 g / 1 tsp</span><!-- /auto-link-skip --> soy sauce, the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.5" data-metric-unit="g" data-imp-qty="0.6666666666666666" data-imp-unit="tsp">1.5 g</span><!-- /auto-link-skip --> / pinch salt, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.22222222222222224" data-imp-unit="tsp">0.5 g</span><!-- /auto-link-skip --> / pinch white pepper; toss to combine and heat through, 1 to 2 minutes more. Taste and adjust seasoning. The finished chikin raisu should be uniformly red-<a class="x-link" data-category="ingredients" href="../ingredients/orange.html">orange</a>, with visible chicken, onion, pepper, and peas distributed through the rice, and the grains should be separate and glistening with ketchup. Divide into 2 mounds (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="g" data-imp-qty="8.465757773505706" data-imp-unit="oz">240 g</span><!-- /auto-link-skip --> each) and shape each mound into a football (American oval, not a sphere) on its serving plate; the football shape is the canonical Japanese omurice rice base.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Stir the browned ketchup into the rice mixture vigorously, coating every grain i" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
         <div class="step-body">Make the omelets (one per plate, made one at a time): in a small bowl, beat 100 g / 2 eggs with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7.5" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">7.5 g / 1½ tsp</span><!-- /auto-link-skip --> milk and a pinch of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.4444444444444445" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> salt for 30 seconds until just uniform (no streaks of white; do not whip air into the eggs). Heat a small nonstick skillet (20 to 22 cm / 8 to 9 inch) over medium-high heat for 1 minute; add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7.5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">7.5 g / ½ tbsp</span><!-- /auto-link-skip --> of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1.097694840834248" data-imp-unit="tbsp">15 g</span><!-- /auto-link-skip --> butter and swirl to coat. When the butter is foaming but not yet browning, pour in the beaten eggs all at once; immediately use a chopstick or rubber spatula to stir the eggs gently in tight circular motions for 5 to 8 seconds (this builds small soft curds throughout the omelet rather than letting it set as a single sheet). Stop stirring; let the omelet finish cooking undisturbed for 15 to 20 seconds until the bottom has set but the top is still visibly wet and just barely set.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: Make the omelets (one per plate, made one at a time): in a small bowl, beat 100 " aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
         <div class="step-body">The wrap: slide the wet-topped omelet partially out of the pan onto a clean kitchen towel (or directly onto the rice football). Using the towel (or the pan edge), fold the front of the omelet up and over the long edge of the rice football, then roll the entire omelet over so the seam is on the bottom (under the rice). The omelet should fully envelope the rice in a smooth oval blanket; any visible seams can be smoothed with a paper towel pressed gently against the top. Place a clean kitchen towel over the wrapped omurice and gently mold with your hands to shape into a smooth taut football. Repeat with the remaining 100 g / 2 eggs, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7.5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">7.5 g / ½ tbsp</span><!-- /auto-link-skip --> butter, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7.5" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">7.5 g / 1½ tsp</span><!-- /auto-link-skip --> milk for the second plate.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: The wrap: slide the wet-topped omelet partially out of the pan onto a clean kitc" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
         <div class="step-body">The finish: squeeze the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> finishing ketchup in a thin zigzag line across the top of each wrapped omurice (a steady continuous squeeze in a single zigzag pattern from one end to the other; the zigzag is the canonical Japanese visual presentation and the structural artistic flourish). Sprinkle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">4 g / 1 tbsp</span><!-- /auto-link-skip --> chopped parsley across the top. Serve immediately while the omelet is still warm and soft; omurice is structurally a hot dish and the omelet firms quickly as it cools. The diner cuts the omelet open with a fork from the side, revealing the red ketchup rice inside, and eats forkfuls of egg-and-rice together.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: The finish: squeeze the 15 g / 1 tbsp finishing ketchup in a thin zigzag line ac" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -488,6 +500,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Air-fried okra with four flavor finishes</span>
           <span class="pair-desc">Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 40</span>
@@ -497,6 +510,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -506,6 +520,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -515,6 +530,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ensalada de nopales</span>
           <span class="pair-desc">Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and M</span>
@@ -524,6 +540,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Japanese short-grain rice (uruchimai)</span>
           <span class="pair-desc">Short-grain Oryza sativa japonica ,  round, plump, high-amylopectin grains that cook tender and slig</span>
@@ -533,6 +550,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Fattoush with sumac and toasted pita</span>
           <span class="pair-desc">Levantine bread salad: oven-crisped day-old pita over chopped raw vegetables, dressed with a sumac, </span>
@@ -542,6 +560,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Furikake (homemade rice seasoning)</span>
           <span class="pair-desc">Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice</span>
@@ -551,6 +570,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">German warm potato salad with bacon and mustard</span>
           <span class="pair-desc">Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm</span>
@@ -641,6 +661,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

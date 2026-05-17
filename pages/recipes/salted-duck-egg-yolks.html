@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">2</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.1</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/chinese.html" data-category="cuisines">Chinese</a><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -249,37 +261,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">1</span>
-        <div class="step-body">Bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="cups">1500 ml / 6 cups</span><!-- /auto-link-skip --> water to a boil with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="360" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="cups">360 g / 1½ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">5 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a>, and the 2 <a class="x-link" data-category="ingredients" href="../ingredients/star-anise.html">star anise</a>. Stir to dissolve the salt completely. Boil 3 minutes, then pull off heat and cool to room temperature; the brine must be fully cool before the eggs go in or the heat will partially cook the whites and disrupt the cure.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 1: Bring the 1500 ml / 6 cups water to a boil with the 360 g / 1½ cups kosher salt," aria-label="Start 25 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
+        <div class="step-body">Bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="cups">1500 ml / 6 cups</span><!-- /auto-link-skip --> water to a boil with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="360" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="cups">360 g / 1½ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="kosher salt (Diamond Crystal)" data-sub-use="fine sea salt" data-sub-note="Use 250 g / 1 cup fine sea salt instead. Diamond Crystal's flake structure makes it lighter by volume; the brine percentage is what matters, and 360 g DC ≈ 250 g fine sea salt." tabindex="0" role="button" aria-label="Substitution available for kosher salt"><a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a></span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">5 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a>, and the 2 <a class="x-link" data-category="ingredients" href="../ingredients/star-anise.html">star anise</a>. Stir to dissolve the salt completely. Boil 3 minutes, then pull off heat and cool to room temperature; the brine must be fully cool before the eggs go in or the heat will partially cook the whites and disrupt the cure.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 1: Bring the 1500 ml / 6 cups water to a boil with the 360 g / 1½ cups kosher salt," aria-label="Start 25 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
-        <div class="step-body">Once cool, stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> Shaoxing wine. Wash the 12 duck eggs gently in cool water and inspect each shell for cracks; discard any with even hairline cracks, as the cure will salt the inside catastrophically through any opening. Pat the eggs dry.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Once cool, stir in the 30 ml / 2 tbsp Shaoxing wine. Wash the 12 duck eggs gentl" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Once cool, stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="Shaoxing wine" data-sub-use="dry sherry or vodka" data-sub-note="The wine is doing antimicrobial work, not flavor work. Any 14%+ ABV alcohol works." tabindex="0" role="button" aria-label="Substitution available for Shaoxing wine">Shaoxing wine</span>. Wash the 12 <span class="sub-hint" data-sub-for="duck eggs" data-sub-use="chicken eggs" data-sub-note="Chicken-egg yolks cure on the same timeline but read smaller, less red, and less dense. Acceptable when duck eggs are unavailable; the Cantonese ingredient is specifically duck for the larger yolk and richer fat fraction (~30% vs chicken's ~27%)." tabindex="0" role="button" aria-label="Substitution available for duck eggs">duck eggs</span> gently in cool water and inspect each shell for cracks; discard any with even hairline cracks, as the cure will salt the inside catastrophically through any opening. Pat the eggs dry.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Once cool, stir in the 30 ml / 2 tbsp Shaoxing wine. Wash the 12 duck eggs gentl" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
         <div class="step-body">Layer the eggs into a clean 2-liter glass jar. Pour the cooled brine over to cover; the eggs will float, which is fine. Weigh them down with a small clean plate or a brine-bag (a zip-top bag filled with extra brine, sealed, and pressed onto the eggs) so every egg stays submerged. Seal the jar.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Layer the eggs into a clean 2-liter glass jar. Pour the cooled brine over to cov" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="50400">
         <span class="step-num">4</span>
         <div class="step-body">Hold at cool room temperature (18 to 22°C / 65 to 72°F), out of direct sunlight, for 35 days. Do not refrigerate; the cure runs slower at fridge temperature and the cure penetration becomes uneven. Check the jar weekly to confirm no eggs have surfaced; press them back under if they have. The brine may darken slightly, this is normal.<span class="step-time">35 d 0 h</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">After 35 days, pull the jar. Test one egg before processing the rest: crack it raw into a small bowl. The white should be liquid, glassy, and pale yellow with visible saline graininess at the edges. The yolk should be intact, deep orange-red, and dense (it should hold a clear shape when slid out, not flow). If the yolk is still pale-yellow and runny like a fresh egg, return the rest to the brine for another 5 to 7 days.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: After 35 days, pull the jar. Test one egg before processing the rest: crack it r" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">6</span>
         <div class="step-body">Steam the eggs to set them. Place the eggs in a steamer basket over actively boiling steam and cook 12 to 14 minutes. The whites firm to a slightly tough opaque set; the yolks firm into the dense, fudgy red-orange that is the entire point of the ingredient. Cool to room temperature, then refrigerate.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 6: Steam the eggs to set them. Place the eggs in a steamer basket over actively boi" aria-label="Start 15 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">7</span>
         <div class="step-body">Separate the yolks for use. Crack each cooled steamed egg, halve gently, and slip the yolk out with a small spoon. The whites are aggressively saline and most cooks discard them, though they can be diced and used as a saline-savory accent in fried rice or congee. Refrigerate the yolks in a sealed container; they keep 3 weeks and freeze well for 3 months.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 7: Separate the yolks for use. Crack each cooled steamed egg, halve gently, and sli" aria-label="Start 10 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
@@ -369,6 +381,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -378,6 +391,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese white congee</span>
           <span class="pair-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The ric</span>
@@ -387,6 +401,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken and ginger congee</span>
           <span class="pair-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clea</span>
@@ -396,6 +411,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese lion's head meatballs (shīzi tóu)</span>
           <span class="pair-desc">Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion</span>
@@ -405,6 +421,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -414,6 +431,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Sichuan peppercorns</span>
           <span class="pair-desc">The husks of Zanthoxylum berries. Not actually pepper — they create má, the buzzing tingling numbnes</span>
@@ -423,6 +441,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese tea eggs</span>
           <span class="pair-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marbl</span>
@@ -432,6 +451,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cocoa-osmanthus dun nai</span>
           <span class="pair-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral</span>
@@ -522,6 +542,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

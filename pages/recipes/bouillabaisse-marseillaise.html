@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -104,6 +105,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">hard</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">631</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>48.1</strong>g protein</span><span class="rh-macro"><strong>38.1</strong>g carbs</span><span class="rh-macro"><strong>31.6</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">French (Provençal, Marseille)</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -114,6 +118,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -492,47 +504,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">1</span>
-        <div class="step-body">Build the fish broth. In a wide 8 to 10 quart stockpot over medium heat, warm the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> olive oil. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> onion, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> leek, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fennel-bulb.html">fennel bulb</a> dice, 30 g / 6 to 8 smashed garlic cloves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fennel-seed.html">fennel seed</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> red pepper flakes, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tsp">12 g / 2½ tsp</span><!-- /auto-link-skip --> salt. Sweat 8 to 10 minutes, stirring occasionally, until the vegetables turn translucent and start to take on a faint golden-edge color (the goal is softened, not browned). <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Build the fish broth. In a wide 8 to 10 quart stockpot over medium heat, warm th" aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">Build the fish broth. In a wide 8 to 10 quart stockpot over medium heat, warm the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> olive oil. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> onion, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="leek" data-sub-use="yellow onion plus a small bunch of scallion whites" data-sub-note="Leek is canonical for the Provençal white-mirepoix; if unavailable, use 75 g additional yellow onion plus 50 g scallion whites. The broth reads slightly sharper and less sweet." tabindex="0" role="button" aria-label="Substitution available for leek">leek</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fennel-bulb.html">fennel bulb</a> dice, 30 g / 6 to 8 smashed garlic cloves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fennel-seed.html">fennel seed</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> red pepper flakes, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tsp">12 g / 2½ tsp</span><!-- /auto-link-skip --> salt. Sweat 8 to 10 minutes, stirring occasionally, until the vegetables turn translucent and start to take on a faint golden-edge color (the goal is softened, not browned). <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Build the fish broth. In a wide 8 to 10 quart stockpot over medium heat, warm th" aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Push the aromatics to the edges of the pot, drop the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/tomato-paste.html">tomato paste</a> into the cleared center, and let it sizzle in the oil for 60 to 90 seconds without stirring, until the paste turns from bright red to a deeper rust-red. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="1.6025641025641024" data-imp-unit="cup">400 g</span><!-- /auto-link-skip --> / ½ can crushed San Marzano tomatoes; cook 3 to 4 minutes, breaking up the tomato chunks, until the mixture has thickened slightly and smells of roasted-tomato.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Push the aromatics to the edges of the pot, drop the 60 g / ¼ cup tomato paste i" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
-        <div class="step-body">Add the 1500 g / 3 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1814.368" data-metric-unit="g" data-imp-qty="4" data-imp-unit="lb">4 lbs</span><!-- /auto-link-skip --> of fish bones, heads, and trimmings (gills removed, rinsed); pour in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">250 ml / 1 cup</span><!-- /auto-link-skip --> white wine; scrape up any fond. Increase heat to high and bring to a boil; cook 2 minutes to burn off the alcohol. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2500" data-metric-unit="ml" data-imp-qty="10.5" data-imp-unit="cups">2500 ml / 10½ cups</span><!-- /auto-link-skip --> water (or enough to cover the bones by 5 cm), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="g">0.5 g</span><!-- /auto-link-skip --> saffron, the wide-strip orange peel from 1 orange, the 2 bay leaves, the 6 thyme sprigs, and the bundled parsley stems. Bring back to a boil, then reduce to a hard simmer (the canonical bouillabaisse broth simmers harder than a standard fumet, the goal is emulsification of the olive oil into the gelatinous broth, which produces the milky orange-pink color). <a class="step-tech" href="../techniques/deglazing.html">Deglazing</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Add the 1500 g / 3 to 4 lbs of fish bones, heads, and trimmings (gills removed, " aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Add the 1500 g / 3 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1814.368" data-metric-unit="g" data-imp-qty="4" data-imp-unit="lb">4 lbs</span><!-- /auto-link-skip --> of fish bones, heads, and trimmings (gills removed, rinsed); pour in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">250 ml / 1 cup</span><!-- /auto-link-skip --> white wine; scrape up any fond. Increase heat to high and bring to a boil; cook 2 minutes to burn off the alcohol. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2500" data-metric-unit="ml" data-imp-qty="10.5" data-imp-unit="cups">2500 ml / 10½ cups</span><!-- /auto-link-skip --> water (or enough to cover the bones by 5 cm), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="g">0.5 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="saffron" data-sub-use="no good substitute; reduce dish ambition" data-sub-note="Saffron is structural in bouillabaisse; without it the dish reads as a generic fish soup. The flavor compound (safranal) and color compound (crocin) have no good substitute; if saffron is unavailable, use ¼ tsp paprika as a color-only sub and the dish becomes &quot;fish soup&quot; rather than bouillabaisse specifically." tabindex="0" role="button" aria-label="Substitution available for saffron">saffron</span>, the wide-strip <span class="sub-hint" data-sub-for="orange peel" data-sub-use="dried orange peel, mandarin peel, or omit" data-sub-note="Wide-strip fresh navel orange peel is canonical; dried orange peel works at ⅓ the weight. Mandarin or tangerine peel reads slightly more floral. Omitting the orange peel removes the Provençal cross-pollination signature; the dish becomes more like a Tuscan cacciucco." tabindex="0" role="button" aria-label="Substitution available for orange peel">orange peel</span> from 1 orange, the 2 bay leaves, the 6 thyme sprigs, and the bundled parsley stems. Bring back to a boil, then reduce to a hard simmer (the canonical bouillabaisse broth simmers harder than a standard fumet, the goal is emulsification of the olive oil into the gelatinous broth, which produces the milky orange-pink color). <a class="step-tech" href="../techniques/deglazing.html">Deglazing</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Add the 1500 g / 3 to 4 lbs of fish bones, heads, and trimmings (gills removed, " aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="40">
         <span class="step-num">4</span>
         <div class="step-body">Hard-simmer the broth uncovered 35 to 45 minutes, breaking up the bones with a wooden spoon every 10 minutes to release more gelatin. The broth should reduce by roughly a quarter and turn a milky orange-pink color from the emulsified oil. Taste at 30 minutes; the broth should read intensely saffron-tomato-fish, with no raw bone notes. The hardest-simmer technique here is canonical and structural; a gentle simmer produces a clear thin broth (a fumet), which is wrong for bouillabaisse.<button type="button" class="step-time step-time-btn" data-step-timer="40" data-step-label="Step 4: Hard-simmer the broth uncovered 35 to 45 minutes, breaking up the bones with a w" aria-label="Start 40 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">40 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">5</span>
         <div class="step-body">Strain the broth. Set a fine-mesh strainer (or a colander lined with damp cheesecloth) over a clean large bowl or stockpot. Pour the broth and solids through the strainer; press hard on the solids with the back of a ladle to extract every drop (the strained broth should yield 1.5 to 2 L). Discard the bones and aromatic solids. Return the strained broth to a clean wide pot or Dutch oven. Taste and adjust salt (typically another 2 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="4" data-imp-unit="g">4 g</span><!-- /auto-link-skip --> / ½ to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">1 tsp</span><!-- /auto-link-skip -->). The broth can be made up to 24 hours ahead and refrigerated; bring back to a bare simmer before adding the fish chunks.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 5: Strain the broth. Set a fine-mesh strainer (or a colander lined with damp cheese" aria-label="Start 10 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">6</span>
         <div class="step-body">During the broth strain, prepare the accompaniments. Steam or simmer the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="1.3227746521102666" data-imp-unit="lb">600 g</span><!-- /auto-link-skip --> sliced waxy potatoes in salted water until tender (10 to 12 minutes); drain and keep warm. Toast the 300 g / 12 to 18 baguette rounds: brush both sides with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> olive oil; toast in a heavy skillet or a 200°C / 400°F oven 4 to 6 minutes per side until deeply golden and crisp. Immediately rub one side of each hot crouton with the cut face of the 8 g / 2 halved garlic cloves; pile on a board next to the soup bowls. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 6: During the broth strain, prepare the accompaniments. Steam or simmer the 600 g s" aria-label="Start 15 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">7</span>
-        <div class="step-body">Bring the strained broth to a bare simmer (about 90°C / 195°F, just-trembling, no rolling boil; harder simmer breaks up the fish chunks). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> monkfish chunks (the densest fish, longest cook); simmer 4 minutes. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="2.4038461538461537" data-imp-unit="cup">600 g</span><!-- /auto-link-skip --> whole-fish steaks (bone-in cross-sections); simmer 2 more minutes (6 minutes total for monkfish). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> cod chunks and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> halibut chunks; simmer 4 to 6 more minutes, until all the fish is just-flaky at the center (60°C / 140°F internal for halibut and cod; 60 to 65°C / 140 to 150°F for monkfish; the dense fish-and-bone steaks read done when the flesh just-pulls from the bone). Pull off the heat immediately; the residual heat finishes the last bit of cook.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 7: Bring the strained broth to a bare simmer (about 90°C / 195°F, just-trembling, n" aria-label="Start 10 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">Bring the strained broth to a bare simmer (about 90°C / 195°F, just-trembling, no rolling boil; harder simmer breaks up the fish chunks). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="monkfish, cod, halibut, snapper, sea bass" data-sub-use="any combination of firm white fish: lingcod, black sea bass, Pacific rockfish, striped bass, branzino, John Dory" data-sub-note="The structural rule is &quot;multiple firm white fish, with bony heads and bones for the broth.&quot; Avoid oily fish (salmon, mackerel, bluefish) which overwhelm the saffron-fennel signature. The canonical Provençal mix is rascasse (Mediterranean rockfish), conger eel, monkfish, and john dory; US-market substitutes are listed above. Pacific Coast cooks should lean on lingcod and rockfish; East Coast cooks on striped bass, black sea bass, and snapper." tabindex="0" role="button" aria-label="Substitution available for monkfish">monkfish</span> chunks (the densest fish, longest cook); simmer 4 minutes. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="2.4038461538461537" data-imp-unit="cup">600 g</span><!-- /auto-link-skip --> whole-fish steaks (bone-in cross-sections); simmer 2 more minutes (6 minutes total for monkfish). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> cod chunks and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> halibut chunks; simmer 4 to 6 more minutes, until all the fish is just-flaky at the center (60°C / 140°F internal for halibut and cod; 60 to 65°C / 140 to 150°F for monkfish; the dense fish-and-bone steaks read done when the flesh just-pulls from the bone). Pull off the heat immediately; the residual heat finishes the last bit of cook.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 7: Bring the strained broth to a bare simmer (about 90°C / 195°F, just-trembling, n" aria-label="Start 10 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">8</span>
         <div class="step-body">Plate the fish. With a slotted spoon or spider, lift the fish chunks gently from the broth (the cooked flesh is fragile); arrange on a warm serving platter, alternating the species. Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="ml" data-imp-qty="0.4166666666666667" data-imp-unit="cup">100 ml</span><!-- /auto-link-skip --> of the broth over the fish to keep it moist; surround with the steamed potato slices. Sprinkle with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.3125" data-imp-unit="cup">15 g</span><!-- /auto-link-skip --> chopped parsley and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> chopped fennel fronds. Cover loosely with foil to keep warm.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 8: Plate the fish. With a slotted spoon or spider, lift the fish chunks gently from" aria-label="Start 3 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">9</span>
         <div class="step-body">Serve in two courses. First course (the soup): ladle the saffron-orange broth into wide shallow bowls. Place 2 to 3 garlic-rubbed croutons on the side of each bowl with a generous spoonful of rouille on each crouton; diners spread the rouille onto the toasts and float them on the broth, watching the rouille slowly dissolve and color the broth a deeper red-orange. Second course (the fish): present the platter of fish-and-potatoes at the table; let diners help themselves, with more rouille on the side. The juxtaposition is the dish: the broth is the saffron-fennel-orange-tomato concentrate, the fish-and-potato is the textural mild counterpoint, and the rouille is the garlic-saffron-chili bridge that ties the two courses together. <a class="step-tech" href="../techniques/pan-emulsion.html">Pan emulsion (mantecare)</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 9: Serve in two courses. First course (the soup): ladle the saffron-orange broth in" aria-label="Start 5 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -668,6 +680,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Rouille (saffron-garlic aioli for bouillabaisse)</span>
           <span class="pair-desc">The Provençal saffron-and-garlic mayonnaise that crowns bouillabaisse and bourride, built from soake</span>
@@ -677,6 +690,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Air-fried okra with four flavor finishes</span>
           <span class="pair-desc">Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 40</span>
@@ -686,6 +700,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -695,6 +710,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -704,6 +720,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -713,6 +730,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Deglazing</span>
           <span class="pair-desc">Add liquid to a hot pan after a sear so the fond — browned protein and sugar residue — dissolves int</span>
@@ -722,6 +740,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -731,6 +750,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Pan emulsion (mantecare)</span>
           <span class="pair-desc">Bind starchy pasta water and fat into a glossy sauce by tossing pasta with fat over low heat, finish</span>
@@ -821,6 +841,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -42,6 +42,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -90,6 +91,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">50</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.6</strong>g protein</span><span class="rh-macro"><strong>4</strong>g carbs</span><span class="rh-macro"><strong>3.8</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/french.html" data-category="cuisines">French</a><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -100,6 +104,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -313,22 +325,22 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">1</span>
         <div class="step-body">For the Mediterranean (roasted-shell) version, heat oven to 200 °C / 400 °F. Toss the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> shrimp shells and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="g" data-imp-qty="10.582197216882133" data-imp-unit="oz">300 g</span><!-- /auto-link-skip --> crab shells with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> olive oil on a heavy roasting pan. Roast 15 to 20 minutes, until the shells turn deep red-orange and smell powerfully seafood-roasted. Skip this step for a delicate fumet (raw version, used for sole sauces, risotto al frutti di mare); roast for cioppino, bouillabaisse, paella, or any tomato-based seafood preparation.<button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 1: For the Mediterranean (roasted-shell) version, heat oven to 200 °C / 400 °F. Tos" aria-label="Start 20 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Transfer the roasted shells (or the unroasted shells, for a fumet) to an 8-quart stockpot along with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> of fish bones and head. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> onion, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> fennel bulb, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> leek, and halved <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.0582197216882132" data-imp-unit="oz">30 g</span><!-- /auto-link-skip --> garlic head. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">250 ml / 1 cup</span><!-- /auto-link-skip --> dry white wine into the roasting pan (if used), scrape up any fond, and add to the stockpot.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Transfer the roasted shells (or the unroasted shells, for a fumet) to an 8-quart" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="50">
         <span class="step-num">3</span>
         <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2000" data-metric-unit="ml" data-imp-qty="8" data-imp-unit="cups">2000 ml / 8 cups</span><!-- /auto-link-skip --> cold water, 2 bay leaves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> peppercorns, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.20833333333333334" data-imp-unit="cup">10 g</span><!-- /auto-link-skip --> parsley stems, and 3 thyme sprigs. Bring to the threshold of a simmer over medium heat (about 90 °C / 195 °F); skim any foam that rises in the first 10 minutes (gray scum, denatured surface proteins from the bones). Reduce to a bare tremor of a simmer and cook 45 minutes uncovered. Stop at 45 minutes; over-simmering past 60 minutes makes the stock taste bitter and aggressively fishy as the bones break down further.<button type="button" class="step-time step-time-btn" data-step-timer="50" data-step-label="Step 3: Add the 2000 ml / 8 cups cold water, 2 bay leaves, 4 g / ¾ tsp peppercorns, 10 g" aria-label="Start 50 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">50 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">4</span>
         <div class="step-body">Strain through a fine-mesh sieve into a second pot, pressing the solids lightly to extract liquid. Discard the spent shells and bones. For an even cleaner stock, strain again through cheesecloth. The finished stock should be a deep amber-gold (roasted version) or pale gold (fumet version), aromatic, and lightly viscous; cooled and refrigerated, it should set into a soft jelly within a few hours, the visual signature of properly extracted shellfish stock.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 4: Strain through a fine-mesh sieve into a second pot, pressing the solids lightly " aria-label="Start 10 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
@@ -385,6 +397,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Salade niçoise</span>
           <span class="pair-desc">Oil-poached tuna, blanched haricots verts, jammy egg, salt-cured tomato, and nicoise olives over an </span>
@@ -394,6 +407,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -403,6 +417,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -412,6 +427,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -421,6 +437,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">French</span>
           <span class="pair-desc">Technique as the transferable unit. The French canon is less about ingredients than about a vocabula</span>
@@ -430,6 +447,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Fennel bulb</span>
           <span class="pair-desc">Florence or Sweet fennel, Foeniculum vulgare var. dulce. Crisp white-green basal bulb (swollen leaf </span>
@@ -439,6 +457,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -448,6 +467,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -480,6 +500,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -294,7 +294,7 @@ function resolveDensityForContext(stepText, matchIndex, fm, ingredientBySlug) {
   return best ? { density: best.density, impPref: best.impPref } : {};
 }
 
-function wrapStepQuantities(text, fm, ingredientBySlug) {
+function wrapStepQuantities(text, fm, ingredientBySlug, subHintsState) {
   if (!text) return '';
   // Pass 1: find all match ranges from all three patterns. Earlier-priority
   // patterns claim their bytes first; later patterns skip overlaps.
@@ -344,6 +344,39 @@ function wrapStepQuantities(text, fm, ingredientBySlug) {
     insertSpan(m.index, m.index + full.length, buildStepQtySpan(met.qty, met.unit, iqNum, canonImperialUnit(iu), full));
   }
 
+  // Pass 1d — substitution hints. For each substitution `for` token that
+  // hasn't yet been wrapped in any prior step, find the first non-overlapping
+  // occurrence in this step and claim it. The `for` strings are often verbose
+  // ("pecorino romano DOP, aged 8 to 12 months") and won't appear verbatim in
+  // step prose — try the full literal first, then a stripped "core noun" form
+  // (everything before the first comma or paren).
+  if (subHintsState && subHintsState.hints && subHintsState.hints.length) {
+    for (const hint of subHintsState.hints) {
+      if (subHintsState.used.has(hint.for)) continue;
+      const variants = [hint.for];
+      const core = hint.for.split(/[,(]/)[0].trim();
+      if (core && core !== hint.for) variants.push(core);
+
+      let mm = null;
+      let matched = '';
+      for (const v of variants) {
+        if (!v || v.length < 3) continue;
+        const pattern = v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const re = new RegExp(`\\b${pattern}\\b`, 'i');
+        const candidate = re.exec(text);
+        if (candidate) { mm = candidate; matched = v; break; }
+      }
+      if (!mm) continue;
+      const s = mm.index;
+      const e = s + mm[0].length;
+      if (overlaps(s, e)) continue;
+      const inner = escapeHtml(mm[0]);
+      const html = `<span class="sub-hint" data-sub-for="${escapeHtml(hint.for)}" data-sub-use="${escapeHtml(hint.use)}"${hint.note ? ` data-sub-note="${escapeHtml(hint.note)}"` : ''} tabindex="0" role="button" aria-label="Substitution available for ${escapeHtml(matched)}">${inner}</span>`;
+      insertSpan(s, e, html);
+      subHintsState.used.add(hint.for);
+    }
+  }
+
   // Pass 2: stitch escaped text + claimed spans together
   let out = '';
   let cursor = 0;
@@ -358,7 +391,8 @@ function wrapStepQuantities(text, fm, ingredientBySlug) {
 
 export function renderRecipeHero(fm, slug, category, opts = {}) {
   const time = fm.time || {};
-  const stats = []; // primary scannables: servings, time, difficulty
+  const nutrition = opts.nutrition;
+  const stats = []; // primary scannables: servings, time, difficulty, kcal
   const tags  = []; // secondary metadata: cuisine, course, diet
 
   // ── stats ────────────────────────────────────────────
@@ -394,6 +428,24 @@ export function renderRecipeHero(fm, slug, category, opts = {}) {
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">${escapeHtml(fm.difficulty)}</span><span class="rh-stat-label">difficulty</span></span>
+    </div>`);
+  }
+
+  // Calories per serving — pulled from the computed nutrition snapshot. Only
+  // shows when we have a real positive kcal number (build-time nutrition
+  // often resolves to 0 when ingredients aren't yet mapped to USDA IDs).
+  // Click/hover expands the macros line beneath the kcal value.
+  const ps = nutrition && nutrition.perServing;
+  const kcal = ps && Number(ps.energy_kcal);
+  if (ps && isFinite(kcal) && kcal > 0) {
+    const macroBits = [];
+    if (Number(ps.protein_g) > 0) macroBits.push(`<span class="rh-macro"><strong>${ps.protein_g}</strong>g protein</span>`);
+    if (Number(ps.carbs_g)   > 0) macroBits.push(`<span class="rh-macro"><strong>${ps.carbs_g}</strong>g carbs</span>`);
+    if (Number(ps.fat_g)     > 0) macroBits.push(`<span class="rh-macro"><strong>${ps.fat_g}</strong>g fat</span>`);
+    const macroLine = macroBits.length ? `<span class="rh-macros" hidden>${macroBits.join('')}</span>` : '';
+    stats.push(`<div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">${kcal}</span><span class="rh-stat-label">kcal / serving</span>${macroLine}</span>
     </div>`);
   }
 
@@ -448,6 +500,14 @@ export function renderRecipeHero(fm, slug, category, opts = {}) {
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -650,9 +710,18 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
   const relTo = relPrefixFor(currentPath);
   const stepImages = images && images.steps ? images.steps : {};
 
+  // Substitution-hint state — each `substitutions[].for` becomes a hoverable
+  // span the first time its phrase appears in any step. Tracked across all
+  // steps so each ingredient is wrapped at most once per recipe.
+  const subHints = (fm.substitutions || [])
+    .filter(s => s && s.for && s.use)
+    .map(s => ({ for: String(s.for), use: String(s.use), note: s.note ? String(s.note) : '' }))
+    .sort((a, b) => b.for.length - a.for.length);
+  const subHintsState = { hints: subHints, used: new Set() };
+
   const items = fm.steps.map((step, i) => {
     const stepNum = i + 1;
-    let body = wrapStepQuantities(step.text, fm, ingredientBySlug);
+    let body = wrapStepQuantities(step.text, fm, ingredientBySlug, subHintsState);
     if (step.technique) {
       const target = techniqueBySlug.get(step.technique) || techniqueBySlug.get(step.technique.replace(/^techniques\//, ''));
       if (target) {
@@ -688,8 +757,9 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
         }, relTo)}</figure>`
       : '';
 
+    const timeAttr = step.time_min ? ` data-time-min="${step.time_min}"` : '';
     return `
-      <li class="step-item${imgHtml ? ' has-image' : ''}">
+      <li class="step-item${imgHtml ? ' has-image' : ''}"${timeAttr}>
         <span class="step-num">${stepNum}</span>
         <div class="step-body">${body}${time}</div>
         ${imgHtml}
@@ -909,11 +979,14 @@ function renderPairings(pairings, currentPath) {
   const cards = pairings.map(p => {
     const icon = ICONS[p.category] || '';
     const desc = p.desc ? `<span class="pair-desc">${escapeHtml(p.desc.slice(0, 100))}</span>` : '';
+    const explicitClass = p.explicit ? ' pair-card-explicit' : '';
+    const explicitBadge = p.explicit ? `<span class="pair-explicit-badge" aria-label="Hand-picked pairing">picked</span>` : '';
     return `
-        <a class="pair-card" href="${escapeHtml(relPath(currentPath, p.path))}" data-category="${escapeHtml(p.category)}">
+        <a class="pair-card${explicitClass}" href="${escapeHtml(relPath(currentPath, p.path))}" data-category="${escapeHtml(p.category)}">
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true">${icon}</span>
             <span class="pair-cat">${escapeHtml(p.category)}</span>
+            ${explicitBadge}
           </span>
           <span class="pair-title">${escapeHtml(p.title)}</span>
           ${desc}
@@ -944,7 +1017,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
   const sections = [];
   const currentPath = `pages/${category}/${slug}.html`;
 
-  sections.push(renderRecipeHero(fm, slug, category, { images, entriesByPath }));
+  sections.push(renderRecipeHero(fm, slug, category, { images, entriesByPath, nutrition }));
 
   // Safety callout is rendered now but inserted after Execution below — its
   // content is doneness/pasteurization context for the temperature calls

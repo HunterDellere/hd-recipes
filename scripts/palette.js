@@ -84,6 +84,7 @@
                aria-label="Search or run a command">
         <kbd class="cmd-palette-esc" aria-hidden="true">esc</kbd>
       </div>
+      <div class="cmd-palette-filterhint" data-filter-hint>Try: <code>type:dessert</code> · <code>diet:vegan</code> · <code>time:&lt;30</code> · <code>cuisine:thai</code></div>
       <ul class="cmd-palette-results" role="listbox"></ul>
       <div class="cmd-palette-hint">
         <span><kbd>↑</kbd> <kbd>↓</kbd> navigate</span>
@@ -149,6 +150,76 @@
       }
     }
     return postings;
+  }
+
+  // ── Filter prefix lexer ────────────────────────────────────────────────
+  // Recognized keys: type, course, diet, time, cuisine, tag.
+  //   type:dessert  → matches entry.type OR entry.course (intuitive for users)
+  //   time:<30      → < / > / <= / >= comparators; bare number defaults to <=
+  //   cuisine:thai  → case-insensitive substring on cuisine
+  // Multiple filters AND together: "diet:vegan course:dessert chocolate"
+  const FILTER_KEYS = new Set(['type', 'course', 'diet', 'time', 'cuisine', 'tag']);
+
+  function parseQuery(raw) {
+    const filters = {};
+    const restTokens = [];
+    const toks = raw.split(/\s+/).filter(Boolean);
+    for (const t of toks) {
+      const m = /^([a-z]+):(.+)$/i.exec(t);
+      if (m && FILTER_KEYS.has(m[1].toLowerCase())) {
+        const key = m[1].toLowerCase();
+        const val = m[2];
+        if (key === 'time') {
+          const cm = /^([<>]=?)?(\d+)$/.exec(val);
+          if (cm) {
+            const cmp = cm[1] || '<=';
+            filters.time = { cmp, n: parseInt(cm[2], 10) };
+          }
+        } else {
+          (filters[key] = filters[key] || []).push(val.toLowerCase());
+        }
+      } else {
+        restTokens.push(t);
+      }
+    }
+    return { filters, query: restTokens.join(' ') };
+  }
+
+  function entryMatchesFilters(e, filters) {
+    if (!e) return false;
+    if (filters.type) {
+      const v = filters.type;
+      const matchT = v.includes(String(e.type || '').toLowerCase());
+      const matchC = e.course && v.includes(String(e.course).toLowerCase());
+      if (!matchT && !matchC) return false;
+    }
+    if (filters.course) {
+      if (!e.course || !filters.course.includes(String(e.course).toLowerCase())) return false;
+    }
+    if (filters.cuisine) {
+      if (!e.cuisine) return false;
+      const cu = String(e.cuisine).toLowerCase();
+      if (!filters.cuisine.some(v => cu.includes(v))) return false;
+    }
+    if (filters.diet) {
+      const diets = (e.diet || []).map(d => String(d).toLowerCase());
+      if (!filters.diet.every(v => diets.includes(v))) return false;
+    }
+    if (filters.tag) {
+      const tags = (e.tags || []).map(t => String(t).toLowerCase());
+      if (!filters.tag.every(v => tags.includes(v))) return false;
+    }
+    if (filters.time) {
+      const t = e.time || {};
+      const active = Number(t.active_min) || ((Number(t.prep_min) || 0) + (Number(t.cook_min) || 0)) || Number(t.total_min) || 0;
+      if (!active) return false;
+      const { cmp, n } = filters.time;
+      if (cmp === '<')  { if (!(active <  n)) return false; }
+      else if (cmp === '>')  { if (!(active >  n)) return false; }
+      else if (cmp === '>=') { if (!(active >= n)) return false; }
+      else                   { if (!(active <= n)) return false; }
+    }
+    return true;
   }
 
   function searchEntries(query) {
@@ -293,15 +364,37 @@
   }
 
   function render() {
-    const q = input.value.trim();
+    const raw = input.value.trim();
+    const { filters, query: q } = parseQuery(raw);
+    const hasFilters = Object.keys(filters).length > 0;
     let items = [];
 
-    if (!q) {
+    // Show filter hint only when input is empty
+    const hintEl = overlay.querySelector('[data-filter-hint]');
+    if (hintEl) hintEl.hidden = !!raw;
+
+    if (!raw) {
       // Empty query: surface page-context actions.
       items = buildActions();
+    } else if (hasFilters && !q) {
+      // Pure filter, no search text — enumerate all entries matching filters.
+      const all = (entries || []).filter(e => entryMatchesFilters(e, filters));
+      all.sort((a, b) => {
+        if ((a.status === 'complete') !== (b.status === 'complete')) {
+          return a.status === 'complete' ? -1 : 1;
+        }
+        return (a.title || '').localeCompare(b.title || '');
+      });
+      items = all.slice(0, 20).map(e => ({
+        kind: 'entry', label: e.title || '', sub: e.category,
+        href: ROOT + e.path, entry: e,
+      }));
     } else {
-      const scored = searchEntries(q);
-      items = scored.slice(0, 10).map(s => ({
+      const scored = searchEntries(q || raw);
+      const filtered = hasFilters
+        ? scored.filter(s => entryMatchesFilters(s.entry, filters))
+        : scored;
+      items = filtered.slice(0, 10).map(s => ({
         kind: 'entry',
         label: s.entry.title || '',
         sub: s.entry.category,
@@ -309,9 +402,11 @@
         entry: s.entry,
       }));
       // Also include actions whose label matches the query (substring, case-insensitive).
-      const ql = q.toLowerCase();
-      const acts = buildActions().filter(a => a.label.toLowerCase().includes(ql));
-      items = items.concat(acts.slice(0, 6));
+      if (!hasFilters) {
+        const ql = raw.toLowerCase();
+        const acts = buildActions().filter(a => a.label.toLowerCase().includes(ql));
+        items = items.concat(acts.slice(0, 6));
+      }
     }
 
     currentItems = items;

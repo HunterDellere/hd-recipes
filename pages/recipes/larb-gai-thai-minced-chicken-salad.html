@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">109</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>4.2</strong>g protein</span><span class="rh-macro"><strong>15.1</strong>g carbs</span><span class="rh-macro"><strong>3.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/thai.html" data-category="cuisines">Thai</a><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -344,47 +356,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">1</span>
         <div class="step-body">Make the toasted chili powder. Set a small dry skillet (cast iron or stainless, no oil) over medium heat. Add 6 to 8 dried red Thai bird chilies (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip -->) and toast, shaking constantly, for 60 to 90 seconds until the chilies turn slightly darker, smell smoky-fruity, and become brittle. Pull at the first wisp of acrid smoke, past that and the chilies turn bitter. Cool, then grind coarse (mortar or spice grinder) to yield <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> prik pon. Set aside. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: Make the toasted chili powder. Set a small dry skillet (cast iron or stainless, " aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">2</span>
-        <div class="step-body">Make the <a class="x-link" data-category="recipes" href="toasted-rice-powder.html">toasted glutinous-rice powder (khao khua)</a>. In the same dry skillet over medium-low heat, add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip --> raw glutinous rice. Toast 6 to 8 minutes, shaking the pan every 30 seconds, until the grains turn from chalk-white to even amber and smell like popcorn-and-toasted-bread. The color cue is the entire grain reading the same medium-amber, not patchy white-and-brown. Cool 2 minutes, then pound in a mortar or pulse in a spice grinder to a coarse powder, grain texture between sand and <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>, never to a fine flour. Yields <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">15 g / 2 tbsp</span><!-- /auto-link-skip --> khao khua. Set aside. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 2: Make the toasted glutinous-rice powder (khao khua). In the same dry skillet over" aria-label="Start 10 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">Make the <a class="x-link" data-category="recipes" href="toasted-rice-powder.html">toasted glutinous-rice powder (khao khua)</a>. In the same dry skillet over medium-low heat, add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip --> raw <span class="sub-hint" data-sub-for="glutinous rice (for khao khua)" data-sub-use="jasmine rice" data-sub-note="Long-grain jasmine works in a pinch but yields a less-sticky-feeling powder; the slight starchy chew that glutinous rice contributes is what gives khao khua its signature mouthfeel. Buy a bag of glutinous rice if you cook Lao or Isaan food more than once a year, it keeps a year in the pantry." tabindex="0" role="button" aria-label="Substitution available for glutinous rice">glutinous rice</span>. Toast 6 to 8 minutes, shaking the pan every 30 seconds, until the grains turn from chalk-white to even amber and smell like popcorn-and-toasted-bread. The color cue is the entire grain reading the same medium-amber, not patchy white-and-brown. Cool 2 minutes, then pound in a mortar or pulse in a spice grinder to a coarse powder, grain texture between sand and <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>, never to a fine flour. Yields <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">15 g / 2 tbsp</span><!-- /auto-link-skip --> khao khua. Set aside. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 2: Make the toasted glutinous-rice powder (khao khua). In the same dry skillet over" aria-label="Start 10 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">3</span>
-        <div class="step-body">Hand-chop the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> chicken thigh on a heavy cutting board with a sharp chef knife. Working through the meat in a rocking motion, chop to a coarse mince of 4 to 5 mm pieces. The hand-chopped texture is the structural identity of larb, the meat reads as discernible bite-sized pieces with rough surfaces that hold dressing, against a food-processed paste which goes wet-and-uniform like a meat-pâté. Allow 5 to 7 minutes for hand-chopping; do not rush.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 3: Hand-chop the 500 g chicken thigh on a heavy cutting board with a sharp chef kni" aria-label="Start 7 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
+        <div class="step-body">Hand-chop the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="chicken thigh" data-sub-use="chicken breast (boneless skinless)" data-sub-note="Chicken breast can be hand-chopped the same way but produces a drier, cleaner-flavored larb; the thigh fat carries more flavor through the salt-sour-chili dressing. Acceptable but not equivalent." tabindex="0" role="button" aria-label="Substitution available for chicken thigh">chicken thigh</span> on a heavy cutting board with a sharp chef knife. Working through the meat in a rocking motion, chop to a coarse mince of 4 to 5 mm pieces. The hand-chopped texture is the structural identity of larb, the meat reads as discernible bite-sized pieces with rough surfaces that hold dressing, against a food-processed paste which goes wet-and-uniform like a meat-pâté. Allow 5 to 7 minutes for hand-chopping; do not rush.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 3: Hand-chop the 500 g chicken thigh on a heavy cutting board with a sharp chef kni" aria-label="Start 7 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">4</span>
         <div class="step-body">Heat a wide skillet (28 to 30 cm / 11 to 12 inch) over medium-high heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> water and bring to a bare simmer. Add the chopped chicken in a thin layer, breaking up clumps with a wooden spoon. The technique is low-water poaching, not searing, larb chicken is cooked in its own moisture so it stays juicy and tender; a hard sear toughens the lean thigh and produces a different dish (gai pad). Stir constantly, breaking up clumps, for 3 to 4 minutes until the meat is opaque throughout, no pink remains, and the pan liquid has reduced to a glaze that coats the meat. Pull off heat. Internal temperature target is 75 °C / 165 °F.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 4: Heat a wide skillet (28 to 30 cm / 11 to 12 inch) over medium-high heat. Add the" aria-label="Start 5 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
-        <div class="step-body">While the chicken is still hot in the pan, add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> fish sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> shaved <a class="x-link" data-category="ingredients" href="../ingredients/palm-sugar.html">palm sugar</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> toasted chili powder directly to the pan. Stir 30 seconds. The residual pan heat dissolves the sugar fully and blooms the chili powder into the chicken juices, the chili oils need fat or hot liquid to release; a cold-mixed chili powder reads dusty and one-dimensional. Transfer the chicken and pan liquid to a wide mixing bowl. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: While the chicken is still hot in the pan, add the 30 g / 2 tbsp fish sauce, 6 g" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">While the chicken is still hot in the pan, add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="fish sauce" data-sub-use="pla ra (fermented fish sauce, opaque) for half the volume" data-sub-note="Isaan-canonical move: replace 15 g / 1 tbsp of the regular fish sauce with pla ra, which adds funk and depth at the cost of the dish reading slightly cloudy. Sold in jars at Thai markets; not easily substituted otherwise." tabindex="0" role="button" aria-label="Substitution available for fish sauce">fish sauce</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> shaved <a class="x-link" data-category="ingredients" href="../ingredients/palm-sugar.html">palm sugar</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> toasted chili powder directly to the pan. Stir 30 seconds. The residual pan heat dissolves the sugar fully and blooms the chili powder into the chicken juices, the chili oils need fat or hot liquid to release; a cold-mixed chili powder reads dusty and one-dimensional. Transfer the chicken and pan liquid to a wide mixing bowl. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: While the chicken is still hot in the pan, add the 30 g / 2 tbsp fish sauce, 6 g" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">6</span>
         <div class="step-body">Let the chicken cool 2 to 3 minutes to warm-not-hot, then add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">45 g / 3 tbsp</span><!-- /auto-link-skip --> lime juice. Adding lime to actively-hot chicken cooks the lime juice and dulls its top notes; lime added at warm-not-hot retains the bright citrus aromatic that defines the salad. Stir to combine.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 6: Let the chicken cool 2 to 3 minutes to warm-not-hot, then add the 45 g / 3 tbsp " aria-label="Start 3 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">15 g / 2 tbsp</span><!-- /auto-link-skip --> toasted glutinous-rice powder. Stir thoroughly. The starch hydrates in the warm pan-juice-and-lime mixture and thickens it to a clinging slurry that coats every chopped meat piece, this is what makes larb structurally a salad rather than a wet meat dish. The rice powder also contributes a nutty-popcorn aromatic and a faint grainy mouthfeel that is the defining sensory signature of larb. Taste, the dish should read salty-front (fish sauce), sour-prominent (lime), warmly-sweet (palm sugar, but quiet), with the chili heat building in the throat after the swallow. If flat, add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> more fish sauce; if too sharp, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> more palm sugar. The salt-acid axis is the soul of larb; do not overdo the sweet.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Add the 15 g / 2 tbsp toasted glutinous-rice powder. Stir thoroughly. The starch" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
-        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="2.1164394433764264" data-imp-unit="oz">60 g</span><!-- /auto-link-skip --> sliced shallot, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="1.4109596289176176" data-imp-unit="oz">40 g</span><!-- /auto-link-skip --> sliced scallion, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> mint leaves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> chopped cilantro, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> culantro if using. Toss with two large spoons or clean hands until the herbs are evenly distributed through the meat, the herb-to-meat ratio in larb is high; the dish should look as much green as it does brown. Do not over-toss, the aromatic oils in the herbs are released by handling and excess tossing produces a slightly bruised, herbal-bitter character.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: Add the 60 g sliced shallot, 40 g sliced scallion, 20 g mint leaves, 20 g choppe" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="2.1164394433764264" data-imp-unit="oz">60 g</span><!-- /auto-link-skip --> sliced shallot, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="1.4109596289176176" data-imp-unit="oz">40 g</span><!-- /auto-link-skip --> sliced scallion, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> mint leaves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> chopped cilantro, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="culantro" data-sub-use="increase cilantro by 5 g and add a pinch of bruised long pepper or extra mint" data-sub-note="Culantro has a more pungent, longer-lasting herb note that fresh cilantro cannot fully replicate. The substitution will read close but not identical; the dish is not ruined by its absence." tabindex="0" role="button" aria-label="Substitution available for culantro">culantro</span> if using. Toss with two large spoons or clean hands until the herbs are evenly distributed through the meat, the herb-to-meat ratio in larb is high; the dish should look as much green as it does brown. Do not over-toss, the aromatic oils in the herbs are released by handling and excess tossing produces a slightly bruised, herbal-bitter character.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: Add the 60 g sliced shallot, 40 g sliced scallion, 20 g mint leaves, 20 g choppe" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">9</span>
         <div class="step-body">Pile the larb onto a flat plate (not a deep bowl, the dressing should not pool). Serve immediately with a basket of warm sticky rice, a plate of raw vegetables (cabbage wedges, cucumber spears, long bean, Thai eggplant if available), and the optional extra raw chili on the side. The eating method is canonical: pinch a small ball of sticky rice with the right hand, press into the larb to pick up meat and dressing, eat with a piece of raw cabbage or cucumber as the foil. The dish does not hold; the toasted rice powder absorbs more dressing every minute, and the herbs wilt within 20 to 30 minutes from the salt and warm meat.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 9: Pile the larb onto a flat plate (not a deep bowl, the dressing should not pool)." aria-label="Start 1 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -504,6 +516,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Som tum thai (green papaya salad)</span>
           <span class="pair-desc">Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce,</span>
@@ -513,6 +526,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai green curry paste</span>
           <span class="pair-desc">A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zes</span>
@@ -522,6 +536,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea (no dye)</span>
           <span class="pair-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, </span>
@@ -531,6 +546,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea with salted vanilla whip</span>
           <span class="pair-desc">Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted van</span>
@@ -540,6 +556,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry-toasting (grains, spices, seeds, dried chilies)</span>
           <span class="pair-desc">Toast raw grains, whole spices, seeds, nuts, or dried chilies in a hot dry skillet (no fat) until Ma</span>
@@ -549,6 +566,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -558,6 +576,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Thai</span>
           <span class="pair-desc">Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated acr</span>
@@ -567,6 +586,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Glutinous rice (sticky rice, sweet rice)</span>
           <span class="pair-desc">Short- to medium-grain rice (Oryza sativa, glutinous cultivars) whose endosperm is essentially pure </span>
@@ -657,6 +677,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

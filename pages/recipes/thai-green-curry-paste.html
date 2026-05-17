@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">1</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.1</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/thai.html" data-category="cuisines">Thai</a><span class="rh-tag rh-tag-course">sauce</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -317,17 +329,17 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
-        <div class="step-body">Toast <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> coriander seeds, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> cumin seeds, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> white peppercorns together in a dry skillet over medium heat until they darken one shade and the room smells of warm spice, about 2 minutes. Shake the pan constantly; white pepper scorches fast. Cool completely, then grind to a fine powder in a spice grinder or mortar. Toast the shrimp paste separately: wrap it in foil and hold it over an open burner flame, turning, for 30 to 45 seconds per side until it smells smoky and pungent. Alternatively, dry-fry the unwrapped paste in the dry skillet, pressing with a spatula, until the exterior darkens. Raw kapi tastes harshly marine and fermented; toasting converts the sulfurous top notes into something deeper and more aromatic. This step is not about cooking the paste into the dish. It is about transforming its flavor before it goes into the mortar.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Toast 4 g / 2 tsp coriander seeds, 2 g / 1 tsp cumin seeds, and 2 g / 1 tsp whit" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Toast <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> coriander seeds, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> cumin seeds, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> white peppercorns together in a dry skillet over medium heat until they darken one shade and the room smells of warm spice, about 2 minutes. Shake the pan constantly; white pepper scorches fast. Cool completely, then grind to a fine powder in a spice grinder or mortar. Toast the <span class="sub-hint" data-sub-for="shrimp paste (vegetarian)" data-sub-use="fermented soybean paste" data-sub-note="Loses the marine funk that defines green curry. Replace with 1 tbsp dark miso plus a pinch of dried kombu powder for adjacent umami." tabindex="0" role="button" aria-label="Substitution available for shrimp paste">shrimp paste</span> separately: wrap it in foil and hold it over an open burner flame, turning, for 30 to 45 seconds per side until it smells smoky and pungent. Alternatively, dry-fry the unwrapped paste in the dry skillet, pressing with a spatula, until the exterior darkens. Raw kapi tastes harshly marine and fermented; toasting converts the sulfurous top notes into something deeper and more aromatic. This step is not about cooking the paste into the dish. It is about transforming its flavor before it goes into the mortar.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Toast 4 g / 2 tsp coriander seeds, 2 g / 1 tsp cumin seeds, and 2 g / 1 tsp whit" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">2</span>
         <div class="step-body">Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">4 g / ½ tsp</span><!-- /auto-link-skip --> salt to a heavy granite mortar (krok hin). Begin with the fibrous dry aromatics: <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="1.58732958253232" data-imp-unit="oz">45 g</span><!-- /auto-link-skip --> lemongrass (white part), <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> galangal, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> makrut lime zest, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.3527399072294044" data-imp-unit="oz">10 g</span><!-- /auto-link-skip --> coriander root. Pound steadily for 6 to 8 minutes until the fibers are fully broken down and the mass is homogeneous. Salt acts as an abrasive, accelerating the rupture. This order is not preference. Lemongrass and galangal have cell walls that resist bruising; if you add soft aromatics first, the hard fibers never fully break and the paste will taste of lemongrass texture, not lemongrass oil. When the fibrous base is smooth, add the chilies and pound until incorporated. Add the garlic and shallots last. They are soft and release liquid quickly; added too early they turn the paste wet and prevent the fibrous aromatics from grinding fine. The heat calibration of the final paste comes from the bird's eye chilies alone. The serrano and long green chilies are primarily structural: they supply green color and bulk, not capsaicin. To reduce heat, reduce bird's eye count; to increase, add more. The paste will always be green regardless of chili ratio as long as the aromatics and green chilies are present.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 2: Add 4 g / ½ tsp salt to a heavy granite mortar (krok hin). Begin with the fibrou" aria-label="Start 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
         <div class="step-body">Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">12 g / 2 tsp</span><!-- /auto-link-skip --> toasted shrimp paste and the ground spice powder. Pound and stir (the motion alternates between downward pounding and lateral grinding) until the paste is uniform and releases a visible oil sheen on top. That sheen is the signal that cell walls have ruptured enough to release the lipids bound inside the lemongrass, galangal, and kaffir. A food processor gets you roughly 70% of the way: the blade cuts rather than shears, producing a coarser, wetter paste that lacks the emulsified texture. The mortar shears the cell structure and physically integrates the components into a paste where the oils are dispersed rather than separated. The functional difference matters in the curry pan: a properly pounded paste cracks in coconut cream without releasing a pool of water; a processor paste tends to weep.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Add 12 g / 2 tsp toasted shrimp paste and the ground spice powder. Pound and sti" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -372,6 +384,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Green curry pork</span>
           <span class="pair-desc">A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shr</span>
@@ -381,6 +394,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Larb gai (Thai-Lao minced chicken salad)</span>
           <span class="pair-desc">Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili</span>
@@ -390,6 +404,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Som tum thai (green papaya salad)</span>
           <span class="pair-desc">Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce,</span>
@@ -399,6 +414,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea (no dye)</span>
           <span class="pair-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, </span>
@@ -408,6 +424,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Thai</span>
           <span class="pair-desc">Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated acr</span>
@@ -417,6 +434,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">White pepper</span>
           <span class="pair-desc">The fully ripened Piper nigrum drupe, fermented to break down the outer fruit, then dried as the inn</span>
@@ -426,6 +444,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea with salted vanilla whip</span>
           <span class="pair-desc">Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted van</span>
@@ -435,6 +454,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai pork larb meatballs</span>
           <span class="pair-desc">A meatball reformatting of larb moo, the canonical northeastern Thai (Isan) and Lao minced-pork sala</span>
@@ -519,6 +539,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

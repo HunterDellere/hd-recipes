@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">9</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.2</strong>g protein</span><span class="rh-macro"><strong>1.1</strong>g carbs</span><span class="rh-macro"><strong>0.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/chinese.html" data-category="cuisines">Chinese</a><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -254,42 +266,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Mince 60 g / 4-inch knob fresh ginger as finely as possible; the cuts release allyl compounds and soften the fibers so the oil can extract through the cell walls. The texture target is a coarse paste, not a brunoise. Knife technique: thin coins, then julienne, then crosswise mince. Microplaning works but produces a slightly wetter result.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Mince 60 g / 4-inch knob fresh ginger as finely as possible; the cuts release al" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Mince 100 g / 8-10 stalks scallion whites and pale greens to the same fineness. Combine with the ginger in a heatproof bowl (metal or thick ceramic; the oil will hit 190°C / 375°F).<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Mince 100 g / 8-10 stalks scallion whites and pale greens to the same fineness. " aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
         <div class="step-body">Stir <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">4 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and the optional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">8 g / ½ tbsp</span><!-- /auto-link-skip --> light soy sauce into the aromatic paste. The salt cure pulls a tablespoon of water out of the ginger and scallion in 5 minutes, which is what allows the oil to penetrate; without the cure, the high water content steam-cooks the aromatics into a soft mush rather than the gentle deep-fry the technique calls for. Rest 5 minutes. <a class="step-tech" href="../techniques/dry-brining.html">Dry brining</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Stir 4 g / ½ tsp kosher salt and the optional 8 g / ½ tbsp light soy sauce into " aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
-        <div class="step-body">Heat <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">200 ml / ¾ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> neutral oil in a small saucepan over medium-high until just smoking, about 190°C / 375°F. The visual cue: a wooden chopstick dipped in produces vigorous bubbles around it within a second. If you have a thermometer, use it; if you do not, count from the first wisp of smoke and pull within 30 seconds.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Heat 200 ml / ¾ cup + 1 tbsp neutral oil in a small saucepan over medium-high un" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">Heat <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">200 ml / ¾ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="neutral oil (peanut, rice bran, canola)" data-sub-use="avocado oil" data-sub-note="Higher smoke point (270°C), neutral flavor; works fine. Avoid olive oil; the flavor profile fights the aromatics." tabindex="0" role="button" aria-label="Substitution available for neutral oil">neutral oil</span> in a small saucepan over medium-high until just smoking, about 190°C / 375°F. The visual cue: a wooden chopstick dipped in produces vigorous bubbles around it within a second. If you have a thermometer, use it; if you do not, count from the first wisp of smoke and pull within 30 seconds.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Heat 200 ml / ¾ cup + 1 tbsp neutral oil in a small saucepan over medium-high un" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Pull the oil off heat and let it cool 10-15 seconds, just until the surface stops shimmering aggressively. Target temperature: 175-180°C / 350°F. Too hot and the aromatics go bitter; too cool and the oil never extracts.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Pull the oil off heat and let it cool 10-15 seconds, just until the surface stop" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Pour the hot oil over the aromatic paste in three stages, stirring with a heatproof spoon between each. The mixture will foam and crackle violently for 30 seconds; this is the moisture flashing off. The first pour does the deep extraction, the second sets the green color, the third (cooler) preserves the surface aromatics. The aromatics should sizzle vigorously but stay green-yellow rather than browning to deep gold. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Pour the hot oil over the aromatic paste in three stages, stirring with a heatpr" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Stir thoroughly. The bowl should look like a green-flecked aromatic suspension settling to a low fizz. Stir in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a> and the optional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/rice-vinegar.html">rice vinegar</a> off heat. Cool to room temperature on the counter, uncovered, 30-45 minutes.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Stir thoroughly. The bowl should look like a green-flecked aromatic suspension s" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
         <div class="step-body">Transfer to a clean glass jar (oil and aromatics together). Cover. Use immediately or refrigerate. The oil deepens over the first 24 hours as the aromatics continue to release flavor compounds.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: Transfer to a clean glass jar (oil and aromatics together). Cover. Use immediate" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -361,6 +373,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -370,6 +383,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese white congee</span>
           <span class="pair-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The ric</span>
@@ -379,6 +393,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken and ginger congee</span>
           <span class="pair-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clea</span>
@@ -388,6 +403,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese lion's head meatballs (shīzi tóu)</span>
           <span class="pair-desc">Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion</span>
@@ -397,6 +413,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -406,6 +423,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry brining</span>
           <span class="pair-desc">Salt a protein surface and rest it long enough for osmosis to reverse — water and salt diffuse back </span>
@@ -415,6 +433,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -424,6 +443,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Rice vinegar</span>
           <span class="pair-desc">Mild, faintly sweet vinegar fermented from rice. ~4–5% acetic acid; gentler than Western vinegars, a</span>
@@ -514,6 +534,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

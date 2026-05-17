@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">8</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.1</strong>g protein</span><span class="rh-macro"><strong>1.1</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/chinese.html" data-category="cuisines">Chinese</a><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -278,32 +290,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">1</span>
-        <div class="step-body">Blanch the bones. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="g" data-imp-qty="3.306936630275666" data-imp-unit="lb">1500 g</span><!-- /auto-link-skip --> pork bones, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3000" data-metric-unit="ml" data-imp-qty="12" data-imp-unit="cups">3000 ml / 12 cups</span><!-- /auto-link-skip --> cold water, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> smashed ginger, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> Shaoxing wine in an 8-quart stockpot. Bring to a boil over high heat; brown-gray scum will rise aggressively. Boil hard for 5 minutes, this purges blood and surface impurities that would cloud the stock. Drain into a colander, discard the blanching liquid, and rinse the bones briefly under cold water to remove any clinging scum.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Blanch the bones. Combine the 1500 g pork bones, 3000 ml / 12 cups cold water, 2" aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
+        <div class="step-body">Blanch the bones. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="g" data-imp-qty="3.306936630275666" data-imp-unit="lb">1500 g</span><!-- /auto-link-skip --> pork bones, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3000" data-metric-unit="ml" data-imp-qty="12" data-imp-unit="cups">3000 ml / 12 cups</span><!-- /auto-link-skip --> cold water, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> smashed ginger, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="Shaoxing wine (blanch step)" data-sub-use="dry sherry" data-sub-note="1:1 substitute. The wine is doing antimicrobial and flavor-cleaning work in the blanch." tabindex="0" role="button" aria-label="Substitution available for Shaoxing wine">Shaoxing wine</span> in an 8-quart stockpot. Bring to a boil over high heat; brown-gray scum will rise aggressively. Boil hard for 5 minutes, this purges blood and surface impurities that would cloud the stock. Drain into a colander, discard the blanching liquid, and rinse the bones briefly under cold water to remove any clinging scum.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Blanch the bones. Combine the 1500 g pork bones, 3000 ml / 12 cups cold water, 2" aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">2</span>
         <div class="step-body">Start the simmer. Return the rinsed bones to the cleaned pot. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3500" data-metric-unit="ml" data-imp-qty="14" data-imp-unit="cups">3500 ml / 14 cups</span><!-- /auto-link-skip --> fresh cold water, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> smashed ginger, 4 scallion whites, and the optional 1 onion and 4 jujube. Bring slowly to the threshold of a simmer over medium heat (about 90°C / 195°F).<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 2: Start the simmer. Return the rinsed bones to the cleaned pot. Add the 3500 ml / " aria-label="Start 25 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">3</span>
         <div class="step-body">Skim. Once at simmer-threshold, gray foam will appear briefly, much less than the blanch produced, and a clear fat layer will develop. Skim the foam with a flat spoon for 5 to 10 minutes; do not skim the clear fat. Reduce heat to maintain a bare tremor of a simmer (just below 90°C, no active bubbles). The blanch step did the heavy purification work; this skim is fine-tuning.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 3: Skim. Once at simmer-threshold, gray foam will appear briefly, much less than th" aria-label="Start 8 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="300">
         <span class="step-num">4</span>
         <div class="step-body">Simmer 4 to 6 hours. The broth will reduce by 25 to 30%, deepen from clear to pale amber, and develop noticeable body from gelatin extraction. Cover loosely with the lid askew. Do not boil, the entire point of the clear-broth tradition is keeping the heat below boiling so the broth stays glassy.<span class="step-time">5 h</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">5</span>
         <div class="step-body">Strain. Lift bones and aromatics out with tongs. Strain the broth through a fine-mesh sieve into a second pot, then a second time through cheesecloth set inside the sieve for absolute clarity.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 5: Strain. Lift bones and aromatics out with tongs. Strain the broth through a fine" aria-label="Start 8 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="30">
         <span class="step-num">6</span>
         <div class="step-body">Cool quickly. Divide between wide shallow pans set in an ice bath, stirring every 5 minutes. Refrigerate. Once cold, the fat layer that solidifies on top can be lifted off (rendered pork fat is the foundation of much southern Chinese stir-fry; reserve in a separate container) or left in for richer downstream uses.<button type="button" class="step-time step-time-btn" data-step-timer="30" data-step-label="Step 6: Cool quickly. Divide between wide shallow pans set in an ice bath, stirring ever" aria-label="Start 30 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">30 min</span></button></div>
         
@@ -375,6 +387,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -384,6 +397,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese white congee</span>
           <span class="pair-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The ric</span>
@@ -393,6 +407,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken and ginger congee</span>
           <span class="pair-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clea</span>
@@ -402,6 +417,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese lion's head meatballs (shīzi tóu)</span>
           <span class="pair-desc">Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion</span>
@@ -411,6 +427,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -420,6 +437,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Shaoxing wine (绍兴酒)</span>
           <span class="pair-desc">Amber fermented-grain wine from Zhejiang, brewed from glutinous rice and wheat-koji starter and aged</span>
@@ -429,6 +447,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese tea eggs</span>
           <span class="pair-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marbl</span>
@@ -438,6 +457,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cocoa-osmanthus dun nai</span>
           <span class="pair-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral</span>
@@ -528,6 +548,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>
