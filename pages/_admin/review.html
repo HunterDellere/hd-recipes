@@ -34,18 +34,18 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <body>
 <h1>hd · recipes — admin</h1>
 <div class="bar">
-  <div class="stat"><span class="stat-num">485</span><span class="stat-label">Complete</span></div>
+  <div class="stat"><span class="stat-num">507</span><span class="stat-label">Complete</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Draft</span></div>
   <div class="stat"><span class="stat-num">39</span><span class="stat-label">Stub</span></div>
-  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">485</span><span class="stat-label">missing</span></div>
-  <div class="stat"><span class="stat-num">10</span><span class="stat-label">No nutrition</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">507</span><span class="stat-label">missing</span></div>
+  <div class="stat"><span class="stat-num">11</span><span class="stat-label">No nutrition</span></div>
 </div>
 
-<div class="note"><strong>Recipes missing nutrition data:</strong> <a href="../../pages/recipes/cold-brew-genmaicha.html">Cold-brew genmaicha (overnight)</a>, <a href="../../pages/recipes/matcha-usucha.html">Matcha usucha (thin matcha tea)</a>, <a href="../../pages/recipes/homemade-tahini.html">Homemade tahini</a>, <a href="../../pages/recipes/pomegranate-molasses.html">Pomegranate molasses</a>, <a href="../../pages/recipes/red-wine-vinegar.html">Red wine vinegar</a>, <a href="../../pages/recipes/salt-packed-capers.html">Salt-packed capers</a>, <a href="../../pages/recipes/toasted-rice-powder.html">Toasted glutinous-rice powder (khao khua)</a>, <a href="../../pages/recipes/soft-boiled-congee-egg.html">Soft-boiled congee egg</a>, <a href="../../pages/recipes/homemade-panko-breadcrumbs.html">Homemade panko breadcrumbs</a>, <a href="../../pages/recipes/cocoa-osmanthus-dun-nai.html">Cocoa-osmanthus dun nai</a>. Add <code>usda_fdc_id</code> to ingredient pages, or per-recipe overrides on each ingredient line.</div>
+<div class="note"><strong>Recipes missing nutrition data:</strong> <a href="../../pages/recipes/water-kefir.html">Water kefir</a>, <a href="../../pages/recipes/cold-brew-genmaicha.html">Cold-brew genmaicha (overnight)</a>, <a href="../../pages/recipes/matcha-usucha.html">Matcha usucha (thin matcha tea)</a>, <a href="../../pages/recipes/homemade-tahini.html">Homemade tahini</a>, <a href="../../pages/recipes/pomegranate-molasses.html">Pomegranate molasses</a>, <a href="../../pages/recipes/red-wine-vinegar.html">Red wine vinegar</a>, <a href="../../pages/recipes/salt-packed-capers.html">Salt-packed capers</a>, <a href="../../pages/recipes/toasted-rice-powder.html">Toasted glutinous-rice powder (khao khua)</a>, <a href="../../pages/recipes/soft-boiled-congee-egg.html">Soft-boiled congee egg</a>, <a href="../../pages/recipes/homemade-panko-breadcrumbs.html">Homemade panko breadcrumbs</a>, <a href="../../pages/recipes/cocoa-osmanthus-dun-nai.html">Cocoa-osmanthus dun nai</a>. Add <code>usda_fdc_id</code> to ingredient pages, or per-recipe overrides on each ingredient line.</div>
 
 <div class="filters">
   <input type="search" id="filter-q" placeholder="Filter title…" />
-  <select id="filter-cat"><option value="">All categories</option><option value="ingredients">ingredients</option><option value="recipes">recipes</option><option value="techniques">techniques</option><option value="safety">safety</option><option value="hubs">hubs</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
+  <select id="filter-cat"><option value="">All categories</option><option value="recipes">recipes</option><option value="ingredients">ingredients</option><option value="techniques">techniques</option><option value="safety">safety</option><option value="hubs">hubs</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option><option value="explore">explore</option></select>
   <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
   <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
 </div>
@@ -53,6 +53,226 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <table id="entries-table">
   <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
   <tbody>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/baechu-kimchi.html">Baechu kimchi</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/big-mac-sauce.html">Big Mac sauce (homemade copycat)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/breakfast-egg-bites-with-spinach-and-feta.html">Breakfast egg bites with spinach and feta</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/chia-coconut-pudding-with-mango.html">Chia coconut pudding with mango</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/chicken-zucchini-meatballs-with-yogurt-dill.html">Chicken-zucchini meatballs with yogurt-dill</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/green-goddess-grain-salad.html">Green goddess grain salad</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/harvest-vegetable-soup-with-white-beans.html">Harvest vegetable soup with white beans</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/homemade-a1-style-steak-sauce.html">Homemade A1-style steak sauce</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/in-n-out-spread.html">In-N-Out spread (animal-style copycat)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/kkakdugi.html">Kkakdugi</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/lacto-fermented-hot-sauce.html">Lacto-fermented hot sauce</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/mediterranean-grain-bowl-with-tahini-yogurt.html">Mediterranean grain bowl with tahini-yogurt</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/olive-garden-italian-dressing.html">Olive Garden Italian dressing (homemade copycat)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/outback-bloomin-onion-sauce.html">Outback bloomin onion sauce (homemade copycat)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/overnight-oats-with-warm-spice-and-grated-pear.html">Overnight oats with warm spice and grated pear</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/preserved-lemons.html">Preserved lemons</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/raising-canes-sauce.html">Raising Cane's sauce (homemade copycat)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/roasted-chickpea-and-cauliflower-pita.html">Roasted chickpea and cauliflower pita</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/salmon-rice-bowl-with-quick-cucumber.html">Salmon rice bowl with quick cucumber</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/sauerkraut.html">Sauerkraut</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/sheet-pan-salmon-with-miso-glazed-vegetables.html">Sheet-pan salmon with miso-glazed vegetables</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td><span class="pill warn">2 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/water-kefir.html">Water kefir</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-05-17</td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
       <td><a href="../../pages/ingredients/agar-agar.html">Agar-agar</a></td>
       <td>ingredients</td>
@@ -5295,7 +5515,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr></tbody>
 </table>
 
-<p class="gen">Generated 2026-05-17T03:33:36.077Z</p>
+<p class="gen">Generated 2026-05-17T04:50:34.099Z</p>
 
 <script>
 (function () {

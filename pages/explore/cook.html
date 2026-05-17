@@ -79,7 +79,7 @@
     <div class="fam-intro">
       <p class="fam-intro-text">Tested recipes — scale, shop, cook. Full filters by cuisine, course, diet, time.</p>
       <div class="fam-stats" role="navigation" aria-label="Jump to category"><a class="fam-stat" href="#cat-recipes" data-category="recipes">
-        <span class="fam-stat-num">123</span>
+        <span class="fam-stat-num">138</span>
         <span class="fam-stat-label">Recipes</span>
       </a></div>
     </div>
@@ -97,6 +97,10 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="American" data-filter-cuisine="American">
               <span class="filter-opt-label">American</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Asian" data-filter-cuisine="Asian">
+              <span class="filter-opt-label">Asian</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Cantonese" data-filter-cuisine="Cantonese">
@@ -197,6 +201,10 @@
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Mexican-American" data-filter-cuisine="Mexican-American">
               <span class="filter-opt-label">Mexican-American</span>
+            </label>
+            <label class="filter-opt">
+              <input type="radio" name="cuisine" value="Moroccan" data-filter-cuisine="Moroccan">
+              <span class="filter-opt-label">Moroccan</span>
             </label>
             <label class="filter-opt">
               <input type="radio" name="cuisine" value="Pakistani" data-filter-cuisine="Pakistani">
@@ -310,6 +318,10 @@
               <span class="filter-opt-label">boba</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="bowl" data-filter-tag="bowl">
+              <span class="filter-opt-label">bowl</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="braise" data-filter-tag="braise">
               <span class="filter-opt-label">braise</span>
             </label>
@@ -374,6 +386,10 @@
               <span class="filter-opt-label">comfort</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="condiment" data-filter-tag="condiment">
+              <span class="filter-opt-label">condiment</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="cookies" data-filter-tag="cookies">
               <span class="filter-opt-label">cookies</span>
             </label>
@@ -430,6 +446,10 @@
               <span class="filter-opt-label">grain</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="healthy" data-filter-tag="healthy">
+              <span class="filter-opt-label">healthy</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="herb" data-filter-tag="herb">
               <span class="filter-opt-label">herb</span>
             </label>
@@ -474,8 +494,16 @@
               <span class="filter-opt-label">legume-dessert</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="lunch" data-filter-tag="lunch">
+              <span class="filter-opt-label">lunch</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="make-ahead" data-filter-tag="make-ahead">
               <span class="filter-opt-label">make-ahead</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="meatballs" data-filter-tag="meatballs">
+              <span class="filter-opt-label">meatballs</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="milk-tea" data-filter-tag="milk-tea">
@@ -496,6 +524,10 @@
             <label class="filter-opt">
               <input type="checkbox" value="nuts" data-filter-tag="nuts">
               <span class="filter-opt-label">nuts</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="oats" data-filter-tag="oats">
+              <span class="filter-opt-label">oats</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="one-pot" data-filter-tag="one-pot">
@@ -522,6 +554,10 @@
               <span class="filter-opt-label">potato</span>
             </label>
             <label class="filter-opt">
+              <input type="checkbox" value="pudding" data-filter-tag="pudding">
+              <span class="filter-opt-label">pudding</span>
+            </label>
+            <label class="filter-opt">
               <input type="checkbox" value="quick" data-filter-tag="quick">
               <span class="filter-opt-label">quick</span>
             </label>
@@ -540,6 +576,10 @@
             <label class="filter-opt">
               <input type="checkbox" value="salad" data-filter-tag="salad">
               <span class="filter-opt-label">salad</span>
+            </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="salmon" data-filter-tag="salmon">
+              <span class="filter-opt-label">salmon</span>
             </label>
             <label class="filter-opt">
               <input type="checkbox" value="sauce" data-filter-tag="sauce">
@@ -633,6 +673,10 @@
               <input type="checkbox" value="winter" data-filter-tag="winter">
               <span class="filter-opt-label">winter</span>
             </label>
+            <label class="filter-opt">
+              <input type="checkbox" value="wrap" data-filter-tag="wrap">
+              <span class="filter-opt-label">wrap</span>
+            </label>
         </div>
       </details>
 
@@ -718,7 +762,7 @@
     <section class="fam-cat" id="cat-recipes" data-category="recipes">
       <div class="fam-cat-head">
         <h2 class="fam-cat-title">Recipes</h2>
-        <span class="fam-cat-count">123 entries</span>
+        <span class="fam-cat-count">138 entries</span>
       </div>
       <p class="fam-cat-blurb">Tested dishes — scale, shop, cook.</p>
       <div class="card-grid" data-grid>
@@ -743,6 +787,13 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
         </a>
+        <a class="entry-card" href="../recipes/baechu-kimchi.html" data-category="recipes" data-type="recipe" data-card data-title="baechu kimchi" data-updated="2026-05-17" data-cuisine="Korean" data-course="side" data-diet="gluten-free|dairy-free" data-difficulty="medium" data-time="75" data-tags="fermentation|korean|pickle|side|weekend-project|make-ahead|umami|spicy|brassica">
+          <span class="ec-cat">recipes</span><span class="ec-title">Baechu kimchi</span><span class="ec-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce paste and la</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h 15 min</strong> active</span><span class="ec-time-annot">+ 5 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>24</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/banana-bread.html" data-category="recipes" data-type="recipe" data-card data-title="banana bread" data-updated="2026-05-09" data-cuisine="American" data-course="dessert" data-diet="vegetarian" data-difficulty="easy" data-time="15" data-tags="american|comfort|dessert|breakfast|fruit|quick-bread|bread">
           <span class="ec-cat">recipes</span><span class="ec-title">Banana bread</span><span class="ec-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maximally soft </span>
         <div class="ec-foot">
@@ -755,6 +806,13 @@
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">French (Provençal, Marseille)</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>2 h 15 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-hard">hard</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/breakfast-egg-bites-with-spinach-and-feta.html" data-category="recipes" data-type="recipe" data-card data-title="breakfast egg bites with spinach and feta" data-updated="2026-05-17" data-cuisine="" data-course="breakfast" data-diet="vegetarian|gluten-free" data-difficulty="easy" data-time="20" data-tags="breakfast|make-ahead|egg|healthy">
+          <span class="ec-cat">recipes</span><span class="ec-title">Breakfast egg bites with spinach and feta</span><span class="ec-desc">Whole eggs blended briefly with cottage cheese, baked in a buttered standard metal muffin tin with wilted spin</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">breakfast</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/brown-butter-cacio-e-pepe.html" data-category="recipes" data-type="recipe" data-card data-title="brown butter cacio e pepe" data-updated="2026-04-26" data-cuisine="Italian" data-course="dinner" data-diet="vegetarian" data-difficulty="easy" data-time="12" data-tags="weeknight|pasta|italian|umami|comfort">
@@ -869,6 +927,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/chia-coconut-pudding-with-mango.html" data-category="recipes" data-type="recipe" data-card data-title="chia coconut pudding with mango" data-updated="2026-05-17" data-cuisine="" data-course="breakfast" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="8" data-tags="breakfast|dessert|make-ahead|no-cook|pudding|coconut|tropical|healthy|fruit">
+          <span class="ec-cat">recipes</span><span class="ec-title">Chia coconut pudding with mango</span><span class="ec-desc">Chia seeds soaked overnight in full-fat coconut milk with maple syrup, vanilla, and a pinch of salt. The chia </span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">breakfast</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>8 min</strong> active</span><span class="ec-time-annot">+ 6 h rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/chicken-ginger-congee.html" data-category="recipes" data-type="recipe" data-card data-title="chicken and ginger congee" data-updated="2026-05-08" data-cuisine="Chinese" data-course="breakfast" data-diet="dairy-free|nut-free" data-difficulty="easy" data-time="25" data-tags="rice|chicken|chinese|comfort|breakfast|one-pot|umami">
           <span class="ec-cat">recipes</span><span class="ec-title">Chicken and ginger congee</span><span class="ec-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clean the pala</span>
         <div class="ec-foot">
@@ -896,6 +961,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Pakistani</span><span class="ec-meta-item">snack</span><span class="ec-meta-item ec-meta-time"><strong>1 h 5 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>8</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/chicken-zucchini-meatballs-with-yogurt-dill.html" data-category="recipes" data-type="recipe" data-card data-title="chicken-zucchini meatballs with yogurt-dill" data-updated="2026-05-17" data-cuisine="Mediterranean" data-course="dinner" data-diet="" data-difficulty="easy" data-time="30" data-tags="mediterranean|chicken|meatballs|weeknight|make-ahead|healthy">
+          <span class="ec-cat">recipes</span><span class="ec-title">Chicken-zucchini meatballs with yogurt-dill</span><span class="ec-desc">Ground chicken thigh mixed with salt-drained grated zucchini, grated onion, garlic, lemon zest, fresh dill, an</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>1 h 15 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/chinese-lions-head-meatballs.html" data-category="recipes" data-type="recipe" data-card data-title="chinese lion's head meatballs (shīzi tóu)" data-updated="2026-05-15" data-cuisine="Chinese" data-course="dinner" data-diet="" data-difficulty="medium" data-time="35" data-tags="chinese|huaiyang|jiangsu|pork|braised|umami|banquet">
           <span class="ec-cat">recipes</span><span class="ec-title">Chinese lion's head meatballs (shīzi tóu)</span><span class="ec-desc">Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion of water </span>
@@ -1016,6 +1088,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/green-goddess-grain-salad.html" data-category="recipes" data-type="recipe" data-card data-title="green goddess grain salad" data-updated="2026-05-17" data-cuisine="" data-course="lunch" data-diet="vegetarian" data-difficulty="easy" data-time="25" data-tags="salad|grain|bowl|no-cook|make-ahead|lunch|healthy|fresh-herbs">
+          <span class="ec-cat">recipes</span><span class="ec-title">Green goddess grain salad</span><span class="ec-desc">Cooked farro tossed cold with cucumber, scallion, and a creamy yogurt-avocado green goddess dressing that goes</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/greens-and-ricotta-frittata.html" data-category="recipes" data-type="recipe" data-card data-title="greens and ricotta frittata" data-updated="2026-05-15" data-cuisine="Italian" data-course="dinner" data-diet="vegetarian|gluten-free" data-difficulty="easy" data-time="18" data-tags="italian|mediterranean|egg|vegetable|make-ahead|weeknight|brassica|dairy">
           <span class="ec-cat">recipes</span><span class="ec-title">Greens and ricotta frittata</span><span class="ec-desc">The Italian open-faced baked omelet: wilted greens (lacinato kale, chard, spinach, or a mix) folded into beate</span>
         <div class="ec-foot">
@@ -1043,6 +1122,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">appetizer</span><span class="ec-meta-item ec-meta-time"><strong>35 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/harvest-vegetable-soup-with-white-beans.html" data-category="recipes" data-type="recipe" data-card data-title="harvest vegetable soup with white beans" data-updated="2026-05-17" data-cuisine="Mediterranean" data-course="dinner" data-diet="vegetarian" data-difficulty="easy" data-time="25" data-tags="soup|vegetable|legume|one-pot|make-ahead|healthy|winter">
+          <span class="ec-cat">recipes</span><span class="ec-title">Harvest vegetable soup with white beans</span><span class="ec-desc">A one-pot vegetable soup built on a foundation of slowly sweated leek and garlic, deepened with tomato paste f</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>1 h 5 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>6</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/herb-citrus-simmer-pot.html" data-category="recipes" data-type="recipe" data-card data-title="herb-citrus simmer pot (lemon, mint, basil)" data-updated="2026-05-16" data-cuisine="" data-course="snack" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="5" data-tags="home-fragrance|simmer-pot|non-edible|aromatic|citrus|fresh-herbs|herb">
           <span class="ec-cat">recipes</span><span class="ec-title">Herb-citrus simmer pot (lemon, mint, basil)</span><span class="ec-desc">A bright spring-summer house fragrance: lemon peel, fresh mint, basil stems, and a knob of ginger over a low s</span>
@@ -1114,6 +1200,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/kkakdugi.html" data-category="recipes" data-type="recipe" data-card data-title="kkakdugi" data-updated="2026-05-17" data-cuisine="Korean" data-course="side" data-diet="gluten-free|dairy-free" data-difficulty="easy" data-time="40" data-tags="fermentation|korean|pickle|side|make-ahead|umami|spicy|vegetable">
+          <span class="ec-cat">recipes</span><span class="ec-title">Kkakdugi</span><span class="ec-desc">Cubed daikon radish kimchi, salt-drawn for 30 minutes to firm the cube structure, tossed with a gochugaru-fish</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Korean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>40 min</strong> active</span><span class="ec-time-annot">+ 3 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>16</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/korean-oi-muchim-spicy-cucumber-salad.html" data-category="recipes" data-type="recipe" data-card data-title="korean spicy cucumber salad (oi-muchim, 오이무침)" data-updated="2026-05-10" data-cuisine="Korean" data-course="side" data-diet="dairy-free|gluten-free" data-difficulty="easy" data-time="12" data-tags="korean|salad|vegetable|spicy|no-cook|side|pickle">
           <span class="ec-cat">recipes</span><span class="ec-title">Korean spicy cucumber salad (oi-muchim, 오이무침)</span><span class="ec-desc">Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, rice vinega</span>
         <div class="ec-foot">
@@ -1184,6 +1277,13 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
         </a>
+        <a class="entry-card" href="../recipes/mediterranean-grain-bowl-with-tahini-yogurt.html" data-category="recipes" data-type="recipe" data-card data-title="mediterranean grain bowl with tahini-yogurt" data-updated="2026-05-17" data-cuisine="Mediterranean" data-course="lunch" data-diet="vegetarian" data-difficulty="easy" data-time="30" data-tags="mediterranean|bowl|grain|vegetable|make-ahead|healthy|lunch">
+          <span class="ec-cat">recipes</span><span class="ec-title">Mediterranean grain bowl with tahini-yogurt</span><span class="ec-desc">Farro cooked al dente in salted water, mixed roasted vegetables (zucchini, red pepper, red onion) hard-roasted</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>1 h</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/midnight-velvet-mini-cake.html" data-category="recipes" data-type="recipe" data-card data-title="midnight velvet mini cake with strawberry and balsamic caviar" data-updated="2026-04-26" data-cuisine="" data-course="dessert" data-diet="vegetarian" data-difficulty="hard" data-time="90" data-tags="cake|chocolate|dessert|weekend-project">
           <span class="ec-cat">recipes</span><span class="ec-title">Midnight velvet mini cake with strawberry and balsamic caviar</span><span class="ec-desc">A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finished with str</span>
         <div class="ec-foot">
@@ -1223,6 +1323,13 @@
           <span class="ec-cat">recipes</span><span class="ec-title">Onigiri (rice triangles)</span><span class="ec-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-salt hands, </span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Japanese</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>50 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/overnight-oats-with-warm-spice-and-grated-pear.html" data-category="recipes" data-type="recipe" data-card data-title="overnight oats with warm spice and grated pear" data-updated="2026-05-17" data-cuisine="" data-course="breakfast" data-diet="vegetarian" data-difficulty="easy" data-time="10" data-tags="breakfast|make-ahead|no-cook|oats|grain|fruit|healthy">
+          <span class="ec-cat">recipes</span><span class="ec-title">Overnight oats with warm spice and grated pear</span><span class="ec-desc">Old-fashioned rolled oats soaked overnight in kefir (or thick yogurt thinned with milk) with cardamom, cinnamo</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">breakfast</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>10 min</strong> active</span><span class="ec-time-annot">+ overnight</span></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
@@ -1268,6 +1375,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/preserved-lemons.html" data-category="recipes" data-type="recipe" data-card data-title="preserved lemons" data-updated="2026-05-17" data-cuisine="Moroccan" data-course="side" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="25" data-tags="fermentation|mediterranean|condiment|pantry|make-ahead|citrus|pickle">
+          <span class="ec-cat">recipes</span><span class="ec-title">Preserved lemons</span><span class="ec-desc">Whole lemons salt-cured in their own juice, mellowed 4 weeks at room temperature to break down the bitter pith</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Moroccan</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>25 min</strong> active</span><span class="ec-time-annot">+ 30 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>30</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/raita.html" data-category="recipes" data-type="recipe" data-card data-title="raita (cucumber-mint, the household standard)" data-updated="2026-05-09" data-cuisine="Indian" data-course="side" data-diet="vegetarian" data-difficulty="easy" data-time="12" data-tags="indian|pakistani|side|no-cook">
           <span class="ec-cat">recipes</span><span class="ec-title">Raita (cucumber-mint, the household standard)</span><span class="ec-desc">Plain whole-milk yogurt whisked smooth with grated cucumber, fresh mint, toasted cumin, and a small pinch of b</span>
         <div class="ec-foot">
@@ -1303,6 +1417,13 @@
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/roasted-chickpea-and-cauliflower-pita.html" data-category="recipes" data-type="recipe" data-card data-title="roasted chickpea and cauliflower pita" data-updated="2026-05-17" data-cuisine="Mediterranean" data-course="lunch" data-diet="vegetarian|vegan" data-difficulty="easy" data-time="25" data-tags="mediterranean|wrap|vegetable|legume|lunch|make-ahead|healthy|roast">
+          <span class="ec-cat">recipes</span><span class="ec-title">Roasted chickpea and cauliflower pita</span><span class="ec-desc">Spiced roasted chickpeas (cumin, coriander, smoked paprika) and 230 °C hard-roasted cauliflower stuffed into w</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">lunch</span><span class="ec-meta-item ec-meta-time"><strong>55 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/roasted-delicata-and-farro-salad-with-maple-vinaigrette.html" data-category="recipes" data-type="recipe" data-card data-title="roasted delicata and farro salad with maple vinaigrette" data-updated="2026-05-10" data-cuisine="American" data-course="dinner" data-diet="vegetarian" data-difficulty="easy" data-time="30" data-tags="salad|american|grain|roast|vegetable|umami|acid|nuts">
           <span class="ec-cat">recipes</span><span class="ec-title">Roasted delicata and farro salad with maple vinaigrette</span><span class="ec-desc">Hard-roasted delicata half-moons (skin on) tossed with chewy farro, lacinato kale massaged in lemon-salt, toas</span>
         <div class="ec-foot">
@@ -1331,6 +1452,13 @@
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
+        <a class="entry-card" href="../recipes/salmon-rice-bowl-with-quick-cucumber.html" data-category="recipes" data-type="recipe" data-card data-title="salmon rice bowl with quick cucumber" data-updated="2026-05-17" data-cuisine="Japanese" data-course="dinner" data-diet="pescatarian|dairy-free" data-difficulty="easy" data-time="20" data-tags="weeknight|bowl|rice|fish|salmon|japanese|quick|healthy|pickle">
+          <span class="ec-cat">recipes</span><span class="ec-title">Salmon rice bowl with quick cucumber</span><span class="ec-desc">Roasted salmon flaked over a bed of short-grain rice, finished with a quick rice-vinegar-and-salt cucumber pic</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Japanese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>40 min</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
         <a class="entry-card" href="../recipes/salt-and-pepper-squid.html" data-category="recipes" data-type="recipe" data-card data-title="salt-and-pepper squid (cantonese jiao yan you yu, 椒盐鱿鱼)" data-updated="2026-05-09" data-cuisine="Chinese" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="30" data-tags="chinese|seafood|fish|spicy|weeknight">
           <span class="ec-cat">recipes</span><span class="ec-title">Salt-and-pepper squid (Cantonese jiao yan you yu, 椒盐鱿鱼)</span><span class="ec-desc">Cross-hatch-scored squid tubes dredged in a cornstarch-and-rice-flour mix, deep-fried 90 seconds at 175°C, tos</span>
         <div class="ec-foot">
@@ -1351,6 +1479,13 @@
           <div class="ec-meta"><span class="ec-meta-item">Mediterranean</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>1 h</strong> active</span><span class="ec-time-annot">+ 42 d rest</span></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>1</strong> serving</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/sauerkraut.html" data-category="recipes" data-type="recipe" data-card data-title="sauerkraut" data-updated="2026-05-17" data-cuisine="German" data-course="side" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="35" data-tags="fermentation|german|pickle|side|make-ahead|brassica|vegan|pantry">
+          <span class="ec-cat">recipes</span><span class="ec-title">Sauerkraut</span><span class="ec-desc">Shredded green cabbage salted at 2 to 2.5%, pounded until the cell walls release enough water to form a self-b</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">German</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>35 min</strong> active</span><span class="ec-time-annot">+ 10 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>20</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/sauteed-beet-greens-with-anchovy-garlic-and-chili.html" data-category="recipes" data-type="recipe" data-card data-title="sautéed beet greens with anchovy, garlic, and chili" data-updated="2026-05-14" data-cuisine="Italian" data-course="side" data-diet="gluten-free|dairy-free|pescatarian" data-difficulty="easy" data-time="12" data-tags="italian|mediterranean|vegetable|side|weeknight|umami|stir-fry">
           <span class="ec-cat">recipes</span><span class="ec-title">Sautéed beet greens with anchovy, garlic, and chili</span><span class="ec-desc">A bunch of beet greens, stems and leaves separated, cooked in two stages in a wide skillet of olive oil that h</span>
@@ -1377,6 +1512,13 @@
           <span class="ec-cat">recipes</span><span class="ec-title">Sheet-pan roasted shallots, cauliflower, and sweet potato with lemon-dijon yogurt</span><span class="ec-desc">Halved whole shallots, cauliflower florets, and 2 cm sweet-potato chunks tossed in olive oil, smashed garlic, </span>
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">American</span><span class="ec-meta-item">side</span><span class="ec-meta-item ec-meta-time"><strong>1 h</strong></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/sheet-pan-salmon-with-miso-glazed-vegetables.html" data-category="recipes" data-type="recipe" data-card data-title="sheet-pan salmon with miso-glazed vegetables" data-updated="2026-05-17" data-cuisine="Asian" data-course="dinner" data-diet="pescatarian|dairy-free" data-difficulty="easy" data-time="15" data-tags="weeknight|sheet-pan|fish|salmon|asian|umami|quick|healthy">
+          <span class="ec-cat">recipes</span><span class="ec-title">Sheet-pan salmon with miso-glazed vegetables</span><span class="ec-desc">Skin-on salmon fillets and a mix of broccoli florets and bok choy halves on a single sheet pan, brushed with a</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">Asian</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>30 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
@@ -1574,6 +1716,13 @@
         <div class="ec-foot">
           <div class="ec-meta"><span class="ec-meta-item">Chinese</span><span class="ec-meta-item">dinner</span><span class="ec-meta-item ec-meta-time"><strong>45 min</strong></span></div>
           <span class="ec-pill ec-diff ec-d-medium">medium</span>
+        </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
+        </a>
+        <a class="entry-card" href="../recipes/water-kefir.html" data-category="recipes" data-type="recipe" data-card data-title="water kefir" data-updated="2026-05-17" data-cuisine="" data-course="drink" data-diet="vegan|gluten-free|dairy-free" data-difficulty="easy" data-time="15" data-tags="fermentation|drink|make-ahead|vegan|pantry|fruit">
+          <span class="ec-cat">recipes</span><span class="ec-title">Water kefir</span><span class="ec-desc">Water kefir grains (a symbiotic culture of bacteria and yeast) fed a 6% sugar-water solution at room temperatu</span>
+        <div class="ec-foot">
+          <div class="ec-meta"><span class="ec-meta-item">drink</span><span class="ec-meta-item ec-meta-time"><span class="ec-time-active"><strong>15 min</strong> active</span><span class="ec-time-annot">+ 2 d rest</span></span></div>
+          <span class="ec-pill ec-diff ec-d-easy">easy</span>
         </div><div class="ec-stats"><span class="ec-stat"><strong>4</strong> servings</span></div>
         </a>
         <a class="entry-card" href="../recipes/yaki-udon.html" data-category="recipes" data-type="recipe" data-card data-title="yaki udon (stir-fried udon noodles)" data-updated="2026-05-09" data-cuisine="Japanese" data-course="dinner" data-diet="dairy-free" data-difficulty="medium" data-time="22" data-tags="japanese|noodles|stir-fry|weeknight|pork|umami">
