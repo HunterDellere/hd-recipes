@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-17T03:33:36.878Z",
+  "generated": "2026-05-17T04:50:35.045Z",
   "summary": {
     "errors": 0,
-    "warnings": 29,
+    "warnings": 41,
     "info": 3
   },
   "findings": [
@@ -55,6 +55,20 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/big-mac-sauce.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: yellow mustard",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/breakfast-egg-bites-with-spinach-and-feta.md",
+      "msg": "step 9 names \"eggs\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"400 g large eggs\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/brown-sugar-milk-tea-with-boba.md",
       "msg": "step 7 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"360 ml cold whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
@@ -97,6 +111,13 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/chia-coconut-pudding-with-mango.md",
+      "msg": "step 5 names \"chia seeds\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"80 g chia seeds (black or white)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/chick-fil-a-polynesian-sauce.md",
       "msg": "store-bought ingredient(s) without homemade_alternatives: yellow mustard",
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
@@ -125,6 +146,13 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
+      "msg": "step 9 names \"dill\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"8 g fresh dill, finely chopped\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/classic-pearl-milk-tea.md",
       "msg": "step 6 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"240 ml cold whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
@@ -149,6 +177,13 @@
       "file": "content/recipes/herb-citrus-simmer-pot.md",
       "msg": "step 4 names \"water\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/homemade-a1-style-steak-sauce.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: dijon mustard",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
     },
     {
       "level": "WARN",
@@ -202,6 +237,13 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/in-n-out-spread.md",
+      "msg": "step 3 names \"ketchup\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"40 g ketchup\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/kashmiri-noon-chai.md",
       "msg": "step 4 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"480 ml whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
@@ -219,6 +261,48 @@
       "file": "content/recipes/masala-chai.md",
       "msg": "step 2 names \"water\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"240 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/olive-garden-italian-dressing.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: dijon mustard",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/olive-garden-italian-dressing.md",
+      "msg": "step 4 names \"honey\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"20 g honey\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/outback-bloomin-onion-sauce.md",
+      "msg": "step 4 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"0.5 g fine sea salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/overnight-oats-with-warm-spice-and-grated-pear.md",
+      "msg": "step 6 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"2 g fine sea salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/raising-canes-sauce.md",
+      "msg": "step 4 names \"garlic powder\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1.5 g garlic powder\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/roasted-chickpea-and-cauliflower-pita.md",
+      "msg": "step 4 names \"cauliflower\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"600 g cauliflower\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "WARN",
