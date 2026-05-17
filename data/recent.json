@@ -155,6 +155,161 @@
     }
   },
   {
+    "path": "pages/recipes/albondigas-en-salsa-de-almendras.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Albóndigas en salsa de almendras (Spanish meatballs in almond-saffron sauce)",
+    "desc": "Pork-and-beef meatballs braised in a sauce thickened with toasted almonds, tomato, saffron, dry sherry, and bread soaked in milk. The structural Andalusian tapas dish: the almonds act as the body of the sauce (replacing the flour or cream a French or Italian cook would use), the sherry deglaze brings the savory backbone, the saffron carries the color and the dish-defining floral aromatic.",
+    "tags": [
+      "pork",
+      "beef",
+      "meatballs",
+      "umami",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "albondigas-en-salsa-de-almendras",
+    "cuisine": "Spanish",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 40,
+      "total_min": 70,
+      "active_min": 55
+    },
+    "updated": "2026-05-17",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "crustless white bread (day-old or stale)",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "ground pork (80% lean)",
+        "slug": "ground-pork",
+        "optional": false
+      },
+      {
+        "item": "ground beef (80% lean chuck)",
+        "slug": "ground-beef",
+        "optional": false
+      },
+      {
+        "item": "large egg",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "garlic, finely minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh flat-leaf parsley, finely chopped",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh-ground black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour for dredging",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil (Spanish Picual)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "whole blanched almonds",
+        "slug": "almonds",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, finely diced",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "whole peeled canned tomatoes",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "dry sherry (Fino or Manzanilla)",
+        "slug": "dry-sherry",
+        "optional": false
+      },
+      {
+        "item": "chicken stock (or water)",
+        "slug": "chicken-stock",
+        "optional": false
+      },
+      {
+        "item": "saffron threads",
+        "slug": "saffron",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (to adjust)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon, cut into wedges",
+        "slug": "lemon",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide heavy skillet or Dutch oven",
+      "food processor or mortar",
+      "mixing bowl"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "olive",
+      "totalMinutes": 70,
+      "diffLabel": "medium",
+      "timeLead": "1 h 10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 55,
+      "filterMinutes": 55
+    }
+  },
+  {
     "path": "pages/recipes/anticuchos-de-corazon.html",
     "type": "recipe",
     "category": "recipes",
@@ -977,167 +1132,6 @@
       "timeMode": "active",
       "activeMinutes": 75,
       "filterMinutes": 75
-    }
-  },
-  {
-    "path": "pages/recipes/beef-rendang.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Beef rendang",
-    "desc": "Padang dry-cooked beef. Chuck or shank simmered in spice paste and coconut milk for three to four hours until the liquid completely evaporates and the meat finishes by frying in its own released coconut oil, producing a black-brown lacquered exterior and a paste that coats every fiber. The wet stage in the middle is kalio; the dry endpoint is rendang.",
-    "tags": [
-      "beef",
-      "braise",
-      "spicy",
-      "curry",
-      "weekend-project",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "beef-rendang",
-    "cuisine": "Indonesian",
-    "course": "dinner",
-    "difficulty": "hard",
-    "servings": 6,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 240,
-      "total_min": 270,
-      "active_min": 60
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "beef chuck or shank",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "dried red Holland or Fresno chilies",
-        "slug": "dried-chilies",
-        "optional": false
-      },
-      {
-        "item": "shallot",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "garlic",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "galangal, fresh",
-        "slug": "galangal",
-        "optional": false
-      },
-      {
-        "item": "candlenut",
-        "slug": "candlenut",
-        "optional": false
-      },
-      {
-        "item": "ground turmeric",
-        "slug": "turmeric",
-        "optional": false
-      },
-      {
-        "item": "lemongrass",
-        "slug": "lemongrass",
-        "optional": false
-      },
-      {
-        "item": "toasted terasi",
-        "slug": "terasi",
-        "optional": false
-      },
-      {
-        "item": "lemongrass",
-        "slug": "lemongrass",
-        "optional": false
-      },
-      {
-        "item": "kaffir lime leaves",
-        "slug": "kaffir-lime-leaves",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "star anise",
-        "slug": "star-anise",
-        "optional": false
-      },
-      {
-        "item": "cloves",
-        "slug": "cloves",
-        "optional": false
-      },
-      {
-        "item": "full-fat coconut milk",
-        "slug": "coconut-milk",
-        "optional": false
-      },
-      {
-        "item": "desiccated coconut",
-        "slug": "desiccated-coconut",
-        "optional": false
-      },
-      {
-        "item": "palm sugar",
-        "slug": "palm-sugar",
-        "optional": false
-      },
-      {
-        "item": "tamarind paste",
-        "slug": "tamarind",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, additional for the braise",
-        "slug": "kosher-salt",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "spice-paste-pounding",
-      "spice-paste-frying",
-      "blooming-aromatics",
-      "dry-cook-reduction"
-    ],
-    "equipment": [
-      "food-processor",
-      "wide-skillet",
-      "dutch-oven"
-    ],
-    "added": "2026-05-17",
-    "_card": {
-      "swatchIndex": 5,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 270,
-      "diffLabel": "hard",
-      "timeLead": "1 h",
-      "timeAnnotation": "· 4 h rest",
-      "timeMode": "active",
-      "activeMinutes": 60,
-      "filterMinutes": 60
     }
   },
   {
@@ -2111,6 +2105,143 @@
     }
   },
   {
+    "path": "pages/recipes/ichiban-dashi.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ichiban dashi (first-extraction Japanese dashi)",
+    "desc": "Kombu cold-soaked in water, lifted just before boiling; the water then warmed to just under boiling, katsuobushi (dried bonito flakes) sprinkled on top, steeped 3 to 4 minutes off heat, and strained. The foundational broth of Japanese cuisine: 5 minutes of active extraction from two ingredients, no boiling, no pressing. The structural broth under miso soup, suimono, simmered dishes, and most of washoku (traditional Japanese cooking).",
+    "tags": [
+      "pantry",
+      "umami",
+      "fish"
+    ],
+    "status": "complete",
+    "_slug": "ichiban-dashi",
+    "cuisine": "Japanese",
+    "course": "stock",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 2,
+      "cook_min": 18,
+      "total_min": 50,
+      "active_min": 12
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "pescatarian",
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "cold filtered water",
+        "optional": false
+      },
+      {
+        "item": "katsuobushi (dried bonito flakes)",
+        "slug": "katsuobushi",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "cold-water-soak",
+      "gentle-extraction"
+    ],
+    "equipment": [
+      "2-quart saucepan",
+      "fine-mesh sieve",
+      "cheesecloth or unscented paper towel",
+      "large measuring cup"
+    ],
+    "added": "2026-05-15",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
+    "path": "pages/recipes/kombu-shiitake-vegetarian-dashi.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Kombu-shiitake vegetarian dashi (shōjin dashi)",
+    "desc": "Dried kombu and dried shiitake cold-soaked overnight in cold water, then briefly warmed to draw out the final aromatics, strained. The canonical Buddhist temple cuisine dashi: the glutamate from the kombu and the guanylate from the dried shiitake produce a vegetarian umami synergy that parallels the kombu-katsuobushi pairing in non-vegetarian ichiban dashi. The structural broth of shōjin ryōri (Japanese Buddhist temple cuisine) and the only acceptable dashi for vegan Japanese cooking.",
+    "tags": [
+      "vegan",
+      "vegetarian",
+      "umami",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "kombu-shiitake-vegetarian-dashi",
+    "cuisine": "Japanese",
+    "course": "stock",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 10,
+      "total_min": 495,
+      "active_min": 12
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "kombu (dried kelp)",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "dried shiitake mushroom (donko grade if available, koshin acceptable)",
+        "slug": "dried-shiitake",
+        "optional": false
+      },
+      {
+        "item": "cold filtered water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "cold-water-soak",
+      "gentle-extraction"
+    ],
+    "equipment": [
+      "2-quart saucepan or large measuring cup",
+      "fine-mesh sieve",
+      "small plate (for weighing down ingredients during soak)"
+    ],
+    "added": "2026-05-15",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 495,
+      "diffLabel": "easy",
+      "timeLead": "12 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
     "path": "pages/recipes/air-fried-okra-with-four-flavor-finishes.html",
     "type": "recipe",
     "category": "recipes",
@@ -3008,131 +3139,6 @@
       "timeMode": "total",
       "activeMinutes": 25,
       "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/tonjiru-pork-vegetable-miso-soup.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Tonjiru (豚汁): pork and root-vegetable miso soup",
-    "desc": "The substantial winter miso soup of the Japanese household, built on a base of dashi (or homemade pork broth) and loaded with sliced pork belly, daikon, carrot, burdock, konnyaku, and shimeji mushrooms. The miso enters at the end, off-heat, as always. A meal-scale soup rather than a side: tonjiru with a bowl of rice and a quick pickle is one of the standard simple winter dinners across Japan, and the dish is also the canonical \"morning after a hard work day\" recovery meal.",
-    "tags": [
-      "soup",
-      "pork",
-      "umami",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "tonjiru-pork-vegetable-miso-soup",
-    "cuisine": "Japanese",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 30,
-      "total_min": 50,
-      "active_min": 30
-    },
-    "updated": "2026-05-15",
-    "diet": [],
-    "ingredients": [
-      {
-        "item": "kombu-katsuobushi dashi (ichiban or niban)",
-        "optional": false
-      },
-      {
-        "item": "pork belly, sliced thin (3 mm)",
-        "slug": "pork-belly",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "daikon (Japanese white radish)",
-        "slug": "daikon",
-        "optional": false
-      },
-      {
-        "item": "carrot",
-        "slug": "carrot",
-        "optional": false
-      },
-      {
-        "item": "burdock root (gobō)",
-        "slug": "burdock-root",
-        "optional": false
-      },
-      {
-        "item": "konnyaku (yam cake)",
-        "slug": "konnyaku",
-        "optional": false
-      },
-      {
-        "item": "shimeji mushrooms (or maitake, or shiitake)",
-        "slug": "shimeji-mushroom",
-        "optional": true
-      },
-      {
-        "item": "awase miso (or red and white blend)",
-        "slug": "red-miso",
-        "optional": false
-      },
-      {
-        "item": "scallion, thinly sliced on the bias",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "shichimi togarashi (Japanese seven-spice)",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "mise-en-place",
-      "maillard-sear",
-      "simmering"
-    ],
-    "equipment": [
-      "heavy-pot-or-dutch-oven",
-      "fine-mesh-sieve",
-      "sharp-knife-for-sasagaki"
-    ],
-    "added": "2026-05-15",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/ingredients/aburaage.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Aburaage (deep-fried tofu pouches)",
-    "desc": "Thin slabs of tofu deep-fried twice (low temperature first, then high temperature) until they puff into a hollow golden pouch with a crisp surface and a soft interior. The structural pouch of Japanese inarizushi (sushi rice in a sweet-soy-simmered aburaage), the textural element in kitsune udon and many miso soups, and a high-protein vegetarian component that absorbs broth aggressively.",
-    "tags": [
-      "pantry"
-    ],
-    "status": "complete",
-    "_slug": "aburaage",
-    "updated": "2026-05-15",
-    "added": "2026-05-15",
-    "_card": {
-      "swatchIndex": 11,
-      "swatchGlyph": "jar",
-      "primaryTag": null,
-      "usedInCount": 1,
-      "hasNutrition": false
     }
   }
 ]

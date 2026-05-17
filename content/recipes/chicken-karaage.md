@@ -170,7 +170,7 @@ substitutions:
 
 homemade_alternatives:
   - for: 'Kewpie mayonnaise'
-    recipe_slug: 'recipes/mayonnaise'
+    recipe_slug: 'recipes/homemade-mayonnaise'
     why: 'A homemade mayo made with egg yolks only and rice vinegar (the Kewpie profile) is achievable in 5 minutes with a stick blender; the result is fresher and more aromatic than the bottle, though Kewpie is reliable.'
 
 homemade_exempt: ['boneless skin-on chicken thighs, cut into 4 cm chunks', 'potato starch (片栗粉 katakuriko)', 'neutral oil (canola, vegetable, peanut, or rice bran) for deep-frying', 'green cabbage, very thinly shredded (the canonical accompaniment)']

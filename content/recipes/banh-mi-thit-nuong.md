@@ -223,7 +223,7 @@ substitutions:
 
 homemade_alternatives:
   - for: 'mayonnaise'
-    recipe_slug: 'recipes/mayonnaise'
+    recipe_slug: 'recipes/homemade-mayonnaise'
     why: 'Homemade mayo is dramatically silkier than store-bought; takes 5 minutes with a stick blender. Particularly noticeable in banh mi where the mayo layer is the structural moisture-and-richness component.'
   - for: 'Vietnamese baguettes (or French baguette)'
     recipe_slug: 'recipes/banh-mi-baguette'
