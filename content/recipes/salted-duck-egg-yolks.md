@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salted duck egg yolks (home brine cure)'
 desc: 'Raw duck eggs cured thirty-five days in saturated brine, then steamed and the yolks separated. Dense, fudgy, oil-bleeding red-orange yolks for congee, mooncakes, and salted-egg-yolk sauce.'
 metaDesc: 'Home cure of salted duck egg yolks: 35-day brine, steam, separate. The osmotic chemistry, why duck and not chicken, and how to use them across congee and Cantonese baking.'
-tags: ['egg', 'chinese', 'pantry', 'umami', 'fermentation', 'make-ahead', 'weekend-project']
+tags: ['egg', 'pantry', 'umami', 'fermentation', 'make-ahead', 'weekend-project']
 updated: '2026-05-09'
 
 servings: 12

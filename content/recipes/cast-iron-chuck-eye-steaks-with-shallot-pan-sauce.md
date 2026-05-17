@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cast-iron chuck eye steaks with shallot pan sauce'
 desc: 'Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter-basted with smashed garlic and thyme sprigs to a 54 °C medium-rare, then rested while the same pan builds a sauce from minced shallot, red wine, beef broth, dijon, and cold butter mounted in off-heat. The American steakhouse and French bistro overlap: ribeye-grade flavor from the chuck primal, a glossy mahogany pan sauce that takes 6 minutes of attention while the steaks rest, and a finish that ties marbling, fond, and acidity into one continuous bite.'
 metaDesc: 'Cast-iron chuck eye steaks with red-wine shallot pan sauce: overnight dry-brine at 1% salt, smoking cast-iron sear, butter-baste with garlic and thyme to 54°C, pan-sauce mounted with cold butter off-heat.'
-tags: ['american', 'french', 'beef', 'weeknight', 'roast', 'umami']
+tags: ['beef', 'weeknight', 'roast', 'umami']
 updated: '2026-05-13'
 
 servings: 2

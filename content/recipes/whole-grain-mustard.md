@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Whole-grain mustard'
 desc: 'Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing heat in waves rather than all at once.'
 metaDesc: 'Homemade whole-grain mustard: brown and yellow seeds soaked in white wine and cider vinegar, pulsed coarse, mellowed for 2 days.'
-tags: ['sauce', 'pantry', 'make-ahead', 'french']
+tags: ['pantry', 'make-ahead']
 updated: '2026-04-27'
 
 servings: 16

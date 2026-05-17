@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Flat-leaf parsley'
 desc: 'Petroselinum crispum var. neapolitanum. Italian parsley — the kitchen workhorse herb, used by the bunch (not the tablespoon) across Levantine, Mediterranean, and Persian cooking.'
 metaDesc: 'Flat-leaf parsley: the apiole-and-myristicin aromatic profile, why parsley is structural in tabbouleh and gremolata, the stem question, and storage that buys two weeks of fresh herb.'
-tags: ['herb', 'aromatic', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 usda_fdc_id: 170416

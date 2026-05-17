@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'All-purpose flour'
 desc: 'Wheat flour at 10–12% protein. The middle of the wheat-flour band: enough gluten potential for chew, soft enough for tender crumbs when handled gently.'
 metaDesc: 'All-purpose flour: 10–12% protein, the chemistry of gluten development, why scoop-and-level varies 20%, and how to swap with cake or bread flour.'
-tags: ['grain']
+tags: []
 density_g_per_ml: 0.53
 imperial_pref: 'cup'
 updated: '2026-04-29'

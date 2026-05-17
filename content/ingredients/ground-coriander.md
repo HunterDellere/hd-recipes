@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ground coriander (dhania powder)'
 desc: 'Coriandrum sativum seeds toasted and ground to a fine warm-citrusy powder. The structural base spice of North Indian and Pakistani curries, present in roughly twice the quantity of any other ground spice in a typical bhuna masala. Provides body and bridges the heat of chili with the warmth of cumin.'
 metaDesc: 'Ground coriander: the body-builder spice of South Asian curries, citrusy-warm-floral. Role in bhuna, why it is more than a background note, when fresh-ground beats supermarket pre-ground.'
-tags: ['spice', 'aromatic', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.42
 updated: '2026-05-09'
 

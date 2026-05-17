@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Feta'
 desc: 'Greek brined sheep''s-milk cheese (PDO since 2002), made from at least 70 percent sheep''s milk with up to 30 percent goat. Crumbly, lactic-tangy, salt-cured in brine for 2 to 3 months. The defining cheese of Greek and broader Eastern Mediterranean cooking.'
 metaDesc: 'Feta cheese: the PDO definition (sheep + goat, brined cure), the cow''s-milk imitation that is not feta, applications from horiatiki to whipped-feta dips, and the substitution map.'
-tags: ['dairy', 'umami', 'mediterranean']
+tags: ['umami']
 updated: '2026-05-10'
 
 usda_fdc_id: 173417

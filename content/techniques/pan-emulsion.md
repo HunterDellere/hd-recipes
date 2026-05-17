@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Pan emulsion (mantecare)'
 desc: 'Bind starchy pasta water and fat into a glossy sauce by tossing pasta with fat over low heat, finishing off-heat with cheese.'
-tags: ['pasta', 'sauce']
+tags: ['pasta']
 updated: '2026-04-26'
 
 about: |

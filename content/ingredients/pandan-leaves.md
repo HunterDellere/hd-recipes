@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Pandan leaves'
 desc: 'Long, blade-like leaves of Pandanus amaryllifolius. Aromatic compound 2-acetyl-1-pyrroline gives a vanilla-grassy-jasmine perfume; the green color is bonus. The "vanilla of Southeast Asia."'
-tags: ['aromatic', 'asian', 'tropical', 'floral']
+tags: ['tropical', 'floral']
 grams_per_unit: 7
 updated: '2026-05-16'
 

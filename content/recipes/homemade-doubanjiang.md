@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade doubanjiang (short-cure version)'
 desc: 'A 4-6 week home version of Pixian-style chili bean paste, using fermented broad beans and dried chilies. Stub. The authentic 1-3 year cure is not practical at home; this is the closest short-cycle approximation.'
 metaDesc: 'Homemade doubanjiang stub recipe: 4-6 week short cure with fermented broad beans and chilies. Not authentic Pixian doubanjiang but the closest home approximation.'
-tags: ['chinese', 'pantry', 'fermentation', 'umami', 'spicy', 'sauce', 'weekend-project']
+tags: ['pantry', 'fermentation', 'umami', 'spicy', 'weekend-project']
 updated: '2026-05-09'
 
 servings: 30

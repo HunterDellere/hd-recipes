@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tahini-yogurt sauce'
 desc: 'The Levantine drizzle: tahini, yogurt, lemon, garlic, salt, water. The structural backbone for roasted vegetables, falafel, kebabs, grain bowls, raw vegetables, and grilled bread, built in a single bowl in 5 minutes. The yogurt softens the tahini bitterness and lightens the body; the lemon and garlic carry it; the water controls the pour. A 5-ingredient sauce that travels across the Levantine, Turkish, Mediterranean, and contemporary Western table.'
 metaDesc: 'Tahini-yogurt sauce: tahini, yogurt, lemon, garlic, water. The 5-ingredient Levantine drizzle for roasted vegetables, falafel, kebabs, grain bowls, raw vegetables, and grilled bread.'
-tags: ['sauce', 'levantine', 'mediterranean', 'no-cook', 'quick', 'pantry', 'make-ahead', 'dairy']
+tags: ['no-cook', 'quick', 'pantry', 'make-ahead']
 updated: '2026-05-15'
 
 servings: 8

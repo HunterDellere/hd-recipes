@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Smoked paprika (pimentón de la Vera)'
 desc: 'Spanish red pepper powder made from oak-smoked Capsicum annuum dried over slow wood fires for 10 to 15 days, then stone-ground. The defining smoke aromatic of Spanish cooking and one of the most cost-effective ways to introduce wood-smoke flavor into a dish. Sweet, bittersweet, and hot grades; the sweet variety (pimentón dulce) is the workhorse.'
 metaDesc: 'Smoked paprika (pimentón de la Vera): production, smoke chemistry, sweet vs bittersweet vs hot grades, dishes across Spanish and Mexican-American cooking, sourcing.'
-tags: ['spice', 'aromatic', 'pantry', 'mediterranean']
+tags: ['pantry']
 density_g_per_ml: 0.45
 updated: '2026-05-10'
 

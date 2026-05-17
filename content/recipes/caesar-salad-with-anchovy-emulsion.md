@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Caesar salad with anchovy emulsion'
 desc: 'Cold romaine hearts under a coddled-egg-yolk dressing built around dissolved anchovy, garlic, dijon, lemon, worcestershire, and parmigiano. Sourdough croutons fried in garlic oil. The dressing is engineered as a stable yolk emulsion, not a vinaigrette.'
 metaDesc: 'Caesar salad with a coddled-egg-yolk anchovy emulsion: dissolved anchovy, garlic-lemon-worcestershire-dijon water phase, streamed olive oil, parmigiano. Sourdough croutons fried in garlic oil.'
-tags: ['salad', 'american', 'umami', 'egg', 'fish']
+tags: ['salad', 'umami', 'egg', 'fish']
 updated: '2026-05-10'
 
 servings: 4

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tortilla española'
 desc: 'The Spanish potato-and-onion-and-egg cake: thinly sliced waxy potatoes and onions slow-poached in a generous bath of olive oil until completely tender (not browned), drained, folded into beaten eggs to rest, then set in a smaller skillet with just enough oil and finished with the canonical plate-flip to brown both sides. Texture is structural: the inside should be just-set, almost custardy at the center; a dry tortilla is a failed tortilla. Eaten warm or at room temperature, sliced into wedges; the canonical Spanish tapas anchor and one of the great egg dishes in any cuisine.'
 metaDesc: 'Tortilla española: slow-poached potato-and-onion in olive oil, folded into beaten eggs, set into a flat cake with a custardy center. The canonical Spanish potato omelet, served warm or room temperature.'
-tags: ['sauce', 'spanish', 'mediterranean', 'egg', 'make-ahead', 'potato', 'pantry']
+tags: ['egg', 'make-ahead', 'pantry']
 updated: '2026-05-15'
 
 servings: 6

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chè Thái (Vietnamese-Thai mixed fruit and jelly dessert)'
 desc: 'Cold sweet soup of jackfruit, longan, lychee, basil seeds, and red ruby water chestnuts in sweetened coconut cream. Vietnamese in origin despite the name, built on tinned tropical fruits and the textural contrast of jelly, crunch, and pop.'
 metaDesc: 'Chè Thái, Vietnamese cold dessert with tropical fruit, basil seed, water chestnut rubies, and coconut cream. A crowd-pleasing summer chè.'
-tags: ['che', 'vietnamese-dessert', 'vietnamese', 'dessert', 'coconut', 'tropical', 'fruit', 'no-cook']
+tags: ['che', 'tropical', 'no-cook']
 updated: '2026-05-16'
 
 servings: 4

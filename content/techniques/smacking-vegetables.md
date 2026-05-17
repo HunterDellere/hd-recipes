@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Smacking vegetables'
 desc: 'Crush firm vegetables with the side of a knife or cleaver to rupture cell walls — more sauce uptake, more flavor, jagged surfaces.'
 metaDesc: 'Smacking vegetables: how rupturing cell walls and vacuoles boosts sauce absorption, the role of salt-driven osmosis, and why a clean cut underperforms.'
-tags: ['vegetable']
+tags: []
 updated: '2026-04-26'
 
 about: |

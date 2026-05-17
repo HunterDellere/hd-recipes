@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Roasted beet and citrus salad with whipped feta'
 desc: 'Salt-roasted red beets, segmented blood orange, urfa-warmed pistachio, and a feta-yogurt cream whipped to spreading texture. Composed warm-on-cold; the dressing is the cheese itself.'
 metaDesc: 'Roasted beet and citrus salad: salt-roasted beets, blood orange supremes, urfa pistachios, and whipped feta. Mediterranean-Levantine, composed warm-on-cold.'
-tags: ['salad', 'roast', 'mediterranean', 'levantine', 'vegetable', 'dairy', 'fruit', 'umami']
+tags: ['salad', 'roast', 'umami']
 updated: '2026-05-10'
 
 servings: 4

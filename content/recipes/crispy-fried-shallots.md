@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Crispy fried shallots (and the shallot oil)'
 desc: 'Thinly sliced shallots fried slow in neutral oil until deep gold and shatteringly crisp. The oil that comes free is the bonus ingredient and arguably more useful than the shallots themselves.'
 metaDesc: 'Crispy fried shallots from scratch. The slow-fry technique, the curve from raw to caramelized to bitter, and how to use the shallot-flavored oil that the recipe yields as a free condiment.'
-tags: ['aromatic', 'pantry', 'umami', 'make-ahead', 'side', 'chinese', 'thai']
+tags: ['pantry', 'umami', 'make-ahead']
 updated: '2026-05-08'
 
 servings: 16

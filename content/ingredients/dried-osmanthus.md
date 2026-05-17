@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dried osmanthus (桂花)'
 desc: 'Dried flowers of Osmanthus fragrans — tiny golden florets used as a floral garnish and tea-blender. Carries a stone-fruit and apricot character from γ-decalactone.'
 metaDesc: 'Dried osmanthus: golden flowers used in Chinese teas, jellies, and syrups. How to bloom them, what they taste like, and when to skip.'
-tags: ['floral', 'chinese', 'aromatic']
+tags: ['floral']
 density_g_per_ml: 0.2
 imperial_pref: 'tsp'
 updated: '2026-04-26'

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Classic pearl milk tea (zhēn zhū nǎi chá)'
 desc: 'The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, and chewy tapioca pearls. The boba drink that started everything, before brown sugar painted glasses or popping fruit pearls were ever in the picture.'
 metaDesc: 'Classic Taiwanese pearl milk tea, the original 1980s formula. Strong black tea, milk, simple syrup, chewy tapioca pearls. The boba template.'
-tags: ['boba', 'bubble-tea', 'taiwanese', 'milk-tea', 'drink', 'tea']
+tags: ['boba', 'bubble-tea', 'milk-tea']
 updated: '2026-05-16'
 
 servings: 2

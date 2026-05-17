@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salmon rice bowl with quick cucumber'
 desc: 'Roasted salmon flaked over a bed of short-grain rice, finished with a quick rice-vinegar-and-salt cucumber pickle (15-minute brine), a soft-boiled jammy egg, generous furikake, and a small drizzle of soy and sesame oil. The bowl is built on three parallel tracks (rice on the longest pole, salmon for 12 minutes, cucumber pickle in parallel, soft egg in the last 7 minutes) that converge at a single assembly. Asian-leaning, weeknight-feasible, the rice and salmon batch-cook for next-day lunches.'
 metaDesc: 'Salmon rice bowl with quick-pickled cucumber, soft egg, and furikake. Asian-leaning weeknight dinner in 30 minutes with parallel-track cooking.'
-tags: ['weeknight', 'bowl', 'rice', 'fish', 'salmon', 'japanese', 'quick', 'healthy', 'pickle']
+tags: ['weeknight', 'bowl', 'rice', 'fish', 'salmon', 'quick', 'pickle']
 updated: '2026-05-17'
 
 servings: 4

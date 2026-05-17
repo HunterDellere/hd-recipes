@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tofu skin (yuba, fu zhu, 腐竹)'
 desc: 'The protein-fat film that forms on the surface of simmering soy milk, lifted off, and dried into sheets, sticks, or knots. Chewy, savory, and aggressively absorbent of any sauce it meets.'
 metaDesc: 'Tofu skin (yuba): how it is made, fresh vs dried sheets vs sticks vs knots, soaking guidance, role in dry-pot, braised dishes, soups across China and Japan.'
-tags: ['legume', 'pantry', 'chinese']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-09'
 

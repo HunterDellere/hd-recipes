@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Lardon rendering'
 desc: 'Slowly extract the fat from cubed or stripped cured pork (bacon, pancetta, guanciale, salt pork) by starting in a cold pan over medium-low heat, so the fat liquefies gradually as the meat browns. The rendered fat becomes the cooking medium for the dish that follows; the crisp meat lardons become the textural top note.'
 metaDesc: 'Lardon rendering technique: cold-pan start for cured pork, fat liquefaction chemistry, the brown-but-not-burnt window, and the cooking applications from German potato salad to amatriciana to cassoulet.'
-tags: ['fat', 'pork']
+tags: ['pork']
 updated: '2026-05-10'
 
 about: |

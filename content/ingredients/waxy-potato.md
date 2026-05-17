@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Waxy potato'
 desc: 'Low-starch, high-moisture potato cultivars (fingerling, new potato, La Ratte, red bliss, Yukon Gold). Cell walls hold their structure through boiling: the right potato for salads, gratins, and any dish that needs the cube to stay a cube.'
 metaDesc: 'Waxy potatoes: amylose vs amylopectin starch ratio, why they hold shape in boiling water, salad and gratin applications, and how they differ from russets.'
-tags: ['potato', 'vegetable', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 usda_fdc_id: 170026

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai iced tea (no dye)'
 desc: 'Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, low astringency, evaporated milk float.'
 metaDesc: 'Homemade Thai iced tea without artificial color. Spice decoction, gentle off-heat tea steep, condensed milk sweetener, evaporated milk float.'
-tags: ['drink', 'tea', 'thai']
+tags: []
 updated: '2026-04-26'
 
 servings: 2

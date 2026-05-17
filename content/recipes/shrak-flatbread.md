@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Shrak (Bedouin paper-thin flatbread)'
 desc: 'Hand-stretched, paper-thin whole-wheat flatbread cooked in seconds on a domed saj. The bread layer beneath mansaf, and a Bedouin staple in its own right. Stub.'
 metaDesc: 'Shrak: the paper-thin Jordanian Bedouin flatbread cooked on a domed saj. Used as the base layer for mansaf and as a wrap on its own. Stub recipe.'
-tags: ['bread', 'levantine', 'weekend-project']
+tags: ['bread', 'weekend-project']
 updated: '2026-05-06'
 
 servings: 6

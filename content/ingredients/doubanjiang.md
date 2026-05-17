@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Doubanjiang (Pixian chili bean paste, 郫县豆瓣酱)'
 desc: 'Fermented broad beans (faba) and chilies aged together for one to three years into a deep red-brown paste with chunks of bean and chili visible. The structural backbone of Sichuan mapo tofu, dry-pot, twice-cooked pork, and the entire mala canon.'
 metaDesc: 'Doubanjiang (Pixian chili bean paste): fermentation chemistry, age grades, the red-oil rendering technique, role in mapo tofu / dry-pot / twice-cooked pork.'
-tags: ['chinese', 'pantry', 'umami', 'fermentation', 'spicy', 'sauce']
+tags: ['pantry', 'umami', 'fermentation', 'spicy']
 density_g_per_ml: 1.15
 updated: '2026-05-09'
 

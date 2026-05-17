@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Soft-boiled congee egg'
 desc: 'A 6½-minute soft-boiled egg cracked into the hot bowl just before eating: white set, yolk still molten, the heat of the porridge finishes the cook and binds yolk into broth.'
 metaDesc: 'Soft-boiled egg for congee: 6½-minute timing, ice-bath shock, and the table-side crack technique that lets the yolk thicken the porridge as you eat.'
-tags: ['egg', 'breakfast', 'chinese', 'comfort']
+tags: ['egg', 'comfort']
 updated: '2026-05-09'
 
 servings: 4

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Shallot'
 desc: 'Allium ascalonicum (or A. cepa var. aggregatum). Smaller, milder, more aromatic-complex than yellow onion, with a higher sugar fraction and a softer sulfur profile.'
 metaDesc: 'Shallot: chemistry vs onion and garlic, raw vinaigrette role, mince vs slice cuts, and why French and Southeast Asian cooking use them differently.'
-tags: ['aromatic', 'french']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 169307

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Farro'
 desc: 'Whole-grain wheat (most often Triticum dicoccum, emmer) sold in three pearling grades. Chewy, nutty, with a structural starch that holds shape after long cooking. The default Italian whole grain.'
 metaDesc: 'Farro: emmer vs spelt vs einkorn, the whole / semi-pearled / pearled grades, soaking and cooking times, dry-toasting for pilaf, role in Italian and broader Mediterranean cooking.'
-tags: ['grain', 'pantry', 'italian', 'mediterranean']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 0.78

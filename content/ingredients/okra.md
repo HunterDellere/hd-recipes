@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Okra (lady fingers, bhindi, gumbo)'
 desc: 'Pod of Abelmoschus esculentus, in the mallow family, characterized by ridged green five-sided pods carrying mucilaginous polysaccharides that thicken liquids. The structural thickener of Louisiana gumbo and West African stews, a vegetable of South Asian sabzi, and a finishing element in Vietnamese sour soups.'
 metaDesc: 'Okra: mucilage chemistry, slime management techniques, role in gumbo, bhindi masala, and canh chua, freshness cues.'
-tags: ['vegetable']
+tags: []
 updated: '2026-05-10'
 
 about: |

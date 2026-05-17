@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pork and century egg congee (皮蛋瘦肉粥)'
 desc: 'The canonical Cantonese savory congee. Bone-in pork shoulder simmered into the rice provides its own stock; cured pidan goes in twice, half during the simmer to bloom into the broth and half at the bowl for the textural contrast.'
 metaDesc: 'Pork and century egg congee from scratch. Bone-in pork shoulder, two-stage pidan addition, ginger and white pepper finish, with crisp youtiao and ginger-scallion oil at the table.'
-tags: ['rice', 'pork', 'chinese', 'comfort', 'breakfast', 'one-pot', 'umami']
+tags: ['rice', 'pork', 'comfort', 'one-pot', 'umami']
 updated: '2026-05-08'
 
 servings: 4

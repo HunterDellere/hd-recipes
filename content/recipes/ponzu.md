@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ponzu'
 desc: 'Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and katsuobushi, then refrigerated 24 hours to extract the kombu glutamate and katsuobushi inosinate into the citrus-soy base. Strained the next day to a clear, deeply aromatic citrus-soy sauce. The canonical washoku dipping and finishing sauce; dramatically more aromatic than any bottled version because the volatile citrus top notes have not had months to fade in storage.'
 metaDesc: 'Homemade ponzu: yuzu and citrus juice steeped overnight with kombu, katsuobushi, soy sauce, mirin, and rice vinegar; the umami-stacked citrus-soy sauce of washoku, dramatically fresher than bottled.'
-tags: ['japanese', 'sauce', 'umami', 'pantry', 'make-ahead']
+tags: ['umami', 'pantry', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 12

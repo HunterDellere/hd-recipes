@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salt-cured anchovies'
 desc: 'Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until cathepsin proteases hydrolyze the myofibrillar proteins into free glutamate and the texture softens into clean, pull-apart fillets.'
 metaDesc: 'Salt-cured anchovies: the Mediterranean salt cure that yields glutamate-rich fillets for vinaigrettes, pasta, and Caesar dressing. 50 percent salt-to-fish ratio, 12 to 16 °C, 4 to 12 months.'
-tags: ['fermentation', 'fish', 'pantry', 'umami', 'mediterranean', 'make-ahead', 'weekend-project']
+tags: ['fermentation', 'fish', 'pantry', 'umami', 'make-ahead', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 1

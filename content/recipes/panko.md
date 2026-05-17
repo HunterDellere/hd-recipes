@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade panko'
 desc: 'Crustless white pullman bread oven-dried at low temperature, then pulsed in a food processor to the characteristic jagged flake shape that produces panko''s signature crispy-fried texture. Stub.'
 metaDesc: 'Homemade panko: oven-dried crustless white bread pulsed to jagged flakes, the panko of Japanese tonkatsu and Italian-American meatball panades. Stub recipe.'
-tags: ['pantry', 'make-ahead', 'japanese']
+tags: ['pantry', 'make-ahead']
 updated: '2026-05-15'
 
 servings: 8

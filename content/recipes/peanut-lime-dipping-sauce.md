@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Peanut-lime dipping sauce'
 desc: 'The Southeast Asian peanut-and-coconut dipping sauce in the satay family: roasted peanuts ground to a coarse paste, coconut milk, fish sauce, lime, palm sugar, garlic, ginger, dried chili. Pourable-thick, sweet-salty-sour-spicy-nutty, and the universal partner for grilled meat skewers, raw vegetable platters, fresh and rice-paper rolls, rice noodles, grilled tofu, and rice bowls. The structurally most versatile sauce in the Indonesian-Malaysian-Thai-Vietnamese satay tradition.'
 metaDesc: 'Peanut-lime dipping sauce: roasted peanuts, coconut milk, fish sauce, lime, palm sugar, garlic, chili. The Southeast Asian satay-family sauce for grilled meat, raw vegetables, fresh rolls, rice noodles, and tofu.'
-tags: ['sauce', 'dip', 'thai', 'vietnamese', 'no-cook', 'pantry', 'make-ahead', 'spicy', 'umami', 'nuts']
+tags: ['no-cook', 'pantry', 'make-ahead', 'spicy', 'umami']
 updated: '2026-05-15'
 
 servings: 8

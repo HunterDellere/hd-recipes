@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Smashed cucumber and wood ear salad'
 desc: 'Crushed Persian cucumbers and rehydrated wood ear in a Chinkiang vinegar dressing — sharp, snappy, the right counter to anything heavy.'
 metaDesc: 'Smashed Persian cucumbers and wood ear mushrooms in Chinkiang vinegar, garlic, and sesame oil. Cold side that pairs with rich dishes.'
-tags: ['salad', 'vegetable', 'chinese', 'no-cook', 'side']
+tags: ['salad', 'no-cook']
 updated: '2026-04-26'
 
 servings: 6

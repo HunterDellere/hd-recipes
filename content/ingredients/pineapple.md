@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pineapple'
 desc: 'Tropical bromeliad fruit (Ananas comosus), 11 to 15% sugars by weight, 0.6 to 1.0% citric and malic acid, carrying the proteolytic enzyme bromelain in the raw flesh. The structural sweet-acid fruit of Southeast Asian sour soups, Filipino sweet-and-sour braises, Mexican al pastor marinades, and the global tropical pantry.'
 metaDesc: 'Pineapple: bromelain enzyme behavior under heat, role in canh chua and al pastor, picking ripe vs. green, sourcing notes, storage and ripening behavior.'
-tags: ['fruit']
+tags: []
 updated: '2026-05-10'
 
 grams_per_unit: 900

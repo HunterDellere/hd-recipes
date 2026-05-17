@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tandoori chicken salad sandwich (Hunter''s version)'
 desc: 'Poached chicken thigh shredded fine, bound with a tandoori-masala-spiced mayo, layered with crisp celery, grated carrot, and toasted walnuts, and served on a buttered toasted croissant. The American chicken-salad-sandwich form re-engineered through a Punjabi spice base; the tandoori-mayo is the structural pivot that makes the dish.'
 metaDesc: 'Tandoori chicken salad sandwich: poached chicken thigh, tandoori-masala mayo, celery, carrot, walnut, on a croissant. The Punjabi-American crossover that earns its place at the lunch table.'
-tags: ['indian', 'pakistani', 'american', 'chicken', 'weeknight', 'no-cook']
+tags: ['chicken', 'weeknight', 'no-cook']
 updated: '2026-05-09'
 
 servings: 4

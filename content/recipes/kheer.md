@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Rice kheer (chawal ki kheer)'
 desc: 'Whole milk reduced by 60% with basmati rice, sweetened with sugar, perfumed with green cardamom and saffron, finished with chopped pistachios and almonds. The structural North Indian milk-rice pudding, eaten warm or cold, served at every festival and Sunday meal. Reduction is the technique; patience is the only difficulty.'
 metaDesc: 'Rice kheer (chawal ki kheer): whole milk reduced 60% with basmati, cardamom + saffron + nuts. The North Indian milk-rice pudding made by long reduction.'
-tags: ['indian', 'dessert', 'rice']
+tags: ['rice']
 updated: '2026-05-09'
 
 servings: 6

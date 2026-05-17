@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'In-N-Out spread (animal-style copycat)'
 desc: 'The pink-orange spread that defines In-N-Out''s animal-style burger and goes on every Double-Double by default. Mayo, ketchup, sweet pickle relish, sugar, and a touch of vinegar; distinct from Big Mac sauce in that it leans markedly sweeter, uses more relish, and skips the mustard entirely. Reads as a Thousand Island simplified to its load-bearing parts.'
 metaDesc: 'In-N-Out spread copycat recipe, animal-style sauce with mayo, ketchup, sweet relish, sugar, vinegar. Five-minute whisk-and-rest dipping sauce.'
-tags: ['condiment', 'sauce', 'copycat', 'fast-food', 'american', 'no-cook', 'quick', 'emulsion']
+tags: ['condiment', 'copycat', 'no-cook', 'quick', 'emulsion']
 updated: '2026-05-17'
 
 servings: 8

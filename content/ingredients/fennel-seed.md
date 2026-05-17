@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fennel seed'
 desc: 'Dried ripe fruit of Foeniculum vulgare. Greenish-brown ribbed seeds, intensely anise-scented from trans-anethole concentration of 30 to 50 mg per gram. The defining spice of Italian sweet sausage and a quiet structural element in seafood broths and South Asian spice blends.'
 metaDesc: 'Fennel seed: trans-anethole chemistry, the toasting window before scorching, applications across Italian sausage, North-American Italian seafood broths, Indian panch phoron, and the substitutes that work when the seed is unavailable.'
-tags: ['spice', 'aromatic']
+tags: []
 density_g_per_ml: 0.42
 updated: '2026-05-10'
 

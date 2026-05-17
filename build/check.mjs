@@ -114,7 +114,8 @@ const INDEX_INVARIANTS = [
 ];
 
 // Top-level personalization shells aren't content-backed and use a
-// minimalist layout (no sidebar, no TOC). Skip them like `_` dirs.
+// minimalist layout (no sidebar, no TOC). They're skipped here for the
+// same reason `_` directories are.
 const STATIC_TOPLEVEL_FILES = new Set(['saved.html', 'settings.html']);
 for (const [file, { html, meta }] of pageInfo) {
   const isIndex = file === join(ROOT, 'index.html');
@@ -181,14 +182,16 @@ for (const f of walkHtml(pagesDir)) {
 for (const slug of contentSlugs) {
   if (!pageSlugs.has(slug)) fail(join(contentDir, slug + '.md'), `orphan content: no pages/${slug}.html`);
 }
-const STATIC_TOPLEVEL_SLUGS = new Set(['saved', 'settings']);
+// Top-level static pages that live in pages/ but aren't content-backed:
+// the personalization shells render their state from localStorage and
+// don't have a corresponding markdown source. Add to this set rather
+// than to the `if startsWith` chain so it stays explicit.
+const STATIC_TOPLEVEL = new Set(['saved', 'settings']);
 for (const slug of pageSlugs) {
   if (slug.startsWith('_')) continue;
   // pages/tags/<slug>.html are generated indices, not content-backed
   if (slug.startsWith('tags/')) continue;
-  // Personalization shells (saved.html / settings.html) intentionally have
-  // no markdown source — they render from localStorage.
-  if (STATIC_TOPLEVEL_SLUGS.has(slug)) continue;
+  if (STATIC_TOPLEVEL.has(slug)) continue;
   if (!contentSlugs.has(slug)) fail(join(pagesDir, slug + '.html'), `orphan page: no content/${slug}.md`);
 }
 

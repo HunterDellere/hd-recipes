@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ensalada de nopales'
 desc: 'Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and Maillard browning develops, then sliced and tossed warm with diced tomato, white onion, serrano, cilantro, lime, and crumbled queso fresco. The thesis is heat-as-mucilage-fix, not blanching; the char is the entire flavor argument.'
 metaDesc: 'Ensalada de nopales: charred-cactus Mexican salad with tomato, white onion, serrano, cilantro, lime, and queso fresco. Comal char fixes the slime; the salt and acid are layered.'
-tags: ['salad', 'mexican', 'vegetable', 'no-cook', 'side', 'weeknight', 'acid']
+tags: ['salad', 'no-cook', 'weeknight']
 updated: '2026-05-10'
 
 servings: 4

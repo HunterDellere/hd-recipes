@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Coconut milk (canned, full-fat)'
 desc: 'Pressed coconut emulsion, ~17–22% fat. The lipid phase that carries fat-soluble aromatics in Thai and Southeast Asian curries.'
 metaDesc: 'Canned full-fat coconut milk: density, pack size (13.5 oz / 400 ml), why the cream skims to the top, and what brands hold their emulsion.'
-tags: ['fat', 'umami']
+tags: ['umami']
 density_g_per_ml: 1.00
 updated: '2026-04-27'
 

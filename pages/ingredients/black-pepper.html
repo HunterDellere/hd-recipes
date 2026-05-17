@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Black peppercorns","status":"complete","tags":["spice","aromatic"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Black peppercorns","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -106,39 +108,47 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">black pepper (cooking, background warmth)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="white-pepper.html">white pepper</a></span>
-          <p class="sub-card-note">Same piperine, different aromatic profile. White pepper carries a fermented, slightly funky note from how it is processed; correct for pale dishes (cream sauces, custards, light Asian soups) where you do not want black flecks. Use ~80% the volume.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">black pepper (high-bloom finishing, pasta, steak au poivre)</span>
-          <span class="sub-card-use">tellicherry, freshly cracked</span>
-          <p class="sub-card-note">Same species, larger and riper berry, more complex aromatics. Worth the upgrade when pepper is the lead. Use 1:1.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">black pepper (pickling, brines, whole-spice braises)</span>
-          <span class="sub-card-use">pink peppercorns + black, blended</span>
-          <p class="sub-card-note">Pink peppercorns (Schinus molle, not actually pepper) bring rose and juniper notes that round out a brine or cure; cut with black at 1:3 to keep piperine warmth. Wrong for finishing where the pink color reads off.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">black pepper (no fresh grinder available)</span>
-          <span class="sub-card-use">pre-ground black pepper</span>
-          <p class="sub-card-note">Workable when stirred into a fat phase that masks the staleness; flat in any application where pepper is supposed to lead. Use 25% more than whole-and-cracked to compensate for diminished aroma.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">black pepper (capsaicin-only heat, no aromatic)</span>
-          <span class="sub-card-use">cayenne or aleppo pepper, in trace amounts</span>
-          <p class="sub-card-note">Different heat axis, no piperine. Use only when the goal is sting without pepper's warmth (some chili-forward sauces). Not a swap inside European or Mediterranean traditions where pepper's aromatic identity matters.</p>
-        </li>
+        <li><strong>black pepper (cooking, background warmth)</strong> → <a class="x-link" data-category="ingredients" href="white-pepper.html">white pepper</a> <span class="sub-note">Same piperine, different aromatic profile. White pepper carries a fermented, slightly funky note from how it is processed; correct for pale dishes (cream sauces, custards, light Asian soups) where you do not want black flecks. Use ~80% the volume.</span></li>
+        <li><strong>black pepper (high-bloom finishing, pasta, steak au poivre)</strong> → tellicherry, freshly cracked <span class="sub-note">Same species, larger and riper berry, more complex aromatics. Worth the upgrade when pepper is the lead. Use 1:1.</span></li>
+        <li><strong>black pepper (pickling, brines, whole-spice braises)</strong> → pink peppercorns + black, blended <span class="sub-note">Pink peppercorns (Schinus molle, not actually pepper) bring rose and juniper notes that round out a brine or cure; cut with black at 1:3 to keep piperine warmth. Wrong for finishing where the pink color reads off.</span></li>
+        <li><strong>black pepper (no fresh grinder available)</strong> → pre-ground black pepper <span class="sub-note">Workable when stirred into a fat phase that masks the staleness; flat in any application where pepper is supposed to lead. Use 25% more than whole-and-cracked to compensate for diminished aroma.</span></li>
+        <li><strong>black pepper (capsaicin-only heat, no aromatic)</strong> → cayenne or aleppo pepper, in trace amounts <span class="sub-note">Different heat axis, no piperine. Use only when the goal is sting without pepper's warmth (some chili-forward sauces). Not a swap inside European or Mediterranean traditions where pepper's aromatic identity matters.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/aji-de-gallina.html" data-category="recipes">
+          <span class="rl-card-title">Ají de gallina</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/anticuchos-de-corazon.html" data-category="recipes">
+          <span class="rl-card-title">Anticuchos de corazón</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/arroz-con-pollo-cubano.html" data-category="recipes">
+          <span class="rl-card-title">Arroz con pollo Cubano</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/avgolemono-soup.html" data-category="recipes">
+          <span class="rl-card-title">Avgolemono soup</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/banh-mi-thit-nuong.html" data-category="recipes">
+          <span class="rl-card-title">Banh mi thit nuong (grilled pork banh mi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/beef-bourguignon.html" data-category="recipes">
+          <span class="rl-card-title">Beef bourguignon</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/bigos.html" data-category="recipes">
+          <span class="rl-card-title">Bigos (Polish hunter's stew)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/breakfast-egg-bites-with-spinach-and-feta.html" data-category="recipes">
           <span class="rl-card-title">Breakfast egg bites with spinach and feta</span>
           
@@ -149,6 +159,10 @@
         </a>
         <a class="rl-card" href="../recipes/brown-butter-cacio-e-pepe.html" data-category="recipes">
           <span class="rl-card-title">Brown butter cacio e pepe</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/bulgogi.html" data-category="recipes">
+          <span class="rl-card-title">Bulgogi (Asian pear-marinated grilled beef)</span>
           
         </a>
         <a class="rl-card" href="../recipes/buttermilk-ranch-dressing.html" data-category="recipes">
@@ -167,6 +181,10 @@
           <span class="rl-card-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           
         </a>
+        <a class="rl-card" href="../recipes/chicken-adobo.html" data-category="recipes">
+          <span class="rl-card-title">Chicken adobo</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/chicken-gnocchi-soup.html" data-category="recipes">
           <span class="rl-card-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           
@@ -175,12 +193,24 @@
           <span class="rl-card-title">Chicken nihari (Pakistani slow-braised stew)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/chicken-paprikash.html" data-category="recipes">
+          <span class="rl-card-title">Chicken paprikash (csirkepaprikás)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/chicken-patties.html" data-category="recipes">
           <span class="rl-card-title">Chicken patties (Pakistani puff-pastry hand pies)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/chicken-shawarma.html" data-category="recipes">
+          <span class="rl-card-title">Chicken shawarma</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/chicken-stock.html" data-category="recipes">
           <span class="rl-card-title">Chicken stock</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-tagine-with-preserved-lemon-and-olives.html" data-category="recipes">
+          <span class="rl-card-title">Chicken tagine with preserved lemon and olives</span>
           
         </a>
         <a class="rl-card" href="../recipes/chicken-zucchini-meatballs-with-yogurt-dill.html" data-category="recipes">
@@ -189,6 +219,18 @@
         </a>
         <a class="rl-card" href="../recipes/chimichurri.html" data-category="recipes">
           <span class="rl-card-title">Chimichurri</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/coq-au-vin.html" data-category="recipes">
+          <span class="rl-card-title">Coq au vin</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/couscous-with-seven-vegetables.html" data-category="recipes">
+          <span class="rl-card-title">Couscous with seven vegetables</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/cuban-ropa-vieja.html" data-category="recipes">
+          <span class="rl-card-title">Cuban ropa vieja</span>
           
         </a>
         <a class="rl-card" href="../recipes/cured-egg-yolk.html" data-category="recipes">
@@ -203,12 +245,28 @@
           <span class="rl-card-title">Fattoush with sumac and toasted pita</span>
           
         </a>
+        <a class="rl-card" href="../recipes/fesenjan.html" data-category="recipes">
+          <span class="rl-card-title">Fesenjan</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/french-onion-soup-gratinee.html" data-category="recipes">
+          <span class="rl-card-title">French onion soup gratinée</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/german-warm-potato-salad-with-bacon-and-mustard.html" data-category="recipes">
           <span class="rl-card-title">German warm potato salad with bacon and mustard</span>
           
         </a>
+        <a class="rl-card" href="../recipes/ghormeh-sabzi.html" data-category="recipes">
+          <span class="rl-card-title">Ghormeh sabzi</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/goan-fish-curry-xacuti.html" data-category="recipes">
           <span class="rl-card-title">Goan fish curry (xacuti)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/golabki.html" data-category="recipes">
+          <span class="rl-card-title">Gołąbki (Polish stuffed cabbage rolls)</span>
           
         </a>
         <a class="rl-card" href="../recipes/greens-and-ricotta-frittata.html" data-category="recipes">
@@ -217,6 +275,18 @@
         </a>
         <a class="rl-card" href="../recipes/grilled-squid-nuoc-cham.html" data-category="recipes">
           <span class="rl-card-title">Grilled whole squid with nuoc cham (mực nướng)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/goulash-gulyas.html" data-category="recipes">
+          <span class="rl-card-title">Gulyás (Hungarian goulash soup)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/haitian-griot.html" data-category="recipes">
+          <span class="rl-card-title">Haitian griot</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/harira.html" data-category="recipes">
+          <span class="rl-card-title">Harira</span>
           
         </a>
         <a class="rl-card" href="../recipes/harvest-vegetable-soup-with-white-beans.html" data-category="recipes">
@@ -235,24 +305,60 @@
           <span class="rl-card-title">Honey mustard sauce (the proper ratio)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/greek-salad-horiatiki.html" data-category="recipes">
+          <span class="rl-card-title">Horiatiki (village Greek salad)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/house-blend-chai.html" data-category="recipes">
           <span class="rl-card-title">House blend chai</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/iskender-kebab.html" data-category="recipes">
+          <span class="rl-card-title">İskender kebab</span>
           
         </a>
         <a class="rl-card" href="../recipes/italian-american-pork-meatballs-in-tomato.html" data-category="recipes">
           <span class="rl-card-title">Italian-American pork meatballs in tomato</span>
           
         </a>
+        <a class="rl-card" href="../recipes/jamaican-jerk-chicken.html" data-category="recipes">
+          <span class="rl-card-title">Jamaican jerk chicken</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/joojeh-kabab.html" data-category="recipes">
+          <span class="rl-card-title">Joojeh kabab</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/kachumber-with-cumin-lime.html" data-category="recipes">
           <span class="rl-card-title">Kachumber with cumin and lime</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/kinilaw-na-tanigue.html" data-category="recipes">
+          <span class="rl-card-title">Kinilaw na tanigue</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lahmacun.html" data-category="recipes">
+          <span class="rl-card-title">Lahmacun</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lamb-tagine-with-prunes-and-almonds.html" data-category="recipes">
+          <span class="rl-card-title">Lamb tagine with prunes and almonds</span>
           
         </a>
         <a class="rl-card" href="../recipes/lemony-green-beans-with-garlic-crunch.html" data-category="recipes">
           <span class="rl-card-title">Lemony green beans with garlic crunch</span>
           
         </a>
+        <a class="rl-card" href="../recipes/lomo-saltado.html" data-category="recipes">
+          <span class="rl-card-title">Lomo saltado</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/mansaf.html" data-category="recipes">
           <span class="rl-card-title">Mansaf</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/manti.html" data-category="recipes">
+          <span class="rl-card-title">Manti</span>
           
         </a>
         <a class="rl-card" href="../recipes/maple-mustard-glazed-turkey-breast.html" data-category="recipes">
@@ -267,6 +373,22 @@
           <span class="rl-card-title">Masala chai (proper Indian milk-spice tea)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/mast-o-khiar.html" data-category="recipes">
+          <span class="rl-card-title">Mast-o-khiar</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/menemen.html" data-category="recipes">
+          <span class="rl-card-title">Menemen</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/mole-poblano.html" data-category="recipes">
+          <span class="rl-card-title">Mole poblano</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/niter-kibbeh.html" data-category="recipes">
+          <span class="rl-card-title">Niter kibbeh (Ethiopian spiced clarified butter)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/olive-garden-italian-dressing.html" data-category="recipes">
           <span class="rl-card-title">Olive Garden Italian dressing (homemade copycat)</span>
           
@@ -275,8 +397,28 @@
           <span class="rl-card-title">Outback bloomin onion sauce (homemade copycat)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pancit-canton.html" data-category="recipes">
+          <span class="rl-card-title">Pancit canton</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/panzanella-with-charred-tomatoes.html" data-category="recipes">
           <span class="rl-card-title">Panzanella with charred tomatoes</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/peanut-groundnut-soup.html" data-category="recipes">
+          <span class="rl-card-title">Peanut soup (Senegalese mafé / Ghanaian groundnut stew)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pierogi-z-kapusta-i-grzybami.html" data-category="recipes">
+          <span class="rl-card-title">Pierogi z kapustą i grzybami (sauerkraut and mushroom pierogi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pikliz.html" data-category="recipes">
+          <span class="rl-card-title">Pikliz</span>
           
         </a>
         <a class="rl-card" href="../recipes/raising-canes-sauce.html" data-category="recipes">
@@ -285,6 +427,18 @@
         </a>
         <a class="rl-card" href="../recipes/raita.html" data-category="recipes">
           <span class="rl-card-title">Raita (cucumber-mint, the household standard)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/ratatouille-confit-byaldi.html" data-category="recipes">
+          <span class="rl-card-title">Ratatouille (confit byaldi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/red-beans-and-rice.html" data-category="recipes">
+          <span class="rl-card-title">Red beans and rice (Monday red beans)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/risotto-alla-milanese.html" data-category="recipes">
+          <span class="rl-card-title">Risotto alla Milanese</span>
           
         </a>
         <a class="rl-card" href="../recipes/roasted-delicata-and-farro-salad-with-maple-vinaigrette.html" data-category="recipes">
@@ -311,12 +465,20 @@
           <span class="rl-card-title">Sourdough croutons</span>
           
         </a>
+        <a class="rl-card" href="../recipes/southern-fried-chicken.html" data-category="recipes">
+          <span class="rl-card-title">Southern fried chicken (buttermilk-brined, cast-iron-fried)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/spaghetti-bolognese.html" data-category="recipes">
           <span class="rl-card-title">Spaghetti bolognese (ragù alla bolognese, the household version)</span>
           
         </a>
         <a class="rl-card" href="../recipes/spaghetti-with-beef-oyster-mushroom-shallot-ragu.html" data-category="recipes">
           <span class="rl-card-title">Spaghetti with beef, oyster mushroom, and shallot ragu</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/spanakopita.html" data-category="recipes">
+          <span class="rl-card-title">Spanakopita</span>
           
         </a>
         <a class="rl-card" href="../recipes/squid-ink-pasta.html" data-category="recipes">
@@ -327,66 +489,16 @@
           <span class="rl-card-title">Tandoori chicken salad sandwich (Hunter's version)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/tonkatsu.html" data-category="recipes">
+          <span class="rl-card-title">Tonkatsu (panko-breaded pork cutlet)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/vegetable-broth.html" data-category="recipes">
           <span class="rl-card-title">Vegetable broth</span>
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="cinnamon-stick.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cinnamon stick</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="fennel-seed.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel seed</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="ginger.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Ginger (fresh)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="red-pepper-flakes.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red pepper flakes (crushed red pepper)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="star-anise.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Star anise</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card" href="thai-chili.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Thai bird chili (prik kee noo)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card" href="sichuan-peppercorns.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sichuan peppercorns</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/comal-charring.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Comal charring (vegetables, chilies, tortillas)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="black-beans.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="black-beans.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Black beans (frijoles negros)</span>
     </a><a class="adj-nav-link" href="blood-orange.html">

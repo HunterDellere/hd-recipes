@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Onigiri (rice triangles)'
 desc: 'Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-salt hands, optionally filled with a savory center, and wrapped in a sheet of toasted nori at the moment of eating. Portable, room-temperature, and the canonical Japanese hand-food.'
 metaDesc: 'Onigiri: the rice-triangle protocol ,  water-and-salt hands, the temperature window for shaping, classic fillings (umeboshi, salmon, okaka), and the convenience-store-style nori wrap.'
-tags: ['japanese', 'rice', 'snack', 'make-ahead', 'breakfast']
+tags: ['rice', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 4

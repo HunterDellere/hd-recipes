@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Century egg (皮蛋, pidan)","status":"complete","tags":["egg","chinese","fermentation","umami","pickle"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Century egg (皮蛋, pidan)","status":"complete","tags":["egg","fermentation","umami","pickle"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -106,23 +108,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">pidan (Cantonese congee, the canonical pork-and-century-egg version)</span>
-          <span class="sub-card-use">no real substitute</span>
-          <p class="sub-card-note">The savory-sulfur-translucent-amber profile is what defines the dish. A hard-boiled egg is wrong on all three axes (texture, aroma, color). Skip the recipe until pidan is sourced.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">pidan (cold tofu and pidan appetizer)</span>
-          <span class="sub-card-use">a salted duck egg yolk crumbled fine, plus a splash of soy and sesame oil</span>
-          <p class="sub-card-note">Different ingredient with related savory-fat-rich function; lacks the alkaline aroma but provides comparable umami density and contrasting color against the silken tofu. Acceptable when pidan cannot be sourced.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">pidan (chopped into stir-fried greens or fried rice)</span>
-          <span class="sub-card-use">salted duck egg</span>
-          <p class="sub-card-note">Salted duck egg is brinier and less pungent but provides a comparable savory-fat counterpoint to the greens. Slice or crumble after a brief steam to set the white.</p>
-        </li>
+        <li><strong>pidan (Cantonese congee, the canonical pork-and-century-egg version)</strong> → no real substitute <span class="sub-note">The savory-sulfur-translucent-amber profile is what defines the dish. A hard-boiled egg is wrong on all three axes (texture, aroma, color). Skip the recipe until pidan is sourced.</span></li>
+        <li><strong>pidan (cold tofu and pidan appetizer)</strong> → a salted duck egg yolk crumbled fine, plus a splash of soy and sesame oil <span class="sub-note">Different ingredient with related savory-fat-rich function; lacks the alkaline aroma but provides comparable umami density and contrasting color against the silken tofu. Acceptable when pidan cannot be sourced.</span></li>
+        <li><strong>pidan (chopped into stir-fried greens or fried rice)</strong> → salted duck egg <span class="sub-note">Salted duck egg is brinier and less pungent but provides a comparable savory-fat counterpoint to the greens. Slice or crumble after a brief steam to set the white.</span></li>
     </ul>
 
     
@@ -142,15 +132,23 @@
       <div class="rl-group" data-related-group="recipes">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">2</span>
+          <span class="rl-group-count">4</span>
         </h3>
         <div class="rl-cards rl-cards--recipes">
         <a class="rl-card" href="../recipes/pickled-mustard-greens.html" data-category="recipes" data-reason="tag">
           <span class="rl-card-title">Pickled mustard greens (suan cai, 酸菜)</span>
           <span class="rl-card-why">pickle · fermentation</span>
         </a>
-        <a class="rl-card" href="../recipes/salted-duck-egg-yolks.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Salted duck egg yolks (home brine cure)</span>
+        <a class="rl-card" href="../recipes/kkakdugi.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Kkakdugi</span>
+          <span class="rl-card-why">pickle · fermentation</span>
+        </a>
+        <a class="rl-card" href="../recipes/baechu-kimchi.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Baechu kimchi</span>
+          <span class="rl-card-why">pickle · fermentation</span>
+        </a>
+        <a class="rl-card" href="../recipes/cured-egg-yolk.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Cured egg yolk (salt-sugar dry cure)</span>
           <span class="rl-card-why">egg · fermentation</span>
         </a>
         </div>
@@ -159,32 +157,24 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">4</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
         <a class="rl-card is-strong" href="salted-duck-egg.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Salted duck egg (咸鸭蛋, xian ya dan)</span>
           <span class="rl-card-why">pickle · egg</span>
         </a>
-        <a class="rl-card is-strong" href="preserved-radish.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="sauerkraut.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Sauerkraut</span>
+          <span class="rl-card-why">pickle · fermentation</span>
+        </a>
+        <a class="rl-card" href="preserved-radish.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Preserved radish (chai poh, 菜脯)</span>
           <span class="rl-card-why">pickle · fermentation</span>
         </a>
         <a class="rl-card" href="sui-mi-ya-cai.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Sui mi ya cai (碎米芽菜)</span>
-          <span class="rl-card-why">pickle · chinese</span>
-        </a>
-        <a class="rl-card" href="douchi.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Douchi (fermented black beans, 豆豉)</span>
-          <span class="rl-card-why">fermentation · chinese</span>
-        </a>
-        <a class="rl-card" href="doubanjiang.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Doubanjiang (Pixian chili bean paste, 郫县豆瓣酱)</span>
-          <span class="rl-card-why">fermentation · chinese</span>
-        </a>
-        <a class="rl-card" href="chinkiang-vinegar.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Chinkiang black vinegar (镇江香醋)</span>
-          <span class="rl-card-why">fermentation · chinese</span>
+          <span class="rl-card-why">pickle · umami</span>
         </a>
         </div>
       </div>

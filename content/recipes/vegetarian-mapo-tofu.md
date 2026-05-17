@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Vegetarian mapo tofu (sù má pó dòu fu)'
 desc: 'Mapo tofu rebuilt around mushroom umami: fresh shiitake browned to mushroom duxelles, dried shiitake stock as the cooking liquid, and the rest of the doubanjiang-douchi-Sichuan-peppercorn architecture intact. The mushroom granules sub for the beef granules with comparable textural and savory weight.'
 metaDesc: 'Vegetarian mapo tofu (sù má pó): mushroom-duxelles version of the Sichuan classic — dried-shiitake stock, fresh shiitake browned to substitute for ground beef, full mala flavor architecture preserved.'
-tags: ['chinese', 'spicy', 'umami', 'vegetable', 'one-pot']
+tags: ['spicy', 'umami', 'one-pot']
 updated: '2026-05-09'
 
 servings: 4

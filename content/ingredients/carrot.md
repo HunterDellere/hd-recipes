@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Carrot'
 desc: 'Taproot of Daucus carota subsp. sativus, the cultivated subspecies of the wild carrot. A sugar-and-pectin-rich orange (or purple, white, yellow) root that caramelizes to deep sweetness under high heat and softens to silk under long braise. The structural sweetness in French mirepoix, the bridge between savory and sweet in soup, glaze, and roast.'
 metaDesc: 'Carrot: pectin-and-sugar chemistry, caramelization behavior, role in French mirepoix, mirepoix-equivalent Japanese soup base, glazed vegetable applications.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.65
 updated: '2026-05-15'
 

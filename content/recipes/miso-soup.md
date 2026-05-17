@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Miso soup (miso-shiru)'
 desc: 'Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat through a small sieve to break up clumps, finished with rehydrated wakame, cubed silken tofu, and sliced scallion. The miso enters at the end and never sees a boil ,  that single rule separates good miso soup from flat miso soup.'
 metaDesc: 'Miso soup the right way: miso added off-heat, dashi base never boiled with miso, the tofu-and-wakame finish, and the rule that separates a working miso soup from a flat one.'
-tags: ['japanese', 'soup', 'umami', 'weeknight']
+tags: ['soup', 'umami', 'weeknight']
 updated: '2026-05-09'
 
 servings: 4

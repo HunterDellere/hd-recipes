@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Shimeji mushroom'
 desc: 'Hypsizygus tessellatus / Hypsizygus marmoreus; small clustered mushroom with a meaty bite and a faint shellfish-sweet note when seared. Bitter raw; transforms above 60°C.'
-tags: ['vegetable', 'umami', 'japanese']
+tags: ['umami']
 updated: '2026-04-29'
 
 usda_fdc_id: 168433

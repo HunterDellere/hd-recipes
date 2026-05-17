@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Roasted chickpea and cauliflower pita'
 desc: 'Spiced roasted chickpeas (cumin, coriander, smoked paprika) and 230 °C hard-roasted cauliflower stuffed into warm pita with a tahini-lemon sauce and a quick red cabbage slaw (raw cabbage massaged with lemon juice and salt for 5 minutes to wilt and tenderize). The handheld format works because every component contributes a specific texture: crispy chickpeas, caramelized cauliflower, creamy tahini, sharp acidic slaw, soft warm bread. A Mediterranean-leaning wrap that holds its structure for office lunches because the chickpeas stay crisp and the slaw stays crunchy for 4 hours wrapped in parchment.'
 metaDesc: 'Mediterranean roasted chickpea and cauliflower pita with tahini-lemon sauce and red cabbage slaw. Vegan handheld lunch, 45 minutes, holds for office lunches.'
-tags: ['mediterranean', 'wrap', 'vegetable', 'legume', 'lunch', 'make-ahead', 'healthy', 'roast']
+tags: ['wrap', 'make-ahead', 'roast']
 updated: '2026-05-17'
 
 servings: 4

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Millet (pearl millet, foxtail millet, finger millet)'
 desc: 'A family of small-seeded grasses cultivated for their grains across West Africa, South Asia, and East Asia. The kernels are gluten-free, faintly sweet, and cook to a couscous-like crumb or a polenta-like porridge depending on water ratio.'
 metaDesc: 'Millet: pearl, foxtail, and finger varieties, gluten-free chemistry, water ratios for couscous-crumb versus porridge, applications across West African thiakry, Indian bajra roti, and Chinese xiaomi congee.'
-tags: ['grain', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.74
 updated: '2026-05-10'
 

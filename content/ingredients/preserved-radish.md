@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Preserved radish (chai poh, 菜脯)'
 desc: 'Daikon radish dry-cured in salt then sun-dried into a deeply savory, chewy, salt-and-umami concentrate. Sold whole, sliced, or diced; reaches across Chinese, Taiwanese, and Southeast Asian cooking as a small-volume high-impact ingredient.'
 metaDesc: 'Preserved radish (chai poh, sweet radish, salt radish): cure chemistry, sweet vs salt grades, role in congee, fried rice, omelets, and noodle dishes.'
-tags: ['vegetable', 'pantry', 'pickle', 'fermentation', 'chinese', 'umami', 'make-ahead']
+tags: ['pantry', 'pickle', 'fermentation', 'umami', 'make-ahead']
 updated: '2026-05-09'
 
 about: |

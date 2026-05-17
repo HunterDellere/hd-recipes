@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Light soy sauce (生抽)'
 desc: 'The first pressing of Chinese soy fermentation. Light in color and body, not in salt; carries the bulk of the salinity and glutamates that make soy sauce read as umami.'
 metaDesc: 'Light soy sauce (sheng chou): the first pressing of fermented soybeans and wheat. The chemistry, the role across cuisines, and how to substitute shoyu or tamari.'
-tags: ['umami', 'chinese', 'sauce']
+tags: ['umami']
 density_g_per_ml: 1.18
 imperial_pref: 'tbsp'
 updated: '2026-04-29'

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dried shiitake mushroom (donko, hoshi shiitake)'
 desc: 'Lentinula edodes, the shiitake mushroom, dried to roughly 10% of its fresh weight. The drying intensifies the umami compounds (lentinionic acid and free glutamates, plus the guanylate nucleotide that creates the most powerful umami synergy in any vegetable). The canonical mushroom of Chinese, Japanese, and Korean cooking, the structural umami of Buddhist shōjin cuisine, and the dashi component in vegetarian Japanese dashi.'
 metaDesc: 'Dried shiitake mushroom (donko, hoshi shiitake): umami nucleotide chemistry, rehydration technique, role in vegetarian dashi, Chinese braises, Korean banchan, and Buddhist shōjin cuisine.'
-tags: ['mushroom', 'pantry', 'japanese', 'chinese', 'korean', 'umami']
+tags: ['pantry', 'umami']
 density_g_per_ml: 0.25
 updated: '2026-05-15'
 

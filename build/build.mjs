@@ -325,6 +325,7 @@ for (const e of entries) {
   }
 }
 const reverseLinks = computeReverseLinks(entries);
+for (const e of entries) enrichEntry(e, { ...reverseLinks, ingHasNutrition });
 
 const relations = buildRelations(entries);
 const adjacency = buildAdjacency(entries);
@@ -363,37 +364,6 @@ const nutritionByPath = {};
 // Build responsive image variants for any photos under content/images/recipes/<slug>/
 const recipeImages = await buildRecipeImages(ROOT);
 
-// Precompute nutrition for every recipe and a hero-image path for every recipe
-// that has one. We do this BEFORE enrichEntry so the card swatch can substitute
-// the hero image and so the stat-pill row can show per-serving kcal.
-const heroByPath = {};
-for (const e of entries) {
-  if (e.type !== 'recipe') continue;
-  // Nutrition (cheap; results live in usdaCache → no network).
-  const fm = e._fm || {};
-  try {
-    nutritionByPath[e.path] = roundNutritionWrap(computeRecipeNutrition(fm, ingredientBySlug, usdaCache));
-  } catch {
-    // computeRecipeNutrition is defensive; if it throws for an edge case
-    // (e.g. malformed ingredient row), skip nutrition for this recipe and
-    // let the page render without kcal on its card.
-  }
-  // Hero image path — pick the 960w webp if present; the renderer falls
-  // back to whatever the largest variant is. Stored as a repo-relative
-  // path; client uses it directly (browser resolves), build pages use
-  // cards.mjs::relPath against `fromPath`.
-  const imgs = recipeImages.get(e._slug);
-  if (imgs && imgs.hero && imgs.hero.variants && imgs.hero.variants.webp) {
-    const variants = imgs.hero.variants.webp;
-    const pick = variants.find(v => v.width >= 480) || variants[variants.length - 1] || variants[0];
-    if (pick) heroByPath[e.path] = `assets/images/recipes/${e._slug}/hero-${pick.width}.webp`;
-  }
-}
-
-// Enrich entries (swatch, time framing, kcal, hero) AFTER images + nutrition
-// are computed. Family pages and related sections all read from _card.
-for (const e of entries) enrichEntry(e, { ...reverseLinks, ingHasNutrition, nutritionByPath, heroByPath });
-
 let built = 0;
 let autoLinkCount = 0;
 
@@ -419,8 +389,9 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
           ingredientBySlug, techniqueBySlug,
         }, 8);
         // Explicit author pairings come first and never get dropped. Auto
-        // pairings fill the remaining slots up to a cap of 8; any path
-        // already covered by an explicit entry is filtered out.
+        // pairings fill the remaining slots up to a cap of 8, with any path
+        // already covered by an explicit entry filtered out so we don't
+        // double-list the same target.
         const explicitPairings = [];
         for (const p of (fm.pairings || [])) {
           if (!p || !p.recipe || !p.reason) continue;
@@ -429,12 +400,19 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
           const target = entriesByPath.get(refPath);
           if (!target) continue;
           explicitPairings.push({
-            path: target.path, title: target.title, category: target.category, type: target.type,
-            desc: target.desc, reason: p.reason, score: 1000, explicit: true,
+            path: target.path,
+            title: target.title,
+            category: target.category,
+            type: target.type,
+            desc: target.desc,
+            reason: p.reason,
+            score: 1000,
+            explicit: true,
           });
         }
         const explicitPaths = new Set(explicitPairings.map(p => p.path));
-        const pairings = [...explicitPairings, ...autoPairings.filter(p => !explicitPaths.has(p.path))].slice(0, 8);
+        const merged = [...explicitPairings, ...autoPairings.filter(p => !explicitPaths.has(p.path))].slice(0, 8);
+        const pairings = merged;
         augmentedBody = renderRecipeBody(fm, slug, category, {
           ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition,
           inHubs: reverseLinks.inHubs.get(entry.path) || [],
@@ -558,16 +536,24 @@ for (const [tagSlug, tagEntries] of tagToEntries.entries()) {
 }
 
 // ── In-season this month (computed BEFORE we strip _fm) ──────────────
-// Parses each ingredient's `seasonality:` string for month ranges; surfaces
+// Parse each ingredient's `seasonality:` string for month ranges; surface
 // recipes that lean on 2+ in-season ingredients. Built fresh on every
-// build (current month = build month). The homepage section hides itself
-// when the recipes array is empty.
+// `npm run build` (current month = build month). Empty arrays when nothing
+// meaningful matches; the homepage hides its section in that case.
 const inSeasonJson = (() => {
   const MONTH_INDEX = {
-    jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2,
-    apr: 3, april: 3, may: 4, jun: 5, june: 5, jul: 6, july: 6,
-    aug: 7, august: 7, sep: 8, sept: 8, september: 8,
-    oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11,
+    jan: 0, january: 0,
+    feb: 1, february: 1,
+    mar: 2, march: 2,
+    apr: 3, april: 3,
+    may: 4,
+    jun: 5, june: 5,
+    jul: 6, july: 6,
+    aug: 7, august: 7,
+    sep: 8, sept: 8, september: 8,
+    oct: 9, october: 9,
+    nov: 10, november: 10,
+    dec: 11, december: 11,
   };
   function parseRanges(text) {
     if (!text) return null;
@@ -596,8 +582,8 @@ const inSeasonJson = (() => {
   const inSeasonSlugs = new Set();
   for (const e of entries) {
     if (e.type !== 'ingredient') continue;
-    const text = e._fm && e._fm.seasonality;
-    const parsed = parseRanges(text);
+    const seasonalityText = e._fm && e._fm.seasonality;
+    const parsed = parseRanges(seasonalityText);
     if (!parsed || parsed === 'year-round') continue;
     if (monthInRanges(currentMonth, parsed)) {
       inSeasonSlugs.add(e._slug);

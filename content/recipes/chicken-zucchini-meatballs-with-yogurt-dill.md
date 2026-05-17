@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chicken-zucchini meatballs with yogurt-dill'
 desc: 'Ground chicken thigh mixed with salt-drained grated zucchini, grated onion, garlic, lemon zest, fresh dill, and a small panade of breadcrumbs hydrated in milk. The zucchini contributes moisture that keeps the lean chicken from drying out during the bake, and the panade traps that moisture in a starch matrix that releases gradually as the meatballs cook. Baked at 220 °C on parchment-lined sheet pans (no frying, no nonstick), served with a cold lemon-dill yogurt sauce that doubles as both dressing and dip. Mediterranean leaning, weeknight feasible, the meatballs hold beautifully for next-day lunches.'
 metaDesc: 'Mediterranean chicken-zucchini meatballs baked at 220°C with salt-drained zucchini for moisture. Served with cold yogurt-dill sauce. Healthy weeknight dinner.'
-tags: ['mediterranean', 'chicken', 'meatballs', 'weeknight', 'make-ahead', 'healthy']
+tags: ['chicken', 'meatballs', 'weeknight', 'make-ahead']
 updated: '2026-05-17'
 
 servings: 4

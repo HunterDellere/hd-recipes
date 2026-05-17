@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ras malai (chhena dumplings in saffron-cardamom milk)'
 desc: 'Fresh chhena (acid-set whole-milk curds, drained and kneaded) shaped into small discs, gently simmered in light sugar syrup until they puff and float, then transferred to reduced milk perfumed with cardamom, saffron, and pistachio. Bengali in origin, North Indian and Pakistani by adoption, served chilled at every wedding and festival on the subcontinent.'
 metaDesc: 'Ras malai: chhena dumplings simmered in syrup, soaked in saffron-cardamom-pistachio reduced milk. Bengali origin, the textbook subcontinental wedding sweet.'
-tags: ['indian', 'pakistani', 'dessert']
+tags: []
 updated: '2026-05-09'
 
 servings: 8

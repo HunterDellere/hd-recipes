@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tea drinks'
 desc: 'Extraction is the technique. Each of these gets the leaf right before it gets anything else right.'
 metaDesc: 'Tea drinks: a curated reading path through extraction technique — chai bloom, hard tannin pulls, balanced sweetness — ordered foundation first.'
-tags: ['tea', 'drink']
+tags: []
 updated: '2026-04-26'
 
 members:

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Indian'
 desc: 'Spice as a layered system, not a heat dial. Each spice enters at a specific moment (bloomed in fat, ground dry, added raw at the end) because the volatile compounds respond differently to heat at different stages.'
 metaDesc: 'Indian cooking on hd-recipes: the spice-layering logic, the masala principle, and where the current catalog starts. Ordered by technique, not by region.'
-tags: ['indian']
+tags: []
 updated: '2026-04-27'
 ---
 

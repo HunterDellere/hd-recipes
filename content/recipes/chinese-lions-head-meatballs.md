@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chinese lion''s head meatballs (shīzi tóu)'
 desc: 'Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion of water and finely diced water chestnut produces a tender, juicy meatball that sits among a bed of napa cabbage and braises in a clear soy-and-rice-wine broth for an hour. The dish is named for the appearance of the meatballs nestled in the cabbage, the round meatball is the lion''s head, the wilted napa around it is the mane. The technique is structurally different from Italian or Thai meatballs: more water is bound into the meat by extended hand-paddling that extracts myosin, the meatballs are barely seared (just enough to set the surface) before going into the braise, and the long slow cook produces a texture closer to silky tofu than to the dense, springy meatballs of other traditions.'
 metaDesc: 'Chinese lion''s head meatballs (shīzi tóu): Huaiyang-style large braised pork meatballs with water chestnut, napa cabbage, and a clear soy-and-rice-wine broth. The high-water, low-sear technique produces a uniquely tender texture.'
-tags: ['chinese', 'huaiyang', 'jiangsu', 'pork', 'braised', 'umami', 'banquet']
+tags: ['pork', 'umami']
 updated: '2026-05-15'
 
 servings: 4

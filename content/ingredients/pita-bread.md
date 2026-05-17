@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pita bread'
 desc: 'A round, leavened wheat flatbread that puffs into a hollow pocket during a high-heat bake. The structural bread of the Levant, Eastern Mediterranean, and parts of Anatolia.'
 metaDesc: 'Pita bread: the steam-puff mechanism that creates the hollow pocket, Lebanese vs Greek thickness, why day-old pita is the right pita for fattoush, and storage that holds the texture.'
-tags: ['bread', 'levantine', 'pantry']
+tags: ['bread', 'pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 0.35

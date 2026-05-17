@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chè trôi nước (glutinous rice balls in ginger syrup)'
 desc: 'Chewy glutinous rice balls filled with sweet mashed mung bean, floated in a fresh ginger syrup and crowned with coconut cream. The Vietnamese cousin of tang yuan, eaten at Lunar New Year and the lunar 3rd-of-3rd festival.'
 metaDesc: 'Chè trôi nước, chewy glutinous rice balls with mung bean filling, ginger syrup, and coconut cream. Vietnamese tang yuan tradition.'
-tags: ['che', 'vietnamese-dessert', 'vietnamese', 'dessert', 'glutinous-rice', 'legume-dessert', 'coconut', 'holiday']
+tags: ['che', 'glutinous-rice', 'legume-dessert', 'holiday']
 updated: '2026-05-16'
 
 servings: 4

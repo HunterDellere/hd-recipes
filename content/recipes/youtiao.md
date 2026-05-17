@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Youtiao (Chinese fried dough sticks)'
 desc: 'The canonical Chinese breakfast bread: a yeasted-and-leavened wheat dough cut into long strips, paired in twos, and deep-fried into hollow shatteringly-crisp golden batons. Eaten torn into hot congee or dipped in warm soy milk. Stub.'
 metaDesc: 'Youtiao recipe: Chinese fried breakfast crullers. Yeasted-and-leavened wheat dough, paired-strip frying technique, the canonical congee accompaniment. Stub recipe.'
-tags: ['bread', 'chinese', 'breakfast', 'comfort']
+tags: ['bread', 'comfort']
 updated: '2026-05-08'
 
 servings: 8

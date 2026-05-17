@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Bay leaf (tej patta, तेज पत्ता)'
 desc: 'Dried leaves of Laurus nobilis (European bay) or Cinnamomum tamala (Indian bay, also called tej patta or malabar leaf). Used whole as an aromatic in long-simmered dishes. Indian bay is structurally different from European bay: closer to cinnamon-clove than to camphor-pine.'
 metaDesc: 'Bay leaf: European Laurus nobilis vs Indian Cinnamomum tamala (tej patta), the distinct aromatic differences and when each belongs in which dish.'
-tags: ['herb', 'aromatic', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.20
 updated: '2026-05-09'
 

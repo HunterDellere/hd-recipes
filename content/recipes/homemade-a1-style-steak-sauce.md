@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade A1-style steak sauce'
 desc: 'A from-scratch take on the dark, tangy, fruit-and-spice steak sauce that A1 has owned the category on since the 1820s. Tomato paste base reduced with raisins, orange juice, tamarind, malt and white vinegars, soy sauce, mustard, anchovy, and warm spices, then blended into a thick chunky-glossy condiment. Refrigerator-improves dramatically over two weeks as the fruit acids and spices integrate.'
 metaDesc: 'Homemade A1 steak sauce copycat recipe with tomato paste, raisins, tamarind, orange, vinegar, soy, anchovy. Multi-week refrigerator-improving sauce.'
-tags: ['condiment', 'sauce', 'copycat', 'american', 'umami', 'make-ahead', 'pantry', 'tomato']
+tags: ['condiment', 'copycat', 'umami', 'make-ahead', 'pantry']
 updated: '2026-05-17'
 
 servings: 16

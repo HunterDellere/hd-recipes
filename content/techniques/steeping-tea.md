@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Steeping tea'
 desc: 'Extract polyphenols, theanine, and tannins from tea leaves on a time-and-temperature curve that the leaf grade dictates.'
 metaDesc: 'Steeping tea: the extraction curve for polyphenols, theanine, and tannins; how CTC and orthodox leaves behave differently; how to stop before bitterness.'
-tags: ['tea']
+tags: []
 updated: '2026-04-26'
 
 about: |

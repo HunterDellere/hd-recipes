@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Toasted glutinous-rice powder (khao khua)'
 desc: 'Raw glutinous rice dry-toasted in a hot skillet to amber, cooled, and ground coarse. The structural element of larb, nam tok, and many Lao dipping sauces; the powder hydrates in the dish dressing and thickens it to a clinging slurry. Aromatic compounds (popcorn pyrazines, toasted-bread furans) develop in the toast and fade quickly once ground; freshly toasted khao khua is dramatically better than commercial pre-ground versions.'
 metaDesc: 'Toasted glutinous-rice powder (khao khua) at home: 6 to 8 minutes in a dry skillet, cool, mortar-grind to coarse sand. Amber color cue, popcorn aroma, structural starch for larb and nam tok.'
-tags: ['pantry', 'thai', 'grain']
+tags: ['pantry']
 updated: '2026-05-10'
 
 servings: 4

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Green cardamom (elaichi, छोटी इलायची)'
 desc: 'Pale green pods of Elettaria cardamomum containing 8 to 12 sticky black seeds. Aromatic top note of South Asian sweets, biryanis, masala chai, and Scandinavian baking. The aromatic compounds are in the seeds, not the pod; cracked or whole pods release more flavor than ground supermarket cardamom.'
 metaDesc: 'Green cardamom: terpinyl-acetate aromatic chemistry, role across Indian sweets, biryanis, masala chai, Scandinavian breads. Pods vs ground, when to use which.'
-tags: ['spice', 'aromatic', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.40
 updated: '2026-05-09'
 

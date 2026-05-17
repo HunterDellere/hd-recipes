@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sweetened condensed milk'
 desc: 'Cow''s milk reduced by ~60% with ~45% added sugar. The sugar is structural: it shelf-stabilizes the can by osmotic pressure and binds the protein-fat-water emulsion together.'
 metaDesc: 'Sweetened condensed milk: reduced milk plus 45% sugar. How osmotic pressure shelf-stabilizes it, why it emulsifies, and where it shows up across cuisines.'
-tags: ['dairy']
+tags: []
 density_g_per_ml: 1.27
 updated: '2026-04-29'
 

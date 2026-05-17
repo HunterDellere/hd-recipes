@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Nicoise olives'
 desc: 'Cailletier-cultivar olives from the Var and Alpes-Maritimes regions of southeastern France, brine-cured with herbs. Small, dark-purple to black, with a high pit-to-flesh ratio and a wine-like cured note.'
 metaDesc: 'Nicoise olives: Cailletier cultivar, Provençal brine cure, the herbal aromatic profile, plate vs cooking applications, and how they differ from kalamatas.'
-tags: ['mediterranean', 'french', 'pantry', 'umami']
+tags: ['pantry', 'umami']
 updated: '2026-05-10'
 
 grams_per_unit: 2

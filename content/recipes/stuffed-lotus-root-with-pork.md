@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Stuffed lotus root with pork'
 desc: 'Lotus root rings with seasoned ground pork pressed into the air channels, pan-seared to set, then braised in soy-aromatic broth until the lotus softens and the pork has bound the rings together. The Cantonese braised version; Hunan deep-fries the same construction.'
 metaDesc: 'Stuffed lotus root recipe: pork-stuffed rings braised in soy-ginger broth (Cantonese). Modifications cover Hunan deep-fried and Sichuan numbing-spicy variants.'
-tags: ['pork', 'chinese', 'umami', 'comfort', 'weekend-project']
+tags: ['pork', 'umami', 'comfort', 'weekend-project']
 updated: '2026-05-09'
 
 servings: 4

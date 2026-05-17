@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Beet greens'
 desc: 'Tender leafy tops of Beta vulgaris, the same species as Swiss chard. Mineral-iron-forward, mildly bitter, with red-veined stems that read sweeter than the leaves. Cooks like chard but faster; the stems and the leaves are two textures on one plant and want staged cooking.'
 metaDesc: 'Beet greens (Beta vulgaris leaves): the chard-cousin chemistry, oxalic acid and the calcium-pairing logic, stem-and-leaf staging in the pan, and substitution map for sauté and braise applications.'
-tags: ['vegetable', 'mediterranean', 'italian']
+tags: []
 updated: '2026-05-14'
 
 usda_fdc_id: 169995

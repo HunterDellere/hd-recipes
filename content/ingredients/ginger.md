@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Ginger (fresh)'
 desc: 'Rhizome of Zingiber officinale. Sharp, peppery heat from gingerol when raw; mellower and sweeter (zingerone) when cooked.'
-tags: ['aromatic', 'spice']
+tags: []
 updated: '2026-04-26'
 
 usda_fdc_id: 169231

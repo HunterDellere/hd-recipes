@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salsa macha'
 desc: 'The Veracruzan fried-chili-and-nut-and-seed oil sauce: dried chiles (a mix of morita, chile de árbol, and ancho or pasilla), garlic, peanuts, sesame seeds, and pepitas, fried briefly in warm neutral oil and ground to a coarse paste, with vinegar, salt, and a small amount of sugar for balance. Structurally an oil-suspended chili paste with crunchy textural ingredients, served as a condiment with everything from tacos and grilled meat to eggs, beans, soups, cheese, and roasted vegetables. The most cuisine-flexible Mexican salsa and the only one that travels naturally across non-Mexican applications.'
 metaDesc: 'Salsa macha: the Veracruzan fried chili-and-nut oil sauce (morita, árbol, ancho chilies, garlic, peanuts, sesame, pepitas, oil, vinegar). The crunchy Mexican condiment for tacos, eggs, beans, grilled meat, vegetables, and cheese.'
-tags: ['sauce', 'mexican', 'spicy', 'pantry', 'make-ahead', 'umami', 'nuts', 'fat']
+tags: ['spicy', 'pantry', 'make-ahead', 'umami']
 updated: '2026-05-15'
 
 servings: 16

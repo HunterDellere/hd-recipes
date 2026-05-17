@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cauliflower'
 desc: 'Brassica oleracea var. botrytis. The flower head of a cabbage-family cultivar that has been bred to produce dense aborted-flower clusters instead of leafy growth. Sweet, sulfurous, and aggressively browning when cooked dry.'
 metaDesc: 'Cauliflower: brassica chemistry, browning behavior, cuts that hold and cuts that crumble, role in Indian gobi, Sichuan dry-pot, Mediterranean roasting.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.45
 updated: '2026-05-09'
 

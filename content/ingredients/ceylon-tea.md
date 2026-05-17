@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Ceylon black tea'
 desc: 'Sri Lankan black tea grown across multiple elevations. Bright, citrus-tinged, less malty than Assam; the standard tea for Thai iced tea, kahve-style Middle Eastern preparations, and milk-forward Western blends.'
-tags: ['tea', 'asian']
+tags: []
 density_g_per_ml: 0.3
 imperial_pref: 'tsp'
 updated: '2026-05-16'

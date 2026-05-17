@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Extra-virgin olive oil'
 desc: 'Cold-pressed olive juice with free-acidity below 0.8 percent. The structural fat of Mediterranean cooking, the aromatic finish of countless dishes, and the single most adulterated commodity in the global pantry.'
 metaDesc: 'Extra-virgin olive oil: cold-press chemistry, harvest dates, smoke point myths, the polyphenol-driven peppery finish, and how to spot the real bottle in a supermarket of imitations.'
-tags: ['fat', 'mediterranean', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.91
 imperial_pref: 'tbsp'
 updated: '2026-05-09'

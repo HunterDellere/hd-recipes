@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Acid-milk souring'
 desc: 'Add a food acid (vinegar or lemon juice) to whole milk — casein micelles destabilize, viscosity rises, and the liquid is now functionally equivalent to buttermilk for leavening and batter behavior.'
-tags: ['dairy', 'acid']
+tags: []
 updated: '2026-05-04'
 
 about: |

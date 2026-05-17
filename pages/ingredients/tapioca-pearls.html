@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Tapioca pearls (boba)","status":"complete","tags":["boba","starch","taiwanese"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Tapioca pearls (boba)","status":"complete","tags":["boba","starch"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -105,18 +107,10 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">black tapioca pearls</span>
-          <span class="sub-card-use">white tapioca pearls + 1 tbsp brown sugar in cooking water</span>
-          <p class="sub-card-note">Color is the only meaningful difference. White pearls cooked in sugar water pick up amber tone.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">commercial pearls</span>
-          <span class="sub-card-use">recipes/homemade-tapioca-pearls-black</span>
-          <p class="sub-card-note">Homemade pearls take 90 minutes of work but yield a fresher, less starchy bite. See recipe.</p>
-        </li>
+        <li><strong>black tapioca pearls</strong> → white tapioca pearls + 1 tbsp brown sugar in cooking water <span class="sub-note">Color is the only meaningful difference. White pearls cooked in sugar water pick up amber tone.</span></li>
+        <li><strong>commercial pearls</strong> → recipes/homemade-tapioca-pearls-black <span class="sub-note">Homemade pearls take 90 minutes of work but yield a fresher, less starchy bite. See recipe.</span></li>
     </ul>
 
     
@@ -140,28 +134,20 @@
       <div class="rl-group" data-related-group="recipes">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">5</span>
+          <span class="rl-group-count">3</span>
         </h3>
         <div class="rl-cards rl-cards--recipes">
         <a class="rl-card is-strong" href="../recipes/homemade-tapioca-pearls-black.html" data-category="recipes" data-reason="tag">
           <span class="rl-card-title">Homemade black tapioca pearls (boba)</span>
-          <span class="rl-card-why">starch · boba</span>
+          <span class="rl-card-why">boba · starch</span>
         </a>
-        <a class="rl-card is-strong" href="../recipes/brown-sugar-milk-tea-with-boba.html" data-category="recipes" data-reason="tag">
+        <a class="rl-card" href="../recipes/brown-sugar-milk-tea-with-boba.html" data-category="recipes" data-reason="tag">
           <span class="rl-card-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
-          <span class="rl-card-why">boba · taiwanese</span>
-        </a>
-        <a class="rl-card" href="../recipes/homemade-crystal-boba.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Homemade crystal boba (agar pearls)</span>
-          <span class="rl-card-why">boba · taiwanese</span>
+          <span class="rl-card-why">boba</span>
         </a>
         <a class="rl-card" href="../recipes/taro-milk-tea-with-boba.html" data-category="recipes" data-reason="tag">
           <span class="rl-card-title">Taro milk tea with boba (real taro, no powder)</span>
-          <span class="rl-card-why">boba · taiwanese</span>
-        </a>
-        <a class="rl-card" href="../recipes/homemade-popping-boba.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Homemade popping boba (reverse spherification)</span>
-          <span class="rl-card-why">boba · taiwanese</span>
+          <span class="rl-card-why">boba</span>
         </a>
         </div>
       </div>
@@ -169,19 +155,27 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">3</span>
+          <span class="rl-group-count">5</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card" href="glutinous-rice-flour.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Glutinous rice flour</span>
+        <a class="rl-card is-strong" href="green-plantain.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Green plantain</span>
           <span class="rl-card-why">starch</span>
         </a>
-        <a class="rl-card" href="tapioca-starch.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="tapioca-starch.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Tapioca starch</span>
           <span class="rl-card-why">starch</span>
         </a>
         <a class="rl-card" href="taro.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Taro root</span>
+          <span class="rl-card-why">starch</span>
+        </a>
+        <a class="rl-card" href="glutinous-rice-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Glutinous rice flour</span>
+          <span class="rl-card-why">starch</span>
+        </a>
+        <a class="rl-card" href="banh-trang.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Banh trang (Vietnamese rice paper)</span>
           <span class="rl-card-why">starch</span>
         </a>
         </div>

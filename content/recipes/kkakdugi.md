@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Kkakdugi'
 desc: 'Cubed daikon radish kimchi, salt-drawn for 30 minutes to firm the cube structure, tossed with a gochugaru-fish sauce paste, and lacto-fermented 2 to 4 days at room temperature for a crunchier, faster-active counterpart to napa cabbage kimchi.'
 metaDesc: 'Kkakdugi cubed radish kimchi: 30-minute salt draw, gochugaru paste, 2 to 4 day ambient ferment, indefinite cold storage. Crunchier and faster than baechu kimchi.'
-tags: ['fermentation', 'korean', 'pickle', 'side', 'make-ahead', 'umami', 'spicy', 'vegetable']
+tags: ['fermentation', 'pickle', 'make-ahead', 'umami', 'spicy']
 updated: '2026-05-17'
 
 servings: 16

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'White pepper'
 desc: 'The fully ripened Piper nigrum drupe, fermented to break down the outer fruit, then dried as the inner seed alone. Floral, fermented, barnyard. A different spice from black pepper, not a milder version.'
 metaDesc: 'White pepper: fermented Piper nigrum seed. Why it reads as funky-floral rather than as a mild black pepper, the role across Asian and European cuisines, and how to buy and grind it.'
-tags: ['spice', 'aromatic', 'chinese']
+tags: []
 density_g_per_ml: 0.45
 imperial_pref: 'tsp'
 updated: '2026-04-29'

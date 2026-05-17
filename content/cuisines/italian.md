@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Italian'
 desc: 'Restraint plus fat: olive oil, cured pork, aged cheese, acid. The technique is in the ratios, not the ingredient count.'
 metaDesc: 'Italian cooking: the flavor logic, the working pantry, and where to start. Curated by technique, not by region.'
-tags: ['italian']
+tags: []
 updated: '2026-04-26'
 ---
 

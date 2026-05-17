@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dry white wine (for cooking)'
 desc: 'Fermented grape wine, white, dry (residual sugar under 4 g/L), 11 to 13 percent alcohol, with acidity at 6 to 8 g/L (tartaric). The default acid-aromatic deglaze and braising liquid in French, Italian, and Spanish cooking; not "cooking wine," which is salted and degraded.'
 metaDesc: 'Dry white wine for cooking: the acidity that matters more than the brand, the volatile compounds that survive the burn-off, applications across French and Italian seafood, pan sauces, risotto, and beurre blanc, and the rule that distinguishes cooking wine from cooking with wine.'
-tags: ['acid', 'fat']
+tags: []
 density_g_per_ml: 0.99
 updated: '2026-05-10'
 

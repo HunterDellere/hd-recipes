@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chick-fil-A Polynesian sauce (homemade copycat)'
 desc: 'The sweet-sour orange-tinted dipping sauce. Ketchup, vinegar, sugar, mustard, and a small pinch of warm spice; tastes like a Catalina dressing crossed with a sweet-and-sour glaze. Pure pantry-and-ten-minutes build.'
 metaDesc: 'Chick-fil-A Polynesian sauce copycat, homemade sweet-and-sour orange dipping sauce with ketchup, vinegar, mustard, paprika.'
-tags: ['condiment', 'sauce', 'copycat', 'fast-food', 'american', 'no-cook', 'quick']
+tags: ['condiment', 'copycat', 'no-cook', 'quick']
 updated: '2026-05-16'
 
 servings: 8

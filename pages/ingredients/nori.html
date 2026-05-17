@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Nori (laver sheets)","status":"complete","tags":["umami","japanese","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Nori (laver sheets)","status":"complete","tags":["umami","pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">nori (sushi rolls, onigiri wrappers)</span>
-          <span class="sub-card-use">no good substitute</span>
-          <p class="sub-card-note">The pressed-sheet form factor and toasted flavor have no direct analog. If nori is unavailable, make a different rice dish rather than improvising a wrapper.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">nori (ribbon-cut topping for ramen, donburi)</span>
-          <span class="sub-card-use">shredded wakame (rehydrated) or aonori (powdered green seaweed)</span>
-          <p class="sub-card-note">Different texture and flavor ,  wakame is silky and mild, aonori is grassy and powdery ,  but plays the same surface-umami role. Aonori is the right choice for okonomiyaki and yakisoba topping; wakame for soup-based bowls.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">nori (furikake, crumbled into rice seasoning)</span>
-          <span class="sub-card-use">aonori (green seaweed powder) plus toasted sesame seeds</span>
-          <p class="sub-card-note">Aonori carries the seaweed flavor in a more concentrated, grassier form; the sesame adds the textural element nori usually contributes. Common pairing in commercial furikake.</p>
-        </li>
+        <li><strong>nori (sushi rolls, onigiri wrappers)</strong> → no good substitute <span class="sub-note">The pressed-sheet form factor and toasted flavor have no direct analog. If nori is unavailable, make a different rice dish rather than improvising a wrapper.</span></li>
+        <li><strong>nori (ribbon-cut topping for ramen, donburi)</strong> → shredded wakame (rehydrated) or aonori (powdered green seaweed) <span class="sub-note">Different texture and flavor ,  wakame is silky and mild, aonori is grassy and powdery ,  but plays the same surface-umami role. Aonori is the right choice for okonomiyaki and yakisoba topping; wakame for soup-based bowls.</span></li>
+        <li><strong>nori (furikake, crumbled into rice seasoning)</strong> → aonori (green seaweed powder) plus toasted sesame seeds <span class="sub-note">Aonori carries the seaweed flavor in a more concentrated, grassier form; the sesame adds the textural element nori usually contributes. Common pairing in commercial furikake.</span></li>
     </ul>
 
     
@@ -142,54 +132,49 @@
           <span class="rl-card-title">Salmon rice bowl with quick cucumber</span>
           
         </a>
+        <a class="rl-card" href="../recipes/shoyu-ramen-from-scratch.html" data-category="recipes">
+          <span class="rl-card-title">Shoyu ramen from scratch</span>
+          
+        </a>
     </div>
   
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
-      <div class="rl-group" data-related-group="recipes">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/ponzu.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Ponzu</span>
-          <span class="rl-card-why">japanese · umami</span>
-        </a>
-        </div>
-      </div>
-
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
+        <a class="rl-card is-strong" href="black-beans.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Black beans (frijoles negros)</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="canned-san-marzano-tomatoes.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Canned San Marzano tomatoes</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="chaat-masala.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Chaat masala</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="dried-porcini.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Dried porcini</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="dried-shiitake.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Dried shiitake mushroom (donko, hoshi shiitake)</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
         <a class="rl-card is-strong" href="kombu.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Kombu (dried kelp)</span>
-          <span class="rl-card-why">japanese · umami</span>
+          <span class="rl-card-why">umami · pantry</span>
         </a>
-        <a class="rl-card is-strong" href="mirin.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mirin (hon-mirin)</span>
-          <span class="rl-card-why">japanese · umami</span>
-        </a>
-        <a class="rl-card is-strong" href="wakame.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Wakame (dried sea vegetable)</span>
-          <span class="rl-card-why">japanese · umami</span>
-        </a>
-        <a class="rl-card" href="panko.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Panko</span>
-          <span class="rl-card-why">japanese · pantry</span>
-        </a>
-        <a class="rl-card" href="sake.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sake (cooking)</span>
-          <span class="rl-card-why">japanese · pantry</span>
-        </a>
-        <a class="rl-card" href="katsuobushi.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Katsuobushi (dried bonito flakes)</span>
-          <span class="rl-card-why">japanese · umami</span>
+        <a class="rl-card is-strong" href="mayonnaise.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Mayonnaise</span>
+          <span class="rl-card-why">umami · pantry</span>
         </a>
         </div>
       </div>
@@ -200,9 +185,9 @@
           <span class="rl-group-count">1</span>
         </h3>
         <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/dashi.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Dashi (kombu and katsuobushi extraction)</span>
-          <span class="rl-card-why">japanese · umami</span>
+        <a class="rl-card" href="../techniques/tamarind-souring.html" data-category="techniques" data-reason="tag">
+          <span class="rl-card-title">Tamarind souring (sour-broth extraction and balance)</span>
+          <span class="rl-card-why">umami · pantry</span>
         </a>
         </div>
       </div>

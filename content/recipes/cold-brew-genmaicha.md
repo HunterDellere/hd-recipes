@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cold-brew genmaicha (overnight)'
 desc: 'Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted-rice aromatics without the tannic bite of hot brewing, produces a tea that drinks smoother than it has any right to.'
 metaDesc: 'Cold-brew genmaicha, overnight cold steep of Japanese green tea with toasted brown rice, for a smooth low-tannin summer tea.'
-tags: ['drink', 'tea', 'japanese', 'cold-brew', 'no-cook', 'make-ahead']
+tags: ['cold-brew', 'no-cook', 'make-ahead']
 updated: '2026-05-16'
 
 servings: 4

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chinese staples'
 desc: 'The dishes that teach the Chinese pantry: the light/dark soy distinction, Chinkiang acid, Sichuan má-là, and sesame-paste body.'
 metaDesc: 'Chinese staples: a curated reading path through the pantry — soy, Chinkiang, Sichuan peppercorn, sesame paste — ordered from foundation to riff.'
-tags: ['chinese']
+tags: []
 updated: '2026-04-26'
 
 members:

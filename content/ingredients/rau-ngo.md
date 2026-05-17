@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Rau ngổ (rice paddy herb)'
 desc: 'Small-leaved aquatic herb (Limnophila aromatica) native to Southeast Asia, with a citrus-cumin top note from limonene and cuminaldehyde. The defining finishing herb of southern Vietnamese canh chua and several Khmer and Lao sour soups, with no exact substitute.'
 metaDesc: 'Rau ngổ (rice paddy herb, Limnophila aromatica): limonene-cuminaldehyde aromatics, role as the canh chua signature herb, sourcing, substitution challenges.'
-tags: ['herb']
+tags: []
 updated: '2026-05-10'
 
 about: |

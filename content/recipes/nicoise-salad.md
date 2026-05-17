@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salade niçoise'
 desc: 'Oil-poached tuna, blanched haricots verts, jammy egg, salt-cured tomato, and nicoise olives over an anchovy-dijon vinaigrette. Composed, not tossed; every component salted on its own terms.'
 metaDesc: 'Salade niçoise built from oil-poached tuna, jammy egg, blanched haricots verts, and an anchovy-dijon vinaigrette. Composed at room temperature.'
-tags: ['salad', 'french', 'mediterranean', 'fish', 'egg', 'umami']
+tags: ['salad', 'fish', 'egg', 'umami']
 updated: '2026-05-10'
 
 servings: 4

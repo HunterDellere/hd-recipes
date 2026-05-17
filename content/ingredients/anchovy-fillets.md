@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Anchovy fillets'
 desc: 'Salt-cured Engraulis encrasicolus fillets in olive oil. The Mediterranean kitchen''s primary glutamate-and-IMP umami source, used as background savory builder rather than fish flavor.'
 metaDesc: 'Anchovy fillets: salt-cure chemistry, the glutamate-IMP umami synergy, dissolving into sauces vs whole-fillet plating, and Cantabrian vs commodity grades.'
-tags: ['fish', 'mediterranean', 'umami', 'pantry']
+tags: ['fish', 'umami', 'pantry']
 updated: '2026-05-10'
 
 grams_per_unit: 3

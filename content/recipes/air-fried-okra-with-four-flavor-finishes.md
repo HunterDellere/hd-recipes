@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Air-fried okra with four flavor finishes'
 desc: 'Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 400°F to a blistered, crackly-edged exterior with a tender interior, the high dry heat and the starch coat solve the mucilage problem that makes okra hard to cook well, producing pods that read crispy-charred rather than slimy. The same base technique then takes four finishes: South Asian chaat-masala-and-lime for a tangy-spiced bhindi-style snack, Korean-American gochujang-honey for sweet-spicy-glossed wings-adjacent, Cajun-Creole blackened seasoning with hot honey for Louisiana barfood, and Italian lemon-parmesan with anchovy crumbs for the unexpected Mediterranean direction. The recipe is the base air-fry method plus the four finishes as modifications; pick any one (or split a batch and finish two ways for a snack spread).'
 metaDesc: 'Air-fried okra: cornstarch-and-oil coat solves the slime problem; high dry heat blisters the pods to crispy-tender. Four flavor finishes, chaat masala, gochujang-honey, Cajun-Creole, lemon-parmesan with anchovy crumbs.'
-tags: ['vegetable', 'snack', 'side', 'air-fryer', 'umami', 'quick']
+tags: ['air-fryer', 'umami', 'quick']
 updated: '2026-05-16'
 
 servings: 4

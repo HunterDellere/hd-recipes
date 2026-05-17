@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Kashmiri noon chai (pink salt tea)'
 desc: 'Green tea boiled with baking soda and aerated for 20 minutes until it turns brick red, then mixed with cold water and shocked into the characteristic rose-pink. Salted, milked, served with crushed pistachio. A tea engineered around oxidative chemistry, not Western tea sensibility.'
 metaDesc: 'Authentic Kashmiri pink chai (noon chai), baking soda aeration, the oxidative pink color, salt and pistachio finish. The proper chemistry, no food dye.'
-tags: ['drink', 'tea', 'indian', 'milk-tea', 'pakistani']
+tags: ['milk-tea']
 updated: '2026-05-16'
 
 servings: 4

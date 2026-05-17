@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Toasted rice powder (khao khua, thinh)'
 desc: 'Raw glutinous (sticky) rice toasted in a dry pan to a deep amber color, then ground to a coarse powder. The signature flavor and textural element of Lao laab, Thai larb, and northeastern Thai-Lao salads, providing a toasted, nutty, slightly bitter character and a faintly sandy mouthfeel that thickens dressings and grips the meat. The same ingredient appears in Vietnamese cooking as thinh (a finer grind, used in nem chua and bì).'
 metaDesc: 'Toasted rice powder (khao khua, thinh): glutinous rice toasted and ground, the canonical flavor and texture element of larb, laab, and Thai-Lao salads.'
-tags: ['pantry', 'thai', 'lao', 'vietnamese']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-15'
 

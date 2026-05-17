@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Evaporated milk","status":"complete","tags":["dairy"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Evaporated milk","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -108,36 +110,28 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">evaporated milk (savory sauces, baking body)</span>
-          <span class="sub-card-use">half-and-half</span>
-          <p class="sub-card-note">Closest fat and body match (~10–12% vs ~7–8%); lacks the cooked-milk depth. Fine in mac and cheese, cream sauces, and most baked goods where the Maillard note is not load-bearing.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">evaporated milk (milk teas and coffees)</span>
-          <span class="sub-card-use">half-and-half + 1 tsp / 5 g milk powder per 100 ml</span>
-          <p class="sub-card-note">Reconstructs both the cooked depth and the protein-to-fat ratio. Closer match than half-and-half alone for tea and coffee builds where the cooked note is part of the flavor.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">evaporated milk (general kitchen reduction)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="whole-milk.html">whole milk</a> reduced by 50% on the stovetop</span>
-          <p class="sub-card-note">Same volume math as the can, minus the in-can sterilization. Lacks the Maillard depth and runs lighter in body. Workable in baking but flatter in beverages.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">evaporated milk (vegan)</span>
-          <span class="sub-card-use">full-fat coconut milk + cashew cream (3:1 by weight)</span>
-          <p class="sub-card-note">Approximates the body and stability under acid. Brings a coconut note that reads correctly in tropical desserts and many Southeast Asian dishes; wrong for European cream sauces.</p>
-        </li>
+        <li><strong>evaporated milk (savory sauces, baking body)</strong> → half-and-half <span class="sub-note">Closest fat and body match (~10–12% vs ~7–8%); lacks the cooked-milk depth. Fine in mac and cheese, cream sauces, and most baked goods where the Maillard note is not load-bearing.</span></li>
+        <li><strong>evaporated milk (milk teas and coffees)</strong> → half-and-half + 1 tsp / 5 g milk powder per 100 ml <span class="sub-note">Reconstructs both the cooked depth and the protein-to-fat ratio. Closer match than half-and-half alone for tea and coffee builds where the cooked note is part of the flavor.</span></li>
+        <li><strong>evaporated milk (general kitchen reduction)</strong> → <a class="x-link" data-category="ingredients" href="whole-milk.html">whole milk</a> reduced by 50% on the stovetop <span class="sub-note">Same volume math as the can, minus the in-can sterilization. Lacks the Maillard depth and runs lighter in body. Workable in baking but flatter in beverages.</span></li>
+        <li><strong>evaporated milk (vegan)</strong> → full-fat coconut milk + cashew cream (3:1 by weight) <span class="sub-note">Approximates the body and stability under acid. Brings a coconut note that reads correctly in tropical desserts and many Southeast Asian dishes; wrong for European cream sauces.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/aji-de-gallina.html" data-category="recipes">
+          <span class="rl-card-title">Ají de gallina</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/hong-kong-milk-tea.html" data-category="recipes">
           <span class="rl-card-title">Hong Kong silk-stocking milk tea (絲襪奶茶)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/papa-a-la-huancaina.html" data-category="recipes">
+          <span class="rl-card-title">Papa a la huancaína</span>
           
         </a>
         <a class="rl-card" href="../recipes/thai-iced-tea-no-dye.html" data-category="recipes">
@@ -145,61 +139,7 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="sweetened-condensed-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sweetened condensed milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card is-strong" href="whole-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Whole milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="queso-fresco.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Queso fresco</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="greek-yogurt.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Greek yogurt</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="butter.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Butter (unsalted)</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="heavy-cream.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Heavy cream</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="samna.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Samna (clarified butter)</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/acid-milk-sour.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Acid-milk souring</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="espresso-beans.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="espresso-beans.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Espresso beans</span>
     </a><a class="adj-nav-link" href="extra-virgin-olive-oil.html">

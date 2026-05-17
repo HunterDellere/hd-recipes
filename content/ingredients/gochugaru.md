@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Gochugaru (Korean chili flakes, 고추가루)'
 desc: 'Sun-dried Korean red chili (Capsicum annuum, taeyangcho cultivar) milled to flakes or fine powder. Mild to medium heat (1,500 to 10,000 Scoville), bright red color, rounded warm aromatic profile. The chili-flake top note across Korean cooking; structural in kimchi, oi-muchim, ojingeo bokkeum, and tteokbokki.'
 metaDesc: 'Gochugaru: taeyangcho-cultivar chili, sun-drying chemistry, coarse vs fine grind, role in Korean kimchi and stir-fries. When it does and does not substitute for Aleppo or Sichuan chili.'
-tags: ['korean', 'pantry', 'spicy', 'aromatic', 'spice']
+tags: ['pantry', 'spicy']
 density_g_per_ml: 0.45
 updated: '2026-05-10'
 

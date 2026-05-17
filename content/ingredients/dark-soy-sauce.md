@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dark soy sauce (老抽)'
 desc: 'Long-aged Chinese soy sauce finished with molasses or caramel. Used for color and a touch of caramelized depth, not for primary salting.'
 metaDesc: 'Dark soy sauce (lao chou): the long-aged caramel-finished soy. The chemistry, the role across Chinese cooking, and how to substitute or differentiate from light soy.'
-tags: ['umami', 'chinese', 'sauce']
+tags: ['umami']
 density_g_per_ml: 1.2
 imperial_pref: 'tbsp'
 updated: '2026-04-29'

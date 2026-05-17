@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Tapioca pearls (boba)'
 desc: 'Dried starch spheres made from gelatinized tapioca dough. Cooked in boiling water, they hydrate into chewy translucent pearls, the textural anchor of bubble tea.'
-tags: ['boba', 'starch', 'taiwanese']
+tags: ['boba', 'starch']
 density_g_per_ml: 0.85
 imperial_pref: 'cup'
 updated: '2026-05-16'

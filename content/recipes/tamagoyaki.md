@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tamagoyaki'
 desc: 'The Japanese rolled omelet: a dashi-and-mirin-seasoned egg mixture poured into a rectangular pan in thin layers, each layer rolled around the previous one to build a structural cylinder of pale yellow stacked sheets. The defining technique of Japanese egg cookery and one of the most structurally precise omelet preparations in any cuisine. The sweet-savory dashi-forward seasoning makes tamagoyaki one of the most adaptable egg preparations: served as bento centerpiece, sushi component (atop nigiri rice or rolled in maki), breakfast course (with rice and miso soup), izakaya snack, or sliced cold as the structural Japanese picnic egg.'
 metaDesc: 'Tamagoyaki: the Japanese rolled omelet with dashi, mirin, soy. Thin layers of egg rolled into a structural cylinder in a rectangular pan. Served at breakfast, in bento, on sushi rice, and at izakaya.'
-tags: ['japanese', 'egg', 'breakfast', 'quick', 'umami', 'pantry', 'snack']
+tags: ['egg', 'quick', 'umami', 'pantry']
 updated: '2026-05-15'
 
 servings: 4

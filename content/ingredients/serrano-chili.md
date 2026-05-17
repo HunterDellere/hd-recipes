@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Serrano chili'
 desc: 'Capsicum annuum, small slim Mexican fresh chili, 4 to 6 cm long. Hotter than jalapeño (10,000 to 25,000 SHU vs 2,500 to 8,000), cleaner heat, brighter green-vegetable note. The Mexican raw-and-cooked default chili for salsas, pico de gallo, ceviche, and ensaladas.'
 metaDesc: 'Serrano chili: capsaicin profile vs jalapeño, why it is the Mexican raw-application default, when seeded vs full, fresh storage and dried-arbol relationship.'
-tags: ['vegetable', 'spice', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.7
 grams_per_unit: 8
 updated: '2026-05-10'

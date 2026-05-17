@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Gochujang sauce'
 desc: 'The Korean condiment-grade sauce built from gochujang: fermented chili paste thinned with rice vinegar, soy sauce, toasted sesame oil, garlic, ginger, honey, and water into a pourable-thick sauce that travels across Korean and broader contemporary cookery. Sweet-salty-fermented-spicy in equal balance, with the deep koji-fermented depth of the gochujang base. The structural finishing sauce for Korean BBQ, bibimbap, fried chicken, dumplings, rice and grain bowls, noodles, roasted vegetables, eggs, tofu, and as a brilliant cross-cuisine glaze for grilled meat and roasted vegetables.'
 metaDesc: 'Gochujang sauce: gochujang paste thinned with rice vinegar, soy, sesame oil, garlic, ginger, honey. The Korean fermented-chili sauce for BBQ, bibimbap, fried chicken, dumplings, rice bowls, noodles, and roasted vegetables.'
-tags: ['sauce', 'dip', 'korean', 'spicy', 'fermentation', 'pantry', 'quick', 'umami', 'make-ahead']
+tags: ['spicy', 'fermentation', 'pantry', 'quick', 'umami', 'make-ahead']
 updated: '2026-05-15'
 
 servings: 12

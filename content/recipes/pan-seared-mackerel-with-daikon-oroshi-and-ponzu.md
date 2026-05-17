@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pan-seared mackerel with daikon oroshi and ponzu'
 desc: 'Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to firm the flesh and pull surface water, patted dry, and hard-seared skin-side-down in a smoking carbon-steel pan until the fat under the skin renders and the silver hide turns to a tile of crackling. Plated over a mound of cold daikon oroshi (raw grated radish, water pressed off) with a small pour of ponzu around the base. The Japanese saba canon: the lipid load of an oily blue fish managed by salt cure plus high-heat sear, then cut through with a citrus-soy acid and the enzymatic bite of raw daikon.'
 metaDesc: 'Pan-seared Japanese mackerel (saba) with grated daikon and ponzu: 1.5% salt cure, cross-hatch skin score, smoking-pan skin-side sear, raw daikon oroshi as enzymatic counter, citrus-soy ponzu finish.'
-tags: ['japanese', 'fish', 'seafood', 'weeknight', 'umami']
+tags: ['fish', 'seafood', 'weeknight', 'umami']
 updated: '2026-05-10'
 
 servings: 2

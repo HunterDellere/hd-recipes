@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Kashmiri chili powder (deggi mirch)'
 desc: 'Mild Indian chili powder ground from Kashmiri or Byadgi cultivars: brilliant deep red, low heat (1500 to 2500 SHU), and used primarily for color rather than spice. The structural pigment of tandoori chicken, butter chicken, rogan josh, and most North Indian curries that rely on red color without aggressive heat.'
 metaDesc: 'Kashmiri chili powder: low-heat high-color Indian chili, role as the structural pigment of tandoori and Mughlai cooking. When to use vs cayenne or paprika.'
-tags: ['spice', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.50
 updated: '2026-05-09'
 

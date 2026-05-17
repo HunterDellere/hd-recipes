@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Orange'
 desc: 'Citrus × sinensis, the sweet orange. Round, orange-rinded fruit with sweet-tart juice (pH 3.3 to 4.2, 8 to 12 percent sugar), a zest layer rich in d-limonene and other monoterpenes, and a bitter white pith. The canonical sweet citrus of the Mediterranean, with the rind serving as an aromatic in savory cooking and the juice as a finishing acid in sweet-sour preparations.'
 metaDesc: 'Orange: cultivars, the d-limonene zest layer that drives Provençal and North African cooking, applications across savory peel-aromatic dishes, marmalades, and citrus salads, and the buying notes that distinguish a juice orange from an eating orange.'
-tags: ['fruit', 'acid']
+tags: []
 density_g_per_ml: 1.04
 grams_per_unit: 200
 updated: '2026-05-10'

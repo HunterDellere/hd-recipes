@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Roasted delicata and farro salad with maple vinaigrette'
 desc: 'Hard-roasted delicata half-moons (skin on) tossed with chewy farro, lacinato kale massaged in lemon-salt, toasted hazelnuts, and a maple-cider vinaigrette built on whole-grain mustard. The autumn North-American grain salad in its proper register: caramelized squash sweetness against bitter brassica, fruity acid carrying the dressing, hazelnut as the structural crunch.'
 metaDesc: 'Roasted delicata and farro salad with maple-cider vinaigrette: 230°C delicata, semi-pearled farro pilaf-toasted, massaged lacinato kale, toasted hazelnut, whole-grain mustard emulsion.'
-tags: ['salad', 'american', 'grain', 'roast', 'vegetable', 'umami', 'acid', 'nuts']
+tags: ['salad', 'roast', 'umami']
 updated: '2026-05-10'
 
 servings: 4

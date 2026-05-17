@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chinese'
 desc: 'A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every dish reads the cook''s hand on those four levers.'
 metaDesc: 'Chinese cooking: the four-axis pantry (soy, vinegar, aromatic, heat), the ingredients that matter, and where to start cooking from this site.'
-tags: ['chinese']
+tags: []
 updated: '2026-04-26'
 ---
 

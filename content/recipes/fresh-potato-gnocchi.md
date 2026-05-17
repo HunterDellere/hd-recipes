@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fresh potato gnocchi'
 desc: 'Hand-rolled potato dumplings: baked russets riced fine, bound with the minimum egg and flour the dough will tolerate, formed into pillows, and cooked just past floating. The technique is built around moisture management; everything else follows. Stub.'
 metaDesc: 'Fresh potato gnocchi: baked russet potatoes, ricer, the minimum-flour dough, and the float-test cook. Stub recipe.'
-tags: ['italian', 'pasta', 'weekend-project']
+tags: ['pasta', 'weekend-project']
 updated: '2026-05-09'
 
 servings: 4

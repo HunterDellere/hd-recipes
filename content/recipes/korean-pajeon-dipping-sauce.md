@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Korean pajeon dipping sauce (cho-ganjang, 초간장)'
 desc: 'Soy sauce, rice vinegar, gochugaru, scallion, sesame seeds, and a touch of sugar. The acid-soy condiment that cuts the fried-batter richness of pajeon, haemul pajeon, kimchi-jeon, and most jeon. Built in 3 minutes; should rest 10 minutes for the gochugaru to bloom into the soy and the vinegar to integrate.'
 metaDesc: 'Korean dipping sauce for pajeon and jeon: soy sauce, rice vinegar, gochugaru, scallion, sesame. The acid-and-aromatic counter to fried batter.'
-tags: ['sauce', 'korean', 'pantry', 'make-ahead', 'umami', 'acid']
+tags: ['pantry', 'make-ahead', 'umami']
 updated: '2026-05-10'
 
 servings: 4

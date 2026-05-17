@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pesto alla genovese'
 desc: 'The Ligurian basil emulsion: small-leaf Genovese basil pounded with pine nuts, garlic, coarse salt, parmigiano reggiano, and pecorino, mounted with fruity Ligurian olive oil. Structurally a mortar-ground emulsion bound by cheese fat and the basil and nut oils, not a chopped sauce. The canonical finish for trofie and trenette pasta (the canonical pasta al pesto), minestrone alla genovese, gnocchi, fresh tomato platters, grilled fish, eggs, and grilled bread.'
 metaDesc: 'Pesto alla genovese: small-leaf basil, pine nuts, garlic, parmigiano, pecorino, Ligurian olive oil, pounded in a mortar. The Italian cheese-bound emulsion for pasta, minestrone, gnocchi, grilled fish, eggs, and bread.'
-tags: ['sauce', 'italian', 'mediterranean', 'fresh-herbs', 'no-cook', 'make-ahead', 'pantry', 'umami', 'nuts', 'dairy']
+tags: ['no-cook', 'make-ahead', 'pantry', 'umami']
 updated: '2026-05-15'
 
 servings: 8

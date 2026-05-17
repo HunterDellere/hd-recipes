@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pork floss (rousong, 肉松)'
 desc: 'Lean pork shoulder simmered tender with aromatics, shredded fine, then dry-fried in a wok with sugar and soy until the strands separate into a fluffy, dry, faintly sweet topping.'
 metaDesc: 'Pork floss (rousong) recipe: lean pork simmered, shredded, and dry-fried into a fluffy savory topping for congee, baozi, milk bread, and rice.'
-tags: ['pork', 'pantry', 'chinese', 'umami', 'make-ahead']
+tags: ['pork', 'pantry', 'umami', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 30

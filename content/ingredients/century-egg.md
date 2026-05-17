@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Century egg (皮蛋, pidan)'
 desc: 'Duck (or chicken, quail) egg preserved by alkaline cure for weeks to months. Black-amber translucent white, dark green creamy yolk, sulfurous-savory aroma. The cure does the cooking.'
 metaDesc: 'Century egg (pidan): the alkaline-cured duck egg of southern China. Chemistry of the cure, why the white turns translucent amber, the role in congee, tofu, and cold appetizers.'
-tags: ['egg', 'chinese', 'fermentation', 'umami', 'pickle']
+tags: ['egg', 'fermentation', 'umami', 'pickle']
 updated: '2026-05-08'
 
 grams_per_unit: 65

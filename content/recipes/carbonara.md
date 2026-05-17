@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Carbonara'
 desc: 'The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta water, finished with aggressive black pepper. Structurally a raw-egg emulsion built off-heat at the moment of plating: the residual heat of the pasta and the rendered fat cooks the eggs to a glossy creamy sauce without scrambling them. No cream, no garlic, no peas, no parsley; the four canonical ingredients (eggs, pecorino, guanciale, black pepper) plus the structural starchy pasta water are the entire dish. One of the most precise egg techniques in any cuisine and one of the most consistently misunderstood dishes outside Rome.'
 metaDesc: 'Carbonara: spaghetti with a raw-egg-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta water, finished with cracked black pepper. The canonical Roman pasta with eggs as the structural ingredient. No cream.'
-tags: ['italian', 'pasta', 'egg', 'umami', 'weeknight', 'sunday-sauce', 'pork']
+tags: ['pasta', 'egg', 'umami', 'weeknight', 'pork']
 updated: '2026-05-15'
 
 servings: 2

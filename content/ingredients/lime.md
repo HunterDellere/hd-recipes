@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lime'
 desc: 'Small green citrus (Citrus aurantiifolia for key/Mexican lime, Citrus latifolia for Persian/Tahiti lime). Sharp, aromatic, and structurally important across Southeast Asian, Mexican, and Caribbean cooking as a primary souring agent and finishing acid.'
 metaDesc: 'Lime: Persian vs Key vs makrut, juice vs zest vs leaf chemistry, role as finishing acid in Thai and Mexican cooking, citric acid concentration, and storage.'
-tags: ['fruit', 'acid', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 1.04
 updated: '2026-05-10'
 

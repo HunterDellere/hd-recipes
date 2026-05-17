@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Brown butter cacio e pepe'
 desc: 'Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttiness over the pecorino lactic-tang and bloomed peppercorn piperine.'
 metaDesc: 'Cacio e pepe with brown butter — the Maillard products in the milk solids replace the savory anchor of carbonara without adding meat. Pan-emulsion technique, two servings, 17 minutes.'
-tags: ['weeknight', 'pasta', 'italian', 'umami', 'comfort']
+tags: ['weeknight', 'pasta', 'umami', 'comfort']
 updated: '2026-04-26'
 rating: 5
 

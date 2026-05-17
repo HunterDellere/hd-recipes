@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pancetta'
 desc: 'Italian dry-cured pork belly. The structural pork-fat-and-salt foundation under Roman and Bolognese pasta sauces, less smoky and more aromatic than American bacon.'
 metaDesc: 'Pancetta arrotolata vs stesa, dry-cured belly cured with salt, pepper, and aromatics. Why it''s not bacon, when guanciale wins, and the technique for rendering it without scorching.'
-tags: ['pork', 'umami', 'italian']
+tags: ['pork', 'umami']
 density_g_per_ml: 0.9
 imperial_pref: 'oz'
 updated: '2026-05-09'

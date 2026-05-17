@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sautéed beet greens with anchovy, garlic, and chili'
 desc: 'A bunch of beet greens, stems and leaves separated, cooked in two stages in a wide skillet of olive oil that has first dissolved 3 anchovy fillets and bloomed sliced garlic and red pepper flakes. Stems first for 2 minutes to take the fibrous edge off, leaves on top with their rinse water still clinging so they steam-wilt under a brief lid, then uncovered to drive off moisture. Finished off heat with lemon zest, lemon juice, and a splash of red wine vinegar to bridge the iron-mineral leaves to the bright top end. Built as the green-vegetable counter to the cast-iron chuck eye with shallot pan sauce; the dishes share the skillet rotation and the anchovy stands in for the steak fond on the umami axis.'
 metaDesc: 'Italian-style sautéed beet greens with melted anchovy, sliced garlic, red pepper flakes, lemon, and red wine vinegar. Stem-and-leaf staged sauté in a wide skillet, finished off heat. The bright green side built to plate alongside cast-iron steak.'
-tags: ['italian', 'mediterranean', 'vegetable', 'side', 'weeknight', 'umami', 'stir-fry']
+tags: ['weeknight', 'umami', 'stir-fry']
 updated: '2026-05-14'
 
 servings: 2

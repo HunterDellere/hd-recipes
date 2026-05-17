@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dried oregano (Mediterranean)'
 desc: 'Dried leaves of Origanum vulgare, the Mediterranean oregano. Carvacrol- and thymol-dominant, peppery and slightly camphoraceous; the canonical Italian-American pizza herb and a quiet structural backbone in tomato sauces and Greek cooking.'
 metaDesc: 'Dried Mediterranean oregano: carvacrol and thymol chemistry, why dried often outperforms fresh, applications across Italian-American pizza, Greek roasted lamb, and the distinction from Mexican oregano.'
-tags: ['herb', 'spice', 'aromatic']
+tags: []
 density_g_per_ml: 0.35
 updated: '2026-05-10'
 

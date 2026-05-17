@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'White rice flour'
 desc: 'Finely milled long- or medium-grain white rice. Pure starch and trace protein with no gluten; behaves nothing like wheat flour even in matched ratios.'
-tags: ['grain', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.59
 imperial_pref: 'cup'
 updated: '2026-05-09'

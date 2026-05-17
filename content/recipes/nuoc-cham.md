@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Nuoc cham'
 desc: 'The Vietnamese fish-sauce dipping sauce: fish sauce, lime, sugar, water, garlic, chili. Pourable, brick-bright, structurally raw, and the universal dressing-and-dip across the Vietnamese table. The sauce that finishes grilled meat, fresh and fried spring rolls, broken-rice plates, noodle salads, raw vegetable plates, and rice paper rolls. Built in 3 minutes from the Southeast Asian pantry.'
 metaDesc: 'Nuoc cham: the Vietnamese fish sauce dipping sauce (fish sauce, lime, sugar, water, garlic, chili). The pourable universal dressing for grilled meat, fresh rolls, rice plates, noodle salads, and raw vegetables.'
-tags: ['sauce', 'dip', 'vietnamese', 'no-cook', 'pantry', 'quick', 'umami', 'spicy']
+tags: ['no-cook', 'pantry', 'quick', 'umami', 'spicy']
 updated: '2026-05-15'
 
 servings: 8

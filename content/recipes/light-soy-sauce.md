@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Light soy sauce (生抽)'
 desc: 'Soybeans and wheat fermented with Aspergillus mold for 6 to 18 months, pressed and pasteurized into the lighter, saltier seasoning soy of Chinese cooking. Stub.'
 metaDesc: 'Homemade light soy sauce: koji-style Aspergillus inoculation, 6 to 18 month brine fermentation, the seasoning soy of Cantonese cooking. Stub recipe.'
-tags: ['fermentation', 'pantry', 'umami', 'chinese', 'weekend-project']
+tags: ['fermentation', 'pantry', 'umami', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 32

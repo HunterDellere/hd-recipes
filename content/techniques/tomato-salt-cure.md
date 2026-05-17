@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Tomato salt cure'
 desc: 'Salt cut tomato flesh to draw out free water plus dissolved glutamate, citric and malic acid, sugars, and aromatic volatiles. The resulting tomato water is the most concentrated raw-tomato seasoning the kitchen produces; the drained flesh is firmer, sweeter, and umami-denser than the raw fruit.'
 metaDesc: 'Tomato salt cure: osmotic water extraction, the 1 percent salt ratio, the 15 to 30 minute window, and the two outputs (concentrated tomato water and intensified flesh) and where each belongs.'
-tags: ['vegetable', 'umami', 'acid']
+tags: ['umami']
 updated: '2026-05-10'
 
 about: |

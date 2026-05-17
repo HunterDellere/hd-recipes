@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Evaporated milk'
 desc: 'Cow''s milk reduced by ~60% with no added sugar, then sterilized in the sealed can. Concentrated dairy body plus the faint Maillard depth that in-can heat builds.'
 metaDesc: 'Evaporated milk: unsweetened reduced milk, sterilized in the can. Why it reads cooked, where it adds body, and how to substitute it.'
-tags: ['dairy']
+tags: []
 density_g_per_ml: 1.07
 updated: '2026-04-29'
 

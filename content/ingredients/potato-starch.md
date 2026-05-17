@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Potato starch'
 desc: 'Pure starch extracted from potato tubers. Large granule size (50 to 100 microns), high amylose content, gelatinizes at 60 to 65°C. The defining starch for Korean and Japanese crisp coatings and clear thickening.'
 metaDesc: 'Potato starch: granule chemistry, the high-temperature crisp shell, applications across Korean fried chicken, Japanese karaage, haemul pajeon batter, Chinese velveting.'
-tags: ['pantry', 'grain']
+tags: ['pantry']
 density_g_per_ml: 0.7
 updated: '2026-05-10'
 

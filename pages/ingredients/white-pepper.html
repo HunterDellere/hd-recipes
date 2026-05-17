@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"White pepper","status":"complete","tags":["spice","aromatic","chinese"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"White pepper","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,33 +109,13 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">white pepper (pale soups, custards, white sauces)</span>
-          <span class="sub-card-use">no real substitute</span>
-          <p class="sub-card-note">The fermented aromatic profile is the point, and the visual neutrality is the constraint. Skipping it before substituting black pepper into a delicate custard or béchamel is the right call.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">white pepper (stir-fries, marinades where color does not matter)</span>
-          <span class="sub-card-use">black pepper, half quantity</span>
-          <p class="sub-card-note">Adds pine and citrus top notes the dish was not asking for, plus visible specks. Acceptable in cooked applications where a small flavor shift is tolerable; wrong for pale soups and custards.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">white pepper (warmth without aroma signature, finishing)</span>
-          <span class="sub-card-use">a pinch each of mace and ground ginger</span>
-          <p class="sub-card-note">No piperine, so no heat; brings warm aromatic compounds that fill some of the same role in pale European sauces. Use sparingly; not a 1:1 swap on quantity.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">white pepper (Sichuan or Cantonese applications, regional accuracy)</span>
-          <span class="sub-card-use">fresh-ground Sarawak or Muntok white pepper</span>
-          <p class="sub-card-note">Within white pepper itself, freshness is more important than any other variable. Buy whole, grind to order. Sarawak runs slightly more floral; Muntok is the standard workhorse.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">white pepper (allergy-driven or Piper-free)</span>
-          <span class="sub-card-use">mace + small pinch of cubeb pepper</span>
-          <p class="sub-card-note">Cubeb pepper is a different Piper relative with a milder, more aromatic profile; mace adds the warm baking-spice depth. Acceptable when piperine specifically is not wanted; not a faithful match.</p>
-        </li>
+        <li><strong>white pepper (pale soups, custards, white sauces)</strong> → no real substitute <span class="sub-note">The fermented aromatic profile is the point, and the visual neutrality is the constraint. Skipping it before substituting black pepper into a delicate custard or béchamel is the right call.</span></li>
+        <li><strong>white pepper (stir-fries, marinades where color does not matter)</strong> → black pepper, half quantity <span class="sub-note">Adds pine and citrus top notes the dish was not asking for, plus visible specks. Acceptable in cooked applications where a small flavor shift is tolerable; wrong for pale soups and custards.</span></li>
+        <li><strong>white pepper (warmth without aroma signature, finishing)</strong> → a pinch each of mace and ground ginger <span class="sub-note">No piperine, so no heat; brings warm aromatic compounds that fill some of the same role in pale European sauces. Use sparingly; not a 1:1 swap on quantity.</span></li>
+        <li><strong>white pepper (Sichuan or Cantonese applications, regional accuracy)</strong> → fresh-ground Sarawak or Muntok white pepper <span class="sub-note">Within white pepper itself, freshness is more important than any other variable. Buy whole, grind to order. Sarawak runs slightly more floral; Muntok is the standard workhorse.</span></li>
+        <li><strong>white pepper (allergy-driven or Piper-free)</strong> → mace + small pinch of cubeb pepper <span class="sub-note">Cubeb pepper is a different Piper relative with a milder, more aromatic profile; mace adds the warm baking-spice depth. Acceptable when piperine specifically is not wanted; not a faithful match.</span></li>
     </ul>
 
     
@@ -172,6 +154,10 @@
           <span class="rl-card-title">Pork floss (rousong, 肉松)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pork-gyoza.html" data-category="recipes">
+          <span class="rl-card-title">Pork gyoza (pan-fried, then steamed)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/salt-and-pepper-squid.html" data-category="recipes">
           <span class="rl-card-title">Salt-and-pepper squid (Cantonese jiao yan you yu, 椒盐鱿鱼)</span>
           
@@ -189,61 +175,7 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="sichuan-peppercorns.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sichuan peppercorns</span>
-          <span class="rl-card-why">spice · chinese</span>
-        </a>
-        <a class="rl-card is-strong" href="black-pepper.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Black peppercorns</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="cinnamon-stick.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cinnamon stick</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="fennel-seed.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel seed</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="ginger.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Ginger (fresh)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="red-pepper-flakes.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red pepper flakes (crushed red pepper)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="star-anise.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Star anise</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/comal-charring.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Comal charring (vegetables, chilies, tortillas)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="white-onion.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="white-onion.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">White onion</span>
     </a><a class="adj-nav-link" href="white-rice-flour.html">

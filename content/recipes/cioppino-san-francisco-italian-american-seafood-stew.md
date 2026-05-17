@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cioppino (San Francisco Italian-American seafood stew)'
 desc: 'The North Beach Italian-American seafood stew built around a tomato-fennel-saffron broth fortified with seafood stock and dry white wine, loaded with Dungeness crab (in the shell), halibut chunks, head-on shrimp, littleneck clams, and mussels, finished with basil, parsley, and crushed red pepper, served with toasted sourdough rubbed with raw garlic. The clams and mussels are staged into the broth so all bivalves open within a single 60-second window. A whole-table dish: cracked shells, broth-soaked bread, hands and bibs.'
 metaDesc: 'San Francisco cioppino: tomato-fennel-saffron broth with seafood stock and dry white wine; Dungeness crab, halibut, head-on shrimp, clams, mussels added in stages. Sourdough toast rubbed with garlic. The Genovese-fisherman-invented Italian-American stew with the bivalve timing made explicit.'
-tags: ['seafood', 'fish', 'stew', 'italian', 'american', 'weekend-project', 'umami', 'acid', 'one-pot', 'comfort']
+tags: ['seafood', 'fish', 'stew', 'weekend-project', 'umami', 'one-pot', 'comfort']
 updated: '2026-05-10'
 
 servings: 6

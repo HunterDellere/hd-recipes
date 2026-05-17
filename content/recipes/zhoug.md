@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Zhoug'
 desc: 'The Yemenite green chili-and-herb sauce: fresh green chilies (serrano or jalapeño), packed-fresh cilantro, parsley, garlic, cardamom, cumin, coriander, salt, lemon, olive oil. Pounded or processed to a coarse vibrant-green paste, structurally raw and aggressively herbal-spicy. Carried by the Yemenite Jewish diaspora into Israel where it has become a canonical Israeli condiment; now structurally embedded in modern Middle Eastern, Mediterranean, and contemporary American cooking. The sauce for eggs, hummus, falafel, grilled meat, soups, sandwiches, fish, rice and grain bowls, and as a brilliant raw counterpoint to slow-cooked or rich dishes.'
 metaDesc: 'Zhoug (skhug): the Yemenite green chili-and-herb sauce (cilantro, parsley, green chili, garlic, cardamom, cumin, coriander, lemon, olive oil). The Israeli-Yemenite condiment for eggs, hummus, falafel, grilled meat, sandwiches, and soups.'
-tags: ['sauce', 'levantine', 'mediterranean', 'fresh-herbs', 'spicy', 'no-cook', 'pantry', 'make-ahead', 'spice']
+tags: ['spicy', 'no-cook', 'pantry', 'make-ahead']
 updated: '2026-05-15'
 
 servings: 12

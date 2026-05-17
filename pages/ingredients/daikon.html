@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Daikon (radish)","status":"complete","tags":["vegetable","japanese","korean","chinese"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Daikon (radish)","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,28 +109,12 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">daikon (raw grated oroshi for oily fish, tempura sauce)</span>
-          <span class="sub-card-use">Korean mu (slightly milder), watermelon radish, or large red radishes (in declining order)</span>
-          <p class="sub-card-note">Korean mu is the closest substitute structurally and works almost identically; the texture is slightly denser. Watermelon radish brings color but slightly less of the isothiocyanate bite. Standard red radishes work in a pinch but are fiddly to grate at the volumes needed and the resulting oroshi reads pink-purple rather than snow-white. For oily-fish applications where the bite is the point, sharper is better; pick the lower (sharper) end of the daikon if available.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">daikon (simmered in dashi, oden, furofuki, nimono)</span>
-          <span class="sub-card-use">Korean mu, kohlrabi, or large peeled turnips</span>
-          <p class="sub-card-note">Korean mu is functionally identical for simmered applications. Kohlrabi has a similar texture and absorbs broth comparably; the flavor is slightly more cabbage-y but works in the same role. Peeled large turnips are a Western adaptation; the simmered texture is similar but the flavor is sweeter and reads more European.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">daikon (pickled kkakdugi, takuan, banh mi do chua)</span>
-          <span class="sub-card-use">Korean mu, jicama, or large red radishes</span>
-          <p class="sub-card-note">Korean mu is canonical for kkakdugi and works identically. Jicama lacks the radish flavor but has the right crisp texture for fresh pickles; works for Vietnamese do chua but not for fermented kkakdugi. Red radishes work for small batches of quick pickles but the volume becomes fiddly and the color contaminates the brine.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">daikon (Cantonese braised, lo bak go cake, stir-fried)</span>
-          <span class="sub-card-use">Korean mu or peeled turnips</span>
-          <p class="sub-card-note">Korean mu is interchangeable for braised and Cantonese cake applications. Peeled turnips work in pinch but the resulting cake reads more European; the radish-sweetness register is different.</p>
-        </li>
+        <li><strong>daikon (raw grated oroshi for oily fish, tempura sauce)</strong> → Korean mu (slightly milder), watermelon radish, or large red radishes (in declining order) <span class="sub-note">Korean mu is the closest substitute structurally and works almost identically; the texture is slightly denser. Watermelon radish brings color but slightly less of the isothiocyanate bite. Standard red radishes work in a pinch but are fiddly to grate at the volumes needed and the resulting oroshi reads pink-purple rather than snow-white. For oily-fish applications where the bite is the point, sharper is better; pick the lower (sharper) end of the daikon if available.</span></li>
+        <li><strong>daikon (simmered in dashi, oden, furofuki, nimono)</strong> → Korean mu, kohlrabi, or large peeled turnips <span class="sub-note">Korean mu is functionally identical for simmered applications. Kohlrabi has a similar texture and absorbs broth comparably; the flavor is slightly more cabbage-y but works in the same role. Peeled large turnips are a Western adaptation; the simmered texture is similar but the flavor is sweeter and reads more European.</span></li>
+        <li><strong>daikon (pickled kkakdugi, takuan, banh mi do chua)</strong> → Korean mu, jicama, or large red radishes <span class="sub-note">Korean mu is canonical for kkakdugi and works identically. Jicama lacks the radish flavor but has the right crisp texture for fresh pickles; works for Vietnamese do chua but not for fermented kkakdugi. Red radishes work for small batches of quick pickles but the volume becomes fiddly and the color contaminates the brine.</span></li>
+        <li><strong>daikon (Cantonese braised, lo bak go cake, stir-fried)</strong> → Korean mu or peeled turnips <span class="sub-note">Korean mu is interchangeable for braised and Cantonese cake applications. Peeled turnips work in pinch but the resulting cake reads more European; the radish-sweetness register is different.</span></li>
     </ul>
 
     
@@ -139,12 +125,20 @@
           <span class="rl-card-title">Baechu kimchi</span>
           
         </a>
+        <a class="rl-card" href="../recipes/banh-mi-thit-nuong.html" data-category="recipes">
+          <span class="rl-card-title">Banh mi thit nuong (grilled pork banh mi)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/kkakdugi.html" data-category="recipes">
           <span class="rl-card-title">Kkakdugi</span>
           
         </a>
         <a class="rl-card" href="../recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.html" data-category="recipes">
           <span class="rl-card-title">Pan-seared mackerel with daikon oroshi and ponzu</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pork-sinigang.html" data-category="recipes">
+          <span class="rl-card-title">Pork sinigang (sinigang na baboy)</span>
           
         </a>
         <a class="rl-card" href="../recipes/shojin-kenchinjiru-temple-miso-soup.html" data-category="recipes">
@@ -160,61 +154,7 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="silken-tofu.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Silken tofu</span>
-          <span class="rl-card-why">korean · japanese</span>
-        </a>
-        <a class="rl-card is-strong" href="dried-shiitake.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Dried shiitake mushroom (donko, hoshi shiitake)</span>
-          <span class="rl-card-why">korean · japanese</span>
-        </a>
-        <a class="rl-card" href="wood-ear-mushroom.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Wood ear mushroom (木耳)</span>
-          <span class="rl-card-why">chinese · vegetable</span>
-        </a>
-        <a class="rl-card" href="shimeji-mushroom.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Shimeji mushroom</span>
-          <span class="rl-card-why">japanese · vegetable</span>
-        </a>
-        <a class="rl-card" href="lotus-root.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Lotus root (lian ou, 莲藕)</span>
-          <span class="rl-card-why">chinese · vegetable</span>
-        </a>
-        <a class="rl-card" href="burdock-root.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Burdock root (gobō, niúbàng)</span>
-          <span class="rl-card-why">japanese · vegetable</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">2</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/dry-frying-eggplant.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Dry-frying eggplant (gan bian)</span>
-          <span class="rl-card-why">chinese · vegetable</span>
-        </a>
-        <a class="rl-card" href="../techniques/hot-set-tofu.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Hot-set silken tofu (pour-and-set)</span>
-          <span class="rl-card-why">japanese · chinese</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="curry-leaf.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="curry-leaf.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Curry leaf</span>
     </a><a class="adj-nav-link" href="dark-brown-sugar.html">

@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Dashi (kombu and katsuobushi extraction)'
 desc: 'Cold-soak or warm kombu to 60 to 65°C / 140 to 150°F to extract glutamate without slime, pull the kelp before any boil, then off-heat steep katsuobushi for 30 to 60 seconds and strain immediately. The umami-on-umami stack (free glutamate from kombu plus inosinate from bonito) that anchors washoku.'
 metaDesc: 'Dashi extraction: kombu and katsuobushi temperature windows, the synergy between glutamate and inosinate, ichiban vs. niban, and why boiling ruins the stock.'
-tags: ['umami', 'japanese', 'fish', 'pantry']
+tags: ['umami', 'fish', 'pantry']
 updated: '2026-05-09'
 
 about: |

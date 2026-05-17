@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cumin seeds (jeera, زیرہ)'
 desc: 'Small dry seeds of Cuminum cyminum, warm-earthy-bitter, the workhorse tempering spice across South Asian, Middle Eastern, and Latin American cooking. Whole seeds bloomed in hot fat for 15 to 30 seconds release the aromatic oils into the cooking medium; ground cumin is a different ingredient functionally.'
 metaDesc: 'Cumin seeds: tempering chemistry, whole vs ground, role in tadka, dishes across South Asian and Middle Eastern cooking.'
-tags: ['spice', 'aromatic', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-09'
 

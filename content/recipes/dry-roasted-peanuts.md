@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dry-roasted peanuts'
 desc: 'Raw skin-on or blanched peanuts dry-roasted in a 175°C / 350°F oven until evenly amber, fragrant, and shatter-crisp. The home-roasted kernel is fresher, more aromatic, and more textural than any pre-roasted bag.'
 metaDesc: 'Dry-roasted peanuts at home: 175°C / 350°F oven, 12 to 15 minutes, the Maillard window between toasted and burnt, salt timing, and storage.'
-tags: ['nuts', 'pantry', 'snack']
+tags: ['pantry']
 updated: '2026-05-10'
 
 servings: 8

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Honey mustard sauce (the proper ratio)'
 desc: 'Dijon, honey, and a touch of mayonnaise emulsified with apple cider vinegar. The McDonald packet has too much sugar; the restaurant version usually too much mayo. This version centers the mustard with enough honey to round the sharpness without smothering it.'
 metaDesc: 'Honey mustard sauce recipe, Dijon, honey, mayo, cider vinegar. The proper ratio that lets the mustard lead. Five-minute pantry build.'
-tags: ['condiment', 'sauce', 'american', 'no-cook', 'quick', 'emulsion']
+tags: ['condiment', 'no-cook', 'quick', 'emulsion']
 updated: '2026-05-16'
 
 servings: 6

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Avocado oil","status":"complete","tags":["fat"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Avocado oil","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -105,18 +107,10 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">avocado oil (high-heat searing, frying)</span>
-          <span class="sub-card-use">refined sunflower, refined canola, or peanut oil</span>
-          <p class="sub-card-note">All neutral, all hold heat above 220°C. Peanut adds a faint nuttiness; the others are flavor-blank. Functionally identical for searing.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">avocado oil (finishing, dressings)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="extra-virgin-olive-oil.html">extra-virgin olive oil</a></span>
-          <p class="sub-card-note">Brings fruit and pepper notes that avocado oil doesn't. Different flavor profile; use when you want olive's presence, not when you want neutral.</p>
-        </li>
+        <li><strong>avocado oil (high-heat searing, frying)</strong> → refined sunflower, refined canola, or peanut oil <span class="sub-note">All neutral, all hold heat above 220°C. Peanut adds a faint nuttiness; the others are flavor-blank. Functionally identical for searing.</span></li>
+        <li><strong>avocado oil (finishing, dressings)</strong> → <a class="x-link" data-category="ingredients" href="extra-virgin-olive-oil.html">extra-virgin olive oil</a> <span class="sub-note">Brings fruit and pepper notes that avocado oil doesn't. Different flavor profile; use when you want olive's presence, not when you want neutral.</span></li>
     </ul>
 
     
@@ -144,49 +138,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">5</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card" href="neutral-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Neutral oil (peanut, rice bran, canola, refined avocado)</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="walnuts.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Walnuts</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="agar-agar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Agar-agar</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="coconut-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Coconut milk (canned, full-fat)</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="mayonnaise.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mayonnaise</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="dry-white-wine.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Dry white wine (for cooking)</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="all-purpose-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">All-purpose flour</span>
+          <span class="rl-card-why">related</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">3</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card is-strong" href="../techniques/oil-poaching.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Oil poaching</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="../techniques/tahini-emulsion.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Tahini emulsion</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="../techniques/brown-butter.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Brown butter (beurre noisette)</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">related</span>
         </a>
         </div>
       </div>

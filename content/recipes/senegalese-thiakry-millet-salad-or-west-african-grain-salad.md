@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Senegalese-inspired savory millet salad with mango, mint, and ginger-lime'
 desc: 'Pearl millet steamed to a fork-fluffed crumb, then tossed with diced ripe mango, slivered red onion macerated in lime, oil-toasted peanuts, mint, cilantro, and a ginger-lime-honey vinaigrette built on a small hit of habanero. The frame borrows from Senegalese thiakry (traditionally a sweet steamed-millet preparation with sour milk and sugar) and reroutes it into a savory grain salad on West African pantry vocabulary: peanut, ginger, scotch-bonnet heat, lime. The thesis is the contrast between the fluffy mildly-sweet grain crumb and the aggressive aromatic dressing, with the mango carrying a structural sweet-juicy load against the heat.'
 metaDesc: 'Savory millet grain salad inspired by Senegalese thiakry: steamed pearl millet, diced ripe mango, oil-toasted peanuts, mint and cilantro, ginger-lime-honey vinaigrette with habanero. Vegan, gluten-free.'
-tags: ['salad', 'grain', 'fruit', 'umami', 'acid', 'no-cook', 'make-ahead']
+tags: ['salad', 'umami', 'no-cook', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 4

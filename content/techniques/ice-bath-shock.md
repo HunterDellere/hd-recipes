@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Ice bath shock'
 desc: 'Plunge blanched vegetables into ice water to arrest carry-over cooking and lock chlorophyll bright before it degrades to gray-green pheophytin.'
 metaDesc: 'Ice bath shock: the chlorophyll-set mechanism, the salt-the-water rule, the vivid-green cue, and why drab vegetables mean an underpowered bath.'
-tags: ['vegetable']
+tags: []
 updated: '2026-04-26'
 
 about: |

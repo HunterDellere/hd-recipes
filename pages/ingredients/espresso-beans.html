@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Espresso beans","status":"complete","tags":["pantry","aromatic"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Espresso beans","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -96,7 +98,7 @@
 <p><strong>Grind size is the most sensitive variable.</strong> Espresso grind is fine but not powder; the particles need to pack densely enough to resist the 9 bar of pressure for the full 25–30 seconds (too coarse, water rushes through in 12 seconds and under-extracts; too fine, the puck chokes and the water can't pass at all). A test: rub the ground coffee between thumb and forefinger; it should feel like fine sand with a slight tackiness, not like talc. Burr grinders (conical or flat) produce a uniform particle distribution; blade grinders produce a bimodal distribution of dust and boulders that extracts unevenly and is unsuitable for espresso. The grind needs to be adjusted for ambient humidity, bean age, and roast level: darker roasts are more brittle and grind finer at the same setting; older beans have lost CO₂ and extract slower (so grind finer).</p>
 <p><strong>Freshness and the degassing window.</strong> Roasted coffee continuously releases CO₂ for weeks after roasting. The first 2–3 days post-roast, beans release CO₂ so vigorously that espresso shots blow apart (geysering, irregular flow); 7–14 days post-roast is the peak window where the bean has degassed enough to extract evenly but retains enough volatile aromatics for the shot to taste alive. Beyond 4 weeks, the volatile aromatics oxidize and the shot tastes flat and cardboardy. The roast date stamp on the bag is the most important indicator on the label, far more important than any flavor descriptor. Pre-ground supermarket espresso is almost always 6+ months past roast and produces shots that taste recognizably stale.</p>
 <p><strong>Crema and what it actually is.</strong> The <a class="x-link" data-category="ingredients" href="hazelnut.html">hazelnut</a>-colored foam on a fresh espresso is a stable emulsion of CO₂ (released from the bean under pressure), the bean's natural lipids (12% of roasted weight), and emulsifying proteins. A good crema sits ~3 mm thick, holds for 60–90 seconds, and shows a tiger-stripe pattern of lighter and darker streaks during the pull (the lighter streaks are the dissolved sugars; the darker streaks are the late-extraction compounds). Crema is not a flavor element on its own; it is a visual indicator of freshness, dose, and extraction. A thin or absent crema usually means stale beans, an under-dosed basket, or water too cool. A persistent thick foam that doesn't dissipate after 2 minutes usually means heavy Robusta content (Robusta produces more crema than Arabica due to its higher chlorogenic acid load).</p>
-<p><strong>Applications by category.</strong> In Italian tradition: straight espresso (single or double), macchiato (espresso &quot;marked&quot; with a teaspoon of milk foam), cortado (espresso cut with equal warm milk, 1:1), cappuccino (espresso with steamed milk and microfoam in a 1:1:1 ratio, classically a morning drink only), and caffè latte (espresso with proportionally more milk, 1:3 or higher). In specialty third-wave coffee: the flat white (espresso with velvety microfoam, no dry foam, lower volume than a latte), the cortado at the more rigid 1:1 ratio, and the espresso tonic (espresso poured over tonic water and ice for a bitter-bright cold drink). In dessert-leaning preparations: affogato (espresso poured over vanilla gelato), tiramisu (espresso-soaked savoiardi), and the broad category of espresso-based dessert drinks that build the bitter-roasted note against sweetened dairy (Filipino ube latte, Vietnamese cà phê sữa đá, Spanish carajillo, Mexican café de olla).</p>
+<p><strong>Applications by category.</strong> In Italian tradition: straight espresso (single or double), macchiato (espresso &quot;marked&quot; with a teaspoon of milk foam), cortado (espresso cut with equal warm milk, 1:1), cappuccino (espresso with steamed milk and microfoam in a 1:1:1 ratio, classically a morning drink only), and caffè latte (espresso with proportionally more milk, 1:3 or higher). In specialty third-wave coffee: the flat white (espresso with velvety microfoam, no dry foam, lower volume than a latte), the cortado at the more rigid 1:1 ratio, and the espresso tonic (espresso poured over tonic water and ice for a bitter-bright cold drink). In dessert-leaning preparations: affogato (espresso poured over vanilla gelato), <a class="x-link" data-category="recipes" href="../recipes/tiramisu.html">tiramisu</a> (espresso-soaked savoiardi), and the broad category of espresso-based dessert drinks that build the bitter-roasted note against sweetened dairy (Filipino ube latte, Vietnamese cà phê sữa đá, Spanish carajillo, Mexican café de olla).</p>
 <p><strong>Buying notes.</strong> For home espresso the working tier is a small-batch local roastery with a clear roast date stamp, sold whole-bean in 250 g–340 g (12 oz) bags. Reputable national brands (Counter Culture, Intelligentsia, Verve, Onyx, Heart, Tim Wendelboe, Square Mile) ship roast-dated beans within a week of roast. Italian-style traditional blends (Lavazza, Illy) are the canonical heavier-roast espresso blends and produce shots that taste characteristically Italian (more roast-bitter, more crema, less origin-character). Decide between specialty-light-medium (origin-forward, brighter, more acid) and traditional-Italian-medium-dark (roast-forward, more body, more crema) based on what you want in the cup; both produce good espresso. Pre-ground espresso is almost never worth it; if you do not have a grinder, ask the roastery to grind for your machine on the day they ship, accept that the beans will be optimum for 3–4 days only, and freeze the remainder in 50 g portions.</p>
 
     </div>
@@ -109,33 +111,13 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">whole espresso beans (home espresso machine)</span>
-          <span class="sub-card-use">pre-ground espresso from a roastery, ground for your machine</span>
-          <p class="sub-card-note">Acceptable for 3–4 days post-grind, then degrades fast. Ask the roastery to grind on the day they ship and freeze single-portion bags. The compromise on flavor is real but workable; this is the move for an espresso-machine owner without a grinder yet.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">whole espresso beans (espresso machine, no specialty roastery available)</span>
-          <span class="sub-card-use">supermarket Italian-style espresso bag (Lavazza Super Crema, Illy Classico) within roast-date window</span>
-          <p class="sub-card-note">Traditional Italian blends are formulated for crema and forgiveness. Check the roast date on the bag; if older than 3 months, the beans will produce flat shots. These blends lean roast-bitter and produce more crema than specialty single-origin; the cup tastes more &quot;Italian café&quot; and less &quot;third-wave specialty.&quot;</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">espresso (any application, no espresso machine)</span>
-          <span class="sub-card-use">Aeropress with espresso-grind beans, inverted method, 18 g to 60 g water, 1-minute steep, press for 25 seconds</span>
-          <p class="sub-card-note">Produces a coffee concentrate that approaches espresso strength but lacks the pressure-driven crema. Acceptable in latte applications where the milk will mask the missing emulsion; not acceptable where the espresso is consumed straight or where crema is structural (espresso martini, affogato).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">espresso (any application, no equipment)</span>
-          <span class="sub-card-use">Moka pot with finely-ground espresso beans, fresh stovetop preparation</span>
-          <p class="sub-card-note">The Bialetti tradition. Lower pressure (~1.5 bar vs 9 bar) so no crema and a thinner mouthfeel; the flavor leans more roasted and slightly more bitter from the longer extraction time at lower pressure. The canonical Italian home preparation and a genuine third path between espresso and drip; not a substitute for a real shot but a defensible drink on its own terms.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">espresso (any application, decaffeinated)</span>
-          <span class="sub-card-use">Swiss Water or CO₂-process decaf espresso beans</span>
-          <p class="sub-card-note">Swiss Water (water-process decaf) and CO₂-process beans retain the most flavor compounds of the decaffeination methods. Methylene chloride or ethyl acetate (the older solvent methods) strip more aromatics and produce flatter shots. Decaf espresso always reads slightly less complex than caffeinated due to caffeine's own bitter contribution; the gap is smaller than most cooks assume but real.</p>
-        </li>
+        <li><strong>whole espresso beans (home espresso machine)</strong> → pre-ground espresso from a roastery, ground for your machine <span class="sub-note">Acceptable for 3–4 days post-grind, then degrades fast. Ask the roastery to grind on the day they ship and freeze single-portion bags. The compromise on flavor is real but workable; this is the move for an espresso-machine owner without a grinder yet.</span></li>
+        <li><strong>whole espresso beans (espresso machine, no specialty roastery available)</strong> → supermarket Italian-style espresso bag (Lavazza Super Crema, Illy Classico) within roast-date window <span class="sub-note">Traditional Italian blends are formulated for crema and forgiveness. Check the roast date on the bag; if older than 3 months, the beans will produce flat shots. These blends lean roast-bitter and produce more crema than specialty single-origin; the cup tastes more &quot;Italian café&quot; and less &quot;third-wave specialty.&quot;</span></li>
+        <li><strong>espresso (any application, no espresso machine)</strong> → Aeropress with espresso-grind beans, inverted method, 18 g to 60 g water, 1-minute steep, press for 25 seconds <span class="sub-note">Produces a coffee concentrate that approaches espresso strength but lacks the pressure-driven crema. Acceptable in latte applications where the milk will mask the missing emulsion; not acceptable where the espresso is consumed straight or where crema is structural (espresso martini, affogato).</span></li>
+        <li><strong>espresso (any application, no equipment)</strong> → Moka pot with finely-ground espresso beans, fresh stovetop preparation <span class="sub-note">The Bialetti tradition. Lower pressure (~1.5 bar vs 9 bar) so no crema and a thinner mouthfeel; the flavor leans more roasted and slightly more bitter from the longer extraction time at lower pressure. The canonical Italian home preparation and a genuine third path between espresso and drip; not a substitute for a real shot but a defensible drink on its own terms.</span></li>
+        <li><strong>espresso (any application, decaffeinated)</strong> → Swiss Water or CO₂-process decaf espresso beans <span class="sub-note">Swiss Water (water-process decaf) and CO₂-process beans retain the most flavor compounds of the decaffeination methods. Methylene chloride or ethyl acetate (the older solvent methods) strip more aromatics and produce flatter shots. Decaf espresso always reads slightly less complex than caffeinated due to caffeine's own bitter contribution; the gap is smaller than most cooks assume but real.</span></li>
     </ul>
 
     
@@ -158,43 +140,43 @@
           <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="garlic.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Garlic</span>
-          <span class="rl-card-why">aromatic</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="scallion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Scallion (green onion)</span>
-          <span class="rl-card-why">aromatic</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="vanilla-bean-paste.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Vanilla bean paste</span>
-          <span class="rl-card-why">aromatic</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="vanilla-extract.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Vanilla extract</span>
-          <span class="rl-card-why">aromatic</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="red-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red onion</span>
-          <span class="rl-card-why">aromatic · pantry</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="white-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">White onion</span>
-          <span class="rl-card-why">aromatic · pantry</span>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="yellow-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Yellow onion</span>
-          <span class="rl-card-why">aromatic · pantry</span>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Avocado</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="thai-chili.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Thai bird chili (prik kee noo)</span>
-          <span class="rl-card-why">aromatic · pantry</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="eggs.html">
+    </div><nav class="adj-nav"><a class="adj-nav-link" href="egusi-seeds.html">
       <span class="adj-nav-label">← Previous</span>
-      <span class="adj-nav-title">Eggs (large)</span>
+      <span class="adj-nav-title">Egusi seeds</span>
     </a><a class="adj-nav-link" href="evaporated-milk.html">
       <span class="adj-nav-label">Next →</span>
       <span class="adj-nav-title">Evaporated milk</span>

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Breakfast egg bites with spinach and feta'
 desc: 'Whole eggs blended briefly with cottage cheese, baked in a buttered standard metal muffin tin with wilted spinach, crumbled feta, scallion, and dill. The cottage cheese is the entire technique: the curds break apart in the blender into a smooth custard-like base, and the casein proteins contribute structural body that keeps the bites tender and moist rather than the rubbery quiche-muffin texture that home egg cups usually produce. Baked low and slow at 165 °C in a water bath setup, which prevents the eggs from puffing dramatically and then collapsing into denseness. Make-ahead breakfast, holds 5 days refrigerated.'
 metaDesc: 'Make-ahead breakfast egg bites with cottage cheese, spinach, feta, and dill. Baked in a buttered muffin tin in a water bath for tender custard texture. Holds 5 days.'
-tags: ['breakfast', 'make-ahead', 'egg', 'healthy']
+tags: ['make-ahead', 'egg']
 updated: '2026-05-17'
 
 servings: 6

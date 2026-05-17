@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tonjiru (豚汁): pork and root-vegetable miso soup'
 desc: 'The substantial winter miso soup of the Japanese household, built on a base of dashi (or homemade pork broth) and loaded with sliced pork belly, daikon, carrot, burdock, konnyaku, and shimeji mushrooms. The miso enters at the end, off-heat, as always. A meal-scale soup rather than a side: tonjiru with a bowl of rice and a quick pickle is one of the standard simple winter dinners across Japan, and the dish is also the canonical "morning after a hard work day" recovery meal.'
 metaDesc: 'Tonjiru: hearty Japanese pork-and-root-vegetable miso soup with pork belly, daikon, carrot, burdock, konnyaku, the meal-scale winter miso soup of the household tradition.'
-tags: ['japanese', 'soup', 'pork', 'winter', 'umami', 'weeknight']
+tags: ['soup', 'pork', 'umami', 'weeknight']
 updated: '2026-05-15'
 
 servings: 4

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Double dark chocolate crinkle cookies'
 desc: 'Fudgy crinkle cookies built on melted dark chocolate, bloomed cocoa, and a coconut-oil tweak that keeps them glossy and chewy.'
 metaDesc: 'Dark chocolate crinkle cookies with chopped chocolate chunks. Coconut oil for chew, double sugar dredge for the cracked-snowdrift look.'
-tags: ['cookies', 'chocolate', 'dessert', 'american', 'comfort']
+tags: ['cookies', 'comfort']
 updated: '2026-04-26'
 
 servings: 16

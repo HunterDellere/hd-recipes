@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Yellow onion","status":"complete","tags":["aromatic","vegetable","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Yellow onion","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -106,40 +108,60 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">yellow onion (aromatic base, soffritto, mirepoix, German Speckbraten)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="white-onion.html">white onion</a></span>
-          <p class="sub-card-note">Slightly more aggressive raw pungency, similar cooking behavior. Acceptable across cooked applications; Latin American cuisines often use white onion where European cuisines use yellow, the substitution is essentially the same vegetable with regional preference.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">yellow onion (caramelization)</span>
-          <span class="sub-card-use">sweet onion (Vidalia, Walla Walla, Maui)</span>
-          <p class="sub-card-note">Caramelizes faster (15 to 25 minutes less time) due to higher sugar content; the finished flavor is sweeter and less complex (less of the deep umami that yellow onion develops). Acceptable shortcut; yellow is the canonical choice when the cook has time for the full caramelization curve.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">yellow onion (raw dice in salsa, dressing)</span>
-          <span class="sub-card-use">red onion (rinsed or acid-soaked)</span>
-          <p class="sub-card-note">Red onion is the canonical raw-application choice and reads brighter and less pungent than raw yellow. If only yellow is on hand, rinse the dice under cold water for 1 minute or soak in 1 tbsp lime juice or vinegar for 5 minutes to denature the sharper sulfur volatiles; the function approximates a raw red onion.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">yellow onion (allium aromatic, when the volume of vegetable matter is not wanted)</span>
-          <span class="sub-card-use">shallot, at half the mass</span>
-          <p class="sub-card-note">Shallot reads as a more concentrated allium with cleaner finish; substitute for yellow at 50 percent of the mass in vinaigrettes, pan sauces, and applications where the cook wants the aromatic without the bulk. Not a substitute in caramelization or soffritto; shallot burns at higher heat and the volume is wrong.</p>
-        </li>
+        <li><strong>yellow onion (aromatic base, soffritto, mirepoix, German Speckbraten)</strong> → <a class="x-link" data-category="ingredients" href="white-onion.html">white onion</a> <span class="sub-note">Slightly more aggressive raw pungency, similar cooking behavior. Acceptable across cooked applications; Latin American cuisines often use white onion where European cuisines use yellow, the substitution is essentially the same vegetable with regional preference.</span></li>
+        <li><strong>yellow onion (caramelization)</strong> → sweet onion (Vidalia, Walla Walla, Maui) <span class="sub-note">Caramelizes faster (15 to 25 minutes less time) due to higher sugar content; the finished flavor is sweeter and less complex (less of the deep umami that yellow onion develops). Acceptable shortcut; yellow is the canonical choice when the cook has time for the full caramelization curve.</span></li>
+        <li><strong>yellow onion (raw dice in salsa, dressing)</strong> → red onion (rinsed or acid-soaked) <span class="sub-note">Red onion is the canonical raw-application choice and reads brighter and less pungent than raw yellow. If only yellow is on hand, rinse the dice under cold water for 1 minute or soak in 1 tbsp lime juice or vinegar for 5 minutes to denature the sharper sulfur volatiles; the function approximates a raw red onion.</span></li>
+        <li><strong>yellow onion (allium aromatic, when the volume of vegetable matter is not wanted)</strong> → shallot, at half the mass <span class="sub-note">Shallot reads as a more concentrated allium with cleaner finish; substitute for yellow at 50 percent of the mass in vinaigrettes, pan sauces, and applications where the cook wants the aromatic without the bulk. Not a substitute in caramelization or soffritto; shallot burns at higher heat and the volume is wrong.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/aji-de-gallina.html" data-category="recipes">
+          <span class="rl-card-title">Ají de gallina</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/arroz-con-pollo-cubano.html" data-category="recipes">
+          <span class="rl-card-title">Arroz con pollo Cubano</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/avgolemono-soup.html" data-category="recipes">
+          <span class="rl-card-title">Avgolemono soup</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/baechu-kimchi.html" data-category="recipes">
           <span class="rl-card-title">Baechu kimchi</span>
           
         </a>
+        <a class="rl-card" href="../recipes/beef-bourguignon.html" data-category="recipes">
+          <span class="rl-card-title">Beef bourguignon</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/bigos.html" data-category="recipes">
+          <span class="rl-card-title">Bigos (Polish hunter's stew)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/bouillabaisse-marseillaise.html" data-category="recipes">
           <span class="rl-card-title">Bouillabaisse Marseillaise</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/bulgogi.html" data-category="recipes">
+          <span class="rl-card-title">Bulgogi (Asian pear-marinated grilled beef)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-and-andouille-gumbo.html" data-category="recipes">
+          <span class="rl-card-title">Chicken and andouille gumbo</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-paprikash.html" data-category="recipes">
+          <span class="rl-card-title">Chicken paprikash (csirkepaprikás)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-tagine-with-preserved-lemon-and-olives.html" data-category="recipes">
+          <span class="rl-card-title">Chicken tagine with preserved lemon and olives</span>
           
         </a>
         <a class="rl-card" href="../recipes/chicken-zucchini-meatballs-with-yogurt-dill.html" data-category="recipes">
@@ -150,16 +172,64 @@
           <span class="rl-card-title">Cioppino (San Francisco Italian-American seafood stew)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/coq-au-vin.html" data-category="recipes">
+          <span class="rl-card-title">Coq au vin</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/couscous-with-seven-vegetables.html" data-category="recipes">
+          <span class="rl-card-title">Couscous with seven vegetables</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/creole-jambalaya.html" data-category="recipes">
+          <span class="rl-card-title">Creole jambalaya (red, with tomato)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/cuban-ropa-vieja.html" data-category="recipes">
+          <span class="rl-card-title">Cuban ropa vieja</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/doro-wat.html" data-category="recipes">
+          <span class="rl-card-title">Doro wat (Ethiopian spiced chicken stew)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/egusi-soup.html" data-category="recipes">
+          <span class="rl-card-title">Egusi soup</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/fesenjan.html" data-category="recipes">
+          <span class="rl-card-title">Fesenjan</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/french-onion-soup-gratinee.html" data-category="recipes">
+          <span class="rl-card-title">French onion soup gratinée</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/german-warm-potato-salad-with-bacon-and-mustard.html" data-category="recipes">
           <span class="rl-card-title">German warm potato salad with bacon and mustard</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/ghormeh-sabzi.html" data-category="recipes">
+          <span class="rl-card-title">Ghormeh sabzi</span>
           
         </a>
         <a class="rl-card" href="../recipes/goan-fish-curry-xacuti.html" data-category="recipes">
           <span class="rl-card-title">Goan fish curry (xacuti)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/golabki.html" data-category="recipes">
+          <span class="rl-card-title">Gołąbki (Polish stuffed cabbage rolls)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/greens-and-ricotta-frittata.html" data-category="recipes">
           <span class="rl-card-title">Greens and ricotta frittata</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/goulash-gulyas.html" data-category="recipes">
+          <span class="rl-card-title">Gulyás (Hungarian goulash soup)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/harira.html" data-category="recipes">
+          <span class="rl-card-title">Harira</span>
           
         </a>
         <a class="rl-card" href="../recipes/homemade-a1-style-steak-sauce.html" data-category="recipes">
@@ -170,16 +240,88 @@
           <span class="rl-card-title">Homemade ketchup (from canned tomatoes)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/iskender-kebab.html" data-category="recipes">
+          <span class="rl-card-title">İskender kebab</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/italian-american-pork-meatballs-in-tomato.html" data-category="recipes">
           <span class="rl-card-title">Italian-American pork meatballs in tomato</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/joojeh-kabab.html" data-category="recipes">
+          <span class="rl-card-title">Joojeh kabab</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lahmacun.html" data-category="recipes">
+          <span class="rl-card-title">Lahmacun</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lamb-tagine-with-prunes-and-almonds.html" data-category="recipes">
+          <span class="rl-card-title">Lamb tagine with prunes and almonds</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/manti.html" data-category="recipes">
+          <span class="rl-card-title">Manti</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/moussaka.html" data-category="recipes">
+          <span class="rl-card-title">Moussaka</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/niter-kibbeh.html" data-category="recipes">
+          <span class="rl-card-title">Niter kibbeh (Ethiopian spiced clarified butter)</span>
           
         </a>
         <a class="rl-card" href="../recipes/omurice.html" data-category="recipes">
           <span class="rl-card-title">Omurice</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pancit-canton.html" data-category="recipes">
+          <span class="rl-card-title">Pancit canton</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/peanut-groundnut-soup.html" data-category="recipes">
+          <span class="rl-card-title">Peanut soup (Senegalese mafé / Ghanaian groundnut stew)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pho-bo-hanoi-style.html" data-category="recipes">
+          <span class="rl-card-title">Pho bo (Hanoi-style beef pho)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pierogi-z-kapusta-i-grzybami.html" data-category="recipes">
+          <span class="rl-card-title">Pierogi z kapustą i grzybami (sauerkraut and mushroom pierogi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pork-sinigang.html" data-category="recipes">
+          <span class="rl-card-title">Pork sinigang (sinigang na baboy)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/ratatouille-confit-byaldi.html" data-category="recipes">
+          <span class="rl-card-title">Ratatouille (confit byaldi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/red-beans-and-rice.html" data-category="recipes">
+          <span class="rl-card-title">Red beans and rice (Monday red beans)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/risotto-alla-milanese.html" data-category="recipes">
+          <span class="rl-card-title">Risotto alla Milanese</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/shakshuka.html" data-category="recipes">
           <span class="rl-card-title">Shakshuka</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/shoyu-ramen-from-scratch.html" data-category="recipes">
+          <span class="rl-card-title">Shoyu ramen from scratch</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/shrimp-and-grits.html" data-category="recipes">
+          <span class="rl-card-title">Shrimp and grits (Lowcountry)</span>
           
         </a>
         <a class="rl-card" href="../recipes/tortilla-espanola.html" data-category="recipes">
@@ -195,49 +337,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="red-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="white-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">White onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="fennel-bulb.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel bulb</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="leek.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Leek</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="espresso-beans.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Espresso beans</span>
-          <span class="rl-card-why">aromatic · pantry</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="bell-pepper.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Bell pepper</span>
-          <span class="rl-card-why">vegetable · pantry</span>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="carrot.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Carrot</span>
-          <span class="rl-card-why">vegetable · pantry</span>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Avocado</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/mortar-pounding.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Mortar pounding (clay vs granite)</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>

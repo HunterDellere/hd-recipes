@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Jianbing chili paste (the brushable heat axis for Tianjin jianbing)'
 desc: 'The street-vendor chili condiment for jianbing: a thick brushable paste of chili oil, fresh-pounded garlic, doubanjiang (fermented broad bean), Sichuan peppercorn, and a finish of toasted sesame oil. Distinct from bottled chili oil because the fresh garlic and bean paste give it dimension; distinct from doubanjiang alone because the chili oil base makes it brushable. Stub.'
 metaDesc: 'Jianbing chili paste stub recipe: a layered street-vendor chili condiment of chili oil, garlic, doubanjiang, Sichuan peppercorn, and sesame oil. Brushable, dimensional, and the heat axis of Tianjin jianbing.'
-tags: ['chinese', 'sauce', 'spicy', 'umami', 'pantry', 'make-ahead']
+tags: ['spicy', 'umami', 'pantry', 'make-ahead']
 updated: '2026-05-12'
 
 servings: 16

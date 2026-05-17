@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Millionaire shortbread'
 desc: 'Three-layer Scottish bar: short, salt-forward shortbread base, a thick caramel built from sweetened condensed milk cooked to a deep amber, capped by tempered dark chocolate. Each layer earns its texture from a specific cooking endpoint.'
 metaDesc: 'Millionaire shortbread done right: shortbread to a clean snap, caramel cooked to 118°C and salted, tempered dark chocolate that breaks with a clack. The thermal targets that separate this bar from every supermarket version.'
-tags: ['cookies', 'dessert', 'caramel', 'chocolate', 'comfort']
+tags: ['cookies', 'comfort']
 updated: '2026-05-09'
 
 servings: 16

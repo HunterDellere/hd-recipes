@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade popping boba (reverse spherification)'
 desc: 'Fruit-juice spheres held together by an alginate membrane around a still-liquid center. The popping boba of bubble tea shops, built at home with calcium lactate and sodium alginate using the reverse spherification method for held-service stability.'
 metaDesc: 'Popping boba recipe, reverse spherification of fruit juice with sodium alginate and calcium lactate. Stable liquid-center pearls for bubble tea.'
-tags: ['boba', 'bubble-tea', 'spherification', 'hydrocolloid', 'taiwanese', 'fruit', 'vegan']
+tags: ['boba', 'bubble-tea', 'spherification', 'hydrocolloid', 'vegan']
 updated: '2026-05-16'
 
 servings: 4

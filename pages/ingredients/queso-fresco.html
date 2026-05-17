@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Queso fresco","status":"complete","tags":["dairy","umami"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Queso fresco","status":"complete","tags":["umami"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">queso fresco (crumble-finishing applications)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="cotija.html">cotija</a> (Mexican aged dry cheese)</span>
-          <p class="sub-card-note">Cotija is the aged sibling of queso fresco; sharper, drier, more salt-forward, with a fully cured-cheese profile. Use 30% less by weight to compensate for the higher salt and stronger flavor. The dish reads more aggressively cheesy and less fresh-milk; acceptable when queso fresco is unavailable or when a more pronounced cheese flavor is wanted.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">queso fresco (crumble-finishing, milder profile)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="feta.html">feta</a> cheese, drained and rinsed of brine</span>
-          <p class="sub-card-note">Feta is sheep- or sheep-and-goat-milk; the lactic tang is sharper than cow-milk queso fresco and the salt level is similar after a brine rinse. The dish reads recognizably close but with a Mediterranean rather than Mexican character. Acceptable when queso fresco is unavailable; rinse thoroughly to drop the salt to queso fresco levels.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">queso fresco (folded into a stew or sauce)</span>
-          <span class="sub-card-use">farmer cheese or fresh ricotta, drained briefly</span>
-          <p class="sub-card-note">Farmer cheese is the closest North American analog to acid-set queso fresco; ricotta is grainier and wetter but recognizably similar. Both are mild cow-milk fresh cheeses without the queso-fresco salt level, so add 1 to 2 g of salt per 100 g of cheese to compensate. Texture lands close; flavor reads slightly more milk-forward.</p>
-        </li>
+        <li><strong>queso fresco (crumble-finishing applications)</strong> → <a class="x-link" data-category="ingredients" href="cotija.html">cotija</a> (Mexican aged dry cheese) <span class="sub-note">Cotija is the aged sibling of queso fresco; sharper, drier, more salt-forward, with a fully cured-cheese profile. Use 30% less by weight to compensate for the higher salt and stronger flavor. The dish reads more aggressively cheesy and less fresh-milk; acceptable when queso fresco is unavailable or when a more pronounced cheese flavor is wanted.</span></li>
+        <li><strong>queso fresco (crumble-finishing, milder profile)</strong> → <a class="x-link" data-category="ingredients" href="feta.html">feta</a> cheese, drained and rinsed of brine <span class="sub-note">Feta is sheep- or sheep-and-goat-milk; the lactic tang is sharper than cow-milk queso fresco and the salt level is similar after a brine rinse. The dish reads recognizably close but with a Mediterranean rather than Mexican character. Acceptable when queso fresco is unavailable; rinse thoroughly to drop the salt to queso fresco levels.</span></li>
+        <li><strong>queso fresco (folded into a stew or sauce)</strong> → farmer cheese or fresh ricotta, drained briefly <span class="sub-note">Farmer cheese is the closest North American analog to acid-set queso fresco; ricotta is grainier and wetter but recognizably similar. Both are mild cow-milk fresh cheeses without the queso-fresco salt level, so add 1 to 2 g of salt per 100 g of cheese to compensate. Texture lands close; flavor reads slightly more milk-forward.</span></li>
     </ul>
 
     
@@ -138,6 +128,10 @@
           <span class="rl-card-title">Huevos rancheros</span>
           
         </a>
+        <a class="rl-card" href="../recipes/papa-a-la-huancaina.html" data-category="recipes">
+          <span class="rl-card-title">Papa a la huancaína</span>
+          
+        </a>
     </div>
   
     <span class="section-anchor" id="related"></span>
@@ -150,33 +144,33 @@
           <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="evaporated-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Evaporated milk</span>
-          <span class="rl-card-why">dairy</span>
+        <a class="rl-card is-strong" href="coconut-milk.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Coconut milk (canned, full-fat)</span>
+          <span class="rl-card-why">umami</span>
         </a>
-        <a class="rl-card is-strong" href="sweetened-condensed-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sweetened condensed milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card is-strong" href="whole-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Whole milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="feta.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Feta</span>
-          <span class="rl-card-why">dairy · umami</span>
-        </a>
-        <a class="rl-card" href="parmigiano-reggiano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Parmigiano Reggiano</span>
-          <span class="rl-card-why">dairy · umami</span>
-        </a>
-        <a class="rl-card" href="pecorino-romano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Pecorino romano</span>
-          <span class="rl-card-why">dairy · umami</span>
-        </a>
-        <a class="rl-card" href="cotija.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="cotija.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Cotija</span>
-          <span class="rl-card-why">dairy · umami</span>
+          <span class="rl-card-why">umami</span>
+        </a>
+        <a class="rl-card is-strong" href="dark-soy-sauce.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Dark soy sauce (老抽)</span>
+          <span class="rl-card-why">umami</span>
+        </a>
+        <a class="rl-card is-strong" href="feta.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Feta</span>
+          <span class="rl-card-why">umami</span>
+        </a>
+        <a class="rl-card is-strong" href="light-soy-sauce.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Light soy sauce (生抽)</span>
+          <span class="rl-card-why">umami</span>
+        </a>
+        <a class="rl-card is-strong" href="matcha.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Matcha</span>
+          <span class="rl-card-why">umami</span>
+        </a>
+        <a class="rl-card is-strong" href="oyster-mushroom.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Oyster mushroom</span>
+          <span class="rl-card-why">umami</span>
         </a>
         </div>
       </div>
@@ -187,9 +181,9 @@
           <span class="rl-group-count">1</span>
         </h3>
         <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/acid-milk-sour.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Acid-milk souring</span>
-          <span class="rl-card-why">dairy</span>
+        <a class="rl-card" href="../techniques/brown-butter.html" data-category="techniques" data-reason="tag">
+          <span class="rl-card-title">Brown butter (beurre noisette)</span>
+          <span class="rl-card-why">umami</span>
         </a>
         </div>
       </div>

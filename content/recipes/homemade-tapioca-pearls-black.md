@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade black tapioca pearls (boba)'
 desc: 'From-scratch tapioca pearls. Boiling-water-hydrated dough rolled into spheres, blanched, then finished in a brown sugar syrup that simultaneously cooks them through and gives the mahogany surface that defines proper boba.'
 metaDesc: 'Make tapioca pearls from scratch, gelatinized dough method, hand-rolled spheres, brown sugar finish for proper chewy QQ boba.'
-tags: ['boba', 'bubble-tea', 'taiwanese', 'starch', 'weekend-project']
+tags: ['boba', 'bubble-tea', 'starch', 'weekend-project']
 updated: '2026-05-16'
 
 servings: 6

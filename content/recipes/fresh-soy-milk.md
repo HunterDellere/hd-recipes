@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fresh soy milk (homemade, from soaked soybeans)'
 desc: 'Soaked soybeans blended with water, cooked at low simmer, strained through cheesecloth — the foundational base for fresh douhua, hot-set silken tofu, and any application where the soy milk itself is the dominant flavor. Stub.'
 metaDesc: 'Homemade fresh soy milk from soaked dry soybeans — the structural base for fresh tofu and douhua. Stub recipe.'
-tags: ['legume', 'pantry', 'chinese', 'weekend-project']
+tags: ['pantry', 'weekend-project']
 updated: '2026-05-09'
 
 servings: 8

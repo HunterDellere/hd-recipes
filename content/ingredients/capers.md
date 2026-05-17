@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Capers'
 desc: 'Unopened flower buds of Capparis spinosa, salt-packed or brined. The Mediterranean kitchen''s primary mustard-pungent finishing pickle, dense in glucosinolates that release on chewing.'
 metaDesc: 'Capers: glucosinolate-derived mustard pungency, salt-packed vs brined formats, the size grade ladder from non-pareille to capote, and finishing applications.'
-tags: ['mediterranean', 'pickle', 'pantry']
+tags: ['pickle', 'pantry']
 updated: '2026-05-10'
 
 grams_per_unit: 0.5

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lacinato kale (Tuscan, dinosaur, cavolo nero)'
 desc: 'Brassica oleracea var. palmifolia. The dark blue-green Italian kale with long pebbled leaves. Sweeter, less bitter, and structurally more salad-friendly than curly kale.'
 metaDesc: 'Lacinato kale (Tuscan / dinosaur / cavolo nero): the cultivar, the bitter glucosinolate chemistry, why massaging with acid and salt works, role in raw salads, ribollita, and braises.'
-tags: ['vegetable', 'italian', 'mediterranean']
+tags: []
 updated: '2026-05-10'
 
 density_g_per_ml: 0.20

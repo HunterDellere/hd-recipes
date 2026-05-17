@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Taro milk tea with boba (real taro, no powder)'
 desc: 'Steamed taro pureed into a sweetened paste that builds the body of a milk tea, no taro powder, no purple food coloring. The drink tastes nuttier, less candied, and looks beige-lavender rather than crayon-violet. The honest version.'
 metaDesc: 'Taro milk tea with boba made from real steamed taro, no taro powder or food coloring. Nutty, sweet, naturally pale lavender milk tea.'
-tags: ['boba', 'bubble-tea', 'taiwanese', 'milk-tea', 'drink', 'tea', 'tropical']
+tags: ['boba', 'bubble-tea', 'milk-tea', 'tropical']
 updated: '2026-05-16'
 
 servings: 2

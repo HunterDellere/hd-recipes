@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Bell pepper'
 desc: 'Capsicum annuum without the capsaicin: sweet pepper varieties bred to lack the heat-producing compound that makes their chile cousins spicy. Color (green to red) marks ripeness and shifts both sugar and aroma profile.'
 metaDesc: 'Bell pepper: green / yellow / orange / red ripeness curve, sugar progression, role in stir-fries / Mediterranean cooking / charring, storage and freshness cues.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-09'
 

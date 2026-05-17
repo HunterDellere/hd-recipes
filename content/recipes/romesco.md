@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Romesco'
 desc: 'The Catalan nut-and-pepper sauce: dried ñora peppers (or roasted red bell pepper as a substitute), almonds and hazelnuts toasted to deep brown, charred tomato, garlic, sherry vinegar, smoked paprika, olive oil, all ground to a coarse rust-red paste. The structural sauce of the Catalan calçotada (grilled spring onion festival) and a brilliantly versatile finish for grilled fish, vegetables, eggs, roast chicken, and bread. Bridges the gap between dip and sauce.'
 metaDesc: 'Romesco: the Catalan nut-and-pepper sauce (almonds, hazelnuts, ñora pepper, charred tomato, garlic, sherry vinegar, smoked paprika, olive oil). The cross-cuisine finishing sauce for grilled vegetables, fish, eggs, roast chicken, and bread.'
-tags: ['sauce', 'dip', 'spanish', 'mediterranean', 'pantry', 'make-ahead', 'umami', 'nuts', 'vegan']
+tags: ['pantry', 'make-ahead', 'umami', 'vegan']
 updated: '2026-05-15'
 
 servings: 10

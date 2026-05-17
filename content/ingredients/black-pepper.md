@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Black peppercorns'
 desc: 'The unripe drupes of Piper nigrum, dried whole. Heat is piperine (fat-soluble); aroma is a stack of volatile terpenes that vanish within minutes of grinding.'
 metaDesc: 'Black pepper: piperine for heat, terpenes for aroma. Why it should be ground to order, why blooming it in fat works, and how Tellicherry differs from Malabar.'
-tags: ['spice', 'aromatic']
+tags: []
 density_g_per_ml: 0.45
 imperial_pref: 'tsp'
 updated: '2026-04-29'

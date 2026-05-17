@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Vinaigrette emulsion'
 desc: 'Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsion that holds long enough to dress a salad. The mustard provides the surface-active agents that bridge oil and water; without an emulsifier, the dressing breaks within seconds.'
 metaDesc: 'Vinaigrette emulsion: the 1:3 vinegar-to-oil ratio, the dijon emulsifier mechanism, surface-active agents, and how to rebuild a broken vinaigrette.'
-tags: ['fat', 'acid']
+tags: []
 updated: '2026-05-10'
 
 about: |

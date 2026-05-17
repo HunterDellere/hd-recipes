@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ground cumin'
 desc: 'Powdered seeds of Cuminum cyminum. Functionally a different ingredient from whole cumin seeds: distributes evenly through dry rubs, doughs, and dressings without the discrete tempered-seed pop, but loses aromatic potency far faster than whole seeds. The base seasoning across Mexican, North African, and Tex-Mex cooking.'
 metaDesc: 'Ground cumin: chemistry of cuminaldehyde, why ground vs whole differ, freshness window, dishes across Mexican, North African, and Tex-Mex cooking, sourcing.'
-tags: ['spice', 'aromatic', 'pantry', 'mexican']
+tags: ['pantry']
 density_g_per_ml: 0.45
 updated: '2026-05-10'
 

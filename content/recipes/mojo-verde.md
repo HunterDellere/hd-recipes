@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mojo verde'
 desc: 'The Canarian green herb-pepper-oil sauce: cilantro (or parsley), green bell pepper (or green chili for heat), garlic, cumin, sea salt, sherry vinegar (or white wine vinegar), and olive oil, pounded or processed into a vibrant green pourable sauce. The canonical pairing for papas arrugadas (Canarian wrinkled potatoes) and for grilled fish, chicken, vegetables, bread, and eggs across the Canary Islands and into mainland Spain. Structurally a pepper-thickened green sauce that bridges chimichurri (vinegar-and-herb logic) and salsa verde (paste-and-oil structure) with the singular Canarian cumin signature.'
 metaDesc: 'Mojo verde: the Canarian green sauce (cilantro or parsley, green pepper, garlic, cumin, sherry vinegar, olive oil). The Canary Islands condiment for wrinkled potatoes, grilled fish, chicken, vegetables, bread, and eggs.'
-tags: ['sauce', 'spanish', 'mediterranean', 'fresh-herbs', 'no-cook', 'pantry', 'make-ahead', 'quick', 'spice']
+tags: ['no-cook', 'pantry', 'make-ahead', 'quick']
 updated: '2026-05-15'
 
 servings: 8

@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Red oil rendering'
 desc: 'Bloom doubanjiang (Pixian chili bean paste) and dried chilies in oil at 140 to 160°C / 285 to 320°F until the oil turns brilliant red and smells distinctly of toasted chili-bean paste. The structural starting move of Sichuan dry-pot, mapo tofu, twice-cooked pork, and most of the mala canon.'
 metaDesc: 'Red oil rendering: the Sichuan technique of blooming doubanjiang and dried chilies in oil to extract chili-bean-paste flavor and brilliant red color into the cooking medium.'
-tags: ['chinese', 'spicy', 'fat']
+tags: ['spicy']
 updated: '2026-05-09'
 
 about: |

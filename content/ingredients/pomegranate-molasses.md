@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pomegranate molasses'
 desc: 'Pomegranate juice reduced 4:1 to a thick, sour-sweet syrup. The defining sour of Persian and Levantine sauces, marinades, and dressings — not grenadine, which is a sugar syrup with red dye.'
 metaDesc: 'Pomegranate molasses: the 4:1 reduction chemistry, citric-and-tartaric-acid sourness, why it is not grenadine, applications across Persian and Levantine cooking, and home reduction.'
-tags: ['acid', 'levantine', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.30

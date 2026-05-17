@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Shrimp pulao (jhinga pulao)'
 desc: 'Coastal-Indian basmati pilaf cooked with marinated shrimp, ginger-garlic, whole spices, and a coconut-milk-and-stock cooking liquid. Less elaborate than biryani (no parboil-and-layer), more aromatic than plain rice. The shrimp-and-spice flavors infuse into each grain through absorption-method cooking.'
 metaDesc: 'Shrimp pulao (jhinga pulao): coastal-Indian basmati pilaf with marinated shrimp, coconut-stock liquid, and whole-spice tempering. The lighter cousin of biryani.'
-tags: ['indian', 'seafood', 'rice', 'one-pot', 'weeknight']
+tags: ['seafood', 'rice', 'one-pot', 'weeknight']
 updated: '2026-05-09'
 
 servings: 4

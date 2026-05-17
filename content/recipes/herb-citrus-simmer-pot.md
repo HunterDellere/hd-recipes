@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Herb-citrus simmer pot (lemon, mint, basil)'
 desc: 'A bright spring-summer house fragrance: lemon peel, fresh mint, basil stems, and a knob of ginger over a low simmer. Reads cleaner and lighter than the heavier spice-based pots; ideal for summer kitchens and post-cooking deodorizing.'
 metaDesc: 'Spring-summer simmer pot, lemon, mint, basil, ginger. Bright fresh whole-house fragrance and post-cooking kitchen deodorizer.'
-tags: ['home-fragrance', 'simmer-pot', 'non-edible', 'aromatic', 'citrus', 'fresh-herbs', 'herb']
+tags: ['home-fragrance', 'simmer-pot', 'non-edible', 'citrus']
 updated: '2026-05-16'
 
 servings: 1

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lacto-fermented hot sauce'
 desc: 'Fresh chilies and aromatics submerged in a 3% non-chlorinated salt brine, lacto-fermented 7 to 14 days at room temperature, then blended with the fermentation brine and a touch of vinegar for a deep, funky, complex hot sauce no commercial product matches.'
 metaDesc: 'Lacto-fermented hot sauce: 3% brine, 7 to 14 day ferment, blend and bottle. Tabasco-style depth without the heat treatment. Salinity math, chili selection, and shelf stability.'
-tags: ['fermentation', 'sauce', 'condiment', 'spicy', 'pantry', 'make-ahead', 'vegan']
+tags: ['fermentation', 'condiment', 'spicy', 'pantry', 'make-ahead', 'vegan']
 updated: '2026-05-17'
 
 servings: 40

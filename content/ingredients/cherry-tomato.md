@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cherry tomato'
 desc: 'Small (1.5 to 3 cm) round or oval tomato cultivars (Solanum lycopersicum), bred for high sugar concentration, dense pectin-rich flesh, and intense aromatic compounds relative to slicing tomatoes. The structural sweet tomato of salads, pastas, and pounded salads where the cook wants tomato gel and sweetness without the mass and water of a slicing tomato.'
 metaDesc: 'Cherry tomato: cultivar genetics vs slicing tomatoes, brix sugar concentration, role in pastas and som tum, blistering and roasting techniques, sourcing and seasonality.'
-tags: ['fruit', 'vegetable']
+tags: []
 density_g_per_ml: 0.95
 updated: '2026-05-10'
 

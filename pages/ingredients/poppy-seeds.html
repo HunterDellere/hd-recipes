@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Poppy seeds","status":"complete","tags":["spice","nuts","indian"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Poppy seeds","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,18 +109,10 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">white poppy seeds (khus khus in curry paste thickener)</span>
-          <span class="sub-card-use">raw cashews soaked 15 minutes in warm water, or hemp seeds</span>
-          <p class="sub-card-note">Soaked raw cashews produce a similar thick, creamy paste when blended; the flavor is richer and more cashew-forward, less nutty-neutral. Hemp seeds have a similar fat content and produce a comparable paste texture. Both are acceptable substitutes for the thickening function; neither reproduces the mild distinctive flavor of khus khus exactly.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">blue-grey poppy seeds (baking topping)</span>
-          <span class="sub-card-use">sesame seeds (white or black)</span>
-          <p class="sub-card-note">For the visual and textural topping function (bagels, bread): sesame seeds are the closest substitute in color (white sesame) and read similarly in baking. The flavor is distinctly sesame rather than poppy; acceptable for most baking contexts.</p>
-        </li>
+        <li><strong>white poppy seeds (khus khus in curry paste thickener)</strong> → raw cashews soaked 15 minutes in warm water, or hemp seeds <span class="sub-note">Soaked raw cashews produce a similar thick, creamy paste when blended; the flavor is richer and more cashew-forward, less nutty-neutral. Hemp seeds have a similar fat content and produce a comparable paste texture. Both are acceptable substitutes for the thickening function; neither reproduces the mild distinctive flavor of khus khus exactly.</span></li>
+        <li><strong>blue-grey poppy seeds (baking topping)</strong> → sesame seeds (white or black) <span class="sub-note">For the visual and textural topping function (bagels, bread): sesame seeds are the closest substitute in color (white sesame) and read similarly in baking. The flavor is distinctly sesame rather than poppy; acceptable for most baking contexts.</span></li>
     </ul>
 
     
@@ -138,49 +132,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="sesame-seeds.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sesame seeds (white, toasted)</span>
-          <span class="rl-card-why">nuts · spice</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="kashmiri-chili-powder.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Kashmiri chili powder (deggi mirch)</span>
-          <span class="rl-card-why">indian · spice</span>
+        <a class="rl-card is-strong" href="agar-agar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Agar-agar</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="mustard-seeds.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mustard seeds (black / brown)</span>
-          <span class="rl-card-why">indian · spice</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="kokum.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Kokum</span>
-          <span class="rl-card-why">indian · spice</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="cloves.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cloves (laung, लौंग)</span>
-          <span class="rl-card-why">indian · spice</span>
+        <a class="rl-card is-strong" href="all-purpose-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">All-purpose flour</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="cumin-seeds.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cumin seeds (jeera, زیرہ)</span>
-          <span class="rl-card-why">indian · spice</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="garam-masala.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Garam masala (warming spice blend)</span>
-          <span class="rl-card-why">indian · spice</span>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">related</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/spice-tempering.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Spice tempering (tadka / tarka)</span>
-          <span class="rl-card-why">indian · spice</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">related</span>
         </a>
         </div>
       </div>

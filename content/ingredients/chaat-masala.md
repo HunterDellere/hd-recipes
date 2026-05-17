@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chaat masala'
 desc: 'North Indian finishing spice blend built around kala namak (sulfurous Himalayan black salt) and amchur (dried unripe mango powder), with toasted cumin, coriander, ajwain, ginger, and chili. The signature sulfur-sour-saline axis defines its identity; not interchangeable with garam masala.'
 metaDesc: 'Chaat masala: composition, kala namak chemistry, role as a finishing spice on chaat, kachumber, fruit, and yogurt drinks. Different from garam masala.'
-tags: ['spice', 'aromatic', 'pantry', 'indian', 'umami', 'acid']
+tags: ['pantry', 'umami']
 density_g_per_ml: 0.50
 updated: '2026-05-10'
 

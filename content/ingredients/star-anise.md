@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Star anise'
 desc: 'The dried fruit of Illicium verum, eight-pointed and intensely licorice-aromatic. The soul of Chinese five-spice and the unmistakable note in Thai iced tea.'
-tags: ['spice', 'aromatic']
+tags: []
 updated: '2026-04-26'
 
 usda_fdc_id: 171316

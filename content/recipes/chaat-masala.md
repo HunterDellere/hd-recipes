@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chaat masala'
 desc: 'Toasted-and-ground North Indian finishing spice blend ; kala namak, amchur, cumin, coriander, ajwain, ginger, chili. Sulfur-sour-saline axis. Stub.'
 metaDesc: 'Homemade chaat masala ; toasted whole spices ground fresh with kala namak and amchur. Vivid finishing blend for chaat, kachumber, and fruit. Stub recipe.'
-tags: ['spice', 'pantry', 'indian', 'make-ahead']
+tags: ['pantry', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 16

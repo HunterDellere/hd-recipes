@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Bread flour'
 desc: 'Wheat flour at 12.5 to 14 percent protein. The strongest of the common Western flours; the protein lever for chewy, holding doughs.'
 metaDesc: 'Bread flour at 12.5 to 14% protein. Why high-protein flour holds gas, hydration math, and when bread flour beats AP across pizza, breadsticks, brioche, and milk bread.'
-tags: ['grain']
+tags: []
 density_g_per_ml: 0.55
 imperial_pref: 'cup'
 updated: '2026-05-09'

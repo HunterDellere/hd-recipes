@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Roasted pear and gorgonzola tartine'
 desc: 'Bosc pear roasted in butter and balsamic until caramelized, smeared over a toasted sourdough slice with gorgonzola dolce, scattered with toasted walnuts, finished with thyme, balsamic, and cracked pepper. Open-faced lunch or light dinner.'
 metaDesc: 'Roasted pear and gorgonzola tartine: open-faced sourdough with caramelized pear, gorgonzola dolce, toasted walnuts, balsamic, thyme. 25-minute lunch.'
-tags: ['comfort', 'breakfast', 'no-cook', 'side']
+tags: ['comfort', 'no-cook']
 updated: '2026-05-09'
 
 servings: 2

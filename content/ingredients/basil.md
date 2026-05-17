@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Basil'
 desc: 'Ocimum basilicum. The defining summer herb of Mediterranean and Southeast Asian cuisines. Volatile-oil-rich (linalool, eugenol, methyl chavicol), heat-fragile, oxidation-prone, a finishing herb in nearly every application.'
 metaDesc: 'Basil: Genovese vs Thai chemistry, the linalool-and-eugenol volatile profile, why heat blackens it, and tear-vs-cut handling for raw service.'
-tags: ['herb', 'mediterranean', 'thai']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 172232

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dark chocolate'
 desc: 'Cocoa solids and cocoa butter combined with sugar, with no milk solids. The cacao percentage on the label is solids + butter together, not solids alone.'
 metaDesc: 'Dark chocolate for baking: why 60–70% is the sweet spot, how seizing happens, and how to rescue it. Storage and bloom explained.'
-tags: ['chocolate']
+tags: []
 density_g_per_ml: 0.93
 updated: '2026-04-26'
 

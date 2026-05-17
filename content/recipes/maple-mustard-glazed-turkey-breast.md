@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Maple and mustard glazed turkey breast'
 desc: 'Bone-in turkey breast dry-brined overnight, roasted with herb butter under the skin, and lacquered with a maple-mustard glaze at the end.'
 metaDesc: 'Bone-in turkey breast: dry brine, herb butter under the skin, two-stage roast, late maple-mustard glaze. Holiday centerpiece for 6.'
-tags: ['turkey', 'roast', 'holiday', 'american', 'weekend-project']
+tags: ['turkey', 'roast', 'holiday', 'weekend-project']
 updated: '2026-04-26'
 
 servings: 6

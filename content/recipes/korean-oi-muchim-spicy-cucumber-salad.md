@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Korean spicy cucumber salad (oi-muchim, 오이무침)'
 desc: 'Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, rice vinegar, and toasted sesame oil. The fastest Korean banchan: 10 minutes from cucumber to bowl, eaten the same hour for peak crunch.'
 metaDesc: 'Oi-muchim: Korean spicy cucumber salad with gochugaru, garlic, fish sauce, rice vinegar, sesame oil. 10-minute banchan; salt-cure for crunch, eat the same hour.'
-tags: ['korean', 'salad', 'vegetable', 'spicy', 'no-cook', 'side', 'pickle']
+tags: ['salad', 'spicy', 'no-cook', 'pickle']
 updated: '2026-05-10'
 
 servings: 4

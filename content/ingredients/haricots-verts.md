@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Haricots verts'
 desc: 'Phaseolus vulgaris bred for slim pods, picked young at 3-4 mm cross-section. Thinner walls, faster cook, more sugar than commodity green beans.'
 metaDesc: 'Haricots verts: French slim green beans, the chlorophyll chemistry of blanching, why thin walls demand a 90-second blanch instead of the 4-minute commodity-bean cook.'
-tags: ['vegetable', 'french']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 169961

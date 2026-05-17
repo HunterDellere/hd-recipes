@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Soy-glazed peanuts'
 desc: 'Raw peanuts toasted in oil until they smell roasted, then tossed off-heat with a soy-sugar-vinegar glaze that lacquers as it cools. Crunchy, savory, faintly sweet, perfect for a small dish on the congee table.'
 metaDesc: 'Soy-glazed peanuts: 15-minute crunchy soy-glazed peanut topping for congee, rice bowls, and Chinese cold dishes. Lacquer technique that stays crisp.'
-tags: ['pantry', 'chinese', 'umami', 'side', 'make-ahead']
+tags: ['pantry', 'umami', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 6

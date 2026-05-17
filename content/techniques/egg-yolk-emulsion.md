@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Egg-yolk emulsion'
 desc: 'Build a stable oil-in-water emulsion using egg yolk lecithin as the primary surfactant. Underlies mayonnaise, aioli, hollandaise, and Caesar dressing: the same molecular mechanism scaled to different acid, fat, and heat regimes.'
 metaDesc: 'Egg-yolk emulsion: lecithin surface chemistry, the yolk-to-oil ratio, why coddling helps, the salt and acid timing, and how to rebuild a broken yolk emulsion.'
-tags: ['egg', 'fat', 'acid', 'sauce']
+tags: ['egg']
 updated: '2026-05-10'
 
 about: |

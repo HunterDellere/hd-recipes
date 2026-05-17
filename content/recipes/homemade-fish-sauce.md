@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fish sauce (homemade Vietnamese-style)'
 desc: 'Anchovies layered with sea salt at a 1:3 ratio, sealed in a glass or ceramic vat, and left to ferment in a warm dark place for 12 to 18 months. The endogenous fish enzymes hydrolyze the proteins into the amber liquid that defines Southeast Asian cooking. Stub — a months-long project, not a weekend recipe.'
 metaDesc: 'Homemade Vietnamese-style fish sauce — anchovy + salt fermented for 12 to 18 months. Stub recipe.'
-tags: ['umami', 'pantry', 'fermentation', 'sauce', 'weekend-project', 'make-ahead']
+tags: ['umami', 'pantry', 'fermentation', 'weekend-project', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 40

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Green chili (Indian hari mirch)'
 desc: 'Fresh unripe Capsicum annuum or C. frutescens cultivars (hari mirch, finger chili, serrano-adjacent) used across South Asian and Latin American cooking as the bright capsaicin source ; sharp, vegetal, and hot at 30,000 to 50,000 Scoville. Different ingredient from dried red chili.'
 metaDesc: 'Green chili: capsaicin chemistry, fresh vs dried distinction, role in Indian and Latin American raw applications, varieties (hari mirch, serrano, Thai bird), buying.'
-tags: ['vegetable', 'spice', 'aromatic', 'indian', 'spicy']
+tags: ['spicy']
 density_g_per_ml: 0.45
 updated: '2026-05-10'
 

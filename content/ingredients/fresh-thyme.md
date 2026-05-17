@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fresh thyme'
 desc: 'Thymus vulgaris. A perennial Mediterranean shrub-herb whose woody-stemmed sprigs carry the most heat-stable aromatic profile in the herb cabinet, thymol and carvacrol, the same phenols found in oregano, that survive long braises where soft herbs disintegrate.'
 metaDesc: 'Fresh thyme: thymol-carvacrol chemistry, why thyme tolerates long cooks where parsley and basil cannot, sprigs vs leaves, the bouquet garni role, drying vs fresh.'
-tags: ['herb', 'aromatic']
+tags: []
 imperial_pref: 'tsp'
 updated: '2026-05-13'
 

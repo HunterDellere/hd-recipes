@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Furikake (homemade rice seasoning)'
 desc: 'Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice-grain-sized seasoning, then mixed with toasted sesame, shredded nori, and salt. The end-of-the-batch move that turns dashi byproducts into a pantry staple.'
 metaDesc: 'Furikake from spent dashi: how to dry kombu and katsuobushi into okaka-style rice seasoning, with toasted sesame and nori. The classic no-waste washoku move.'
-tags: ['japanese', 'umami', 'pantry', 'rice', 'make-ahead']
+tags: ['umami', 'pantry', 'rice', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 12

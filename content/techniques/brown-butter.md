@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Brown butter (beurre noisette)'
 desc: 'Cook butter past the foaming stage until milk solids turn amber — yields hazelnut aroma and Maillard depth from the casein toasting.'
-tags: ['fat', 'umami']
+tags: ['umami']
 updated: '2026-04-26'
 
 about: |

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Red wine vinegar'
 desc: 'Live mother of vinegar fed leftover red wine in a wide jar — acetobacter oxidizes the ethanol to acetic acid over 60 to 90 days. Yields a vinegar with floral and tannic complexity that pasteurized commercial product lacks.'
 metaDesc: 'Homemade red wine vinegar: the acetobacter live culture, alcohol-tolerance window, feeding schedule, and timing for a vinaigrette-grade vinegar. 60 to 90 day cure at 21 to 27 °C.'
-tags: ['fermentation', 'acid', 'pantry', 'mediterranean', 'make-ahead', 'weekend-project']
+tags: ['fermentation', 'pantry', 'make-ahead', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 30

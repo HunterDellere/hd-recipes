@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Overnight oats with warm spice and grated pear'
 desc: 'Old-fashioned rolled oats soaked overnight in kefir (or thick yogurt thinned with milk) with cardamom, cinnamon, nutmeg, a small spoon of maple, and a pinch of salt. The 8-hour cold soak softens the oats to a creamy porridge texture without cooking, and the lactic acid in the kefir partially breaks down the phytic acid in the bran for improved mineral absorption. Grated pear, toasted walnuts, and a final pinch of flaky salt go on at serving. The pear is grated, not chopped, because the cells release their juice into the cold porridge and amplify the perceived sweetness without added sugar.'
 metaDesc: 'Overnight oats with cardamom, cinnamon, nutmeg, and kefir. Grated pear and toasted walnuts on top. Healthy make-ahead breakfast that keeps 4 days refrigerated.'
-tags: ['breakfast', 'make-ahead', 'no-cook', 'oats', 'grain', 'fruit', 'healthy']
+tags: ['make-ahead', 'no-cook']
 updated: '2026-05-17'
 
 servings: 4

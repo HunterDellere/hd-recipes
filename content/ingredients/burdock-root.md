@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Burdock root (gobō, niúbàng)'
 desc: 'Long, slender, dark-skinned taproot of Arctium lappa, the great burdock. A fibrous, earthy, faintly astringent root that requires shaving rather than slicing and a quick water-soak to manage its oxidation. The structural root in Japanese kinpira gobō, tonjiru and kenchinjiru, and Chinese medicinal soups; nearly unknown in Western cuisine outside its herbal supplement form.'
 metaDesc: 'Burdock root (gobō, niúbàng): fibrous earthy taproot used in Japanese kinpira, miso soups, and Chinese medicinal preparations; inulin chemistry, shaving technique, water-soak prep.'
-tags: ['vegetable', 'asian', 'japanese']
+tags: []
 density_g_per_ml: 0.75
 updated: '2026-05-15'
 

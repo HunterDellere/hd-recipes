@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Comal charring (vegetables, chilies, tortillas)'
 desc: 'Charr vegetables, dried chilies, fresh chilies, tomatillos, garlic, onion halves, or tortillas on a dry hot comal or cast iron griddle until the surface develops a dark mottled lacquer of Maillard-and-pyrolysis products. The technique works by direct radiative-and-conductive heat from a 230 to 320 °C metal surface; the absence of fat or water lets the contact face climb past Maillard temperature within seconds and develop the depth of flavor that defines Mexican salsa and ensalada cooking.'
 metaDesc: 'Comal charring: dry-heat blackening of vegetables, chilies, tortillas. Why fat and water steam rather than char; surface temperature targets; applications across salsas, ensaladas, mole bases, and tortilla warming.'
-tags: ['vegetable', 'spice', 'aromatic']
+tags: []
 updated: '2026-05-10'
 
 about: |

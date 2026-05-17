@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Raising Cane''s sauce (homemade copycat)'
 desc: 'The peppery mayo-ketchup-Worcestershire dipping sauce that defines a Cane''s chicken finger meal. Heavy on coarsely cracked black pepper, with garlic powder and a small dose of paprika; the four-hour refrigerated rest is non-negotiable. Tastes like a Louisiana remoulade simplified to its load-bearing parts.'
 metaDesc: 'Raising Cane''s sauce copycat recipe, homemade dipping sauce with mayo, ketchup, Worcestershire, heavy cracked black pepper, garlic powder.'
-tags: ['condiment', 'sauce', 'copycat', 'fast-food', 'american', 'no-cook', 'emulsion']
+tags: ['condiment', 'copycat', 'no-cook', 'emulsion']
 updated: '2026-05-17'
 
 servings: 8

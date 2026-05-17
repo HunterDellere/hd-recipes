@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Black beans from dried'
 desc: 'Dried black beans soaked overnight then simmered with onion, bay, and a strip of kombu into a creamy bean and a richly seasoned bean liquor. The structural pot of beans for Mexican, Cuban, and African-American cooking. Stub.'
 metaDesc: 'Dried black beans simmered into the structural pot of beans for Mexican, Cuban, and African-American cooking. Stub recipe.'
-tags: ['legume', 'mexican', 'weekend-project', 'make-ahead', 'umami', 'pantry']
+tags: ['weekend-project', 'make-ahead', 'umami', 'pantry']
 updated: '2026-05-10'
 
 servings: 8

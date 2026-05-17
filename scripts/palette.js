@@ -154,10 +154,8 @@
 
   // ── Filter prefix lexer ────────────────────────────────────────────────
   // Recognized keys: type, course, diet, time, cuisine, tag.
-  //   type:dessert  → matches entry.type OR entry.course (intuitive for users)
-  //   time:<30      → < / > / <= / >= comparators; bare number defaults to <=
-  //   cuisine:thai  → case-insensitive substring on cuisine
-  // Multiple filters AND together: "diet:vegan course:dessert chocolate"
+  // `time:<30`, `time:>15`, `time:30` all parse — the comparator defaults to <=.
+  // Multiple filters allowed: "type:dessert diet:vegan chocolate".
   const FILTER_KEYS = new Set(['type', 'course', 'diet', 'time', 'cuisine', 'tag']);
 
   function parseQuery(raw) {
@@ -170,12 +168,14 @@
         const key = m[1].toLowerCase();
         const val = m[2];
         if (key === 'time') {
+          // time:<30, time:>15, time:30 → { cmp: '<'|'>'|'<=', n }
           const cm = /^([<>]=?)?(\d+)$/.exec(val);
           if (cm) {
             const cmp = cm[1] || '<=';
             filters.time = { cmp, n: parseInt(cm[2], 10) };
           }
         } else {
+          // course/diet/cuisine/type/tag — case-insensitive equality (or contains for cuisine)
           (filters[key] = filters[key] || []).push(val.toLowerCase());
         }
       } else {
@@ -188,6 +188,7 @@
   function entryMatchesFilters(e, filters) {
     if (!e) return false;
     if (filters.type) {
+      // type matches entry.type OR entry.course (so type:dessert filters by course too)
       const v = filters.type;
       const matchT = v.includes(String(e.type || '').toLowerCase());
       const matchC = e.course && v.includes(String(e.course).toLowerCase());
@@ -199,6 +200,7 @@
     if (filters.cuisine) {
       if (!e.cuisine) return false;
       const cu = String(e.cuisine).toLowerCase();
+      // Allow partial match: cuisine:thai matches "Thai" or "Thai-Lao"
       if (!filters.cuisine.some(v => cu.includes(v))) return false;
     }
     if (filters.diet) {
@@ -214,10 +216,10 @@
       const active = Number(t.active_min) || ((Number(t.prep_min) || 0) + (Number(t.cook_min) || 0)) || Number(t.total_min) || 0;
       if (!active) return false;
       const { cmp, n } = filters.time;
-      if (cmp === '<')  { if (!(active <  n)) return false; }
-      else if (cmp === '>')  { if (!(active >  n)) return false; }
+      if (cmp === '<') { if (!(active < n)) return false; }
+      else if (cmp === '>') { if (!(active > n)) return false; }
       else if (cmp === '>=') { if (!(active >= n)) return false; }
-      else                   { if (!(active <= n)) return false; }
+      else { if (!(active <= n)) return false; }
     }
     return true;
   }
@@ -379,6 +381,7 @@
     } else if (hasFilters && !q) {
       // Pure filter, no search text — enumerate all entries matching filters.
       const all = (entries || []).filter(e => entryMatchesFilters(e, filters));
+      // Sort: complete first, then by title
       all.sort((a, b) => {
         if ((a.status === 'complete') !== (b.status === 'complete')) {
           return a.status === 'complete' ? -1 : 1;
@@ -391,6 +394,7 @@
       }));
     } else {
       const scored = searchEntries(q || raw);
+      // Apply filters to scored results
       const filtered = hasFilters
         ? scored.filter(s => entryMatchesFilters(s.entry, filters))
         : scored;

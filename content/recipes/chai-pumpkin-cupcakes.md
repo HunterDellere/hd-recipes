@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chai pumpkin cupcakes'
 desc: 'Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream cheese.'
 metaDesc: 'Pumpkin cupcakes with chai-infused milk and pan-roasted pumpkin. Brown butter cream cheese frosting. Yields 12.'
-tags: ['cake', 'dessert', 'tea', 'comfort', 'holiday']
+tags: ['cake', 'comfort', 'holiday']
 updated: '2026-04-26'
 
 servings: 12

@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Taro root'
 desc: 'Starchy corm of Colocasia esculenta. Pale flesh flecked with purple veins; cooks into a sweet, nutty, mildly perfumed mash with a unique slick mouthfeel. Real taro flavor is gentle, the lavender color and chemical "taro" flavor of commercial bubble tea is artificial.'
-tags: ['starch', 'asian', 'tropical', 'vegetable']
+tags: ['starch', 'tropical']
 density_g_per_ml: 1.05
 imperial_pref: 'oz'
 updated: '2026-05-16'

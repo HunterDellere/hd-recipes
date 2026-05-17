@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Bouillabaisse Marseillaise'
 desc: 'The Marseille fisherman''s seafood stew built around a saffron-fennel-orange-tomato broth fortified with the heads and bones of multiple firm white fish (the structural Provençal canon: rascasse, conger eel, monkfish, john dory; in US markets: monkfish, cod, halibut, snapper, sea bass), simmered hard to a milky emulsion, then strained and brought back to a bare simmer to poach the fish chunks. Served in two courses: the broth first, ladled over saffron-rubbed croutons crowned with rouille (a saffron-garlic aioli); the fish second, on a separate platter with steamed potatoes and more rouille. The defining Provençal seafood dish, distinct from cioppino in the broth-strain step, the fish-on-the-side service, and the saffron-orange-fennel aromatic signature.'
 metaDesc: 'Marseille bouillabaisse: the canonical Provençal fish stew with saffron, fennel, orange peel, and tomato; broth strained to a milky emulsion; multiple firm white fish poached separately and served with rouille and croutons. The Mediterranean cousin of cioppino, with the broth-strain technique and the two-course service that defines the dish.'
-tags: ['seafood', 'fish', 'stew', 'soup', 'french', 'mediterranean', 'weekend-project', 'umami', 'acid', 'one-pot']
+tags: ['seafood', 'fish', 'stew', 'soup', 'weekend-project', 'umami', 'one-pot']
 updated: '2026-05-10'
 
 servings: 6

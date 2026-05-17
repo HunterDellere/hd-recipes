@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Firm tofu'
 desc: 'Pressed soybean curd, around 70 to 80% water by weight, with enough structural integrity to hold its shape under stir-frying, deep-frying, and braising. The default tofu when a recipe says "tofu" without a qualifier in Chinese cooking.'
 metaDesc: 'Firm tofu: coagulant chemistry, water content, when firm vs extra-firm vs medium, pressing technique, role in stir-fry, dry-pot, braised dishes.'
-tags: ['legume', 'pantry', 'chinese']
+tags: ['pantry']
 density_g_per_ml: 1.05
 updated: '2026-05-09'
 

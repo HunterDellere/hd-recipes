@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chicken patties (Pakistani puff-pastry hand pies)'
 desc: 'Spiced chicken keema (ground chicken cooked with onion, ginger-garlic, garam masala) folded into store-bought puff pastry, sealed, egg-washed, and baked until shatteringly crisp. The Karachi bakery-stall standard, the structural item at every Pakistani tea-and-snack gathering. Two filling traditions cover most of the spectrum: keema (dry) and creamy (with bechamel).'
 metaDesc: 'Pakistani chicken patties: spiced chicken keema in puff pastry, the Karachi bakery snack. Two fillings (keema or creamy), full home version with store-bought pastry shortcut.'
-tags: ['pakistani', 'indian', 'chicken', 'snack', 'comfort']
+tags: ['chicken', 'comfort']
 updated: '2026-05-09'
 
 servings: 8

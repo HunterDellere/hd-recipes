@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fresh egg pasta'
 desc: 'Tipo 00 flour and whole eggs, kneaded to silk and rolled thin. The base for tonnarelli, tagliatelle, pappardelle: anywhere a starchy, porous fresh sheet belongs. The gluten structure here is fundamentally different from dried pasta: lower protein, no durum, no extrusion.'
 metaDesc: 'Homemade fresh egg pasta: tipo 00 flour, whole eggs, kneaded smooth, rolled thin. Covers tagliatelle, tonnarelli, pappardelle, and hand-cut shapes.'
-tags: ['pasta', 'italian', 'pantry', 'weekend-project']
+tags: ['pasta', 'pantry', 'weekend-project']
 updated: '2026-05-04'
 
 servings: 4

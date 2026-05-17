@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Kokum'
 desc: 'Garcinia indica, a small dark-purple Indian fruit in the mangosteen family. Dried rind strips or kokum sol (kokum butter-extracted dried fruit) are the canonical souring agent of Goan and Konkan coastal cooking. The sour compound is hydroxycitric acid (HCA), which produces a mildly fruity-astringent, distinctly non-citrus sourness. The souring agent in Goan fish curry (xacuti), sol kadi (Goan drink), and the tart coastal curries of Maharashtra.'
 metaDesc: 'Kokum: Garcinia indica, hydroxycitric acid sourness, the difference from tamarind and citrus, applications in Goan xacuti and Konkan coastal curries, and how to find or substitute kokum outside South Asian specialty markets.'
-tags: ['acid', 'spice', 'indian']
+tags: []
 updated: '2026-05-10'
 
 about: |

@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Chocolate-butter emulsion'
 desc: 'Melt chocolate and butter together into a single glossy mass before any egg, sugar, or flour. The cocoa butter and dairy fat fuse into one stable fat phase, which becomes the structural and flavor backbone of the bake.'
 metaDesc: 'Chocolate-butter emulsion: melting chocolate and butter as a unified foundation for cakes, brownies, and glazes. Mechanism, ratios, and break-recovery.'
-tags: ['chocolate', 'fat']
+tags: []
 updated: '2026-05-09'
 
 about: |

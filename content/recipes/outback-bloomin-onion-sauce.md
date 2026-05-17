@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Outback bloomin onion sauce (homemade copycat)'
 desc: 'The horseradish-mayo-ketchup-cayenne dipping sauce that comes with Outback Steakhouse''s deep-fried onion. Creamy, tangy, hot, and pale pink-orange; the horseradish is the load-bearing aromatic, the cayenne provides slow back-of-tongue heat, and the ketchup contributes color and a faint sweet base. Reads as a remoulade crossed with a cocktail sauce.'
 metaDesc: 'Outback bloomin onion sauce copycat recipe, homemade horseradish dipping sauce with mayo, ketchup, cayenne, oregano. Creamy tangy hot dipping sauce.'
-tags: ['condiment', 'sauce', 'copycat', 'american', 'no-cook', 'quick', 'emulsion', 'spicy']
+tags: ['condiment', 'copycat', 'no-cook', 'quick', 'emulsion', 'spicy']
 updated: '2026-05-17'
 
 servings: 8

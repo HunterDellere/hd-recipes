@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mediterranean grain bowl with tahini-yogurt'
 desc: 'Farro cooked al dente in salted water, mixed roasted vegetables (zucchini, red pepper, red onion) hard-roasted at 230 °C until the cut faces brown, crisped chickpeas dried hard before they hit the oil, a cold tahini-yogurt sauce thinned with lemon juice and ice water, and a heavy finish of parsley, dill, and lemon zest. The bowl is built around the contrast between the warm caramelized vegetables, the cool acidic dressing, and the chewy grain that picks up both. Batch-cookable: every component holds 4 days refrigerated, the bowl assembles cold or warm in 5 minutes.'
 metaDesc: 'Mediterranean grain bowl with farro, roasted vegetables, crispy chickpeas, and lemon tahini-yogurt sauce. Batch-cookable healthy lunch with 30-minute active time.'
-tags: ['mediterranean', 'bowl', 'grain', 'vegetable', 'make-ahead', 'healthy', 'lunch']
+tags: ['bowl', 'make-ahead']
 updated: '2026-05-17'
 
 servings: 4

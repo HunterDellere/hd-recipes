@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Queso fresco'
 desc: 'Mexican fresh, lightly pressed cow-milk cheese ; rennet-set or acid-set, briefly drained, salted, and aged 1 to 7 days. Crumbly, mild, salt-forward; the canonical garnish cheese for tacos, ensaladas, beans, and tostadas.'
 metaDesc: 'Queso fresco: Mexican fresh cheese chemistry, set method, salt level, why it crumbles instead of melts, sourcing and storage, place against feta and ricotta salata.'
-tags: ['dairy', 'umami']
+tags: ['umami']
 density_g_per_ml: 1.0
 imperial_pref: 'cup'
 updated: '2026-05-10'

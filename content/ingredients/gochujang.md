@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Gochujang (Korean fermented chili paste, 고추장)'
 desc: 'Korean ferment of glutinous rice, gochugaru chili powder, fermented soybean powder (meju), barley malt, and salt, aged in earthen jars from 6 months to several years. The structural sweet-spicy-fermented backbone of Korean cooking — present in bibimbap, tteokbokki, ojingeo bokkeum, dakgalbi, and most Korean stews.'
 metaDesc: 'Gochujang: rice and soy fermentation chemistry, sweetness vs heat balance, heat grades, role in Korean stews and stir-fries. When it is and isn''t a substitute for doubanjiang.'
-tags: ['korean', 'pantry', 'umami', 'fermentation', 'spicy', 'sauce']
+tags: ['pantry', 'umami', 'fermentation', 'spicy']
 density_g_per_ml: 1.30
 updated: '2026-05-09'
 

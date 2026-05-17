@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Green goddess grain salad'
 desc: 'Cooked farro tossed cold with cucumber, scallion, and a creamy yogurt-avocado green goddess dressing that goes into the blender with a large fistful of soft herbs (parsley, basil, dill, chives) and a small punch of anchovy and lemon. The dressing is the entire dish: the herbs blend into a smooth, bright-green emulsion, the avocado contributes body without dairy heaviness, and the anchovy provides the structural glutamate that makes the salad read like a salad rather than a yogurt-coated grain pile. No-cook for the dressing, cold-assembled, batch-cookable for lunches.'
 metaDesc: 'Green goddess grain salad with farro, cucumber, and a herb-packed yogurt-avocado dressing blended bright green. Cold-assembled, batch-cookable healthy lunch.'
-tags: ['salad', 'grain', 'bowl', 'no-cook', 'make-ahead', 'lunch', 'healthy', 'fresh-herbs']
+tags: ['salad', 'bowl', 'no-cook', 'make-ahead']
 updated: '2026-05-17'
 
 servings: 4

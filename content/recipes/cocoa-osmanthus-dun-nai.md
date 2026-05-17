@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cocoa-osmanthus dun nai'
 desc: 'Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral, silken.'
 metaDesc: 'Cantonese steamed milk pudding (dun nai) infused with cocoa nibs, finished with dried osmanthus flowers and brewed oolong.'
-tags: ['custard', 'dessert', 'chinese', 'chocolate', 'tea']
+tags: ['custard']
 updated: '2026-04-26'
 
 servings: 6

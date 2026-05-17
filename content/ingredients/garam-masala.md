@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Garam masala (warming spice blend)'
 desc: 'A finishing spice blend of toasted whole spices ground together. Common base: cumin, coriander, cardamom, cinnamon, cloves, black pepper, bay leaf, sometimes nutmeg or mace. The blend varies by region and household; the structural rule is that it goes in late, after the dish is mostly cooked, so the volatile aromatics survive into the eating.'
 metaDesc: 'Garam masala: the finishing spice blend of North Indian and Pakistani cooking. Composition, why it''s added late, regional variation, when to use store-bought vs homemade.'
-tags: ['spice', 'aromatic', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.45
 updated: '2026-05-09'
 

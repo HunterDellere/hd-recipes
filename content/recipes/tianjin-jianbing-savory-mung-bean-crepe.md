@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tianjin jianbing guozi (Tianjin savory mung-bean crepe, 天津煎饼馃子)'
 desc: 'A paper-thin mung-bean-and-millet crepe spread with a wooden T-bar on a hot round griddle, cracked with one egg and seeded with black and white sesame while the batter is still wet, flipped once, then painted with tianmianjiang (sweet bean sauce), fermented bean curd sauce, and a brushed-on roasted chili paste before a sheet of bao cui (thin shatter-crisp wheat cracker) is laid across the center and the whole disc is folded into a hand-held rectangle. The Tianjin canonical breakfast wrap; the entire dish is engineered around three textural commitments: the lacy-thin crepe edge, the wet-then-flash-cooked egg layer, and the bao cui that must stay glass-shatter under the sauce.'
 metaDesc: 'Tianjin jianbing guozi: thin mung-bean and millet crepe with egg, sesame, three sauces (tianmianjiang, fermented bean curd, chili), and bao cui (crispy wheat cracker) folded into a hand-held breakfast wrap.'
-tags: ['chinese', 'breakfast', 'weeknight', 'umami', 'fritter']
+tags: ['weeknight', 'umami']
 updated: '2026-05-12'
 
 servings: 2

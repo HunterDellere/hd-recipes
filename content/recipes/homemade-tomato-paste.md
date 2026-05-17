@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade tomato paste (slow-roasted concentrate)'
 desc: 'Whole canned tomatoes reduced over 6 to 8 hours of low-oven roasting into a thick, deep-rust-red concentrate; the homemade tomato paste that distinguishes from the metallic can. The structural umami amplifier for cioppino, pasta sauces, and braises, with a layered flavor profile that includes caramelized fruit sugars (from Maillard browning) and reduced glutamate concentration (from water removal). A weekend project; one batch fills a small jar that lasts months in the refrigerator under a layer of olive oil.'
 metaDesc: 'Homemade tomato paste: 6 to 8 hour slow-oven roast of canned San Marzano tomatoes into a concentrated rust-red paste; the structural umami of Italian sauces. Stub recipe.'
-tags: ['pantry', 'sauce', 'umami', 'make-ahead', 'weekend-project']
+tags: ['pantry', 'umami', 'make-ahead', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 16

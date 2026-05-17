@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lotus root (lian ou, 莲藕)'
 desc: 'The rhizome of the sacred lotus, sold as long segmented tubes. Crisp and faintly sweet raw, starchy and soft when slow-cooked. The cross-cut wagon-wheel pattern of the air channels is the visual identity of half a dozen East Asian cuisines.'
 metaDesc: 'Lotus root: cultivar starch curves, crisp-vs-starchy uses, oxidation control with acid water, role in Chinese / Japanese / Korean / Vietnamese cooking, storage.'
-tags: ['vegetable', 'chinese', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.85
 updated: '2026-05-09'
 

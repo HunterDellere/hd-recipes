@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Classic pancakes'
 desc: 'Whole milk soured with vinegar replaces buttermilk — the acid drives CO2 from baking soda and pushes pH high enough for rapid Maillard browning. The result is tall, tender stacks with a caramelized underside.'
 metaDesc: 'Classic pancakes without buttermilk: sour whole milk with vinegar, combine with baking soda for a double-lift and deep browning. Stack is tall, interior is tender.'
-tags: ['weeknight', 'american', 'comfort', 'egg', 'dairy', 'grain']
+tags: ['weeknight', 'comfort', 'egg']
 updated: '2026-05-04'
 
 servings: 2

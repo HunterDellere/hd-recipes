@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'House blend chai'
 desc: 'A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no mix.'
 metaDesc: 'Homemade masala chai with toasted whole spices, fresh ginger, and Assam tea. Boiled-and-pulled milk technique for the proper body.'
-tags: ['tea', 'indian', 'drink', 'weeknight']
+tags: ['weeknight']
 updated: '2026-04-26'
 
 servings: 2

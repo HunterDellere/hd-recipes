@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chipotle in adobo (homemade)'
 desc: 'Dried chipotle morita peppers rehydrated in a tomato-vinegar-aromatic sauce. The fresher home version of the canned product, with markedly less of the metallic tinned-tomato note. Stub.'
 metaDesc: 'Homemade chipotle in adobo: dried chipotle morita rehydrated in tomato-vinegar-aromatic sauce. Fresher than canned. Stub recipe.'
-tags: ['sauce', 'mexican', 'spicy', 'umami', 'make-ahead', 'pantry']
+tags: ['spicy', 'umami', 'make-ahead', 'pantry']
 updated: '2026-05-10'
 
 servings: 16

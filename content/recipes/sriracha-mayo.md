@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sriracha mayo (yum yum sauce variant)'
 desc: 'Mayonnaise, sriracha, rice vinegar, sugar, and a touch of garlic. Functions as the dipping sauce for shrimp, the spread for spicy tuna rolls, the drizzle for poke bowls, and the standard for everything that wants creamy heat. Adjustable from gentle pink to vivid red depending on dose.'
 metaDesc: 'Sriracha mayo / yum yum sauce, mayo, sriracha, rice vinegar, garlic, sesame oil. Versatile Asian-American dipping and drizzling sauce.'
-tags: ['condiment', 'sauce', 'no-cook', 'quick', 'spicy', 'emulsion', 'asian']
+tags: ['condiment', 'no-cook', 'quick', 'spicy', 'emulsion']
 updated: '2026-05-16'
 
 servings: 8

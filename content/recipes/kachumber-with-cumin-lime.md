@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Kachumber with cumin and lime'
 desc: 'North Indian chopped raw salad: even fine dice of cucumber, tomato, and red onion, dressed with toasted cumin bloomed in lime, chaat masala, green chili, and mint. Built as a cooling foil to rich curries; the seasoning is sour, smoky from cumin, and salt-forward, not sweet.'
 metaDesc: 'Kachumber: North Indian raw chopped salad with toasted cumin, lime, chaat masala, mint, and cilantro. The cooling foil to dal, biryani, and rich curries.'
-tags: ['salad', 'indian', 'vegetable', 'herb', 'acid', 'no-cook', 'side', 'weeknight']
+tags: ['salad', 'no-cook', 'weeknight']
 updated: '2026-05-10'
 
 servings: 4

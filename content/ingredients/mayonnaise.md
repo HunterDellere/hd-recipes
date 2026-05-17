@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mayonnaise'
 desc: 'Stable oil-in-water emulsion of egg yolk, neutral oil, lemon or vinegar, and salt. Structurally a fat carrier for flavor and a binder for sandwich fillings, salad bases, and condiment-driven dishes.'
 metaDesc: 'Mayonnaise: lecithin-driven oil-in-water emulsion. Why Hellmann''s is the American baseline, when Kewpie wins, and the homemade chemistry that makes the from-scratch version different.'
-tags: ['fat', 'pantry', 'umami']
+tags: ['pantry', 'umami']
 density_g_per_ml: 0.94
 imperial_pref: 'tbsp'
 updated: '2026-05-09'

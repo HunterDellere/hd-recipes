@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Individual decadent chocolate cakes'
 desc: 'Two 4-inch chocolate cakes built on a chocolate-butter emulsion and bloomed Dutch cocoa, with brown sugar for moisture and a turbinado crackle top. No frosting: the cake itself is the payload.'
 metaDesc: 'Decadent individual chocolate cakes baked in two 4-inch pans. Chocolate-butter emulsion, bloomed cocoa, fudge-textured crumb, no frosting needed.'
-tags: ['cake', 'chocolate', 'dessert', 'weekend-project', 'comfort']
+tags: ['cake', 'weekend-project', 'comfort']
 updated: '2026-05-09'
 
 servings: 2

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salt-and-pepper squid (Cantonese jiao yan you yu, 椒盐鱿鱼)'
 desc: 'Cross-hatch-scored squid tubes dredged in a cornstarch-and-rice-flour mix, deep-fried 90 seconds at 175°C, tossed with toasted-and-ground white-pepper salt and crisped chili-garlic-scallion. The 90-second high-heat cooking window for squid, executed at deep-fry intensity. Pinecone curls from the scoring, salt-pepper crust on every cut edge.'
 metaDesc: 'Cantonese salt-and-pepper squid (jiao yan you yu): the cross-hatch-scored deep-fried squid with toasted white pepper salt — the textbook restaurant version, executed at home.'
-tags: ['chinese', 'seafood', 'fish', 'spicy', 'weeknight']
+tags: ['seafood', 'fish', 'spicy', 'weeknight']
 updated: '2026-05-09'
 
 servings: 3

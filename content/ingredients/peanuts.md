@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Peanuts'
 desc: 'A legume sold raw, blanched, dry-roasted, oil-roasted, or salted. Eaten across global cooking as a textural and protein topping, sauce thickener, oil source, and confection base.'
 metaDesc: 'Peanuts: forms, oil chemistry, allergen status, and roles across Chinese, Southeast Asian, West African, and American cooking. Buying, storage, substitutions.'
-tags: ['legume', 'pantry', 'fat']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-09'
 

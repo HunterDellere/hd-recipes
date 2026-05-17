@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Toasted sesame paste (zhī ma jiàng)'
 desc: 'Hulled white sesame seeds toasted dark, ground to a thick caramel-brown paste with a splash of toasted sesame oil. The Chinese pantry version: deeply roasted, structurally distinct from raw Levantine tahini.'
 metaDesc: 'Homemade Chinese toasted sesame paste: dark-roasted hulled sesame seeds, ground with toasted sesame oil. The base for dan dan, hot pot dipping sauce, sesame noodles.'
-tags: ['sauce', 'umami', 'chinese', 'pantry', 'make-ahead']
+tags: ['umami', 'pantry', 'make-ahead']
 updated: '2026-04-27'
 
 servings: 16

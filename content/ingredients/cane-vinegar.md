@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Cane vinegar'
 desc: 'Vinegar fermented from sugarcane juice or molasses. Around 4–5% acetic acid, with a softer, more sulfurous edge than rice or distilled vinegar.'
-tags: ['acid', 'pantry', 'filipino']
+tags: ['pantry']
 density_g_per_ml: 1.01
 imperial_pref: 'tbsp'
 updated: '2026-05-09'

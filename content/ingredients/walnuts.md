@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Walnuts'
 desc: 'The seed of Juglans regia (English walnut) and Juglans nigra (black walnut). Buttery and fatty when fresh, bitter and stale when oxidized. The fat fraction is high and rancidity is the storage problem to manage.'
 metaDesc: 'Walnuts: English vs black, fat oxidation problem, toasting, storage, role across pesto / cheese plates / baking / Levantine and Persian cooking.'
-tags: ['pantry', 'fat']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-09'
 

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Raita (cucumber-mint, the household standard)'
 desc: 'Plain whole-milk yogurt whisked smooth with grated cucumber, fresh mint, toasted cumin, and a small pinch of black salt or kala namak. The cooling counterpoint to spicy biryani, pulao, and curry. Five minutes of prep; structural to a South Asian meal in a way that "side salad" is not.'
 metaDesc: 'Raita: cucumber-mint yogurt the structural cooling counterpoint to South Asian spicy meals. Toasted-cumin technique, three textbook variations (boondi, mint, vegetable).'
-tags: ['indian', 'pakistani', 'side', 'no-cook']
+tags: ['no-cook']
 updated: '2026-05-09'
 
 servings: 6

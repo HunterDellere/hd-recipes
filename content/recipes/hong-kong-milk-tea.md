@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Hong Kong silk-stocking milk tea (絲襪奶茶)'
 desc: 'Cha chaan teng style: a blend of Ceylon black teas extracted hot, repeatedly poured between two pots through a long cloth filter, then mixed with evaporated milk and sugar. The cloth filter (the "silk stocking") smooths out tannins by physical adsorption.'
 metaDesc: 'Hong Kong silk-stocking milk tea (絲襪奶茶), multi-blend Ceylon extraction, cloth-filter pour-back technique, evaporated milk service.'
-tags: ['drink', 'tea', 'hong-kong', 'milk-tea', 'chinese']
+tags: ['milk-tea']
 updated: '2026-05-16'
 
 servings: 2

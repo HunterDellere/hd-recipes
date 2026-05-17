@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Sweet potato'
 desc: 'Storage root of *Ipomoea batatas*, a morning-glory-family vine, botanically unrelated to the true potato. Beta-amylase activity during slow cooking is the defining variable: it sets how sweet the root reads after heat.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 1.03
 imperial_pref: 'cup'
 updated: '2026-05-09'

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Nori (laver sheets)'
 desc: 'Pressed and dried Pyropia red algae ,  paper-thin black-green sheets with a sweet, slightly oceanic snap. The wrap for sushi and onigiri, the topping for ramen, and the source of the most surface-area umami per gram of any pantry ingredient.'
 metaDesc: 'Nori: pressed Pyropia laver sheets ,  sushi vs. onigiri vs. yaki-nori grades, the toasting step that transforms texture, and the right way to keep it crisp.'
-tags: ['umami', 'japanese', 'pantry']
+tags: ['umami', 'pantry']
 updated: '2026-05-09'
 
 about: |

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chinese tea eggs'
 desc: 'Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marble pattern in the white.'
 metaDesc: 'Marbled Chinese tea eggs simmered in soy, black tea, star anise, and Sichuan peppercorns. Best after 24-hour steep.'
-tags: ['egg', 'chinese', 'tea', 'make-ahead', 'umami']
+tags: ['egg', 'make-ahead', 'umami']
 updated: '2026-04-26'
 
 servings: 12

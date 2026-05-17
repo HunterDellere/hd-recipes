@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Larb gai (Thai-Lao minced chicken salad)'
 desc: 'Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili powder, and toasted glutinous-rice powder, finished with shallot, mint, cilantro, scallion, and culantro. The toasted-rice powder is the structural element. Without it the dish is a wet salad; with it the dressing thickens to a slurry that clings to every fiber.'
 metaDesc: 'Larb gai built the Isaan way: hand-chopped chicken thigh, low-water poach, fish sauce and lime balance, toasted glutinous-rice powder for body, fresh herbs by the handful.'
-tags: ['salad', 'thai', 'chicken', 'spicy', 'umami', 'weeknight']
+tags: ['salad', 'chicken', 'spicy', 'umami', 'weeknight']
 updated: '2026-05-10'
 
 servings: 4

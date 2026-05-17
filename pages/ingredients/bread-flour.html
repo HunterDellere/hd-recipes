@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Bread flour","status":"complete","tags":["grain"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Bread flour","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,28 +109,12 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">bread flour (yeast bread, pizza, bagels)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="all-purpose-flour.html">all-purpose flour</a> plus vital wheat gluten</span>
-          <p class="sub-card-note">Add 1 tbsp (10 g) of vital wheat gluten per 130 g (1 cup) of AP flour to approximate the protein content of bread flour. Functional 1:1 by mass. The bread will be very close but slightly less chewy than true bread flour.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">bread flour (enriched doughs: brioche, milk bread, breadsticks)</span>
-          <span class="sub-card-use">all-purpose flour</span>
-          <p class="sub-card-note">AP at 11 to 12 percent protein produces a softer, less chewy enriched bread. Acceptable when the dish does not depend on chew. The crumb will read more cake-tender; the structural rise will be slightly compromised at high enrichment levels (more than 25 percent butter or egg by flour mass).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">bread flour (Neapolitan-style pizza)</span>
-          <span class="sub-card-use">00 pizza flour (Caputo Pizzeria, Antimo Caputo Cuoco)</span>
-          <p class="sub-card-note">The finer grind produces a more delicate, blistered crust at the same hydration. Functional 1:1 by mass. The single largest upgrade for serious Neapolitan pizza work; bread flour is the everyday choice that produces a still-excellent crust.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">bread flour (whole-grain swap, partial)</span>
-          <span class="sub-card-use">whole-wheat bread flour, 25 to 50 percent replacement</span>
-          <p class="sub-card-note">Whole-wheat bread flour adds bran and germ that physically cut into the gluten matrix and reduce rise; partial replacement adds nutty depth without crippling structure. Going beyond 50 percent without recipe adjustment produces a dense bake.</p>
-        </li>
+        <li><strong>bread flour (yeast bread, pizza, bagels)</strong> → <a class="x-link" data-category="ingredients" href="all-purpose-flour.html">all-purpose flour</a> plus vital wheat gluten <span class="sub-note">Add 1 tbsp (10 g) of vital wheat gluten per 130 g (1 cup) of AP flour to approximate the protein content of bread flour. Functional 1:1 by mass. The bread will be very close but slightly less chewy than true bread flour.</span></li>
+        <li><strong>bread flour (enriched doughs: brioche, milk bread, breadsticks)</strong> → all-purpose flour <span class="sub-note">AP at 11 to 12 percent protein produces a softer, less chewy enriched bread. Acceptable when the dish does not depend on chew. The crumb will read more cake-tender; the structural rise will be slightly compromised at high enrichment levels (more than 25 percent butter or egg by flour mass).</span></li>
+        <li><strong>bread flour (Neapolitan-style pizza)</strong> → 00 pizza flour (Caputo Pizzeria, Antimo Caputo Cuoco) <span class="sub-note">The finer grind produces a more delicate, blistered crust at the same hydration. Functional 1:1 by mass. The single largest upgrade for serious Neapolitan pizza work; bread flour is the everyday choice that produces a still-excellent crust.</span></li>
+        <li><strong>bread flour (whole-grain swap, partial)</strong> → whole-wheat bread flour, 25 to 50 percent replacement <span class="sub-note">Whole-wheat bread flour adds bran and germ that physically cut into the gluten matrix and reduce rise; partial replacement adds nutty depth without crippling structure. Going beyond 50 percent without recipe adjustment produces a dense bake.</span></li>
     </ul>
 
     
@@ -143,67 +129,53 @@
           <span class="rl-card-title">Olive Garden breadsticks (the copycat)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
+          
+        </a>
     </div>
   
     <span class="section-anchor" id="related"></span>
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
-      <div class="rl-group" data-related-group="recipes">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/toasted-rice-powder.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Toasted glutinous-rice powder (khao khua)</span>
-          <span class="rl-card-why">grain</span>
-        </a>
-        </div>
-      </div>
-
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">related</span>
+        </a>
+        <a class="rl-card is-strong" href="agar-agar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Agar-agar</span>
+          <span class="rl-card-why">related</span>
+        </a>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">related</span>
+        </a>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">related</span>
+        </a>
         <a class="rl-card is-strong" href="all-purpose-flour.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">All-purpose flour</span>
-          <span class="rl-card-why">grain</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="millet.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Millet (pearl millet, foxtail millet, finger millet)</span>
-          <span class="rl-card-why">grain</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="potato-starch.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Potato starch</span>
-          <span class="rl-card-why">grain</span>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="white-rice-flour.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">White rice flour</span>
-          <span class="rl-card-why">grain</span>
-        </a>
-        <a class="rl-card" href="basmati-rice.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Basmati rice</span>
-          <span class="rl-card-why">grain</span>
-        </a>
-        <a class="rl-card" href="atta-flour.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
-          <span class="rl-card-why">grain</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/dry-toasting.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Dry-toasting (grains, spices, seeds, dried chilies)</span>
-          <span class="rl-card-why">grain</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">related</span>
         </a>
         </div>
       </div>

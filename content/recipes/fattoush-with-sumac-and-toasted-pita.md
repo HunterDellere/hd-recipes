@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fattoush with sumac and toasted pita'
 desc: 'Levantine bread salad: oven-crisped day-old pita over chopped raw vegetables, dressed with a sumac, pomegranate molasses, and lemon vinaigrette. The bread goes in last and stays audible to the fork.'
 metaDesc: 'Fattoush: Levantine chopped salad with sumac-pomegranate molasses vinaigrette and oven-toasted day-old pita. Crisp bread, raw vegetables, herbs by the bunch.'
-tags: ['salad', 'levantine', 'mediterranean', 'vegetable', 'herb', 'acid', 'bread', 'no-cook']
+tags: ['salad', 'bread', 'no-cook']
 updated: '2026-05-10'
 
 servings: 4

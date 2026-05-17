@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Eggs (large)","status":"complete","tags":["egg","dairy"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Eggs (large)","status":"complete","tags":["egg"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -108,39 +110,27 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">whole egg (binding in cookies, quick breads, brownies)</span>
-          <span class="sub-card-use">flax or chia &quot;egg&quot; (1 tbsp ground seed + 3 tbsp water, rested 5 min)</span>
-          <p class="sub-card-note">Vegan binder for dense bakes where structure is forgiving. Fails in cakes built around egg structure (sponge, angel food, soufflé) and in custards.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">whole egg (custards, ice cream base, pastry cream)</span>
-          <span class="sub-card-use">no real substitute</span>
-          <p class="sub-card-note">Custards depend on yolk lecithin and ovalbumin coagulation. Starches alone (<a class="x-link" data-category="ingredients" href="cornstarch.html">cornstarch</a>, gelatin) thicken but do not set with the same body. Pick a different dessert.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">egg yolk (mayonnaise, hollandaise, aioli)</span>
-          <span class="sub-card-use">whole egg, blender method</span>
-          <p class="sub-card-note">A whole egg at room temperature emulsifies in an immersion-blender mayonnaise as cleanly as yolks alone, with a slightly looser final texture. Common pasteurized-safety move.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">egg white (meringue, soufflé, angel food cake)</span>
-          <span class="sub-card-use">aquafaba (chickpea-can liquid), whipped</span>
-          <p class="sub-card-note">Whips to a similar foam structure thanks to dissolved proteins and saponins. Use 3 tbsp aquafaba per white. Wet meringues read slightly bean-sweet on the nose; works under flavored toppings, less so plain.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">eggs scaled down by half (recipe halving)</span>
-          <span class="sub-card-use">beat one egg, weigh, use half by weight</span>
-          <p class="sub-card-note">Each component (yolk, white) is needed in proportion, so a beaten whole egg measured by mass beats trying to split a single egg by structure.</p>
-        </li>
+        <li><strong>whole egg (binding in cookies, quick breads, brownies)</strong> → flax or chia &quot;egg&quot; (1 tbsp ground seed + 3 tbsp water, rested 5 min) <span class="sub-note">Vegan binder for dense bakes where structure is forgiving. Fails in cakes built around egg structure (sponge, angel food, soufflé) and in custards.</span></li>
+        <li><strong>whole egg (custards, ice cream base, pastry cream)</strong> → no real substitute <span class="sub-note">Custards depend on yolk lecithin and ovalbumin coagulation. Starches alone (<a class="x-link" data-category="ingredients" href="cornstarch.html">cornstarch</a>, gelatin) thicken but do not set with the same body. Pick a different dessert.</span></li>
+        <li><strong>egg yolk (mayonnaise, hollandaise, aioli)</strong> → whole egg, blender method <span class="sub-note">A whole egg at room temperature emulsifies in an immersion-blender mayonnaise as cleanly as yolks alone, with a slightly looser final texture. Common pasteurized-safety move.</span></li>
+        <li><strong>egg white (meringue, soufflé, angel food cake)</strong> → aquafaba (chickpea-can liquid), whipped <span class="sub-note">Whips to a similar foam structure thanks to dissolved proteins and saponins. Use 3 tbsp aquafaba per white. Wet meringues read slightly bean-sweet on the nose; works under flavored toppings, less so plain.</span></li>
+        <li><strong>eggs scaled down by half (recipe halving)</strong> → beat one egg, weigh, use half by weight <span class="sub-note">Each component (yolk, white) is needed in proportion, so a beaten whole egg measured by mass beats trying to split a single egg by structure.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/aji-de-gallina.html" data-category="recipes">
+          <span class="rl-card-title">Ají de gallina</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/avgolemono-soup.html" data-category="recipes">
+          <span class="rl-card-title">Avgolemono soup</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/banana-bread.html" data-category="recipes">
           <span class="rl-card-title">Banana bread</span>
           
@@ -163,6 +153,10 @@
         </a>
         <a class="rl-card" href="../recipes/chai-pumpkin-cupcakes.html" data-category="recipes">
           <span class="rl-card-title">Chai pumpkin cupcakes</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-paprikash.html" data-category="recipes">
+          <span class="rl-card-title">Chicken paprikash (csirkepaprikás)</span>
           
         </a>
         <a class="rl-card" href="../recipes/chicken-patties.html" data-category="recipes">
@@ -193,6 +187,10 @@
           <span class="rl-card-title">Cured egg yolk (salt-sugar dry cure)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/doro-wat.html" data-category="recipes">
+          <span class="rl-card-title">Doro wat (Ethiopian spiced chicken stew)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/double-dark-chocolate-crinkle-cookies.html" data-category="recipes">
           <span class="rl-card-title">Double dark chocolate crinkle cookies</span>
           
@@ -201,8 +199,16 @@
           <span class="rl-card-title">Fresh egg pasta</span>
           
         </a>
+        <a class="rl-card" href="../recipes/golabki.html" data-category="recipes">
+          <span class="rl-card-title">Gołąbki (Polish stuffed cabbage rolls)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/greens-and-ricotta-frittata.html" data-category="recipes">
           <span class="rl-card-title">Greens and ricotta frittata</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/goulash-gulyas.html" data-category="recipes">
+          <span class="rl-card-title">Gulyás (Hungarian goulash soup)</span>
           
         </a>
         <a class="rl-card" href="../recipes/gyeran-jjim.html" data-category="recipes">
@@ -233,12 +239,44 @@
           <span class="rl-card-title">Mala dry-pot fish (gan guo yu)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/manti.html" data-category="recipes">
+          <span class="rl-card-title">Manti</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/menemen.html" data-category="recipes">
+          <span class="rl-card-title">Menemen</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/midnight-velvet-mini-cake.html" data-category="recipes">
           <span class="rl-card-title">Midnight velvet mini cake with strawberry and balsamic caviar</span>
           
         </a>
+        <a class="rl-card" href="../recipes/moussaka.html" data-category="recipes">
+          <span class="rl-card-title">Moussaka</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/nasi-goreng.html" data-category="recipes">
+          <span class="rl-card-title">Nasi goreng</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/okonomiyaki-osaka-style.html" data-category="recipes">
+          <span class="rl-card-title">Okonomiyaki (Osaka-style cabbage pancake)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/omurice.html" data-category="recipes">
           <span class="rl-card-title">Omurice</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/papa-a-la-huancaina.html" data-category="recipes">
+          <span class="rl-card-title">Papa a la huancaína</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pierogi-z-kapusta-i-grzybami.html" data-category="recipes">
+          <span class="rl-card-title">Pierogi z kapustą i grzybami (sauerkraut and mushroom pierogi)</span>
           
         </a>
         <a class="rl-card" href="../recipes/rouille-saffron-garlic-aioli.html" data-category="recipes">
@@ -257,6 +295,10 @@
           <span class="rl-card-title">Shakshuka</span>
           
         </a>
+        <a class="rl-card" href="../recipes/shoyu-ramen-from-scratch.html" data-category="recipes">
+          <span class="rl-card-title">Shoyu ramen from scratch</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/slow-soft-scrambled-eggs-with-brown-butter-and-chives.html" data-category="recipes">
           <span class="rl-card-title">Slow soft scrambled eggs with brown butter and chives</span>
           
@@ -265,8 +307,16 @@
           <span class="rl-card-title">Soft-boiled congee egg</span>
           
         </a>
+        <a class="rl-card" href="../recipes/spanakopita.html" data-category="recipes">
+          <span class="rl-card-title">Spanakopita</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/stuffed-lotus-root-with-pork.html" data-category="recipes">
           <span class="rl-card-title">Stuffed lotus root with pork</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/tahdig.html" data-category="recipes">
+          <span class="rl-card-title">Tahdig</span>
           
         </a>
         <a class="rl-card" href="../recipes/tamagoyaki.html" data-category="recipes">
@@ -275,6 +325,14 @@
         </a>
         <a class="rl-card" href="../recipes/tianjin-jianbing-savory-mung-bean-crepe.html" data-category="recipes">
           <span class="rl-card-title">Tianjin jianbing guozi (Tianjin savory mung-bean crepe, 天津煎饼馃子)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/tiramisu.html" data-category="recipes">
+          <span class="rl-card-title">Tiramisu</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/tonkatsu.html" data-category="recipes">
+          <span class="rl-card-title">Tonkatsu (panko-breaded pork cutlet)</span>
           
         </a>
         <a class="rl-card" href="../recipes/tortilla-espanola.html" data-category="recipes">
@@ -288,42 +346,35 @@
     </div>
   
     <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
+    <div class="section-head"><h2>Related <span class="sh-sub">6</span></h2></div>
     <div class="rl-groups">
+
+      <div class="rl-group" data-related-group="recipes">
+        <h3 class="rl-group-head">
+          <span class="rl-group-label">Recipes</span>
+          <span class="rl-group-count">1</span>
+        </h3>
+        <div class="rl-cards rl-cards--recipes">
+        <a class="rl-card" href="../recipes/salted-duck-egg-yolks.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Salted duck egg yolks (home brine cure)</span>
+          <span class="rl-card-why">egg</span>
+        </a>
+        </div>
+      </div>
 
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
+          <span class="rl-group-count">2</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="evaporated-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Evaporated milk</span>
-          <span class="rl-card-why">dairy</span>
+        <a class="rl-card" href="century-egg.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Century egg (皮蛋, pidan)</span>
+          <span class="rl-card-why">egg</span>
         </a>
-        <a class="rl-card is-strong" href="sweetened-condensed-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sweetened condensed milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card is-strong" href="whole-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Whole milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="queso-fresco.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Queso fresco</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="greek-yogurt.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Greek yogurt</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="butter.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Butter (unsalted)</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="heavy-cream.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Heavy cream</span>
-          <span class="rl-card-why">dairy</span>
+        <a class="rl-card" href="salted-duck-egg.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Salted duck egg (咸鸭蛋, xian ya dan)</span>
+          <span class="rl-card-why">egg</span>
         </a>
         </div>
       </div>
@@ -331,11 +382,19 @@
       <div class="rl-group" data-related-group="techniques">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
+          <span class="rl-group-count">3</span>
         </h3>
         <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/jammy-egg.html" data-category="techniques" data-reason="tag">
+        <a class="rl-card is-strong" href="../techniques/egg-yolk-emulsion.html" data-category="techniques" data-reason="tag">
+          <span class="rl-card-title">Egg-yolk emulsion</span>
+          <span class="rl-card-why">egg</span>
+        </a>
+        <a class="rl-card is-strong" href="../techniques/jammy-egg.html" data-category="techniques" data-reason="tag">
           <span class="rl-card-title">Jammy egg</span>
+          <span class="rl-card-why">egg</span>
+        </a>
+        <a class="rl-card" href="../techniques/tempering-eggs.html" data-category="techniques" data-reason="tag">
+          <span class="rl-card-title">Tempering eggs</span>
           <span class="rl-card-why">egg</span>
         </a>
         </div>
@@ -343,9 +402,9 @@
     </div><nav class="adj-nav"><a class="adj-nav-link" href="eggplant.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Eggplant (aubergine, brinjal)</span>
-    </a><a class="adj-nav-link" href="espresso-beans.html">
+    </a><a class="adj-nav-link" href="egusi-seeds.html">
       <span class="adj-nav-label">Next →</span>
-      <span class="adj-nav-title">Espresso beans</span>
+      <span class="adj-nav-title">Egusi seeds</span>
     </a></nav>
   
     <footer class="page-footer">

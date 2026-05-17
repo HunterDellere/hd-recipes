@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ube halaya'
 desc: 'Filipino jam of grated purple yam (Dioscorea alata) slow-cooked with coconut milk, sweetened condensed milk, evaporated milk, and butter until thick, glossy, and spreadable. Stub.'
 metaDesc: 'Homemade ube halaya: grated purple yam reduced with the canonical four-dairy enrichment to a vivid violet, spreadable jam. Stub recipe.'
-tags: ['filipino', 'dessert', 'make-ahead', 'pantry']
+tags: ['make-ahead', 'pantry']
 updated: '2026-05-11'
 
 servings: 12

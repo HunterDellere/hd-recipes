@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai pork larb meatballs'
 desc: 'A meatball reformatting of larb moo, the canonical northeastern Thai (Isan) and Lao minced-pork salad. The classic larb is a loose minced-meat preparation eaten with sticky rice and fresh herbs; here the same flavor system, fish sauce, lime, toasted rice powder, fresh herbs, dried chili, shallot, is rolled into bite-sized meatballs, browned hard in a skillet to maximize the toasted-meat flavor that anchors the dish, then tossed off-heat with the larb dressing and a heap of mint, cilantro, and scallion. The result eats like larb in cocktail-meatball form: high-acid, fish-sauce-forward, fresh-herb-heavy, with the toasted rice powder providing the structural toasted character and a faint sandy texture on the meatball surface.'
 metaDesc: 'Thai pork larb meatballs: northeastern Thai (Isan) and Lao larb moo reformatted as bite-sized meatballs. Fish sauce, lime, toasted rice powder (khao khua), mint, cilantro, scallion, dried chili.'
-tags: ['thai', 'lao', 'pork', 'umami', 'fresh-herbs', 'spicy', 'quick']
+tags: ['pork', 'umami', 'spicy', 'quick']
 updated: '2026-05-15'
 
 servings: 4

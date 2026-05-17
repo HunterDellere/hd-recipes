@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chicken nihari (Pakistani slow-braised stew)'
 desc: 'Bone-in chicken slow-braised in a deeply spiced ghee-and-onion base for 90 minutes, the gravy thickened with toasted atta flour and finished with a julienned-ginger and crisped-onion garnish, fresh lemon. The chicken adaptation of the canonical Mughlai-Pakistani beef nihari that traditionally simmered overnight; the chicken version delivers the same flavor architecture in a Sunday afternoon.'
 metaDesc: 'Pakistani chicken nihari: slow-braised bone-in chicken in toasted-spice ghee gravy, atta-thickened, ginger-and-fried-onion finish. The chicken adaptation of the canonical beef Mughlai stew.'
-tags: ['pakistani', 'indian', 'chicken', 'spicy', 'umami', 'comfort']
+tags: ['chicken', 'spicy', 'umami', 'comfort']
 updated: '2026-05-09'
 
 servings: 6

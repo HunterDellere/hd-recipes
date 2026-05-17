@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ghee (clarified butter, घी)'
 desc: 'Butter simmered until the water boils off and the milk solids brown to deep amber, then strained. Pure butterfat with the toasted milk-solid aromatics carried in solution. Smoke point around 250°C / 480°F, distinctly nutty, shelf-stable. The structural cooking fat of North Indian and Pakistani cuisine.'
 metaDesc: 'Ghee: butterfat clarified past brown butter into a shelf-stable nutty-toasted cooking fat. Smoke point, role in tempering and Indian/Pakistani cooking, when to use vs neutral oil or butter.'
-tags: ['fat', 'dairy', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.91
 updated: '2026-05-09'
 

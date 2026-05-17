@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Radish'
 desc: 'Raphanus sativus. A Brassicaceae taproot grown for its peppery raw bite (allyl isothiocyanate) and crisp texture; the canonical small red varieties run cool-season Spring and Fall.'
 metaDesc: 'Radish: the isothiocyanate heat compound, cultivar range from breakfast radish to daikon to watermelon, the salt-and-butter raw treatment, and storage that holds the snap.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 usda_fdc_id: 169276

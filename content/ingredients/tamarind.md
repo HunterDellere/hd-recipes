@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tamarind (pulp, paste, concentrate)'
 desc: 'Sticky brown fruit pulp from the seed pods of the tamarind tree (Tamarindus indica), 8 to 12% tartaric acid by weight plus malic acid and a high natural sugar load (40 to 60% by weight), giving it a sour-sweet profile with a roasted-fruit back-note. The structural acid of Indian, Thai, Vietnamese, Mexican, and West African cooking.'
 metaDesc: 'Tamarind: pulp vs. paste vs. concentrate, tartaric and malic acid chemistry, role in canh chua, pad thai, sambar, agua de tamarindo, and Senegalese cooking; extraction technique.'
-tags: ['acid', 'fruit', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 about: |

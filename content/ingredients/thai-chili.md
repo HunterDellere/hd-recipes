@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai bird chili (prik kee noo)'
 desc: 'Small (2 to 3 cm) hot chili (Capsicum annuum, "bird''s eye" cultivars), green when unripe and red when ripe, with a clean fruity heat that defines Thai, Lao, and Cambodian cooking. Substantially hotter than serrano or jalapeño, with a different aromatic profile from Mexican chiles.'
 metaDesc: 'Thai bird chili: capsaicin concentration vs serrano/jalapeño, green vs red ripening, role in som tum and curry pastes, fresh vs frozen vs dried, and substitution math.'
-tags: ['spice', 'aromatic', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 about: |

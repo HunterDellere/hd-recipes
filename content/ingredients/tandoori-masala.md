@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tandoori masala'
 desc: 'Punjabi spice blend built around Kashmiri chili, ginger, garlic, and a roasted-spice base. Engineered for the high-heat clay-oven applications that gave the blend its name; equally useful as a marinade powder, a finishing rub, and a flavor base for curry yogurts.'
 metaDesc: 'Tandoori masala: Kashmiri-chili-driven Punjabi blend for tandoor cooking. Why it''s not garam masala, the canonical proportions, and why color-stable Kashmiri chili is the structural ingredient.'
-tags: ['spice', 'pakistani', 'indian']
+tags: []
 density_g_per_ml: 0.55
 imperial_pref: 'tsp'
 updated: '2026-05-09'

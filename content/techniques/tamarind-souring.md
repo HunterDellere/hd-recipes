@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Tamarind souring (sour-broth extraction and balance)'
 desc: 'Soak tamarind pulp in hot water 15 to 20 minutes, mash and strain to a clean liquid, then balance the broth with fish sauce or salt (deep umami) and palm or brown sugar (round the sharp tartaric acid). The structural acid technique of canh chua, sambar, pad thai, and the global tamarind-acid cuisine.'
 metaDesc: 'Tamarind souring: extracting tartaric acid from pulp, balancing acid-sugar-salt-umami in a sour broth, calibration cues, applications across canh chua, sambar, pad thai, agua de tamarindo.'
-tags: ['acid', 'umami', 'pantry']
+tags: ['umami', 'pantry']
 updated: '2026-05-10'
 
 about: |

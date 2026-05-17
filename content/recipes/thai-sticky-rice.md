@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai sticky rice (khao niao)'
 desc: 'Glutinous rice soaked, then steamed in a bamboo basket over simmering water until each grain is translucent, chewy, and pinch-able. The table rice of Laos and northeast Thailand; the eating implement for larb, nam tok, and som tum. Stub.'
 metaDesc: 'Bamboo-basket-steamed Thai sticky rice (khao niao): the 4-hour soak, 25-minute steam, why steaming and not boiling, eating method. Stub recipe.'
-tags: ['rice', 'thai', 'side', 'pantry']
+tags: ['rice', 'pantry']
 updated: '2026-05-10'
 
 servings: 4

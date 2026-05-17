@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Scallion (green onion)'
 desc: 'Allium fistulosum or young A. cepa. Mild oniony bite raw, sweet and almost leek-like when seared.'
-tags: ['aromatic']
+tags: []
 updated: '2026-04-29'
 
 usda_fdc_id: 170005

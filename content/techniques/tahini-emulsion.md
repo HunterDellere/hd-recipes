@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Tahini emulsion'
 desc: 'Whisk water into raw tahini in stages. The paste seizes (proteins hydrate and gel) before it relaxes (gel network finishes hydrating and traps water uniformly) into a creamy, fluffy, pourable sauce. The seize is not failure; it is the recipe.'
 metaDesc: 'Tahini emulsion: the seize-and-relax chemistry, the water-staging that turns thick paste into fluffy sauce, ratios across hummus, dressing, and tarator.'
-tags: ['fat']
+tags: []
 updated: '2026-05-10'
 
 about: |

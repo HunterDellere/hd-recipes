@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Apple cider vinegar'
 desc: 'Acetic-acid solution (5 to 6 percent) produced by acetobacter fermentation of apple cider. The default American baking and pickling acid, with residual apple-fruit notes and a softer profile than wine vinegars.'
 metaDesc: 'Apple cider vinegar: the cider-to-vinegar fermentation, filtered vs unfiltered ("with the mother"), the apple-aromatic profile, and roles across American baking, pickling, dressings, and braises.'
-tags: ['acid', 'american', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.01

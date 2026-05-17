@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dried Chinese chilies'
 desc: 'Sun-dried whole chilies sold by varietal: erjingtiao, chao tian jiao, da hong pao, tian tian, deng long jiao. Each cultivar has a distinct heat-aroma split that drives Sichuan, Hunan, and Northwestern Chinese cooking.'
 metaDesc: 'Dried Chinese chilies: erjingtiao, chao tian jiao, da hong pao, tian tian, deng long jiao. Scoville and aroma profiles, when to break vs leave whole.'
-tags: ['spice', 'spicy', 'pantry', 'chinese']
+tags: ['spicy', 'pantry']
 density_g_per_ml: 0.18
 updated: '2026-05-09'
 

@@ -983,6 +983,109 @@
     } catch {}
   }
 
+  // ── Print button ───────────────────────────────────────────────────────
+  // The recipe hero ships a Print affordance alongside Cook's view / Share.
+  // We don't intercept Cmd/Ctrl+P — the browser shortcut still works. This
+  // button just makes the path discoverable to cooks who reach for a button.
+  document.querySelectorAll('[data-print]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      try { window.print(); } catch {}
+    });
+  });
+
+  // ── Step timer running / done class aliases ────────────────────────────
+  // The internal cook-view state uses .step-active / .step-done. The mobile
+  // bottom-nav contract and the print stylesheet target .step--running /
+  // .step--done so timer state is independently styleable from cook's-view
+  // progression. Mirror the running/done states from the timer dock back
+  // onto each step's <li> based on data-step-timer button presence.
+  function syncStepTimerStates() {
+    const dock = document.querySelector('.step-timer-dock');
+    if (!dock) {
+      // No active timers — clear running state but keep done state intact
+      document.querySelectorAll('.recipe-steps .step-item.step--running').forEach(li => {
+        li.classList.remove('step--running');
+      });
+      return;
+    }
+    const runningLabels = new Set();
+    const doneLabels = new Set();
+    dock.querySelectorAll('.step-timer-card').forEach(card => {
+      const label = (card.querySelector('.st-label') || {}).textContent || '';
+      const m = label.match(/^Step\s+(\d+):/);
+      if (!m) return;
+      const num = parseInt(m[1], 10);
+      if (card.classList.contains('is-done')) doneLabels.add(num);
+      else runningLabels.add(num);
+    });
+    document.querySelectorAll('.recipe-steps .step-item').forEach((li, i) => {
+      const num = i + 1;
+      li.classList.toggle('step--running', runningLabels.has(num));
+      if (doneLabels.has(num)) li.classList.add('step--done');
+    });
+  }
+  // Poll cheaply — the dock is small and this is the simplest reliable
+  // signal across all the timer-card mutations (start/pause/reset/done).
+  setInterval(syncStepTimerStates, 750);
+
+  // ── Mobile bottom nav ──────────────────────────────────────────────────
+  // Surfaces the four most-used recipe actions (scale, shopping list, cook's
+  // view, share) on small screens where the hero scrolls offscreen quickly.
+  // Hidden on desktop and on non-recipe pages. Inserted via JS so the layout
+  // template stays universal — only recipe pages with the right hooks light
+  // it up.
+  (function initBottomNav() {
+    // Recipe-only — gate on the ingredients table the rest of the page hangs off of.
+    if (!document.querySelector('.recipe-ingredients')) return;
+    if (document.querySelector('.bottom-nav')) return;
+
+    const nav = document.createElement('nav');
+    nav.className = 'bottom-nav';
+    nav.setAttribute('aria-label', 'Recipe quick actions');
+    nav.innerHTML = `
+      <button type="button" class="bn-btn" data-bn="scale" aria-label="Adjust servings">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        <span class="bn-label">Scale</span>
+      </button>
+      <button type="button" class="bn-btn" data-bn="shop" aria-label="Copy shopping list">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5h6a2 2 0 0 1 2 2v2"/><path d="M5 9h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9 5a3 3 0 0 1 6 0"/></svg>
+        <span class="bn-label">Shop</span>
+      </button>
+      <button type="button" class="bn-btn" data-bn="cook" aria-label="Enter cook's view">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18l-2 3H5z"/><path d="M5 14h14a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4z"/><path d="M12 6v4"/></svg>
+        <span class="bn-label">Cook</span>
+      </button>
+      <button type="button" class="bn-btn" data-bn="share" aria-label="Share this recipe">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        <span class="bn-label">Share</span>
+      </button>`;
+    document.body.appendChild(nav);
+
+    nav.addEventListener('click', e => {
+      const btn = e.target.closest('[data-bn]');
+      if (!btn) return;
+      const kind = btn.dataset.bn;
+      if (kind === 'scale') {
+        // Scroll to the ingredients panel and focus the servings input — that's
+        // where scaling lives. No separate modal: the existing in-page control
+        // is canonical, we just route the cook to it.
+        const input = document.querySelector('[data-scale-input]');
+        const target = document.querySelector('.recipe-ingredients') || input;
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (input) setTimeout(() => { try { input.focus(); input.select(); } catch {} }, 320);
+      } else if (kind === 'shop') {
+        const shopBtn = document.querySelector('[data-shop-export]');
+        if (shopBtn) shopBtn.click();
+      } else if (kind === 'cook') {
+        const cookBtn = document.querySelector('[data-cook-toggle]');
+        if (cookBtn) cookBtn.click();
+      } else if (kind === 'share') {
+        const shareBtn = document.querySelector('[data-share]');
+        if (shareBtn) shareBtn.click();
+      }
+    });
+  })();
+
   // ── filter bar (cook explore page) ─────────────────────────────────
   const filterBar = document.querySelector('[data-filter-bar]');
   if (filterBar) initExploreFilters(filterBar);
@@ -992,8 +1095,6 @@
     const status = document.querySelector('[data-filter-status]');
     const chipsEl = document.querySelector('[data-filter-chips]');
     const clearBtn = bar.querySelector('[data-filter-clear]');
-    const emptyEl = document.querySelector('[data-filter-empty]');
-    const emptyClearBtn = document.querySelector('[data-filter-empty-clear]');
     if (!grid) return;
     const cards = Array.from(grid.querySelectorAll('[data-card]'));
 
@@ -1006,44 +1107,10 @@
       time: 'Active time', difficulty: 'Difficulty',
     };
 
-    // Human-format active-time chip value. Mirrors the time-filter labels
-    // in the dropdown ("<15 min", "<30 min", "<60 min", "<2 hr") so the
-    // active-pill row reads identically to what the user clicked.
-    function formatTimeLabel(v) {
-      const n = parseInt(v, 10);
-      if (!isFinite(n) || n <= 0) return v;
-      if (n >= 60 && n % 60 === 0) return `<${n / 60} hr`;
-      return `<${n} min`;
-    }
-
-    // Track the chronological order of filter additions so ESC can remove
-    // the most-recently-added filter (power-user shortcut).
-    // Entries: { facet: 'cuisine' | 'course' | ..., value: '<v>' }.
-    const activeOrder = [];
-    function pushActive(facet, value) {
-      // Drop any prior entry for the same facet+value (radio toggling).
-      for (let i = activeOrder.length - 1; i >= 0; i--) {
-        if (activeOrder[i].facet === facet && activeOrder[i].value === value) {
-          activeOrder.splice(i, 1);
-        }
-      }
-      activeOrder.push({ facet, value });
-    }
-    function dropActive(facet, value) {
-      for (let i = activeOrder.length - 1; i >= 0; i--) {
-        const e = activeOrder[i];
-        if (e.facet === facet && (value == null || e.value === value)) {
-          activeOrder.splice(i, 1);
-          if (value != null) return;
-        }
-      }
-    }
-    function clearActiveOrder() { activeOrder.length = 0; }
-
     // ── URL sync ───────────────────────────────────────────────────────
     // Round-trip filter state through the URL so a bookmarked or shared link
     // restores the same filtered view. Uses replaceState so the back button
-    // doesn't accumulate every filter keystroke.
+    // doesn't accumulate every keystroke of filter activity.
     function syncUrl() {
       try {
         const qs = new URLSearchParams();
@@ -1087,10 +1154,6 @@
           status.textContent = `Showing ${visible} of ${total} ${total === 1 ? 'recipe' : 'recipes'}`;
         }
       }
-      // Empty-results state: when filters return zero, surface a friendly
-      // message inviting the user to clear filters rather than staring at
-      // an empty grid.
-      if (emptyEl) emptyEl.hidden = !(totalActive > 0 && visible === 0);
     }
 
     function countActive() {
@@ -1107,14 +1170,13 @@
       for (const k of ['cuisine','course','diet','difficulty']) {
         if (state[k]) out.push(chipHtml(k, state[k], state[k]));
       }
-      if (state.time) out.push(chipHtml('time', state.time, formatTimeLabel(state.time)));
+      if (state.time) out.push(chipHtml('time', state.time, `≤ ${state.time} min active`));
       for (const t of state.tags) out.push(chipHtml('tag', t, `#${t}`));
       chipsEl.innerHTML = out.join('');
       chipsEl.hidden = out.length === 0;
     }
     function chipHtml(facet, value, label) {
-      const dim = facet === 'tag' ? 'Tag' : (FACET_LABEL[facet] || facet);
-      return `<button type="button" class="filter-chip" data-chip-facet="${escapeAttr(facet)}" data-chip-value="${escapeAttr(value)}" aria-label="Remove ${escapeAttr(dim)} filter: ${escapeAttr(label)}"><span class="filter-chip-dim">${escapeHtml(dim)}</span><span class="filter-chip-val">${escapeHtml(label)}</span><span class="filter-chip-x" aria-hidden="true">×</span></button>`;
+      return `<button type="button" class="filter-chip" data-chip-facet="${escapeAttr(facet)}" data-chip-value="${escapeAttr(value)}" aria-label="Remove filter: ${escapeAttr(label)}">${escapeHtml(label)}<span class="filter-chip-x" aria-hidden="true">×</span></button>`;
     }
     function escapeHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
     function escapeAttr(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
@@ -1127,21 +1189,9 @@
         const value = chip.dataset.chipValue;
         if (facet === 'tag') {
           state.tags.delete(value);
-          dropActive('tag', value);
         } else {
           state[facet] = null;
-          dropActive(facet);
         }
-        syncInputs();
-        apply();
-      });
-    }
-
-    if (emptyClearBtn) {
-      emptyClearBtn.addEventListener('click', () => {
-        state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
-        state.tags.clear();
-        clearActiveOrder();
         syncInputs();
         apply();
       });
@@ -1175,19 +1225,12 @@
       }
       if (!facet) return;
       if (facet === 'tag') {
-        if (input.checked) { state.tags.add(value); pushActive('tag', value); }
-        else { state.tags.delete(value); dropActive('tag', value); }
+        if (input.checked) state.tags.add(value);
+        else state.tags.delete(value);
       } else {
         // Radio: setting same value toggles off (so user can deselect)
         // The native radio group handles single-select; we just record.
-        if (input.checked) {
-          state[facet] = value;
-          dropActive(facet);
-          pushActive(facet, value);
-        } else {
-          state[facet] = null;
-          dropActive(facet);
-        }
+        state[facet] = input.checked ? value : null;
       }
       apply();
     });
@@ -1209,7 +1252,6 @@
         // User clicked the already-active radio: clear it
         input.checked = false;
         state[facet] = null;
-        dropActive(facet);
         apply();
       }
     });
@@ -1235,7 +1277,6 @@
       clearBtn.addEventListener('click', () => {
         state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
         state.tags.clear();
-        clearActiveOrder();
         syncInputs();
         // Also close any open menus
         bar.querySelectorAll('details[data-filter-menu]').forEach(d => d.removeAttribute('open'));
@@ -1251,24 +1292,10 @@
     });
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
-      const openMenus = bar.querySelectorAll('details[data-filter-menu][open]');
-      if (openMenus.length) {
-        openMenus.forEach(d => {
-          d.removeAttribute('open');
-          const sum = d.querySelector('summary'); if (sum) sum.focus();
-        });
-        return;
-      }
-      // Power-user shortcut: with no menu open and no input focused,
-      // ESC removes the most-recently-added filter.
-      const tag = (document.activeElement && document.activeElement.tagName) || '';
-      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-      const last = activeOrder.pop();
-      if (!last) return;
-      if (last.facet === 'tag') state.tags.delete(last.value);
-      else state[last.facet] = null;
-      syncInputs();
-      apply();
+      bar.querySelectorAll('details[data-filter-menu][open]').forEach(d => {
+        d.removeAttribute('open');
+        const sum = d.querySelector('summary'); if (sum) sum.focus();
+      });
     });
 
     // Only allow one menu open at a time — friendlier on mobile.
@@ -1289,14 +1316,14 @@
     try {
       const qs = new URLSearchParams(location.search);
       const single = (k) => { const v = qs.get(k); return v ? v.trim() : null; };
-      if (single('cuisine')) { state.cuisine = single('cuisine'); pushActive('cuisine', state.cuisine); }
-      if (single('course')) { state.course = single('course'); pushActive('course', state.course); }
-      if (single('diet')) { state.diet = single('diet'); pushActive('diet', state.diet); }
-      if (single('difficulty')) { state.difficulty = single('difficulty'); pushActive('difficulty', state.difficulty); }
-      // Accept ?time= (canonical, what syncUrl writes) or ?max_min= (legacy alias)
+      if (single('cuisine')) state.cuisine = single('cuisine');
+      if (single('course')) state.course = single('course');
+      if (single('diet')) state.diet = single('diet');
+      if (single('difficulty')) state.difficulty = single('difficulty');
+      // Accept either ?max_min= (legacy) or ?time= (canonical, what syncUrl writes)
       const mx = single('time') || single('max_min');
-      if (mx && /^\d+$/.test(mx)) { state.time = mx; pushActive('time', mx); }
-      qs.getAll('tag').forEach(t => { if (t) { state.tags.add(t); pushActive('tag', t); } });
+      if (mx && /^\d+$/.test(mx)) state.time = mx;
+      qs.getAll('tag').forEach(t => { if (t) state.tags.add(t); });
       // Reflect into UI controls so the user sees the active state, not just the result
       syncInputs();
     } catch {}
@@ -1427,187 +1454,4 @@
     // currently rendered A–Z, so we must run once on load to match.
     applySort(select.value);
   }
-})();
-
-// ── Substitution hints in step prose ──────────────────────────────────
-// Each .sub-hint span carries data-sub-for / data-sub-use / data-sub-note.
-// Hover or focus pops a small tooltip; tap on touch devices toggles it.
-(function () {
-  'use strict';
-  let pop = null;
-  let active = null;
-  let hideTimer = null;
-
-  function ensurePop() {
-    if (pop) return pop;
-    pop = document.createElement('div');
-    pop.className = 'sub-pop';
-    pop.hidden = true;
-    pop.setAttribute('role', 'tooltip');
-    document.body.appendChild(pop);
-    pop.addEventListener('mouseenter', () => { if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; } });
-    pop.addEventListener('mouseleave', hide);
-    return pop;
-  }
-
-  function escapeHtml(s) {
-    return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  }
-
-  function show(el) {
-    const use = el.getAttribute('data-sub-use') || '';
-    const note = el.getAttribute('data-sub-note') || '';
-    if (!use) return;
-    const p = ensurePop();
-    p.innerHTML = '<span class="sub-pop-head">Use <strong>' + escapeHtml(use) + '</strong> instead</span>' + (note ? '<span class="sub-pop-note">' + escapeHtml(note) + '</span>' : '');
-    p.hidden = false;
-    const r = el.getBoundingClientRect();
-    const popW = Math.min(320, window.innerWidth - 16);
-    p.style.maxWidth = popW + 'px';
-    p.style.left = '-9999px';
-    p.style.top = '-9999px';
-    requestAnimationFrame(() => {
-      const ph = p.offsetHeight;
-      const pw = p.offsetWidth;
-      let left = r.left + (r.width / 2) - (pw / 2);
-      let top = r.bottom + 6;
-      if (left < 8) left = 8;
-      if (left + pw > window.innerWidth - 8) left = window.innerWidth - pw - 8;
-      if (top + ph > window.innerHeight - 8) top = r.top - ph - 6;
-      p.style.left = (left + window.scrollX) + 'px';
-      p.style.top  = (top + window.scrollY) + 'px';
-      p.classList.add('is-open');
-    });
-    active = el;
-  }
-
-  function hide() {
-    if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
-    if (!pop) return;
-    pop.classList.remove('is-open');
-    hideTimer = setTimeout(() => { if (pop) pop.hidden = true; active = null; }, 140);
-  }
-
-  const isCoarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
-
-  document.addEventListener('mouseover', (e) => {
-    if (isCoarse) return;
-    const el = e.target.closest && e.target.closest('.sub-hint');
-    if (!el || el === active) return;
-    if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
-    show(el);
-  });
-  document.addEventListener('mouseout', (e) => {
-    if (isCoarse) return;
-    const el = e.target.closest && e.target.closest('.sub-hint');
-    if (!el) return;
-    const into = e.relatedTarget;
-    if (into && (el.contains(into) || (pop && pop.contains(into)))) return;
-    hide();
-  });
-
-  document.addEventListener('click', (e) => {
-    const el = e.target.closest && e.target.closest('.sub-hint');
-    if (el) {
-      e.preventDefault();
-      if (active === el) hide(); else show(el);
-      return;
-    }
-    if (pop && !pop.hidden && !pop.contains(e.target)) hide();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    const el = e.target.closest && e.target.closest('.sub-hint');
-    if (!el) return;
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      if (active === el) hide(); else show(el);
-    } else if (e.key === 'Escape') {
-      hide();
-    }
-  });
-
-  window.addEventListener('scroll', () => { if (pop && !pop.hidden) hide(); }, { passive: true });
-})();
-
-// ── Hero kcal stat — click/hover to expand macros ─────────────────────
-(function () {
-  'use strict';
-  function toggle(el, force) {
-    const macros = el.querySelector('.rh-macros');
-    if (!macros) return;
-    const open = force != null ? force : macros.hasAttribute('hidden') ? true : false;
-    if (open) {
-      macros.removeAttribute('hidden');
-      el.setAttribute('aria-expanded', 'true');
-      el.classList.add('rh-stat-open');
-    } else {
-      macros.setAttribute('hidden', '');
-      el.setAttribute('aria-expanded', 'false');
-      el.classList.remove('rh-stat-open');
-    }
-  }
-  document.addEventListener('click', (e) => {
-    const el = e.target.closest && e.target.closest('[data-kcal-toggle]');
-    if (!el) return;
-    toggle(el);
-  });
-  document.addEventListener('keydown', (e) => {
-    const el = e.target.closest && e.target.closest('[data-kcal-toggle]');
-    if (!el) return;
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(el); }
-  });
-})();
-
-/* Print button — fires the browser print dialog with the print stylesheet. */
-(function initPrintButton() {
-  document.addEventListener('click', (e) => {
-    const btn = e.target.closest && e.target.closest('[data-print]');
-    if (!btn) return;
-    e.preventDefault();
-    window.print();
-  });
-})();
-
-/* Mobile bottom nav — sticky 4-button bar on recipe pages, <768px only.
- * Buttons delegate to existing hero actions so behavior stays single-source. */
-(function initBottomNav() {
-  if (!document.querySelector('.recipe-ingredients')) return;
-  if (document.querySelector('.bottom-nav')) return;
-  const nav = document.createElement('nav');
-  nav.className = 'bottom-nav';
-  nav.setAttribute('aria-label', 'Recipe actions');
-  nav.innerHTML = `
-    <button type="button" class="bn-btn" data-bn="scale" aria-label="Scale servings">
-      <span class="bn-icon" aria-hidden="true">⚖</span><span class="bn-label">Scale</span>
-    </button>
-    <button type="button" class="bn-btn" data-bn="shop" aria-label="Shopping list">
-      <span class="bn-icon" aria-hidden="true">📋</span><span class="bn-label">Shop</span>
-    </button>
-    <button type="button" class="bn-btn" data-bn="cook" aria-label="Cook's view">
-      <span class="bn-icon" aria-hidden="true">👨‍🍳</span><span class="bn-label">Cook</span>
-    </button>
-    <button type="button" class="bn-btn" data-bn="share" aria-label="Share">
-      <span class="bn-icon" aria-hidden="true">⇪</span><span class="bn-label">Share</span>
-    </button>`;
-  document.body.appendChild(nav);
-  nav.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-bn]');
-    if (!btn) return;
-    const which = btn.getAttribute('data-bn');
-    if (which === 'scale') {
-      const input = document.querySelector('[data-target-servings], .scale-input, input[name="servings"]');
-      if (input) { input.scrollIntoView({ behavior: 'smooth', block: 'center' }); input.focus(); }
-    } else if (which === 'shop') {
-      const t = document.querySelector('[data-shop-export]');
-      if (t) t.click();
-    } else if (which === 'cook') {
-      const t = document.querySelector('[data-cook-toggle]');
-      if (t) t.click();
-    } else if (which === 'share') {
-      const t = document.querySelector('[data-share]');
-      if (t) t.click();
-      else if (navigator.share) navigator.share({ title: document.title, url: location.href }).catch(() => {});
-    }
-  });
 })();

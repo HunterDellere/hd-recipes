@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'French'
 desc: 'Technique as the transferable unit. The French canon is less about ingredients than about a vocabulary of methods: emulsification, reduction, the roux. These travel across the full range of the cuisine.'
 metaDesc: 'French cooking on hd-recipes: the technique vocabulary, the condiment pantry, and where the current catalog starts. Ordered by foundation, not by region.'
-tags: ['french']
+tags: []
 updated: '2026-04-27'
 ---
 

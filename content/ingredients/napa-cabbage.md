@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Napa cabbage (Chinese cabbage, wombok)'
 desc: 'Long oblong head of pale-green tender leaves on broad white ribs. Brassica rapa subsp. pekinensis, sweeter and more delicate than the round European head cabbage, with a high water content that wilts dramatically in heat. The cabbage of Korean kimchi, Chinese hot pot, lion''s head braises, and the dumpling-filling base across northern Chinese cooking.'
 metaDesc: 'Napa cabbage: brassica chemistry, leaf-vs-rib cooking behavior, salting for water release, role in kimchi, dumplings, hot pot, and Chinese braises.'
-tags: ['vegetable', 'brassica', 'asian']
+tags: []
 density_g_per_ml: 0.45
 updated: '2026-05-15'
 

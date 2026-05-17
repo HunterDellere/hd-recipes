@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chives'
 desc: 'Allium schoenoprasum, the smallest of the cultivated alliums. Hollow grass-thin green leaves, mild fresh onion aromatic, used raw or barely-heated as a finishing herb across French sauce work, German potato salads, Eastern European sour cream applications, and any dish where allium brightness is wanted without the volume or pungency of onion.'
 metaDesc: 'Chives ingredient page: Allium schoenoprasum chemistry, why the volatile aromatics fade on heat, the cooking applications from finishing herb to crème fraîche garnish, and how to distinguish from green onions and garlic chives.'
-tags: ['herb', 'aromatic', 'vegetable']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 169970

@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'White miso (shiro)'
 desc: 'Short-fermented soybean-rice paste, pale beige, mellow and sweet. The miso to default to when a recipe just says "miso."'
-tags: ['umami', 'fermentation', 'japanese']
+tags: ['umami', 'fermentation']
 updated: '2026-04-29'
 
 usda_fdc_id: 173771

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Red wine vinaigrette'
 desc: 'A canonical Mediterranean salad dressing: 1:3 red wine vinegar to extra-virgin olive oil, dijon as the emulsifier, mashed garlic and salt dissolved in the acid phase before the oil streams in. Holds 30 to 60 minutes after building. Stub.'
 metaDesc: 'Red wine vinaigrette: the 1:3 vinegar-to-oil ratio, dijon emulsifier, garlic-and-salt acid phase, and the slow-stream oil method that produces a stable dressing for green and composed salads. Stub.'
-tags: ['sauce', 'pantry', 'acid', 'fat', 'weeknight', 'mediterranean']
+tags: ['pantry', 'weeknight']
 updated: '2026-05-10'
 
 servings: 8

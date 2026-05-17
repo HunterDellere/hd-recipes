@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Red onion","status":"complete","tags":["vegetable","aromatic","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Red onion","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,39 +109,59 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">red onion (raw applications, salsas, salads, ceviche)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="shallot.html">shallot</a>, sliced fine</span>
-          <p class="sub-card-note">Shallot has a similar mildness to red onion plus a faint <a class="x-link" data-category="ingredients" href="garlic.html">garlic</a> note from the higher allicin content. Color shifts from pink-red to pale gold; flavor is acceptable in salsas, fattoush, kachumber, ceviche.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">red onion (raw applications, color matters)</span>
-          <span class="sub-card-use">sweet <a class="x-link" data-category="ingredients" href="white-onion.html">white onion</a> (Vidalia, Walla Walla) plus pinch of dried hibiscus for color</span>
-          <p class="sub-card-note">Sweet white onion is mild enough for raw eating without a soak, and a pinch of hibiscus or beet powder in the dressing recovers some of the visual signal. Compromise; the dish loses the anthocyanin character but reads close.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">red onion (cooked applications, soups and braises)</span>
-          <span class="sub-card-use">yellow onion</span>
-          <p class="sub-card-note">Yellow onion is the canonical cooking onion ; once color goes brown in heat, the red-onion advantage disappears. Substitute 1:1 by weight; flavor is closer than the raw application would suggest.</p>
-        </li>
+        <li><strong>red onion (raw applications, salsas, salads, ceviche)</strong> → <a class="x-link" data-category="ingredients" href="shallot.html">shallot</a>, sliced fine <span class="sub-note">Shallot has a similar mildness to red onion plus a faint <a class="x-link" data-category="ingredients" href="garlic.html">garlic</a> note from the higher allicin content. Color shifts from pink-red to pale gold; flavor is acceptable in salsas, fattoush, kachumber, ceviche.</span></li>
+        <li><strong>red onion (raw applications, color matters)</strong> → sweet <a class="x-link" data-category="ingredients" href="white-onion.html">white onion</a> (Vidalia, Walla Walla) plus pinch of dried hibiscus for color <span class="sub-note">Sweet white onion is mild enough for raw eating without a soak, and a pinch of hibiscus or beet powder in the dressing recovers some of the visual signal. Compromise; the dish loses the anthocyanin character but reads close.</span></li>
+        <li><strong>red onion (cooked applications, soups and braises)</strong> → yellow onion <span class="sub-note">Yellow onion is the canonical cooking onion ; once color goes brown in heat, the red-onion advantage disappears. Substitute 1:1 by weight; flavor is closer than the raw application would suggest.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/chicken-shawarma.html" data-category="recipes">
+          <span class="rl-card-title">Chicken shawarma</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/greek-salad-horiatiki.html" data-category="recipes">
+          <span class="rl-card-title">Horiatiki (village Greek salad)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/jollof-rice-nigerian-style.html" data-category="recipes">
+          <span class="rl-card-title">Jollof rice (Nigerian style)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/kachumber-with-cumin-lime.html" data-category="recipes">
           <span class="rl-card-title">Kachumber with cumin and lime</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/kinilaw-na-tanigue.html" data-category="recipes">
+          <span class="rl-card-title">Kinilaw na tanigue</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lahmacun.html" data-category="recipes">
+          <span class="rl-card-title">Lahmacun</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lomo-saltado.html" data-category="recipes">
+          <span class="rl-card-title">Lomo saltado</span>
           
         </a>
         <a class="rl-card" href="../recipes/mediterranean-grain-bowl-with-tahini-yogurt.html" data-category="recipes">
           <span class="rl-card-title">Mediterranean grain bowl with tahini-yogurt</span>
           
         </a>
+        <a class="rl-card" href="../recipes/misir-wat.html" data-category="recipes">
+          <span class="rl-card-title">Misir wat (Ethiopian spiced red lentil stew)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/panzanella-with-charred-tomatoes.html" data-category="recipes">
           <span class="rl-card-title">Panzanella with charred tomatoes</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/peruvian-ceviche.html" data-category="recipes">
+          <span class="rl-card-title">Peruvian ceviche</span>
           
         </a>
         <a class="rl-card" href="../recipes/roasted-sweet-potato-and-black-bean-salad-with-chipotle-lime.html" data-category="recipes">
@@ -148,6 +170,10 @@
         </a>
         <a class="rl-card" href="../recipes/senegalese-thiakry-millet-salad-or-west-african-grain-salad.html" data-category="recipes">
           <span class="rl-card-title">Senegalese-inspired savory millet salad with mango, mint, and ginger-lime</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/suya.html" data-category="recipes">
+          <span class="rl-card-title">Suya (Nigerian peanut-spiced grilled beef skewers)</span>
           
         </a>
     </div>
@@ -159,58 +185,49 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="white-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">White onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="yellow-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Yellow onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="fennel-bulb.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel bulb</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="leek.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Leek</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="espresso-beans.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Espresso beans</span>
-          <span class="rl-card-why">aromatic · pantry</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="bell-pepper.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Bell pepper</span>
-          <span class="rl-card-why">vegetable · pantry</span>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="carrot.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Carrot</span>
-          <span class="rl-card-why">vegetable · pantry</span>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Avocado</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/mortar-pounding.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Mortar pounding (clay vs granite)</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>
     </div><nav class="adj-nav"><a class="adj-nav-link" href="red-miso.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Red miso (aka)</span>
-    </a><a class="adj-nav-link" href="red-pepper-flakes.html">
+    </a><a class="adj-nav-link" href="palm-oil.html">
       <span class="adj-nav-label">Next →</span>
-      <span class="adj-nav-title">Red pepper flakes (crushed red pepper)</span>
+      <span class="adj-nav-title">Red palm oil</span>
     </a></nav>
   
     <footer class="page-footer">

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ginger-scallion oil (薑蔥油, geung chung yau)'
 desc: 'Cantonese aromatic finishing oil. Minced ginger and scallion shocked with smoking-hot neutral oil into a paste that perfumes plain rice, congee, poached chicken, steamed fish, and noodles.'
 metaDesc: 'Ginger-scallion oil from scratch. Minced ginger and scallion finely chopped, salt-cured briefly, then shocked with smoking neutral oil. The Cantonese chicken-rice condiment.'
-tags: ['sauce', 'aromatic', 'chinese', 'pantry', 'make-ahead', 'umami']
+tags: ['pantry', 'make-ahead', 'umami']
 updated: '2026-05-08'
 
 servings: 16

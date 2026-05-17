@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Rice vinegar'
 desc: 'Mild, faintly sweet vinegar fermented from rice. ~4–5% acetic acid; gentler than Western vinegars, almost floral on the back end.'
-tags: ['acid', 'japanese', 'pantry']
+tags: ['pantry']
 updated: '2026-04-29'
 density_g_per_ml: 1.01
 

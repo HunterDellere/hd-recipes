@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chè đậu trắng (black-eyed pea and sticky rice chè)'
 desc: 'Warm Vietnamese chè of tender black-eyed peas and chewy glutinous rice in a barely-sweet coconut milk base. A central-Vietnamese workhorse dessert, comforting, structural, and unfashionable in a way that makes it good.'
 metaDesc: 'Chè đậu trắng, black-eyed pea and glutinous rice Vietnamese dessert in coconut milk. Warm, comforting, central Vietnam standard.'
-tags: ['che', 'vietnamese-dessert', 'vietnamese', 'dessert', 'coconut', 'legume-dessert', 'glutinous-rice', 'comfort']
+tags: ['che', 'legume-dessert', 'glutinous-rice', 'comfort']
 updated: '2026-05-16'
 
 servings: 4

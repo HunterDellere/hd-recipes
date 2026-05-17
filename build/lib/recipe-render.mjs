@@ -344,12 +344,14 @@ function wrapStepQuantities(text, fm, ingredientBySlug, subHintsState) {
     insertSpan(m.index, m.index + full.length, buildStepQtySpan(met.qty, met.unit, iqNum, canonImperialUnit(iu), full));
   }
 
-  // Pass 1d — substitution hints. For each substitution `for` token that
-  // hasn't yet been wrapped in any prior step, find the first non-overlapping
-  // occurrence in this step and claim it. The `for` strings are often verbose
-  // ("pecorino romano DOP, aged 8 to 12 months") and won't appear verbatim in
-  // step prose — try the full literal first, then a stripped "core noun" form
-  // (everything before the first comma or paren).
+  // Pass 1d — substitution hints. For each substitution `for` token that hasn't
+  // yet been wrapped in any prior step (tracked via subHintsState.used), find
+  // the first non-overlapping occurrence in this step and claim it.
+  //
+  // The `for` strings in frontmatter are often verbose ("pecorino romano DOP,
+  // aged 8 to 12 months") and won't appear verbatim in step prose. We try the
+  // full literal first, then fall back to a stripped-down "core noun" form —
+  // everything before the first comma or parenthesis, e.g. "pecorino romano".
   if (subHintsState && subHintsState.hints && subHintsState.hints.length) {
     for (const hint of subHintsState.hints) {
       if (subHintsState.used.has(hint.for)) continue;
@@ -388,27 +390,6 @@ function wrapStepQuantities(text, fm, ingredientBySlug, subHintsState) {
   out += escapeHtml(text.slice(cursor));
   return out;
 }
-
-/**
- * Minimal monoline SVG icons placed inline in section headings. Same visual
- * weight as the existing pair-card glyphs (1.6 px stroke, 14 px box). The
- * goal is quiet identity, not decoration — they sit at 0.7 opacity and
- * shrink to nothing on mobile-narrow if space is tight.
- */
-const SECTION_ICONS = {
-  beforeYouStart: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>`,
-  mise:           `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5 h12 v3 a6 6 0 0 1 -12 0 z"/><path d="M16 6 a4 4 0 0 1 4 4 v0 a4 4 0 0 1 -4 4"/><line x1="10" y1="14" x2="10" y2="20"/><line x1="6" y1="20" x2="14" y2="20"/></svg>`,
-  execution:      `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20 c0 -3 2 -5 5 -8 c3 -3 5 -5 5 -8"/><path d="M11 20 c0 -3 2 -5 5 -8 c3 -3 5 -5 5 -8"/><path d="M3 20 c0 -3 2 -5 5 -8 c3 -3 5 -5 5 -8"/></svg>`,
-  safety:         `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L4 6 v6 c0 4.5 3 7.5 8 9 c5 -1.5 8 -4.5 8 -9 V6 z"/></svg>`,
-  equipment:      `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3 l3 3 -8 8 -3 -1 -1 -3 z"/><path d="M11 12 l5 5 a2 2 0 0 1 -3 3 l-5 -5"/></svg>`,
-  modifications:  `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 16 7"/><polyline points="13 4 16 7 13 10"/><polyline points="20 17 8 17"/><polyline points="11 14 8 17 11 20"/></svg>`,
-  substitutions:  `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg>`,
-  notes:          `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 h9 l4 4 v14 a0 0 0 0 1 0 0 H6 z"/><polyline points="15 3 15 7 19 7"/><line x1="9" y1="12" x2="16" y2="12"/><line x1="9" y1="16" x2="14" y2="16"/></svg>`,
-  pairs:          `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19 s-7 -4.5 -7 -10 a4 4 0 0 1 7 -2.6 a4 4 0 0 1 7 2.6 c0 5.5 -7 10 -7 10 z"/></svg>`,
-  homemade:       `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 L12 4 L21 11"/><path d="M5 10 v9 a1 1 0 0 0 1 1 h12 a1 1 0 0 0 1 -1 v-9"/><path d="M10 20 v-6 h4 v6"/></svg>`,
-  nutrition:      `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 c-3 0 -6 2 -6 6 c0 5 6 10 6 10 s6 -5 6 -10 c0 -4 -3 -6 -6 -6 z"/><path d="M12 4 c0 4 -3 6 -3 9"/></svg>`,
-  hubs:           `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 6 V4 a1 1 0 0 1 1 -1 h8 a1 1 0 0 1 1 1 v2"/></svg>`,
-};
 
 export function renderRecipeHero(fm, slug, category, opts = {}) {
   const time = fm.time || {};
@@ -453,9 +434,9 @@ export function renderRecipeHero(fm, slug, category, opts = {}) {
   }
 
   // Calories per serving — pulled from the computed nutrition snapshot. Only
-  // shows when we have a real positive kcal number (build-time nutrition
-  // often resolves to 0 when ingredients aren't yet mapped to USDA IDs).
-  // Click/hover expands the macros line beneath the kcal value.
+  // shows when we have a real positive kcal number (build-time nutrition often
+  // resolves to 0 when ingredients aren't yet mapped to USDA IDs; rendering
+  // "0 kcal" would be a lie). Click/hover to expand into the full macro line.
   const ps = nutrition && nutrition.perServing;
   const kcal = ps && Number(ps.energy_kcal);
   if (ps && isFinite(kcal) && kcal > 0) {
@@ -658,16 +639,8 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     if (!phaseMap.has(g)) { phaseMap.set(g, []); phaseGroups.push(g); }
     phaseMap.get(g).push(r);
   }
-  // Phase headers carry a small ordinal ("1.", "2.") so the cook can count
-  // their way through; the validator emits warnings when authors prefix the
-  // phase name with the number themselves, so this is the canonical place.
-  let phaseOrd = 0;
   const miseHtml = phaseGroups.map(g => {
-    let head = '';
-    if (g) {
-      phaseOrd += 1;
-      head = `<h3 class="ing-group-head"><span class="ing-group-ord" aria-hidden="true">${phaseOrd}.</span><span class="ing-group-text">${escapeHtml(g)}</span></h3>`;
-    }
+    const head = g ? `<h3 class="ing-group-head">${escapeHtml(g)}</h3>` : '';
     const rows = phaseMap.get(g).map(r => renderRow(r, { variant: 'mise' })).join('');
     return `${head}<ol class="ing-list">${rows}\n      </ol>`;
   }).join('\n');
@@ -677,7 +650,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
   const baseServings = fm.servings || 1;
   return `
     <span class="section-anchor" id="ingredients"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.mise}</span>Mise en Place</h2></div>
+    <div class="section-head"><h2>Mise en Place</h2></div>
     <div class="recipe-ingredients" data-base-servings="${baseServings}">
       <div class="ing-controls">
         <div class="ing-control ing-scale">
@@ -740,11 +713,13 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
   const stepImages = images && images.steps ? images.steps : {};
 
   // Substitution-hint state — each `substitutions[].for` becomes a hoverable
-  // span the first time its phrase appears in any step. Tracked across all
-  // steps so each ingredient is wrapped at most once per recipe.
+  // span the first time it appears in any step. Tracked across all steps so
+  // we only wrap each ingredient name once per recipe (avoids visual noise).
   const subHints = (fm.substitutions || [])
     .filter(s => s && s.for && s.use)
     .map(s => ({ for: String(s.for), use: String(s.use), note: s.note ? String(s.note) : '' }))
+    // Longer phrases first so "pecorino romano DOP, aged 8 to 12 months" wins
+    // before a shorter substring claims the bytes.
     .sort((a, b) => b.for.length - a.for.length);
   const subHintsState = { hints: subHints, used: new Set() };
 
@@ -786,7 +761,10 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
         }, relTo)}</figure>`
       : '';
 
-    const timeAttr = step.time_min ? ` data-time-min="${step.time_min}"` : '';
+    // data-time-min exposes the raw minute count on the <li> so out-of-band
+    // tooling (mobile bottom nav, palette, print rules) can reason about a
+    // step's duration without re-parsing the inner timer button.
+    const timeAttr = step.time_min ? ` data-time-min="${Number(step.time_min)}"` : '';
     return `
       <li class="step-item${imgHtml ? ' has-image' : ''}"${timeAttr}>
         <span class="step-num">${stepNum}</span>
@@ -796,7 +774,7 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
   }).join('');
   return `
     <span class="section-anchor" id="execution"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.execution}</span>Execution</h2></div>
+    <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">${items}
     </ol>`;
 }
@@ -841,7 +819,7 @@ export function renderNutritionBlock(nutrition) {
 
   return `
     <span class="section-anchor" id="nutrition"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.nutrition}</span>Nutrition <span class="sh-sub">per serving</span></h2></div>
+    <div class="section-head"><h2>Nutrition <span class="sh-sub">per serving</span></h2></div>
     <div class="recipe-nutrition">
       <div class="nut-col">${macros}</div>
       ${micros ? `<div class="nut-col">${micros}</div>` : ''}
@@ -863,59 +841,16 @@ export function renderEquipment(fm, currentPath, equipmentBySlug) {
   }).join('');
   return `
     <span class="section-anchor" id="equipment"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.equipment}</span>Equipment</h2></div>
+    <div class="section-head"><h2>Equipment</h2></div>
     <div class="recipe-equipment">${chips}</div>`;
-}
-
-/**
- * Surface the recipe's defining technique sentence as a styled callout
- * before the rest of the notes. Detects the first paragraph and checks for
- * a small set of "this is THE critical thing" phrasings used across the
- * library. If matched, the first sentence of that paragraph is extracted as
- * the callout body; the full paragraph is preserved in the notes flow.
- */
-const CRITICAL_PHRASES = [
-  'lives or dies',
-  'the single most',
-  'the critical',
-  'is the technique',
-  'is non-negotiable',
-  'non-negotiable',
-];
-function extractCriticalSentence(notes) {
-  if (!notes) return null;
-  const firstPara = String(notes).split('\n\n')[0] || '';
-  const lower = firstPara.toLowerCase();
-  const hit = CRITICAL_PHRASES.some(p => lower.includes(p));
-  if (!hit) return null;
-  // Split on a sentence terminator followed by whitespace and a capital
-  // letter; fall back to the whole paragraph if no terminator is found.
-  const m = firstPara.match(/^[^.!?]*[.!?](?=\s|$)/);
-  return (m && m[0].trim()) || firstPara.trim();
 }
 
 export function renderRecipeNotes(fm) {
   if (!fm.notes) return '';
   const notesHtml = fm.notes.split('\n\n').map(p => `<p>${escapeHtml(p)}</p>`).join('');
-  const critical = extractCriticalSentence(fm.notes);
-  const callout = critical ? `
-    <aside class="recipe-critical" role="note" aria-label="Critical technique">
-      <span class="recipe-critical-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 3 L2 20 H22 Z"/>
-          <line x1="12" y1="10" x2="12" y2="14.5"/>
-          <circle cx="12" cy="17.2" r=".7" fill="currentColor"/>
-        </svg>
-      </span>
-      <div class="recipe-critical-body">
-        <span class="recipe-critical-label">The critical thing</span>
-        <p class="recipe-critical-text">${escapeHtml(critical)}</p>
-      </div>
-    </aside>` : '';
   return `
     <span class="section-anchor" id="notes"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.notes}</span>Notes</h2></div>
-    ${callout}
+    <div class="section-head"><h2>Notes</h2></div>
     <div class="recipe-notes">${notesHtml}</div>`;
 }
 
@@ -942,30 +877,22 @@ export function renderBeforeYouStart(fm) {
   }
   return `
     <span class="section-anchor" id="before-you-start"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.beforeYouStart}</span>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before mise.</p></div>
+    <div class="section-head"><h2>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before mise.</p></div>
     <div class="recipe-prelude">${bodyHtml}</div>`;
 }
 
 export function renderSubstitutions(fm, opts = {}) {
   if (!fm.substitutions || !fm.substitutions.length) return '';
-  // Card grid: label-style "for" header (the use case), the swap as the
-  // larger primary text, and the note as supporting prose. Scans faster
-  // than the old `<strong>for</strong> → use` line because the eye gets
-  // three distinct typographic registers rather than one inline string.
   const items = fm.substitutions.map(s => `
-        <li class="sub-card">
-          <span class="sub-card-for">${escapeHtml(s.for)}</span>
-          <span class="sub-card-use">${escapeHtml(s.use)}</span>
-          ${s.note ? `<p class="sub-card-note">${escapeHtml(s.note)}</p>` : ''}
-        </li>`).join('');
+        <li><strong>${escapeHtml(s.for)}</strong> → ${escapeHtml(s.use)}${s.note ? ` <span class="sub-note">${escapeHtml(s.note)}</span>` : ''}</li>`).join('');
   const blurb = opts.context === 'ingredient'
-    ? 'What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.'
+    ? 'What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.'
     : opts.context === 'equipment'
       ? 'Workable alternatives when this tool is unavailable. The use case sets the bar each swap has to clear.'
       : '1:1 ingredient swaps where the dish stays the same dish.';
   return `
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.substitutions}</span>Substitutions</h2><p class="section-blurb">${blurb}</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">${blurb}</p></div>
     <ul class="recipe-subs">${items}
     </ul>`;
 }
@@ -998,7 +925,7 @@ export function renderModifications(fm) {
   }).join('');
   return `
     <span class="section-anchor" id="modifications"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.modifications}</span>Modifications</h2><p class="section-blurb">Pivots that change the dish's character — protein swaps, regional variants, dietary recastings.</p></div>
+    <div class="section-head"><h2>Modifications</h2><p class="section-blurb">Pivots that change the dish's character — protein swaps, regional variants, dietary recastings.</p></div>
     <ul class="recipe-mods">${items}
     </ul>`;
 }
@@ -1032,7 +959,7 @@ export function renderHomemadeAlternatives(fm, currentPath, entriesByPath) {
   }).join('');
   return `
     <span class="section-anchor" id="homemade"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.homemade}</span>Make it from scratch</h2></div>
+    <div class="section-head"><h2>Make it from scratch</h2></div>
     <p class="hm-blurb">Store-bought is fine, but each of these has a homemade version that earns the time.</p>
     <ul class="hm-list">${items}
     </ul>`;
@@ -1042,7 +969,7 @@ export function renderHomemadeAlternatives(fm, currentPath, entriesByPath) {
  * Build the auto-generated recipe body. Used when content/<recipe>.md has no
  * authored body — the entire page renders from frontmatter.
  */
-function renderPairings(pairings, currentPath, entriesByPath) {
+function renderPairings(pairings, currentPath) {
   if (!pairings || !pairings.length) return '';
 
   // Per-card mini icon — same line-art set used elsewhere, scoped by category
@@ -1060,39 +987,24 @@ function renderPairings(pairings, currentPath, entriesByPath) {
     const icon = ICONS[p.category] || '';
     const desc = p.desc ? `<span class="pair-desc">${escapeHtml(p.desc.slice(0, 100))}</span>` : '';
     const explicitClass = p.explicit ? ' pair-card-explicit' : '';
+    const reasonText = p.explicit ? p.reason : p.reason; // explicit reasons are full sentences; auto reasons are short chip text
     const explicitBadge = p.explicit ? `<span class="pair-explicit-badge" aria-label="Hand-picked pairing">picked</span>` : '';
-    // Look up the enriched entry for the swatch (cuisine palette + glyph
-    // + optional hero image). Pairings only carry summary fields, so we
-    // need the full record to read _card.
-    const target = entriesByPath && (entriesByPath.get ? entriesByPath.get(p.path) : entriesByPath[p.path]);
-    const card = (target && target._card) || {};
-    let swatch;
-    if (card.heroSrc) {
-      swatch = `<span class="pair-swatch pair-swatch-photo" aria-hidden="true" style="background-image:url('${escapeHtml(relPath(currentPath, card.heroSrc))}')"></span>`;
-    } else {
-      const idx = card.swatchIndex != null ? card.swatchIndex : 0;
-      const glyph = card.swatchGlyph || 'leaf';
-      swatch = `<span class="pair-swatch ec-swatch" data-swatch="${idx}" data-glyph="${escapeHtml(glyph)}" aria-hidden="true"></span>`;
-    }
     return `
         <a class="pair-card${explicitClass}" href="${escapeHtml(relPath(currentPath, p.path))}" data-category="${escapeHtml(p.category)}">
-          ${swatch}
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true">${icon}</span>
-              <span class="pair-cat">${escapeHtml(p.category)}</span>
-              ${explicitBadge}
-            </span>
-            <span class="pair-title">${escapeHtml(p.title)}</span>
-            ${desc}
-            <span class="pair-reason">${escapeHtml(p.reason)}</span>
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true">${icon}</span>
+            <span class="pair-cat">${escapeHtml(p.category)}</span>
+            ${explicitBadge}
           </span>
+          <span class="pair-title">${escapeHtml(p.title)}</span>
+          ${desc}
+          <span class="pair-reason">${escapeHtml(reasonText)}</span>
         </a>`;
   }).join('');
 
   return `
     <span class="section-anchor" id="pairs-with"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.pairs}</span>Pairs with</h2></div>
+    <div class="section-head"><h2>Pairs with</h2></div>
     <p class="pair-blurb">A handful of next moves — other dishes that round the meal, the techniques behind this one, the cuisine context, and the most distinctive ingredient.</p>
     <div class="pair-grid">${cards}
     </div>`;
@@ -1103,7 +1015,7 @@ function renderHubMembership(inHubs, currentPath) {
   const chips = inHubs.map(h => `<a class="hub-chip" href="${escapeHtml(relPath(currentPath, h.path))}" data-category="hubs">${escapeHtml(h.title)}</a>`).join('');
   return `
     <span class="section-anchor" id="in-hubs"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true">${SECTION_ICONS.hubs}</span>In collections</h2></div>
+    <div class="section-head"><h2>In collections</h2></div>
     <div class="hub-chips">${chips}</div>`;
 }
 
@@ -1157,7 +1069,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
   const hubsHtml = renderHubMembership(inHubs, `pages/${category}/${slug}.html`);
   if (hubsHtml) { sections.push(hubsHtml); sidebarLinks.push({ id: 'in-hubs', label: 'Collections' }); }
 
-  const pairsHtml = renderPairings(pairings, `pages/${category}/${slug}.html`, entriesByPath);
+  const pairsHtml = renderPairings(pairings, `pages/${category}/${slug}.html`);
   if (pairsHtml) { sections.push(pairsHtml); sidebarLinks.push({ id: 'pairs-with', label: 'Pairs with' }); }
 
   // Breadcrumb in the sidebar — orientation up the IA. "Recipes › <Cuisine> ›

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sesame seeds (white, toasted)'
 desc: 'Sesamum indicum seed, 50 to 55% oil by weight. Nutty, faintly grassy raw; deeply roasted and aromatic once toasted past the first popping window. The defining garnish across East Asian cooking.'
 metaDesc: 'Sesame seeds: composition, the dry-toast window, sesamol antioxidant chemistry, applications across Korean banchan, Japanese furikake, Middle Eastern tahini, Chinese stir-fries.'
-tags: ['pantry', 'spice', 'nuts']
+tags: ['pantry']
 density_g_per_ml: 0.65
 updated: '2026-05-10'
 

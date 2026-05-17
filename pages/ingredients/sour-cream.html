@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Sour cream","status":"complete","tags":["dairy","fat","fermentation"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Sour cream","status":"complete","tags":["fermentation"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -106,41 +108,33 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">sour cream (baking, structural fat + acid)</span>
-          <span class="sub-card-use">full-fat Greek yogurt</span>
-          <p class="sub-card-note">Same low-pH tenderizing function and similar consistency. Lower fat (~10% vs 18%), so the crumb will be slightly less rich; bump butter or oil by 5 to 10% to compensate. Tang reads slightly cleaner.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">sour cream (baking, structural fat + acid)</span>
-          <span class="sub-card-use">buttermilk + softened butter</span>
-          <p class="sub-card-note">For each 100 g sour cream, use 80 g buttermilk + 20 g softened butter. Approximates the pH and the fat content; the texture is looser, so this works in cakes but not in dips or finishing applications.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">sour cream (sauces and finishing, heat-stable)</span>
-          <span class="sub-card-use">crème fraîche</span>
-          <p class="sub-card-note">Higher fat (30 to 40%), milder tang, and more forgiving under heat. The right substitute when a recipe will simmer or reduce; over-rich for cold dips where you want the brighter sour-cream tang.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">sour cream (dips and cold applications)</span>
-          <span class="sub-card-use">Mexican crema</span>
-          <p class="sub-card-note">Looser, less tangy. The right call for tacos, enchiladas, and any recipe where Mexican crema would be regionally correct anyway.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">sour cream (vegan)</span>
-          <span class="sub-card-use">cashew cream + <a class="x-link" data-category="ingredients" href="lemon.html">lemon</a> juice</span>
-          <p class="sub-card-note">Soak 100 g raw cashews 4 hours, blend with 80 ml water and 5 g / 1 tsp lemon juice plus a pinch of salt. Approximates the fat content and tang. The texture is smoother than dairy sour cream; works in baking and dips, less ideal as a finishing dollop where the grain matters.</p>
-        </li>
+        <li><strong>sour cream (baking, structural fat + acid)</strong> → full-fat Greek yogurt <span class="sub-note">Same low-pH tenderizing function and similar consistency. Lower fat (~10% vs 18%), so the crumb will be slightly less rich; bump butter or oil by 5 to 10% to compensate. Tang reads slightly cleaner.</span></li>
+        <li><strong>sour cream (baking, structural fat + acid)</strong> → buttermilk + softened butter <span class="sub-note">For each 100 g sour cream, use 80 g buttermilk + 20 g softened butter. Approximates the pH and the fat content; the texture is looser, so this works in cakes but not in dips or finishing applications.</span></li>
+        <li><strong>sour cream (sauces and finishing, heat-stable)</strong> → crème fraîche <span class="sub-note">Higher fat (30 to 40%), milder tang, and more forgiving under heat. The right substitute when a recipe will simmer or reduce; over-rich for cold dips where you want the brighter sour-cream tang.</span></li>
+        <li><strong>sour cream (dips and cold applications)</strong> → Mexican crema <span class="sub-note">Looser, less tangy. The right call for tacos, enchiladas, and any recipe where Mexican crema would be regionally correct anyway.</span></li>
+        <li><strong>sour cream (vegan)</strong> → cashew cream + <a class="x-link" data-category="ingredients" href="lemon.html">lemon</a> juice <span class="sub-note">Soak 100 g raw cashews 4 hours, blend with 80 ml water and 5 g / 1 tsp lemon juice plus a pinch of salt. Approximates the fat content and tang. The texture is smoother than dairy sour cream; works in baking and dips, less ideal as a finishing dollop where the grain matters.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/chicken-paprikash.html" data-category="recipes">
+          <span class="rl-card-title">Chicken paprikash (csirkepaprikás)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/golabki.html" data-category="recipes">
+          <span class="rl-card-title">Gołąbki (Polish stuffed cabbage rolls)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/individual-fluffy-chocolate-cakes.html" data-category="recipes">
           <span class="rl-card-title">Individual fluffy chocolate cakes</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pierogi-z-kapusta-i-grzybami.html" data-category="recipes">
+          <span class="rl-card-title">Pierogi z kapustą i grzybami (sauerkraut and mushroom pierogi)</span>
           
         </a>
     </div>
@@ -155,33 +149,33 @@
           <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="gorgonzola.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="chinkiang-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Chinkiang black vinegar (镇江香醋)</span>
+          <span class="rl-card-why">fermentation</span>
+        </a>
+        <a class="rl-card" href="instant-yeast.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Instant yeast</span>
+          <span class="rl-card-why">fermentation</span>
+        </a>
+        <a class="rl-card" href="gorgonzola.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Gorgonzola</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card is-strong" href="butter.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Butter (unsalted)</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card is-strong" href="heavy-cream.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Heavy cream</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card is-strong" href="samna.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Samna (clarified butter)</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card" href="ghee.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Ghee (clarified butter, घी)</span>
-          <span class="rl-card-why">dairy · fat</span>
+          <span class="rl-card-why">fermentation</span>
         </a>
         <a class="rl-card" href="jameed.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Jameed</span>
-          <span class="rl-card-why">dairy · fermentation</span>
+          <span class="rl-card-why">fermentation</span>
         </a>
-        <a class="rl-card" href="evaporated-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Evaporated milk</span>
-          <span class="rl-card-why">dairy</span>
+        <a class="rl-card" href="red-miso.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Red miso (aka)</span>
+          <span class="rl-card-why">fermentation</span>
+        </a>
+        <a class="rl-card" href="white-miso.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">White miso (shiro)</span>
+          <span class="rl-card-why">fermentation</span>
+        </a>
+        <a class="rl-card" href="bagoong.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bagoong</span>
+          <span class="rl-card-why">fermentation</span>
         </a>
         </div>
       </div>
@@ -192,9 +186,9 @@
           <span class="rl-group-count">1</span>
         </h3>
         <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/cooked-yogurt-sauce.html" data-category="techniques" data-reason="tag">
+        <a class="rl-card is-strong" href="../techniques/cooked-yogurt-sauce.html" data-category="techniques" data-reason="tag">
           <span class="rl-card-title">Cooked yogurt sauce</span>
-          <span class="rl-card-why">dairy · fermentation</span>
+          <span class="rl-card-why">fermentation</span>
         </a>
         </div>
       </div>

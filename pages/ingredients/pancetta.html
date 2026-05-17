@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Pancetta","status":"complete","tags":["pork","umami","italian"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Pancetta","status":"complete","tags":["pork","umami"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,28 +109,12 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">pancetta (Bolognese ragù, Italian pasta sauce base)</span>
-          <span class="sub-card-use">guanciale</span>
-          <p class="sub-card-note">The richer, more silken cured-pork-jowl alternative. Subtly different in flavor (more intramuscular fat, deeper umami) but functionally identical in the rendering role. The upgrade for Roman pasta classics; equally good in Bolognese though pancetta is the canonical choice.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">pancetta (when no Italian cured pork is available)</span>
-          <span class="sub-card-use">thick-cut bacon, simmered in water 5 minutes first to remove smoke</span>
-          <p class="sub-card-note">The water-simmer step strips most of the smoke flavor from American bacon, leaving a salt-cured pork product approximately equivalent to pancetta in cooking. Pat dry, render normally. The dish reads slightly sweeter and less aromatic than the genuine article but is the everyday workaround.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">pancetta (when no cured pork is available)</span>
-          <span class="sub-card-use">salt pork plus a bay leaf and a juniper berry crushed with the lardons</span>
-          <p class="sub-card-note">Salt pork is uncured pork-belly fat with no aromatic seasoning; adding bay and juniper at the rendering stage approximates the pancetta aromatic profile. Less depth than the genuine article but covers the basic salt-cured-pork role.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">pancetta (vegetarian or vegan)</span>
-          <span class="sub-card-use">crisp-rendered tempeh lardons in olive oil and smoked paprika</span>
-          <p class="sub-card-note">Different ingredient entirely; covers the textural-crisp role and the smoky-savory note. Use 70 percent of the pancetta mass and add a teaspoon of soy sauce to the rendered oil for the glutamate hit. Functional in casual home pasta; not a substitute for the structural Italian dish.</p>
-        </li>
+        <li><strong>pancetta (Bolognese ragù, Italian pasta sauce base)</strong> → guanciale <span class="sub-note">The richer, more silken cured-pork-jowl alternative. Subtly different in flavor (more intramuscular fat, deeper umami) but functionally identical in the rendering role. The upgrade for Roman pasta classics; equally good in Bolognese though pancetta is the canonical choice.</span></li>
+        <li><strong>pancetta (when no Italian cured pork is available)</strong> → thick-cut bacon, simmered in water 5 minutes first to remove smoke <span class="sub-note">The water-simmer step strips most of the smoke flavor from American bacon, leaving a salt-cured pork product approximately equivalent to pancetta in cooking. Pat dry, render normally. The dish reads slightly sweeter and less aromatic than the genuine article but is the everyday workaround.</span></li>
+        <li><strong>pancetta (when no cured pork is available)</strong> → salt pork plus a bay leaf and a juniper berry crushed with the lardons <span class="sub-note">Salt pork is uncured pork-belly fat with no aromatic seasoning; adding bay and juniper at the rendering stage approximates the pancetta aromatic profile. Less depth than the genuine article but covers the basic salt-cured-pork role.</span></li>
+        <li><strong>pancetta (vegetarian or vegan)</strong> → crisp-rendered tempeh lardons in olive oil and smoked paprika <span class="sub-note">Different ingredient entirely; covers the textural-crisp role and the smoky-savory note. Use 70 percent of the pancetta mass and add a teaspoon of soy sauce to the rendered oil for the glutamate hit. Functional in casual home pasta; not a substitute for the structural Italian dish.</span></li>
     </ul>
 
     
@@ -152,11 +138,19 @@
       <div class="rl-group" data-related-group="recipes">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
+          <span class="rl-group-count">3</span>
         </h3>
         <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/pork-floss.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Pork floss (rousong, 肉松)</span>
+        <a class="rl-card is-strong" href="../recipes/chinese-lions-head-meatballs.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Chinese lion's head meatballs (shīzi tóu)</span>
+          <span class="rl-card-why">pork · umami</span>
+        </a>
+        <a class="rl-card is-strong" href="../recipes/puerto-rican-mofongo.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Puerto Rican mofongo</span>
+          <span class="rl-card-why">pork · umami</span>
+        </a>
+        <a class="rl-card" href="../recipes/shoyu-ramen-from-scratch.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Shoyu ramen from scratch</span>
           <span class="rl-card-why">pork · umami</span>
         </a>
         </div>
@@ -165,27 +159,19 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">4</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="bacon.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card" href="bacon.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Bacon</span>
           <span class="rl-card-why">pork · umami</span>
         </a>
-        <a class="rl-card is-strong" href="canned-san-marzano-tomatoes.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Canned San Marzano tomatoes</span>
-          <span class="rl-card-why">italian · umami</span>
-        </a>
-        <a class="rl-card" href="parmigiano-reggiano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Parmigiano Reggiano</span>
-          <span class="rl-card-why">italian · umami</span>
-        </a>
-        <a class="rl-card" href="pecorino-romano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Pecorino romano</span>
-          <span class="rl-card-why">italian · umami</span>
-        </a>
         <a class="rl-card" href="ground-pork.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Ground pork</span>
+          <span class="rl-card-why">pork</span>
+        </a>
+        <a class="rl-card" href="lard.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Lard (manteca)</span>
           <span class="rl-card-why">pork</span>
         </a>
         <a class="rl-card" href="pork-belly.html" data-category="ingredients" data-reason="tag">

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Kombu (dried kelp)'
 desc: 'Sun-dried Saccharina kelp from cold northern Pacific waters. The highest natural source of free glutamate in any kitchen ingredient and one half of the kombu-katsuobushi dashi pair that anchors washoku.'
 metaDesc: 'Kombu: glutamate-rich dried kelp from Hokkaido ,  Ma, Rishiri, Rausu, Hidaka grades, and the temperature window that determines whether the stock is delicate or slimy.'
-tags: ['umami', 'japanese', 'pantry']
+tags: ['umami', 'pantry']
 updated: '2026-05-09'
 
 usda_fdc_id: 168457

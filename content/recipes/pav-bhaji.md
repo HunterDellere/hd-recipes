@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pav bhaji (Mumbai street vegetable mash)'
 desc: 'Boiled and mashed potatoes, peas, cauliflower, and bell peppers cooked in a deeply tomato-spiced ghee-and-onion masala built on pav bhaji masala (a specific commercial blend) and Kashmiri chili. Served with butter-toasted soft pav rolls, raw onion, lemon, and a generous pat of butter melting on top. The defining Mumbai street food.'
 metaDesc: 'Pav bhaji: Mumbai street food of mashed vegetables in a tomato-spice masala, served with butter-toasted soft pav rolls. The textbook home version.'
-tags: ['indian', 'vegetable', 'comfort']
+tags: ['comfort']
 updated: '2026-05-09'
 
 servings: 6

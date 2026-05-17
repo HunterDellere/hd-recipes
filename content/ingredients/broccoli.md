@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Broccoli'
 desc: 'Brassica oleracea var. italica. Sulfur-forward when overcooked; nutty and sweet with a hard, dry sear.'
-tags: ['vegetable']
+tags: []
 updated: '2026-04-29'
 
 usda_fdc_id: 170379

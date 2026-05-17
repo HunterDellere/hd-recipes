@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Grilled whole squid with nuoc cham (mực nướng)'
 desc: 'Whole cleaned squid (tubes and tentacles intact) marinated briefly in fish sauce, garlic, and lemongrass, grilled over high heat for 90 seconds per side until charred at the edges and just opaque through, served with classic Vietnamese nuoc cham — lime, fish sauce, sugar, garlic, chili. The 90-second high-heat window over fire instead of oil.'
 metaDesc: 'Vietnamese grilled squid (mực nướng) with nuoc cham — whole squid marinated in fish sauce and lemongrass, grilled 90 seconds per side, dipped in lime-fish-sauce-chili.'
-tags: ['vietnamese', 'seafood', 'fish', 'spicy', 'weeknight']
+tags: ['seafood', 'fish', 'spicy', 'weeknight']
 updated: '2026-05-09'
 
 servings: 4

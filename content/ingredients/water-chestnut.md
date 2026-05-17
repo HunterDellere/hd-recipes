@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Water chestnut'
 desc: 'Corm of Eleocharis dulcis, an aquatic sedge cultivated in flooded paddies across southern China and Southeast Asia. A crisp, pale, faintly sweet vegetable that holds its snap through cooking by virtue of a heat-stable cell wall structure unique to the genus. The textural element in lion''s head meatballs, Cantonese dumpling fillings, and many southern Chinese stir-fries.'
 metaDesc: 'Water chestnut: ferulic-acid-cross-linked cell walls that stay crunchy after cooking, role in Chinese meatballs, dumplings, and stir-fries, fresh vs canned.'
-tags: ['vegetable', 'asian']
+tags: []
 density_g_per_ml: 0.85
 updated: '2026-05-15'
 

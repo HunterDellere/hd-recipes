@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lotus root and herb small bites'
 desc: 'Thin lotus root rounds blanched briefly to set the wagon-wheel structure, dressed with herb-oil, and topped per portion with one of: grated cured egg yolk, chili crisp and scallion, sesame paste and black vinegar, or soft soy-cured roe. The format is small-plate appetizer.'
 metaDesc: 'Lotus root small bites: thin blanched rounds dressed with herb oil and toppings (cured egg yolk, chili crisp, sesame paste, soy roe). Liang cai appetizer format.'
-tags: ['vegetable', 'chinese', 'side', 'no-cook', 'pantry']
+tags: ['no-cook', 'pantry']
 updated: '2026-05-09'
 
 servings: 4

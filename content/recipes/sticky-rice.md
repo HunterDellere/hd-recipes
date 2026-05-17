@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sticky rice (Lao-Thai khao niao)'
 desc: 'Long-soaked glutinous rice steamed in a bamboo basket over boiling water, the canonical Lao-Thai accompaniment to larb, grilled meats, and most northeastern Thai and Lao meals. Eaten with the fingers, rolled into small balls, used as the scooping utensil. Stub.'
 metaDesc: 'Sticky rice (Lao-Thai khao niao): overnight-soaked glutinous rice steamed in a bamboo basket to a dense, chewy, finger-eaten rice. Stub recipe.'
-tags: ['rice', 'thai', 'lao', 'side']
+tags: ['rice']
 updated: '2026-05-15'
 
 servings: 4

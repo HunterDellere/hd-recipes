@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chipotle in adobo'
 desc: 'Smoke-cured ripe jalapeños (chipotle morita or chipotle meco) rehydrated in a tomato-vinegar-aromatic sauce. The most concentrated form of Mexican smoke heat in a single pantry can; carries pectin and tomato emulsifier body that makes it function as a vinaigrette base, not just a flavoring.'
 metaDesc: 'Chipotle in adobo: smoke chemistry of dried chipotle, adobo sauce composition, role as emulsifier and flavor base, dishes across Mexican and Mexican-American cooking.'
-tags: ['spice', 'umami', 'mexican', 'spicy', 'pantry']
+tags: ['umami', 'spicy', 'pantry']
 density_g_per_ml: 1.05
 imperial_pref: 'tbsp'
 updated: '2026-05-10'

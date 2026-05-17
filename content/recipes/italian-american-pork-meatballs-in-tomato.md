@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Italian-American pork meatballs in tomato'
 desc: 'The Sunday-sauce meatball of the Italian-American canon, scaled down to a weeknight portion: ground pork (or a pork-and-beef blend) bound with a panko-and-milk panade, microplaned parmigiano, finely grated onion and garlic, fresh parsley, oregano, fennel pollen, and an egg yolk. The meatballs are seared in a hot pan to build a Maillard crust, then finished by simmering for 30 minutes in a tomato sauce built on San Marzano canned tomatoes, blistered garlic, and a glug of olive oil, the sauce reduces around the meatballs and the meatballs release their fat and juices into the sauce, producing the integrated meat-and-tomato eating experience that is the entire point of the dish.'
 metaDesc: 'Italian-American pork meatballs: panko-milk panade for tenderness, parmigiano and fennel pollen for depth, seared then simmered 30 minutes in a San Marzano tomato sauce. Sunday-sauce flavor on a weeknight schedule.'
-tags: ['italian', 'italian-american', 'pork', 'pasta', 'umami', 'sunday-sauce']
+tags: ['pork', 'pasta', 'umami']
 updated: '2026-05-15'
 last_made: '2026-05-12'
 

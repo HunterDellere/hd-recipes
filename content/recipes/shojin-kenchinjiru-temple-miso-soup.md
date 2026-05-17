@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Shōjin kenchinjiru: Zen Buddhist temple vegetable miso soup'
 desc: 'A shōjin ryōri (Japanese Buddhist temple cuisine) vegetable soup built on kombu-shiitake dashi (no animal product, the canonical Buddhist substitute for kombu-katsuobushi), with root vegetables sesame-oil-toasted before simmering, plus crumbled firm tofu and konnyaku. Originated at Kenchō-ji, the Zen temple in Kamakura founded in 1253, where the soup is said to have been a daily monastery preparation that spread through the Rinzai-school temple network and into broader Japanese cooking. A bowl of profound umami built entirely from vegetables and seaweed, the structural proof that Japanese cuisine does not need animal-based dashi to produce a complete and deeply savory soup.'
 metaDesc: 'Shōjin kenchinjiru: Japanese Zen Buddhist temple miso soup with kombu-shiitake vegetarian dashi, sesame-oil-toasted root vegetables, tofu, and konnyaku. Originated at Kenchō-ji temple in 13th-century Kamakura.'
-tags: ['japanese', 'soup', 'shojin', 'umami', 'vegetable', 'winter', 'vegan']
+tags: ['soup', 'umami', 'vegan']
 updated: '2026-05-15'
 
 servings: 4

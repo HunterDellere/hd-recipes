@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Okaka (soy-and-sesame bonito flake mix)'
 desc: 'Katsuobushi tossed with soy sauce, mirin, toasted sesame oil, and a small pinch of sugar; left to marinate 10 minutes until the flakes absorb the seasoning into a damp-savory clump. The two-minute onigiri filling, rice topping, and pantry staple. Stub.'
 metaDesc: 'Homemade okaka: soy-and-sesame seasoned bonito flake mix for onigiri filling and rice topping. Stub recipe pending full draft.'
-tags: ['japanese', 'umami', 'pantry', 'make-ahead']
+tags: ['umami', 'pantry', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 8

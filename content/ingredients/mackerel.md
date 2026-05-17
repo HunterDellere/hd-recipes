@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mackerel (saba)'
 desc: 'Oily blue-skinned pelagic fish, 12 to 18% fat by weight, with a dense subcutaneous lipid layer and a dark muscle band along the lateral line. The signature ingredient of saba shioyaki, shime-saba, smoked mackerel pâté, and the Mediterranean grilled-mackerel canon.'
 metaDesc: 'Mackerel (saba): species, fat profile, lipid management in cooking, freshness cues, sourcing at Japanese and Western markets, applications across Japanese, Korean, Mediterranean, and British traditions.'
-tags: ['fish', 'seafood', 'japanese', 'umami']
+tags: ['fish', 'seafood', 'umami']
 updated: '2026-05-10'
 
 grams_per_unit: 175

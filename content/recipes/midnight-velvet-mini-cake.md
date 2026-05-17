@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Midnight velvet mini cake with strawberry and balsamic caviar'
 desc: 'A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finished with strawberry meringue buttercream, balsamic pearls, and tempered chocolate shards.'
 metaDesc: 'Mini chocolate cake (two 4-inch rounds) with bloomed Dutch cocoa, strawberry meringue buttercream, agar balsamic caviar, and tempered chocolate shards.'
-tags: ['cake', 'chocolate', 'dessert', 'weekend-project']
+tags: ['cake', 'weekend-project']
 updated: '2026-04-26'
 
 servings: 2
