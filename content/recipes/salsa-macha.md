@@ -22,6 +22,12 @@ cuisine: 'Mexican (Veracruzan)'
 course: 'sauce'
 diet: ['vegetarian', 'vegan', 'gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'The 25-minute cook is fast, but the salsa needs a 2-hour rest at room temperature before first use for the chili, nut, and oil flavors to integrate. Plan to make it the morning of (or the day before) you want to use it.'
+  - 'Oil temperature is the single most important variable. Use a probe thermometer to hold the oil at 130 to 150 °C; above that, the chilies and garlic scorch in seconds and the entire batch reads bitter. A sesame-seed test (one seed should dance, not burst) is the manual fallback.'
+  - 'Source dried morita, chile de árbol, and ancho or pasilla from a Mexican grocery or online. Generic crushed red pepper is not a substitute, the chili identity is the entire dish.'
+  - 'Have a clean dry glass jar (about 400 ml) ready before starting. The hot salsa goes in directly after grinding and stores refrigerated up to a month if the jar is contamination-free.'
+
 source:
   name: 'The Veracruzan canon (the eastern Mexican Gulf coast state, with roots in the Orizaba and Córdoba highlands and in the Mexican-Lebanese diaspora of the late 19th century, which is the structural reason salsa macha shares architectural DNA with the chili oils of the broader Levant). Documented in the modern stabilized form (dried chilies, garlic, nuts, seeds, fried in neutral oil, ground to a coarse paste, balanced with vinegar) across late 20th-century Mexican cookbooks; the dish has become an international phenomenon over the past decade through restaurants like Pujol (Mexico City) and through commercial brands.'
   note: 'Salsa macha is structurally distinct from the broader Mexican salsa tradition (raw or roasted-tomato-based pourable sauces) because it is oil-based rather than water-based; this gives it the cross-cuisine flexibility that the water-based salsas lack (an oil-based condiment travels onto applications where a water-based one would dilute). The traditional Veracruzan preparation is mortar-ground and oily; the modern food-processor preparation is faster and produces a slightly more uniform texture. Both are correct. The dish varies meaningfully by household: chili blend (morita-and-árbol is the most common modern reference; pure ancho or pasilla produces a milder smokier version), nut blend (peanut-only, almond-only, mixed; some versions use sunflower seeds), and acid (apple cider vinegar is the most common modern reference; some use white vinegar, others use lime juice off-heat).'

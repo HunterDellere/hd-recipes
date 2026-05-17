@@ -27,6 +27,12 @@ source:
   name: 'Adapted from the Italian-American Sunday-sauce tradition'
   note: 'The Italian-American meatball is a dish of the Italian diaspora in New York, Philadelphia, Chicago, and other 20th-century immigrant centers, built around the cheap-and-abundant ingredients (ground pork, ground beef, canned tomatoes, dried herbs) that Italian immigrants found in American supermarkets, and structured for the long Sunday simmer that defined the Italian-American matriarchal kitchen. The dish is not, strictly speaking, Italian: in Italy, polpette are smaller, leaner, and not typically served over pasta as a single combined plate. The big meatball-and-spaghetti combination on one plate is an Italian-American invention. The panko-and-milk panade is the structural element that distinguishes a tender meatball from a dense one, and the sear-then-simmer sequence is the structural element that builds the integrated meat-and-tomato sauce.'
 
+before_you_start:
+  - 'Start the panade FIRST and let it sit 5 to 7 minutes while you prep the aromatics. The panko needs that window to absorb the milk completely and turn into the paste that keeps the meatballs tender; mixing the meat with under-hydrated panko produces dense, bouncy meatballs.'
+  - 'If serving over pasta, drop the spaghetti or rigatoni into well-salted boiling water during the last 10 minutes of the 30-minute meatball simmer. The pasta and the sauce-with-meatballs should land at the same time; pasta finished too early sticks together, sauce held too long over-reduces.'
+  - 'Have everything for the meatball mix in small bowls on a board before you start mixing the meat. The myosin-extraction window is 45 to 60 seconds of mixing; stopping mid-mix to grate cheese or chop parsley overworks the meat and produces a rubbery final texture.'
+  - 'If you have the time, chill the shaped meatballs 10 to 15 minutes in the fridge before searing. The chill firms the surface and produces a deeper Maillard crust; skip if pressed, but the difference is visible in the finished dish.'
+
 ingredients:
   - group: 'Phase 1, the panade (made 5 minutes before the meatballs)'
     item: 'panko'

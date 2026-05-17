@@ -1310,6 +1310,22 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 .recipe-notes { font-size: 16.5px; line-height: 1.65; }
 .recipe-notes p { margin: .65em 0; color: var(--ink); }
 
+/* ── before-you-start prelude ─────────────────────────────────────
+   Scheduling / coordination callout above mise. Visually distinct so
+   the cook does not skim past it: bordered, slightly tinted, with
+   tighter bullet spacing. */
+.recipe-prelude {
+  border-left: 3px solid var(--accent, #c97a2c);
+  background: rgba(201, 122, 44, 0.06);
+  padding: 14px 18px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.recipe-prelude p { margin: .5em 0; color: var(--ink); }
+.recipe-prelude-list { margin: .25em 0; padding-left: 1.25em; }
+.recipe-prelude-list li { margin: .4em 0; color: var(--ink); }
+
 /* ── homemade alternatives ──────────────────────────────────────────
    "Make it from scratch" — invitations to upgrade store-bought ingredients.
    Distinct visually from substitutions: card-style links rather than a

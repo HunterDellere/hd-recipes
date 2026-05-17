@@ -22,6 +22,11 @@ cuisine: 'Japanese'
 course: 'sauce'
 diet: ['dairy-free', 'pescatarian']
 
+before_you_start:
+  - 'This is a 24-hour make-ahead. The kombu glutamate and katsuobushi inosinate extract slowly into the cold citrus-soy liquid; under 12 hours the sauce reads thin and under-stacked. Start at least one day before you need it, two if you can.'
+  - 'Source the yuzu first. Fresh or frozen-and-thawed yuzu from a Japanese grocery is the canonical version; the 3:1 lemon-lime fallback works but the aromatic ceiling is lower. If you cannot source yuzu, plan for the substitute before shopping for the soy and kombu.'
+  - 'Use a non-reactive jar with a tight seal (glass mason jar, 500 ml). The sauce sits in cold acid for a day; metal lids without a plastic liner will pit and throw off-flavors.'
+
 ingredients:
   - group: 'Phase 1, citrus juice'
     item: 'yuzu juice (or a 3:1 blend of fresh lemon juice and lime juice)'

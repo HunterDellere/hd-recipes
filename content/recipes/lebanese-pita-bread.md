@@ -26,6 +26,11 @@ source:
   name: 'Adapted from Lebanese and Syrian home-baking tradition'
   note: 'Pocket pita rather than thicker Greek-style pita; the technical premise is the steam-puff that produces the interior hollow.'
 
+before_you_start:
+  - 'Total time is 3 hours but most of it is passive: a 90-minute bulk rise plus a 30-minute bench rest. Start the dough at least 2.5 hours before you want hot pita.'
+  - 'Preheat the baking stone or steel at 290 C / 550 F for at least 45 minutes before the first loaf goes in. A stone that has not fully saturated with heat will not steam-puff the dough into a pocket.'
+  - 'If you want pita for fattoush, bake the day before. The pockets need to dry and stale at room temperature for 12 to 24 hours to develop the crisp shatter that survives the dressing.'
+
 ingredients:
   - item: 'bread flour'
     slug: 'bread-flour'

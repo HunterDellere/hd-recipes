@@ -22,6 +22,12 @@ cuisine: 'Mediterranean'
 course: 'side'
 diet: ['vegan', 'gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'This is a 30 to 60-day dry-salt cure, not a recipe you finish today. Active hands-on time is about 60 minutes spread across the initial pack, a re-pack at week 1, and a final transfer at the end.'
+  - 'Source fresh tight caper buds, picked at first light, all closed. Open flowers and overlarge buds cure into soft floral fragments rather than the crisp glucocapparin-mellowed buds the technique is built for. Italian or Greek specialty importers, or your own caper plant in summer, are the realistic channels.'
+  - 'Use non-iodized coarse sea salt (Mediterranean grey or sel gris). Iodized table salt packs too dense and produces a sharp metallic cure; fine salts cake against the buds and choke the moisture release.'
+  - 'Find a stable cool dry spot at 15 to 20 °C for the cure window. A pantry or cupboard works; humidity above 70 percent invites mold on the salt crust.'
+
 source:
   name: 'Adapted from the Pantelleria IGP and Salina IGP traditions'
   note: 'A dry-salt cure rather than a brine pickle. The salt-to-bud ratio (60 to 70 percent) is the canonical Italian island ratio.'

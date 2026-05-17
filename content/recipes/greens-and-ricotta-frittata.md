@@ -26,6 +26,12 @@ source:
   name: 'The Italian regional canon. Documented across Italian regional cookbooks; frittata di verdure (vegetable frittata) is structurally an everyday Italian home dish across the peninsula, with regional variations using whatever greens or vegetables are in season. The dish predates documentation and is structurally a peasant preparation (a way to extend a small number of eggs across a meal for many people with whatever vegetables and cheeses are at hand).'
   note: 'Two structural schools: the fully-stove-cooked frittata (cooked on the stove from start to finish, flipped onto a plate and slid back into the pan to finish the second side, the older preparation) and the oven-finished frittata (started on the stove to set the bottom, then transferred to the oven to set the top, the modern preparation that produces a more uniformly cooked texture). The version here is the oven-finished form, which is structurally more reliable for home cooks and produces a better texture for a thick frittata with vegetables and cheese. Distinct from a quiche (which has a pastry crust and a more cream-heavy egg base) and from a Spanish tortilla (which has potato as the structural primary ingredient and uses a plate-flip rather than an oven finish).'
 
+before_you_start:
+  - 'Preheat the oven to 200 °C / 400 °F with the rack in the upper third before starting the greens; the pan moves from stovetop to oven mid-cook and a not-yet-hot oven means the top sets unevenly. The preheat takes about as long as the onion sweat and greens wilt.'
+  - 'Pull the eggs to room temperature 30 minutes ahead. Cold eggs slow the bottom set when they hit the warm pan and produce a streaky cook line; room-temperature eggs flow evenly and set as one cohesive layer.'
+  - 'Beat the egg-and-cheese base while the greens cool in the pan. The greens need 2 minutes off heat after the wilt so they do not scramble the eggs on contact; that window is exactly enough time to whisk the eggs, fold in the ricotta, parmigiano, lemon zest, salt, and pepper.'
+  - 'Confirm the skillet is oven-safe before starting. Cast iron, well-seasoned carbon steel, and oven-safe non-stick all work; plastic-handled pans will fail in the oven and there is no recovery once the eggs are in.'
+
 ingredients:
   - group: 'Phase 1, the greens'
     item: 'extra-virgin olive oil'

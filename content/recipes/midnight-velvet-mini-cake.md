@@ -21,6 +21,11 @@ difficulty: 'hard'
 course: 'dessert'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'Put a tall narrow glass of neutral oil in the freezer at least 45 minutes ahead. The balsamic caviar (spherification via agar) requires the oil column at sub-zero, warmer oil produces tear-drop misshapes instead of pearls.'
+  - 'Total active time is 90 minutes split across four components (cake, reduction, buttercream, tempered chocolate). The cake layers must cool fully (45 minutes minimum on a rack) before filling, plan the bake first and run the buttercream and caviar in parallel during the cool.'
+  - 'Temper the chocolate LAST, after every other component is done. Tempered chocolate has a 10-minute working window before it sets out of temper and the shards need to go on a cake that is already filled and frosted.'
+
 ingredients:
   - group: 'Strawberry reduction'
     item: 'fresh or frozen strawberries'

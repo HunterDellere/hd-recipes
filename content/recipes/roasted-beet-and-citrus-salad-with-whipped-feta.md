@@ -22,6 +22,11 @@ cuisine: 'Mediterranean (Levantine lean)'
 course: 'side'
 diet: ['vegetarian', 'gluten-free']
 
+before_you_start:
+  - 'The 75-minute beet roast is the long pole. Get the salt-bed beets into the oven before doing anything else; the whipped feta, supremes, and pistachio crumble all assemble in the last 20 minutes while the beets cool just enough to peel.'
+  - 'The dish is served warm-on-cold. Dress the beets while they are still warm so they absorb the vinaigrette into the cellular structure; compose and serve within 20 minutes of slicing. Refrigerating finished plates flattens the geosmin aromatics and turns the whipped feta gummy.'
+  - 'Source sheep''s-milk Greek PDO feta in brine, not cow''s-milk crumbles. Cow feta is too lactic and breaks when whipped instead of emulsifying smooth.'
+
 source:
   name: 'Adapted from the Levantine mezze tradition (whipped feta as labneh-adjacent dip) crossed with the modern French composed-warm-salad format.'
   note: 'The whipped feta technique pulls from Greek tirokafteri and the contemporary restaurant idiom of feta blended with Greek yogurt; the salt-roasted beet is the canonical Mediterranean approach to concentrating beet flavor.'

@@ -26,6 +26,11 @@ source:
   name: 'Adapted from the Nagoya and broader kansai akadashi tradition'
   note: 'Akadashi (赤だし) refers specifically to a miso soup built on red miso (aka miso), as distinct from the everyday awase-or-shiro miso soup of much of Japan. The Nagoya region in central Japan is the historical heartland of hatcho miso (a long-aged, all-soybean, mahogany-dark red miso developed in the Hatchō district of present-day Okazaki), and Nagoya cuisine treats akadashi as a foundational soup category rather than a variant. The clam variation (asari no akadashi) is a spring-and-early-summer preparation that capitalizes on the seasonal asari clam harvest in Ise Bay and the broader kansai coastline; clams contribute succinate, a third umami nucleotide that stacks with the glutamate and inosinate of the kombu-katsuobushi dashi base. The combination of dark fermented miso and shellfish umami is the akadashi tradition''s most refined seasonal expression.'
 
+before_you_start:
+  - 'The clams need a 30 to 35 minute saltwater purge BEFORE any cooking starts, or sand and grit will end up in the broth. Submerge the 600 g clams in 1.5 L cold water with 45 g kosher salt (3% brine), set in a dark, quiet spot, and time everything else around this window.'
+  - 'Cold-soak the kombu in the dashi water during the same 30 minutes the clams are purging. Glutamate extracts at room temperature; running both passive infusions in parallel collapses 30 minutes of dead time into one.'
+  - 'Never boil miso once it is whisked in. Pull the dashi off heat, dissolve the 75 g red miso through a strainer or whisk, and serve. Boiling drives off the fermented-aroma volatiles and shifts the texture grainy.'
+
 ingredients:
   - group: 'Phase 1, the clam purge (35 minutes ahead)'
     item: 'littleneck or asari clams, live in the shell'

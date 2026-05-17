@@ -26,6 +26,10 @@ source:
   name: 'The Yemenite Jewish canon, brought to Israel through the mid-20th-century Yemenite Jewish diaspora migration (Operation Magic Carpet, 1949 to 1950); the sauce is older than the documentation in Israel and is structurally embedded in Yemenite Jewish home cookery from the 18th century or earlier. The Yemenite name is skhug (or s''hug, sahawiq, sahawik); the Israeli pronunciation zhoug became the international reference as Israeli cookery spread globally. The dish is one of the most successful examples of a regional ethnic condiment becoming a national Israeli icon and then an international staple.'
   note: 'Two structural schools: green zhoug (zhoug yarok, the most international form, with green chili and packed fresh cilantro and parsley) and red zhoug (zhoug adom, with dried red chili, tomato, and the same herb-and-spice base). The version here is the green canonical form. The Yemenite original is mortar-pounded; the modern food-processor preparation is the widespread home and restaurant technique. Distinct from Mexican green salsas (tomatillo-based, different acid profile) and from chimichurri (vinegar-based, different aromatic logic with oregano instead of cardamom-coriander-cumin); zhoug is structurally a Yemenite spice paste in a fresh herb suspension, with the cardamom-cumin-coriander signature being the defining flavor.'
 
+before_you_start:
+  - 'Build the zhoug at least 30 minutes before serving. The rest at room temperature lets the toasted-spice volatiles integrate into the olive-oil suspension and the chili heat to round out; freshly processed zhoug reads raw and unintegrated.'
+  - 'Toast and grind the whole spices fresh. Pre-ground cardamom, cumin, and coriander from the jar have lost most of their volatile aromatic top notes; the cardamom-cumin-coriander signature is the defining flavor of the sauce and the toast-and-grind is the structural reason this version outperforms a jarred zhoug.'
+
 ingredients:
   - group: 'The chilies'
     item: 'fresh green chilies (serrano, jalapeño, or a mix)'

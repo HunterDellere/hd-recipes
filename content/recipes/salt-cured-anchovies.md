@@ -22,6 +22,12 @@ cuisine: 'Mediterranean'
 course: 'side'
 diet: ['pescatarian', 'gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'This is a 4 to 12-month protein-hydrolysis cure, not a recipe you finish today. Active work is 90 minutes upfront for cleaning and layering, plus a 30-minute repack at the 6-month mark; the rest is patience.'
+  - 'Source sashimi-grade fresh anchovies caught within 24 hours. Previously frozen, supermarket-display fish carry too much enzymatic decay and cure into mushy off-flavored fillets. A reliable Mediterranean or Asian fish market is the right channel; call ahead.'
+  - 'Find a stable cool spot at 12 to 16 °C for the full cure window. A pantry, root cellar, or wine fridge works; a refrigerator (4 °C) stalls the cathepsin proteases and the cure never matures. A warm kitchen (above 20 °C) accelerates spoilage past the safe window.'
+  - 'Use non-iodized coarse sea salt only. Iodized table salt or fine salts pack too dense and produce a salty, under-hydrolyzed cure with a metallic finish.'
+
 source:
   name: 'Adapted from the Cantabrian, Sicilian, and Ligurian salt-cure traditions'
   note: 'A multi-month protein-hydrolysis cure, not a quick brine. The 50 percent salt-to-fish ratio is the canonical Mediterranean ratio across regions.'

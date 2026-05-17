@@ -22,6 +22,11 @@ cuisine: 'Tunisian (with broader Levantine and Israeli adoption)'
 course: 'dinner'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'Bread is the partner; the dish is built to be sopped, not eaten with a fork. Toast or grill pita, Tunisian flatbread, sourdough, or country loaf in the last 5 minutes of the egg poach so it hits the table warm at the same time as the pan.'
+  - 'Use a wide skillet (10 to 12 inch) so the eggs poach in distinct wells. A narrow pan crowds the yolks together; they overcook into each other instead of staying liquid and bright.'
+  - 'Crack each egg into a small bowl first, then slide into the well. Cracking directly into the sauce risks shell shards and uneven yolk placement, both of which the cook cannot fix once the egg starts to set.'
+
 source:
   name: 'The Tunisian and broader Maghreb canon; the modern dish carried by North African Jewish migration into Israel in the mid-20th century where it became a national breakfast and dinner staple; now structurally embedded in contemporary Middle Eastern, Israeli, and Mediterranean cookery worldwide.'
   note: 'Two structural schools: the Tunisian original uses the harissa-and-spice register (caraway, cumin, smoked paprika, harissa paste) with a tomato-and-pepper base; the Israeli adoption added feta as a finishing crumble and made the dish breakfast-coded rather than dinner-coded. The version here combines both: the Tunisian structural spice base with the Israeli feta finish. The defining technique is the egg poach (eggs cracked directly into wells in the simmering sauce; the whites set into the sauce and the yolks stay liquid). Distinct from huevos rancheros (egg-on-tortilla architecture rather than egg-in-sauce) and from menemen (Turkish eggs scrambled into the sauce rather than poached on top).'

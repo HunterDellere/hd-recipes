@@ -26,6 +26,11 @@ source:
   name: 'Pakistani / North Indian bakery tradition'
   note: 'Chicken patties are a Karachi bakery and tea-stall signature, descended from British Empire-era hand pies but completely transformed by South Asian spice-and-aromatic traditions. The dish is a fixture at Pakistani family tea gatherings, school lunchboxes, and corner bakery counters. Two filling styles dominate: dry keema (spiced ground chicken) and creamy chicken (shredded with bechamel-style white sauce); both are valid and historically established.'
 
+before_you_start:
+  - 'Thaw the puff pastry overnight in the fridge, or 30 to 40 minutes on the counter wrapped in plastic-free parchment. Pastry must be cold and pliable but not frozen when rolled; frozen pastry cracks, warm pastry tears, and either way the seal fails and filling escapes during the bake.'
+  - 'The keema filling must be at room temperature before it goes into the pastry, about 15 to 20 minutes spread on a wide plate. Warm filling melts the butter in the puff pastry layers and the patties bake to a flat, dense, wrong-textured pastry instead of the high-puff shatter that defines them.'
+  - 'Make the keema first, then prep the pastry while the keema cools. The two timelines align: the 20 minute cool window is exactly when you roll, cut, and stage the squares.'
+
 ingredients:
   - group: 'Phase 1, keema filling'
     item: 'ground chicken (thigh meat preferred, dark meat is more flavorful and forgiving)'

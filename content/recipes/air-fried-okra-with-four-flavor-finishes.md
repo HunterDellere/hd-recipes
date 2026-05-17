@@ -25,6 +25,11 @@ diet: ['vegetarian', 'gluten-free']
 source:
   note: 'The cornstarch coat is the structural variable that distinguishes air-fried okra that works from air-fried okra that fails. Cornstarch gelatinizes at 62 to 70°C on the pod surface during the first minute in the hot air-fryer basket, sealing in the mucilage so it cannot weep out and slime the pan; the gelatinized layer then dehydrates and crisps over the remaining cook time, producing the crackly edge that is the whole point of the dish. Skipping the cornstarch (or using only oil and salt) produces blistered but soft-tender pods with the mucilage exposed at the cut surfaces, edible but unremarkable. The four finishes draw from the four major okra traditions: bhindi from South Asia, the gochujang-glazed direction from Korean-American restaurant adaptation, Cajun-Creole from the Louisiana gumbo lineage where okra came in via the Atlantic slave trade, and the Italian lemon-parm direction from the Mediterranean appropriation of okra (bamia) in southern Italian and Sicilian cooking.'
 
+before_you_start:
+  - 'Pick ONE of the four finishes (2A chaat masala, 2B gochujang-honey, 2C Cajun hot honey, 2D lemon-parmesan with anchovy crumbs) before you start, or commit to splitting the batch into halves and prepping two finish sets in parallel. The finishes go on hot pods within 60 seconds of the basket coming out, so any finish prep that is not staged at the moment of unloading loses the temperature window.'
+  - 'Preheat the air fryer to 200°C / 400°F for at least 4 full minutes before the okra goes in. A cold basket fails to gelatinize the cornstarch fast enough and the pods weep mucilage instead of sealing; the preheat is a structural step, not a courtesy.'
+  - 'If choosing finish 2D (lemon-parmesan with anchovy crumbs), the anchovy crumbs are toasted in a skillet in parallel with the 14 to 16 minute air-fry. Start the crumbs after the basket goes in for the second phase; they need 2 to 3 minutes of attention and must come off heat before the okra plates.'
+
 ingredients:
   - group: 'Phase 1, the base preparation'
     item: 'fresh okra pods, small to medium (5 to 10 cm long, no longer)'

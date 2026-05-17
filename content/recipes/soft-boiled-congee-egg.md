@@ -25,6 +25,11 @@ diet: ['vegetarian', 'gluten-free', 'dairy-free']
 source:
   name: 'A standard table technique across Chinese congee tradition; the timing here is the Western 6½-minute consensus calibrated for large refrigerator-cold eggs.'
 
+before_you_start:
+  - 'Congee is the partner. The egg is engineered to be cracked into the hot bowl at the moment of eating, so the congee must be at a hard simmer when the eggs come out of the ice bath. Start the congee at least 90 minutes before the eggs; a 6½ minute soft-boil plus a 90 second ice shock is the entire egg timeline.'
+  - 'Use eggs straight from the refrigerator. The 6½ minute timing is calibrated for cold-into-boiling-water; room-temperature eggs overshoot to a fully set yolk in the same window.'
+  - 'Prepare the ice bath BEFORE the water boils. Lifting hot eggs into a not-yet-ready bath gives the carryover cook 60 extra seconds and pushes a jammy yolk into a fully set one.'
+
 ingredients:
   - group: 'Eggs'
     item: 'large eggs, refrigerator-cold'

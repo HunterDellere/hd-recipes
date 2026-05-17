@@ -22,6 +22,11 @@ cuisine: 'American'
 course: 'side'
 diet: ['vegetarian', 'gluten-free']
 
+before_you_start:
+  - 'Preheat the oven AND the empty sheet pan together at 230 °C for a full 15 minutes before the vegetables hit it. The screaming-hot pan is the entire reason this technique works; a cold pan steams the vegetables for the first 5 minutes and the browning never catches up.'
+  - 'Make the yogurt sauce while the pan preheats and roasts. The sauce must be cold when it hits the hot vegetables; the temperature contrast is part of the eating experience. It can also be made up to 3 days ahead and improves overnight as the raw garlic mellows.'
+  - 'Cut all sweet potato to a uniform 2 cm dice. Mixed sizes guarantee the small pieces burn while the large pieces stay raw; the three-vegetable converge on a single 35 to 40 minute window only when each is cut to its spec.'
+
 source:
   name: 'Adapted from the modern American hard-roast-vegetable canon (the 230 °C-on-a-screaming-pan school that emerged through restaurant cooking in the 2000s and 2010s) and the Mediterranean tradition of roast vegetables served with a cold acid-tangy yogurt or tahini sauce.'
   note: 'Three vegetables on one pan is structurally fragile, each has a different ideal roast time and temperature window. The dish only works because the chosen three (shallot, cauliflower, sweet potato) all converge on 35 to 40 minutes at 230 °C when cut to the right sizes, and because the sheet-pan preheat is hot enough to skip the limp-then-brown phase that wrecks low-heat roasts. The yogurt sauce is non-negotiable: the three roasted vegetables all read sweet on the palate (the shallot caramelizes, the cauliflower Maillards, the sweet potato is sweet by chemistry), and the dish reads one-note without an acid counter.'

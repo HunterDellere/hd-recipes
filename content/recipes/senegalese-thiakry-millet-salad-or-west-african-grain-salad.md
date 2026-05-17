@@ -22,6 +22,11 @@ cuisine: 'West African (Senegalese-inspired)'
 course: 'dinner'
 diet: ['vegan', 'gluten-free']
 
+before_you_start:
+  - 'Start the millet first and let it cool fully before composing. Hot or warm millet wilts the mint and cilantro on contact and turns the mango mushy; the cooled crumb is the structural base for the dressing. Plan 25 minutes of cook plus 15 to 20 minutes of cool-down before assembly.'
+  - 'Macerate the slivered red onion in lime juice for 15 minutes before the toss. Unmacerated red onion overpowers the ginger and habanero; the acid soak shifts it from aggressive to bright and mellows the sulfur volatiles.'
+  - 'Source pearl millet from a West African or Indian grocery. Foxtail and finger millet cook with different water ratios (see notes) and the texture is meaningfully different; do not substitute without adjusting.'
+
 source:
   name: 'Adapted from the Senegalese thiakry tradition (steamed millcouscous, the Wolof name for pearl millet couscous, eaten sweetened with sour milk or yogurt) and reframed as a savory grain salad on West African pantry vocabulary.'
   note: 'Traditional thiakry (also spelled thiacry, thiakri, or cere) is a dessert or breakfast preparation: pearl millet steamed couscous-style, then folded with sweetened sour milk or yogurt and sometimes raisins or nutmeg. This recipe takes the steamed-millet base, the peanut-and-pepper West African pantry, and the ripe-mango sweetness common across Senegalese fruit cookery, and routes them into a savory composed grain salad. Not authentic in the strict sense; honest about the borrowing. The dish reads as Senegalese in vocabulary and as a modern grain salad in form.'

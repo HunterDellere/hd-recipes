@@ -22,6 +22,11 @@ cuisine: 'Chinese'
 course: 'snack'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'This is a 24+ hour project. Active cook time is about 25 minutes, but the eggs steep in the spiced brine refrigerated for at least 12 hours and ideally 24 to 48 hours before they reach full marbled flavor. Start the day before you want to eat them, minimum.'
+  - 'Use eggs that are 7 to 14 days old, not farm-fresh. Older eggs peel cleanly after the soft-boil; very fresh eggs (under 5 days) bind to the shell membrane and the cracked-marble pattern tears the white when peeled.'
+  - 'Crack but do NOT peel after the boil. The cracks are what produce the marbled pattern; the shell stays on through the brine steep so the soy and tea infiltrate along the crack lines into the white. Peeling first floods the white uniformly and the marble effect is lost.'
+
 ingredients:
   - group: 'Eggs'
     item: 'large eggs'

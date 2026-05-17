@@ -22,6 +22,11 @@ cuisine: 'Korean'
 course: 'dinner'
 diet: ['dairy-free']
 
+before_you_start:
+  - 'Steamed short-grain rice is the partner and must start FIRST. The squid cooks in 90 seconds; once you fire the wok, you cannot stop to start rice. Aim for the rice to finish its 10-minute rest while you score and prep the squid.'
+  - 'Score the squid tube interiors cross-hatch on a 5 mm grid before anything else hits the cutting board. The scoring is what produces the curl and the sauce-grabbing surface, an unscored tube reads rubbery and slides off the rice.'
+  - 'The wok must be ripping hot before the squid goes in. Heat the dry wok until you can see faint smoke off the metal, then add oil. Cold wok or moderate heat means the squid weeps water, drops the pan temperature, and stews to rubber.'
+
 source:
   name: 'Korean home and cafeteria tradition'
   note: 'Ojingeo bokkeum (오징어볶음, "stir-fried squid") is a Korean home-cooking and casual-restaurant staple — fast, spicy, balanced, designed to land on a rice bowl with banchan and a clear soup. The dish is one of the workhorses of Korean weeknight cooking and is also served extensively at school and corporate cafeterias as a cheap-but-satisfying main.'

@@ -22,6 +22,11 @@ cuisine: 'Filipino'
 course: 'drink'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'Chill the cream bowl in the freezer for 10 minutes BEFORE you begin anything else. Cold heavy cream whipped in a cold bowl reaches soft peaks in under 60 seconds; warm bowl produces broken or under-whipped cream that cannot fold halaya in cleanly.'
+  - 'The ube halaya whip, the coconut-sweetened milk, and the espresso shot all need to land on the bar at the same moment. Build the whip first (it holds in the fridge for the 5 minute shot-and-milk window), heat the milk second, pull the shot last.'
+  - 'Toast the desiccated coconut at the very start and tip it onto a cold plate. Pan carryover takes toasted coconut from gold to bitter in under 60 seconds, and the toasted coconut is the finishing aroma at the cream-meets-coffee boundary; do not toast at the end with a hot pan and hurried plating.'
+
 ingredients:
   - group: 'Phase 1: coconut-warmed milk'
     item: 'whole milk'

@@ -1,212 +1,157 @@
 [
   {
-    "path": "pages/recipes/omurice.html",
+    "path": "pages/recipes/autumn-simmer-pot.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Omurice",
-    "desc": "The Japanese yōshoku canon: a chicken-and-onion ketchup-fried rice (chikin raisu) wrapped or topped with a thin omelet, often finished with a zigzag of additional ketchup. Structurally a child-friendly comfort-food dish that has become one of the most beloved cross-generational preparations in Japan; the dish exists in two visual forms (the classical fully-wrapped envelope omelet and the modern Kyoto-style tornado omelet that is split at the table to drape over the rice in a soft custardy fall). Eggs are the structural finish; the rice is the canvas; the ketchup is the unmistakable Japanese-Western flavor signature.",
+    "title": "Autumn simmer pot (apple, orange, cinnamon, clove)",
+    "desc": "A non-edible house-fragrance preparation. Whole spices, orange and apple peels, and a few drops of vanilla simmered on the lowest setting all day. Replaces the chemical headache of plug-in air fresheners with actual volatile aromatics from food.",
     "tags": [
-      "japanese",
-      "rice",
-      "egg",
-      "chicken",
-      "comfort",
-      "weeknight",
-      "umami",
-      "one-pot"
+      "home-fragrance",
+      "simmer-pot",
+      "non-edible",
+      "aromatic",
+      "citrus",
+      "winter"
     ],
     "status": "complete",
-    "_slug": "omurice",
-    "cuisine": "Japanese (yōshoku)",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 2,
+    "_slug": "autumn-simmer-pot",
+    "course": "snack",
+    "difficulty": "easy",
+    "servings": 1,
     "time": {
-      "prep_min": 15,
-      "cook_min": 25,
-      "total_min": 40,
-      "active_min": 35
+      "prep_min": 5,
+      "cook_min": 480,
+      "total_min": 485,
+      "active_min": 5
     },
     "updated": "2026-05-16",
-    "diet": [],
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
     "ingredients": [
       {
-        "item": "cooked short-grain Japanese rice (made the day before and refrigerated overnight)",
-        "slug": "japanese-short-grain-rice",
+        "item": "fresh orange",
+        "slug": "orange",
         "optional": false
       },
       {
-        "item": "boneless skinless chicken thigh",
-        "slug": "chicken-thigh",
+        "item": "fresh lemon",
+        "slug": "lemon",
         "optional": false
       },
       {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
+        "item": "apple cores and peels (from 2 to 3 apples)",
         "optional": false
       },
       {
-        "item": "green bell pepper (or red bell pepper)",
-        "slug": "bell-pepper",
+        "item": "cinnamon sticks",
+        "slug": "cinnamon-stick",
         "optional": false
       },
       {
-        "item": "frozen green peas (thawed)",
+        "item": "whole cloves",
+        "slug": "cloves",
         "optional": false
       },
       {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
+        "item": "star anise",
+        "slug": "star-anise",
         "optional": false
       },
       {
-        "item": "ketchup (Japanese-style or quality American)",
+        "item": "whole nutmeg",
         "optional": false
       },
       {
-        "item": "Japanese soy sauce (light, usukuchi or regular koikuchi)",
-        "slug": "light-soy-sauce",
+        "item": "green cardamom pods, cracked",
+        "slug": "green-cardamom",
         "optional": false
       },
       {
-        "item": "fine sea salt (for the rice)",
-        "slug": "fine-sea-salt",
+        "item": "water",
         "optional": false
       },
       {
-        "item": "white pepper, ground",
-        "slug": "white-pepper",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "whole milk (or dashi for a more umami-forward version)",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter (for the omelet pan)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt (for the eggs)",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "ketchup (for the finishing zigzag)",
-        "optional": false
-      },
-      {
-        "item": "fresh flat-leaf parsley (optional, for the canonical green garnish)",
-        "slug": "parsley",
+        "item": "vanilla extract",
+        "slug": "vanilla-extract",
         "optional": false
       }
     ],
-    "techniques": [
-      "ketchup-fry-and-brown",
-      "soft-set-omelet",
-      "omelet-wrap"
-    ],
-    "equipment": [
-      "wide-skillet",
-      "small-nonstick-skillet (for omelets)",
-      "rice-cooker (optional, for the rice)"
-    ],
+    "techniques": [],
+    "equipment": [],
     "added": "2026-05-16",
     "_card": {
-      "totalMinutes": 40,
-      "diffLabel": "medium",
-      "timeLead": "40 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 35,
-      "filterMinutes": 35
+      "totalMinutes": 485,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
+      "activeMinutes": 5,
+      "filterMinutes": 5
     }
   },
   {
-    "path": "pages/recipes/carbonara.html",
+    "path": "pages/recipes/brown-sugar-milk-tea-with-boba.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Carbonara",
-    "desc": "The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta water, finished with aggressive black pepper. Structurally a raw-egg emulsion built off-heat at the moment of plating: the residual heat of the pasta and the rendered fat cooks the eggs to a glossy creamy sauce without scrambling them. No cream, no garlic, no peas, no parsley; the four canonical ingredients (eggs, pecorino, guanciale, black pepper) plus the structural starchy pasta water are the entire dish. One of the most precise egg techniques in any cuisine and one of the most consistently misunderstood dishes outside Rome.",
+    "title": "Brown sugar milk tea with boba (Tiger Sugar style)",
+    "desc": "Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then layered with cold milk and a strong tea concentrate. No commercial syrup, the syrup is built from the pearl cook.",
     "tags": [
-      "italian",
-      "pasta",
-      "egg",
-      "umami",
-      "weeknight",
-      "sunday-sauce",
-      "pork"
+      "boba",
+      "bubble-tea",
+      "taiwanese",
+      "milk-tea",
+      "drink",
+      "tea"
     ],
     "status": "complete",
-    "_slug": "carbonara",
-    "cuisine": "Italian (Roman)",
-    "course": "dinner",
+    "_slug": "brown-sugar-milk-tea-with-boba",
+    "cuisine": "Taiwanese",
+    "course": "drink",
     "difficulty": "medium",
     "servings": 2,
     "time": {
       "prep_min": 5,
       "cook_min": 15,
       "total_min": 20,
-      "active_min": 18
+      "active_min": 15
     },
-    "updated": "2026-05-15",
-    "diet": [],
+    "updated": "2026-05-16",
+    "diet": [
+      "vegetarian"
+    ],
     "ingredients": [
       {
-        "item": "guanciale (or pancetta as a substitute)",
-        "slug": "pancetta",
+        "item": "cooked black tapioca pearls in brown sugar syrup",
         "optional": false
       },
       {
-        "item": "kosher salt (for the pasta water)",
-        "slug": "kosher-salt",
+        "item": "brown sugar syrup, reserved from pearl cook",
         "optional": false
       },
       {
-        "item": "water (for the pasta)",
+        "item": "CTC Assam tea",
+        "slug": "assam-tea",
         "optional": false
       },
       {
-        "item": "large eggs (whole)",
-        "slug": "eggs",
+        "item": "boiling water",
         "optional": false
       },
       {
-        "item": "large egg yolks (additional)",
-        "slug": "eggs",
+        "item": "cold whole milk",
+        "slug": "whole-milk",
         "optional": false
       },
       {
-        "item": "pecorino romano DOP, aged 8 to 12 months",
-        "slug": "pecorino-romano",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked coarse",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "spaghetti or rigatoni (bronze-die-extruded preferred)",
+        "item": "ice cubes",
         "optional": false
       }
     ],
-    "techniques": [
-      "cold-pan-render",
-      "off-heat-egg-emulsion",
-      "pan-emulsion"
-    ],
-    "equipment": [
-      "wide-skillet",
-      "wide-heatproof-bowl",
-      "tongs"
-    ],
+    "techniques": [],
+    "equipment": [],
     "added": "2026-05-16",
     "_card": {
       "totalMinutes": 20,
@@ -214,489 +159,71 @@
       "timeLead": "20 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 18,
-      "filterMinutes": 18
-    }
-  },
-  {
-    "path": "pages/recipes/chimichurri.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chimichurri",
-    "desc": "The Argentine raw herb-vinegar sauce that finishes grilled meat, fish, vegetables, eggs, and bread. Coarsely chopped (not pulverized) parsley and oregano, garlic, red wine vinegar, and a generous bath of olive oil, balanced with chili flake and salt; the sauce sits 30 minutes to let the vinegar pull pigment and flavor from the herbs before serving. Pourable, brick-acidic, and structurally raw.",
-    "tags": [
-      "sauce",
-      "argentine",
-      "fresh-herbs",
-      "no-cook",
-      "pantry",
-      "make-ahead",
-      "quick",
-      "vegan"
-    ],
-    "status": "complete",
-    "_slug": "chimichurri",
-    "cuisine": "Argentine",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 8,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 0,
-      "total_min": 40,
-      "active_min": 10
-    },
-    "updated": "2026-05-15",
-    "diet": [
-      "vegetarian",
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "flat-leaf parsley, leaves and tender stems",
-        "slug": "parsley",
-        "optional": false
-      },
-      {
-        "item": "fresh oregano leaves",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "red wine vinegar",
-        "slug": "red-wine-vinegar",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes (or ají molido if available)",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly ground",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "knife-chop-not-processor"
-    ],
-    "equipment": [
-      "chef-knife",
-      "cutting-board"
-    ],
-    "added": "2026-05-16",
-    "_card": {
-      "totalMinutes": 40,
-      "diffLabel": "easy",
-      "timeLead": "40 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
-    }
-  },
-  {
-    "path": "pages/recipes/gochujang-sauce.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Gochujang sauce",
-    "desc": "The Korean condiment-grade sauce built from gochujang: fermented chili paste thinned with rice vinegar, soy sauce, toasted sesame oil, garlic, ginger, honey, and water into a pourable-thick sauce that travels across Korean and broader contemporary cookery. Sweet-salty-fermented-spicy in equal balance, with the deep koji-fermented depth of the gochujang base. The structural finishing sauce for Korean BBQ, bibimbap, fried chicken, dumplings, rice and grain bowls, noodles, roasted vegetables, eggs, tofu, and as a brilliant cross-cuisine glaze for grilled meat and roasted vegetables.",
-    "tags": [
-      "sauce",
-      "dip",
-      "korean",
-      "spicy",
-      "fermentation",
-      "pantry",
-      "quick",
-      "umami",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "gochujang-sauce",
-    "cuisine": "Korean",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 12,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 0,
-      "total_min": 5,
-      "active_min": 5
-    },
-    "updated": "2026-05-15",
-    "diet": [
-      "vegetarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "gochujang (Korean fermented red chili paste)",
-        "slug": "gochujang",
-        "optional": false
-      },
-      {
-        "item": "rice vinegar",
-        "slug": "rice-vinegar",
-        "optional": false
-      },
-      {
-        "item": "soy sauce (Korean ganjang or Japanese shoyu)",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, peeled",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "honey (or rice syrup, jocheong, the Korean canonical sweetener)",
-        "slug": "honey",
-        "optional": false
-      },
-      {
-        "item": "warm water",
-        "optional": false
-      },
-      {
-        "item": "toasted white sesame seeds",
-        "slug": "sesame-seeds",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "mixing-bowl",
-      "whisk",
-      "microplane"
-    ],
-    "added": "2026-05-16",
-    "_card": {
-      "totalMinutes": 5,
-      "diffLabel": "easy",
-      "timeLead": "5 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 5,
-      "filterMinutes": 5
-    }
-  },
-  {
-    "path": "pages/recipes/greens-and-ricotta-frittata.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Greens and ricotta frittata",
-    "desc": "The Italian open-faced baked omelet: wilted greens (lacinato kale, chard, spinach, or a mix) folded into beaten eggs with whole-milk ricotta, parmigiano, lemon zest, and aggressive black pepper, started in an oven-safe skillet on the stove and finished in the oven until just set with a custardy center. Structurally distinct from a frittata that is fully cooked on the stove (which produces a denser drier texture); the oven-finished version sets evenly across the depth and produces the canonical jiggly center. Eaten warm or at room temperature, sliced into wedges or squares; the structural Italian make-ahead egg dish and one of the great flexible weeknight dinners.",
-    "tags": [
-      "italian",
-      "mediterranean",
-      "egg",
-      "vegetable",
-      "make-ahead",
-      "weeknight",
-      "brassica",
-      "dairy"
-    ],
-    "status": "complete",
-    "_slug": "greens-and-ricotta-frittata",
-    "cuisine": "Italian",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 6,
-    "time": {
-      "prep_min": 12,
-      "cook_min": 22,
-      "total_min": 34,
-      "active_min": 18
-    },
-    "updated": "2026-05-15",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "lacinato kale (or rainbow chard, or a mix of spinach and chard)",
-        "slug": "lacinato-kale",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt (for the greens)",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "whole-milk ricotta (drained 30 minutes in a fine-mesh sieve if watery)",
-        "optional": false
-      },
-      {
-        "item": "parmigiano reggiano (aged 24 months or more)",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      },
-      {
-        "item": "lemon zest (from 1 lemon)",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt (for the eggs)",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil, for finishing",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "flaky sea salt (Maldon or similar)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "greens-wilt-and-dry",
-      "stove-set-then-oven"
-    ],
-    "equipment": [
-      "oven-safe-heavy-skillet",
-      "thermometer (optional)"
-    ],
-    "added": "2026-05-16",
-    "_card": {
-      "totalMinutes": 34,
-      "diffLabel": "easy",
-      "timeLead": "34 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 18,
-      "filterMinutes": 18
-    }
-  },
-  {
-    "path": "pages/recipes/gyeran-jjim.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Gyeran-jjim",
-    "desc": "The Korean steamed savory egg custard: beaten eggs whisked with anchovy-and-kombu stock (or chicken stock), salt, scallion, and a small amount of sesame oil, then cooked gently in a clay pot or a heavy bowl over low heat until set into a soft trembling custard. The structural Korean banchan (side dish) that pairs with rice, soup, and grilled meat at every Korean table. Sometimes called a Korean chawanmushi cousin, though the architecture is meaningfully different: gyeran-jjim is denser, more egg-forward, and structurally always served in the cooking vessel rather than portioned.",
-    "tags": [
-      "sauce",
-      "korean",
-      "egg",
-      "side",
-      "quick",
-      "umami",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "gyeran-jjim",
-    "cuisine": "Korean",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 15,
-      "total_min": 25,
-      "active_min": 15
-    },
-    "updated": "2026-05-15",
-    "diet": [
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "kombu (dried kelp)",
-        "slug": "kombu",
-        "optional": false
-      },
-      {
-        "item": "dried anchovies (myeolchi, Korean dried anchovies, large)",
-        "optional": false
-      },
-      {
-        "item": "cold water",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "Korean fish sauce (or Japanese soy sauce, or Korean ganjang)",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "scallion",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "toasted white sesame seeds",
-        "slug": "sesame-seeds",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "kombu-anchovy-stock",
-      "gentle-egg-set"
-    ],
-    "equipment": [
-      "ttukbaegi (Korean clay pot) or heavy ceramic bowl",
-      "fine-mesh sieve",
-      "thermometer (optional)"
-    ],
-    "added": "2026-05-16",
-    "_card": {
-      "totalMinutes": 25,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
       "activeMinutes": 15,
       "filterMinutes": 15
     }
   },
   {
-    "path": "pages/recipes/harissa.html",
+    "path": "pages/recipes/buttermilk-ranch-dressing.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Harissa",
-    "desc": "The Tunisian fermented and roasted chili paste: dried red chilies (a mix of mild and hot), roasted red pepper, garlic, caraway, coriander, cumin, smoked paprika, salt, olive oil. Pounded to a thick rust-red paste that reads hot, smoky, citrusy from the caraway, and structurally pantry-deep. The canonical North African condiment for stews, grilled meats, eggs, sandwiches, marinades, roasted vegetables, and as a flavor base for soups and broths.",
+    "title": "Buttermilk ranch dressing (proper from-scratch)",
+    "desc": "Real-buttermilk ranch with fresh herbs, garlic, and a backbone of mayonnaise and sour cream. The Hidden Valley template, executed without the desiccated herbs and corn-syrup body of the powder packet. Tastes more herbal, less candy-creamy.",
     "tags": [
+      "condiment",
       "sauce",
-      "mediterranean",
-      "spicy",
-      "pantry",
-      "make-ahead",
-      "umami",
-      "spice"
+      "american",
+      "no-cook",
+      "quick",
+      "herb",
+      "dip"
     ],
     "status": "complete",
-    "_slug": "harissa",
-    "cuisine": "Tunisian",
+    "_slug": "buttermilk-ranch-dressing",
+    "cuisine": "American",
     "course": "sauce",
     "difficulty": "easy",
-    "servings": 16,
+    "servings": 12,
     "time": {
-      "prep_min": 15,
-      "cook_min": 10,
-      "total_min": 60,
-      "active_min": 25
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 130,
+      "active_min": 10
     },
-    "updated": "2026-05-15",
+    "updated": "2026-05-16",
     "diet": [
       "vegetarian",
-      "vegan",
-      "gluten-free",
-      "dairy-free"
+      "gluten-free"
     ],
     "ingredients": [
       {
-        "item": "dried red chilies (a mix: 70 percent mild like guajillo or ancho, 30 percent hot like chile de árbol or Calabrian)",
-        "slug": "dried-chilies",
+        "item": "mayonnaise (full-fat, real-egg)",
+        "slug": "mayonnaise",
         "optional": false
       },
       {
-        "item": "red bell pepper",
-        "slug": "bell-pepper",
+        "item": "sour cream (full-fat)",
         "optional": false
       },
       {
-        "item": "garlic clove, peeled",
+        "item": "buttermilk (full-fat, well-shaken)",
+        "optional": false
+      },
+      {
+        "item": "garlic clove",
         "slug": "garlic",
         "optional": false
       },
       {
-        "item": "caraway seeds",
+        "item": "fresh chives",
         "optional": false
       },
       {
-        "item": "coriander seeds",
+        "item": "fresh dill",
         "optional": false
       },
       {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "smoked paprika (pimentón de la Vera, dulce)",
-        "slug": "smoked-paprika",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
+        "item": "fresh flat-leaf parsley",
         "optional": false
       },
       {
@@ -705,91 +232,85 @@
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil (for the paste body)",
-        "slug": "extra-virgin-olive-oil",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil (for the surface seal during storage)",
-        "slug": "extra-virgin-olive-oil",
+        "item": "freshly cracked black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "onion powder",
+        "optional": false
+      },
+      {
+        "item": "Worcestershire sauce",
         "optional": false
       }
     ],
-    "techniques": [
-      "pepper-charring",
-      "spice-toasting"
-    ],
-    "equipment": [
-      "food-processor",
-      "spice-grinder",
-      "skillet"
-    ],
+    "techniques": [],
+    "equipment": [],
     "added": "2026-05-16",
     "_card": {
-      "totalMinutes": 60,
+      "totalMinutes": 130,
       "diffLabel": "easy",
-      "timeLead": "1 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
+      "timeLead": "10 min",
+      "timeAnnotation": "+ 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 10,
+      "filterMinutes": 10
     }
   },
   {
-    "path": "pages/recipes/huevos-rancheros.html",
+    "path": "pages/recipes/che-ba-mau.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Huevos rancheros",
-    "desc": "The Mexican farmhouse breakfast: fried eggs atop lightly toasted corn tortillas, blanketed in a charred-tomato salsa ranchera with onion, garlic, and chile de árbol, served over a base of soupy refried black beans and topped with crumbled queso fresco, sliced avocado, and a fistful of cilantro. Structurally a layered breakfast plate where each element is built separately and assembled at the moment of service; the canonical Mexican breakfast dish and one of the most successful exports of central Mexican home cookery.",
+    "title": "Chè ba màu (three-color Vietnamese sweet bean dessert)",
+    "desc": "Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. The three colors hold cleanly because each layer is built at the right density and chilled before the next goes in.",
     "tags": [
-      "mexican",
-      "egg",
-      "breakfast",
-      "one-pot",
-      "legume",
-      "spicy",
-      "umami"
+      "che",
+      "vietnamese-dessert",
+      "vietnamese",
+      "dessert",
+      "coconut",
+      "legume-dessert",
+      "tropical",
+      "jelly"
     ],
     "status": "complete",
-    "_slug": "huevos-rancheros",
-    "cuisine": "Mexican",
-    "course": "breakfast",
-    "difficulty": "easy",
-    "servings": 2,
+    "_slug": "che-ba-mau",
+    "cuisine": "Vietnamese",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 4,
     "time": {
-      "prep_min": 15,
-      "cook_min": 25,
-      "total_min": 40,
-      "active_min": 30
+      "prep_min": 20,
+      "cook_min": 45,
+      "total_min": 180,
+      "active_min": 50
     },
-    "updated": "2026-05-15",
+    "updated": "2026-05-16",
     "diet": [
       "vegetarian",
-      "gluten-free"
+      "vegan",
+      "gluten-free",
+      "dairy-free"
     ],
     "ingredients": [
       {
-        "item": "ripe tomatoes (Roma or other meaty tomato)",
-        "slug": "tomato",
+        "item": "split yellow mung beans",
+        "slug": "mung-bean",
         "optional": false
       },
       {
-        "item": "white onion",
-        "slug": "white-onion",
+        "item": "water",
         "optional": false
       },
       {
-        "item": "garlic clove, peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "dried chile de árbol (or chipotle in adobo)",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (for the salsa)",
-        "slug": "neutral-oil",
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
         "optional": false
       },
       {
@@ -798,66 +319,159 @@
         "optional": false
       },
       {
-        "item": "cooked black beans (with some cooking liquid, or canned with liquid)",
-        "slug": "black-beans",
+        "item": "dried adzuki (red) beans",
         "optional": false
       },
       {
-        "item": "neutral oil (or lard, manteca, for the canonical version)",
-        "slug": "neutral-oil",
+        "item": "water for cooking",
         "optional": false
       },
       {
-        "item": "fine sea salt (for the beans)",
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
         "slug": "fine-sea-salt",
         "optional": false
       },
       {
-        "item": "corn tortillas (fresh, ideally from a tortillería)",
+        "item": "water",
         "optional": false
       },
       {
-        "item": "neutral oil (for frying the tortillas and the eggs)",
-        "slug": "neutral-oil",
+        "item": "fresh pandan leaves, bruised and knotted",
+        "slug": "pandan-leaves",
         "optional": false
       },
       {
-        "item": "large eggs",
-        "slug": "eggs",
+        "item": "agar-agar powder",
+        "slug": "agar-agar",
         "optional": false
       },
       {
-        "item": "queso fresco (or queso ranchero, or cotija)",
-        "slug": "queso-fresco",
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
         "optional": false
       },
       {
-        "item": "ripe avocado",
-        "slug": "avocado",
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
         "optional": false
       },
       {
-        "item": "fresh cilantro",
-        "slug": "cilantro",
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
         "optional": false
       },
       {
-        "item": "lime, cut into wedges",
-        "slug": "lime",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "tapioca starch",
+        "slug": "tapioca-starch",
+        "optional": false
+      },
+      {
+        "item": "crushed ice",
         "optional": false
       }
     ],
-    "techniques": [
-      "tomato-and-chili-char",
-      "salsa-fry",
-      "refried-beans",
-      "sunny-side-baste-fry"
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 180,
+      "diffLabel": "medium",
+      "timeLead": "50 min",
+      "timeAnnotation": "+ 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/recipes/che-chuoi.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chè chuối (Vietnamese banana, tapioca, and coconut chè)",
+    "desc": "Ripe bananas poached in a sweetened coconut milk base with small tapioca pearls. Builds in three thermal phases so the banana keeps its shape, the tapioca cooks through, and the coconut milk never breaks.",
+    "tags": [
+      "che",
+      "vietnamese-dessert",
+      "vietnamese",
+      "dessert",
+      "coconut",
+      "tropical"
     ],
-    "equipment": [
-      "blender or molcajete",
-      "small-saucepan",
-      "small-skillet"
+    "status": "complete",
+    "_slug": "che-chuoi",
+    "cuisine": "Vietnamese",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 25,
+      "total_min": 40,
+      "active_min": 20
+    },
+    "updated": "2026-05-16",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
     ],
+    "ingredients": [
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "small tapioca pearls",
+        "slug": "tapioca-pearls",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "palm sugar, chopped",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "pandan leaves, knotted",
+        "slug": "pandan-leaves",
+        "optional": false
+      },
+      {
+        "item": "ripe but firm Burro or Cavendish bananas",
+        "slug": "bananas",
+        "optional": false
+      },
+      {
+        "item": "roasted unsalted peanuts",
+        "optional": false
+      },
+      {
+        "item": "toasted white sesame seeds",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
     "added": "2026-05-16",
     "_card": {
       "totalMinutes": 40,
@@ -865,8 +479,352 @@
       "timeLead": "40 min",
       "timeAnnotation": "",
       "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/che-dau-trang.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chè đậu trắng (black-eyed pea and sticky rice chè)",
+    "desc": "Warm Vietnamese chè of tender black-eyed peas and chewy glutinous rice in a barely-sweet coconut milk base. A central-Vietnamese workhorse dessert, comforting, structural, and unfashionable in a way that makes it good.",
+    "tags": [
+      "che",
+      "vietnamese-dessert",
+      "vietnamese",
+      "dessert",
+      "coconut",
+      "legume-dessert",
+      "glutinous-rice",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "che-dau-trang",
+    "cuisine": "Vietnamese",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 90,
+      "total_min": 540,
+      "active_min": 30
+    },
+    "updated": "2026-05-16",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried black-eyed peas",
+        "optional": false
+      },
+      {
+        "item": "water for cooking",
+        "optional": false
+      },
+      {
+        "item": "long-grain glutinous rice",
+        "slug": "glutinous-rice",
+        "optional": false
+      },
+      {
+        "item": "water for the rice",
+        "optional": false
+      },
+      {
+        "item": "palm sugar, chopped",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "pandan leaves, knotted",
+        "slug": "pandan-leaves",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "tapioca starch",
+        "slug": "tapioca-starch",
+        "optional": false
+      },
+      {
+        "item": "toasted white sesame seeds",
+        "optional": false
+      },
+      {
+        "item": "roasted unsalted peanuts",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 540,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "+ overnight",
+      "timeMode": "active",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/che-thai.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chè Thái (Vietnamese-Thai mixed fruit and jelly dessert)",
+    "desc": "Cold sweet soup of jackfruit, longan, lychee, basil seeds, and red ruby water chestnuts in sweetened coconut cream. Vietnamese in origin despite the name, built on tinned tropical fruits and the textural contrast of jelly, crunch, and pop.",
+    "tags": [
+      "che",
+      "vietnamese-dessert",
+      "vietnamese",
+      "dessert",
+      "coconut",
+      "tropical",
+      "fruit",
+      "no-cook"
+    ],
+    "status": "complete",
+    "_slug": "che-thai",
+    "cuisine": "Vietnamese",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 15,
+      "total_min": 60,
+      "active_min": 35
+    },
+    "updated": "2026-05-16",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh water chestnuts",
+        "slug": "water-chestnut",
+        "optional": false
+      },
+      {
+        "item": "water for blanching",
+        "optional": false
+      },
+      {
+        "item": "tapioca starch",
+        "slug": "tapioca-starch",
+        "optional": false
+      },
+      {
+        "item": "fresh red dragon fruit juice or beet juice",
+        "optional": false
+      },
+      {
+        "item": "sweet basil seeds (hat é) or chia seeds",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "canned jackfruit in syrup, drained, sliced",
+        "optional": false
+      },
+      {
+        "item": "canned longan in syrup, drained",
+        "optional": false
+      },
+      {
+        "item": "canned lychee in syrup, drained, halved",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "sweetened condensed coconut milk",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "reserved fruit syrup",
+        "optional": false
+      },
+      {
+        "item": "crushed ice",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/che-troi-nuoc.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chè trôi nước (glutinous rice balls in ginger syrup)",
+    "desc": "Chewy glutinous rice balls filled with sweet mashed mung bean, floated in a fresh ginger syrup and crowned with coconut cream. The Vietnamese cousin of tang yuan, eaten at Lunar New Year and the lunar 3rd-of-3rd festival.",
+    "tags": [
+      "che",
+      "vietnamese-dessert",
+      "vietnamese",
+      "dessert",
+      "glutinous-rice",
+      "legume-dessert",
+      "coconut",
+      "holiday"
+    ],
+    "status": "complete",
+    "_slug": "che-troi-nuoc",
+    "cuisine": "Vietnamese",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 25,
+      "total_min": 70,
+      "active_min": 50
+    },
+    "updated": "2026-05-16",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "split yellow mung beans",
+        "slug": "mung-bean",
+        "optional": false
+      },
+      {
+        "item": "water for steaming",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fried shallots, roughly chopped",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "optional": false
+      },
+      {
+        "item": "glutinous rice flour",
+        "slug": "glutinous-rice-flour",
+        "optional": false
+      },
+      {
+        "item": "warm water (about 50°C / 120°F)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar or palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "pandan leaves, knotted",
+        "slug": "pandan-leaves",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "tapioca starch",
+        "slug": "tapioca-starch",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "toasted white sesame seeds",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-16",
+    "_card": {
+      "totalMinutes": 70,
+      "diffLabel": "medium",
+      "timeLead": "1 h 10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
     }
   },
   {
@@ -2333,7 +2291,7 @@
     "added": "2026-05-13",
     "_card": {
       "primaryTag": "herb",
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },

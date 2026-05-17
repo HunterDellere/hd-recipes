@@ -26,6 +26,12 @@ source:
   name: 'Cantonese (and broader southern Chinese) tradition'
   note: 'Three regional approaches share this construction: Cantonese braises the stuffed rings in a soy-aromatic broth (this recipe); Hunan batters and deep-fries them; Sichuan adds doubanjiang and Sichuan peppercorns to a spicy braise. The technique of stuffing the holes is identical across all three.'
 
+before_you_start:
+  - 'Steamed jasmine rice is the partner and must be on FIRST. Rinse 360 g / 1¾ cups rice three times, start in the cooker (or stovetop covered at a bare simmer 18 minutes, then 10 minute rest off heat). Total rice time of about 45 minutes overlaps the entire stuff-sear-braise sequence so both arrive together.'
+  - 'Mix the vinegar water (1500 ml water plus 15 ml white vinegar) before you start peeling lotus root. Cut lotus oxidizes to brown within 2 to 3 minutes of exposure; each round must hit the acid water the moment it leaves the knife.'
+  - 'Plan for 35 to 40 minutes of passive braise time after the active stuff-and-sear. The total active window is about 40 minutes, but the braise is hands-off; this is the gap to set the table, make a non-meat side, or hold dinner if guests are running late.'
+  - 'Stir the pork filling vigorously in one direction for 60 to 90 seconds. The single-direction stir develops the meat protein into a cohesive bind; alternating directions or under-mixing produces filling that falls out of the holes during the sear.'
+
 ingredients:
   - group: 'Phase 1, lotus root prep'
     item: 'lotus root (soup-grade, starchier segments)'

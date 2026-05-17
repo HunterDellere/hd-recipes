@@ -26,6 +26,11 @@ source:
   name: 'Adapted from the Caesar Cardini canon (Tijuana, 1924) and the Italian-American restaurant tradition'
   note: 'The original 1924 dressing used a coddled whole egg, not raw yolk; this version coddles two yolks for the same protein-set safety with a richer emulsion. Anchovy is in the original (Cardini''s brother Alex added the anchovy fillet); the no-anchovy purist version is a later sanitization.'
 
+before_you_start:
+  - 'Wash and dry the romaine first, then refrigerate it on a sheet tray lined with a clean kitchen towel for at least 30 minutes before assembly. Cold dry leaves take dressing without wilting; warm wet leaves dilute the emulsion and collapse within minutes.'
+  - 'Use day-old sourdough. Fresh bread is too moist and bakes to a leathery rather than crackly crouton. If you only have fresh, tear it the morning of and leave the chunks uncovered on the counter for 2 to 3 hours to dry the surface before tossing in the garlic oil.'
+  - 'The dish lives or dies on the 5 minute window between dressing and eating. Stage everything (croutons cooled, dressing finished, romaine cold and dry, cheese grated, platter ready) before you toss; a dressed Caesar held more than 5 minutes is a different, lesser dish.'
+
 ingredients:
   - group: 'Phase 1, sourdough croutons'
     item: 'day-old country sourdough'

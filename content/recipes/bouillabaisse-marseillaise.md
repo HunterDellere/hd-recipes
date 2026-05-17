@@ -31,6 +31,12 @@ safety_notes:
     ref: 'safety/seafood-doneness#cooking-targets-for-fin-fish'
     why: 'Halibut, cod, monkfish, snapper, and sea bass all have low-fat flesh that turns chalky and dry past 60°C. The traditional French and Provençal cooking target for white fish is the just-flaky moment around 130 to 140°F internal, where the protein has set but not expelled water. This is below the USDA published-safe instantaneous target of 145°F; cooks should source fresh, properly-handled fish from a reputable counter and accept the tradeoff. Vulnerable diners (pregnant, immunocompromised) should be served fish cooked to 145°F internal (additional 1 to 2 minutes of poach time) accepting the texture loss.'
 
+before_you_start:
+  - 'Order the right fish a day ahead. The dish needs at least three firm white fish species (monkfish, cod, halibut, snapper, sea bass) AND their heads and bones for the broth; ask the fishmonger to fillet whole fish and bag the carcasses. Without the head-and-bone fraction the broth cannot emulsify to the canonical milky orange-pink suspension.'
+  - 'Make the broth first, up to 24 hours ahead. The fish broth simmers hard for 30 to 45 minutes (a vigorous boil, not a tremor: emulsification depends on mechanical agitation), then strains and rests. Doing this the day before pays back in clearer flavor and a much shorter window between final fish poach and service.'
+  - 'Steam the potatoes and toast the croutons in parallel with the final fish poach. The fish chunks need only 6 to 10 minutes in the broth at the end; the potatoes (15 to 20 minutes) and croutons (8 minutes at 180°C / 350°F) must be ready when the fish comes out, or the two-course service collapses.'
+  - 'The rouille can be made up to 4 hours ahead and held at room temperature; bloom the saffron in warm broth for the rouille AND for the broth at the same time. Cold rouille from the fridge breaks when it hits the hot crouton.'
+
 ingredients:
   - group: 'Phase 1, fish broth (made first; can be made up to 24 h ahead)'
     item: 'extra-virgin olive oil'

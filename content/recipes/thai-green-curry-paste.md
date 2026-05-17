@@ -21,6 +21,12 @@ difficulty: 'medium'
 cuisine: 'Thai'
 course: 'sauce'
 
+before_you_start:
+  - 'A heavy granite mortar and pestle (krok hin) is the canonical tool and the structural reason this paste outperforms a food processor version. The mortar shears cell walls and releases the lipids bound inside lemongrass and galangal; the processor cuts rather than shears and produces a wetter, weeper paste. If you only have a processor, you will get about 70% of the way.'
+  - 'Toast the spices and the shrimp paste FIRST, before any pounding begins. The toasted spices need to cool fully before grinding (about 5 minutes), and the kapi needs to come off the flame before its top notes scorch; both go into the mortar near the end and cannot be done mid-pound.'
+  - 'Plan for 15 to 20 minutes of steady pounding once the mortar work starts. Lemongrass and galangal have cell walls that resist bruising and lemongrass-first-then-soft-aromatics-last is the only order that produces a smooth paste; cutting corners on the pound time leaves a fibrous paste that tastes of lemongrass texture instead of lemongrass oil.'
+  - 'The paste keeps one week refrigerated and three months frozen in ice cube trays. Doubling the batch costs no extra mortar time and pre-portions 6 to 8 curries; the labor-to-yield ratio is the reason to never make a single-curry batch.'
+
 ingredients:
   - group: 'Aromatic base'
     item: 'green Thai bird''s eye chilies, stems removed'

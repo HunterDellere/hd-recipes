@@ -54,6 +54,19 @@ Any step that names an ingredient ("toss with cornstarch", "add the panko") must
 
 The cook reads steps with floured/sauced hands; they shouldn't have to scroll back to the mise.
 
+### Surface coordination with `before_you_start` for any non-linear recipe
+
+If the recipe has a long-lead step (overnight soak, rice steam, dough proof, oil chill), a partner dish that needs to start FIRST (sticky rice for larb, basmati for curry), or any non-edible / safety-critical note (simmer pots, fermentation handling), add a `before_you_start` field in the frontmatter — either a paragraph string or an array of bullet strings. The build renders it as a callout above mise so the cook sees the timing before they start measuring.
+
+Common signals that a recipe needs this field:
+- Any ingredient with `prep: 'soaked'`, `'overnight'`, `'4 hours ahead'`, etc.
+- Any reference to a partner dish (`served with sticky rice`, `over jasmine rice`, `with tortillas`).
+- Any technique with a 30+ minute passive step (rest, cool, chill, ferment, infuse).
+- Any non-edible preparation (simmer pots, infused oils, fragrance pots).
+- Any reverse-engineering required (the popping-boba alginate bath needs 4 hr rest BEFORE you can use it).
+
+If the recipe is genuinely linear (mise → cook → eat, no parallel tracks, no long-leads), omit the field. Do not pad.
+
 ### `homemade_alternatives[].recipe_slug` must resolve
 
 Every `recipe_slug` in `homemade_alternatives` must point to an actual page in `content/recipes/`. The build hard-errors with `broken href` if the target doesn't exist.

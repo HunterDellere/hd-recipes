@@ -26,6 +26,11 @@ source:
   name: 'Adapted from the Cantonese (Yue) steamed-fish canon, central to the southern Chinese seafood tradition and a fixture of every Cantonese banquet menu.'
   note: 'The dish reads as restraint but executes on three precise transitions: cure the fish briefly to firm the surface and pull surface water, steam at full vapor to set the protein without collapsing the texture, then deploy aromatics in three thermal registers (raw chiffonade, warm seasoning sauce, smoking oil bloom). Each register extracts a different fraction of the ginger-scallion aromatic compounds. The wrong register at any stage flattens the dish.'
 
+before_you_start:
+  - 'Start jasmine rice FIRST as a parallel track. The fish steams 8 to 12 minutes and plates within 60 seconds of coming out of the steamer; the rice (12 minute simmer plus 10 minute rest) must be finished by the moment the smoking oil hits the aromatics or the dish goes cold waiting.'
+  - 'Set up a steamer that fits a 700 g whole fish flat on a heatproof plate. A wok with a bamboo steamer or a deep skillet with a wire rack both work; what does not work is a small saucepan that forces you to bend or break the fish. Verify clearance with the empty plate before the fish goes anywhere near it.'
+  - 'Stage the three aromatic registers BEFORE the fish hits the steam: raw ginger-scallion julienne in a bowl by the plate, soy-sesame seasoning warmed in a small pot, neutral oil ready in a small saucepan to be pushed to smoking the moment the steamer comes off heat. The oil-pour finish is a 5 second move; fumbling with the julienne mid-pour means cold oil and no aromatic bloom.'
+
 ingredients:
   - group: 'Phase 1, fish prep and cure'
     item: 'whole white fish (branzino, black sea bass, red snapper, or porgy), gutted and scaled, gills removed'

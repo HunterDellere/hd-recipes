@@ -26,6 +26,11 @@ source:
   name: 'Adapted from the Huaiyang (Yangzhou, Jiangsu) tradition'
   note: 'Lion''s head meatballs (狮子头, shīzi tóu) are one of the signature dishes of Huaiyang cuisine, the cuisine of the Yangzhou and Huai''an regions of Jiangsu province, on the Yangtze River. Huaiyang is one of the four great traditions of Chinese cuisine (alongside Cantonese, Sichuan, and Shandong) and is known for refined knife work, delicate seasoning, and braised seafood and pork preparations. The dish dates to at least the Sui dynasty (7th century) and was reportedly a favorite of the Qianlong Emperor (18th century). The canonical version uses pork shoulder with a small proportion of pork belly for fat, finely hand-chopped rather than machine-ground (the hand-chop is structural, it produces a coarser, more discrete-textured mince than machine grinding, and the dish texture depends on this), water chestnut for crunch, ginger and scallion for aromatics, and a clear soy-rice-wine braise on a bed of napa cabbage. Two major sub-variants exist: the white (清炖, clear-braised) version with a pale broth, and the red (红烧, soy-braised) version with a darker, more reduced sauce. This recipe is the white version, which is the more classical and refined preparation; the red version is described in the modifications.'
 
+before_you_start:
+  - 'Start jasmine rice as a PARALLEL TRACK in the last 30 minutes of the 60 minute braise. Lion''s head is plated over rice or alongside it as the starch carrier for the broth; rice that is not ready when the meatballs come out leaves the cabbage and meatballs cooling on the platter.'
+  - 'The meatballs need 8 to 10 minutes of hand-paddling to extract myosin and bind the unusually high water proportion into the meat. Skipping or shortening this step is the single most common failure mode, the meatballs fall apart in the braise. Plan the prep time; this is a 35 minute active step before the braise even starts.'
+  - 'Hand-chop the pork shoulder rather than using pre-ground if at all possible. The discrete, coarser hand-chop texture is structural to the silky-tender meatball; pre-ground pork produces a denser, springier ball. If you must use pre-ground, request shoulder grind with visible fat flecks rather than fine grind.'
+
 ingredients:
   - group: 'Phase 1, the meatball mixture'
     item: 'ground pork (75/25 shoulder)'

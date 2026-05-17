@@ -26,6 +26,12 @@ source:
   name: 'Adapted from Isaan/Central Thai canon (som tum thai variant)'
   note: 'Som tum thai is the Bangkok/Central variant: dried shrimp and peanuts, no fermented fish or pickled crab. The Isaan parent, som tum lao or som tum pla ra, builds funkier with pla ra (fermented fish sauce) and salted black crab. Both are pounded in a clay mortar; the technique is constant, the seasoning lever moves.'
 
+before_you_start:
+  - 'Sticky rice is the canonical partner. Soak 200 g / 1 cup glutinous rice in cold water at least 4 hours ahead (overnight is better); when you begin the salad, drain and put it on to steam (recipe thai-sticky-rice). A 30 minute steam runs in parallel with the papaya shred, mortar work, and final toss.'
+  - 'Shred the papaya into the ice water and soak the shreds 10 minutes BEFORE building the mortar dressing. Cold water firms the cell walls so the shreds bend without breaking under the pestle; without the soak the papaya pulps to mush in the final pound.'
+  - 'Use a clay mortar (krok din) with a wooden pestle, not a granite mortar. Granite mortars are designed for hard curry pastes and will crush som tum to a paste; the clay-and-wood combination bruises rather than pulverizes. If you only have granite, lighten every strike noticeably.'
+  - 'The salad does not hold. Have diners at the table and rice ready to portion before the papaya hits the mortar; the dish begins to weep within 15 to 20 minutes and the textural contrast collapses.'
+
 ingredients:
   - group: 'Phase 1, papaya prep'
     item: 'green (unripe) papaya'

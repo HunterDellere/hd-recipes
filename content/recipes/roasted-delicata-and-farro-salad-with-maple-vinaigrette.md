@@ -22,6 +22,11 @@ cuisine: 'American'
 course: 'dinner'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'Three components run in parallel: the delicata (25 min roast at 230 °C), the farro (25 to 30 min simmer), and the massaged kale (10 min rest). Start the oven preheat AND the farro water boil at the same moment, before any prep. Both finish within minutes of each other.'
+  - 'Use semi-pearled farro, not whole. Whole farro needs an overnight soak and 50+ minutes simmer; if you only have whole, soak it the night before or the timing falls apart.'
+  - 'Massage the kale 10 minutes ahead of plating. The lemon-salt cell-wall breakdown is the entire reason raw lacinato reads tender here; skip the rest and the green eats fibrous and bitter.'
+
 source:
   name: 'Adapted from the modern North-American autumn-salad register that emerged from the Bay Area farm-to-table movement and crossed into the broader US restaurant canon through the 2010s.'
   note: 'The dish is a composition rather than a tradition: roasted winter squash, chewy whole grain, raw bitter green, toasted nut, and a sweet-acid-mustard dressing. The thesis is the contrast between hot caramelized squash and cool bright dressing on a chewy grain bed; nothing in the salad is incidental, every element pulls a load.'

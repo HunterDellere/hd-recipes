@@ -21,6 +21,11 @@ difficulty: 'medium'
 cuisine: 'Chinese'
 course: 'breakfast'
 
+before_you_start:
+  - 'Total cook is about 110 minutes, with 50+ minutes of mostly passive simmer in the middle. Plan to be near the stove for the first 20 minutes (brine, rice prep, skim) and the last 20 (pork pull, pidan stir-in, build bowls). The middle hour is free.'
+  - 'Buy bone-in pork shoulder or country-style ribs. Boneless cuts produce a thin, water-y broth; the bone is the stock. If your butcher cannot help, neck bones or pork ribs are the correct substitutes.'
+  - 'Source pidan from a Chinese grocery (refrigerated section or shelf-stable). Confirm three eggs are unbroken and odor-free when shelled. One goes into the simmer, two stay as wedges for the bowls, this two-stage split is non-negotiable.'
+
 source:
   name: 'Adapted from Cantonese tradition (pei daan sau yuk juk)'
   note: 'The two-stage pidan addition is the textural contrast lever. The pork-on-the-bone is the stock-in-pot move; storebought broth flattens the dish.'

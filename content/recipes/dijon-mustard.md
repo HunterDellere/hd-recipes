@@ -26,6 +26,11 @@ source:
   name: 'Adapted from the Burgundy method'
   note: 'Real Dijon AOC uses verjuice, not wine. Wine is the home substitute that preserves the cleanness without sourcing fresh unripe grape juice.'
 
+before_you_start:
+  - 'Start the seed soak 36 to 48 hours before you want to blend. The seeds need that window in the wine-and-water bath to hydrate enough to grind smooth; under-soaked seeds blend gritty and the texture cannot be rescued.'
+  - 'The mustard is not done when you jar it. Freshly blended mustard is wasabi-grade hot for the first 24 hours; the bite mellows by half over day one and stabilizes around day 4 to 5. Plan to make this at least 5 days before you want to use it on a sandwich.'
+  - 'Use a glass or ceramic bowl for the soak and the blend, never aluminum, untreated cast iron, or copper. Raw mustard reacts with these metals within hours and turns bitter.'
+
 ingredients:
   - group: 'Soak'
     item: 'brown mustard seeds'

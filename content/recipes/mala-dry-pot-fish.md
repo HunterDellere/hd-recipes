@@ -22,6 +22,12 @@ cuisine: 'Chinese'
 course: 'dinner'
 diet: ['dairy-free']
 
+before_you_start:
+  - 'Rice is the partner and must start FIRST. Set jasmine or other long-grain rice to cook so it finishes when the wok toss does, dry-pot has no broth and the rice is the only liquid foil on the table.'
+  - 'Rehydrate the dried wood ear and tofu skin sticks BEFORE you start prep: 4 to 6 hours in cold water (or 30 minutes in hot water for wood ear, 1 hour for tofu skin). Half-rehydrated wood ear is rubbery and tofu skin will not absorb the red oil.'
+  - 'Press the firm tofu under a 1 kg weight for 30 minutes during prep so it holds cube shape through the toss. Start the press the moment you begin slicing vegetables.'
+  - 'The fish coat (velveting with cornstarch and egg white) needs 15 minutes to hydrate before the sear. Mix it early in prep so it rests while you par-cook the lotus root and cauliflower.'
+
 source:
   name: 'Sichuan dry-pot tradition'
   note: 'Dry-pot (gan guo) is structurally distinct from hot-pot (huo guo): no broth at the table, the dish arrives finished and the components have already absorbed the rendered red oil. Often served on a portable burner to keep the wok contents hot through the meal.'

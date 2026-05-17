@@ -26,6 +26,12 @@ source:
   name: 'Adapted from the southern Vietnamese canon (Mekong delta and Saigon home cooking).'
   note: 'Canh chua cá is the defining Mekong-delta sour soup, traditionally made with cá lóc (snakehead) or cá basa (a domestic Vietnamese catfish). The structural identity is the tamarind acid curve plus the three-vegetable bed of pineapple, tomato, and taro stem (bạc hà), not the specific fish. The version here calibrates the tamarind concentration and the layered-vegetable timing for home reproduction with US-available catfish.'
 
+before_you_start:
+  - 'Steamed jasmine rice is the partner and must be on FIRST. Rinse 360 g / 1¾ cups rice three times, start in the cooker (or stovetop covered at a bare simmer 18 minutes, then 10 minute rest off heat). The 45 minute rice timeline overlaps the entire cure-extract-build-poach sequence.'
+  - 'Cure the catfish with salt and rice vinegar 10 minutes before any cooking. The surface cure neutralizes the slight mud-note of farm-raised catfish and firms the protein so the steaks do not break in the simmer; both effects need the full 10 minutes to develop.'
+  - 'Tamarind extraction needs a 15 minute hot-water soak. Start it the moment the fish cure goes on; the two passive windows overlap exactly.'
+  - 'The fish poaches in a 4 to 5 minute window at a bare simmer (85 to 90 degrees C). Boiling the broth at that stage breaks the catfish into shreds; have the heat dialed down before the steaks slide in.'
+
 ingredients:
   - group: 'Phase 1, fish prep'
     item: 'catfish steaks (skin-on, bone-in, 2 to 3 cm thick)'

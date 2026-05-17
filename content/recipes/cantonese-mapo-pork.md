@@ -24,7 +24,12 @@ diet: ['dairy-free']
 
 source:
   name: 'Cantonese / overseas-Chinese adaptation of Sichuan mapo'
-  note: 'When mapo tofu emigrated to Hong Kong, Singapore, and the diaspora restaurants of North America in the 20th century, it was adapted to local pantries and palates: pork (the Cantonese default protein) replaced beef, oyster sauce was added for the slightly sweet-savory finish that defines Cantonese cooking, and the numbing-spicy levels were dialed down for diners not raised on má-là. The version reads recognizably as mapo but lands at a different flavor target — sweeter, more polished, less aggressive. Not the Chengdu original but a defensible cuisine in its own right.'
+  note: 'When mapo tofu emigrated to Hong Kong, Singapore, and the diaspora restaurants of North America in the 20th century, it was adapted to local pantries and palates: pork (the Cantonese default protein) replaced beef, oyster sauce was added for the slightly sweet-savory finish that defines Cantonese cooking, and the numbing-spicy levels were dialed down for diners not raised on má-là. The version reads recognizably as mapo but lands at a different flavor target, sweeter, more polished, less aggressive. Not the Chengdu original but a defensible cuisine in its own right.'
+
+before_you_start:
+  - 'Start jasmine rice FIRST as a PARALLEL TRACK. The mapo cooks in about 12 minutes once aromatics hit the wok, and the rice needs 12 minutes simmer plus 10 minutes covered rest. Rinse and put rice on before you marinate the pork; the timing lines up so both finish together.'
+  - 'Marinate the pork 10 minutes before cooking. The 3 g cornstarch coat (velveting principle on ground meat) needs the rest to hydrate or it sloughs off in the wok.'
+  - 'Have every aromatic minced and every sauce ingredient pre-measured into small bowls before the wok goes on heat. From doubanjiang in the oil to plate is under 6 minutes of continuous high-heat cooking; stopping to mince garlic mid-stir-fry burns what is already in the pan.'
 
 ingredients:
   - group: 'Phase 1, pork preparation'

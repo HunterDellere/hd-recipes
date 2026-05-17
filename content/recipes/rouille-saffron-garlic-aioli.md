@@ -22,6 +22,11 @@ cuisine: 'French (Provençal, Marseille)'
 course: 'sauce'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'Rouille is a partner sauce. The canonical recipe uses warm broth pulled from a bouillabaisse pot; if making standalone, bloom a generous pinch of saffron in 60 ml warm seafood stock at least 15 minutes before starting so the carotenoids dissolve. Cold or dry saffron lands the sauce dull yellow rather than rust-red.'
+  - 'Bring the egg yolk and olive oil to room temperature before mounting. Cold ingredients refuse to emulsify cleanly into the bread-and-garlic base and the rouille breaks within minutes.'
+  - 'Use a mortar and pestle if you have one. The food-processor version is functionally equivalent but loses the textural slight-graininess of pounded garlic that defines the classical Marseille sauce.'
+
 source:
   name: 'The classical Provençal canon (Marseille, Toulon, the Mediterranean coast of southern France); the sauce is documented in the 19th-century French cookbooks (Reboul''s La Cuisinière Provençale, 1897) and stabilized in the modern form (with saffron, raw garlic, olive oil) over the 20th century.'
   note: 'Rouille is structurally a bread-thickened (or potato-thickened) aioli, with saffron and ground cayenne pepper or piment d''Espelette providing the rust-red color and the characteristic Provençal heat. The two main schools of rouille use either soaked stale bread (Marseille) or a small boiled potato (Toulon and the variants closer to the Spanish border) as the structural thickener; both work, with the bread version reading slightly softer and the potato version reading firmer and more aioli-adjacent. The classical preparation pounds raw garlic to a paste in a mortar before incorporating the bread, saffron broth, and yolk; the modern food-processor version is functionally equivalent but loses the textural slight-graininess that the mortar produces. Rouille is canonically dropped onto toasted baguette croutons (the rouille-on-toast preparation called rouille tartines) which float on the broth at service; it can also be stirred directly into the broth as a thickener-and-flavor finish, though this is the less canonical service. The cayenne or piment d''Espelette is essential to the dish; rouille without heat is a Provençal aioli, not a rouille. The version here is the Marseille bread-thickened canonical preparation.'

@@ -22,6 +22,12 @@ cuisine: 'Chinese'
 course: 'sauce'
 diet: ['vegan', 'gluten-free']
 
+before_you_start:
+  - 'The active cook is 35 minutes, but the oil needs a 24-hour rest at room temperature before first use so the chili flakes fully infuse and the aromatic compounds integrate. Make it the day before you need it.'
+  - 'Use a probe thermometer for the three-temperature pour. Hitting 220 °C, 180 °C, then 150 °C precisely is the entire technique; eyeballing the smoke produces either burnt chili (above 230 °C) or under-extracted color (below 200 °C). The wrong temperature is the difference between Chongqing chili oil and chili-tinted oil.'
+  - 'Source both coarse and fine chili flakes (èrjīngtiáo or Korean gochugaru for the coarse; fine Sichuan or chili powder for the fine). The two-grind split is structural: coarse provides texture and color, fine provides the deep red base and quick heat. A single grade produces a one-dimensional oil.'
+  - 'Have a heat-proof jar or bowl (500 ml ceramic or glass) ready and stable on the counter. The oil pour at 220 °C is violent and immediate; a jar tipped over mid-pour is a kitchen emergency.'
+
 source:
   name: 'Adapted from Chongqing-style hong you with the layered-aromatic approach'
   note: 'The two-grind chili flake split + three-temperature pour is what separates a good chili oil from chili-tinted oil.'

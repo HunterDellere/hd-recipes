@@ -26,6 +26,12 @@ source:
   name: 'Tianjin street-vendor canon; the Hebei Lu and Nanshi (南市) breakfast tradition'
   note: 'Jianbing guozi (煎饼馃子) is the Tianjin street breakfast par excellence and a dish with an unusually defended canon: in 2018 the Tianjin Catering Association published a non-binding standard that specifies mung bean flour as the dominant grain, a single egg, sesame seeds, scallion, cilantro, tianmianjiang and fermented bean curd as the sauce base, and bao cui (薄脆, the thin fried wheat cracker) as the canonical crispy filling. The Beijing-style variant substitutes you tiao (the puffy fried dough stick) for the bao cui and is widely available across northern China but is treated by Tianjin purists as a different dish. This recipe follows the Tianjin canon: mung bean and millet flour blend, bao cui, three sauces.'
 
+before_you_start:
+  - 'The batter needs a 30 minute hydration rest before the first crepe goes onto the griddle. Mung bean flour is gluten-free and the starches must fully hydrate or the crepe cracks under the T-bar sweep. Build the batter first, then use the rest window to make the three sauces and prep the egg-aromatic mise.'
+  - 'A T-bar (wooden batter spreader) or a flat-backed offset spatula is structural for the sweep. The single continuous spiral motion is what produces the 28 cm paper-thin disc; a ladle and a tilt-the-pan technique produces a thicker uneven crepe that cannot hold the egg layer.'
+  - 'Bao cui must be at room temperature when it meets the hot crepe. If yours is frozen, defrost on the counter for 10 minutes during the batter rest; cold bao cui shatters on contact with the hot disc and the wrap loses its glass-shatter crunch.'
+  - 'Eat each crepe within 90 seconds of folding. The entire dish is engineered around freshness; the bao cui softens from steam within 2 to 3 minutes and the egg layer cools quickly. Cook one crepe, plate it, eat it, then cook the second.'
+
 ingredients:
   - group: 'Phase 1, the crepe batter (rest 30 min before cooking)'
     item: 'mung bean flour (绿豆面)'

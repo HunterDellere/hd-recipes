@@ -22,6 +22,11 @@ cuisine: 'Mexican-American'
 course: 'dinner'
 diet: ['vegetarian', 'gluten-free']
 
+before_you_start:
+  - 'Sweet potato (28-min roast at 230 °C) is the long pole. Get it in the oven first; the corn char, bean rinse, red onion macerate, dressing whisk, and pepita toast all happen in parallel during the roast window.'
+  - 'Macerate the diced red onion in 30 g / 2 tbsp lime juice for 5 to 10 minutes before composing. Unmacerated red onion reads as the dominant flavor and overwhelms the chipotle; the acid soak shifts it from aggressive to mild and turns it bright magenta.'
+  - 'Compose the salad warm, not hot. Rest the roasted sweet potato 10 minutes off the pan before dressing; hot cubes melt the cotija into the vinaigrette and wilt the cilantro.'
+
 source:
   name: 'Composed from the modern Mexican-American sheet-pan-salad register that emerged through the 2000s and 2010s, especially in Tex-Mex-influenced California and Southwestern home cooking.'
   note: 'The dish is not a traditional Mexican preparation; ensaladas in central Mexican home cooking are typically raw (ensalada de nopales, pico de gallo, ensalada de jicama) or warm-and-charred (escabeches), not composed grain-or-legume bowls. This recipe is an American adaptation that uses Mexican pantry vocabulary (chipotle in adobo, cotija, pepitas, cumin) on a North-American salad-bowl chassis. Honored as such; it pulls the chipotle and the cotija into a load-bearing role rather than treating them as decorative.'

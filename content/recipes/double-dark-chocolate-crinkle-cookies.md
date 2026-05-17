@@ -21,6 +21,11 @@ difficulty: 'medium'
 course: 'dessert'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'The dough needs at least 4 hours of fridge chill before scooping, ideally overnight. The coconut oil makes the dough too soft to scoop straight from the mixer; without the chill the cookies spread flat and lose the cracked crinkle top. Plan to mix the dough the night before or first thing in the morning.'
+  - 'Pull the eggs to room temperature 30 minutes before starting. Cold eggs slow the sugar-egg whip and prevent the mixture from reaching the pale ribbon stage that builds the structure for the crinkle.'
+  - 'Use bar chocolate hand-chopped from a 70 percent block for the mix-ins, not chips. Chips contain stabilizers that hold their shape during the bake; the cookies want molten chocolate strata, which only chopped bar delivers.'
+
 ingredients:
   - group: 'Chocolate base'
     item: 'unsalted butter'

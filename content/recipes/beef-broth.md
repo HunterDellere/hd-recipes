@@ -26,6 +26,11 @@ source:
   name: 'French classical technique (Escoffier-era fond brun)'
   note: 'Beef broth in the Western tradition is almost universally the brown roasted version; white beef broth is a regional curiosity and not a default. The brown roast is what gives beef stock its color and depth; without it, the broth reads thin and pale.'
 
+before_you_start:
+  - 'This is a 9 to 10 hour project: a 90 minute roast plus an 8 hour bare simmer. Active hands-on time is about 40 minutes spread across the day; the rest is passive but the simmer cannot be unattended overnight (skim the first hour, monitor the temperature). Start in the morning if you want broth by dinner.'
+  - 'Source the right bones a day or two ahead. A mix of knuckle (for gelatin), marrow (for fat and flavor), and neck (for meat-rich character) is the structural ideal; ask the butcher for soup bones and request the mix. A pure marrow-bone broth is greasy; a pure knuckle broth is one-note.'
+  - 'Plan for an overnight chill before use. The broth must cool, then refrigerate at least 4 hours so the fat solidifies on top and can be lifted off cleanly. Skimming hot broth leaves greasy haze in the finish.'
+
 ingredients:
   - group: 'Phase 1, roast bones'
     item: 'beef bones (knuckle, marrow, neck, mix is best)'

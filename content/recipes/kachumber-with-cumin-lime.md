@@ -26,6 +26,12 @@ source:
   name: 'Adapted from the North Indian and Pakistani Punjabi raw-salad tradition (kachumber, kachumbari in East Africa via the Indian diaspora).'
   note: 'Kachumber is the canonical companion to a heavy thali ; biryani, nihari, dal makhani, butter chicken ; and its job is structural cooling and palate reset, not flavor competition. The seasoning axis is cumin and lime, not chili and sugar; the tradition is salt-and-acid-forward, with green chili providing capsaicin heat rather than masala-blend complexity. Kachumbari (the East African Indian diaspora descendant served with nyama choma) is the same dish minus the cumin and chaat masala, dressed with lemon and salt only ; same kachumber DNA, simpler seasoning.'
 
+before_you_start:
+  - 'This is a side, not a main; build it to land at the same time as the curry, dal, or biryani it accompanies. Start kachumber within 25 minutes of plating; the dish loses crunch and reads watery past the 20-minute mark after the vegetables hit the dressing.'
+  - 'Toast and crack the cumin FIRST, then build the dressing on top of the cumin in a wide bowl. The cracked cumin needs 3 to 5 minutes of contact with the lime acid to bloom its terpenoid aromatics; that window runs in parallel with the vegetable dice work.'
+  - 'Cut every vegetable to even 6 to 8 mm dice (red onion one notch finer at 4 to 5 mm). The salad is structurally a composed bite; uneven dice produces a stochastic salad that reads as patches of tomato and patches of cucumber rather than an integrated whole.'
+  - 'Salt goes into the dressing, never directly on the vegetables. Salted dice draws cellular water and slumps into mush within 5 minutes; the salt-in-dressing approach keeps the dice audible to the spoon for the full eating window.'
+
 ingredients:
   - group: 'Phase 1, toasted cumin'
     item: 'cumin seeds, whole'

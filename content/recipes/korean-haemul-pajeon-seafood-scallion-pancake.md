@@ -26,6 +26,13 @@ source:
   name: 'Korean banchan and anju tradition; the Busan and Jeolla-do coastal canon'
   note: 'Pajeon (파전, "scallion pancake") and its seafood-loaded sibling haemul pajeon (해물파전) are the canonical Korean batter-fried discs. The Busan tradition treats haemul pajeon as a rainy-day anju (drinking food eaten with makgeolli, the cloudy rice wine); the Jeolla coastal tradition treats it as a homestyle banchan with a higher seafood-to-batter ratio. The technique sits between Japanese chijimi (slightly thicker batter, less crisp) and Chinese cong you bing (no batter, layered dough); the defining Korean move is the cold-batter shallow-fry with edge-basting oil for shatter crisp.'
 
+before_you_start:
+  - 'Mix the dipping sauce (cho-ganjang) FIRST and let it rest 10 minutes while you build the pancake. The gochugaru needs that window to hydrate and bloom into the soy; sauce mixed and served immediately reads gritty and flat, and the pancake without proper sauce is half a dish.'
+  - 'Make the batter and refrigerate it for 10 to 15 minutes before pouring. Cold batter is structural; the gluten relaxes, the temperature gradient at the oil interface steepens, and the disc sets glass-crisp rather than bready. Skipping the chill produces a chewy pancake.'
+  - 'Pat the seafood very dry on paper towels before it goes onto the batter. Wet squid, shrimp, and mussels release water that steams under the disc and prevents the shatter-crisp bottom from setting.'
+  - 'Hold 2 to 3 tbsp of the neutral oil aside before pouring the batter; this is the edge-basting oil that flows under the disc during the last minute of the first-side cook and produces the dark lacquered rim that defines well-cooked pajeon. Without it, the pancake is competent but flat.'
+  - 'Serve the pajeon within 5 minutes of cutting. Held longer than that the crisp bottom softens; a wire rack in a 90 °C oven extends the window to 10 minutes if you must hold.'
+
 safety_notes:
   - for: 'Mussels held alive until immediately before cooking and discarded if unresponsive'
     ref: 'safety/seafood-doneness#bivalves-oysters-clams-mussels'

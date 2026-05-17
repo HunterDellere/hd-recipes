@@ -31,6 +31,12 @@ safety_notes:
     ref: 'safety/seafood-doneness#bivalves-oysters-clams-mussels'
     why: 'Bivalves are filter-feeders and harbor whatever bacteria, viruses, and biotoxins (Vibrio, hepatitis A, norovirus, paralytic shellfish poisoning toxins) were in the water they filtered. A bivalve already gaping pre-cook is dead, and dead bivalves are a food safety hazard because of bacterial decomposition in the gut. A bivalve that fails to open during cooking has not heated through enough to be safe and may have been dead going into the pot; discard rather than force open.'
 
+before_you_start:
+  - 'Purge the clams and scrub the mussels at least 30 minutes ahead. Clams need a 30 minute saltwater purge (3% brine) to release sand; mussels need scrubbing and debearding. Sandy bivalves ruin the broth and the dish in a single pot, there is no recovery.'
+  - 'Order Dungeness crab cleaned and cracked from the fishmonger if possible, or do it yourself before the cook begins. Cracking a whole crab mid-stew is the wrong time, the meat tears, the shells splinter into the broth, and the timing on the other seafood collapses.'
+  - 'Stage every seafood addition by minute in the recipe (the bivalves open within a single 60 second window only if added in the right sequence). Pull crab, halibut, shrimp, clams, and mussels onto separate plates with the addition order labeled; mid-stew is the wrong time to be picking through a fridge drawer.'
+  - 'Toast the sourdough in the last 10 minutes of the broth simmer. The bread is structural carrier for the broth and the toast must be hot and crackly when the bowls go to the table; pre-toasted bread held warm goes soft, and untoasted bread sponges all the broth into one slice.'
+
 ingredients:
   - group: 'Phase 1, fennel-aromatic base'
     item: 'extra-virgin olive oil'

@@ -26,6 +26,10 @@ source:
   name: 'The Argentine and Uruguayan asado canon. Documented across Río de la Plata cookbooks since the late 19th century; the modern stabilized form (parsley, oregano, garlic, red wine vinegar, olive oil, chili flake) hardened in the mid-20th century as the standard finishing sauce for grilled beef.'
   note: 'Two regional schools: the Argentine version leads with flat-leaf parsley and dried oregano, with red wine vinegar as the dominant acid; the Uruguayan version often adds bell pepper and reads slightly sweeter. The version here is the Argentine canon. Chimichurri rojo (a distinct preparation with smoked paprika, tomato, and more chili) is a separate sauce; this is chimichurri verde, the green and dominant form.'
 
+before_you_start:
+  - 'The sauce must rest at room temperature 30 minutes before serving. The vinegar needs that window to pull chlorophyll and aromatic oils from the chopped herbs into the oil, which is the structural step that distinguishes chimichurri from a fresh herb oil. Sauce-on-the-table immediately reads thin and disconnected.'
+  - 'Chop the herbs by hand, not in a food processor. The processor pulverizes the parsley into a green paste that bleeds bitter chlorophyll; hand-chopped herbs stay in distinct flakes that release flavor over the 30 minute rest without going olive-drab.'
+
 ingredients:
   - group: 'The herbs'
     item: 'flat-leaf parsley, leaves and tender stems'

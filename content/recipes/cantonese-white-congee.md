@@ -26,6 +26,11 @@ source:
   name: 'Adapted from Cantonese juk tradition'
   note: 'The pretreatment-and-low-tremor technique is what separates congee from boiled rice with extra water.'
 
+before_you_start:
+  - 'This is a 90 minute pot: a 15 minute rice rest after the oil-and-salt massage, then a 60 minute bare tremor simmer. Active hands-on time is about 20 minutes (rinse, massage, rest, then stirring every 10 to 15 minutes during the simmer); plan accordingly.'
+  - 'The oil-and-salt massage is the structural pretreatment and the 15 minute rest after is non-negotiable. Skipping the rest means the oil has not yet sealed the polished grain surface, and the rice swells intact rather than fragmenting inside-out into the cloudy starch suspension that defines congee.'
+  - 'Use a heavy 4 quart pot or Dutch oven. The 1:10 rice-to-water ratio needs a wide base for even tremor, and the long simmer can scorch in a thin pan. The lid must crack-vent (offset slightly) so steam escapes without losing more than about 200 ml over the hour.'
+
 ingredients:
   - group: 'Rice prep'
     item: 'jasmine rice'

@@ -24,6 +24,11 @@ source:
   name: 'Original'
   note: 'Built around a miso-butter glaze (yōshoku-leaning) layered onto an otherwise washoku ingredient set. Inspired by Japanese miso-butter salmon traditions.'
 
+before_you_start:
+  - 'Short-grain rice is the partner and runs in PARALLEL. Start the rice (20-minute soak, 12-minute cook, 10-minute rest) when the sheet pan goes into the oven so it lands at the same time as the finished glaze.'
+  - 'The shrimp need a 15-minute baking-soda brine before they go on the pan. Mix the brine first so it runs alongside the squash roast.'
+  - 'Preheat the sheet pan inside a 230 C / 450 F oven for 15 minutes before the squash hits it. A cold pan steams the delicata flat-side and you lose the chestnut char that anchors the dish.'
+
 ingredients:
   - group: 'Phase 1; shrimp brine'
     item: 'shrimp, 21/25 count, peeled and deveined, tails on'

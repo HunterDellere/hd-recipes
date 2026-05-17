@@ -21,6 +21,11 @@ cuisine: 'American'
 course: 'side'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'Start the potatoes in cold salted water FIRST so the 20 to 30 minute simmer runs in parallel with the dairy infusion. Once the pot is on, build the infused milk-and-butter: a gentle warm-up plus a 15-minute off-heat steep with the garlic, thyme, rosemary, and bay finishes inside the potato cook window.'
+  - 'Boil the potatoes whole and unpeeled. Cutting them first lets water into the cells and dilutes flavor; the skin acts as a steamer jacket that holds the starch and minerals in place until you peel and rice them hot.'
+  - 'Strain the infused dairy and have it warm-but-not-hot when the riced potatoes go into the bowl. Cold infusion seizes the starch and produces gluey mash; boiling infusion ruptures the granules and does the same thing.'
+
 ingredients:
   - group: 'Potatoes'
     item: 'Yukon Gold potatoes'

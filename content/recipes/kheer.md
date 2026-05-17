@@ -26,6 +26,12 @@ source:
   name: 'North Indian / Pakistani household tradition'
   note: 'Kheer (खीर, also called payasam in South India and payesh in Bengal) is among the oldest recorded Indian sweets, with references in ancient Sanskrit texts. The North Indian rice kheer is the version most familiar in the diaspora; South Indian payasam uses jaggery and varied bases (rice, vermicelli, lentils, sago); Bengali payesh leans heavier on milk and lighter on rice.'
 
+before_you_start:
+  - 'This is a 70-minute attentive stir, not a hands-off simmer. The milk needs to be scraped off the bottom of the heavy pot every 30 seconds for the entire reduction or the milk solids scorch and ruin the batch. Block out the time on the schedule before starting.'
+  - 'Use HTST-pasteurized whole milk, not ultra-pasteurized (UHT). The UHT process partially denatures the casein and lactalbumin proteins; UHT milk reduces less effectively and produces a thinner kheer with a cooked-cardboard note. Read the carton before buying.'
+  - 'Steep the saffron in 30 ml of warm milk before starting the reduction. The 10 to 15 minute steep runs in parallel with the milk coming up to a low simmer; saffron added without a pre-steep distributes color unevenly and loses aromatic to the long cook.'
+  - 'Plan to make kheer the day before serving when possible. The cardamom and saffron deepen overnight in the fridge and many North Indian households consider day-two kheer better than fresh.'
+
 ingredients:
   - group: 'Phase 1, base'
     item: 'whole milk (HTST-pasteurized, not ultra-pasteurized)'

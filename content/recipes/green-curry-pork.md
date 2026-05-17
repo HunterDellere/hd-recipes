@@ -25,6 +25,12 @@ source:
   url: ''
   note: 'Augments store-bought paste rather than pounding from scratch; doubles the coconut milk to extend the lipid phase for the eggplant braise.'
 
+before_you_start:
+  - 'Start the jasmine rice on a PARALLEL track so it finishes when the curry finishes. A 20-minute soak followed by a 12-minute simmer and 10-minute covered rest lands right around the 35 to 40 minutes the curry takes from paste bloom to off-heat. Rice on first, curry second.'
+  - 'Open both cans of coconut milk without shaking and skim the cream off the top before starting heat. The dish runs on a 3-phase split (paste-bloom cream, base simmer, off-heat finish cream); shaking the cans destroys the cream-and-serum separation that the technique depends on.'
+  - 'Slice the pork thin against the grain and have it portioned with the kosher salt staged before the eggplant goes into the pan. Once the bamboo and shimeji are in, the pork has a 4 to 5 minute window before it overshoots 150 °F and tightens; no time to grab the knife.'
+  - 'Hold the simmer at a low tremble around 190 °F / 88 °C. At this fat-to-water ratio a hard boil breaks the coconut emulsion permanently into greasy pools, and the dish cannot be rebuilt mid-cook.'
+
 safety_notes:
   - for: 'Pulling pork tenderloin at 145°F internal'
     ref: 'safety/meat-doneness#pork-whole-muscle'

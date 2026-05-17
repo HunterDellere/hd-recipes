@@ -25,6 +25,12 @@ source:
   name: 'Hunter''s household standard, developed 2024-2026'
   note: 'A household crossover dish: the American chicken-salad-sandwich form, the Punjabi spice profile of tandoori cooking, and the French-American croissant as the carb vehicle. Each piece carries to the next. The tandoori-mayo is the structural pivot, without it the dish is a generic chicken salad.'
 
+before_you_start:
+  - 'The chicken needs to poach, then cool, then shred before it can be combined with the mayo, a 30 to 35 minute lead before the salad comes together. The tandoori mayo also wants a 10 minute spice-bloom rest, and the assembled salad benefits from a 15 minute fridge integration before serving. Plan a 75 minute total window or make the salad up to 3 days ahead.'
+  - 'Soak the diced red onion in cold water for at least 10 minutes before draining. Raw red onion in cold water loses the sulfurous edge while keeping the textural crunch; un-soaked red onion overwhelms the tandoori spice with allium pungency.'
+  - 'Toast the croissants only at the moment of assembly. Toasted croissants soften within 15 minutes of contact with the salad and the crisp-creamy contrast is the structural eating experience; pre-toasting kills the dish.'
+  - 'The chicken salad alone holds 3 days refrigerated and the flavors deepen overnight. If serving for guests, make the salad the day before and assemble sandwiches just before service.'
+
 ingredients:
   - group: 'Phase 1, the poached chicken'
     item: 'boneless skinless chicken thigh'

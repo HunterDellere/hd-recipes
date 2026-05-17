@@ -26,6 +26,12 @@ source:
   name: 'A modern technique with antecedents in Chinese salted duck egg, Italian bottarga, and the late-2010s Western fine-dining adoption.'
   note: 'The home-friendly version uses chicken yolks and a salt-sugar dry cure rather than the longer brine of traditional salted duck eggs. Function is the same; lead time is a fraction.'
 
+before_you_start:
+  - 'This is a 9-day minimum project, not a recipe to start the day you want cured yolks. Day 1: build the cure bed and bury the yolks. Days 1 to 7: passive refrigerator cure, no attention required. Days 7 to 9 (or 7 to 12 if air-drying): dehydration. Plan backward from the day you want finished grateable yolks.'
+  - 'Buy the eggs the same day you start the cure. Yolk freshness governs whether the membrane holds intact when transferred into the cure bed; eggs that have been in the fridge a week are more likely to rupture during separation and contaminate the bed.'
+  - 'Reserve a glass or ceramic dish at least 5 cm deep with a footprint that holds 12 yolks without touching, plus enough fridge real estate to keep it undisturbed for a week. Metal vessels react with the salt cure and stain.'
+  - 'After day 7, decide your dehydration path before pulling from the cure. Dehydrator (24 to 48 hours), low oven with cracked door (6 to 8 hours), or cheesecloth air-dry in the fridge (5 to 7 more days). The choice determines when the yolks are actually ready to grate.'
+
 ingredients:
   - group: 'Cure bed'
     item: 'kosher salt'

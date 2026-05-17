@@ -22,6 +22,12 @@ cuisine: 'Mediterranean'
 course: 'sauce'
 diet: ['vegan', 'gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'This is a 60 to 90 day fermentation, not a recipe you cook today. Active hands-on time is 30 minutes total spread across two months; the work is the patience and the monthly taste check, not the technique.'
+  - 'Source a live mother of vinegar before sourcing the wine. Options: gift from a home vinegar-maker, the cloudy sediment from an unpasteurized bottle of Bragg or similar (slow start but works), or a wine-making supply shop (fastest, most reliable). Without a live mother the wine will turn to volatile acidity and spoilage, not vinegar.'
+  - 'Pick a stable spot at 21 to 27 °C, dark and undisturbed, for two months. A pantry shelf or cupboard works; a windowsill does not. Temperature swings stall the culture.'
+  - 'Use a wide-mouth glass or ceramic jar (2 L). Tall narrow jars run at half the speed because acetobacter only converts at the air-liquid surface. Cover with cheesecloth or coffee filter, never a solid lid, the culture is aerobic and suffocates under a seal.'
+
 source:
   name: 'Adapted from the home-vinegar-making tradition (Forvm-style and Volpaia-style on the commercial end)'
   note: 'A two-step ethanol-to-acetate oxidation by acetobacter; the wide-mouth jar approach is the kitchen scale of the same process commercial vinegars run in solera or barrel.'

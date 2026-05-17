@@ -34,6 +34,11 @@ safety_notes:
     ref: 'safety/seafood-doneness#scombroid-histamine-the-toxin-no-temperature-fixes'
     why: 'Mackerel, tuna, mahi-mahi, sardines, and bluefish accumulate heat-stable histamine when stored above 40°F. Histamine is not destroyed by cooking, freezing, or curing. Source mackerel that has been held cold from harvest (frozen vacuum-packed fillets are often safer than fresh in this regard); discard any fish with off-smells, ammonia, or any fishy or metallic taste in the raw flesh.'
 
+before_you_start:
+  - 'Short-grain rice and miso soup are the partners. Start the rice (20-minute soak, 12-minute cook, 10-minute rest) FIRST so it finishes when the fish hits the plate, the sear itself is only 4 minutes per side.'
+  - 'Dry-cure the mackerel fillets at 1.5 percent salt by weight for 30 minutes before the sear. The cure firms the flesh and pulls surface water, an unsalted fillet hitting a hot pan steams the skin instead of crackling it.'
+  - 'Grate the daikon oroshi 10 minutes ahead and press out the water in a fine sieve. The radish must be cold and well-drained at plating, watery oroshi dilutes the ponzu and floods the plate.'
+
 ingredients:
   - group: 'Phase 1, fish prep and cure'
     item: 'mackerel fillets (saba), skin-on, pin-bones removed'
