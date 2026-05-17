@@ -70,39 +70,102 @@
 
   // ── Parse user pantry input ────────────────────────────────────────────
   // Accepts comma- or newline-separated values. Returns:
-  //   { tokens: ['tomato','garlic',...], slugs: Set<slug> }
-  // Slugs are resolved via two passes:
-  //   1. exact slug match (tomato → tomato)
-  //   2. substring match against ingredient title / slug (jasmine rice → rice)
+  //   { tokens: ['tomato','garlic',...], slugs: Set<slug>, unresolved: string[] }
+  // Matching is conservative — word-boundary based, not naive substring,
+  // so "salt" doesn't accidentally resolve to "unsalted butter".
+  //
+  // Pre-built aliases handle the few common short forms that need them.
+  const PANTRY_ALIASES = {
+    'salt': 'kosher-salt',
+    'sea salt': 'fine-sea-salt',
+    'pepper': 'black-pepper',
+    'olive oil': 'extra-virgin-olive-oil',
+    'evoo': 'extra-virgin-olive-oil',
+    'oil': 'neutral-oil',
+    'vinegar': 'white-wine-vinegar',
+    'flour': 'all-purpose-flour',
+    'ap flour': 'all-purpose-flour',
+    'sugar': 'granulated-sugar',
+    'brown sugar': 'light-brown-sugar',
+    'egg': 'eggs',
+    'rice': 'jasmine-rice',
+    'jasmine': 'jasmine-rice',
+    'basmati': 'basmati-rice',
+    'short grain rice': 'japanese-short-grain-rice',
+    'sticky rice': 'glutinous-rice',
+    'milk': 'whole-milk',
+    'cream': 'heavy-cream',
+    'butter': 'butter',
+    'tomato': 'tomato',
+    'tomatoes': 'tomato',
+    'canned tomatoes': 'canned-san-marzano-tomatoes',
+    'soy sauce': 'light-soy-sauce',
+    'soy': 'light-soy-sauce',
+    'mirin': 'mirin',
+    'sake': 'sake',
+    'parmesan': 'parmigiano-reggiano',
+    'parm': 'parmigiano-reggiano',
+    'pecorino': 'pecorino-romano',
+  };
+
+  function singularize(tok) {
+    // Light de-pluralization. Don't over-strip ("rice" stays "rice").
+    if (tok.endsWith('ies') && tok.length > 4) return tok.slice(0, -3) + 'y';
+    if (tok.endsWith('oes') && tok.length > 4) return tok.slice(0, -2);
+    if (tok.endsWith('es') && tok.length > 4 && !tok.endsWith('ces') && !tok.endsWith('ses')) return tok.slice(0, -2);
+    if (tok.endsWith('s') && tok.length > 3 && !tok.endsWith('ss')) return tok.slice(0, -1);
+    return tok;
+  }
+
+  // Does `s` contain `needle` as a whole word? Underscores/hyphens
+  // count as word separators alongside spaces.
+  function containsWord(haystack, needle) {
+    if (!needle) return false;
+    const pattern = new RegExp(`(^|[\\s\\-_])${needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([\\s\\-_]|$)`);
+    return pattern.test(haystack);
+  }
+
   function parsePantry(raw) {
     const tokens = String(raw || '')
       .split(/[\n,]+/)
       .map(t => t.trim().toLowerCase())
       .filter(Boolean);
     const slugs = new Set();
+    const unresolved = [];
     for (const tok of tokens) {
-      // Normalize: spaces/underscores → hyphens for slug comparison
+      // 1. Alias table — short forms first
+      if (PANTRY_ALIASES[tok]) { slugs.add(PANTRY_ALIASES[tok]); continue; }
+
+      // 2. Exact slug match (hyphenated user input or single-word that matches)
       const slug = tok.replace(/[\s_]+/g, '-');
       if (ingredientSlugs.has(slug)) { slugs.add(slug); continue; }
-      // Try substring match — e.g. "jasmine rice" matches "rice", "white rice"
-      // matches "rice". Prefer the shortest matching slug (most generic).
-      let best = null;
+
+      // 3. Try singularized form (eggs → egg → eggs via aliases? or direct match)
+      const singular = singularize(slug);
+      if (singular !== slug && ingredientSlugs.has(singular)) { slugs.add(singular); continue; }
+      const singularToken = singularize(tok);
+      if (PANTRY_ALIASES[singularToken]) { slugs.add(PANTRY_ALIASES[singularToken]); continue; }
+
+      // 4. Word-boundary fuzzy match against slugs and titles. Prefer:
+      //    a) slug that matches the user's words exactly (e.g. "yellow onion" → yellow-onion)
+      //    b) shortest slug whose title contains the user token as a whole word
+      let exactWord = null;
+      let titleMatch = null;
       for (const s of ingredientSlugs) {
         const name = ingredientNames.get(s) || s;
-        // Match if user token contains the slug as a whole word OR slug contains user token
-        if (
-          s === slug ||
-          name === tok ||
-          slug.includes(s) ||
-          name.includes(tok) ||
-          tok.includes(s.replace(/-/g, ' '))
-        ) {
-          if (!best || s.length < best.length) best = s;
+        // User typed multi-word that exactly matches the slug words
+        if (s === slug) { exactWord = s; break; }
+        if (containsWord(s, slug) || containsWord(slug, s)) {
+          if (!exactWord || s.length < exactWord.length) exactWord = s;
+        } else if (containsWord(name, tok) || (singularToken !== tok && containsWord(name, singularToken))) {
+          if (!titleMatch || s.length < titleMatch.length) titleMatch = s;
         }
       }
-      if (best) slugs.add(best);
+      if (exactWord) { slugs.add(exactWord); continue; }
+      if (titleMatch) { slugs.add(titleMatch); continue; }
+      unresolved.push(tok);
     }
-    return { tokens, slugs };
+    return { tokens, slugs, unresolved };
   }
 
   // ── Rank recipes by pantry coverage ────────────────────────────────────
@@ -146,9 +209,12 @@
     ));
   }
 
-  function render(ranked) {
+  function render(ranked, unresolved) {
+    const unresolvedNote = unresolved && unresolved.length
+      ? `<p class="pantry-match-unresolved">Could not match: <em>${escapeHtml(unresolved.join(', '))}</em>. Add the common form (e.g. "kosher salt" instead of "salt") if it should be there.</p>`
+      : '';
     if (!ranked.length) {
-      resultsEl.innerHTML = `<p class="pantry-match-empty">No recipes match yet. Try adding more pantry items — even basics like salt, oil, or eggs widen the field considerably.</p>`;
+      resultsEl.innerHTML = `${unresolvedNote}<p class="pantry-match-empty">No recipes match yet. Try adding more pantry items, even basics like oil, eggs, or onion widen the field considerably.</p>`;
       if (countEl) countEl.textContent = '';
       return;
     }
@@ -178,20 +244,23 @@
           </div>
         </a>`;
     }).join('');
-    resultsEl.innerHTML = `<div class="pm-card-list">${out}</div>`;
+    resultsEl.innerHTML = `${unresolvedNote}<div class="pm-card-list">${out}</div>`;
   }
 
   // ── Wire ───────────────────────────────────────────────────────────────
   async function runMatch() {
     await ensureEntries();
-    const { slugs } = parsePantry(ta.value);
+    const { slugs, unresolved } = parsePantry(ta.value);
     if (slugs.size === 0) {
-      resultsEl.innerHTML = `<p class="pantry-match-empty">Add at least one ingredient to see matches.</p>`;
+      const tip = unresolved.length
+        ? ` We could not match: <em>${escapeHtml(unresolved.join(', '))}</em>. Try the suggestion chips, or be more specific (e.g. "kosher salt" instead of "salt").`
+        : '';
+      resultsEl.innerHTML = `<p class="pantry-match-empty">Add at least one ingredient to see matches.${tip}</p>`;
       if (countEl) countEl.textContent = '';
       return;
     }
     const ranked = rankRecipes(slugs);
-    render(ranked);
+    render(ranked, unresolved);
     // Persist on successful run
     try { localStorage.setItem(STORAGE_KEY, ta.value); } catch {}
   }
