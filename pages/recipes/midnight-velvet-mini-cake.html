@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">hard</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">1102</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>10.8</strong>g protein</span><span class="rh-macro"><strong>59.4</strong>g carbs</span><span class="rh-macro"><strong>95.4</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -447,67 +459,67 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">1</span>
         <div class="step-body">Strawberry reduction: combine berries, lemon juice, and honey in a small saucepan. Cook over medium 10–12 minutes until the berries break down and the liquid thickens. Strain through a fine sieve, pressing hard on the solids. Set aside <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">⅓ cup</span><!-- /auto-link-skip --> for the caviar; reserve the rest for filling.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 1: Strawberry reduction: combine berries, lemon juice, and honey in a small saucepa" aria-label="Start 15 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">2</span>
         <div class="step-body">Balsamic caviar: confirm your tall glass of oil has been in the freezer at least 45 minutes. In a clean saucepan, whisk the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">⅓ cup</span><!-- /auto-link-skip --> reduction with balsamic, water, and agar. Bring to a boil, simmer 2 minutes to activate the agar.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: Balsamic caviar: confirm your tall glass of oil has been in the freezer at least" aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">3</span>
         <div class="step-body">Pull off heat, cool briefly to ~125°F (50°C). Using a pipette, drop droplets into the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> frozen oil; they'll set into pearls as they fall. Strain the pearls out, rinse gently with cold water. Refrigerate.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 3: Pull off heat, cool briefly to ~125°F (50°C). Using a pipette, drop droplets int" aria-label="Start 10 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">4</span>
         <div class="step-body">Tempered chocolate shards: melt the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="85.04849999999999" data-metric-unit="g" data-imp-qty="3" data-imp-unit="oz">3 oz</span><!-- /auto-link-skip --> portion of chocolate in a bowl (microwave bursts or double boiler) to 115°F (46°C). Pull off heat, immediately add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="28.3495" data-metric-unit="g" data-imp-qty="1" data-imp-unit="oz">1 oz</span><!-- /auto-link-skip --> finely chopped seed chocolate, and stir constantly.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 4: Tempered chocolate shards: melt the 3 oz portion of chocolate in a bowl (microwa" aria-label="Start 8 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">5</span>
         <div class="step-body">Continue stirring until the chocolate cools to 82°F (27°C). Briefly reheat (3–5 second microwave bursts) back to 88–90°F (31–32°C); do not exceed 91°F. Spread thinly on parchment, let set at room temp until matte, then refrigerate 10 minutes. Snap into shards.<button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 5: Continue stirring until the chocolate cools to 82°F (27°C). Briefly reheat (3–5 " aria-label="Start 20 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">6</span>
         <div class="step-body">Sponge: heat oven to 350°F (175°C). Grease two 4-inch round pans. Whisk the cocoa with hot coffee in a large bowl until it forms a dark glossy paste. Let sit 2 minutes; the heat melts the cocoa butter and hydrates the starch, opening the flavor.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 6: Sponge: heat oven to 350°F (175°C). Grease two 4-inch round pans. Whisk the coco" aria-label="Start 5 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Whisk sugar and buttermilk into the hot cocoa paste. The cold buttermilk drops the temperature so the egg won't scramble. Whisk in oil, vanilla, and the egg until smooth.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Whisk sugar and buttermilk into the hot cocoa paste. The cold buttermilk drops t" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">8</span>
         <div class="step-body">In a small bowl, whisk <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="65" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">65 g / ½ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> baking soda, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> baking powder, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1.5 g / ¼ tsp</span><!-- /auto-link-skip --> sea salt. Dump dry into the wet bowl and whisk just until no streaks remain.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: In a small bowl, whisk 65 g / ½ cup all-purpose flour, 3 g / ½ tsp baking soda, " aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">9</span>
         <div class="step-body">Divide between the two pans. Bake 22–25 minutes, until a toothpick comes out clean. Cool completely before assembling.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 9: Divide between the two pans. Bake 22–25 minutes, until a toothpick comes out cle" aria-label="Start 25 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">10</span>
         <div class="step-body">Buttercream: whisk 2 large egg whites and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> granulated sugar over a double boiler until they hit 160°F (71°C) and the sugar dissolves.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 10: Buttercream: whisk 2 large egg whites and 100 g / ½ cup granulated sugar over a " aria-label="Start 5 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">11</span>
         <div class="step-body">Transfer to a stand mixer; whip on high to stiff peaks, until the bowl is cool to the touch. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="170" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">170 g / ¾ cup</span><!-- /auto-link-skip --> cubed cool butter one piece at a time on low speed; whip until silky. Fold in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">25 g / 1 cup</span><!-- /auto-link-skip --> pulverized freeze-dried strawberries and a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="g">0.5 g</span><!-- /auto-link-skip --> pinch of sea salt.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 11: Transfer to a stand mixer; whip on high to stiff peaks, until the bowl is cool t" aria-label="Start 8 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">12</span>
         <div class="step-body">Assemble: level the cakes. Pipe a dam of buttercream around the edge of the bottom layer. Fill the center with the remaining strawberry reduction (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="145" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">145 g / ½ cup</span><!-- /auto-link-skip -->, what's left after the caviar). Top with the second layer.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 12: Assemble: level the cakes. Pipe a dam of buttercream around the edge of the bott" aria-label="Start 5 min timer for step 12"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">13</span>
         <div class="step-body">Coat the outside in a full layer of buttercream and smooth the sides. Spoon the balsamic caviar onto the center. Press the chocolate shards into the cake at varying angles for height.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 13: Coat the outside in a full layer of buttercream and smooth the sides. Spoon the " aria-label="Start 5 min timer for step 13"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -553,6 +565,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Maple and mustard glazed turkey breast</span>
           <span class="pair-desc">Bone-in turkey breast dry-brined overnight, roasted with herb butter under the skin, and lacquered w</span>
@@ -562,6 +575,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Lemony green beans with garlic crunch</span>
           <span class="pair-desc">Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays c</span>
@@ -571,6 +585,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Infused mashed potatoes</span>
           <span class="pair-desc">Yukon Golds boiled in their skins, riced hot, and folded with milk and butter that's been steeped wi</span>
@@ -580,6 +595,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter sugar cookies</span>
           <span class="pair-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar sh</span>
@@ -589,6 +605,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Dark chocolate</span>
           <span class="pair-desc">Cocoa solids and cocoa butter combined with sugar, with no milk solids. The cacao percentage on the </span>
@@ -598,6 +615,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Double dark chocolate crinkle cookies</span>
           <span class="pair-desc">Fudgy crinkle cookies built on melted dark chocolate, bloomed cocoa, and a coconut-oil tweak that ke</span>
@@ -607,6 +625,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chai pumpkin cupcakes</span>
           <span class="pair-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butt</span>
@@ -616,6 +635,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pancakes</span>
           <span class="pair-desc">Whole milk soured with vinegar replaces buttermilk — the acid drives CO2 from baking soda and pushes</span>
@@ -700,6 +720,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

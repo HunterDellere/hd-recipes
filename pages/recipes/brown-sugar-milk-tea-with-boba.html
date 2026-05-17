@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -112,6 +113,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -252,32 +261,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">1</span>
-        <div class="step-body">Brew tea concentrate first. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> boiling water over the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">8 g / 1½ tbsp</span><!-- /auto-link-skip --> CTC <a class="x-link" data-category="ingredients" href="../ingredients/assam-tea.html">Assam tea</a> in a small jug. Steep 5 minutes, longer than usual because the tea will be diluted heavily by milk and ice. Strain. The concentrate should look almost black. Cool to room temperature; tea added hot to milk turns the layering muddy.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 1: Brew tea concentrate first. Pour the 240 ml / 1 cup boiling water over the 8 g /" aria-label="Start 7 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
+        <div class="step-body">Brew tea concentrate first. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> boiling water over the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">8 g / 1½ tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="CTC Assam tea" data-sub-use="orthodox Assam or English Breakfast" data-sub-note="Increase to 10 g / 2 tbsp and steep 7 minutes. Whole-leaf teas extract more slowly than CTC." tabindex="0" role="button" aria-label="Substitution available for CTC Assam tea">CTC <a class="x-link" data-category="ingredients" href="../ingredients/assam-tea.html">Assam tea</a></span> in a small jug. Steep 5 minutes, longer than usual because the tea will be diluted heavily by milk and ice. Strain. The concentrate should look almost black. Cool to room temperature; tea added hot to milk turns the layering muddy.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 1: Brew tea concentrate first. Pour the 240 ml / 1 cup boiling water over the 8 g /" aria-label="Start 7 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Prep the glasses. Use two tall, clear glasses (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="ml" data-imp-qty="14" data-imp-unit="oz">400 ml / 14 oz</span><!-- /auto-link-skip --> each), straight-sided or slightly tapered, never narrow. The tiger-stripe effect depends on a wide visible surface. Chill the glasses in the freezer for 5 minutes while you work; cold glass keeps the syrup viscous against the wall.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Prep the glasses. Use two tall, clear glasses (about 400 ml / 14 oz each), strai" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Paint the stripes. Pour about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="ml" data-imp-qty="2.5" data-imp-unit="tbsp">40 ml / 2½ tbsp</span><!-- /auto-link-skip --> of the warm brown sugar syrup into each chilled glass. Tilt and rotate the glass so the syrup runs in irregular streaks down the inside wall, leaving the characteristic tiger-stripe pattern. The syrup must be warm and fluid to flow, if it has cooled into a thick paste, microwave 10 seconds. The cold glass holds the syrup in place once it touches the wall.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Paint the stripes. Pour about 40 ml / 2½ tbsp of the warm brown sugar syrup into" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Add boba. Spoon <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> warm cooked pearls into the bottom of each glass. The pearls should be warm from cooking, not refrigerator-cold. If your pearls have been sitting in syrup at room temperature for an hour or two that is correct.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Add boba. Spoon 100 g / ½ cup warm cooked pearls into the bottom of each glass. " aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Layer milk. Slowly pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">180 ml / ¾ cup</span><!-- /auto-link-skip --> cold <a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a> down the inside of each glass, pour against the wall, not into the center, to keep the brown stripes from dissolving. Add 4 to 5 ice cubes per glass on top of the milk.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Layer milk. Slowly pour 180 ml / ¾ cup cold whole milk down the inside of each g" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Add tea. Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml / ½ cup</span><!-- /auto-link-skip --> of the cooled tea concentrate into each glass, again down the inside wall. The tea floats on top of the milk for a moment, creating a three-layer effect: dark stripes, white milk middle, amber tea top. After a few seconds the layers begin to merge from the bottom up; the visual is the first 30 seconds of service.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Add tea. Pour 120 ml / ½ cup of the cooled tea concentrate into each glass, agai" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -359,6 +368,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade crystal boba (agar pearls)</span>
           <span class="pair-desc">Clear, jelly-bright pearls made from agar-agar dropped through cold oil into a chilled bath. A diffe</span>
@@ -368,6 +378,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade popping boba (reverse spherification)</span>
           <span class="pair-desc">Fruit-juice spheres held together by an alginate membrane around a still-liquid center. The popping </span>
@@ -377,6 +388,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade black tapioca pearls (boba)</span>
           <span class="pair-desc">From-scratch tapioca pearls. Boiling-water-hydrated dough rolled into spheres, blanched, then finish</span>
@@ -386,6 +398,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Banana bread</span>
           <span class="pair-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maxim</span>
@@ -395,6 +408,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Assam tea</span>
           <span class="pair-desc">Robust, malty black tea from northeast India. The default base for masala chai and what gives Englis</span>
@@ -404,6 +418,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter sugar cookies</span>
           <span class="pair-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar sh</span>
@@ -413,6 +428,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chai pumpkin cupcakes</span>
           <span class="pair-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butt</span>
@@ -422,6 +438,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè ba màu (three-color Vietnamese sweet bean dessert)</span>
           <span class="pair-desc">Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. Th</span>
@@ -506,6 +523,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

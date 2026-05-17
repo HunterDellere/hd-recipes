@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">84</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>21.7</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Taiwanese</span><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -249,42 +261,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">1</span>
         <div class="step-body">Prepare the cold oil bath the day before. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="cups">500 ml / 2 cups</span><!-- /auto-link-skip --> neutral oil into a tall narrow glass or jar, taller than wide is important so the agar droplets have enough fall distance to form spherical before hitting the bottom. Refrigerate at least 4 hours (or freeze 1 hour). The oil should be visibly cold and slightly viscous on the spoon. Cold oil is the entire technique, agar drops falling through warm oil flatten and fail to gel into rounds.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 1: Prepare the cold oil bath the day before. Pour the 500 ml / 2 cups neutral oil i" aria-label="Start 1 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
-        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> water and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> agar-agar powder in a small saucepan. Whisk thoroughly off-heat to break up any clumps. Let stand 2 minutes for the agar to bloom in the cold water.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Combine the 240 ml / 1 cup water and the 6 g / 1½ tsp agar-agar powder in a smal" aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> water and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="agar-agar powder" data-sub-use="agar flakes, doubled (12 g / 3 tbsp)" data-sub-note="Flakes are roughly half the strength of powder by weight. Soak in the cold water for 10 minutes before the boil, flakes hydrate slower than powder." tabindex="0" role="button" aria-label="Substitution available for agar-agar powder">agar-agar powder</span> in a small saucepan. Whisk thoroughly off-heat to break up any clumps. Let stand 2 minutes for the agar to bloom in the cold water.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Combine the 240 ml / 1 cup water and the 6 g / 1½ tsp agar-agar powder in a smal" aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">3</span>
         <div class="step-body">Bring the agar mixture to a hard rolling boil over medium-high heat, whisking constantly. Hold at the rolling boil for 90 seconds, agar requires full boil for full activation; sub-boiled agar sets weak and grainy. Whisk in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">30 g / 2½ tbsp</span><!-- /auto-link-skip --> sugar; boil 30 more seconds to dissolve.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: Bring the agar mixture to a hard rolling boil over medium-high heat, whisking co" aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">Pull off heat. Let the agar solution cool for 1 to 2 minutes, it needs to drop below 80°C for the oil-drop method to work but stay above 40°C or it will start gelling in the dropper. Aim for a temperature where the liquid is hot but pourable, with no skin forming yet.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Pull off heat. Let the agar solution cool for 1 to 2 minutes, it needs to drop b" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">5</span>
         <div class="step-body">Pull the cold oil from the refrigerator. Using a small dropper, pipette, or fine-tipped squeeze bottle, drop the warm agar solution into the cold oil one drop at a time from about 3 cm / 1¼ inches above the oil surface. Each drop forms a perfect sphere as it falls through the cold oil and the agar gels on contact with the cold. The pearls sink to the bottom. Work fast, you have about 5 minutes before the agar in the dropper sets and clogs. Re-warm gently if it does.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 5: Pull the cold oil from the refrigerator. Using a small dropper, pipette, or fine" aria-label="Start 10 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">6</span>
         <div class="step-body">When all pearls are dropped, let them rest in the cold oil for 5 minutes to fully set. Pour the oil through a fine sieve to catch the pearls. Rinse the pearls thoroughly under cold running water for 30 seconds, working them gently with your fingers to wash off all surface oil. They should feel clean and squeaky, not slick.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 6: When all pearls are dropped, let them rest in the cold oil for 5 minutes to full" aria-label="Start 8 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">7</span>
         <div class="step-body">In a small saucepan, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> water and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> sugar for the holding syrup. Bring to a simmer, stir to dissolve, then cool to room temperature. Transfer the rinsed pearls into the cool syrup. The syrup both flavors and keeps the pearls from drying out.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 7: In a small saucepan, combine the 240 ml / 1 cup water and 100 g / ½ cup sugar fo" aria-label="Start 6 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="60">
         <span class="step-num">8</span>
         <div class="step-body">Refrigerate the pearls in the syrup. Unlike tapioca boba, crystal boba holds beautifully in the refrigerator for up to 5 days, the agar gel is stable on cooling rather than retrograding. Use as needed.<button type="button" class="step-time step-time-btn" data-step-timer="60" data-step-label="Step 8: Refrigerate the pearls in the syrup. Unlike tapioca boba, crystal boba holds bea" aria-label="Start 1 h timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 h</span></button></div>
         
@@ -343,6 +355,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -352,6 +365,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -361,6 +375,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Taro milk tea with boba (real taro, no powder)</span>
           <span class="pair-desc">Steamed taro pureed into a sweetened paste that builds the body of a milk tea, no taro powder, no pu</span>
@@ -370,6 +385,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -379,6 +395,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Agar-agar</span>
           <span class="pair-desc">Polysaccharide gelling agent extracted from red seaweed. Sets firmer and at higher temperatures than</span>
@@ -388,6 +405,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Hong Kong silk-stocking milk tea (絲襪奶茶)</span>
           <span class="pair-desc">Cha chaan teng style: a blend of Ceylon black teas extracted hot, repeatedly poured between two pots</span>
@@ -397,6 +415,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">House blend chai</span>
           <span class="pair-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no</span>
@@ -406,6 +425,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kashmiri noon chai (pink salt tea)</span>
           <span class="pair-desc">Green tea boiled with baking soda and aerated for 20 minutes until it turns brick red, then mixed wi</span>
@@ -490,6 +510,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -42,6 +42,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -97,6 +98,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -170,22 +179,22 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="240">
         <span class="step-num">1</span>
         <div class="step-body">Stub: rinse the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="1.9379844961240311" data-imp-unit="cup">400 g</span><!-- /auto-link-skip --> raw glutinous rice in a bowl of cold water, agitating with the fingers, until the water runs from cloudy to mostly clear, 3 to 4 changes. Cover with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="cups">1500 ml / 6 cups</span><!-- /auto-link-skip --> cold water and soak 4 to 8 hours (or overnight). The soak hydrates the dense glutinous-rice starch through the grain; an unsoaked grain steams unevenly with a hard chalky center.<button type="button" class="step-time step-time-btn" data-step-timer="240" data-step-label="Step 1: Stub: rinse the 400 g raw glutinous rice in a bowl of cold water, agitating with" aria-label="Start 4 h timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 h</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Stub: drain the soaked rice, rinse once more, and shake dry. Line a bamboo steamer basket (a Thai/Lao huat) with cheesecloth or pre-dampened muslin, mound the rice in the center in a single dome about 5 cm / 2 inches thick. Set the basket over a pot or a thai sticky-rice steamer pot of simmering water (the rice should sit above, not touching, the water surface).<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Stub: drain the soaked rice, rinse once more, and shake dry. Line a bamboo steam" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">3</span>
         <div class="step-body">Stub: steam, covered, 20 to 25 minutes, until the grains are uniformly translucent and chewy-soft when pinched between fingers. Halfway through (10 to 12 minutes), flip the rice mound by lifting the cloth and inverting the rice block back onto the cloth; the bottom-now-top finishes cooking on the previously-up surface.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 3: Stub: steam, covered, 20 to 25 minutes, until the grains are uniformly transluce" aria-label="Start 25 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Stub: tip the cooked rice into a covered bamboo serving basket (the canonical Lao/Isaan presentation), or onto a plate covered with a damp cloth. The rice stays warm and pinch-able for 30 to 60 minutes; serve while warm. Eat by hand, pinching small balls of rice and pressing them into larb or som tum to pick up dressing-and-meat.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Stub: tip the cooked rice into a covered bamboo serving basket (the canonical La" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -207,6 +216,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Green curry pork</span>
           <span class="pair-desc">A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shr</span>
@@ -216,6 +226,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Larb gai (Thai-Lao minced chicken salad)</span>
           <span class="pair-desc">Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili</span>
@@ -225,6 +236,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Som tum thai (green papaya salad)</span>
           <span class="pair-desc">Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce,</span>
@@ -234,6 +246,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai green curry paste</span>
           <span class="pair-desc">A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zes</span>
@@ -243,6 +256,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Thai</span>
           <span class="pair-desc">Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated acr</span>
@@ -252,6 +266,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Glutinous rice (sticky rice, sweet rice)</span>
           <span class="pair-desc">Short- to medium-grain rice (Oryza sativa, glutinous cultivars) whose endosperm is essentially pure </span>
@@ -261,6 +276,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea (no dye)</span>
           <span class="pair-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, </span>
@@ -270,6 +286,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea with salted vanilla whip</span>
           <span class="pair-desc">Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted van</span>
@@ -302,6 +319,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

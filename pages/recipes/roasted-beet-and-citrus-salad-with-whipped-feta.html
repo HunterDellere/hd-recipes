@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">405</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>14.1</strong>g protein</span><span class="rh-macro"><strong>44.3</strong>g carbs</span><span class="rh-macro"><strong>21.4</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Mediterranean (Levantine lean)</span><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -376,52 +388,52 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Heat the oven to 200 °C / 400 °F. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="2" data-imp-unit="cups">500 g / 2 cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> into a small heavy roasting pan or cast-iron skillet to make a 1 cm bed; nestle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="700" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="lb">700 g / 1.5 lb</span><!-- /auto-link-skip --> beets in the salt skin-on, root-up, and tuck the 4 thyme sprigs around them. The salt bed conducts heat evenly to the underside of each beet, draws surface moisture out (which concentrates the geosmin and earthy-sweet beet sugars), and prevents the dripping beet juice from scorching the pan. <a class="step-tech" href="../techniques/salt-roasting.html">Salt-bed roasting</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Heat the oven to 200 °C / 400 °F. Pour the 500 g / 2 cups kosher salt into a sma" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="75">
         <span class="step-num">2</span>
         <div class="step-body">Roast 60 to 75 minutes until a paring knife slides into the centre of the largest beet with no resistance. <a class="x-link" data-category="techniques" href="../techniques/salt-roasting.html">Salt-bed roasting</a> runs slightly slower than foil-wrapped roasting because the salt is a poor conductor of radiative heat; the trade is a more concentrated finished beet. Pull the pan, let the beets rest in the salt bed for 10 minutes; the residual heat completes the cook and the skins loosen.<button type="button" class="step-time step-time-btn" data-step-timer="75" data-step-label="Step 2: Roast 60 to 75 minutes until a paring knife slides into the centre of the larges" aria-label="Start 1 h 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 h 15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
-        <div class="step-body">While the beets roast, build the pistachio crumble. Heat a dry skillet over medium and toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">60 g / ½ cup</span><!-- /auto-link-skip --> pistachios for 4 to 5 minutes, shaking constantly, until the nuts smell intensely green-floral and the pale skin shows light gold edges. Pull off heat the moment the smell turns; pistachios go from toasted to scorched in 30 seconds and the chlorophyll-rich green will turn bitter brown if pushed.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: While the beets roast, build the pistachio crumble. Heat a dry skillet over medi" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">While the beets roast, build the pistachio crumble. Heat a dry skillet over medium and toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">60 g / ½ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="pistachios" data-sub-use="toasted hazelnuts, skinned" data-sub-note="Switches the dish toward Italian-Sicilian; the deep maple-y nut flavor reads against beets equally well, but loses the bright green visual." tabindex="0" role="button" aria-label="Substitution available for pistachios">pistachios</span> for 4 to 5 minutes, shaking constantly, until the nuts smell intensely green-floral and the pale skin shows light gold edges. Pull off heat the moment the smell turns; pistachios go from toasted to scorched in 30 seconds and the chlorophyll-rich green will turn bitter brown if pushed.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: While the beets roast, build the pistachio crumble. Heat a dry skillet over medi" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
-        <div class="step-body">Cool the pistachios 5 minutes on a plate (they crisp as they cool), then chop coarsely on a board. Toss with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">3 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/urfa-biber.html">urfa biber</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> olive oil, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> flaky salt. The oil binds the urfa flakes to the nut surfaces; the urfa is dried at low temperature and salt-cured, so its raisin-and-cocoa profile reads through warm fat without needing a separate bloom.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: Cool the pistachios 5 minutes on a plate (they crisp as they cool), then chop co" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Cool the pistachios 5 minutes on a plate (they crisp as they cool), then chop coarsely on a board. Toss with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">3 g / 1 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="urfa biber" data-sub-use="Aleppo pepper" data-sub-note="Brighter, sharper, less smoke. The dish reads more red-Italian and less Turkish; legitimate but a different finish." tabindex="0" role="button" aria-label="Substitution available for urfa biber"><a class="x-link" data-category="ingredients" href="../ingredients/urfa-biber.html">urfa biber</a></span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> olive oil, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> flaky salt. The oil binds the urfa flakes to the nut surfaces; the urfa is dried at low temperature and salt-cured, so its raisin-and-cocoa profile reads through warm fat without needing a separate bloom.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: Cool the pistachios 5 minutes on a plate (they crisp as they cool), then chop co" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">5</span>
         <div class="step-body">Build the whipped feta in a food processor. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7" data-imp-unit="oz">200 g / 7 oz</span><!-- /auto-link-skip --> feta in chunks and pulse 8 to 10 times to break it down. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/greek-yogurt.html">Greek yogurt</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> lemon juice, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.12944983818770225" data-imp-unit="tbsp">2 g</span><!-- /auto-link-skip --> lemon zest. Process 60 to 90 seconds, stopping once to scrape, until the texture is smooth and spreading-soft like room-temperature ricotta. The yogurt is the lubricator; the olive oil makes it glossy; lemon brightens what is already very salty cheese. Taste, then adjust: feta varies, and if your batch is mild, add another <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.23255813953488375" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> / pinch of <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 5: Build the whipped feta in a food processor. Add the 200 g / 7 oz feta in chunks " aria-label="Start 4 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">6</span>
-        <div class="step-body">When the beets are cool enough to handle but still warm, slip the skins off under a paper towel; they slide off in sheets. Cut each beet into wedges or 1 cm slabs. While still warm, dress them in a wide bowl with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/red-wine-vinegar.html">red wine vinegar</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> olive oil, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> flaky salt. Warm beets absorb the vinaigrette into their cellular structure rather than letting it pool; this is why the timing matters. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 6: When the beets are cool enough to handle but still warm, slip the skins off unde" aria-label="Start 8 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
+        <div class="step-body">When the beets are cool enough to handle but still warm, slip the skins off under a paper towel; they slide off in sheets. Cut each beet into wedges or 1 cm slabs. While still warm, dress them in a wide bowl with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="red wine vinegar" data-sub-use="pomegranate molasses, halved (so 8 g / 1 tsp)" data-sub-note="Sweeter and more concentrated; pulls the dish toward the Levantine modification above without committing to it fully." tabindex="0" role="button" aria-label="Substitution available for red wine vinegar"><a class="x-link" data-category="ingredients" href="../ingredients/red-wine-vinegar.html">red wine vinegar</a></span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> olive oil, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> flaky salt. Warm beets absorb the vinaigrette into their cellular structure rather than letting it pool; this is why the timing matters. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 6: When the beets are cool enough to handle but still warm, slip the skins off unde" aria-label="Start 8 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">7</span>
-        <div class="step-body">Supreme the 400 g / 2 blood oranges. Cut off both poles to expose the flesh, stand the fruit on one cut end, and slice the peel-and-pith away in curved strips down to the flesh. Hold the trimmed fruit over a bowl and slice between each membrane to release the segments; the segments fall into the bowl, leaving a fan of empty membranes. Squeeze the membranes over the bowl to capture the residual juice — this juice goes back into the salad as a finishing acid, not down the sink.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 7: Supreme the 400 g / 2 blood oranges. Cut off both poles to expose the flesh, sta" aria-label="Start 6 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
+        <div class="step-body">Supreme the 400 g / 2 <span class="sub-hint" data-sub-for="blood oranges" data-sub-use="Cara Cara oranges or pink grapefruit" data-sub-note="Cara Cara holds the pink-orange visual; grapefruit is more bitter and shifts the dish savory. Keep the segment count, drop honey by 25 percent if using grapefruit." tabindex="0" role="button" aria-label="Substitution available for blood oranges">blood oranges</span>. Cut off both poles to expose the flesh, stand the fruit on one cut end, and slice the peel-and-pith away in curved strips down to the flesh. Hold the trimmed fruit over a bowl and slice between each membrane to release the segments; the segments fall into the bowl, leaving a fan of empty membranes. Squeeze the membranes over the bowl to capture the residual juice — this juice goes back into the salad as a finishing acid, not down the sink.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 7: Supreme the 400 g / 2 blood oranges. Cut off both poles to expose the flesh, sta" aria-label="Start 6 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">8</span>
         <div class="step-body">Spread the whipped feta in a wide swoosh across a large platter or shallow bowl, leaving the lip clean. Use the back of a spoon to push the feta into a gentle craters-and-ridges landscape; flat whipped feta wastes the surface area that catches juices.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: Spread the whipped feta in a wide swoosh across a large platter or shallow bowl," aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">9</span>
         <div class="step-body">Compose, do not toss. Lay the warm dressed beets across the feta. Tuck the blood-<a class="x-link" data-category="ingredients" href="../ingredients/orange.html">orange</a> segments around the beets so the colors alternate (the deep crimson against the magenta-streaked orange is the visual point of the dish). Spoon a tablespoon of the reserved blood-orange juice over the whole platter.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 9: Compose, do not toss. Lay the warm dressed beets across the feta. Tuck the blood" aria-label="Start 3 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">10</span>
         <div class="step-body">Scatter the urfa-pistachio crumble across the top in a wide arc, then drape the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="6" data-imp-unit="g">6 g</span><!-- /auto-link-skip --> torn <a class="x-link" data-category="ingredients" href="../ingredients/mint.html">mint</a> leaves over the platter. Drizzle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/honey.html">honey</a> from a spoon held high, in thin streams that catch on the beets and the cheese rather than pooling. Serve at room temperature within 20 minutes; the warm beet against the cool feta is the textural argument.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 10: Scatter the urfa-pistachio crumble across the top in a wide arc, then drape the " aria-label="Start 2 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
@@ -527,6 +539,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -536,6 +549,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -545,6 +559,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -554,6 +569,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -563,6 +579,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Salt-bed roasting</span>
           <span class="pair-desc">Roast a dense vegetable or whole fish on a 1 to 2 cm bed of coarse salt at 180 to 220 °C. The salt c</span>
@@ -572,6 +589,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Vinaigrette emulsion</span>
           <span class="pair-desc">Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsio</span>
@@ -581,6 +599,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Red beet</span>
           <span class="pair-desc">Beta vulgaris taproot, deep red-purple from betacyanin pigments. Sweetest of the common roots (8 to </span>
@@ -590,6 +609,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -680,6 +700,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

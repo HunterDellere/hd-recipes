@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -100,6 +101,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">137</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>1.5</strong>g protein</span><span class="rh-macro"><strong>15.3</strong>g carbs</span><span class="rh-macro"><strong>7.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -110,6 +114,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -271,37 +283,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Brown <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="115" data-metric-unit="g" data-imp-qty="1" data-imp-unit="stick">115 g / 1 stick</span><!-- /auto-link-skip --> unsalted butter in a light-colored saucepan over medium heat. It will foam, sizzle, then go quiet as the milk solids drop and turn amber. Pull when you smell toasted <a class="x-link" data-category="ingredients" href="../ingredients/hazelnut.html">hazelnut</a>, about 4 minutes. Pour into a large heatproof bowl and let cool 5 minutes. <a class="step-tech" href="../techniques/brown-butter.html">Brown butter (beurre noisette)</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Brown 115 g / 1 stick unsalted butter in a light-colored saucepan over medium he" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
         <div class="step-body">Whisk <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">150 g / ¾ cup</span><!-- /auto-link-skip --> granulated sugar and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="55" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">55 g / ¼ cup</span><!-- /auto-link-skip --> packed <a class="x-link" data-category="ingredients" href="../ingredients/light-brown-sugar.html">light brown sugar</a> into the warm butter for a full minute. The mixture looks gritty; that's correct.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Whisk 150 g / ¾ cup granulated sugar and 55 g / ¼ cup packed light brown sugar i" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
         <div class="step-body">Whisk in 1 large egg and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a>. Beat hard for 30–60 seconds until glossy and ribbon-thick. This is what creates the crackle on top.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Whisk in 1 large egg and 5 g / 1 tsp vanilla bean paste. Beat hard for 30–60 sec" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
-        <div class="step-body">Stir in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="165" data-metric-unit="g" data-imp-qty="1.3333333333333333" data-imp-unit="cups">165 g / 1⅓ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> baking soda, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> fine sea salt with a spatula. Mix until the streaks just disappear.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Stir in 165 g / 1⅓ cups all-purpose flour, 3 g / ½ tsp baking soda, and 3 g / ½ " aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Stir in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="165" data-metric-unit="g" data-imp-qty="1.3333333333333333" data-imp-unit="cups">165 g / 1⅓ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="all-purpose flour" data-sub-use="self-rising flour" data-sub-note="Omit the baking soda and salt." tabindex="0" role="button" aria-label="Substitution available for all-purpose flour"><a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a></span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> baking soda, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> fine sea salt with a spatula. Mix until the streaks just disappear.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Stir in 165 g / 1⅓ cups all-purpose flour, 3 g / ½ tsp baking soda, and 3 g / ½ " aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Heat oven to 350°F (175°C). Scoop dough into 1.5-tbsp balls, roll generously in the reserved sugar, and space 2 inches apart on a parchment-lined sheet.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Heat oven to 350°F (175°C). Scoop dough into 1.5-tbsp balls, roll generously in " aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">6</span>
         <div class="step-body">Bake 10–12 minutes. At the 8-minute mark, lift the pan an inch and drop it on the rack: this collapses the centers and gives you the rippled top.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 6: Bake 10–12 minutes. At the 8-minute mark, lift the pan an inch and drop it on th" aria-label="Start 12 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">7</span>
         <div class="step-body">Pull when edges are set and golden but centers look underbaked. Cool on the pan 10 minutes; the residual heat finishes the chew.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 7: Pull when edges are set and golden but centers look underbaked. Cool on the pan " aria-label="Start 10 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
@@ -347,6 +359,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Double dark chocolate crinkle cookies</span>
           <span class="pair-desc">Fudgy crinkle cookies built on melted dark chocolate, bloomed cocoa, and a coconut-oil tweak that ke</span>
@@ -356,6 +369,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chai pumpkin cupcakes</span>
           <span class="pair-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butt</span>
@@ -365,6 +379,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Midnight velvet mini cake with strawberry and balsamic caviar</span>
           <span class="pair-desc">A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finishe</span>
@@ -374,6 +389,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pancakes</span>
           <span class="pair-desc">Whole milk soured with vinegar replaces buttermilk — the acid drives CO2 from baking soda and pushes</span>
@@ -383,6 +399,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Light brown sugar</span>
           <span class="pair-desc">Granulated sucrose coated with ~3.5% refinery molasses. The molasses adds water, acid, and a toffee-</span>
@@ -392,6 +409,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -401,6 +419,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -410,6 +429,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -494,6 +514,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

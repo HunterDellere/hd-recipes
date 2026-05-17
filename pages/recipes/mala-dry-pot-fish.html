@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">168</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>11.1</strong>g protein</span><span class="rh-macro"><strong>15.9</strong>g carbs</span><span class="rh-macro"><strong>8</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/chinese.html" data-category="cuisines">Chinese</a><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -445,42 +457,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="16">
         <span class="step-num">1</span>
         <div class="step-body">Velvet the fish. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> fish chunks with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> Shaoxing wine, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> smashed ginger, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> salt, and 1 egg white in a bowl. Massage gently for 30 seconds. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">20 g / 2½ tbsp</span><!-- /auto-link-skip --> cornstarch and turn until each piece is evenly coated. Let stand 15 minutes; this velveting step is what keeps the fish from breaking apart in the high-heat toss at the end. <a class="step-tech" href="../techniques/velveting.html">Velveting</a><button type="button" class="step-time step-time-btn" data-step-timer="16" data-step-label="Step 1: Velvet the fish. Combine the 500 g fish chunks with 30 ml / 2 tbsp Shaoxing wine" aria-label="Start 16 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">16 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Prep the vegetables. Drain the soaked lotus root from acid water. Rehydrate the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> wood ear mushrooms (4-hour cold-water soak or 30-min hot-water soak ahead of time) and tear into bite-size pieces. Drain the rehydrated <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.0582197216882132" data-imp-unit="oz">30 g</span><!-- /auto-link-skip --> tofu skin sticks and cut into 4 cm angled pieces. Press the firm tofu under a board with a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="kg" data-imp-qty="2.2046244201837775" data-imp-unit="lb">1 kg</span><!-- /auto-link-skip --> weight for 30 minutes if you have time; this helps it hold cube shape during the toss.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Prep the vegetables. Drain the soaked lotus root from acid water. Rehydrate the " aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">3</span>
         <div class="step-body">Par-cook the lotus root and cauliflower. Bring a pot of salted water to a boil. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> lotus root slices and cook 90 seconds; lift out with a spider and shock in ice water 30 seconds. Repeat with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> cauliflower florets, cooking 2 minutes. Both should be just tender, still firm; the wok finish does the rest. <a class="step-tech" href="../techniques/ice-bath-shock.html">Ice bath shock</a><button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 3: Par-cook the lotus root and cauliflower. Bring a pot of salted water to a boil. " aria-label="Start 6 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
         <div class="step-body">Sear the fish. Heat a wok or wide skillet with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> neutral oil over medium-high. Once the oil shimmers, add the velveted fish in a single layer. Sear 90 seconds without moving (the cornstarch coat will set), then flip each piece and sear 60 seconds on the second side. Lift out with a spider onto a plate; the fish is 80% cooked, the wok finish will set it through. Pour off any remaining oil and wipe the wok clean.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Sear the fish. Heat a wok or wide skillet with 30 ml / 2 tbsp neutral oil over m" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">5</span>
-        <div class="step-body">Render the mala oil. Add the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="ml" data-imp-qty="3.3333333333333335" data-imp-unit="tbsp">50 ml</span><!-- /auto-link-skip --> / ~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">3 tbsp</span><!-- /auto-link-skip --> neutral oil to the dry wok over medium heat (140 to 160°C / 285 to 320°F). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="1.4109596289176176" data-imp-unit="oz">40 g</span><!-- /auto-link-skip --> doubanjiang and cook, breaking up the paste with a spatula, for 90 seconds; the oil will turn brilliant brick-red and the kitchen will smell distinctly of chili-bean paste. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> broken dried chilies and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tsp">5 g</span><!-- /auto-link-skip --> toasted <a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a>, and cook 30 seconds until aromatic. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> minced ginger and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> chopped <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>, and cook 30 seconds. Do not exceed medium heat; above 175°C the chili pigments scorch and the oil goes brown rather than red. <a class="step-tech" href="../techniques/red-oil-rendering.html">Red oil rendering</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Render the mala oil. Add the remaining 50 ml / ~3 tbsp neutral oil to the dry wo" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Render the mala oil. Add the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="ml" data-imp-qty="3.3333333333333335" data-imp-unit="tbsp">50 ml</span><!-- /auto-link-skip --> / ~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">3 tbsp</span><!-- /auto-link-skip --> neutral oil to the dry wok over medium heat (140 to 160°C / 285 to 320°F). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="1.4109596289176176" data-imp-unit="oz">40 g</span><!-- /auto-link-skip --> doubanjiang and cook, breaking up the paste with a spatula, for 90 seconds; the oil will turn brilliant brick-red and the kitchen will smell distinctly of chili-bean paste. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> broken dried chilies and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tsp">5 g</span><!-- /auto-link-skip --> toasted <span class="sub-hint" data-sub-for="Sichuan peppercorns" data-sub-use="no good substitute" data-sub-note="The numbing-tingling quality (ma) is the entire reason &quot;mala&quot; exists as a category. Black peppercorns do not approximate it. If unavailable, the dish becomes a non-mala dry-pot, which is a different dish." tabindex="0" role="button" aria-label="Substitution available for Sichuan peppercorns"><a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a></span>, and cook 30 seconds until aromatic. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> minced ginger and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> chopped <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>, and cook 30 seconds. Do not exceed medium heat; above 175°C the chili pigments scorch and the oil goes brown rather than red. <a class="step-tech" href="../techniques/red-oil-rendering.html">Red oil rendering</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Render the mala oil. Add the remaining 50 ml / ~3 tbsp neutral oil to the dry wo" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">6</span>
         <div class="step-body">Build the dry-pot. Add the firm tofu cubes (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip -->) and toss for 60 seconds in the red oil; the tofu absorbs the color and aroma. Add the par-cooked lotus root and cauliflower, then the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="4.232878886752853" data-imp-unit="oz">120 g</span><!-- /auto-link-skip --> rehydrated wood ear, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="4.232878886752853" data-imp-unit="oz">120 g</span><!-- /auto-link-skip --> rehydrated tofu skin, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="2.1164394433764264" data-imp-unit="oz">60 g</span><!-- /auto-link-skip --> scallion whites. Toss vigorously for 90 seconds over high heat; every piece should be glossed in the red oil.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 6: Build the dry-pot. Add the firm tofu cubes (250 g) and toss for 60 seconds in th" aria-label="Start 3 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
-        <div class="step-body">Season and add the bell pepper. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> light soy and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">6 g / ½ tbsp</span><!-- /auto-link-skip --> sugar, tossing to distribute. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> bell pepper pieces and toss 60 seconds; the pepper should soften slightly but stay crisp. Return the seared fish to the wok with any juices from the plate, and toss gently 30 to 45 seconds, lifting from underneath rather than stirring aggressively to avoid breaking the fish. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> Chinkiang vinegar around the rim of the wok and toss once.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Season and add the bell pepper. Add the 15 ml / 1 tbsp light soy and the 6 g / ½" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Season and add the bell pepper. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> light soy and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">6 g / ½ tbsp</span><!-- /auto-link-skip --> sugar, tossing to distribute. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> bell pepper pieces and toss 60 seconds; the pepper should soften slightly but stay crisp. Return the seared fish to the wok with any juices from the plate, and toss gently 30 to 45 seconds, lifting from underneath rather than stirring aggressively to avoid breaking the fish. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="Chinkiang vinegar" data-sub-use="rice vinegar + a few drops dark soy" data-sub-note="Chinkiang's aged-malty character is preferred; rice vinegar reads sharper. The dark soy adds back some of the depth." tabindex="0" role="button" aria-label="Substitution available for Chinkiang vinegar">Chinkiang vinegar</span> around the rim of the wok and toss once.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Season and add the bell pepper. Add the 15 ml / 1 tbsp light soy and the 6 g / ½" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
         <div class="step-body">Finish and plate. Pull off heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.0582197216882132" data-imp-unit="oz">30 g</span><!-- /auto-link-skip --> cilantro and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> reserved scallion greens, drizzle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">5 ml / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a> over, and toss once. Transfer to a wide platter or to a wok-shaped serving dish set on a portable burner if you have one (the dry-pot tradition keeps the dish hot at the table through the meal). Serve immediately with steamed <a class="x-link" data-category="ingredients" href="../ingredients/jasmine-rice.html">jasmine rice</a>. Eat with chopsticks, picking through the components; the rendered oil at the bottom of the bowl is the deeply-flavored finish that the rice should be tossed with.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: Finish and plate. Pull off heat. Add the 30 g cilantro and 20 g reserved scallio" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -579,6 +591,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese white congee</span>
           <span class="pair-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The ric</span>
@@ -588,6 +601,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken and ginger congee</span>
           <span class="pair-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clea</span>
@@ -597,6 +611,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese tea eggs</span>
           <span class="pair-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marbl</span>
@@ -606,6 +621,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cocoa-osmanthus dun nai</span>
           <span class="pair-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral</span>
@@ -615,6 +631,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Velveting</span>
           <span class="pair-desc">Toss thin-sliced lean protein with salt, baking soda, and a cornstarch slurry, rest 20-30 minutes, t</span>
@@ -624,6 +641,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Red oil rendering</span>
           <span class="pair-desc">Bloom doubanjiang (Pixian chili bean paste) and dried chilies in oil at 140 to 160°C / 285 to 320°F </span>
@@ -633,6 +651,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Ice bath shock</span>
           <span class="pair-desc">Plunge blanched vegetables into ice water to arrest carry-over cooking and lock chlorophyll bright b</span>
@@ -642,6 +661,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -732,6 +752,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

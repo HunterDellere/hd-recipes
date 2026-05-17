@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">49</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>2.2</strong>g protein</span><span class="rh-macro"><strong>5.2</strong>g carbs</span><span class="rh-macro"><strong>2.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Japanese</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -375,32 +387,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">1</span>
-        <div class="step-body">Mise en place is non-negotiable. Yaki udon cooks in 4 to 5 minutes once the wok hits temperature; if anything is not pre-cut and pre-portioned at the stove, the dish will overcook. Whisk the glaze: combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> light soy, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="tbsp">5 ml</span><!-- /auto-link-skip --> dark soy, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> mirin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml</span><!-- /auto-link-skip --> sake, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml</span><!-- /auto-link-skip --> oyster sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.0196078431372549" data-imp-unit="cup">4 g</span><!-- /auto-link-skip --> sugar, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> dashi/water in a small bowl. Slice the pork belly 3 mm thick. Cut the cabbage, carrot, mushrooms, and scallions as specified. Have the noodles thawing on the counter (frozen udon: leave at room temperature 10 minutes, or microwave briefly, just enough to separate; fresh vacuum-pack: rinse briefly under cold water to release the package shape; dried: cook to package directions, drain, and rinse with cold water).<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Mise en place is non-negotiable. Yaki udon cooks in 4 to 5 minutes once the wok " aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
+        <div class="step-body">Mise en place is non-negotiable. Yaki udon cooks in 4 to 5 minutes once the wok hits temperature; if anything is not pre-cut and pre-portioned at the stove, the dish will overcook. Whisk the glaze: combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> light soy, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="tbsp">5 ml</span><!-- /auto-link-skip --> dark soy, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> mirin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml</span><!-- /auto-link-skip --> sake, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="oyster sauce" data-sub-use="fish sauce + 1 tsp extra mirin" data-sub-note="For dishes where oyster sauce is unavailable; the umami load is similar but the texture is thinner. Reduce the glaze 30 seconds longer to compensate for the missing body." tabindex="0" role="button" aria-label="Substitution available for oyster sauce">oyster sauce</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.0196078431372549" data-imp-unit="cup">4 g</span><!-- /auto-link-skip --> sugar, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> dashi/water in a small bowl. Slice the <span class="sub-hint" data-sub-for="pork belly" data-sub-use="thinly-sliced pork shoulder or thinly-sliced beef chuck" data-sub-note="For pork shoulder: leaner, slightly less rich; cook 30 seconds longer to render fat. For beef: pulls the dish toward gyu-yaki-udon territory; use 1 tbsp extra mirin to round the flavor." tabindex="0" role="button" aria-label="Substitution available for pork belly">pork belly</span> 3 mm thick. Cut the cabbage, carrot, mushrooms, and scallions as specified. Have the noodles thawing on the counter (frozen udon: leave at room temperature 10 minutes, or microwave briefly, just enough to separate; fresh vacuum-pack: rinse briefly under cold water to release the package shape; dried: cook to package directions, drain, and rinse with cold water).<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Mise en place is non-negotiable. Yaki udon cooks in 4 to 5 minutes once the wok " aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
         <div class="step-body">Render the pork belly. Heat a 12-inch carbon-steel wok or wide stainless skillet over high heat until lightly smoking. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> neutral oil and immediately add the sliced pork belly in a single layer (do not crowd; if the wok is small, do this in two batches). Stir-fry 2 to 3 minutes, breaking apart any clumps, until the pork edges are deep mahogany and the rendered fat coats the wok bottom. Pull the pork to one side of the wok with the spatula; do not remove. The rendered pork fat is the cooking medium for the rest of the stir-fry. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Render the pork belly. Heat a 12-inch carbon-steel wok or wide stainless skillet" aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Build the vegetable layer. Add the carrot to the cleared side of the wok and stir-fry 30 seconds (carrot needs the longest heat exposure). Add the cabbage and mushrooms; stir-fry 60 seconds, tossing aggressively to expose surfaces to the wok bottom. The vegetables should hold a slight crunch and develop spotty char marks; do not cook to soft. Add the scallion whites (reserve the greens for the finish); stir-fry 30 seconds.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Build the vegetable layer. Add the carrot to the cleared side of the wok and sti" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Add the noodles. Push the protein and vegetables to the sides of the wok to clear a center hot zone. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="400" data-metric-unit="g" data-imp-qty="14.109596289176176" data-imp-unit="oz">400 g</span><!-- /auto-link-skip --> udon noodles in a single mound and pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> of the glaze directly over the noodles (this prevents sticking and starts caramelizing the soy on the noodle surface). Stir-fry 60 seconds in the hot zone, separating the noodles with chopsticks or a spatula ,  udon clumps stubbornly when cold and needs the heat-and-glaze help to release. Once the strands are loose, fold in the protein and vegetables from the wok edges.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Add the noodles. Push the protein and vegetables to the sides of the wok to clea" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Glaze and toss. Pour the remaining glaze over the entire stir-fry. Toss aggressively for 60 to 90 seconds, lifting and folding so every noodle is coated. The glaze should reduce visibly and turn glossy, clinging to the noodles rather than puddling at the bottom. The wok will pop and steam; this is correct. Listen for the sound shift from a wet sizzle to a drier sticky-pop ,  that signals the glaze has reduced enough.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Glaze and toss. Pour the remaining glaze over the entire stir-fry. Toss aggressi" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Finish. Pull the wok off the heat. Add the scallion greens and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">5 ml / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a>; toss 15 seconds (the sesame oil at this stage carries the aroma without burning). Taste a noodle; the salt should be assertive but not aggressive (the soy and oyster sauce do most of the work; salt is rarely needed). If flat, add a 5-finger pinch of <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and toss. Transfer to two wide bowls. Top each bowl with optional shichimi tōgarashi (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.25" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="tsp">1/4 tsp</span><!-- /auto-link-skip --> tableside) and a small handful of katsuobushi flakes (the warm noodles cause the flakes to wave and curl ,  the &quot;dancing bonito&quot; effect). Serve immediately; yaki udon does not hold well and the noodle texture goes from chewy to gummy if it sits more than 5 minutes.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Finish. Pull the wok off the heat. Add the scallion greens and 5 ml / 1 tsp toas" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -497,6 +509,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -506,6 +519,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -515,6 +529,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Furikake (homemade rice seasoning)</span>
           <span class="pair-desc">Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice</span>
@@ -524,6 +539,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Matcha usucha (thin matcha tea)</span>
           <span class="pair-desc">The everyday matcha preparation: 2 g of ceremonial matcha whisked with 60 ml of 80°C water into a fr</span>
@@ -533,6 +549,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -542,6 +559,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Sake (cooking)</span>
           <span class="pair-desc">Fermented rice wine: clean, dry, alcoholic. Tenderizes protein, deglazes pans, and carries volatile </span>
@@ -551,6 +569,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso soup (miso-shiru)</span>
           <span class="pair-desc">Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat</span>
@@ -560,6 +579,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Onigiri (rice triangles)</span>
           <span class="pair-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-sa</span>
@@ -650,6 +670,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

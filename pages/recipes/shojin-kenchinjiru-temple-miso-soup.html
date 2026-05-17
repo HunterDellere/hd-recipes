@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">157</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>7.7</strong>g protein</span><span class="rh-macro"><strong>13.4</strong>g carbs</span><span class="rh-macro"><strong>9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Japanese</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -323,42 +335,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="480">
         <span class="step-num">1</span>
         <div class="step-body">Make the dashi (start the night before, or at least 4 hours ahead). In a 2-quart saucepan or large measuring cup, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="0.4232878886752853" data-imp-unit="oz">12 g</span><!-- /auto-link-skip --> kombu and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="0.4232878886752853" data-imp-unit="oz">12 g</span><!-- /auto-link-skip --> dried shiitake. Pour over the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1100" data-metric-unit="ml" data-imp-qty="4.5" data-imp-unit="cups">1100 ml / 4½ cups</span><!-- /auto-link-skip --> cold water. Cover with a plate or plastic wrap. Refrigerate overnight (8 to 12 hours preferred), or leave at room temperature for 4 hours minimum. The long cold soak is structural for the dashi quality: glutamate releases slowly from the kombu, and the dried shiitake releases its guanylate slowly into the cold water, with the lentinionic acid that produces the characteristic shiitake aroma developing only at low temperatures. A hot extraction or a short soak produces a meaningfully thinner dashi.<span class="step-time">8 h</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">2</span>
         <div class="step-body">Finish the dashi just before cooking. After the overnight (or 4-hour) soak, the water will be a deep amber-brown and the kombu and shiitake will be fully hydrated. Transfer the saucepan to the stove. Bring slowly to just under boiling, about 8 to 10 minutes; the water should reach about 80 to 85°C, with small bubbles forming. Just before the water boils (the canonical Japanese cue is when the kombu starts to release small bubbles from its surface), lift out the kombu with chopsticks and remove the shiitake caps to a plate (reserve both; the kombu can be julienned and added back as a vegetable, the shiitake will be sliced and added back to the soup). Bring the remaining dashi to a gentle simmer for 1 to 2 minutes to develop the final flavor, then turn off the heat. The dashi should be a clear deep amber, intensely savory on its own. You should have about 900 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="ml" data-imp-qty="4.166666666666667" data-imp-unit="cup">1000 ml</span><!-- /auto-link-skip --> after the soak-and-simmer reduction. <a class="step-tech" href="../techniques/dashi.html">Dashi (kombu and katsuobushi extraction)</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 2: Finish the dashi just before cooking. After the overnight (or 4-hour) soak, the " aria-label="Start 12 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">3</span>
-        <div class="step-body">Prep the vegetables while the dashi soaks (or do this fresh just before cooking). Peel and roll-cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="g" data-imp-qty="6.34931833012928" data-imp-unit="oz">180 g</span><!-- /auto-link-skip --> daikon into irregular wedges (rangiri: rotate the daikon 90° between angled knife cuts to produce irregular faces); peel and roll-cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/carrot.html">carrot</a> into smaller matching wedges. Scrub and sasagaki-shave the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> burdock (hold like a pencil and shave with the knife at a low angle), drop immediately into cold water with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">1 tsp</span><!-- /auto-link-skip --> rice vinegar, soak 5 minutes, drain. Prep the satoimo or sweet potato (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="0.8090614886731391" data-imp-unit="cup">200 g</span><!-- /auto-link-skip -->; peel and cut into 2 cm chunks; if using satoimo, the cut tubers will produce a slippery surface mucilage that some cooks rinse off with a salt-and-water rub). Parboil the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> konnyaku for 60 seconds in plain boiling water, drain, tear by hand into 2 cm chunks. Slice the reserved shiitake caps from the dashi into 5 mm strips. Crumble the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> pressed firm tofu by hand into rough 2 to 3 cm irregular pieces (the rustic look is the canonical temple presentation).<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 3: Prep the vegetables while the dashi soaks (or do this fresh just before cooking)" aria-label="Start 15 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
+        <div class="step-body">Prep the vegetables while the dashi soaks (or do this fresh just before cooking). Peel and roll-cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="g" data-imp-qty="6.34931833012928" data-imp-unit="oz">180 g</span><!-- /auto-link-skip --> daikon into irregular wedges (rangiri: rotate the daikon 90° between angled knife cuts to produce irregular faces); peel and roll-cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/carrot.html">carrot</a> into smaller matching wedges. Scrub and sasagaki-shave the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip --> burdock (hold like a pencil and shave with the knife at a low angle), drop immediately into cold water with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">1 tsp</span><!-- /auto-link-skip --> rice vinegar, soak 5 minutes, drain. Prep the <span class="sub-hint" data-sub-for="satoimo (Japanese taro)" data-sub-use="sweet potato, yukon gold potato, or kabocha squash" data-sub-note="Sweet potato is the closest American supermarket substitute, similar starchy-sweet character and similar cook time. Yukon gold potato is a less canonical but workable substitute, slightly less sweet and more potato-flavored. Kabocha squash works with a different visual and a slightly more aromatic flavor." tabindex="0" role="button" aria-label="Substitution available for satoimo">satoimo</span> or sweet potato (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="0.8090614886731391" data-imp-unit="cup">200 g</span><!-- /auto-link-skip -->; peel and cut into 2 cm chunks; if using satoimo, the cut tubers will produce a slippery surface mucilage that some cooks rinse off with a salt-and-water rub). Parboil the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="5.291098608441066" data-imp-unit="oz">150 g</span><!-- /auto-link-skip --> konnyaku for 60 seconds in plain boiling water, drain, tear by hand into 2 cm chunks. Slice the reserved shiitake caps from the dashi into 5 mm strips. Crumble the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> pressed <span class="sub-hint" data-sub-for="firm tofu (momen-dōfu)" data-sub-use="silken tofu (with care), atsuage (fried thick tofu)" data-sub-note="Silken tofu can substitute but must be added very gently at the end and stirred minimally to avoid breaking down into crumbs. Atsuage (fried thick tofu) is a defensible variation that adds the fried-tofu character; cut into 1.5 cm cubes and add with the root vegetables." tabindex="0" role="button" aria-label="Substitution available for firm tofu">firm tofu</span> by hand into rough 2 to 3 cm irregular pieces (the rustic look is the canonical temple presentation).<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 3: Prep the vegetables while the dashi soaks (or do this fresh just before cooking)" aria-label="Start 15 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
         <div class="step-body">Toast the vegetables in sesame oil. Heat a 4-quart heavy pot (Dutch oven or donabe) over medium-high heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a>. When the oil is shimmering and just before it smokes, add the burdock and the konnyaku first (these are the toughest and benefit from the longest toasting). Stir-fry for 90 seconds. Add the daikon, the carrot, and the satoimo/sweet potato. Stir-fry for another 2 to 3 minutes, until the vegetables are coated in the oil and the burdock and konnyaku have lightly browned at the edges. This sesame-oil sear is the structural step that defines kenchinjiru, the toasted aroma from the oil and the vegetable-surface Maillard browning produce a flavor layer that pure-simmering cannot match, and serves as the animal-fat-replacement that gives the dish its depth.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Toast the vegetables in sesame oil. Heat a 4-quart heavy pot (Dutch oven or dona" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="18">
         <span class="step-num">5</span>
         <div class="step-body">Add the dashi and the shiitake, simmer to tender. Pour in the 900 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="ml" data-imp-qty="4.166666666666667" data-imp-unit="cup">1000 ml</span><!-- /auto-link-skip --> dashi (room temperature dashi is fine; it will heat up with the hot pot contents). Add the sliced reconstituted shiitake from the dashi. Bring to a gentle simmer over medium-high heat, then reduce to medium-low to maintain a steady gentle simmer. Skim any foam from the surface in the first 3 minutes. Simmer covered for 15 to 18 minutes, until the daikon and the satoimo/sweet potato are tender enough to be easily pierced with a chopstick tip. The burdock and carrot will be tender at this point; the konnyaku is essentially unchanged (which is correct). The broth will have reduced slightly and absorbed flavor from the vegetables and the sesame oil.<button type="button" class="step-time step-time-btn" data-step-timer="18" data-step-label="Step 5: Add the dashi and the shiitake, simmer to tender. Pour in the 900 to 1000 ml das" aria-label="Start 18 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">18 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">6</span>
         <div class="step-body">Add the crumbled tofu. After the root vegetables are tender, gently add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> crumbled firm tofu pieces to the simmering soup. Stir very gently with a wooden spoon or simply shake the pot, the tofu pieces should be distributed but not broken down into smaller crumbs. Simmer 3 minutes to warm the tofu through and let it absorb a small amount of the broth. Taste the broth: it should read deeply savory from the kombu-shiitake glutamate-guanylate synergy and the sesame-oil-toasted vegetables; the salt level should be moderate (the miso adds substantial additional salt at the next step). The broth should not yet be obviously &quot;miso-flavored,&quot; it is a vegetable-and-dashi soup at this point, with the miso to come.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 6: Add the crumbled tofu. After the root vegetables are tender, gently add the 200 " aria-label="Start 3 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
-        <div class="step-body">Add the miso off-heat. Pull the pot completely off the burner. Place a small fine-mesh sieve into the soup (a tea strainer works) and add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="2.469179350605831" data-imp-unit="oz">70 g</span><!-- /auto-link-skip --> red miso into the sieve. With the back of a small spoon or whisk, press the miso through the sieve while moving it in slow circles through the broth; the sieve breaks up clumps and dissolves the miso evenly. Alternatively, ladle <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 ml</span><!-- /auto-link-skip --> of hot broth into a small bowl, whisk the miso into the bowl until smooth, then pour back into the pot. The broth transitions from clear amber-with-vegetables to a deep cloudy red-brown with the miso fully integrated. Do not return the pot to heat. The off-heat rule applies absolutely to kenchinjiru as to every miso soup, boiling miso destroys its volatile esters and produces a flat, salty-only bowl.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Add the miso off-heat. Pull the pot completely off the burner. Place a small fin" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Add the miso off-heat. Pull the pot completely off the burner. Place a small fine-mesh sieve into the soup (a tea strainer works) and add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="2.469179350605831" data-imp-unit="oz">70 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="red miso" data-sub-use="awase miso (50/50 red-white) or pure white miso" data-sub-note="Awase miso is the universal Japanese miso and works in any miso soup; the kenchinjiru is recognizable but slightly less assertive. Pure white miso (shiro) produces a meaningfully different, more delicate dish that some temple traditions in western Japan prefer; reduce the amount to 50 g if using all white, since shiro is denser per gram." tabindex="0" role="button" aria-label="Substitution available for red miso">red miso</span> into the sieve. With the back of a small spoon or whisk, press the miso through the sieve while moving it in slow circles through the broth; the sieve breaks up clumps and dissolves the miso evenly. Alternatively, ladle <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 ml</span><!-- /auto-link-skip --> of hot broth into a small bowl, whisk the miso into the bowl until smooth, then pour back into the pot. The broth transitions from clear amber-with-vegetables to a deep cloudy red-brown with the miso fully integrated. Do not return the pot to heat. The off-heat rule applies absolutely to kenchinjiru as to every miso soup, boiling miso destroys its volatile esters and produces a flat, salty-only bowl.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Add the miso off-heat. Pull the pot completely off the burner. Place a small fin" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">8</span>
         <div class="step-body">Plate and serve. Ladle into 4 bowls (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="350" data-metric-unit="ml" data-imp-qty="1.4583333333333333" data-imp-unit="cup">350 ml</span><!-- /auto-link-skip --> each), distributing the vegetables, tofu, and konnyaku evenly. Top each bowl with a small mound (about ½ tsp / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.5" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="g">1.5 g</span><!-- /auto-link-skip -->) of freshly grated ginger, the ginger is the canonical temple-cuisine finish for kenchinjiru and replaces the scallion that household versions use. Pass shichimi togarashi or sansho pepper at the table for each diner to add to taste, optional. Serve immediately as the centerpiece of a shōjin-style meal, the canonical accompaniment is a bowl of plain Japanese rice (white or brown), a small bowl of pickled vegetables (takuan, ume-boshi, or a simple <a class="x-link" data-category="ingredients" href="../ingredients/cucumber.html">cucumber</a> pickle), and a small piece of grilled or simmered tofu or yuba as a separate protein. In a more elaborate temple meal, kenchinjiru would be one of several small dishes; in a household adaptation, the soup with rice and a pickle is a complete simple winter dinner. Reheating to a boil ruins the miso, so serve straight from the pot.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: Plate and serve. Ladle into 4 bowls (about 350 ml each), distributing the vegeta" aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
@@ -457,6 +469,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -466,6 +479,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -475,6 +489,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Furikake (homemade rice seasoning)</span>
           <span class="pair-desc">Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice</span>
@@ -484,6 +499,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Matcha usucha (thin matcha tea)</span>
           <span class="pair-desc">The everyday matcha preparation: 2 g of ceremonial matcha whisked with 60 ml of 80°C water into a fr</span>
@@ -493,6 +509,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dashi (kombu and katsuobushi extraction)</span>
           <span class="pair-desc">Cold-soak or warm kombu to 60 to 65°C / 140 to 150°F to extract glutamate without slime, pull the ke</span>
@@ -502,6 +519,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Dried shiitake mushroom (donko, hoshi shiitake)</span>
           <span class="pair-desc">Lentinula edodes, the shiitake mushroom, dried to roughly 10% of its fresh weight. The drying intens</span>
@@ -511,6 +529,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso soup (miso-shiru)</span>
           <span class="pair-desc">Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat</span>
@@ -520,6 +539,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Onigiri (rice triangles)</span>
           <span class="pair-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-sa</span>
@@ -610,6 +630,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

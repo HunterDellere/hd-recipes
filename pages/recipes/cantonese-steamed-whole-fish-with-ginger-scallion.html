@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">63</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>2.1</strong>g protein</span><span class="rh-macro"><strong>8.1</strong>g carbs</span><span class="rh-macro"><strong>2.3</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Cantonese</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -333,62 +345,62 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
-        <div class="step-body">Examine the 700 g / 1 whole fish. The fishmonger should have gutted, scaled, and removed the gills; verify all three. Rinse the cavity under cold running water; scrape any dark blood line along the inside of the spine cavity with the back of a small spoon (the blood line carries the strongest fishy flavor and is the single biggest source of &quot;fishy fish&quot; complaints). Pat the fish completely dry inside and out with paper towels. Wet fish steams unevenly and the seasoning sauce gets diluted on the plate; dry is non-negotiable.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Examine the 700 g / 1 whole fish. The fishmonger should have gutted, scaled, and" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Examine the 700 g / 1 <span class="sub-hint" data-sub-for="whole fish (whole-fish unavailability)" data-sub-use="thick-cut fillets (see modifications above)" data-sub-note="When the seafood counter has only fillets, the modification path applies. The whole-fish presentation is part of the dish identity; a fillet version is a related but distinct preparation." tabindex="0" role="button" aria-label="Substitution available for whole fish">whole fish</span>. The fishmonger should have gutted, scaled, and removed the gills; verify all three. Rinse the cavity under cold running water; scrape any dark blood line along the inside of the spine cavity with the back of a small spoon (the blood line carries the strongest fishy flavor and is the single biggest source of &quot;fishy fish&quot; complaints). Pat the fish completely dry inside and out with paper towels. Wet fish steams unevenly and the seasoning sauce gets diluted on the plate; dry is non-negotiable.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Examine the 700 g / 1 whole fish. The fishmonger should have gutted, scaled, and" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
         <div class="step-body">With a sharp paring knife, score three diagonal slashes 1 cm deep into the flesh on each side of the fish, from the gill plate to the tail. The slashes do three things: increase surface area for the brief <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> kosher-salt cure that follows, guarantee the heat penetrates evenly to the spine in the steaming window, and provide a visual cue for doneness (the flesh in the slashes opaques first). Without slashes, the thickest part of the fillet stays translucent at the spine while the thinner belly overcooks.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: With a sharp paring knife, score three diagonal slashes 1 cm deep into the flesh" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
-        <div class="step-body">Rub the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> over the skin on both sides and inside the cavity, working the salt into the slashes. Splash the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> Shaoxing wine over the same surfaces. The brief cure (about 10 minutes resting while the steamer comes up) firms the surface flesh through partial protein denaturation, draws out a small amount of surface water, and lets the wine's aromatic esters perfume the fish. Stuff the cavity loosely with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> / sliced ginger coins (from the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> total knob) and the 20 g / 2 bruised scallion stalks; the aromatics deodorize the cavity from the inside during the steam.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Rub the 4 g / 1 tsp kosher salt over the skin on both sides and inside the cavit" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Rub the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> over the skin on both sides and inside the cavity, working the salt into the slashes. Splash the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="Shaoxing wine" data-sub-use="dry sherry" data-sub-note="The closest Western substitute by flavor profile; functionally identical for a brief cure. Dry sake works in a more Japanese register but is less ideal here. Avoid Western cooking wine (too sweet, too salty)." tabindex="0" role="button" aria-label="Substitution available for Shaoxing wine">Shaoxing wine</span> over the same surfaces. The brief cure (about 10 minutes resting while the steamer comes up) firms the surface flesh through partial protein denaturation, draws out a small amount of surface water, and lets the wine's aromatic esters perfume the fish. Stuff the cavity loosely with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> / sliced ginger coins (from the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> total knob) and the 20 g / 2 bruised scallion stalks; the aromatics deodorize the cavity from the inside during the steam.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Rub the 4 g / 1 tsp kosher salt over the skin on both sides and inside the cavit" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">4</span>
         <div class="step-body">Set up the steamer. The traditional setup is a 30 cm bamboo steamer over a wok with 3 cm of water, but a deep skillet or wok with a fitted rack and lid works (the water needs to be 2 to 3 cm below the fish plate). Bring the steaming water to a hard rolling boil over high heat; this is critical, the steaming temperature is the hard rolling boil of water (100 °C with full vapor flux, not gentle simmer). A bamboo steamer is preferred because the wood absorbs surface condensation and prevents drips of cool water onto the fish; a metal lid wrapped in a clean kitchen towel achieves the same effect. <a class="step-tech" href="../techniques/vapor-steaming.html">Vapor steaming (high-vapor wet-heat cookery)</a><button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 4: Set up the steamer. The traditional setup is a 30 cm bamboo steamer over a wok w" aria-label="Start 6 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Choose a heatproof rimmed plate or shallow dish that fits inside the steamer with at least 2 cm of clearance on every side for vapor circulation. Lay 2 to 3 chopsticks or two short scallion-top batons across the plate as a low rack; the gap underneath the fish lets vapor circulate around the bottom of the fish and keeps the bottom skin from going gummy in pooled liquid. Lay the cured fish across the chopsticks. Reserve any liquid that has pooled around the fish during the cure; discard it (this is fishy and not part of the dish).<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Choose a heatproof rimmed plate or shallow dish that fits inside the steamer wit" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">6</span>
         <div class="step-body">When the steaming water is at a hard rolling boil, place the plate of fish in the steamer, cover, and steam at full heat. Time by thickness at the thickest part: 8 minutes for a fish 2.5 cm thick at the spine, 10 minutes for a fish 3 cm thick, 12 minutes for a 3.5 cm fish, 14 minutes for a 4 cm fish. The <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="700" data-metric-unit="g" data-imp-qty="1.5432370941286444" data-imp-unit="lb">700 g</span><!-- /auto-link-skip --> whole branzino in this recipe is typically 3 cm at the thickest and needs 10 minutes; check at 9 by lifting the lid (carefully, vapor escapes upward) and inserting a chopstick into the deepest slash near the spine. The flesh should be opaque and lift cleanly from the bone; if it still has a translucent core, replace the lid and continue 90 seconds at a time. The single most common failure mode is understeaming because the cook fears overcooking; the steam window is wider than it feels and a fish at 11 minutes is still good, while one at 7 minutes is raw at the spine. <a class="step-tech" href="../techniques/vapor-steaming.html">Vapor steaming (high-vapor wet-heat cookery)</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 6: When the steaming water is at a hard rolling boil, place the plate of fish in th" aria-label="Start 10 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
-        <div class="step-body">While the fish steams, build the soy seasoning sauce. In a small saucepan, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> light soy sauce, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> hot water, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> crushed rock sugar, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">0.5 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/white-pepper.html">white pepper</a>. Warm over low heat until the sugar dissolves (1 to 2 minutes); pull off heat. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a>; the sesame oil goes in off-heat to preserve its volatile aromatic compounds (heating sesame oil destroys the toast notes). The seasoning sauce should taste pronouncedly salty-sweet with a faint sesame-pepper depth; this seasons the fish from the outside.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: While the fish steams, build the soy seasoning sauce. In a small saucepan, combi" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">While the fish steams, build the soy seasoning sauce. In a small saucepan, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="light soy sauce" data-sub-use="no good substitute" data-sub-note="The seasoning sauce is structurally light-soy-based; using dark soy darkens the dish into the wrong color and flavor register (red-cooked rather than white-steamed). Use light soy or skip the dish; tamari can sub if gluten-free is required, with a small reduction in salt." tabindex="0" role="button" aria-label="Substitution available for light soy sauce">light soy sauce</span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> hot water, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> crushed <span class="sub-hint" data-sub-for="rock sugar" data-sub-use="granulated sugar" data-sub-note="Granulated sugar dissolves faster but lacks the gentle clean sweetness of rock sugar; the seasoning sauce reads slightly more aggressive. Acceptable substitution; rock sugar is canonical but not life-or-death here." tabindex="0" role="button" aria-label="Substitution available for rock sugar">rock sugar</span>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">0.5 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/white-pepper.html">white pepper</a>. Warm over low heat until the sugar dissolves (1 to 2 minutes); pull off heat. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a>; the sesame oil goes in off-heat to preserve its volatile aromatic compounds (heating sesame oil destroys the toast notes). The seasoning sauce should taste pronouncedly salty-sweet with a faint sesame-pepper depth; this seasons the fish from the outside.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: While the fish steams, build the soy seasoning sauce. In a small saucepan, combi" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">8</span>
         <div class="step-body">Prepare the raw aromatics for finishing. Cut the reserved <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.3527399072294044" data-imp-unit="oz">10 g</span><!-- /auto-link-skip --> / from the original <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> knob ginger into the finest julienne possible (3 cm long matchsticks; the finer the julienne, the better the hot-oil bloom). Cut the 30 g / 4 stalks scallion whites and pale greens into 5 cm batons and julienne lengthwise into very thin slivers. Drop the scallion julienne into a small bowl of ice water; within 5 to 10 minutes the slivers will curl into elegant white-and-pale-green ribbons (the cell walls on the cut surface contract differently from the intact surface in cold water, producing the curl). Pick the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">8 g / ¼ cup</span><!-- /auto-link-skip --> cilantro leaves; tear roughly. The aromatic stage is loaded and ready before the fish comes out.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 8: Prepare the raw aromatics for finishing. Cut the reserved 10 g / from the origin" aria-label="Start 5 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">9</span>
         <div class="step-body">When the fish is done, pull the steamer off the heat and uncover. Carefully transfer the plate to a heatproof surface; a spatula in each hand under opposite ends of the plate works. Tilt the plate slightly and pour off all of the liquid that has pooled on the plate; this liquid is full of fishy proteins released during steaming and is the single biggest contributor to a finished dish that tastes &quot;off.&quot; Discard the liquid. Discard the bruised aromatics from the cavity (their job is done); the cavity stays empty for the finished plating.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 9: When the fish is done, pull the steamer off the heat and uncover. Carefully tran" aria-label="Start 2 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">10</span>
         <div class="step-body">Pour the warm soy seasoning sauce around (not directly over) the fish; the sauce should pool around the fish and gently flow under the slashes, seasoning the flesh from the bottom and the cut surfaces. Lift the curled 30 g / 4 stalks scallion slivers out of the ice water with a strainer, shake dry briefly, and scatter them across the top of the fish along the spine line. Scatter the ginger julienne over the scallions in a tight strip down the center of the fish (the visual structure is a strip, not a scattering). Scatter the cilantro leaves loosely over the platter as a final green note.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 10: Pour the warm soy seasoning sauce around (not directly over) the fish; the sauce" aria-label="Start 2 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">11</span>
         <div class="step-body">Heat the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> neutral oil in a small saucepan over medium-high until just smoking, about 200 °C / 390 °F. The visual cue: a wooden chopstick dipped in produces vigorous bubbles around it within a second, the surface shimmers aggressively, and the first wisp of pale smoke rises. The oil must be at smoking temperature; cooler oil produces a soft sad pour that does not bloom the aromatics, and the dish reads as having &quot;raw scallions on top of cooked fish&quot; rather than as a unified plate. Pull off heat the moment smoke first appears. <a class="step-tech" href="../techniques/hot-oil-finish.html">Hot-oil finish (smoking-oil bloom over raw aromatics)</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 11: Heat the 30 g / 2 tbsp neutral oil in a small saucepan over medium-high until ju" aria-label="Start 3 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">12</span>
         <div class="step-body">In a single steady pour from a height of 5 to 10 cm, pour the smoking-hot oil directly over the strip of <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.3527399072294044" data-imp-unit="oz">10 g</span><!-- /auto-link-skip --> ginger and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.0582197216882132" data-imp-unit="oz">30 g</span><!-- /auto-link-skip --> scallion julienne on top of the fish. The aromatics will sizzle violently for 5 to 10 seconds, releasing a cloud of fragrant aromatic vapor (this is the volatile sulfur and allium compounds from the raw aromatics flashing into the air; the kitchen will smell intensely of ginger and scallion within 3 seconds of the pour). The aromatics on top of the fish will brown slightly at the edges where the oil pooled, stay green-and-pale at the centers, and visibly cook in place. The hot oil also crisps the cilantro leaves at the edges and pulls the flavors of all the aromatics down into the fish flesh through the slashes. Serve immediately, with steamed jasmine rice; each diner takes a piece of fish with chopsticks, spooning a little of the seasoned-oil-and-soy from the plate over the rice. <a class="step-tech" href="../techniques/hot-oil-finish.html">Hot-oil finish (smoking-oil bloom over raw aromatics)</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 12: In a single steady pour from a height of 5 to 10 cm, pour the smoking-hot oil di" aria-label="Start 1 min timer for step 12"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -490,6 +502,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Air-fried okra with four flavor finishes</span>
           <span class="pair-desc">Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 40</span>
@@ -499,6 +512,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -508,6 +522,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -517,6 +532,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ensalada de nopales</span>
           <span class="pair-desc">Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and M</span>
@@ -526,6 +542,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Vapor steaming (high-vapor wet-heat cookery)</span>
           <span class="pair-desc">Cook food suspended above a hard rolling boil of water in a covered vessel, allowing 100 °C steam (w</span>
@@ -535,6 +552,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Hot-oil finish (smoking-oil bloom over raw aromatics)</span>
           <span class="pair-desc">Pour smoking-hot neutral oil (200 °C+) over raw aromatics on top of a finished dish, flash-cooking t</span>
@@ -544,6 +562,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Whole white fish (branzino, sea bass, snapper, porgy)</span>
           <span class="pair-desc">Small-to-medium whole round fish (typically 500 g to 1 kg) with mild white flesh, flaky muscle struc</span>
@@ -553,6 +572,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Fattoush with sumac and toasted pita</span>
           <span class="pair-desc">Levantine bread salad: oven-crisped day-old pita over chopped raw vegetables, dressed with a sumac, </span>
@@ -643,6 +663,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

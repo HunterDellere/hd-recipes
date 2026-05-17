@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">211</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>4.8</strong>g protein</span><span class="rh-macro"><strong>6.9</strong>g carbs</span><span class="rh-macro"><strong>19.8</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/italian.html" data-category="cuisines">Italian</a><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">pescatarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -295,37 +307,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
-        <div class="step-body">Wash and stage the greens. Lift the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> beet greens into a sink or large bowl of cold water, agitate, lift out (sand sinks); change the water and repeat until the rinse runs clean. Spin or shake the leaves until barely damp, the residual moisture clinging to the leaves is the steam liquor for Phase 5 and should not be towel-dried away. Cut the stems from the leaves at the leaf base. Chop the stems into 1 cm pieces. Coarsely tear or chop the leaves into 4 to 5 cm strips. Hold the stems and leaves in two separate piles; the staging is the entire reason the dish reads as cooked rather than wilted-then-overcooked.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Wash and stage the greens. Lift the 250 g beet greens into a sink or large bowl " aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Wash and stage the greens. Lift the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="beet greens" data-sub-use="Swiss chard, mature spinach, or lacinato kale" data-sub-note="Swiss chard is the closest substitute by chemistry (same species); use the same weight and add 60 to 90 seconds to the stem cook for thicker chard ribs. Mature spinach wilts faster and reads sweeter, missing the mineral edge; reduce the salt slightly and shorten the leaf wilt to 30 seconds. Lacinato kale needs a 60-second blanch in salted water before it enters the pan, otherwise the leaves stay leathery; once blanched, sauté time matches the recipe." tabindex="0" role="button" aria-label="Substitution available for beet greens">beet greens</span> into a sink or large bowl of cold water, agitate, lift out (sand sinks); change the water and repeat until the rinse runs clean. Spin or shake the leaves until barely damp, the residual moisture clinging to the leaves is the steam liquor for Phase 5 and should not be towel-dried away. Cut the stems from the leaves at the leaf base. Chop the stems into 1 cm pieces. Coarsely tear or chop the leaves into 4 to 5 cm strips. Hold the stems and leaves in two separate piles; the staging is the entire reason the dish reads as cooked rather than wilted-then-overcooked.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Wash and stage the greens. Lift the 250 g beet greens into a sink or large bowl " aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
         <div class="step-body">Heat the oil and dissolve the anchovy. Place a wide skillet (28 to 30 cm / 11 to 12 inches, stainless or carbon steel; cast iron also fine if you have it warm from the steak rest) over medium-low heat. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> olive oil and the 9 g / 3 chopped anchovy fillets. Cook, mashing the anchovy against the bottom of the pan with a wooden spoon, for 60 to 90 seconds. The fillets should fully dissolve, no visible fillet shreds remaining, only a uniform pale-bronze oil. Dissolved anchovy reads as deep savory depth; visible chunks read as fishy hot spots, the texture call is the entire flavor call. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Heat the oil and dissolve the anchovy. Place a wide skillet (28 to 30 cm / 11 to" aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
-        <div class="step-body">Bloom the garlic and chili. Add the 16 g / 4 sliced garlic and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> red pepper flakes to the anchovy oil. Stir continuously for 45 to 60 seconds. The garlic should turn from raw white to pale gold (not deeper); pull back to lower heat the moment any slice starts to color past gold, browned garlic is bitter and the dish has nowhere to hide it. The red pepper flakes will release their fruit-and-capsaicin volatiles into the oil within the first 30 seconds; the cue is a sharp peppery aroma rising off the pan. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Bloom the garlic and chili. Add the 16 g / 4 sliced garlic and the 1 g / ½ tsp r" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Bloom the garlic and chili. Add the 16 g / 4 sliced garlic and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="red pepper flakes" data-sub-use="Calabrian chili paste, Aleppo pepper, or no heat" data-sub-note="Calabrian chili paste (5 g / 1 tsp) reads brighter and fruitier than dry flakes, melts into the oil rather than floating. Aleppo pepper (2 g / 1 tsp) is mild and slow-warming, fine for cooks who want background heat rather than bite. Skipping the heat entirely is acceptable; the dish reads more directly Italian-canonical without it but loses the second top note over the lemon." tabindex="0" role="button" aria-label="Substitution available for red pepper flakes">red pepper flakes</span> to the anchovy oil. Stir continuously for 45 to 60 seconds. The garlic should turn from raw white to pale gold (not deeper); pull back to lower heat the moment any slice starts to color past gold, browned garlic is bitter and the dish has nowhere to hide it. The red pepper flakes will release their fruit-and-capsaicin volatiles into the oil within the first 30 seconds; the cue is a sharp peppery aroma rising off the pan. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Bloom the garlic and chili. Add the 16 g / 4 sliced garlic and the 1 g / ½ tsp r" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">Cook the stems first. Raise the heat to medium-high. Add the chopped stems and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>. Toss to coat in the aromatic oil. Cook, stirring once or twice, for 2 minutes. The stems should turn from raw-bright magenta to a slightly softened cooked-magenta and lose the snap-resistance of raw stem (a piece bent against the spoon should yield rather than break crisp). The 2-minute window is the calibration: under-cooked stems read fibrous and chewy in a leaf that wilted to nothing; over-cooked stems collapse into stringy mush.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Cook the stems first. Raise the heat to medium-high. Add the chopped stems and t" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Pile in the leaves and lid for the steam-wilt. Add the leaves to the pan in handfuls (the volume looks impossibly large, this is normal, the leaves drop to a quarter of their raw volume in 60 seconds). Toss once with tongs to begin draping the leaves over the hot stems and oil. Cover with a tight-fitting lid for 60 to 90 seconds. The residual rinse water clinging to the leaves becomes the steam medium under the lid; the leaves wilt from the top down without scorching from the bottom. Lift the lid; the leaves should be uniformly collapsed and a deep cooked green, with a thin layer of liquor in the bottom of the pan.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Pile in the leaves and lid for the steam-wilt. Add the leaves to the pan in hand" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
-        <div class="step-body">Uncover and finish. Remove the lid and toss the greens vigorously with the tongs over medium-high heat for 30 to 45 seconds. The exposed liquor evaporates and the leaves take on a thin gloss of the anchovy oil. Cut the heat. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> lemon zest, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">8 g / 1½ tsp</span><!-- /auto-link-skip --> lemon juice, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> red wine vinegar off the heat (lemon zest hit by direct pan heat goes flat-bitter; off-heat preserves the limonene perfume). Toss once to distribute. Taste and adjust: if the greens read flat, more lemon juice; if they read mineral-aggressive, the optional pinch of flaky salt and a second drizzle of olive oil; if they read too rich, more vinegar.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Uncover and finish. Remove the lid and toss the greens vigorously with the tongs" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Uncover and finish. Remove the lid and toss the greens vigorously with the tongs over medium-high heat for 30 to 45 seconds. The exposed liquor evaporates and the leaves take on a thin gloss of the anchovy oil. Cut the heat. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> lemon zest, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">8 g / 1½ tsp</span><!-- /auto-link-skip --> lemon juice, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="red wine vinegar" data-sub-use="sherry vinegar, balsamic vinegar, or extra lemon juice" data-sub-note="Sherry vinegar is the better swap for cuisine fidelity (Italian and Spanish kitchens both use it). Aged balsamic adds sweetness and depth; use 2 g / ½ tsp rather than 3 g and skip the lemon zest to keep the dish from reading too dark-acidic. Extra lemon juice (a second teaspoon) is the simplest swap when no other vinegar is on hand; the dish loses its second acid axis but stays balanced." tabindex="0" role="button" aria-label="Substitution available for red wine vinegar">red wine vinegar</span> off the heat (lemon zest hit by direct pan heat goes flat-bitter; off-heat preserves the limonene perfume). Toss once to distribute. Taste and adjust: if the greens read flat, more lemon juice; if they read mineral-aggressive, the optional pinch of flaky salt and a second drizzle of olive oil; if they read too rich, more vinegar.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Uncover and finish. Remove the lid and toss the greens vigorously with the tongs" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Plate. Mound the greens on a warmed plate alongside the cast-iron chuck eye and its shallot pan sauce, or onto a serving dish for family-style. Drizzle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> finishing olive oil over the top. Scatter the optional pinch of flaky salt. Serve immediately; the greens hold their texture for 10 minutes off the heat but the vivid cooked-green color shifts toward olive past that window.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Plate. Mound the greens on a warmed plate alongside the cast-iron chuck eye and " aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -433,6 +445,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -442,6 +455,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Fresh egg pasta</span>
           <span class="pair-desc">Tipo 00 flour and whole eggs, kneaded to silk and rolled thin. The base for tonnarelli, tagliatelle,</span>
@@ -451,6 +465,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Greens and ricotta frittata</span>
           <span class="pair-desc">The Italian open-faced baked omelet: wilted greens (lacinato kale, chard, spinach, or a mix) folded </span>
@@ -460,6 +475,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Italian salsa verde</span>
           <span class="pair-desc">The Italian green sauce that finishes bollito misto, grilled and poached fish, roast meats, beans, e</span>
@@ -469,6 +485,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -478,6 +495,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Italian</span>
           <span class="pair-desc">Restraint plus fat: olive oil, cured pork, aged cheese, acid. The technique is in the ratios, not th</span>
@@ -487,6 +505,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Beet greens</span>
           <span class="pair-desc">Tender leafy tops of Beta vulgaris, the same species as Swiss chard. Mineral-iron-forward, mildly bi</span>
@@ -496,6 +515,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Roasted pear and gorgonzola tartine</span>
           <span class="pair-desc">Bosc pear roasted in butter and balsamic until caramelized, smeared over a toasted sourdough slice w</span>
@@ -586,6 +606,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

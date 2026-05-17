@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -111,6 +112,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -224,37 +233,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">1</span>
-        <div class="step-body">Slice 300 g / 6-8 medium peeled shallots as thinly as possible on a mandoline; the target is 1-2 mm rings. Hand-slicing works but the unevenness produces some shallots that burn before others crisp. Lay slices on a paper towel and pat off any surface moisture.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Slice 300 g / 6-8 medium peeled shallots as thinly as possible on a mandoline; t" aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
+        <div class="step-body">Slice 300 g / 6-8 medium peeled <span class="sub-hint" data-sub-for="shallots" data-sub-use="red onion, thinly sliced" data-sub-note="Red onion has higher water content and produces wetter, less shattering crisps. Workable but not the canonical product. Pat aggressively dry between cure and fry." tabindex="0" role="button" aria-label="Substitution available for shallots">shallots</span> as thinly as possible on a <span class="sub-hint" data-sub-for="mandoline (slicing)" data-sub-use="sharp knife, careful technique" data-sub-note="A 1-2 mm slice by hand is achievable with a slow steady knife. Aim for consistency over speed; uneven slices produce uneven crispness." tabindex="0" role="button" aria-label="Substitution available for mandoline">mandoline</span>; the target is 1-2 mm rings. Hand-slicing works but the unevenness produces some shallots that burn before others crisp. Lay slices on a paper towel and pat off any surface moisture.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Slice 300 g / 6-8 medium peeled shallots as thinly as possible on a mandoline; t" aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Toss the sliced shallots with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and rest 5 minutes. The brief cure pulls a small amount of surface water out, which lets the shallots fry rather than steam in the oil. Spread on a fresh paper towel and pat dry again. <a class="step-tech" href="../techniques/dry-brining.html">Dry brining</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Toss the sliced shallots with 3 g / ½ tsp kosher salt and rest 5 minutes. The br" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">In a heavy 2-quart saucepan or small Dutch oven, combine the dried <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="g" data-imp-qty="10.582197216882133" data-imp-unit="oz">300 g</span><!-- /auto-link-skip --> shallots with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="350" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="cups">350 ml / 1½ cups</span><!-- /auto-link-skip --> neutral oil. The shallots should be fully submerged. Set over medium heat from cold, never from hot oil. The slow temperature ramp is the technique: shallots start to release moisture at about 80°C, brown at the surface around 130°C, and crisp through at 150°C. A cold start lets the moisture drive off in stages rather than all at once.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: In a heavy 2-quart saucepan or small Dutch oven, combine the dried 300 g shallot" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">4</span>
         <div class="step-body">After 8-10 minutes the oil should be at a steady gentle bubble (about 130°C / 265°F), with the shallots turning translucent and pale gold at the edges. Stir every minute or so with a slotted spoon to keep the layers from clumping at the bottom and burning.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 4: After 8-10 minutes the oil should be at a steady gentle bubble (about 130°C / 26" aria-label="Start 10 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">After about 15-18 minutes the shallots will start turning a deeper amber. The crucial visual cue: when about 70% of them are deep gold and 30% still pale, pull the pan off heat. Carry-over from the residual oil heat will continue browning them another 30-60 seconds, and pulled-too-late shallots go from amber to bitter blackened in 90 seconds.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: After about 15-18 minutes the shallots will start turning a deeper amber. The cr" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">6</span>
         <div class="step-body">Strain through a fine-mesh sieve set over a heatproof bowl, capturing the oil. Spread the shallots in a single layer on a paper-towel-lined tray and toss immediately with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">2 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> while they are still hot and the salt can adhere. They will continue crisping as they cool over the next 5 minutes; the texture target is dry, light, and shatteringly crisp like an extruded snack.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 6: Strain through a fine-mesh sieve set over a heatproof bowl, capturing the oil. S" aria-label="Start 3 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Cool both the shallots and the strained oil completely. The oil will be a deep amber and carry the entire shallot character; this is the most underrated free ingredient in the kitchen. Once cool, transfer the shallots to an airtight glass jar and the oil to a separate clean glass jar.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Cool both the shallots and the strained oil completely. The oil will be a deep a" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
@@ -319,6 +328,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -328,6 +338,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -337,6 +348,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -346,6 +358,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -355,6 +368,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -364,6 +378,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry brining</span>
           <span class="pair-desc">Salt a protein surface and rest it long enough for osmosis to reverse — water and salt diffuse back </span>
@@ -373,6 +388,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Kosher salt</span>
           <span class="pair-desc">Coarse-grain sodium chloride, no iodine, no anti-caking agents. Cooking salt of choice because the c</span>
@@ -382,6 +398,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -472,6 +489,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

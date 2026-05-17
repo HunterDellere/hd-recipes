@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- {"category":"_personalization","title":"Saved recipes"} -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saved recipes — hd · recipes</title>
+<meta name="description" content="Your saved recipes — stored on this device only.">
+<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15110a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#b8423a" id="meta-theme-color">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('hdr-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20100%20100'%3E%3Crect%20width%3D'100'%20height%3D'100'%20rx%3D'18'%20fill%3D'%23faf6ee'%2F%3E%3Ctext%20x%3D'50'%20y%3D'50'%20text-anchor%3D'middle'%20dominant-baseline%3D'central'%20font-family%3D'EB%20Garamond%2C%20Georgia%2C%20serif'%20font-size%3D'58'%20font-weight%3D'700'%20letter-spacing%3D'-2'%20fill%3D'%23b8423a'%3Ehd%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../style.css?v=6">
+</head>
+<body data-page="saved">
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<nav class="topnav" aria-label="Site">
+  <a href="../index.html" class="topnav-brand" aria-label="hd recipes — home">
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+  </a>
+  <div class="topnav-right">
+    <a href="../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
+    <a href="./explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="./saved.html" class="topnav-saved" aria-current="page">Saved</a>
+    <a href="./settings.html" class="topnav-settings">Settings</a>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
+      <span class="tt-sun" aria-hidden="true">☀</span>
+      <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content" class="hdr-page">
+  <span class="hdr-page-eyebrow">Personal</span>
+  <h1>Saved recipes</h1>
+  <p class="hdr-page-tagline">Recipes you've starred, plus the dishes you've cooked most recently. Everything on this page lives on this device only.</p>
+
+  <section class="hdr-section" aria-labelledby="saved-heading">
+    <h2 id="saved-heading">Starred</h2>
+    <p><span class="hdr-count" data-saved-count>0</span> <span class="hdr-count-label">saved</span></p>
+    <div id="saved-grid" class="hdr-saved-grid" aria-live="polite"></div>
+    <p id="saved-empty" class="hdr-empty" hidden>Star recipes to save them here.</p>
+  </section>
+
+  <section class="hdr-section" aria-labelledby="cooked-heading">
+    <h2 id="cooked-heading">Cooked recently</h2>
+    <p>Sorted by most recent cook.</p>
+    <div id="cooked-grid" class="hdr-saved-grid" aria-live="polite"></div>
+    <p id="cooked-empty" class="hdr-empty" hidden>Use the "I cooked this" button on a recipe to start tracking.</p>
+  </section>
+</main>
+
+<script src="../scripts/personalization.js?v=1" defer></script>
+<script src="../scripts/saved-page.js?v=1" defer></script>
+<script src="../scripts/enhance.js?v=6" defer></script>
+</body>
+</html>

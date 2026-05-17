@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">215</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>2.4</strong>g protein</span><span class="rh-macro"><strong>37.9</strong>g carbs</span><span class="rh-macro"><strong>6.5</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/american.html" data-category="cuisines">American</a><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -278,47 +290,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Heat oven to 350°F (175°C). Grease a 9×5-inch loaf pan and line the long sides with a parchment sling.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Heat oven to 350°F (175°C). Grease a 9×5-inch loaf pan and line the long sides w" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
-        <div class="step-body">Brown <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="75" data-metric-unit="g" data-imp-qty="5.333333333333333" data-imp-unit="tbsp">75 g / 5⅓ tbsp</span><!-- /auto-link-skip --> unsalted butter in a light-colored saucepan over medium heat. It will foam, sizzle, then quiet as the milk solids drop and turn amber. Pull at the first hint of toasted-<a class="x-link" data-category="ingredients" href="../ingredients/hazelnut.html">hazelnut</a> aroma, ~4 minutes. Pour into a large mixing bowl, scraping all the brown solids in. That is the flavor. <a class="step-tech" href="../techniques/brown-butter.html">Brown butter (beurre noisette)</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Brown 75 g / 5⅓ tbsp unsalted butter in a light-colored saucepan over medium hea" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Brown <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="75" data-metric-unit="g" data-imp-qty="5.333333333333333" data-imp-unit="tbsp">75 g / 5⅓ tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="unsalted butter" data-sub-use="neutral oil" data-sub-note="Marginally moister loaf; loses the brown butter aroma entirely. Acceptable but flatter; the recipe is named for the brown butter for a reason." tabindex="0" role="button" aria-label="Substitution available for unsalted butter">unsalted butter</span> in a light-colored saucepan over medium heat. It will foam, sizzle, then quiet as the milk solids drop and turn amber. Pull at the first hint of toasted-<a class="x-link" data-category="ingredients" href="../ingredients/hazelnut.html">hazelnut</a> aroma, ~4 minutes. Pour into a large mixing bowl, scraping all the brown solids in. That is the flavor. <a class="step-tech" href="../techniques/brown-butter.html">Brown butter (beurre noisette)</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Brown 75 g / 5⅓ tbsp unsalted butter in a light-colored saucepan over medium hea" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">3</span>
-        <div class="step-body">Mash 350 g / 3 medium overripe bananas thoroughly with a fork directly in the brown butter. Lumps the size of peas are fine; large unmashed chunks will steam-pocket and leave gummy spots in the crumb.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: Mash 350 g / 3 medium overripe bananas thoroughly with a fork directly in the br" aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Mash 350 g / 3 medium <span class="sub-hint" data-sub-for="overripe bananas" data-sub-use="no real substitute" data-sub-note="Yellow bananas with no spots produce a thin, watery banana flavor; the volatile esters that give baked banana its character do not develop until the fruit goes brown-spotted. If your bananas are not ripe enough, bake them whole at 150 °C for 20 minutes (skin will blacken, flesh will sweeten by enzyme action) before mashing." tabindex="0" role="button" aria-label="Substitution available for overripe bananas">overripe bananas</span> thoroughly with a fork directly in the brown butter. Lumps the size of peas are fine; large unmashed chunks will steam-pocket and leave gummy spots in the crumb.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: Mash 350 g / 3 medium overripe bananas thoroughly with a fork directly in the br" aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Whisk in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">50 g / ¼ cup</span><!-- /auto-link-skip --> packed <a class="x-link" data-category="ingredients" href="../ingredients/light-brown-sugar.html">light brown sugar</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-soda.html">baking soda</a>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.33333333333333337" data-imp-unit="tsp">2 g</span><!-- /auto-link-skip --> / scant <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.5" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="tsp">½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> directly into the banana-butter mash. Whisk for a full 30 seconds: the soda needs to wet out evenly so it activates uniformly across the loaf, not in patches.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Whisk in 100 g / ½ cup granulated sugar, 50 g / ¼ cup packed light brown sugar, " aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Whisk in 1 beaten egg and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a> until fully homogeneous and glossy.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Whisk in 1 beaten egg and 5 g / 1 tsp vanilla bean paste until fully homogeneous" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
-        <div class="step-body">Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="190" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="cups">190 g / 1½ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a>. Switch to a spatula and fold just until no streaks of dry flour remain, about 15 strokes. Stop. Overmixing develops gluten and the loaf turns rubbery; the lumpy mash inside the batter at this stage is correct.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: Add 190 g / 1½ cups all-purpose flour. Switch to a spatula and fold just until n" aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="190" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="cups">190 g / 1½ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="all-purpose flour" data-sub-use="half whole wheat, half all-purpose" data-sub-note="Heartier crumb, slightly drier, more nutty depth. Add 15 ml / 1 tbsp extra mash or a splash of milk to compensate for whole wheat's higher absorption." tabindex="0" role="button" aria-label="Substitution available for all-purpose flour"><a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a></span>. Switch to a spatula and fold just until no streaks of dry flour remain, about 15 strokes. Stop. Overmixing develops gluten and the loaf turns rubbery; the lumpy mash inside the batter at this stage is correct.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: Add 190 g / 1½ cups all-purpose flour. Switch to a spatula and fold just until n" aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Scrape into the prepared pan and smooth the top. Optional: drag a knife down the center lengthwise to encourage a clean split crack down the middle as the loaf rises.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Scrape into the prepared pan and smooth the top. Optional: drag a knife down the" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="55">
         <span class="step-num">8</span>
         <div class="step-body">Bake on the center rack for 50–60 minutes, until a thin skewer inserted in the center comes out with moist crumbs but no wet batter. Internal temperature reads 95–98 °C / 200–208 °F at the geometric center.<button type="button" class="step-time step-time-btn" data-step-timer="55" data-step-label="Step 8: Bake on the center rack for 50–60 minutes, until a thin skewer inserted in the c" aria-label="Start 55 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">55 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="45">
         <span class="step-num">9</span>
         <div class="step-body">Cool in the pan 15 minutes (the loaf is structurally fragile until starch retrogradation sets the crumb), then lift out by the parchment sling and finish cooling on a rack for at least another 30 minutes before slicing. A still-warm slice will tear; a fully cooled one slices clean.<button type="button" class="step-time step-time-btn" data-step-timer="45" data-step-label="Step 9: Cool in the pan 15 minutes (the loaf is structurally fragile until starch retrog" aria-label="Start 45 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">45 min</span></button></div>
         
@@ -398,6 +410,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Apple cider vinegar</span>
           <span class="pair-desc">Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. </span>
@@ -407,6 +420,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Big Mac sauce (homemade copycat)</span>
           <span class="pair-desc">The McDonald's Big Mac special sauce, built on a real-egg mayonnaise base with sweet pickle relish, </span>
@@ -416,6 +430,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Buttermilk ranch dressing (proper from-scratch)</span>
           <span class="pair-desc">Real-buttermilk ranch with fresh herbs, garlic, and a backbone of mayonnaise and sour cream. The Hid</span>
@@ -425,6 +440,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -434,6 +450,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Brown butter (beurre noisette)</span>
           <span class="pair-desc">Cook butter past the foaming stage until milk solids turn amber — yields hazelnut aroma and Maillard</span>
@@ -443,6 +460,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">American</span>
           <span class="pair-desc">Layered fat with restrained sweetness in bakes and bright finishes (lemon, mustard, vinegar) in savo</span>
@@ -452,6 +470,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Bananas</span>
           <span class="pair-desc">Fruit of *Musa acuminata* / *M. balbisiana* hybrids, dominated by Cavendish in global trade. The sta</span>
@@ -461,6 +480,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chick-fil-A Polynesian sauce (homemade copycat)</span>
           <span class="pair-desc">The sweet-sour orange-tinted dipping sauce. Ketchup, vinegar, sugar, mustard, and a small pinch of w</span>
@@ -551,6 +571,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

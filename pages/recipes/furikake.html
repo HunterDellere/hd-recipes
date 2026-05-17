@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -100,6 +101,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">4</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.3</strong>g protein</span><span class="rh-macro"><strong>0.8</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Japanese</span><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">pescatarian</span></div>
         <div class="rh-actions">
@@ -110,6 +114,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -273,32 +285,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">1</span>
         <div class="step-body">Strain the spent kombu and katsuobushi from a freshly-finished batch of dashi (see techniques/dashi). Squeeze the kombu gently to drain (do not wring; some water carries the flavor) and weigh; you want about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> rehydrated kombu and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.0582197216882132" data-imp-unit="oz">30 g</span><!-- /auto-link-skip --> rehydrated katsuobushi. Lay the spent kombu flat on a cutting board and slice it into 2 mm × 2 mm dice with a sharp knife. The smaller the cuts, the more rice-grain-sized the finished furikake; oversized chunks will sit on top of rice rather than nestle in. <a class="step-tech" href="../techniques/dashi.html">Dashi (kombu and katsuobushi extraction)</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Strain the spent kombu and katsuobushi from a freshly-finished batch of dashi (s" aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">2</span>
-        <div class="step-body">Build the glaze. In a wide nonstick or stainless skillet, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> light soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> mirin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> sake, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a>. Bring to a simmer over medium-low heat, swirling to dissolve the sugar. Hold for 30 seconds to burn off the alcohol from the sake and mirin (the nikiri step). The liquid should look slightly syrupy and smell sweet-savory.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Build the glaze. In a wide nonstick or stainless skillet, combine the 30 ml / 2 " aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Build the glaze. In a wide nonstick or stainless skillet, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> light soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="mirin" data-sub-use="sake plus 2 g / ½ tsp extra granulated sugar" data-sub-note="See ingredients/mirin substitutions. Workable if hon-mirin is unavailable; the glaze is slightly less complex." tabindex="0" role="button" aria-label="Substitution available for mirin">mirin</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> sake, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a>. Bring to a simmer over medium-low heat, swirling to dissolve the sugar. Hold for 30 seconds to burn off the alcohol from the sake and mirin (the nikiri step). The liquid should look slightly syrupy and smell sweet-savory.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 2: Build the glaze. In a wide nonstick or stainless skillet, combine the 30 ml / 2 " aria-label="Start 2 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="13">
         <span class="step-num">3</span>
         <div class="step-body">Cook out the moisture. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> diced spent kombu and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.0582197216882132" data-imp-unit="oz">30 g</span><!-- /auto-link-skip --> squeezed katsuobushi to the glaze. Stir continuously over medium-low heat, breaking up clumps of katsuobushi flakes with a spatula or wooden spoon. The mixture will look wet and shiny for the first 4 to 5 minutes, then begin to dry as the glaze reduces and the seaweed-and-fish proteins reabsorb the liquid. Cook 12 to 15 minutes total, stirring frequently in the last 5 to prevent scorching. The finish point: the mixture is no longer glossy, the bottom of the pan is dry between stirs, and the kitchen smells of roasted seaweed and toasted soy. The texture should be just-damp and crumbly, not gluey.<button type="button" class="step-time step-time-btn" data-step-timer="13" data-step-label="Step 3: Cook out the moisture. Add the 25 g diced spent kombu and 30 g squeezed katsuobu" aria-label="Start 13 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">13 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="22">
         <span class="step-num">4</span>
         <div class="step-body">Dry to crispness. Spread the cooked mixture in an even layer on a parchment-lined sheet pan. Bake at 110°C / 230°F for 20 to 25 minutes, stirring once at the halfway mark. The kombu-katsuobushi mixture should turn from damp to dry-and-crumbly with no visible moisture. Pull when the texture is sandy rather than tacky; oven-drying is what produces the shelf-stable, sprinkle-able final texture. (Alternative: dry in a dehydrator at 60°C / 140°F for 2 hours, or skip the oven step entirely and accept a softer, refrigerator-only product that keeps 1 week instead of 1 month.)<button type="button" class="step-time step-time-btn" data-step-timer="22" data-step-label="Step 4: Dry to crispness. Spread the cooked mixture in an even layer on a parchment-line" aria-label="Start 22 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">22 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Mix in the finishers. Cool the dried kombu-katsuobushi mixture to room temperature, then transfer to a bowl. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="18" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">18 g / 2 tbsp</span><!-- /auto-link-skip --> toasted sesame seeds, the nori cut into 5 mm flakes, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. Toss thoroughly. Taste a pinch on a fingertip; the salt should be a faint background note (the soy and katsuobushi already carry most of the seasoning), the sesame should be detectable, the nori should add a sweet-marine top note. Adjust salt by <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="g">½ g</span><!-- /auto-link-skip --> pinches if needed.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Mix in the finishers. Cool the dried kombu-katsuobushi mixture to room temperatu" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Store and serve. Transfer to a small airtight jar (a 4 oz / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml</span><!-- /auto-link-skip --> mason jar is right). Sprinkle 1 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">2 tsp</span><!-- /auto-link-skip --> over plain steamed Japanese rice, into onigiri before forming, on top of chazuke, into bento boxes, over <a class="x-link" data-category="ingredients" href="../ingredients/avocado.html">avocado</a> toast, on grilled fish ,  anywhere a salty-savory-crunchy seasoning earns its place. The flavor sharpens after 24 hours as the seasonings cohere; the texture stays sandy-crumbly for the full storage window if the lid stays on.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Store and serve. Transfer to a small airtight jar (a 4 oz / 120 ml mason jar is " aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -372,6 +384,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -381,6 +394,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Matcha usucha (thin matcha tea)</span>
           <span class="pair-desc">The everyday matcha preparation: 2 g of ceremonial matcha whisked with 60 ml of 80°C water into a fr</span>
@@ -390,6 +404,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso-butter shrimp with delicata, shimeji, and charred broccoli</span>
           <span class="pair-desc">A one-pan washoku-leaning sheet dish. Delicata roasts to chestnut-sweet edges, broccoli and shimeji </span>
@@ -399,6 +414,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Onigiri (rice triangles)</span>
           <span class="pair-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-sa</span>
@@ -408,6 +424,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dashi (kombu and katsuobushi extraction)</span>
           <span class="pair-desc">Cold-soak or warm kombu to 60 to 65°C / 140 to 150°F to extract glutamate without slime, pull the ke</span>
@@ -417,6 +434,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Nori (laver sheets)</span>
           <span class="pair-desc">Pressed and dried Pyropia red algae ,  paper-thin black-green sheets with a sweet, slightly oceanic </span>
@@ -426,6 +444,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Pan-seared mackerel with daikon oroshi and ponzu</span>
           <span class="pair-desc">Saba fillets cross-hatch scored through the skin, dry-cured 30 minutes at 1.5% salt by weight to fir</span>
@@ -435,6 +454,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ponzu</span>
           <span class="pair-desc">Yuzu juice (or a yuzu-lemon-lime blend) combined with soy sauce, mirin, rice vinegar, kombu, and kat</span>
@@ -525,6 +545,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

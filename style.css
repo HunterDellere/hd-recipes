@@ -1680,7 +1680,13 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   .related-cards, .related-groups, .related-group,
   .rl-cards, .rl-groups, .rl-group, .adj-nav, .ing-controls,
   .back-to-top, .skip-link, .topic-hero-eyebrow, .rh-eyebrow,
-  .ing-shop-btn, .rh-cook-btn, .cook-bar, .cv-ing-toggle { display: none !important; }
+  .ing-shop-btn, .rh-cook-btn, .rh-print-btn, .rh-save-btn, .rh-cooked-btn,
+  .cook-bar, .cv-ing-toggle, .bottom-nav, .cmd-palette, .hover-card, .sub-pop,
+  .pair-grid, .hub-chips, .breadcrumb, .toc-breadcrumb, .hm-list, .step-time-btn,
+  .recipe-mynotes details, .step-image, .rh-tags, .filter-bar,
+  .rh-stat-kcal .rh-macros { display: none !important; }
+  .recipe-mynotes { display: none !important; }
+  #notes { page-break-before: always; }
   .ing-alt { color: #555 !important; }
   body { background: #fff; color: #000; font-size: 12pt; }
   .shell { display: block; padding: 0; max-width: none; }
@@ -3662,3 +3668,280 @@ body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color:
 
 /* The recipe-time accent in the hero stat strip already uses --accent.
    On non-recipe topic-hero pages there's no time stat, so no change. */
+
+/* ── Substitution hints in step prose ───────────────────────────────── */
+.sub-hint {
+  border-bottom: 1px dotted var(--accent, currentColor);
+  cursor: help;
+  background: transparent;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+.sub-hint:hover,
+.sub-hint:focus-visible {
+  background: color-mix(in oklab, var(--accent, currentColor) 12%, transparent);
+  outline: none;
+}
+.sub-pop {
+  position: absolute;
+  z-index: 200;
+  background: var(--surface, #fff);
+  color: var(--ink, #1a1a1a);
+  border: 1px solid var(--rule, #d8d2c4);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.45;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  max-width: 320px;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  pointer-events: auto;
+}
+.sub-pop.is-open { opacity: 1; transform: translateY(0); }
+.sub-pop-head { display: block; font-weight: 500; }
+.sub-pop-note {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink-soft, #555);
+  font-size: 13px;
+}
+
+/* ── Hero kcal stat ─────────────────────────────────────────────────── */
+.rh-stat-kcal { cursor: pointer; }
+.rh-stat-kcal:focus-visible { outline: 2px solid var(--accent, currentColor); outline-offset: 2px; }
+.rh-macros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--ink-soft, #555);
+}
+.rh-macro strong { color: var(--ink, #1a1a1a); font-weight: 600; }
+.rh-stat-open .rh-stat-label::after { content: " \25BE"; opacity: 0.5; }
+
+/* ── Explicit pairings badge ────────────────────────────────────────── */
+.pair-card-explicit { border-color: color-mix(in oklab, var(--accent, currentColor) 35%, var(--rule, #d8d2c4)); }
+.pair-explicit-badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: color-mix(in oklab, var(--accent, currentColor) 14%, transparent);
+  color: var(--accent, currentColor);
+  padding: 1px 6px;
+  border-radius: 999px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+/* ── command palette filter hint ───────────────────────────────────── */
+.cmd-palette-filterhint {
+  padding: 0.5rem 1.05rem;
+  border-top: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  background: var(--bg);
+}
+.cmd-palette-filterhint code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  padding: 0.08rem 0.32rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 3px;
+  background: var(--bg-elev);
+  color: var(--ink-soft);
+  margin: 0 0.12rem;
+}
+
+/* ── pantry-match page ─────────────────────────────────────────────── */
+.pantry-match {
+  margin: 2rem 0 3rem;
+  padding: 1.4rem 1.6rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 10px;
+}
+.pantry-match-input-row { display: flex; flex-direction: column; gap: 0.8rem; }
+.pantry-match-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.pantry-match-input {
+  width: 100%;
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.12));
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  resize: vertical;
+  min-height: 110px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+.pantry-match-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+.pantry-match-actions {
+  display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+}
+.pantry-match-btn {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+  cursor: pointer;
+  transition: background 140ms, color 140ms;
+}
+.pantry-match-btn:hover { filter: brightness(1.08); }
+.pantry-match-btn-ghost {
+  background: transparent;
+  color: var(--ink-soft);
+  border-color: var(--rule-soft, rgba(0,0,0,0.16));
+}
+.pantry-match-btn-ghost:hover { color: var(--ink); border-color: var(--ink-soft); }
+.pantry-match-hint {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin-left: auto;
+}
+.pantry-match-suggest {
+  margin-top: 0.9rem;
+  display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap;
+}
+.pantry-suggest-label {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  margin-right: 0.3rem;
+}
+.pantry-suggest-chip {
+  font: inherit;
+  font-size: 0.78rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.14));
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 140ms;
+}
+.pantry-suggest-chip:hover { color: var(--accent); border-color: var(--accent); }
+.pantry-match-results { margin-top: 1.4rem; }
+.pantry-match-empty {
+  text-align: center;
+  color: var(--ink-faint);
+  padding: 1.4rem 1rem;
+  font-style: italic;
+}
+.pm-card-list { display: flex; flex-direction: column; gap: 0.65rem; }
+.pm-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--bg);
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 140ms, transform 140ms;
+}
+.pm-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.pm-card-bar {
+  height: 4px; background: var(--rule-soft, rgba(0,0,0,0.05));
+}
+.pm-card-bar-fill {
+  display: block; height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent));
+  transition: width 200ms;
+}
+.pm-card-body { padding: 0.85rem 1rem 0.95rem; }
+.pm-card-head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem;
+}
+.pm-card-title {
+  margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--ink);
+  font-family: 'EB Garamond', Georgia, serif;
+}
+.pm-card-pct {
+  font-size: 0.82rem; font-weight: 700;
+  color: var(--accent);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+.pm-card-meta {
+  margin: 0.25rem 0 0.35rem; font-size: 0.85rem; color: var(--ink-soft);
+}
+.pm-card-have { font-size: 0.85rem; color: var(--accent); font-weight: 600; }
+.pm-card-missing { font-size: 0.85rem; color: var(--ink-faint); }
+.pm-card-missing strong { color: var(--ink-soft); font-weight: 600; }
+.pm-card-tags {
+  margin: 0.45rem 0 0; font-size: 0.78rem; color: var(--ink-faint); text-transform: lowercase;
+}
+
+/* ── print button (next to cook's-view in hero) ──────────── */
+.rh-print-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  margin-left: 0.5rem; padding: 0.45rem 0.85rem;
+  background: var(--surface); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 999px;
+  font: inherit; font-size: 0.85rem; cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease, transform 80ms ease;
+}
+.rh-print-btn:hover { background: var(--surface-warm); border-color: var(--rule-strong); }
+.rh-print-btn:active { transform: scale(0.97); }
+.rh-print-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.rh-print-label { font-weight: 500; }
+
+/* ── mobile bottom nav ─────────────────────────────────── */
+.bottom-nav {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  z-index: 50;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--surface);
+  border-top: 1px solid var(--rule);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+.bn-btn {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 0.15rem; height: 56px;
+  background: none; border: none; color: var(--ink);
+  font-size: 0.7rem; font-weight: 500;
+  cursor: pointer;
+  transition: background 100ms ease;
+}
+.bn-btn:hover { background: var(--surface-warm); }
+.bn-btn:active { background: var(--rule-soft); }
+.bn-icon { font-size: 1.2rem; line-height: 1; }
+.bn-label { font-size: 0.7rem; }
+@media (max-width: 767px) {
+  .bottom-nav { display: grid; }
+  body { padding-bottom: calc(56px + env(safe-area-inset-bottom, 0)); }
+}
+body[data-cooks-view="on"] .bottom-nav { display: none !important; }
+
+/* ── step state classes (timer-driven) ─────────────────── */
+.step-item.step--running {
+  background: var(--surface-warm);
+  border-left: 3px solid var(--accent);
+  padding-left: calc(1rem - 3px);
+}
+.step-item.step--done .step-num {
+  background: var(--ink-faint);
+  color: var(--surface);
+  text-decoration: line-through;
+}

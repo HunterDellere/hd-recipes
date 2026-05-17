@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -111,6 +112,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -249,32 +258,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="250">
         <span class="step-num">1</span>
         <div class="step-body">Wash the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="g" data-imp-qty="2.2046244201837775" data-imp-unit="lb">1000 g</span><!-- /auto-link-skip --> mustard greens carefully. Trim any browned tips. Pull the heads apart into individual leaves so the brine can reach every surface; large heads can be halved lengthwise instead. Lay the leaves on a clean tray in a single layer and air-dry 4 hours, or until they wilt visibly and lose 10 to 15% of their weight. The wilt step concentrates flavor and reduces water that would otherwise dilute the brine.<span class="step-time">4 h 10 min</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="30">
         <span class="step-num">2</span>
-        <div class="step-body">Bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="cups">1500 ml / 6 cups</span><!-- /auto-link-skip --> water to a boil with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">45 g / 3 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and any optional aromatics (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">5 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> sliced ginger, 4 dried chilies if using). Stir to fully dissolve the salt. Pull off heat and cool completely to room temperature; warm brine kills the lactic acid bacteria you want to encourage, and chlorinated tap water suppresses them, so cold-and-clean is the rule.<button type="button" class="step-time step-time-btn" data-step-timer="30" data-step-label="Step 2: Bring the 1500 ml / 6 cups water to a boil with the 45 g / 3 tbsp kosher salt an" aria-label="Start 30 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">30 min</span></button></div>
+        <div class="step-body">Bring the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1500" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="cups">1500 ml / 6 cups</span><!-- /auto-link-skip --> water to a boil with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">45 g / 3 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="kosher salt (Diamond Crystal)" data-sub-use="fine sea salt" data-sub-note="Use 30 g / 2 tbsp fine sea salt for the brine. The brine percentage is what matters; 45 g DC ≈ 30 g fine sea salt by mass." tabindex="0" role="button" aria-label="Substitution available for kosher salt"><a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a></span> and any optional aromatics (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">5 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> sliced ginger, 4 dried chilies if using). Stir to fully dissolve the salt. Pull off heat and cool completely to room temperature; warm brine kills the lactic acid bacteria you want to encourage, and chlorinated tap water suppresses them, so cold-and-clean is the rule.<button type="button" class="step-time step-time-btn" data-step-timer="30" data-step-label="Step 2: Bring the 1500 ml / 6 cups water to a boil with the 45 g / 3 tbsp kosher salt an" aria-label="Start 30 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">30 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">3</span>
         <div class="step-body">Pack the wilted greens into a clean 2-liter glass jar (a wide-mouth jar is easier to load and unload). Press them down hard with a wooden spoon as you pack to expel air; trapped air pockets harbor unwanted yeasts and molds. Pour the cooled brine over to fully submerge the greens.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 3: Pack the wilted greens into a clean 2-liter glass jar (a wide-mouth jar is easie" aria-label="Start 10 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">4</span>
         <div class="step-body">Weigh the greens down with a brine-bag (a zip-top bag filled with extra brine, sealed, and pressed onto the surface) or a clean glass weight. Every leaf must stay below the brine surface; any leaf that floats up will go moldy within 48 hours. Cover the jar with a clean cloth secured with a rubber band, or with a fermentation airlock lid. Do not seal airtight: the lacto-fermentation produces CO2 that needs to escape, and a sealed jar will eventually pop.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 4: Weigh the greens down with a brine-bag (a zip-top bag filled with extra brine, s" aria-label="Start 5 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="14040">
         <span class="step-num">5</span>
         <div class="step-body">Hold at 18 to 22°C / 65 to 72°F, out of direct sunlight, for 7 to 10 days. From day 3, you should see small bubbles rising through the brine and the brine itself going cloudy: this is healthy lactic fermentation. The greens will progress from bright green to olive to a uniform deep yellow-green. Taste a leaf at day 7: it should be tangy, faintly funky, crisp, and noticeably saltier than fresh. If still under-tangy, give 2 more days; if already aggressively sour, refrigerate immediately to slow the ferment.<span class="step-time">9 d 18 h</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">6</span>
         <div class="step-body">When the greens are at desired tang, refrigerate the whole jar. They keep 6 months in the fridge, slowly developing more sourness; pull them at month 3 to 4 for the cleanest tang-to-funk balance. To use, lift out a leaf or two with clean tongs (never fingers, never a wet utensil), squeeze out the brine, slice as the recipe directs, and return the rest to the jar. Save the brine: it is a finished ingredient itself, used in suan cai yu fish soup and Northeastern dumplings.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 6: When the greens are at desired tang, refrigerate the whole jar. They keep 6 mont" aria-label="Start 5 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -341,6 +350,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -350,6 +360,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese white congee</span>
           <span class="pair-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The ric</span>
@@ -359,6 +370,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken and ginger congee</span>
           <span class="pair-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clea</span>
@@ -368,6 +380,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese lion's head meatballs (shīzi tóu)</span>
           <span class="pair-desc">Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion</span>
@@ -377,6 +390,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -386,6 +400,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Sichuan peppercorns</span>
           <span class="pair-desc">The husks of Zanthoxylum berries. Not actually pepper — they create má, the buzzing tingling numbnes</span>
@@ -395,6 +410,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese tea eggs</span>
           <span class="pair-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marbl</span>
@@ -404,6 +420,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cocoa-osmanthus dun nai</span>
           <span class="pair-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral</span>
@@ -503,6 +520,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -110,6 +111,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -188,17 +197,17 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
-        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="g" data-imp-qty="2.2046244201837775" data-imp-unit="lb">1000 g</span><!-- /auto-link-skip --> red wine and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> filtered water in a wide-mouth glass or ceramic jar (2 L / 2 quart capacity is appropriate). The wide surface area is critical; acetobacter is an obligate aerobe and converts ethanol to acetic acid only at the air-liquid interface. A tall narrow jar with a small opening will run twice as slowly as a wide low jar with the same liquid volume. The wine-water mix targets 6 to 8 percent alcohol, which is the optimal feed concentration for acetobacter; higher than 12 percent kills the culture, lower than 5 percent stalls the conversion.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Combine the 1000 g red wine and 250 g filtered water in a wide-mouth glass or ce" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="g" data-imp-qty="2.2046244201837775" data-imp-unit="lb">1000 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="red wine (11 to 13.5% alcohol)" data-sub-use="red wine over 13.5% diluted with extra water" data-sub-note="High-alcohol reds (Zinfandel, Amarone, some Napa Cabernets) above 14% require additional water to bring the alcohol concentration into the acetobacter-tolerable window. Use 350 g water per 1000 g wine for a 14.5% feed wine; the resulting vinegar is slightly less concentrated." tabindex="0" role="button" aria-label="Substitution available for red wine">red wine</span> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> filtered water in a wide-mouth glass or ceramic jar (2 L / 2 quart capacity is appropriate). The wide surface area is critical; acetobacter is an obligate aerobe and converts ethanol to acetic acid only at the air-liquid interface. A tall narrow jar with a small opening will run twice as slowly as a wide low jar with the same liquid volume. The wine-water mix targets 6 to 8 percent alcohol, which is the optimal feed concentration for acetobacter; higher than 12 percent kills the culture, lower than 5 percent stalls the conversion.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Combine the 1000 g red wine and 250 g filtered water in a wide-mouth glass or ce" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
-        <div class="step-body">Float the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> live mother of vinegar gently on the surface of the wine-water mix. Do not submerge it; the mother is a biofilm of acetobacter encased in a cellulose matrix and depends on surface contact with the air for oxygen. If the mother sinks (which sometimes happens with older or thicker mothers), lift it gently with a clean spoon and re-float; if it persistently sinks, leave it submerged and a new surface mother will form on the liquid surface within 1 to 2 weeks.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Float the 100 g live mother of vinegar gently on the surface of the wine-water m" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Float the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="live mother of vinegar (active acetobacter culture)" data-sub-use="unfiltered raw apple cider vinegar (Bragg or similar) as starter, no mother needed" data-sub-note="Substitute 250 g unfiltered raw apple cider vinegar (which contains live acetobacter) for the 100 g mother. Add to the wine-water mix and proceed; a new mother will form on the surface over the first 2 to 4 weeks. The cure runs slightly slower (90 to 120 days) because the starter culture is less concentrated." tabindex="0" role="button" aria-label="Substitution available for live mother of vinegar">live mother of vinegar</span> gently on the surface of the wine-water mix. Do not submerge it; the mother is a biofilm of acetobacter encased in a cellulose matrix and depends on surface contact with the air for oxygen. If the mother sinks (which sometimes happens with older or thicker mothers), lift it gently with a clean spoon and re-float; if it persistently sinks, leave it submerged and a new surface mother will form on the liquid surface within 1 to 2 weeks.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Float the 100 g live mother of vinegar gently on the surface of the wine-water m" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
         <div class="step-body">Cover the jar opening with a tight-weave cloth (cheesecloth folded twice, a coffee filter, or a clean kitchen towel) secured with a rubber band. The cover excludes fruit flies (which are an active threat throughout the cure and will lay eggs on any uncovered vinegar) while allowing the oxygen exchange the acetobacter requires. A solid lid suffocates the culture and stalls the cure.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: Cover the jar opening with a tight-weave cloth (cheesecloth folded twice, a coff" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -213,12 +222,12 @@
         <div class="step-body">After 30 days, taste-test from beneath the mother layer with a clean glass straw or pipette (do not disturb the surface mother more than necessary; lift the mother edge gently and dip in to draw a sample). Early-stage vinegar reads sweet-and-alcoholic with a faint vinegary edge; mid-stage reads balanced wine-and-vinegar; the cure is complete when the liquid reads fully vinegary with no residual wine character and no remaining alcohol burn at the back of the throat. The full conversion takes 60 to 90 days at the recommended temperature; slower at the cool end of the window, faster at the warm end.</div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">6</span>
         <div class="step-body">When the vinegar reads fully converted, decant for bottling: lift the mother to a clean plate, ladle out the mature vinegar (leaving <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> of vinegar in the jar plus the mother to start the next batch), filter through fine cheesecloth or a coffee filter if a clear visual is wanted (some sediment is normal and not harmful). Bottle in clean glass jars or vinegar bottles with tight lids; store at room temperature.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 6: When the vinegar reads fully converted, decant for bottling: lift the mother to " aria-label="Start 15 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">7</span>
         <div class="step-body">Optional pasteurization: heat the bottled vinegar to 70 °C / 160 °F for 15 minutes, then cool. Pasteurization halts residual acetobacter activity and stabilizes the flavor for long-term storage; live (unpasteurized) vinegar continues to slowly evolve in the bottle and may eventually develop new mothers at the surface (harmless but visually unsettling). Most home producers skip pasteurization; serious enthusiasts pasteurize bottles intended for gifting or aging.<button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 7: Optional pasteurization: heat the bottled vinegar to 70 °C / 160 °F for 15 minut" aria-label="Start 20 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
@@ -283,6 +292,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken-zucchini meatballs with yogurt-dill</span>
           <span class="pair-desc">Ground chicken thigh mixed with salt-drained grated zucchini, grated onion, garlic, lemon zest, fres</span>
@@ -292,6 +302,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Harvest vegetable soup with white beans</span>
           <span class="pair-desc">A one-pot vegetable soup built on a foundation of slowly sweated leek and garlic, deepened with toma</span>
@@ -301,6 +312,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Mediterranean grain bowl with tahini-yogurt</span>
           <span class="pair-desc">Farro cooked al dente in salted water, mixed roasted vegetables (zucchini, red pepper, red onion) ha</span>
@@ -310,6 +322,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Roasted chickpea and cauliflower pita</span>
           <span class="pair-desc">Spiced roasted chickpeas (cumin, coriander, smoked paprika) and 230 °C hard-roasted cauliflower stuf</span>
@@ -319,6 +332,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Salt-cured anchovies</span>
           <span class="pair-desc">Whole fresh anchovies layered with sea salt and weighted, cured for 4 to 12 months until cathepsin p</span>
@@ -328,6 +342,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Salt-packed capers</span>
           <span class="pair-desc">Fresh caper buds wilted, salt-packed, and cured for 30 to 60 days. The dry-salt method partially deg</span>
@@ -337,6 +352,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -346,6 +362,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -445,6 +462,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

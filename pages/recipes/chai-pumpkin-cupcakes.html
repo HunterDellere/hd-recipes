@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">163</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>1.7</strong>g protein</span><span class="rh-macro"><strong>21.6</strong>g carbs</span><span class="rh-macro"><strong>7.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -411,17 +423,17 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
         <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml / ½ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> ground cinnamon, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">3 g / 1½ tsp</span><!-- /auto-link-skip --> ground ginger, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> ground cardamom, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> ground allspice, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">0.5 g / ¼ tsp</span><!-- /auto-link-skip --> ground cloves in a small saucepan with the smashed fresh ginger knob. Bring to a low simmer and hold there 3–5 minutes; the spices need active heat to bloom.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Combine 120 ml / ½ cup whole milk, 4 g / 2 tsp ground cinnamon, 3 g / 1½ tsp gro" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">2</span>
         <div class="step-body">Pull from heat. Drop in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">6 g / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/assam-tea.html">Assam tea</a>, cover, and steep exactly 5 minutes. Strain through a fine sieve, pressing hard on the solids. You want about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">90 ml / ⅓ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip -->. Cool fully.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: Pull from heat. Drop in 6 g / 2 tbsp Assam tea, cover, and steep exactly 5 minut" aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">3</span>
         <div class="step-body">In a small skillet over medium, cook <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">240 g / 1 cup</span><!-- /auto-link-skip --> pumpkin puree, stirring often, for 5–7 minutes. The color shifts from bright <a class="x-link" data-category="ingredients" href="../ingredients/orange.html">orange</a> to a deeper rust as the water cooks off. Cool slightly.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 3: In a small skillet over medium, cook 240 g / 1 cup pumpkin puree, stirring often" aria-label="Start 7 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
@@ -431,32 +443,32 @@
         <div class="step-body">Heat oven to 350°F (175°C). Line a 12-cup muffin tin.</div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
-        <div class="step-body">Whisk <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="190" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="cups">190 g / 1½ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> baking powder, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> baking soda, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> fine sea salt in a medium bowl.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Whisk 190 g / 1½ cups all-purpose flour, 4 g / 1 tsp baking powder, 3 g / ½ tsp " aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Whisk <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="190" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="cups">190 g / 1½ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="all-purpose flour" data-sub-use="1:1 gluten-free blend" data-sub-note="King Arthur Measure for Measure works. The roasted pumpkin gives enough structure for GF." tabindex="0" role="button" aria-label="Substitution available for all-purpose flour"><a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a></span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> baking powder, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> baking soda, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> fine sea salt in a medium bowl.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Whisk 190 g / 1½ cups all-purpose flour, 4 g / 1 tsp baking powder, 3 g / ½ tsp " aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">6</span>
         <div class="step-body">In a large bowl, whisk the cooled roasted pumpkin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="110" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">110 g / ½ cup</span><!-- /auto-link-skip --> oil, 2 large eggs, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="110" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">110 g / ½ cup</span><!-- /auto-link-skip --> packed <a class="x-link" data-category="ingredients" href="../ingredients/dark-brown-sugar.html">dark brown sugar</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 g / ⅓ cup</span><!-- /auto-link-skip --> maple syrup, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-extract.html">vanilla extract</a>, and the cooled chai milk until smooth.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 6: In a large bowl, whisk the cooled roasted pumpkin, 110 g / ½ cup oil, 2 large eg" aria-label="Start 2 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Pour wet into dry. Switch to a spatula and fold gently until no flour streaks remain. The batter can be a touch lumpy.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Pour wet into dry. Switch to a spatula and fold gently until no flour streaks re" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="22">
         <span class="step-num">8</span>
         <div class="step-body">Divide between liners. Bake 18–22 minutes, until a toothpick comes out clean and the tops spring back. Cool completely on a rack.<button type="button" class="step-time step-time-btn" data-step-timer="22" data-step-label="Step 8: Divide between liners. Bake 18–22 minutes, until a toothpick comes out clean and" aria-label="Start 22 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">22 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="50">
         <span class="step-num">9</span>
         <div class="step-body">For the frosting, brown <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="115" data-metric-unit="g" data-imp-qty="1" data-imp-unit="stick">115 g / 1 stick</span><!-- /auto-link-skip --> unsalted butter in a saucepan until amber and nutty. Pour into a bowl and refrigerate ~45 minutes until it firms back to the texture of soft butter. <a class="step-tech" href="../techniques/brown-butter.html">Brown butter (beurre noisette)</a><button type="button" class="step-time step-time-btn" data-step-timer="50" data-step-label="Step 9: For the frosting, brown 115 g / 1 stick unsalted butter in a saucepan until ambe" aria-label="Start 50 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">50 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">10</span>
         <div class="step-body">Whip the solidified brown butter with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="225" data-metric-unit="g" data-imp-qty="8" data-imp-unit="oz">225 g / 8 oz</span><!-- /auto-link-skip --> cold cream cheese until creamy. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="180" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="cups">180 g / 1½ cups</span><!-- /auto-link-skip --> sifted powdered sugar and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a>. Whip until fluffy. Frost the cooled cupcakes.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 10: Whip the solidified brown butter with the 225 g / 8 oz cold cream cheese until c" aria-label="Start 4 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
@@ -501,6 +513,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter sugar cookies</span>
           <span class="pair-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar sh</span>
@@ -510,6 +523,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Double dark chocolate crinkle cookies</span>
           <span class="pair-desc">Fudgy crinkle cookies built on melted dark chocolate, bloomed cocoa, and a coconut-oil tweak that ke</span>
@@ -519,6 +533,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Midnight velvet mini cake with strawberry and balsamic caviar</span>
           <span class="pair-desc">A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finishe</span>
@@ -528,6 +543,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pancakes</span>
           <span class="pair-desc">Whole milk soured with vinegar replaces buttermilk — the acid drives CO2 from baking soda and pushes</span>
@@ -537,6 +553,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Dark brown sugar</span>
           <span class="pair-desc">Granulated sucrose coated with ~6.5% refinery molasses, roughly twice the light-brown ratio. Everyth</span>
@@ -546,6 +563,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -555,6 +573,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -564,6 +583,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -648,6 +668,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

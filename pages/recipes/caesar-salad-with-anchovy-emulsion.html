@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">422</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>5.3</strong>g protein</span><span class="rh-macro"><strong>6.7</strong>g carbs</span><span class="rh-macro"><strong>42.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Italian-American</span><span class="rh-tag rh-tag-course">appetizer</span><span class="rh-tag rh-tag-diet">pescatarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -342,47 +354,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">1</span>
         <div class="step-body">Heat the oven to 180 °C / 350 °F. While it preheats, warm the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">60 g / ¼ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/extra-virgin-olive-oil.html">extra-virgin olive oil</a> with the 12 g / 3 smashed garlic cloves in a small saucepan over the lowest possible heat for 8 minutes. The oil should never come to a sizzle; the goal is to extract garlic aromatics into the oil at sub-Maillard temperature so the cloves do not turn bitter. Pull off heat, fish out the garlic and discard. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 1: Heat the oven to 180 °C / 350 °F. While it preheats, warm the 60 g / ¼ cup extra" aria-label="Start 8 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="14">
         <span class="step-num">2</span>
         <div class="step-body">Toss the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7" data-imp-unit="oz">200 g / 7 oz</span><!-- /auto-link-skip --> torn sourdough chunks with the strained garlic oil and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="tsp">2 g / ⅓ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> in a wide bowl until the bread has absorbed every drop. Spread on a sheet tray in a single layer with no chunks touching. Bake 12 to 14 minutes, tossing once at 7 minutes, until the chunks are uniformly golden and dry through to the centre. Pull and let cool on the tray; they crisp further as they lose residual steam.<button type="button" class="step-time step-time-btn" data-step-timer="14" data-step-label="Step 2: Toss the 200 g / 7 oz torn sourdough chunks with the strained garlic oil and the" aria-label="Start 14 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">14 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">3</span>
         <div class="step-body">Bring a small saucepan of water to a bare simmer (around 88 °C / 190 °F, surface trembling, no rolling bubbles). Lower the 2 fridge-cold eggs in with a slotted spoon and hold for 90 seconds. The 90-second coddle pasteurizes the surface of the egg and partially denatures the outer yolk proteins, which thickens the dressing without setting the yolk fully; the yolk should still pour. Lift the eggs straight into a bowl of cold tap water for 60 seconds to stop carryover cooking. <a class="step-tech" href="../techniques/jammy-egg.html">Jammy egg</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: Bring a small saucepan of water to a bare simmer (around 88 °C / 190 °F, surface" aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Crack each egg over a fine-mesh sieve set over a small mixing bowl; the white drains away and the warm yolk drops in. Discard the whites (or save for another use). You should have about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="35" data-metric-unit="g" data-imp-qty="1.2345896753029155" data-imp-unit="oz">35 g</span><!-- /auto-link-skip --> of warm coddled yolk in the bowl, the colour deepening from raw yellow to opaque cream.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Crack each egg over a fine-mesh sieve set over a small mixing bowl; the white dr" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Build the water phase first. Whisk the 18 g / 6 minced <a class="x-link" data-category="ingredients" href="../ingredients/anchovy-fillets.html">anchovy fillets</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="6" data-imp-unit="g">6 g</span><!-- /auto-link-skip --> grated garlic, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">8 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dijon-mustard.html">dijon mustard</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tsp">20 g / 4 tsp</span><!-- /auto-link-skip --> lemon juice, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/worcestershire-sauce.html">worcestershire sauce</a> into the warm yolks until the anchovy fully dissolves into a uniform pale-bronze paste with no visible fillet shreds. Dissolved anchovy is non-negotiable: visible chunks read as fishy hot spots; fully dissolved, it reads only as deep glutamate savor.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Build the water phase first. Whisk the 18 g / 6 minced anchovy fillets, 6 g grat" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">6</span>
         <div class="step-body">Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="g" data-imp-qty="6" data-imp-unit="tbsp">90 g / 6 tbsp</span><!-- /auto-link-skip --> extra-virgin olive oil in a thin thread while whisking vigorously. The yolk lecithin and the dijon mucilage coat each oil droplet as it enters; the dressing thickens visibly from a thin slick to a glossy, body-having sauce that coats the back of a spoon. The <a class="x-link" data-category="techniques" href="../techniques/egg-yolk-emulsion.html">egg-yolk emulsion</a> is more powerful and holds longer than a pure mustard vinaigrette; this is the structural reason Caesar dressing has its characteristic clinging body. If the emulsion stays thin and oily-streaked, you streamed the oil too fast; see the rebuild note in the technique reference. <a class="step-tech" href="../techniques/egg-yolk-emulsion.html">Egg-yolk emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 6: Stream in the 90 g / 6 tbsp extra-virgin olive oil in a thin thread while whiski" aria-label="Start 3 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Whisk in the first <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">30 g / ⅓ cup</span><!-- /auto-link-skip --> grated parmigiano and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> cracked black pepper. The cheese tightens the dressing further; if it now reads too thick (it should pour from a spoon, not stand on it), thin with a teaspoon of water at a time. Taste: it should land salty from anchovy and parmigiano, sharply acidic from lemon, with a low rumbling sweetness from worcestershire and the long heat-cured note of dissolved anchovy. If a single axis falls short, add to that axis specifically: more lemon for brightness, more anchovy for depth, more parmigiano for body.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Whisk in the first 30 g / ⅓ cup grated parmigiano and the 1 g / ½ tsp cracked bl" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
         <div class="step-body">In a wide bowl that holds the romaine without crowding, dress the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1" data-imp-unit="lb">500 g / 1 lb</span><!-- /auto-link-skip --> <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="56.699" data-metric-unit="g" data-imp-qty="2" data-imp-unit="oz">2 oz</span><!-- /auto-link-skip --> cold dried romaine with about three quarters of the dressing. Toss with two large spoons or clean hands for a full 60 seconds; you want the dressing inside every fold of every leaf, not pooled at the base of the bowl. Add the rest of the dressing only if leaves are still under-coated. Excess dressing wilts the romaine within 10 minutes; calibrate generously but not heavily.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: In a wide bowl that holds the romaine without crowding, dress the 500 g / 1 lb 2" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">9</span>
         <div class="step-body">Add the cooled croutons and toss 15 seconds more, long enough to integrate, short enough that the croutons stay crisp rather than soaking through. Transfer to a wide platter, scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">30 g / ¼ cup</span><!-- /auto-link-skip --> parmigiano shavings across the top, and crack a final pass of black pepper over the surface. Serve immediately; a Caesar held more than 5 minutes between dressing and eating is a different, lesser dish.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 9: Add the cooled croutons and toss 15 seconds more, long enough to integrate, shor" aria-label="Start 1 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -507,6 +519,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           <span class="pair-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby sp</span>
@@ -516,6 +529,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Italian-American pork meatballs in tomato</span>
           <span class="pair-desc">The Sunday-sauce meatball of the Italian-American canon, scaled down to a weeknight portion: ground </span>
@@ -525,6 +539,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Olive Garden breadsticks (the copycat)</span>
           <span class="pair-desc">Lightly enriched yeast dough with bread flour, butter, milk, and a small dose of sugar, shaped into </span>
@@ -534,6 +549,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Olive Garden Italian dressing (homemade copycat)</span>
           <span class="pair-desc">The chain's signature house Italian, the dressing that anchors the unlimited salad. White wine vineg</span>
@@ -543,6 +559,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Egg-yolk emulsion</span>
           <span class="pair-desc">Build a stable oil-in-water emulsion using egg yolk lecithin as the primary surfactant. Underlies ma</span>
@@ -552,6 +569,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -561,6 +579,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Jammy egg</span>
           <span class="pair-desc">Boil a fridge-cold large egg for 6 minutes 30 seconds, ice-shock immediately. The white sets fully (</span>
@@ -570,6 +589,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Worcestershire sauce</span>
           <span class="pair-desc">A long-fermented English condiment of malt vinegar, anchovy, tamarind, molasses, garlic, onion, and </span>
@@ -660,6 +680,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

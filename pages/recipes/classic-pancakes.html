@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">472</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>8</strong>g protein</span><span class="rh-macro"><strong>68.7</strong>g carbs</span><span class="rh-macro"><strong>18.2</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/american.html" data-category="cuisines">American</a><span class="rh-tag rh-tag-course">breakfast</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -297,37 +309,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
-        <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> whole milk with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> white vinegar in a measuring cup or bowl. Stir once and let stand 5 minutes at room temperature. The acid denatures casein micelles, causing visible curdling: that is correct. You have made soured milk that functions identically to buttermilk. Acid content, viscosity, and leavening behavior are equivalent. <a class="step-tech" href="../techniques/acid-milk-sour.html">Acid-milk souring</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Combine 240 ml / 1 cup whole milk with 15 ml / 1 tbsp white vinegar in a measuri" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> whole milk with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">15 ml / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="white vinegar" data-sub-use="freshly squeezed lemon juice" data-sub-note="Same acid volume (15 ml / 1 tbsp). Lemon juice adds a faint citrus note that is pleasant but perceptible. Either option fully sours the milk." tabindex="0" role="button" aria-label="Substitution available for white vinegar">white vinegar</span> in a measuring cup or bowl. Stir once and let stand 5 minutes at room temperature. The acid denatures casein micelles, causing visible curdling: that is correct. You have made soured milk that functions identically to buttermilk. Acid content, viscosity, and leavening behavior are equivalent. <a class="step-tech" href="../techniques/acid-milk-sour.html">Acid-milk souring</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Combine 240 ml / 1 cup whole milk with 15 ml / 1 tbsp white vinegar in a measuri" aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">2</span>
-        <div class="step-body">Whisk together in a large bowl: <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="cups">150 g / 1¼ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="14" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">14 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="tsp">5 g / 1¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-powder.html">baking powder</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> baking soda, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. The baking soda must meet the acid from the soured milk to release CO2; the baking powder provides a second thermal lift in the pan. Both are required.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: Whisk together in a large bowl: 150 g / 1¼ cups all-purpose flour, 14 g / 1 tbsp" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Whisk together in a large bowl: <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="cups">150 g / 1¼ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="all-purpose flour" data-sub-use="whole wheat pastry flour" data-sub-note="Substitute up to half (75 g) for nuttier flavor without wrecking tenderness. Full substitution yields noticeably denser pancakes; add 10 to 15 g extra milk if the batter seems too thick." tabindex="0" role="button" aria-label="Substitution available for all-purpose flour"><a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a></span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="14" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">14 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="granulated sugar" data-sub-use="maple syrup" data-sub-note="Use 18 ml / 1 tbsp + ½ tsp maple syrup (slightly more by volume than sugar) and reduce the milk by 5 ml. The fructose in maple syrup browns faster than sucrose, so lower heat by one notch." tabindex="0" role="button" aria-label="Substitution available for granulated sugar"><a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a></span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="tsp">5 g / 1¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-powder.html">baking powder</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> baking soda, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. The baking soda must meet the acid from the soured milk to release CO2; the baking powder provides a second thermal lift in the pan. Both are required.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: Whisk together in a large bowl: 150 g / 1¼ cups all-purpose flour, 14 g / 1 tbsp" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
         <div class="step-body">Whisk the 50 g / 1 large egg into the soured milk. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="28" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">28 g / 2 tbsp</span><!-- /auto-link-skip --> melted cooled butter and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">4 ml / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a>. The butter must not be hot; above ~70 °C it begins to cook the egg proteins and the batter will be lumpy from the outset.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Whisk the 50 g / 1 large egg into the soured milk. Add 28 g / 2 tbsp melted cool" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
         <div class="step-body">Pour the wet into the dry. Fold with a spatula, 8 to 10 strokes maximum. Lumps are correct and intentional; overmixing develops gluten and produces tough, flat pancakes. The batter should be barely combined. Let it rest 3 minutes while you heat the pan. The starch granules hydrate and the initial CO2 reaction begins, building the first wave of structure.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Pour the wet into the dry. Fold with a spatula, 8 to 10 strokes maximum. Lumps a" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Set a wide skillet or griddle over medium heat. Add a ~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.14635931211123307" data-imp-unit="tbsp">2 g</span><!-- /auto-link-skip --> / small pat of butter and let it melt completely; the foam tells you the water is cooking off. When the foam subsides and the surface just begins to shimmer, the pan is at roughly 175 °C / 350 °F: hot enough for Maillard browning but below the smoke point of butter. Reduce heat slightly if the butter browns before you add batter.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Set a wide skillet or griddle over medium heat. Add a ~2 g / small pat of butter" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">6</span>
         <div class="step-body">Pour 60 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">70 ml / ¼ cup</span><!-- /auto-link-skip --> batter per pancake. Cook undisturbed until bubbles break the surface and the edges set dry, 2 to 2½ minutes. The bubbles are CO2 migrating to the surface as the interior sets; they signal structure, not just doneness. Flip once with a wide spatula. Cook the second side 1 to 1½ minutes until the center springs back when pressed lightly. Do not press down: you are compressing the gas cells you built.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 6: Pour 60 to 70 ml / ¼ cup batter per pancake. Cook undisturbed until bubbles brea" aria-label="Start 5 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">7</span>
         <div class="step-body">Wipe the pan between batches and add a fresh small pat of butter (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.14635931211123307" data-imp-unit="tbsp">2 g</span><!-- /auto-link-skip -->) each time. Burnt milk solids from the previous batch lower browning temperature and will char the bottom of the next round before the interior sets. Transfer finished pancakes to a 95 °C / 200 °F oven on a wire rack set over a sheet pan; stacking them traps steam and makes them soggy.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 7: Wipe the pan between batches and add a fresh small pat of butter (~2 g) each tim" aria-label="Start 8 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
@@ -405,6 +417,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Apple cider vinegar</span>
           <span class="pair-desc">Apple scraps (cores and peels), water, and a little sugar fermented for 4 to 6 weeks under a cloth. </span>
@@ -414,6 +427,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Banana bread</span>
           <span class="pair-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maxim</span>
@@ -423,6 +437,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Big Mac sauce (homemade copycat)</span>
           <span class="pair-desc">The McDonald's Big Mac special sauce, built on a real-egg mayonnaise base with sweet pickle relish, </span>
@@ -432,6 +447,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Buttermilk ranch dressing (proper from-scratch)</span>
           <span class="pair-desc">Real-buttermilk ranch with fresh herbs, garlic, and a backbone of mayonnaise and sour cream. The Hid</span>
@@ -441,6 +457,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Acid-milk souring</span>
           <span class="pair-desc">Add a food acid (vinegar or lemon juice) to whole milk — casein micelles destabilize, viscosity rise</span>
@@ -450,6 +467,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">American</span>
           <span class="pair-desc">Layered fat with restrained sweetness in bakes and bright finishes (lemon, mustard, vinegar) in savo</span>
@@ -459,6 +477,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Baking powder</span>
           <span class="pair-desc">A pre-mixed chemical leavener: baking soda plus one or two dry acids plus a starch buffer. Double-ac</span>
@@ -468,6 +487,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -552,6 +572,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

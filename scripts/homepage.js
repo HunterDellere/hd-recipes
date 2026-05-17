@@ -197,6 +197,28 @@
     } catch {}
 
     initSearch(entries);
+    initInSeason(entries);
+  }
+
+  // In-season — pulls data/in-season.json built from each ingredient's
+  // `seasonality:` field. Hidden by default; revealed only when the build
+  // emitted at least 2 matching recipes.
+  async function initInSeason(entries) {
+    const section = document.getElementById('in-season');
+    const list = document.getElementById('inseason-list');
+    if (!section || !list) return;
+    let data;
+    try { data = await loadJson('data/in-season.json'); } catch { return; }
+    const recs = (data && data.recipes) || [];
+    if (recs.length < 2) return;
+    const byPath = new Map(entries.map(e => [e.path, e]));
+    const cards = recs.map(r => {
+      const e = byPath.get(r.path);
+      return e ? entryCard(e) : '';
+    }).filter(Boolean).join('');
+    if (!cards) return;
+    list.innerHTML = cards;
+    section.hidden = false;
   }
 
   // ── Levenshtein distance with early-out at maxDist (typo-tolerance core) ──

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -100,6 +101,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">134</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>10.6</strong>g protein</span><span class="rh-macro"><strong>9.8</strong>g carbs</span><span class="rh-macro"><strong>6.8</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">snack</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -110,6 +114,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -178,27 +190,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">1</span>
-        <div class="step-body">Heat the oven to 175°C / 350°F. Spread the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> raw peanuts in a single layer on a heavy rimmed sheet pan. The single layer is non-negotiable, peanuts piled two-deep brown unevenly, with a scorched bottom layer and a pale top layer. Use a half-sheet pan or split between two sheets if needed.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Heat the oven to 175°C / 350°F. Spread the 250 g raw peanuts in a single layer o" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Heat the oven to 175°C / 350°F. Spread the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="raw peanuts" data-sub-use="raw cashews or raw almonds" data-sub-note="Same technique, slightly different timing. Cashews are done at 8 to 10 minutes (lower fat oxidation point); almonds at 10 to 12 minutes. The skin-rub step does not apply to either. Useful for peanut allergies." tabindex="0" role="button" aria-label="Substitution available for raw peanuts">raw peanuts</span> in a single layer on a heavy rimmed sheet pan. The single layer is non-negotiable, peanuts piled two-deep brown unevenly, with a scorched bottom layer and a pale top layer. Use a half-sheet pan or split between two sheets if needed.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Heat the oven to 175°C / 350°F. Spread the 250 g raw peanuts in a single layer o" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">2</span>
         <div class="step-body">Roast 8 minutes undisturbed. Pull the pan out, give the peanuts a vigorous shake or stir with a heatproof spatula to redistribute, return to the oven.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: Roast 8 minutes undisturbed. Pull the pan out, give the peanuts a vigorous shake" aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">3</span>
         <div class="step-body">Roast 4 to 7 more minutes, checking every 90 seconds from minute 12 onward. Pull when the peanuts smell distinctly toasted (popcorn-and-roast-coffee aroma carrying out of the oven), the skins are slightly cracked and starting to flake, and a halved kernel shows uniform pale-amber to amber color through the cross-section. The window between toasted and burnt is narrow at this temperature, 60 seconds late and the peanuts shift from amber to scorched, with a bitter taste that no finishing seasoning can mask. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 3: Roast 4 to 7 more minutes, checking every 90 seconds from minute 12 onward. Pull" aria-label="Start 6 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">4</span>
         <div class="step-body">Tip the hot peanuts onto a cool sheet pan or cooling rack to arrest carryover. They continue to color for 2 to 3 minutes after coming out of the oven; pulling at &quot;almost there&quot; yields the right final color. If using salt, sprinkle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> over the peanuts while they are still hot, the surface oils released by roasting hold the salt; cold peanuts shed it. Cool completely (15 to 20 minutes) before storing.<button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 4: Tip the hot peanuts onto a cool sheet pan or cooling rack to arrest carryover. T" aria-label="Start 20 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">5</span>
         <div class="step-body">For skin-on peanuts: rub a handful of cooled peanuts between your palms over a wide bowl, the loosened skins will flake off and can be winnowed away by tossing in front of a fan or simply lifting the peanuts out and discarding the skin pile. Skin-on roasted peanuts are correct for most Southeast Asian and Chinese applications (the polyphenol-bitter skin contributes textural and flavor character); skin-removed roasted peanuts are correct for paler peanut sauces and confections.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: For skin-on peanuts: rub a handful of cooled peanuts between your palms over a w" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
@@ -264,6 +276,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -273,6 +286,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -282,6 +296,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -291,6 +306,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Hong Kong silk-stocking milk tea (絲襪奶茶)</span>
           <span class="pair-desc">Cha chaan teng style: a blend of Ceylon black teas extracted hot, repeatedly poured between two pots</span>
@@ -300,6 +316,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -309,6 +326,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Peanuts</span>
           <span class="pair-desc">A legume sold raw, blanched, dry-roasted, oil-roasted, or salted. Eaten across global cooking as a t</span>
@@ -318,6 +336,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">House blend chai</span>
           <span class="pair-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no</span>
@@ -327,6 +346,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kashmiri noon chai (pink salt tea)</span>
           <span class="pair-desc">Green tea boiled with baking soda and aerated for 20 minutes until it turns brick red, then mixed wi</span>
@@ -411,6 +431,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

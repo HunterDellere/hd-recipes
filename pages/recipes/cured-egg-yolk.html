@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">81</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>20.8</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -250,42 +262,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">1</span>
-        <div class="step-body">Whisk <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="cups">600 g / 2½ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="cups">250 g / 1¼ cups</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a> in a large bowl until uniform. The 70:30 ratio is the technique; pure salt cures dehydrate too aggressively and the yolk reads chalky and unpleasantly saline, while pure sugar does not pull enough water and the yolk stays tacky and unstable. The sugar moderates osmotic pressure and contributes a faint caramelized depth as the cure progresses. Stir in the optional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">5 g / 2 tsp</span><!-- /auto-link-skip --> cracked <a class="x-link" data-category="ingredients" href="../ingredients/black-pepper.html">black peppercorns</a> or 4 / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> broken <a class="x-link" data-category="ingredients" href="../ingredients/star-anise.html">star anise</a> points.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 1: Whisk 600 g / 2½ cups kosher salt and 250 g / 1¼ cups granulated sugar in a larg" aria-label="Start 3 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Whisk <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="cups">600 g / 2½ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="kosher salt (Diamond Crystal)" data-sub-use="Morton kosher salt (use 360 g / 1¾ cup) or fine sea salt (use 400 g / 2 cups)" data-sub-note="Different crystal density. Morton kosher is denser by volume; fine sea salt is denser still. Match by mass and you stay correct." tabindex="0" role="button" aria-label="Substitution available for kosher salt"><a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a></span> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="cups">250 g / 1¼ cups</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="granulated sugar" data-sub-use="light brown sugar" data-sub-note="A subtle caramel note migrates into the yolk over the cure. Especially good for the rosemary-lemon variant; less coherent with the East Asian aromatic version." tabindex="0" role="button" aria-label="Substitution available for granulated sugar"><a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a></span> in a large bowl until uniform. The 70:30 ratio is the technique; pure salt cures dehydrate too aggressively and the yolk reads chalky and unpleasantly saline, while pure sugar does not pull enough water and the yolk stays tacky and unstable. The sugar moderates osmotic pressure and contributes a faint caramelized depth as the cure progresses. Stir in the optional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">5 g / 2 tsp</span><!-- /auto-link-skip --> cracked <a class="x-link" data-category="ingredients" href="../ingredients/black-pepper.html">black peppercorns</a> or 4 / <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> broken <a class="x-link" data-category="ingredients" href="../ingredients/star-anise.html">star anise</a> points.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 1: Whisk 600 g / 2½ cups kosher salt and 250 g / 1¼ cups granulated sugar in a larg" aria-label="Start 3 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
         <div class="step-body">In a glass or ceramic dish at least 5 cm / 2 inches deep, spread half (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="425" data-metric-unit="g" data-imp-qty="2" data-imp-unit="cups">425 g / 2 cups</span><!-- /auto-link-skip -->) of the salt-sugar mixture in an even bed. Use the back of a spoon to make 12 shallow wells in the surface, spaced so the yolks will not touch.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: In a glass or ceramic dish at least 5 cm / 2 inches deep, spread half (~425 g / " aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">3</span>
         <div class="step-body">Separate 12 large eggs one at a time over a small bowl, then transfer each yolk into a well in the cure bed. Working over a small bowl gives you a chance to discard a broken yolk without losing the rest. The whites are not used; refrigerate them in an airtight container for meringues, cocktails, or bread washes.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 3: Separate 12 large eggs one at a time over a small bowl, then transfer each yolk " aria-label="Start 8 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
         <div class="step-body">Cover the yolks gently with the remaining cure mixture; they should be fully buried with no surface visible. Do not press; the yolk membrane is fragile in the first hour and excessive pressure breaks it.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: Cover the yolks gently with the remaining cure mixture; they should be fully bur" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10080">
         <span class="step-num">5</span>
         <div class="step-body">Cover the dish with plastic wrap or a tight-fitting lid. Refrigerate at 2-4°C / 35-40°F for 7 days. The yolks dehydrate steadily over the first 5 days, going from soft and yielding to firm enough to lift cleanly with a fork. By day 7 they should feel dense and slightly rubbery to gentle pressure, deeply <a class="x-link" data-category="ingredients" href="../ingredients/orange.html">orange</a>, and translucent at the edge.<span class="step-time">7 d 0 h</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">6</span>
         <div class="step-body">After 7 days, brush the cure off each yolk with the back of a teaspoon. Rinse very briefly under cold running water (no more than 5 seconds) to remove the last cure grains. Pat completely dry with paper towels. The cured yolks at this stage are eat-on-bread firm, savory, and rich; for a grate-able final product they need further drying. The 12 yolks should now weigh roughly <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="130" data-metric-unit="g" data-imp-qty="4.585618793982257" data-imp-unit="oz">130 g</span><!-- /auto-link-skip --> total, down from <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="216" data-metric-unit="g" data-imp-qty="7.6191819961551355" data-imp-unit="oz">216 g</span><!-- /auto-link-skip --> raw.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 6: After 7 days, brush the cure off each yolk with the back of a teaspoon. Rinse ve" aria-label="Start 5 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2880">
         <span class="step-num">7</span>
         <div class="step-body">For grate-able yolks: dehydrate for 2-3 days at low heat. The reliable methods are (a) a dehydrator at 50°C / 120°F for 24-48 hours; (b) the lowest oven setting (typically 65-90°C / 150-200°F) with the door cracked, on a wire rack over a sheet tray, for 6-8 hours; (c) air-dry wrapped in cheesecloth, hanging in a cool dry pantry or refrigerator for 5-7 days. The oven method is fastest; air-drying produces the most concentrated result.<span class="step-time">2 d 0 h</span></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">8</span>
         <div class="step-body">Test by grating: a fully dried yolk grates on a microplane into fluffy bright-orange shavings without smearing. If the yolk gums up the rasp, it needs more drying time. Final cured yolks should weigh roughly 6-<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> each, down from <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="18" data-metric-unit="g" data-imp-qty="0.634931833012928" data-imp-unit="oz">18 g</span><!-- /auto-link-skip --> raw, a 55-65% mass loss.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 8: Test by grating: a fully dried yolk grates on a microplane into fluffy bright-or" aria-label="Start 5 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -357,6 +369,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -366,6 +379,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -375,6 +389,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -384,6 +399,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -393,6 +409,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry brining</span>
           <span class="pair-desc">Salt a protein surface and rest it long enough for osmosis to reverse — water and salt diffuse back </span>
@@ -402,6 +419,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Star anise</span>
           <span class="pair-desc">The dried fruit of Illicium verum, eight-pointed and intensely licorice-aromatic. The soul of Chines</span>
@@ -411,6 +429,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -420,6 +439,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -510,6 +530,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

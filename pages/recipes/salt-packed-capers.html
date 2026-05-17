@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -110,6 +111,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -188,32 +197,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">1</span>
         <div class="step-body">Sort the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="g" data-imp-qty="10.582197216882133" data-imp-unit="oz">300 g</span><!-- /auto-link-skip --> caper buds by size. Discard any open buds (yellowed, splitting, or visibly flowering; these are too far along the bud-to-flower curve and read soft after curing). The most prized grade is non-pareille (under 7 mm); the next is surfines (7 to 8 mm); larger sizes (capucines, capotes, communes) are progressively less prized but still cure successfully. Sort into size groups if you intend to grade the finished product.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 1: Sort the 300 g caper buds by size. Discard any open buds (yellowed, splitting, o" aria-label="Start 15 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
         <div class="step-body">Spread the sorted <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="g" data-imp-qty="10.582197216882133" data-imp-unit="oz">300 g</span><!-- /auto-link-skip --> buds in a single layer on a clean tray and let them wilt at room temperature for 24 hours. This initial wilting is non-negotiable: raw caper buds contain glucocapparin (a glucosinolate that hydrolyzes to methyl-isothiocyanate when crushed), and the wilting begins partial degradation of the glucocapparin, mellowing the harshness that makes raw capers nearly inedible. The wilted bud should feel slightly leathery rather than turgid; the color shifts from grey-green to dusty olive.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Spread the sorted 300 g buds in a single layer on a clean tray and let them wilt" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">3</span>
-        <div class="step-body">Layer the wilted buds with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> coarse sea salt in a non-reactive jar (glass with a wide-mouth lid is ideal). Alternate thin layers: 5 mm of salt at the bottom, then a single layer of buds, then salt covering the layer fully, then more buds, and so on, ending with salt on top. Press lightly between layers so no air pockets remain. Cover loosely (a paper-towel-and-rubber-band cover works; a tight-sealed lid traps off-gases from the early-stage fermentation and produces off-flavors).<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 3: Layer the wilted buds with the 200 g coarse sea salt in a non-reactive jar (glas" aria-label="Start 15 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
+        <div class="step-body">Layer the wilted buds with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="coarse sea salt" data-sub-use="kosher salt" data-sub-note="Kosher salt cures faster and produces a slightly harsher salinity at the surface. Reduce the salt quantity by ~15 percent (170 g instead of 200 g; 85 g re-pack instead of 100 g) to compensate for the higher density." tabindex="0" role="button" aria-label="Substitution available for coarse sea salt">coarse sea salt</span> in a non-reactive jar (glass with a wide-mouth lid is ideal). Alternate thin layers: 5 mm of salt at the bottom, then a single layer of buds, then salt covering the layer fully, then more buds, and so on, ending with salt on top. Press lightly between layers so no air pockets remain. Cover loosely (a paper-towel-and-rubber-band cover works; a tight-sealed lid traps off-gases from the early-stage fermentation and produces off-flavors).<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 3: Layer the wilted buds with the 200 g coarse sea salt in a non-reactive jar (glas" aria-label="Start 15 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">4</span>
         <div class="step-body">Hold at room temperature (18 to 24 °C) for 10 days. Brine forms naturally as the salt draws moisture from the buds; by day 5 the bud layer is partially submerged in its own expressed liquid. On day 10, drain off the accumulated brine completely. The buds will have shrunk by roughly 30 percent and feel firmer and saltier when tasted (do not eat raw at this stage; the cure is still in mid-progression and the flavor will read flat and over-salty).<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 4: Hold at room temperature (18 to 24 °C) for 10 days. Brine forms naturally as the" aria-label="Start 5 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">5</span>
         <div class="step-body">Re-pack with the additional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> coarse sea salt, replacing what dissolved into the drained brine. Layer the same way (salt-bud-salt) and seal the jar. Hold at room temperature for an additional 30 days, or refrigerated for 60 days, for the cure to complete. The buds shrink further, firm, and develop the layered floral-mustard-savory flavor of properly cured capers; the color stabilizes at dusty olive-grey.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 5: Re-pack with the additional 100 g coarse sea salt, replacing what dissolved into" aria-label="Start 10 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">6</span>
         <div class="step-body">Pack for storage: transfer the cured buds to a clean glass jar with a fresh thin coat of dry salt (just enough to cover and exclude air), seal, and store at room temperature in a cool dark cabinet. The cure is shelf-stable for 1 to 2 years; some IGP-grade Italian preparations age for 6 months in a cool cellar before sale to develop further depth. To use, scoop out the desired quantity and soak in cold water for 10 minutes with one or two water changes to leach the surface salt; taste-test before adding to dishes and adjust the dish-level salt downward to compensate.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 6: Pack for storage: transfer the cured buds to a clean glass jar with a fresh thin" aria-label="Start 5 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -270,6 +279,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken-zucchini meatballs with yogurt-dill</span>
           <span class="pair-desc">Ground chicken thigh mixed with salt-drained grated zucchini, grated onion, garlic, lemon zest, fres</span>
@@ -279,6 +289,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Harvest vegetable soup with white beans</span>
           <span class="pair-desc">A one-pot vegetable soup built on a foundation of slowly sweated leek and garlic, deepened with toma</span>
@@ -288,6 +299,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Mediterranean grain bowl with tahini-yogurt</span>
           <span class="pair-desc">Farro cooked al dente in salted water, mixed roasted vegetables (zucchini, red pepper, red onion) ha</span>
@@ -297,6 +309,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Red wine vinegar</span>
           <span class="pair-desc">Live mother of vinegar fed leftover red wine in a wide jar — acetobacter oxidizes the ethanol to ace</span>
@@ -306,6 +319,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Roasted chickpea and cauliflower pita</span>
           <span class="pair-desc">Spiced roasted chickpeas (cumin, coriander, smoked paprika) and 230 °C hard-roasted cauliflower stuf</span>
@@ -315,6 +329,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -324,6 +339,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -333,6 +349,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -432,6 +449,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

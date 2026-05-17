@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -100,6 +101,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">14</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.1</strong>g protein</span><span class="rh-macro"><strong>3.9</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Pan-Asian / West African pantry crossover</span><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -110,6 +114,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -243,24 +255,24 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">1</span>
         <div class="step-body">Peel a 6 cm knob of ginger with the edge of a spoon (scrape, do not peeler-strip; the spoon removes the thin skin without losing the flesh underneath). Microplane the ginger over a small bowl, catching the released juice with the paste. Stop when you have <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip -->; the rest goes back in the fridge in a sealed bag. The microplaned paste should look wet and stringy, not chopped or coarse-grated; the wetness is the released cell juice that does the emulsifier work.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Peel a 6 cm knob of ginger with the edge of a spoon (scrape, do not peeler-strip" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">2</span>
         <div class="step-body">Trim and finely mince the 3 g / 1 to 2 thai chilies, seeds in for full heat (seeds out for milder). Add the chili to the bowl with the ginger.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: Trim and finely mince the 3 g / 1 to 2 thai chilies, seeds in for full heat (see" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">3</span>
-        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tbsp">60 g / 4 tbsp</span><!-- /auto-link-skip --> lime juice, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">25 g / 1½ tbsp</span><!-- /auto-link-skip --> honey, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="tsp">5 g / 1¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> to the ginger-and-chili bowl. Whisk vigorously for 20 to 30 seconds to dissolve the salt and the honey; the salt particles should disappear, and the honey should integrate without streaks. The mixture should look uniformly cloudy from the suspended ginger particles.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Add the 60 g / 4 tbsp lime juice, the 25 g / 1½ tbsp honey, and the 5 g / 1¼ tsp" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tbsp">60 g / 4 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="lime juice, fresh" data-sub-use="fresh lemon juice, or yuzu juice" data-sub-note="Lemon reads milder and more European; yuzu reads more aromatic and Japanese. Both work structurally. Bottled lime juice (and bottled lemon juice) is not a substitute; the cooked-citrus off-notes carry through the finished dressing." tabindex="0" role="button" aria-label="Substitution available for lime juice">lime juice</span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">25 g / 1½ tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="honey" data-sub-use="palm sugar, or maple syrup, or light brown sugar" data-sub-note="Palm sugar reads more caramel-rich and is the West African choice; maple syrup reads slightly grassy and is the most North American; brown sugar is the most accessible and reads neutral-sweet. All work; the dressing character shifts slightly with each." tabindex="0" role="button" aria-label="Substitution available for honey">honey</span>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="tsp">5 g / 1¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> to the ginger-and-chili bowl. Whisk vigorously for 20 to 30 seconds to dissolve the salt and the honey; the salt particles should disappear, and the honey should integrate without streaks. The mixture should look uniformly cloudy from the suspended ginger particles.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 3: Add the 60 g / 4 tbsp lime juice, the 25 g / 1½ tbsp honey, and the 5 g / 1¼ tsp" aria-label="Start 1 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
-        <div class="step-body">Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 g / ⅓ cup</span><!-- /auto-link-skip --> neutral oil in a thin steady drizzle while whisking constantly. The dressing tightens as the oil emulsifies into the lime-honey-ginger base; the microplaned ginger acts as the structural emulsifier (the same role mustard plays in a classic French vinaigrette), and the dressing should ribbon off the whisk and slowly settle back into the surface. Whisk for 10 to 15 seconds after the last of the oil to integrate. Taste; the dressing should read sharp-acid first, then sweet, then heat in the throat. Salt up if it tastes flat; honey up by <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">1 tsp</span><!-- /auto-link-skip -->) if too sharp. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Stream in the 80 g / ⅓ cup neutral oil in a thin steady drizzle while whisking c" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 g / ⅓ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="neutral oil" data-sub-use="extra-virgin olive oil (if reaching toward Mediterranean)" data-sub-note="EVOO works but the peppery polyphenols compete with the chili in a way that reads muddled; for a cleaner dressing, stay neutral. EVOO is the right choice if the dressing is being paired with a Mediterranean grain bowl or a tomato-and-cucumber salad." tabindex="0" role="button" aria-label="Substitution available for neutral oil">neutral oil</span> in a thin steady drizzle while whisking constantly. The dressing tightens as the oil emulsifies into the lime-honey-ginger base; the microplaned ginger acts as the structural emulsifier (the same role mustard plays in a classic French vinaigrette), and the dressing should ribbon off the whisk and slowly settle back into the surface. Whisk for 10 to 15 seconds after the last of the oil to integrate. Taste; the dressing should read sharp-acid first, then sweet, then heat in the throat. Salt up if it tastes flat; honey up by <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">1 tsp</span><!-- /auto-link-skip -->) if too sharp. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Stream in the 80 g / ⅓ cup neutral oil in a thin steady drizzle while whisking c" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
     </ol>
@@ -327,6 +339,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -336,6 +349,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -345,6 +359,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -354,6 +369,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -363,6 +379,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Vinaigrette emulsion</span>
           <span class="pair-desc">Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsio</span>
@@ -372,6 +389,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Thai bird chili (prik kee noo)</span>
           <span class="pair-desc">Small (2 to 3 cm) hot chili (Capsicum annuum, &quot;bird's eye&quot; cultivars), green when unripe and red whe</span>
@@ -381,6 +399,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -390,6 +409,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -480,6 +500,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">164</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.3</strong>g protein</span><span class="rh-macro"><strong>43.1</strong>g carbs</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Vietnamese</span><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -367,27 +379,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">1</span>
         <div class="step-body">Layer 1, mung bean. Rinse the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="0.6666666666666666" data-imp-unit="cup">120 g / ⅔ cup</span><!-- /auto-link-skip --> split mung beans until water runs clear. Combine with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="360" data-metric-unit="ml" data-imp-qty="1.5" data-imp-unit="cups">360 ml / 1½ cups</span><!-- /auto-link-skip --> water in a small saucepan. Bring to a boil, drop to low, cover, and simmer 22 minutes until the beans are fully soft and the water has mostly absorbed. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">25 g / 2 tbsp</span><!-- /auto-link-skip --> sugar and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.16666666666666669" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> pinch salt. Mash about half the beans with a fork, half whole, half paste gives the layer body without sliminess. Cool to room temperature, then refrigerate.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 1: Layer 1, mung bean. Rinse the 120 g / ⅔ cup split mung beans until water runs cl" aria-label="Start 25 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="60">
         <span class="step-num">2</span>
         <div class="step-body">Layer 2, adzuki. Drain the soaked <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> adzuki beans. Combine with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="ml" data-imp-qty="2.5" data-imp-unit="cups">600 ml / 2½ cups</span><!-- /auto-link-skip --> fresh water in a saucepan. Bring to a boil, then simmer covered 45 to 60 minutes until the beans yield completely to a spoon but still hold individual shape (not mashed). Drain off most of the cooking liquid, leaving just enough to keep the beans glossy. Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">40 g / 3 tbsp</span><!-- /auto-link-skip --> sugar and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.004901960784313725" data-imp-unit="cup">1 g</span><!-- /auto-link-skip --> pinch salt while the beans are still hot so the sugar dissolves. Cool, then refrigerate.<button type="button" class="step-time step-time-btn" data-step-timer="60" data-step-label="Step 2: Layer 2, adzuki. Drain the soaked 100 g / ½ cup adzuki beans. Combine with 600 m" aria-label="Start 1 h timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 h</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="90">
         <span class="step-num">3</span>
-        <div class="step-body">Layer 3, pandan jelly. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="480" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="cups">480 ml / 2 cups</span><!-- /auto-link-skip --> water and the 4 bruised knotted <a class="x-link" data-category="ingredients" href="../ingredients/pandan-leaves.html">pandan leaves</a> in a saucepan. Bring to a gentle simmer, hold 5 minutes off the heat covered to steep, then return to a simmer. Whisk in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/agar-agar.html">agar-agar</a> powder until fully dissolved. Bring to a hard boil for 1 minute (agar needs the rolling boil to activate). Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">30 g / 2½ tbsp</span><!-- /auto-link-skip --> sugar. Pull the pandan leaves out. Pour into a parchment-lined shallow pan or 8x8 baking dish to a depth of about 1 cm / ½ inch. Let set 20 minutes at room temperature, then refrigerate 1 hour until fully firm. Slice into small 5 mm / ¼ inch cubes.<button type="button" class="step-time step-time-btn" data-step-timer="90" data-step-label="Step 3: Layer 3, pandan jelly. Combine the 480 ml / 2 cups water and the 4 bruised knott" aria-label="Start 1 h 30 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 h 30 min</span></button></div>
+        <div class="step-body">Layer 3, pandan jelly. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="480" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="cups">480 ml / 2 cups</span><!-- /auto-link-skip --> water and the 4 bruised knotted <a class="x-link" data-category="ingredients" href="../ingredients/pandan-leaves.html">pandan leaves</a> in a saucepan. Bring to a gentle simmer, hold 5 minutes off the heat covered to steep, then return to a simmer. Whisk in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">4 g / 1 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="agar-agar powder" data-sub-use="agar flakes, double the weight (8 g / 2 tbsp)" data-sub-note="Agar flakes are roughly half the strength of powder by weight. Soak in cold water 5 minutes before bringing to the boil." tabindex="0" role="button" aria-label="Substitution available for agar-agar powder"><a class="x-link" data-category="ingredients" href="../ingredients/agar-agar.html">agar-agar</a> powder</span> until fully dissolved. Bring to a hard boil for 1 minute (agar needs the rolling boil to activate). Stir in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2.5" data-imp-unit="tbsp">30 g / 2½ tbsp</span><!-- /auto-link-skip --> sugar. Pull the pandan leaves out. Pour into a parchment-lined shallow pan or 8x8 baking dish to a depth of about 1 cm / ½ inch. Let set 20 minutes at room temperature, then refrigerate 1 hour until fully firm. Slice into small 5 mm / ¼ inch cubes.<button type="button" class="step-time step-time-btn" data-step-timer="90" data-step-label="Step 3: Layer 3, pandan jelly. Combine the 480 ml / 2 cups water and the 4 bruised knott" aria-label="Start 1 h 30 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 h 30 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">4</span>
         <div class="step-body">Coconut cream finish. In a small saucepan combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> coconut cream, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> sugar, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.16666666666666669" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> pinch salt. Warm over low heat just until the sugar dissolves. Whisk in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="0.5555555555555556" data-imp-unit="tbsp">5 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/tapioca-starch.html">tapioca starch</a> slurry; stir gently for 1 minute as it thickens to a pourable cream consistency. Cool to room temperature. Do not boil; the coconut emulsion breaks above 90°C.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 4: Coconut cream finish. In a small saucepan combine the 240 ml / 1 cup coconut cre" aria-label="Start 5 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Assembly. In each of 4 tall glasses, spoon <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">3 tbsp</span><!-- /auto-link-skip --> of the chilled mung bean as the bottom layer. Spoon <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">3 tbsp</span><!-- /auto-link-skip --> of the chilled adzuki bean as the middle layer. Scatter <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">3 tbsp</span><!-- /auto-link-skip --> of the pandan jelly cubes as the top layer. Add a small handful of crushed ice. Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> of the coconut cream over the top.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Assembly. In each of 4 tall glasses, spoon 3 tbsp of the chilled mung bean as th" aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -452,6 +464,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Grilled whole squid with nuoc cham (mực nướng)</span>
           <span class="pair-desc">Whole cleaned squid (tubes and tentacles intact) marinated briefly in fish sauce, garlic, and lemong</span>
@@ -461,6 +474,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Nuoc cham</span>
           <span class="pair-desc">The Vietnamese fish-sauce dipping sauce: fish sauce, lime, sugar, water, garlic, chili. Pourable, br</span>
@@ -470,6 +484,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Canh chua cá (Vietnamese tamarind sour soup with catfish)</span>
           <span class="pair-desc">Southern Vietnamese sour soup built on a tamarind-acidified broth, with pineapple, tomato, taro stem</span>
@@ -479,6 +494,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè đậu trắng (black-eyed pea and sticky rice chè)</span>
           <span class="pair-desc">Warm Vietnamese chè of tender black-eyed peas and chewy glutinous rice in a barely-sweet coconut mil</span>
@@ -488,6 +504,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Mung bean (split, hulled)</span>
           <span class="pair-desc">Small yellow split mung beans (moong dal). Cook fast into a smooth, sweet, slightly buttery paste, t</span>
@@ -497,6 +514,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè trôi nước (glutinous rice balls in ginger syrup)</span>
           <span class="pair-desc">Chewy glutinous rice balls filled with sweet mashed mung bean, floated in a fresh ginger syrup and c</span>
@@ -506,6 +524,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -515,6 +534,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -599,6 +619,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

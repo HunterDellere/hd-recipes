@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">171</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>9.2</strong>g protein</span><span class="rh-macro"><strong>4.6</strong>g carbs</span><span class="rh-macro"><strong>12.7</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/chinese.html" data-category="cuisines">Chinese</a><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -405,47 +417,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">1</span>
         <div class="step-body">Pre-warm 4 individual heat-tolerant serving bowls (10 to 14 cm / 4 to 6 inch diameter, ceramic or porcelain) by running hot tap water over them for 30 seconds, then drying with a clean towel. Cold bowls will cause uneven setting at the bottom of the curd. Set the bowls on a stable counter where they will not be disturbed for the next 30 minutes. <a class="step-tech" href="../techniques/hot-set-tofu.html">Hot-set silken tofu (pour-and-set)</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Pre-warm 4 individual heat-tolerant serving bowls (10 to 14 cm / 4 to 6 inch dia" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">2</span>
         <div class="step-body">Brown the beef and prepare the mapo sauce in advance, both will be ladled over the set tofu, so they need to be done first and held warm. Heat a wok over high heat. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> neutral oil and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/ground-beef.html">ground beef</a>. Stir-fry continuously, breaking the meat into fine granules, for 6 to 8 minutes until deeply browned, dry, and aromatic. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> Shaoxing and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">5 ml / 1 tsp</span><!-- /auto-link-skip --> light soy. Toss 30 seconds. Transfer to a bowl. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: Brown the beef and prepare the mapo sauce in advance, both will be ladled over t" aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Render the aromatic base. Wipe the wok and return to medium heat. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">45 ml / 3 tbsp</span><!-- /auto-link-skip --> neutral oil. When shimmering (140 to 160°C / 285 to 320°F), add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="40" data-metric-unit="g" data-imp-qty="1.4109596289176176" data-imp-unit="oz">40 g</span><!-- /auto-link-skip --> doubanjiang. Break up and stir-fry 90 seconds until oil turns brilliant brick-red. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="6" data-imp-unit="g">6 g</span><!-- /auto-link-skip --> crushed douchi, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> minced ginger, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="18" data-metric-unit="g" data-imp-qty="0.634931833012928" data-imp-unit="oz">18 g</span><!-- /auto-link-skip --> minced <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>. Stir-fry 45 seconds. <a class="step-tech" href="../techniques/red-oil-rendering.html">Red oil rendering</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Render the aromatic base. Wipe the wok and return to medium heat. Add 45 ml / 3 " aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
         <div class="step-body">Build the sauce. Pour in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml / 1 cup</span><!-- /auto-link-skip --> chicken stock, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="18" data-metric-unit="ml" data-imp-qty="1.25" data-imp-unit="tbsp">18 ml / 1¼ tbsp</span><!-- /auto-link-skip --> light soy, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tsp">5 ml / 1 tsp</span><!-- /auto-link-skip --> dark soy, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> sugar. Return the browned beef. Bring to a simmer. Whisk the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="9" data-metric-unit="g" data-imp-qty="0.317465916506464" data-imp-unit="oz">9 g</span><!-- /auto-link-skip --> cornstarch with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">45 ml / 3 tbsp</span><!-- /auto-link-skip --> cold water; stream in slowly, stirring constantly, until the sauce is glossy and thick, it should mound on a spoon rather than run off. Pull off heat. Hold the sauce warm (return to lowest heat just before serving if needed; the sauce should be near-boiling when it goes onto the tofu). The sauce can sit covered up to 15 minutes.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Build the sauce. Pour in 240 ml / 1 cup chicken stock, 18 ml / 1¼ tbsp light soy" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">5</span>
         <div class="step-body">Heat the soy milk. In a clean saucepan, warm the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1000" data-metric-unit="ml" data-imp-qty="4" data-imp-unit="cups">1000 ml / 4 cups</span><!-- /auto-link-skip --> soy milk over medium heat to 80°C / 175°F (small bubbles forming at the edges, no rolling boil). Use a thermometer for the first attempts; the temperature window for GDL coagulation is genuinely narrow (70 to 90°C). Pull off heat as soon as 80°C is reached.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 5: Heat the soy milk. In a clean saucepan, warm the 1000 ml / 4 cups soy milk over " aria-label="Start 5 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="22">
         <span class="step-num">6</span>
         <div class="step-body">Set the tofu. Dissolve the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.8" data-metric-unit="g" data-imp-qty="2.8" data-imp-unit="g">2.8 g</span><!-- /auto-link-skip --> GDL in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> warm water in a small bowl until clear (no lumps). Pour the GDL solution into the warm soy milk and whisk for 5 seconds, long enough to distribute, short enough not to introduce excessive air. Immediately pour the soy-milk-GDL mixture into the four pre-warmed serving bowls (<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">250 ml / 1 cup</span><!-- /auto-link-skip --> per bowl). Cover each bowl loosely with plastic wrap or a lid (prevents skin formation). Leave undisturbed at warm room temperature for 18 to 22 minutes. Test by gently tilting one bowl; the surface should not move and a finger pressed at the edge should leave a clean indent that fills with clear whey. <a class="step-tech" href="../techniques/hot-set-tofu.html">Hot-set silken tofu (pour-and-set)</a><button type="button" class="step-time step-time-btn" data-step-timer="22" data-step-label="Step 6: Set the tofu. Dissolve the 2.8 g GDL in the 30 ml / 2 tbsp warm water in a small" aria-label="Start 22 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">22 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Reheat the sauce. While the tofu is finishing its set, return the sauce to medium heat and bring back to a brisk simmer. The sauce must be near-boiling when it goes onto the tofu, the temperature contrast (boiling sauce against custard-soft fresh tofu) is part of the dish. The sauce will thicken slightly as it reheats; if it goes too thick, add 15 to 30 ml / 1 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> hot water to thin.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Reheat the sauce. While the tofu is finishing its set, return the sauce to mediu" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">8</span>
-        <div class="step-body">Toast and grind the <a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a>. Heat a small dry skillet over medium heat. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> whole Sichuan peppercorns. Toast 60 to 90 seconds, swirling continuously, until fragrant and slightly oily-looking (do not let them blacken). Transfer to a mortar and grind to a coarse powder. The fresh-toasted-and-ground peppercorn must hit the dish within 5 minutes of grinding for the má (numbing) effect to be at its peak.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: Toast and grind the Sichuan peppercorns. Heat a small dry skillet over medium he" aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Toast and grind the <span class="sub-hint" data-sub-for="Sichuan peppercorns" data-sub-use="no substitute" data-sub-note="See ingredients/sichuan-peppercorns. The má numbing sensation is structural to mapo identity." tabindex="0" role="button" aria-label="Substitution available for Sichuan peppercorns"><a class="x-link" data-category="ingredients" href="../ingredients/sichuan-peppercorns.html">Sichuan peppercorns</a></span>. Heat a small dry skillet over medium heat. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> whole Sichuan peppercorns. Toast 60 to 90 seconds, swirling continuously, until fragrant and slightly oily-looking (do not let them blacken). Transfer to a mortar and grind to a coarse powder. The fresh-toasted-and-ground peppercorn must hit the dish within 5 minutes of grinding for the má (numbing) effect to be at its peak.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: Toast and grind the Sichuan peppercorns. Heat a small dry skillet over medium he" aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">9</span>
         <div class="step-body">Plate at the table. Bring the four set-tofu bowls to the table on a tray, with the simmering hot sauce in a small saucepan and the peppercorn powder, scallion greens, and cilantro in small bowls alongside. For each diner, ladle 80 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="ml" data-imp-qty="6.666666666666667" data-imp-unit="tbsp">100 ml</span><!-- /auto-link-skip --> of the near-boiling mapo sauce over the surface of the set tofu, pour gently, the sauce will sit on top and slowly migrate down through the curd. Sprinkle with a generous pinch of fresh peppercorn powder, scallion greens, and a few cilantro leaves. The contrast hits at the table: the diner sees the boiling-red sauce poured over the white custard, smells the má-là aromatics rising as the sauce hits the cooler curd, and gets the dish at maximum tàng (temperature heat) and minimum holding-time degradation. Eat with a spoon (no chopsticks, the curd is too soft); the spoon takes a portion of curd and a portion of sauce together, and the texture-and-temperature contrast is the entire point.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 9: Plate at the table. Bring the four set-tofu bowls to the table on a tray, with t" aria-label="Start 2 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
@@ -553,6 +565,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese white congee</span>
           <span class="pair-desc">A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The ric</span>
@@ -562,6 +575,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken and ginger congee</span>
           <span class="pair-desc">The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clea</span>
@@ -571,6 +585,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese tea eggs</span>
           <span class="pair-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marbl</span>
@@ -580,6 +595,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cocoa-osmanthus dun nai</span>
           <span class="pair-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral</span>
@@ -589,6 +605,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Hot-set silken tofu (pour-and-set)</span>
           <span class="pair-desc">Whisk glucono delta-lactone (GDL) into warm soy milk at 70 to 90°C / 160 to 195°F, pour directly int</span>
@@ -598,6 +615,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Red oil rendering</span>
           <span class="pair-desc">Bloom doubanjiang (Pixian chili bean paste) and dried chilies in oil at 140 to 160°C / 285 to 320°F </span>
@@ -607,6 +625,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -616,6 +635,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -706,6 +726,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

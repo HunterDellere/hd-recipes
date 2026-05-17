@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">462</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>2.5</strong>g protein</span><span class="rh-macro"><strong>21.4</strong>g carbs</span><span class="rh-macro"><strong>41.8</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Spanish</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -242,42 +254,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">1</span>
         <div class="step-body">Heat the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">250 g / 1 cup</span><!-- /auto-link-skip --> plus <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> olive oil in a wide 28 to 30 cm (11 to 12 inch) skillet (a slope-sided or straight-sided skillet works; not the final cooking pan) over medium heat until shimmering and about 130 to 140°C / 270 to 285°F (a slice of potato dropped in should release small steady bubbles, not aggressive sizzling). Add the 600 g / 3 potatoes (sliced) and 250 g / 1 large onion (sliced) all at once; stir to coat in the oil. Sprinkle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> salt over the top.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: Heat the 250 g / 1 cup plus 2 tbsp olive oil in a wide 28 to 30 cm (11 to 12 inc" aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="22">
         <span class="step-num">2</span>
         <div class="step-body">Reduce heat to medium-low; poach the potato and onion 18 to 22 minutes, stirring gently every 4 to 5 minutes with a wooden spoon (to prevent sticking and to redistribute the cooking), until the potatoes are completely tender and break apart under fork pressure but have not browned (the surface should stay pale yellow and the onion should be soft and translucent-gold, not caramelized). The slow poach is the structural foundation of the dish; rushed potatoes that brown read wrong, undercooked potatoes that retain bite read worse. Trust the fork test: if a potato slice breaks easily under a fork, the poach is done.<button type="button" class="step-time step-time-btn" data-step-timer="22" data-step-label="Step 2: Reduce heat to medium-low; poach the potato and onion 18 to 22 minutes, stirring" aria-label="Start 22 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">22 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">3</span>
         <div class="step-body">Set a fine-mesh sieve over a large heatproof bowl. Pour the potato-and-onion-and-oil through the sieve; the oil drains into the bowl below (reserve about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7.054798144588088" data-imp-unit="oz">200 g</span><!-- /auto-link-skip --> for other cooking) and the potato-and-onion stays in the sieve. Let the potato drain 2 to 3 minutes; the oil should pool below and the potato should be glistening but not dripping.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 3: Set a fine-mesh sieve over a large heatproof bowl. Pour the potato-and-onion-and" aria-label="Start 3 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">4</span>
         <div class="step-body">In a large mixing bowl, beat the 350 g / 7 eggs with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> salt until just uniform (no streaks of white, light yellow throughout; do not whip air into the eggs, which produces a souffléd texture). Add the drained potato-and-onion to the eggs; fold gently with a rubber spatula or wooden spoon until every potato slice is coated. Let rest 8 to 10 minutes at room temperature; this rest is structural and non-negotiable. The salt seasons the eggs evenly, the potato breaks down further into the egg matrix (the potato edges soften into the eggs and the mixture homogenizes), and the eggs warm to room temperature for a more even cook.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 4: In a large mixing bowl, beat the 350 g / 7 eggs with the 3 g / ½ tsp salt until " aria-label="Start 10 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Heat a 22 to 24 cm (9 to 10 inch) nonstick or well-seasoned carbon steel skillet over medium-high heat. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> of the reserved oil; swirl to coat the bottom and the lower sides of the pan. When the oil is shimmering and just on the edge of smoking, pour in the egg-and-potato mixture all at once. Immediately reduce heat to medium-low. The eggs should sizzle around the edges and the bottom should set within the first minute; the goal is a slow cook on low heat from this point forward.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Heat a 22 to 24 cm (9 to 10 inch) nonstick or well-seasoned carbon steel skillet" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">6</span>
         <div class="step-body">Cook the tortilla 5 to 6 minutes over medium-low heat, gently shaking the pan every minute to free the bottom (do not stir; the bottom is setting into a single cohesive layer). Use a flexible thin spatula to gently tuck the edges in toward the center as they set, rounding the sides of the tortilla; this builds the canonical disc shape. After 5 to 6 minutes, the bottom should be set and golden when you carefully lift an edge with the spatula, and the top should still be visibly wet (a substantial pool of uncooked egg in the center). The tortilla is now ready for the flip.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 6: Cook the tortilla 5 to 6 minutes over medium-low heat, gently shaking the pan ev" aria-label="Start 6 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">7</span>
         <div class="step-body">The flip: take a plate slightly larger than the skillet (about 26 cm / 10 inch); invert the plate over the skillet. Holding the plate firmly against the pan with one hand and the skillet handle with the other (use a kitchen towel for grip; the pan is hot), in one confident motion flip the pan upside down so the tortilla lands cooked-side-up on the plate. Set the skillet back on the burner; add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> more reserved oil; slide the tortilla back into the skillet uncooked-side-down. Use the spatula to tuck the edges in. Cook 3 to 4 more minutes over medium-low heat, shaking the pan gently every minute, until the bottom is set and golden and the center is just-set when you gently press the top with the back of a spoon (a slight wobble at the center is correct; firm and rigid is overcooked).<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 7: The flip: take a plate slightly larger than the skillet (about 26 cm / 10 inch);" aria-label="Start 5 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">8</span>
         <div class="step-body">Slide the tortilla onto a serving plate. Let rest 5 to 10 minutes before slicing; the residual heat continues to set the center and the texture stabilizes during the rest. Serve warm or at room temperature, sliced into wedges (8 wedges for tapas, 4 wedges for a meal); the canonical Spanish service is on a small plate with a wedge of crusty bread and a small glass of beer or wine, or as part of a larger tapas spread. Tortilla travels especially well as a make-ahead dish: the texture and flavor improve after a 30-minute rest and remain excellent at room temperature for 3 to 4 hours.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 8: Slide the tortilla onto a serving plate. Let rest 5 to 10 minutes before slicing" aria-label="Start 5 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -350,6 +362,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Air-fried okra with four flavor finishes</span>
           <span class="pair-desc">Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 40</span>
@@ -359,6 +372,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -368,6 +382,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -377,6 +392,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ensalada de nopales</span>
           <span class="pair-desc">Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and M</span>
@@ -386,6 +402,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Waxy potato</span>
           <span class="pair-desc">Low-starch, high-moisture potato cultivars (fingerling, new potato, La Ratte, red bliss, Yukon Gold)</span>
@@ -395,6 +412,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Fattoush with sumac and toasted pita</span>
           <span class="pair-desc">Levantine bread salad: oven-crisped day-old pita over chopped raw vegetables, dressed with a sumac, </span>
@@ -404,6 +422,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Furikake (homemade rice seasoning)</span>
           <span class="pair-desc">Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice</span>
@@ -413,6 +432,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">German warm potato salad with bacon and mustard</span>
           <span class="pair-desc">Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm</span>
@@ -503,6 +523,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

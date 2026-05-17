@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">467</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>40.8</strong>g protein</span><span class="rh-macro"><strong>30.5</strong>g carbs</span><span class="rh-macro"><strong>22.8</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Japanese</span><span class="rh-tag rh-tag-course">dinner</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -381,57 +393,57 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">1</span>
         <div class="step-body">Heat the oven to 230°C / 450°F with a heavy rimmed sheet pan on the middle rack. The pan must be ripping hot before the squash hits it; a cold pan steams the squash; a 230°C pan gets you Maillard browning in 90 seconds.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Heat the oven to 230°C / 450°F with a heavy rimmed sheet pan on the middle rack." aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">2</span>
-        <div class="step-body">Brine the shrimp. Toss <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="680" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="lb">680 g / 1.5 lb</span><!-- /auto-link-skip --> shrimp with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-soda.html">baking soda</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> in a bowl. Let sit at room temperature while you prep the vegetables. The alkaline-saline cure shifts surface protein structure and locks in water; the shrimp will read snappier and juicier with no extra effort.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 2: Brine the shrimp. Toss 680 g / 1.5 lb shrimp with 4 g / ¾ tsp baking soda and 4 " aria-label="Start 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
+        <div class="step-body">Brine the <span class="sub-hint" data-sub-for="shrimp" data-sub-use="sea scallops or firm white fish" data-sub-note="See modifications for scallop technique. For fish: cube cod or halibut to 2 cm, brine the same way, broil 3 minutes only." tabindex="0" role="button" aria-label="Substitution available for shrimp">shrimp</span>. Toss <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="680" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="lb">680 g / 1.5 lb</span><!-- /auto-link-skip --> shrimp with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-soda.html">baking soda</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> in a bowl. Let sit at room temperature while you prep the vegetables. The alkaline-saline cure shifts surface protein structure and locks in water; the shrimp will read snappier and juicier with no extra effort.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 2: Brine the shrimp. Toss 680 g / 1.5 lb shrimp with 4 g / ¾ tsp baking soda and 4 " aria-label="Start 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">3</span>
         <div class="step-body">In a large bowl, toss <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="600" data-metric-unit="g" data-imp-qty="1.3" data-imp-unit="lb">600 g / 1.3 lb</span><!-- /auto-link-skip --> delicata half-moons with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/avocado-oil.html">avocado oil</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> of the kosher salt. Spread on the preheated sheet pan in a single layer. Roast 12 minutes; do not stir. The flat sides need full pan contact to char; flipping early means pale, soft squash.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 3: In a large bowl, toss 600 g / 1.3 lb delicata half-moons with 15 g / 1 tbsp avoc" aria-label="Start 12 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
         <div class="step-body">While the squash roasts, build the glaze. In a small bowl, whisk <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">45 g / 3 tbsp</span><!-- /auto-link-skip --> white miso, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> mirin, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> sake, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> light soy sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">12 g / 1 tbsp</span><!-- /auto-link-skip --> grated ginger, and 12 g / 3 cloves grated <a class="x-link" data-category="ingredients" href="../ingredients/garlic.html">garlic</a>. The miso will fight you for ten seconds, then loosen; keep whisking. Set aside.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: While the squash roasts, build the glaze. In a small bowl, whisk 45 g / 3 tbsp w" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
-        <div class="step-body">In the same vegetable bowl, toss <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="450" data-metric-unit="g" data-imp-qty="1" data-imp-unit="lb">450 g / 1 lb</span><!-- /auto-link-skip --> broccoli (florets and bias-cut stems) and 200 g / 2 packs separated shimeji with the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/avocado.html">avocado</a> oil and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. Do not crowd them; if the bowl looks soggy, blot dry with a towel before they hit the pan.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: In the same vegetable bowl, toss 450 g / 1 lb broccoli (florets and bias-cut ste" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">In the same vegetable bowl, toss <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="450" data-metric-unit="g" data-imp-qty="1" data-imp-unit="lb">450 g / 1 lb</span><!-- /auto-link-skip --> broccoli (florets and bias-cut stems) and 200 g / 2 packs separated <span class="sub-hint" data-sub-for="shimeji" data-sub-use="maitake (hen of the woods), pulled into clusters" data-sub-note="Crisps even better. Read the cap-edge browning the same way." tabindex="0" role="button" aria-label="Substitution available for shimeji">shimeji</span> with the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/avocado.html">avocado</a> oil and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt. Do not crowd them; if the bowl looks soggy, blot dry with a towel before they hit the pan.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: In the same vegetable bowl, toss 450 g / 1 lb broccoli (florets and bias-cut ste" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">6</span>
         <div class="step-body">Pull the squash. Push it to one half of the sheet pan, scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="450" data-metric-unit="g" data-imp-qty="1" data-imp-unit="lb">450 g / 1 lb</span><!-- /auto-link-skip --> broccoli and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="7" data-imp-unit="oz">200 g / 7 oz</span><!-- /auto-link-skip --> shimeji in the open half, separating the shimeji into a single layer. The shimeji must touch the pan directly; they are dry-searing first, picking up oil from the pan film, not sitting in oil. Roast 10 minutes. The broccoli florets should char at the tips; the shimeji should crisp at the cap edges and stop reading bitter.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 6: Pull the squash. Push it to one half of the sheet pan, scatter the 450 g / 1 lb " aria-label="Start 10 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Melt <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tbsp">60 g / 4 tbsp</span><!-- /auto-link-skip --> butter in a small saucepan over medium-low. Cook past the foaming stage until the milk solids smell faintly toasted; about 90 seconds, stop before deep-amber browning (we want some Maillard depth, not full beurre noisette here, because the miso has its own toasted backbone). <a class="step-tech" href="../techniques/brown-butter.html">Brown butter (beurre noisette)</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Melt 60 g / 4 tbsp butter in a small saucepan over medium-low. Cook past the foa" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
         <div class="step-body">Off heat, whisk the miso mixture into the warm <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="4" data-imp-unit="tbsp">60 g / 4 tbsp</span><!-- /auto-link-skip --> browned butter. The glaze will look glossy and slightly broken; this is fine; the emulsion reforms when it hits the hot vegetables.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: Off heat, whisk the miso mixture into the warm 60 g / 4 tbsp browned butter. The" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">9</span>
         <div class="step-body">Pull the sheet pan. Push everything to one side. Pat the brined shrimp dry; surface moisture is the enemy of a sear; and spread them in a single layer on the empty half of the pan. Brush the shrimp with about a third of the glaze (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="1.763699536147022" data-imp-unit="oz">50 g</span><!-- /auto-link-skip -->). Return to the oven, switch to broil on high (top rack about 15 cm from the element), and broil 3–4 minutes until the shrimp curl into Cs (not Os; Os mean overcooked) and the tails turn deep coral with charred edges. Pull immediately at first sign of color set; carryover does the rest.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 9: Pull the sheet pan. Push everything to one side. Pat the brined shrimp dry; surf" aria-label="Start 4 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">10</span>
         <div class="step-body">Drizzle the remaining glaze over the vegetables on the pan, then drizzle <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> rice vinegar across the entire pan. Toss with a spatula directly on the sheet pan; the residual heat tightens the glaze into a coat instead of a puddle. The vinegar cuts the salt-sweet weight of the miso-butter and pulls the dish together; without it the plate reads heavy and one-note.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 10: Drizzle the remaining glaze over the vegetables on the pan, then drizzle 10 g / " aria-label="Start 1 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">11</span>
         <div class="step-body">Finish with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a> drizzled across, then scatter 30 g / 3 sliced scallion greens and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">6 g / 2 tsp</span><!-- /auto-link-skip --> toasted sesame seeds. Serve directly from the sheet pan or transfer to a warmed platter. Pair with short-grain rice.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 11: Finish with 5 g / 1 tsp toasted sesame oil drizzled across, then scatter 30 g / " aria-label="Start 1 min timer for step 11"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -500,6 +512,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -509,6 +522,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -518,6 +532,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Furikake (homemade rice seasoning)</span>
           <span class="pair-desc">Spent kombu and katsuobushi from a fresh batch of dashi, dried in a low oven and chopped into a rice</span>
@@ -527,6 +542,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Matcha usucha (thin matcha tea)</span>
           <span class="pair-desc">The everyday matcha preparation: 2 g of ceremonial matcha whisked with 60 ml of 80°C water into a fr</span>
@@ -536,6 +552,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Brown butter (beurre noisette)</span>
           <span class="pair-desc">Cook butter past the foaming stage until milk solids turn amber — yields hazelnut aroma and Maillard</span>
@@ -545,6 +562,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Delicata squash</span>
           <span class="pair-desc">Cucurbita pepo, Delicata cultivar. Thin edible skin, sweet chestnut-vanilla flesh; the only winter s</span>
@@ -554,6 +572,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Miso soup (miso-shiru)</span>
           <span class="pair-desc">Niban dashi (or fresh ichiban for foreground applications) brought to 80°C, miso whisked in off-heat</span>
@@ -563,6 +582,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Onigiri (rice triangles)</span>
           <span class="pair-desc">Freshly-cooked Japanese short-grain rice formed warm into triangles or rounds with cold-water-and-sa</span>
@@ -653,6 +673,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

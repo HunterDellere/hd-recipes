@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -104,6 +105,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">169</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>2.8</strong>g protein</span><span class="rh-macro"><strong>39.5</strong>g carbs</span><span class="rh-macro"><strong>2</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Goan (Konkan coast, India)</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -114,6 +118,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -450,47 +462,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">1</span>
-        <div class="step-body">Make the xacuti spice paste. In a heavy dry skillet over medium heat, dry-toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">60 g / ½ cup</span><!-- /auto-link-skip --> desiccated coconut, stirring constantly, until uniformly golden-brown and deeply aromatic (8 to 10 minutes). The coconut goes from white to pale to golden-brown quickly in the final 2 minutes; do not leave unattended. Transfer to a plate to cool. In the same pan, separately dry-toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">20 g / 2 tbsp</span><!-- /auto-link-skip --> white poppy seeds (2 to 3 minutes, until slightly golden) and the whole dry spices: <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> coriander seeds, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="2.6666666666666665" data-imp-unit="tsp">6 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/black-pepper.html">black peppercorns</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="3" data-imp-unit="g">3 g</span><!-- /auto-link-skip --> cloves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/cinnamon-stick.html">cinnamon stick</a>, and 2 star anise, together for 90 seconds to 2 minutes until fragrant. Add the 8 whole Kashmiri dried chilies (stems removed) for the final 30 seconds. Transfer all to the plate to cool. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 1: Make the xacuti spice paste. In a heavy dry skillet over medium heat, dry-toast " aria-label="Start 15 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
+        <div class="step-body">Make the xacuti spice paste. In a heavy dry skillet over medium heat, dry-toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">60 g / ½ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="desiccated coconut" data-sub-use="fresh grated coconut (use 90 g, toasted in a dry pan)" data-sub-note="Fresh grated coconut is the more traditional ingredient; use 1.5x the weight of desiccated (about 90 g fresh for 60 g desiccated) and toast the same way. If fresh coconut is available, it produces a slightly cleaner and more vivid coconut flavor in the paste. Frozen grated coconut (from Indian grocery stores) works equally well." tabindex="0" role="button" aria-label="Substitution available for desiccated coconut">desiccated coconut</span>, stirring constantly, until uniformly golden-brown and deeply aromatic (8 to 10 minutes). The coconut goes from white to pale to golden-brown quickly in the final 2 minutes; do not leave unattended. Transfer to a plate to cool. In the same pan, separately dry-toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">20 g / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="white poppy seeds (khus khus)" data-sub-use="20 g raw cashews, soaked 15 minutes in warm water" data-sub-note="Soaked cashews produce a similar thick paste when blended; the flavor is richer and creamier, less neutral. The dish reads korma-adjacent rather than purely Goan; an acceptable substitute if khus khus is unavailable." tabindex="0" role="button" aria-label="Substitution available for white poppy seeds">white poppy seeds</span> (2 to 3 minutes, until slightly golden) and the whole dry spices: <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> coriander seeds, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="2.6666666666666665" data-imp-unit="tsp">6 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/black-pepper.html">black peppercorns</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="3" data-imp-unit="g">3 g</span><!-- /auto-link-skip --> cloves, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="5" data-imp-unit="g">5 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/cinnamon-stick.html">cinnamon stick</a>, and 2 star anise, together for 90 seconds to 2 minutes until fragrant. Add the 8 whole <span class="sub-hint" data-sub-for="Kashmiri dried chilies" data-sub-use="10 g sweet paprika plus 2 g mild dried ancho chili" data-sub-note="Kashmiri chilies provide deep-red color and mild fruity heat; sweet paprika provides the color and mild-sweet character, ancho adds slight depth. Use 1 tbsp sweet paprika plus 1 tsp ancho powder instead of whole Kashmiri chilies (reduce soaking, add to paste blender directly). The dish reads slightly less complex but the color and mild heat level are preserved." tabindex="0" role="button" aria-label="Substitution available for Kashmiri dried chilies">Kashmiri dried chilies</span> (stems removed) for the final 30 seconds. Transfer all to the plate to cool. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 1: Make the xacuti spice paste. In a heavy dry skillet over medium heat, dry-toast " aria-label="Start 15 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">2</span>
         <div class="step-body">Blend the paste. Soak the dry-toasted poppy seeds in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml</span><!-- /auto-link-skip --> cold water for 10 minutes (they absorb the water and blend more smoothly). In a blender, combine the toasted coconut, soaked poppy seeds and their water, all the toasted whole spices and Kashmiri chilies, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">3 g / 1 tsp</span><!-- /auto-link-skip --> ground turmeric (raw), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> garlic cloves, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> ginger. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 ml / ⅓ cup</span><!-- /auto-link-skip --> cold water and blend to a coarse paste, 60 to 90 seconds, scraping down the sides twice. The paste should be thick and slightly grainy (not a smooth puree). If the blender stalls, add water <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> at a time. This is the xacuti masala; it keeps in a sealed container in the refrigerator for 3 days or frozen for 1 month.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 2: Blend the paste. Soak the dry-toasted poppy seeds in 30 ml cold water for 10 min" aria-label="Start 10 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">3</span>
         <div class="step-body">Marinate the fish. Rub the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="700" data-metric-unit="g" data-imp-qty="1.5432370941286444" data-imp-unit="lb">700 g</span><!-- /auto-link-skip --> / about 4 to 6 fish steaks (patted dry) with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> turmeric and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> salt, coating all surfaces. Set aside at room temperature for 15 to 20 minutes. The turmeric acts as a mild antimicrobial and stains the fish surface a deep yellow; the brief salt draw firms the surface for the sear.<button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 3: Marinate the fish. Rub the 700 g / about 4 to 6 fish steaks (patted dry) with th" aria-label="Start 20 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">4</span>
         <div class="step-body">Sear the fish. In a wide, heavy skillet or Dutch oven over high heat, warm <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> of the oil until shimmering. Sear the marinated fish steaks in one layer (working in batches if needed), 90 seconds per side, until the surface is golden-yellow and caramelized. The fish will not be cooked through; the sear is for the Maillard crust and the flavor compounds it deposits on the pan. Transfer to a plate; reserve the pan. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 4: Sear the fish. In a wide, heavy skillet or Dutch oven over high heat, warm 15 g " aria-label="Start 5 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">5</span>
-        <div class="step-body">Build the tadka and onion base. In the same pan (with the sear fond) over medium-high heat, add the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> oil. When the oil is hot and shimmering (175 to 200 °C, at which point a mustard seed dropped in should sputter immediately), add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> mustard seeds; cover the pan loosely with a lid (the seeds pop and spatter) and cook 15 to 20 seconds until the popping slows. Remove the lid, add the 12 curry leaves (stand back — they spatter violently) and cook 5 seconds. Immediately add the 250 g / 1 large onion (fine dice) and a pinch of salt; sweat over medium heat 15 to 18 minutes, stirring occasionally, until the onion is deeply golden-brown and jammy (this extended caramelization is structural; rushing it produces a raw-tasting curry base). The onion should reduce to roughly half its original volume and turn the color of aged <a class="x-link" data-category="ingredients" href="../ingredients/honey.html">honey</a>. <a class="step-tech" href="../techniques/spice-tempering.html">Spice tempering (tadka / tarka)</a><button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 5: Build the tadka and onion base. In the same pan (with the sear fond) over medium" aria-label="Start 20 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
+        <div class="step-body">Build the tadka and onion base. In the same pan (with the sear fond) over medium-high heat, add the remaining <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> oil. When the oil is hot and shimmering (175 to 200 °C, at which point a mustard seed dropped in should sputter immediately), add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> mustard seeds; cover the pan loosely with a lid (the seeds pop and spatter) and cook 15 to 20 seconds until the popping slows. Remove the lid, add the 12 <span class="sub-hint" data-sub-for="curry leaves" data-sub-use="double the lemon zest at the finish; cannot replicate fully" data-sub-note="Curry leaves have no equivalent substitute. In an emergency, add 1 tsp finely grated lemon zest and ½ tsp ground coriander at the end of the tadka step; the dish reads brighter but loses the distinctive anise-citrus-nutty tadka note of the curry leaf. Source frozen curry leaves from an Indian grocery store; they are the standard North American pantry option." tabindex="0" role="button" aria-label="Substitution available for curry leaves">curry leaves</span> (stand back — they spatter violently) and cook 5 seconds. Immediately add the 250 g / 1 large onion (fine dice) and a pinch of salt; sweat over medium heat 15 to 18 minutes, stirring occasionally, until the onion is deeply golden-brown and jammy (this extended caramelization is structural; rushing it produces a raw-tasting curry base). The onion should reduce to roughly half its original volume and turn the color of aged <a class="x-link" data-category="ingredients" href="../ingredients/honey.html">honey</a>. <a class="step-tech" href="../techniques/spice-tempering.html">Spice tempering (tadka / tarka)</a><button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 5: Build the tadka and onion base. In the same pan (with the sear fond) over medium" aria-label="Start 20 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">6</span>
         <div class="step-body">Add the tomato and paste. Add the 200 g / 1 large chopped tomato to the caramelized onion; cook 4 to 5 minutes, stirring occasionally, until the tomato breaks down and the oil begins to separate at the edges of the pan (this is the bhuna step; the &quot;oil separating&quot; cue signals that the raw-spice notes have been cooked out). Add the full batch of xacuti spice paste; stir to combine, then fry the paste in the oil 3 to 4 minutes over medium heat, stirring frequently, until the paste darkens slightly and the oil separates around it again (the same bhuna principle applied to the spice paste; underdone paste reads raw and bitter). The pan should smell of deep-roasted coconut, toasted spices, and onion. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 6: Add the tomato and paste. Add the 200 g / 1 large chopped tomato to the carameli" aria-label="Start 10 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">7</span>
-        <div class="step-body">Add liquid and simmer the gravy. Pour in the 400 g / 1 can coconut milk and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="ml" data-imp-qty="0.6666666666666666" data-imp-unit="cup">150 ml / ⅔ cup</span><!-- /auto-link-skip --> water; stir to dissolve the paste into the liquid. Add the 10 g / 3 to 4 kokum strips (add them whole; they will soften and release acid during the simmer). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="tsp">6 g / 1¼ tsp</span><!-- /auto-link-skip --> salt. Bring to a gentle simmer; cook uncovered 8 to 10 minutes, stirring occasionally, until the gravy has thickened slightly and the kokum has softened and released its fruity-sour character. Taste: the gravy should read deeply aromatic (roasted coconut and warm spices), mildly hot (Kashmiri chili), and lightly sour (kokum). Adjust salt and add more kokum if the gravy reads flat.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 7: Add liquid and simmer the gravy. Pour in the 400 g / 1 can coconut milk and the " aria-label="Start 10 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">Add liquid and simmer the gravy. Pour in the 400 g / 1 can coconut milk and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="ml" data-imp-qty="0.6666666666666666" data-imp-unit="cup">150 ml / ⅔ cup</span><!-- /auto-link-skip --> water; stir to dissolve the paste into the liquid. Add the 10 g / 3 to 4 <span class="sub-hint" data-sub-for="kokum" data-sub-use="tamarind pulp (⅓ the weight, dissolved in 2 tbsp warm water, strained)" data-sub-note="Tamarind is the closest functional substitute: fruity-sour, used in Goan cooking. Use 3 g tamarind pulp dissolved in 2 tbsp warm water (strained) for 10 g kokum. The dish reads slightly more tart and less fruity-astringent; the purple-pink color dimension is lost. See kokum ingredient page for sourcing." tabindex="0" role="button" aria-label="Substitution available for kokum">kokum</span> strips (add them whole; they will soften and release acid during the simmer). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.25" data-imp-unit="tsp">6 g / 1¼ tsp</span><!-- /auto-link-skip --> salt. Bring to a gentle simmer; cook uncovered 8 to 10 minutes, stirring occasionally, until the gravy has thickened slightly and the kokum has softened and released its fruity-sour character. Taste: the gravy should read deeply aromatic (roasted coconut and warm spices), mildly hot (Kashmiri chili), and lightly sour (kokum). Adjust salt and add more kokum if the gravy reads flat.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 7: Add liquid and simmer the gravy. Pour in the 400 g / 1 can coconut milk and the " aria-label="Start 10 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">8</span>
         <div class="step-body">Simmer the fish in the gravy. Slide the seared fish steaks into the simmering gravy; tuck any steak edges below the surface. Simmer gently (the gravy should tremble, not boil) for 6 to 8 minutes by 3 to 4 cm steak thickness, until the fish just flakes at the thickest point when prodded with a fork. Do not stir once the fish is in the pot; the steaks are fragile and will break up. Pull off heat immediately when the fish is just-done; the residual heat in the gravy will carry over another 2 to 3 degrees. Taste the gravy once more and adjust with <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.16666666666666669" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> increments if needed.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 8: Simmer the fish in the gravy. Slide the seared fish steaks into the simmering gr" aria-label="Start 8 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">9</span>
         <div class="step-body">Finish and serve. Scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">10 g / ¼ cup</span><!-- /auto-link-skip --> torn cilantro over the curry. Serve directly from the pot or a wide shallow bowl, with steamed basmati or jasmine rice alongside. Each diner takes a fish steak (bone-in, with the crisp seared skin), spoons the coconut-spice gravy over the rice, and uses the lime wedge to taste: a small squeeze brightens the kokum sourness and lifts the rich coconut fat. The dish reads best the day it is made; the gravy can be refrigerated and reheated, but the fish should be removed first (it becomes dry when reheated in the gravy).<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 9: Finish and serve. Scatter the 10 g / ¼ cup torn cilantro over the curry. Serve d" aria-label="Start 5 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
@@ -599,6 +611,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Air-fried okra with four flavor finishes</span>
           <span class="pair-desc">Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 40</span>
@@ -608,6 +621,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Akadashi clam miso soup (asari no akadashi)</span>
           <span class="pair-desc">Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari cl</span>
@@ -617,6 +631,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -626,6 +641,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Ensalada de nopales</span>
           <span class="pair-desc">Mexican charred-cactus salad: nopal paddles griddled black on a dry comal until the slime sets and M</span>
@@ -635,6 +651,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry-toasting (grains, spices, seeds, dried chilies)</span>
           <span class="pair-desc">Toast raw grains, whole spices, seeds, nuts, or dried chilies in a hot dry skillet (no fat) until Ma</span>
@@ -644,6 +661,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Spice tempering (tadka / tarka)</span>
           <span class="pair-desc">The South Asian technique of blooming whole spices (mustard seeds, cumin seeds, curry leaves, dried </span>
@@ -653,6 +671,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -662,6 +681,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -752,6 +772,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

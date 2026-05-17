@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">274</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>15.3</strong>g protein</span><span class="rh-macro"><strong>18.4</strong>g carbs</span><span class="rh-macro"><strong>18.1</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Mexican</span><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -321,49 +333,49 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">1</span>
-        <div class="step-body">Clean the 600 g / 4 to 5 nopal paddles. Hold each paddle by the stem end with a kitchen towel to protect the hand; with the back of a chef knife or a vegetable peeler, scrape off the glochid clusters (the small brown dots that hold the fine spines) and any larger spines. Both surfaces, both edges. Trim 5 mm off the thick basal nub where the paddle was attached to the plant. The paddle should now be smooth, deep green, and free of any white bumps; rinse briefly and pat dry. Glochid management is the entire failure mode of nopales cookery; a missed glochid embedded in a fingertip is hard to find and ruins the eating experience.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Clean the 600 g / 4 to 5 nopal paddles. Hold each paddle by the stem end with a " aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
+        <div class="step-body">Clean the 600 g / 4 to 5 <span class="sub-hint" data-sub-for="nopal paddles, fresh" data-sub-use="jarred nopales en salmuera (brined nopales), drained, rinsed, and patted dry" data-sub-note="Jarred nopales are pre-blanched in brine; they cannot be charred (the surface is too wet and they release too much water on the comal) but they can be added directly to the salad raw after rinsing. The result is the older blanched-style ensalada and reads cleaner and softer than the comal version. Acceptable shortcut when fresh paddles are unavailable; the dish loses the char signature." tabindex="0" role="button" aria-label="Substitution available for nopal paddles">nopal paddles</span>. Hold each paddle by the stem end with a kitchen towel to protect the hand; with the back of a chef knife or a vegetable peeler, scrape off the glochid clusters (the small brown dots that hold the fine spines) and any larger spines. Both surfaces, both edges. Trim 5 mm off the thick basal nub where the paddle was attached to the plant. The paddle should now be smooth, deep green, and free of any white bumps; rinse briefly and pat dry. Glochid management is the entire failure mode of nopales cookery; a missed glochid embedded in a fingertip is hard to find and ruins the eating experience.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 1: Clean the 600 g / 4 to 5 nopal paddles. Hold each paddle by the stem end with a " aria-label="Start 10 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">2</span>
         <div class="step-body">Score and salt the paddles. Lay each cleaned paddle flat and cut shallow 2 mm deep diagonal scores across one face at 1.5 cm intervals (a crosshatch on a thicker paddle, a single direction on a thinner one); the scoring lets the heat penetrate evenly and lets the mucilage release where it can be charred set. Season both faces of all paddles with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tsp">6 g / 1½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and let stand 5 minutes. The salt draws a glistening film of mucilage (a heteropolysaccharide network of arabinogalactan and pectin polymers) to the surface; the same slime that boiled nopales rinse away to fix the texture, this method instead chars in place.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 2: Score and salt the paddles. Lay each cleaned paddle flat and cut shallow 2 mm de" aria-label="Start 7 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">3</span>
         <div class="step-body">Heat a heavy comal, cast iron skillet, or carbon-steel griddle over medium-high heat for 3 to 4 minutes until a flick of water snaps and evaporates within 2 seconds. Brush or wipe the surface with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/avocado-oil.html">avocado oil</a>; just enough to gloss the metal, no pooling. Pooled oil pops and smokes once the wet paddles hit and disrupts the char. The pan should be at 230 to 260 °C / 450 to 500 °F surface; the surface oil should shimmer and barely smoke at the edges. <a class="step-tech" href="../techniques/comal-charring.html">Comal charring (vegetables, chilies, tortillas)</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 3: Heat a heavy comal, cast iron skillet, or carbon-steel griddle over medium-high " aria-label="Start 4 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="9">
         <span class="step-num">4</span>
         <div class="step-body">Char the paddles. Lay them scored-face down on the hot comal in a single layer; expect immediate aggressive sizzling and a brief release of green-grass-and-mineral steam. Cook 4 to 5 minutes without moving; the underside develops a dark olive-to-black mottling with patches of mahogany and outright black, and the mucilage at the surface bubbles, browns, and sets into a faintly sticky lacquer. Flip with tongs; cook 3 to 4 minutes on the second face. The paddles should now feel pliant rather than firm at the edges; if a paddle still feels rigid in the thumb-and-forefinger flex test, give it another 60 to 90 seconds. Pull to a cutting board; rest 3 minutes. <a class="step-tech" href="../techniques/comal-charring.html">Comal charring (vegetables, chilies, tortillas)</a><button type="button" class="step-time step-time-btn" data-step-timer="9" data-step-label="Step 4: Char the paddles. Lay them scored-face down on the hot comal in a single layer; " aria-label="Start 9 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">9 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">5</span>
-        <div class="step-body">While the paddles char, build the dressing. In a wide mixing bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> lime juice, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> crumbled Mexican oregano. Whisk briefly with a fork until the salt dissolves and the oregano begins to bloom in the lime acid; the dressing should taste sharp, salt-forward, with a citrus-licorice top from the oregano. Mexican oregano needs 2 to 3 minutes of contact with the lime to release its terpenoid aromatics; build this dressing first, finish the cactus second, and the bloom is naturally timed. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 5: While the paddles char, build the dressing. In a wide mixing bowl, combine the 3" aria-label="Start 4 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">While the paddles char, build the dressing. In a wide mixing bowl, combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> lime juice, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">20 g / 1½ tbsp</span><!-- /auto-link-skip --> olive oil, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> crumbled <span class="sub-hint" data-sub-for="Mexican oregano, dried" data-sub-use="Greek or Italian dried oregano (use 0.7 g, 25% less)" data-sub-note="Mediterranean Origanum vulgare is a different plant from Mexican Lippia graveolens with a different aromatic profile (more thymol, less citrus-licorice). The substitution works mechanically but the dish loses a recognizable Mexican signature; use the Mexican oregano if at all possible." tabindex="0" role="button" aria-label="Substitution available for Mexican oregano">Mexican oregano</span>. Whisk briefly with a fork until the salt dissolves and the oregano begins to bloom in the lime acid; the dressing should taste sharp, salt-forward, with a citrus-licorice top from the oregano. Mexican oregano needs 2 to 3 minutes of contact with the lime to release its terpenoid aromatics; build this dressing first, finish the cactus second, and the bloom is naturally timed. <a class="step-tech" href="../techniques/blooming-aromatics.html">Blooming aromatics</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 5: While the paddles char, build the dressing. In a wide mixing bowl, combine the 3" aria-label="Start 4 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">6</span>
         <div class="step-body">Slice the rested paddles into 1 cm strips, then crosswise into 1 to 1.5 cm batons; the cuts are deliberate, not &quot;rough chopped&quot;. The geometry matters because the salad reads as a composed bite; uneven nopal pieces produce a salad with patches of cactus and patches of vegetable rather than an integrated whole. Add the warm sliced nopales directly to the bowl with the dressing; the residual heat from the cactus extracts more aromatic from the oregano and lime than cold cactus would.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 6: Slice the rested paddles into 1 cm strips, then crosswise into 1 to 1.5 cm baton" aria-label="Start 4 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
-        <div class="step-body">Add the 250 g / 2 medium diced tomato, the 80 g / 1 small diced white onion, and the 8 g / 1 to 2 minced serrano. Fold gently with a large spoon, 4 to 6 turns, just enough to coat every dice with the dressing and integrate the warm cactus through the cool vegetables. The salad temperature should land at warm-room-temperature within 2 minutes of mixing; the tomato glutamate and the residual cactus heat together produce the umami-and-Maillard signature that defines this salad against its blanched-nopal counterpart.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Add the 250 g / 2 medium diced tomato, the 80 g / 1 small diced white onion, and" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Add the 250 g / 2 medium diced tomato, the 80 g / 1 small diced <span class="sub-hint" data-sub-for="white onion" data-sub-use="red onion, soaked 5 minutes in cold water and drained" data-sub-note="Red onion shifts the dish toward kachumber territory ; the anthocyanin pink-red is visually attractive but the sweetness profile reads slightly off against the cactus. Acceptable; white onion is the canonical Mexican choice and worth seeking out." tabindex="0" role="button" aria-label="Substitution available for white onion">white onion</span>, and the 8 g / 1 to 2 minced serrano. Fold gently with a large spoon, 4 to 6 turns, just enough to coat every dice with the dressing and integrate the warm cactus through the cool vegetables. The salad temperature should land at warm-room-temperature within 2 minutes of mixing; the tomato glutamate and the residual cactus heat together produce the umami-and-Maillard signature that defines this salad against its blanched-nopal counterpart.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Add the 250 g / 2 medium diced tomato, the 80 g / 1 small diced white onion, and" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">8</span>
         <div class="step-body">Fold in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">20 g / ¾ cup</span><!-- /auto-link-skip --> chopped cilantro and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="7.326007326007326" data-imp-unit="tbsp">100 g</span><!-- /auto-link-skip --> / ½ medium diced <a class="x-link" data-category="ingredients" href="../ingredients/avocado.html">avocado</a> in two separate additions; the cilantro first, the avocado last. The avocado breaks down quickly under aggressive folding, the late addition keeps the dice intact and gives the eater a creamy textural counterweight to the cactus char.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 8: Fold in the 20 g / ¾ cup chopped cilantro and the 100 g / ½ medium diced avocado" aria-label="Start 1 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">9</span>
-        <div class="step-body">Plate. Tip the salad onto a wide shallow platter; do not pile in a deep bowl, the cactus weeps slightly past 15 minutes and the bottom layer goes soggy. Crumble the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">80 g / ½ cup</span><!-- /auto-link-skip --> queso fresco across the top in 5 to 8 mm chunks; resist the urge to mix the cheese in, the contrast between unadorned crumbles and dressed vegetables is structural. Taste; the salad should read smoky-vegetal from the char, sharply acidic from the lime, salt-forward, lightly capsaicin-hot from the serrano, herbaceously aromatic from the oregano-and-cilantro pairing, and creamy-saline from the cheese. If flat, more lime; if undersalted, more salt; if heat is missing, more minced serrano on top. Serve within 20 minutes; the cactus releases additional water past that point and the salad reads watery.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 9: Plate. Tip the salad onto a wide shallow platter; do not pile in a deep bowl, th" aria-label="Start 1 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Plate. Tip the salad onto a wide shallow platter; do not pile in a deep bowl, the cactus weeps slightly past 15 minutes and the bottom layer goes soggy. Crumble the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">80 g / ½ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="queso fresco" data-sub-use="cotija (aged, drier, saltier) or feta (similar salt, different tang)" data-sub-note="Cotija reads more aggressively salty and crumbles drier; reduce the phase-3 salt to 1 g / ¼ tsp to compensate. Feta is the most common Western pantry substitute and reads close on saltiness but with a sheep-milk lactic tang that queso fresco (cow milk) does not have. Both work; the dish stays coherent." tabindex="0" role="button" aria-label="Substitution available for queso fresco">queso fresco</span> across the top in 5 to 8 mm chunks; resist the urge to mix the cheese in, the contrast between unadorned crumbles and dressed vegetables is structural. Taste; the salad should read smoky-vegetal from the char, sharply acidic from the lime, salt-forward, lightly capsaicin-hot from the serrano, herbaceously aromatic from the oregano-and-cilantro pairing, and creamy-saline from the cheese. If flat, more lime; if undersalted, more salt; if heat is missing, more minced serrano on top. Serve within 20 minutes; the cactus releases additional water past that point and the salad reads watery.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 9: Plate. Tip the salad onto a wide shallow platter; do not pile in a deep bowl, th" aria-label="Start 1 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
     </ol>
@@ -438,6 +450,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Huevos rancheros</span>
           <span class="pair-desc">The Mexican farmhouse breakfast: fried eggs atop lightly toasted corn tortillas, blanketed in a char</span>
@@ -447,6 +460,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -456,6 +470,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -465,6 +480,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -474,6 +490,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Comal charring (vegetables, chilies, tortillas)</span>
           <span class="pair-desc">Charr vegetables, dried chilies, fresh chilies, tomatillos, garlic, onion halves, or tortillas on a </span>
@@ -483,6 +500,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming aromatics</span>
           <span class="pair-desc">Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.</span>
@@ -492,6 +510,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Nopales</span>
           <span class="pair-desc">Opuntia ficus-indica cactus paddles. The flat, fleshy stem segments of the prickly pear cactus, eate</span>
@@ -501,6 +520,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -591,6 +611,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

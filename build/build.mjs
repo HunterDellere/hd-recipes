@@ -383,11 +383,28 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
       if (fm.type === 'recipe') {
         const nutrition = roundNutritionWrap(computeRecipeNutrition(fm, ingredientBySlug, usdaCache));
         nutritionByPath[entry.path] = nutrition;
-        const pairings = computePairings(entry, entries, {
+        const autoPairings = computePairings(entry, entries, {
           hubMembers: reverseLinks.hubMembers,
           inHubs: reverseLinks.inHubs,
           ingredientBySlug, techniqueBySlug,
         }, 8);
+        // Explicit author pairings come first and never get dropped. Auto
+        // pairings fill the remaining slots up to a cap of 8; any path
+        // already covered by an explicit entry is filtered out.
+        const explicitPairings = [];
+        for (const p of (fm.pairings || [])) {
+          if (!p || !p.recipe || !p.reason) continue;
+          const refSlug = String(p.recipe).replace(/^pages\//, '').replace(/\.html$/, '');
+          const refPath = `pages/${refSlug}.html`;
+          const target = entriesByPath.get(refPath);
+          if (!target) continue;
+          explicitPairings.push({
+            path: target.path, title: target.title, category: target.category, type: target.type,
+            desc: target.desc, reason: p.reason, score: 1000, explicit: true,
+          });
+        }
+        const explicitPaths = new Set(explicitPairings.map(p => p.path));
+        const pairings = [...explicitPairings, ...autoPairings.filter(p => !explicitPaths.has(p.path))].slice(0, 8);
         augmentedBody = renderRecipeBody(fm, slug, category, {
           ingredientBySlug, techniqueBySlug, equipmentBySlug, nutrition,
           inHubs: reverseLinks.inHubs.get(entry.path) || [],
@@ -510,6 +527,75 @@ for (const [tagSlug, tagEntries] of tagToEntries.entries()) {
   tagPagePaths.add(currentPath);
 }
 
+// ── In-season this month (computed BEFORE we strip _fm) ──────────────
+// Parses each ingredient's `seasonality:` string for month ranges; surfaces
+// recipes that lean on 2+ in-season ingredients. Built fresh on every
+// build (current month = build month). The homepage section hides itself
+// when the recipes array is empty.
+const inSeasonJson = (() => {
+  const MONTH_INDEX = {
+    jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2,
+    apr: 3, april: 3, may: 4, jun: 5, june: 5, jul: 6, july: 6,
+    aug: 7, august: 7, sep: 8, sept: 8, september: 8,
+    oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11,
+  };
+  function parseRanges(text) {
+    if (!text) return null;
+    const lower = String(text).toLowerCase();
+    if (/year[\s-]?round|always\s+available|all\s+year/.test(lower)) return 'year-round';
+    const ranges = [];
+    const rangeRe = /(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\s*(?:–|—|-|to)\s*(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)/gi;
+    let mm;
+    while ((mm = rangeRe.exec(lower))) {
+      const a = MONTH_INDEX[mm[1]];
+      const b = MONTH_INDEX[mm[2]];
+      if (a == null || b == null) continue;
+      ranges.push([a, b]);
+    }
+    return ranges.length ? ranges : null;
+  }
+  function monthInRanges(month, ranges) {
+    if (!Array.isArray(ranges)) return false;
+    for (const [a, b] of ranges) {
+      if (a <= b) { if (month >= a && month <= b) return true; }
+      else        { if (month >= a || month <= b) return true; }
+    }
+    return false;
+  }
+  const currentMonth = new Date().getMonth();
+  const inSeasonSlugs = new Set();
+  for (const e of entries) {
+    if (e.type !== 'ingredient') continue;
+    const text = e._fm && e._fm.seasonality;
+    const parsed = parseRanges(text);
+    if (!parsed || parsed === 'year-round') continue;
+    if (monthInRanges(currentMonth, parsed)) {
+      inSeasonSlugs.add(e._slug);
+      inSeasonSlugs.add(`ingredients/${e._slug}`);
+    }
+  }
+  if (inSeasonSlugs.size === 0) return { month: currentMonth, recipes: [], ingredients: [] };
+  const ranked = [];
+  for (const e of entries) {
+    if (e.type !== 'recipe' || e.status !== 'complete') continue;
+    const ings = (e._fm && e._fm.ingredients) || [];
+    const hits = new Set();
+    for (const i of ings) {
+      if (!i || !i.slug) continue;
+      if (inSeasonSlugs.has(i.slug)) hits.add(i.slug);
+    }
+    if (hits.size >= 2) {
+      ranked.push({ path: e.path, title: e.title, desc: e.desc, hits: hits.size, slugs: [...hits] });
+    }
+  }
+  ranked.sort((a, b) => b.hits - a.hits || (a.title || '').localeCompare(b.title || ''));
+  return {
+    month: currentMonth,
+    ingredients: [...inSeasonSlugs].filter(s => !s.includes('/')),
+    recipes: ranked.slice(0, 6),
+  };
+})();
+
 // Strip _fm before serializing
 for (const e of entries) { delete e._fm; delete e.fm; }
 
@@ -552,6 +638,7 @@ writeFileSync(join(dataDir, 'family-art.json'), JSON.stringify({
   explore: familyCardArt('explore'),
 }, null, 2), 'utf8');
 writeFileSync(join(dataDir, 'nutrition.json'), JSON.stringify(nutritionByPath, null, 2), 'utf8');
+writeFileSync(join(dataDir, 'in-season.json'), JSON.stringify(inSeasonJson, null, 2), 'utf8');
 
 // search index
 function extractBodyText(raw) {

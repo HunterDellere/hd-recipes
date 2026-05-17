@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">798</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>8.4</strong>g protein</span><span class="rh-macro"><strong>117.4</strong>g carbs</span><span class="rh-macro"><strong>36.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-course">dessert</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -336,42 +348,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">1</span>
         <div class="step-body">Heat oven to 350°F (175°C) with a rack in the middle. Butter two 4-inch round pans heavily with about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> soft butter total, line each base with a parchment circle, butter again, and dust with cocoa, knocking out the excess. Set the pans on a sheet tray.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 1: Heat oven to 350°F (175°C) with a rack in the middle. Butter two 4-inch round pa" aria-label="Start 4 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
         <div class="step-body">Whisk the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">25 g / ¼ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dutch-process-cocoa.html">Dutch-process cocoa</a> with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="75" data-metric-unit="ml" data-imp-qty="0.3333333333333333" data-imp-unit="cup">75 ml / ⅓ cup</span><!-- /auto-link-skip --> hot coffee in a small bowl until it forms a glossy paste with no dry pockets. Let it sit while you cream the butter; the rest hydrates the starch granules and pulls aromatics into solution. The bowl should be barely warm, not hot, by the time you use it. <a class="step-tech" href="../techniques/blooming-cocoa.html">Blooming cocoa</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Whisk the 25 g / ¼ cup Dutch-process cocoa with the 75 ml / ⅓ cup hot coffee in " aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">3</span>
         <div class="step-body">In a stand mixer with the paddle (or with a hand mixer), cream the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="85" data-metric-unit="g" data-imp-qty="6" data-imp-unit="tbsp">85 g / 6 tbsp</span><!-- /auto-link-skip --> butter with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/granulated-sugar.html">granulated sugar</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/light-brown-sugar.html">light brown sugar</a> on medium for 3 to 4 minutes, until pale, fluffy, and falling in a thick ribbon off the paddle. The mechanical aeration here is the entire lift mechanism; the chemical leaveners only expand bubbles you already created. Cutting this short produces a dense crumb regardless of leavener quantity. <a class="step-tech" href="../techniques/creaming-butter-sugar.html">Creaming butter and sugar</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 3: In a stand mixer with the paddle (or with a hand mixer), cream the 85 g / 6 tbsp" aria-label="Start 4 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
-        <div class="step-body">On low speed, add the 1 whole egg, then the 1 yolk, beating each until just incorporated, then <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a>. Scrape the bowl. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">70 g / ¼ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> sour cream and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a> and mix on low until uniform; the mixture will look slightly broken or curdled, which is fine, the flour pulls it back together.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: On low speed, add the 1 whole egg, then the 1 yolk, beating each until just inco" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">On low speed, add the 1 whole egg, then the 1 yolk, beating each until just incorporated, then <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/vanilla-bean-paste.html">vanilla bean paste</a>. Scrape the bowl. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">70 g / ¼ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="tbsp">1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="sour cream" data-sub-use="full-fat Greek yogurt" data-sub-note="Same low-pH tenderizing function and similar fat content. The yogurt's tang reads slightly cleaner; sour cream contributes more roundness. Either works; do not substitute non-fat versions of either, the fat is doing structural work." tabindex="0" role="button" aria-label="Substitution available for sour cream">sour cream</span> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a> and mix on low until uniform; the mixture will look slightly broken or curdled, which is fine, the flour pulls it back together.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: On low speed, add the 1 whole egg, then the 1 yolk, beating each until just inco" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">In a small bowl, whisk the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="110" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">110 g / ¾ cup</span><!-- /auto-link-skip --> + <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/all-purpose-flour.html">all-purpose flour</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">10 g / 1 tbsp</span><!-- /auto-link-skip --> cornstarch, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">3 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-powder.html">baking powder</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">1.5 g / ¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/baking-soda.html">baking soda</a>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="tsp">2 g / ⅓ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. Add to the wet bowl in two additions, alternating with the bloomed cocoa from step 2 (cocoa, dry, cocoa, dry, dry), mixing on low between each just until incorporated. Stop the moment the last streaks disappear: this batter is light and overmixing knocks out the air you cultivated in the cream.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: In a small bowl, whisk the 110 g / ¾ cup + 2 tbsp all-purpose flour, 10 g / 1 tb" aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Divide between the two pans (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="8.81849768073511" data-imp-unit="oz">250 g</span><!-- /auto-link-skip --> per pan). Smooth the surfaces gently with a spoon: the batter is thick and should level evenly without prodding. Tap each pan once on the counter to release any oversized bubbles, but do not bang aggressively, you do not want to deflate the structure.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Divide between the two pans (about 250 g per pan). Smooth the surfaces gently wi" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="24">
         <span class="step-num">7</span>
         <div class="step-body">Bake 22 to 26 minutes. Pull when the tops have domed and sprung back fully under a finger press, the cakes have just started to pull from the sides of the pan, and a toothpick inserted in the center comes out with a few moist crumbs (not wet batter). Underbake by even 2 minutes here and the centers sink as they cool; this is a bouncy crumb, not a fudge crumb, and it needs to be fully set.<button type="button" class="step-time step-time-btn" data-step-timer="24" data-step-label="Step 7: Bake 22 to 26 minutes. Pull when the tops have domed and sprung back fully under" aria-label="Start 24 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">24 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">8</span>
         <div class="step-body">Cool in the pans on a rack 8 minutes, no longer; the cakes need to release while still slightly warm so the steam in the crumb doesn't condense and turn the bottom gummy. Run a thin knife around each edge, invert onto a plate, peel parchment, flip back so the domed tops are up.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 8: Cool in the pans on a rack 8 minutes, no longer; the cakes need to release while" aria-label="Start 10 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
@@ -450,6 +462,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
           <span class="pair-desc">Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then </span>
@@ -459,6 +472,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Classic pearl milk tea (zhēn zhū nǎi chá)</span>
           <span class="pair-desc">The original Taichung 1980s formulation: strong black tea, milk or non-dairy creamer, simple syrup, </span>
@@ -468,6 +482,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cold-brew genmaicha (overnight)</span>
           <span class="pair-desc">Genmaicha steeped overnight in cold water. The slow cold extraction pulls L-theanine and the toasted</span>
@@ -477,6 +492,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Hong Kong silk-stocking milk tea (絲襪奶茶)</span>
           <span class="pair-desc">Cha chaan teng style: a blend of Ceylon black teas extracted hot, repeatedly poured between two pots</span>
@@ -486,6 +502,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Creaming butter and sugar</span>
           <span class="pair-desc">Shear sugar crystals into pliable butter to drag air into the fat phase — the bubbles leaven cookies</span>
@@ -495,6 +512,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Blooming cocoa</span>
           <span class="pair-desc">Pour hot liquid or melted fat over cocoa powder and rest before incorporating — heat plus moisture e</span>
@@ -504,6 +522,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Sour cream</span>
           <span class="pair-desc">Cultured cream at 18 to 20% milkfat with pH around 4.5. The acidity tenderizes baked goods, breaks e</span>
@@ -513,6 +532,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">House blend chai</span>
           <span class="pair-desc">A small-batch masala chai built on a freshly ground whole-spice blend. Two cups, fifteen minutes, no</span>
@@ -597,6 +617,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">95</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.5</strong>g protein</span><span class="rh-macro"><strong>1.7</strong>g carbs</span><span class="rh-macro"><strong>9.8</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Italian-American</span><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">gluten-free</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -349,27 +361,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">1</span>
-        <div class="step-body">In a tall narrow container (deli quart or wide-mouth pint jar) combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="tbsp">90 ml / 6 tbsp</span><!-- /auto-link-skip --> white wine vinegar, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> water, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">20 g / 1 tbsp</span><!-- /auto-link-skip --> honey, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> lemon juice, the 1 grated garlic clove paste, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dijon-mustard.html">Dijon mustard</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> salt, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> black pepper, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> onion powder, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> dried oregano, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> dried basil, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> dried parsley, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">0.5 g / ¼ tsp</span><!-- /auto-link-skip --> red pepper flakes. Whisk briefly to dissolve the honey and salt.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: In a tall narrow container (deli quart or wide-mouth pint jar) combine the 90 ml" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">In a tall narrow container (deli quart or wide-mouth pint jar) combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="tbsp">90 ml / 6 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="white wine vinegar" data-sub-use="red wine vinegar" data-sub-note="Slightly more aggressive and tannic; the dressing reads more rustic and less polished. The chain uses white wine vinegar for the cleaner pale color." tabindex="0" role="button" aria-label="Substitution available for white wine vinegar">white wine vinegar</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> water, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">20 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="honey" data-sub-use="granulated sugar (15 g / 1 tbsp)" data-sub-note="Or light corn syrup if you want the literal chain calibration. Honey is the cleaner home choice and adds a faint floral note that improves the dressing." tabindex="0" role="button" aria-label="Substitution available for honey">honey</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tsp">10 ml / 2 tsp</span><!-- /auto-link-skip --> lemon juice, the 1 grated garlic clove paste, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dijon-mustard.html">Dijon mustard</a>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> salt, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> black pepper, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> onion powder, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">2 g / 1 tsp</span><!-- /auto-link-skip --> dried oregano, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> dried basil, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> dried parsley, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="0.5" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="tsp">0.5 g / ¼ tsp</span><!-- /auto-link-skip --> red pepper flakes. Whisk briefly to dissolve the honey and salt.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: In a tall narrow container (deli quart or wide-mouth pint jar) combine the 90 ml" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">2</span>
-        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">25 g / ¼ cup</span><!-- /auto-link-skip --> grated <a class="x-link" data-category="ingredients" href="../ingredients/parmigiano-reggiano.html">parmigiano reggiano</a>. Whisk into the vinegar phase, the cheese should disperse rather than clump; if it clumps, the parmesan was grated too coarsely and the dressing will benefit from a 10-second pulse with an immersion blender.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: Add the 25 g / ¼ cup grated parmigiano reggiano. Whisk into the vinegar phase, t" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">25 g / ¼ cup</span><!-- /auto-link-skip --> grated <span class="sub-hint" data-sub-for="parmigiano reggiano" data-sub-use="pecorino romano" data-sub-note="Saltier and sharper; reduce added salt to a generous pinch. Produces a more aggressive sheep-milk character that some prefer in an Italian dressing." tabindex="0" role="button" aria-label="Substitution available for parmigiano reggiano"><a class="x-link" data-category="ingredients" href="../ingredients/parmigiano-reggiano.html">parmigiano reggiano</a></span>. Whisk into the vinegar phase, the cheese should disperse rather than clump; if it clumps, the parmesan was grated too coarsely and the dressing will benefit from a 10-second pulse with an immersion blender.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 2: Add the 25 g / ¼ cup grated parmigiano reggiano. Whisk into the vinegar phase, t" aria-label="Start 1 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">120 ml / ½ cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/extra-virgin-olive-oil.html">extra-virgin olive oil</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml / ¼ cup</span><!-- /auto-link-skip --> neutral oil in a measuring cup. Drizzle the combined oils into the vinegar phase in a slow steady stream while whisking continuously, or pulse with an immersion blender. The dressing should emulsify into a uniform creamy pale-yellow liquid; if it breaks, an extra <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2.5" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="tsp">½ tsp</span><!-- /auto-link-skip --> of Dijon mustard plus 30 seconds of vigorous re-whisking will rebuild it. <a class="step-tech" href="../techniques/pan-emulsion.html">Pan emulsion (mantecare)</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Combine the 120 ml / ½ cup extra-virgin olive oil and 60 ml / ¼ cup neutral oil " aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">4</span>
         <div class="step-body">Taste. Adjust by quarter-teaspoon increments: more honey if it reads sharp, more vinegar if it reads heavy, more salt if it reads flat. The chain calibration is herby-tangy-slightly-sweet with the parmesan as a faint creamy background; aim there.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 4: Taste. Adjust by quarter-teaspoon increments: more honey if it reads sharp, more" aria-label="Start 1 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="60">
         <span class="step-num">5</span>
         <div class="step-body">Cover and refrigerate at least 1 hour before serving, the dried herbs need time to hydrate in the vinegar phase and the garlic needs to mellow. Holds 1 week refrigerated in a sealed jar. Shake or re-whisk before each use, the dressing slowly separates as the parmesan settles.<button type="button" class="step-time step-time-btn" data-step-timer="60" data-step-label="Step 5: Cover and refrigerate at least 1 hour before serving, the dried herbs need time " aria-label="Start 1 h timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 h</span></button></div>
         
@@ -430,6 +442,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Caesar salad with anchovy emulsion</span>
           <span class="pair-desc">Cold romaine hearts under a coddled-egg-yolk dressing built around dissolved anchovy, garlic, dijon,</span>
@@ -439,6 +452,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           <span class="pair-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby sp</span>
@@ -448,6 +462,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Italian-American pork meatballs in tomato</span>
           <span class="pair-desc">The Sunday-sauce meatball of the Italian-American canon, scaled down to a weeknight portion: ground </span>
@@ -457,6 +472,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Olive Garden breadsticks (the copycat)</span>
           <span class="pair-desc">Lightly enriched yeast dough with bread flour, butter, milk, and a small dose of sugar, shaped into </span>
@@ -466,6 +482,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">White wine vinegar</span>
           <span class="pair-desc">Dry white wine fermented with acetobacter into a 6 to 7 percent acetic acid, lightly fruity, clean-f</span>
@@ -475,6 +492,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -484,6 +502,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -493,6 +512,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -577,6 +597,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

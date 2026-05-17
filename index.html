@@ -48,6 +48,7 @@
   <div class="topnav-right">
     <a href="random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="pages/explore/index.html" class="topnav-back">Explore</a>
+    <a href="pages/explore/pantry-match.html" class="topnav-back">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -156,6 +157,13 @@
     </svg>
   </div>
 
+  <section class="home-section home-inseason-section" id="in-season" aria-labelledby="inseason-heading" hidden>
+    <div class="home-section-eyebrow"><span class="hse-mark"></span>In season</div>
+    <h2 class="home-section-h" id="inseason-heading">In season this month</h2>
+    <p class="home-section-sub">Recipes built around what's at the market right now.</p>
+    <div id="inseason-list" class="card-grid"></div>
+  </section>
+
   <section class="home-section home-recent-section" aria-labelledby="recent-heading">
     <div class="home-section-eyebrow"><span class="hse-mark"></span>Recent</div>
     <h2 class="home-section-h" id="recent-heading">Recently added</h2>
@@ -171,6 +179,7 @@
 
 <script src="scripts/homepage.js?v=7" defer></script>
 <script src="scripts/enhance.js?v=6" defer></script>
+<script src="scripts/personalization.js?v=1" defer></script>
 <script src="scripts/palette.js?v=6" defer></script>
 <script src="scripts/hover-card.js?v=6" defer></script>
 <script src="scripts/reveal.js?v=6" defer></script>

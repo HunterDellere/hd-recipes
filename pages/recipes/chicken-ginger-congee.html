@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">96</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>1.7</strong>g protein</span><span class="rh-macro"><strong>14.9</strong>g carbs</span><span class="rh-macro"><strong>3.1</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/chinese.html" data-category="cuisines">Chinese</a><span class="rh-tag rh-tag-course">breakfast</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">nut-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -353,47 +365,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">1</span>
-        <div class="step-body">Dry-brine the chicken: pat <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="700" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="lb">700 g / 1.5 lb</span><!-- /auto-link-skip --> chicken thighs dry, rub all over (under and over the skin) with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">8 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> Shaoxing wine. Rest uncovered on a rack at room temperature 20 minutes while the rice prep happens. The cure firms the meat and the alcohol takes off any chicken-blood notes. <a class="step-tech" href="../techniques/dry-brining.html">Dry brining</a><button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 1: Dry-brine the chicken: pat 700 g / 1.5 lb chicken thighs dry, rub all over (unde" aria-label="Start 20 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
+        <div class="step-body">Dry-brine the chicken: pat <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="700" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="lb">700 g / 1.5 lb</span><!-- /auto-link-skip --> chicken thighs dry, rub all over (under and over the skin) with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">8 g / 1 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="Shaoxing wine" data-sub-use="dry sherry" data-sub-note="Closer to Shaoxing than dry white wine. Skip if neither is on hand; the cure works on salt alone." tabindex="0" role="button" aria-label="Substitution available for Shaoxing wine">Shaoxing wine</span>. Rest uncovered on a rack at room temperature 20 minutes while the rice prep happens. The cure firms the meat and the alcohol takes off any chicken-blood notes. <a class="step-tech" href="../techniques/dry-brining.html">Dry brining</a><button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 1: Dry-brine the chicken: pat 700 g / 1.5 lb chicken thighs dry, rub all over (unde" aria-label="Start 20 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">2</span>
         <div class="step-body">Rinse <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">200 g / 1 cup</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/jasmine-rice.html">jasmine rice</a> three times until the water runs from milky to faintly hazy. Drain five minutes. Massage with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tbsp">7 g / ½ tbsp</span><!-- /auto-link-skip --> neutral oil and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> kosher salt for 30 seconds. Rest fifteen minutes.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 2: Rinse 200 g / 1 cup jasmine rice three times until the water runs from milky to " aria-label="Start 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">3</span>
         <div class="step-body">In a heavy 5-quart pot, combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2200" data-metric-unit="ml" data-imp-qty="9" data-imp-unit="cups">2200 ml / 9 cups</span><!-- /auto-link-skip --> cold water, the brined chicken thighs, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> / smacked ginger coins, the white parts of the 4 scallions, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">8 g / 2 tbsp</span><!-- /auto-link-skip --> optional dried scallop. Bring to a hard boil over high heat.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 3: In a heavy 5-quart pot, combine 2200 ml / 9 cups cold water, the brined chicken " aria-label="Start 10 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">4</span>
         <div class="step-body">Skim the gray scum that rises in the first 4-5 minutes with a fine spider; this is coagulated blood proteins from the chicken bones. Once the surface skims clean, add the rinsed and oiled rice. Bring back to a boil.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 4: Skim the gray scum that rises in the first 4-5 minutes with a fine spider; this " aria-label="Start 5 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="35">
         <span class="step-num">5</span>
         <div class="step-body">Drop the heat to a steady tremor (small bubbles, never a rolling boil). Crack the lid. Simmer 35 minutes, stirring every ten minutes to scrape the bottom.<button type="button" class="step-time step-time-btn" data-step-timer="35" data-step-label="Step 5: Drop the heat to a steady tremor (small bubbles, never a rolling boil). Crack th" aria-label="Start 35 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">35 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">6</span>
         <div class="step-body">At the 35-minute mark, fish out the chicken thighs with tongs. Pull the bone, discard the skin (or chop it fine and stir back in if you want the rendered-fat richness), shred the meat with two forks into bite-sized strands. Return the meat to the pot and continue simmering. The bones can go back in for another 20 minutes of broth-deepening if you have a sieve handy at the end.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 6: At the 35-minute mark, fish out the chicken thighs with tongs. Pull the bone, di" aria-label="Start 5 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="23">
         <span class="step-num">7</span>
         <div class="step-body">Continue simmering 20-25 minutes uncovered. The rice should be fully fragmented and the body the consistency of single cream. Fish out the bones (if returned), the smacked 20 g / 1-inch ginger coins, the scallop if used (chop it fine and stir back in), and the scallion whites.<button type="button" class="step-time step-time-btn" data-step-timer="23" data-step-label="Step 7: Continue simmering 20-25 minutes uncovered. The rice should be fully fragmented " aria-label="Start 23 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">23 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">8</span>
         <div class="step-body">Just before serving, squeeze the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> / grated ginger through cheesecloth or a fine sieve into the pot, capturing the bright juice and discarding the spent fiber. The ginger juice carries the volatile aromatics that long simmer drives off; this is what restores the bright ginger nose to the finished bowl. Stir in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> light soy sauce and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.25" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="tsp">¼ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/white-pepper.html">white pepper</a>. Taste; adjust salt or soy.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: Just before serving, squeeze the 20 g / grated ginger through cheesecloth or a f" aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">9</span>
         <div class="step-body">Build each bowl: ladle congee, top with a small fistful of the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> / ginger matchsticks, the green parts of 4 scallions, optional <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">15 g / ½ cup</span><!-- /auto-link-skip --> cilantro leaves, a few drops (~<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip -->) <a class="x-link" data-category="ingredients" href="../ingredients/toasted-sesame-oil.html">toasted sesame oil</a>, a final dust of <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> white pepper, optional ½-1 tbsp / 7-<!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1.075268817204301" data-imp-unit="tbsp">15 g</span><!-- /auto-link-skip --> chili oil with sediments, and 2-3 drops of <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="10" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">10 g / 2 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/rice-vinegar.html">rice vinegar</a> at the rim of the bowl. Stir once and eat immediately.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 9: Build each bowl: ladle congee, top with a small fistful of the 20 g / ginger mat" aria-label="Start 3 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
@@ -503,6 +515,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -512,6 +525,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese lion's head meatballs (shīzi tóu)</span>
           <span class="pair-desc">Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion</span>
@@ -521,6 +535,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chinese tea eggs</span>
           <span class="pair-desc">Soft-boiled eggs cracked all over and steeped in spiced soy and black tea. The cracks become a marbl</span>
@@ -530,6 +545,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cocoa-osmanthus dun nai</span>
           <span class="pair-desc">Steamed milk pudding infused with cocoa nibs and finished with osmanthus and oolong — bitter, floral</span>
@@ -539,6 +555,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry brining</span>
           <span class="pair-desc">Salt a protein surface and rest it long enough for osmosis to reverse — water and salt diffuse back </span>
@@ -548,6 +565,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Velveting</span>
           <span class="pair-desc">Toss thin-sliced lean protein with salt, baking soda, and a cornstarch slurry, rest 20-30 minutes, t</span>
@@ -557,6 +575,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Chinese</span>
           <span class="pair-desc">A four-axis pantry (soy, vinegar, aromatic, heat) combined in shifting ratios across regions. Every </span>
@@ -566,6 +585,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Jasmine rice</span>
           <span class="pair-desc">Long-grain aromatic rice (Oryza sativa indica) from Thailand and adjacent regions. Floral, soft, sli</span>
@@ -656,6 +676,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

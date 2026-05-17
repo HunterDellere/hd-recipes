@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">107</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.6</strong>g protein</span><span class="rh-macro"><strong>11.7</strong>g carbs</span><span class="rh-macro"><strong>6.6</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Italian-American</span><span class="rh-tag rh-tag-course">bread</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -308,37 +320,37 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">1</span>
-        <div class="step-body">Build the dough in a stand mixer or by hand. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml</span><!-- /auto-link-skip --> warmed (35 °C) milk, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7" data-metric-unit="g" data-imp-qty="2.1538461538461537" data-imp-unit="tsp">7 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/instant-yeast.html">instant yeast</a>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.12254901960784315" data-imp-unit="cup">25 g</span><!-- /auto-link-skip --> sugar in the bowl of a stand mixer; whisk briefly and let stand 5 minutes (the surface will foam slightly, confirming the yeast is alive, see ingredients/instant-yeast for the bloom-test reasoning). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="460" data-metric-unit="g" data-imp-qty="3.4848484848484844" data-imp-unit="cup">460 g</span><!-- /auto-link-skip --> bread flour, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2.195389681668496" data-imp-unit="tbsp">30 g</span><!-- /auto-link-skip --> melted-cooled butter, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.3333333333333335" data-imp-unit="tsp">8 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. Fit the dough hook; mix on low for 2 minutes until shaggy, then on medium for 8 minutes until the dough is smooth, elastic, and pulls cleanly from the sides of the bowl. By hand: combine all ingredients in a large bowl, turn out onto an unfloured surface, and knead 10 to 12 minutes until smooth and elastic. <a class="step-tech" href="../techniques/enriched-dough.html">Enriched dough</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Build the dough in a stand mixer or by hand. Combine the 240 ml warmed (35 °C) m" aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
+        <div class="step-body">Build the dough in a stand mixer or by hand. Combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="240" data-metric-unit="ml" data-imp-qty="1" data-imp-unit="cup">240 ml</span><!-- /auto-link-skip --> warmed (35 °C) milk, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7" data-metric-unit="g" data-imp-qty="2.1538461538461537" data-imp-unit="tsp">7 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="instant yeast" data-sub-use="active dry yeast" data-sub-note="Use 9 g instead of 7 g; bloom in the warmed milk for 5 minutes before adding the rest of the ingredients. See ingredients/instant-yeast for the substitution math." tabindex="0" role="button" aria-label="Substitution available for instant yeast"><a class="x-link" data-category="ingredients" href="../ingredients/instant-yeast.html">instant yeast</a></span>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.12254901960784315" data-imp-unit="cup">25 g</span><!-- /auto-link-skip --> sugar in the bowl of a stand mixer; whisk briefly and let stand 5 minutes (the surface will foam slightly, confirming the yeast is alive, see ingredients/instant-yeast for the bloom-test reasoning). Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="460" data-metric-unit="g" data-imp-qty="3.4848484848484844" data-imp-unit="cup">460 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="bread flour" data-sub-use="all-purpose flour plus 30 g vital wheat gluten" data-sub-note="Mix the AP and vital wheat gluten thoroughly before combining with the wet ingredients. The breadsticks will read about 90 percent of the chew of the bread-flour version. Acceptable but the bread-flour upgrade is meaningful." tabindex="0" role="button" aria-label="Substitution available for bread flour">bread flour</span>, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2.195389681668496" data-imp-unit="tbsp">30 g</span><!-- /auto-link-skip --> melted-cooled butter, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="1.3333333333333335" data-imp-unit="tsp">8 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a>. Fit the dough hook; mix on low for 2 minutes until shaggy, then on medium for 8 minutes until the dough is smooth, elastic, and pulls cleanly from the sides of the bowl. By hand: combine all ingredients in a large bowl, turn out onto an unfloured surface, and knead 10 to 12 minutes until smooth and elastic. <a class="step-tech" href="../techniques/enriched-dough.html">Enriched dough</a><button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 1: Build the dough in a stand mixer or by hand. Combine the 240 ml warmed (35 °C) m" aria-label="Start 12 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="75">
         <span class="step-num">2</span>
         <div class="step-body">First rise (bulk fermentation). Transfer the dough to a lightly oiled bowl; cover with plastic wrap or a damp tea towel. Set in a warm spot (24 to 26 °C) and rise 60 to 90 minutes until roughly doubled in volume. The dough is correctly proofed when a finger-poke leaves a partial dent that springs back slowly. Underproofed: the dent fills immediately. Overproofed: the dent holds without springing back at all (shape and bake immediately at this point; the breadsticks will be slightly flatter but otherwise correct).<button type="button" class="step-time step-time-btn" data-step-timer="75" data-step-label="Step 2: First rise (bulk fermentation). Transfer the dough to a lightly oiled bowl; cove" aria-label="Start 1 h 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 h 15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">3</span>
         <div class="step-body">Shape into 12 batons. Turn the dough out onto a clean unfloured surface (a wet surface helps prevent sticking; flour at this stage produces uneven shaping). Divide the dough into 12 equal portions of about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="65" data-metric-unit="g" data-imp-qty="0.4924242424242424" data-imp-unit="cup">65 g</span><!-- /auto-link-skip --> each, use a kitchen scale; uneven portions produce uneven bake times. Roll each portion under your palm into a 18 cm baton, slightly thicker in the middle and tapering at the ends. The hand-rolling is structural, pin-rolling produces a flatter, less pillowy breadstick.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 3: Shape into 12 batons. Turn the dough out onto a clean unfloured surface (a wet s" aria-label="Start 8 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="35">
         <span class="step-num">4</span>
         <div class="step-body">Second rise (proof). Arrange the 12 batons on two parchment-lined sheet pans, 6 per pan, with at least 4 cm between each. Cover loosely with plastic wrap or a damp tea towel; rise at room temperature 30 to 40 minutes until visibly puffed but not fully doubled (overproofed breadsticks collapse on baking and produce a denser-than-intended crumb). The finger-poke test: a slow partial spring-back is correct.<button type="button" class="step-time step-time-btn" data-step-timer="35" data-step-label="Step 4: Second rise (proof). Arrange the 12 batons on two parchment-lined sheet pans, 6 " aria-label="Start 35 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">35 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="14">
         <span class="step-num">5</span>
         <div class="step-body">Bake. Position racks in the upper and lower thirds of the oven; preheat to 200 °C (400 °F) for at least 15 minutes before the breadsticks go in. Bake the breadsticks 12 to 15 minutes, swapping the pans top-to-bottom and rotating front-to-back at the 7-minute mark. The breadsticks are correctly baked when the tops are golden-brown, the bottoms are deep golden, and an internal-temperature probe reads 88 to 90 °C. Underbaking produces a gummy interior; overbaking produces a hard crust and dry crumb.<button type="button" class="step-time step-time-btn" data-step-timer="14" data-step-label="Step 5: Bake. Position racks in the upper and lower thirds of the oven; preheat to 200 °" aria-label="Start 14 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">14 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">6</span>
         <div class="step-body">Brush with the garlic butter while hot. While the breadsticks bake, prepare the brush: melt the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="g" data-imp-qty="4.390779363336992" data-imp-unit="tbsp">60 g</span><!-- /auto-link-skip --> butter in a small saucepan or microwave, then whisk in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="6" data-imp-unit="g">6 g</span><!-- /auto-link-skip --> pressed-and-rested garlic, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="2" data-imp-unit="g">2 g</span><!-- /auto-link-skip --> garlic powder, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="1" data-imp-unit="g">1 g</span><!-- /auto-link-skip --> dried oregano, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="1" data-imp-unit="g">1 g</span><!-- /auto-link-skip --> dried parsley flakes. The mixture should sit at room temperature 5 minutes before use to let the garlic flavor infuse the butter. As soon as the breadsticks come out of the oven, brush each one generously with the seasoned butter on all surfaces (top, sides, ends, the bottom is sufficient from the pan butter that pooled). Sprinkle the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.6976744186046512" data-imp-unit="tsp">3 g</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a> over the tops while the butter is still wet so the salt grains stick.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 6: Brush with the garlic butter while hot. While the breadsticks bake, prepare the " aria-label="Start 4 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">7</span>
         <div class="step-body">Serve hot. Olive Garden breadsticks are a hot-from-the-oven dish; the texture compromises noticeably within 10 minutes of cooling. Serve immediately in a bread basket lined with a cloth napkin (the napkin holds heat); pass alongside marinara sauce, alfredo sauce, or a bowl of soup. Cooled breadsticks reheat acceptably in a 175 °C oven for 4 minutes.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 7: Serve hot. Olive Garden breadsticks are a hot-from-the-oven dish; the texture co" aria-label="Start 1 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -418,6 +430,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Caesar salad with anchovy emulsion</span>
           <span class="pair-desc">Cold romaine hearts under a coddled-egg-yolk dressing built around dissolved anchovy, garlic, dijon,</span>
@@ -427,6 +440,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           <span class="pair-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby sp</span>
@@ -436,6 +450,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Italian-American pork meatballs in tomato</span>
           <span class="pair-desc">The Sunday-sauce meatball of the Italian-American canon, scaled down to a weeknight portion: ground </span>
@@ -445,6 +460,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Olive Garden Italian dressing (homemade copycat)</span>
           <span class="pair-desc">The chain's signature house Italian, the dressing that anchors the unlimited salad. White wine vineg</span>
@@ -454,6 +470,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Enriched dough</span>
           <span class="pair-desc">Yeast-raised dough fortified with fat, dairy, eggs, and sugar, softer crumb, richer flavor, and a st</span>
@@ -463,6 +480,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Bread flour</span>
           <span class="pair-desc">Wheat flour at 12.5 to 14 percent protein. The strongest of the common Western flours; the protein l</span>
@@ -472,6 +490,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -481,6 +500,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -571,6 +591,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

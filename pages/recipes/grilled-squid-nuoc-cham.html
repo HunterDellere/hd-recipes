@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">212</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>28.2</strong>g protein</span><span class="rh-macro"><strong>19.7</strong>g carbs</span><span class="rh-macro"><strong>1.9</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Vietnamese</span><span class="rh-tag rh-tag-course">dinner</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -363,32 +375,32 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">1</span>
         <div class="step-body">Score the squid. Lay each cleaned tube flat with the inside facing up. Cross-hatch score at 5 mm grid spacing, cutting only halfway through the wall. Leave the tube whole (do not cut into pieces, for grilling, the whole tube cooks more evenly than pieces). Leave the tentacles whole. Pat dry with paper towels. <a class="step-tech" href="../techniques/scoring-squid.html">Scoring squid (cross-hatch)</a><button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 1: Score the squid. Lay each cleaned tube flat with the inside facing up. Cross-hat" aria-label="Start 6 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="15">
         <span class="step-num">2</span>
-        <div class="step-body">Marinate. In a wide bowl, whisk together <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> fish sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> minced lemongrass, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="16" data-metric-unit="g" data-imp-qty="0.5643838515670471" data-imp-unit="oz">16 g</span><!-- /auto-link-skip --> minced garlic, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> minced shallot, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="0.4232878886752853" data-imp-unit="oz">12 g</span><!-- /auto-link-skip --> palm sugar (mash with a spoon to dissolve), <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> neutral oil, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> black pepper. Add the scored squid tubes and tentacles. Toss gently to coat, the squid should be evenly slicked with marinade. Set aside 15 minutes (no longer; over-marinated squid toughens). Bring the squid to near room temperature before grilling, cold squid steams rather than chars.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 2: Marinate. In a wide bowl, whisk together 30 ml / 2 tbsp fish sauce, 25 g minced " aria-label="Start 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
+        <div class="step-body">Marinate. In a wide bowl, whisk together <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> fish sauce, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="0.881849768073511" data-imp-unit="oz">25 g</span><!-- /auto-link-skip --> minced lemongrass, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="16" data-metric-unit="g" data-imp-qty="0.5643838515670471" data-imp-unit="oz">16 g</span><!-- /auto-link-skip --> minced garlic, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="20" data-metric-unit="g" data-imp-qty="0.7054798144588088" data-imp-unit="oz">20 g</span><!-- /auto-link-skip --> minced shallot, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="12" data-metric-unit="g" data-imp-qty="0.4232878886752853" data-imp-unit="oz">12 g</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="palm sugar" data-sub-use="light brown sugar or coconut sugar" data-sub-note="1:1 substitute by weight. Palm sugar has a faint caramel note that brown sugar approximates closely; coconut sugar is slightly less sweet, increase by 10 to 15% by weight." tabindex="0" role="button" aria-label="Substitution available for palm sugar">palm sugar</span> (mash with a spoon to dissolve), <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> neutral oil, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> black pepper. Add the scored squid tubes and tentacles. Toss gently to coat, the squid should be evenly slicked with marinade. Set aside 15 minutes (no longer; over-marinated squid toughens). Bring the squid to near room temperature before grilling, cold squid steams rather than chars.<button type="button" class="step-time step-time-btn" data-step-timer="15" data-step-label="Step 2: Marinate. In a wide bowl, whisk together 30 ml / 2 tbsp fish sauce, 25 g minced " aria-label="Start 15 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">15 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">3</span>
-        <div class="step-body">Make the nuoc cham. In a small bowl, dissolve <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> palm sugar in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="tbsp">90 ml / 6 tbsp</span><!-- /auto-link-skip --> warm water (whisk until clear). Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">45 ml / 3 tbsp</span><!-- /auto-link-skip --> fish sauce and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">45 ml / 3 tbsp</span><!-- /auto-link-skip --> fresh lime juice. Whisk to combine. Stir in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> minced garlic and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="6" data-imp-unit="g">6 g</span><!-- /auto-link-skip --> minced chili. Taste; the sauce should land at sweet-sour-salty-spicy in roughly equal parts, with the fish sauce providing the deep savory backbone. Adjust: if too salty, more lime + a splash of water; if too sour, more sugar; if flat, more chili. Set aside; the sauce improves in 30 minutes as the flavors meld.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 3: Make the nuoc cham. In a small bowl, dissolve 30 g / 2 tbsp palm sugar in 90 ml " aria-label="Start 4 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">Make the nuoc cham. In a small bowl, dissolve <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> palm sugar in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="ml" data-imp-qty="6" data-imp-unit="tbsp">90 ml / 6 tbsp</span><!-- /auto-link-skip --> warm water (whisk until clear). Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">45 ml / 3 tbsp</span><!-- /auto-link-skip --> fish sauce and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">45 ml / 3 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="fresh lime juice" data-sub-use="no good substitute" data-sub-note="Bottled lime juice has a flat, slightly bitter note from preservatives that does not work in nuoc cham. Squeeze fresh; one or two limes is the difference between the dish working and not. If true lime is unavailable, fresh lemon juice is a defensible second-choice (the sauce reads slightly different but works)." tabindex="0" role="button" aria-label="Substitution available for fresh lime juice">fresh lime juice</span>. Whisk to combine. Stir in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="0.28219192578352353" data-imp-unit="oz">8 g</span><!-- /auto-link-skip --> minced garlic and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="6" data-imp-unit="g">6 g</span><!-- /auto-link-skip --> minced chili. Taste; the sauce should land at sweet-sour-salty-spicy in roughly equal parts, with the fish sauce providing the deep savory backbone. Adjust: if too salty, more lime + a splash of water; if too sour, more sugar; if flat, more chili. Set aside; the sauce improves in 30 minutes as the flavors meld.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 3: Make the nuoc cham. In a small bowl, dissolve 30 g / 2 tbsp palm sugar in 90 ml " aria-label="Start 4 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">4</span>
         <div class="step-body">Heat the grill. Charcoal grill is traditional and best (lump charcoal lit with a chimney 20 to 25 minutes ahead). Gas grill works (preheat 10 minutes on high). Indoor grill pan or cast-iron skillet works (heat 5 minutes on highest setting until the surface is just smoking). The temperature target is 250°C / 480°F surface temperature, you should not be able to hold a hand 5 cm above the grates for more than 2 seconds.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 4: Heat the grill. Charcoal grill is traditional and best (lump charcoal lit with a" aria-label="Start 8 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">5</span>
         <div class="step-body">Grill the squid. Lift the squid from the marinade (let excess marinade drip off, too much marinade causes flare-ups and steaming). Place the tubes on the grill scored-side down first; the scoring will curl the tube into a cup shape within 15 seconds, which is normal and what you want. Grill 60 to 90 seconds; the underside should char at the cut edges and the surface should turn opaque white. Flip with tongs (do not pierce with a fork, the punctures release juice). Grill the second side 45 to 60 seconds; the surface should be similarly charred and the squid should feel just-firm to the tongs (not rubbery-springy). Remove to a serving platter immediately. Grill the tentacles separately (45 to 60 seconds per side; they cook faster). Total grill time per piece is 90 seconds to 2 minutes; longer overshoots into rubber.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Grill the squid. Lift the squid from the marinade (let excess marinade drip off," aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">6</span>
         <div class="step-body">Plate and serve. Cut the grilled tubes into 2 cm rings or leave whole (Vietnamese tradition serves them whole; the diner cuts pieces with chopsticks). Arrange on a serving platter with the tentacles. Scatter the cilantro and mint over the top. Serve with the nuoc cham in small individual dipping bowls, and 4 to 6 lime wedges (1 lime cut) on the side. Eat by chopstick: pick up a piece of squid, dip generously in nuoc cham (the dipping sauce is the dish, be generous), eat with rice or vermicelli noodles. The piece should hit the tongue with the smoke-and-char of the grilling, then the lime-fish-sauce-chili of the dip, then the herbal note of the mint and cilantro.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 6: Plate and serve. Cut the grilled tubes into 2 cm rings or leave whole (Vietnames" aria-label="Start 1 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -486,6 +498,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè ba màu (three-color Vietnamese sweet bean dessert)</span>
           <span class="pair-desc">Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. Th</span>
@@ -495,6 +508,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè chuối (Vietnamese banana, tapioca, and coconut chè)</span>
           <span class="pair-desc">Ripe bananas poached in a sweetened coconut milk base with small tapioca pearls. Builds in three the</span>
@@ -504,6 +518,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè đậu trắng (black-eyed pea and sticky rice chè)</span>
           <span class="pair-desc">Warm Vietnamese chè of tender black-eyed peas and chewy glutinous rice in a barely-sweet coconut mil</span>
@@ -513,6 +528,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè Thái (Vietnamese-Thai mixed fruit and jelly dessert)</span>
           <span class="pair-desc">Cold sweet soup of jackfruit, longan, lychee, basil seeds, and red ruby water chestnuts in sweetened</span>
@@ -522,6 +538,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Scoring squid (cross-hatch)</span>
           <span class="pair-desc">Cut a shallow cross-hatch grid into the inside of a squid tube before slicing. The cuts increase sur</span>
@@ -531,6 +548,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Squid (calamari)</span>
           <span class="pair-desc">Cephalopod muscle composed of densely cross-linked collagen. Cooks through one of two windows: 90 se</span>
@@ -540,6 +558,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè trôi nước (glutinous rice balls in ginger syrup)</span>
           <span class="pair-desc">Chewy glutinous rice balls filled with sweet mashed mung bean, floated in a fresh ginger syrup and c</span>
@@ -549,6 +568,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Nuoc cham</span>
           <span class="pair-desc">The Vietnamese fish-sauce dipping sauce: fish sauce, lime, sugar, water, garlic, chili. Pourable, br</span>
@@ -639,6 +659,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

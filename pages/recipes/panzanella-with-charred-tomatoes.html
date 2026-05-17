@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -102,6 +103,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">easy</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">341</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>3.4</strong>g protein</span><span class="rh-macro"><strong>12</strong>g carbs</span><span class="rh-macro"><strong>32.7</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/italian.html" data-category="cuisines">Italian</a><span class="rh-tag rh-tag-course">side</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -112,6 +116,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -374,47 +386,47 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="32">
         <span class="step-num">1</span>
         <div class="step-body">Salt-cure the heirloom tomatoes. Place the 500 g / 2 large cored and chunked heirloom tomatoes in a wide non-reactive bowl (glass or ceramic, never aluminum which reacts with the tomato acid). Scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/fine-sea-salt.html">fine sea salt</a> evenly across the surface, distribute by gentle hand-toss, and let stand uncovered at room temperature for 30 minutes. The salt creates an osmotic gradient that pulls water out of the tomato cells, and along with the water comes dissolved free glutamate (the umami driver), citric and malic acid, sugars, and the volatile aromatics; what pools at the bottom of the bowl is concentrated tomato water, the most flavor-dense raw seasoning the kitchen produces. The flesh that remains is firmer, sweeter, and more umami-dense than raw tomato. This is the structural move of the recipe. <a class="step-tech" href="../techniques/tomato-salt-cure.html">Tomato salt cure</a><button type="button" class="step-time step-time-btn" data-step-timer="32" data-step-label="Step 1: Salt-cure the heirloom tomatoes. Place the 500 g / 2 large cored and chunked hei" aria-label="Start 32 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">32 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="14">
         <span class="step-num">2</span>
         <div class="step-body">While the tomato cures, crisp the bread. Heat the oven to 180 °C / 350 °F. Toss the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="300" data-metric-unit="g" data-imp-qty="10.582197216882133" data-imp-unit="oz">300 g</span><!-- /auto-link-skip --> / torn sourdough chunks with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> olive oil on a sheet pan, spread to a single layer, and bake 10 to 12 minutes until the surfaces are dry and lightly golden but the interiors are still pliant when pressed; the bread should snap-then-yield at the bite, not shatter. Pull and let cool. Fully crisp croutons are wrong here; the bread needs interior elasticity to absorb the tomato water without crumbling into mush. If using already-stale bread (4 days old, dry through), reduce the oven time to 5 to 7 minutes; the goal is the same texture endpoint, not a fixed time.<button type="button" class="step-time step-time-btn" data-step-timer="14" data-step-label="Step 2: While the tomato cures, crisp the bread. Heat the oven to 180 °C / 350 °F. Toss " aria-label="Start 14 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">14 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">3</span>
         <div class="step-body">Blister the cherry tomatoes. Heat a heavy carbon-steel or cast-iron skillet over medium-high for 3 to 4 minutes, until a flick of water snaps and evaporates within 2 seconds. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="8" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">8 g / 2 tsp</span><!-- /auto-link-skip --> olive oil; it should shimmer and barely smoke at the edges. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="250" data-metric-unit="g" data-imp-qty="2" data-imp-unit="cups">250 g / 2 cups</span><!-- /auto-link-skip --> patted-dry cherry tomatoes in a single uncrowded layer (work in two batches if your skillet is small; a crowded pan steams the tomatoes instead of blistering them). Cook 3 to 4 minutes without moving, until the underside skin is dark-spotted, blistered, and split in places; flip with tongs and cook 2 to 3 minutes more on the second face. The skins should look black-spotted and the interior gel should bubble visibly through the splits. Pull to a plate, season with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>, and rest. The Maillard browning on the skins contributes pyrazines and furans that the raw cured tomato cannot supply; this is the second umami axis of the salad. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 3: Blister the cherry tomatoes. Heat a heavy carbon-steel or cast-iron skillet over" aria-label="Start 8 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
-        <div class="step-body">Build the vinaigrette. While the bread cools and the tomato cures, in a small bowl combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/red-wine-vinegar.html">red wine vinegar</a>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dijon-mustard.html">dijon mustard</a>, the 4 g / 1 small mashed garlic clove, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> fine sea salt, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> cracked black pepper. Whisk with a fork until the salt fully dissolves; the salt has to dissolve in the vinegar phase before the oil goes in or it pockets in the dressing as gritty hot spots. Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="g" data-imp-qty="6" data-imp-unit="tbsp">90 g / 6 tbsp</span><!-- /auto-link-skip --> olive oil in a thin steady pour while whisking vigorously; the dijon mucilage and the mashed garlic provide the surface-active emulsifiers, and the slow oil addition gives the colloid time to form. The dressing should look thick, opaque, and slightly creamy when finished; if it stays clearly two-phase after the oil is in, whisk harder for another 30 seconds. Set aside. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Build the vinaigrette. While the bread cools and the tomato cures, in a small bo" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">Build the vinaigrette. While the bread cools and the tomato cures, in a small bowl combine the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">30 g / 2 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="red wine vinegar" data-sub-use="sherry vinegar (use 25 g instead of 30 g; sherry is sharper, 7 percent acetic vs 6 percent for red wine)" data-sub-note="Sherry vinegar is acceptable and reads slightly more refined; red wine vinegar is the canonical Tuscan choice and what the dish is built around." tabindex="0" role="button" aria-label="Substitution available for red wine vinegar"><a class="x-link" data-category="ingredients" href="../ingredients/red-wine-vinegar.html">red wine vinegar</a></span>, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/dijon-mustard.html">dijon mustard</a>, the 4 g / 1 small mashed garlic clove, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="2" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">2 g / ½ tsp</span><!-- /auto-link-skip --> fine sea salt, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">1 g / ½ tsp</span><!-- /auto-link-skip --> cracked black pepper. Whisk with a fork until the salt fully dissolves; the salt has to dissolve in the vinegar phase before the oil goes in or it pockets in the dressing as gritty hot spots. Stream in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="g" data-imp-qty="6" data-imp-unit="tbsp">90 g / 6 tbsp</span><!-- /auto-link-skip --> olive oil in a thin steady pour while whisking vigorously; the dijon mucilage and the mashed garlic provide the surface-active emulsifiers, and the slow oil addition gives the colloid time to form. The dressing should look thick, opaque, and slightly creamy when finished; if it stays clearly two-phase after the oil is in, whisk harder for another 30 seconds. Set aside. <a class="step-tech" href="../techniques/vinaigrette-emulsion.html">Vinaigrette emulsion</a><button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Build the vinaigrette. While the bread cools and the tomato cures, in a small bo" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">5</span>
         <div class="step-body">Drain the cured tomato. Tip the salt-cured heirloom tomatoes and their accumulated water into a fine-mesh sieve set over a bowl. Let drain 5 minutes; gently shake to release any pockets but do not press the flesh (pressing extracts pulp as well as water and the dressing turns muddy). You should have 80 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="4.232878886752853" data-imp-unit="oz">120 g</span><!-- /auto-link-skip --> of clear-to-pale-pink tomato water in the bowl; reserve. The drained tomato flesh is now firmer, more concentrated, and pre-seasoned; transfer to a wide mixing bowl.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 5: Drain the cured tomato. Tip the salt-cured heirloom tomatoes and their accumulat" aria-label="Start 6 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="7">
         <span class="step-num">6</span>
         <div class="step-body">Soak the bread in tomato water plus vinaigrette. Add the cooled crisped sourdough chunks and the prepared red onion half-moons to a separate large mixing bowl. Pour the reserved 80 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="4.232878886752853" data-imp-unit="oz">120 g</span><!-- /auto-link-skip --> tomato water over the bread, then add half the vinaigrette (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="5" data-imp-unit="tbsp">70 g / 5 tbsp</span><!-- /auto-link-skip -->). Toss with hands or a wide spoon until every chunk is glistening and the bread has absorbed most of the liquid (about 60 seconds of gentle turning). Let stand 5 minutes; the bread will continue to drink and will plump from dry crouton to chewy-but-intact texture. The bread is now carrying tomato umami and vinaigrette acid as its primary flavor; this is what separates panzanella from croutons-in-salad.<button type="button" class="step-time step-time-btn" data-step-timer="7" data-step-label="Step 6: Soak the bread in tomato water plus vinaigrette. Add the cooled crisped sourdoug" aria-label="Start 7 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">7 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
-        <div class="step-body">Combine and dress. Add the drained heirloom tomato flesh, the blistered cherry tomatoes (and any cherry-tomato juice that pooled on the resting plate), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">200 g / 1 cup</span><!-- /auto-link-skip --> cucumber half-moons, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">15 g / 1½ tbsp</span><!-- /auto-link-skip --> drained capers to the bread bowl. Pour the remaining vinaigrette (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="5" data-imp-unit="tbsp">70 g / 5 tbsp</span><!-- /auto-link-skip -->) over the top. Toss gently with a wide rubber spatula or salad spoons, 6 to 8 turns, just enough to integrate the dressing through the components without breaking down the bread; the salad should look glossy, with the vinaigrette pooled in the bottom of the bowl rather than fully absorbed. Taste a piece of bread; it should read tomato-saturated, lightly sharp from the vinegar, salt-forward but not over. Adjust salt only by <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.066006600660066" data-imp-unit="tbsp">1 g</span><!-- /auto-link-skip --> pinch increments; the cured tomato and the vinaigrette and the capers are all carrying salt and additional pinches stack quickly.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Combine and dress. Add the drained heirloom tomato flesh, the blistered cherry t" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">Combine and dress. Add the drained heirloom tomato flesh, the blistered cherry tomatoes (and any cherry-tomato juice that pooled on the resting plate), the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="g" data-imp-qty="1" data-imp-unit="cup">200 g / 1 cup</span><!-- /auto-link-skip --> cucumber half-moons, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">15 g / 1½ tbsp</span><!-- /auto-link-skip --> drained <span class="sub-hint" data-sub-for="capers" data-sub-use="chopped green olives (kalamata or castelvetrano, 30 g, pitted, rough chopped)" data-sub-note="Olives shift the dish toward a Greek-Italian crossover; the salt is similar but the flavor is olive-fruit rather than mustard-bright. Acceptable; the canonical Tuscan choice is capers." tabindex="0" role="button" aria-label="Substitution available for capers">capers</span> to the bread bowl. Pour the remaining vinaigrette (about <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="70" data-metric-unit="g" data-imp-qty="5" data-imp-unit="tbsp">70 g / 5 tbsp</span><!-- /auto-link-skip -->) over the top. Toss gently with a wide rubber spatula or salad spoons, 6 to 8 turns, just enough to integrate the dressing through the components without breaking down the bread; the salad should look glossy, with the vinaigrette pooled in the bottom of the bowl rather than fully absorbed. Taste a piece of bread; it should read tomato-saturated, lightly sharp from the vinegar, salt-forward but not over. Adjust salt only by <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.066006600660066" data-imp-unit="tbsp">1 g</span><!-- /auto-link-skip --> pinch increments; the cured tomato and the vinaigrette and the capers are all carrying salt and additional pinches stack quickly.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Combine and dress. Add the drained heirloom tomato flesh, the blistered cherry t" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="12">
         <span class="step-num">8</span>
         <div class="step-body">Rest 10 to 15 minutes before plating. The rest is structural: the bread continues to absorb the dressing and the tomato water, the onion mellows in the acid, the cured tomato releases a final round of flavor into the bowl, and the basil aromatic released in the next step lands on a salad that is already in equilibrium. A panzanella served immediately reads as bread and tomato in the same bowl; a panzanella rested 10 minutes reads as a single composed dish.<button type="button" class="step-time step-time-btn" data-step-timer="12" data-step-label="Step 8: Rest 10 to 15 minutes before plating. The rest is structural: the bread continue" aria-label="Start 12 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">12 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">9</span>
         <div class="step-body">Finish and plate. Tear the 15 g / 1 packed cup basil leaves into the salad and fold gently 2 to 3 turns; do not over-mix at this stage or the basil bruises and oxidizes. Tip onto a wide shallow platter (not a deep bowl, the bread bottom layer goes soggy past 30 minutes in a deep vessel), drizzle with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">15 g / 1 tbsp</span><!-- /auto-link-skip --> finishing olive oil, and crack additional black pepper across the top. Serve within 30 minutes of plating; panzanella is at its peak in the 15 to 45 minute window after assembly and degrades past 90 minutes as the bread oversoaks and the tomato weeps. Leftovers refrigerate poorly; the bread turns to wet sponge overnight. If anticipating leftovers, hold back a portion of unsoaked bread and dressed tomato separately, combine at second-day mealtime.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 9: Finish and plate. Tear the 15 g / 1 packed cup basil leaves into the salad and f" aria-label="Start 4 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
@@ -518,6 +530,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -527,6 +540,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Fresh egg pasta</span>
           <span class="pair-desc">Tipo 00 flour and whole eggs, kneaded to silk and rolled thin. The base for tonnarelli, tagliatelle,</span>
@@ -536,6 +550,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Greens and ricotta frittata</span>
           <span class="pair-desc">The Italian open-faced baked omelet: wilted greens (lacinato kale, chard, spinach, or a mix) folded </span>
@@ -545,6 +560,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Italian salsa verde</span>
           <span class="pair-desc">The Italian green sauce that finishes bollito misto, grilled and poached fish, roast meats, beans, e</span>
@@ -554,6 +570,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Tomato salt cure</span>
           <span class="pair-desc">Salt cut tomato flesh to draw out free water plus dissolved glutamate, citric and malic acid, sugars</span>
@@ -563,6 +580,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -572,6 +590,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Vinaigrette emulsion</span>
           <span class="pair-desc">Stream oil into a vinegar-and-mustard base while whisking: produces a temporary oil-in-water emulsio</span>
@@ -581,6 +600,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Italian</span>
           <span class="pair-desc">Restraint plus fat: olive oil, cured pork, aged cheese, acid. The technique is in the ratios, not th</span>
@@ -671,6 +691,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

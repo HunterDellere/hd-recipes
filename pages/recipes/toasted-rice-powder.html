@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -110,6 +111,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -178,27 +187,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">1</span>
         <div class="step-body">Heat a heavy dry skillet (cast iron or stainless, no oil) over medium-low heat for 2 minutes. The pan should be hot enough that a single test grain of rice tossed in begins to color within 30 seconds; if it scorches immediately, the heat is too high; if it stays chalk-white after 60 seconds, the heat is too low.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 1: Heat a heavy dry skillet (cast iron or stainless, no oil) over medium-low heat f" aria-label="Start 2 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">2</span>
-        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">80 g / ½ cup</span><!-- /auto-link-skip --> raw glutinous rice in a single layer. Toast 6 to 8 minutes total, shaking the pan or stirring with a heatproof spatula every 20 to 30 seconds. The constant motion is non-negotiable, dry-toasting works by direct pan-to-grain conduction without fat as an intermediary; an unmoved grain scorches in 10 to 15 seconds while neighbors stay raw. The color cue is uniform amber, not patchy white-and-brown; the smell cue is popcorn-and-toasted-bread aroma carrying out of the pan. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: Add the 80 g / ½ cup raw glutinous rice in a single layer. Toast 6 to 8 minutes " aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
+        <div class="step-body">Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">80 g / ½ cup</span><!-- /auto-link-skip --> raw <span class="sub-hint" data-sub-for="glutinous rice" data-sub-use="jasmine rice" data-sub-note="Long-grain jasmine works in a pinch and yields a workable khao khua, but the slightly-sticky mouthfeel that pure-amylopectin starch contributes is missing. Acceptable substitute; not equivalent. Reduce toast time by 60 seconds; jasmine browns slightly faster than glutinous." tabindex="0" role="button" aria-label="Substitution available for glutinous rice">glutinous rice</span> in a single layer. Toast 6 to 8 minutes total, shaking the pan or stirring with a heatproof spatula every 20 to 30 seconds. The constant motion is non-negotiable, dry-toasting works by direct pan-to-grain conduction without fat as an intermediary; an unmoved grain scorches in 10 to 15 seconds while neighbors stay raw. The color cue is uniform amber, not patchy white-and-brown; the smell cue is popcorn-and-toasted-bread aroma carrying out of the pan. <a class="step-tech" href="../techniques/dry-toasting.html">Dry-toasting (grains, spices, seeds, dried chilies)</a><button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: Add the 80 g / ½ cup raw glutinous rice in a single layer. Toast 6 to 8 minutes " aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">3</span>
         <div class="step-body">Pull at first uniform amber. The window between amber-popcorn and brown-bitter is narrow, 30 seconds late and the rice turns into a dish-ruining acrid powder. Tip the hot rice immediately onto a cool plate or sheet pan to arrest carryover; rice left in the hot skillet continues to color for 60 seconds and crosses the line.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 3: Pull at first uniform amber. The window between amber-popcorn and brown-bitter i" aria-label="Start 2 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">4</span>
         <div class="step-body">Cool to room temperature, 5 to 10 minutes. Transfer to a stone mortar or spice grinder. Pound or pulse to a coarse powder, target texture is between coarse sea salt and fine sand; never a fine flour. Each grain should be broken into 4 to 8 fragments, with some smaller dust mixed through. The coarse grind is structural; in larb dressing the powder hydrates to a slurry while keeping a faint grainy textural signature in each bite, which is part of the dish identity. A fine flour absorbs dressing the same way but reads as a thickened sauce rather than as larb.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 4: Cool to room temperature, 5 to 10 minutes. Transfer to a stone mortar or spice g" aria-label="Start 2 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
         <div class="step-body">Transfer to an airtight glass jar. Use within 2 weeks for full aromatic top; usable for 6 weeks before the toasted aromatics fade meaningfully. Beyond that, the powder still functions as a starch thickener but loses the aromatic-popcorn signature that distinguishes fresh khao khua from commercial. Standard application: <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tbsp">15 g / 2 tbsp</span><!-- /auto-link-skip --> per <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="500" data-metric-unit="g" data-imp-qty="1.1023122100918887" data-imp-unit="lb">500 g</span><!-- /auto-link-skip --> of meat in larb or nam tok.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Transfer to an airtight glass jar. Use within 2 weeks for full aromatic top; usa" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
@@ -254,6 +263,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Green curry pork</span>
           <span class="pair-desc">A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shr</span>
@@ -263,6 +273,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Larb gai (Thai-Lao minced chicken salad)</span>
           <span class="pair-desc">Hand-chopped chicken thigh poached in its own moisture, dressed with fish sauce, lime, toasted chili</span>
@@ -272,6 +283,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Som tum thai (green papaya salad)</span>
           <span class="pair-desc">Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce,</span>
@@ -281,6 +293,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea (no dye)</span>
           <span class="pair-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, </span>
@@ -290,6 +303,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Dry-toasting (grains, spices, seeds, dried chilies)</span>
           <span class="pair-desc">Toast raw grains, whole spices, seeds, nuts, or dried chilies in a hot dry skillet (no fat) until Ma</span>
@@ -299,6 +313,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Thai</span>
           <span class="pair-desc">Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated acr</span>
@@ -308,6 +323,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Glutinous rice (sticky rice, sweet rice)</span>
           <span class="pair-desc">Short- to medium-grain rice (Oryza sativa, glutinous cultivars) whose endosperm is essentially pure </span>
@@ -317,6 +333,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea with salted vanilla whip</span>
           <span class="pair-desc">Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted van</span>
@@ -410,6 +427,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

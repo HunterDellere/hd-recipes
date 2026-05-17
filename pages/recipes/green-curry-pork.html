@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -105,6 +106,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">193</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>1</strong>g protein</span><span class="rh-macro"><strong>52.3</strong>g carbs</span><span class="rh-macro"><strong>0.1</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><a class="rh-tag rh-tag-cuisine" href="../cuisines/thai.html" data-category="cuisines">Thai</a><span class="rh-tag rh-tag-course">dinner</span></div>
         <div class="rh-actions">
@@ -115,6 +119,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -397,54 +409,54 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">1</span>
         <div class="step-body">Combine <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="48" data-metric-unit="g" data-imp-qty="3" data-imp-unit="tbsp">48 g / 3 tbsp</span><!-- /auto-link-skip --> green curry paste, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="15" data-metric-unit="g" data-imp-qty="0.5291098608441066" data-imp-unit="oz">15 g</span><!-- /auto-link-skip --> minced lemongrass, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="5" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">5 g / 1 tsp</span><!-- /auto-link-skip --> grated ginger, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">6 g / 1 tsp</span><!-- /auto-link-skip --> shrimp paste in a small bowl. Work together with the back of a spoon until fully integrated. You are pre-augmenting the paste so the bloom step extracts everything at once.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 1: Combine 48 g / 3 tbsp green curry paste, 15 g minced lemongrass, 5 g / 1 tsp gra" aria-label="Start 3 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">2</span>
         <div class="step-body">Open both cans of full-fat coconut milk without shaking. Skim the thick cream from the top of each (about ¾ cup / 180g total) into a wide skillet or wok. Reserve the remaining liquid coconut milk and a final 3 tbsp / 45g of cream separately for the off-heat finish.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 2: Open both cans of full-fat coconut milk without shaking. Skim the thick cream fr" aria-label="Start 3 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">3</span>
         <div class="step-body">Set the skillet over medium-high heat. Cook the cream until the fat splits and the surface shimmers with clear oil, 3 to 4 minutes. This is the canonical &quot;cracking the cream&quot; step: you need the oil released before the paste goes in or it will steam rather than fry.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 3: Set the skillet over medium-high heat. Cook the cream until the fat splits and t" aria-label="Start 4 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
         <div class="step-body">Add the augmented paste. Fry hard, pressing, folding, scraping the pan floor, for 3 to 4 full minutes until the paste darkens one shade and the surrounding oil runs green-tinged and clear. Season with a <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="1" data-imp-unit="g">1 g</span><!-- /auto-link-skip --> pinch of kosher salt. Under-frying here is the single biggest reason home green curries taste flat.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Add the augmented paste. Fry hard, pressing, folding, scraping the pan floor, fo" aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">5</span>
-        <div class="step-body">Pour in everything left in the cans (about 2¼ cups / 575g — the watery serum plus any cream you did not skim) and the fish sauce. Stir hard to lift the paste off the pan floor and integrate. Add the bruised makrut lime leaves and the galangal coin.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Pour in everything left in the cans (about 2¼ cups / 575g — the watery serum plu" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
+        <div class="step-body">Pour in everything left in the cans (about 2¼ cups / 575g — the watery serum plus any cream you did not skim) and the fish sauce. Stir hard to lift the paste off the pan floor and integrate. Add the bruised <span class="sub-hint" data-sub-for="makrut lime leaves" data-sub-use="lime zest from 1 lime" data-sub-note="Misses the floral terpene profile of the leaf but carries acid and aromatic citrus oils." tabindex="0" role="button" aria-label="Substitution available for makrut lime leaves">makrut lime leaves</span> and the galangal coin.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 5: Pour in everything left in the cans (about 2¼ cups / 575g — the watery serum plu" aria-label="Start 1 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="10">
         <span class="step-num">6</span>
         <div class="step-body">Add the eggplant. Bring to a low, steady simmer at about 190°F (88°C). The doubled coconut volume means a hard boil at this fat-to-water ratio will permanently break the emulsion into greasy pools. Poach the eggplant 8 to 10 minutes until fully tender and curry-stained throughout.<button type="button" class="step-time step-time-btn" data-step-timer="10" data-step-label="Step 6: Add the eggplant. Bring to a low, steady simmer at about 190°F (88°C). The doubl" aria-label="Start 10 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">10 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">7</span>
         <div class="step-body">Add the bamboo shoots and shimeji clusters. Slice the pork thin against the grain, season with ¼ tsp / 1.5g kosher salt, and temper by spooning hot curry liquid over it before adding to the pan. Tempering prevents thermal shock and tightening.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 7: Add the bamboo shoots and shimeji clusters. Slice the pork thin against the grai" aria-label="Start 2 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">8</span>
         <div class="step-body">Add all <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="450" data-metric-unit="g" data-imp-qty="1" data-imp-unit="lb">450 g / 1 lb</span><!-- /auto-link-skip --> of the seasoned pork to the curry. Cook 4 to 5 minutes to 145°F (63°C) internal, then pull from heat immediately. Pork tenderloin past 150°F goes tight and chalky.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 8: Add all 450 g / 1 lb of the seasoned pork to the curry. Cook 4 to 5 minutes to 1" aria-label="Start 5 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="1">
         <span class="step-num">9</span>
         <div class="step-body">Off heat, stir in the reserved 3 tbsp / 45g coconut cream to restore body and silk; the cream gels back the emulsion that the simmer thinned. Fold in most of the Thai basil; the residual heat will release its anise compounds without bruising the leaves.<button type="button" class="step-time step-time-btn" data-step-timer="1" data-step-label="Step 9: Off heat, stir in the reserved 3 tbsp / 45g coconut cream to restore body and si" aria-label="Start 1 min timer for step 9"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">1 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">10</span>
-        <div class="step-body">Squeeze in the lime juice and stir in the palm sugar. Taste as a complete system. With two cans of coconut milk the base reads richer and slightly sweeter than a one-can curry; calibrate fish sauce in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.25" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="tsp">¼ tsp</span><!-- /auto-link-skip --> increments and lime in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7.5" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="tbsp">½ tbsp</span><!-- /auto-link-skip --> increments until salty, sour, sweet, and spicy land in proportion. Scatter sliced Thai chiles and remaining Thai basil over the top. Serve immediately over jasmine rice.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 10: Squeeze in the lime juice and stir in the palm sugar. Taste as a complete system" aria-label="Start 2 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
+        <div class="step-body">Squeeze in the lime juice and stir in the <span class="sub-hint" data-sub-for="palm sugar" data-sub-use="light brown sugar" data-sub-note="Works but flattens the caramel-butterscotch note that defines the Thai sweet axis." tabindex="0" role="button" aria-label="Substitution available for palm sugar">palm sugar</span>. Taste as a complete system. With two cans of coconut milk the base reads richer and slightly sweeter than a one-can curry; calibrate fish sauce in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1.25" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="tsp">¼ tsp</span><!-- /auto-link-skip --> increments and lime in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="7.5" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="tbsp">½ tbsp</span><!-- /auto-link-skip --> increments until salty, sour, sweet, and spicy land in proportion. Scatter sliced Thai chiles and remaining Thai basil over the top. Serve immediately over jasmine rice.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 10: Squeeze in the lime juice and stir in the palm sugar. Taste as a complete system" aria-label="Start 2 min timer for step 10"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
       <li class="step-item">
@@ -570,6 +582,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Som tum thai (green papaya salad)</span>
           <span class="pair-desc">Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce,</span>
@@ -579,6 +592,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai green curry paste</span>
           <span class="pair-desc">A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zes</span>
@@ -588,6 +602,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea (no dye)</span>
           <span class="pair-desc">Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, </span>
@@ -597,6 +612,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Thai iced tea with salted vanilla whip</span>
           <span class="pair-desc">Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted van</span>
@@ -606,6 +622,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12 h18"/><path d="M12 3 a14 14 0 0 1 0 18 a14 14 0 0 1 0 -18"/></svg></span>
             <span class="pair-cat">cuisines</span>
+            
           </span>
           <span class="pair-title">Thai</span>
           <span class="pair-desc">Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated acr</span>
@@ -615,6 +632,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Coconut milk (canned, full-fat)</span>
           <span class="pair-desc">Pressed coconut emulsion, ~17–22% fat. The lipid phase that carries fat-soluble aromatics in Thai an</span>
@@ -624,6 +642,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Toasted glutinous-rice powder (khao khua)</span>
           <span class="pair-desc">Raw glutinous rice dry-toasted in a hot skillet to amber, cooled, and ground coarse. The structural </span>
@@ -633,6 +652,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Air-fried okra with four flavor finishes</span>
           <span class="pair-desc">Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 40</span>
@@ -723,6 +743,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

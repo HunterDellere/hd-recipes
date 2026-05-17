@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -104,6 +105,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">204</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>16.4</strong>g protein</span><span class="rh-macro"><strong>31.5</strong>g carbs</span><span class="rh-macro"><strong>1.3</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Korean</span><span class="rh-tag rh-tag-course">appetizer</span><span class="rh-tag rh-tag-diet">dairy-free</span><span class="rh-tag rh-tag-diet">pescatarian</span></div>
         <div class="rh-actions">
@@ -114,6 +118,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -316,42 +328,42 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
-        <div class="step-body">Mix the batter. In a medium bowl, whisk together the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">100 g / ¾ cup</span><!-- /auto-link-skip --> AP flour, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="35" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">35 g / ¼ cup</span><!-- /auto-link-skip --> potato starch, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>. Add the 50 g / 1 beaten egg and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.875" data-imp-unit="cup">200 ml / ⅞ cup</span><!-- /auto-link-skip --> ice-cold water; whisk just until smooth, no lumps. Stop the moment the batter is uniform; over-whisking activates gluten and produces a bready, chewy shell rather than the crisp delicate disc the dish wants. Place the bowl in the refrigerator while you prep the solids; the cold rest (10 to 15 minutes) further relaxes any gluten that did form and steepens the temperature gradient at the pan interface.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Mix the batter. In a medium bowl, whisk together the 100 g / ¾ cup AP flour, 35 " aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Mix the batter. In a medium bowl, whisk together the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="cup">100 g / ¾ cup</span><!-- /auto-link-skip --> AP flour, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="35" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">35 g / ¼ cup</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="potato starch" data-sub-use="tapioca starch or cornstarch" data-sub-note="Tapioca is the closest functional match and holds shatter equally well; cornstarch is 80% as crisp and produces a denser shell. Sweet potato starch (Korean dangmyeon source) is also excellent." tabindex="0" role="button" aria-label="Substitution available for potato starch">potato starch</span>, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="tsp">3 g / ½ tsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/kosher-salt.html">kosher salt</a>. Add the 50 g / 1 beaten egg and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.875" data-imp-unit="cup">200 ml / ⅞ cup</span><!-- /auto-link-skip --> ice-cold water; whisk just until smooth, no lumps. Stop the moment the batter is uniform; over-whisking activates gluten and produces a bready, chewy shell rather than the crisp delicate disc the dish wants. Place the bowl in the refrigerator while you prep the solids; the cold rest (10 to 15 minutes) further relaxes any gluten that did form and steepens the temperature gradient at the pan interface.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 1: Mix the batter. In a medium bowl, whisk together the 100 g / ¾ cup AP flour, 35 " aria-label="Start 5 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">2</span>
-        <div class="step-body">Prep the scallion bed. Trim the 200 g / 2 bunches scallions of the dry root tips and any wilted leaves. Cut to 26 cm lengths (slightly under the pan diameter; you want a tight raft, not stalks hanging over the edge). For thicker stalks (white base over 1 cm thick), split lengthwise so all stalks lay flat without rocking. Pat dry on paper towels; wet scallions splatter when they hit hot oil.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Prep the scallion bed. Trim the 200 g / 2 bunches scallions of the dry root tips" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
+        <div class="step-body">Prep the scallion bed. Trim the 200 g / 2 bunches <span class="sub-hint" data-sub-for="scallions" data-sub-use="a mix of scallions and Chinese garlic chives" data-sub-note="The Jeolla version blends 70% scallion with 30% Chinese garlic chives (jiu cai). The chive contribution is herbal-pungent and brings a subtle garlic backnote; a beautiful refinement." tabindex="0" role="button" aria-label="Substitution available for scallions">scallions</span> of the dry root tips and any wilted leaves. Cut to 26 cm lengths (slightly under the pan diameter; you want a tight raft, not stalks hanging over the edge). For thicker stalks (white base over 1 cm thick), split lengthwise so all stalks lay flat without rocking. Pat dry on paper towels; wet scallions splatter when they hit hot oil.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 2: Prep the scallion bed. Trim the 200 g / 2 bunches scallions of the dry root tips" aria-label="Start 5 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">3</span>
-        <div class="step-body">Prep the seafood. Cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="4.232878886752853" data-imp-unit="oz">120 g</span><!-- /auto-link-skip --> cleaned squid into 1 cm rings; separate the tentacles. Halve the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> shrimp lengthwise through the back. If using whole live mussels, place 10 mussels in a small covered pot with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> water over high heat for 2 minutes; pull as soon as they open; shuck the meat from the shells, pull off the byssal threads (beards) and discard, and pat the meat very dry. Or use pre-shucked mussel meat patted dry. Place all three seafood elements (squid, shrimp, mussel) in one small bowl. Pat the whole bowl dry one more time with paper towels; wet seafood will steam in the batter rather than crisp into it.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 3: Prep the seafood. Cut the 120 g cleaned squid into 1 cm rings; separate the tent" aria-label="Start 8 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
+        <div class="step-body">Prep the seafood. Cut the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="120" data-metric-unit="g" data-imp-qty="4.232878886752853" data-imp-unit="oz">120 g</span><!-- /auto-link-skip --> cleaned <span class="sub-hint" data-sub-for="squid (in the seafood mix)" data-sub-use="small octopus, baby octopus, or additional shrimp" data-sub-note="Baby octopus tentacles are an excellent visual and textural alternative; cook the octopus by quick-blanching for 30 seconds before chopping. Additional shrimp loses the cephalopod register but preserves the seafood load." tabindex="0" role="button" aria-label="Substitution available for squid">squid</span> into 1 cm rings; separate the tentacles. Halve the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="3.527399072294044" data-imp-unit="oz">100 g</span><!-- /auto-link-skip --> shrimp lengthwise through the back. If using whole live <span class="sub-hint" data-sub-for="mussels (shucked)" data-sub-use="shucked small clams or scallops" data-sub-note="Shucked Manila or littleneck clams are the closest functional substitute; cook them as you would the mussels (quick steam, shuck, pat dry). Small bay scallops work but read sweeter and less briny." tabindex="0" role="button" aria-label="Substitution available for mussels">mussels</span>, place 10 mussels in a small covered pot with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">30 ml / 2 tbsp</span><!-- /auto-link-skip --> water over high heat for 2 minutes; pull as soon as they open; shuck the meat from the shells, pull off the byssal threads (beards) and discard, and pat the meat very dry. Or use pre-shucked mussel meat patted dry. Place all three seafood elements (squid, shrimp, mussel) in one small bowl. Pat the whole bowl dry one more time with paper towels; wet seafood will steam in the batter rather than crisp into it.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 3: Prep the seafood. Cut the 120 g cleaned squid into 1 cm rings; separate the tent" aria-label="Start 8 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
         <div class="step-body">Heat the pan. Place a 28 to 30 cm non-stick or carbon steel skillet over medium-high heat for 2 minutes. Add <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">50 g / ¼ cup</span><!-- /auto-link-skip --> of the neutral oil; tilt to coat the pan in a 3 to 4 mm film (the oil should fully wet the bottom and pool slightly at the edges when tilted). Bring the oil up to 180 to 190°C / 360 to 375°F; the cue is a faint shimmer, the first whisper of smoke, and a drop of batter sizzling and bubbling vigorously within 2 seconds of contact. Hold the additional 2 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="45" data-metric-unit="ml" data-imp-qty="3" data-imp-unit="tbsp">3 tbsp</span><!-- /auto-link-skip --> oil in a small jug nearby for edge-basting during the cook. <a class="step-tech" href="../techniques/maillard-sear.html">Maillard sear</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: Heat the pan. Place a 28 to 30 cm non-stick or carbon steel skillet over medium-" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">5</span>
         <div class="step-body">Assemble in the pan. Lay the 200 g / 2 bunches trimmed scallions across the hot oil as a tight raft, all whites pointing the same direction (the raft pattern is canonical and produces uniform cooking; a haphazard scatter works but cooks unevenly). The scallions will sizzle aggressively on contact; let them sit for 20 seconds to take on color on the underside. Then quickly pour the cold batter from the refrigerator evenly over the scallion raft, working from the center outward in a slow spiral; the batter should just cover the scallions, with the dark green tops visible through the batter at the surface. Scatter the seafood mixture (squid, shrimp, mussel) evenly across the top of the batter, pressing each piece lightly into the batter surface so it sits embedded rather than balanced on top. <a class="step-tech" href="../techniques/batter-frying.html">Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)</a><button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 5: Assemble in the pan. Lay the 200 g / 2 bunches trimmed scallions across the hot " aria-label="Start 2 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">6</span>
         <div class="step-body">First-side cook. Reduce heat to medium-high and cook undisturbed for 4 to 5 minutes. The cues for done-on-the-bottom are: edges of the pancake turning dark golden and beginning to lift slightly from the pan, the surface batter setting from shiny-wet to matte (no more pooling), the seafood whitening as it cooks through from the heat conducting up through the batter, and the disc releasing cleanly when a spatula is slid under the edge. In the last 60 seconds, drizzle 1 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> of the reserved oil around the outside edge of the pancake; the oil flows under the disc, fries the bottom edge harder, and produces the shatter-crisp rim that is the signature of properly cooked haemul pajeon. Do not move or peek before 3 minutes; the bottom needs uninterrupted contact to set. <a class="step-tech" href="../techniques/batter-frying.html">Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)</a><button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 6: First-side cook. Reduce heat to medium-high and cook undisturbed for 4 to 5 minu" aria-label="Start 5 min timer for step 6"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">7</span>
         <div class="step-body">Flip. Slide a wide spatula (or two flexible spatulas) fully under the pancake to confirm clean release. In one decisive motion, flip the pancake onto its uncooked side. The flip can be done two ways: (a) directly with the spatula if the pan is wide enough, sliding the disc onto the spatula and tipping back into the pan; (b) by sliding the disc onto a plate, inverting the empty pan over the plate, and flipping the pair together (this works for very large or very loaded pancakes). The hot pan will be slightly drier on the second side; drizzle the last tbsp of oil around the edges. Cook the second side for 2 to 3 minutes, pressing firmly with the spatula during the last 30 seconds to maximize pan contact and crisp the seafood-side surface. <a class="step-tech" href="../techniques/batter-frying.html">Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)</a><button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 7: Flip. Slide a wide spatula (or two flexible spatulas) fully under the pancake to" aria-label="Start 3 min timer for step 7"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="2">
         <span class="step-num">8</span>
         <div class="step-body">Finish and plate. Slide the pancake onto a cutting board, seafood-side up. Scatter the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="3" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tsp">3 g / 1 tsp</span><!-- /auto-link-skip --> toasted sesame seeds across the surface. Let rest for 60 seconds to let the residual steam escape (cutting immediately makes the bottom soft). Cut into 8 to 12 wedges with a pizza wheel or sharp chef knife. Serve immediately on a warmed plate with the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">80 g / ⅓ cup</span><!-- /auto-link-skip --> pajeon dipping sauce in a small bowl alongside; the diner picks up each wedge with chopsticks, dips into the sauce, and eats while the crisp bottom is still glass-shatter. Pajeon held more than 5 minutes loses crisp; if you must hold, place on a wire rack (never a plate or paper towel, both trap steam) in a 90°C / 200°F oven for up to 10 minutes.<button type="button" class="step-time step-time-btn" data-step-timer="2" data-step-label="Step 8: Finish and plate. Slide the pancake onto a cutting board, seafood-side up. Scatt" aria-label="Start 2 min timer for step 8"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">2 min</span></button></div>
         
@@ -466,6 +478,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Baechu kimchi</span>
           <span class="pair-desc">Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce pa</span>
@@ -475,6 +488,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Gochujang sauce</span>
           <span class="pair-desc">The Korean condiment-grade sauce built from gochujang: fermented chili paste thinned with rice vineg</span>
@@ -484,6 +498,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Gyeran-jjim</span>
           <span class="pair-desc">The Korean steamed savory egg custard: beaten eggs whisked with anchovy-and-kombu stock (or chicken </span>
@@ -493,6 +508,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Kkakdugi</span>
           <span class="pair-desc">Cubed daikon radish kimchi, salt-drawn for 30 minutes to firm the cube structure, tossed with a goch</span>
@@ -502,6 +518,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)</span>
           <span class="pair-desc">A cold liquid suspension of flour, starch, and water (sometimes with egg) ladled onto a thin film of</span>
@@ -511,6 +528,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 L13 8 L17 12 L7 21 Z"/><path d="M14 7 L17 4 L20 7 L17 10"/></svg></span>
             <span class="pair-cat">techniques</span>
+            
           </span>
           <span class="pair-title">Maillard sear</span>
           <span class="pair-desc">Drive amino acids and reducing sugars on a dry protein surface past 140C to build a browned crust an</span>
@@ -520,6 +538,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Potato starch</span>
           <span class="pair-desc">Pure starch extracted from potato tubers. Large granule size (50 to 100 microns), high amylose conte</span>
@@ -529,6 +548,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Korean spicy cucumber salad (oi-muchim, 오이무침)</span>
           <span class="pair-desc">Sliced Korean or Persian cucumbers salted briefly, then tossed with gochugaru, garlic, fish sauce, r</span>
@@ -619,6 +639,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

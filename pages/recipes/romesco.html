@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -103,6 +104,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">109</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.7</strong>g protein</span><span class="rh-macro"><strong>1.9</strong>g carbs</span><span class="rh-macro"><strong>11.3</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Catalan</span><span class="rh-tag rh-tag-course">sauce</span><span class="rh-tag rh-tag-diet">vegetarian</span><span class="rh-tag rh-tag-diet">vegan</span><span class="rh-tag rh-tag-diet">gluten-free</span><span class="rh-tag rh-tag-diet">dairy-free</span></div>
         <div class="rh-actions">
@@ -113,6 +117,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -283,27 +295,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="20">
         <span class="step-num">1</span>
-        <div class="step-body">Soak the 15 g / 2 to 3 dried ñora peppers in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.8333333333333334" data-imp-unit="cup">200 ml</span><!-- /auto-link-skip --> hot water for 20 minutes until softened. Scrape the flesh from the skin with the back of a spoon, discarding the skin (the skin reads tough and does not break down in the processor). Reserve <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml</span><!-- /auto-link-skip --> of the soaking liquid; the soaking water is sweet and pepper-flavored, structural for thinning the sauce. If using a roasted red bell pepper instead, see substitutions.<button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 1: Soak the 15 g / 2 to 3 dried ñora peppers in 200 ml hot water for 20 minutes unt" aria-label="Start 20 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
+        <div class="step-body">Soak the 15 g / 2 to 3 <span class="sub-hint" data-sub-for="dried ñora peppers" data-sub-use="1 medium roasted red bell pepper (jarred is acceptable)" data-sub-note="Roast a fresh red bell pepper directly over a gas flame or under a broiler until the skin is fully blackened (5 to 7 minutes); cool, peel, seed. Or use 1 medium jarred roasted red pepper (about 100 g drained), patted dry. The bell pepper version reads slightly more vegetal and less sweet than the ñora; the smoked paprika is more important in the bell pepper version because the pepper itself is less complex. Skip the soaking liquid; thin with warm water instead." tabindex="0" role="button" aria-label="Substitution available for dried ñora peppers">dried ñora peppers</span> in <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.8333333333333334" data-imp-unit="cup">200 ml</span><!-- /auto-link-skip --> hot water for 20 minutes until softened. Scrape the flesh from the skin with the back of a spoon, discarding the skin (the skin reads tough and does not break down in the processor). Reserve <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml</span><!-- /auto-link-skip --> of the soaking liquid; the soaking water is sweet and pepper-flavored, structural for thinning the sauce. If using a roasted red bell pepper instead, see substitutions.<button type="button" class="step-time step-time-btn" data-step-timer="20" data-step-label="Step 1: Soak the 15 g / 2 to 3 dried ñora peppers in 200 ml hot water for 20 minutes unt" aria-label="Start 20 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">20 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">2</span>
         <div class="step-body">In a dry medium skillet over medium heat, toast the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">50 g / ⅓ cup</span><!-- /auto-link-skip --> almonds 4 to 5 minutes, shaking the pan continuously, until deeply golden and fragrant; the toast should go past pale and into a noticeable brown. Transfer to a plate. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">30 g / ¼ cup</span><!-- /auto-link-skip --> hazelnuts to the same dry pan and toast 5 to 6 minutes until the skins blister and crack. Pour the hazelnuts into a clean tea towel, fold over, and rub vigorously 30 seconds to remove the skins (most skins will release; perfect skin removal is not required). The deep nut toast is the structural flavor base of romesco; pale nuts produce a flat sauce.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 2: In a dry medium skillet over medium heat, toast the 50 g / ⅓ cup almonds 4 to 5 " aria-label="Start 8 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="8">
         <span class="step-num">3</span>
         <div class="step-body">Char the 100 g / 1 medium tomato directly over a gas flame on a low burner, turning with tongs, until the skin is fully blackened and blistered (4 to 5 minutes). Alternatively, broil 4 inches from the broiler element until the skin chars (5 to 6 minutes). Cool 2 minutes, peel off the blackened skin, and roughly chop. In the same dry skillet, dry-roast the 8 g / 2 garlic cloves over medium heat 5 minutes, turning, until the skins are golden and the cloves are soft; cool and mash with the back of a knife. The char-and-roast pair builds the smoky-sweet aromatic depth that defines romesco.<button type="button" class="step-time step-time-btn" data-step-timer="8" data-step-label="Step 3: Char the 100 g / 1 medium tomato directly over a gas flame on a low burner, turn" aria-label="Start 8 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">8 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">4</span>
-        <div class="step-body">In the bowl of a food processor (4 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1680" data-metric-unit="ml" data-imp-qty="7" data-imp-unit="cup">7 cup</span><!-- /auto-link-skip --> capacity), combine the toasted almonds and hazelnuts; pulse 10 to 12 times to a coarse-medium grind (the texture should be like coarse breadcrumbs, not a paste; some structural texture is canonical to romesco). Add the ñora flesh (or roasted red pepper), charred tomato, mashed roasted garlic, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> smoked paprika, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="5" data-imp-unit="tsp">25 g / 5 tsp</span><!-- /auto-link-skip --> sherry vinegar; pulse 8 to 10 more times to combine into a coarse paste, scraping the sides between pulses.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: In the bowl of a food processor (4 to 7 cup capacity), combine the toasted almon" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
+        <div class="step-body">In the bowl of a food processor (4 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1680" data-metric-unit="ml" data-imp-qty="7" data-imp-unit="cup">7 cup</span><!-- /auto-link-skip --> capacity), combine the toasted almonds and hazelnuts; pulse 10 to 12 times to a coarse-medium grind (the texture should be like coarse breadcrumbs, not a paste; some structural texture is canonical to romesco). Add the ñora flesh (or roasted red pepper), charred tomato, mashed roasted garlic, <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="2" data-imp-unit="tsp">4 g / 2 tsp</span><!-- /auto-link-skip --> smoked paprika, and <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="25" data-metric-unit="g" data-imp-qty="5" data-imp-unit="tsp">25 g / 5 tsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="sherry vinegar" data-sub-use="red wine vinegar or aged balsamic" data-sub-note="Sherry vinegar is the canonical Catalan choice and reads more elegant than red wine vinegar; red wine vinegar is the practical substitute and the standard supermarket alternative. Aged balsamic reads sweeter and is acceptable but pulls the sauce in a less Catalan direction." tabindex="0" role="button" aria-label="Substitution available for sherry vinegar">sherry vinegar</span>; pulse 8 to 10 more times to combine into a coarse paste, scraping the sides between pulses.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 4: In the bowl of a food processor (4 to 7 cup capacity), combine the toasted almon" aria-label="Start 3 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">5</span>
         <div class="step-body">With the processor running on continuous low, drizzle in the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">100 g / ½ cup</span><!-- /auto-link-skip --> olive oil through the feed tube in a steady stream, then add 30 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="60" data-metric-unit="ml" data-imp-qty="0.25" data-imp-unit="cup">60 ml</span><!-- /auto-link-skip --> of the reserved ñora soaking liquid (or warm water if using bell pepper) to thin to a thick spoonable consistency, somewhere between a dip and a pourable sauce. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="4" data-metric-unit="g" data-imp-qty="0.75" data-imp-unit="tsp">4 g / ¾ tsp</span><!-- /auto-link-skip --> salt, pulse to combine, taste and adjust: romesco should read deeply nutty with smoky paprika, sweet pepper-and-tomato, and a clean sherry-vinegar lift; if flat, more salt and vinegar; if sharp, more oil; if too thick, more soaking liquid. Transfer to a serving bowl; the sauce can be served immediately but improves significantly with 2 hours rest at room temperature.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: With the processor running on continuous low, drizzle in the 100 g / ½ cup olive" aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
@@ -393,6 +405,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Bouillabaisse Marseillaise</span>
           <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
@@ -402,6 +415,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter cacio e pepe</span>
           <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
@@ -411,6 +425,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
           <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
@@ -420,6 +435,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
           <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
@@ -429,6 +445,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Hazelnut</span>
           <span class="pair-desc">The seed of Corylus avellana (European hazel) and Corylus americana (American). Sweet, structural, w</span>
@@ -438,6 +455,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Carbonara</span>
           <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
@@ -447,6 +465,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           <span class="pair-desc">Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter</span>
@@ -456,6 +475,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chicken gnocchi soup (Olive Garden copycat)</span>
           <span class="pair-desc">A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby sp</span>
@@ -546,6 +566,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

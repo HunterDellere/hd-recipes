@@ -52,6 +52,7 @@
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -101,6 +102,9 @@
         </svg>
       </span>
       <span class="rh-stat-text"><span class="rh-stat-value">medium</span><span class="rh-stat-label">difficulty</span></span>
+    </div><div class="rh-stat rh-stat-kcal" data-stat="kcal" data-kcal-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Calories per serving — click to show macros">
+      <span class="rh-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z"/><path d="M9 14c0 2 1 4 3 4s3-2 3-4"/></svg></span>
+      <span class="rh-stat-text"><span class="rh-stat-value">102</span><span class="rh-stat-label">kcal / serving</span><span class="rh-macros" hidden><span class="rh-macro"><strong>0.4</strong>g protein</span><span class="rh-macro"><strong>25.3</strong>g carbs</span><span class="rh-macro"><strong>0.2</strong>g fat</span></span></span>
     </div></div>
         <div class="rh-tags"><span class="rh-tag rh-tag-cuisine">Taiwanese</span><span class="rh-tag rh-tag-course">drink</span><span class="rh-tag rh-tag-diet">vegetarian</span></div>
         <div class="rh-actions">
@@ -111,6 +115,14 @@
               </svg>
             </span>
             <span class="rh-cook-label">Cook's view</span>
+          </button>
+          <button type="button" class="rh-print-btn" data-print aria-label="Print this recipe">
+            <span class="rh-print-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+              </svg>
+            </span>
+            <span class="rh-print-label">Print</span>
           </button>
         </div>
       </div>
@@ -276,27 +288,27 @@
     <span class="section-anchor" id="execution"></span>
     <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
-      <li class="step-item">
+      <li class="step-item" data-time-min="6">
         <span class="step-num">1</span>
         <div class="step-body">Wear gloves while peeling raw taro. The corm contains calcium oxalate crystals that irritate skin and throat, oil your hands as a backup if gloves are unavailable, since the oxalate is fat-soluble. Peel the taro and cut into 2 cm / ¾ inch chunks. Rinse briefly to wash off any released oxalate from the cut surface.<button type="button" class="step-time step-time-btn" data-step-timer="6" data-step-label="Step 1: Wear gloves while peeling raw taro. The corm contains calcium oxalate crystals t" aria-label="Start 6 min timer for step 1"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">6 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="25">
         <span class="step-num">2</span>
         <div class="step-body">Steam the taro over rising water for 20 to 22 minutes until completely tender, a fork should slip through with no resistance. Steaming, not boiling, preserves the gentle nutty flavor; boiled taro absorbs water and the flavor goes flat. The flesh will be ivory with faint purple veining; do not expect vivid lavender.<button type="button" class="step-time step-time-btn" data-step-timer="25" data-step-label="Step 2: Steam the taro over rising water for 20 to 22 minutes until completely tender, a" aria-label="Start 25 min timer for step 2"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">25 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="5">
         <span class="step-num">3</span>
         <div class="step-body">While still warm, transfer the steamed taro to a bowl. Add the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="50" data-metric-unit="g" data-imp-qty="0.25" data-imp-unit="cup">50 g / ¼ cup</span><!-- /auto-link-skip --> sugar, the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="1" data-metric-unit="g" data-imp-qty="0.16666666666666669" data-imp-unit="tsp">1 g</span><!-- /auto-link-skip --> pinch salt, and the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="g" data-imp-qty="1.5" data-imp-unit="tbsp">30 g / 1½ tbsp</span><!-- /auto-link-skip --> <a class="x-link" data-category="ingredients" href="../ingredients/sweetened-condensed-milk.html">sweetened condensed milk</a>. Mash with a fork into a smooth thick paste, leave some small chunks for textural interest, or process completely smooth depending on preference. The taro paste should taste like a sweet steamed potato with a subtle perfume; if it tastes bland the taro was old or under-steamed.<button type="button" class="step-time step-time-btn" data-step-timer="5" data-step-label="Step 3: While still warm, transfer the steamed taro to a bowl. Add the 50 g / ¼ cup suga" aria-label="Start 5 min timer for step 3"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">5 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="4">
         <span class="step-num">4</span>
-        <div class="step-body">Tea concentrate. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">200 ml / ¾ cup</span><!-- /auto-link-skip --> plus <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> water at 85°C over the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">6 g / 1 tbsp</span><!-- /auto-link-skip --> jasmine green tea. Steep 3 minutes, short steep at sub-boiling temperature pulls jasmine aroma without the catechin bitterness that a longer hot steep would produce. Strain. Cool to room temperature; hot tea breaks the dairy emulsion when poured into milk.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Tea concentrate. Pour the 200 ml / ¾ cup plus 2 tbsp water at 85°C over the 6 g " aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
+        <div class="step-body">Tea concentrate. Pour the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="200" data-metric-unit="ml" data-imp-qty="0.75" data-imp-unit="cup">200 ml / ¾ cup</span><!-- /auto-link-skip --> plus <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="30" data-metric-unit="ml" data-imp-qty="2" data-imp-unit="tbsp">2 tbsp</span><!-- /auto-link-skip --> water at 85°C over the <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="6" data-metric-unit="g" data-imp-qty="1" data-imp-unit="tbsp">6 g / 1 tbsp</span><!-- /auto-link-skip --> <span class="sub-hint" data-sub-for="jasmine green tea" data-sub-use="oolong tea (lightly oxidized)" data-sub-note="Common at Taiwanese chains. Oolong adds a buttery roundness that pairs differently with taro, less floral, more rich. Use 8 g / 1½ tbsp and steep at 90°C for 4 minutes." tabindex="0" role="button" aria-label="Substitution available for jasmine green tea">jasmine green tea</span>. Steep 3 minutes, short steep at sub-boiling temperature pulls jasmine aroma without the catechin bitterness that a longer hot steep would produce. Strain. Cool to room temperature; hot tea breaks the dairy emulsion when poured into milk.<button type="button" class="step-time step-time-btn" data-step-timer="4" data-step-label="Step 4: Tea concentrate. Pour the 200 ml / ¾ cup plus 2 tbsp water at 85°C over the 6 g " aria-label="Start 4 min timer for step 4"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">4 min</span></button></div>
         
       </li>
-      <li class="step-item">
+      <li class="step-item" data-time-min="3">
         <span class="step-num">5</span>
         <div class="step-body">Build the drink. In a tall glass, place <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="0.5" data-imp-unit="cup">80 g / ½ cup</span><!-- /auto-link-skip --> cooked warm tapioca pearls in the bottom. Spoon <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="90" data-metric-unit="g" data-imp-qty="0.3333333333333333" data-imp-unit="cup">90 g / ⅓ cup</span><!-- /auto-link-skip --> of the warm taro paste over the pearls. Pour <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="150" data-metric-unit="ml" data-imp-qty="0.6666666666666666" data-imp-unit="cup">150 ml / ⅔ cup</span><!-- /auto-link-skip --> cold <a class="x-link" data-category="ingredients" href="../ingredients/whole-milk.html">whole milk</a> over the taro. Add a generous handful of ice (60 to <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="80" data-metric-unit="g" data-imp-qty="2.8219192578352352" data-imp-unit="oz">80 g</span><!-- /auto-link-skip -->). Top with <!-- auto-link-skip --><span class="step-qty" data-step-qty data-metric-qty="100" data-metric-unit="ml" data-imp-qty="0.5" data-imp-unit="cup">100 ml / ½ cup</span><!-- /auto-link-skip --> of the cooled tea concentrate. The layers will visually stratify briefly, then begin to merge.<button type="button" class="step-time step-time-btn" data-step-timer="3" data-step-label="Step 5: Build the drink. In a tall glass, place 80 g / ½ cup cooked warm tapioca pearls " aria-label="Start 3 min timer for step 5"><span class="step-time-icon" aria-hidden="true">⏱</span><span class="step-time-text">3 min</span></button></div>
         
@@ -378,6 +390,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade crystal boba (agar pearls)</span>
           <span class="pair-desc">Clear, jelly-bright pearls made from agar-agar dropped through cold oil into a chilled bath. A diffe</span>
@@ -387,6 +400,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade popping boba (reverse spherification)</span>
           <span class="pair-desc">Fruit-juice spheres held together by an alginate membrane around a still-liquid center. The popping </span>
@@ -396,6 +410,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Homemade black tapioca pearls (boba)</span>
           <span class="pair-desc">From-scratch tapioca pearls. Boiling-water-hydrated dough rolled into spheres, blanched, then finish</span>
@@ -405,6 +420,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Banana bread</span>
           <span class="pair-desc">A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maxim</span>
@@ -414,6 +430,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="3" rx="0.7"/><path d="M7 6v13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6"/><line x1="9" y1="11" x2="15" y2="11"/></svg></span>
             <span class="pair-cat">ingredients</span>
+            
           </span>
           <span class="pair-title">Taro root</span>
           <span class="pair-desc">Starchy corm of Colocasia esculenta. Pale flesh flecked with purple veins; cooks into a sweet, nutty</span>
@@ -423,6 +440,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Brown butter sugar cookies</span>
           <span class="pair-desc">Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar sh</span>
@@ -432,6 +450,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chai pumpkin cupcakes</span>
           <span class="pair-desc">Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butt</span>
@@ -441,6 +460,7 @@
           <span class="pair-head">
             <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
             <span class="pair-cat">recipes</span>
+            
           </span>
           <span class="pair-title">Chè ba màu (three-color Vietnamese sweet bean dessert)</span>
           <span class="pair-desc">Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. Th</span>
@@ -525,6 +545,7 @@
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
 <script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
 <script src="../../scripts/reveal.js?v=6" defer></script>

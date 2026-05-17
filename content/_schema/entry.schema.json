@@ -168,6 +168,18 @@
         }
       }
     },
+    "pairings": {
+      "type": "array",
+      "description": "Explicit, author-curated pairings shown ahead of the auto-generated 'Pairs with' candidates. Use for dishes whose canonical companions cannot be inferred from cuisine + course alone (larb + sticky rice, pho + herb plate, curry + jasmine rice). Each entry points at another recipe with a one-sentence reason; auto-generated pairings fill the remaining slots.",
+      "items": {
+        "type": "object",
+        "required": ["recipe", "reason"],
+        "properties": {
+          "recipe": { "type": "string", "description": "Recipe path like 'recipes/thai-sticky-rice'." },
+          "reason": { "type": "string", "description": "One sentence on why this pairing earns its place." }
+        }
+      }
+    },
     "homemade_exempt": {
       "type": "array",
       "description": "Store-bought ingredients for which there is no reasonable homemade version (e.g. canned coconut milk, kosher salt, fish sauce). Strings here suppress the validate-formatting homemade-alternatives warning for the matching ingredient. Use sparingly — most pantry items DO have a worthwhile homemade form.",
