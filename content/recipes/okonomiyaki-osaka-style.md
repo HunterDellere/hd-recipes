@@ -199,7 +199,7 @@ homemade_alternatives:
     recipe_slug: 'recipes/homemade-okonomi-sauce'
     why: 'Otafuku is the canonical bottled sauce; the homemade version (Worcestershire, ketchup, oyster sauce, mirin, sugar, dates) takes 10 minutes and gives control over sweetness and tang.'
   - for: 'Kewpie mayonnaise'
-    recipe_slug: 'recipes/mayonnaise'
+    recipe_slug: 'recipes/homemade-mayonnaise'
     why: 'Homemade mayo with rice vinegar and only egg yolks produces a richer, tangier mayo than store-bought; the Kewpie profile is achievable at home in 5 minutes with a stick blender.'
 
 homemade_exempt: ['pork belly, thinly sliced (about 2 mm)', 'katsuobushi (dried bonito flakes), for the batter (separate from the topping)', 'katsuobushi (dried bonito flakes), for topping', 'nagaimo (Japanese mountain yam), peeled and grated on a fine grater', 'beni shoga (red pickled ginger), drained and chopped', 'aonori (powdered green seaweed)', 'beni shoga (for topping the cooked pancake)', 'green cabbage, very finely chopped (3 to 4 mm pieces)']
