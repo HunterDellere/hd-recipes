@@ -470,8 +470,10 @@ export function renderFamilyContent(family, entries, fromPath) {
         </summary>
         <div class="filter-panel" role="group" aria-label="Active time">
           <p class="filter-panel-hint">Engaged cooking only — overnight rests don't count.</p>
-          <label class="filter-opt"><input type="radio" name="time" value="30" data-filter-time="30"><span class="filter-opt-label">≤ 30 min</span></label>
-          <label class="filter-opt"><input type="radio" name="time" value="60" data-filter-time="60"><span class="filter-opt-label">≤ 60 min</span></label>
+          <label class="filter-opt"><input type="radio" name="time" value="15" data-filter-time="15"><span class="filter-opt-label">&lt;15 min</span></label>
+          <label class="filter-opt"><input type="radio" name="time" value="30" data-filter-time="30"><span class="filter-opt-label">&lt;30 min</span></label>
+          <label class="filter-opt"><input type="radio" name="time" value="60" data-filter-time="60"><span class="filter-opt-label">&lt;60 min</span></label>
+          <label class="filter-opt"><input type="radio" name="time" value="120" data-filter-time="120"><span class="filter-opt-label">&lt;2 hr</span></label>
         </div>
       </details>
 
@@ -490,8 +492,12 @@ export function renderFamilyContent(family, entries, fromPath) {
 
       <button type="button" class="filter-clear-btn" data-filter-clear hidden>Clear all</button>
     </div>
-    <div class="filter-chips" data-filter-chips aria-live="polite"></div>
     <p class="filter-status" data-filter-status></p>
+    <div class="filter-chips" data-filter-chips aria-live="polite"></div>
+    <div class="filter-empty" data-filter-empty hidden role="status">
+      <p class="filter-empty-msg">No recipes match those filters. Try removing one.</p>
+      <button type="button" class="filter-empty-btn" data-filter-empty-clear>Clear all filters</button>
+    </div>
     <!-- /auto-link-skip -->`;
   }
 

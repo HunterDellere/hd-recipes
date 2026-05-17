@@ -325,7 +325,6 @@ for (const e of entries) {
   }
 }
 const reverseLinks = computeReverseLinks(entries);
-for (const e of entries) enrichEntry(e, { ...reverseLinks, ingHasNutrition });
 
 const relations = buildRelations(entries);
 const adjacency = buildAdjacency(entries);
@@ -363,6 +362,37 @@ const nutritionByPath = {};
 
 // Build responsive image variants for any photos under content/images/recipes/<slug>/
 const recipeImages = await buildRecipeImages(ROOT);
+
+// Precompute nutrition for every recipe and a hero-image path for every recipe
+// that has one. We do this BEFORE enrichEntry so the card swatch can substitute
+// the hero image and so the stat-pill row can show per-serving kcal.
+const heroByPath = {};
+for (const e of entries) {
+  if (e.type !== 'recipe') continue;
+  // Nutrition (cheap; results live in usdaCache → no network).
+  const fm = e._fm || {};
+  try {
+    nutritionByPath[e.path] = roundNutritionWrap(computeRecipeNutrition(fm, ingredientBySlug, usdaCache));
+  } catch {
+    // computeRecipeNutrition is defensive; if it throws for an edge case
+    // (e.g. malformed ingredient row), skip nutrition for this recipe and
+    // let the page render without kcal on its card.
+  }
+  // Hero image path — pick the 960w webp if present; the renderer falls
+  // back to whatever the largest variant is. Stored as a repo-relative
+  // path; client uses it directly (browser resolves), build pages use
+  // cards.mjs::relPath against `fromPath`.
+  const imgs = recipeImages.get(e._slug);
+  if (imgs && imgs.hero && imgs.hero.variants && imgs.hero.variants.webp) {
+    const variants = imgs.hero.variants.webp;
+    const pick = variants.find(v => v.width >= 480) || variants[variants.length - 1] || variants[0];
+    if (pick) heroByPath[e.path] = `assets/images/recipes/${e._slug}/hero-${pick.width}.webp`;
+  }
+}
+
+// Enrich entries (swatch, time framing, kcal, hero) AFTER images + nutrition
+// are computed. Family pages and related sections all read from _card.
+for (const e of entries) enrichEntry(e, { ...reverseLinks, ingHasNutrition, nutritionByPath, heroByPath });
 
 let built = 0;
 let autoLinkCount = 0;
