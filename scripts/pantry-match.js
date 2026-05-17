@@ -131,8 +131,17 @@
       .map(t => t.trim().toLowerCase())
       .filter(Boolean);
     const slugs = new Set();
+    // Free-text needles for matching against recipe ingredient `item` strings
+    // when those ingredients have no slug (which is ~29% of all rows).
+    // Each entry is { needle, singular } — both forms are tried.
+    const textNeedles = [];
     const unresolved = [];
     for (const tok of tokens) {
+      // Track the raw token as a text needle regardless of slug resolution —
+      // a user typing "celery" should match an ingredient line "celery stalks,
+      // medium dice" even if no celery ingredient page exists.
+      const singularTok = singularize(tok);
+      textNeedles.push({ needle: tok, singular: singularTok !== tok ? singularTok : null });
       // 1. Alias table — short forms first
       if (PANTRY_ALIASES[tok]) { slugs.add(PANTRY_ALIASES[tok]); continue; }
 
@@ -165,11 +174,22 @@
       if (titleMatch) { slugs.add(titleMatch); continue; }
       unresolved.push(tok);
     }
-    return { tokens, slugs, unresolved };
+    return { tokens, slugs, textNeedles, unresolved };
+  }
+
+  // Does the recipe ingredient `item` text contain any user needle as a whole word?
+  function itemMatchesNeedles(item, needles) {
+    if (!item || !needles.length) return false;
+    const haystack = String(item).toLowerCase();
+    for (const { needle, singular } of needles) {
+      if (containsWord(haystack, needle)) return true;
+      if (singular && containsWord(haystack, singular)) return true;
+    }
+    return false;
   }
 
   // ── Rank recipes by pantry coverage ────────────────────────────────────
-  function rankRecipes(pantrySlugs) {
+  function rankRecipes(pantrySlugs, textNeedles) {
     const results = [];
     for (const e of entries) {
       if (e.type !== 'recipe' || e.status !== 'complete') continue;
@@ -179,7 +199,11 @@
       const missing = [];
       for (const ing of ings) {
         const slug = ing.slug;
-        if (slug && pantrySlugs.has(slug)) {
+        const slugHit = slug && pantrySlugs.has(slug);
+        // Fallback: ingredients without a slug (or whose slug we don't have)
+        // can still match on the user's free-text needle against ing.item.
+        const textHit = !slugHit && itemMatchesNeedles(ing.item, textNeedles);
+        if (slugHit || textHit) {
           have++;
         } else {
           missing.push(ing.item || slug || '(unnamed)');
@@ -250,16 +274,13 @@
   // ── Wire ───────────────────────────────────────────────────────────────
   async function runMatch() {
     await ensureEntries();
-    const { slugs, unresolved } = parsePantry(ta.value);
-    if (slugs.size === 0) {
-      const tip = unresolved.length
-        ? ` We could not match: <em>${escapeHtml(unresolved.join(', '))}</em>. Try the suggestion chips, or be more specific (e.g. "kosher salt" instead of "salt").`
-        : '';
-      resultsEl.innerHTML = `<p class="pantry-match-empty">Add at least one ingredient to see matches.${tip}</p>`;
+    const { slugs, textNeedles, unresolved } = parsePantry(ta.value);
+    if (slugs.size === 0 && textNeedles.length === 0) {
+      resultsEl.innerHTML = `<p class="pantry-match-empty">Add at least one ingredient to see matches.</p>`;
       if (countEl) countEl.textContent = '';
       return;
     }
-    const ranked = rankRecipes(slugs);
+    const ranked = rankRecipes(slugs, textNeedles);
     render(ranked, unresolved);
     // Persist on successful run
     try { localStorage.setItem(STORAGE_KEY, ta.value); } catch {}

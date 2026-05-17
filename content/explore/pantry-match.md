@@ -62,4 +62,4 @@ pageTitle: 'Pantry match'
   </main>
 </div>
 
-<script src="../../scripts/pantry-match.js?v=1" defer></script>
+<script src="../../scripts/pantry-match.js?v=2" defer></script>
