@@ -12,7 +12,7 @@
  * Levels:   ERROR | WARN | INFO
  * Categories: factual | schema | tags | links | anchors | orphans |
  *             layout | hub-members | content-health | relations |
- *             search | formatting
+ *             search | formatting | safety | crosslinks
  */
 
 import fs from 'node:fs';
@@ -22,7 +22,7 @@ const VALID_LEVELS = new Set(['ERROR', 'WARN', 'INFO']);
 const VALID_CATEGORIES = new Set([
   'factual', 'schema', 'tags', 'links', 'anchors', 'orphans',
   'layout', 'hub-members', 'content-health', 'relations',
-  'search', 'formatting', 'safety',
+  'search', 'formatting', 'safety', 'crosslinks',
 ]);
 
 /**

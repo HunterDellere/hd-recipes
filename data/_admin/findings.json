@@ -1,28 +1,1777 @@
 {
-  "generated": "2026-05-17T21:27:54.224Z",
+  "generated": "2026-05-17T21:38:56.518Z",
   "summary": {
     "errors": 0,
-    "warnings": 119,
-    "info": 3
+    "warnings": 368,
+    "info": 4
   },
   "findings": [
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/air-fried-okra-with-four-flavor-finishes.md",
+      "msg": "technique \"starch-coating\" has no matching page",
+      "fix": "Create content/techniques/starch-coating.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/air-fried-okra-with-four-flavor-finishes.md",
+      "msg": "technique \"high-heat-dehydration\" has no matching page",
+      "fix": "Create content/techniques/high-heat-dehydration.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/air-fried-okra-with-four-flavor-finishes.md",
+      "msg": "technique \"pangrattato\" has no matching page",
+      "fix": "Create content/techniques/pangrattato.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/aji-de-gallina.md",
+      "msg": "technique \"low-and-slow-simmer\" has no matching page",
+      "fix": "Create content/techniques/low-and-slow-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/aji-de-gallina.md",
+      "msg": "technique \"sweating-aromatics\" has no matching page",
+      "fix": "Create content/techniques/sweating-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/akadashi-clam-miso-soup.md",
+      "msg": "technique \"clam-purging\" has no matching page",
+      "fix": "Create content/techniques/clam-purging.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/akadashi-clam-miso-soup.md",
+      "msg": "technique \"shellfish-extraction\" has no matching page",
+      "fix": "Create content/techniques/shellfish-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/albondigas-en-salsa-de-almendras.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/anticuchos-de-corazon.md",
+      "msg": "technique \"high-heat-grilling\" has no matching page",
+      "fix": "Create content/techniques/high-heat-grilling.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/arroz-con-pollo-cubano.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/arroz-con-pollo-cubano.md",
+      "msg": "technique \"sweating-aromatics\" has no matching page",
+      "fix": "Create content/techniques/sweating-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/baba-ganoush.md",
+      "msg": "technique \"open-flame-char\" has no matching page",
+      "fix": "Create content/techniques/open-flame-char.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/baba-ganoush.md",
+      "msg": "technique \"rustic-mash\" has no matching page",
+      "fix": "Create content/techniques/rustic-mash.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/baba-ganoush.md",
+      "msg": "technique \"tahini-bind\" has no matching page",
+      "fix": "Create content/techniques/tahini-bind.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/banh-mi-thit-nuong.md",
+      "msg": "technique \"quick-pickle\" has no matching page",
+      "fix": "Create content/techniques/quick-pickle.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/banh-mi-thit-nuong.md",
+      "msg": "technique \"high-heat-grill\" has no matching page",
+      "fix": "Create content/techniques/high-heat-grill.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/banh-mi-thit-nuong.md",
+      "msg": "technique \"sandwich-build\" has no matching page",
+      "fix": "Create content/techniques/sandwich-build.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/beef-bourguignon.md",
+      "msg": "ingredient slug \"beef-broth\" has no matching ingredient page",
+      "fix": "Create content/ingredients/beef-broth.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/beef-rendang.md",
+      "msg": "technique \"spice-paste-pounding\" has no matching page",
+      "fix": "Create content/techniques/spice-paste-pounding.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/beef-rendang.md",
+      "msg": "technique \"spice-paste-frying\" has no matching page",
+      "fix": "Create content/techniques/spice-paste-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/beef-rendang.md",
+      "msg": "technique \"dry-cook-reduction\" has no matching page",
+      "fix": "Create content/techniques/dry-cook-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/bigos.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/bigos.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/bigos.md",
+      "msg": "technique \"braise\" has no matching page",
+      "fix": "Create content/techniques/braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/british-victoria-sponge.md",
+      "msg": "technique \"creaming\" has no matching page",
+      "fix": "Create content/techniques/creaming.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/british-victoria-sponge.md",
+      "msg": "technique \"folding\" has no matching page",
+      "fix": "Create content/techniques/folding.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/buttermilk-biscuits-and-sausage-gravy.md",
+      "msg": "technique \"roux\" has no matching page",
+      "fix": "Create content/techniques/roux.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/buttermilk-biscuits-and-sausage-gravy.md",
+      "msg": "technique \"lamination\" has no matching page",
+      "fix": "Create content/techniques/lamination.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cajun-boudin-blanc.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cajun-boudin-blanc.md",
+      "msg": "technique \"sausage-stuffing\" has no matching page",
+      "fix": "Create content/techniques/sausage-stuffing.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cajun-crawfish-etouffee.md",
+      "msg": "technique \"roux\" has no matching page",
+      "fix": "Create content/techniques/roux.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/carbonara.md",
+      "msg": "technique \"cold-pan-render\" has no matching page",
+      "fix": "Create content/techniques/cold-pan-render.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/carbonara.md",
+      "msg": "technique \"off-heat-egg-emulsion\" has no matching page",
+      "fix": "Create content/techniques/off-heat-egg-emulsion.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/carnitas.md",
+      "msg": "technique \"low-and-slow-simmer\" has no matching page",
+      "fix": "Create content/techniques/low-and-slow-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-adobo.md",
+      "msg": "technique \"vinegar-braise\" has no matching page",
+      "fix": "Create content/techniques/vinegar-braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-and-andouille-gumbo.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-and-andouille-gumbo.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-karaage.md",
+      "msg": "technique \"shallow-frying\" has no matching page",
+      "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-paprikash.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-paprikash.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-paprikash.md",
+      "msg": "technique \"braise\" has no matching page",
+      "fix": "Create content/techniques/braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-paprikash.md",
+      "msg": "technique \"tempering\" has no matching page",
+      "fix": "Create content/techniques/tempering.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-satay-with-peanut-sauce.md",
+      "msg": "technique \"spice-paste-frying\" has no matching page",
+      "fix": "Create content/techniques/spice-paste-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-satay-with-peanut-sauce.md",
+      "msg": "technique \"sauce-reduction\" has no matching page",
+      "fix": "Create content/techniques/sauce-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-satay-with-peanut-sauce.md",
+      "msg": "technique \"high-heat-grill\" has no matching page",
+      "fix": "Create content/techniques/high-heat-grill.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-shawarma.md",
+      "msg": "technique \"yogurt-marinade\" has no matching page",
+      "fix": "Create content/techniques/yogurt-marinade.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-shawarma.md",
+      "msg": "technique \"spice-bloom-in-marinade\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom-in-marinade.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-shawarma.md",
+      "msg": "technique \"broiler-char\" has no matching page",
+      "fix": "Create content/techniques/broiler-char.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-tagine-with-preserved-lemon-and-olives.md",
+      "msg": "technique \"tagine-braise\" has no matching page",
+      "fix": "Create content/techniques/tagine-braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-tagine-with-preserved-lemon-and-olives.md",
+      "msg": "technique \"saffron-bloom\" has no matching page",
+      "fix": "Create content/techniques/saffron-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-tagine-with-preserved-lemon-and-olives.md",
+      "msg": "technique \"spice-bloom\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
+      "msg": "technique \"myosin-extraction\" has no matching page",
+      "fix": "Create content/techniques/myosin-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chiles-rellenos.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chimichurri.md",
+      "msg": "technique \"knife-chop-not-processor\" has no matching page",
+      "fix": "Create content/techniques/knife-chop-not-processor.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chinese-lions-head-meatballs.md",
+      "msg": "technique \"myosin-extraction\" has no matching page",
+      "fix": "Create content/techniques/myosin-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chinese-lions-head-meatballs.md",
+      "msg": "technique \"water-paddling\" has no matching page",
+      "fix": "Create content/techniques/water-paddling.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chinese-lions-head-meatballs.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/collard-greens-with-ham-hock.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/coq-au-vin.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cottage-pie.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/country-sourdough.md",
+      "msg": "technique \"autolyse\" has no matching page",
+      "fix": "Create content/techniques/autolyse.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/country-sourdough.md",
+      "msg": "technique \"stretch-and-fold\" has no matching page",
+      "fix": "Create content/techniques/stretch-and-fold.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/country-sourdough.md",
+      "msg": "technique \"cold-proof\" has no matching page",
+      "fix": "Create content/techniques/cold-proof.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/couscous-with-seven-vegetables.md",
+      "msg": "technique \"couscous-steam\" has no matching page",
+      "fix": "Create content/techniques/couscous-steam.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/couscous-with-seven-vegetables.md",
+      "msg": "technique \"saffron-bloom\" has no matching page",
+      "fix": "Create content/techniques/saffron-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/couscous-with-seven-vegetables.md",
+      "msg": "technique \"spice-bloom\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/creole-jambalaya.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cuban-ropa-vieja.md",
+      "msg": "technique \"low-and-slow-simmer\" has no matching page",
+      "fix": "Create content/techniques/low-and-slow-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cuban-ropa-vieja.md",
+      "msg": "technique \"sweating-aromatics\" has no matching page",
+      "fix": "Create content/techniques/sweating-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/doro-wat.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/doro-wat.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/doro-wat.md",
+      "msg": "technique \"braise\" has no matching page",
+      "fix": "Create content/techniques/braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/egusi-soup.md",
+      "msg": "technique \"simmer\" has no matching page",
+      "fix": "Create content/techniques/simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/egusi-soup.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/egusi-soup.md",
+      "msg": "technique \"egusi-pebbling\" has no matching page",
+      "fix": "Create content/techniques/egusi-pebbling.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/fesenjan.md",
+      "msg": "technique \"walnut-slow-sweat\" has no matching page",
+      "fix": "Create content/techniques/walnut-slow-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/fesenjan.md",
+      "msg": "technique \"saffron-bloom\" has no matching page",
+      "fix": "Create content/techniques/saffron-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/fesenjan.md",
+      "msg": "technique \"long-braise\" has no matching page",
+      "fix": "Create content/techniques/long-braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/french-onion-soup-gratinee.md",
+      "msg": "ingredient slug \"beef-broth\" has no matching ingredient page",
+      "fix": "Create content/ingredients/beef-broth.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/fresh-soy-milk.md",
+      "msg": "technique \"overnight-soak\" has no matching page",
+      "fix": "Create content/techniques/overnight-soak.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/fresh-soy-milk.md",
+      "msg": "technique \"gentle-reduction\" has no matching page",
+      "fix": "Create content/techniques/gentle-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/full-english-breakfast-components.md",
+      "msg": "technique \"egg-doneness\" has no matching page",
+      "fix": "Create content/techniques/egg-doneness.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/german-bratwurst-with-onions-and-mustard.md",
+      "msg": "technique \"caramelizing\" has no matching page",
+      "fix": "Create content/techniques/caramelizing.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/german-rouladen.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ghormeh-sabzi.md",
+      "msg": "technique \"herb-darkening\" has no matching page",
+      "fix": "Create content/techniques/herb-darkening.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ghormeh-sabzi.md",
+      "msg": "technique \"long-braise\" has no matching page",
+      "fix": "Create content/techniques/long-braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ghormeh-sabzi.md",
+      "msg": "technique \"onion-deep-brown\" has no matching page",
+      "fix": "Create content/techniques/onion-deep-brown.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "technique \"pork-poach\" has no matching page",
+      "fix": "Create content/techniques/pork-poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "technique \"shrimp-shock-poach\" has no matching page",
+      "fix": "Create content/techniques/shrimp-shock-poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "technique \"rice-noodle-cook\" has no matching page",
+      "fix": "Create content/techniques/rice-noodle-cook.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "technique \"rice-paper-roll\" has no matching page",
+      "fix": "Create content/techniques/rice-paper-roll.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/golabki.md",
+      "msg": "technique \"blanch\" has no matching page",
+      "fix": "Create content/techniques/blanch.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/golabki.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/golabki.md",
+      "msg": "technique \"braise\" has no matching page",
+      "fix": "Create content/techniques/braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/goulash-gulyas.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/goulash-gulyas.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/goulash-gulyas.md",
+      "msg": "technique \"braise\" has no matching page",
+      "fix": "Create content/techniques/braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/greens-and-ricotta-frittata.md",
+      "msg": "technique \"greens-wilt-and-dry\" has no matching page",
+      "fix": "Create content/techniques/greens-wilt-and-dry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/greens-and-ricotta-frittata.md",
+      "msg": "technique \"stove-set-then-oven\" has no matching page",
+      "fix": "Create content/techniques/stove-set-then-oven.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/gyeran-jjim.md",
+      "msg": "technique \"kombu-anchovy-stock\" has no matching page",
+      "fix": "Create content/techniques/kombu-anchovy-stock.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/gyeran-jjim.md",
+      "msg": "technique \"gentle-egg-set\" has no matching page",
+      "fix": "Create content/techniques/gentle-egg-set.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hainanese-chicken-rice.md",
+      "msg": "technique \"sub-simmer-poach\" has no matching page",
+      "fix": "Create content/techniques/sub-simmer-poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hainanese-chicken-rice.md",
+      "msg": "technique \"pilaf-fat-toast\" has no matching page",
+      "fix": "Create content/techniques/pilaf-fat-toast.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hainanese-chicken-rice.md",
+      "msg": "technique \"absorption-rice\" has no matching page",
+      "fix": "Create content/techniques/absorption-rice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hainanese-chicken-rice.md",
+      "msg": "technique \"oil-bloom\" has no matching page",
+      "fix": "Create content/techniques/oil-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/haitian-griot.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/haitian-griot.md",
+      "msg": "technique \"deep-frying\" has no matching page",
+      "fix": "Create content/techniques/deep-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/haitian-poul-en-sos.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/haitian-soup-joumou.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/harira.md",
+      "msg": "technique \"spice-bloom\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/harira.md",
+      "msg": "technique \"saffron-bloom\" has no matching page",
+      "fix": "Create content/techniques/saffron-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/harira.md",
+      "msg": "technique \"flour-slurry-thicken\" has no matching page",
+      "fix": "Create content/techniques/flour-slurry-thicken.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/harira.md",
+      "msg": "technique \"long-braise\" has no matching page",
+      "fix": "Create content/techniques/long-braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/harissa.md",
+      "msg": "technique \"pepper-charring\" has no matching page",
+      "fix": "Create content/techniques/pepper-charring.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/harissa.md",
+      "msg": "technique \"spice-toasting\" has no matching page",
+      "fix": "Create content/techniques/spice-toasting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/harvest-vegetable-soup-with-white-beans.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hoisin-sauce.md",
+      "msg": "technique \"gentle-reduction\" has no matching page",
+      "fix": "Create content/techniques/gentle-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/huevos-rancheros.md",
+      "msg": "technique \"tomato-and-chili-char\" has no matching page",
+      "fix": "Create content/techniques/tomato-and-chili-char.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/huevos-rancheros.md",
+      "msg": "technique \"salsa-fry\" has no matching page",
+      "fix": "Create content/techniques/salsa-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/huevos-rancheros.md",
+      "msg": "technique \"refried-beans\" has no matching page",
+      "fix": "Create content/techniques/refried-beans.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/huevos-rancheros.md",
+      "msg": "technique \"sunny-side-baste-fry\" has no matching page",
+      "fix": "Create content/techniques/sunny-side-baste-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hummus-classic.md",
+      "msg": "technique \"alkaline-chickpea-cook\" has no matching page",
+      "fix": "Create content/techniques/alkaline-chickpea-cook.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hummus-classic.md",
+      "msg": "technique \"hot-blend\" has no matching page",
+      "fix": "Create content/techniques/hot-blend.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hummus-classic.md",
+      "msg": "technique \"garlic-acid-maceration\" has no matching page",
+      "fix": "Create content/techniques/garlic-acid-maceration.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hungarian-chicken-with-lecso.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hungarian-stuffed-cabbage-toltott-kaposzta.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ichiban-dashi.md",
+      "msg": "technique \"cold-water-soak\" has no matching page",
+      "fix": "Create content/techniques/cold-water-soak.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ichiban-dashi.md",
+      "msg": "technique \"gentle-extraction\" has no matching page",
+      "fix": "Create content/techniques/gentle-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/injera.md",
+      "msg": "technique \"wild-ferment\" has no matching page",
+      "fix": "Create content/techniques/wild-ferment.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/injera.md",
+      "msg": "technique \"one-side-cook\" has no matching page",
+      "fix": "Create content/techniques/one-side-cook.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/iskender-kebab.md",
+      "msg": "technique \"yogurt-marinade\" has no matching page",
+      "fix": "Create content/techniques/yogurt-marinade.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/iskender-kebab.md",
+      "msg": "technique \"high-heat-sear\" has no matching page",
+      "fix": "Create content/techniques/high-heat-sear.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
+      "msg": "technique \"panade\" has no matching page",
+      "fix": "Create content/techniques/panade.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
+      "msg": "technique \"myosin-extraction\" has no matching page",
+      "fix": "Create content/techniques/myosin-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/italian-salsa-verde.md",
+      "msg": "technique \"knife-chop-not-processor\" has no matching page",
+      "fix": "Create content/techniques/knife-chop-not-processor.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/jamaican-curry-goat.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/jamaican-jerk-chicken.md",
+      "msg": "technique \"indirect-grilling\" has no matching page",
+      "fix": "Create content/techniques/indirect-grilling.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/jollof-rice-nigerian-style.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/jollof-rice-nigerian-style.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/jollof-rice-nigerian-style.md",
+      "msg": "technique \"pepper-reduction\" has no matching page",
+      "fix": "Create content/techniques/pepper-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/jollof-rice-nigerian-style.md",
+      "msg": "technique \"steam-cook\" has no matching page",
+      "fix": "Create content/techniques/steam-cook.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/jollof-rice-nigerian-style.md",
+      "msg": "technique \"pot-crust\" has no matching page",
+      "fix": "Create content/techniques/pot-crust.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/joojeh-kabab.md",
+      "msg": "technique \"yogurt-marinade\" has no matching page",
+      "fix": "Create content/techniques/yogurt-marinade.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/joojeh-kabab.md",
+      "msg": "technique \"saffron-bloom\" has no matching page",
+      "fix": "Create content/techniques/saffron-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/joojeh-kabab.md",
+      "msg": "technique \"live-fire-grill\" has no matching page",
+      "fix": "Create content/techniques/live-fire-grill.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/kinilaw-na-tanigue.md",
+      "msg": "technique \"vinegar-cure\" has no matching page",
+      "fix": "Create content/techniques/vinegar-cure.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/kombu-shiitake-vegetarian-dashi.md",
+      "msg": "technique \"cold-water-soak\" has no matching page",
+      "fix": "Create content/techniques/cold-water-soak.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/kombu-shiitake-vegetarian-dashi.md",
+      "msg": "technique \"gentle-extraction\" has no matching page",
+      "fix": "Create content/techniques/gentle-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lahmacun.md",
+      "msg": "technique \"high-heat-bake\" has no matching page",
+      "fix": "Create content/techniques/high-heat-bake.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lahmacun.md",
+      "msg": "technique \"wet-paste-topping\" has no matching page",
+      "fix": "Create content/techniques/wet-paste-topping.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lamb-tagine-with-prunes-and-almonds.md",
+      "msg": "technique \"tagine-braise\" has no matching page",
+      "fix": "Create content/techniques/tagine-braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lamb-tagine-with-prunes-and-almonds.md",
+      "msg": "technique \"saffron-bloom\" has no matching page",
+      "fix": "Create content/techniques/saffron-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lamb-tagine-with-prunes-and-almonds.md",
+      "msg": "technique \"spice-bloom\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lomo-saltado.md",
+      "msg": "technique \"wok-hei-sear\" has no matching page",
+      "fix": "Create content/techniques/wok-hei-sear.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lomo-saltado.md",
+      "msg": "technique \"shallow-frying\" has no matching page",
+      "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/manti.md",
+      "msg": "technique \"hand-folded-dumpling\" has no matching page",
+      "fix": "Create content/techniques/hand-folded-dumpling.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/manti.md",
+      "msg": "technique \"spice-bloom-in-fat\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom-in-fat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/mast-o-khiar.md",
+      "msg": "technique \"cucumber-drain\" has no matching page",
+      "fix": "Create content/techniques/cucumber-drain.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/mast-o-khiar.md",
+      "msg": "technique \"yogurt-fold\" has no matching page",
+      "fix": "Create content/techniques/yogurt-fold.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/menemen.md",
+      "msg": "technique \"egg-fold-into-sauce\" has no matching page",
+      "fix": "Create content/techniques/egg-fold-into-sauce.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/menemen.md",
+      "msg": "technique \"spice-bloom\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/menemen.md",
+      "msg": "technique \"tomato-reduction\" has no matching page",
+      "fix": "Create content/techniques/tomato-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/misir-wat.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/misir-wat.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/misir-wat.md",
+      "msg": "technique \"simmer\" has no matching page",
+      "fix": "Create content/techniques/simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/mojo-verde.md",
+      "msg": "technique \"spice-toasting\" has no matching page",
+      "fix": "Create content/techniques/spice-toasting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/mojo-verde.md",
+      "msg": "technique \"knife-chop-not-processor\" has no matching page",
+      "fix": "Create content/techniques/knife-chop-not-processor.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/mole-poblano.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/mole-poblano.md",
+      "msg": "technique \"salsa-fry\" has no matching page",
+      "fix": "Create content/techniques/salsa-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/nasi-goreng.md",
+      "msg": "technique \"spice-paste-pounding\" has no matching page",
+      "fix": "Create content/techniques/spice-paste-pounding.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/nasi-goreng.md",
+      "msg": "technique \"spice-paste-frying\" has no matching page",
+      "fix": "Create content/techniques/spice-paste-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/nasi-goreng.md",
+      "msg": "technique \"wok-stir-fry\" has no matching page",
+      "fix": "Create content/techniques/wok-stir-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/niter-kibbeh.md",
+      "msg": "technique \"clarification\" has no matching page",
+      "fix": "Create content/techniques/clarification.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/okonomiyaki-osaka-style.md",
+      "msg": "technique \"shallow-frying\" has no matching page",
+      "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/omurice.md",
+      "msg": "technique \"ketchup-fry-and-brown\" has no matching page",
+      "fix": "Create content/techniques/ketchup-fry-and-brown.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/omurice.md",
+      "msg": "technique \"soft-set-omelet\" has no matching page",
+      "fix": "Create content/techniques/soft-set-omelet.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/omurice.md",
+      "msg": "technique \"omelet-wrap\" has no matching page",
+      "fix": "Create content/techniques/omelet-wrap.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/paella-valenciana.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pakistani-aloo-paratha.md",
+      "msg": "technique \"dough-resting\" has no matching page",
+      "fix": "Create content/techniques/dough-resting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pancit-canton.md",
+      "msg": "technique \"wok-sear\" has no matching page",
+      "fix": "Create content/techniques/wok-sear.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pancit-canton.md",
+      "msg": "technique \"wok-stir-fry\" has no matching page",
+      "fix": "Create content/techniques/wok-stir-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pancit-canton.md",
+      "msg": "technique \"noodle-absorption-stir-fry\" has no matching page",
+      "fix": "Create content/techniques/noodle-absorption-stir-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/peanut-groundnut-soup.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/peanut-groundnut-soup.md",
+      "msg": "technique \"bloom-spice\" has no matching page",
+      "fix": "Create content/techniques/bloom-spice.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/peanut-groundnut-soup.md",
+      "msg": "technique \"braise\" has no matching page",
+      "fix": "Create content/techniques/braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/peanut-lime-dipping-sauce.md",
+      "msg": "technique \"aromatic-bloom-in-coconut-milk\" has no matching page",
+      "fix": "Create content/techniques/aromatic-bloom-in-coconut-milk.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/penang-curry-laksa.md",
+      "msg": "technique \"spice-paste-pounding\" has no matching page",
+      "fix": "Create content/techniques/spice-paste-pounding.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/penang-curry-laksa.md",
+      "msg": "technique \"spice-paste-frying\" has no matching page",
+      "fix": "Create content/techniques/spice-paste-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/peruvian-ceviche.md",
+      "msg": "technique \"acid-cure\" has no matching page",
+      "fix": "Create content/techniques/acid-cure.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/peruvian-ceviche.md",
+      "msg": "technique \"knife-work\" has no matching page",
+      "fix": "Create content/techniques/knife-work.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pho-bo-hanoi-style.md",
+      "msg": "technique \"bone-blanch\" has no matching page",
+      "fix": "Create content/techniques/bone-blanch.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pho-bo-hanoi-style.md",
+      "msg": "technique \"open-flame-char\" has no matching page",
+      "fix": "Create content/techniques/open-flame-char.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pho-bo-hanoi-style.md",
+      "msg": "technique \"long-simmer-stock\" has no matching page",
+      "fix": "Create content/techniques/long-simmer-stock.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pho-bo-hanoi-style.md",
+      "msg": "technique \"rice-noodle-cook\" has no matching page",
+      "fix": "Create content/techniques/rice-noodle-cook.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pide.md",
+      "msg": "technique \"bulk-rise\" has no matching page",
+      "fix": "Create content/techniques/bulk-rise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pide.md",
+      "msg": "technique \"high-heat-bake\" has no matching page",
+      "fix": "Create content/techniques/high-heat-bake.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pierogi-z-kapusta-i-grzybami.md",
+      "msg": "technique \"dry-sweat\" has no matching page",
+      "fix": "Create content/techniques/dry-sweat.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pierogi-z-kapusta-i-grzybami.md",
+      "msg": "technique \"simmer\" has no matching page",
+      "fix": "Create content/techniques/simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pierogi-z-kapusta-i-grzybami.md",
+      "msg": "technique \"poach\" has no matching page",
+      "fix": "Create content/techniques/poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pierogi-z-kapusta-i-grzybami.md",
+      "msg": "technique \"pan-fry\" has no matching page",
+      "fix": "Create content/techniques/pan-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/polish-kotlet-schabowy.md",
+      "msg": "technique \"breading-three-step\" has no matching page",
+      "fix": "Create content/techniques/breading-three-step.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pork-gyoza.md",
+      "msg": "technique \"dumpling-wrap\" has no matching page",
+      "fix": "Create content/techniques/dumpling-wrap.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pork-gyoza.md",
+      "msg": "technique \"shallow-frying\" has no matching page",
+      "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pork-gyoza.md",
+      "msg": "technique \"steaming\" has no matching page",
+      "fix": "Create content/techniques/steaming.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pork-sinigang.md",
+      "msg": "technique \"pork-simmer\" has no matching page",
+      "fix": "Create content/techniques/pork-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pozole-rojo.md",
+      "msg": "technique \"low-and-slow-simmer\" has no matching page",
+      "fix": "Create content/techniques/low-and-slow-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pozole-rojo.md",
+      "msg": "technique \"salsa-fry\" has no matching page",
+      "fix": "Create content/techniques/salsa-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/puerto-rican-mofongo.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/puerto-rican-mofongo.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/puerto-rican-mofongo.md",
+      "msg": "technique \"shallow-frying\" has no matching page",
+      "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/red-beans-and-rice.md",
+      "msg": "technique \"sweating-aromatics\" has no matching page",
+      "fix": "Create content/techniques/sweating-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/red-beans-and-rice.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/risotto-alla-milanese.md",
+      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
+      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/romesco.md",
+      "msg": "technique \"nut-toasting\" has no matching page",
+      "fix": "Create content/techniques/nut-toasting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/romesco.md",
+      "msg": "technique \"pepper-charring\" has no matching page",
+      "fix": "Create content/techniques/pepper-charring.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/salmon-rice-bowl-with-quick-cucumber.md",
+      "msg": "technique \"rice-cookery\" has no matching page",
+      "fix": "Create content/techniques/rice-cookery.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/salsa-macha.md",
+      "msg": "technique \"fried-chili-oil\" has no matching page",
+      "fix": "Create content/techniques/fried-chili-oil.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/salsa-macha.md",
+      "msg": "technique \"low-temperature-fry\" has no matching page",
+      "fix": "Create content/techniques/low-temperature-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shakshuka.md",
+      "msg": "technique \"spice-bloom\" has no matching page",
+      "fix": "Create content/techniques/spice-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shakshuka.md",
+      "msg": "technique \"covered-poach\" has no matching page",
+      "fix": "Create content/techniques/covered-poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shakshuka.md",
+      "msg": "technique \"tomato-reduction\" has no matching page",
+      "fix": "Create content/techniques/tomato-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shojin-kenchinjiru-temple-miso-soup.md",
+      "msg": "technique \"cold-soak-dashi\" has no matching page",
+      "fix": "Create content/techniques/cold-soak-dashi.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shojin-kenchinjiru-temple-miso-soup.md",
+      "msg": "technique \"mise-en-place\" has no matching page",
+      "fix": "Create content/techniques/mise-en-place.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shojin-kenchinjiru-temple-miso-soup.md",
+      "msg": "technique \"sesame-oil-sear\" has no matching page",
+      "fix": "Create content/techniques/sesame-oil-sear.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shojin-kenchinjiru-temple-miso-soup.md",
+      "msg": "technique \"simmering\" has no matching page",
+      "fix": "Create content/techniques/simmering.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shoyu-ramen-from-scratch.md",
+      "msg": "technique \"simmering\" has no matching page",
+      "fix": "Create content/techniques/simmering.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shoyu-ramen-from-scratch.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shrimp-and-grits.md",
+      "msg": "technique \"sweating-aromatics\" has no matching page",
+      "fix": "Create content/techniques/sweating-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shrimp-and-grits.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/shrimp-and-grits.md",
+      "msg": "technique \"simmering\" has no matching page",
+      "fix": "Create content/techniques/simmering.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/slow-soft-scrambled-eggs-with-brown-butter-and-chives.md",
+      "msg": "technique \"slow-low-scramble\" has no matching page",
+      "fix": "Create content/techniques/slow-low-scramble.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/southern-fried-chicken.md",
+      "msg": "technique \"shallow-frying\" has no matching page",
+      "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tahdig.md",
+      "msg": "technique \"tahdig-steam\" has no matching page",
+      "fix": "Create content/techniques/tahdig-steam.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tahdig.md",
+      "msg": "technique \"saffron-bloom\" has no matching page",
+      "fix": "Create content/techniques/saffron-bloom.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tahdig.md",
+      "msg": "technique \"rice-parboil\" has no matching page",
+      "fix": "Create content/techniques/rice-parboil.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tahini-yogurt-sauce.md",
+      "msg": "technique \"tahini-emulsion-with-water\" has no matching page",
+      "fix": "Create content/techniques/tahini-emulsion-with-water.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tamagoyaki.md",
+      "msg": "technique \"layer-and-roll\" has no matching page",
+      "fix": "Create content/techniques/layer-and-roll.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tamagoyaki.md",
+      "msg": "technique \"dashi-egg-mixture\" has no matching page",
+      "fix": "Create content/techniques/dashi-egg-mixture.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/thai-pork-larb-meatballs.md",
+      "msg": "technique \"myosin-extraction\" has no matching page",
+      "fix": "Create content/techniques/myosin-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tonjiru-pork-vegetable-miso-soup.md",
+      "msg": "technique \"mise-en-place\" has no matching page",
+      "fix": "Create content/techniques/mise-en-place.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tonjiru-pork-vegetable-miso-soup.md",
+      "msg": "technique \"simmering\" has no matching page",
+      "fix": "Create content/techniques/simmering.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tonkatsu.md",
+      "msg": "technique \"shallow-frying\" has no matching page",
+      "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tortilla-espanola.md",
+      "msg": "technique \"olive-oil-poach\" has no matching page",
+      "fix": "Create content/techniques/olive-oil-poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tortilla-espanola.md",
+      "msg": "technique \"plate-flip\" has no matching page",
+      "fix": "Create content/techniques/plate-flip.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/toum.md",
+      "msg": "technique \"cold-oil-emulsion\" has no matching page",
+      "fix": "Create content/techniques/cold-oil-emulsion.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/tzatziki.md",
+      "msg": "technique \"cucumber-salt-drain\" has no matching page",
+      "fix": "Create content/techniques/cucumber-salt-drain.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/zhoug.md",
+      "msg": "technique \"spice-toasting\" has no matching page",
+      "fix": "Create content/techniques/spice-toasting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/zhoug.md",
+      "msg": "technique \"knife-chop-not-processor\" has no matching page",
+      "fix": "Create content/techniques/knife-chop-not-processor.md"
+    },
     {
       "level": "INFO",
       "category": "tags",
       "file": "content/_schema/tags.json",
-      "msg": "75 tags in use across 438 entries. Top: pantry(167), umami(122), chinese(69), vegetable(64), aromatic(61), make-ahead(52), acid(41), spice(40), weekend-project(40), indian(37), fermentation(36), sauce(35), seafood(33), weeknight(31), fish(31), fat(31), spicy(31), japanese(28), dairy(27), comfort(27), mediterranean(25), american(17), side(17), italian(17), salad(17), fruit(16), dessert(16), grain(16), herb(15), thai(15)"
+      "msg": "2 tags defined but unused: grill, herbaceous"
+    },
+    {
+      "level": "INFO",
+      "category": "tags",
+      "file": "content/_schema/tags.json",
+      "msg": "80 tags in use across 736 entries. Top: pantry(236), umami(222), make-ahead(118), comfort(104), weekend-project(95), spicy(72), weeknight(61), pork(56), fermentation(52), no-cook(46), fish(40), chicken(38), quick(38), seafood(37), rice(36), one-pot(36), condiment(29), egg(28), beef(27), stew(23), bread(22), salad(20), soup(19), vegan(19), pickle(17), braise(15), holiday(15), fried(13), roast(13), tropical(11)"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "index stats: 403 pages, 4718 tokens, 199.7 KB"
+      "msg": "index stats: 684 pages, 7130 tokens, 350.6 KB"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "2589 singleton tokens (appear in exactly 1 entry). Sample: italian-american (north beach, san francisco), pan-asian / west african pantry crossover, doubanjiang-douchi-sichuan-peppercorn, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), pectin-and-arabinogalactan-rich, mediterranean (levantine lean), citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, goan (konkan coast, india), japanese-short-grain-rice, cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil, rendered-pork-plus-ya-cai, raw-garlic-plus-chinkiang, radiative-and-conductive, butterscotch-and-floral, tomato-vinegar-aromatic, gochujang-and-gochugaru, eggplant-bamboo-shimeji, brassica-allium-starch, rendered-fat-and-smoke, maillard-and-pyrolysis, glutamate-and-fructose, coconut-milk-and-stock, doubanjiang-and-douchi"
+      "msg": "3840 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil, rendered-pork-plus-ya-cai"
     },
     {
       "level": "WARN",
