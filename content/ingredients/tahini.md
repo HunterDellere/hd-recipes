@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tahini'
 desc: 'Hulled raw or lightly toasted sesame seeds, stone-ground to a pale, pourable paste. The structural backbone of Levantine cooking — hummus, tahini sauce, halva, and the dressing for half the salads of the eastern Mediterranean.'
 metaDesc: 'Tahini: hulled-sesame paste from the Levant. Why single-origin tahini is structurally different from supermarket house brands, the seizing chemistry when water hits the paste, and applications across hummus, dressings, and halva.'
-tags: ['umami', 'levantine', 'pantry']
+tags: ['umami', 'pantry']
 density_g_per_ml: 1.05
 imperial_pref: 'tbsp'
 updated: '2026-05-10'

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Ground cumin","status":"complete","tags":["spice","aromatic","pantry","mexican"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Ground cumin","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,35 +109,91 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">ground cumin (Mexican low-dose layered application)</span>
-          <span class="sub-card-use">cumin seeds, freshly ground in a mortar or spice grinder (use the same weight)</span>
-          <p class="sub-card-note">Freshly ground whole seeds are more aromatic than pre-ground supermarket cumin and read more pronounced at the same dose. The substitution requires a grinder or mortar; worth the 30 seconds for any application where cumin is the defining spice.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">ground cumin (when out of stock, broad warm-spice replacement)</span>
-          <span class="sub-card-use">ground coriander (use the same weight) or a 50/50 blend of ground coriander and caraway</span>
-          <p class="sub-card-note">Coriander provides a similar warm-citrus background without the cumin earthiness; caraway adds back some of the cumin-adjacent aromatic. The dish reads close but distinctly different; acceptable when cumin is genuinely unavailable but cumin is widely stocked enough that this substitution is rarely needed.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">ground cumin (chili powder blend application)</span>
-          <span class="sub-card-use">pre-mixed Tex-Mex chili powder (which contains cumin plus chili plus oregano plus salt)</span>
-          <p class="sub-card-note">Tex-Mex chili powder is approximately 30% ground cumin by weight; substituting 1 tbsp chili powder for 1 tsp ground cumin replaces the cumin and adds the additional spices. Acceptable for Tex-Mex applications; produces a distinctly Tex-Mex rather than authentic-Mexican flavor profile.</p>
-        </li>
+        <li><strong>ground cumin (Mexican low-dose layered application)</strong> → cumin seeds, freshly ground in a mortar or spice grinder (use the same weight) <span class="sub-note">Freshly ground whole seeds are more aromatic than pre-ground supermarket cumin and read more pronounced at the same dose. The substitution requires a grinder or mortar; worth the 30 seconds for any application where cumin is the defining spice.</span></li>
+        <li><strong>ground cumin (when out of stock, broad warm-spice replacement)</strong> → ground coriander (use the same weight) or a 50/50 blend of ground coriander and caraway <span class="sub-note">Coriander provides a similar warm-citrus background without the cumin earthiness; caraway adds back some of the cumin-adjacent aromatic. The dish reads close but distinctly different; acceptable when cumin is genuinely unavailable but cumin is widely stocked enough that this substitution is rarely needed.</span></li>
+        <li><strong>ground cumin (chili powder blend application)</strong> → pre-mixed Tex-Mex chili powder (which contains cumin plus chili plus oregano plus salt) <span class="sub-note">Tex-Mex chili powder is approximately 30% ground cumin by weight; substituting 1 tbsp chili powder for 1 tsp ground cumin replaces the cumin and adds the additional spices. Acceptable for Tex-Mex applications; produces a distinctly Tex-Mex rather than authentic-Mexican flavor profile.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/aji-de-gallina.html" data-category="recipes">
+          <span class="rl-card-title">Ají de gallina</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/anticuchos-de-corazon.html" data-category="recipes">
+          <span class="rl-card-title">Anticuchos de corazón</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/arroz-con-pollo-cubano.html" data-category="recipes">
+          <span class="rl-card-title">Arroz con pollo Cubano</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/baba-ganoush.html" data-category="recipes">
+          <span class="rl-card-title">Baba ganoush</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-satay-with-peanut-sauce.html" data-category="recipes">
+          <span class="rl-card-title">Chicken satay with peanut sauce</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-shawarma.html" data-category="recipes">
+          <span class="rl-card-title">Chicken shawarma</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-tagine-with-preserved-lemon-and-olives.html" data-category="recipes">
+          <span class="rl-card-title">Chicken tagine with preserved lemon and olives</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/chicken-zucchini-meatballs-with-yogurt-dill.html" data-category="recipes">
           <span class="rl-card-title">Chicken-zucchini meatballs with yogurt-dill</span>
           
         </a>
+        <a class="rl-card" href="../recipes/hummus-classic.html" data-category="recipes">
+          <span class="rl-card-title">Classic hummus</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/couscous-with-seven-vegetables.html" data-category="recipes">
+          <span class="rl-card-title">Couscous with seven vegetables</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/cuban-ropa-vieja.html" data-category="recipes">
+          <span class="rl-card-title">Cuban ropa vieja</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/harira.html" data-category="recipes">
+          <span class="rl-card-title">Harira</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/iskender-kebab.html" data-category="recipes">
+          <span class="rl-card-title">İskender kebab</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lahmacun.html" data-category="recipes">
+          <span class="rl-card-title">Lahmacun</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lamb-tagine-with-prunes-and-almonds.html" data-category="recipes">
+          <span class="rl-card-title">Lamb tagine with prunes and almonds</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lomo-saltado.html" data-category="recipes">
+          <span class="rl-card-title">Lomo saltado</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/manti.html" data-category="recipes">
+          <span class="rl-card-title">Manti</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/mediterranean-grain-bowl-with-tahini-yogurt.html" data-category="recipes">
           <span class="rl-card-title">Mediterranean grain bowl with tahini-yogurt</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
           
         </a>
         <a class="rl-card" href="../recipes/roasted-chickpea-and-cauliflower-pita.html" data-category="recipes">
@@ -158,37 +216,37 @@
           <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="thai-chili.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Thai bird chili (prik kee noo)</span>
-          <span class="rl-card-why">spice · aromatic</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="chipotle-in-adobo.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Chipotle in adobo</span>
-          <span class="rl-card-why">mexican · spice</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="black-pepper.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Black peppercorns</span>
-          <span class="rl-card-why">spice · aromatic</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="cinnamon-stick.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cinnamon stick</span>
-          <span class="rl-card-why">spice · aromatic</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="fennel-seed.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel seed</span>
-          <span class="rl-card-why">spice · aromatic</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="ginger.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Ginger (fresh)</span>
-          <span class="rl-card-why">spice · aromatic</span>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="red-pepper-flakes.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red pepper flakes (crushed red pepper)</span>
-          <span class="rl-card-why">spice · aromatic</span>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Avocado</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="star-anise.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Star anise</span>
-          <span class="rl-card-why">spice · aromatic</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>

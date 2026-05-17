@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ichiban dashi (first-extraction Japanese dashi)'
 desc: 'The first extraction of kombu and katsuobushi: cold-soak the kombu, lift just before boiling, briefly steep the bonito flakes, strain. The structural broth that underlies most of Japanese cooking, made in 20 minutes from two ingredients. Stub.'
 metaDesc: 'Ichiban dashi: first-extraction Japanese dashi made from kombu and katsuobushi, the structural broth under miso soup, simmered dishes, and most of Japanese cuisine. Stub recipe.'
-tags: ['japanese', 'sauce', 'pantry', 'umami']
+tags: ['pantry', 'umami']
 updated: '2026-05-15'
 
 servings: 4

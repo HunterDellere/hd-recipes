@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Turmeric (haldi, ground)'
 desc: 'Dried and ground rhizome of Curcuma longa, brilliant orange-yellow, faintly bitter, and structural to South Asian cooking for both color and a low-grade aromatic depth. Curcumin (the active pigment-and-aromatic compound) is fat-soluble; turmeric tempered briefly in hot oil contributes more than turmeric stirred into water-based sauces.'
 metaDesc: 'Turmeric (haldi): curcumin chemistry, fat-soluble pigment, role in South Asian and Southeast Asian cooking. When fresh root beats ground, why brief tempering matters.'
-tags: ['spice', 'aromatic', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-09'
 

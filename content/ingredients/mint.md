@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mint'
 desc: 'Aromatic herb in the Mentha genus; spearmint (Mentha spicata) is the cooking-canonical species, peppermint (M. × piperita) the candy-and-cocktail one. Defined aromatic comes from monoterpene compounds — carvone in spearmint, menthol in peppermint.'
 metaDesc: 'Mint (Mentha spicata, M. piperita): the species split, the carvone vs menthol chemistry, raw vs cooked applications, and why fresh mint reads differently than dried.'
-tags: ['herb', 'aromatic']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 173468

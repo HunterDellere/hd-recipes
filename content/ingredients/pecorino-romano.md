@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pecorino romano'
 desc: 'Hard sheep''s-milk cheese from Lazio and Sardinia, aged 5–8 months and DOP-protected. Salty, sharp, and lactic; functions as a seasoning cheese as much as a flavor cheese.'
 metaDesc: 'Pecorino Romano DOP: hard sheep''s-milk cheese, salty and sharp. The chemistry behind its salt level, the role across Italian cooking, and how to substitute parmigiano or manchego.'
-tags: ['dairy', 'umami', 'italian']
+tags: ['umami']
 density_g_per_ml: 0.42
 imperial_pref: 'cup'
 updated: '2026-04-29'

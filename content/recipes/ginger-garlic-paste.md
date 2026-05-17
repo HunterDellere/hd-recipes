@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ginger-garlic paste (homemade adrak-lehsun)'
 desc: 'Fresh ginger and garlic blended in roughly equal parts with a small amount of oil and salt to a smooth paste. The structural aromatic base of nearly every South Asian curry, marinade, and stir-fry. Five minutes of work, lasts a week refrigerated. Stub.'
 metaDesc: 'Homemade ginger-garlic paste (adrak-lehsun): the structural South Asian aromatic base. Stub recipe.'
-tags: ['indian', 'pakistani', 'sauce', 'aromatic', 'pantry']
+tags: ['pantry']
 updated: '2026-05-09'
 
 servings: 16

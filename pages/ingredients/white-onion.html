@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"White onion","status":"complete","tags":["vegetable","aromatic","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"White onion","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -108,35 +110,47 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">white onion (raw applications, salsas, salads, tacos)</span>
-          <span class="sub-card-use">sweet onion (Vidalia, Walla Walla)</span>
-          <p class="sub-card-note">Sweet onion is the closest substitute for white in raw Mexican applications when white is unavailable; flavor lands close, the sweetness is slightly higher but acceptable. Yellow onion in this role reads dull and overly sulfurous; <a class="x-link" data-category="ingredients" href="red-onion.html">red onion</a> shifts the dish into a different cuisine register (kachumber, fattoush). Sweet onion is the right fallback.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">white onion (pico de gallo, ensalada de nopales)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="shallot.html">shallot</a>, sliced fine</span>
-          <p class="sub-card-note">Shallot has a mildness similar to white onion plus a faint <a class="x-link" data-category="ingredients" href="garlic.html">garlic</a> note from higher allicin content. The dish reads slightly more European than Mexican but the basic chemistry holds; acceptable.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">white onion (cooked applications, sofrito, sauteed base)</span>
-          <span class="sub-card-use">yellow onion</span>
-          <p class="sub-card-note">Yellow onion is the canonical cooking onion across most cuisines; white onion in cooked applications offers no advantage and takes longer to caramelize. Substitute 1:1 by weight; the dish stays the same.</p>
-        </li>
+        <li><strong>white onion (raw applications, salsas, salads, tacos)</strong> → sweet onion (Vidalia, Walla Walla) <span class="sub-note">Sweet onion is the closest substitute for white in raw Mexican applications when white is unavailable; flavor lands close, the sweetness is slightly higher but acceptable. Yellow onion in this role reads dull and overly sulfurous; <a class="x-link" data-category="ingredients" href="red-onion.html">red onion</a> shifts the dish into a different cuisine register (kachumber, fattoush). Sweet onion is the right fallback.</span></li>
+        <li><strong>white onion (pico de gallo, ensalada de nopales)</strong> → <a class="x-link" data-category="ingredients" href="shallot.html">shallot</a>, sliced fine <span class="sub-note">Shallot has a mildness similar to white onion plus a faint <a class="x-link" data-category="ingredients" href="garlic.html">garlic</a> note from higher allicin content. The dish reads slightly more European than Mexican but the basic chemistry holds; acceptable.</span></li>
+        <li><strong>white onion (cooked applications, sofrito, sauteed base)</strong> → yellow onion <span class="sub-note">Yellow onion is the canonical cooking onion across most cuisines; white onion in cooked applications offers no advantage and takes longer to caramelize. Substitute 1:1 by weight; the dish stays the same.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/carnitas.html" data-category="recipes">
+          <span class="rl-card-title">Carnitas</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/ensalada-de-nopales.html" data-category="recipes">
           <span class="rl-card-title">Ensalada de nopales</span>
           
         </a>
         <a class="rl-card" href="../recipes/huevos-rancheros.html" data-category="recipes">
           <span class="rl-card-title">Huevos rancheros</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/mole-poblano.html" data-category="recipes">
+          <span class="rl-card-title">Mole poblano</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pho-bo-hanoi-style.html" data-category="recipes">
+          <span class="rl-card-title">Pho bo (Hanoi-style beef pho)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pikliz.html" data-category="recipes">
+          <span class="rl-card-title">Pikliz</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pozole-rojo.html" data-category="recipes">
+          <span class="rl-card-title">Pozole rojo</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/tacos-al-pastor.html" data-category="recipes">
+          <span class="rl-card-title">Tacos al pastor</span>
           
         </a>
     </div>
@@ -148,49 +162,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="red-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="yellow-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Yellow onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="fennel-bulb.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel bulb</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="leek.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Leek</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="espresso-beans.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Espresso beans</span>
-          <span class="rl-card-why">aromatic · pantry</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="bell-pepper.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Bell pepper</span>
-          <span class="rl-card-why">vegetable · pantry</span>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="carrot.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Carrot</span>
-          <span class="rl-card-why">vegetable · pantry</span>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Avocado</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/mortar-pounding.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Mortar pounding (clay vs granite)</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>

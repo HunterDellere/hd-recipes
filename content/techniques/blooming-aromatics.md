@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Blooming aromatics'
 desc: 'Heat whole spices in fat to release lipid-soluble volatiles that water cannot extract.'
 metaDesc: 'Blooming aromatics: why fat extracts what water cannot, the temperature window, and the failure mode that turns spice acrid.'
-tags: ['aromatic', 'fat']
+tags: []
 updated: '2026-04-26'
 
 about: |

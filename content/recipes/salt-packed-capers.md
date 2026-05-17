@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salt-packed capers'
 desc: 'Fresh caper buds wilted, salt-packed, and cured for 30 to 60 days. The dry-salt method partially degrades glucocapparin to mellow raw harshness into a layered floral-mustard-savory finish, with crisper bite than the brined-jar version.'
 metaDesc: 'Salt-packed capers: Mediterranean dry cure for fresh caper buds, the technique behind Pantelleria and Salina IGP capers. 60 to 70 percent salt, 30 to 60 day cure.'
-tags: ['fermentation', 'pantry', 'pickle', 'mediterranean', 'make-ahead', 'weekend-project']
+tags: ['fermentation', 'pantry', 'pickle', 'make-ahead', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 1

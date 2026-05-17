@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cotija'
 desc: 'Aged Mexican cow-milk cheese from the highlands of Michoacán and Jalisco. Hard, dry, salt-forward, intensely lactic; the canonical finishing-and-grating cheese for elote, esquites, beans, and roasted-vegetable salads. Often called "the Parmesan of Mexico" though closer in microstructure to a young pecorino or ricotta salata.'
 metaDesc: 'Cotija cheese: production, aging, why it crumbles instead of melts, place against queso fresco and Pecorino, dishes across Mexican cooking, sourcing.'
-tags: ['dairy', 'umami', 'mexican']
+tags: ['umami']
 density_g_per_ml: 1.1
 imperial_pref: 'cup'
 updated: '2026-05-10'

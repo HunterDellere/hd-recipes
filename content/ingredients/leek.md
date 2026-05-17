@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Leek'
 desc: 'Allium ampeloprasum var. porrum. Long, mild allium with a thick blanched white-and-pale-green stem and tougher dark-green leaf tops. Sweeter and more delicate than yellow onion, with a high sulfur-compound load that mellows fast under heat. The structural sweet-aromatic of French stocks, soups, and Provençal fish broths.'
 metaDesc: 'Leek: anatomy, the dirt-trapping leaf-base structure that demands a slit-and-rinse, the sulfur-vs-sugar trade-off under heat, applications across French stocks, vichyssoise, and bouillabaisse, plus buying and storage notes.'
-tags: ['vegetable', 'aromatic']
+tags: []
 density_g_per_ml: 0.55
 grams_per_unit: 250
 updated: '2026-05-10'

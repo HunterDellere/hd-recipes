@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Salted duck egg (咸鸭蛋, xian ya dan)'
 desc: 'Raw duck egg cured in salt brine for thirty to forty days. White stays mostly liquid and saline, yolk turns dense, deep orange-red, oil-bleeding, fudgy. A different ingredient from a century egg.'
 metaDesc: 'Salted duck egg: brine-cured Chinese egg with a fudgy red-orange yolk. Cure chemistry, role in congee, mooncakes, zongzi, and salted-egg-yolk sauces.'
-tags: ['egg', 'chinese', 'fermentation', 'umami', 'pickle']
+tags: ['egg', 'fermentation', 'umami', 'pickle']
 updated: '2026-05-08'
 
 grams_per_unit: 70

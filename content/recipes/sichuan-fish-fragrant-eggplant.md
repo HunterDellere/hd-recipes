@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sichuan fish-fragrant eggplant (yu xiang qie zi)'
 desc: 'Sichuan classic. Eggplant batons dry-fried until structurally collapsed, then tossed in a sweet-sour-spicy "fish-fragrant" sauce built on doubanjiang, ginger, garlic, scallions, and Chinkiang vinegar. Contains no fish; the name describes the flavor profile traditionally used for fish.'
 metaDesc: 'Yu xiang qie zi (Sichuan fish-fragrant eggplant): the dry-fry technique that prevents soggy eggplant, sweet-sour-spicy sauce, options for every cultivar.'
-tags: ['vegetable', 'chinese', 'spicy', 'umami', 'one-pot']
+tags: ['spicy', 'umami', 'one-pot']
 updated: '2026-05-09'
 
 servings: 3

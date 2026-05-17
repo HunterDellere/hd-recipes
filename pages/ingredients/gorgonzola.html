@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Gorgonzola","status":"complete","tags":["dairy","fermentation","umami","fat"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Gorgonzola","status":"complete","tags":["fermentation","umami"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,28 +109,12 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">gorgonzola dolce (melting, spreading)</span>
-          <span class="sub-card-use">Cambozola or Saint Agur</span>
-          <p class="sub-card-note">Both are mild, creamy blue cheeses with similar melting behavior. Cambozola is closer to the brie-blue hybrid character; Saint Agur is closer to gorgonzola dolce in flavor profile.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">gorgonzola piccante (crumbling, sharp blue)</span>
-          <span class="sub-card-use">Roquefort</span>
-          <p class="sub-card-note">Sharper, saltier, more aggressive blue character. The dish reads more French-leaning. Reduce the cheese quantity by 20% as Roquefort hits harder.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">gorgonzola (blue cheese in a generic recipe)</span>
-          <span class="sub-card-use">Stilton</span>
-          <p class="sub-card-note">Different cuisine (English) but similar role: mid-aged blue cheese for crumbling. Less creamy than dolce, less sharp than piccante.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">gorgonzola (vegan)</span>
-          <span class="sub-card-use">cashew-based blue cheese alternative</span>
-          <p class="sub-card-note">Several brands now produce blue-veined cashew cheeses inoculated with Penicillium roqueforti. Functionally close, especially in cold applications; melting behavior differs and the cheese tends to break in heat. Use for spreads, salads, and tartines; not for pasta sauces.</p>
-        </li>
+        <li><strong>gorgonzola dolce (melting, spreading)</strong> → Cambozola or Saint Agur <span class="sub-note">Both are mild, creamy blue cheeses with similar melting behavior. Cambozola is closer to the brie-blue hybrid character; Saint Agur is closer to gorgonzola dolce in flavor profile.</span></li>
+        <li><strong>gorgonzola piccante (crumbling, sharp blue)</strong> → Roquefort <span class="sub-note">Sharper, saltier, more aggressive blue character. The dish reads more French-leaning. Reduce the cheese quantity by 20% as Roquefort hits harder.</span></li>
+        <li><strong>gorgonzola (blue cheese in a generic recipe)</strong> → Stilton <span class="sub-note">Different cuisine (English) but similar role: mid-aged blue cheese for crumbling. Less creamy than dolce, less sharp than piccante.</span></li>
+        <li><strong>gorgonzola (vegan)</strong> → cashew-based blue cheese alternative <span class="sub-note">Several brands now produce blue-veined cashew cheeses inoculated with Penicillium roqueforti. Functionally close, especially in cold applications; melting behavior differs and the cheese tends to break in heat. Use for spreads, salads, and tartines; not for pasta sauces.</span></li>
     </ul>
 
     
@@ -151,33 +137,33 @@
           <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="sour-cream.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sour cream</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card is-strong" href="butter.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Butter (unsalted)</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card is-strong" href="heavy-cream.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Heavy cream</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card is-strong" href="samna.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Samna (clarified butter)</span>
-          <span class="rl-card-why">dairy · fat</span>
-        </a>
-        <a class="rl-card" href="jameed.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="jameed.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Jameed</span>
-          <span class="rl-card-why">dairy · fermentation</span>
+          <span class="rl-card-why">fermentation · umami</span>
         </a>
-        <a class="rl-card" href="queso-fresco.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Queso fresco</span>
-          <span class="rl-card-why">dairy · umami</span>
+        <a class="rl-card is-strong" href="red-miso.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Red miso (aka)</span>
+          <span class="rl-card-why">fermentation · umami</span>
         </a>
-        <a class="rl-card" href="coconut-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Coconut milk (canned, full-fat)</span>
-          <span class="rl-card-why">fat · umami</span>
+        <a class="rl-card is-strong" href="white-miso.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">White miso (shiro)</span>
+          <span class="rl-card-why">fermentation · umami</span>
+        </a>
+        <a class="rl-card" href="bagoong.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bagoong</span>
+          <span class="rl-card-why">fermentation · umami</span>
+        </a>
+        <a class="rl-card" href="douchi.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Douchi (fermented black beans, 豆豉)</span>
+          <span class="rl-card-why">fermentation · umami</span>
+        </a>
+        <a class="rl-card" href="fish-sauce.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Fish sauce</span>
+          <span class="rl-card-why">fermentation · umami</span>
+        </a>
+        <a class="rl-card" href="terasi.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Terasi (belacan)</span>
+          <span class="rl-card-why">fermentation · umami</span>
         </a>
         </div>
       </div>
@@ -190,7 +176,7 @@
         <div class="rl-cards rl-cards--techniques">
         <a class="rl-card" href="../techniques/cooked-yogurt-sauce.html" data-category="techniques" data-reason="tag">
           <span class="rl-card-title">Cooked yogurt sauce</span>
-          <span class="rl-card-why">dairy · fermentation</span>
+          <span class="rl-card-why">fermentation</span>
         </a>
         </div>
       </div>

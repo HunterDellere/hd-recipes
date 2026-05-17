@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Vanilla bean paste'
 desc: 'Vanilla extract suspended in a syrup with the scraped seeds of the pod. Same flavor as a whole bean, a fraction of the price, and you get the visible black flecks.'
-tags: ['aromatic']
+tags: []
 density_g_per_ml: 1.1
 imperial_pref: 'tsp'
 updated: '2026-04-26'

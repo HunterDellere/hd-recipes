@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade tahini'
 desc: 'Hulled sesame seeds toasted lightly at 160 °C and ground with neutral oil to a smooth, pourable paste. Fresher and more aromatic than commercial bottles, especially against supermarket house-brand tahini.'
 metaDesc: 'Homemade tahini: hulled sesame seeds toasted at 160 °C and ground with neutral oil. Hulled-vs-unhulled, toast-temperature window, the seizing-and-relaxing grind curve.'
-tags: ['weekend-project', 'pantry', 'levantine', 'umami']
+tags: ['weekend-project', 'pantry', 'umami']
 updated: '2026-05-10'
 
 servings: 12

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Avocado oil'
 desc: 'Pressed from avocado flesh, mostly monounsaturated fat. Holds high heat without smoking and stays neutral enough for searing where olive oil''s fruit notes would intrude.'
 metaDesc: 'Avocado oil: high smoke point, mostly oleic acid. Refined vs unrefined, when to use it, what to substitute.'
-tags: ['fat']
+tags: []
 density_g_per_ml: 0.91
 imperial_pref: 'tbsp'
 updated: '2026-04-26'

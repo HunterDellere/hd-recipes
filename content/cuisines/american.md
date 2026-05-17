@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'American'
 desc: 'Layered fat with restrained sweetness in bakes and bright finishes (lemon, mustard, vinegar) in savory dishes. The throughline is dialing back what factory food overdoes.'
 metaDesc: 'American cooking on hd-recipes: the bake-side and savory-side pantry, the technique throughline, and two starting recipes that teach opposite ends of the catalog.'
-tags: ['american']
+tags: []
 updated: '2026-04-26'
 ---
 

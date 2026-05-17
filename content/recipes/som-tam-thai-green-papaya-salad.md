@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Som tum thai (green papaya salad)'
 desc: 'Shredded green papaya bruised in a clay mortar with garlic, Thai bird chili, palm sugar, fish sauce, and lime, finished with dried shrimp, peanuts, yardlong bean, and cherry tomato. The dressing is built in the mortar as the papaya is pounded; the bruise is the technique.'
 metaDesc: 'Som tum thai built in a clay mortar, pounded green papaya with palm sugar, fish sauce, lime, dried shrimp, peanuts. The bruise drives sauce uptake; four-flavor balance drives seasoning.'
-tags: ['salad', 'thai', 'spicy', 'umami', 'no-cook', 'weeknight']
+tags: ['salad', 'spicy', 'umami', 'no-cook', 'weeknight']
 updated: '2026-05-10'
 
 servings: 4

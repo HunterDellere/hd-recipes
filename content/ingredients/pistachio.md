@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pistachio'
 desc: 'Seed of Pistacia vera, a desert-tree drupe split between Iranian, Sicilian (Bronte DOP), Turkish (Antep), and California production. Bright green flesh from chlorophyll, distinctive resinous pine-and-floral aromatics from terpene-derived compounds.'
 metaDesc: 'Pistachio (Pistacia vera): the chemistry behind the green color, the four major growing regions and their flavor differences, toasting curve, and applications across savory and sweet.'
-tags: ['nuts', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 usda_fdc_id: 170184

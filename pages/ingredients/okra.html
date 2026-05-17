@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Okra (lady fingers, bhindi, gumbo)","status":"complete","tags":["vegetable"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Okra (lady fingers, bhindi, gumbo)","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">okra (Louisiana gumbo, West African okra stew, thickening role)</span>
-          <span class="sub-card-use">filé powder (ground sassafras leaves) plus a touch of <a class="x-link" data-category="ingredients" href="cornstarch.html">cornstarch</a> slurry</span>
-          <p class="sub-card-note">Filé powder is the traditional alternative thickener for gumbo (the dish takes &quot;okra gumbo&quot; or &quot;filé gumbo&quot; names depending on which thickener is used). Use 1 tbsp filé added off-heat at the end of cooking for a 4-serving pot; the powder thickens the liquid through gelation of mucilaginous components similar to okra. Avoids the okra texture entirely.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">okra (South Asian bhindi masala, stir-fry application)</span>
-          <span class="sub-card-use">zucchini cut into 2 cm chunks</span>
-          <p class="sub-card-note">Zucchini in a dry-fried bhindi-style preparation reads as a different vegetable but produces a recognizable South Asian dish; the slime concern is gone, and the absorbent vegetable takes on the masala seasoning effectively.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">okra (Vietnamese canh chua, textural element)</span>
-          <span class="sub-card-use">omit, or substitute 100 g asparagus pieces</span>
-          <p class="sub-card-note">Asparagus pieces (4 cm) at the same point in the cook give a structural vegetable presence without the mucilage. The dish reads slightly thinner-bodied in the broth (the small mucilage contribution from okra is lost) but is recognizably canh chua.</p>
-        </li>
+        <li><strong>okra (Louisiana gumbo, West African okra stew, thickening role)</strong> → filé powder (ground sassafras leaves) plus a touch of <a class="x-link" data-category="ingredients" href="cornstarch.html">cornstarch</a> slurry <span class="sub-note">Filé powder is the traditional alternative thickener for gumbo (the dish takes &quot;okra gumbo&quot; or &quot;filé gumbo&quot; names depending on which thickener is used). Use 1 tbsp filé added off-heat at the end of cooking for a 4-serving pot; the powder thickens the liquid through gelation of mucilaginous components similar to okra. Avoids the okra texture entirely.</span></li>
+        <li><strong>okra (South Asian bhindi masala, stir-fry application)</strong> → zucchini cut into 2 cm chunks <span class="sub-note">Zucchini in a dry-fried bhindi-style preparation reads as a different vegetable but produces a recognizable South Asian dish; the slime concern is gone, and the absorbent vegetable takes on the masala seasoning effectively.</span></li>
+        <li><strong>okra (Vietnamese canh chua, textural element)</strong> → omit, or substitute 100 g asparagus pieces <span class="sub-note">Asparagus pieces (4 cm) at the same point in the cook give a structural vegetable presence without the mucilage. The dish reads slightly thinner-bodied in the broth (the small mucilage contribution from okra is lost) but is recognizably canh chua.</span></li>
     </ul>
 
     
@@ -138,6 +128,10 @@
           <span class="rl-card-title">Canh chua cá (Vietnamese tamarind sour soup with catfish)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pork-sinigang.html" data-category="recipes">
+          <span class="rl-card-title">Pork sinigang (sinigang na baboy)</span>
+          
+        </a>
     </div>
   
     <span class="section-anchor" id="related"></span>
@@ -147,49 +141,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">5</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="broccoli.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Broccoli</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="delicata-squash.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Delicata squash</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="agar-agar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Agar-agar</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="red-beet.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red beet</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="taro-stem.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Taro stem (bạc hà, elephant ear stem)</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="bell-pepper.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Bell pepper</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="all-purpose-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">All-purpose flour</span>
+          <span class="rl-card-why">related</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">3</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/ice-bath-shock.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Ice bath shock</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="../techniques/salting-eggplant.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Salting eggplant</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="../techniques/smacking-vegetables.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Smacking vegetables</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">related</span>
         </a>
         </div>
       </div>

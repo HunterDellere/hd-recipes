@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Red miso (aka)'
 desc: 'Long-fermented soybean paste, deep red-brown, salt-forward and assertive. The miso for hearty miso soup, robust glazes, and applications where depth is the point rather than restraint.'
 metaDesc: 'Red miso (aka): long fermentation, higher salt, the funkier counterpart to white miso ,  when to use it for miso soup, glazes, and braises.'
-tags: ['umami', 'fermentation', 'japanese']
+tags: ['umami', 'fermentation']
 updated: '2026-05-09'
 
 usda_fdc_id: 173768

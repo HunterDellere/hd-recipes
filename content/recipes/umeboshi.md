@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Umeboshi (salt-pickled and sun-dried plums)'
 desc: 'Sour-salty preserved plums made by lacto-fermenting unripe Japanese ume in coarse salt for several weeks, then sun-drying for three consecutive hot days, optionally re-pickling with red shiso for the canonical pink color. The umami-and-acid hammer of Japanese pickles. Stub.'
 metaDesc: 'Homemade umeboshi: lacto-fermented salt-pickled and sun-dried Japanese plums. Stub recipe pending full draft.'
-tags: ['japanese', 'pickle', 'fermentation', 'weekend-project']
+tags: ['pickle', 'fermentation', 'weekend-project']
 updated: '2026-05-09'
 
 servings: 30

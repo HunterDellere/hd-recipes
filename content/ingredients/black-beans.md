@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Black beans (frijoles negros)'
 desc: 'Small to medium black-skinned legumes (Phaseolus vulgaris cv. Black Turtle) with a creamy off-white interior. The structural legume of central Mexican, Cuban, and Brazilian cooking; rich in soluble fiber, anthocyanin pigments in the seed coat, and the highest free-glutamate of any common bean.'
 metaDesc: 'Black beans: chemistry, soak vs no-soak debate, cooking method, salt timing, dishes across Mexican, Cuban, and Brazilian cuisines, sourcing dried vs canned.'
-tags: ['legume', 'pantry', 'umami', 'mexican']
+tags: ['pantry', 'umami']
 density_g_per_ml: 0.72
 imperial_pref: 'cup'
 updated: '2026-05-10'

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Panko'
 desc: 'Japanese-style breadcrumbs made from a crustless white bread dried into airy, jagged flakes rather than ground into uniform sand. The shape is the entire point: the flakes catch and hold oil along their facets, producing a fried crust that reads dramatically crispier and lighter than European-style breadcrumbs.'
 metaDesc: 'Panko: Japanese breadcrumbs made by electrical-current baking of crustless white bread, why the flake shape produces a crispier crust than regular breadcrumbs.'
-tags: ['pantry', 'japanese']
+tags: ['pantry']
 density_g_per_ml: 0.18
 updated: '2026-05-15'
 

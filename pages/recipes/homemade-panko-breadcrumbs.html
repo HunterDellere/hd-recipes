@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -126,7 +128,7 @@
 
     
     <span class="section-anchor" id="ingredients"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5 h12 v3 a6 6 0 0 1 -12 0 z"/><path d="M16 6 a4 4 0 0 1 4 4 v0 a4 4 0 0 1 -4 4"/><line x1="10" y1="14" x2="10" y2="20"/><line x1="6" y1="20" x2="14" y2="20"/></svg></span>Mise en Place</h2></div>
+    <div class="section-head"><h2>Mise en Place</h2></div>
     <div class="recipe-ingredients" data-base-servings="1">
       <div class="ing-controls">
         <div class="ing-control ing-scale">
@@ -182,7 +184,7 @@
             <span class="ing-panel-chev" aria-hidden="true">▾</span>
           </span>
         </summary>
-        <div class="ing-mise-body"><h3 class="ing-group-head"><span class="ing-group-ord" aria-hidden="true">1.</span><span class="ing-group-text">The bread</span></h3><ol class="ing-list">
+        <div class="ing-mise-body"><h3 class="ing-group-head">The bread</h3><ol class="ing-list">
         <li class="ing-row" data-qty="250" data-unit="g" data-scalable="1">
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           <span class="ing-qty"><span data-ing-qty>250</span> <span data-ing-unit>g</span></span>
@@ -195,7 +197,7 @@
 
     
     <span class="section-anchor" id="execution"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20 c0 -3 2 -5 5 -8 c3 -3 5 -5 5 -8"/><path d="M11 20 c0 -3 2 -5 5 -8 c3 -3 5 -5 5 -8"/><path d="M3 20 c0 -3 2 -5 5 -8 c3 -3 5 -5 5 -8"/></svg></span>Execution</h2></div>
+    <div class="section-head"><h2>Execution</h2></div>
     <ol class="recipe-steps">
       <li class="step-item" data-time-min="5">
         <span class="step-num">1</span>
@@ -226,135 +228,106 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">1:1 ingredient swaps where the dish stays the same dish.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">1:1 ingredient swaps where the dish stays the same dish.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">white sandwich bread</span>
-          <span class="sub-card-use">sourdough or country loaf</span>
-          <p class="sub-card-note">Acceptable but skews darker and the crust-to-crumb ratio is wrong; you lose half to crusts. Pullman or shokupan stays white and gives long shards.</p>
-        </li>
+        <li><strong>white sandwich bread</strong> → sourdough or country loaf <span class="sub-note">Acceptable but skews darker and the crust-to-crumb ratio is wrong; you lose half to crusts. Pullman or shokupan stays white and gives long shards.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="notes"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 h9 l4 4 v14 a0 0 0 0 1 0 0 H6 z"/><polyline points="15 3 15 7 19 7"/><line x1="9" y1="12" x2="16" y2="12"/><line x1="9" y1="16" x2="14" y2="16"/></svg></span>Notes</h2></div>
-    
+    <div class="section-head"><h2>Notes</h2></div>
     <div class="recipe-notes"><p>Real panko is structural, not textural. The splintery long-shard shape is what makes it stay crisp under sauce — it traps air in the gaps so steam can escape rather than soaking the breading. Round breadcrumbs absorb; panko shards deflect.</p><p>Why low temp: at 250°F the bread loses water before any Maillard reaction starts on the cut surfaces. Industrial panko avoids browning entirely (the crumbs are baked in an electric field, no contact with hot metal); home oven gets close enough that the difference is invisible in a fried application.</p><p>Crusts make excellent fine breadcrumbs: same drying step, food-process to powder, season with salt and parmesan or za'atar for a meatball mix or gratin topping. Don't throw them out.</p><p>Storage: airtight at room temperature, 2 weeks. Freezer 3 months. The crumbs absorb humidity from the air and turn flexible if left out; if that happens, 5 minutes back in a 250°F oven re-crisps them.</p><p>The substitution test: if your &quot;panko&quot; is dust-fine and uniformly tan, it's regular breadcrumb in a bigger jar.
 </p></div>
 
     
     <span class="section-anchor" id="in-hubs"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 6 V4 a1 1 0 0 1 1 -1 h8 a1 1 0 0 1 1 1 v2"/></svg></span>In collections</h2></div>
+    <div class="section-head"><h2>In collections</h2></div>
     <div class="hub-chips"><a class="hub-chip" href="../hubs/pantry-makes.html" data-category="hubs">Pantry makes</a></div>
 
     
     <span class="section-anchor" id="pairs-with"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19 s-7 -4.5 -7 -10 a4 4 0 0 1 7 -2.6 a4 4 0 0 1 7 2.6 c0 5.5 -7 10 -7 10 z"/></svg></span>Pairs with</h2></div>
+    <div class="section-head"><h2>Pairs with</h2></div>
     <p class="pair-blurb">A handful of next moves — other dishes that round the meal, the techniques behind this one, the cuisine context, and the most distinctive ingredient.</p>
     <div class="pair-grid">
         <a class="pair-card" href="dijon-mustard.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="13" data-glyph="olive" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Dijon mustard</span>
-            <span class="pair-desc">Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and </span>
-            <span class="pair-reason">in pantry makes</span>
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Dijon mustard</span>
+          <span class="pair-desc">Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and </span>
+          <span class="pair-reason">in pantry makes</span>
         </a>
         <a class="pair-card" href="whole-grain-mustard.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="13" data-glyph="olive" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Whole-grain mustard</span>
-            <span class="pair-desc">Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing</span>
-            <span class="pair-reason">in pantry makes</span>
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Whole-grain mustard</span>
+          <span class="pair-desc">Same Dijon chemistry, but pulsed coarse — the seeds stay intact and pop between the teeth, releasing</span>
+          <span class="pair-reason">in pantry makes</span>
         </a>
         <a class="pair-card" href="thai-green-curry-paste.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="11" data-glyph="bowl" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Thai green curry paste</span>
-            <span class="pair-desc">A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zes</span>
-            <span class="pair-reason">in pantry makes</span>
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Thai green curry paste</span>
+          <span class="pair-desc">A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zes</span>
+          <span class="pair-reason">in pantry makes</span>
         </a>
-        <a class="pair-card" href="bouillabaisse-marseillaise.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="10" data-glyph="olive" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Bouillabaisse Marseillaise</span>
-            <span class="pair-desc">The Marseille fisherman's seafood stew built around a saffron-fennel-orange-tomato broth fortified w</span>
-            <span class="pair-reason">pair as dinner</span>
+        <a class="pair-card" href="aji-de-gallina.html" data-category="recipes">
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Ají de gallina</span>
+          <span class="pair-desc">The Peruvian creamy chicken stew: poached chicken shredded into a thick aromatic sauce of ají amaril</span>
+          <span class="pair-reason">pair as dinner</span>
         </a>
-        <a class="pair-card" href="brown-butter-cacio-e-pepe.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="3" data-glyph="olive" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Brown butter cacio e pepe</span>
-            <span class="pair-desc">Roman three-ingredient pasta, weaponized: brown butter replaces olive oil to layer Maillard nuttines</span>
-            <span class="pair-reason">pair as dinner</span>
+        <a class="pair-card" href="arroz-con-pollo-cubano.html" data-category="recipes">
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Arroz con pollo Cubano</span>
+          <span class="pair-desc">Cuban chicken-and-rice, the structural one-pot Sunday lunch: bone-in chicken thighs seared, then bra</span>
+          <span class="pair-reason">pair as dinner</span>
         </a>
-        <a class="pair-card" href="cantonese-mapo-pork.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="6" data-glyph="bowl" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Cantonese-style mapo with pork (gateway mapo)</span>
-            <span class="pair-desc">The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichu</span>
-            <span class="pair-reason">pair as dinner</span>
+        <a class="pair-card" href="avgolemono-soup.html" data-category="recipes">
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Avgolemono soup</span>
+          <span class="pair-desc">The Greek chicken-rice-egg-lemon soup: bone-in chicken pieces simmered in water with aromatics to bu</span>
+          <span class="pair-reason">pair as dinner</span>
         </a>
-        <a class="pair-card" href="cantonese-steamed-whole-fish-with-ginger-scallion.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="3" data-glyph="bowl" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Cantonese steamed whole fish with ginger and scallion</span>
-            <span class="pair-desc">Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 </span>
-            <span class="pair-reason">pair as dinner</span>
+        <a class="pair-card" href="beef-bourguignon.html" data-category="recipes">
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Beef bourguignon</span>
+          <span class="pair-desc">The Burgundian red-wine beef braise: chuck cubes browned hard, lardon-rendered fat as the structural</span>
+          <span class="pair-reason">pair as dinner</span>
         </a>
-        <a class="pair-card" href="carbonara.html" data-category="recipes">
-          <span class="pair-swatch ec-swatch" data-swatch="3" data-glyph="olive" aria-hidden="true"></span>
-          <span class="pair-body">
-            <span class="pair-head">
-              <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
-              <span class="pair-cat">recipes</span>
-              
-            </span>
-            <span class="pair-title">Carbonara</span>
-            <span class="pair-desc">The Roman pasta of yolk-and-pecorino emulsion bound by rendered guanciale fat and starchy pasta wate</span>
-            <span class="pair-reason">pair as dinner</span>
+        <a class="pair-card" href="beef-rendang.html" data-category="recipes">
+          <span class="pair-head">
+            <span class="pair-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-1.5 5a1 1 0 0 1-1 .8H5.5a1 1 0 0 1-1-.8z"/><path d="M5 14a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4"/><path d="M12 4v3"/><path d="M9 6.5l1 1.5"/><path d="M15 6.5l-1 1.5"/></svg></span>
+            <span class="pair-cat">recipes</span>
+            
           </span>
+          <span class="pair-title">Beef rendang</span>
+          <span class="pair-desc">Padang dry-cooked beef. Chuck or shank simmered in spice paste and coconut milk for three to four ho</span>
+          <span class="pair-reason">pair as dinner</span>
         </a>
     </div>
   
@@ -371,28 +344,32 @@
       <div class="rl-group" data-related-group="recipes">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">5</span>
+          <span class="rl-group-count">6</span>
         </h3>
         <div class="rl-cards rl-cards--recipes">
         <a class="rl-card is-strong" href="panzanella-with-charred-tomatoes.html" data-category="recipes" data-reason="tag">
           <span class="rl-card-title">Panzanella with charred tomatoes</span>
           <span class="rl-card-why">bread · weeknight</span>
         </a>
-        <a class="rl-card" href="sourdough-croutons.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Sourdough croutons</span>
-          <span class="rl-card-why">make-ahead · pantry</span>
+        <a class="rl-card is-strong" href="pizza-napoletana-dough.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Pizza Napoletana dough</span>
+          <span class="rl-card-why">bread · make-ahead</span>
         </a>
         <a class="rl-card" href="soy-glazed-peanuts.html" data-category="recipes" data-reason="tag">
           <span class="rl-card-title">Soy-glazed peanuts</span>
           <span class="rl-card-why">make-ahead · pantry</span>
         </a>
-        <a class="rl-card" href="furikake.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Furikake (homemade rice seasoning)</span>
-          <span class="rl-card-why">make-ahead · pantry</span>
+        <a class="rl-card" href="corn-tortillas-from-masa.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Corn tortillas from masa</span>
+          <span class="rl-card-why">bread · pantry</span>
         </a>
-        <a class="rl-card" href="lebanese-pita-bread.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Lebanese pita bread</span>
-          <span class="rl-card-why">bread</span>
+        <a class="rl-card" href="greens-and-ricotta-frittata.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Greens and ricotta frittata</span>
+          <span class="rl-card-why">weeknight · make-ahead</span>
+        </a>
+        <a class="rl-card" href="sourdough-croutons.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Sourdough croutons</span>
+          <span class="rl-card-why">make-ahead · pantry</span>
         </a>
         </div>
       </div>
@@ -403,26 +380,13 @@
           <span class="rl-group-count">2</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="../ingredients/sourdough-bread.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sourdough bread</span>
-          <span class="rl-card-why">bread · pantry</span>
-        </a>
         <a class="rl-card" href="../ingredients/pita-bread.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Pita bread</span>
           <span class="rl-card-why">bread · pantry</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/enriched-dough.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Enriched dough</span>
-          <span class="rl-card-why">bread</span>
+        <a class="rl-card" href="../ingredients/sourdough-bread.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Sourdough bread</span>
+          <span class="rl-card-why">bread · pantry</span>
         </a>
         </div>
       </div>

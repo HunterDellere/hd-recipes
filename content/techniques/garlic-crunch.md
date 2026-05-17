@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Garlic crunch'
 desc: 'Shallow-fry sliced garlic in oil to amber and pull off-heat — crisp texture, sweet Maillard, no bitterness.'
 metaDesc: 'Garlic crunch: how to shallow-fry sliced garlic to amber without burning, the off-heat carry-over, and why five seconds late means bitter.'
-tags: ['aromatic', 'fat']
+tags: []
 updated: '2026-04-26'
 
 about: |

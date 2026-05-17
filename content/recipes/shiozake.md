@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Shiozake (salt-cured broiled salmon)'
 desc: 'Salmon fillet dry-cured in coarse salt for 24 hours to firm the flesh and concentrate flavor, then broiled until the skin is crisp and the interior just opaque. The canonical onigiri filling, breakfast fish, and bento staple. Stub.'
 metaDesc: 'Homemade shiozake: salt-cured Japanese-style broiled salmon for onigiri, bento, and breakfast. Stub recipe pending full draft.'
-tags: ['japanese', 'fish', 'breakfast', 'make-ahead']
+tags: ['fish', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 4

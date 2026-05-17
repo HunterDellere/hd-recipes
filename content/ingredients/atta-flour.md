@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Atta flour (whole wheat chapati flour, آٹا)'
 desc: 'Indian-style whole wheat flour milled from durum-style hard wheat, with all the bran and germ retained, ground extra-fine for soft-pliable dough. The structural flour for roti, chapati, paratha, and naan. Lower gluten than American whole wheat flour, higher protein than all-purpose, fundamentally different milling.'
 metaDesc: 'Atta flour: hard-wheat fine-mill whole-wheat flour for South Asian flatbreads. Why it differs from American whole wheat flour, role in chapati / roti / paratha.'
-tags: ['grain', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-09'
 

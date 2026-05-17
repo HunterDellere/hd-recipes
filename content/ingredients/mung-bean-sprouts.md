@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Mung bean sprouts'
 desc: 'Germinated *Vigna radiata* seeds, harvested at the white-shoot stage. Roughly 90% water; the texture is the entire point.'
-tags: ['vegetable', 'legume']
+tags: []
 density_g_per_ml: 0.45
 imperial_pref: 'cup'
 updated: '2026-05-09'

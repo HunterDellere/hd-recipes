@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Rouille (saffron-garlic aioli for bouillabaisse)'
 desc: 'The Provençal saffron-and-garlic mayonnaise that crowns bouillabaisse and bourride, built from soaked bread (or a boiled potato), pounded raw garlic, saffron-infused broth, egg yolk, and a slow stream of olive oil. The name (literally "rust" in French, for the deep red-orange color) refers to the saffron-cayenne tint that distinguishes rouille from a plain aioli. Spread on toasted baguette croutons, dropped into the broth, or stirred directly into the soup as a thickener-flavor-bomb.'
 metaDesc: 'Rouille: the saffron-garlic aioli that finishes bouillabaisse and bourride. Bread-thickened or potato-thickened, pounded with raw garlic and Provençal cayenne, mounted with olive oil. The technique that distinguishes rouille from aioli, and the operational rules that prevent breakage.'
-tags: ['sauce', 'french', 'mediterranean', 'umami', 'pantry', 'make-ahead']
+tags: ['umami', 'pantry', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 8

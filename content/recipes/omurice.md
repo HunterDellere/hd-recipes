@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Omurice'
 desc: 'The Japanese yōshoku canon: a chicken-and-onion ketchup-fried rice (chikin raisu) wrapped or topped with a thin omelet, often finished with a zigzag of additional ketchup. Structurally a child-friendly comfort-food dish that has become one of the most beloved cross-generational preparations in Japan; the dish exists in two visual forms (the classical fully-wrapped envelope omelet and the modern Kyoto-style tornado omelet that is split at the table to drape over the rice in a soft custardy fall). Eggs are the structural finish; the rice is the canvas; the ketchup is the unmistakable Japanese-Western flavor signature.'
 metaDesc: 'Omurice: Japanese ketchup-fried rice with chicken and onion, wrapped in or topped with a soft thin omelet. The canonical yōshoku comfort food, finished with a zigzag of ketchup.'
-tags: ['japanese', 'rice', 'egg', 'chicken', 'comfort', 'weeknight', 'umami', 'one-pot']
+tags: ['rice', 'egg', 'chicken', 'comfort', 'weeknight', 'umami', 'one-pot']
 updated: '2026-05-16'
 
 servings: 2

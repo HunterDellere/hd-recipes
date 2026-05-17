@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Garam masala (homemade fresh-toasted blend)'
 desc: 'Whole spices toasted in a dry pan until fragrant, cooled, and ground to a fine powder. Dramatically more aromatic than supermarket pre-ground; lasts 6 to 8 weeks at peak. The North Indian / Pakistani household standard. Stub.'
 metaDesc: 'Homemade garam masala: fresh-toast-and-grind whole-spice blend for North Indian and Pakistani cooking. Stub recipe.'
-tags: ['indian', 'pakistani', 'spice', 'aromatic', 'pantry']
+tags: ['pantry']
 updated: '2026-05-09'
 
 servings: 30

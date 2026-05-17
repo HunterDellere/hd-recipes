@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Infused mashed potatoes'
 desc: 'Yukon Golds boiled in their skins, riced hot, and folded with milk and butter that''s been steeped with garlic, thyme, rosemary, and bay.'
 metaDesc: 'Velvet mashed potatoes with herb-and-garlic infused butter and milk. Yukon Golds, ricer, no whipping. Holiday-ready.'
-tags: ['potato', 'side', 'holiday', 'comfort', 'american']
+tags: ['holiday', 'comfort']
 updated: '2026-04-26'
 
 servings: 8

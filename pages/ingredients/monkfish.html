@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -108,23 +110,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">monkfish (bouillabaisse, suquet, cioppino, fish stew)</span>
-          <span class="sub-card-use">halibut, swordfish, or large prawns</span>
-          <p class="sub-card-note">Halibut is the closest substitute for the structural firm-white-fish role; swordfish reads denser and meatier (closer to monkfish texture, but with a stronger flavor); large head-on prawns approximate the sweet-bouncy bite. All three work in stew applications.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">monkfish (sear-and-baste with brown butter)</span>
-          <span class="sub-card-use">swordfish, halibut, or lobster tail</span>
-          <p class="sub-card-note">Swordfish has the closest density and sears cleanly; halibut is leaner and requires more careful timing; lobster tail is the inverse comparison (the dish monkfish was substituting for in the first place).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">monkfish (Korean agujjim or spicy steamed)</span>
-          <span class="sub-card-use">cod cheeks or large firm-white-fish chunks</span>
-          <p class="sub-card-note">Cod cheeks have the dense bouncy texture closest to monkfish; large firm-white-fish chunks (3 to 4 cm) of halibut or rockfish work but read flakier than the canonical agujjim.</p>
-        </li>
+        <li><strong>monkfish (bouillabaisse, suquet, cioppino, fish stew)</strong> → halibut, swordfish, or large prawns <span class="sub-note">Halibut is the closest substitute for the structural firm-white-fish role; swordfish reads denser and meatier (closer to monkfish texture, but with a stronger flavor); large head-on prawns approximate the sweet-bouncy bite. All three work in stew applications.</span></li>
+        <li><strong>monkfish (sear-and-baste with brown butter)</strong> → swordfish, halibut, or lobster tail <span class="sub-note">Swordfish has the closest density and sears cleanly; halibut is leaner and requires more careful timing; lobster tail is the inverse comparison (the dish monkfish was substituting for in the first place).</span></li>
+        <li><strong>monkfish (Korean agujjim or spicy steamed)</strong> → cod cheeks or large firm-white-fish chunks <span class="sub-note">Cod cheeks have the dense bouncy texture closest to monkfish; large firm-white-fish chunks (3 to 4 cm) of halibut or rockfish work but read flakier than the canonical agujjim.</span></li>
     </ul>
 
     
@@ -141,10 +131,23 @@
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
+      <div class="rl-group" data-related-group="recipes">
+        <h3 class="rl-group-head">
+          <span class="rl-group-label">Recipes</span>
+          <span class="rl-group-count">1</span>
+        </h3>
+        <div class="rl-cards rl-cards--recipes">
+        <a class="rl-card" href="../recipes/cantonese-steamed-whole-fish-with-ginger-scallion.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Cantonese steamed whole fish with ginger and scallion</span>
+          <span class="rl-card-why">fish · seafood</span>
+        </a>
+        </div>
+      </div>
+
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">5</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
         <a class="rl-card is-strong" href="catfish.html" data-category="ingredients" data-reason="tag">
@@ -165,10 +168,6 @@
         </a>
         <a class="rl-card is-strong" href="whole-white-fish.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Whole white fish (branzino, sea bass, snapper, porgy)</span>
-          <span class="rl-card-why">fish · seafood</span>
-        </a>
-        <a class="rl-card" href="squid.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Squid (calamari)</span>
           <span class="rl-card-why">fish · seafood</span>
         </a>
         </div>

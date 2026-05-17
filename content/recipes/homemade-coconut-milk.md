@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Coconut milk (homemade from grated mature coconut)'
 desc: 'Mature grated coconut blended with hot water and squeezed through cheesecloth, twice. The first pressing yields thick "coconut cream" used for finishing curries; the second pressing yields thinner "coconut milk" used as a base. Stub.'
 metaDesc: 'Homemade coconut milk: two pressings of grated mature coconut. Stub recipe.'
-tags: ['indian', 'thai', 'sauce', 'pantry']
+tags: ['pantry']
 updated: '2026-05-09'
 
 servings: 8

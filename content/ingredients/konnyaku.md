@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Konnyaku (konjac, devil''s tongue)'
 desc: 'A firm, jelly-like food made from the starchy corm of Amorphophallus konjac (konjac yam), mixed with calcium hydroxide and set into blocks or noodles (shirataki). Almost pure glucomannan fiber, essentially calorie-free, with a unique chewy-bouncy texture that absorbs the flavors of its braising liquid. The structural firm-textured element of Japanese oden, nimono, tonjiru, and many vegetarian preparations.'
 metaDesc: 'Konnyaku (konjac): glucomannan-and-calcium-hydroxide jelly food, the firm chewy element of Japanese oden, tonjiru, nimono, and shirataki noodles in sukiyaki.'
-tags: ['pantry', 'japanese', 'asian']
+tags: ['pantry']
 density_g_per_ml: 1.0
 updated: '2026-05-15'
 

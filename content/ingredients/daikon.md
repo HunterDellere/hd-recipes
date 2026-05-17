@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Daikon (radish)'
 desc: 'Long white winter radish (Raphanus sativus var. longipinnatus), 90 to 95% water by weight, with active myrosinase enzymes that convert intact glucosinolates into pungent isothiocyanates the moment cell walls are ruptured. The structural ingredient of oden, daikon mochi, kkakdugi, banh mi do chua, and the Japanese oroshi (raw grated radish) condiment.'
 metaDesc: 'Daikon: chemistry of glucosinolates and the myrosinase enzymatic bite, the upper-versus-lower flavor gradient, applications across Japanese, Korean, Chinese, and Vietnamese cooking, sourcing and storage.'
-tags: ['vegetable', 'japanese', 'korean', 'chinese']
+tags: []
 updated: '2026-05-10'
 
 density_g_per_ml: 0.95

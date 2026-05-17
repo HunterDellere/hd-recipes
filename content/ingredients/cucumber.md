@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cucumber'
 desc: 'Cucumis sativus. A 95-percent-water cucurbit grown for cool, crisp flesh and edible skin; the kitchen workhorse for raw salads, quick pickles, and yogurt sauces.'
 metaDesc: 'Cucumber: water content and the salting question, cultivar differences (Persian, English, slicing, Kirby), the bitterness gene, storage and texture failure modes.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 usda_fdc_id: 168409

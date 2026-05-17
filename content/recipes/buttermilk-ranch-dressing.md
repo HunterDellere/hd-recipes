@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Buttermilk ranch dressing (proper from-scratch)'
 desc: 'Real-buttermilk ranch with fresh herbs, garlic, and a backbone of mayonnaise and sour cream. The Hidden Valley template, executed without the desiccated herbs and corn-syrup body of the powder packet. Tastes more herbal, less candy-creamy.'
 metaDesc: 'Homemade buttermilk ranch dressing recipe, fresh dill, chives, parsley, real buttermilk and mayo. No packets, no MSG, dramatically better.'
-tags: ['condiment', 'sauce', 'american', 'no-cook', 'quick', 'herb', 'dip']
+tags: ['condiment', 'no-cook', 'quick']
 updated: '2026-05-16'
 
 servings: 12

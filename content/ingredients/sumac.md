@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sumac'
 desc: 'The dried, ground drupe of Rhus coriaria. A tannic, malic-acid-bright Levantine spice — sour without lemon''s sharpness, anthocyanin-red, structurally important to za''atar and fattoush.'
 metaDesc: 'Sumac: the malic-acid sourness, the difference between Mediterranean R. coriaria and toxic North American R. typhina, applications across Levantine and Persian cooking, and storage.'
-tags: ['spice', 'levantine', 'acid']
+tags: []
 updated: '2026-05-10'
 
 density_g_per_ml: 0.55

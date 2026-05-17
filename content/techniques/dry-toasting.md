@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Dry-toasting (grains, spices, seeds, dried chilies)'
 desc: 'Toast raw grains, whole spices, seeds, nuts, or dried chilies in a hot dry skillet (no fat) until Maillard products develop on the surface. The technique works by direct conduction from pan to dry surface; without water or fat as intermediary, the surface temperature climbs fast into the Maillard range and develops aromatic compounds that the raw ingredient does not carry.'
 metaDesc: 'Dry-toasting in a dry skillet: the chemistry, the temperature window, the constant-motion rule, and applications across rice powder (khao khua), spice blooming, seed and nut toasting, and dried-chili roasting.'
-tags: ['aromatic', 'spice', 'grain']
+tags: []
 updated: '2026-05-10'
 
 about: |

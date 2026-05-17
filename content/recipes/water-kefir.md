@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Water kefir'
 desc: 'Water kefir grains (a symbiotic culture of bacteria and yeast) fed a 6% sugar-water solution at room temperature, fermented 24 to 48 hours into a lightly fizzy, faintly sour probiotic drink, then second-fermented in sealed bottles with fruit for natural carbonation.'
 metaDesc: 'Water kefir from scratch: 6% sugar brine, 24 to 48 hour primary ferment with kefir grains, 24 hour second ferment with fruit for carbonation. Vegan probiotic drink, perpetual culture.'
-tags: ['fermentation', 'drink', 'make-ahead', 'vegan', 'pantry', 'fruit']
+tags: ['fermentation', 'make-ahead', 'vegan', 'pantry']
 updated: '2026-05-17'
 
 servings: 4

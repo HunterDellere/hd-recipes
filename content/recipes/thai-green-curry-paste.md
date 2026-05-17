@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai green curry paste'
 desc: 'A pounded-fresh Central Thai green curry paste: green chilies, lemongrass, galangal, makrut lime zest, coriander root, garlic, shallot, shrimp paste. Fresher, oilier, and more aromatic than jarred. The difference is cell-wall rupture: a mortar achieves it and a blade does not.'
 metaDesc: 'Homemade Thai green curry paste pounded in a stone mortar. Green chilies, lemongrass, galangal, makrut lime, kapi. Fresher and more aromatic than jarred.'
-tags: ['weekend-project', 'make-ahead', 'thai', 'spicy', 'aromatic', 'pantry']
+tags: ['weekend-project', 'make-ahead', 'spicy', 'pantry']
 updated: '2026-05-04'
 
 servings: 8

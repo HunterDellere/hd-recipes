@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Oyster sauce (homemade)'
 desc: 'Fresh oysters simmered with their liquor, soy sauce, sugar, and aromatics, then strained and reduced into a glossy dark sauce. The Cantonese flavor base built from scratch — fresher and significantly more complex than commercial bottles. Stub.'
 metaDesc: 'Homemade oyster sauce — fresh oysters simmered down with soy and aromatics. Stub recipe.'
-tags: ['chinese', 'umami', 'sauce', 'pantry', 'weekend-project']
+tags: ['umami', 'pantry', 'weekend-project']
 updated: '2026-05-09'
 
 servings: 12

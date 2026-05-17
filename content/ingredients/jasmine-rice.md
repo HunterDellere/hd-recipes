@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Jasmine rice'
 desc: 'Long-grain aromatic rice (Oryza sativa indica) from Thailand and adjacent regions. Floral, soft, slightly clingy, around 18% amylose.'
 metaDesc: 'Jasmine rice: aromatic Thai long-grain. Amylose ratio, the 2-acetyl-1-pyrroline aroma compound, ratios for steamed rice and for congee, buying and storage.'
-tags: ['rice', 'grain', 'pantry', 'thai', 'chinese']
+tags: ['rice', 'pantry']
 density_g_per_ml: 0.82
 imperial_pref: 'cup'
 updated: '2026-05-08'

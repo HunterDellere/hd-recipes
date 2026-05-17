@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-17T15:30:57.296Z",
+  "generated": "2026-05-17T20:28:28.960Z",
   "summary": {
     "errors": 0,
-    "warnings": 41,
+    "warnings": 86,
     "info": 3
   },
   "findings": [
@@ -27,9 +27,65 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/hubs/chinese-staples.md",
+      "msg": "no section-anchor elements — TOC scroll-spy disabled",
+      "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/hubs/tea-drinks.md",
+      "msg": "no section-anchor elements — TOC scroll-spy disabled",
+      "fix": "Add section anchors with ids"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/aji-amarillo-paste.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/aji-panca-paste.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/ingredients/genmaicha.md",
       "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
       "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/masa-harina.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/scotch-bonnet.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/anticuchos-de-corazon.md",
+      "msg": "step 6 names \"beef heart\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1000 g beef heart, whole or pre-trimmed\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/arroz-con-pollo-cubano.md",
+      "msg": "step 5 names \"chicken thighs\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1200 g chicken thighs, bone-in skin-on\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "WARN",
@@ -55,9 +111,44 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/banh-mi-thit-nuong.md",
+      "msg": "step 3 names \"lemongrass\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"30 g lemongrass\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/beef-rendang.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: coconut milk",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/beef-rendang.md",
+      "msg": "step 9 names \"lemongrass\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"30 g lemongrass\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/big-mac-sauce.md",
       "msg": "store-bought ingredient(s) without homemade_alternatives: yellow mustard",
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/bigos.md",
+      "msg": "step 8 names \"pork shoulder\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"600 g pork shoulder (boneless), cut into 3 cm chunks\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/bigos.md",
+      "msg": "step 10 names \"bay leaves\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"3 each bay leaves\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "WARN",
@@ -72,6 +163,13 @@
       "file": "content/recipes/brown-sugar-milk-tea-with-boba.md",
       "msg": "step 7 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"360 ml cold whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/carnitas.md",
+      "msg": "step 4 names \"milk\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"250 g whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "WARN",
@@ -146,6 +244,34 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/chicken-adobo.md",
+      "msg": "step 4 names \"garlic\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"50 g garlic\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/chicken-adobo.md",
+      "msg": "step 7 names \"garlic\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"50 g garlic\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/chicken-satay-with-peanut-sauce.md",
+      "msg": "step 8 names \"cucumber\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"200 g sliced cucumber\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/chicken-tagine-with-preserved-lemon-and-olives.md",
+      "msg": "step 9 names \"cilantro\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"30 g fresh cilantro\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
       "msg": "step 9 names \"dill\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"8 g fresh dill, finely chopped\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
@@ -160,6 +286,34 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/coq-au-vin.md",
+      "msg": "step 2 names \"bouquet garni\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1 each bouquet garni for the marinade (thyme, bay, parsley stems)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/coq-au-vin.md",
+      "msg": "step 7 names \"bouquet garni\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1 each bouquet garni for the marinade (thyme, bay, parsley stems)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/coq-au-vin.md",
+      "msg": "step 10 names \"bouquet garni\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1 each bouquet garni for the marinade (thyme, bay, parsley stems)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/doro-wat.md",
+      "msg": "step 7 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"8 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/evergreen-winter-simmer-pot.md",
       "msg": "step 4 names \"rosemary\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"15 g fresh rosemary\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
@@ -170,6 +324,48 @@
       "file": "content/recipes/evergreen-winter-simmer-pot.md",
       "msg": "step 5 names \"water\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: peanut butter, coconut milk",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "step 6 names \"rice paper\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"12 each rice paper (banh trang), 22 cm round\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "step 8 names \"rice paper\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"12 each rice paper (banh trang), 22 cm round\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.md",
+      "msg": "step 9 names \"rice paper\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"12 each rice paper (banh trang), 22 cm round\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/hainanese-chicken-rice.md",
+      "msg": "step 3 names \"ice bath\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"2000 ml ice bath water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/hainanese-chicken-rice.md",
+      "msg": "step 10 names \"ginger\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"60 g ginger\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "WARN",
@@ -244,6 +440,13 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/jollof-rice-nigerian-style.md",
+      "msg": "step 11 names \"bay leaves\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"2 each bay leaves\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/kashmiri-noon-chai.md",
       "msg": "step 4 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"480 ml whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
@@ -258,9 +461,37 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/lamb-tagine-with-prunes-and-almonds.md",
+      "msg": "step 9 names \"cinnamon\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"2 g ground cinnamon\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/masala-chai.md",
       "msg": "step 2 names \"water\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"240 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/nasi-goreng.md",
+      "msg": "step 9 names \"fried shallots\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"20 g fried shallots (crispy)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/okonomiyaki-osaka-style.md",
+      "msg": "step 6 names \"pork belly\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"200 g pork belly, thinly sliced (about 2 mm)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/okonomiyaki-osaka-style.md",
+      "msg": "step 7 names \"pork belly\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"200 g pork belly, thinly sliced (about 2 mm)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "WARN",
@@ -293,9 +524,79 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/pancit-canton.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: oyster sauce",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/pancit-canton.md",
+      "msg": "step 7 names \"scallion\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"30 g scallion\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/pancit-canton.md",
+      "msg": "step 8 names \"garlic\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"20 g garlic\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/peanut-groundnut-soup.md",
+      "msg": "step 7 names \"beef chuck\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"800 g beef chuck (or boneless skinless chicken thighs), cut into 4 cm chunks\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/penang-curry-laksa.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: coconut milk",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/pho-bo-hanoi-style.md",
+      "msg": "step 2 names \"ginger\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"80 g fresh ginger\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/pho-bo-hanoi-style.md",
+      "msg": "step 5 names \"ginger\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"80 g fresh ginger\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/pikliz.md",
+      "msg": "step 4 names \"scotch bonnet\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"30 g scotch bonnet chilies (or habanero)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/pork-sinigang.md",
+      "msg": "step 7 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"10 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/raising-canes-sauce.md",
       "msg": "step 4 names \"garlic powder\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"1.5 g garlic powder\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/red-beans-and-rice.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: chicken stock",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
     },
     {
       "level": "WARN",
@@ -307,9 +608,23 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/tacos-al-pastor.md",
+      "msg": "step 6 names \"pineapple\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"200 g fresh pineapple\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/taro-milk-tea-with-boba.md",
       "msg": "step 6 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"300 ml whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/tonkatsu.md",
+      "msg": "step 2 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"6 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     }
   ]
 }

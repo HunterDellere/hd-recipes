@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lebanese pita bread'
 desc: 'Thin, pocket-forming Lebanese-style pita baked on a preheated stone or steel at 290 °C / 550 °F. The high-heat steam puff sets the surface fast enough that interior steam blows the dough into a hollow balloon; the day-after staling makes it the structural ingredient for fattoush.'
 metaDesc: 'Homemade Lebanese-style pita bread: thin, pocket-forming, baked at 290 °C / 550 °F. Hydration math, gluten development, the steam-puff mechanism, and the day-after staling that produces fattoush bread.'
-tags: ['bread', 'levantine', 'weekend-project']
+tags: ['bread', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 8

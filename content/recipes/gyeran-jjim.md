@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Gyeran-jjim'
 desc: 'The Korean steamed savory egg custard: beaten eggs whisked with anchovy-and-kombu stock (or chicken stock), salt, scallion, and a small amount of sesame oil, then cooked gently in a clay pot or a heavy bowl over low heat until set into a soft trembling custard. The structural Korean banchan (side dish) that pairs with rice, soup, and grilled meat at every Korean table. Sometimes called a Korean chawanmushi cousin, though the architecture is meaningfully different: gyeran-jjim is denser, more egg-forward, and structurally always served in the cooking vessel rather than portioned.'
 metaDesc: 'Gyeran-jjim: the Korean steamed savory egg custard with anchovy-kombu stock, scallion, and sesame oil. The structural Korean banchan side dish, soft and trembling, served in the cooking vessel with rice and grilled meat.'
-tags: ['sauce', 'korean', 'egg', 'side', 'quick', 'umami', 'weeknight']
+tags: ['egg', 'quick', 'umami', 'weeknight']
 updated: '2026-05-15'
 
 servings: 4

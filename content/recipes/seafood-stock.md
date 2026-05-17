@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Seafood stock (shellfish and fin-fish bone broth)'
 desc: 'A clean, aromatic seafood stock built from shrimp shells, white-fish bones (cod, halibut, snapper carcasses), crab shells, and a Western mirepoix (onion, fennel, leek, garlic). Roasted-shell version for cioppino and bouillabaisse depth; raw-shell version for delicate fumets and risotto al frutti di mare. The stock cooks fast (45 minutes) compared to meat broths because fish bones release their flavor and gelatin quickly, and over-simmering produces a bitter, fishy-aggressive result.'
 metaDesc: 'Seafood stock: roasted-shell version for cioppino and bouillabaisse; raw fumet for risotto and delicate sauces. 45-minute cook time, with the operational rules that distinguish a great fumet from a bitter one.'
-tags: ['seafood', 'fish', 'pantry', 'sauce', 'umami', 'make-ahead', 'freezer-friendly']
+tags: ['seafood', 'fish', 'pantry', 'umami', 'make-ahead', 'freezer-friendly']
 updated: '2026-05-10'
 
 servings: 8

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Orange","status":"complete","tags":["fruit","acid"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Orange","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">orange peel (Provençal broth aromatic)</span>
-          <span class="sub-card-use">dried orange peel or mandarin/tangerine peel</span>
-          <p class="sub-card-note">Dried orange peel (Provençal canon) is more concentrated than fresh; use ⅓ the weight of fresh peel called for. Mandarin or tangerine peel reads slightly more floral and less assertive; acceptable for delicate dishes, less so for the bouillabaisse case where the bitter-citrus depth is structural.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">orange juice (finishing acid in tagines or sauces)</span>
-          <span class="sub-card-use">lemon juice plus a small pinch of sugar</span>
-          <p class="sub-card-note">Lemon juice is sharper and more acidic; add a pinch of sugar (1 g per 30 ml lemon juice) to approximate the orange sweet-tart balance. The dish reads brighter and more acidic.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">orange segments (Sicilian salad)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="blood-orange.html">blood orange</a> or grapefruit segments</span>
-          <p class="sub-card-note">Blood orange is a direct substitute with a more complex floral note and deep-red color. Grapefruit reads more bitter and assertive; works in the salad context but shifts the dish toward a more bitter winter salad reading.</p>
-        </li>
+        <li><strong>orange peel (Provençal broth aromatic)</strong> → dried orange peel or mandarin/tangerine peel <span class="sub-note">Dried orange peel (Provençal canon) is more concentrated than fresh; use ⅓ the weight of fresh peel called for. Mandarin or tangerine peel reads slightly more floral and less assertive; acceptable for delicate dishes, less so for the bouillabaisse case where the bitter-citrus depth is structural.</span></li>
+        <li><strong>orange juice (finishing acid in tagines or sauces)</strong> → lemon juice plus a small pinch of sugar <span class="sub-note">Lemon juice is sharper and more acidic; add a pinch of sugar (1 g per 30 ml lemon juice) to approximate the orange sweet-tart balance. The dish reads brighter and more acidic.</span></li>
+        <li><strong>orange segments (Sicilian salad)</strong> → <a class="x-link" data-category="ingredients" href="blood-orange.html">blood orange</a> or grapefruit segments <span class="sub-note">Blood orange is a direct substitute with a more complex floral note and deep-red color. Grapefruit reads more bitter and assertive; works in the salad context but shifts the dish toward a more bitter winter salad reading.</span></li>
     </ul>
 
     
@@ -138,57 +128,24 @@
           <span class="rl-card-title">Bouillabaisse Marseillaise</span>
           
         </a>
+        <a class="rl-card" href="../recipes/carnitas.html" data-category="recipes">
+          <span class="rl-card-title">Carnitas</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/haitian-griot.html" data-category="recipes">
+          <span class="rl-card-title">Haitian griot</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/homemade-a1-style-steak-sauce.html" data-category="recipes">
           <span class="rl-card-title">Homemade A1-style steak sauce</span>
           
         </a>
+        <a class="rl-card" href="../recipes/tacos-al-pastor.html" data-category="recipes">
+          <span class="rl-card-title">Tacos al pastor</span>
+          
+        </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">8</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="blood-orange.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Blood orange</span>
-          <span class="rl-card-why">fruit · acid</span>
-        </a>
-        <a class="rl-card is-strong" href="lime.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Lime</span>
-          <span class="rl-card-why">fruit · acid</span>
-        </a>
-        <a class="rl-card is-strong" href="tamarind.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Tamarind (pulp, paste, concentrate)</span>
-          <span class="rl-card-why">fruit · acid</span>
-        </a>
-        <a class="rl-card" href="lemon.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Lemon</span>
-          <span class="rl-card-why">fruit · acid</span>
-        </a>
-        <a class="rl-card" href="yuzu.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Yuzu</span>
-          <span class="rl-card-why">fruit · acid</span>
-        </a>
-        <a class="rl-card" href="pineapple.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Pineapple</span>
-          <span class="rl-card-why">fruit</span>
-        </a>
-        <a class="rl-card" href="mango.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mango</span>
-          <span class="rl-card-why">fruit</span>
-        </a>
-        <a class="rl-card" href="cherry-tomato.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cherry tomato</span>
-          <span class="rl-card-why">fruit</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="okra.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="okra.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Okra (lady fingers, bhindi, gumbo)</span>
     </a><a class="adj-nav-link" href="oyster-mushroom.html">

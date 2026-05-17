@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sichuan mapo tofu (ma po dou fu)'
 desc: 'The Chen-family Chengdu original: silken tofu cubes blanched and held in a doubanjiang-and-douchi red oil sauce thickened with three pours of cornstarch slurry, finished with freshly toasted Sichuan peppercorn powder. The seven-flavor profile (numbing, spicy, hot, fragrant, savory, fresh, tender) is the codified Sichuan target.'
 metaDesc: 'Sichuan mapo tofu (ma po dou fu): the canonical Chen-family recipe — beef, doubanjiang, douchi, three-pour cornstarch thickening, fresh-toasted Sichuan peppercorn finish. The mala foundation.'
-tags: ['chinese', 'spicy', 'umami', 'beef', 'one-pot', 'weeknight']
+tags: ['spicy', 'umami', 'beef', 'one-pot', 'weeknight']
 updated: '2026-05-09'
 
 servings: 4

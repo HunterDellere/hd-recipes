@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Cherry tomato","status":"complete","tags":["fruit","vegetable"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Cherry tomato","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -108,23 +110,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">cherry tomato (raw salads, pasta, som tum)</span>
-          <span class="sub-card-use">campari or grape tomato</span>
-          <p class="sub-card-note">Both are similarly bred for sweetness and aromatic complexity. Campari are slightly larger (3 to 4 cm); grape tomatoes are oval and slightly less sweet but more shippable. Either works as a 1:1 substitute. Slicing tomatoes are not a clean substitute, the brix and pectin profiles differ enough to shift the dish.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">cherry tomato (Italian quick-cook pasta sauce)</span>
-          <span class="sub-card-use">datterini tomatoes (Italian small-fruited cultivar)</span>
-          <p class="sub-card-note">Datterini are the Italian native equivalent, slightly oval, dense, sweet, with high pectin. The closest cultivar to traditional Italian small-tomato pasta sauces. Imported canned datterini (peeled, in juice) are sold at well-stocked Italian groceries; substitute 1:1 by drained weight.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">cherry tomato (out of season, winter)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="canned-san-marzano-tomatoes.html">canned San Marzano tomatoes</a>, cut small + a pinch of sugar</span>
-          <p class="sub-card-note">Out-of-season fresh cherry tomatoes are often flavorless. Canned San Marzanos (peeled, in juice) cut into rough 2 cm pieces, plus a small pinch of sugar to compensate for the lower brix, will out-perform a winter-fresh-cherry-tomato in cooked applications. Not suitable for raw applications (cured tomato vs fresh is a perceptible texture difference).</p>
-        </li>
+        <li><strong>cherry tomato (raw salads, pasta, som tum)</strong> → campari or grape tomato <span class="sub-note">Both are similarly bred for sweetness and aromatic complexity. Campari are slightly larger (3 to 4 cm); grape tomatoes are oval and slightly less sweet but more shippable. Either works as a 1:1 substitute. Slicing tomatoes are not a clean substitute, the brix and pectin profiles differ enough to shift the dish.</span></li>
+        <li><strong>cherry tomato (Italian quick-cook pasta sauce)</strong> → datterini tomatoes (Italian small-fruited cultivar) <span class="sub-note">Datterini are the Italian native equivalent, slightly oval, dense, sweet, with high pectin. The closest cultivar to traditional Italian small-tomato pasta sauces. Imported canned datterini (peeled, in juice) are sold at well-stocked Italian groceries; substitute 1:1 by drained weight.</span></li>
+        <li><strong>cherry tomato (out of season, winter)</strong> → <a class="x-link" data-category="ingredients" href="canned-san-marzano-tomatoes.html">canned San Marzano tomatoes</a>, cut small + a pinch of sugar <span class="sub-note">Out-of-season fresh cherry tomatoes are often flavorless. Canned San Marzanos (peeled, in juice) cut into rough 2 cm pieces, plus a small pinch of sugar to compensate for the lower brix, will out-perform a winter-fresh-cherry-tomato in cooked applications. Not suitable for raw applications (cured tomato vs fresh is a perceptible texture difference).</span></li>
     </ul>
 
     
@@ -133,6 +123,10 @@
     <div class="rl-cards">
         <a class="rl-card" href="../recipes/panzanella-with-charred-tomatoes.html" data-category="recipes">
           <span class="rl-card-title">Panzanella with charred tomatoes</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/shrimp-and-grits.html" data-category="recipes">
+          <span class="rl-card-title">Shrimp and grits (Lowcountry)</span>
           
         </a>
         <a class="rl-card" href="../recipes/som-tam-thai-green-papaya-salad.html" data-category="recipes">
@@ -148,49 +142,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="green-papaya.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Green papaya</span>
-          <span class="rl-card-why">fruit · vegetable</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card is-strong" href="pineapple.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Pineapple</span>
-          <span class="rl-card-why">fruit</span>
+        <a class="rl-card is-strong" href="agar-agar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Agar-agar</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="tomato.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Tomato (fresh)</span>
-          <span class="rl-card-why">fruit · vegetable</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="mango.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mango</span>
-          <span class="rl-card-why">fruit</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="blood-orange.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Blood orange</span>
-          <span class="rl-card-why">fruit</span>
+        <a class="rl-card is-strong" href="all-purpose-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">All-purpose flour</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="orange.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Orange</span>
-          <span class="rl-card-why">fruit</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="broccoli.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Broccoli</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">related</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/ice-bath-shock.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Ice bath shock</span>
-          <span class="rl-card-why">vegetable</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">related</span>
         </a>
         </div>
       </div>

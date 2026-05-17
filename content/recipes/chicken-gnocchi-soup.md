@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chicken gnocchi soup (Olive Garden copycat)'
 desc: 'A cream-finished chicken-and-vegetable soup with potato gnocchi as the structural starch and baby spinach added off-heat for color and texture. The chain-restaurant comfort soup reverse-engineered with real chicken stock, a proper roux, and gnocchi cooked to just-floating in the broth.'
 metaDesc: 'Chicken gnocchi soup: roux-thickened cream broth, shredded chicken thigh, potato gnocchi, and baby spinach. The Olive Garden copycat with a real-stock upgrade and gnocchi-doneness math.'
-tags: ['italian', 'soup', 'chicken', 'comfort', 'weeknight']
+tags: ['soup', 'chicken', 'comfort', 'weeknight']
 updated: '2026-05-09'
 
 servings: 6

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sweetened condensed milk'
 desc: 'Whole milk reduced with sugar to a viscous, shelf-stable syrup. Three hours of slow reduction yields a fresher, less metallic alternative to canned. Stub.'
 metaDesc: 'Homemade sweetened condensed milk: whole milk reduced with sugar over 2–3 hours to a 60% syrup. Stub recipe.'
-tags: ['dairy', 'pantry', 'make-ahead']
+tags: ['pantry', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 8

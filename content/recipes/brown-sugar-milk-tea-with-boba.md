@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Brown sugar milk tea with boba (Tiger Sugar style)'
 desc: 'Hot brown-sugar boba painted up the inside of a glass into the signature tiger-stripe pattern, then layered with cold milk and a strong tea concentrate. No commercial syrup, the syrup is built from the pearl cook.'
 metaDesc: 'Brown sugar boba milk tea, Tiger Sugar style, homemade muscovado boba, painted stripes, cold milk layer, and strong tea finish.'
-tags: ['boba', 'bubble-tea', 'taiwanese', 'milk-tea', 'drink', 'tea']
+tags: ['boba', 'bubble-tea', 'milk-tea']
 updated: '2026-05-16'
 
 servings: 2

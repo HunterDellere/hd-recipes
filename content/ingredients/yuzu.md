@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Yuzu'
 desc: 'East Asian citrus (Citrus junos), a hybrid of mandarin and Ichang papeda, with a fragrant rind heavy in limonene and aromatic terpenes and a sour, somewhat dry juice with the structural acidity of lemon and the floral character of bergamot. The aromatic anchor of ponzu, yuzu kosho, and most refined Japanese citrus applications.'
 metaDesc: 'Yuzu (Citrus junos): the rind-aromatic chemistry, the juice profile, fresh versus frozen versus bottled, applications across Japanese, Korean, and contemporary Western cuisine.'
-tags: ['fruit', 'acid', 'japanese', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.04

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mortar pounding (clay vs granite)'
 desc: 'Bruise vegetables, fruits, and aromatics with a pestle to rupture cell walls and force sauce into the matrix, a different operation from grinding to a paste.'
 metaDesc: 'Mortar pounding: cell-wall rupture vs paste grinding, clay vs granite mortar choice, four-flavor balance built in the mortar, applications across Thai, Indonesian, Mexican, and Italian cooking.'
-tags: ['vegetable', 'aromatic']
+tags: []
 updated: '2026-05-10'
 
 about: |

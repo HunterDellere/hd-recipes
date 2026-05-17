@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Greens and ricotta frittata'
 desc: 'The Italian open-faced baked omelet: wilted greens (lacinato kale, chard, spinach, or a mix) folded into beaten eggs with whole-milk ricotta, parmigiano, lemon zest, and aggressive black pepper, started in an oven-safe skillet on the stove and finished in the oven until just set with a custardy center. Structurally distinct from a frittata that is fully cooked on the stove (which produces a denser drier texture); the oven-finished version sets evenly across the depth and produces the canonical jiggly center. Eaten warm or at room temperature, sliced into wedges or squares; the structural Italian make-ahead egg dish and one of the great flexible weeknight dinners.'
 metaDesc: 'Greens and ricotta frittata: wilted kale or chard with ricotta and parmigiano in eggs, started on stove and finished in oven. The Italian open omelet, served warm or at room temperature.'
-tags: ['italian', 'mediterranean', 'egg', 'vegetable', 'make-ahead', 'weeknight', 'brassica', 'dairy']
+tags: ['egg', 'make-ahead', 'weeknight']
 updated: '2026-05-15'
 
 servings: 6

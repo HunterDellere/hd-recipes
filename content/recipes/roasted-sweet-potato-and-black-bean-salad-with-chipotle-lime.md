@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Roasted sweet potato and black bean salad with chipotle-lime vinaigrette'
 desc: 'Hard-roasted sweet potato cubes with caramelized edges tossed with cumin-rinsed black beans, charred corn, red onion macerated in lime, cilantro, pepitas toasted in their own oil, and crumbled cotija. The dressing is a chipotle-in-adobo, lime, honey, and smoked paprika emulsion built on the adobo as the natural mustard analog. The thesis is the contrast between candy-sweet roasted sweet potato and aggressive smoky-acidic dressing; the cotija and pepitas carry salt and crunch against the soft starchy bean-and-tuber base.'
 metaDesc: 'Roasted sweet potato and black bean salad with chipotle-lime vinaigrette: 230°C sweet potato cubes, charred corn, cumin-rinsed black beans, pepitas, cotija, smoked-paprika-and-adobo dressing.'
-tags: ['salad', 'mexican', 'vegetable', 'roast', 'legume', 'umami', 'acid', 'spicy']
+tags: ['salad', 'roast', 'umami', 'spicy']
 updated: '2026-05-10'
 
 servings: 4

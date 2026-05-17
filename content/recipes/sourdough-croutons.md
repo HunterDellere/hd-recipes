@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sourdough croutons'
 desc: 'Day-old sourdough torn into chunks, tossed in garlic-infused olive oil, oven-toasted to a uniform shatter. The structural crouton of Caesar salad, panzanella, ribollita, and any salad that earns a starch component.'
 metaDesc: 'Sourdough croutons: garlic-oil infusion, the day-old bread argument, oven temperature for through-and-through dry, and how to keep them crisp for serving.'
-tags: ['salad', 'pantry', 'side', 'make-ahead']
+tags: ['salad', 'pantry', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 6

@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Tapioca starch'
 desc: 'Pure starch extracted from cassava root. Gelatinizes into a translucent, elastic, gummy mass, the chemistry behind boba pearls, mochi-like textures, and clear sauce thickening.'
-tags: ['starch', 'thickener', 'asian']
+tags: ['starch']
 density_g_per_ml: 0.6
 imperial_pref: 'tbsp'
 updated: '2026-05-16'

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Strained Greek yogurt'
 desc: 'Whole-milk yogurt cultured at 42 to 45 °C, then strained 4 to 8 hours through cheesecloth to concentrate the protein and remove the whey. The cooked-in-cheesecloth-bag method versus the stand-mixer-bowl-and-sieve method. Stub.'
 metaDesc: 'Homemade strained Greek yogurt: whole milk, lactic culture, 8-hour incubation, cheesecloth strain. Stub recipe pending full draft.'
-tags: ['weekend-project', 'make-ahead', 'dairy']
+tags: ['weekend-project', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 8

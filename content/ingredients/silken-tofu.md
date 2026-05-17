@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Silken tofu'
 desc: 'Soy milk coagulated into a smooth, custard-like curd at 88 to 92% water by weight, never pressed. Wobbles like a panna cotta and breaks under a spoon. The textural reference for hot-set Sichuan mapo, Japanese hiyayakko, and Korean sundubu jjigae.'
 metaDesc: 'Silken tofu: GDL vs nigari coagulant chemistry, 88 to 92% water content, hot-set vs cold-pack forms, applications across Chinese, Japanese, Korean cooking.'
-tags: ['legume', 'pantry', 'chinese', 'japanese', 'korean']
+tags: ['pantry']
 density_g_per_ml: 1.03
 updated: '2026-05-09'
 

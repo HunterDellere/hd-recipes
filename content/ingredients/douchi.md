@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Douchi (fermented black beans, 豆豉)'
 desc: 'Whole black soybeans inoculated with Aspergillus and salt-cured for several months until they go from black to wrinkled-jet-black, intensely savory, and smelling like aged miso crossed with soy sauce. The umami depth charge in mapo tofu, steamed fish in black bean sauce, and Cantonese black bean spareribs.'
 metaDesc: 'Douchi (fermented black beans): koji fermentation chemistry, dry-salted vs wet-brined styles, role in Sichuan mapo and Cantonese black bean sauce.'
-tags: ['chinese', 'pantry', 'umami', 'fermentation']
+tags: ['pantry', 'umami', 'fermentation']
 density_g_per_ml: 0.65
 updated: '2026-05-09'
 

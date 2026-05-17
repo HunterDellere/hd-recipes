@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chick-fil-A sauce (homemade copycat)'
 desc: 'The signature honey-mustard-barbecue blend, built from a quality mayonnaise base with smoked paprika, mustard, honey, and a touch of lemon. Tastes cleaner than the franchise version because the mayo is fresh and the smoke comes from actual smoked paprika rather than liquid smoke.'
 metaDesc: 'Chick-fil-A sauce copycat recipe, homemade honey-mustard-BBQ blend with smoked paprika. Five-minute whisk-and-rest sauce.'
-tags: ['condiment', 'sauce', 'copycat', 'fast-food', 'american', 'no-cook', 'quick', 'emulsion']
+tags: ['condiment', 'copycat', 'no-cook', 'quick', 'emulsion']
 updated: '2026-05-16'
 
 servings: 8

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Spaghetti bolognese (ragù alla bolognese, the household version)'
 desc: 'Long-cooked Emilia-Romagna meat ragù: pancetta rendered into the soffritto, ground beef and pork browned hard for Maillard depth, white wine deglaze, milk to tenderize the meat proteins, and a small dose of tomato to round the dish without dominating it. Served over spaghetti as the household-American convention; tagliatelle is the canonical Italian pairing.'
 metaDesc: 'Spaghetti bolognese: real ragù alla bolognese with pancetta soffritto, milk-and-wine technique, and the meat-vs-tomato ratio that distinguishes Bolognese from marinara-with-meatballs.'
-tags: ['italian', 'pasta', 'beef', 'pork', 'umami', 'weekend-project', 'comfort']
+tags: ['pasta', 'beef', 'pork', 'umami', 'weekend-project', 'comfort']
 updated: '2026-05-09'
 
 servings: 6

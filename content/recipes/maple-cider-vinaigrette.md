@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Maple-cider vinaigrette'
 desc: 'Apple cider vinegar, dark maple syrup, whole-grain mustard, microplaned shallot, salt, and olive oil whisked into a tight emulsion. The autumn American dressing for grain salads, roasted-vegetable plates, and chicken-and-greens lunches. Doubles or triples cleanly and keeps a week refrigerated.'
 metaDesc: 'Maple-cider vinaigrette: apple cider vinegar, dark maple syrup, whole-grain mustard, shallot, olive oil. The autumn-American dressing for grain salads, roasted vegetables, and warm chicken plates.'
-tags: ['sauce', 'american', 'pantry', 'make-ahead', 'acid']
+tags: ['pantry', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 8

@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Mung bean (split, hulled)'
 desc: 'Small yellow split mung beans (moong dal). Cook fast into a smooth, sweet, slightly buttery paste, the workhorse legume of South and Southeast Asian sweet preparations.'
-tags: ['legume', 'asian']
+tags: []
 density_g_per_ml: 0.85
 imperial_pref: 'cup'
 updated: '2026-05-16'

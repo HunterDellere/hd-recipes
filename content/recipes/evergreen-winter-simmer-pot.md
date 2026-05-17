@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Evergreen winter simmer pot (pine, citrus, bay)'
 desc: 'Pine sprigs, rosemary, bay leaf, and grapefruit peels simmered through a winter day. The terpene profile of an evergreen forest, with citrus brightness to keep it from going one-note dark. Pure aromatic engineering, nothing edible.'
 metaDesc: 'Evergreen winter simmer pot, pine, rosemary, grapefruit, bay. Whole-house fragrance with the chemistry of a winter forest.'
-tags: ['home-fragrance', 'simmer-pot', 'non-edible', 'aromatic', 'citrus', 'winter']
+tags: ['home-fragrance', 'simmer-pot', 'non-edible', 'citrus']
 updated: '2026-05-16'
 
 servings: 1

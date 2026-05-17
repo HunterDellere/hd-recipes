@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Delicata squash'
 desc: 'Cucurbita pepo, Delicata cultivar. Thin edible skin, sweet chestnut-vanilla flesh; the only winter squash you don''t have to peel.'
-tags: ['vegetable']
+tags: []
 updated: '2026-04-29'
 
 usda_fdc_id: 168448

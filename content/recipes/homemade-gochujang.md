@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Gochujang (homemade Korean fermented chili paste)'
 desc: 'Glutinous rice cooked into porridge, blended with meju powder, gochugaru, and salt, fermented in earthen jars or sealed containers for 6 months minimum (ideally 1 to 3 years) until the rice starches convert to sugars and the flavor deepens into the signature sweet-spicy-funky-savory paste. Stub — a multi-month commitment.'
 metaDesc: 'Homemade gochujang — fermented glutinous rice + meju + gochugaru aged for months. Stub recipe.'
-tags: ['korean', 'fermentation', 'sauce', 'pantry', 'weekend-project', 'make-ahead']
+tags: ['fermentation', 'pantry', 'weekend-project', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 32

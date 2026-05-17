@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Big Mac sauce (homemade copycat)'
 desc: 'The McDonald''s Big Mac special sauce, built on a real-egg mayonnaise base with sweet pickle relish, yellow mustard, white wine vinegar, paprika, garlic powder, and onion powder. Tastes substantially cleaner than the franchise version because the mayo is fresh and the relish is real chopped pickle rather than a corn-syrup gel.'
 metaDesc: 'Big Mac sauce copycat recipe, homemade special sauce with mayo, sweet relish, mustard, vinegar, paprika, and onion powder. Five-minute whisk-and-rest.'
-tags: ['condiment', 'sauce', 'copycat', 'fast-food', 'american', 'no-cook', 'quick', 'emulsion']
+tags: ['condiment', 'copycat', 'no-cook', 'quick', 'emulsion']
 updated: '2026-05-17'
 
 servings: 8

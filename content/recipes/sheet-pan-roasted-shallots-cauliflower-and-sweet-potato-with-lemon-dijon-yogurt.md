@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sheet-pan roasted shallots, cauliflower, and sweet potato with lemon-dijon yogurt'
 desc: 'Halved whole shallots, cauliflower florets, and 2 cm sweet-potato chunks tossed in olive oil, smashed garlic, thyme, and 1.2% salt by weight, spread on a single screaming-hot sheet pan, roasted at 230 °C until each vegetable hits its own Maillard window: shallots collapsing into jammy halves, cauliflower mahogany on the cut faces, sweet potato caramel-edged with a fudge-soft interior. Served with a cold lemon-dijon-yogurt sauce that cuts through the sweet brassica-allium-starch register with acid and tang. The companion side to the cast-iron chuck eye, designed so the steak''s shallot pan sauce can spill over the vegetables without competing.'
 metaDesc: 'Sheet-pan roasted shallots, cauliflower, and sweet potato with lemon-dijon yogurt sauce: 230°C high-heat roast, single-layer spacing, vegetable-specific timing windows, cold yogurt sauce for contrast.'
-tags: ['american', 'mediterranean', 'vegetable', 'sheet-pan', 'roast', 'side', 'make-ahead']
+tags: ['sheet-pan', 'roast', 'make-ahead']
 updated: '2026-05-13'
 
 servings: 4

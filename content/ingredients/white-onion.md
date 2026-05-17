@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'White onion'
 desc: 'Allium cepa with white-papery skin and white flesh. Sharper and cleaner than yellow onion when raw; the canonical raw-application onion of central and northern Mexican cooking ; pico de gallo, salsa cruda, taco garnish, ensalada de nopales.'
 metaDesc: 'White onion: sulfur volatile profile vs yellow and red, why it is the Mexican raw-application default, when to substitute, storage and cell rupture chemistry.'
-tags: ['vegetable', 'aromatic', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-10'
 

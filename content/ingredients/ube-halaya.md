@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ube halaya'
 desc: 'Filipino preserve of grated purple yam (Dioscorea alata) cooked with coconut milk, sweetened condensed milk, evaporated milk, and butter until thick, glossy, and spreadable. Vivid violet from natural anthocyanin pigment.'
 metaDesc: 'Ube halaya: the Filipino purple yam jam, anthocyanin chemistry, the milk-and-butter enrichment that makes it spreadable, and the difference between halaya, ube flavoring, and ube extract.'
-tags: ['filipino', 'fruit', 'dessert', 'dairy']
+tags: []
 density_g_per_ml: 1.15
 updated: '2026-05-11'
 

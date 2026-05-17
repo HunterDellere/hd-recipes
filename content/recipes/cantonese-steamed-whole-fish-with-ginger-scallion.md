@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cantonese steamed whole fish with ginger and scallion'
 desc: 'Whole white fish (branzino, sea bass, or snapper) ginger-cured, steamed over high vapor for 8 to 12 minutes by thickness, the pan liquid replaced with hot soy-sesame seasoning, scattered with raw ginger-scallion, and finished with smoking-hot neutral oil poured over the aromatics. The Cantonese steaming canon: protein integrity preserved, aromatics deployed in three temperature registers (raw, warm seasoning, hot-oil bloom).'
 metaDesc: 'Cantonese steamed whole fish with ginger and scallion: 8-to-12 minute high-vapor steam, hot soy-sesame seasoning, smoking-oil-over-aromatics finish. The protein-integrity school of seafood cookery.'
-tags: ['seafood', 'fish', 'chinese', 'weeknight', 'umami']
+tags: ['seafood', 'fish', 'weeknight', 'umami']
 updated: '2026-05-10'
 
 servings: 2

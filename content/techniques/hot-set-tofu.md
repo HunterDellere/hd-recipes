@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Hot-set silken tofu (pour-and-set)'
 desc: 'Whisk glucono delta-lactone (GDL) into warm soy milk at 70 to 90°C / 160 to 195°F, pour directly into the serving bowl, leave undisturbed 15 to 25 minutes. The slow acidulation sets the soy proteins into a custard-soft curd that wobbles in place. The technique behind Chinese douhua, the poured-set mapo tofu variant, and Japanese silken-tofu desserts.'
 metaDesc: 'Hot-set silken tofu: GDL coagulation chemistry, the pour-and-set protocol that lets a home cook set silken tofu directly in the serving bowl.'
-tags: ['legume', 'chinese', 'japanese']
+tags: []
 updated: '2026-05-09'
 
 about: |

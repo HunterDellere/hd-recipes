@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Anchovy fillets","status":"complete","tags":["fish","mediterranean","umami","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Anchovy fillets","status":"complete","tags":["fish","umami","pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">anchovy fillets (background umami builder, Caesar/vinaigrette/pasta sauce)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="fish-sauce.html">fish sauce</a>, 1 tsp per 2 fillets</span>
-          <p class="sub-card-note">Same glutamate-and-IMP chemistry from a different fermented-anchovy source. Drops the fillet texture but lands the same savory depth. Use Vietnamese (Red Boat) or Thai (Squid, Tiparos) brands.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">anchovy fillets (vegetarian recipes)</span>
-          <span class="sub-card-use">white miso, 1 tbsp per 4 fillets, plus 1 tsp soy sauce</span>
-          <p class="sub-card-note">Different umami compound profile (GMP and glutamate from miso fermentation), but the dish reads similarly savory. Loses the fish-source identity, which matters in some recipes (Caesar) and not in others (Provencal vinaigrette).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">anchovy fillets (whole-fillet plate service)</span>
-          <span class="sub-card-use">no real substitute</span>
-          <p class="sub-card-note">The plated-fillet format is the dish. Boquerones (vinegar-cured white anchovies) are a different product but acceptable on a tapas board; sardines are too large and oil-rich.</p>
-        </li>
+        <li><strong>anchovy fillets (background umami builder, Caesar/vinaigrette/pasta sauce)</strong> → <a class="x-link" data-category="ingredients" href="fish-sauce.html">fish sauce</a>, 1 tsp per 2 fillets <span class="sub-note">Same glutamate-and-IMP chemistry from a different fermented-anchovy source. Drops the fillet texture but lands the same savory depth. Use Vietnamese (Red Boat) or Thai (Squid, Tiparos) brands.</span></li>
+        <li><strong>anchovy fillets (vegetarian recipes)</strong> → white miso, 1 tbsp per 4 fillets, plus 1 tsp soy sauce <span class="sub-note">Different umami compound profile (GMP and glutamate from miso fermentation), but the dish reads similarly savory. Loses the fish-source identity, which matters in some recipes (Caesar) and not in others (Provencal vinaigrette).</span></li>
+        <li><strong>anchovy fillets (whole-fillet plate service)</strong> → no real substitute <span class="sub-note">The plated-fillet format is the dish. Boquerones (vinegar-cured white anchovies) are a different product but acceptable on a tapas board; sardines are too large and oil-rich.</span></li>
     </ul>
 
     
@@ -172,48 +162,39 @@
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
-      <div class="rl-group" data-related-group="recipes">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/salt-cured-anchovies.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Salt-cured anchovies</span>
-          <span class="rl-card-why">fish · mediterranean</span>
-        </a>
-        </div>
-      </div>
-
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
         <a class="rl-card is-strong" href="katsuobushi.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Katsuobushi (dried bonito flakes)</span>
           <span class="rl-card-why">fish · umami</span>
         </a>
-        <a class="rl-card" href="nicoise-olives.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Nicoise olives</span>
-          <span class="rl-card-why">mediterranean · umami</span>
+        <a class="rl-card" href="mackerel.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Mackerel (saba)</span>
+          <span class="rl-card-why">fish · umami</span>
         </a>
         <a class="rl-card" href="squid.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Squid (calamari)</span>
           <span class="rl-card-why">fish · pantry</span>
         </a>
-        <a class="rl-card" href="feta.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Feta</span>
-          <span class="rl-card-why">mediterranean · umami</span>
+        <a class="rl-card" href="black-beans.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Black beans (frijoles negros)</span>
+          <span class="rl-card-why">umami · pantry</span>
         </a>
-        <a class="rl-card" href="red-wine-vinegar.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red wine vinegar</span>
-          <span class="rl-card-why">mediterranean · pantry</span>
+        <a class="rl-card" href="canned-san-marzano-tomatoes.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Canned San Marzano tomatoes</span>
+          <span class="rl-card-why">umami · pantry</span>
         </a>
-        <a class="rl-card" href="extra-virgin-olive-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Extra-virgin olive oil</span>
-          <span class="rl-card-why">mediterranean · pantry</span>
+        <a class="rl-card" href="chaat-masala.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Chaat masala</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card" href="dried-porcini.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Dried porcini</span>
+          <span class="rl-card-why">umami · pantry</span>
         </a>
         </div>
       </div>
@@ -230,9 +211,9 @@
         </a>
         </div>
       </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="all-purpose-flour.html">
+    </div><nav class="adj-nav"><a class="adj-nav-link" href="allspice.html">
       <span class="adj-nav-label">← Previous</span>
-      <span class="adj-nav-title">All-purpose flour</span>
+      <span class="adj-nav-title">Allspice (pimento)</span>
     </a><a class="adj-nav-link" href="apple-cider-vinegar.html">
       <span class="adj-nav-label">Next →</span>
       <span class="adj-nav-title">Apple cider vinegar</span>

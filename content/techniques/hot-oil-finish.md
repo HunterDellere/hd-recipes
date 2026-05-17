@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Hot-oil finish (smoking-oil bloom over raw aromatics)'
 desc: 'Pour smoking-hot neutral oil (200 °C+) over raw aromatics on top of a finished dish, flash-cooking the aromatics in place and releasing volatile aromatic compounds in a sensory burst. The Chinese, Sichuan, and broader East Asian technique that completes steamed fish, cold tofu, congee, hand-pulled noodles, and Sichuan chili oil.'
 metaDesc: 'Hot-oil finish: the 200°C smoking-oil pour over raw ginger-scallion or chili, the flash-bloom chemistry, the temperature window, and applications across Cantonese steamed fish, Sichuan chili oil, and cold tofu.'
-tags: ['fat', 'aromatic', 'chinese']
+tags: []
 updated: '2026-05-10'
 
 about: |

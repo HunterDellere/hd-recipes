@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cantonese white congee'
 desc: 'A neutral base of rice cooked at a tremor for an hour into a creamy, near-cream consistency. The rice pretreatment is the technique: oil-and-salt massage, or freeze-then-simmer, breaks the grain so it surrenders its starch fully.'
 metaDesc: 'Cantonese white congee from scratch. Oil-and-salt or freeze-grain pretreatment, the 1:10 simmer ratio, the breakdown curve, and the finish with soy, sesame oil, and scallion.'
-tags: ['rice', 'chinese', 'comfort', 'breakfast', 'one-pot', 'umami']
+tags: ['rice', 'comfort', 'one-pot', 'umami']
 updated: '2026-05-08'
 
 servings: 4

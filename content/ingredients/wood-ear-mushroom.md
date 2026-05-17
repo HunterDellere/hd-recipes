@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Wood ear mushroom (木耳)'
 desc: 'Dehydrated Auricularia heimuer fungus. Nearly flavorless, structurally chitinous, and bought primarily for the gel-and-crunch texture that survives long cooking.'
 metaDesc: 'Wood ear mushroom: dried black fungus, rehydrates 5x in cold water. The texture role across cuisines, snow-ear vs wood-ear, and the cold-soak food-safety rule.'
-tags: ['chinese', 'vegetable']
+tags: []
 density_g_per_ml: 0.1
 updated: '2026-04-29'
 

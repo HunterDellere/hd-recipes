@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Autumn simmer pot (apple, orange, cinnamon, clove)'
 desc: 'A non-edible house-fragrance preparation. Whole spices, orange and apple peels, and a few drops of vanilla simmered on the lowest setting all day. Replaces the chemical headache of plug-in air fresheners with actual volatile aromatics from food.'
 metaDesc: 'Autumn simmer pot for whole-house fragrance, orange, apple, cinnamon, clove. Non-toxic alternative to scented candles and plug-in air fresheners.'
-tags: ['home-fragrance', 'simmer-pot', 'non-edible', 'aromatic', 'citrus', 'winter']
+tags: ['home-fragrance', 'simmer-pot', 'non-edible', 'citrus']
 updated: '2026-05-16'
 
 servings: 1

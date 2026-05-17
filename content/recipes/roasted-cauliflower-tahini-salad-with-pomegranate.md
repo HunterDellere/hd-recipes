@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Roasted cauliflower tahini salad with pomegranate'
 desc: 'Cauliflower roasted hard at 230 °C until the florets are mahogany on the cut faces, dressed warm with a fluffy lemon-tahini emulsion, and finished with pomegranate seeds, parsley, urfa biber, and toasted pistachio. The Maillard sweetness of the brassica meets the green-bitter sesame of the tahini, with pomegranate acid cutting both.'
 metaDesc: 'Roasted cauliflower tahini salad with pomegranate: 230°C hard-roast cauliflower with whisked lemon-tahini emulsion, urfa biber, parsley, pistachio. Levantine Mediterranean composed salad.'
-tags: ['salad', 'levantine', 'mediterranean', 'vegetable', 'roast', 'umami', 'acid']
+tags: ['salad', 'roast', 'umami']
 updated: '2026-05-10'
 
 servings: 4

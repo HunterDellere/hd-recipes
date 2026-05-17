@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Espresso beans'
 desc: 'Roasted Coffea arabica seeds (with occasional Robusta), ground fine and extracted under ~9 bar pressure. The roast level and grind define everything that happens in the cup.'
 metaDesc: 'Espresso beans: arabica vs robusta, roast development, why fresh-roast matters, dose-yield-time ratios, and grind chemistry for the modern 1:2 shot.'
-tags: ['pantry', 'aromatic']
+tags: ['pantry']
 density_g_per_ml: 0.40
 updated: '2026-05-11'
 

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ginger-lime-honey vinaigrette'
 desc: 'A bright, sharp, gently sweet vinaigrette built on microplaned ginger, fresh lime juice, honey, a small hit of chili, and a neutral oil. The microplaned ginger acts as a structural particulate stabilizer; the dressing emulsifies on hand-whisking and holds integrated for 20 to 30 minutes, longer with a brief re-shake. Pairs across grain salads, raw cabbage slaws, charred broccoli, grilled fish, and as a quick dipping sauce for raw vegetables.'
 metaDesc: 'Ginger-lime-honey vinaigrette: microplaned ginger, fresh lime, honey, thai chili, and neutral oil. The ratios, the emulsion mechanics, and the rebuild-when-broken procedure.'
-tags: ['sauce', 'acid', 'aromatic', 'no-cook', 'make-ahead']
+tags: ['no-cook', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 8

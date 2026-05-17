@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Red beet'
 desc: 'Beta vulgaris taproot, deep red-purple from betacyanin pigments. Sweetest of the common roots (8 to 12 percent sugar by weight) with the distinct earthy character of geosmin.'
 metaDesc: 'Red beet (Beta vulgaris): sugar content, the betalain and geosmin chemistry, salt-roasting versus boiling, and the substitution map across applications.'
-tags: ['vegetable']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 169145

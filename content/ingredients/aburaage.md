@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Aburaage (deep-fried tofu pouches)'
 desc: 'Thin slabs of tofu deep-fried twice (low temperature first, then high temperature) until they puff into a hollow golden pouch with a crisp surface and a soft interior. The structural pouch of Japanese inarizushi (sushi rice in a sweet-soy-simmered aburaage), the textural element in kitsune udon and many miso soups, and a high-protein vegetarian component that absorbs broth aggressively.'
 metaDesc: 'Aburaage: thin tofu deep-fried twice to a golden hollow pouch, the structural element of Japanese inarizushi, kitsune udon, and miso soup add-ins.'
-tags: ['pantry', 'japanese', 'asian']
+tags: ['pantry']
 density_g_per_ml: 0.45
 updated: '2026-05-15'
 

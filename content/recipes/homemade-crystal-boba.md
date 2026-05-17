@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade crystal boba (agar pearls)'
 desc: 'Clear, jelly-bright pearls made from agar-agar dropped through cold oil into a chilled bath. A different texture entirely from tapioca boba, snappy and refreshing rather than chewy and dense. Built for fruit teas where tapioca would clash.'
 metaDesc: 'Crystal boba recipe, agar-agar pearls made via the cold-oil drop technique. Clear, snappy, refreshing pearls for fruit-based bubble teas.'
-tags: ['boba', 'bubble-tea', 'hydrocolloid', 'jelly', 'taiwanese', 'vegan']
+tags: ['boba', 'bubble-tea', 'hydrocolloid', 'jelly', 'vegan']
 updated: '2026-05-16'
 
 servings: 6

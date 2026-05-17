@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dijon mustard'
 desc: 'Smooth pale-yellow mustard from Dijon, France: brown mustard seeds (Brassica juncea) ground in verjuice or white wine. Pungent, mucilaginous, the canonical French emulsifier-and-acid in vinaigrettes.'
 metaDesc: 'Dijon mustard: brown mustard seed isothiocyanate chemistry, the verjuice acid base, vinaigrette emulsion role, and what separates real Dijon from supermarket commodity yellow.'
-tags: ['acid', 'french', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.1

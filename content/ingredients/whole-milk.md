@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Whole milk'
 desc: 'Cow''s milk at ~3.25% fat. Fat carries fat-soluble flavor; casein binds tannins and acid; lactose drives Maillard browning under heat.'
 metaDesc: 'Whole milk: 3.25% fat, ~3.3% protein. Why it carries spice flavor, how casein tames tannins, and why it browns and sets the way it does.'
-tags: ['dairy']
+tags: []
 density_g_per_ml: 1.03
 updated: '2026-04-29'
 

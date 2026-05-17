@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Curry leaf'
 desc: 'Murraya koenigii, fresh leaves from the curry leaf tree. Small, dark-green, shiny leaves with a distinct citrusy-anise-slightly-nutty aroma from carbazole alkaloids and linalool. Not interchangeable with bay leaves; not the source of "curry powder." The defining aromatic of South Indian and Sri Lankan cooking, dropped into hot fat seconds before any liquid is added and used in virtually every South Indian tadka.'
 metaDesc: 'Curry leaf: Murraya koenigii, the volatile alkaloid chemistry, why fresh or frozen not dried, applications from South Indian tadka to Goan fish curry to Sri Lankan kiri hodi, and the sourcing notes for North American home cooks.'
-tags: ['herb', 'aromatic', 'indian']
+tags: []
 updated: '2026-05-10'
 
 about: |

@@ -1,135 +1,330 @@
 [
-  { "slug": "weeknight", "label": "Weeknight" },
-  { "slug": "weekend-project", "label": "Weekend Project" },
-  { "slug": "one-pot", "label": "One Pot" },
-  { "slug": "sheet-pan", "label": "Sheet Pan" },
-  { "slug": "no-cook", "label": "No Cook" },
-  { "slug": "make-ahead", "label": "Make Ahead" },
-  { "slug": "freezer-friendly", "label": "Freezer Friendly" },
-  { "slug": "comfort", "label": "Comfort Food" },
-  { "slug": "spicy", "label": "Spicy" },
-  { "slug": "umami", "label": "Umami" },
-  { "slug": "fermentation", "label": "Fermentation" },
-  { "slug": "braise", "label": "Braise" },
-  { "slug": "roast", "label": "Roast" },
-  { "slug": "stir-fry", "label": "Stir Fry" },
-  { "slug": "soup", "label": "Soup" },
-  { "slug": "stew", "label": "Stew" },
-  { "slug": "pasta", "label": "Pasta" },
-  { "slug": "noodles", "label": "Noodles" },
-  { "slug": "rice", "label": "Rice" },
-  { "slug": "bread", "label": "Bread" },
-  { "slug": "salad", "label": "Salad" },
-  { "slug": "sauce", "label": "Sauce" },
-  { "slug": "italian", "label": "Italian" },
-  { "slug": "chinese", "label": "Chinese" },
-  { "slug": "japanese", "label": "Japanese" },
-  { "slug": "korean", "label": "Korean" },
-  { "slug": "thai", "label": "Thai" },
-  { "slug": "vietnamese", "label": "Vietnamese" },
-  { "slug": "mexican", "label": "Mexican" },
-  { "slug": "french", "label": "French" },
-  { "slug": "german", "label": "German" },
-  { "slug": "american", "label": "American" },
-  { "slug": "mediterranean", "label": "Mediterranean" },
-  { "slug": "levantine", "label": "Levantine" },
-  { "slug": "spanish", "label": "Spanish" },
-  { "slug": "greek", "label": "Greek" },
-  { "slug": "argentine", "label": "Argentine" },
-  { "slug": "dip", "label": "Dip" },
-  { "slug": "indian", "label": "Indian" },
-  { "slug": "pakistani", "label": "Pakistani" },
-  { "slug": "filipino", "label": "Filipino" },
-  { "slug": "vegetable", "label": "Vegetable" },
-  { "slug": "chicken", "label": "Chicken" },
-  { "slug": "beef", "label": "Beef" },
-  { "slug": "pork", "label": "Pork" },
-  { "slug": "lamb", "label": "Lamb" },
-  { "slug": "fish", "label": "Fish" },
-  { "slug": "seafood", "label": "Seafood" },
-  { "slug": "egg", "label": "Egg" },
-  { "slug": "dairy", "label": "Dairy" },
-  { "slug": "grain", "label": "Grain" },
-  { "slug": "legume", "label": "Legume" },
-  { "slug": "aromatic", "label": "Aromatic" },
-  { "slug": "fat", "label": "Fat" },
-  { "slug": "acid", "label": "Acid" },
-  { "slug": "spice", "label": "Spice" },
-  { "slug": "herb", "label": "Herb" },
-  { "slug": "chocolate", "label": "Chocolate" },
-  { "slug": "cookies", "label": "Cookies" },
-  { "slug": "cake", "label": "Cake" },
-  { "slug": "tea", "label": "Tea" },
-  { "slug": "holiday", "label": "Holiday" },
-  { "slug": "dessert", "label": "Dessert" },
-  { "slug": "drink", "label": "Drink" },
-  { "slug": "side", "label": "Side" },
-  { "slug": "turkey", "label": "Turkey" },
-  { "slug": "potato", "label": "Potato" },
-  { "slug": "custard", "label": "Custard" },
-  { "slug": "floral", "label": "Floral" },
-  { "slug": "pickle", "label": "Pickle" },
-  { "slug": "pantry", "label": "Pantry" },
-  { "slug": "breakfast", "label": "Breakfast" },
-  { "slug": "snack", "label": "Snack" },
-  { "slug": "fruit", "label": "Fruit" },
-  { "slug": "nuts", "label": "Nuts" },
-  { "slug": "fritter", "label": "Fritter" },
-  { "slug": "fried", "label": "Fried" },
-  { "slug": "caramel", "label": "Caramel" },
-  { "slug": "quick-bread", "label": "Quick Bread" },
-  { "slug": "thickener", "label": "Thickener" },
-  { "slug": "brassica", "label": "Brassica" },
-  { "slug": "asian", "label": "Asian" },
-  { "slug": "lao", "label": "Lao" },
-  { "slug": "italian-american", "label": "Italian-American" },
-  { "slug": "sunday-sauce", "label": "Sunday Sauce" },
-  { "slug": "huaiyang", "label": "Huaiyang" },
-  { "slug": "jiangsu", "label": "Jiangsu" },
-  { "slug": "braised", "label": "Braised" },
-  { "slug": "banquet", "label": "Banquet" },
-  { "slug": "air-fryer", "label": "Air Fryer" },
-  { "slug": "quick", "label": "Quick" },
-  { "slug": "fresh-herbs", "label": "Fresh Herbs" },
-  { "slug": "isan", "label": "Isan" },
-  { "slug": "mushroom", "label": "Mushroom" },
-  { "slug": "shojin", "label": "Shōjin (Buddhist Temple)" },
-  { "slug": "vegan", "label": "Vegan" },
-  { "slug": "winter", "label": "Winter" },
-  { "slug": "boba", "label": "Boba" },
-  { "slug": "bubble-tea", "label": "Bubble Tea" },
-  { "slug": "vietnamese-dessert", "label": "Vietnamese Dessert" },
-  { "slug": "che", "label": "Chè" },
-  { "slug": "taiwanese", "label": "Taiwanese" },
-  { "slug": "hong-kong", "label": "Hong Kong" },
-  { "slug": "starch", "label": "Starch" },
-  { "slug": "spherification", "label": "Spherification" },
-  { "slug": "hydrocolloid", "label": "Hydrocolloid" },
-  { "slug": "cold-brew", "label": "Cold Brew" },
-  { "slug": "milk-tea", "label": "Milk Tea" },
-  { "slug": "chai", "label": "Chai" },
-  { "slug": "coconut", "label": "Coconut" },
-  { "slug": "tropical", "label": "Tropical" },
-  { "slug": "legume-dessert", "label": "Legume Dessert" },
-  { "slug": "glutinous-rice", "label": "Glutinous Rice" },
-  { "slug": "syrup", "label": "Syrup" },
-  { "slug": "jelly", "label": "Jelly" },
-  { "slug": "vietnamese", "label": "Vietnamese" },
-  { "slug": "home-fragrance", "label": "Home Fragrance" },
-  { "slug": "simmer-pot", "label": "Simmer Pot" },
-  { "slug": "non-edible", "label": "Non-Edible" },
-  { "slug": "citrus", "label": "Citrus" },
-  { "slug": "copycat", "label": "Copycat" },
-  { "slug": "fast-food", "label": "Fast Food" },
-  { "slug": "condiment", "label": "Condiment" },
-  { "slug": "tomato", "label": "Tomato" },
-  { "slug": "emulsion", "label": "Emulsion" },
-  { "slug": "bowl", "label": "Bowl" },
-  { "slug": "wrap", "label": "Wrap" },
-  { "slug": "meatballs", "label": "Meatballs" },
-  { "slug": "pudding", "label": "Pudding" },
-  { "slug": "oats", "label": "Oats" },
-  { "slug": "salmon", "label": "Salmon" },
-  { "slug": "healthy", "label": "Healthy" },
-  { "slug": "lunch", "label": "Lunch" }
+  {
+    "slug": "chicken",
+    "label": "Chicken"
+  },
+  {
+    "slug": "pork",
+    "label": "Pork"
+  },
+  {
+    "slug": "beef",
+    "label": "Beef"
+  },
+  {
+    "slug": "lamb",
+    "label": "Lamb"
+  },
+  {
+    "slug": "turkey",
+    "label": "Turkey"
+  },
+  {
+    "slug": "fish",
+    "label": "Fish"
+  },
+  {
+    "slug": "seafood",
+    "label": "Seafood"
+  },
+  {
+    "slug": "shrimp",
+    "label": "Shrimp"
+  },
+  {
+    "slug": "salmon",
+    "label": "Salmon"
+  },
+  {
+    "slug": "egg",
+    "label": "Egg"
+  },
+  {
+    "slug": "tofu",
+    "label": "Tofu"
+  },
+  {
+    "slug": "one-pot",
+    "label": "One Pot"
+  },
+  {
+    "slug": "sheet-pan",
+    "label": "Sheet Pan"
+  },
+  {
+    "slug": "no-cook",
+    "label": "No Cook"
+  },
+  {
+    "slug": "quick",
+    "label": "Quick"
+  },
+  {
+    "slug": "weekend-project",
+    "label": "Weekend Project"
+  },
+  {
+    "slug": "weeknight",
+    "label": "Weeknight"
+  },
+  {
+    "slug": "make-ahead",
+    "label": "Make Ahead"
+  },
+  {
+    "slug": "freezer-friendly",
+    "label": "Freezer Friendly"
+  },
+  {
+    "slug": "batch-cook",
+    "label": "Batch Cook"
+  },
+  {
+    "slug": "air-fryer",
+    "label": "Air Fryer"
+  },
+  {
+    "slug": "grill",
+    "label": "Grill"
+  },
+  {
+    "slug": "braise",
+    "label": "Braise"
+  },
+  {
+    "slug": "roast",
+    "label": "Roast"
+  },
+  {
+    "slug": "stir-fry",
+    "label": "Stir Fry"
+  },
+  {
+    "slug": "fried",
+    "label": "Fried"
+  },
+  {
+    "slug": "baked",
+    "label": "Baked"
+  },
+  {
+    "slug": "steamed",
+    "label": "Steamed"
+  },
+  {
+    "slug": "pasta",
+    "label": "Pasta"
+  },
+  {
+    "slug": "noodles",
+    "label": "Noodles"
+  },
+  {
+    "slug": "rice",
+    "label": "Rice"
+  },
+  {
+    "slug": "soup",
+    "label": "Soup"
+  },
+  {
+    "slug": "stew",
+    "label": "Stew"
+  },
+  {
+    "slug": "salad",
+    "label": "Salad"
+  },
+  {
+    "slug": "curry",
+    "label": "Curry"
+  },
+  {
+    "slug": "bowl",
+    "label": "Bowl"
+  },
+  {
+    "slug": "wrap",
+    "label": "Wrap"
+  },
+  {
+    "slug": "sandwich",
+    "label": "Sandwich"
+  },
+  {
+    "slug": "dumpling",
+    "label": "Dumpling"
+  },
+  {
+    "slug": "meatballs",
+    "label": "Meatballs"
+  },
+  {
+    "slug": "custard",
+    "label": "Custard"
+  },
+  {
+    "slug": "cookies",
+    "label": "Cookies"
+  },
+  {
+    "slug": "cake",
+    "label": "Cake"
+  },
+  {
+    "slug": "pie",
+    "label": "Pie"
+  },
+  {
+    "slug": "pudding",
+    "label": "Pudding"
+  },
+  {
+    "slug": "bread",
+    "label": "Bread"
+  },
+  {
+    "slug": "flatbread",
+    "label": "Flatbread"
+  },
+  {
+    "slug": "umami",
+    "label": "Umami"
+  },
+  {
+    "slug": "spicy",
+    "label": "Spicy"
+  },
+  {
+    "slug": "sweet",
+    "label": "Sweet"
+  },
+  {
+    "slug": "fermented",
+    "label": "Fermented"
+  },
+  {
+    "slug": "smoky",
+    "label": "Smoky"
+  },
+  {
+    "slug": "floral",
+    "label": "Floral"
+  },
+  {
+    "slug": "tropical",
+    "label": "Tropical"
+  },
+  {
+    "slug": "citrus",
+    "label": "Citrus"
+  },
+  {
+    "slug": "herbaceous",
+    "label": "Herbaceous"
+  },
+  {
+    "slug": "vegan",
+    "label": "Vegan"
+  },
+  {
+    "slug": "vegetarian",
+    "label": "Vegetarian"
+  },
+  {
+    "slug": "legume-dessert",
+    "label": "Legume Dessert"
+  },
+  {
+    "slug": "copycat",
+    "label": "Copycat"
+  },
+  {
+    "slug": "condiment",
+    "label": "Condiment"
+  },
+  {
+    "slug": "home-fragrance",
+    "label": "Home Fragrance"
+  },
+  {
+    "slug": "non-edible",
+    "label": "Non Edible"
+  },
+  {
+    "slug": "simmer-pot",
+    "label": "Simmer Pot"
+  },
+  {
+    "slug": "holiday",
+    "label": "Holiday"
+  },
+  {
+    "slug": "comfort",
+    "label": "Comfort"
+  },
+  {
+    "slug": "pantry",
+    "label": "Pantry"
+  },
+  {
+    "slug": "fermentation",
+    "label": "Fermentation"
+  },
+  {
+    "slug": "emulsion",
+    "label": "Emulsion"
+  },
+  {
+    "slug": "spherification",
+    "label": "Spherification"
+  },
+  {
+    "slug": "hydrocolloid",
+    "label": "Hydrocolloid"
+  },
+  {
+    "slug": "starch",
+    "label": "Starch"
+  },
+  {
+    "slug": "jelly",
+    "label": "Jelly"
+  },
+  {
+    "slug": "cold-brew",
+    "label": "Cold Brew"
+  },
+  {
+    "slug": "milk-tea",
+    "label": "Milk Tea"
+  },
+  {
+    "slug": "chai",
+    "label": "Chai"
+  },
+  {
+    "slug": "boba",
+    "label": "Boba"
+  },
+  {
+    "slug": "bubble-tea",
+    "label": "Bubble Tea"
+  },
+  {
+    "slug": "che",
+    "label": "Che"
+  },
+  {
+    "slug": "glutinous-rice",
+    "label": "Glutinous Rice"
+  },
+  {
+    "slug": "cured",
+    "label": "Cured"
+  },
+  {
+    "slug": "pickle",
+    "label": "Pickle"
+  }
 ]

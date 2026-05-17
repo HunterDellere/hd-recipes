@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Brown butter sugar cookies'
 desc: 'Sugar cookies built on melted brown butter — chewy and dense in the center, with a crackled sugar shell on top.'
 metaDesc: 'Brown butter sugar cookies with a crackled sugar coating. Pan-bang trick for ripples. Yields 12 cookies in under 30 minutes.'
-tags: ['cookies', 'dessert', 'american', 'comfort']
+tags: ['cookies', 'comfort']
 updated: '2026-04-26'
 
 servings: 12

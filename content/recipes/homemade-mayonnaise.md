@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade mayonnaise'
 desc: 'Egg yolk, neutral oil, lemon juice or vinegar, mustard, and salt, emulsified by hand or with an immersion blender into a thick, glossy, intensely-flavored mayo that reads dramatically different from the commercial jar. Stub.'
 metaDesc: 'Homemade mayonnaise: lecithin emulsion chemistry, the immersion-blender 90-second route, and why fresh mayo tastes nothing like Hellmann''s. Stub recipe.'
-tags: ['sauce', 'pantry']
+tags: ['pantry']
 updated: '2026-05-09'
 
 servings: 8

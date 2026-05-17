@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chimichurri'
 desc: 'The Argentine raw herb-vinegar sauce that finishes grilled meat, fish, vegetables, eggs, and bread. Coarsely chopped (not pulverized) parsley and oregano, garlic, red wine vinegar, and a generous bath of olive oil, balanced with chili flake and salt; the sauce sits 30 minutes to let the vinegar pull pigment and flavor from the herbs before serving. Pourable, brick-acidic, and structurally raw.'
 metaDesc: 'Argentine chimichurri: coarsely chopped parsley and oregano, garlic, red wine vinegar, olive oil, chili flake. The acid-and-herb finishing sauce that travels across grilled meat, fish, vegetables, eggs, and bread.'
-tags: ['sauce', 'argentine', 'fresh-herbs', 'no-cook', 'pantry', 'make-ahead', 'quick', 'vegan']
+tags: ['no-cook', 'pantry', 'make-ahead', 'quick', 'vegan']
 updated: '2026-05-15'
 
 servings: 8

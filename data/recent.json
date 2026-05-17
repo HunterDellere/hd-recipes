@@ -1,18 +1,1143 @@
 [
   {
-    "path": "pages/explore/pantry-match.html",
-    "type": "family",
-    "category": "explore",
-    "title": "Pantry match",
-    "desc": "List the ingredients you have. See which recipes are within reach — and which are one or two shopping items away.",
-    "tags": [],
+    "path": "pages/recipes/aji-de-gallina.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ají de gallina",
+    "desc": "The Peruvian creamy chicken stew: poached chicken shredded into a thick aromatic sauce of ají amarillo, sweat-soft onion and garlic, evaporated milk, pecan or walnut, parmesan, and a slice of crustless bread soaked in milk as the structural thickener. Served over boiled yellow potatoes with white rice, black olives, and a halved hard-boiled egg.",
+    "tags": [
+      "chicken",
+      "stew",
+      "comfort",
+      "umami"
+    ],
     "status": "complete",
-    "_slug": "pantry-match",
+    "_slug": "aji-de-gallina",
+    "cuisine": "Peruvian",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 50,
+      "total_min": 75,
+      "active_min": 50
+    },
     "updated": "2026-05-17",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "chicken breast, bone-in skin-on (or boneless skinless)",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, halved",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "crustless white bread (sandwich bread or French bread)",
+        "optional": false
+      },
+      {
+        "item": "evaporated milk",
+        "slug": "evaporated-milk",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion (for the sauce)",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "ají amarillo paste",
+        "slug": "aji-amarillo-paste",
+        "optional": false
+      },
+      {
+        "item": "pecans or walnuts",
+        "optional": false
+      },
+      {
+        "item": "reserved chicken broth, hot",
+        "optional": false
+      },
+      {
+        "item": "parmigiano-reggiano, finely grated",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "yellow potatoes (waxy varieties: Yukon Gold or Peruvian yellow)",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "eggs, hard-boiled and halved",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "black olives (Botija olives or Kalamata)",
+        "optional": false
+      },
+      {
+        "item": "cooked long-grain white rice",
+        "slug": "jasmine-rice",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "low-and-slow-simmer",
+      "sweating-aromatics"
+    ],
+    "equipment": [
+      "medium-pot",
+      "large-skillet",
+      "blender",
+      "fine-mesh-sieve"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 9,
+      "swatchGlyph": "chili",
+      "totalMinutes": 75,
+      "diffLabel": "medium",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/recipes/anticuchos-de-corazon.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Anticuchos de corazón",
+    "desc": "The Peruvian beef heart skewer: trimmed cubed heart marinated overnight in ají panca, garlic, vinegar, cumin, and oregano, then skewered and grilled hot and fast over coals until the surface chars and the interior reads tender. The defining street food of Lima and one of the great offal preparations of the world.",
+    "tags": [
+      "beef",
+      "spicy",
+      "umami",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "anticuchos-de-corazon",
+    "cuisine": "Peruvian",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 12,
+      "total_min": 760,
+      "active_min": 45
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "beef heart, whole or pre-trimmed",
+        "slug": "beef-heart",
+        "optional": false
+      },
+      {
+        "item": "ají panca paste",
+        "slug": "aji-panca-paste",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "dried oregano",
+        "slug": "dried-oregano",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "small waxy potatoes (Peruvian yellow or new potatoes)",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "choclo (Peruvian large-kernel corn) or sweet corn",
+        "optional": false
+      },
+      {
+        "item": "bamboo or metal skewers",
+        "optional": false
+      },
+      {
+        "item": "ají amarillo paste (for the sauce)",
+        "slug": "aji-amarillo-paste",
+        "optional": false
+      },
+      {
+        "item": "mayonnaise",
+        "slug": "mayonnaise",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro, chopped (for the sauce)",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "garlic clove (for the sauce)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "lime, cut into wedges",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-grilling"
+    ],
+    "equipment": [
+      "blender",
+      "charcoal-grill",
+      "skewers"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 9,
+      "swatchGlyph": "chili",
+      "totalMinutes": 760,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/arroz-con-pollo-cubano.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Arroz con pollo Cubano",
+    "desc": "Cuban chicken-and-rice, the structural one-pot Sunday lunch: bone-in chicken thighs seared, then braised together with rice in a sofrito-and-tomato-stained broth, finished with peas, roasted red pepper, olives, and a glass of beer for body. Comfort food, dinner-party plate, and the dish that defines the Cuban-American kitchen.",
+    "tags": [
+      "chicken",
+      "rice",
+      "one-pot",
+      "comfort",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "arroz-con-pollo-cubano",
+    "cuisine": "Cuban",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 60,
+      "total_min": 80,
+      "active_min": 40
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "chicken thighs, bone-in skin-on",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "dried oregano",
+        "slug": "dried-oregano",
+        "optional": false
+      },
+      {
+        "item": "ground cumin (for the chicken)",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "annatto (achiote) seeds",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "green bell pepper",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "canned crushed tomatoes",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "ground cumin (for sofrito)",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "dried oregano (for sofrito)",
+        "slug": "dried-oregano",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "Valencia or bomba rice (or long-grain as fallback)",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, hot",
+        "slug": "chicken-stock",
+        "optional": false
+      },
+      {
+        "item": "pale lager beer (Cuban or any pale lager)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the rice)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "frozen peas",
+        "optional": false
+      },
+      {
+        "item": "roasted red peppers (jarred), drained",
+        "optional": false
+      },
+      {
+        "item": "pimento-stuffed Spanish olives",
+        "optional": false
+      },
+      {
+        "item": "fresh cilantro or parsley, chopped",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "lime, cut into wedges",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "sweating-aromatics",
+      "spice-tempering"
+    ],
+    "equipment": [
+      "paella-pan",
+      "dutch-oven",
+      "fine-mesh-sieve"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 4,
+      "swatchGlyph": "chili",
+      "totalMinutes": 80,
+      "diffLabel": "medium",
+      "timeLead": "1 h 20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/recipes/avgolemono-soup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Avgolemono soup",
+    "desc": "The Greek chicken-rice-egg-lemon soup: bone-in chicken pieces simmered in water with aromatics to build the broth, the chicken pulled and shredded, short-grain rice cooked into the broth until tender, then finished by tempering a vigorously whisked egg-and-lemon mixture into the hot broth off-heat. Structurally a textbook tempered-egg emulsion: 3 eggs whisked with 100 ml of lemon juice form an acidic foam, which is brought up to broth temperature by drizzling in 250 ml of hot broth while whisking, then poured back into the pot off-heat. The eggs cook gently into a velvety pale yellow sauce that thickens the broth and binds the rice; the lemon brightens the dish to a clean tangy finish. The canonical Greek comfort soup, and the structural foundation for the broader avgolemono sauce family.",
+    "tags": [
+      "soup",
+      "chicken",
+      "rice",
+      "egg",
+      "comfort",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "avgolemono-soup",
+    "cuisine": "Greek",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 75,
+      "total_min": 90,
+      "active_min": 30
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "bone-in skin-on chicken (mixed pieces: 2 thighs, 2 drumsticks, 2 breast halves, or a small whole chicken cut up)",
+        "optional": false
+      },
+      {
+        "item": "water (cold)",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, halved",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "celery stalks, rough chop",
+        "optional": false
+      },
+      {
+        "item": "lemon peel (no pith)",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "whole black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the broth)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "short-grain or medium-grain rice (arborio, carolina, or Greek glasse)",
+        "optional": false
+      },
+      {
+        "item": "large eggs (whole, room temperature)",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "fresh-squeezed lemon juice (from 2 to 3 lemons)",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley or fresh dill, finely chopped",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin Greek olive oil (for finishing)",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tempering-eggs"
+    ],
+    "equipment": [
+      "large-stockpot",
+      "fine-mesh-sieve",
+      "large-mixing-bowl",
+      "balloon-whisk",
+      "ladle"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 9,
+      "swatchGlyph": "olive",
+      "totalMinutes": 90,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/baba-ganoush.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Baba ganoush",
+    "desc": "The Levantine smoked-eggplant dip: whole eggplants charred directly over a gas flame (or under a broiler, or on a grill) until the skin is fully blackened and the flesh has collapsed to a soft smoky pulp, then drained, mashed with tahini, lemon, garlic, and salt, and crowned with olive oil, pomegranate seeds, mint, and parsley. The structural defining feature is the smoke: oven-roasted eggplant produces a fine dip but a different and inferior one. The fire-char carries the entire identity of the dish, which is why every serious Levantine kitchen owns or improvises a way to char eggplant directly over flame.",
+    "tags": [
+      "pantry",
+      "no-cook"
+    ],
+    "status": "complete",
+    "_slug": "baba-ganoush",
+    "cuisine": "Levantine",
+    "course": "appetizer",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 25,
+      "total_min": 50,
+      "active_min": 25
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "globe eggplants",
+        "slug": "eggplant",
+        "optional": false
+      },
+      {
+        "item": "tahini (well-stirred, smooth, single-ingredient Lebanese or Palestinian)",
+        "slug": "tahini",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "pomegranate seeds (in season) or sumac",
+        "slug": "sumac",
+        "optional": false
+      },
+      {
+        "item": "fresh flat-leaf parsley",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves",
+        "slug": "mint",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "open-flame-char",
+      "rustic-mash",
+      "tahini-bind"
+    ],
+    "equipment": [
+      "gas-burner-or-grill",
+      "colander",
+      "mortar-or-microplane"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "tagine",
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/banh-mi-thit-nuong.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Banh mi thit nuong (grilled pork banh mi)",
+    "desc": "Vietnamese sandwich of grilled lemongrass-marinated pork shoulder on a crisp-shelled, airy-crumb baguette, layered with pickled carrot and daikon (do chua), cucumber, cilantro, jalapeno, a swipe of mayonnaise, and a thread of soy. The structural identity is the contrast between the shattering baguette crust, the soft interior crumb, the smoky-sweet pork, and the bright vinegar-pickled vegetables; each bite needs all four for the sandwich to work.",
+    "tags": [
+      "pork",
+      "sandwich",
+      "weeknight",
+      "wrap"
+    ],
+    "status": "complete",
+    "_slug": "banh-mi-thit-nuong",
+    "cuisine": "Vietnamese",
+    "course": "lunch",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 15,
+      "total_min": 165,
+      "active_min": 45
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pork shoulder, boneless",
+        "optional": false
+      },
+      {
+        "item": "lemongrass",
+        "slug": "lemongrass",
+        "optional": false
+      },
+      {
+        "item": "shallot",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "palm sugar (or dark brown sugar)",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "freshly cracked black pepper",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "carrot",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "daikon radish",
+        "slug": "daikon",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Vietnamese baguettes (or French baguette)",
+        "optional": false
+      },
+      {
+        "item": "mayonnaise",
+        "slug": "mayonnaise",
+        "optional": false
+      },
+      {
+        "item": "cucumber",
+        "slug": "cucumber",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "fresh jalapeno",
+        "slug": "green-chili",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce, for sandwich finish",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "Maggi seasoning sauce (optional, Vietnamese canonical)",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "quick-pickle",
+      "high-heat-grill",
+      "sandwich-build"
+    ],
+    "equipment": [
+      "grill",
+      "oven"
+    ],
     "added": "2026-05-17",
     "_card": {
       "swatchIndex": 10,
-      "swatchGlyph": "leaf"
+      "swatchGlyph": "bowl",
+      "totalMinutes": 165,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "· 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/beef-bourguignon.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Beef bourguignon",
+    "desc": "The Burgundian red-wine beef braise: chuck cubes browned hard, lardon-rendered fat as the structural base, deglazed with a full bottle of dry red Burgundy (or pinot noir), aromatic bouquet garni, slow oven braise 3 hours until the collagen converts to gelatin, finished with sautéed pearl onions and pan-glazed cremini mushrooms tucked in just before service. The structural rule is heat discipline (a tremor, never a boil, throughout the braise so the protein stays tender rather than seizing), and the structural ingredient is real Burgundy (a fruity acidic pinot, not a heavy California cab); the dish reads like the wine it was cooked in.",
+    "tags": [
+      "beef",
+      "stew",
+      "braise",
+      "weekend-project",
+      "umami",
+      "comfort",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "beef-bourguignon",
+    "cuisine": "French",
+    "course": "dinner",
+    "difficulty": "hard",
+    "servings": 6,
+    "time": {
+      "prep_min": 45,
+      "cook_min": 210,
+      "total_min": 255,
+      "active_min": 75
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "slab bacon or pancetta, in 1 cm cubes",
+        "slug": "bacon",
+        "optional": false
+      },
+      {
+        "item": "beef chuck (boneless chuck roast)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for seasoning the beef)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, large dice",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "carrot, large dice",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "garlic, smashed",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "red Burgundy or pinot noir (full bottle, dry, medium-body)",
+        "optional": false
+      },
+      {
+        "item": "beef stock (homemade or low-sodium)",
+        "slug": "beef-broth",
+        "optional": false
+      },
+      {
+        "item": "bouquet garni (thyme, bay, parsley stems tied with twine)",
+        "optional": false
+      },
+      {
+        "item": "pearl onions (frozen peeled, or fresh blanched and peeled)",
+        "optional": false
+      },
+      {
+        "item": "cremini mushrooms (or button), quartered",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter (for the garnish sauté)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar (for the pearl onion glaze)",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, finely chopped",
+        "slug": "parsley",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "lardon-rendering",
+      "maillard-sear",
+      "blooming-aromatics",
+      "deglazing"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "wide-skillet",
+      "tongs",
+      "kitchen-twine",
+      "wooden-spoon"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 13,
+      "swatchGlyph": "olive",
+      "totalMinutes": 255,
+      "diffLabel": "hard",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "· 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 75,
+      "filterMinutes": 75
+    }
+  },
+  {
+    "path": "pages/recipes/beef-rendang.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Beef rendang",
+    "desc": "Padang dry-cooked beef. Chuck or shank simmered in spice paste and coconut milk for three to four hours until the liquid completely evaporates and the meat finishes by frying in its own released coconut oil, producing a black-brown lacquered exterior and a paste that coats every fiber. The wet stage in the middle is kalio; the dry endpoint is rendang.",
+    "tags": [
+      "beef",
+      "braise",
+      "spicy",
+      "curry",
+      "weekend-project",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "beef-rendang",
+    "cuisine": "Indonesian",
+    "course": "dinner",
+    "difficulty": "hard",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 240,
+      "total_min": 270,
+      "active_min": 60
+    },
+    "updated": "2026-05-17",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "beef chuck or shank",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "dried red Holland or Fresno chilies",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "shallot",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "galangal, fresh",
+        "slug": "galangal",
+        "optional": false
+      },
+      {
+        "item": "candlenut",
+        "slug": "candlenut",
+        "optional": false
+      },
+      {
+        "item": "ground turmeric",
+        "slug": "turmeric",
+        "optional": false
+      },
+      {
+        "item": "lemongrass",
+        "slug": "lemongrass",
+        "optional": false
+      },
+      {
+        "item": "toasted terasi",
+        "slug": "terasi",
+        "optional": false
+      },
+      {
+        "item": "lemongrass",
+        "slug": "lemongrass",
+        "optional": false
+      },
+      {
+        "item": "kaffir lime leaves",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "full-fat coconut milk",
+        "slug": "coconut-milk",
+        "optional": false
+      },
+      {
+        "item": "desiccated coconut",
+        "slug": "desiccated-coconut",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "tamarind paste",
+        "slug": "tamarind",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, additional for the braise",
+        "slug": "kosher-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "spice-paste-pounding",
+      "spice-paste-frying",
+      "blooming-aromatics",
+      "dry-cook-reduction"
+    ],
+    "equipment": [
+      "food-processor",
+      "wide-skillet",
+      "dutch-oven"
+    ],
+    "added": "2026-05-17",
+    "_card": {
+      "swatchIndex": 5,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 270,
+      "diffLabel": "hard",
+      "timeLead": "1 h",
+      "timeAnnotation": "· 4 h rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {
@@ -23,14 +1148,11 @@
     "desc": "Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce paste and lacto-fermented for 3 to 7 days at room temperature before cold-storing indefinitely.",
     "tags": [
       "fermentation",
-      "korean",
       "pickle",
-      "side",
       "weekend-project",
       "make-ahead",
       "umami",
-      "spicy",
-      "brassica"
+      "spicy"
     ],
     "status": "complete",
     "_slug": "baechu-kimchi",
@@ -138,8 +1260,7 @@
       "timeAnnotation": "· 5 d rest",
       "timeMode": "active",
       "activeMinutes": 75,
-      "filterMinutes": 75,
-      "kcal": 15
+      "filterMinutes": 75
     }
   },
   {
@@ -150,10 +1271,7 @@
     "desc": "The McDonald's Big Mac special sauce, built on a real-egg mayonnaise base with sweet pickle relish, yellow mustard, white wine vinegar, paprika, garlic powder, and onion powder. Tastes substantially cleaner than the franchise version because the mayo is fresh and the relish is real chopped pickle rather than a corn-syrup gel.",
     "tags": [
       "condiment",
-      "sauce",
       "copycat",
-      "fast-food",
-      "american",
       "no-cook",
       "quick",
       "emulsion"
@@ -228,8 +1346,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 5,
-      "filterMinutes": 5,
-      "kcal": 40
+      "filterMinutes": 5
     }
   },
   {
@@ -239,10 +1356,8 @@
     "title": "Breakfast egg bites with spinach and feta",
     "desc": "Whole eggs blended briefly with cottage cheese, baked in a buttered standard metal muffin tin with wilted spinach, crumbled feta, scallion, and dill. The cottage cheese is the entire technique: the curds break apart in the blender into a smooth custard-like base, and the casein proteins contribute structural body that keeps the bites tender and moist rather than the rubbery quiche-muffin texture that home egg cups usually produce. Baked low and slow at 165 °C in a water bath setup, which prevents the eggs from puffing dramatically and then collapsing into denseness. Make-ahead breakfast, holds 5 days refrigerated.",
     "tags": [
-      "breakfast",
       "make-ahead",
-      "egg",
-      "healthy"
+      "egg"
     ],
     "status": "complete",
     "_slug": "breakfast-egg-bites-with-spinach-and-feta",
@@ -325,7 +1440,7 @@
     ],
     "added": "2026-05-16",
     "_card": {
-      "swatchIndex": 2,
+      "swatchIndex": 7,
       "swatchGlyph": "leaf",
       "totalMinutes": 50,
       "diffLabel": "easy",
@@ -333,8 +1448,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 20,
-      "filterMinutes": 20,
-      "kcal": 50
+      "filterMinutes": 20
     }
   },
   {
@@ -344,15 +1458,10 @@
     "title": "Chia coconut pudding with mango",
     "desc": "Chia seeds soaked overnight in full-fat coconut milk with maple syrup, vanilla, and a pinch of salt. The chia seeds absorb roughly 12 times their weight in liquid and gel into a soft tapioca-like pudding without cooking. Topped at serving with fresh or thawed-frozen mango (cut into 1 cm dice), toasted coconut flakes, and a small squeeze of lime that brightens the coconut-mango pairing. Vegan, gluten-free, no-cook for the pudding itself. Make-ahead breakfast or dessert; the texture continues to improve through 24 hours and holds 4 days refrigerated.",
     "tags": [
-      "breakfast",
-      "dessert",
       "make-ahead",
       "no-cook",
       "pudding",
-      "coconut",
-      "tropical",
-      "healthy",
-      "fruit"
+      "tropical"
     ],
     "status": "complete",
     "_slug": "chia-coconut-pudding-with-mango",
@@ -426,7 +1535,7 @@
     "equipment": [],
     "added": "2026-05-16",
     "_card": {
-      "swatchIndex": 2,
+      "swatchIndex": 7,
       "swatchGlyph": "whisk",
       "totalMinutes": 368,
       "diffLabel": "easy",
@@ -434,8 +1543,7 @@
       "timeAnnotation": "· 6 h rest",
       "timeMode": "active",
       "activeMinutes": 8,
-      "filterMinutes": 8,
-      "kcal": 195
+      "filterMinutes": 8
     }
   },
   {
@@ -445,12 +1553,10 @@
     "title": "Chicken-zucchini meatballs with yogurt-dill",
     "desc": "Ground chicken thigh mixed with salt-drained grated zucchini, grated onion, garlic, lemon zest, fresh dill, and a small panade of breadcrumbs hydrated in milk. The zucchini contributes moisture that keeps the lean chicken from drying out during the bake, and the panade traps that moisture in a starch matrix that releases gradually as the meatballs cook. Baked at 220 °C on parchment-lined sheet pans (no frying, no nonstick), served with a cold lemon-dill yogurt sauce that doubles as both dressing and dip. Mediterranean leaning, weeknight feasible, the meatballs hold beautifully for next-day lunches.",
     "tags": [
-      "mediterranean",
       "chicken",
       "meatballs",
       "weeknight",
-      "make-ahead",
-      "healthy"
+      "make-ahead"
     ],
     "status": "complete",
     "_slug": "chicken-zucchini-meatballs-with-yogurt-dill",
@@ -591,8 +1697,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 30,
-      "filterMinutes": 30,
-      "kcal": 175
+      "filterMinutes": 30
     }
   },
   {
@@ -603,13 +1708,9 @@
     "desc": "Cooked farro tossed cold with cucumber, scallion, and a creamy yogurt-avocado green goddess dressing that goes into the blender with a large fistful of soft herbs (parsley, basil, dill, chives) and a small punch of anchovy and lemon. The dressing is the entire dish: the herbs blend into a smooth, bright-green emulsion, the avocado contributes body without dairy heaviness, and the anchovy provides the structural glutamate that makes the salad read like a salad rather than a yogurt-coated grain pile. No-cook for the dressing, cold-assembled, batch-cookable for lunches.",
     "tags": [
       "salad",
-      "grain",
       "bowl",
       "no-cook",
-      "make-ahead",
-      "lunch",
-      "healthy",
-      "fresh-herbs"
+      "make-ahead"
     ],
     "status": "complete",
     "_slug": "green-goddess-grain-salad",
@@ -739,8 +1840,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 25,
-      "filterMinutes": 25,
-      "kcal": 255
+      "filterMinutes": 25
     }
   },
   {
@@ -751,12 +1851,8 @@
     "desc": "A one-pot vegetable soup built on a foundation of slowly sweated leek and garlic, deepened with tomato paste fond, and brought to a brothy register with diced butternut squash, cannellini beans, and lacinato kale. The cooking water absorbs the vegetable juices into a light but savory broth. Finished with lemon juice, olive oil, and grated parmesan rind that has simmered in the pot for the entire cook. Vegan-able by omitting the parm; the bean cooking liquid (the starch and amino acids that leach out as the beans simmer) does most of the structural body work.",
     "tags": [
       "soup",
-      "vegetable",
-      "legume",
       "one-pot",
-      "make-ahead",
-      "healthy",
-      "winter"
+      "make-ahead"
     ],
     "status": "complete",
     "_slug": "harvest-vegetable-soup-with-white-beans",
@@ -872,8 +1968,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 25,
-      "filterMinutes": 25,
-      "kcal": 140
+      "filterMinutes": 25
     }
   },
   {
@@ -884,13 +1979,10 @@
     "desc": "A from-scratch take on the dark, tangy, fruit-and-spice steak sauce that A1 has owned the category on since the 1820s. Tomato paste base reduced with raisins, orange juice, tamarind, malt and white vinegars, soy sauce, mustard, anchovy, and warm spices, then blended into a thick chunky-glossy condiment. Refrigerator-improves dramatically over two weeks as the fruit acids and spices integrate.",
     "tags": [
       "condiment",
-      "sauce",
       "copycat",
-      "american",
       "umami",
       "make-ahead",
-      "pantry",
-      "tomato"
+      "pantry"
     ],
     "status": "complete",
     "_slug": "homemade-a1-style-steak-sauce",
@@ -1015,8 +2107,7 @@
       "timeAnnotation": "· 1 d rest",
       "timeMode": "active",
       "activeMinutes": 25,
-      "filterMinutes": 25,
-      "kcal": 20
+      "filterMinutes": 25
     }
   },
   {
@@ -1026,9 +2117,6 @@
     "title": "Air-fried okra with four flavor finishes",
     "desc": "Whole or halved okra pods tossed with a cornstarch-and-oil micro-coating and air-fried at 200°C / 400°F to a blistered, crackly-edged exterior with a tender interior, the high dry heat and the starch coat solve the mucilage problem that makes okra hard to cook well, producing pods that read crispy-charred rather than slimy. The same base technique then takes four finishes: South Asian chaat-masala-and-lime for a tangy-spiced bhindi-style snack, Korean-American gochujang-honey for sweet-spicy-glossed wings-adjacent, Cajun-Creole blackened seasoning with hot honey for Louisiana barfood, and Italian lemon-parmesan with anchovy crumbs for the unexpected Mediterranean direction. The recipe is the base air-fry method plus the four finishes as modifications; pick any one (or split a batch and finish two ways for a snack spread).",
     "tags": [
-      "vegetable",
-      "snack",
-      "side",
       "air-fryer",
       "umami",
       "quick"
@@ -1211,7 +2299,7 @@
     ],
     "added": "2026-05-15",
     "_card": {
-      "swatchIndex": 0,
+      "swatchIndex": 6,
       "swatchGlyph": "leaf",
       "totalMinutes": 24,
       "diffLabel": "easy",
@@ -1229,7 +2317,6 @@
     "title": "Akadashi clam miso soup (asari no akadashi)",
     "desc": "Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari clams. The clams release their own succinic-acid umami into the dashi during a brief simmer, producing a soup where three umami nucleotides stack: glutamate from the kombu, inosinate from the katsuobushi, and succinate from the clams. The red miso supplies the dark, fermented, robust character that defines the Nagoya akadashi tradition, and the broth eats fuller, more savory, and more bracing than the everyday white-miso washoku bowl.",
     "tags": [
-      "japanese",
       "soup",
       "umami",
       "seafood",
@@ -1315,8 +2402,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 20,
-      "filterMinutes": 20,
-      "kcal": 5
+      "filterMinutes": 20
     }
   },
   {
@@ -1326,13 +2412,8 @@
     "title": "Chinese lion's head meatballs (shīzi tóu)",
     "desc": "Large braised pork meatballs from Yangzhou (Huaiyang cuisine), in which an unusually high proportion of water and finely diced water chestnut produces a tender, juicy meatball that sits among a bed of napa cabbage and braises in a clear soy-and-rice-wine broth for an hour. The dish is named for the appearance of the meatballs nestled in the cabbage, the round meatball is the lion's head, the wilted napa around it is the mane. The technique is structurally different from Italian or Thai meatballs: more water is bound into the meat by extended hand-paddling that extracts myosin, the meatballs are barely seared (just enough to set the surface) before going into the braise, and the long slow cook produces a texture closer to silky tofu than to the dense, springy meatballs of other traditions.",
     "tags": [
-      "chinese",
-      "huaiyang",
-      "jiangsu",
       "pork",
-      "braised",
-      "umami",
-      "banquet"
+      "umami"
     ],
     "status": "complete",
     "_slug": "chinese-lions-head-meatballs",
@@ -1480,8 +2561,7 @@
       "timeAnnotation": "· 1 h rest",
       "timeMode": "active",
       "activeMinutes": 35,
-      "filterMinutes": 35,
-      "kcal": 105
+      "filterMinutes": 35
     }
   },
   {
@@ -1491,12 +2571,9 @@
     "title": "Italian-American pork meatballs in tomato",
     "desc": "The Sunday-sauce meatball of the Italian-American canon, scaled down to a weeknight portion: ground pork (or a pork-and-beef blend) bound with a panko-and-milk panade, microplaned parmigiano, finely grated onion and garlic, fresh parsley, oregano, fennel pollen, and an egg yolk. The meatballs are seared in a hot pan to build a Maillard crust, then finished by simmering for 30 minutes in a tomato sauce built on San Marzano canned tomatoes, blistered garlic, and a glug of olive oil, the sauce reduces around the meatballs and the meatballs release their fat and juices into the sauce, producing the integrated meat-and-tomato eating experience that is the entire point of the dish.",
     "tags": [
-      "italian",
-      "italian-american",
       "pork",
       "pasta",
-      "umami",
-      "sunday-sauce"
+      "umami"
     ],
     "status": "complete",
     "_slug": "italian-american-pork-meatballs-in-tomato",
@@ -1652,8 +2729,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 30,
-      "filterMinutes": 30,
-      "kcal": 355
+      "filterMinutes": 30
     }
   },
   {
@@ -1663,12 +2739,8 @@
     "title": "Shōjin kenchinjiru: Zen Buddhist temple vegetable miso soup",
     "desc": "A shōjin ryōri (Japanese Buddhist temple cuisine) vegetable soup built on kombu-shiitake dashi (no animal product, the canonical Buddhist substitute for kombu-katsuobushi), with root vegetables sesame-oil-toasted before simmering, plus crumbled firm tofu and konnyaku. Originated at Kenchō-ji, the Zen temple in Kamakura founded in 1253, where the soup is said to have been a daily monastery preparation that spread through the Rinzai-school temple network and into broader Japanese cooking. A bowl of profound umami built entirely from vegetables and seaweed, the structural proof that Japanese cuisine does not need animal-based dashi to produce a complete and deeply savory soup.",
     "tags": [
-      "japanese",
       "soup",
-      "shojin",
       "umami",
-      "vegetable",
-      "winter",
       "vegan"
     ],
     "status": "complete",
@@ -1777,8 +2849,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 30,
-      "filterMinutes": 30,
-      "kcal": 155
+      "filterMinutes": 30
     }
   },
   {
@@ -1788,11 +2859,8 @@
     "title": "Thai pork larb meatballs",
     "desc": "A meatball reformatting of larb moo, the canonical northeastern Thai (Isan) and Lao minced-pork salad. The classic larb is a loose minced-meat preparation eaten with sticky rice and fresh herbs; here the same flavor system, fish sauce, lime, toasted rice powder, fresh herbs, dried chili, shallot, is rolled into bite-sized meatballs, browned hard in a skillet to maximize the toasted-meat flavor that anchors the dish, then tossed off-heat with the larb dressing and a heap of mint, cilantro, and scallion. The result eats like larb in cocktail-meatball form: high-acid, fish-sauce-forward, fresh-herb-heavy, with the toasted rice powder providing the structural toasted character and a faint sandy texture on the meatball surface.",
     "tags": [
-      "thai",
-      "lao",
       "pork",
       "umami",
-      "fresh-herbs",
       "spicy",
       "quick"
     ],
@@ -1939,8 +3007,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 25,
-      "filterMinutes": 25,
-      "kcal": 60
+      "filterMinutes": 25
     }
   },
   {
@@ -1950,10 +3017,8 @@
     "title": "Tonjiru (豚汁): pork and root-vegetable miso soup",
     "desc": "The substantial winter miso soup of the Japanese household, built on a base of dashi (or homemade pork broth) and loaded with sliced pork belly, daikon, carrot, burdock, konnyaku, and shimeji mushrooms. The miso enters at the end, off-heat, as always. A meal-scale soup rather than a side: tonjiru with a bowl of rice and a quick pickle is one of the standard simple winter dinners across Japan, and the dish is also the canonical \"morning after a hard work day\" recovery meal.",
     "tags": [
-      "japanese",
       "soup",
       "pork",
-      "winter",
       "umami",
       "weeknight"
     ],
@@ -2046,8 +3111,7 @@
       "timeAnnotation": "",
       "timeMode": "total",
       "activeMinutes": 30,
-      "filterMinutes": 30,
-      "kcal": 260
+      "filterMinutes": 30
     }
   },
   {
@@ -2057,9 +3121,7 @@
     "title": "Aburaage (deep-fried tofu pouches)",
     "desc": "Thin slabs of tofu deep-fried twice (low temperature first, then high temperature) until they puff into a hollow golden pouch with a crisp surface and a soft interior. The structural pouch of Japanese inarizushi (sushi rice in a sweet-soy-simmered aburaage), the textural element in kitsune udon and many miso soups, and a high-protein vegetarian component that absorbs broth aggressively.",
     "tags": [
-      "pantry",
-      "japanese",
-      "asian"
+      "pantry"
     ],
     "status": "complete",
     "_slug": "aburaage",
@@ -2069,598 +3131,8 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 1,
       "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/recipes/sauteed-beet-greens-with-anchovy-garlic-and-chili.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Sautéed beet greens with anchovy, garlic, and chili",
-    "desc": "A bunch of beet greens, stems and leaves separated, cooked in two stages in a wide skillet of olive oil that has first dissolved 3 anchovy fillets and bloomed sliced garlic and red pepper flakes. Stems first for 2 minutes to take the fibrous edge off, leaves on top with their rinse water still clinging so they steam-wilt under a brief lid, then uncovered to drive off moisture. Finished off heat with lemon zest, lemon juice, and a splash of red wine vinegar to bridge the iron-mineral leaves to the bright top end. Built as the green-vegetable counter to the cast-iron chuck eye with shallot pan sauce; the dishes share the skillet rotation and the anchovy stands in for the steak fond on the umami axis.",
-    "tags": [
-      "italian",
-      "mediterranean",
-      "vegetable",
-      "side",
-      "weeknight",
-      "umami",
-      "stir-fry"
-    ],
-    "status": "complete",
-    "_slug": "sauteed-beet-greens-with-anchovy-garlic-and-chili",
-    "cuisine": "Italian",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 8,
-      "cook_min": 7,
-      "total_min": 15,
-      "active_min": 12
-    },
-    "updated": "2026-05-14",
-    "diet": [
-      "gluten-free",
-      "dairy-free",
-      "pescatarian"
-    ],
-    "ingredients": [
-      {
-        "item": "beet greens (the leaves and stems off 2 to 3 medium beets)",
-        "slug": "beet-greens",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "oil-cured anchovy fillets",
-        "slug": "anchovy-fillets",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, sliced thin",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon zest",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "red wine vinegar",
-        "slug": "red-wine-vinegar",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil, for finishing",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "flaky salt (Maldon, Jacobsen, or any large-flake finishing salt)",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "wide-skillet",
-      "microplane"
-    ],
-    "added": "2026-05-14",
-    "_card": {
-      "swatchIndex": 3,
-      "swatchGlyph": "olive",
-      "totalMinutes": 15,
-      "diffLabel": "easy",
-      "timeLead": "15 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 12,
-      "filterMinutes": 12,
-      "kcal": 210
-    }
-  },
-  {
-    "path": "pages/ingredients/beet-greens.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Beet greens",
-    "desc": "Tender leafy tops of Beta vulgaris, the same species as Swiss chard. Mineral-iron-forward, mildly bitter, with red-veined stems that read sweeter than the leaves. Cooks like chard but faster; the stems and the leaves are two textures on one plant and want staged cooking.",
-    "tags": [
-      "vegetable",
-      "mediterranean",
-      "italian"
-    ],
-    "status": "complete",
-    "_slug": "beet-greens",
-    "updated": "2026-05-14",
-    "added": "2026-05-14",
-    "_card": {
-      "swatchIndex": 0,
-      "swatchGlyph": "leaf",
-      "primaryTag": "vegetable",
-      "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/recipes/cast-iron-chuck-eye-steaks-with-shallot-pan-sauce.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Cast-iron chuck eye steaks with shallot pan sauce",
-    "desc": "Two 0.5 lb chuck eye steaks dry-brined overnight, hard-seared in a smoking cast-iron skillet, butter-basted with smashed garlic and thyme sprigs to a 54 °C medium-rare, then rested while the same pan builds a sauce from minced shallot, red wine, beef broth, dijon, and cold butter mounted in off-heat. The American steakhouse and French bistro overlap: ribeye-grade flavor from the chuck primal, a glossy mahogany pan sauce that takes 6 minutes of attention while the steaks rest, and a finish that ties marbling, fond, and acidity into one continuous bite.",
-    "tags": [
-      "american",
-      "french",
-      "beef",
-      "weeknight",
-      "roast",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "cast-iron-chuck-eye-steaks-with-shallot-pan-sauce",
-    "cuisine": "American",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 15,
-      "total_min": 745,
-      "active_min": 20
-    },
-    "updated": "2026-05-13",
-    "diet": [
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "chuck eye steaks, 1-inch / 2.5 cm thick",
-        "slug": "chuck-eye-steak",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, cold cubed",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, smashed (skin on)",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme sprigs",
-        "slug": "fresh-thyme",
-        "optional": false
-      },
-      {
-        "item": "shallot, fine-minced",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "dry red wine (Pinot Noir, Côtes du Rhône, Chianti, or any unoaked everyday red)",
-        "optional": false
-      },
-      {
-        "item": "beef broth, low-sodium or unsalted homemade",
-        "optional": false
-      },
-      {
-        "item": "dijon mustard",
-        "optional": false
-      },
-      {
-        "item": "Worcestershire sauce",
-        "slug": "worcestershire-sauce",
-        "optional": true
-      },
-      {
-        "item": "unsalted butter, cold cubed (for mounting)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme leaves, stripped from the stem",
-        "slug": "fresh-thyme",
-        "optional": false
-      },
-      {
-        "item": "flaky salt (Maldon, Jacobsen, or any large-flake finishing salt)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dry-brining",
-      "maillard-sear",
-      "deglazing",
-      "pan-emulsion"
-    ],
-    "equipment": [
-      "heavy-cast-iron-skillet",
-      "fish-spatula",
-      "instant-read-thermometer",
-      "wire-rack-and-sheet-pan"
-    ],
-    "added": "2026-05-13",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "skillet",
-      "totalMinutes": 745,
-      "diffLabel": "medium",
-      "timeLead": "20 min",
-      "timeAnnotation": "· overnight",
-      "timeMode": "active",
-      "activeMinutes": 20,
-      "filterMinutes": 20,
-      "kcal": 855
-    }
-  },
-  {
-    "path": "pages/recipes/sheet-pan-roasted-shallots-cauliflower-and-sweet-potato-with-lemon-dijon-yogurt.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Sheet-pan roasted shallots, cauliflower, and sweet potato with lemon-dijon yogurt",
-    "desc": "Halved whole shallots, cauliflower florets, and 2 cm sweet-potato chunks tossed in olive oil, smashed garlic, thyme, and 1.2% salt by weight, spread on a single screaming-hot sheet pan, roasted at 230 °C until each vegetable hits its own Maillard window: shallots collapsing into jammy halves, cauliflower mahogany on the cut faces, sweet potato caramel-edged with a fudge-soft interior. Served with a cold lemon-dijon-yogurt sauce that cuts through the sweet brassica-allium-starch register with acid and tang. The companion side to the cast-iron chuck eye, designed so the steak's shallot pan sauce can spill over the vegetables without competing.",
-    "tags": [
-      "american",
-      "mediterranean",
-      "vegetable",
-      "sheet-pan",
-      "roast",
-      "side",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "sheet-pan-roasted-shallots-cauliflower-and-sweet-potato-with-lemon-dijon-yogurt",
-    "cuisine": "American",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 40,
-      "total_min": 60,
-      "active_min": 25
-    },
-    "updated": "2026-05-13",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "shallots, peeled and halved lengthwise",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "cauliflower",
-        "slug": "cauliflower",
-        "optional": false
-      },
-      {
-        "item": "sweet potato",
-        "slug": "sweet-potato",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, side-smashed (skins on)",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme sprigs",
-        "slug": "fresh-thyme",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "whole-milk Greek yogurt or strained plain yogurt",
-        "slug": "greek-yogurt",
-        "optional": false
-      },
-      {
-        "item": "dijon mustard",
-        "optional": false
-      },
-      {
-        "item": "lemon juice, fresh",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "lemon zest, fine-grated",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "honey",
-        "slug": "honey",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, microplaned",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "fresh parsley, leaves picked and roughly chopped",
-        "slug": "parsley",
-        "optional": false
-      },
-      {
-        "item": "lemon, for wedges",
-        "slug": "lemon",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "high-heat-dry-roasting"
-    ],
-    "equipment": [
-      "heavy-rimmed-half-sheet-pan",
-      "metal-spatula",
-      "large-mixing-bowl",
-      "microplane"
-    ],
-    "added": "2026-05-13",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "skillet",
-      "totalMinutes": 60,
-      "diffLabel": "easy",
-      "timeLead": "1 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25,
-      "kcal": 410
-    }
-  },
-  {
-    "path": "pages/ingredients/chuck-eye-steak.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Chuck eye steak",
-    "desc": "A boneless steak cut from the 5th rib portion of the beef chuck, the same muscle (longissimus dorsi) that becomes ribeye one rib forward, with more connective tissue and intramuscular fat. The \"poor man's ribeye\": ribeye flavor at a quarter of the price, with a narrower doneness window.",
-    "tags": [
-      "beef"
-    ],
-    "status": "complete",
-    "_slug": "chuck-eye-steak",
-    "updated": "2026-05-13",
-    "added": "2026-05-13",
-    "_card": {
-      "swatchIndex": 9,
-      "swatchGlyph": "fire",
-      "primaryTag": "beef",
-      "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/fresh-thyme.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Fresh thyme",
-    "desc": "Thymus vulgaris. A perennial Mediterranean shrub-herb whose woody-stemmed sprigs carry the most heat-stable aromatic profile in the herb cabinet, thymol and carvacrol, the same phenols found in oregano, that survive long braises where soft herbs disintegrate.",
-    "tags": [
-      "herb",
-      "aromatic"
-    ],
-    "status": "complete",
-    "_slug": "fresh-thyme",
-    "updated": "2026-05-13",
-    "added": "2026-05-13",
-    "_card": {
-      "swatchIndex": 8,
-      "swatchGlyph": "leaf",
-      "primaryTag": "herb",
-      "usedInCount": 3,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/recipes/tianjin-jianbing-savory-mung-bean-crepe.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Tianjin jianbing guozi (Tianjin savory mung-bean crepe, 天津煎饼馃子)",
-    "desc": "A paper-thin mung-bean-and-millet crepe spread with a wooden T-bar on a hot round griddle, cracked with one egg and seeded with black and white sesame while the batter is still wet, flipped once, then painted with tianmianjiang (sweet bean sauce), fermented bean curd sauce, and a brushed-on roasted chili paste before a sheet of bao cui (thin shatter-crisp wheat cracker) is laid across the center and the whole disc is folded into a hand-held rectangle. The Tianjin canonical breakfast wrap; the entire dish is engineered around three textural commitments: the lacy-thin crepe edge, the wet-then-flash-cooked egg layer, and the bao cui that must stay glass-shatter under the sauce.",
-    "tags": [
-      "chinese",
-      "breakfast",
-      "weeknight",
-      "umami",
-      "fritter"
-    ],
-    "status": "complete",
-    "_slug": "tianjin-jianbing-savory-mung-bean-crepe",
-    "cuisine": "Chinese",
-    "course": "breakfast",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 10,
-      "total_min": 70,
-      "active_min": 35
-    },
-    "updated": "2026-05-12",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "mung bean flour (绿豆面)",
-        "optional": false
-      },
-      {
-        "item": "millet flour (小米面)",
-        "slug": "millet",
-        "optional": false
-      },
-      {
-        "item": "all-purpose wheat flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "five-spice powder",
-        "optional": false
-      },
-      {
-        "item": "cool water",
-        "optional": false
-      },
-      {
-        "item": "tianmianjiang (sweet bean sauce, 甜面酱)",
-        "optional": false
-      },
-      {
-        "item": "fermented red bean curd (红腐乳, hong furu)",
-        "optional": false
-      },
-      {
-        "item": "jianbing chili paste (chili oil with garlic and fermented broad bean)",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "white sesame seeds",
-        "slug": "sesame-seeds",
-        "optional": false
-      },
-      {
-        "item": "black sesame seeds",
-        "optional": false
-      },
-      {
-        "item": "scallions, finely chopped (greens and pale base)",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "cilantro, finely chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "bao cui (薄脆, thin fried wheat crackers, 1 sheet per crepe)",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (rice bran, grapeseed, or refined avocado)",
-        "slug": "neutral-oil",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "28-cm-flat-carbon-steel-or-non-stick-crepe-pan",
-      "t-bar-or-offset-spatula",
-      "small-pastry-brush",
-      "wide-fish-spatula",
-      "medium-mixing-bowl",
-      "whisk"
-    ],
-    "added": "2026-05-11",
-    "_card": {
-      "swatchIndex": 6,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 70,
-      "diffLabel": "medium",
-      "timeLead": "1 h 10 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 35,
-      "filterMinutes": 35,
-      "kcal": 190
     }
   }
 ]

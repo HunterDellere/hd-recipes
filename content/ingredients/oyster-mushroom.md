@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Oyster mushroom'
 desc: 'Pleurotus ostreatus and close relatives; a fan-shaped, gilled mushroom with a velvet-tender texture when fully cooked and a faintly anise-floral, shellfish-sweet umami. Soft and water-rich raw; transforms above ~70°C into a meaty, layered protein analog.'
 metaDesc: 'Oyster mushroom: Pleurotus ostreatus, cell-wall chitin, dry-sear technique, role as a meat extender and umami partner across Italian ragus, stir-fries, and braises.'
-tags: ['vegetable', 'umami']
+tags: ['umami']
 density_g_per_ml: 0.30
 updated: '2026-05-10'
 

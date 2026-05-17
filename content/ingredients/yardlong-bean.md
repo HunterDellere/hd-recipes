@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Yardlong bean (long bean)'
 desc: 'Long, thin, slightly tough green beans (Vigna unguiculata subsp. sesquipedalis), 30 to 60 cm long, in the cowpea family rather than the green-bean (Phaseolus vulgaris) family. Used across Southeast Asian, southern Chinese, Bangladeshi, and West African cooking where their dense walls and slightly nutty flavor hold up to high-heat stir-frying, pounding, and long-simmer braising.'
 metaDesc: 'Yardlong bean: cowpea family vs Phaseolus, role in Thai som tum and Sichuan dry-fried beans, dense cell-wall structure suiting high heat, sourcing at Asian markets.'
-tags: ['legume', 'vegetable']
+tags: []
 updated: '2026-05-10'
 
 about: |

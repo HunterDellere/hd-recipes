@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Vapor steaming (high-vapor wet-heat cookery)'
 desc: 'Cook food suspended above a hard rolling boil of water in a covered vessel, allowing 100 °C steam (with full vapor flux) to transfer heat without immersion or fat. The technique that preserves protein integrity, vegetable color, and dough structure across cuisines, with the temperature ceiling fixed at the boiling point of water.'
 metaDesc: 'Vapor steaming: the 100 °C ceiling, the bamboo-vs-metal steamer choice, condensation management, applications across whole fish, dim sum, custards, vegetables, and tamales.'
-tags: ['vegetable', 'fish', 'seafood']
+tags: ['fish', 'seafood']
 updated: '2026-05-10'
 
 about: |

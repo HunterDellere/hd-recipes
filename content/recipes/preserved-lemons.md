@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Preserved lemons'
 desc: 'Whole lemons salt-cured in their own juice, mellowed 4 weeks at room temperature to break down the bitter pith and develop a deep, floral, salt-and-citrus character. The rind is the use case; the flesh is generally discarded.'
 metaDesc: 'Moroccan preserved lemons (l''hamd markad): salt-cure, 4 to 6 week mellow, rind-only the use case. Pantry-stable for months. Lacto-fermented citrus condiment.'
-tags: ['fermentation', 'mediterranean', 'condiment', 'pantry', 'make-ahead', 'citrus', 'pickle']
+tags: ['fermentation', 'condiment', 'pantry', 'make-ahead', 'citrus', 'pickle']
 updated: '2026-05-17'
 
 servings: 30

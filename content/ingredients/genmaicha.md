@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Genmaicha'
 desc: 'Japanese green tea blended with roasted brown rice. The toasted rice contributes a warm, popcorn-like sweetness that mellows the tea’s vegetal edge into something nutty and gentle.'
-tags: ['tea', 'japanese']
+tags: []
 density_g_per_ml: 0.3
 imperial_pref: 'tsp'
 updated: '2026-05-16'

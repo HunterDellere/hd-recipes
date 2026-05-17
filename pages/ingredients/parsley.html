@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Flat-leaf parsley","status":"complete","tags":["herb","aromatic","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Flat-leaf parsley","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -91,7 +93,7 @@
     <div class="section-head"><h2>About</h2></div>
     <div class="scholar">
       <p>Flat-leaf parsley (also called Italian parsley, to distinguish from the curly-leaf supermarket-garnish form) is the leaf-and-stem herb of Petroselinum crispum var. neapolitanum, a biennial of the Apiaceae (<a class="x-link" data-category="ingredients" href="carrot.html">carrot</a> family). The aromatic profile is built on apiole (a phenylpropene with a fresh-green-medicinal note), myristicin (the same compound found in nutmeg, in lower concentration), and a complex of green-leaf volatiles (cis-3-hexenal, hexanol). The combination reads as fresh, slightly grassy, and faintly peppery; well-grown flat-leaf parsley is dramatically more aromatic than the curly-leaf form, which is functionally a garnish-only ingredient bred for visual rigidity over flavor.</p>
-<p>The structural-versus-finishing distinction. Most fresh herbs in Western cooking are used as finishing accents — a sprinkle of <a class="x-link" data-category="ingredients" href="basil.html">basil</a> over pasta, dill on salmon, cilantro on tacos. Parsley is one of the few herbs used as a structural ingredient, particularly in Levantine and Persian traditions: in tabbouleh (the parsley is the salad, with bulgur as the accent and tomato as the moisture); in gremolata (chopped parsley is half the dish by volume); in <a class="x-link" data-category="recipes" href="../recipes/chimichurri.html">chimichurri</a> (Argentine sauce, not Levantine, but the same logic ; parsley as bulk); in Persian sabzi khordan plates and ghormeh sabzi (parsley by the cup, not the tablespoon). The reason a Levantine or Persian recipe will call for &quot;1 large bunch parsley&quot; where an Italian recipe calls for &quot;2 tablespoons chopped parsley&quot; is structural ; the cuisines genuinely use different volumes.</p>
+<p>The structural-versus-finishing distinction. Most fresh herbs in Western cooking are used as finishing accents — a sprinkle of <a class="x-link" data-category="ingredients" href="basil.html">basil</a> over pasta, dill on salmon, cilantro on tacos. Parsley is one of the few herbs used as a structural ingredient, particularly in Levantine and Persian traditions: in tabbouleh (the parsley is the salad, with bulgur as the accent and tomato as the moisture); in gremolata (chopped parsley is half the dish by volume); in <a class="x-link" data-category="recipes" href="../recipes/chimichurri.html">chimichurri</a> (Argentine sauce, not Levantine, but the same logic ; parsley as bulk); in Persian sabzi khordan plates and <a class="x-link" data-category="recipes" href="../recipes/ghormeh-sabzi.html">ghormeh sabzi</a> (parsley by the cup, not the tablespoon). The reason a Levantine or Persian recipe will call for &quot;1 large bunch parsley&quot; where an Italian recipe calls for &quot;2 tablespoons chopped parsley&quot; is structural ; the cuisines genuinely use different volumes.</p>
 <p>The stem question. Parsley stems carry the bulk of the volatile aromatic compounds; the leaves carry the visual color and a fraction of the flavor. Tender stems (the upper, light-green portion attached to leaves) are flavor-positive and should be chopped along with the leaves; woody stems (the lower, dark-green to white portion) are stringy in the mouth and should be either discarded or saved for stock-pot use, where their flavor extracts without the texture problem. The shortcut: hold the bunch by the cut ends and run a knife or fingers down to the leaves; everything below the natural transition (where the stem becomes thicker and paler) goes to the stockpot, everything above goes to the salad.</p>
 <p>Curly-leaf vs flat-leaf. Curly parsley has been bred for ornamental rigidity ; it stands up on a plate, holds its shape under steam-table heat, and was the canonical American restaurant garnish for the better part of the twentieth century. The trade is flavor: curly parsley is dramatically less aromatic than flat-leaf, with a tougher, more fibrous texture. For any application where the parsley is an ingredient (tabbouleh, gremolata, chimichurri, salsa verde, soups, stocks), use flat-leaf. Reserve curly parsley for cooks specifically wanting the visual.</p>
 <p>Applications by category. Levantine and Persian structural use: tabbouleh (parsley is 60 to 70 percent of the salad by volume), fattoush (a structural herb alongside <a class="x-link" data-category="ingredients" href="mint.html">mint</a>), kibbeh (in the wheat-and-meat shell), Persian ghormeh sabzi (cup quantities of mixed parsley-cilantro-fenugreek-scallion), kuku sabzi (Persian herb omelet, parsley-dominant). Italian and Spanish: gremolata (parsley + <a class="x-link" data-category="ingredients" href="lemon.html">lemon</a> zest + <a class="x-link" data-category="ingredients" href="garlic.html">garlic</a> over osso buco), salsa verde (parsley + <a class="x-link" data-category="ingredients" href="capers.html">capers</a> + anchovy + olive oil), tabule-adjacent grain salads. French: bouquet garni (stem-on parsley tied with thyme and bay for stocks), persillade (parsley + garlic, the simplest French finish for vegetables), persillé sauces. Argentine: chimichurri (parsley + oregano + garlic + vinegar + chili). North American: as a finishing herb, in soups, and as a parsley-pesto variant.</p>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">flat-leaf parsley (in Levantine and Italian structural dishes ; tabbouleh, gremolata, salsa verde)</span>
-          <span class="sub-card-use">cilantro, with a known soap-taster check first</span>
-          <p class="sub-card-note">Cilantro is structurally similar (leafy aromatic herb used by the bunch) and the dish becomes recognizably its Mexican or South Asian cousin. Not interchangeable in tabbouleh ; the parsley character is canonical ; but legitimate in gremolata-adjacent applications.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">flat-leaf parsley (when only curly-leaf is available)</span>
-          <span class="sub-card-use">curly-leaf parsley, finely chopped</span>
-          <p class="sub-card-note">Curly parsley works in any application where the parsley will be chopped fine and the texture is hidden in dressing or sauce. The flavor is muted; consider increasing the volume by 25 percent. Not recommended for tabbouleh where the leaf shape is part of the dish.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">flat-leaf parsley (in soups and stocks, for the stem-and-leaf flavor extraction)</span>
-          <span class="sub-card-use">celery leaves</span>
-          <p class="sub-card-note">Celery leaves carry an apiole-and-myristicin profile related to parsley's (both Apiaceae) and read similarly in long-cooked stocks. Less convincing in raw salads.</p>
-        </li>
+        <li><strong>flat-leaf parsley (in Levantine and Italian structural dishes ; tabbouleh, gremolata, salsa verde)</strong> → cilantro, with a known soap-taster check first <span class="sub-note">Cilantro is structurally similar (leafy aromatic herb used by the bunch) and the dish becomes recognizably its Mexican or South Asian cousin. Not interchangeable in tabbouleh ; the parsley character is canonical ; but legitimate in gremolata-adjacent applications.</span></li>
+        <li><strong>flat-leaf parsley (when only curly-leaf is available)</strong> → curly-leaf parsley, finely chopped <span class="sub-note">Curly parsley works in any application where the parsley will be chopped fine and the texture is hidden in dressing or sauce. The flavor is muted; consider increasing the volume by 25 percent. Not recommended for tabbouleh where the leaf shape is part of the dish.</span></li>
+        <li><strong>flat-leaf parsley (in soups and stocks, for the stem-and-leaf flavor extraction)</strong> → celery leaves <span class="sub-note">Celery leaves carry an apiole-and-myristicin profile related to parsley's (both Apiaceae) and read similarly in long-cooked stocks. Less convincing in raw salads.</span></li>
     </ul>
 
     
@@ -134,8 +124,32 @@
           <span class="rl-card-title">Air-fried okra with four flavor finishes</span>
           
         </a>
+        <a class="rl-card" href="../recipes/avgolemono-soup.html" data-category="recipes">
+          <span class="rl-card-title">Avgolemono soup</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/baba-ganoush.html" data-category="recipes">
+          <span class="rl-card-title">Baba ganoush</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/beef-bourguignon.html" data-category="recipes">
+          <span class="rl-card-title">Beef bourguignon</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/bouillabaisse-marseillaise.html" data-category="recipes">
           <span class="rl-card-title">Bouillabaisse Marseillaise</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-and-andouille-gumbo.html" data-category="recipes">
+          <span class="rl-card-title">Chicken and andouille gumbo</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-shawarma.html" data-category="recipes">
+          <span class="rl-card-title">Chicken shawarma</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-tagine-with-preserved-lemon-and-olives.html" data-category="recipes">
+          <span class="rl-card-title">Chicken tagine with preserved lemon and olives</span>
           
         </a>
         <a class="rl-card" href="../recipes/chicken-zucchini-meatballs-with-yogurt-dill.html" data-category="recipes">
@@ -150,6 +164,18 @@
           <span class="rl-card-title">Cioppino (San Francisco Italian-American seafood stew)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/hummus-classic.html" data-category="recipes">
+          <span class="rl-card-title">Classic hummus</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/coq-au-vin.html" data-category="recipes">
+          <span class="rl-card-title">Coq au vin</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/creole-jambalaya.html" data-category="recipes">
+          <span class="rl-card-title">Creole jambalaya (red, with tomato)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/fattoush-with-sumac-and-toasted-pita.html" data-category="recipes">
           <span class="rl-card-title">Fattoush with sumac and toasted pita</span>
           
@@ -158,8 +184,24 @@
           <span class="rl-card-title">German warm potato salad with bacon and mustard</span>
           
         </a>
+        <a class="rl-card" href="../recipes/ghormeh-sabzi.html" data-category="recipes">
+          <span class="rl-card-title">Ghormeh sabzi</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/golabki.html" data-category="recipes">
+          <span class="rl-card-title">Gołąbki (Polish stuffed cabbage rolls)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/green-goddess-grain-salad.html" data-category="recipes">
           <span class="rl-card-title">Green goddess grain salad</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/haitian-griot.html" data-category="recipes">
+          <span class="rl-card-title">Haitian griot</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/harira.html" data-category="recipes">
+          <span class="rl-card-title">Harira</span>
           
         </a>
         <a class="rl-card" href="../recipes/italian-salsa-verde.html" data-category="recipes">
@@ -170,12 +212,32 @@
           <span class="rl-card-title">Italian-American pork meatballs in tomato</span>
           
         </a>
+        <a class="rl-card" href="../recipes/lahmacun.html" data-category="recipes">
+          <span class="rl-card-title">Lahmacun</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/mediterranean-grain-bowl-with-tahini-yogurt.html" data-category="recipes">
           <span class="rl-card-title">Mediterranean grain bowl with tahini-yogurt</span>
           
         </a>
+        <a class="rl-card" href="../recipes/menemen.html" data-category="recipes">
+          <span class="rl-card-title">Menemen</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/omurice.html" data-category="recipes">
           <span class="rl-card-title">Omurice</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/papa-a-la-huancaina.html" data-category="recipes">
+          <span class="rl-card-title">Papa a la huancaína</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/red-beans-and-rice.html" data-category="recipes">
+          <span class="rl-card-title">Red beans and rice (Monday red beans)</span>
           
         </a>
         <a class="rl-card" href="../recipes/roasted-cauliflower-tahini-salad-with-pomegranate.html" data-category="recipes">
@@ -194,8 +256,16 @@
           <span class="rl-card-title">Sheet-pan roasted shallots, cauliflower, and sweet potato with lemon-dijon yogurt</span>
           
         </a>
+        <a class="rl-card" href="../recipes/shrimp-and-grits.html" data-category="recipes">
+          <span class="rl-card-title">Shrimp and grits (Lowcountry)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/spaghetti-with-beef-oyster-mushroom-shallot-ragu.html" data-category="recipes">
           <span class="rl-card-title">Spaghetti with beef, oyster mushroom, and shallot ragu</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/spanakopita.html" data-category="recipes">
+          <span class="rl-card-title">Spanakopita</span>
           
         </a>
         <a class="rl-card" href="../recipes/zhoug.html" data-category="recipes">
@@ -214,37 +284,37 @@
           <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="cilantro.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cilantro (coriander leaves)</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="fresh-thyme.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fresh thyme</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="mint.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mint</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="mexican-oregano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mexican oregano</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="bay-leaf.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Bay leaf (tej patta, तेज पत्ता)</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="chives.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Chives</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="dried-oregano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Dried oregano (Mediterranean)</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Avocado</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="curry-leaf.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Curry leaf</span>
-          <span class="rl-card-why">herb · aromatic</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>

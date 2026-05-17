@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ube halaya latte with toasted coconut'
 desc: 'Filipino-leaning espresso drink: an 18 g double shot pulled into whole milk warmed with coconut cream and coconut sugar, topped with a soft-peak ube halaya chiffon and a shower of toasted desiccated coconut.'
 metaDesc: 'Ube halaya latte: 18 g espresso shot, whole milk warmed with coconut cream and coconut sugar, soft-peak ube halaya cream, toasted desiccated coconut. Filipino-American café drink with the chemistry called out.'
-tags: ['drink', 'filipino', 'dairy', 'breakfast']
+tags: []
 updated: '2026-05-11'
 
 servings: 1

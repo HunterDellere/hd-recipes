@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Masala chai (proper Indian milk-spice tea)'
 desc: 'Black tea boiled with milk, fresh ginger, and toasted whole spices in the correct order so each phase extracts what it should. The opposite of a teabag in flavored hot milk, this is built from the pot up.'
 metaDesc: 'Authentic masala chai recipe, toasted whole spices, decoction method with milk and Assam tea, the staged boil that produces real Indian chai at home.'
-tags: ['drink', 'tea', 'chai', 'indian', 'milk-tea', 'aromatic']
+tags: ['chai', 'milk-tea']
 updated: '2026-05-16'
 
 servings: 2

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tzatziki'
 desc: 'The Greek garlic-cucumber-yogurt dip and sauce: thick strained yogurt, salted-and-drained grated cucumber, raw garlic pounded with salt, olive oil, lemon, and fresh dill. Cool, structural, and the universal pairing for grilled lamb and chicken, gyro and souvlaki, kebabs, fried vegetables, raw vegetable platters, and grilled flatbread. Built in 15 minutes with one structural patience step (the cucumber salt-drain).'
 metaDesc: 'Tzatziki: the Greek garlic-cucumber-yogurt dip (strained yogurt, salted cucumber, garlic, olive oil, lemon, dill). The cool dip and sauce for grilled lamb, gyro, kebabs, fried vegetables, and flatbread.'
-tags: ['sauce', 'dip', 'greek', 'mediterranean', 'no-cook', 'quick', 'pantry', 'make-ahead', 'dairy']
+tags: ['no-cook', 'quick', 'pantry', 'make-ahead']
 updated: '2026-05-15'
 
 servings: 8

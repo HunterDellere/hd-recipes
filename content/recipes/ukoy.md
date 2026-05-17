@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Ukoy'
 desc: 'Filipino shrimp and vegetable fritters: a thin rice-flour batter wrapped around mung bean sprouts, sweet potato, and carrot matchsticks with a single shrimp pressed into each disc, deep-fried to a glassy shatter and served with a sharp garlic-chili-cane-vinegar dip.'
 metaDesc: 'Ukoy: Filipino shrimp and vegetable fritters built on rice-flour batter for shatter-crisp shells. The thermal targets and dipping-sauce ratios that separate ukoy from a generic shrimp fritter.'
-tags: ['filipino', 'fritter', 'fried', 'snack', 'seafood', 'vegetable']
+tags: ['fried', 'seafood']
 updated: '2026-05-09'
 
 servings: 4

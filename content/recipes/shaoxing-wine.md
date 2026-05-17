@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Shaoxing wine (绍兴酒)'
 desc: 'Glutinous rice and wheat fermented with qu starter for 6 to 12 months, producing the amber rice wine that anchors most Chinese cooking. Stub.'
 metaDesc: 'Homemade Shaoxing wine: glutinous-rice-and-qu fermentation, the canonical Chinese cooking and drinking wine, 6 to 12 month age. Stub recipe.'
-tags: ['fermentation', 'pantry', 'chinese', 'weekend-project']
+tags: ['fermentation', 'pantry', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 24

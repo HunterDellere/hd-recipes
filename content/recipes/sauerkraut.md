@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sauerkraut'
 desc: 'Shredded green cabbage salted at 2 to 2.5%, pounded until the cell walls release enough water to form a self-brine, weighted under the brine, and lacto-fermented 1 to 3 weeks at room temperature for a fizzy, deeply sour cabbage ferment.'
 metaDesc: 'Sauerkraut from scratch: 2.5% salt, dry-pound technique for self-brine, 1 to 3 week ferment, mason jar with airlock or weighted open crock methods. Lacto-fermentation basics.'
-tags: ['fermentation', 'german', 'pickle', 'side', 'make-ahead', 'brassica', 'vegan', 'pantry']
+tags: ['fermentation', 'pickle', 'make-ahead', 'vegan', 'pantry']
 updated: '2026-05-17'
 
 servings: 20

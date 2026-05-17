@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chinese sesame paste (芝麻酱)'
 desc: 'Heavily toasted sesame seeds ground to a paste. Darker, deeper, and more bitter than tahini; the toast is the entire reason it exists as a separate ingredient.'
 metaDesc: 'Chinese sesame paste (zhima jiang): toasted-seed paste. The chemistry of why toast changes the flavor, the role across noodles, sauces, and hot pot, and how to substitute tahini correctly.'
-tags: ['umami', 'chinese']
+tags: ['umami']
 density_g_per_ml: 1.1
 imperial_pref: 'tbsp'
 updated: '2026-04-29'

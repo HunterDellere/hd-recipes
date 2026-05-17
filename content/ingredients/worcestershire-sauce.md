@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Worcestershire sauce'
 desc: 'A long-fermented English condiment of malt vinegar, anchovy, tamarind, molasses, garlic, onion, and spices, aged 6 to 18 months. Deep glutamate-and-acid umami; the secret weapon of Caesar dressing, bloody Marys, marinades, and pan sauces.'
 metaDesc: 'Worcestershire sauce: the Lea & Perrins anchovy-tamarind-malt-vinegar fermentation, the role in Caesar dressing and pan sauces, vegetarian alternatives, and what separates the original from imitators.'
-tags: ['acid', 'umami', 'fermentation', 'pantry']
+tags: ['umami', 'fermentation', 'pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.1

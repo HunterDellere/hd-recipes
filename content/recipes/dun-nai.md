@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Vanilla dun nai (steamed milk custard)'
 desc: 'Cantonese steamed milk custard with vanilla bean — silken, barely set, and finished in a Dutch oven using residual heat to avoid honeycomb.'
 metaDesc: 'Steamed milk custard (dun nai) with vanilla bean paste, finished in a Dutch oven steam chamber for a mirror-smooth surface.'
-tags: ['custard', 'dessert', 'chinese', 'dairy']
+tags: ['custard']
 updated: '2026-04-26'
 
 servings: 2

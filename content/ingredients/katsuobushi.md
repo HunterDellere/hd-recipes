@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Katsuobushi (dried bonito flakes)'
 desc: 'Skipjack tuna fillets boiled, smoke-dried, sun-cured, and inoculated with Aspergillus glaucus over months until they harden into wood-like blocks. Shaved into translucent pink flakes that are the inosinate half of the dashi umami stack.'
 metaDesc: 'Katsuobushi: smoke-fermented skipjack tuna shaved into bonito flakes ,  the inosinate-rich partner to kombu in dashi, with quality grades from arabushi to honkarebushi.'
-tags: ['umami', 'japanese', 'fish', 'pantry']
+tags: ['umami', 'fish', 'pantry']
 updated: '2026-05-09'
 
 about: |

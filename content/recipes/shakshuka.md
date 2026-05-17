@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Shakshuka'
 desc: 'The North African and Levantine one-pan dinner: eggs poached directly into a spiced tomato-pepper sauce, cumin and caraway and paprika built into a sofrito of charred bell pepper and onion, finished with crumbled feta and fresh herbs and served in the pan with grilled bread for sopping. Structurally a tomato-poach where the egg whites set into the sauce and the yolks stay liquid until broken at the table. The defining shared dish of Tunisian, Israeli, and broader eastern Mediterranean breakfast and dinner cookery.'
 metaDesc: 'Shakshuka: eggs poached in a spiced tomato-pepper sauce with cumin, caraway, paprika, feta, and fresh herbs. The one-pan North African and Levantine breakfast and dinner with eggs as the main ingredient.'
-tags: ['italian', 'mediterranean', 'levantine', 'egg', 'one-pot', 'weeknight', 'umami', 'spice', 'breakfast']
+tags: ['egg', 'one-pot', 'weeknight', 'umami']
 updated: '2026-05-15'
 
 servings: 2

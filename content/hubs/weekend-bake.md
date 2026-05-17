@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Weekend bake'
 desc: 'Bakes that reward weekend time: brown butter, properly creamed butter and sugar, cocoa bloomed before it hits the batter.'
 metaDesc: 'Weekend bake: a curated reading path through foundational baking technique — brown butter, cocoa bloom, creaming method — ordered easiest to hardest.'
-tags: ['cookies', 'cake', 'dessert', 'breakfast']
+tags: ['cookies', 'cake']
 updated: '2026-04-26'
 
 members:

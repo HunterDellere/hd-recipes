@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Purslane'
 desc: 'Portulaca oleracea. A succulent leafy summer green with a faintly lemony, slightly mucilaginous bite — eaten across the Mediterranean, the Levant, Mexico, and Central Asia, dismissed as a weed across most of North America.'
 metaDesc: 'Purslane: the omega-3 rich succulent green, oxalic acid and the slight sour bite, applications from fattoush to verdolagas, identification, and storage.'
-tags: ['herb', 'vegetable', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 0.30

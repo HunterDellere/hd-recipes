@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Gorgonzola'
 desc: 'Italian blue cheese from Lombardy and Piedmont, made with cow''s milk inoculated with Penicillium roqueforti. Sold as dolce (creamy, mild, young) and piccante (firm, sharp, aged); the two are functionally different ingredients.'
 metaDesc: 'Gorgonzola: dolce vs piccante grades, Penicillium roqueforti chemistry, melting vs crumbling behavior, pear pairing, role in pasta and tartines.'
-tags: ['dairy', 'fermentation', 'umami', 'fat']
+tags: ['fermentation', 'umami']
 density_g_per_ml: 1.05
 updated: '2026-05-09'
 

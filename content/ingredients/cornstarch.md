@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cornstarch'
 desc: 'Pure starch extracted from the corn (maize) endosperm. Used as a thickener for sauces and gravies, a coating for fried foods (the Chinese-restaurant velvet crust), and a tenderizer in marinades that protects protein surfaces from over-coagulation. A high-amylopectin starch that produces a glossy, translucent gel.'
 metaDesc: 'Cornstarch: amylopectin chemistry, gelatinization temperature, role as Chinese frying coating, sauce thickener, and tenderizing marinade element.'
-tags: ['pantry', 'thickener']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-15'
 

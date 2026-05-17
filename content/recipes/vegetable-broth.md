@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Vegetable broth'
 desc: 'Kombu, dried shiitake, onion, carrot, celery, leek, and a tomato simmered briefly into a clean, deeply umami-rich vegetable broth. The east-meets-west default, with modifications for purely Western mirepoix and Japanese kombu-shiitake dashi.'
 metaDesc: 'Vegetable broth recipe: kombu and dried shiitake plus mirepoix for umami-driven plant-based stock. Modifications cover Western mirepoix-only and Japanese dashi.'
-tags: ['pantry', 'sauce', 'umami', 'make-ahead', 'freezer-friendly', 'vegetable']
+tags: ['pantry', 'umami', 'make-ahead', 'freezer-friendly']
 updated: '2026-05-09'
 
 servings: 8

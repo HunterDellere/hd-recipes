@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Urfa biber'
 desc: 'Turkish dried red chili from the Urfa (Şanlıurfa) region, sun-cured by day and cloth-wrapped by night. Distinctive dark-burgundy color, raisin-cocoa-tobacco aromatics, and a slow, low-heat finish.'
 metaDesc: 'Urfa biber (Urfa pepper): the cloth-wrapping cure that builds the raisin-and-cocoa profile, capsaicin level versus Aleppo, and the salting that distinguishes finished pul biber from kırmızı pul biber.'
-tags: ['spice', 'levantine']
+tags: []
 updated: '2026-05-10'
 
 density_g_per_ml: 0.5

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Red wine vinegar'
 desc: 'Acetic-acid solution (5 to 7 percent) produced by acetobacter fermentation of red wine. The default Mediterranean vinaigrette acid, with structural notes from the underlying wine.'
 metaDesc: 'Red wine vinegar: acetobacter fermentation, residual tannin and color compounds from the source wine, vinaigrette emulsion role, and how mass-produced vs barrel-aged differ.'
-tags: ['acid', 'mediterranean', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.01

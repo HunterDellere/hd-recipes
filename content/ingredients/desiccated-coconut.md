@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Desiccated coconut (unsweetened)'
 desc: 'The dried, grated flesh of mature coconut (Cocos nucifera), with the water removed but the fat largely intact. Available in fine, medium, and shredded forms. Higher fat content (roughly 65 percent, predominantly lauric acid and myristic acid saturated fats) than fresh grated coconut but structurally similar in cooking applications. The pantry form used in South Asian spice pastes, Goan xacuti masala, Southeast Asian kaya, and Central American and Caribbean coconut sweets.'
 metaDesc: 'Desiccated coconut: the dried grated coconut flesh, fat composition (lauric and myristic acid dominant), toasting behavior, applications in Goan xacuti spice paste, South Indian coconut chutneys, and European confectionery, plus the difference from sweetened shredded coconut.'
-tags: ['fat', 'aromatic', 'spice']
+tags: []
 density_g_per_ml: 0.35
 updated: '2026-05-10'
 

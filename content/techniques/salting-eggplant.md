@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Salting eggplant'
 desc: 'Cover cut eggplant with salt at 1 to 1.5% by weight, let stand 30 to 45 minutes, blot dry. Pulls water out of the cell network so the eggplant fries with 30 to 40% less oil absorption. Optional and cultivar-dependent.'
 metaDesc: 'Salting eggplant: how it works, when it earns the time (globe and Italian for shallow-fry), when to skip (Japanese, Chinese, dry-frying preparations).'
-tags: ['vegetable']
+tags: []
 updated: '2026-05-09'
 
 about: |

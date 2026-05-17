@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Mint","status":"complete","tags":["herb","aromatic"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Mint","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,31 +109,27 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">mint (fresh, finishing herb in Mediterranean or Levantine application)</span>
-          <span class="sub-card-use">fresh <a class="x-link" data-category="ingredients" href="basil.html">basil</a> + a small pinch of dried mint</span>
-          <p class="sub-card-note">Basil shares the bright herbal volatility, the dried mint hints at the missing carvone. Imperfect; mint's specific cooling-vegetal note is not replaceable. Use when no fresh mint is available and the dish is forgiving.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">mint (fresh, in Vietnamese or Thai herb-bouquet application)</span>
-          <span class="sub-card-use">fresh Thai basil or fresh shiso/perilla</span>
-          <p class="sub-card-note">Both bring an aromatic herb to the bouquet. Thai basil is the closest substitute (anise-licorice notes); shiso is a different aromatic profile (more tea-like, slightly cumin-adjacent) but legitimate as the fresh-herb element. Both are common in the same Asian markets where Thai basil and mint are sold.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">mint (dried, in Greek or Levantine cooked application)</span>
-          <span class="sub-card-use">dried oregano + small pinch of dried thyme</span>
-          <p class="sub-card-note">Different flavor entirely; the substitution is for the dried-savory-herb function rather than the mint character specifically. Acceptable in tomato-based sauces and meat marinades; wrong for yogurt-based sauces where mint's specific cool note is the point.</p>
-        </li>
+        <li><strong>mint (fresh, finishing herb in Mediterranean or Levantine application)</strong> → fresh <a class="x-link" data-category="ingredients" href="basil.html">basil</a> + a small pinch of dried mint <span class="sub-note">Basil shares the bright herbal volatility, the dried mint hints at the missing carvone. Imperfect; mint's specific cooling-vegetal note is not replaceable. Use when no fresh mint is available and the dish is forgiving.</span></li>
+        <li><strong>mint (fresh, in Vietnamese or Thai herb-bouquet application)</strong> → fresh <a class="x-link" data-category="ingredients" href="thai-basil.html">Thai basil</a> or fresh shiso/perilla <span class="sub-note">Both bring an aromatic herb to the bouquet. Thai basil is the closest substitute (anise-licorice notes); shiso is a different aromatic profile (more tea-like, slightly cumin-adjacent) but legitimate as the fresh-herb element. Both are common in the same Asian markets where Thai basil and mint are sold.</span></li>
+        <li><strong>mint (dried, in Greek or Levantine cooked application)</strong> → dried oregano + small pinch of dried thyme <span class="sub-note">Different flavor entirely; the substitution is for the dried-savory-herb function rather than the mint character specifically. Acceptable in tomato-based sauces and meat marinades; wrong for yogurt-based sauces where mint's specific cool note is the point.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/baba-ganoush.html" data-category="recipes">
+          <span class="rl-card-title">Baba ganoush</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/fattoush-with-sumac-and-toasted-pita.html" data-category="recipes">
           <span class="rl-card-title">Fattoush with sumac and toasted pita</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.html" data-category="recipes">
+          <span class="rl-card-title">Goi cuon (Vietnamese fresh rolls with shrimp and pork)</span>
           
         </a>
         <a class="rl-card" href="../recipes/kachumber-with-cumin-lime.html" data-category="recipes">
@@ -140,6 +138,10 @@
         </a>
         <a class="rl-card" href="../recipes/larb-gai-thai-minced-chicken-salad.html" data-category="recipes">
           <span class="rl-card-title">Larb gai (Thai-Lao minced chicken salad)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/mast-o-khiar.html" data-category="recipes">
+          <span class="rl-card-title">Mast-o-khiar</span>
           
         </a>
         <a class="rl-card" href="../recipes/roasted-beet-and-citrus-salad-with-whipped-feta.html" data-category="recipes">
@@ -155,52 +157,7 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">8</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="fresh-thyme.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fresh thyme</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="cilantro.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cilantro (coriander leaves)</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="parsley.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Flat-leaf parsley</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="chives.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Chives</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="dried-oregano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Dried oregano (Mediterranean)</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="curry-leaf.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Curry leaf</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="culantro.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Culantro (ngò gai, sawtooth herb)</span>
-          <span class="rl-card-why">herb</span>
-        </a>
-        <a class="rl-card" href="rau-ngo.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Rau ngổ (rice paddy herb)</span>
-          <span class="rl-card-why">herb</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="millet.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="millet.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Millet (pearl millet, foxtail millet, finger millet)</span>
     </a><a class="adj-nav-link" href="mirin.html">

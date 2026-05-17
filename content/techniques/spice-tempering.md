@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Spice tempering (tadka / tarka)'
 desc: 'The South Asian technique of blooming whole spices (mustard seeds, cumin seeds, curry leaves, dried chilies, asafoetida) in very hot fat (ghee, oil, or coconut oil) for 15 to 45 seconds to activate and extract their volatile aromatics, then using that spiced fat as a cooking base or pouring it over a finished dish. The foundational technique of South Asian cooking, present from North Indian dal to South Indian sambar to Goan fish curry.'
 metaDesc: 'Spice tempering (tadka, tarka, chaunk, bagar): the mechanism, the fat temperature, the order of addition, applications from dal to Goan fish curry to South Indian rasam, and the failure modes that produce flat or burnt results.'
-tags: ['spice', 'aromatic', 'indian']
+tags: []
 updated: '2026-05-10'
 
 about: |

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pepitas (raw hulled pumpkin seeds)'
 desc: 'Hulled green seeds of the pumpkin (Cucurbita pepo) and related squash, with the hard white outer hull removed. Rich in unsaturated fat (~50%), protein (~30%), and a distinctive pumpkin-seed-oil aromatic dominated by pyrazines that develop on toasting. The structural Mexican garnish-and-pipián seed.'
 metaDesc: 'Pepitas: pumpkin seed chemistry, hulled vs unhulled, toasting technique, dishes across Mexican (pipián, mole verde) and modern uses, sourcing.'
-tags: ['nuts', 'pantry', 'mexican']
+tags: ['pantry']
 density_g_per_ml: 0.55
 imperial_pref: 'cup'
 updated: '2026-05-10'

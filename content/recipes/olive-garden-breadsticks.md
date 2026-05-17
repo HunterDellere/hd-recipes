@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Olive Garden breadsticks (the copycat)'
 desc: 'Lightly enriched yeast dough with bread flour, butter, milk, and a small dose of sugar, shaped into 18 cm batons, proofed to pillow-soft, baked, then brushed with garlic butter and dusted with seasoned salt. The chain-restaurant breadstick reverse-engineered to the kitchen-correct version.'
 metaDesc: 'Olive Garden breadsticks copycat: enriched-dough chemistry, the garlic butter brush, and the salt blend that makes the chain breadstick taste like the chain breadstick.'
-tags: ['italian', 'bread', 'side', 'comfort']
+tags: ['bread', 'comfort']
 updated: '2026-05-09'
 
 servings: 12

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Walnuts","status":"complete","tags":["pantry","fat"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Walnuts","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -93,7 +95,7 @@
       <p>Walnuts are the seed of Juglans species, sold as halves or pieces in shells or shelled. English walnut (Juglans regia) is the standard supermarket walnut, with a thin shell and mild, slightly tannic flesh. Black walnut (Juglans nigra) is native to North America, with a thick rugged shell, a stronger, more aggressive flavor, and a much shorter season; black walnuts are a specialty ingredient in American Southern baking and not interchangeable with English walnuts in most recipes. Default to English unless a recipe specifies black.</p>
 <p>Composition and the rancidity problem. Walnuts are about 65% fat, with an unusually high proportion of polyunsaturated fats (omega-3 alpha-linolenic acid in particular) compared to other nuts. The high polyunsaturated content makes walnuts the most rancidity-prone of all common nuts: they oxidize quickly at room temperature, develop bitter and stale flavors that read as &quot;tastes like an old walnut,&quot; and are essentially ruined by the time most cooks notice. Buying small quantities, storing in the freezer, and tasting before use is the entire technique of walnut sourcing. A bright, buttery walnut and a stale, bitter walnut are functionally different ingredients.</p>
 <p>Toasting. Toasting walnuts at 175°C / 350°F for 6 to 8 minutes (or in a dry skillet over medium heat for 4 to 5 minutes, stirring) develops their flavor dramatically: the slight bitterness recedes, sweetness comes forward, and the nuts smell distinctly roasted. Almost every preparation that uses walnuts benefits from toasting first; raw walnuts in baked goods are acceptable because the bake itself toasts them, but raw walnuts in salads, pasta, or cheese plates read flat. The cue is smell, fresh-toasted walnuts smell sweetly nutty and buttery; over-toasted walnuts smell acrid and burnt, and the flavor is lost.</p>
-<p>Cooking behavior. Whole halves: cheeseboards, salads, baked-goods topping. Coarsely chopped: pasta with <a class="x-link" data-category="ingredients" href="gorgonzola.html">gorgonzola</a>, salads, pesto Trapanese (Sicilian), Persian fesenjan (walnut-pomegranate stew). Finely chopped or ground: tarator and muhammara (Levantine sauces and dips), Greek baklava, Persian rice pilafs. Walnut paste (toasted walnuts ground with oil): the base of muhammara, of some Italian pesto-style sauces, and of the Turkish/Levantine tarator yogurt sauce. The walnut's high oil content means even short grinding produces a paste; this is the basis of muhammara's velvety texture.</p>
+<p>Cooking behavior. Whole halves: cheeseboards, salads, baked-goods topping. Coarsely chopped: pasta with <a class="x-link" data-category="ingredients" href="gorgonzola.html">gorgonzola</a>, salads, pesto Trapanese (Sicilian), Persian <a class="x-link" data-category="recipes" href="../recipes/fesenjan.html">fesenjan</a> (walnut-pomegranate stew). Finely chopped or ground: tarator and muhammara (Levantine sauces and dips), Greek baklava, Persian rice pilafs. Walnut paste (toasted walnuts ground with oil): the base of muhammara, of some Italian pesto-style sauces, and of the Turkish/Levantine tarator yogurt sauce. The walnut's high oil content means even short grinding produces a paste; this is the basis of muhammara's velvety texture.</p>
 <p>Pairings. Cheese: gorgonzola, brie, blue cheese family, aged cheddar, the high fat and slight tannin of walnuts complement aged dairy. Fruit: <a class="x-link" data-category="ingredients" href="pear.html">pear</a> (the canonical pairing in Italian cooking), apple, fig, persimmon, pomegranate. Greens: arugula, radicchio, endive (the bitter-edge greens that walnuts cut). <a class="x-link" data-category="ingredients" href="honey.html">Honey</a>: especially in Greek and Levantine baking, where toasted walnuts and honey form the foundational filling for baklava and walnut-honey cake. Coffee and chocolate: brownies, banana-bread-with-walnuts, walnut-and-coffee tortes. The pairing reach is wide.</p>
 <p>Cross-cuisine reach. Italian: walnut sauce for pasta (salsa di noci, Ligurian), walnut pesto, walnut-ricotta filling for ravioli, gorgonzola-and-walnut combinations across northern Italy. French: walnut bread, walnut-and-roquefort salads, Périgord walnut tarts. Persian/Iranian: fesenjan (chicken or duck stew with walnut and pomegranate), walnut-stuffed eggplant. Turkish/Levantine: muhammara (walnut-and-roasted-pepper dip), tarator (walnut-yogurt sauce), walnut-stuffed dolma. American: walnut brownies, walnut-and-<a class="x-link" data-category="recipes" href="../recipes/banana-bread.html">banana bread</a>, Southern black-walnut pies. Korean: walnut-stuffed pastries (hodu gwaja). The walnut's role spans appetizer, main, and dessert across the cuisine map.</p>
 <p>Buying notes. Look for walnut halves or pieces that are pale tan or golden (deep brown means oxidized), without visible mold or shriveling. The package should smell sweetly nutty when opened; a stale or bitter smell means the walnuts are past prime regardless of the date on the bag. Buy from sources with high turnover, supermarket bulk bins are usually too slow and the walnuts in them are often rancid. The best North American sources are the harvest-time fall harvest from California; walnuts bought between October and January are at peak quality and decline through the year. Once rancid, walnuts cannot be rescued; replace the supply.</p>
@@ -108,34 +110,26 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">walnuts (cheeseboards, salads, pasta)</span>
-          <span class="sub-card-use">pecans</span>
-          <p class="sub-card-note">Closest functional substitute. Pecans are sweeter, less tannic, with similar fat content and toasting behavior. The dish reads slightly sweeter and more American-leaning.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">walnuts (Italian salsa di noci, walnut pesto)</span>
-          <span class="sub-card-use">pine nuts + a pinch of additional bitter element</span>
-          <p class="sub-card-note">Pine nuts are sweeter and less tannic than walnuts; the sauce reads thinner and less complex. Acceptable substitute when walnuts are unavailable; add a small pinch of dandelion or arugula leaves to recover some bitter edge.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">walnuts (Levantine muhammara, Persian fesenjan)</span>
-          <span class="sub-card-use">no good substitute</span>
-          <p class="sub-card-note">These dishes are walnut-driven; substituting another nut produces a different dish. Skip the recipe rather than substitute.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">walnuts (allergen-free baking)</span>
-          <span class="sub-card-use">sunflower seeds, toasted</span>
-          <p class="sub-card-note">Different texture, similar role as crunchy fat-and-flavor in a baked good. The bake will read greener and less rich; acceptable in nut-allergy households.</p>
-        </li>
+        <li><strong>walnuts (cheeseboards, salads, pasta)</strong> → pecans <span class="sub-note">Closest functional substitute. Pecans are sweeter, less tannic, with similar fat content and toasting behavior. The dish reads slightly sweeter and more American-leaning.</span></li>
+        <li><strong>walnuts (Italian salsa di noci, walnut pesto)</strong> → pine nuts + a pinch of additional bitter element <span class="sub-note">Pine nuts are sweeter and less tannic than walnuts; the sauce reads thinner and less complex. Acceptable substitute when walnuts are unavailable; add a small pinch of dandelion or arugula leaves to recover some bitter edge.</span></li>
+        <li><strong>walnuts (Levantine muhammara, Persian fesenjan)</strong> → no good substitute <span class="sub-note">These dishes are walnut-driven; substituting another nut produces a different dish. Skip the recipe rather than substitute.</span></li>
+        <li><strong>walnuts (allergen-free baking)</strong> → sunflower seeds, toasted <span class="sub-note">Different texture, similar role as crunchy fat-and-flavor in a baked good. The bake will read greener and less rich; acceptable in nut-allergy households.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/fesenjan.html" data-category="recipes">
+          <span class="rl-card-title">Fesenjan</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/mast-o-khiar.html" data-category="recipes">
+          <span class="rl-card-title">Mast-o-khiar</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/overnight-oats-with-warm-spice-and-grated-pear.html" data-category="recipes">
           <span class="rl-card-title">Overnight oats with warm spice and grated pear</span>
           
@@ -157,49 +151,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="neutral-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Neutral oil (peanut, rice bran, canola, refined avocado)</span>
-          <span class="rl-card-why">fat · pantry</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="mayonnaise.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mayonnaise</span>
-          <span class="rl-card-why">fat · pantry</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="avocado-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Avocado oil</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="extra-virgin-olive-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Extra-virgin olive oil</span>
-          <span class="rl-card-why">fat · pantry</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="avocado.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Avocado</span>
-          <span class="rl-card-why">fat · pantry</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="coconut-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Coconut milk (canned, full-fat)</span>
-          <span class="rl-card-why">fat</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">2</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/oil-poaching.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Oil poaching</span>
-          <span class="rl-card-why">fat</span>
-        </a>
-        <a class="rl-card" href="../techniques/tahini-emulsion.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Tahini emulsion</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>

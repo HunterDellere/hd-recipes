@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Avocado'
 desc: 'Persea americana, fruit of the avocado tree, dominated commercially by the Hass cultivar. Cold-pressed monounsaturated fat in a creamy parenchyma; ripens off the tree, browns on cut surfaces from polyphenol oxidase activity, and provides structural fat in raw Mexican and Latin American cooking.'
 metaDesc: 'Avocado: Hass cultivar dominance, ripening chemistry, polyphenol-oxidase browning, structural fat role in Mexican and Latin cooking, ripeness testing and storage.'
-tags: ['fruit', 'fat', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.95
 imperial_pref: 'cup'
 grams_per_unit: 200

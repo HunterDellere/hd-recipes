@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Panzanella with charred tomatoes'
 desc: 'Tuscan bread salad rebuilt as a study in tomato states: ripe heirloom flesh salt-cured to extract its glutamate-laden water, cherry tomatoes blistered black-spotted in a smoking dry skillet for the Maillard counterpoint, stale sourdough soaked in the resulting tomato water plus red wine vinaigrette, finished with raw red onion, basil, capers, and aggressive olive oil. The thesis is that bread is a flavor sponge engineered to deliver tomato to the eater, not a starch garnish.'
 metaDesc: 'Panzanella with charred tomatoes: salt-cured heirloom plus blistered cherry tomatoes, sourdough bread soaked in tomato water and red wine vinaigrette, red onion, basil, capers. The Tuscan bread salad with the umami architecture made explicit.'
-tags: ['salad', 'italian', 'mediterranean', 'vegetable', 'side', 'weeknight', 'umami', 'acid', 'bread']
+tags: ['salad', 'weeknight', 'umami', 'bread']
 updated: '2026-05-10'
 
 servings: 4

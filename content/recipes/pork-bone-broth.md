@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pork bone broth (zhu gu tang)'
 desc: 'Pork bones blanched, then long-simmered for a clear, gelatin-rich Chinese-style broth. The base of Cantonese soups, congee, dumpling fillings, and noodle bowls. Modifications cover the rolling-boil milky version (tonkotsu-style for ramen) and the herbal Cantonese long-soup tradition.'
 metaDesc: 'Pork bone broth: blanch then 4-6 hour clear simmer (Chinese style). Modifications cover milky tonkotsu-style ramen broth and herbal Cantonese soups.'
-tags: ['pork', 'pantry', 'sauce', 'umami', 'make-ahead', 'weekend-project', 'freezer-friendly', 'chinese']
+tags: ['pork', 'pantry', 'umami', 'make-ahead', 'weekend-project', 'freezer-friendly']
 updated: '2026-05-09'
 
 servings: 8

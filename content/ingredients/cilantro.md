@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cilantro (coriander leaves)'
 desc: 'The leaves and stems of Coriandrum sativum, used fresh as a finishing herb across Latin American, South Asian, Southeast Asian, Middle Eastern, and Chinese cooking. Stems carry more flavor than leaves and should not be discarded.'
 metaDesc: 'Cilantro (coriander leaves): the soapy-gene problem, stem vs leaf use, the global reach of fresh coriander leaves, freshness cues and storage.'
-tags: ['herb', 'aromatic', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.20
 updated: '2026-05-09'
 

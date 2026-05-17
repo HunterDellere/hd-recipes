@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Bao cui (薄脆, thin fried wheat cracker for jianbing)'
 desc: 'The thin, shatter-crisp fried wheat cracker that is the canonical filling for Tianjin jianbing guozi. A lye-or-baking-soda-leavened, rolled-paper-thin wheat dough cut into 18 × 12 cm rectangles, shallow-fried in 180°C oil for 60 to 90 seconds per side until pale gold and glass-shatter. Stub.'
 metaDesc: 'Bao cui stub recipe: thin shatter-crisp fried wheat cracker for Tianjin jianbing. Rolled-paper-thin wheat dough deep-fried until glass-crisp. Stub recipe.'
-tags: ['chinese', 'bread', 'fried', 'snack', 'breakfast']
+tags: ['bread', 'fried']
 updated: '2026-05-12'
 
 servings: 8

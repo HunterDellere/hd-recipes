@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Dry-frying eggplant (gan bian)'
 desc: 'Cook cut eggplant over high heat in a wok with little or no oil until the surface dehydrates and browns and the cell structure collapses inward, then add oil and aromatics. Solves the eggplant-sponge-soaks-oil problem from the heat-and-time direction.'
 metaDesc: 'Dry-frying eggplant (gan bian): the Sichuan technique that drives water out of eggplant before flavoring, producing rich-flavored eggplant that is not soggy.'
-tags: ['vegetable', 'chinese']
+tags: []
 updated: '2026-05-09'
 
 about: |

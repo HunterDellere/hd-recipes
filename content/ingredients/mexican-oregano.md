@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mexican oregano'
 desc: 'Lippia graveolens, a Verbena-family shrub native to Mexico and the southwestern United States. Citrus-and-licorice aromatic, distinct from Mediterranean Origanum vulgare; the canonical Mexican dried-leaf seasoning for salsas, beans, ensaladas, pozole, and adobos.'
 metaDesc: 'Mexican oregano: Lippia graveolens vs Mediterranean Origanum vulgare, the citrus-licorice aromatic profile, why it is not interchangeable with Greek or Italian oregano, sourcing.'
-tags: ['herb', 'aromatic', 'spice', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.3
 imperial_pref: 'tsp'
 updated: '2026-05-10'

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Poured-set mapo tofu (douhua mapo)'
 desc: 'Hot soy milk whisked with GDL and poured directly into the serving bowl, allowed to set into a freshly-made silken curd, then topped with a thick mapo sauce ladled over at near-boiling. The curd is softer than any commercial silken tofu, the eating experience is custard-soft cradle for the mala sauce above, and the dish hits the table at the highest possible temperature contrast.'
 metaDesc: 'Poured-set mapo tofu (douhua mapo): hot-set silken tofu in the serving bowl topped with mapo sauce. The technique-driven variant on the Sichuan classic.'
-tags: ['chinese', 'spicy', 'umami', 'beef']
+tags: ['spicy', 'umami', 'beef']
 updated: '2026-05-09'
 
 servings: 4

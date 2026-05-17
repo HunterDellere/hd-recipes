@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Parmigiano Reggiano'
 desc: 'Hard cow''s-milk cheese from Emilia-Romagna and a slice of Mantua, aged 12 to 36 months. The most glutamate-dense cheese commonly used; structurally a finishing condiment, a melting agent, and a flavor amplifier all at once.'
 metaDesc: 'Parmigiano Reggiano DOP: 24-month vs 36-month, the rind reservoir trick, why grating from the whole wedge beats pre-grated, and why microplane vs box grater changes the dish.'
-tags: ['dairy', 'umami', 'italian']
+tags: ['umami']
 density_g_per_ml: 0.45
 imperial_pref: 'cup'
 updated: '2026-05-09'

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mala dry-pot fish (gan guo yu)'
 desc: 'Sichuan dry-pot. White fish fillet seared, then tossed in red oil rendered from doubanjiang and dried chilies, with lotus root, cauliflower, wood ear, firm tofu, tofu skin, bell pepper, scallion, and cilantro. No broth, no sauce: the rendered oil is the medium.'
 metaDesc: 'Sichuan dry-pot fish (gan guo yu): mala oil from doubanjiang and chilies, with lotus root, cauliflower, wood ear, tofu, tofu skin, bell pepper, cilantro.'
-tags: ['fish', 'chinese', 'spicy', 'umami', 'one-pot']
+tags: ['fish', 'spicy', 'umami', 'one-pot']
 updated: '2026-05-09'
 
 servings: 4

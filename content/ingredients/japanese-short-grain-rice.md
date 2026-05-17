@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Japanese short-grain rice (uruchimai)'
 desc: 'Short-grain Oryza sativa japonica ,  round, plump, high-amylopectin grains that cook tender and slightly sticky, with the chew that defines Japanese rice. The base of nearly every washoku meal and the structural medium of sushi, onigiri, and donburi.'
 metaDesc: 'Japanese short-grain rice (uruchimai): how amylose ratio drives stickiness, the wash-soak-cook-rest protocol, and Koshihikari vs. Akitakomachi vs. California-grown grades.'
-tags: ['rice', 'grain', 'japanese', 'pantry']
+tags: ['rice', 'pantry']
 updated: '2026-05-09'
 
 usda_fdc_id: 169757

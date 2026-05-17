@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Oil poaching'
 desc: 'Cook a protein submerged in oil held at 55 to 75 °C: gentle, even, with no surface evaporation. The oil becomes both heat medium and infusion vehicle; the protein arrives uniformly tender with no Maillard crust.'
 metaDesc: 'Oil poaching: low-temperature cooking in submerged oil from 55 to 75 °C. Protein denaturation thresholds, infusion chemistry, and the dishes the technique earns its place in.'
-tags: ['fat']
+tags: []
 updated: '2026-05-10'
 
 about: |

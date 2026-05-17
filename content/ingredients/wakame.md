@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Wakame (dried sea vegetable)'
 desc: 'Dried Undaria pinnatifida ,  silky, tender brown seaweed that rehydrates in cold water in 5 minutes and turns vivid green. The textural counterpoint in miso soup, sunomono, and seaweed salads.'
 metaDesc: 'Wakame: dried Undaria seaweed for miso soup and sunomono ,  rehydration ratio, salted vs. dried-cut grades, and the texture difference from kombu.'
-tags: ['japanese', 'pantry', 'umami']
+tags: ['pantry', 'umami']
 updated: '2026-05-09'
 
 about: |

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Neutral oil (peanut, rice bran, canola, refined avocado)","status":"complete","tags":["fat","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Neutral oil (peanut, rice bran, canola, refined avocado)","status":"complete","tags":["pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,33 +109,13 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">neutral oil (high-heat stir-fry, Chinese cooking)</span>
-          <span class="sub-card-use">peanut oil, rice bran oil, or refined avocado oil</span>
-          <p class="sub-card-note">All three are well-suited to wok temperatures; peanut is the canonical Chinese choice and contributes a faint peanut undertone in some preparations. Rice bran and refined avocado are flavor-neutral and very high-smoke-point.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">neutral oil (deep-frying)</span>
-          <span class="sub-card-use">peanut oil, canola, or rice bran oil</span>
-          <p class="sub-card-note">Peanut oil is the gold standard for deep-frying chicken and similar; canola is the budget default and works well; rice bran is the upscale-Asian-restaurant default. Avoid extra-virgin olive (smoke point too low for sustained 175 °C work) and avoid toasted oils.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">neutral oil (Chinese hot-oil finish over aromatics)</span>
-          <span class="sub-card-use">peanut oil, rice bran oil, or refined avocado oil</span>
-          <p class="sub-card-note">The technique requires a smoking-hot pour at 200 °C+; high smoke point is the binding constraint. Canola works but is at the edge of its range; refined avocado has the most headroom.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">neutral oil (general weeknight sauté and pan-fry)</span>
-          <span class="sub-card-use">canola, refined sunflower, or refined safflower</span>
-          <p class="sub-card-note">Cheap, neutral, sufficient for everyday cooking under 200 °C. The premium oils are unnecessary at this temperature range.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">neutral oil (allergen consideration: peanut allergy)</span>
-          <span class="sub-card-use">rice bran, canola, or refined avocado oil</span>
-          <p class="sub-card-note">Peanut oil is the canonical Chinese choice but is a peanut allergen; refined peanut oil has the protein removed in most commercial supplies and is technically allergen-safe for most peanut-allergic individuals (FDA labels exempt refined peanut oil), but household-level caution applies. Rice bran is the cleanest substitute.</p>
-        </li>
+        <li><strong>neutral oil (high-heat stir-fry, Chinese cooking)</strong> → peanut oil, rice bran oil, or refined avocado oil <span class="sub-note">All three are well-suited to wok temperatures; peanut is the canonical Chinese choice and contributes a faint peanut undertone in some preparations. Rice bran and refined avocado are flavor-neutral and very high-smoke-point.</span></li>
+        <li><strong>neutral oil (deep-frying)</strong> → peanut oil, canola, or rice bran oil <span class="sub-note">Peanut oil is the gold standard for deep-frying chicken and similar; canola is the budget default and works well; rice bran is the upscale-Asian-restaurant default. Avoid extra-virgin olive (smoke point too low for sustained 175 °C work) and avoid toasted oils.</span></li>
+        <li><strong>neutral oil (Chinese hot-oil finish over aromatics)</strong> → peanut oil, rice bran oil, or refined avocado oil <span class="sub-note">The technique requires a smoking-hot pour at 200 °C+; high smoke point is the binding constraint. Canola works but is at the edge of its range; refined avocado has the most headroom.</span></li>
+        <li><strong>neutral oil (general weeknight sauté and pan-fry)</strong> → canola, refined sunflower, or refined safflower <span class="sub-note">Cheap, neutral, sufficient for everyday cooking under 200 °C. The premium oils are unnecessary at this temperature range.</span></li>
+        <li><strong>neutral oil (allergen consideration: peanut allergy)</strong> → rice bran, canola, or refined avocado oil <span class="sub-note">Peanut oil is the canonical Chinese choice but is a peanut allergen; refined peanut oil has the protein removed in most commercial supplies and is technically allergen-safe for most peanut-allergic individuals (FDA labels exempt refined peanut oil), but household-level caution applies. Rice bran is the cleanest substitute.</span></li>
     </ul>
 
     
@@ -142,6 +124,22 @@
     <div class="rl-cards">
         <a class="rl-card" href="../recipes/air-fried-okra-with-four-flavor-finishes.html" data-category="recipes">
           <span class="rl-card-title">Air-fried okra with four flavor finishes</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/aji-de-gallina.html" data-category="recipes">
+          <span class="rl-card-title">Ají de gallina</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/anticuchos-de-corazon.html" data-category="recipes">
+          <span class="rl-card-title">Anticuchos de corazón</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/banh-mi-thit-nuong.html" data-category="recipes">
+          <span class="rl-card-title">Banh mi thit nuong (grilled pork banh mi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/bulgogi.html" data-category="recipes">
+          <span class="rl-card-title">Bulgogi (Asian pear-marinated grilled beef)</span>
           
         </a>
         <a class="rl-card" href="../recipes/vietnamese-canh-chua-tamarind-sour-soup-with-catfish.html" data-category="recipes">
@@ -156,12 +154,44 @@
           <span class="rl-card-title">Cast-iron chuck eye steaks with shallot pan sauce</span>
           
         </a>
+        <a class="rl-card" href="../recipes/chicken-adobo.html" data-category="recipes">
+          <span class="rl-card-title">Chicken adobo</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-and-andouille-gumbo.html" data-category="recipes">
+          <span class="rl-card-title">Chicken and andouille gumbo</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-karaage.html" data-category="recipes">
+          <span class="rl-card-title">Chicken karaage (Japanese fried chicken)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-satay-with-peanut-sauce.html" data-category="recipes">
+          <span class="rl-card-title">Chicken satay with peanut sauce</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/chicken-shawarma.html" data-category="recipes">
+          <span class="rl-card-title">Chicken shawarma</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/chinese-lions-head-meatballs.html" data-category="recipes">
           <span class="rl-card-title">Chinese lion's head meatballs (shīzi tóu)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/creole-jambalaya.html" data-category="recipes">
+          <span class="rl-card-title">Creole jambalaya (red, with tomato)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/fesenjan.html" data-category="recipes">
+          <span class="rl-card-title">Fesenjan</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/german-warm-potato-salad-with-bacon-and-mustard.html" data-category="recipes">
           <span class="rl-card-title">German warm potato salad with bacon and mustard</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/ghormeh-sabzi.html" data-category="recipes">
+          <span class="rl-card-title">Ghormeh sabzi</span>
           
         </a>
         <a class="rl-card" href="../recipes/ginger-lime-honey-vinaigrette.html" data-category="recipes">
@@ -176,8 +206,44 @@
           <span class="rl-card-title">Haemul pajeon (Korean seafood and scallion pancake, 해물파전)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/hainanese-chicken-rice.html" data-category="recipes">
+          <span class="rl-card-title">Hainanese chicken rice</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/haitian-griot.html" data-category="recipes">
+          <span class="rl-card-title">Haitian griot</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/huevos-rancheros.html" data-category="recipes">
           <span class="rl-card-title">Huevos rancheros</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/iskender-kebab.html" data-category="recipes">
+          <span class="rl-card-title">İskender kebab</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/jamaican-jerk-chicken.html" data-category="recipes">
+          <span class="rl-card-title">Jamaican jerk chicken</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/jollof-rice-nigerian-style.html" data-category="recipes">
+          <span class="rl-card-title">Jollof rice (Nigerian style)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lamb-tagine-with-prunes-and-almonds.html" data-category="recipes">
+          <span class="rl-card-title">Lamb tagine with prunes and almonds</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lomo-saltado.html" data-category="recipes">
+          <span class="rl-card-title">Lomo saltado</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/nasi-goreng.html" data-category="recipes">
+          <span class="rl-card-title">Nasi goreng</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/okonomiyaki-osaka-style.html" data-category="recipes">
+          <span class="rl-card-title">Okonomiyaki (Osaka-style cabbage pancake)</span>
           
         </a>
         <a class="rl-card" href="../recipes/omurice.html" data-category="recipes">
@@ -188,6 +254,42 @@
           <span class="rl-card-title">Pan-seared mackerel with daikon oroshi and ponzu</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pancit-canton.html" data-category="recipes">
+          <span class="rl-card-title">Pancit canton</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/papa-a-la-huancaina.html" data-category="recipes">
+          <span class="rl-card-title">Papa a la huancaína</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/peanut-groundnut-soup.html" data-category="recipes">
+          <span class="rl-card-title">Peanut soup (Senegalese mafé / Ghanaian groundnut stew)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/penang-curry-laksa.html" data-category="recipes">
+          <span class="rl-card-title">Penang curry laksa</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pierogi-z-kapusta-i-grzybami.html" data-category="recipes">
+          <span class="rl-card-title">Pierogi z kapustą i grzybami (sauerkraut and mushroom pierogi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pork-gyoza.html" data-category="recipes">
+          <span class="rl-card-title">Pork gyoza (pan-fried, then steamed)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pozole-rojo.html" data-category="recipes">
+          <span class="rl-card-title">Pozole rojo</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/puerto-rican-mofongo.html" data-category="recipes">
+          <span class="rl-card-title">Puerto Rican mofongo</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/red-beans-and-rice.html" data-category="recipes">
+          <span class="rl-card-title">Red beans and rice (Monday red beans)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/salmon-rice-bowl-with-quick-cucumber.html" data-category="recipes">
           <span class="rl-card-title">Salmon rice bowl with quick cucumber</span>
           
@@ -196,12 +298,36 @@
           <span class="rl-card-title">Salsa macha</span>
           
         </a>
+        <a class="rl-card" href="../recipes/sambal-oelek.html" data-category="recipes">
+          <span class="rl-card-title">Sambal oelek</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/senegalese-thiakry-millet-salad-or-west-african-grain-salad.html" data-category="recipes">
           <span class="rl-card-title">Senegalese-inspired savory millet salad with mango, mint, and ginger-lime</span>
           
         </a>
         <a class="rl-card" href="../recipes/sheet-pan-salmon-with-miso-glazed-vegetables.html" data-category="recipes">
           <span class="rl-card-title">Sheet-pan salmon with miso-glazed vegetables</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/shrimp-and-grits.html" data-category="recipes">
+          <span class="rl-card-title">Shrimp and grits (Lowcountry)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/southern-fried-chicken.html" data-category="recipes">
+          <span class="rl-card-title">Southern fried chicken (buttermilk-brined, cast-iron-fried)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/suya.html" data-category="recipes">
+          <span class="rl-card-title">Suya (Nigerian peanut-spiced grilled beef skewers)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/tacos-al-pastor.html" data-category="recipes">
+          <span class="rl-card-title">Tacos al pastor</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/tahdig.html" data-category="recipes">
+          <span class="rl-card-title">Tahdig</span>
           
         </a>
         <a class="rl-card" href="../recipes/tamagoyaki.html" data-category="recipes">
@@ -214,6 +340,10 @@
         </a>
         <a class="rl-card" href="../recipes/tianjin-jianbing-savory-mung-bean-crepe.html" data-category="recipes">
           <span class="rl-card-title">Tianjin jianbing guozi (Tianjin savory mung-bean crepe, 天津煎饼馃子)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/tonkatsu.html" data-category="recipes">
+          <span class="rl-card-title">Tonkatsu (panko-breaded pork cutlet)</span>
           
         </a>
         <a class="rl-card" href="../recipes/toum.html" data-category="recipes">
@@ -229,49 +359,40 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="walnuts.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Walnuts</span>
-          <span class="rl-card-why">fat · pantry</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card is-strong" href="mayonnaise.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mayonnaise</span>
-          <span class="rl-card-why">fat · pantry</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="avocado-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Avocado oil</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="extra-virgin-olive-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Extra-virgin olive oil</span>
-          <span class="rl-card-why">fat · pantry</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="avocado.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="atta-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Atta flour (whole wheat chapati flour, آٹا)</span>
+          <span class="rl-card-why">pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="avocado.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Avocado</span>
-          <span class="rl-card-why">fat · pantry</span>
+          <span class="rl-card-why">pantry</span>
         </a>
-        <a class="rl-card" href="coconut-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Coconut milk (canned, full-fat)</span>
-          <span class="rl-card-why">fat</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">2</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/oil-poaching.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Oil poaching</span>
-          <span class="rl-card-why">fat</span>
-        </a>
-        <a class="rl-card" href="../techniques/tahini-emulsion.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Tahini emulsion</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card is-strong" href="bananas.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Bananas</span>
+          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>

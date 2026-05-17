@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Matcha'
 desc: 'Stone-ground powdered green tea from shade-grown tencha leaves. Bright vegetal-umami flavor, vivid jade color; grade and freshness determine whether it tastes sweet-creamy or grass-and-spinach bitter.'
-tags: ['tea', 'japanese', 'umami']
+tags: ['umami']
 density_g_per_ml: 0.45
 imperial_pref: 'tsp'
 updated: '2026-05-16'

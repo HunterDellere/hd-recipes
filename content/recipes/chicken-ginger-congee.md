@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chicken and ginger congee'
 desc: 'The healing-food version. Bone-in chicken thighs simmered into the rice, a heavy ginger load to clean the palate, finished with sesame oil, scallion, and chili oil at the table. The Cantonese kitchen calls this comfort food when someone is sick.'
 metaDesc: 'Chicken and ginger congee with bone-in thighs simmered into the rice, triple-stage ginger, and a soy-sesame finish. The Chinese healing rice porridge.'
-tags: ['rice', 'chicken', 'chinese', 'comfort', 'breakfast', 'one-pot', 'umami']
+tags: ['rice', 'chicken', 'comfort', 'one-pot', 'umami']
 updated: '2026-05-08'
 
 servings: 4

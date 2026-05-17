@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Matcha usucha (thin matcha tea)'
 desc: 'The everyday matcha preparation: 2 g of ceremonial matcha whisked with 60 ml of 80°C water into a frothed, brilliant-jade tea. Built for the proper aroma extraction without the bitter overdraw common in home preparations.'
 metaDesc: 'Matcha usucha, ceremonial Japanese thin tea, proper temperature, sift-and-whisk technique for a smooth, foamy, bright green bowl.'
-tags: ['drink', 'tea', 'japanese', 'umami', 'quick']
+tags: ['umami', 'quick']
 updated: '2026-05-16'
 
 servings: 1

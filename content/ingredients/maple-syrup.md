@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Maple syrup'
 desc: 'Concentrated sap of Acer saccharum (sugar maple), boiled from a 2 percent sugar solution down to 66 percent. Sucrose-dominant with characteristic Maillard-developed maple aroma. The defining sweetener of northeastern North America.'
 metaDesc: 'Maple syrup: the sap-to-syrup boil ratio, the Maillard browning during evaporation, Grade A color/flavor categories, the difference from corn-syrup pancake imitations.'
-tags: ['pantry', 'american']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.32

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade ketchup (from canned tomatoes)'
 desc: 'Heinz-pattern ketchup built from San Marzano canned tomatoes, white wine vinegar, light brown sugar, and whole spices. No high-fructose corn syrup, no flavored vinegar shortcuts; the body comes from real reduction.'
 metaDesc: 'Homemade ketchup recipe from canned tomatoes, proper reduction, whole-spice sachet, no corn syrup. Tastes more tomato, less sweet than Heinz.'
-tags: ['condiment', 'sauce', 'tomato', 'american', 'make-ahead', 'pantry', 'umami']
+tags: ['condiment', 'make-ahead', 'pantry', 'umami']
 updated: '2026-05-16'
 
 servings: 16

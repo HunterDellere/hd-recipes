@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Italian salsa verde'
 desc: 'The Italian green sauce that finishes bollito misto, grilled and poached fish, roast meats, beans, eggs, and boiled vegetables. Parsley, capers, anchovy, garlic, lemon, and a chunk of bread or hard-boiled yolk for body, all chopped or ground to a coarse paste and mounted with olive oil. Salty, vegetal, and bracing; the sauce that turns plain protein into a meal.'
 metaDesc: 'Italian salsa verde: parsley, anchovy, capers, garlic, lemon, olive oil. The cross-cuisine finishing sauce for grilled and poached fish, roast meats, beans, eggs, and boiled vegetables.'
-tags: ['sauce', 'italian', 'mediterranean', 'fresh-herbs', 'no-cook', 'pantry', 'make-ahead', 'quick', 'umami']
+tags: ['no-cook', 'pantry', 'make-ahead', 'quick', 'umami']
 updated: '2026-05-15'
 
 servings: 8

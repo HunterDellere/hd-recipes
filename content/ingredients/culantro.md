@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Culantro (ngò gai, sawtooth herb)'
 desc: 'Long sawtooth-edged herb (Eryngium foetidum) in the same family as cilantro but with a more intense, slightly bitter aromatic profile carrying the same dodecenal compound as cilantro at 3 to 5× concentration. The defining herb of Caribbean sazón, Vietnamese pho and canh chua, and several Southeast Asian sour-soup traditions.'
 metaDesc: 'Culantro (ngò gai, Eryngium foetidum): aromatics versus cilantro, role in pho and canh chua, Caribbean sazón applications, sourcing notes.'
-tags: ['herb']
+tags: []
 updated: '2026-05-10'
 
 about: |

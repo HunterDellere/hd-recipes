@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Glutinous rice flour'
 desc: 'Finely milled flour from short-grain glutinous (sticky) rice. The base of mochi, tang yuan, banh troi, and most East and Southeast Asian chewy rice desserts.'
-tags: ['starch', 'glutinous-rice', 'asian']
+tags: ['starch', 'glutinous-rice']
 density_g_per_ml: 0.55
 imperial_pref: 'cup'
 updated: '2026-05-16'

@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Cooked yogurt sauce'
 desc: 'Stabilize yogurt with starch or egg, temper into the hot dish, and hold at a tremor below the boil. Casein curdles above 85 °C without help; the help is what makes a yogurt-based stew possible.'
 metaDesc: 'Cooked yogurt sauce: the casein chemistry behind why fresh yogurt curdles in heat, the cornstarch and egg ratios that prevent it, and where the technique earns its place across mansaf, kadhi, yayla soup, and shakriyeh-style stews.'
-tags: ['dairy', 'fermentation']
+tags: ['fermentation']
 updated: '2026-05-06'
 
 about: |

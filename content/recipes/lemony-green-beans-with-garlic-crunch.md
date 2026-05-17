@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lemony green beans with garlic crunch'
 desc: 'Blanched green beans tossed with butter and lemon, finished with a garlicky panko crumb that stays crisp on top.'
 metaDesc: 'Green beans blanched bright green, tossed in lemon butter, topped with garlic-toasted panko. A 25-minute holiday side.'
-tags: ['vegetable', 'side', 'holiday', 'american', 'weeknight']
+tags: ['holiday', 'weeknight']
 updated: '2026-04-26'
 
 servings: 6

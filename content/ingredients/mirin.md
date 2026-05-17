@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Mirin (hon-mirin)'
 desc: 'Sweet rice cooking wine — fermented, alcoholic, glossy. The gloss on teriyaki, the sweetness in dashimaki tamago, the round backnote in nimono.'
-tags: ['japanese', 'umami', 'pantry']
+tags: ['umami', 'pantry']
 updated: '2026-04-29'
 density_g_per_ml: 1.10
 

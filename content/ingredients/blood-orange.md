@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Blood orange'
 desc: 'Citrus × sinensis cultivars (Tarocco, Moro, Sanguinello) whose flesh accumulates anthocyanin pigments under cool-night growing conditions. Crimson-streaked, more acidic than common navel, with raspberry-and-bitter-orange aromatics.'
 metaDesc: 'Blood orange: the anthocyanin chemistry that produces the crimson flesh, the Sicilian and California growing seasons, supreming technique, and substitution paths.'
-tags: ['fruit', 'acid']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 169097

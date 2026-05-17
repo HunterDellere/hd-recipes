@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sour cream'
 desc: 'Cultured cream at 18 to 20% milkfat with pH around 4.5. The acidity tenderizes baked goods, breaks emulsions for sauces, and adds a tangy fat that does not curdle as readily as plain cream.'
 metaDesc: 'Sour cream: 18-20% milkfat cultured cream at pH ~4.5. Tenderizes cake crumb, holds in dips and sauces, distinct from creme fraiche and Greek yogurt.'
-tags: ['dairy', 'fat', 'fermentation']
+tags: ['fermentation']
 density_g_per_ml: 0.97
 updated: '2026-05-09'
 

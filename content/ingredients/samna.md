@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Samna (clarified butter)'
 desc: 'Butter cooked past its water phase and strained free of milk solids — pure butterfat, around 99% lipid, with the toasted-solid aroma already baked in. The Levantine and North African analog of Indian ghee.'
 metaDesc: 'Samna: the Levantine clarified butter at the heart of mansaf rice, kibbeh, and many North African pastries. How clarification differs from ghee, what aged samna baladi tastes like, and how to use the bottle on the shelf.'
-tags: ['dairy', 'fat']
+tags: []
 density_g_per_ml: 0.911
 imperial_pref: 'tbsp'
 updated: '2026-05-06'

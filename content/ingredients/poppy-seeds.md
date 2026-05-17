@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Poppy seeds'
 desc: 'Papaver somniferum seeds. Small, kidney-shaped, blue-grey (European) or white-ivory (South Asian khus khus). Nutty, mildly earthy flavor from fatty acids (oleic, linoleic) and a small quantity of benzyl isoquinoline alkaloids. Used in South Asian cooking as a paste thickener and mild nutty aromatic (white variety); in Central European baking as a filling and topping (blue-grey variety). The paste function is distinct from the flavor function.'
 metaDesc: 'Poppy seeds: blue-grey vs white (khus khus), the fatty acid composition, paste-thickening in South Asian curry paste vs topping in European baking, applications from Goan xacuti to Bengali potato-poppy (alur dom) to Austrian mohnstrudel.'
-tags: ['spice', 'nuts', 'indian']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 170172

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sheet-pan salmon with miso-glazed vegetables'
 desc: 'Skin-on salmon fillets and a mix of broccoli florets and bok choy halves on a single sheet pan, brushed with a miso-honey glaze that caramelizes under the broiler in the final 3 minutes. The miso provides the glutamate-and-koji depth that anchors the savory register, the honey gives the glaze its lacquered finish, the rice vinegar at the end carries the acid. Salmon goes in late so its 8-minute window converges with the vegetables hitting tender-crisp. Weeknight-feasible in 30 minutes total, 15 minutes active.'
 metaDesc: 'Sheet-pan salmon with broccoli and bok choy under a caramelized miso-honey glaze. 30-minute weeknight dinner with staggered timing for fish doneness.'
-tags: ['weeknight', 'sheet-pan', 'fish', 'salmon', 'asian', 'umami', 'quick', 'healthy']
+tags: ['weeknight', 'sheet-pan', 'fish', 'salmon', 'umami', 'quick']
 updated: '2026-05-17'
 
 servings: 4

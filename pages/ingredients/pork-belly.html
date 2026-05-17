@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">pork belly (Chinese hong shao rou, Japanese chashu, slow-braise applications)</span>
-          <span class="sub-card-use">pork shoulder (Boston butt), pork ribs, or beef short rib</span>
-          <p class="sub-card-note">Pork shoulder is the leaner substitute; produces a less rich braise but still recognizable, and the texture is dense-tender rather than silken. Cooking time is similar. Pork ribs (country-style or baby back, well-trimmed) work for shorter braises with a different shape on the plate. Beef short rib produces a structurally different dish (beef rather than pork) but is the right substitute for cooks avoiding pork; cooking time may double.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">pork belly (Korean samgyeopsal, grilled application)</span>
-          <span class="sub-card-use">pork shoulder steaks, pork loin, or thick-cut bacon</span>
-          <p class="sub-card-note">Pork shoulder steaks (1.5 to 2 cm thick) work with the same grilling technique, less fatty and slightly less tender; the dish reads recognizable but less luxurious. Pork loin is leaner still and dries out under aggressive grilling. Thick-cut bacon is the Western-supermarket substitute that produces a similar smoky-fatty character but is significantly saltier (drop any salt seasoning).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">pork belly (American bacon, breakfast use)</span>
-          <span class="sub-card-use">pancetta, guanciale, or turkey bacon</span>
-          <p class="sub-card-note">Pancetta (Italian salt-cured pork belly) is the closest Italian-tradition substitute, less smoky and more delicate. Guanciale (cured pork jowl) is the canonical Roman pasta cured pork and is fattier and more deeply pork-flavored. Turkey bacon is a dietary substitute that lacks the fat and the structural Maillard browning; produces a meaningfully different dish.</p>
-        </li>
+        <li><strong>pork belly (Chinese hong shao rou, Japanese chashu, slow-braise applications)</strong> → pork shoulder (Boston butt), pork ribs, or beef short rib <span class="sub-note">Pork shoulder is the leaner substitute; produces a less rich braise but still recognizable, and the texture is dense-tender rather than silken. Cooking time is similar. Pork ribs (country-style or baby back, well-trimmed) work for shorter braises with a different shape on the plate. Beef short rib produces a structurally different dish (beef rather than pork) but is the right substitute for cooks avoiding pork; cooking time may double.</span></li>
+        <li><strong>pork belly (Korean samgyeopsal, grilled application)</strong> → pork shoulder steaks, pork loin, or thick-cut bacon <span class="sub-note">Pork shoulder steaks (1.5 to 2 cm thick) work with the same grilling technique, less fatty and slightly less tender; the dish reads recognizable but less luxurious. Pork loin is leaner still and dries out under aggressive grilling. Thick-cut bacon is the Western-supermarket substitute that produces a similar smoky-fatty character but is significantly saltier (drop any salt seasoning).</span></li>
+        <li><strong>pork belly (American bacon, breakfast use)</strong> → pancetta, guanciale, or turkey bacon <span class="sub-note">Pancetta (Italian salt-cured pork belly) is the closest Italian-tradition substitute, less smoky and more delicate. Guanciale (cured pork jowl) is the canonical Roman pasta cured pork and is fattier and more deeply pork-flavored. Turkey bacon is a dietary substitute that lacks the fat and the structural Maillard browning; produces a meaningfully different dish.</span></li>
     </ul>
 
     
@@ -132,6 +122,14 @@
     <div class="rl-cards">
         <a class="rl-card" href="../recipes/chinese-lions-head-meatballs.html" data-category="recipes">
           <span class="rl-card-title">Chinese lion's head meatballs (shīzi tóu)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/okonomiyaki-osaka-style.html" data-category="recipes">
+          <span class="rl-card-title">Okonomiyaki (Osaka-style cabbage pancake)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/shoyu-ramen-from-scratch.html" data-category="recipes">
+          <span class="rl-card-title">Shoyu ramen from scratch</span>
           
         </a>
         <a class="rl-card" href="../recipes/tonjiru-pork-vegetable-miso-soup.html" data-category="recipes">
@@ -147,12 +145,16 @@
       <div class="rl-group" data-related-group="recipes">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
+          <span class="rl-group-count">2</span>
         </h3>
         <div class="rl-cards rl-cards--recipes">
         <a class="rl-card" href="../recipes/pork-floss.html" data-category="recipes" data-reason="tag">
           <span class="rl-card-title">Pork floss (rousong, 肉松)</span>
           <span class="rl-card-why">pork · pantry</span>
+        </a>
+        <a class="rl-card" href="../recipes/puerto-rican-mofongo.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Puerto Rican mofongo</span>
+          <span class="rl-card-why">pork</span>
         </a>
         </div>
       </div>
@@ -160,32 +162,28 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">5</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
         <a class="rl-card is-strong" href="ground-pork.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Ground pork</span>
           <span class="rl-card-why">pork · pantry</span>
         </a>
-        <a class="rl-card is-strong" href="bacon.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="lard.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Lard (manteca)</span>
+          <span class="rl-card-why">pork · pantry</span>
+        </a>
+        <a class="rl-card is-strong" href="pork-shoulder.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Pork shoulder (Boston butt, picnic)</span>
+          <span class="rl-card-why">pork · pantry</span>
+        </a>
+        <a class="rl-card" href="bacon.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Bacon</span>
           <span class="rl-card-why">pork · pantry</span>
         </a>
         <a class="rl-card" href="pancetta.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Pancetta</span>
           <span class="rl-card-why">pork</span>
-        </a>
-        <a class="rl-card" href="bananas.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Bananas</span>
-          <span class="rl-card-why">pantry</span>
-        </a>
-        <a class="rl-card" href="coconut-sugar.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Coconut sugar</span>
-          <span class="rl-card-why">pantry</span>
-        </a>
-        <a class="rl-card" href="honey.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Honey</span>
-          <span class="rl-card-why">pantry</span>
         </a>
         </div>
       </div>
@@ -205,9 +203,9 @@
     </div><nav class="adj-nav"><a class="adj-nav-link" href="poppy-seeds.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Poppy seeds</span>
-    </a><a class="adj-nav-link" href="potato-starch.html">
+    </a><a class="adj-nav-link" href="pork-shoulder.html">
       <span class="adj-nav-label">Next →</span>
-      <span class="adj-nav-title">Potato starch</span>
+      <span class="adj-nav-title">Pork shoulder (Boston butt, picnic)</span>
     </a></nav>
   
     <footer class="page-footer">

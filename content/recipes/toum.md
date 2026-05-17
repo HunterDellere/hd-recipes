@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Toum'
 desc: 'The Lebanese whipped garlic emulsion: raw garlic, lemon juice, neutral oil, and salt processed into a brilliant white, fluffy, mayonnaise-like sauce that contains no egg. The garlic mucilage and the gradual cold-stream oil incorporation build a stable emulsion held together by the proteins and polysaccharides in the garlic itself. Aggressively garlic-forward, structurally cousin to aioli without the yolk, and one of the most flexible condiments in the Levantine pantry.'
 metaDesc: 'Toum: the Lebanese whipped garlic emulsion (raw garlic, lemon, neutral oil, salt) with no egg. The fluffy, structural garlic sauce for shawarma, roast chicken, grilled meat, fries, raw vegetables, and flatbread.'
-tags: ['sauce', 'dip', 'levantine', 'mediterranean', 'no-cook', 'pantry', 'make-ahead', 'vegan']
+tags: ['no-cook', 'pantry', 'make-ahead', 'vegan']
 updated: '2026-05-15'
 
 servings: 16

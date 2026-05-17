@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Chinese sesame paste (芝麻酱)","status":"complete","tags":["umami","chinese"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Chinese sesame paste (芝麻酱)","status":"complete","tags":["umami"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -109,33 +111,13 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">Chinese sesame paste (cold sesame sauces, noodle dressings, hot pot dips)</span>
-          <span class="sub-card-use">tahini + 1 tsp toasted sesame oil per 3 tbsp tahini</span>
-          <p class="sub-card-note">The sesame oil compensates for the missing toasted depth. Closest practical substitute when zhima jiang is unreachable. Whisk thoroughly to integrate the oil before adding other sauce components.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">Chinese sesame paste (dan dan mian, dishes where chili oil leads)</span>
-          <span class="sub-card-use">unsweetened natural peanut butter + 1 tsp toasted sesame oil per 3 tbsp peanut butter</span>
-          <p class="sub-card-note">Peanut and sesame share roasted fat character; in dishes where the chili oil and aromatics dominate, the swap reads correct. Wrong in delicate cold sesame applications where the sesame character itself is the lead.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">Chinese sesame paste (sweet applications, fillings, dessert preparations)</span>
-          <span class="sub-card-use">black sesame paste</span>
-          <p class="sub-card-note">Different cultivar (black sesame); sweeter, smokier, more dessert-leaning. Use 1:1 in tang yuan fillings, sesame mochi, and dessert porridges. Wrong in savory applications where the white-sesame profile is meant.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">Chinese sesame paste (savory applications, allergy-driven)</span>
-          <span class="sub-card-use">sunflower seed butter + toasted sesame oil</span>
-          <p class="sub-card-note">Sunflower is the closest seed-allergy-friendly base; loses sesame flavor entirely but retains the textural and emulsifying role. Add 1 tsp toasted sesame oil per 3 tbsp sunbutter to fake some of the aroma.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">Chinese sesame paste (homemade, fresh)</span>
-          <span class="sub-card-use">toasted sesame seeds, ground in a blender with neutral oil</span>
-          <p class="sub-card-note">Toast 100 g white sesame seeds in a dry pan over medium heat until deeply golden and fragrant (10–12 minutes, watching carefully). Cool, then blend with 30 g neutral oil until a coarse paste forms. Closer to commercial paste than any substitute and adjustable to taste.</p>
-        </li>
+        <li><strong>Chinese sesame paste (cold sesame sauces, noodle dressings, hot pot dips)</strong> → tahini + 1 tsp toasted sesame oil per 3 tbsp tahini <span class="sub-note">The sesame oil compensates for the missing toasted depth. Closest practical substitute when zhima jiang is unreachable. Whisk thoroughly to integrate the oil before adding other sauce components.</span></li>
+        <li><strong>Chinese sesame paste (dan dan mian, dishes where chili oil leads)</strong> → unsweetened natural peanut butter + 1 tsp toasted sesame oil per 3 tbsp peanut butter <span class="sub-note">Peanut and sesame share roasted fat character; in dishes where the chili oil and aromatics dominate, the swap reads correct. Wrong in delicate cold sesame applications where the sesame character itself is the lead.</span></li>
+        <li><strong>Chinese sesame paste (sweet applications, fillings, dessert preparations)</strong> → black sesame paste <span class="sub-note">Different cultivar (black sesame); sweeter, smokier, more dessert-leaning. Use 1:1 in tang yuan fillings, sesame mochi, and dessert porridges. Wrong in savory applications where the white-sesame profile is meant.</span></li>
+        <li><strong>Chinese sesame paste (savory applications, allergy-driven)</strong> → sunflower seed butter + toasted sesame oil <span class="sub-note">Sunflower is the closest seed-allergy-friendly base; loses sesame flavor entirely but retains the textural and emulsifying role. Add 1 tsp toasted sesame oil per 3 tbsp sunbutter to fake some of the aroma.</span></li>
+        <li><strong>Chinese sesame paste (homemade, fresh)</strong> → toasted sesame seeds, ground in a blender with neutral oil <span class="sub-note">Toast 100 g white sesame seeds in a dry pan over medium heat until deeply golden and fragrant (10–12 minutes, watching carefully). Cool, then blend with 30 g neutral oil until a coarse paste forms. Closer to commercial paste than any substitute and adjustable to taste.</span></li>
     </ul>
 
     
@@ -156,48 +138,39 @@
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
-      <div class="rl-group" data-related-group="recipes">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/toasted-sesame-paste.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Toasted sesame paste (zhī ma jiàng)</span>
-          <span class="rl-card-why">chinese · umami</span>
-        </a>
-        </div>
-      </div>
-
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="rock-sugar.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Rock sugar (冰糖)</span>
-          <span class="rl-card-why">chinese</span>
+        <a class="rl-card is-strong" href="coconut-milk.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Coconut milk (canned, full-fat)</span>
+          <span class="rl-card-why">umami</span>
+        </a>
+        <a class="rl-card is-strong" href="cotija.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Cotija</span>
+          <span class="rl-card-why">umami</span>
         </a>
         <a class="rl-card is-strong" href="dark-soy-sauce.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Dark soy sauce (老抽)</span>
-          <span class="rl-card-why">chinese · umami</span>
+          <span class="rl-card-why">umami</span>
+        </a>
+        <a class="rl-card is-strong" href="feta.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Feta</span>
+          <span class="rl-card-why">umami</span>
         </a>
         <a class="rl-card is-strong" href="light-soy-sauce.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Light soy sauce (生抽)</span>
-          <span class="rl-card-why">chinese · umami</span>
+          <span class="rl-card-why">umami</span>
         </a>
-        <a class="rl-card" href="douchi.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Douchi (fermented black beans, 豆豉)</span>
-          <span class="rl-card-why">chinese · umami</span>
+        <a class="rl-card is-strong" href="matcha.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Matcha</span>
+          <span class="rl-card-why">umami</span>
         </a>
-        <a class="rl-card" href="wood-ear-mushroom.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Wood ear mushroom (木耳)</span>
-          <span class="rl-card-why">chinese</span>
-        </a>
-        <a class="rl-card" href="shaoxing-wine.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Shaoxing wine (绍兴酒)</span>
-          <span class="rl-card-why">chinese</span>
+        <a class="rl-card is-strong" href="oyster-mushroom.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Oyster mushroom</span>
+          <span class="rl-card-why">umami</span>
         </a>
         </div>
       </div>
@@ -208,9 +181,9 @@
           <span class="rl-group-count">1</span>
         </h3>
         <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/dry-frying-eggplant.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Dry-frying eggplant (gan bian)</span>
-          <span class="rl-card-why">chinese</span>
+        <a class="rl-card" href="../techniques/brown-butter.html" data-category="techniques" data-reason="tag">
+          <span class="rl-card-title">Brown butter (beurre noisette)</span>
+          <span class="rl-card-why">umami</span>
         </a>
         </div>
       </div>

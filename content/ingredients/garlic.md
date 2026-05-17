@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Garlic'
 desc: 'Allium sativum. Pungency comes from allicin, a sulfur compound that only forms when cells are damaged. How you cut a clove decides how it tastes.'
 metaDesc: 'Garlic: how mincing, crushing, or grating decides flavor strength via allicin chemistry. Heat behavior, raw vs cooked, jar vs fresh, and storage.'
-tags: ['aromatic']
+tags: []
 updated: '2026-04-29'
 
 usda_fdc_id: 169230

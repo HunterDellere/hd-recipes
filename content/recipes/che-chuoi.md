@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chè chuối (Vietnamese banana, tapioca, and coconut chè)'
 desc: 'Ripe bananas poached in a sweetened coconut milk base with small tapioca pearls. Builds in three thermal phases so the banana keeps its shape, the tapioca cooks through, and the coconut milk never breaks.'
 metaDesc: 'Vietnamese chè chuối, banana, tapioca pearl, and coconut milk dessert. Three-phase build for clean coconut emulsion and toasted peanut finish.'
-tags: ['che', 'vietnamese-dessert', 'vietnamese', 'dessert', 'coconut', 'tropical']
+tags: ['che', 'tropical']
 updated: '2026-05-16'
 
 servings: 4

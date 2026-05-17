@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai iced tea with salted vanilla whip'
 desc: 'Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted vanilla cream that floats and slowly cascades.'
 metaDesc: 'Thai iced tea with toasted whole spices, dark brown sugar, and a salted vanilla whipped cream float. No food dye, no mix.'
-tags: ['drink', 'tea', 'thai', 'dessert']
+tags: []
 updated: '2026-04-26'
 
 servings: 2

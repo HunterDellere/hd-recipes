@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Individual fluffy chocolate cakes'
 desc: 'Two 4-inch tall, light-crumbed chocolate cakes built on creamed butter, bloomed Dutch cocoa, and sour cream for tenderness. Designed to be served warm with a scoop of ice cream melting into the open crumb.'
 metaDesc: 'Light, fluffy individual chocolate cakes baked in two 4-inch pans. Creamed butter, sour cream, bloomed cocoa. Built to pair with melting ice cream.'
-tags: ['cake', 'chocolate', 'dessert', 'comfort']
+tags: ['cake', 'comfort']
 updated: '2026-05-09'
 
 servings: 2

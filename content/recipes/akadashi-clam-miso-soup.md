@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Akadashi clam miso soup (asari no akadashi)'
 desc: 'Nagoya and Osaka kansai-style miso soup built on red miso (hatcho or aka) and littleneck or asari clams. The clams release their own succinic-acid umami into the dashi during a brief simmer, producing a soup where three umami nucleotides stack: glutamate from the kombu, inosinate from the katsuobushi, and succinate from the clams. The red miso supplies the dark, fermented, robust character that defines the Nagoya akadashi tradition, and the broth eats fuller, more savory, and more bracing than the everyday white-miso washoku bowl.'
 metaDesc: 'Akadashi clam miso soup: red-miso Nagoya-style soup with littleneck or asari clams, three stacking umami nucleotides (glutamate, inosinate, succinate), the robust kansai-region answer to the everyday white-miso bowl.'
-tags: ['japanese', 'soup', 'umami', 'seafood', 'quick']
+tags: ['soup', 'umami', 'seafood', 'quick']
 updated: '2026-05-15'
 
 servings: 4

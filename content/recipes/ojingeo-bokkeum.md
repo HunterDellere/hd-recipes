@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Korean spicy stir-fried squid (ojingeo bokkeum, 오징어볶음)'
 desc: 'Cross-hatch-scored squid stir-fried at high heat with onion, carrot, scallion, and a gochujang-and-gochugaru sauce sweetened with mirin and balanced with soy and sesame oil. The Korean expression of the 90-second high-heat squid window. Served with steamed rice or wrapped in lettuce-and-perilla.'
 metaDesc: 'Ojingeo bokkeum: Korean spicy stir-fried squid with gochujang, gochugaru, scored tubes, vegetables. Sweet-spicy-savory; the canonical Korean squid stir-fry.'
-tags: ['korean', 'seafood', 'fish', 'spicy', 'stir-fry', 'weeknight']
+tags: ['seafood', 'fish', 'spicy', 'stir-fry', 'weeknight']
 updated: '2026-05-09'
 
 servings: 3

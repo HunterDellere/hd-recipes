@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Banana bread'
 desc: 'A one-bowl quick bread that lives or dies on the ripeness of the bananas and the brown butter. Maximally soft crumb, deep caramel-banana aroma, no creaming, no mixer.'
 metaDesc: 'Banana bread with brown butter and overripe bananas. One bowl, no mixer, ready in an hour. The molecular case for why ripeness matters more than recipe.'
-tags: ['american', 'comfort', 'dessert', 'breakfast', 'fruit', 'quick-bread', 'bread']
+tags: ['comfort', 'bread']
 updated: '2026-05-09'
 
 servings: 10

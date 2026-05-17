@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Chives","status":"complete","tags":["herb","aromatic","vegetable"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Chives","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">chives (finishing herb, dairy dressing garnish, German potato salad finish)</span>
-          <span class="sub-card-use">green onion / scallion tops, very thinly sliced (1 mm rounds), green portion only</span>
-          <p class="sub-card-note">The closest available everyday substitute and an acceptable swap in casual cooking. The dish reads slightly more onion-forward and the scallion tops are textually coarser; for delicate French or Northern European applications the substitution is meaningfully noticeable. Use 75 percent of the chive mass to compensate for the stronger aromatic.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">chives (when the cook wants a milder herb finish)</span>
-          <span class="sub-card-use">fresh parsley, finely chopped, plus a small dab of garlic confit</span>
-          <p class="sub-card-note">Different aromatic register entirely; the parsley provides the green herbal finish and the garlic confit provides the mild allium note without the chive sharpness. Works in French and Mediterranean register; not a substitute in dishes where chives are structural (chive sour cream for blini, German potato salad finish).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">chives (when fresh is unavailable)</span>
-          <span class="sub-card-use">frozen chives, used directly from frozen</span>
-          <p class="sub-card-note">Frozen chives retain most of the aromatic but go textually limp on thaw. Acceptable in cooked-into-sauce applications and dairy dressings; less successful as a visible-garnish scattering where the limp texture reads as wilted. Avoid freeze-dried chives; the aromatic does not survive.</p>
-        </li>
+        <li><strong>chives (finishing herb, dairy dressing garnish, German potato salad finish)</strong> → green onion / scallion tops, very thinly sliced (1 mm rounds), green portion only <span class="sub-note">The closest available everyday substitute and an acceptable swap in casual cooking. The dish reads slightly more onion-forward and the scallion tops are textually coarser; for delicate French or Northern European applications the substitution is meaningfully noticeable. Use 75 percent of the chive mass to compensate for the stronger aromatic.</span></li>
+        <li><strong>chives (when the cook wants a milder herb finish)</strong> → fresh parsley, finely chopped, plus a small dab of garlic confit <span class="sub-note">Different aromatic register entirely; the parsley provides the green herbal finish and the garlic confit provides the mild allium note without the chive sharpness. Works in French and Mediterranean register; not a substitute in dishes where chives are structural (chive sour cream for blini, German potato salad finish).</span></li>
+        <li><strong>chives (when fresh is unavailable)</strong> → frozen chives, used directly from frozen <span class="sub-note">Frozen chives retain most of the aromatic but go textually limp on thaw. Acceptable in cooked-into-sauce applications and dairy dressings; less successful as a visible-garnish scattering where the limp texture reads as wilted. Avoid freeze-dried chives; the aromatic does not survive.</span></li>
     </ul>
 
     
@@ -132,6 +122,10 @@
     <div class="rl-cards">
         <a class="rl-card" href="../recipes/german-warm-potato-salad-with-bacon-and-mustard.html" data-category="recipes">
           <span class="rl-card-title">German warm potato salad with bacon and mustard</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/goi-cuon-fresh-rolls-with-shrimp-and-pork.html" data-category="recipes">
+          <span class="rl-card-title">Goi cuon (Vietnamese fresh rolls with shrimp and pork)</span>
           
         </a>
         <a class="rl-card" href="../recipes/green-goddess-grain-salad.html" data-category="recipes">
@@ -143,61 +137,7 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="fresh-thyme.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fresh thyme</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="mint.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mint</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="cilantro.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cilantro (coriander leaves)</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="parsley.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Flat-leaf parsley</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="purslane.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Purslane</span>
-          <span class="rl-card-why">herb · vegetable</span>
-        </a>
-        <a class="rl-card" href="dried-oregano.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Dried oregano (Mediterranean)</span>
-          <span class="rl-card-why">herb · aromatic</span>
-        </a>
-        <a class="rl-card" href="fennel-bulb.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel bulb</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/mortar-pounding.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Mortar pounding (clay vs granite)</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="chipotle-in-adobo.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="chipotle-in-adobo.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Chipotle in adobo</span>
     </a><a class="adj-nav-link" href="chuck-eye-steak.html">

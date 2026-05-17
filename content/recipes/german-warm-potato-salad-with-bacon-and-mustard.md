@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'German warm potato salad with bacon and mustard'
 desc: 'Schwäbischer Kartoffelsalat in the Southern German tradition: thin-sliced waxy potatoes dressed warm in their own steam window with a vinegar-mustard-stock-and-bacon-fat emulsion, finished with crisp bacon lardons, sweated onion, and a deep fold of fresh chives and parsley. The dressing is built directly in the rendered bacon fat by deglazing with white wine vinegar, dissolving dijon and a measured pinch of sugar into the hot fond, then thinning with chicken stock; poured over still-warm potatoes that absorb the dressing as they cool, the salad reads tart, savory, and structurally satisfying in a way no cold mayonnaise-bound American potato salad approaches.'
 metaDesc: 'German warm potato salad with bacon and mustard: Schwäbischer Kartoffelsalat with rendered bacon lardons, dijon-vinegar-stock dressing, and thin-sliced waxy potatoes dressed in the steam window.'
-tags: ['salad', 'german', 'potato', 'pork', 'side', 'comfort', 'acid', 'umami']
+tags: ['salad', 'pork', 'comfort', 'umami']
 updated: '2026-05-10'
 
 servings: 6

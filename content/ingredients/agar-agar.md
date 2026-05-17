@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Agar-agar'
 desc: 'Polysaccharide gelling agent extracted from red seaweed. Sets firmer and at higher temperatures than gelatin, with a clean snap rather than melt. The structural backbone of most Southeast Asian jellies.'
-tags: ['hydrocolloid', 'jelly', 'thickener', 'vegan']
+tags: ['hydrocolloid', 'jelly', 'vegan']
 density_g_per_ml: 0.4
 imperial_pref: 'tsp'
 updated: '2026-05-16'

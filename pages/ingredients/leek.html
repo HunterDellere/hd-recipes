@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Leek","status":"complete","tags":["vegetable","aromatic"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Leek","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">leek (fish stock or white mirepoix)</span>
-          <span class="sub-card-use">yellow onion plus a small bunch of scallion whites</span>
-          <p class="sub-card-note">Use 0.5 g yellow onion plus 0.25 g scallion whites per 1 g leek called for. The dish reads slightly sharper and less sweet, but the structural allium contribution is intact. The classical French fumet specifically calls for leek over onion because the broth wants sweetness without onion bite; the substitution is acceptable but distinct.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">leek (étuver, slow-cooked in butter)</span>
-          <span class="sub-card-use">sweet onion (Vidalia, Walla Walla) cooked the same way</span>
-          <p class="sub-card-note">Vidalia or Walla Walla sweet onion has the closest sugar profile to slow-cooked leek; sweat in butter the same way, 20 to 25 minutes, until silky and golden. The dish reads slightly more onion-forward but with similar sweetness.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">leek (charred halved, restaurant side)</span>
-          <span class="sub-card-use">spring onion or scallion bunches, grilled or charred whole</span>
-          <p class="sub-card-note">Spring onion (the small bulbed version) or large scallion bunches grill in a similar window and read structurally similar; the dish reads more delicate.</p>
-        </li>
+        <li><strong>leek (fish stock or white mirepoix)</strong> → yellow onion plus a small bunch of scallion whites <span class="sub-note">Use 0.5 g yellow onion plus 0.25 g scallion whites per 1 g leek called for. The dish reads slightly sharper and less sweet, but the structural allium contribution is intact. The classical French fumet specifically calls for leek over onion because the broth wants sweetness without onion bite; the substitution is acceptable but distinct.</span></li>
+        <li><strong>leek (étuver, slow-cooked in butter)</strong> → sweet onion (Vidalia, Walla Walla) cooked the same way <span class="sub-note">Vidalia or Walla Walla sweet onion has the closest sugar profile to slow-cooked leek; sweat in butter the same way, 20 to 25 minutes, until silky and golden. The dish reads slightly more onion-forward but with similar sweetness.</span></li>
+        <li><strong>leek (charred halved, restaurant side)</strong> → spring onion or scallion bunches, grilled or charred whole <span class="sub-note">Spring onion (the small bulbed version) or large scallion bunches grill in a similar window and read structurally similar; the dish reads more delicate.</span></li>
     </ul>
 
     
@@ -147,55 +137,46 @@
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="fennel-bulb.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel bulb</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="red-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Red onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="agar-agar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Agar-agar</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="white-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">White onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="yellow-onion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Yellow onion</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="chives.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Chives</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="all-purpose-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">All-purpose flour</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="garlic.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Garlic</span>
-          <span class="rl-card-why">aromatic</span>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">related</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">2</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card is-strong" href="../techniques/mortar-pounding.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Mortar pounding (clay vs granite)</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="../techniques/comal-charring.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Comal charring (vegetables, chilies, tortillas)</span>
-          <span class="rl-card-why">aromatic · vegetable</span>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">related</span>
         </a>
         </div>
       </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="lamb-shoulder.html">
+    </div><nav class="adj-nav"><a class="adj-nav-link" href="lard.html">
       <span class="adj-nav-label">← Previous</span>
-      <span class="adj-nav-title">Lamb shoulder (bone-in)</span>
+      <span class="adj-nav-title">Lard (manteca)</span>
     </a><a class="adj-nav-link" href="lemon.html">
       <span class="adj-nav-label">Next →</span>
       <span class="adj-nav-title">Lemon</span>

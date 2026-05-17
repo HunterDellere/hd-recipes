@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pomegranate molasses'
 desc: 'Pomegranate juice reduced 4:1 over 30 to 45 minutes to a deep-burgundy, sour-sweet syrup. The Levantine and Persian sour anchor that defines fattoush dressings, fesenjan, and muhammara.'
 metaDesc: 'Homemade pomegranate molasses: pomegranate juice reduced 4:1 to a thick, sour-sweet syrup. Reduction chemistry, troubleshooting, and use across Levantine and Persian cooking.'
-tags: ['sauce', 'levantine', 'pantry', 'make-ahead']
+tags: ['pantry', 'make-ahead']
 updated: '2026-05-10'
 
 servings: 16

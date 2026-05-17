@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Glutinous rice (sticky rice, sweet rice)'
 desc: 'Short- to medium-grain rice (Oryza sativa, glutinous cultivars) whose endosperm is essentially pure amylopectin. Cooks to a translucent, chewy, fully cohesive mass with no individual-grain separation. The table rice of Laos, northeast Thailand, and parts of Yunnan; the structural rice of mochi, zongzi, sticky-rice cakes, and toasted-rice powder.'
 metaDesc: 'Glutinous rice: the no-amylose endosperm, why it cooks sticky, soak-and-steam method, role in Lao and Isaan eating, and applications across mochi, zongzi, and toasted rice powder.'
-tags: ['rice', 'grain', 'pantry', 'thai']
+tags: ['rice', 'pantry']
 density_g_per_ml: 0.86
 imperial_pref: 'cup'
 updated: '2026-05-10'

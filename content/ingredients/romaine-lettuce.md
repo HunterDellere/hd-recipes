@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Romaine lettuce'
 desc: 'Lactuca sativa var. longifolia. The upright, ribbed lettuce of the Levant and the Caesar salad — engineered by structure for crisp ribs and tender leaf tips that hold dressing without wilting.'
 metaDesc: 'Romaine lettuce: the rib-vs-leaf structural divide, why it carries dressings better than tender lettuces, washing and drying for the dressing window, and storage that holds the snap.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 usda_fdc_id: 169247

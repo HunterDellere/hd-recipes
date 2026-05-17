@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Hazelnut'
 desc: 'The seed of Corylus avellana (European hazel) and Corylus americana (American). Sweet, structural, with a papery skin that turns bitter and tannic if left on after toasting. The defining nut of Piedmontese and Turkish baking.'
 metaDesc: 'Hazelnut (filbert): the species, the bitter-skin removal step, toasting at 175°C, role across Piedmontese gianduia, Turkish baklava, modern grain salads, and Pacific Northwest baking.'
-tags: ['nuts', 'pantry', 'fat']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 0.55

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai'
 desc: 'Balance across four registers (sweet, salt, heat, sour) held within a single dish, not separated across courses. The Thai catalog here is drinks, for now, and they teach extraction.'
 metaDesc: 'Thai cooking on hd-recipes: the four-register balance, the current pantry, and an honest note that the catalog is drinks-only so far. Where to start with extraction.'
-tags: ['thai']
+tags: []
 updated: '2026-04-26'
 ---
 

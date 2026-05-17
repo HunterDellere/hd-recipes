@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chili oil (辣椒油)'
 desc: 'Neutral oil infused with dried chilies and aromatics, with the toasted chili sediment retained. Both the clear oil and the sediment carry distinct functions in a dish.'
 metaDesc: 'Chili oil: infused fat with chili sediment. How to read the heat-to-aroma balance, why temperature matters, and which jar to buy.'
-tags: ['fat', 'chinese', 'spicy']
+tags: ['spicy']
 density_g_per_ml: 0.93
 imperial_pref: 'tbsp'
 updated: '2026-04-26'

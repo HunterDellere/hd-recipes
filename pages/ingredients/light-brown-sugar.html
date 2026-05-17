@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,38 +109,14 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">light brown sugar (any baking application)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="granulated-sugar.html">granulated sugar</a> + molasses (rebuilt)</span>
-          <p class="sub-card-note">For 1 cup packed (213 g): 200 g granulated + 13 g (~1 tbsp) molasses. Mix until evenly coated. Behaves identically because it is the same construction.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">light brown sugar (chocolate chip cookies, blondies, chewy bakes)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="dark-brown-sugar.html">dark brown sugar</a></span>
-          <p class="sub-card-note">1:1 by weight. Cookie spreads slightly more, browns deeper, reads more strongly of molasses. Often an upgrade in chocolate-chip cookies; can overwhelm delicate cakes and white-flour bakes.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">light brown sugar (delicate cake or crumb, neutral sweetness desired)</span>
-          <span class="sub-card-use">granulated sugar</span>
-          <p class="sub-card-note">Loses the moisture, acid, and toffee notes; cake sets crisper and paler with flat sucrose-only sweetness. Acceptable when those changes are wanted; not a silent swap.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">light brown sugar (Latin American or Caribbean preparations)</span>
-          <span class="sub-card-use">piloncillo or panela</span>
-          <p class="sub-card-note">Unrefined cane sugar with all the original molasses intact. Sold in cones or solid blocks; grate or dissolve in liquid. Slightly more mineral and complex than refined brown sugar; closer to muscovado in spirit. Use 1:1 by weight.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">light brown sugar (Indian and South Asian preparations)</span>
-          <span class="sub-card-use">jaggery (gur)</span>
-          <p class="sub-card-note">Unrefined sugarcane or palm-sugar block, soft to crumbly depending on style. Carries deeper caramel, faint mineral, and slightly smoky notes. Use 1:1 by weight; expect a more pronounced flavor.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">light brown sugar (lower-glycemic alternative, baked goods)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="coconut-sugar.html">coconut sugar</a></span>
-          <p class="sub-card-note">Less sweet (~75% the perceived sweetness of granulated), with caramel notes from inulin and trace molasses-equivalents. Use 1:1 by weight; cookie spread will be less because the sugar is less hygroscopic.</p>
-        </li>
+        <li><strong>light brown sugar (any baking application)</strong> → <a class="x-link" data-category="ingredients" href="granulated-sugar.html">granulated sugar</a> + molasses (rebuilt) <span class="sub-note">For 1 cup packed (213 g): 200 g granulated + 13 g (~1 tbsp) molasses. Mix until evenly coated. Behaves identically because it is the same construction.</span></li>
+        <li><strong>light brown sugar (chocolate chip cookies, blondies, chewy bakes)</strong> → <a class="x-link" data-category="ingredients" href="dark-brown-sugar.html">dark brown sugar</a> <span class="sub-note">1:1 by weight. Cookie spreads slightly more, browns deeper, reads more strongly of molasses. Often an upgrade in chocolate-chip cookies; can overwhelm delicate cakes and white-flour bakes.</span></li>
+        <li><strong>light brown sugar (delicate cake or crumb, neutral sweetness desired)</strong> → granulated sugar <span class="sub-note">Loses the moisture, acid, and toffee notes; cake sets crisper and paler with flat sucrose-only sweetness. Acceptable when those changes are wanted; not a silent swap.</span></li>
+        <li><strong>light brown sugar (Latin American or Caribbean preparations)</strong> → piloncillo or panela <span class="sub-note">Unrefined cane sugar with all the original molasses intact. Sold in cones or solid blocks; grate or dissolve in liquid. Slightly more mineral and complex than refined brown sugar; closer to muscovado in spirit. Use 1:1 by weight.</span></li>
+        <li><strong>light brown sugar (Indian and South Asian preparations)</strong> → jaggery (gur) <span class="sub-note">Unrefined sugarcane or palm-sugar block, soft to crumbly depending on style. Carries deeper caramel, faint mineral, and slightly smoky notes. Use 1:1 by weight; expect a more pronounced flavor.</span></li>
+        <li><strong>light brown sugar (lower-glycemic alternative, baked goods)</strong> → <a class="x-link" data-category="ingredients" href="coconut-sugar.html">coconut sugar</a> <span class="sub-note">Less sweet (~75% the perceived sweetness of granulated), with caramel notes from inulin and trace molasses-equivalents. Use 1:1 by weight; cookie spread will be less because the sugar is less hygroscopic.</span></li>
     </ul>
 
     
@@ -151,6 +129,10 @@
         </a>
         <a class="rl-card" href="../recipes/brown-butter-sugar-cookies.html" data-category="recipes">
           <span class="rl-card-title">Brown butter sugar cookies</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/bulgogi.html" data-category="recipes">
+          <span class="rl-card-title">Bulgogi (Asian pear-marinated grilled beef)</span>
           
         </a>
         <a class="rl-card" href="../recipes/double-dark-chocolate-crinkle-cookies.html" data-category="recipes">
@@ -174,9 +156,9 @@
           
         </a>
     </div>
-  <nav class="adj-nav"><a class="adj-nav-link" href="lemon.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="lemongrass.html">
       <span class="adj-nav-label">← Previous</span>
-      <span class="adj-nav-title">Lemon</span>
+      <span class="adj-nav-title">Lemongrass</span>
     </a><a class="adj-nav-link" href="light-soy-sauce.html">
       <span class="adj-nav-label">Next →</span>
       <span class="adj-nav-title">Light soy sauce (生抽)</span>

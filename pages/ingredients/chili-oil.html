@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Chili oil (辣椒油)","status":"complete","tags":["fat","chinese","spicy"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Chili oil (辣椒油)","status":"complete","tags":["spicy"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -105,18 +107,10 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">chili oil</span>
-          <span class="sub-card-use">neutral oil + crushed dried chilies, bloomed</span>
-          <p class="sub-card-note">Heat the oil to 180°C, kill heat, drop in 1 tbsp dried chili flakes per 100ml oil, let stand 20 min. Single-note version of the real thing: no aromatic depth from layered spices.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">chili crisp (sediment-style)</span>
-          <span class="sub-card-use">plain chili oil + a pinch of toasted sesame seeds and salt</span>
-          <p class="sub-card-note">Approximates the spoon-feel but lacks the fermented black bean and fried garlic depth of a real crisp.</p>
-        </li>
+        <li><strong>chili oil</strong> → neutral oil + crushed dried chilies, bloomed <span class="sub-note">Heat the oil to 180°C, kill heat, drop in 1 tbsp dried chili flakes per 100ml oil, let stand 20 min. Single-note version of the real thing: no aromatic depth from layered spices.</span></li>
+        <li><strong>chili crisp (sediment-style)</strong> → plain chili oil + a pinch of toasted sesame seeds and salt <span class="sub-note">Approximates the spoon-feel but lacks the fermented black bean and fried garlic depth of a real crisp.</span></li>
     </ul>
 
     
@@ -144,12 +138,16 @@
       <div class="rl-group" data-related-group="recipes">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
+          <span class="rl-group-count">2</span>
         </h3>
         <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/mapo-tofu-poured-set.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Poured-set mapo tofu (douhua mapo)</span>
-          <span class="rl-card-why">spicy · chinese</span>
+        <a class="rl-card" href="../recipes/suya.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Suya (Nigerian peanut-spiced grilled beef skewers)</span>
+          <span class="rl-card-why">spicy</span>
+        </a>
+        <a class="rl-card" href="../recipes/mole-poblano.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Mole poblano</span>
+          <span class="rl-card-why">spicy</span>
         </a>
         </div>
       </div>
@@ -160,25 +158,25 @@
           <span class="rl-group-count">5</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="toasted-sesame-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Toasted sesame oil</span>
-          <span class="rl-card-why">fat · chinese</span>
+        <a class="rl-card is-strong" href="green-chili.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Green chili (Indian hari mirch)</span>
+          <span class="rl-card-why">spicy</span>
+        </a>
+        <a class="rl-card is-strong" href="scotch-bonnet.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Scotch bonnet</span>
+          <span class="rl-card-why">spicy</span>
         </a>
         <a class="rl-card" href="dried-chilies.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Dried Chinese chilies</span>
-          <span class="rl-card-why">spicy · chinese</span>
+          <span class="rl-card-why">spicy</span>
         </a>
-        <a class="rl-card" href="avocado-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Avocado oil</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card" href="gochugaru.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Gochugaru (Korean chili flakes, 고추가루)</span>
+          <span class="rl-card-why">spicy</span>
         </a>
-        <a class="rl-card" href="neutral-oil.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Neutral oil (peanut, rice bran, canola, refined avocado)</span>
-          <span class="rl-card-why">fat</span>
-        </a>
-        <a class="rl-card" href="walnuts.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Walnuts</span>
-          <span class="rl-card-why">fat</span>
+        <a class="rl-card" href="chipotle-in-adobo.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Chipotle in adobo</span>
+          <span class="rl-card-why">spicy</span>
         </a>
         </div>
       </div>
@@ -186,16 +184,12 @@
       <div class="rl-group" data-related-group="techniques">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">2</span>
+          <span class="rl-group-count">1</span>
         </h3>
         <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card is-strong" href="../techniques/red-oil-rendering.html" data-category="techniques" data-reason="tag">
+        <a class="rl-card" href="../techniques/red-oil-rendering.html" data-category="techniques" data-reason="tag">
           <span class="rl-card-title">Red oil rendering</span>
-          <span class="rl-card-why">fat · spicy</span>
-        </a>
-        <a class="rl-card" href="../techniques/hot-oil-finish.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Hot-oil finish (smoking-oil bloom over raw aromatics)</span>
-          <span class="rl-card-why">fat · chinese</span>
+          <span class="rl-card-why">spicy</span>
         </a>
         </div>
       </div>

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Spaghetti with beef, oyster mushroom, and shallot ragu'
 desc: 'A 45-minute weeknight ragu engineered around the umami partnership between dry-seared oyster mushrooms and deeply browned ground chuck. Shallots melted in beef fat for a silky base, anchovy and tomato paste fortifying the meat axis, finished as a pan emulsion against starchy pasta water and cold butter.'
 metaDesc: 'Spaghetti with ground beef, oyster mushroom, and shallot ragu: Maillard-driven weeknight pasta with a four-tier umami stack and a pan-emulsion finish. 45 minutes, four servings.'
-tags: ['weeknight', 'pasta', 'italian', 'umami', 'comfort']
+tags: ['weeknight', 'pasta', 'umami', 'comfort']
 updated: '2026-05-10'
 rating: 5
 

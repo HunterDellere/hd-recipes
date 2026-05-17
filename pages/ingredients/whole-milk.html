@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Whole milk","status":"complete","tags":["dairy"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Whole milk","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -108,33 +110,13 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">whole milk (custards, pastry cream, set desserts)</span>
-          <span class="sub-card-use">half-and-half</span>
-          <p class="sub-card-note">Slightly higher fat (~10–12%); richer body, similar setting behavior. Reduce any added cream by an equivalent amount or the dish runs heavy.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">whole milk (cooking, sauces, batters)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="evaporated-milk.html">evaporated milk</a> + water (1:1 by volume)</span>
-          <p class="sub-card-note">Reconstitutes to roughly whole-milk fat ratio with a faint cooked note from the canning sterilization. Works in most savory and sweet applications.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">whole milk (light dilution, beverages, cereal)</span>
-          <span class="sub-card-use">2% or 1% lowfat milk</span>
-          <p class="sub-card-note">Acceptable when the milk is a vehicle, not the flavor. Loses fat-soluble carry; drinks and cereals taste thinner.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">whole milk (bread doughs, milk-rich <a class="x-link" data-category="techniques" href="../techniques/enriched-dough.html">enriched dough</a>)</span>
-          <span class="sub-card-use">water + 2 tbsp / 30 g milk powder per 240 ml</span>
-          <p class="sub-card-note">Reconstructs the proteins and lactose that drive browning and softness. Common bakery move when fresh dairy is not reliable.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">whole milk (vegan applications)</span>
-          <span class="sub-card-use">oat or soy milk</span>
-          <p class="sub-card-note">Soy carries proteins close to dairy and curdles or browns similarly. Oat milk runs sweeter and thinner. Neither carries fat-soluble flavor as well as dairy; expect a flatter spice infusion.</p>
-        </li>
+        <li><strong>whole milk (custards, pastry cream, set desserts)</strong> → half-and-half <span class="sub-note">Slightly higher fat (~10–12%); richer body, similar setting behavior. Reduce any added cream by an equivalent amount or the dish runs heavy.</span></li>
+        <li><strong>whole milk (cooking, sauces, batters)</strong> → <a class="x-link" data-category="ingredients" href="evaporated-milk.html">evaporated milk</a> + water (1:1 by volume) <span class="sub-note">Reconstitutes to roughly whole-milk fat ratio with a faint cooked note from the canning sterilization. Works in most savory and sweet applications.</span></li>
+        <li><strong>whole milk (light dilution, beverages, cereal)</strong> → 2% or 1% lowfat milk <span class="sub-note">Acceptable when the milk is a vehicle, not the flavor. Loses fat-soluble carry; drinks and cereals taste thinner.</span></li>
+        <li><strong>whole milk (bread doughs, milk-rich <a class="x-link" data-category="techniques" href="../techniques/enriched-dough.html">enriched dough</a>)</strong> → water + 2 tbsp / 30 g milk powder per 240 ml <span class="sub-note">Reconstructs the proteins and lactose that drive browning and softness. Common bakery move when fresh dairy is not reliable.</span></li>
+        <li><strong>whole milk (vegan applications)</strong> → oat or soy milk <span class="sub-note">Soy carries proteins close to dairy and curdles or browns similarly. Oat milk runs sweeter and thinner. Neither carries fat-soluble flavor as well as dairy; expect a flatter spice infusion.</span></li>
     </ul>
 
     
@@ -143,6 +125,10 @@
     <div class="rl-cards">
         <a class="rl-card" href="../recipes/brown-sugar-milk-tea-with-boba.html" data-category="recipes">
           <span class="rl-card-title">Brown sugar milk tea with boba (Tiger Sugar style)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/carnitas.html" data-category="recipes">
+          <span class="rl-card-title">Carnitas</span>
           
         </a>
         <a class="rl-card" href="../recipes/chai-pumpkin-cupcakes.html" data-category="recipes">
@@ -193,6 +179,10 @@
           <span class="rl-card-title">Masala chai (proper Indian milk-spice tea)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/moussaka.html" data-category="recipes">
+          <span class="rl-card-title">Moussaka</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/olive-garden-breadsticks.html" data-category="recipes">
           <span class="rl-card-title">Olive Garden breadsticks (the copycat)</span>
           
@@ -201,12 +191,20 @@
           <span class="rl-card-title">Overnight oats with warm spice and grated pear</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/rasmalai.html" data-category="recipes">
           <span class="rl-card-title">Ras malai (chhena dumplings in saffron-cardamom milk)</span>
           
         </a>
         <a class="rl-card" href="../recipes/kheer.html" data-category="recipes">
           <span class="rl-card-title">Rice kheer (chawal ki kheer)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/shrimp-and-grits.html" data-category="recipes">
+          <span class="rl-card-title">Shrimp and grits (Lowcountry)</span>
           
         </a>
         <a class="rl-card" href="../recipes/spaghetti-bolognese.html" data-category="recipes">
@@ -226,61 +224,7 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="evaporated-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Evaporated milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card is-strong" href="sweetened-condensed-milk.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sweetened condensed milk</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="queso-fresco.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Queso fresco</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="greek-yogurt.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Greek yogurt</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="butter.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Butter (unsalted)</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="heavy-cream.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Heavy cream</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        <a class="rl-card" href="samna.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Samna (clarified butter)</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/acid-milk-sour.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Acid-milk souring</span>
-          <span class="rl-card-why">dairy</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="white-wine-vinegar.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="white-wine-vinegar.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">White wine vinegar</span>
     </a><a class="adj-nav-link" href="whole-white-fish.html">

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fish sauce'
 desc: 'Anchovies (or other small fish) salted at a 1:3 ratio and fermented for 12 to 24 months until the proteins enzymatically hydrolyze into a clear amber-brown liquid that smells aggressively of fermented fish and tastes structurally savory. The defining seasoning of Vietnamese and Thai cooking and a major contributor across Cantonese, Filipino, and Korean kitchens.'
 metaDesc: 'Fish sauce: anchovy enzymatic fermentation, Vietnamese vs Thai vs Korean styles, nitrogen grade, role in nuoc cham, pad thai, kimchi.'
-tags: ['umami', 'pantry', 'fermentation', 'sauce']
+tags: ['umami', 'pantry', 'fermentation']
 density_g_per_ml: 1.20
 updated: '2026-05-09'
 

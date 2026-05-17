@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Katsuobushi (dried bonito flakes)","status":"complete","tags":["umami","japanese","fish","pantry"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Katsuobushi (dried bonito flakes)","status":"complete","tags":["umami","fish","pantry"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,28 +109,12 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">katsuobushi (ichiban dashi, refined dashi applications)</span>
-          <span class="sub-card-use">no good substitute</span>
-          <p class="sub-card-note">The smoke-fermented inosinate profile has no analog. If unavailable, make a different stock (chicken, shiitake-kombu vegetarian dashi) rather than substituting.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">katsuobushi (niban dashi, miso soup, simmered dishes)</span>
-          <span class="sub-card-use">niboshi (dried sardines), 15 g per litre</span>
-          <p class="sub-card-note">Stronger, oilier, more rustic ,  the working-class home miso-soup base. Pinch off the heads and dark belly meat (they go bitter), simmer 5 to 7 minutes from cold water. Different character but plays the same supporting-umami role.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">katsuobushi (vegetarian dashi)</span>
-          <span class="sub-card-use">dried shiitake mushrooms (cold-soaked overnight)</span>
-          <p class="sub-card-note">Guanylate rather than inosinate ,  different nucleotide, same synergy multiplier with kombu glutamate. The standard vegetarian dashi base.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">katsuobushi (finishing flakes on okonomiyaki, takoyaki, agedashi tofu)</span>
-          <span class="sub-card-use">pre-shaved hanakatsuo from any pack</span>
-          <p class="sub-card-note">For finishing applications, freshness of shave matters less than for dashi; pre-shaved flakes are the norm. Just check for oxidation off-notes.</p>
-        </li>
+        <li><strong>katsuobushi (ichiban dashi, refined dashi applications)</strong> → no good substitute <span class="sub-note">The smoke-fermented inosinate profile has no analog. If unavailable, make a different stock (chicken, shiitake-kombu vegetarian dashi) rather than substituting.</span></li>
+        <li><strong>katsuobushi (niban dashi, miso soup, simmered dishes)</strong> → niboshi (dried sardines), 15 g per litre <span class="sub-note">Stronger, oilier, more rustic ,  the working-class home miso-soup base. Pinch off the heads and dark belly meat (they go bitter), simmer 5 to 7 minutes from cold water. Different character but plays the same supporting-umami role.</span></li>
+        <li><strong>katsuobushi (vegetarian dashi)</strong> → dried shiitake mushrooms (cold-soaked overnight) <span class="sub-note">Guanylate rather than inosinate ,  different nucleotide, same synergy multiplier with kombu glutamate. The standard vegetarian dashi base.</span></li>
+        <li><strong>katsuobushi (finishing flakes on okonomiyaki, takoyaki, agedashi tofu)</strong> → pre-shaved hanakatsuo from any pack <span class="sub-note">For finishing applications, freshness of shave matters less than for dashi; pre-shaved flakes are the norm. Just check for oxidation off-notes.</span></li>
     </ul>
 
     
@@ -143,8 +129,16 @@
           <span class="rl-card-title">Furikake (homemade rice seasoning)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/okonomiyaki-osaka-style.html" data-category="recipes">
+          <span class="rl-card-title">Okonomiyaki (Osaka-style cabbage pancake)</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/ponzu.html" data-category="recipes">
           <span class="rl-card-title">Ponzu</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/shoyu-ramen-from-scratch.html" data-category="recipes">
+          <span class="rl-card-title">Shoyu ramen from scratch</span>
           
         </a>
         <a class="rl-card" href="../recipes/yaki-udon.html" data-category="recipes">
@@ -157,48 +151,39 @@
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
-      <div class="rl-group" data-related-group="recipes">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Pan-seared mackerel with daikon oroshi and ponzu</span>
-          <span class="rl-card-why">fish · japanese</span>
-        </a>
-        </div>
-      </div>
-
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="kombu.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Kombu (dried kelp)</span>
-          <span class="rl-card-why">japanese · umami</span>
-        </a>
-        <a class="rl-card is-strong" href="mirin.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mirin (hon-mirin)</span>
-          <span class="rl-card-why">japanese · umami</span>
-        </a>
-        <a class="rl-card is-strong" href="nori.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Nori (laver sheets)</span>
-          <span class="rl-card-why">japanese · umami</span>
-        </a>
-        <a class="rl-card is-strong" href="wakame.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Wakame (dried sea vegetable)</span>
-          <span class="rl-card-why">japanese · umami</span>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">fish · umami</span>
         </a>
         <a class="rl-card" href="mackerel.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Mackerel (saba)</span>
-          <span class="rl-card-why">fish · japanese</span>
-        </a>
-        <a class="rl-card" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Anchovy fillets</span>
           <span class="rl-card-why">fish · umami</span>
+        </a>
+        <a class="rl-card" href="squid.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Squid (calamari)</span>
+          <span class="rl-card-why">fish · pantry</span>
+        </a>
+        <a class="rl-card" href="black-beans.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Black beans (frijoles negros)</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card" href="canned-san-marzano-tomatoes.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Canned San Marzano tomatoes</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card" href="chaat-masala.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Chaat masala</span>
+          <span class="rl-card-why">umami · pantry</span>
+        </a>
+        <a class="rl-card" href="dried-porcini.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Dried porcini</span>
+          <span class="rl-card-why">umami · pantry</span>
         </a>
         </div>
       </div>
@@ -211,16 +196,16 @@
         <div class="rl-cards rl-cards--techniques">
         <a class="rl-card is-strong" href="../techniques/dashi.html" data-category="techniques" data-reason="tag">
           <span class="rl-card-title">Dashi (kombu and katsuobushi extraction)</span>
-          <span class="rl-card-why">fish · japanese</span>
+          <span class="rl-card-why">fish · umami</span>
         </a>
         </div>
       </div>
     </div><nav class="adj-nav"><a class="adj-nav-link" href="kashmiri-chili-powder.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Kashmiri chili powder (deggi mirch)</span>
-    </a><a class="adj-nav-link" href="kokum.html">
+    </a><a class="adj-nav-link" href="kecap-manis.html">
       <span class="adj-nav-label">Next →</span>
-      <span class="adj-nav-title">Kokum</span>
+      <span class="adj-nav-title">Kecap manis</span>
     </a></nav>
   
     <footer class="page-footer">

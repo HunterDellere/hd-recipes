@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Sake (cooking)'
 desc: 'Fermented rice wine: clean, dry, alcoholic. Tenderizes protein, deglazes pans, and carries volatile aromatics off the heat.'
-tags: ['japanese', 'pantry']
+tags: ['pantry']
 updated: '2026-04-29'
 density_g_per_ml: 0.99
 

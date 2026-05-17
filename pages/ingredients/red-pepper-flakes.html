@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Red pepper flakes (crushed red pepper)","status":"complete","tags":["spice","aromatic"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Red pepper flakes (crushed red pepper)","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,28 +109,12 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">red pepper flakes (Italian or Italian-American, blooming in oil for heat)</span>
-          <span class="sub-card-use">cayenne pepper (ground) or chiles de arbol (broken)</span>
-          <p class="sub-card-note">Cayenne is the dominant variety in commercial red pepper flakes anyway; ground cayenne is more concentrated, so use about ¼ to ⅓ the quantity by volume. Broken-up dried chiles de arbol (a Mexican thin-walled red chili) are the closest visual and flavor match.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">red pepper flakes (Middle Eastern preparation labeled &quot;red pepper flakes&quot;)</span>
-          <span class="sub-card-use">Aleppo pepper or Marash pepper</span>
-          <p class="sub-card-note">For a Middle Eastern recipe that calls for &quot;red pepper flakes&quot; non-specifically, the intended ingredient is usually Aleppo or Marash; use those at 1.5x the volume of red pepper flakes (they are less hot and more fruity).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">red pepper flakes (Korean dish)</span>
-          <span class="sub-card-use">gochugaru (Korean coarse chili flakes)</span>
-          <p class="sub-card-note">Gochugaru is the canonical Korean ingredient; substitute at 2x the volume of red pepper flakes (gochugaru is milder and more fruity, with a longer-blooming heat profile).</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">red pepper flakes (Sichuan dish)</span>
-          <span class="sub-card-use">crushed Sichuan-dried er-jin-tiao chili or chiles de arbol</span>
-          <p class="sub-card-note">Sichuan dried chilies (er-jin-tiao, facing-heaven, or chao tian jiao) are the canonical heat in Sichuan cooking; chiles de arbol are the closest Western-available substitute. Crushed red pepper reads &quot;Italian&quot; in a Sichuan dish.</p>
-        </li>
+        <li><strong>red pepper flakes (Italian or Italian-American, blooming in oil for heat)</strong> → cayenne pepper (ground) or chiles de arbol (broken) <span class="sub-note">Cayenne is the dominant variety in commercial red pepper flakes anyway; ground cayenne is more concentrated, so use about ¼ to ⅓ the quantity by volume. Broken-up dried chiles de arbol (a Mexican thin-walled red chili) are the closest visual and flavor match.</span></li>
+        <li><strong>red pepper flakes (Middle Eastern preparation labeled &quot;red pepper flakes&quot;)</strong> → Aleppo pepper or Marash pepper <span class="sub-note">For a Middle Eastern recipe that calls for &quot;red pepper flakes&quot; non-specifically, the intended ingredient is usually Aleppo or Marash; use those at 1.5x the volume of red pepper flakes (they are less hot and more fruity).</span></li>
+        <li><strong>red pepper flakes (Korean dish)</strong> → gochugaru (Korean coarse chili flakes) <span class="sub-note">Gochugaru is the canonical Korean ingredient; substitute at 2x the volume of red pepper flakes (gochugaru is milder and more fruity, with a longer-blooming heat profile).</span></li>
+        <li><strong>red pepper flakes (Sichuan dish)</strong> → crushed Sichuan-dried er-jin-tiao chili or chiles de arbol <span class="sub-note">Sichuan dried chilies (er-jin-tiao, facing-heaven, or chao tian jiao) are the canonical heat in Sichuan cooking; chiles de arbol are the closest Western-available substitute. Crushed red pepper reads &quot;Italian&quot; in a Sichuan dish.</span></li>
     </ul>
 
     
@@ -155,16 +141,40 @@
           <span class="rl-card-title">Greens and ricotta frittata</span>
           
         </a>
+        <a class="rl-card" href="../recipes/iskender-kebab.html" data-category="recipes">
+          <span class="rl-card-title">İskender kebab</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/italian-american-pork-meatballs-in-tomato.html" data-category="recipes">
           <span class="rl-card-title">Italian-American pork meatballs in tomato</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/lahmacun.html" data-category="recipes">
+          <span class="rl-card-title">Lahmacun</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/manti.html" data-category="recipes">
+          <span class="rl-card-title">Manti</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/menemen.html" data-category="recipes">
+          <span class="rl-card-title">Menemen</span>
           
         </a>
         <a class="rl-card" href="../recipes/olive-garden-italian-dressing.html" data-category="recipes">
           <span class="rl-card-title">Olive Garden Italian dressing (homemade copycat)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/pasta-alla-norma-sicilian.html" data-category="recipes">
+          <span class="rl-card-title">Pasta alla Norma</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/peanut-lime-dipping-sauce.html" data-category="recipes">
           <span class="rl-card-title">Peanut-lime dipping sauce</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pide.html" data-category="recipes">
+          <span class="rl-card-title">Pide</span>
           
         </a>
         <a class="rl-card" href="../recipes/rouille-saffron-garlic-aioli.html" data-category="recipes">
@@ -176,63 +186,9 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="black-pepper.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Black peppercorns</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="cinnamon-stick.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Cinnamon stick</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="fennel-seed.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Fennel seed</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="ginger.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Ginger (fresh)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card is-strong" href="star-anise.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Star anise</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card" href="thai-chili.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Thai bird chili (prik kee noo)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        <a class="rl-card" href="sichuan-peppercorns.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Sichuan peppercorns</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card" href="../techniques/comal-charring.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Comal charring (vegetables, chilies, tortillas)</span>
-          <span class="rl-card-why">spice · aromatic</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="red-onion.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="palm-oil.html">
       <span class="adj-nav-label">← Previous</span>
-      <span class="adj-nav-title">Red onion</span>
+      <span class="adj-nav-title">Red palm oil</span>
     </a><a class="adj-nav-link" href="red-wine-vinegar.html">
       <span class="adj-nav-label">Next →</span>
       <span class="adj-nav-title">Red wine vinegar</span>

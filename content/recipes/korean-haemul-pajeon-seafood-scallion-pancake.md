@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Haemul pajeon (Korean seafood and scallion pancake, 해물파전)'
 desc: 'A 28 cm cold-batter pancake of all-purpose flour, potato starch, and ice water poured over a tight bed of scallion whites, with squid rings, peeled shrimp, and shucked mussels worked into the surface. Set hard in a hot oil film, basted with extra oil at the edges for crisp, flipped once. The Korean canonical seafood pancake; the structural goal is shatter-crisp bottom, tender custardy middle, and a clear acid-and-soy dipping sauce cutting through. The cold-batter, high-oil, starch-loaded technique is the entire game.'
 metaDesc: 'Korean haemul pajeon: cold-batter seafood and scallion pancake with potato starch, ice water, squid, shrimp, mussels. Pan-fried to glass-crisp in a thin oil film; served with cho-ganjang dipping sauce.'
-tags: ['korean', 'seafood', 'fritter', 'fried', 'weeknight', 'umami']
+tags: ['seafood', 'fried', 'weeknight', 'umami']
 updated: '2026-05-10'
 
 servings: 4

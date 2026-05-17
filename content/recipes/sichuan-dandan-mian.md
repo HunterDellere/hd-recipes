@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sichuan dandan mian'
 desc: 'Wheat noodles in a sesame-chili sauce, topped with crispy rendered pork and ya cai. The sauce comes together in a bowl while the noodles boil.'
 metaDesc: 'Sichuan dandan noodles with crispy pork, ya cai, and a sesame-chili sauce emulsified with hot noodle water. Serves 6.'
-tags: ['noodles', 'pork', 'chinese', 'spicy', 'umami']
+tags: ['noodles', 'pork', 'spicy', 'umami']
 updated: '2026-04-26'
 
 servings: 6

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Baechu kimchi'
 desc: 'Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce paste and lacto-fermented for 3 to 7 days at room temperature before cold-storing indefinitely.'
 metaDesc: 'Traditional napa cabbage baechu kimchi: 7% brine, gochugaru-and-fish-sauce paste, 3 to 7 day room-temp ferment, indefinite cold storage. Salt math, brine timing, and care.'
-tags: ['fermentation', 'korean', 'pickle', 'side', 'weekend-project', 'make-ahead', 'umami', 'spicy', 'brassica']
+tags: ['fermentation', 'pickle', 'weekend-project', 'make-ahead', 'umami', 'spicy']
 updated: '2026-05-17'
 
 servings: 24

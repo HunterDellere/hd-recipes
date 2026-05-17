@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Nopales'
 desc: 'Opuntia ficus-indica cactus paddles. The flat, fleshy stem segments of the prickly pear cactus, eaten across Mexico and the southwestern United States as a vegetable. Pectin-and-arabinogalactan-rich; the mucilage chemistry defines every preparation.'
 metaDesc: 'Nopales: prickly pear cactus paddles. Mucilage chemistry, comal char vs blanch, glochid management, regional Mexican applications, fresh vs jarred sourcing.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.62
 imperial_pref: 'cup'
 grams_per_unit: 120

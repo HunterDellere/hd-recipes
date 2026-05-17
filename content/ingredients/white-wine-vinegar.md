@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'White wine vinegar'
 desc: 'Dry white wine fermented with acetobacter into a 6 to 7 percent acetic acid, lightly fruity, clean-finishing culinary vinegar. The default French and Central European vinegar for vinaigrettes, beurre blanc reductions, hollandaise acidification, German warm potato dressings, and any application where the acid should read as crisp without the wood-and-fruit weight of red wine vinegar or the harsher edge of distilled white.'
 metaDesc: 'White wine vinegar: 6 to 7 percent acetic acid, acetobacter fermentation, pH 2.6 to 2.8, why it suits French and German cooking and how it differs from red wine, cider, and rice vinegars.'
-tags: ['acid', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.01

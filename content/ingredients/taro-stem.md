@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Taro stem (bạc hà, elephant ear stem)'
 desc: 'Spongy aerial stem of certain taro varieties (Colocasia esculenta and related), used as a textural vegetable in Vietnamese, Bangladeshi, Filipino, and West African cooking. Pale-green to slightly purple, mildly grassy in flavor, with a porous cellular structure that absorbs broth like an edible sponge.'
 metaDesc: 'Taro stem (bạc hà): aerai-cell sponge structure, calcium-oxalate handling, role in canh chua and Filipino sinigang, preparation and peeling notes.'
-tags: ['vegetable']
+tags: []
 updated: '2026-05-10'
 
 about: |

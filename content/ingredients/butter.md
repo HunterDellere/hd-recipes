@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Butter (unsalted)'
 desc: 'Cow''s-milk fat with ~16% water and ~2% milk solids. The solids are the flavor lever; the water and the melt curve are why it behaves so differently in different roles.'
 metaDesc: 'Unsalted butter: 80% fat / 16% water / 2% milk solids. How it behaves across sautéing, baking, lamination, and emulsification, plus storage and brand notes.'
-tags: ['dairy', 'fat']
+tags: []
 density_g_per_ml: 0.911
 imperial_pref: 'tbsp'
 updated: '2026-04-29'

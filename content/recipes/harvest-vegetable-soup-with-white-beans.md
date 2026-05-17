@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Harvest vegetable soup with white beans'
 desc: 'A one-pot vegetable soup built on a foundation of slowly sweated leek and garlic, deepened with tomato paste fond, and brought to a brothy register with diced butternut squash, cannellini beans, and lacinato kale. The cooking water absorbs the vegetable juices into a light but savory broth. Finished with lemon juice, olive oil, and grated parmesan rind that has simmered in the pot for the entire cook. Vegan-able by omitting the parm; the bean cooking liquid (the starch and amino acids that leach out as the beans simmer) does most of the structural body work.'
 metaDesc: 'One-pot vegan harvest vegetable soup with butternut, lacinato kale, white beans, leek, and lemon. Healthy, hearty, holds 5 days refrigerated.'
-tags: ['soup', 'vegetable', 'legume', 'one-pot', 'make-ahead', 'healthy', 'winter']
+tags: ['soup', 'one-pot', 'make-ahead']
 updated: '2026-05-17'
 
 servings: 6

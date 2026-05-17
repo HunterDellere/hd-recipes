@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chè ba màu (three-color Vietnamese sweet bean dessert)'
 desc: 'Stratified parfait of sweetened mung bean, red bean, and pandan jelly under a coconut cream pour. The three colors hold cleanly because each layer is built at the right density and chilled before the next goes in.'
 metaDesc: 'Vietnamese chè ba màu, three-color sweet bean and pandan jelly dessert with coconut cream. Layered glass with mung bean, adzuki, and agar pandan.'
-tags: ['che', 'vietnamese-dessert', 'vietnamese', 'dessert', 'coconut', 'legume-dessert', 'tropical', 'jelly']
+tags: ['che', 'legume-dessert', 'tropical', 'jelly']
 updated: '2026-05-16'
 
 servings: 4

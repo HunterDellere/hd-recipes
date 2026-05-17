@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Slow soft scrambled eggs with brown butter and chives'
 desc: 'The French slow-curd scramble: eggs whisked off-heat with cold butter, cooked low and slow over a gentle burner with constant stirring, pulled the instant the curds set into a glossy custard, finished with a knob of brown butter and a heavy snowfall of fresh chives. Structurally distinct from American-style fast-scramble (which produces large dry curds at high heat); the slow French technique produces small soft curds that read almost like a savory custard. The defining example of how heat control transforms three plain ingredients (eggs, butter, salt) into a precision dish.'
 metaDesc: 'Slow soft scrambled eggs with brown butter and chives: the French slow-curd technique. Eggs cooked low and slow with butter for soft custardy curds, finished with brown butter and fresh chives.'
-tags: ['american', 'french', 'egg', 'quick', 'breakfast', 'weeknight', 'dairy']
+tags: ['egg', 'quick', 'weeknight']
 updated: '2026-05-15'
 
 servings: 2

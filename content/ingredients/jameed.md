@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Jameed'
 desc: 'Fermented sheep or goat yogurt, salted and sun-dried into stone-hard cones. Reconstitutes into a sour, funky, glutamate-heavy sauce base that no live yogurt approximates.'
 metaDesc: 'Jameed: the fermented dried sheep yogurt at the center of mansaf. The chemistry of how drying concentrates sourness and umami, how to reconstitute the stones, and why no fresh yogurt substitutes cleanly.'
-tags: ['dairy', 'umami', 'fermentation', 'levantine']
+tags: ['umami', 'fermentation']
 imperial_pref: 'oz'
 updated: '2026-05-06'
 

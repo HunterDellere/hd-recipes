@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Olive Garden Italian dressing (homemade copycat)'
 desc: 'The chain''s signature house Italian, the dressing that anchors the unlimited salad. White wine vinegar and oil base, finely grated parmesan, Italian herb blend, garlic, lemon, and a measured dose of corn syrup or honey for the sweet edge that distinguishes it from a proper Italian-American vinaigrette. Emulsified into a creamy pourable dressing rather than a broken oil-and-vinegar shake.'
 metaDesc: 'Olive Garden Italian dressing copycat recipe, homemade creamy Italian vinaigrette with parmesan, herbs, garlic, lemon, honey. Pourable salad dressing.'
-tags: ['condiment', 'sauce', 'copycat', 'american', 'italian-american', 'no-cook', 'quick', 'emulsion', 'herb']
+tags: ['condiment', 'copycat', 'no-cook', 'quick', 'emulsion']
 updated: '2026-05-17'
 
 servings: 12

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cantonese-style mapo with pork (gateway mapo)'
 desc: 'The version most North American Chinese restaurants serve: ground pork instead of beef, halved Sichuan peppercorn, oyster sauce contributing Cantonese sweetness, and the doubanjiang dialed back. Less aggressively numbing-spicy, more sweet-savory, and the typical entry point for Western diners. Defensibly delicious as its own dish; explicitly not the Sichuan canonical version.'
 metaDesc: 'Cantonese-style mapo tofu with pork: the sweeter, less numbing, restaurant-Western variant. Pork, oyster sauce, gentler doubanjiang and peppercorn. The gateway mapo.'
-tags: ['chinese', 'spicy', 'umami', 'pork', 'one-pot', 'weeknight']
+tags: ['spicy', 'umami', 'pork', 'one-pot', 'weeknight']
 updated: '2026-05-09'
 
 servings: 4

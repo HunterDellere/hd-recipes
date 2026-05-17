@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Saffron (kesar, زعفران)'
 desc: 'Hand-harvested stigmas of Crocus sativus, the most expensive spice by weight. Carotenoid pigment crocin gives the brilliant gold color, picrocrocin gives the bitter-honey flavor, and safranal gives the floral-hay aroma. Used in tiny quantities (a pinch, 0.05 to 0.1 g per dish) in biryani, pulao, paella, risotto Milanese, and rasmalai.'
 metaDesc: 'Saffron: carotenoid + picrocrocin + safranal chemistry, why a pinch is enough, role in biryani, paella, risotto Milanese, ras malai.'
-tags: ['spice', 'aromatic', 'pantry', 'indian', 'mediterranean']
+tags: ['pantry']
 density_g_per_ml: 0.50
 updated: '2026-05-09'
 

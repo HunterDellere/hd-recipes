@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chia coconut pudding with mango'
 desc: 'Chia seeds soaked overnight in full-fat coconut milk with maple syrup, vanilla, and a pinch of salt. The chia seeds absorb roughly 12 times their weight in liquid and gel into a soft tapioca-like pudding without cooking. Topped at serving with fresh or thawed-frozen mango (cut into 1 cm dice), toasted coconut flakes, and a small squeeze of lime that brightens the coconut-mango pairing. Vegan, gluten-free, no-cook for the pudding itself. Make-ahead breakfast or dessert; the texture continues to improve through 24 hours and holds 4 days refrigerated.'
 metaDesc: 'Vegan no-cook chia coconut pudding with mango, toasted coconut, and lime. Make-ahead breakfast or dessert that holds 4 days refrigerated.'
-tags: ['breakfast', 'dessert', 'make-ahead', 'no-cook', 'pudding', 'coconut', 'tropical', 'healthy', 'fruit']
+tags: ['make-ahead', 'no-cook', 'pudding', 'tropical']
 updated: '2026-05-17'
 
 servings: 4

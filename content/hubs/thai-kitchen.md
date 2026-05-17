@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Thai kitchen'
 desc: 'Build the paste from scratch, then cook with it. The aromatics are the same across both recipes — making the paste first makes the curry legible.'
 metaDesc: 'Thai kitchen: a curated reading path from pounding your own green curry paste to the full coconut-braised pork curry. Ordered scratch to plate.'
-tags: ['thai', 'spicy', 'aromatic', 'weekend-project']
+tags: ['spicy', 'weekend-project']
 updated: '2026-05-04'
 
 members:

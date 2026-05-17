@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Yaki udon (stir-fried udon noodles)'
 desc: 'Thick, chewy udon noodles stir-fried over high heat with sliced pork belly, cabbage, carrot, scallion, and a soy-mirin-oyster-sauce glaze that reduces and clings to the noodles. The Kitakyushu-origin lighter, soy-based cousin to yakisoba ,  faster, deeper, and the canonical Japanese weeknight noodle stir-fry.'
 metaDesc: 'Yaki udon: the technique for stir-frying thick udon noodles without sticking or breaking, the soy-mirin-oyster glaze, and the Kitakyushu vs. Tokyo style split.'
-tags: ['japanese', 'noodles', 'stir-fry', 'weeknight', 'pork', 'umami']
+tags: ['noodles', 'stir-fry', 'weeknight', 'pork', 'umami']
 updated: '2026-05-09'
 
 servings: 2

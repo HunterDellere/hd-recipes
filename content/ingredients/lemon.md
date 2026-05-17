@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Lemon'
 desc: 'Citrus limon. The kitchen''s primary bright finishing acid (5 to 6 percent citric acid in the juice) and aromatic carrier (limonene-rich oil in the zest).'
 metaDesc: 'Lemon: citric-acid juice chemistry, limonene zest oil, the difference between juice and zest applications, Meyer vs Eureka, and storage that holds the volatiles.'
-tags: ['acid', 'fruit', 'aromatic', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 1.03

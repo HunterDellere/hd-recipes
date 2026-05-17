@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mustard seeds (black / brown)'
 desc: 'Brassica nigra (black mustard) or B. juncea (brown mustard). Small, round, very hard seeds packed with glucosinolates that release volatile isothiocyanates (the sharp, pungent "mustard" compound) only when the seed coat ruptures via heat or grinding. The defining tempering spice of South Indian and Sri Lankan cooking; structural in Goan fish curry, Bengali mustard fish, and every South Indian tadka.'
 metaDesc: 'Mustard seeds: black vs brown vs yellow, the glucosinolate-myrosinase reaction that drives pungency, tempering behavior at 175 to 200°C, applications across South Indian tadka, Bengali mustard fish, and Goan curry.'
-tags: ['spice', 'aromatic', 'indian']
+tags: []
 density_g_per_ml: 0.74
 updated: '2026-05-10'
 

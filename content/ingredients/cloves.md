@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Cloves (laung, लौंग)'
 desc: 'Dried unopened flower buds of Syzygium aromaticum, intensely aromatic from eugenol (75 to 85% of the volatile oil). Sharp, warm, faintly numbing on the tongue. Used in tiny quantities (3 to 4 cloves per dish) in biryani, garam masala, mulled wines, and Mughlai cooking; quickly overpowers if overused.'
 metaDesc: 'Cloves: eugenol chemistry, the aggressively aromatic spice that wants restraint. Role in biryani, garam masala, mulled drinks. Why 3 to 4 cloves is plenty.'
-tags: ['spice', 'aromatic', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 0.45
 updated: '2026-05-09'
 

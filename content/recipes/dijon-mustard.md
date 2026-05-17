@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Dijon mustard'
 desc: 'Brown and yellow mustard seeds soaked in white wine, ground smooth, finished with cider vinegar and salt. Sharp, hot, and creamy in a way no jar ever is.'
 metaDesc: 'Homemade Dijon mustard: brown and yellow seeds, white wine, cider vinegar, salt. Sharper and cleaner than any jar after a 2-day mellow.'
-tags: ['sauce', 'pantry', 'make-ahead', 'french']
+tags: ['pantry', 'make-ahead']
 updated: '2026-04-27'
 
 servings: 16

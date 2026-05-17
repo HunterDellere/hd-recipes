@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sui mi ya cai (碎米芽菜)'
 desc: 'Salt-cured, sun-dried, long-fermented and minced stems of a mustard-green cultivar from Sichuan. A dry, dark, glutamate-dense seasoning paste in pickle form.'
 metaDesc: 'Sui mi ya cai: minced Sichuan preserved mustard greens. The fermentation, the role in stir-fries and noodle dishes, and how it differs from zha cai and tianjin dong cai.'
-tags: ['pickle', 'chinese', 'vegetable', 'umami']
+tags: ['pickle', 'umami']
 density_g_per_ml: 0.45
 imperial_pref: 'tbsp'
 updated: '2026-04-29'

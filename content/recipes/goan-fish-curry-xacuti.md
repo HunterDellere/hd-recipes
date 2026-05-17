@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Goan fish curry (xacuti)'
 desc: 'Xacuti (sha-KU-ti): the dark, deeply aromatic Goan fish curry built on a roasted spice paste of dry-toasted desiccated coconut, white poppy seeds, Kashmiri chilies, coriander seeds, black pepper, cloves, cinnamon, and star anise, wet-ground to a coarse paste and cooked down with a mustard-seed-and-curry-leaf tadka, caramelized onion, garlic, ginger, and kokum for the sour finish. Kingfish steaks or skin-on pomfret (or whole white fish steaks) are marinated in turmeric and salt, seared briefly, then simmered in the coconut-spice gravy until just cooked through. The defining Goan-Konkan fish preparation: a curry that reads roasted, nutty, aromatic, and sour rather than the cream-thickened or blended-tomato register of North Indian fish curries.'
 metaDesc: 'Goan fish curry xacuti: roasted-coconut-and-spice paste, mustard seed and curry leaf tadka, kokum souring, kingfish or pomfret. The deeply aromatic South Indian coastal fish curry distinct from North Indian cream-based preparations.'
-tags: ['seafood', 'fish', 'stew', 'indian', 'spicy', 'umami', 'acid', 'one-pot', 'weekend-project']
+tags: ['seafood', 'fish', 'stew', 'spicy', 'umami', 'one-pot', 'weekend-project']
 updated: '2026-05-10'
 
 servings: 4

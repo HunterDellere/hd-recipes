@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mango'
 desc: 'The fruit of Mangifera indica, an Anacardiaceae-family tropical tree. Eaten ripe as a sweet-aromatic fruit, eaten unripe as a tart-acidic vegetable across South Asian, Southeast Asian, and Caribbean cooking.'
 metaDesc: 'Mango: cultivar differences (Alphonso, Ataulfo, Tommy Atkins), ripeness chemistry, the urushiol skin caveat, applications across Indian aam, Thai som tam, West African grain salads, and salsas.'
-tags: ['fruit', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.65
 updated: '2026-05-10'
 

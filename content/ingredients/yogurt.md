@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Yogurt (dahi, plain whole-milk)'
 desc: 'Whole milk fermented with Lactobacillus and Streptococcus cultures into a thick tangy curd. Around 85% water, 4% milkfat, 4% protein. The base of South Asian raita, marinades, and curry bases; tempers cooked sauces and tenderizes proteins through lactic-acid action.'
 metaDesc: 'Yogurt (dahi): lactic-acid fermentation chemistry, whole-milk vs Greek vs lassi grades, role in tandoori marinades, raita, and curry tempering.'
-tags: ['dairy', 'pantry', 'indian']
+tags: ['pantry']
 density_g_per_ml: 1.04
 updated: '2026-05-09'
 

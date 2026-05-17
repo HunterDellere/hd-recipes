@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Eggs (large)'
 desc: 'Roughly 50 g per large US egg. Whites set at 62 °C, yolks at 70 °C, and the gap between those temperatures is half of what cooks do with eggs.'
 metaDesc: 'Large eggs: 50 g, white sets at 62°C, yolk at 70°C. How that gap drives custards, foams, and emulsions, plus age, freshness, and storage.'
-tags: ['egg', 'dairy']
+tags: ['egg']
 updated: '2026-04-29'
 
 usda_fdc_id: 748967

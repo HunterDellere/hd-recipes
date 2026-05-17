@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Green curry pork'
 desc: 'A coconut-based green curry augmented from store-bought paste with fresh lemongrass, ginger, and shrimp paste. Chinese eggplant absorbs the curry liquor; bamboo and shimeji carry the texture. Two cans of full-fat coconut milk give the dish enough lipid phase to braise without diluting with stock.'
 metaDesc: 'Thai green curry with pork tenderloin, Chinese eggplant, bamboo shoots, and shimeji, augmented store-bought paste cracked in coconut cream. Serves 4.'
-tags: ['weeknight', 'thai', 'pork', 'spicy', 'umami', 'stew', 'braise']
+tags: ['weeknight', 'pork', 'spicy', 'umami', 'stew', 'braise']
 updated: '2026-04-27'
 
 servings: 4

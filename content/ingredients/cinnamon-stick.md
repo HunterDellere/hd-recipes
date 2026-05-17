@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Cinnamon stick'
 desc: 'Dried inner bark of Cinnamomum trees. Two main types: hot, sharp Cassia (the supermarket default) and floral, gentler Ceylon ("true" cinnamon).'
-tags: ['spice', 'aromatic']
+tags: []
 updated: '2026-04-26'
 
 usda_fdc_id: 171320

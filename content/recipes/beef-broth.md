@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Brown beef broth (fond brun de boeuf)'
 desc: 'Beef bones roasted to deep mahogany, simmered with charred onions, carrot, celery, and tomato paste for a rich, dark, gelatin-heavy broth. The Western foundation under French braises, demi-glace, and onion soup. Modifications cover Vietnamese pho-style aromatics and Korean seolleongtang milky-broth technique.'
 metaDesc: 'Brown beef broth: roasted bones, charred mirepoix, 8-hour simmer, deep amber broth. Modifications cover pho-style and Korean seolleongtang variants.'
-tags: ['beef', 'pantry', 'sauce', 'umami', 'make-ahead', 'weekend-project', 'freezer-friendly']
+tags: ['beef', 'pantry', 'umami', 'make-ahead', 'weekend-project', 'freezer-friendly']
 updated: '2026-05-09'
 
 servings: 8

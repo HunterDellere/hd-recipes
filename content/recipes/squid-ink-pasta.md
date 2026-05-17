@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Squid ink pasta with calamari (linguine al nero di seppia)'
 desc: 'Squid simmered 35 minutes with white wine, San Marzano tomatoes, garlic, and chili flakes until the collagen hydrolyzes from rubber to silk, finished with concentrated squid ink for the dramatic black coloration and a faint marine umami. Tossed with linguine and emulsified with starchy pasta water. The 30-minute low-simmer window for squid, in Italian.'
 metaDesc: 'Linguine al nero di seppia: Italian squid ink pasta with long-simmered calamari, white wine, San Marzano tomatoes. The low-simmer squid window across an entire dish.'
-tags: ['italian', 'pasta', 'seafood', 'fish', 'umami']
+tags: ['pasta', 'seafood', 'fish', 'umami']
 updated: '2026-05-09'
 
 servings: 4

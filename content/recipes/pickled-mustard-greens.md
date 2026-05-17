@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Pickled mustard greens (suan cai, 酸菜)'
 desc: 'Whole heads of mustard greens lacto-fermented in a 3% salt brine for seven to ten days into a sour, crunchy, deeply funky pickle. The Cantonese and Sichuan tables both reach for it.'
 metaDesc: 'Pickled mustard greens recipe (suan cai): salt-only lacto-fermentation of whole mustard heads, 7 to 10 days, for congee, noodle soups, and stir-fries.'
-tags: ['vegetable', 'pantry', 'pickle', 'fermentation', 'chinese', 'umami', 'make-ahead']
+tags: ['pantry', 'pickle', 'fermentation', 'umami', 'make-ahead']
 updated: '2026-05-09'
 
 servings: 16

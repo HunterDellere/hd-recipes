@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Mansaf'
 desc: 'Bone-in lamb shoulder simmered for hours, then bathed in a sauce built from reconstituted jameed (fermented dried sheep yogurt). Served over saffron-tinted basmati rice on a base layer of paper-thin shrak bread, crowned with samna-toasted pine nuts and almonds. The Bedouin and Jordanian feast dish, technique-faithful.'
 metaDesc: 'Authentic Jordanian mansaf: bone-in lamb in a stabilized jameed yogurt sauce, basmati rice with samna and turmeric, shrak bread base, toasted pine nuts and almonds. The full technique with jameed reconstitution and yogurt-stabilization steps.'
-tags: ['weekend-project', 'lamb', 'levantine', 'braise', 'comfort', 'umami', 'rice', 'fermentation']
+tags: ['weekend-project', 'lamb', 'braise', 'comfort', 'umami', 'rice', 'fermentation']
 updated: '2026-05-06'
 
 servings: 6

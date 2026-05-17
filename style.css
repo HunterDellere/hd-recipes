@@ -1125,7 +1125,8 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   gap: .75rem;
 }
 .pair-card {
-  display: flex; flex-direction: column;
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .85rem 1rem .8rem;
   background: var(--bg-elev);
   border: 1px solid var(--rule); border-radius: var(--r-2);
   border-left: 3px solid var(--rule);
@@ -1134,27 +1135,11 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   transition: border-color 140ms, transform 100ms, box-shadow 140ms;
 }
 .pair-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   border-color: var(--accent);
   box-shadow: var(--shadow-sm);
   text-decoration: none;
 }
-.pair-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.pair-body {
-  display: flex; flex-direction: column; gap: .35rem;
-  padding: .75rem .9rem .8rem;
-}
-.pair-swatch {
-  display: block; width: 100%; height: 42px;
-  border-bottom: 1px solid var(--rule-soft);
-}
-.pair-swatch-photo {
-  background-size: cover; background-position: center;
-  background-color: var(--bg-soft);
-}
-/* Reuse the swatch palette/glyph rules from .ec-swatch above. The
-   :where() de-prioritizes them so pair-card-specific overrides still win. */
-.pair-swatch.ec-swatch::after { -webkit-mask-size: 30px 30px; mask-size: 30px 30px; opacity: .5; }
 .pair-card[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
 .pair-card[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
 .pair-card[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
@@ -1689,32 +1674,186 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   .rh-meta { gap: .25rem .85rem; font-size: 13.5px; }
 }
 
-/* ── print ──────────────────────────────────────────────── */
+/* ── print ──────────────────────────────────────────────────────────────
+   Print is a first-class output. The page collapses to a single column of
+   black text on white, drops anything interactive, and keeps the structural
+   bits a cook actually wants on paper (title, stats, ingredients, steps,
+   safety_notes, before_you_start, substitutions, modifications, notes). */
 @media print {
+  /* Hide everything that's chrome, navigation, or interactive-only */
   .topnav, .reading-progress, .toc-toggle, .sidebar, .page-footer,
   .related-cards, .related-groups, .related-group,
   .rl-cards, .rl-groups, .rl-group, .adj-nav, .ing-controls,
   .back-to-top, .skip-link, .topic-hero-eyebrow, .rh-eyebrow,
-  .ing-shop-btn, .rh-cook-btn, .rh-print-btn, .rh-save-btn, .rh-cooked-btn,
-  .cook-bar, .cv-ing-toggle, .bottom-nav, .cmd-palette, .hover-card, .sub-pop,
-  .pair-grid, .hub-chips, .breadcrumb, .toc-breadcrumb, .hm-list, .step-time-btn,
-  .recipe-mynotes details, .step-image, .rh-tags, .filter-bar,
-  .rh-stat-kcal .rh-macros { display: none !important; }
-  .recipe-mynotes { display: none !important; }
-  #notes { page-break-before: always; }
+  .ing-shop-btn, .rh-cook-btn, .rh-print-btn, .cook-bar, .cv-ing-toggle,
+  .bottom-nav, .theme-toggle, .pf-btn, .pf-btn-share,
+  .cmd-palette-overlay, .hover-card, .hover-card-host,
+  .step-time, .step-time-btn, .step-tech,
+  .recipe-pairings, .pairings, .homemade-alts, .recipe-homemade,
+  .breadcrumbs, .hub-chips, .recipe-hubs,
+  .rh-tags, .topic-hero-meta, .rh-photo, .recipe-hero.has-photo .rh-photo,
+  .ad, .ad-slot, .adsbygoogle,
+  .step-timer-dock, .filter-bar, [data-filter-bar],
+  details[data-ing-panel="mise"] > summary .ing-panel-chev,
+  details[data-ing-panel="shop"] > summary .ing-panel-chev,
+  .step-figure, .recipe-hero .rh-actions
+  { display: none !important; }
+
+  /* Force light, single-column */
+  body { background: #fff !important; color: #000 !important; font-size: 11pt; }
+  .shell { display: block; padding: 0; max-width: none; grid-template-columns: 1fr !important; }
+  .main { max-width: none; padding: 0; }
+  * { box-shadow: none !important; text-shadow: none !important; }
+
+  /* Recipe hero — title, desc, stats only */
+  .recipe-hero, .topic-hero { margin: 0 0 .5rem; padding: 0 0 .5rem; border-bottom: 1pt solid #000; }
+  .rh-title, .topic-hero-title { font-size: 18pt; margin: 0 0 .3rem; }
+  .rh-desc { font-size: 11pt; margin: 0 0 .4rem; }
+  .rh-stats { gap: .4rem 1.2rem; font-size: 10pt; }
+
+  /* Section heads compact */
+  .section-head { margin: .9rem 0 .35rem; page-break-after: avoid; }
+  .section-head h2 { font-size: 13pt; }
+
+  /* Ingredient rows — keep tight, never break across pages */
+  .recipe-ingredients { font-size: 10pt; }
+  .ing-row { page-break-inside: avoid; padding: .15rem 0; }
   .ing-alt { color: #555 !important; }
-  body { background: #fff; color: #000; font-size: 12pt; }
-  .shell { display: block; padding: 0; max-width: none; }
-  .main { max-width: none; }
-  .recipe-hero, .topic-hero { margin-bottom: 1rem; padding-bottom: .5rem; }
-  .rh-title, .topic-hero-title { font-size: 22pt; }
-  .section-head { margin: 1rem 0 .5rem; page-break-after: avoid; }
-  .section-head h2 { font-size: 14pt; }
-  .ing-row, .step-item { page-break-inside: avoid; }
+
+  /* Force shop panel open in print (it's the canonical ingredients list);
+     collapse the mise panel (redundant with shop on paper). */
+  details[data-ing-panel="shop"] > summary,
+  details[data-ing-panel="mise"] > summary { list-style: none; }
+  details[data-ing-panel="shop"] .ing-list-shop { display: block !important; }
+
+  /* Steps — keep individual steps together where possible */
+  .recipe-steps { font-size: 11pt; line-height: 1.4; }
+  .step-item { page-break-inside: avoid; padding: .35rem 0; }
   .step-num { background: #000 !important; color: #fff !important; }
-  .recipe-nutrition { background: #fff; border: 1px solid #ccc; }
+  .step-body { font-size: 11pt; }
+
+  /* Substitutions / modifications — keep but collapse to flat list */
+  details.subs, details.modifications, details[open] {
+    page-break-inside: avoid;
+  }
+  details > summary { font-weight: 600; list-style: none; }
+
+  /* Safety notes / before-you-start — keep, they matter on paper */
+  .recipe-prelude, .recipe-prelude-list, .safety-notes { font-size: 10.5pt; }
+
+  /* Nutrition — keep, but trim */
+  .recipe-nutrition { background: #fff !important; border: 1pt solid #ccc; font-size: 10pt; }
+
+  /* Notes — start on a new page so the recipe-proper has room to breathe.
+     If it fits, it fits; if it overflows, it gets its own clean page. */
+  #notes, .section-head:has(+ .recipe-notes), .recipe-notes {
+    page-break-before: always;
+  }
+
+  /* Links black, no underlines, no borders */
   a { color: #000 !important; text-decoration: none; border: none !important; }
   .ing-link, .x-link, .step-tech { border: none !important; }
+}
+
+/* ── Cook mode (extends existing cook's-view): hide more chrome ─────────
+   The existing data-cooks-view="on" already dims non-active steps; here we
+   also blank out nav, sidebar, footer, reading progress, and any ad/related
+   surface so the cook is left with steps + a floating exit. */
+body[data-cooks-view="on"] .topnav,
+body[data-cooks-view="on"] .sidebar,
+body[data-cooks-view="on"] .page-footer,
+body[data-cooks-view="on"] .reading-progress,
+body[data-cooks-view="on"] .toc-toggle,
+body[data-cooks-view="on"] .related-cards,
+body[data-cooks-view="on"] .related-groups,
+body[data-cooks-view="on"] .rl-cards,
+body[data-cooks-view="on"] .rl-groups,
+body[data-cooks-view="on"] .ad,
+body[data-cooks-view="on"] .ad-slot,
+body[data-cooks-view="on"] .back-to-top,
+body[data-cooks-view="on"] .bottom-nav { display: none !important; }
+body[data-cooks-view="on"] .recipe-steps .step-body {
+  max-width: 70ch;
+  margin-left: auto; margin-right: auto;
+  font-size: 1.4rem; line-height: 1.6;
+}
+body[data-cooks-view="on"] .ing-row { font-size: 1.05rem; }
+
+/* ── Print button (recipe hero) ─────────────────────────────────────────
+   Sits next to Cook's view in .rh-actions. Same shape as .rh-cook-btn but
+   in a quieter neutral so it doesn't compete visually. */
+.rh-print-btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: var(--bg-elev); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: var(--r-pill);
+  padding: 8px 16px; font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+  cursor: pointer;
+  transition: border-color var(--d-fast), color var(--d-fast), background var(--d-fast);
+}
+.rh-print-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.rh-print-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.rh-print-icon { display: inline-flex; }
+
+/* ── Mobile bottom nav ──────────────────────────────────────────────────
+   Sticky, 56 px tall (matches cook-bar), shows on <768 px only. Each button
+   is a thumb-sized touch target with a glyph + a one-word label. Respects
+   safe-area-inset-bottom so iOS notch devices don't clip the labels. */
+.bottom-nav {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: rgba(250, 246, 238, 0.96);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-top: 1px solid var(--rule);
+  z-index: 90;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: max(0px, env(safe-area-inset-left));
+  padding-right: max(0px, env(safe-area-inset-right));
+}
+[data-theme="dark"] .bottom-nav { background: rgba(21, 17, 10, 0.96); }
+.bottom-nav { /* grid layout for the four equal-width buttons */
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+}
+.bn-btn {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 2px;
+  background: transparent; border: none;
+  min-height: 56px;
+  color: var(--ink-soft); font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+  cursor: pointer;
+  transition: color var(--d-fast), background var(--d-fast);
+  padding: 6px 4px;
+}
+.bn-btn svg { display: block; }
+.bn-btn:hover, .bn-btn:focus-visible { color: var(--accent); background: var(--accent-soft); }
+.bn-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.bn-btn:active { background: color-mix(in oklab, var(--accent-soft) 60%, transparent); }
+.bn-label { line-height: 1; }
+
+@media (max-width: 767px) {
+  .bottom-nav { display: grid; }
+  /* Keep the page content from getting trapped behind the nav */
+  body { padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)); }
+}
+/* Hide in cook's view (cook-bar replaces it) and in print (above). */
+body[data-cooks-view="on"] .bottom-nav { display: none !important; }
+
+/* ── Step timer aliases ─────────────────────────────────────────────────
+   .step--running and .step--done are state classes the recipe.js poller
+   syncs from the floating timer dock. They live alongside the existing
+   cook-view .step-active / .step-done so timer state is visible even when
+   the cook isn't in cook's view. */
+.recipe-steps .step-item.step--running {
+  background: color-mix(in oklab, var(--bg-elev) 92%, var(--accent) 8%);
+  border-left: 3px solid var(--accent);
+  padding-left: .6rem;
+}
+.recipe-steps .step-item.step--done {
+  opacity: .75;
+}
+.recipe-steps .step-item.step--done .step-num {
+  background: var(--cat-recipes);
 }
 
 /* ── explore family pages ────────────────────────────── */
@@ -2391,151 +2530,41 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 .tt-count { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); }
 .tag-tile:hover .tt-count { color: var(--accent); }
 
-/* ── card-grid + entry-card (shared across home + explore + saved) ───── */
-/* Responsive 1→4 column grid. Auto-fill keeps an even rhythm at any width
-   that lands between explicit breakpoints; the breakpoints lock the column
-   count to 2/3/4 once we have enough room for a comfortable minimum width
-   (280px below tablet, 290px above so 4 cols fits at ~1440 with a 64px
-   side margin). */
+/* ── card-grid + entry-card (shared across home + explore) ───── */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: .75rem;
   margin-bottom: 1.5rem;
 }
-@media (max-width: 639px)  { .card-grid { grid-template-columns: 1fr; gap: .75rem; } }
-@media (min-width: 640px)  and (max-width: 1023px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) and (max-width: 1439px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1440px) { .card-grid { grid-template-columns: repeat(4, 1fr); } }
-
 .entry-card {
-  display: flex; flex-direction: column;
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .85rem 1rem .75rem;
   border: 1px solid var(--rule); border-radius: var(--r-2);
   background: var(--bg-elev);
   font-family: var(--font-sans); color: var(--ink);
-  transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+  transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
   position: relative;
   overflow: hidden;
-  text-decoration: none;
 }
+.entry-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--rule);
+  transition: background var(--d-fast), height var(--d-fast);
+}
+.entry-card[data-category="recipes"]::before     { background: var(--cat-recipes); }
+.entry-card[data-category="ingredients"]::before { background: var(--cat-ingredients); }
+.entry-card[data-category="techniques"]::before  { background: var(--cat-techniques); }
+.entry-card[data-category="cuisines"]::before    { background: var(--cat-cuisines); }
+.entry-card[data-category="equipment"]::before   { background: var(--cat-equipment); }
+.entry-card[data-category="hubs"]::before        { background: var(--cat-hubs); }
 .entry-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   border-color: var(--accent);
   box-shadow: var(--shadow-md);
   text-decoration: none;
 }
-.entry-card:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-color: var(--accent);
-}
-/* Subtle visited dimming on the title only — not the whole card */
-.entry-card:visited .ec-title { color: var(--ink-soft); }
-
-/* ── Swatch header (the "thumbnail" band above the card body) ───── */
-.ec-swatch {
-  display: block;
-  width: 100%;
-  height: 56px;
-  position: relative;
-  background-color: var(--swatch-bg, var(--bg-soft));
-  background-image: var(--swatch-grad,
-    radial-gradient(ellipse at 30% 30%, rgba(255,255,255,.18), transparent 60%),
-    linear-gradient(135deg, var(--swatch-bg, var(--bg-soft)) 0%, var(--swatch-bg2, var(--rule-soft)) 100%));
-  border-bottom: 1px solid var(--rule-soft);
-  transition: filter .14s ease;
-}
-.entry-card:hover .ec-swatch { filter: saturate(1.15) brightness(1.02); }
-
-/* Glyph layer — a centered cuisine/tag icon rendered as a CSS mask so the
-   color tracks the swatch palette and we don't ship a separate <img>. */
-.ec-swatch::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, .14);
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 38px 38px;
-  mask-size: 38px 38px;
-  opacity: .55;
-  pointer-events: none;
-}
-[data-theme="dark"] .ec-swatch::after { background-color: rgba(255, 255, 255, .22); }
-
-/* Glyph mask URLs (inline SVG). Each glyph is monochrome line-art. */
-.ec-swatch[data-glyph="bowl"]::after        { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 11h18l-1.5 6a3 3 0 0 1-2.9 2.3H7.4A3 3 0 0 1 4.5 17z'/><path d='M8 6c0-1.5 1.3-3 4-3s4 1.5 4 3'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 11h18l-1.5 6a3 3 0 0 1-2.9 2.3H7.4A3 3 0 0 1 4.5 17z'/><path d='M8 6c0-1.5 1.3-3 4-3s4 1.5 4 3'/></svg>"); }
-.ec-swatch[data-glyph="fork-knife"]::after  { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M7 3v8m-2-8v4a2 2 0 0 0 4 0V3'/><path d='M7 11v10'/><path d='M17 3c-2 0-3 2-3 5s1 4 3 4v9'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M7 3v8m-2-8v4a2 2 0 0 0 4 0V3'/><path d='M7 11v10'/><path d='M17 3c-2 0-3 2-3 5s1 4 3 4v9'/></svg>"); }
-.ec-swatch[data-glyph="mortar"]::after      { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M4 11h16l-2 7a2 2 0 0 1-2 1.5H8a2 2 0 0 1-2-1.5z'/><line x1='3' y1='11' x2='21' y2='11'/><line x1='14' y1='3' x2='9' y2='10'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M4 11h16l-2 7a2 2 0 0 1-2 1.5H8a2 2 0 0 1-2-1.5z'/><line x1='3' y1='11' x2='21' y2='11'/><line x1='14' y1='3' x2='9' y2='10'/></svg>"); }
-.ec-swatch[data-glyph="chili"]::after       { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M6 20c5 0 12-3 12-11 0-1.5-1-3-3-3'/><path d='M14 6c0-2 1-3 3-3'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M6 20c5 0 12-3 12-11 0-1.5-1-3-3-3'/><path d='M14 6c0-2 1-3 3-3'/></svg>"); }
-.ec-swatch[data-glyph="olive"]::after       { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><ellipse cx='12' cy='14' rx='5' ry='7'/><path d='M12 7c-1-2-3-3-5-3'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><ellipse cx='12' cy='14' rx='5' ry='7'/><path d='M12 7c-1-2-3-3-5-3'/></svg>"); }
-.ec-swatch[data-glyph="tagine"]::after      { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M5 19h14'/><path d='M5 15c0-3 3-4 7-4s7 1 7 4'/><path d='M12 11V7'/><circle cx='12' cy='5' r='1.5'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M5 19h14'/><path d='M5 15c0-3 3-4 7-4s7 1 7 4'/><path d='M12 11V7'/><circle cx='12' cy='5' r='1.5'/></svg>"); }
-.ec-swatch[data-glyph="calabash"]::after    { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='14' r='6'/><path d='M10 8c0-2 1-3 2-3s2 1 2 3'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='14' r='6'/><path d='M10 8c0-2 1-3 2-3s2 1 2 3'/></svg>"); }
-.ec-swatch[data-glyph="skillet"]::after     { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='10' cy='13' r='6'/><line x1='16' y1='13' x2='22' y2='13'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='10' cy='13' r='6'/><line x1='16' y1='13' x2='22' y2='13'/></svg>"); }
-.ec-swatch[data-glyph="grain"]::after       { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3v18'/><path d='M12 6c-2 0-4 1-4 3s2 3 4 3'/><path d='M12 10c-2 0-4 1-4 3s2 3 4 3'/><path d='M12 6c2 0 4 1 4 3s-2 3-4 3'/><path d='M12 10c2 0 4 1 4 3s-2 3-4 3'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3v18'/><path d='M12 6c-2 0-4 1-4 3s2 3 4 3'/><path d='M12 10c-2 0-4 1-4 3s2 3 4 3'/><path d='M12 6c2 0 4 1 4 3s-2 3-4 3'/><path d='M12 10c2 0 4 1 4 3s-2 3-4 3'/></svg>"); }
-.ec-swatch[data-glyph="leaf"]::after        { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M4 20c0-9 7-16 16-16-1 9-7 16-16 16z'/><path d='M4 20c4-4 8-8 12-12'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M4 20c0-9 7-16 16-16-1 9-7 16-16 16z'/><path d='M4 20c4-4 8-8 12-12'/></svg>"); }
-.ec-swatch[data-glyph="whisk"]::after       { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M14 4l6 6'/><path d='M8 12c-3 3-4 7-4 8 1 0 5-1 8-4'/><path d='M14 4c-2 0-4 1-6 3s-3 4-3 6c0 1 1 2 2 2s4-1 6-3 3-4 3-6c0-1-1-2-2-2z'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M14 4l6 6'/><path d='M8 12c-3 3-4 7-4 8 1 0 5-1 8-4'/><path d='M14 4c-2 0-4 1-6 3s-3 4-3 6c0 1 1 2 2 2s4-1 6-3 3-4 3-6c0-1-1-2-2-2z'/></svg>"); }
-.ec-swatch[data-glyph="cup"]::after         { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M5 8h12v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z'/><path d='M17 10h2a2 2 0 0 1 0 4h-2'/><path d='M8 4c0 1-1 2-1 3M12 4c0 1-1 2-1 3'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M5 8h12v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z'/><path d='M17 10h2a2 2 0 0 1 0 4h-2'/><path d='M8 4c0 1-1 2-1 3M12 4c0 1-1 2-1 3'/></svg>"); }
-.ec-swatch[data-glyph="fire"]::after        { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3c1 4 5 5 5 11a5 5 0 0 1-10 0c0-3 2-4 2-7 1 1 2 1 3-4z'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3c1 4 5 5 5 11a5 5 0 0 1-10 0c0-3 2-4 2-7 1 1 2 1 3-4z'/></svg>"); }
-.ec-swatch[data-glyph="fish"]::after        { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 12c3-4 8-5 12-5 3 0 5 2 6 5-1 3-3 5-6 5-4 0-9-1-12-5z'/><path d='M21 12l-3-3v6z' fill='black'/><circle cx='9' cy='11' r='.7' fill='black'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 12c3-4 8-5 12-5 3 0 5 2 6 5-1 3-3 5-6 5-4 0-9-1-12-5z'/><path d='M21 12l-3-3v6z' fill='black'/><circle cx='9' cy='11' r='.7' fill='black'/></svg>"); }
-.ec-swatch[data-glyph="jar"]::after         { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='7' y='4' width='10' height='2.5'/><path d='M6 7h12v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z'/><line x1='8' y1='13' x2='16' y2='13'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='7' y='4' width='10' height='2.5'/><path d='M6 7h12v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z'/><line x1='8' y1='13' x2='16' y2='13'/></svg>"); }
-.ec-swatch[data-glyph="drop"]::after        { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z'/></svg>"); }
-.ec-swatch[data-glyph="globe"]::after       { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><line x1='3' y1='12' x2='21' y2='12'/><path d='M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><line x1='3' y1='12' x2='21' y2='12'/><path d='M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18'/></svg>"); }
-.ec-swatch[data-glyph="stack"]::after       { -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='6' width='18' height='14' rx='2'/><path d='M7 6V4h10v2'/><line x1='3' y1='11' x2='21' y2='11'/></svg>"); mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='6' width='18' height='14' rx='2'/><path d='M7 6V4h10v2'/><line x1='3' y1='11' x2='21' y2='11'/></svg>"); }
-
-/* Photo swatch — overrides background, drops the glyph, adds a faint gradient
-   at the bottom for legibility if the body bleeds into it. */
-.ec-swatch-photo {
-  background-color: var(--bg-soft);
-  background-size: cover;
-  background-position: center;
-  background-image: var(--photo, none);
-}
-.ec-swatch-photo::after { display: none; }
-
-/* Swatch palette — 14 muted, sophisticated colors. Light mode gets warm,
-   parchment-toned hues; dark mode shifts to deeper, slightly desaturated
-   versions that still register as the same color family. */
-.ec-swatch[data-swatch="0"]  { --swatch-bg: #d8a78a; --swatch-bg2: #c08868; } /* terracotta */
-.ec-swatch[data-swatch="1"]  { --swatch-bg: #adc8a3; --swatch-bg2: #8aa782; } /* sage */
-.ec-swatch[data-swatch="2"]  { --swatch-bg: #e3d4ad; --swatch-bg2: #c9b681; } /* oat */
-.ec-swatch[data-swatch="3"]  { --swatch-bg: #a3aebd; --swatch-bg2: #7f8a9a; } /* slate */
-.ec-swatch[data-swatch="4"]  { --swatch-bg: #d9b070; --swatch-bg2: #b58a48; } /* ochre */
-.ec-swatch[data-swatch="5"]  { --swatch-bg: #b89bb3; --swatch-bg2: #8f7491; } /* plum */
-.ec-swatch[data-swatch="6"]  { --swatch-bg: #c8927a; --swatch-bg2: #a76d54; } /* rust */
-.ec-swatch[data-swatch="7"]  { --swatch-bg: #9ab8c3; --swatch-bg2: #6f95a3; } /* dusty teal */
-.ec-swatch[data-swatch="8"]  { --swatch-bg: #d4c08d; --swatch-bg2: #b39a5e; } /* mustard */
-.ec-swatch[data-swatch="9"]  { --swatch-bg: #b69a82; --swatch-bg2: #92765a; } /* mushroom */
-.ec-swatch[data-swatch="10"] { --swatch-bg: #a4a07d; --swatch-bg2: #807d58; } /* olive */
-.ec-swatch[data-swatch="11"] { --swatch-bg: #c98782; --swatch-bg2: #a65a55; } /* clay */
-.ec-swatch[data-swatch="12"] { --swatch-bg: #8fa6a0; --swatch-bg2: #6a8580; } /* eucalyptus */
-.ec-swatch[data-swatch="13"] { --swatch-bg: #d6b8c2; --swatch-bg2: #b18b9a; } /* mauve */
-
-[data-theme="dark"] .ec-swatch[data-swatch="0"]  { --swatch-bg: #6b4a37; --swatch-bg2: #4d3424; }
-[data-theme="dark"] .ec-swatch[data-swatch="1"]  { --swatch-bg: #4a5c44; --swatch-bg2: #34432f; }
-[data-theme="dark"] .ec-swatch[data-swatch="2"]  { --swatch-bg: #5e5436; --swatch-bg2: #423a23; }
-[data-theme="dark"] .ec-swatch[data-swatch="3"]  { --swatch-bg: #404a57; --swatch-bg2: #2c343f; }
-[data-theme="dark"] .ec-swatch[data-swatch="4"]  { --swatch-bg: #5c4422; --swatch-bg2: #3f2f17; }
-[data-theme="dark"] .ec-swatch[data-swatch="5"]  { --swatch-bg: #4f3b4d; --swatch-bg2: #392a37; }
-[data-theme="dark"] .ec-swatch[data-swatch="6"]  { --swatch-bg: #5a3a2a; --swatch-bg2: #3f281c; }
-[data-theme="dark"] .ec-swatch[data-swatch="7"]  { --swatch-bg: #36505b; --swatch-bg2: #243741; }
-[data-theme="dark"] .ec-swatch[data-swatch="8"]  { --swatch-bg: #5b4825; --swatch-bg2: #403118; }
-[data-theme="dark"] .ec-swatch[data-swatch="9"]  { --swatch-bg: #4d3e2f; --swatch-bg2: #362b1f; }
-[data-theme="dark"] .ec-swatch[data-swatch="10"] { --swatch-bg: #45422d; --swatch-bg2: #2f2d1d; }
-[data-theme="dark"] .ec-swatch[data-swatch="11"] { --swatch-bg: #5b2f2c; --swatch-bg2: #401f1c; }
-[data-theme="dark"] .ec-swatch[data-swatch="12"] { --swatch-bg: #344944; --swatch-bg2: #233330; }
-[data-theme="dark"] .ec-swatch[data-swatch="13"] { --swatch-bg: #5b3c46; --swatch-bg2: #402a31; }
-
-/* Card body — the textual content below the swatch. Padding lives here
-   so the swatch can run edge-to-edge. */
-.ec-body {
-  display: flex; flex-direction: column; gap: .35rem;
-  padding: .75rem .9rem .8rem;
-  flex: 1;
-  min-width: 0;
-}
+.entry-card:hover::before { height: 4px; }
 
 .ec-cat {
   font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600;
@@ -2559,81 +2588,10 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
   line-height: 1.45;
   flex: 1;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
-
-/* ── Stat-pill row (single line of compact facts along the bottom) ─── */
-.ec-stat-row {
-  display: flex; flex-wrap: wrap; align-items: center;
-  gap: 4px 6px;
-  margin-top: .5rem;
-  font-family: var(--font-sans); font-size: 11.5px;
-}
-.ec-stat-pill {
-  display: inline-flex; align-items: center; gap: 4px;
-  padding: 2px 7px;
-  border-radius: 4px;
-  background: var(--bg-soft);
-  color: var(--ink-soft);
-  font-weight: 500;
-  white-space: nowrap;
-  line-height: 1.4;
-  border: 1px solid transparent;
-}
-.ec-stat-time {
-  color: var(--ink);
-  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
-  background: var(--bg-soft);
-  border-color: var(--rule-soft);
-}
-.ec-stat-kcal {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: .02em;
-  color: var(--ink-soft);
-}
-.ec-stat-cuisine {
-  font-style: italic;
-  background: transparent;
-  padding-left: 2px; padding-right: 2px;
-  color: var(--ink-faint);
-}
-.ec-stat-diff { gap: 5px; }
-.ec-diff-dot {
-  display: inline-block;
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: .9;
-}
-.ec-stat-pill.ec-d-easy   { color: #3a6e1a; background: #ecf4e3; border-color: rgba(58,110,26,.18); }
-.ec-stat-pill.ec-d-medium { color: #8a5a10; background: #fbefd3; border-color: rgba(138,90,16,.18); }
-.ec-stat-pill.ec-d-hard   { color: #8b2e26; background: #fbe2da; border-color: rgba(139,46,38,.18); }
-[data-theme="dark"] .ec-stat-pill.ec-d-easy   { color: #b3d99a; background: #2c3a1c; border-color: rgba(179,217,154,.18); }
-[data-theme="dark"] .ec-stat-pill.ec-d-medium { color: #e6c890; background: #3c2f1a; border-color: rgba(230,200,144,.18); }
-[data-theme="dark"] .ec-stat-pill.ec-d-hard   { color: #e69990; background: #3c1f1c; border-color: rgba(230,153,144,.18); }
-
-.ec-stat-pill.ec-stat-link::before { content: '↳ '; color: var(--ink-faint); margin-right: 2px; }
-.ec-stat-pill.ec-pill-tag    { font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .07em; }
-.ec-stat-pill.ec-pill-data   {
-  font-family: var(--font-mono); font-size: 10.5px;
-  text-transform: uppercase; letter-spacing: .12em;
-  background: var(--accent-soft); color: var(--accent-deep);
-}
-[data-theme="dark"] .ec-stat-pill.ec-pill-data { color: var(--accent); }
-.ec-stat-pill.ec-stat-cooked {
-  font-family: var(--font-mono); font-size: 10.5px;
-  color: var(--ink-faint); background: transparent;
-}
-
-/* Missing-entry placeholder card on the Saved page — faintly dimmed so it
-   reads as a remnant rather than current content. */
-.entry-card-missing { opacity: .7; }
-.entry-card-missing .ec-title { color: var(--ink-soft); }
 .ec-foot {
   display: flex; align-items: center; justify-content: space-between;
   gap: .5rem;
@@ -2753,14 +2711,11 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 /* ── filter bar with dropdown menus (cook explore page) ─────────── */
 .filter-bar {
   display: flex; flex-wrap: wrap; align-items: center;
-  /* Generous gap between groups so each filter dimension reads as its
-     own distinct facet, not as another button in a continuous strip. */
-  row-gap: 1rem;
-  column-gap: 1.5rem;
-  padding: .9rem 1rem;
+  gap: .5rem;
+  padding: .75rem .85rem;
   background: var(--bg-elev);
   border: 1px solid var(--rule); border-radius: 12px;
-  margin-bottom: .65rem;
+  margin-bottom: .85rem;
   font-family: var(--font-sans);
   position: relative;
 }
@@ -2773,8 +2728,7 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
   padding: 8px 12px 8px 14px;
   background: var(--bg);
   border: 1px solid var(--rule); border-radius: 8px;
-  font-family: var(--font-sans); font-size: 12px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .06em;
+  font-family: var(--font-sans); font-size: 13.5px; font-weight: 500;
   color: var(--ink); cursor: pointer;
   transition: border-color var(--d-fast), color var(--d-fast), background var(--d-fast), box-shadow var(--d-fast);
   user-select: none;
@@ -2838,61 +2792,44 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
   border-radius: var(--r-1);
   font-size: var(--t-small); color: var(--ink);
   cursor: pointer;
-  transition: background 100ms, transform 80ms;
+  transition: background 100ms;
 }
-.filter-opt:hover { background: var(--accent-soft); transform: translateX(1px); }
+.filter-opt:hover { background: var(--accent-soft); }
 .filter-opt input { accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
-.filter-opt:has(input:checked) {
-  background: var(--accent-soft); color: var(--accent); font-weight: 700;
-  box-shadow: inset 2px 0 0 var(--accent);
-}
+.filter-opt:has(input:checked) { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .filter-opt-label { flex: 1; min-width: 0; }
 
-/* Active-filter pill row — sits below the filter bar and above the grid.
-   Each pill names its dimension + value with a removable × so a user with
-   three filters active can drop just one without clearing the rest. */
+/* Active-filter chip strip below the bar — removable chips, one per filter. */
 .filter-chips {
-  display: flex; flex-wrap: wrap; gap: .4rem;
+  display: flex; flex-wrap: wrap; gap: .35rem;
   margin: 0 0 1rem;
   font-family: var(--font-sans);
 }
 .filter-chips[hidden] { display: none; }
 .filter-chip {
-  display: inline-flex; align-items: center; gap: .4rem;
-  padding: 4px 6px 4px 10px;
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: 4px 6px 4px 12px;
   background: var(--accent-soft);
   border: 1px solid var(--accent);
   color: var(--accent);
   font-size: 12.5px; font-weight: 500;
   border-radius: var(--r-pill);
   cursor: pointer;
-  transition: background var(--d-fast), border-color var(--d-fast), transform 80ms, box-shadow var(--d-fast);
+  transition: background var(--d-fast), border-color var(--d-fast), transform 80ms;
 }
 .filter-chip:hover {
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-}
-.filter-chip:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--accent-soft), 0 0 0 4px var(--accent);
 }
 .filter-chip:active { transform: scale(0.97); }
-.filter-chip-dim {
-  font-size: 10.5px; font-weight: 700;
-  text-transform: uppercase; letter-spacing: .07em;
-  opacity: 0.72;
-}
-.filter-chip-val { font-weight: 600; }
 .filter-chip-x {
   display: inline-flex; align-items: center; justify-content: center;
   width: 18px; height: 18px;
   border-radius: var(--r-pill);
   font-size: 14px; font-weight: 600;
   line-height: 1;
-  background: rgba(0,0,0,0.06);
 }
-.filter-chip:hover .filter-chip-x { background: rgba(255,255,255,0.22); }
+.filter-chip:hover .filter-chip-x { background: rgba(255,255,255,0.2); }
 
 .filter-clear-btn {
   margin-left: auto;
@@ -2910,44 +2847,11 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 }
 .filter-clear-btn[hidden] { display: none; }
 
-/* "Showing N of M recipes" — sits between the filter bar and the active
-   pill row so the count contextualizes the pills below it. */
 .filter-status {
-  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
-  color: var(--ink-faint); margin: .25rem 0 .5rem;
+  font-family: var(--font-sans); font-size: 13px;
+  color: var(--ink-faint); margin: 0 0 1.5rem;
   min-height: 1.2em;
-  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
 }
-
-/* Empty-results state — shown when filters return zero matches instead
-   of leaving the user staring at a blank grid wondering if the page broke. */
-.filter-empty {
-  display: flex; flex-direction: column; align-items: center;
-  gap: .85rem;
-  padding: 2.5rem 1.5rem;
-  margin: .5rem 0 2rem;
-  background: var(--bg-elev);
-  border: 1px dashed var(--rule);
-  border-radius: var(--r-2);
-  text-align: center;
-}
-.filter-empty[hidden] { display: none; }
-.filter-empty-msg {
-  margin: 0;
-  font-family: var(--font-sans); font-size: 14.5px;
-  color: var(--ink-faint);
-}
-.filter-empty-btn {
-  background: var(--bg);
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  font-family: var(--font-sans); font-size: 13px; font-weight: 600;
-  padding: var(--s-2) var(--s-4);
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background var(--d-fast), color var(--d-fast);
-}
-.filter-empty-btn:hover { background: var(--accent); color: #fff; }
 
 /* Sort bar — sits above the category sections on every family page. */
 .sort-bar {
@@ -2983,8 +2887,8 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
    never overflow the viewport. The bar itself wraps to a scrollable row
    so all menu buttons stay reachable. */
 @media (max-width: 700px) {
-  .filter-bar { padding: .7rem .7rem; column-gap: .55rem; row-gap: .55rem; }
-  .filter-menu > summary { padding: 9px 11px; font-size: 11.5px; }
+  .filter-bar { padding: .6rem .65rem; gap: .35rem; }
+  .filter-menu > summary { padding: 9px 11px; font-size: 13px; }
   .filter-panel {
     position: fixed;
     left: 1rem; right: 1rem; top: auto;
@@ -2996,11 +2900,7 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
     box-shadow: 0 -10px 40px rgba(0,0,0,0.18), 0 0 0 1px var(--rule);
   }
   .filter-clear-btn { margin-left: 0; flex: 1 1 100%; order: 99; }
-  .filter-chip-dim { display: none; }
 }
-/* Recipe-card time meta: keep "20 min · overnight" on a single line so
-   the headline number and the passive-phase annotation never split. */
-.ec-meta-time { white-space: nowrap; }
 [data-theme="dark"] .filter-chip:hover .filter-chip-x { background: rgba(255,255,255,0.15); }
 
 @media (max-width: 700px) {
@@ -3274,6 +3174,23 @@ body.cmd-palette-open { overflow: hidden; }
   font-size: 0.75rem;
   color: var(--ink-faint);
   background: var(--bg);
+}
+.cmd-palette-filterhint {
+  padding: 0.5rem 1.05rem;
+  border-top: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  background: var(--bg);
+}
+.cmd-palette-filterhint code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  padding: 0.08rem 0.32rem;
+  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
+  border-radius: 3px;
+  background: var(--bg-elev);
+  color: var(--ink-soft);
+  margin: 0 0.12rem;
 }
 .cmd-palette-hint kbd {
   font-family: 'JetBrains Mono', monospace;
@@ -3923,91 +3840,254 @@ body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color:
 /* The recipe-time accent in the hero stat strip already uses --accent.
    On non-recipe topic-hero pages there's no time stat, so no change. */
 
-/* ── Substitution hints in step prose ───────────────────────────────── */
-.sub-hint {
-  border-bottom: 1px dotted var(--accent, currentColor);
-  cursor: help;
-  background: transparent;
-  padding: 0 1px;
-  border-radius: 2px;
-}
-.sub-hint:hover,
-.sub-hint:focus-visible {
-  background: color-mix(in oklab, var(--accent, currentColor) 12%, transparent);
-  outline: none;
-}
-.sub-pop {
-  position: absolute;
-  z-index: 200;
-  background: var(--surface, #fff);
-  color: var(--ink, #1a1a1a);
-  border: 1px solid var(--rule, #d8d2c4);
-  border-radius: 6px;
-  padding: 10px 12px;
-  font-size: 14px;
-  line-height: 1.45;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
-  max-width: 320px;
-  opacity: 0;
-  transform: translateY(-2px);
-  transition: opacity 0.12s ease, transform 0.12s ease;
-  pointer-events: auto;
-}
-.sub-pop.is-open { opacity: 1; transform: translateY(0); }
-.sub-pop-head { display: block; font-weight: 500; }
-.sub-pop-note {
-  display: block;
-  margin-top: 6px;
-  color: var(--ink-soft, #555);
-  font-size: 13px;
-}
-
-/* ── Hero kcal stat ─────────────────────────────────────────────────── */
-.rh-stat-kcal { cursor: pointer; }
-.rh-stat-kcal:focus-visible { outline: 2px solid var(--accent, currentColor); outline-offset: 2px; }
-.rh-macros {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-  font-size: 12px;
-  color: var(--ink-soft, #555);
-}
-.rh-macro strong { color: var(--ink, #1a1a1a); font-weight: 600; }
-.rh-stat-open .rh-stat-label::after { content: " \25BE"; opacity: 0.5; }
-
-/* ── Explicit pairings badge ────────────────────────────────────────── */
-.pair-card-explicit { border-color: color-mix(in oklab, var(--accent, currentColor) 35%, var(--rule, #d8d2c4)); }
-.pair-explicit-badge {
-  display: inline-block;
-  font-size: 10px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  background: color-mix(in oklab, var(--accent, currentColor) 14%, transparent);
-  color: var(--accent, currentColor);
-  padding: 1px 6px;
-  border-radius: 999px;
-  margin-left: 6px;
-  font-weight: 600;
-}
-
-/* ── command palette filter hint ───────────────────────────────────── */
-.cmd-palette-filterhint {
-  padding: 0.5rem 1.05rem;
-  border-top: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
-  font-size: 0.72rem;
-  color: var(--ink-faint);
-  background: var(--bg);
-}
-.cmd-palette-filterhint code {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.68rem;
-  padding: 0.08rem 0.32rem;
-  border: 1px solid var(--rule-soft, rgba(0,0,0,0.08));
-  border-radius: 3px;
+/* ── personalization: save / cooked / notes ─────────────────── */
+/* Save and Cooked buttons inherit the rh-cook-btn shape so the hero
+   action row stays visually unified. The save button takes a gold
+   "filled" treatment when active to distinguish a favorite at a glance. */
+.rh-save-btn, .rh-cooked-btn {
+  display: inline-flex; align-items: center; gap: .55rem;
+  margin-top: 1.1rem;
   background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-pill);
+  padding: 9px 18px 9px 15px;
+  font-family: var(--font-sans); font-size: var(--t-small); font-weight: 600;
+  color: var(--ink); cursor: pointer;
+  letter-spacing: .005em;
+  box-shadow: 0 1px 2px rgba(42, 31, 16, 0.04);
+  transition: border-color 140ms, color 140ms, background 140ms, transform 80ms, box-shadow 140ms;
+}
+.rh-save-btn:hover, .rh-cooked-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 2px 6px rgba(42, 31, 16, 0.08);
+}
+.rh-save-btn:active, .rh-cooked-btn:active { transform: scale(0.97); }
+.rh-save-btn:focus-visible, .rh-cooked-btn:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 3px;
+}
+.rh-save-btn[aria-pressed="true"] {
+  background: #d4a017;
+  color: #2a1f10;
+  border-color: #b8860b;
+  box-shadow: 0 2px 8px rgba(184, 134, 11, 0.28);
+}
+.rh-save-btn[aria-pressed="true"]:hover {
+  background: #b8860b;
+  border-color: #8b6508;
+  color: #fff;
+}
+.rh-save-icon, .rh-cooked-icon { display: inline-flex; align-items: center; }
+.rh-save-icon svg, .rh-cooked-icon svg { display: block; }
+
+.rh-cooked-confirm {
+  font-family: var(--font-sans); font-size: var(--t-small);
   color: var(--ink-soft);
-  margin: 0 0.12rem;
+  margin: .6rem 0 0;
+}
+.rh-cooked-confirm.is-flash {
+  animation: hdr-confirm-flash 900ms ease-out;
+}
+@keyframes hdr-confirm-flash {
+  0%   { color: var(--accent); }
+  100% { color: var(--ink-soft); }
+}
+
+/* My notes panel — slots between Substitutions and Notes. Uses
+   the same section rhythm as the rest of the body so it doesn't
+   feel like a UI lozenge dropped onto a content page. */
+.recipe-mynotes { margin: 2.4rem 0; }
+.mynotes-details {
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--bg-elev);
+  padding: 0;
+}
+.mynotes-details[open] { padding-bottom: 1.1rem; }
+.mynotes-summary {
+  display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  list-style: none;
+}
+.mynotes-summary::-webkit-details-marker { display: none; }
+.mynotes-summary::after {
+  content: '▾'; margin-left: auto; color: var(--ink-faint);
+  transition: transform 160ms ease;
+}
+.mynotes-details[open] .mynotes-summary::after { transform: rotate(180deg); }
+.mynotes-title { font-size: 1.05rem; font-weight: 600; color: var(--ink); }
+.mynotes-hint { font-size: .82rem; color: var(--ink-faint); font-style: italic; }
+.mynotes-body { padding: 0 1.2rem; }
+.mynotes-textarea {
+  width: 100%;
+  min-height: 8rem;
+  resize: vertical;
+  padding: .75rem .9rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: .95rem;
+  line-height: 1.55;
+  box-sizing: border-box;
+}
+.mynotes-textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mynotes-meta {
+  display: flex; justify-content: flex-end;
+  margin-top: .45rem;
+}
+.mynotes-status { font-size: .8rem; color: var(--ink-faint); }
+
+/* ── saved + settings pages ─────────────────────────────────── */
+.hdr-page {
+  max-width: 920px;
+  margin: 2.5rem auto 4rem;
+  padding: 0 1.4rem;
+  font-family: var(--font-sans);
+}
+.hdr-page-eyebrow {
+  display: inline-block;
+  font-size: .78rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: .6rem;
+}
+.hdr-page h1 {
+  font-family: var(--font-sans);
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 .4rem;
+  letter-spacing: -0.01em;
+}
+.hdr-page-tagline {
+  font-size: 1.02rem;
+  color: var(--ink-soft);
+  margin: 0 0 2rem;
+  max-width: 60ch;
+}
+.hdr-section {
+  margin: 2rem 0;
+  padding: 1.4rem 1.6rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+.hdr-section h2 {
+  font-family: var(--font-sans);
+  font-size: 1.15rem; font-weight: 700;
+  margin: 0 0 .4rem;
+  color: var(--ink);
+}
+.hdr-section p { color: var(--ink-soft); margin: .25rem 0; }
+.hdr-section-row {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: .8rem;
+}
+.hdr-count {
+  font-size: 1.4rem; font-weight: 700; color: var(--ink);
+}
+.hdr-count-label { color: var(--ink-soft); font-size: .9rem; }
+.hdr-btn {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: 8px 16px;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-pill);
+  font-family: var(--font-sans); font-size: .9rem; font-weight: 600;
+  color: var(--ink); cursor: pointer;
+  text-decoration: none;
+  transition: all 140ms;
+}
+.hdr-btn:hover {
+  border-color: var(--accent); color: var(--accent);
+  background: var(--accent-soft);
+}
+.hdr-btn-primary {
+  background: var(--accent); color: #fff; border-color: var(--accent);
+}
+.hdr-btn-primary:hover {
+  background: var(--accent-deep); border-color: var(--accent-deep); color: #fff;
+}
+.hdr-btn-danger:hover {
+  border-color: #b8423a; color: #b8423a; background: rgba(184, 66, 58, 0.08);
+}
+.hdr-empty {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+.hdr-saved-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.hdr-saved-card {
+  display: flex; flex-direction: column;
+  padding: 1rem 1.1rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 140ms, transform 80ms, box-shadow 140ms;
+}
+.hdr-saved-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(42, 31, 16, 0.08);
+}
+.hdr-saved-cat {
+  font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-faint); margin-bottom: .3rem;
+}
+.hdr-saved-title {
+  font-size: 1.05rem; font-weight: 600; color: var(--ink);
+  margin: 0 0 .4rem;
+}
+.hdr-saved-desc {
+  font-size: .85rem; color: var(--ink-soft);
+  line-height: 1.45;
+  margin: 0;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.hdr-saved-meta {
+  margin-top: .7rem;
+  font-size: .78rem; color: var(--ink-faint);
+}
+.hdr-stats {
+  display: flex; gap: 2rem; flex-wrap: wrap;
+  margin: 1rem 0 0;
+}
+.hdr-stat-block strong { display: block; font-size: 1.7rem; color: var(--ink); }
+.hdr-stat-block span { color: var(--ink-soft); font-size: .85rem; }
+.hdr-restore-input {
+  display: inline-block; margin-top: .6rem;
+  font-family: var(--font-sans); font-size: .85rem;
+}
+.hdr-restore-status {
+  margin-top: .6rem; font-size: .88rem; color: var(--ink-soft);
+}
+.hdr-restore-status.is-ok { color: #2a7a3a; }
+.hdr-restore-status.is-err { color: #b8423a; }
+
+/* New top-nav entries pick up the same look as topnav-back */
+.topnav-saved, .topnav-settings {
+  font-family: var(--font-sans); font-size: .88rem; font-weight: 500;
+  color: var(--ink-soft); text-decoration: none;
+  padding: 6px 10px; border-radius: 8px;
+  transition: color 140ms, background 140ms;
+}
+.topnav-saved:hover, .topnav-settings:hover {
+  color: var(--accent); background: var(--accent-soft);
+}
+@media (max-width: 700px) {
+  .topnav-saved, .topnav-settings { display: none; }
 }
 
 /* ── pantry-match page ─────────────────────────────────────────────── */
@@ -4144,215 +4224,3 @@ body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color:
 .pm-card-tags {
   margin: 0.45rem 0 0; font-size: 0.78rem; color: var(--ink-faint); text-transform: lowercase;
 }
-
-/* ── print button (next to cook's-view in hero) ──────────── */
-.rh-print-btn {
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  margin-left: 0.5rem; padding: 0.45rem 0.85rem;
-  background: var(--surface); color: var(--ink);
-  border: 1px solid var(--rule); border-radius: 999px;
-  font: inherit; font-size: 0.85rem; cursor: pointer;
-  transition: background 120ms ease, border-color 120ms ease, transform 80ms ease;
-}
-.rh-print-btn:hover { background: var(--surface-warm); border-color: var(--rule-strong); }
-.rh-print-btn:active { transform: scale(0.97); }
-.rh-print-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.rh-print-label { font-weight: 500; }
-
-/* ── mobile bottom nav ─────────────────────────────────── */
-.bottom-nav {
-  display: none;
-  position: fixed; bottom: 0; left: 0; right: 0;
-  z-index: 50;
-  grid-template-columns: repeat(4, 1fr);
-  background: var(--surface);
-  border-top: 1px solid var(--rule);
-  padding-bottom: env(safe-area-inset-bottom, 0);
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
-}
-.bn-btn {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 0.15rem; height: 56px;
-  background: none; border: none; color: var(--ink);
-  font-size: 0.7rem; font-weight: 500;
-  cursor: pointer;
-  transition: background 100ms ease;
-}
-.bn-btn:hover { background: var(--surface-warm); }
-.bn-btn:active { background: var(--rule-soft); }
-.bn-icon { font-size: 1.2rem; line-height: 1; }
-.bn-label { font-size: 0.7rem; }
-@media (max-width: 767px) {
-  .bottom-nav { display: grid; }
-  body { padding-bottom: calc(56px + env(safe-area-inset-bottom, 0)); }
-}
-body[data-cooks-view="on"] .bottom-nav { display: none !important; }
-
-/* ── step state classes (timer-driven) ─────────────────── */
-.step-item.step--running {
-  background: var(--surface-warm);
-  border-left: 3px solid var(--accent);
-  padding-left: calc(1rem - 3px);
-}
-.step-item.step--done .step-num {
-  background: var(--ink-faint);
-  color: var(--surface);
-  text-decoration: line-through;
-}
-
-/* ── visual polish pass: recipe page hierarchy ─────────────────────────
-   Critical callout, notes typography, substitutions grid, step density,
-   inline section icons, phase header ordinals. */
-
-/* Section icon: small monoline glyph beside the h2 text. Sits at reduced
-   opacity so it reads as quiet identity rather than decoration. */
-.section-head h2 { display: inline-flex; align-items: center; gap: .55rem; }
-.section-head h2 .sh-icon {
-  display: inline-flex; align-items: center; justify-content: center;
-  color: var(--accent);
-  opacity: 0.72;
-  flex-shrink: 0;
-}
-[data-theme="dark"] .section-head h2 .sh-icon { opacity: 0.65; }
-body[data-category="ingredients"] .section-head h2 .sh-icon { color: var(--cat-ingredients); }
-body[data-category="techniques"]  .section-head h2 .sh-icon { color: var(--cat-techniques); }
-body[data-category="cuisines"]    .section-head h2 .sh-icon { color: var(--cat-cuisines); }
-body[data-category="equipment"]   .section-head h2 .sh-icon { color: var(--cat-equipment); }
-body[data-category="hubs"]        .section-head h2 .sh-icon { color: var(--cat-hubs); }
-@media (max-width: 480px) {
-  .section-head h2 .sh-icon { display: none; }
-}
-
-/* Critical-technique callout. Distinct from the before-you-start prelude:
-   amber tint + warning glyph means "the dish hinges on this sentence". */
-.recipe-critical {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: .8rem;
-  align-items: start;
-  margin: 1rem 0 1.4rem;
-  padding: .95rem 1.1rem;
-  border-left: 3px solid #c98a1c;
-  background: rgba(201, 138, 28, 0.08);
-  border-radius: 4px;
-}
-[data-theme="dark"] .recipe-critical {
-  border-left-color: #d9a44a;
-  background: rgba(217, 164, 74, 0.10);
-}
-.recipe-critical-icon {
-  color: #b07410;
-  display: inline-flex;
-  padding-top: .15rem;
-}
-[data-theme="dark"] .recipe-critical-icon { color: #e9b96a; }
-.recipe-critical-body {
-  display: flex; flex-direction: column; gap: .25rem;
-}
-.recipe-critical-label {
-  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 700;
-  text-transform: uppercase; letter-spacing: .14em;
-  color: #8a5910;
-}
-[data-theme="dark"] .recipe-critical-label { color: #e0b56a; }
-.recipe-critical-text {
-  margin: 0;
-  font-family: var(--font-serif);
-  font-size: 1.05rem; line-height: 1.55;
-  font-weight: 600;
-  color: var(--ink);
-}
-
-/* Notes: essay-grade typography. Wider line-height, capped measure,
-   a soft hairline between paragraphs so the wall-of-text gets relief. */
-.recipe-notes {
-  font-size: 16.5px;
-  line-height: 1.75;
-  max-width: 70ch;
-  font-variant-numeric: oldstyle-nums;
-}
-.recipe-notes p { margin: 0; padding: 1.1em 0 0; color: var(--ink); }
-.recipe-notes p:first-child { padding-top: .25em; }
-.recipe-notes p + p { border-top: 1px solid var(--rule-soft); }
-
-/* Substitutions: card grid, three typographic registers per card. */
-.recipe-subs {
-  list-style: none; padding: 0; margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: .75rem;
-}
-@media (min-width: 720px) {
-  .recipe-subs { grid-template-columns: 1fr 1fr; gap: .9rem; }
-}
-.sub-card {
-  display: flex; flex-direction: column;
-  gap: .35rem;
-  padding: .85rem 1rem;
-  background: var(--bg-elev);
-  border: 1px solid var(--rule);
-  border-radius: var(--r-2);
-  transition: border-color 160ms, box-shadow 160ms;
-}
-.sub-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(42, 31, 16, 0.06);
-}
-.sub-card-for {
-  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 700;
-  text-transform: uppercase; letter-spacing: .12em;
-  color: var(--ink-faint);
-}
-.sub-card-use {
-  font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.35;
-  font-weight: 600; color: var(--ink);
-}
-.sub-card-note {
-  margin: 0;
-  font-size: 13.5px; line-height: 1.55;
-  color: var(--ink-soft);
-}
-
-/* Modifications: more breathing room between cards. */
-.recipe-mods { gap: 1rem; }
-@media (min-width: 760px) { .recipe-mods { gap: 1.15rem; } }
-.mod-card { padding: 1.05rem 1.15rem; gap: .65rem; }
-.mod-how { margin-top: .15rem; }
-
-/* Step rhythm: more vertical air, inline-quantity affordance. */
-.recipe-steps .step-item {
-  margin: 1.5rem 0;
-}
-.recipe-steps .step-item.has-image { margin: 1.7rem 0; }
-.step-body .step-qty {
-  border-bottom: 1px dotted var(--ink-faint);
-  padding-bottom: 1px;
-}
-[data-theme="dark"] .step-body .step-qty {
-  border-bottom-color: var(--ink-faint);
-}
-
-/* Ingredient phase headers: more prominent, with an ordinal. */
-.ing-group-head {
-  display: flex; align-items: baseline; gap: .5rem;
-  font-family: var(--font-serif);
-  font-size: 14px; font-weight: 600;
-  text-transform: none; letter-spacing: 0;
-  color: var(--ink);
-  margin: 1.6rem 0 .6rem;
-  padding: .35rem .6rem;
-  border-bottom: 1px solid var(--rule-soft);
-  background: var(--bg-soft);
-  border-radius: 4px;
-}
-.ing-group-ord {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--accent);
-  letter-spacing: 0;
-  font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
-}
-.ing-group-text { color: var(--ink); }
-[data-theme="dark"] .ing-group-head { background: var(--bg-soft); }
-

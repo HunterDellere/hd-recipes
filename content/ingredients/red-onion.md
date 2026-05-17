@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Red onion'
 desc: 'Allium cepa with anthocyanin-rich red-purple skin and rings, milder and sweeter than yellow onion when raw, the canonical raw-application onion across kachumber, ceviche, fattoush, salsa, and tacos. Cooks down to brown rather than red.'
 metaDesc: 'Red onion: anthocyanin chemistry, raw vs cooked behavior, role in salsas and salads, cold-water soak for aggressive onions, storage.'
-tags: ['vegetable', 'aromatic', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-10'
 

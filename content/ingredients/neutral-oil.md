@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Neutral oil (peanut, rice bran, canola, refined avocado)'
 desc: 'High-smoke-point cooking oils with little intrinsic flavor: peanut, rice bran, canola, refined avocado, refined sunflower, refined safflower, grapeseed. The category that handles high-heat cooking when olive oil would smoke and toasted oils would burn.'
 metaDesc: 'Neutral oil: peanut, rice bran, canola, refined avocado. Smoke points, the high-heat cooking applications (stir-fry, deep-fry, hot-oil finish), and the differences between the common options.'
-tags: ['fat', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 density_g_per_ml: 0.92

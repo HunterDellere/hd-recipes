@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Ceylon black tea","status":"complete","tags":["tea","asian"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Ceylon black tea","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -105,18 +107,10 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">Ceylon black tea (milk tea)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="assam-tea.html">Assam tea</a></span>
-          <p class="sub-card-note">Maltier, more robust. Will produce a heavier, less bright milk tea. Increase to 6 g per 240 ml to match strength.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">Ceylon black tea (general)</span>
-          <span class="sub-card-use">English Breakfast blend</span>
-          <p class="sub-card-note">Most English Breakfast blends contain Ceylon. Closest off-the-shelf substitute.</p>
-        </li>
+        <li><strong>Ceylon black tea (milk tea)</strong> → <a class="x-link" data-category="ingredients" href="assam-tea.html">Assam tea</a> <span class="sub-note">Maltier, more robust. Will produce a heavier, less bright milk tea. Increase to 6 g per 240 ml to match strength.</span></li>
+        <li><strong>Ceylon black tea (general)</strong> → English Breakfast blend <span class="sub-note">Most English Breakfast blends contain Ceylon. Closest off-the-shelf substitute.</span></li>
     </ul>
 
     
@@ -133,61 +127,43 @@
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
-      <div class="rl-group" data-related-group="recipes">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/thai-iced-tea-no-dye.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Thai iced tea (no dye)</span>
-          <span class="rl-card-why">tea</span>
-        </a>
-        </div>
-      </div>
-
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">8</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="water-chestnut.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Water chestnut</span>
-          <span class="rl-card-why">asian</span>
-        </a>
-        <a class="rl-card" href="mung-bean.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Mung bean (split, hulled)</span>
-          <span class="rl-card-why">asian</span>
-        </a>
-        <a class="rl-card" href="aburaage.html" data-category="ingredients" data-reason="tag">
+        <a class="rl-card is-strong" href="aburaage.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Aburaage (deep-fried tofu pouches)</span>
-          <span class="rl-card-why">asian</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="konnyaku.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Konnyaku (konjac, devil's tongue)</span>
-          <span class="rl-card-why">asian</span>
+        <a class="rl-card is-strong" href="agar-agar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Agar-agar</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="genmaicha.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Genmaicha</span>
-          <span class="rl-card-why">tea</span>
+        <a class="rl-card is-strong" href="aji-amarillo-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají amarillo paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        <a class="rl-card" href="assam-tea.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Assam tea</span>
-          <span class="rl-card-why">tea</span>
+        <a class="rl-card is-strong" href="aji-panca-paste.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Ají panca paste</span>
+          <span class="rl-card-why">related</span>
         </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="techniques">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Techniques</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--techniques">
-        <a class="rl-card is-strong" href="../techniques/steeping-tea.html" data-category="techniques" data-reason="tag">
-          <span class="rl-card-title">Steeping tea</span>
-          <span class="rl-card-why">tea</span>
+        <a class="rl-card is-strong" href="all-purpose-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">All-purpose flour</span>
+          <span class="rl-card-why">related</span>
+        </a>
+        <a class="rl-card is-strong" href="allspice.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Allspice (pimento)</span>
+          <span class="rl-card-why">related</span>
+        </a>
+        <a class="rl-card is-strong" href="anchovy-fillets.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Anchovy fillets</span>
+          <span class="rl-card-why">related</span>
+        </a>
+        <a class="rl-card is-strong" href="apple-cider-vinegar.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Apple cider vinegar</span>
+          <span class="rl-card-why">related</span>
         </a>
         </div>
       </div>

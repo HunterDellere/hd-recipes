@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Shallot","status":"complete","tags":["aromatic","french"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Shallot","status":"complete","tags":[]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,29 +109,25 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">shallot (raw, vinaigrette or mignonette)</span>
-          <span class="sub-card-use"><a class="x-link" data-category="ingredients" href="red-onion.html">red onion</a>, finely diced and rinsed under cold water</span>
-          <p class="sub-card-note">Rinsing strips the most aggressive sulfur compounds so the onion does not dominate. Sweeter Vidalia or Walla Walla onion also works without rinsing. Yellow onion is too aggressive raw.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">shallot (sauce reduction, sweated aromatic base)</span>
-          <span class="sub-card-use">yellow onion, finely diced</span>
-          <p class="sub-card-note">Sweat slightly longer (5 to 6 minutes vs 3 to 4) to land the same sweetness. The result is slightly more onion-forward and less aromatic-complex; acceptable in most pan sauces.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">shallot (fried crisp, Southeast Asian garnish)</span>
-          <span class="sub-card-use">thinly sliced red onion</span>
-          <p class="sub-card-note">Lower sugar content means slower caramelization; pull at the same color rather than the same time. Results in a slightly less sweet but functionally identical garnish.</p>
-        </li>
+        <li><strong>shallot (raw, vinaigrette or mignonette)</strong> → <a class="x-link" data-category="ingredients" href="red-onion.html">red onion</a>, finely diced and rinsed under cold water <span class="sub-note">Rinsing strips the most aggressive sulfur compounds so the onion does not dominate. Sweeter Vidalia or Walla Walla onion also works without rinsing. Yellow onion is too aggressive raw.</span></li>
+        <li><strong>shallot (sauce reduction, sweated aromatic base)</strong> → yellow onion, finely diced <span class="sub-note">Sweat slightly longer (5 to 6 minutes vs 3 to 4) to land the same sweetness. The result is slightly more onion-forward and less aromatic-complex; acceptable in most pan sauces.</span></li>
+        <li><strong>shallot (fried crisp, Southeast Asian garnish)</strong> → thinly sliced red onion <span class="sub-note">Lower sugar content means slower caramelization; pull at the same color rather than the same time. Results in a slightly less sweet but functionally identical garnish.</span></li>
     </ul>
 
     
     <span class="section-anchor" id="used-in"></span>
     <div class="section-head"><h2>Recipes using this</h2></div>
     <div class="rl-cards">
+        <a class="rl-card" href="../recipes/banh-mi-thit-nuong.html" data-category="recipes">
+          <span class="rl-card-title">Banh mi thit nuong (grilled pork banh mi)</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/beef-rendang.html" data-category="recipes">
+          <span class="rl-card-title">Beef rendang</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/vietnamese-canh-chua-tamarind-sour-soup-with-catfish.html" data-category="recipes">
           <span class="rl-card-title">Canh chua cá (Vietnamese tamarind sour soup with catfish)</span>
           
@@ -142,6 +140,10 @@
           <span class="rl-card-title">Chè trôi nước (glutinous rice balls in ginger syrup)</span>
           
         </a>
+        <a class="rl-card" href="../recipes/chicken-satay-with-peanut-sauce.html" data-category="recipes">
+          <span class="rl-card-title">Chicken satay with peanut sauce</span>
+          
+        </a>
         <a class="rl-card" href="../recipes/lacto-fermented-hot-sauce.html" data-category="recipes">
           <span class="rl-card-title">Lacto-fermented hot sauce</span>
           
@@ -152,6 +154,18 @@
         </a>
         <a class="rl-card" href="../recipes/maple-cider-vinaigrette.html" data-category="recipes">
           <span class="rl-card-title">Maple-cider vinaigrette</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/nasi-goreng.html" data-category="recipes">
+          <span class="rl-card-title">Nasi goreng</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/penang-curry-laksa.html" data-category="recipes">
+          <span class="rl-card-title">Penang curry laksa</span>
+          
+        </a>
+        <a class="rl-card" href="../recipes/pikliz.html" data-category="recipes">
+          <span class="rl-card-title">Pikliz</span>
           
         </a>
         <a class="rl-card" href="../recipes/roasted-delicata-and-farro-salad-with-maple-vinaigrette.html" data-category="recipes">
@@ -175,61 +189,7 @@
           
         </a>
     </div>
-  
-    <span class="section-anchor" id="related"></span>
-    <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
-    <div class="rl-groups">
-
-      <div class="rl-group" data-related-group="recipes">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Recipes</span>
-          <span class="rl-group-count">1</span>
-        </h3>
-        <div class="rl-cards rl-cards--recipes">
-        <a class="rl-card" href="../recipes/dijon-mustard.html" data-category="recipes" data-reason="tag">
-          <span class="rl-card-title">Dijon mustard</span>
-          <span class="rl-card-why">french</span>
-        </a>
-        </div>
-      </div>
-
-      <div class="rl-group" data-related-group="ingredients">
-        <h3 class="rl-group-head">
-          <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">7</span>
-        </h3>
-        <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="haricots-verts.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Haricots verts</span>
-          <span class="rl-card-why">french</span>
-        </a>
-        <a class="rl-card is-strong" href="dijon-mustard.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Dijon mustard</span>
-          <span class="rl-card-why">french</span>
-        </a>
-        <a class="rl-card" href="garlic.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Garlic</span>
-          <span class="rl-card-why">aromatic</span>
-        </a>
-        <a class="rl-card" href="scallion.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Scallion (green onion)</span>
-          <span class="rl-card-why">aromatic</span>
-        </a>
-        <a class="rl-card" href="vanilla-bean-paste.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Vanilla bean paste</span>
-          <span class="rl-card-why">aromatic</span>
-        </a>
-        <a class="rl-card" href="vanilla-extract.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Vanilla extract</span>
-          <span class="rl-card-why">aromatic</span>
-        </a>
-        <a class="rl-card" href="nicoise-olives.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Nicoise olives</span>
-          <span class="rl-card-why">french</span>
-        </a>
-        </div>
-      </div>
-    </div><nav class="adj-nav"><a class="adj-nav-link" href="sesame-seeds.html">
+  <nav class="adj-nav"><a class="adj-nav-link" href="sesame-seeds.html">
       <span class="adj-nav-label">← Previous</span>
       <span class="adj-nav-title">Sesame seeds (white, toasted)</span>
     </a><a class="adj-nav-link" href="shaoxing-wine.html">

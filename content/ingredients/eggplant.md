@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Eggplant (aubergine, brinjal)'
 desc: 'Solanum melongena. A sponge-textured nightshade with a cell structure that absorbs oil and water aggressively. Cultivar choice (globe, Italian, Japanese, Chinese, Thai green, Indian, fairy-tale) is the first decision in any eggplant recipe; everything else flows from it.'
 metaDesc: 'Eggplant: cultivar guide, the moisture-fat-bitter triangle, salting and dry-frying strategies, why globe sponges oil and Japanese does not.'
-tags: ['vegetable', 'pantry']
+tags: ['pantry']
 density_g_per_ml: 0.45
 updated: '2026-05-09'
 

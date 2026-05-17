@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Canned San Marzano tomatoes'
 desc: 'Plum tomatoes from the volcanic soil south of Naples, hand-peeled, packed whole in puree. Lower acid, denser flesh, sweeter finish than supermarket plum tomatoes.'
 metaDesc: 'San Marzano DOP canned tomatoes: low-acid sweet plum varietal grown on Vesuvius soils. How to spot the real DOP can, when to substitute, and the texture-by-application rule.'
-tags: ['umami', 'pantry', 'italian']
+tags: ['umami', 'pantry']
 density_g_per_ml: 1.04
 imperial_pref: 'cup'
 updated: '2026-05-09'

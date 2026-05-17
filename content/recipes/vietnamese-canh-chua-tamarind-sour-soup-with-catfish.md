@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Canh chua cá (Vietnamese tamarind sour soup with catfish)'
 desc: 'Southern Vietnamese sour soup built on a tamarind-acidified broth, with pineapple, tomato, taro stem (bạc hà), okra, and bean sprouts simmered briefly, catfish steaks slipped in for a 4 to 5 minute poach, and the bowl finished with raw rau ngổ, culantro, fried garlic, and Thai chili. The dish lives or dies on the acid-sugar-salt-umami curve, calibrated so the tamarind reads bright and not muddy.'
 metaDesc: 'Vietnamese canh chua cá: tamarind sour soup with catfish, pineapple, taro stem, okra, and rau ngổ. The southern Vietnamese pH-balance canon.'
-tags: ['vietnamese', 'seafood', 'fish', 'soup', 'weeknight', 'one-pot']
+tags: ['seafood', 'fish', 'soup', 'weeknight', 'one-pot']
 updated: '2026-05-10'
 
 servings: 4

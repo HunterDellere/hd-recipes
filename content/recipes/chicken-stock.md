@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Chicken stock'
 desc: 'Cold-water start with chicken bones, slow-skim, no-boil 4-hour simmer with mirepoix and bay. Clear, deeply gelatinous, neutral enough to use across French sauce work, Italian risotti, Chinese soups, and Mexican caldos.'
 metaDesc: 'Chicken stock recipe: cold-water start, no-boil 4-hour simmer, mirepoix and bay. Clear, gelatin-rich, neutral base for sauces, soups, risotto, and braises.'
-tags: ['chicken', 'pantry', 'sauce', 'umami', 'make-ahead', 'weekend-project', 'freezer-friendly']
+tags: ['chicken', 'pantry', 'umami', 'make-ahead', 'weekend-project', 'freezer-friendly']
 updated: '2026-05-09'
 
 servings: 8

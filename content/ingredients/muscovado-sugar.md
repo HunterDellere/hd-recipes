@@ -6,7 +6,7 @@ content_review: 'pending'
 
 title: 'Muscovado sugar (dark)'
 desc: 'Unrefined cane sugar with the molasses left in. Sticky, moist, deeply mineral; the cleaner, more complex cousin of standard dark brown sugar.'
-tags: ['caramel', 'tropical']
+tags: ['tropical']
 density_g_per_ml: 0.85
 imperial_pref: 'tbsp'
 updated: '2026-05-16'

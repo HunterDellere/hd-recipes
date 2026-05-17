@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Harissa'
 desc: 'The Tunisian fermented and roasted chili paste: dried red chilies (a mix of mild and hot), roasted red pepper, garlic, caraway, coriander, cumin, smoked paprika, salt, olive oil. Pounded to a thick rust-red paste that reads hot, smoky, citrusy from the caraway, and structurally pantry-deep. The canonical North African condiment for stews, grilled meats, eggs, sandwiches, marinades, roasted vegetables, and as a flavor base for soups and broths.'
 metaDesc: 'Harissa: the Tunisian roasted chili paste (dried chilies, roasted pepper, garlic, caraway, coriander, cumin, olive oil). The North African condiment for stews, grilled meat, eggs, sandwiches, marinades, and roasted vegetables.'
-tags: ['sauce', 'mediterranean', 'spicy', 'pantry', 'make-ahead', 'umami', 'spice']
+tags: ['spicy', 'pantry', 'make-ahead', 'umami']
 updated: '2026-05-15'
 
 servings: 16

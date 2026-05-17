@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Green papaya'
 desc: 'Unripe papaya (Carica papaya), firm and white-fleshed with the proteolytic enzyme papain still active. Used as a structural vegetable in Southeast Asian salads, curries, and meat tenderizing applications, where the unripe fruit behaves as a crisp neutral starch rather than a sweet tropical fruit.'
 metaDesc: 'Green papaya: papain enzyme chemistry, role in Thai and Vietnamese salads, meat-tenderizing capacity, shredding technique, ripening signals, and substitutions.'
-tags: ['vegetable', 'fruit']
+tags: []
 updated: '2026-05-10'
 
 about: |

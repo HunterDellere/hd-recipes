@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Kombu-shiitake vegetarian dashi (shōjin dashi)'
 desc: 'The canonical Buddhist temple cuisine dashi: kombu and dried shiitake mushroom cold-soaked overnight, briefly warmed before straining. The structural broth of shōjin ryōri, with glutamate from the kombu and guanylate from the shiitake producing umami synergy comparable to (but distinct from) the kombu-katsuobushi ichiban dashi. Stub.'
 metaDesc: 'Kombu-shiitake vegetarian dashi: the canonical shōjin Buddhist temple cuisine dashi made from kombu and dried shiitake, the vegetable-and-seaweed alternative to fish-based dashi. Stub recipe.'
-tags: ['japanese', 'shojin', 'vegan', 'sauce', 'umami', 'pantry']
+tags: ['vegan', 'umami', 'pantry']
 updated: '2026-05-15'
 
 servings: 4

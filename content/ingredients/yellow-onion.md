@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Yellow onion'
 desc: 'The Allium cepa workhorse cultivar with brown-yellow papery skin and high sulfur volatile load. The default cooking onion across Western and many Asian cuisines: sweetens dramatically on long heat, holds together in sautées, and forms the aromatic foundation of soffritto, mirepoix, and German Speckbraten.'
 metaDesc: 'Yellow onion: sulfur volatiles and pyruvate chemistry, why it sweetens on heat, when to swap for red or sweet onion, and the cooking applications from mirepoix to caramelized to raw dressing.'
-tags: ['aromatic', 'vegetable', 'pantry']
+tags: ['pantry']
 updated: '2026-05-10'
 
 usda_fdc_id: 170000

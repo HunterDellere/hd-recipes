@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Fennel bulb'
 desc: 'Florence or Sweet fennel, Foeniculum vulgare var. dulce. Crisp white-green basal bulb (swollen leaf bases, not a true bulb) with anise-perfumed fronds and feathery green stalks. Anethole-dominant, with parsley and tarragon undertones; the canonical bulb of Mediterranean fish cookery.'
 metaDesc: 'Fennel bulb: anatomy, the difference between Florence fennel and the wild herb, the anethole flavor compound, applications across Italian sausage and fish cookery, French Provençal aigo bouido, Sicilian pasta con le sarde, and the slicing techniques that determine the dish.'
-tags: ['vegetable', 'aromatic']
+tags: []
 density_g_per_ml: 0.7
 grams_per_unit: 350
 updated: '2026-05-10'

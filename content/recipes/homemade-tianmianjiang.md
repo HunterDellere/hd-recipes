@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Homemade tianmianjiang (sweet bean sauce, 甜面酱, 6-week home cure)'
 desc: 'A home cure of fermented wheat flour and soybean to produce the sweet-savory dark-brown paste that is the foundational sauce of northern-Chinese cooking. A 6-to-8 week project using a koji-cultured wheat dough as the enzymatic engine and a salt cure to develop depth. Not authentic 6-month commercial tianmianjiang but the closest reasonable home version. Stub.'
 metaDesc: 'Homemade tianmianjiang stub recipe: a 6-to-8 week home cure of fermented wheat flour and soybean. The foundational sweet bean sauce of northern Chinese cooking. Stub.'
-tags: ['chinese', 'pantry', 'fermentation', 'umami', 'sauce', 'weekend-project']
+tags: ['pantry', 'fermentation', 'umami', 'weekend-project']
 updated: '2026-05-12'
 
 servings: 30

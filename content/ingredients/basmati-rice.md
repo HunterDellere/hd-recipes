@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Basmati rice'
 desc: 'Long-grain aromatic rice from the Indian subcontinent, low in amylopectin and high in 2-acetyl-1-pyrroline. Grains stay separate, lengthen dramatically on cooking, and carry a popcorn-pandan aroma that defines the cuisine it anchors.'
 metaDesc: 'Basmati rice: the genetics and starch chemistry behind why grains stay separate and elongate, the soak-and-parboil method, the absorption alternative, and how to choose between aged and new-crop rice for pulao, polo, mansaf, and biryani.'
-tags: ['rice', 'grain']
+tags: ['rice']
 density_g_per_ml: 0.85
 imperial_pref: 'cup'
 updated: '2026-05-06'

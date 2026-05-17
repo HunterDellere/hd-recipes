@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Miso-butter shrimp with delicata, shimeji, and charred broccoli'
 desc: 'A one-pan washoku-leaning sheet dish. Delicata roasts to chestnut-sweet edges, broccoli and shimeji char dry, shrimp hit the pan last and the whole thing gets glossed with a miso-mirin-butter sauce finished with rice vinegar.'
 metaDesc: 'Miso-butter shrimp sheet pan with delicata squash, shimeji mushrooms, and charred broccoli; washoku-Japanese flavors, weeknight-fast technique. Serves 4.'
-tags: ['weeknight', 'sheet-pan', 'seafood', 'japanese', 'umami']
+tags: ['weeknight', 'sheet-pan', 'seafood', 'umami']
 updated: '2026-04-29'
 
 servings: 4

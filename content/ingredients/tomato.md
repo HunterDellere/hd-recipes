@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Tomato (fresh)'
 desc: 'Solanum lycopersicum fruit, eaten ripe. Free-glutamate concentration runs 100 to 250 mg per 100 g: the second-highest natural source after parmigiano. The umami driver of Mediterranean cooking when ripe; a watery footnote out of season.'
 metaDesc: 'Fresh tomato: glutamate-driven umami, the salt-cure that concentrates flavor, ripe vs supermarket-tomato chemistry, and the heirloom buying guide.'
-tags: ['vegetable', 'fruit', 'mediterranean', 'umami']
+tags: ['umami']
 updated: '2026-05-10'
 
 usda_fdc_id: 170457

@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Greek yogurt'
 desc: 'Whole-milk yogurt strained through cloth to remove a substantial fraction of the whey. Concentrated protein (10 percent), thicker texture, tangier flavor than American-style yogurt. Structural ingredient in dips, sauces, and Eastern Mediterranean cooking.'
 metaDesc: 'Greek yogurt: real strained yogurt versus thickened American supermarket yogurt, the protein concentration, applications from tzatziki to whipped feta, and how to strain at home.'
-tags: ['dairy', 'mediterranean']
+tags: []
 updated: '2026-05-10'
 
 usda_fdc_id: 170890

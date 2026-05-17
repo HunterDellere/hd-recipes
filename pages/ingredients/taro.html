@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- {"type":"ingredient","category":"ingredients","title":"Taro root","status":"complete","tags":["starch","asian","tropical","vegetable"]} -->
+<!-- {"type":"ingredient","category":"ingredients","title":"Taro root","status":"complete","tags":["starch","tropical"]} -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -106,18 +108,10 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">taro (milk tea base)</span>
-          <span class="sub-card-use">purple sweet potato (Okinawan/Hannah)</span>
-          <p class="sub-card-note">Sweeter, fruitier, more vivid purple. Texturally close enough; loses the gentle floral note and the slick mouthfeel.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">taro (savory braise or curry)</span>
-          <span class="sub-card-use">russet potato + 1 tbsp grated lotus root</span>
-          <p class="sub-card-note">Approximates the starch profile and slight slickness. Loses the perfume.</p>
-        </li>
+        <li><strong>taro (milk tea base)</strong> → purple sweet potato (Okinawan/Hannah) <span class="sub-note">Sweeter, fruitier, more vivid purple. Texturally close enough; loses the gentle floral note and the slick mouthfeel.</span></li>
+        <li><strong>taro (savory braise or curry)</strong> → russet potato + 1 tbsp grated lotus root <span class="sub-note">Approximates the starch profile and slight slickness. Loses the perfume.</span></li>
     </ul>
 
     
@@ -134,43 +128,52 @@
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
+      <div class="rl-group" data-related-group="recipes">
+        <h3 class="rl-group-head">
+          <span class="rl-group-label">Recipes</span>
+          <span class="rl-group-count">1</span>
+        </h3>
+        <div class="rl-cards rl-cards--recipes">
+        <a class="rl-card" href="../recipes/che-chuoi.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Chè chuối (Vietnamese banana, tapioca, and coconut chè)</span>
+          <span class="rl-card-why">tropical</span>
+        </a>
+        </div>
+      </div>
+
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">8</span>
+          <span class="rl-group-count">7</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
-        <a class="rl-card is-strong" href="glutinous-rice-flour.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Glutinous rice flour</span>
-          <span class="rl-card-why">starch · asian</span>
+        <a class="rl-card is-strong" href="green-plantain.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Green plantain</span>
+          <span class="rl-card-why">starch</span>
         </a>
         <a class="rl-card is-strong" href="tapioca-starch.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Tapioca starch</span>
-          <span class="rl-card-why">starch · asian</span>
+          <span class="rl-card-why">starch</span>
         </a>
-        <a class="rl-card" href="water-chestnut.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Water chestnut</span>
-          <span class="rl-card-why">asian · vegetable</span>
-        </a>
-        <a class="rl-card" href="pandan-leaves.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Pandan leaves</span>
-          <span class="rl-card-why">tropical · asian</span>
-        </a>
-        <a class="rl-card" href="burdock-root.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Burdock root (gobō, niúbàng)</span>
-          <span class="rl-card-why">asian · vegetable</span>
-        </a>
-        <a class="rl-card" href="napa-cabbage.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Napa cabbage (Chinese cabbage, wombok)</span>
-          <span class="rl-card-why">asian · vegetable</span>
+        <a class="rl-card" href="lemongrass.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Lemongrass</span>
+          <span class="rl-card-why">tropical</span>
         </a>
         <a class="rl-card" href="muscovado-sugar.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Muscovado sugar (dark)</span>
           <span class="rl-card-why">tropical</span>
         </a>
-        <a class="rl-card" href="ceylon-tea.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Ceylon black tea</span>
-          <span class="rl-card-why">asian</span>
+        <a class="rl-card" href="tapioca-pearls.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Tapioca pearls (boba)</span>
+          <span class="rl-card-why">starch</span>
+        </a>
+        <a class="rl-card" href="glutinous-rice-flour.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Glutinous rice flour</span>
+          <span class="rl-card-why">starch</span>
+        </a>
+        <a class="rl-card" href="calamansi.html" data-category="ingredients" data-reason="tag">
+          <span class="rl-card-title">Calamansi</span>
+          <span class="rl-card-why">tropical</span>
         </a>
         </div>
       </div>

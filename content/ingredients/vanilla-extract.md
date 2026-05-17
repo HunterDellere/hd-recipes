@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Vanilla extract'
 desc: 'Cured vanilla pods steeped in ethanol. Vanillin is the headline aromatic; the 250+ supporting compounds are what separates real extract from synthetic.'
 metaDesc: 'Vanilla extract: alcohol-extracted vanillin plus hundreds of minor aromatic compounds. The chemistry, heat behavior, real-vs-imitation, and how to substitute paste or whole pods.'
-tags: ['aromatic']
+tags: []
 density_g_per_ml: 0.88
 imperial_pref: 'tsp'
 updated: '2026-04-29'

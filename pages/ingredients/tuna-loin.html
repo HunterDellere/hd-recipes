@@ -53,6 +53,8 @@
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
     <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
     <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
@@ -107,23 +109,11 @@
 
     
     <span class="section-anchor" id="substitutions"></span>
-    <div class="section-head"><h2><span class="sh-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7 h7"/><path d="M14 17 H7"/><polyline points="15 5 17 7 15 9"/><polyline points="9 15 7 17 9 19"/></svg></span>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each card names the use case so the swap is judged in context.</p></div>
+    <div class="section-head"><h2>Substitutions</h2><p class="section-blurb">What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.</p></div>
     <ul class="recipe-subs">
-        <li class="sub-card">
-          <span class="sub-card-for">tuna loin (raw applications: sashimi, poke, aguachile, tartare)</span>
-          <span class="sub-card-use">sashimi-grade salmon (sockeye or king)</span>
-          <p class="sub-card-note">Different flavor profile (oilier, more savory) but works in poke and tartare. Acid-cure (ceviche, aguachile) tilts toward salmon territory in flavor; the dish is meaningfully different.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">tuna loin (lightly cooked: oil-poached, niçoise)</span>
-          <span class="sub-card-use">high-quality oil-packed jarred tuna (Spanish ventresca, Italian tonno)</span>
-          <p class="sub-card-note">Skip the cooking step entirely; the cure already happened in the can. Ortiz, Conservas Cambados, or Tonnino brands; supermarket oil-packed is a different product.</p>
-        </li>
-        <li class="sub-card">
-          <span class="sub-card-for">tuna loin (rare-seared steak preparation)</span>
-          <span class="sub-card-use">swordfish steak or ahi-equivalent fish</span>
-          <p class="sub-card-note">Swordfish takes a sear similarly but sets at slightly lower temperature; pull at internal 55 °C / 130 °F. Mahi-mahi works in the same role with a more delicate flavor.</p>
-        </li>
+        <li><strong>tuna loin (raw applications: sashimi, poke, aguachile, tartare)</strong> → sashimi-grade salmon (sockeye or king) <span class="sub-note">Different flavor profile (oilier, more savory) but works in poke and tartare. Acid-cure (ceviche, aguachile) tilts toward salmon territory in flavor; the dish is meaningfully different.</span></li>
+        <li><strong>tuna loin (lightly cooked: oil-poached, niçoise)</strong> → high-quality oil-packed jarred tuna (Spanish ventresca, Italian tonno) <span class="sub-note">Skip the cooking step entirely; the cure already happened in the can. Ortiz, Conservas Cambados, or Tonnino brands; supermarket oil-packed is a different product.</span></li>
+        <li><strong>tuna loin (rare-seared steak preparation)</strong> → swordfish steak or ahi-equivalent fish <span class="sub-note">Swordfish takes a sear similarly but sets at slightly lower temperature; pull at internal 55 °C / 130 °F. Mahi-mahi works in the same role with a more delicate flavor.</span></li>
     </ul>
 
     
@@ -140,10 +130,23 @@
     <div class="section-head"><h2>Related <span class="sh-sub">8</span></h2></div>
     <div class="rl-groups">
 
+      <div class="rl-group" data-related-group="recipes">
+        <h3 class="rl-group-head">
+          <span class="rl-group-label">Recipes</span>
+          <span class="rl-group-count">1</span>
+        </h3>
+        <div class="rl-cards rl-cards--recipes">
+        <a class="rl-card" href="../recipes/cantonese-steamed-whole-fish-with-ginger-scallion.html" data-category="recipes" data-reason="tag">
+          <span class="rl-card-title">Cantonese steamed whole fish with ginger and scallion</span>
+          <span class="rl-card-why">fish · seafood</span>
+        </a>
+        </div>
+      </div>
+
       <div class="rl-group" data-related-group="ingredients">
         <h3 class="rl-group-head">
           <span class="rl-group-label">Ingredients</span>
-          <span class="rl-group-count">6</span>
+          <span class="rl-group-count">5</span>
         </h3>
         <div class="rl-cards rl-cards--ingredients">
         <a class="rl-card is-strong" href="catfish.html" data-category="ingredients" data-reason="tag">
@@ -164,10 +167,6 @@
         </a>
         <a class="rl-card is-strong" href="whole-white-fish.html" data-category="ingredients" data-reason="tag">
           <span class="rl-card-title">Whole white fish (branzino, sea bass, snapper, porgy)</span>
-          <span class="rl-card-why">fish · seafood</span>
-        </a>
-        <a class="rl-card" href="squid.html" data-category="ingredients" data-reason="tag">
-          <span class="rl-card-title">Squid (calamari)</span>
           <span class="rl-card-why">fish · seafood</span>
         </a>
         </div>

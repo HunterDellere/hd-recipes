@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Sichuan chili oil'
 desc: 'Aromatics infused into hot oil at three precise temperatures, then poured over coarse chili flakes. The crackle is the technique. The result has structure store-bought never does — three layers of red, with sediment that earns its bowl.'
 metaDesc: 'Sichuan chili oil with sediments — temperature-staged aromatic infusion, coarse and fine chili flakes, Sichuan peppercorns, cassia, star anise.'
-tags: ['sauce', 'spicy', 'umami', 'chinese', 'pantry', 'make-ahead']
+tags: ['spicy', 'umami', 'pantry', 'make-ahead']
 updated: '2026-04-27'
 
 servings: 24

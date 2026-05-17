@@ -6,7 +6,7 @@ content_review: 'pending'
 title: 'Blooming cocoa'
 desc: 'Pour hot liquid or melted fat over cocoa powder and rest before incorporating — heat plus moisture extracts aromatics that stay locked in dry powder.'
 metaDesc: 'Blooming cocoa: the extraction mechanism, the 1-2 minute rest, the glossy-paste cue, and why Dutch-process cocoa benefits most.'
-tags: ['chocolate']
+tags: []
 updated: '2026-04-26'
 
 about: |

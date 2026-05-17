@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Huevos rancheros'
 desc: 'The Mexican farmhouse breakfast: fried eggs atop lightly toasted corn tortillas, blanketed in a charred-tomato salsa ranchera with onion, garlic, and chile de árbol, served over a base of soupy refried black beans and topped with crumbled queso fresco, sliced avocado, and a fistful of cilantro. Structurally a layered breakfast plate where each element is built separately and assembled at the moment of service; the canonical Mexican breakfast dish and one of the most successful exports of central Mexican home cookery.'
 metaDesc: 'Huevos rancheros: fried eggs on corn tortillas with charred tomato salsa ranchera, soupy refried beans, queso fresco, avocado, and cilantro. The canonical Mexican farmhouse breakfast.'
-tags: ['mexican', 'egg', 'breakfast', 'one-pot', 'legume', 'spicy', 'umami']
+tags: ['egg', 'one-pot', 'spicy', 'umami']
 updated: '2026-05-15'
 
 servings: 2

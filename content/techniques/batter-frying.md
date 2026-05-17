@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Batter frying (wet-batter shallow-fry for jeon, pajeon, fritters)'
 desc: 'A cold liquid suspension of flour, starch, and water (sometimes with egg) ladled onto a thin film of oil in a hot pan, set on the bottom into a crisp shell, then flipped to set the top. The mechanism that produces Korean jeon, pajeon, Japanese okonomiyaki, Italian frittelle, and Indian pakora variants.'
 metaDesc: 'Batter frying: cold-batter mechanism, the starch-to-flour ratio, ice-water gluten suppression, the two-side flip for jeon and pajeon, applications across Korean, Japanese, Italian, and Indian batter shells.'
-tags: ['fried', 'fritter', 'korean', 'japanese']
+tags: ['fried']
 updated: '2026-05-10'
 
 about: |

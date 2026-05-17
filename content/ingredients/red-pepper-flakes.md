@@ -7,7 +7,7 @@ content_review: 'pending'
 title: 'Red pepper flakes (crushed red pepper)'
 desc: 'Coarse-crushed dried red chilies, typically a blend of cayenne and other thin-walled red varieties at 30,000 to 50,000 Scoville. The default Italian-American pizzeria heat shaker; capsaicin and capsanthin are both lipid-soluble, so the flakes bloom in oil rather than water.'
 metaDesc: 'Red pepper flakes: Scoville range, the blooming-in-oil rule, applications across Italian arrabbiata, North-American Italian pizzeria heat, and the distinction between supermarket crushed red pepper and single-variety dried chilies.'
-tags: ['spice', 'aromatic']
+tags: []
 density_g_per_ml: 0.35
 updated: '2026-05-10'
 
