@@ -63,11 +63,11 @@ function fmtPassive(passiveMin) {
   if (!isFinite(n) || n < 60) return '';
   if (n < 480) {
     const h = Math.round(n / 60);
-    return `+ ${h} h rest`;
+    return `· ${h} h rest`;
   }
-  if (n <= 1080) return '+ overnight';
+  if (n <= 1080) return '· overnight';
   const days = Math.round(n / 1440);
-  return `+ ${days} d rest`;
+  return `· ${days} d rest`;
 }
 
 /**
@@ -135,6 +135,84 @@ function pickPrimaryTag(entry) {
     if (PRIMARY_TAGS.includes(t)) return t;
   }
   return null;
+}
+
+// ── Card swatch (no-photo visual identity) ───────────────────────────────
+// Deterministic hash of cuisine|primary-tag|category → 14-color palette index
+// (0..13). The palette itself is defined in style.css via data-swatch="N"
+// attribute selectors so the runtime + build stay in lockstep through CSS.
+//
+// Glyph keys map to a curated SVG set rendered as a CSS mask in style.css.
+// Coverage: asian (bowl), european (fork+knife), indian (mortar), latin
+// (chili), american (skillet), mediterranean (olive), middle-eastern
+// (tagine), african (calabash), generic (whisk).
+
+const CUISINE_GLYPH = [
+  // matched in order; first regex hit wins
+  [/(chinese|cantonese|sichuan|hunan|huaiyang|japanese|korean|thai|vietnamese|taiwanese|filipino|malaysian|indonesian|singapor|burmese|southeast)/i, 'bowl'],
+  [/(indian|pakistani|bangladesh|sri\s?lankan|nepali|south\s?asian)/i, 'mortar'],
+  [/(mexican|tex-?mex|peruvian|brazilian|argentin|colombian|cuban|latin)/i, 'chili'],
+  [/(italian|french|spanish|portuguese|greek|mediterranean)/i, 'olive'],
+  [/(turkish|levantine|lebanese|persian|moroccan|middle\s?eastern|arabic|israeli|egyptian|north\s?african)/i, 'tagine'],
+  [/(nigerian|ethiopian|west\s?african|sub-saharan|south\s?african|african)/i, 'calabash'],
+  [/(american|british|german|nordic|scandinavian|cajun|creole|southern|jewish)/i, 'skillet'],
+  [/(european)/i, 'fork-knife'],
+];
+
+const TAG_GLYPH = [
+  [/(pasta|noodle|grain|rice|bread|loaf)/i, 'grain'],
+  [/(soup|stew|broth|stock|congee)/i, 'bowl'],
+  [/(salad|vegetable|leaf|herb|greens)/i, 'leaf'],
+  [/(dessert|cake|cookie|sweet|custard|pastry|che|pudding|chocolate)/i, 'whisk'],
+  [/(drink|tea|cocktail|boba|milk-tea)/i, 'cup'],
+  [/(meat|chicken|beef|pork|lamb|braised|roast|grill)/i, 'fire'],
+  [/(fish|seafood|shellfish)/i, 'fish'],
+  [/(pickle|fermentation|preserve)/i, 'jar'],
+  [/(sauce|condiment|spread|emulsion)/i, 'drop'],
+];
+
+function hashStr(s) {
+  // djb2 — small, deterministic, good distribution over short slug-ish strings.
+  let h = 5381;
+  const str = String(s || '');
+  for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+
+const SWATCH_COUNT = 14;
+
+function pickGlyph(entry) {
+  const cuisine = entry.cuisine || '';
+  for (const [re, key] of CUISINE_GLYPH) if (re.test(cuisine)) return key;
+  for (const t of (entry.tags || [])) {
+    for (const [re, key] of TAG_GLYPH) if (re.test(t)) return key;
+  }
+  // Category fallbacks
+  if (entry.category === 'ingredients') return 'jar';
+  if (entry.category === 'techniques')  return 'whisk';
+  if (entry.category === 'equipment')   return 'skillet';
+  if (entry.category === 'cuisines')    return 'globe';
+  if (entry.category === 'hubs')        return 'stack';
+  return 'leaf';
+}
+
+function pickSwatchSeed(entry) {
+  // Cuisine is the most expressive signal (Italian recipes feel different
+  // from Korean ones); tag is a fallback that gives ingredients/techniques
+  // visual variety; category locks down the long tail.
+  return entry.cuisine
+      || (entry.tags && entry.tags[0])
+      || entry.category
+      || entry._slug
+      || entry.title
+      || 'x';
+}
+
+function computeSwatch(entry) {
+  return {
+    index: hashStr(pickSwatchSeed(entry)) % SWATCH_COUNT,
+    glyph: pickGlyph(entry),
+  };
 }
 
 /**
@@ -247,8 +325,12 @@ export function computeReverseLinks(entries) {
  *   }
  */
 export function enrichEntry(entry, ctx) {
-  const { ingUsedIn, techUsedIn, cuisineCount, hubMembers, hubMix, ingHasNutrition } = ctx;
+  const { ingUsedIn, techUsedIn, cuisineCount, hubMembers, hubMix, ingHasNutrition,
+          nutritionByPath, heroByPath } = ctx;
   const c = {};
+  const swatch = computeSwatch(entry);
+  c.swatchIndex = swatch.index;
+  c.swatchGlyph = swatch.glyph;
   if (entry.type === 'recipe') {
     c.totalMinutes = entry.time && entry.time.total_min || null;
     c.diffLabel = entry.difficulty || null;
@@ -260,6 +342,19 @@ export function enrichEntry(entry, ctx) {
       c.activeMinutes = framed.active;
     }
     c.filterMinutes = filterableTime(entry.time);
+    // Per-serving kcal (rounded to nearest 5) if we have a non-zero estimate.
+    if (nutritionByPath) {
+      const n = nutritionByPath[entry.path];
+      const kcal = n && n.perServing && Number(n.perServing.energy_kcal) || 0;
+      if (kcal > 0) c.kcal = Math.round(kcal / 5) * 5;
+    }
+    // Hero image path (largest webp variant under 1024) for use as the card
+    // top instead of the swatch. Stored as a repo-relative path; clients
+    // resolve from their current page.
+    if (heroByPath) {
+      const hero = heroByPath[entry.path];
+      if (hero) c.heroSrc = hero;
+    }
   } else if (entry.type === 'ingredient') {
     c.primaryTag = pickPrimaryTag(entry);
     c.usedInCount = ingUsedIn.get(entry._slug) || 0;
@@ -296,84 +391,120 @@ function fmtCount(n, singular, plural) {
 }
 
 /**
+ * Render the "swatch" header that sits above every card body. When a hero
+ * image is present (recipes with content/images/recipes/<slug>/hero.jpg),
+ * it's used as a background-image; otherwise a deterministic palette swatch
+ * carries the visual weight, with a centered cuisine/tag glyph at 20%
+ * opacity layered on top via CSS.
+ *
+ * The path resolution intentionally happens here — the build emits hero
+ * paths repo-relative ("assets/images/recipes/<slug>/hero-960.webp") and
+ * callers pass a `fromPath` so we can compute the right relative href.
+ */
+function renderCardSwatch(entry, fromPath) {
+  const card = entry._card || {};
+  const swatchIdx = card.swatchIndex != null ? card.swatchIndex : 0;
+  const glyph = card.swatchGlyph || 'leaf';
+  if (card.heroSrc) {
+    const href = fromPath ? relPath(fromPath, card.heroSrc) : card.heroSrc;
+    return `<span class="ec-swatch ec-swatch-photo" aria-hidden="true" style="background-image:url('${escapeHtml(href)}')"></span>`;
+  }
+  return `<span class="ec-swatch" data-swatch="${swatchIdx}" data-glyph="${escapeHtml(glyph)}" aria-hidden="true"></span>`;
+}
+
+/**
+ * Render the bottom "stat pill" row for recipes: time · kcal · cuisine ·
+ * difficulty dot. Each pill is its own labeled element so screen readers
+ * read the row as a list of distinct facts rather than a wall of glyphs.
+ */
+function renderStatPills(entry) {
+  const card = entry._card || {};
+  const pills = [];
+  if (card.timeLead) {
+    // timeAnnotation already arrives with a leading "· " separator from
+    // frameRecipeTime, e.g. "· overnight". Older builds used "+ " — strip
+    // either so we never double up on the separator.
+    const annot = card.timeAnnotation
+      ? ` ${card.timeAnnotation.replace(/^[+·]\s*/, '· ')}`
+      : '';
+    const label = card.timeMode === 'active' ? `${card.timeLead} active${annot}` : `${card.timeLead}${annot}`;
+    pills.push(`<span class="ec-stat-pill ec-stat-time" aria-label="Time: ${escapeHtml(label)}">${escapeHtml(label)}</span>`);
+  } else if (card.totalMinutes) {
+    const label = fmtMinutes(card.totalMinutes);
+    pills.push(`<span class="ec-stat-pill ec-stat-time" aria-label="Time: ${escapeHtml(label)}">${escapeHtml(label)}</span>`);
+  }
+  if (card.kcal) {
+    pills.push(`<span class="ec-stat-pill ec-stat-kcal" aria-label="${card.kcal} kilocalories per serving">${card.kcal} kcal</span>`);
+  }
+  if (entry.cuisine) {
+    pills.push(`<span class="ec-stat-pill ec-stat-cuisine" aria-label="Cuisine: ${escapeHtml(entry.cuisine)}">${escapeHtml(entry.cuisine)}</span>`);
+  }
+  if (card.diffLabel) {
+    pills.push(`<span class="ec-stat-pill ec-stat-diff ec-d-${escapeHtml(card.diffLabel)}" aria-label="Difficulty: ${escapeHtml(card.diffLabel)}"><span class="ec-diff-dot" aria-hidden="true"></span>${escapeHtml(card.diffLabel)}</span>`);
+  }
+  return pills.length ? `<div class="ec-stat-row" role="list">${pills.join('')}</div>` : '';
+}
+
+/**
  * Build the inner HTML of a card, given an enriched entry.
  * Returns the body — the wrapping <a class="entry-card"> is added by callers.
+ *
+ * Outer structure (consistent across all card types):
+ *   .ec-swatch (header band — color or photo)
+ *   .ec-body
+ *     .ec-cat (eyebrow)
+ *     .ec-title
+ *     .ec-desc (truncated)
+ *     .ec-stat-row OR .ec-foot (type-specific bottom row)
  */
-export function renderCardBody(entry) {
+export function renderCardBody(entry, fromPath) {
   const card = entry._card || {};
   const title = escapeHtml(entry.title || '');
   const desc = entry.desc ? `<span class="ec-desc">${escapeHtml(entry.desc.slice(0, 110))}</span>` : '';
   const cat = `<span class="ec-cat">${escapeHtml(entry.category)}</span>`;
+  const swatch = renderCardSwatch(entry, fromPath);
 
   if (entry.type === 'recipe') {
-    const meta = [];
-    if (entry.cuisine) meta.push(`<span class="ec-meta-item">${escapeHtml(entry.cuisine)}</span>`);
-    if (entry.course)  meta.push(`<span class="ec-meta-item">${escapeHtml(entry.course)}</span>`);
-    if (card.timeLead) {
-      const annot = card.timeAnnotation
-        ? `<span class="ec-time-annot">${escapeHtml(card.timeAnnotation)}</span>`
-        : '';
-      const lead = card.timeMode === 'active'
-        ? `<span class="ec-time-active"><strong>${escapeHtml(card.timeLead)}</strong> active</span>`
-        : `<strong>${escapeHtml(card.timeLead)}</strong>`;
-      meta.push(`<span class="ec-meta-item ec-meta-time">${lead}${annot}</span>`);
-    } else if (card.totalMinutes) {
-      meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(card.totalMinutes))}</span>`);
-    }
-    const stats = entry.servings ? `<span class="ec-stat"><strong>${entry.servings}</strong> serving${entry.servings === 1 ? '' : 's'}</span>` : '';
-    const diff = card.diffLabel
-      ? `<span class="ec-pill ec-diff ec-d-${escapeHtml(card.diffLabel)}">${escapeHtml(card.diffLabel)}</span>`
-      : '';
-    return `${cat}<span class="ec-title">${title}</span>${desc}
-        <div class="ec-foot">
-          <div class="ec-meta">${meta.join('')}</div>
-          ${diff}
-        </div>${stats ? `<div class="ec-stats">${stats}</div>` : ''}`;
+    return `${swatch}<span class="ec-body">${cat}<span class="ec-title">${title}</span>${desc}${renderStatPills(entry)}</span>`;
   }
 
   if (entry.type === 'ingredient') {
-    const tag = card.primaryTag ? `<span class="ec-pill ec-pill-tag">${escapeHtml(card.primaryTag)}</span>` : '';
+    const tag = card.primaryTag ? `<span class="ec-stat-pill ec-pill-tag">${escapeHtml(card.primaryTag)}</span>` : '';
     const used = card.usedInCount > 0
-      ? `<span class="ec-stat ec-stat-link"><strong>${card.usedInCount}</strong> ${card.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`
+      ? `<span class="ec-stat-pill ec-stat-link"><strong>${card.usedInCount}</strong> ${card.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`
       : '';
     const nut = card.hasNutrition
-      ? `<span class="ec-pill ec-pill-data" title="USDA nutrition data available">USDA</span>`
+      ? `<span class="ec-stat-pill ec-pill-data" title="USDA nutrition data available">USDA</span>`
       : '';
-    return `${cat}<span class="ec-title">${title}</span>${desc}
-        <div class="ec-foot">
-          <div class="ec-meta">${tag}${nut}</div>
-          ${used}
-        </div>`;
+    const row = (tag || used || nut) ? `<div class="ec-stat-row" role="list">${tag}${nut}${used}</div>` : '';
+    return `${swatch}<span class="ec-body">${cat}<span class="ec-title">${title}</span>${desc}${row}</span>`;
   }
 
   if (entry.type === 'technique') {
     const used = card.usedInCount > 0
-      ? `<span class="ec-stat ec-stat-link"><strong>${card.usedInCount}</strong> ${card.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`
+      ? `<span class="ec-stat-pill ec-stat-link"><strong>${card.usedInCount}</strong> ${card.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`
       : '';
-    return `${cat}<span class="ec-title">${title}</span>${desc}
-        <div class="ec-foot">
-          ${used}
-        </div>`;
+    const row = used ? `<div class="ec-stat-row" role="list">${used}</div>` : '';
+    return `${swatch}<span class="ec-body">${cat}<span class="ec-title">${title}</span>${desc}${row}</span>`;
   }
 
   if (entry.type === 'cuisine') {
     const used = card.usedInCount > 0
-      ? `<span class="ec-stat ec-stat-link"><strong>${card.usedInCount}</strong> ${card.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`
+      ? `<span class="ec-stat-pill ec-stat-link"><strong>${card.usedInCount}</strong> ${card.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`
       : '';
-    return `${cat}<span class="ec-title">${title}</span>${desc}
-        <div class="ec-foot">${used}</div>`;
+    const row = used ? `<div class="ec-stat-row" role="list">${used}</div>` : '';
+    return `${swatch}<span class="ec-body">${cat}<span class="ec-title">${title}</span>${desc}${row}</span>`;
   }
 
   if (entry.type === 'equipment') {
-    const tag = card.primaryTag ? `<span class="ec-pill ec-pill-tag">${escapeHtml(card.primaryTag)}</span>` : '';
-    return `${cat}<span class="ec-title">${title}</span>${desc}
-        <div class="ec-foot">${tag}</div>`;
+    const tag = card.primaryTag ? `<span class="ec-stat-pill ec-pill-tag">${escapeHtml(card.primaryTag)}</span>` : '';
+    const row = tag ? `<div class="ec-stat-row" role="list">${tag}</div>` : '';
+    return `${swatch}<span class="ec-body">${cat}<span class="ec-title">${title}</span>${desc}${row}</span>`;
   }
 
   if (entry.type === 'hub') {
     const m = card.memberCount;
     const mix = card.memberMix || {};
-    // Build "5 recipes · 2 techniques" label from the mix in canonical order
     const ORDER = ['recipes', 'ingredients', 'techniques', 'cuisines', 'equipment'];
     const parts = [];
     for (const k of ORDER) {
@@ -384,14 +515,13 @@ export function renderCardBody(entry) {
     }
     const mixHtml = parts.length
       ? `<div class="ec-mix">${parts.join('')}</div>`
-      : (m > 0 ? `<span class="ec-stat"><strong>${m}</strong> ${m === 1 ? 'entry' : 'entries'}</span>` : '');
+      : (m > 0 ? `<span class="ec-stat-pill"><strong>${m}</strong> ${m === 1 ? 'entry' : 'entries'}</span>` : '');
     const stack = `<span class="ec-hub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 6 V4 a1 1 0 0 1 1 -1 h8 a1 1 0 0 1 1 1 v2"/><line x1="3" y1="11" x2="21" y2="11"/></svg></span>`;
-    return `<span class="ec-cat-row">${stack}<span class="ec-cat">collection</span></span><span class="ec-title">${title}</span>${desc}
-        <div class="ec-foot">${mixHtml}</div>`;
+    return `${swatch}<span class="ec-body"><span class="ec-cat-row">${stack}<span class="ec-cat">collection</span></span><span class="ec-title">${title}</span>${desc}<div class="ec-stat-row">${mixHtml}</div></span>`;
   }
 
   // fallback
-  return `${cat}<span class="ec-title">${title}</span>${desc}`;
+  return `${swatch}<span class="ec-body">${cat}<span class="ec-title">${title}</span>${desc}</span>`;
 }
 
 /**
@@ -403,6 +533,6 @@ export function renderEntryCard(entry, fromPath, opts = {}) {
   const extraData = opts.extraData || '';
   return `
         <a class="entry-card" href="${escapeHtml(href)}" data-category="${escapeHtml(entry.category)}" data-type="${escapeHtml(entry.type)}"${extraData ? ' ' + extraData : ''}>
-          ${renderCardBody(entry)}
+          ${renderCardBody(entry, fromPath)}
         </a>`;
 }

@@ -33,9 +33,9 @@
   function fmtPassive(p) {
     const n = Number(p);
     if (!isFinite(n) || n < 60) return '';
-    if (n < 480) return `+ ${Math.round(n / 60)} h rest`;
-    if (n <= 1080) return '+ overnight';
-    return `+ ${Math.round(n / 1440)} d rest`;
+    if (n < 480) return `· ${Math.round(n / 60)} h rest`;
+    if (n <= 1080) return '· overnight';
+    return `· ${Math.round(n / 1440)} d rest`;
   }
   function frameRecipeTime(time) {
     if (!time) return null;
@@ -53,49 +53,82 @@
     return { active, passive, total, lead: fmtMinutes(active), annotation: fmtPassive(passive), mode: 'active' };
   }
 
+  // Render the card "swatch" header — the colored band or photo that sits
+  // above the body. Mirrors build/lib/cards.mjs::renderCardSwatch.
+  // The client uses e._card.heroSrc directly as a URL (browser resolves
+  // against the current page; homepage is at site root, so the
+  // "assets/..." path works as-is).
+  function cardSwatch(e) {
+    const c = e._card || {};
+    if (c.heroSrc) {
+      return `<span class="ec-swatch ec-swatch-photo" aria-hidden="true" style="background-image:url('${escapeHtml(c.heroSrc)}')"></span>`;
+    }
+    const idx = c.swatchIndex != null ? c.swatchIndex : 0;
+    const glyph = c.swatchGlyph || 'leaf';
+    return `<span class="ec-swatch" data-swatch="${idx}" data-glyph="${escapeHtml(glyph)}" aria-hidden="true"></span>`;
+  }
+
+  // Render the stat-pill row for a recipe — time · kcal · cuisine · difficulty.
+  // Mirrors build/lib/cards.mjs::renderStatPills.
+  function cardStatPills(e) {
+    const c = e._card || {};
+    const pills = [];
+    if (c.timeLead) {
+      const annot = c.timeAnnotation
+        ? ` ${String(c.timeAnnotation).replace(/^[+·]\s*/, '· ')}`
+        : '';
+      const label = c.timeMode === 'active' ? `${c.timeLead} active${annot}` : `${c.timeLead}${annot}`;
+      pills.push(`<span class="ec-stat-pill ec-stat-time" aria-label="Time: ${escapeHtml(label)}">${escapeHtml(label)}</span>`);
+    } else if (c.totalMinutes) {
+      const label = fmtMinutes(c.totalMinutes);
+      pills.push(`<span class="ec-stat-pill ec-stat-time" aria-label="Time: ${escapeHtml(label)}">${escapeHtml(label)}</span>`);
+    }
+    if (c.kcal) {
+      pills.push(`<span class="ec-stat-pill ec-stat-kcal" aria-label="${c.kcal} kilocalories per serving">${c.kcal} kcal</span>`);
+    }
+    if (e.cuisine) {
+      pills.push(`<span class="ec-stat-pill ec-stat-cuisine" aria-label="Cuisine: ${escapeHtml(e.cuisine)}">${escapeHtml(e.cuisine)}</span>`);
+    }
+    if (c.diffLabel) {
+      pills.push(`<span class="ec-stat-pill ec-stat-diff ec-d-${escapeHtml(c.diffLabel)}" aria-label="Difficulty: ${escapeHtml(c.diffLabel)}"><span class="ec-diff-dot" aria-hidden="true"></span>${escapeHtml(c.diffLabel)}</span>`);
+    }
+    return pills.length ? `<div class="ec-stat-row" role="list">${pills.join('')}</div>` : '';
+  }
+
   function cardBody(e) {
     const c = e._card || {};
     const title = `<span class="ec-title">${escapeHtml(e.title || '')}</span>`;
     const desc = e.desc ? `<span class="ec-desc">${escapeHtml(e.desc.slice(0, 110))}</span>` : '';
     const cat = `<span class="ec-cat">${escapeHtml(e.category)}</span>`;
+    const swatch = cardSwatch(e);
 
     if (e.type === 'recipe') {
-      const meta = [];
-      if (e.cuisine) meta.push(`<span class="ec-meta-item">${escapeHtml(e.cuisine)}</span>`);
-      if (e.course)  meta.push(`<span class="ec-meta-item">${escapeHtml(e.course)}</span>`);
-      if (c.timeLead) {
-        const annot = c.timeAnnotation ? `<span class="ec-time-annot">${escapeHtml(c.timeAnnotation)}</span>` : '';
-        const lead = c.timeMode === 'active'
-          ? `<span class="ec-time-active"><strong>${escapeHtml(c.timeLead)}</strong> active</span>`
-          : `<strong>${escapeHtml(c.timeLead)}</strong>`;
-        meta.push(`<span class="ec-meta-item ec-meta-time">${lead}${annot}</span>`);
-      } else if (c.totalMinutes) {
-        meta.push(`<span class="ec-meta-item ec-meta-time">${escapeHtml(fmtMinutes(c.totalMinutes))}</span>`);
-      }
-      const stats = e.servings ? `<span class="ec-stat"><strong>${e.servings}</strong> serving${e.servings === 1 ? '' : 's'}</span>` : '';
-      const diff = c.diffLabel ? `<span class="ec-pill ec-diff ec-d-${escapeHtml(c.diffLabel)}">${escapeHtml(c.diffLabel)}</span>` : '';
-      return `${cat}${title}${desc}<div class="ec-foot"><div class="ec-meta">${meta.join('')}</div>${diff}</div>${stats ? `<div class="ec-stats">${stats}</div>` : ''}`;
+      return `${swatch}<span class="ec-body">${cat}${title}${desc}${cardStatPills(e)}</span>`;
     }
     if (e.type === 'ingredient') {
-      const tag = c.primaryTag ? `<span class="ec-pill ec-pill-tag">${escapeHtml(c.primaryTag)}</span>` : '';
-      const used = c.usedInCount > 0 ? `<span class="ec-stat ec-stat-link"><strong>${c.usedInCount}</strong> ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>` : '';
-      const nut = c.hasNutrition ? `<span class="ec-pill ec-pill-data" title="USDA nutrition data available">USDA</span>` : '';
-      return `${cat}${title}${desc}<div class="ec-foot"><div class="ec-meta">${tag}${nut}</div>${used}</div>`;
+      const tag = c.primaryTag ? `<span class="ec-stat-pill ec-pill-tag">${escapeHtml(c.primaryTag)}</span>` : '';
+      const used = c.usedInCount > 0 ? `<span class="ec-stat-pill ec-stat-link"><strong>${c.usedInCount}</strong> ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>` : '';
+      const nut = c.hasNutrition ? `<span class="ec-stat-pill ec-pill-data" title="USDA nutrition data available">USDA</span>` : '';
+      const row = (tag || used || nut) ? `<div class="ec-stat-row" role="list">${tag}${nut}${used}</div>` : '';
+      return `${swatch}<span class="ec-body">${cat}${title}${desc}${row}</span>`;
     }
     if (e.type === 'technique' || e.type === 'cuisine') {
-      const used = c.usedInCount > 0 ? `<span class="ec-stat ec-stat-link"><strong>${c.usedInCount}</strong> ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>` : '';
-      return `${cat}${title}${desc}<div class="ec-foot">${used}</div>`;
+      const used = c.usedInCount > 0 ? `<span class="ec-stat-pill ec-stat-link"><strong>${c.usedInCount}</strong> ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>` : '';
+      const row = used ? `<div class="ec-stat-row" role="list">${used}</div>` : '';
+      return `${swatch}<span class="ec-body">${cat}${title}${desc}${row}</span>`;
     }
     if (e.type === 'equipment') {
-      const tag = c.primaryTag ? `<span class="ec-pill ec-pill-tag">${escapeHtml(c.primaryTag)}</span>` : '';
-      return `${cat}${title}${desc}<div class="ec-foot">${tag}</div>`;
+      const tag = c.primaryTag ? `<span class="ec-stat-pill ec-pill-tag">${escapeHtml(c.primaryTag)}</span>` : '';
+      const row = tag ? `<div class="ec-stat-row" role="list">${tag}</div>` : '';
+      return `${swatch}<span class="ec-body">${cat}${title}${desc}${row}</span>`;
     }
     if (e.type === 'hub') {
       const m = c.memberCount;
-      const stat = m > 0 ? `<span class="ec-stat"><strong>${m}</strong> ${m === 1 ? 'entry' : 'entries'}</span>` : '';
-      return `${cat}${title}${desc}<div class="ec-foot">${stat}</div>`;
+      const stat = m > 0 ? `<span class="ec-stat-pill"><strong>${m}</strong> ${m === 1 ? 'entry' : 'entries'}</span>` : '';
+      const row = stat ? `<div class="ec-stat-row" role="list">${stat}</div>` : '';
+      return `${swatch}<span class="ec-body">${cat}${title}${desc}${row}</span>`;
     }
-    return `${cat}${title}${desc}`;
+    return `${swatch}<span class="ec-body">${cat}${title}${desc}</span>`;
   }
 
   function entryCard(e) {

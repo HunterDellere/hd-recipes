@@ -992,6 +992,8 @@
     const status = document.querySelector('[data-filter-status]');
     const chipsEl = document.querySelector('[data-filter-chips]');
     const clearBtn = bar.querySelector('[data-filter-clear]');
+    const emptyEl = document.querySelector('[data-filter-empty]');
+    const emptyClearBtn = document.querySelector('[data-filter-empty-clear]');
     if (!grid) return;
     const cards = Array.from(grid.querySelectorAll('[data-card]'));
 
@@ -1003,6 +1005,40 @@
       cuisine: 'Cuisine', course: 'Course', diet: 'Diet',
       time: 'Active time', difficulty: 'Difficulty',
     };
+
+    // Human-format active-time chip value. Mirrors the time-filter labels
+    // in the dropdown ("<15 min", "<30 min", "<60 min", "<2 hr") so the
+    // active-pill row reads identically to what the user clicked.
+    function formatTimeLabel(v) {
+      const n = parseInt(v, 10);
+      if (!isFinite(n) || n <= 0) return v;
+      if (n >= 60 && n % 60 === 0) return `<${n / 60} hr`;
+      return `<${n} min`;
+    }
+
+    // Track the chronological order of filter additions so ESC can remove
+    // the most-recently-added filter (power-user shortcut).
+    // Entries: { facet: 'cuisine' | 'course' | ..., value: '<v>' }.
+    const activeOrder = [];
+    function pushActive(facet, value) {
+      // Drop any prior entry for the same facet+value (radio toggling).
+      for (let i = activeOrder.length - 1; i >= 0; i--) {
+        if (activeOrder[i].facet === facet && activeOrder[i].value === value) {
+          activeOrder.splice(i, 1);
+        }
+      }
+      activeOrder.push({ facet, value });
+    }
+    function dropActive(facet, value) {
+      for (let i = activeOrder.length - 1; i >= 0; i--) {
+        const e = activeOrder[i];
+        if (e.facet === facet && (value == null || e.value === value)) {
+          activeOrder.splice(i, 1);
+          if (value != null) return;
+        }
+      }
+    }
+    function clearActiveOrder() { activeOrder.length = 0; }
 
     // ── URL sync ───────────────────────────────────────────────────────
     // Round-trip filter state through the URL so a bookmarked or shared link
@@ -1051,6 +1087,10 @@
           status.textContent = `Showing ${visible} of ${total} ${total === 1 ? 'recipe' : 'recipes'}`;
         }
       }
+      // Empty-results state: when filters return zero, surface a friendly
+      // message inviting the user to clear filters rather than staring at
+      // an empty grid.
+      if (emptyEl) emptyEl.hidden = !(totalActive > 0 && visible === 0);
     }
 
     function countActive() {
@@ -1067,13 +1107,14 @@
       for (const k of ['cuisine','course','diet','difficulty']) {
         if (state[k]) out.push(chipHtml(k, state[k], state[k]));
       }
-      if (state.time) out.push(chipHtml('time', state.time, `≤ ${state.time} min active`));
+      if (state.time) out.push(chipHtml('time', state.time, formatTimeLabel(state.time)));
       for (const t of state.tags) out.push(chipHtml('tag', t, `#${t}`));
       chipsEl.innerHTML = out.join('');
       chipsEl.hidden = out.length === 0;
     }
     function chipHtml(facet, value, label) {
-      return `<button type="button" class="filter-chip" data-chip-facet="${escapeAttr(facet)}" data-chip-value="${escapeAttr(value)}" aria-label="Remove filter: ${escapeAttr(label)}">${escapeHtml(label)}<span class="filter-chip-x" aria-hidden="true">×</span></button>`;
+      const dim = facet === 'tag' ? 'Tag' : (FACET_LABEL[facet] || facet);
+      return `<button type="button" class="filter-chip" data-chip-facet="${escapeAttr(facet)}" data-chip-value="${escapeAttr(value)}" aria-label="Remove ${escapeAttr(dim)} filter: ${escapeAttr(label)}"><span class="filter-chip-dim">${escapeHtml(dim)}</span><span class="filter-chip-val">${escapeHtml(label)}</span><span class="filter-chip-x" aria-hidden="true">×</span></button>`;
     }
     function escapeHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
     function escapeAttr(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
@@ -1086,9 +1127,21 @@
         const value = chip.dataset.chipValue;
         if (facet === 'tag') {
           state.tags.delete(value);
+          dropActive('tag', value);
         } else {
           state[facet] = null;
+          dropActive(facet);
         }
+        syncInputs();
+        apply();
+      });
+    }
+
+    if (emptyClearBtn) {
+      emptyClearBtn.addEventListener('click', () => {
+        state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
+        state.tags.clear();
+        clearActiveOrder();
         syncInputs();
         apply();
       });
@@ -1122,12 +1175,19 @@
       }
       if (!facet) return;
       if (facet === 'tag') {
-        if (input.checked) state.tags.add(value);
-        else state.tags.delete(value);
+        if (input.checked) { state.tags.add(value); pushActive('tag', value); }
+        else { state.tags.delete(value); dropActive('tag', value); }
       } else {
         // Radio: setting same value toggles off (so user can deselect)
         // The native radio group handles single-select; we just record.
-        state[facet] = input.checked ? value : null;
+        if (input.checked) {
+          state[facet] = value;
+          dropActive(facet);
+          pushActive(facet, value);
+        } else {
+          state[facet] = null;
+          dropActive(facet);
+        }
       }
       apply();
     });
@@ -1149,6 +1209,7 @@
         // User clicked the already-active radio: clear it
         input.checked = false;
         state[facet] = null;
+        dropActive(facet);
         apply();
       }
     });
@@ -1174,6 +1235,7 @@
       clearBtn.addEventListener('click', () => {
         state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
         state.tags.clear();
+        clearActiveOrder();
         syncInputs();
         // Also close any open menus
         bar.querySelectorAll('details[data-filter-menu]').forEach(d => d.removeAttribute('open'));
@@ -1189,10 +1251,24 @@
     });
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
-      bar.querySelectorAll('details[data-filter-menu][open]').forEach(d => {
-        d.removeAttribute('open');
-        const sum = d.querySelector('summary'); if (sum) sum.focus();
-      });
+      const openMenus = bar.querySelectorAll('details[data-filter-menu][open]');
+      if (openMenus.length) {
+        openMenus.forEach(d => {
+          d.removeAttribute('open');
+          const sum = d.querySelector('summary'); if (sum) sum.focus();
+        });
+        return;
+      }
+      // Power-user shortcut: with no menu open and no input focused,
+      // ESC removes the most-recently-added filter.
+      const tag = (document.activeElement && document.activeElement.tagName) || '';
+      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+      const last = activeOrder.pop();
+      if (!last) return;
+      if (last.facet === 'tag') state.tags.delete(last.value);
+      else state[last.facet] = null;
+      syncInputs();
+      apply();
     });
 
     // Only allow one menu open at a time — friendlier on mobile.
@@ -1213,14 +1289,14 @@
     try {
       const qs = new URLSearchParams(location.search);
       const single = (k) => { const v = qs.get(k); return v ? v.trim() : null; };
-      if (single('cuisine')) state.cuisine = single('cuisine');
-      if (single('course')) state.course = single('course');
-      if (single('diet')) state.diet = single('diet');
-      if (single('difficulty')) state.difficulty = single('difficulty');
+      if (single('cuisine')) { state.cuisine = single('cuisine'); pushActive('cuisine', state.cuisine); }
+      if (single('course')) { state.course = single('course'); pushActive('course', state.course); }
+      if (single('diet')) { state.diet = single('diet'); pushActive('diet', state.diet); }
+      if (single('difficulty')) { state.difficulty = single('difficulty'); pushActive('difficulty', state.difficulty); }
       // Accept ?time= (canonical, what syncUrl writes) or ?max_min= (legacy alias)
       const mx = single('time') || single('max_min');
-      if (mx && /^\d+$/.test(mx)) state.time = mx;
-      qs.getAll('tag').forEach(t => { if (t) state.tags.add(t); });
+      if (mx && /^\d+$/.test(mx)) { state.time = mx; pushActive('time', mx); }
+      qs.getAll('tag').forEach(t => { if (t) { state.tags.add(t); pushActive('tag', t); } });
       // Reflect into UI controls so the user sees the active state, not just the result
       syncInputs();
     } catch {}

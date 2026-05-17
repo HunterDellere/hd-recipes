@@ -29,29 +29,74 @@
     return path;
   }
 
+  // Mirror of build/lib/cards.mjs::renderCardSwatch — saved.html lives at
+  // /pages/saved.html, so hero paths under "assets/..." need to be lifted
+  // one directory ("../assets/...").
+  function cardSwatch(entry) {
+    const c = entry._card || {};
+    if (c.heroSrc) {
+      const href = c.heroSrc.startsWith('assets/') ? `../${c.heroSrc}` : c.heroSrc;
+      return `<span class="ec-swatch ec-swatch-photo" aria-hidden="true" style="background-image:url('${escapeHtml(href)}')"></span>`;
+    }
+    const idx = c.swatchIndex != null ? c.swatchIndex : 0;
+    const glyph = c.swatchGlyph || 'leaf';
+    return `<span class="ec-swatch" data-swatch="${idx}" data-glyph="${escapeHtml(glyph)}" aria-hidden="true"></span>`;
+  }
+
+  function fmtMin(min) {
+    const n = Number(min);
+    if (!isFinite(n) || n <= 0) return '';
+    if (n < 60) return `${Math.round(n)} min`;
+    const h = Math.floor(n / 60);
+    const m = Math.round(n - h * 60);
+    return m ? `${h} h ${m} min` : `${h} h`;
+  }
+
+  function cardStatPills(entry, extraMeta) {
+    const c = entry._card || {};
+    const pills = [];
+    if (c.timeLead) {
+      const annot = c.timeAnnotation ? ` ${String(c.timeAnnotation).replace(/^[+·]\s*/, '· ')}` : '';
+      const label = c.timeMode === 'active' ? `${c.timeLead} active${annot}` : `${c.timeLead}${annot}`;
+      pills.push(`<span class="ec-stat-pill ec-stat-time">${escapeHtml(label)}</span>`);
+    } else if (c.totalMinutes) {
+      pills.push(`<span class="ec-stat-pill ec-stat-time">${escapeHtml(fmtMin(c.totalMinutes))}</span>`);
+    }
+    if (c.kcal) pills.push(`<span class="ec-stat-pill ec-stat-kcal">${c.kcal} kcal</span>`);
+    if (entry.cuisine) pills.push(`<span class="ec-stat-pill ec-stat-cuisine">${escapeHtml(entry.cuisine)}</span>`);
+    if (c.diffLabel) pills.push(`<span class="ec-stat-pill ec-stat-diff ec-d-${escapeHtml(c.diffLabel)}"><span class="ec-diff-dot" aria-hidden="true"></span>${escapeHtml(c.diffLabel)}</span>`);
+    if (extraMeta) pills.push(`<span class="ec-stat-pill ec-stat-cooked">${escapeHtml(extraMeta)}</span>`);
+    return pills.length ? `<div class="ec-stat-row" role="list">${pills.join('')}</div>` : '';
+  }
+
   function cardHtml(entry, meta) {
-    const desc = entry.desc ? escapeHtml(entry.desc) : '';
-    const metaLine = meta ? `<div class="hdr-saved-meta">${escapeHtml(meta)}</div>` : '';
-    const cat = entry.cuisine || entry.category || 'Recipe';
+    const desc = entry.desc ? `<span class="ec-desc">${escapeHtml(entry.desc.slice(0, 110))}</span>` : '';
+    const cat = `<span class="ec-cat">${escapeHtml(entry.category || 'recipes')}</span>`;
+    const title = `<span class="ec-title">${escapeHtml(entry.title || entry._slug || '')}</span>`;
     return `
-      <a class="hdr-saved-card" href="${escapeHtml(entryHref(entry.path))}">
-        <span class="hdr-saved-cat">${escapeHtml(cat)}</span>
-        <h3 class="hdr-saved-title">${escapeHtml(entry.title || entry.slug)}</h3>
-        ${desc ? `<p class="hdr-saved-desc">${desc}</p>` : ''}
-        ${metaLine}
+      <a class="entry-card" href="${escapeHtml(entryHref(entry.path))}" data-category="${escapeHtml(entry.category || 'recipes')}" data-type="${escapeHtml(entry.type || 'recipe')}">
+        ${cardSwatch(entry)}
+        <span class="ec-body">${cat}${title}${desc}${cardStatPills(entry, meta)}</span>
       </a>`;
   }
 
   function placeholderCard(slug, meta) {
     // Slug isn't in entries.json (recipe might have been renamed/removed).
     // Still link to the would-be page so the user can verify or remove it.
+    // Render with a generic swatch so the missing-entry tile doesn't feel
+    // visually broken next to populated cards.
     const guessPath = `../pages/recipes/${slug}.html`;
+    const swatch = `<span class="ec-swatch" data-swatch="0" data-glyph="leaf" aria-hidden="true"></span>`;
+    const metaRow = meta ? `<div class="ec-stat-row" role="list"><span class="ec-stat-pill ec-stat-cooked">${escapeHtml(meta)}</span></div>` : '';
     return `
-      <a class="hdr-saved-card" href="${escapeHtml(guessPath)}">
-        <span class="hdr-saved-cat">Recipe</span>
-        <h3 class="hdr-saved-title">${escapeHtml(slug)}</h3>
-        <p class="hdr-saved-desc"><em>This recipe is no longer in the library; remove it from saved if it's gone.</em></p>
-        ${meta ? `<div class="hdr-saved-meta">${escapeHtml(meta)}</div>` : ''}
+      <a class="entry-card entry-card-missing" href="${escapeHtml(guessPath)}" data-category="recipes" data-type="recipe">
+        ${swatch}
+        <span class="ec-body">
+          <span class="ec-cat">recipes</span>
+          <span class="ec-title">${escapeHtml(slug)}</span>
+          <span class="ec-desc"><em>This recipe is no longer in the library; remove it from saved if it's gone.</em></span>
+          ${metaRow}
+        </span>
       </a>`;
   }
 
