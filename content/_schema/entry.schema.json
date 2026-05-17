@@ -121,6 +121,13 @@
     "techniques": { "type": "array", "items": { "type": "string" }, "description": "Slugs in techniques/" },
     "equipment": { "type": "array", "items": { "type": "string" }, "description": "Slugs in equipment/" },
     "notes": { "type": "string" },
+    "before_you_start": {
+      "description": "Prep coordination and scheduling notes the cook needs BEFORE starting mise-en-place. Use for long-lead steps (steaming sticky rice, soaking beans 8 hours, chilling oil for spherification, proofing dough overnight) and parallel-track instructions (start the rice now so it's done when the meatballs are seared). Renders as a callout above mise. Accepts a single paragraph string OR an array of bullet strings.",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "array", "items": { "type": "string" } }
+      ]
+    },
 
     "substitutions": {
       "type": "array",

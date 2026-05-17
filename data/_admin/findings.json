@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-16T22:33:20.499Z",
+  "generated": "2026-05-17T02:47:24.640Z",
   "summary": {
     "errors": 0,
-    "warnings": 0,
+    "warnings": 29,
     "info": 3
   },
   "findings": [
@@ -23,6 +23,209 @@
       "category": "search",
       "file": "data/search-index.json",
       "msg": "2589 singleton tokens (appear in exactly 1 entry). Sample: italian-american (north beach, san francisco), pan-asian / west african pantry crossover, doubanjiang-douchi-sichuan-peppercorn, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), pectin-and-arabinogalactan-rich, mediterranean (levantine lean), citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, goan (konkan coast, india), japanese-short-grain-rice, cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil, rendered-pork-plus-ya-cai, raw-garlic-plus-chinkiang, radiative-and-conductive, butterscotch-and-floral, tomato-vinegar-aromatic, gochujang-and-gochugaru, eggplant-bamboo-shimeji, brassica-allium-starch, rendered-fat-and-smoke, maillard-and-pyrolysis, glutamate-and-fructose, coconut-milk-and-stock, doubanjiang-and-douchi"
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/ingredients/genmaicha.md",
+      "msg": "ingredient has 2 substitution rows but every \"for:\" is just the ingredient name with no use case",
+      "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/autumn-simmer-pot.md",
+      "msg": "step 4 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/autumn-simmer-pot.md",
+      "msg": "step 5 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/autumn-simmer-pot.md",
+      "msg": "step 6 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/brown-sugar-milk-tea-with-boba.md",
+      "msg": "step 7 names \"milk\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"360 ml cold whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/che-chuoi.md",
+      "msg": "step 4 names \"tapioca pearls\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"60 g small tapioca pearls\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/che-chuoi.md",
+      "msg": "step 5 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"2 g fine sea salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/che-dau-trang.md",
+      "msg": "step 5 names \"palm sugar\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"80 g palm sugar, chopped\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/che-troi-nuoc.md",
+      "msg": "step 5 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"720 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/che-troi-nuoc.md",
+      "msg": "step 6 names \"ginger\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"40 g fresh ginger\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/chick-fil-a-polynesian-sauce.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: yellow mustard",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/chick-fil-a-sauce.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: dijon mustard, yellow mustard, barbecue sauce",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/chick-fil-a-sauce.md",
+      "msg": "step 2 names \"smoked paprika\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1 g smoked paprika\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/chick-fil-a-sauce.md",
+      "msg": "step 3 names \"honey\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"30 g honey\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/classic-pearl-milk-tea.md",
+      "msg": "step 6 names \"milk\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"240 ml cold whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/evergreen-winter-simmer-pot.md",
+      "msg": "step 4 names \"rosemary\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"15 g fresh rosemary\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/evergreen-winter-simmer-pot.md",
+      "msg": "step 5 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/herb-citrus-simmer-pot.md",
+      "msg": "step 4 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/homemade-crystal-boba.md",
+      "msg": "step 6 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"240 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/homemade-ketchup.md",
+      "msg": "step 5 names \"garlic cloves\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"2 each garlic cloves\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/homemade-ketchup.md",
+      "msg": "step 8 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"5 g fine sea salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/homemade-popping-boba.md",
+      "msg": "step 5 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/homemade-tapioca-pearls-black.md",
+      "msg": "step 5 names \"tapioca starch\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"150 g tapioca starch\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/homemade-tapioca-pearls-black.md",
+      "msg": "step 10 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"60 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/honey-mustard-sauce.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: dijon mustard, mayonnaise",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/kashmiri-noon-chai.md",
+      "msg": "step 4 names \"milk\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"480 ml whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/kashmiri-noon-chai.md",
+      "msg": "step 7 names \"pistachios\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"15 g crushed pistachios\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/masala-chai.md",
+      "msg": "step 2 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"240 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/taro-milk-tea-with-boba.md",
+      "msg": "step 6 names \"milk\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"300 ml whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     }
   ]
 }

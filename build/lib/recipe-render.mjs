@@ -777,6 +777,33 @@ export function renderRecipeNotes(fm) {
     <div class="recipe-notes">${notesHtml}</div>`;
 }
 
+/**
+ * Before-you-start: surfaces prep coordination and scheduling notes that
+ * matter BEFORE the cook starts mise-en-place. Catches the long-lead steps
+ * (steaming sticky rice, soaking beans, chilling oil for spherification,
+ * proofing dough) that a cook reading top-to-bottom would otherwise miss
+ * and discover too late.
+ *
+ * Accepts either:
+ *   before_you_start: 'A single paragraph string.'
+ *   before_you_start: ['First bullet', 'Second bullet', ...]
+ */
+export function renderBeforeYouStart(fm) {
+  const v = fm.before_you_start;
+  if (!v) return '';
+  let bodyHtml = '';
+  if (Array.isArray(v)) {
+    if (!v.length) return '';
+    bodyHtml = `<ul class="recipe-prelude-list">${v.map(item => `<li>${escapeHtml(String(item))}</li>`).join('')}</ul>`;
+  } else {
+    bodyHtml = String(v).split('\n\n').map(p => `<p>${escapeHtml(p)}</p>`).join('');
+  }
+  return `
+    <span class="section-anchor" id="before-you-start"></span>
+    <div class="section-head"><h2>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before mise.</p></div>
+    <div class="recipe-prelude">${bodyHtml}</div>`;
+}
+
 export function renderSubstitutions(fm, opts = {}) {
   if (!fm.substitutions || !fm.substitutions.length) return '';
   const items = fm.substitutions.map(s => `
@@ -924,6 +951,11 @@ export function renderRecipeBody(fm, slug, category, opts) {
   // inside the steps, so it reads as a closing note on what the cook just
   // did rather than a banner before they've reached the heat.
   const safetyHtml = renderSafetyNotes(fm, currentPath);
+
+  // Before-you-start sits ABOVE mise: prep coordination and long-lead notes
+  // a top-to-bottom reader needs before they start measuring ingredients.
+  const preludeHtml = renderBeforeYouStart(fm);
+  if (preludeHtml) { sections.push(preludeHtml); sidebarLinks.push({ id: 'before-you-start', label: 'Before You Start' }); }
 
   const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
   if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Mise en Place' }); }

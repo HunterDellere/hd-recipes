@@ -30,7 +30,8 @@ layering, pH balance, and thermal kinetics.
 7. **Linguistic precision** — concise, specific verbs: render, emulsify, bloom, sweat, temper, hydrate. No flowery filler. No "it's not X, it's Y."
 8. **Modifications are pivots, not patches** — `substitutions` are for genuine alternatives (texture contrast, regional variant, dietary swap). Never use this section to fix bland baseline recipes.
 9. **Flat structure** — `steps[]` is a flat numbered list. `ingredients[]` is a flat list grouped by phase via the `group` field. No nesting.
-10. **Homemade alternatives are mandatory** — when a recipe lists a store-bought ingredient that has a reasonable homemade version (chicken stock, mayo, ricotta, hot sauce, BBQ sauce, hummus, breadcrumbs, fresh pasta, curry paste, pie crust, etc.), populate `homemade_alternatives` with a link to a recipe page that teaches it. **Workflow during intake:**
+10. **Surface coordination upfront with `before_you_start`** — if the recipe has long-lead steps (overnight bean soak, sticky rice steam, dough proof, oil chill, syrup overnight integration) OR parallel-track instructions where one component MUST start before another (rice on FIRST so it's done when the protein finishes), populate `before_you_start` with the timing reality. The cook reads top-to-bottom; assume they will not discover step 7's "while the rice steams…" until step 6 is already running. The field renders as a callout above mise. Accepts a single string (paragraph) or an array of bullet strings — prefer bullets when multiple coordination items exist. Common triggers: any ingredient with `prep: 'soaked overnight'`, any partner-dish reference (`with sticky rice`, `over rice`), any non-edible / safety-critical preparation, any technique with a >30 min passive step. If the recipe is genuinely linear with no long-leads, omit the field.
+11. **Homemade alternatives are mandatory** — when a recipe lists a store-bought ingredient that has a reasonable homemade version (chicken stock, mayo, ricotta, hot sauce, BBQ sauce, hummus, breadcrumbs, fresh pasta, curry paste, pie crust, etc.), populate `homemade_alternatives` with a link to a recipe page that teaches it. **Workflow during intake:**
     1. After drafting the main recipe, scan its ingredients for store-bought items with reasonable homemade counterparts. The validator (`validate-formatting.mjs`) flags common ones automatically.
     2. **Offer to draft each homemade recipe in the same session.** Ask the user once per item — accept yes/no — then either (a) draft a full recipe page for items they want now, or (b) create a quality stub for the rest.
     3. Stubs use `status: 'stub'` and follow the stub template at the bottom of this file. Each stub is a placeholder with enough framing that a future drafting session can fill it in without rebuilding the conceptual scaffolding.
@@ -70,6 +71,14 @@ source:
   name: 'Adapted from Roman tradition'
   url: ''
   note: 'Brown butter is the divergence; classic uses olive oil only.'
+
+# Optional: scheduling / coordination notes a cook needs BEFORE mise.
+# Surface long-lead and parallel-track steps here so the reader doesn't hit
+# them mid-cook. Renders as a "Before you start" callout above ingredients.
+# Accepts a string (paragraph) or array (bullets). Omit if the recipe is linear.
+before_you_start:
+  - 'Bring water to a boil before doing anything else — the pasta water needs to be salting and at a rolling boil when the brown butter is ready, or the timing falls apart.'
+  - 'Grate the pecorino on a microplane and have it portioned in three additions before starting; you cannot stop to grate cheese once the pan emulsion phase begins.'
 
 ingredients:
   - group: 'Phase 1 — pasta water'
