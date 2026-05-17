@@ -20,6 +20,11 @@ difficulty: 'medium'
 cuisine: 'Chinese'
 course: 'dinner'
 
+before_you_start:
+  - 'Chili oil with sediments is the structural ingredient and 180 g goes into the sauce. Verify you have it before starting; commercial chili oil works but the homemade version (see recipes/sichuan-chili-oil) is dramatically more aromatic and is the dish as the Sichuan canon intends it. Homemade needs a 24-hour rest, so plan a day ahead.'
+  - 'Bring the noodle water to a rolling boil before whisking the sauce. The hot starchy noodle water is the emulsifier that turns sesame paste, chili oil, vinegar, and soy into a creamy sauce; without that ladle of hot water in motion, the sauce reads broken and oily.'
+  - 'Whisk the sesame paste first against a small amount of liquid, not all at once. Chinese sesame paste seizes into a tight ball when liquid hits it cold; loosen with vinegar and soy in stages before adding chili oil.'
+
 source:
   name: 'Adapted from Sichuan tradition'
   url: 'https://thewoksoflife.com/dan-dan-noodles/'

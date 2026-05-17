@@ -26,6 +26,11 @@ source:
   name: 'Adapted from Cantonese tradition (gai juk)'
   note: 'The triple-stage ginger is the technique lever: smacked coins for the simmer, microplaned ginger juice into the broth at the end, julienned matchsticks raw on the bowl. Each form does a different job.'
 
+before_you_start:
+  - 'This is a 90 minute pot: a 15 minute rice rest after the oil-and-salt massage, then 60 to 75 minutes of bare tremor simmer with the chicken. Active hands-on is about 25 minutes; the rest is passive but the pot needs a stir every 10 to 15 minutes to keep grains off the bottom.'
+  - 'The oil-and-salt rice massage and 15 minute rest is structural, not optional. Without it the polished grains swell intact instead of fragmenting into the cloudy starch suspension that defines congee.'
+  - 'Pre-prep the triple-stage ginger before the simmer goes on: 25 g smacked coins for the pot, 15 g microplaned for juice at the finish, 10 g fine julienne raw for the bowl. Mid-simmer is the wrong time to be peeling and slicing a ginger knob.'
+
 ingredients:
   - group: 'Rice prep'
     item: 'jasmine rice'

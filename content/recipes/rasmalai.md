@@ -22,6 +22,12 @@ cuisine: 'Indian'
 course: 'dessert'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'Plan a full afternoon. The active work is 90 minutes spread across chhena making, syrup poach, and milk reduction; the dish then needs at least 2 to 3 hours chilled in the malai to absorb the saffron-cardamom flavor before serving. Total clock time to first bite is closer to 5 hours.'
+  - 'Source HTST-pasteurized whole milk, not ultra-pasteurized (UHT). UHT milk coagulates into soft, broken curds that cannot be kneaded into the smooth dough rasmalai requires. Most American organic and shelf-stable whole milks are UHT; check the carton.'
+  - 'Bloom the saffron 10 minutes ahead in 2 tbsp warm milk pulled from the malai. The carotenoids need time to dissolve, dumped straight in dry the malai reads weakly perfumed and pale.'
+  - 'Have two pots running in parallel during the second half: the wide sugar-syrup pot for poaching the dumplings, and a separate heavy-bottomed pot reducing the malai. Both need attention at the same time.'
+
 source:
   name: 'Bengali / North Indian sweet shop tradition'
   note: 'Ras malai (রসমালাই, রস = juice/syrup, মালাই = clotted cream) was developed in Bengal in the late 19th century at K.C. Das, the Calcutta sweet shop credited with the invention of rasgulla and many of its derivatives. The dish migrated across India and Pakistan during the 20th century and is now a staple at Hindu and Muslim weddings, festival celebrations, and sweet shops across the subcontinent.'

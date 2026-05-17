@@ -26,6 +26,12 @@ source:
   name: 'Vietnamese coastal tradition'
   note: 'Mực nướng (literally "grilled squid") is a beach-vendor and street-food classic from coastal Vietnam (Nha Trang, Phú Quốc, the Mekong delta), the squid is grilled fresh over charcoal and served with nuoc cham or muoi tieu chanh (lime-pepper-salt). The version here uses a shaped marinade and a calibrated grill timing for home reproduction.'
 
+before_you_start:
+  - 'If serving with steamed rice or rice vermicelli (the canonical pairings), start the rice on a PARALLEL track so it lands when the squid comes off the grill. Jasmine rice (20-minute soak, 12-minute simmer, 10-minute rest) finishes in the same window as the squid scoring, marinade, and grill. Vermicelli is a 4-minute boil and a cold rinse; start it during the last 10 minutes of grill prep.'
+  - 'Light a charcoal grill 20 to 25 minutes before you want to cook. A chimney of lump charcoal needs that window to develop the white-ash bed that holds 250 °C / 480 °F under the grates. Gas grills need 10 minutes on high; an indoor grill pan needs 5 minutes on the highest setting.'
+  - 'Mix the nuoc cham first. The dipping sauce improves over the first 30 minutes as the garlic and chili infuse the sweet-sour-salty base, and the dish is structurally as much about the sauce as the squid. Build it before scoring and marinating the squid so the bloom runs while you work.'
+  - 'Hold the squid marinade to 15 minutes, no longer. Squid muscle is resistant to brine penetration and longer marinades toughen the protein through ionic dehydration rather than seasoning it more deeply. Bring the squid to near room temperature before it hits the grates; cold squid steams rather than chars.'
+
 ingredients:
   - group: 'Phase 1, squid preparation'
     item: 'whole cleaned squid (small to medium, 8 to 12 cm tubes, with tentacles)'

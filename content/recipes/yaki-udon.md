@@ -26,6 +26,11 @@ source:
   name: 'Adapted from Kitakyushu / Kokura tradition (postwar)'
   note: 'Yaki udon is a relatively recent invention ,  Kokura, in the Kitakyushu region of Fukuoka prefecture, claims the dish as a postwar (mid-1940s) creation by a yakisoba shop that ran out of soba noodles and substituted dried udon. The Kokura original uses dried udon (rehydrated) and a Worcestershire-based sauce; the modern Tokyo / Tokyo-extension home version uses fresh or frozen udon with a soy-mirin-oyster-sauce-based glaze that this recipe follows.'
 
+before_you_start:
+  - 'Yaki udon cooks in 4 to 5 minutes once the wok hits temperature. Pre-mix the glaze, pre-cut every vegetable, pre-portion the pork, and have the noodles thawed and separated BEFORE the wok ever sees the burner. Mid-cook prep is how the dish overcooks.'
+  - 'Noodle preparation depends on form. Frozen udon: leave at room temperature 10 minutes or microwave briefly to separate. Fresh vacuum-pack: rinse briefly under cold water to release the package shape. Dried: cook to package directions, drain, and rinse with cold water before the wok. All three end in loose, separated strands.'
+  - 'The dish does not hold and goes from chewy to gummy within 5 minutes of plating. Have diners at the table before the wok hits temperature; this is a finish-and-eat preparation, not a hold-on-the-counter one.'
+
 ingredients:
   - group: 'Phase 1, glaze'
     item: 'light soy sauce'

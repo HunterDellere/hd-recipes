@@ -22,6 +22,10 @@ cuisine: 'Japanese'
 course: 'drink'
 diet: ['vegetarian', 'vegan', 'gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'This is an overnight steep, 8 hours minimum in the refrigerator. Active hands-on time is 5 minutes; the rest is passive cold extraction. Start the night before you want to drink it.'
+  - 'Use cold water, not hot. Cold extraction pulls L-theanine and the toasted-rice aromatics while leaving most of the bitter tannins in the leaf; pouring hot water over genmaicha for a cold-brew result extracts the wrong fraction and the tea drinks astringent rather than smooth.'
+
 ingredients:
   - group: 'Tea'
     item: 'genmaicha'

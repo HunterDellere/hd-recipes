@@ -26,6 +26,12 @@ source:
   name: 'Korean banchan tradition'
   note: 'Oi-muchim (오이무침, "seasoned cucumber") is the cucumber expression of the muchim family: vegetables seasoned raw with chili, garlic, sesame, and a liquid (vinegar, fish sauce, or soy). Same grammar across kongnamul-muchim (soybean sprouts), miyeok-muchim (seaweed), musaengchae (radish). Eaten the day it is made, not days later; this is the un-fermented sibling of kimchi.'
 
+before_you_start:
+  - 'This is a banchan side meant to land at the same time as rice, soup, and the rest of the Korean meal. The salt cure on the cucumbers takes 15 minutes; that window is when you build the dressing, slice the scallions, and grate the garlic. Start the cure first, then prep everything else in parallel.'
+  - 'Salt the sliced cucumbers in a colander over a bowl, not in a flat dish. Osmotic water needs somewhere to drain; sitting in their own released liquid the cucumbers reabsorb salt water and read soggy instead of dense.'
+  - 'Mix the gochugaru, fish sauce, vinegar, sugar, and garlic in a small bowl and let it sit 2 minutes before tossing with the cucumbers. The gochugaru is dehydrated and needs that contact with the aqueous mix to bloom color and rounded heat; tossing dry flakes onto the cucumbers directly leaves a pale, one-note burn.'
+  - 'Eat within the hour. Even with the salt cure, cucumbers continue to soften past 60 minutes and the dressing dilutes. Pre-made oi-muchim from a banchan counter is the warning case: limp cucumbers in dilute pink water.'
+
 ingredients:
   - group: 'Vegetables'
     item: 'Korean or Persian cucumbers, sliced into 3 mm half-moons'

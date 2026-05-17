@@ -26,6 +26,12 @@ source:
   url: ''
   note: 'No browning step on the lamb; the technique is bare-simmer with aggressive skim. The jameed is the umami and the acid; both are structural to the dish, not added at the end.'
 
+before_you_start:
+  - 'Soak the jameed stones the night before in 1500 g cold water (6:1 water-to-jameed). They need 12 to 24 hours to soften enough to break down into a smooth sauce; under-soaked jameed leaves grit and will not stabilize.'
+  - 'Total time is 4.5 hours with a 3 to 4 hour bare-simmer on the lamb. Start the braise mid-morning for a dinner service, or the day before and reheat the lamb gently in its own broth.'
+  - 'Shrak bread is the base layer of the platter and should be sourced or baked ahead. If you cannot find shrak, markook or thin lavash works. Warm the bread just before plating, not earlier, or it goes leathery.'
+  - 'Basmati rice runs in PARALLEL with the final yogurt-stabilization phase. Start the rice soak (20 minutes) when the lamb has about 45 minutes of simmer left so the 12-minute cook plus 10-minute rest lands when the sauce is stabilized.'
+
 ingredients:
   - group: 'Phase 1, jameed soak (start the night before)'
     item: 'jameed stones'

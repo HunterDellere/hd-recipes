@@ -21,6 +21,11 @@ difficulty: 'medium'
 course: 'dessert'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'The brown butter for the frosting must solidify back to soft-butter texture before whipping, about 45 minutes refrigerated. Brown it FIRST so it can chill in parallel with the cake bake; warm brown butter whipped with cold cream cheese seizes into a broken frosting that no amount of beating fixes.'
+  - 'Chai milk and pan-roasted pumpkin both need to cool fully before going into the batter. Make both in the first 15 minutes of cooking, then move them to the freezer for 10 minutes while you prep the dry ingredients; warm liquids in the batter activate the baking soda prematurely and the cupcakes rise lopsided.'
+  - 'Cupcakes must be completely cool to the touch before frosting, about 45 minutes on a rack. Warm cupcakes melt the cream cheese frosting into a glossy slick within 60 seconds. Plan the total bake-to-serve window accordingly.'
+
 ingredients:
   - group: 'Chai milk'
     item: 'whole milk'

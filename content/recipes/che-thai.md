@@ -28,6 +28,12 @@ homemade_exempt:
   - 'canned lychee in syrup'
   - 'canned jackfruit in syrup'
 
+before_you_start:
+  - 'Chill the coconut sauce at least 30 minutes before assembly. The dish is served over crushed ice and warm or room-temperature sauce melts the ice immediately, diluting the dessert to flavorless coconut water within 2 minutes.'
+  - 'Hydrate the basil seeds in COLD water only, 15 minutes. They bloom into the translucent gel beads with the black dot inside that define the texture; hot water turns them mucilaginous and slimy and there is no recovery.'
+  - 'Drain the canned tropical fruits and RESERVE 60 ml / ¼ cup of the syrup for the coconut sauce. Discarding the syrup leaves the sauce one-note sweet; the syrup carries the fruit aromatics that tie the whole bowl together.'
+  - 'Crush the ice just before assembly. Pre-crushed ice in the freezer fuses back into a solid block; the dish wants loose shaved ice that the warm coconut sauce melts into a chilled slush.'
+
 ingredients:
   - group: 'Red ruby water chestnuts'
     item: 'fresh water chestnuts'

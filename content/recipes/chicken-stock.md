@@ -26,6 +26,11 @@ source:
   name: 'Standard French / Western technique'
   note: 'The cold-water start, no-boil simmer is the universal foundation of clear chicken stock across French, Italian, and Chinese cooking. Mirepoix vs aromatic-vegetable swap is the cuisine variable; the technique is constant.'
 
+before_you_start:
+  - 'This is a 4.5 hour pot. Active hands-on time is about 25 minutes (skim the first 20 minutes, then check once an hour); the rest is passive. The simmer cannot be left fully unattended, the temperature has to stay below a boil or the broth clouds.'
+  - 'Start with cold water, never warm. Cold-water start extracts proteins gradually as the temperature rises, drawing them to the surface where they coagulate and can be skimmed off. Starting in hot water seals the surface proteins and the resulting stock is cloudier and less clean-flavored.'
+  - 'Plan for an overnight chill before use. The stock must cool, then refrigerate at least 4 hours so the fat solidifies on top and can be lifted off cleanly. Hot-skimming leaves a greasy haze in every dish the stock goes into.'
+
 ingredients:
   - group: 'Bones'
     item: 'raw chicken bones (carcasses, backs, wings, necks)'

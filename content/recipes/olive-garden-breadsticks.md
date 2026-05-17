@@ -25,6 +25,11 @@ source:
   name: 'Reverse-engineered from the Olive Garden chain breadstick (1982-present)'
   note: 'The Olive Garden breadstick is a chain-restaurant signature dating to the chain''s 1982 launch. The published company description identifies the dough as a "fresh-baked" enriched yeast dough; the brush is butter, garlic, and seasoning salt. This recipe is the home-kitchen reverse-engineering of that breadstick.'
 
+before_you_start:
+  - 'Total time is 2 hours 10 minutes, most of it passive proofing. Start at least 2.5 hours before service: a 60-minute bulk rise, a 30-minute shaped proof, and a 15-minute bake.'
+  - 'Warm the milk to exactly 35 C with a thermometer. Above 40 C kills the yeast, below 30 C the dough takes hours longer to rise.'
+  - 'Mix the garlic butter brush at the start of the bulk rise so the raw garlic has 60 minutes to mellow in warm butter. Cold-mixed garlic butter brushed on a hot breadstick reads sharp and harsh.'
+
 ingredients:
   - group: 'Phase 1, the dough'
     item: 'bread flour'

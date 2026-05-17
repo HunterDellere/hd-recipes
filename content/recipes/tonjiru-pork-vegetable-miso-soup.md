@@ -26,6 +26,12 @@ source:
   name: 'Adapted from the Japanese household tradition of tonjiru / butajiru'
   note: 'Tonjiru (豚汁, literally "pork soup") is also called butajiru in some regions, the Japanese language uses both readings for the same compound. The dish is a 20th-century development that combines the older Japanese tradition of miso-based vegetable soups (kenchinjiru, suiton) with the post-Meiji incorporation of pork into Japanese cooking. The structural innovations vs other miso soups are: the pork is browned first to build Maillard flavor before the broth is added, the cook time is much longer (20 to 30 minutes vs 5 to 10 for the everyday miso soup) to soften the root vegetables, and the miso amount per liter of broth is roughly double the everyday bowl, producing a more concentrated and heartier soup. The dish is regional in some details (Hokkaido tonjiru uses a stronger red miso and may include butter; Kansai tonjiru leans more toward a delicate awase miso; Tokyo-style is in the middle), but the basic structure is universal.'
 
+before_you_start:
+  - 'Steamed Japanese short-grain rice is the canonical partner and must be on FIRST. Rinse 360 g / 1¾ cups rice three times, soak 30 minutes, then start in the cooker (or stovetop covered at a bare simmer 15 minutes, 10 minute rest off heat). The rice timeline of about 60 minutes overlaps the entire mise-and-cook so both arrive hot together.'
+  - 'Dashi must be ready before the pork browns. The recipe needs 1200 ml of room-temperature dashi at step 4; if you do not have made-ahead dashi, build a quick kombu-and-katsuobushi dashi at least 20 minutes ahead so it has time to cool to room temperature.'
+  - 'Pre-cut all the vegetables before any cooking starts. The active cook is brisk (about 30 minutes) and the burdock needs to soak 5 minutes in acidulated water immediately after shaving to prevent oxidation; trying to prep mid-cook produces oxidized burdock and overcooked pork.'
+  - 'The miso goes in OFF heat at the end and the pot never returns to the burner. Boiling miso destroys its volatile esters and produces a flat, salty-only bowl; this is the single most important rule of any miso soup.'
+
 ingredients:
   - group: 'Phase 1, the dashi'
     item: 'kombu-katsuobushi dashi (ichiban or niban)'

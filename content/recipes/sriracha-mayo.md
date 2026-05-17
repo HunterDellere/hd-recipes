@@ -22,6 +22,10 @@ cuisine: 'Asian-American'
 course: 'sauce'
 diet: ['vegetarian', 'gluten-free']
 
+before_you_start:
+  - 'Build the sauce at least 15 minutes before serving. The raw grated garlic needs that minimum rest in the acid medium to shift from sharp-pungent to integrated-pungent; freshly mixed sauce tastes flat and raw-garlicky.'
+  - 'Grate the garlic on a Microplane directly into the bowl. Minced or pressed garlic produces visible flecks that will not integrate; the Microplane breaks the cell walls fully and the sauce reads as a single coral-pink color.'
+
 ingredients:
   - group: 'Sauce'
     item: 'mayonnaise (full-fat, real-egg)'

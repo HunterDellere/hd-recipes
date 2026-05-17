@@ -26,6 +26,12 @@ source:
   url: 'https://www.accademiaitalianadellacucina.it/'
   note: 'The Accademia''s 1982 deposit at the Bologna Chamber of Commerce defines the canonical ragù: beef cartella (skirt or plate), pancetta, soffritto, tomato paste, broth, white wine, optional milk. The household version shifts toward easier-to-source ground beef and pork, keeps the structural choices (low tomato, milk tenderization, long cook), and serves over spaghetti as the global home-cook standard rather than the Bolognese-correct tagliatelle.'
 
+before_you_start:
+  - 'Block out a 3 to 3½ hour window. The ragù simmers 2 to 3 hours and the long cook is structural, not optional; a 45 minute version is a different dish (the beef-mushroom-shallot ragu on this site). The ragù can be made a day ahead and refrigerated; flavor deepens overnight and a reheat at low heat is the better serving plan for guests.'
+  - 'Start the pasta water boil about 10 minutes before the ragù finishes its long simmer. A 5 L pot takes 10 to 12 minutes to reach a rolling boil; the spaghetti cooks 1 minute shy of al dente (about 8 minutes) and is then finished in the ragù, so the boil needs to be ready when the long simmer ends.'
+  - 'Reserve a full 250 ml of starchy pasta water before draining, in a heatproof measuring cup at the stove. Pasta drained without reserved water cannot be re-emulsified into the ragù and the dish dries on the plate.'
+  - 'Pull a parmigiano rind from the wedge before grating the finishing cheese. The rind is a structural glutamate addition to the long simmer; if you grate the wedge down too far, you lose the rind for the next batch.'
+
 ingredients:
   - group: 'Phase 1, the soffritto and pancetta'
     item: 'pancetta, finely diced (3 mm)'

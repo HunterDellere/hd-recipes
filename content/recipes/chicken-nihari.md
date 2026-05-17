@@ -26,6 +26,12 @@ source:
   name: 'Pakistani Mughlai tradition (Karachi-Lahore-Delhi axis)'
   note: 'Nihari (نہاری, from Arabic nahār meaning "morning") is the canonical breakfast stew of Pakistani Muslim cooking, traditionally cooked overnight with beef shank and bone marrow and served at dawn after Fajr prayer with naan. The chicken adaptation became standard in the late 20th century as cooks looked for a same-day version that preserved the flavor architecture without the 12-hour simmer.'
 
+before_you_start:
+  - 'Decide your partner starch up front: naan, basmati rice, or roti. If basmati, start it as a PARALLEL TRACK in the last 30 minutes of the braise (20 minute soak, 12 minute simmer, 10 minute covered rest). If naan or roti, warm them on a dry skillet in the last 5 minutes; nihari with no starch to mop the gravy is a sauce in a bowl.'
+  - 'This is a 130 minute cook with about 50 minutes of active time, the rest is a covered 90 minute braise. Plan the start so dinner lands when you want it; this is a Sunday-afternoon dish, not a weeknight.'
+  - 'Bloom the whole spices in hot ghee before the masala paste hits the pan. Adding ground spices to cold ghee or skipping the whole-spice tadka collapses the dish to one-dimensional curry powder flavor; the spice-in-fat infusion is the structural step that distinguishes nihari from a generic chicken curry.'
+  - 'Crisp the fried onions in advance, up to 24 hours ahead. They are a structural finish, not garnish; the textural contrast and the caramelized depth carry the dish. Hot-from-the-pan crisped onions added at the end overcook in residual heat; cold crisped onions stay crunchy.'
+
 ingredients:
   - group: 'Phase 1, masala paste'
     item: 'fresh ginger, peeled and rough-chopped'

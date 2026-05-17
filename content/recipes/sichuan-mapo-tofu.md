@@ -26,6 +26,12 @@ source:
   name: 'Chen Mapo Tofu (Chengdu, Sichuan), 1862'
   note: 'The canonical recipe traces to Chen Liu, who ran a small restaurant in Chengdu''s Wenshu district in the late Qing dynasty. Her pockmarked face (ma) gave the dish its name (po: old woman; dou fu: tofu). The seven-flavor target (麻 numbing, 辣 spicy, 烫 hot/temperature, 香 fragrant, 鲜 savory-fresh, 嫩 tender, 酥 crumbly-meat) is the codified Sichuan flavor framework. Beef is the historical protein; pork is a later overseas adaptation.'
 
+before_you_start:
+  - 'Steamed jasmine rice is the partner and must be on FIRST. Rinse 360 g / 1¾ cups rice three times, start in the cooker (or stovetop covered at a bare simmer 18 minutes, then 10 minute rest off heat). The rice 15 minute rest overlaps the entire mapo tofu cook so both arrive hot together.'
+  - 'Toast the Sichuan peppercorns whole and grind them within 30 minutes of plating. Pre-ground peppercorn from the jar has lost most of its volatile oils to oxidation, the má (numbing) effect that defines the dish requires the fresh-toasted-and-cracked powder as a finishing scatter.'
+  - 'The tofu blanch (step 2) runs in parallel with the beef browning (step 1). Have a wide saucepan of salted water at 80 degrees C ready before the beef hits the wok, otherwise the beef sits and overcooks while the blanch water heats.'
+  - 'Cube the silken tofu only after the blanch water is at temperature. Silken tofu cubes lose structural integrity if they sit cut on the board for more than a few minutes; cut, blanch, drain in one continuous move.'
+
 ingredients:
   - group: 'Phase 1, beef preparation'
     item: 'ground beef (80/20 chuck)'

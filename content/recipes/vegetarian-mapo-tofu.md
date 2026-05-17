@@ -26,6 +26,12 @@ source:
   name: 'Adapted from the Sichuan tradition (vegetarian / Buddhist version)'
   note: 'Sichuan vegetarian cooking has a long tradition (素食, sù shí) rooted in Buddhist temple cuisine; many classic Sichuan dishes have established meatless versions where mushrooms or wheat gluten substitute for the meat. This version follows the temple-style approach and uses dried-shiitake stock as the umami foundation.'
 
+before_you_start:
+  - 'Steamed jasmine rice is the partner and must be on FIRST. Rinse 360 g / 1¾ cups rice three times, start in the cooker (or stovetop covered at a bare simmer 18 minutes, then 10 minute rest off heat). The 45 minute rice timeline overlaps the entire mushroom-and-tofu cook.'
+  - 'Rehydrate the dried shiitake FIRST and reserve their soaking liquid. The 30 minute minimum soak (2 hours is better) produces the shiitake stock that is the structural umami foundation of this dish; rushed soaking leaves both flat mushrooms and weak stock. Start them at the same time as the rice.'
+  - 'Toast the Sichuan peppercorns whole and grind them within 30 minutes of plating. Pre-ground peppercorn has lost most of its volatile oils to oxidation; the má (numbing) effect requires fresh-toasted-and-cracked powder as a finishing scatter.'
+  - 'Set up the tofu blanch in parallel with the mushroom dry-fry. Have a wide saucepan of 80 degrees C salted water ready before the mushrooms hit the wok; the blanch holds the cut silken tofu for the 2 minutes the mushroom browning needs to finish.'
+
 ingredients:
   - group: 'Phase 1, dried-shiitake stock'
     item: 'dried shiitake mushrooms'

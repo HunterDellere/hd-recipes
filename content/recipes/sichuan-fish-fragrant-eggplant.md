@@ -26,6 +26,11 @@ source:
   name: 'Sichuan tradition'
   note: '"Yu xiang" (fish-fragrant) names a flavor profile, sweet, sour, hot, salty, with strong ginger-garlic-scallion aromatics, historically used for fish but applied to many ingredients. The flavor profile, not fish, is the dish.'
 
+before_you_start:
+  - 'Steamed jasmine rice is the partner and must be on FIRST. Rinse 300 g / 1½ cups rice three times, start it with 360 ml water in the cooker (or stovetop covered at a bare simmer for 18 minutes plus 10 minute rest off heat). The 15 minute rest at the end of the cook overlaps the entire eggplant prep and cook so both finish together.'
+  - 'Pre-mix the fish-fragrant sauce in a single bowl before the wok heats. The dry-fry through final toss runs about 12 minutes nonstop with no time to whisk cornstarch into water once the doubanjiang hits the oil.'
+  - 'Cut all aromatics (ginger, garlic, scallion whites and greens separately) and have them in small dishes at the stove. The aromatic base in step 4 burns within 30 seconds of medium heat; you cannot stop to mince garlic.'
+
 ingredients:
   - group: 'Phase 1, eggplant'
     item: 'Chinese or Japanese eggplant'

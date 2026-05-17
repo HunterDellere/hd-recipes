@@ -31,6 +31,12 @@ safety_notes:
     ref: 'safety/meat-doneness#beef-and-lamb-whole-muscle'
     why: 'The USDA published-safe target for whole-muscle beef is 145 °F (63 °C) followed by a 3-minute rest. The American and French steakhouse canon pulls medium-rare steaks at 52 to 57 °C (126 to 135 °F) followed by a 3- to 5-minute rest, and this is the doneness range at which chuck eye eats best. Whole-muscle beef from a reputable source carries a substantially lower pathogen risk than ground beef (the bacterial load lives on the surface, which the hard sear pasteurizes; the interior of a whole muscle from a healthy animal is essentially sterile). Cooks who want the published-safe number should pull at 145 °F, accepting drier, chalkier meat. Ground beef, mechanically tenderized cuts, and blade-tenderized steaks should always be cooked to 71 °C / 160 °F since the surface bacteria are mixed throughout.'
 
+before_you_start:
+  - 'Dry-brine the steaks 12 to 24 hours ahead, salt them on both sides at 0.9% of weight (4 g kosher salt for two 225 g steaks), set on a wire rack over a sheet tray, and refrigerate uncovered. The surface needs to be visibly dry to the touch before searing; salt without overnight rest crusts but does not penetrate, and the steak weeps water into the pan instead of building Maillard.'
+  - 'Pull the steaks out of the fridge 45 minutes before searing so the interior comes up toward 18 to 20°C. A cold-from-fridge interior overshoots the sear window (the surface goes black before the center hits 54°C), and the pan sauce window collapses chasing temperature.'
+  - 'The pan sauce is built in the same hot cast iron while the steaks rest 5 minutes. Stage the minced shallot, red wine, broth, dijon, and the cold cubed butter on the counter before the sear; once the steaks come out you have a 6 minute window to build, reduce, and mount, no time to start mincing.'
+  - 'Have the kitchen ventilation on high. A smoking cast iron at 230°C plus butter-basting fills the kitchen with smoke within 90 seconds; without the fan running you trigger smoke alarms and the cook becomes about the alarm rather than the steak.'
+
 ingredients:
   - group: 'Phase 1, dry-brine (the night before)'
     item: 'chuck eye steaks, 1-inch / 2.5 cm thick'

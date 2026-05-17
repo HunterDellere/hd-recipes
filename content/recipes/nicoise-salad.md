@@ -26,6 +26,12 @@ source:
   name: 'Adapted from Niçois tradition (Comité de la Cuisine Niçoise canon)'
   note: 'The purist Nicois version omits cooked vegetables entirely; this draft sits in the broader French canon that admits potato and haricots verts. Tuna is oil-poached rather than seared, which holds the texture compatible with room-temperature plating.'
 
+before_you_start:
+  - 'This is a composed salad served at room temperature, not warm and not chilled. Plan for every cooked component (tuna, eggs, potatoes, haricots verts) to come off the heat at least 20 minutes before plating so they cool to room temp without going cold-from-the-fridge.'
+  - 'Pull the tuna loin from the fridge 45 minutes ahead to temper. A cold loin dropped into the oil bath drops the bath temperature below the 60 C poach window and overcooks the exterior before the center warms.'
+  - 'Salt-cure the sliced tomatoes 20 to 30 minutes ahead on a rack so they shed water. Unsalted tomatoes water down the plate at room temperature and dilute the vinaigrette.'
+  - 'Build the anchovy-dijon vinaigrette first so the shallot has 15 minutes to mellow in the acid. Raw shallot dropped onto the plate at the last moment reads harsh against the oil-poached tuna.'
+
 ingredients:
   - group: 'Phase 1, oil-poached tuna'
     item: 'sushi-grade tuna loin'

@@ -22,6 +22,12 @@ cuisine: 'Chinese'
 course: 'dinner'
 diet: ['dairy-free']
 
+before_you_start:
+  - 'Rice is the partner and must start FIRST. Jasmine or short-grain rice should finish at the same minute the tofu sets and the sauce ladles over, this dish loses 15 to 20 percent of its impact if served lukewarm or held.'
+  - 'Use a 0.1 g jewelry scale for the GDL. 0.28 percent by weight of the soy milk is non-negotiable, eyeballing produces either a watery non-set or a rubbery curd. Pre-portion the GDL into the warm-water slurry while the sauce builds.'
+  - 'The soy milk must be PLAIN and UNFORTIFIED. Calcium-fortified or vanilla soy milks will not set with GDL and there is no rescue. Verify the carton before starting.'
+  - 'The bowls are the setting vessel and must be warmed (90 seconds in a 100 C oven or rinsed with boiling water). Cold ceramic drops the curd below the 80 C set window and the tofu will not coagulate cleanly.'
+
 source:
   name: 'Adapted from Sichuan douhua (豆花) tradition'
   note: 'Douhua is the Chinese tradition of fresh-set silken tofu (literally "tofu flower") served as a sweet or savory dish on its own. The poured-set mapo variant fuses douhua technique with mapo seasoning — the bowl is the serving vessel, the silken sets in place, and the sauce ladles over. Restaurants in Chengdu and Chongqing serve a version of this; the home version is more dramatic because the curd is genuinely fresh-made.'

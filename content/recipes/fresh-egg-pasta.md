@@ -26,6 +26,11 @@ source:
   name: 'Emilian (Bolognese) tradition'
   note: ''
 
+before_you_start:
+  - 'The dough rests at least 30 minutes after kneading, up to 2 hours, and the rest is not optional. Kneading aligns gluten strands into tension; resting relaxes that tension so the sheet rolls without snapping back. Plan the rest to overlap with your sauce prep so the pasta is ready when the sauce is ready.'
+  - 'Pull the eggs to room temperature 30 minutes ahead. Cold eggs slow the dough hydration and produce a tighter, more elastic mass that fights the machine on the first few passes.'
+  - 'Salt the boiling water aggressively so it tastes like the sea before the pasta goes in; fresh pasta is on a 2 to 3 minute cook window and there is no time for under-salted water to season the noodle. Reserve a ladle of starchy pasta water before draining for any pan-emulsion sauce.'
+
 ingredients:
   - item: 'tipo 00 flour'
     qty: 300

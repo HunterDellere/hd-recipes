@@ -22,6 +22,12 @@ cuisine: 'Japanese'
 course: 'lunch'
 diet: ['dairy-free', 'pescatarian']
 
+before_you_start:
+  - 'The rice needs a 30-minute cold-water soak after rinsing and before cooking. Skipping the soak produces uneven hydration and the rice will not clump correctly for shaping.'
+  - 'Shape onigiri in a 5 to 15 minute window after the rice rest, when the rice has cooled to 60 C / 140 F (warm but tolerable on the hands for 10 seconds). Hotter steam-cooks your palms and dries the rice, cooler will not bind.'
+  - 'Prep the fillings before the rice finishes cooking. Once the rice hits the shaping window you cannot stop to flake salmon or pit umeboshi.'
+  - 'If you are wrapping nori for later eating, store the nori sheets separately and wrap only at the moment of service. Nori touching rice for more than 20 minutes goes leathery.'
+
 source:
   name: 'Adapted from Japanese home-kitchen tradition'
   note: 'Onigiri are documented as far back as the Heian period (8th to 12th century) as portable rice for travelers, soldiers, and field workers. The triangular form is the most common modern shape but balls (maru), cylinders (tawara), and flat discs all have regional precedents. The convenience-store onigiri, with its plastic-wrapped nori-sheet-separated-from-rice design, is a 1978 innovation by 7-Eleven Japan that solved the crisp-nori-vs-moist-rice problem.'

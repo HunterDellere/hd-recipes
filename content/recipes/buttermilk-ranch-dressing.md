@@ -22,6 +22,10 @@ cuisine: 'American'
 course: 'sauce'
 diet: ['vegetarian', 'gluten-free']
 
+before_you_start:
+  - 'Whisk-and-rest, not whisk-and-serve. The dressing needs at least 2 hours refrigerated before service so the herb oils integrate into the dairy and the raw garlic mellows from sharp to round. Fresh-whisked ranch tastes thin and one-dimensional; this is the same recipe two hours later, transformed.'
+  - 'Make it the day before for the best result. Day-old ranch reads markedly more cohesive than 2-hour ranch; the herb-and-dairy fusion continues to deepen through about day 2 before slowly losing brightness past day 3.'
+
 ingredients:
   - group: 'Base'
     item: 'mayonnaise (full-fat, real-egg)'

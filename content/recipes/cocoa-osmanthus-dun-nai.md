@@ -21,6 +21,10 @@ cuisine: 'Chinese'
 course: 'dessert'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'The cocoa-infused milk must cool to about 45°C before it meets the egg whites. Pouring hot milk into whites curds them instantly into scrambled-egg shreds, and the custard will not set silken. Plan a 10 to 15 minute cool window between the cocoa infusion and the custard build; brew the oolong garnish during that window.'
+  - 'Set up your steamer (or water bath) BEFORE you build the custard. The ramekins go in covered the moment the strain-and-pour finishes; standing custard sitting at room temperature while you find the foil and rig the rack causes the egg proteins to start setting unevenly.'
+
 ingredients:
   - group: 'Cocoa-infused milk'
     item: 'whole milk'

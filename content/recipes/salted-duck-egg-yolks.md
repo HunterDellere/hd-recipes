@@ -22,6 +22,12 @@ cuisine: 'Chinese'
 course: 'sauce'
 diet: ['gluten-free']
 
+before_you_start:
+  - 'This is a 35-day brine cure. Active hands-on work is 45 minutes total: 30 minutes upfront to make the brine and load the jar, 15 minutes at day 35 to steam and separate yolks. The cure itself runs unattended.'
+  - 'Source duck eggs, not chicken. Duck yolks are larger, denser, and higher in fat; the cure produces the canonical oil-bleeding center. Chicken yolks cure but read chalky and small. Asian groceries and farmers markets are the realistic sources.'
+  - 'Boil and cool the brine water fully before submerging the eggs. Hot brine partially cooks the egg white through the shell and produces uneven cures; tap water without boiling carries chlorine and stray microbes that risk spoilage over the 35-day window.'
+  - 'Find a stable cool dark spot at 18 to 22 °C for the full cure. A pantry shelf works; refrigerator temperature stalls the osmotic salt migration and the yolks never fully firm.'
+
 source:
   name: 'Cantonese and broader Chinese tradition; closely related to Filipino itlog na maalat'
   note: 'The home version is the same brine cure used for centuries, scaled to a one-jar batch. The thirty-five-day mark is the Cantonese consensus for the right balance: dense, oil-bleeding yolk with a still-coherent (not chalky) center.'

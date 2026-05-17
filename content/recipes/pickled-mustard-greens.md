@@ -25,6 +25,12 @@ diet: ['vegetarian', 'vegan', 'gluten-free']
 source:
   name: 'Pan-Chinese tradition; the Sichuan, Cantonese, and Northeastern (suan cai bai cai) styles all share the same lactic ferment with regional aromatic differences.'
 
+before_you_start:
+  - 'This is a 7 to 10 day lacto-ferment. Plan for the jar to occupy counter space at 18 to 22 C for that window, fluctuating temperatures or a cold kitchen below 16 C slow the ferment past 14 days and risk yeast bloom before lactic acid drops the pH.'
+  - 'Use non-chlorinated water (filtered or boiled-and-cooled). Tap-water chlorine inhibits the lactobacilli that drive the ferment, the brine will stall or develop off-aromas instead of clean sour.'
+  - 'The greens must stay fully submerged under the brine for the duration. Use a fermentation weight, a small water-filled ziplock bag, or a clean stone, any leaf exposed to air will mold and contaminate the batch.'
+  - 'Burp the jar daily for the first 4 days. CO2 builds aggressively in the active phase and an unvented jar can crack or pop the lid.'
+
 ingredients:
   - group: 'Greens'
     item: 'Chinese mustard greens (gai choy / xue li hong / suan cai cabbage)'

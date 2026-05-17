@@ -22,6 +22,10 @@ cuisine: 'Thai'
 course: 'sauce'
 diet: ['vegan', 'gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'The toasted rice must cool to room temperature (5 to 10 minutes) before grinding. Hot rice in a mortar or spice grinder produces a gummy paste rather than a coarse powder; tip the rice onto a cool plate the moment it comes off the heat and let it sit.'
+  - 'Doubling or tripling the batch costs no extra time. The powder keeps 2 weeks at full aromatic top in a sealed jar and is the structural finish for larb, nam tok, and Vietnamese thinh applications; a 50 g batch covers about 4 larb dishes.'
+
 ingredients:
   - item: 'raw glutinous rice (sticky rice, sweet rice)'
     slug: 'glutinous-rice'

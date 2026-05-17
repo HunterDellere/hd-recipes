@@ -22,6 +22,11 @@ cuisine: 'Chinese'
 course: 'sauce'
 diet: ['gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'Plan for a 6-hour cook window with 30 minutes of active work spread across the start, middle, and end. The simmer is mostly passive but the pot must stay on the stove; this is a weekend project, not a weeknight one.'
+  - 'Ask the butcher for a mix of marrow, knuckle, and neck bones. A single bone type produces a one-dimensional broth; the mix is what carries the gelatin (knuckle), the body (neck), and the richness (marrow).'
+  - 'Cool the finished broth fast (ice bath or shallow pans) before refrigerating, or the residual heat will sour it overnight. Plan freezer space for 2 L of containers before you start.'
+
 source:
   name: 'Chinese (primarily Cantonese) broth tradition'
   note: 'The Chinese clear pork broth is the foundational broth for southern Chinese cooking, distinct from both Western pork stock (rare in Western cuisine) and Japanese tonkotsu (rolling-boil milky broth). All three start with similar bones; the technique difference produces three different broths.'

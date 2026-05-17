@@ -22,6 +22,12 @@ cuisine: 'Chinese'
 course: 'dinner'
 diet: ['dairy-free']
 
+before_you_start:
+  - 'Start the jasmine or steamed white rice first so it finishes within minutes of the squid; this dish is canonically eaten over rice. A 15-minute rinse-and-simmer for jasmine runs in parallel with the squid prep and toasted-pepper-salt blend.'
+  - 'Pat the scored squid bone-dry with paper towels before dredging. Wet squid sheds the cornstarch-rice-flour shell into the oil and fries naked; the entire crisp texture depends on a dry surface.'
+  - 'Heat the oil to 175 °C and confirm with a probe thermometer before the first piece goes in. Below 165 °C the squid steams in soggy batter; above 185 °C the coating browns before the 90-second cook is complete and the squid goes rubbery.'
+  - 'Do not marinate the salted squid longer than 5 minutes. The salt and Shaoxing pull moisture and start tenderizing immediately; past 5 minutes the texture turns mushy and the dredge no longer adheres.'
+
 source:
   name: 'Cantonese / Hong Kong tradition'
   note: '"Jiao yan" (椒盐) literally means "pepper salt" and refers to the toasted-and-ground white-pepper-and-salt seasoning that defines this dish; the technique is also applied to pork ribs (jiao yan pai gu) and prawns (jiao yan xia). The squid version is one of the most enduring dishes on Cantonese seafood-restaurant menus in Hong Kong, Guangzhou, and the diaspora.'

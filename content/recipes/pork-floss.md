@@ -22,6 +22,12 @@ cuisine: 'Chinese'
 course: 'sauce'
 diet: ['gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'This is a 3.5-hour weekend project, with 75 minutes of nearly continuous active stirring in the dry-fry phase. Do not start unless you can stand at the wok for the second half; the floss burns the moment you turn your back.'
+  - 'Buy lean pork shoulder and trim aggressively before weighing. Any fat or skin left on will refuse to dry into fluff and instead reads as greasy clumps in the finished floss.'
+  - 'Have a wide nonstick or carbon-steel wok (12-inch or larger) and a wooden or silicone spatula ready. A small skillet crowds the meat and traps moisture, the floss stays wet and never separates into strands.'
+  - 'The finished floss stores up to a month in an airtight jar at room temperature. Plan a clean dry jar before you start, the floss must go in fully cooled or condensation will spoil it within days.'
+
 source:
   name: 'Chinese pantry tradition; the Cantonese style is sweeter, the Fujianese style sweeter still, the Northern style leaner.'
 

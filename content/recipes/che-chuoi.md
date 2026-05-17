@@ -24,6 +24,10 @@ diet: ['vegetarian', 'vegan', 'gluten-free', 'dairy-free']
 homemade_exempt:
   - 'full-fat coconut milk'
 
+before_you_start:
+  - 'Use bananas that are ripe but still firm, fully yellow with the first brown specks, not soft or heavily speckled. Underripe bananas read starchy; overripe bananas dissolve into the coconut base within the 4 minute poach and the dish reads as banana porridge instead of poached banana in coconut milk.'
+  - 'Tapioca cooks in a separate pot in parallel with the coconut base, the two come together at the end. Set the tapioca water boiling before you open the coconut milk cans so the 12 to 15 minute pearl boil overlaps with the 8 minute coconut-and-banana phase.'
+
 ingredients:
   - group: 'Phase 1, tapioca'
     item: 'water'

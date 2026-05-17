@@ -22,6 +22,12 @@ cuisine: 'Indian'
 course: 'dinner'
 diet: ['dairy-free']
 
+before_you_start:
+  - 'Start the basmati rinse-and-soak first; 20 to 30 minutes of cold-water soak before cooking produces the long separate grains the pulao is built on. Unsoaked rice cooks gummy and stubbier. This runs in parallel with the shrimp marinade.'
+  - 'Marinate the shrimp 15 to 20 minutes before searing, no longer. The yogurt and acid begin denaturing the proteins on contact; past 30 minutes the surface goes mushy and the shrimp lose snap.'
+  - 'Raita is the canonical partner. Either make it 30 minutes ahead so it rests cold (see recipes/raita) or buy plain whole-milk yogurt and stir in cumin and grated cucumber while the rice rests covered at the end.'
+  - 'Use a heavy Dutch oven or thick saucepan with a tight lid. Thin-walled pots cause uneven heat at the bottom and scorch the rice during the steam phase before the grains finish hydrating.'
+
 source:
   name: 'Coastal Indian / Mughlai-influenced tradition'
   note: 'Pulao (पुलाव, also pilaf, polo, pilav) is a rice-cooked-in-flavored-liquid technique that traces back to ancient Persian polo and migrated through Central Asia and Mughal India into the modern subcontinental kitchen. Shrimp pulao is a coastal-Indian variant (Goa, Mangalore, Kerala) that uses local seafood in place of the meat that defines northern pulaos and biryanis.'

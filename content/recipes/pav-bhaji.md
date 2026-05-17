@@ -22,6 +22,11 @@ cuisine: 'Indian'
 course: 'dinner'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'The pav rolls are the partner and must be butter-toasted in the final 5 minutes so they hit the plate hot. Have the rolls split and the butter portioned before you start the masala build, you cannot stop mid-bhaji to slice bread.'
+  - 'The vegetable boil and the masala build run in PARALLEL on two burners. Start the potato, cauliflower, and pea boil first (about 15 minutes), then begin the onion-tomato masala in a second wide pan while they cook so both finish together.'
+  - 'Source proper Mumbai-style pav bhaji masala (Everest or MDH brand). Generic garam masala will not produce the signature flavor, the specific blend with amchur, black salt, and fennel is what makes the dish read as pav bhaji.'
+
 source:
   name: 'Mumbai street food tradition (mid-20th century)'
   note: 'Pav bhaji (पाव भाजी, "pav" = soft Portuguese-derived bread roll, "bhaji" = vegetable curry) was developed in Mumbai in the 1850s to 1860s as a fast vegetarian meal for textile mill workers; cooks took whatever vegetables were on hand and mashed them into a quick spiced curry, served with the Portuguese-introduced soft bread. The dish became a Mumbai street-food signature in the 20th century and is now a household staple across India.'

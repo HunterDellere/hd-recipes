@@ -22,6 +22,12 @@ cuisine: 'Thai'
 course: 'dinner'
 diet: ['dairy-free', 'gluten-free']
 
+before_you_start:
+  - 'Sticky rice is the partner and must start FIRST. Soak 200 g / 1 cup Thai glutinous rice in cold water at least 4 hours ahead (overnight is better), then steam in a bamboo basket while you build the larb. A 30-minute steam finishes within minutes of the larb hitting the plate.'
+  - 'Toast the raw glutinous rice for khao khua early, it must cool fully (about 15 minutes) before grinding to powder. Run the toast in parallel with the chicken hand-chop.'
+  - 'Pull mint, cilantro, scallion, and culantro from the fridge and dry them before anything else. Cold wet herbs drop the dish temperature when they hit the warm chicken and dilute the dressing.'
+  - 'Larb does not hold. Once dressed, the toasted rice powder absorbs liquid every minute and the herbs wilt within 20 to 30 minutes. Plate and serve immediately.'
+
 source:
   name: 'Adapted from Isaan and Lao canon (larb gai / laap gai)'
   note: 'Larb is the Lao national dish; the Isaan version (northeast Thailand) is essentially identical and crossed the border with the same ethnic Lao population. Larb appears across Thailand in regional variants (northern Thai larb is more spice-paste-driven, with bile and offal; central Thai larb is milder). This is the Isaan/Vientiane workhorse: chopped meat, toasted rice powder, fish sauce, lime, chili, herbs.'

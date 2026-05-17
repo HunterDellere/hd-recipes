@@ -25,6 +25,12 @@ source:
   name: 'Original; Italian short-form ragu informed by Emilia-Romagna bolognese tradition'
   note: 'A 45-minute weeknight ragu, not a 4-hour bolognese. The structural divergence is the oyster mushroom as meat partner and the high-heat browning of beef and mushroom as parallel Maillard steps before the sauce comes together.'
 
+before_you_start:
+  - 'Start the pasta water FIRST. The 3 L pot takes 8 minutes to reach a rolling boil and the spaghetti drops at minute 8 of the sauce simmer; if the water is not boiling at that moment, the pasta finishes after the sauce has reduced too far and you lose the pan-emulsion window.'
+  - 'Reserve a full 500 ml of starchy pasta water in a heatproof measuring cup before draining. The mantecatura and emulsion at the end require 120 ml minimum, with more on standby; pasta drained without reserve cannot rebuild a broken sauce.'
+  - 'Cube the butter cold and zest the lemon before any cooking starts. Both are last-minute finishes that the cook reaches for in a 30 second window at the end; warm butter does not mount and a hot pan is no place to use a Microplane.'
+  - 'Tear the oyster mushrooms by hand along the natural fiber direction, never slice. The pulled architecture is the entire structural point of this version; sliced mushrooms collapse into uniform discs and disappear into the sauce.'
+
 ingredients:
   - group: 'Aromatic base'
     item: 'shallots'

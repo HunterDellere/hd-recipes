@@ -26,6 +26,11 @@ source:
   name: 'Modern east-meets-west umami-driven approach'
   note: 'Pure Western mirepoix-based vegetable broth tends toward "carrot-water" thinness because vegetables alone lack the protein-and-collagen extraction that animal stocks rely on for body. Adding kombu (glutamate) and dried shiitake (ribonucleotides) borrows the Japanese umami-foundation strategy and produces a vegetable broth structurally rich enough to substitute for chicken stock in most applications.'
 
+before_you_start:
+  - 'Block out a 60 minute total window: 10 minutes of prep, 35 to 40 minutes of simmer, and 25 minutes of strain-and-cool. The cool step is structural, not optional; vegetable broth develops off-flavors at room temperature faster than animal stocks.'
+  - 'Pull the kombu out the moment the first bubbles break the surface (about 8 to 10 minutes in). Above 60 degrees C the kombu releases bitter compounds that turn the broth marine-and-bitter; this is the same rule as proper dashi technique.'
+  - 'Have an ice bath ready in the sink before the broth finishes simmering. Vegetable broth cools quickly only in wide shallow pans set in ice; leaving the full pot to cool on the counter pushes the broth past the safe and flavor-stable window.'
+
 ingredients:
   - group: 'Phase 1, umami foundation'
     item: 'kombu (dried kelp)'

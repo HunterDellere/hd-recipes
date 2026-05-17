@@ -27,6 +27,10 @@ source:
   url: 'https://www.simplyrecipes.com/recipes/banana_bread/'
   note: 'Brown butter substitution and the overripe-banana mandate are the divergence; the original uses melted plain butter and tolerates yellow bananas.'
 
+before_you_start:
+  - 'Bananas must be heavily speckled to black-skinned. Yellow bananas have not yet converted enough starch to sugar and the loaf will read flat and starchy regardless of technique. If yours are still yellow, ripen them 24 to 48 hours in a paper bag with an apple, or bake the skin-on bananas at 150°C / 300°F for 15 to 20 minutes until the skins go black and the flesh turns soft and aromatic.'
+  - 'Total cooling window after the bake is 45 minutes minimum (15 in the pan, 30 on a rack). Cutting a warm loaf tears the crumb because starch retrogradation has not set yet. Plan the bake so the loaf comes out at least 45 minutes before you want to slice.'
+
 ingredients:
   - group: 'Wet'
     item: 'overripe bananas, heavily speckled to black-skinned'

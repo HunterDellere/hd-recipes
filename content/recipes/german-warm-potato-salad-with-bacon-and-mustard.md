@@ -26,6 +26,12 @@ source:
   name: 'Schwäbischer Kartoffelsalat (Swabian warm potato salad) from the Southern German Baden-Württemberg tradition'
   note: 'The dish has two major regional variants in Germany: the Northern German / Rheinland version is mayonnaise-bound, served cold, and resembles American potato salad. The Southern German / Swabian / Bavarian version is the warm vinegar-and-stock version drafted here, which most German cooks consider the canonical Kartoffelsalat. The Swabian school in particular insists on thin slices (3 to 4 mm) and dressing the potatoes while still warm so the starch absorbs the dressing; the Bavarian version often uses thicker slices and more bacon. Both are correct regional traditions. This recipe leans Swabian.'
 
+before_you_start:
+  - 'Start the potatoes FIRST in cold salted water; everything else runs in parallel with their 22-minute simmer. The potatoes go on, then the bacon goes into a cold heavy skillet, then the dressing components get measured and lined up. By the time the potatoes are drained and steaming, the rendered bacon, the sweated onion, and the deglaze-and-mustard dressing should all be staged and ready.'
+  - 'Have the chicken stock warmed and within reach before the deglaze. The dressing comes together fast once the vinegar hits the bacon fond and the mustard goes in; cold stock added to the hot pan stalls the emulsion and the dressing splits.'
+  - 'Work the timing window so the dressing is ready (held warm under 70 °C, not boiling) at the moment the potatoes are sliced and laid out. The dish hinges on warm potato slices (40 to 50 °C internal) meeting warm dressing; cold dressing on warm potato fails to absorb, and boiling dressing on warm potato breaks the starch surface into glue.'
+  - 'Do not rinse the drained potatoes under cold water. The residual heat is what the salad is built on; cold tap water kills the absorption window before it starts.'
+
 ingredients:
   - group: 'Phase 1, boil the potatoes'
     item: 'waxy potatoes, Yukon Gold or red new potatoes'

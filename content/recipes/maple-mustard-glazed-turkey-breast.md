@@ -25,6 +25,12 @@ safety_notes:
     ref: 'safety/meat-doneness#poultry'
     why: 'A 20-minute rest under foil drives carryover from 160°F into the published-safe 165°F window for poultry. Cutting before the rest leaves the breast both juicier-on-the-board and short of the kill target.'
 
+before_you_start:
+  - 'Dry brine the turkey breast the night before, 18 to 24 hours uncovered on a rack in the fridge. The salt needs time to migrate into the muscle and the skin needs the open-air time to dry, which is what produces crackled skin under the glaze.'
+  - 'Pull the turkey from the fridge 45 minutes before it goes in the oven so the breast tempers toward room temperature. A cold-from-the-fridge breast roasts unevenly and the carryover math will not land at 165 F.'
+  - 'A digital probe thermometer is non-negotiable. Pull at exactly 160 F at the deepest part of the breast, the 20-minute foil rest drives carryover into the safe 165 F window. Visual cues will overshoot.'
+  - 'The glaze is brushed on in the final 10 minutes of roasting, build it while the breast is in the first stage so it is ready to lacquer the moment the skin reaches color.'
+
 ingredients:
   - group: 'Turkey + dry brine'
     item: 'bone-in turkey breast, skin-on'

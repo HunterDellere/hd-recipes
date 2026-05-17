@@ -26,6 +26,12 @@ source:
   name: 'Adapted from the Burgundy method'
   note: 'A Pommery-style coarse mustard. Same ratios as smooth Dijon; only the grind is different.'
 
+before_you_start:
+  - 'The seeds need a 36 to 48 hour cold soak in wine and vinegar BEFORE the food processor work. Build the soak two days ahead of when you want to use the mustard; rushing this step produces seeds that crunch hard rather than pop cleanly and a mustard that reads raw and astringent.'
+  - 'After grinding, the mustard mellows over another 48 hours in the refrigerator and stabilizes by day five. Plan the full 4 to 5 day calendar; mustard tasted on day one reads aggressively hot and the bite softens predictably over the rest.'
+  - 'Use only glass, ceramic, or stainless equipment at every stage. Mustard reacts with aluminum and untreated cast iron within hours and develops a metallic edge that cannot be reversed.'
+  - 'Pulse the food processor in 1 second bursts, never run continuously. A continuous run produces smooth Dijon in 30 seconds; the structural goal here is roughly half-cracked, half-intact seeds, which the pulse-and-pause action lets you watch and stop at.'
+
 ingredients:
   - group: 'Soak'
     item: 'brown mustard seeds'

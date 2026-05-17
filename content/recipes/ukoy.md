@@ -27,6 +27,12 @@ source:
   url: 'https://www.seriouseats.com/ukoy-filipino-shrimp-and-vegetable-fritters-recipe'
   note: 'The pressed-disc shape, the rice-flour-only batter, and the fish-sauce-soy double marinade on the shrimp are the structural calls that hold across regional variants.'
 
+before_you_start:
+  - 'The sawsawan (vinegar-garlic-chili dip) needs a 20 minute steep before serving. Build it FIRST so the garlic and chili have time to mellow into the vinegar; freshly mixed sawsawan reads raw-garlic-sharp and undercuts the fried fritter.'
+  - 'Marinate the shrimp 10 to 30 minutes in fish sauce and soy. The salt diffuses into the muscle and is the only seasoning the shrimp gets; under-marinated shrimp read bland against the seasoned vegetable shell.'
+  - 'Use ice-cold water for the rice flour batter and mix it just before frying. Cold water keeps the starch granules from pre-gelatinizing; warm or rested batter goes gummy and the fritters fry stodgy rather than lacy.'
+  - 'Heat the oven to 95 degrees C with a wire rack on a sheet pan before the oil reaches frying temperature. Fritters move from the oil directly to the rack to hold while you fry the remaining batches; piling them on paper towel steams the shell and kills the crunch.'
+
 ingredients:
   - group: 'Phase 1, dipping sauce (sawsawan)'
     item: 'cane vinegar'

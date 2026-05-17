@@ -22,6 +22,12 @@ cuisine: 'Italian'
 course: 'side'
 diet: ['vegetarian']
 
+before_you_start:
+  - 'This dish requires 2 to 4 day old sourdough. If you only have fresh bread, tear it into chunks and dry on a sheet pan in a 120 C / 250 F oven for 20 minutes before starting, fresh moist bread turns to paste in the tomato-water soak.'
+  - 'Salt-cure the heirloom tomato chunks at 1 percent salt by weight 30 minutes before the bread soak. The cure liquid is the soaking medium for the bread, you cannot shortcut this and substitute plain water without losing the glutamate spine.'
+  - 'The final assembled salad needs a 20-minute rest at room temperature before serving so the bread hydrates evenly and the flavors integrate. Plan plating time accordingly.'
+  - 'This is a peak-summer recipe. Out-of-season supermarket tomatoes will not yield enough tomato water or carry enough flavor, do not attempt in winter with grocery-store fruit.'
+
 source:
   name: 'Adapted from Tuscan central-Italian home cooking, where panzanella (also panmolle, pan bagnato) is the canonical August-tomato bread salad eaten across Florence, Siena, and the rural farmhouse cooking of the Chianti and Maremma regions.'
   note: 'The dish has a structural rule older than the recipe: never throw away stale bread, and never throw away ripe-tomato water. The standard preparation soaks dry bread in cold water plus vinegar to rehydrate, drains, then tosses with raw tomato, onion, and basil. The version here pulls the bread soak away from plain water and toward the tomato-cure liquid produced when the heirloom flesh is salted; the bread is then carrying glutamate from the start rather than picking up only what leaches off raw tomato during the rest. Adding the charred-cherry-tomato component is a modern split (the canonical version is fully raw); the blistered tomato contributes Maillard and pyrazine notes that the raw fruit cannot, and the contrast between cured-raw and dry-charred flesh is the signature of the rebuilt dish.'

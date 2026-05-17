@@ -26,6 +26,11 @@ source:
   name: 'Adapted from the Central Mexican home cooking tradition (D.F., Puebla, Tlaxcala) where ensalada de nopales is everyday taqueria-and-fonda food, served as a side, a taco filling, or as a tostada topper.'
   note: 'The dish has two competing preparations: blanched nopales (the older method, where paddles are simmered in water with onion and tomatillo until the mucilage releases, then drained) and charred nopales (the comal method, where the slime is fixed in place by Maillard heat rather than rinsed away). Charred is the better dish; the smoke and the caramelization carry the salad in a way that boiled nopal cannot. Boiling produces a clean, mild, slippery cactus that depends entirely on the dressing for character; charring produces a vegetable that already tastes like something before any seasoning hits. The recipe below is the comal version.'
 
+before_you_start:
+  - 'Budget 8 to 10 minutes for glochid management before any cooking starts. The fine spines on a nopal paddle are the entire failure mode of cactus cookery; if a glochid lodges in a fingertip or in the salad, the dish is unpleasant to eat and hard to recover from. Scrape every paddle on both faces and both edges with the back of a knife or a vegetable peeler under good light, even if the paddles are sold pre-cleaned.'
+  - 'Build the dressing while the paddles char on the comal, not before. The Mexican oregano needs 2 to 3 minutes of contact with the lime acid to release its terpenoid aromatics, and the 9 minutes of total char time gives you exactly that bloom window. Building the dressing first and then waiting for the cactus wastes the bloom.'
+  - 'Plan to plate and eat within 20 minutes of mixing. The cactus releases additional water past that point and the salad turns watery; this is a service-window dish, not a make-ahead.'
+
 ingredients:
   - group: 'Phase 1, charred nopales'
     item: 'nopal paddles, fresh'

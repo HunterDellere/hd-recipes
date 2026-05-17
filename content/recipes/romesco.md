@@ -22,6 +22,11 @@ cuisine: 'Catalan'
 course: 'sauce'
 diet: ['vegetarian', 'vegan', 'gluten-free', 'dairy-free']
 
+before_you_start:
+  - 'Start the ñora pepper soak first. 20 minutes in hot water before anything else; the dried peppers must rehydrate fully so the flesh scrapes cleanly off the skin. Reserve the soaking liquid, it is the structural thinner for the sauce.'
+  - 'The finished sauce is best after a 2-hour rest at room temperature, so the smoked paprika, sherry vinegar, and toasted nut oils integrate. Plan to make it at least that far ahead of the meal; same-day morning for a dinner is ideal.'
+  - 'Source dried ñora peppers (Spanish or Mediterranean grocery, or online). The roasted red bell pepper substitute works but the sauce reads markedly more vegetal and less sweet; if substituting, lean harder on smoked paprika.'
+
 source:
   name: 'The Catalan canon (Tarragona and broader Catalonia, northeastern Spain). Documented as the canonical sauce for the calçotada (winter grilled spring onion festival) and the romescada (Catalan fish stew); stabilized in the modern form (toasted nuts, ñora peppers, charred tomato, garlic, sherry vinegar, smoked paprika, olive oil) in the 19th and early 20th centuries.'
   note: 'Two structural variants: the calçotada romesco is thicker and more concentrated (a dipping consistency for the grilled spring onions); the broader Catalan romesco is slightly thinner and more pourable (a sauce consistency for fish and grilled vegetables). The version here is the medium-body all-purpose form. Distinct from salbitxada (a Catalan cousin with more parsley and less smoked paprika) and from xató (a sauce-and-salad with the same logic but more anchovy and chili). All three are romesco family.'

@@ -27,6 +27,12 @@ source:
   url: ''
   note: 'The 118 °C / firm-ball caramel target and the salt-flake finish are non-negotiable; the chocolate temper is what distinguishes this from every supermarket millionaire bar.'
 
+before_you_start:
+  - 'Total time is 4 hours, the bulk is passive cooling between layers. The shortbread base needs 30 minutes at room temperature, the caramel layer needs 90 minutes to set firm enough to support the chocolate, and the tempered chocolate needs 60 minutes at cool room temperature (not the fridge) to bloom correctly.'
+  - 'Pull the butter out of the fridge 45 minutes ahead so it creams properly. Cold butter will not aerate the shortbread and the base reads dense.'
+  - 'A digital instant-read thermometer is non-negotiable for the caramel (118 C / firm-ball) and the chocolate temper (cool dark to 27 C then bring back to 31 to 32 C). Eyeballing the caramel produces either runny set or hard candy and untempered chocolate blooms gray within a day.'
+  - 'Line the 9-inch square pan with parchment slung over two sides for lift-out before any mixing begins. Trying to retrofit parchment under a baked base ruins the slab.'
+
 ingredients:
   - group: 'Phase 1, shortbread base'
     item: 'unsalted butter'

@@ -26,6 +26,12 @@ source:
   name: 'Adapted from the American autumn-orchard tradition'
   note: 'Apple scrap vinegar (sometimes called scrap cider vinegar) is the home-fermenter equivalent of the wild-yeast cider tradition; the same pattern produced commercial Bragg-style raw apple cider vinegar before it was industrialized.'
 
+before_you_start:
+  - 'This is a 4 to 6 week ferment, not a same-day recipe. Active hands-on time is about 20 minutes spread across the cure; the rest is passive. Pick a warm dark spot (21 to 27°C / 70 to 80°F) where the jar can sit undisturbed for over a month before you commit to starting.'
+  - 'Use organic apples. Conventional fruit is sprayed with surface fungicides that kill the wild yeast on the skin that drives the first-stage fermentation. Starting with non-organic scraps is the single most common failure mode for this recipe.'
+  - 'Cover the jar with a kitchen towel or coffee filter and rubber band, never a sealed lid. The fermentation needs air exchange in both stages (yeast in stage one, acetobacter in stage two); a closed lid produces CO2 pressure that can crack glass and starves the acetobacter of the oxygen it needs to convert ethanol to acetic acid.'
+  - 'Stir daily for the first 7 days with a clean wooden spoon to keep the apple scraps submerged. Floating pieces are the entry point for surface mold, which ends the batch.'
+
 ingredients:
   - item: 'apple scraps (cores, peels, bruised flesh) from organic apples'
     qty: 800

@@ -26,6 +26,11 @@ source:
   name: 'Adapted from the Levantine mezze tradition; the dish is rural Lebanese-Syrian-Palestinian peasant cooking, built to repurpose stale khubz alongside whatever raw vegetables and herbs the garden produced.'
   note: 'The defining axis is sour: sumac, pomegranate molasses, and lemon stack three different sour molecules (malic-acid-rich anthocyanins from the sumac drupe, citric-and-tartaric-rich molasses, and lemon citric acid) so no one acid carries the dish alone. The bread is mandatory; without it, the dish is a chopped salad, not fattoush.'
 
+before_you_start:
+  - 'The pita needs to be day-old or older. Fresh pita has too much interior moisture and crisps unevenly in the oven. If you only have fresh pita, leave it uncovered on a rack for 4 to 6 hours before starting, or buy the bread the day before.'
+  - 'Build the dressing first, then salt the tomatoes, then prep the rest of the vegetables. The dressing needs 5 minutes for the sumac to hydrate in the lime acid, and the tomatoes need 10 minutes draining in the colander to firm up and release juice (which goes back into the dressing as the hidden umami move). These two waits run in parallel with the cucumber, radish, romaine, and herb prep.'
+  - 'Add the toasted pita to the salad only at the moment of service. The dish is engineered around the audible bread, and the pita softens into soggy bread salad within 10 minutes of meeting the dressing.'
+
 ingredients:
   - group: 'Phase 1, toasted pita'
     item: 'day-old pita bread (Lebanese-style, thinner)'
