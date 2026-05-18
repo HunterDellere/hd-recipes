@@ -34,6 +34,50 @@ else { window.__enhanceInit = true; (function () {
     });
   }
 
+  // ── Mobile hamburger menu ─────────────────────────────────────────────
+  // The hamburger button collapses Explore/Pantry/Saved/Settings into a
+  // dropdown on viewports where the inline links don't fit. Outside taps,
+  // Escape, and link activation all dismiss it; aria-expanded mirrors state.
+  const menuBtn = document.getElementById('topnav-menu-btn');
+  const menu = document.getElementById('topnav-menu');
+  if (menuBtn && menu) {
+    function setMenuOpen(open) {
+      menu.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.classList.toggle('topnav-menu-locked', open);
+    }
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = menu.classList.contains('open');
+      setMenuOpen(!open);
+    });
+    // Dismiss on link click — let the link navigate, but close the panel first
+    // so the back button doesn't return to a still-open menu.
+    menu.addEventListener('click', (e) => {
+      if (e.target.closest('a')) setMenuOpen(false);
+    });
+    // Outside click dismisses.
+    document.addEventListener('click', (e) => {
+      if (!menu.classList.contains('open')) return;
+      if (menu.contains(e.target) || menuBtn.contains(e.target)) return;
+      setMenuOpen(false);
+    });
+    // Escape dismisses.
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        setMenuOpen(false);
+        menuBtn.focus();
+      }
+    });
+    // Resize past the mobile breakpoint clears state — otherwise the panel
+    // stays half-styled after rotating a tablet from portrait to landscape.
+    const mq = window.matchMedia('(min-width: 861px)');
+    const onMqChange = () => { if (mq.matches) setMenuOpen(false); };
+    if (mq.addEventListener) mq.addEventListener('change', onMqChange);
+    else if (mq.addListener) mq.addListener(onMqChange);
+  }
+
   // ── Share button (Web Share API + clipboard fallback) ─────────────────
   document.querySelectorAll('[data-share]').forEach(btn => {
     const labelEl = btn.querySelector('[data-share-label]');

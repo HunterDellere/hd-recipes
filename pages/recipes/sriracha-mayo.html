@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Sriracha mayo (yum yum sauce variant)","description":"Sriracha mayo / yum yum sauce, mayo, sriracha, rice vinegar, garlic, sesame oil. Versatile Asian-American dipping and drizzling sauce.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/sriracha-mayo.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-16","recipeYield":"8 servings","recipeCuisine":"Asian-American","recipeCategory":"sauce","keywords":"condiment, no-cook, quick, spicy, emulsion","prepTime":"PT3M","totalTime":"PT18M","recipeIngredient":["150 g mayonnaise (full-fat, real-egg)","30 g sriracha sauce","8 ml rice vinegar (unseasoned)","5 g granulated sugar","3 g toasted sesame oil","1 each garlic clove, grated to paste on a microplane","0.5 g fine sea salt"],"recipeInstructions":[{"@type":"HowToStep","text":"In a small bowl whisk together the 150 g / ½ cup plus 2 tbsp mayonnaise, 30 g / 2 tbsp sriracha, 8 ml / 1½ tsp rice vinegar, 5 g / 1 tsp sugar, 3 g / ½ tsp toasted sesame oil, the 1 grated garlic clove, and the 0.5 g pinch salt."},{"@type":"HowToStep","text":"Whisk vigorously for 30 seconds until the sauce is a uniform coral-pink. Streaks of red mean undermixed; the sauce should look like a single color, not a swirl."},{"@type":"HowToStep","text":"Taste. Heat-tolerant cooks will want more sriracha (up to 50 g for a vivid red, near-spicy version). Heat-averse will pull back to 20 g for a gentler pink-toned sauce. The vinegar-sugar balance is fixed; adjust only the sriracha and salt to your palate."},{"@type":"HowToStep","text":"Transfer to a sealed jar. Refrigerate at least 15 minutes, the garlic mellows from sharp-raw to integrated-pungent, and the heat softens slightly. Holds 2 weeks refrigerated; the color may darken slightly as the sriracha oxidizes but flavor stays stable."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Sriracha mayo (yum yum sauce variant)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/sriracha-mayo.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -524,7 +530,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

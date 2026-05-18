@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Olive Garden Italian dressing (homemade copycat)","description":"Olive Garden Italian dressing copycat recipe, homemade creamy Italian vinaigrette with parmesan, herbs, garlic, lemon, honey. Pourable salad dressing.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/olive-garden-italian-dressing.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-17","recipeYield":"12 servings","recipeCuisine":"Italian-American","recipeCategory":"sauce","keywords":"condiment, copycat, no-cook, quick, emulsion","prepTime":"PT10M","totalTime":"PT70M","recipeIngredient":["90 ml white wine vinegar","120 ml extra-virgin olive oil","60 ml neutral oil (canola or grapeseed)","30 ml water","20 g honey","25 g parmigiano reggiano, finely grated on a microplane","1 each garlic clove, grated on a microplane to a paste","10 ml fresh lemon juice","2 g dried oregano","1 g dried basil","1 g dried parsley","0.5 g red pepper flakes","3 g fine sea salt","1 g freshly cracked black pepper","1 g onion powder","5 g Dijon mustard"],"recipeInstructions":[{"@type":"HowToStep","text":"In a tall narrow container (deli quart or wide-mouth pint jar) combine the 90 ml / 6 tbsp white wine vinegar, 30 ml / 2 tbsp water, 20 g / 1 tbsp honey, 10 ml / 2 tsp lemon juice, the 1 grated garlic clove paste, 5 g / 1 tsp Dijon mustard, 3 g / ½ tsp salt, 1 g / ½ tsp black pepper, 1 g / ½ tsp onion powder, 2 g / 1 tsp dried oregano, 1 g / ½ tsp dried basil, 1 g / ½ tsp dried parsley, and 0.5 g / ¼ tsp red pepper flakes. Whisk briefly to dissolve the honey and salt."},{"@type":"HowToStep","text":"Add the 25 g / ¼ cup grated parmigiano reggiano. Whisk into the vinegar phase, the cheese should disperse rather than clump; if it clumps, the parmesan was grated too coarsely and the dressing will benefit from a 10-second pulse with an immersion blender."},{"@type":"HowToStep","text":"Combine the 120 ml / ½ cup extra-virgin olive oil and 60 ml / ¼ cup neutral oil in a measuring cup. Drizzle the combined oils into the vinegar phase in a slow steady stream while whisking continuously, or pulse with an immersion blender. The dressing should emulsify into a uniform creamy pale-yellow liquid; if it breaks, an extra ½ tsp of Dijon mustard plus 30 seconds of vigorous re-whisking will rebuild it."},{"@type":"HowToStep","text":"Taste. Adjust by quarter-teaspoon increments: more honey if it reads sharp, more vinegar if it reads heavy, more salt if it reads flat. The chain calibration is herby-tangy-slightly-sweet with the parmesan as a faint creamy background; aim there."},{"@type":"HowToStep","text":"Cover and refrigerate at least 1 hour before serving, the dried herbs need time to hydrate in the vinegar phase and the garlic needs to mellow. Holds 1 week refrigerated in a sealed jar. Shake or re-whisk before each use, the dressing slowly separates as the parmesan settles."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Olive Garden Italian dressing (homemade copycat)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/olive-garden-italian-dressing.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -598,7 +604,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

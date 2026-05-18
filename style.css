@@ -276,6 +276,30 @@ pre code { background: none; padding: 0; }
 .tt-sun { display: inline; } .tt-moon { display: none; }
 [data-theme="dark"] .tt-sun { display: none; } [data-theme="dark"] .tt-moon { display: inline; }
 
+/* ── topnav menu (mobile hamburger) ───────────────────────
+   Desktop: the menu wrapper is transparent (display: contents) so its
+   children sit inline in the .topnav-right flex row exactly as before.
+   The hamburger button stays hidden.
+   Mobile: the menu collapses into a dropdown panel toggled by the
+   hamburger button. The mobile rules live in the responsive section. */
+.topnav-menu { display: contents; }
+.topnav-menu-btn {
+  display: none;
+  background: none; border: 1px solid transparent; border-radius: var(--r-1);
+  padding: var(--s-2) var(--s-3); cursor: pointer; color: var(--ink-soft);
+  min-width: 40px; min-height: 40px;
+  align-items: center; justify-content: center;
+  transition: color var(--d-fast), border-color var(--d-fast), background var(--d-fast);
+}
+.topnav-menu-btn:hover { border-color: var(--rule); color: var(--accent); background: var(--accent-soft); }
+.topnav-menu-btn svg { width: 22px; height: 22px; display: block; }
+.topnav-menu-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+/* Cross fade between hamburger and close icons via aria-expanded state. */
+.topnav-menu-btn .tm-open { display: block; }
+.topnav-menu-btn .tm-close { display: none; }
+.topnav-menu-btn[aria-expanded="true"] .tm-open { display: none; }
+.topnav-menu-btn[aria-expanded="true"] .tm-close { display: block; }
+
 /* ── reading progress bar ────────────────────────────────── */
 .reading-progress {
   position: sticky; top: var(--nav-h); height: 2px; z-index: 99;
@@ -1658,9 +1682,51 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   .step-body { font-size: 16px; }
   .step-num { width: 28px; height: 28px; line-height: 28px; font-size: 13px; }
   .step-item { grid-template-columns: 28px minmax(0, 1fr); gap: .85rem; padding: .9rem 0; }
-  .topnav { padding: 0 1rem; }
-  .topnav-right { gap: 1rem; }
-  .topnav-back { display: none; }   /* Random + theme are enough on mobile */
+  .topnav { padding: 0 1rem; position: sticky; }
+  .topnav-right { gap: .5rem; }
+  /* All non-essential nav items move into the hamburger panel on mobile.
+     Random + theme toggle stay inline; the rest collapse into the menu. */
+  .topnav-menu {
+    display: none;
+    position: fixed;
+    top: var(--nav-h);
+    right: 0; left: auto;
+    min-width: min(280px, 92vw);
+    max-width: 92vw;
+    flex-direction: column;
+    gap: .15rem;
+    background: var(--bg-elev);
+    border: 1px solid var(--rule);
+    border-top: none;
+    border-radius: 0 0 var(--r-2) var(--r-2);
+    padding: .5rem;
+    box-shadow: var(--shadow-md);
+    z-index: 95;
+    /* iOS notch-aware so the panel never sits under the safe-area inset. */
+    margin-right: max(0px, env(safe-area-inset-right));
+  }
+  .topnav-menu.open { display: flex; }
+  .topnav-menu a,
+  .topnav-menu .topnav-back,
+  .topnav-menu .topnav-saved,
+  .topnav-menu .topnav-settings {
+    display: block !important;
+    width: 100%;
+    padding: .75rem 1rem;
+    min-height: 44px;
+    color: var(--ink);
+    border-radius: var(--r-1);
+    font-size: 1rem;
+    text-align: left;
+  }
+  .topnav-menu a[aria-current="page"] {
+    color: var(--accent);
+    background: var(--accent-soft);
+    font-weight: 600;
+  }
+  .topnav-menu-btn { display: inline-flex; }
+  /* Lock body scroll while the menu is open so the dropdown feels like a sheet. */
+  body.topnav-menu-locked { overflow: hidden; }
   .ing-controls { padding: .75rem 1rem; }
   .related-cards, .rl-cards { grid-template-columns: 1fr; }
   .adj-nav { flex-direction: column; gap: .5rem; }
@@ -4086,9 +4152,8 @@ body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color:
 .topnav-saved:hover, .topnav-settings:hover {
   color: var(--accent); background: var(--accent-soft);
 }
-@media (max-width: 700px) {
-  .topnav-saved, .topnav-settings { display: none; }
-}
+/* Mobile: these collapse into the hamburger menu — handled in the
+   shared .topnav-menu rule in the responsive section. */
 
 /* ── pantry-match page ─────────────────────────────────────────────── */
 .pantry-match {

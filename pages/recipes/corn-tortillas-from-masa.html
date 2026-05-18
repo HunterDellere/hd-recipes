@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Corn tortillas from masa","description":"Homemade corn tortillas from masa harina: 3 ingredients, 20 minutes, dramatically better than supermarket. The structural bread of Mexican cooking.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/corn-tortillas-from-masa.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-17","recipeYield":"4 servings","recipeCuisine":"Mexican","recipeCategory":"bread","keywords":"bread, pantry, quick","prepTime":"PT10M","cookTime":"PT12M","totalTime":"PT22M","recipeIngredient":["240 g masa harina (Maseca or comparable)","3 g fine sea salt","270 g warm water (about 38°C / 100°F)"],"recipeInstructions":[{"@type":"HowToStep","text":"Mix the dough. In a medium bowl, whisk together the 240 g masa harina and 3 g fine sea salt. Pour in the 270 g warm water; mix with a wooden spoon until a shaggy dough forms. Knead by hand 2 to 3 minutes inside the bowl until the dough is smooth, uniform, and just slightly tacky. Test by squeezing a small piece; it should hold together cleanly without crumbling and without sticking to your fingers. If too dry (crumbles at the edges), add water 5 g at a time; if too wet (sticks to the bowl), add masa harina 5 g at a time."},{"@type":"HowToStep","text":"Rest the dough. Cover the bowl with a damp kitchen towel; rest 15 minutes (do this while the comal heats). The rest hydrates the masa particles fully and produces a more pliable dough that presses thinner without tearing. Skipping the rest produces tortillas that crack at the edges and tear during handling."},{"@type":"HowToStep","text":"Heat the comal. While the dough rests, heat a comal or heavy dry skillet (cast iron, carbon steel, or stainless) over medium-high heat 5 minutes until the surface reads 230 to 250°C / 450 to 480°F. Test with a few drops of water; they should sizzle and evaporate within 2 seconds. The comal must be hot enough to set the tortilla surface immediately on contact (which is what produces the puff) and not so hot that the surface burns before the interior cooks."},{"@type":"HowToStep","text":"Divide and press. Divide the dough into 12 equal portions (about 40 g each); roll each into a smooth ball, returning the balls to the covered bowl as you work so they do not dry out. Working one at a time: place a ball between two pieces of plastic (cut zip-top bag or wax paper) on a tortilla press or under a flat heavy skillet. Press firmly to a 12 cm / 5 inch round about 2 mm thick. Peel off the top plastic, flip the tortilla onto your open palm, and peel off the second plastic."},{"@type":"HowToStep","text":"Griddle the tortilla. Slide the pressed tortilla onto the hot comal in one smooth motion. Cook 20 to 30 seconds (the edges should just start to lift and dry); flip with a thin spatula. Cook 45 to 60 seconds (the tortilla should start to puff; press the center gently with a clean folded towel or a fish spatula to encourage the steam to expand the tortilla into a full puff). Flip a third time; cook 15 to 20 seconds. The completed tortilla should be flexible, with light brown spots on both sides and a slight puff that collapses on cooling."},{"@type":"HowToStep","text":"Warm and steam. Transfer the cooked tortilla immediately to a tortilla warmer (or wrap in a clean kitchen towel inside a covered bowl). The steaming step is structural; air-cooled tortillas dry out in minutes and crack. Repeat with the remaining dough balls; the tortillas can stack in the warmer with the towel between them. Serve warm. The tortillas are best within 30 minutes of cooking; they hold acceptably for 2 hours in the warmer."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Corn tortillas from masa","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/corn-tortillas-from-masa.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -484,7 +490,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

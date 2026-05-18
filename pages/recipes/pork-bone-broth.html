@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Pork bone broth (zhu gu tang)","description":"Pork bone broth: blanch then 4-6 hour clear simmer (Chinese style). Modifications cover milky tonkotsu-style ramen broth and herbal Cantonese soups.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/pork-bone-broth.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-09","recipeYield":"8 servings","recipeCuisine":"Chinese","recipeCategory":"sauce","keywords":"pork, pantry, umami, make-ahead, weekend-project, freezer-friendly","prepTime":"PT15M","cookTime":"PT360M","totalTime":"PT380M","recipeIngredient":["1500 g pork bones (neck, ribs, leg, knuckle, mix is best)","3000 ml cold water (for blanch)","20 g fresh ginger, smashed (for blanch)","30 ml Shaoxing wine (for blanch)","3500 ml cold water (fresh, after blanch)","25 g fresh ginger, smashed","4 each scallion whites","1 each yellow onion, halved (skin on)","4 each dried jujube (red dates)"],"recipeInstructions":[{"@type":"HowToStep","text":"Blanch the bones. Combine the 1500 g pork bones, 3000 ml / 12 cups cold water, 20 g smashed ginger, and 30 ml / 2 tbsp Shaoxing wine in an 8-quart stockpot. Bring to a boil over high heat; brown-gray scum will rise aggressively. Boil hard for 5 minutes, this purges blood and surface impurities that would cloud the stock. Drain into a colander, discard the blanching liquid, and rinse the bones briefly under cold water to remove any clinging scum."},{"@type":"HowToStep","text":"Start the simmer. Return the rinsed bones to the cleaned pot. Add the 3500 ml / 14 cups fresh cold water, 25 g smashed ginger, 4 scallion whites, and the optional 1 onion and 4 jujube. Bring slowly to the threshold of a simmer over medium heat (about 90°C / 195°F)."},{"@type":"HowToStep","text":"Skim. Once at simmer-threshold, gray foam will appear briefly, much less than the blanch produced, and a clear fat layer will develop. Skim the foam with a flat spoon for 5 to 10 minutes; do not skim the clear fat. Reduce heat to maintain a bare tremor of a simmer (just below 90°C, no active bubbles). The blanch step did the heavy purification work; this skim is fine-tuning."},{"@type":"HowToStep","text":"Simmer 4 to 6 hours. The broth will reduce by 25 to 30%, deepen from clear to pale amber, and develop noticeable body from gelatin extraction. Cover loosely with the lid askew. Do not boil, the entire point of the clear-broth tradition is keeping the heat below boiling so the broth stays glassy."},{"@type":"HowToStep","text":"Strain. Lift bones and aromatics out with tongs. Strain the broth through a fine-mesh sieve into a second pot, then a second time through cheesecloth set inside the sieve for absolute clarity."},{"@type":"HowToStep","text":"Cool quickly. Divide between wide shallow pans set in an ice bath, stirring every 5 minutes. Refrigerate. Once cold, the fat layer that solidifies on top can be lifted off (rendered pork fat is the foundation of much southern Chinese stir-fry; reserve in a separate container) or left in for richer downstream uses."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Pork bone broth (zhu gu tang)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/pork-bone-broth.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -549,7 +555,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

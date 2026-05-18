@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Evergreen winter simmer pot (pine, citrus, bay)","description":"Evergreen winter simmer pot, pine, rosemary, grapefruit, bay. Whole-house fragrance with the chemistry of a winter forest.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/evergreen-winter-simmer-pot.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-16","recipeYield":"1 servings","recipeCategory":"snack","keywords":"home-fragrance, simmer-pot, non-edible, citrus","prepTime":"PT5M","cookTime":"PT480M","totalTime":"PT485M","recipeIngredient":["30 g fresh pine, fir, or spruce tips (food-safe species only)","15 g fresh rosemary","4 each dried bay leaves, crushed lightly to release the oils","10 g fresh thyme","80 g grapefruit peel (from 1 grapefruit)","1 each lemon peel, peel in long strips","15 each whole juniper berries, lightly crushed","10 each whole black peppercorns","1500 ml water"],"recipeInstructions":[{"@type":"HowToStep","text":"Verify your evergreen source. Pine (especially white pine, Pinus strobus), fir (Abies), and spruce (Picea) needles are non-toxic and aromatic; yew (Taxus) is toxic and must never go in a kitchen pot. If the tree came from a commercial Christmas tree lot, the boughs were likely sprayed with anti-desiccant chemicals, these are not food-grade but are acceptable for non-edible simmer pots since you will not consume the liquid. If you are uncertain about the species, do not use it. Cedar (Thuja, eastern arborvitae) is also non-toxic and gives a distinctive sharp profile."},{"@type":"HowToStep","text":"In a 1.5 to 2 L stainless or enameled saucepan, combine the 30 g pine sprigs, 15 g rosemary, 4 crushed bay leaves, 10 g fresh thyme, the grapefruit peel, the lemon peel, the 15 crushed juniper berries, and the 10 black peppercorns."},{"@type":"HowToStep","text":"Add the 1500 ml / 6 cups water, everything should be submerged with 5 cm / 2 inches headspace. Bring to a bare simmer over medium heat, then drop to the lowest setting. Hold at the lazy simmer (occasional bubbles, never rolling) for 8 to 12 hours."},{"@type":"HowToStep","text":"Check the water level every 2 hours; top up with hot water from a kettle when below the halfway point. The pot smells strongest in the first 3 hours as the pine and rosemary terpenes hit the air at high volatility; after that it settles into a softer cedar-citrus register that lasts through the evening."},{"@type":"HowToStep","text":"Compost the solids and rinse the pot when done. The pine resin can leave a sticky film on the pot interior, wash with hot soapy water and a stiff brush while the pot is still warm. Cold pine resin is much harder to remove."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Evergreen winter simmer pot (pine, citrus, bay)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/evergreen-winter-simmer-pot.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -530,7 +536,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

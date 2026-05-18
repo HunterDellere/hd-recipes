@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Taro milk tea with boba (real taro, no powder)","description":"Taro milk tea with boba made from real steamed taro, no taro powder or food coloring. Nutty, sweet, naturally pale lavender milk tea.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/taro-milk-tea-with-boba.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-16","recipeYield":"2 servings","recipeCuisine":"Taiwanese","recipeCategory":"drink","keywords":"boba, bubble-tea, milk-tea, tropical","prepTime":"PT15M","cookTime":"PT30M","totalTime":"PT50M","recipeIngredient":["300 g fresh taro root, peeled with gloves on, cut to 2 cm / ¾ inch chunks","50 g granulated sugar","1 g fine sea salt","30 g sweetened condensed milk","6 g jasmine green tea (loose leaf)","200 ml water at 85°C (just below boiling)","300 ml whole milk","160 g cooked tapioca pearls (or crystal boba)","to taste ice cubes"],"recipeInstructions":[{"@type":"HowToStep","text":"Wear gloves while peeling raw taro. The corm contains calcium oxalate crystals that irritate skin and throat, oil your hands as a backup if gloves are unavailable, since the oxalate is fat-soluble. Peel the taro and cut into 2 cm / ¾ inch chunks. Rinse briefly to wash off any released oxalate from the cut surface."},{"@type":"HowToStep","text":"Steam the taro over rising water for 20 to 22 minutes until completely tender, a fork should slip through with no resistance. Steaming, not boiling, preserves the gentle nutty flavor; boiled taro absorbs water and the flavor goes flat. The flesh will be ivory with faint purple veining; do not expect vivid lavender."},{"@type":"HowToStep","text":"While still warm, transfer the steamed taro to a bowl. Add the 50 g / ¼ cup sugar, the 1 g pinch salt, and the 30 g / 1½ tbsp sweetened condensed milk. Mash with a fork into a smooth thick paste, leave some small chunks for textural interest, or process completely smooth depending on preference. The taro paste should taste like a sweet steamed potato with a subtle perfume; if it tastes bland the taro was old or under-steamed."},{"@type":"HowToStep","text":"Tea concentrate. Pour the 200 ml / ¾ cup plus 2 tbsp water at 85°C over the 6 g / 1 tbsp jasmine green tea. Steep 3 minutes, short steep at sub-boiling temperature pulls jasmine aroma without the catechin bitterness that a longer hot steep would produce. Strain. Cool to room temperature; hot tea breaks the dairy emulsion when poured into milk."},{"@type":"HowToStep","text":"Build the drink. In a tall glass, place 80 g / ½ cup cooked warm tapioca pearls in the bottom. Spoon 90 g / ⅓ cup of the warm taro paste over the pearls. Pour 150 ml / ⅔ cup cold whole milk over the taro. Add a generous handful of ice (60 to 80 g). Top with 100 ml / ½ cup of the cooled tea concentrate. The layers will visually stratify briefly, then begin to merge."},{"@type":"HowToStep","text":"Serve with a wide boba straw and a long spoon. The eater stirs everything together, the taro paste dissolves into the milk-tea, the pearls come up the straw in clumps, the color settles into a pale beige-lavender. This is the honest taro milk tea; the violet bubble-tea-shop version is artificial dye applied to taro powder."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Taro milk tea with boba (real taro, no powder)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/taro-milk-tea-with-boba.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -546,7 +552,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

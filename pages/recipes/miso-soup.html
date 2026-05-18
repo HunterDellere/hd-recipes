@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Miso soup (miso-shiru)","description":"Miso soup the right way: miso added off-heat, dashi base never boiled with miso, the tofu-and-wakame finish, and the rule that separates a working miso soup from a flat one.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/miso-soup.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-09","recipeYield":"4 servings","recipeCuisine":"Japanese","recipeCategory":"side","keywords":"soup, umami, weeknight","prepTime":"PT5M","cookTime":"PT12M","totalTime":"PT17M","recipeIngredient":["800 ml kombu-katsuobushi dashi (niban or ichiban)","200 g silken tofu","4 g dried wakame","60 g awase miso (or 50/50 mix white and red)","15 g scallion, thinly sliced"],"recipeInstructions":[{"@type":"HowToStep","text":"Hydrate the wakame. Place the 4 g dried wakame in a small bowl and cover with cold water. Let stand 5 minutes; the flakes will swell to roughly 7 to 10 times their dried volume and turn vivid emerald. Drain through a small sieve and squeeze gently; do not press hard. Set aside."},{"@type":"HowToStep","text":"Heat the dashi. In a 2-quart saucepan, bring the 800 ml dashi to 80°C / 175°F (small bubbles forming at the edges, no rolling boil). If you are using freshly-strained ichiban dashi, it should already be near this temperature; if niban or refrigerated dashi, warm gradually over medium-low heat. Do not boil the dashi vigorously; the kombu and katsuobushi flavors are heat-sensitive even after extraction."},{"@type":"HowToStep","text":"Add the tofu. Slide the 200 g cubed silken tofu gently into the dashi. The cubes should be just submerged; bring the pot back up to 80°C and hold for 1 minute to warm the tofu through. Do not boil ,  boiling fractures the silken curd into ragged shreds. The cubes will look slightly translucent at the edges when warmed."},{"@type":"HowToStep","text":"Add the wakame. Scatter the 4 g rehydrated wakame across the surface of the dashi. Hold for 30 seconds to warm through; do not stir aggressively, the wakame is delicate and excess agitation tears the leaves."},{"@type":"HowToStep","text":"Whisk in the miso off-heat. Pull the saucepan off the burner. Place a small fine-mesh sieve into the dashi and add the 60 g miso into the sieve. Press the miso through the sieve with the back of a small spoon or whisk while moving the sieve in slow circles through the dashi; the sieve breaks up clumps and ensures the miso dissolves evenly without grainy chunks. Alternatively, ladle 60 ml of hot dashi into a small bowl, whisk the miso into the bowl until smooth, then pour back into the pot. The miso should fully dissolve in 30 seconds; the dashi will turn from clear to cloudy-tan-brown. Do not return to a boil under any circumstances. Boiling drives off the volatile esters that miso adds and dulls the umami; this is the single rule that separates a working miso soup from a flat one."},{"@type":"HowToStep","text":"Serve immediately. Ladle into 4 small bowls (200 ml each). Sprinkle the sliced scallion greens on top of each bowl as a finishing aromatic. Serve as part of a washoku meal ,  the standard accompaniment is a bowl of plain Japanese rice and one or two banchan or okazu (a piece of grilled fish, a small salad, a quick-pickled cucumber). The miso soup goes from the kitchen to the table within 2 minutes; reheating it to a boil ruins the flavor, and a tepid bowl of miso soup is one of the saddest things in a Japanese kitchen."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Miso soup (miso-shiru)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/miso-soup.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -510,7 +516,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
