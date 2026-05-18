@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Tahini-yogurt sauce","description":"Tahini-yogurt sauce: tahini, yogurt, lemon, garlic, water. The 5-ingredient Levantine drizzle for roasted vegetables, falafel, kebabs, grain bowls, raw vegetables, and grilled bread.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/tahini-yogurt-sauce.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-15","recipeYield":"8 servings","recipeCuisine":"Levantine","recipeCategory":"sauce","keywords":"no-cook, quick, pantry, make-ahead","prepTime":"PT5M","totalTime":"PT5M","recipeIngredient":["120 g tahini (well-stirred, smooth not separated)","100 g whole-milk Greek yogurt (or strained whole-milk yogurt)","30 g fresh lemon juice","6 g garlic clove, peeled, finely grated on a microplane or pounded to a paste with the salt","4 g fine sea salt","60 g cold water (or ice water)"],"recipeInstructions":[{"@type":"HowToStep","text":"In a medium bowl, combine the 120 g / ½ cup tahini, 30 g / 2 tbsp lemon juice, 6 g / 1 to 2 grated garlic cloves, and 4 g / ¾ tsp salt. Whisk vigorously with a wooden spoon or stiff whisk; the mixture will seize and turn pasty within 10 seconds, going from a loose tahini cream to a thick clay-like paste. This seize is structural and expected; it is the tahini protein and starch reacting to the acid and water in the lemon juice. Do not panic; do not add oil; do not add more tahini."},{"@type":"HowToStep","text":"Add the 100 g / ½ cup yogurt and whisk to combine; the mixture will loosen significantly and become a thick spoonable cream. The yogurt water content reverses some of the seize and the dairy fat softens the tahini bitterness; the bowl will smell of garlic and lemon and the texture will look like soft hummus."},{"@type":"HowToStep","text":"Add the 60 g / ¼ cup cold water in a steady stream while whisking continuously. The sauce will thin smoothly to a pourable consistency, slightly thicker than heavy cream and just thick enough to coat the back of a spoon and pour off in a slow ribbon. The cold-water addition is what breaks any remaining tahini seize and gives the sauce its characteristic glossy appearance. If the sauce is too thick for the application (drizzling vs dipping), add water 1 tbsp at a time; if too thin, whisk in 1 tbsp tahini."},{"@type":"HowToStep","text":"Taste and adjust: tahini-yogurt sauce should read tahini-forward with bright lemon, gentle garlic, and clean salt; the yogurt should be background body, not foreground tang. If flat, an extra 1 g / pinch of fine sea salt and 5 g / 1 tsp lemon juice; if too aggressive (too garlicky or too sharp), more yogurt or a pinch of sugar to round the finish. Serve immediately or refrigerate up to 4 days. Drizzle over roasted vegetables, falafel, shawarma, kebabs, grain bowls, fattoush and chopped salads, fresh raw vegetables, grilled bread, fried eggplant, hummus and other dip platters, soft-boiled eggs, or thinned with more water as a dressing for leafy salads."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Tahini-yogurt sauce","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/tahini-yogurt-sauce.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -533,7 +539,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

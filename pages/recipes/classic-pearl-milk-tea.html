@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Classic pearl milk tea (zhēn zhū nǎi chá)","description":"Classic Taiwanese pearl milk tea, the original 1980s formula. Strong black tea, milk, simple syrup, chewy tapioca pearls. The boba template.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/classic-pearl-milk-tea.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-16","recipeYield":"2 servings","recipeCuisine":"Taiwanese","recipeCategory":"drink","keywords":"boba, bubble-tea, milk-tea","prepTime":"PT5M","cookTime":"PT8M","totalTime":"PT15M","recipeIngredient":["120 ml water","120 g granulated sugar","10 g strong black tea (Assam CTC or English Breakfast)","360 ml boiling water","160 g cooked black tapioca pearls","240 ml cold whole milk","to taste ice cubes"],"recipeInstructions":[{"@type":"HowToStep","text":"Build simple syrup. Combine the 120 ml / ½ cup water and 120 g / ½ cup sugar in a small saucepan. Bring to a simmer, stir until sugar fully dissolves (about 90 seconds), then pull off heat. Cool to room temperature. This is enough syrup for 6 drinks; it holds 2 weeks in the refrigerator."},{"@type":"HowToStep","text":"Brew the tea concentrate. Pour the 360 ml / 1½ cups boiling water over the 10 g / 2 tbsp black tea in a heatproof jug. Steep 5 minutes, longer than usual because milk and ice will dilute heavily. Strain. Cool to room temperature; hot tea breaks dairy emulsions and dilutes the cold drink unevenly."},{"@type":"HowToStep","text":"Build the drink. Spoon 80 g / ⅓ cup of the warm cooked tapioca pearls into the bottom of each of two tall glasses (about 400 ml / 14 oz). Drizzle 2 tbsp of the cooled simple syrup over the pearls in each glass, the pearls absorb sweetness directly, which is part of the textural pleasure."},{"@type":"HowToStep","text":"Pour 120 ml / ½ cup cold whole milk into each glass over the pearls. Add a generous handful of ice (60 to 80 g per glass), about 5 to 6 cubes."},{"@type":"HowToStep","text":"Pour 180 ml / ¾ cup of the cooled tea concentrate down the inside wall of each glass. The tea pools above the milk briefly, then they begin to merge from the bottom up as the ice melts and shifts the column. Serve immediately with a wide boba straw."},{"@type":"HowToStep","text":"The eater stirs everything together at the table. A well-built classic pearl milk tea should be a deep tan color (not pale beige, that is undertea), distinctly sweet but not cloying (you should taste tea bitter under the sweet), and chewy with pearls coming up the straw 3 to 4 at a time."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Classic pearl milk tea (zhēn zhū nǎi chá)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/classic-pearl-milk-tea.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -534,7 +540,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

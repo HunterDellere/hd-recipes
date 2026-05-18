@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Maple-cider vinaigrette","description":"Maple-cider vinaigrette: apple cider vinegar, dark maple syrup, whole-grain mustard, shallot, olive oil. The autumn-American dressing for grain salads, roasted vegetables, and warm chicken plates.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/maple-cider-vinaigrette.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-10","recipeYield":"8 servings","recipeCuisine":"American","recipeCategory":"sauce","keywords":"pantry, make-ahead","prepTime":"PT5M","totalTime":"PT5M","recipeIngredient":["45 g apple cider vinegar, unfiltered","22 g maple syrup, Grade A dark / robust","18 g whole-grain mustard","22 g shallot, microplaned, peeled, microplaned to a paste","3 g kosher salt","0.5 g black pepper, freshly cracked","120 g extra-virgin olive oil"],"recipeInstructions":[{"@type":"HowToStep","text":"In a small bowl or a wide-mouth jar, combine the 45 g / 3 tbsp apple cider vinegar, the 22 g / 1½ tbsp maple syrup, the 18 g / 1 tbsp whole-grain mustard, the 22 g / 1 medium microplaned shallot, the 3 g / ¾ tsp kosher salt, and the 0.5 g / ¼ tsp cracked black pepper. Whisk vigorously for 15 to 20 seconds; the salt fully dissolves, the mustard distributes evenly, and the shallot mucilage starts to thicken the mixture. Salt always goes into the acid phase first, never into the oil phase; salt does not dissolve in oil and will read as gritty hot spots if added at the end."},{"@type":"HowToStep","text":"While whisking constantly with one hand, stream in the 120 g / ½ cup + 1 tsp olive oil with the other in a thin steady drizzle (5 to 10 seconds for the full pour, not faster). The slow oil addition gives the mustard mucilage time to coat each newly-introduced droplet before the next one arrives; the vigorous whisking shears the oil into smaller droplets that stay suspended longer. The vinaigrette tightens visibly as the emulsion forms; by the time the last of the oil is in, the dressing should be opaque-amber and ribbon off the whisk."},{"@type":"HowToStep","text":"Whisk for an additional 20 to 30 seconds after the last of the oil; the dressing should reach a tight emulsion, opaque amber, with the consistency of cold heavy cream. Taste; the dressing should read sweet-acid-mustard in that order, fully salted; if it tastes flat, add another 1 g / ¼ tsp kosher salt; if it tastes harsh-acidic, a tiny pinch more maple; if it tastes too sweet, a splash more vinegar. The balance is dish-dependent (sharper for raw greens, sweeter for roasted vegetables); calibrate to the salad it will dress."},{"@type":"HowToStep","text":"Use immediately or transfer to a sealed jar and refrigerate. The vinaigrette holds tight emulsion for 3 to 4 hours at room temperature; refrigerated, the emulsion separates over 24 to 48 hours and the dressing needs a vigorous reshake before each use. The flavor improves over the first 24 hours as the shallot mucilage continues to integrate; refrigerated, the dressing keeps a full week. If the emulsion breaks badly during storage (visible oil layer that does not reincorporate with shaking), transfer to a small bowl, add another teaspoon of mustard plus a tablespoon of warm water, and whisk into the broken dressing in dribbles; the emulsion rebuilds."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Maple-cider vinaigrette","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/maple-cider-vinaigrette.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -537,7 +543,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Nuoc cham","description":"Nuoc cham: the Vietnamese fish sauce dipping sauce (fish sauce, lime, sugar, water, garlic, chili). The pourable universal dressing for grilled meat, fresh rolls, rice plates, noodle salads, and raw vegetables.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/nuoc-cham.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-15","recipeYield":"8 servings","recipeCuisine":"Vietnamese","recipeCategory":"sauce","keywords":"no-cook, pantry, quick, umami, spicy","prepTime":"PT5M","totalTime":"PT5M","recipeIngredient":["60 g fish sauce (Vietnamese, ideally 40N or higher nitrogen content)","60 g fresh lime juice","45 g palm sugar (or light brown sugar)","120 g warm water","6 g garlic clove, peeled, minced very fine, or pounded to a paste in a mortar","3 g fresh red Thai chili (or red Fresno, or a small dried red chili), thinly sliced into rings; seeds in or out depending on heat preference"],"recipeInstructions":[{"@type":"HowToStep","text":"In a small bowl, combine the 45 g / 3 tbsp palm sugar and the 120 g / ½ cup warm water; whisk for 30 seconds until the sugar is fully dissolved. If using palm sugar in solid block form, mash with the back of a spoon to break up the lumps before whisking; warm water dissolves palm sugar 3 times faster than cold and the texture is the structural foundation of the sauce."},{"@type":"HowToStep","text":"Add the 60 g / ¼ cup fish sauce and the 60 g / ¼ cup lime juice; whisk to combine. The mixture should be a clear pale amber color and pourable; taste at this stage and check the sweet-salty-sour balance, which should read in equal proportions (sugar carries the sweet, fish sauce carries the salt-and-umami, lime carries the sour). Adjust if necessary: more sugar to soften, more lime to brighten, more fish sauce to deepen, more water to dilute."},{"@type":"HowToStep","text":"Stir in the 6 g / 1 to 2 minced garlic cloves and the 3 g / 1 to 2 sliced chilies; the garlic and chili should float on the surface (this is correct and aesthetic; do not strain). Let the sauce rest 5 minutes before serving so the garlic and chili infuse the liquid; the resting step is short but structural for flavor depth."},{"@type":"HowToStep","text":"Taste and adjust: nuoc cham should read in equal balance across sweet, salty, sour, and umami, with garlic and chili as background aromatics. If the sauce reads dominant in any one direction, dial back via a counter-addition (an extra 5 g / 1 tsp lime juice to balance dominant fish-sauce salt; an extra 15 g / 1 tbsp warm water to balance dominant sweetness; an extra 5 g / 1 tsp fish sauce to balance dominant lime). Serve at room temperature in small individual dipping bowls, or pour over salads and noodle bowls as a dressing, or use as the brining liquid for quick-pickled vegetables (carrot and daikon shreds, cucumber ribbons)."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Nuoc cham","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/nuoc-cham.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -522,7 +528,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

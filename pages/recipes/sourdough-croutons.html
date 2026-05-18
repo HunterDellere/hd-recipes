@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Sourdough croutons","description":"Sourdough croutons: garlic-oil infusion, the day-old bread argument, oven temperature for through-and-through dry, and how to keep them crisp for serving.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/sourdough-croutons.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-10","recipeYield":"6 servings","recipeCuisine":"","recipeCategory":"side","keywords":"salad, pantry, make-ahead","prepTime":"PT5M","cookTime":"PT14M","totalTime":"PT19M","recipeIngredient":["60 g extra-virgin olive oil","12 g garlic, smashed but whole","250 g day-old country sourdough, crusts trimmed if leathery, torn into 2 cm / ¾-inch chunks","2 g fine sea salt","1 g black pepper, freshly cracked"],"recipeInstructions":[{"@type":"HowToStep","text":"Heat the oven to 180 °C / 350 °F. While it preheats, warm the 60 g / ¼ cup extra-virgin olive oil with the 12 g / 3 smashed garlic cloves in a small saucepan over the lowest possible heat for 8 minutes. The oil should never come to a sizzle; keep it sub-Maillard so the garlic infuses without browning. A scorched garlic clove turns the oil bitter and contaminates the entire batch."},{"@type":"HowToStep","text":"Pull the oil off heat at 8 minutes. Fish out the garlic cloves and discard them; their job was the infusion, not the bake; cloves left in the oil at 180 °C for 14 minutes turn black and bitter. The strained oil should smell deeply garlicky and read pale gold."},{"@type":"HowToStep","text":"In a wide bowl, toss the 250 g / 9 oz torn sourdough chunks with the strained garlic oil, the 2 g / ⅓ tsp fine sea salt, and (if using) the 1 g cracked black pepper. Toss for a full 60 seconds; you want every surface of every chunk wet with oil. Day-old bread is dry enough that the oil absorbs into the crumb rather than pooling on the surface; if your bread is fresher than day-old, the oil will sit on the outside and the croutons will fry unevenly."},{"@type":"HowToStep","text":"Spread the chunks on a sheet tray in a single layer with no chunks touching. Bake for 12 to 14 minutes, tossing once at 7 minutes, until the chunks are uniformly golden and dry through to the centre when you bite into one. The exterior should shatter and the interior should be dry but slightly tender, not rock-hard like a melba toast. Pull and cool on the tray; they crisp further as they lose residual steam during the first 3 minutes off heat."},{"@type":"HowToStep","text":"Use immediately for best texture or hold in an airtight container at room temperature for up to 5 days. Recrisp in a 150 °C / 300 °F oven for 4 minutes if they soften; do not microwave (steams them into a leathery state)."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Sourdough croutons","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/sourdough-croutons.html"}]}</script>
 </head>
@@ -51,13 +51,19 @@
   </a>
   <div class="topnav-right">
     <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-menu" id="topnav-menu">
+      <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
+      <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
+      <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
+    </button>
+    <button class="topnav-menu-btn" type="button" aria-expanded="false" aria-controls="topnav-menu" aria-label="Open menu" id="topnav-menu-btn">
+      <svg class="tm-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      <svg class="tm-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
     </button>
   </div>
 </nav>
@@ -504,7 +510,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
