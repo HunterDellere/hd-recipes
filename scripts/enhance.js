@@ -34,48 +34,43 @@ else { window.__enhanceInit = true; (function () {
     });
   }
 
-  // ── Mobile hamburger menu ─────────────────────────────────────────────
-  // The hamburger button collapses Explore/Pantry/Saved/Settings into a
-  // dropdown on viewports where the inline links don't fit. Outside taps,
-  // Escape, and link activation all dismiss it; aria-expanded mirrors state.
+  // ── Topnav sheet (mobile drawer) ──────────────────────────────────────
+  // Below 560px, primary + utility nav collapse into a slide-down sheet.
+  // The hamburger button toggles open/close; click outside, Escape, or any
+  // link inside the sheet closes it. Body scroll is locked while open so the
+  // background can't scroll under the sheet on iOS.
   const menuBtn = document.getElementById('topnav-menu-btn');
-  const menu = document.getElementById('topnav-menu');
-  if (menuBtn && menu) {
-    function setMenuOpen(open) {
-      menu.classList.toggle('open', open);
-      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-      document.body.classList.toggle('topnav-menu-locked', open);
-    }
-    menuBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const open = menu.classList.contains('open');
-      setMenuOpen(!open);
-    });
-    // Dismiss on link click — let the link navigate, but close the panel first
-    // so the back button doesn't return to a still-open menu.
-    menu.addEventListener('click', (e) => {
-      if (e.target.closest('a')) setMenuOpen(false);
-    });
-    // Outside click dismisses.
-    document.addEventListener('click', (e) => {
-      if (!menu.classList.contains('open')) return;
-      if (menu.contains(e.target) || menuBtn.contains(e.target)) return;
-      setMenuOpen(false);
-    });
-    // Escape dismisses.
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && menu.classList.contains('open')) {
-        setMenuOpen(false);
-        menuBtn.focus();
+  const sheet = document.getElementById('topnav-sheet');
+  if (menuBtn && sheet) {
+    const setOpen = (open) => {
+      if (open) {
+        sheet.hidden = false;
+        // next frame so the transition runs
+        requestAnimationFrame(() => sheet.setAttribute('data-open', 'true'));
+      } else {
+        sheet.removeAttribute('data-open');
+        // wait for transition before hiding from AT
+        setTimeout(() => { if (sheet.getAttribute('data-open') !== 'true') sheet.hidden = true; }, 220);
       }
+      sheet.setAttribute('aria-hidden', open ? 'false' : 'true');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+    menuBtn.addEventListener('click', () => {
+      setOpen(sheet.getAttribute('data-open') !== 'true');
     });
-    // Resize past the mobile breakpoint clears state — otherwise the panel
-    // stays half-styled after rotating a tablet from portrait to landscape.
-    const mq = window.matchMedia('(min-width: 861px)');
-    const onMqChange = () => { if (mq.matches) setMenuOpen(false); };
-    if (mq.addEventListener) mq.addEventListener('change', onMqChange);
-    else if (mq.addListener) mq.addListener(onMqChange);
+    sheet.addEventListener('click', (e) => {
+      // Backdrop click (anywhere outside the panel) or any link inside closes.
+      if (e.target === sheet || e.target.closest('.topnav-sheet-link')) setOpen(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && sheet.getAttribute('data-open') === 'true') setOpen(false);
+    });
+    // If the viewport grows past the breakpoint while the sheet is open, close it.
+    const mq = matchMedia('(min-width: 560px)');
+    const onMq = () => { if (mq.matches && sheet.getAttribute('data-open') === 'true') setOpen(false); };
+    if (mq.addEventListener) mq.addEventListener('change', onMq);
+    else if (mq.addListener) mq.addListener(onMq);
   }
 
   // ── Share button (Web Share API + clipboard fallback) ─────────────────
