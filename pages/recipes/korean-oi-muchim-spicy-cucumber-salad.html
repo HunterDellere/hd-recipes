@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Korean spicy cucumber salad (oi-muchim, 오이무침)","description":"Oi-muchim: Korean spicy cucumber salad with gochugaru, garlic, fish sauce, rice vinegar, sesame oil. 10-minute banchan; salt-cure for crunch, eat the same hour.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/korean-oi-muchim-spicy-cucumber-salad.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-10","recipeYield":"4 servings","recipeCuisine":"Korean","recipeCategory":"side","keywords":"salad, spicy, no-cook, pickle","prepTime":"PT10M","totalTime":"PT25M","recipeIngredient":["500 g Korean or Persian cucumbers, sliced into 3 mm half-moons","6 g kosher salt (for the salt cure)","8 g gochugaru (Korean chili flakes, coarse)","10 ml fish sauce","15 ml rice vinegar","4 g granulated sugar","10 g garlic, finely grated","10 ml toasted sesame oil","20 g scallion, thinly sliced","4 g toasted sesame seeds"],"recipeInstructions":[{"@type":"HowToStep","text":"Slice and salt-cure the cucumbers. Slice the 500 g cucumbers into 3 mm half-moons (rounds halved lengthwise first, then cut crosswise). Toss with 6 g / 1 tsp kosher salt in a colander set over a bowl. Let sit 15 minutes. Osmotic water leaves the cells, the cucumbers lose 10 to 15% of their weight, and what remains has dense flavor and stays crunchy under the dressing instead of weeping water into it."},{"@type":"HowToStep","text":"Mix the dressing. In a small bowl, combine 8 g / 1 tbsp gochugaru, 10 ml / 2 tsp fish sauce, 15 ml / 1 tbsp rice vinegar, 4 g / 1 tsp sugar, and 10 g grated garlic. Whisk until the gochugaru hydrates into a loose paste and the sugar dissolves. Wait 2 minutes; the gochugaru blooms in the aqueous mixture and turns from flake-dry to brick-red and glossy."},{"@type":"HowToStep","text":"Press out remaining water. Lift the salted cucumbers in handfuls and gently squeeze over the colander to expel surface water. The cucumber half-moons should feel firm and translucent at the rim, not soggy. Do not rinse; the surface salt is part of the seasoning."},{"@type":"HowToStep","text":"Dress. Tip the squeezed cucumbers into a serving bowl. Pour the gochugaru dressing over and toss with chopsticks or a silicone spatula until every piece is coated red. Add 10 ml / 2 tsp toasted sesame oil last and toss again, the oil should suspend in a thin film over the aqueous dressing rather than mix in fully. Adding sesame oil before the aqueous dressing causes the oil to coat the cucumbers and block the seasoning from adhering."},{"@type":"HowToStep","text":"Finish. Scatter 20 g sliced scallion and 4 g / 2 tsp toasted sesame seeds over the top. Serve immediately or within 30 minutes. Taste; if flat, a few drops more fish sauce. If too sharp, a 1 g pinch more sugar."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Korean spicy cucumber salad (oi-muchim, 오이무침)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/korean-oi-muchim-spicy-cucumber-salad.html"}]}</script>
 </head>
@@ -47,20 +47,46 @@
 
 <nav class="topnav" aria-label="Site">
   <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
-    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep" aria-hidden="true"> · </span><span class="topnav-brand-en">recipes</span>
   </a>
   <div class="topnav-right">
-    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-primary">
+      <a href="../../pages/explore/index.html" class="topnav-link" data-nav="explore">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-link" data-nav="pantry">Pantry match</a>
+    </div>
+    <div class="topnav-utility">
+      <a href="../../random.html" class="topnav-icon" data-nav="random" aria-label="Open a random recipe" title="Random recipe">
+        <span class="topnav-icon-glyph" aria-hidden="true">⟳</span>
+        <span class="topnav-icon-label">Random</span>
+      </a>
+      <a href="../../pages/saved.html" class="topnav-icon" data-nav="saved" aria-label="Saved recipes" title="Saved">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="topnav-icon-label">Saved</span>
+      </a>
+      <a href="../../pages/settings.html" class="topnav-icon" data-nav="settings" aria-label="Personalization settings" title="Settings">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="topnav-icon-label">Settings</span>
+      </a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
     </button>
+    <button class="topnav-menu-btn" type="button" aria-label="Open menu" aria-controls="topnav-sheet" aria-expanded="false" id="topnav-menu-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="topnav-sheet" id="topnav-sheet" hidden aria-hidden="true">
+  <div class="topnav-sheet-panel" role="dialog" aria-label="Site menu" aria-modal="true">
+    <a href="../../pages/explore/index.html" class="topnav-sheet-link">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-sheet-link">Pantry match</a>
+    <a href="../../random.html" class="topnav-sheet-link">Random recipe</a>
+    <a href="../../pages/saved.html" class="topnav-sheet-link">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-sheet-link">Settings</a>
+  </div>
+</div>
 
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
 
@@ -582,7 +608,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

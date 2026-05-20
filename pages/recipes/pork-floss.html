@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Pork floss (rousong, 肉松)","description":"Pork floss (rousong) recipe: lean pork simmered, shredded, and dry-fried into a fluffy savory topping for congee, baozi, milk bread, and rice.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/pork-floss.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-09","recipeYield":"30 servings","recipeCuisine":"Chinese","recipeCategory":"sauce","keywords":"pork, pantry, umami, make-ahead","prepTime":"PT15M","cookTime":"PT195M","totalTime":"PT210M","recipeIngredient":["700 g pork shoulder, lean only (no skin, minimal fat)","1500 ml water","30 g fresh ginger, smashed","3 each scallion whites","30 ml Shaoxing wine","2 each star anise","30 ml light soy sauce","8 ml dark soy sauce","25 g granulated sugar","3 g kosher salt","15 ml neutral oil","0.5 g white pepper, freshly ground"],"recipeInstructions":[{"@type":"HowToStep","text":"Cut the 700 g lean pork shoulder along the grain into 4 cm strips. Cutting along the grain (not across) is what produces the long fibrous strands that shred into floss; cross-grain cuts produce short, mealy floss that turns to powder during dry-frying."},{"@type":"HowToStep","text":"Combine the pork strips, 1500 ml / 6 cups water, 30 g smashed ginger, 3 scallion whites, 30 ml / 2 tbsp Shaoxing wine, and 2 star anise (~4 g) in a heavy pot. Bring to a boil, skim off the gray scum that rises in the first 10 minutes, then reduce to a bare simmer (just below 90°C / 195°F, with no active bubbles). Cover and simmer 90 minutes, until the pork pulls apart effortlessly between two forks."},{"@type":"HowToStep","text":"Drain the pork into a strainer set over a bowl (reserve the broth for soup). Discard the aromatics. Let the pork cool 10 minutes until you can handle it. While it is still warm, shred each strip by hand or pulse in a stand mixer with the paddle attachment on low for 60 seconds; the goal is fine, separated strands, not a paste. Pulled too cold and the meat fights the shred; warm pork gives easily."},{"@type":"HowToStep","text":"Heat a wide, heavy wok or skillet over medium-low. Add the 15 ml / 1 tbsp neutral oil and the shredded pork. Spread into a single layer. Cook 5 minutes without stirring to begin driving moisture off the bottom layer. Once the pork is dry to the touch, stir in the 30 ml / 2 tbsp light soy, 8 ml / ½ tbsp dark soy if using, 25 g / 2 tbsp granulated sugar, 3 g / ½ tsp kosher salt, and 0.5 g / ¼ tsp white pepper."},{"@type":"HowToStep","text":"Continue dry-frying over medium-low heat for 30 to 45 minutes total, stirring every 90 seconds with two wooden spatulas to keep the strands separated and to expose new surface area to the pan. The pork passes through three stages: wet (sticky, dark, glistening) at minute 5; tacky-dry (loose strands, deep brown, beginning to lighten) at minute 20; and floss (pale tan, dry to the touch, fluffy, the strands separate cleanly) at minute 30 to 45. Pull when the floss is fully dry and lifts in a cloud when you shake the pan."},{"@type":"HowToStep","text":"Spread the finished floss on a sheet pan to cool completely; it will crisp further as it dries in air. Once fully cool, store in an airtight glass jar at room temperature; the low residual moisture combined with the seasoning concentration makes it shelf-stable for 4 to 6 weeks. Refrigerated, it keeps 3 months but absorbs ambient moisture; let it come to room temperature before opening to prevent condensation."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Pork floss (rousong, 肉松)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/pork-floss.html"}]}</script>
 </head>
@@ -47,20 +47,46 @@
 
 <nav class="topnav" aria-label="Site">
   <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
-    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep" aria-hidden="true"> · </span><span class="topnav-brand-en">recipes</span>
   </a>
   <div class="topnav-right">
-    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-primary">
+      <a href="../../pages/explore/index.html" class="topnav-link" data-nav="explore">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-link" data-nav="pantry">Pantry match</a>
+    </div>
+    <div class="topnav-utility">
+      <a href="../../random.html" class="topnav-icon" data-nav="random" aria-label="Open a random recipe" title="Random recipe">
+        <span class="topnav-icon-glyph" aria-hidden="true">⟳</span>
+        <span class="topnav-icon-label">Random</span>
+      </a>
+      <a href="../../pages/saved.html" class="topnav-icon" data-nav="saved" aria-label="Saved recipes" title="Saved">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="topnav-icon-label">Saved</span>
+      </a>
+      <a href="../../pages/settings.html" class="topnav-icon" data-nav="settings" aria-label="Personalization settings" title="Settings">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="topnav-icon-label">Settings</span>
+      </a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
     </button>
+    <button class="topnav-menu-btn" type="button" aria-label="Open menu" aria-controls="topnav-sheet" aria-expanded="false" id="topnav-menu-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="topnav-sheet" id="topnav-sheet" hidden aria-hidden="true">
+  <div class="topnav-sheet-panel" role="dialog" aria-label="Site menu" aria-modal="true">
+    <a href="../../pages/explore/index.html" class="topnav-sheet-link">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-sheet-link">Pantry match</a>
+    <a href="../../random.html" class="topnav-sheet-link">Random recipe</a>
+    <a href="../../pages/saved.html" class="topnav-sheet-link">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-sheet-link">Settings</a>
+  </div>
+</div>
 
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
 
@@ -580,7 +606,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

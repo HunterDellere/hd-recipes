@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Masala chai (proper Indian milk-spice tea)","description":"Authentic masala chai recipe, toasted whole spices, decoction method with milk and Assam tea, the staged boil that produces real Indian chai at home.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/masala-chai.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-16","recipeYield":"2 servings","recipeCuisine":"Indian","recipeCategory":"drink","keywords":"chai, milk-tea","prepTime":"PT5M","cookTime":"PT12M","totalTime":"PT17M","recipeIngredient":["6 each green cardamom pods, cracked open with the flat of a knife","1 each cinnamon stick","4 each whole cloves","3 each whole black peppercorns","1 g fennel seeds","15 g fresh ginger, smashed with the flat of a knife, no need to peel","240 ml water","12 g CTC Assam tea (or strong loose-leaf black tea)","360 ml whole milk","20 g granulated sugar"],"recipeInstructions":[{"@type":"HowToStep","text":"Crush the cracked 6 cardamom pods, 1 cinnamon stick (broken into 2 or 3 pieces), 4 cloves, 3 peppercorns, and 1 g / ¼ tsp fennel seeds together briefly in a mortar, break them open without grinding to powder. The break exposes the volatile-oil-rich interior; intact spices steep slowly and underdeliver."},{"@type":"HowToStep","text":"Place a small heavy-bottomed saucepan over medium-low heat. Add the cracked spices dry, no oil, and toast for 30 to 45 seconds, swirling the pan, until you smell warm cardamom and cinnamon rising. This pre-toasting blooms the spice oils in dry heat before water dilutes them; the difference in final flavor depth is substantial."},{"@type":"HowToStep","text":"Add the 240 ml / 1 cup water and the smashed 15 g ginger to the spices. Bring to a hard rolling boil and hold there 4 minutes. This is the spice decoction phase, water at boiling temperature extracts the tough fibers and woody aromatic compounds in cardamom seeds, cinnamon bark, and ginger root. The water will reduce slightly and turn pale amber with a strong gingery-cardamom perfume rising from the pot."},{"@type":"HowToStep","text":"Add the 12 g / 2 heaping tbsp CTC tea. Continue boiling hard for 1 minute, short, sharp extraction pulls color and body without dragging out the bitter tannins that a long steep produces. The liquid turns dark mahogany."},{"@type":"HowToStep","text":"Pour in the 360 ml / 1½ cups whole milk. Stir once. Bring back to a rolling boil, watch carefully because the milk-tea will rise dramatically as it foams. Just before it threatens to boil over, lift the pot off the heat for 5 seconds, then return it; repeat this lift-and-return motion 3 times over the next 2 minutes. Each lift mixes air into the chai and integrates the milk proteins with the tea; the final color should be a deep, even tan, not patchy. This is the \"ubaal\" (boil-up) technique that defines proper chai."},{"@type":"HowToStep","text":"Drop the heat to low. Add the 20 g / 1½ tbsp sugar; stir until dissolved. Taste from a small spoon, should read aggressively spiced, deeply tea-tannic, and clearly sweet, with the milk binding everything into a creamy body. Adjust sweetness by ½ tsp at a time. Strain through a fine sieve directly into preheated cups (rinse cups with hot water first; cold cups drop the temperature of the chai noticeably)."},{"@type":"HowToStep","text":"Serve immediately. Chai cools fast in thin cups; the experience window is the first 5 minutes when the steam still carries the aromatic top notes."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Masala chai (proper Indian milk-spice tea)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/masala-chai.html"}]}</script>
 </head>
@@ -47,20 +47,46 @@
 
 <nav class="topnav" aria-label="Site">
   <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
-    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep" aria-hidden="true"> · </span><span class="topnav-brand-en">recipes</span>
   </a>
   <div class="topnav-right">
-    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-primary">
+      <a href="../../pages/explore/index.html" class="topnav-link" data-nav="explore">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-link" data-nav="pantry">Pantry match</a>
+    </div>
+    <div class="topnav-utility">
+      <a href="../../random.html" class="topnav-icon" data-nav="random" aria-label="Open a random recipe" title="Random recipe">
+        <span class="topnav-icon-glyph" aria-hidden="true">⟳</span>
+        <span class="topnav-icon-label">Random</span>
+      </a>
+      <a href="../../pages/saved.html" class="topnav-icon" data-nav="saved" aria-label="Saved recipes" title="Saved">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="topnav-icon-label">Saved</span>
+      </a>
+      <a href="../../pages/settings.html" class="topnav-icon" data-nav="settings" aria-label="Personalization settings" title="Settings">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="topnav-icon-label">Settings</span>
+      </a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
     </button>
+    <button class="topnav-menu-btn" type="button" aria-label="Open menu" aria-controls="topnav-sheet" aria-expanded="false" id="topnav-menu-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="topnav-sheet" id="topnav-sheet" hidden aria-hidden="true">
+  <div class="topnav-sheet-panel" role="dialog" aria-label="Site menu" aria-modal="true">
+    <a href="../../pages/explore/index.html" class="topnav-sheet-link">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-sheet-link">Pantry match</a>
+    <a href="../../random.html" class="topnav-sheet-link">Random recipe</a>
+    <a href="../../pages/saved.html" class="topnav-sheet-link">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-sheet-link">Settings</a>
+  </div>
+</div>
 
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
 
@@ -542,7 +568,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

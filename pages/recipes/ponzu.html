@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Ponzu","description":"Homemade ponzu: yuzu and citrus juice steeped overnight with kombu, katsuobushi, soy sauce, mirin, and rice vinegar; the umami-stacked citrus-soy sauce of washoku, dramatically fresher than bottled.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/ponzu.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-10","recipeYield":"12 servings","recipeCuisine":"Japanese","recipeCategory":"sauce","keywords":"umami, pantry, make-ahead","prepTime":"PT5M","totalTime":"PT1445M","recipeIngredient":["80 g yuzu juice (or a 3:1 blend of fresh lemon juice and lime juice)","100 g light soy sauce","60 g mirin (hon-mirin, not mirin-style seasoning)","30 g rice vinegar","5 g kombu (dried kelp), a 5 cm × 5 cm square; do not rinse","5 g katsuobushi (dried bonito flakes)"],"recipeInstructions":[{"@type":"HowToStep","text":"Juice the yuzu (or lemons and limes). For yuzu, halve each fruit equator-wise, pick out and discard the seeds, and squeeze through a fine-mesh strainer; you should get 12 to 18 g of juice per fruit, so plan on 4 to 6 fruits to reach the 80 g target. For the lemon-lime substitute, juice the citrus and combine in a 3:1 ratio (60 g lemon juice + 20 g lime juice). Strain the juice through a fine-mesh sieve to catch pulp and seeds; the finished ponzu must be clear, and any pulp left in the steeping liquid will cloud the sauce and degrade in storage."},{"@type":"HowToStep","text":"Combine and steep. In a clean glass jar or plastic container with a tight-fitting lid (a 500 ml mason jar is ideal), combine the 80 g / ⅓ cup citrus juice, the 100 g / ⅓ cup + 1 tbsp light soy sauce, the 60 g / ¼ cup mirin, the 30 g / 2 tbsp rice vinegar, the 5 g / 5 cm square kombu, and the 5 g / ⅓ cup katsuobushi. Do not heat anything. Stir gently with a chopstick to wet the kombu and the katsuobushi (the katsuobushi will float at first and gradually sink as it hydrates). Cover and refrigerate 24 hours, no shorter; the kombu releases free glutamate slowly into the cold liquid (cold extraction is functional here, the same chemistry as ichiban dashi made by cold-water soak), and the katsuobushi releases inosinate over the same window. Steeping less than 12 hours produces a noticeably thinner, less umami sauce; steeping 24 to 48 hours produces the canonical depth."},{"@type":"HowToStep","text":"Strain. After 24 hours (or up to 48), strain the ponzu through a fine-mesh sieve lined with a paper towel or muslin cloth into a clean glass bottle or jar. Let the liquid drip through; do not press the spent kombu and katsuobushi (squeezing presses tannins and bitter compounds into the clear sauce). Discard the spent kombu and katsuobushi, or save for a quick second-extraction broth (cover with 200 ml of water, simmer 5 minutes, strain; use as a light dashi for noodle soup). The finished ponzu should be clear, the color of weak tea, with the aromatic citrus rising sharply when the bottle is opened."},{"@type":"HowToStep","text":"Bottle and store. Pour the strained ponzu into a clean glass bottle (the original brand bottles from Japanese grocery stores work well, or any tight-sealing 300 to 500 ml glass bottle). Refrigerate. The sauce is ready immediately; use over the next 4 weeks for full citrus aromatic potency, up to 3 months for cooking applications where the citrus top notes are less critical. Shake gently before each use to redistribute any settled solids."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Ponzu","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/ponzu.html"}]}</script>
 </head>
@@ -47,20 +47,46 @@
 
 <nav class="topnav" aria-label="Site">
   <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
-    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep" aria-hidden="true"> · </span><span class="topnav-brand-en">recipes</span>
   </a>
   <div class="topnav-right">
-    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-primary">
+      <a href="../../pages/explore/index.html" class="topnav-link" data-nav="explore">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-link" data-nav="pantry">Pantry match</a>
+    </div>
+    <div class="topnav-utility">
+      <a href="../../random.html" class="topnav-icon" data-nav="random" aria-label="Open a random recipe" title="Random recipe">
+        <span class="topnav-icon-glyph" aria-hidden="true">⟳</span>
+        <span class="topnav-icon-label">Random</span>
+      </a>
+      <a href="../../pages/saved.html" class="topnav-icon" data-nav="saved" aria-label="Saved recipes" title="Saved">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="topnav-icon-label">Saved</span>
+      </a>
+      <a href="../../pages/settings.html" class="topnav-icon" data-nav="settings" aria-label="Personalization settings" title="Settings">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="topnav-icon-label">Settings</span>
+      </a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
     </button>
+    <button class="topnav-menu-btn" type="button" aria-label="Open menu" aria-controls="topnav-sheet" aria-expanded="false" id="topnav-menu-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="topnav-sheet" id="topnav-sheet" hidden aria-hidden="true">
+  <div class="topnav-sheet-panel" role="dialog" aria-label="Site menu" aria-modal="true">
+    <a href="../../pages/explore/index.html" class="topnav-sheet-link">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-sheet-link">Pantry match</a>
+    <a href="../../random.html" class="topnav-sheet-link">Random recipe</a>
+    <a href="../../pages/saved.html" class="topnav-sheet-link">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-sheet-link">Settings</a>
+  </div>
+</div>
 
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
 
@@ -508,7 +534,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

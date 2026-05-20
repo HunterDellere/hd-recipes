@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Hoisin sauce (homemade)","description":"Homemade hoisin sauce: fermented soybean paste, sweet soy, garlic, five-spice, sesame oil, vinegar, sugar. The structural Cantonese condiment, dramatically fresher than jarred.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/hoisin-sauce.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-17","recipeYield":"16 servings","recipeCuisine":"Cantonese","recipeCategory":"sauce","keywords":"condiment, fermented, umami, sweet","prepTime":"PT8M","cookTime":"PT7M","totalTime":"PT15M","recipeIngredient":["40 g doubanjiang (Chinese fermented broad bean paste) or yellow miso","30 g smooth natural peanut butter (no added sugar)","45 g dark soy sauce (the sweet thick Cantonese soy)","15 g light soy sauce (for additional saltiness)","45 g dark brown sugar","15 g honey","15 g rice vinegar","8 g garlic, finely grated","2 g Chinese five-spice powder","8 g toasted sesame oil","1 g gochugaru or cayenne (for gentle heat, optional)","30 ml water (for thinning)"],"recipeInstructions":[{"@type":"HowToStep","text":"Combine the wet ingredients. In a small heavy-bottomed saucepan, combine the 40 g doubanjiang (or yellow miso), 30 g smooth natural peanut butter, 45 g dark soy sauce, 15 g light soy sauce, 45 g dark brown sugar, 15 g honey, 15 g rice vinegar, 8 g grated garlic, 2 g five-spice powder, optional 1 g gochugaru, and 30 ml water. Whisk vigorously to combine; the mixture will look chunky and uneven at the start as the peanut butter and doubanjiang resist incorporation."},{"@type":"HowToStep","text":"Cook to integrate. Place the saucepan over medium-low heat. Stir constantly with a silicone spatula or wooden spoon (the sauce burns readily on the pan bottom because of the sugar). Cook 4 to 5 minutes, until the sauce comes to a gentle simmer, the doubanjiang dissolves completely, the peanut butter melts into the liquid, and the mixture transforms from chunky to glossy uniform paste. The sauce will thicken slightly as it cooks; the texture target is thick spoonable but still pourable (about the consistency of warm honey)."},{"@type":"HowToStep","text":"Adjust the consistency and balance. Pull off heat. The sauce thickens further as it cools; if it is already too thick on the heat, add another 10 to 15 ml of warm water. If it is too thin, return to heat and simmer another 2 minutes. Taste: the sauce should be sweet-savory-umami-faintly-spicy in balance, with a pronounced fermented-soybean depth. If flat, add another 5 g of dark soy. If too sweet, add another 5 g of rice vinegar. If too aggressive (the doubanjiang sometimes reads sharp), add another 10 g of brown sugar."},{"@type":"HowToStep","text":"Finish with sesame oil. Stir in the 8 g toasted sesame oil. The sesame oil is added off-heat so the aromatic compounds (sesamol, methylpyrazine) are not driven off by heat; this is the structural Chinese finishing technique for any sauce that includes sesame oil."},{"@type":"HowToStep","text":"Cool and store. Pour the hoisin into a clean glass jar; cool to room temperature (about 15 minutes uncovered) before sealing and refrigerating. The sauce will continue to thicken over the first 24 hours as the starches in the peanut butter and the soybean paste hydrate fully; the final texture is the thick lacquering consistency that hoisin is known for. Use after the 24-hour rest for peak quality; keeps 3 weeks refrigerated."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Hoisin sauce (homemade)","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/hoisin-sauce.html"}]}</script>
 </head>
@@ -47,20 +47,46 @@
 
 <nav class="topnav" aria-label="Site">
   <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
-    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep" aria-hidden="true"> · </span><span class="topnav-brand-en">recipes</span>
   </a>
   <div class="topnav-right">
-    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-primary">
+      <a href="../../pages/explore/index.html" class="topnav-link" data-nav="explore">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-link" data-nav="pantry">Pantry match</a>
+    </div>
+    <div class="topnav-utility">
+      <a href="../../random.html" class="topnav-icon" data-nav="random" aria-label="Open a random recipe" title="Random recipe">
+        <span class="topnav-icon-glyph" aria-hidden="true">⟳</span>
+        <span class="topnav-icon-label">Random</span>
+      </a>
+      <a href="../../pages/saved.html" class="topnav-icon" data-nav="saved" aria-label="Saved recipes" title="Saved">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="topnav-icon-label">Saved</span>
+      </a>
+      <a href="../../pages/settings.html" class="topnav-icon" data-nav="settings" aria-label="Personalization settings" title="Settings">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="topnav-icon-label">Settings</span>
+      </a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
     </button>
+    <button class="topnav-menu-btn" type="button" aria-label="Open menu" aria-controls="topnav-sheet" aria-expanded="false" id="topnav-menu-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="topnav-sheet" id="topnav-sheet" hidden aria-hidden="true">
+  <div class="topnav-sheet-panel" role="dialog" aria-label="Site menu" aria-modal="true">
+    <a href="../../pages/explore/index.html" class="topnav-sheet-link">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-sheet-link">Pantry match</a>
+    <a href="../../random.html" class="topnav-sheet-link">Random recipe</a>
+    <a href="../../pages/saved.html" class="topnav-sheet-link">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-sheet-link">Settings</a>
+  </div>
+</div>
 
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
 
@@ -571,7 +597,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Cuban sandwich","description":"Cuban sandwich: roast pork (mojo pernil), sweet ham, Swiss, dill pickles, yellow mustard on Cuban bread, pressed in a plancha until the cheese melts and the bread crackles. The Tampa exile classic.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/cuban-sandwich.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-17","recipeYield":"2 servings","recipeCuisine":"Cuban","recipeCategory":"lunch","keywords":"sandwich, pork, comfort, quick","prepTime":"PT10M","cookTime":"PT12M","totalTime":"PT22M","recipeIngredient":["2 each Cuban bread (or French baguette, or Italian ciabatta), two 25 cm / 10 inch loaves, split lengthwise","30 g unsalted butter, softened (for the outside of the bread)","30 g yellow mustard","200 g roast pork (cold sliced leftover Cuban mojo pernil), sliced 3 mm thick across the grain","120 g sweet baked ham, sliced, sliced 1.5 mm thick","90 g Swiss cheese, sliced, sliced 1.5 mm thick","50 g dill pickle chips (long sandwich-cut slices), sliced lengthwise 3 mm thick"],"recipeInstructions":[{"@type":"HowToStep","text":"Set up the press: heat a cast iron skillet (or large stainless skillet) over medium heat and a second heavy skillet alongside (this will be the weight). Or preheat a panini press to medium. The press needs to be hot when the sandwich goes on."},{"@type":"HowToStep","text":"Split the 2 Cuban bread loaves horizontally with a serrated knife. Brush the inside (cut side) of each loaf with no butter; the inside is the mustard-and-filling face. Spread 15 g / 1 tbsp of yellow mustard on the inside of each top half of bread (not the bottom; the mustard adheres better to the dry bread side, and stacking the wet filling on dry bread keeps the bottom crisper)."},{"@type":"HowToStep","text":"Build each sandwich in this exact stacking order, bottom to top: bottom bread (no mustard), 100 g sliced roast pork (spread evenly), 60 g sliced sweet ham (overlapping), 45 g Swiss cheese (overlapping), 25 g dill pickle slices (single layer), top bread (mustard-side down). The Swiss goes on the ham, not the pork; this puts the cheese near the hot top bread side first for faster melt. Press the sandwich together firmly with both hands to start the compression."},{"@type":"HowToStep","text":"Brush the outside of both top and bottom of each assembled sandwich with the 30 g / 2 tbsp softened butter (about 7 g per side per sandwich). The butter is what produces the dark golden crackly crust during the press."},{"@type":"HowToStep","text":"Place the first sandwich on the hot skillet. Immediately place the second heated skillet on top, pressing down firmly. Press for 3 to 4 minutes (cast iron weight method) or 2 to 3 minutes (panini press) until the bottom bread is dark mahogany with crisp diagonal lines and crackly when tapped. Lift to check; if not yet there, give another 30 to 60 seconds."},{"@type":"HowToStep","text":"Flip the sandwich. Replace the weight; press the second side 2 to 3 more minutes until the top is also dark mahogany and the sandwich has visibly compressed from its starting height of about 8 cm to about 2 to 2.5 cm. The cheese should be fully molten and beginning to ooze at the edges. Repeat with the second sandwich."},{"@type":"HowToStep","text":"Transfer the pressed sandwich to a cutting board. Cut on a sharp diagonal into 2 pieces with a serrated knife (the diagonal cut maximizes the surface area visible and is the canonical Cuban-cafeteria presentation). Serve immediately; a cooled Cubano loses the textural distinction between the molten cheese and the crackly crust."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Cuban sandwich","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/cuban-sandwich.html"}]}</script>
 </head>
@@ -47,20 +47,46 @@
 
 <nav class="topnav" aria-label="Site">
   <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
-    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep" aria-hidden="true"> · </span><span class="topnav-brand-en">recipes</span>
   </a>
   <div class="topnav-right">
-    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-primary">
+      <a href="../../pages/explore/index.html" class="topnav-link" data-nav="explore">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-link" data-nav="pantry">Pantry match</a>
+    </div>
+    <div class="topnav-utility">
+      <a href="../../random.html" class="topnav-icon" data-nav="random" aria-label="Open a random recipe" title="Random recipe">
+        <span class="topnav-icon-glyph" aria-hidden="true">⟳</span>
+        <span class="topnav-icon-label">Random</span>
+      </a>
+      <a href="../../pages/saved.html" class="topnav-icon" data-nav="saved" aria-label="Saved recipes" title="Saved">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="topnav-icon-label">Saved</span>
+      </a>
+      <a href="../../pages/settings.html" class="topnav-icon" data-nav="settings" aria-label="Personalization settings" title="Settings">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="topnav-icon-label">Settings</span>
+      </a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
     </button>
+    <button class="topnav-menu-btn" type="button" aria-label="Open menu" aria-controls="topnav-sheet" aria-expanded="false" id="topnav-menu-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="topnav-sheet" id="topnav-sheet" hidden aria-hidden="true">
+  <div class="topnav-sheet-panel" role="dialog" aria-label="Site menu" aria-modal="true">
+    <a href="../../pages/explore/index.html" class="topnav-sheet-link">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-sheet-link">Pantry match</a>
+    <a href="../../random.html" class="topnav-sheet-link">Random recipe</a>
+    <a href="../../pages/saved.html" class="topnav-sheet-link">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-sheet-link">Settings</a>
+  </div>
+</div>
 
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
 
@@ -546,7 +572,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>

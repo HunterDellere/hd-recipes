@@ -34,6 +34,45 @@ else { window.__enhanceInit = true; (function () {
     });
   }
 
+  // ── Topnav sheet (mobile drawer) ──────────────────────────────────────
+  // Below 560px, primary + utility nav collapse into a slide-down sheet.
+  // The hamburger button toggles open/close; click outside, Escape, or any
+  // link inside the sheet closes it. Body scroll is locked while open so the
+  // background can't scroll under the sheet on iOS.
+  const menuBtn = document.getElementById('topnav-menu-btn');
+  const sheet = document.getElementById('topnav-sheet');
+  if (menuBtn && sheet) {
+    const setOpen = (open) => {
+      if (open) {
+        sheet.hidden = false;
+        // next frame so the transition runs
+        requestAnimationFrame(() => sheet.setAttribute('data-open', 'true'));
+      } else {
+        sheet.removeAttribute('data-open');
+        // wait for transition before hiding from AT
+        setTimeout(() => { if (sheet.getAttribute('data-open') !== 'true') sheet.hidden = true; }, 220);
+      }
+      sheet.setAttribute('aria-hidden', open ? 'false' : 'true');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+    menuBtn.addEventListener('click', () => {
+      setOpen(sheet.getAttribute('data-open') !== 'true');
+    });
+    sheet.addEventListener('click', (e) => {
+      // Backdrop click (anywhere outside the panel) or any link inside closes.
+      if (e.target === sheet || e.target.closest('.topnav-sheet-link')) setOpen(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && sheet.getAttribute('data-open') === 'true') setOpen(false);
+    });
+    // If the viewport grows past the breakpoint while the sheet is open, close it.
+    const mq = matchMedia('(min-width: 560px)');
+    const onMq = () => { if (mq.matches && sheet.getAttribute('data-open') === 'true') setOpen(false); };
+    if (mq.addEventListener) mq.addEventListener('change', onMq);
+    else if (mq.addListener) mq.addListener(onMq);
+  }
+
   // ── Share button (Web Share API + clipboard fallback) ─────────────────
   document.querySelectorAll('[data-share]').forEach(btn => {
     const labelEl = btn.querySelector('[data-share-label]');

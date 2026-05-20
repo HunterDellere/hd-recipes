@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../../style.css?v=6">
+<link rel="stylesheet" href="../../style.css?v=7">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Salt-packed capers","description":"Salt-packed capers: Mediterranean dry cure for fresh caper buds, the technique behind Pantelleria and Salina IGP capers. 60 to 70 percent salt, 30 to 60 day cure.","url":"https://hunterdellere.github.io/hd-recipes/pages/recipes/salt-packed-capers.html","author":{"@type":"Person","name":"Hunter Dellere"},"datePublished":"2026-05-10","recipeYield":"1 servings","recipeCuisine":"Mediterranean","recipeCategory":"side","keywords":"fermentation, pantry, pickle, make-ahead, weekend-project","prepTime":"PT30M","totalTime":"PT60480M","recipeIngredient":["300 g fresh caper buds (Capparis spinosa, picked at first light)","200 g coarse sea salt (Mediterranean grey, sel gris, or any non-iodized non-anti-caking salt)","100 g additional coarse sea salt for re-packing"],"recipeInstructions":[{"@type":"HowToStep","text":"Sort the 300 g caper buds by size. Discard any open buds (yellowed, splitting, or visibly flowering; these are too far along the bud-to-flower curve and read soft after curing). The most prized grade is non-pareille (under 7 mm); the next is surfines (7 to 8 mm); larger sizes (capucines, capotes, communes) are progressively less prized but still cure successfully. Sort into size groups if you intend to grade the finished product."},{"@type":"HowToStep","text":"Spread the sorted 300 g buds in a single layer on a clean tray and let them wilt at room temperature for 24 hours. This initial wilting is non-negotiable: raw caper buds contain glucocapparin (a glucosinolate that hydrolyzes to methyl-isothiocyanate when crushed), and the wilting begins partial degradation of the glucocapparin, mellowing the harshness that makes raw capers nearly inedible. The wilted bud should feel slightly leathery rather than turgid; the color shifts from grey-green to dusty olive."},{"@type":"HowToStep","text":"Layer the wilted buds with the 200 g coarse sea salt in a non-reactive jar (glass with a wide-mouth lid is ideal). Alternate thin layers: 5 mm of salt at the bottom, then a single layer of buds, then salt covering the layer fully, then more buds, and so on, ending with salt on top. Press lightly between layers so no air pockets remain. Cover loosely (a paper-towel-and-rubber-band cover works; a tight-sealed lid traps off-gases from the early-stage fermentation and produces off-flavors)."},{"@type":"HowToStep","text":"Hold at room temperature (18 to 24 °C) for 10 days. Brine forms naturally as the salt draws moisture from the buds; by day 5 the bud layer is partially submerged in its own expressed liquid. On day 10, drain off the accumulated brine completely. The buds will have shrunk by roughly 30 percent and feel firmer and saltier when tasted (do not eat raw at this stage; the cure is still in mid-progression and the flavor will read flat and over-salty)."},{"@type":"HowToStep","text":"Re-pack with the additional 100 g coarse sea salt, replacing what dissolved into the drained brine. Layer the same way (salt-bud-salt) and seal the jar. Hold at room temperature for an additional 30 days, or refrigerated for 60 days, for the cure to complete. The buds shrink further, firm, and develop the layered floral-mustard-savory flavor of properly cured capers; the color stabilizes at dusty olive-grey."},{"@type":"HowToStep","text":"Pack for storage: transfer the cured buds to a clean glass jar with a fresh thin coat of dry salt (just enough to cover and exclude air), seal, and store at room temperature in a cool dark cabinet. The cure is shelf-stable for 1 to 2 years; some IGP-grade Italian preparations age for 6 months in a cool cellar before sale to develop further depth. To use, scoop out the desired quantity and soak in cold water for 10 minutes with one or two water changes to leach the surface salt; taste-test before adding to dishes and adjust the dish-level salt downward to compensate."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"hd · recipes","item":"https://hunterdellere.github.io/hd-recipes/"},{"@type":"ListItem","position":2,"name":"Recipes","item":"https://hunterdellere.github.io/hd-recipes/#cat-recipes"},{"@type":"ListItem","position":3,"name":"Salt-packed capers","item":"https://hunterdellere.github.io/hd-recipes/pages/recipes/salt-packed-capers.html"}]}</script>
 </head>
@@ -47,20 +47,46 @@
 
 <nav class="topnav" aria-label="Site">
   <a href="../../index.html" class="topnav-brand" aria-label="hd recipes — home">
-    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep"> · </span><span class="topnav-brand-en">recipes</span>
+    <span class="topnav-brand-mark">hd</span><span class="topnav-brand-sep" aria-hidden="true"> · </span><span class="topnav-brand-en">recipes</span>
   </a>
   <div class="topnav-right">
-    <a href="../../random.html" class="topnav-random" aria-label="Open a random recipe"><span aria-hidden="true">⟳</span> Random</a>
-    <a href="../../pages/explore/index.html" class="topnav-back" aria-label="Explore all entries">Explore</a>
-    <a href="../../pages/explore/pantry-match.html" class="topnav-back" aria-label="Find recipes by what you have">Pantry match</a>
-    <a href="../../pages/saved.html" class="topnav-saved" aria-label="Saved recipes">Saved</a>
-    <a href="../../pages/settings.html" class="topnav-settings" aria-label="Personalization settings">Settings</a>
+    <div class="topnav-primary">
+      <a href="../../pages/explore/index.html" class="topnav-link" data-nav="explore">Explore</a>
+      <a href="../../pages/explore/pantry-match.html" class="topnav-link" data-nav="pantry">Pantry match</a>
+    </div>
+    <div class="topnav-utility">
+      <a href="../../random.html" class="topnav-icon" data-nav="random" aria-label="Open a random recipe" title="Random recipe">
+        <span class="topnav-icon-glyph" aria-hidden="true">⟳</span>
+        <span class="topnav-icon-label">Random</span>
+      </a>
+      <a href="../../pages/saved.html" class="topnav-icon" data-nav="saved" aria-label="Saved recipes" title="Saved">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="topnav-icon-label">Saved</span>
+      </a>
+      <a href="../../pages/settings.html" class="topnav-icon" data-nav="settings" aria-label="Personalization settings" title="Settings">
+        <svg class="topnav-icon-glyph" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span class="topnav-icon-label">Settings</span>
+      </a>
+    </div>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="theme-toggle">
       <span class="tt-sun" aria-hidden="true">☀</span>
       <span class="tt-moon" aria-hidden="true">☾</span>
     </button>
+    <button class="topnav-menu-btn" type="button" aria-label="Open menu" aria-controls="topnav-sheet" aria-expanded="false" id="topnav-menu-btn">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<div class="topnav-sheet" id="topnav-sheet" hidden aria-hidden="true">
+  <div class="topnav-sheet-panel" role="dialog" aria-label="Site menu" aria-modal="true">
+    <a href="../../pages/explore/index.html" class="topnav-sheet-link">Explore</a>
+    <a href="../../pages/explore/pantry-match.html" class="topnav-sheet-link">Pantry match</a>
+    <a href="../../random.html" class="topnav-sheet-link">Random recipe</a>
+    <a href="../../pages/saved.html" class="topnav-sheet-link">Saved</a>
+    <a href="../../pages/settings.html" class="topnav-sheet-link">Settings</a>
+  </div>
+</div>
 
 <div class="reading-progress" aria-hidden="true"><div class="reading-progress-bar"></div></div>
 
@@ -450,7 +476,7 @@
 <script src="../../scripts/toc-scroll.js?v=6"></script>
 <script src="../../scripts/recipe.js?v=6" defer></script>
 <script src="../../scripts/lightbox.js?v=6" defer></script>
-<script src="../../scripts/enhance.js?v=6" defer></script>
+<script src="../../scripts/enhance.js?v=7" defer></script>
 <script src="../../scripts/personalization.js?v=1" defer></script>
 <script src="../../scripts/palette.js?v=6" defer></script>
 <script src="../../scripts/hover-card.js?v=6" defer></script>
