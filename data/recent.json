@@ -1,5 +1,475 @@
 [
   {
+    "path": "pages/recipes/cajun-cornbread-nachos.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cajun cornbread nachos with crawfish-andouille smother",
+    "desc": "The nacho archetype rebuilt on a Cajun chassis: a thin-baked buttermilk-cornmeal sheet cubed and toasted hard into 2 cm croutons that take the place of tortilla chips, smothered in an étouffée-leaning gravy of andouille, the holy trinity, blond roux, and crawfish tail meat, broiler-bound with melted pepper jack, then finished with a horseradish remoulade crema and a finger-knock of Crystal hot sauce at the table. The fusion bridge is structural rather than gimmick: cornbread is the canonical Cajun starch under étouffée and gumbo, and a properly toasted cornbread cube has the same crisp-shell, absorbent-interior load capacity that a tortilla chip has under chili and cheese.",
+    "tags": [
+      "shrimp",
+      "pork",
+      "comfort",
+      "spicy",
+      "smoky",
+      "umami",
+      "baked",
+      "fusion",
+      "share-plate",
+      "nachos"
+    ],
+    "status": "complete",
+    "_slug": "cajun-cornbread-nachos",
+    "cuisine": "Cajun-American fusion",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 70,
+      "total_min": 90,
+      "active_min": 60
+    },
+    "updated": "2026-05-21",
+    "diet": [],
+    "ingredients": [
+      {
+        "item": "yellow cornmeal (medium grind)",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "buttermilk, full-fat",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "bacon fat or lard, for greasing the pan",
+        "slug": "lard",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "Cajun seasoning (Tony Chachere's, Slap Ya Mama, or homemade from the blackened-redfish blend)",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "andouille sausage, sliced 8 mm thick into half-moons",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, fine dice",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "celery stalks, fine dice",
+        "optional": false
+      },
+      {
+        "item": "green bell pepper, fine dice",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "garlic, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "Cajun seasoning",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "dried thyme",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "chicken stock (homemade or low-sodium)",
+        "optional": false
+      },
+      {
+        "item": "Worcestershire sauce",
+        "slug": "worcestershire-sauce",
+        "optional": false
+      },
+      {
+        "item": "crawfish tail meat with fat (Louisiana, frozen and thawed)",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "pepper jack cheese, grated from the block on large holes",
+        "optional": false
+      },
+      {
+        "item": "sour cream, full-fat",
+        "slug": "sour-cream",
+        "optional": false
+      },
+      {
+        "item": "Dijon mustard (or Creole mustard if you can find Zatarain's)",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "prepared horseradish (jarred, white)",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "Crystal or Tabasco hot sauce",
+        "optional": false
+      },
+      {
+        "item": "scallions, thinly sliced on the bias",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, leaves picked and roughly chopped",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "Crystal or Tabasco hot sauce, at the table",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "lardon-rendering",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "quarter-sheet-pan",
+      "half-sheet-pan",
+      "dutch-oven",
+      "wide-skillet",
+      "box-grater",
+      "wire-rack"
+    ],
+    "added": "2026-05-21",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 90,
+      "diffLabel": "medium",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/lotus-root-nachos-with-mala-pork.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Lotus root nachos with Sichuan mala pork and silken-tofu queso",
+    "desc": "The nacho archetype rebuilt on a Sichuan chassis: lotus root sliced 1.5 mm on a mandoline and two-stage deep-fried into glassy wagon-wheel chips that take the place of tortilla chips, draped with a brilliant red mala pork mince (ground pork rendered into doubanjiang oil, finished with Shaoxing, soy, ground Sichuan peppercorn, and a splash of Chinkiang black vinegar), drizzled with a silken-tofu queso (silken tofu blended with white miso, Chinese sesame paste, and light soy, then briefly heated to nappe), scattered with Chinkiang-pickled red onion, scallion, cilantro, sesame, and finished with a pour of Sichuan chili oil (with sediment). The fusion bridge is structural rather than gimmick: lotus chips are the canonical Sichuan dry-pot crunch, the queso replaces dairy with the equivalent umami-fat-creaminess of fermented soy and ground sesame, and the mala pork is essentially Sichuan ground-pork sauce (zha jiang style) reformatted to drape rather than cling to noodles.",
+    "tags": [
+      "pork",
+      "tofu",
+      "fried",
+      "spicy",
+      "umami",
+      "fermented",
+      "fusion",
+      "share-plate",
+      "nachos"
+    ],
+    "status": "complete",
+    "_slug": "lotus-root-nachos-with-mala-pork",
+    "cuisine": "Sichuan-American fusion",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 30,
+      "total_min": 50,
+      "active_min": 45
+    },
+    "updated": "2026-05-21",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "lotus root (crisp-grade, the tip segments)",
+        "slug": "lotus-root",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "white vinegar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (rice bran, peanut, or canola) for deep-frying",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, toasted and ground",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "ground pork (80/20 fat ratio)",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "doubanjiang (Pixian fermented broad bean paste)",
+        "slug": "doubanjiang",
+        "optional": false
+      },
+      {
+        "item": "garlic, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "ginger, finely minced",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce",
+        "slug": "dark-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "Sichuan peppercorns, toasted and ground",
+        "slug": "sichuan-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "Chinkiang black vinegar",
+        "slug": "chinkiang-vinegar",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "silken tofu, soft (kinugoshi)",
+        "slug": "silken-tofu",
+        "optional": false
+      },
+      {
+        "item": "white miso (shiro miso)",
+        "slug": "white-miso",
+        "optional": false
+      },
+      {
+        "item": "Chinese sesame paste (zhima jiang, toasted-sesame, not raw tahini)",
+        "slug": "sesame-paste",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "mirin",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      },
+      {
+        "item": "red onion, sliced paper-thin (1 mm) on a mandoline",
+        "slug": "red-onion",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "Chinkiang black vinegar",
+        "slug": "chinkiang-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "scallion greens, sliced thin on the bias",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves, picked",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "white sesame seeds, toasted",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "Sichuan chili oil (with sediment)",
+        "slug": "chili-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "batter-frying",
+      "maillard-sear",
+      "red-oil-rendering",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "mandoline",
+      "wire-rack",
+      "wok-or-skillet",
+      "blender",
+      "small-saucepan",
+      "spider-strainer",
+      "deep-fry-thermometer"
+    ],
+    "added": "2026-05-21",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 50,
+      "diffLabel": "medium",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
     "path": "pages/recipes/aji-de-gallina.html",
     "type": "recipe",
     "category": "recipes",
@@ -2861,284 +3331,6 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/shojin-kenchinjiru-temple-miso-soup.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Shōjin kenchinjiru: Zen Buddhist temple vegetable miso soup",
-    "desc": "A shōjin ryōri (Japanese Buddhist temple cuisine) vegetable soup built on kombu-shiitake dashi (no animal product, the canonical Buddhist substitute for kombu-katsuobushi), with root vegetables sesame-oil-toasted before simmering, plus crumbled firm tofu and konnyaku. Originated at Kenchō-ji, the Zen temple in Kamakura founded in 1253, where the soup is said to have been a daily monastery preparation that spread through the Rinzai-school temple network and into broader Japanese cooking. A bowl of profound umami built entirely from vegetables and seaweed, the structural proof that Japanese cuisine does not need animal-based dashi to produce a complete and deeply savory soup.",
-    "tags": [
-      "soup",
-      "umami",
-      "vegan"
-    ],
-    "status": "complete",
-    "_slug": "shojin-kenchinjiru-temple-miso-soup",
-    "cuisine": "Japanese",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 30,
-      "total_min": 55,
-      "active_min": 30
-    },
-    "updated": "2026-05-15",
-    "diet": [
-      "vegan",
-      "vegetarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "kombu (dried kelp)",
-        "slug": "kombu",
-        "optional": false
-      },
-      {
-        "item": "dried shiitake mushroom (donko grade if available)",
-        "slug": "dried-shiitake",
-        "optional": false
-      },
-      {
-        "item": "cold water for the dashi",
-        "optional": false
-      },
-      {
-        "item": "daikon (Japanese white radish)",
-        "slug": "daikon",
-        "optional": false
-      },
-      {
-        "item": "carrot",
-        "slug": "carrot",
-        "optional": false
-      },
-      {
-        "item": "burdock root (gobō)",
-        "slug": "burdock-root",
-        "optional": false
-      },
-      {
-        "item": "satoimo (Japanese taro) or substitute sweet potato",
-        "slug": "sweet-potato",
-        "optional": false
-      },
-      {
-        "item": "konnyaku (yam cake)",
-        "slug": "konnyaku",
-        "optional": false
-      },
-      {
-        "item": "firm tofu (momen-dōfu)",
-        "slug": "firm-tofu",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "red miso, or awase miso",
-        "slug": "red-miso",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, peeled and finely grated on a microplane",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "shichimi togarashi or sansho pepper (optional, finishing spice)",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "cold-soak-dashi",
-      "dashi",
-      "mise-en-place",
-      "sesame-oil-sear",
-      "simmering"
-    ],
-    "equipment": [
-      "heavy-pot-or-donabe",
-      "fine-mesh-sieve",
-      "sharp-knife-for-sasagaki",
-      "microplane"
-    ],
-    "added": "2026-05-15",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 55,
-      "diffLabel": "easy",
-      "timeLead": "55 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/thai-pork-larb-meatballs.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Thai pork larb meatballs",
-    "desc": "A meatball reformatting of larb moo, the canonical northeastern Thai (Isan) and Lao minced-pork salad. The classic larb is a loose minced-meat preparation eaten with sticky rice and fresh herbs; here the same flavor system, fish sauce, lime, toasted rice powder, fresh herbs, dried chili, shallot, is rolled into bite-sized meatballs, browned hard in a skillet to maximize the toasted-meat flavor that anchors the dish, then tossed off-heat with the larb dressing and a heap of mint, cilantro, and scallion. The result eats like larb in cocktail-meatball form: high-acid, fish-sauce-forward, fresh-herb-heavy, with the toasted rice powder providing the structural toasted character and a faint sandy texture on the meatball surface.",
-    "tags": [
-      "pork",
-      "umami",
-      "spicy",
-      "quick"
-    ],
-    "status": "complete",
-    "_slug": "thai-pork-larb-meatballs",
-    "cuisine": "Thai",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 15,
-      "total_min": 35,
-      "active_min": 25
-    },
-    "updated": "2026-05-15",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "glutinous rice (sticky rice / sweet rice), raw",
-        "optional": false
-      },
-      {
-        "item": "makrut lime leaves (optional, for perfuming the toasting rice)",
-        "optional": true
-      },
-      {
-        "item": "ground pork (75/25 shoulder)",
-        "slug": "ground-pork",
-        "optional": false
-      },
-      {
-        "item": "shallots, very finely minced",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "garlic, finely grated on a microplane",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "lemongrass, tender inner core only, finely minced",
-        "optional": false
-      },
-      {
-        "item": "fish sauce",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "white pepper, freshly ground",
-        "slug": "white-pepper",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (refined avocado, rice bran, or grapeseed)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "fish sauce",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "lime juice, freshly squeezed",
-        "slug": "lime",
-        "optional": false
-      },
-      {
-        "item": "palm sugar (or light brown sugar)",
-        "slug": "palm-sugar",
-        "optional": false
-      },
-      {
-        "item": "Thai dried red chili flakes (prik bon)",
-        "slug": "dried-chilies",
-        "optional": false
-      },
-      {
-        "item": "shallots, very thinly sliced into rings",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "fresh mint leaves",
-        "slug": "mint",
-        "optional": false
-      },
-      {
-        "item": "cilantro, leaves and tender stems, roughly chopped",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "sawtooth coriander (culantro / pak chee farang)",
-        "slug": "culantro",
-        "optional": true
-      },
-      {
-        "item": "scallions, thinly sliced on the bias",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "toasted rice powder (from Phase 1, ground)",
-        "optional": false
-      },
-      {
-        "item": "steamed sticky rice",
-        "optional": false
-      },
-      {
-        "item": "raw vegetables for scooping (Napa cabbage leaves, cucumber spears, long beans, lettuce leaves)",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "myosin-extraction",
-      "maillard-sear"
-    ],
-    "equipment": [
-      "heavy-skillet",
-      "mortar-and-pestle",
-      "microplane"
-    ],
-    "added": "2026-05-15",
-    "_card": {
-      "swatchIndex": 11,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 35,
-      "diffLabel": "medium",
-      "timeLead": "35 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
     }
   }
 ]
