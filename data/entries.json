@@ -1,5 +1,242 @@
 [
   {
+    "path": "pages/ingredients/chinese-five-spice.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Chinese five-spice powder (五香粉)",
+    "desc": "A ground blend of star anise, fennel, clove, cinnamon, and Sichuan peppercorn, balanced to span the five Chinese flavor categories (sweet, sour, bitter, pungent, salty in the traditional cosmology; anethole-dominant sweet-spice in the cup). The signature spice of southern Chinese red-braising, master stocks, char siu, and crisp-skin roasted duck.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "chinese-five-spice",
+    "updated": "2026-05-25",
+    "added": "2026-05-25",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/monosodium-glutamate.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Monosodium glutamate (MSG, 味精)",
+    "desc": "The sodium salt of glutamic acid, refined to a white crystalline powder. The purest delivery vehicle for umami in any pantry: glutamate without the body, color, funk, or salt load that comes with soy sauce, miso, fish sauce, or parmesan.",
+    "tags": [
+      "pantry",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "monosodium-glutamate",
+    "updated": "2026-05-25",
+    "added": "2026-05-25",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/shanghai-noodles.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Shanghai noodles (cu mian, 粗面)",
+    "desc": "Thick, chewy round wheat noodles, roughly 2 to 3 mm in diameter, made from flour, water, and salt with no egg and no alkaline (kansui). The starch-heavy noodle behind Shanghai-style stir-fries (cu chao mian), hearty soups, and the noodle that holds up to rich brown sauces without dissolving.",
+    "tags": [
+      "noodles",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "shanghai-noodles",
+    "updated": "2026-05-25",
+    "added": "2026-05-25",
+    "_card": {
+      "swatchIndex": 5,
+      "swatchGlyph": "grain",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/beef-and-mushroom-noodle-soup-with-xiao-long-bao-aspic.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Beef and mushroom noodle soup with xiao long bao aspic",
+    "desc": "A homestyle improvisation built on a cup of leftover xiao long bao pork-skin aspic that melts into a 4-cup beef broth, doubling the broth body and turning a thin soup into something silken. 1 lb of ground beef hard-seared to fond, ginger and scallion and star anise bloomed in the rendered fat, a half teaspoon of Chinese five-spice for a hint of red-braise warmth, dried shiitake (rehydrated, soaking liquid kept) and a pinch of MSG for stacked glutamate plus guanylate, baby Yukon Gold potatoes simmered into the broth for starch and bite, a cluster of blue oyster mushrooms dry-seared and added at the end for layered umami and meaty pull, finished with thick Shanghai noodles, a drizzle of Chinkiang vinegar and toasted sesame oil, white pepper, and scallion greens. The technique trick is the aspic: a cup of chilled pork-skin gel concentrates more collagen than 4 hours of bone simmer, and it dissolves into the broth in two minutes of warming. A leftover-driven dish that eats like a planned one.",
+    "tags": [
+      "beef",
+      "pork",
+      "soup",
+      "noodles",
+      "umami",
+      "comfort",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "beef-and-mushroom-noodle-soup-with-xiao-long-bao-aspic",
+    "cuisine": "Chinese",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 40,
+      "total_min": 115,
+      "active_min": 35
+    },
+    "updated": "2026-05-25",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried shiitake mushroom (donko grade if available)",
+        "slug": "dried-shiitake",
+        "optional": false
+      },
+      {
+        "item": "cold water (for the shiitake soak)",
+        "optional": false
+      },
+      {
+        "item": "ground beef (80/20 chuck)",
+        "slug": "ground-beef",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (refined avocado, grapeseed, or rice bran)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for seasoning the beef during the sear)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, peeled and sliced into 3 mm coins",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, smashed (skin removed)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "scallions, white and pale-green parts only (reserve the dark greens for garnish)",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "star anise (whole pod)",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "Chinese five-spice powder",
+        "slug": "chinese-five-spice",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "xiao long bao aspic (leftover, chilled and firm)",
+        "optional": false
+      },
+      {
+        "item": "beef broth (low-sodium, ideally homemade)",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce (sheng chou)",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark soy sauce (lao chou)",
+        "slug": "dark-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "MSG (Ajinomoto or equivalent)",
+        "slug": "monosodium-glutamate",
+        "optional": false
+      },
+      {
+        "item": "baby Yukon Gold potatoes (or any waxy baby potato)",
+        "slug": "waxy-potato",
+        "optional": false
+      },
+      {
+        "item": "blue oyster mushroom cluster (Pleurotus ostreatus var. columbinus)",
+        "slug": "oyster-mushroom",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for the mushroom sear)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh Shanghai noodles (cu mian, thick round wheat noodles)",
+        "slug": "shanghai-noodles",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil (for finishing each bowl)",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      },
+      {
+        "item": "Chinkiang black vinegar (for finishing each bowl)",
+        "slug": "chinkiang-vinegar",
+        "optional": false
+      },
+      {
+        "item": "white pepper, freshly ground (for finishing each bowl)",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "scallion greens, sliced thin (reserved from Phase 3)",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear",
+      "blooming-aromatics",
+      "deglazing"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "wide-skillet"
+    ],
+    "added": "2026-05-25",
+    "_card": {
+      "swatchIndex": 6,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 115,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/recipes/ube-halaya-crinkle-cookies.html",
     "type": "recipe",
     "category": "recipes",
@@ -24277,7 +24514,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -29215,7 +29452,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 77,
+      "usedInCount": 78,
       "hasNutrition": false
     }
   },
@@ -29317,7 +29554,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -29976,7 +30213,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -35201,7 +35438,7 @@
       "swatchIndex": 9,
       "swatchGlyph": "fire",
       "primaryTag": "beef",
-      "usedInCount": 13,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -42358,7 +42595,7 @@
       "swatchIndex": 5,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -42398,7 +42635,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -42476,7 +42713,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 162,
+      "usedInCount": 163,
       "hasNutrition": true
     }
   },
@@ -42516,7 +42753,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 48,
+      "usedInCount": 49,
       "hasNutrition": true
     }
   },
@@ -42620,7 +42857,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 62,
+      "usedInCount": 63,
       "hasNutrition": true
     }
   },
@@ -42660,7 +42897,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -42803,7 +43040,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -43584,7 +43821,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 28
+      "usedInCount": 29
     }
   },
   {
@@ -44138,7 +44375,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 65,
+      "usedInCount": 66,
       "hasNutrition": true
     }
   },
@@ -44195,7 +44432,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 168,
+      "usedInCount": 169,
       "hasNutrition": true
     }
   },
@@ -44252,7 +44489,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 14,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -44271,7 +44508,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 32,
+      "usedInCount": 33,
       "hasNutrition": true
     }
   },
@@ -45866,7 +46103,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 64
+      "usedInCount": 65
     }
   },
   {
@@ -45936,7 +46173,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 15
+      "usedInCount": 16
     }
   },
   {
@@ -46006,7 +46243,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 78
+      "usedInCount": 79
     }
   },
   {
@@ -46080,6 +46317,155 @@
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
       "usedInCount": 3
+    }
+  },
+  {
+    "path": "pages/recipes/fresh-shanghai-noodles.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Fresh Shanghai noodles (cu mian)",
+    "desc": "Thick, chewy round wheat noodles made from a stiff salt-water dough, rolled by hand and cut to a 2 to 3 mm round cross-section. The fresh version is structurally better than the store-bought vacuum-pack equivalent (more elastic chew, cleaner wheat flavor, no oil coating to wash off) and takes about 90 minutes of hands-on time. Stub.",
+    "tags": [
+      "noodles",
+      "weekend-project"
+    ],
+    "status": "stub",
+    "_slug": "fresh-shanghai-noodles",
+    "cuisine": "Chinese",
+    "course": "side",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 90,
+      "cook_min": 5,
+      "total_min": 95,
+      "active_min": 60
+    },
+    "updated": "2026-05-25",
+    "diet": [
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "high-protein wheat flour (bread flour or Chinese gao jin flour)",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "cornstarch or all-purpose flour",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-05-25",
+    "_card": {
+      "swatchIndex": 6,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 95,
+      "diffLabel": "medium",
+      "timeLead": "1 h 35 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/xiao-long-bao-aspic.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Xiao long bao aspic (pork skin and bone gelatin)",
+    "desc": "Concentrated pork-skin and pork-bone broth, simmered hard for hours and chilled to set into a sliceable aspic. The structural trick behind xiao long bao and sheng jian bao (the cubes of aspic melt back to broth inside the dumpling under steam, producing the burst of soup that defines the form). Leftover aspic doubles as a body-builder for any soup, braise, or sauce. Stub.",
+    "tags": [
+      "pork",
+      "pantry",
+      "make-ahead",
+      "weekend-project",
+      "freezer-friendly"
+    ],
+    "status": "stub",
+    "_slug": "xiao-long-bao-aspic",
+    "cuisine": "Chinese",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 240,
+      "total_min": 720,
+      "active_min": 30
+    },
+    "updated": "2026-05-25",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "pork skin (fresh, scraped of any clinging fat)",
+        "optional": false
+      },
+      {
+        "item": "pork bones (neck, knuckle, or trotter)",
+        "optional": false
+      },
+      {
+        "item": "cold water (for blanch)",
+        "optional": false
+      },
+      {
+        "item": "cold water (fresh, after blanch)",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger, smashed",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "scallion whites",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "Shaoxing wine",
+        "slug": "shaoxing-wine",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "dutch-oven"
+    ],
+    "added": "2026-05-25",
+    "_card": {
+      "swatchIndex": 6,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 720,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
