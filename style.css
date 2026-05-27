@@ -891,9 +891,27 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   padding: .55rem 1.05rem .9rem;
   margin: 0;
 }
-.ing-list-shop { list-style: none; }
-.ing-mise-body .ing-list { padding: 0; }
+.ing-list-shop .ing-list,
+.ing-mise-body .ing-list { padding: 0; list-style: none; }
+.ing-list-shop .ing-group-head:first-child,
 .ing-mise-body .ing-group-head:first-child { margin-top: .25rem; }
+
+/* Shop-section heads: same typographic treatment as the per-phase mise
+   heads, with a small count badge so the cook sees how many items in each
+   aisle at a glance ("Produce 6" beats counting rows). */
+.ing-shop-section { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; }
+.ing-shop-section-count {
+  font-family: var(--font-sans);
+  font-size: var(--t-tiny);
+  font-weight: 500;
+  color: var(--ink-faint);
+  background: var(--bg-soft);
+  border: 1px solid var(--rule-soft);
+  border-radius: var(--r-pill);
+  padding: 1px 8px;
+  letter-spacing: 0;
+  text-transform: none;
+}
 
 /* Pack rows: render "N × can-label" instead of qty/unit. Pack labels are
    long ("13.5 oz / 400 ml can"), so the row's grid relaxes its qty column

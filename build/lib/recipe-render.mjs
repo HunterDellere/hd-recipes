@@ -7,6 +7,7 @@ import MarkdownIt from 'markdown-it';
 import { fmtMinutes, frameRecipeTime } from './cards.mjs';
 import { classifyIngredients } from './units.mjs';
 import { renderPicture, relPrefixFor } from './images.mjs';
+import { sectionFor, SECTIONS, SECTION_LABEL } from './shop-section.mjs';
 
 const md = new MarkdownIt({ html: false, linkify: false, typographer: false, breaks: false });
 
@@ -614,10 +615,14 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
         </li>`;
   };
 
-  // Shopping list = pack + plain rows in declaration order. Hides derived
-  // (their grams already roll up into the parent pack).
-  const shopRows = classified.filter(r => r.role !== 'derived');
-  const shopHtml = shopRows.map(r => renderRow(r, { variant: 'shop' })).join('');
+  // Shopping list = aggregated + sectioned. Same ingredient appearing in
+  // multiple phases is summed into one row; rows are grouped by store aisle
+  // (Produce, Meat & seafood, Pantry, …) so the cook can walk the store in
+  // section order, not in cooking-phase order. Derived rows drop out — their
+  // grams already roll up into the parent pack.
+  const shopAggregates = aggregateForShop(classified.filter(r => r.role !== 'derived'));
+  const shopHtml = renderShopSections(shopAggregates, currentPath);
+  const itemCount = shopAggregates.length;
 
   // Mise breakdown = plain + derived rows, grouped by phase. Hides packs that
   // are split into derived rows (those slices already cover what each phase
@@ -646,7 +651,6 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
   }).join('\n');
 
   const phaseCount = phaseGroups.filter(Boolean).length;
-  const itemCount = shopRows.length;
   const baseServings = fm.servings || 1;
   return `
     <span class="section-anchor" id="ingredients"></span>
@@ -690,8 +694,8 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
             <span class="ing-panel-chev" aria-hidden="true">▾</span>
           </span>
         </summary>
-        <ol class="ing-list ing-list-shop">${shopHtml}
-        </ol>
+        <div class="ing-list-shop">${shopHtml}
+        </div>
       </details>
       ${phaseCount > 0 ? `<details class="ing-panel ing-panel-mise" data-ing-panel="mise">
         <summary class="ing-panel-summary">
@@ -705,6 +709,175 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
         </div>
       </details>` : ''}
     </div>`;
+}
+
+// ── Shopping list: aggregation + section grouping ───────────────────────────
+//
+// The shop view differs from the mise in three ways:
+//   1. Same ingredient declared twice (phase 1 + phase 5) sums into one row.
+//   2. Rows group by store-aisle section, not by cooking phase.
+//   3. Display name drops prep ("garlic, minced" → "garlic") so the cook reads
+//      the bare shopping handle, not the cooking-side instruction.
+// Pre-aggregation happens at build time so the rendered row carries the total
+// quantity in data-qty; the client scaler then multiplies that single number
+// by the servings factor exactly as it does for any other row.
+const PREP_KEYWORDS = /\b(diced|minced|sliced|grated|chopped|crushed|melted|softened|toasted|julienned|cubed|halved|quartered|trimmed|peeled|seeded|cored|stemmed|deveined|cleaned|rinsed|drained|thawed|finely|coarsely|roughly|thinly|thickly|cut|torn|smashed|crumbled|shredded|cracked|broken|fresh|room temperature|cold|at room|ground|whole|picked|patted dry|for greasing|for dusting|for serving|for finishing|for garnish|optional)\b/i;
+
+function bareSlugRef(slugRef) {
+  return slugRef ? String(slugRef).toLowerCase().replace(/^ingredients\//, '').trim() : '';
+}
+
+// Normalize an item string for aggregation-key matching only — display still
+// uses the first contributor's original text. Strips prep clauses and
+// parentheticals so "Cajun seasoning" and "Cajun seasoning (Tony Chachere's…)"
+// hash to the same key.
+function normItem(s) {
+  return stripPrepClause(String(s || ''))
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, '')
+    .replace(/[,;]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Strip a trailing prep clause from an ingredient's item text. Walks left to
+// right tracking paren depth so commas inside parentheticals (e.g. "crawfish
+// tail meat with fat (Louisiana, frozen and thawed)") don't get treated as
+// clause boundaries. Strips from the first top-level comma whose tail reads
+// like prep ("garlic, minced" → "garlic") while leaving buying distinctions
+// alone ("buttermilk, full-fat").
+function stripPrepClause(text) {
+  let depth = 0;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (c === '(') depth++;
+    else if (c === ')') depth = Math.max(0, depth - 1);
+    else if (c === ',' && depth === 0) {
+      const tail = text.slice(i + 1).trim();
+      if (PREP_KEYWORDS.test(tail)) return text.slice(0, i).trim();
+    }
+  }
+  return text;
+}
+
+function shopDisplayName(ing, page) {
+  const fm = page && (page._fm || page.fm);
+  if (fm && fm.title) return fm.title;
+  return stripPrepClause(String(ing.item || '')).trim();
+}
+
+function aggregateForShop(rows) {
+  const order = [];
+  const groups = new Map();
+  for (const r of rows) {
+    const ing = r.ing;
+    const slug = bareSlugRef(ing.slug);
+    const idPart = slug || normItem(ing.item);
+    const unitPart = r.role === 'pack'
+      ? `pack:${(r.pack && r.pack.size_label) || ''}`
+      : (ing.unit || 'each');
+    const key = `${r.role}|${idPart}|${unitPart}`;
+    let g = groups.get(key);
+    if (!g) {
+      g = {
+        key, role: r.role, ing, page: r.page, pack: r.pack,
+        totalQty: 0,
+        nonNumericQtys: [],
+        allOptional: true,
+        section: sectionFor(r),
+        contributors: [],
+      };
+      groups.set(key, g);
+      order.push(g);
+    }
+    const q = typeof ing.qty === 'number' ? ing.qty : null;
+    if (q != null) g.totalQty += q;
+    else if (ing.qty) g.nonNumericQtys.push(String(ing.qty));
+    if (!ing.optional) g.allOptional = false;
+    g.contributors.push(r);
+  }
+  return order;
+}
+
+function renderShopSections(aggregates, currentPath) {
+  if (!aggregates.length) return '';
+  const bySection = new Map();
+  for (const g of aggregates) {
+    if (!bySection.has(g.section)) bySection.set(g.section, []);
+    bySection.get(g.section).push(g);
+  }
+  const out = [];
+  for (const { key, label } of SECTIONS) {
+    const items = bySection.get(key);
+    if (!items || !items.length) continue;
+    items.sort((a, b) => shopDisplayName(a.ing, a.page).localeCompare(shopDisplayName(b.ing, b.page)));
+    const head = `<h3 class="ing-group-head ing-shop-section" data-shop-section="${escapeHtml(key)}">${escapeHtml(label)} <span class="ing-shop-section-count">${items.length}</span></h3>`;
+    const rows = items.map(g => renderShopAggregateRow(g, currentPath)).join('');
+    out.push(`${head}<ol class="ing-list ing-list-shop-section">${rows}\n      </ol>`);
+  }
+  return out.join('\n');
+}
+
+function renderShopAggregateRow(g, currentPath) {
+  const ing = g.ing;
+  const page = g.page;
+  const role = g.role;
+  const pack = g.pack;
+  const displayName = shopDisplayName(ing, page);
+
+  // Crosslink the canonical name when contributors carried a slug. (All
+  // contributors share the same slug by aggregation key.)
+  let label = escapeHtml(displayName);
+  if (ing.slug && page) {
+    const href = relPath(currentPath, page.path);
+    label = `<a class="ing-link" href="${escapeHtml(href)}">${label}</a>`;
+  }
+
+  // Pull density + imperial pref from the first contributor's row (per-row
+  // override beats the page default). All contributors share a slug so these
+  // values are consistent in practice.
+  const tfm = page && (page._fm || page.fm) ? (page._fm || page.fm) : null;
+  const density = ing.density_g_per_ml ?? (tfm && tfm.density_g_per_ml);
+  const impPref = ing.imperial_pref   ?? (tfm && tfm.imperial_pref);
+  const densityAttr = (typeof density === 'number') ? ` data-density="${density}"` : '';
+  const impPrefAttr = impPref ? ` data-imp-pref="${escapeHtml(impPref)}"` : '';
+
+  // Format the aggregated qty using the same fmtQty logic as the row renderer.
+  const qty = fmtQty(g.totalQty);
+  const unit = ing.unit ? escapeHtml(ing.unit) : '';
+  const isScalable = g.totalQty > 0;
+  const isConvertible = isScalable && unit && unit !== 'each' && unit !== 'pinch' && unit !== 'clove';
+  const alt = isConvertible ? ` <span class="ing-alt" data-ing-alt aria-hidden="true"></span>` : '';
+  const opt = g.allOptional && ing.optional ? `<span class="ing-opt">optional</span>` : '';
+
+  const packAttrs = (role === 'pack' && pack)
+    ? ` data-pack-role="pack"` +
+      (pack.size_ml != null ? ` data-pack-size-ml="${pack.size_ml}"` : '') +
+      (pack.size_g  != null ? ` data-pack-size-g="${pack.size_g}"`  : '') +
+      (pack.size_label ? ` data-pack-label="${escapeHtml(pack.size_label)}"` : '')
+    : '';
+  const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${packAttrs}` + (isScalable ? ' data-scalable="1"' : '');
+
+  let qtyCol;
+  if (role === 'pack' && pack && (pack.size_ml || pack.size_g) && pack.size_label) {
+    const sizeBase = pack.size_ml || pack.size_g;
+    const initialCount = isScalable ? Math.max(1, Math.ceil(g.totalQty / sizeBase)) : '';
+    qtyCol = `<span class="ing-qty ing-qty-pack">
+            <span data-pack-count>${initialCount}</span> × <span data-pack-label-text>${escapeHtml(pack.size_label)}</span>
+          </span>`;
+  } else if (!isScalable && g.nonNumericQtys.length) {
+    // Pure-string qtys ("to taste") — surface the literal text, no scaling.
+    qtyCol = `<span class="ing-qty"><span data-ing-qty>${escapeHtml(g.nonNumericQtys[0])}</span> <span data-ing-unit>${unit}</span></span>`;
+  } else {
+    qtyCol = `<span class="ing-qty"><span data-ing-qty>${qty}</span> <span data-ing-unit>${unit}</span></span>`;
+  }
+
+  return `
+        <li class="ing-row${role === 'pack' ? ' ing-row-pack' : ''}" ${dataAttrs}>
+          <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
+          ${qtyCol}
+          <span class="ing-name">${label}${alt}${opt}</span>
+        </li>`;
 }
 
 export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredientBySlug) {

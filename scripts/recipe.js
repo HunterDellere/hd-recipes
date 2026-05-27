@@ -362,18 +362,13 @@
   }
 
   function buildShoppingList(root) {
-    // Scope to the shop panel so we don't duplicate plain rows that also
-    // appear in the mise-en-place breakdown. Fall back to all rows if the
-    // panel structure isn't there (older recipes).
+    // Walk the shop panel in display order. The panel is now a sequence of
+    // <h3 class="ing-shop-section"> heads followed by <ol class="ing-list-shop-section">
+    // blocks, each grouping aggregated items by store aisle. Emit each head
+    // as a `## Section` markdown line so the clipboard list matches what the
+    // cook sees on screen.
     const shopRoot = root.querySelector('[data-ing-panel="shop"] .ing-list-shop') || root;
-    const rows = Array.from(shopRoot.querySelectorAll('.ing-row'));
-    const lines = rows.filter(r => {
-      const cb = r.querySelector('.ing-cb');
-      return !cb || !cb.checked; // include unchecked (= still need to buy)
-    }).map(r => {
-      // Pack rows render "N × <label>" — read those directly so the export
-      // says "2 × 13.5 oz / 400 ml can full-fat coconut milk" rather than the
-      // underlying ml.
+    function rowLine(r) {
       const packCountEl = r.querySelector('[data-pack-count]');
       if (packCountEl) {
         const count = packCountEl.textContent.trim();
@@ -385,9 +380,35 @@
       const unit = (r.querySelector('[data-ing-unit]') || {}).textContent.trim() || '';
       const name = (r.querySelector('.ing-name') || {}).textContent.trim();
       return `- ${qty} ${unit}  ${name}`.replace(/\s+/g, ' ').trim();
-    });
+    }
+    const out = [];
+    let currentSection = null;
+    let pendingLines = [];
+    function flush() {
+      if (!pendingLines.length) return;
+      if (currentSection) out.push(`## ${currentSection}`);
+      out.push(pendingLines.join('\n'));
+      out.push('');
+      pendingLines = [];
+    }
+    for (const el of shopRoot.querySelectorAll('.ing-shop-section, .ing-row')) {
+      if (el.classList.contains('ing-shop-section')) {
+        flush();
+        // The section heading carries a count chip; the label is the leading
+        // text node, the chip is a child span. Read the text node directly.
+        const textNode = el.firstChild;
+        currentSection = (textNode && textNode.nodeType === 3)
+          ? textNode.textContent.trim()
+          : el.textContent.trim();
+      } else {
+        const cb = el.querySelector('.ing-cb');
+        if (cb && cb.checked) continue;
+        pendingLines.push(rowLine(el));
+      }
+    }
+    flush();
     const title = document.title.split(' — ')[0];
-    return `Shopping list — ${title}\n\n${lines.join('\n')}\n`;
+    return `Shopping list — ${title}\n\n${out.join('\n').trim()}\n`;
   }
 
   function initShop(root) {
