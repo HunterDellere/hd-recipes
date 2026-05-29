@@ -34,8 +34,8 @@ export const SECTION_LABEL = Object.fromEntries(SECTIONS.map(s => [s.key, s.labe
 const BUCKETS = {
   produce: [
     'avocado', 'bananas', 'basil', 'beet-greens', 'bell-pepper', 'blood-orange',
-    'broccoli', 'burdock-root', 'calamansi', 'carrot', 'cauliflower',
-    'cherry-tomato', 'chives', 'cilantro', 'cucumber', 'culantro', 'curry-leaf',
+    'broccoli', 'brussels-sprouts', 'burdock-root', 'calamansi', 'carrot',
+    'cauliflower', 'cherry-tomato', 'chives', 'cilantro', 'cucumber', 'culantro', 'curry-leaf',
     'daikon', 'delicata-squash', 'dill', 'eggplant', 'fennel-bulb', 'fresh-thyme',
     'galangal', 'garlic', 'ginger', 'green-cabbage', 'green-chili', 'green-papaya',
     'green-plantain', 'haricots-verts', 'holy-basil', 'jalapeno',
@@ -80,7 +80,7 @@ const BUCKETS = {
     'agar-agar', 'aji-amarillo-paste', 'aji-panca-paste', 'all-purpose-flour',
     'almonds', 'anchovy-fillets', 'apple-cider-vinegar', 'assam-tea',
     'atta-flour', 'avocado-oil', 'bagoong', 'baking-powder', 'baking-soda',
-    'banana-ketchup', 'banh-trang', 'basmati-rice', 'black-beans',
+    'balsamic-vinegar', 'banana-ketchup', 'banh-trang', 'basmati-rice', 'black-beans',
     'bread-flour', 'calcium-lactate', 'candlenut', 'cane-vinegar',
     'canned-san-marzano-tomatoes', 'capers', 'ceylon-tea', 'chili-oil',
     'chinkiang-vinegar', 'chipotle-in-adobo', 'coconut-milk', 'coconut-sugar',
@@ -103,7 +103,7 @@ const BUCKETS = {
     'shaoxing-wine', 'sodium-alginate', 'sui-mi-ya-cai',
     'sweetened-condensed-milk', 'tahini', 'tamarind', 'tapioca-pearls',
     'tapioca-starch', 'teff-flour', 'terasi', 'toasted-rice-powder',
-    'toasted-sesame-oil', 'ube-halaya', 'vanilla-bean-paste', 'vanilla-extract',
+    'toasted-sesame-oil', 'tomato-paste', 'ube-halaya', 'vanilla-bean-paste', 'vanilla-extract',
     'wakame', 'walnuts', 'white-miso', 'white-rice-flour',
     'white-wine-vinegar', 'wood-ear-mushroom', 'worcestershire-sauce', 'yuzu',
   ],
