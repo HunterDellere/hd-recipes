@@ -1,5 +1,668 @@
 [
   {
+    "path": "pages/recipes/balsamic-glaze.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Balsamic glaze",
+    "desc": "A mid-grade IGP balsamic vinegar simmered down to roughly a third of its volume, optionally rounded with a little honey, until it coats a spoon and sets to a glossy, clinging syrup on cooling. The reduction concentrates both the cooked-grape-must sweetness and the acetic acid, so the glaze stays sweet-sour and sharp rather than one-note sweet. The drizzle behind roasted vegetables, seared meats, ripe fruit, and good cheese.",
+    "tags": [
+      "condiment",
+      "pantry",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "balsamic-glaze",
+    "cuisine": "Italian",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 1,
+      "cook_min": 8,
+      "total_min": 9,
+      "active_min": 8
+    },
+    "updated": "2026-05-29",
+    "diet": [
+      "vegan",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "balsamic vinegar (mid-grade IGP)",
+        "slug": "balsamic-vinegar",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": true
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "small-saucepan"
+    ],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 9,
+      "diffLabel": "easy",
+      "timeLead": "9 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 8,
+      "filterMinutes": 8
+    }
+  },
+  {
+    "path": "pages/recipes/crispy-fried-brussels-sprouts-with-fish-sauce-caramel.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Crispy fried brussels sprouts with fish sauce caramel",
+    "desc": "Halved brussels sprouts deep-fried until the leaves blister crisp and the cut faces go deep brown, then tossed in a Vietnamese-style caramel of sugar cooked to deep amber and let down with fish sauce, lime, garlic, and chili. The fry crisps the brassica leaves into shatter-light chips, and the salty-sweet-sour-funky sauce plays directly against the sulfur and char. This is the restaurant dish that converted a generation to brussels sprouts.",
+    "tags": [
+      "fried",
+      "umami",
+      "spicy",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "crispy-fried-brussels-sprouts-with-fish-sauce-caramel",
+    "cuisine": "Vietnamese",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 25,
+      "total_min": 40,
+      "active_min": 30
+    },
+    "updated": "2026-05-29",
+    "diet": [
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "brussels sprouts",
+        "slug": "brussels-sprouts",
+        "optional": false
+      },
+      {
+        "item": "neutral oil for deep-frying (rice bran, peanut, or canola)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "lime",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "garlic, grated to a paste",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "thai chili, fine-sliced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "lime",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-caramel",
+      "deep-fry"
+    ],
+    "equipment": [
+      "heavy-pot-for-frying",
+      "spider-skimmer",
+      "instant-read-thermometer",
+      "microplane"
+    ],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 40,
+      "diffLabel": "medium",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/fish-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Fish sauce",
+    "desc": "Whole small fish, usually anchovies, layered with sea salt at roughly a 3-to-1 ratio and left to ferment and autolyze for six months to a year, until the fish dissolve into a clear amber liquid driven by their own enzymes and salt-tolerant bacteria. The first-press liquid drawn off the top is the prized nuoc mam nhi or nam pla; what remains can be re-extracted with brine for a second-grade sauce. The salt of an entire region of cooking, built from two ingredients and time.",
+    "tags": [
+      "condiment",
+      "fermented",
+      "fermentation",
+      "weekend-project",
+      "pantry",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "fish-sauce",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "hard",
+    "servings": 48,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 0,
+      "total_min": 259240,
+      "active_min": 60
+    },
+    "updated": "2026-05-29",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh whole anchovies (or sardines, smelt, or other small oily fish)",
+        "optional": false
+      },
+      {
+        "item": "coarse sea salt (non-iodized, no anti-caking agents)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "filtered or non-chlorinated water",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "salt-fermentation"
+    ],
+    "equipment": [
+      "fermentation-crock",
+      "cheesecloth",
+      "fine-mesh-sieve"
+    ],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 259240,
+      "diffLabel": "hard",
+      "timeLead": "1 h",
+      "timeAnnotation": "· 180 d rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/roasted-brussels-sprouts-with-balsamic-and-parmesan.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Roasted brussels sprouts with balsamic and parmesan",
+    "desc": "Halved sprouts roasted cut-face down at 230 °C until the flat side builds a deep mahogany Maillard crust and the loose outer leaves char to chips, then tossed off the heat with a reduced balsamic glaze and a shower of microplaned parmigiano. The dish is a single sweet-sour-bitter-umami chord: caramelized brassica char, the cooked-fruit sweetness and acid of reduced balsamic, and the glutamate-and-salt of aged hard cheese.",
+    "tags": [
+      "roast",
+      "vegetarian",
+      "umami",
+      "weeknight",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "roasted-brussels-sprouts-with-balsamic-and-parmesan",
+    "cuisine": "American",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 30,
+      "total_min": 40,
+      "active_min": 15
+    },
+    "updated": "2026-05-29",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "brussels sprouts",
+        "slug": "brussels-sprouts",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "balsamic vinegar (mid-grade IGP)",
+        "slug": "balsamic-vinegar",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": true
+      },
+      {
+        "item": "parmigiano reggiano",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "flaky finishing salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear"
+    ],
+    "equipment": [
+      "rimmed-sheet-pan",
+      "microplane"
+    ],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 40,
+      "diffLabel": "easy",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/seared-steak-with-charred-brussels-sprouts-and-brown-butter.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Seared steak with charred brussels sprouts and brown butter",
+    "desc": "A one-pan dinner: brussels sprouts hard-charred cut-face down in a smoking cast-iron skillet, pushed aside while a dry-brined steak sears in the same pan, then both finished in a foaming brown butter spiked with garlic and lemon. The brassica char and mustardy bitterness cut the rendered beef fat the way a mustard or red-wine pan sauce would, and the nutty Maillard milk solids of the brown butter tie the steak and the sprouts into one plate.",
+    "tags": [
+      "beef",
+      "roast",
+      "umami",
+      "comfort",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "seared-steak-with-charred-brussels-sprouts-and-brown-butter",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 20,
+      "total_min": 750,
+      "active_min": 25
+    },
+    "updated": "2026-05-29",
+    "diet": [
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "steaks (chuck eye, ribeye, or strip), 1 inch / 2.5 cm thick",
+        "slug": "chuck-eye-steak",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "brussels sprouts",
+        "slug": "brussels-sprouts",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (high smoke point)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, cold cubed",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, smashed (skin on)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme sprigs",
+        "slug": "fresh-thyme",
+        "optional": false
+      },
+      {
+        "item": "lemon",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "flaky finishing salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining",
+      "maillard-sear",
+      "brown-butter"
+    ],
+    "equipment": [
+      "heavy-cast-iron-skillet",
+      "fish-spatula",
+      "instant-read-thermometer",
+      "wire-rack-and-sheet-pan"
+    ],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 750,
+      "diffLabel": "medium",
+      "timeLead": "25 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/shaved-brussels-sprout-salad-with-pecorino-and-hazelnut.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Shaved brussels sprout salad with pecorino and hazelnut",
+    "desc": "Raw brussels sprouts shaved paper-thin on a mandoline, dressed with a sharp lemon-dijon vinaigrette that lightly tenderizes the shreds, and tossed with microplaned pecorino, toasted hazelnuts, and shaved raw shallot. Raw sprouts are crisp and faintly peppery rather than sulfurous, hold a dressing for hours without wilting, and read as a bright, dense autumn-winter slaw with the salt of the cheese and the toasted fat of the nuts.",
+    "tags": [
+      "salad",
+      "vegetarian",
+      "umami",
+      "quick",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "shaved-brussels-sprout-salad-with-pecorino-and-hazelnut",
+    "cuisine": "Italian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 8,
+      "total_min": 28,
+      "active_min": 20
+    },
+    "updated": "2026-05-29",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "hazelnuts, raw",
+        "slug": "hazelnut",
+        "optional": false
+      },
+      {
+        "item": "lemon",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "brussels sprouts",
+        "slug": "brussels-sprouts",
+        "optional": false
+      },
+      {
+        "item": "shallot",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "pecorino romano",
+        "slug": "pecorino-romano",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [
+      "mandoline",
+      "microplane"
+    ],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 28,
+      "diffLabel": "easy",
+      "timeLead": "28 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/sheet-pan-mustard-chicken-thighs-with-brussels-sprouts.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sheet-pan mustard chicken thighs with brussels sprouts",
+    "desc": "Bone-in, skin-on chicken thighs rubbed with a dijon-maple-thyme paste and roasted on a single sheet pan above halved brussels sprouts, so the rendering chicken fat bastes the sprouts from above while the dry oven crisps the skin. The mustard glaze gives the skin a lacquered tang, the sprouts roast in schmaltz and caramelize against the maple, and a finishing splash of vinegar ties the fat, the sweetness, and the brassica char together.",
+    "tags": [
+      "chicken",
+      "sheet-pan",
+      "roast",
+      "umami",
+      "weeknight",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "sheet-pan-mustard-chicken-thighs-with-brussels-sprouts",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 35,
+      "total_min": 290,
+      "active_min": 20
+    },
+    "updated": "2026-05-29",
+    "diet": [
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "bone-in, skin-on chicken thighs",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "maple syrup",
+        "slug": "maple-syrup",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "garlic, grated to a paste",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme leaves, stripped",
+        "slug": "fresh-thyme",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "brussels sprouts",
+        "slug": "brussels-sprouts",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "rimmed-sheet-pan",
+      "wire-rack-and-sheet-pan",
+      "instant-read-thermometer",
+      "microplane"
+    ],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 290,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "· 5 h rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/techniques/deep-fry.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Deep-frying",
+    "desc": "Cook food submerged in hot oil (typically 160 to 190 °C) so that heat transfers from oil to surface fast enough to dehydrate and crisp the exterior while steam escaping from inside cooks the interior. The crust forms because surface water boils off and the dry surface climbs into the Maillard and starch-crisping range; oil temperature and dryness are the two levers that decide crisp versus greasy.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "deep-fry",
+    "updated": "2026-05-29",
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 1
+    }
+  },
+  {
     "path": "pages/recipes/gochujang-honey-chicken-tenders-with-smashed-cucumber-salad.html",
     "type": "recipe",
     "category": "recipes",
@@ -2122,928 +2785,6 @@
       "timeMode": "total",
       "activeMinutes": 40,
       "filterMinutes": 40
-    }
-  },
-  {
-    "path": "pages/recipes/avgolemono-soup.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Avgolemono soup",
-    "desc": "The Greek chicken-rice-egg-lemon soup: bone-in chicken pieces simmered in water with aromatics to build the broth, the chicken pulled and shredded, short-grain rice cooked into the broth until tender, then finished by tempering a vigorously whisked egg-and-lemon mixture into the hot broth off-heat. Structurally a textbook tempered-egg emulsion: 3 eggs whisked with 100 ml of lemon juice form an acidic foam, which is brought up to broth temperature by drizzling in 250 ml of hot broth while whisking, then poured back into the pot off-heat. The eggs cook gently into a velvety pale yellow sauce that thickens the broth and binds the rice; the lemon brightens the dish to a clean tangy finish. The canonical Greek comfort soup, and the structural foundation for the broader avgolemono sauce family.",
-    "tags": [
-      "soup",
-      "chicken",
-      "rice",
-      "egg",
-      "comfort",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "avgolemono-soup",
-    "cuisine": "Greek",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 6,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 75,
-      "total_min": 90,
-      "active_min": 30
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "bone-in skin-on chicken (mixed pieces: 2 thighs, 2 drumsticks, 2 breast halves, or a small whole chicken cut up)",
-        "optional": false
-      },
-      {
-        "item": "water (cold)",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, halved",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "celery stalks, rough chop",
-        "optional": false
-      },
-      {
-        "item": "lemon peel (no pith)",
-        "optional": false
-      },
-      {
-        "item": "bay leaf",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "whole black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt (for the broth)",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "short-grain or medium-grain rice (arborio, carolina, or Greek glasse)",
-        "optional": false
-      },
-      {
-        "item": "large eggs (whole, room temperature)",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "fresh-squeezed lemon juice (from 2 to 3 lemons)",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley or fresh dill, finely chopped",
-        "slug": "parsley",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin Greek olive oil (for finishing)",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "tempering-eggs"
-    ],
-    "equipment": [
-      "large-stockpot",
-      "fine-mesh-sieve",
-      "large-mixing-bowl",
-      "balloon-whisk",
-      "ladle"
-    ],
-    "added": "2026-05-17",
-    "_card": {
-      "swatchIndex": 9,
-      "swatchGlyph": "olive",
-      "totalMinutes": 90,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "· 1 h rest",
-      "timeMode": "active",
-      "activeMinutes": 30,
-      "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/baba-ganoush.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Baba ganoush",
-    "desc": "The Levantine smoked-eggplant dip: whole eggplants charred directly over a gas flame (or under a broiler, or on a grill) until the skin is fully blackened and the flesh has collapsed to a soft smoky pulp, then drained, mashed with tahini, lemon, garlic, and salt, and crowned with olive oil, pomegranate seeds, mint, and parsley. The structural defining feature is the smoke: oven-roasted eggplant produces a fine dip but a different and inferior one. The fire-char carries the entire identity of the dish, which is why every serious Levantine kitchen owns or improvises a way to char eggplant directly over flame.",
-    "tags": [
-      "pantry",
-      "no-cook"
-    ],
-    "status": "complete",
-    "_slug": "baba-ganoush",
-    "cuisine": "Levantine",
-    "course": "appetizer",
-    "difficulty": "easy",
-    "servings": 6,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 25,
-      "total_min": 50,
-      "active_min": 25
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "vegetarian",
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "globe eggplants",
-        "slug": "eggplant",
-        "optional": false
-      },
-      {
-        "item": "tahini (well-stirred, smooth, single-ingredient Lebanese or Palestinian)",
-        "slug": "tahini",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "garlic clove, peeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "ground cumin",
-        "slug": "ground-cumin",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil, for finishing",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "pomegranate seeds (in season) or sumac",
-        "slug": "sumac",
-        "optional": false
-      },
-      {
-        "item": "fresh flat-leaf parsley",
-        "slug": "parsley",
-        "optional": false
-      },
-      {
-        "item": "fresh mint leaves",
-        "slug": "mint",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "open-flame-char",
-      "rustic-mash",
-      "tahini-bind"
-    ],
-    "equipment": [
-      "gas-burner-or-grill",
-      "colander",
-      "mortar-or-microplane"
-    ],
-    "added": "2026-05-17",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "tagine",
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/banh-mi-thit-nuong.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Banh mi thit nuong (grilled pork banh mi)",
-    "desc": "Vietnamese sandwich of grilled lemongrass-marinated pork shoulder on a crisp-shelled, airy-crumb baguette, layered with pickled carrot and daikon (do chua), cucumber, cilantro, jalapeno, a swipe of mayonnaise, and a thread of soy. The structural identity is the contrast between the shattering baguette crust, the soft interior crumb, the smoky-sweet pork, and the bright vinegar-pickled vegetables; each bite needs all four for the sandwich to work.",
-    "tags": [
-      "pork",
-      "sandwich",
-      "weeknight",
-      "wrap"
-    ],
-    "status": "complete",
-    "_slug": "banh-mi-thit-nuong",
-    "cuisine": "Vietnamese",
-    "course": "lunch",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 15,
-      "total_min": 165,
-      "active_min": 45
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "pork shoulder, boneless",
-        "optional": false
-      },
-      {
-        "item": "lemongrass",
-        "slug": "lemongrass",
-        "optional": false
-      },
-      {
-        "item": "shallot",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "garlic",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fish sauce",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "palm sugar (or dark brown sugar)",
-        "slug": "palm-sugar",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "freshly cracked black pepper",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "carrot",
-        "slug": "carrot",
-        "optional": false
-      },
-      {
-        "item": "daikon radish",
-        "slug": "daikon",
-        "optional": false
-      },
-      {
-        "item": "rice vinegar",
-        "slug": "rice-vinegar",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "Vietnamese baguettes (or French baguette)",
-        "optional": false
-      },
-      {
-        "item": "mayonnaise",
-        "slug": "mayonnaise",
-        "optional": false
-      },
-      {
-        "item": "cucumber",
-        "slug": "cucumber",
-        "optional": false
-      },
-      {
-        "item": "cilantro, leaves and tender stems",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "fresh jalapeno",
-        "slug": "green-chili",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce, for sandwich finish",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "Maggi seasoning sauce (optional, Vietnamese canonical)",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "quick-pickle",
-      "high-heat-grill",
-      "sandwich-build"
-    ],
-    "equipment": [
-      "grill",
-      "oven"
-    ],
-    "added": "2026-05-17",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 165,
-      "diffLabel": "medium",
-      "timeLead": "45 min",
-      "timeAnnotation": "· 2 h rest",
-      "timeMode": "active",
-      "activeMinutes": 45,
-      "filterMinutes": 45
-    }
-  },
-  {
-    "path": "pages/recipes/beef-bourguignon.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Beef bourguignon",
-    "desc": "The Burgundian red-wine beef braise: chuck cubes browned hard, lardon-rendered fat as the structural base, deglazed with a full bottle of dry red Burgundy (or pinot noir), aromatic bouquet garni, slow oven braise 3 hours until the collagen converts to gelatin, finished with sautéed pearl onions and pan-glazed cremini mushrooms tucked in just before service. The structural rule is heat discipline (a tremor, never a boil, throughout the braise so the protein stays tender rather than seizing), and the structural ingredient is real Burgundy (a fruity acidic pinot, not a heavy California cab); the dish reads like the wine it was cooked in.",
-    "tags": [
-      "beef",
-      "stew",
-      "braise",
-      "weekend-project",
-      "umami",
-      "comfort",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "beef-bourguignon",
-    "cuisine": "French",
-    "course": "dinner",
-    "difficulty": "hard",
-    "servings": 6,
-    "time": {
-      "prep_min": 45,
-      "cook_min": 210,
-      "total_min": 255,
-      "active_min": 75
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "slab bacon or pancetta, in 1 cm cubes",
-        "slug": "bacon",
-        "optional": false
-      },
-      {
-        "item": "beef chuck (boneless chuck roast)",
-        "optional": false
-      },
-      {
-        "item": "kosher salt (for seasoning the beef)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, large dice",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "carrot, large dice",
-        "slug": "carrot",
-        "optional": false
-      },
-      {
-        "item": "garlic, smashed",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "tomato paste",
-        "slug": "tomato-paste",
-        "optional": false
-      },
-      {
-        "item": "red Burgundy or pinot noir (full bottle, dry, medium-body)",
-        "optional": false
-      },
-      {
-        "item": "beef stock (homemade or low-sodium)",
-        "slug": "beef-broth",
-        "optional": false
-      },
-      {
-        "item": "bouquet garni (thyme, bay, parsley stems tied with twine)",
-        "optional": false
-      },
-      {
-        "item": "pearl onions (frozen peeled, or fresh blanched and peeled)",
-        "optional": false
-      },
-      {
-        "item": "cremini mushrooms (or button), quartered",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter (for the garnish sauté)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar (for the pearl onion glaze)",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley, finely chopped",
-        "slug": "parsley",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "lardon-rendering",
-      "maillard-sear",
-      "blooming-aromatics",
-      "deglazing"
-    ],
-    "equipment": [
-      "dutch-oven",
-      "wide-skillet",
-      "tongs",
-      "kitchen-twine",
-      "wooden-spoon"
-    ],
-    "added": "2026-05-17",
-    "_card": {
-      "swatchIndex": 13,
-      "swatchGlyph": "olive",
-      "totalMinutes": 255,
-      "diffLabel": "hard",
-      "timeLead": "1 h 15 min",
-      "timeAnnotation": "· 3 h rest",
-      "timeMode": "active",
-      "activeMinutes": 75,
-      "filterMinutes": 75
-    }
-  },
-  {
-    "path": "pages/recipes/baechu-kimchi.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Baechu kimchi",
-    "desc": "Whole-leaf napa cabbage brined to soften the cell walls, then layered with a gochugaru-fish sauce paste and lacto-fermented for 3 to 7 days at room temperature before cold-storing indefinitely.",
-    "tags": [
-      "fermentation",
-      "pickle",
-      "weekend-project",
-      "make-ahead",
-      "umami",
-      "spicy"
-    ],
-    "status": "complete",
-    "_slug": "baechu-kimchi",
-    "cuisine": "Korean",
-    "course": "side",
-    "difficulty": "medium",
-    "servings": 24,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 0,
-      "total_min": 7200,
-      "active_min": 75
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "napa cabbage",
-        "slug": "napa-cabbage",
-        "optional": false
-      },
-      {
-        "item": "coarse non-iodized sea salt or kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "cold filtered water (non-chlorinated)",
-        "optional": false
-      },
-      {
-        "item": "glutinous rice flour",
-        "slug": "glutinous-rice-flour",
-        "optional": false
-      },
-      {
-        "item": "water (filtered)",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "gochugaru (Korean coarse red pepper flakes)",
-        "slug": "gochugaru",
-        "optional": false
-      },
-      {
-        "item": "fish sauce",
-        "slug": "fish-sauce",
-        "optional": false
-      },
-      {
-        "item": "saeujeot (Korean salted shrimp)",
-        "optional": true
-      },
-      {
-        "item": "garlic, grated on a microplane",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, grated on a microplane",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "asian pear or apple",
-        "optional": false
-      },
-      {
-        "item": "Korean radish (mu) or daikon",
-        "slug": "daikon",
-        "optional": false
-      },
-      {
-        "item": "scallions",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "Korean chives (buchu) or extra scallions",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-16",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 7200,
-      "diffLabel": "medium",
-      "timeLead": "1 h 15 min",
-      "timeAnnotation": "· 5 d rest",
-      "timeMode": "active",
-      "activeMinutes": 75,
-      "filterMinutes": 75
-    }
-  },
-  {
-    "path": "pages/recipes/big-mac-sauce.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Big Mac sauce (homemade copycat)",
-    "desc": "The McDonald's Big Mac special sauce, built on a real-egg mayonnaise base with sweet pickle relish, yellow mustard, white wine vinegar, paprika, garlic powder, and onion powder. Tastes substantially cleaner than the franchise version because the mayo is fresh and the relish is real chopped pickle rather than a corn-syrup gel.",
-    "tags": [
-      "condiment",
-      "copycat",
-      "no-cook",
-      "quick",
-      "emulsion"
-    ],
-    "status": "complete",
-    "_slug": "big-mac-sauce",
-    "cuisine": "American",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 8,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 0,
-      "total_min": 35,
-      "active_min": 5
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "mayonnaise (full-fat, real-egg, ideally homemade)",
-        "slug": "mayonnaise",
-        "optional": false
-      },
-      {
-        "item": "sweet pickle relish",
-        "optional": false
-      },
-      {
-        "item": "yellow mustard (American)",
-        "optional": false
-      },
-      {
-        "item": "white wine vinegar",
-        "slug": "white-wine-vinegar",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "paprika (sweet, not smoked)",
-        "optional": false
-      },
-      {
-        "item": "onion powder",
-        "optional": false
-      },
-      {
-        "item": "garlic powder",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-16",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "skillet",
-      "totalMinutes": 35,
-      "diffLabel": "easy",
-      "timeLead": "35 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 5,
-      "filterMinutes": 5
-    }
-  },
-  {
-    "path": "pages/recipes/breakfast-egg-bites-with-spinach-and-feta.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Breakfast egg bites with spinach and feta",
-    "desc": "Whole eggs blended briefly with cottage cheese, baked in a buttered standard metal muffin tin with wilted spinach, crumbled feta, scallion, and dill. The cottage cheese is the entire technique: the curds break apart in the blender into a smooth custard-like base, and the casein proteins contribute structural body that keeps the bites tender and moist rather than the rubbery quiche-muffin texture that home egg cups usually produce. Baked low and slow at 165 °C in a water bath setup, which prevents the eggs from puffing dramatically and then collapsing into denseness. Make-ahead breakfast, holds 5 days refrigerated.",
-    "tags": [
-      "make-ahead",
-      "egg"
-    ],
-    "status": "complete",
-    "_slug": "breakfast-egg-bites-with-spinach-and-feta",
-    "cuisine": "",
-    "course": "breakfast",
-    "difficulty": "easy",
-    "servings": 6,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 30,
-      "total_min": 50,
-      "active_min": 20
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh baby spinach",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil (for the wilt)",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "full-fat cottage cheese",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly ground",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "freshly grated nutmeg",
-        "optional": false
-      },
-      {
-        "item": "crumbled feta",
-        "slug": "feta",
-        "optional": false
-      },
-      {
-        "item": "scallions, thinly sliced",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "fresh dill, finely chopped",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, cold (for the muffin tin)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "boiling water (for the water bath)",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "muffin-tin",
-      "blender"
-    ],
-    "added": "2026-05-16",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "leaf",
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/chia-coconut-pudding-with-mango.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chia coconut pudding with mango",
-    "desc": "Chia seeds soaked overnight in full-fat coconut milk with maple syrup, vanilla, and a pinch of salt. The chia seeds absorb roughly 12 times their weight in liquid and gel into a soft tapioca-like pudding without cooking. Topped at serving with fresh or thawed-frozen mango (cut into 1 cm dice), toasted coconut flakes, and a small squeeze of lime that brightens the coconut-mango pairing. Vegan, gluten-free, no-cook for the pudding itself. Make-ahead breakfast or dessert; the texture continues to improve through 24 hours and holds 4 days refrigerated.",
-    "tags": [
-      "make-ahead",
-      "no-cook",
-      "pudding",
-      "tropical"
-    ],
-    "status": "complete",
-    "_slug": "chia-coconut-pudding-with-mango",
-    "cuisine": "",
-    "course": "breakfast",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 8,
-      "cook_min": 0,
-      "total_min": 368,
-      "active_min": 8
-    },
-    "updated": "2026-05-17",
-    "diet": [
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "full-fat coconut milk",
-        "slug": "coconut-milk",
-        "optional": false
-      },
-      {
-        "item": "unsweetened almond milk or oat milk (to thin slightly)",
-        "optional": false
-      },
-      {
-        "item": "chia seeds (black or white)",
-        "optional": false
-      },
-      {
-        "item": "maple syrup",
-        "slug": "maple-syrup",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "unsweetened coconut flakes (large flakes, not desiccated)",
-        "optional": false
-      },
-      {
-        "item": "ripe mango, peeled and diced",
-        "slug": "mango",
-        "optional": false
-      },
-      {
-        "item": "lime wedges",
-        "slug": "lime",
-        "optional": false
-      },
-      {
-        "item": "flaky sea salt (optional, for finishing)",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "dry-toasting"
-    ],
-    "equipment": [],
-    "added": "2026-05-16",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "whisk",
-      "totalMinutes": 368,
-      "diffLabel": "easy",
-      "timeLead": "8 min",
-      "timeAnnotation": "· 6 h rest",
-      "timeMode": "active",
-      "activeMinutes": 8,
-      "filterMinutes": 8
     }
   }
 ]

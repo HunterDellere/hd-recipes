@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-27T21:14:21.753Z",
+  "generated": "2026-05-29T23:34:18.189Z",
   "summary": {
     "errors": 0,
-    "warnings": 368,
+    "warnings": 369,
     "info": 4
   },
   "findings": [
@@ -551,6 +551,13 @@
       "file": "content/recipes/fesenjan.md",
       "msg": "technique \"long-braise\" has no matching page",
       "fix": "Create content/techniques/long-braise.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/fish-sauce.md",
+      "msg": "technique \"salt-fermentation\" has no matching page",
+      "fix": "Create content/techniques/salt-fermentation.md"
     },
     {
       "level": "WARN",
@@ -1759,19 +1766,19 @@
       "level": "INFO",
       "category": "tags",
       "file": "content/_schema/tags.json",
-      "msg": "84 tags in use across 750 entries. Top: pantry(240), umami(227), make-ahead(120), comfort(108), weekend-project(97), spicy(75), weeknight(65), pork(60), fermentation(52), no-cook(46), chicken(40), fish(40), quick(39), one-pot(37), seafood(37), rice(36), egg(30), condiment(29), beef(28), stew(23), bread(22), soup(20), salad(20), vegan(19), pickle(17), braise(15), holiday(15), fried(14), roast(13), tropical(11)"
+      "msg": "84 tags in use across 761 entries. Top: pantry(243), umami(233), make-ahead(121), comfort(113), weekend-project(98), spicy(76), weeknight(68), pork(60), fermentation(53), no-cook(46), chicken(41), quick(40), fish(40), one-pot(37), seafood(37), rice(36), condiment(31), egg(30), beef(29), stew(23), bread(22), salad(21), soup(20), vegan(19), pickle(17), roast(16), fried(15), braise(15), holiday(15), tropical(11)"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "index stats: 696 pages, 7235 tokens, 358.3 KB"
+      "msg": "index stats: 707 pages, 7302 tokens, 363.6 KB"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "3871 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil, rendered-pork-plus-ya-cai"
+      "msg": "3907 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil, rendered-pork-plus-ya-cai"
     },
     {
       "level": "WARN",
