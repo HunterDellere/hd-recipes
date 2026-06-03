@@ -1,5 +1,420 @@
 [
   {
+    "path": "pages/ingredients/fingerroot.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fingerroot (krachai)",
+    "desc": "Slender finger-like rhizome of Boesenbergia rotunda, peppery and medicinal with a faint ginseng bitterness. The defining aromatic of Thai jungle curry and freshwater-fish dishes; not interchangeable with ginger or galangal.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "fingerroot",
+    "updated": "2026-06-03",
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 3,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/green-peppercorns.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fresh green peppercorns",
+    "desc": "Immature, still-soft drupes of Piper nigrum picked unripe and used whole, often on the stem. Juicy, herbaceous, with a bright resinous heat milder and greener than dried pepper. The textural pop of Thai jungle curry and pad cha.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "green-peppercorns",
+    "updated": "2026-06-03",
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/jungle-curry-paste.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry paste (prik gaeng pa)",
+    "desc": "A pounded-fresh Central Thai jungle curry paste built on soaked dried red chilies, lemongrass, galangal, and the two aromatics that define the style: fingerroot (krachai) and a backbone of white pepper. No roasted seed spice and no sweetness, so the paste reads fierce, herbaceous, and clean rather than rounded like a red curry paste. The base for a coconut-free forest curry.",
+    "tags": [
+      "weekend-project",
+      "make-ahead",
+      "spicy",
+      "pantry",
+      "curry"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-paste",
+    "cuisine": "Thai",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 30,
+      "active_min": 30
+    },
+    "updated": "2026-06-03",
+    "ingredients": [
+      {
+        "item": "dried long red chilies (prik chee fah / Thai guajillo type), seeded",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "dried Thai bird chilies",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "lemongrass, white part only, sliced thin",
+        "slug": "lemongrass",
+        "optional": false
+      },
+      {
+        "item": "fresh galangal, peeled and sliced thin",
+        "slug": "galangal",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), peeled and sliced thin",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "makrut lime zest",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fresh coriander root (or lower cilantro stems)",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "Thai shallots (or French), peeled",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "white peppercorns",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "shrimp paste (kapi), toasted",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 30,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/jungle-curry-with-catfish.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry with catfish (kaeng pa pla duk)",
+    "desc": "A coconut-free Central Thai forest curry: jungle curry paste bloomed in oil, slackened with stock rather than coconut milk, loaded with Thai eggplant, yardlong beans, and bamboo, then sharpened with the two aromatics that define the style, fingerroot matchsticks and whole stems of fresh green peppercorn. Cured catfish steaks poach in the thin, fierce broth, their firm flake holding while the krachai cuts the freshwater back-note. Hot, herbaceous, and bracingly clean where a coconut curry is rich.",
+    "tags": [
+      "weeknight",
+      "fish",
+      "seafood",
+      "spicy",
+      "curry",
+      "herbaceous",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-with-catfish",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-06-03",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "catfish steaks (skin-on, bone-in, 2 to 3 cm thick)",
+        "slug": "catfish",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "jungle curry paste (store-bought, or red curry paste)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "makrut lime leaves, bruised",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), cut in fine matchsticks",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "Thai eggplant, quartered",
+        "slug": "eggplant",
+        "optional": false
+      },
+      {
+        "item": "yardlong beans, cut in 4 cm lengths",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "bamboo shoots, drained and rinsed",
+        "optional": false
+      },
+      {
+        "item": "fresh green peppercorns, on the stem",
+        "slug": "green-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "holy basil leaves",
+        "slug": "holy-basil",
+        "optional": false
+      },
+      {
+        "item": "fresh Thai bird chilies, sliced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "jasmine rice, cooked",
+        "slug": "jasmine-rice",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "wok"
+    ],
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/jungle-curry-with-chicken.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry with chicken (kaeng pa gai)",
+    "desc": "The coconut-free Central Thai forest curry built on chicken thigh: jungle curry paste bloomed hard in oil, slackened with stock, then simmered with thigh meat whose collagen lends the thin broth a little body it otherwise lacks. Thai eggplant, baby corn, and yardlong beans carry the bulk; fingerroot matchsticks and whole stems of fresh green peppercorn carry the identity; a finishing fistful of holy basil and sliced chili carries the heat. Bracingly hot, herbaceous, and clean.",
+    "tags": [
+      "weeknight",
+      "chicken",
+      "spicy",
+      "curry",
+      "herbaceous",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-with-chicken",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-06-03",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "jungle curry paste (store-bought, or red curry paste)",
+        "optional": false
+      },
+      {
+        "item": "boneless skinless chicken thigh, sliced 1 cm thick",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "makrut lime leaves, bruised",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), cut in fine matchsticks",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "Thai eggplant, quartered",
+        "slug": "eggplant",
+        "optional": false
+      },
+      {
+        "item": "baby corn, halved lengthwise",
+        "optional": false
+      },
+      {
+        "item": "yardlong beans, cut in 4 cm lengths",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "fresh green peppercorns, on the stem",
+        "slug": "green-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "holy basil leaves",
+        "slug": "holy-basil",
+        "optional": false
+      },
+      {
+        "item": "fresh Thai bird chilies, sliced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "jasmine rice, cooked",
+        "slug": "jasmine-rice",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "wok"
+    ],
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
     "path": "pages/ingredients/doenjang.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -3656,7 +4071,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -3738,7 +4153,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -3821,7 +4236,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -3887,7 +4302,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -30605,7 +31020,7 @@
       "swatchIndex": 9,
       "swatchGlyph": "fish",
       "primaryTag": "fish",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -31317,7 +31732,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 47,
+      "usedInCount": 49,
       "hasNutrition": true
     }
   },
@@ -31547,7 +31962,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 87,
+      "usedInCount": 89,
       "hasNutrition": false
     }
   },
@@ -31670,7 +32085,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 17,
       "hasNutrition": false
     }
   },
@@ -32079,7 +32494,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -32225,7 +32640,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -32414,7 +32829,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -37184,7 +37599,7 @@
       "swatchIndex": 0,
       "swatchGlyph": "fire",
       "primaryTag": "chicken",
-      "usedInCount": 26,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -37205,7 +37620,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 50,
+      "usedInCount": 51,
       "hasNutrition": true
     }
   },
@@ -37316,7 +37731,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": false
     }
   },
@@ -37337,7 +37752,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 7,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -37402,7 +37817,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 20,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -43320,7 +43735,7 @@
       "swatchIndex": 12,
       "swatchGlyph": "grain",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -44808,7 +45223,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 172,
+      "usedInCount": 173,
       "hasNutrition": true
     }
   },
@@ -44912,7 +45327,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": false
     }
   },
@@ -45135,7 +45550,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -45950,7 +46365,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 8
+      "usedInCount": 11
     }
   },
   {
@@ -46451,7 +46866,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 132,
+      "usedInCount": 134,
       "hasNutrition": true
     }
   },
@@ -48198,7 +48613,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 66
+      "usedInCount": 68
     }
   },
   {
