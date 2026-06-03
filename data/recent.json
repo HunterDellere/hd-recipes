@@ -1,5 +1,420 @@
 [
   {
+    "path": "pages/recipes/jungle-curry-paste.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry paste (prik gaeng pa)",
+    "desc": "A pounded-fresh Central Thai jungle curry paste built on soaked dried red chilies, lemongrass, galangal, and the two aromatics that define the style: fingerroot (krachai) and a backbone of white pepper. No roasted seed spice and no sweetness, so the paste reads fierce, herbaceous, and clean rather than rounded like a red curry paste. The base for a coconut-free forest curry.",
+    "tags": [
+      "weekend-project",
+      "make-ahead",
+      "spicy",
+      "pantry",
+      "curry"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-paste",
+    "cuisine": "Thai",
+    "course": "sauce",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 0,
+      "total_min": 30,
+      "active_min": 30
+    },
+    "updated": "2026-06-03",
+    "ingredients": [
+      {
+        "item": "dried long red chilies (prik chee fah / Thai guajillo type), seeded",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "dried Thai bird chilies",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "lemongrass, white part only, sliced thin",
+        "slug": "lemongrass",
+        "optional": false
+      },
+      {
+        "item": "fresh galangal, peeled and sliced thin",
+        "slug": "galangal",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), peeled and sliced thin",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "makrut lime zest",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fresh coriander root (or lower cilantro stems)",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "Thai shallots (or French), peeled",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "white peppercorns",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "shrimp paste (kapi), toasted",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 30,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/jungle-curry-with-catfish.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry with catfish (kaeng pa pla duk)",
+    "desc": "A coconut-free Central Thai forest curry: jungle curry paste bloomed in oil, slackened with stock rather than coconut milk, loaded with Thai eggplant, yardlong beans, and bamboo, then sharpened with the two aromatics that define the style, fingerroot matchsticks and whole stems of fresh green peppercorn. Cured catfish steaks poach in the thin, fierce broth, their firm flake holding while the krachai cuts the freshwater back-note. Hot, herbaceous, and bracingly clean where a coconut curry is rich.",
+    "tags": [
+      "weeknight",
+      "fish",
+      "seafood",
+      "spicy",
+      "curry",
+      "herbaceous",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-with-catfish",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-06-03",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "catfish steaks (skin-on, bone-in, 2 to 3 cm thick)",
+        "slug": "catfish",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "jungle curry paste (store-bought, or red curry paste)",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "makrut lime leaves, bruised",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), cut in fine matchsticks",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "Thai eggplant, quartered",
+        "slug": "eggplant",
+        "optional": false
+      },
+      {
+        "item": "yardlong beans, cut in 4 cm lengths",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "bamboo shoots, drained and rinsed",
+        "optional": false
+      },
+      {
+        "item": "fresh green peppercorns, on the stem",
+        "slug": "green-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "holy basil leaves",
+        "slug": "holy-basil",
+        "optional": false
+      },
+      {
+        "item": "fresh Thai bird chilies, sliced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "jasmine rice, cooked",
+        "slug": "jasmine-rice",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "wok"
+    ],
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/jungle-curry-with-chicken.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry with chicken (kaeng pa gai)",
+    "desc": "The coconut-free Central Thai forest curry built on chicken thigh: jungle curry paste bloomed hard in oil, slackened with stock, then simmered with thigh meat whose collagen lends the thin broth a little body it otherwise lacks. Thai eggplant, baby corn, and yardlong beans carry the bulk; fingerroot matchsticks and whole stems of fresh green peppercorn carry the identity; a finishing fistful of holy basil and sliced chili carries the heat. Bracingly hot, herbaceous, and clean.",
+    "tags": [
+      "weeknight",
+      "chicken",
+      "spicy",
+      "curry",
+      "herbaceous",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-with-chicken",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-06-03",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "jungle curry paste (store-bought, or red curry paste)",
+        "optional": false
+      },
+      {
+        "item": "boneless skinless chicken thigh, sliced 1 cm thick",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "makrut lime leaves, bruised",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), cut in fine matchsticks",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "Thai eggplant, quartered",
+        "slug": "eggplant",
+        "optional": false
+      },
+      {
+        "item": "baby corn, halved lengthwise",
+        "optional": false
+      },
+      {
+        "item": "yardlong beans, cut in 4 cm lengths",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "fresh green peppercorns, on the stem",
+        "slug": "green-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "holy basil leaves",
+        "slug": "holy-basil",
+        "optional": false
+      },
+      {
+        "item": "fresh Thai bird chilies, sliced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "jasmine rice, cooked",
+        "slug": "jasmine-rice",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "wok"
+    ],
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/ingredients/fingerroot.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fingerroot (krachai)",
+    "desc": "Slender finger-like rhizome of Boesenbergia rotunda, peppery and medicinal with a faint ginseng bitterness. The defining aromatic of Thai jungle curry and freshwater-fish dishes; not interchangeable with ginger or galangal.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "fingerroot",
+    "updated": "2026-06-03",
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 3,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/green-peppercorns.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fresh green peppercorns",
+    "desc": "Immature, still-soft drupes of Piper nigrum picked unripe and used whole, often on the stem. Juicy, herbaceous, with a bright resinous heat milder and greener than dried pepper. The textural pop of Thai jungle curry and pad cha.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "green-peppercorns",
+    "updated": "2026-06-03",
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/recipes/cantonese-clay-pot-chicken-with-shiitake-and-taro.html",
     "type": "recipe",
     "category": "recipes",
@@ -2034,472 +2449,6 @@
       "primaryTag": null,
       "usedInCount": 1,
       "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/shanghai-noodles.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Shanghai noodles (cu mian, 粗面)",
-    "desc": "Thick, chewy round wheat noodles, roughly 2 to 3 mm in diameter, made from flour, water, and salt with no egg and no alkaline (kansui). The starch-heavy noodle behind Shanghai-style stir-fries (cu chao mian), hearty soups, and the noodle that holds up to rich brown sauces without dissolving.",
-    "tags": [
-      "noodles",
-      "pantry"
-    ],
-    "status": "complete",
-    "_slug": "shanghai-noodles",
-    "updated": "2026-05-25",
-    "added": "2026-05-25",
-    "_card": {
-      "swatchIndex": 5,
-      "swatchGlyph": "grain",
-      "primaryTag": null,
-      "usedInCount": 1,
-      "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/recipes/ube-halaya-crinkle-cookies.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ube halaya crinkle cookies",
-    "desc": "Filipino-American bakery staple: ube halaya stands in for melted chocolate as the violet, sweet, fat-and-starch-bearing base. Cornstarch keeps the crumb tender against the jam moisture, and a double sugar dredge cracks vivid violet against snowy powdered-sugar tops.",
-    "tags": [
-      "cookies",
-      "baked",
-      "sweet"
-    ],
-    "status": "complete",
-    "_slug": "ube-halaya-crinkle-cookies",
-    "cuisine": "Filipino-American",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 16,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 11,
-      "total_min": 266,
-      "active_min": 25
-    },
-    "updated": "2026-05-24",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "light brown sugar",
-        "slug": "light-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "ube halaya",
-        "slug": "ube-halaya",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "ube extract (optional, for color reinforcement)",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "cornstarch",
-        "slug": "cornstarch",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "slug": "baking-powder",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar, for rolling",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "powdered sugar, for rolling",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-23",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 266,
-      "diffLabel": "medium",
-      "timeLead": "25 min",
-      "timeAnnotation": "· 4 h rest",
-      "timeMode": "active",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/ube-halaya-french-toast.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ube halaya French toast",
-    "desc": "Stale brioche soaked in a violet custard of whole milk, heavy cream, eggs, and ube halaya, then pan-fried in butter until the surface caramelizes around a custardy-violet interior. Finished with the canonical Filipino coconut cream and toasted coconut.",
-    "tags": [
-      "comfort",
-      "sweet",
-      "egg",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "ube-halaya-french-toast",
-    "cuisine": "Filipino-American",
-    "course": "breakfast",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 8,
-      "cook_min": 12,
-      "total_min": 20,
-      "active_min": 18
-    },
-    "updated": "2026-05-24",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "heavy cream",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "ube halaya",
-        "slug": "ube-halaya",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "brioche, 2 to 3 days old",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "coconut cream, scooped off the top of a refrigerated full-fat coconut milk can",
-        "slug": "coconut-milk",
-        "optional": false
-      },
-      {
-        "item": "unsweetened desiccated coconut",
-        "slug": "desiccated-coconut",
-        "optional": false
-      },
-      {
-        "item": "ube halaya, for plating",
-        "slug": "ube-halaya",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "wide-skillet"
-    ],
-    "added": "2026-05-23",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 20,
-      "diffLabel": "easy",
-      "timeLead": "20 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 18,
-      "filterMinutes": 18
-    }
-  },
-  {
-    "path": "pages/recipes/ube-halaya-no-bake-cheesecake-bars.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ube halaya no-bake cheesecake bars",
-    "desc": "Toasted coconut graham crust under a layer of cream cheese, mascarpone, ube halaya, and gelatin-stabilized whipped cream. The gelatin sets the filling firm enough to slice cleanly; halaya provides nearly all the sweetness, so no added sugar in the filling itself.",
-    "tags": [
-      "sweet",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "ube-halaya-no-bake-cheesecake-bars",
-    "cuisine": "Filipino-American",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 9,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 8,
-      "total_min": 393,
-      "active_min": 35
-    },
-    "updated": "2026-05-24",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "unsweetened desiccated coconut",
-        "slug": "desiccated-coconut",
-        "optional": false
-      },
-      {
-        "item": "graham crackers",
-        "optional": false
-      },
-      {
-        "item": "light brown sugar",
-        "slug": "light-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "cold water",
-        "optional": false
-      },
-      {
-        "item": "unflavored powdered gelatin",
-        "optional": false
-      },
-      {
-        "item": "cream cheese, full-fat block",
-        "optional": false
-      },
-      {
-        "item": "mascarpone",
-        "optional": false
-      },
-      {
-        "item": "ube halaya",
-        "slug": "ube-halaya",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "heavy cream, very cold",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "ube halaya, for swirl",
-        "slug": "ube-halaya",
-        "optional": false
-      },
-      {
-        "item": "unsweetened desiccated coconut",
-        "slug": "desiccated-coconut",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-23",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 393,
-      "diffLabel": "medium",
-      "timeLead": "35 min",
-      "timeAnnotation": "· 6 h rest",
-      "timeMode": "active",
-      "activeMinutes": 35,
-      "filterMinutes": 35
-    }
-  },
-  {
-    "path": "pages/recipes/ube-halaya-pancakes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ube halaya pancakes",
-    "desc": "Filipino-leaning breakfast stack: ube halaya folded into a buttermilk-soured batter that holds violet through the bake. Coconut cream and toasted desiccated coconut finish the plate in lieu of maple, so the halaya stays the headline flavor.",
-    "tags": [
-      "comfort",
-      "sweet",
-      "egg",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "ube-halaya-pancakes",
-    "cuisine": "Filipino-American",
-    "course": "breakfast",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 8,
-      "cook_min": 18,
-      "total_min": 26,
-      "active_min": 22
-    },
-    "updated": "2026-05-24",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "white vinegar",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "slug": "baking-powder",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "slug": "baking-soda",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "large egg",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "ube halaya",
-        "slug": "ube-halaya",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "coconut cream, scooped off the top of a refrigerated full-fat coconut milk can",
-        "slug": "coconut-milk",
-        "optional": false
-      },
-      {
-        "item": "unsweetened desiccated coconut",
-        "slug": "desiccated-coconut",
-        "optional": false
-      },
-      {
-        "item": "ube halaya, for plating",
-        "slug": "ube-halaya",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "acid-milk-sour"
-    ],
-    "equipment": [
-      "wide-skillet"
-    ],
-    "added": "2026-05-23",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 26,
-      "diffLabel": "easy",
-      "timeLead": "26 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 22,
-      "filterMinutes": 22
     }
   }
 ]

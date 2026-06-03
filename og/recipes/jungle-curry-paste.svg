@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#b8423a" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#faf6ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#faf6ee"/>
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+  <line x1="60" y1="60" x2="1140" y2="60" stroke="#b8423a" stroke-width="3"/>
+  <line x1="60" y1="570" x2="1140" y2="570" stroke="#b8423a" stroke-width="3"/>
+  <text x="80" y="100" font-family="Inconsolata, monospace" font-size="22" letter-spacing="6" fill="#6b5535">HD · RECIPES</text>
+  <text x="1120" y="100" font-family="Inconsolata, monospace" font-size="22" letter-spacing="3" fill="#6b5535" text-anchor="end">Recipe</text>
+  <text x="600" y="320" font-family="EB Garamond, Georgia, serif" font-weight="700" font-size="72" fill="#b8423a" text-anchor="middle" dominant-baseline="middle">Jungle curry paste (prik gaeng pa)</text>
+  <text x="600" y="430" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="30" fill="#3a2e1e" text-anchor="middle" dominant-baseline="middle">A pounded-fresh Central Thai jungle curry paste built on soaked dried red chilies, lemongr</text>
+</svg>
