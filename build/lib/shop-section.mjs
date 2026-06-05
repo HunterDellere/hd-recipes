@@ -63,7 +63,7 @@ const BUCKETS = {
     'silken-tofu', 'sour-cream', 'tofu-skin', 'whole-milk', 'yogurt',
   ],
   bakery: [
-    'pita-bread', 'sourdough-bread',
+    'filo-pastry', 'pita-bread', 'sourdough-bread',
   ],
   spices: [
     'allspice', 'bay-leaf', 'berbere', 'black-pepper', 'caraway-seed',
@@ -82,7 +82,7 @@ const BUCKETS = {
     'atta-flour', 'avocado-oil', 'bagoong', 'baking-powder', 'baking-soda',
     'balsamic-vinegar', 'banana-ketchup', 'banh-trang', 'basmati-rice', 'black-beans',
     'bread-flour', 'calcium-lactate', 'candlenut', 'cane-vinegar',
-    'canned-san-marzano-tomatoes', 'capers', 'ceylon-tea', 'chili-oil',
+    'canned-san-marzano-tomatoes', 'cannellini-beans', 'capers', 'ceylon-tea', 'chili-oil',
     'chinkiang-vinegar', 'chipotle-in-adobo', 'coconut-milk', 'coconut-sugar',
     'cornstarch', 'dark-brown-sugar', 'dark-chocolate', 'dark-soy-sauce',
     'dende-oil', 'desiccated-coconut', 'dijon-mustard', 'doenjang',

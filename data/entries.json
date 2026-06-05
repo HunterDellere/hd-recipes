@@ -1,5 +1,302 @@
 [
   {
+    "path": "pages/ingredients/cannellini-beans.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Cannellini beans",
+    "desc": "Large white kidney-shaped beans (Phaseolus vulgaris), the Tuscan house bean. Thin-skinned, creamy, mild, with a high surface-to-interior ratio that drinks braising liquid and turns silky. The structural legume of central Italian soups, braises, and bean-and-greens plates.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "cannellini-beans",
+    "updated": "2026-06-05",
+    "added": "2026-06-05",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/filo-pastry.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Filo pastry",
+    "desc": "Paper-thin sheets of unleavened wheat dough (flour, water, a little oil and vinegar) stretched to translucency and stacked dry. Brushed with fat and layered, it bakes into the shattering laminated crust of Greek, Turkish, and Levantine pies. Bought frozen; the dough itself is a stretching feat, not a kitchen quick-job.",
+    "tags": [
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "filo-pastry",
+    "updated": "2026-06-05",
+    "added": "2026-06-05",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/beet-greens-and-feta-filo-pie.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Beet greens and feta filo pie",
+    "desc": "A Greek hortopita built on beet greens: the greens wilted and squeezed bone-dry, bound with feta, scallion, dill, and egg, then sealed between buttered-and-oiled filo layers and baked to a shattering golden crust. The squeeze-dry step is the whole dish; wet greens steam the filo soggy, dry greens let it shatter. The feta and egg carry the calcium that pairs with the beet-green oxalate, and a hit of lemon zest in the filling keeps the iron-mineral leaves bright under the rich pastry.",
+    "tags": [
+      "baked",
+      "share-plate",
+      "umami",
+      "make-ahead",
+      "herbaceous"
+    ],
+    "status": "complete",
+    "_slug": "beet-greens-and-feta-filo-pie",
+    "cuisine": "Greek",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 45,
+      "total_min": 90,
+      "active_min": 45
+    },
+    "updated": "2026-06-05",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "beet greens (the leaves and stems off 4 to 5 medium beets)",
+        "slug": "beet-greens",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "scallions, sliced thin",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, minced",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "feta, crumbled",
+        "slug": "feta",
+        "optional": false
+      },
+      {
+        "item": "Greek yogurt, full-fat",
+        "slug": "greek-yogurt",
+        "optional": false
+      },
+      {
+        "item": "eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "fresh dill, chopped",
+        "slug": "dill",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly cracked",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "ground nutmeg",
+        "optional": false
+      },
+      {
+        "item": "filo pastry sheets",
+        "slug": "filo-pastry",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for brushing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "microplane"
+    ],
+    "added": "2026-06-05",
+    "_card": {
+      "swatchIndex": 9,
+      "swatchGlyph": "olive",
+      "totalMinutes": 90,
+      "diffLabel": "medium",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/white-beans-braised-with-beet-greens.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "White beans braised with beet greens",
+    "desc": "A Tuscan bean-and-greens braise: cannellini and their starchy liquor simmered with a soffritto of onion, garlic, and a Parmesan rind, then folded with staged beet greens (stems first, leaves wilted on top) until the broth self-thickens into something between soup and stew. Built on the calcium-pairing logic the beet-green oxalate wants: the Parmesan rind and the grated finish supply the dietary calcium, the cannellini supply the creamy body, and a lemon-and-vinegar finish lifts the iron-mineral leaves. Eaten in a shallow bowl with grilled bread to mop the liquor.",
+    "tags": [
+      "braise",
+      "one-pot",
+      "umami",
+      "comfort",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "white-beans-braised-with-beet-greens",
+    "cuisine": "Italian",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 35,
+      "total_min": 50,
+      "active_min": 25
+    },
+    "updated": "2026-06-05",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "beet greens (the leaves and stems off 3 to 4 medium beets)",
+        "slug": "beet-greens",
+        "optional": false
+      },
+      {
+        "item": "cooked cannellini beans, drained (about 2 cans, or 200 g dry cooked)",
+        "slug": "cannellini-beans",
+        "optional": false
+      },
+      {
+        "item": "reserved bean liquor or water",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, fine-diced",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, sliced thin",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "Parmesan rind",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Parmigiano-Reggiano, finely grated",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for finishing",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "wide-skillet"
+    ],
+    "added": "2026-06-05",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/ingredients/fingerroot.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -3988,7 +4285,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -30135,7 +30432,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -31426,7 +31723,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -31489,7 +31786,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 10,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -31711,7 +32008,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 57,
+      "usedInCount": 59,
       "hasNutrition": true
     }
   },
@@ -32391,7 +32688,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -32412,7 +32709,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 9,
+      "usedInCount": 10,
       "hasNutrition": false
     }
   },
@@ -32475,7 +32772,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -32850,7 +33147,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 79,
+      "usedInCount": 80,
       "hasNutrition": true
     }
   },
@@ -37474,7 +37771,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 51,
+      "usedInCount": 52,
       "hasNutrition": false
     }
   },
@@ -37773,7 +38070,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 77,
+      "usedInCount": 79,
       "hasNutrition": true
     }
   },
@@ -38206,7 +38503,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -38464,7 +38761,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 36,
+      "usedInCount": 37,
       "hasNutrition": true
     }
   },
@@ -45046,7 +45343,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 126,
+      "usedInCount": 127,
       "hasNutrition": true
     }
   },
@@ -45084,7 +45381,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 59,
+      "usedInCount": 60,
       "hasNutrition": true
     }
   },
@@ -45185,7 +45482,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": "egg",
-      "usedInCount": 72,
+      "usedInCount": 73,
       "hasNutrition": true
     }
   },
@@ -45223,7 +45520,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 173,
+      "usedInCount": 175,
       "hasNutrition": true
     }
   },
@@ -45367,7 +45664,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 70,
+      "usedInCount": 71,
       "hasNutrition": true
     }
   },
@@ -46348,7 +46645,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 16
+      "usedInCount": 17
     }
   },
   {
@@ -46942,7 +47239,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 178,
+      "usedInCount": 180,
       "hasNutrition": true
     }
   },
@@ -48613,7 +48910,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 68
+      "usedInCount": 70
     }
   },
   {
@@ -48827,6 +49124,171 @@
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
       "usedInCount": 3
+    }
+  },
+  {
+    "path": "pages/recipes/marinated-feta.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Marinated feta",
+    "desc": "A block of good feta cubed and steeped in olive oil with lemon zest, oregano, garlic, and chili until the salt-aggression softens and the herb-infused oil becomes its own ingredient. Stub.",
+    "tags": [
+      "make-ahead",
+      "condiment",
+      "pantry",
+      "herbaceous"
+    ],
+    "status": "stub",
+    "_slug": "marinated-feta",
+    "cuisine": "Greek",
+    "course": "appetizer",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 10,
+      "active_min": 10
+    },
+    "updated": "2026-06-05",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "feta, in a single block",
+        "slug": "feta",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, smashed",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "dried oregano",
+        "slug": "dried-oregano",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-06-05",
+    "_card": {
+      "swatchIndex": 9,
+      "swatchGlyph": "olive",
+      "totalMinutes": 10,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/pot-of-creamy-white-beans.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pot of creamy white beans",
+    "desc": "Dried cannellini cooked low and slow with onion, garlic, a Parmesan rind, and good olive oil until the beans are custardy and the liquor self-thickens into a light cream. The base for bean-and-greens braises, soups, and purées. Stub.",
+    "tags": [
+      "pantry",
+      "batch-cook",
+      "make-ahead"
+    ],
+    "status": "stub",
+    "_slug": "pot-of-creamy-white-beans",
+    "cuisine": "Italian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 75,
+      "total_min": 85,
+      "active_min": 15
+    },
+    "updated": "2026-06-05",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried cannellini beans",
+        "slug": "cannellini-beans",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, halved",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, bruised",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "Parmesan rind",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-06-05",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 85,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 15,
+      "filterMinutes": 15
     }
   },
   {
