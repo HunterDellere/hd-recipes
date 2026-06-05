@@ -1,154 +1,267 @@
 [
   {
-    "path": "pages/ingredients/cannellini-beans.html",
+    "path": "pages/ingredients/fingerroot.html",
     "type": "ingredient",
     "category": "ingredients",
-    "title": "Cannellini beans",
-    "desc": "Large white kidney-shaped beans (Phaseolus vulgaris), the Tuscan house bean. Thin-skinned, creamy, mild, with a high surface-to-interior ratio that drinks braising liquid and turns silky. The structural legume of central Italian soups, braises, and bean-and-greens plates.",
+    "title": "Fingerroot (krachai)",
+    "desc": "Slender finger-like rhizome of Boesenbergia rotunda, peppery and medicinal with a faint ginseng bitterness. The defining aromatic of Thai jungle curry and freshwater-fish dishes; not interchangeable with ginger or galangal.",
     "tags": [
       "pantry"
     ],
     "status": "complete",
-    "_slug": "cannellini-beans",
-    "updated": "2026-06-05",
-    "added": "2026-06-05",
+    "_slug": "fingerroot",
+    "updated": "2026-06-03",
+    "added": "2026-06-03",
     "_card": {
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 1,
-      "hasNutrition": true
-    }
-  },
-  {
-    "path": "pages/ingredients/filo-pastry.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Filo pastry",
-    "desc": "Paper-thin sheets of unleavened wheat dough (flour, water, a little oil and vinegar) stretched to translucency and stacked dry. Brushed with fat and layered, it bakes into the shattering laminated crust of Greek, Turkish, and Levantine pies. Bought frozen; the dough itself is a stretching feat, not a kitchen quick-job.",
-    "tags": [
-      "pantry"
-    ],
-    "status": "complete",
-    "_slug": "filo-pastry",
-    "updated": "2026-06-05",
-    "added": "2026-06-05",
-    "_card": {
-      "swatchIndex": 11,
-      "swatchGlyph": "jar",
-      "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
   {
-    "path": "pages/recipes/beet-greens-and-feta-filo-pie.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Beet greens and feta filo pie",
-    "desc": "A Greek hortopita built on beet greens: the greens wilted and squeezed bone-dry, bound with feta, scallion, dill, and egg, then sealed between buttered-and-oiled filo layers and baked to a shattering golden crust. The squeeze-dry step is the whole dish; wet greens steam the filo soggy, dry greens let it shatter. The feta and egg carry the calcium that pairs with the beet-green oxalate, and a hit of lemon zest in the filling keeps the iron-mineral leaves bright under the rich pastry.",
+    "path": "pages/ingredients/green-peppercorns.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Fresh green peppercorns",
+    "desc": "Immature, still-soft drupes of Piper nigrum picked unripe and used whole, often on the stem. Juicy, herbaceous, with a bright resinous heat milder and greener than dried pepper. The textural pop of Thai jungle curry and pad cha.",
     "tags": [
-      "baked",
-      "share-plate",
-      "umami",
-      "make-ahead",
-      "herbaceous"
+      "pantry"
     ],
     "status": "complete",
-    "_slug": "beet-greens-and-feta-filo-pie",
-    "cuisine": "Greek",
-    "course": "dinner",
+    "_slug": "green-peppercorns",
+    "updated": "2026-06-03",
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/jungle-curry-paste.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry paste (prik gaeng pa)",
+    "desc": "A pounded-fresh Central Thai jungle curry paste built on soaked dried red chilies, lemongrass, galangal, and the two aromatics that define the style: fingerroot (krachai) and a backbone of white pepper. No roasted seed spice and no sweetness, so the paste reads fierce, herbaceous, and clean rather than rounded like a red curry paste. The base for a coconut-free forest curry.",
+    "tags": [
+      "weekend-project",
+      "make-ahead",
+      "spicy",
+      "pantry",
+      "curry"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-paste",
+    "cuisine": "Thai",
+    "course": "sauce",
     "difficulty": "medium",
-    "servings": 6,
+    "servings": 8,
     "time": {
       "prep_min": 30,
-      "cook_min": 45,
-      "total_min": 90,
-      "active_min": 45
+      "cook_min": 0,
+      "total_min": 30,
+      "active_min": 30
     },
-    "updated": "2026-06-05",
-    "diet": [
-      "vegetarian"
-    ],
+    "updated": "2026-06-03",
     "ingredients": [
       {
-        "item": "beet greens (the leaves and stems off 4 to 5 medium beets)",
-        "slug": "beet-greens",
+        "item": "dried long red chilies (prik chee fah / Thai guajillo type), seeded",
+        "slug": "dried-chilies",
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
+        "item": "dried Thai bird chilies",
+        "slug": "dried-chilies",
         "optional": false
       },
       {
-        "item": "scallions, sliced thin",
-        "slug": "scallion",
+        "item": "lemongrass, white part only, sliced thin",
+        "slug": "lemongrass",
         "optional": false
       },
       {
-        "item": "garlic cloves, minced",
+        "item": "fresh galangal, peeled and sliced thin",
+        "slug": "galangal",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), peeled and sliced thin",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "makrut lime zest",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fresh coriander root (or lower cilantro stems)",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
         "slug": "garlic",
         "optional": false
       },
       {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
+        "item": "Thai shallots (or French), peeled",
+        "slug": "shallot",
         "optional": false
       },
       {
-        "item": "feta, crumbled",
-        "slug": "feta",
+        "item": "white peppercorns",
+        "slug": "white-pepper",
         "optional": false
       },
       {
-        "item": "Greek yogurt, full-fat",
-        "slug": "greek-yogurt",
+        "item": "shrimp paste (kapi), toasted",
         "optional": false
       },
       {
-        "item": "eggs",
-        "slug": "eggs",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-06-03",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 30,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/jungle-curry-with-catfish.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jungle curry with catfish (kaeng pa pla duk)",
+    "desc": "A coconut-free Central Thai forest curry: jungle curry paste bloomed in oil, slackened with stock rather than coconut milk, loaded with Thai eggplant, yardlong beans, and bamboo, then sharpened with the two aromatics that define the style, fingerroot matchsticks and whole stems of fresh green peppercorn. Cured catfish steaks poach in the thin, fierce broth, their firm flake holding while the krachai cuts the freshwater back-note. Hot, herbaceous, and bracingly clean where a coconut curry is rich.",
+    "tags": [
+      "weeknight",
+      "fish",
+      "seafood",
+      "spicy",
+      "curry",
+      "herbaceous",
+      "one-pot"
+    ],
+    "status": "complete",
+    "_slug": "jungle-curry-with-catfish",
+    "cuisine": "Thai",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 45,
+      "active_min": 35
+    },
+    "updated": "2026-06-03",
+    "diet": [
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "catfish steaks (skin-on, bone-in, 2 to 3 cm thick)",
+        "slug": "catfish",
         "optional": false
       },
       {
-        "item": "fresh dill, chopped",
-        "slug": "dill",
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
         "optional": false
       },
       {
-        "item": "fresh lemon zest",
-        "slug": "lemon",
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
         "optional": false
       },
       {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
+        "item": "neutral oil",
+        "slug": "neutral-oil",
         "optional": false
       },
       {
-        "item": "ground nutmeg",
+        "item": "jungle curry paste (store-bought, or red curry paste)",
         "optional": false
       },
       {
-        "item": "filo pastry sheets",
-        "slug": "filo-pastry",
+        "item": "water",
         "optional": false
       },
       {
-        "item": "unsalted butter, melted",
-        "slug": "butter",
+        "item": "fish sauce",
+        "slug": "fish-sauce",
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil, for brushing",
-        "slug": "extra-virgin-olive-oil",
+        "item": "palm sugar",
+        "slug": "palm-sugar",
         "optional": false
       },
       {
-        "item": "sesame seeds",
-        "slug": "sesame-seeds",
-        "optional": true
+        "item": "makrut lime leaves, bruised",
+        "slug": "kaffir-lime-leaves",
+        "optional": false
+      },
+      {
+        "item": "fingerroot (krachai), cut in fine matchsticks",
+        "slug": "fingerroot",
+        "optional": false
+      },
+      {
+        "item": "Thai eggplant, quartered",
+        "slug": "eggplant",
+        "optional": false
+      },
+      {
+        "item": "yardlong beans, cut in 4 cm lengths",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "bamboo shoots, drained and rinsed",
+        "optional": false
+      },
+      {
+        "item": "fresh green peppercorns, on the stem",
+        "slug": "green-peppercorns",
+        "optional": false
+      },
+      {
+        "item": "holy basil leaves",
+        "slug": "holy-basil",
+        "optional": false
+      },
+      {
+        "item": "fresh Thai bird chilies, sliced",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "jasmine rice, cooked",
+        "slug": "jasmine-rice",
+        "optional": false
       }
     ],
     "techniques": [
@@ -156,124 +269,128 @@
     ],
     "equipment": [
       "wide-skillet",
-      "microplane"
+      "wok"
     ],
-    "added": "2026-06-05",
+    "added": "2026-06-03",
     "_card": {
-      "swatchIndex": 9,
-      "swatchGlyph": "olive",
-      "totalMinutes": 90,
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 45,
       "diffLabel": "medium",
-      "timeLead": "1 h 30 min",
+      "timeLead": "45 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 45,
-      "filterMinutes": 45
+      "activeMinutes": 35,
+      "filterMinutes": 35
     }
   },
   {
-    "path": "pages/recipes/white-beans-braised-with-beet-greens.html",
+    "path": "pages/recipes/jungle-curry-with-chicken.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "White beans braised with beet greens",
-    "desc": "A Tuscan bean-and-greens braise: cannellini and their starchy liquor simmered with a soffritto of onion, garlic, and a Parmesan rind, then folded with staged beet greens (stems first, leaves wilted on top) until the broth self-thickens into something between soup and stew. Built on the calcium-pairing logic the beet-green oxalate wants: the Parmesan rind and the grated finish supply the dietary calcium, the cannellini supply the creamy body, and a lemon-and-vinegar finish lifts the iron-mineral leaves. Eaten in a shallow bowl with grilled bread to mop the liquor.",
+    "title": "Jungle curry with chicken (kaeng pa gai)",
+    "desc": "The coconut-free Central Thai forest curry built on chicken thigh: jungle curry paste bloomed hard in oil, slackened with stock, then simmered with thigh meat whose collagen lends the thin broth a little body it otherwise lacks. Thai eggplant, baby corn, and yardlong beans carry the bulk; fingerroot matchsticks and whole stems of fresh green peppercorn carry the identity; a finishing fistful of holy basil and sliced chili carries the heat. Bracingly hot, herbaceous, and clean.",
     "tags": [
-      "braise",
-      "one-pot",
-      "umami",
-      "comfort",
-      "pantry"
+      "weeknight",
+      "chicken",
+      "spicy",
+      "curry",
+      "herbaceous",
+      "umami"
     ],
     "status": "complete",
-    "_slug": "white-beans-braised-with-beet-greens",
-    "cuisine": "Italian",
+    "_slug": "jungle-curry-with-chicken",
+    "cuisine": "Thai",
     "course": "dinner",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "servings": 4,
     "time": {
-      "prep_min": 15,
-      "cook_min": 35,
-      "total_min": 50,
-      "active_min": 25
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 45,
+      "active_min": 35
     },
-    "updated": "2026-06-05",
+    "updated": "2026-06-03",
     "diet": [
-      "vegetarian",
+      "dairy-free",
       "gluten-free"
     ],
     "ingredients": [
       {
-        "item": "beet greens (the leaves and stems off 3 to 4 medium beets)",
-        "slug": "beet-greens",
+        "item": "neutral oil",
+        "slug": "neutral-oil",
         "optional": false
       },
       {
-        "item": "cooked cannellini beans, drained (about 2 cans, or 200 g dry cooked)",
-        "slug": "cannellini-beans",
+        "item": "jungle curry paste (store-bought, or red curry paste)",
         "optional": false
       },
       {
-        "item": "reserved bean liquor or water",
+        "item": "boneless skinless chicken thigh, sliced 1 cm thick",
+        "slug": "chicken-thigh",
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
+        "item": "water",
         "optional": false
       },
       {
-        "item": "yellow onion, fine-diced",
-        "slug": "yellow-onion",
+        "item": "fish sauce",
+        "slug": "fish-sauce",
         "optional": false
       },
       {
-        "item": "garlic cloves, sliced thin",
-        "slug": "garlic",
+        "item": "palm sugar",
+        "slug": "palm-sugar",
         "optional": false
       },
       {
-        "item": "red pepper flakes",
-        "slug": "red-pepper-flakes",
+        "item": "makrut lime leaves, bruised",
+        "slug": "kaffir-lime-leaves",
         "optional": false
       },
       {
-        "item": "tomato paste",
-        "slug": "tomato-paste",
+        "item": "fingerroot (krachai), cut in fine matchsticks",
+        "slug": "fingerroot",
         "optional": false
       },
       {
-        "item": "Parmesan rind",
-        "slug": "parmigiano-reggiano",
+        "item": "Thai eggplant, quartered",
+        "slug": "eggplant",
         "optional": false
       },
       {
-        "item": "bay leaf",
-        "slug": "bay-leaf",
+        "item": "baby corn, halved lengthwise",
         "optional": false
       },
       {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
+        "item": "yardlong beans, cut in 4 cm lengths",
+        "slug": "yardlong-bean",
         "optional": false
       },
       {
-        "item": "Parmigiano-Reggiano, finely grated",
-        "slug": "parmigiano-reggiano",
+        "item": "fresh green peppercorns, on the stem",
+        "slug": "green-peppercorns",
         "optional": false
       },
       {
-        "item": "fresh lemon juice",
-        "slug": "lemon",
+        "item": "holy basil leaves",
+        "slug": "holy-basil",
         "optional": false
       },
       {
-        "item": "red wine vinegar",
-        "slug": "red-wine-vinegar",
+        "item": "fresh Thai bird chilies, sliced",
+        "slug": "thai-chili",
         "optional": false
       },
       {
-        "item": "extra-virgin olive oil, for finishing",
-        "slug": "extra-virgin-olive-oil",
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "jasmine rice, cooked",
+        "slug": "jasmine-rice",
         "optional": false
       }
     ],
@@ -281,19 +398,20 @@
       "blooming-aromatics"
     ],
     "equipment": [
-      "wide-skillet"
+      "wide-skillet",
+      "wok"
     ],
-    "added": "2026-06-05",
+    "added": "2026-06-03",
     "_card": {
-      "swatchIndex": 3,
-      "swatchGlyph": "olive",
-      "totalMinutes": 50,
-      "diffLabel": "easy",
-      "timeLead": "50 min",
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 45,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
+      "activeMinutes": 35,
+      "filterMinutes": 35
     }
   },
   {
@@ -3870,7 +3988,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -3953,7 +4071,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -4035,7 +4153,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -4118,7 +4236,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -4184,7 +4302,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -30017,7 +30135,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 1,
       "hasNutrition": true
     }
   },
@@ -30902,7 +31020,7 @@
       "swatchIndex": 9,
       "swatchGlyph": "fish",
       "primaryTag": "fish",
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -31308,7 +31426,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 9,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -31371,7 +31489,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 10,
       "hasNutrition": true
     }
   },
@@ -31593,7 +31711,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 59,
+      "usedInCount": 57,
       "hasNutrition": true
     }
   },
@@ -31614,7 +31732,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 47,
+      "usedInCount": 49,
       "hasNutrition": true
     }
   },
@@ -31844,7 +31962,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 87,
+      "usedInCount": 89,
       "hasNutrition": false
     }
   },
@@ -31967,7 +32085,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 17,
       "hasNutrition": false
     }
   },
@@ -32273,7 +32391,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 18,
+      "usedInCount": 17,
       "hasNutrition": false
     }
   },
@@ -32294,7 +32412,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 10,
+      "usedInCount": 9,
       "hasNutrition": false
     }
   },
@@ -32357,7 +32475,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -32376,7 +32494,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -32522,7 +32640,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -32711,7 +32829,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -32732,7 +32850,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 80,
+      "usedInCount": 79,
       "hasNutrition": true
     }
   },
@@ -37356,7 +37474,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 52,
+      "usedInCount": 51,
       "hasNutrition": false
     }
   },
@@ -37481,7 +37599,7 @@
       "swatchIndex": 0,
       "swatchGlyph": "fire",
       "primaryTag": "chicken",
-      "usedInCount": 26,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -37502,7 +37620,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 50,
+      "usedInCount": 51,
       "hasNutrition": true
     }
   },
@@ -37613,7 +37731,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": false
     }
   },
@@ -37634,7 +37752,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 7,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -37655,7 +37773,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 79,
+      "usedInCount": 77,
       "hasNutrition": true
     }
   },
@@ -37699,7 +37817,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 20,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -38088,7 +38206,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -38346,7 +38464,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 37,
+      "usedInCount": 36,
       "hasNutrition": true
     }
   },
@@ -43617,7 +43735,7 @@
       "swatchIndex": 12,
       "swatchGlyph": "grain",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -44928,7 +45046,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 127,
+      "usedInCount": 126,
       "hasNutrition": true
     }
   },
@@ -44966,7 +45084,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 60,
+      "usedInCount": 59,
       "hasNutrition": true
     }
   },
@@ -45067,7 +45185,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": "egg",
-      "usedInCount": 73,
+      "usedInCount": 72,
       "hasNutrition": true
     }
   },
@@ -45105,7 +45223,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 174,
+      "usedInCount": 173,
       "hasNutrition": true
     }
   },
@@ -45209,7 +45327,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": false
     }
   },
@@ -45249,7 +45367,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 71,
+      "usedInCount": 70,
       "hasNutrition": true
     }
   },
@@ -45432,7 +45550,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -46230,7 +46348,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 17
+      "usedInCount": 16
     }
   },
   {
@@ -46247,7 +46365,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 8
+      "usedInCount": 11
     }
   },
   {
@@ -46748,7 +46866,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 132,
+      "usedInCount": 134,
       "hasNutrition": true
     }
   },
@@ -46824,7 +46942,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 180,
+      "usedInCount": 178,
       "hasNutrition": true
     }
   },
@@ -48709,171 +48827,6 @@
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
       "usedInCount": 3
-    }
-  },
-  {
-    "path": "pages/recipes/marinated-feta.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Marinated feta",
-    "desc": "A block of good feta cubed and steeped in olive oil with lemon zest, oregano, garlic, and chili until the salt-aggression softens and the herb-infused oil becomes its own ingredient. Stub.",
-    "tags": [
-      "make-ahead",
-      "condiment",
-      "pantry",
-      "herbaceous"
-    ],
-    "status": "stub",
-    "_slug": "marinated-feta",
-    "cuisine": "Greek",
-    "course": "appetizer",
-    "difficulty": "easy",
-    "servings": 8,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 0,
-      "total_min": 10,
-      "active_min": 10
-    },
-    "updated": "2026-06-05",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "feta, in a single block",
-        "slug": "feta",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon zest",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, smashed",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "dried oregano",
-        "slug": "dried-oregano",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "black peppercorns",
-        "slug": "black-pepper",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-06-05",
-    "_card": {
-      "swatchIndex": 9,
-      "swatchGlyph": "olive",
-      "totalMinutes": 10,
-      "diffLabel": "easy",
-      "timeLead": "10 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
-    }
-  },
-  {
-    "path": "pages/recipes/pot-of-creamy-white-beans.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Pot of creamy white beans",
-    "desc": "Dried cannellini cooked low and slow with onion, garlic, a Parmesan rind, and good olive oil until the beans are custardy and the liquor self-thickens into a light cream. The base for bean-and-greens braises, soups, and purées. Stub.",
-    "tags": [
-      "pantry",
-      "batch-cook",
-      "make-ahead"
-    ],
-    "status": "stub",
-    "_slug": "pot-of-creamy-white-beans",
-    "cuisine": "Italian",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 6,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 75,
-      "total_min": 85,
-      "active_min": 15
-    },
-    "updated": "2026-06-05",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "dried cannellini beans",
-        "slug": "cannellini-beans",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, halved",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, bruised",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "Parmesan rind",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      },
-      {
-        "item": "bay leaf",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-06-05",
-    "_card": {
-      "swatchIndex": 3,
-      "swatchGlyph": "olive",
-      "totalMinutes": 85,
-      "diffLabel": "easy",
-      "timeLead": "15 min",
-      "timeAnnotation": "· 1 h rest",
-      "timeMode": "active",
-      "activeMinutes": 15,
-      "filterMinutes": 15
     }
   },
   {
