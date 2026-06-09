@@ -35,7 +35,7 @@ const BUCKETS = {
   produce: [
     'avocado', 'bananas', 'basil', 'beet-greens', 'bell-pepper', 'blood-orange',
     'broccoli', 'brussels-sprouts', 'burdock-root', 'calamansi', 'carrot',
-    'cauliflower', 'cherry-tomato', 'chives', 'cilantro', 'cucumber', 'culantro', 'curry-leaf',
+    'cauliflower', 'cherry-tomato', 'chives', 'cilantro', 'cremini-mushroom', 'cucumber', 'culantro', 'curry-leaf',
     'daikon', 'delicata-squash', 'dill', 'eggplant', 'fennel-bulb', 'fresh-thyme',
     'galangal', 'garlic', 'ginger', 'green-cabbage', 'green-chili', 'green-papaya',
     'green-plantain', 'haricots-verts', 'holy-basil', 'jalapeno',
