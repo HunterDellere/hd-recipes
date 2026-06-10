@@ -1,106 +1,338 @@
 [
   {
-    "path": "pages/recipes/soy-glazed-tuna-steak.html",
+    "path": "pages/recipes/ube-halaya-brown-butter-sugar-cookies.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Soy-glazed tuna steak",
-    "desc": "A fish-counter tuna steak in a four-ingredient soy, mirin, honey, and ginger marinade, seared hard, then the leftover marinade boiled down in the same pan into a glossy drizzle. Topped with scallion and toasted sesame. No sashimi grade needed: the steak is cooked through to a moist medium, and the sweet-salty glaze keeps the lean fish from drying. This is the simplest cooked-tuna recipe on the site, one bowl, one pan, about fifteen minutes.",
+    "title": "Ube halaya brown butter sugar cookies",
+    "desc": "The brown butter sugar cookie rebuilt around ube halaya: toasted milk solids from the butter meet the caramelized condensed milk of the jam, cornstarch buffers the jam moisture, and the pan-bang trick still cracks a rippled, sugar-shelled violet top.",
     "tags": [
-      "fish",
-      "seafood",
-      "quick",
-      "weeknight",
-      "umami",
-      "pantry"
+      "cookies",
+      "baked",
+      "sweet",
+      "comfort"
     ],
     "status": "complete",
-    "_slug": "soy-glazed-tuna-steak",
-    "cuisine": "Japanese",
-    "course": "dinner",
+    "_slug": "ube-halaya-brown-butter-sugar-cookies",
+    "cuisine": "Filipino-American",
+    "course": "dessert",
     "difficulty": "easy",
-    "servings": 2,
+    "servings": 14,
     "time": {
-      "prep_min": 5,
-      "cook_min": 8,
-      "total_min": 28,
-      "active_min": 12
+      "prep_min": 15,
+      "cook_min": 13,
+      "total_min": 73,
+      "active_min": 18
     },
-    "updated": "2026-06-09",
+    "updated": "2026-06-10",
     "diet": [
-      "pescatarian",
-      "dairy-free"
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
+        "item": "unsalted butter",
+        "slug": "butter",
         "optional": false
       },
       {
-        "item": "mirin",
-        "slug": "mirin",
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
         "optional": false
       },
       {
-        "item": "honey",
-        "slug": "honey",
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
         "optional": false
       },
       {
-        "item": "fresh ginger",
-        "slug": "ginger",
+        "item": "ube halaya",
+        "slug": "ube-halaya",
         "optional": false
       },
       {
-        "item": "garlic",
-        "slug": "garlic",
+        "item": "large egg",
+        "slug": "eggs",
         "optional": false
       },
       {
-        "item": "yellowfin tuna steaks",
-        "slug": "tuna-loin",
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
         "optional": false
       },
       {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
+        "item": "ube extract (optional, for color reinforcement)",
         "optional": false
       },
       {
-        "item": "scallion",
-        "slug": "scallion",
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
         "optional": false
       },
       {
-        "item": "toasted sesame seeds",
-        "slug": "sesame-seeds",
+        "item": "cornstarch",
+        "slug": "cornstarch",
         "optional": false
       },
       {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar, for rolling",
+        "slug": "granulated-sugar",
         "optional": false
       }
     ],
     "techniques": [
-      "maillard-sear"
+      "brown-butter"
     ],
-    "equipment": [
-      "heavy-cast-iron-skillet",
-      "tongs",
-      "microplane"
-    ],
+    "equipment": [],
     "added": "2026-06-10",
     "_card": {
       "swatchIndex": 10,
       "swatchGlyph": "bowl",
-      "totalMinutes": 28,
+      "totalMinutes": 73,
       "diffLabel": "easy",
-      "timeLead": "28 min",
+      "timeLead": "1 h 13 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 12,
-      "filterMinutes": 12
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/ube-halaya-thumbprint-cookies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya thumbprint cookies",
+    "desc": "Brown butter shortbread with a coconut-rolled edge and a well of ube halaya baked into the center, then refreshed with a second spoon of cold jam so the violet reads vivid against the toasted crumb. Halaya is already a jam, which makes it the native filling for a thumbprint.",
+    "tags": [
+      "cookies",
+      "baked",
+      "sweet",
+      "tropical"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya-thumbprint-cookies",
+    "cuisine": "Filipino-American",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 18,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 16,
+      "total_min": 106,
+      "active_min": 30
+    },
+    "updated": "2026-06-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "powdered sugar",
+        "optional": false
+      },
+      {
+        "item": "large egg yolk",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "desiccated coconut",
+        "slug": "desiccated-coconut",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [],
+    "added": "2026-06-10",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 106,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/ube-halaya-white-chocolate-cookies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya white chocolate cookies",
+    "desc": "A brown butter drop cookie built on ube halaya with pools of white chocolate. The white chocolate is the deliberate partner: cocoa butter and milk solids with no cocoa to compete, so the violet yam stays the headline while the chocolate adds creamy, sweet, browning pockets.",
+    "tags": [
+      "cookies",
+      "baked",
+      "sweet",
+      "tropical"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya-white-chocolate-cookies",
+    "cuisine": "Filipino-American",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 12,
+      "total_min": 92,
+      "active_min": 22
+    },
+    "updated": "2026-06-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      },
+      {
+        "item": "large egg",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "large egg yolk",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "ube extract (optional, for color reinforcement)",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "white chocolate, chopped",
+        "slug": "white-chocolate",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt, for finishing",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [],
+    "added": "2026-06-10",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 92,
+      "diffLabel": "medium",
+      "timeLead": "22 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 22,
+      "filterMinutes": 22
+    }
+  },
+  {
+    "path": "pages/ingredients/white-chocolate.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "White chocolate",
+    "desc": "Confection of cocoa butter, milk solids, and sugar with no cocoa solids. The absence of cocoa mass is what makes it pale, mild, and dairy-forward, and what makes its melting and browning behavior diverge from dark chocolate.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "white-chocolate",
+    "updated": "2026-06-10",
+    "added": "2026-06-10",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
     }
   },
   {
@@ -2091,301 +2323,6 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/miso-dashi-chicken-nimono-with-kabocha-and-shimeji.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Miso-dashi chicken nimono with kabocha and shimeji",
-    "desc": "A Japanese nimono, a gently simmered dish built on dashi rather than browning. Bone-in chicken thighs and wedges of kabocha squash simmer in a kombu-katsuobushi dashi seasoned with sake, mirin, and a late addition of miso whisked in off the boil so its aromatics and live enzymes survive. Shimeji donate guanylate to the dashi glutamate; the squash thickens the broth as its starch leaches out. Restrained, savory-sweet, and clean, the opposite of a heavy braise.",
-    "tags": [
-      "chicken",
-      "simmer",
-      "japanese",
-      "umami",
-      "comfort",
-      "one-pot"
-    ],
-    "status": "complete",
-    "_slug": "miso-dashi-chicken-nimono-with-kabocha-and-shimeji",
-    "cuisine": "Japanese",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 40,
-      "total_min": 65,
-      "active_min": 25
-    },
-    "updated": "2026-06-01",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "kombu (dried kelp)",
-        "slug": "kombu",
-        "optional": false
-      },
-      {
-        "item": "katsuobushi (dried bonito flakes)",
-        "slug": "katsuobushi",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "bone-in skin-on chicken thighs",
-        "slug": "chicken-thigh",
-        "optional": false
-      },
-      {
-        "item": "sake",
-        "slug": "sake",
-        "optional": false
-      },
-      {
-        "item": "mirin",
-        "slug": "mirin",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "ginger",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "kabocha squash",
-        "optional": false
-      },
-      {
-        "item": "shimeji mushrooms",
-        "slug": "shimeji-mushroom",
-        "optional": false
-      },
-      {
-        "item": "white miso (shiro miso)",
-        "slug": "white-miso",
-        "optional": false
-      },
-      {
-        "item": "rice vinegar",
-        "slug": "rice-vinegar",
-        "optional": false
-      },
-      {
-        "item": "scallion",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "steamed Japanese short-grain rice",
-        "slug": "japanese-short-grain-rice",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dashi-extraction",
-      "drop-lid-simmer",
-      "miso-tempering"
-    ],
-    "equipment": [
-      "dutch-oven",
-      "fine-sieve"
-    ],
-    "added": "2026-06-01",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 65,
-      "diffLabel": "medium",
-      "timeLead": "1 h 5 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
-    "path": "pages/recipes/sichuan-doubanjiang-chicken-with-eggplant-and-potato.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Sichuan doubanjiang chicken with eggplant and potato",
-    "desc": "Bone-in chicken thighs braised with Pixian doubanjiang, the fermented broad-bean and chili paste that is the soul of Sichuan cooking, bloomed in oil until its red lipids release before any liquid goes in. Eggplant drinks the spiced braise and turns silky; waxy potato holds its shape and tempers the heat. Toasted Sichuan peppercorn delivers the má tingle the dish is built around, and a finish of black vinegar and scallion lands it. Numbing, savory, gently sweet, and acid-lifted.",
-    "tags": [
-      "chicken",
-      "braise",
-      "sichuan",
-      "chinese",
-      "spicy",
-      "one-pot",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "sichuan-doubanjiang-chicken-with-eggplant-and-potato",
-    "cuisine": "Chinese",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 45,
-      "total_min": 70,
-      "active_min": 35
-    },
-    "updated": "2026-06-01",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "eggplant",
-        "slug": "eggplant",
-        "optional": false
-      },
-      {
-        "item": "kosher salt (for the eggplant)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "bone-in skin-on chicken thighs",
-        "slug": "chicken-thigh",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "Sichuan peppercorns",
-        "slug": "sichuan-peppercorns",
-        "optional": false
-      },
-      {
-        "item": "ginger",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "garlic",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "scallion",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "Pixian doubanjiang (fermented broad-bean chili paste)",
-        "slug": "doubanjiang",
-        "optional": false
-      },
-      {
-        "item": "fermented black beans (douchi)",
-        "slug": "douchi",
-        "optional": true
-      },
-      {
-        "item": "Shaoxing wine",
-        "slug": "shaoxing-wine",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "water or unsalted chicken stock",
-        "optional": false
-      },
-      {
-        "item": "waxy potato",
-        "slug": "waxy-potato",
-        "optional": false
-      },
-      {
-        "item": "Chinkiang black vinegar",
-        "slug": "chinkiang-vinegar",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "steamed jasmine rice",
-        "slug": "jasmine-rice",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "bloom-aromatics",
-      "braising"
-    ],
-    "equipment": [
-      "dutch-oven",
-      "wide-skillet"
-    ],
-    "added": "2026-06-01",
-    "_card": {
-      "swatchIndex": 6,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 70,
-      "diffLabel": "medium",
-      "timeLead": "1 h 10 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 35,
-      "filterMinutes": 35
-    }
-  },
-  {
-    "path": "pages/ingredients/doenjang.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Doenjang (Korean fermented soybean paste, 된장)",
-    "desc": "A thick, funky, savory paste of fermented soybeans, traditionally the byproduct of making ganjang (soy sauce) from meju soybean blocks. Earthier, chunkier, and less sweet than Japanese miso. One of the three foundational Korean jangs and the savory backbone of jjigae, guk, and ssamjang.",
-    "tags": [
-      "pantry",
-      "umami",
-      "fermentation",
-      "korean"
-    ],
-    "status": "complete",
-    "_slug": "doenjang",
-    "updated": "2026-06-01",
-    "added": "2026-06-01",
-    "_card": {
-      "swatchIndex": 11,
-      "swatchGlyph": "jar",
-      "primaryTag": null,
-      "usedInCount": 1,
-      "hasNutrition": false
     }
   }
 ]
