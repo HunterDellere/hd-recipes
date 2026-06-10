@@ -1,5 +1,109 @@
 [
   {
+    "path": "pages/recipes/soy-glazed-tuna-steak.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Soy-glazed tuna steak",
+    "desc": "A fish-counter tuna steak in a four-ingredient soy, mirin, honey, and ginger marinade, seared hard, then the leftover marinade boiled down in the same pan into a glossy drizzle. Topped with scallion and toasted sesame. No sashimi grade needed: the steak is cooked through to a moist medium, and the sweet-salty glaze keeps the lean fish from drying. This is the simplest cooked-tuna recipe on the site, one bowl, one pan, about fifteen minutes.",
+    "tags": [
+      "fish",
+      "seafood",
+      "quick",
+      "weeknight",
+      "umami",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "soy-glazed-tuna-steak",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 8,
+      "total_min": 28,
+      "active_min": 12
+    },
+    "updated": "2026-06-09",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "mirin",
+        "slug": "mirin",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "yellowfin tuna steaks",
+        "slug": "tuna-loin",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "scallion",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame oil",
+        "slug": "toasted-sesame-oil",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "maillard-sear"
+    ],
+    "equipment": [
+      "heavy-cast-iron-skillet",
+      "tongs",
+      "microplane"
+    ],
+    "added": "2026-06-10",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 28,
+      "diffLabel": "easy",
+      "timeLead": "28 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
+    }
+  },
+  {
     "path": "pages/recipes/acid-forward-green-salad-with-sharp-vinaigrette.html",
     "type": "recipe",
     "category": "recipes",
@@ -2282,68 +2386,6 @@
       "primaryTag": null,
       "usedInCount": 1,
       "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/recipes/balsamic-glaze.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Balsamic glaze",
-    "desc": "A mid-grade IGP balsamic vinegar simmered down to roughly a third of its volume, optionally rounded with a little honey, until it coats a spoon and sets to a glossy, clinging syrup on cooling. The reduction concentrates both the cooked-grape-must sweetness and the acetic acid, so the glaze stays sweet-sour and sharp rather than one-note sweet. The drizzle behind roasted vegetables, seared meats, ripe fruit, and good cheese.",
-    "tags": [
-      "condiment",
-      "pantry",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "balsamic-glaze",
-    "cuisine": "Italian",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 12,
-    "time": {
-      "prep_min": 1,
-      "cook_min": 8,
-      "total_min": 9,
-      "active_min": 8
-    },
-    "updated": "2026-05-29",
-    "diet": [
-      "vegan",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "balsamic vinegar (mid-grade IGP)",
-        "slug": "balsamic-vinegar",
-        "optional": false
-      },
-      {
-        "item": "honey",
-        "slug": "honey",
-        "optional": true
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": true
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "small-saucepan"
-    ],
-    "added": "2026-05-29",
-    "_card": {
-      "swatchIndex": 3,
-      "swatchGlyph": "olive",
-      "totalMinutes": 9,
-      "diffLabel": "easy",
-      "timeLead": "9 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 8,
-      "filterMinutes": 8
     }
   }
 ]
