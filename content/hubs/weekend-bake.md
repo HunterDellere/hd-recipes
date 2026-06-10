@@ -14,6 +14,9 @@ members:
   - slug: 'recipes/brown-butter-sugar-cookies'
     label: 'Brown butter sugar cookies'
     note: 'Foundation cookie. The brown butter step is everything; the rest is dough discipline.'
+  - slug: 'recipes/ube-halaya-brown-butter-sugar-cookies'
+    label: 'Ube halaya brown butter sugar cookies'
+    note: 'The foundation cookie converted: ube halaya stands in as a fat-and-starch-bearing flavor mass, with cornstarch and a chill buying back the structure the jam water costs.'
   - slug: 'recipes/double-dark-chocolate-crinkle-cookies'
     label: 'Double dark chocolate crinkle cookies'
     note: "Bloomed Dutch cocoa, the sugar-roll for crackle. Technique you'll reuse on every chocolate cookie thereafter."
