@@ -425,6 +425,342 @@
     }
   },
   {
+    "path": "pages/ingredients/white-chocolate.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "White chocolate",
+    "desc": "Confection of cocoa butter, milk solids, and sugar with no cocoa solids. The absence of cocoa mass is what makes it pale, mild, and dairy-forward, and what makes its melting and browning behavior diverge from dark chocolate.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "white-chocolate",
+    "updated": "2026-06-10",
+    "added": "2026-06-13",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/ube-halaya-brown-butter-sugar-cookies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya brown butter sugar cookies",
+    "desc": "The brown butter sugar cookie rebuilt around ube halaya: toasted milk solids from the butter meet the caramelized condensed milk of the jam, cornstarch buffers the jam moisture, and the pan-bang trick still cracks a rippled, sugar-shelled violet top.",
+    "tags": [
+      "cookies",
+      "baked",
+      "sweet",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya-brown-butter-sugar-cookies",
+    "cuisine": "Filipino-American",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 14,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 13,
+      "total_min": 73,
+      "active_min": 18
+    },
+    "updated": "2026-06-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      },
+      {
+        "item": "large egg",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "ube extract (optional, for color reinforcement)",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar, for rolling",
+        "slug": "granulated-sugar",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [],
+    "added": "2026-06-13",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 73,
+      "diffLabel": "easy",
+      "timeLead": "1 h 13 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/ube-halaya-thumbprint-cookies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya thumbprint cookies",
+    "desc": "Brown butter shortbread with a coconut-rolled edge and a well of ube halaya baked into the center, then refreshed with a second spoon of cold jam so the violet reads vivid against the toasted crumb. Halaya is already a jam, which makes it the native filling for a thumbprint.",
+    "tags": [
+      "cookies",
+      "baked",
+      "sweet",
+      "tropical"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya-thumbprint-cookies",
+    "cuisine": "Filipino-American",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 18,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 16,
+      "total_min": 106,
+      "active_min": 30
+    },
+    "updated": "2026-06-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "powdered sugar",
+        "optional": false
+      },
+      {
+        "item": "large egg yolk",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "desiccated coconut",
+        "slug": "desiccated-coconut",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [],
+    "added": "2026-06-13",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 106,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/ube-halaya-white-chocolate-cookies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube halaya white chocolate cookies",
+    "desc": "A brown butter drop cookie built on ube halaya with pools of white chocolate. The white chocolate is the deliberate partner: cocoa butter and milk solids with no cocoa to compete, so the violet yam stays the headline while the chocolate adds creamy, sweet, browning pockets.",
+    "tags": [
+      "cookies",
+      "baked",
+      "sweet",
+      "tropical"
+    ],
+    "status": "complete",
+    "_slug": "ube-halaya-white-chocolate-cookies",
+    "cuisine": "Filipino-American",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 12,
+      "total_min": 92,
+      "active_min": 22
+    },
+    "updated": "2026-06-10",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      },
+      {
+        "item": "large egg",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "large egg yolk",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "ube extract (optional, for color reinforcement)",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "white chocolate, chopped",
+        "slug": "white-chocolate",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt, for finishing",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [],
+    "added": "2026-06-13",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 92,
+      "diffLabel": "medium",
+      "timeLead": "22 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 22,
+      "filterMinutes": 22
+    }
+  },
+  {
     "path": "pages/ingredients/cremini-mushroom.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -28941,7 +29277,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 9,
+      "usedInCount": 12,
       "hasNutrition": false
     }
   },
@@ -32682,7 +33018,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 11,
       "hasNutrition": false
     }
   },
@@ -33182,7 +33518,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -46966,7 +47302,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 43,
+      "usedInCount": 46,
       "hasNutrition": true
     }
   },
@@ -47023,7 +47359,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 61,
+      "usedInCount": 64,
       "hasNutrition": true
     }
   },
@@ -47124,7 +47460,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": "egg",
-      "usedInCount": 74,
+      "usedInCount": 77,
       "hasNutrition": true
     }
   },
@@ -47181,7 +47517,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -48585,9 +48921,9 @@
     "_card": {
       "swatchIndex": 6,
       "swatchGlyph": "whisk",
-      "memberCount": 5,
+      "memberCount": 6,
       "memberMix": {
-        "recipes": 5
+        "recipes": 6
       }
     }
   },
@@ -48687,7 +49023,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 13,
       "hasNutrition": true
     }
   },
@@ -48805,7 +49141,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 136,
+      "usedInCount": 139,
       "hasNutrition": true
     }
   },
@@ -48843,7 +49179,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 87,
+      "usedInCount": 90,
       "hasNutrition": true
     }
   },
@@ -48976,7 +49312,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 18,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -50588,7 +50924,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 8
+      "usedInCount": 11
     }
   },
   {
