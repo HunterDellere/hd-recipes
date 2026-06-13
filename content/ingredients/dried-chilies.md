@@ -11,6 +11,10 @@ tags: ['spicy', 'pantry']
 density_g_per_ml: 0.18
 updated: '2026-05-09'
 
+# USDA FDC 168570 — "Peppers, hot chile, sun-dried" (whole dried red chilies).
+# https://fdc.nal.usda.gov/food-details/168570/nutrients
+usda_fdc_id: 168570
+
 about: |
   Dried Chinese chilies are the foundational red-spice ingredient across Sichuan, Hunan, Yunnan, and Northwestern Chinese cooking. The cuisine treats heat and aroma as separable variables, and the cultivar choice for any given dish is the cook's first decision: a Sichuan dry-pot built on the wrong chili reads either flat (insufficient aroma) or punishingly hot (insufficient body). Western pantries that stock "red pepper flakes" or "dried red chiles" as a single SKU lose this entire dimension of the cooking; the named cultivars are not interchangeable.
 

@@ -11,6 +11,10 @@ tags: ['pork', 'pantry']
 density_g_per_ml: 0.95
 updated: '2026-05-15'
 
+# USDA FDC 167902 — "Pork, fresh, ground, raw" (generic grind; the ~75/25
+# shoulder default this page describes). https://fdc.nal.usda.gov/food-details/167902/nutrients
+usda_fdc_id: 167902
+
 about: |
   Ground pork is whole-muscle pork passed through a meat grinder with a plate of specified hole diameter (most commonly 4.5 mm for "medium grind" supermarket ground pork, 3 mm for "fine grind" used in sausage and dumpling filling, 6 mm for "coarse grind" used in ragu and chili). Unlike ground beef, where the cut origin is often labeled (chuck, sirloin, round), supermarket ground pork is almost always from the shoulder (Boston butt) without further specification; it runs roughly 75 to 80% lean and 20 to 25% fat, the inherent ratio of the cut. The exception is "ground pork loin" which is sometimes sold as a leaner option (90/10) and behaves more like ground turkey than like real ground pork.
 
