@@ -11,6 +11,12 @@ tags: ['pantry', 'umami', 'fermentation', 'spicy']
 density_g_per_ml: 1.15
 updated: '2026-05-09'
 
+# USDA FDC 172442 — "Miso". FDC has no doubanjiang entry; miso is the closest
+# fermented-bean-paste analog (comparable salt, protein, and carb profile, as
+# this page notes). Proxy until a branded doubanjiang record is mapped.
+# https://fdc.nal.usda.gov/food-details/172442/nutrients
+usda_fdc_id: 172442
+
 about: |
   Doubanjiang (or "broad bean paste") is a Sichuan ferment with a closely-guarded provenance: the canonical version is Pixian doubanjiang (郫县豆瓣酱), made in Pixian county outside Chengdu, where the traditional recipe specifies broad beans (faba beans, not soy), fresh erjingtiao chilies, salt, wheat flour, and a long sun-fermentation in open ceramic vats that takes anywhere from 8 months to 3 years depending on grade. Other Chinese provinces make their own bean pastes (Cantonese mian shi jiang, Korean doenjang, Japanese miso) but the Pixian-style chili-bean paste is structurally and culturally distinct: it is the spine of Sichuan cooking, and substituting other bean pastes loses the dish.
 

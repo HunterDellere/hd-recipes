@@ -11,6 +11,9 @@ tags: ['pantry']
 density_g_per_ml: 0.55
 updated: '2026-05-15'
 
+# USDA FDC 169698 — "Cornstarch" (exact match). https://fdc.nal.usda.gov/food-details/169698/nutrients
+usda_fdc_id: 169698
+
 about: |
   Cornstarch is pure starch extracted from the endosperm of corn (maize) kernels by wet-milling: the kernels are steeped in warm sulfurous water to soften, then ground and centrifuged to separate the starch from the protein (which becomes corn gluten meal), the germ (corn oil), and the bran. The resulting starch is washed, dried, and milled into a fine white powder. Cornstarch is roughly 73% amylopectin (the branched-chain starch) and 27% amylose (the linear-chain starch); the high amylopectin fraction is what produces the glossy, translucent gel characteristic of cornstarch-thickened sauces, distinct from the more opaque, looser gel of high-amylose starches like wheat flour or tapioca.
 

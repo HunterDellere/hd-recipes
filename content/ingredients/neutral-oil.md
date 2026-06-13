@@ -13,6 +13,11 @@ updated: '2026-05-10'
 density_g_per_ml: 0.92
 imperial_pref: 'tbsp'
 
+# USDA FDC 171410 — "Oil, peanut, salad or cooking". Peanut is the canonical
+# neutral oil this page leads with; all refined neutral oils are ~884 kcal/100g
+# of nearly pure fat, so this stands in for the category. https://fdc.nal.usda.gov/food-details/171410/nutrients
+usda_fdc_id: 171410
+
 about: |
   "Neutral oil" is a kitchen-shorthand category for refined plant oils that share two characteristics: a high smoke point (typically 200 to 270 °C / 390 to 520 °F) and a flavor profile so mild that the oil contributes little to the dish beyond its function as a cooking medium. The category includes peanut oil (the canonical Chinese stir-fry and deep-fry oil), rice bran oil (high smoke point, increasingly popular for high-heat work), canola/rapeseed oil (the cheapest and most common neutral oil in North American kitchens), refined avocado oil (the highest smoke point of the common options, increasingly available), refined sunflower oil, refined safflower oil, and grapeseed oil. Soybean oil and corn oil are also neutral but flavor-distinguishable in some applications; vegetable shortenings and pure plant fats (palm oil, coconut oil) are sometimes used in neutral applications but have detectable flavor.
 

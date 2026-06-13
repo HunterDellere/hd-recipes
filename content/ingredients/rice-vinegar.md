@@ -10,6 +10,11 @@ tags: ['pantry']
 updated: '2026-04-29'
 density_g_per_ml: 1.01
 
+# USDA FDC 172237 — "Vinegar, distilled". FDC has no rice-vinegar entry; all
+# table vinegars are ~18-21 kcal/100g and used in teaspoon finishing amounts,
+# so the nutritional contribution is negligible. https://fdc.nal.usda.gov/food-details/172237/nutrients
+usda_fdc_id: 172237
+
 about: |
   Rice vinegar (米酢, *komezu*) is brewed from rice or rice wine, landing around 4–5% acetic acid; noticeably lower acid than the 6–7% standard for white wine vinegar or apple cider vinegar. The result is softer, rounder, and free of the harsh top-note bite that dominates Western vinegars. There's a faintly sweet, almost lactic backnote from residual rice sugars and amino acids.
 
