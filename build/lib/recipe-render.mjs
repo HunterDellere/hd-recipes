@@ -1026,9 +1026,16 @@ export function renderEquipment(fm, currentPath, equipmentBySlug) {
     <div class="recipe-equipment">${chips}</div>`;
 }
 
-export function renderRecipeNotes(fm) {
+export function renderRecipeNotes(fm, ingredientBySlug) {
   if (!fm.notes) return '';
-  const notesHtml = fm.notes.split('\n\n').map(p => `<p>${escapeHtml(p)}</p>`).join('');
+  // Notes routinely cite quantities ("the leftover 200 g rice keeps three
+  // days") that must rescale with servings just like step prose does. Run
+  // each paragraph through wrapStepQuantities (which escapes internally) so
+  // those numbers stay in sync. Pass no subHintsState — substitution hints
+  // are step-scoped and already consumed there; we only want qty wrapping.
+  const notesHtml = fm.notes.split('\n\n')
+    .map(p => `<p>${wrapStepQuantities(p, fm, ingredientBySlug, null)}</p>`)
+    .join('');
   return `
     <span class="section-anchor" id="notes"></span>
     <div class="section-head"><h2>Notes</h2></div>
@@ -1243,7 +1250,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
   const hmHtml = renderHomemadeAlternatives(fm, `pages/${category}/${slug}.html`, entriesByPath);
   if (hmHtml) { sections.push(hmHtml); sidebarLinks.push({ id: 'homemade', label: 'Make it from scratch' }); }
 
-  const notesHtml = renderRecipeNotes(fm);
+  const notesHtml = renderRecipeNotes(fm, ingredientBySlug);
   if (notesHtml) { sections.push(notesHtml); sidebarLinks.push({ id: 'notes', label: 'Notes' }); }
 
   const nutHtml = renderNutritionBlock(nutrition);

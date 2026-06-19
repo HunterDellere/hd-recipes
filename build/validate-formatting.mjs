@@ -222,6 +222,49 @@ for (const pageFull of walkPages(PAGES)) {
       }
     }
 
+    // Scaling-coverage (INFO, report-only): the build wraps clean "N unit" and
+    // "N metric / N imperial" prose quantities in <span data-step-qty> so they
+    // rescale with servings. Two specific shapes it provably CANNOT wrap stay
+    // frozen and then contradict the ingredient table at 2×. Rather than guess
+    // a count delta (noisy), we report the exact offending substrings so a
+    // future content pass can act on them precisely:
+    //   (a) ranges — "60 to 80 g", "3 to 4 g cayenne" — the wrapper only claims
+    //       single quantities, so the range endpoints never move.
+    //   (b) yield-coupled splits — "divide into 4", "form into 12" — the count
+    //       IS the serving math, so it must move with servings, but the wrapper
+    //       can't touch a bare integer. (Generic "N <noun>" is left alone: most
+    //       such counts — 2 bay leaves, a 3:1 ratio — are intentionally fixed.)
+    {
+      const proseBlocks = [
+        ...(fm.steps || []).map(s => s.text || ''),
+        ...(typeof fm.notes === 'string' ? fm.notes.split('\n\n') : []),
+      ];
+      const NUM = `(?:\\d+(?:\\.\\d+)?|[¼½¾⅓⅔⅛⅜⅝⅞])`;
+      const UNIT = `(?:g|kg|mg|ml|l|oz|lb|tsp|tbsp|cups?|tablespoons?|teaspoons?|sticks?|pounds?)`;
+      // "60 to 80 g" / "3-4 g" / "15 to 20 ml" — a numeric range carrying a unit.
+      const rangeRe = new RegExp(`(?<![\\w.])${NUM}\\s*(?:to|–|—|-)\\s*${NUM}\\s*${UNIT}\\b`, 'gi');
+      // Yield-coupled split: "divide/portion/form/shape ... into N".
+      const divideRe = /\b(?:divide|portion|form|shape|split|roll|scoop|pipe)\s+(?:it\s+|the\s+[\w-]+\s+|them\s+)*into\s+([2-9]|1\d|20)\b/gi;
+      const ranges = new Set();
+      const splits = new Set();
+      for (const block of proseBlocks) {
+        for (const m of block.matchAll(rangeRe)) ranges.add(m[0].trim().replace(/\s+/g, ' '));
+        for (const m of block.matchAll(divideRe)) splits.add(`into ${m[1]}`);
+      }
+      if (ranges.size) {
+        const sample = [...ranges].slice(0, 5).join('", "');
+        emit('INFO', contentRel,
+          `scaling: ${ranges.size} quantity range(s) in prose stay fixed when servings change — e.g. "${sample}"`,
+          { fix: 'Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value ("70 g") and move the tolerance to a note; if it is guidance ("to taste, ~3 to 4 g"), leave it but know it will not move.' });
+      }
+      if (splits.size) {
+        const sample = [...splits].slice(0, 5).join('", "');
+        emit('INFO', contentRel,
+          `scaling: ${splits.size} yield-coupled split(s) ("${sample}") use a fixed count that will not move with servings`,
+          { fix: 'A "divide into N" count should track servings. Phrase it relative to yield ("one portion per serving") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled.' });
+      }
+    }
+
     // Pack/derive accounting: every derive_from must reference an existing
     // pack id, and the sum of derived grams must not exceed the pack's total
     // grams (with a 5% tolerance for cling/loss). Catches math mistakes when
