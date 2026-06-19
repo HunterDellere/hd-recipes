@@ -22,6 +22,7 @@ npm run verify             # validate + build + check
 npm run validate:all       # all validators (relations, search, formatting) — emits findings to admin
 npm run refresh:nutrition  # fetch USDA FoodData Central nutrition records for ingredient pages
 npm run draft <type> <slug>  # scaffold a new draft in local/drafts/
+npm run review <slug>        # assemble a culinary-review packet for a recipe (see Culinary review)
 ```
 
 Source of truth: `content/<category>/<slug>.md`. Never hand-edit `pages/` — generated.
@@ -172,6 +173,18 @@ For best scaling fidelity, set `qty` as a number (grams preferred) and put any n
 Generated each build at `pages/_admin/review.html`. Bookmark it. Not linked from public surfaces. Filterable table of all entries with status, review state, findings, and nutrition coverage.
 
 Findings come from `validate-relations`, `validate-search`, `validate-formatting` (run via `npm run validate:all`). They're written to `data/_admin/findings.json` and surfaced in the admin table.
+
+`validate-formatting` also emits report-only INFO findings that the structural validators can't gate on but are worth triaging: prose quantities that won't rescale with servings (numeric **ranges** like "60 to 80 g" and **yield-coupled splits** like "divide into 4"), and **orphaned ingredients** (on the list but no step appears to use them — e.g. a recipe that lists potatoes but never cooks them). These point at real recipe defects; work the list down from the admin dashboard.
+
+## Culinary review
+
+The validators catch structural defects but not *culinary* quality — seasoning levels, the ideal technique for a dish, ingredient pairing, authenticity, and whether a recipe is over-engineered. That judgment needs a knowledgeable reader, not a regex.
+
+`npm run review <slug>` assembles a **review packet**: the recipe source, the matched cuisine reference (its pantry foundations, defining techniques, and "common Western drift" warnings, auto-selected from the recipe's `cuisine:` via the map in `build/review-recipe.mjs`), and a fixed rubric (seasoning levels → ideal technique → ingredient pairing/authenticity → effortless-amazing balance → coherence). A reviewing agent (or Hunter) reads the packet and returns prioritized, concrete findings.
+
+To review a recipe: run `npm run review <slug>`, then evaluate against the rubric in the packet, cross-checking authenticity explicitly against the reference's Western-drift list. The aim is **make amazing feel effortless** — recommend the simplest version that still tastes excellent; flag over-engineering as readily as under-seasoning. Reviews are report-only; never rewrite a recipe's content without Hunter's sign-off on the specific changes.
+
+`npm run review --list-uncovered` shows recipe cuisines with no mapped reference (add them to `CUISINE_TO_REF`). Empty-cuisine recipes fall back to first-principles review.
 
 ## Site URL & deployment
 
