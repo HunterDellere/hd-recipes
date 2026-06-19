@@ -1,9 +1,9 @@
 {
-  "generated": "2026-06-13T22:28:45.125Z",
+  "generated": "2026-06-19T18:00:35.937Z",
   "summary": {
     "errors": 0,
     "warnings": 369,
-    "info": 4
+    "info": 130
   },
   "findings": [
     {
@@ -1830,6 +1830,13 @@
       "fix": "Frame each row by use case: heat regime, application (cooking vs finishing), role (whipping vs sauce). See templates/_drafting/INGREDIENT.md."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/akadashi-clam-miso-soup.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"750 to 800 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/anticuchos-de-corazon.md",
@@ -1865,11 +1872,39 @@
       "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/autumn-simmer-pot.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"1.5 to 2 L\", \"6 to 8 cups\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/avgolemono-soup.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/banh-mi-thit-nuong.md",
       "msg": "step 3 names \"lemongrass\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"30 g lemongrass\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/beef-and-mushroom-noodle-soup-with-xiao-long-bao-aspic.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"7 to 8 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/beef-bourguignon.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"6 to 7 L\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -1907,6 +1942,20 @@
       "fix": "Inline the quantity, e.g. \"3 each bay leaves\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/bigos.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 6 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/bouillabaisse-marseillaise.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"1.5 to 2 L\", \"2 to 4 g\", \"½ to 1 tsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/breakfast-egg-bites-with-spinach-and-feta.md",
@@ -1919,6 +1968,13 @@
       "file": "content/recipes/brown-sugar-milk-tea-with-boba.md",
       "msg": "step 7 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"360 ml cold whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/buttermilk-biscuits-and-sausage-gravy.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"3 to 4 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -1949,6 +2005,20 @@
       "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cajun-boudin-blanc.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"100 to 300 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cajun-boudin-blanc.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 2\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/cajun-crawfish-etouffee.md",
@@ -1956,11 +2026,39 @@
       "fix": "Inline the quantity, e.g. \"4 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cajun-crawfish-etouffee.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 60 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cantonese-steamed-whole-fish-with-ginger-scallion.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 50 g\", \"600 to 900 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cantonese-white-congee.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"60-100 ml\", \"¼-½ cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/carnitas.md",
       "msg": "step 4 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"250 g whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cast-iron-chuck-eye-steaks-with-shallot-pan-sauce.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -1984,6 +2082,20 @@
       "fix": "Inline the quantity, e.g. \"80 g palm sugar, chopped\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/che-dau-trang.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 120 ml\", \"¼ to ½ cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/che-thai.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/che-troi-nuoc.md",
@@ -1998,11 +2110,32 @@
       "fix": "Inline the quantity, e.g. \"40 g fresh ginger\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/che-troi-nuoc.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/che-troi-nuoc.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 16\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/chia-coconut-pudding-with-mango.md",
       "msg": "step 5 names \"chia seeds\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"80 g chia seeds (black or white)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chia-coconut-pudding-with-mango.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"6 to 8 oz\", \"15 to 30 g\", \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2047,11 +2180,39 @@
       "fix": "Inline the quantity, e.g. \"50 g garlic\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-and-andouille-gumbo.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"250 to 300 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-ginger-congee.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"½-1 tbsp\", \"7-15 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-nihari.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/chicken-satay-with-peanut-sauce.md",
       "msg": "step 8 names \"cucumber\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"200 g sliced cucumber\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-stock.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"400 to 500 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2061,6 +2222,13 @@
       "fix": "Inline the quantity, e.g. \"30 g fresh cilantro\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-tagine-with-preserved-lemon-and-olives.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"100 to 250 g\", \"500 to 1000 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
@@ -2068,11 +2236,60 @@
       "fix": "Inline the quantity, e.g. \"8 g fresh dill, finely chopped\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"80 to 120 g\", \"40 to 60 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 20\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chinese-lions-head-meatballs.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"130 to 140 g\", \"200 to 300 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chinese-lions-head-meatballs.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 4\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cioppino-san-francisco-italian-american-seafood-stew.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"½ to ¾ tsp\", \"2 to 4 g\", \"½ to 1 tsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/classic-pancakes.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 70 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/classic-pearl-milk-tea.md",
       "msg": "step 6 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"240 ml cold whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/classic-pearl-milk-tea.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2110,6 +2327,20 @@
       "fix": "Inline the quantity, e.g. \"1 each bouquet garni for the marinade (thyme, bay, parsley stems)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/coq-au-vin.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"6 to 7 L\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/corn-tortillas-from-masa.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 12\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/country-sourdough.md",
@@ -2117,11 +2348,25 @@
       "fix": "Inline the quantity, e.g. \"150 g whole wheat flour (stone-ground if available)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/creole-jambalaya.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\", \"3 to 4 g\", \"15 to 20 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/cuban-sandwich.md",
       "msg": "store-bought ingredient(s) without homemade_alternatives: yellow mustard",
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/cured-egg-yolk.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"6-8 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2145,6 +2390,34 @@
       "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/evergreen-winter-simmer-pot.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1.5 to 2 L\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/fesenjan.md",
+      "msg": "ingredient \"black pepper, freshly cracked\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/french-onion-soup-gratinee.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 6 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/fresh-egg-pasta.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 4\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/fresh-soy-milk.md",
@@ -2152,11 +2425,39 @@
       "fix": "Inline the quantity, e.g. \"1000 ml cold water (for the soak)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/fresh-soy-milk.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"10 to 15 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/full-english-breakfast-components.md",
       "msg": "step 1 names \"eggs\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"4 each large eggs\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/full-english-breakfast-components.md",
+      "msg": "ingredient \"British-style pork bangers (or fresh bratwurst-style pork sausage)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/full-english-breakfast-components.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/furikake.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2178,6 +2479,34 @@
       "file": "content/recipes/german-rouladen.md",
       "msg": "step 9 names \"salt\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"6 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/german-rouladen.md",
+      "msg": "ingredient \"German dill pickles (Spreewald style), sliced into long spears\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/german-warm-potato-salad-with-bacon-and-mustard.md",
+      "msg": "scaling: 4 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\", \"1 to 2 g\", \"¼ to ½ tsp\", \"5 to 8 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/gochujang-glazed-seared-tuna.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"40 to 60 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/gochujang-honey-chicken-tenders-with-smashed-cucumber-salad.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 50 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2208,6 +2537,27 @@
       "fix": "Inline the quantity, e.g. \"12 each rice paper (banh trang), 22 cm round\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/golabki.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 70 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/goulash-gulyas.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tablespoons\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/greek-salad-horiatiki.md",
+      "msg": "ingredient \"dried Greek oregano (rigani)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/hainanese-chicken-rice.md",
@@ -2229,6 +2579,20 @@
       "fix": "Inline the quantity, e.g. \"4 g fresh thyme sprigs\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/haitian-soup-joumou.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 6 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/harissa.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 7 cup\", \"30 to 60 ml\", \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/herb-citrus-simmer-pot.md",
@@ -2236,11 +2600,25 @@
       "fix": "Inline the quantity, e.g. \"1500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/herb-citrus-simmer-pot.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1.5 to 2 L\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/hoisin-sauce.md",
       "msg": "step 2 names \"honey\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"15 g honey\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/hoisin-sauce.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"10 to 15 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2271,11 +2649,32 @@
       "fix": "Inline the quantity, e.g. \"5 g fine sea salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/homemade-mayonnaise.md",
+      "msg": "ingredient \"fresh-ground black pepper\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/homemade-mayonnaise.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"5 to 10 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/homemade-popping-boba.md",
       "msg": "step 5 names \"water\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"500 ml water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/homemade-tahini.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"15 to 30 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2299,6 +2698,13 @@
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/hungarian-chicken-with-lecso.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 60 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/hungarian-stuffed-cabbage-toltott-kaposzta.md",
@@ -2306,11 +2712,39 @@
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/hungarian-stuffed-cabbage-toltott-kaposzta.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 2\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/in-n-out-spread.md",
       "msg": "step 3 names \"ketchup\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"40 g ketchup\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/individual-fluffy-chocolate-cakes.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"90 to 120 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/injera.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"90 to 110 g\", \"50 to 100 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 12\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
     },
     {
       "level": "WARN",
@@ -2348,6 +2782,13 @@
       "fix": "Inline the quantity, e.g. \"2 each bay leaves\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/jollof-rice-nigerian-style.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tablespoons\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/kashmiri-noon-chai.md",
@@ -2362,11 +2803,95 @@
       "fix": "Inline the quantity, e.g. \"15 g crushed pistachios\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/kheer.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"100 to 120 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/kkakdugi.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"150 to 250 g\", \"50 to 100 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/korean-haemul-pajeon-seafood-scallion-pancake.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tbsp\", \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/lacto-fermented-hot-sauce.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"90 to 180 g\", \"½ to ¾ cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/lamb-tagine-with-prunes-and-almonds.md",
       "msg": "step 9 names \"cinnamon\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"2 g ground cinnamon\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/larb-gai-thai-minced-chicken-salad.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"5 to 8 g\", \"1 to 2 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/lebanese-pita-bread.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 8\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/lemongrass-chicken-tenders-with-vietnamese-rice-noodle-bowl.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"50 to 75 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/lomo-saltado.md",
+      "msg": "ingredient \"russet potatoes\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/manti.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/maple-mustard-glazed-turkey-breast.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"5–7 lb\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/mapo-tofu-poured-set.md",
+      "msg": "ingredient \"glucono delta-lactone (GDL)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/mapo-tofu-poured-set.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"15 to 30 ml\", \"1 to 2 tbsp\", \"80 to 100 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2381,6 +2906,34 @@
       "file": "content/recipes/mexican-tamales-de-pollo-en-salsa-verde.md",
       "msg": "step 10 names \"corn husks\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"30 each dried corn husks\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/miso-butter-shrimp-with-delicata-shimeji-and-charred-broccoli.md",
+      "msg": "ingredient \"hon-mirin\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/miso-soup.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"10 to 20 g\", \"150 to 220 ml\", \"350 to 400 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/mojo-verde.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 7 cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/moussaka.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 5 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2404,6 +2957,13 @@
       "fix": "Inline the quantity, e.g. \"200 g pork belly, thinly sliced (about 2 mm)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/olive-garden-breadsticks.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 12\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/olive-garden-italian-dressing.md",
@@ -2416,6 +2976,20 @@
       "file": "content/recipes/olive-garden-italian-dressing.md",
       "msg": "step 4 names \"honey\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"20 g honey\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/omurice.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 2\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/onigiri.md",
+      "msg": "ingredient \"tuna mayo (canned tuna, drained, mixed with Kewpie)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
     },
     {
       "level": "WARN",
@@ -2432,11 +3006,39 @@
       "fix": "Inline the quantity, e.g. \"2 g fine sea salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/overnight-oats-with-warm-spice-and-grated-pear.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"15 to 30 g\", \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/pakistani-aloo-paratha.md",
       "msg": "step 6 names \"water\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"180 ml warm water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pakistani-aloo-paratha.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 6\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pakistani-haleem.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2460,6 +3062,27 @@
       "fix": "Inline the quantity, e.g. \"20 g garlic\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pancit-canton.md",
+      "msg": "ingredient \"water (for pre-soak, if needed)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/panzanella-with-charred-tomatoes.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"80 to 120 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pav-bhaji.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tbsp\", \"200 to 250 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/peanut-groundnut-soup.md",
@@ -2467,11 +3090,32 @@
       "fix": "Inline the quantity, e.g. \"800 g beef chuck (or boneless skinless chicken thighs), cut into 4 cm chunks\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/peanut-groundnut-soup.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 8 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/peanut-lime-dipping-sauce.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 7 cup\", \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/penang-curry-laksa.md",
       "msg": "store-bought ingredient(s) without homemade_alternatives: coconut milk",
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pesto-alla-genovese.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 60 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2486,6 +3130,13 @@
       "file": "content/recipes/pho-bo-hanoi-style.md",
       "msg": "step 5 names \"ginger\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"80 g fresh ginger\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pho-bo-hanoi-style.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 1.5 cups\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2507,6 +3158,13 @@
       "file": "content/recipes/pimento-cheese.md",
       "msg": "step 6 names \"black pepper\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"3 g black pepper, freshly cracked\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pizza-napoletana-dough.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 4\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
     },
     {
       "level": "WARN",
@@ -2537,11 +3195,39 @@
       "fix": "Inline the quantity, e.g. \"5 g dried marjoram\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pomegranate-molasses.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 60 ml\", \"5 to 10 g\", \"1 to 2 tsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/ponzu.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"12 to 18 g\", \"300 to 500 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pork-gyoza.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"100 to 150 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/pork-sinigang.md",
       "msg": "step 7 names \"salt\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"10 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/preserved-lemons.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"10 to 20 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2565,11 +3251,32 @@
       "fix": "Inline the quantity, e.g. \"1.5 g garlic powder\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/raita.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/rasmalai.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"18 to 20 g\", \"60 to 80 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/red-beans-and-rice.md",
       "msg": "store-bought ingredient(s) without homemade_alternatives: chicken stock",
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/red-beans-and-rice.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"250 to 300 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2579,6 +3286,90 @@
       "fix": "Inline the quantity, e.g. \"600 g cauliflower\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/romesco.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 7 cup\", \"30 to 60 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/salsa-macha.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"5 to 7 cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/salt-and-pepper-squid.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"6 to 8 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/sauerkraut.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"5 to 50 L\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/sheet-pan-roasted-shallots-cauliflower-and-sweet-potato-with-lemon-dijon-yogurt.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/shojin-kenchinjiru-temple-miso-soup.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"900 to 1000 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/shoyu-ramen-from-scratch.md",
+      "msg": "scaling: 4 quantity range(s) in prose stay fixed when servings change — e.g. \"2500 to 2800 ml\", \"30 to 40 g\", \"500 to 600 ml\", \"30 to 50 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/shrimp-and-grits.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"180 to 220 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/sichuan-sticky-pork-meatballs.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 16\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/spaghetti-with-beef-oyster-mushroom-shallot-ragu.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 60 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/squid-ink-pasta.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 60 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/stuffed-lotus-root-with-pork.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"280 to 320 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/tacos-al-pastor.md",
@@ -2586,11 +3377,67 @@
       "fix": "Inline the quantity, e.g. \"200 g fresh pineapple\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/tahini-yogurt-sauce.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/taro-milk-tea-with-boba.md",
       "msg": "step 6 names \"milk\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"300 ml whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/taro-milk-tea-with-boba.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/thai-green-curry-paste.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tablespoons\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/thai-iced-tea-no-dye.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1–2 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/thai-pork-larb-meatballs.md",
+      "msg": "ingredient \"sawtooth coriander (culantro / pak chee farang)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/thai-pork-larb-meatballs.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 20\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/tianjin-jianbing-savory-mung-bean-crepe.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/toasted-rice-powder.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"50 to 55 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
@@ -2612,6 +3459,41 @@
       "file": "content/recipes/tortilla-soup-sopa-de-tortilla.md",
       "msg": "step 9 names \"queso fresco\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"150 g queso fresco, crumbled\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/toum.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 7 cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/ube-halaya-pancakes.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 70 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/white-beans-braised-with-beet-greens.md",
+      "msg": "ingredient \"Parmigiano-Reggiano, finely grated\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/white-beans-braised-with-beet-greens.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"600 to 900 mg\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/zhoug.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 7 cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     }
   ]
 }

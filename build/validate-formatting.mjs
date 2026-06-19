@@ -222,6 +222,54 @@ for (const pageFull of walkPages(PAGES)) {
       }
     }
 
+    // Orphaned ingredients (INFO, report-only): an ingredient the steps never
+    // mention is either a forgotten instruction or a list typo — the cook is
+    // left holding an unused item. Matching ingredient names to prose is fuzzy
+    // ("extra-virgin olive oil" vs "olive oil"; "kosher salt" vs "salt"), so we
+    // invert the test for confidence: an ingredient counts as USED if ANY of
+    // its name words (≥3 chars, loose-stemmed for plural/participle drift) shows
+    // up in the step corpus. We flag only when NOTHING matches. Two further
+    // guards keep noise down: NOISE drops shared modifiers, and recipes whose
+    // steps reference ingredients COLLECTIVELY ("add all ingredients", "toast
+    // the whole spices", "the blend") are skipped entirely — there, no single
+    // ingredient is named even though all are used. INFO (not WARN) because the
+    // residue is advisory triage for the admin dashboard, not a build gate.
+    {
+      // Collective-reference guard: blender/spice-blend recipes name the group,
+      // not each item, so per-ingredient orphan detection is meaningless there.
+      const stepCorpus = (fm.steps || []).map(s => (s.text || '')).join(' ').toLowerCase();
+      const collective = /\ball (?:the |of the )?ingredients\b|\beverything (?:else |into |in )|\bthe (?:whole |toasted |dry )?spices\b|\bthe (?:masala |spice |curry )?(?:blend|paste|mix)\b|\bremaining ingredients\b/.test(stepCorpus);
+      if (!collective) {
+        // Normalize a word to a loose stem: strip a trailing plural/participle
+        // so "leaves"≈"leaf", "scallions"≈"scallion", "diced"≈"dice".
+        const stemOf = (w) => w
+          .replace(/ves$/, 'f').replace(/ies$/, 'y')
+          .replace(/(es|s|ed)$/, '')
+          .slice(0, 6);
+        const stepStems = new Set(
+          stepCorpus.replace(/[^a-z\s-]/g, ' ').split(/\s+/).filter(w => w.length >= 3).map(stemOf));
+        const NOISE = new Set(['fresh','ground','dried','whole','large','small','medium','room','plus',
+          'with','into','extra','virgin','finely','coarsely','thinly','roughly','temperature','about',
+          'peeled','halved','sliced','minced','diced','chopped','grated','toasted','cold','warm','more',
+          'your','from','best','good','for','the','and','optional','preferably','such','style']);
+        for (const ing of (fm.ingredients || [])) {
+          if (typeof ing.qty !== 'number') continue;
+          if (ing.derive_from) continue;
+          const probes = (ing.item || '').toLowerCase()
+            .replace(/\([^)]*\)/g, ' ')          // drop "(Korean fermented...)"
+            .replace(/[^a-z\s-]/g, ' ').split(/\s+/)
+            .filter(w => w.length >= 3 && !NOISE.has(w))
+            .map(stemOf);
+          if (!probes.length) continue;           // nothing distinctive to test on
+          if (!probes.some(p => stepStems.has(p))) {
+            emit('INFO', contentRel,
+              `ingredient "${ing.item}" is on the list but no step appears to use it — possible orphaned ingredient`,
+              { fix: 'Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a "scatter the X over the top" step so the cook knows when to use them.' });
+          }
+        }
+      }
+    }
+
     // Scaling-coverage (INFO, report-only): the build wraps clean "N unit" and
     // "N metric / N imperial" prose quantities in <span data-step-qty> so they
     // rescale with servings. Two specific shapes it provably CANNOT wrap stay
