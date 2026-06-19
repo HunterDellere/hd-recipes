@@ -1912,7 +1912,16 @@ body[data-cooks-view="on"] .rl-groups,
 body[data-cooks-view="on"] .ad,
 body[data-cooks-view="on"] .ad-slot,
 body[data-cooks-view="on"] .back-to-top,
-body[data-cooks-view="on"] .bottom-nav { display: none !important; }
+body[data-cooks-view="on"] .bottom-nav,
+/* Cook mode is for cooking, not reading: drop the intro prose, the photo,
+   the eyebrow/tags, and the whole "Before you start" section so the cook
+   lands on the steps. Title + stats + actions stay for orientation; the
+   mise stays reachable via the cook-bar "Mise" toggle. */
+body[data-cooks-view="on"] .rh-eyebrow,
+body[data-cooks-view="on"] .rh-desc,
+body[data-cooks-view="on"] .rh-tags,
+body[data-cooks-view="on"] .rh-photo,
+body[data-cooks-view="on"] .recipe-prelude-section { display: none !important; }
 body[data-cooks-view="on"] .recipe-steps .step-body {
   max-width: 70ch;
   margin-left: auto; margin-right: auto;
@@ -2371,6 +2380,31 @@ body:not(:has(#sidebar)) .toc-toggle { display: none !important; }
 .rh-cook-btn[aria-pressed="true"]:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: #fff; }
 .rh-cook-icon { display: inline-flex; align-items: center; }
 .rh-cook-icon svg { display: block; }
+
+/* ── Jump to steps (recipe hero) ────────────────────────────────────────
+   The primary "I just want to cook" action. Filled accent so it reads as
+   the default route past the intro prose; Cook's view and Print stay quiet
+   outlines beside it. Anchor (not button) so it works without JS. */
+.rh-jump-btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  margin-top: 1.1rem;
+  background: var(--accent); color: #fff;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-pill);
+  padding: 9px 18px 9px 15px;
+  font-family: var(--font-sans); font-size: var(--t-small); font-weight: 600;
+  text-decoration: none; cursor: pointer;
+  letter-spacing: .005em;
+  box-shadow: 0 2px 8px rgba(165, 90, 26, 0.2);
+  transition: background 140ms, border-color 140ms, transform 80ms, box-shadow 140ms;
+}
+.rh-jump-btn:hover { background: var(--accent-deep); border-color: var(--accent-deep); box-shadow: 0 3px 10px rgba(165, 90, 26, 0.28); }
+.rh-jump-btn:active { transform: scale(0.97); }
+.rh-jump-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.rh-jump-icon { display: inline-flex; align-items: center; }
+.rh-jump-icon svg { display: block; }
+/* The jump shortcut is moot once the cook is inside the focused step view. */
+body[data-cooks-view="on"] .rh-jump-btn { display: none; }
 
 /* ── cook's view active state ───────────────────────────────────── */
 body[data-cooks-view="on"] {

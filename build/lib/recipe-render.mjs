@@ -496,6 +496,14 @@ export function renderRecipeHero(fm, slug, category, opts = {}) {
         ${stats.length ? `<div class="rh-stats" role="list">${stats.join('')}</div>` : ''}
         ${tags.length ? `<div class="rh-tags">${tags.join('')}</div>` : ''}
         <div class="rh-actions">
+          ${category === 'recipes' && Array.isArray(fm.steps) && fm.steps.length ? `<a href="#execution" class="rh-jump-btn" data-jump-steps aria-label="Skip the intro and jump straight to the steps">
+            <span class="rh-jump-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"/><polyline points="6 13 12 19 18 13"/>
+              </svg>
+            </span>
+            <span class="rh-jump-label">Jump to steps</span>
+          </a>` : ''}
           <button type="button" class="rh-cook-btn" data-cook-toggle aria-pressed="false" aria-label="Enter cook's view, focus on steps with screen kept on">
             <span class="rh-cook-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1050,8 +1058,10 @@ export function renderBeforeYouStart(fm) {
   }
   return `
     <span class="section-anchor" id="before-you-start"></span>
+    <section class="recipe-prelude-section">
     <div class="section-head"><h2>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before mise.</p></div>
-    <div class="recipe-prelude">${bodyHtml}</div>`;
+    <div class="recipe-prelude">${bodyHtml}</div>
+    </section>`;
 }
 
 export function renderSubstitutions(fm, opts = {}) {
