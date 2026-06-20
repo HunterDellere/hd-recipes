@@ -1,518 +1,266 @@
-/* ── hd · recipes — homepage ──────────────────────────── */
-.home-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+/* ── hd · recipes — homepage "The Index" ──────────────────────────────────
+   Search-first launchpad. Type-driven, photo-free by design. Uses the global
+   design tokens from style.css (palette, type scale, spacing). Homepage-only
+   structure lives here; the search dropdown styles are shared with the JS in
+   scripts/homepage.js and must keep their class contracts. */
+
+.home-main{ max-width: var(--max-w); margin: 0 auto; padding: 0 0 4rem; }
+
+/* atmosphere — fixed dual-radial wash behind the page */
+body[data-page="home"]{
+  background-image:
+    radial-gradient(120% 60% at 85% -8%, var(--accent-soft), transparent 55%),
+    radial-gradient(90% 50% at 0% 4%, color-mix(in oklab, var(--cat-cuisines) 9%, transparent), transparent 50%);
+  background-attachment: fixed;
 }
 
-/* ── hero ───────────────────────────────────────────── */
-.home-hero {
-  text-align: center;
-  padding: 3rem 1rem 3.5rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid var(--rule-soft);
-  position: relative;
+/* ── hero ─────────────────────────────────────────────── */
+.home-hero{ position: relative; padding: 4.5rem 2rem 1rem; max-width: var(--max-w); margin: 0 auto; }
+.home-hero::after{ /* oversized watermark glyph — refined depth cue */
+  content: 'R'; position: absolute; right: 1.5rem; top: -1rem; z-index: 0;
+  font-family: var(--font-serif); font-style: italic; font-weight: 600;
+  font-size: clamp(14rem, 26vw, 28rem); line-height: 1;
+  color: var(--accent); opacity: .045; pointer-events: none; user-select: none;
 }
-.home-hero-mark {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 84px; height: 84px;
-  font-family: var(--font-serif); font-weight: 700; font-size: 56px;
-  color: var(--accent);
-  background: var(--bg-elev);
-  border: 1px solid var(--rule);
-  border-radius: 18px;
-  margin-bottom: 1.25rem;
-  line-height: 1;
-  box-shadow: var(--shadow-sm);
+.home-hero > *{ position: relative; z-index: 1; }
+.home-q{
+  font-family: var(--font-serif); font-weight: 500;
+  font-size: clamp(2.8rem, 8vw, 6.5rem); line-height: .94; letter-spacing: -.035em;
+  margin: 0 0 .5em; max-width: 13ch; text-wrap: balance;
+  animation: home-rise .9s .04s var(--ease-out) both;
 }
-.home-hero-eyebrow {
-  display: block;
-  font-family: var(--font-mono); font-size: 11px; font-weight: 500;
-  letter-spacing: .25em; text-transform: uppercase;
-  color: var(--ink-faint);
-  margin-bottom: 1rem;
-}
-.home-title {
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  margin: 0 0 .65em;
-  letter-spacing: -0.02em;
-}
-.home-tagline {
-  font-size: 1.15rem;
-  color: var(--ink-soft);
-  max-width: 56ch;
-  margin: 0 auto 2rem;
-  line-height: 1.55;
-}
-.home-cta-row {
-  display: flex; justify-content: center; flex-wrap: wrap; gap: .85rem;
-  margin-bottom: 1.5rem;
-}
-.home-cta {
-  display: inline-flex; align-items: center; gap: .55rem;
-  padding: 12px 26px;
-  border-radius: 999px;
-  font-family: var(--font-sans); font-size: 15px; font-weight: 600;
-  letter-spacing: .005em;
-  border: 1px solid transparent;
-  transition: background 140ms, color 140ms, border-color 140ms, box-shadow 140ms, transform 80ms;
-}
-.home-cta-icon { display: inline-flex; align-items: center; }
-.home-cta-icon svg { display: block; }
-.home-cta-primary {
-  background: var(--accent); color: #fff;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.08), 0 4px 14px rgba(184, 66, 58, 0.25);
-}
-.home-cta-primary:hover {
-  background: var(--accent-deep); text-decoration: none;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.08), 0 6px 18px rgba(184, 66, 58, 0.32);
-  transform: translateY(-1px);
-}
-.home-cta-primary:active { transform: translateY(0); }
-.home-cta-secondary {
-  background: var(--bg-elev); color: var(--ink); border-color: var(--rule);
-}
-.home-cta-secondary:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-.home-hero-ornament {
-  display: block;
-  width: 240px; height: 14px;
-  margin: 0 auto;
-  color: var(--ink-faint);
+.home-q .em{ font-style: italic; color: var(--accent); position: relative; }
+.home-q .em::after{
+  content: ''; position: absolute; left: 0; right: .04em; bottom: .08em; height: 3px;
+  background: var(--accent); opacity: .26; transform: scaleX(0); transform-origin: left;
+  animation: home-underline .7s .65s var(--ease-out) forwards;
 }
 
-/* ── section primitives ──────────────────────────────── */
-.home-section { margin-bottom: 3.5rem; scroll-margin-top: calc(var(--nav-h) + 16px); }
-.home-section-eyebrow {
-  display: inline-flex; align-items: center; gap: .5rem;
-  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .15em;
-  color: var(--accent);
-  margin-bottom: .65rem;
+/* ── search (hero) ────────────────────────────────────── */
+.home-search-section{ position: relative; z-index: 50; max-width: 780px; }
+.home-search-wrap{ position: relative; animation: home-rise .9s .15s var(--ease-out) both; }
+.home-search-icon{
+  position: absolute; left: 1.3rem; top: 1.35rem; color: var(--ink-faint);
+  pointer-events: none; display: inline-flex; transition: color var(--d-fast);
 }
-.hse-mark {
-  width: 18px; height: 1px; background: var(--accent); display: inline-block;
-}
-.home-section-h {
-  font-size: 1.6rem;
-  margin: 0 0 .5em;
-  letter-spacing: -0.01em;
-}
-.home-section-sub {
-  color: var(--ink-soft);
-  margin: 0 0 1.5rem;
-  font-size: 16px;
-  max-width: 60ch;
-}
-
-.home-divider {
-  text-align: center; margin: 4rem 0 3rem;
-  color: var(--ink-faint);
-}
-.home-divider svg { display: inline-block; width: 320px; height: 14px; }
-
-/* ── search section ──────────────────────────────────── */
-/* The search section needs its own stacking context above downstream
-   sections — the dropdown is absolutely positioned and would otherwise paint
-   beneath any later section that creates its own stacking context (cards
-   with transforms, transitions, backgrounds with their own z-indexes, etc).
-   Lifting the section itself, plus the wrap inside it, guarantees the tabs
-   strip and results list always sit above the rest of the page. */
-.home-search-section { position: relative; z-index: 50; }
-.home-search-wrap { position: relative; z-index: 1; max-width: 640px; }
-.home-search-icon {
-  position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
-  color: var(--ink-faint);
-  pointer-events: none;
-  display: inline-flex;
-  transition: color 120ms;
-}
-.home-search-icon svg { display: block; }
-.home-search-wrap:focus-within .home-search-icon { color: var(--accent); }
-.home-search {
-  width: 100%;
-  font-family: var(--font-sans);
-  font-size: 17px;
-  padding: 16px 22px 16px 50px;
-  border: 1.5px solid var(--rule);
-  border-radius: 14px;
-  background: var(--bg-elev);
-  color: var(--ink);
-  transition: border-color 140ms, box-shadow 140ms, background 140ms;
-  box-shadow: 0 1px 2px rgba(42, 31, 16, 0.04);
-}
-.home-search::placeholder { color: var(--ink-faint); }
-.home-search:hover { border-color: var(--ink-faint); }
-.home-search:focus {
-  outline: none;
-  border-color: var(--accent);
-  background: var(--bg);
-  box-shadow: 0 0 0 4px var(--accent-soft), 0 1px 2px rgba(42, 31, 16, 0.04);
-}
-.home-search-tabs {
-  position: absolute; top: calc(100% + 8px); left: 0; right: 0;
-  display: flex; flex-wrap: wrap; gap: .25rem;
-  padding: .5rem .6rem;
-  background: var(--bg-elev);
-  border: 1px solid var(--rule); border-bottom: none;
-  border-radius: 10px 10px 0 0;
-  z-index: 11;
+.home-search-icon svg{ display: block; }
+.home-search-wrap:focus-within .home-search-icon{ color: var(--accent); }
+.home-search{
+  width: 100%; font-family: var(--font-serif); font-size: clamp(1.3rem, 2.6vw, 1.85rem);
+  padding: 1.1rem 3.4rem 1.1rem 3.6rem;
+  background: var(--bg-elev); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 14px;
   box-shadow: var(--shadow-md);
-  /* Fade-in instead of instant pop */
+  transition: border-color var(--d-fast), box-shadow var(--d-base), transform var(--d-base);
+}
+.home-search::placeholder{ color: var(--ink-faint); font-style: italic; }
+.home-search:focus{
+  outline: none; border-color: var(--accent);
+  box-shadow: var(--shadow-lg), 0 0 0 4px var(--accent-soft); transform: translateY(-2px);
+}
+.home-search-kbd{
+  position: absolute; right: 1.1rem; top: 1.5rem;
+  font-family: var(--font-mono); font-size: var(--t-tiny); color: var(--ink-faint);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 3px 8px; background: var(--bg);
+}
+
+/* search dropdown — class contract shared with scripts/homepage.js */
+.home-search-tabs{
+  position: absolute; top: calc(100% + 8px); left: 0; right: 0;
+  display: flex; flex-wrap: wrap; gap: .25rem; padding: .5rem .6rem;
+  background: var(--bg-elev); border: 1px solid var(--rule); border-bottom: none;
+  border-radius: 10px 10px 0 0; z-index: 11; box-shadow: var(--shadow-md);
   opacity: 1; transform: translateY(0);
   transition: opacity var(--d-fast) var(--ease-out), transform var(--d-fast) var(--ease-out);
 }
-.home-search-tabs[hidden] { display: flex; opacity: 0; transform: translateY(-4px); pointer-events: none; visibility: hidden; }
-.home-search-tab {
-  background: transparent; border: 1px solid transparent; border-radius: 6px;
-  padding: 5px 12px;
-  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+.home-search-tabs[hidden]{ display: flex; opacity: 0; transform: translateY(-4px); pointer-events: none; visibility: hidden; }
+.home-search-tab{
+  background: transparent; border: 1px solid transparent; border-radius: 6px; padding: 5px 12px;
+  font-family: var(--font-sans); font-size: var(--t-meta); font-weight: 500;
   color: var(--ink-soft); cursor: pointer;
-  transition: background 120ms, color 120ms, border-color 120ms;
+  transition: background var(--d-fast), color var(--d-fast), border-color var(--d-fast);
 }
-.home-search-tab:hover { background: var(--accent-soft); color: var(--accent); }
-.home-search-tab.active {
-  background: var(--accent-soft);
-  color: var(--accent); border-color: var(--accent);
-  font-weight: 600;
-}
-.hst-count { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); margin-left: 4px; }
-.home-search-tab.active .hst-count { color: var(--accent); }
-
-.home-search-results {
+.home-search-tab:hover{ background: var(--accent-soft); color: var(--accent); }
+.home-search-tab.active{ background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.hst-count{ font-family: var(--font-mono); font-size: var(--t-tiny); color: var(--ink-faint); margin-left: 4px; }
+.home-search-tab.active .hst-count{ color: var(--accent); }
+.home-search-results{
   position: absolute; left: 0; right: 0;
-  /* When tabs are visible, the results sit below them. The offset uses
-     --home-search-tabs-h (set by the JS once the tabs strip is rendered) so
-     the gap exactly matches the tabs strip height — no overlap, no gap.
-     Fallback 48px covers the typical single-row case before JS measures. */
   top: calc(100% + 8px + var(--home-search-tabs-h, 48px));
-  margin-top: 0; padding: 0; list-style: none;
-  background: var(--bg-elev); border: 1px solid var(--rule);
-  border-radius: 0 0 10px 10px;
-  max-height: 55vh; overflow-y: auto;
-  z-index: 10;
-  font-family: var(--font-sans);
-  text-align: left;
-  box-shadow: var(--shadow-lg);
-  opacity: 1;
-  transition: opacity var(--d-fast) var(--ease-out);
+  margin: 0; padding: 0; list-style: none;
+  background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 0 0 10px 10px;
+  max-height: 55vh; overflow-y: auto; z-index: 10; font-family: var(--font-sans); text-align: left;
+  box-shadow: var(--shadow-lg); opacity: 1; transition: opacity var(--d-fast) var(--ease-out);
 }
-.home-search-results[hidden] { display: block; opacity: 0; pointer-events: none; visibility: hidden; }
-/* When tabs are hidden (empty query / no results path), fall back to the
-   original positioning right under the input. */
-.home-search-tabs[hidden] + .home-search-results {
-  top: calc(100% + 8px);
-  border-radius: 10px;
-}
-.home-search-results li { border-bottom: 1px solid var(--rule-soft); }
-.home-search-results li:last-child { border-bottom: none; }
-.home-search-results a {
-  display: flex; flex-direction: column; gap: .15rem;
-  padding: .7rem 1rem; color: var(--ink);
-  border-left: 3px solid transparent;
-}
+.home-search-results[hidden]{ display: block; opacity: 0; pointer-events: none; visibility: hidden; }
+.home-search-tabs[hidden] + .home-search-results{ top: calc(100% + 8px); border-radius: 10px; }
+.home-search-results li{ border-bottom: 1px solid var(--rule-soft); }
+.home-search-results li:last-child{ border-bottom: none; }
+.home-search-results a{ display: flex; flex-direction: column; gap: .15rem; padding: .7rem 1rem; color: var(--ink); border-left: 3px solid transparent; }
 .home-search-results a[data-category="recipes"]     { border-left-color: var(--cat-recipes); }
 .home-search-results a[data-category="ingredients"] { border-left-color: var(--cat-ingredients); }
 .home-search-results a[data-category="techniques"]  { border-left-color: var(--cat-techniques); }
 .home-search-results a[data-category="cuisines"]    { border-left-color: var(--cat-cuisines); }
 .home-search-results a[data-category="equipment"]   { border-left-color: var(--cat-equipment); }
 .home-search-results a[data-category="hubs"]        { border-left-color: var(--cat-hubs); }
-.home-search-results a:hover,
-.home-search-results li.active a { background: var(--accent-soft); text-decoration: none; }
-.sr-cat { font-family: var(--font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
-.sr-title { font-weight: 600; font-size: 15px; }
-.sr-empty { padding: .85rem 1rem; color: var(--ink-faint); font-size: 14px; font-style: italic; }
-.home-search-hint {
-  margin-top: .75rem;
-  font-family: var(--font-sans); font-size: 12px; color: var(--ink-faint);
-}
-.home-search-hint kbd {
-  font-family: var(--font-mono); font-size: 11px;
-  padding: 2px 6px; background: var(--bg-elev);
-  border: 1px solid var(--rule); border-radius: 3px;
-  margin: 0 2px;
-  color: var(--ink-soft);
-}
+.home-search-results a:hover, .home-search-results li.active a{ background: var(--accent-soft); text-decoration: none; }
+.sr-cat{ font-family: var(--font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
+.sr-title{ font-weight: 600; font-size: var(--t-small); }
+.sr-empty{ padding: .85rem 1rem; color: var(--ink-faint); font-size: var(--t-small); font-style: italic; }
 
-/* ── featured card ───────────────────────────────────── */
-.home-featured-card { /* shell — child .ff-card has the visual */ }
-.ff-card {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 1.5rem;
-  padding: 1.75rem 2rem;
-  background: var(--bg-elev);
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--cat-recipes);
-  border-radius: 12px;
-  color: var(--ink);
-  transition: border-color 120ms, transform 100ms, box-shadow 120ms;
+/* ── hint chips ───────────────────────────────────────── */
+.home-hints{ margin-top: 1.1rem; display: flex; gap: .5rem; flex-wrap: wrap; animation: home-rise .9s .26s var(--ease-out) both; }
+.home-chip{
+  display: inline-flex; align-items: center; gap: .45rem;
+  font-family: var(--font-sans); font-size: var(--t-meta); font-weight: 500;
+  padding: 6px 14px; border: 1px solid var(--rule); border-radius: var(--r-pill);
+  color: var(--ink-soft); background: color-mix(in oklab, var(--bg-elev) 70%, transparent);
+  transition: border-color var(--d-fast), color var(--d-fast), transform var(--d-fast), box-shadow var(--d-fast);
 }
-.ff-card:hover {
-  border-color: var(--accent); border-left-color: var(--cat-recipes);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+.home-chip:hover{ border-color: var(--accent); color: var(--accent); transform: translateY(-1px); box-shadow: var(--shadow-sm); text-decoration: none; }
+.home-chip-lead{ border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.home-chip-icon{ display: inline-flex; }
+.home-chip-icon svg{ display: block; }
+
+/* ── ticker — the rolling tape of dish names ──────────── */
+.home-ticker{
+  border-block: 1px solid var(--rule); margin-top: 3rem; padding: .85rem 0; overflow: hidden; white-space: nowrap;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  animation: home-rise .9s .36s var(--ease-out) both;
+}
+.home-ticker-row{ display: inline-flex; gap: 2.4rem; animation: home-scroll 80s linear infinite; will-change: transform; }
+.home-ticker:hover .home-ticker-row{ animation-play-state: paused; }
+.home-ticker-label{ font-family: var(--font-mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-faint); padding-right: 2.4rem; }
+.home-ticker a{ font-family: var(--font-serif); font-style: italic; font-size: 1.4rem; color: var(--ink-soft); text-decoration: none; display: inline-flex; align-items: center; gap: 2.4rem; transition: color var(--d-fast); }
+.home-ticker a::after{ content: '·'; color: var(--accent); font-style: normal; font-size: 1.1em; }
+.home-ticker a:hover{ color: var(--accent); }
+@keyframes home-scroll{ to { transform: translateX(-50%); } }
+
+/* ── section heads ────────────────────────────────────── */
+.home-sec{ max-width: var(--max-w); margin: 4rem auto 0; padding: 0 2rem; scroll-margin-top: calc(var(--nav-h) + 16px); }
+.home-sec-head{ display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1.4rem; padding-bottom: .65rem; border-bottom: 1px solid var(--ink); }
+.hsh-t{ display: flex; align-items: baseline; gap: .85rem; }
+.hsh-idx{ font-family: var(--font-mono); font-size: var(--t-meta); font-weight: 600; color: var(--accent); letter-spacing: .08em; }
+.home-sec-h{ font-family: var(--font-serif); font-size: 2rem; font-weight: 600; letter-spacing: -.015em; line-height: 1; margin: 0; }
+.hsh-more{ font-family: var(--font-mono); font-size: var(--t-tiny); text-transform: uppercase; letter-spacing: .16em; color: var(--ink-faint); white-space: nowrap; transition: color var(--d-fast); }
+.hsh-more:hover{ color: var(--accent); text-decoration: none; }
+
+/* ── doors (bento) ────────────────────────────────────── */
+.doors-grid{
+  display: grid; grid-template-columns: 1.5fr 1fr; grid-template-rows: repeat(3, minmax(116px, 1fr));
+  gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: var(--r-3); overflow: hidden; box-shadow: var(--shadow-md);
+}
+.door{
+  background: var(--bg-elev); padding: 1.5rem 1.7rem; position: relative;
+  display: flex; flex-direction: column; gap: .65rem; color: var(--ink); overflow: hidden;
+  transition: background var(--d-base) var(--ease-out);
+}
+/* The doors sit in a 1px-gap grid with overflow:hidden, so they can't lift out
+   of their cell. Instead the hover brings the category color forward inside the
+   cell — a faint wash, the spine, and the title shifting to --c — so the hover
+   reads as "you're about to enter <this family>". Consistent with the sitewide
+   card hover language; clean, no motion that clips. */
+.door:hover{
+  background: color-mix(in oklab, var(--c) 7%, var(--bg-elev));
   text-decoration: none;
 }
-.ff-body { flex: 1; min-width: 0; font-family: var(--font-sans); }
-.ff-eyebrow {
-  display: block;
-  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .14em;
-  color: var(--cat-recipes);
-  margin-bottom: .35rem;
-}
-.ff-title {
-  font-family: var(--font-serif); font-size: 1.7rem; font-weight: 700;
-  margin: 0 0 .35em; line-height: 1.2;
-  color: var(--ink);
-}
-.ff-desc { font-size: 15px; color: var(--ink-soft); line-height: 1.5; margin: 0 0 .75rem; max-width: 60ch; }
-.ff-meta {
-  display: flex; flex-wrap: wrap; gap: .25rem 1rem;
-  font-size: 13px; color: var(--ink-soft);
-}
-.ff-meta strong { color: var(--ink); font-weight: 700; font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
-.ff-passive {
-  display: inline-flex; align-items: center;
-  font-size: 11.5px; font-weight: 500; color: var(--ink-faint);
-  background: var(--bg-soft);
-  border-radius: 4px;
-  padding: 1px 6px;
-  margin-left: .35rem;
-}
-.ff-diff { padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
-.ff-d-easy { background: #e7f3e0; color: #3a6e1a; }
-.ff-d-medium { background: #fff0d0; color: #8a5a10; }
-.ff-d-hard { background: #fce0d8; color: #8b2e26; }
-[data-theme="dark"] .ff-d-easy { background: #2a3a1a; color: #b3d99a; }
-[data-theme="dark"] .ff-d-medium { background: #3a2e1a; color: #e6c890; }
-[data-theme="dark"] .ff-d-hard { background: #3a1e1a; color: #e69990; }
-.ff-arrow {
-  flex-shrink: 0;
-  font-size: 24px; color: var(--cat-recipes);
-  transition: transform 200ms;
-}
-.ff-card:hover .ff-arrow { transform: translateX(4px); }
+.door-h{ transition: color var(--d-fast) var(--ease-out); }
+.door:hover .door-h{ color: var(--c); }
+.door-big{ grid-row: span 3; justify-content: flex-start; }
+.door-top{ display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.door-num{ font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600; color: var(--ink-faint); letter-spacing: .1em; }
+.door-cat{ font-family: var(--font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .16em; color: var(--c); }
+.door-h{ font-family: var(--font-serif); font-size: 1.9rem; font-weight: 600; line-height: .95; letter-spacing: -.01em; margin: 0; }
+.door-big .door-h{ font-size: clamp(2.4rem, 4vw, 3.3rem); margin: .1rem 0 .2rem; }
+.door-desc{ font-size: var(--t-small); color: var(--ink-soft); max-width: 36ch; line-height: 1.5; margin: 0; }
+.door-big .door-desc{ font-size: var(--t-body); max-width: 42ch; }
+.door-count{ font-family: var(--font-mono); font-size: var(--t-meta); font-weight: 600; color: var(--c); margin-top: auto; display: inline-flex; align-items: center; gap: .4rem; }
+.door-ar{ transition: transform var(--d-base); }
+.door:hover .door-ar{ transform: translateX(4px); }
+.door::before{ content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--c); transform: scaleY(0); transform-origin: top; transition: transform var(--d-base) var(--ease-out); }
+.door:hover::before{ transform: scaleY(1); }
+.door[data-family="traverse"]{ --c: var(--cat-cuisines); }
+.door[data-family="cook"]{ --c: var(--cat-recipes); }
+.door[data-family="learn"]{ --c: var(--cat-techniques); }
+.door[data-family="pantry"]{ --c: var(--cat-ingredients); }
+/* the big cell's live cuisine index */
+.door-links{ margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid var(--rule-soft); display: flex; flex-wrap: wrap; gap: .5rem; }
+.dl{ font-family: var(--font-sans); font-size: var(--t-meta); font-weight: 500; color: var(--ink-soft); background: var(--bg); border: 1px solid var(--rule-soft); border-radius: 8px; padding: 4px 10px; display: inline-flex; align-items: center; gap: .4rem; transition: border-color var(--d-fast), color var(--d-fast); }
+.dl b{ font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint); font-weight: 600; }
+.dl:hover{ border-color: var(--c); color: var(--c); text-decoration: none; }
+.dl:hover b{ color: var(--c); }
 
-/* card-grid + entry-card live in style.css now (used on family pages too) */
+/* ── ornament rule ────────────────────────────────────── */
+.home-rule{ display: flex; align-items: center; gap: 1rem; color: var(--rule); max-width: var(--max-w); margin: 3.5rem auto 0; padding: 0 2rem; }
+.home-rule::before, .home-rule::after{ content: ''; height: 1px; background: currentColor; flex: 1; }
+.home-rule span{ font-family: var(--font-serif); color: var(--accent); font-size: 1rem; opacity: .55; }
 
-/* ── recent-by-family tabs ───────────────────────────── */
-/* Horizontal pill-tab strip above the Recently-added grid. Lets a reader
-   filter to a single family (recipes, ingredients, techniques, etc.) without
-   leaving the homepage. Visual language echoes home-search-tab — same
-   accent-soft active state — so the two filtered surfaces feel related. */
-.recent-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem;
-  margin: 0 0 1.25rem;
-  /* On narrow screens, allow horizontal scroll instead of awkward wrap-to-multi-row */
-  scrollbar-width: thin;
+/* ── featured ─────────────────────────────────────────── */
+.home-featured-card{ /* shell — .ff-card has the visual (rendered by homepage.js) */ }
+.ff-card{
+  display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 2.5rem; align-items: stretch;
+  border: 1px solid var(--rule); border-radius: var(--r-3); padding: 2.3rem 2.5rem;
+  background: linear-gradient(135deg, var(--bg-elev), color-mix(in oklab, var(--bg-elev) 88%, var(--cat-recipes)));
+  position: relative; color: var(--ink); box-shadow: var(--shadow-md); overflow: hidden;
+  transition: box-shadow var(--d-base), transform var(--d-base);
 }
-.recent-tab {
-  background: transparent;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  padding: 6px 14px;
-  font-family: var(--font-sans); font-size: 13px; font-weight: 500;
-  color: var(--ink-soft);
-  cursor: pointer;
-  display: inline-flex; align-items: center; gap: .4rem;
-  transition: background var(--d-fast) var(--ease-out),
-              color var(--d-fast) var(--ease-out),
-              border-color var(--d-fast) var(--ease-out),
-              transform var(--d-fast) var(--ease-out);
-  white-space: nowrap;
-}
-.recent-tab:hover {
-  background: var(--accent-soft);
-  color: var(--accent);
-  border-color: var(--accent-soft);
-}
-.recent-tab.active {
-  background: var(--accent-soft);
-  color: var(--accent);
-  border-color: var(--accent);
-  font-weight: 600;
-}
-.recent-tab:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--accent-soft);
-  border-color: var(--accent);
-}
-.rt-count {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-faint);
-  background: var(--bg-elev);
-  padding: 1px 7px;
-  border-radius: 999px;
-  line-height: 1.5;
-  border: 1px solid var(--rule);
-  transition: color var(--d-fast) var(--ease-out),
-              background var(--d-fast) var(--ease-out),
-              border-color var(--d-fast) var(--ease-out);
-}
-.recent-tab:hover .rt-count,
-.recent-tab.active .rt-count {
-  color: var(--accent);
-  background: var(--bg);
-  border-color: var(--accent-soft);
-}
+.ff-card::before{ content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--cat-recipes); }
+.ff-card:hover{ box-shadow: var(--shadow-lg); transform: translateY(-3px); text-decoration: none; }
+.ff-body{ min-width: 0; font-family: var(--font-sans); }
+.ff-eyebrow{ display: block; font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600; text-transform: uppercase; letter-spacing: .16em; color: var(--cat-recipes); margin-bottom: .6rem; }
+.ff-title{ font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 600; line-height: 1.04; letter-spacing: -.02em; margin: 0 0 .4em; color: var(--ink); text-wrap: balance; }
+.ff-desc{ font-size: var(--t-small); color: var(--ink-soft); line-height: 1.55; margin: 0 0 1rem; max-width: 56ch; }
+.ff-meta{ display: flex; flex-wrap: wrap; gap: .5rem .9rem; font-size: var(--t-meta); color: var(--ink-soft); font-family: var(--font-mono); }
+.ff-meta strong{ color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.ff-passive{ display: inline-flex; align-items: center; font-size: var(--t-tiny); font-weight: 500; color: var(--ink-faint); background: var(--bg-soft); border-radius: 4px; padding: 1px 6px; margin-left: .35rem; }
+.ff-diff{ padding: 2px 9px; border-radius: var(--r-pill); font-size: var(--t-tiny); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+.ff-d-easy{ background: #e7f3e0; color: #3a6e1a; } .ff-d-medium{ background: #fdeccb; color: #8a5a10; } .ff-d-hard{ background: #fbe0d6; color: #8b2e26; }
+[data-theme="dark"] .ff-d-easy{ background: #2a3a1a; color: #b3d99a; } [data-theme="dark"] .ff-d-medium{ background: #3a2e1a; color: #e6c890; } [data-theme="dark"] .ff-d-hard{ background: #3a1e1a; color: #e69990; }
+.ff-figure{ display: flex; flex-direction: column; align-items: flex-end; justify-content: center; border-left: 1px solid var(--rule-soft); padding-left: 2.4rem; min-width: 130px; }
+.ff-num{ font-family: var(--font-serif); font-style: italic; font-size: 5rem; font-weight: 700; line-height: .8; color: var(--accent); }
+.ff-num small{ display: block; font-family: var(--font-mono); font-size: var(--t-tiny); font-style: normal; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-faint); margin-top: .55rem; text-align: right; }
+.ff-arrow{ flex-shrink: 0; font-size: 24px; color: var(--cat-recipes); transition: transform var(--d-base); }
+.ff-card:hover .ff-arrow{ transform: translateX(4px); }
 
-/* Smooth fade between tab content swaps. The 120ms hold matches the JS
-   timeout that swaps the innerHTML — combined the swap reads as a quick
-   crossfade rather than a jarring snap. */
-#recent-list {
-  transition: opacity var(--d-fast) var(--ease-out);
+/* ── recent + in-season grids (shared card-grid lives in style.css) ─────── */
+.recent-tabs{ display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 1.25rem; scrollbar-width: thin; }
+.recent-tab{
+  background: transparent; border: 1px solid var(--rule); border-radius: var(--r-pill); padding: 6px 14px;
+  font-family: var(--font-sans); font-size: var(--t-meta); font-weight: 500; color: var(--ink-soft); cursor: pointer;
+  display: inline-flex; align-items: center; gap: .4rem; white-space: nowrap;
+  transition: background var(--d-fast) var(--ease-out), color var(--d-fast) var(--ease-out), border-color var(--d-fast) var(--ease-out);
 }
-#recent-list.recent-list-fading {
-  opacity: 0;
-}
+.recent-tab:hover{ background: var(--accent-soft); color: var(--accent); border-color: var(--accent-soft); }
+.recent-tab.active{ background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.recent-tab:focus-visible{ outline: none; box-shadow: var(--focus-ring); border-color: var(--accent); }
+.rt-count{ font-family: var(--font-mono); font-size: var(--t-tiny); color: var(--ink-faint); background: var(--bg-elev); padding: 1px 7px; border-radius: var(--r-pill); line-height: 1.5; border: 1px solid var(--rule); transition: color var(--d-fast), background var(--d-fast), border-color var(--d-fast); }
+.recent-tab:hover .rt-count, .recent-tab.active .rt-count{ color: var(--accent); background: var(--bg); border-color: var(--accent-soft); }
+#recent-list{ transition: opacity var(--d-fast) var(--ease-out); }
+#recent-list.recent-list-fading{ opacity: 0; }
 
-/* On narrow screens, the tab strip can grow past container width with all
-   8 family options. Allow horizontal scroll with snap so each tab snaps
-   into view rather than scrolling halfway. */
-@media (max-width: 640px) {
-  .recent-tabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    /* Subtle gradient fade at the right edge to hint at scrollability */
-    -webkit-mask-image: linear-gradient(to right, black 90%, transparent);
-            mask-image: linear-gradient(to right, black 90%, transparent);
-    padding-right: 1rem;
-    margin-right: -1rem;
-  }
-  .recent-tab { scroll-snap-align: start; flex-shrink: 0; }
-}
+.empty{ color: var(--ink-faint); font-style: italic; padding: 1.5rem 0; }
+.home-footer{ text-align: center; padding: 2.5rem 2rem 1.5rem; border-top: 1px solid var(--rule); font-family: var(--font-mono); font-size: var(--t-meta); color: var(--ink-faint); }
+.home-footer a{ color: var(--ink-soft); } .home-footer a:hover{ color: var(--accent); }
 
-/* ── families grid (homepage + explore index) ────────── */
-/* Families grid — explicit breakpoints to avoid orphan cards (3 + 1 row).
-   With 4 family cards we want: 1 col on phones, 2 col on tablets and mid
-   desktops, 4 col only when there's genuine room for 4 wide cards. The
-   minmax(280px) auto-fit was producing a 3+1 orphan in the 880–1180px
-   range. Using max-width media queries gives us full control over the
-   transitions without relying on auto-fit math. */
-.families-grid {
-  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-@media (max-width: 1180px) {
-  .families-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 560px) {
-  .families-grid { grid-template-columns: 1fr; gap: 1rem; }
-}
-.family-card {
-  display: flex; flex-direction: column;
-  background: var(--bg-elev);
-  border: 1px solid var(--rule);
-  border-radius: 14px;
-  overflow: hidden;
-  color: var(--ink);
-  transition: transform 140ms, border-color 140ms, box-shadow 140ms;
-  position: relative;
-}
-.family-card::before {
-  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
-  background: var(--rule); transition: background 140ms;
-}
-.family-card[data-family="cook"]::before     { background: var(--cat-recipes); }
-.family-card[data-family="pantry"]::before   { background: var(--cat-ingredients); }
-.family-card[data-family="learn"]::before    { background: var(--cat-techniques); }
-.family-card[data-family="traverse"]::before { background: var(--cat-cuisines); }
-.family-card[data-family="explore"]::before  { background: var(--accent); }
-.family-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  box-shadow: var(--shadow-md);
-  text-decoration: none;
-}
-.family-card-art {
-  aspect-ratio: 5 / 4;
-  background: var(--bg-soft);
-  display: flex; align-items: center; justify-content: center;
-  border-bottom: 1px solid var(--rule-soft);
-  padding: 1rem;
-  position: relative;
-  overflow: hidden;
-}
-.family-card-art::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(ellipse at center top, transparent 60%, rgba(184,66,58,.04) 100%);
-  pointer-events: none;
-}
-.family-card[data-family="cook"]     .family-card-art::before { background: radial-gradient(ellipse at center top, transparent 60%, rgba(184,66,58,.05) 100%); }
-.family-card[data-family="pantry"]   .family-card-art::before { background: radial-gradient(ellipse at center top, transparent 60%, rgba(58,122,58,.05) 100%); }
-.family-card[data-family="learn"]    .family-card-art::before { background: radial-gradient(ellipse at center top, transparent 60%, rgba(165,90,26,.05) 100%); }
-.family-card[data-family="traverse"] .family-card-art::before { background: radial-gradient(ellipse at center top, transparent 60%, rgba(58,90,138,.05) 100%); }
-.family-card[data-family="explore"]  .family-card-art::before { background: radial-gradient(ellipse at center top, transparent 60%, rgba(184,66,58,.05) 100%); }
-.family-card-art svg {
-  width: 100%; height: 100%;
-  max-width: 220px; max-height: 160px;
-  position: relative;
-  transition: transform 240ms ease-out;
-}
-.family-card:hover .family-card-art svg { transform: scale(1.04); }
-.family-card-meta {
-  padding: 1.1rem 1.25rem 1.25rem;
-  font-family: var(--font-sans);
-  display: flex; flex-direction: column; gap: .4rem;
-  flex: 1;
-}
-.family-card-eyebrow {
-  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .14em;
-  color: var(--ink-faint);
-}
-.family-card-title {
-  font-family: var(--font-serif); font-size: 1.7rem; font-weight: 700;
-  margin: 0; line-height: 1.1;
-  letter-spacing: -0.01em;
-}
-.family-card-desc {
-  font-size: 14px; color: var(--ink-soft); line-height: 1.5;
-  margin: 0;
-}
-.family-card-count {
-  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
-  color: var(--ink-faint);
-  margin-top: auto; padding-top: .5rem;
-}
+@keyframes home-rise{ from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes home-underline{ to { transform: scaleX(1); } }
 
-.families-foot {
-  margin-top: 1.5rem; text-align: center;
+/* ── responsive ───────────────────────────────────────── */
+@media (max-width: 640px){
+  .recent-tabs{ flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x proximity;
+    -webkit-mask-image: linear-gradient(to right, black 90%, transparent); mask-image: linear-gradient(to right, black 90%, transparent);
+    padding-right: 1rem; margin-right: -1rem; }
+  .recent-tab{ scroll-snap-align: start; flex-shrink: 0; }
 }
-.families-master-link {
-  display: inline-flex; align-items: center; gap: .4rem;
-  padding: 8px 18px;
-  font-family: var(--font-sans); font-size: 14px; font-weight: 500;
-  color: var(--ink-soft);
-  border-radius: 999px;
-  transition: background 120ms, color 120ms;
+@media (max-width: 860px){
+  .home-hero::after{ opacity: .03; }
+  .doors-grid{ grid-template-columns: 1fr; grid-template-rows: auto; }
+  .door-big{ grid-row: auto; }
+  .ff-card{ grid-template-columns: 1fr; }
+  .ff-figure{ border-left: none; border-top: 1px solid var(--rule-soft); padding-left: 0; padding-top: 1.3rem; align-items: baseline; flex-direction: row; gap: 1.3rem; }
+  .ff-num{ font-size: 3.2rem; }
 }
-.families-master-link:hover { background: var(--bg-elev); color: var(--accent); text-decoration: none; }
-
-.empty { color: var(--ink-faint); font-style: italic; padding: 1.5rem 0; }
-
-.home-footer {
-  text-align: center; padding: 2.5rem 1rem 1.5rem;
-  border-top: 1px solid var(--rule);
-  font-family: var(--font-sans); font-size: 13px; color: var(--ink-faint);
-}
-.home-footer a { color: var(--ink-soft); }
-.home-footer a:hover { color: var(--accent); }
-
-/* ── responsive ──────────────────────────────────────── */
-@media (max-width: 700px) {
-  .home-hero { padding: 2rem .5rem 2.5rem; }
-  .home-hero-mark { width: 68px; height: 68px; font-size: 44px; }
-  .home-tagline { font-size: 1rem; }
-  .home-cta-row { flex-direction: column; align-items: stretch; max-width: 280px; margin: 0 auto 1.5rem; }
-  .ff-card { flex-direction: column; align-items: stretch; padding: 1.25rem 1.5rem; }
-  .ff-arrow { display: none; }
-  /* .families-grid handled by its own breakpoints (560/1180) above */
-  .home-section-h { font-size: 1.4rem; }
+@media (prefers-reduced-motion: reduce){
+  .home-q, .home-search-wrap, .home-hints, .home-ticker, .home-ticker-row, .home-q .em::after{ animation: none; }
 }

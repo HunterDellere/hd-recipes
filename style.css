@@ -4,32 +4,34 @@
   /* Paper warmth — was #faf6ee. Slight push toward cream gives the page a
      "linen tablecloth" quality instead of "bone china". The elev surface
      stays a touch lighter so cards still float. */
-  --bg: #f8f2e2;
-  --bg-elev: #fdf8eb;
-  --bg-soft: #f1ead7;
-  --ink: #2a1f10;
-  --ink-soft: #5a4a36;
-  --ink-faint: #8a7a60;
+  /* "Crisp paper" palette — a cooler bone-white base with a refined clean-red
+     accent, warmer-than-charcoal ink. Replaces the earlier yellow cream. */
+  --bg: #f5f2ea;
+  --bg-elev: #fcfaf4;
+  --bg-soft: #eae5da;
+  --ink: #22201b;
+  --ink-soft: #54514a;
+  --ink-faint: #8c887e;
   /* Warm prose body — sits between --ink and --ink-soft. Use for long-form
      reading where pure --ink can feel inky/cold. */
-  --ink-warm: #3d2e1c;
-  --rule: #e0d4b8;
-  --rule-soft: #ece2c9;
-  --accent: #b8423a;
-  --accent-deep: #8b2e26;
-  --accent-soft: rgba(184, 66, 58, 0.18);
-  --link: #1f5b8a;
-  --focus-ring: 0 0 0 3px rgba(184, 66, 58, 0.35);
+  --ink-warm: #2e2a22;
+  --rule: #dcd6c9;
+  --rule-soft: #ebe6da;
+  --accent: #bb3a2c;
+  --accent-deep: #902a20;
+  --accent-soft: rgba(187, 58, 44, 0.11);
+  --link: #3a6791;
+  --focus-ring: 0 0 0 3px rgba(187, 58, 44, 0.34);
 
-  /* Category accents — refined. Cuisines was a flat crayon blue; the new
-     value is more ink-respectful, keeps AA contrast on cream. Hubs was a
-     plummy purple; lifted to a less-saturated wine-mauve. */
-  --cat-recipes:     #b8423a;
-  --cat-ingredients: #3d7a40;
-  --cat-techniques:  #a55a1a;
-  --cat-cuisines:    #3d6a96;
-  --cat-equipment:   #5a4a3a;
-  --cat-hubs:        #7c4582;
+  /* Cohesive category spine: red is the one true accent (recipes). Every other
+     category is a low-saturation neutral nudged toward its intuitive hue —
+     cohesive as a family, still indicative of the content type. */
+  --cat-recipes:     #bb3a2c;  /* the accent */
+  --cat-ingredients: #5e7a4e;  /* sage — produce */
+  --cat-techniques:  #a8703a;  /* clay/amber — heat & method */
+  --cat-cuisines:    #566f86;  /* slate-blue — region/map */
+  --cat-equipment:   #7a6f5e;  /* warm graphite — tools */
+  --cat-hubs:        #8a6a86;  /* muted plum — curation */
   --cat-safety:      #7a3a3a;
 
   /* Per-category page-tint backgrounds. Used as a faint wash on hero blocks,
@@ -102,33 +104,33 @@
      value was crushed enough that bg-soft and bg looked identical on most
      panels and the eye lost depth-of-field. Now bg < bg-soft < bg-elev
      forms a real elevation ladder. */
-  --bg: #181208;
-  --bg-elev: #251c10;
-  --bg-soft: #1f1810;
-  --ink: #f1ead8;
-  --ink-soft: #c4b89b;
-  /* Lifted ink-faint from #8a7a60 — the light-mode value disappeared on dark
-     bg (~2.1:1). #a99878 hits ~3.4:1, still feels recessed but readable. */
-  --ink-faint: #a99878;
-  --ink-warm: #e0d6bf;
-  --rule: #322817;
-  --rule-soft: #281f10;
-  --accent: #d75c52;
-  --accent-deep: #b8423a;
-  /* Lifted from .22 → .28 for AA contrast on hover backgrounds against the
-     dark bg. .22 was too faint to read as a state change. */
-  --accent-soft: rgba(215, 92, 82, 0.28);
-  --link: #6db1e6;
-  --focus-ring: 0 0 0 3px rgba(215, 92, 82, 0.45);
+  --bg: #14130f;
+  --bg-elev: #1c1a16;
+  --bg-soft: #23211c;
+  --ink: #f0ede4;
+  --ink-soft: #c0bcb0;
+  /* ink-faint kept readable on the warm-charcoal base (~3.3:1) — recedes
+     without disappearing the way a darker value would. */
+  --ink-faint: #9a958a;
+  --ink-warm: #e8e3d8;
+  --rule: #322e27;
+  --rule-soft: #27241e;
+  --accent: #e3705f;
+  --accent-deep: #c65445;
+  /* Soft accent kept ~.15 for a legible hover-state wash on the dark base. */
+  --accent-soft: rgba(227, 112, 95, 0.16);
+  --link: #79abd6;
+  --focus-ring: 0 0 0 3px rgba(227, 112, 95, 0.42);
 
-  /* Category colors lifted for dark-mode contrast (light-mode values too dark) */
-  --cat-recipes:     #e07269;
-  --cat-ingredients: #6cb070;
-  --cat-techniques:  #d39154;
-  --cat-cuisines:    #76a8d4;
-  --cat-equipment:   #9c8a6e;
-  --cat-hubs:        #b585bb;
-  --cat-safety:      #c97474;
+  /* Cohesive category spine, lifted for dark-mode contrast on the warm
+     charcoal base — same muted family, brightened just enough to read. */
+  --cat-recipes:     #e3705f;
+  --cat-ingredients: #94b07e;
+  --cat-techniques:  #cf9b62;
+  --cat-cuisines:    #88a3bd;
+  --cat-equipment:   #aa9c86;
+  --cat-hubs:        #b596b1;
+  --cat-safety:      #d98a82;
 
   /* Page tints stronger on dark since the surface absorbs more */
   --cat-recipes-bg:     rgba(215, 92, 82, 0.08);
@@ -652,11 +654,11 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   overflow: hidden;
   background: var(--bg-soft);
   border: 1px solid var(--rule-soft);
-  box-shadow: 0 1px 2px rgba(42, 31, 16, 0.04), 0 8px 24px rgba(42, 31, 16, 0.06);
+  box-shadow: var(--shadow-md);
   cursor: zoom-in;
   transition: box-shadow var(--d-base) ease;
 }
-.rh-photo:hover { box-shadow: 0 2px 4px rgba(42, 31, 16, 0.06), 0 14px 32px rgba(42, 31, 16, 0.10); }
+.rh-photo:hover { box-shadow: var(--shadow-lg); }
 .rh-img-pic, .rh-img { display: block; width: 100%; height: auto; }
 .rh-img { object-fit: cover; }
 @media (max-width: 899px) {
@@ -716,7 +718,7 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;
   -moz-appearance: textfield;
 }
-.ing-scale-input:focus { outline: 2px solid var(--accent-soft); outline-offset: -2px; }
+.ing-scale-input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .ing-scale-input::-webkit-outer-spin-button,
 .ing-scale-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
@@ -977,9 +979,14 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   font-size: 15px;
   cursor: pointer;
   border-radius: var(--r-1);
-  transition: opacity var(--d-base), background var(--d-fast);
+  transition: opacity var(--d-base), background var(--d-fast), box-shadow var(--d-fast);
 }
-.ing-row:hover { background: color-mix(in oklab, var(--bg-soft) 65%, transparent); }
+/* Inset left stripe on hover — a clearer "this whole row is a tap target" cue
+   for messy-handed cooking. box-shadow (not border) so the grid never shifts. */
+.ing-row:hover {
+  background: color-mix(in oklab, var(--bg-soft) 65%, transparent);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
 .ing-row:active { background: var(--accent-soft); }
 .ing-row a, .ing-row label, .ing-row input { cursor: auto; }
 .ing-row a { cursor: pointer; }
@@ -1062,6 +1069,38 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   vertical-align: text-top;
 }
 .step-tech:hover { background: rgba(165,90,26,.10); text-decoration: none; }
+
+/* Substitution hints — the build wraps the first mention of a substitutable
+   ingredient in step prose as <span class="sub-hint" data-sub-*>. These shipped
+   with no styling (invisible affordance). Mark them with a dotted underline in
+   the ingredients hue, and surface the swap on hover/focus via a CSS tooltip
+   built from the data attributes — no JS, keyboard-reachable (tabindex is set
+   in the markup). */
+.sub-hint {
+  position: relative;
+  border-bottom: 1px dotted var(--cat-ingredients);
+  cursor: help;
+  transition: color var(--d-fast), background var(--d-fast);
+  border-radius: 2px;
+}
+.sub-hint:hover, .sub-hint:focus-visible {
+  color: var(--cat-ingredients);
+  background: color-mix(in oklab, var(--cat-ingredients) 12%, transparent);
+  outline: none;
+}
+.sub-hint::after {
+  content: 'swap: ' attr(data-sub-use);
+  position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 30;
+  width: max-content; max-width: 280px;
+  font-family: var(--font-sans); font-size: var(--t-meta); font-weight: 400;
+  line-height: 1.4; color: var(--ink); text-align: left; white-space: normal;
+  background: var(--bg-elev); border: 1px solid var(--rule);
+  border-radius: var(--r-2); padding: .55rem .7rem; box-shadow: var(--shadow-lg);
+  opacity: 0; transform: translateY(4px); pointer-events: none;
+  transition: opacity var(--d-fast) var(--ease-out), transform var(--d-fast) var(--ease-out);
+}
+.sub-hint:hover::after, .sub-hint:focus-visible::after { opacity: 1; transform: translateY(0); }
+@media print { .sub-hint { border-bottom: none; } .sub-hint::after { display: none; } }
 .step-time {
   display: inline-block;
   margin-left: .75em;
@@ -1194,7 +1233,7 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   cursor: zoom-in;
   transition: box-shadow var(--d-base) ease;
 }
-.step-figure:hover { box-shadow: 0 4px 16px rgba(42, 31, 16, 0.10); }
+.step-figure:hover { box-shadow: var(--shadow-md); }
 .step-img-pic, .step-img { display: block; width: 100%; height: auto; }
 .step-img { object-fit: cover; }
 @media (min-width: 760px) { .step-figure { margin-top: 1.25rem; } }
@@ -1254,7 +1293,11 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   color: var(--ink);
   transition: border-color var(--d-fast), color var(--d-fast);
 }
-.eq-chip:hover { border-color: var(--cat-equipment); color: var(--cat-equipment); text-decoration: none; }
+.eq-chip:hover {
+  border-color: var(--cat-equipment); color: var(--cat-equipment);
+  background: color-mix(in oklab, var(--cat-equipment) 8%, var(--bg-elev));
+  text-decoration: none;
+}
 .eq-chip-stub { color: var(--ink-faint); }
 
 /* ── pairings (intelligent recommendations on recipe pages) ─────── */
@@ -1382,7 +1425,7 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   transition: border-color 160ms, box-shadow 160ms;
 }
 .mod-card:hover {
-  box-shadow: 0 2px 8px rgba(42, 31, 16, 0.06);
+  box-shadow: var(--shadow-md);
 }
 .mod-card-regional { border-left-color: #b07a3a; }
 .mod-card-dietary  { border-left-color: #6a8b3a; }
@@ -1912,7 +1955,16 @@ body[data-cooks-view="on"] .rl-groups,
 body[data-cooks-view="on"] .ad,
 body[data-cooks-view="on"] .ad-slot,
 body[data-cooks-view="on"] .back-to-top,
-body[data-cooks-view="on"] .bottom-nav { display: none !important; }
+body[data-cooks-view="on"] .bottom-nav,
+/* Cook mode is for cooking, not reading: drop the intro prose, the photo,
+   the eyebrow/tags, and the whole "Before you start" section so the cook
+   lands on the steps. Title + stats + actions stay for orientation; the
+   mise stays reachable via the cook-bar "Mise" toggle. */
+body[data-cooks-view="on"] .rh-eyebrow,
+body[data-cooks-view="on"] .rh-desc,
+body[data-cooks-view="on"] .rh-tags,
+body[data-cooks-view="on"] .rh-photo,
+body[data-cooks-view="on"] .recipe-prelude-section { display: none !important; }
 body[data-cooks-view="on"] .recipe-steps .step-body {
   max-width: 70ch;
   margin-left: auto; margin-right: auto;
@@ -2097,7 +2149,7 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   min-width: 96px;
   color: var(--ink);
 }
-.fam-stat:hover { background: var(--bg-soft); border-color: var(--rule); text-decoration: none; }
+.fam-stat:hover { text-decoration: none; }
 .fam-stat-num {
   font-family: var(--font-serif); font-weight: 700;
   font-size: 1.85rem; line-height: 1;
@@ -2110,12 +2162,19 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   text-transform: uppercase; letter-spacing: .12em;
   color: var(--ink-faint);
 }
-.fam-stat[data-category="recipes"]     .fam-stat-num { color: var(--cat-recipes); }
-.fam-stat[data-category="ingredients"] .fam-stat-num { color: var(--cat-ingredients); }
-.fam-stat[data-category="techniques"]  .fam-stat-num { color: var(--cat-techniques); }
-.fam-stat[data-category="cuisines"]    .fam-stat-num { color: var(--cat-cuisines); }
-.fam-stat[data-category="equipment"]   .fam-stat-num { color: var(--cat-equipment); }
-.fam-stat[data-category="hubs"]        .fam-stat-num { color: var(--cat-hubs); }
+.fam-stat[data-category="recipes"]     { --c: var(--cat-recipes); }
+.fam-stat[data-category="ingredients"] { --c: var(--cat-ingredients); }
+.fam-stat[data-category="techniques"]  { --c: var(--cat-techniques); }
+.fam-stat[data-category="cuisines"]    { --c: var(--cat-cuisines); }
+.fam-stat[data-category="equipment"]   { --c: var(--cat-equipment); }
+.fam-stat[data-category="hubs"]        { --c: var(--cat-hubs); }
+.fam-stat .fam-stat-num { color: var(--c, var(--ink)); }
+/* Hover borrows the family's own color so the wayfinding anchors read as a
+   coordinated set rather than identical grey buttons. */
+.fam-stat:hover {
+  background: color-mix(in oklab, var(--c, var(--accent)) 8%, var(--bg-soft));
+  border-color: color-mix(in oklab, var(--c, var(--rule)) 40%, var(--rule));
+}
 
 .fam-cat {
   margin-bottom: 4rem;
@@ -2199,7 +2258,7 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
 }
 .family-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 3px 14px rgba(42, 31, 16, 0.07);
+  box-shadow: var(--shadow-md);
   transform: translateY(-2px);
   text-decoration: none;
 }
@@ -2223,8 +2282,8 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   flex: 1;
 }
 .family-card-eyebrow {
-  font-family: var(--font-mono); font-size: 9px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .18em;
+  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600;
+  text-transform: uppercase; letter-spacing: .16em;
   color: var(--ink-faint);
   margin-bottom: .4rem;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
@@ -2244,7 +2303,7 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   margin: 0 0 .75rem; flex: 1;
 }
 .family-card-count {
-  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600;
   text-transform: uppercase; letter-spacing: .12em;
   color: var(--ink-faint);
   align-self: flex-start;
@@ -2371,6 +2430,31 @@ body:not(:has(#sidebar)) .toc-toggle { display: none !important; }
 .rh-cook-btn[aria-pressed="true"]:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: #fff; }
 .rh-cook-icon { display: inline-flex; align-items: center; }
 .rh-cook-icon svg { display: block; }
+
+/* ── Jump to steps (recipe hero) ────────────────────────────────────────
+   The primary "I just want to cook" action. Filled accent so it reads as
+   the default route past the intro prose; Cook's view and Print stay quiet
+   outlines beside it. Anchor (not button) so it works without JS. */
+.rh-jump-btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  margin-top: 1.1rem;
+  background: var(--accent); color: #fff;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-pill);
+  padding: 9px 18px 9px 15px;
+  font-family: var(--font-sans); font-size: var(--t-small); font-weight: 600;
+  text-decoration: none; cursor: pointer;
+  letter-spacing: .005em;
+  box-shadow: 0 2px 8px rgba(165, 90, 26, 0.2);
+  transition: background 140ms, border-color 140ms, transform 80ms, box-shadow 140ms;
+}
+.rh-jump-btn:hover { background: var(--accent-deep); border-color: var(--accent-deep); box-shadow: 0 3px 10px rgba(165, 90, 26, 0.28); }
+.rh-jump-btn:active { transform: scale(0.97); }
+.rh-jump-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.rh-jump-icon { display: inline-flex; align-items: center; }
+.rh-jump-icon svg { display: block; }
+/* The jump shortcut is moot once the cook is inside the focused step view. */
+body[data-cooks-view="on"] .rh-jump-btn { display: none; }
 
 /* ── cook's view active state ───────────────────────────────────── */
 body[data-cooks-view="on"] {
@@ -2699,12 +2783,9 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 .entry-card[data-category="cuisines"]::before    { background: var(--cat-cuisines); }
 .entry-card[data-category="equipment"]::before   { background: var(--cat-equipment); }
 .entry-card[data-category="hubs"]::before        { background: var(--cat-hubs); }
-.entry-card:hover {
-  transform: translateY(-1px);
-  border-color: var(--accent);
-  box-shadow: var(--shadow-md);
-  text-decoration: none;
-}
+/* lift + category-color border come from the unified hover block below;
+   here we only grow the category stripe and kill the underline. */
+.entry-card:hover { text-decoration: none; }
 .entry-card:hover::before { height: 4px; }
 
 .ec-cat {
@@ -2802,6 +2883,57 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 .ec-cat-row { display: inline-flex; align-items: center; gap: .35rem; }
 .ec-hub-icon { color: var(--cat-hubs); display: inline-flex; }
 .ec-hub-icon svg { display: block; }
+
+/* ── Explore-card body (build/lib/cards.mjs renderCardBody) ───────────────
+   The browse pages (Cook/Learn/Pantry/Traverse) use a richer card shape than
+   the homepage variant above: a color/photo swatch band, a .ec-body content
+   block, and a row of .ec-stat-pill facts. These shipped without CSS — the
+   swatch was invisible and the pills were raw inline text. Style them to the
+   same crisp-paper card language. The swatch breaks out of .entry-card padding
+   to read as a full-bleed header band; .ec-body restores the inner padding. */
+.entry-card:has(.ec-swatch) { padding: 0; gap: 0; }
+.ec-swatch {
+  display: block; height: 6px; width: 100%;
+  background: var(--bg-soft);
+  position: relative; overflow: hidden;
+}
+/* Color band keyed off the card's category (the deterministic swatch index is
+   decorative; the category drives the meaningful color). */
+.entry-card[data-category="recipes"]     .ec-swatch { background: color-mix(in oklab, var(--cat-recipes) 24%, var(--bg-soft)); }
+.entry-card[data-category="ingredients"] .ec-swatch { background: color-mix(in oklab, var(--cat-ingredients) 24%, var(--bg-soft)); }
+.entry-card[data-category="techniques"]  .ec-swatch { background: color-mix(in oklab, var(--cat-techniques) 24%, var(--bg-soft)); }
+.entry-card[data-category="cuisines"]    .ec-swatch { background: color-mix(in oklab, var(--cat-cuisines) 24%, var(--bg-soft)); }
+.entry-card[data-category="equipment"]   .ec-swatch { background: color-mix(in oklab, var(--cat-equipment) 24%, var(--bg-soft)); }
+.entry-card[data-category="hubs"]        .ec-swatch { background: color-mix(in oklab, var(--cat-hubs) 24%, var(--bg-soft)); }
+.ec-swatch-photo { height: 96px; background-size: cover; background-position: center; }
+/* When the swatch is present the top accent line is redundant with the band. */
+.entry-card:has(.ec-swatch)::before { display: none; }
+.ec-body {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .8rem 1rem .85rem;
+  flex: 1; min-width: 0;
+}
+.ec-stat-row {
+  display: flex; flex-wrap: wrap; gap: .35rem;
+  margin-top: auto; padding-top: .5rem;
+}
+.ec-stat-pill {
+  font-family: var(--font-sans); font-size: var(--t-tiny); font-weight: 500;
+  color: var(--ink-soft); background: var(--bg-soft);
+  border: 1px solid var(--rule-soft); border-radius: var(--r-pill);
+  padding: 2px 9px; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-variant-numeric: tabular-nums;
+}
+.ec-stat-cuisine { color: var(--cat-cuisines); border-color: color-mix(in oklab, var(--cat-cuisines) 30%, var(--rule-soft)); }
+.ec-stat-diff { text-transform: capitalize; }
+.ec-diff-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .7; }
+.ec-stat-diff.ec-d-easy   { color: #3a6e1a; }
+.ec-stat-diff.ec-d-medium { color: #8a5a10; }
+.ec-stat-diff.ec-d-hard   { color: var(--accent); }
+[data-theme="dark"] .ec-stat-diff.ec-d-easy   { color: #9fce82; }
+[data-theme="dark"] .ec-stat-diff.ec-d-medium { color: #e6c890; }
+[data-theme="dark"] .ec-stat-diff.ec-d-hard   { color: var(--accent); }
 .ec-mix {
   display: flex; flex-wrap: wrap; gap: .15rem .5rem;
   font-family: var(--font-sans); font-size: 12px;
@@ -2993,6 +3125,38 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
   color: var(--ink-faint); margin: 0 0 1.5rem;
   min-height: 1.2em;
 }
+
+/* Filter dead-end — when every result is filtered out. Shipped unstyled (plain
+   text + a bare button); make it a centered editorial state that turns the
+   dead-end into a clear path back. */
+.filter-empty[hidden] { display: none; }
+.filter-empty {
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border: 1px dashed var(--rule);
+  border-radius: var(--r-3);
+  background: var(--bg-elev);
+  margin: 1rem 0 2rem;
+}
+.filter-empty::before {
+  content: '⌕'; /* an "empty search" mark — quiet, not a gimmick */
+  font-family: var(--font-serif); font-size: 2.4rem; line-height: 1;
+  color: var(--ink-faint); opacity: .6;
+}
+.filter-empty-msg {
+  font-family: var(--font-serif); font-size: 1.3rem; font-style: italic;
+  color: var(--ink-soft); margin: 0; max-width: 36ch;
+}
+.filter-empty-btn {
+  font-family: var(--font-sans); font-size: var(--t-small); font-weight: 600;
+  color: #fff; background: var(--accent); border: 1px solid var(--accent);
+  border-radius: var(--r-pill); padding: 8px 20px; cursor: pointer;
+  transition: background var(--d-fast), transform 80ms;
+}
+.filter-empty-btn:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+.filter-empty-btn:active { transform: scale(0.97); }
+.filter-empty-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 
 /* Sort bar — sits above the category sections on every family page. */
 .sort-bar {
@@ -3427,6 +3591,36 @@ body.cmd-palette-open { overflow: hidden; }
   font-size: 0.75rem;
   color: var(--ink-faint);
 }
+/* Recipe preview: identity line (cuisine · diet · active+passive time), the
+   ingredient line (what's in it), and the techniques (what's distinctive) —
+   the info you can't get from the link itself. */
+.hcard-id {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .35rem;
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .02em;
+  text-transform: uppercase; color: var(--ink-faint);
+  margin-bottom: .45rem;
+}
+.hcard-sep { color: var(--rule); }
+.hcard-passive { text-transform: none; letter-spacing: 0; color: var(--ink-faint); }
+.hcard-ing {
+  display: flex; gap: .4rem; align-items: baseline;
+  font-size: .8rem; line-height: 1.45; color: var(--ink-soft);
+  margin-top: .5rem; padding-top: .5rem;
+  border-top: 1px solid var(--rule-soft);
+}
+.hcard-ing-icon { color: var(--cat-ingredients); flex-shrink: 0; }
+.hcard-more { color: var(--ink-faint); font-family: var(--font-mono); font-size: .72rem; }
+.hcard-tech {
+  display: flex; flex-wrap: wrap; gap: .3rem;
+  margin-top: .45rem;
+}
+.hcard-tech-item {
+  font-family: var(--font-mono); font-size: .66rem; font-weight: 500;
+  text-transform: lowercase; letter-spacing: .02em;
+  color: var(--cat-techniques);
+  background: color-mix(in oklab, var(--cat-techniques) 9%, transparent);
+  border-radius: 4px; padding: 1px 7px;
+}
 .hcard-diff-easy { color: #5a8a3a; }
 .hcard-diff-medium { color: #b88a2a; }
 .hcard-diff-hard { color: var(--accent); }
@@ -3783,7 +3977,24 @@ body, .recipe-hero, .topic-hero, .home-hero, .home-section,
     border-color var(--d-base) var(--ease-out);
 }
 
-/* Card lift on hover — works for the major card families. */
+/* ── Unified hover language ───────────────────────────────────────────────
+   One consistent, useful, clean hover across every card/door/link-tile:
+   a small lift + shadow for depth, and the element's OWN category color
+   coming forward on the border + accent so the hover *tells you where you're
+   going*. Each surface exposes its category as --c so a single hover rule
+   serves them all. Clean, not bouncy; reduced-motion-safe below. */
+.entry-card[data-category="recipes"],     .family-card[data-family="cook"],
+.pair-card[data-category="recipes"],      .rl-card[data-category="recipes"]      { --c: var(--cat-recipes); }
+.entry-card[data-category="ingredients"], .family-card[data-family="pantry"],
+.pair-card[data-category="ingredients"],  .rl-card[data-category="ingredients"]  { --c: var(--cat-ingredients); }
+.entry-card[data-category="techniques"],  .family-card[data-family="learn"],
+.pair-card[data-category="techniques"],   .rl-card[data-category="techniques"]   { --c: var(--cat-techniques); }
+.entry-card[data-category="cuisines"],    .family-card[data-family="traverse"],
+.pair-card[data-category="cuisines"],     .rl-card[data-category="cuisines"]     { --c: var(--cat-cuisines); }
+.entry-card[data-category="equipment"],   .pair-card[data-category="equipment"], .rl-card[data-category="equipment"] { --c: var(--cat-equipment); }
+.entry-card[data-category="hubs"],        .pair-card[data-category="hubs"],      .rl-card[data-category="hubs"]      { --c: var(--cat-hubs); }
+.ff-card { --c: var(--cat-recipes); }
+
 .entry-card, .pair-card, .rl-card, .ff-card, .family-card, .hub-chip {
   transition:
     transform var(--d-fast) var(--ease-out),
@@ -3796,9 +4007,12 @@ body, .recipe-hero, .topic-hero, .home-hero, .home-section,
 .ff-card:hover, .family-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+  /* category color forward — the useful signal */
+  border-color: color-mix(in oklab, var(--c, var(--accent)) 55%, var(--rule));
 }
 .hub-chip:hover {
   transform: translateY(-1px);
+  border-color: var(--accent);
 }
 
 /* Subtle press-down on click — matches a tactile feel without going

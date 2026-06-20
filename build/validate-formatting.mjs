@@ -222,6 +222,97 @@ for (const pageFull of walkPages(PAGES)) {
       }
     }
 
+    // Orphaned ingredients (INFO, report-only): an ingredient the steps never
+    // mention is either a forgotten instruction or a list typo — the cook is
+    // left holding an unused item. Matching ingredient names to prose is fuzzy
+    // ("extra-virgin olive oil" vs "olive oil"; "kosher salt" vs "salt"), so we
+    // invert the test for confidence: an ingredient counts as USED if ANY of
+    // its name words (≥3 chars, loose-stemmed for plural/participle drift) shows
+    // up in the step corpus. We flag only when NOTHING matches. Two further
+    // guards keep noise down: NOISE drops shared modifiers, and recipes whose
+    // steps reference ingredients COLLECTIVELY ("add all ingredients", "toast
+    // the whole spices", "the blend") are skipped entirely — there, no single
+    // ingredient is named even though all are used. INFO (not WARN) because the
+    // residue is advisory triage for the admin dashboard, not a build gate.
+    {
+      // Collective-reference guard: blender/spice-blend recipes name the group,
+      // not each item, so per-ingredient orphan detection is meaningless there.
+      const stepCorpus = (fm.steps || []).map(s => (s.text || '')).join(' ').toLowerCase();
+      const collective = /\ball (?:the |of the )?ingredients\b|\beverything (?:else |into |in )|\bthe (?:whole |toasted |dry )?spices\b|\bthe (?:masala |spice |curry )?(?:blend|paste|mix)\b|\bremaining ingredients\b/.test(stepCorpus);
+      if (!collective) {
+        // Normalize a word to a loose stem: strip a trailing plural/participle
+        // so "leaves"≈"leaf", "scallions"≈"scallion", "diced"≈"dice".
+        const stemOf = (w) => w
+          .replace(/ves$/, 'f').replace(/ies$/, 'y')
+          .replace(/(es|s|ed)$/, '')
+          .slice(0, 6);
+        const stepStems = new Set(
+          stepCorpus.replace(/[^a-z\s-]/g, ' ').split(/\s+/).filter(w => w.length >= 3).map(stemOf));
+        const NOISE = new Set(['fresh','ground','dried','whole','large','small','medium','room','plus',
+          'with','into','extra','virgin','finely','coarsely','thinly','roughly','temperature','about',
+          'peeled','halved','sliced','minced','diced','chopped','grated','toasted','cold','warm','more',
+          'your','from','best','good','for','the','and','optional','preferably','such','style']);
+        for (const ing of (fm.ingredients || [])) {
+          if (typeof ing.qty !== 'number') continue;
+          if (ing.derive_from) continue;
+          const probes = (ing.item || '').toLowerCase()
+            .replace(/\([^)]*\)/g, ' ')          // drop "(Korean fermented...)"
+            .replace(/[^a-z\s-]/g, ' ').split(/\s+/)
+            .filter(w => w.length >= 3 && !NOISE.has(w))
+            .map(stemOf);
+          if (!probes.length) continue;           // nothing distinctive to test on
+          if (!probes.some(p => stepStems.has(p))) {
+            emit('INFO', contentRel,
+              `ingredient "${ing.item}" is on the list but no step appears to use it — possible orphaned ingredient`,
+              { fix: 'Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a "scatter the X over the top" step so the cook knows when to use them.' });
+          }
+        }
+      }
+    }
+
+    // Scaling-coverage (INFO, report-only): the build wraps clean "N unit" and
+    // "N metric / N imperial" prose quantities in <span data-step-qty> so they
+    // rescale with servings. Two specific shapes it provably CANNOT wrap stay
+    // frozen and then contradict the ingredient table at 2×. Rather than guess
+    // a count delta (noisy), we report the exact offending substrings so a
+    // future content pass can act on them precisely:
+    //   (a) ranges — "60 to 80 g", "3 to 4 g cayenne" — the wrapper only claims
+    //       single quantities, so the range endpoints never move.
+    //   (b) yield-coupled splits — "divide into 4", "form into 12" — the count
+    //       IS the serving math, so it must move with servings, but the wrapper
+    //       can't touch a bare integer. (Generic "N <noun>" is left alone: most
+    //       such counts — 2 bay leaves, a 3:1 ratio — are intentionally fixed.)
+    {
+      const proseBlocks = [
+        ...(fm.steps || []).map(s => s.text || ''),
+        ...(typeof fm.notes === 'string' ? fm.notes.split('\n\n') : []),
+      ];
+      const NUM = `(?:\\d+(?:\\.\\d+)?|[¼½¾⅓⅔⅛⅜⅝⅞])`;
+      const UNIT = `(?:g|kg|mg|ml|l|oz|lb|tsp|tbsp|cups?|tablespoons?|teaspoons?|sticks?|pounds?)`;
+      // "60 to 80 g" / "3-4 g" / "15 to 20 ml" — a numeric range carrying a unit.
+      const rangeRe = new RegExp(`(?<![\\w.])${NUM}\\s*(?:to|–|—|-)\\s*${NUM}\\s*${UNIT}\\b`, 'gi');
+      // Yield-coupled split: "divide/portion/form/shape ... into N".
+      const divideRe = /\b(?:divide|portion|form|shape|split|roll|scoop|pipe)\s+(?:it\s+|the\s+[\w-]+\s+|them\s+)*into\s+([2-9]|1\d|20)\b/gi;
+      const ranges = new Set();
+      const splits = new Set();
+      for (const block of proseBlocks) {
+        for (const m of block.matchAll(rangeRe)) ranges.add(m[0].trim().replace(/\s+/g, ' '));
+        for (const m of block.matchAll(divideRe)) splits.add(`into ${m[1]}`);
+      }
+      if (ranges.size) {
+        const sample = [...ranges].slice(0, 5).join('", "');
+        emit('INFO', contentRel,
+          `scaling: ${ranges.size} quantity range(s) in prose stay fixed when servings change — e.g. "${sample}"`,
+          { fix: 'Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value ("70 g") and move the tolerance to a note; if it is guidance ("to taste, ~3 to 4 g"), leave it but know it will not move.' });
+      }
+      if (splits.size) {
+        const sample = [...splits].slice(0, 5).join('", "');
+        emit('INFO', contentRel,
+          `scaling: ${splits.size} yield-coupled split(s) ("${sample}") use a fixed count that will not move with servings`,
+          { fix: 'A "divide into N" count should track servings. Phrase it relative to yield ("one portion per serving") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled.' });
+      }
+    }
+
     // Pack/derive accounting: every derive_from must reference an existing
     // pack id, and the sum of derived grams must not exceed the pack's total
     // grams (with a 5% tolerance for cling/loss). Catches math mistakes when

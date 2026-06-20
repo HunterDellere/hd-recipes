@@ -93,27 +93,67 @@
     return m ? `${h} h ${m} min` : `${h} h`;
   }
 
+  // A preview is only worth showing if it tells you something the link itself
+  // doesn't. For recipes that means what's IN it and what makes it distinctive
+  // (ingredients + techniques) — not the time/servings/difficulty a card
+  // already displays. We keep a tight identity line and, for time, show only
+  // the informative active+passive form ("25 min active · overnight"), never a
+  // plain total that's already on the card.
+  function ingredientLine(e) {
+    const list = Array.isArray(e.ingredients) ? e.ingredients : [];
+    if (!list.length) return '';
+    const names = list
+      .filter(i => i && !i.optional)
+      .map(i => (typeof i === 'string' ? i : (i.item || '')))
+      // strip prep clauses so "garlic, minced" reads as "garlic"
+      .map(s => s.split(',')[0].trim())
+      .filter(Boolean);
+    if (!names.length) return '';
+    const shown = names.slice(0, 6);
+    const more = names.length - shown.length;
+    const body = escapeHtml(shown.join(' · '));
+    const moreTag = more > 0 ? ` <span class="hcard-more">+${more}</span>` : '';
+    return `<div class="hcard-ing"><span class="hcard-ing-icon" aria-hidden="true">◦</span>${body}${moreTag}</div>`;
+  }
+
+  function techniqueLine(e) {
+    const t = Array.isArray(e.techniques) ? e.techniques : [];
+    if (!t.length) return '';
+    const shown = t.slice(0, 3).map(x => String(x).replace(/-/g, ' '));
+    return `<div class="hcard-tech">${shown.map(s => `<span class="hcard-tech-item">${escapeHtml(s)}</span>`).join('')}</div>`;
+  }
+
   function buildBody(e) {
     const eyebrow = `<span class="hcard-eyebrow hcard-eyebrow-${escapeHtml(e.type || 'entry')}">${escapeHtml(e.category || e.type || '')}</span>`;
     const title = `<div class="hcard-title">${escapeHtml(e.title || '')}</div>`;
-    const desc = e.desc ? `<div class="hcard-desc">${escapeHtml(e.desc.slice(0, 140))}</div>` : '';
+    const desc = e.desc ? `<div class="hcard-desc">${escapeHtml(e.desc.slice(0, 130))}</div>` : '';
 
-    const meta = [];
     if (e.type === 'recipe') {
-      const t = e.time && (e.time.active_min || e.time.total_min);
-      if (t) meta.push(`<span class="hcard-meta-item">${escapeHtml(fmtMin(t))}</span>`);
-      if (e.servings) meta.push(`<span class="hcard-meta-item">${escapeHtml(e.servings)} servings</span>`);
-      if (e.difficulty) meta.push(`<span class="hcard-meta-item hcard-diff hcard-diff-${escapeHtml(e.difficulty)}">${escapeHtml(e.difficulty)}</span>`);
-      if (e.cuisine) meta.push(`<span class="hcard-meta-item">${escapeHtml(e.cuisine)}</span>`);
-    } else if (e.type === 'ingredient') {
+      // Identity line: cuisine + diet flags (quick "is this for me"), plus the
+      // active/passive time ONLY when it's the meaningful split, not a bare
+      // total that the card already shows.
+      const idbits = [];
+      if (e.cuisine) idbits.push(escapeHtml(e.cuisine));
+      const diet = Array.isArray(e.diet) ? e.diet.filter(d => /vegan|vegetarian|gluten-free|dairy-free/.test(d)) : [];
+      for (const d of diet.slice(0, 2)) idbits.push(escapeHtml(d));
       const c = e._card || {};
+      if (c.timeMode === 'active' && c.timeAnnotation) {
+        idbits.push(`${escapeHtml(c.timeLead)} active <span class="hcard-passive">${escapeHtml(c.timeAnnotation.replace(/^[+·]\s*/, '· '))}</span>`);
+      }
+      const idRow = idbits.length ? `<div class="hcard-id">${idbits.join('<span class="hcard-sep">·</span>')}</div>` : '';
+      return eyebrow + title + idRow + desc + ingredientLine(e) + techniqueLine(e);
+    }
+
+    // Non-recipe entries: the description IS the value (what it is / how to use
+    // it). Keep a single useful stat, drop the rest.
+    const meta = [];
+    const c = e._card || {};
+    if (e.type === 'ingredient') {
       if (c.primaryTag) meta.push(`<span class="hcard-meta-item">${escapeHtml(c.primaryTag)}</span>`);
-      if (c.usedInCount) meta.push(`<span class="hcard-meta-item">${c.usedInCount} ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`);
+      if (c.usedInCount) meta.push(`<span class="hcard-meta-item">used in ${c.usedInCount} ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`);
     } else if (e.type === 'technique' || e.type === 'cuisine') {
-      const c = e._card || {};
-      if (c.usedInCount) meta.push(`<span class="hcard-meta-item">${c.usedInCount} ${c.usedInCount === 1 ? 'recipe' : 'recipes'}</span>`);
+      if (c.usedInCount) meta.push(`<span class="hcard-meta-item">${c.usedInCount} ${c.usedInCount === 1 ? 'recipe' : 'recipes'} use this</span>`);
     } else if (e.type === 'hub') {
-      const c = e._card || {};
       if (c.memberCount) meta.push(`<span class="hcard-meta-item">${c.memberCount} ${c.memberCount === 1 ? 'entry' : 'entries'}</span>`);
     }
     const metaRow = meta.length ? `<div class="hcard-meta">${meta.join('')}</div>` : '';

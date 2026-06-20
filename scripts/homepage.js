@@ -187,17 +187,57 @@
     set('[data-count-learn]', learnCount);
     set('[data-count-traverse]', traverseCount);
 
-    // Inject family card art (single source of truth in build/lib/family-render)
-    try {
-      const art = await loadJson('data/family-art.json');
-      document.querySelectorAll('[data-family-art]').forEach(el => {
-        const key = el.dataset.familyArt;
-        if (art[key]) el.innerHTML = art[key];
-      });
-    } catch {}
+    // Cuisine index — fills the big "Traverse" door with the top cuisines by
+    // recipe count, linking into the filtered Cook view. Derived live from
+    // entries so it tracks the library without a build step.
+    renderCuisineIndex(entries);
+
+    // Ticker — the rolling tape of dish names. Proves the library's depth
+    // without photos. Doubled so the CSS marquee loops seamlessly.
+    renderTicker(recipes);
 
     initSearch(entries);
     initInSeason(entries);
+  }
+
+  // ── Cuisine index (Traverse door) ─────────────────────────────────────
+  function renderCuisineIndex(entries) {
+    const host = document.querySelector('[data-cuisine-index]');
+    if (!host) return;
+    const counts = new Map();
+    for (const e of entries) {
+      if (e.status !== 'complete' || e.category !== 'recipes' || !e.cuisine) continue;
+      counts.set(e.cuisine, (counts.get(e.cuisine) || 0) + 1);
+    }
+    const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+    if (!top.length) { host.remove(); return; }
+    const more = counts.size - top.length;
+    const chips = top.map(([cuisine, n]) =>
+      `<a class="dl" href="pages/explore/cook.html?cuisine=${encodeURIComponent(cuisine)}">${escapeHtml(cuisine)} <b>${n}</b></a>`
+    );
+    if (more > 0) chips.push(`<span class="dl">+ ${more} more</span>`);
+    host.innerHTML = chips.join('');
+    // The chips are real links inside the Traverse <a>; stop their clicks from
+    // bubbling to the parent card so a cuisine click goes to that cuisine.
+    host.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', ev => ev.stopPropagation()));
+  }
+
+  // ── Ticker ────────────────────────────────────────────────────────────
+  function renderTicker(recipes) {
+    const row = document.querySelector('[data-ticker]');
+    if (!row || !recipes.length) return;
+    // Sample a varied spread (every Nth) so the tape isn't all one cuisine.
+    const pool = recipes.slice();
+    const step = Math.max(1, Math.floor(pool.length / 28));
+    const picks = [];
+    for (let i = 0; i < pool.length && picks.length < 28; i += step) picks.push(pool[i]);
+    const label = '<span class="home-ticker-label">In the library</span>';
+    const links = picks.map(e => {
+      const t = (e.title || '').split('—')[0].split('(')[0].trim();
+      return `<a href="${escapeHtml(e.path)}">${escapeHtml(t)}</a>`;
+    }).join('');
+    row.innerHTML = (label + links).repeat(2); // doubled for seamless loop
   }
 
   // ── In-season this month — pulls data/in-season.json built from each
