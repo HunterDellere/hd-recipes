@@ -1,9 +1,9 @@
 {
-  "generated": "2026-06-20T04:49:56.477Z",
+  "generated": "2026-06-20T15:00:31.385Z",
   "summary": {
     "errors": 0,
     "warnings": 369,
-    "info": 130
+    "info": 137
   },
   "findings": [
     {
@@ -2558,6 +2558,13 @@
       "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/grilled-pompano-nam-jim.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"450 to 500 g\", \"300 to 600 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/hainanese-chicken-rice.md",
@@ -2864,6 +2871,13 @@
       "file": "content/recipes/lomo-saltado.md",
       "msg": "ingredient \"russet potatoes\" is on the list but no step appears to use it — possible orphaned ingredient",
       "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/maeuntang.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"700 to 900 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "INFO",
@@ -3204,8 +3218,22 @@
     {
       "level": "INFO",
       "category": "formatting",
+      "file": "content/recipes/pompano-en-papillote.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"450 to 500 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
       "file": "content/recipes/ponzu.md",
       "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"12 to 18 g\", \"300 to 500 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/porgy-acqua-pazza.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"600 to 700 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
@@ -3295,6 +3323,13 @@
     {
       "level": "INFO",
       "category": "formatting",
+      "file": "content/recipes/saba-no-misoni.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
       "file": "content/recipes/salsa-macha.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"5 to 7 cup\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
@@ -3304,6 +3339,13 @@
       "category": "formatting",
       "file": "content/recipes/salt-and-pepper-squid.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"6 to 8 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/salt-baked-whole-porgy.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"650 to 700 g\", \"600 to 700 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
@@ -3486,6 +3528,13 @@
       "category": "formatting",
       "file": "content/recipes/white-beans-braised-with-beet-greens.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"600 to 900 mg\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/whole-roasted-trout-lemon-herb.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"250 to 500 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
