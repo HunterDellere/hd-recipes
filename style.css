@@ -979,9 +979,14 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   font-size: 15px;
   cursor: pointer;
   border-radius: var(--r-1);
-  transition: opacity var(--d-base), background var(--d-fast);
+  transition: opacity var(--d-base), background var(--d-fast), box-shadow var(--d-fast);
 }
-.ing-row:hover { background: color-mix(in oklab, var(--bg-soft) 65%, transparent); }
+/* Inset left stripe on hover — a clearer "this whole row is a tap target" cue
+   for messy-handed cooking. box-shadow (not border) so the grid never shifts. */
+.ing-row:hover {
+  background: color-mix(in oklab, var(--bg-soft) 65%, transparent);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
 .ing-row:active { background: var(--accent-soft); }
 .ing-row a, .ing-row label, .ing-row input { cursor: auto; }
 .ing-row a { cursor: pointer; }
@@ -1288,7 +1293,11 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   color: var(--ink);
   transition: border-color var(--d-fast), color var(--d-fast);
 }
-.eq-chip:hover { border-color: var(--cat-equipment); color: var(--cat-equipment); text-decoration: none; }
+.eq-chip:hover {
+  border-color: var(--cat-equipment); color: var(--cat-equipment);
+  background: color-mix(in oklab, var(--cat-equipment) 8%, var(--bg-elev));
+  text-decoration: none;
+}
 .eq-chip-stub { color: var(--ink-faint); }
 
 /* ── pairings (intelligent recommendations on recipe pages) ─────── */

@@ -273,24 +273,29 @@
       });
 
       stepQtyEls.forEach(el => {
-        if (Math.abs(factor - 1) < 1e-9 && el.dataset.origText != null) {
-          el.textContent = el.dataset.origText;
-          return;
-        }
         const mq = parseFloat(el.dataset.metricQty);
         const mu = el.dataset.metricUnit || '';
         const iq = parseFloat(el.dataset.impQty);
         const iu = el.dataset.impUnit || '';
+        // Restore the authored dual text only at factor=1 AND default (metric)
+        // units — that's the as-written state. Once the cook picks Imperial or
+        // scales, we recompute so the steps lead with the chosen unit.
+        if (Math.abs(factor - 1) < 1e-9 && units === 'metric' && el.dataset.origText != null) {
+          el.textContent = el.dataset.origText;
+          return;
+        }
         if (!isFinite(mq) || !isFinite(iq)) return;
         const mScaled = mq * factor;
         const iScaled = iq * factor;
-        // Dual-display "metric / imperial" — rebased to kg/l when the scaled
-        // metric crosses the 1000 threshold so 6 servings × 250 ml reads as
-        // 1.5 l rather than 1500 ml.
+        // Lead with the cook's chosen unit, keep the other as a parenthetical
+        // so the conversion stays available. Metric is rebased to kg/l when the
+        // scaled value crosses 1000 so 6×250 ml reads as 1.5 l, not 1500 ml.
         const mDisp = metricDisplay(mScaled, mu);
         const metricText = `${fmtMetric(mDisp.qty, mDisp.unit)} ${mDisp.unit}`;
         const impText = `${fmtImperial(iScaled, iu)} ${pluralizeUnit(iu, iScaled)}`;
-        el.textContent = `${metricText} / ${impText}`;
+        el.textContent = units === 'imperial'
+          ? `${impText} (${metricText})`
+          : `${metricText} (${impText})`;
       });
 
       // Refresh timer button aria-labels and data-step-label so the dock card
