@@ -1,9 +1,9 @@
 {
-  "generated": "2026-06-13T22:28:45.125Z",
+  "generated": "2026-06-20T14:18:57.378Z",
   "summary": {
     "errors": 0,
-    "warnings": 369,
-    "info": 4
+    "warnings": 387,
+    "info": 3
   },
   "findings": [
     {
@@ -226,6 +226,20 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/cantonese-clay-pot-chicken-with-shiitake-and-taro.md",
+      "msg": "technique \"red-cooking\" has no matching page",
+      "fix": "Create content/techniques/red-cooking.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cantonese-clay-pot-chicken-with-shiitake-and-taro.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/carbonara.md",
       "msg": "technique \"cold-pan-render\" has no matching page",
       "fix": "Create content/techniques/cold-pan-render.md"
@@ -366,13 +380,6 @@
     {
       "level": "WARN",
       "category": "crosslinks",
-      "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
       "file": "content/recipes/chiles-rellenos.md",
       "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
       "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
@@ -383,13 +390,6 @@
       "file": "content/recipes/chimichurri.md",
       "msg": "technique \"knife-chop-not-processor\" has no matching page",
       "fix": "Create content/techniques/knife-chop-not-processor.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/chinese-lions-head-meatballs.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
     },
     {
       "level": "WARN",
@@ -492,6 +492,34 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/daing-na-bangus.md",
+      "msg": "technique \"acid-cure\" has no matching page",
+      "fix": "Create content/techniques/acid-cure.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/daing-na-bangus.md",
+      "msg": "technique \"pan-fry\" has no matching page",
+      "fix": "Create content/techniques/pan-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/dak-bokkeum-tang-korean-braised-chicken-with-potato.md",
+      "msg": "technique \"bloom-aromatics\" has no matching page",
+      "fix": "Create content/techniques/bloom-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/dak-bokkeum-tang-korean-braised-chicken-with-potato.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/doro-wat.md",
       "msg": "technique \"dry-sweat\" has no matching page",
       "fix": "Create content/techniques/dry-sweat.md"
@@ -586,6 +614,27 @@
       "file": "content/recipes/full-english-breakfast-components.md",
       "msg": "technique \"egg-doneness\" has no matching page",
       "fix": "Create content/techniques/egg-doneness.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ga-kho-vietnamese-caramel-braised-chicken-with-kabocha.md",
+      "msg": "technique \"caramelization\" has no matching page",
+      "fix": "Create content/techniques/caramelization.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ga-kho-vietnamese-caramel-braised-chicken-with-kabocha.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/galchi-jorim.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
     },
     {
       "level": "WARN",
@@ -948,13 +997,6 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
       "msg": "technique \"fond-deglaze\" has no matching page",
       "fix": "Create content/techniques/fond-deglaze.md"
     },
@@ -1108,6 +1150,20 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/maeuntang.md",
+      "msg": "technique \"doenjang-broth\" has no matching page",
+      "fix": "Create content/techniques/doenjang-broth.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/maeuntang.md",
+      "msg": "technique \"gentle-poach\" has no matching page",
+      "fix": "Create content/techniques/gentle-poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/manti.md",
       "msg": "technique \"hand-folded-dumpling\" has no matching page",
       "fix": "Create content/techniques/hand-folded-dumpling.md"
@@ -1174,6 +1230,27 @@
       "file": "content/recipes/misir-wat.md",
       "msg": "technique \"simmer\" has no matching page",
       "fix": "Create content/techniques/simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-dashi-chicken-nimono-with-kabocha-and-shimeji.md",
+      "msg": "technique \"dashi-extraction\" has no matching page",
+      "fix": "Create content/techniques/dashi-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-dashi-chicken-nimono-with-kabocha-and-shimeji.md",
+      "msg": "technique \"drop-lid-simmer\" has no matching page",
+      "fix": "Create content/techniques/drop-lid-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-dashi-chicken-nimono-with-kabocha-and-shimeji.md",
+      "msg": "technique \"miso-tempering\" has no matching page",
+      "fix": "Create content/techniques/miso-tempering.md"
     },
     {
       "level": "WARN",
@@ -1272,6 +1349,13 @@
       "file": "content/recipes/pakistani-aloo-paratha.md",
       "msg": "technique \"dough-resting\" has no matching page",
       "fix": "Create content/techniques/dough-resting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pan-fried-yellow-croaker.md",
+      "msg": "technique \"shallow-fry\" has no matching page",
+      "fix": "Create content/techniques/shallow-fry.md"
     },
     {
       "level": "WARN",
@@ -1430,6 +1514,27 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/pompano-en-papillote.md",
+      "msg": "technique \"en-papillote\" has no matching page",
+      "fix": "Create content/techniques/en-papillote.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pompano-en-papillote.md",
+      "msg": "technique \"pan-sauce-reduction\" has no matching page",
+      "fix": "Create content/techniques/pan-sauce-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/porgy-acqua-pazza.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/pork-gyoza.md",
       "msg": "technique \"dumpling-wrap\" has no matching page",
       "fix": "Create content/techniques/dumpling-wrap.md"
@@ -1524,6 +1629,13 @@
       "file": "content/recipes/romesco.md",
       "msg": "technique \"pepper-charring\" has no matching page",
       "fix": "Create content/techniques/pepper-charring.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/saba-shioyaki.md",
+      "msg": "technique \"broiling\" has no matching page",
+      "fix": "Create content/techniques/broiling.md"
     },
     {
       "level": "WARN",
@@ -1633,6 +1745,20 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/sichuan-doubanjiang-chicken-with-eggplant-and-potato.md",
+      "msg": "technique \"bloom-aromatics\" has no matching page",
+      "fix": "Create content/techniques/bloom-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/sichuan-doubanjiang-chicken-with-eggplant-and-potato.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/slow-soft-scrambled-eggs-with-brown-butter-and-chives.md",
       "msg": "technique \"slow-low-scramble\" has no matching page",
       "fix": "Create content/techniques/slow-low-scramble.md"
@@ -1689,13 +1815,6 @@
     {
       "level": "WARN",
       "category": "crosslinks",
-      "file": "content/recipes/thai-pork-larb-meatballs.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
       "file": "content/recipes/tonjiru-pork-vegetable-miso-soup.md",
       "msg": "technique \"mise-en-place\" has no matching page",
       "fix": "Create content/techniques/mise-en-place.md"
@@ -1745,6 +1864,13 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/whole-roasted-striped-bass.md",
+      "msg": "technique \"roasting\" has no matching page",
+      "fix": "Create content/techniques/roasting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/zhoug.md",
       "msg": "technique \"spice-toasting\" has no matching page",
       "fix": "Create content/techniques/spice-toasting.md"
@@ -1760,25 +1886,19 @@
       "level": "INFO",
       "category": "tags",
       "file": "content/_schema/tags.json",
-      "msg": "1 tags defined but unused: grill"
-    },
-    {
-      "level": "INFO",
-      "category": "tags",
-      "file": "content/_schema/tags.json",
-      "msg": "84 tags in use across 764 entries. Top: pantry(243), umami(233), make-ahead(123), comfort(116), weekend-project(98), spicy(76), weeknight(68), pork(60), fermentation(53), no-cook(46), quick(41), chicken(41), fish(40), one-pot(37), seafood(37), rice(36), condiment(31), egg(30), beef(29), stew(23), bread(22), salad(21), soup(20), vegan(19), pickle(17), roast(16), fried(15), braise(15), holiday(15), tropical(11)"
+      "msg": "99 tags in use across 820 entries. Top: umami(258), pantry(256), make-ahead(128), comfort(124), weekend-project(99), spicy(87), weeknight(87), fish(67), seafood(65), pork(62), fermentation(55), quick(52), one-pot(47), no-cook(47), chicken(47), rice(36), condiment(32), egg(30), beef(29), stew(25), salad(22), bread(22), braise(21), vegan(21), soup(20), roast(18), fried(17), pickle(17), holiday(15), baked(13)"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "index stats: 710 pages, 7316 tokens, 365.1 KB"
+      "msg": "index stats: 764 pages, 7635 tokens, 389.1 KB"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "3908 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil"
+      "msg": "4056 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), sweet-nutty-bitter-bright, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil"
     },
     {
       "level": "WARN",
