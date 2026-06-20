@@ -2140,7 +2140,7 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   min-width: 96px;
   color: var(--ink);
 }
-.fam-stat:hover { background: var(--bg-soft); border-color: var(--rule); text-decoration: none; }
+.fam-stat:hover { text-decoration: none; }
 .fam-stat-num {
   font-family: var(--font-serif); font-weight: 700;
   font-size: 1.85rem; line-height: 1;
@@ -2153,12 +2153,19 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   text-transform: uppercase; letter-spacing: .12em;
   color: var(--ink-faint);
 }
-.fam-stat[data-category="recipes"]     .fam-stat-num { color: var(--cat-recipes); }
-.fam-stat[data-category="ingredients"] .fam-stat-num { color: var(--cat-ingredients); }
-.fam-stat[data-category="techniques"]  .fam-stat-num { color: var(--cat-techniques); }
-.fam-stat[data-category="cuisines"]    .fam-stat-num { color: var(--cat-cuisines); }
-.fam-stat[data-category="equipment"]   .fam-stat-num { color: var(--cat-equipment); }
-.fam-stat[data-category="hubs"]        .fam-stat-num { color: var(--cat-hubs); }
+.fam-stat[data-category="recipes"]     { --c: var(--cat-recipes); }
+.fam-stat[data-category="ingredients"] { --c: var(--cat-ingredients); }
+.fam-stat[data-category="techniques"]  { --c: var(--cat-techniques); }
+.fam-stat[data-category="cuisines"]    { --c: var(--cat-cuisines); }
+.fam-stat[data-category="equipment"]   { --c: var(--cat-equipment); }
+.fam-stat[data-category="hubs"]        { --c: var(--cat-hubs); }
+.fam-stat .fam-stat-num { color: var(--c, var(--ink)); }
+/* Hover borrows the family's own color so the wayfinding anchors read as a
+   coordinated set rather than identical grey buttons. */
+.fam-stat:hover {
+  background: color-mix(in oklab, var(--c, var(--accent)) 8%, var(--bg-soft));
+  border-color: color-mix(in oklab, var(--c, var(--rule)) 40%, var(--rule));
+}
 
 .fam-cat {
   margin-bottom: 4rem;
@@ -3112,6 +3119,38 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
   color: var(--ink-faint); margin: 0 0 1.5rem;
   min-height: 1.2em;
 }
+
+/* Filter dead-end — when every result is filtered out. Shipped unstyled (plain
+   text + a bare button); make it a centered editorial state that turns the
+   dead-end into a clear path back. */
+.filter-empty[hidden] { display: none; }
+.filter-empty {
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border: 1px dashed var(--rule);
+  border-radius: var(--r-3);
+  background: var(--bg-elev);
+  margin: 1rem 0 2rem;
+}
+.filter-empty::before {
+  content: '⌕'; /* an "empty search" mark — quiet, not a gimmick */
+  font-family: var(--font-serif); font-size: 2.4rem; line-height: 1;
+  color: var(--ink-faint); opacity: .6;
+}
+.filter-empty-msg {
+  font-family: var(--font-serif); font-size: 1.3rem; font-style: italic;
+  color: var(--ink-soft); margin: 0; max-width: 36ch;
+}
+.filter-empty-btn {
+  font-family: var(--font-sans); font-size: var(--t-small); font-weight: 600;
+  color: #fff; background: var(--accent); border: 1px solid var(--accent);
+  border-radius: var(--r-pill); padding: 8px 20px; cursor: pointer;
+  transition: background var(--d-fast), transform 80ms;
+}
+.filter-empty-btn:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+.filter-empty-btn:active { transform: scale(0.97); }
+.filter-empty-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 
 /* Sort bar — sits above the category sections on every family page. */
 .sort-bar {
