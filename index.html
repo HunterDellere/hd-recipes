@@ -10,9 +10,9 @@
 <link rel="canonical" href="https://hunterdellere.github.io/hd-recipes/">
 <link rel="alternate" type="application/rss+xml" title="hd · recipes" href="feed.xml">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#15110a" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#b8423a" id="meta-theme-color">
+<meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#bb3a2c" id="meta-theme-color">
 <meta name="color-scheme" content="light dark">
 <meta name="apple-mobile-web-app-title" content="hd recipes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,8 +34,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="style.css?v=7">
-<link rel="stylesheet" href="style-home.css?v=6">
+<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style-home.css?v=7">
 </head>
 <body data-page="home">
 
@@ -86,116 +86,97 @@
 
 <main id="main-content" class="home-main">
   <header class="home-hero">
-    <span class="home-hero-mark" aria-hidden="true">R</span>
-    <span class="home-hero-eyebrow">hd · recipes</span>
-    <h1 class="home-title">A personal recipe library.</h1>
-    <p class="home-tagline">Every recipe scales. Every ingredient links. Macros come from USDA data. Built for cooks who want technique without theatre.</p>
-    <div class="home-cta-row">
-      <a href="random.html" class="home-cta home-cta-primary">
-        <span class="home-cta-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+    <h1 class="home-q">What are you <span class="em">cooking?</span></h1>
+    <section class="home-search-section" id="search" aria-label="Search">
+      <div class="home-search-wrap">
+        <span class="home-search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <input type="search" id="home-search" class="home-search" placeholder="cacio e pepe, tea egg, brown butter…" autocomplete="off" spellcheck="false" aria-label="Search recipes, ingredients, and techniques">
+        <kbd class="home-search-kbd" aria-hidden="true">/</kbd>
+        <div id="home-search-tabs" class="home-search-tabs" role="tablist" aria-label="Filter results by type" hidden>
+          <button type="button" class="home-search-tab active" role="tab" aria-selected="true" data-scope="all">All <span class="hst-count" data-scope-count="all"></span></button>
+          <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="recipe">Recipes <span class="hst-count" data-scope-count="recipe"></span></button>
+          <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="ingredient">Ingredients <span class="hst-count" data-scope-count="ingredient"></span></button>
+          <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="technique">Techniques <span class="hst-count" data-scope-count="technique"></span></button>
+        </div>
+        <ul id="home-search-results" class="home-search-results" hidden></ul>
+      </div>
+    </section>
+    <div class="home-hints">
+      <a href="random.html" class="home-chip home-chip-lead" data-nav="random">
+        <span class="home-chip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
         </span>
         Surprise me
       </a>
-      <a href="pages/explore/cook.html" class="home-cta home-cta-secondary">Browse recipes</a>
+      <a href="pages/explore/pantry-match.html" class="home-chip" data-nav="pantry">What's in my pantry?</a>
+      <a href="pages/explore/cook.html?time=30" class="home-chip">30 min or less</a>
+      <a href="pages/explore/cook.html?tag=weeknight" class="home-chip">Weeknight</a>
+      <a href="pages/explore/cook.html?diet=vegetarian" class="home-chip">Vegetarian</a>
     </div>
-    <svg class="home-hero-ornament" viewBox="0 0 240 14" aria-hidden="true" focusable="false">
-      <path d="M4 7 Q 60 1, 116 7 T 236 7" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity="0.5"/>
-      <circle cx="120" cy="7" r="2" fill="currentColor" opacity="0.65"/>
-    </svg>
   </header>
 
-  <section class="home-section home-search-section" id="search" aria-labelledby="search-heading">
-    <div class="home-section-eyebrow"><span class="hse-mark"></span>Search</div>
-    <h2 class="home-section-h" id="search-heading">Find a recipe, ingredient, or technique</h2>
-    <div class="home-search-wrap">
-      <span class="home-search-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </span>
-      <input type="search" id="home-search" class="home-search" placeholder="cacio e pepe, tea egg, brown butter…" autocomplete="off" spellcheck="false" aria-label="Search">
-      <div id="home-search-tabs" class="home-search-tabs" role="tablist" aria-label="Filter results by type" hidden>
-        <button type="button" class="home-search-tab active" role="tab" aria-selected="true" data-scope="all">All <span class="hst-count" data-scope-count="all"></span></button>
-        <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="recipe">Recipes <span class="hst-count" data-scope-count="recipe"></span></button>
-        <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="ingredient">Ingredients <span class="hst-count" data-scope-count="ingredient"></span></button>
-        <button type="button" class="home-search-tab" role="tab" aria-selected="false" data-scope="technique">Techniques <span class="hst-count" data-scope-count="technique"></span></button>
-      </div>
-      <ul id="home-search-results" class="home-search-results" hidden></ul>
-    </div>
-    <p class="home-search-hint">Press <kbd>/</kbd> anywhere · <kbd>↑</kbd> <kbd>↓</kbd> to navigate · <kbd>Enter</kbd> to open · typo-tolerant</p>
-  </section>
+  <div class="home-ticker" aria-hidden="true">
+    <div class="home-ticker-row" data-ticker></div>
+  </div>
 
-  <section class="home-section home-families-section" aria-labelledby="explore-heading">
-    <div class="home-section-eyebrow"><span class="hse-mark"></span>Explore</div>
-    <h2 class="home-section-h" id="explore-heading">Four doors in</h2>
-    <p class="home-section-sub">Pick a family for a focused walk through the library.</p>
-    <div class="families-grid families-grid-4">
-      <a class="family-card" href="pages/explore/cook.html" data-family="cook">
-        <div class="family-card-art" data-family-art="cook" aria-hidden="true"></div>
-        <div class="family-card-meta">
-          <span class="family-card-eyebrow">Recipes</span>
-          <h3 class="family-card-title">Cook</h3>
-          <p class="family-card-desc">Tested dishes — filter by cuisine, course, diet, time, difficulty.</p>
-          <span class="family-card-count" data-count-cook>—</span>
-        </div>
-      </a>
-      <a class="family-card" href="pages/explore/pantry.html" data-family="pantry">
-        <div class="family-card-art" data-family-art="pantry" aria-hidden="true"></div>
-        <div class="family-card-meta">
-          <span class="family-card-eyebrow">Ingredients · Equipment</span>
-          <h3 class="family-card-title">Pantry</h3>
-          <p class="family-card-desc">What it is, how to choose, store, and swap. Plus tools worth knowing.</p>
-          <span class="family-card-count" data-count-pantry>—</span>
-        </div>
-      </a>
-      <a class="family-card" href="pages/explore/learn.html" data-family="learn">
-        <div class="family-card-art" data-family-art="learn" aria-hidden="true"></div>
-        <div class="family-card-meta">
-          <span class="family-card-eyebrow">Techniques</span>
-          <h3 class="family-card-title">Learn</h3>
-          <p class="family-card-desc">Methods that show up across recipes — what they are, when they matter, how they fail.</p>
-          <span class="family-card-count" data-count-learn>—</span>
-        </div>
-      </a>
-      <a class="family-card" href="pages/explore/traverse.html" data-family="traverse">
-        <div class="family-card-art" data-family-art="traverse" aria-hidden="true"></div>
-        <div class="family-card-meta">
-          <span class="family-card-eyebrow">Cuisines · Collections</span>
-          <h3 class="family-card-title">Traverse</h3>
-          <p class="family-card-desc">Cross-cutting indices — slice the library by region, by curated path, by attribute.</p>
-          <span class="family-card-count" data-count-traverse>—</span>
-        </div>
-      </a>
+  <section class="home-sec" aria-labelledby="doors-heading">
+    <div class="home-sec-head">
+      <div class="hsh-t"><span class="hsh-idx">§ 01</span><h2 class="home-sec-h" id="doors-heading">Four ways in</h2></div>
+      <a class="hsh-more" href="pages/explore/index.html">Everything →</a>
     </div>
-    <div class="families-foot">
-      <a class="families-master-link" href="pages/explore/index.html">View everything in one place →</a>
+    <div class="doors-grid">
+      <a class="door door-big" data-family="traverse" href="pages/explore/traverse.html">
+        <div class="door-top"><span class="door-cat">Cuisines · Collections</span><span class="door-num">01</span></div>
+        <h3 class="door-h">Traverse</h3>
+        <p class="door-desc">Wander the library by region or curated path — the long way in, where one dish leads to the next.</p>
+        <div class="door-links" data-cuisine-index></div>
+        <span class="door-count"><span data-count-traverse>—</span> <span class="door-ar" aria-hidden="true">→</span></span>
+      </a>
+      <a class="door" data-family="cook" href="pages/explore/cook.html">
+        <div class="door-top"><span class="door-cat">Recipes</span><span class="door-num">02</span></div>
+        <h3 class="door-h">Cook</h3>
+        <p class="door-desc">Tested dishes — filter by course, diet, time, difficulty.</p>
+        <span class="door-count"><span data-count-cook>—</span> <span class="door-ar" aria-hidden="true">→</span></span>
+      </a>
+      <a class="door" data-family="learn" href="pages/explore/learn.html">
+        <div class="door-top"><span class="door-cat">Techniques</span><span class="door-num">03</span></div>
+        <h3 class="door-h">Learn</h3>
+        <p class="door-desc">Methods across recipes — how they work, how they fail.</p>
+        <span class="door-count"><span data-count-learn>—</span> <span class="door-ar" aria-hidden="true">→</span></span>
+      </a>
+      <a class="door" data-family="pantry" href="pages/explore/pantry.html">
+        <div class="door-top"><span class="door-cat">Ingredients · Equipment</span><span class="door-num">04</span></div>
+        <h3 class="door-h">Pantry</h3>
+        <p class="door-desc">What it is, how to choose, store, swap.</p>
+        <span class="door-count"><span data-count-pantry>—</span> <span class="door-ar" aria-hidden="true">→</span></span>
+      </a>
     </div>
   </section>
 
-  <section class="home-section home-featured-section" aria-labelledby="featured-heading">
-    <div class="home-section-eyebrow"><span class="hse-mark"></span>Featured</div>
-    <h2 class="home-section-h" id="featured-heading">Today's pick</h2>
+  <div class="home-rule" aria-hidden="true"><span>❦</span></div>
+
+  <section class="home-sec" aria-labelledby="featured-heading">
+    <div class="home-sec-head">
+      <div class="hsh-t"><span class="hsh-idx">§ 02</span><h2 class="home-sec-h" id="featured-heading">Today's pick</h2></div>
+      <a class="hsh-more" href="random.html">Surprise me →</a>
+    </div>
     <div id="featured-card" class="home-featured-card"></div>
   </section>
 
-  <div class="home-divider" aria-hidden="true">
-    <svg viewBox="0 0 320 14" focusable="false">
-      <path d="M2 7 L130 7" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" opacity="0.3"/>
-      <circle cx="160" cy="7" r="2.5" fill="currentColor" opacity="0.5"/>
-      <path d="M190 7 L318 7" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" opacity="0.3"/>
-    </svg>
-  </div>
-
-  <section class="home-section home-inseason-section" id="in-season" aria-labelledby="inseason-heading" hidden>
-    <div class="home-section-eyebrow"><span class="hse-mark"></span>In season</div>
-    <h2 class="home-section-h" id="inseason-heading">In season this month</h2>
-    <p class="home-section-sub">Recipes built around what's at the market right now.</p>
+  <section class="home-sec home-inseason-section" id="in-season" aria-labelledby="inseason-heading" hidden>
+    <div class="home-sec-head">
+      <div class="hsh-t"><span class="hsh-idx">§ ✿</span><h2 class="home-sec-h" id="inseason-heading">In season this month</h2></div>
+    </div>
     <div id="inseason-list" class="card-grid"></div>
   </section>
 
-  <section class="home-section home-recent-section" aria-labelledby="recent-heading">
-    <div class="home-section-eyebrow"><span class="hse-mark"></span>Recent</div>
-    <h2 class="home-section-h" id="recent-heading">Recently added</h2>
-    <p class="home-section-sub">The most recent across each family.</p>
+  <section class="home-sec home-recent-section" aria-labelledby="recent-heading">
+    <div class="home-sec-head">
+      <div class="hsh-t"><span class="hsh-idx">§ 03</span><h2 class="home-sec-h" id="recent-heading">Recently added</h2></div>
+      <a class="hsh-more" href="pages/explore/index.html">All →</a>
+    </div>
     <div class="recent-tabs" role="tablist" aria-label="Recent entries by family" id="recent-tabs"></div>
     <div id="recent-list" class="card-grid" role="tabpanel" aria-live="polite"></div>
   </section>
@@ -205,7 +186,7 @@
   <span>hd · recipes · <a href="feed.xml">RSS</a></span>
 </footer>
 
-<script src="scripts/homepage.js?v=7" defer></script>
+<script src="scripts/homepage.js?v=8" defer></script>
 <script src="scripts/enhance.js?v=7" defer></script>
 <script src="scripts/personalization.js?v=1" defer></script>
 <script src="scripts/palette.js?v=6" defer></script>

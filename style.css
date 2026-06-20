@@ -4,32 +4,34 @@
   /* Paper warmth — was #faf6ee. Slight push toward cream gives the page a
      "linen tablecloth" quality instead of "bone china". The elev surface
      stays a touch lighter so cards still float. */
-  --bg: #f8f2e2;
-  --bg-elev: #fdf8eb;
-  --bg-soft: #f1ead7;
-  --ink: #2a1f10;
-  --ink-soft: #5a4a36;
-  --ink-faint: #8a7a60;
+  /* "Crisp paper" palette — a cooler bone-white base with a refined clean-red
+     accent, warmer-than-charcoal ink. Replaces the earlier yellow cream. */
+  --bg: #f5f2ea;
+  --bg-elev: #fcfaf4;
+  --bg-soft: #eae5da;
+  --ink: #22201b;
+  --ink-soft: #54514a;
+  --ink-faint: #8c887e;
   /* Warm prose body — sits between --ink and --ink-soft. Use for long-form
      reading where pure --ink can feel inky/cold. */
-  --ink-warm: #3d2e1c;
-  --rule: #e0d4b8;
-  --rule-soft: #ece2c9;
-  --accent: #b8423a;
-  --accent-deep: #8b2e26;
-  --accent-soft: rgba(184, 66, 58, 0.18);
-  --link: #1f5b8a;
-  --focus-ring: 0 0 0 3px rgba(184, 66, 58, 0.35);
+  --ink-warm: #2e2a22;
+  --rule: #dcd6c9;
+  --rule-soft: #ebe6da;
+  --accent: #bb3a2c;
+  --accent-deep: #902a20;
+  --accent-soft: rgba(187, 58, 44, 0.11);
+  --link: #3a6791;
+  --focus-ring: 0 0 0 3px rgba(187, 58, 44, 0.34);
 
-  /* Category accents — refined. Cuisines was a flat crayon blue; the new
-     value is more ink-respectful, keeps AA contrast on cream. Hubs was a
-     plummy purple; lifted to a less-saturated wine-mauve. */
-  --cat-recipes:     #b8423a;
-  --cat-ingredients: #3d7a40;
-  --cat-techniques:  #a55a1a;
-  --cat-cuisines:    #3d6a96;
-  --cat-equipment:   #5a4a3a;
-  --cat-hubs:        #7c4582;
+  /* Cohesive category spine: red is the one true accent (recipes). Every other
+     category is a low-saturation neutral nudged toward its intuitive hue —
+     cohesive as a family, still indicative of the content type. */
+  --cat-recipes:     #bb3a2c;  /* the accent */
+  --cat-ingredients: #5e7a4e;  /* sage — produce */
+  --cat-techniques:  #a8703a;  /* clay/amber — heat & method */
+  --cat-cuisines:    #566f86;  /* slate-blue — region/map */
+  --cat-equipment:   #7a6f5e;  /* warm graphite — tools */
+  --cat-hubs:        #8a6a86;  /* muted plum — curation */
   --cat-safety:      #7a3a3a;
 
   /* Per-category page-tint backgrounds. Used as a faint wash on hero blocks,
@@ -102,33 +104,33 @@
      value was crushed enough that bg-soft and bg looked identical on most
      panels and the eye lost depth-of-field. Now bg < bg-soft < bg-elev
      forms a real elevation ladder. */
-  --bg: #181208;
-  --bg-elev: #251c10;
-  --bg-soft: #1f1810;
-  --ink: #f1ead8;
-  --ink-soft: #c4b89b;
-  /* Lifted ink-faint from #8a7a60 — the light-mode value disappeared on dark
-     bg (~2.1:1). #a99878 hits ~3.4:1, still feels recessed but readable. */
-  --ink-faint: #a99878;
-  --ink-warm: #e0d6bf;
-  --rule: #322817;
-  --rule-soft: #281f10;
-  --accent: #d75c52;
-  --accent-deep: #b8423a;
-  /* Lifted from .22 → .28 for AA contrast on hover backgrounds against the
-     dark bg. .22 was too faint to read as a state change. */
-  --accent-soft: rgba(215, 92, 82, 0.28);
-  --link: #6db1e6;
-  --focus-ring: 0 0 0 3px rgba(215, 92, 82, 0.45);
+  --bg: #14130f;
+  --bg-elev: #1c1a16;
+  --bg-soft: #23211c;
+  --ink: #f0ede4;
+  --ink-soft: #c0bcb0;
+  /* ink-faint kept readable on the warm-charcoal base (~3.3:1) — recedes
+     without disappearing the way a darker value would. */
+  --ink-faint: #9a958a;
+  --ink-warm: #e8e3d8;
+  --rule: #322e27;
+  --rule-soft: #27241e;
+  --accent: #e3705f;
+  --accent-deep: #c65445;
+  /* Soft accent kept ~.15 for a legible hover-state wash on the dark base. */
+  --accent-soft: rgba(227, 112, 95, 0.16);
+  --link: #79abd6;
+  --focus-ring: 0 0 0 3px rgba(227, 112, 95, 0.42);
 
-  /* Category colors lifted for dark-mode contrast (light-mode values too dark) */
-  --cat-recipes:     #e07269;
-  --cat-ingredients: #6cb070;
-  --cat-techniques:  #d39154;
-  --cat-cuisines:    #76a8d4;
-  --cat-equipment:   #9c8a6e;
-  --cat-hubs:        #b585bb;
-  --cat-safety:      #c97474;
+  /* Cohesive category spine, lifted for dark-mode contrast on the warm
+     charcoal base — same muted family, brightened just enough to read. */
+  --cat-recipes:     #e3705f;
+  --cat-ingredients: #94b07e;
+  --cat-techniques:  #cf9b62;
+  --cat-cuisines:    #88a3bd;
+  --cat-equipment:   #aa9c86;
+  --cat-hubs:        #b596b1;
+  --cat-safety:      #d98a82;
 
   /* Page tints stronger on dark since the surface absorbs more */
   --cat-recipes-bg:     rgba(215, 92, 82, 0.08);
@@ -2232,8 +2234,8 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   flex: 1;
 }
 .family-card-eyebrow {
-  font-family: var(--font-mono); font-size: 9px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .18em;
+  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600;
+  text-transform: uppercase; letter-spacing: .16em;
   color: var(--ink-faint);
   margin-bottom: .4rem;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
@@ -2253,7 +2255,7 @@ body[data-cooks-view="on"] .bottom-nav { display: none !important; }
   margin: 0 0 .75rem; flex: 1;
 }
 .family-card-count {
-  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600;
   text-transform: uppercase; letter-spacing: .12em;
   color: var(--ink-faint);
   align-self: flex-start;
