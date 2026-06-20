@@ -1,0 +1,43 @@
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Rainbow trout'
+desc: 'Freshwater salmonid (Oncorhynchus mykiss) with fine-grained, pinkish-white flesh and moderate fat that sits between lean white fish and salmon. The pliable thin-boned structure that defines amandine, meunière, and pan-seared trout across French, Creole, and American kitchens.'
+metaDesc: 'Rainbow trout: species, fat profile, heat behavior, the soft pin-bone structure, sourcing whole vs fillet, storage failure modes, and substitutions by use case across pan-fry, grill, and smoke.'
+tags: ['fish', 'seafood']
+updated: '2026-06-20'
+
+grams_per_unit: 140
+
+about: |
+  Rainbow trout is Oncorhynchus mykiss, a salmonid native to the cold rivers and lakes of western North America and now farmed on every continent. Because it shares the genus and the family (Salmonidae) with Pacific salmon, it behaves on the plate like a small, lean salmon rather than like a true white fish such as cod or sole. The anadromous form of the same species, which runs to sea and returns larger and silver, is sold as steelhead; nearly all rainbow trout in US markets is farmed in freshwater raceways or ponds, harvested at 250 to 500 g whole, and sold as a pair of boneless butterflied fillets or as a cleaned whole fish.
+
+  The flesh is fine-grained, tender, and ranges from pale ivory to a soft coral pink. That color is dietary, not structural: farmed trout fed a carotenoid-supplemented ration (astaxanthin, the same pigment that pinks salmon and shrimp) deposit the pigment in muscle and read pink, while trout on a plain ration read nearly white. Fat content is moderate, roughly 6 to 8% by weight, sitting between a lean white fish (1 to 2%) and a fatty salmon or mackerel (12 to 18%). That mid-range lipid load is the single fact that drives technique: there is enough intramuscular and subcutaneous fat to keep the flesh moist through a hard pan-fry and to crisp the skin, but not so much that the fish reads oily or needs the acid-and-aromatic counterweight that mackerel demands. The dark lateral muscle band is thin and mild compared to an oily pelagic fish.
+
+  The skeletal structure is the other defining trait. Rainbow trout has a soft, pliable rib cage and a row of fine intramuscular pin bones that are thin enough to eat through in a small fish or to strip out in seconds with the back of a knife and the spine. This is why trout is the canonical fish to butterfly, bone, and eat off the spine at the table: a cooked whole trout opens flat along the backbone, the skeleton lifts away in one piece, and the two fillets stay intact. The thin profile (a butterflied fillet runs 1 to 2 cm at the thickest) is also why trout cooks fast and is forgiving of a flour dredge and high heat.
+
+  Behavior under heat. Trout is delicate and fast-cooking. A floured fillet pan-fried skin-side or flesh-side down in hot fat sets a golden crust in 2 to 3 minutes per side; the skin, given enough heat and a dry surface, crisps to a brittle sheet because the moderate subcutaneous fat renders into it. The flesh transitions from translucent to opaque and flaky as the short-fibered muscle blocks gelatinize their connecting collagen, which happens at a lower temperature than in red meat. The target internal temperature is roughly 52 to 54°C at the thickest point, where the flesh is just set, still glossy, and pulls into moist flakes; past 60°C it dries, the muscle blocks separate too aggressively, and the surface goes chalky. Because the fillet is thin, the window between set and overdone is short, so trout is pulled the moment the flesh turns opaque at the center.
+
+  Cooking applications by category. The two dominant registers are the dredge-and-pan-fry of the French and Creole canon and the live-fire and smoke of the American tradition. In the French line, trout dredged in seasoned flour and shallow-fried in butter is meunière; finished with toasted sliced almonds in a brown-butter sauce it becomes truite amandine, the dish that traveled to New Orleans and acquired a Creole accent of Worcestershire and cayenne. In the American line, whole trout is grilled or pan-seared streamside and at the table, stuffed with lemon and herbs and grilled over coals, or hot-smoked into the flaked trout used in dips, salads, and brandade-style spreads. Across both, the moderate fat is the through-line: it crisps a skin, browns a flour crust, and survives a smoke without drying, while staying mild enough to carry a butter sauce rather than fight it.
+
+  Sourcing notes. Most US rainbow trout is farmed, sold either as a cleaned whole fish or as boneless butterflied fillets, fresh on ice or frozen. At a fishmonger or an Asian market such as H Mart, whole trout should have clear, bright, slightly bulging eyes (cloudy or sunken means past peak), bright red gills, tight bright scales, firm flesh that springs back from a finger press, no slime beyond a thin natural sheen, and a clean cucumber-and-lake smell with no muddy or ammonia note. Fillets should show moist, translucent-to-pink flesh with no gaping between the muscle blocks, intact silver skin, and no browning at the cut edges. Farmed trout from a well-run operation has very little of the muddy "off" flavor that plagues some pond-raised freshwater fish, which lives in the skin and the dark lateral line and can be trimmed if present.
+
+  The common Western drift. Trout is often treated as interchangeable with salmon because the two share genus, color, and a flake; for a butter-dredge pan-fry the swap loses the point. A salmon fillet is thicker and fattier, so it does not take the thin crisp flour crust the same way and it overwhelms a delicate brown-butter-and-almond sauce that was built around the leaner, more neutral trout. When a recipe calls for trout in a meunière or amandine register, the right substitutes are other lean-to-moderate, fine-fleshed fish (Arctic char, Dover sole, branzino, catfish in a Creole context), not a fatty fillet.
+
+storage: |
+  Whole fresh trout or fresh fillets, on ice in the refrigerator: 1 to 2 days, with strong preference for cooking the day of purchase. Set the fish on a wire rack inside a rimmed pan, covered with crushed ice in a bag so the meltwater drips below the rack, in the coldest part of the refrigerator; never let fish sit in pooled meltwater, which accelerates bacterial surface load and waterlogs the flesh. Frozen fillets, vacuum-packed: 3 months at peak quality, thawed overnight in the refrigerator in the bag. Failure modes: a muddy or "off" earthy smell that is mild raw and intensifies on cooking (geosmin in the skin and dark lateral line of some pond-raised fish, trim the skin and dark band before cooking); any sour or ammonia note (microbial breakdown, discard, do not cook); flesh that has gone soft, gray, and gaping with visible separation between the muscle blocks (past peak, the texture will be mushy and the flavor flat); a dull, tacky, gummy slime on the skin instead of a thin clear sheen (bacterial surface load, surface-rinse and cook immediately or discard).
+
+substitutions:
+  - for: 'trout (amandine / meunière pan-fry)'
+    use: 'Arctic char, Dover sole, branzino fillets, or catfish'
+    note: 'For the flour-dredge, butter-fry register, match the lean-to-moderate fat and fine flake. Arctic char is the closest by flesh and fat (a salmonid like trout, slightly richer). Dover sole is the classic meunière fish and the most refined swap. Branzino fillets pan-fry cleanly. Catfish is the right move in a Creole context, where trout amandine and fried catfish share a kitchen. Skip salmon: too thick and fatty for the thin crust and the delicate sauce.'
+  - for: 'trout (grilled whole)'
+    use: 'whole branzino, small mackerel, or porgy'
+    note: 'For a whole fish cooked over fire and eaten off the spine, match the small size and soft bone structure. Branzino is the cleanest swap. A small mackerel works for a cook who wants a richer, oilier result and is willing to add an acid counter. Porgy grills well at the same size. Cook time tracks thickness, not species.'
+  - for: 'trout (smoked)'
+    use: 'smoked Arctic char, smoked salmon (hot-smoked), or smoked mackerel'
+    note: 'For hot-smoked flaked trout in dips and spreads, smoked Arctic char is nearly identical. Hot-smoked salmon flakes the same way and reads slightly richer. Smoked mackerel is the boldest substitute and pushes the spread toward the British smoked-fish-pâté register. Avoid cold-smoked (lox-style) salmon, which is cured and sliced rather than flaked and behaves differently in a dip.'
+---
