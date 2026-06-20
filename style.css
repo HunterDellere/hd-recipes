@@ -1064,6 +1064,38 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   vertical-align: text-top;
 }
 .step-tech:hover { background: rgba(165,90,26,.10); text-decoration: none; }
+
+/* Substitution hints — the build wraps the first mention of a substitutable
+   ingredient in step prose as <span class="sub-hint" data-sub-*>. These shipped
+   with no styling (invisible affordance). Mark them with a dotted underline in
+   the ingredients hue, and surface the swap on hover/focus via a CSS tooltip
+   built from the data attributes — no JS, keyboard-reachable (tabindex is set
+   in the markup). */
+.sub-hint {
+  position: relative;
+  border-bottom: 1px dotted var(--cat-ingredients);
+  cursor: help;
+  transition: color var(--d-fast), background var(--d-fast);
+  border-radius: 2px;
+}
+.sub-hint:hover, .sub-hint:focus-visible {
+  color: var(--cat-ingredients);
+  background: color-mix(in oklab, var(--cat-ingredients) 12%, transparent);
+  outline: none;
+}
+.sub-hint::after {
+  content: 'swap: ' attr(data-sub-use);
+  position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 30;
+  width: max-content; max-width: 280px;
+  font-family: var(--font-sans); font-size: var(--t-meta); font-weight: 400;
+  line-height: 1.4; color: var(--ink); text-align: left; white-space: normal;
+  background: var(--bg-elev); border: 1px solid var(--rule);
+  border-radius: var(--r-2); padding: .55rem .7rem; box-shadow: var(--shadow-lg);
+  opacity: 0; transform: translateY(4px); pointer-events: none;
+  transition: opacity var(--d-fast) var(--ease-out), transform var(--d-fast) var(--ease-out);
+}
+.sub-hint:hover::after, .sub-hint:focus-visible::after { opacity: 1; transform: translateY(0); }
+@media print { .sub-hint { border-bottom: none; } .sub-hint::after { display: none; } }
 .step-time {
   display: inline-block;
   margin-left: .75em;
@@ -2838,6 +2870,57 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 .ec-cat-row { display: inline-flex; align-items: center; gap: .35rem; }
 .ec-hub-icon { color: var(--cat-hubs); display: inline-flex; }
 .ec-hub-icon svg { display: block; }
+
+/* ── Explore-card body (build/lib/cards.mjs renderCardBody) ───────────────
+   The browse pages (Cook/Learn/Pantry/Traverse) use a richer card shape than
+   the homepage variant above: a color/photo swatch band, a .ec-body content
+   block, and a row of .ec-stat-pill facts. These shipped without CSS — the
+   swatch was invisible and the pills were raw inline text. Style them to the
+   same crisp-paper card language. The swatch breaks out of .entry-card padding
+   to read as a full-bleed header band; .ec-body restores the inner padding. */
+.entry-card:has(.ec-swatch) { padding: 0; gap: 0; }
+.ec-swatch {
+  display: block; height: 6px; width: 100%;
+  background: var(--bg-soft);
+  position: relative; overflow: hidden;
+}
+/* Color band keyed off the card's category (the deterministic swatch index is
+   decorative; the category drives the meaningful color). */
+.entry-card[data-category="recipes"]     .ec-swatch { background: color-mix(in oklab, var(--cat-recipes) 24%, var(--bg-soft)); }
+.entry-card[data-category="ingredients"] .ec-swatch { background: color-mix(in oklab, var(--cat-ingredients) 24%, var(--bg-soft)); }
+.entry-card[data-category="techniques"]  .ec-swatch { background: color-mix(in oklab, var(--cat-techniques) 24%, var(--bg-soft)); }
+.entry-card[data-category="cuisines"]    .ec-swatch { background: color-mix(in oklab, var(--cat-cuisines) 24%, var(--bg-soft)); }
+.entry-card[data-category="equipment"]   .ec-swatch { background: color-mix(in oklab, var(--cat-equipment) 24%, var(--bg-soft)); }
+.entry-card[data-category="hubs"]        .ec-swatch { background: color-mix(in oklab, var(--cat-hubs) 24%, var(--bg-soft)); }
+.ec-swatch-photo { height: 96px; background-size: cover; background-position: center; }
+/* When the swatch is present the top accent line is redundant with the band. */
+.entry-card:has(.ec-swatch)::before { display: none; }
+.ec-body {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .8rem 1rem .85rem;
+  flex: 1; min-width: 0;
+}
+.ec-stat-row {
+  display: flex; flex-wrap: wrap; gap: .35rem;
+  margin-top: auto; padding-top: .5rem;
+}
+.ec-stat-pill {
+  font-family: var(--font-sans); font-size: var(--t-tiny); font-weight: 500;
+  color: var(--ink-soft); background: var(--bg-soft);
+  border: 1px solid var(--rule-soft); border-radius: var(--r-pill);
+  padding: 2px 9px; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-variant-numeric: tabular-nums;
+}
+.ec-stat-cuisine { color: var(--cat-cuisines); border-color: color-mix(in oklab, var(--cat-cuisines) 30%, var(--rule-soft)); }
+.ec-stat-diff { text-transform: capitalize; }
+.ec-diff-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .7; }
+.ec-stat-diff.ec-d-easy   { color: #3a6e1a; }
+.ec-stat-diff.ec-d-medium { color: #8a5a10; }
+.ec-stat-diff.ec-d-hard   { color: var(--accent); }
+[data-theme="dark"] .ec-stat-diff.ec-d-easy   { color: #9fce82; }
+[data-theme="dark"] .ec-stat-diff.ec-d-medium { color: #e6c890; }
+[data-theme="dark"] .ec-stat-diff.ec-d-hard   { color: var(--accent); }
 .ec-mix {
   display: flex; flex-wrap: wrap; gap: .15rem .5rem;
   font-family: var(--font-sans); font-size: 12px;
