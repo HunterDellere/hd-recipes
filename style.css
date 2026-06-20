@@ -3591,6 +3591,36 @@ body.cmd-palette-open { overflow: hidden; }
   font-size: 0.75rem;
   color: var(--ink-faint);
 }
+/* Recipe preview: identity line (cuisine · diet · active+passive time), the
+   ingredient line (what's in it), and the techniques (what's distinctive) —
+   the info you can't get from the link itself. */
+.hcard-id {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .35rem;
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .02em;
+  text-transform: uppercase; color: var(--ink-faint);
+  margin-bottom: .45rem;
+}
+.hcard-sep { color: var(--rule); }
+.hcard-passive { text-transform: none; letter-spacing: 0; color: var(--ink-faint); }
+.hcard-ing {
+  display: flex; gap: .4rem; align-items: baseline;
+  font-size: .8rem; line-height: 1.45; color: var(--ink-soft);
+  margin-top: .5rem; padding-top: .5rem;
+  border-top: 1px solid var(--rule-soft);
+}
+.hcard-ing-icon { color: var(--cat-ingredients); flex-shrink: 0; }
+.hcard-more { color: var(--ink-faint); font-family: var(--font-mono); font-size: .72rem; }
+.hcard-tech {
+  display: flex; flex-wrap: wrap; gap: .3rem;
+  margin-top: .45rem;
+}
+.hcard-tech-item {
+  font-family: var(--font-mono); font-size: .66rem; font-weight: 500;
+  text-transform: lowercase; letter-spacing: .02em;
+  color: var(--cat-techniques);
+  background: color-mix(in oklab, var(--cat-techniques) 9%, transparent);
+  border-radius: 4px; padding: 1px 7px;
+}
 .hcard-diff-easy { color: #5a8a3a; }
 .hcard-diff-medium { color: #b88a2a; }
 .hcard-diff-hard { color: var(--accent); }
