@@ -2783,12 +2783,9 @@ body[data-cooks-view="on"] .step-item.step-done .step-num {
 .entry-card[data-category="cuisines"]::before    { background: var(--cat-cuisines); }
 .entry-card[data-category="equipment"]::before   { background: var(--cat-equipment); }
 .entry-card[data-category="hubs"]::before        { background: var(--cat-hubs); }
-.entry-card:hover {
-  transform: translateY(-1px);
-  border-color: var(--accent);
-  box-shadow: var(--shadow-md);
-  text-decoration: none;
-}
+/* lift + category-color border come from the unified hover block below;
+   here we only grow the category stripe and kill the underline. */
+.entry-card:hover { text-decoration: none; }
 .entry-card:hover::before { height: 4px; }
 
 .ec-cat {
@@ -3950,7 +3947,24 @@ body, .recipe-hero, .topic-hero, .home-hero, .home-section,
     border-color var(--d-base) var(--ease-out);
 }
 
-/* Card lift on hover — works for the major card families. */
+/* ── Unified hover language ───────────────────────────────────────────────
+   One consistent, useful, clean hover across every card/door/link-tile:
+   a small lift + shadow for depth, and the element's OWN category color
+   coming forward on the border + accent so the hover *tells you where you're
+   going*. Each surface exposes its category as --c so a single hover rule
+   serves them all. Clean, not bouncy; reduced-motion-safe below. */
+.entry-card[data-category="recipes"],     .family-card[data-family="cook"],
+.pair-card[data-category="recipes"],      .rl-card[data-category="recipes"]      { --c: var(--cat-recipes); }
+.entry-card[data-category="ingredients"], .family-card[data-family="pantry"],
+.pair-card[data-category="ingredients"],  .rl-card[data-category="ingredients"]  { --c: var(--cat-ingredients); }
+.entry-card[data-category="techniques"],  .family-card[data-family="learn"],
+.pair-card[data-category="techniques"],   .rl-card[data-category="techniques"]   { --c: var(--cat-techniques); }
+.entry-card[data-category="cuisines"],    .family-card[data-family="traverse"],
+.pair-card[data-category="cuisines"],     .rl-card[data-category="cuisines"]     { --c: var(--cat-cuisines); }
+.entry-card[data-category="equipment"],   .pair-card[data-category="equipment"], .rl-card[data-category="equipment"] { --c: var(--cat-equipment); }
+.entry-card[data-category="hubs"],        .pair-card[data-category="hubs"],      .rl-card[data-category="hubs"]      { --c: var(--cat-hubs); }
+.ff-card { --c: var(--cat-recipes); }
+
 .entry-card, .pair-card, .rl-card, .ff-card, .family-card, .hub-chip {
   transition:
     transform var(--d-fast) var(--ease-out),
@@ -3963,9 +3977,12 @@ body, .recipe-hero, .topic-hero, .home-hero, .home-section,
 .ff-card:hover, .family-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+  /* category color forward — the useful signal */
+  border-color: color-mix(in oklab, var(--c, var(--accent)) 55%, var(--rule));
 }
 .hub-chip:hover {
   transform: translateY(-1px);
+  border-color: var(--accent);
 }
 
 /* Subtle press-down on click — matches a tactile feel without going

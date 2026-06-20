@@ -154,9 +154,19 @@ body[data-page="home"]{
 .door{
   background: var(--bg-elev); padding: 1.5rem 1.7rem; position: relative;
   display: flex; flex-direction: column; gap: .65rem; color: var(--ink); overflow: hidden;
-  transition: background var(--d-base);
+  transition: background var(--d-base) var(--ease-out);
 }
-.door:hover{ background: var(--bg-soft); text-decoration: none; }
+/* The doors sit in a 1px-gap grid with overflow:hidden, so they can't lift out
+   of their cell. Instead the hover brings the category color forward inside the
+   cell — a faint wash, the spine, and the title shifting to --c — so the hover
+   reads as "you're about to enter <this family>". Consistent with the sitewide
+   card hover language; clean, no motion that clips. */
+.door:hover{
+  background: color-mix(in oklab, var(--c) 7%, var(--bg-elev));
+  text-decoration: none;
+}
+.door-h{ transition: color var(--d-fast) var(--ease-out); }
+.door:hover .door-h{ color: var(--c); }
 .door-big{ grid-row: span 3; justify-content: flex-start; }
 .door-top{ display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
 .door-num{ font-family: var(--font-mono); font-size: var(--t-tiny); font-weight: 600; color: var(--ink-faint); letter-spacing: .1em; }
