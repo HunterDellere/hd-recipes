@@ -1,5 +1,911 @@
 [
   {
+    "path": "pages/recipes/brioche.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Brioche",
+    "desc": "A rich French enriched loaf built at roughly 55% butter to flour (baker's percent), 5 whole eggs, and cold milk, mixed in the strict order that makes brioche work: develop the gluten on flour, eggs, milk, and yeast first, then beat in cold butter cube by cube so the fat coats hydrated strands rather than coating dry flour. A long overnight cold proof firms the butter, slows the yeast to a clean ferment, and makes the slack dough handleable. Baked in a Pullman or fluted mold to a tender, tearable, pull-apart crumb under a deep mahogany crust.",
+    "tags": [
+      "bread",
+      "baked",
+      "weekend-project",
+      "make-ahead",
+      "egg",
+      "sweet",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "brioche",
+    "cuisine": "French",
+    "course": "bread",
+    "difficulty": "hard",
+    "servings": 12,
+    "time": {
+      "prep_min": 35,
+      "cook_min": 40,
+      "total_min": 1095,
+      "active_min": 50
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "whole eggs, cold",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "whole milk, cold",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, cold but pliable",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "whole egg, for egg wash",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "flaky salt, optional for the crust",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "maillard-sear"
+    ],
+    "equipment": [
+      "stand-mixer-with-dough-hook",
+      "pullman-loaf-pan",
+      "instant-read-thermometer",
+      "wire-rack-and-sheet-pan"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 13,
+      "swatchGlyph": "olive",
+      "totalMinutes": 1095,
+      "diffLabel": "hard",
+      "timeLead": "50 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
+    "path": "pages/recipes/challah.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Challah",
+    "desc": "The Ashkenazi braided egg bread, built oil-based and dairy-free (pareve) rather than on butter, sweetened with honey, and hydrated by whole eggs plus yolks for color and a tender, feathery pull. A neutral oil enrichment at roughly 12% of the flour weight keeps the dough firm enough to braid cleanly into a six-strand loaf, where butter would slacken it. Two egg-wash coats lay down the lacquer-deep mahogany sheen that defines the loaf, baked to a soft, custard-tinted crumb that tears in long strands and toasts into the best French toast there is.",
+    "tags": [
+      "bread",
+      "baked",
+      "weekend-project",
+      "egg",
+      "sweet",
+      "comfort",
+      "holiday"
+    ],
+    "status": "complete",
+    "_slug": "challah",
+    "cuisine": "Jewish",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 35,
+      "total_min": 240,
+      "active_min": 45
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "warm water, 38°C",
+        "optional": false
+      },
+      {
+        "item": "whole eggs, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "egg yolks, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (refined avocado, grapeseed, or a clean vegetable oil)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "egg yolk, for the wash",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "water, for the wash",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt, for the wash",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "sesame or poppy seeds, optional topping",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "enriched-dough"
+    ],
+    "equipment": [
+      "stand-mixer-with-dough-hook",
+      "instant-read-thermometer",
+      "wire-rack-and-sheet-pan"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 13,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 240,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "· 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/ciabatta.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ciabatta",
+    "desc": "A high-hydration (82%) Italian slipper loaf built on an overnight biga preferment, developed by no-knead stretch-and-fold in the tub rather than kneading, gently divided and shaped with floured hands so the gas stays in, and baked hot with steam to a thin shattering crust over a translucent open crumb of giant irregular holes. The biga does the flavor work: 12 to 16 hours of slow fermentation generates the organic acids and free glutamates that give a lean four-ingredient dough its depth, while the very wet final dough and minimal handling are what produce the wide-open alveoli that define the loaf.",
+    "tags": [
+      "bread",
+      "weekend-project",
+      "make-ahead",
+      "baked"
+    ],
+    "status": "complete",
+    "_slug": "ciabatta",
+    "cuisine": "Italian",
+    "course": "bread",
+    "difficulty": "hard",
+    "servings": 12,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 25,
+      "total_min": 1135,
+      "active_min": 45
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "water, cool (18 to 20 °C)",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "water, room temperature (24 to 26 °C)",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "semolina or bread flour, for dusting",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "stretch-and-fold"
+    ],
+    "equipment": [
+      "baking-steel",
+      "bench-knife",
+      "bowl-scraper",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 1135,
+      "diffLabel": "hard",
+      "timeLead": "45 min",
+      "timeAnnotation": "· 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/english-muffins.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "English muffins",
+    "desc": "A wet, slack milk-and-butter dough fermented to a batter-dough consistency, dropped into rings on a dry-skillet griddle dusted with semolina, and cooked low and slow on both flat faces until the interior sets into a cavernous open crumb. The nooks and crannies are not a finish, they are a structural consequence of high hydration plus the gentle stovetop heat that lets a loose dough hold its gas bubbles instead of collapsing or setting into a tight bread crumb. Split with a fork, never a knife, so the torn surface exposes the open cell walls that toast and trap butter.",
+    "tags": [
+      "bread",
+      "weekend-project",
+      "comfort",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "english-muffins",
+    "cuisine": "British",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 30,
+      "total_min": 170,
+      "active_min": 45
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "whole milk, warmed to 38 °C / 100 °F",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted and cooled to warm",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "semolina or coarse cornmeal",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, softened",
+        "slug": "butter",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "enriched-dough",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "heavy-cast-iron-skillet",
+      "instant-read-thermometer",
+      "wire-rack-and-sheet-pan"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 8,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 170,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "· 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/german-rye-sourdough-roggenmischbrot.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "German rye sourdough (Roggenmischbrot)",
+    "desc": "A 70% rye, 30% wheat mixed sourdough built on a three-stage rye sour. Rye carries almost no functional gluten, so structure comes from pentosan gums and the acid that keeps starch-degrading enzymes in check; the dough is a stiff paste rather than a kneadable mass, smeared into a loaf tin and proofed short, then baked dense, moist, and deeply sour with toasted caraway. This is the everyday bread of German bakeries, structurally and texturally a different object from a wheat country loaf.",
+    "tags": [
+      "bread",
+      "fermentation",
+      "fermented",
+      "pantry",
+      "weekend-project",
+      "comfort",
+      "vegetarian",
+      "vegan"
+    ],
+    "status": "complete",
+    "_slug": "german-rye-sourdough-roggenmischbrot",
+    "cuisine": "German",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 18,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 60,
+      "total_min": 1320,
+      "active_min": 45
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "mature rye starter (active, fed within last 12 hours)",
+        "optional": false
+      },
+      {
+        "item": "whole rye flour",
+        "slug": "rye-flour",
+        "optional": false
+      },
+      {
+        "item": "water (warm, about 26°C / 79°F)",
+        "optional": false
+      },
+      {
+        "item": "whole rye flour",
+        "slug": "rye-flour",
+        "optional": false
+      },
+      {
+        "item": "water (warm, about 28°C / 82°F)",
+        "optional": false
+      },
+      {
+        "item": "whole rye flour",
+        "slug": "rye-flour",
+        "optional": false
+      },
+      {
+        "item": "water (warm, about 30°C / 86°F)",
+        "optional": false
+      },
+      {
+        "item": "mature rye sour (all of phases 1 to 3; reserve 10 g first to seed your next bake)",
+        "optional": false
+      },
+      {
+        "item": "whole rye flour",
+        "slug": "rye-flour",
+        "optional": false
+      },
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "water (warm, about 35°C / 95°F)",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "caraway seed, toasted and lightly cracked",
+        "slug": "caraway-seed",
+        "optional": false
+      },
+      {
+        "item": "barley malt syrup or dark molasses",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for the tin)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "whole rye flour (for dusting the top)",
+        "slug": "rye-flour",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "rye-sour",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "large mixing bowl",
+      "stiff wooden spoon or Danish dough whisk",
+      "900 g / 2 lb loaf tin",
+      "flexible spatula",
+      "instant-read thermometer",
+      "cast-iron skillet or metal tray for steam",
+      "wire rack for cooling"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 1320,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "· 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/gravlax.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Gravlax",
+    "desc": "A side of raw salmon buried in a dry cure of salt, sugar, crushed white pepper, and a heavy blanket of dill, optionally laced with aquavit, then weighted and turned over 48 to 72 hours until the flesh firms to a translucent, sliceable density. The cure is osmotic, not thermal: salt and sugar draw water out of the muscle and drive their own ions in, lowering water activity until the fish is preserved and the texture shifts from soft and wet to dense and silky. No smoke, no heat. Sliced paper-thin on the bias and served with a sweet-sharp mustard-dill sauce (hovmästarsås) over dark rye.",
+    "tags": [
+      "salmon",
+      "fish",
+      "cured",
+      "no-cook",
+      "make-ahead",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "gravlax",
+    "cuisine": "Nordic",
+    "course": "appetizer",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 0,
+      "total_min": 3025,
+      "active_min": 30
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "skin-on salmon fillet, center-cut side, pin bones removed",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "white peppercorns, coarsely crushed",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "fresh dill, with stems",
+        "slug": "dill",
+        "optional": false
+      },
+      {
+        "item": "aquavit (or vodka)",
+        "optional": true
+      },
+      {
+        "item": "lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "whole-grain mustard",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "white wine vinegar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (grapeseed or refined sunflower)",
+        "optional": false
+      },
+      {
+        "item": "fresh dill, finely chopped",
+        "slug": "dill",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "dark rye bread or crispbread",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "slug": "lemon",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining",
+      "curing",
+      "emulsion"
+    ],
+    "equipment": [
+      "glass-baking-dish",
+      "fish-tweezers",
+      "long-slicing-knife",
+      "mortar-and-pestle"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 2,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 3025,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "· 2 d rest",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/grilled-sardines-with-lemon-and-oregano.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Grilled sardines with lemon and oregano",
+    "desc": "Whole fresh sardines, scaled and gutted, salted and grilled over fierce direct heat until the skin blisters and chars and the flesh sets just to the bone, then finished with a warm salmoriglio of olive oil, lemon, garlic, and oregano. The logic is the oily-fish triangle: a fish dense in omega-3 and unsaturated fat takes hard char without drying, and the smoke and the acid both cut the richness that would otherwise read fishy. Twelve minutes of cooking, eaten with fingers, the most direct expression of Mediterranean coastal fish there is.",
+    "tags": [
+      "fish",
+      "grill",
+      "quick",
+      "weeknight",
+      "herbaceous",
+      "smoky",
+      "citrus"
+    ],
+    "status": "complete",
+    "_slug": "grilled-sardines-with-lemon-and-oregano",
+    "cuisine": "Mediterranean",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 8,
+      "total_min": 18,
+      "active_min": 16
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "pescatarian",
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "whole fresh sardines",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "lemon",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "dried oregano",
+        "slug": "dried-oregano",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": true
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining",
+      "fish-skin-scoring",
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [
+      "grill",
+      "fish-spatula",
+      "microplane",
+      "whisk",
+      "tongs"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 8,
+      "swatchGlyph": "olive",
+      "totalMinutes": 18,
+      "diffLabel": "easy",
+      "timeLead": "18 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 16,
+      "filterMinutes": 16
+    }
+  },
+  {
+    "path": "pages/recipes/milk-bread-shokupan.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Milk bread (shokupan)",
+    "desc": "Japanese tangzhong milk bread baked in a Pullman tin. A small portion of the flour is pre-cooked with milk into a thick paste (the water roux), which gelatinizes the starch ahead of mixing so the crumb holds far more water without going wet. The result is the pillowy, feather-soft, faintly sweet pain de mie loaf that defines Japanese bakery shokupan: a fine even crumb, a thin pale crust, and a shelf life measured in days rather than hours.",
+    "tags": [
+      "bread",
+      "baked",
+      "japanese",
+      "weekend-project",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "milk-bread-shokupan",
+    "cuisine": "Japanese",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 35,
+      "cook_min": 35,
+      "total_min": 230,
+      "active_min": 45
+    },
+    "updated": "2026-06-21",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "whole milk, room temperature",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "egg, lightly beaten",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, room temperature",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "whole milk, for the glaze",
+        "slug": "whole-milk",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "gluten-development",
+      "bulk-fermentation",
+      "loaf-shaping",
+      "enriched-bread-bake"
+    ],
+    "equipment": [
+      "stand-mixer",
+      "pullman-loaf-pan",
+      "instant-read-thermometer",
+      "wire-rack-and-sheet-pan"
+    ],
+    "added": "2026-06-21",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 230,
+      "diffLabel": "medium",
+      "timeLead": "45 min",
+      "timeAnnotation": "· 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
     "path": "pages/recipes/crispy-skin-black-sea-bass-beurre-blanc.html",
     "type": "recipe",
     "category": "recipes",
@@ -1788,866 +2694,6 @@
       "primaryTag": null,
       "usedInCount": 1,
       "hasNutrition": false
-    }
-  },
-  {
-    "path": "pages/recipes/acid-forward-green-salad-with-sharp-vinaigrette.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Acid-forward green salad with sharp vinaigrette",
-    "desc": "A simple bowl of crisp greens dressed in a deliberately sharp shallot-dijon-red-wine vinaigrette emulsified to cling, built to cut richness rather than to be a meal. The vinaigrette runs a higher acid-to-oil ratio than the textbook 3:1 (closer to 2:1) because its job is to reset the palate between bites of seared fish or buttered vegetables, not to coat the leaves in fat. Shallot macerated in the vinegar softens its bite and seasons the whole dressing; dijon emulsifies and adds tang.",
-    "tags": [
-      "salad",
-      "side",
-      "quick",
-      "no-cook",
-      "weeknight",
-      "vegan"
-    ],
-    "status": "complete",
-    "_slug": "acid-forward-green-salad-with-sharp-vinaigrette",
-    "cuisine": "French",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 0,
-      "total_min": 10,
-      "active_min": 10
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "vegetarian",
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "shallot, fine-minced",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "red wine vinegar",
-        "slug": "red-wine-vinegar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "dijon mustard",
-        "slug": "dijon-mustard",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "crisp mixed greens (romaine, butter lettuce, frisée, or arugula)",
-        "optional": false
-      },
-      {
-        "item": "fresh herbs (parsley, chives, tarragon, or dill), torn",
-        "slug": "parsley",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "vinaigrette-emulsion"
-    ],
-    "equipment": [
-      "salad-spinner",
-      "whisk",
-      "mixing-bowl"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 13,
-      "swatchGlyph": "olive",
-      "totalMinutes": 10,
-      "diffLabel": "easy",
-      "timeLead": "10 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
-    }
-  },
-  {
-    "path": "pages/recipes/charred-broccoli-with-garlic-anchovy-crunch.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Charred broccoli with garlic-anchovy crunch",
-    "desc": "Broccoli seared hard in a dry pan until the florets catch deep char, steam-finished briefly under a lid, then dressed with a crumb of panko fried in olive oil with sliced garlic, anchovy, and chili. The broccoli supplies sweet-bitter brassica char; the crumb supplies the savory, crunchy, glutamate-heavy counterpoint that turns a plain green vegetable into a side with structure. The whole dish runs on dry heat: no boiling, no steaming until the very end, so the broccoli browns instead of going gray and sulfurous.",
-    "tags": [
-      "side",
-      "quick",
-      "weeknight",
-      "umami",
-      "seafood"
-    ],
-    "status": "complete",
-    "_slug": "charred-broccoli-with-garlic-anchovy-crunch",
-    "cuisine": "Italian",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 15,
-      "total_min": 25,
-      "active_min": 18
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "pescatarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "garlic, sliced thin",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "anchovy fillets in oil",
-        "slug": "anchovy-fillets",
-        "optional": false
-      },
-      {
-        "item": "panko breadcrumbs",
-        "slug": "panko",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "broccoli",
-        "slug": "broccoli",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (high smoke point)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "water, for the steam-finish",
-        "optional": false
-      },
-      {
-        "item": "lemon",
-        "slug": "lemon",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "garlic-crunch",
-      "maillard-sear",
-      "vapor-steaming"
-    ],
-    "equipment": [
-      "heavy-skillet",
-      "tight-lid"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 3,
-      "swatchGlyph": "olive",
-      "totalMinutes": 25,
-      "diffLabel": "easy",
-      "timeLead": "25 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 18,
-      "filterMinutes": 18
-    }
-  },
-  {
-    "path": "pages/recipes/chermoula-grilled-tuna-steak.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chermoula grilled tuna steak",
-    "desc": "A regular fish-counter tuna steak marinated briefly in chermoula, the North African herb-and-spice paste of cilantro, garlic, cumin, coriander, paprika, and lemon, then grilled hard and finished cooked-through. The paste does double duty: a short marinade seasons and lightly cures the surface, and a second spoonful of raw chermoula stirred into oil dresses the fish off the grill. No sashimi grade needed, the tuna is cooked to a moist medium and the bright, garlicky, cumin-warm paste keeps the lean flesh from reading dry.",
-    "tags": [
-      "fish",
-      "seafood",
-      "grill",
-      "quick",
-      "weeknight",
-      "herbaceous"
-    ],
-    "status": "complete",
-    "_slug": "chermoula-grilled-tuna-steak",
-    "cuisine": "Moroccan",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 8,
-      "total_min": 53,
-      "active_min": 20
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "pescatarian",
-      "dairy-free",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh cilantro",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley",
-        "slug": "parsley",
-        "optional": false
-      },
-      {
-        "item": "garlic",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "ground coriander",
-        "slug": "ground-coriander",
-        "optional": false
-      },
-      {
-        "item": "sweet (Hungarian) paprika",
-        "slug": "hungarian-paprika",
-        "optional": false
-      },
-      {
-        "item": "smoked paprika",
-        "slug": "smoked-paprika",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "lemon",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "yellowfin tuna steaks",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "lemon, in wedges",
-        "slug": "lemon",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "mortar-pounding",
-      "maillard-sear"
-    ],
-    "equipment": [
-      "grill",
-      "mortar-and-pestle",
-      "tongs"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "tagine",
-      "totalMinutes": 53,
-      "diffLabel": "easy",
-      "timeLead": "53 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/ginger-scallion-seared-tuna.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ginger-scallion seared tuna",
-    "desc": "Sashimi-grade tuna seared bare and fast, sliced across the grain, and finished Cantonese-style with a fresh ginger-scallion relish bloomed by smoking-hot oil poured over it at the table. The technique is borrowed wholesale from steamed Cantonese fish: raw minced ginger and scallion sit on the fish, and a ladle of smoking neutral oil hits them to release their aromatics in a sizzle, the gentlest, cleanest way to dress a delicate protein. Here it lands on seared-rare tuna, with a light soy drizzle underneath.",
-    "tags": [
-      "fish",
-      "seafood",
-      "quick",
-      "weeknight",
-      "cantonese",
-      "chinese",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "ginger-scallion-seared-tuna",
-    "cuisine": "Chinese",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 12,
-      "cook_min": 4,
-      "total_min": 16,
-      "active_min": 12
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "pescatarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh ginger, fine-minced",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "scallion, fine-minced",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "rock sugar or granulated sugar",
-        "slug": "rock-sugar",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": true
-      },
-      {
-        "item": "sashimi-grade tuna loin, in two blocks",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (for the sear)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "fresh cilantro leaves",
-        "slug": "cilantro",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "blooming-aromatics",
-      "maillard-sear",
-      "hot-oil-finish"
-    ],
-    "equipment": [
-      "heavy-cast-iron-skillet",
-      "small-saucepan",
-      "tongs"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 6,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 16,
-      "diffLabel": "medium",
-      "timeLead": "16 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 12,
-      "filterMinutes": 12
-    }
-  },
-  {
-    "path": "pages/recipes/gochujang-glazed-seared-tuna.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Gochujang-glazed seared tuna",
-    "desc": "Sashimi-grade tuna blocks brushed with a thin gochujang glaze cut with rice vinegar and honey, seared fast and hot so the sugars in the glaze lacquer and lightly char while the center stays cool and ruby, then sliced and finished with toasted sesame and scallion. The Korean sweet-spicy-fermented register applied with restraint: the glaze is a thin coat that caramelizes on the surface, not a braising sauce, so the fish reads bright and clean rather than heavy.",
-    "tags": [
-      "fish",
-      "seafood",
-      "quick",
-      "weeknight",
-      "korean",
-      "spicy",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "gochujang-glazed-seared-tuna",
-    "cuisine": "Korean",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 12,
-      "cook_min": 3,
-      "total_min": 15,
-      "active_min": 12
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "pescatarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "gochujang",
-        "slug": "gochujang",
-        "optional": false
-      },
-      {
-        "item": "rice vinegar",
-        "slug": "rice-vinegar",
-        "optional": false
-      },
-      {
-        "item": "honey",
-        "slug": "honey",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "garlic, grated to a paste",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "sashimi-grade tuna loin, in two blocks",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "white sesame seeds, toasted",
-        "slug": "sesame-seeds",
-        "optional": false
-      },
-      {
-        "item": "scallion, sliced thin on the bias",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "gochugaru (Korean chili flakes)",
-        "slug": "gochugaru",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "maillard-sear"
-    ],
-    "equipment": [
-      "heavy-cast-iron-skillet",
-      "tongs",
-      "microplane",
-      "pastry-brush"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 15,
-      "diffLabel": "medium",
-      "timeLead": "15 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 12,
-      "filterMinutes": 12
-    }
-  },
-  {
-    "path": "pages/recipes/hard-roasted-cauliflower-with-lemon-and-chili.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Hard-roasted cauliflower with lemon and chili",
-    "desc": "Cauliflower florets tossed in oil and roasted on a preheated sheet pan at 230 °C until the cut faces build a deep brown Maillard crust and the loose bits char to crisp, then finished hot off the pan with lemon zest and juice, chili flakes, and a shower of parsley. The dish is a single sweet-nutty-bitter-bright chord: the high dry heat caramelizes the brassica sugars and shuts down the sulfurous off-notes that plague boiled cauliflower, and the lemon-and-chili finish keeps the richness sharp.",
-    "tags": [
-      "roast",
-      "vegetarian",
-      "vegan",
-      "side",
-      "quick",
-      "weeknight"
-    ],
-    "status": "complete",
-    "_slug": "hard-roasted-cauliflower-with-lemon-and-chili",
-    "cuisine": "Mediterranean",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 28,
-      "total_min": 38,
-      "active_min": 12
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "vegetarian",
-      "vegan",
-      "gluten-free",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "cauliflower",
-        "slug": "cauliflower",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "lemon",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "red pepper flakes",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "garlic, grated to a paste",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil (for the finish)",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley, chopped",
-        "slug": "parsley",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear"
-    ],
-    "equipment": [
-      "rimmed-sheet-pan",
-      "microplane"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 8,
-      "swatchGlyph": "olive",
-      "totalMinutes": 38,
-      "diffLabel": "easy",
-      "timeLead": "38 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 12,
-      "filterMinutes": 12
-    }
-  },
-  {
-    "path": "pages/recipes/seared-cremini-and-white-mushrooms-with-garlic-and-thyme.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Seared cremini and white mushrooms with garlic and thyme",
-    "desc": "Cremini or white button mushrooms dry-seared in a hot uncrowded pan until their water boils off and the cut faces brown deep, then finished with butter, smashed garlic, thyme, and a splash of soy and lemon. The whole cook is one discipline: drive the water out before adding fat, so the mushrooms brown and turn meaty instead of stewing pale and rubbery. The soy adds glutamate that compounds the mushrooms own savory depth, and the lemon keeps the butter from reading flat.",
-    "tags": [
-      "side",
-      "quick",
-      "weeknight",
-      "umami",
-      "vegetarian"
-    ],
-    "status": "complete",
-    "_slug": "seared-cremini-and-white-mushrooms-with-garlic-and-thyme",
-    "cuisine": "French",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 8,
-      "cook_min": 14,
-      "total_min": 22,
-      "active_min": 18
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "cremini or white button mushrooms",
-        "slug": "cremini-mushroom",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (high smoke point)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, smashed",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme",
-        "slug": "fresh-thyme",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "lemon",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley, chopped",
-        "slug": "parsley",
-        "optional": true
-      }
-    ],
-    "techniques": [
-      "maillard-sear"
-    ],
-    "equipment": [
-      "wide-skillet",
-      "wooden-spoon"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 13,
-      "swatchGlyph": "olive",
-      "totalMinutes": 22,
-      "diffLabel": "easy",
-      "timeLead": "22 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 18,
-      "filterMinutes": 18
-    }
-  },
-  {
-    "path": "pages/recipes/sesame-crusted-seared-rare-tuna.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Sesame-crusted seared rare tuna",
-    "desc": "A thick block of sashimi-grade tuna pressed into a coat of toasted white and black sesame, then seared 30 to 45 seconds per face in a smoking-hot pan so the crust toasts and the interior stays cool, ruby, and translucent. Sliced across the grain and served with a soy-yuzu-ginger dipping sauce. The whole cook is a race against the clock: the window between a perfect rare center and a chalky overcooked one is measured in seconds, and the sesame coat is both a flavor layer and the visual signal that the surface is browning while the core is protected.",
-    "tags": [
-      "fish",
-      "seafood",
-      "quick",
-      "weeknight",
-      "japanese",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "sesame-crusted-seared-rare-tuna",
-    "cuisine": "Japanese",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 3,
-      "total_min": 18,
-      "active_min": 15
-    },
-    "updated": "2026-06-09",
-    "diet": [
-      "pescatarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "yuzu juice",
-        "slug": "yuzu",
-        "optional": false
-      },
-      {
-        "item": "mirin",
-        "slug": "mirin",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame oil",
-        "slug": "toasted-sesame-oil",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger, grated to a pulp",
-        "slug": "ginger",
-        "optional": false
-      },
-      {
-        "item": "scallion, sliced thin on the bias",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "sashimi-grade tuna loin, in two blocks",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "white sesame seeds",
-        "slug": "sesame-seeds",
-        "optional": false
-      },
-      {
-        "item": "black sesame seeds",
-        "slug": "sesame-seeds",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)",
-        "slug": "neutral-oil",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "maillard-sear"
-    ],
-    "equipment": [
-      "heavy-cast-iron-skillet",
-      "tongs",
-      "microplane"
-    ],
-    "added": "2026-06-09",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 18,
-      "diffLabel": "medium",
-      "timeLead": "18 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 15,
-      "filterMinutes": 15
     }
   }
 ]
