@@ -154,7 +154,7 @@ steps:
   - text: 'Pack the crust. Spread a 1 cm / ½-inch bed of the salt mixture on the parchment in the outline of the fish, and lay the stuffed branzino on top. Pack the remaining mixture firmly over and around the fish, mounding it about 1 cm / ½ inch thick everywhere and pressing it into a smooth, sealed dome; leave the tail fin poking out as a handle. Keep the shell on the thinner side here: a slim fish under a thick crust overshoots before the shell colors. Press out every gap, since a crack or thin spot vents the steam the method depends on.'
     time_min: 6
   - text: 'Bake the fish. Slide the sheet pan into the fully heated 220 C / 425 F oven and bake 20 to 26 minutes by size: about 20 minutes for a 500 g fish, 24 to 26 for a 550 to 600 g fish, adding 4 minutes per additional 100 g. The crust hardens, turns pale gold, and may craze with fine cracks. Inside the sealed shell the fish steams in its own moisture at a gentle, even heat, cooking edge to spine without the dry radiant blast of an open oven; this self-basting steam is the whole point of the salt crust, and on a fish this lean it is the difference between moist and cottony.'
-    technique: 'salt-crust-baking'
+    technique: 'salt-roasting'
     time_min: 24
   - text: 'Check doneness, then rest. Push a thin metal skewer or cake tester through the crust into the thickest part of the flesh behind the head and leave it 5 seconds; on withdrawal it should feel hot to the lip, or read 50 to 55 C / 122 to 131 F at the spine on an instant-read probe pushed through a small hole. Branzino is leaner and thinner than a sea bream and overshoots fast, so pull at the low end and let carryover finish it under the hot shell. Rest the fish in its crust 5 minutes out of the oven; the temperature evens and the flesh sets enough to lift clean.'
     time_min: 6
@@ -165,7 +165,7 @@ steps:
   - text: 'Lift, dress, and serve. Run a thin knife or spoon along the spine and lift the top fillet off the bones in clean pieces; lift the skeleton away by the tail to free the bottom fillet, peeling off the bottom skin. Spoon the warm salmoriglio generously over the flesh; the oregano-anchovy oil supplies the umami and the lemon supplies the acid that lifts the gently seasoned fish. Taste a piece: the crust seasons only the surface faintly, so add a pinch of flaky finishing salt at the plate only if a portion reads underseasoned.'
     time_min: 3
 
-techniques: ['salt-crust-baking']
+techniques: ['salt-roasting']
 equipment: ['sheet-pan', 'small-saucepan', 'instant-read-thermometer']
 
 modifications:
