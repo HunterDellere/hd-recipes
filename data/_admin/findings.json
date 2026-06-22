@@ -1,9 +1,9 @@
 {
-  "generated": "2026-06-20T15:00:31.385Z",
+  "generated": "2026-06-22T03:10:08.785Z",
   "summary": {
     "errors": 0,
-    "warnings": 369,
-    "info": 137
+    "warnings": 452,
+    "info": 150
   },
   "findings": [
     {
@@ -177,6 +177,20 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/blue-cheese-dressing.md",
+      "msg": "ingredient slug \"blue-cheese\" has no matching ingredient page",
+      "fix": "Create content/ingredients/blue-cheese.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/brandade-de-morue.md",
+      "msg": "technique \"low-temperature-poaching\" has no matching page",
+      "fix": "Create content/techniques/low-temperature-poaching.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/british-victoria-sponge.md",
       "msg": "technique \"creaming\" has no matching page",
       "fix": "Create content/techniques/creaming.md"
@@ -222,6 +236,20 @@
       "file": "content/recipes/cajun-crawfish-etouffee.md",
       "msg": "technique \"roux\" has no matching page",
       "fix": "Create content/techniques/roux.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cantonese-clay-pot-chicken-with-shiitake-and-taro.md",
+      "msg": "technique \"red-cooking\" has no matching page",
+      "fix": "Create content/techniques/red-cooking.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/cantonese-clay-pot-chicken-with-shiitake-and-taro.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
     },
     {
       "level": "WARN",
@@ -366,13 +394,6 @@
     {
       "level": "WARN",
       "category": "crosslinks",
-      "file": "content/recipes/chicken-zucchini-meatballs-with-yogurt-dill.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
       "file": "content/recipes/chiles-rellenos.md",
       "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
       "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
@@ -388,13 +409,6 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/chinese-lions-head-meatballs.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/chinese-lions-head-meatballs.md",
       "msg": "technique \"water-paddling\" has no matching page",
       "fix": "Create content/techniques/water-paddling.md"
     },
@@ -404,6 +418,20 @@
       "file": "content/recipes/chinese-lions-head-meatballs.md",
       "msg": "technique \"braising\" has no matching page",
       "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/chunky-blue-cheese-dressing.md",
+      "msg": "ingredient slug \"blue-cheese\" has no matching ingredient page",
+      "fix": "Create content/ingredients/blue-cheese.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ciabatta.md",
+      "msg": "technique \"stretch-and-fold\" has no matching page",
+      "fix": "Create content/techniques/stretch-and-fold.md"
     },
     {
       "level": "WARN",
@@ -492,6 +520,34 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/daing-na-bangus.md",
+      "msg": "technique \"acid-cure\" has no matching page",
+      "fix": "Create content/techniques/acid-cure.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/daing-na-bangus.md",
+      "msg": "technique \"pan-fry\" has no matching page",
+      "fix": "Create content/techniques/pan-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/dak-bokkeum-tang-korean-braised-chicken-with-potato.md",
+      "msg": "technique \"bloom-aromatics\" has no matching page",
+      "fix": "Create content/techniques/bloom-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/dak-bokkeum-tang-korean-braised-chicken-with-potato.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/doro-wat.md",
       "msg": "technique \"dry-sweat\" has no matching page",
       "fix": "Create content/techniques/dry-sweat.md"
@@ -534,6 +590,27 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/escabeche-of-mackerel.md",
+      "msg": "ingredient slug \"sherry-vinegar\" has no matching ingredient page",
+      "fix": "Create content/ingredients/sherry-vinegar.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/farro-salad-with-roasted-grapes-and-feta.md",
+      "msg": "ingredient slug \"red-grapes\" has no matching ingredient page",
+      "fix": "Create content/ingredients/red-grapes.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/farro-salad-with-roasted-grapes-and-feta.md",
+      "msg": "ingredient slug \"sherry-vinegar\" has no matching ingredient page",
+      "fix": "Create content/ingredients/sherry-vinegar.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/fesenjan.md",
       "msg": "technique \"walnut-slow-sweat\" has no matching page",
       "fix": "Create content/techniques/walnut-slow-sweat.md"
@@ -558,6 +635,20 @@
       "file": "content/recipes/fish-sauce.md",
       "msg": "technique \"salt-fermentation\" has no matching page",
       "fix": "Create content/techniques/salt-fermentation.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/flounder-piccata.md",
+      "msg": "technique \"pan-fry\" has no matching page",
+      "fix": "Create content/techniques/pan-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/flounder-piccata.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
     },
     {
       "level": "WARN",
@@ -590,6 +681,34 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/ga-kho-vietnamese-caramel-braised-chicken-with-kabocha.md",
+      "msg": "technique \"caramelization\" has no matching page",
+      "fix": "Create content/techniques/caramelization.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/ga-kho-vietnamese-caramel-braised-chicken-with-kabocha.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/galchi-gui.md",
+      "msg": "technique \"shallow-fry\" has no matching page",
+      "fix": "Create content/techniques/shallow-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/galchi-jorim.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/german-bratwurst-with-onions-and-mustard.md",
       "msg": "technique \"caramelizing\" has no matching page",
       "fix": "Create content/techniques/caramelizing.md"
@@ -600,6 +719,13 @@
       "file": "content/recipes/german-rouladen.md",
       "msg": "technique \"braising\" has no matching page",
       "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/german-rye-sourdough-roggenmischbrot.md",
+      "msg": "technique \"rye-sour\" has no matching page",
+      "fix": "Create content/techniques/rye-sour.md"
     },
     {
       "level": "WARN",
@@ -695,6 +821,27 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/gravlax.md",
+      "msg": "technique \"curing\" has no matching page",
+      "fix": "Create content/techniques/curing.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/gravlax.md",
+      "msg": "technique \"emulsion\" has no matching page",
+      "fix": "Create content/techniques/emulsion.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/green-goddess-dressing.md",
+      "msg": "ingredient slug \"tarragon\" has no matching ingredient page",
+      "fix": "Create content/ingredients/tarragon.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/greens-and-ricotta-frittata.md",
       "msg": "technique \"greens-wilt-and-dry\" has no matching page",
       "fix": "Create content/techniques/greens-wilt-and-dry.md"
@@ -705,6 +852,13 @@
       "file": "content/recipes/greens-and-ricotta-frittata.md",
       "msg": "technique \"stove-set-then-oven\" has no matching page",
       "fix": "Create content/techniques/stove-set-then-oven.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/grilled-pompano-nam-jim.md",
+      "msg": "technique \"live-fire-grilling\" has no matching page",
+      "fix": "Create content/techniques/live-fire-grilling.md"
     },
     {
       "level": "WARN",
@@ -835,6 +989,20 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/hong-shao-yellow-croaker.md",
+      "msg": "technique \"shallow-fry\" has no matching page",
+      "fix": "Create content/techniques/shallow-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/hong-shao-yellow-croaker.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/huevos-rancheros.md",
       "msg": "technique \"tomato-and-chili-char\" has no matching page",
       "fix": "Create content/techniques/tomato-and-chili-char.md"
@@ -948,13 +1116,6 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/italian-american-pork-meatballs-in-tomato.md",
       "msg": "technique \"fond-deglaze\" has no matching page",
       "fix": "Create content/techniques/fond-deglaze.md"
     },
@@ -1038,6 +1199,13 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/kale-caesar-with-sourdough-crumbs.md",
+      "msg": "technique \"kale-massage\" has no matching page",
+      "fix": "Create content/techniques/kale-massage.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/kinilaw-na-tanigue.md",
       "msg": "technique \"vinegar-cure\" has no matching page",
       "fix": "Create content/techniques/vinegar-cure.md"
@@ -1108,6 +1276,20 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/maeuntang.md",
+      "msg": "technique \"doenjang-broth\" has no matching page",
+      "fix": "Create content/techniques/doenjang-broth.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/maeuntang.md",
+      "msg": "technique \"gentle-poach\" has no matching page",
+      "fix": "Create content/techniques/gentle-poach.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/manti.md",
       "msg": "technique \"hand-folded-dumpling\" has no matching page",
       "fix": "Create content/techniques/hand-folded-dumpling.md"
@@ -1157,6 +1339,34 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/milk-bread-shokupan.md",
+      "msg": "technique \"gluten-development\" has no matching page",
+      "fix": "Create content/techniques/gluten-development.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/milk-bread-shokupan.md",
+      "msg": "technique \"bulk-fermentation\" has no matching page",
+      "fix": "Create content/techniques/bulk-fermentation.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/milk-bread-shokupan.md",
+      "msg": "technique \"loaf-shaping\" has no matching page",
+      "fix": "Create content/techniques/loaf-shaping.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/milk-bread-shokupan.md",
+      "msg": "technique \"enriched-bread-bake\" has no matching page",
+      "fix": "Create content/techniques/enriched-bread-bake.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/misir-wat.md",
       "msg": "technique \"dry-sweat\" has no matching page",
       "fix": "Create content/techniques/dry-sweat.md"
@@ -1174,6 +1384,41 @@
       "file": "content/recipes/misir-wat.md",
       "msg": "technique \"simmer\" has no matching page",
       "fix": "Create content/techniques/simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-dashi-chicken-nimono-with-kabocha-and-shimeji.md",
+      "msg": "technique \"dashi-extraction\" has no matching page",
+      "fix": "Create content/techniques/dashi-extraction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-dashi-chicken-nimono-with-kabocha-and-shimeji.md",
+      "msg": "technique \"drop-lid-simmer\" has no matching page",
+      "fix": "Create content/techniques/drop-lid-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-dashi-chicken-nimono-with-kabocha-and-shimeji.md",
+      "msg": "technique \"miso-tempering\" has no matching page",
+      "fix": "Create content/techniques/miso-tempering.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-glazed-black-cod.md",
+      "msg": "ingredient slug \"black-cod\" has no matching ingredient page",
+      "fix": "Create content/ingredients/black-cod.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/miso-glazed-black-cod.md",
+      "msg": "technique \"enzymatic-cure\" has no matching page",
+      "fix": "Create content/techniques/enzymatic-cure.md"
     },
     {
       "level": "WARN",
@@ -1206,6 +1451,13 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/naan.md",
+      "msg": "technique \"bulk-fermentation\" has no matching page",
+      "fix": "Create content/techniques/bulk-fermentation.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/nasi-goreng.md",
       "msg": "technique \"spice-paste-pounding\" has no matching page",
       "fix": "Create content/techniques/spice-paste-pounding.md"
@@ -1223,6 +1475,27 @@
       "file": "content/recipes/nasi-goreng.md",
       "msg": "technique \"wok-stir-fry\" has no matching page",
       "fix": "Create content/techniques/wok-stir-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/new-york-style-bagels.md",
+      "msg": "technique \"gluten-development\" has no matching page",
+      "fix": "Create content/techniques/gluten-development.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/new-york-style-bagels.md",
+      "msg": "technique \"starch-gelatinization\" has no matching page",
+      "fix": "Create content/techniques/starch-gelatinization.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/new-york-style-bagels.md",
+      "msg": "technique \"baking-stone\" has no matching page",
+      "fix": "Create content/techniques/baking-stone.md"
     },
     {
       "level": "WARN",
@@ -1272,6 +1545,20 @@
       "file": "content/recipes/pakistani-aloo-paratha.md",
       "msg": "technique \"dough-resting\" has no matching page",
       "fix": "Create content/techniques/dough-resting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pan-fried-yellow-croaker.md",
+      "msg": "technique \"shallow-fry\" has no matching page",
+      "fix": "Create content/techniques/shallow-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pan-seared-swordfish-with-salsa-verde.md",
+      "msg": "technique \"brining\" has no matching page",
+      "fix": "Create content/techniques/brining.md"
     },
     {
       "level": "WARN",
@@ -1430,6 +1717,27 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/pompano-en-papillote.md",
+      "msg": "technique \"en-papillote\" has no matching page",
+      "fix": "Create content/techniques/en-papillote.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/pompano-en-papillote.md",
+      "msg": "technique \"pan-sauce-reduction\" has no matching page",
+      "fix": "Create content/techniques/pan-sauce-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/porgy-acqua-pazza.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/pork-gyoza.md",
       "msg": "technique \"dumpling-wrap\" has no matching page",
       "fix": "Create content/techniques/dumpling-wrap.md"
@@ -1468,6 +1776,13 @@
       "file": "content/recipes/pozole-rojo.md",
       "msg": "technique \"salsa-fry\" has no matching page",
       "fix": "Create content/techniques/salsa-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/preserved-lemon-vinaigrette.md",
+      "msg": "ingredient slug \"preserved-lemon\" has no matching ingredient page",
+      "fix": "Create content/ingredients/preserved-lemon.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -1514,6 +1829,13 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/roasted-arctic-char-with-brown-butter-and-capers.md",
+      "msg": "ingredient slug \"arctic-char\" has no matching ingredient page",
+      "fix": "Create content/ingredients/arctic-char.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/romesco.md",
       "msg": "technique \"nut-toasting\" has no matching page",
       "fix": "Create content/techniques/nut-toasting.md"
@@ -1524,6 +1846,55 @@
       "file": "content/recipes/romesco.md",
       "msg": "technique \"pepper-charring\" has no matching page",
       "fix": "Create content/techniques/pepper-charring.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/rustic-baguette.md",
+      "msg": "technique \"poolish-preferment\" has no matching page",
+      "fix": "Create content/techniques/poolish-preferment.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/rustic-baguette.md",
+      "msg": "technique \"autolyse\" has no matching page",
+      "fix": "Create content/techniques/autolyse.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/rustic-baguette.md",
+      "msg": "technique \"stretch-and-fold\" has no matching page",
+      "fix": "Create content/techniques/stretch-and-fold.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/rustic-baguette.md",
+      "msg": "technique \"scoring\" has no matching page",
+      "fix": "Create content/techniques/scoring.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/saba-no-misoni.md",
+      "msg": "technique \"shimofuri-blanch\" has no matching page",
+      "fix": "Create content/techniques/shimofuri-blanch.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/saba-no-misoni.md",
+      "msg": "technique \"otoshibuta-simmer\" has no matching page",
+      "fix": "Create content/techniques/otoshibuta-simmer.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/saba-shioyaki.md",
+      "msg": "technique \"broiling\" has no matching page",
+      "fix": "Create content/techniques/broiling.md"
     },
     {
       "level": "WARN",
@@ -1549,6 +1920,41 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/salt-baked-whole-porgy.md",
+      "msg": "technique \"salt-crust-baking\" has no matching page",
+      "fix": "Create content/techniques/salt-crust-baking.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/salt-baked-whole-porgy.md",
+      "msg": "technique \"fond-deglaze\" has no matching page",
+      "fix": "Create content/techniques/fond-deglaze.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/seeded-multigrain-sourdough.md",
+      "msg": "technique \"autolyse\" has no matching page",
+      "fix": "Create content/techniques/autolyse.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/seeded-multigrain-sourdough.md",
+      "msg": "technique \"stretch-and-fold\" has no matching page",
+      "fix": "Create content/techniques/stretch-and-fold.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/seeded-multigrain-sourdough.md",
+      "msg": "technique \"cold-proof\" has no matching page",
+      "fix": "Create content/techniques/cold-proof.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/shakshuka.md",
       "msg": "technique \"spice-bloom\" has no matching page",
       "fix": "Create content/techniques/spice-bloom.md"
@@ -1566,6 +1972,20 @@
       "file": "content/recipes/shakshuka.md",
       "msg": "technique \"tomato-reduction\" has no matching page",
       "fix": "Create content/techniques/tomato-reduction.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/sherry-shallot-vinaigrette.md",
+      "msg": "ingredient slug \"sherry-vinegar\" has no matching ingredient page",
+      "fix": "Create content/ingredients/sherry-vinegar.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/sherry-shallot-vinaigrette.md",
+      "msg": "ingredient slug \"walnut-oil\" has no matching ingredient page",
+      "fix": "Create content/ingredients/walnut-oil.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -1633,6 +2053,20 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/sichuan-doubanjiang-chicken-with-eggplant-and-potato.md",
+      "msg": "technique \"bloom-aromatics\" has no matching page",
+      "fix": "Create content/techniques/bloom-aromatics.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/sichuan-doubanjiang-chicken-with-eggplant-and-potato.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/slow-soft-scrambled-eggs-with-brown-butter-and-chives.md",
       "msg": "technique \"slow-low-scramble\" has no matching page",
       "fix": "Create content/techniques/slow-low-scramble.md"
@@ -1643,6 +2077,13 @@
       "file": "content/recipes/southern-fried-chicken.md",
       "msg": "technique \"shallow-frying\" has no matching page",
       "fix": "Create content/techniques/shallow-frying.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/striped-bass-fish-tacos.md",
+      "msg": "technique \"live-fire-grilling\" has no matching page",
+      "fix": "Create content/techniques/live-fire-grilling.md"
     },
     {
       "level": "WARN",
@@ -1685,13 +2126,6 @@
       "file": "content/recipes/tamagoyaki.md",
       "msg": "technique \"dashi-egg-mixture\" has no matching page",
       "fix": "Create content/techniques/dashi-egg-mixture.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/thai-pork-larb-meatballs.md",
-      "msg": "technique \"myosin-extraction\" has no matching page",
-      "fix": "Create content/techniques/myosin-extraction.md"
     },
     {
       "level": "WARN",
@@ -1745,6 +2179,41 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/wedge-salad-with-blue-cheese-dressing.md",
+      "msg": "ingredient slug \"iceberg-lettuce\" has no matching ingredient page",
+      "fix": "Create content/ingredients/iceberg-lettuce.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/wedge-salad-with-blue-cheese-dressing.md",
+      "msg": "ingredient slug \"blue-cheese\" has no matching ingredient page",
+      "fix": "Create content/ingredients/blue-cheese.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/whole-fried-tilapia-with-three-flavor-sauce.md",
+      "msg": "ingredient slug \"tilapia\" has no matching ingredient page",
+      "fix": "Create content/ingredients/tilapia.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/whole-roasted-striped-bass.md",
+      "msg": "technique \"roasting\" has no matching page",
+      "fix": "Create content/techniques/roasting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/whole-roasted-trout-lemon-herb.md",
+      "msg": "technique \"roasting\" has no matching page",
+      "fix": "Create content/techniques/roasting.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/zhoug.md",
       "msg": "technique \"spice-toasting\" has no matching page",
       "fix": "Create content/techniques/spice-toasting.md"
@@ -1760,25 +2229,19 @@
       "level": "INFO",
       "category": "tags",
       "file": "content/_schema/tags.json",
-      "msg": "1 tags defined but unused: grill"
-    },
-    {
-      "level": "INFO",
-      "category": "tags",
-      "file": "content/_schema/tags.json",
-      "msg": "84 tags in use across 764 entries. Top: pantry(243), umami(233), make-ahead(123), comfort(116), weekend-project(98), spicy(76), weeknight(68), pork(60), fermentation(53), no-cook(46), quick(41), chicken(41), fish(40), one-pot(37), seafood(37), rice(36), condiment(31), egg(30), beef(29), stew(23), bread(22), salad(21), soup(20), vegan(19), pickle(17), roast(16), fried(15), braise(15), holiday(15), tropical(11)"
+      "msg": "100 tags in use across 885 entries. Top: umami(285), pantry(275), make-ahead(144), comfort(134), weekend-project(109), weeknight(96), spicy(95), fish(91), seafood(81), quick(70), pork(63), no-cook(61), fermentation(60), one-pot(48), chicken(47), condiment(43), bread(40), rice(36), egg(33), salad(32), beef(30), vegan(27), stew(25), baked(24), roast(23), braise(22), soup(21), herbaceous(20), emulsion(20), vegetarian(19)"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "index stats: 710 pages, 7316 tokens, 365.1 KB"
+      "msg": "index stats: 828 pages, 8089 tokens, 422.1 KB"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "3908 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), cornstarch-and-rice-flour, garlic-chili-cane-vinegar, eggplant-sponge-soaks-oil"
+      "msg": "4286 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, lemon-and-red-wine-vinegar, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), buttermilk-and-mayonnaise, acid-cure-as-preservation"
     },
     {
       "level": "WARN",
@@ -1949,6 +2412,13 @@
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/blackened-catfish.md",
+      "msg": "step 7 names \"catfish fillets\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"600 g catfish fillets (channel, basa, or swai), skinless, 2 to 2.5 cm thick\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
       "level": "INFO",
       "category": "formatting",
       "file": "content/recipes/bouillabaisse-marseillaise.md",
@@ -1961,6 +2431,13 @@
       "file": "content/recipes/breakfast-egg-bites-with-spinach-and-feta.md",
       "msg": "step 9 names \"eggs\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"400 g large eggs\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/brioche.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 4\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
     },
     {
       "level": "WARN",
@@ -2059,6 +2536,13 @@
       "file": "content/recipes/cast-iron-chuck-eye-steaks-with-shallot-pan-sauce.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/challah.md",
+      "msg": "scaling: 2 yield-coupled split(s) (\"into 6\", \"into 3\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
     },
     {
       "level": "WARN",
@@ -2397,11 +2881,25 @@
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/farro-salad-with-roasted-grapes-and-feta.md",
+      "msg": "step 5 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"12 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
       "level": "INFO",
       "category": "formatting",
       "file": "content/recipes/fesenjan.md",
       "msg": "ingredient \"black pepper, freshly cracked\" is on the list but no step appears to use it — possible orphaned ingredient",
       "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/french-lentil-and-herb-salad.md",
+      "msg": "step 5 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"4 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "INFO",
@@ -2490,6 +2988,13 @@
     {
       "level": "INFO",
       "category": "formatting",
+      "file": "content/recipes/german-rye-sourdough-roggenmischbrot.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"10 to 20 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
       "file": "content/recipes/german-warm-potato-salad-with-bacon-and-mustard.md",
       "msg": "scaling: 4 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\", \"1 to 2 g\", \"¼ to ½ tsp\", \"5 to 8 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
@@ -2507,6 +3012,13 @@
       "file": "content/recipes/gochujang-honey-chicken-tenders-with-smashed-cucumber-salad.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"30 to 50 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/gochujang-lime-dressing.md",
+      "msg": "step 5 names \"honey\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"25 g honey\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "WARN",
@@ -2551,6 +3063,27 @@
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/gravlax.md",
+      "msg": "step 5 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"75 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/gravlax.md",
+      "msg": "step 8 names \"dill\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"15 g fresh dill, finely chopped\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/gravlax.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 kg\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "INFO",
       "category": "formatting",
       "file": "content/recipes/greek-salad-horiatiki.md",
@@ -2562,6 +3095,27 @@
       "category": "formatting",
       "file": "content/recipes/grilled-pompano-nam-jim.md",
       "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"450 to 500 g\", \"300 to 600 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/grilled-sardines-with-lemon-and-oregano.md",
+      "msg": "step 1 names \"sardines\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"600 g whole fresh sardines\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/grilled-sardines-with-lemon-and-oregano.md",
+      "msg": "step 3 names \"sardines\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"600 g whole fresh sardines\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/grilled-sardines-with-lemon-and-oregano.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"75 to 100 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
@@ -2922,11 +3476,39 @@
       "fix": "Inline the quantity, e.g. \"30 each dried corn husks\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/milk-bread-shokupan.md",
+      "msg": "step 5 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"50 g water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/milk-bread-shokupan.md",
+      "msg": "step 10 names \"milk\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"50 g whole milk\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/milk-bread-shokupan.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 3\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "INFO",
       "category": "formatting",
       "file": "content/recipes/miso-butter-shrimp-with-delicata-shimeji-and-charred-broccoli.md",
       "msg": "ingredient \"hon-mirin\" is on the list but no step appears to use it — possible orphaned ingredient",
       "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/miso-glazed-black-cod.md",
+      "msg": "step 3 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"3 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "INFO",
@@ -2952,9 +3534,30 @@
     {
       "level": "WARN",
       "category": "formatting",
+      "file": "content/recipes/naan.md",
+      "msg": "step 11 names \"salt\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"7 g fine sea salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/naan.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 6\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
       "file": "content/recipes/nasi-goreng.md",
       "msg": "step 9 names \"fried shallots\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"20 g fried shallots (crispy)\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/new-york-style-bagels.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 8\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
     },
     {
       "level": "WARN",
@@ -2990,6 +3593,13 @@
       "file": "content/recipes/olive-garden-italian-dressing.md",
       "msg": "step 4 names \"honey\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"20 g honey\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/olive-oil-poached-halibut.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"35 to 40 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "INFO",
@@ -3052,6 +3662,20 @@
       "category": "formatting",
       "file": "content/recipes/pan-seared-mackerel-with-daikon-oroshi-and-ponzu.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tbsp\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/pan-seared-swordfish-with-salsa-verde.md",
+      "msg": "store-bought ingredient(s) without homemade_alternatives: dijon mustard",
+      "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pan-seared-swordfish-with-salsa-verde.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"40 to 50 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
@@ -3349,6 +3973,20 @@
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/salt-crusted-branzino.md",
+      "msg": "step 11 names \"lemon\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"60 g lemon\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/salt-crusted-branzino.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"550 to 600 g\", \"400 to 600 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
       "level": "INFO",
       "category": "formatting",
       "file": "content/recipes/sauerkraut.md",
@@ -3360,6 +3998,13 @@
       "category": "formatting",
       "file": "content/recipes/sheet-pan-roasted-shallots-cauliflower-and-sweet-potato-with-lemon-dijon-yogurt.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/sherry-shallot-vinaigrette.md",
+      "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"5 to 10 g\", \"1 to 2 tsp\", \"20 to 30 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
@@ -3389,6 +4034,20 @@
       "file": "content/recipes/sichuan-sticky-pork-meatballs.md",
       "msg": "scaling: 1 yield-coupled split(s) (\"into 16\") use a fixed count that will not move with servings",
       "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/soft-pretzels.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 8\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/sole-meuniere.md",
+      "msg": "step 4 names \"butter\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"85 g unsalted butter\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
     },
     {
       "level": "INFO",
@@ -3514,6 +4173,20 @@
       "category": "formatting",
       "file": "content/recipes/ube-halaya-pancakes.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 70 ml\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "WARN",
+      "category": "formatting",
+      "file": "content/recipes/watermelon-feta-salad-with-mint.md",
+      "msg": "step 7 names \"water\" but has no measurement — bake the qty into the step text",
+      "fix": "Inline the quantity, e.g. \"250 ml cold water\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/watermelon-feta-salad-with-mint.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 70 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {

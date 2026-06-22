@@ -1,0 +1,42 @@
+---
+type: 'ingredient'
+category: 'ingredients'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Whole wheat flour'
+desc: 'Flour milled from the entire wheat kernel, bran and germ and endosperm together. Roughly 13 to 14 percent protein but lower in functional gluten than the number suggests, because the bran physically cuts the dough and the germ oil shortens it.'
+metaDesc: 'Whole wheat flour: bran, germ, and endosperm together. Why its bran cuts gluten and slows rise, how it drives fermentation flavor, and how to substitute across breads, pancakes, and pasta.'
+tags: ['bread', 'pantry', 'fermentation']
+density_g_per_ml: 0.55
+imperial_pref: 'cup'
+updated: '2026-06-21'
+
+about: |
+  Whole wheat flour is milled from the complete wheat kernel (Triticum aestivum), keeping all three anatomical parts of the grain rather than sifting away the bran and germ. The endosperm supplies the starch and the gluten-forming glutenin and gliadin proteins; the bran is the fibrous outer husk, dense in insoluble fiber, minerals, and the enzymes and microbes that ride on the grain''s surface; the germ is the embryo, rich in oil, vitamins, and lipase. Whole wheat from hard red wheat reads roughly 13 to 14 percent protein on the bag, higher than all-purpose, yet it behaves weaker, because that protein figure counts the bran fraction that contributes no gluten and actively interferes with the gluten that does form. A typical whole wheat flour is tan to brown, smells nutty and faintly sweet, and absorbs noticeably more water than white flour because the bran fiber is hydrophilic and soaks up free water on contact. One US cup is about 120 to 130 g; this page uses 0.55 g per ml, close to bread flour, reflecting the slightly coarser, bran-flecked grind (King Arthur and USDA reference values).
+
+  Functional role: whole wheat is a flavor-and-fermentation flour first and a structural flour second. The bran and germ carry the minerals, enzymes, and surface microbiota that wild and commercial yeast feed on, so even a small whole-wheat fraction in a dough accelerates fermentation, deepens the sour and malty notes, and gives a starter or preferment a faster, more vigorous climb. This is why bakers fold whole wheat into otherwise white doughs and why a country or multigrain base often runs a whole-wheat percentage in the blend: the bran character and the fermentation lift come together. Against that, the same bran is a structural liability. Bran particles are like tiny blades scattered through the dough; they physically sever the gluten strands as the network tries to form and trap gas, and the germ oil coats the proteins and shortens them the way fat shortens a pastry. The result is a denser crumb and a lower rise than a white flour of equal protein.
+
+  How heat, time, and hydration change it: the bran''s sharp edges soften with hydration time, so an autolyse or overnight soak before mixing lets the bran absorb water and dulls its cutting action, recovering much of the lost rise. Whole wheat needs more water than white flour and benefits from a longer rest to take it up fully, since dough that looks correctly hydrated at mixing will tighten as the bran keeps drinking over the next twenty minutes. In the oven the extra fiber and the higher water load produce a moister, more tightly set crumb that stays soft for days rather than staling fast like a lean white loaf. Toasting the flour or the bran before mixing pushes the nutty Maillard notes further but kills some enzyme activity, a trade of fermentation drive for roasted flavor. The germ oil is the flour''s clock: its lipase and the polyunsaturated fat oxidize within weeks at room temperature, which is why whole wheat goes rancid fast where white flour keeps for the better part of a year.
+
+  Where it fits in baking and beyond: whole wheat works across a spectrum set by its percentage of the total flour. At the high end sit the dense, hearty 100-percent whole-wheat pan loaves and the German Vollkornbrot family, where the whole grain is the entire point and the crumb is meant to be tight and moist. In the middle band sit the country and multigrain breads, sourdough boules, and pain de campagne built on a wheat base with a 10 to 30 percent whole-wheat fraction folded in for nutty depth and fermentation drive without crippling the rise. At the low end whole wheat is a seasoning and texture flour: a handful in pancakes and waffles, in pie and tart doughs, in crackers, in chocolate-chip cookies for a malty backbone, and in fresh pasta where a small whole-wheat percentage adds a rustic, slightly bittersweet edge. It also feeds sourdough starters well, its bran and germ giving the wild culture a fast, mineral-rich start much as rye does, a touch more gently.
+
+  Buying notes: whole wheat splits by milling style and freshness, and both matter more than brand. Stone-ground whole wheat keeps the germ oil more intact and tastes fuller but spoils faster; roller-milled commercial whole wheat is more shelf-stable but often blander, and some commodity "whole wheat" is white flour with the bran added back rather than the whole kernel milled together. White whole wheat, milled from a hard white wheat variety, carries the full bran and germ but reads paler, milder, and sweeter, a useful bridge for cooks who find red whole wheat too assertive. Whole-wheat pastry flour is a separate, lower-protein soft-wheat grade meant for tender bakes, not bread. For bread and for any dish leaning on fermentation flavor, buy stone-ground whole wheat from a mill that dates its bags and store it cold, since fresh whole wheat performs and tastes markedly better than flour that has sat oxidizing on a shelf.
+
+seasonality: 'Year-round pantry staple with no peak window. Freshness from the milling date is the variable that matters: the germ oil oxidizes within weeks at room temperature, so buy dated bags and store cold.'
+storage: 'Whole wheat spoils through the germ oil, which oxidizes to a sharp, bitter, crayon-or-paint smell and a harsh taste well before any color change shows. Keep it in an airtight container in the refrigerator (up to 3 months) or the freezer (up to a year); a cool, dark pantry buys only a few weeks before the flavor dulls and turns bitter. Bring chilled flour to room temperature before mixing so it hydrates evenly. Discard at the first rancid or bitter note, or at any sign of webbing, clumping, or live pests (Indian meal moth, flour weevil), since the bran and germ make whole wheat a favored target. Freezing a new bag for 48 hours before storage kills any pest eggs that traveled in with it.'
+
+substitutions:
+  - for: 'whole wheat flour (the whole-grain fraction of a country or multigrain bread)'
+    use: 'whole spelt, whole emmer, or whole rye flour'
+    note: 'Spelt and emmer are the closest in nutty, ancient-grain character and behave similarly, carrying real gluten with a softer, slightly more extensible dough. Rye swaps in for a fraction of the whole-grain portion when you want more sour and malt, but it brings far more pentosan gum and enzyme, so keep it under about a third of the blend or the crumb tightens and turns sticky.'
+  - for: 'whole wheat flour (structural flour in a lean yeast bread)'
+    use: 'bread flour or all-purpose flour with added wheat bran or germ'
+    note: 'White flour gives a far lighter, taller crumb but loses the nutty depth and the fermentation drive. Add a tablespoon or two of toasted wheat bran and a spoon of wheat germ per cup to recover much of the flavor and fiber without the full rise penalty of true whole wheat.'
+  - for: 'whole wheat flour (a small fraction for flavor in pancakes, cookies, pie dough)'
+    use: 'all-purpose flour plus a spoon of toasted wheat germ, or whole-wheat pastry flour'
+    note: 'When whole wheat is a minority flavor flour rather than the structure, AP with a little toasted germ reads close, and whole-wheat pastry flour (soft, low-protein) gives the nutty note while keeping tender bakes tender. Straight bread-grade whole wheat here makes cookies and crusts tough.'
+  - for: 'whole wheat flour (feeding a sourdough starter)'
+    use: 'whole rye or whole spelt flour'
+    note: 'Rye gives the most vigorous, fast-fermenting culture from its high enzyme and mineral load; spelt is a gentler whole-grain alternative. Both keep a wild starter healthy; expect rye to climb fastest and spelt to behave most like whole wheat.'
+---
