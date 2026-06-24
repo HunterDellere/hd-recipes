@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-22T03:52:59.842Z",
+  "generated": "2026-06-24T20:08:31.226Z",
   "summary": {
     "errors": 0,
-    "warnings": 452,
+    "warnings": 455,
     "info": 150
   },
   "findings": [
@@ -173,13 +173,6 @@
       "file": "content/recipes/bigos.md",
       "msg": "technique \"braise\" has no matching page",
       "fix": "Create content/techniques/braise.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/blue-cheese-dressing.md",
-      "msg": "ingredient slug \"blue-cheese\" has no matching ingredient page",
-      "fix": "Create content/ingredients/blue-cheese.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -506,6 +499,13 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/crispy-fried-garlic-and-garlic-oil.md",
+      "msg": "technique \"confit-fry\" has no matching page",
+      "fix": "Create content/techniques/confit-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/cuban-ropa-vieja.md",
       "msg": "technique \"low-and-slow-simmer\" has no matching page",
       "fix": "Create content/techniques/low-and-slow-simmer.md"
@@ -709,6 +709,13 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/genmaicha-tea-smoked-tofu.md",
+      "msg": "technique \"tea-smoking\" has no matching page",
+      "fix": "Create content/techniques/tea-smoking.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/german-bratwurst-with-onions-and-mustard.md",
       "msg": "technique \"caramelizing\" has no matching page",
       "fix": "Create content/techniques/caramelizing.md"
@@ -838,6 +845,13 @@
       "file": "content/recipes/green-goddess-dressing.md",
       "msg": "ingredient slug \"tarragon\" has no matching ingredient page",
       "fix": "Create content/ingredients/tarragon.md or remove the slug field"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/green-tea-ochazuke.md",
+      "msg": "technique \"tea-steeping\" has no matching page",
+      "fix": "Create content/techniques/tea-steeping.md"
     },
     {
       "level": "WARN",
@@ -1237,6 +1251,13 @@
       "file": "content/recipes/lahmacun.md",
       "msg": "technique \"wet-paste-topping\" has no matching page",
       "fix": "Create content/techniques/wet-paste-topping.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/lahpet-fermented-tea-leaves.md",
+      "msg": "technique \"lacto-fermentation\" has no matching page",
+      "fix": "Create content/techniques/lacto-fermentation.md"
     },
     {
       "level": "WARN",
@@ -2229,19 +2250,19 @@
       "level": "INFO",
       "category": "tags",
       "file": "content/_schema/tags.json",
-      "msg": "100 tags in use across 885 entries. Top: umami(285), pantry(275), make-ahead(144), comfort(134), weekend-project(109), weeknight(96), spicy(95), fish(91), seafood(81), quick(70), pork(63), no-cook(61), fermentation(60), one-pot(48), chicken(47), condiment(43), bread(40), rice(36), egg(33), salad(32), beef(30), vegan(27), stew(25), baked(24), roast(23), braise(22), soup(21), herbaceous(20), emulsion(20), vegetarian(19)"
+      "msg": "102 tags in use across 895 entries. Top: umami(287), pantry(278), make-ahead(149), comfort(136), weekend-project(110), weeknight(96), spicy(95), fish(91), seafood(81), quick(72), pork(63), no-cook(62), fermentation(61), one-pot(48), chicken(47), condiment(45), bread(40), rice(37), salad(34), egg(33), vegan(31), beef(30), baked(25), stew(25), vegetarian(23), roast(23), soup(22), braise(22), fried(21), herbaceous(20)"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "index stats: 828 pages, 8089 tokens, 422.1 KB"
+      "msg": "index stats: 838 pages, 8133 tokens, 425.5 KB"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "4286 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, lemon-and-red-wine-vinegar, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), buttermilk-and-mayonnaise, acid-cure-as-preservation"
+      "msg": "4302 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, lemon-and-red-wine-vinegar, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), buttermilk-and-mayonnaise, acid-cure-as-preservation"
     },
     {
       "level": "WARN",
