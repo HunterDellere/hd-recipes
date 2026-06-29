@@ -2618,6 +2618,17 @@ body[data-cooks-view="on"] .step-body { font-size: 1.1rem; }
   padding-right: max(0px, env(safe-area-inset-right));
 }
 [data-theme="dark"] .cook-bar { background: rgba(21, 17, 10, 0.96); }
+
+/* Reserve space for the fixed cook-bar so the final step never hides behind it.
+   The bar is a 3px progress strip + a 56px button row with 12px padding top and
+   bottom ≈ 83px; 88px gives a small breathing gap above it. scroll-padding-bottom
+   keeps step-to-step scrolling (scrollIntoView in recipe.js) from tucking the
+   active step under the bar. Without this the last step is clipped — on desktop
+   the body reserved nothing, so the whole 84px bar overlapped content. */
+body[data-cooks-view="on"] {
+  padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  scroll-padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+}
 .cb-progress {
   height: 3px; width: 100%;
   background: var(--rule-soft);
