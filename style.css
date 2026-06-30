@@ -1813,6 +1813,14 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   /* toc-toggle occupies bottom-right at 44px height; push back-to-top above it */
   .back-to-top { bottom: calc(1.25rem + 44px + 0.75rem); }
 }
+@media (max-width: 767px) {
+  /* On recipe pages the full-width bottom-nav (56px + safe-area) owns the
+     bottom edge and sits above the toc-toggle, so anchor the back-to-top
+     clear of the nav instead — otherwise it hides behind it. */
+  body:has(.bottom-nav) .back-to-top {
+    bottom: calc(56px + env(safe-area-inset-bottom, 0px) + 1rem);
+  }
+}
 
 /* ── responsive ─────────────────────────────────────────── */
 @media (max-width: 860px) {
