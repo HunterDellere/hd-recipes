@@ -1,9 +1,9 @@
 {
-  "generated": "2026-06-29T15:59:34.323Z",
+  "generated": "2026-07-04T23:44:30.385Z",
   "summary": {
     "errors": 0,
     "warnings": 455,
-    "info": 150
+    "info": 151
   },
   "findings": [
     {
@@ -4187,6 +4187,13 @@
       "category": "formatting",
       "file": "content/recipes/toum.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"4 to 7 cup\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/ube-buttermilk-pancakes.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 70 ml\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
