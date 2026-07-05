@@ -20,8 +20,8 @@ jobs:
     name: Validate content schema
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
           cache: 'npm'
@@ -36,10 +36,10 @@ jobs:
     outputs:
       committed: ${{ steps.commit.outputs.committed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
           cache: 'npm'
@@ -80,7 +80,7 @@ jobs:
       (needs.nutrition.result == 'success' || needs.nutrition.result == 'skipped' || needs.nutrition.result == 'failure')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           # On push, follow the ref so we pick up any nutrition cache commit
           # the nutrition job just pushed back. On pull_request, pin to the
@@ -95,7 +95,7 @@ jobs:
           # 3/day cap produces a recent.json with only 3 entries dated today.
           # Do not change without updating addedDateFor() in build/build.mjs.
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
           cache: 'npm'
@@ -105,7 +105,7 @@ jobs:
       - name: Upload Pages artifact
         # `upload-pages-artifact` always names the artifact `github-pages`,
         # which is what `deploy-pages` expects. Single upload, single name.
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: '.'
 
@@ -120,4 +120,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
