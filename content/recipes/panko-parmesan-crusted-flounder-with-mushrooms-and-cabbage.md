@@ -2,7 +2,7 @@
 type: 'recipe'
 category: 'recipes'
 status: 'complete'
-content_review: 'pending'
+content_review: 'verified'
 
 title: 'Panko-parmesan crusted flounder with seared mushrooms and butter-braised cabbage'
 desc: 'Thin flounder fillets pressed on one side into a panko-and-parmigiano crust, then pan-fried crust-side-down in butter and oil until the coating shatters golden while the lean flesh stays just-set on top, so the fish is never flipped onto its delicate face. A hot dry-seared tangle of oyster and shimeji (beech) mushrooms goes over or beside the fish for meaty umami, and a fast butter-braised wedge of green cabbage with caraway and a hit of cider vinegar carries the plate. The parmesan is half the crust and half the seasoning: its glutamate and salt do the anti-bland work the mild fish cannot, and a squeeze of lemon at the table lands the finishing acid.'
@@ -126,9 +126,9 @@ ingredients:
   - group: 'Phase 3, the crust and fish'
     item: 'kosher salt'
     slug: 'kosher-salt'
-    qty: 3
+    qty: 2
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; seasons the fish itself before the crust goes on)'
+    note: '(½ tsp Diamond Crystal; a light direct season, kept low because the 40 g parmigiano in the crust deposits most of the salt onto the fish surface)'
   - group: 'Phase 3, the crust and fish'
     item: 'panko'
     slug: 'panko'

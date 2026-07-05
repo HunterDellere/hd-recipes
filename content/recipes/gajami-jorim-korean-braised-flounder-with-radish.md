@@ -2,7 +2,7 @@
 type: 'recipe'
 category: 'recipes'
 status: 'complete'
-content_review: 'pending'
+content_review: 'verified'
 
 title: 'Gajami jorim (Korean braised flounder with radish)'
 desc: 'Whole flounder braised over thick daikon coins in a brick-red yangnyeom of gochugaru, gochujang, soy, and an anchovy-kelp stock. The radish lines the pot bottom and cooks longest, turning translucent and sweet as it drinks the sauce; the flat fish rests on top and braises undisturbed so the delicate flake stays whole. Soy and gochujang build the glutamate floor, a splash of rice vinegar and fresh scallion land the finish, and the sauce reduces glossy and gets spooned over short-grain rice. The flatfish version of the Korean jorim; gentler and sweeter than the hairtail original.'
@@ -14,9 +14,9 @@ servings: 3
 yield_note: 'serves 2 as a main with rice, or 3 as part of a Korean spread with banchan'
 time:
   prep_min: 20
-  cook_min: 30
-  total_min: 50
-  active_min: 25
+  cook_min: 38
+  total_min: 55
+  active_min: 30
 difficulty: 'medium'
 cuisine: 'Korean'
 course: 'dinner'
@@ -174,10 +174,10 @@ steps:
   - text: 'Start the braise on the radish alone. Pour the 450 ml anchovy-kelp stock over the radish bed and spoon about half the yangnyeom over it, stirring it into the liquid. Bring to a simmer over medium-high, then cover and reduce to medium-low. Braise the radish 12 minutes before the fish goes in; the daikon needs the head start to soften and turn translucent, while the thin flounder needs only the final stretch.'
     technique: 'braising'
     time_min: 12
-  - text: 'Lay the whole fish on top and spoon over the rest of the sauce. Pat the cured 600 g flounder dry once more and lay it flat over the radish, dark (eyed) side up. Spoon the remaining yangnyeom over the fish and into the score marks so the top is coated. Do not stir or move the fish from this point; the flat flesh shreds if disturbed. Cover and braise 8 to 10 minutes, tilting the pot once or twice to spoon the bubbling sauce up and over the fish. A whole flounder is thin and cooks fast, so start checking at 8 minutes.'
+  - text: 'Lay the whole fish on top and braise it just to done. Pat the cured 600 g flounder dry once more and lay it flat over the radish, dark (eyed) side up. Spoon the remaining yangnyeom over the fish and into the score marks so the top is coated. Do not stir or move the fish from this point; the flat flesh shreds if disturbed. Cover and braise 8 to 10 minutes, tilting the pot once or twice to spoon the bubbling sauce up and over the fish. A whole flounder is thin and cooks fast, so start checking at 8 minutes; the fish is done when the flesh has just turned opaque and lifts cleanly off the frame at the score marks. Because flounder is lean and delicate, it must not sit through the hard reduction that follows, or it dries and over-flakes. The moment it is just opaque, slide it whole onto a plate (use two spatulas, or tilt the pot and ease it off) and set it aside while you finish the sauce.'
     technique: 'braising'
     time_min: 10
-  - text: 'Reduce uncovered to a glaze. Uncover, raise the heat to medium-high, and simmer hard 5 to 7 minutes to cook the sauce down by roughly half, until it turns glossy and clings to the radish and the fish. Keep spooning the reducing sauce over the fish rather than stirring. The radish should now be fully translucent and the flounder flesh opaque, lifting cleanly off the frame at the score marks when nudged with a spoon.'
+  - text: 'Reduce the sauce and radish alone to a glaze. With the fish out of the pot, uncover, raise the heat to medium-high, and simmer the radish and sauce hard for 5 to 7 minutes to cook the liquid down by roughly half, until it turns glossy and clings to the radish. Stir the radish gently now that the fish is out of the way. The radish should be fully translucent and the sauce should coat the back of a spoon. Then slide the flounder back into the pot on top of the reduced sauce (or leave it on its plate and spoon the reduced sauce over it), just long enough to reheat through in the next step; it has already cooked and only needs to be re-glazed, not braised again.'
     time_min: 7
   - text: 'Add the fresh aromatics. Scatter the 40 g scallion batons and the 15 g sliced green chili over the top and braise 2 minutes more, just until the scallion wilts but keeps its bite. These go in late so they read fresh against the long-cooked sauce.'
     time_min: 2
