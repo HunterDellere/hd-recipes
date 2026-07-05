@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-04T23:44:30.385Z",
+  "generated": "2026-07-05T21:16:09.582Z",
   "summary": {
     "errors": 0,
     "warnings": 455,
-    "info": 151
+    "info": 153
   },
   "findings": [
     {
@@ -2540,6 +2540,13 @@
     {
       "level": "INFO",
       "category": "formatting",
+      "file": "content/recipes/cantonese-steamed-whole-flounder-with-ginger-scallion.md",
+      "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"20 to 40 g\", \"600 to 700 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
       "file": "content/recipes/cantonese-white-congee.md",
       "msg": "scaling: 2 quantity range(s) in prose stay fixed when servings change — e.g. \"60-100 ml\", \"¼-½ cup\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
@@ -2984,6 +2991,13 @@
       "file": "content/recipes/gado-gado.md",
       "msg": "step 9 names \"eggs\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"4 each large eggs\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/gajami-jorim-korean-braised-flounder-with-radish.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"600 to 700 g\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "WARN",
