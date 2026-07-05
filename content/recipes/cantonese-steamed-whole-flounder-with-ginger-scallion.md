@@ -2,7 +2,7 @@
 type: 'recipe'
 category: 'recipes'
 status: 'complete'
-content_review: 'pending'
+content_review: 'verified'
 
 title: 'Cantonese steamed whole flounder with ginger and scallion'
 desc: 'A whole flounder ginger-cured, steamed flat over hard vapor for just 6 to 8 minutes, the pan liquid poured off and replaced with a hot soy-sesame seasoning, scattered with raw ginger-scallion julienne, and finished with smoking neutral oil poured over the aromatics. The flatfish register of the Cantonese steaming canon: the thin flat body cooks faster and reads more delicate than a round branzino, which is exactly why Hong Kong kitchens reach for sole and flounder when the point is refinement. Protein integrity preserved; aromatics deployed in three temperature registers.'
@@ -52,8 +52,8 @@ ingredients:
     slug: 'scallion'
     qty: 20
     unit: 'g'
-    prep: '2 stalks halved crosswise and bruised with the flat of a knife, for the cure and steaming bed; remaining stalks reserved in Phase 3'
-    note: '(2 stalks for cure; 4 more for finish)'
+    prep: '2 stalks halved crosswise and bruised with the flat of a knife, for the cure and steaming bed'
+    note: '(2 stalks; the finish scallion is a separate line in Phase 3)'
   - group: 'Phase 1, fish prep and cure'
     item: 'Shaoxing wine'
     slug: 'shaoxing-wine'
@@ -110,7 +110,7 @@ ingredients:
     qty: 30
     unit: 'g'
     prep: 'cut into 5 cm batons, julienned lengthwise into very thin slivers, dropped into ice water for 10 minutes to curl'
-    note: '(4 stalks; the dark green tops can go into the steaming bed)'
+    note: '(4 stalks; use the whites and pale greens for the slivers, save the dark green tops for stock)'
   - group: 'Phase 3, finish (raw aromatics)'
     item: 'fresh cilantro, leaves and tender stems'
     slug: 'cilantro'
@@ -141,7 +141,7 @@ steps:
   - text: 'Set up the steamer. Bring 3 cm of water to a hard rolling boil over high heat in a wok with a bamboo steamer, or in a deep skillet with a fitted rack and lid. The steaming temperature is the hard rolling boil of water, full vapor flux at 100°C, not a gentle simmer. A bamboo steamer is preferred because the wood absorbs surface condensation and prevents drips of cool water onto the fish; a metal lid wrapped in a clean kitchen towel does the same.'
     technique: 'vapor-steaming'
     time_min: 5
-  - text: 'Plate the fish for steaming. Choose a wide heatproof rimmed plate that fits inside the steamer with at least 2 cm of clearance all around. Lay 2 to 3 chopsticks or two scallion-top batons across the plate as a low rack; the gap under the fish lets vapor circulate and keeps the bottom skin from going gummy in pooled liquid. Lay the cured flounder flat across the chopsticks and discard any liquid that pooled during the cure (it is fishy and not part of the dish).'
+  - text: 'Plate the fish for steaming. Choose a wide heatproof rimmed plate that fits inside the steamer with at least 2 cm of clearance all around. Lay 2 to 3 chopsticks across the plate as a low rack; the gap under the fish lets vapor circulate and keeps the bottom skin from going gummy in pooled liquid. Lay the cured flounder flat across the chopsticks and discard any liquid that pooled during the cure (it is fishy and not part of the dish).'
     time_min: 2
   - text: 'Steam at full heat, 6 to 8 minutes. When the water is at a hard rolling boil, set the plate in the steamer, cover, and steam at full heat. Time by thickness: 6 minutes for a flounder 1.5 cm thick at the spine, 8 minutes for one 2 cm thick. This is the whole reason to steam a flatfish, it cooks in roughly two-thirds the time of a round fish. Start checking at 6 minutes by lifting the lid (carefully, vapor rises fast) and inserting a chopstick into the deepest slash near the spine; the flesh should be opaque and lift cleanly from the bone. If a translucent core remains, replace the lid for 60 seconds at a time. Pull the fish the instant it is opaque, a flounder crosses from silky to chalky faster than any round fish and is the one most punished by overcooking.'
     technique: 'vapor-steaming'
@@ -152,7 +152,7 @@ steps:
     time_min: 5
   - text: 'Pour off the steaming liquid. When the flounder is done, pull the steamer off the heat and uncover. Transfer the plate to a heatproof surface (a spatula in each hand under opposite ends works). Tilt the plate and pour off all the liquid that has pooled; this liquid is full of fishy proteins released during steaming and is the biggest contributor to a dish that tastes "off." Discard it, and discard the bruised aromatics from the cavity, their job is done.'
     time_min: 2
-  - text: 'Season and dress the fish. Pour the warm soy seasoning sauce around (not directly over) the fish so it pools and flows under the slashes, seasoning the flesh from the bottom and the cut surfaces. Lift the curled 30 g scallion slivers out of the ice water, shake them dry, and lay them in a strip down the spine of the fish. Scatter the 10 g ginger julienne over the scallions in the same tight center strip. Scatter the cilantro loosely over the platter as a final green note.'
+  - text: 'Season and dress the fish. Pour the warm soy seasoning sauce around (not directly over) the fish so it pools on the plate; on a flat fish the sauce is spooned up with each bite of fish and rice rather than flooding a belly cavity the way it does under a round fish. Lift the curled 30 g scallion slivers out of the ice water, shake them dry, and lay them in a strip down the spine of the fish. Scatter the 10 g ginger julienne over the scallions in the same tight center strip. Scatter the cilantro loosely over the platter as a final green note.'
     time_min: 2
   - text: 'The smoking-oil bloom. Heat the 30 g / 2 tbsp neutral oil in a small saucepan over medium-high until just smoking, about 200°C / 390°F; a wooden chopstick dipped in should bubble vigorously within a second and the first wisp of pale smoke should rise. In one steady pour from 5 to 10 cm up, pour the smoking oil directly over the strip of ginger and scallion on top of the fish. The aromatics will sizzle violently for 5 to 10 seconds, flashing their volatile sulfur and allium compounds into the air and blooming the raw julienne into the cooked-but-textured finish that defines the dish. Cool oil produces a sad raw-scallion-on-fish plate; smoking oil produces the canonical bloom. Serve immediately with steamed jasmine rice, each diner taking a piece of fish and spooning a little of the seasoned oil-and-soy over the rice.'
     technique: 'hot-oil-finish'
