@@ -1,5 +1,627 @@
 [
   {
+    "path": "pages/ingredients/gelatin.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Gelatin",
+    "desc": "Purified animal collagen that sets liquids into a soft, thermoreversible gel. Melts at body temperature, which is why a gelatin custard releases flavor and reads silky where agar reads brittle. The setting agent behind panna cotta, aspic, and marshmallow.",
+    "tags": [
+      "hydrocolloid",
+      "jelly"
+    ],
+    "status": "complete",
+    "_slug": "gelatin",
+    "updated": "2026-07-06",
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 2,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/ingredients/ground-lamb.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Ground lamb",
+    "desc": "Minced sheep meat, typically shoulder and trim, running 15 to 25% fat. Higher in branched-chain fatty acids than beef, which is the source of its distinctive gaminess and its affinity for warm spice, mint, and acid. Browns fast and hard because the fat is soft and renders early.",
+    "tags": [
+      "lamb"
+    ],
+    "status": "complete",
+    "_slug": "ground-lamb",
+    "updated": "2026-07-06",
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 5,
+      "swatchGlyph": "fire",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/king-oyster-mushroom.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "King oyster mushroom",
+    "desc": "Pleurotus eryngii; the largest of the oyster genus, built around a thick white stem of dense, near-uniform flesh. Where the common oyster is all gill and fan, the king is a solid column that slices into scallop-firm rounds and shreds into meat-grain strands. The meatiest of the cultivated mushrooms.",
+    "tags": [
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "king-oyster-mushroom",
+    "updated": "2026-07-06",
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 2,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/recipes/cane-sugar-free-garlic-breadsticks.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cane-sugar-free garlic breadsticks",
+    "desc": "Soft, pillowy enriched breadsticks with no cane sugar. Honey feeds the yeast and browns the crust faster than sucrose would; a small dose of barley malt syrup deepens the flavor toward the maltiness of a real bakery breadstick. Hand-rolled into batons, proofed pillow-soft, baked, and brushed with garlic butter while hot.",
+    "tags": [
+      "bread",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "cane-sugar-free-garlic-breadsticks",
+    "cuisine": "Italian-American",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 15,
+      "total_min": 130,
+      "active_min": 35
+    },
+    "updated": "2026-07-06",
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "whole milk, warmed to 35 °C",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "barley malt syrup",
+        "slug": "barley-malt-syrup",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted and cooled to lukewarm",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "garlic, pressed or finely grated on a microplane",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "garlic powder",
+        "optional": false
+      },
+      {
+        "item": "dried oregano",
+        "optional": false
+      },
+      {
+        "item": "dried parsley flakes",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "enriched-dough"
+    ],
+    "equipment": [
+      "stand mixer",
+      "bench scraper",
+      "kitchen scale",
+      "pastry brush"
+    ],
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "olive",
+      "totalMinutes": 130,
+      "diffLabel": "medium",
+      "timeLead": "35 min",
+      "timeAnnotation": "· 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 35,
+      "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/honey-panna-cotta.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Honey panna cotta",
+    "desc": "A barely-set cream panna cotta sweetened entirely with honey, no cane sugar. Gelatin dosed low for the trembling wobble that dissolves on the tongue, the cream steeped with vanilla and a strip of lemon zest, and the honey stirred in off the heat so its aromatics survive. Finished with a thread of raw honey and flaky salt.",
+    "tags": [
+      "custard",
+      "make-ahead",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "honey-panna-cotta",
+    "cuisine": "Italian",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 5,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 10,
+      "total_min": 265,
+      "active_min": 20
+    },
+    "rating": 5,
+    "updated": "2026-07-06",
+    "ingredients": [
+      {
+        "item": "powdered gelatin",
+        "slug": "gelatin",
+        "optional": false
+      },
+      {
+        "item": "cold whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "heavy cream",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "honey, for finishing",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "fine-mesh sieve",
+      "ramekins"
+    ],
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 265,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "· 4 h rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/maple-panna-cotta.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Maple panna cotta",
+    "desc": "A barely-set cream panna cotta sweetened entirely with maple syrup, no cane sugar. Gelatin dosed low for the trembling wobble that dissolves on the tongue, the cream browned lightly with butter and steeped with vanilla and cinnamon to meet maple's caramel-woodsy register, finished with a thread of Grade A dark syrup and toasted pecans.",
+    "tags": [
+      "custard",
+      "make-ahead",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "maple-panna-cotta",
+    "cuisine": "Italian",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 5,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 12,
+      "total_min": 267,
+      "active_min": 22
+    },
+    "rating": 5,
+    "updated": "2026-07-06",
+    "ingredients": [
+      {
+        "item": "powdered gelatin",
+        "slug": "gelatin",
+        "optional": false
+      },
+      {
+        "item": "cold whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "heavy cream",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "maple syrup, Grade A dark",
+        "slug": "maple-syrup",
+        "optional": false
+      },
+      {
+        "item": "maple syrup, for finishing",
+        "slug": "maple-syrup",
+        "optional": false
+      },
+      {
+        "item": "pecans",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [
+      "fine-mesh sieve",
+      "ramekins"
+    ],
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 267,
+      "diffLabel": "easy",
+      "timeLead": "22 min",
+      "timeAnnotation": "· 4 h rest",
+      "timeMode": "active",
+      "activeMinutes": 22,
+      "filterMinutes": 22
+    }
+  },
+  {
+    "path": "pages/recipes/maple-roasted-pears-with-vanilla-cream.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Maple-roasted pears with vanilla cream",
+    "desc": "Halved pears roasted cut-side down in maple and butter until the sugars caramelize and the flesh goes silky, deglazed into a spiced pan syrup, and served warm over a lightly whipped vanilla cream sweetened with honey. No cane sugar, and a warm-against-cold contrast that makes a panna cotta feel like a full dessert course.",
+    "tags": [
+      "comfort",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "maple-roasted-pears-with-vanilla-cream",
+    "cuisine": "",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 30,
+      "total_min": 45,
+      "active_min": 20
+    },
+    "rating": 5,
+    "updated": "2026-07-06",
+    "ingredients": [
+      {
+        "item": "firm-ripe pears",
+        "slug": "pear",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "maple syrup, Grade A dark",
+        "slug": "maple-syrup",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "lemon",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "heavy cream, cold",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "walnuts or pecans",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "oven-safe skillet"
+    ],
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 13,
+      "swatchGlyph": "leaf",
+      "totalMinutes": 45,
+      "diffLabel": "easy",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/spaghetti-with-lamb-san-marzano-and-king-oyster-ragu.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Spaghetti with lamb, San Marzano, and king oyster ragu",
+    "desc": "A 50-minute ragu built on ground lamb browned hard in its own rendered fat, king oyster mushrooms cut two ways for texture (seared coins and pulled strands), and a San Marzano base cut with red wine and rosemary. The gaminess of the lamb is framed, not masked, by warm spice and a finishing lift of lemon and mint.",
+    "tags": [
+      "pasta",
+      "lamb",
+      "umami",
+      "comfort",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "spaghetti-with-lamb-san-marzano-and-king-oyster-ragu",
+    "cuisine": "Italian",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 35,
+      "total_min": 50,
+      "active_min": 40
+    },
+    "rating": 5,
+    "updated": "2026-07-06",
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "king oyster mushrooms",
+        "slug": "king-oyster-mushroom",
+        "optional": false
+      },
+      {
+        "item": "ground lamb",
+        "slug": "ground-lamb",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh rosemary",
+        "optional": false
+      },
+      {
+        "item": "anchovy fillets in olive oil",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "optional": false
+      },
+      {
+        "item": "ground cinnamon",
+        "optional": false
+      },
+      {
+        "item": "crushed red pepper flakes",
+        "optional": false
+      },
+      {
+        "item": "dry red wine",
+        "optional": false
+      },
+      {
+        "item": "canned San Marzano tomatoes",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "fresh bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "spaghetti, bronze-die-extruded",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, cold",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "pecorino romano",
+        "slug": "pecorino-romano",
+        "optional": false
+      },
+      {
+        "item": "pecorino romano rind",
+        "optional": false
+      },
+      {
+        "item": "fresh mint",
+        "optional": false
+      },
+      {
+        "item": "lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "freshly cracked black pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "pan-emulsion",
+      "maillard-sear",
+      "blooming-aromatics",
+      "deglazing"
+    ],
+    "equipment": [],
+    "added": "2026-07-06",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 50,
+      "diffLabel": "medium",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
     "path": "pages/recipes/cantonese-steamed-whole-flounder-with-ginger-scallion.html",
     "type": "recipe",
     "category": "recipes",
@@ -2384,7 +3006,7 @@
       "swatchIndex": 1,
       "swatchGlyph": "grain",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -43495,7 +44117,7 @@
       "swatchIndex": 9,
       "swatchGlyph": "fish",
       "primaryTag": "fish",
-      "usedInCount": 27,
+      "usedInCount": 28,
       "hasNutrition": false
     }
   },
@@ -44277,7 +44899,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 32,
+      "usedInCount": 35,
       "hasNutrition": true
     }
   },
@@ -44355,7 +44977,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 99,
+      "usedInCount": 102,
       "hasNutrition": true
     }
   },
@@ -44462,7 +45084,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 7,
       "hasNutrition": true
     }
   },
@@ -45494,7 +46116,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 82,
+      "usedInCount": 83,
       "hasNutrition": true
     }
   },
@@ -50118,7 +50740,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 57,
+      "usedInCount": 58,
       "hasNutrition": false
     }
   },
@@ -50158,7 +50780,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -50201,7 +50823,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": true
     }
   },
@@ -50417,7 +51039,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 111,
+      "usedInCount": 112,
       "hasNutrition": true
     }
   },
@@ -50635,7 +51257,7 @@
       "swatchIndex": 5,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -50892,7 +51514,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -51108,7 +51730,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 37,
+      "usedInCount": 38,
       "hasNutrition": true
     }
   },
@@ -56261,7 +56883,7 @@
     "_card": {
       "swatchIndex": 1,
       "swatchGlyph": "grain",
-      "usedInCount": 5
+      "usedInCount": 6
     }
   },
   {
@@ -57728,7 +58350,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 84,
+      "usedInCount": 88,
       "hasNutrition": true
     }
   },
@@ -57867,7 +58489,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 224,
+      "usedInCount": 226,
       "hasNutrition": true
     }
   },
@@ -57950,7 +58572,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -58213,7 +58835,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 40,
+      "usedInCount": 43,
       "hasNutrition": true
     }
   },
@@ -58992,7 +59614,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 27
+      "usedInCount": 30
     }
   },
   {
@@ -59432,7 +60054,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -59510,7 +60132,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 181,
+      "usedInCount": 185,
       "hasNutrition": true
     }
   },
@@ -59567,7 +60189,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 12,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -59586,7 +60208,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 232,
+      "usedInCount": 234,
       "hasNutrition": true
     }
   },
@@ -59681,7 +60303,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 26,
+      "usedInCount": 29,
       "hasNutrition": true
     }
   },
@@ -61257,7 +61879,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 79
+      "usedInCount": 80
     }
   },
   {
@@ -61293,7 +61915,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 17
+      "usedInCount": 18
     }
   },
   {
@@ -61327,7 +61949,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 18
+      "usedInCount": 19
     }
   },
   {
@@ -61397,7 +62019,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 116
+      "usedInCount": 117
     }
   },
   {
@@ -61416,7 +62038,7 @@
     "_card": {
       "swatchIndex": 12,
       "swatchGlyph": "grain",
-      "usedInCount": 20
+      "usedInCount": 21
     }
   },
   {
