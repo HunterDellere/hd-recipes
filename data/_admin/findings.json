@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-06T16:05:54.036Z",
+  "generated": "2026-07-18T21:56:38.657Z",
   "summary": {
     "errors": 0,
-    "warnings": 455,
+    "warnings": 457,
     "info": 154
   },
   "findings": [
@@ -689,6 +689,13 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/ga-kho-vietnamese-caramel-braised-chicken-with-kabocha.md",
+      "msg": "technique \"braising\" has no matching page",
+      "fix": "Create content/techniques/braising.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
+      "file": "content/recipes/gajami-jorim-korean-braised-flounder-with-radish.md",
       "msg": "technique \"braising\" has no matching page",
       "fix": "Create content/techniques/braising.md"
     },
@@ -1605,6 +1612,13 @@
     {
       "level": "WARN",
       "category": "crosslinks",
+      "file": "content/recipes/panko-parmesan-crusted-flounder-with-mushrooms-and-cabbage.md",
+      "msg": "technique \"pan-fry\" has no matching page",
+      "fix": "Create content/techniques/pan-fry.md"
+    },
+    {
+      "level": "WARN",
+      "category": "crosslinks",
       "file": "content/recipes/peanut-groundnut-soup.md",
       "msg": "technique \"dry-sweat\" has no matching page",
       "fix": "Create content/techniques/dry-sweat.md"
@@ -2250,19 +2264,19 @@
       "level": "INFO",
       "category": "tags",
       "file": "content/_schema/tags.json",
-      "msg": "102 tags in use across 896 entries. Top: umami(287), pantry(278), make-ahead(150), comfort(137), weekend-project(110), weeknight(96), spicy(95), fish(91), seafood(81), quick(72), pork(63), no-cook(62), fermentation(61), one-pot(48), chicken(47), condiment(45), bread(40), rice(37), salad(34), egg(33), vegan(31), beef(30), baked(25), stew(25), vegetarian(23), roast(23), soup(22), braise(22), fried(21), herbaceous(20)"
+      "msg": "102 tags in use across 921 entries. Top: umami(293), pantry(278), make-ahead(158), comfort(149), weekend-project(111), weeknight(102), fish(96), spicy(96), seafood(86), quick(72), pork(64), no-cook(62), fermentation(61), one-pot(50), chicken(48), condiment(45), bread(41), rice(40), egg(35), salad(34), vegan(31), beef(30), baked(28), stew(25), vegetarian(24), roast(24), braise(23), soup(23), fried(21), sweet(20)"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "index stats: 839 pages, 8139 tokens, 426.0 KB"
+      "msg": "index stats: 864 pages, 8267 tokens, 437.4 KB"
     },
     {
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "4306 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, lemon-and-red-wine-vinegar, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), buttermilk-and-mayonnaise, acid-cure-as-preservation"
+      "msg": "4359 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, lemon-and-red-wine-vinegar, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), buttermilk-and-mayonnaise, acid-cure-as-preservation"
     },
     {
       "level": "WARN",

@@ -69,6 +69,10 @@ const CUISINE_TO_REF = [
   ['turkish', 'middle-eastern-north-african'], ['moroccan', 'middle-eastern-north-african'],
   ['israeli', 'middle-eastern-north-african'], ['syrian', 'middle-eastern-north-african'],
   ['jordanian', 'middle-eastern-north-african'], ['tunisian', 'middle-eastern-north-african'],
+  // Central Asian / Afghan (no dedicated ref yet; South Asian is closest for basmati rice cookery and warm-spice work)
+  ['afghan', 'south-asian'], ['afghani', 'south-asian'],
+  ['uzbek', 'south-asian'], ['tajik', 'south-asian'], ['central asian', 'south-asian'],
+  ['hyderabadi', 'south-asian'], ['deccan', 'south-asian'],
   // West / Sub-Saharan African
   ['nigerian', 'west-and-sub-saharan-african'], ['ethiopian', 'west-and-sub-saharan-african'],
   ['senegalese', 'west-and-sub-saharan-african'], ['ghanaian', 'west-and-sub-saharan-african'],
