@@ -3607,8 +3607,21 @@ body.cmd-palette-open { overflow: hidden; }
 @media print {
 
   /* ── Page box ──────────────────────────────────────────────────────── */
+  /* A folio in the outer corner. Page 2 of a printed recipe is otherwise
+     orphaned paper: no title, no page number, nothing telling you which
+     dish it belongs to when two recipes are lying on the counter. The
+     first page suppresses it — the masthead already identifies the sheet. */
   @page {
-    margin: 16mm 15mm 14mm;
+    margin: 16mm 15mm 16mm;
+    @bottom-right {
+      content: counter(page);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.5pt;
+      color: #8c887e;
+    }
+  }
+  @page :first {
+    @bottom-right { content: ""; }
   }
 
   /* Print tokens. Redefining them here rather than hardcoding keeps the
@@ -3642,7 +3655,7 @@ body.cmd-palette-open { overflow: hidden; }
   /* Step affordances that do nothing on paper */
   .step-time-btn, .step-figure,
   /* Sections that don't belong on a cook's card */
-  .recipe-nutrition, .recipe-notes, .recipe-subs, .recipe-mods,
+  .recipe-nutrition, .recipe-notes, .recipe-mods,
   .pair-grid, .pair-blurb, .hub-chips,
   .rl-cards, .rl-groups, .rl-group, .related-cards, .related-groups,
   .related-cards-wrap, .more-like-this,
@@ -3653,12 +3666,13 @@ body.cmd-palette-open { overflow: hidden; }
 
   /* Headings for dropped sections must go too, or the card ends in a run
      of orphan headings with nothing beneath them. Each heading follows its
-     own .section-anchor, so target by anchor id. */
-  #notes, #nutrition, #substitutions, #modifications,
+     own .section-anchor, so target by anchor id.
+     Substitutions are deliberately NOT in this list: "I don't have mirin"
+     is a question you have mid-cook, with the paper in front of you. */
+  #notes, #nutrition, #modifications,
   #homemade, #pairs-with, #in-hubs, #related,
   .section-anchor#notes + .section-head,
   .section-anchor#nutrition + .section-head,
-  .section-anchor#substitutions + .section-head,
   .section-anchor#modifications + .section-head,
   .section-anchor#homemade + .section-head,
   .section-anchor#pairs-with + .section-head,
@@ -3736,28 +3750,36 @@ body.cmd-palette-open { overflow: hidden; }
     color: var(--p-ink) !important;
     text-wrap: balance;
   }
+  /* Standfirst: this is the one paragraph a cook reads once, before
+     starting, and never again. It gets a narrow measure and sits smaller
+     than the step prose — subordinate to the method, not competing with
+     it. Roman rather than italic: six lines of italic is a slog, and the
+     italic was doing decorative work rather than carrying meaning. */
   .rh-desc {
     font-family: var(--font-serif) !important;
-    font-size: 10.5pt !important;
-    line-height: 1.45 !important;
-    font-style: italic;
-    margin: 0 0 8pt !important;
+    font-size: 9.5pt !important;
+    line-height: 1.4 !important;
+    font-style: normal !important;
+    margin: 0 0 9pt !important;
     color: var(--p-soft) !important;
-    /* Keep the standfirst to a readable measure even on a wide sheet */
-    max-width: 34em;
+    max-width: 30em;
   }
-  /* Stats as a mono strip — the one place the card wants machine-precision
-     rather than book typography: "4 SERVINGS · 1 H 15 MIN · MEDIUM" */
+  /* Stats as a spec strip — the one place the card wants machine
+     precision rather than book typography: "4 SERVINGS · 1 H 15 MIN ·
+     MEDIUM". These are the numbers you check before committing to a
+     recipe, so they sit at full ink strength between two rules rather
+     than fading into grey meta text. */
   .rh-stats {
     display: block !important;
     font-family: var(--font-mono) !important;
-    font-size: 7.5pt !important;
-    letter-spacing: 0.1em;
+    font-size: 8pt !important;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--p-soft) !important;
+    color: var(--p-ink) !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 5pt 0 0 !important;
     border: 0 !important;
+    border-top: 0.5pt solid var(--p-rule) !important;
   }
   .rh-stat {
     display: inline !important;
@@ -3772,11 +3794,14 @@ body.cmd-palette-open { overflow: hidden; }
   .rh-stat-icon, .rh-macros { display: none !important; }
   .rh-stat-text, .rh-stat-value, .rh-stat-label, .rh-stat-sub {
     display: inline !important;
-    font-size: 7.5pt !important;
+    font-size: 8pt !important;
     font-weight: 500 !important;
     color: inherit !important;
   }
   .rh-stat-value { color: var(--p-ink) !important; font-weight: 700 !important; }
+  /* The unit label rides quieter than its number: "4 SERVINGS" should
+     read as one value, not two competing words. */
+  .rh-stat-label { color: var(--p-faint) !important; }
   .rh-stat-label::before { content: " "; }
   /* The parenthetical sub-notes ("serves 4 with rice and cabbage") are
      hero-only colour; on a stats strip they break the rhythm. */
@@ -3786,23 +3811,42 @@ body.cmd-palette-open { overflow: hidden; }
   /* Mono eyebrow, not a serif head: these are wayfinding labels on a
      reference card, and setting them apart from the serif prose is what
      lets the eye skip between INGREDIENTS and METHOD at a glance. */
+  /* Two tiers, because the sections are not equals. INGREDIENTS and
+     EXECUTION are what the cook works from and get a full-width red rule
+     that reads as a chapter break. Everything else (before you start,
+     safety, equipment, substitutions) is support and gets a quieter grey
+     hairline. Without this split every heading shouts equally and the
+     card has no lead — which is what made the earlier version read flat. */
   .section-head {
     display: block !important;
-    margin: 15pt 0 6pt !important;
-    padding: 0 0 3pt !important;
+    margin: 13pt 0 5pt !important;
+    padding: 0 0 2.5pt !important;
     border: 0 !important;
-    border-bottom: 0.5pt solid var(--p-rule-firm) !important;
+    border-bottom: 0.5pt solid var(--p-rule) !important;
     page-break-after: avoid;
     break-after: avoid;
   }
   .section-head h2 {
     font-family: var(--font-mono) !important;
-    font-size: 8pt !important;
+    font-size: 7.5pt !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
-    letter-spacing: 0.16em !important;
+    letter-spacing: 0.15em !important;
     text-transform: uppercase;
     margin: 0 !important;
+    color: var(--p-soft) !important;
+  }
+  /* Primary tier */
+  .section-anchor#ingredients + .section-head,
+  .section-anchor#execution + .section-head {
+    margin-top: 17pt !important;
+    padding-bottom: 3.5pt !important;
+    border-bottom: 1pt solid var(--p-accent) !important;
+  }
+  .section-anchor#ingredients + .section-head h2,
+  .section-anchor#execution + .section-head h2 {
+    font-size: 9pt !important;
+    letter-spacing: 0.18em !important;
     color: var(--p-accent) !important;
   }
   .section-blurb { display: none !important; }
@@ -3817,17 +3861,26 @@ body.cmd-palette-open { overflow: hidden; }
     margin: 0 0 4pt !important;
     padding: 0 0 0 10pt !important;
   }
+  /* Dashes rather than bullets, set flush: a bulleted list inside a ruled
+     box double-indents and eats the measure for no gain. */
   .recipe-prelude-list {
     margin: 0 !important;
-    padding-left: 11pt !important;
+    padding: 0 !important;
+    list-style: none !important;
   }
   .recipe-prelude-list li {
-    font-size: 9pt !important;
-    line-height: 1.4 !important;
+    font-size: 8.5pt !important;
+    line-height: 1.38 !important;
     color: var(--p-soft) !important;
     margin: 0 0 3pt !important;
+    padding-left: 8pt !important;
+    text-indent: -8pt !important;
     page-break-inside: avoid;
     break-inside: avoid;
+  }
+  .recipe-prelude-list li::before {
+    content: "— ";
+    color: var(--p-faint);
   }
 
   /* ── Ingredients ───────────────────────────────────────────────────── */
@@ -4097,6 +4150,47 @@ body.cmd-palette-open { overflow: hidden; }
   .eq-chip + .eq-chip-stub::before,
   .eq-chip-stub + .eq-chip::before,
   .eq-chip-stub + .eq-chip-stub::before { content: ", "; }
+
+  /* ── Substitutions ─────────────────────────────────────────────────── */
+  /* Kept on the card because "I don't have mirin" is a mid-cook question.
+     Set as a two-column reference list: the swap itself in Inter at full
+     ink (the answer you're hunting for), the reasoning in smaller serif
+     underneath (read once, if at all). The arrow is the house red — it's
+     the one glyph the eye follows down the column. */
+  .recipe-subs {
+    display: block !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    column-count: 2;
+    column-gap: 20pt;
+  }
+  .recipe-subs li {
+    display: block !important;
+    margin: 0 0 6pt !important;
+    padding: 0 !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8.5pt !important;
+    line-height: 1.35 !important;
+    color: var(--p-ink) !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .recipe-subs li strong {
+    font-weight: 600 !important;
+    color: var(--p-ink) !important;
+  }
+  /* The renderer emits a literal "→" between the ingredient and its swaps;
+     colouring it via ::marker isn't possible, so the whole line carries
+     ink weight and the note below it recedes instead. */
+  .sub-note {
+    display: block !important;
+    margin-top: 1.5pt !important;
+    font-family: var(--font-serif) !important;
+    font-size: 8pt !important;
+    line-height: 1.35 !important;
+    color: var(--p-faint) !important;
+  }
 
   /* ── Widow / orphan control ────────────────────────────────────────── */
   p, li { orphans: 3; widows: 3; }
