@@ -1100,7 +1100,7 @@ a.rh-tag:hover { color: var(--accent); border-color: var(--accent); background: 
   transition: opacity var(--d-fast) var(--ease-out), transform var(--d-fast) var(--ease-out);
 }
 .sub-hint:hover::after, .sub-hint:focus-visible::after { opacity: 1; transform: translateY(0); }
-@media print { .sub-hint { border-bottom: none; } .sub-hint::after { display: none; } }
+/* print: see the consolidated print block near the end of this file */
 .step-time {
   display: inline-block;
   margin-left: .75em;
@@ -1133,7 +1133,7 @@ button.step-time-btn:active { transform: scale(0.97); }
 button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .step-time-icon { font-size: 12px; line-height: 1; }
 .step-time-text { font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
-@media print { button.step-time-btn { border: 1px solid var(--rule-soft) !important; } }
+/* print: see the consolidated print block near the end of this file */
 
 /* Floating step-timer dock — anchored top-right on desktop, top-stretched
    on mobile. Stacks multiple cards. Kept above the cook-bar via z-index. */
@@ -1220,7 +1220,7 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   .step-timer-card { min-width: 0; }
   .st-btn { min-height: 36px; font-size: 13px; }
 }
-@media print { .step-timer-dock { display: none !important; } }
+/* print: see the consolidated print block near the end of this file */
 
 /* Step image: full-width below step text. Tap to expand via lightbox. */
 .step-figure {
@@ -1867,85 +1867,12 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
 }
 
 /* ── print ──────────────────────────────────────────────────────────────
-   Print is a first-class output. The page collapses to a single column of
-   black text on white, drops anything interactive, and keeps the structural
-   bits a cook actually wants on paper (title, stats, ingredients, steps,
-   safety_notes, before_you_start, substitutions, modifications, notes). */
-@media print {
-  /* Hide everything that's chrome, navigation, or interactive-only */
-  .topnav, .reading-progress, .toc-toggle, .sidebar, .page-footer,
-  .related-cards, .related-groups, .related-group,
-  .rl-cards, .rl-groups, .rl-group, .adj-nav, .ing-controls,
-  .back-to-top, .skip-link, .topic-hero-eyebrow, .rh-eyebrow,
-  .ing-shop-btn, .rh-cook-btn, .rh-print-btn, .cook-bar, .cv-ing-toggle,
-  .bottom-nav, .theme-toggle, .pf-btn, .pf-btn-share,
-  .cmd-palette-overlay, .hover-card, .hover-card-host,
-  .step-time, .step-time-btn, .step-tech,
-  .recipe-pairings, .pairings, .homemade-alts, .recipe-homemade,
-  .breadcrumbs, .hub-chips, .recipe-hubs,
-  .rh-tags, .topic-hero-meta, .rh-photo, .recipe-hero.has-photo .rh-photo,
-  .ad, .ad-slot, .adsbygoogle,
-  .step-timer-dock, .filter-bar, [data-filter-bar],
-  details[data-ing-panel="mise"] > summary .ing-panel-chev,
-  details[data-ing-panel="shop"] > summary .ing-panel-chev,
-  .step-figure, .recipe-hero .rh-actions
-  { display: none !important; }
-
-  /* Force light, single-column */
-  body { background: #fff !important; color: #000 !important; font-size: 11pt; }
-  .shell { display: block; padding: 0; max-width: none; grid-template-columns: 1fr !important; }
-  .main { max-width: none; padding: 0; }
-  * { box-shadow: none !important; text-shadow: none !important; }
-
-  /* Recipe hero — title, desc, stats only */
-  .recipe-hero, .topic-hero { margin: 0 0 .5rem; padding: 0 0 .5rem; border-bottom: 1pt solid #000; }
-  .rh-title, .topic-hero-title { font-size: 18pt; margin: 0 0 .3rem; }
-  .rh-desc { font-size: 11pt; margin: 0 0 .4rem; }
-  .rh-stats { gap: .4rem 1.2rem; font-size: 10pt; }
-
-  /* Section heads compact */
-  .section-head { margin: .9rem 0 .35rem; page-break-after: avoid; }
-  .section-head h2 { font-size: 13pt; }
-
-  /* Ingredient rows — keep tight, never break across pages */
-  .recipe-ingredients { font-size: 10pt; }
-  .ing-row { page-break-inside: avoid; padding: .15rem 0; }
-  .ing-alt { color: #555 !important; }
-
-  /* Force shop panel open in print (it's the canonical ingredients list);
-     collapse the mise panel (redundant with shop on paper). */
-  details[data-ing-panel="shop"] > summary,
-  details[data-ing-panel="mise"] > summary { list-style: none; }
-  details[data-ing-panel="shop"] .ing-list-shop { display: block !important; }
-
-  /* Steps — keep individual steps together where possible */
-  .recipe-steps { font-size: 11pt; line-height: 1.4; }
-  .step-item { page-break-inside: avoid; padding: .35rem 0; }
-  .step-num { background: #000 !important; color: #fff !important; }
-  .step-body { font-size: 11pt; }
-
-  /* Substitutions / modifications — keep but collapse to flat list */
-  details.subs, details.modifications, details[open] {
-    page-break-inside: avoid;
-  }
-  details > summary { font-weight: 600; list-style: none; }
-
-  /* Safety notes / before-you-start — keep, they matter on paper */
-  .recipe-prelude, .recipe-prelude-list, .safety-notes { font-size: 10.5pt; }
-
-  /* Nutrition — keep, but trim */
-  .recipe-nutrition { background: #fff !important; border: 1pt solid #ccc; font-size: 10pt; }
-
-  /* Notes — start on a new page so the recipe-proper has room to breathe.
-     If it fits, it fits; if it overflows, it gets its own clean page. */
-  #notes, .section-head:has(+ .recipe-notes), .recipe-notes {
-    page-break-before: always;
-  }
-
-  /* Links black, no underlines, no borders */
-  a { color: #000 !important; text-decoration: none; border: none !important; }
-  .ing-link, .x-link, .step-tech { border: none !important; }
-}
+   Print rules live in ONE place: the "printed recipe card" block near the
+   end of this file. They used to be split across two large @media print
+   blocks that contradicted each other (one set `page-break-before: always`
+   on #notes while the other set `display: none` on it), plus a handful of
+   one-line fragments. Consolidating them is what makes the output
+   predictable — see that block for the full stylesheet. */
 
 /* ── Cook mode (extends existing cook's-view): hide more chrome ─────────
    The existing data-cooks-view="on" already dims non-active steps; here we
@@ -3345,7 +3272,7 @@ body.lb-locked { overflow: hidden; }
   .lb-next { right: .5rem; }
   .lb-close { top: .5rem; right: .5rem; }
 }
-@media print { .lb-overlay { display: none !important; } }
+/* print: see the consolidated print block near the end of this file */
 
 /* ── Safety callouts ─────────────────────────────────────────────────
    Rendered on recipe and technique pages whose safety_notes[] flags a
@@ -3537,9 +3464,7 @@ body.cmd-palette-open { overflow: hidden; }
   .cmd-palette-overlay, .cmd-palette { transition: none; }
 }
 
-@media print {
-  .cmd-palette-overlay { display: none !important; }
-}
+/* print: see the consolidated print block near the end of this file */
 
 /* "Jump to step N" flash highlight */
 .recipe-steps .step-item.step-flash {
@@ -3649,56 +3574,533 @@ body.cmd-palette-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .hcard { transition: none; }
 }
-@media print {
-  .hcard { display: none !important; }
-}
+/* print: see the consolidated print block near the end of this file */
 
-/* === Item D: print stylesheet — one-page recipe card === */
-/* Existing print rules at lines 908, 995, 1617, 2773 handle the basics.
-   This block fills the gaps: hide the cook log + interactive controls,
-   collapse expandable panels open, tighten spacing. */
+/* ════════════════════════════════════════════════════════════════════════
+   PRINT — the recipe card
+   ════════════════════════════════════════════════════════════════════════
+   The single authoritative print stylesheet. Every print rule lives here;
+   don't add @media print blocks elsewhere in this file.
+
+   Design intent: the printed card is the SAME PUBLICATION as the screen,
+   set for paper. It keeps the house faces (EB Garamond for reading, Inter
+   for scanning, JetBrains Mono for labels and quantities) and the house
+   red. What changes is the ground: paper is already warm, so the cream
+   screen tint is dropped for white and the ink stays warm (#22201b) rather
+   than going pure black, which prints harsh against warm stock.
+
+   Layout: ingredients set two-up (short lines — one column wastes half the
+   sheet), steps set as one wide measure of serif prose with the step number
+   hanging in the left margin in red. A cook glancing down from the stove
+   finds their place by the red numeral, which is the one job the printed
+   card has that the screen doesn't.
+
+   What lands on paper: title, yield/time, ingredients, steps, safety,
+   equipment. What doesn't: nutrition, notes, substitutions, modifications,
+   pairings, related, collections, homemade links, sources. Those are
+   browsing surfaces; each one pushes the steps onto another page.
+
+   The companion fix is in scripts/recipe.js: a beforeprint handler opens
+   every <details> so collapsed panels can't silently vanish. CSS alone
+   can't do that reliably. */
+
 @media print {
-  /* Site chrome (additive to line 1617) */
-  .step-time-btn, .step-time, .step-tech,
-  .ing-panel-summary .ing-panel-chev,
-  .ing-units-control, .ing-scale,
-  .home-footer, .home-cta-row, .home-search-section, .home-families-section,
-  .recent-tabs, .home-divider, .home-hero-ornament {
-    display: none !important;
+
+  /* ── Page box ──────────────────────────────────────────────────────── */
+  @page {
+    margin: 16mm 15mm 14mm;
   }
 
-  /* Force the shopping list panel open (it's a <details>); hide the mise
-     duplicate so we get one clean ingredients list. */
-  details.ing-panel-shop[open] .ing-panel-summary,
-  details.ing-panel-shop .ing-panel-summary { display: none !important; }
-  details.ing-panel-shop > .ing-list-shop { display: block !important; }
-  details.ing-panel-mise { display: none !important; }
+  /* Print tokens. Redefining them here rather than hardcoding keeps the
+     card on the same palette as the screen if the house colors ever move. */
+  :root {
+    --p-ink: #22201b;        /* warm near-black — the house ink */
+    --p-soft: #6b6459;       /* secondary prose, prep clauses */
+    --p-faint: #8c887e;      /* de-emphasized meta */
+    --p-accent: #bb3a2c;     /* the house red */
+    --p-rule: #d8d2c4;       /* hairlines */
+    --p-rule-firm: #b3ab9a;  /* section underscores */
+  }
 
-  /* Tighter ingredient rows: one line each, no checkbox */
-  .ing-cb, .ing-check { display: none !important; }
-  .ing-row { padding: 0.18rem 0 !important; border: 0 !important; }
-  .ing-qty { font-weight: 600; }
+  /* ── Hide: chrome, navigation, interactive-only ────────────────────── */
+  .topnav, .reading-progress, .toc-toggle, .sidebar, .page-footer,
+  .back-to-top, .skip-link, .breadcrumbs, .toc-breadcrumb,
+  .bottom-nav, .theme-toggle, .cook-bar, .cv-ing-toggle,
+  .cmd-palette-overlay, .hover-card, .hover-card-host, .hcard,
+  .lb-overlay, .step-timer-dock, .filter-bar, [data-filter-bar],
+  .adj-nav, .ad, .ad-slot, .adsbygoogle,
+  .pf-btn, .pf-btn-share,
+  .home-footer, .home-cta-row, .home-search-section,
+  .home-families-section, .recent-tabs, .home-divider, .home-hero-ornament,
+  /* Hero: keep title/desc/stats, drop actions, tags, photo, eyebrow */
+  .rh-actions, .rh-cook-btn, .rh-print-btn, .rh-jump-btn,
+  .rh-tags, .rh-eyebrow, .rh-photo, .topic-hero-eyebrow,
+  /* Ingredient controls are live-only (scaling, units, clipboard) */
+  .ing-controls, .ing-shop-btn, .ing-units-control, .ing-scale,
+  .ing-panel-chev, .ing-panel-count, .ing-panel-meta,
+  .ing-cb, .ing-check, .ing-check-mark,
+  /* Step affordances that do nothing on paper */
+  .step-time-btn, .step-figure,
+  /* Sections that don't belong on a cook's card */
+  .recipe-nutrition, .recipe-notes, .recipe-subs, .recipe-mods,
+  .pair-grid, .pair-blurb, .hub-chips,
+  .rl-cards, .rl-groups, .rl-group, .related-cards, .related-groups,
+  .related-cards-wrap, .more-like-this,
+  .hm-list, .hm-blurb, .homemade-alts, .recipe-homemade,
+  .sources,
+  .mynotes-details, .mynotes
+  { display: none !important; }
 
-  /* Steps: keep numbering but compress */
-  .recipe-steps { padding-left: 0; }
-  .step-item { display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.4rem; margin: 0.4rem 0 !important; }
-  .step-body { font-size: 11pt; line-height: 1.45; }
+  /* Headings for dropped sections must go too, or the card ends in a run
+     of orphan headings with nothing beneath them. Each heading follows its
+     own .section-anchor, so target by anchor id. */
+  #notes, #nutrition, #substitutions, #modifications,
+  #homemade, #pairs-with, #in-hubs, #related,
+  .section-anchor#notes + .section-head,
+  .section-anchor#nutrition + .section-head,
+  .section-anchor#substitutions + .section-head,
+  .section-anchor#modifications + .section-head,
+  .section-anchor#homemade + .section-head,
+  .section-anchor#pairs-with + .section-head,
+  .section-anchor#in-hubs + .section-head,
+  .section-anchor#related + .section-head
+  { display: none !important; }
 
-  /* Drop low-value sections from a print of a recipe */
-  #homemade, #pairs-with, #in-hubs, #related, #notes,
-  .related-cards-wrap, .more-like-this { display: none !important; }
+  /* ── Canvas ────────────────────────────────────────────────────────── */
+  html, body {
+    background: #fff !important;
+    color: var(--p-ink) !important;
+    font-family: var(--font-serif) !important;
+    font-size: 10pt;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* Screen cards use soft tinted fills that print as muddy grey slabs.
+     Flatten everything, then let the few elements that genuinely need ink
+     re-assert their own background further down. */
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    background-color: transparent !important;
+  }
+  /* The category tint is painted by a ::before gradient on the hero. It
+     survives a background reset as a pink wash across the top of page 1,
+     so the decorative layer is removed outright. */
+  .recipe-hero::before, .topic-hero::before,
+  .recipe-hero::after, .topic-hero::after {
+    display: none !important;
+    content: none !important;
+  }
+  .shell, .main {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  /* Empty inline anchors must not generate boxes, or every section
+     inherits a phantom gap above it. */
+  .section-anchor { display: none !important; }
 
-  /* Page break between hero and steps; avoid orphan headings */
-  .recipe-hero { page-break-after: avoid; margin-bottom: 0.5rem !important; }
-  .rh-stats { font-size: 10pt; }
-  .rh-tags, .rh-actions { display: none !important; }
+  a, a:link, a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+    border: 0 !important;
+  }
+  .ing-link, .x-link, .step-tech, .sub-hint {
+    border: 0 !important;
+    color: inherit !important;
+  }
+  .sub-hint::after { display: none !important; }
 
-  /* Nutrition: compact table */
-  .recipe-nutrition table { font-size: 10pt; }
-  .recipe-nutrition { padding: 0.4rem !important; margin-top: 0.6rem !important; }
+  /* ── Masthead ──────────────────────────────────────────────────────── */
+  .recipe-hero, .topic-hero {
+    display: block !important;
+    margin: 0 0 14pt !important;
+    padding: 0 0 9pt !important;
+    border: 0 !important;
+    border-bottom: 1.5pt solid var(--p-accent) !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  .rh-info { display: block !important; }
+  .rh-title, .topic-hero-title {
+    font-family: var(--font-serif) !important;
+    font-size: 25pt !important;
+    font-weight: 600 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.015em !important;
+    margin: 0 0 5pt !important;
+    color: var(--p-ink) !important;
+    text-wrap: balance;
+  }
+  .rh-desc {
+    font-family: var(--font-serif) !important;
+    font-size: 10.5pt !important;
+    line-height: 1.45 !important;
+    font-style: italic;
+    margin: 0 0 8pt !important;
+    color: var(--p-soft) !important;
+    /* Keep the standfirst to a readable measure even on a wide sheet */
+    max-width: 34em;
+  }
+  /* Stats as a mono strip — the one place the card wants machine-precision
+     rather than book typography: "4 SERVINGS · 1 H 15 MIN · MEDIUM" */
+  .rh-stats {
+    display: block !important;
+    font-family: var(--font-mono) !important;
+    font-size: 7.5pt !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--p-soft) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  .rh-stat {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  .rh-stat + .rh-stat::before {
+    content: "  ·  ";
+    color: var(--p-accent);
+  }
+  .rh-stat-icon, .rh-macros { display: none !important; }
+  .rh-stat-text, .rh-stat-value, .rh-stat-label, .rh-stat-sub {
+    display: inline !important;
+    font-size: 7.5pt !important;
+    font-weight: 500 !important;
+    color: inherit !important;
+  }
+  .rh-stat-value { color: var(--p-ink) !important; font-weight: 700 !important; }
+  .rh-stat-label::before { content: " "; }
+  /* The parenthetical sub-notes ("serves 4 with rice and cabbage") are
+     hero-only colour; on a stats strip they break the rhythm. */
+  .rh-stat-sub { display: none !important; }
 
-  /* Strip page background */
-  @page { margin: 1.4cm; }
+  /* ── Section headings ──────────────────────────────────────────────── */
+  /* Mono eyebrow, not a serif head: these are wayfinding labels on a
+     reference card, and setting them apart from the serif prose is what
+     lets the eye skip between INGREDIENTS and METHOD at a glance. */
+  .section-head {
+    display: block !important;
+    margin: 15pt 0 6pt !important;
+    padding: 0 0 3pt !important;
+    border: 0 !important;
+    border-bottom: 0.5pt solid var(--p-rule-firm) !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  .section-head h2 {
+    font-family: var(--font-mono) !important;
+    font-size: 8pt !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.16em !important;
+    text-transform: uppercase;
+    margin: 0 !important;
+    color: var(--p-accent) !important;
+  }
+  .section-blurb { display: none !important; }
+
+  /* ── Before you start ──────────────────────────────────────────────── */
+  /* Load-bearing on paper: it's what the cook needed to know an hour ago. */
+  .recipe-prelude-section, .recipe-prelude {
+    display: block !important;
+    border: 0 !important;
+    border-left: 2pt solid var(--p-rule-firm) !important;
+    border-radius: 0 !important;
+    margin: 0 0 4pt !important;
+    padding: 0 0 0 10pt !important;
+  }
+  .recipe-prelude-list {
+    margin: 0 !important;
+    padding-left: 11pt !important;
+  }
+  .recipe-prelude-list li {
+    font-size: 9pt !important;
+    line-height: 1.4 !important;
+    color: var(--p-soft) !important;
+    margin: 0 0 3pt !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* ── Ingredients ───────────────────────────────────────────────────── */
+  /* Both panels print: the shopping list answers "what do I buy", prep-by-
+     stage answers "what goes in when". Different questions, both wanted. */
+  .recipe-ingredients { display: block !important; }
+  .ing-panel {
+    display: block !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 0 10pt !important;
+    overflow: visible !important;
+    break-inside: auto;
+  }
+  .ing-panel-summary {
+    display: block !important;
+    list-style: none !important;
+    padding: 0 0 4pt !important;
+    margin: 0 !important;
+    border: 0 !important;
+    cursor: auto;
+    /* A panel label alone at a page foot is the worst orphan on the card */
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .ing-panel-summary::-webkit-details-marker,
+  .ing-panel-summary::marker { display: none !important; content: none !important; }
+  .ing-panel-title {
+    font-family: var(--font-mono) !important;
+    font-size: 7.5pt !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase;
+    color: var(--p-soft) !important;
+  }
+  /* Two columns — ingredient lines are short and a single column wastes
+     half the sheet. Steps stay one wide measure; they're prose. */
+  .ing-list-shop, .ing-mise-body {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    column-count: 2;
+    column-gap: 20pt;
+    /* `balance`, not `auto`. In a paged context `auto` fills to the
+       fragmentainer height, which here collapses both panels to a single
+       column and wastes half of every sheet. `balance` gives true two-up
+       columns; the cost is that a panel which can't fit the remaining
+       space moves whole to the next page, which is the better trade for a
+       list the cook reads as one block. */
+    column-fill: balance;
+  }
+  /* Each aisle / phase is one <ol>. Keeping the group unbroken stops a
+     heading from stranding at a column foot with its rows in the next
+     column (or, worse, on the next page). */
+  .ing-list, .ing-list-shop-section {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .ing-group-head, .ing-shop-section {
+    display: block !important;
+    font-family: var(--font-mono) !important;
+    font-size: 7pt !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.12em !important;
+    color: var(--p-faint) !important;
+    margin: 7pt 0 2.5pt !important;
+    padding: 0 0 1.5pt !important;
+    border: 0 !important;
+    border-bottom: 0.5pt solid var(--p-rule) !important;
+    break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+  }
+  .ing-group-head:first-child, .ing-shop-section:first-child { margin-top: 0 !important; }
+  .ing-shop-section-count { display: none !important; }
+  /* Quantity in mono with tabular figures so the numbers form a true
+     column the eye can run down; the name in Inter beside it. */
+  .ing-row {
+    display: block !important;
+    padding: 1.5pt 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8.5pt !important;
+    line-height: 1.38 !important;
+    color: var(--p-ink) !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .ing-qty {
+    font-family: var(--font-mono) !important;
+    font-weight: 600 !important;
+    font-size: 8pt !important;
+    font-variant-numeric: tabular-nums;
+    color: var(--p-ink) !important;
+  }
+  .ing-qty::after { content: "\00a0\00a0"; }
+  .ing-name {
+    display: inline !important;
+    color: var(--p-ink) !important;
+    font-size: 8.5pt !important;
+  }
+  /* Prep clauses, parenthetical conversions and alternates are support —
+     they recede so the quantity + name line stays the figure. */
+  .ing-prep, .ing-note, .ing-alt, .ing-opt {
+    display: inline !important;
+    font-size: 8pt !important;
+    color: var(--p-faint) !important;
+  }
+
+  /* ── Steps ─────────────────────────────────────────────────────────── */
+  /* Serif prose at a comfortable reading size with the numeral hanging in
+     the margin — the cook's "where was I" anchor. */
+  .recipe-steps {
+    display: block !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    counter-reset: none;
+  }
+  .step-item {
+    display: grid !important;
+    grid-template-columns: 20pt 1fr;
+    gap: 8pt;
+    align-items: baseline;
+    margin: 0 0 8pt !important;
+    padding: 0 !important;
+    border: 0 !important;
+    /* Cook's view dims inactive steps; on paper everything is equal */
+    opacity: 1 !important;
+    filter: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  /* Red numeral, no disc: a filled circle at this size prints as a blob
+     and burns toner on every step. The colour alone carries it. */
+  .step-num {
+    grid-column: 1;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: none !important;
+    font-family: var(--font-mono) !important;
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.3 !important;
+    text-align: right;
+    color: var(--p-accent) !important;
+  }
+  .step-body {
+    grid-column: 2;
+    font-family: var(--font-serif) !important;
+    font-size: 10.5pt !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    color: var(--p-ink) !important;
+    /* Long lines are hard to track back from a standing position */
+    max-width: 40em;
+  }
+  /* Inline quantities inside step prose: the number a cook re-checks
+     mid-motion, so it gets mono + weight without shouting in red. */
+  .step-qty {
+    font-family: var(--font-mono) !important;
+    font-size: 9.5pt !important;
+    font-weight: 600 !important;
+    font-variant-numeric: tabular-nums;
+    color: var(--p-ink) !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+  .step-tech {
+    display: inline !important;
+    font-style: italic;
+    color: var(--p-soft) !important;
+  }
+  /* Durations as a quiet mono aside, not the screen's interactive pill */
+  .step-time {
+    display: inline !important;
+    margin-left: 0.5em !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font-family: var(--font-mono) !important;
+    font-size: 7.5pt !important;
+    letter-spacing: 0.04em;
+    color: var(--p-faint) !important;
+    white-space: nowrap;
+  }
+  .step-time::before { content: "— "; }
+
+  /* ── Safety ────────────────────────────────────────────────────────── */
+  /* The one section where trimming for space would be actively unsafe.
+     Red rule marks it as the card's warning register. */
+  .safety-callout {
+    display: block !important;
+    border: 0 !important;
+    border-left: 2pt solid var(--p-accent) !important;
+    border-radius: 0 !important;
+    padding: 0 0 0 10pt !important;
+    margin: 10pt 0 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .safety-callout-icon { display: none !important; }
+  .safety-callout-head {
+    font-family: var(--font-mono) !important;
+    font-size: 7.5pt !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.14em !important;
+    color: var(--p-accent) !important;
+    margin: 0 0 4pt !important;
+  }
+  .safety-list { margin: 0 !important; padding: 0 !important; list-style: none !important; }
+  .safety-item {
+    font-size: 8.5pt !important;
+    line-height: 1.42 !important;
+    color: var(--p-soft) !important;
+    margin: 0 0 5pt !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .safety-item-for {
+    display: block !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8.5pt !important;
+    font-weight: 600 !important;
+    color: var(--p-ink) !important;
+  }
+  .safety-item-why { color: var(--p-soft) !important; }
+  /* "Reference →" links are dead ink on paper */
+  .safety-item-link { display: none !important; }
+
+  /* ── Equipment ─────────────────────────────────────────────────────── */
+  /* A comma-run of tool names. Screen chips would print as a ragged grid
+     of bordered boxes eating a third of a page. */
+  .recipe-equipment {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8.5pt !important;
+    color: var(--p-soft) !important;
+  }
+  .eq-chip, .eq-chip-stub {
+    display: inline !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8.5pt !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    color: var(--p-soft) !important;
+  }
+  .eq-chip + .eq-chip::before,
+  .eq-chip + .eq-chip-stub::before,
+  .eq-chip-stub + .eq-chip::before,
+  .eq-chip-stub + .eq-chip-stub::before { content: ", "; }
+
+  /* ── Widow / orphan control ────────────────────────────────────────── */
+  p, li { orphans: 3; widows: 3; }
+  h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
 }
 
 /* === Item F: related-recipes — mobile horizontal carousel for the recipes group === */
@@ -3761,9 +4163,7 @@ body.cmd-palette-open { overflow: hidden; }
   opacity: 0.5;
   font-size: 0.85em;
 }
-@media print {
-  .toc-breadcrumb { display: none !important; }
-}
+/* print: see the consolidated print block near the end of this file */
 
 /* === Item 2: recipe page typography pass ============================
    Quieter chrome, more breathing room, less sterile. The recipe page

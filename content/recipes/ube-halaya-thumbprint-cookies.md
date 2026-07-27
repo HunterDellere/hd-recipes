@@ -23,7 +23,7 @@ course: 'dessert'
 diet: ['vegetarian']
 
 before_you_start:
-  - 'The brown butter has to be chilled back to a soft, plastic solid before you cream it, which takes about 45 minutes in the fridge. Brown it first thing, then mise everything else while it cools. Liquid brown butter will not cream with the sugar and gives you a greasy dough that spreads instead of holding a thumb well.'
+  - 'The brown butter has to be chilled back to a soft, plastic solid before you cream it, which takes about 45 minutes in the fridge. Brown it first thing, then prep everything else while it cools. Liquid brown butter will not cream with the sugar and gives you a greasy dough that spreads instead of holding a thumb well.'
   - 'Hold back a third of the ube halaya cold for after the bake. Anthocyanin fades 15 to 20% under oven heat, so the jam baked into the well dulls; a fresh cold spoonful dropped into each cookie once cooled restores the vivid violet that makes the cookie read as ube rather than generic jam.'
   - 'Use muted-violet jarred halaya (Good Shepherd) rather than a fluorescent-purple, dye-loaded jar. In a thumbprint the jam sits exposed in the center, so its honest color is on full display.'
 

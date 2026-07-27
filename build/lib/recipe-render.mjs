@@ -15,6 +15,19 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// "heavy-cast-iron-skillet" → "Heavy cast iron skillet". Used where a slug
+// has no matching entry page and would otherwise surface raw to the reader.
+// Sentence case, not title case: these sit in running prose, and title case
+// would make an unlinked stub louder than the real linked equipment beside it.
+function humanizeSlug(slug) {
+  const words = String(slug || '')
+    .replace(/^[a-z]+\//, '')
+    .replace(/[-_]+/g, ' ')
+    .trim();
+  if (!words) return '';
+  return words.charAt(0).toUpperCase() + words.slice(1);
+}
+
 /**
  * Render a multi-paragraph prose block from frontmatter (e.g. fm.about) as proper
  * HTML — paragraphs, bold, italics, ordered/unordered lists, inline code.
@@ -662,7 +675,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
   const baseServings = fm.servings || 1;
   return `
     <span class="section-anchor" id="ingredients"></span>
-    <div class="section-head"><h2>Mise en Place</h2></div>
+    <div class="section-head"><h2>Ingredients</h2></div>
     <div class="recipe-ingredients" data-base-servings="${baseServings}">
       <div class="ing-controls">
         <div class="ing-control ing-scale">
@@ -707,7 +720,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
       </details>
       ${phaseCount > 0 ? `<details class="ing-panel ing-panel-mise" data-ing-panel="mise">
         <summary class="ing-panel-summary">
-          <span class="ing-panel-title">Mise en place by phase</span>
+          <span class="ing-panel-title">Prep by stage</span>
           <span class="ing-panel-meta">
             <span class="ing-panel-count">${phaseCount} ${phaseCount === 1 ? 'phase' : 'phases'}</span>
             <span class="ing-panel-chev" aria-hidden="true">▾</span>
@@ -1018,7 +1031,11 @@ export function renderEquipment(fm, currentPath, equipmentBySlug) {
       const title = (target.title || slug).split('—')[0].split('·')[0].trim();
       return `<a class="eq-chip" href="${escapeHtml(href)}">${escapeHtml(title)}</a>`;
     }
-    return `<span class="eq-chip eq-chip-stub">${escapeHtml(slug)}</span>`;
+    // No equipment page for this slug yet. Render the human form rather
+    // than the raw slug — "heavy-cast-iron-skillet" reads as a broken
+    // token to anyone who doesn't know it's a filename, and it's the one
+    // thing on a printed card with no link to explain itself.
+    return `<span class="eq-chip eq-chip-stub">${escapeHtml(humanizeSlug(slug))}</span>`;
   }).join('');
   return `
     <span class="section-anchor" id="equipment"></span>
@@ -1066,7 +1083,7 @@ export function renderBeforeYouStart(fm) {
   return `
     <span class="section-anchor" id="before-you-start"></span>
     <section class="recipe-prelude-section">
-    <div class="section-head"><h2>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before mise.</p></div>
+    <div class="section-head"><h2>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before you start prepping.</p></div>
     <div class="recipe-prelude">${bodyHtml}</div>
     </section>`;
 }
@@ -1229,7 +1246,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
   if (preludeHtml) { sections.push(preludeHtml); sidebarLinks.push({ id: 'before-you-start', label: 'Before You Start' }); }
 
   const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
-  if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Mise en Place' }); }
+  if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Ingredients' }); }
 
   const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images, ingredientBySlug);
   if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Execution' }); }

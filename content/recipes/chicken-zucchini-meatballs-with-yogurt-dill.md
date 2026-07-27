@@ -23,7 +23,7 @@ course: 'dinner'
 diet: []
 
 before_you_start:
-  - 'The zucchini must be salt-drained 20 minutes before mixing. Grate it, salt it (1% by weight), let it sit in a sieve, then wring it out in a clean kitchen towel. Skipping this step means watery meatballs that fall apart and steam in their own released moisture rather than browning. Plan for the 20-minute drain to overlap with the rest of the mise.'
+  - 'The zucchini must be salt-drained 20 minutes before mixing. Grate it, salt it (1% by weight), let it sit in a sieve, then wring it out in a clean kitchen towel. Skipping this step means watery meatballs that fall apart and steam in their own released moisture rather than browning. Plan for the 20-minute drain to overlap with the rest of the prep.'
   - 'Set the oven to 220 °C with the rack in the upper third, and line two sheet pans with parchment paper before the meatballs are shaped. Sticky raw ground chicken on a bare metal pan tears when transferred; parchment prevents that and is the right tool over silicone mats (which trap moisture under the meatballs and inhibit browning).'
   - 'The yogurt-dill sauce benefits from a 30-minute rest in the refrigerator before serving, the raw garlic mellows and the flavors integrate. Make it first so it can rest while the meatballs bake.'
   - 'Pull the chicken from the refrigerator 15 minutes before mixing. Cold ground meat seizes when handled and the panade does not distribute evenly through the mix.'

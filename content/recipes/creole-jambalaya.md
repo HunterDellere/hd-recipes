@@ -176,7 +176,7 @@ ingredients:
     note: '(1 lemon cut into 6 wedges; the finishing acid that lifts the rich one-pot)'
 
 steps:
-  - text: 'Season the 600 g chicken chunks with 6 g kosher salt 30 minutes ahead. Slice the 300 g andouille into 1 cm coins. Dice the Trinity (250 g onion, 120 g celery, 120 g bell pepper) and mince the 18 g / 5 cloves garlic. Rinse the 360 g long-grain rice in a fine-mesh sieve until the water runs clear; drain. The mise must be complete before browning begins; the cook from the brown through the simmer is one continuous push with no chopping pauses.'
+  - text: 'Season the 600 g chicken chunks with 6 g kosher salt 30 minutes ahead. Slice the 300 g andouille into 1 cm coins. Dice the Trinity (250 g onion, 120 g celery, 120 g bell pepper) and mince the 18 g / 5 cloves garlic. Rinse the 360 g long-grain rice in a fine-mesh sieve until the water runs clear; drain. All prep must be complete before browning begins; the cook from the brown through the simmer is one continuous push with no chopping pauses.'
     time_min: 20
   - text: 'Brown the proteins. Heat 15 g / 1 tbsp neutral oil in a heavy 4 to 5 quart Dutch oven over medium-high heat until shimmering. Add the 600 g chicken chunks in a single layer; brown undisturbed 3 to 4 minutes per side until deeply mahogany on at least two sides. Transfer to a plate. Add the 300 g andouille coins; brown 2 minutes per side until the edges crisp and an orange-tinted fond accumulates on the pot bottom. Transfer to the plate. Pour off all but 2 tbsp / 28 g rendered fat (save the excess for a future roux or for sweating vegetables on another night).'
     technique: 'maillard-sear'

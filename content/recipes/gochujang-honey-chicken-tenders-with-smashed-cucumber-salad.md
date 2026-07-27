@@ -33,7 +33,7 @@ safety_notes:
 
 before_you_start:
   - 'Pat the chicken tenderloins fully dry with paper towels before salting. Surface moisture dissolves the salt rather than letting it dry-brine, and wet protein steams in the pan instead of building Maillard browning.'
-  - 'Start the smashed cucumber 10 minutes before the chicken hits the pan. The salt-drain takes 10 minutes minimum to draw the surface water that would otherwise dilute the dressing; the dressing itself benefits from a 5-minute rest so the raw garlic mellows. Do the cucumber first, then mise the chicken.'
+  - 'Start the smashed cucumber 10 minutes before the chicken hits the pan. The salt-drain takes 10 minutes minimum to draw the surface water that would otherwise dilute the dressing; the dressing itself benefits from a 5-minute rest so the raw garlic mellows. Do the cucumber first, then prep the chicken.'
   - 'Have the glaze pre-mixed in a small bowl before the chicken touches the pan. The off-heat glaze toss is a 30-second move; once the chicken comes off the heat you cannot stop to whisk gochujang into vinegar.'
 
 ingredients:
@@ -188,7 +188,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Start the cucumbers. Lay the 400 g cucumbers on a cutting board and smash each one along its length with the broad side of a heavy knife or a rolling pin until the skin fractures and the cucumber splits open. Tear them apart by hand into rough 3 cm pieces, irregular shapes are correct. Transfer to a colander or sieve set over a bowl, scatter with the 4 g / 1 tsp kosher salt, toss to coat, and let drain at room temperature for 10 to 15 minutes while you mise the rest. The cucumber will release 30 to 50 g of water; that water is what you do not want in the salad.'
+  - text: 'Start the cucumbers. Lay the 400 g cucumbers on a cutting board and smash each one along its length with the broad side of a heavy knife or a rolling pin until the skin fractures and the cucumber splits open. Tear them apart by hand into rough 3 cm pieces, irregular shapes are correct. Transfer to a colander or sieve set over a bowl, scatter with the 4 g / 1 tsp kosher salt, toss to coat, and let drain at room temperature for 10 to 15 minutes while you prep the rest. The cucumber will release 30 to 50 g of water; that water is what you do not want in the salad.'
     time_min: 15
   - text: 'Mix the cucumber dressing. In a serving bowl, whisk together the 20 g / 4 tsp rice vinegar, the 5 g / 1 tsp toasted sesame oil, the 4 g / 1 small clove microplane-grated garlic, the 4 g / 2 tsp gochugaru, and the 4 g / 1 tsp granulated sugar until the sugar dissolves. Let stand at room temperature 5 minutes so the raw garlic mellows into the acid.'
     time_min: 1
