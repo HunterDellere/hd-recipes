@@ -3718,16 +3718,31 @@ body.cmd-palette-open { overflow: hidden; }
      inherits a phantom gap above it. */
   .section-anchor { display: none !important; }
 
-  a, a:link, a:visited {
+  /* Links become plain text. This matters more on paper than it looks:
+     a coloured, dotted-underlined word is a promise of somewhere to go,
+     and on a sheet handed to someone else it's a dead end that reads as
+     a defect. The words themselves stay — "kosher salt" is still the
+     ingredient — they just stop advertising an action that can't happen.
+     Applied to the anchors AND their decorative pseudo-elements, since
+     several link types carry an "↗" or similar glyph. */
+  a, a:link, a:visited,
+  .ing-link, .x-link, .step-tech, .sub-hint, .hm-link, .safety-item-link {
     color: inherit !important;
     text-decoration: none !important;
+    text-decoration-line: none !important;
     border: 0 !important;
+    border-bottom: 0 !important;
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
   }
-  .ing-link, .x-link, .step-tech, .sub-hint {
-    border: 0 !important;
-    color: inherit !important;
+  a::before, a::after,
+  .x-link::before, .x-link::after,
+  .ing-link::before, .ing-link::after,
+  .sub-hint::before, .sub-hint::after {
+    content: none !important;
+    display: none !important;
   }
-  .sub-hint::after { display: none !important; }
 
   /* ── Masthead ──────────────────────────────────────────────────────── */
   .recipe-hero, .topic-hero {
@@ -4140,10 +4155,19 @@ body.cmd-palette-open { overflow: hidden; }
     background: none !important;
     padding: 0 !important;
   }
+  /* Technique reference. The name is worth keeping — "this step is a
+     brown butter" is real information — but the screen's "↗" says
+     "tap me", which paper can't honour. Arrow removed, set as a plain
+     italic aside so it reads as a note rather than a control. */
   .step-tech {
     display: inline !important;
     font-style: italic;
     color: var(--p-soft) !important;
+    border: 0 !important;
+  }
+  .step-tech::before {
+    content: none !important;
+    display: none !important;
   }
   /* Durations as a quiet mono aside, not the screen's interactive pill */
   .step-time {
@@ -4276,9 +4300,42 @@ body.cmd-palette-open { overflow: hidden; }
     color: var(--p-faint) !important;
   }
 
+  /* ── Colophon ──────────────────────────────────────────────────────── */
+  /* Where this sheet came from. Printed once at the end, quietly. */
+  .print-colophon {
+    display: block !important;
+    margin: 16pt 0 0 !important;
+    padding: 6pt 0 0 !important;
+    border-top: 0.5pt solid var(--p-rule) !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .pc-label {
+    display: block !important;
+    font-family: var(--font-sans) !important;
+    font-size: 7.5pt !important;
+    color: var(--p-faint) !important;
+    margin-bottom: 1.5pt;
+  }
+  .pc-url {
+    display: block !important;
+    font-family: var(--font-mono) !important;
+    font-size: 8pt !important;
+    color: var(--p-soft) !important;
+    word-break: break-all;
+  }
+
   /* ── Widow / orphan control ────────────────────────────────────────── */
   p, li { orphans: 3; widows: 3; }
   h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+}
+
+/* The colophon exists only for print — on screen you're already on the page,
+   so the URL is noise. Hidden here with `screen` scoping rather than a bare
+   rule: an unscoped `display: none !important` would also apply in print and
+   fight the print block, and source order would decide the winner. */
+@media screen {
+  .print-colophon { display: none !important; }
 }
 
 /* === Item F: related-recipes — mobile horizontal carousel for the recipes group === */

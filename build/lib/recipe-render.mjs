@@ -1328,11 +1328,25 @@ export function renderRecipeBody(fm, slug, category, opts) {
       </ul>
     </aside>`;
 
+  // Print-only colophon (hidden on screen by CSS). On paper this answers the
+  // problem that printing creates: every ingredient and technique on the card
+  // is a link the sheet can't honour, so someone handed a printout has no way
+  // back to the source. Naming the URL once, at the end, is more honest than
+  // styling dozens of dead links and hoping nobody tries to tap them.
+  const colophon = opts.canonicalUrl
+    ? `
+    <p class="print-colophon">
+      <span class="pc-label">Full recipe, with linked ingredients and techniques</span>
+      <span class="pc-url">${escapeHtml(opts.canonicalUrl)}</span>
+    </p>`
+    : '';
+
   return `
 <div class="shell">
   ${sidebar}
   <main class="main" id="main-content">
     ${sections.join('\n\n    ')}
+${colophon}
   </main>
 </div>`;
 }
