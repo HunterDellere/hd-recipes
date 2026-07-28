@@ -313,6 +313,43 @@ for (const pageFull of walkPages(PAGES)) {
       }
     }
 
+    // Schema jargon in cook-facing text (INFO, report-only). Frontmatter field
+    // names are for the build, not the kitchen. An ingredient reading
+    // "dashi (kombu-katsuobushi, see homemade_alternatives)" tells a cook to go
+    // look at a YAML key — and it is redundant besides, since the build already
+    // renders a homemade-alternatives section on the page.
+    //
+    // Checked against the fields that plausibly get name-dropped in prose. The
+    // fix is always the same shape: say the thing, or delete the pointer and let
+    // the rendered section do its job.
+    {
+      // Only snake_case field names. Single-word fields like `substitutions`
+      // and `notes` are ordinary English — "substitutions" also lives inside
+      // "substitute", a verb every recipe uses — and flagging them buries the
+      // real hits in false positives. An underscore is the tell: no cook
+      // writes "homemade_alternatives" by accident.
+      const JARGON = [
+        'homemade_alternatives', 'recipe_slug', 'usda_fdc_id', 'derive_from',
+        'safety_notes', 'imperial_pref', 'density_g_per_ml', 'homemade_exempt',
+        'grams_per_unit', 'size_label', 'target_servings',
+      ];
+      const jargonRe = new RegExp(`\\b(${JARGON.join('|')})\\b`);
+      const surfaces = [
+        ...(fm.ingredients || []).map((i, n) => [`ingredients[${n}].item`, i.item]),
+        ...(fm.ingredients || []).map((i, n) => [`ingredients[${n}].note`, i.note]),
+        ...(fm.steps || []).map((s, n) => [`steps[${n}].text`, s.text]),
+        ...(fm.substitutions || []).map((s, n) => [`substitutions[${n}].for`, s.for]),
+      ];
+      for (const [where, text] of surfaces) {
+        if (typeof text !== 'string') continue;
+        const hit = text.match(jargonRe);
+        if (!hit) continue;
+        emit('INFO', contentRel,
+          `${where} shows the schema field name "${hit[1]}" to the cook — "${text.slice(0, 60)}${text.length > 60 ? '…' : ''}"`,
+          { fix: 'Field names are build vocabulary, not kitchen language. Either name the thing directly ("or use homemade dashi") or drop the pointer entirely — the page already renders its own homemade-alternatives and substitutions sections.' });
+      }
+    }
+
     // Pack/derive accounting: every derive_from must reference an existing
     // pack id, and the sum of derived grams must not exceed the pack's total
     // grams (with a 5% tolerance for cling/loss). Catches math mistakes when
