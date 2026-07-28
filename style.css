@@ -4121,21 +4121,25 @@ body.cmd-palette-open { overflow: hidden; }
     padding: 0 !important;
     counter-reset: none;
   }
-  /* Generous space between steps and a hairline above each one. Losing
-     your place mid-step is the most common way a printed recipe fails
-     you, and separated blocks are far easier to re-find than an evenly
-     packed column. The rule is what turns "a list" into "discrete steps". */
+  /* Steps need to be re-findable after you look away at the pan, but the
+     previous pass bought that with too much air: 8pt below each step plus
+     8pt above the next, on top of the hairline AND the rule — four
+     separators doing one job. On a long recipe that pushed the method onto
+     an extra sheet, which costs a cook far more than tight spacing does.
+     The rule alone is enough to say "new step"; the padding just has to
+     keep the rule from crowding the text it divides. 5pt/5pt does that at
+     a third less height. */
   .step-item {
     display: grid !important;
-    grid-template-columns: 26pt 1fr;
-    gap: 9pt;
+    grid-template-columns: 22pt 1fr;
+    gap: 8pt;
     align-items: baseline;
     margin: 0 !important;
     /* The separator is a BOTTOM border, not a top one. A top border can
        land at the foot of a page with its step pushed to the next sheet,
        leaving a rule with nothing under it. Anchoring the rule to the
        step above means it can never outlive its content. */
-    padding: 0 0 8pt !important;
+    padding: 0 0 5pt !important;
     border: 0 !important;
     border-bottom: 0.5pt solid var(--p-rule) !important;
     /* Cook's view dims inactive steps; on paper everything is equal */
@@ -4144,7 +4148,7 @@ body.cmd-palette-open { overflow: hidden; }
     break-inside: avoid;
     page-break-inside: avoid;
   }
-  .step-item + .step-item { padding-top: 8pt !important; }
+  .step-item + .step-item { padding-top: 5pt !important; }
   .step-item:last-child { border-bottom: 0 !important; }
   /* Big red numeral, no disc: a filled circle at this size prints as a
      blob and burns toner on every step. Size and colour carry it, and it
@@ -4169,15 +4173,17 @@ body.cmd-palette-open { overflow: hidden; }
     color: var(--p-accent) !important;
   }
   /* Steps are the only long-form prose on the card and the thing being
-     read from arm's length, mid-task, with wet hands. Extra leading and a
-     measure capped near 62 characters are what make a line findable again
-     after you look away at the pan — the single most common interruption
-     in cooking. */
+     read from arm's length, mid-task, with wet hands. A measure capped
+     near 62 characters is what makes a line findable again after you look
+     away at the pan — the single most common interruption in cooking.
+     Leading comes down from 1.58 to 1.5: still open enough to track a
+     line across the column, but 1.58 was set when steps had 16pt of air
+     around them, and at that scale it read as drift rather than comfort. */
   .step-body {
     grid-column: 2;
     font-family: var(--font-serif) !important;
     font-size: 10.5pt !important;
-    line-height: 1.58 !important;
+    line-height: 1.5 !important;
     margin: 0 !important;
     color: var(--p-ink) !important;
     max-width: 34em;
@@ -4202,9 +4208,10 @@ body.cmd-palette-open { overflow: hidden; }
      noisette)". Grammar, not decoration. */
   .step-tech {
     display: block !important;
-    margin-top: 3pt !important;
+    margin-top: 1.5pt !important;
     font-family: var(--font-sans) !important;
     font-size: 8pt !important;
+    line-height: 1.3 !important;
     font-style: normal !important;
     color: var(--p-faint) !important;
     border: 0 !important;
