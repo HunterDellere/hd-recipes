@@ -33,7 +33,7 @@ safety_notes:
 
 before_you_start:
   - 'Dry and score the skin well ahead, this is the whole game. Pat both fillets bone-dry on the skin side with paper towels, then set them skin-up, uncovered, on a rack in the fridge for at least 30 minutes (up to a few hours) so the surface dehydrates further; score the skin in shallow 1 cm-apart diagonal lines just before salting. Damp skin steams and goes leathery instead of crisping, so the dryness of the skin at the moment it hits the pan determines the entire result.'
-  - 'Stage the beurre blanc mise completely before the fish goes in the pan. The butter mount happens off heat and moves fast, so have the reduction made and the 110 g cold cubed butter measured and waiting in the fridge until the moment you whisk it in. A beurre blanc breaks when it overheats, so it is built last, after the fish is seared and resting warm.'
+  - 'Stage everything for the beurre blanc completely before the fish goes in the pan. The butter mount happens off heat and moves fast, so have the reduction made and the 110 g cold cubed butter measured and waiting in the fridge until the moment you whisk it in. A beurre blanc breaks when it overheats, so it is built last, after the fish is seared and resting warm.'
   - 'Keep the fillets warm while you finish the sauce. Have a warm plate ready and rest the seared fish skin-side-up (never skin-down, which re-steams the crust) on the rack or a warm plate while you mount the butter, so the skin stays crisp and the flesh coasts to its final temperature.'
 
 ingredients:

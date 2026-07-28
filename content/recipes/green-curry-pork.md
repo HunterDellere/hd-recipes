@@ -42,7 +42,7 @@ safety_notes:
 ingredients:
   # Buying unit: two 400 ml cans of full-fat coconut milk. Inherits density
   # 1.00 g/ml and pack size 13.5 oz / 400 ml from the ingredient page. The
-  # cream/remainder split happens in the per-phase mise breakdown below as
+  # cream/remainder split happens in the per-phase prep breakdown below as
   # derived rows, which the build skips for nutrition + shopping list.
   - id: 'coconut-milk'
     item: 'full-fat coconut milk'

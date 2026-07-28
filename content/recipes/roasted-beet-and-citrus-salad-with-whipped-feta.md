@@ -209,7 +209,7 @@ homemade_alternatives:
     why: 'Cultured at home from whole milk and strained 6 to 8 hours through cheesecloth, the yogurt reads tangier and richer than supermarket Greek yogurt, which is often thickened with milk solids rather than truly strained.'
   - for: 'honey, runny'
     recipe_slug: 'recipes/infused-honey'
-    why: 'A jar of honey infused with thyme, rosemary, or chili pulls the sweet finish into deliberate savory territory; the dish picks up another dimension without adding ingredients to the mise.'
+    why: 'A jar of honey infused with thyme, rosemary, or chili pulls the sweet finish into deliberate savory territory; the dish picks up another dimension without adding ingredients to the list.'
 
 homemade_exempt: ['sheep''s-milk feta (Greek PDO)', 'extra-virgin olive oil', 'kosher salt, for the roasting bed', 'flaky sea salt', 'urfa biber (Urfa pepper)', 'shelled raw pistachios', 'fresh mint leaves', 'red beets, similarly sized', 'blood oranges (or Cara Cara if blood are out of season)', 'fresh thyme sprigs']
 

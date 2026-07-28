@@ -15,6 +15,36 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// Ingredient phase labels are authored as "Phase 1, pork" across ~340
+// recipes. That reads as production-line language to anyone who doesn't
+// cook professionally, which is most people printing a recipe. Presenting
+// it as "Step 1 · Pork" keeps the ordering signal — which is the only
+// thing the label needs to carry — without the factory tone. Done at the
+// render layer rather than by rewriting content, so authors keep using
+// whatever convention they like and the reader gets consistent output.
+// Labels that don't match the pattern pass through untouched.
+function prettifyPhase(label) {
+  const s = String(label || '').trim();
+  const m = s.match(/^phase\s+(\d+)\s*[,:–—-]?\s*(.*)$/i);
+  if (!m) return s;
+  const [, num, rest] = m;
+  if (!rest) return `Step ${num}`;
+  return `Step ${num} · ${rest.charAt(0).toUpperCase()}${rest.slice(1)}`;
+}
+
+// "heavy-cast-iron-skillet" → "Heavy cast iron skillet". Used where a slug
+// has no matching entry page and would otherwise surface raw to the reader.
+// Sentence case, not title case: these sit in running prose, and title case
+// would make an unlinked stub louder than the real linked equipment beside it.
+function humanizeSlug(slug) {
+  const words = String(slug || '')
+    .replace(/^[a-z]+\//, '')
+    .replace(/[-_]+/g, ' ')
+    .trim();
+  if (!words) return '';
+  return words.charAt(0).toUpperCase() + words.slice(1);
+}
+
 /**
  * Render a multi-paragraph prose block from frontmatter (e.g. fm.about) as proper
  * HTML — paragraphs, bold, italics, ordered/unordered lists, inline code.
@@ -487,11 +517,25 @@ export function renderRecipeHero(fm, slug, category, opts = {}) {
     }, relTo)}</div>`;
   }
 
+  // Unfinished recipes carry no visible marker anywhere — the only signal is
+  // the author writing "Stub:" into the prose. That's survivable on screen
+  // (you can see the page is thin) but not on paper: a printed stub looks
+  // exactly like a finished recipe, and someone handed one has no way to
+  // know the quantities and timings haven't been tested. Say so plainly.
+  const statusNote = fm.status && fm.status !== 'complete'
+    ? `<p class="rh-status rh-status-${escapeHtml(fm.status)}">${
+        fm.status === 'stub'
+          ? 'Unfinished draft — the outline is here, but quantities and timings have not been tested yet.'
+          : 'Work in progress — this recipe is still being written and tested.'
+      }</p>`
+    : '';
+
   return `
     <header class="recipe-hero${photoHtml ? ' has-photo' : ''}">
       <div class="rh-info">
         <span class="rh-eyebrow">Recipe</span>
         <h1 class="rh-title">${escapeHtml(fm.title || slug)}</h1>
+        ${statusNote}
         ${fm.desc ? `<p class="rh-desc">${escapeHtml(fm.desc)}</p>` : ''}
         ${stats.length ? `<div class="rh-stats" role="list">${stats.join('')}</div>` : ''}
         ${tags.length ? `<div class="rh-tags">${tags.join('')}</div>` : ''}
@@ -653,7 +697,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     phaseMap.get(g).push(r);
   }
   const miseHtml = phaseGroups.map(g => {
-    const head = g ? `<h3 class="ing-group-head">${escapeHtml(g)}</h3>` : '';
+    const head = g ? `<h3 class="ing-group-head">${escapeHtml(prettifyPhase(g))}</h3>` : '';
     const rows = phaseMap.get(g).map(r => renderRow(r, { variant: 'mise' })).join('');
     return `${head}<ol class="ing-list">${rows}\n      </ol>`;
   }).join('\n');
@@ -662,7 +706,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
   const baseServings = fm.servings || 1;
   return `
     <span class="section-anchor" id="ingredients"></span>
-    <div class="section-head"><h2>Mise en Place</h2></div>
+    <div class="section-head"><h2>Ingredients</h2></div>
     <div class="recipe-ingredients" data-base-servings="${baseServings}">
       <div class="ing-controls">
         <div class="ing-control ing-scale">
@@ -707,7 +751,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
       </details>
       ${phaseCount > 0 ? `<details class="ing-panel ing-panel-mise" data-ing-panel="mise">
         <summary class="ing-panel-summary">
-          <span class="ing-panel-title">Mise en place by phase</span>
+          <span class="ing-panel-title">What to prep, in order</span>
           <span class="ing-panel-meta">
             <span class="ing-panel-count">${phaseCount} ${phaseCount === 1 ? 'phase' : 'phases'}</span>
             <span class="ing-panel-chev" aria-hidden="true">▾</span>
@@ -912,7 +956,13 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
       if (target) {
         const href = relPath(currentPath, target.path);
         const techTitle = (target.title || step.technique).split('—')[0].split('·')[0].trim();
-        body += ` <a class="step-tech" href="${escapeHtml(href)}">${escapeHtml(techTitle)}</a>`;
+        // The bare technique name works on screen, where the chip styling
+        // marks it as a link to a method page. On paper that styling is
+        // gone and the name dangles after the final full stop as an
+        // orphan noun phrase — it reads like leftover interface, not
+        // information. The print-only prefix gives it grammar; CSS shows
+        // it in print and hides it on screen.
+        body += ` <a class="step-tech" href="${escapeHtml(href)}"><span class="step-tech-prefix">Technique: </span>${escapeHtml(techTitle)}</a>`;
       }
     }
     // The time pill doubles as a one-tap timer launcher when the duration is
@@ -955,7 +1005,7 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
   }).join('');
   return `
     <span class="section-anchor" id="execution"></span>
-    <div class="section-head"><h2>Execution</h2></div>
+    <div class="section-head"><h2>Method</h2></div>
     <ol class="recipe-steps">${items}
     </ol>`;
 }
@@ -1018,7 +1068,11 @@ export function renderEquipment(fm, currentPath, equipmentBySlug) {
       const title = (target.title || slug).split('—')[0].split('·')[0].trim();
       return `<a class="eq-chip" href="${escapeHtml(href)}">${escapeHtml(title)}</a>`;
     }
-    return `<span class="eq-chip eq-chip-stub">${escapeHtml(slug)}</span>`;
+    // No equipment page for this slug yet. Render the human form rather
+    // than the raw slug — "heavy-cast-iron-skillet" reads as a broken
+    // token to anyone who doesn't know it's a filename, and it's the one
+    // thing on a printed card with no link to explain itself.
+    return `<span class="eq-chip eq-chip-stub">${escapeHtml(humanizeSlug(slug))}</span>`;
   }).join('');
   return `
     <span class="section-anchor" id="equipment"></span>
@@ -1066,7 +1120,7 @@ export function renderBeforeYouStart(fm) {
   return `
     <span class="section-anchor" id="before-you-start"></span>
     <section class="recipe-prelude-section">
-    <div class="section-head"><h2>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before mise.</p></div>
+    <div class="section-head"><h2>Before you start</h2><p class="section-blurb">Read this first — the long-lead and coordination steps that need to be moving before you start prepping.</p></div>
     <div class="recipe-prelude">${bodyHtml}</div>
     </section>`;
 }
@@ -1229,10 +1283,10 @@ export function renderRecipeBody(fm, slug, category, opts) {
   if (preludeHtml) { sections.push(preludeHtml); sidebarLinks.push({ id: 'before-you-start', label: 'Before You Start' }); }
 
   const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
-  if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Mise en Place' }); }
+  if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Ingredients' }); }
 
   const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images, ingredientBySlug);
-  if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Execution' }); }
+  if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Method' }); }
 
   if (safetyHtml) { sections.push(safetyHtml); sidebarLinks.push({ id: 'safety', label: 'Safety' }); }
 
@@ -1294,11 +1348,25 @@ export function renderRecipeBody(fm, slug, category, opts) {
       </ul>
     </aside>`;
 
+  // Print-only colophon (hidden on screen by CSS). On paper this answers the
+  // problem that printing creates: every ingredient and technique on the card
+  // is a link the sheet can't honour, so someone handed a printout has no way
+  // back to the source. Naming the URL once, at the end, is more honest than
+  // styling dozens of dead links and hoping nobody tries to tap them.
+  const colophon = opts.canonicalUrl
+    ? `
+    <p class="print-colophon">
+      <span class="pc-label">Full recipe, with linked ingredients and techniques</span>
+      <span class="pc-url">${escapeHtml(opts.canonicalUrl)}</span>
+    </p>`
+    : '';
+
   return `
 <div class="shell">
   ${sidebar}
   <main class="main" id="main-content">
     ${sections.join('\n\n    ')}
+${colophon}
   </main>
 </div>`;
 }

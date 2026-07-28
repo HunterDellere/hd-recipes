@@ -497,7 +497,7 @@
       ingPanelBtn.setAttribute('aria-controls', 'cv-ingredients-panel');
       ingPanelBtn.hidden = true;
       ingPanelBtn.innerHTML = `
-        <span class="cv-ing-toggle-label">Mise en Place</span>
+        <span class="cv-ing-toggle-label">Ingredients</span>
         <span class="cv-ing-toggle-meta"><span class="cv-ing-count"></span><span class="cv-ing-toggle-chev" aria-hidden="true">▾</span></span>`;
       ingredientsSection.id = 'cv-ingredients-panel';
       if (anchor && anchor.parentNode) {
@@ -660,9 +660,9 @@
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
             <span>Prev</span>
           </button>
-          <button type="button" class="cb-btn cb-mise" aria-label="Toggle mise en place" aria-pressed="false">
+          <button type="button" class="cb-btn cb-mise" aria-label="Toggle ingredients" aria-pressed="false">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-            <span>Mise</span>
+            <span>Prep</span>
           </button>
           <span class="cb-counter" data-cook-counter></span>
           <button type="button" class="cb-btn cb-next" aria-label="Next step">
@@ -1018,6 +1018,65 @@
       try { window.print(); } catch {}
     });
   });
+
+  // ── Print preparation ──────────────────────────────────────────────────
+  // A closed <details> doesn't render its content, and CSS alone can't
+  // reliably force it open across engines. Without this, whatever the cook
+  // left collapsed (shopping list, prep-by-stage, personal notes) silently
+  // vanishes from the printout — the single worst print bug, because the
+  // page looks complete on screen and the paper is missing ingredients.
+  //
+  // So: open every <details> on beforeprint, remembering which ones we
+  // touched, and restore the reader's exact state on afterprint. Cook's
+  // view is also suspended for the duration — its dimming of non-active
+  // steps would otherwise print most of the recipe in light grey.
+  //
+  // afterprint is unreliable in a few environments (notably some
+  // Safari/iOS paths), so a matchMedia('print') listener runs the same
+  // restore as a fallback.
+  //
+  // Both paths fire for a single print in Chrome, so `printing` guards
+  // re-entry. Without it the second beforePrint() would clear the record
+  // of what we opened — those elements now carry [open] and no longer
+  // match details:not([open]), so they'd be re-scanned as nothing and
+  // left permanently expanded, which is the very state this code exists
+  // to prevent.
+  let printOpened = [];
+  let printCookView = null;
+  let printing = false;
+
+  function beforePrint() {
+    if (printing) return;
+    printing = true;
+    printOpened = [];
+    document.querySelectorAll('details:not([open])').forEach(d => {
+      printOpened.push(d);
+      d.setAttribute('open', '');
+    });
+    const cv = document.body.dataset.cooksView;
+    printCookView = cv || null;
+    if (cv) delete document.body.dataset.cooksView;
+  }
+
+  function afterPrint() {
+    if (!printing) return;
+    printing = false;
+    printOpened.forEach(d => d.removeAttribute('open'));
+    printOpened = [];
+    if (printCookView) {
+      document.body.dataset.cooksView = printCookView;
+      printCookView = null;
+    }
+  }
+
+  window.addEventListener('beforeprint', beforePrint);
+  window.addEventListener('afterprint', afterPrint);
+  try {
+    const mql = window.matchMedia('print');
+    const onChange = e => { if (e.matches) beforePrint(); else afterPrint(); };
+    if (mql.addEventListener) mql.addEventListener('change', onChange);
+    else if (mql.addListener) mql.addListener(onChange);
+  } catch {}
 
   // ── Step timer running / done class aliases ────────────────────────────
   // The internal cook-view state uses .step-active / .step-done. The mobile

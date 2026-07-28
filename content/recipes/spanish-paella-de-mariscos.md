@@ -44,25 +44,25 @@ ingredients:
     unit: 'g'
     note: '(generous ½ tsp threads; the structural pigment and flavor)'
 
-  - group: 'Phase 2, the seafood mise'
+  - group: 'Phase 2, the seafood'
     item: 'large shell-on shrimp (head-on if available)'
     slug: 'shrimp'
     qty: 500
     unit: 'g'
     note: '(about 1 lb; 16-20 count; head-on is structurally better, the heads release flavor into the rice during the cook)'
-  - group: 'Phase 2, the seafood mise'
+  - group: 'Phase 2, the seafood'
     item: 'mussels, scrubbed and debearded'
     slug: 'mussels'
     qty: 400
     unit: 'g'
     note: '(about 14 oz; purged 30 minutes in salted water before cooking)'
-  - group: 'Phase 2, the seafood mise'
+  - group: 'Phase 2, the seafood'
     item: 'littleneck clams, scrubbed'
     slug: 'littleneck-clams'
     qty: 400
     unit: 'g'
     note: '(about 14 oz; purged 30 minutes in salted water before cooking)'
-  - group: 'Phase 2, the seafood mise'
+  - group: 'Phase 2, the seafood'
     item: 'squid (calamari), cleaned, bodies cut into 1 cm rings, tentacles whole'
     slug: 'squid'
     qty: 300

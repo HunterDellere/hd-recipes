@@ -130,7 +130,7 @@ steps:
     technique: 'dashi'
     time_min: 12
   - text: 'Prep the vegetables while the dashi soaks (or do this fresh just before cooking). Peel and roll-cut the 180 g daikon into irregular wedges (rangiri: rotate the daikon 90° between angled knife cuts to produce irregular faces); peel and roll-cut the 100 g carrot into smaller matching wedges. Scrub and sasagaki-shave the 80 g burdock (hold like a pencil and shave with the knife at a low angle), drop immediately into cold water with 1 tsp rice vinegar, soak 5 minutes, drain. Prep the satoimo or sweet potato (200 g; peel and cut into 2 cm chunks; if using satoimo, the cut tubers will produce a slippery surface mucilage that some cooks rinse off with a salt-and-water rub). Parboil the 150 g konnyaku for 60 seconds in plain boiling water, drain, tear by hand into 2 cm chunks. Slice the reserved shiitake caps from the dashi into 5 mm strips. Crumble the 200 g pressed firm tofu by hand into rough 2 to 3 cm irregular pieces (the rustic look is the canonical temple presentation).'
-    technique: 'mise-en-place'
+    technique: 'prep-staging'
     time_min: 15
   - text: 'Toast the vegetables in sesame oil. Heat a 4-quart heavy pot (Dutch oven or donabe) over medium-high heat. Add the 15 g / 1 tbsp toasted sesame oil. When the oil is shimmering and just before it smokes, add the burdock and the konnyaku first (these are the toughest and benefit from the longest toasting). Stir-fry for 90 seconds. Add the daikon, the carrot, and the satoimo/sweet potato. Stir-fry for another 2 to 3 minutes, until the vegetables are coated in the oil and the burdock and konnyaku have lightly browned at the edges. This sesame-oil sear is the structural step that defines kenchinjiru, the toasted aroma from the oil and the vegetable-surface Maillard browning produce a flavor layer that pure-simmering cannot match, and serves as the animal-fat-replacement that gives the dish its depth.'
     technique: 'sesame-oil-sear'
@@ -145,7 +145,7 @@ steps:
   - text: 'Plate and serve. Ladle into 4 bowls (about 350 ml each), distributing the vegetables, tofu, and konnyaku evenly. Top each bowl with a small mound (about ½ tsp / 1.5 g) of freshly grated ginger, the ginger is the canonical temple-cuisine finish for kenchinjiru and replaces the scallion that household versions use. Pass shichimi togarashi or sansho pepper at the table for each diner to add to taste, optional. Serve immediately as the centerpiece of a shōjin-style meal, the canonical accompaniment is a bowl of plain Japanese rice (white or brown), a small bowl of pickled vegetables (takuan, ume-boshi, or a simple cucumber pickle), and a small piece of grilled or simmered tofu or yuba as a separate protein. In a more elaborate temple meal, kenchinjiru would be one of several small dishes; in a household adaptation, the soup with rice and a pickle is a complete simple winter dinner. Reheating to a boil ruins the miso, so serve straight from the pot.'
     time_min: 2
 
-techniques: ['cold-soak-dashi', 'dashi', 'mise-en-place', 'sesame-oil-sear', 'simmering']
+techniques: ['cold-soak-dashi', 'dashi', 'prep-staging', 'sesame-oil-sear', 'simmering']
 equipment: ['heavy-pot-or-donabe', 'fine-mesh-sieve', 'sharp-knife-for-sasagaki', 'microplane']
 
 modifications:

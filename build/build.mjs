@@ -419,6 +419,7 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
           pairings,
           entriesByPath,
           images: recipeImages.get(slug) || null,
+          canonicalUrl: `${SITE_URL}/pages/${category}/${slug}.html`,
         });
       } else if (fm.type === 'ingredient') {
         const recipesUsing = reverseLinks.ingRecipes.get(slug) || [];
