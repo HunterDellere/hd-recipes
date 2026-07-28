@@ -517,11 +517,25 @@ export function renderRecipeHero(fm, slug, category, opts = {}) {
     }, relTo)}</div>`;
   }
 
+  // Unfinished recipes carry no visible marker anywhere — the only signal is
+  // the author writing "Stub:" into the prose. That's survivable on screen
+  // (you can see the page is thin) but not on paper: a printed stub looks
+  // exactly like a finished recipe, and someone handed one has no way to
+  // know the quantities and timings haven't been tested. Say so plainly.
+  const statusNote = fm.status && fm.status !== 'complete'
+    ? `<p class="rh-status rh-status-${escapeHtml(fm.status)}">${
+        fm.status === 'stub'
+          ? 'Unfinished draft — the outline is here, but quantities and timings have not been tested yet.'
+          : 'Work in progress — this recipe is still being written and tested.'
+      }</p>`
+    : '';
+
   return `
     <header class="recipe-hero${photoHtml ? ' has-photo' : ''}">
       <div class="rh-info">
         <span class="rh-eyebrow">Recipe</span>
         <h1 class="rh-title">${escapeHtml(fm.title || slug)}</h1>
+        ${statusNote}
         ${fm.desc ? `<p class="rh-desc">${escapeHtml(fm.desc)}</p>` : ''}
         ${stats.length ? `<div class="rh-stats" role="list">${stats.join('')}</div>` : ''}
         ${tags.length ? `<div class="rh-tags">${tags.join('')}</div>` : ''}

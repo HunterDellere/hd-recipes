@@ -571,6 +571,22 @@ pre code { background: none; padding: 0; }
   line-height: 1.55;
 }
 
+/* Draft / stub marker. Sits directly under the title so it can't be missed,
+   on screen or on a printout handed to someone else. */
+.rh-status {
+  display: block;
+  max-width: 60ch;
+  margin: 0 0 1.1rem;
+  padding: .55rem .8rem;
+  border-left: 3px solid var(--cat-safety);
+  background: var(--cat-safety-bg);
+  border-radius: 0 var(--r-1) var(--r-1) 0;
+  font-family: var(--font-sans);
+  font-size: var(--t-small);
+  line-height: 1.45;
+  color: var(--ink);
+}
+
 /* ── stats: scannable strip (servings / time / difficulty) ── */
 .rh-stats {
   display: grid;
@@ -3627,9 +3643,14 @@ body.cmd-palette-open { overflow: hidden; }
   /* Print tokens. Redefining them here rather than hardcoding keeps the
      card on the same palette as the screen if the house colors ever move. */
   :root {
-    --p-ink: #22201b;        /* warm near-black — the house ink */
-    --p-soft: #6b6459;       /* secondary prose, prep clauses */
-    --p-faint: #8c887e;      /* de-emphasized meta */
+    /* Contrast ratios are against white paper, which is a harsher ground
+       than the screen's cream. The faint tone is deliberately darker than
+       its screen equivalent (#8c887e, only 3.54:1) because it carries
+       prep clauses and unit conversions — text an older cook reads under
+       kitchen light. All three clear WCAG AA for body text. */
+    --p-ink: #22201b;        /* 16.3:1 — the house ink */
+    --p-soft: #6b6459;       /*  5.9:1 — secondary prose, prep clauses */
+    --p-faint: #767268;      /*  4.8:1 — de-emphasized meta */
     --p-accent: #bb3a2c;     /* the house red */
     --p-rule: #d8d2c4;       /* hairlines */
     --p-rule-firm: #b3ab9a;  /* section underscores */
@@ -3765,6 +3786,24 @@ body.cmd-palette-open { overflow: hidden; }
     color: var(--p-ink) !important;
     text-wrap: balance;
   }
+  /* Draft marker. The one place on the card that keeps a rule in the
+     safety red, because a printed stub is otherwise indistinguishable
+     from a tested recipe and the reader has no other way to find out. */
+  .rh-status {
+    display: block !important;
+    max-width: 42em;
+    margin: 0 0 8pt !important;
+    padding: 0 0 0 9pt !important;
+    border: 0 !important;
+    border-left: 2.5pt solid var(--p-accent) !important;
+    border-radius: 0 !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8.5pt !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    color: var(--p-ink) !important;
+  }
+
   /* Standfirst: this is the one paragraph a cook reads once, before
      starting, and never again. It gets a narrow measure and sits smaller
      than the step prose — subordinate to the method, not competing with
@@ -4197,30 +4236,36 @@ body.cmd-palette-open { overflow: hidden; }
     page-break-inside: avoid;
   }
   .safety-callout-icon { display: none !important; }
+  /* Matches the other section heads — serif, sentence case. Kept in the
+     accent so it still reads as the card's warning register. */
   .safety-callout-head {
-    font-family: var(--font-mono) !important;
-    font-size: 7.5pt !important;
-    font-weight: 700 !important;
-    text-transform: uppercase;
-    letter-spacing: 0.14em !important;
+    font-family: var(--font-serif) !important;
+    font-size: 11pt !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
     color: var(--p-accent) !important;
-    margin: 0 0 4pt !important;
+    margin: 0 0 5pt !important;
   }
   .safety-list { margin: 0 !important; padding: 0 !important; list-style: none !important; }
+  /* Safety was the smallest prose on the card, which is backwards: it's
+     the one section where misreading a number has consequences beyond a
+     disappointing dinner. Set at the same size as the ingredient rows. */
   .safety-item {
-    font-size: 8.5pt !important;
-    line-height: 1.42 !important;
+    font-size: 9pt !important;
+    line-height: 1.45 !important;
     color: var(--p-soft) !important;
-    margin: 0 0 5pt !important;
+    margin: 0 0 6pt !important;
     break-inside: avoid;
     page-break-inside: avoid;
   }
   .safety-item-for {
     display: block !important;
     font-family: var(--font-sans) !important;
-    font-size: 8.5pt !important;
+    font-size: 9pt !important;
     font-weight: 600 !important;
     color: var(--p-ink) !important;
+    margin-bottom: 1pt;
   }
   .safety-item-why { color: var(--p-soft) !important; }
   /* "Reference →" links are dead ink on paper */
