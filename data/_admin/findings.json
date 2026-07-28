@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-28T17:50:57.370Z",
+  "generated": "2026-07-28T17:56:31.815Z",
   "summary": {
     "errors": 0,
     "warnings": 457,
-    "info": 154
+    "info": 159
   },
   "findings": [
     {
@@ -2033,8 +2033,8 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/shojin-kenchinjiru-temple-miso-soup.md",
-      "msg": "technique \"mise-en-place\" has no matching page",
-      "fix": "Create content/techniques/mise-en-place.md"
+      "msg": "technique \"prep-staging\" has no matching page",
+      "fix": "Create content/techniques/prep-staging.md"
     },
     {
       "level": "WARN",
@@ -2166,8 +2166,8 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/tonjiru-pork-vegetable-miso-soup.md",
-      "msg": "technique \"mise-en-place\" has no matching page",
-      "fix": "Create content/techniques/mise-en-place.md"
+      "msg": "technique \"prep-staging\" has no matching page",
+      "fix": "Create content/techniques/prep-staging.md"
     },
     {
       "level": "WARN",
@@ -2732,6 +2732,13 @@
       "file": "content/recipes/chicken-nihari.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 tbsp\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chicken-nihari.md",
+      "msg": "ingredients[22].note shows the schema field name \"homemade_alternatives\" to the cook — \"(½ cup; see homemade_alternatives for the recipe)\"",
+      "fix": "Field names are build vocabulary, not kitchen language. Either name the thing directly (\"or use homemade dashi\") or drop the pointer entirely — the page already renders its own homemade-alternatives and substitutions sections."
     },
     {
       "level": "WARN",
@@ -3632,6 +3639,20 @@
     {
       "level": "INFO",
       "category": "formatting",
+      "file": "content/recipes/okonomiyaki-osaka-style.md",
+      "msg": "ingredients[1].item shows the schema field name \"homemade_alternatives\" to the cook — \"dashi (kombu-katsuobushi, see homemade_alternatives)\"",
+      "fix": "Field names are build vocabulary, not kitchen language. Either name the thing directly (\"or use homemade dashi\") or drop the pointer entirely — the page already renders its own homemade-alternatives and substitutions sections."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/okonomiyaki-osaka-style.md",
+      "msg": "ingredients[13].note shows the schema field name \"homemade_alternatives\" to the cook — \"(~⅓ cup; the structural sweet-savory Worcestershire-derived …\"",
+      "fix": "Field names are build vocabulary, not kitchen language. Either name the thing directly (\"or use homemade dashi\") or drop the pointer entirely — the page already renders its own homemade-alternatives and substitutions sections."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
       "file": "content/recipes/olive-garden-breadsticks.md",
       "msg": "scaling: 1 yield-coupled split(s) (\"into 12\") use a fixed count that will not move with servings",
       "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
@@ -3712,6 +3733,13 @@
       "file": "content/recipes/pakistani-haleem.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"2 to 3 tbsp\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/pakistani-haleem.md",
+      "msg": "ingredients[18].note shows the schema field name \"homemade_alternatives\" to the cook — \"(1 cup; structural finish, see homemade_alternatives)\"",
+      "fix": "Field names are build vocabulary, not kitchen language. Either name the thing directly (\"or use homemade dashi\") or drop the pointer entirely — the page already renders its own homemade-alternatives and substitutions sections."
     },
     {
       "level": "INFO",
@@ -4202,6 +4230,13 @@
       "file": "content/recipes/tonkatsu.md",
       "msg": "step 2 names \"salt\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"6 g kosher salt\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/tonkatsu.md",
+      "msg": "ingredients[8].note shows the schema field name \"homemade_alternatives\" to the cook — \"(~¼ cup; offered at the table; the sweet-savory Worcestershi…\"",
+      "fix": "Field names are build vocabulary, not kitchen language. Either name the thing directly (\"or use homemade dashi\") or drop the pointer entirely — the page already renders its own homemade-alternatives and substitutions sections."
     },
     {
       "level": "WARN",
