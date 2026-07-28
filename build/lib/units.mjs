@@ -43,6 +43,23 @@ export function normalizeUnit(u) {
   return ALIASES[key] || key;
 }
 
+// `each` is a data-layer unit, not a word anyone says. It exists so the
+// scaler and the nutrition lookup can tell "1 egg" from "1 g egg", and it
+// has to stay in `unit:` and in data-unit for that math to work — but it
+// must never reach a cook. "1 each large egg" is how a spreadsheet talks;
+// the recipe means "1 large egg".
+//
+// Only `each` is blanked. The other piece units are real words a cook uses
+// ("2 cloves garlic", "1 stick butter"), so they print as written.
+//
+// Every surface that renders a quantity for a human goes through this:
+// the ingredient list, the JSON-LD that Google and recipe apps parse, and
+// the client-side rescaler in recipe.js (which has its own copy, since it
+// can't import from the build).
+export function displayUnit(u) {
+  return normalizeUnit(u) === 'each' ? '' : (u || '');
+}
+
 export function parseQty(q) {
   if (typeof q === 'number') return q;
   if (typeof q !== 'string') return null;

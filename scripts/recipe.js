@@ -191,6 +191,14 @@
       if (unit === 'ml' && qty >= 1000) return { qty: qty / 1000, unit: 'l' };
       return { qty, unit };
     }
+    // Mirror of displayUnit() in build/lib/units.mjs. `each` is a unit for
+    // the scaler, not for the cook — "2 each eggs" is how a spreadsheet
+    // talks. The build blanks it on first render; this keeps it blank once
+    // the cook rescales or flips to imperial. Both copies must agree, so
+    // change them together.
+    function shownUnit(unit) {
+      return unit === 'each' ? '' : (unit || '');
+    }
     function fmtMetric(n, unit) {
       if (n == null || isNaN(n)) return '';
       if (unit === 'kg' || unit === 'l') return n < 10 ? n.toFixed(2).replace(/0+$/, '').replace(/\.$/, '') : n.toFixed(1).replace(/\.0$/, '');
@@ -255,7 +263,11 @@
         }
         // Main column
         qtyEl.textContent = (units === 'imperial' ? fmtImperial : fmtMetric)(mainDisp.qty, mainDisp.unit);
-        if (unitEl) unitEl.textContent = mainDisp.unit;
+        // Leading space lives with the unit so a blanked `each` leaves no gap.
+        if (unitEl) {
+          const su = shownUnit(mainDisp.unit);
+          unitEl.textContent = su ? ' ' + su : '';
+        }
         // Alternate-unit parenthetical — empty when there's no meaningful conversion
         if (altEl) {
           const altQty = fmtActive(altDisp.qty, altDisp.unit);

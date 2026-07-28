@@ -29,6 +29,7 @@ import {
   renderSafetyBody, renderSafetyNotes,
 } from './lib/recipe-render.mjs';
 import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
+import { displayUnit } from './lib/units.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
 import { computeReverseLinks, enrichEntry } from './lib/cards.mjs';
 import { computePairings } from './lib/pairings.mjs';
@@ -77,7 +78,10 @@ function buildJsonLd(fm, slug, category) {
   let data;
   if (fm.type === 'recipe') {
     const ingredients = (fm.ingredients || []).map(i => {
-      const qty = i.qty != null ? `${i.qty}${i.unit ? ' ' + i.unit : ''} ` : '';
+      // displayUnit() drops `each`, so Google and recipe importers get
+      // "1 large egg" rather than the spreadsheet-flavoured "1 each large egg".
+      const u = displayUnit(i.unit);
+      const qty = i.qty != null ? `${i.qty}${u ? ' ' + u : ''} ` : '';
       return `${qty}${i.item}${i.prep ? ', ' + i.prep : ''}`;
     });
     const time = fm.time || {};

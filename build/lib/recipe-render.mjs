@@ -5,7 +5,7 @@
 
 import MarkdownIt from 'markdown-it';
 import { fmtMinutes, frameRecipeTime } from './cards.mjs';
-import { classifyIngredients } from './units.mjs';
+import { classifyIngredients, displayUnit } from './units.mjs';
 import { renderPicture, relPrefixFor } from './images.mjs';
 import { sectionFor, SECTIONS, SECTION_LABEL } from './shop-section.mjs';
 
@@ -103,11 +103,31 @@ function relPath(fromPath, toPath) {
   return ('../'.repeat(ups) + downs.join('/')) || './';
 }
 
-function fmtQty(qty) {
+// Decimals a cook counts rather than weighs get their vulgar-fraction form.
+// "0.5 whole nutmeg" and "0.25 lemon" are spreadsheet output; the recipe means
+// half a nutmeg and a quarter lemon. Kept to the fractions that appear on a
+// measuring spoon or divide a whole ingredient — anything else stays decimal,
+// since "0.3" is genuinely 0.3 and inventing ⅓ for it would be a lie.
+const NUM_TO_FRAC = new Map([
+  [0.5, '½'], [0.25, '¼'], [0.75, '¾'], [0.125, '⅛'],
+  [0.375, '⅜'], [0.625, '⅝'], [0.875, '⅞'],
+]);
+
+function fmtQty(qty, unit) {
   if (typeof qty === 'string') return escapeHtml(qty);
   if (typeof qty !== 'number') return '';
   // round to 3 sig figs, then strip trailing zeros
   const rounded = Math.round(qty * 1000) / 1000;
+  // Grams and millilitres are scale readings, not counted things: "0.5 g" is
+  // a real weight and "½ g" would read as sloppiness. Fractions are only for
+  // counted units (a nutmeg, a lemon) and spoon measures.
+  const isWeight = unit === 'g' || unit === 'ml' || unit === 'kg' || unit === 'l';
+  if (!isWeight) {
+    const whole = Math.floor(rounded);
+    const frac = Math.round((rounded - whole) * 1000) / 1000;
+    const glyph = NUM_TO_FRAC.get(frac);
+    if (glyph) return whole === 0 ? glyph : `${whole}${glyph}`;
+  }
   return String(rounded);
 }
 
@@ -609,8 +629,16 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     const impPref = ing.imperial_pref   ?? (tfm && tfm.imperial_pref);
     const densityAttr = (typeof density === 'number') ? ` data-density="${density}"` : '';
     const impPrefAttr = impPref ? ` data-imp-pref="${escapeHtml(impPref)}"` : '';
-    const qty = fmtQty(ing.qty);
+    // Two forms, deliberately: `qtyData` is the machine value that feeds
+    // data-qty and the scaler's parseFloat, `qty` is what the cook reads and
+    // may be a fraction glyph. Never let the glyph reach data-qty —
+    // parseFloat('½') is NaN and scaling would silently stop working.
+    const qtyData = fmtQty(ing.qty, 'g');
+    const qty = fmtQty(ing.qty, ing.unit);
     const unit = ing.unit ? escapeHtml(ing.unit) : '';
+    // What the cook reads. `unit` stays raw for data-unit, which the scaler
+    // in recipe.js needs; `shownUnit` is the same value with `each` blanked.
+    const shownUnit = ing.unit ? escapeHtml(displayUnit(ing.unit)) : '';
     const prep = ing.prep ? `<span class="ing-prep">, ${escapeHtml(ing.prep)}</span>` : '';
     const cleanNote = splitNote(ing.note);
     const isScalable = typeof ing.qty === 'number';
@@ -633,7 +661,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
       : '';
     const idAttr = ing.id ? ` data-ing-id="${escapeHtml(ing.id)}"` : '';
 
-    const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${idAttr}${packAttrs}${deriveAttrs}` + (isScalable ? ' data-scalable="1"' : '');
+    const dataAttrs = `data-qty="${escapeHtml(qtyData)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${idAttr}${packAttrs}${deriveAttrs}` + (isScalable ? ' data-scalable="1"' : '');
 
     // Pack rows render as "N × <pack label>" in both shop and mise views — a
     // can is always counted in cans, never in ml. recipe.js keeps the count
@@ -641,12 +669,14 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     let qtyCol;
     if (role === 'pack' && pack && (pack.size_ml || pack.size_g) && pack.size_label) {
       const sizeBase = pack.size_ml || pack.size_g;
-      const initialCount = isScalable ? Math.max(1, Math.ceil(parseFloat(qty) / sizeBase)) : '';
+      const initialCount = isScalable ? Math.max(1, Math.ceil(parseFloat(qtyData) / sizeBase)) : '';
       qtyCol = `<span class="ing-qty ing-qty-pack">
             <span data-pack-count>${initialCount}</span> × <span data-pack-label-text>${escapeHtml(pack.size_label)}</span>
           </span>`;
     } else {
-      qtyCol = `<span class="ing-qty"><span data-ing-qty>${qty}</span> <span data-ing-unit>${unit}</span></span>`;
+      // The separating space lives inside the unit span, so a blanked unit
+      // ("1 each" → "1") leaves no trailing gap before the ingredient name.
+      qtyCol = `<span class="ing-qty"><span data-ing-qty>${qty}</span><span data-ing-unit>${shownUnit ? ' ' + shownUnit : ''}</span></span>`;
     }
 
     // Derived rows surface their parent's identity inline so a cook reading
@@ -895,8 +925,13 @@ function renderShopAggregateRow(g, currentPath) {
   const impPrefAttr = impPref ? ` data-imp-pref="${escapeHtml(impPref)}"` : '';
 
   // Format the aggregated qty using the same fmtQty logic as the row renderer.
-  const qty = fmtQty(g.totalQty);
+  // Same split as the row renderer: machine value for data-qty, readable
+  // form (possibly a fraction glyph) for the cook.
+  const qtyData = fmtQty(g.totalQty, 'g');
+  const qty = fmtQty(g.totalQty, ing.unit);
   const unit = ing.unit ? escapeHtml(ing.unit) : '';
+  // See displayUnit() — `each` is for the scaler, not for the cook.
+  const shownUnit = ing.unit ? escapeHtml(displayUnit(ing.unit)) : '';
   const isScalable = g.totalQty > 0;
   const isConvertible = isScalable && unit && unit !== 'each' && unit !== 'pinch' && unit !== 'clove';
   const alt = isConvertible ? ` <span class="ing-alt" data-ing-alt aria-hidden="true"></span>` : '';
@@ -908,7 +943,7 @@ function renderShopAggregateRow(g, currentPath) {
       (pack.size_g  != null ? ` data-pack-size-g="${pack.size_g}"`  : '') +
       (pack.size_label ? ` data-pack-label="${escapeHtml(pack.size_label)}"` : '')
     : '';
-  const dataAttrs = `data-qty="${escapeHtml(qty)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${packAttrs}` + (isScalable ? ' data-scalable="1"' : '');
+  const dataAttrs = `data-qty="${escapeHtml(qtyData)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${packAttrs}` + (isScalable ? ' data-scalable="1"' : '');
 
   let qtyCol;
   if (role === 'pack' && pack && (pack.size_ml || pack.size_g) && pack.size_label) {
@@ -919,9 +954,9 @@ function renderShopAggregateRow(g, currentPath) {
           </span>`;
   } else if (!isScalable && g.nonNumericQtys.length) {
     // Pure-string qtys ("to taste") — surface the literal text, no scaling.
-    qtyCol = `<span class="ing-qty"><span data-ing-qty>${escapeHtml(g.nonNumericQtys[0])}</span> <span data-ing-unit>${unit}</span></span>`;
+    qtyCol = `<span class="ing-qty"><span data-ing-qty>${escapeHtml(g.nonNumericQtys[0])}</span><span data-ing-unit>${shownUnit ? ' ' + shownUnit : ''}</span></span>`;
   } else {
-    qtyCol = `<span class="ing-qty"><span data-ing-qty>${qty}</span> <span data-ing-unit>${unit}</span></span>`;
+    qtyCol = `<span class="ing-qty"><span data-ing-qty>${qty}</span><span data-ing-unit>${shownUnit ? ' ' + shownUnit : ''}</span></span>`;
   }
 
   return `
