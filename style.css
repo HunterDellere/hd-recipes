@@ -4195,32 +4195,46 @@ body.cmd-palette-open { overflow: hidden; }
     padding: 0 !important;
   }
   /* Technique reference. The name is worth keeping — "this step is a
-     brown butter" is real information — but the screen's "↗" says
-     "tap me", which paper can't honour. Arrow removed, set as a plain
-     italic aside so it reads as a note rather than a control. */
+     brown butter" is real information — but on screen it's a chip whose
+     styling says "link"; strip that and a bare noun phrase dangles after
+     the step's final full stop like leftover interface. So it prints as
+     a labelled aside on its own line: "Technique: Brown butter (beurre
+     noisette)". Grammar, not decoration. */
   .step-tech {
-    display: inline !important;
-    font-style: italic;
-    color: var(--p-soft) !important;
+    display: block !important;
+    margin-top: 3pt !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8pt !important;
+    font-style: normal !important;
+    color: var(--p-faint) !important;
     border: 0 !important;
   }
   .step-tech::before {
     content: none !important;
     display: none !important;
   }
-  /* Durations as a quiet mono aside, not the screen's interactive pill */
+  .step-tech-prefix {
+    display: inline !important;
+    font-weight: 600 !important;
+  }
+  /* Duration. On screen this is a <button> that starts a timer, badged
+     with a ⏱ emoji. On paper the emoji is another dead control cue — it
+     invites a tap that can't happen — so the icon goes and the number
+     prints as a plain parenthetical. */
+  .step-time-icon { display: none !important; }
   .step-time {
     display: inline !important;
     margin-left: 0.5em !important;
     padding: 0 !important;
     border: 0 !important;
-    font-family: var(--font-mono) !important;
-    font-size: 7.5pt !important;
-    letter-spacing: 0.04em;
+    font-family: var(--font-sans) !important;
+    font-size: 8pt !important;
+    letter-spacing: 0 !important;
     color: var(--p-faint) !important;
     white-space: nowrap;
   }
-  .step-time::before { content: "— "; }
+  .step-time::before { content: "("; }
+  .step-time::after { content: ")"; }
 
   /* ── Safety ────────────────────────────────────────────────────────── */
   /* The one section where trimming for space would be actively unsafe.
@@ -4381,6 +4395,10 @@ body.cmd-palette-open { overflow: hidden; }
    fight the print block, and source order would decide the winner. */
 @media screen {
   .print-colophon { display: none !important; }
+  /* On screen the chip styling already says "technique link", so the
+     spelled-out label is redundant. It exists for print, where that
+     styling is stripped and the bare name would dangle. */
+  .step-tech-prefix { display: none !important; }
 }
 
 /* === Item F: related-recipes — mobile horizontal carousel for the recipes group === */

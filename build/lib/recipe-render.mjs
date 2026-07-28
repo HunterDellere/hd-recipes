@@ -956,7 +956,13 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
       if (target) {
         const href = relPath(currentPath, target.path);
         const techTitle = (target.title || step.technique).split('—')[0].split('·')[0].trim();
-        body += ` <a class="step-tech" href="${escapeHtml(href)}">${escapeHtml(techTitle)}</a>`;
+        // The bare technique name works on screen, where the chip styling
+        // marks it as a link to a method page. On paper that styling is
+        // gone and the name dangles after the final full stop as an
+        // orphan noun phrase — it reads like leftover interface, not
+        // information. The print-only prefix gives it grammar; CSS shows
+        // it in print and hides it on screen.
+        body += ` <a class="step-tech" href="${escapeHtml(href)}"><span class="step-tech-prefix">Technique: </span>${escapeHtml(techTitle)}</a>`;
       }
     }
     // The time pill doubles as a one-tap timer launcher when the duration is
