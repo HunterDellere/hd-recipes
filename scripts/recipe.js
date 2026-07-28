@@ -1033,11 +1033,21 @@
   //
   // afterprint is unreliable in a few environments (notably some
   // Safari/iOS paths), so a matchMedia('print') listener runs the same
-  // restore as a fallback. Both are idempotent.
+  // restore as a fallback.
+  //
+  // Both paths fire for a single print in Chrome, so `printing` guards
+  // re-entry. Without it the second beforePrint() would clear the record
+  // of what we opened — those elements now carry [open] and no longer
+  // match details:not([open]), so they'd be re-scanned as nothing and
+  // left permanently expanded, which is the very state this code exists
+  // to prevent.
   let printOpened = [];
   let printCookView = null;
+  let printing = false;
 
   function beforePrint() {
+    if (printing) return;
+    printing = true;
     printOpened = [];
     document.querySelectorAll('details:not([open])').forEach(d => {
       printOpened.push(d);
@@ -1049,6 +1059,8 @@
   }
 
   function afterPrint() {
+    if (!printing) return;
+    printing = false;
     printOpened.forEach(d => d.removeAttribute('open'));
     printOpened = [];
     if (printCookView) {
