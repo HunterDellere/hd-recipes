@@ -15,6 +15,23 @@ function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// Ingredient phase labels are authored as "Phase 1, pork" across ~340
+// recipes. That reads as production-line language to anyone who doesn't
+// cook professionally, which is most people printing a recipe. Presenting
+// it as "Step 1 · Pork" keeps the ordering signal — which is the only
+// thing the label needs to carry — without the factory tone. Done at the
+// render layer rather than by rewriting content, so authors keep using
+// whatever convention they like and the reader gets consistent output.
+// Labels that don't match the pattern pass through untouched.
+function prettifyPhase(label) {
+  const s = String(label || '').trim();
+  const m = s.match(/^phase\s+(\d+)\s*[,:–—-]?\s*(.*)$/i);
+  if (!m) return s;
+  const [, num, rest] = m;
+  if (!rest) return `Step ${num}`;
+  return `Step ${num} · ${rest.charAt(0).toUpperCase()}${rest.slice(1)}`;
+}
+
 // "heavy-cast-iron-skillet" → "Heavy cast iron skillet". Used where a slug
 // has no matching entry page and would otherwise surface raw to the reader.
 // Sentence case, not title case: these sit in running prose, and title case
@@ -666,7 +683,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     phaseMap.get(g).push(r);
   }
   const miseHtml = phaseGroups.map(g => {
-    const head = g ? `<h3 class="ing-group-head">${escapeHtml(g)}</h3>` : '';
+    const head = g ? `<h3 class="ing-group-head">${escapeHtml(prettifyPhase(g))}</h3>` : '';
     const rows = phaseMap.get(g).map(r => renderRow(r, { variant: 'mise' })).join('');
     return `${head}<ol class="ing-list">${rows}\n      </ol>`;
   }).join('\n');
@@ -720,7 +737,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
       </details>
       ${phaseCount > 0 ? `<details class="ing-panel ing-panel-mise" data-ing-panel="mise">
         <summary class="ing-panel-summary">
-          <span class="ing-panel-title">Prep by stage</span>
+          <span class="ing-panel-title">What to prep, in order</span>
           <span class="ing-panel-meta">
             <span class="ing-panel-count">${phaseCount} ${phaseCount === 1 ? 'phase' : 'phases'}</span>
             <span class="ing-panel-chev" aria-hidden="true">▾</span>
@@ -968,7 +985,7 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
   }).join('');
   return `
     <span class="section-anchor" id="execution"></span>
-    <div class="section-head"><h2>Execution</h2></div>
+    <div class="section-head"><h2>Method</h2></div>
     <ol class="recipe-steps">${items}
     </ol>`;
 }
@@ -1249,7 +1266,7 @@ export function renderRecipeBody(fm, slug, category, opts) {
   if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Ingredients' }); }
 
   const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images, ingredientBySlug);
-  if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Execution' }); }
+  if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Method' }); }
 
   if (safetyHtml) { sections.push(safetyHtml); sidebarLinks.push({ id: 'safety', label: 'Safety' }); }
 

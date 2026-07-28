@@ -3828,60 +3828,74 @@ body.cmd-palette-open { overflow: hidden; }
   }
   .section-head h2 {
     font-family: var(--font-mono) !important;
-    font-size: 7.5pt !important;
+    font-size: 8.5pt !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
-    letter-spacing: 0.15em !important;
+    letter-spacing: 0.14em !important;
     text-transform: uppercase;
     margin: 0 !important;
     color: var(--p-soft) !important;
   }
-  /* Primary tier */
+  /* Primary tier. Set in the serif at a size you can read across a
+     kitchen, because these two are what the cook navigates by; the mono
+     labels above are for the supporting sections. */
   .section-anchor#ingredients + .section-head,
   .section-anchor#execution + .section-head {
-    margin-top: 17pt !important;
-    padding-bottom: 3.5pt !important;
-    border-bottom: 1pt solid var(--p-accent) !important;
+    margin-top: 19pt !important;
+    padding-bottom: 4pt !important;
+    border-bottom: 1.5pt solid var(--p-accent) !important;
   }
   .section-anchor#ingredients + .section-head h2,
   .section-anchor#execution + .section-head h2 {
-    font-size: 9pt !important;
-    letter-spacing: 0.18em !important;
-    color: var(--p-accent) !important;
+    font-family: var(--font-serif) !important;
+    font-size: 15pt !important;
+    font-weight: 600 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    color: var(--p-ink) !important;
   }
   .section-blurb { display: none !important; }
 
-  /* ── Before you start ──────────────────────────────────────────────── */
-  /* Load-bearing on paper: it's what the cook needed to know an hour ago. */
-  .recipe-prelude-section, .recipe-prelude {
+  /* ── Read this first ───────────────────────────────────────────────── */
+  /* .recipe-prelude is nested INSIDE .recipe-prelude-section, so styling
+     both with a left border drew two parallel rules. The outer element
+     carries the frame; the inner one is reset to a plain box. */
+  .recipe-prelude-section {
     display: block !important;
     border: 0 !important;
-    border-left: 2pt solid var(--p-rule-firm) !important;
+    border-left: 3pt solid var(--p-accent) !important;
     border-radius: 0 !important;
-    margin: 0 0 4pt !important;
-    padding: 0 0 0 10pt !important;
+    margin: 0 0 6pt !important;
+    padding: 1pt 0 1pt 11pt !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
-  /* Dashes rather than bullets, set flush: a bulleted list inside a ruled
-     box double-indents and eats the measure for no gain. */
+  .recipe-prelude {
+    display: block !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   .recipe-prelude-list {
     margin: 0 !important;
     padding: 0 !important;
     list-style: none !important;
   }
+  /* Each note is a discrete instruction, so it gets space around it rather
+     than being packed into a block of grey. Full ink, not muted: this is
+     the timing information that ruins the dish if it's missed. */
   .recipe-prelude-list li {
-    font-size: 8.5pt !important;
-    line-height: 1.38 !important;
-    color: var(--p-soft) !important;
-    margin: 0 0 3pt !important;
-    padding-left: 8pt !important;
-    text-indent: -8pt !important;
-    page-break-inside: avoid;
+    font-family: var(--font-serif) !important;
+    font-size: 9.5pt !important;
+    line-height: 1.45 !important;
+    color: var(--p-ink) !important;
+    margin: 0 0 5pt !important;
+    padding: 0 !important;
     break-inside: avoid;
+    page-break-inside: avoid;
   }
-  .recipe-prelude-list li::before {
-    content: "— ";
-    color: var(--p-faint);
-  }
+  .recipe-prelude-list li:last-child { margin-bottom: 0 !important; }
 
   /* ── Ingredients ───────────────────────────────────────────────────── */
   /* Both panels print: the shopping list answers "what do I buy", prep-by-
@@ -3908,13 +3922,16 @@ body.cmd-palette-open { overflow: hidden; }
   }
   .ing-panel-summary::-webkit-details-marker,
   .ing-panel-summary::marker { display: none !important; content: none !important; }
+  /* "Shopping list" / "What to prep, in order" are the two questions the
+     card answers, so they're set as readable subheads in the serif rather
+     than tiny tracked-out mono. */
   .ing-panel-title {
-    font-family: var(--font-mono) !important;
-    font-size: 7.5pt !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.14em !important;
-    text-transform: uppercase;
-    color: var(--p-soft) !important;
+    font-family: var(--font-serif) !important;
+    font-size: 11pt !important;
+    font-weight: 600 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    color: var(--p-ink) !important;
   }
   /* Two columns — ingredient lines are short and a single column wastes
      half the sheet. Steps stay one wide measure; they're prose. */
@@ -3942,16 +3959,19 @@ body.cmd-palette-open { overflow: hidden; }
     break-inside: avoid;
     page-break-inside: avoid;
   }
+  /* Aisle names ("Produce") and stage names ("Step 1 · Pork") — set in
+     sans at readable size rather than tracked-out micro-caps. These are
+     the labels that tell the cook which pile they're looking at. */
   .ing-group-head, .ing-shop-section {
     display: block !important;
-    font-family: var(--font-mono) !important;
-    font-size: 7pt !important;
+    font-family: var(--font-sans) !important;
+    font-size: 8pt !important;
     font-weight: 700 !important;
-    text-transform: uppercase;
-    letter-spacing: 0.12em !important;
-    color: var(--p-faint) !important;
-    margin: 7pt 0 2.5pt !important;
-    padding: 0 0 1.5pt !important;
+    text-transform: none !important;
+    letter-spacing: 0.01em !important;
+    color: var(--p-soft) !important;
+    margin: 8pt 0 3pt !important;
+    padding: 0 0 2pt !important;
     border: 0 !important;
     border-bottom: 0.5pt solid var(--p-rule) !important;
     break-after: avoid;
@@ -3960,38 +3980,53 @@ body.cmd-palette-open { overflow: hidden; }
   }
   .ing-group-head:first-child, .ing-shop-section:first-child { margin-top: 0 !important; }
   .ing-shop-section-count { display: none !important; }
-  /* Quantity in mono with tabular figures so the numbers form a true
-     column the eye can run down; the name in Inter beside it. */
+  /* Each row is a two-column grid: quantity in its own fixed gutter, the
+     ingredient beside it. This is the single most useful thing the card
+     does for someone shopping or measuring — every number starts at the
+     same x-position, so the amounts read as a vertical list instead of
+     being buried at the head of a sentence. Tabular figures keep the
+     digits themselves aligned within that column. */
   .ing-row {
-    display: block !important;
-    padding: 1.5pt 0 !important;
+    display: grid !important;
+    grid-template-columns: 46pt 1fr;
+    gap: 7pt;
+    align-items: baseline;
+    padding: 2.5pt 0 !important;
     margin: 0 !important;
     border: 0 !important;
     font-family: var(--font-sans) !important;
-    font-size: 8.5pt !important;
-    line-height: 1.38 !important;
+    font-size: 9pt !important;
+    line-height: 1.4 !important;
     color: var(--p-ink) !important;
     break-inside: avoid;
     page-break-inside: avoid;
   }
   .ing-qty {
+    grid-column: 1;
+    display: block !important;
     font-family: var(--font-mono) !important;
-    font-weight: 600 !important;
-    font-size: 8pt !important;
-    font-variant-numeric: tabular-nums;
-    color: var(--p-ink) !important;
-  }
-  .ing-qty::after { content: "\00a0\00a0"; }
-  .ing-name {
-    display: inline !important;
-    color: var(--p-ink) !important;
+    font-weight: 700 !important;
     font-size: 8.5pt !important;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    color: var(--p-ink) !important;
   }
-  /* Prep clauses, parenthetical conversions and alternates are support —
-     they recede so the quantity + name line stays the figure. */
+  .ing-qty::after { content: none !important; }
+  /* Everything that isn't the quantity shares column 2 and wraps under
+     itself, so a long ingredient never pushes into the number gutter. */
+  .ing-name {
+    grid-column: 2;
+    font-weight: 500 !important;
+    color: var(--p-ink) !important;
+    font-size: 9pt !important;
+  }
+  /* Prep clauses and conversions are support: same column, lighter, so
+     the eye gets "600 g / pork loin" first and the detail second. */
   .ing-prep, .ing-note, .ing-alt, .ing-opt {
+    grid-column: 2;
     display: inline !important;
     font-size: 8pt !important;
+    font-style: normal !important;
     color: var(--p-faint) !important;
   }
 
@@ -4005,22 +4040,34 @@ body.cmd-palette-open { overflow: hidden; }
     padding: 0 !important;
     counter-reset: none;
   }
+  /* Generous space between steps and a hairline above each one. Losing
+     your place mid-step is the most common way a printed recipe fails
+     you, and separated blocks are far easier to re-find than an evenly
+     packed column. The rule is what turns "a list" into "discrete steps". */
   .step-item {
     display: grid !important;
-    grid-template-columns: 20pt 1fr;
-    gap: 8pt;
+    grid-template-columns: 26pt 1fr;
+    gap: 9pt;
     align-items: baseline;
-    margin: 0 0 8pt !important;
-    padding: 0 !important;
+    margin: 0 !important;
+    /* The separator is a BOTTOM border, not a top one. A top border can
+       land at the foot of a page with its step pushed to the next sheet,
+       leaving a rule with nothing under it. Anchoring the rule to the
+       step above means it can never outlive its content. */
+    padding: 0 0 8pt !important;
     border: 0 !important;
+    border-bottom: 0.5pt solid var(--p-rule) !important;
     /* Cook's view dims inactive steps; on paper everything is equal */
     opacity: 1 !important;
     filter: none !important;
     break-inside: avoid;
     page-break-inside: avoid;
   }
-  /* Red numeral, no disc: a filled circle at this size prints as a blob
-     and burns toner on every step. The colour alone carries it. */
+  .step-item + .step-item { padding-top: 8pt !important; }
+  .step-item:last-child { border-bottom: 0 !important; }
+  /* Big red numeral, no disc: a filled circle at this size prints as a
+     blob and burns toner on every step. Size and colour carry it, and it
+     stays findable from arm's length. */
   .step-num {
     grid-column: 1;
     display: block !important;
@@ -4028,14 +4075,15 @@ body.cmd-palette-open { overflow: hidden; }
     height: auto !important;
     min-width: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
     border: 0 !important;
     border-radius: 0 !important;
     background: none !important;
     font-family: var(--font-mono) !important;
-    font-size: 10pt !important;
+    font-size: 13pt !important;
     font-weight: 700 !important;
     font-variant-numeric: tabular-nums;
-    line-height: 1.3 !important;
+    line-height: 1.15 !important;
     text-align: right;
     color: var(--p-accent) !important;
   }
