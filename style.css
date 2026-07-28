@@ -3762,7 +3762,9 @@ body.cmd-palette-open { overflow: hidden; }
     font-style: normal !important;
     margin: 0 0 9pt !important;
     color: var(--p-soft) !important;
-    max-width: 30em;
+    /* Wide enough that the paragraph doesn't sit as a narrow slab with a
+       conspicuous empty gutter beside it, narrow enough to stay readable. */
+    max-width: 42em;
   }
   /* Stats as a spec strip — the one place the card wants machine
      precision rather than book typography: "4 SERVINGS · 1 H 15 MIN ·
@@ -3826,15 +3828,20 @@ body.cmd-palette-open { overflow: hidden; }
     page-break-after: avoid;
     break-after: avoid;
   }
+  /* Secondary sections (Before you start, Safety, Equipment,
+     Substitutions) share the serif of the primary heads but sit smaller
+     and quieter. Using the same family throughout is what makes the card
+     read as one designed object rather than a mix of mono labels and
+     serif titles. */
   .section-head h2 {
-    font-family: var(--font-mono) !important;
-    font-size: 8.5pt !important;
-    font-weight: 700 !important;
+    font-family: var(--font-serif) !important;
+    font-size: 11pt !important;
+    font-weight: 600 !important;
     line-height: 1.2 !important;
-    letter-spacing: 0.14em !important;
-    text-transform: uppercase;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
     margin: 0 !important;
-    color: var(--p-soft) !important;
+    color: var(--p-ink) !important;
   }
   /* Primary tier. Set in the serif at a size you can read across a
      kitchen, because these two are what the cook navigates by; the mono
@@ -3842,6 +3849,7 @@ body.cmd-palette-open { overflow: hidden; }
   .section-anchor#ingredients + .section-head,
   .section-anchor#execution + .section-head {
     margin-top: 19pt !important;
+    margin-bottom: 7pt !important;
     padding-bottom: 4pt !important;
     border-bottom: 1.5pt solid var(--p-accent) !important;
   }
@@ -3900,12 +3908,11 @@ body.cmd-palette-open { overflow: hidden; }
   /* ── Ingredients ───────────────────────────────────────────────────── */
   /* Both panels print: the shopping list answers "what do I buy", prep-by-
      stage answers "what goes in when". Different questions, both wanted. */
-  .recipe-ingredients { display: block !important; }
   .ing-panel {
     display: block !important;
     border: 0 !important;
     border-radius: 0 !important;
-    margin: 0 0 10pt !important;
+    margin: 0 !important;
     overflow: visible !important;
     break-inside: auto;
   }
@@ -3933,31 +3940,51 @@ body.cmd-palette-open { overflow: hidden; }
     text-transform: none !important;
     color: var(--p-ink) !important;
   }
-  /* Two columns — ingredient lines are short and a single column wastes
-     half the sheet. Steps stay one wide measure; they're prose. */
+  /* The two panels sit SIDE BY SIDE rather than each being its own
+     two-column block stacked vertically.
+
+     The stacked version had a real failure: a short shopping list fills
+     half the width and a quarter of the height, then the prep panel —
+     which a multicol container won't fragment cleanly across a page in
+     Chrome — can't fit underneath and jumps whole to the next sheet,
+     stranding the bottom half of page 1. That was visible on any recipe
+     with a short ingredient list.
+
+     Side by side fixes it structurally instead of by tuning break hints:
+     "what to buy" on the left, "what to prep, in order" on the right,
+     which is also the order you do them in. Each column is a single flow,
+     so there's no multicol fragmentation to fight at all. */
+  .recipe-ingredients {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22pt;
+    align-items: start;
+  }
+  .ing-panel { min-width: 0; }
   .ing-list-shop, .ing-mise-body {
     display: block !important;
     padding: 0 !important;
     margin: 0 !important;
-    column-count: 2;
-    column-gap: 20pt;
-    /* `balance`, not `auto`. In a paged context `auto` fills to the
-       fragmentainer height, which here collapses both panels to a single
-       column and wastes half of every sheet. `balance` gives true two-up
-       columns; the cost is that a panel which can't fit the remaining
-       space moves whole to the next page, which is the better trade for a
-       list the cook reads as one block. */
-    column-fill: balance;
+    column-count: 1;
   }
   /* Each aisle / phase is one <ol>. Keeping the group unbroken stops a
      heading from stranding at a column foot with its rows in the next
-     column (or, worse, on the next page). */
+     column. `avoid` is a hint, not a guarantee: a group taller than the
+     remaining space still breaks rather than being pushed, which is what
+     keeps a short shopping list from leaving half a sheet blank. */
   .ing-list, .ing-list-shop-section {
     list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+  /* Panels must be allowed to fragment. Without this the second panel is
+     treated as one atom: if it can't fit the space left under the first,
+     it jumps to the next page and strands the remainder of the sheet. */
+  .ing-panel, .ing-panel > .ing-list-shop, .ing-panel > .ing-mise-body {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
   }
   /* Aisle names ("Produce") and stage names ("Step 1 · Pork") — set in
      sans at readable size rather than tracked-out micro-caps. These are
@@ -3988,8 +4015,8 @@ body.cmd-palette-open { overflow: hidden; }
      digits themselves aligned within that column. */
   .ing-row {
     display: grid !important;
-    grid-template-columns: 46pt 1fr;
-    gap: 7pt;
+    grid-template-columns: 42pt 1fr;
+    gap: 6pt;
     align-items: baseline;
     padding: 2.5pt 0 !important;
     margin: 0 !important;
@@ -4087,15 +4114,20 @@ body.cmd-palette-open { overflow: hidden; }
     text-align: right;
     color: var(--p-accent) !important;
   }
+  /* Steps are the only long-form prose on the card and the thing being
+     read from arm's length, mid-task, with wet hands. Extra leading and a
+     measure capped near 62 characters are what make a line findable again
+     after you look away at the pan — the single most common interruption
+     in cooking. */
   .step-body {
     grid-column: 2;
     font-family: var(--font-serif) !important;
     font-size: 10.5pt !important;
-    line-height: 1.5 !important;
+    line-height: 1.58 !important;
     margin: 0 !important;
     color: var(--p-ink) !important;
-    /* Long lines are hard to track back from a standing position */
-    max-width: 40em;
+    max-width: 34em;
+    hyphens: none;
   }
   /* Inline quantities inside step prose: the number a cook re-checks
      mid-motion, so it gets mono + weight without shouting in red. */
@@ -4213,10 +4245,14 @@ body.cmd-palette-open { overflow: hidden; }
     column-count: 2;
     column-gap: 20pt;
   }
+  /* The screen list separates rows with a bottom border. On paper that
+     sits directly under the note text and reads as an underline, so it
+     goes; the spacing already separates the rows. */
   .recipe-subs li {
     display: block !important;
-    margin: 0 0 6pt !important;
+    margin: 0 0 7pt !important;
     padding: 0 !important;
+    border: 0 !important;
     font-family: var(--font-sans) !important;
     font-size: 8.5pt !important;
     line-height: 1.35 !important;
