@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-04T21:03:11.292Z",
+  "generated": "2026-10-11T19:25:32.079Z",
   "summary": {
     "errors": 0,
     "warnings": 457,
-    "info": 159
+    "info": 160
   },
   "findings": [
     {
@@ -2262,12 +2262,6 @@
     },
     {
       "level": "INFO",
-      "category": "tags",
-      "file": "content/_schema/tags.json",
-      "msg": "102 tags in use across 922 entries. Top: umami(294), pantry(278), make-ahead(158), comfort(149), weekend-project(111), weeknight(102), fish(97), spicy(97), seafood(87), quick(72), pork(64), no-cook(62), fermentation(61), one-pot(50), chicken(48), condiment(45), bread(41), rice(40), egg(35), salad(34), vegan(31), beef(30), baked(28), stew(25), vegetarian(24), roast(24), braise(23), soup(23), fried(22), sweet(20)"
-    },
-    {
-      "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
       "msg": "index stats: 865 pages, 8272 tokens, 438.0 KB"
@@ -2277,6 +2271,12 @@
       "category": "search",
       "file": "data/search-index.json",
       "msg": "4357 singleton tokens (appear in exactly 1 entry). Sample: tunisian (with broader levantine and israeli adoption), italian-american (north beach, san francisco), pan-asian / west african pantry crossover, french (with broader american adoption), doubanjiang-douchi-sichuan-peppercorn, indonesian-malaysian-thai-vietnamese, vinegar-mustard-stock-and-bacon-fat, west african (senegalese-inspired), southeast asian (satay tradition), horseradish-mayo-ketchup-cayenne, pectin-and-arabinogalactan-rich, accessible-yet-not-dumbed-down, mediterranean (levantine lean), sweet-salty-sour-spicy-nutty, fried-chili-and-nut-and-seed, citrusy-anise-slightly-nutty, saffron-fennel-orange-tomato, ube-halaya-and-cream-cheese, white-flour-and-whole-wheat, mayo-ketchup-worcestershire, sweet-salty-fermented-spicy, raspberry-and-bitter-orange, mustard-seed-and-curry-leaf, sesame-paste-plus-hot-water, lemon-and-red-wine-vinegar, soy-oyster-stock-fortified, raw-then-slow-confit-baked, goan (konkan coast, india), buttermilk-and-mayonnaise, acid-cure-as-preservation"
+    },
+    {
+      "level": "INFO",
+      "category": "tags",
+      "file": "content/_schema/tags.json",
+      "msg": "102 tags in use across 967 entries. Top: umami(311), pantry(279), make-ahead(179), comfort(170), weekend-project(118), spicy(109), weeknight(108), fish(97), seafood(88), quick(79), pork(70), no-cook(62), fermentation(61), chicken(56), one-pot(55), condiment(49), egg(45), rice(45), bread(44), baked(37), beef(36), salad(34), vegan(31), stew(30), braise(28), soup(26), fried(26), vegetarian(26), sweet(25), share-plate(24)"
     },
     {
       "level": "WARN",
@@ -3320,6 +3320,13 @@
       "file": "content/recipes/honey-mustard-sauce.md",
       "msg": "store-bought ingredient(s) without homemade_alternatives: dijon mustard, mayonnaise",
       "fix": "Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/hong-shao-rou-shanghai-red-braised-pork-belly.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"3 to 4 L\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "INFO",
