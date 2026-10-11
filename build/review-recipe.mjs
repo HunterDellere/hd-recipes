@@ -56,7 +56,7 @@ const CUISINE_TO_REF = [
   ['french', 'northern-central-european'], ['german', 'northern-central-european'],
   ['austrian', 'northern-central-european'], ['british', 'northern-central-european'],
   ['english', 'northern-central-european'], ['irish', 'northern-central-european'],
-  ['nordic', 'northern-central-european'], ['polish', 'northern-central-european'],
+  ['nordic', 'northern-central-european'], ['swedish', 'northern-central-european'], ['polish', 'northern-central-european'],
   ['hungarian', 'northern-central-european'], ['scottish', 'northern-central-european'],
   // Latin American
   ['mexican', 'latin-american'], ['peruvian', 'latin-american'], ['cuban', 'latin-american'],
@@ -79,7 +79,7 @@ const CUISINE_TO_REF = [
   ['west african', 'west-and-sub-saharan-african'],
   // North American (use the dedicated note, then fall back)
   ['cajun', 'north-american'], ['creole', 'north-american'], ['southern', 'north-american'],
-  ['american', 'north-american'],
+  ['american', 'north-american'], ['tex-mex', 'north-american'],
 ].sort((a, b) => b[0].length - a[0].length);
 
 function refForCuisine(cuisine) {
