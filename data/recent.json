@@ -1,5 +1,175 @@
 [
   {
+    "path": "pages/recipes/chipotle-chicken-tortilla-soup.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chipotle chicken tortilla soup",
+    "desc": "A broth built from bone-in chicken and charred onion and garlic, thickened with a purée of fried corn tortillas, chipotle in adobo, and cilantro, then fried in oil before the stock goes back in. Seared chipotle-marinated thighs go on top of each bowl with fresh tortillas fried into strips, melting Oaxaca cheese, avocado, crema, radish, and lime.",
+    "tags": [
+      "soup",
+      "chicken",
+      "smoky",
+      "spicy",
+      "fried",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chipotle-chicken-tortilla-soup",
+    "cuisine": "Mexican",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 75,
+      "total_min": 100,
+      "active_min": 50
+    },
+    "updated": "2026-10-11",
+    "diet": [
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "bone-in, skin-on chicken thighs",
+        "optional": false
+      },
+      {
+        "item": "white onion",
+        "slug": "white-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "boneless, skinless chicken thighs",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "chipotle in adobo (for the marinade)",
+        "slug": "chipotle-in-adobo",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves (for the marinade)",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (for the marinade)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for the marinade)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fresh corn tortillas",
+        "optional": false
+      },
+      {
+        "item": "neutral oil (for frying)",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "chipotle in adobo (for the purée)",
+        "slug": "chipotle-in-adobo",
+        "optional": false
+      },
+      {
+        "item": "cilantro (for the purée)",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "kosher salt (final seasoning)",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "queso Oaxaca",
+        "optional": false
+      },
+      {
+        "item": "avocados",
+        "slug": "avocado",
+        "optional": false
+      },
+      {
+        "item": "Mexican crema",
+        "optional": false
+      },
+      {
+        "item": "radishes",
+        "slug": "radish",
+        "optional": false
+      },
+      {
+        "item": "cilantro (for serving)",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "lime wedges",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "comal-charring",
+      "deep-fry",
+      "maillard-sear"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "wide-skillet",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-10-11",
+    "_card": {
+      "swatchIndex": 4,
+      "swatchGlyph": "chili",
+      "totalMinutes": 100,
+      "diffLabel": "medium",
+      "timeLead": "1 h 40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
     "path": "pages/recipes/ma-la-xiang-guo.html",
     "type": "recipe",
     "category": "recipes",
@@ -2738,153 +2908,6 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
-    }
-  },
-  {
-    "path": "pages/recipes/seared-cod-with-roasted-cauliflower-and-brown-butter-cream.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Seared cod with roasted cauliflower and brown butter cream",
-    "desc": "Two cod fillets seared to a deep gold crust over high-browned roasted cauliflower, finished with a Norman-style pan sauce of brown butter, shallot, white wine, and cream tightened with dijon and lifted with capers, lemon, and dill. A weeknight-fast plate built on the North-French logic that cream and cultured tang carry lean white fish where olive oil cannot.",
-    "tags": [
-      "seafood",
-      "fish",
-      "weeknight",
-      "roast",
-      "brassica",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "seared-cod-with-roasted-cauliflower-and-brown-butter-cream",
-    "cuisine": "French",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 30,
-      "total_min": 45,
-      "active_min": 25
-    },
-    "updated": "2026-06-30",
-    "diet": [
-      "pescatarian"
-    ],
-    "ingredients": [
-      {
-        "item": "cauliflower",
-        "slug": "cauliflower",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly cracked",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "parmigiano-reggiano, finely grated",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      },
-      {
-        "item": "cod fillets, about 2.5 cm thick",
-        "slug": "cod",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour, for dredging",
-        "slug": "all-purpose-flour",
-        "optional": true
-      },
-      {
-        "item": "neutral oil (refined avocado, grapeseed, or rice bran)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "anchovy fillet, minced",
-        "slug": "anchovy-fillets",
-        "optional": false
-      },
-      {
-        "item": "shallot, fine-minced",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "dry white wine (Sauvignon Blanc or unoaked Chardonnay)",
-        "slug": "dry-white-wine",
-        "optional": false
-      },
-      {
-        "item": "heavy cream",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "dijon mustard",
-        "slug": "dijon-mustard",
-        "optional": false
-      },
-      {
-        "item": "capers, drained",
-        "slug": "capers",
-        "optional": false
-      },
-      {
-        "item": "lemon",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "fresh dill, chopped",
-        "slug": "dill",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "high-heat-dry-roasting",
-      "maillard-sear",
-      "brown-butter",
-      "deglazing"
-    ],
-    "equipment": [
-      "wide-skillet",
-      "rimmed-sheet-pan",
-      "fish-spatula",
-      "microplane"
-    ],
-    "added": "2026-06-30",
-    "_card": {
-      "swatchIndex": 13,
-      "swatchGlyph": "olive",
-      "totalMinutes": 45,
-      "diffLabel": "easy",
-      "timeLead": "45 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
     }
   }
 ]
