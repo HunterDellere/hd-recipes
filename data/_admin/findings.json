@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-04T21:03:11.292Z",
+  "generated": "2026-10-11T19:04:34.907Z",
   "summary": {
     "errors": 0,
     "warnings": 457,
-    "info": 159
+    "info": 160
   },
   "findings": [
     {
@@ -2802,6 +2802,13 @@
       "file": "content/recipes/chinese-lions-head-meatballs.md",
       "msg": "scaling: 1 yield-coupled split(s) (\"into 4\") use a fixed count that will not move with servings",
       "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/chipotle-chicken-tortilla-soup.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"6 to 7 L\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
       "level": "INFO",
