@@ -4,7 +4,7 @@
     "type": "hub",
     "category": "hubs",
     "title": "Chili",
-    "desc": "Five chilis that work in different ways: a whole-chile Texas bowl of red, a chili-cut beef and bean pot, a tomatillo pork braise, a spiced Cincinnati meat sauce, and a vegan black bean chili.",
+    "desc": "Seven chilis that work in different ways: a whole-chile Texas bowl of red, a chili-cut beef and bean pot, New Mexico red chile pork, a tomatillo pork braise, a white chicken chili, a spiced Cincinnati meat sauce, and a vegan black bean chili.",
     "tags": [],
     "status": "complete",
     "_slug": "chili",
@@ -13,9 +13,9 @@
     "_card": {
       "swatchIndex": 9,
       "swatchGlyph": "stack",
-      "memberCount": 5,
+      "memberCount": 7,
       "memberMix": {
-        "recipes": 5
+        "recipes": 7
       }
     }
   },
@@ -317,6 +317,141 @@
       "timeMode": "active",
       "activeMinutes": 20,
       "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/carne-adovada.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Carne adovada",
+    "desc": "Pork shoulder marinated overnight in a sauce made from one chile, the dried New Mexico red pod, then baked covered for 3 hours until it falls apart in a thick, brick-red sauce. Earthy and clean rather than smoky or heavily spiced: almost no cumin, no tomato, and a little vinegar and honey to balance the chile.",
+    "tags": [
+      "pork",
+      "braise",
+      "spicy",
+      "make-ahead",
+      "freezer-friendly",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "carne-adovada",
+    "cuisine": "New Mexican",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 200,
+      "total_min": 240,
+      "active_min": 50
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried New Mexico red chiles",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "boiling water, for soaking",
+        "optional": false
+      },
+      {
+        "item": "chicken stock",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the sauce",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "lard",
+        "slug": "lard",
+        "optional": false
+      },
+      {
+        "item": "boneless pork shoulder",
+        "slug": "pork-shoulder",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the pork",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, to adjust",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "flour tortillas",
+        "optional": false
+      },
+      {
+        "item": "white onion",
+        "slug": "white-onion",
+        "optional": false
+      },
+      {
+        "item": "limes",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "digital-scale",
+      "cast-iron skillet",
+      "blender",
+      "medium-mesh sieve"
+    ],
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 6,
+      "swatchGlyph": "chili",
+      "totalMinutes": 240,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "· 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 50,
+      "filterMinutes": 50
     }
   },
   {
@@ -1017,6 +1152,278 @@
       "timeMode": "active",
       "activeMinutes": 5,
       "filterMinutes": 5
+    }
+  },
+  {
+    "path": "pages/recipes/pot-of-creamy-white-beans.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Pot of creamy white beans",
+    "desc": "Dried cannellini brine-soaked overnight, boiled 10 minutes, then cooked at a bare tremor with onion, garlic, a Parmesan rind, and olive oil until the beans are custardy and the liquid thickens into a light cream. The base for bean-and-greens braises, soups, white chili, and purées.",
+    "tags": [
+      "pantry",
+      "batch-cook",
+      "make-ahead",
+      "freezer-friendly",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "pot-of-creamy-white-beans",
+    "cuisine": "Italian",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 85,
+      "total_min": 575,
+      "active_min": 15
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried cannellini beans",
+        "slug": "cannellini-beans",
+        "optional": false
+      },
+      {
+        "item": "cold water, for soaking",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the soak",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "cold water, for cooking",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for cooking",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "Parmesan rind",
+        "slug": "parmigiano-reggiano",
+        "optional": false
+      },
+      {
+        "item": "bay leaf",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, to adjust",
+        "slug": "kosher-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "heavy-saucepan",
+      "digital-scale"
+    ],
+    "added": "2026-06-05",
+    "_card": {
+      "swatchIndex": 3,
+      "swatchGlyph": "olive",
+      "totalMinutes": 575,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/white-chicken-chili.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "White chicken chili",
+    "desc": "Browned chicken thighs simmered in stock with broiled poblano, Anaheim, and jalapeño chiles and creamy white beans, then shredded. Mashed beans and a spoonful of crema give the broth body without flour, and lime keeps it bright. Turkey works the same way.",
+    "tags": [
+      "chicken",
+      "turkey",
+      "stew",
+      "spicy",
+      "one-pot",
+      "make-ahead",
+      "freezer-friendly",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "white-chicken-chili",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 60,
+      "total_min": 90,
+      "active_min": 50
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "boneless, skinless chicken thighs",
+        "slug": "chicken-thigh",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the chicken",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "poblano peppers",
+        "slug": "poblano-pepper",
+        "optional": false
+      },
+      {
+        "item": "Anaheim or Hatch green chiles",
+        "optional": false
+      },
+      {
+        "item": "jalapeño",
+        "slug": "jalapeno",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the onion",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "ground coriander",
+        "slug": "ground-coriander",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "chicken stock",
+        "optional": false
+      },
+      {
+        "item": "cooked white beans, drained",
+        "slug": "cannellini-beans",
+        "optional": false
+      },
+      {
+        "item": "bean cooking liquid",
+        "optional": false
+      },
+      {
+        "item": "Mexican crema",
+        "optional": false
+      },
+      {
+        "item": "lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, to adjust",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Monterey Jack",
+        "optional": false
+      },
+      {
+        "item": "avocados",
+        "slug": "avocado",
+        "optional": false
+      },
+      {
+        "item": "tortilla chips",
+        "optional": false
+      },
+      {
+        "item": "limes, for serving",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-dry-roasting",
+      "maillard-sear",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "digital-scale",
+      "rimmed sheet pan",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 90,
+      "diffLabel": "easy",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 50,
+      "filterMinutes": 50
     }
   },
   {
@@ -20526,7 +20933,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -25021,7 +25428,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -25088,7 +25495,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "fire",
       "primaryTag": "pork",
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": false
     }
   },
@@ -25210,7 +25617,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -25232,7 +25639,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "fire",
       "primaryTag": "pork",
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": false
     }
   },
@@ -51679,7 +52086,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": false
     }
   },
@@ -51700,7 +52107,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -52357,7 +52764,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 37,
+      "usedInCount": 39,
       "hasNutrition": true
     }
   },
@@ -52440,7 +52847,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 36,
+      "usedInCount": 37,
       "hasNutrition": true
     }
   },
@@ -52539,7 +52946,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 73,
+      "usedInCount": 75,
       "hasNutrition": true
     }
   },
@@ -52646,7 +53053,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 13,
+      "usedInCount": 15,
       "hasNutrition": false
     }
   },
@@ -52769,7 +53176,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 154,
+      "usedInCount": 155,
       "hasNutrition": true
     }
   },
@@ -53551,7 +53958,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -53657,7 +54064,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 105,
+      "usedInCount": 107,
       "hasNutrition": true
     }
   },
@@ -57924,7 +58331,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 31
+      "usedInCount": 32
     }
   },
   {
@@ -57982,7 +58389,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "fire",
-      "usedInCount": 13
+      "usedInCount": 14
     }
   },
   {
@@ -58281,7 +58688,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 72,
+      "usedInCount": 73,
       "hasNutrition": false
     }
   },
@@ -58406,7 +58813,7 @@
       "swatchIndex": 0,
       "swatchGlyph": "fire",
       "primaryTag": "chicken",
-      "usedInCount": 36,
+      "usedInCount": 37,
       "hasNutrition": true
     }
   },
@@ -58427,7 +58834,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 71,
+      "usedInCount": 72,
       "hasNutrition": true
     }
   },
@@ -58538,7 +58945,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -58580,7 +58987,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 117,
+      "usedInCount": 118,
       "hasNutrition": true
     }
   },
@@ -58776,7 +59183,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 19,
+      "usedInCount": 20,
       "hasNutrition": false
     }
   },
@@ -59013,7 +59420,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -66030,7 +66437,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 257,
+      "usedInCount": 260,
       "hasNutrition": true
     }
   },
@@ -67121,7 +67528,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 37
+      "usedInCount": 38
     }
   },
   {
@@ -67155,7 +67562,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 32
+      "usedInCount": 33
     }
   },
   {
@@ -67749,7 +68156,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 267,
+      "usedInCount": 270,
       "hasNutrition": true
     }
   },
@@ -69420,7 +69827,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 99
+      "usedInCount": 101
     }
   },
   {
@@ -69560,7 +69967,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 134
+      "usedInCount": 135
     }
   },
   {
@@ -70151,90 +70558,6 @@
       "timeMode": "total",
       "activeMinutes": 10,
       "filterMinutes": 10
-    }
-  },
-  {
-    "path": "pages/recipes/pot-of-creamy-white-beans.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Pot of creamy white beans",
-    "desc": "Dried cannellini cooked low and slow with onion, garlic, a Parmesan rind, and good olive oil until the beans are custardy and the liquor self-thickens into a light cream. The base for bean-and-greens braises, soups, and purées. Stub.",
-    "tags": [
-      "pantry",
-      "batch-cook",
-      "make-ahead"
-    ],
-    "status": "stub",
-    "_slug": "pot-of-creamy-white-beans",
-    "cuisine": "Italian",
-    "course": "side",
-    "difficulty": "easy",
-    "servings": 6,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 75,
-      "total_min": 85,
-      "active_min": 15
-    },
-    "updated": "2026-06-05",
-    "diet": [
-      "vegetarian",
-      "gluten-free"
-    ],
-    "ingredients": [
-      {
-        "item": "dried cannellini beans",
-        "slug": "cannellini-beans",
-        "optional": false
-      },
-      {
-        "item": "yellow onion, halved",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, bruised",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "Parmesan rind",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      },
-      {
-        "item": "bay leaf",
-        "slug": "bay-leaf",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-06-05",
-    "_card": {
-      "swatchIndex": 3,
-      "swatchGlyph": "olive",
-      "totalMinutes": 85,
-      "diffLabel": "easy",
-      "timeLead": "15 min",
-      "timeAnnotation": "· 1 h rest",
-      "timeMode": "active",
-      "activeMinutes": 15,
-      "filterMinutes": 15
     }
   },
   {
