@@ -29,6 +29,7 @@ source:
 before_you_start:
   - 'Salt the beef at least 1 hour and up to 24 hours ahead (covered, in the fridge). The salt seasons the small pieces all the way through and helps the leaner ones hold moisture during the braise.'
   - 'Look over the package before salting. Chili-cut packs vary: cut any piece larger than 2.5 cm in half so everything finishes together, and pull off any gristle or silverskin. If the meat is mostly deep red with little white marbling, it is round rather than chuck; plan on the shorter end of the braise and check it early.'
+  - 'Cook the beans a day ahead: about 220 g / 1 heaping cup dried kidney beans gives the 500 g cooked beans needed here (see Make it from scratch). They need an overnight soak first, so start them two nights before if you are also salting the beef overnight. Canned beans work if you have to.'
   - 'Start the chiles soaking before you render the bacon. They need 20 minutes and you will be busy at the stove.'
 
 ingredients:
@@ -168,7 +169,7 @@ ingredients:
     item: 'cooked dark red kidney beans, drained'
     qty: 500
     unit: 'g'
-    note: '(two 15 oz cans, rinsed)'
+    note: '(from about 220 g dried; or two 15 oz cans, rinsed)'
   - group: 'Phase 4, beans and finish'
     item: 'masa harina'
     slug: 'masa-harina'
@@ -241,7 +242,7 @@ steps:
   - text: 'Deglaze and braise. Pour in the 355 ml beer and scrape up anything still stuck to the pot. Simmer 3 minutes to cook off the alcohol. Add the 400 g hand-crushed tomatoes with their juices, the 250 ml / 1 cup braising beef broth, the 15 ml / 1 tbsp Worcestershire sauce, the 6 g / 1½ tsp dark brown sugar, and the beef with its juices. Bring to a simmer, cover with the lid slightly ajar, and move to the 150 °C / 300 °F oven. Braise 1½ to 2 hours, stirring once halfway, until a piece of beef crushes easily against the side of the pot. The oven holds the pot below a boil, which is what keeps leaner pieces from tightening and drying out.'
     technique: 'deglazing'
     time_min: 105
-  - text: 'Add the beans and thicken. Move the pot to the stovetop over medium heat. Stir in the 500 g drained kidney beans. Whisk the 20 g / 2½ tbsp masa harina into the 90 ml / 6 tbsp cool water until smooth, stir it into the chili, and simmer uncovered 15 minutes, stirring often. Canned beans are already cooked; 15 minutes lets them take on the gravy without splitting.'
+  - text: 'Add the beans and thicken. Move the pot to the stovetop over medium heat. Stir in the 500 g drained kidney beans. Whisk the 20 g / 2½ tbsp masa harina into the 90 ml / 6 tbsp cool water until smooth, stir it into the chili, and simmer uncovered 15 minutes, stirring often. The beans are already cooked; 15 minutes lets them take on the gravy without splitting. If the chili is thicker than you like, loosen it with a splash of the bean cooking liquid.'
     time_min: 15
   - text: 'Finish and season. Off the heat, stir in the 15 ml / 1 tbsp apple cider vinegar. Taste a piece of beef with some gravy and add up to 3 g / 1 tsp kosher salt if it tastes flat. The vinegar should not taste sour; it sharpens the chile and cuts the bacon fat.'
     time_min: 2
@@ -289,6 +290,9 @@ homemade_alternatives:
   - for: 'chipotle chiles in adobo, with sauce'
     recipe_slug: 'recipes/chipotle-in-adobo'
     why: 'Homemade adobo is less sweet and less vinegary than canned, so the smoke reads more clearly against the beef.'
+  - for: 'cooked dark red kidney beans, drained'
+    recipe_slug: 'recipes/kidney-beans-from-dried'
+    why: 'Beans cooked from dried are creamier inside with skins that stay whole, and they taste of the onion and bay they simmered with instead of the can.'
 
 homemade_exempt: ['chili-cut beef', 'kosher salt', 'dried ancho chiles', 'dried guajillo chiles', 'cumin seeds', 'boiling water, for soaking', 'garlic cloves', 'Mexican oregano', 'thick-cut bacon', 'neutral oil, if needed', 'yellow onion', 'poblano pepper', 'kosher salt, for the vegetables', 'tomato paste', 'Mexican lager or amber beer', 'canned whole tomatoes', 'Worcestershire sauce', 'dark brown sugar', 'masa harina', 'cool water, for the masa', 'apple cider vinegar', 'kosher salt, to adjust', 'sharp cheddar', 'sour cream', 'scallions', 'limes']
 
@@ -297,7 +301,7 @@ notes: |
 
   Three sources of smoke and depth. Bacon fat for browning, chipotle in the purée, and the fond from the beef. Ancho supplies dried-fruit sweetness and body, guajillo supplies red color and tang, and chipotle supplies heat and smoke. Worcestershire sauce, tomato paste, and browned beef carry the glutamate; cider vinegar and lime are the acids.
 
-  Beans go in late. Canned beans simmered for 2 hours break down, thicken the gravy unevenly, and lose their shape. Added in the last 15 minutes, they hold together and still pick up the chile flavor.
+  Beans go in late. Cooked beans simmered for 2 more hours break down, thicken the gravy unevenly, and lose their shape. Added in the last 15 minutes, they hold together and still pick up the chile flavor.
 
   Better the next day. Overnight in the fridge the chile flavor rounds out and the fat sets on top where it can be lifted off. Reheat gently and adjust with a splash of water or broth, since it thickens as it sits.
 ---
