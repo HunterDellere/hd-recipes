@@ -103,7 +103,6 @@ ingredients:
     note: '(one 750 ml bottle; a real Burgundy or a quality California or Oregon pinot noir; the wine is structural and a thin imbalanced wine produces a thin imbalanced stew; do not use cooking wine, do not use a heavy California cab which reads jammy in the cooked dish)'
   - group: 'Phase 2, the aromatic base and braise'
     item: 'beef stock (homemade or low-sodium)'
-    slug: 'beef-broth'
     qty: 500
     unit: 'ml'
     note: '(2 cups; the second liquid that supplements the wine; homemade beef stock is dramatically better than commercial; low-sodium commercial is acceptable)'

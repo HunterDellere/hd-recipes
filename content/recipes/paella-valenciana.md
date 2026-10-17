@@ -39,7 +39,6 @@ safety_notes:
 ingredients:
   - group: 'Phase 1, the stock (made first or alongside)'
     item: 'chicken stock (homemade or low-sodium)'
-    slug: 'chicken-stock'
     qty: 1500
     unit: 'ml'
     note: '(6¼ cups; held at a hard simmer when added to the rice; homemade is dramatically better)'

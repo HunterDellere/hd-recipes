@@ -189,7 +189,6 @@ ingredients:
     note: '(about 5 tbsp; lard is canonical and structural; neutral oil is the standard substitute)'
   - group: 'Phase 5, the finish'
     item: 'chicken stock, hot'
-    slug: 'chicken-stock'
     qty: 1500
     unit: 'g'
     note: '(about 6 cups; the structural braising liquid; use homemade if possible, the depth shows in the final sauce)'

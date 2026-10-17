@@ -34,14 +34,13 @@ before_you_start:
 ingredients:
   - group: 'Chilies'
     item: 'dried long red chilies (prik chee fah / Thai guajillo type), seeded'
-    slug: 'dried-chilies'
     qty: 40
     unit: 'g'
     prep: 'stems and most seeds removed, soaked in hot water 20 minutes, drained'
     note: '(about 12 large dried chilies; the color and bulk of the paste, mild to moderate heat)'
   - group: 'Chilies'
     item: 'dried Thai bird chilies'
-    slug: 'dried-chilies'
+    slug: 'thai-chili'
     qty: 8
     unit: 'g'
     prep: 'soaked with the long chilies, drained'

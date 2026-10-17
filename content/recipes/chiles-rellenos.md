@@ -70,7 +70,6 @@ ingredients:
     note: '(3 cloves)'
   - group: 'Phase 3, the caldillo (tomato broth)'
     item: 'chicken stock (or vegetable stock)'
-    slug: 'chicken-stock'
     qty: 600
     unit: 'ml'
     note: '(2½ cups; the broth must be thin enough to bathe the chiles, not coat them)'

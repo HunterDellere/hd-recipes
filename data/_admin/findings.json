@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-17T20:41:20.089Z",
+  "generated": "2026-10-17T20:51:55.298Z",
   "summary": {
     "errors": 0,
-    "warnings": 458,
+    "warnings": 447,
     "info": 160
   },
   "findings": [
@@ -58,23 +58,9 @@
     {
       "level": "WARN",
       "category": "crosslinks",
-      "file": "content/recipes/albondigas-en-salsa-de-almendras.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
       "file": "content/recipes/anticuchos-de-corazon.md",
       "msg": "technique \"high-heat-grilling\" has no matching page",
       "fix": "Create content/techniques/high-heat-grilling.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/arroz-con-pollo-cubano.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -124,13 +110,6 @@
       "file": "content/recipes/banh-mi-thit-nuong.md",
       "msg": "technique \"sandwich-build\" has no matching page",
       "fix": "Create content/techniques/sandwich-build.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/beef-bourguignon.md",
-      "msg": "ingredient slug \"beef-broth\" has no matching ingredient page",
-      "fix": "Create content/ingredients/beef-broth.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -387,13 +366,6 @@
     {
       "level": "WARN",
       "category": "crosslinks",
-      "file": "content/recipes/chiles-rellenos.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
       "file": "content/recipes/chimichurri.md",
       "msg": "technique \"knife-chop-not-processor\" has no matching page",
       "fix": "Create content/techniques/knife-chop-not-processor.md"
@@ -432,13 +404,6 @@
       "file": "content/recipes/collard-greens-with-ham-hock.md",
       "msg": "technique \"braising\" has no matching page",
       "fix": "Create content/techniques/braising.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/coq-au-vin.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -649,13 +614,6 @@
       "file": "content/recipes/flounder-piccata.md",
       "msg": "technique \"fond-deglaze\" has no matching page",
       "fix": "Create content/techniques/fond-deglaze.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/french-onion-soup-gratinee.md",
-      "msg": "ingredient slug \"beef-broth\" has no matching ingredient page",
-      "fix": "Create content/ingredients/beef-broth.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -1466,13 +1424,6 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/mole-poblano.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/mole-poblano.md",
       "msg": "technique \"salsa-fry\" has no matching page",
       "fix": "Create content/techniques/salsa-fry.md"
     },
@@ -1559,13 +1510,6 @@
       "file": "content/recipes/omurice.md",
       "msg": "technique \"omelet-wrap\" has no matching page",
       "fix": "Create content/techniques/omelet-wrap.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/paella-valenciana.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -1823,20 +1767,6 @@
       "level": "WARN",
       "category": "crosslinks",
       "file": "content/recipes/puerto-rican-mofongo.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/puerto-rican-mofongo.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/puerto-rican-mofongo.md",
       "msg": "technique \"shallow-frying\" has no matching page",
       "fix": "Create content/techniques/shallow-frying.md"
     },
@@ -1853,13 +1783,6 @@
       "file": "content/recipes/red-beans-and-rice.md",
       "msg": "technique \"braising\" has no matching page",
       "fix": "Create content/techniques/braising.md"
-    },
-    {
-      "level": "WARN",
-      "category": "crosslinks",
-      "file": "content/recipes/risotto-alla-milanese.md",
-      "msg": "ingredient slug \"chicken-stock\" has no matching ingredient page",
-      "fix": "Create content/ingredients/chicken-stock.md or remove the slug field"
     },
     {
       "level": "WARN",
@@ -2270,7 +2193,7 @@
       "level": "INFO",
       "category": "search",
       "file": "data/search-index.json",
-      "msg": "index stats: 916 pages, 8504 tokens, 459.9 KB"
+      "msg": "index stats: 916 pages, 8502 tokens, 459.7 KB"
     },
     {
       "level": "INFO",

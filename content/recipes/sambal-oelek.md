@@ -29,7 +29,6 @@ source:
 ingredients:
   - group: 'Phase 1, chili paste'
     item: 'fresh red Holland or Fresno chilies'
-    slug: 'thai-chili'
     qty: 300
     unit: 'g'
     prep: 'stems pulled, seeds left in (the dish wants heat), roughly chopped'

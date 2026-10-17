@@ -48,7 +48,6 @@ ingredients:
 
   - group: 'Phase 2, bumbu spice paste'
     item: 'dried red Holland or Fresno chilies'
-    slug: 'dried-chilies'
     qty: 30
     unit: 'g'
     prep: 'stems pulled, soaked in hot water 20 minutes to soften, seeds left in'

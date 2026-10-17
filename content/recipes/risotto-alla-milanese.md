@@ -40,7 +40,6 @@ ingredients:
     note: '(about ½ tsp loosely packed threads; Spanish or Iranian premium-grade; the saffron is the structural flavor of the dish, not a pigment)'
   - group: 'Phase 1, the saffron infusion'
     item: 'chicken stock (hot, held at bare simmer)'
-    slug: 'chicken-stock'
     qty: 1200
     unit: 'ml'
     note: '(5 cups; held at a bare simmer in a separate saucepan; the saffron blooms in 120 ml of this stock at the start)'

@@ -67,7 +67,6 @@ ingredients:
 
   - group: 'Phase 2, rempah spice paste'
     item: 'dried red chilies'
-    slug: 'dried-chilies'
     qty: 25
     unit: 'g'
     prep: 'stems pulled, soaked in hot water 20 minutes to soften, seeds left in'

@@ -77,7 +77,6 @@ ingredients:
     note: '(1 cup; dry, unoaked, acidic)'
   - group: 'Phase 2, the deglaze and simmer'
     item: 'beef stock (homemade or low-sodium)'
-    slug: 'beef-broth'
     qty: 1800
     unit: 'ml'
     note: '(7½ cups; homemade roasted-bone beef stock is dramatically better than commercial; if commercial, use low-sodium and supplement with 30 g of Worcestershire sauce and 15 g of soy sauce for umami depth)'

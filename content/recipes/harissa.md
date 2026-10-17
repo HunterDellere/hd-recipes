@@ -35,7 +35,7 @@ before_you_start:
 ingredients:
   - group: 'The chilies'
     item: 'dried red chilies (a mix: 70 percent mild like guajillo or ancho, 30 percent hot like chile de árbol or Calabrian)'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 60
     unit: 'g'
     prep: 'stems and most seeds removed (leave some seeds for heat); soaked in 300 ml hot water for 20 minutes, drained (reserve 60 ml soaking liquid)'
