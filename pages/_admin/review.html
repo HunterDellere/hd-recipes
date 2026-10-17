@@ -34,10 +34,10 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <body>
 <h1>hd · recipes — admin</h1>
 <div class="bar">
-  <div class="stat"><span class="stat-num">904</span><span class="stat-label">Complete</span></div>
+  <div class="stat"><span class="stat-num">909</span><span class="stat-label">Complete</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Draft</span></div>
   <div class="stat"><span class="stat-num">63</span><span class="stat-label">Stub</span></div>
-  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">904</span><span class="stat-label">missing</span></div>
+  <div class="stat"><span class="stat-num">0</span><span class="stat-label">verified</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">pending</span></div><div class="stat"><span class="stat-num">0</span><span class="stat-label">needs-work</span></div><div class="stat"><span class="stat-num">909</span><span class="stat-label">missing</span></div>
   <div class="stat"><span class="stat-num">12</span><span class="stat-label">No nutrition</span></div>
 </div>
 
@@ -45,7 +45,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 
 <div class="filters">
   <input type="search" id="filter-q" placeholder="Filter title…" />
-  <select id="filter-cat"><option value="">All categories</option><option value="recipes">recipes</option><option value="ingredients">ingredients</option><option value="techniques">techniques</option><option value="explore">explore</option><option value="safety">safety</option><option value="hubs">hubs</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option></select>
+  <select id="filter-cat"><option value="">All categories</option><option value="hubs">hubs</option><option value="recipes">recipes</option><option value="ingredients">ingredients</option><option value="techniques">techniques</option><option value="explore">explore</option><option value="safety">safety</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option></select>
   <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
   <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
 </div>
@@ -53,6 +53,56 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <table id="entries-table">
   <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
   <tbody>
+    <tr data-status="complete" data-review="missing" data-category="hubs" data-type="hub">
+      <td><a href="../../pages/hubs/chili.html">Chili</a></td>
+      <td>hubs</td>
+      <td>hub</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-10-17</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/black-bean-and-sweet-potato-chili.html">Black bean and sweet potato chili</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-10-17</td>
+      <td></td>
+      <td><span class="pill warn">4 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/chile-verde-con-puerco.html">Chile verde con puerco</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-10-17</td>
+      <td></td>
+      <td><span class="pill warn">7 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/chunky-beef-and-bean-chili.html">Chunky beef and bean chili</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-10-17</td>
+      <td></td>
+      <td><span class="pill warn">9 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/cincinnati-chili.html">Cincinnati chili</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-10-17</td>
+      <td></td>
+      <td><span class="pill warn">5 FDC</span></td>
+    </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/basque-burnt-cheesecake.html">Basque burnt cheesecake</a></td>
       <td>recipes</td>
@@ -9725,7 +9775,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr></tbody>
 </table>
 
-<p class="gen">Generated 2026-10-11T19:25:30.248Z</p>
+<p class="gen">Generated 2026-10-17T19:58:35.029Z</p>
 
 <script>
 (function () {

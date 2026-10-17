@@ -1,5 +1,757 @@
 [
   {
+    "path": "pages/hubs/chili.html",
+    "type": "hub",
+    "category": "hubs",
+    "title": "Chili",
+    "desc": "Five chilis that work in different ways: a whole-chile Texas bowl of red, a chili-cut beef and bean pot, a tomatillo pork braise, a spiced Cincinnati meat sauce, and a vegan black bean chili.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "chili",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 9,
+      "swatchGlyph": "stack",
+      "memberCount": 5,
+      "memberMix": {
+        "recipes": 5
+      }
+    }
+  },
+  {
+    "path": "pages/recipes/black-bean-and-sweet-potato-chili.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Black bean and sweet potato chili",
+    "desc": "Black beans simmered in a purée of toasted ancho and chipotle, built on cremini mushrooms cooked until they brown and stick, which gives the pot the savory depth that meat would. Sweet potato is roasted separately so it caramelizes and keeps its shape instead of dissolving.",
+    "tags": [
+      "vegan",
+      "vegetarian",
+      "stew",
+      "spicy",
+      "smoky",
+      "one-pot",
+      "make-ahead",
+      "freezer-friendly",
+      "weeknight"
+    ],
+    "status": "complete",
+    "_slug": "black-bean-and-sweet-potato-chili",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 70,
+      "total_min": 95,
+      "active_min": 45
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "sweet potato",
+        "slug": "sweet-potato",
+        "optional": false
+      },
+      {
+        "item": "neutral oil, for roasting",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the sweet potato",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "dried ancho chiles",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "pepitas",
+        "slug": "pepitas",
+        "optional": false
+      },
+      {
+        "item": "boiling water, for soaking",
+        "optional": false
+      },
+      {
+        "item": "chipotle chiles in adobo, with sauce",
+        "slug": "chipotle-in-adobo",
+        "optional": false
+      },
+      {
+        "item": "canned whole tomatoes",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "neutral oil, for the pot",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "cremini mushrooms",
+        "slug": "cremini-mushroom",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the mushrooms",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "red bell pepper",
+        "slug": "bell-pepper",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "cooked black beans, drained",
+        "slug": "black-beans",
+        "optional": false
+      },
+      {
+        "item": "bean cooking liquid",
+        "optional": false
+      },
+      {
+        "item": "vegetable broth",
+        "optional": false
+      },
+      {
+        "item": "unsweetened cocoa powder",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, to adjust",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "avocados",
+        "slug": "avocado",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "limes, for serving",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-dry-roasting",
+      "dry-toasting",
+      "maillard-sear",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "digital-scale",
+      "cast-iron skillet",
+      "rimmed sheet pan",
+      "blender"
+    ],
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 95,
+      "diffLabel": "easy",
+      "timeLead": "1 h 35 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
+    "path": "pages/recipes/chile-verde-con-puerco.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chile verde con puerco",
+    "desc": "Pork shoulder seared in lard and braised in a salsa of broiled tomatillos, poblano, Anaheim, and jalapeño chiles. The tomatillos supply both the acid and the body; charring them first trades their raw sourness for a sweeter, smoky depth.",
+    "tags": [
+      "pork",
+      "stew",
+      "braise",
+      "spicy",
+      "one-pot",
+      "make-ahead",
+      "freezer-friendly"
+    ],
+    "status": "complete",
+    "_slug": "chile-verde-con-puerco",
+    "cuisine": "Mexican",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 165,
+      "total_min": 205,
+      "active_min": 60
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "boneless pork shoulder",
+        "slug": "pork-shoulder",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "tomatillos",
+        "slug": "tomatillo",
+        "optional": false
+      },
+      {
+        "item": "poblano peppers",
+        "slug": "poblano-pepper",
+        "optional": false
+      },
+      {
+        "item": "Anaheim or Hatch green chiles",
+        "optional": false
+      },
+      {
+        "item": "jalapeños",
+        "slug": "jalapeno",
+        "optional": false
+      },
+      {
+        "item": "white onion",
+        "slug": "white-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, unpeeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "cilantro stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, for blending",
+        "optional": false
+      },
+      {
+        "item": "lard",
+        "slug": "lard",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, for the braise",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "cilantro leaves",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, to adjust",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "corn tortillas",
+        "optional": false
+      },
+      {
+        "item": "Mexican crema",
+        "optional": false
+      },
+      {
+        "item": "cotija",
+        "slug": "cotija",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "high-heat-dry-roasting",
+      "maillard-sear",
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "digital-scale",
+      "rimmed sheet pan",
+      "blender"
+    ],
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 4,
+      "swatchGlyph": "chili",
+      "totalMinutes": 205,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "· 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/chunky-beef-and-bean-chili.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chunky beef and bean chili",
+    "desc": "Store-bought chili-cut beef, salted ahead and browned in bacon fat, braised with a purée of toasted ancho, guajillo, and chipotle in adobo, then finished with kidney beans and a masa-thickened gravy. A shorter braise than a whole-chuck chili because the pieces are small, and a lid on the pot because chili-cut packs often include leaner round.",
+    "tags": [
+      "beef",
+      "stew",
+      "braise",
+      "spicy",
+      "smoky",
+      "one-pot",
+      "make-ahead",
+      "freezer-friendly",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chunky-beef-and-bean-chili",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 35,
+      "cook_min": 175,
+      "total_min": 210,
+      "active_min": 65
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "chili-cut beef",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "dried ancho chiles",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "dried guajillo chiles",
+        "slug": "dried-chilies",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "boiling water, for soaking",
+        "optional": false
+      },
+      {
+        "item": "chipotle chiles in adobo, with sauce",
+        "slug": "chipotle-in-adobo",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "Mexican oregano",
+        "slug": "mexican-oregano",
+        "optional": false
+      },
+      {
+        "item": "beef broth, for blending",
+        "optional": false
+      },
+      {
+        "item": "thick-cut bacon",
+        "slug": "bacon",
+        "optional": false
+      },
+      {
+        "item": "neutral oil, if needed",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "poblano pepper",
+        "slug": "poblano-pepper",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the vegetables",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "Mexican lager or amber beer",
+        "optional": false
+      },
+      {
+        "item": "canned whole tomatoes",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "beef broth, for the braise",
+        "optional": false
+      },
+      {
+        "item": "Worcestershire sauce",
+        "slug": "worcestershire-sauce",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "cooked dark red kidney beans, drained",
+        "optional": false
+      },
+      {
+        "item": "masa harina",
+        "slug": "masa-harina",
+        "optional": false
+      },
+      {
+        "item": "cool water, for the masa",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, to adjust",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "sharp cheddar",
+        "optional": false
+      },
+      {
+        "item": "sour cream",
+        "slug": "sour-cream",
+        "optional": false
+      },
+      {
+        "item": "scallions",
+        "slug": "scallion",
+        "optional": false
+      },
+      {
+        "item": "limes",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "lardon-rendering",
+      "maillard-sear",
+      "blooming-aromatics",
+      "deglazing"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "digital-scale",
+      "cast-iron skillet",
+      "blender"
+    ],
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 210,
+      "diffLabel": "medium",
+      "timeLead": "1 h 5 min",
+      "timeAnnotation": "· 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 65,
+      "filterMinutes": 65
+    }
+  },
+  {
+    "path": "pages/recipes/cincinnati-chili.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cincinnati chili",
+    "desc": "Ground beef broken into cold water rather than browned, so it cooks into a fine, saucy texture, then simmered for hours with ancho, cinnamon, allspice, cloves, cumin, and cocoa. Served over spaghetti under a heap of finely shredded cheddar, in the Greek-Macedonian tradition of Cincinnati chili parlors.",
+    "tags": [
+      "beef",
+      "pasta",
+      "simmer",
+      "make-ahead",
+      "freezer-friendly",
+      "comfort",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "cincinnati-chili",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 180,
+      "total_min": 195,
+      "active_min": 40
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "ancho chile powder",
+        "optional": false
+      },
+      {
+        "item": "ground cumin",
+        "slug": "ground-cumin",
+        "optional": false
+      },
+      {
+        "item": "ground cinnamon",
+        "optional": false
+      },
+      {
+        "item": "ground allspice",
+        "slug": "allspice",
+        "optional": false
+      },
+      {
+        "item": "ground cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "cayenne pepper",
+        "optional": false
+      },
+      {
+        "item": "unsweetened cocoa powder",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      },
+      {
+        "item": "ground beef (85% lean)",
+        "slug": "ground-beef",
+        "optional": false
+      },
+      {
+        "item": "yellow onion",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "canned whole tomatoes",
+        "slug": "canned-san-marzano-tomatoes",
+        "optional": false
+      },
+      {
+        "item": "Worcestershire sauce",
+        "slug": "worcestershire-sauce",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, to adjust",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the pasta water",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "spaghetti",
+        "optional": false
+      },
+      {
+        "item": "mild cheddar",
+        "optional": false
+      },
+      {
+        "item": "oyster crackers",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-aromatics"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "digital-scale",
+      "microplane",
+      "box grater",
+      "whisk"
+    ],
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 195,
+      "diffLabel": "easy",
+      "timeLead": "40 min",
+      "timeAnnotation": "· 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
     "path": "pages/recipes/basque-burnt-cheesecake.html",
     "type": "recipe",
     "category": "recipes",
@@ -18290,7 +19042,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -23522,7 +24274,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -24001,7 +24753,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -24068,7 +24820,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "fire",
       "primaryTag": "pork",
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": false
     }
   },
@@ -24110,7 +24862,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": false
     }
   },
@@ -24190,7 +24942,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -24212,7 +24964,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "fire",
       "primaryTag": "pork",
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -24359,7 +25111,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -50659,7 +51411,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 14,
+      "usedInCount": 16,
       "hasNutrition": false
     }
   },
@@ -50680,7 +51432,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": true
     }
   },
@@ -50703,7 +51455,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "fire",
       "primaryTag": "pork",
-      "usedInCount": 10,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -50744,7 +51496,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -50871,7 +51623,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 4,
       "hasNutrition": false
     }
   },
@@ -50933,7 +51685,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -51337,7 +52089,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 35,
+      "usedInCount": 37,
       "hasNutrition": true
     }
   },
@@ -51519,7 +52271,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 69,
+      "usedInCount": 72,
       "hasNutrition": true
     }
   },
@@ -51626,7 +52378,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 10,
+      "usedInCount": 13,
       "hasNutrition": false
     }
   },
@@ -51749,7 +52501,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 151,
+      "usedInCount": 154,
       "hasNutrition": true
     }
   },
@@ -51914,7 +52666,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -52302,7 +53054,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": true
     }
   },
@@ -52531,7 +53283,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 14,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -52597,7 +53349,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 15,
+      "usedInCount": 17,
       "hasNutrition": false
     }
   },
@@ -52637,7 +53389,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 101,
+      "usedInCount": 104,
       "hasNutrition": true
     }
   },
@@ -56904,7 +57656,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 29
+      "usedInCount": 31
     }
   },
   {
@@ -56962,7 +57714,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "fire",
-      "usedInCount": 11
+      "usedInCount": 13
     }
   },
   {
@@ -57017,7 +57769,7 @@
     "_card": {
       "swatchIndex": 7,
       "swatchGlyph": "fire",
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -57261,7 +58013,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 68,
+      "usedInCount": 70,
       "hasNutrition": false
     }
   },
@@ -57282,7 +58034,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 34,
+      "usedInCount": 35,
       "hasNutrition": true
     }
   },
@@ -57344,7 +58096,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -57407,7 +58159,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 69,
+      "usedInCount": 71,
       "hasNutrition": true
     }
   },
@@ -57428,7 +58180,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": false
     }
   },
@@ -57449,7 +58201,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 25,
       "hasNutrition": false
     }
   },
@@ -57518,7 +58270,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -57735,7 +58487,7 @@
       "swatchIndex": 9,
       "swatchGlyph": "fire",
       "primaryTag": "beef",
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -58145,7 +58897,7 @@
       "swatchIndex": 5,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": false
     }
   },
@@ -58189,7 +58941,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -58251,7 +59003,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 43,
+      "usedInCount": 46,
       "hasNutrition": true
     }
   },
@@ -64833,7 +65585,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 170,
+      "usedInCount": 171,
       "hasNutrition": true
     }
   },
@@ -64911,7 +65663,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 10,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -65010,7 +65762,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 251,
+      "usedInCount": 255,
       "hasNutrition": true
     }
   },
@@ -65154,7 +65906,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 103,
+      "usedInCount": 104,
       "hasNutrition": true
     }
   },
@@ -66101,7 +66853,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 33
+      "usedInCount": 36
     }
   },
   {
@@ -66634,7 +67386,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 10,
       "hasNutrition": true
     }
   },
@@ -66729,7 +67481,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 261,
+      "usedInCount": 265,
       "hasNutrition": true
     }
   },
@@ -68400,7 +69152,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 95
+      "usedInCount": 99
     }
   },
   {
@@ -68470,7 +69222,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 24
+      "usedInCount": 25
     }
   },
   {
@@ -68540,7 +69292,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 131
+      "usedInCount": 134
     }
   },
   {
