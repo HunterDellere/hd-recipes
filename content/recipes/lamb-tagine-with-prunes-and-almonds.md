@@ -204,10 +204,10 @@ steps:
   - text: 'Reduce heat to medium; add the 400 g / 2 onions (sliced) to the pot with the lamb fond. Sweat 12 to 15 minutes, stirring occasionally, until fully softened and golden (not deeply caramelized; the onions cook into a soft braise base under the lamb).'
     time_min: 14
   - text: 'Add the 16 g / 4 garlic cloves and 20 g grated ginger; cook 90 seconds. Add the 3 g / 1½ tsp cumin, 2 g / 1 tsp coriander, 2 g / 1 tsp cinnamon, 1 g / ½ tsp ground ginger, 3 g / ½ tbsp turmeric, 2 g / 1 tsp paprika, 0.5 g / ¼ tsp nutmeg, and 2 g / 1 tsp black pepper. Stir 30 seconds to bloom the spices.'
-    technique: 'spice-bloom'
+    technique: 'blooming-aromatics'
     time_min: 2
   - text: 'Return the lamb to the pot. Add the bloomed saffron liquid, the 2 g / 1 cinnamon stick, the 400 g / 1½ cups water, and the remaining 6 g / 1½ tsp salt. Bring to a steady simmer; cover; reduce heat to low. Braise 90 to 120 minutes, stirring every 30 minutes, until the lamb is fully fork-tender (the meat collapses under gentle spoon pressure but still holds its cube shape).'
-    technique: 'tagine-braise'
+    technique: 'braising'
     time_min: 110
   - text: 'While the lamb braises, make the prune syrup: in a small saucepan, combine the 250 g prunes, 300 g water, 60 g / 3 tbsp honey, and the second 2 g / 1 cinnamon stick. Bring to a simmer; cook 15 to 20 minutes, gently stirring, until the prunes are plumped and the syrup has reduced to a thin glaze that coats the prunes (about 100 g liquid remaining). Off heat, stir in the 5 g / 1 tsp orange-flower water. Set aside.'
     time_min: 20
@@ -220,7 +220,7 @@ steps:
   - text: 'Plate: transfer to a wide shallow serving dish or directly to the tagine. Scatter the 80 g fried almonds over the top and sprinkle the 10 g sesame seeds. Serve with steamed couscous (canonical) or warm flatbread (khobz, pita) for sopping the syrupy sauce.'
     time_min: 1
 
-techniques: ['tagine-braise', 'saffron-bloom', 'spice-bloom', 'maillard-sear']
+techniques: ['braising', 'blooming-aromatics', 'maillard-sear']
 equipment: ['heavy-dutch-oven', 'small-saucepan', 'small-skillet', 'mortar']
 
 modifications:

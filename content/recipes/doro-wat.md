@@ -120,24 +120,24 @@ steps:
   - text: 'In a large bowl, toss the 1200 g / about 4 whole legs of bone-in skin-off chicken with the 30 g / 2 tbsp lemon juice and the 8 g / 2 tsp kosher salt. Cover and refrigerate for 20 minutes (longer is fine, up to 4 hours). The acid lightly cures the surface of the meat and brightens the finished stew.'
     time_min: 20
   - text: 'In a heavy 5 to 6 quart Dutch oven over medium-low heat, add the 500 g / 2 large onions worth of very finely diced onion to the dry pot. No oil, no water, no fat. Cook with the lid off, stirring every 2 to 3 minutes with a wooden spoon to scrape any sticking off the bottom, for 30 to 45 minutes. The onions go through a long arc: first they release their water and steam, then they go translucent, then pale gold, then deep gold and visibly broken down into a thick brown paste. The pot will look alarmingly dry around minute 15; this is correct, the water boils off and the sugars concentrate. If anything is sticking aggressively, drop the heat one notch; if nothing is happening after 20 minutes, raise it one notch. Pull from heat when the onions are a thick mahogany paste that holds the shape of a spoon-drag across the bottom of the pot.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 40
   - text: 'Add the 80 g / 6 tbsp niter kibbeh to the onion paste and stir over medium-low heat for 2 minutes until the fat melts and integrates. The spiced fat now coats the onion base and carries the aromatic load forward. Add the 30 g / 7 to 8 cloves microplaned garlic and the 20 g / 4 cm knob microplaned ginger and cook 1 minute, stirring constantly, until fragrant.'
     time_min: 4
   - text: 'Add the 40 g / ¼ cup + 1 tbsp berbere and the 30 g / 2 tbsp tomato paste and cook 3 minutes, stirring constantly, blooming the spices in the niter kibbeh. The mixture turns from brown-onion to brick-red as the berbere hydrates in the fat and the tomato paste darkens; the smell shifts from sweet-onion-spice to deep-warm-chili. Watch closely; berbere can scorch in under 30 seconds if the heat is too high or you stop stirring. The bloom is the structural moment that transfers the spice flavor into the finished sauce.'
-    technique: 'bloom-spice'
+    technique: 'blooming-aromatics'
     time_min: 3
   - text: 'Add the 60 g / ¼ cup red wine (or omit) and stir to incorporate, cooking 1 minute until the alcohol smell burns off. Add the 500 ml / 2 cups water or chicken stock and stir to combine into a thick brick-red sauce. The mixture should be the consistency of loose tomato sauce; add a splash more water if it reads too tight.'
     time_min: 3
   - text: 'Nestle the marinated 1200 g / 4 whole legs of chicken into the sauce, including any lemon juice from the marinade bowl. The pieces should be mostly submerged with the tops just showing. Add the 4 g / 1 tsp kosher salt. Cover with the lid slightly ajar (a 1 cm gap to let steam escape) and simmer over low heat for 45 minutes, stirring gently every 15 minutes so nothing sticks to the bottom. The chicken cooks through and the sauce thickens as it reduces; the bones release collagen that gives the finished wat its glossy body.'
-    technique: 'braise'
+    technique: 'braising'
     time_min: 45
   - text: 'Add the 6 hard-boiled peeled and scored eggs to the pot, nestling them into the sauce around the chicken pieces. Continue simmering uncovered for 15 minutes; the sauce thickens further and the eggs absorb the brick-red color through the score marks. Taste the sauce; if it reads flat, more salt; if too sharp, a teaspoon of honey rounds the chili-acid edge.'
     time_min: 15
   - text: 'Pull from heat and rest covered for 5 minutes. Serve in a shallow wide bowl or on a platter, ladled over or beside torn injera, with the eggs visibly arranged on top. Traditional service includes a side of ayib (mild fresh cheese, cottage cheese is a working substitute) to temper the heat, and additional injera for scooping.'
     time_min: 5
 
-techniques: ['dry-sweat', 'bloom-spice', 'braise']
+techniques: ['sweating', 'blooming-aromatics', 'braising']
 
 modifications:
   - for: 'protein'

@@ -128,7 +128,6 @@ steps:
   - text: 'Drain the soaked 200 g kidney beans; place in a pot with 1 L fresh water, bring to a boil, reduce to a simmer, and cook 30 to 45 minutes until just tender (still holding shape, slight resistance at the center). Drain and reserve. This pre-cook is structural; raw beans added to the stew do not soften enough in the braise time.'
     time_min: 45
   - text: 'Heat 30 g / 2 tbsp of the neutral oil in a wide skillet over medium heat. Add all the chopped herbs (parsley, cilantro, scallion, fenugreek). The pan will look overstuffed; the herbs collapse dramatically as they cook. Sauté 25 to 35 minutes, stirring frequently and reducing heat slightly as the herbs darken, until the green color deepens from bright spring-green to deep forest-green to near-black, the volume reduces by about 70%, and the herbs smell deeply roasted with no raw grassy note. This long sauté is the structural defining technique of ghormeh sabzi; rushed herbs taste of raw chlorophyll and the stew never integrates.'
-    technique: 'herb-darkening'
     time_min: 35
   - text: 'Meanwhile, in a heavy 5-quart Dutch oven, heat the remaining 30 g / 2 tbsp neutral oil over medium heat. Add the 300 g / 2 onions (diced) and cook 15 to 20 minutes, stirring frequently, until deep golden brown with crispy edges (much deeper than translucent; the structural fond color is dark amber-mahogany, not light blonde). Reduce heat if the onions threaten to burn.'
     time_min: 18
@@ -145,7 +144,7 @@ steps:
   - text: 'Serve over chelow (plain steamed Persian rice) or alongside tahdig in a shallow bowl. The canonical service is the rice and the stew side-by-side, not mixed, so each bite can be composed by the diner.'
     time_min: 1
 
-techniques: ['herb-darkening', 'long-braise', 'onion-deep-brown']
+techniques: ['braising']
 equipment: ['heavy-dutch-oven', 'wide-skillet']
 
 modifications:

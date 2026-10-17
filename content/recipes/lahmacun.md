@@ -181,12 +181,11 @@ steps:
   - text: 'Spread one-eighth of the topping (about 75 g) over each rolled round in a very thin even layer using the back of a spoon, going right to the edges. The topping should be visibly translucent over the dough (3 mm thick maximum); thicker mounds will not cook through in the short bake.'
     time_min: 4
   - text: 'Transfer one or two lahmacun to a parchment-lined pizza peel or sheet pan and slide onto the preheated stone. Bake 4 to 6 minutes until the dough edges are crisp and slightly puffed, the topping has lost its raw red look and turned dark caramel-brown at the edges, and the meat is just-cooked through (no pink visible). Pull and stack on a clean kitchen towel; keep wrapped while you bake the rest. Repeat with the remaining rounds.'
-    technique: 'high-heat-bake'
     time_min: 25
   - text: 'Serve immediately. Each diner spreads their hot lahmacun open, mounds a small handful of the 40 g fresh parsley leaves and a few rings of the 100 g sliced red onion down the middle, sprinkles with the 4 g sumac, squeezes a wedge of lemon generously over the topping (the lemon is structural; it transforms the dish), then rolls the lahmacun into a tight cylinder and eats with the hands.'
     time_min: 1
 
-techniques: ['high-heat-bake', 'wet-paste-topping']
+techniques: []
 equipment: ['baking-stone', 'food-processor', 'rolling-pin', 'fine-mesh-sieve']
 
 modifications:

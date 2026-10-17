@@ -132,7 +132,7 @@ steps:
   - text: 'Phase 1, set up the confit. Season the 1800 g pork chunks generously with the 18 g kosher salt (work it into all surfaces; the salt is the structural cure). Let rest 15 minutes at room temperature. Heat the 500 g lard in a large heavy Dutch oven (5 L works) over medium heat until just melted and shimmering, not yet smoking. Add the pork chunks in a single layer; the lard should come about three-quarters of the way up the pork (add more melted lard if needed).'
     time_min: 8
   - text: 'Add the aromatics. Squeeze the juice from the 200 g orange into the pot; add the spent orange peels whole. Add the 250 g milk, 200 g quartered onion, 40 g halved garlic head, 3 bay leaves, 5 g canela stick, and 4 g Mexican oregano. Bring to a bare simmer (small bubbles at the surface; the lard should be at about 95 to 100°C / 200 to 212°F, not boiling). Reduce heat to low or medium-low; partially cover with the lid askew (a tight lid produces steam that emulsifies the lard and prevents the final crisp).'
-    technique: 'low-and-slow-simmer'
+    technique: 'simmering'
     time_min: 5
   - text: 'Simmer 2 to 2.5 hours undisturbed. Check the temperature every 30 minutes; adjust burner to maintain the bare simmer. The lard slowly cooks the pork by fat conduction; the meat reads firm at the 90-minute mark and starts to become fork-tender at the 2-hour mark. The structural test for doneness: a piece of pork shreds when pressed with a wooden spoon but holds its overall shape when lifted with tongs. Do not let the lard boil; boiling produces tough stringy meat rather than tender carnitas.'
     time_min: 140
@@ -144,7 +144,7 @@ steps:
   - text: 'Phase 3, warm tortillas and assemble. Warm the 360 g corn tortillas on a dry comal or skillet over medium-high heat 15 to 20 seconds per side; stack and cover with a clean kitchen towel. Set out the 30 g chopped cilantro, 120 g diced raw onion, 90 g lime wedges, and 200 g salsa in small bowls. Build each taco: warm tortilla flat, mound about 50 g shredded carnitas in the center, scatter cilantro and onion over, spoon a teaspoon of salsa, finish with a squeeze of lime. Serve immediately. The diner builds each taco; do not pre-assemble.'
     time_min: 5
 
-techniques: ['low-and-slow-simmer', 'maillard-sear']
+techniques: ['simmering', 'maillard-sear']
 equipment: ['dutch-oven', 'comal', 'fine-mesh-sieve']
 
 modifications:

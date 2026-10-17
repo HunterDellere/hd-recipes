@@ -209,13 +209,12 @@ ingredients:
 
 steps:
   - text: 'Poach the pork. Place the 400 g pork belly in a saucepan with the 1500 ml / 6 cups water, 20 g bruised ginger, 20 g bruised scallion whites, and 8 g / 1½ tsp kosher salt. Bring to a bare simmer; cook 30 to 35 minutes until fork-tender (the pork should yield to a chopstick poke). Pull and let cool 15 minutes; then slice into 3 mm thin slices against the grain. Refrigerate while you continue.'
-    technique: 'pork-poach'
+    technique: 'poaching'
     time_min: 50
   - text: 'Poach the shrimp. Bring 1000 ml / 4 cups water with 5 g / 1 tsp salt to a hard boil. Add the 300 g shell-on shrimp; cook 90 seconds to 2 minutes until just pink and opaque. Pull immediately with a slotted spoon to an ice bath; the cold shock stops the cook and firms the texture. Once cooled (3 minutes), peel and devein the shrimp, then slice each shrimp lengthwise in half (so each shrimp produces two flat shrimp halves with the C-curve flat against the rice paper for visual signature).'
-    technique: 'shrimp-shock-poach'
+    technique: 'poaching'
     time_min: 8
   - text: 'Cook the vermicelli. Bring a fresh pot of water to a hard boil. Drop in the 150 g rice vermicelli; cook 2 to 3 minutes until just tender (taste a strand). Drain immediately; rinse aggressively under cold running water for 60 seconds to stop the cook and wash off surface starch. Drain again; toss with a few drops of neutral oil to prevent clumping. Set aside.'
-    technique: 'rice-noodle-cook'
     time_min: 5
   - text: 'Make the hoisin-peanut sauce. Combine the 60 g / 4 tbsp hoisin, 30 g / 2 tbsp peanut butter, and 60 g / ¼ cup coconut milk in a small saucepan. Warm over low heat 2 minutes, whisking, until smooth and pourable. Pull from heat; whisk in the 10 g / 2 tsp lime juice and 5 g / 1 tsp sambal. Transfer to a small bowl; top with the 20 g / 2 tbsp crushed peanuts at the moment of serving.'
     time_min: 4
@@ -226,13 +225,12 @@ steps:
   - text: 'Roll the first wrap. Dip one rice paper sheet into the warm water for 4 to 6 seconds only, just until the sheet softens slightly at the edges (it will still feel stiff in the center; it continues to hydrate after it leaves the water). Lay flat on the damp tea towel. Working quickly (the sheet fully softens in 30 seconds): place 3 shrimp halves cut-side-down in a horizontal line across the lower third of the sheet (these will show through the wrap as the visual signature). Top with 2 pork slices, a small handful of vermicelli (about 30 g cooked), a lettuce leaf piece, a few sprigs of mint, Thai basil, and cilantro, and 1 to 2 chive lengths sticking out one end.'
     time_min: 3
   - text: 'Roll tight. Fold the bottom edge of the rice paper up over the filling, pressing gently to tuck the filling into a cylinder. Fold in the right and left edges over the cylinder ends (the chive ends should still stick out). Continue rolling forward, snug but not crushing, until the roll is fully sealed seam-side-down. Transfer to a plate (do not stack rolls, they stick together). Cover with a damp paper towel as you roll the rest.'
-    technique: 'rice-paper-roll'
     time_min: 2
   - text: 'Repeat with remaining rice paper and filling, making 12 rolls total. The first 2 rolls will be technique-rough; by roll 4 the rhythm settles. If a rice paper tears, discard and use a new sheet; do not patch.'
     time_min: 18
   - text: 'Serve immediately at room temperature with both dipping sauces on the side. The rolls can be made up to 2 hours ahead (cover with a damp towel, refrigerate, return to room temperature 20 minutes before serving); past 2 hours the rice paper dries and toughens.'
 
-techniques: ['pork-poach', 'shrimp-shock-poach', 'rice-noodle-cook', 'rice-paper-roll']
+techniques: ['poaching']
 equipment: ['saucepan', 'large-pot', 'shallow-bowl']
 
 modifications:

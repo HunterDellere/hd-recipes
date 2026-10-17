@@ -183,7 +183,7 @@ steps:
   - text: 'Roast 18 to 22 minutes, until the chicken is cooked through (internal temperature 71°C / 160°F at the thickest point) and the marinade has caramelized on the surface. The chicken should look deep amber-brown on top with darker char marks at the thinner edges.'
     time_min: 22
   - text: 'Turn the broiler to high. Move the sheet pan to the top rack, about 10 cm from the heating element. Broil 3 to 5 minutes, watching closely, until the edges are crisped and slightly charred and the surface is glossy with caramelized marinade. The broil is the structural step that mimics the vertical spit; do not skip it.'
-    technique: 'broiler-char'
+    technique: 'comal-charring'
     time_min: 5
   - text: 'Pull the chicken from the oven; let rest 5 minutes on the sheet pan (covered loosely with foil) to redistribute the juices.'
     time_min: 5
@@ -192,7 +192,7 @@ steps:
   - text: 'Assemble each wrap: spread a generous 50 g of tahini-yogurt sauce across the warm pita. Pile 150 g of sliced chicken down the center. Add 2 slices tomato, 2 slices cucumber, a small handful of red onion (sprinkled with sumac), and a generous pinch of parsley leaves. Roll the pita tightly: tuck one end inward, then roll the long edge across the filling, tucking firmly as you go. Wrap the bottom half in parchment paper if eating on the go (the paper holds the wrap closed and keeps the bottom from getting drenched). Serve immediately; the wrap is built and eaten within 90 seconds. Alternatively, plate the chicken with the sauce and vegetables alongside as a shawarma platter, eaten with the warmed pita on the side.'
     time_min: 2
 
-techniques: ['yogurt-marinade', 'spice-bloom-in-marinade', 'broiler-char']
+techniques: ['blooming-aromatics', 'comal-charring']
 equipment: ['heavy-sheet-pan', 'mortar']
 
 modifications:

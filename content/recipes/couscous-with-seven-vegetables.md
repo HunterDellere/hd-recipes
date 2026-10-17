@@ -217,7 +217,6 @@ steps:
   - text: 'First couscous rinse-and-fluff: in a wide shallow bowl, spread the 500 g dry couscous. Sprinkle with 200 g of the cold water (mixed with 4 g of the fine sea salt) and 15 g / 1 tbsp olive oil; rub the grains between your palms for 2 minutes, breaking up any clumps until the grains are evenly moistened and separated. Let stand 5 minutes to absorb.'
     time_min: 9
   - text: 'Transfer the moistened couscous to the steamer insert (lined with cheesecloth if your insert has large holes). Set the steamer over the simmering lamb broth; if there is a gap at the join, seal with a damp cloth or aluminum foil so the steam is forced up through the couscous, not around it. Steam uncovered 20 minutes from when you see the first steam rising through the grains. Do not cover; the couscous needs to vent. The grains will plump and become al dente.'
-    technique: 'couscous-steam'
     time_min: 20
   - text: 'Turn the steamed couscous out into the wide bowl. Sprinkle with 200 g cold water plus 4 g salt, and 15 g / 1 tbsp olive oil. Working with a spatula at first (the grains are very hot), break up any clumps and re-roll between palms once cooled enough to touch. The grains should look swollen, separate, and glossy with oil. Rest 5 minutes.'
     time_min: 8
@@ -234,7 +233,7 @@ steps:
   - text: 'Mound the couscous on the platter; arrange the lamb pieces and the vegetables on top in a colorful array. Ladle 200 g of the hot broth over the top of the platter; serve the remaining broth in a small bowl on the side so each diner can wet their portion to taste. Discard the herb bundle. Serve immediately; the canonical service is family-style from the platter, with each diner eating from the section closest to them.'
     time_min: 2
 
-techniques: ['couscous-steam', 'saffron-bloom', 'spice-bloom']
+techniques: ['blooming-aromatics']
 equipment: ['couscoussier-or-stockpot-with-steamer', 'wide-shallow-bowl', 'mortar']
 
 modifications:

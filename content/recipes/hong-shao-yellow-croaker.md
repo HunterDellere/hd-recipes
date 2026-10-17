@@ -155,7 +155,7 @@ steps:
   - text: 'Dry and dust the fish. After the cure, pat the fish bone-dry a second time, blotting the beaded moisture off the skin and out of the slashes; residual water makes the skin steam, stick, and tear. Dust each fish all over with the 12 g / 1½ tbsp cornstarch for a thin, even film, then lift and tap off all excess. The starch is a sheer coat, not a crust; it gives the thin croaker skin a sturdier surface that sets in the fry and resists sloughing in the braise.'
     time_min: 4
   - text: 'Sear the fish to set the skin. Heat the 40 g / 3 tbsp neutral oil in a wide skillet or wok over medium-high until it shimmers and a pinch of cornstarch sizzles on contact, about 180 °C. Lay the fish in away from you and fry undisturbed 3 to 4 minutes per side, turning once with a thin spatula slid fully underneath, until the skin is set, golden, and sealed. This is a setting sear, not a fry to doneness; the interior finishes in the braise. The fish should release freely before you turn it, one confident flip protects the skin. Lift the fish out to a plate and pour off all but about 15 g / 1 tbsp of the oil, leaving the fond.'
-    technique: 'shallow-fry'
+    technique: 'shallow-frying'
     time_min: 8
   - text: 'Bloom the aromatics. Return the pan to medium heat with its 15 g / 1 tbsp reserved oil. Add the 20 g / ginger coins and matchsticks, the 15 g / 4 smashed garlic cloves, the 30 g / 2 scallion batons, and the 3 g / 3 to 4 dried chilies. Stir-fry 60 to 90 seconds until the aromatics are fragrant and the garlic just turns pale gold; do not let them brown hard or the braise turns acrid. Push them to the side of the pan.'
     time_min: 2
@@ -172,7 +172,7 @@ steps:
   - text: 'Finish and serve. Pull the sauce off the heat and swirl in the 8 g / ½ tbsp Chinkiang vinegar; off-heat keeps the volatile acetic and aromatic notes bright and stops the vinegar from cooking flat. Taste the sauce: it should read deep, glossy, savory-sweet, with the vinegar lifting the back end so it does not cloy. Spoon the glaze over the fish, fishing out and discarding the spent chilies if you like, then scatter the reserved 15 g / 2 stalks bias-sliced scallion over the top. Serve immediately with the cooked 300 g / 2 cups jasmine rice; spoon the extra glaze over the rice as you eat.'
     time_min: 2
 
-techniques: ['shallow-fry', 'braising']
+techniques: ['shallow-frying', 'braising']
 equipment: ['wide-skillet', 'fish-spatula', 'wok-or-deep-skillet']
 
 modifications:

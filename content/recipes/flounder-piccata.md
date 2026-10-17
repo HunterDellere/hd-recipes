@@ -137,10 +137,10 @@ steps:
   - text: 'Set a wide stainless or carbon-steel skillet over medium-high heat. Add the 28 g / 2 tbsp extra-virgin olive oil and the 14 g / 1 tbsp butter; the butter is here for flavor and color, so swirl it into the oil and move on before it browns. When the foam subsides and the fat shimmers, lay in the floured fillets in a single layer without crowding (work in two batches if needed).'
     time_min: 2
   - text: 'Fry the fillets 60 to 90 seconds on the first side, until the underside is golden and the flour has set into a thin crust. Flip once with a thin slotted spatula and fry 45 to 60 seconds on the second side, just until the flesh turns opaque through the center; a 1 cm flatfish fillet is done at 2 to 3 minutes total and goes chalky seconds past that. Pull each fillet as it sets and rest it on a rack over a warm plate. Do not stack them.'
-    technique: 'pan-fry'
+    technique: 'shallow-frying'
     time_min: 4
   - text: 'Pour off all but a thin film of fat from the pan, leaving the browned flour and fish fond behind; that fond is the body of the sauce. Lower the heat to medium and add the 25 g / 1 minced shallot, the 6 g / 1 to 2 minced garlic cloves, and the 4 g / 1 minced anchovy fillet. Sweat 60 to 90 seconds until the shallot is translucent and the anchovy has melted into the fat, stirring so the garlic does not scorch.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 2
   - text: 'Pour in the 120 g / ½ cup dry white wine and raise the heat to high to deglaze, scraping the fond off the pan bottom with a wooden spoon. Simmer hard until the wine reduces by about half and no longer smells sharp with alcohol, 2 to 3 minutes. Add the 30 g / 2 tbsp lemon juice, the 60 g / ¼ cup water or fish stock, and the 20 g / 2 tbsp drained capers, and let it return to a simmer; the sauce should taste aggressively bright and briny, because it will be tempered by the butter and the mild fish.'
     time_min: 3
@@ -150,7 +150,7 @@ steps:
   - text: 'Stir the 8 g / 2 tbsp chopped parsley into the finished sauce. Taste and correct: the capers and anchovy bring the salt, the lemon and wine bring the acid, so adjust only with a few drops more lemon juice if it reads flat or a pinch more salt if the capers were light. Return the fillets to the pan for 15 to 20 seconds to warm through and bathe in the sauce, or plate the fillets and spoon the sauce over. Serve immediately, while the emulsion is glossy and the fish is just set.'
     time_min: 1
 
-techniques: ['pan-fry', 'fond-deglaze', 'pan-emulsion']
+techniques: ['shallow-frying', 'deglazing', 'pan-emulsion']
 equipment: ['wide-skillet', 'fish-spatula']
 
 modifications:

@@ -142,7 +142,6 @@ ingredients:
 
 steps:
   - text: 'Start the rice first. Rinse the 360 g / 2 cups Japanese short-grain rice in a fine-mesh sieve under cold running water, swirling with your hand, until the water runs nearly clear (about 3 rinses). Drain well. In a heavy small saucepan with a tight lid, combine the rinsed rice with the 400 ml / 1¾ cups water. Bring to a boil over high heat, immediately reduce to the lowest possible simmer, cover, and cook 18 minutes without lifting the lid. Pull off heat and rest covered another 10 minutes; the carryover steam finishes the cook.'
-    technique: 'rice-cookery'
     time_min: 30
   - text: 'Heat the oven to 220 °C / 425 °F with the rack in the upper third while the rice cooks. Line a small sheet pan with parchment paper.'
     time_min: 1
@@ -157,7 +156,7 @@ steps:
   - text: 'Finish each bowl. Place a halved soft-boiled egg yolk-side up on each bowl. Scatter generously with the 12 g furikake (3 g per bowl), drizzle each bowl with about 5 g / 1 tsp of the light soy sauce and 2 g / ½ tsp of the toasted sesame oil. Scatter the 25 g sliced scallions across the bowls. Tear the 4 g / 1 nori sheet into pieces and scatter on top (optional). Serve immediately; the bowl is at its best with the contrast of warm rice-and-salmon against cold cucumber and warm jammy egg.'
     time_min: 2
 
-techniques: ['rice-cookery']
+techniques: []
 
 modifications:
   - for: 'protein'

@@ -143,14 +143,14 @@ steps:
   - text: 'Lay both trout on a rimmed sheet pan lined with parchment or a lightly oiled rack, spaced apart so hot air circulates around each fish and the skin crisps on all sides rather than steaming where two fish touch. Pat the top skin dry one more time; this is the last chance before the oven and it matters most for crisp. A rack lifts the fish so the bottom skin crisps too, but parchment on a hot pan also works for a small trout.'
     time_min: 2
   - text: 'Roast the fish in the upper third of the fully preheated 230°C / 450°F oven, undisturbed, for 12 to 16 minutes depending on size. The ~300 g trout here run about 14 minutes. The skin should tighten, blister, and brown, and the flesh in the slashes should turn fully opaque. Begin checking at 12 minutes by inserting an instant-read thermometer into the thickest part of the back just behind the head: pull the fish at 52 to 54°C / 126 to 129°F, where the fine flake has just set and stays glossy. The flesh should lift cleanly from the bone with gentle pressure; if it still has a translucent core, give it 1 to 2 minutes more. A thin trout moves fast through the doneness window, so err toward the early pull and let carryover finish it.'
-    technique: 'roasting'
+    technique: 'high-heat-dry-roasting'
     time_min: 14
   - text: 'While the fish roasts, build the optional anchovy-caper-lemon dressing. In a small bowl, stir the 45 g / 3 tbsp extra-virgin olive oil with the 8 g / 2 anchovy fillets minced to a paste; the anchovy is the glutamate anchor, dissolving into the oil and carrying savory depth against the mild trout. Add the 15 g / 1½ tbsp chopped capers, the 20 g / juice and zest of ⅓ lemon, and the 4 g / 1 tbsp chopped dill. Taste: it should read sharp, salty, and herbaceous, with the lemon forward enough to cut the roasted skin. The anchovy and capers supply the salt, so add none until you have tasted.'
     time_min: 5
   - text: 'Rest the fish 2 to 3 minutes on the pan; the flake firms slightly and carryover brings the spine to about 55°C. Transfer each trout to a warm plate with a wide spatula. To eat, run a knife down the spine and lift the top fillet off the bones, then lift the soft skeleton clear from the tail to free the bottom fillet; trout has a pliable rib cage and fine pin bones that strip away in one piece, which is what makes it the canonical fish to eat off the spine at the table (see the rainbow trout ingredient page). Spoon the anchovy-caper-lemon dressing over the flesh, or for the plain finish simply squeeze the reserved ~60 g / lemon wedges over each fish and drizzle with a little of the 45 g extra-virgin olive oil. Serve immediately, while the skin is still crisp.'
     time_min: 3
 
-techniques: ['roasting']
+techniques: ['high-heat-dry-roasting']
 equipment: ['sheet-pan', 'instant-read-thermometer', 'microplane']
 
 modifications:

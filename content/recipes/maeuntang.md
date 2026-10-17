@@ -153,17 +153,16 @@ steps:
   - text: 'Mix the seasoning paste (yangnyeom). In a small bowl stir together the 18 g / 3 tbsp gochugaru, the 30 g / 1½ tbsp gochujang, the 20 g / 1 tbsp doenjang, the 18 g / 5 to 6 cloves minced garlic, and the 8 g / 1 tbsp minced ginger into a loose paste. Letting it sit while the radish cooks lets the gochugaru hydrate and bloom its color into the fats already in the paste.'
     time_min: 3
   - text: 'Start the radish in the seasoned broth. Bring the 1.2 L anchovy-kelp stock to a simmer in a wide, shallow pot. Whisk in the full seasoning paste (the 18 g gochugaru, 30 g gochujang, 20 g doenjang, 18 g garlic, 8 g ginger) until the broth turns a deep, even red. Add the 300 g / 2.5 cm-cubed Korean radish. Simmer 12 to 15 minutes, uncovered, until the radish is translucent at the edges and tender to a skewer; this is also where the doenjang and gochugaru lose their raw edge and the broth deepens. Taste: it should read savory, gently spicy, and faintly sweet from the radish. Adjust salt only with a little more doenjang, not table salt.'
-    technique: 'doenjang-broth'
     time_min: 15
   - text: 'Poach the fish. Slide the salted fish sections into the simmering broth, head pieces and spine first since they take longest, then the body sections. Tuck the 200 g / 2 cm-slab firm tofu in around the fish. Keep the pot at a steady simmer, not a hard boil (a violent boil shreds the lean flake and clouds the broth). Do not stir; nudge gently if needed. Cook 6 to 10 minutes by the thickness of the sections, until the flesh is opaque and just pulls from the bone at the thickest piece (an internal 55 to 58 °C). Skim any gray foam that rises.'
-    technique: 'gentle-poach'
+    technique: 'poaching'
     time_min: 9
   - text: 'Add the aromatics and fresh heat. Scatter in the 30 g / 2 sliced green chili and the 40 g / 3 to 4 stalk scallion batons. Simmer 2 minutes more; the chili and scallion go in late so they keep their fresh, bright bite and lift the deep fermented base rather than stewing into it. Taste the broth one last time and correct: a little more gochugaru for color and warmth, a touch more doenjang for salt and depth.'
     time_min: 2
   - text: 'Finish off heat with the herbal crown. Pull the pot off the heat. Pile the 50 g / 2 handfuls crown daisy (or watercress) over the top and, if using, drizzle the 4 g / 1 tsp toasted sesame oil over the surface. The residual heat wilts the greens in about 30 seconds while keeping their grassy, slightly bitter aroma intact; that raw herbal brightness against the fiery, gelatin-rich broth is the finishing register of the dish. Bring the pot to the table and serve immediately, ladling broth, fish, tofu, and radish into bowls over the 600 g / 3 cups steamed short-grain rice.'
     time_min: 1
 
-techniques: ['doenjang-broth', 'gentle-poach']
+techniques: ['poaching']
 equipment: ['wide-shallow-pot', 'fine-mesh-sieve', 'heavy-knife']
 
 modifications:

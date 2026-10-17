@@ -120,7 +120,7 @@ steps:
   - text: 'Taste and adjust: salsa macha should read deeply chili-smoky-fried with crunchy nut-and-seed texture, balanced acid from the vinegar, gentle sweetness from the brown sugar, and a long warm heat at the back; if flat, an extra 1 g / pinch of fine sea salt and 5 g / 1 tsp apple cider vinegar; if too acidic, more sugar. Transfer to a clean glass jar (about 400 ml capacity); the salsa is meant to have visible oil pooled on top with the chunky paste below. Let rest at room temperature 2 hours before first use for the flavors to integrate fully; refrigerate after the rest period. Use as a condiment for tacos, eggs (especially fried or scrambled), grilled meat (steak, chicken, pork, lamb), grilled or roasted vegetables, beans (canonical with stewed black beans and pinto beans), soups (a spoonful stirred into a bowl of bean or tomato soup), cheese (on quesadillas, grilled cheese, queso fresco, or just spooned over a wedge of feta), and avocado.'
     time_min: 3
 
-techniques: ['fried-chili-oil', 'low-temperature-fry']
+techniques: []
 equipment: ['saucepan', 'food-processor', 'thermometer']
 
 modifications:

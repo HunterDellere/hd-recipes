@@ -129,14 +129,14 @@ steps:
   - text: 'Melt the 45 g / 3 tbsp butter and whisk in the reserved third of the saffron liquid; this is the basting butter, which will glaze the kababs in the last grilling phase.'
     time_min: 2
   - text: 'Grill the skewers directly over high heat, lid up. Cook 4 to 5 minutes on the first side until the underside is amber with darker char marks (no need to flip early; the first side establishes the structural crust). Flip with tongs; brush the seared top with the saffron-butter. Cook 3 to 4 minutes on the second side. The interior is done at 71°C / 160°F at the thickest point; the surface should be deep mahogany-amber with crisp edges.'
-    technique: 'live-fire-grill'
+    technique: 'grilling'
     time_min: 9
   - text: 'In the last minute, lift the skewers off the grate and brush all over with the remaining saffron-butter; return to the grill for 30 seconds to set the glaze. Pull and rest on a warm platter 3 minutes covered loosely with foil.'
     time_min: 2
   - text: 'Sprinkle the rested kababs with the 3 g / 1 tsp sumac. Serve immediately on the skewers, or slide the chicken off onto a bed of saffron rice. Sumac, fresh lemon wedges, grilled tomato (an empty skewer of small tomatoes grilled alongside, traditional), and a small bowl of mast-o-khiar or plain yogurt are the canonical sides.'
     time_min: 1
 
-techniques: ['yogurt-marinade', 'saffron-bloom', 'live-fire-grill']
+techniques: ['grilling']
 equipment: ['flat-metal-skewers', 'box-grater', 'fine-mesh-sieve', 'mortar']
 
 modifications:

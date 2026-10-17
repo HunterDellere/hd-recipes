@@ -134,23 +134,22 @@ ingredients:
 
 steps:
   - text: 'Make the dashi. Put the 10 g kombu in a pot with the 800 ml / 3⅓ cups water and warm slowly over low heat, 10 minutes, pulling it just before the first simmer bubbles break; never let it boil. Lift out the kombu (reserve it; see notes). Bring the liquid to a brief boil, kill the heat, and rain in the 15 g katsuobushi. Let it steep 2 minutes off heat as the flakes sink, then strain through a fine sieve. You have about 750 ml dashi. Do not press the flakes; squeezing extracts bitterness.'
-    technique: 'dashi-extraction'
+    technique: 'dashi'
     time_min: 15
   - text: 'In a wide pot, combine the strained dashi, 60 g / ¼ cup sake, 45 g / 3 tbsp mirin, 6 g / 1½ tsp sugar, and the 15 g sliced ginger. Bring to a gentle simmer over medium and let it bubble 2 minutes to cook off the raw sake alcohol. Note the seasoning order: sugar now, soy later, miso last, following sa-shi-su-se-so so the sugar penetrates before salt firms the surfaces.'
     time_min: 3
   - text: 'Slide in the 900 g chicken thighs skin-side-up and the 400 g kabocha wedges, arranging them in a single layer so each piece sits in the liquid. Cut a circle of parchment a little smaller than the pot, with a small vent hole in the center, and lay it directly on the surface as a drop-lid (otoshibuta). Simmer gently 18 minutes; the drop-lid circulates the modest liquid over everything without a hard boil.'
-    technique: 'drop-lid-simmer'
+    technique: 'simmering'
     time_min: 18
   - text: 'Lift the parchment. Stir in the 20 g / 4 tsp light soy and tuck in the 150 g shimeji clusters. Replace the parchment and simmer 8 more minutes, until the kabocha is knife-tender and the chicken reads 75°C / 165°F at the bone. The kabocha will have shed some starch and lightly thickened the broth.'
     time_min: 8
   - text: 'Reduce the heat to its lowest setting. Ladle a little of the hot broth into a bowl with the 50 g / 3 tbsp white miso and whisk to a smooth slurry, then stir it back into the pot. Do not let it boil after the miso goes in; boiling drives off the miso aroma and dulls it. Stir the 5 g / 1 tsp rice vinegar through off the boil.'
-    technique: 'miso-tempering'
     time_min: 2
   - text: 'Taste the broth. It should read gently savory and lightly sweet, with the miso as a rounded background rather than a salt hit. If thin, a touch more miso slurry; if flat, the smallest pinch of salt; it should not need much. Let it stand 3 minutes off heat so the flavors settle and the kabocha drinks in the broth.'
     time_min: 3
   - text: 'Spoon a thigh, a wedge or two of kabocha, and a cluster of shimeji into each shallow bowl, ladle the broth over, and scatter the 20 g sliced scallion across. Serve with steamed short-grain rice alongside, not under; nimono is eaten with rice, not poured over it.'
 
-techniques: ['dashi-extraction', 'drop-lid-simmer', 'miso-tempering']
+techniques: ['dashi', 'simmering']
 equipment: ['dutch-oven', 'fine-sieve']
 
 modifications:

@@ -66,7 +66,7 @@ steps:
   - text: 'Use immediately or refrigerate. For peak flavor, use the dashi within 4 hours of making. Refrigerated in a sealed container, dashi keeps 3 days; it loses subtle aromatics over time but the structural umami stays intact. For longer storage, freeze in ice-cube trays (each cube is about 30 ml, convenient for individual portions); transfer cubes to a zip-top freezer bag and use within 2 months. Frozen dashi is dramatically better than commercial powder for any application where the dashi is a primary flavor.'
     time_min: 1
 
-techniques: ['cold-water-soak', 'gentle-extraction']
+techniques: ['dashi']
 equipment: ['2-quart saucepan', 'fine-mesh sieve', 'cheesecloth or unscented paper towel', 'large measuring cup']
 
 modifications:

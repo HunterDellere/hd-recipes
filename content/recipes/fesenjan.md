@@ -120,7 +120,6 @@ steps:
   - text: 'In a heavy 5-quart Dutch oven, heat the 30 g / 2 tbsp neutral oil over medium heat. Add the 200 g / 1 onion (diced) and cook 12 to 15 minutes, stirring frequently, until deep golden brown with crispy edges. Add the 3 g / ½ tbsp turmeric; cook 30 seconds.'
     time_min: 15
   - text: 'Add the ground walnut meal directly to the onions; stir well to coat with the onion oil. Pour in the 1500 ml / 6 cups water and stir. Bring to a steady simmer; reduce heat to medium-low. Cover partially (leave the lid askew so steam can escape) and simmer 90 to 120 minutes, stirring every 15 minutes to prevent the walnut meal from sticking. The mixture will look gray and thin at first; over the simmer it will gradually thicken, the walnut oil will release and rise to the surface, and the color will deepen to mocha-brown. Skim and discard the oil that rises in the first 30 minutes (this is the bitter surface oil); leave the oil that releases later (this is the flavorful walnut fat that enriches the sauce).'
-    technique: 'walnut-slow-sweat'
     time_min: 105
   - text: 'When the walnut base is the texture of a thin pudding (coats a spoon with a slow drip) and the color is deep mocha, stir in the 150 g pomegranate molasses, 30 g / 2 tbsp sugar, and 1 g / ½ tsp cinnamon. The color will shift dramatically from mocha to deep mahogany-chocolate, and the sauce will smell sweet-sour-savory. Taste: the sauce should read sour-forward with a small sweet round and a savory backbone; adjust with more sugar (1 tsp at a time) if too sour, or more molasses (1 tbsp at a time) if too sweet or flat. Add 6 g / 1½ tsp of the salt.'
     time_min: 5
@@ -131,7 +130,7 @@ steps:
   - text: 'Plate over chelow or tahdig in a shallow bowl: place 1 or 2 chicken pieces, ladle sauce generously over and around, drizzle the saffron-bloom liquid in random streaks across the top, and scatter the 60 g pomegranate seeds. The visual contrast of the bright red seeds against the dark mahogany sauce is the canonical fesenjan plate.'
     time_min: 2
 
-techniques: ['walnut-slow-sweat', 'saffron-bloom', 'long-braise']
+techniques: ['braising']
 equipment: ['heavy-dutch-oven', 'food-processor', 'wide-skillet']
 
 modifications:

@@ -114,7 +114,7 @@ steps:
   - text: 'Serve one cutlet per plate with 2 lemon wedges. Sprinkle with a small pinch of parsley if using. Squeeze lemon over the cutlet at the table; the acid cuts the rich fried butter coating and is the structural finishing element. Serve with mashed potato (or boiled new potatoes with butter and dill), a small mound of mizeria (sour cream cucumber salad) or surówka z białej kapusty (white cabbage slaw), and a dill pickle.'
     time_min: 2
 
-techniques: ['maillard-sear', 'breading-three-step']
+techniques: ['maillard-sear']
 equipment: ['meat-mallet', 'wide-skillet', 'three-shallow-dishes', 'instant-read-thermometer']
 
 modifications:

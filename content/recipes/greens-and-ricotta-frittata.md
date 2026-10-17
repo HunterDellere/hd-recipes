@@ -129,12 +129,10 @@ steps:
   - text: 'Heat the 25 g / 2 tbsp olive oil in a 25 to 28 cm (10 to 11 inch) oven-safe heavy skillet (cast iron, well-seasoned carbon steel, or oven-safe nonstick) over medium heat. Add the 100 g / ½ onion (diced); sweat 4 to 5 minutes, stirring occasionally, until translucent and lightly golden. Add the 8 g / 2 garlic cloves (minced) and 1 g / ¼ tsp red pepper flakes; cook 30 seconds until fragrant.'
     time_min: 5
   - text: 'Add the 300 g / 1 bunch kale (torn) and the 2 g / ¼ tsp salt to the pan in 2 or 3 additions, stirring after each to wilt before adding the next (a full bunch of kale fills the pan above the rim before wilting; staged additions prevent steam buildup). Cook 4 to 6 minutes, stirring, until the kale is fully wilted, tender, and most of the water has evaporated (the pan should be visibly dry at the bottom with no pooled liquid). Remove from heat and let cool 2 minutes; the eggs added to a too-hot pan will scramble on contact with the pan and produce a streaky frittata.'
-    technique: 'greens-wilt-and-dry'
     time_min: 7
   - text: 'While the greens cool, prepare the egg-and-cheese base: in a large bowl, beat the 400 g / 8 eggs with a fork or whisk for 30 seconds until just uniform (no streaks of white). Add the 150 g / ⅔ cup ricotta, 40 g / ½ cup parmigiano, 3 g / 1 tsp lemon zest, 4 g / ¾ tsp salt, and 2 g / 1 tsp cracked black pepper; whisk to combine; the ricotta should integrate but small soft lumps are acceptable and structural (they remain visible in the finished frittata as soft white pockets).'
     time_min: 3
   - text: 'Pour the egg-and-cheese mixture (the 400 g / 8 eggs base) over the warm (not hot) greens in the skillet; use a wooden spoon or rubber spatula to gently fold the greens into the eggs so the vegetables distribute uniformly through the depth of the pan. Return the pan to medium-low heat for 2 to 3 minutes, without stirring, until the bottom of the frittata has visibly set (a thin layer of cooked egg around the edge of the pan; the top is still completely liquid). This stove-set step is structural; it prevents the bottom from undercooking in the oven and produces a clean release from the pan when slicing.'
-    technique: 'stove-set-then-oven'
     time_min: 3
   - text: 'Transfer the skillet directly to the preheated oven. Bake 10 to 12 minutes, checking at 10 minutes, until the top of the 400 g / 8-egg frittata is set (no visible liquid; a gentle nudge of the pan shows the top moving as a single cohesive layer rather than wobbling like uncooked egg), the edges are puffed and golden, and an instant-read thermometer in the center reads 75 to 78°C / 165 to 170°F. The center should still have a slight wobble when the pan is gently shaken; a fully rigid center is overcooked.'
     time_min: 12
@@ -143,7 +141,7 @@ steps:
   - text: 'Slice into 6 wedges (or 12 small squares for tapas-style service); drizzle each slice with a small amount of the 10 g / 2 tsp finishing olive oil and a small sprinkle of the 1 g / ¼ tsp flaky sea salt. Serve warm (immediately after cooking, with the center still slightly trembling), at room temperature (the canonical Italian make-ahead preparation; lets the flavors integrate), or cold straight from the refrigerator (a canonical Italian picnic food). Pairs with a green salad, crusty bread, and a glass of dry white wine for a complete light dinner; or cut into smaller pieces and served as part of an antipasti or aperitivo spread.'
     time_min: 1
 
-techniques: ['greens-wilt-and-dry', 'stove-set-then-oven']
+techniques: []
 equipment: ['oven-safe-heavy-skillet', 'thermometer (optional)']
 
 modifications:

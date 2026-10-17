@@ -180,7 +180,6 @@ steps:
     technique: 'myosin-extraction'
     time_min: 3
   - text: 'Paddle in the cold water (the structural step). With the mixture in front of you and the 90 ml / 6 tbsp cold water in a cup, work the water into the meat in three additions. Pour the first 30 ml / 2 tbsp over the mixture and stir vigorously with the silicone spatula or a chopstick in one direction (always the same direction, clockwise or counterclockwise, but consistent) for 30 to 45 seconds. The mixture will initially separate (the water sitting on top of the meat) and then suddenly bind (the water disappears into the matrix as the myosin extracts and absorbs it). Add the second 30 ml of water; stir 30 to 45 seconds the same way until it disappears. Add the final 30 ml; stir 45 to 60 seconds until the mixture is fully cohesive and the water is fully integrated. Total paddling time: 5 to 7 minutes. The end-state mixture is unusually wet, smooth, and slightly translucent compared to a Western meatball mixture, this is correct.'
-    technique: 'water-paddling'
     time_min: 7
   - text: 'Shape the four large meatballs. The lion''s head is a large meatball, traditionally about 130 to 140 g each, roughly 7 to 8 cm diameter, the "lion''s head" of the name. With wet hands (the mixture is sticky, water on the hands prevents grabbing), portion the mixture into 4 equal portions of about 130 g each. Toss each portion gently between two wet hands like a baseball, the toss helps round the meatball and works air out of the surface; aggressive shaping compresses the texture you''ve been building. Place the shaped meatballs on a plate or sheet pan. The meatballs are very wet and may slump slightly; that is correct. They will firm up during the brief sear and during the braise.'
     time_min: 5
@@ -199,7 +198,7 @@ steps:
   - text: 'Plate and serve. Transfer each meatball to a wide shallow bowl with a slotted spoon, accompanied by a generous mound of the braised napa cabbage and several ladles of broth, the cabbage-and-broth around the meatball is half the dish. Scatter the 10 g sliced scallion greens over the top. Serve immediately with steamed white rice on the side (long-grain jasmine or short-grain Chinese rice, your preference); the rice catches the broth and the meatball is eaten with chopsticks or a spoon, broken apart on the plate and dipped through the broth. This is a banquet-scale dish in Chinese tradition, it can be the centerpiece of a 4-to-6-dish family meal, paired with a stir-fried green vegetable (water spinach, choy sum), a cold appetizer (smashed cucumbers, pickled radish), and rice.'
     time_min: 3
 
-techniques: ['myosin-extraction', 'water-paddling', 'maillard-sear', 'braising']
+techniques: ['myosin-extraction', 'maillard-sear', 'braising']
 equipment: ['wide-heavy-pot-or-dutch-oven', 'wide-skillet-or-wok', 'microplane', 'wide-spatula']
 
 modifications:

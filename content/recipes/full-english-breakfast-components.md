@@ -121,12 +121,11 @@ steps:
   - text: 'Station D (minute 12 to 17). Start the toast 4 minutes before serving (toaster) or 6 minutes (oven). For fried bread (the canonical greasy-spoon move), after the bacon comes off the skillet, fry the bread slices directly in the rendered bacon and sausage fat over medium heat, 2 minutes per side, until deep gold and saturated with the fat. Fried bread is non-negotiable in a "proper" full English; toast is the polite home substitute.'
     time_min: 5
   - text: 'Station A finish, the eggs (minute 18 to 22). Pull the finished sausages onto the warm plates with the bacon. Reduce heat to medium-low under the skillet. The skillet should have 1 to 2 tbsp of rendered fat remaining; if dry, add 10 g butter. Crack the 4 eggs gently into the skillet, spacing apart. Cover with a lid for 90 seconds for the whites to set (this is the structural greasy-spoon method; covering steam-cooks the tops without flipping, leaving the yolks runny). The whites should be opaque and the yolks visibly liquid. Season with a pinch of salt and pepper.'
-    technique: 'egg-doneness'
     time_min: 4
   - text: 'Plate (minute 22 to 25). On each warm dinner plate, arrange in this canonical order from the 12 o''clock position clockwise: 2 sausages, 2 bacon rashers, 2 fried eggs (avoiding the beans, which would soak in), a small pile of mushrooms, 1 tomato half, a 60 g pool of beans (use the side of the spoon to make a clean wall against the eggs), 2 slices of fried bread or toast. Crack pepper over the eggs and tomato. Serve immediately with HP brown sauce and English mustard on the table, plus a pot of strong English breakfast tea.'
     time_min: 3
 
-techniques: ['maillard-sear', 'egg-doneness']
+techniques: ['maillard-sear']
 equipment: ['cast-iron-skillet', 'small-skillet', 'small-saucepan', 'toaster-or-oven']
 
 modifications:

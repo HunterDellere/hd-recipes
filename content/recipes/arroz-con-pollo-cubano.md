@@ -183,7 +183,7 @@ steps:
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Phase 2, bloom the annatto and build the sofrito. Add the 5 g annatto seeds to the chicken-fat-and-oil in the pan; cook over medium heat 60 to 90 seconds until the oil turns deep orange-red. Strain the oil through a fine-mesh sieve back into the pan, discarding the seeds (annatto seeds are fibrous and unpleasant in texture). Add the 250 g diced onion and 150 g diced bell pepper; sweat 8 to 10 minutes until soft and slightly golden. Add the 20 g garlic; cook 60 seconds.'
-    technique: 'sweating-aromatics'
+    technique: 'sweating'
     time_min: 12
   - text: 'Bloom the tomato and spices. Add the 30 g tomato paste; cook 2 minutes, stirring constantly, until the paste darkens to a deep brick-red. Add the 200 g crushed tomatoes, 3 g cumin, 2 g oregano, and 2 bay leaves; cook 2 to 3 minutes until the sofrito is fragrant and the liquid has reduced slightly. The sofrito should read deeply sweet, slightly smoky from the annatto, and structurally complete.'
     technique: 'spice-tempering'
@@ -197,7 +197,7 @@ steps:
   - text: 'Serve. Discard the bay leaves. Scatter the 8 g chopped cilantro over the top. Serve directly from the pan at the table, spooning chicken and rice onto each plate. The 60 g lime wedges go on the side; the lime squeeze at the table brightens the dish and is the structural finishing acid. Canonical Cuban pairings: a green salad with vinaigrette, fried sweet plantains, or a small bowl of black beans on the side.'
     time_min: 3
 
-techniques: ['maillard-sear', 'sweating-aromatics', 'spice-tempering']
+techniques: ['maillard-sear', 'sweating', 'spice-tempering']
 equipment: ['paella-pan', 'dutch-oven', 'fine-mesh-sieve']
 
 modifications:

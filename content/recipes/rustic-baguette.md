@@ -89,15 +89,15 @@ ingredients:
 
 steps:
   - text: 'The night before, build the poolish. In a 2-liter container, whisk the 150 g / ⅔ cup room-temperature water with the 0.1 g pinch of instant yeast until the yeast disperses, then stir in the 150 g / 1¼ cups bread flour until no dry flour remains. It will be a thick batter, not a dough. Scrape down the sides, cover with a damp towel or a fitted lid set ajar, and leave at room temperature (ideally 20 to 22 C / 68 to 72 F) for 12 to 16 hours. It is ready when the surface is fully domed and pocked with bubbles and the center has just started to dip. This long, cool, low-yeast ferment is where the baguette gets its flavor: the wild lactic and acetic acids that build over the hours give the lean dough the aromatic depth that a fast straight dough cannot, and the slow proteolysis loosens the gluten into the extensibility you need to stretch a baguette without tearing.'
-    technique: 'poolish-preferment'
+    technique: 'bulk-fermentation'
     time_min: 840
   - text: 'Autolyse. In a large bowl, combine the ripe poolish, the 350 g / 2¾ cups bread flour, and the 225 g / scant 1 cup water. Mix with a wet hand or a wooden spoon just until no dry flour remains, about 1 minute; the dough will be shaggy, sticky, and rough. Do not knead. Cover and rest 30 to 45 minutes. During this autolyse the flour fully hydrates and the gluten proteins (glutenin and gliadin) self-assemble into a network with no mechanical work at all, driven by enzyme activity and water alone. The dough that emerges is smoother, more extensible, and far easier to develop than a dough mixed all at once, and the rest shortens the kneading the high hydration would otherwise demand.'
-    technique: 'autolyse'
+    technique: 'bulk-fermentation'
     time_min: 40
   - text: 'Add the yeast and salt. Sprinkle the 2 g / ½ tsp instant yeast and the 10 g / 1¾ tsp fine sea salt over the autolysed dough. Wet your hand, then pinch and fold the dough repeatedly to distribute them, about 2 minutes, until the dough tightens and the salt has dissolved with no gritty patches. The salt goes in now rather than at autolyse because salt tightens gluten and slows enzyme activity, and you want the autolyse to run loose and unimpeded first. The salt is also doing flavor and structure work: at 2% of flour it suppresses excess yeast activity for an even rise, tightens the crumb walls so they hold gas, and is the only seasoning a lean dough gets.'
     time_min: 3
   - text: 'Bulk ferment with stretch-and-folds. Cover the dough and begin the bulk ferment at room temperature. Over the first 90 minutes, perform four sets of stretch-and-folds spaced about 30 minutes apart: with a wet hand, grab one edge of the dough, stretch it up and over to the opposite side, rotate the bowl a quarter turn, and repeat until you have gone around all four sides. Each set develops gluten strength by aligning the protein strands and traps gas without degassing the dough the way kneading would. After the folds, let the dough rest undisturbed to the end of bulk. The dough is ready when it has risen by about 50 to 70%, feels alive and jiggly, and shows a few bubbles at the surface and along the sides of the container. Total bulk is 90 minutes to 2 hours depending on room temperature.'
-    technique: 'stretch-and-fold'
+    technique: 'bulk-fermentation'
     time_min: 120
   - text: 'Divide and pre-shape. Turn the dough out onto a lightly floured bench, using a bit of the 30 g / ¼ cup dusting flour. Handle it gently from here on; the open crumb lives in the gas you are now protecting. Divide into three equal pieces, about 280 g each before baking loss. Pre-shape each piece into a loose, slack cylinder: fold the top third down, the bottom third up, and roll into a short log without forcing tension. Cover the logs with a damp towel and let them bench-rest 20 to 30 minutes. This relaxes the gluten so the final shaping does not fight back and tear; a baguette shaped straight off the bulk springs back and will not extend to length.'
     time_min: 30
@@ -106,7 +106,6 @@ steps:
   - text: 'Final proof, and preheat the oven. Cover the couched loaves with a damp towel and proof 45 to 75 minutes at room temperature, until they look puffed and pass the poke test: a floured fingertip pressed gently into the dough should leave a dent that springs back slowly and only partway. Meanwhile, set the baking stone or steel on a middle rack with a cast-iron skillet or metal steam tray on the rack below or on the oven floor, and preheat to 250 C / 480 F for a full 45 minutes. Under-proofed loaves tear at the scores and spring unpredictably; over-proofed loaves deflate when scored and bake flat and pale.'
     time_min: 60
   - text: 'Transfer and score. Boil the kettle for the steam. Gently roll the proofed loaves seam-side down off the couche onto a piece of parchment on a flipping board or an inverted sheet tray, two or three at a time depending on stone size. With a lame or a clean razor blade held at a low 30-degree angle to the surface, score each loaf with three to five long, overlapping slashes running nearly parallel to the length, each cut opening the next like roof tiles. The shallow angled scores are not decoration: they direct where the loaf bursts as it springs, so the crust opens cleanly into ears instead of rupturing at a random weak point. A confident, single-stroke cut beats a hesitant sawing one, which drags and tears the skin.'
-    technique: 'scoring'
     time_min: 5
   - text: 'Load and steam. Slide the parchment and loaves directly onto the preheated stone. Immediately pour the 250 g / 1 cup boiling water into the preheated steam tray and shut the door fast to trap the steam, and give the oven walls two or three spritzes from a spray bottle on the way. The first 10 to 15 minutes of steam keeps the crust surface moist and elastic so the loaf can spring and expand to its full volume before the crust sets; steam also gelatinizes the surface starches, which is what gives the baked crust its glassy sheen. A dry oven sets the crust early and chokes the oven spring.'
     time_min: 1
@@ -116,7 +115,7 @@ steps:
   - text: 'Cool, and listen. Transfer the baguettes to a wire rack and let them cool at least 20 to 30 minutes before cutting. As they cool you should hear the crust crackle and sing, the audible sign that the glassy crust is contracting and fissuring over the moist crumb, the textbook baguette signature. Cutting hot collapses the still-setting crumb into a gummy paste; the structure and the final moisture migration finish during the cool. Lean breads stale fast, so a baguette is at its peak within hours of cooling. To revive a day-old loaf, mist it with water and refresh 5 minutes in a 200 C / 400 F oven to re-crisp the crust.'
     time_min: 30
 
-techniques: ['poolish-preferment', 'autolyse', 'stretch-and-fold', 'scoring', 'maillard-sear']
+techniques: ['bulk-fermentation', 'maillard-sear']
 equipment: ['baking-stone', 'couche', 'lame', 'kitchen-scale']
 
 modifications:

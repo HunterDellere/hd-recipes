@@ -162,23 +162,21 @@ steps:
   - text: 'Mix the sauce in advance. Combine the 500 ml / 2 cups chicken stock, 45 g / 3 tbsp light soy sauce, 30 g / 2 tbsp oyster sauce, 15 g / 1 tbsp fish sauce, and 2 g / ½ tsp black pepper in a bowl. Whisk to combine. Set aside.'
     time_min: 2
   - text: 'Heat the 30 g / 2 tbsp neutral oil in a 30 cm / 12 inch wok or wide skillet over high heat until shimmering and just starting to smoke. Add the 200 g shrimp; sear 30 seconds per side until just pink, pull from the pan to a plate (they finish cooking in residual heat later). Add the 200 g char siu and 150 g chicken (if using); toss 60 seconds to brown the edges and warm the char siu. Pull the meats to the same plate as the shrimp.'
-    technique: 'wok-sear'
+    technique: 'maillard-sear'
     time_min: 3
   - text: 'Add another 15 g / 1 tbsp oil to the wok if dry. Add the 20 g minced garlic and the scallion whites; stir constantly for 20 seconds until fragrant and just turning gold (do not brown the garlic, it goes bitter). Add the 100 g sliced onion; toss 60 seconds until translucent.'
-    technique: 'wok-stir-fry'
     time_min: 2
   - text: 'Add the 100 g julienned carrot; toss 90 seconds to slightly soften. Add the 200 g shredded cabbage and the 100 g snow peas; toss 60 seconds until the cabbage just starts to wilt and turn translucent at the edges.'
     time_min: 3
   - text: 'Pour in the sauce mixture. Bring to a hard simmer (the wok should be bubbling vigorously). Add the 250 g dried pancit canton noodles directly into the simmering sauce, pushing them under the liquid with tongs or a spatula. The noodles will be stiff for the first 60 seconds; do not stir aggressively, just push under and let the steam soften them.'
     time_min: 2
   - text: 'After 90 seconds, the noodles soften enough to toss. Use two spatulas or tongs to toss the noodles through the sauce-and-vegetable mixture; the goal is even hydration. Continue tossing for 4 to 5 minutes; the noodles absorb the liquid, soften to al dente, and the wok contents go from soupy to glossy-coated. By the end the noodles should be tender but with a slight bite at the center, and almost no free liquid should remain in the wok.'
-    technique: 'noodle-absorption-stir-fry'
     time_min: 5
   - text: 'Return the cooked proteins to the wok. Add the scallion greens. Toss 30 seconds to warm through. Taste, adjust with more soy sauce, fish sauce, or pepper as needed.'
     time_min: 1
   - text: 'Transfer to a wide serving platter (the canonical Filipino fiesta presentation). Scatter fried garlic chips over the top (if using). Arrange lime or calamansi wedges around the platter. Serve immediately; diners squeeze citrus over their individual portions at the table.'
 
-techniques: ['wok-sear', 'wok-stir-fry', 'noodle-absorption-stir-fry']
+techniques: ['maillard-sear']
 equipment: ['wok']
 
 modifications:

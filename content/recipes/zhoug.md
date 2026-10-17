@@ -112,7 +112,6 @@ steps:
   - text: 'In a small dry skillet over medium heat, toast the 2 g / 6 to 8 cracked cardamom pods (seeds extracted), 3 g / 1½ tsp cumin seeds, 3 g / 1½ tsp coriander seeds, and 0.5 g / 2 whole cloves for 60 to 90 seconds, shaking the pan continuously, until fragrant and slightly darker. Transfer to a spice grinder or mortar and grind to a fine even powder; the toast deepens the volatile aromatic compounds and integrates the spices into a single unified flavor.'
     time_min: 3
   - text: 'In the bowl of a food processor (4 to 7 cup capacity), combine the 60 g / 1½ cups cilantro, 40 g / 1 cup parsley, 60 g / 4 to 5 serrano chilies (chopped), 15 g / 3 to 4 garlic cloves, and the ground spice mix. Pulse 10 to 12 times in 1-second bursts, scraping the sides between pulses, until the herbs are reduced to a uniform coarse-medium chop with no visible whole leaves but with structural texture preserved (about the consistency of a coarse paste, not a smooth puree).'
-    technique: 'knife-chop-not-processor'
     time_min: 3
   - text: 'Add the 6 g / 1 tsp salt and 20 g / 4 tsp lemon juice; pulse 3 to 4 more times to integrate. With the motor running on continuous low, drizzle in the 90 g / ⅓ cup plus 1 tbsp olive oil through the feed tube in a slow steady stream; the oil incorporates into the herb-and-chili suspension over about 15 seconds and the sauce takes on a glossy unified appearance. Do not over-process; zhoug is meant to retain visible herb structure, not become a smooth slurry.'
     time_min: 2
@@ -121,7 +120,7 @@ steps:
   - text: 'Serve as a condiment alongside hummus and tahini (a spoonful spooned onto the surface of a bowl of hummus, with a swirl of olive oil and a sprinkle of paprika; the canonical Israeli mezze service), grilled meat (lamb kebabs, kafta, grilled chicken, beef shawarma), grilled or roasted fish (especially salmon, branzino, mackerel, sardines); as a stir-in for soups (chickpea, lentil, vegetable, white bean; a teaspoon stirred into each bowl at service brings structural herbal-and-spice depth); as a spread for sandwiches and wraps (especially with grilled chicken, lamb, hummus, falafel, roasted vegetables); as a topping for eggs (fried eggs, shakshuka, omelets, soft-boiled eggs; the eggs-and-zhoug pairing is canonical across modern Israeli breakfast cookery); as a sauce for falafel (the canonical pairing alongside tahini sauce); as a finish for grain and rice bowls; as a flavor base for marinades (mix 30 g zhoug with 30 g olive oil and 15 g lemon juice); and as a raw counterpoint to slow-cooked or rich dishes (a spoonful on a bowl of lamb stew, a roast chicken, a slow-braised vegetable dish brings the structural raw herbal lift that the long-cooked dish lacks).'
     time_min: 1
 
-techniques: ['spice-toasting', 'knife-chop-not-processor']
+techniques: ['dry-toasting']
 equipment: ['food-processor', 'spice-grinder', 'skillet']
 
 modifications:

@@ -97,7 +97,6 @@ steps:
     time_min: 3
   - text: 'Grind 18 g / 1 modest tablespoon whole espresso beans to a fine espresso grind (just-finer than table salt, slightly tacky between fingertips). Dose the basket, distribute, and tamp level with ~13 kg / 30 lb force. Pull the shot into a pre-warmed 60 ml / 2 oz espresso glass, targeting 36 g / about 1.2 oz of yield in 25 to 30 seconds at 9 bar pressure. The pour should start at second 6 to 8 as honey-thick rope, lighten to hazelnut, and finish before it goes pale and watery. Crema should sit ~3 mm thick.'
     time_min: 1
-    technique: 'espresso-extraction'
   - text: 'Pour the warm coconut-sweetened milk into a 300 ml / 10 oz mug, leaving 3 cm of headroom. Slip the spoon under the surface of the milk and pour the 36 g espresso shot through it in one steady stream. The casein in the milk binds the espresso''s bitter polyphenols on contact, which is what you taste as "balanced" rather than "bitter coffee with sweetener over top."'
     time_min: 1
   - text: 'Scoop the lavender ube halaya cream onto the surface in a single ~80 g mound; it will sit, then slowly settle into a dome. Shower 3 g / 1½ tsp of the toasted desiccated coconut over the top in an arc, concentrated at the cream-meets-coffee boundary so the toasted-coconut Maillard notes hit at the first sip. Serve immediately; the cream is at its best in the first 90 seconds before it fully melts into the drink.'

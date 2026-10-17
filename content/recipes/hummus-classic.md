@@ -128,7 +128,6 @@ steps:
   - text: 'Soak (the night before): in a large bowl, combine the 250 g dried chickpeas with the 7 g / 1 tbsp baking soda and the 1500 g / 6 cups cold water. Cover and let stand at room temperature 12 to 24 hours; the chickpeas will double in size and the soak water will be cloudy and slightly slippery from the released starches and the activated baking soda.'
     time_min: 5
   - text: 'Drain and rinse the soaked chickpeas. Transfer to a heavy pot; add the 4 g / ¾ tsp baking soda. Cook over high heat, dry-toasting the chickpeas with the baking soda for 3 minutes (the baking soda coats the chickpeas in a thin alkaline film). Add the 2000 g / 8 cups water. Bring to a vigorous boil; reduce to a steady simmer. Skim and discard the gray foam and chickpea skins that rise to the surface in the first 15 minutes.'
-    technique: 'alkaline-chickpea-cook'
     time_min: 20
   - text: 'Simmer 60 to 90 minutes (the time depends on the age of the chickpeas; fresher chickpeas cook faster). Test for doneness by pinching a chickpea between thumb and forefinger; it should collapse to a paste with almost no resistance, well past al dente. If there is any resistance, cook 10 minutes more. The chickpeas should look slightly broken at the edges and many will have shed their skins into the cooking water.'
     time_min: 70
@@ -137,14 +136,13 @@ steps:
   - text: 'Macerate the garlic: place the 12 g / 3 chopped garlic cloves in a small bowl with the 60 g / ¼ cup lemon juice; let stand 10 minutes. The acid mellows the raw garlic and the macerated mixture will be strained or used as-is.'
     time_min: 10
   - text: 'Blend the hummus: while the chickpeas are still warm (not cold from the refrigerator), transfer them to a high-power blender (or food processor). Add the 250 g / 1 cup tahini, the garlic-lemon mixture (strain out the garlic chunks if using a less powerful blender; leave in if using a Vitamix), 5 g / 1 tsp of the salt, and 3 g / 1½ tsp cumin. Blend on high 60 to 90 seconds, scraping down the sides as needed; the mixture will look tight and pasty.'
-    technique: 'hot-blend'
     time_min: 3
   - text: 'With the blender running on low, drizzle in the 120 g / ½ cup ice water in a slow steady stream. The hummus will transform dramatically: from a tight paste to a silken, fluffy, pale-ivory dip. Continue blending on high 60 seconds more until the texture is uniform and the color has paled noticeably. Taste; add the remaining 3 g / ½ tsp salt if needed, and adjust lemon (1 tsp at a time) for brightness. The finished texture should be silky and slightly mounded but slumping gently if a spoonful is dropped onto a plate.'
     time_min: 2
   - text: 'Plate: spoon the hummus onto a wide shallow plate or bowl. Using the back of the spoon, create a wide shallow well in the center and a few sweeping ridges around the edge (the classic Levantine plating). Pile the reserved 50 g whole chickpeas in the center well; pour the 30 g / 2 tbsp olive oil into the well so it pools and slowly migrates outward over the ridges. Sprinkle the 2 g / 1 tsp sumac across the top and the 4 g / 1 tbsp parsley if using. Serve immediately at room temperature with warm pita; the hummus is structurally meant to be eaten warm or at room temperature, never cold.'
     time_min: 3
 
-techniques: ['alkaline-chickpea-cook', 'hot-blend', 'garlic-acid-maceration']
+techniques: []
 equipment: ['high-power-blender', 'heavy-pot', 'fine-mesh-sieve']
 
 modifications:

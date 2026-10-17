@@ -153,12 +153,12 @@ steps:
     technique: 'maillard-sear'
     time_min: 9
   - text: 'Finish indirect with the smoke. Cook on the indirect side with the lid closed 18 to 22 minutes, opening once at the 10-minute mark to baste the chicken with 35 g of the reserved jerk paste (thinned with 15 g of warm water) and to throw the 10 g fresh thyme branches onto the coals. The internal temperature at the thickest part of the thigh should reach 76°C / 170°F; bone-in thighs are most forgiving in the 74 to 82°C range, where the collagen has fully converted and the meat reads silky.'
-    technique: 'indirect-grilling'
+    technique: 'grilling'
     time_min: 22
   - text: 'Rest and serve. Transfer the chicken to a cutting board; rest 5 minutes (the internal temperature continues to rise about 3°C during the rest, and the juices redistribute). Chop each thigh in half through the bone with a heavy knife or kitchen shears (canonical Jamaican jerk service is bone-in chunks, not whole thighs). Brush with the remaining 35 g of jerk paste. Serve immediately with rice and peas, festival (sweet fried dumplings), or warm flatbread, with extra lime wedges on the side. The acid from the lime is the structural finishing brightener.'
     time_min: 7
 
-techniques: ['maillard-sear', 'indirect-grilling']
+techniques: ['maillard-sear', 'grilling']
 equipment: ['blender', 'charcoal-grill', 'meat-thermometer']
 
 modifications:

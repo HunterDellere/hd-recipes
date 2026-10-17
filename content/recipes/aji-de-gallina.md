@@ -171,14 +171,14 @@ ingredients:
 
 steps:
   - text: 'Phase 1, poach the chicken. Combine the 700 g chicken breast, 200 g halved onion, 12 g garlic, 2 bay leaves, 9 g salt, and 1500 ml water in a medium pot. Bring to a boil; reduce to a bare simmer (small bubbles breaking the surface). Cook 20 to 25 minutes until the chicken is cooked through (internal temperature 74°C / 165°F). Remove the chicken; cool until handleable. Strain the broth through a fine-mesh sieve; reserve 500 g of broth for the sauce, refrigerate the rest for future use.'
-    technique: 'low-and-slow-simmer'
+    technique: 'simmering'
     time_min: 28
   - text: 'Shred the chicken. Once cool enough to handle, pull the chicken meat from the bones; discard skin and bones. Shred the meat by hand into rough strands about 4 to 5 cm long (the structural ají de gallina texture; not chopped, not diced). Reserve.'
     time_min: 5
   - text: 'Phase 2, soak the bread. While the chicken poaches, tear the 80 g crustless bread into pieces in a bowl; pour the 200 g evaporated milk over; let soak 10 minutes until the bread is fully saturated and breaks apart when squeezed.'
     time_min: 10
   - text: 'Phase 3, build the sauce. Heat the 45 g neutral oil in a large heavy skillet or wide pot over medium heat. Add the 300 g diced onion; sweat 8 to 10 minutes, stirring occasionally, until the onion is soft, translucent, and very slightly golden at the edges. Add the 20 g minced garlic; cook 60 seconds. Add the 60 g ají amarillo paste; cook 2 to 3 minutes, stirring constantly, until the paste has cooked through and the oil starts to separate at the edges. Add the 2 g ground cumin; toast 30 seconds.'
-    technique: 'sweating-aromatics'
+    technique: 'sweating'
     time_min: 12
   - text: 'Add the bread, broth, and nuts. Add the soaked bread (and any unabsorbed milk) and the 60 g ground nuts to the skillet; stir to combine. Add 250 g of the 500 g reserved chicken broth; cook 3 to 4 minutes, stirring, until the sauce thickens noticeably (the bread breaks down into the sauce and acts as the structural thickener). Transfer the sauce to a blender in 2 batches; blend each 60 to 90 seconds to a smooth thick puree (the blender step is structural for the canonical ají de gallina texture). Return the smooth sauce to the skillet.'
     time_min: 6
@@ -187,7 +187,7 @@ steps:
   - text: 'Phase 4, plate and serve. For each plate: arrange 2 to 3 rounds of warm boiled potato as the base; mound about 150 g cooked rice next to the potatoes; ladle a generous portion of ají de gallina (about 200 g) over the potatoes. Garnish each plate with 1 hard-boiled egg half (yolk-side up), 2 black olives, and a small pinch of the reserved parmesan. Serve immediately; the structural Peruvian eating motion is to take a forkful of chicken-and-sauce-and-potato together, alternating with rice.'
     time_min: 4
 
-techniques: ['low-and-slow-simmer', 'sweating-aromatics']
+techniques: ['simmering', 'sweating']
 equipment: ['medium-pot', 'large-skillet', 'blender', 'fine-mesh-sieve']
 
 modifications:

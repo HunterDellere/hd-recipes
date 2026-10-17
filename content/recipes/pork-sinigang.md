@@ -140,7 +140,7 @@ ingredients:
 
 steps:
   - text: 'Build the pork base. Place the 1200 g pork ribs (and belly, if using a mix), 2500 ml / 10 cups water, 10 g / 2 tsp kosher salt, and 150 g quartered yellow onion in a stockpot. Bring to a bare simmer over medium heat. Skim the gray foam that rises in the first 10 minutes (this is denatured blood protein, removing it keeps the broth clear). Reduce heat to maintain a gentle simmer, partially covered (lid cracked), for 45 to 60 minutes until the pork is fork-tender and just-shy-of-falling-off-the-bone.'
-    technique: 'pork-simmer'
+    technique: 'simmering'
     time_min: 60
   - text: 'While the pork simmers, soak the 80 g tamarind pulp in 240 ml / 1 cup of the hot pork broth (ladled from the pot) for 15 minutes. Then mash the softened tamarind through a fine mesh sieve over a bowl, pushing the pulp through with the back of a spoon and leaving the seeds and fiber behind. You should have about 200 ml of thick, deeply-sour tamarind extract. Discard the seeds and fiber.'
     time_min: 17
@@ -154,7 +154,7 @@ steps:
     time_min: 2
   - text: 'Serve. Each diner gets a wide shallow bowl with a generous portion of pork, an assortment of vegetables, and a deep ladleful of broth poured over. Steamed jasmine rice in a separate bowl (the canonical eating method is to take a spoon of broth over the rice and eat that bite, alternating with pieces of pork or vegetable). A small ramekin of fish sauce on the side for diners who want extra salt on the pork. Serve hot.'
 
-techniques: ['pork-simmer']
+techniques: ['simmering']
 equipment: ['stockpot', 'fine-mesh-sieve']
 
 modifications:

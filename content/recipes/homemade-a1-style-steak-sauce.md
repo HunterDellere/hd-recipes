@@ -151,7 +151,6 @@ steps:
   - text: 'Soak the 60 g / ½ cup raisins in a small bowl with the 120 ml / ½ cup orange juice, 60 ml / ¼ cup malt vinegar, and 30 ml / 2 tbsp white vinegar for 15 minutes. The raisins should plump visibly and the soaking liquid should darken as the grape sugars and pigments dissolve out.'
     time_min: 15
   - text: 'While the raisins soak, sweat the 60 g / ⅓ cup minced onion and 2 minced garlic cloves in 1 tbsp neutral oil in a 2-quart saucepan over medium-low heat for 6 to 8 minutes, until completely soft and translucent with no color. The goal is full enzymatic conversion of the harsh raw alliums into sweet sulfur compounds; any browning at this stage will read as harsh in the finished sauce.'
-    technique: 'sweat'
     time_min: 8
   - text: 'Add the 120 g / ½ cup tomato paste and cook, stirring constantly, for 2 minutes until the paste darkens by one shade and smells distinctly sweet-roasted rather than raw-tomato. This is the brief Maillard step that gives the sauce its color depth; under-cook and the sauce reads bright and acidic, over-cook and it reads burnt.'
     time_min: 2

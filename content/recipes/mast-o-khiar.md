@@ -117,7 +117,7 @@ steps:
   - text: 'To serve, transfer to a wide shallow bowl. Drizzle the 15 g / 1 tbsp olive oil across the top in a slow stream. Scatter the reserved rose petals. Serve cold alongside hot rice and kebabs, as a starter with grilled flatbread (lavash or pita), or as part of a sabzi khordan (Persian herb-and-relish plate).'
     time_min: 1
 
-techniques: ['cucumber-drain', 'yogurt-fold']
+techniques: []
 equipment: ['box-grater', 'fine-mesh-sieve', 'mixing-bowl']
 
 modifications:

@@ -109,7 +109,7 @@ steps:
   - text: 'Place the 1000 g salted chicken thighs skin-side-down in a wide heavy pan (cast iron or enameled dutch oven, 30 cm / 12 inch). Pour in the 180 g / ¾ cup cane vinegar, 240 ml / 1 cup water, 90 g / 6 tbsp light soy sauce, 50 g whole smashed garlic, 4 bay leaves, 6 g / 2 tsp cracked black peppercorns, and 8 g / 2 tsp sugar (if using). Do not stir. The chicken should be three-quarters submerged with the skin slightly above the liquid line.'
     time_min: 5
   - text: 'Bring to a bare simmer over medium heat (uncovered). Once bubbling, reduce heat to maintain a gentle simmer for 25 minutes. Do not stir. The vinegar smell will be aggressive for the first 10 minutes; this is normal and is the alcohol-component of the acetic acid boiling off (do not breathe directly over the pan during this phase, the vapor is sharp). After 10 minutes the smell shifts from sharp-acetic to a deeper, more rounded vinegar-soy aromatic.'
-    technique: 'vinegar-braise'
+    technique: 'braising'
     time_min: 25
   - text: 'Flip each chicken thigh skin-side-up with tongs (working gently, do not tear the skin). The chicken should be cooked through (75°C / 165°F at the thickest point) but still tender; the goal of the next phase is reduction and glaze, not further cooking. Simmer uncovered another 15 to 20 minutes; the liquid reduces from about 500 ml to 150 ml and the color shifts from translucent brown to a deeper, glossier brown-black with visible reduced soy at the bottom of the pan.'
     time_min: 18
@@ -122,7 +122,7 @@ steps:
     time_min: 30
   - text: 'Plate. Mound a portion of hot jasmine rice on each plate. Top with 1 to 2 chicken thighs, a few of the softened garlic cloves, and a generous spoon of the dark sauce poured over the rice. Scatter sliced scallion over (if using). Serve hot. The canonical bite is a forkful of vinegar-soy-saturated rice with a piece of the salt-acid-front chicken, the mashed garlic clove smashed onto the rice between bites.'
 
-techniques: ['vinegar-braise', 'maillard-sear']
+techniques: ['braising', 'maillard-sear']
 equipment: ['dutch-oven', 'wide-skillet']
 
 modifications:

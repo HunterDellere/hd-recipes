@@ -157,19 +157,19 @@ steps:
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Drop the heat to medium. Add the 250 g / 1 large diced yellow onion to the hot pot (with the rendered meat fat still in it) and cook 6 to 8 minutes, stirring every minute, until the onion is deep golden brown.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 8
   - text: 'Add the 20 g / 5 cloves microplaned garlic, the 20 g / 4 cm knob microplaned ginger, and the 8 g / 1 to 2 scotch bonnets minced. Cook 1 minute, stirring constantly, until fragrant.'
     time_min: 1
   - text: 'Push the aromatics to one side. Add the 60 g / 4 tbsp tomato paste to the empty side and fry 3 minutes in the residual oil, stirring constantly, until it darkens from bright red to brick red and the oil takes on its color. Stir the aromatics back through.'
-    technique: 'bloom-spice'
+    technique: 'blooming-aromatics'
     time_min: 3
   - text: 'In a separate bowl, whisk the 300 g / 1¼ cups natural peanut butter with 250 ml / 1 cup of the chicken or beef stock until completely smooth, no lumps. This pre-thinning is critical; adding dry peanut butter to hot liquid causes the proteins to clump.'
     time_min: 2
   - text: 'Pour the thinned peanut mixture into the pot and stir to combine with the aromatic base. Add the remaining 750 ml / 3 cups stock, the 400 g / 1 can crushed whole tomatoes (broken up by hand), the 4 g / 1 Maggi cube crumbled in, the 3 g / 1 tsp fresh thyme, and the 2 bay leaves. Stir well; the mixture should be the consistency of thick gravy. Return the seared meat (and any juices on the plate) to the pot, nestling the pieces into the liquid so they are mostly submerged.'
     time_min: 3
   - text: 'Bring to a vigorous simmer, then drop to low and cover with the lid slightly ajar (1 cm gap to let steam escape). Simmer for 60 minutes (chicken) or 90 minutes (beef chuck), stirring gently every 20 minutes so the peanut base does not catch on the bottom. The stew should look glossy and red-brown by the end with a visible sheen of natural peanut oil pooling on the surface; this oil rendering out of the peanut paste is the structural signature of a properly cooked peanut stew.'
-    technique: 'braise'
+    technique: 'braising'
     time_min: 75
   - text: 'If using the 300 g / 1 medium sweet potato, add it for the final 25 to 30 minutes of the braise (drop it in when the meat has 25 minutes left to go). The sweet potato softens to fork-tender and absorbs the peanut sauce; it makes the stew more substantial as a one-pot meal.'
     time_min: 1
@@ -180,7 +180,7 @@ steps:
   - text: 'Serve in wide shallow bowls over steamed long-grain rice (the canonical Senegalese service), or with fufu or pounded yam (the Ghanaian service), garnished with the 30 g / ¼ cup chopped roasted peanuts and the 10 g / ¼ cup torn cilantro if using.'
     time_min: 2
 
-techniques: ['maillard-sear', 'dry-sweat', 'bloom-spice', 'braise']
+techniques: ['maillard-sear', 'sweating', 'blooming-aromatics', 'braising']
 
 modifications:
   - for: 'protein'

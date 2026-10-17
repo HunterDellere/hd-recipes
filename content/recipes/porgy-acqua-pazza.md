@@ -126,7 +126,7 @@ steps:
   - text: 'Grill the bread now, before the fish cooks. Toast the 160 g / 4 slices sourdough on a grill pan, under a broiler, or in a dry skillet until charred at the edges and crisp; rub one cut garlic clove (taken from the 18 g / 4 cloves below, or a spare) over each hot slice. Set the bread on the table. It needs to be ready the moment the fish is plated so it can mop the hot brodo.'
     time_min: 4
   - text: 'Bloom the aromatics. In a wide lidded sauté pan or shallow braiser over medium, warm the 45 g / 3 tbsp extra-virgin olive oil. Add the 18 g / 4 smashed garlic cloves and the 1 g / ½ tsp red pepper flakes; cook 60 to 90 seconds until the garlic is fragrant and just beginning to color at the edges, not browned (browned garlic turns acrid and dominates the broth). Add the 8 g / 2 anchovy fillets and mash them into the oil with a wooden spoon; they will sizzle, foam, and melt away in 30 to 45 seconds, dissolving into a savory, salty base. This is the glutamate anchor of the dish.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 2
   - text: 'Blister the tomatoes. Raise the heat to medium-high and add the 250 g / 1½ cups cherry tomatoes (half whole, half halved). Cook, stirring occasionally and pressing the halved ones with the spoon, for 3 to 5 minutes until the skins blister and split and the cut faces release their juice and begin to concentrate. The whole tomatoes hold pockets of bright juice; the halved ones break down into the broth. This concentration step builds the tomato glutamate that, with the anchovy, carries the umami of the dish.'
     time_min: 4
@@ -139,7 +139,7 @@ steps:
   - text: 'Plate and serve. Transfer the whole porgy to a warm shallow bowl or rimmed platter, or portion it at the pan by lifting the top fillet off the bones and then the bottom fillet off the skin. Ladle the brodo, tomatoes, and softened garlic generously around and over the fish. Serve immediately with the grilled garlic bread and the lemon wedges (the table half of the 30 g lemon); each diner spoons broth over the fish, mops the rest with bread, and squeezes lemon to taste. The brodo at the bottom of the bowl is the best part of the dish.'
     time_min: 2
 
-techniques: ['fond-deglaze']
+techniques: ['deglazing']
 equipment: ['wide-saute-pan', 'grill-pan']
 
 modifications:

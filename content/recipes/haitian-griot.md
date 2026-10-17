@@ -159,12 +159,12 @@ steps:
   - text: 'Drain and rest. Lift the braised pork cubes out of the Dutch oven with a slotted spoon onto a plate. Discard any remaining braising liquid (or reserve for a future dish; the epis-flavored broth makes a brilliant cooking liquid for rice or beans). Let the pork cubes air-dry 10 minutes; this is structural for the crisp fry to follow (wet meat does not crisp).'
     time_min: 10
   - text: 'Phase 4, fry the pork. Heat the 500 g neutral oil in a heavy deep skillet or wide Dutch oven (3 cm of oil) over medium-high heat to 180°C / 360°F (test with a small piece of pork; it should sizzle aggressively on contact). Fry the pork cubes in batches (do not crowd; crowding drops the oil temperature and produces steamed rather than fried pork) 5 to 7 minutes per batch until the surface is deeply crisp and mahogany-dark. Transfer to a paper-towel-lined plate; salt lightly. Repeat with the remaining pork; the fry should produce 3 batches.'
-    technique: 'deep-frying'
+    technique: 'deep-fry'
     time_min: 18
   - text: 'Phase 5, assemble and serve. Pile the crisp griot onto a serving platter; spoon a generous portion of 200 g pikliz over the top or arrange in a small bowl alongside. Serve with the 60 g lime wedges, fried sweet plantains, and rice and beans on the side. The diner eats the griot in chunks, pairing each bite with pikliz for the structural heat-and-acid contrast that defines the Haitian flavor balance.'
     time_min: 3
 
-techniques: ['braising', 'deep-frying']
+techniques: ['braising', 'deep-fry']
 equipment: ['blender', 'dutch-oven', 'thermometer']
 
 modifications:

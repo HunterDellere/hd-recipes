@@ -115,14 +115,13 @@ steps:
   - text: 'Poke 4 to 5 holes through the rice pyramid down to the crust layer with the handle of a wooden spoon. These vents are how steam exits the bottom and circulates through the upper grains; without them the crust steams instead of frying.'
     time_min: 1
   - text: 'Cover the pot with a tight-fitting lid wrapped in a clean kitchen towel (wrap the towel under the lid and fold the corners over the top so it cannot touch a burner). Cook on medium-high heat for 10 minutes until you hear steady sizzling and see steam puffing from the lid edge; the crust phase is beginning. Reduce to low heat (the lowest steady flame your stove holds) and cook undisturbed 45 to 55 minutes. Do not lift the lid; opening it releases the steam that finishes the upper grains.'
-    technique: 'tahdig-steam'
     time_min: 55
   - text: 'After 45 minutes, listen and smell. The pot should smell of toasted basmati and butter with a faint saffron note; the sizzling should be quiet and steady. If you smell burning sugars or hear no sizzle, pull immediately. The standard cook is 50 to 55 minutes total at low heat.'
     time_min: 5
   - text: 'Remove the pot from the heat and set on a wet folded kitchen towel on the counter for 5 minutes. The thermal shock helps release the crust from the bottom. Run a thin spatula around the edge to loosen any rice stuck to the pot wall. Then either: (a) invert a wide platter over the pot and flip the whole pot upside down in one decisive motion (the classic Persian table presentation, with the golden crust on top), or (b) spoon the loose rice off the top into a serving bowl, then lift the crust out in pieces with the spatula to plate separately. The crust should be deep golden to amber and audibly crunchy.'
     time_min: 5
 
-techniques: ['tahdig-steam', 'saffron-bloom', 'rice-parboil']
+techniques: []
 equipment: ['heavy-pot', 'tight-lid', 'fine-mesh-sieve', 'mortar']
 
 modifications:

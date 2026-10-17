@@ -191,10 +191,10 @@ steps:
     technique: 'maillard-sear'
     time_min: 3
   - text: 'Sweat the Trinity. Reduce heat to medium. Add the 120 g onion, 60 g celery, and 80 g bell pepper to the same skillet (still glossy with andouille and shrimp fat). Sweat 4 to 5 minutes until the onion turns translucent. Add the 15 g / 4 cloves minced garlic; stir 60 seconds.'
-    technique: 'sweating-aromatics'
+    technique: 'sweating'
     time_min: 6
   - text: 'Toast the tomato paste; add tomato and spices. Push the vegetables to the edges of the skillet. Drop the 15 g / 1 tbsp tomato paste into the cleared center. Toast 60 seconds, stirring the paste alone in the hot fat until it darkens from bright red to brick-brown. Stir into the vegetables. Add the 200 g halved cherry tomatoes, 3 g / 1½ tsp smoked paprika, and 1 g / ¼ tsp cayenne. Stir 2 to 3 minutes; the tomatoes will burst and release their juice.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 4
   - text: 'Add stock; reduce. Pour in the 200 ml shrimp or chicken stock; scrape up any fond from the pan bottom. Bring to a simmer and reduce 3 to 4 minutes until the sauce reduces to a glossy spoon-coating consistency. Return the reserved 150 g andouille and the seared 500 g shrimp (with any accumulated juices) to the pan. Toss to coat and warm the shrimp through, 60 to 90 seconds; the shrimp finish cooking from the sauce heat and should curl tight and read fully opaque.'
     time_min: 5
@@ -207,7 +207,7 @@ steps:
   - text: 'Plate and serve. Spoon 180 to 220 g of the cheesy grits into the center of each wide shallow bowl, spreading into a shallow well. Spoon the shrimp, andouille, and tomato pan sauce over the grits (3 to 5 shrimp per portion plus the sauce that pools into the grits well). Scatter the 30 g sliced green onions and 10 g chopped parsley over the top. Set a lemon wedge on the rim of each bowl. Serve immediately with hot sauce on the table; each diner squeezes lemon to taste at the bowl.'
     time_min: 2
 
-techniques: ['dry-brining', 'maillard-sear', 'sweating-aromatics', 'fond-deglaze', 'simmering', 'pan-emulsion']
+techniques: ['dry-brining', 'maillard-sear', 'sweating', 'deglazing', 'simmering', 'pan-emulsion']
 equipment: ['heavy-saucepan']
 
 modifications:

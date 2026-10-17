@@ -110,7 +110,7 @@ steps:
   - text: 'Mix to a shaggy mass, then develop the gluten. With the dough hook on low speed, mix until no dry flour remains, about 2 minutes, then raise to medium and knead 6 to 8 minutes. The dough is wet and sticky at first; resist adding flour. As the glutenin and gliadin proteins cross-link into gluten, the dough pulls away from the bowl sides and gathers around the hook. It will look smooth and feel tacky but no longer wet.'
     time_min: 9
   - text: 'Laminate in the butter. Add the 30 g / 2 tbsp softened butter a few pieces at a time with the mixer on medium-low. The dough will break apart and look greasy and broken; keep kneading. Over 5 to 7 minutes the fat disperses into thin films between the gluten sheets (shortening them just enough for tenderness without collapsing the structure) and the dough comes back together smooth, glossy, and elastic. Test for the windowpane: stretch a walnut-sized piece between your fingers; it should pull into a thin translucent membrane you can almost see through before it tears. If it tears thick and ragged, knead another 2 minutes and test again.'
-    technique: 'gluten-development'
+    technique: 'bulk-fermentation'
     time_min: 7
   - text: 'Bulk ferment. Round the dough into a tight ball, place it seam-side down in a lightly oiled bowl, and cover with a damp kitchen towel. Ferment at warm room temperature (24 to 27°C) until doubled, 60 to 90 minutes. The tangzhong-enriched dough ferments a touch slower than a lean dough because the sugar and fat compete for water and slow the yeast; judge by volume, not the clock. It is ready when a finger poked 1 cm into the dough leaves a dent that springs back slowly and only partway.'
     technique: 'bulk-fermentation'
@@ -118,17 +118,15 @@ steps:
   - text: 'Divide and pre-shape. Turn the dough onto a lightly floured counter and gently deflate it. Divide into 3 equal pieces (about 220 g each); a scale is worth using here so the rolls fill the tin evenly. Round each piece into a smooth ball, cover with the damp towel, and rest 15 minutes. This bench rest relaxes the gluten so the dough rolls out without snapping back.'
     time_min: 17
   - text: 'Shape the spirals. Working one piece at a time, roll a ball into an oval about 20 cm long with a rolling pin. Fold the two long sides into the center to make a narrow strip, then roll it up tightly from the short end into a snug spiral, like a small cinnamon roll. Pinch the seam closed. The tight roll is what gives shokupan its characteristic swirled, fine-grained crumb. Place the three spirals seam-side down and side by side in the buttered Pullman tin, leaving small gaps between them; they will merge as they proof.'
-    technique: 'loaf-shaping'
     time_min: 8
   - text: 'Final proof. Cover the tin with the damp towel (lid off for now) and proof at 24 to 27°C until the dough crowns to about 1 cm below the rim of the tin, 45 to 60 minutes. This is the critical window. Under-proofed dough tears and bakes dense; over-proofed dough collapses and the crumb goes coarse. The dough should look pillowy and feel airy and slow to spring back when pressed lightly. Twenty minutes before baking, set a rack in the lower-middle of the oven and preheat to 190°C / 375°F.'
     time_min: 55
   - text: 'Glaze and bake covered. Brush the dough tops lightly with the 10 g / 2 tsp whole milk for a soft matte crust (skip the egg wash that would brown it dark; shokupan crust stays pale). Slide the Pullman lid fully closed and bake 30 to 35 minutes. The closed lid forces the dough into square corners and a tight even crumb, and traps steam early for maximum oven spring. The loaf is done at an internal temperature of 90 to 93°C / 195 to 200°F; check by sliding the lid back and probing the center with an instant-read thermometer.'
-    technique: 'enriched-bread-bake'
     time_min: 35
   - text: 'Depan immediately and cool fully. Slide off the lid, turn the loaf out of the tin onto a wire rack at once; left in the hot tin it steams and the crust goes soft and damp. The crumb is still setting from gelatinized starch and coagulated egg protein; slicing hot tears it and lets steam escape, drying the loaf. Cool at least 1 hour, ideally 2, before slicing. Slice thick for shokupan-style milk toast, thin for sandwiches.'
     time_min: 60
 
-techniques: ['gluten-development', 'bulk-fermentation', 'loaf-shaping', 'enriched-bread-bake']
+techniques: ['bulk-fermentation']
 equipment: ['stand-mixer', 'pullman-loaf-pan', 'instant-read-thermometer', 'wire-rack-and-sheet-pan']
 
 modifications:

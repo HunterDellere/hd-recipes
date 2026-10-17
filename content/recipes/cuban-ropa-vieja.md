@@ -191,12 +191,12 @@ ingredients:
 
 steps:
   - text: 'Phase 1, simmer the brisket. Combine the 1500 g brisket, 200 g halved onion, 40 g halved garlic head, 3 bay leaves, 100 g carrot, 3 g peppercorns, 18 g salt, and 3000 ml water in a large heavy pot (8 L). Bring to a boil over high heat; skim the gray scum that rises in the first 10 minutes. Reduce to a bare simmer (small bubbles breaking the surface), partially cover, and cook 2.5 to 3 hours until the brisket shreds easily when pulled with two forks. Lift the brisket out; rest 15 minutes covered. Strain the broth; reserve 500 ml for the sauce. Discard the spent aromatics.'
-    technique: 'low-and-slow-simmer'
+    technique: 'simmering'
     time_min: 175
   - text: 'Shred the brisket. Once the brisket is cool enough to handle, pull it apart along the grain with two forks into rough strands about 4 to 5 cm long (the old clothes shreds that name the dish). Do not chop with a knife; the irregular ragged texture is structural to ropa vieja. Set aside.'
     time_min: 5
   - text: 'Phase 2, build the sofrito. Heat the 60 g olive oil in a large heavy skillet or wide Dutch oven (5 L) over medium heat. Add the 300 g diced onion, 200 g green bell pepper, and 150 g red bell pepper; sweat 10 to 12 minutes with the lid off, stirring every 2 minutes, until the vegetables are soft, slightly golden, and reduced in volume by half. The slow sweat is structural; rushing this step at high heat produces a raw-tasting sofrito.'
-    technique: 'sweating-aromatics'
+    technique: 'sweating'
     time_min: 12
   - text: 'Bloom the spices. Add the 20 g minced garlic; cook 60 seconds until fragrant (do not brown; brown garlic turns bitter). Add the 40 g tomato paste; cook 2 minutes, stirring constantly, until the paste darkens to a deep brick-red and the oil separates at the edges (the structural Maillard browning of tomato paste). Add the 4 g cumin, 3 g oregano, and 4 g smoked paprika; toast 30 seconds in the hot oil until fragrant.'
     technique: 'spice-tempering'
@@ -209,7 +209,7 @@ steps:
   - text: 'Serve. Spoon ropa vieja over hot white rice (about 200 g cooked rice per plate); scatter the 10 g chopped cilantro over the top. Serve with the 60 g lime wedges on the side; the lime squeeze at the table is the structural finishing acid. The canonical Cuban plate also includes maduros (fried sweet plantains) and a small bowl of black beans on the side; both are non-negotiable for the full Cuban dinner experience.'
     time_min: 5
 
-techniques: ['low-and-slow-simmer', 'sweating-aromatics', 'spice-tempering', 'deglazing']
+techniques: ['simmering', 'sweating', 'spice-tempering', 'deglazing']
 equipment: ['large-pot', 'dutch-oven', 'fine-mesh-sieve']
 
 modifications:

@@ -97,7 +97,7 @@ steps:
   - text: 'Warm the rice into a bowl. Mound the 180 g / 1 cup cooked short-grain rice in a deep individual bowl. If it is fridge-cold, sprinkle a few drops of water over it and warm it through (30 to 40 seconds in the microwave) so the hot tea will not cool instantly against cold rice.'
     time_min: 1
   - text: 'Brew the sencha gently. Bring the 250 ml / 1 cup water to a boil, then pull it off the heat and let it sit 60 to 90 seconds to drop to about 80°C / 175°F. Pour it over the 5 g / 2 tsp sencha (add the 2 g kombu square now if using, for a dashi-leaning broth) and steep just 60 seconds, no longer, then strain. Over-steeping or boiling water pulls bitter catechins and makes the broth harsh.'
-    technique: 'tea-steeping'
+    technique: 'steeping-tea'
     time_min: 3
   - text: 'Season the broth. Stir the 1 g / ¼ tsp fine sea salt into the strained hot tea until dissolved, then taste. The broth should be lightly savory, like a delicate seasoned tea, not aggressively salty; it is meant to season the rice, not to be drunk like soup on its own. Adjust salt by the pinch.'
     time_min: 1
@@ -105,7 +105,7 @@ steps:
     time_min: 1
   - text: 'Pour and eat at once. Pour the hot seasoned sencha around and over the topped rice until it pools about halfway up the mound, you want the rice partly submerged, not drowned. Eat immediately with chopsticks and a spoon, scooping rice and broth together; the heat fades fast and the dish is best piping hot, the nori half-dissolving into the tea.'
 
-techniques: ['tea-steeping']
+techniques: ['steeping-tea']
 equipment: ['kettle', 'fine-mesh-sieve']
 
 modifications:

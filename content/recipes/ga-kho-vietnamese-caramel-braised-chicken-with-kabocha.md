@@ -145,7 +145,7 @@ steps:
   - text: 'Marinate the chicken. Toss the 1000 g thighs with 30 g / 2 tbsp fish sauce, half the 40 g minced shallot, and the 3 g / 1 tsp cracked black pepper. Leave 20 to 30 minutes at room temperature while you prep everything else. Measure the 60 ml / ¼ cup warm water and set it right beside the stove now; you will need it fast.'
     time_min: 20
   - text: 'Make the caramel (nước màu). Put the 50 g / ¼ cup sugar in a dry heavy pot over medium heat. Let it melt and cook, swirling the pot (do not stir), until it turns a deep amber, the color of dark honey going toward mahogany, 4 to 6 minutes. Take it right to the edge where it smells faintly bitter; this bitterness is the whole point of kho. The instant it hits that deep amber, pour in the 60 ml warm water at arm''s length; it will sputter and seize violently, then settle. Swirl to dissolve into a smooth dark syrup and pull off heat.'
-    technique: 'caramelization'
+    technique: 'dry-caramel'
     time_min: 6
   - text: 'Lift the chicken from its marinade (reserve the marinade). Add the 15 g / 1 tbsp neutral oil to a second wide pot over medium-high, or push the caramel into one side. Sear the thighs skin-side-down 4 to 5 minutes until golden, then lift out. Lower the heat to medium, add the 25 g julienned ginger, 20 g minced garlic, and remaining shallot, and sweat 1 minute until fragrant.'
     technique: 'maillard-sear'
@@ -161,7 +161,7 @@ steps:
     time_min: 1
   - text: 'Spoon the chicken and kabocha over hot jasmine rice with plenty of the dark sauce, and scatter the 30 g sliced scallion across. Serve immediately, with extra lime wedges and sliced chili at the table. Eat it in small, intensely flavored bites against mouthfuls of plain rice.'
 
-techniques: ['caramelization', 'maillard-sear', 'braising']
+techniques: ['dry-caramel', 'maillard-sear', 'braising']
 equipment: ['dutch-oven', 'wide-skillet']
 
 modifications:

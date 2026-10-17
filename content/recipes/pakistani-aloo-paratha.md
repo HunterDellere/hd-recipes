@@ -153,7 +153,7 @@ steps:
   - text: 'Repeat for the remaining 5 parathas (steps 4 through 8). Stack the finished parathas under the towel; they stay warm and pliable. Serve immediately with the 200 g plain yogurt, 60 g mango or lime pickle, and a glass of masala chai. Each diner tears off bites with their fingers, scooping yogurt and pickle.'
     time_min: 15
 
-techniques: ['dough-resting']
+techniques: ['bulk-fermentation']
 equipment: ['cast-iron tava, skillet, or comal (heavy and flat is structural)', 'rolling pin', 'potato ricer (or fork for mashing)']
 
 modifications:

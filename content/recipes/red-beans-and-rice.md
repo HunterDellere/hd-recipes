@@ -156,7 +156,7 @@ steps:
   - text: 'Drain and prep the proteins. Drain the soaked 500 g beans in a colander; rinse briefly. Rinse the 400 g smoked ham hock under cold water to wash off any surface curing residue. Slice the 300 g andouille into 1 cm coins (reserve for Phase 5).'
     time_min: 5
   - text: 'Sweat the Trinity. Heat 15 g / 1 tbsp neutral oil in a heavy 6 to 7 quart Dutch oven over medium heat. Add the 250 g onion, 120 g celery, and 120 g bell pepper. Sweat 8 to 10 minutes, stirring occasionally, until the onion turns translucent and the vegetables soften. Add the 25 g / 8 cloves minced garlic; stir 60 seconds.'
-    technique: 'sweating-aromatics'
+    technique: 'sweating'
     time_min: 10
   - text: 'Add beans, hock, water, and aromatics. Add the drained 500 g soaked beans, the 400 g ham hock, 2000 ml / 8 cups water, 3 bay leaves, 3 g / 1½ tsp thyme, 3 g / 1½ tsp smoked paprika, 2 g / ½ tsp cayenne, 3 g / 1 tsp black pepper, and 8 g / 1½ tsp Worcestershire. Do NOT add salt yet; the hock will release significant salt over the simmer, and salting now risks over-seasoning.'
     time_min: 3
@@ -172,7 +172,7 @@ steps:
   - text: 'Serve over rice. Mound 120 g / ~½ cup cooked rice in the center of each wide soup bowl. Ladle 250 to 300 g of beans around (not over) the rice. Scatter the 40 g sliced green onions and 12 g chopped parsley over the surface. Each diner adds hot sauce from the table to their preference and stirs the rice into the beans at the bowl. Crusty French bread or cornbread on the side is the traditional accompaniment for mopping the last of the gravy.'
     time_min: 3
 
-techniques: ['sweating-aromatics', 'braising']
+techniques: ['sweating', 'braising']
 equipment: ['heavy-cast-iron-skillet']
 
 modifications:

@@ -130,13 +130,10 @@ ingredients:
 
 steps:
   - text: 'Stage 1, the fresh sour (evening, day one). In a medium bowl or jar, stir the 10 g rye starter, 50 g whole rye flour, and 40 g warm water into a stiff paste. It will be claggy and dense, that is correct for this stage. Cover loosely and hold warm, 26 to 28°C / 79 to 82°F, for about 4 hours. This stiff, cooler stage favors the acetic-acid bacteria that build the sharp aromatic top notes of the sour. A turned-off oven with the light on, or a warm spot near the stove, holds the temperature.'
-    technique: 'rye-sour'
     time_min: 240
   - text: 'Stage 2, the basic sour. Fold all of stage 1 together with 100 g whole rye flour and 100 g warm water. This stage is looser, 100% hydration, and runs warmer, 28 to 30°C / 82 to 86°F, for about 3 to 4 hours. The wetter, warmer environment shifts the balance toward yeast and lactic-acid bacteria, building the leavening power that the final dough will rely on. The mixture should become visibly bubbly and smell distinctly sour by the end.'
-    technique: 'rye-sour'
     time_min: 210
   - text: 'Stage 3, the full sour (overnight). Fold all of stage 2 together with 150 g whole rye flour and 150 g warm water to build the mature sour, about 440 g total. Cover and let it mature at cool room temperature, 18 to 22°C / 64 to 72°F, for 8 to 12 hours overnight. This long, cool final maturation rounds the acetic sharpness into a fuller, more balanced sourness and brings the pH down to roughly 4.2 to 4.3, the acidity that will keep rye amylase in check during the bake. By morning the sour should be bubbly, slightly domed, and smell sharply tangy with a faint alcohol edge.'
-    technique: 'rye-sour'
     time_min: 660
   - text: 'Toast the caraway and build the final dough (morning, day two). Toast the 8 g caraway seed in a dry skillet over medium heat, shaking, for 60 to 90 seconds until fragrant and a shade darker; tip out and crack coarse in a mortar, reserving a small pinch for the crust. Scrape 10 g of the mature sour back into your starter jar and feed it for next time. In a large bowl combine the remaining 430 g rye sour, 300 g whole rye flour, 200 g bread flour, 280 g warm water, 14 g fine sea salt, the toasted cracked caraway, and the 12 g barley malt syrup.'
     time_min: 5
@@ -158,7 +155,7 @@ steps:
   - text: 'Cool fully, then wait a day. Turn the loaf out of the tin onto a wire rack and cool completely, at least 3 to 4 hours. This is non-negotiable for rye and stricter than for wheat: the crumb is still setting from residual heat and enzyme activity for hours, and a rye loaf cut warm is gummy and pasty. Better still, wrap the fully cooled loaf in a clean kitchen towel and let it rest a full 12 to 24 hours before the first slice. The crumb tightens, the moisture redistributes evenly, and the sour flavor matures and deepens overnight; a one-day-old rye slices clean and tastes markedly better than a same-day one.'
     time_min: 240
 
-techniques: ['rye-sour', 'maillard-sear']
+techniques: ['maillard-sear']
 equipment: ['large mixing bowl', 'stiff wooden spoon or Danish dough whisk', '900 g / 2 lb loaf tin', 'flexible spatula', 'instant-read thermometer', 'cast-iron skillet or metal tray for steam', 'wire rack for cooling']
 
 modifications:

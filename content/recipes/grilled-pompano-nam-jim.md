@@ -138,24 +138,24 @@ steps:
   - text: 'Slack the sauce. Stir the 30 g / 2 tbsp fish sauce into the mortar to dissolve and loosen the paste, then add the 45 g / 3 tbsp fresh lime juice last and off any heat. Taste and balance: the sauce should hit salty, sour, and hot in that order with the palm sugar only rounding the edges, never reading sweet. Adjust with a few more drops of lime for acid or fish sauce for salt. Set aside at room temperature to marry, 15 to 30 minutes.'
     time_min: 3
   - text: 'Preheat the grill hard while you prep the fish: a medium-high charcoal bed, gas at full with the lid down 15 minutes, or a cast-iron grill pan smoking over medium-high. Scrape the grate clean and wipe it with an oiled paper towel held in tongs, twice, so it is slick; a clean oiled grate at full heat is the only reliable defense against torn skin.'
-    technique: 'live-fire-grilling'
+    technique: 'grilling'
     time_min: 4
   - text: 'Prep the fish. Verify the 450 g / 1 whole pompano is gutted, scaled, and gilled. Scrape the dark blood line from the inside of the spine cavity with a spoon (it carries the strongest fishy note), rinse, and pat bone-dry inside and out; surface water steams instead of chars and makes the skin stick. With a sharp knife cut three diagonal slashes per side, 1 cm deep to the bone, gill plate to tail. The slashes open the thick shoulder to the heat so it cooks in step with the thin belly and give the salt and oil a path into the flesh.'
     time_min: 4
   - text: 'Season and stuff. Rub the 15 g / 1 tbsp neutral oil over both sides and into the slashes, then rub the 5 g / 1¼ tsp kosher salt over the skin, into the slashes, and inside the cavity. Tuck the 20 g / 1 bruised lemongrass stalk and the 10 g / cilantro stems into the cavity; bruising ruptures the lemongrass cells so its citral perfumes the flesh from inside as the cavity steams. Let the salted fish stand 5 minutes while the grill finishes heating; the brief cure firms the surface and dries the skin further.'
     time_min: 5
   - text: 'Lay the fish on the screaming grate at a 45 degree angle to the bars and do not move it. Grill the first side 6 to 8 minutes over medium-high, lid down on a gas or kettle grill to drive heat through the shoulder. The skin must set and release on its own; if it grips when you test with a thin spatula, it is not ready, give it another 30 to 60 seconds. The slashes should char at their edges and the skin should blister and crisp.'
-    technique: 'live-fire-grilling'
+    technique: 'grilling'
     time_min: 8
   - text: 'Flip once. Slide a thin fish spatula fully under the fish, support the top with tongs, and turn it in one committed motion. Grill the second side 6 to 8 minutes, until the skin chars and the flesh in the deepest slash near the spine is opaque and lifts cleanly from the bone. A pompano at 450 to 500 g runs about 3 cm at the shoulder and needs roughly 14 to 16 minutes total; the even fat means a minute long is still moist, so err toward fully set at the spine rather than translucent.'
-    technique: 'live-fire-grilling'
+    technique: 'grilling'
     time_min: 8
   - text: 'Rest and plate. Transfer the fish to a warm platter and rest 2 minutes; the residual heat finishes the spine and the juices redistribute. Discard the spent lemongrass and cilantro stems from the cavity. Scatter the 8 g / ¼ cup torn cilantro leaves over the fish, fan the 100 g / ½ cucumber half-moons and the 30 g / lime wedges alongside, and set the herb plate by the fish.'
     time_min: 3
   - text: 'Serve with the nam jim on the side, not poured over: the dish is the contrast of hot charred fish against the cold raw sauce, and pooling the sauce on the fish steams away its sharpness. Each diner pulls flesh from the slashes, spoons a little of the 12 g / garlic-and-chili nam jim over each bite, and squeezes a lime wedge at the table. Eat with jasmine rice, which catches the sauce and the charred fat.'
     time_min: 1
 
-techniques: ['live-fire-grilling']
+techniques: ['grilling']
 equipment: ['charcoal-grill', 'granite-mortar', 'fish-spatula']
 
 modifications:

@@ -229,7 +229,7 @@ steps:
   - text: 'Rest before serving. Pull from heat, cover, and rest 20 minutes (or refrigerate overnight, the canonical approach in Puebla; the mole tastes meaningfully better at 24 hours than at 2 hours). Serve over poached or roasted chicken or turkey, with a fistful of toasted sesame seeds (the reserved 5 g) on top, alongside white rice, warm corn tortillas, and refried beans. A pinch of toasted sesame goes on each plate; rice and tortillas are non-negotiable.'
     time_min: 20
 
-techniques: ['dry-toasting', 'comal-charring', 'spice-tempering', 'salsa-fry']
+techniques: ['dry-toasting', 'comal-charring', 'spice-tempering', 'blooming-aromatics']
 equipment: ['blender', 'fine-mesh-sieve', 'dutch-oven', 'comal-or-skillet']
 
 modifications:

@@ -127,7 +127,7 @@ steps:
   - text: 'Dust the top of the cake generously with the 15 g caster sugar through a fine-mesh sieve. The canonical Victorian finish is caster sugar (not icing sugar / powdered sugar); the slight crystal texture is structural and reads correctly British. Slice with a serrated knife. Serve with a pot of Earl Grey or English breakfast tea.'
     time_min: 3
 
-techniques: ['creaming', 'folding']
+techniques: ['creaming-butter-sugar']
 equipment: ['stand-mixer-or-hand-mixer', 'two-20cm-sandwich-tins', 'parchment', 'wire-rack', 'fine-mesh-sieve']
 
 modifications:

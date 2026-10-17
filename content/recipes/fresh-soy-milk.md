@@ -75,7 +75,7 @@ steps:
   - text: 'Use or store. The fresh soy milk is now ready for use. For hot Cantonese breakfast: serve immediately in a small bowl with 10 to 15 g of sugar stirred in, plus a youtiao (fried dough cruller) for dipping. For tofu-making: use the hot milk directly while still at 70 to 80°C and add nigari or gypsum coagulant per a tofu recipe. For drinking cold: cool to room temperature (about 30 minutes uncovered), then refrigerate; serve cold or warmed gently. Refrigerated in a sealed container, fresh soy milk keeps 3 to 4 days; the flavor degrades after that point.'
     time_min: 2
 
-techniques: ['overnight-soak', 'gentle-reduction']
+techniques: ['reduction']
 equipment: ['large bowl for soaking', 'high-powered blender (Vitamix or similar)', 'heavy 4 to 5 quart pot (cast iron or thick stainless)', 'silicone spatula or wooden spoon', 'fine-mesh sieve', 'cheesecloth (2 layers) or clean unscented kitchen towel', 'large bowl or pot for catching the strained milk']
 
 modifications:

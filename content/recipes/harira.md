@@ -198,7 +198,7 @@ steps:
   - text: 'Heat the 30 g / 2 tbsp olive oil in a large heavy pot (8-quart Dutch oven or stockpot) over medium-high heat. Add the 400 g lamb cubes; brown deeply on 2 sides, 6 to 8 minutes total. Reduce heat to medium.'
     time_min: 8
   - text: 'Add the 250 g / 1 onion (diced) and 100 g / 2 stalks celery (diced); sweat 8 to 10 minutes until softened. Add the 16 g / 4 garlic cloves and 20 g grated ginger; cook 60 seconds. Add the 4 g / 2 tsp turmeric, 4 g / 2 tsp cumin, 3 g / 1½ tsp coriander, 1 g / ½ tsp cinnamon, 2 g / 1 tsp paprika, and 3 g / 1½ tsp black pepper. Stir 45 seconds to bloom.'
-    technique: 'spice-bloom'
+    technique: 'blooming-aromatics'
     time_min: 11
   - text: 'Add the 30 g / 2 tbsp tomato paste; cook 90 seconds, stirring, until darkened. Add the 400 g crushed tomatoes, the bloomed saffron liquid, 8 g / 2 tsp of the kosher salt, and the 2500 g / 10 cups water. Bring to a steady simmer; cover partially.'
     time_min: 5
@@ -209,14 +209,13 @@ steps:
   - text: 'Make the tedouira: in a small bowl, whisk the 50 g flour with the 200 g cold water until completely smooth (no lumps; the slurry should look like thin pancake batter). Whisking is structural; lumps in the slurry produce lumps in the soup.'
     time_min: 3
   - text: 'With the soup at a steady simmer, pour the slurry into the pot in a slow, steady stream while stirring constantly with a wooden spoon. The soup will thicken visibly within 90 seconds. Continue to stir for 3 to 5 minutes after the slurry is fully incorporated; the flour needs to cook through (taste; the slurry-cooked soup should not have any raw-flour note). The body should now be silky and coat the back of a spoon, not just water with chunks.'
-    technique: 'flour-slurry-thicken'
     time_min: 6
   - text: 'Off heat, stir in half of the chopped 30 g cilantro and the 20 g parsley. Cover and let stand 5 minutes for the herbs to perfume the soup.'
     time_min: 5
   - text: 'Ladle into deep bowls. Top each bowl with a generous pinch of the remaining cilantro and parsley. Serve immediately with the 200 g lemon wedges (each diner squeezes generously over their bowl; the lemon is structural, not a garnish). For the canonical iftar service, accompany with dates, chebakia (sesame-honey pastry), hard-boiled eggs, and warm khobz or pita.'
     time_min: 1
 
-techniques: ['spice-bloom', 'saffron-bloom', 'flour-slurry-thicken', 'long-braise']
+techniques: ['blooming-aromatics', 'braising']
 equipment: ['heavy-stockpot', 'mortar', 'fine-mesh-sieve']
 
 modifications:

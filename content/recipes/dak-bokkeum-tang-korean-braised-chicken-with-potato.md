@@ -165,7 +165,7 @@ steps:
   - text: 'Mix the yangnyeom. In a bowl whisk the 24 g / 3 tbsp gochugaru, 45 g / 3 tbsp gochujang, 15 g / 1 tbsp doenjang, 30 g / 2 tbsp light soy, 30 g minced garlic, 15 g grated ginger, 80 g grated Asian pear, and 10 g / 2½ tsp sugar into a loose red paste. This is the seasoning core of the dish.'
     time_min: 5
   - text: 'Heat the 15 g / 1 tbsp neutral oil in a wide heavy pot over medium. Add the yangnyeom and bloom it, stirring constantly, 2 minutes, until the gochugaru darkens slightly and the paste smells toasty rather than raw. Blooming the chili in oil deepens the color and rounds the raw edge off the gochujang and doenjang. Do not scorch it.'
-    technique: 'bloom-aromatics'
+    technique: 'blooming-aromatics'
     time_min: 2
   - text: 'Add the parboiled chicken and turn to coat in the paste, 1 minute. Pour in the 500 ml / 2 cups water or stock and scrape the base smooth. Add the 350 g potato, 120 g carrot, and 150 g onion wedges. Bring to a simmer, cover, and reduce to medium-low. Braise 25 minutes, until the potato is nearly tender and the chicken reads 75°C / 165°F at the bone.'
     technique: 'braising'
@@ -176,7 +176,7 @@ steps:
     time_min: 1
   - text: 'Spoon into shallow bowls, scatter the 5 g toasted sesame seeds and the perilla ribbons across (if using), and serve with steamed short-grain rice and whatever banchan you have. The sauce is meant to be spooned over the rice between bites of chicken.'
 
-techniques: ['bloom-aromatics', 'braising']
+techniques: ['blooming-aromatics', 'braising']
 equipment: ['dutch-oven']
 
 modifications:

@@ -93,10 +93,10 @@ steps:
   - text: 'Mix the final dough. Add the 290 g / 1¼ cups room-temperature water to the bowl of fermented biga and squeeze the biga through your fingers to break it into the water until the mixture is a loose, lumpy slurry; this disperses the mature preferment evenly so it does not stay as dense pockets. Add the 300 g / 2½ cups bread flour and the 3 g / 1 tsp instant yeast and mix with a stiff spatula or your hand until a wet, sticky, shaggy dough with no dry flour remains, about 1 minute. Do not add the 11 g / 2 tsp fine sea salt yet. Cover and rest 20 minutes (an autolyse): the flour fully hydrates and the gluten begins to align on its own, so less mechanical work is needed afterward.'
     time_min: 25
   - text: 'Add the salt and do the first fold. Sprinkle the 11 g / 2 tsp fine sea salt over the rested dough and add a splash (about 15 g / 1 tbsp) of the water still clinging to the bowl, or a teaspoon of fresh water, to help it dissolve. With a wet hand, reach under one side of the dough, stretch it up until it resists, and fold it over the top; rotate the bowl a quarter turn and repeat, four folds total, until the salt is worked in and the mass tightens slightly. The dough is 82% hydration and behaves like a thick batter that holds a fold for a second before relaxing; this is correct, do not add flour. Lightly oil a straight-sided tub or bowl with a little of the 10 g / 2 tsp extra-virgin olive oil, transfer the dough in, cover, and start a timer for 30 minutes.'
-    technique: 'stretch-and-fold'
+    technique: 'bulk-fermentation'
     time_min: 5
   - text: 'Stretch-and-fold, three more sets at 30-minute intervals. With a wet or lightly oiled hand, grab the underside of the dough at one edge, stretch it up and over to the opposite side, rotate the tub 90 degrees, and repeat until you have folded all four sides (this is one set). Cover and rest 30 minutes, then repeat. You will do four sets in total over the first 90 minutes after adding salt (the salt-incorporation fold counted as set one, so three more here). With each set the dough transforms: by the third it stops tearing and starts stretching into a sheet, going from slack and soupy to smooth, jiggly, and elastic, with visible bubbles forming under the surface. This folding is how you build gluten in a dough too wet to knead; each fold stacks and aligns the gluten sheets and traps the fermentation gas.'
-    technique: 'stretch-and-fold'
+    technique: 'bulk-fermentation'
     time_min: 5
   - text: 'Bulk ferment until billowy. After the final fold, cover the tub and let the dough rise undisturbed at room temperature (22 to 24 °C) until it has roughly doubled and is domed, jiggly, and full of bubbles you can see through the side of the tub, about 1 to 2 hours depending on room temperature. The dough is ready when a gentle poke springs back slowly and leaves a slight dent, and the surface is taut with gas. Underproofed dough bakes dense; overproofed dough collapses on the peel and bakes flat, so watch the volume and feel, not the clock.'
     time_min: 90
@@ -113,7 +113,7 @@ steps:
   - text: 'Cool completely before cutting. Transfer the loaves to a wire rack and cool at least 45 minutes, ideally 1 hour, before slicing. The crumb is still setting as it cools; the starch retrogrades and the interior finishes from gummy to tender. Cutting a hot ciabatta drags the knife through pasty, unset crumb and collapses the open holes you worked the whole method to build. Listen for the crust crackling and singing as it cools, the sign of a properly hydrated, well-baked loaf.'
     time_min: 60
 
-techniques: ['stretch-and-fold']
+techniques: ['bulk-fermentation']
 equipment: ['baking-steel', 'bench-knife', 'bowl-scraper', 'instant-read-thermometer']
 
 modifications:

@@ -120,7 +120,6 @@ steps:
   - text: 'Build the cure. Combine the 120 g / ½ cup cane vinegar, 30 g / 2 tbsp calamansi juice, 6 g / 1 tsp kosher salt, 30 g julienned ginger, and 8 g sliced chili in a wide non-reactive bowl (glass or stainless, never aluminum or reactive metals, the acid will leach metal flavors). Whisk to dissolve the salt.'
     time_min: 3
   - text: 'Submerge the fish. Add the diced fish to the cure; toss gently to ensure every piece is coated and submerged. The fish should be fully covered; if not, tilt the bowl or use a slightly smaller bowl. Refrigerate for 5 to 7 minutes only. Watch the color: the fish surface will turn from translucent-pink-to-translucent-white in 60 seconds and start to look opaque on the surface; by 5 minutes the exterior is fully opaque while the interior is still translucent. This is the kinilaw cure endpoint.'
-    technique: 'vinegar-cure'
     time_min: 7
   - text: 'Drain immediately. Pour the fish into a fine mesh strainer set over a bowl. Let the cure liquid drain off completely (about 60 seconds); do not press or squeeze the fish, you will damage the texture. Discard the drained cure liquid (or reserve, see notes on kilawin sauce). Return the drained fish to a clean bowl.'
     time_min: 2
@@ -128,7 +127,7 @@ steps:
     time_min: 2
   - text: 'Serve immediately in small bowls or on a flat plate with lime wedges on the side. Kinilaw is structurally an appetizer or a starter for a Filipino meal, traditionally served as pulutan (drinking food) with cold beer. Eat with a small spoon; the dish should be at fridge-cold temperature, the warmth of the room will dull the textural sharpness within 10 minutes.'
 
-techniques: ['vinegar-cure']
+techniques: []
 equipment: ['fine-mesh-sieve']
 
 modifications:

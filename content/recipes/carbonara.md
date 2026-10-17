@@ -80,7 +80,7 @@ ingredients:
 
 steps:
   - text: 'Bring the 1500 ml / 6 cups water to a vigorous boil in a wide pot with the 20 g / 1½ tbsp salt. Taste the water before adding the pasta: it should be aggressively saline like the sea (this is the only seasoning the pasta itself will get). While the water heats, start the guanciale: place the 120 g / 4 oz guanciale (cut into rectangular pieces) in a cold wide skillet (cast iron, stainless, or carbon steel; nonstick is acceptable but reads less Maillard-developed). Set over medium-low heat; render slowly 8 to 10 minutes, stirring occasionally, until the fat has rendered out and the meat pieces are deeply golden and crispy at the edges but not burnt. Cold-pan start is structural for guanciale; a hot pan burns the meat before the fat fully renders.'
-    technique: 'cold-pan-render'
+    technique: 'lardon-rendering'
     time_min: 10
   - text: 'Meanwhile, prepare the egg-and-cheese paste: in a wide heatproof bowl (large enough to hold all the cooked pasta), combine the 50 g / 1 whole egg, 54 g / 3 egg yolks, 80 g / ⅔ cup grated pecorino, and 3 g / 1½ tsp freshly cracked black pepper. Whisk vigorously with a fork for 60 seconds until the mixture forms a thick uniform paste, the consistency of soft mayonnaise (the pecorino absorbs into the eggs and the mixture turns pale yellow with visible black pepper flecks). The paste is the structural base of the emulsion; whisk until completely smooth and uniform.'
     time_min: 2
@@ -89,12 +89,12 @@ steps:
   - text: 'Just before the pasta is done, ladle out 200 ml / ¾ cup of the starchy pasta water into a heatproof measuring cup; reserve. Drain the pasta in a colander, then immediately transfer the hot pasta directly into the skillet with the guanciale and rendered fat (the pasta should still be visibly steaming hot when it enters the pan). Toss vigorously with tongs for 30 seconds over no heat (the pan is off the burner) to coat every strand with the rendered fat.'
     time_min: 2
   - text: 'The emulsion: transfer the hot pasta-and-guanciale mixture from the skillet directly into the bowl with the egg-and-cheese paste; add 60 ml / 4 tbsp of the reserved hot pasta water at the same time. Toss immediately and vigorously with tongs for 60 to 90 seconds; the eggs and cheese should turn into a glossy creamy sauce that coats every strand of pasta. The pasta and the rendered fat are still hot enough to gently cook the eggs into a sauce without scrambling them; the off-bowl technique (no direct heat from below) is the structural safety net that prevents the eggs from over-coagulating. If the sauce is too thick, add more pasta water 1 tbsp at a time; if too thin, toss longer (the eggs will continue to thicken as they warm).'
-    technique: 'off-heat-egg-emulsion'
+    technique: 'pan-emulsion'
     time_min: 2
   - text: 'Plate immediately into warmed pasta bowls; the sauce thickens as it cools, so the dish must be eaten hot and quickly. Top each serving with an additional pinch of freshly cracked black pepper and a small sprinkle of additional pecorino (about 5 g / 1 tsp per plate). The canonical carbonara is served with no garnish; no parsley, no extra cheese on the side, no cream pourer. The four ingredients on the plate are the entire dish.'
     time_min: 1
 
-techniques: ['cold-pan-render', 'off-heat-egg-emulsion', 'pan-emulsion']
+techniques: ['lardon-rendering', 'pan-emulsion']
 equipment: ['wide-skillet', 'wide-heatproof-bowl', 'tongs']
 
 modifications:

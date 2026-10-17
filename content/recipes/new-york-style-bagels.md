@@ -113,7 +113,7 @@ steps:
   - text: 'Day 1, mix the dough. In a stand-mixer bowl, dissolve the 18 g / 1 tbsp barley malt syrup and the 4 g / 1¼ tsp instant yeast into the 285 g / 1¼ cups minus 1 tbsp lukewarm water. Add the 500 g / 4 cups high-gluten flour and the 10 g / 1¾ tsp fine sea salt. Mix on low with the dough hook until no dry flour remains, about 2 minutes. The dough will look shaggy and tight; at 57% hydration it is meant to be much stiffer than a normal bread dough.'
     time_min: 5
   - text: 'Knead to full gluten development. Run the hook on low to medium-low for 8 to 10 minutes. A stiff high-gluten dough resists the machine and may climb the hook; stop and push it down as needed. The dough is ready when it pulls fully off the bowl into a smooth, dense, slightly tacky ball that passes a windowpane test (stretch a walnut-sized piece thin enough to see light through it without tearing). Because the dough is so stiff, this takes longer than a soft dough; if kneading by hand, plan on 12 to 15 minutes of hard work.'
-    technique: 'gluten-development'
+    technique: 'bulk-fermentation'
     time_min: 10
   - text: 'Bulk ferment, short. Round the dough into a ball, place it in a lightly oiled bowl, and cover with a damp towel. Let it ferment at room temperature for 60 to 90 minutes, until it has risen by roughly half (not doubled). The bulk is deliberately short because the long flavor development happens overnight in the cold; a full room-temperature proof now would overshoot and leave the rings slack and gassy in the kettle.'
     time_min: 75
@@ -128,17 +128,15 @@ steps:
   - text: 'Bring the kettle to a boil and malt it. In a wide pot or deep skillet, bring the 3000 ml / 12 cups water to a rolling boil. Stir in the 40 g / 2 tbsp barley malt syrup and the 8 g / 1½ tsp baking soda. The malt darkens and glosses the crust; the baking soda raises the water pH toward alkaline, which accelerates Maillard browning and gives the surface a faint, clean pretzel note. Keep the water at a steady hard simmer to a low boil.'
     time_min: 8
   - text: 'Boil the bagels, the step that makes the bagel. Lower 3 or 4 rings into the water without crowding them. Boil 30 seconds, flip with a slotted spoon or spider, and boil 30 seconds more. The boil gelatinizes the surface starch into a sealed, glossy skin: this pre-cooked layer is what locks in the dense chewy interior and gives the baked crust its shine and snap. A longer boil (45 to 60 seconds per side) yields a thicker, chewier skin; a shorter boil reads softer and more bread-like. Lift each ring out, let it drain for a second, and set it on a wire rack or parchment.'
-    technique: 'starch-gelatinization'
     time_min: 8
   - text: 'Wash and top. While the rings are still tacky from the boil, brush the tops with the 30 g / 1 egg white beaten with water. Immediately press the wet tops into a bowl of the 30 g / 3 tbsp sesame seeds, the 30 g / 3 tbsp poppy seeds, an everything blend, or the 6 g / 1 tsp coarse salt, or leave them plain. The boil-moistened surface and the egg wash both help the seeds adhere; topping after the boil rather than before keeps the seeds from washing off in the kettle.'
     time_min: 5
   - text: 'Bake on the stone. Transfer the boiled, topped bagels directly onto the preheated stone (slide them off a peel or the parchment). Bake at 245°C / 475°F for 18 to 22 minutes, rotating the tray or peel position halfway, until the crust is deep golden-brown and glossy and the bottoms are firm and browned. Pull a sample and tap it: the crust should sound hard and the interior should read about 96 to 99°C / 205 to 210°F on an instant-read. Underbaked bagels read pale and gummy; push the color further than you would a sandwich roll.'
-    technique: 'baking-stone'
     time_min: 20
   - text: 'Cool, then eat. Cool the bagels on a rack for at least 20 minutes before slicing. The crumb is still setting straight out of the oven; cutting too early drags the dense interior into a gummy paste against the knife. Eat the same day for the best crust, or freeze sliced bagels in a sealed bag and toast from frozen, which restores most of the fresh-baked crust snap.'
     time_min: 20
 
-techniques: ['gluten-development', 'starch-gelatinization', 'baking-stone']
+techniques: ['bulk-fermentation']
 equipment: ['stand-mixer', 'baking-stone', 'wide-pot', 'instant-read-thermometer', 'wire-rack-and-sheet-pan']
 
 modifications:

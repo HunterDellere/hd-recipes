@@ -177,10 +177,10 @@ steps:
   - text: 'Salt the 1200 g cubed beef with the 8 g / 1½ tsp kosher salt and rest at room temperature 30 minutes while you build the paste. The salt draws surface moisture and starts to break down the muscle fibers, giving the long braise a head start on tenderization.'
     time_min: 30
   - text: 'Drain the soaked 30 g chilies, reserving 60 ml / ¼ cup of the soaking liquid. Pound or blend the chilies, 200 g shallot, 50 g garlic, 40 g ginger, 40 g galangal, 30 g candlenut, 4 g / 1½ tsp turmeric, 30 g sliced lemongrass heart, and 5 g toasted terasi to a smooth paste, working in the chili soaking liquid as needed to keep the blender moving. The target texture is wet, smooth, slightly grainy from the candlenut and lemongrass fiber, brick-orange in color. About 4 to 5 minutes of pulse-and-scrape work in a food processor; longer if pounding by hand.'
-    technique: 'spice-paste-pounding'
+    technique: 'mortar-pounding'
     time_min: 12
   - text: 'Heat 30 g / 2 tbsp neutral oil in the wide heavy pan over medium heat. Add the spice paste and fry, stirring constantly, until the raw chili-shallot smell shifts to a deeper, jammy, almost caramelized aroma and the paste darkens from bright brick-orange to deep brick-red with visible oil separating at the edges, 12 to 15 minutes. This is the bumbu bloom, the single most flavor-determining step. Stop too early and the paste tastes raw and harsh in the finished dish; the long fry deepens the Maillard products in the shallot-garlic-chili paste and renders out the candlenut oil.'
-    technique: 'spice-paste-frying'
+    technique: 'blooming-aromatics'
     time_min: 14
   - text: 'Add the 40 g bruised lemongrass, 6 bruised kaffir lime leaves, 1 cinnamon stick, 2 star anise, and 4 cloves to the paste. Fry 60 seconds to bloom the aromatics in the hot oil.'
     technique: 'blooming-aromatics'
@@ -192,12 +192,12 @@ steps:
   - text: 'Uncover completely and add the 60 g toasted-and-ground kerisik (desiccated coconut). Stir thoroughly. Continue simmering uncovered, stirring every 10 minutes, for another 60 to 75 minutes. The liquid will continue to reduce; the sauce shifts from cream-orange to deep amber to brown. Around the 60-minute mark the texture will start to look glazed and the bottom of the pan will show streaks of bright orange oil separating from the brown solids. This is the coconut oil beginning to split out; the dish is now transitioning from braise to fry.'
     time_min: 75
   - text: 'The final stage. Stir constantly now (you cannot leave the pan), scraping the bottom on every pass. The remaining liquid evaporates in 15 to 25 minutes; the spice paste deepens from brown to nearly black; the released coconut oil becomes the cooking medium and you can hear the dish go from a wet simmer to a quiet sizzle as the last water boils off. Pull when the meat is glossy, deeply lacquered, almost black-brown, and the paste clings tightly with very little free oil pooling. Taste the 8 g / 1½ tsp additional salt in now if needed; the seasoning at this concentration reads dramatically differently than it did during the braise.'
-    technique: 'dry-cook-reduction'
+    technique: 'reduction'
     time_min: 25
   - text: 'Pull off heat. Fish out the lemongrass stalks, cinnamon stick, star anise, kaffir lime leaves, and cloves; they have given their flavor and the texture is unpleasant in the finished plate. Rest 10 minutes off heat; the spice paste continues to set on the meat and the dish reaches its final lacquered texture. Serve over steamed jasmine rice with sliced cucumber and tomato (timun and tomat, the Padang cooling foil) and a side of sambal.'
     time_min: 10
 
-techniques: ['spice-paste-pounding', 'spice-paste-frying', 'blooming-aromatics', 'dry-cook-reduction']
+techniques: ['mortar-pounding', 'blooming-aromatics', 'reduction']
 equipment: ['food-processor', 'wide-skillet', 'dutch-oven']
 
 modifications:

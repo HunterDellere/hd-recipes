@@ -175,7 +175,7 @@ ingredients:
 
 steps:
   - text: 'Phase 1, simmer the pork. Combine the 1500 g pork shoulder chunks, 200 g halved onion, 40 g halved garlic head, 2 bay leaves, 2 g dried oregano, 18 g kosher salt, and 3500 ml water in a large heavy pot (8 L works well). Bring to a boil over high heat, skim off the gray scum that rises in the first 10 minutes (this is structural for a clean broth). Reduce to a bare simmer (small bubbles breaking the surface, not a rolling boil; boiling produces a cloudy broth), partially cover, and cook 90 to 120 minutes until the pork shreds easily with two forks. Strain the broth; reserve 2.5 L of broth. Pull the pork from the bones if bone-in; discard the spent aromatics. Shred the pork into bite-size pieces; reserve.'
-    technique: 'low-and-slow-simmer'
+    technique: 'simmering'
     time_min: 120
   - text: 'Phase 2, make the chili broth. While the pork simmers, toast the 40 g guajillo and 20 g ancho chilies (stems and seeds removed) in a dry skillet over medium-low heat 30 seconds per side until fragrant; transfer to a bowl. Toast the 3 g árbol chilies separately for 20 seconds; add to the bowl. Cover all chilies with 500 ml of the hot pork broth (or boiling water); soak 20 minutes until pliable. Toast the 2 g cumin seeds in the same skillet 30 seconds until fragrant.'
     technique: 'dry-toasting'
@@ -183,14 +183,14 @@ steps:
   - text: 'Blend the chili paste. Transfer the soaked chilies plus 250 g of their soaking liquid to a blender; add the 80 g chopped onion, 12 g garlic cloves, and 2 g toasted cumin. Blend 2 minutes until completely smooth. Pass through a fine-mesh sieve into a bowl, pressing with a spatula (this removes the chili skins and seeds; the strain is structural for a smooth pozole broth). The yield is roughly 600 g chili paste.'
     time_min: 5
   - text: 'Fry the chili paste. Heat the 30 g neutral oil in the same large pot over medium-high heat until shimmering. Pour in the 600 g chili paste all at once; it will sizzle aggressively. Reduce to medium; fry 6 to 8 minutes, stirring constantly with a wooden spoon, until the paste darkens to a deep brick-red and the oil separates at the edges. The salsa-fry is structural; it develops Maillard depth and concentrates the chili flavor.'
-    technique: 'salsa-fry'
+    technique: 'blooming-aromatics'
     time_min: 8
   - text: 'Combine. Add the 2.5 L reserved pork broth to the fried chili paste; whisk to combine. Add the shredded pork and the 750 g drained hominy. Bring to a bare simmer, reduce heat to low, and cook uncovered 45 to 60 minutes for the flavors to integrate and the hominy to absorb the broth flavor. Taste and adjust salt; pozole rojo should read deeply pork-and-chili-flavored with a bright tomato-and-fruit chili note at the front and a long warm finish. If flat, more salt (start with 3 g increments); if too thick, more water; if too thin, simmer another 20 minutes uncovered.'
     time_min: 60
   - text: 'Stage the garnish. Set out small bowls with the 200 g shredded cabbage, 100 g sliced radish, 60 g diced raw onion, 90 g lime wedges, 4 g dried oregano (the garnish portion), 60 g crumbled chicharrón, and the 8 tostada shells. Each diner builds the bowl: ladle pozole into a wide soup bowl, top with a small handful of cabbage, sliced radish, raw onion, a generous pinch of oregano, a squeeze of lime, a sprinkle of chicharrón. Eat with a tostada on the side, broken and dunked. The build-your-own assembly is the structural point of the dish; do not garnish in the kitchen.'
     time_min: 5
 
-techniques: ['low-and-slow-simmer', 'dry-toasting', 'salsa-fry']
+techniques: ['simmering', 'dry-toasting', 'blooming-aromatics']
 equipment: ['large-pot', 'blender', 'fine-mesh-sieve']
 
 modifications:

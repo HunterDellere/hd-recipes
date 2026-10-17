@@ -58,7 +58,6 @@ ingredients:
 
 steps:
   - text: 'Day 1, build the ferment. In a 2-liter glass jar or wide ceramic bowl, whisk the 400 g / 3¼ cups teff flour with the 600 ml / 2½ cups cool filtered water until completely smooth, no dry lumps. The batter should be the consistency of heavy cream. Cover the jar loosely with a clean kitchen towel held in place with a rubber band (not a lid, the ferment needs to release CO2). Place in a warm spot in the kitchen, ideally 22 to 26 °C. Leave undisturbed.'
-    technique: 'wild-ferment'
     time_min: 5
   - text: 'Day 2, check the ferment. After 24 hours, lift the towel. The batter should show visible bubbles at the surface, a faintly sour aroma, and a thin layer of clear-to-yellowish liquid floating on top (this is the "absit", the natural separated whey of the ferment). Do not stir or pour it off; it is part of the structure. The surface should look slightly puffy and the smell should be tangy-malty, not unpleasant. If there is no visible activity at all after 24 hours, the kitchen is too cold; move the jar to a warmer spot (on top of the refrigerator, near a gas-pilot oven, in a turned-off oven with the light on).'
     time_min: 5
@@ -69,14 +68,13 @@ steps:
   - text: 'Pour 90 to 110 g / about ⅓ cup of the salted batter into the center of the hot pan in a slow steady stream, then immediately tilt and rotate the pan in a quick spiral motion to spread the batter into a thin even circle reaching the edges of the pan. The spread happens fast (5 to 8 seconds) before the batter sets; if you wait, you cannot move it. Set the pan flat on the heat and cover with a fitted lid.'
     time_min: 1
   - text: 'Cook covered for 90 to 120 seconds. The injera cooks only on the bottom; the top sets from steam. As it cooks, watch for the characteristic eyes (small bubbles) forming across the surface from the CO2 in the fermented batter. When the top surface has fully set from glossy-wet to matte-dry and the edges begin to lift slightly from the pan, lift the lid. Do not flip; injera cooks only on one side. The bottom should be smooth and pale-tan, the top should be bubbly-eyed and dry to the touch.'
-    technique: 'one-side-cook'
     time_min: 2
   - text: 'Slide the injera onto a clean dry kitchen towel or onto a wire rack. Do not stack them while hot; they will steam-stick together. Let each one cool for 2 to 3 minutes before stacking on a serving platter or transferring to a beeswax wrap for storage. Continue cooking the rest of the batter, adjusting heat as needed; injera 3 through 8 will cook more uniformly than the first 2 as the pan settles into rhythm.'
     time_min: 25
   - text: 'Serve as the platter base for any combination of wats: doro wat, misir wat, gomen (greens), kik alicha (yellow split pea), shiro (chickpea flour). Tear pieces from the platter injera to scoop up the stews. Additional folded injera goes alongside as extra scooping bread. Eaten with the right hand, no utensils.'
     time_min: 2
 
-techniques: ['wild-ferment', 'one-side-cook']
+techniques: []
 
 modifications:
   - for: 'speed'

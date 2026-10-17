@@ -165,10 +165,10 @@ ingredients:
 
 steps:
   - text: 'Pound or blend the 80 g shallot, 25 g garlic, 30 g chili, and 3 g toasted terasi to a coarse wet paste, about 2 minutes in a food processor or 4 minutes in a mortar. The texture should be slightly chunky, not smooth puree; you want some shallot bite remaining in the finished dish.'
-    technique: 'spice-paste-pounding'
+    technique: 'mortar-pounding'
     time_min: 4
   - text: 'Heat the 30 g / 2 tbsp neutral oil in a wide wok or 30 cm / 12 inch skillet over medium-high heat until shimmering. Add the bumbu paste; it will sputter. Fry, stirring constantly, until the raw shallot-chili smell shifts to a deeper aromatic and the paste darkens from bright orange-pink to deep brick-orange, about 3 minutes. Oil will visibly separate around the edges of the paste.'
-    technique: 'spice-paste-frying'
+    technique: 'blooming-aromatics'
     time_min: 3
   - text: 'If using shrimp: push the bumbu to one side of the pan, add the 200 g shrimp to the bare side, sear 60 seconds per side until just turning opaque. Toss with the bumbu and remove to a plate; the shrimp finishes cooking in the residual heat. If using chicken instead, dice fine and cook 3 minutes until opaque, then remove.'
     time_min: 3
@@ -177,7 +177,6 @@ steps:
   - text: 'Add the 700 g cold day-old rice, breaking up any remaining clumps with your hands or a wide spatula as you add it. Toss aggressively with two spatulas or wok tools for 90 seconds to coat every grain in the bumbu-egg mixture and to drive off surface moisture. The rice should look pale-orange and individually grained at this point.'
     time_min: 2
   - text: 'Drizzle the 45 g / 3 tbsp kecap manis and the 15 g / 1 tbsp light soy sauce directly over the rice. Toss for 2 to 3 minutes, scraping the bottom of the pan continuously; the kecap manis caramelizes onto the grains and the rice darkens to a deep mahogany. This is the structural color and flavor moment of the dish, the high sugar content of the kecap manis browns aggressively on direct heat. Add the 80 g shredded cabbage (if using) in the last 60 seconds to wilt just slightly.'
-    technique: 'wok-stir-fry'
     time_min: 3
   - text: 'Return the cooked shrimp (or chicken) to the pan. Add the 40 g sliced scallion and the 2 g / ½ tsp kosher salt. Toss 30 seconds to combine and warm through. Taste, the dish should read sweet-savory-front (kecap manis), with the chili heat building after, scallion-and-shallot in the background. If flat, add 5 g / 1 tsp more kecap manis; if too sweet, 5 g / 1 tsp more light soy or fish sauce.'
     time_min: 1
@@ -186,7 +185,7 @@ steps:
   - text: 'Plate. Mound a portion of nasi goreng on each plate, top with one fried egg (yolk facing up, ready to be broken into the rice), scatter a heavy pinch of fried shallots over the egg, arrange a few cucumber and tomato slices alongside, and place a lime wedge and a small mound of sambal on the side. Serve immediately. The diner breaks the egg yolk into the rice, squeezes the lime over, and adds sambal to taste.'
     time_min: 2
 
-techniques: ['spice-paste-pounding', 'spice-paste-frying', 'wok-stir-fry']
+techniques: ['mortar-pounding', 'blooming-aromatics']
 equipment: ['wok', 'food-processor']
 
 modifications:

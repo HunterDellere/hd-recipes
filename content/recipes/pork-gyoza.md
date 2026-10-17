@@ -170,13 +170,12 @@ steps:
   - text: 'Mix the filling. In a large bowl, combine the 400 g ground pork, 15 g grated ginger, 12 g grated garlic, 40 g sliced scallion, 15 g soy sauce, 10 g sake, 10 g sesame oil, 5 g sugar, 4 g kosher salt, 1 g white pepper, and 8 g cornstarch. Mix with chopsticks or a fork in one direction (always one direction; this aligns the meat protein strands) for 60 to 90 seconds until the mixture goes from loose ground meat to a sticky cohesive paste. Add the squeezed cabbage; fold in until evenly distributed. Do NOT over-mix at this stage; just integrate.'
     time_min: 8
   - text: 'Pleat the gyoza. Set up a wrap station: the wrapper package (kept covered with a damp towel), the filling bowl with a small spoon, a small bowl of water for sealing, a parchment-lined sheet pan for the finished gyoza, and a damp towel to cover the sheet pan as you work. Take one wrapper. Hold it flat in your non-dominant palm. Place 15 g / about 1 tablespoon of filling in the center (do not overfill; the wrapper will tear). Dip your finger in water; trace a thin water line along half the wrapper''s edge. Fold the wrapper in half over the filling without sealing yet. Starting from one end, make 4 to 6 pleats along the front (top) edge of the wrapper, pressing each pleat against the flat back edge to seal. The pleats should curve the gyoza into a crescent with the flat bottom toward you. Press the pleated seam firmly to seal. Set on the parchment, flat-side down, with the crescent standing up like a small tent. Cover with the damp towel. Repeat with all 40 wrappers; the first 5 will look rough, the rest will improve.'
-    technique: 'dumpling-wrap'
     time_min: 35
   - text: 'Pan-fry, batch 1. Heat 30 g / 2 tbsp neutral oil in a 30 cm nonstick or well-seasoned cast-iron skillet over medium-high heat until shimmering. Arrange 12 to 15 gyoza flat-side down in a spiral or rows in the pan (touching is fine; they will not stick together). Cook undisturbed 2 to 3 minutes until the flat bottoms are a deep golden-brown; lift one with a spatula to check.'
     technique: 'shallow-frying'
     time_min: 3
   - text: 'Steam phase. Pour 200 g / ¾ cup water into the hot pan in one go; it will steam aggressively and create a small geyser. Immediately cover with a tight-fitting lid. Reduce heat to medium. Steam 5 to 6 minutes; the water cooks off, the steam cooks the pork filling through, and the wrapper hydrates and turns translucent on top. Check by lifting the lid at minute 5; if water remains in the pan, replace the lid for 60 more seconds.'
-    technique: 'steaming'
+    technique: 'vapor-steaming'
     time_min: 6
   - text: 'Crisp the bottom. Once the water has fully evaporated, the gyoza will hit the dry hot pan again and the bottoms will re-crisp. Continue uncovered 60 to 90 seconds; the bottoms should be deep golden-brown and audibly crispy when tapped. Pull from the heat.'
     time_min: 2
@@ -187,7 +186,7 @@ steps:
   - text: 'Mix the dipping sauce and serve. Whisk together 60 g soy sauce, 30 g rice vinegar, 8 g rayu, and 3 g sesame oil in a small bowl. Pour into 4 small dipping dishes (one per diner) or set out as a communal dip. The canonical Japanese ratio is 2 parts soy to 1 part vinegar plus chili oil to taste; many diners prefer more vinegar (1:1) to cut the rich pork.'
     time_min: 2
 
-techniques: ['dumpling-wrap', 'shallow-frying', 'steaming']
+techniques: ['shallow-frying', 'vapor-steaming']
 equipment: ['heavy-cast-iron-skillet', 'tight-fitting-lid']
 
 modifications:

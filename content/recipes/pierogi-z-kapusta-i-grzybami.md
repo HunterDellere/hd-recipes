@@ -170,10 +170,10 @@ steps:
   - text: 'Soak the porcini. Place the 25 g / ¾ oz dried porcini in a heatproof bowl and pour over the 400 ml / 1⅔ cups warm water (not boiling, the proteins are heat-sensitive). Let soak 20 to 25 minutes until the mushrooms are pliable. Lift the porcini out with a slotted spoon (do not pour, the grit settles at the bottom), squeeze gently over the bowl, and chop finely (3 to 4 mm pieces). Strain the soaking liquid through a coffee filter or paper-towel-lined sieve to remove the silt; reserve.'
     time_min: 25
   - text: 'Cook the filling. In a heavy 3-quart saucepan, melt the 40 g / 3 tbsp butter over medium heat. Add the 200 g / 1 large diced yellow onion and cook 8 to 10 minutes, stirring every 2 minutes, until deep golden brown. The onion is the structural base for the filling; do not rush this caramelization.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 10
   - text: 'Add the 500 g / 2½ cups drained chopped sauerkraut, the chopped porcini, the 3 g / 1 tsp lightly crushed caraway, the 1 bay leaf, the 2 g / ¾ tsp black pepper, and 200 ml / ¾ cup of the reserved porcini soaking liquid (save the rest for another use or discard). Stir to combine. Simmer uncovered over medium-low heat for 30 to 35 minutes, stirring every 5 minutes, until the kraut has softened, the liquid has fully reduced, and the filling is dry enough to hold its shape when pressed with a spoon. The dry finish is structural; wet filling tears pierogi during folding.'
-    technique: 'simmer'
+    technique: 'simmering'
     time_min: 35
   - text: 'Pull from heat. Discard the bay leaf. Taste; the filling should read tangy from the kraut, deeply umami from the porcini, slightly aromatic from the caraway. Add the 2 g / ½ tsp kosher salt if it reads flat. Spread on a wide plate or sheet pan to cool to room temperature, 30 to 45 minutes (or refrigerate to speed; chill at least 20 minutes). Hot filling tears the dough.'
     time_min: 35
@@ -182,17 +182,17 @@ steps:
   - text: 'Place 1 heaping teaspoon (about 15 g) of cooled filling in the center of each round. Lift one edge over the filling to meet the other, forming a half-moon. Pinch the edges together firmly with your fingers, starting from one corner and working to the other, pressing out any trapped air as you go. The seal must be complete; any gap leaks filling during boiling. Optionally crimp the sealed edge with a fork or with a decorative pleat for visual interest. Place the formed pierogi on a flour-dusted sheet pan; do not let them touch (they stick). Repeat with the second half of the dough.'
     time_min: 25
   - text: 'Bring the 4000 ml / 4 liters water to a hard rolling boil in a large pot with the 30 g / 2 tbsp kosher salt. Drop the pierogi in batches of 10 to 12 (do not crowd). They sink at first, then rise to the surface within 60 to 90 seconds. Once they have all risen, simmer for another 2 to 3 minutes; the dough sets fully and the filling heats through. Lift out with a slotted spoon and transfer to a colander to drain briefly, then to a plate lightly oiled to prevent sticking. Repeat in batches until all pierogi are boiled.'
-    technique: 'poach'
+    technique: 'poaching'
     time_min: 15
   - text: 'For the butter-onion finish: in a wide heavy skillet over medium heat, melt the 80 g / 5½ tbsp butter. Add the 200 g / 1 large diced yellow onion (the finish onion) and cook 10 to 12 minutes, stirring every 2 minutes, until deep golden brown and soft. The slow caramelization is structural; rushed onions read bitter and pale.'
     time_min: 12
   - text: 'Add the boiled pierogi to the buttered onion skillet in a single layer (cook in two batches if needed). Pan-fry over medium heat for 2 to 3 minutes per side, until both sides are crisp and golden brown and the buttered onion clings to the dumpling skin. Push gently with a spatula; the pierogi should not stick if the butter is hot enough.'
-    technique: 'pan-fry'
+    technique: 'shallow-frying'
     time_min: 6
   - text: 'Serve immediately on warm plates, spooning the buttered onion from the pan over the pierogi. Dollop generously with the 200 g / ¾ cup sour cream and scatter with the 10 g / ¼ cup torn fresh dill if using. Traditional service is family-style: a large platter of pierogi with a small bowl of sour cream on the table for diners to dollop their own.'
     time_min: 3
 
-techniques: ['dry-sweat', 'simmer', 'poach', 'pan-fry']
+techniques: ['sweating', 'simmering', 'poaching', 'shallow-frying']
 
 modifications:
   - for: 'filling'

@@ -198,14 +198,14 @@ steps:
   - text: 'Set up the crust and dredge the fish. In a shallow bowl combine the 60 g / 1 cup panko, the 40 g / ½ cup microplaned parmigiano, and the 1 g / ½ tsp black pepper; rub the cheese into the crumbs with your fingers so it distributes evenly. Put the 30 g / ¼ cup flour on a small plate and the beaten egg in a second shallow bowl. Season the four 400 g fillets on both sides with the 3 g / ¾ tsp kosher salt. Now crumb one side only, the smoother skinned top face of each fillet: press the top face into the flour and shake off the excess, brush that same floured face with beaten egg, then press it firmly into the panko-parmesan so a dense even layer sticks. Leave the underside completely bare. Set the dredged fillets crust-side-up on a plate.'
     time_min: 6
   - text: 'Fry the fish crust-side-down. Heat the 30 g / 2 tbsp neutral oil in a wide nonstick or well-seasoned skillet over medium-high until it shimmers. Lay the fillets into the pan crust-side-down and press each gently flat with a fish spatula for 5 seconds to seat the crust against the oil. Fry undisturbed for 2½ to 3 minutes: the crust should turn deep gold and you should see the flesh at the edges turning opaque and creeping up from the bottom. When the crust is set and browned, add the 20 g / 1½ tbsp butter to the pan around the fillets and let it foam and brown; tilt and spoon the foaming butter around (not over) the crust for 30 seconds. The flesh should now be opaque nearly to the top.'
-    technique: 'pan-fry'
+    technique: 'shallow-frying'
     time_min: 4
   - text: 'Set the top and lift out, never flip. The fish is thin, so the crust-side-down fry has already cooked it most of the way through. If the very top surface still looks translucent, either flip the fillets bare-side-down for a final 20 to 30 seconds (only if your crust is fully set and you have a confident spatula), or simply cover the pan off the direct heat for 30 seconds and let residual steam finish the top. The goal is opaque, just-set flesh and an intact crust. Lift each fillet out crust-side-up onto a warmed plate. A flounder fillet pulled the instant it turns opaque is silky; 30 seconds past that it goes chalky, so err early.'
     time_min: 1
   - text: 'Plate. Set two crusted fillets on each warmed plate, crust facing up. Pile the seared oyster-and-shimeji mushrooms over or beside the fish so their browned-butter juices run into the crust. Lay a couple of butter-braised cabbage wedges alongside and spoon a little of their glaze over them. Scatter the 5 g / 2 tbsp chopped parsley across the plate. Serve with the lemon wedges; a firm squeeze of lemon over the crust and fish at the table is the finishing acid that lifts the whole plate, the parmesan and mushrooms carry the salt and umami, and the lemon is what makes the mild fish sing.'
     time_min: 2
 
-techniques: ['maillard-sear', 'pan-fry']
+techniques: ['maillard-sear', 'shallow-frying']
 equipment: ['fish-spatula', 'microplane', 'wide-skillet']
 
 modifications:

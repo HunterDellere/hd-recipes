@@ -187,7 +187,6 @@ ingredients:
 
 steps:
   - text: 'Make the panade. In a wide mixing bowl, combine the 30 g / ½ cup panko and the 60 g / ¼ cup whole milk. Stir with a fork and let sit 5 to 7 minutes. The panko absorbs the milk completely and turns into a pale paste with no free liquid visible in the bowl. This is the panade, the structural binder that keeps the meatball tender. A meatball without a panade reads dense and bouncy; a meatball with a panade reads tender and moist. The panko-and-milk version is the upgrade over the bread-crumb-and-water version that defines lesser meatballs.'
-    technique: 'panade'
     time_min: 7
   - text: 'Prep the aromatics while the panade sits. Grate the 50 g / ½ onion on a box grater into a small bowl (the resulting mush will hold its liquid; that''s correct). Microplane the 12 g / 3 garlic cloves and the 30 g / ⅓ cup parmigiano. Chop the 15 g / ¼ cup parsley. Toast (or skip if using fresh pollen) and grind the 2 g / 1 tsp fennel seed in a mortar. Crack the 2 g / 1 tsp coarse black pepper. Have everything in small bowls or piles on a board, the meatball mixing happens fast and in one pass.'
     time_min: 5
@@ -200,7 +199,7 @@ steps:
     technique: 'maillard-sear'
     time_min: 5
   - text: 'Build the sauce in the same pan. Reduce heat to medium. The pan has fond (browned bits) and rendered pork fat from the sear, both are sauce gold. Add the 30 g / 2 tbsp fresh olive oil and the 16 g / 4 thinly sliced garlic cloves. Cook 60 to 90 seconds, stirring constantly with a wooden spoon, until the garlic is pale gold and aromatic, pull it just before it browns past blond, blond garlic is sweet and fragrant, brown garlic is bitter and acrid. Add the 800 g / 1 can of hand-crushed San Marzano tomatoes (with all the juice), the 4 g / 1 tsp salt, and the 4 g / 1 tsp sugar (optional). Scrape the fond off the pan bottom with the wooden spoon, the wet tomato lifts every brown bit into the sauce. Bring to a hard simmer.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 3
   - text: 'Add the basil sprigs and meatballs. Drop the 8 g / 1 small bunch of basil sprigs (whole, on stems) into the sauce, the stems extract for depth, the leaves will get fished out at the end. Nest the seared meatballs back into the sauce in a single layer; the sauce should come about halfway up the sides of each meatball (if it does not, your pan is too wide; either transfer to a smaller pot or accept the partial submerge and turn the meatballs at the halfway point of the simmer to expose the dry top). Reduce heat to maintain a bare simmer, the sauce should bubble gently, not boil aggressively. Cover the pan partway with a lid (a slight gap to let some steam escape and the sauce to reduce).'
     time_min: 2
@@ -211,7 +210,7 @@ steps:
   - text: 'Serve. The classic Italian-American move is to serve the meatballs over a generous portion of cooked spaghetti or rigatoni (cook the pasta in well-salted water during the last 10 minutes of the meatball simmer; toss the drained pasta in a few ladles of sauce before plating, then plate the meatballs and additional sauce on top). Alternatively, serve the meatballs solo over polenta, or as a meatball sub on a crusty roll with provolone broiled on top, or simply in a wide bowl with grilled bread for sopping. Drizzle each plate with the 15 g / 1 tbsp finishing olive oil and grate the 30 g / ¼ cup parmigiano at the table.'
     time_min: 3
 
-techniques: ['panade', 'myosin-extraction', 'maillard-sear', 'fond-deglaze']
+techniques: ['myosin-extraction', 'maillard-sear', 'deglazing']
 equipment: ['microplane', 'box-grater', 'heavy-skillet', 'wooden-spoon']
 
 modifications:

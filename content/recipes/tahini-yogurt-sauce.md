@@ -76,7 +76,7 @@ steps:
   - text: 'Taste and adjust: tahini-yogurt sauce should read tahini-forward with bright lemon, gentle garlic, and clean salt; the yogurt should be background body, not foreground tang. If flat, an extra 1 g / pinch of fine sea salt and 5 g / 1 tsp lemon juice; if too aggressive (too garlicky or too sharp), more yogurt or a pinch of sugar to round the finish. Serve immediately or refrigerate up to 4 days. Drizzle over roasted vegetables, falafel, shawarma, kebabs, grain bowls, fattoush and chopped salads, fresh raw vegetables, grilled bread, fried eggplant, hummus and other dip platters, soft-boiled eggs, or thinned with more water as a dressing for leafy salads.'
     time_min: 1
 
-techniques: ['tahini-emulsion-with-water']
+techniques: ['tahini-emulsion']
 equipment: ['mixing-bowl', 'whisk', 'microplane']
 
 modifications:
