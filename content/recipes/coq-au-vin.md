@@ -96,7 +96,6 @@ ingredients:
     note: '(2 tbsp; bloomed for color and umami)'
   - group: 'Phase 2, the cook'
     item: 'chicken stock (homemade or low-sodium)'
-    slug: 'chicken-stock'
     qty: 350
     unit: 'ml'
     note: '(1½ cups; supplements the wine; homemade is dramatically better than commercial)'

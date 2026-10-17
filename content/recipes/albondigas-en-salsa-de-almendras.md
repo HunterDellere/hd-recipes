@@ -131,7 +131,6 @@ ingredients:
     note: '(½ cup; the structural Andalusian deglazing wine; do not substitute "cooking sherry")'
   - group: 'Phase 4, the almond-saffron sauce'
     item: 'chicken stock (or water)'
-    slug: 'chicken-stock'
     qty: 500
     unit: 'ml'
     note: '(2 cups; homemade preferred)'

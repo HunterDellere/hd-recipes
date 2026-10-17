@@ -95,7 +95,6 @@ ingredients:
     note: '(2 tbsp; the tart red note; raisins are the sweeter common stand-in)'
   - group: 'Phase 3, the zirvak'
     item: 'whole dried red chili'
-    slug: 'dried-chilies'
     qty: 1
     unit: 'each'
     note: '(left whole for gentle background heat, not chopped)'

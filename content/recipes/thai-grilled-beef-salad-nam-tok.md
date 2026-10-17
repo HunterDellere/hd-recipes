@@ -83,7 +83,7 @@ ingredients:
     note: '(2 tbsp finished powder; from about 25 g raw rice. The structural element of the dish, no substitute reads as nam tok)'
   - group: 'Phase 3, structural'
     item: 'toasted dried-chili powder (prik pon)'
-    slug: 'dried-chilies'
+    slug: 'thai-chili'
     qty: 3
     unit: 'g'
     prep: 'see step 1; dried red Thai chilies dry-toasted then pounded'

@@ -52,7 +52,6 @@ ingredients:
     note: '(2 tbsp; soaked 10 minutes in cold water, then dry-toasted briefly; the paste thickener)'
   - group: 'Xacuti spice paste (make first; can be made up to 3 days ahead)'
     item: 'Kashmiri dried chilies, whole'
-    slug: 'dried-chilies'
     qty: 8
     unit: 'each'
     prep: 'stems removed, seeds shaken out for mild heat (or kept for more heat)'

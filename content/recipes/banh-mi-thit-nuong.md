@@ -157,7 +157,7 @@ ingredients:
     note: '(about 2 cups loosely packed; non-negotiable Vietnamese fresh herb)'
   - group: 'Phase 3, assembly components'
     item: 'fresh jalapeno'
-    slug: 'green-chili'
+    slug: 'jalapeno'
     qty: 30
     unit: 'g'
     prep: 'sliced into 2 mm rings, seeds in for heat or removed for milder'

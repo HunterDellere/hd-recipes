@@ -153,7 +153,6 @@ ingredients:
     note: '(2 cloves)'
   - group: 'Phase 3, finishing tadka'
     item: 'dried red chilies (whole, such as Kashmiri or chile de árbol)'
-    slug: 'dried-chilies'
     qty: 2
     unit: 'each'
     note: '(2 chilies, broken in half)'

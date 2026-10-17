@@ -218,11 +218,6 @@
         "reason": "no-fdc"
       },
       {
-        "name": "chicken stock (or water)",
-        "slug": "chicken-stock",
-        "reason": "no-fdc"
-      },
-      {
         "name": "saffron threads",
         "slug": "saffron",
         "reason": "no-fdc"
@@ -377,11 +372,6 @@
       {
         "name": "bay leaves",
         "slug": "bay-leaf",
-        "reason": "no-fdc"
-      },
-      {
-        "name": "chicken stock, hot",
-        "slug": "chicken-stock",
         "reason": "no-fdc"
       }
     ]
@@ -660,7 +650,7 @@
       },
       {
         "name": "fresh jalapeno",
-        "slug": "green-chili",
+        "slug": "jalapeno",
         "reason": "no-fdc"
       }
     ]
@@ -811,13 +801,7 @@
       "vitamin_c_mg": 53,
       "vitamin_a_iu": 26973
     },
-    "missing": [
-      {
-        "name": "beef stock (homemade or low-sodium)",
-        "slug": "beef-broth",
-        "reason": "no-fdc"
-      }
-    ]
+    "missing": []
   },
   "pages/recipes/beef-broth.html": {
     "perServing": {
@@ -854,34 +838,34 @@
   },
   "pages/recipes/beef-rendang.html": {
     "perServing": {
-      "energy_kcal": 263,
-      "protein_g": 2.8,
-      "fat_g": 0.5,
+      "energy_kcal": 247,
+      "protein_g": 2.3,
+      "fat_g": 0.2,
       "saturated_fat_g": 0.1,
-      "carbs_g": 68.2,
-      "fiber_g": 4.7,
-      "sugar_g": 5.6,
-      "sodium_mg": 1070,
-      "potassium_mg": 476,
-      "calcium_mg": 45,
+      "carbs_g": 64.7,
+      "fiber_g": 3.3,
+      "sugar_g": 3.5,
+      "sodium_mg": 1065,
+      "potassium_mg": 383,
+      "calcium_mg": 43,
       "iron_mg": 1,
-      "vitamin_c_mg": 10,
-      "vitamin_a_iu": 8546
+      "vitamin_c_mg": 9,
+      "vitamin_a_iu": 7221
     },
     "total": {
-      "energy_kcal": 1578,
-      "protein_g": 16.9,
-      "fat_g": 3.2,
-      "saturated_fat_g": 0.6,
-      "carbs_g": 409.3,
-      "fiber_g": 28.5,
-      "sugar_g": 33.5,
-      "sodium_mg": 6418,
-      "potassium_mg": 2856,
-      "calcium_mg": 271,
-      "iron_mg": 8,
-      "vitamin_c_mg": 61,
-      "vitamin_a_iu": 51275
+      "energy_kcal": 1481,
+      "protein_g": 13.7,
+      "fat_g": 1.5,
+      "saturated_fat_g": 0.3,
+      "carbs_g": 388.3,
+      "fiber_g": 19.8,
+      "sugar_g": 21.2,
+      "sodium_mg": 6390,
+      "potassium_mg": 2295,
+      "calcium_mg": 258,
+      "iron_mg": 6,
+      "vitamin_c_mg": 52,
+      "vitamin_a_iu": 43328
     },
     "missing": [
       {
@@ -4217,11 +4201,6 @@
         "reason": "no-fdc"
       },
       {
-        "name": "chicken stock (or vegetable stock)",
-        "slug": "chicken-stock",
-        "reason": "no-fdc"
-      },
-      {
         "name": "Mexican oregano, dried",
         "slug": "mexican-oregano",
         "reason": "no-fdc"
@@ -5049,13 +5028,7 @@
       "vitamin_c_mg": 38,
       "vitamin_a_iu": 1817
     },
-    "missing": [
-      {
-        "name": "chicken stock (homemade or low-sodium)",
-        "slug": "chicken-stock",
-        "reason": "no-fdc"
-      }
-    ]
+    "missing": []
   },
   "pages/recipes/corn-tortillas-from-masa.html": {
     "perServing": {
@@ -5856,11 +5829,6 @@
         "name": "cumin seeds (for the finishing tadka)",
         "slug": "cumin-seeds",
         "reason": "no-fdc"
-      },
-      {
-        "name": "dried red chilies (whole, such as Kashmiri or chile de árbol)",
-        "slug": "dried-chilies",
-        "reason": "no-grams"
       },
       {
         "name": "Kashmiri chili powder (for the finishing tadka)",
@@ -6883,11 +6851,6 @@
       {
         "name": "dry white wine (Sauvignon Blanc, Pinot Grigio, or Vermentino)",
         "slug": "dry-white-wine",
-        "reason": "no-fdc"
-      },
-      {
-        "name": "beef stock (homemade or low-sodium)",
-        "slug": "beef-broth",
         "reason": "no-fdc"
       },
       {
@@ -7956,11 +7919,6 @@
       "vitamin_a_iu": 2924
     },
     "missing": [
-      {
-        "name": "Kashmiri dried chilies, whole",
-        "slug": "dried-chilies",
-        "reason": "no-grams"
-      },
       {
         "name": "cloves, whole",
         "slug": "cloves",
@@ -11435,36 +11393,41 @@
   },
   "pages/recipes/jungle-curry-paste.html": {
     "perServing": {
-      "energy_kcal": 33,
-      "protein_g": 1.1,
-      "fat_g": 0.4,
-      "saturated_fat_g": 0.1,
-      "carbs_g": 7.2,
-      "fiber_g": 2.1,
-      "sugar_g": 3.1,
-      "sodium_mg": 201,
-      "potassium_mg": 165,
-      "calcium_mg": 13,
-      "iron_mg": 1,
-      "vitamin_c_mg": 4,
-      "vitamin_a_iu": 3134
+      "energy_kcal": 13,
+      "protein_g": 0.4,
+      "fat_g": 0.1,
+      "saturated_fat_g": 0,
+      "carbs_g": 3,
+      "fiber_g": 0.3,
+      "sugar_g": 0.7,
+      "sodium_mg": 196,
+      "potassium_mg": 53,
+      "calcium_mg": 10,
+      "iron_mg": 0,
+      "vitamin_c_mg": 2,
+      "vitamin_a_iu": 1545
     },
     "total": {
-      "energy_kcal": 262,
-      "protein_g": 8.4,
-      "fat_g": 3.6,
-      "saturated_fat_g": 0.5,
-      "carbs_g": 57.2,
-      "fiber_g": 16.4,
-      "sugar_g": 25,
-      "sodium_mg": 1609,
-      "potassium_mg": 1319,
-      "calcium_mg": 105,
-      "iron_mg": 4,
-      "vitamin_c_mg": 34,
-      "vitamin_a_iu": 25075
+      "energy_kcal": 107,
+      "protein_g": 3.3,
+      "fat_g": 0.8,
+      "saturated_fat_g": 0.1,
+      "carbs_g": 23.7,
+      "fiber_g": 2.6,
+      "sugar_g": 5.3,
+      "sodium_mg": 1565,
+      "potassium_mg": 422,
+      "calcium_mg": 84,
+      "iron_mg": 1,
+      "vitamin_c_mg": 19,
+      "vitamin_a_iu": 12361
     },
     "missing": [
+      {
+        "name": "dried Thai bird chilies",
+        "slug": "thai-chili",
+        "reason": "no-fdc"
+      },
       {
         "name": "lemongrass, white part only, sliced thin",
         "slug": "lemongrass",
@@ -12518,34 +12481,34 @@
   },
   "pages/recipes/larb-gai-thai-minced-chicken-salad.html": {
     "perServing": {
-      "energy_kcal": 111,
-      "protein_g": 4.3,
-      "fat_g": 4,
+      "energy_kcal": 109,
+      "protein_g": 4.2,
+      "fat_g": 3.9,
       "saturated_fat_g": 1.1,
-      "carbs_g": 15.6,
-      "fiber_g": 2.5,
-      "sodium_mg": 2379,
-      "potassium_mg": 275,
+      "carbs_g": 15.1,
+      "fiber_g": 2.3,
+      "sodium_mg": 2378,
+      "potassium_mg": 261,
       "calcium_mg": 48,
       "iron_mg": 1,
-      "vitamin_c_mg": 9,
-      "vitamin_a_iu": 4068,
-      "sugar_g": 2.6
+      "vitamin_c_mg": 8,
+      "vitamin_a_iu": 3869,
+      "sugar_g": 2.3
     },
     "total": {
-      "energy_kcal": 445,
-      "protein_g": 17,
-      "fat_g": 16,
+      "energy_kcal": 435,
+      "protein_g": 16.7,
+      "fat_g": 15.8,
       "saturated_fat_g": 4.4,
-      "carbs_g": 62.3,
-      "fiber_g": 10.2,
-      "sodium_mg": 9515,
-      "potassium_mg": 1098,
-      "calcium_mg": 194,
+      "carbs_g": 60.2,
+      "fiber_g": 9.3,
+      "sodium_mg": 9512,
+      "potassium_mg": 1042,
+      "calcium_mg": 192,
       "iron_mg": 5,
-      "vitamin_c_mg": 34,
-      "vitamin_a_iu": 16272,
-      "sugar_g": 10.6
+      "vitamin_c_mg": 33,
+      "vitamin_a_iu": 15477,
+      "sugar_g": 9.3
     },
     "missing": [
       {
@@ -12556,6 +12519,11 @@
       {
         "name": "toasted glutinous-rice powder (khao khua)",
         "slug": "glutinous-rice",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "toasted dried-chili powder (prik pon)",
+        "slug": "thai-chili",
         "reason": "no-fdc"
       }
     ]
@@ -14278,11 +14246,6 @@
         "name": "lard (or neutral oil)",
         "slug": "lard",
         "reason": "no-fdc"
-      },
-      {
-        "name": "chicken stock, hot",
-        "slug": "chicken-stock",
-        "reason": "no-fdc"
       }
     ]
   },
@@ -15373,11 +15336,6 @@
     },
     "missing": [
       {
-        "name": "chicken stock (homemade or low-sodium)",
-        "slug": "chicken-stock",
-        "reason": "no-fdc"
-      },
-      {
         "name": "saffron threads",
         "slug": "saffron",
         "reason": "no-fdc"
@@ -16213,34 +16171,34 @@
   },
   "pages/recipes/penang-curry-laksa.html": {
     "perServing": {
-      "energy_kcal": 408,
-      "protein_g": 15.7,
-      "fat_g": 14.8,
-      "saturated_fat_g": 3,
-      "carbs_g": 58.4,
-      "fiber_g": 5.1,
-      "sodium_mg": 1447,
-      "potassium_mg": 675,
-      "calcium_mg": 100,
-      "iron_mg": 3,
-      "vitamin_c_mg": 11,
-      "vitamin_a_iu": 6926,
-      "sugar_g": 6.9
+      "energy_kcal": 395,
+      "protein_g": 15.3,
+      "fat_g": 14.6,
+      "saturated_fat_g": 2.9,
+      "carbs_g": 55.5,
+      "fiber_g": 3.9,
+      "sodium_mg": 1443,
+      "potassium_mg": 597,
+      "calcium_mg": 98,
+      "iron_mg": 2,
+      "vitamin_c_mg": 10,
+      "vitamin_a_iu": 5822,
+      "sugar_g": 5.2
     },
     "total": {
-      "energy_kcal": 2449,
-      "protein_g": 94.3,
-      "fat_g": 88.8,
-      "saturated_fat_g": 17.8,
-      "carbs_g": 350.5,
-      "fiber_g": 30.5,
-      "sodium_mg": 8683,
-      "potassium_mg": 4050,
-      "calcium_mg": 600,
-      "iron_mg": 16,
-      "vitamin_c_mg": 69,
-      "vitamin_a_iu": 41557,
-      "sugar_g": 41.4
+      "energy_kcal": 2368,
+      "protein_g": 91.7,
+      "fat_g": 87.3,
+      "saturated_fat_g": 17.6,
+      "carbs_g": 333.1,
+      "fiber_g": 23.3,
+      "sodium_mg": 8660,
+      "potassium_mg": 3582,
+      "calcium_mg": 589,
+      "iron_mg": 14,
+      "vitamin_c_mg": 61,
+      "vitamin_a_iu": 34935,
+      "sugar_g": 31.2
     },
     "missing": [
       {
@@ -17490,16 +17448,6 @@
         "name": "green plantains (firm, unripe)",
         "slug": "green-plantain",
         "reason": "no-fdc"
-      },
-      {
-        "name": "chicken stock, hot",
-        "slug": "chicken-stock",
-        "reason": "no-fdc"
-      },
-      {
-        "name": "chicken or beef broth, warm",
-        "slug": "chicken-stock",
-        "reason": "no-fdc"
       }
     ]
   },
@@ -17907,11 +17855,6 @@
       {
         "name": "saffron threads",
         "slug": "saffron",
-        "reason": "no-fdc"
-      },
-      {
-        "name": "chicken stock (hot, held at bare simmer)",
-        "slug": "chicken-stock",
         "reason": "no-fdc"
       },
       {
@@ -18900,13 +18843,7 @@
       "vitamin_c_mg": 4,
       "vitamin_a_iu": 8
     },
-    "missing": [
-      {
-        "name": "fresh red Holland or Fresno chilies",
-        "slug": "thai-chili",
-        "reason": "no-fdc"
-      }
-    ]
+    "missing": []
   },
   "pages/recipes/sauerkraut.html": {
     "perServing": {
@@ -21744,34 +21681,34 @@
   },
   "pages/recipes/thai-grilled-beef-salad-nam-tok.html": {
     "perServing": {
-      "energy_kcal": 76,
-      "protein_g": 3,
+      "energy_kcal": 73,
+      "protein_g": 2.9,
       "fat_g": 2.2,
       "saturated_fat_g": 0.4,
-      "carbs_g": 12.1,
-      "fiber_g": 2.7,
-      "sugar_g": 2.8,
-      "sodium_mg": 2333,
-      "potassium_mg": 255,
-      "calcium_mg": 34,
+      "carbs_g": 11.6,
+      "fiber_g": 2.5,
+      "sugar_g": 2.5,
+      "sodium_mg": 2332,
+      "potassium_mg": 241,
+      "calcium_mg": 33,
       "iron_mg": 1,
-      "vitamin_c_mg": 9,
-      "vitamin_a_iu": 3783
+      "vitamin_c_mg": 8,
+      "vitamin_a_iu": 3584
     },
     "total": {
-      "energy_kcal": 303,
-      "protein_g": 11.9,
-      "fat_g": 9,
+      "energy_kcal": 293,
+      "protein_g": 11.6,
+      "fat_g": 8.8,
       "saturated_fat_g": 1.5,
-      "carbs_g": 48.3,
-      "fiber_g": 11,
-      "sugar_g": 11.1,
-      "sodium_mg": 9332,
-      "potassium_mg": 1018,
-      "calcium_mg": 135,
+      "carbs_g": 46.2,
+      "fiber_g": 10.1,
+      "sugar_g": 9.9,
+      "sodium_mg": 9329,
+      "potassium_mg": 962,
+      "calcium_mg": 134,
       "iron_mg": 4,
-      "vitamin_c_mg": 34,
-      "vitamin_a_iu": 15131
+      "vitamin_c_mg": 33,
+      "vitamin_a_iu": 14336
     },
     "missing": [
       {
@@ -21782,6 +21719,11 @@
       {
         "name": "toasted glutinous-rice powder (khao khua)",
         "slug": "glutinous-rice",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "toasted dried-chili powder (prik pon)",
+        "slug": "thai-chili",
         "reason": "no-fdc"
       }
     ]
@@ -21854,39 +21796,44 @@
   },
   "pages/recipes/thai-pork-larb-meatballs.html": {
     "perServing": {
-      "energy_kcal": 433,
-      "protein_g": 24,
+      "energy_kcal": 431,
+      "protein_g": 23.9,
       "fat_g": 31.8,
       "saturated_fat_g": 10.7,
-      "carbs_g": 12.5,
-      "fiber_g": 2.6,
-      "sodium_mg": 1918,
-      "potassium_mg": 614,
+      "carbs_g": 12,
+      "fiber_g": 2.4,
+      "sodium_mg": 1917,
+      "potassium_mg": 600,
       "calcium_mg": 51,
       "iron_mg": 2,
-      "vitamin_c_mg": 9,
-      "vitamin_a_iu": 4409,
-      "sugar_g": 2.9
+      "vitamin_c_mg": 8,
+      "vitamin_a_iu": 4211,
+      "sugar_g": 2.6
     },
     "total": {
-      "energy_kcal": 1733,
-      "protein_g": 96.1,
-      "fat_g": 127.2,
+      "energy_kcal": 1724,
+      "protein_g": 95.8,
+      "fat_g": 127,
       "saturated_fat_g": 43,
-      "carbs_g": 50.1,
-      "fiber_g": 10.6,
-      "sodium_mg": 7672,
-      "potassium_mg": 2457,
-      "calcium_mg": 206,
-      "iron_mg": 9,
-      "vitamin_c_mg": 35,
-      "vitamin_a_iu": 17638,
-      "sugar_g": 11.6
+      "carbs_g": 48,
+      "fiber_g": 9.7,
+      "sodium_mg": 7669,
+      "potassium_mg": 2400,
+      "calcium_mg": 204,
+      "iron_mg": 8,
+      "vitamin_c_mg": 34,
+      "vitamin_a_iu": 16843,
+      "sugar_g": 10.4
     },
     "missing": [
       {
         "name": "palm sugar (or light brown sugar)",
         "slug": "palm-sugar",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "Thai dried red chili flakes (prik bon)",
+        "slug": "thai-chili",
         "reason": "no-fdc"
       }
     ]
@@ -23123,11 +23070,6 @@
         "name": "ground coriander",
         "slug": "ground-coriander",
         "reason": "no-fdc"
-      },
-      {
-        "name": "whole dried red chili",
-        "slug": "dried-chilies",
-        "reason": "no-grams"
       }
     ]
   },

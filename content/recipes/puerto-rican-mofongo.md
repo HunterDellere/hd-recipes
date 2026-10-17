@@ -73,7 +73,6 @@ ingredients:
     note: '(3 tbsp; the structural Mediterranean-Caribbean fat that distinguishes Cuban-and-Puerto-Rican mash dishes from West African fufu)'
   - group: 'Phase 2, the mash'
     item: 'chicken stock, hot'
-    slug: 'chicken-stock'
     qty: 100
     unit: 'g'
     note: '(about ½ cup; for moistening the mash to the correct consistency)'
@@ -86,7 +85,6 @@ ingredients:
 
   - group: 'Phase 3, optional broth for serving'
     item: 'chicken or beef broth, warm'
-    slug: 'chicken-stock'
     qty: 500
     unit: 'g'
     note: '(2 cups; warmed to a simmer just before serving; spoon over or into the mofongo mound at the table)'

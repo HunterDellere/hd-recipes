@@ -118,7 +118,7 @@ ingredients:
     note: '(1 tsp; balances the fish sauce and lime, without sugar the dressing reads aggressively salty-sour, with sugar it reads complete. The Thai-Lao palm sugar (jaggery) has a caramelly character that brown sugar approximates passably)'
   - group: 'Phase 4, the larb dressing'
     item: 'Thai dried red chili flakes (prik bon)'
-    slug: 'dried-chilies'
+    slug: 'thai-chili'
     qty: 3
     unit: 'g'
     note: '(1½ tsp; the Thai dried-chili crushed-flakes mixture, available at Thai groceries, sometimes labeled "Thai chili powder" or "prik bon." Substitute coarsely crushed dried Thai chilies or 1 tsp red pepper flakes plus ½ tsp cayenne. The heat is meaningful, larb is a spicy dish, and adjusting down below 2 g produces a milder but recognizable version)'

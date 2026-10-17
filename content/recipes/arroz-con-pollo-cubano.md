@@ -133,7 +133,6 @@ ingredients:
     note: '(about 2 cups; the structural medium-grain rice)'
   - group: 'Phase 3, the rice and braise'
     item: 'chicken stock, hot'
-    slug: 'chicken-stock'
     qty: 600
     unit: 'g'
     note: '(2.5 cups; the structural cooking liquid)'
