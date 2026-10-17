@@ -145,7 +145,7 @@ steps:
   - text: 'Heat the 35 g / 2½ tbsp olive oil in a 5 to 6 liter Dutch oven or heavy soup pot over medium-low heat. Add the 250 g sliced leek and the 4 g / 1 tsp kosher salt. Sweat 10 to 12 minutes, stirring occasionally, until the leek is silky and translucent without taking any color. Add the 20 g sliced garlic and continue 2 minutes more, until the garlic is fragrant but not browned.'
     time_min: 14
   - text: 'Push the leek and garlic to the sides of the pot. Add the 30 g / 2 tbsp tomato paste to the bare center and fry it directly in the oil for 2 minutes, stirring, until the paste darkens by one shade and the raw-tomato smell is replaced by a slightly caramelized sweetness. This is the fond, the structural umami building-block. Add the 1 g / ½ tsp dried thyme and the 1 g / 2 bay leaves; stir everything together.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 3
   - text: 'Pour in the 1800 ml / 7½ cups water and scrape up any fond stuck to the bottom of the pot with a wooden spoon. Add the 30 g parmesan rind (if using) and the 8 g / 2 tsp kosher salt. Bring to a boil, then reduce to a steady simmer.'
     time_min: 5
@@ -160,7 +160,7 @@ steps:
   - text: 'Ladle into wide bowls. Finish each bowl with a generous drizzle of the 30 g / 2 tbsp extra-virgin olive oil (about 1 tsp per bowl), a sprinkle of the 40 g / ½ cup grated parmesan (if using), and a crack of the 1 g / ½ tsp black pepper. Serve with crusty bread for dipping.'
     time_min: 2
 
-techniques: ['fond-deglaze']
+techniques: ['deglazing']
 equipment: ['dutch-oven']
 
 modifications:

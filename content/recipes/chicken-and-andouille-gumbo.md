@@ -178,7 +178,7 @@ steps:
     technique: 'maillard-sear'
     time_min: 40
   - text: 'Drop the Trinity into the roux. Add the 300 g diced onion, 150 g diced celery, and 150 g diced bell pepper all at once to the screaming-hot roux. The vegetables will hiss violently and the roux temperature will drop sharply (this is intentional; the cool vegetables stop the roux from advancing past dark chocolate). Stir continuously for 4 to 5 minutes until the onion turns translucent and the vegetables soften and slump into the roux. Add the 20 g / 6 cloves minced garlic; stir 60 seconds until fragrant.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 6
   - text: 'Add the stock and aromatics. Slowly pour in the 2000 ml / 8 cups warm chicken stock while whisking constantly to prevent the roux from clumping. The roux-stock mixture should go smooth and slightly thicken within 60 seconds. Add the 3 bay leaves, 2 g / 1 tsp dried thyme, 4 g / 2 tsp smoked paprika, 2 g / ½ tsp cayenne, 10 g / 1 tbsp kosher salt, 10 g / 2 tsp Worcestershire, and 8 g / 1½ tsp hot sauce. Stir to combine. Return the browned chicken (with any accumulated juices) and andouille to the pot.'
     time_min: 5
@@ -192,7 +192,7 @@ steps:
   - text: 'Serve over rice. Mound 100 g / ½ cup cooked long-grain rice in the center of each wide soup bowl. Ladle 250 to 300 g of the gumbo around (not over) the rice mound, so the rice peeks through the gravy as an island. Each diner stirs the rice into their portion at the table, dusts with file powder (4 g / 2 tsp total for the pot, offered as a small bowl with a spoon for each diner to take a pinch), and adds hot sauce to their personal heat level. The rice-to-gumbo ratio is the diner''s call; the canonical is roughly one part rice to two parts gumbo by volume.'
     time_min: 3
 
-techniques: ['dry-brining', 'maillard-sear', 'fond-deglaze', 'braising']
+techniques: ['dry-brining', 'maillard-sear', 'deglazing', 'braising']
 equipment: ['heavy-cast-iron-skillet', 'wooden-spoon']
 
 modifications:

@@ -71,7 +71,7 @@ steps:
   - text: 'Heat the 250 g / 1 cup plus 2 tbsp olive oil in a wide 28 to 30 cm (11 to 12 inch) skillet (a slope-sided or straight-sided skillet works; not the final cooking pan) over medium heat until shimmering and about 130 to 140°C / 270 to 285°F (a slice of potato dropped in should release small steady bubbles, not aggressive sizzling). Add the 600 g / 3 potatoes (sliced) and 250 g / 1 large onion (sliced) all at once; stir to coat in the oil. Sprinkle the 4 g / ¾ tsp salt over the top.'
     time_min: 4
   - text: 'Reduce heat to medium-low; poach the potato and onion 18 to 22 minutes, stirring gently every 4 to 5 minutes with a wooden spoon (to prevent sticking and to redistribute the cooking), until the potatoes are completely tender and break apart under fork pressure but have not browned (the surface should stay pale yellow and the onion should be soft and translucent-gold, not caramelized). The slow poach is the structural foundation of the dish; rushed potatoes that brown read wrong, undercooked potatoes that retain bite read worse. Trust the fork test: if a potato slice breaks easily under a fork, the poach is done.'
-    technique: 'olive-oil-poach'
+    technique: 'oil-poaching'
     time_min: 22
   - text: 'Set a fine-mesh sieve over a large heatproof bowl. Pour the potato-and-onion-and-oil through the sieve; the oil drains into the bowl below (reserve about 200 g for other cooking) and the potato-and-onion stays in the sieve. Let the potato drain 2 to 3 minutes; the oil should pool below and the potato should be glistening but not dripping.'
     time_min: 3
@@ -82,12 +82,11 @@ steps:
   - text: 'Cook the tortilla 5 to 6 minutes over medium-low heat, gently shaking the pan every minute to free the bottom (do not stir; the bottom is setting into a single cohesive layer). Use a flexible thin spatula to gently tuck the edges in toward the center as they set, rounding the sides of the tortilla; this builds the canonical disc shape. After 5 to 6 minutes, the bottom should be set and golden when you carefully lift an edge with the spatula, and the top should still be visibly wet (a substantial pool of uncooked egg in the center). The tortilla is now ready for the flip.'
     time_min: 6
   - text: 'The flip: take a plate slightly larger than the skillet (about 26 cm / 10 inch); invert the plate over the skillet. Holding the plate firmly against the pan with one hand and the skillet handle with the other (use a kitchen towel for grip; the pan is hot), in one confident motion flip the pan upside down so the tortilla lands cooked-side-up on the plate. Set the skillet back on the burner; add 5 g / 1 tsp more reserved oil; slide the tortilla back into the skillet uncooked-side-down. Use the spatula to tuck the edges in. Cook 3 to 4 more minutes over medium-low heat, shaking the pan gently every minute, until the bottom is set and golden and the center is just-set when you gently press the top with the back of a spoon (a slight wobble at the center is correct; firm and rigid is overcooked).'
-    technique: 'plate-flip'
     time_min: 5
   - text: 'Slide the tortilla onto a serving plate. Let rest 5 to 10 minutes before slicing; the residual heat continues to set the center and the texture stabilizes during the rest. Serve warm or at room temperature, sliced into wedges (8 wedges for tapas, 4 wedges for a meal); the canonical Spanish service is on a small plate with a wedge of crusty bread and a small glass of beer or wine, or as part of a larger tapas spread. Tortilla travels especially well as a make-ahead dish: the texture and flavor improve after a 30-minute rest and remain excellent at room temperature for 3 to 4 hours.'
     time_min: 5
 
-techniques: ['olive-oil-poach', 'plate-flip']
+techniques: ['oil-poaching']
 equipment: ['wide-skillet', 'smaller-nonstick-skillet', 'mandoline', 'fine-mesh-sieve']
 
 modifications:

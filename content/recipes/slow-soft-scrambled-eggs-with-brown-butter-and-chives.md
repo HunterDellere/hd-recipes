@@ -93,14 +93,13 @@ steps:
   - text: 'Heat a small heavy nonstick or carbon steel skillet (20 to 22 cm diameter) over low heat for 1 minute (or set on the lowest gas burner setting). Pour in the egg-and-butter mixture. Let sit 30 seconds undisturbed; this allows the bottom to barely start setting (look for a very thin film of cooked egg around the edge of the pan).'
     time_min: 1
   - text: 'Begin stirring with a rubber spatula or wooden spoon in slow continuous figure-8 motions, scraping the bottom and the sides of the pan to prevent localized overcooking. The 200 g / 4 eggs will slowly transition through stages: liquid (first 2 minutes); thickened cream (next 2 minutes); soft custard with the first small curds appearing (next 2 minutes); fully formed small curds in a glossy custard (final 1 to 2 minutes). Total cook time is 6 to 8 minutes; the slow patient pace is the structural difference between this preparation and an American-style fast scramble. If the eggs cook too quickly (you see large curds forming rapidly, or any browning on the bottom), pull the pan off the heat for 15 seconds and continue stirring off-heat; this is a structural technique to control the cook on a burner that runs too hot.'
-    technique: 'slow-low-scramble'
     time_min: 7
   - text: 'The 200 g / 4 eggs are done the instant the curds have set into a glossy custard but the surface still glistens with visible moisture (a slight wobble when the pan is shaken; the curds barely holding together rather than fully cohesive). The residual heat in the pan continues to cook the curds for 30 seconds after the pan leaves the burner, so pull at this slightly-underdone stage; a 200 g / 4-egg scramble that looks fully set in the pan will be overcooked on the plate. Immediately remove the pan from the heat.'
     time_min: 0
   - text: 'Plate immediately: spoon the soft scrambled eggs onto warm plates (or onto thick slices of toasted bread). Drizzle the reserved 20 g / 1½ tbsp brown butter over the top; scatter the 10 g / 2 tbsp chopped chives generously; sprinkle the 1 g / ¼ tsp flaky sea salt and the 0.5 g / few cranks black pepper. Serve immediately; the eggs continue to cook on the warm plate and the dish reads at peak texture within 60 seconds of plating.'
     time_min: 1
 
-techniques: ['brown-butter', 'slow-low-scramble']
+techniques: ['brown-butter']
 equipment: ['small-heavy-skillet', 'rubber-spatula-or-wooden-spoon']
 
 modifications:

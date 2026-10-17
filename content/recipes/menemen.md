@@ -104,19 +104,18 @@ steps:
   - text: 'Heat the 45 g / 3 tbsp olive oil in a 25 cm (10 inch) wide skillet over medium heat. Add the 180 g / 3 to 4 sliced peppers; sweat 6 to 8 minutes, stirring occasionally, until fully softened and slightly translucent at the edges but not browned. The slow sweat is structural; the peppers should taste cooked-through and silken, not crunchy.'
     time_min: 7
   - text: 'Add the 15 g / 1 tbsp tomato paste; stir into the peppers and cook 60 seconds, allowing the paste to deepen in color and lose its raw-tomato edge. Add the 2 g / 1 tsp pul biber and stir 15 seconds to bloom the flakes into the oil (the oil should turn faintly red).'
-    technique: 'spice-bloom'
+    technique: 'blooming-aromatics'
     time_min: 2
   - text: 'Add the 400 g grated tomato along with 2 g / ½ tsp of the salt and the 1 g / ½ tsp black pepper. Bring to a simmer; cook 5 to 7 minutes, stirring occasionally, until the tomato has reduced visibly (by about a third), the surface oils are starting to separate at the edges, and the sauce holds a brief spoon-drag mark before flowing back together. Taste: the base should read of cooked tomato and pepper with gentle warm spice; adjust salt if flat.'
     time_min: 7
   - text: 'Reduce heat to low. Add the remaining 2 g / ½ tsp salt to the beaten eggs and pour the eggs into the pan in a single continuous stream across the surface of the tomato-pepper base. Wait 20 seconds without stirring; the eggs will begin to set at the bottom in contact with the warm sauce.'
     time_min: 1
   - text: 'Now stir continuously with a silicone spatula or a wooden spoon, scraping the bottom and folding the setting egg curds back into the sauce in slow figure-eight motions. Cook 60 to 90 seconds until the eggs are softly set throughout the sauce (no visible liquid raw-egg pools, but the mixture still glistens and wobbles when the pan is shaken; the eggs are at the just-set stage, before they tighten into dry curds). Pull from heat immediately; residual pan heat finishes the cook on the way to the table.'
-    technique: 'egg-fold-into-sauce'
     time_min: 2
   - text: 'Scatter the 40 g / ⅓ cup crumbled feta over the top (if using); sprinkle the 4 g / 1 tbsp chopped parsley. Serve straight from the pan, with grilled or toasted bread (Turkish pide, simit, Lebanese pita, or country sourdough) for sopping. Black tea is the canonical pairing.'
     time_min: 1
 
-techniques: ['egg-fold-into-sauce', 'spice-bloom', 'tomato-reduction']
+techniques: ['blooming-aromatics', 'reduction']
 equipment: ['wide-skillet', 'box-grater', 'silicone-spatula']
 
 modifications:

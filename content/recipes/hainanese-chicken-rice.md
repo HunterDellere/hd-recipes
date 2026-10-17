@@ -223,20 +223,18 @@ steps:
   - text: 'Set up the poach. Place the 1800 g whole chicken in a stockpot just large enough to hold it. Add the 3500 ml / 14 cups water, 60 g bruised ginger, 60 g bruised scallion, 3 knotted pandan leaves (reserve one for the rice in step 5), and 15 g / 1 tbsp kosher salt. The chicken should be fully submerged with 3 to 5 cm clearance; add water if needed.'
     time_min: 5
   - text: 'Bring the pot slowly to 85°C / 185°F over medium-low heat, about 20 minutes. The bubble activity should be a barely-perceptible tremor at the surface; never a rolling boil. Once at temperature, reduce heat to the lowest setting to hold the water between 80°C and 85°C (use an instant-read thermometer in the water, not against the chicken). Cover loosely (lid cracked) and hold for 35 to 40 minutes. The chicken is done when the deepest part of the thigh reads 70°C / 158°F (insert thermometer between leg and breast). Total active poach time at temperature: about 35 to 40 minutes for a 1800 g bird.'
-    technique: 'sub-simmer-poach'
+    technique: 'poaching'
     time_min: 60
   - text: 'Lift the chicken from the broth with two large spoons or by the cavity scallions; transfer immediately to the prepared ice bath. Submerge fully; the chicken will firm up and the skin will tighten over 10 minutes. This is the structural step that produces the canonical gelatinous, almost-translucent skin texture; without it the cook continues on residual heat and the chicken texture is lost. Reserve the poaching broth, keep at a low simmer to maintain warmth and concentration.'
     time_min: 10
   - text: 'While the chicken cools, render the chicken fat. Place the 30 g reserved cavity fat in a small saucepan over medium-low heat. As the fat melts (about 5 minutes), it releases clear golden chicken fat (schmaltz) and leaves crisp brown solids. Strain the fat into a clean container; you should have about 2 tbsp. Reserve for the rice.'
     time_min: 6
   - text: 'Build the rice. Heat the 30 g rendered chicken fat in a heavy 3-quart saucepan over medium-low heat. Add the 20 g minced garlic and 15 g minced ginger; sweat 3 to 4 minutes until fragrant and just turning pale gold, do not brown. Add the 450 g rinsed jasmine rice; toast in the fat 90 seconds, stirring constantly, until the grains turn from translucent-soaked to opaque-coated.'
-    technique: 'pilaf-fat-toast'
     time_min: 6
   - text: 'Add 600 ml / 2½ cups of the warm reserved chicken broth (skim the surface fat layer back into the rice pot for extra richness), the reserved 1 knotted pandan leaf, and 3 g / ½ tsp kosher salt to the rice. Bring to a vigorous simmer over medium-high heat; once boiling, reduce heat to lowest setting, cover tightly, and cook 15 minutes without lifting the lid. Pull from heat and rest, still covered, another 10 minutes. Fluff with a fork before serving.'
-    technique: 'absorption-rice'
     time_min: 25
   - text: 'Build the ginger-scallion sauce. Combine the 40 g grated ginger, 50 g sliced scallion, and 3 g / ½ tsp salt in a heatproof bowl. Heat the 90 g / 6 tbsp neutral oil in a small saucepan to 175°C / 350°F (about 80 seconds over medium-high; the oil should shimmer and a piece of scallion dropped in sizzles aggressively). Pour the hot oil directly over the ginger-scallion-salt; it will sizzle hard and bloom the aromatics. Stir to combine. The sauce is ready immediately but improves in 30 minutes as the salt draws moisture from the scallion and integrates with the bloomed oil.'
-    technique: 'oil-bloom'
+    technique: 'blooming-aromatics'
     time_min: 5
   - text: 'Build the chili sauce. Blend the 60 g chili, 20 g garlic, 15 g ginger, 30 g / 2 tbsp lime juice, 15 g / 1 tbsp rice vinegar, 8 g / 2 tsp sugar, 2 g / scant ½ tsp salt, and 30 g / 2 tbsp warm chicken broth to a smooth bright-red sauce in a blender or with an immersion blender. Texture target is hot-sauce smooth, not chunky. Rest 30 minutes for flavors to integrate; the chili heat blooms over the first hour at room temperature.'
     time_min: 4
@@ -245,7 +243,7 @@ steps:
   - text: 'Plate. Each diner gets a mound of chicken rice on the plate, a portion of chopped chicken alongside, a small ramekin each of ginger-scallion sauce, chili sauce, and dark soy sauce, and a small bowl of the warm chicken broth on the side (garnished with extra scallion). Eat with chopsticks and spoon. The canonical bite is: a small piece of chicken dipped first into the ginger-scallion oil, then into the chili sauce, eaten with a forkful of fragrant rice and a spoon of broth between.'
     time_min: 5
 
-techniques: ['sub-simmer-poach', 'pilaf-fat-toast', 'absorption-rice', 'oil-bloom']
+techniques: ['poaching', 'blooming-aromatics']
 equipment: ['stockpot', 'instant-read-thermometer', 'cleaver']
 
 modifications:

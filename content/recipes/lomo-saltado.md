@@ -183,18 +183,18 @@ steps:
   - text: 'Phase 3, mix the stir-fry sauce. In a small bowl, combine the 30 g light soy sauce, 15 g oyster sauce, 30 g red wine vinegar, 15 g ají amarillo paste, and 60 g beef stock. Stir to combine; set near the wok.'
     time_min: 2
   - text: 'Phase 4, heat the wok and sear the beef. Heat a carbon-steel wok or heavy stainless skillet over the highest possible heat 3 minutes until the surface is smoking. Add 15 g of the 30 g neutral oil; swirl to coat the wok. Add the marinated 500 g beef in a single layer (do not crowd; sear in 2 batches if the wok is small); sear undisturbed 60 seconds. Toss and stir-fry 30 to 45 seconds until the beef is browned on the outside and still pink at the center; transfer to a plate. The total cook is structural; longer than 90 seconds at high heat overcooks the beef.'
-    technique: 'wok-hei-sear'
+    technique: 'maillard-sear'
     time_min: 3
   - text: 'Phase 5, stir-fry the aromatics. Return the wok to high heat; add the remaining 15 g neutral oil. Add the 12 g minced garlic; stir-fry 15 seconds until fragrant. Add the 200 g red onion wedges and 6 g fresh ají amarillo strips; stir-fry 60 to 90 seconds until the onion starts to soften but still has structural crunch.'
-    technique: 'wok-hei-sear'
+    technique: 'maillard-sear'
     time_min: 2
   - text: 'Combine and finish. Return the seared beef and any juices to the wok; add the 200 g tomato wedges. Pour the stir-fry sauce around the edges of the wok (the sauce caramelizes against the hot wok surface, the structural wok hei flavor). Toss everything together 60 to 90 seconds until the tomatoes just start to soften but still hold their wedge shape, the sauce coats the beef and vegetables in a glossy lacquer, and the entire stir-fry reads deeply aromatic. Add the 60 g scallion pieces; toss 15 seconds more.'
-    technique: 'wok-hei-sear'
+    technique: 'maillard-sear'
     time_min: 2
   - text: 'Plate and serve. For each plate, mound about 150 g cooked rice on one side. Cover the other half of the plate with about 150 g hot fries. Spoon the lomo saltado over the fries (canonical) so the sauce soaks into the top of the fries. Scatter the 8 g chopped cilantro over each plate. Serve immediately; the structural eating motion is to take a forkful of beef-and-tomato-and-fries together, alternating with rice.'
     time_min: 2
 
-techniques: ['velveting', 'wok-hei-sear', 'shallow-frying']
+techniques: ['velveting', 'maillard-sear', 'shallow-frying']
 equipment: ['wok-or-heavy-skillet', 'rice-cooker-or-pot', 'oven-or-fryer']
 
 modifications:

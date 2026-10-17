@@ -221,10 +221,10 @@ steps:
   - text: 'Pull the chicken from the broth with tongs; cool 10 minutes until safe to handle. Strain the broth through a fine sieve and reserve, you should have about 1400 ml / 6 cups; if less, top up with water. Shred the chicken meat off the bone in 1 cm strips with two forks (skin discarded or reserved for the cook). Set aside.'
     time_min: 10
   - text: 'Build the rempah. Drain the soaked 25 g chilies, reserving 60 ml / ¼ cup of the soaking liquid. Pound or blend the chilies, 150 g shallot, 40 g garlic, 40 g sliced lemongrass heart, 30 g galangal, 4 g turmeric, 30 g candlenut, 6 g coriander, and 5 g toasted belacan to a smooth paste, adding chili soaking liquid as needed for blender flow. Target is a thick, smooth, brick-orange paste; about 5 to 6 minutes of pulse-and-scrape work.'
-    technique: 'spice-paste-pounding'
+    technique: 'mortar-pounding'
     time_min: 12
   - text: 'Fry the rempah. Heat the 60 g / 4 tbsp neutral oil in a wide heavy pan or wok over medium heat. Add the rempah paste; it will sputter. Fry, stirring constantly, until the raw chili-shallot smell shifts to a deep, jammy, almost-caramelized aroma and the paste darkens from brick-orange to deep brick-red, 12 to 15 minutes. Oil will visibly separate at the edges and pool around the paste. This is the structural flavor-development step, undercooked rempah produces a thin, raw-tasting laksa; well-fried rempah is the foundation of canonical laksa depth.'
-    technique: 'spice-paste-frying'
+    technique: 'blooming-aromatics'
     time_min: 14
   - text: 'Pour in the reserved 1400 ml chicken broth and bring to a simmer. Stir to dissolve the rempah into the broth; the liquid will turn a brilliant orange-red. Add the 800 ml / 2 cans coconut milk, 15 g / 1 tbsp palm sugar, and 30 g / 2 tbsp fish sauce. Bring back to a bare simmer (do not boil hard, the coconut emulsion breaks above 95°C / 200°F). Simmer gently 20 minutes to integrate; the broth should thicken to a velvety, slightly-glossy consistency that coats a spoon. Taste, add the 5 g / 1 tsp additional salt if needed; the broth should read deep-spicy-front, with coconut richness and a sweet undertone, salt-balanced. Adjust acid at the table with lime.'
     time_min: 22
@@ -234,7 +234,7 @@ steps:
     time_min: 6
   - text: 'Assemble each bowl. Mound noodles in the bottom. Top with a portion of beansprouts. Ladle hot broth over (about 1½ cups per bowl), making sure each diner gets shrimp, tofu puffs, and shredded chicken. Top with cucumber matchsticks, a heavy pinch of fried shallots, a sprinkle of scallion green. Serve with a lime wedge and a small mound of sambal on the side. Diners squeeze the lime over the broth, mix the sambal in to escalate heat, and eat with chopsticks (noodles) and spoon (broth).'
 
-techniques: ['spice-paste-pounding', 'spice-paste-frying']
+techniques: ['mortar-pounding', 'blooming-aromatics']
 equipment: ['wok', 'food-processor', 'stockpot']
 
 modifications:

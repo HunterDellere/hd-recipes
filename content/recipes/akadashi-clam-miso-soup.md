@@ -92,7 +92,6 @@ ingredients:
 
 steps:
   - text: 'Purge the clams. In a wide bowl or container, dissolve the 45 g / 3 tbsp kosher salt in the 1500 ml / 6 cups cold water; the resulting 3% brine matches the salinity of seawater. Add the 600 g clams in a single layer (not piled; the clams need contact with the brine to filter-feed). Cover loosely with a kitchen towel (the clams will spit water as they purge, which is the desired behavior). Set aside in a dark cool spot (under a counter, in a corner of the kitchen away from direct light) for 30 to 45 minutes. The clams will release the grit and sand from inside their shells into the brine; you can sometimes see them visibly opening and closing during this time. After the purge, lift the clams out (do not pour through a strainer; the grit will recontaminate them), rinse under cold running water, and discard any clams that are open and do not close when tapped (those are dead and should not be cooked).'
-    technique: 'clam-purging'
     time_min: 40
   - text: 'Cold-soak the kombu while the clams purge. In a separate 2-quart saucepan, place the 10 g kombu square and pour over the 900 ml / 3¾ cups cold water. Let stand at room temperature for the 30 to 45 minutes that the clams are purging. The kombu hydrates and releases its glutamate slowly into the cold water; a hot start would extract the kombu but also release the slimy alginate compounds, dulling the dashi. This is the canonical Japanese cold-start kombu method.'
     time_min: 30
@@ -100,14 +99,13 @@ steps:
     technique: 'dashi'
     time_min: 15
   - text: 'Cook the clams in the dashi. Return the strained dashi to the saucepan and bring to a gentle simmer over medium heat (about 90°C, small steady bubbles, not a rolling boil). Add the purged clams in a single layer. Cover the pot with a lid. Simmer 3 to 5 minutes, gently shaking the pot once or twice to redistribute the clams. The clams will open as they cook; once most clams are open (about 4 minutes into the cook), pull from heat. Discard any clams that have not opened (they were already dead and are not safe to eat). The clams have released their succinate and their internal liquor into the dashi during this brief cook; the broth is now a layered umami of glutamate (kombu), inosinate (katsuobushi), and succinate (clam) plus the natural saltiness of the clam liquor. Taste the broth before adding miso, it should already read quite savory; the miso will primarily add miso character rather than additional saltiness.'
-    technique: 'shellfish-extraction'
     time_min: 5
   - text: 'Add the miso off-heat. Pull the saucepan completely off the burner. Place a small fine-mesh sieve into the broth (a tea strainer works, or any small sieve) and add the 75 g red miso into the sieve. With the back of a small spoon or whisk, press the miso through the sieve while moving the sieve in slow circles through the broth; the sieve breaks up clumps and dissolves the miso evenly. Alternatively, ladle 80 ml of hot broth into a small bowl, whisk the miso into the bowl until smooth, then pour back into the pot. The red miso dissolves more slowly than white miso (the longer-aged paste is denser and contains more whole soybean particles), so this step may take 60 to 90 seconds of patient pressing. The broth transitions from clear amber to a deep red-brown with the cloudy miso fully integrated. Do not return the pot to heat. Red miso''s volatile esters are more heat-sensitive than white miso''s, and a single boil dramatically dulls the akadashi character.'
     time_min: 2
   - text: 'Plate and serve. Ladle the soup into 4 small bowls (about 220 ml each, with 4 to 6 clams per bowl, distributing the broth evenly). Scatter a few mitsuba leaves or a thin slice of scallion green over each bowl. Add a tiny pinch (less than ⅛ tsp) of freshly ground sansho pepper per bowl if using. Serve immediately as part of a washoku-style meal, the canonical accompaniment is a bowl of plain Japanese rice and one or two banchan, often a piece of grilled fish or a quick-pickled vegetable. The clams are eaten directly from the shell with chopsticks (a clam in one hand to grip the shell, chopsticks in the other to extract the meat); the broth is sipped from the bowl rather than spoon-eaten in the everyday Japanese style. Reheating to a boil ruins the miso flavor, so serve straight from the pot.'
     time_min: 2
 
-techniques: ['clam-purging', 'dashi', 'shellfish-extraction']
+techniques: ['dashi']
 equipment: ['fine-mesh-sieve', 'cheesecloth', 'wide-bowl-or-container']
 
 modifications:

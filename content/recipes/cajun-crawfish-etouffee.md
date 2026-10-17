@@ -164,7 +164,6 @@ steps:
     technique: 'blooming-aromatics'
     time_min: 1
   - text: 'Sprinkle the 45 g / 6 tbsp flour over the trinity. Stir constantly with a wooden spoon for 4 to 6 minutes until the flour-and-butter coating has turned from white to peanut-butter or light caramel color, smelling lightly toasted. This is the blond roux stage; do not let it go dark like a Cajun gumbo roux. The trinity will be fully coated with the toasted roux.'
-    technique: 'roux'
     time_min: 5
   - text: 'Add the 15 g / 1 tbsp tomato paste; cook 90 seconds until darkened from bright red to brick red.'
     time_min: 2
@@ -179,7 +178,7 @@ steps:
   - text: 'Spoon a 150 g mound of cooked white rice into the center of each shallow bowl. Ladle the étouffée over the rice, allowing the sauce to pool around the rice rather than fully covering it. Top with the 50 g sliced scallions and 10 g parsley. Serve with Louisiana hot sauce at the table.'
     time_min: 2
 
-techniques: ['blooming-aromatics', 'roux']
+techniques: ['blooming-aromatics']
 equipment: ['wide-skillet', 'wooden-spoon', 'whisk']
 
 modifications:

@@ -170,7 +170,7 @@ steps:
   - text: 'Build the bed. Scatter the ~60 g / fennel planks (the bulb from the 80 g fennel) across the center of a rimmed sheet pan or shallow roasting tray, and lay the fish on top. The fennel raises the fish off the pan so hot air circulates under the skin and the bottom crisps rather than sticking and steaming in its own juices, and the planks roast into a sweet aromatic base that you serve alongside. Pat the top skin dry one more time; this is the last chance before the oven and it matters most for crisp.'
     time_min: 2
   - text: 'Roast the fish in the upper third of the fully preheated 225°C / 440°F oven, undisturbed, for 22 to 28 minutes depending on size. The ~1.4 kg fish here runs about 25 minutes. The skin should tighten, blister, and brown, and the flesh in the slashes should turn fully opaque. Begin checking at 22 minutes by inserting an instant-read thermometer into the thickest part of the back near the spine: pull the fish at 55°C / 131°F, where the large flake has just set and stays moist. The flesh should lift cleanly from the bone with gentle pressure; if it still has a translucent core, give it 2 to 3 minutes more. Past 60°C the flake dries and separates, so err toward the early pull and let carryover finish it.'
-    technique: 'roasting'
+    technique: 'high-heat-dry-roasting'
     time_min: 25
   - text: 'While the fish roasts, build the salsa verde. On a board, finely chop the 40 g / large bunch parsley leaves and scrape into a bowl. Mince the 16 g / 4 anchovy fillets to a paste and add them; the anchovy is the umami anchor, dissolving into the oil and carrying glutamate through the whole sauce. Add the 20 g / 2 tbsp chopped capers, the 4 g / 1 small clove garlic grated to a paste, and the 20 g / ½ shallot minced fine.'
     time_min: 5
@@ -179,7 +179,7 @@ steps:
   - text: 'Rest the fish 3 to 5 minutes on the pan; the flake firms slightly and carryover brings the spine to about 57°C. Transfer the whole fish to a warm platter using two spatulas under opposite ends, and arrange the roasted fennel planks alongside. To serve, run a knife down the spine and lift the top fillet off the bones in two pieces, then lift the whole skeleton clear from the tail to free the bottom fillet. Spoon the salsa verde generously over the flesh and pass the rest at the table, with the reserved ~50 g / lemon wedges for squeezing.'
     time_min: 5
 
-techniques: ['roasting']
+techniques: ['high-heat-dry-roasting']
 equipment: ['sheet-pan', 'instant-read-thermometer', 'microplane']
 
 modifications:

@@ -94,7 +94,7 @@ steps:
   - text: 'Taste and adjust: chimichurri should read aggressively herbal with sharp acid, a noticeable garlic bite, and gentle heat. If flat, an extra 1 g / pinch of fine sea salt; if too sharp, a touch more oil; if the herbs are overwhelmed, more vinegar to bring them forward. Serve at room temperature, spooned over grilled or seared meat, fish, or vegetables; or as a dip for grilled bread; or stirred into rice and grain bowls; or as a finish for fried eggs and roasted potatoes.'
     time_min: 2
 
-techniques: ['knife-chop-not-processor']
+techniques: []
 equipment: ['chef-knife', 'cutting-board']
 
 modifications:

@@ -149,19 +149,18 @@ steps:
   - text: 'Pack the crust. Spread a 1 cm / ½-inch bed of the salt mixture on the parchment in the shape of the fish, and lay the stuffed porgy on top. Pack the remaining salt mixture firmly over and around the fish, mounding it 1 to 1.5 cm / ½ to ¾ inch thick everywhere and pressing it into a smooth, sealed dome; leave the tail fin poking out as a handle and a doneness probe point if you like. Press out any gaps. The shell must be continuous, since a crack or a thin spot vents the steam the technique depends on.'
     time_min: 6
   - text: 'Bake the fish. Slide the sheet pan into the fully heated 220 C / 425 F oven and bake 25 to 32 minutes by size: about 25 minutes for a 600 g fish, 28 to 30 for a 650 to 700 g fish, adding 4 to 5 minutes per additional 100 g. The crust will harden, turn pale gold, and may craze with fine cracks. Inside the sealed shell the fish steams in its own moisture at a gentle, even heat, cooking edge to spine without the dry radiant blast of an open oven; this self-basting steam is the entire point of the salt crust.'
-    technique: 'salt-crust-baking'
     time_min: 28
   - text: 'Check doneness, then rest. Push a thin metal skewer or cake tester through the crust into the thickest part of the flesh behind the head and leave it 5 seconds; on withdrawal it should feel hot to the lip, or read 52 to 57 C / 126 to 135 F at the spine on an instant-read probe pushed through a small hole. Porgy is lean and dries fast past 60 C, so pull at the low end and let carryover finish it. Rest the fish in its crust 5 minutes out of the oven; the temperature evens out and the flesh sets enough to lift clean.'
     time_min: 6
   - text: 'Build the finishing oil while the fish rests. In a small saucepan over low heat, warm the 45 g / 3 tbsp extra-virgin olive oil with the 4 g / 1 sliced garlic clove until the garlic is fragrant and just barely colored, about 2 minutes. Add the 6 g / 2 anchovy fillets and mash them into the oil; they sizzle and melt away in 30 to 45 seconds into a savory, salty base. This melted-anchovy oil is the umami anchor of the dish, the glutamate that the gently cooked lean flesh needs. Pull off heat and stir in the 8 g / ¼ cup chopped parsley.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 3
   - text: 'Crack the crust tableside. Carry the fish to the table on a platter. Tap firmly around the perimeter of the dome with the back of a heavy spoon or a knife handle to fracture the shell, then lift the top crust away in large pieces; it should come off in slabs, taking the skin and scales with it and exposing the flesh. Brush every loose salt crystal off the fish with a dry pastry brush before serving, since stray crystals are intensely salty and will spike any bite they land in.'
     time_min: 3
   - text: 'Lift, dress, and serve. Run a thin knife or spoon along the spine and lift the top fillet off the bones in clean pieces; remove the skeleton by the tail to free the bottom fillet, peeling away the bottom skin. Spoon the warm anchovy-parsley oil over the flesh and squeeze the reserved 15 g / ¼ lemon over the top for the finishing acid that lifts the gently seasoned fish. Taste a piece: the crust seasons only the surface lightly, so add a pinch of flaky finishing salt at the plate only if a portion reads underseasoned. Serve with the lemon wedges and the rest of the fennel bulb dressed simply alongside.'
     time_min: 3
 
-techniques: ['salt-crust-baking', 'fond-deglaze']
+techniques: ['deglazing']
 equipment: ['sheet-pan', 'small-saucepan', 'instant-read-thermometer']
 
 modifications:

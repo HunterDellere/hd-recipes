@@ -151,7 +151,7 @@ steps:
   - text: 'Slice and serve. With the cured side skin-side down on a board, hold a long thin slicing knife at a shallow 20-degree angle and draw it across the grain in long strokes, cutting wide translucent sheets and releasing each from the skin at the bottom of the stroke. Always slice toward the tail. Fan the slices over dark rye or crispbread, spoon the mustard-dill sauce alongside (do not drown the fish), and set out the lemon wedges from the 1 lemon for a squeeze of finishing acid at the table. Serve cold.'
     time_min: 8
 
-techniques: ['dry-brining', 'curing', 'emulsion']
+techniques: ['dry-brining']
 equipment: ['glass-baking-dish', 'fish-tweezers', 'long-slicing-knife', 'mortar-and-pestle']
 
 modifications:

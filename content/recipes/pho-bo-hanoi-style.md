@@ -184,16 +184,15 @@ ingredients:
 
 steps:
   - text: 'Blanch the bones. Place the 2000 g beef bones, 800 g brisket, and 400 g oxtail (if using) in a stockpot. Cover with cold water by 5 cm. Bring to a hard boil over high heat (do not skim, the blanch step is to drive out the impurities, not extract flavor). Boil 10 minutes; the water will go cloudy and dark with scum. Pour off the entire pot through a colander. Rinse the bones and meat under cold running water to remove any clinging scum. This step is what produces a clear pho broth; skipping it yields a cloudy, gray-tinged broth.'
-    technique: 'bone-blanch'
     time_min: 20
   - text: 'Char the aromatics. Hold each onion half cut-side-down directly in the flame of a gas burner (or under a hot broiler) with tongs for 4 to 6 minutes until blackened across the cut surface and the skin is fully charred. Char the ginger slabs the same way, 3 to 4 minutes per side. The smoke is normal; ventilate the kitchen. The aromatics should look like they were forgotten on a grill, not lightly toasted.'
-    technique: 'open-flame-char'
+    technique: 'comal-charring'
     time_min: 12
   - text: 'Toast the spices. In a dry skillet over medium heat, toast the 6 star anise, 2 cinnamon sticks, 6 cracked cardamom, 6 cloves, 8 g coriander seeds, and 4 g fennel seeds, stirring constantly for 90 seconds to 2 minutes until the spices smell deeply fragrant and just begin to darken. Pull immediately; toasted spices burn fast. Wrap the toasted spices in a piece of cheesecloth tied with kitchen twine, or place in a tea ball or spice bag. Wrapping prevents seeds and broken cinnamon from clouding the broth.'
     technique: 'dry-toasting'
     time_min: 4
   - text: 'Start the simmer. Return the blanched bones and meats to a clean stockpot. Add the 6000 ml / 25 cups cold water; the bones should be covered with 5 cm clearance. Add the charred onion halves, the charred ginger, and the wrapped spice packet. Bring slowly to a bare simmer over medium-low heat, about 30 minutes. Once at a simmer, reduce heat to maintain a tremor at the surface; never a rolling boil (rolling boil emulsifies fat into the broth and clouds it). Skim any foam that rises in the first hour. Simmer partially covered (lid cracked) for 5 hours total.'
-    technique: 'long-simmer-stock'
+    technique: 'simmering'
     time_min: 300
   - text: 'Pull the brisket at the 2-hour mark. The brisket is fully cooked at this point (about 90°C / 195°F internal). Lift out with tongs; transfer to a bowl, cover and refrigerate (chilled brisket slices more cleanly than warm). Continue simmering the bones, oxtail, onion, ginger, and spice packet for the remaining 3 hours.'
     time_min: 2
@@ -204,11 +203,10 @@ steps:
   - text: 'Slice the raw beef. Pull the partially-frozen 400 g sirloin and slice paper-thin (2 mm or less) across the grain on a slight bias. Arrange on a small plate; refrigerate until bowl assembly. Slice the chilled 800 g brisket the same way (3 mm thick, across the grain). Arrange on a separate plate.'
     time_min: 10
   - text: 'Cook the noodles just before serving. Bring a separate pot of water to a hard boil. For dried banh pho, soak in warm water 20 minutes first, then drop into boiling water for 30 to 60 seconds until just tender. For fresh banh pho, loosen the noodles in a colander, then dip in boiling water for 10 to 15 seconds only. Drain immediately; portion 1 to 1.5 cups cooked noodles per bowl.'
-    technique: 'rice-noodle-cook'
     time_min: 5
   - text: 'Assemble each bowl. The broth must be at a hard rolling boil at the moment of serving; this is the only heat that will cook the raw sirloin at the table. Mound the cooked noodles in a deep bowl. Lay 3 to 4 slices of cooked brisket and 4 to 5 slices of raw sirloin on top of the noodles. Scatter a generous handful of sliced scallion, a small handful of cilantro, and a small mound of soaked white onion over the meats. Ladle 400 ml / 1.5 cups of hard-boiling broth directly over the meats; the raw sirloin will turn from red to gray-pink in 15 to 30 seconds. Serve immediately with a lime wedge and optional sliced chili on the side. Diners squeeze the lime over the broth (Hanoi tradition uses lime sparingly; Saigon tradition uses more) and eat with chopsticks (noodles and meat) and a spoon (broth).'
 
-techniques: ['bone-blanch', 'open-flame-char', 'dry-toasting', 'long-simmer-stock', 'rice-noodle-cook']
+techniques: ['comal-charring', 'dry-toasting', 'simmering']
 equipment: ['stockpot', 'fine-mesh-sieve', 'cheesecloth']
 
 modifications:

@@ -51,7 +51,7 @@ steps:
   - text: 'Slice evenly and dry the garlic. Slice the 80 g / about 1 large head of peeled garlic an even 1 to 2 mm thick, or fine-mince it. Uniform thickness is the whole game: thick and thin pieces in the same pan means the thin ones burn before the thick ones crisp. Blot the slices dry on a towel, surface moisture spits in hot oil and steams rather than fries.'
     time_min: 8
   - text: 'Start cold. Put the garlic and the 240 ml / 1 cup neutral oil in a small saucepan together, cold, then set it over medium-low heat. A cold-oil start is the key technique: the garlic dehydrates gradually as the oil comes up to temperature, cooking through evenly instead of searing the outside while the inside stays raw. Dropping garlic into already-hot oil browns it instantly and unevenly.'
-    technique: 'confit-fry'
+    technique: 'oil-poaching'
     time_min: 2
   - text: 'Fry slow and stir. As the oil reaches a gentle, steady bubble (around 140 to 150°C / 285 to 300°F), the 80 g / 1 head of garlic will foam as its water boils off. Stir often with a fork or chopsticks to keep the pieces separate and moving. Hold this gentle simmer-fry for 6 to 10 minutes. The garlic goes translucent, then pale straw, then begins to take on the faintest gold at the edges.'
     time_min: 8
@@ -59,7 +59,7 @@ steps:
     time_min: 2
   - text: 'Keep both. You now have two products from the 80 g / 1 head of garlic: shatter-crisp fried garlic on the plate (about 50 g), and amber garlic-infused oil in the bowl. Cool both completely. Once cold and fully crisp, store the fried garlic in an airtight jar; bottle the oil separately. Use the crisp garlic as a topping and the oil as a finishing or cooking fat anywhere garlic is welcome.'
 
-techniques: ['confit-fry']
+techniques: ['oil-poaching']
 equipment: ['small-saucepan', 'fine-mesh-sieve']
 
 modifications:

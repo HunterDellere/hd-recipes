@@ -161,12 +161,12 @@ steps:
   - text: 'Phase 4, skewer the components. Pull the marinated heart from the refrigerator; thread onto skewers, alternating with potato halves and corn rounds. The canonical Peruvian skewer pattern: 1 potato half, 3 to 4 heart cubes, 1 corn round, 3 to 4 more heart cubes, 1 potato half. Reserve about 50 g of the marinade for basting (do not reuse marinade that touched the raw heart for any other purpose).'
     time_min: 8
   - text: 'Phase 5, grill the skewers. Heat a charcoal or gas grill to very high heat (250 to 290°C / 480 to 550°F at the grate). Brush the grates lightly with neutral oil. Place the skewers on the grill perpendicular to the bars; grill 90 seconds undisturbed until the surface chars and grill marks form. Flip; brush the seared side with reserved marinade; grill 90 seconds on the second side. Turn 90 degrees; grill 60 seconds on the third side; flip and grill 60 seconds on the fourth side. The total grill time is 4.5 to 5 minutes; the heart should read tender (just past the rare stage, similar to a medium-rare steak) and the surface should be deeply charred. Do not overcook; beef heart turns tough quickly past the medium mark.'
-    technique: 'high-heat-grilling'
+    technique: 'grilling'
     time_min: 5
   - text: 'Rest and serve. Transfer the skewers to a plate; rest 3 minutes (the heart juices redistribute and the texture firms slightly). Serve with the ají sauce in a small bowl on the side for dipping; the 60 g lime wedges go on each plate for squeezing over the skewers. The canonical Peruvian anticucho service includes a Pisco sour or a tall glass of chicha morada (Peruvian purple corn drink) on the side.'
     time_min: 4
 
-techniques: ['high-heat-grilling']
+techniques: ['grilling']
 equipment: ['blender', 'charcoal-grill', 'skewers']
 
 modifications:

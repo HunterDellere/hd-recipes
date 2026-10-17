@@ -104,7 +104,7 @@ steps:
   - text: 'With the processor running on continuous low, drizzle in the 100 g / ½ cup olive oil through the feed tube in a steady stream, then add 30 to 60 ml of the reserved ñora soaking liquid (or warm water if using bell pepper) to thin to a thick spoonable consistency, somewhere between a dip and a pourable sauce. Add the 4 g / ¾ tsp salt, pulse to combine, taste and adjust: romesco should read deeply nutty with smoky paprika, sweet pepper-and-tomato, and a clean sherry-vinegar lift; if flat, more salt and vinegar; if sharp, more oil; if too thick, more soaking liquid. Transfer to a serving bowl; the sauce can be served immediately but improves significantly with 2 hours rest at room temperature.'
     time_min: 3
 
-techniques: ['nut-toasting', 'pepper-charring']
+techniques: ['dry-toasting', 'comal-charring']
 equipment: ['food-processor', 'skillet']
 
 modifications:

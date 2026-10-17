@@ -119,7 +119,7 @@ steps:
   - text: 'Taste and adjust: harissa should read deeply chili-forward with smoky paprika, structural caraway-and-coriander aromatics, gentle garlic, and a clean salt-and-acid finish; if flat, an extra 1 g / pinch of fine sea salt and 5 g / 1 tsp lemon juice; if too sharp from the chilies, more roasted pepper; if too thick, more soaking liquid. Transfer to a clean glass jar (about 250 ml capacity); smooth the surface with the back of a spoon; pour the additional 30 g / 2 tbsp olive oil over the surface to form a continuous seal that prevents oxidation. Refrigerate; let rest at least 24 hours before first use so the flavors integrate. Use after each scoop a clean spoon, smooth the surface, and refresh the oil seal.'
     time_min: 2
 
-techniques: ['pepper-charring', 'spice-toasting']
+techniques: ['comal-charring', 'dry-toasting']
 equipment: ['food-processor', 'spice-grinder', 'skillet']
 
 modifications:

@@ -164,14 +164,14 @@ steps:
   - text: 'Build the levain (the night before, 8 to 10 hours before mixing). Combine the 30 g active starter, 100 g bread flour, and 100 g room-temperature water in a clean jar. Stir to a smooth paste, cover loosely so gas can escape, and leave at 22 to 24°C / 72 to 75°F until tripled, domed, bubbled, and pleasantly tangy. Float test: a spoonful dropped in cold water should float, confirming the levain is mature and aerated enough to leaven the heavier seeded dough.'
     time_min: 540
   - text: 'Autolyse the flours. Combine the 700 g bread flour, 150 g whole wheat flour, 50 g rye flour, and 560 g warm water in a large bowl. Mix by hand or with a Danish dough whisk until no dry flour remains; the dough will be shaggy. Cover with a damp towel and rest 45 minutes. During the autolyse the flour fully hydrates, the gluten begins to crosslink passively, and the flour enzymes start converting starch to sugar. Hold the soaker and porridge back until after this rest: adding them now would let the seeds and gelatinized starch interfere with clean gluten development.'
-    technique: 'autolyse'
+    technique: 'bulk-fermentation'
     time_min: 50
   - text: 'Mix in salt, honey, and levain. Add the 22 g fine sea salt, the 15 g honey, and the 200 g matured levain to the autolysed dough. Pinch and fold vigorously by hand for 3 to 4 minutes using a slap-and-fold motion (lift, slap down, fold over) until the salt and levain are fully distributed and the dough turns smoother and stretchier. Developing the gluten now, before the seeds and porridge go in, matters: a strong gluten network is what suspends the heavy seed load without the loaf collapsing dense.'
     time_min: 5
   - text: 'Fold in the soaker and porridge. Add the full 305 g cooled seed soaker and the 230 g cooled oat porridge (broken into clumps) to the dough. Fold and squeeze with a wet hand until the seeds and porridge are evenly dispersed, 2 to 3 minutes. The dough will loosen noticeably as the porridge integrates, then firm back up over the bulk; this slackening is expected and is not a sign to add flour. Cover with the damp towel.'
     time_min: 4
   - text: 'Bulk ferment with stretch-and-folds. Ferment at 22 to 24°C / 72 to 75°F for 4 to 4.5 hours. Perform stretch-and-folds at minutes 30, 60, 90, and 120 (4 sets): wet one hand, reach under one side, lift the dough to full stretch, fold it over the top, rotate the bowl 90 degrees, and repeat 3 more times per set. The folds rebuild the strength that the seeds and porridge interrupt. After the 4th set, leave the dough undisturbed for the remaining time. The rye and whole wheat ferment faster than white flour, so watch the dough rather than the clock: it should rise about 50% with visible surface bubbles and a slightly domed, jiggly mass.'
-    technique: 'stretch-and-fold'
+    technique: 'bulk-fermentation'
     time_min: 255
   - text: 'Pre-shape and bench rest. Lightly flour a clean work surface. Turn the dough out with a wet bench scraper. Pre-shape into a loose round: pull the edges into the center, flip seam-side-down, and drag the dough in tight circles toward you to build surface tension on the bottom. The seeded dough has less stretch than a plain loaf, so handle it firmly but without tearing. Cover with the damp towel and rest 25 to 30 minutes to relax the gluten.'
     time_min: 30
@@ -180,7 +180,7 @@ steps:
   - text: 'Coat the crust in sesame. Have the reserved 30 g sesame seeds spread on a small plate. Lightly mist or wet-brush the exposed underside of the dough now facing up in the banneton (this will become the top crust after the turn-out), then sprinkle the sesame over it and press gently so the seeds adhere. The water gives the seeds something to grip; pressed onto a wet surface, they toast into the crust during the bake instead of falling off.'
     time_min: 3
   - text: 'Cold proof overnight. Cover the banneton with a shower cap or a damp towel and refrigerate at 4°C / 40°F for 12 to 16 hours. The cold slows the yeast to a fraction of its activity while the lactobacilli keep building acidity and aromatic complexity. On a seeded multigrain loaf the long cold proof does double duty: it develops flavor and it gives the soaker and porridge final hours to equilibrate their moisture evenly through the crumb.'
-    technique: 'cold-proof'
+    technique: 'bulk-fermentation'
     time_min: 780
   - text: 'Preheat the oven and Dutch oven. Preheat the oven with the Dutch oven inside at 245°C / 475°F for 45 minutes. The vessel must be fully hot before the dough goes in; a cold start gives a pale crust and weak oven-spring.'
     time_min: 45
@@ -193,7 +193,7 @@ steps:
   - text: 'Cool fully before slicing. Transfer to a wire rack and cool at least 2 hours before slicing, longer than a plain loaf. The crumb keeps cooking from residual heat, and the porridge-held moisture needs time to redistribute and set; slicing warm gives gummy, doughy slices and lets the held water steam off, undoing the moisture retention the soaker and scald were for. This cooling time is non-negotiable for the intended texture.'
     time_min: 120
 
-techniques: ['autolyse', 'stretch-and-fold', 'cold-proof', 'maillard-sear']
+techniques: ['bulk-fermentation', 'maillard-sear']
 equipment: ['large mixing bowl', 'small saucepan', 'Danish dough whisk or wooden spoon', '10-inch banneton (or bowl lined with kitchen towel)', '5 to 7 quart Dutch oven with tight-fitting lid', 'lame, razor blade, or sharp paring knife for scoring', 'parchment paper', 'wire rack for cooling', 'instant-read thermometer']
 
 modifications:

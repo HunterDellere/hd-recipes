@@ -117,7 +117,6 @@ steps:
     technique: 'maillard-sear'
     time_min: 7
   - text: 'Sprinkle the 30 g / ¼ cup flour evenly over the cooked sausage in the pan. Stir constantly with a wooden spoon for 90 seconds; the flour will absorb the rendered fat and form a thick paste coating the sausage. Cook 60 seconds more to toast the flour to a light blond color and burn off the raw-flour taste. This is the roux stage; the structural thickening agent for the gravy.'
-    technique: 'roux'
     time_min: 3
   - text: 'Gradually whisk in the 720 ml / 3 cups warmed whole milk, about 200 ml at a time. Whisk vigorously after each addition to smooth out any lumps before adding more milk; gradual addition prevents the roux from seizing into a clumpy gravy. Add the 6 g / 1 tbsp cracked black pepper and 4 g / 1 tsp salt.'
     time_min: 3
@@ -126,7 +125,7 @@ steps:
   - text: 'Split the hot biscuits in half horizontally. Place 2 biscuit halves on each plate, cut-side up. Ladle a generous 130 g / ½ cup pool of sausage gravy over the biscuits, completely covering the tops and pooling around them. Crack additional black pepper at the table. Serve immediately with a side of fried eggs or fresh fruit; the gravy softens the biscuit surfaces within 5 minutes so plate-to-table speed matters.'
     time_min: 2
 
-techniques: ['maillard-sear', 'roux', 'lamination']
+techniques: ['maillard-sear']
 equipment: ['pastry-cutter', 'sheet-pan', 'biscuit-cutter', 'wide-skillet', 'whisk']
 
 modifications:

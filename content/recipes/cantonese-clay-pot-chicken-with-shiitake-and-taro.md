@@ -156,12 +156,12 @@ steps:
     technique: 'maillard-sear'
     time_min: 8
   - text: 'Lower heat to medium. Add the 30 g smashed ginger coins, 25 g smashed garlic, the 40 g scallion whites, and the 3 dried chilies (if using). Sweat in the rendered fat 2 minutes until fragrant and the garlic edges turn pale gold. Do not let the garlic brown to bitter.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 2
   - text: 'Add the 60 g / ¼ cup Shaoxing wine and scrape the fond off the bottom as it sizzles; let it reduce by half, about 1 minute, to cook off the raw alcohol. Stir in the 45 g / 3 tbsp light soy, 15 g / 1 tbsp dark soy, and 20 g / 2 tbsp rock sugar until the sugar dissolves. Pour in the 300 ml / 1¼ cups reserved shiitake liquid.'
     time_min: 3
   - text: 'Return the chicken skin-side-up, nestling the thighs so they sit three-quarters submerged with the skin above the liquid line. Tuck in the halved shiitake caps and the 350 g taro chunks around them. Bring to a gentle simmer, then cover and reduce to low. Braise 30 minutes; the taro should be knife-tender and beginning to fray at the edges.'
-    technique: 'red-cooking'
+    technique: 'braising'
     time_min: 30
   - text: 'Uncover. Scatter in the 150 g torn oyster mushrooms, pushing them into the liquid. Raise heat to medium and simmer uncovered 10 to 12 minutes to cook the mushrooms and reduce the sauce by roughly a third; it should turn glossy and coat a spoon. Tilt the pot and baste the chicken skin with the reducing liquid two or three times. The fraying taro will thicken the sauce on its own; resist adding starch.'
     time_min: 12
@@ -169,7 +169,7 @@ steps:
     time_min: 2
   - text: 'Rest 5 minutes uncovered so the sauce tightens. Spoon the chicken, taro, and mushrooms over hot jasmine rice, pour the glossy sauce across, and shower with the reserved sliced scallion greens (from the 40 g scallions). Serve immediately.'
 
-techniques: ['maillard-sear', 'red-cooking', 'fond-deglaze']
+techniques: ['maillard-sear', 'braising', 'deglazing']
 equipment: ['dutch-oven', 'wide-skillet']
 
 modifications:

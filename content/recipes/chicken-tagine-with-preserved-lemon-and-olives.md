@@ -174,12 +174,12 @@ steps:
   - text: 'Heat the 45 g / 3 tbsp olive oil in a heavy 5-quart Dutch oven (or in the base of a tagine) over medium heat. Add the 300 g / 2 onions (sliced); sweat 10 to 12 minutes, stirring occasionally, until fully softened and translucent but not browned. The onions should look melted and golden, not caramelized; for tagine they cook into a soft bed under the chicken.'
     time_min: 11
   - text: 'Add the 16 g / 4 garlic cloves and 20 g grated ginger; cook 90 seconds, stirring, until fragrant. Add the 4 g / 2 tsp turmeric, 3 g / 1½ tsp cumin, 2 g / 1 tsp coriander, 2 g / 1 tsp paprika, 1 g / ½ tsp cinnamon, and 2 g / 1 tsp black pepper; stir 30 seconds to bloom the spices in the onion fat (the oil will turn deep yellow-orange).'
-    technique: 'spice-bloom'
+    technique: 'blooming-aromatics'
     time_min: 2
   - text: 'Pour the bloomed saffron liquid into the pot along with the 200 g / ¾ cup water. Add half the chopped 30 g cilantro and the 15 g parsley. Nestle the chicken pieces into the onion bed, skin-side up, in a single layer; press gently so the bottoms of the pieces are submerged but the skin is exposed. The skin out of the liquid will stay crisp; the meat below braises in the steam.'
     time_min: 3
   - text: 'Bring to a steady simmer; cover (with the conical tagine lid or the Dutch oven lid). Reduce heat to low; braise 45 minutes, basting the exposed chicken skin with the pot liquid every 15 minutes. The pot should hold a steady tremor, not a rolling boil; if you hear aggressive bubbling reduce the heat further.'
-    technique: 'tagine-braise'
+    technique: 'braising'
     time_min: 45
   - text: 'After 45 minutes, add the 60 g preserved lemon strips and the 150 g rinsed olives, scattering around the chicken (not directly on the skin tops). Add the 4 g / 1 tsp remaining salt. Cover and simmer 15 to 20 more minutes until the chicken is fork-tender (the meat pulls easily from the bone) and the sauce has reduced into a glossy, deeply golden gravy that pools at the bottom of the pot.'
     time_min: 18
@@ -188,7 +188,7 @@ steps:
   - text: 'Scatter the remaining chopped cilantro over the top. Serve directly from the tagine or Dutch oven at the table: place a piece of chicken on each plate, ladle sauce, olives, and lemon strips around, with warm flatbread (khobz, msemen, or pita) on the side for sopping, or over steamed couscous.'
     time_min: 1
 
-techniques: ['tagine-braise', 'saffron-bloom', 'spice-bloom']
+techniques: ['braising', 'blooming-aromatics']
 equipment: ['tagine-or-dutch-oven', 'tight-lid', 'mortar', 'microplane']
 
 modifications:

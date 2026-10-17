@@ -132,12 +132,11 @@ steps:
     technique: 'dry-brining'
     time_min: 10
   - text: 'Shimofuri blanch. Bring the 1000 ml / 4 cups water to just off a boil (fine bubbles, not a rolling churn) in a saucepan or kettle, and set a bowl of cold water beside it. Lay the salted saba steaks in a colander or sieve and ladle the hot water over them, or lower them in for 5 seconds, until the surface turns pale-opaque and gray scum and threads of coagulated blood lift off the cut faces. Immediately plunge the steaks into the cold water and rinse gently with your fingers, clearing away any clinging scum, scales, or membrane. Lift out and pat dry. This is shimofuri: the brief scald sets a protective surface and strips the lipid off-notes and blood that would otherwise cloud the miso liquid.'
-    technique: 'shimofuri-blanch'
     time_min: 4
   - text: 'Build the simmer. In a wide saucepan or deep skillet that holds the 4 steaks in one layer, combine the 100 g / scant ½ cup sake, the 45 g / 3 tbsp mirin, the 100 ml / scant ½ cup water, the 12 g / 1 tbsp granulated sugar, and the 20 g julienned ginger (from the 30 g knob). Bring to a simmer over medium-high and let it bubble 1 to 2 minutes to cook off the raw alcohol edge of the sake.'
     time_min: 3
   - text: 'Simmer the fish. Slide the saba steaks into the liquid skin-side-up in a single layer; the liquid should come about halfway up the fish, not cover it. Bring back to a gentle simmer, then lower to a steady tremor. Cut a circle of parchment with a small vent hole and lay it directly on the surface as an otoshibuta (drop lid); it keeps the exposed tops basted and the steaks still so they do not break. Simmer 8 to 10 minutes, spooning liquid over the tops once or twice, until the flesh is opaque and just-set through and the liquid has reduced by about a third. The fish is fully cooked at this point, unlike a seared saba, a misoni is meant to be cooked through and tender.'
-    technique: 'otoshibuta-simmer'
+    technique: 'simmering'
     time_min: 10
   - text: 'Add the miso off the boil. Pull the pan to a bare simmer or off the heat for a moment. Ladle 2 to 3 tbsp of the warm simmer liquid into a small bowl, add the 45 g / 3 tbsp red miso, and whisk smooth so it disperses without lumps. Pour the loosened miso back around the fish (not directly on the steaks, so they do not break), swirl the pan to combine, and return to a gentle simmer. Keep it under a hard boil: a prolonged rolling boil drives off the volatile aroma compounds that make miso smell like miso, so this stage is deliberately gentle.'
     time_min: 2
@@ -146,7 +145,7 @@ steps:
   - text: 'Plate and serve. Lift each saba steak onto a warmed plate or into a shallow bowl over a mound of the steamed rice, skin-side-up, and spoon the miso glaze and the simmered ginger julienne over the top. Finish each plate with a small tangle of the 10 g grated ginger and a scatter of the 12 g / 1 to 2 stalks bias-sliced scallion greens; the raw ginger and scallion are the bright counter to the rich glazed fish. Serve immediately with the rice, pulling each bite of fish through the glaze and eating it against the plain rice.'
     time_min: 2
 
-techniques: ['fish-skin-scoring', 'dry-brining', 'shimofuri-blanch', 'otoshibuta-simmer']
+techniques: ['fish-skin-scoring', 'dry-brining', 'simmering']
 equipment: ['wide-saucepan-or-deep-skillet', 'fine-mesh-sieve', 'parchment-drop-lid', 'fine-grater']
 
 modifications:

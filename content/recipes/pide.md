@@ -182,7 +182,7 @@ steps:
   - text: 'Make the dough: in a large bowl, whisk together the 400 g / 3⅓ cups bread flour, 4 g / 1¼ tsp instant yeast, 6 g / 1½ tsp sugar, and 7 g / 1¼ tsp fine sea salt. In a separate bowl, whisk together the 180 g / ¾ cup warm milk, 50 g / ¼ cup yogurt, 50 g / 1 egg, and 30 g / 2 tbsp melted butter. Add the wet to the dry; mix with a wooden spoon until shaggy, then turn onto a clean surface and knead 8 to 10 minutes until smooth, elastic, and tacky but not sticky. (Or knead 6 minutes in a stand mixer with the dough hook.) The dough should pass the windowpane test: a small piece stretched between fingers should thin to translucent without immediately tearing.'
     time_min: 12
   - text: 'Place the dough in a bowl lightly oiled with the 15 g / 1 tbsp olive oil; turn to coat. Cover with a damp towel and rise at warm room temperature 90 minutes, until doubled and visibly puffed.'
-    technique: 'bulk-rise'
+    technique: 'bulk-fermentation'
     time_min: 90
   - text: 'While the dough rises, make the topping: in a large bowl, combine the 400 g ground lamb, 200 g / 1 onion (diced), 100 g / ½ bell pepper (diced), 100 g / 1 small tomato (diced), 20 g chopped parsley, 15 g / 1 tbsp tomato paste, 3 g / 1½ tsp pul biber, 2 g / 1 tsp cumin, 8 g / 2 tsp kosher salt, and 2 g / 1 tsp black pepper. Mix with your hands until uniform; the texture should be wet, loose, and pourable (not a tight meatball mixture; the topping needs to spread thin on the dough). Refrigerate until ready to top.'
     time_min: 8
@@ -193,12 +193,11 @@ steps:
   - text: 'Spread one-quarter of the meat topping (about 240 g) over the dough, leaving a 1.5 cm border bare around the edges. Press the topping flat with the back of a spoon so it is in even contact with the dough; thick mounds bake unevenly and the dough underneath stays raw. Fold the long edges of the dough up over the topping border by about 1 cm to form the boat walls; pinch the two short ends together firmly to form the pointed boat tips. Brush the visible dough rim with the beaten 18 g / 1 yolk-and-milk wash.'
     time_min: 5
   - text: 'Transfer the shaped pide to a sheet of parchment, slide onto the preheated stone, and bake 10 to 12 minutes until the rim is deep golden-mahogany and the topping has browned and bubbled (the meat surface should look dry and crisped at the edges, not wet and gray). Repeat with the remaining 3 portions; keep finished pide warm under foil while you bake the rest.'
-    technique: 'high-heat-bake'
     time_min: 12
   - text: 'Brush each hot pide rim with the 30 g / 2 tbsp melted butter (split across the 4 pide). Scatter the 8 g / 2 tbsp chopped parsley over the hot tops. Cut into 4 to 5 cross-section pieces, serve immediately with lemon wedges for squeezing over the meat layer; the acid is structural for cutting the lamb richness.'
     time_min: 2
 
-techniques: ['bulk-rise', 'high-heat-bake']
+techniques: ['bulk-fermentation']
 equipment: ['baking-stone', 'rolling-pin', 'sheet-pan', 'pastry-brush']
 
 modifications:

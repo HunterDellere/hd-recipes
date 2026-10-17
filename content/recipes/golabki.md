@@ -164,14 +164,13 @@ ingredients:
 
 steps:
   - text: 'Bring the 4000 ml / 4 liters water to a hard boil in a large pot with the 20 g / 2 tbsp kosher salt. Submerge the cored cabbage head core-side down, weighting with a heatproof plate if needed to keep it submerged. After 3 minutes, the outer layer of leaves will be soft and pliable; pull the head out with tongs, peel off the 4 to 6 outermost leaves (which should come away easily), and return the cabbage to the boiling water. Repeat in 2 to 3 minute cycles, pulling 4 to 6 leaves each cycle, until you have 14 to 16 large pliable leaves. Lay the leaves out flat on a kitchen towel to drain.'
-    technique: 'blanch'
     time_min: 20
   - text: 'Once the leaves are out, lay each one flat and shave down the thick central rib with a knife held parallel to the leaf surface. The rib should be thinned to roughly the thickness of the leaf around it so the leaf rolls without cracking. Discard the rib trimmings.'
     time_min: 8
   - text: 'Par-cook the rice. Bring 1 liter of water to a boil in a small pot with a pinch of salt. Add the 100 g / ½ cup rinsed long-grain rice and boil 8 minutes (the rice is firm with a slight crunch in the center, deliberately under-cooked). Drain in a fine-mesh sieve and rinse briefly under cold water to stop the cook. Set aside to cool.'
     time_min: 10
   - text: 'Cook the onion for the filling. In a small skillet, melt the 30 g / 2 tbsp butter over medium heat. Add the 200 g / 1 large diced yellow onion and cook 6 to 8 minutes, stirring every 2 minutes, until soft and just golden. Spread on a plate to cool fully (5 to 10 minutes); hot onion starts cooking the pork as it sits.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 12
   - text: 'In a large bowl, combine the 700 g / 1½ lb ground pork, the cooled par-cooked rice (about 200 g cooked weight), the cooled sautéed onion, the 1 egg, the 8 g / 2 tsp kosher salt, the 4 g / 1¼ tsp black pepper, the 5 g / 2 tsp paprika, the 12 g / 3 tbsp dill, the 10 g / 2 tbsp parsley, and the 10 g / 3 cloves microplaned garlic. Mix thoroughly with your hands for 60 to 90 seconds; the mixture should be uniform and slightly tacky.'
     time_min: 5
@@ -182,12 +181,12 @@ steps:
   - text: 'Assemble for baking. Tear or chop any leftover cabbage leaves (the inner small ones that did not separate cleanly) and spread across the bottom of a 6 to 7 quart Dutch oven; this layer prevents the rolls from sticking and burning. Arrange the cabbage rolls seam-side down in the pot in a tight single layer; if needed, stack a second layer on top. Tuck the 2 bay leaves between the rolls. Pour the tomato sauce over the rolls; the sauce should come about three-quarters of the way up the rolls. If the rolls are not nearly submerged, add a splash more stock.'
     time_min: 10
   - text: 'Cover with the lid (or with parchment paper and foil tightly sealed if your pot has no lid). Bake at 165 °C / 325 °F for 90 minutes. The cabbage should be silken-tender, the filling should be cooked through and firm, and the sauce should be deeply tomato-flavored. Pull from the oven and rest covered for 10 minutes before serving.'
-    technique: 'braise'
+    technique: 'braising'
     time_min: 100
   - text: 'Serve 2 rolls per plate, spooned over with several spoonfuls of the tomato-stock braising sauce. Dollop generously with the 200 g / ¾ cup sour cream alongside; the sour cream is the canonical Polish finish and tempers the tomato acid. Boiled potatoes or mashed potatoes are the traditional accompaniment.'
     time_min: 3
 
-techniques: ['blanch', 'dry-sweat', 'braise']
+techniques: ['sweating', 'braising']
 
 modifications:
   - for: 'cabbage'

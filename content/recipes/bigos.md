@@ -156,24 +156,24 @@ steps:
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Add the 250 g / 1 large diced yellow onion to the pot and cook 8 to 10 minutes, stirring every 2 minutes, until deep golden brown and soft. The slow caramelization is the structural base of the stew.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 9
   - text: 'Push the onions to one side. Add the 30 g / 2 tbsp tomato paste to the empty side and fry 2 minutes, stirring constantly, until it darkens to brick red. Stir the onions back through with the 8 g / 1 tbsp sweet paprika and cook 30 seconds (paprika scorches fast, watch it).'
-    technique: 'bloom-spice'
+    technique: 'blooming-aromatics'
     time_min: 3
   - text: 'Pour in the 250 ml / 1 cup red wine and stir to deglaze, scraping up any browned bits from the bottom of the pot. Simmer 2 minutes until the alcohol smell burns off. Add the strained porcini soaking liquid (about 280 ml after filtering) and the prune soaking liquid (about 180 ml).'
     time_min: 4
   - text: 'Add the 600 g / 3 cups packed sauerkraut, the 600 g / half-head shredded fresh cabbage, the chopped porcini, the chopped prunes, the 4 g / 1½ tsp caraway, the 3 g / 8 to 10 crushed juniper berries, the 3 bay leaves, the 2 g / 6 to 8 allspice berries, the seared pork, and the 350 g / 12 oz sliced kielbasa. Stir thoroughly to combine; the cabbage will heap up well above the pot rim at this stage, which is correct.'
     time_min: 5
   - text: 'Bring to a simmer over medium heat, then drop to low and cover. Cook covered for 2 hours, stirring every 30 minutes to redistribute the cabbage and prevent the bottom from sticking. The cabbage volumes down dramatically over the first hour as it wilts and releases its water; what was a heaping pot becomes a half-pot of dark glossy stew. The pork shoulder breaks down into pull-apart tender pieces by the end of the 2 hours.'
-    technique: 'braise'
+    technique: 'braising'
     time_min: 120
   - text: 'Uncover and simmer for another 30 to 45 minutes, stirring every 10 minutes, to reduce any excess liquid and concentrate the stew. The finished bigos should be glossy and thick, with the cabbage soft but still showing distinct ribbons, the meat pull-apart tender, and a visible sheen of fat across the surface. Taste; bigos at this stage should read deeply spiced, faintly sweet from the prune, tangy from the kraut, smoky from the bacon and kielbasa. Adjust salt only at the very end; the smoked meats and the kraut both carry salt.'
     time_min: 35
   - text: 'Pull from heat. Rest covered for 15 minutes off heat. Discard the bay leaves (the juniper and allspice can stay; diners pick around them or eat them, both work). Serve with crusty rye bread for the day-1 meal. Refrigerate the rest in a covered container for at least 24 hours; the dish improves dramatically over 3 to 5 days of refrigerated rewarming. Reheat individual portions in a small saucepan over low heat for 10 minutes, or the whole pot in a 150 °C oven covered for 30 minutes.'
     time_min: 17
 
-techniques: ['maillard-sear', 'dry-sweat', 'bloom-spice', 'braise']
+techniques: ['maillard-sear', 'sweating', 'blooming-aromatics', 'braising']
 
 modifications:
   - for: 'protein'

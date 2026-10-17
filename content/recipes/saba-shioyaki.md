@@ -126,12 +126,12 @@ steps:
   - text: 'Rinse and dry. Brush both sides of the cured fillets with the 15 g / 1 tbsp sake to lift residual fishy notes, then pat thoroughly dry once more (the cure keeps drawing water, and wet skin steams rather than crackles). Lay the fillets skin-side-up on the rack.'
     time_min: 2
   - text: 'Grill skin-side-up, no flip. Slide the tray under the broiler and grill 5 to 7 minutes without turning. The dry radiant heat works top-down: the rendering subcutaneous fat bastes the skin, the cross-hatch edges curl and char, and the skin blisters to a deep mahogany, lacquered crackling. Watch from minute 4; broilers vary and the thin skin goes from bronzed to scorched fast. The fish is done when the thickest part flakes cleanly under a fork and the flesh is opaque and just-set throughout (around 60°C internal, fully cooked, unlike a pan-seared medium-rare saba). If the fillets are thick and the skin colors before the center sets, drop the rack one level and give it another minute.'
-    technique: 'broiling'
+    technique: 'grilling'
     time_min: 7
   - text: 'Plate and serve. On each of two warmed plates, mound half the drained 200 g daikon oroshi as a loose hill and lay a fillet skin-side-up beside it so the crackling stays clear of liquid. Pour the 20 g / 4 tsp light soy sauce over the oroshi, not the skin (soy on the skin softens the crackling instantly); add the optional few drops of 2 g / ½ tsp toasted sesame oil to the oroshi. Scatter the 10 g / 1 stalk thin scallion rings over the fish and set a 25 g lemon wedge on each plate. The diner squeezes the citrus over the fish, pulls each bite through the soy-dressed daikon, and eats with the steamed rice; the rice, the radish, and the acid are the structural counters to the rich saba, not garnish.'
     time_min: 2
 
-techniques: ['fish-skin-scoring', 'dry-brining', 'broiling']
+techniques: ['fish-skin-scoring', 'dry-brining', 'grilling']
 equipment: ['broiler-or-fish-grill', 'oroshigane-or-microplane', 'fine-mesh-sieve', 'wire-rack']
 
 modifications:

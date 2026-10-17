@@ -170,7 +170,7 @@ steps:
   - text: 'Lift the boudin out with tongs; transfer to a sheet pan. Pat dry. Serve immediately, or cool and refrigerate up to 4 days. Eat by cutting the links into 8 cm segments and squeezing the soft filling out of the casing directly into your mouth (the canonical Cajun roadside method, casing discarded), or by slicing into 1 cm rounds and pan-searing in butter 90 seconds per side until the cut sides brown. Serve with Crystal hot sauce and a cold beer.'
     time_min: 5
 
-techniques: ['braising', 'sausage-stuffing']
+techniques: ['braising']
 equipment: ['meat-grinder', 'sausage-stuffer', 'wide-poach-pot', 'instant-read-thermometer']
 
 modifications:

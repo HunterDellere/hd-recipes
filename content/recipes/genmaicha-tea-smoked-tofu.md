@@ -99,14 +99,13 @@ steps:
   - text: 'Build the smoking rig. Line a wok (or a deep heavy pot) completely with two layers of heavy foil, letting it overhang the rim. Pile the 30 g / ½ cup genmaicha, 50 g / ¼ cup raw rice, and 30 g / 2 tbsp brown sugar in the center. Set a wire rack or a steamer trivet above the mixture, leaving a few centimeters of clearance, and lay the dried tofu on the rack. Have a tight lid ready.'
     time_min: 5
   - text: 'Start the smoke. Set the wok over medium-high heat with the lid off until the mixture begins to smoke steadily, 3 to 5 minutes, you will see wisps rise and smell toasted tea and caramel. As soon as it is smoking in earnest, put the lid on and crimp the overhanging foil up and over the lid edge to seal in the smoke.'
-    technique: 'tea-smoking'
     time_min: 5
   - text: 'Smoke covered, then rest off heat. Drop the heat to medium and smoke, sealed, for 12 minutes. Then turn off the heat and leave the wok sealed and undisturbed another 5 minutes so the residual smoke keeps working as it cools, do not lift the lid early or you vent the smoke and lose color. The tofu should emerge burnished amber-brown and smell distinctly of tea smoke.'
     time_min: 17
   - text: 'Finish and serve. Lift the tofu out and brush it with the 10 g / 2 tsp toasted sesame oil while warm, which adds gloss and a nutty top note. Let it cool at least to warm (the smoke flavor settles and deepens as it rests). Slice into thick slabs or batons, scatter with the 15 g / 1 sliced scallion, and serve. It is excellent cold, sliced over rice or into the green tea ochazuke, or quickly seared cut-side-down for a crisp edge.'
     time_min: 3
 
-techniques: ['tea-smoking']
+techniques: []
 equipment: ['wok', 'wire-rack', 'tofu-press']
 
 modifications:

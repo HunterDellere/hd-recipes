@@ -97,14 +97,13 @@ steps:
   - text: 'Add the 60 g / ½ small onion roughly chopped, the 20 g / 4 to 5 crushed garlic cloves, the 25 g / 5 cm knob of sliced ginger, the 4 g / 1 tsp fenugreek seed, the 3 g / 6 cardamom pods crushed, the 1 g / 4 cloves, the 2 g / 1 short stick cinnamon, the 2 g / ½ tsp black peppercorns, and the 1 g / ½ tsp dried oregano (or koseret if available). Stir once with a wooden spoon to submerge the aromatics in the melted butter. The water in the aromatics will steam off over the next 30 minutes; expect mild sizzling at the start, fading as the moisture evaporates.'
     time_min: 2
   - text: 'Maintain a bare simmer (the lowest setting where you see occasional small bubbles rising through the fat) for 30 to 40 minutes without stirring. Watch the bottom of the pan, not the top; the milk solids will gradually drop out of suspension and accumulate at the bottom, where they slowly toast from white to pale-gold to deep-amber. The fat itself should stay clear and deepen in color from yellow to gold to deep gold. The aromatics on top will brown gently and the smell will shift from buttery-spicy to deeply nutty-spicy as the solids approach amber.'
-    technique: 'clarification'
     time_min: 35
   - text: 'Pull the pot from heat when the milk solids at the bottom are deep amber (the color of a roasted hazelnut, not yet of coffee) and the smell is fully nutty-spicy. The window is about 5 minutes wide; pulling 2 minutes early leaves the fat under-flavored, pulling 5 minutes late risks the solids burning past the brown threshold and the fat going bitter. Let the pot sit off heat for 5 minutes so the solids settle.'
     time_min: 7
   - text: 'Place a fine-mesh strainer lined with a coffee filter (or two layers of cheesecloth) over a clean dry 500 ml glass jar. Carefully ladle the hot spiced butter through the strainer in batches; the filter catches both the aromatic solids and the toasted milk solids and yields a perfectly clear deep-gold fat. Do not press on the filter or stir the strained solids back in; the silt clouds the finished niter kibbeh and shortens its shelf life. Discard the solids (or scrape into rice or vegetables for a less-clean by-product). Let the jar cool uncovered for 1 hour, then cap tightly. The fat sets to a soft scoopable solid at room temperature.'
     time_min: 8
 
-techniques: ['clarification']
+techniques: []
 
 substitutions:
   - for: 'fenugreek seed (the defining warm-bitter note)'

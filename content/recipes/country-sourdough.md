@@ -109,7 +109,7 @@ steps:
   - text: 'Cool fully before slicing. Transfer the bread to a wire rack; let cool at least 1 hour before slicing (2 hours is better). The cooling is structural; the crumb continues to cook from residual heat for the first 30 minutes out of the oven, and slicing while warm produces gummy doughy slices instead of clean fully-set crumb. The cooling time is non-negotiable for the canonical sourdough texture.'
     time_min: 60
 
-techniques: ['autolyse', 'stretch-and-fold', 'cold-proof', 'maillard-sear']
+techniques: ['bulk-fermentation', 'maillard-sear']
 equipment: ['large mixing bowl', 'Danish dough whisk or wooden spoon', '10-inch banneton (or bowl lined with kitchen towel)', '5 to 7 quart Dutch oven with tight-fitting lid', 'lame, razor blade, or sharp paring knife for scoring', 'parchment paper', 'wire rack for cooling', 'instant-read thermometer']
 
 modifications:

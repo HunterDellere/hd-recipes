@@ -112,7 +112,6 @@ ingredients:
 
 steps:
   - text: 'Prep all the vegetables before any cooking starts (the cook is brisk once the pork browns, and prep should be done). Peel the 200 g daikon and cut into icho-giri (quarter-moons): halve the round daikon lengthwise to make two half-cylinders, then halve each half-cylinder lengthwise again to make four quarter-rounds, then slice across into 5 mm-thick quarter-moons. Peel the 100 g carrot and cut into half-moons (halve the long round of carrot lengthwise, then slice into 5 mm half-rounds) or roll-cut for irregular wedges. Scrub (do not peel) the 80 g burdock root and shave into sasagaki: hold the burdock at one end like a pencil and run the knife blade against it at a low angle, rotating the root as you go, producing thin uneven flakes 2 to 3 cm long. Immediately drop the burdock shavings into a bowl of cold water with 1 tsp rice vinegar to stop oxidation, soak 5 minutes, drain. Parboil the 150 g konnyaku: drop the block into a small pot of boiling water for 60 seconds, drain, cool briefly, then tear by hand into rough 2 cm chunks (tearing is structural, the irregular surfaces grip more broth). Separate the 80 g shimeji into individual stems if using.'
-    technique: 'prep-staging'
     time_min: 15
   - text: 'Brown the pork. Heat a 4-quart heavy pot (Dutch oven, donabe, or any heavy stockpot) over medium-high heat. Add the 8 g / 2 tsp toasted sesame oil. When the oil is shimmering and just before it smokes, add the 300 g sliced pork belly in a single layer (if it doesn''t fit, brown in two batches). Cook undisturbed for 60 to 90 seconds until the bottom face is deep mahogany, then stir and continue to cook for another 90 seconds. The pork should be about 70% cooked through with significant rendered fat in the pot bottom. The browning is structural for tonjiru flavor, an under-browned pork base produces a dish that reads pale and uninteresting; aim for visible Maillard color on most of the pork pieces.'
     technique: 'maillard-sear'
@@ -129,7 +128,7 @@ steps:
   - text: 'Plate and serve. Ladle into 4 large bowls (about 400 ml each), distributing the pork, vegetables, and konnyaku evenly. Scatter the 30 g sliced scallion greens over each bowl. Pass the shichimi togarashi at the table for each diner to add to taste (the canonical move is a small pinch per bowl); some Japanese cooks add the shichimi directly to each bowl in the kitchen. Serve immediately with a bowl of plain Japanese rice on the side (the rice is essential, tonjiru is built to be eaten alongside rice rather than alone), and optionally a small pickle (tsukemono, takuan, or a quick-pickled cucumber). Reheating tonjiru to a boil ruins the miso character; if you have leftovers, gently re-warm to about 75°C in a covered pot, never re-boil.'
     time_min: 2
 
-techniques: ['prep-staging', 'maillard-sear', 'simmering']
+techniques: ['maillard-sear', 'simmering']
 equipment: ['heavy-pot-or-dutch-oven', 'fine-mesh-sieve', 'sharp-knife-for-sasagaki']
 
 modifications:

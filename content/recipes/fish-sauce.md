@@ -53,19 +53,17 @@ steps:
   - text: 'Rinse the 1500 g / 3.3 lb fresh whole anchovies briefly in cold water to wash off grit, and drain well. Leave them whole and un-gutted; their digestive enzymes are part of what breaks the protein down. Sort out anything that is not fresh, the ferment is only as clean as the fish that start it.'
     time_min: 20
   - text: 'Layer fish and salt. In a clean non-reactive vessel (glass, food-grade ceramic crock, or food-grade plastic, never bare metal), lay down a base layer of the 500 g / 2 cups coarse sea salt, then alternate layers of anchovies and salt, ending with a generous salt cap on top. Aim for the full 3-to-1 fish-to-salt ratio distributed through the layers. The salt cap on top is a barrier against surface spoilage and mold.'
-    technique: 'salt-fermentation'
     time_min: 20
   - text: 'Weight and submerge. Place a clean plate or a food-grade follower on top of the fish and weight it down (a water-filled zip bag or a scrubbed stone works) so the fish stay pressed below the liquid that will draw out over the next days. If after 24 to 48 hours the salt-and-fish liquid (the brine the salt pulls from the fish) does not cover the solids, top up with the 250 ml / 1 cup light brine. Keeping everything submerged under brine is what keeps mold and air-loving spoilage organisms out.'
     time_min: 5
   - text: 'Cover and ferment warm. Cover the vessel with a breathable cloth secured with a band, or a loose lid that lets gas escape but keeps insects out. Set it in a warm spot (ideally 25 to 35 °C / 77 to 95 °F) out of direct sunlight. Leave it to ferment and autolyze for 6 to 12 months. Over this time the fish gradually dissolve and the liquid turns from cloudy gray to a clear, deep amber-to-mahogany. Stir or check monthly: the smell should evolve from raw-fishy to deeply savory and funky-umami; persistent ammonia reek, fuzzy mold on the surface above the brine, or any pink or black slime means something went wrong (usually under-salting or fish exposed above the brine), and the batch should be discarded.'
-    technique: 'salt-fermentation'
     time_min: 10
   - text: 'Draw the first press. When the liquid is clear amber and smells savory rather than raw (6 months at the earliest, often closer to a year), ladle or siphon the clear liquid off the top without disturbing the sediment. Filter it through several layers of cheesecloth, then through a coffee filter or fine paper for clarity. This first-press liquid is nuoc mam nhi, the highest grade, clear and intensely savory. Bottle it in clean glass.'
     time_min: 30
   - text: 'Optional second press, then store. For a second-grade sauce, cover the remaining solids with a fresh light brine (about 200 g salt per liter of water), steep two to four weeks, and draw and filter again; this thinner liquid is used for cooking rather than dipping. Store all finished fish sauce in sealed glass in a cool dark pantry. Taste the first press against a trusted commercial bottle to calibrate; a good homemade nuoc mam reads clean, deeply savory, and salty, with no harsh ammonia note.'
     time_min: 15
 
-techniques: ['salt-fermentation']
+techniques: []
 equipment: ['fermentation-crock', 'cheesecloth', 'fine-mesh-sieve']
 
 modifications:

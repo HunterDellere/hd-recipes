@@ -154,7 +154,7 @@ steps:
   - text: 'Toast the bread: if using fresh pide, cut into 2 cm cubes and toast on a sheet pan at 200°C / 400°F for 5 minutes until the surface is dry and crisp. Day-old pide can be cubed and used directly.'
     time_min: 6
   - text: 'Sear the meat: heat a large heavy skillet (cast iron or carbon steel) over high heat until smoking, 3 to 4 minutes. Add the 15 g / 1 tbsp neutral oil. Working in two or three batches (do not crowd the pan; crowded meat steams instead of searing), add a single layer of marinated lamb slices and cook 60 to 90 seconds per side until deeply browned with crisp edges. Transfer each batch to a warm plate; deglaze any heavy fond between batches with 30 g water and scrape it back over the cooked meat (this is the structural meat juice for the dish).'
-    technique: 'high-heat-sear'
+    technique: 'maillard-sear'
     time_min: 8
   - text: 'Assemble the plates: divide the 300 g bread cubes among 4 wide shallow plates as the base layer. Ladle one-quarter of the warm tomato sauce over the bread of each plate (about 100 g per plate); the bread should be visibly soaked but not drowning. Mound one-quarter of the seared meat on top of the soaked bread on each plate.'
     time_min: 4
@@ -164,7 +164,7 @@ steps:
   - text: 'Serve immediately with a small bowl of the 300 g Greek yogurt (about 75 g per person) on the side. The diner alternates bites of meat-and-bread with cool yogurt; the contrast of hot brown butter and cold yogurt is the structural rhythm of the dish. A simple side salad of sliced tomato, cucumber, and red onion dressed with lemon and olive oil is the canonical Bursa accompaniment.'
     time_min: 1
 
-techniques: ['yogurt-marinade', 'high-heat-sear', 'brown-butter']
+techniques: ['maillard-sear', 'brown-butter']
 equipment: ['heavy-skillet', 'small-saucepan', 'box-grater']
 
 modifications:

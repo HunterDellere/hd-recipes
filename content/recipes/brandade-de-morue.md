@@ -147,7 +147,7 @@ steps:
   - text: 'Confirm the desalt. The 450 g / 1 lb soaked salt cod should have plumped and softened over its 24 to 48 hours in cold water. Tear off a corner and taste it raw: it should read like a well-seasoned fresh fish, not a salt lick. If it is still aggressively salty, soak another 6 to 12 hours with one more water change. Drain, pat dry, and cut into 6 cm pieces.'
     time_min: 2
   - text: 'Poach the cod. Combine the cod pieces, the 500 ml / 2 cups whole milk, the 18 g / 4 to 5 whole peeled garlic cloves, the 1 bay leaf, and the 2 g / 1 tsp whole black peppercorns in a saucepan. Add no salt. Bring to a bare tremor over medium-low heat (small bubbles at the edge, never a rolling boil) and hold at 70 to 80 °C for 8 to 10 minutes, until the cod flakes apart at the touch of a fork. Boiling toughens the protein and curdles the milk; the gentle poach keeps the flesh tender and leaches the collagen and gelatin that will later help carry the oil. Lift the cod and the poached garlic out with a slotted spoon. Reserve the warm poaching milk, strain out the bay and peppercorns.'
-    technique: 'low-temperature-poaching'
+    technique: 'poaching'
     time_min: 12
   - text: 'Boil the potato. While the cod poaches, cover the 250 g / 2 medium waxy potato chunks with cold water in a separate pot, add no salt, and bring to a simmer. Cook 12 to 15 minutes until a knife slides through with no resistance. Drain, return to the dry hot pot, and let them steam-dry off the heat for 2 minutes. Dry potato absorbs oil; wet potato weeps water and breaks the emulsion. Press them through a ricer or mash smooth while still hot.'
     time_min: 15
@@ -163,7 +163,7 @@ steps:
   - text: 'Toast and serve. Toast or grill the 240 g / 8 slices of sourdough until crisp at the edges, and rub each hot slice with a cut raw garlic clove. Finish the brandade with the chopped 6 g / 2 tbsp parsley, a last thread of the remaining olive oil, and, if using, the 40 g / ¼ cup niçoise olives scattered alongside. Serve warm, with the reserved lemon at the table to squeeze over. Spread it thick on the warm toast; the contrast of crisp bread, warm emulsified cod, and the bright squeeze of lemon is the entire point of the dish.'
     time_min: 3
 
-techniques: ['low-temperature-poaching', 'pan-emulsion']
+techniques: ['poaching', 'pan-emulsion']
 equipment: ['potato-ricer', 'stand-mixer', 'gratin-dish', 'microplane']
 
 modifications:

@@ -112,7 +112,6 @@ steps:
   - text: 'Build the Saikyo marinade. In a bowl, whisk the 240 g / 1 cup sweet white miso, the 60 g / ¼ cup sake, the 60 g / ¼ cup mirin, and the 30 g / 2½ tbsp granulated sugar into a smooth, spreadable paste the consistency of thick yogurt. If you are using genuine Saikyo miso, cut the sugar to 15 g / 1 tbsp, it is already intensely sweet. The sake and mirin thin the dense miso so it contacts the fish evenly; the sugar and the glucose already present in the mirin are the fuel for the caramelized lacquer that forms later under the broiler.'
     time_min: 5
   - text: 'Cure the fish, 2 to 3 days. Blot the moisture off the salted fillets. Spread a 5 mm bed of the miso marinade across the bottom of a non-reactive dish or a deep tray, lay the fillets flesh-side down on it, then pack the remaining marinade over the top and sides so the fish is fully encased. Press a sheet of parchment directly onto the surface to seal out air, cover the dish with a fitted lid, and refrigerate 48 to 72 hours. During the cure the miso''s koji-derived proteases (the same enzymes that ferment the soybeans) slowly break down the muscle proteins, which both tenderizes the flesh and deepens its savory glutamate load, while the salt and sugar draw water out and drive seasoning in. Two days is the floor for transformation; three days is the sweet spot for sablefish; past three days the proteases over-soften the flesh toward mealy.'
-    technique: 'enzymatic-cure'
     time_min: 2880
   - text: 'On serving day, scrape and temper. Lift the fillets from the marinade and scrape the miso off with the back of a knife or your fingers, leaving only a thin residual film. Do not rinse under water; rinsing strips the seasoning you spent three days driving in and leaves the surface wet. A thin miso film is what caramelizes, but a thick clinging layer will scorch black and bitter before the fish cooks, so wipe more thoroughly than feels right. Set the scraped fillets on a plate and leave them at room temperature for 20 minutes so the interior is not fridge-cold going under the broiler.'
     time_min: 20
@@ -124,7 +123,7 @@ steps:
   - text: 'Rest, then plate and finish. Let the fillets rest 2 to 3 minutes off the heat; the carryover settles the flake and the surface sugars cool from molten to set. Transfer each fillet to a warmed plate, scatter the 15 g / 2 sliced scallion greens over the top, and set a lime wedge alongside. Squeeze the 15 g / ½ lime over the fish just before eating; the acid is non-negotiable here, it cuts through the sweet glaze and the heavy fat and resets the palate so the second bite hits as cleanly as the first. Serve with steamed short-grain rice and the optional 40 g pickled ginger or quick-pickled daikon, whose sharp acidity does the same palate-resetting work between bites.'
     time_min: 4
 
-techniques: ['dry-brining', 'enzymatic-cure', 'maillard-sear']
+techniques: ['dry-brining', 'maillard-sear']
 equipment: ['wire-rack-and-sheet-pan', 'instant-read-thermometer', 'fish-spatula']
 
 modifications:

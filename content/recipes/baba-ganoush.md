@@ -101,14 +101,13 @@ ingredients:
 
 steps:
   - text: 'Char the eggplants: set the 1200 g pricked eggplants directly over a high gas flame (or on a hot charcoal grill, or under a broiler at maximum). Turn with tongs every 4 to 5 minutes so all sides char evenly. Total time is 20 to 25 minutes; the eggplants are done when the skins are fully blackened and crackled all over, the eggplants have collapsed visibly (they look deflated and sag when picked up), and the flesh inside is completely soft when pierced with a knife (no resistance). The char should smell deeply of woodsmoke; this is the structural flavor of the dish.'
-    technique: 'open-flame-char'
+    technique: 'comal-charring'
     time_min: 25
   - text: 'Transfer the charred eggplants to a colander set over a bowl; let cool 10 minutes (they are too hot to handle right away and need to release their first wave of steam). When cool enough to handle, slit each eggplant lengthwise and use a spoon to scrape the soft smoky flesh into the colander; discard the blackened skin and the stem. A few flecks of black skin in the flesh are acceptable and contribute to the rustic appearance; do not obsess about removing every speck.'
     time_min: 12
   - text: 'Let the flesh drain in the colander 15 minutes; press gently with a spoon every 5 minutes to encourage water release. The drained flesh should weigh about 600 g; the drained-off water (about 100 g) is bitter eggplant juice and is discarded.'
     time_min: 15
   - text: 'Transfer the drained eggplant flesh to a bowl. Mash with a fork (not a food processor; the food processor produces a smooth purée that reads more like an industrial dip; the rustic fork-mash texture is structural for baba ganoush). Mash for 90 seconds until the flesh is broken down into a coarse pulp but still has some visible texture.'
-    technique: 'rustic-mash'
     time_min: 2
   - text: 'Add the 80 g / ⅓ cup tahini, 30 g / 2 tbsp lemon juice, 8 g / 2 garlic cloves (grated), 5 g / 1 tsp fine sea salt, and 1 g / ½ tsp cumin. Stir vigorously with a fork or wooden spoon for 60 seconds; the mixture will transform from a loose pulp into a creamy spreadable dip as the tahini binds. Taste and adjust: the dip should read smoky-forward, with tahini body, bright lemon, gentle garlic, and clean salt. Add more salt or lemon in small increments (1 g salt, 5 g lemon at a time) if needed.'
     time_min: 3
@@ -117,7 +116,7 @@ steps:
   - text: 'Plate: spoon the dip onto a wide shallow plate. Using the back of the spoon, create a few sweeping ridges and a shallow well in the center. Pour the 30 g / 2 tbsp olive oil across the surface so it pools in the ridges and the well. Scatter the 30 g pomegranate seeds (or sprinkle the sumac), the 5 g chopped parsley, and the 3 g sliced mint. Serve at room temperature with warm pita, crudités, or warm flatbread. Best on the day made.'
     time_min: 3
 
-techniques: ['open-flame-char', 'rustic-mash', 'tahini-bind']
+techniques: ['comal-charring', 'tahini-emulsion']
 equipment: ['gas-burner-or-grill', 'colander', 'mortar-or-microplane']
 
 modifications:

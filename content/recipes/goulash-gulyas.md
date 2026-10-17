@@ -159,17 +159,17 @@ steps:
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Drop the heat to medium-low. Add the 500 g / 2 large diced yellow onions to the rendered fat in the pot. Cook for 30 to 40 minutes, stirring every 4 to 5 minutes with a wooden spoon, until the onions have completely softened and turned a deep golden brown. This is the structural base of the dish; the equal-weight ratio of onion to meat plus the long cook is what gives gulyás its characteristic depth. Do not rush this phase. If the onions stick or brown too quickly, drop the heat one notch and add a splash of water.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 35
   - text: 'Add the 20 g / 5 cloves microplaned garlic and the 4 g / 1½ tsp lightly crushed caraway. Cook 1 minute, stirring constantly, until fragrant.'
     time_min: 1
   - text: 'Pull the pot off the burner. Sprinkle the 30 g / ¼ cup Hungarian sweet paprika and the 2 g / ½ tsp hot paprika (if using) over the onions and stir constantly for 30 seconds, off heat. The paprika should fully dissolve into the fat and turn the onion mass a deep brick-red. Working off heat is structural; paprika scorches almost instantly on direct heat and turns bitter. Once integrated, return the pot to medium-low heat for 10 seconds, just to warm.'
-    technique: 'bloom-spice'
+    technique: 'blooming-aromatics'
     time_min: 1
   - text: 'Stir in the 30 g / 2 tbsp tomato paste and cook 1 minute. Add the 200 g / 1 to 2 green peppers cut into pieces and stir to coat in the spiced onion base.'
     time_min: 2
   - text: 'Return the seared beef and any juices on the plate to the pot. Pour in the 1800 ml / 7½ cups beef stock and add the 2 bay leaves. Bring to a vigorous simmer, then drop to low. Cover with the lid slightly ajar (1 cm gap to let steam escape) and simmer for 60 minutes, stirring every 20 minutes. The chuck will be approaching tender but not yet fully there.'
-    technique: 'braise'
+    technique: 'braising'
     time_min: 65
   - text: 'Add the 500 g / 1 lb diced potato, the 250 g / 2 large diced carrot, and the 6 g / 1½ tsp kosher salt. Cover and simmer another 25 to 30 minutes until the potatoes are fork-tender and the meat is fully tender. The broth will have thickened slightly from the potato starch but should still read as a soup, not a stew.'
     time_min: 28
@@ -180,7 +180,7 @@ steps:
   - text: 'Serve in deep bowls with a generous ladling of broth, meat, vegetables, and csipetke. Crusty rye or sourdough bread on the side for sopping. The canonical Hungarian table also includes a small bowl of additional sour cream and a small bowl of additional hot paprika for diners to dress their own bowls to taste.'
     time_min: 2
 
-techniques: ['maillard-sear', 'dry-sweat', 'bloom-spice', 'braise']
+techniques: ['maillard-sear', 'sweating', 'blooming-aromatics', 'braising']
 
 modifications:
   - for: 'cuisine'

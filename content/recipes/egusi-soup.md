@@ -124,17 +124,16 @@ steps:
   - text: 'In a heavy 6-quart stockpot, combine the 700 g / 4 to 5 chicken thighs (or beef chuck), the 100 g / half of the diced onion (the half not reserved for Phase 3), the 4 g / 1 Maggi cube crumbled in, the 6 g / 1½ tsp kosher salt, and the 800 ml / 3⅓ cups water. Bring to a boil, then drop to a low simmer and cook covered for 30 minutes for chicken, 60 minutes for beef. The meat should be tender and the broth should be flavorful.'
     time_min: 35
   - text: 'Add the 150 g / 2 fillets smoked fish (broken into pieces) and the 10 g / 1 tbsp crayfish powder to the meat broth. Simmer covered for another 15 minutes; the smoked fish releases its funk into the broth and softens. Do not stir aggressively; the smoked fish breaks apart easily and you want some recognizable pieces in the finished soup.'
-    technique: 'simmer'
+    technique: 'simmering'
     time_min: 15
   - text: 'In a small bowl, combine the 200 g / 1¼ cups ground egusi with the 200 ml / ¾ cup + 1 tbsp water and stir with a fork until a thick smooth paste forms, the consistency of stiff peanut butter. Set aside.'
     time_min: 3
   - text: 'In a wide heavy skillet or directly in a second pot, warm the 120 g / ½ cup red palm oil over medium heat for 1 minute until the oil shimmers and turns from solid to liquid. Add the 100 g / reserved half of the onion (finely diced) and the 12 g / 2 to 3 scotch bonnet peppers and cook 5 minutes, stirring every minute, until the onion is soft and the chili is fragrant.'
-    technique: 'bloom-spice'
+    technique: 'blooming-aromatics'
     time_min: 6
   - text: 'Add the 30 g / 2 tbsp tomato paste (if using) and fry 2 minutes in the palm oil, stirring constantly, until the paste darkens from bright red to brick red and the oil takes on its color.'
     time_min: 2
   - text: 'Add the egusi paste to the palm oil in small spoonfuls, not all at once. The paste will clump into soft yellow-white pebbles as it hits the hot oil. Stir gently with a wooden spoon, breaking up the largest clumps but leaving the smaller ones intact (the visible pebbles are the structural texture of the dish). Cook 5 minutes; the egusi releases its oil and the mixture goes from raw-pasty to nutty-aromatic.'
-    technique: 'egusi-pebbling'
     time_min: 5
   - text: 'Transfer the palm-oil-and-egusi mixture into the meat-and-fish broth pot, scraping in everything from the skillet with a spatula. Stir gently to combine. The egusi pebbles distribute throughout the broth and absorb the liquid; the soup thickens visibly over 20 minutes of low simmer. Cover and simmer for 20 minutes, stirring every 5 minutes to prevent the egusi from settling and sticking to the bottom.'
     time_min: 22
@@ -145,7 +144,7 @@ steps:
   - text: 'Pull from heat. Rest covered for 5 minutes off heat to let the flavors integrate further. Serve in wide shallow bowls with fufu, pounded yam, eba, or rice on the side. Traditionally eaten by hand: tear off a piece of fufu, dip into the soup, scoop up a piece of meat or fish with the dipped fufu, eat.'
     time_min: 5
 
-techniques: ['simmer', 'bloom-spice', 'egusi-pebbling']
+techniques: ['simmering', 'blooming-aromatics']
 
 modifications:
   - for: 'protein'

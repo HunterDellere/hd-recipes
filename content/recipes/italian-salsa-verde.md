@@ -94,14 +94,13 @@ steps:
   - text: 'Soak the 20 g / ½ slice crustless bread in the 30 g / 2 tbsp white wine vinegar for 1 minute, until fully saturated. Squeeze the bread firmly with the back of a spoon to remove the excess vinegar (the bread should be wet but not dripping). The bread provides body and absorbs the sharp acid; the vinegar that comes through is the sauce backbone.'
     time_min: 2
   - text: 'On a heavy cutting board, mound the 50 g / 1¼ cups parsley leaves, 8 g / 2 garlic cloves, 10 g / 3 anchovy fillets, and 15 g / 2 tbsp capers together. Chop with a heavy chef knife in long even strokes, gathering the pile back to center every 30 seconds. Continue until the mixture is uniform and the pieces are 1 to 2 mm across, with structure still visible (a coarse paste, not a slurry); about 4 to 5 minutes of steady chopping. The hand-chop preserves textural integrity that a food processor destroys.'
-    technique: 'knife-chop-not-processor'
     time_min: 5
   - text: 'Transfer the chopped mixture to a small bowl and add the squeezed bread, breaking it apart with a fork into small pieces. Stir to combine. Add the 10 g / 2 tsp lemon juice, then pour in the 120 g / ½ cup plus 2 tbsp olive oil in a steady stream, stirring with a wooden spoon to disperse the oil through the herb-and-bread mixture. The sauce will not emulsify; salsa verde is structurally a chopped-herb suspension, not an emulsion.'
     time_min: 2
   - text: 'Taste and adjust: salsa verde should read parsley-forward with assertive umami from the anchovy and capers, gentle garlic, and a clean lemon finish. The bread should not be detectable as bread but as background body. If flat, a pinch of the 1 g / ¼ tsp salt; if too aggressive, more oil to soften; if the parsley is overwhelmed, more lemon. Let rest 10 minutes before service so the bread fully integrates and the flavors marry. Serve at room temperature spooned over poached or grilled fish, sliced roast meats, boiled potatoes, white beans, fried or hard-boiled eggs, grilled or boiled vegetables, or grilled bread.'
     time_min: 3
 
-techniques: ['knife-chop-not-processor']
+techniques: []
 equipment: ['chef-knife', 'cutting-board']
 
 modifications:

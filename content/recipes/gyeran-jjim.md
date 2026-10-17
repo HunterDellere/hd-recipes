@@ -92,21 +92,20 @@ ingredients:
 
 steps:
   - text: 'Make the stock: combine the 5 g / 7 cm square kombu, 8 g / 8 to 10 anchovies (heads removed), and 200 g / ¾ cup plus 2 tbsp cold water in a small saucepan. Bring to a gentle simmer over medium heat (small bubbles around the edge, no rolling boil; high heat extracts bitter compounds from the kombu). The moment small bubbles appear around the edge of the pan, reduce heat to low and simmer 4 to 5 minutes. The stock should be a pale amber color and smell of clean sea-and-fish umami. Strain through a fine-mesh sieve into a heatproof measuring cup; discard the kombu and anchovies. Let the stock cool to room temperature (about 5 minutes); using hot stock cooks the eggs prematurely when they are combined.'
-    technique: 'kombu-anchovy-stock'
+    technique: 'dashi'
     time_min: 8
   - text: 'In a medium bowl, beat the 200 g / 4 eggs with a fork or whisk for 30 seconds until uniform (no streaks of white; do not whip air into the eggs, which produces a foamy texture in the finished custard). Add the cooled stock (about 100 g, half the cooked amount; the rest will be added later), 6 g / 1 tsp fish sauce, 1 g / ¼ tsp salt, and 8 g / about 1 sliced scallion white. Stir to combine; pass the mixture through a fine-mesh sieve into a clean bowl to remove any chalazae (the white chord that anchors the yolk; removing it produces a smoother custard).'
     time_min: 3
   - text: 'Transfer the egg mixture to a small Korean clay pot (ttukbaegi, about 14 to 16 cm diameter, 5 to 7 cm deep) or a heavy ceramic bowl of similar size. The vessel should be about three-quarters full; the custard rises during cooking and a fuller vessel risks overflow. Add the remaining 100 g of cooled stock to the bowl just before cooking; the dilution at this point is what produces the soft trembling texture canonical to gyeran-jjim.'
     time_min: 1
   - text: 'Set the clay pot or heavy bowl directly over medium-low heat on the stove (if using a ttukbaegi, the clay can go directly on the burner; if using a ceramic bowl, set it in a wider pan with 2 cm of water around the bowl to create a bain-marie). Cook 10 to 12 minutes, stirring the surface gently with a chopstick or the tip of a spoon every 30 seconds for the first 3 minutes (this creates the small curd structure that defines gyeran-jjim and prevents a single thick skin from forming on top). After 3 minutes, stop stirring and let the custard finish cooking undisturbed; the surface will set into a soft cohesive layer with visible small curds throughout.'
-    technique: 'gentle-egg-set'
     time_min: 11
   - text: 'The custard (built from the 200 g / 4 eggs) is done when the top is just-set (a gentle nudge with a chopstick shows the surface holding firm but with a slight tremble below; an instant-read thermometer in the center reads 82 to 85°C / 180 to 185°F). Pull off the heat the moment this happens; the clay vessel retains significant heat and continues cooking the custard for another 2 to 3 minutes. Overcooked gyeran-jjim is the most common failure mode; the 200 g / 4 eggs go from perfect to grainy and weeping in under a minute at the upper end of the cook.'
     time_min: 1
   - text: 'Sprinkle the 7 g / about 1 sliced scallion green over the top of the hot custard; drizzle with the 3 g / ½ tsp toasted sesame oil; scatter the 2 g / ¼ tsp toasted sesame seeds. Serve immediately, directly in the cooking vessel, with rice and other banchan as part of a Korean meal. The diners spoon the custard from the shared vessel onto their own bowls of rice; a small spoonful per bite balances the custard with the rice and the other banchan on the table.'
     time_min: 1
 
-techniques: ['kombu-anchovy-stock', 'gentle-egg-set']
+techniques: ['dashi']
 equipment: ['ttukbaegi (Korean clay pot) or heavy ceramic bowl', 'fine-mesh sieve', 'thermometer (optional)']
 
 modifications:

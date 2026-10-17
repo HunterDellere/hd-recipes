@@ -65,7 +65,7 @@ steps:
   - text: 'Use the reserved kombu and shiitake. The cooked kombu can be julienned and used as a vegetable in salads or added to simmered dishes; the cooked shiitake can be sliced and used in stir-fries, soups, or chopped and mixed with rice (the canonical shojin technique is full ingredient utilization; nothing is discarded). Use the dashi immediately, or refrigerate up to 5 days.'
     time_min: 2
 
-techniques: ['cold-water-soak', 'gentle-extraction']
+techniques: ['dashi']
 equipment: ['2-quart saucepan or large measuring cup', 'fine-mesh sieve', 'small plate (for weighing down ingredients during soak)']
 
 modifications:

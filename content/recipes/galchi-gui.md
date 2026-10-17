@@ -127,18 +127,18 @@ steps:
   - text: 'Dry and dredge. After the cure, pat the segments bone-dry a second time with paper towels, blotting the beaded moisture off the silver skin and out of the slashes; residual water is what makes a segment steam, stick, and tear. Spread the 30 g / ¼ cup all-purpose flour on a plate and press each segment into it on both faces for a thin, even coat, then lift and tap off all excess. The dredge should be a sheer dusting, not a crust; a heavy coat goes gummy in the pan.'
     time_min: 4
   - text: 'Heat the oil. Film a nonstick or well-seasoned skillet with the 45 g / 3 tbsp neutral oil over medium heat until it shimmers and a pinch of flour dropped in sizzles steadily, about 170 to 180 °C. Moderate heat is the rule: too hot and the thin skin scorches and the flour burns before the flesh sets; too cool and the segments absorb oil and the skin goes greasy-soft. The oil should sizzle on contact but not smoke.'
-    technique: 'shallow-fry'
+    technique: 'shallow-frying'
     time_min: 2
   - text: 'Fry the first side. Lay the segments into the oil away from you, skin-side down, giving each room; work in two batches if the pan is crowded, since a crowded pan drops the oil temperature and steams the surface. Fry undisturbed for 4 to 5 minutes. Do not move or poke the fish; the surface needs uninterrupted contact to dehydrate, brown, and release on its own. The first side is done when the lower edge has gone opaque and golden and the segment slides freely when you nudge the pan.'
-    technique: 'shallow-fry'
+    technique: 'shallow-frying'
     time_min: 5
   - text: 'Flip once, gently. This is the only turn the fish gets. Slide a thin spatula fully under each segment and turn it in one confident motion; hairtail flesh flakes off the spine with almost no force, so a tentative half-flip or a second turn shreds the delicate ribbon into the pan. Fry the second side 3 to 4 minutes, until the skin is crisp and deep gold and a chopstick slipped into the slash meets flesh that is opaque to the spine and flakes cleanly. The thin segments cook fast, so pull the moment the flesh at the bone turns opaque rather than chasing more color. Drain briefly on a rack, not paper, so the underside stays crisp.'
-    technique: 'shallow-fry'
+    technique: 'shallow-frying'
     time_min: 4
   - text: 'Serve immediately, while the skin is at its crispest. Plate the segments over or beside the cooked 300 g / 2 cups short-grain rice, scatter the 5 g / fine ginger julienne over the top if using, and add a 50 g / lemon wedge per diner. Each bite goes through the cho-ganjang dip; squeeze the lemon over the fish at the table for a second, sharper hit of acid against the fried richness. Lift the white flesh off the central spine with chopsticks and eat it with the crisp skin and a forkful of rice.'
     time_min: 1
 
-techniques: ['shallow-fry']
+techniques: ['shallow-frying']
 equipment: ['nonstick-skillet', 'fish-spatula']
 
 modifications:

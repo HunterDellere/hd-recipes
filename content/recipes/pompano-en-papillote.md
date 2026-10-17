@@ -151,7 +151,7 @@ steps:
   - text: 'Rest and open at the table. Slide each puffed packet onto a warm plate and carry it to the table intact; the drama is the point. Cut or tear the parchment open at the top with scissors or a knife tip, standing back from the vented steam, and let the trapped aromatic cloud release. Spoon the pooled butter-wine-shellfish liquor back over the fillet, scatter the reserved 4 g / 1 tbsp parsley and a final squeeze from any remaining lemon, and eat straight from the parchment with crusty bread to mop the liquor. The flesh should lift cleanly from the skin in firm, moist flakes at 54 to 58°C internal.'
     time_min: 2
 
-techniques: ['en-papillote', 'pan-sauce-reduction']
+techniques: ['reduction']
 equipment: ['parchment-paper', 'sheet-pan', 'skillet']
 
 modifications:

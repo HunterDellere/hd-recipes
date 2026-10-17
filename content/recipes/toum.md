@@ -71,7 +71,6 @@ steps:
   - text: 'In the bowl of a small to medium food processor (4 to 7 cup capacity; the bowl should be about half full when the toum is finished), combine the 100 g / 25 to 30 garlic cloves and the 12 g / 2 tsp salt. Process 30 seconds, scraping the sides every 10 seconds, until the garlic is reduced to a fine even paste with no visible chunks. Add the first 30 g / 2 tbsp lemon juice and process 15 seconds; the mixture will turn from pale yellow paste to a pale slurry as the lemon hydrates the garlic.'
     time_min: 2
   - text: 'With the processor running on continuous low (not pulse), drizzle in the cold neutral oil through the feed tube in a thin steady stream, starting slow (a near-drip, about 1 tbsp per 10 seconds) for the first 100 g of oil; this initial slow phase is where the emulsion takes shape. As the toum visibly thickens and turns a brilliant white (you will see and hear the change in the processor: the slosh becomes a thicker churn), the oil can be added in a slightly faster steady stream.'
-    technique: 'cold-oil-emulsion'
     time_min: 4
   - text: 'After about half the oil is in (250 g), pause the processor and add the second 30 g / 2 tbsp lemon juice; pulse 5 times to incorporate. The acid addition mid-stream is a structural stabilizer; it loosens the partial emulsion and prevents it from over-tightening and breaking. Resume streaming the remaining 250 g cold oil at a moderate pace (about 1 tbsp per 5 seconds) until fully incorporated. The finished toum should be brilliant white, light, fluffy, and the texture of soft mayonnaise; it should hold a stand-up shape on a spoon.'
     time_min: 4
@@ -80,7 +79,7 @@ steps:
   - text: 'Taste and adjust: toum should read aggressively garlicky with bright lemon and clean salt; if it reads flat at this stage, whisk in an extra 1 g / pinch of fine sea salt by hand. It will mellow significantly over the first 3 to 5 days as the raw garlic compounds (allicin and its oxidation products) break down. If too sharp at this stage, accept it; toum is meant to age. Transfer to a clean glass jar and refrigerate at least 24 hours before the first use. Serve as a dip for raw vegetables and grilled bread, a sauce for shawarma and roast chicken, a spread for sandwiches and wraps, a stir-in for grain bowls, or thinned with water as a dressing for salads and vegetables.'
     time_min: 1
 
-techniques: ['cold-oil-emulsion']
+techniques: []
 equipment: ['food-processor']
 
 modifications:

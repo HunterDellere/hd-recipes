@@ -163,7 +163,7 @@ steps:
     technique: 'maillard-sear'
     time_min: 8
   - text: 'Add the remaining 15 g / 1 tbsp neutral oil and lower heat to medium. Add the 45 g / 3 tbsp doubanjiang and bloom it, stirring constantly, 2 to 3 minutes until the oil stains deep red and the paste smells toasty rather than raw. This is the single most important step; blooming the fermented paste in fat is what releases its color and depth. Do not let it scorch or it turns acrid.'
-    technique: 'bloom-aromatics'
+    technique: 'blooming-aromatics'
     time_min: 3
   - text: 'Add the 25 g minced ginger, 25 g minced garlic, the 40 g scallion whites, the 10 g mashed douchi (if using), and half the ground Sichuan peppercorn. Stir 1 minute until fragrant. Pour in the 45 g / 3 tbsp Shaoxing wine, scraping the base, and let it reduce 30 seconds.'
     time_min: 2
@@ -176,7 +176,7 @@ steps:
     time_min: 2
   - text: 'Spoon over hot jasmine rice, scatter the reserved scallion greens (from the 40 g scallions) across, and serve immediately. The rice is structural, it carries the heat and the má between bites.'
 
-techniques: ['maillard-sear', 'bloom-aromatics', 'braising']
+techniques: ['maillard-sear', 'blooming-aromatics', 'braising']
 equipment: ['dutch-oven', 'wide-skillet']
 
 modifications:

@@ -123,7 +123,7 @@ steps:
   - text: 'Plate. Split each pretzel roll or hot dog bun. Spread 15 g sweet German mustard on the inside of the roll. Place a hot seared brat in the roll. Top with a generous spoon of caramelized onions and a side of sauerkraut. Serve with a German-style potato salad, fresh radishes, and a stein of cold German lager.'
     time_min: 3
 
-techniques: ['maillard-sear', 'caramelizing']
+techniques: ['maillard-sear']
 equipment: ['wide-saucepan', 'cast-iron-skillet', 'tongs', 'instant-read-thermometer']
 
 modifications:

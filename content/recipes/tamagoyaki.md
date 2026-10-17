@@ -95,7 +95,6 @@ steps:
   - text: 'Heat a rectangular tamagoyaki pan (makiyakinabe; the canonical Japanese tool, approximately 13 by 19 cm; copper or non-stick) over medium heat for 90 seconds. Test the temperature: a drop of the egg mixture should sizzle gently and set within 5 seconds (if it sizzles aggressively, the pan is too hot and the eggs will set in dry curds rather than soft sheets; if it does not sizzle, the pan is too cool and the eggs will read greasy). Fold a paper towel into a small pad; dip into the 15 g / 1 tbsp neutral oil and wipe the pan thoroughly to coat the bottom and sides in a thin film of oil; reserve the oiled paper towel for re-greasing between layers.'
     time_min: 2
   - text: 'Pour about one-fifth of the egg mixture (about 50 g) into the pan; tilt the pan to spread the egg into a thin uniform sheet covering the entire bottom. As the egg sets (about 20 to 30 seconds), use chopsticks or a long thin spatula to pop any large air bubbles. While the egg is still partially uncooked on top (the surface should be visibly wet with a few uncooked spots), begin the first roll: starting at the side of the pan farthest from you, use the chopsticks or spatula to gently roll the egg toward you in 2 or 3 turns, building a small cylinder of egg at the near edge of the pan.'
-    technique: 'layer-and-roll'
     time_min: 1
   - text: 'Push the rolled cylinder back to the far side of the pan. Re-grease the pan with the oiled paper towel pad, lifting the rolled cylinder briefly to oil the area underneath it. Pour another one-fifth of the egg mixture (50 g) into the pan; tilt to spread into a thin sheet and lift the existing roll so that the new egg flows under it (this is the structural detail that bonds the layers; without it the layers slide apart when sliced). When the new layer has set on the bottom but is still wet on top, roll the existing cylinder toward you, picking up the new layer as it rolls; the result after this second roll is a slightly larger cylinder.'
     time_min: 1
@@ -106,7 +105,7 @@ steps:
   - text: 'Plate the sliced tamagoyaki on small plates; serve warm or at room temperature with the 50 g / 2 tbsp grated daikon mounded next to the eggs and a 5 g / 1 tsp drizzle of soy sauce over the daikon. The diner takes a piece of tamagoyaki with chopsticks, lifts a small mound of daikon onto it, and eats in a single bite. Tamagoyaki travels especially well as a make-ahead component: the block keeps 2 days refrigerated and can be packed cold in bento, sliced cold for sushi, or warmed briefly in a low oven (100°C, 3 minutes) for breakfast service.'
     time_min: 1
 
-techniques: ['layer-and-roll', 'dashi-egg-mixture']
+techniques: []
 equipment: ['tamagoyaki pan (makiyakinabe)', 'chopsticks or long thin spatula', 'sushi mat (makisu)']
 
 modifications:

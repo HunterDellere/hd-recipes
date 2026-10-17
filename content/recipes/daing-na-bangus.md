@@ -125,7 +125,6 @@ steps:
   - text: 'Open the 600 g butterflied milkfish flat, skin-side-down, in a shallow dish or zip-top bag large enough to hold it without folding. Run your fingers across the flesh to check for any stray bones the deboner missed; pull them with tweezers. Score the thicker shoulder of the flesh with two shallow slashes so the cure penetrates evenly.'
     time_min: 5
   - text: 'Build the cure directly on and around the fish. Scatter the 8 g / 2 tsp kosher salt evenly over the flesh side, then the 30 g / 8 cloves crushed garlic and the 6 g / 2 tsp cracked black peppercorns. Pour the 120 g / ½ cup cane vinegar over and around the fish so the flesh side sits in the marinade. The salt and acid together are the cure: salt draws surface water and seasons; the cane vinegar denatures the surface proteins, firming the dense flesh and brightening the mild meat while tempering the oily belly.'
-    technique: 'acid-cure'
     time_min: 5
   - text: 'Cover and refrigerate at least 3 hours, ideally overnight. The fish should sit flesh-side-down so the cut surface stays in contact with the 120 g / ½ cup cane vinegar marinade. Flip once at the halfway point if the fish is not fully submerged. Do not exceed about 12 hours: past that, the acid over-firms the surface into a tough, chalky cure rather than the brightened, just-firmed texture you want.'
     time_min: 180
@@ -134,17 +133,17 @@ steps:
   - text: 'Lift the cured fish from the marinade and pat it completely, aggressively dry on both sides with paper towels; brush off the clinging bits of the 30 g / 8 cloves cure garlic and the cracked pepper (they will burn in the pan). Discard the spent marinade. Lay the fish skin-side-up on a rack and let it air-dry 10 minutes while the pan heats. A bone-dry surface is the single requirement for crisp skin and a fish that sears instead of steaming and spattering.'
     time_min: 12
   - text: 'Heat the 30 g / 2 tbsp neutral oil in a wide nonstick or well-seasoned cast-iron skillet over medium-high until it shimmers and a drop of water flicked in dances and evaporates instantly. Lay the fish skin-side-down, pressing gently with a spatula for the first 20 seconds so the skin makes full contact and does not curl. Fry undisturbed 4 to 5 minutes: the subcutaneous and belly fat render, the skin crisps to a deep golden sheet, and the flesh sets opaque from the bottom up.'
-    technique: 'pan-fry'
+    technique: 'shallow-frying'
     time_min: 5
   - text: 'Flip carefully and fry the flesh side 2 to 3 minutes, just until the thickest part is opaque to the center and the edges have caught a little color. The dense milkfish flesh holds together; the rendered belly fat keeps it moist across a wide window. Pull the fish to a rack (not paper towels, which steam the crisp skin soft) skin-side-up. Total fry time is about 7 to 8 minutes for a butterflied fish.'
-    technique: 'pan-fry'
+    technique: 'shallow-frying'
     time_min: 3
   - text: 'Fry the 2 eggs sunny-side-up in the same pan (the fish-and-garlic-scented oil is a feature), and warm the 400 g jasmine rice. For the classic garlic fried rice (sinangag), fry a spoon of minced garlic in a little oil until pale gold, then toss in the cold day-old rice and fry over high heat until the grains separate and catch toasty spots. Slice the 120 g tomato into wedges.'
     time_min: 6
   - text: 'Plate the almusal: a mound of the 400 g / 2 cups garlic fried rice, the crisp-skin fish skin-side-up, a sunny egg, and the tomato wedges alongside. Set the bowl of spiced vinegar dip (sukang sawsawan) at the center. Each bite is a forkful of fish dipped in the bright raw vinegar, alternated with garlicky rice, the runny egg yolk binding it, the cool tomato cutting the richness. Serve immediately while the skin is crisp.'
     time_min: 1
 
-techniques: ['acid-cure', 'pan-fry']
+techniques: ['shallow-frying']
 equipment: ['wide-skillet', 'wire-rack']
 
 modifications:

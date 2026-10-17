@@ -79,7 +79,6 @@ steps:
   - text: 'In a small dry skillet over medium heat, toast the 3 g / 1½ tsp cumin seeds for 60 to 90 seconds, shaking the pan continuously, until fragrant and slightly darker. Transfer to a spice grinder or mortar and grind to a fine even powder; the toast deepens the volatile aromatic compounds and is the structural difference between a vibrant mojo verde and a flat one.'
     time_min: 2
   - text: 'In the bowl of a food processor (4 to 7 cup capacity), combine the 50 g / 1¼ cups cilantro, 60 g / ½ medium green bell pepper (chopped), 12 g / 3 garlic cloves, the ground toasted cumin, and the 4 g / ¾ tsp salt. Pulse 8 to 10 times in 1-second bursts, scraping the sides between pulses, until the mixture is reduced to a coarse-medium paste with no visible whole leaves but with structural texture preserved.'
-    technique: 'knife-chop-not-processor'
     time_min: 3
   - text: 'Add the 25 g / 5 tsp sherry vinegar; pulse 3 to 4 times to integrate. With the motor running on continuous low, drizzle in the 120 g / ½ cup plus 2 tbsp olive oil through the feed tube in a slow steady stream over about 20 seconds; the oil incorporates into the herb-and-pepper suspension and the sauce takes on a glossy unified appearance. Do not over-process; mojo verde is meant to retain visible herb and pepper structure, not become a smooth slurry.'
     time_min: 2
@@ -88,7 +87,7 @@ steps:
   - text: 'Serve as the canonical sauce for papas arrugadas (Canarian wrinkled potatoes: small new potatoes boiled in heavily salted water until the skins wrinkle, served with mojo verde and mojo rojo for dipping); as a sauce for grilled or roasted fish (especially Canarian-style fish like vieja, sama, or any white fish); as a sauce for grilled chicken, pork, or lamb; as a sauce for grilled or roasted vegetables (especially potatoes, eggplant, sweet pepper, zucchini, asparagus); as a spread for grilled bread or a dip for crusty country bread; as a topping for eggs (fried, scrambled, soft-boiled); as a stir-in for soups and stews (a spoonful in a bowl of fish stew or vegetable soup at service brings structural herbal-and-cumin depth); as a marinade for grilled fish or chicken (mix 30 g mojo verde with 30 g olive oil and a squeeze of lemon as the marinade base, refrigerate the protein 1 to 4 hours); and as a finish for grain bowls and rice dishes.'
     time_min: 1
 
-techniques: ['spice-toasting', 'knife-chop-not-processor']
+techniques: ['dry-toasting']
 equipment: ['food-processor', 'spice-grinder', 'skillet']
 
 modifications:

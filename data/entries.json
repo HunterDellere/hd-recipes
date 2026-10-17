@@ -1450,6 +1450,142 @@
     }
   },
   {
+    "path": "pages/techniques/braising.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Braising",
+    "desc": "Cook collagen-rich meat or dense vegetables partly submerged in liquid, covered, below a boil for hours, until connective tissue converts to gelatin and the liquid becomes the sauce.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "braising",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 33
+    }
+  },
+  {
+    "path": "pages/techniques/bulk-fermentation.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Bulk fermentation",
+    "desc": "The first rise of a bread dough as one mass, during which yeast produces gas and flavor while gluten develops through rest and folding; it sets most of a loaf's structure and taste.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "bulk-fermentation",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 9
+    }
+  },
+  {
+    "path": "pages/techniques/grilling.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Grilling",
+    "desc": "Cook over or under intense radiant heat from fire, coals, or a broiler element, so the surface browns and chars quickly while fat drips away and smoke adds flavor.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "grilling",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 8
+    }
+  },
+  {
+    "path": "pages/techniques/poaching.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Poaching",
+    "desc": "Cook delicate food submerged in liquid held well below a simmer, about 70 to 85 °C, so proteins set gently and stay moist and tender instead of tightening.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "poaching",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 6
+    }
+  },
+  {
+    "path": "pages/techniques/reduction.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Reduction",
+    "desc": "Simmer a liquid uncovered so water evaporates, concentrating flavor and thickening it through dissolved gelatin, sugars, and starches, until it reaches the body a sauce needs.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "reduction",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 8
+    }
+  },
+  {
+    "path": "pages/techniques/shallow-frying.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Shallow frying",
+    "desc": "Fry food in a layer of oil that comes partway up its sides, turning it once, to get a deep, even crust on each face without the volume of oil that deep-frying needs.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "shallow-frying",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 14
+    }
+  },
+  {
+    "path": "pages/techniques/simmering.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Simmering",
+    "desc": "Hold a liquid just below a full boil, at roughly 85 to 96 °C, so food cooks evenly and gently while flavors move into the liquid, without the churning that clouds stocks, toughens meat, and splits beans.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "simmering",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 15
+    }
+  },
+  {
+    "path": "pages/techniques/sweating.html",
+    "type": "technique",
+    "category": "techniques",
+    "title": "Sweating",
+    "desc": "Cook aromatics gently in a little fat, usually with salt, until they soften and turn translucent without browning, so they melt into a dish as a sweet base rather than a roasted one.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "sweating",
+    "updated": "2026-10-17",
+    "added": "2026-10-17",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "whisk",
+      "usedInCount": 14
+    }
+  },
+  {
     "path": "pages/recipes/basque-burnt-cheesecake.html",
     "type": "recipe",
     "category": "recipes",
@@ -9027,7 +9163,7 @@
     ],
     "techniques": [
       "maillard-sear",
-      "pan-fry"
+      "shallow-frying"
     ],
     "equipment": [
       "fish-spatula",
@@ -10267,7 +10403,7 @@
       }
     ],
     "techniques": [
-      "confit-fry"
+      "oil-poaching"
     ],
     "equipment": [
       "small-saucepan",
@@ -10372,9 +10508,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "tea-smoking"
-    ],
+    "techniques": [],
     "equipment": [
       "wok",
       "wire-rack",
@@ -10478,7 +10612,7 @@
       }
     ],
     "techniques": [
-      "tea-steeping"
+      "steeping-tea"
     ],
     "equipment": [
       "kettle",
@@ -10563,9 +10697,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "lacto-fermentation"
-    ],
+    "techniques": [],
     "equipment": [
       "glass-jar",
       "mortar-and-pestle",
@@ -11434,7 +11566,7 @@
       }
     ],
     "techniques": [
-      "low-temperature-poaching",
+      "poaching",
       "pan-emulsion"
     ],
     "equipment": [
@@ -11928,7 +12060,7 @@
       }
     ],
     "techniques": [
-      "stretch-and-fold"
+      "bulk-fermentation"
     ],
     "equipment": [
       "baking-steel",
@@ -12596,7 +12728,6 @@
       }
     ],
     "techniques": [
-      "rye-sour",
       "maillard-sear"
     ],
     "equipment": [
@@ -12839,9 +12970,7 @@
       }
     ],
     "techniques": [
-      "dry-brining",
-      "curing",
-      "emulsion"
+      "dry-brining"
     ],
     "equipment": [
       "glass-baking-dish",
@@ -13322,8 +13451,7 @@
     "techniques": [
       "egg-yolk-emulsion",
       "blooming-aromatics",
-      "jammy-egg",
-      "kale-massage"
+      "jammy-egg"
     ],
     "equipment": [],
     "added": "2026-06-21",
@@ -13518,10 +13646,7 @@
       }
     ],
     "techniques": [
-      "gluten-development",
-      "bulk-fermentation",
-      "loaf-shaping",
-      "enriched-bread-bake"
+      "bulk-fermentation"
     ],
     "equipment": [
       "stand-mixer",
@@ -13626,7 +13751,6 @@
     ],
     "techniques": [
       "dry-brining",
-      "enzymatic-cure",
       "maillard-sear"
     ],
     "equipment": [
@@ -14038,9 +14162,7 @@
       }
     ],
     "techniques": [
-      "gluten-development",
-      "starch-gelatinization",
-      "baking-stone"
+      "bulk-fermentation"
     ],
     "equipment": [
       "stand-mixer",
@@ -14303,7 +14425,6 @@
       }
     ],
     "techniques": [
-      "brining",
       "maillard-sear"
     ],
     "equipment": [
@@ -14827,10 +14948,7 @@
       }
     ],
     "techniques": [
-      "poolish-preferment",
-      "autolyse",
-      "stretch-and-fold",
-      "scoring",
+      "bulk-fermentation",
       "maillard-sear"
     ],
     "equipment": [
@@ -15114,9 +15232,7 @@
       }
     ],
     "techniques": [
-      "autolyse",
-      "stretch-and-fold",
-      "cold-proof",
+      "bulk-fermentation",
       "maillard-sear"
     ],
     "equipment": [
@@ -16605,8 +16721,7 @@
       }
     ],
     "techniques": [
-      "acid-cure",
-      "pan-fry"
+      "shallow-frying"
     ],
     "equipment": [
       "wide-skillet",
@@ -16732,8 +16847,8 @@
       }
     ],
     "techniques": [
-      "pan-fry",
-      "fond-deglaze",
+      "shallow-frying",
+      "deglazing",
       "pan-emulsion"
     ],
     "equipment": [
@@ -16851,7 +16966,7 @@
       }
     ],
     "techniques": [
-      "shallow-fry"
+      "shallow-frying"
     ],
     "equipment": [
       "nonstick-skillet",
@@ -17124,7 +17239,7 @@
       }
     ],
     "techniques": [
-      "live-fire-grilling"
+      "grilling"
     ],
     "equipment": [
       "charcoal-grill",
@@ -17261,7 +17376,7 @@
       }
     ],
     "techniques": [
-      "shallow-fry",
+      "shallow-frying",
       "braising"
     ],
     "equipment": [
@@ -17399,8 +17514,7 @@
       }
     ],
     "techniques": [
-      "doenjang-broth",
-      "gentle-poach"
+      "poaching"
     ],
     "equipment": [
       "wide-shallow-pot",
@@ -17533,7 +17647,7 @@
       }
     ],
     "techniques": [
-      "shallow-fry"
+      "shallow-frying"
     ],
     "equipment": [
       "nonstick-skillet",
@@ -17653,8 +17767,7 @@
       }
     ],
     "techniques": [
-      "en-papillote",
-      "pan-sauce-reduction"
+      "reduction"
     ],
     "equipment": [
       "parchment-paper",
@@ -17771,7 +17884,7 @@
       }
     ],
     "techniques": [
-      "fond-deglaze"
+      "deglazing"
     ],
     "equipment": [
       "wide-saute-pan",
@@ -17889,8 +18002,7 @@
     "techniques": [
       "fish-skin-scoring",
       "dry-brining",
-      "shimofuri-blanch",
-      "otoshibuta-simmer"
+      "simmering"
     ],
     "equipment": [
       "wide-saucepan-or-deep-skillet",
@@ -17998,7 +18110,7 @@
     "techniques": [
       "fish-skin-scoring",
       "dry-brining",
-      "broiling"
+      "grilling"
     ],
     "equipment": [
       "broiler-or-fish-grill",
@@ -18127,8 +18239,7 @@
       }
     ],
     "techniques": [
-      "salt-crust-baking",
-      "fond-deglaze"
+      "deglazing"
     ],
     "equipment": [
       "sheet-pan",
@@ -18427,7 +18538,7 @@
       }
     ],
     "techniques": [
-      "live-fire-grilling"
+      "grilling"
     ],
     "equipment": [
       "outdoor-grill",
@@ -18820,7 +18931,7 @@
       }
     ],
     "techniques": [
-      "roasting"
+      "high-heat-dry-roasting"
     ],
     "equipment": [
       "sheet-pan",
@@ -18945,7 +19056,7 @@
       }
     ],
     "techniques": [
-      "roasting"
+      "high-heat-dry-roasting"
     ],
     "equipment": [
       "sheet-pan",
@@ -21798,8 +21909,8 @@
     ],
     "techniques": [
       "maillard-sear",
-      "red-cooking",
-      "fond-deglaze"
+      "braising",
+      "deglazing"
     ],
     "equipment": [
       "dutch-oven",
@@ -21945,7 +22056,7 @@
       }
     ],
     "techniques": [
-      "bloom-aromatics",
+      "blooming-aromatics",
       "braising"
     ],
     "equipment": [
@@ -22075,7 +22186,7 @@
       }
     ],
     "techniques": [
-      "caramelization",
+      "dry-caramel",
       "maillard-sear",
       "braising"
     ],
@@ -22202,9 +22313,8 @@
       }
     ],
     "techniques": [
-      "dashi-extraction",
-      "drop-lid-simmer",
-      "miso-tempering"
+      "dashi",
+      "simmering"
     ],
     "equipment": [
       "dutch-oven",
@@ -22347,7 +22457,7 @@
     ],
     "techniques": [
       "maillard-sear",
-      "bloom-aromatics",
+      "blooming-aromatics",
       "braising"
     ],
     "equipment": [
@@ -22614,9 +22724,7 @@
         "optional": true
       }
     ],
-    "techniques": [
-      "salt-fermentation"
-    ],
+    "techniques": [],
     "equipment": [
       "fermentation-crock",
       "cheesecloth",
@@ -23374,7 +23482,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 10
+      "usedInCount": 11
     }
   },
   {
@@ -23391,7 +23499,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -25949,8 +26057,8 @@
       }
     ],
     "techniques": [
-      "low-and-slow-simmer",
-      "sweating-aromatics"
+      "simmering",
+      "sweating"
     ],
     "equipment": [
       "medium-pot",
@@ -26245,7 +26353,7 @@
       }
     ],
     "techniques": [
-      "high-heat-grilling"
+      "grilling"
     ],
     "equipment": [
       "blender",
@@ -26412,7 +26520,7 @@
     ],
     "techniques": [
       "maillard-sear",
-      "sweating-aromatics",
+      "sweating",
       "spice-tempering"
     ],
     "equipment": [
@@ -26630,9 +26738,8 @@
       }
     ],
     "techniques": [
-      "open-flame-char",
-      "rustic-mash",
-      "tahini-bind"
+      "comal-charring",
+      "tahini-emulsion"
     ],
     "equipment": [
       "gas-burner-or-grill",
@@ -26912,9 +27019,7 @@
       }
     ],
     "techniques": [
-      "quick-pickle",
-      "high-heat-grill",
-      "sandwich-build"
+      "grilling"
     ],
     "equipment": [
       "grill",
@@ -27208,10 +27313,9 @@
       }
     ],
     "techniques": [
-      "spice-paste-pounding",
-      "spice-paste-frying",
+      "mortar-pounding",
       "blooming-aromatics",
-      "dry-cook-reduction"
+      "reduction"
     ],
     "equipment": [
       "food-processor",
@@ -27435,9 +27539,9 @@
     ],
     "techniques": [
       "maillard-sear",
-      "dry-sweat",
-      "bloom-spice",
-      "braise"
+      "sweating",
+      "blooming-aromatics",
+      "braising"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -27750,8 +27854,7 @@
       }
     ],
     "techniques": [
-      "creaming",
-      "folding"
+      "creaming-butter-sugar"
     ],
     "equipment": [
       "stand-mixer-or-hand-mixer",
@@ -27985,9 +28088,7 @@
       }
     ],
     "techniques": [
-      "maillard-sear",
-      "roux",
-      "lamination"
+      "maillard-sear"
     ],
     "equipment": [
       "pastry-cutter",
@@ -28379,8 +28480,7 @@
       }
     ],
     "techniques": [
-      "braising",
-      "sausage-stuffing"
+      "braising"
     ],
     "equipment": [
       "meat-grinder",
@@ -28529,8 +28629,7 @@
       }
     ],
     "techniques": [
-      "blooming-aromatics",
-      "roux"
+      "blooming-aromatics"
     ],
     "equipment": [
       "wide-skillet",
@@ -28654,7 +28753,7 @@
       }
     ],
     "techniques": [
-      "low-and-slow-simmer",
+      "simmering",
       "maillard-sear"
     ],
     "equipment": [
@@ -28857,7 +28956,7 @@
       }
     ],
     "techniques": [
-      "vinegar-braise",
+      "braising",
       "maillard-sear"
     ],
     "equipment": [
@@ -29009,7 +29108,7 @@
     "techniques": [
       "dry-brining",
       "maillard-sear",
-      "fond-deglaze",
+      "deglazing",
       "braising"
     ],
     "equipment": [
@@ -29256,10 +29355,9 @@
     ],
     "techniques": [
       "maillard-sear",
-      "dry-sweat",
-      "bloom-spice",
-      "braise",
-      "tempering"
+      "sweating",
+      "blooming-aromatics",
+      "braising"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -29424,9 +29522,9 @@
       }
     ],
     "techniques": [
-      "spice-paste-frying",
-      "sauce-reduction",
-      "high-heat-grill"
+      "blooming-aromatics",
+      "reduction",
+      "grilling"
     ],
     "equipment": [
       "grill",
@@ -29578,9 +29676,8 @@
       }
     ],
     "techniques": [
-      "yogurt-marinade",
-      "spice-bloom-in-marinade",
-      "broiler-char"
+      "blooming-aromatics",
+      "comal-charring"
     ],
     "equipment": [
       "heavy-sheet-pan",
@@ -29730,9 +29827,8 @@
       }
     ],
     "techniques": [
-      "tagine-braise",
-      "saffron-bloom",
-      "spice-bloom"
+      "braising",
+      "blooming-aromatics"
     ],
     "equipment": [
       "tagine-or-dutch-oven",
@@ -30694,9 +30790,7 @@
       }
     ],
     "techniques": [
-      "autolyse",
-      "stretch-and-fold",
-      "cold-proof",
+      "bulk-fermentation",
       "maillard-sear"
     ],
     "equipment": [
@@ -30882,9 +30976,7 @@
       }
     ],
     "techniques": [
-      "couscous-steam",
-      "saffron-bloom",
-      "spice-bloom"
+      "blooming-aromatics"
     ],
     "equipment": [
       "couscoussier-or-stockpot-with-steamer",
@@ -31047,7 +31139,7 @@
     ],
     "techniques": [
       "maillard-sear",
-      "fond-deglaze"
+      "deglazing"
     ],
     "equipment": [
       "heavy-cast-iron-skillet",
@@ -31487,8 +31579,8 @@
       }
     ],
     "techniques": [
-      "low-and-slow-simmer",
-      "sweating-aromatics",
+      "simmering",
+      "sweating",
       "spice-tempering",
       "deglazing"
     ],
@@ -31680,9 +31772,9 @@
       }
     ],
     "techniques": [
-      "dry-sweat",
-      "bloom-spice",
-      "braise"
+      "sweating",
+      "blooming-aromatics",
+      "braising"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -31791,9 +31883,8 @@
       }
     ],
     "techniques": [
-      "simmer",
-      "bloom-spice",
-      "egusi-pebbling"
+      "simmering",
+      "blooming-aromatics"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -32054,9 +32145,7 @@
       }
     ],
     "techniques": [
-      "walnut-slow-sweat",
-      "saffron-bloom",
-      "long-braise"
+      "braising"
     ],
     "equipment": [
       "heavy-dutch-oven",
@@ -32246,8 +32335,7 @@
       }
     ],
     "techniques": [
-      "overnight-soak",
-      "gentle-reduction"
+      "reduction"
     ],
     "equipment": [
       "large bowl for soaking",
@@ -32349,8 +32437,7 @@
       }
     ],
     "techniques": [
-      "maillard-sear",
-      "egg-doneness"
+      "maillard-sear"
     ],
     "equipment": [
       "cast-iron-skillet",
@@ -32631,8 +32718,7 @@
       }
     ],
     "techniques": [
-      "maillard-sear",
-      "caramelizing"
+      "maillard-sear"
     ],
     "equipment": [
       "wide-saucepan",
@@ -32892,9 +32978,7 @@
       }
     ],
     "techniques": [
-      "herb-darkening",
-      "long-braise",
-      "onion-deep-brown"
+      "braising"
     ],
     "equipment": [
       "heavy-dutch-oven",
@@ -33082,10 +33166,7 @@
       }
     ],
     "techniques": [
-      "pork-poach",
-      "shrimp-shock-poach",
-      "rice-noodle-cook",
-      "rice-paper-roll"
+      "poaching"
     ],
     "equipment": [
       "saucepan",
@@ -33235,9 +33316,8 @@
       }
     ],
     "techniques": [
-      "blanch",
-      "dry-sweat",
-      "braise"
+      "sweating",
+      "braising"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -33372,9 +33452,9 @@
     ],
     "techniques": [
       "maillard-sear",
-      "dry-sweat",
-      "bloom-spice",
-      "braise"
+      "sweating",
+      "blooming-aromatics",
+      "braising"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -33891,10 +33971,8 @@
       }
     ],
     "techniques": [
-      "sub-simmer-poach",
-      "pilaf-fat-toast",
-      "absorption-rice",
-      "oil-bloom"
+      "poaching",
+      "blooming-aromatics"
     ],
     "equipment": [
       "stockpot",
@@ -34144,7 +34222,7 @@
     ],
     "techniques": [
       "braising",
-      "deep-frying"
+      "deep-fry"
     ],
     "equipment": [
       "blender",
@@ -34605,10 +34683,8 @@
       }
     ],
     "techniques": [
-      "spice-bloom",
-      "saffron-bloom",
-      "flour-slurry-thicken",
-      "long-braise"
+      "blooming-aromatics",
+      "braising"
     ],
     "equipment": [
       "heavy-stockpot",
@@ -34738,7 +34814,7 @@
       }
     ],
     "techniques": [
-      "fond-deglaze"
+      "deglazing"
     ],
     "equipment": [
       "dutch-oven"
@@ -34844,7 +34920,7 @@
       }
     ],
     "techniques": [
-      "gentle-reduction"
+      "reduction"
     ],
     "equipment": [
       "small heavy-bottomed saucepan",
@@ -35185,11 +35261,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "alkaline-chickpea-cook",
-      "hot-blend",
-      "garlic-acid-maceration"
-    ],
+    "techniques": [],
     "equipment": [
       "high-power-blender",
       "heavy-pot",
@@ -35535,8 +35607,7 @@
       }
     ],
     "techniques": [
-      "cold-water-soak",
-      "gentle-extraction"
+      "dashi"
     ],
     "equipment": [
       "2-quart saucepan",
@@ -35679,10 +35750,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "wild-ferment",
-      "one-side-cook"
-    ],
+    "techniques": [],
     "equipment": [],
     "added": "2026-05-17",
     "_card": {
@@ -35813,8 +35881,7 @@
       }
     ],
     "techniques": [
-      "yogurt-marinade",
-      "high-heat-sear",
+      "maillard-sear",
       "brown-butter"
     ],
     "equipment": [
@@ -36350,7 +36417,7 @@
     ],
     "techniques": [
       "maillard-sear",
-      "indirect-grilling"
+      "grilling"
     ],
     "equipment": [
       "blender",
@@ -36586,11 +36653,10 @@
       }
     ],
     "techniques": [
-      "dry-sweat",
-      "bloom-spice",
-      "pepper-reduction",
-      "steam-cook",
-      "pot-crust"
+      "sweating",
+      "blooming-aromatics",
+      "reduction",
+      "vapor-steaming"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -36694,9 +36760,7 @@
       }
     ],
     "techniques": [
-      "yogurt-marinade",
-      "saffron-bloom",
-      "live-fire-grill"
+      "grilling"
     ],
     "equipment": [
       "flat-metal-skewers",
@@ -36807,9 +36871,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "vinegar-cure"
-    ],
+    "techniques": [],
     "equipment": [
       "fine-mesh-sieve"
     ],
@@ -36965,8 +37027,7 @@
       }
     ],
     "techniques": [
-      "cold-water-soak",
-      "gentle-extraction"
+      "dashi"
     ],
     "equipment": [
       "2-quart saucepan or large measuring cup",
@@ -37199,10 +37260,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "high-heat-bake",
-      "wet-paste-topping"
-    ],
+    "techniques": [],
     "equipment": [
       "baking-stone",
       "food-processor",
@@ -37380,9 +37438,8 @@
       }
     ],
     "techniques": [
-      "tagine-braise",
-      "saffron-bloom",
-      "spice-bloom",
+      "braising",
+      "blooming-aromatics",
       "maillard-sear"
     ],
     "equipment": [
@@ -37541,7 +37598,7 @@
     ],
     "techniques": [
       "velveting",
-      "wok-hei-sear",
+      "maillard-sear",
       "shallow-frying"
     ],
     "equipment": [
@@ -37674,9 +37731,8 @@
       }
     ],
     "techniques": [
-      "hand-folded-dumpling",
       "brown-butter",
-      "spice-bloom-in-fat"
+      "blooming-aromatics"
     ],
     "equipment": [
       "rolling-pin",
@@ -37778,10 +37834,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "cucumber-drain",
-      "yogurt-fold"
-    ],
+    "techniques": [],
     "equipment": [
       "box-grater",
       "fine-mesh-sieve",
@@ -38043,9 +38096,8 @@
       }
     ],
     "techniques": [
-      "egg-fold-into-sauce",
-      "spice-bloom",
-      "tomato-reduction"
+      "blooming-aromatics",
+      "reduction"
     ],
     "equipment": [
       "wide-skillet",
@@ -38290,9 +38342,9 @@
       }
     ],
     "techniques": [
-      "dry-sweat",
-      "bloom-spice",
-      "simmer"
+      "sweating",
+      "blooming-aromatics",
+      "simmering"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -38464,7 +38516,7 @@
       "dry-toasting",
       "comal-charring",
       "spice-tempering",
-      "salsa-fry"
+      "blooming-aromatics"
     ],
     "equipment": [
       "blender",
@@ -38771,9 +38823,8 @@
       }
     ],
     "techniques": [
-      "spice-paste-pounding",
-      "spice-paste-frying",
-      "wok-stir-fry"
+      "mortar-pounding",
+      "blooming-aromatics"
     ],
     "equipment": [
       "wok",
@@ -38866,9 +38917,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "clarification"
-    ],
+    "techniques": [],
     "equipment": [],
     "added": "2026-05-17",
     "_card": {
@@ -39555,7 +39604,7 @@
       }
     ],
     "techniques": [
-      "dough-resting"
+      "bulk-fermentation"
     ],
     "equipment": [
       "cast-iron tava, skillet, or comal (heavy and flat is structural)",
@@ -40019,9 +40068,7 @@
       }
     ],
     "techniques": [
-      "wok-sear",
-      "wok-stir-fry",
-      "noodle-absorption-stir-fry"
+      "maillard-sear"
     ],
     "equipment": [
       "wok"
@@ -40392,9 +40439,9 @@
     ],
     "techniques": [
       "maillard-sear",
-      "dry-sweat",
-      "bloom-spice",
-      "braise"
+      "sweating",
+      "blooming-aromatics",
+      "braising"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -40577,8 +40624,8 @@
       }
     ],
     "techniques": [
-      "spice-paste-pounding",
-      "spice-paste-frying"
+      "mortar-pounding",
+      "blooming-aromatics"
     ],
     "equipment": [
       "wok",
@@ -40695,10 +40742,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "acid-cure",
-      "knife-work"
-    ],
+    "techniques": [],
     "equipment": [
       "non-reactive-bowl",
       "sharp-knife",
@@ -40857,11 +40901,9 @@
       }
     ],
     "techniques": [
-      "bone-blanch",
-      "open-flame-char",
+      "comal-charring",
       "dry-toasting",
-      "long-simmer-stock",
-      "rice-noodle-cook"
+      "simmering"
     ],
     "equipment": [
       "stockpot",
@@ -41025,8 +41067,7 @@
       }
     ],
     "techniques": [
-      "bulk-rise",
-      "high-heat-bake"
+      "bulk-fermentation"
     ],
     "equipment": [
       "baking-stone",
@@ -41180,10 +41221,10 @@
       }
     ],
     "techniques": [
-      "dry-sweat",
-      "simmer",
-      "poach",
-      "pan-fry"
+      "sweating",
+      "simmering",
+      "poaching",
+      "shallow-frying"
     ],
     "equipment": [],
     "added": "2026-05-17",
@@ -41551,8 +41592,7 @@
       }
     ],
     "techniques": [
-      "maillard-sear",
-      "breading-three-step"
+      "maillard-sear"
     ],
     "equipment": [
       "meat-mallet",
@@ -41939,9 +41979,8 @@
       }
     ],
     "techniques": [
-      "dumpling-wrap",
       "shallow-frying",
-      "steaming"
+      "vapor-steaming"
     ],
     "equipment": [
       "heavy-cast-iron-skillet",
@@ -42069,7 +42108,7 @@
       }
     ],
     "techniques": [
-      "pork-simmer"
+      "simmering"
     ],
     "equipment": [
       "stockpot",
@@ -42228,9 +42267,9 @@
       }
     ],
     "techniques": [
-      "low-and-slow-simmer",
+      "simmering",
       "dry-toasting",
-      "salsa-fry"
+      "blooming-aromatics"
     ],
     "equipment": [
       "large-pot",
@@ -43064,7 +43103,7 @@
       }
     ],
     "techniques": [
-      "sweating-aromatics",
+      "sweating",
       "braising"
     ],
     "equipment": [
@@ -43445,9 +43484,7 @@
         "optional": true
       }
     ],
-    "techniques": [
-      "rice-cookery"
-    ],
+    "techniques": [],
     "equipment": [],
     "added": "2026-05-16",
     "_card": {
@@ -44039,8 +44076,8 @@
     "techniques": [
       "dry-brining",
       "maillard-sear",
-      "sweating-aromatics",
-      "fond-deglaze",
+      "sweating",
+      "deglazing",
       "simmering",
       "pan-emulsion"
     ],
@@ -44878,11 +44915,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "tahdig-steam",
-      "saffron-bloom",
-      "rice-parboil"
-    ],
+    "techniques": [],
     "equipment": [
       "heavy-pot",
       "tight-lid",
@@ -45786,11 +45819,7 @@
         "optional": true
       }
     ],
-    "techniques": [
-      "starch-coating",
-      "high-heat-dehydration",
-      "pangrattato"
-    ],
+    "techniques": [],
     "equipment": [
       "air-fryer",
       "microplane",
@@ -47962,11 +47991,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "ketchup-fry-and-brown",
-      "soft-set-omelet",
-      "omelet-wrap"
-    ],
+    "techniques": [],
     "equipment": [
       "wide-skillet",
       "small-nonstick-skillet (for omelets)",
@@ -48473,9 +48498,7 @@
       }
     ],
     "techniques": [
-      "clam-purging",
-      "dashi",
-      "shellfish-extraction"
+      "dashi"
     ],
     "equipment": [
       "fine-mesh-sieve",
@@ -48563,8 +48586,7 @@
       }
     ],
     "techniques": [
-      "cold-pan-render",
-      "off-heat-egg-emulsion",
+      "lardon-rendering",
       "pan-emulsion"
     ],
     "equipment": [
@@ -48658,9 +48680,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "knife-chop-not-processor"
-    ],
+    "techniques": [],
     "equipment": [
       "chef-knife",
       "cutting-board"
@@ -48814,7 +48834,6 @@
     ],
     "techniques": [
       "myosin-extraction",
-      "water-paddling",
       "maillard-sear",
       "braising"
     ],
@@ -49031,10 +49050,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "greens-wilt-and-dry",
-      "stove-set-then-oven"
-    ],
+    "techniques": [],
     "equipment": [
       "oven-safe-heavy-skillet",
       "thermometer (optional)"
@@ -49125,8 +49141,7 @@
       }
     ],
     "techniques": [
-      "kombu-anchovy-stock",
-      "gentle-egg-set"
+      "dashi"
     ],
     "equipment": [
       "ttukbaegi (Korean clay pot) or heavy ceramic bowl",
@@ -49233,8 +49248,8 @@
       }
     ],
     "techniques": [
-      "pepper-charring",
-      "spice-toasting"
+      "comal-charring",
+      "dry-toasting"
     ],
     "equipment": [
       "food-processor",
@@ -49364,10 +49379,8 @@
       }
     ],
     "techniques": [
-      "tomato-and-chili-char",
-      "salsa-fry",
-      "refried-beans",
-      "sunny-side-baste-fry"
+      "comal-charring",
+      "blooming-aromatics"
     ],
     "equipment": [
       "blender or molcajete",
@@ -49531,10 +49544,9 @@
       }
     ],
     "techniques": [
-      "panade",
       "myosin-extraction",
       "maillard-sear",
-      "fond-deglaze"
+      "deglazing"
     ],
     "equipment": [
       "microplane",
@@ -49632,9 +49644,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "knife-chop-not-processor"
-    ],
+    "techniques": [],
     "equipment": [
       "chef-knife",
       "cutting-board"
@@ -49720,8 +49730,7 @@
       }
     ],
     "techniques": [
-      "spice-toasting",
-      "knife-chop-not-processor"
+      "dry-toasting"
     ],
     "equipment": [
       "food-processor",
@@ -49902,7 +49911,7 @@
       }
     ],
     "techniques": [
-      "aromatic-bloom-in-coconut-milk"
+      "blooming-aromatics"
     ],
     "equipment": [
       "food-processor",
@@ -50081,8 +50090,8 @@
       }
     ],
     "techniques": [
-      "nut-toasting",
-      "pepper-charring"
+      "dry-toasting",
+      "comal-charring"
     ],
     "equipment": [
       "food-processor",
@@ -50188,10 +50197,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "fried-chili-oil",
-      "low-temperature-fry"
-    ],
+    "techniques": [],
     "equipment": [
       "saucepan",
       "food-processor",
@@ -50314,9 +50320,9 @@
       }
     ],
     "techniques": [
-      "spice-bloom",
-      "covered-poach",
-      "tomato-reduction"
+      "blooming-aromatics",
+      "poaching",
+      "reduction"
     ],
     "equipment": [
       "wide-skillet",
@@ -50430,10 +50436,8 @@
       }
     ],
     "techniques": [
-      "cold-soak-dashi",
       "dashi",
-      "prep-staging",
-      "sesame-oil-sear",
+      "maillard-sear",
       "simmering"
     ],
     "equipment": [
@@ -50525,8 +50529,7 @@
       }
     ],
     "techniques": [
-      "brown-butter",
-      "slow-low-scramble"
+      "brown-butter"
     ],
     "equipment": [
       "small-heavy-skillet",
@@ -50606,7 +50609,7 @@
       }
     ],
     "techniques": [
-      "tahini-emulsion-with-water"
+      "tahini-emulsion"
     ],
     "equipment": [
       "mixing-bowl",
@@ -50700,10 +50703,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "layer-and-roll",
-      "dashi-egg-mixture"
-    ],
+    "techniques": [],
     "equipment": [
       "tamagoyaki pan (makiyakinabe)",
       "chopsticks or long thin spatula",
@@ -50962,7 +50962,6 @@
       }
     ],
     "techniques": [
-      "prep-staging",
       "maillard-sear",
       "simmering"
     ],
@@ -51045,8 +51044,7 @@
       }
     ],
     "techniques": [
-      "olive-oil-poach",
-      "plate-flip"
+      "oil-poaching"
     ],
     "equipment": [
       "wide-skillet",
@@ -51129,9 +51127,7 @@
         "optional": false
       }
     ],
-    "techniques": [
-      "cold-oil-emulsion"
-    ],
+    "techniques": [],
     "equipment": [
       "food-processor"
     ],
@@ -51219,7 +51215,6 @@
       }
     ],
     "techniques": [
-      "cucumber-salt-drain",
       "mortar-pounding"
     ],
     "equipment": [
@@ -51328,8 +51323,7 @@
       }
     ],
     "techniques": [
-      "spice-toasting",
-      "knife-chop-not-processor"
+      "dry-toasting"
     ],
     "equipment": [
       "food-processor",
@@ -58328,7 +58322,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 5
+      "usedInCount": 11
     }
   },
   {
@@ -58345,7 +58339,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 32
+      "usedInCount": 36
     }
   },
   {
@@ -58403,7 +58397,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "fire",
-      "usedInCount": 14
+      "usedInCount": 16
     }
   },
   {
@@ -58458,7 +58452,7 @@
     "_card": {
       "swatchIndex": 7,
       "swatchGlyph": "fire",
-      "usedInCount": 7
+      "usedInCount": 8
     }
   },
   {
@@ -58475,7 +58469,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 10
+      "usedInCount": 13
     }
   },
   {
@@ -58492,7 +58486,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 5
+      "usedInCount": 7
     }
   },
   {
@@ -58564,7 +58558,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 4
+      "usedInCount": 6
     }
   },
   {
@@ -58623,7 +58617,7 @@
     "_card": {
       "swatchIndex": 9,
       "swatchGlyph": "fish",
-      "usedInCount": 7
+      "usedInCount": 9
     }
   },
   {
@@ -64808,7 +64802,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "fish",
-      "usedInCount": 7
+      "usedInCount": 11
     }
   },
   {
@@ -69841,7 +69835,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 101
+      "usedInCount": 127
     }
   },
   {
@@ -69894,7 +69888,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 4
+      "usedInCount": 5
     }
   },
   {
@@ -69911,7 +69905,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 25
+      "usedInCount": 34
     }
   },
   {
@@ -69981,7 +69975,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 135
+      "usedInCount": 139
     }
   },
   {
@@ -70034,7 +70028,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 0
+      "usedInCount": 1
     }
   },
   {

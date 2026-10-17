@@ -101,7 +101,7 @@ steps:
   - text: 'Combine the wet ingredients. In a small heavy-bottomed saucepan, combine the 40 g doubanjiang (or yellow miso), 30 g smooth natural peanut butter, 45 g dark soy sauce, 15 g light soy sauce, 45 g dark brown sugar, 15 g honey, 15 g rice vinegar, 8 g grated garlic, 2 g five-spice powder, optional 1 g gochugaru, and 30 ml water. Whisk vigorously to combine; the mixture will look chunky and uneven at the start as the peanut butter and doubanjiang resist incorporation.'
     time_min: 3
   - text: 'Cook to integrate. Place the saucepan over medium-low heat. Stir constantly with a silicone spatula or wooden spoon (the sauce burns readily on the pan bottom because of the sugar). Cook 4 to 5 minutes, until the sauce comes to a gentle simmer, the doubanjiang dissolves completely, the peanut butter melts into the liquid, and the mixture transforms from chunky to glossy uniform paste. The sauce will thicken slightly as it cooks; the texture target is thick spoonable but still pourable (about the consistency of warm honey).'
-    technique: 'gentle-reduction'
+    technique: 'reduction'
     time_min: 5
   - text: 'Adjust the consistency and balance. Pull off heat. The sauce thickens further as it cools; if it is already too thick on the heat, add another 10 to 15 ml of warm water. If it is too thin, return to heat and simmer another 2 minutes. Taste: the sauce should be sweet-savory-umami-faintly-spicy in balance, with a pronounced fermented-soybean depth. If flat, add another 5 g of dark soy. If too sweet, add another 5 g of rice vinegar. If too aggressive (the doubanjiang sometimes reads sharp), add another 10 g of brown sugar.'
     time_min: 2
@@ -110,7 +110,7 @@ steps:
   - text: 'Cool and store. Pour the hoisin into a clean glass jar; cool to room temperature (about 15 minutes uncovered) before sealing and refrigerating. The sauce will continue to thicken over the first 24 hours as the starches in the peanut butter and the soybean paste hydrate fully; the final texture is the thick lacquering consistency that hoisin is known for. Use after the 24-hour rest for peak quality; keeps 3 weeks refrigerated.'
     time_min: 4
 
-techniques: ['gentle-reduction']
+techniques: ['reduction']
 equipment: ['small heavy-bottomed saucepan', 'silicone spatula or wooden spoon', 'whisk', 'glass jar for storage']
 
 modifications:

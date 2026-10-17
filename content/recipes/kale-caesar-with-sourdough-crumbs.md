@@ -151,7 +151,6 @@ steps:
   - text: 'Toss the 180 g / 6 oz torn sourdough shards with the strained garlic oil and the 2 g / ⅓ tsp fine sea salt in a wide bowl until the bread has absorbed every drop. Spread on a sheet tray in a single layer, craggy faces up, with no shards touching. Bake 12 to 14 minutes, tossing once at 7 minutes, until uniformly golden and dry through to the centre. Pull and cool on the tray; the crumbs crisp further as residual steam escapes. The rough hand-torn faces give more crisp surface area than a clean cube, which is the textural point of crumbs over croutons.'
     time_min: 14
   - text: 'Massage the kale. Put the 400 g / 8 cups ribboned lacinato kale in a large bowl with the 3 g / ¾ tsp kosher salt and the 10 g / 2 tsp lemon juice. Rub the kale between your palms with firm pressure for 90 seconds, working in handfuls, until the volume in the bowl drops by roughly half, the leaves darken and gloss, and a ribbon feels pliant and silky rather than stiff. The salt pulls water from the cells osmotically, the mechanical bruising collapses the cell walls, and the acid lowers the pH to blunt the bitter isothiocyanates; the result is a kale that eats tender and only mildly bitter. Set it aside to rest while you build the dressing, at least 10 minutes; the tenderizing continues during the rest.'
-    technique: 'kale-massage'
     time_min: 3
   - text: 'Bring a small saucepan of water to a bare simmer (around 88 °C / 190 °F, surface trembling, no rolling bubbles). Lower the 2 fridge-cold eggs in with a slotted spoon and hold for 90 seconds. The 90-second coddle pasteurizes the egg surface and partially denatures the outer yolk proteins, which thickens the dressing without setting the yolk; the yolk should still pour. Lift the eggs straight into cold tap water for 60 seconds to stop carryover cooking.'
     technique: 'jammy-egg'
@@ -170,7 +169,7 @@ steps:
   - text: 'Add the cooled sourdough crumbs and the 30 g / ¼ cup shaved parmigiano and toss 15 seconds more, just long enough to distribute. Transfer to a wide platter, scatter a few reserved crumbs and shavings over the top, and crack a final pass of black pepper across the surface. Serve within a few minutes of adding the crumbs; the kale itself holds beautifully, but the crumbs soften as they sit in the dressing, and their shatter is the whole reason they are crumbs.'
     time_min: 1
 
-techniques: ['egg-yolk-emulsion', 'blooming-aromatics', 'jammy-egg', 'kale-massage']
+techniques: ['egg-yolk-emulsion', 'blooming-aromatics', 'jammy-egg']
 
 modifications:
   - for: 'protein'

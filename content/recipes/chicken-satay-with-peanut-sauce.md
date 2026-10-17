@@ -197,10 +197,10 @@ steps:
   - text: 'Marinate the chicken. Whisk together the 45 g / 3 tbsp kecap manis, 15 g / 1 tbsp light soy, 15 g garlic, 10 g ginger, 4 g / 1½ tsp coriander, 2 g / ¾ tsp cumin, 2 g / ¾ tsp turmeric, 15 g / 1 tbsp neutral oil, and 15 g / 1 tbsp lime juice in a large bowl. Add the 700 g cubed chicken thigh, toss aggressively to coat every piece, and refrigerate covered for 2 to 6 hours. Soak the bamboo skewers in cold water during the same window.'
     time_min: 5
   - text: 'Build the peanut sauce. Pound or blend the 60 g shallot, 15 g garlic, 15 g chili, and 3 g toasted terasi to a coarse wet paste. Heat the 30 g / 2 tbsp neutral oil in a saucepan over medium heat. Add the paste and fry, stirring constantly, until the raw smell shifts to a deeper aromatic and the paste darkens, about 4 minutes. The oil should visibly separate at the edges.'
-    technique: 'spice-paste-frying'
+    technique: 'blooming-aromatics'
     time_min: 6
   - text: 'Add the 200 g coarse-ground peanuts to the bumbu. Toss to coat in the spiced oil; the peanuts will sizzle and toast slightly more in the residual fat for 60 seconds. Then add the 15 g / 1 tbsp tamarind paste, 20 g / 1½ tbsp palm sugar, 30 g / 2 tbsp kecap manis, and 300 ml / 1¼ cups hot water. Stir to combine. Reduce heat to low and simmer 8 to 10 minutes, stirring frequently, until the sauce thickens to a pourable but coating consistency (it should fall off a spoon in a thick ribbon, not a stream). The peanuts hydrate and the starches release from the ground peanut to body the sauce.'
-    technique: 'sauce-reduction'
+    technique: 'reduction'
     time_min: 11
   - text: 'Taste the sauce, adjust with the 3 g / ½ tsp kosher salt and adjust acid (more tamarind if flat, more palm sugar if too sharp). Hold at room temperature until serving. The sauce will tighten on standing; thin with hot water (1 tbsp at a time) before serving if needed.'
     time_min: 2
@@ -209,11 +209,11 @@ steps:
   - text: 'Build a hot fire. Charcoal grill (the canonical method) over hardwood charcoal, heated until coals are glowing white with a thin gray ash and you cannot hold your hand 10 cm above the grate for more than 2 seconds. Gas grill on high heat (260°C / 500°F) is acceptable. Cast iron grill pan on a hot stove works for a smaller batch. The high heat is non-negotiable, low and slow produces dried-out chicken before the marinade browns.'
     time_min: 10
   - text: 'Grill the satay 90 seconds on the first side, flip with tongs, brush the cooked side with a thin coat of additional kecap manis (about 30 g / 2 tbsp total across all skewers), grill 90 seconds. Flip again, brush the second side, grill 60 seconds. Flip a final time, brush, grill 30 to 60 seconds until the surface is deeply lacquered, slightly charred at the corners, and the chicken interior is fully cooked (75°C / 165°F internal). Total grill time is 4 to 6 minutes per skewer; the constant flip-and-brush builds layers of caramelized kecap manis that produce the canonical satay surface.'
-    technique: 'high-heat-grill'
+    technique: 'grilling'
     time_min: 6
   - text: 'Plate immediately. Arrange 4 skewers per portion on the plate. Pour a generous pool of peanut sauce alongside (or in a small ramekin for dipping). Add a small pile of cucumber slices for cooling foil and a mound of jasmine rice. Scatter fried shallots over the peanut sauce. Serve with extra sambal on the side. Diners pull each skewer through the peanut sauce, eat the chicken off the stick with bites of cucumber and rice between.'
 
-techniques: ['spice-paste-frying', 'sauce-reduction', 'high-heat-grill']
+techniques: ['blooming-aromatics', 'reduction', 'grilling']
 equipment: ['grill', 'food-processor']
 
 modifications:

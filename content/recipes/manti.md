@@ -163,7 +163,7 @@ steps:
   - text: 'Plate: divide the hot drained manti among 4 shallow bowls. Spoon generous pools of the garlic yogurt over each portion (about 100 g per bowl). Drizzle the hot chili butter over the yogurt in dramatic streaks (the contrast of red butter on white yogurt is the visual signature). Sprinkle each bowl with the dried mint and sumac. Serve immediately; the contrast of hot dumpling, cool yogurt, hot chili butter, and bright dried herbs is the entire structural point of the dish.'
     time_min: 2
 
-techniques: ['hand-folded-dumpling', 'brown-butter', 'spice-bloom-in-fat']
+techniques: ['brown-butter', 'blooming-aromatics']
 equipment: ['rolling-pin', 'pasta-machine', 'mortar', 'wide-pot']
 
 modifications:

@@ -138,7 +138,7 @@ steps:
   - text: 'Serve immediately with the accompaniments. Arrange 2 rounds of warm sweet potato and a small mound of corn (50 g per plate) alongside the ceviche; scatter 10 g cancha over (if using). Serve at once; ceviche is structurally a freshly-finished dish and reads less well at the 15-minute post-cure mark. Drink the reserved leche de tigre as a shot on the side (Peruvian ceviche bars serve it in small glasses), or pour over the finished plate, or save in the refrigerator for the next ceviche.'
     time_min: 2
 
-techniques: ['acid-cure', 'knife-work']
+techniques: []
 equipment: ['non-reactive-bowl', 'sharp-knife', 'microplane']
 
 modifications:

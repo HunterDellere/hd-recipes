@@ -137,17 +137,17 @@ steps:
   - text: 'Heat the 30 g / 2 tbsp olive oil in a wide 25 to 30 cm (10 to 12 inch) heavy skillet (cast iron, carbon steel, or stainless; nonstick is acceptable but reads less Maillard-developed) over medium heat. Add the 150 g / 1 onion (diced) and 150 g / 1 bell pepper (diced); sweat 8 to 10 minutes, stirring occasionally, until the onion is translucent-gold and the pepper is fully softened but not browned. Do not rush this step; the slow sweat is where the sofrito base develops its structural sweetness.'
     time_min: 10
   - text: 'Push the vegetables to one side of the pan; in the cleared space, add the 12 g / 3 garlic cloves (minced), the 3 g / 1½ tsp crushed cumin seeds, and the 2 g / 1 tsp crushed caraway seeds. Toast 30 seconds until fragrant. Stir into the vegetables. Add the 3 g / 1½ tsp smoked paprika and the 15 g / 1 tbsp harissa; cook 60 seconds, stirring, until the paprika blooms into the fat (the oil will turn deep orange-red, structurally the visual signal that the spices have integrated).'
-    technique: 'spice-bloom'
+    technique: 'blooming-aromatics'
     time_min: 2
   - text: 'Add the 400 g / 1 can crushed tomatoes, 4 g / ¾ tsp salt, and 3 g / ½ tsp sugar; stir to combine and bring to a steady simmer. Reduce heat to medium-low; simmer uncovered 6 to 8 minutes, stirring occasionally, until the sauce has thickened noticeably (visibly reduced by about a third, the surface oils starting to separate at the edges, the sauce holding a spoon-drag mark briefly before flowing back together). Taste and adjust salt and harissa.'
     time_min: 8
   - text: 'Use the back of a spoon to create 4 shallow wells in the sauce (roughly evenly spaced). Crack the 200 g / 4 eggs one at a time into a small bowl, then slide each egg gently into its well. Season each yolk with a pinch (about 1 g total / a small pinch per egg) of fine sea salt. Reduce heat to low. Cover the pan with a tight-fitting lid; cook 4 to 6 minutes, checking at 4 minutes, until the whites are fully set (no visible translucent gel) and the yolks are still jammy-soft (a gentle nudge with a spoon shows the yolk still wobbling under a thin set film). The window between perfect and overcooked is short; pull immediately when the whites have just set.'
-    technique: 'covered-poach'
+    technique: 'poaching'
     time_min: 6
   - text: 'Off the heat, scatter the 60 g / ¼ cup crumbled feta over the sauce (between and around the eggs, not directly on the yolks); the residual pan heat warms the feta without melting it. Sprinkle the 8 g / 2 tbsp chopped cilantro over the top. Drizzle with the 10 g / 2 tsp finishing olive oil. Serve immediately in the pan, with grilled or toasted bread (Lebanese pita, Tunisian flatbread, sourdough, or country loaf) for sopping the sauce and breaking the yolks; each diner breaks their yolk into the sauce and scoops with bread.'
     time_min: 1
 
-techniques: ['spice-bloom', 'covered-poach', 'tomato-reduction']
+techniques: ['blooming-aromatics', 'poaching', 'reduction']
 equipment: ['wide-skillet', 'tight-lid']
 
 modifications:

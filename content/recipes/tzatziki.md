@@ -92,7 +92,7 @@ steps:
   - text: 'Taste and adjust: tzatziki should read yogurt-forward with assertive garlic, gentle cucumber crunch, fresh dill, and a clean salt-and-acid finish. If flat, more salt and lemon; if too aggressive, more yogurt; if the cucumber dominates, more garlic. Refrigerate at least 1 hour before serving so the flavors integrate; tzatziki served immediately reads disjointed and the garlic dominates. Serve cold as a dip for raw vegetables, grilled flatbread, or pita; or as a sauce for grilled or roasted lamb, chicken, fish, gyro and souvlaki, fried eggplant or zucchini, kafta and kebabs, falafel, grain bowls, or roasted vegetables.'
     time_min: 1
 
-techniques: ['cucumber-salt-drain', 'mortar-pounding']
+techniques: ['mortar-pounding']
 equipment: ['box-grater', 'sieve', 'mortar-and-pestle']
 
 modifications:

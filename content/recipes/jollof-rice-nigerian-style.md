@@ -146,30 +146,29 @@ steps:
   - text: 'In a high-powered blender, combine the 400 g / 3 large red bell peppers, the 400 g / 4 to 5 roma tomatoes, the 12 g / 2 to 3 scotch bonnets, and 150 g / half of the 1 large red onion. Blend on high for 60 to 90 seconds to a completely smooth bright-red puree, scraping down sides as needed. This is the obe ata, the structural base of Nigerian cooking. The puree should be thick but pourable; if it is too thick to blend smoothly, add 2 to 3 tablespoons of water. Set aside.'
     time_min: 5
   - text: 'In a heavy 5 to 6 quart Dutch oven over medium heat, warm the 90 g / 6 tbsp neutral oil for 1 minute. Add the 150 g / other half of the diced red onion and cook 6 to 8 minutes, stirring every minute, until the onion is deep golden brown and soft. This is the second flavor layer below the pepper blend.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 8
   - text: 'Push the onions to one side of the pot and add the 60 g / 4 tbsp tomato paste to the empty side. Fry the tomato paste in the oil for 3 to 4 minutes, stirring constantly with a wooden spoon, until it darkens from bright red to brick red and the oil takes on its color. The fry concentrates the paste''s glutamates and shifts the flavor from raw-tomato to roasted-tomato. Stir the onions back through.'
-    technique: 'bloom-spice'
+    technique: 'blooming-aromatics'
     time_min: 4
   - text: 'Add the 15 g / 4 cloves microplaned garlic, the 10 g / 2 cm knob microplaned ginger, the 5 g / 2 tsp curry powder, the 3 g / 1 tsp fresh thyme, and the 2 bay leaves. Cook 1 minute, stirring, until fragrant.'
     time_min: 1
   - text: 'Pour the blended obe ata pepper puree into the pot and stir to combine. Bring to a vigorous simmer over medium heat, then drop to medium-low and cook uncovered for 25 to 30 minutes, stirring every 5 minutes. The puree starts watery and bright red; over the cook, the water boils off and the sauce thickens and darkens to a deep brick-red. The signal for done is when the oil visibly splits out at the edges and the sauce is the consistency of thick pizza sauce. This long reduction is non-negotiable; skipping it produces thin watery jollof with no depth.'
-    technique: 'pepper-reduction'
+    technique: 'reduction'
     time_min: 28
   - text: 'Add the 4 g / 1 Maggi cube (crumbled in) and the 6 g / 1½ tsp kosher salt. Stir to dissolve. Taste the base; it should read deeply spiced, bold, slightly hot from the scotch bonnet. Add more salt if flat.'
     time_min: 1
   - text: 'Add the parboiled 500 g / 2½ cups rice to the reduced pepper base and stir to coat every grain in the brick-red sauce. Pour in the 500 ml / 2 cups water or chicken stock and stir once to even out. The liquid should just barely cover the rice; if it does not, add a small splash more. Bring to a gentle simmer over medium heat.'
     time_min: 3
   - text: 'Reduce heat to low, cover tightly (place a sheet of foil between pot and lid for a tighter seal if your lid is loose), and simmer for 20 minutes without lifting the lid. The rice absorbs the pepper base and finishes cooking through steam.'
-    technique: 'steam-cook'
+    technique: 'vapor-steaming'
     time_min: 20
   - text: 'For the party-jollof bottom caramelization: after 20 minutes covered, raise heat to medium-low and cook covered for another 8 to 10 minutes, listening for the crackling sound of the bottom-of-pot caramelization developing. The smell will shift from rice-and-pepper to faintly burnt-caramel; this is the prized base, not a failure. If you smell aggressive scorching at any point, pull from heat immediately. Skipping this phase produces fine jollof without the prized crust; doing it right produces party jollof.'
-    technique: 'pot-crust'
     time_min: 10
   - text: 'Pull from heat. Let the pot rest covered for 5 minutes off heat. Uncover and fluff with a fork, scraping up some of the brown crust from the bottom and mixing it through the lighter rice on top. The brown crust pieces (called the prized base) are the most flavorful part of the dish. Discard the bay leaves. Serve with grilled or fried protein (chicken, fish, beef), fried plantain (dodo), and a tomato-onion relish.'
     time_min: 7
 
-techniques: ['dry-sweat', 'bloom-spice', 'pepper-reduction', 'steam-cook', 'pot-crust']
+techniques: ['sweating', 'blooming-aromatics', 'reduction', 'vapor-steaming']
 
 modifications:
   - for: 'cuisine'

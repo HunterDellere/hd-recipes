@@ -151,7 +151,6 @@ steps:
   - text: 'Make the salsa verde first so it can rest. Pound the 4 g / 1 clove grated garlic and the 8 g / 2 to 3 anchovy fillets to a paste in a mortar, or mince both together on the board until smooth. Scrape into a small bowl. Add the 15 g / 2 tbsp chopped capers, the zest of 1 lemon, the 8 g / ½ tbsp red wine vinegar, and the 5 g / 1 tsp dijon mustard. Whisk in the 90 g / scant ½ cup extra-virgin olive oil in a thin stream so it forms a loose, broken emulsion. Do not add the parsley or the lemon juice yet, acid and chlorophyll both fade if they sit too long. Let this base sit at room temperature 15 to 60 minutes; the garlic and anchovy bloom into the oil.'
     time_min: 8
   - text: 'Brine the swordfish. Stir the 50 g / 3 tbsp kosher salt into the 1000 ml / 4 cups cold water until dissolved, a 5% brine. Submerge the two 170 g / 6 oz swordfish steaks and leave them 20 to 30 minutes, no longer. The brine does for swordfish what it does for a pork chop: salt diffuses in and the muscle proteins denature just enough to hold water against the squeeze of the sear, the only moisture insurance a near-fat-free fish gets. Past 40 minutes the texture turns rubbery-firm, so set a timer.'
-    technique: 'brining'
     time_min: 25
   - text: 'Dry the steaks hard. Pull the swordfish from the brine and pat both faces and the edges completely dry with paper towels, pressing to wick moisture out of the surface. Set them on a wire rack and leave 5 minutes; a visibly dry surface is the precondition for a crust, because any surface water must boil off before the flesh can brown, and that delay overcooks the layer just under the surface. Season lightly with the 2 g / ¼ tsp fine sea salt and the 1 g / ½ tsp coarse black pepper just before searing.'
     time_min: 6
@@ -167,7 +166,7 @@ steps:
   - text: 'Plate. Set each swordfish steak on a warm plate. Spoon the salsa verde generously over and around, about 40 to 50 g per steak, letting it pool so each forkful can take a different ratio of sauce to fish. Drizzle the 10 g / 2 tsp finishing extra-virgin olive oil over the top and scatter the 1 g / ¼ tsp flaky salt across the cut surface. Serve with the 40 g / lemon wedges on the side; a squeeze of fresh juice at the table re-brightens the dish as it cools, because the cooked surface mutes the acid already on it. Bread to mop the sauce and a sharp green salad are the canonical companions.'
     time_min: 2
 
-techniques: ['brining', 'maillard-sear']
+techniques: ['maillard-sear']
 equipment: ['heavy-stainless-skillet', 'fish-spatula', 'instant-read-thermometer', 'mortar-and-pestle']
 
 modifications:

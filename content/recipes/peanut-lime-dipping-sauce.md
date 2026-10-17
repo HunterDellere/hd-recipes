@@ -97,7 +97,7 @@ steps:
   - text: 'In a food processor (4 to 7 cup capacity), pulse the 100 g / ⅔ cup roasted peanuts 10 to 12 times to a coarse-medium grind, scraping the sides between pulses; the texture should be like coarse crumbs with some structural pieces remaining (about 1 to 2 mm), not a smooth paste. The texture preservation is structural for the sauce; pure smooth peanut butter reads flat and the satay character disappears. Transfer to a small bowl.'
     time_min: 2
   - text: 'In a small saucepan over medium-low heat, combine the 150 g / ⅔ cup coconut milk, 8 g / 2 garlic cloves, 10 g / 2 tsp grated ginger, and 2 g / ½ tsp red pepper flakes; bring to a gentle simmer (small bubbles around the edge, no rolling boil) and cook 3 minutes, stirring occasionally, to bloom the aromatics in the coconut fat. The bloom is structural for flavor depth; raw garlic and ginger added to the cold sauce read aggressive and one-dimensional, while bloomed aromatics integrate with the coconut and develop a rounded sweetness.'
-    technique: 'aromatic-bloom-in-coconut-milk'
+    technique: 'blooming-aromatics'
     time_min: 4
   - text: 'Pull the saucepan off the heat. Add the ground peanuts, 20 g / 4 tsp fish sauce, 30 g / 2 tbsp palm sugar, and 5 g / 1 tsp toasted sesame oil; whisk to combine. The sauce will thicken visibly as the peanut starches absorb the liquid; this is correct. Whisk in the 30 g / 2 tbsp warm water in a steady stream to thin to the desired consistency, somewhere between heavy cream and runny peanut butter; the sauce should pour off a spoon in a slow ribbon and coat the back of the spoon when dipped.'
     time_min: 2
@@ -106,7 +106,7 @@ steps:
   - text: 'Serve at room temperature or slightly warm. Use as a dip for grilled satay skewers (chicken, beef, pork, lamb), tofu skewers, raw vegetable platters (cucumber, carrot, radish, bell pepper, jicama), fresh spring rolls and rice paper rolls, fried spring rolls, grilled prawns and shrimp; as a pour-over for cold rice noodles (Vietnamese vermicelli bowls), warm rice bowls, and grain bowls; as a dressing for cabbage salads, gado-gado-style vegetable salads, and crunchy slaws; as a finishing drizzle for grilled tofu, grilled fish, and roasted vegetables.'
     time_min: 1
 
-techniques: ['aromatic-bloom-in-coconut-milk']
+techniques: ['blooming-aromatics']
 equipment: ['food-processor', 'small-saucepan']
 
 modifications:

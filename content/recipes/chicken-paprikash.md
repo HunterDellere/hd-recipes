@@ -154,31 +154,30 @@ steps:
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Drop the heat to medium-low. Pour off all but about 3 tbsp / 40 g of the rendered chicken fat from the pot. Add the 400 g / 2 medium diced yellow onions and cook 18 to 22 minutes, stirring every 3 minutes, until deeply golden brown and very soft. The long onion cook is structural; rushing it produces shallow paprikash.'
-    technique: 'dry-sweat'
+    technique: 'sweating'
     time_min: 22
   - text: 'Add the 15 g / 4 cloves microplaned garlic and the 150 g / 1 medium diced bell pepper. Cook 3 minutes, stirring occasionally, until the pepper softens slightly.'
     time_min: 3
   - text: 'Pull the pot off the burner. Sprinkle the 25 g / 3 tbsp + 1 tsp Hungarian sweet paprika and the 1 g / ¼ tsp hot paprika (if using) over the onions and stir constantly for 30 seconds, off heat. The paprika dissolves into the fat and turns the onion mass deep brick-red. Working off heat is structural; paprika scorches almost instantly on direct heat. Once integrated, return to medium-low for 10 seconds.'
-    technique: 'bloom-spice'
+    technique: 'blooming-aromatics'
     time_min: 1
   - text: 'Add the 100 g / 1 diced peeled tomato (or the 15 g / 1 tbsp tomato paste) and stir to combine. Pour in the 400 ml / 1⅔ cups chicken stock and add the 4 g / 1 tsp kosher salt. Stir to dissolve any browned bits on the bottom of the pot.'
     time_min: 2
   - text: 'Return the seared chicken legs and any accumulated juices to the pot, nestling the pieces skin-side up into the sauce. The chicken should be mostly submerged with the tops just showing. Bring to a simmer over medium heat, then drop to low. Cover with the lid slightly ajar (1 cm gap to let steam escape) and simmer for 35 to 40 minutes, until the chicken is fully cooked (internal 75 °C / 165 °F) and tender enough to pull from the bone with light fork pressure.'
-    technique: 'braise'
+    technique: 'braising'
     time_min: 38
   - text: 'Make the nokedli in parallel with the final 15 minutes of the chicken braise (Phase 5). In a bowl, whisk together the 200 g / 1½ cups flour, the 2 eggs, 80 ml / ⅓ cup water, and the 3 g / ½ tsp fine sea salt to form a thick sticky batter, the consistency of stiff cake batter. Adjust water if too dry. Bring a large pot of salted water (4 liters with 20 g / 4 tsp salt) to a hard boil. Using a spätzle maker or a slotted spoon, press the batter through the holes (or scrape thin strands off a small cutting board with a wet knife) directly into the boiling water. The nokedli sink at first, then rise within 60 seconds; cook another 90 seconds after rising. Drain in a colander, transfer to a bowl, toss with a knob of butter to prevent sticking.'
     time_min: 15
   - text: 'Once the chicken is tender, transfer the chicken pieces to a plate using tongs, leaving the sauce in the pot. Pull the pot off the burner; the sauce must cool slightly before the sour cream temper.'
     time_min: 2
   - text: 'In a medium bowl, whisk together the 250 g / 1 cup room-temperature full-fat sour cream and the 15 g / 2 tbsp flour until smooth. Slowly whisk in 4 to 5 ladles (about 250 ml) of the hot sauce from the pot, ladle by ladle, whisking constantly. This off-heat temper raises the sour cream temperature gradually and prevents the proteins from shocking and curdling.'
-    technique: 'tempering'
     time_min: 3
   - text: 'Pour the tempered sour cream mixture back into the pot of sauce and whisk to combine into a uniform creamy brick-red gravy. Return to low heat for 2 to 3 minutes, stirring constantly, until the sauce thickens slightly and warms through; do not let it return to a boil (boiling can still break the emulsion even after tempering). Return the chicken pieces to the pot, spooning sauce over the tops to glaze.'
     time_min: 4
   - text: 'Serve immediately. Plate the nokedli (or buttered egg noodles) first, then arrange 1 to 2 chicken pieces on top per plate, and ladle generously with the creamy paprika sauce. Some Hungarian cooks dollop additional sour cream on top; others consider this gilding. A small bowl of additional hot paprika on the table lets diners adjust their own heat.'
     time_min: 3
 
-techniques: ['maillard-sear', 'dry-sweat', 'bloom-spice', 'braise', 'tempering']
+techniques: ['maillard-sear', 'sweating', 'blooming-aromatics', 'braising']
 
 modifications:
   - for: 'protein'

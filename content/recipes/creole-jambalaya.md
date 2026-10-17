@@ -182,10 +182,10 @@ steps:
     technique: 'maillard-sear'
     time_min: 15
   - text: 'Sweat the Trinity. Reduce heat to medium. Add the 250 g onion, 120 g celery, and 120 g bell pepper to the rendered fat and fond. Stir constantly with a wooden spoon, scraping up the brown fond from the pot bottom into the vegetables. The vegetables will deglaze the pot as they release water. Sweat 6 to 8 minutes until the onion turns translucent and the vegetables soften. Add the 18 g / 5 cloves minced garlic; stir 60 seconds until fragrant.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 8
   - text: 'Toast the tomato paste. Push the vegetables to the edges of the pot. Drop the 30 g / 2 tbsp tomato paste into the cleared center. Toast 90 seconds, stirring the paste alone in the hot fat until it darkens from bright red-orange to brick-brown and smells deeply caramelized. The toast is structural; raw tomato paste reads tinny and flat in the finished dish. Stir the toasted paste into the Trinity.'
-    technique: 'fond-deglaze'
+    technique: 'deglazing'
     time_min: 2
   - text: 'Add spices and tomato. Add the 4 g smoked paprika, 4 g sweet paprika, 2 g oregano, 2 g thyme, 2 g cayenne, 2 bay leaves, and 8 g / 2 tsp kosher salt. Stir 30 seconds to bloom the spices in the hot fat. Add the 200 g drained diced tomatoes; stir to combine.'
     time_min: 2
@@ -200,7 +200,7 @@ steps:
   - text: 'Fluff, finish, and serve. Open the lid. Fluff the jambalaya gently with a fork, working the shrimp down through the rice and lifting the rice from the pot bottom (the bottom layer should be slightly caramelized into a soft Cajun socarrat, not burnt). Scatter the 40 g sliced green onions and 12 g chopped parsley over the surface. Taste; adjust salt with kosher salt by the half-teaspoon. Serve directly from the pot into wide bowls with the 1 lemon cut into 6 wedges and additional hot sauce on the table.'
     time_min: 3
 
-techniques: ['maillard-sear', 'fond-deglaze']
+techniques: ['maillard-sear', 'deglazing']
 equipment: ['heavy-cast-iron-skillet', 'wooden-spoon']
 
 modifications:

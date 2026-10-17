@@ -140,23 +140,21 @@ ingredients:
 
 steps:
   - text: 'Make the salsa ranchera: char the 400 g / 4 tomatoes directly over a gas flame or under a broiler, turning, until the skins are blistered and blackened in patches (4 to 5 minutes; some peeling and charring is structural). Cool 2 minutes; peel off the loose blackened skin and discard (do not rinse; the rinse washes away the smoky char). Char the 4 g / 4 chiles de árbol in a dry skillet over medium heat 30 seconds until fragrant; remove (do not burn; burnt chilies turn bitter). In a blender or molcajete, combine the charred tomatoes, charred chiles, 80 g / ½ onion (diced), and 8 g / 2 garlic cloves; blend or pound to a slightly chunky salsa (smaller than a chickpea but not smooth).'
-    technique: 'tomato-and-chili-char'
+    technique: 'comal-charring'
     time_min: 8
   - text: 'Heat 15 g / 1 tbsp neutral oil in a small saucepan over medium-high heat. When the oil is shimmering, add the blended salsa all at once; it will sizzle aggressively (this is the canonical fried-salsa technique that develops Maillard depth and concentrates the flavor). Reduce heat to medium-low; simmer 10 to 12 minutes, stirring occasionally, until the salsa has thickened noticeably (visibly reduced by about a third, the surface oils starting to separate at the edges) and the flavor has deepened. Add the 3 g / ½ tsp salt; taste and adjust. Keep warm.'
-    technique: 'salsa-fry'
+    technique: 'blooming-aromatics'
     time_min: 12
   - text: 'While the salsa simmers, make the refried beans: heat 15 g / 1 tbsp neutral oil (or lard) in a small skillet over medium heat. Add the 250 g / 1 can black beans with their liquid all at once; mash with a potato masher or the back of a wooden spoon to a slightly chunky texture (about half the beans crushed, half intact). Cook 6 to 8 minutes, stirring frequently, until the beans have thickened to a soupy refried texture (the canonical Mexican refried beans should be wetter and looser than American refried beans; if they look too dry, add 30 ml of water; if too wet, cook longer). Add the 2 g / ¼ tsp salt; taste and adjust. Keep warm.'
-    technique: 'refried-beans'
     time_min: 8
   - text: 'Heat 15 g / 1 tbsp of the 30 g neutral oil in a small skillet over medium-high heat. Lightly toast the 80 g / 4 tortillas one at a time, 20 to 30 seconds per side, until the tortilla is just warmed through and slightly toasted (not crispy fried; the tortilla should still be pliable but with some structural toast). Transfer to a clean kitchen towel; cover to keep warm. Repeat with the remaining tortillas. Add the remaining 15 g / 1 tbsp neutral oil to the same skillet.'
     time_min: 4
   - text: 'Fry the 200 g / 4 eggs: crack each egg directly into the hot oil (over medium heat); season with a small pinch of salt on each yolk. Cook 2 to 3 minutes, basting the whites occasionally with hot oil from the pan (a spoon-baste produces the canonical Mexican breakfast egg with set whites and a still-runny yolk; for a yolk-set egg, cook 1 minute longer or flip briefly). The whites should be fully set with no visible translucent gel; the yolks should still wobble visibly under a thin set film.'
-    technique: 'sunny-side-baste-fry'
     time_min: 3
   - text: 'Assemble each plate: spoon a generous ladle of the warm refried beans onto the center of a warmed plate (about 125 g per plate). Lay 2 of the toasted tortillas on the beans (slightly overlapping). Slide 2 fried eggs onto the tortillas. Spoon the warm salsa ranchera over and around the eggs (about ¼ cup per plate; let the salsa pool around the eggs and onto the beans, not directly over the yolks; the visual contrast of the yellow yolk against the red salsa is structural to the canonical plate). Crumble the 50 g / ¼ cup queso fresco over the salsa; arrange the 100 g / ½ avocado slices alongside; scatter the 8 g / 2 tbsp cilantro generously over the top. Serve immediately with the 30 g / 4 lime wedges on the side. The diner breaks the yolks into the salsa-and-beans, squeezes lime, and folds bites of egg, salsa, beans, cheese, and avocado together with the soft tortilla.'
     time_min: 2
 
-techniques: ['tomato-and-chili-char', 'salsa-fry', 'refried-beans', 'sunny-side-baste-fry']
+techniques: ['comal-charring', 'blooming-aromatics']
 equipment: ['blender or molcajete', 'small-saucepan', 'small-skillet']
 
 modifications:
