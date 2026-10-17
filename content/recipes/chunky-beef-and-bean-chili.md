@@ -48,14 +48,14 @@ ingredients:
 
   - group: 'Phase 2, chile purée'
     item: 'dried ancho chiles'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 40
     unit: 'g'
     prep: 'stemmed, seeded, torn flat'
     note: '(3 chiles)'
   - group: 'Phase 2, chile purée'
     item: 'dried guajillo chiles'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 30
     unit: 'g'
     prep: 'stemmed, seeded, torn flat'

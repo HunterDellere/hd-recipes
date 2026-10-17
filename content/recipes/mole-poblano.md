@@ -35,28 +35,28 @@ source:
 ingredients:
   - group: 'Phase 1, the chilies'
     item: 'dried ancho chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 40
     unit: 'g'
     prep: 'stems and seeds removed, torn into rough pieces'
     note: '(about 5 to 6 anchos; the structural sweet-raisin chili base)'
   - group: 'Phase 1, the chilies'
     item: 'dried mulato chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 30
     unit: 'g'
     prep: 'stems and seeds removed, torn into rough pieces'
     note: '(about 4 mulatos; the chocolatey-tobacco chili; substitute additional ancho if unavailable)'
   - group: 'Phase 1, the chilies'
     item: 'dried pasilla chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 20
     unit: 'g'
     prep: 'stems and seeds removed, torn into rough pieces'
     note: '(about 3 pasillas; deep raisin-and-coffee notes, slightly bitter)'
   - group: 'Phase 1, the chilies'
     item: 'dried chipotle morita chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 6
     unit: 'g'
     prep: 'stems removed, seeds left in for heat'

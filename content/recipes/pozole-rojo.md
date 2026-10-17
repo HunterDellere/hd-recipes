@@ -78,20 +78,21 @@ ingredients:
 
   - group: 'Phase 2, the chili broth'
     item: 'dried guajillo chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 40
     unit: 'g'
     prep: 'stems and seeds removed, toasted 30 seconds in dry skillet'
     note: '(about 6 to 7 guajillos; the structural bright-fruity red base)'
   - group: 'Phase 2, the chili broth'
     item: 'dried ancho chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 20
     unit: 'g'
     prep: 'stems and seeds removed, toasted 30 seconds'
     note: '(about 3 anchos; adds raisin-sweet depth and deepens the color)'
   - group: 'Phase 2, the chili broth'
     item: 'dried árbol chilies (for heat)'
+    slug: 'dried-mexican-chiles'
     qty: 3
     unit: 'g'
     prep: 'stems removed, seeds left in'
