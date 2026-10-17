@@ -848,6 +848,75 @@
     }
   },
   {
+    "path": "pages/recipes/mexican-crema.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Mexican crema",
+    "desc": "Heavy cream cultured with a spoonful of buttermilk at room temperature until it thickens to a pourable, lightly sour cream, then finished with salt and lime. Higher in fat than sour cream, so it does not curdle on hot stews or salsa.",
+    "tags": [
+      "condiment",
+      "fermented",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "mexican-crema",
+    "cuisine": "Mexican",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 0,
+      "total_min": 1445,
+      "active_min": 5
+    },
+    "updated": "2026-10-17",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "heavy cream, not ultra-pasteurized",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "cultured buttermilk",
+        "slug": "buttermilk",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "lime juice",
+        "slug": "lime",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "digital-scale",
+      "glass jar"
+    ],
+    "added": "2026-10-11",
+    "_card": {
+      "swatchIndex": 4,
+      "swatchGlyph": "chili",
+      "totalMinutes": 1445,
+      "diffLabel": "easy",
+      "timeLead": "5 min",
+      "timeAnnotation": "· 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 5,
+      "filterMinutes": 5
+    }
+  },
+  {
     "path": "pages/recipes/basque-burnt-cheesecake.html",
     "type": "recipe",
     "category": "recipes",
@@ -1810,154 +1879,6 @@
       "timeMode": "total",
       "activeMinutes": 60,
       "filterMinutes": 60
-    }
-  },
-  {
-    "path": "pages/recipes/chilaquiles-rojos-with-fried-eggs.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chilaquiles rojos with fried eggs",
-    "desc": "Corn tortilla wedges fried into totopos, then tossed for thirty seconds in a guajillo-ancho-tomato salsa that has been fried in hot oil until it darkens and thickens. Topped with crisp-edged fried eggs, crema, queso fresco, raw white onion, and cilantro, so each bite moves between crunch, soft chip, and runny yolk.",
-    "tags": [
-      "egg",
-      "fried",
-      "spicy",
-      "comfort",
-      "umami"
-    ],
-    "status": "complete",
-    "_slug": "chilaquiles-rojos-with-fried-eggs",
-    "cuisine": "Mexican",
-    "course": "breakfast",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 20,
-      "cook_min": 30,
-      "total_min": 50,
-      "active_min": 45
-    },
-    "updated": "2026-10-11",
-    "diet": [
-      "gluten-free",
-      "nut-free"
-    ],
-    "ingredients": [
-      {
-        "item": "corn tortillas, 15 cm / 6 inch, preferably a day old",
-        "optional": false
-      },
-      {
-        "item": "neutral oil, for frying",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt, for the chips",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "guajillo chiles, stemmed and seeded",
-        "optional": false
-      },
-      {
-        "item": "ancho chile, stemmed and seeded",
-        "optional": false
-      },
-      {
-        "item": "Roma tomatoes",
-        "slug": "tomato",
-        "optional": false
-      },
-      {
-        "item": "white onion, for the salsa",
-        "slug": "white-onion",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, unpeeled",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "chicken stock, low-sodium or homemade",
-        "optional": false
-      },
-      {
-        "item": "Mexican oregano",
-        "slug": "mexican-oregano",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the salsa",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil, for frying the salsa",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "neutral oil, for the eggs",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the eggs",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "Mexican crema",
-        "optional": false
-      },
-      {
-        "item": "queso fresco, crumbled",
-        "slug": "queso-fresco",
-        "optional": false
-      },
-      {
-        "item": "white onion, sliced paper-thin",
-        "slug": "white-onion",
-        "optional": false
-      },
-      {
-        "item": "cilantro leaves and tender stems, chopped",
-        "slug": "cilantro",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "comal-charring",
-      "deep-fry"
-    ],
-    "equipment": [
-      "heavy-saucepan",
-      "wide-skillet",
-      "instant-read-thermometer",
-      "comal or cast-iron skillet",
-      "blender",
-      "fine-mesh sieve"
-    ],
-    "added": "2026-10-11",
-    "_card": {
-      "swatchIndex": 4,
-      "swatchGlyph": "chili",
-      "totalMinutes": 50,
-      "diffLabel": "medium",
-      "timeLead": "50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 45,
-      "filterMinutes": 45
     }
   },
   {
