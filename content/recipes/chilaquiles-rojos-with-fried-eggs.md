@@ -52,11 +52,13 @@ ingredients:
 
   - group: 'Salsa roja'
     item: 'guajillo chiles, stemmed and seeded'
+    slug: 'dried-mexican-chiles'
     qty: 24
     unit: 'g'
     note: '(4 chiles; pliable, not brittle, with a glossy brick-red skin)'
   - group: 'Salsa roja'
     item: 'ancho chile, stemmed and seeded'
+    slug: 'dried-mexican-chiles'
     qty: 12
     unit: 'g'
     note: '(1 chile; should bend like a fruit leather)'

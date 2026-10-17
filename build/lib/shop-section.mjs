@@ -69,7 +69,7 @@ const BUCKETS = {
   spices: [
     'allspice', 'bay-leaf', 'berbere', 'black-pepper', 'caraway-seed',
     'chaat-masala', 'chinese-five-spice', 'cinnamon-stick', 'cloves',
-    'cumin-seeds', 'dried-chilies', 'dried-oregano', 'dried-osmanthus',
+    'cumin-seeds', 'dried-chilies', 'dried-mexican-chiles', 'dried-oregano', 'dried-osmanthus',
     'fennel-seed', 'flaky-salt', 'garam-masala', 'gochugaru', 'green-cardamom',
     'ground-coriander', 'ground-cumin', 'hungarian-paprika',
     'kashmiri-chili-powder', 'mexican-oregano', 'monosodium-glutamate',

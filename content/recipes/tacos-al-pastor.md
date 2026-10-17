@@ -35,14 +35,14 @@ source:
 ingredients:
   - group: 'Phase 1, the adobo marinade'
     item: 'dried guajillo chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 30
     unit: 'g'
     prep: 'stems and seeds removed, toasted 30 seconds in dry skillet'
     note: '(about 5 guajillos; the structural bright-fruity red chili base)'
   - group: 'Phase 1, the adobo marinade'
     item: 'dried ancho chilies'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 15
     unit: 'g'
     prep: 'stems and seeds removed, toasted'

@@ -34,7 +34,7 @@ before_you_start:
 ingredients:
   - group: 'Phase 1, red chile sauce'
     item: 'dried New Mexico red chiles'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 110
     unit: 'g'
     prep: 'stemmed, seeded, torn flat'

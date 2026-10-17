@@ -47,24 +47,28 @@ ingredients:
 
   - group: 'Phase 2, chile purée'
     item: 'dried ancho chiles'
+    slug: 'dried-mexican-chiles'
     qty: 50
     unit: 'g'
     prep: 'stemmed, seeded, torn flat'
     note: '(4 chiles)'
   - group: 'Phase 2, chile purée'
     item: 'dried guajillo chiles'
+    slug: 'dried-mexican-chiles'
     qty: 35
     unit: 'g'
     prep: 'stemmed, seeded, torn flat'
     note: '(6 chiles)'
   - group: 'Phase 2, chile purée'
     item: 'dried pasilla chiles'
+    slug: 'dried-mexican-chiles'
     qty: 20
     unit: 'g'
     prep: 'stemmed, seeded, torn flat'
     note: '(3 chiles)'
   - group: 'Phase 2, chile purée'
     item: 'dried árbol chiles'
+    slug: 'dried-mexican-chiles'
     qty: 4
     unit: 'g'
     prep: 'stemmed (seeds left in)'

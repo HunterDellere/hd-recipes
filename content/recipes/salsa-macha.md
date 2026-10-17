@@ -42,19 +42,21 @@ ingredients:
 
   - group: 'The chilies'
     item: 'dried morita chilies (smoked jalapeño)'
-    slug: 'dried-chilies'
+    slug: 'dried-mexican-chiles'
     qty: 15
     unit: 'g'
     prep: 'stems removed, seeds left in for heat (or partially removed for milder); torn into rough pieces'
     note: '(about 4 to 5 morita chilies; smoked jalapeño, deep smoky flavor with medium heat; chipotle is an acceptable substitute though slightly larger and more aggressive)'
   - group: 'The chilies'
     item: 'dried chile de árbol (or dried Thai chili)'
+    slug: 'dried-mexican-chiles'
     qty: 8
     unit: 'g'
     prep: 'stems removed, seeds left in; left whole or torn'
     note: '(about 10 to 12 chiles de árbol; bright clean heat without smoke; the structural heat source in salsa macha)'
   - group: 'The chilies'
     item: 'dried ancho chili (or pasilla)'
+    slug: 'dried-mexican-chiles'
     qty: 12
     unit: 'g'
     prep: 'stems and seeds removed; torn into rough pieces'
