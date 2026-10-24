@@ -373,129 +373,118 @@ export function renderFamilyContent(family, entries, fromPath) {
       <div class="fam-stats" role="navigation" aria-label="Jump to category">${catStats}</div>
     </div>`;
 
-  // For 'cook' (the recipe explore), include filter bar
+  // For 'cook' (the recipe explore), include the find-a-recipe toolbar:
+  //   1. search box (dish, ingredient, cuisine)
+  //   2. one-tap course pills + quick toggles — the two questions a first-time
+  //      visitor actually asks ("what's for dinner?", "something quick/veg?")
+  //   3. "more filters" dropdowns + sort
+  // Everything round-trips through the URL so a filtered view can be sent.
   let filterBar = '';
   if (family === 'cook') {
     const recipes = byCategory.get('recipes') || [];
-    const cuisines = new Set(), courses = new Set(), diets = new Set(), tags = new Set();
-    for (const r of recipes) {
-      if (r.cuisine) cuisines.add(r.cuisine);
-      if (r.course) courses.add(r.course);
-      for (const d of (r.diet || [])) diets.add(d);
-      for (const t of (r.tags || [])) tags.add(t);
-    }
+    const count = (fn) => { const m = new Map(); for (const r of recipes) for (const v of fn(r)) m.set(v, (m.get(v) || 0) + 1); return m; };
+    const cuisineCounts = count(r => r.cuisine ? [r.cuisine] : []);
+    const courseCounts  = count(r => r.course ? [r.course] : []);
+    const dietCounts    = count(r => r.diet || []);
+    const tagCounts     = count(r => r.tags || []);
     // Drop tag values that just duplicate cuisine names (e.g. "italian", "chinese"),
     // since cuisine has its own facet. Keep dish-type/method/attribute tags.
-    const cuisineLower = new Set([...cuisines].map(c => String(c).toLowerCase()));
-    const dishTags = [...tags].filter(t => !cuisineLower.has(t)).sort();
+    const cuisineLower = new Set([...cuisineCounts.keys()].map(c => String(c).toLowerCase()));
+    const dishTags = [...tagCounts.keys()].filter(t => !cuisineLower.has(t)).sort();
+    const byCountThenName = (m) => [...m.keys()].sort((x, y) => (m.get(y) - m.get(x)) || String(x).localeCompare(String(y)));
 
-    // Filter UI: a row of <details> dropdowns (one per facet) instead of a
-    // wrapping pill grid. Each dropdown shows an active-count badge; applied
-    // filters surface as removable chips below the bar. Far better at this
-    // facet density (50+ values across 6 groups) than a flat chip grid.
     const chevron = '<svg class="filter-menu-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>';
 
-    function radioGroup(name, values, attr) {
-      return values.map(v => `
+    // Each option carries a live match count (filled in client-side as other
+    // filters change) so nobody picks their way into an empty result.
+    function opt(type, name, attr, value, label) {
+      return `
             <label class="filter-opt">
-              <input type="radio" name="${escapeHtml(name)}" value="${escapeHtml(v)}" data-filter-${escapeHtml(attr)}="${escapeHtml(v)}">
-              <span class="filter-opt-label">${escapeHtml(v)}</span>
-            </label>`).join('');
+              <input type="${type}"${name ? ` name="${escapeHtml(name)}"` : ''} value="${escapeHtml(value)}" data-filter-${escapeHtml(attr)}="${escapeHtml(value)}">
+              <span class="filter-opt-label">${escapeHtml(label)}</span>
+              <span class="filter-opt-n" data-opt-count></span>
+            </label>`;
     }
-    function checkboxGroup(values, attr) {
-      return values.map(v => `
-            <label class="filter-opt">
-              <input type="checkbox" value="${escapeHtml(v)}" data-filter-${escapeHtml(attr)}="${escapeHtml(v)}">
-              <span class="filter-opt-label">${escapeHtml(v)}</span>
-            </label>`).join('');
+    function menu(facet, label, body, { hint = '', multi = false } = {}) {
+      return `
+      <details class="filter-menu" data-filter-menu="${escapeHtml(facet)}">
+        <summary class="filter-menu-btn">
+          <span class="filter-menu-label">${escapeHtml(label)}</span>
+          <span class="filter-menu-count" data-menu-count hidden></span>
+          ${chevron}
+        </summary>
+        <div class="filter-panel${multi ? ' filter-panel-multi' : ''}" role="group" aria-label="${escapeHtml(label)}">
+          <div class="filter-panel-head">
+            <span class="filter-panel-title">${escapeHtml(label)}</span>
+            <button type="button" class="filter-panel-done" data-menu-close>Done</button>
+          </div>
+          ${hint ? `<p class="filter-panel-hint">${escapeHtml(hint)}</p>` : ''}
+          ${body}
+        </div>
+      </details>`;
     }
 
-    const cuisineList = [...cuisines].sort();
-    const courseList = [...courses].sort();
-    const dietList = [...diets].sort();
+    // Friendly labels for the course enum. Unknown courses fall back to the raw value.
+    const COURSE_LABEL = {
+      dinner: 'Dinner', lunch: 'Lunch', breakfast: 'Breakfast', side: 'Sides',
+      dessert: 'Desserts', appetizer: 'Appetizers', drink: 'Drinks', snack: 'Snacks',
+      soup: 'Soups', salad: 'Salads', sauce: 'Sauces', bread: 'Bread', stock: 'Stock',
+    };
+    const coursePills = byCountThenName(courseCounts).map(c => `
+        <button type="button" class="cook-pill" data-pill-course="${escapeHtml(c)}" aria-pressed="false">${escapeHtml(COURSE_LABEL[c] || c)} <span class="cook-pill-n" data-pill-count>${courseCounts.get(c)}</span></button>`).join('');
+
+    // Quick toggles: shortcuts into the time / diet / difficulty facets.
+    const quick = [];
+    quick.push(`<button type="button" class="cook-pill cook-pill-quick" data-pill-time="30" aria-pressed="false">Under 30 min</button>`);
+    if (dietCounts.has('vegetarian')) quick.push(`<button type="button" class="cook-pill cook-pill-quick" data-pill-diet="vegetarian" aria-pressed="false">Vegetarian</button>`);
+    quick.push(`<button type="button" class="cook-pill cook-pill-quick" data-pill-difficulty="easy" aria-pressed="false">Easy</button>`);
+
+    const cuisineBody = byCountThenName(cuisineCounts).map(c => opt('radio', 'cuisine', 'cuisine', c, c)).join('');
+    const dietBody = byCountThenName(dietCounts).map(d => opt('checkbox', '', 'diet', d, d)).join('');
+    const tagBody = dishTags.map(t => opt('checkbox', '', 'tag', t, t)).join('');
+    const timeBody = [['15', 'Under 15 min'], ['30', 'Under 30 min'], ['60', 'Under 1 hour'], ['120', 'Under 2 hours']]
+      .map(([v, l]) => opt('radio', 'time', 'time', v, l)).join('');
+    const diffBody = ['easy', 'medium', 'hard'].map(d => opt('radio', 'difficulty', 'difficulty', d, d)).join('');
 
     filterBar = `
     <!-- auto-link-skip -->
-    <div class="filter-bar" role="toolbar" aria-label="Filter recipes" data-filter-bar>
-      <details class="filter-menu" data-filter-menu="cuisine">
-        <summary class="filter-menu-btn">
-          <span class="filter-menu-label">Cuisine</span>
-          <span class="filter-menu-count" data-menu-count></span>
-          ${chevron}
-        </summary>
-        <div class="filter-panel" role="group" aria-label="Cuisine">
-          ${radioGroup('cuisine', cuisineList, 'cuisine')}
-        </div>
-      </details>
+    <div class="cook-tools" data-filter-bar>
+      <div class="cook-search">
+        <svg class="cook-search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" class="cook-search-input" data-filter-q placeholder="Search a dish, ingredient, or cuisine" aria-label="Search recipes" autocomplete="off" enterkeyhint="search">
+      </div>
 
-      <details class="filter-menu" data-filter-menu="course">
-        <summary class="filter-menu-btn">
-          <span class="filter-menu-label">Course</span>
-          <span class="filter-menu-count" data-menu-count></span>
-          ${chevron}
-        </summary>
-        <div class="filter-panel" role="group" aria-label="Course">
-          ${radioGroup('course', courseList, 'course')}
-        </div>
-      </details>
+      <div class="cook-pills" role="group" aria-label="Course and quick filters">
+        <button type="button" class="cook-pill" data-pill-all aria-pressed="true">All <span class="cook-pill-n">${recipes.length}</span></button>${coursePills}
+        <span class="cook-pills-sep" aria-hidden="true"></span>
+        ${quick.join('\n        ')}
+      </div>
 
-      ${dishTags.length ? `<details class="filter-menu" data-filter-menu="tag">
-        <summary class="filter-menu-btn">
-          <span class="filter-menu-label">Tag</span>
-          <span class="filter-menu-count" data-menu-count></span>
-          ${chevron}
-        </summary>
-        <div class="filter-panel filter-panel-multi" role="group" aria-label="Tag">
-          <p class="filter-panel-hint">Multi-select — recipes match all chosen tags</p>
-          ${checkboxGroup(dishTags, 'tag')}
-        </div>
-      </details>` : ''}
+      <div class="filter-bar" role="toolbar" aria-label="More filters">
+        ${menu('cuisine', 'Cuisine', cuisineBody)}
+        ${menu('diet', 'Diet', dietBody, { hint: 'Pick any. Recipes match all chosen.', multi: true })}
+        ${menu('time', 'Active time', timeBody, { hint: "Hands-on cooking only. Overnight rests don't count." })}
+        ${menu('difficulty', 'Difficulty', diffBody)}
+        ${dishTags.length ? menu('tag', 'Style', tagBody, { hint: 'Pick any. Recipes match all chosen.', multi: true }) : ''}
+        <label class="cook-sort">
+          <span class="cook-sort-label">Sort</span>
+          <select class="sort-select" data-sort-select aria-label="Sort recipes">
+            <option value="newest" selected>Newest</option>
+            <option value="az">A–Z</option>
+            <option value="quick">Quickest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </label>
+      </div>
+    </div>
 
-      ${dietList.length ? `<details class="filter-menu" data-filter-menu="diet">
-        <summary class="filter-menu-btn">
-          <span class="filter-menu-label">Diet</span>
-          <span class="filter-menu-count" data-menu-count></span>
-          ${chevron}
-        </summary>
-        <div class="filter-panel" role="group" aria-label="Diet">
-          ${radioGroup('diet', dietList, 'diet')}
-        </div>
-      </details>` : ''}
-
-      <details class="filter-menu" data-filter-menu="time">
-        <summary class="filter-menu-btn">
-          <span class="filter-menu-label">Active time</span>
-          <span class="filter-menu-count" data-menu-count></span>
-          ${chevron}
-        </summary>
-        <div class="filter-panel" role="group" aria-label="Active time">
-          <p class="filter-panel-hint">Engaged cooking only — overnight rests don't count.</p>
-          <label class="filter-opt"><input type="radio" name="time" value="15" data-filter-time="15"><span class="filter-opt-label">&lt;15 min</span></label>
-          <label class="filter-opt"><input type="radio" name="time" value="30" data-filter-time="30"><span class="filter-opt-label">&lt;30 min</span></label>
-          <label class="filter-opt"><input type="radio" name="time" value="60" data-filter-time="60"><span class="filter-opt-label">&lt;60 min</span></label>
-          <label class="filter-opt"><input type="radio" name="time" value="120" data-filter-time="120"><span class="filter-opt-label">&lt;2 hr</span></label>
-        </div>
-      </details>
-
-      <details class="filter-menu" data-filter-menu="difficulty">
-        <summary class="filter-menu-btn">
-          <span class="filter-menu-label">Difficulty</span>
-          <span class="filter-menu-count" data-menu-count></span>
-          ${chevron}
-        </summary>
-        <div class="filter-panel" role="group" aria-label="Difficulty">
-          <label class="filter-opt"><input type="radio" name="difficulty" value="easy" data-filter-difficulty="easy"><span class="filter-opt-label">easy</span></label>
-          <label class="filter-opt"><input type="radio" name="difficulty" value="medium" data-filter-difficulty="medium"><span class="filter-opt-label">medium</span></label>
-          <label class="filter-opt"><input type="radio" name="difficulty" value="hard" data-filter-difficulty="hard"><span class="filter-opt-label">hard</span></label>
-        </div>
-      </details>
-
+    <div class="cook-status">
+      <p class="filter-status" data-filter-status aria-live="polite">${recipes.length} recipes</p>
+      <div class="filter-chips" data-filter-chips hidden></div>
       <button type="button" class="filter-clear-btn" data-filter-clear hidden>Clear all</button>
     </div>
-    <p class="filter-status" data-filter-status></p>
-    <div class="filter-chips" data-filter-chips aria-live="polite"></div>
     <div class="filter-empty" data-filter-empty hidden role="status">
-      <p class="filter-empty-msg">No recipes match those filters. Try removing one.</p>
+      <p class="filter-empty-msg">No recipes match that combination. Try removing a filter.</p>
       <button type="button" class="filter-empty-btn" data-filter-empty-clear>Clear all filters</button>
     </div>
     <!-- /auto-link-skip -->`;
@@ -518,9 +507,24 @@ export function renderFamilyContent(family, entries, fromPath) {
   // reorder by name or date. Cook also carries the filter facets.
   const sortAttrs = (e) =>
     `data-card data-title="${escapeHtml((e.title || '').toLowerCase())}" data-updated="${escapeHtml(e.updated || '')}"`;
+  // Free-text search haystack: title, cuisine, course, tags, and the head noun
+  // of each ingredient line ("garlic, minced" → "garlic") so "chickpea" or
+  // "miso" finds every recipe that uses it.
+  const searchText = (e) => {
+    const ings = (e.ingredients || [])
+      .map(i => (typeof i === 'string' ? i : (i && i.item) || '').split(',')[0].replace(/\(.*?\)/g, '').trim())
+      .filter(Boolean);
+    return [e.title, e.cuisine, e.course, ...(e.tags || []), ...(e.diet || []), ...ings]
+      .filter(Boolean).join(' ').toLowerCase().replace(/\s+/g, ' ');
+  };
   const augment = (e) => family === 'cook'
-    ? `${sortAttrs(e)} data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${filterTime(e)}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}"`
+    ? `${sortAttrs(e)} data-cuisine="${escapeHtml(e.cuisine || '')}" data-course="${escapeHtml(e.course || '')}" data-diet="${(e.diet || []).map(escapeHtml).join('|')}" data-difficulty="${escapeHtml(e.difficulty || '')}" data-time="${filterTime(e)}" data-tags="${(e.tags || []).map(escapeHtml).join('|')}" data-search="${escapeHtml(searchText(e))}"`
     : sortAttrs(e);
+  // Cook cards lead with the course ("dinner", "dessert") — every card on the
+  // page is a recipe, so the category eyebrow would just repeat itself.
+  const cardOpts = (e) => family === 'cook'
+    ? { extraData: augment(e), eyebrow: e.course || 'recipe' }
+    : { extraData: augment(e) };
 
   // Pantry: enable A–Z anchor strip when a category has ≥20 entries.
   // The strip lets users jump to a letter when scrolling becomes painful.
@@ -548,7 +552,7 @@ export function renderFamilyContent(family, entries, fromPath) {
       const stripLinks = letters.map(L =>
         `<a class="alpha-link" href="#cat-${escapeHtml(catKey)}-${escapeHtml(L.toLowerCase())}">${escapeHtml(L)}</a>`).join('');
       const groups = letters.map(L => {
-        const cardsHtml = byLetter.get(L).map(e => entryCard(e, fromPath, { extraData: augment(e) })).join('');
+        const cardsHtml = byLetter.get(L).map(e => entryCard(e, fromPath, cardOpts(e))).join('');
         return `
       <div class="alpha-group" id="cat-${escapeHtml(catKey)}-${escapeHtml(L.toLowerCase())}">
         <h3 class="alpha-head">${escapeHtml(L)}</h3>
@@ -559,10 +563,25 @@ export function renderFamilyContent(family, entries, fromPath) {
       <nav class="alpha-strip" aria-label="Jump to letter">${stripLinks}</nav>
       ${groups}`;
     } else {
-      const cardsHtml = list.map(e => entryCard(e, fromPath, { extraData: augment(e) })).join('');
+      const cardsHtml = list.map(e => entryCard(e, fromPath, cardOpts(e))).join('');
       body = list.length
         ? `<div class="card-grid" data-grid>${cardsHtml}\n      </div>`
         : `<p class="fam-cat-empty">No entries yet.</p>`;
+      if (family === 'cook' && list.length) {
+        body += `
+      <div class="cook-more" data-show-more-wrap hidden>
+        <button type="button" class="cook-more-btn" data-show-more>Show more recipes</button>
+      </div>`;
+      }
+    }
+
+    // Cook is a single list: the toolbar already says what it is and how many.
+    if (family === 'cook') {
+      return `
+    <section class="fam-cat fam-cat-cook" id="cat-${escapeHtml(catKey)}" data-category="${escapeHtml(catKey)}">
+      <h2 class="visually-hidden">${escapeHtml(meta.label)}</h2>
+      ${body}
+    </section>`;
     }
 
     return `
@@ -625,6 +644,8 @@ export function renderFamilyContent(family, entries, fromPath) {
     </div>
     <!-- /auto-link-skip -->`;
 
+  // Cook carries its own sort inside the toolbar and needs no stats strip.
+  if (family === 'cook') return `${filterBar}\n<div data-sort-root>${sections}</div>`;
   return `${intro}\n${filterBar}\n${sortBar}\n<div data-sort-root>${sections}\n${tagsSection}</div>`;
 }
 

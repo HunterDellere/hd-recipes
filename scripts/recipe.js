@@ -1187,205 +1187,304 @@
   const filterBar = document.querySelector('[data-filter-bar]');
   if (filterBar) initExploreFilters(filterBar);
 
-  function initExploreFilters(bar) {
+  function initExploreFilters(root) {
     const grid = document.querySelector('[data-grid]');
+    const bar = root.querySelector('.filter-bar') || root;
     const status = document.querySelector('[data-filter-status]');
     const chipsEl = document.querySelector('[data-filter-chips]');
-    const clearBtn = bar.querySelector('[data-filter-clear]');
+    const clearBtn = document.querySelector('[data-filter-clear]');
+    const emptyEl = document.querySelector('[data-filter-empty]');
+    const emptyClear = document.querySelector('[data-filter-empty-clear]');
+    const qInput = root.querySelector('[data-filter-q]');
+    const moreWrap = document.querySelector('[data-show-more-wrap]');
+    const moreBtn = document.querySelector('[data-show-more]');
     if (!grid) return;
     const cards = Array.from(grid.querySelectorAll('[data-card]'));
+    const total = cards.length;
 
-    // tag is multi-select (Set, AND semantics); other facets are single-select.
-    const state = { cuisine: null, course: null, diet: null, time: null, difficulty: null, tags: new Set() };
+    // Long lists are paged so the page stays light on phones; filtering resets it.
+    const PAGE = 36;
+    let shown = PAGE;
 
-    // Map facet → human label for chip display
-    const FACET_LABEL = {
-      cuisine: 'Cuisine', course: 'Course', diet: 'Diet',
-      time: 'Active time', difficulty: 'Difficulty',
-    };
+    // Single-select facets hold a value or null; multi-select facets are Sets
+    // with AND semantics (a recipe must carry every chosen diet / tag).
+    const SINGLE = ['cuisine', 'course', 'time', 'difficulty'];
+    const MULTI = ['diet', 'tag'];
+    const state = { q: '', cuisine: null, course: null, time: null, difficulty: null, diet: new Set(), tag: new Set() };
+
+    const COURSE_LABEL = {};
+    root.querySelectorAll('[data-pill-course]').forEach(p => {
+      COURSE_LABEL[p.dataset.pillCourse] = p.childNodes[0].textContent.trim();
+    });
+
+    // Pre-split card facets once — apply() runs on every keystroke.
+    const facts = new Map(cards.map(card => [card, {
+      cuisine: card.dataset.cuisine || '',
+      course: card.dataset.course || '',
+      difficulty: card.dataset.difficulty || '',
+      time: card.dataset.time ? parseInt(card.dataset.time, 10) : null,
+      diet: (card.dataset.diet || '').split('|').filter(Boolean),
+      tag: (card.dataset.tags || '').split('|').filter(Boolean),
+      text: (card.dataset.search || card.dataset.title || '').toLowerCase(),
+    }]));
+
+    function matchFacet(f, facet, value) {
+      if (facet === 'time') return f.time != null && f.time <= parseInt(value, 10);
+      return f[facet] === value;
+    }
+    // Does card fact `f` pass every active filter, optionally ignoring one
+    // facet (used to compute "how many would match if I picked X here").
+    function passes(f, ignore) {
+      if (state.q) {
+        for (const tok of state.q.split(/\s+/)) if (tok && !f.text.includes(tok)) return false;
+      }
+      for (const k of SINGLE) {
+        if (k === ignore || !state[k]) continue;
+        if (!matchFacet(f, k, state[k])) return false;
+      }
+      for (const k of MULTI) {
+        if (k === ignore) continue;
+        for (const v of state[k]) if (!f[k].includes(v)) return false;
+      }
+      return true;
+    }
 
     // ── URL sync ───────────────────────────────────────────────────────
-    // Round-trip filter state through the URL so a bookmarked or shared link
-    // restores the same filtered view. Uses replaceState so the back button
-    // doesn't accumulate every keystroke of filter activity.
+    // Round-trip state through the URL so a filtered view can be bookmarked
+    // or texted to someone. replaceState keeps the back button clean.
     function syncUrl() {
       try {
         const qs = new URLSearchParams();
-        if (state.cuisine) qs.set('cuisine', state.cuisine);
-        if (state.course) qs.set('course', state.course);
-        if (state.diet) qs.set('diet', state.diet);
-        if (state.difficulty) qs.set('difficulty', state.difficulty);
-        if (state.time) qs.set('time', state.time);
-        for (const t of state.tags) qs.append('tag', t);
+        if (state.q) qs.set('q', state.q);
+        for (const k of SINGLE) if (state[k]) qs.set(k, state[k]);
+        for (const k of MULTI) for (const v of state[k]) qs.append(k, v);
+        const sortSel = document.querySelector('[data-sort-select]');
+        if (sortSel && sortSel.value !== 'newest') qs.set('sort', sortSel.value);
         const search = qs.toString();
-        const next = location.pathname + (search ? '?' + search : '') + location.hash;
-        history.replaceState(null, '', next);
+        history.replaceState(null, '', location.pathname + (search ? '?' + search : '') + location.hash);
       } catch {}
     }
 
-    // ── filtering ──────────────────────────────────────────────────────
-    function apply() {
-      let visible = 0;
-      const total = cards.length;
-      for (const card of cards) {
-        const matchCuisine = !state.cuisine || card.dataset.cuisine === state.cuisine;
-        const matchCourse = !state.course || card.dataset.course === state.course;
-        const matchDiet = !state.diet || (card.dataset.diet || '').split('|').includes(state.diet);
-        const matchDiff = !state.difficulty || card.dataset.difficulty === state.difficulty;
-        const matchTime = !state.time || (card.dataset.time && parseInt(card.dataset.time, 10) <= parseInt(state.time, 10));
-        const cardTags = (card.dataset.tags || '').split('|').filter(Boolean);
-        const matchTags = state.tags.size === 0 || [...state.tags].every(t => cardTags.includes(t));
-        const show = matchCuisine && matchCourse && matchDiet && matchDiff && matchTime && matchTags;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-      }
-      renderChips();
-      renderCounts();
-      syncUrl();
-      const totalActive = countActive();
-      if (clearBtn) clearBtn.hidden = totalActive === 0;
-      if (status) {
-        if (totalActive === 0) {
-          status.textContent = '';
-        } else {
-          status.textContent = `Showing ${visible} of ${total} ${total === 1 ? 'recipe' : 'recipes'}`;
-        }
-      }
-    }
-
     function countActive() {
-      let n = 0;
-      for (const k of ['cuisine','course','diet','time','difficulty']) if (state[k]) n++;
-      n += state.tags.size;
+      let n = state.q ? 1 : 0;
+      for (const k of SINGLE) if (state[k]) n++;
+      for (const k of MULTI) n += state[k].size;
       return n;
     }
 
-    // ── chip strip (active-filter summary) ─────────────────────────────
-    function renderChips() {
-      if (!chipsEl) return;
-      const out = [];
-      for (const k of ['cuisine','course','diet','difficulty']) {
-        if (state[k]) out.push(chipHtml(k, state[k], state[k]));
+    // ── filtering + paging ─────────────────────────────────────────────
+    function apply({ resetPage = true } = {}) {
+      if (resetPage) shown = PAGE;
+      // Walk cards in current DOM order so paging follows the active sort.
+      let visible = 0;
+      for (const card of grid.querySelectorAll('[data-card]')) {
+        const ok = passes(facts.get(card));
+        if (ok) visible++;
+        card.hidden = !(ok && visible <= shown);
       }
-      if (state.time) out.push(chipHtml('time', state.time, `≤ ${state.time} min active`));
-      for (const t of state.tags) out.push(chipHtml('tag', t, `#${t}`));
-      chipsEl.innerHTML = out.join('');
-      chipsEl.hidden = out.length === 0;
+      const active = countActive();
+      if (status) {
+        status.textContent = active === 0
+          ? `${total} recipes`
+          : `${visible} of ${total} recipes`;
+      }
+      if (emptyEl) emptyEl.hidden = visible !== 0;
+      if (moreWrap) {
+        const left = visible - Math.min(visible, shown);
+        moreWrap.hidden = left <= 0;
+        if (moreBtn && left > 0) moreBtn.textContent = `Show ${Math.min(left, PAGE)} more · ${left} left`;
+      }
+      if (clearBtn) clearBtn.hidden = active === 0;
+      renderChips();
+      renderMenuState();
+      renderPills();
+      syncUrl();
     }
+
+    // ── active-filter chips ────────────────────────────────────────────
+    function escapeHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function escapeAttr(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
     function chipHtml(facet, value, label) {
       return `<button type="button" class="filter-chip" data-chip-facet="${escapeAttr(facet)}" data-chip-value="${escapeAttr(value)}" aria-label="Remove filter: ${escapeAttr(label)}">${escapeHtml(label)}<span class="filter-chip-x" aria-hidden="true">×</span></button>`;
     }
-    function escapeHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-    function escapeAttr(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
-
+    function renderChips() {
+      if (!chipsEl) return;
+      const out = [];
+      if (state.q) out.push(chipHtml('q', state.q, `“${state.q}”`));
+      if (state.course) out.push(chipHtml('course', state.course, COURSE_LABEL[state.course] || state.course));
+      if (state.cuisine) out.push(chipHtml('cuisine', state.cuisine, state.cuisine));
+      for (const d of state.diet) out.push(chipHtml('diet', d, d));
+      if (state.time) out.push(chipHtml('time', state.time, `Under ${state.time >= 60 ? (state.time / 60) + ' h' : state.time + ' min'}`));
+      if (state.difficulty) out.push(chipHtml('difficulty', state.difficulty, state.difficulty));
+      for (const t of state.tag) out.push(chipHtml('tag', t, t));
+      chipsEl.innerHTML = out.join('');
+      chipsEl.hidden = out.length === 0;
+    }
     if (chipsEl) {
       chipsEl.addEventListener('click', (e) => {
         const chip = e.target.closest('.filter-chip');
         if (!chip) return;
-        const facet = chip.dataset.chipFacet;
-        const value = chip.dataset.chipValue;
-        if (facet === 'tag') {
-          state.tags.delete(value);
-        } else {
-          state[facet] = null;
-        }
-        syncInputs();
+        clearFacet(chip.dataset.chipFacet, chip.dataset.chipValue);
         apply();
       });
     }
+    function clearFacet(facet, value) {
+      if (facet === 'q') { state.q = ''; if (qInput) qInput.value = ''; }
+      else if (MULTI.includes(facet)) state[facet].delete(value);
+      else state[facet] = null;
+      syncInputs();
+    }
 
-    // ── per-menu count badges ──────────────────────────────────────────
-    function renderCounts() {
+    // ── menu badges + live option counts ───────────────────────────────
+    function renderMenuState() {
       bar.querySelectorAll('[data-filter-menu]').forEach(menu => {
         const facet = menu.dataset.filterMenu;
+        const n = MULTI.includes(facet) ? state[facet].size : (state[facet] ? 1 : 0);
         const countEl = menu.querySelector('[data-menu-count]');
-        if (!countEl) return;
-        let n;
-        if (facet === 'tag') n = state.tags.size;
-        else n = state[facet] ? 1 : 0;
-        countEl.textContent = n > 0 ? String(n) : '';
-        countEl.hidden = n === 0;
+        if (countEl) { countEl.textContent = n > 0 ? String(n) : ''; countEl.hidden = n === 0; }
         menu.classList.toggle('has-active', n > 0);
+      });
+      // For each option: how many recipes you'd get if you picked it, given
+      // everything else that's active. Dead ends are dimmed, not hidden, so
+      // the list doesn't jump around.
+      bar.querySelectorAll('input[data-filter-cuisine], input[data-filter-diet], input[data-filter-time], input[data-filter-difficulty], input[data-filter-tag]').forEach(input => {
+        const facet = facetOf(input);
+        const value = valueOf(input, facet);
+        let n = 0;
+        for (const f of facts.values()) {
+          if (!passes(f, facet)) continue;
+          if (MULTI.includes(facet)) {
+            let ok = f[facet].includes(value);
+            if (ok) for (const v of state[facet]) if (!f[facet].includes(v)) { ok = false; break; }
+            if (ok) n++;
+          } else if (matchFacet(f, facet, value)) n++;
+        }
+        const label = input.closest('.filter-opt');
+        const nEl = label && label.querySelector('[data-opt-count]');
+        if (nEl) nEl.textContent = String(n);
+        if (label) label.classList.toggle('is-empty', n === 0 && !input.checked);
       });
     }
 
-    // ── input → state ──────────────────────────────────────────────────
-    bar.addEventListener('change', (e) => {
-      const input = e.target.closest('input');
-      if (!input) return;
-      // Find which facet this input belongs to
-      const facets = ['cuisine','course','diet','time','difficulty','tag'];
-      let facet = null, value = null;
-      for (const f of facets) {
-        const k = `filter${f.charAt(0).toUpperCase() + f.slice(1)}`;
-        if (input.dataset[k] !== undefined) { facet = f; value = input.dataset[k]; }
+    // ── pills (course + quick toggles) ─────────────────────────────────
+    function renderPills() {
+      const allPill = root.querySelector('[data-pill-all]');
+      if (allPill) allPill.setAttribute('aria-pressed', state.course ? 'false' : 'true');
+      root.querySelectorAll('[data-pill-course]').forEach(p => {
+        const c = p.dataset.pillCourse;
+        p.setAttribute('aria-pressed', state.course === c ? 'true' : 'false');
+        let n = 0;
+        for (const f of facts.values()) if (f.course === c && passes(f, 'course')) n++;
+        const nEl = p.querySelector('[data-pill-count]');
+        if (nEl) nEl.textContent = String(n);
+        p.classList.toggle('is-empty', n === 0 && state.course !== c);
+      });
+      root.querySelectorAll('[data-pill-time]').forEach(p =>
+        p.setAttribute('aria-pressed', state.time === p.dataset.pillTime ? 'true' : 'false'));
+      root.querySelectorAll('[data-pill-diet]').forEach(p =>
+        p.setAttribute('aria-pressed', state.diet.has(p.dataset.pillDiet) ? 'true' : 'false'));
+      root.querySelectorAll('[data-pill-difficulty]').forEach(p =>
+        p.setAttribute('aria-pressed', state.difficulty === p.dataset.pillDifficulty ? 'true' : 'false'));
+    }
+    root.addEventListener('click', (e) => {
+      const p = e.target.closest('.cook-pill');
+      if (!p) return;
+      if (p.hasAttribute('data-pill-all')) state.course = null;
+      else if (p.dataset.pillCourse) state.course = state.course === p.dataset.pillCourse ? null : p.dataset.pillCourse;
+      else if (p.dataset.pillTime) state.time = state.time === p.dataset.pillTime ? null : p.dataset.pillTime;
+      else if (p.dataset.pillDifficulty) state.difficulty = state.difficulty === p.dataset.pillDifficulty ? null : p.dataset.pillDifficulty;
+      else if (p.dataset.pillDiet) {
+        const d = p.dataset.pillDiet;
+        if (state.diet.has(d)) state.diet.delete(d); else state.diet.add(d);
       }
-      if (!facet) return;
-      if (facet === 'tag') {
-        if (input.checked) state.tags.add(value);
-        else state.tags.delete(value);
-      } else {
-        // Radio: setting same value toggles off (so user can deselect)
-        // The native radio group handles single-select; we just record.
-        state[facet] = input.checked ? value : null;
-      }
+      syncInputs();
       apply();
     });
 
-    // Allow re-clicking an already-checked radio to clear it.
+    // ── dropdown inputs → state ────────────────────────────────────────
+    function facetOf(input) {
+      for (const f of ['cuisine', 'diet', 'time', 'difficulty', 'tag']) {
+        if (input.dataset[`filter${f.charAt(0).toUpperCase() + f.slice(1)}`] !== undefined) return f;
+      }
+      return null;
+    }
+    function valueOf(input, facet) {
+      return input.dataset[`filter${facet.charAt(0).toUpperCase() + facet.slice(1)}`];
+    }
+    bar.addEventListener('change', (e) => {
+      const input = e.target.closest('input');
+      if (!input) return;
+      const facet = facetOf(input);
+      if (!facet) return;
+      const value = valueOf(input, facet);
+      if (MULTI.includes(facet)) {
+        if (input.checked) state[facet].add(value); else state[facet].delete(value);
+      } else {
+        state[facet] = input.checked ? value : null;
+        // Single-choice menus close on pick; multi-choice stay open.
+        const menu = input.closest('details[data-filter-menu]');
+        if (menu) menu.removeAttribute('open');
+      }
+      apply();
+    });
+    // Re-clicking the active radio clears it (a native radio can't uncheck).
     bar.addEventListener('click', (e) => {
       const input = e.target.closest('input[type="radio"]');
       if (!input) return;
-      // If radio was already checked before this click, the click won't trigger
-      // a 'change' event. Detect via a microtask: if state matches, clear.
-      const facets = ['cuisine','course','diet','time','difficulty'];
-      let facet = null, value = null;
-      for (const f of facets) {
-        const k = `filter${f.charAt(0).toUpperCase() + f.slice(1)}`;
-        if (input.dataset[k] !== undefined) { facet = f; value = input.dataset[k]; }
-      }
-      if (!facet) return;
-      if (state[facet] === value) {
-        // User clicked the already-active radio: clear it
+      const facet = facetOf(input);
+      if (facet && state[facet] === valueOf(input, facet)) {
         input.checked = false;
         state[facet] = null;
         apply();
       }
     });
 
-    // Sync DOM input states back from `state` (after chip removal etc.)
     function syncInputs() {
-      bar.querySelectorAll('input[type="radio"]').forEach(input => {
-        const facets = ['cuisine','course','diet','time','difficulty'];
-        for (const f of facets) {
-          const k = `filter${f.charAt(0).toUpperCase() + f.slice(1)}`;
-          if (input.dataset[k] !== undefined) {
-            input.checked = state[f] === input.dataset[k];
-          }
-        }
+      bar.querySelectorAll('input').forEach(input => {
+        const facet = facetOf(input);
+        if (!facet) return;
+        const v = valueOf(input, facet);
+        input.checked = MULTI.includes(facet) ? state[facet].has(v) : state[facet] === v;
       });
-      bar.querySelectorAll('input[type="checkbox"][data-filter-tag]').forEach(input => {
-        input.checked = state.tags.has(input.dataset.filterTag);
+    }
+
+    // ── search box ─────────────────────────────────────────────────────
+    if (qInput) {
+      let t = null;
+      qInput.addEventListener('input', () => {
+        clearTimeout(t);
+        t = setTimeout(() => { state.q = qInput.value.trim().toLowerCase(); apply(); }, 120);
+      });
+      qInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.preventDefault(); qInput.blur(); }
       });
     }
 
     // ── clear all ──────────────────────────────────────────────────────
-    if (clearBtn) {
-      clearBtn.addEventListener('click', () => {
-        state.cuisine = state.course = state.diet = state.time = state.difficulty = null;
-        state.tags.clear();
-        syncInputs();
-        // Also close any open menus
-        bar.querySelectorAll('details[data-filter-menu]').forEach(d => d.removeAttribute('open'));
-        apply();
-      });
+    function clearAll() {
+      state.q = ''; if (qInput) qInput.value = '';
+      for (const k of SINGLE) state[k] = null;
+      for (const k of MULTI) state[k].clear();
+      syncInputs();
+      bar.querySelectorAll('details[data-filter-menu]').forEach(d => d.removeAttribute('open'));
+      apply();
     }
+    if (clearBtn) clearBtn.addEventListener('click', clearAll);
+    if (emptyClear) emptyClear.addEventListener('click', clearAll);
 
-    // ── close menus on outside click / Escape ──────────────────────────
+    if (moreBtn) moreBtn.addEventListener('click', () => { shown += PAGE; apply({ resetPage: false }); });
+
+    // ── menus: one open at a time, close on outside click / Escape / Done ──
     document.addEventListener('click', (e) => {
-      const menus = bar.querySelectorAll('details[data-filter-menu][open]');
-      if (!menus.length) return;
-      menus.forEach(menu => { if (!menu.contains(e.target)) menu.removeAttribute('open'); });
+      bar.querySelectorAll('details[data-filter-menu][open]').forEach(menu => {
+        if (!menu.contains(e.target)) menu.removeAttribute('open');
+      });
+    });
+    bar.addEventListener('click', (e) => {
+      const done = e.target.closest('[data-menu-close]');
+      if (!done) return;
+      const menu = done.closest('details');
+      if (menu) { menu.removeAttribute('open'); const sum = menu.querySelector('summary'); if (sum) sum.focus(); }
     });
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
@@ -1394,10 +1493,9 @@
         const sum = d.querySelector('summary'); if (sum) sum.focus();
       });
     });
-
-    // Only allow one menu open at a time — friendlier on mobile.
     bar.querySelectorAll('details[data-filter-menu]').forEach(menu => {
       menu.addEventListener('toggle', () => {
+        document.body.classList.toggle('filter-sheet-open', !!bar.querySelector('details[data-filter-menu][open]'));
         if (!menu.open) return;
         bar.querySelectorAll('details[data-filter-menu][open]').forEach(other => {
           if (other !== menu) other.removeAttribute('open');
@@ -1405,28 +1503,28 @@
       });
     });
 
-    // Hydrate state from URL query params so deep-links from sidebar
-    // breadcrumbs and the random-prefilter page activate the filter on land.
-    // Recognized: ?cuisine=, ?course=, ?diet=, ?difficulty=, ?max_min=, ?tag=
-    // Unknown values silently fall through (no card matches → empty state,
-    // which is the right behavior — the filter still shows the URL intent).
+    // Sorting reorders the grid; re-page so "show more" follows the new order.
+    document.addEventListener('hdr:sorted', () => apply({ resetPage: false }));
+
+    // Hydrate from the URL. Accepts the legacy ?max_min= alias for ?time=, and
+    // a single ?diet= from older links (diet used to be single-select).
     try {
       const qs = new URLSearchParams(location.search);
-      const single = (k) => { const v = qs.get(k); return v ? v.trim() : null; };
-      if (single('cuisine')) state.cuisine = single('cuisine');
-      if (single('course')) state.course = single('course');
-      if (single('diet')) state.diet = single('diet');
-      if (single('difficulty')) state.difficulty = single('difficulty');
-      // Accept either ?max_min= (legacy) or ?time= (canonical, what syncUrl writes)
-      const mx = single('time') || single('max_min');
+      const one = (k) => { const v = qs.get(k); return v ? v.trim() : null; };
+      if (one('q')) { state.q = one('q').toLowerCase(); if (qInput) qInput.value = one('q'); }
+      for (const k of ['cuisine', 'course', 'difficulty']) if (one(k)) state[k] = one(k);
+      const mx = one('time') || one('max_min');
       if (mx && /^\d+$/.test(mx)) state.time = mx;
-      qs.getAll('tag').forEach(t => { if (t) state.tags.add(t); });
-      // Reflect into UI controls so the user sees the active state, not just the result
+      for (const k of MULTI) qs.getAll(k).forEach(v => { if (v) state[k].add(v.trim()); });
+      // Apply ?sort= here too: our first syncUrl() runs before the sort
+      // control initialises and would otherwise drop it from the URL.
+      const sortSel = document.querySelector('[data-sort-select]');
+      const srt = one('sort');
+      if (sortSel && srt && Array.from(sortSel.options).some(o => o.value === srt)) sortSel.value = srt;
       syncInputs();
     } catch {}
 
-    // Initial render
-    apply();
+    apply({ resetPage: false });
   }
 
   // ── sort bar (all family explore pages) ──────────────────────────────
@@ -1467,6 +1565,13 @@
     }
 
     function compare(mode, a, b) {
+      if (mode === 'quick') {
+        // Unknown time sorts last; ties fall back to A–Z.
+        const ta = parseInt(a.dataset.time, 10), tb = parseInt(b.dataset.time, 10);
+        const na = isFinite(ta) ? ta : Infinity, nb = isFinite(tb) ? tb : Infinity;
+        if (na !== nb) return na - nb;
+        return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+      }
       if (mode === 'newest' || mode === 'oldest') {
         const da = a.dataset.updated || '';
         const db = b.dataset.updated || '';
@@ -1545,10 +1650,20 @@
       }
     }
 
-    select.addEventListener('change', () => applySort(select.value));
+    const run = () => {
+      applySort(select.value);
+      document.dispatchEvent(new CustomEvent('hdr:sorted', { detail: select.value }));
+    };
+    select.addEventListener('change', run);
+
+    // A shared link can carry ?sort=; otherwise use the markup default.
+    try {
+      const want = new URLSearchParams(location.search).get('sort');
+      if (want && Array.from(select.options).some(o => o.value === want)) select.value = want;
+    } catch {}
 
     // Initial sort — default in the markup is "newest", but the cards are
     // currently rendered A–Z, so we must run once on load to match.
-    applySort(select.value);
+    run();
   }
 })();

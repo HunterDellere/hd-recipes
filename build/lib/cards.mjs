@@ -457,11 +457,21 @@ function renderStatPills(entry) {
  *     .ec-desc (truncated)
  *     .ec-stat-row OR .ec-foot (type-specific bottom row)
  */
-export function renderCardBody(entry, fromPath) {
+// Trim a description to `max` chars on a word boundary with an ellipsis,
+// instead of cutting mid-word ("…a white wine reduction, s").
+function clipDesc(text, max = 110) {
+  const s = String(text || '').trim();
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).replace(/[\s,;:.\u2014-]+$/, '') + '…';
+}
+
+export function renderCardBody(entry, fromPath, opts = {}) {
   const card = entry._card || {};
   const title = escapeHtml(entry.title || '');
-  const desc = entry.desc ? `<span class="ec-desc">${escapeHtml(entry.desc.slice(0, 110))}</span>` : '';
-  const cat = `<span class="ec-cat">${escapeHtml(entry.category)}</span>`;
+  const desc = entry.desc ? `<span class="ec-desc">${escapeHtml(clipDesc(entry.desc))}</span>` : '';
+  const cat = `<span class="ec-cat">${escapeHtml(opts.eyebrow || entry.category)}</span>`;
   const swatch = renderCardSwatch(entry, fromPath);
 
   if (entry.type === 'recipe') {
@@ -533,6 +543,6 @@ export function renderEntryCard(entry, fromPath, opts = {}) {
   const extraData = opts.extraData || '';
   return `
         <a class="entry-card" href="${escapeHtml(href)}" data-category="${escapeHtml(entry.category)}" data-type="${escapeHtml(entry.type)}"${extraData ? ' ' + extraData : ''}>
-          ${renderCardBody(entry, fromPath)}
+          ${renderCardBody(entry, fromPath, opts)}
         </a>`;
 }
