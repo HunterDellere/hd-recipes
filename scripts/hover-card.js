@@ -5,16 +5,19 @@
  * shows a small popover with: eyebrow, title, one-line description, and
  * type-specific meta (time/diff for recipes, primary tag for ingredients).
  *
- * Suppressed on touch devices unless long-press (≥500ms) — touch users get
- * keyboard focus (tab) instead, which we mirror.
+ * Mouse-only. Touch devices get no preview: a custom long-press used to arm a
+ * capture-phase click suppressor that fired on slow scrolls too, silently
+ * eating the next tap ("I have to tap twice to open things"). The OS already
+ * has its own long-press link preview, so we leave touch alone entirely.
  *
  * Lazy-loads data/entries.json on first hover. Cached forever per page.
  */
 (function () {
   'use strict';
 
-  // Skip on coarse pointers unless explicitly long-pressed.
-  const isCoarse = matchMedia('(pointer: coarse)').matches;
+  // Previews need a real hover. Touch-only devices (and hybrids whose primary
+  // pointer is a finger) never see them.
+  if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
 
   function resolveRoot() {
     const path = location.pathname;
@@ -27,7 +30,6 @@
 
   const SELECTOR = 'a.x-link, a.ing-link, a.pair-card, a.hub-chip, a.rl-card, a.hm-link, a.entry-card, a.ff-card';
   const HOVER_DELAY = 250;
-  const LONG_PRESS = 500;
 
   let entries = null;
   let entriesByPath = null;
@@ -228,7 +230,6 @@
   // listener element itself.
   let hoverAnchor = null;
   document.addEventListener('mouseover', (e) => {
-    if (isCoarse) return;
     const a = e.target.closest && e.target.closest(SELECTOR);
     if (!a || a === hoverAnchor) return;
     hoverAnchor = a;
@@ -237,7 +238,6 @@
   });
 
   document.addEventListener('mouseout', (e) => {
-    if (isCoarse) return;
     const a = e.target.closest && e.target.closest(SELECTOR);
     if (!a) return;
     // relatedTarget is the element entering — if it's still inside the same
@@ -248,39 +248,7 @@
     hide();
   });
 
-  // Touch: long-press to preview without navigation.
-  let pressTimer = null;
-  let pressAnchor = null;
-  document.addEventListener('touchstart', (e) => {
-    if (!isCoarse) return;
-    const a = e.target.closest && e.target.closest(SELECTOR);
-    if (!a) return;
-    pressAnchor = a;
-    pressTimer = setTimeout(() => {
-      // Long-press fired — show preview and prevent the imminent click navigation.
-      pressAnchor && show(pressAnchor);
-      // The browser still queues a click; suppress it once.
-      const suppress = (ev) => {
-        ev.preventDefault();
-        ev.stopPropagation();
-        document.removeEventListener('click', suppress, true);
-      };
-      document.addEventListener('click', suppress, true);
-    }, LONG_PRESS);
-  }, { passive: true });
-
-  document.addEventListener('touchend', () => {
-    if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; }
-    pressAnchor = null;
-    // Don't auto-hide on touchend — user may want to read; tap-outside to dismiss.
-  }, { passive: true });
-
-  document.addEventListener('touchcancel', () => {
-    if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; }
-    pressAnchor = null;
-  }, { passive: true });
-
-  // Tap outside the card to dismiss on touch
+  // Click outside the card dismisses it.
   document.addEventListener('click', (e) => {
     if (!card || card.hidden) return;
     if (card.contains(e.target)) return;

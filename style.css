@@ -4725,26 +4725,38 @@ body, .recipe-hero, .topic-hero, .home-hero, .home-section,
     box-shadow var(--d-fast) var(--ease-out),
     border-color var(--d-fast) var(--ease-out),
     background var(--d-base) var(--ease-out);
-  will-change: transform;
 }
-.entry-card:hover, .pair-card:hover, .rl-card:hover,
-.ff-card:hover, .family-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  /* category color forward — the useful signal */
-  border-color: color-mix(in oklab, var(--c, var(--accent)) 55%, var(--rule));
+/* Hover lift only where a real hover exists. On touch screens :hover sticks
+   after a tap and moves the card under the finger; there the press state
+   below is the only feedback. (No will-change: hundreds of cards each
+   promoted to their own layer is what made long lists heavy on phones.) */
+@media (hover: hover) and (pointer: fine) {
+  .entry-card:hover, .pair-card:hover, .rl-card:hover,
+  .ff-card:hover, .family-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    /* category color forward — the useful signal */
+    border-color: color-mix(in oklab, var(--c, var(--accent)) 55%, var(--rule));
+  }
+  .hub-chip:hover {
+    transform: translateY(-1px);
+    border-color: var(--accent);
+  }
+  /* Subtle press-down on click. Skip on hub-chip; it's text-shaped. */
+  .entry-card:active, .pair-card:active, .rl-card:active,
+  .ff-card:active, .family-card:active {
+    transform: translateY(0);
+    transition-duration: 60ms;
+  }
 }
-.hub-chip:hover {
-  transform: translateY(-1px);
-  border-color: var(--accent);
-}
-
-/* Subtle press-down on click — matches a tactile feel without going
-   bouncy. Skip on hub-chip; it's text-shaped. */
-.entry-card:active, .pair-card:active, .rl-card:active,
-.ff-card:active, .family-card:active {
-  transform: translateY(0);
-  transition-duration: 60ms;
+@media (hover: none), (pointer: coarse) {
+  html .entry-card:hover, html .pair-card:hover, html .rl-card:hover,
+  html .ff-card:hover, html .family-card:hover, html .hub-chip:hover,
+  html .home-chip:hover, html .fam-cross-link:hover { transform: none; }
+  .entry-card:active, .pair-card:active, .rl-card:active,
+  .ff-card:active, .family-card:active {
+    border-color: color-mix(in oklab, var(--c, var(--accent)) 55%, var(--rule));
+  }
 }
 
 /* Reveal-on-scroll: items mount with rv-init then flip to rv-on once
@@ -5288,4 +5300,199 @@ body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color:
 .pm-card-missing strong { color: var(--ink-soft); font-weight: 600; }
 .pm-card-tags {
   margin: 0.45rem 0 0; font-size: 0.78rem; color: var(--ink-faint); text-transform: lowercase;
+}
+
+/* ── Cook page: find-a-recipe toolbar ─────────────────────────────────────
+   Search → course pills + quick toggles → more filters + sort. Built for
+   someone who was just sent a link: the first screen answers "what can I
+   make?" without needing to understand the site. */
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.entry-card[hidden] { display: none !important; }
+
+.fam-hero[data-family="cook"] { padding: 1.75rem 1rem 1.75rem; margin-bottom: 1.5rem; }
+.fam-hero[data-family="cook"] .fam-hero-title { margin-bottom: .35em; }
+.fam-hero[data-family="cook"] .fam-hero-desc { margin-bottom: 1rem; font-size: 1.05rem; }
+
+.cook-tools {
+  display: flex; flex-direction: column; gap: .75rem;
+  margin-bottom: .75rem;
+  font-family: var(--font-sans);
+}
+.cook-search { position: relative; }
+.cook-search-icon {
+  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+  color: var(--ink-faint); pointer-events: none;
+}
+.cook-search-input {
+  width: 100%;
+  padding: 13px 14px 13px 44px;
+  font-family: var(--font-sans); font-size: 16px; /* ≥16px: no iOS zoom on focus */
+  color: var(--ink);
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: 12px;
+  -webkit-appearance: none; appearance: none;
+  transition: border-color var(--d-fast), box-shadow var(--d-fast);
+}
+.cook-search-input::placeholder { color: var(--ink-faint); }
+.cook-search-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+.cook-pills {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem;
+}
+.cook-pill {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: 7px 13px;
+  font-family: var(--font-sans); font-size: 14px; font-weight: 500;
+  color: var(--ink);
+  background: var(--bg-elev);
+  border: 1px solid var(--rule); border-radius: var(--r-pill);
+  cursor: pointer; white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  transition: background var(--d-fast), border-color var(--d-fast), color var(--d-fast), opacity var(--d-fast);
+}
+.cook-pill-n {
+  font-family: var(--font-mono); font-size: 11.5px; font-weight: 500;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+.cook-pill[aria-pressed="true"] {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+}
+.cook-pill[aria-pressed="true"] .cook-pill-n { color: rgba(255,255,255,.8); }
+.cook-pill.is-empty { opacity: .45; }
+.cook-pill-quick { border-style: dashed; }
+.cook-pill-quick[aria-pressed="true"] { border-style: solid; }
+.cook-pill-quick::before { content: '+'; color: var(--ink-faint); font-weight: 600; }
+.cook-pill-quick[aria-pressed="true"]::before { content: '✓'; color: #fff; }
+.cook-pills-sep { width: 1px; height: 22px; background: var(--rule); margin: 0 .2rem; }
+@media (hover: hover) and (pointer: fine) {
+  .cook-pill:hover { border-color: var(--ink-faint); }
+  .cook-pill[aria-pressed="true"]:hover { border-color: var(--accent-deep); }
+}
+.cook-pill:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* The dropdown row sits flush inside the toolbar (no second box). */
+.cook-tools .filter-bar {
+  margin: 0; padding: 0; background: none; border: 0; border-radius: 0;
+}
+.filter-opt-n {
+  font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+.filter-opt.is-empty { opacity: .4; }
+.filter-opt-label { text-transform: none; }
+.filter-menu[data-filter-menu="diet"] .filter-opt-label,
+.filter-menu[data-filter-menu="difficulty"] .filter-opt-label,
+.filter-menu[data-filter-menu="tag"] .filter-opt-label { text-transform: capitalize; }
+.filter-panel-head { display: none; }
+
+.cook-sort {
+  display: inline-flex; align-items: center; gap: .45rem;
+  margin-left: auto;
+}
+.cook-sort-label {
+  font-size: 12.5px; font-weight: 500; color: var(--ink-faint);
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.cook-sort .sort-select { padding-top: 8px; padding-bottom: 8px; }
+
+.cook-status {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem;
+  margin: 0 0 1rem;
+  padding-top: .75rem;
+  border-top: 1px solid var(--rule);
+}
+.cook-status .filter-status {
+  margin: 0; min-height: 0;
+  font-size: 14px; font-weight: 600; color: var(--ink-soft);
+}
+.cook-status .filter-chips { margin: 0; }
+.cook-status .filter-clear-btn { margin-left: 0; padding: 4px 10px; }
+
+.fam-cat-cook { margin-bottom: 2rem; }
+/* Filtering toggles cards in and out; replaying the scroll-reveal stagger
+   on every keystroke makes the results flicker. */
+.fam-cat-cook .card-grid > .entry-card { animation: none !important; }
+
+.cook-more { display: flex; justify-content: center; margin: .5rem 0 1rem; }
+.cook-more[hidden] { display: none; }
+.cook-more-btn {
+  font-family: var(--font-sans); font-size: 14.5px; font-weight: 600;
+  color: var(--accent);
+  background: var(--bg-elev);
+  border: 1px solid var(--accent); border-radius: var(--r-pill);
+  padding: 10px 22px; cursor: pointer;
+}
+.cook-more-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+@media (hover: hover) and (pointer: fine) {
+  .cook-more-btn:hover { background: var(--accent); color: #fff; }
+}
+
+/* Cook cards: two-line description so more of the list fits on a screen. */
+.fam-cat-cook .ec-desc { -webkit-line-clamp: 2; flex: none; }
+.fam-cat-cook .ec-stat-row { margin-top: auto; }
+
+@media (max-width: 700px) {
+  .fam-hero[data-family="cook"] { padding: .75rem .25rem 1.25rem; margin-bottom: 1rem; }
+  .fam-hero[data-family="cook"] .fam-hero-eyebrow,
+  .fam-hero[data-family="cook"] .fam-hero-ornament { display: none; }
+  .fam-hero[data-family="cook"] .fam-hero-title { font-size: 2.1rem; }
+  .fam-hero[data-family="cook"] .fam-hero-desc { font-size: 1rem; }
+
+  /* Pills scroll sideways in one row instead of wrapping into a wall. */
+  .cook-pills {
+    flex-wrap: nowrap; overflow-x: auto;
+    margin: 0 -1.25rem; padding: 2px 1.25rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-inline: 1.25rem;
+  }
+  .cook-pills::-webkit-scrollbar { display: none; }
+  .cook-pill { padding: 8px 14px; }
+
+  .cook-tools .filter-bar {
+    flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+    margin: 0 -1.25rem; padding: 2px 1.25rem;
+  }
+  .cook-tools .filter-bar::-webkit-scrollbar { display: none; }
+  .cook-tools .filter-menu > summary { white-space: nowrap; }
+  .cook-sort { margin-left: 0; flex-shrink: 0; }
+  .cook-sort-label { display: none; }
+
+  /* Menus open as a bottom sheet over a dimmed page, with a header + Done. */
+  .cook-tools .filter-menu { position: static; }
+  .cook-tools .filter-panel {
+    left: 0; right: 0; bottom: 0;
+    max-height: 72vh;
+    border-radius: 18px 18px 0 0;
+    padding: 0 .5rem calc(.75rem + env(safe-area-inset-bottom));
+    z-index: 200;
+  }
+  .filter-panel-head {
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0;
+    padding: .85rem .65rem .6rem;
+    background: var(--bg-elev);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: .35rem;
+  }
+  .filter-panel-title { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; }
+  .filter-panel-done {
+    font-family: var(--font-sans); font-size: 15px; font-weight: 600;
+    color: var(--accent); background: none; border: 0; padding: 6px 4px; cursor: pointer;
+  }
+  .filter-opt { padding: .7rem .65rem; font-size: 15px; }
+  body.filter-sheet-open::after {
+    content: ''; position: fixed; inset: 0; z-index: 150;
+    background: rgba(20, 12, 4, .35);
+  }
+
+  /* Compact list cards on phones: tighter padding. */
+  .fam-cat-cook .card-grid { gap: .5rem; }
+  .fam-cat-cook .ec-body { padding: .7rem .9rem .75rem; gap: .25rem; }
+  .fam-cat-cook .ec-title { font-size: 16.5px; }
 }
