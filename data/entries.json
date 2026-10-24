@@ -1,5 +1,479 @@
 [
   {
+    "path": "pages/recipes/nuoc-cham-bun-cha.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc cham bun cha (Hanoi-style warm dipping broth)",
+    "desc": "The Hanoi version of nuoc cham, served warm in a deep bowl as a thin, light broth rather than a dip. Fish sauce, rice vinegar, and sugar are dissolved in a generous volume of hot water, then loaded with quick-pickled green papaya and carrot, raw garlic, and chili. Grilled pork and patties go straight into the bowl, and diners dip rice vermicelli and herbs through it.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "quick",
+      "umami",
+      "pickle"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-cham-bun-cha",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 3,
+      "total_min": 25,
+      "active_min": 15
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "nut-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "green papaya, peeled and seeded",
+        "slug": "green-papaya",
+        "optional": false
+      },
+      {
+        "item": "carrot, peeled",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "hot water",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chilies",
+        "slug": "thai-chili",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "digital-scale",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/nuoc-cham-chay.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc cham chay (vegan dipping sauce)",
+    "desc": "The Buddhist temple-kitchen nuoc cham, built without fish. Light soy sauce and a strong dried-shiitake soaking liquid stand in for the fish sauce, fresh coconut water gives the gentle sweetness and body southern cooks use in place of plain water, and lime, garlic, and chili finish it exactly like the original.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "no-cook",
+      "quick",
+      "umami",
+      "vegan"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-cham-chay",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 30,
+      "active_min": 10
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried shiitake mushrooms",
+        "optional": false
+      },
+      {
+        "item": "hot water",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh coconut water",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chili",
+        "slug": "thai-chili",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/nuoc-mam-gung.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc mam gung (ginger fish sauce)",
+    "desc": "The ginger-heavy nuoc cham served with poached chicken, boiled duck, and steamed fish. Fresh ginger is pounded with sugar in a mortar until it weeps juice, then loosened with fish sauce, lime, and a little water. Thicker, hotter on the palate, and less diluted than everyday nuoc cham, so it clings to plain poached meat that has no seasoning of its own.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "no-cook",
+      "quick",
+      "umami",
+      "spicy",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-mam-gung",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 10,
+      "active_min": 10
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "nut-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh young ginger, peeled",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chili",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "mortar-pounding"
+    ],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 10,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/nuoc-mam-me.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc mam me (tamarind fish sauce)",
+    "desc": "The southern Vietnamese sweet-sour dip for crab, snails, grilled shrimp, and fried fish. Tamarind pulp is dissolved and strained, then reduced with palm sugar into a glossy brown syrup and finished off heat with fish sauce, fried garlic, and chili. Thicker and deeper than lime-based nuoc cham, with a fruity, rounded sourness that clings to shellfish.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "quick",
+      "umami",
+      "spicy",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-mam-me",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 10,
+      "total_min": 20,
+      "active_min": 15
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "nut-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "seedless tamarind pulp (from a block)",
+        "slug": "tamarind",
+        "optional": false
+      },
+      {
+        "item": "hot water",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chilies",
+        "slug": "thai-chili",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tamarind-souring",
+      "reduction"
+    ],
+    "equipment": [
+      "heavy-saucepan",
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 20,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/tuong-ot-vietnamese-chili-garlic-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tuong ot (Vietnamese chili-garlic sauce, Chin-su style)",
+    "desc": "The smooth, glossy, sweet-hot chili-garlic sauce that sits in a squeeze bottle on every pho and banh mi counter in Vietnam, best known by the Chin-su brand. Fresh red chilies and a heavy garlic load are simmered in a light sugar-vinegar brine, blended, sieved, and set with a small tapioca slurry into a pourable, cling-to-the-spoon sauce. Sweeter, brighter, and more garlic-forward than Thai-style sriracha, with no fermentation and no tomato.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "spicy",
+      "pantry",
+      "make-ahead",
+      "sweet"
+    ],
+    "status": "complete",
+    "_slug": "tuong-ot-vietnamese-chili-garlic-sauce",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 15,
+      "total_min": 30,
+      "active_min": 20
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh red Fresno or long red chilies",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chilies",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "MSG",
+        "optional": false
+      },
+      {
+        "item": "tapioca starch",
+        "slug": "tapioca-starch",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "simmering"
+    ],
+    "equipment": [
+      "heavy-saucepan",
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/cod-and-crisp-potatoes-in-rosemary-anchovy-cream.html",
     "type": "recipe",
     "category": "recipes",
@@ -1726,7 +2200,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 9
+      "usedInCount": 10
     }
   },
   {
@@ -1760,7 +2234,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 15
+      "usedInCount": 16
     }
   },
   {
@@ -45811,7 +46285,7 @@
       "swatchIndex": 6,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": false
     }
   },
@@ -48428,7 +48902,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 24,
+      "usedInCount": 25,
       "hasNutrition": true
     }
   },
@@ -52947,7 +53421,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -53150,7 +53624,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 75,
+      "usedInCount": 78,
       "hasNutrition": true
     }
   },
@@ -53503,7 +53977,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": false
     }
   },
@@ -54018,7 +54492,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": false
     }
   },
@@ -54058,7 +54532,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 28,
+      "usedInCount": 33,
       "hasNutrition": false
     }
   },
@@ -58664,7 +59138,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 13
+      "usedInCount": 14
     }
   },
   {
@@ -58773,7 +59247,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 6
+      "usedInCount": 7
     }
   },
   {
@@ -59234,7 +59708,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 35,
+      "usedInCount": 38,
       "hasNutrition": true
     }
   },
@@ -66640,7 +67114,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 261,
+      "usedInCount": 266,
       "hasNutrition": true
     }
   },
@@ -66680,7 +67154,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 81,
+      "usedInCount": 82,
       "hasNutrition": true
     }
   },
@@ -66744,7 +67218,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 31,
+      "usedInCount": 33,
       "hasNutrition": true
     }
   },
@@ -68283,7 +68757,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 203,
+      "usedInCount": 205,
       "hasNutrition": true
     }
   },
@@ -68302,7 +68776,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 99,
+      "usedInCount": 100,
       "hasNutrition": true
     }
   },
@@ -68321,7 +68795,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 121,
+      "usedInCount": 125,
       "hasNutrition": true
     }
   },
@@ -68359,7 +68833,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 271,
+      "usedInCount": 272,
       "hasNutrition": true
     }
   },
