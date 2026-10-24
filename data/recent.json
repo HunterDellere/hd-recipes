@@ -1,5 +1,479 @@
 [
   {
+    "path": "pages/recipes/nuoc-cham-bun-cha.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc cham bun cha (Hanoi-style warm dipping broth)",
+    "desc": "The Hanoi version of nuoc cham, served warm in a deep bowl as a thin, light broth rather than a dip. Fish sauce, rice vinegar, and sugar are dissolved in a generous volume of hot water, then loaded with quick-pickled green papaya and carrot, raw garlic, and chili. Grilled pork and patties go straight into the bowl, and diners dip rice vermicelli and herbs through it.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "quick",
+      "umami",
+      "pickle"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-cham-bun-cha",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 3,
+      "total_min": 25,
+      "active_min": 15
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "nut-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "green papaya, peeled and seeded",
+        "slug": "green-papaya",
+        "optional": false
+      },
+      {
+        "item": "carrot, peeled",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "hot water",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chilies",
+        "slug": "thai-chili",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "digital-scale",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 25,
+      "diffLabel": "easy",
+      "timeLead": "25 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/nuoc-cham-chay.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc cham chay (vegan dipping sauce)",
+    "desc": "The Buddhist temple-kitchen nuoc cham, built without fish. Light soy sauce and a strong dried-shiitake soaking liquid stand in for the fish sauce, fresh coconut water gives the gentle sweetness and body southern cooks use in place of plain water, and lime, garlic, and chili finish it exactly like the original.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "no-cook",
+      "quick",
+      "umami",
+      "vegan"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-cham-chay",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 30,
+      "active_min": 10
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried shiitake mushrooms",
+        "optional": false
+      },
+      {
+        "item": "hot water",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh coconut water",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chili",
+        "slug": "thai-chili",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/nuoc-mam-gung.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc mam gung (ginger fish sauce)",
+    "desc": "The ginger-heavy nuoc cham served with poached chicken, boiled duck, and steamed fish. Fresh ginger is pounded with sugar in a mortar until it weeps juice, then loosened with fish sauce, lime, and a little water. Thicker, hotter on the palate, and less diluted than everyday nuoc cham, so it clings to plain poached meat that has no seasoning of its own.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "no-cook",
+      "quick",
+      "umami",
+      "spicy",
+      "aromatic"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-mam-gung",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 10,
+      "active_min": 10
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "nut-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh young ginger, peeled",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "garlic clove, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chili",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh lime juice",
+        "slug": "lime",
+        "optional": false
+      },
+      {
+        "item": "warm water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "mortar-pounding"
+    ],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 10,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/nuoc-mam-me.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Nuoc mam me (tamarind fish sauce)",
+    "desc": "The southern Vietnamese sweet-sour dip for crab, snails, grilled shrimp, and fried fish. Tamarind pulp is dissolved and strained, then reduced with palm sugar into a glossy brown syrup and finished off heat with fish sauce, fried garlic, and chili. Thicker and deeper than lime-based nuoc cham, with a fruity, rounded sourness that clings to shellfish.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "quick",
+      "umami",
+      "spicy",
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "nuoc-mam-me",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 10,
+      "total_min": 20,
+      "active_min": 15
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "gluten-free",
+      "dairy-free",
+      "nut-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      {
+        "item": "seedless tamarind pulp (from a block)",
+        "slug": "tamarind",
+        "optional": false
+      },
+      {
+        "item": "hot water",
+        "optional": false
+      },
+      {
+        "item": "palm sugar",
+        "slug": "palm-sugar",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "fish sauce",
+        "slug": "fish-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chilies",
+        "slug": "thai-chili",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "tamarind-souring",
+      "reduction"
+    ],
+    "equipment": [
+      "heavy-saucepan",
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 20,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/tuong-ot-vietnamese-chili-garlic-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tuong ot (Vietnamese chili-garlic sauce, Chin-su style)",
+    "desc": "The smooth, glossy, sweet-hot chili-garlic sauce that sits in a squeeze bottle on every pho and banh mi counter in Vietnam, best known by the Chin-su brand. Fresh red chilies and a heavy garlic load are simmered in a light sugar-vinegar brine, blended, sieved, and set with a small tapioca slurry into a pourable, cling-to-the-spoon sauce. Sweeter, brighter, and more garlic-forward than Thai-style sriracha, with no fermentation and no tomato.",
+    "tags": [
+      "vietnamese",
+      "condiment",
+      "spicy",
+      "pantry",
+      "make-ahead",
+      "sweet"
+    ],
+    "status": "complete",
+    "_slug": "tuong-ot-vietnamese-chili-garlic-sauce",
+    "cuisine": "Vietnamese",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 16,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 15,
+      "total_min": 30,
+      "active_min": 20
+    },
+    "updated": "2026-10-24",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh red Fresno or long red chilies",
+        "optional": false
+      },
+      {
+        "item": "fresh red Thai chilies",
+        "slug": "thai-chili",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, peeled",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "MSG",
+        "optional": false
+      },
+      {
+        "item": "tapioca starch",
+        "slug": "tapioca-starch",
+        "optional": false
+      },
+      {
+        "item": "cold water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "simmering"
+    ],
+    "equipment": [
+      "heavy-saucepan",
+      "digital-scale"
+    ],
+    "added": "2026-10-24",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
     "path": "pages/recipes/cod-and-crisp-potatoes-in-rosemary-anchovy-cream.html",
     "type": "recipe",
     "category": "recipes",
@@ -2815,696 +3289,6 @@
       "timeMode": "total",
       "activeMinutes": 55,
       "filterMinutes": 55
-    }
-  },
-  {
-    "path": "pages/recipes/kabuli-palaw.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Kabuli palaw (Afghan qabuli pilaf)",
-    "desc": "Afghanistan's national dish: bone-in lamb braised into a deep aromatic broth (gharma), long-grain basmati parboiled and then steamed over that broth with burnt-sugar color and char masala, crowned with candied julienned carrots, plumped raisins, and slivered almonds and pistachios. The signature amber-brown rice comes from caramelized sugar, not turmeric, and the sweetness of the carrots and raisins is a deliberate savory-sweet counterweight to the rich lamb. Built on the parboil-and-steam (dum) method that keeps every grain long and separate.",
-    "tags": [
-      "lamb",
-      "rice",
-      "comfort",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "kabuli-palaw",
-    "cuisine": "Afghan",
-    "course": "dinner",
-    "difficulty": "hard",
-    "servings": 6,
-    "time": {
-      "prep_min": 40,
-      "cook_min": 150,
-      "total_min": 240,
-      "active_min": 90
-    },
-    "updated": "2026-07-18",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "basmati rice",
-        "slug": "basmati-rice",
-        "optional": false
-      },
-      {
-        "item": "bone-in lamb shoulder or lamb shanks",
-        "slug": "lamb-shoulder",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (or half oil, half ghee)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "garlic",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods, cracked",
-        "slug": "green-cardamom",
-        "optional": false
-      },
-      {
-        "item": "cloves",
-        "slug": "cloves",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "hot water",
-        "optional": false
-      },
-      {
-        "item": "ground cumin",
-        "slug": "ground-cumin",
-        "optional": false
-      },
-      {
-        "item": "ground cardamom",
-        "slug": "green-cardamom",
-        "optional": false
-      },
-      {
-        "item": "ground cinnamon",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "ground cloves",
-        "slug": "cloves",
-        "optional": false
-      },
-      {
-        "item": "carrots",
-        "slug": "carrot",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (or ghee)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "raisins (mixed dark and golden)",
-        "optional": false
-      },
-      {
-        "item": "slivered almonds",
-        "slug": "almonds",
-        "optional": false
-      },
-      {
-        "item": "shelled pistachios",
-        "slug": "pistachio",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "blooming-aromatics",
-      "dry-caramel",
-      "vapor-steaming"
-    ],
-    "equipment": [
-      "heavy lidded pot or Dutch oven",
-      "large colander",
-      "skillet"
-    ],
-    "added": "2026-07-18",
-    "_card": {
-      "swatchIndex": 12,
-      "swatchGlyph": "fire",
-      "totalMinutes": 240,
-      "diffLabel": "hard",
-      "timeLead": "4 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 90,
-      "filterMinutes": 90
-    }
-  },
-  {
-    "path": "pages/recipes/shish-taouk.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Shish taouk",
-    "desc": "The Levantine garlic-and-lemon chicken skewer: boneless chicken marinated in yogurt, a heavy hand of garlic, lemon, olive oil, tomato paste, and seven-spice, then grilled hard so the surface chars while the yogurt-tenderized interior stays juicy. Where Persian joojeh leans on saffron, shish taouk is built on raw garlic and citrus, and it lives beside a pot of toum, the fierce whipped garlic sauce that is its inseparable partner. Grilled across Lebanon, Syria, and the wider Levant, wrapped in saj bread with pickles and toum, or plated with rice and grilled vegetables.",
-    "tags": [
-      "chicken",
-      "grill",
-      "aromatic",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "shish-taouk",
-    "cuisine": "Lebanese",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 15,
-      "total_min": 300,
-      "active_min": 35
-    },
-    "updated": "2026-07-18",
-    "diet": [],
-    "ingredients": [
-      {
-        "item": "boneless, skinless chicken thighs",
-        "slug": "chicken-thigh",
-        "optional": false
-      },
-      {
-        "item": "whole-milk plain yogurt",
-        "slug": "yogurt",
-        "optional": false
-      },
-      {
-        "item": "garlic",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "tomato paste",
-        "slug": "tomato-paste",
-        "optional": false
-      },
-      {
-        "item": "ground coriander",
-        "slug": "ground-coriander",
-        "optional": false
-      },
-      {
-        "item": "ground cumin",
-        "slug": "ground-cumin",
-        "optional": false
-      },
-      {
-        "item": "sweet paprika",
-        "slug": "hungarian-paprika",
-        "optional": false
-      },
-      {
-        "item": "allspice, ground",
-        "slug": "allspice",
-        "optional": false
-      },
-      {
-        "item": "ground cinnamon",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "white pepper",
-        "slug": "white-pepper",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "red onion",
-        "slug": "red-onion",
-        "optional": false
-      },
-      {
-        "item": "green pepper",
-        "slug": "bell-pepper",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "toum (whipped garlic sauce)",
-        "optional": false
-      },
-      {
-        "item": "pita or saj flatbread",
-        "slug": "pita-bread",
-        "optional": false
-      },
-      {
-        "item": "lemon",
-        "slug": "lemon",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "dry-brining"
-    ],
-    "equipment": [
-      "charcoal grill",
-      "metal skewers",
-      "mortar and pestle"
-    ],
-    "added": "2026-07-18",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "tagine",
-      "totalMinutes": 300,
-      "diffLabel": "medium",
-      "timeLead": "35 min",
-      "timeAnnotation": "· 4 h rest",
-      "timeMode": "active",
-      "activeMinutes": 35,
-      "filterMinutes": 35
-    }
-  },
-  {
-    "path": "pages/recipes/turkish-lamb-shish-kebab.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Turkish lamb şiş kebap",
-    "desc": "Cubes of lamb leg marinated in grated-onion enzymes, olive oil, tomato paste, and pul biber, threaded on skewers and grilled hard over charcoal to a Maillard crust with a rosy medium interior. Salt goes on at the fire, not in the marinade, so the surface stays dry enough to brown. Served on warm lavash that catches the rendering juices, with a sumac-onion salad for acid and grilled peppers and tomato alongside. The canonical Anatolian mangal kebab, engineered for maximum char without overcooking the small cubes.",
-    "tags": [
-      "lamb",
-      "grill",
-      "smoky",
-      "share-plate"
-    ],
-    "status": "complete",
-    "_slug": "turkish-lamb-shish-kebab",
-    "cuisine": "Turkish",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 4,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 15,
-      "total_min": 285,
-      "active_min": 40
-    },
-    "updated": "2026-07-18",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "boneless lamb leg or shoulder",
-        "slug": "lamb-shoulder",
-        "optional": false
-      },
-      {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "extra-virgin olive oil",
-        "slug": "extra-virgin-olive-oil",
-        "optional": false
-      },
-      {
-        "item": "tomato paste",
-        "slug": "tomato-paste",
-        "optional": false
-      },
-      {
-        "item": "pul biber or Aleppo pepper",
-        "slug": "red-pepper-flakes",
-        "optional": false
-      },
-      {
-        "item": "dried oregano",
-        "slug": "dried-oregano",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly ground",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "red onion",
-        "slug": "red-onion",
-        "optional": false
-      },
-      {
-        "item": "green pepper (Anatolian sivri or Italian frying pepper)",
-        "slug": "bell-pepper",
-        "optional": false
-      },
-      {
-        "item": "cherry or cocktail tomatoes",
-        "slug": "cherry-tomato",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "red onion",
-        "slug": "red-onion",
-        "optional": false
-      },
-      {
-        "item": "sumac",
-        "slug": "sumac",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley",
-        "slug": "parsley",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "lavash or pita",
-        "optional": false
-      },
-      {
-        "item": "lemon",
-        "slug": "lemon",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "dry-brining"
-    ],
-    "equipment": [
-      "charcoal grill",
-      "metal skewers",
-      "box grater"
-    ],
-    "added": "2026-07-18",
-    "_card": {
-      "swatchIndex": 5,
-      "swatchGlyph": "tagine",
-      "totalMinutes": 285,
-      "diffLabel": "medium",
-      "timeLead": "40 min",
-      "timeAnnotation": "· 4 h rest",
-      "timeMode": "active",
-      "activeMinutes": 40,
-      "filterMinutes": 40
-    }
-  },
-  {
-    "path": "pages/recipes/uzbek-plov.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Uzbek plov (osh)",
-    "desc": "Central Asia's great one-pot rice: lamb and lamb fat seared in smoking-hot oil, built into a zirvak base with deeply caramelized onions and a mountain of matchstick carrots, spiced with cumin and dried barberries, then rice steamed directly on top by absorption with whole garlic heads and chickpeas buried inside. No parboil-and-drain here; the rice cooks in the meat-and-carrot broth it sits on, taking on all its color and fat. The Uzbek national dish and the centerpiece of every celebration, cooked in a kazan and served mounded on a single platter.",
-    "tags": [
-      "lamb",
-      "rice",
-      "one-pot",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "uzbek-plov",
-    "cuisine": "Uzbek",
-    "course": "dinner",
-    "difficulty": "hard",
-    "servings": 6,
-    "time": {
-      "prep_min": 35,
-      "cook_min": 90,
-      "total_min": 185,
-      "active_min": 70
-    },
-    "updated": "2026-07-18",
-    "diet": [
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "devzira or short-grain plov rice (or basmati)",
-        "slug": "basmati-rice",
-        "optional": false
-      },
-      {
-        "item": "boneless lamb shoulder",
-        "slug": "lamb-shoulder",
-        "optional": false
-      },
-      {
-        "item": "lamb tail fat or fatty lamb belly (optional but traditional)",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (cottonseed if you have it)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "carrots",
-        "slug": "carrot",
-        "optional": false
-      },
-      {
-        "item": "cumin seeds (zira)",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "ground coriander",
-        "slug": "ground-coriander",
-        "optional": false
-      },
-      {
-        "item": "dried barberries (or 2 tbsp raisins)",
-        "optional": false
-      },
-      {
-        "item": "whole dried red chili",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "boiling water",
-        "optional": false
-      },
-      {
-        "item": "whole garlic heads",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "cooked chickpeas",
-        "optional": false
-      },
-      {
-        "item": "boiling water (for the rice steam)",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "maillard-sear",
-      "blooming-aromatics",
-      "vapor-steaming"
-    ],
-    "equipment": [
-      "kazan or heavy wide pot with lid",
-      "sharp knife for matchstick carrots"
-    ],
-    "added": "2026-07-18",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "fire",
-      "totalMinutes": 185,
-      "diffLabel": "hard",
-      "timeLead": "3 h 5 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 70,
-      "filterMinutes": 70
-    }
-  },
-  {
-    "path": "pages/recipes/cane-sugar-free-garlic-breadsticks.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Cane-sugar-free garlic breadsticks",
-    "desc": "Soft, pillowy enriched breadsticks with no cane sugar. Honey feeds the yeast and browns the crust faster than sucrose would; a small dose of barley malt syrup deepens the flavor toward the maltiness of a real bakery breadstick. Hand-rolled into batons, proofed pillow-soft, baked, and brushed with garlic butter while hot.",
-    "tags": [
-      "bread",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "cane-sugar-free-garlic-breadsticks",
-    "cuisine": "Italian-American",
-    "course": "bread",
-    "difficulty": "medium",
-    "servings": 12,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 15,
-      "total_min": 130,
-      "active_min": 35
-    },
-    "updated": "2026-07-06",
-    "ingredients": [
-      {
-        "item": "bread flour",
-        "slug": "bread-flour",
-        "optional": false
-      },
-      {
-        "item": "whole milk, warmed to 35 °C",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "instant yeast",
-        "slug": "instant-yeast",
-        "optional": false
-      },
-      {
-        "item": "honey",
-        "slug": "honey",
-        "optional": false
-      },
-      {
-        "item": "barley malt syrup",
-        "slug": "barley-malt-syrup",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, melted and cooled to lukewarm",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, melted",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "garlic, pressed or finely grated on a microplane",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "garlic powder",
-        "optional": false
-      },
-      {
-        "item": "dried oregano",
-        "optional": false
-      },
-      {
-        "item": "dried parsley flakes",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "enriched-dough"
-    ],
-    "equipment": [
-      "stand mixer",
-      "bench scraper",
-      "kitchen scale",
-      "pastry brush"
-    ],
-    "added": "2026-07-06",
-    "_card": {
-      "swatchIndex": 0,
-      "swatchGlyph": "olive",
-      "totalMinutes": 130,
-      "diffLabel": "medium",
-      "timeLead": "35 min",
-      "timeAnnotation": "· 2 h rest",
-      "timeMode": "active",
-      "activeMinutes": 35,
-      "filterMinutes": 35
     }
   }
 ]

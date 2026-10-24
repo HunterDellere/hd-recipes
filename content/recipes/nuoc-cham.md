@@ -108,6 +108,18 @@ homemade_alternatives:
     recipe_slug: 'recipes/homemade-fish-sauce'
     why: 'Home-fermented fish sauce (a long anchovy-and-salt fermentation, 6 to 12 months) reads dramatically cleaner and more complex than industrial fish sauce; the slow fermentation builds amino acid complexity that fast-process commercial sauces cannot match. A long project, but the resulting sauce changes nuoc cham from a serviceable dressing to a memorable one.'
 
+pairings:
+  - recipe: 'recipes/nuoc-mam-gung'
+    reason: 'The ginger variant for poached chicken, boiled duck, and steamed fish.'
+  - recipe: 'recipes/nuoc-mam-me'
+    reason: 'The tamarind variant for crab, snails, and grilled shellfish.'
+  - recipe: 'recipes/nuoc-cham-bun-cha'
+    reason: 'The Hanoi warm-broth version that grilled pork sits in.'
+  - recipe: 'recipes/nuoc-cham-chay'
+    reason: 'The vegan version, built on soy, shiitake, and coconut water.'
+  - recipe: 'recipes/tuong-ot-vietnamese-chili-garlic-sauce'
+    reason: 'The other sauce on every Vietnamese table: the Chin-su-style chili-garlic bottle.'
+
 homemade_exempt: ['fresh lime juice', 'palm sugar (or light brown sugar)', 'warm water', 'garlic clove, peeled', 'fresh red Thai chili (or red Fresno, or a small dried red chili)']
 
 notes: |
