@@ -1,9 +1,9 @@
 {
-  "generated": "2026-10-28T00:08:23.355Z",
+  "generated": "2026-10-28T04:09:45.100Z",
   "summary": {
     "errors": 0,
     "warnings": 149,
-    "info": 160
+    "info": 161
   },
   "findings": [
     {
@@ -1374,6 +1374,13 @@
       "file": "content/recipes/mapo-tofu-poured-set.md",
       "msg": "scaling: 3 quantity range(s) in prose stay fixed when servings change — e.g. \"15 to 30 ml\", \"1 to 2 tbsp\", \"80 to 100 ml\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/maryland-crab-cakes.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 4\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
     },
     {
       "level": "WARN",

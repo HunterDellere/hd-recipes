@@ -1,5 +1,245 @@
 [
   {
+    "path": "pages/ingredients/blue-crab.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Blue crab",
+    "desc": "Atlantic swimming crab, Callinectes sapidus, from the Chesapeake Bay to the Gulf of Mexico. Sweet, briny, finely flaked white meat sold live, steamed whole, or picked and graded by the part of the body it comes from.",
+    "tags": [
+      "seafood"
+    ],
+    "status": "complete",
+    "_slug": "blue-crab",
+    "updated": "2026-10-28",
+    "added": "2026-10-28",
+    "_card": {
+      "swatchIndex": 4,
+      "swatchGlyph": "fish",
+      "primaryTag": "seafood",
+      "usedInCount": 1,
+      "hasNutrition": false
+    }
+  },
+  {
+    "path": "pages/recipes/chesapeake-seafood-seasoning.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chesapeake seafood seasoning",
+    "desc": "A homemade Old Bay-style blend: celery seed and bay leaf ground fresh, sweet paprika, black pepper, dry mustard, cayenne, and a small amount of warm spice (allspice, clove, mace, ginger, cardamom, cinnamon), cut with fine sea salt. The celery seed and bay carry it; the warm spices sit underneath.",
+    "tags": [
+      "pantry",
+      "condiment",
+      "seafood",
+      "quick",
+      "copycat"
+    ],
+    "status": "complete",
+    "_slug": "chesapeake-seafood-seasoning",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 10,
+      "active_min": 10
+    },
+    "updated": "2026-10-28",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "celery seed",
+        "optional": false
+      },
+      {
+        "item": "dried bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "black peppercorns",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "yellow mustard seeds",
+        "slug": "mustard-seeds",
+        "optional": false
+      },
+      {
+        "item": "allspice berries",
+        "slug": "allspice",
+        "optional": false
+      },
+      {
+        "item": "whole cloves",
+        "slug": "cloves",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, seeds only",
+        "slug": "green-cardamom",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "sweet paprika",
+        "slug": "hungarian-paprika",
+        "optional": false
+      },
+      {
+        "item": "cayenne pepper",
+        "optional": false
+      },
+      {
+        "item": "ground ginger",
+        "optional": false
+      },
+      {
+        "item": "ground mace or nutmeg",
+        "optional": false
+      },
+      {
+        "item": "ground cinnamon",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-10-28",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 10,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/maryland-crab-cakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Maryland crab cakes",
+    "desc": "Jumbo lump blue crab held together by the minimum binder that will hold it: one egg, a spoon of mayonnaise, dijon, Worcestershire, Chesapeake seasoning, and a handful of crushed saltines. Chilled to set, then seared hard in butter and oil so the outside goes deep golden while the inside stays loose, sweet, and almost all crab.",
+    "tags": [
+      "seafood",
+      "pan-fry",
+      "umami",
+      "share-plate"
+    ],
+    "status": "complete",
+    "_slug": "maryland-crab-cakes",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 10,
+      "total_min": 55,
+      "active_min": 25
+    },
+    "updated": "2026-10-28",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "egg, large",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "mayonnaise",
+        "slug": "mayonnaise",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "Worcestershire sauce",
+        "slug": "worcestershire-sauce",
+        "optional": false
+      },
+      {
+        "item": "Old Bay seasoning",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, finely chopped",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "saltine crackers, crushed",
+        "optional": false
+      },
+      {
+        "item": "jumbo lump blue crab meat, refrigerated (not shelf-stable)",
+        "slug": "blue-crab",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "lemon wedges",
+        "slug": "lemon",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "shallow-frying"
+    ],
+    "equipment": [
+      "wide-skillet",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-10-28",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 55,
+      "diffLabel": "easy",
+      "timeLead": "55 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
     "path": "pages/recipes/roasted-butternut-squash-salad-with-radicchio-and-balsamic.html",
     "type": "recipe",
     "category": "recipes",
@@ -129,7 +369,7 @@
     "equipment": [
       "wide-skillet"
     ],
-    "added": "2026-10-28",
+    "added": "2026-10-27",
     "_card": {
       "swatchIndex": 1,
       "swatchGlyph": "skillet",
@@ -140,6 +380,204 @@
       "timeMode": "total",
       "activeMinutes": 30,
       "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/tartar-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tartar sauce",
+    "desc": "Mayonnaise sharpened with minced cornichons, capers, shallot, lemon zest and juice, dill, and a little of the pickle brine. A cold, briny, high-acid sauce built to cut fried and seared seafood.",
+    "tags": [
+      "condiment",
+      "seafood",
+      "quick",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "tartar-sauce",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 0,
+      "total_min": 40,
+      "active_min": 10
+    },
+    "updated": "2026-10-28",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "shallot, minced",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "lemon juice, fresh",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "mayonnaise",
+        "slug": "mayonnaise",
+        "optional": false
+      },
+      {
+        "item": "cornichons, minced",
+        "optional": false
+      },
+      {
+        "item": "cornichon brine",
+        "optional": false
+      },
+      {
+        "item": "capers, drained and chopped",
+        "slug": "capers",
+        "optional": false
+      },
+      {
+        "item": "dill, chopped",
+        "slug": "dill",
+        "optional": false
+      },
+      {
+        "item": "lemon zest",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-10-28",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 40,
+      "diffLabel": "easy",
+      "timeLead": "40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
+    "path": "pages/recipes/vinegar-coleslaw.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Vinegar coleslaw",
+    "desc": "Finely shredded green cabbage and carrot, salted briefly to pull out surface water, then dressed with cider vinegar, a little sugar, oil, dijon, and celery seed. Crunchy, sharp, and mayonnaise-free, so it cuts rich seafood and fried food instead of adding to it.",
+    "tags": [
+      "side",
+      "salad",
+      "vegetable",
+      "brassica",
+      "no-cook",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "vinegar-coleslaw",
+    "cuisine": "American",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 0,
+      "total_min": 45,
+      "active_min": 15
+    },
+    "updated": "2026-10-28",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "green cabbage, cored and finely shredded",
+        "slug": "green-cabbage",
+        "optional": false
+      },
+      {
+        "item": "carrot, coarsely grated",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "celery seed",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "scallion, thinly sliced",
+        "slug": "scallion",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "vinaigrette-emulsion"
+    ],
+    "equipment": [],
+    "added": "2026-10-28",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 45,
+      "diffLabel": "easy",
+      "timeLead": "45 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
     }
   },
   {
@@ -2360,7 +2798,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 15
+      "usedInCount": 16
     }
   },
   {
@@ -25895,7 +26333,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 6,
+      "usedInCount": 7,
       "hasNutrition": false
     }
   },
@@ -26148,7 +26586,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": false
     }
   },
@@ -26250,7 +26688,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": false
     }
   },
@@ -26353,7 +26791,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": false
     }
   },
@@ -49045,7 +49483,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -52907,7 +53345,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -53033,7 +53471,7 @@
       "swatchIndex": 1,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 20,
+      "usedInCount": 21,
       "hasNutrition": false
     }
   },
@@ -53299,7 +53737,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 28,
+      "usedInCount": 31,
       "hasNutrition": false
     }
   },
@@ -53746,7 +54184,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 114,
+      "usedInCount": 116,
       "hasNutrition": true
     }
   },
@@ -53976,7 +54414,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -53997,7 +54435,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 155,
+      "usedInCount": 157,
       "hasNutrition": true
     }
   },
@@ -54141,7 +54579,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 88,
+      "usedInCount": 89,
       "hasNutrition": true
     }
   },
@@ -54529,7 +54967,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 41,
+      "usedInCount": 42,
       "hasNutrition": true
     }
   },
@@ -54845,7 +55283,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -59446,7 +59884,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 18
+      "usedInCount": 19
     }
   },
   {
@@ -59508,7 +59946,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 73,
+      "usedInCount": 74,
       "hasNutrition": false
     }
   },
@@ -59675,7 +60113,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": false
     }
   },
@@ -59960,7 +60398,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -60156,7 +60594,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 14,
+      "usedInCount": 16,
       "hasNutrition": true
     }
   },
@@ -67080,7 +67518,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 173,
+      "usedInCount": 176,
       "hasNutrition": true
     }
   },
@@ -67118,7 +67556,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 102,
+      "usedInCount": 103,
       "hasNutrition": true
     }
   },
@@ -67219,7 +67657,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": "egg",
-      "usedInCount": 108,
+      "usedInCount": 109,
       "hasNutrition": true
     }
   },
@@ -67401,7 +67839,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 104,
+      "usedInCount": 105,
       "hasNutrition": true
     }
   },
@@ -68348,7 +68786,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 40
+      "usedInCount": 44
     }
   },
   {
@@ -68900,7 +69338,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 205,
+      "usedInCount": 206,
       "hasNutrition": true
     }
   },
@@ -68938,7 +69376,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 125,
+      "usedInCount": 126,
       "hasNutrition": true
     }
   },
@@ -68976,7 +69414,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 273,
+      "usedInCount": 274,
       "hasNutrition": true
     }
   },
