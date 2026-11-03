@@ -5496,3 +5496,62 @@ body[data-category="safety"]      .toc-breadcrumb .bc-crumb:first-child { color:
   .fam-cat-cook .ec-body { padding: .7rem .9rem .75rem; gap: .25rem; }
   .fam-cat-cook .ec-title { font-size: 16.5px; }
 }
+
+/* ── Refinement layer (2026-11) ─────────────────────────────────────────
+   Mobile width and decoration cleanup. Kept last so it settles the cascade
+   above without editing every earlier override.
+
+   1. Nothing may widen the page. The closed TOC drawer (translateX(100%))
+      and the command-palette overlay were extending the scrollable width,
+      so fixed bars (top nav, bottom nav) rendered wider than the screen.
+      `clip` (not `hidden`) keeps position: sticky working. */
+html, body { overflow-x: clip; max-width: 100%; }
+@media (max-width: 860px) {
+  .sidebar { visibility: hidden; transition: transform 220ms ease-out, visibility 0s linear 220ms; }
+  .sidebar.open { visibility: visible; transition: transform 220ms ease-out, visibility 0s; }
+}
+
+/* 2. Horizontal chip rows never show a scrollbar over the pills. */
+.cook-pills, .cook-tools .filter-bar, .filter-bar, .recent-tabs, .home-hints {
+  scrollbar-width: none;
+}
+.cook-pills::-webkit-scrollbar, .filter-bar::-webkit-scrollbar,
+.recent-tabs::-webkit-scrollbar, .home-hints::-webkit-scrollbar { display: none; }
+
+/* 3. Cards: drop the color band and stripe; the category reads as quiet
+      metadata, not a tracked mono kicker. */
+.entry-card::before { display: none; }
+.ec-swatch:not(.ec-swatch-photo) { display: none; }
+.entry-card:has(.ec-swatch:not(.ec-swatch-photo)) { padding: 0; }
+.ec-cat {
+  font-family: var(--font-sans); font-size: 12.5px; font-weight: 500;
+  text-transform: none; letter-spacing: 0;
+}
+.ec-cat::first-letter { text-transform: uppercase; }
+
+/* 4. Family heroes: no pill eyebrow, no ornament, no accent dash. */
+.fam-hero-eyebrow, .fam-hero-ornament { display: none; }
+.fam-hero::after { display: none; }
+.fam-hero { padding-bottom: 1.5rem; }
+.fam-hero .fam-hero-desc { margin-bottom: .25rem; }
+
+/* 5. Browser surfaces carry the palette. */
+::selection { background: color-mix(in oklab, var(--accent) 22%, transparent); color: var(--ink); }
+input, textarea { caret-color: var(--accent); }
+
+@media (max-width: 700px) {
+  .fam-hero { padding: 1.5rem .25rem 1rem; margin-bottom: 1rem; }
+  .fam-hero-title { font-size: 2.2rem; }
+  .fam-hero-desc { font-size: 1.05rem; }
+}
+
+/* 6. Callouts and panels: no thick colored side stripe. A hairline in the
+      same hue keeps the category cue. Cook-mode step states keep theirs,
+      since there the stripe marks the active step. */
+.rh-status, .hub-chip, .recipe-prelude, .hm-link, .scholar,
+.callout, .safety-callout, .fam-cross-link { border-left-width: 1px; }
+.recipe-prelude, .callout, .safety-callout, .scholar { border-radius: var(--r-2); }
+
+/* 7. Section heads: the rule beneath is enough; drop the accent dash. */
+.section-head::after { display: none; }
+.recipe-prelude { border: 1px solid var(--rule); }
