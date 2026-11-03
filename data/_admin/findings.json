@@ -1,9 +1,9 @@
 {
-  "generated": "2026-10-30T00:57:09.232Z",
+  "generated": "2026-11-03T03:46:27.574Z",
   "summary": {
     "errors": 0,
     "warnings": 149,
-    "info": 160
+    "info": 162
   },
   "findings": [
     {
@@ -310,6 +310,13 @@
       "file": "content/recipes/breakfast-egg-bites-with-spinach-and-feta.md",
       "msg": "step 9 names \"eggs\" but has no measurement — bake the qty into the step text",
       "fix": "Inline the quantity, e.g. \"400 g large eggs\" or its imperial equivalent. Cooks shouldn't have to scroll back to the ingredient list mid-cook."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/briam.md",
+      "msg": "ingredient \"dried Greek oregano (rigani)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
     },
     {
       "level": "INFO",
@@ -989,6 +996,13 @@
       "file": "content/recipes/gravlax.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1 to 2 kg\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/greek-lemon-potatoes.md",
+      "msg": "ingredient \"dried Greek oregano (rigani)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
     },
     {
       "level": "INFO",
