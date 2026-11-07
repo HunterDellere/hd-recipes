@@ -1,5 +1,24 @@
 [
   {
+    "path": "pages/ingredients/water.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Mineral water",
+    "desc": "The most-used ingredient on the site, and the least examined. Its dissolved minerals change how tea, coffee, beans and dough behave, and how a bottle tastes at the table.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "water",
+    "updated": "2026-11-07",
+    "added": "2026-11-07",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 0,
+      "hasNutrition": false
+    }
+  },
+  {
     "path": "pages/recipes/branzino-plaki.html",
     "type": "recipe",
     "category": "recipes",
@@ -2903,85 +2922,6 @@
       "timeMode": "active",
       "activeMinutes": 5,
       "filterMinutes": 5
-    }
-  },
-  {
-    "path": "pages/recipes/basque-burnt-cheesecake.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Basque burnt cheesecake",
-    "desc": "The La Viña tarta de queso from San Sebastián: cream cheese, sugar, eggs, heavy cream and a spoonful of flour, baked crustless in a parchment-lined springform at high heat until the top scorches nearly black and the center stays a loose, creamy custard. Five ingredients, one bowl, and the oven does the work.",
-    "tags": [
-      "cake",
-      "custard",
-      "baked",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "basque-burnt-cheesecake",
-    "cuisine": "Spanish (Basque)",
-    "course": "dessert",
-    "difficulty": "easy",
-    "servings": 10,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 55,
-      "total_min": 430,
-      "active_min": 15
-    },
-    "updated": "2026-10-11",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "full-fat cream cheese (block, not tub), room temperature",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "large eggs, room temperature",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "heavy cream, room temperature",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "digital-scale",
-      "instant-read-thermometer",
-      "23 cm / 9-inch springform pan, 7.5 cm / 3-inch sides",
-      "stand mixer with paddle (or a large bowl and wooden spoon)"
-    ],
-    "added": "2026-10-11",
-    "_card": {
-      "swatchIndex": 13,
-      "swatchGlyph": "olive",
-      "totalMinutes": 430,
-      "diffLabel": "easy",
-      "timeLead": "15 min",
-      "timeAnnotation": "· 7 h rest",
-      "timeMode": "active",
-      "activeMinutes": 15,
-      "filterMinutes": 15
     }
   }
 ]
