@@ -1,5 +1,323 @@
 [
   {
+    "path": "pages/recipes/gari-pickled-ginger.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Gari (sushi pickled ginger)",
+    "desc": "Young ginger shaved paper-thin, salted, and blanched for a few seconds to tame its heat, then packed into a warm sweet rice-vinegar brine. After a day it is crisp, sweet-sharp, and naturally blush pink. It is the palate reset between pieces of sushi, so it needs to be clean and bright, not candied.",
+    "tags": [
+      "pickle",
+      "japanese",
+      "condiment"
+    ],
+    "status": "complete",
+    "_slug": "gari-pickled-ginger",
+    "cuisine": "Japanese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 5,
+      "total_min": 1460,
+      "active_min": 20
+    },
+    "updated": "2026-11-11",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "young ginger",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the salt draw)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar (unseasoned)",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the brine)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-11-11",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 1460,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "· 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/sushi-rice.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sushi rice (sumeshi)",
+    "desc": "Japanese short-grain rice washed clear, cold-soaked with kombu, cooked slightly drier than table rice, then cut through with a warm vinegar-sugar-salt seasoning (awasezu) and fanned to body temperature. The result is glossy, separate-but-cohesive grains with a clean sweet-sour-saline edge that holds up against raw fish, nori, and soy.",
+    "tags": [
+      "rice",
+      "japanese",
+      "side"
+    ],
+    "status": "complete",
+    "_slug": "sushi-rice",
+    "cuisine": "Japanese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 45,
+      "cook_min": 25,
+      "total_min": 80,
+      "active_min": 15
+    },
+    "updated": "2026-11-11",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "Japanese short-grain rice",
+        "slug": "japanese-short-grain-rice",
+        "optional": false
+      },
+      {
+        "item": "water (for soaking and cooking)",
+        "slug": "water",
+        "optional": false
+      },
+      {
+        "item": "kombu",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar (unseasoned)",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-11",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 80,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/temaki-hand-rolls.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Temaki (hand rolls)",
+    "desc": "A make-your-own sushi night: a bowl of warm seasoned sushi rice, crisp half-sheets of nori, and a spread of fish, cooked proteins, vegetables, and sauces that everyone rolls into cones at the table. Pick three proteins and three or four vegetables from the menu below; the notes give tested combinations and the pairing logic so you can improvise.",
+    "tags": [
+      "japanese",
+      "fish",
+      "seafood",
+      "rice",
+      "share-plate",
+      "wrap"
+    ],
+    "status": "complete",
+    "_slug": "temaki-hand-rolls",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 5,
+      "total_min": 100,
+      "active_min": 45
+    },
+    "updated": "2026-11-11",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "sushi rice, freshly made and held at body temperature",
+        "optional": false
+      },
+      {
+        "item": "toasted nori sheets (yaki-nori)",
+        "slug": "nori",
+        "optional": false
+      },
+      {
+        "item": "water (for tezu hand water)",
+        "slug": "water",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar (for tezu hand water)",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "tuna (yellowfin or bigeye), sashimi-grade",
+        "slug": "tuna-loin",
+        "optional": true
+      },
+      {
+        "item": "salmon, sashimi-grade",
+        "optional": true
+      },
+      {
+        "item": "yellowtail (hamachi), sashimi-grade",
+        "optional": true
+      },
+      {
+        "item": "large shrimp, peeled and deveined",
+        "slug": "shrimp",
+        "optional": true
+      },
+      {
+        "item": "kosher salt (for the shrimp poaching water)",
+        "slug": "kosher-salt",
+        "optional": true
+      },
+      {
+        "item": "cooked crab meat (lump blue crab or Dungeness)",
+        "optional": true
+      },
+      {
+        "item": "tamagoyaki (Japanese rolled omelet)",
+        "optional": true
+      },
+      {
+        "item": "Japanese or Persian cucumber",
+        "slug": "cucumber",
+        "optional": true
+      },
+      {
+        "item": "ripe Hass avocado",
+        "slug": "avocado",
+        "optional": true
+      },
+      {
+        "item": "lemon",
+        "slug": "lemon",
+        "optional": true
+      },
+      {
+        "item": "scallions",
+        "slug": "scallion",
+        "optional": true
+      },
+      {
+        "item": "shiso leaves",
+        "optional": true
+      },
+      {
+        "item": "kaiware (daikon radish sprouts)",
+        "optional": true
+      },
+      {
+        "item": "ripe mango",
+        "slug": "mango",
+        "optional": true
+      },
+      {
+        "item": "Japanese soy sauce (koikuchi shoyu)",
+        "optional": false
+      },
+      {
+        "item": "wasabi",
+        "optional": false
+      },
+      {
+        "item": "pickled ginger (gari)",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "Kewpie mayonnaise",
+        "slug": "mayonnaise",
+        "optional": true
+      },
+      {
+        "item": "spicy mayo (sriracha mayo)",
+        "optional": true
+      },
+      {
+        "item": "tobiko (flying fish roe)",
+        "optional": true
+      },
+      {
+        "item": "furikake",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-11-11",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 100,
+      "diffLabel": "easy",
+      "timeLead": "1 h 40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
     "path": "pages/ingredients/water.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -14,7 +332,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -53824,7 +54142,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 9,
+      "usedInCount": 10,
       "hasNutrition": true
     }
   },
@@ -54098,7 +54416,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 24,
+      "usedInCount": 25,
       "hasNutrition": true
     }
   },
@@ -54642,7 +54960,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 118,
+      "usedInCount": 119,
       "hasNutrition": true
     }
   },
@@ -54728,7 +55046,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": true
     }
   },
@@ -55406,7 +55724,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 34,
+      "usedInCount": 35,
       "hasNutrition": true
     }
   },
@@ -55614,7 +55932,7 @@
       "swatchIndex": 9,
       "swatchGlyph": "fish",
       "primaryTag": "fish",
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": false
     }
   },
@@ -60943,7 +61261,7 @@
       "swatchIndex": 12,
       "swatchGlyph": "grain",
       "primaryTag": null,
-      "usedInCount": 19,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -61009,7 +61327,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -61052,7 +61370,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 14,
+      "usedInCount": 15,
       "hasNutrition": true
     }
   },
@@ -61093,7 +61411,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -68257,7 +68575,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 33,
+      "usedInCount": 36,
       "hasNutrition": true
     }
   },
@@ -68297,7 +68615,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 104,
+      "usedInCount": 105,
       "hasNutrition": true
     }
   },
@@ -68379,7 +68697,7 @@
       "swatchIndex": 4,
       "swatchGlyph": "fish",
       "primaryTag": "seafood",
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -69796,7 +70114,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 206,
+      "usedInCount": 208,
       "hasNutrition": true
     }
   },
@@ -69815,7 +70133,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 100,
+      "usedInCount": 101,
       "hasNutrition": true
     }
   },
@@ -69834,7 +70152,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 127,
+      "usedInCount": 129,
       "hasNutrition": true
     }
   },
@@ -69872,7 +70190,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 279,
+      "usedInCount": 280,
       "hasNutrition": true
     }
   },

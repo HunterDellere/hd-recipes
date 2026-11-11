@@ -1,5 +1,323 @@
 [
   {
+    "path": "pages/recipes/gari-pickled-ginger.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Gari (sushi pickled ginger)",
+    "desc": "Young ginger shaved paper-thin, salted, and blanched for a few seconds to tame its heat, then packed into a warm sweet rice-vinegar brine. After a day it is crisp, sweet-sharp, and naturally blush pink. It is the palate reset between pieces of sushi, so it needs to be clean and bright, not candied.",
+    "tags": [
+      "pickle",
+      "japanese",
+      "condiment"
+    ],
+    "status": "complete",
+    "_slug": "gari-pickled-ginger",
+    "cuisine": "Japanese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 12,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 5,
+      "total_min": 1460,
+      "active_min": 20
+    },
+    "updated": "2026-11-11",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "young ginger",
+        "slug": "ginger",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the salt draw)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar (unseasoned)",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (for the brine)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-11-11",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 1460,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "· 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/sushi-rice.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sushi rice (sumeshi)",
+    "desc": "Japanese short-grain rice washed clear, cold-soaked with kombu, cooked slightly drier than table rice, then cut through with a warm vinegar-sugar-salt seasoning (awasezu) and fanned to body temperature. The result is glossy, separate-but-cohesive grains with a clean sweet-sour-saline edge that holds up against raw fish, nori, and soy.",
+    "tags": [
+      "rice",
+      "japanese",
+      "side"
+    ],
+    "status": "complete",
+    "_slug": "sushi-rice",
+    "cuisine": "Japanese",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 45,
+      "cook_min": 25,
+      "total_min": 80,
+      "active_min": 15
+    },
+    "updated": "2026-11-11",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "Japanese short-grain rice",
+        "slug": "japanese-short-grain-rice",
+        "optional": false
+      },
+      {
+        "item": "water (for soaking and cooking)",
+        "slug": "water",
+        "optional": false
+      },
+      {
+        "item": "kombu",
+        "slug": "kombu",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar (unseasoned)",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-11",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 80,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/temaki-hand-rolls.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Temaki (hand rolls)",
+    "desc": "A make-your-own sushi night: a bowl of warm seasoned sushi rice, crisp half-sheets of nori, and a spread of fish, cooked proteins, vegetables, and sauces that everyone rolls into cones at the table. Pick three proteins and three or four vegetables from the menu below; the notes give tested combinations and the pairing logic so you can improvise.",
+    "tags": [
+      "japanese",
+      "fish",
+      "seafood",
+      "rice",
+      "share-plate",
+      "wrap"
+    ],
+    "status": "complete",
+    "_slug": "temaki-hand-rolls",
+    "cuisine": "Japanese",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 4,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 5,
+      "total_min": 100,
+      "active_min": 45
+    },
+    "updated": "2026-11-11",
+    "diet": [
+      "pescatarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "sushi rice, freshly made and held at body temperature",
+        "optional": false
+      },
+      {
+        "item": "toasted nori sheets (yaki-nori)",
+        "slug": "nori",
+        "optional": false
+      },
+      {
+        "item": "water (for tezu hand water)",
+        "slug": "water",
+        "optional": false
+      },
+      {
+        "item": "rice vinegar (for tezu hand water)",
+        "slug": "rice-vinegar",
+        "optional": false
+      },
+      {
+        "item": "tuna (yellowfin or bigeye), sashimi-grade",
+        "slug": "tuna-loin",
+        "optional": true
+      },
+      {
+        "item": "salmon, sashimi-grade",
+        "optional": true
+      },
+      {
+        "item": "yellowtail (hamachi), sashimi-grade",
+        "optional": true
+      },
+      {
+        "item": "large shrimp, peeled and deveined",
+        "slug": "shrimp",
+        "optional": true
+      },
+      {
+        "item": "kosher salt (for the shrimp poaching water)",
+        "slug": "kosher-salt",
+        "optional": true
+      },
+      {
+        "item": "cooked crab meat (lump blue crab or Dungeness)",
+        "optional": true
+      },
+      {
+        "item": "tamagoyaki (Japanese rolled omelet)",
+        "optional": true
+      },
+      {
+        "item": "Japanese or Persian cucumber",
+        "slug": "cucumber",
+        "optional": true
+      },
+      {
+        "item": "ripe Hass avocado",
+        "slug": "avocado",
+        "optional": true
+      },
+      {
+        "item": "lemon",
+        "slug": "lemon",
+        "optional": true
+      },
+      {
+        "item": "scallions",
+        "slug": "scallion",
+        "optional": true
+      },
+      {
+        "item": "shiso leaves",
+        "optional": true
+      },
+      {
+        "item": "kaiware (daikon radish sprouts)",
+        "optional": true
+      },
+      {
+        "item": "ripe mango",
+        "slug": "mango",
+        "optional": true
+      },
+      {
+        "item": "Japanese soy sauce (koikuchi shoyu)",
+        "optional": false
+      },
+      {
+        "item": "wasabi",
+        "optional": false
+      },
+      {
+        "item": "pickled ginger (gari)",
+        "optional": false
+      },
+      {
+        "item": "toasted sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "Kewpie mayonnaise",
+        "slug": "mayonnaise",
+        "optional": true
+      },
+      {
+        "item": "spicy mayo (sriracha mayo)",
+        "optional": true
+      },
+      {
+        "item": "tobiko (flying fish roe)",
+        "optional": true
+      },
+      {
+        "item": "furikake",
+        "optional": true
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-11-11",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 100,
+      "diffLabel": "easy",
+      "timeLead": "1 h 40 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 45,
+      "filterMinutes": 45
+    }
+  },
+  {
     "path": "pages/ingredients/water.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -14,7 +332,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 0,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -2668,260 +2986,6 @@
       "timeMode": "active",
       "activeMinutes": 20,
       "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/white-chicken-chili.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "White chicken chili",
-    "desc": "Browned chicken thighs simmered in stock with broiled poblano, Anaheim, and jalapeño chiles and creamy white beans, then shredded. Mashed beans and a spoonful of crema give the broth body without flour, and lime keeps it bright. Turkey works the same way.",
-    "tags": [
-      "chicken",
-      "turkey",
-      "stew",
-      "spicy",
-      "one-pot",
-      "make-ahead",
-      "freezer-friendly",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "white-chicken-chili",
-    "cuisine": "American",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 6,
-    "time": {
-      "prep_min": 30,
-      "cook_min": 60,
-      "total_min": 90,
-      "active_min": 50
-    },
-    "updated": "2026-10-17",
-    "diet": [
-      "gluten-free",
-      "nut-free"
-    ],
-    "ingredients": [
-      {
-        "item": "boneless, skinless chicken thighs",
-        "slug": "chicken-thigh",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the chicken",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "poblano peppers",
-        "slug": "poblano-pepper",
-        "optional": false
-      },
-      {
-        "item": "Anaheim or Hatch green chiles",
-        "optional": false
-      },
-      {
-        "item": "jalapeño",
-        "slug": "jalapeno",
-        "optional": false
-      },
-      {
-        "item": "neutral oil",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the onion",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "ground cumin",
-        "slug": "ground-cumin",
-        "optional": false
-      },
-      {
-        "item": "ground coriander",
-        "slug": "ground-coriander",
-        "optional": false
-      },
-      {
-        "item": "Mexican oregano",
-        "slug": "mexican-oregano",
-        "optional": false
-      },
-      {
-        "item": "chicken stock",
-        "optional": false
-      },
-      {
-        "item": "cooked white beans, drained",
-        "slug": "cannellini-beans",
-        "optional": false
-      },
-      {
-        "item": "bean cooking liquid",
-        "optional": false
-      },
-      {
-        "item": "Mexican crema",
-        "optional": false
-      },
-      {
-        "item": "lime juice",
-        "slug": "lime",
-        "optional": false
-      },
-      {
-        "item": "cilantro leaves",
-        "slug": "cilantro",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, to adjust",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "Monterey Jack",
-        "optional": false
-      },
-      {
-        "item": "avocados",
-        "slug": "avocado",
-        "optional": false
-      },
-      {
-        "item": "tortilla chips",
-        "optional": false
-      },
-      {
-        "item": "limes, for serving",
-        "slug": "lime",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "high-heat-dry-roasting",
-      "maillard-sear",
-      "blooming-aromatics"
-    ],
-    "equipment": [
-      "dutch-oven",
-      "digital-scale",
-      "rimmed sheet pan",
-      "instant-read-thermometer"
-    ],
-    "added": "2026-10-17",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "skillet",
-      "totalMinutes": 90,
-      "diffLabel": "easy",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 50,
-      "filterMinutes": 50
-    }
-  },
-  {
-    "path": "pages/techniques/braising.html",
-    "type": "technique",
-    "category": "techniques",
-    "title": "Braising",
-    "desc": "Cook collagen-rich meat or dense vegetables partly submerged in liquid, covered, below a boil for hours, until connective tissue converts to gelatin and the liquid becomes the sauce.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "braising",
-    "updated": "2026-10-17",
-    "added": "2026-10-17",
-    "_card": {
-      "swatchIndex": 0,
-      "swatchGlyph": "whisk",
-      "usedInCount": 34
-    }
-  },
-  {
-    "path": "pages/recipes/mexican-crema.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Mexican crema",
-    "desc": "Heavy cream cultured with a spoonful of buttermilk at room temperature until it thickens to a pourable, lightly sour cream, then finished with salt and lime. Higher in fat than sour cream, so it does not curdle on hot stews or salsa.",
-    "tags": [
-      "condiment",
-      "fermented",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "mexican-crema",
-    "cuisine": "Mexican",
-    "course": "sauce",
-    "difficulty": "easy",
-    "servings": 8,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 0,
-      "total_min": 1445,
-      "active_min": 5
-    },
-    "updated": "2026-10-17",
-    "diet": [
-      "vegetarian",
-      "gluten-free",
-      "nut-free"
-    ],
-    "ingredients": [
-      {
-        "item": "heavy cream, not ultra-pasteurized",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "cultured buttermilk",
-        "slug": "buttermilk",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "lime juice",
-        "slug": "lime",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [
-      "digital-scale",
-      "glass jar"
-    ],
-    "added": "2026-10-11",
-    "_card": {
-      "swatchIndex": 4,
-      "swatchGlyph": "chili",
-      "totalMinutes": 1445,
-      "diffLabel": "easy",
-      "timeLead": "5 min",
-      "timeAnnotation": "· 1 d rest",
-      "timeMode": "active",
-      "activeMinutes": 5,
-      "filterMinutes": 5
     }
   }
 ]
