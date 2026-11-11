@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-07T16:38:39.441Z",
+  "generated": "2026-11-11T18:30:05.216Z",
   "summary": {
     "errors": 0,
     "warnings": 149,
-    "info": 162
+    "info": 163
   },
   "findings": [
     {
@@ -2046,6 +2046,13 @@
       "file": "content/recipes/taro-milk-tea-with-boba.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"60 to 80 g\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/temaki-hand-rolls.md",
+      "msg": "ingredient \"pickled ginger (gari)\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
     },
     {
       "level": "INFO",

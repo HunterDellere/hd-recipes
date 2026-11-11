@@ -7645,6 +7645,39 @@
     },
     "missing": []
   },
+  "pages/recipes/gari-pickled-ginger.html": {
+    "perServing": {
+      "energy_kcal": 35,
+      "protein_g": 0.4,
+      "fat_g": 0.2,
+      "saturated_fat_g": 0,
+      "carbs_g": 7.9,
+      "fiber_g": 0.4,
+      "sugar_g": 4.5,
+      "sodium_mg": 229,
+      "potassium_mg": 87,
+      "calcium_mg": 4,
+      "iron_mg": 0,
+      "vitamin_c_mg": 1,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 421,
+      "protein_g": 4.6,
+      "fat_g": 1.9,
+      "saturated_fat_g": 0.5,
+      "carbs_g": 94.5,
+      "fiber_g": 5,
+      "sugar_g": 54.2,
+      "sodium_mg": 2749,
+      "potassium_mg": 1042,
+      "calcium_mg": 51,
+      "iron_mg": 2,
+      "vitamin_c_mg": 13,
+      "vitamin_a_iu": 0
+    },
+    "missing": []
+  },
   "pages/recipes/genmaicha-tea-smoked-tofu.html": {
     "perServing": {
       "energy_kcal": 227,
@@ -21838,6 +21871,45 @@
       }
     ]
   },
+  "pages/recipes/sushi-rice.html": {
+    "perServing": {
+      "energy_kcal": 180,
+      "protein_g": 3,
+      "fat_g": 0.3,
+      "saturated_fat_g": 0.1,
+      "carbs_g": 39.3,
+      "fiber_g": 0.5,
+      "sugar_g": 7.6,
+      "sodium_mg": 877,
+      "potassium_mg": 41,
+      "calcium_mg": 15,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 1
+    },
+    "total": {
+      "energy_kcal": 720,
+      "protein_g": 12.2,
+      "fat_g": 1.3,
+      "saturated_fat_g": 0.4,
+      "carbs_g": 157.3,
+      "fiber_g": 1.9,
+      "sugar_g": 30.2,
+      "sodium_mg": 3506,
+      "potassium_mg": 165,
+      "calcium_mg": 61,
+      "iron_mg": 1,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 6
+    },
+    "missing": [
+      {
+        "name": "water (for soaking and cooking)",
+        "slug": "water",
+        "reason": "no-fdc"
+      }
+    ]
+  },
   "pages/recipes/suya.html": {
     "perServing": {
       "energy_kcal": 197,
@@ -22223,6 +22295,50 @@
       {
         "name": "fresh taro root",
         "slug": "taro",
+        "reason": "no-fdc"
+      }
+    ]
+  },
+  "pages/recipes/temaki-hand-rolls.html": {
+    "perServing": {
+      "energy_kcal": 15,
+      "protein_g": 0.4,
+      "fat_g": 1.2,
+      "saturated_fat_g": 0.2,
+      "carbs_g": 0.6,
+      "fiber_g": 0.3,
+      "sugar_g": 0,
+      "sodium_mg": 0,
+      "potassium_mg": 12,
+      "calcium_mg": 25,
+      "iron_mg": 0,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 0
+    },
+    "total": {
+      "energy_kcal": 60,
+      "protein_g": 1.8,
+      "fat_g": 5,
+      "saturated_fat_g": 0.7,
+      "carbs_g": 2.4,
+      "fiber_g": 1.2,
+      "sugar_g": 0,
+      "sodium_mg": 1,
+      "potassium_mg": 47,
+      "calcium_mg": 98,
+      "iron_mg": 1,
+      "vitamin_c_mg": 0,
+      "vitamin_a_iu": 1
+    },
+    "missing": [
+      {
+        "name": "toasted nori sheets (yaki-nori)",
+        "slug": "nori",
+        "reason": "no-fdc"
+      },
+      {
+        "name": "water (for tezu hand water)",
+        "slug": "water",
         "reason": "no-fdc"
       }
     ]
