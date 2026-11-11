@@ -368,6 +368,9 @@
       });
     });
 
+    // Choice changes re-total merged shopping rows; re-render them.
+    document.addEventListener('hdr:choices', apply);
+
     // Cross-section sync (rare but possible if a page has multiple ingredient blocks)
     document.addEventListener('hdr:units', (e) => {
       if (e.detail?.units && e.detail.units !== units) {
@@ -473,6 +476,135 @@
     });
   }
 
+  // ── Pick-your-own choices ──────────────────────────────────────────────
+  // Recipes with a `choices` block render a picker of toggle chips. Ingredient
+  // rows and steps tagged data-choice show only while one of their keys is
+  // selected. Merged shopping rows carry data-choice-parts (per-option
+  // quantities) and are re-totalled here, then the scaler re-renders them.
+  // Runs before initScaling so the scaler snapshots the re-totalled values.
+  initChoices();
+
+  function initChoices() {
+    const picker = document.querySelector('[data-choices]');
+    if (!picker) return;
+    const storeKey = `hdr-choices:${location.pathname}`;
+    const chips = Array.from(picker.querySelectorAll('[data-choice-key]'));
+    const allKeys = new Set(chips.map(c => c.dataset.choiceKey));
+    const defaults = chips.filter(c => c.dataset.default === '1').map(c => c.dataset.choiceKey);
+    const split = (v) => String(v || '').split(/\s+/).filter(Boolean);
+    let selected = null;
+    try {
+      const stored = JSON.parse(localStorage.getItem(storeKey) || 'null');
+      if (Array.isArray(stored)) selected = new Set(stored.filter(k => allKeys.has(k)));
+    } catch {}
+    if (!selected) selected = new Set(defaults);
+
+    // Single-select groups (e.g. sugar vs substitute) always hold exactly one.
+    function normalize() {
+      picker.querySelectorAll('[data-select="one"]').forEach(g => {
+        const keys = Array.from(g.querySelectorAll('[data-choice-key]')).map(c => c.dataset.choiceKey);
+        const on = keys.filter(k => selected.has(k));
+        if (on.length === 1) return;
+        keys.forEach(k => selected.delete(k));
+        selected.add(on[0] || keys.find(k => defaults.includes(k)) || keys[0]);
+      });
+    }
+    const isOn = (keys) => !keys.length || keys.some(k => selected.has(k));
+
+    function render() {
+      normalize();
+      chips.forEach(c => c.setAttribute('aria-pressed', selected.has(c.dataset.choiceKey) ? 'true' : 'false'));
+      // Highlight the quick pick that matches the current selection exactly.
+      const oneKeySet = new Set(Array.from(picker.querySelectorAll('[data-select="one"] [data-choice-key]')).map(c => c.dataset.choiceKey));
+      const manySel = [...selected].filter(k => !oneKeySet.has(k)).sort().join(' ');
+      picker.querySelectorAll('[data-preset]').forEach(b => {
+        const keys = split(b.dataset.preset).filter(k => allKeys.has(k) && !oneKeySet.has(k)).sort().join(' ');
+        b.setAttribute('aria-pressed', keys === manySel ? 'true' : 'false');
+      });
+      document.querySelectorAll('.recipe-ingredients .ing-row[data-choice], .recipe-steps .step-item[data-choice]').forEach(el => {
+        el.hidden = !isOn(split(el.dataset.choice));
+      });
+      document.querySelectorAll('.recipe-ingredients .ing-row[data-choice-parts]').forEach(row => {
+        let parts;
+        try { parts = JSON.parse(row.dataset.choiceParts); } catch { return; }
+        let total = 0;
+        for (const p of parts) if (isOn(p.c || [])) total += Number(p.q) || 0;
+        row.hidden = total <= 0;
+        if (total > 0) { row.dataset.qty = String(total); row.dataset.origQty = String(total); }
+      });
+      // Hide list blocks (and their heading) once every row in them is hidden.
+      document.querySelectorAll('.recipe-ingredients ol.ing-list').forEach(ol => {
+        const any = Array.from(ol.querySelectorAll('.ing-row')).some(r => !r.hidden);
+        ol.hidden = !any;
+        const head = ol.previousElementSibling;
+        if (head && head.matches('h3.ing-group-head')) {
+          head.hidden = !any;
+          const cnt = head.querySelector('.ing-shop-section-count');
+          if (cnt) cnt.textContent = String(ol.querySelectorAll('.ing-row:not([hidden])').length);
+        }
+      });
+      const miseCount = document.querySelector('[data-ing-panel="mise"] .ing-panel-count');
+      if (miseCount) {
+        const n = document.querySelectorAll('[data-ing-panel="mise"] h3.ing-group-head:not([hidden])').length;
+        miseCount.textContent = `${n} ${n === 1 ? 'phase' : 'phases'}`;
+      }
+      const shopCount = document.querySelector('[data-shop-count]');
+      if (shopCount) shopCount.textContent = String(document.querySelectorAll('[data-ing-panel="shop"] .ing-row:not([hidden])').length);
+      // Renumber visible steps; keep timer labels ("Step N: …") in sync.
+      let n = 0;
+      document.querySelectorAll('.recipe-steps .step-item').forEach(li => {
+        if (li.hidden) return;
+        n++;
+        const num = li.querySelector('.step-num');
+        if (num) num.textContent = String(n);
+        const btn = li.querySelector('.step-time-btn');
+        if (btn) {
+          for (const k of ['stepLabel', 'origLabel']) {
+            if (btn.dataset[k]) btn.dataset[k] = btn.dataset[k].replace(/^Step \d+:/, `Step ${n}:`);
+          }
+        }
+      });
+      try { localStorage.setItem(storeKey, JSON.stringify([...selected])); } catch {}
+      document.dispatchEvent(new CustomEvent('hdr:choices', { detail: { selected: [...selected] } }));
+    }
+
+    picker.addEventListener('click', (e) => {
+      const chip = e.target.closest('[data-choice-key]');
+      if (chip) {
+        const k = chip.dataset.choiceKey;
+        const group = chip.closest('[data-select]');
+        if (group && group.dataset.select === 'one') {
+          group.querySelectorAll('[data-choice-key]').forEach(c => selected.delete(c.dataset.choiceKey));
+          selected.add(k);
+        } else if (selected.has(k)) {
+          selected.delete(k);
+        } else {
+          selected.add(k);
+        }
+        render();
+        return;
+      }
+      const preset = e.target.closest('[data-preset]');
+      if (preset) {
+        // Presets set the multi-select groups; single-select picks are kept.
+        const oneKeys = new Set(Array.from(picker.querySelectorAll('[data-select="one"] [data-choice-key]')).map(c => c.dataset.choiceKey));
+        const keep = [...selected].filter(k => oneKeys.has(k));
+        selected = new Set([...split(preset.dataset.preset).filter(k => allKeys.has(k)), ...keep]);
+        render();
+        return;
+      }
+      if (e.target.closest('[data-choices-all]')) {
+        const oneKeys = new Set(Array.from(picker.querySelectorAll('[data-select="one"] [data-choice-key]')).map(c => c.dataset.choiceKey));
+        const keep = [...selected].filter(k => oneKeys.has(k));
+        selected = new Set([...[...allKeys].filter(k => !oneKeys.has(k)), ...keep]);
+        render();
+      }
+    });
+
+    picker.hidden = false;
+    render();
+  }
+
   document.querySelectorAll('.recipe-ingredients').forEach(root => {
     initScaling(root);
     initShop(root);
@@ -492,9 +624,27 @@
     let active = false;
     let activeStepIndex = 0;
     const completedSteps = new Set();
-    const steps = Array.from(document.querySelectorAll('.recipe-steps .step-item'));
+    // Only visible steps take part; choices can hide some. Rebuilt when the
+    // cook changes their selection.
+    const allSteps = Array.from(document.querySelectorAll('.recipe-steps .step-item'));
+    let steps = allSteps.filter(s => !s.hidden);
     const ingredientsSection = document.querySelector('.recipe-ingredients');
     const labelEl = toggle.querySelector('.rh-cook-label');
+    document.addEventListener('hdr:choices', () => {
+      allSteps.forEach(s => { s.classList.remove('step-active'); s.classList.remove('step-done'); });
+      steps = allSteps.filter(s => !s.hidden);
+      completedSteps.clear();
+      if (active && steps.length) {
+        steps.forEach((s, i) => {
+          if (!s.dataset.cookBound) {
+            s.addEventListener("click", () => { const i = steps.indexOf(s); if (i >= 0) setActiveStep(i); });
+            s.dataset.cookBound = '1';
+          }
+        });
+        activeStepIndex = Math.min(activeStepIndex, steps.length - 1);
+        setActiveStep(activeStepIndex);
+      }
+    });
 
     // Build a real button element for ingredients-toggle in cooks view rather
     // than retrofitting the H2 with role=button. Inserted but kept hidden when
@@ -584,9 +734,9 @@
       // Build the floating exit/control bar
       buildCookBar();
       // Wire per-step click → activate (idempotent)
-      steps.forEach((s, i) => {
+      steps.forEach((s) => {
         if (!s.dataset.cookBound) {
-          s.addEventListener('click', () => setActiveStep(i));
+          s.addEventListener('click', () => { const i = steps.indexOf(s); if (i >= 0) setActiveStep(i); });
           s.dataset.cookBound = '1';
         }
       });
@@ -607,7 +757,7 @@
       if (ingredientsSection) delete ingredientsSection.dataset.expanded;
       if (wakeLock) { try { wakeLock.release(); } catch {} wakeLock = null; }
       document.removeEventListener('visibilitychange', reacquireWakeLock);
-      steps.forEach(s => { s.classList.remove('step-active'); s.classList.remove('step-done'); });
+      allSteps.forEach(s => { s.classList.remove('step-active'); s.classList.remove('step-done'); });
       completedSteps.clear();
       const bar = document.querySelector('.cook-bar');
       if (bar) bar.remove();
@@ -1116,7 +1266,9 @@
       else runningLabels.add(num);
     });
     document.querySelectorAll('.recipe-steps .step-item').forEach((li, i) => {
-      const num = i + 1;
+      // Read the displayed number: choices can hide steps and renumber the rest.
+      const shown = parseInt((li.querySelector('.step-num') || {}).textContent, 10);
+      const num = isFinite(shown) ? shown : i + 1;
       li.classList.toggle('step--running', runningLabels.has(num));
       if (doneLabels.has(num)) li.classList.add('step--done');
     });

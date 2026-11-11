@@ -5,7 +5,7 @@ status: 'complete'
 content_review: 'pending'
 
 title: 'Temaki (hand rolls)'
-desc: 'A make-your-own sushi night: a bowl of warm seasoned sushi rice, crisp half-sheets of nori, and a spread of fish, cooked proteins, vegetables, and sauces that everyone rolls into cones at the table. Pick three proteins and three or four vegetables from the menu below; the notes give tested combinations and the pairing logic so you can improvise.'
+desc: 'A make-your-own sushi night: a bowl of warm seasoned sushi rice, crisp half-sheets of nori, and a spread of fish, cooked proteins, vegetables, and sauces that everyone rolls into cones at the table. Pick your fillings in the picker and the ingredients, shopping list, and method adapt to match; the notes give a protein guide, tested combinations, and the pairing logic so you can improvise.'
 metaDesc: 'Temaki hand rolls for an at-home sushi night: how much rice and nori per person, how to cut fish, a full filling and topping menu, and the combinations that work.'
 tags: ['japanese', 'fish', 'seafood', 'rice', 'share-plate', 'wrap']
 updated: '2026-11-11'
@@ -24,11 +24,11 @@ diet: ['pescatarian', 'dairy-free']
 
 before_you_start:
   - 'Start the sushi rice first, about 80 minutes before you want to eat. It needs a 30-minute soak, cooking, a rest, and fanning to body temperature. Prep every filling while it soaks and cooks.'
-  - 'Choose your menu before shopping: three or four proteins and three or four vegetables are plenty for 4 people. The proteins come in four groups (raw, marinated and cured, cooked seafood, and meat, egg, and tofu); a good spread takes one or two from at least two groups, so there is a mix of raw and cooked, rich and lean. Everything is marked optional. The protein guide and combinations in the notes tell you what each one tastes like and what to pair it with.'
+  - 'Pick your spread in Build your spread before shopping. The shopping list and steps follow your picks.'
   - 'Buy raw fish only from a counter that sells it explicitly as sashimi-grade (see the safety note), on the day you serve it, and keep it in the coldest part of the fridge until the table is set.'
   - 'Make the gari at least a day ahead if you are making it yourself. Store-bought is fine.'
-  - 'Order the protein prep by what holds: salmon skin and teriyaki chicken can be cooked up to 2 hours ahead and served at room temperature; the zuke marinade has to be cooled before the fish goes in; raw fish is cut last and goes straight back into the fridge; shrimp tempura is fried only after everyone sits down.'
-  - 'Frozen unagi needs to thaw in the fridge overnight, or in its sealed pack in cold water for 30 minutes.'
+  - 'The method is ordered by what holds: cooked fillings first (salmon skin and teriyaki chicken keep 2 hours at room temperature), then vegetables, then raw fish cut last and straight back into the fridge. Shrimp tempura is fried only after everyone sits down.'
+  - 'If you picked unagi, thaw the frozen pack in the fridge overnight, or in its sealed pack in cold water for 30 minutes.'
   - 'Keep the nori sealed in its bag until the moment you cut it. It absorbs humidity from the air within minutes and goes leathery.'
 
 source:
@@ -43,12 +43,72 @@ safety_notes:
     ref: 'safety/seafood-doneness#scombroid-histamine-the-toxin-no-temperature-fixes'
     why: 'Tuna and yellowtail build up histamine if held warm, and no amount of freshness after the fact undoes it. Keep the fish refrigerated until the table is set, and put leftovers back in the fridge within 2 hours.'
 
+choices:
+  heading: 'Build your spread'
+  toc: 'Build your spread'
+  intro: 'Tap the fillings you want. The ingredients, shopping list, and method below change to show only what you picked. Three or four proteins and three or four vegetables are plenty for 4 people; mix raw and cooked, rich and lean. Start from a quick pick if you are not sure. The protein guide in the notes says what each one tastes like and what goes with it.'
+  presets:
+    - label: 'Sushi-bar favorites'
+      keys: ['tuna', 'spicy-tuna', 'salmon', 'crab', 'cucumber', 'avocado', 'scallion', 'kaiware', 'lemon', 'spicy-mayo', 'kewpie', 'tobiko']
+    - label: 'Traditional Japanese'
+      keys: ['zuke', 'yellowtail', 'scallops', 'tamago', 'cucumber', 'scallion', 'shiso', 'kaiware', 'lemon']
+    - label: 'Kid-friendly, no raw fish'
+      keys: ['shrimp', 'crab', 'chicken', 'tamago', 'cucumber', 'avocado', 'mango', 'kewpie', 'furikake']
+    - label: 'All cooked seafood'
+      keys: ['shrimp-tempura', 'unagi', 'salmon-skin', 'crab', 'cucumber', 'avocado', 'scallion', 'kaiware', 'spicy-mayo', 'tobiko']
+    - label: 'Vegetarian'
+      keys: ['inari', 'natto', 'tamago', 'cucumber', 'avocado', 'shiso', 'kaiware', 'mango', 'scallion', 'spicy-mayo']
+  groups:
+    - label: 'Raw fish and shellfish'
+      hint: 'sashimi-grade only'
+      options:
+        - { key: 'tuna', label: 'Tuna', note: 'lean, meaty', default: true }
+        - { key: 'spicy-tuna', label: 'Spicy tuna', note: 'chopped, with spicy mayo', default: true }
+        - { key: 'salmon', label: 'Salmon', note: 'rich, buttery', default: true }
+        - { key: 'yellowtail', label: 'Yellowtail', note: 'rich, clean' }
+        - { key: 'scallops', label: 'Scallops', note: 'sweet, soft' }
+    - label: 'Marinated, cured, and roe'
+      options:
+        - { key: 'zuke', label: 'Zuke tuna', note: 'soy-marinated' }
+        - { key: 'smoked-salmon', label: 'Smoked salmon', note: 'no prep' }
+        - { key: 'ikura', label: 'Ikura', note: 'salmon roe topping' }
+    - label: 'Cooked seafood'
+      options:
+        - { key: 'shrimp', label: 'Poached shrimp', note: 'sweet, snappy' }
+        - { key: 'shrimp-tempura', label: 'Shrimp tempura', note: 'hot and crunchy' }
+        - { key: 'crab', label: 'Crab', note: 'with Kewpie', default: true }
+        - { key: 'salmon-skin', label: 'Crispy salmon skin' }
+        - { key: 'unagi', label: 'Unagi', note: 'grilled eel' }
+    - label: 'Meat, egg, and tofu'
+      options:
+        - { key: 'chicken', label: 'Teriyaki chicken' }
+        - { key: 'tamago', label: 'Tamagoyaki', note: 'rolled omelet' }
+        - { key: 'inari', label: 'Inari', note: 'sweet fried tofu' }
+        - { key: 'natto', label: 'Natto', note: 'fermented soybeans' }
+    - label: 'Vegetables, herbs, and fruit'
+      options:
+        - { key: 'cucumber', label: 'Cucumber', default: true }
+        - { key: 'avocado', label: 'Avocado', default: true }
+        - { key: 'scallion', label: 'Scallion', default: true }
+        - { key: 'shiso', label: 'Shiso', note: 'minty herb' }
+        - { key: 'kaiware', label: 'Radish sprouts', default: true }
+        - { key: 'mango', label: 'Mango' }
+        - { key: 'lemon', label: 'Lemon wedges', default: true }
+    - label: 'Sauces and toppings'
+      hint: 'soy, wasabi, gari, and sesame are always on the table'
+      options:
+        - { key: 'spicy-mayo', label: 'Spicy mayo', default: true }
+        - { key: 'kewpie', label: 'Kewpie mayo', default: true }
+        - { key: 'tobiko', label: 'Tobiko', note: 'flying fish roe', default: true }
+        - { key: 'furikake', label: 'Furikake' }
+
 ingredients:
   - group: 'The base'
-    item: 'sushi rice, freshly made and held at body temperature'
+    item: 'sushi rice'
+    recipe: 'recipes/sushi-rice'
     qty: 1000
     unit: 'g'
-    note: '(1 batch of the sushi rice recipe; about 50 g per roll)'
+    note: '(1 batch of the sushi rice recipe, freshly made and held at body temperature; about 50 g per roll)'
   - group: 'The base'
     item: 'toasted nori sheets (yaki-nori)'
     slug: 'nori'
@@ -68,226 +128,286 @@ ingredients:
     unit: 'ml'
     note: '(1 tbsp)'
 
-  - group: 'Proteins A, raw fish and shellfish (sashimi-grade only)'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
     item: 'tuna (yellowfin or bigeye), sashimi-grade'
     slug: 'tuna-loin'
     qty: 150
     unit: 'g'
     note: '(5 oz; lean, meaty, the most forgiving raw fish for beginners; a block cut from the loin, not a steak)'
-    optional: true
-  - group: 'Proteins A, raw fish and shellfish (sashimi-grade only)'
+    choice: 'tuna'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
+    item: 'tuna for spicy tuna, sashimi-grade'
+    slug: 'tuna-loin'
+    qty: 75
+    unit: 'g'
+    note: '(2½ oz; trimmings and odd ends are fine, it gets chopped)'
+    choice: 'spicy-tuna'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
+    item: 'spicy mayo (for the spicy tuna)'
+    qty: 20
+    unit: 'g'
+    note: '(1½ tbsp)'
+    choice: 'spicy-tuna'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
+    item: 'scallion (for the spicy tuna)'
+    slug: 'scallion'
+    qty: 5
+    unit: 'g'
+    note: '(1 scallion)'
+    choice: 'spicy-tuna'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
     item: 'salmon, sashimi-grade'
     qty: 150
     unit: 'g'
     note: '(5 oz; skinless, fatty and buttery; ask for the skin separately if you want crispy salmon skin)'
-    optional: true
-  - group: 'Proteins A, raw fish and shellfish (sashimi-grade only)'
+    choice: 'salmon'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
     item: 'yellowtail (hamachi), sashimi-grade'
     qty: 150
     unit: 'g'
     note: '(5 oz; rich, clean, slightly sweet; often sold frozen in vacuum packs at Japanese markets)'
-    optional: true
-  - group: 'Proteins A, raw fish and shellfish (sashimi-grade only)'
+    choice: 'yellowtail'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
     item: 'sea scallops (hotate), sashimi-grade, dry-packed'
     qty: 150
     unit: 'g'
-    note: '(5 oz; about 5 large; sweet and soft; "dry-packed" means no phosphate soak, which tastes soapy raw)'
-    optional: true
+    note: '(5 oz; about 5 large; "dry-packed" means no phosphate soak, which tastes soapy raw)'
+    choice: 'scallops'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
+    item: 'Kewpie mayonnaise (for spicy scallop)'
+    slug: 'mayonnaise'
+    qty: 20
+    unit: 'g'
+    note: '(1½ tbsp)'
+    choice: 'scallops'
+  - group: 'Raw fish and shellfish (sashimi-grade only)'
+    item: 'tobiko (for spicy scallop)'
+    qty: 10
+    unit: 'g'
+    note: '(2 tsp)'
+    choice: 'scallops'
 
-  - group: 'Proteins B, marinated, cured, and roe'
+  - group: 'Marinated, cured, and roe'
+    item: 'tuna for zuke, sashimi-grade'
+    slug: 'tuna-loin'
+    qty: 150
+    unit: 'g'
+    note: '(5 oz; sashimi-grade salmon works the same way)'
+    choice: 'zuke'
+  - group: 'Marinated, cured, and roe'
     item: 'Japanese soy sauce (for the zuke marinade)'
     qty: 30
     unit: 'ml'
-    note: '(2 tbsp; zuke marinates the tuna or salmon from group A)'
-    optional: true
-  - group: 'Proteins B, marinated, cured, and roe'
+    note: '(2 tbsp)'
+    choice: 'zuke'
+  - group: 'Marinated, cured, and roe'
     item: 'mirin (for the zuke marinade)'
     slug: 'mirin'
     qty: 15
     unit: 'ml'
     note: '(1 tbsp)'
-    optional: true
-  - group: 'Proteins B, marinated, cured, and roe'
+    choice: 'zuke'
+  - group: 'Marinated, cured, and roe'
     item: 'sake (for the zuke marinade)'
     slug: 'sake'
     qty: 15
     unit: 'ml'
     note: '(1 tbsp)'
-    optional: true
-  - group: 'Proteins B, marinated, cured, and roe'
+    choice: 'zuke'
+  - group: 'Marinated, cured, and roe'
     item: 'cold-smoked salmon (lox-style)'
     qty: 120
     unit: 'g'
-    note: '(4 oz; silky and salty, zero prep; the easiest raw-feeling option)'
-    optional: true
-  - group: 'Proteins B, marinated, cured, and roe'
+    note: '(4 oz; silky and salty, zero prep)'
+    choice: 'smoked-salmon'
+  - group: 'Marinated, cured, and roe'
     item: 'ikura (cured salmon roe)'
     qty: 60
     unit: 'g'
     note: '(2 oz; buy soy-marinated (shoyu-ikura) or salt-cured; bursting, briny, a luxury topping)'
-    optional: true
+    choice: 'ikura'
 
-  - group: 'Proteins C, cooked seafood'
+  - group: 'Cooked seafood'
     item: 'large shrimp, peeled and deveined'
     slug: 'shrimp'
     qty: 150
     unit: 'g'
     note: '(about 10 shrimp, 26/30 count)'
-    optional: true
-  - group: 'Proteins C, cooked seafood'
+    choice: 'shrimp'
+  - group: 'Cooked seafood'
     item: 'kosher salt (for the shrimp poaching water)'
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
     note: '(1 tbsp Diamond Crystal per 1 L water)'
-    optional: true
-  - group: 'Proteins C, cooked seafood'
+    choice: 'shrimp'
+  - group: 'Cooked seafood'
     item: 'shrimp tempura'
+    recipe: 'recipes/shrimp-and-vegetable-tempura'
     qty: 8
     unit: 'each'
-    note: '(2 per person; fried from the shrimp tempura recipe right before eating)'
-    optional: true
-  - group: 'Proteins C, cooked seafood'
+    note: '(2 per person; fried from the tempura recipe right before eating)'
+    choice: 'shrimp-tempura'
+  - group: 'Cooked seafood'
     item: 'cooked crab meat (lump blue crab or Dungeness)'
     qty: 150
     unit: 'g'
     note: '(5 oz; picked over for shell)'
-    optional: true
-  - group: 'Proteins C, cooked seafood'
+    choice: 'crab'
+  - group: 'Cooked seafood'
+    item: 'Kewpie mayonnaise (for the crab)'
+    slug: 'mayonnaise'
+    qty: 30
+    unit: 'g'
+    note: '(2 tbsp)'
+    choice: 'crab'
+  - group: 'Cooked seafood'
     item: 'salmon skin'
     qty: 100
     unit: 'g'
     note: '(skin from about a 500 g fillet; many fishmongers will give it to you if you ask)'
-    optional: true
-  - group: 'Proteins C, cooked seafood'
+    choice: 'salmon-skin'
+  - group: 'Cooked seafood'
     item: 'kosher salt (for the salmon skin)'
     slug: 'kosher-salt'
     qty: 1
     unit: 'g'
     note: '(¼ tsp Diamond Crystal)'
-    optional: true
-  - group: 'Proteins C, cooked seafood'
+    choice: 'salmon-skin'
+  - group: 'Cooked seafood'
     item: 'unagi kabayaki (grilled eel), with its sauce packet'
     qty: 150
     unit: 'g'
     note: '(1 frozen vacuum pack from a Japanese or Korean market; sweet, smoky, rich)'
-    optional: true
+    choice: 'unagi'
 
-  - group: 'Proteins D, meat, egg, and tofu'
+  - group: 'Meat, egg, and tofu'
     item: 'boneless, skin-on chicken thighs'
     slug: 'chicken-thigh'
     qty: 300
     unit: 'g'
-    note: '(2 thighs; for teriyaki chicken)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    note: '(2 thighs)'
+    choice: 'chicken'
+  - group: 'Meat, egg, and tofu'
     item: 'kosher salt (for the chicken)'
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
     note: '(½ tsp Diamond Crystal)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'chicken'
+  - group: 'Meat, egg, and tofu'
     item: 'neutral oil (for searing the chicken)'
     slug: 'neutral-oil'
     qty: 5
     unit: 'ml'
     note: '(1 tsp)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'chicken'
+  - group: 'Meat, egg, and tofu'
     item: 'Japanese soy sauce (for the teriyaki glaze)'
     qty: 30
     unit: 'ml'
     note: '(2 tbsp)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'chicken'
+  - group: 'Meat, egg, and tofu'
     item: 'mirin (for the teriyaki glaze)'
     slug: 'mirin'
     qty: 30
     unit: 'ml'
     note: '(2 tbsp)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'chicken'
+  - group: 'Meat, egg, and tofu'
     item: 'sake (for the teriyaki glaze)'
     slug: 'sake'
     qty: 30
     unit: 'ml'
     note: '(2 tbsp)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'chicken'
+  - group: 'Meat, egg, and tofu'
     item: 'granulated sugar (for the teriyaki glaze)'
     slug: 'granulated-sugar'
     qty: 10
     unit: 'g'
     note: '(2½ tsp)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'chicken'
+  - group: 'Meat, egg, and tofu'
     item: 'tamagoyaki (Japanese rolled omelet)'
     qty: 150
     unit: 'g'
     note: '(1 small omelet; also sold ready-made at Japanese markets)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'tamago'
+  - group: 'Meat, egg, and tofu'
     item: 'inari age (seasoned fried tofu pouches)'
     slug: 'aburaage'
     qty: 80
     unit: 'g'
     note: '(about 6 pouches, canned or refrigerated; sweet-savory and juicy)'
-    optional: true
-  - group: 'Proteins D, meat, egg, and tofu'
+    choice: 'inari'
+  - group: 'Meat, egg, and tofu'
     item: 'natto, with its sauce and mustard packets'
     qty: 90
     unit: 'g'
-    note: '(2 small tubs; fermented soybeans, sticky and funky; a traditional Japanese favorite)'
-    optional: true
+    note: '(2 small tubs; fermented soybeans, sticky and funky)'
+    choice: 'natto'
+  - group: 'Meat, egg, and tofu'
+    item: 'scallion (for the natto)'
+    slug: 'scallion'
+    qty: 5
+    unit: 'g'
+    note: '(1 scallion)'
+    choice: 'natto'
 
-  - group: 'Vegetables, herbs, and fruit (pick 3 or 4)'
+  - group: 'Vegetables, herbs, and fruit'
     item: 'Japanese or Persian cucumber'
     slug: 'cucumber'
     qty: 150
     unit: 'g'
     note: '(1 Japanese or 2 Persian; thin skin, few seeds)'
-    optional: true
-  - group: 'Vegetables, herbs, and fruit (pick 3 or 4)'
+    choice: 'cucumber'
+  - group: 'Vegetables, herbs, and fruit'
     item: 'ripe Hass avocado'
     slug: 'avocado'
     qty: 300
     unit: 'g'
     note: '(2 medium; yields to gentle pressure)'
-    optional: true
-  - group: 'Vegetables, herbs, and fruit (pick 3 or 4)'
-    item: 'lemon'
+    choice: 'avocado'
+  - group: 'Vegetables, herbs, and fruit'
+    item: 'lemon (juice, to keep the avocado green)'
     slug: 'lemon'
-    qty: 1
+    qty: 0.5
     unit: 'each'
-    note: '(half to keep avocado green, half cut into wedges for salmon and yellowtail)'
-    optional: true
-  - group: 'Vegetables, herbs, and fruit (pick 3 or 4)'
+    choice: 'avocado'
+  - group: 'Vegetables, herbs, and fruit'
+    item: 'lemon (wedges, for salmon and yellowtail)'
+    slug: 'lemon'
+    qty: 0.5
+    unit: 'each'
+    choice: 'lemon'
+  - group: 'Vegetables, herbs, and fruit'
     item: 'scallions'
     slug: 'scallion'
     qty: 30
     unit: 'g'
     note: '(3 or 4 scallions)'
-    optional: true
-  - group: 'Vegetables, herbs, and fruit (pick 3 or 4)'
+    choice: 'scallion'
+  - group: 'Vegetables, herbs, and fruit'
     item: 'shiso leaves'
     qty: 10
     unit: 'each'
     note: '(green perilla; minty, citrusy, the classic sushi herb; at Japanese and Korean markets)'
-    optional: true
-  - group: 'Vegetables, herbs, and fruit (pick 3 or 4)'
+    choice: 'shiso'
+  - group: 'Vegetables, herbs, and fruit'
     item: 'kaiware (daikon radish sprouts)'
     qty: 50
     unit: 'g'
     note: '(1 clamshell; peppery crunch)'
-    optional: true
-  - group: 'Vegetables, herbs, and fruit (pick 3 or 4)'
+    choice: 'kaiware'
+  - group: 'Vegetables, herbs, and fruit'
     item: 'ripe mango'
     slug: 'mango'
     qty: 150
     unit: 'g'
     note: '(1 small Ataulfo or half a large mango; American sushi-bar style)'
-    optional: true
+    choice: 'mango'
 
   - group: 'Sauces and toppings for the table'
     item: 'Japanese soy sauce (koikuchi shoyu)'
@@ -311,60 +431,107 @@ ingredients:
     unit: 'g'
     note: '(1 tbsp)'
   - group: 'Sauces and toppings for the table'
-    item: 'Kewpie mayonnaise'
-    slug: 'mayonnaise'
-    qty: 70
-    unit: 'g'
-    note: '(5 tbsp; 30 g for the crab, 20 g for spicy scallop, the rest for drizzling)'
-    optional: true
-  - group: 'Sauces and toppings for the table'
     item: 'spicy mayo (sriracha mayo)'
-    qty: 80
+    qty: 60
     unit: 'g'
-    note: '(⅓ cup; 20 g for spicy tuna, the rest for drizzling)'
-    optional: true
+    note: '(¼ cup; for drizzling)'
+    choice: 'spicy-mayo'
+  - group: 'Sauces and toppings for the table'
+    item: 'Kewpie mayonnaise (for drizzling)'
+    slug: 'mayonnaise'
+    qty: 20
+    unit: 'g'
+    note: '(1½ tbsp)'
+    choice: 'kewpie'
   - group: 'Sauces and toppings for the table'
     item: 'tobiko (flying fish roe)'
-    qty: 40
+    qty: 30
     unit: 'g'
-    note: '(3 tbsp; 10 g for spicy scallop, the rest for topping)'
-    optional: true
+    note: '(2 tbsp; salty, briny pop)'
+    choice: 'tobiko'
   - group: 'Sauces and toppings for the table'
     item: 'furikake'
     qty: 10
     unit: 'g'
     note: '(1 tbsp)'
-    optional: true
+    choice: 'furikake'
 
 steps:
-  - text: 'Make the rice first. Start 1000 g of sushi rice about 80 minutes before you plan to eat (see the sushi rice recipe). Once it is seasoned and fanned to body temperature, keep it covered with a damp towel on the counter. Everything below happens while it soaks and cooks.'
+  - text: 'Make the rice first. Start 1000 g of sushi rice about 80 minutes before you plan to eat, following the sushi rice recipe. Once it is seasoned and fanned to body temperature, keep it covered with a damp towel on the counter. Do all the prep below while it soaks and cooks.'
+    recipe: 'recipes/sushi-rice'
     time_min: 80
-  - text: 'Cut the raw fish. Keep the fish in the fridge until the moment you cut it. Pat the 150 g tuna, 150 g salmon, and 150 g yellowtail (whichever you chose) dry with paper towels. With your sharpest, longest knife, cut each into batons about 1 cm / ½ in square and 8 cm / 3 in long, using one long drawing stroke per cut instead of sawing; sawing tears the muscle and leaves ragged, mushy edges. Lay the batons on a chilled plate, cover, and refrigerate.'
-    time_min: 10
-  - text: 'Prepare the scallops. Peel the small, tough side muscle off each of the 150 g scallops (it feels like a rubbery tab on the edge). Either slice each scallop horizontally into 3 coins for laying flat in the roll, or chop coarsely for spicy scallop: fold the chopped scallops with 20 g Kewpie mayonnaise and 10 g tobiko. Cover and refrigerate.'
-    time_min: 4
-  - text: 'Optional spicy tuna. Finely chop 75 g of the tuna batons and fold with 20 g spicy mayo and 5 g sliced scallion. Taste and add a few drops of soy if it needs more salt. Cover and refrigerate.'
-    time_min: 3
-  - text: 'Optional zuke (soy-marinated tuna or salmon). Bring the 15 ml mirin and 15 ml sake to a boil in a small pan for 30 seconds to cook off the alcohol, take off the heat, and stir in the 30 ml soy sauce. Cool completely (set the pan in a bowl of ice water to speed it up). Lay up to 150 g tuna or salmon batons in a shallow dish, pour the marinade over, and marinate 10 minutes, turning once. No longer: the salt starts curing the surface firm and dark. Lift out, pat dry, and refrigerate.'
-    time_min: 15
-  - text: 'Cured fish and roe. Tear the 120 g smoked salmon into strips about 2 cm / ¾ in wide. Keep the 60 g ikura in its container in the fridge and set it out with a small spoon at serving time.'
-    time_min: 2
-  - text: 'Poach the shrimp. Bring 1 L water and the 10 g kosher salt to a boil, add the 150 g shrimp, and immediately turn off the heat. Leave 3 minutes, until the shrimp are just opaque and curled into a loose C (a tight O means overcooked). Transfer to a bowl of ice water for 2 minutes, drain, pat dry, and halve each shrimp lengthwise.'
-    time_min: 6
   - text: 'Crisp the salmon skin (can be done 2 hours ahead). Heat the oven to 200 °C / 400 °F. Scrape off any flesh or scales left on the 100 g salmon skin with the back of a knife and pat it very dry. Lay it flat on a parchment-lined sheet pan, sprinkle with the 1 g kosher salt, cover with a second sheet of parchment and a second sheet pan to keep it flat, and bake 15 minutes, until golden and rigid. Cool on a rack (it crisps further as it cools), then cut into strips 1 cm / ½ in wide.'
     time_min: 18
-  - text: 'Warm the unagi. Heat the broiler. Lay the 150 g eel skin side down on foil, brush with half its sauce packet, and broil 2 minutes, until the sauce bubbles and the edges just char. Brush with the rest of the sauce and cut across into strips 1 cm / ½ in wide. Serve warm.'
-    time_min: 5
-  - text: 'Teriyaki chicken. Pat the 300 g chicken thighs dry and season with the 2 g kosher salt. Put them skin side down in a cold skillet with the 5 ml neutral oil, set over medium heat, and cook 8 minutes, pressing them flat with a spatula, until the skin is deep golden and crisp and most of the fat has rendered. Flip and cook 3 minutes more, until cooked through (80 °C / 175 °F on an instant-read thermometer). Pour off the fat, then add the 30 ml soy sauce, 30 ml mirin, 30 ml sake, and 10 g sugar. Simmer, turning the chicken, about 2 minutes, until the glaze is syrupy and coats the meat. Rest 5 minutes, then slice into strips 1 cm / ½ in wide.'
+    choice: 'salmon-skin'
+  - text: 'Teriyaki chicken (can be done 2 hours ahead). Pat the 300 g chicken thighs dry and season with the 2 g kosher salt. Put them skin side down in a cold skillet with the 5 ml neutral oil, set over medium heat, and cook 8 minutes, pressing them flat with a spatula, until the skin is deep golden and crisp and most of the fat has rendered. Flip and cook 3 minutes more, until cooked through (80 °C / 175 °F on an instant-read thermometer). Pour off the fat, then add the 30 ml soy sauce, 30 ml mirin, 30 ml sake, and 10 g sugar. Simmer, turning the chicken, about 2 minutes, until the glaze is syrupy and coats the meat. Rest 5 minutes, then slice into strips 1 cm / ½ in wide.'
     time_min: 20
-  - text: 'Prepare the remaining proteins. Fold the 150 g crab meat with 30 g Kewpie mayonnaise; it should be bound, not wet. Cut the 150 g tamagoyaki into batons about 1 cm / ½ in square. Gently squeeze the 80 g inari age to press out excess syrup and slice into strips 1 cm / ½ in wide. For natto, open the 90 g tubs, add the sauce and mustard packets, and stir vigorously with chopsticks for 30 seconds until foamy and stringy, then fold in 5 g sliced scallion.'
-    time_min: 6
-  - text: 'Prep the vegetables. Halve the 150 g cucumber lengthwise, scoop out any seeds with a spoon (seeds weep water onto the nori), and cut into 8 cm / 3 in matchsticks. Halve, pit, and peel the 300 g avocado, slice it 5 mm / ¼ in thick, and squeeze the juice of half the lemon over it; cut the other half of the 1 lemon into small wedges. Slice the 30 g scallions thinly on a bias. Rinse and pat dry the 10 shiso leaves. Trim the roots off the 50 g kaiware. Peel the 150 g mango and cut into batons.'
-    time_min: 12
-  - text: 'Set the table. Arrange the fish (straight from the fridge), cooked proteins, and vegetables on platters. Pour the 80 ml soy sauce into small dipping dishes and set out the 10 g wasabi, 60 g gari, 10 g sesame seeds, remaining Kewpie and spicy mayo, 40 g tobiko, and 10 g furikake. Mix the 120 ml water and 15 ml rice vinegar in a small bowl for wetting fingertips (tezu). Bring the rice to the table with a paddle.'
-    time_min: 5
-  - text: 'Optional shrimp tempura, fried last. Once the table is set and everyone has started rolling, fry the 8 shrimp tempura following the shrimp tempura recipe and bring them to the table straight from the oil. Tempura goes soft within about 10 minutes, so it is the one protein you cannot make ahead.'
+    choice: 'chicken'
+  - text: 'Zuke marinade. Bring the 15 ml mirin and 15 ml sake to a boil in a small pan for 30 seconds to cook off the alcohol, take off the heat, and stir in the 30 ml soy sauce. Cool completely (set the pan in a bowl of ice water to speed it up). The fish goes in later, after cutting.'
     time_min: 10
+    choice: 'zuke'
+  - text: 'Poach the shrimp. Bring 1 L water and the 10 g kosher salt to a boil, add the 150 g shrimp, and immediately turn off the heat. Leave 3 minutes, until the shrimp are just opaque and curled into a loose C (a tight O means overcooked). Transfer to a bowl of ice water for 2 minutes, drain, pat dry, and halve each shrimp lengthwise.'
+    time_min: 6
+    choice: 'shrimp'
+  - text: 'Crab. Fold the 150 g crab meat with the 30 g Kewpie mayonnaise; it should be bound, not wet. Cover and refrigerate.'
+    time_min: 2
+    choice: 'crab'
+  - text: 'Tamagoyaki. Cut the 150 g tamagoyaki into batons about 1 cm / ½ in square.'
+    time_min: 2
+    choice: 'tamago'
+  - text: 'Inari. Gently squeeze the 80 g inari age to press out excess syrup and slice into strips 1 cm / ½ in wide.'
+    time_min: 2
+    choice: 'inari'
+  - text: 'Cucumber. Halve the 150 g cucumber lengthwise, scoop out any seeds with a spoon (seeds weep water onto the nori), and cut into matchsticks 8 cm / 3 in long.'
+    time_min: 3
+    choice: 'cucumber'
+  - text: 'Avocado. Halve, pit, and peel the 300 g avocado, slice it 5 mm / ¼ in thick, and squeeze the juice of ½ lemon over it to slow browning.'
+    time_min: 3
+    choice: 'avocado'
+  - text: 'Lemon. Cut ½ lemon into small wedges for squeezing over salmon and yellowtail.'
+    time_min: 1
+    choice: 'lemon'
+  - text: 'Scallions. Slice the 30 g scallions thinly on a bias.'
+    time_min: 2
+    choice: 'scallion'
+  - text: 'Shiso. Rinse the 10 shiso leaves and pat them dry; leave them whole to lay under the filling.'
+    time_min: 1
+    choice: 'shiso'
+  - text: 'Radish sprouts. Trim the roots off the 50 g kaiware and rinse.'
+    time_min: 1
+    choice: 'kaiware'
+  - text: 'Mango. Peel the 150 g mango and cut into batons about 1 cm / ½ in square.'
+    time_min: 3
+    choice: 'mango'
+  - text: 'Cut the raw fish last. Keep it in the fridge until the moment you cut it. Pat the 150 g pieces of fish dry with paper towels (tuna, salmon, yellowtail, and the tuna for zuke, whichever you picked). With your sharpest, longest knife, cut each into batons about 1 cm / ½ in square and 8 cm / 3 in long, using one long drawing stroke per cut instead of sawing; sawing tears the muscle and leaves ragged, mushy edges. Lay the batons on a chilled plate, cover, and refrigerate.'
+    time_min: 10
+    choice: ['tuna', 'salmon', 'yellowtail', 'zuke']
+  - text: 'Marinate the zuke. Lay the 150 g tuna batons for zuke in a shallow dish, pour the cooled marinade over, and marinate 10 minutes, turning once. No longer: the salt starts curing the surface firm and dark. Lift out, pat dry, and refrigerate.'
+    time_min: 10
+    choice: 'zuke'
+  - text: 'Spicy tuna. Finely chop the 75 g tuna for spicy tuna and fold with the 20 g spicy mayo and the 5 g sliced scallion. Taste and add a few drops of soy if it needs more salt. Cover and refrigerate.'
+    time_min: 3
+    choice: 'spicy-tuna'
+  - text: 'Scallops. Peel the small, tough side muscle off each of the 150 g scallops (it feels like a rubbery tab on the edge). Slice half of them horizontally into 3 coins each for laying flat in a roll. Chop the rest coarsely and fold with the 20 g Kewpie mayonnaise and 10 g tobiko for spicy scallop. Cover and refrigerate.'
+    time_min: 4
+    choice: 'scallops'
+  - text: 'Smoked salmon. Tear the 120 g smoked salmon into strips about 2 cm / ¾ in wide and keep cold.'
+    time_min: 2
+    choice: 'smoked-salmon'
+  - text: 'Ikura. Keep the 60 g ikura in its container in the fridge and set it out with a small spoon at serving time.'
+    time_min: 1
+    choice: 'ikura'
+  - text: 'Natto. Open the 90 g natto, add the sauce and mustard packets, and stir vigorously with chopsticks for 30 seconds until foamy and stringy, then fold in the 5 g sliced scallion.'
+    time_min: 1
+    choice: 'natto'
+  - text: 'Warm the unagi just before serving. Heat the broiler. Lay the 150 g eel skin side down on foil, brush with half its sauce packet, and broil 2 minutes, until the sauce bubbles and the edges just char. Brush with the rest of the sauce and cut across into strips 1 cm / ½ in wide. Serve warm.'
+    time_min: 5
+    choice: 'unagi'
+  - text: 'Set the table. Arrange the fillings on platters, bringing raw fish straight from the fridge. Pour the 80 ml soy sauce into small dipping dishes and set out the 10 g wasabi, 60 g gari, 10 g sesame seeds, and whichever sauces and toppings you picked (spicy mayo, Kewpie, tobiko, furikake). Mix the 120 ml water and 15 ml rice vinegar in a small bowl for wetting fingertips (tezu). Bring the rice to the table with a paddle.'
+    time_min: 5
+  - text: 'Shrimp tempura, fried last. Once the table is set and everyone has started rolling, fry the 8 shrimp tempura following the tempura recipe and bring them to the table straight from the oil. Tempura goes soft within about 10 minutes, so it is the one filling you cannot make ahead.'
+    recipe: 'recipes/shrimp-and-vegetable-tempura'
+    time_min: 10
+    choice: 'shrimp-tempura'
   - text: 'Cut the nori at the table. Cut each of the 10 nori sheets in half, parallel to the longer side, to give 20 rectangles about 10 × 19 cm / 4 × 7½ in. Keep the cut halves in the bag. If the nori feels soft rather than snapping, pass each sheet quickly over a gas flame or an electric burner on high for 5 seconds per side until it shifts to a brighter green and crisps.'
     time_min: 2
   - text: 'Roll a hand roll. Hold a nori half in a dry left hand, rough side up, long side running left to right. Dip your right fingertips in the tezu, then take about 50 g / a golf-ball-size portion of rice and spread it lightly over the left third of the nori, a thin layer you can see nori through in places; do not press it into a paste. Optional: dab a little wasabi along the rice. Lay 2 to 4 fillings diagonally across the rice, from the top-left corner down toward the bottom-center, letting the ends stick out of the top. Fold the bottom-left corner of the nori up over the fillings toward the top-center to start a cone, then keep rolling the cone to the right until the nori wraps around. Press a crushed grain of rice under the loose edge to seal.'
@@ -377,11 +544,11 @@ equipment: []
 modifications:
   - for: 'no raw fish'
     to: 'fully cooked spread'
-    how: 'Skip groups A and B and build the whole spread from cooked proteins: shrimp, shrimp tempura, crab, salmon skin, unagi, teriyaki chicken, tamagoyaki, and inari age. To add a seared fish, cut a 150 g skin-on salmon fillet into 2 cm / ¾ in strips, season with 1 g kosher salt, and sear in 5 ml neutral oil in a very hot skillet for 45 seconds per side so it stays rosy in the middle (or cook it through for pregnant or immunocompromised guests). Note that cold-smoked salmon and ikura are cured, not cooked.'
+    how: 'Start from the Kid-friendly or All cooked seafood quick pick, or pick only from Cooked seafood and Meat, egg, and tofu. To add a seared fish, cut a 150 g skin-on salmon fillet into 2 cm / ¾ in strips, season with 1 g kosher salt, and sear in 5 ml neutral oil in a very hot skillet for 45 seconds per side so it stays rosy in the middle (or cook it through for pregnant or immunocompromised guests). Note that cold-smoked salmon and ikura are cured, not cooked.'
     kind: 'protein'
   - for: 'vegetarian'
     to: 'vegetable and egg hand rolls'
-    how: 'Use inari age, natto, and tamagoyaki (made with kombu-shiitake dashi to keep it vegetarian) as the proteins, with avocado, cucumber, shiso, kaiware, and mango, plus 150 g blanched asparagus spears or sliced pickled daikon (takuan) for crunch. Season with sesame, furikake made without bonito, and spicy mayo. Inari and natto are both vegan; check that the natto sauce packet is bonito-free if that matters.'
+    how: 'Start from the Vegetarian quick pick: inari age, natto, and tamagoyaki (made with kombu-shiitake dashi to keep it vegetarian) as the proteins, with avocado, cucumber, shiso, kaiware, and mango. Add 150 g blanched asparagus spears or sliced pickled daikon (takuan) for extra crunch. Skip the furikake unless it is made without bonito. Inari and natto are both vegan; check that the natto sauce packet is bonito-free if that matters.'
     kind: 'dietary'
   - for: 'format'
     to: 'chirashi bowls for leftovers or a smaller crowd'
@@ -533,9 +700,9 @@ notes: |
 
   Veggie: avocado, cucumber, shiso, mango, furikake. Proof that the rice and nori carry a lot.
 
-  Building a balanced spread. For 4 people, choose one or two proteins from at least two of the groups, so there is a mix of raw and cooked and of rich and lean. Some sets that work: tuna, salmon, and shrimp tempura (a classic sushi-bar spread); zuke tuna, scallop, and tamagoyaki (traditional); smoked salmon, crab, and teriyaki chicken (no raw fish, kid-friendly); unagi, salmon skin, and shrimp (all cooked seafood); inari, natto, and tamagoyaki (vegetarian).
+  Building a balanced spread. For 4 people, choose one or two proteins from at least two of the groups, so there is a mix of raw and cooked and of rich and lean. The quick picks in Build your spread are five tested sets: sushi-bar favorites, traditional Japanese, kid-friendly with no raw fish, all cooked seafood, and vegetarian.
 
-  Shopping math. For 4 people, plan on about 5 rolls each: 1000 g seasoned rice (one batch of the sushi rice recipe), 10 nori sheets, about 450 g of protein total across your three or four picks (use about half the listed quantity of each if you pick more than four), and three or four vegetables at the quantities listed. Heavy eaters, or a long, lingering dinner, call for 1.5 times the rice and nori.
+  Shopping math. For 4 people, plan on about 5 rolls each: 1000 g seasoned rice (one batch of the sushi rice recipe), 10 nori sheets, about 450 g of protein total across your three or four picks. The listed quantities assume about that many; if you pick five or more proteins, buy about half of each, and three or four vegetables at the quantities listed. Heavy eaters, or a long, lingering dinner, call for 1.5 times the rice and nori.
 
   Why roll at the table. Nori starts absorbing moisture from the rice the moment they touch and goes from crisp to chewy within a few minutes. Rolling and eating immediately is the whole point of temaki; pre-rolling a platter for later gives you soggy cones.
 ---

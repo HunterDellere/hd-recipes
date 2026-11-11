@@ -152,6 +152,44 @@ for (const pageFull of walkPages(PAGES)) {
         { fix: 'Either add fm.homemade_alternatives entries linking to recipes/<slug> pages, or note in fm.notes why a homemade version is not appropriate here.' });
     }
 
+    // Pick-your-own choices: every `choice:` key on an ingredient row or step
+    // must be declared in fm.choices, single-select groups need exactly one
+    // default, and preset keys must exist. A typo here silently hides a row.
+    {
+      const declared = new Set();
+      for (const g of ((fm.choices && fm.choices.groups) || [])) {
+        const opts = g.options || [];
+        for (const o of opts) {
+          if (!o || !o.key) { emit('ERROR', contentRel, `choices group "${g.label}" has an option without a key`, {}); continue; }
+          if (declared.has(String(o.key))) emit('ERROR', contentRel, `choices key "${o.key}" is declared twice`, {});
+          declared.add(String(o.key));
+        }
+        if (g.select === 'one' && opts.filter(o => o && o.default).length !== 1) {
+          emit('ERROR', contentRel, `choices group "${g.label}" is select: 'one' and needs exactly one default option`, {});
+        }
+      }
+      const keysOf = (v) => (v == null ? [] : (Array.isArray(v) ? v : [v]).map(String));
+      const used = [
+        ...(fm.ingredients || []).map((r, i) => ({ where: `ingredient "${r.item}"`, keys: keysOf(r.choice) })),
+        ...(fm.steps || []).map((st, i) => ({ where: `step ${i + 1}`, keys: keysOf(st.choice) })),
+        ...((fm.choices && fm.choices.presets) || []).map(p => ({ where: `preset "${p.label}"`, keys: keysOf(p.keys) })),
+      ];
+      for (const u of used) {
+        for (const k of u.keys) {
+          if (!declared.has(k)) emit('ERROR', contentRel, `${u.where} uses choice "${k}", which is not declared in choices.groups`, { fix: 'Fix the typo or add the option to fm.choices.groups[].options.' });
+        }
+      }
+    }
+
+    // `recipe:` links on ingredient rows and steps must resolve to a page.
+    for (const ref of [...(fm.ingredients || []).map(r => r.recipe), ...(fm.steps || []).map(st => st.recipe)]) {
+      if (!ref) continue;
+      const rel = String(ref).replace(/^pages\//, '').replace(/\.html$/, '');
+      if (!/^recipes\//.test(rel) || !fs.existsSync(path.join(ROOT, 'content', `${rel}.md`))) {
+        emit('ERROR', contentRel, `recipe link "${ref}" does not resolve to content/${rel}.md`, {});
+      }
+    }
+
     // Sanity-check: every homemade_alternatives entry must point to a recipe slug
     for (const h of (fm.homemade_alternatives || [])) {
       if (!h.recipe_slug) {

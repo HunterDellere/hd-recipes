@@ -146,8 +146,18 @@ export function computeRecipeNutrition(recipe, ingredientPagesBySlug, cache) {
   const addMissing = (ing, reason) => {
     missing.push({ name: ing.item || ing.slug || 'ingredient', slug: ing.slug || null, reason });
   };
+  // Recipes with pick-your-own `choices` are computed against the default
+  // selection, so the numbers match what the page shows before any toggling.
+  const defaultKeys = new Set();
+  for (const g of ((recipe.choices && recipe.choices.groups) || [])) {
+    for (const o of (g.options || [])) if (o && o.default) defaultKeys.add(String(o.key));
+  }
   for (const ing of (recipe.ingredients || [])) {
     if (ing.optional) continue;
+    if (ing.choice != null) {
+      const keys = (Array.isArray(ing.choice) ? ing.choice : [ing.choice]).map(String);
+      if (keys.length && !keys.some(k => defaultKeys.has(k))) continue;
+    }
     // Derived rows are display-only splits of a pack row — their grams are
     // already accounted for in the parent pack's qty. Skip to avoid double
     // counting.

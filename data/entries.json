@@ -130,6 +130,10 @@
         "optional": false
       },
       {
+        "item": "allulose",
+        "optional": false
+      },
+      {
         "item": "fine sea salt",
         "slug": "fine-sea-salt",
         "optional": false
@@ -157,7 +161,7 @@
     "type": "recipe",
     "category": "recipes",
     "title": "Temaki (hand rolls)",
-    "desc": "A make-your-own sushi night: a bowl of warm seasoned sushi rice, crisp half-sheets of nori, and a spread of fish, cooked proteins, vegetables, and sauces that everyone rolls into cones at the table. Pick three proteins and three or four vegetables from the menu below; the notes give tested combinations and the pairing logic so you can improvise.",
+    "desc": "A make-your-own sushi night: a bowl of warm seasoned sushi rice, crisp half-sheets of nori, and a spread of fish, cooked proteins, vegetables, and sauces that everyone rolls into cones at the table. Pick your fillings in the picker and the ingredients, shopping list, and method adapt to match; the notes give a protein guide, tested combinations, and the pairing logic so you can improvise.",
     "tags": [
       "japanese",
       "fish",
@@ -185,7 +189,7 @@
     ],
     "ingredients": [
       {
-        "item": "sushi rice, freshly made and held at body temperature",
+        "item": "sushi rice",
         "optional": false
       },
       {
@@ -206,152 +210,195 @@
       {
         "item": "tuna (yellowfin or bigeye), sashimi-grade",
         "slug": "tuna-loin",
-        "optional": true
+        "optional": false
+      },
+      {
+        "item": "tuna for spicy tuna, sashimi-grade",
+        "slug": "tuna-loin",
+        "optional": false
+      },
+      {
+        "item": "spicy mayo (for the spicy tuna)",
+        "optional": false
+      },
+      {
+        "item": "scallion (for the spicy tuna)",
+        "slug": "scallion",
+        "optional": false
       },
       {
         "item": "salmon, sashimi-grade",
-        "optional": true
+        "optional": false
       },
       {
         "item": "yellowtail (hamachi), sashimi-grade",
-        "optional": true
+        "optional": false
       },
       {
         "item": "sea scallops (hotate), sashimi-grade, dry-packed",
-        "optional": true
+        "optional": false
+      },
+      {
+        "item": "Kewpie mayonnaise (for spicy scallop)",
+        "slug": "mayonnaise",
+        "optional": false
+      },
+      {
+        "item": "tobiko (for spicy scallop)",
+        "optional": false
+      },
+      {
+        "item": "tuna for zuke, sashimi-grade",
+        "slug": "tuna-loin",
+        "optional": false
       },
       {
         "item": "Japanese soy sauce (for the zuke marinade)",
-        "optional": true
+        "optional": false
       },
       {
         "item": "mirin (for the zuke marinade)",
         "slug": "mirin",
-        "optional": true
+        "optional": false
       },
       {
         "item": "sake (for the zuke marinade)",
         "slug": "sake",
-        "optional": true
+        "optional": false
       },
       {
         "item": "cold-smoked salmon (lox-style)",
-        "optional": true
+        "optional": false
       },
       {
         "item": "ikura (cured salmon roe)",
-        "optional": true
+        "optional": false
       },
       {
         "item": "large shrimp, peeled and deveined",
         "slug": "shrimp",
-        "optional": true
+        "optional": false
       },
       {
         "item": "kosher salt (for the shrimp poaching water)",
         "slug": "kosher-salt",
-        "optional": true
+        "optional": false
       },
       {
         "item": "shrimp tempura",
-        "optional": true
+        "optional": false
       },
       {
         "item": "cooked crab meat (lump blue crab or Dungeness)",
-        "optional": true
+        "optional": false
+      },
+      {
+        "item": "Kewpie mayonnaise (for the crab)",
+        "slug": "mayonnaise",
+        "optional": false
       },
       {
         "item": "salmon skin",
-        "optional": true
+        "optional": false
       },
       {
         "item": "kosher salt (for the salmon skin)",
         "slug": "kosher-salt",
-        "optional": true
+        "optional": false
       },
       {
         "item": "unagi kabayaki (grilled eel), with its sauce packet",
-        "optional": true
+        "optional": false
       },
       {
         "item": "boneless, skin-on chicken thighs",
         "slug": "chicken-thigh",
-        "optional": true
+        "optional": false
       },
       {
         "item": "kosher salt (for the chicken)",
         "slug": "kosher-salt",
-        "optional": true
+        "optional": false
       },
       {
         "item": "neutral oil (for searing the chicken)",
         "slug": "neutral-oil",
-        "optional": true
+        "optional": false
       },
       {
         "item": "Japanese soy sauce (for the teriyaki glaze)",
-        "optional": true
+        "optional": false
       },
       {
         "item": "mirin (for the teriyaki glaze)",
         "slug": "mirin",
-        "optional": true
+        "optional": false
       },
       {
         "item": "sake (for the teriyaki glaze)",
         "slug": "sake",
-        "optional": true
+        "optional": false
       },
       {
         "item": "granulated sugar (for the teriyaki glaze)",
         "slug": "granulated-sugar",
-        "optional": true
+        "optional": false
       },
       {
         "item": "tamagoyaki (Japanese rolled omelet)",
-        "optional": true
+        "optional": false
       },
       {
         "item": "inari age (seasoned fried tofu pouches)",
         "slug": "aburaage",
-        "optional": true
+        "optional": false
       },
       {
         "item": "natto, with its sauce and mustard packets",
-        "optional": true
+        "optional": false
+      },
+      {
+        "item": "scallion (for the natto)",
+        "slug": "scallion",
+        "optional": false
       },
       {
         "item": "Japanese or Persian cucumber",
         "slug": "cucumber",
-        "optional": true
+        "optional": false
       },
       {
         "item": "ripe Hass avocado",
         "slug": "avocado",
-        "optional": true
+        "optional": false
       },
       {
-        "item": "lemon",
+        "item": "lemon (juice, to keep the avocado green)",
         "slug": "lemon",
-        "optional": true
+        "optional": false
+      },
+      {
+        "item": "lemon (wedges, for salmon and yellowtail)",
+        "slug": "lemon",
+        "optional": false
       },
       {
         "item": "scallions",
         "slug": "scallion",
-        "optional": true
+        "optional": false
       },
       {
         "item": "shiso leaves",
-        "optional": true
+        "optional": false
       },
       {
         "item": "kaiware (daikon radish sprouts)",
-        "optional": true
+        "optional": false
       },
       {
         "item": "ripe mango",
         "slug": "mango",
-        "optional": true
+        "optional": false
       },
       {
         "item": "Japanese soy sauce (koikuchi shoyu)",
@@ -371,21 +418,21 @@
         "optional": false
       },
       {
-        "item": "Kewpie mayonnaise",
-        "slug": "mayonnaise",
-        "optional": true
+        "item": "spicy mayo (sriracha mayo)",
+        "optional": false
       },
       {
-        "item": "spicy mayo (sriracha mayo)",
-        "optional": true
+        "item": "Kewpie mayonnaise (for drizzling)",
+        "slug": "mayonnaise",
+        "optional": false
       },
       {
         "item": "tobiko (flying fish roe)",
-        "optional": true
+        "optional": false
       },
       {
         "item": "furikake",
-        "optional": true
+        "optional": false
       }
     ],
     "techniques": [],

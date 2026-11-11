@@ -93,6 +93,73 @@ function prosifyWithHeadingAnchors(s) {
   });
 }
 
+// ── Recipe choices (pick-your-own options) ──────────────────────────────────
+// A recipe can declare `choices` (groups of options the cook toggles) and tag
+// ingredient rows and steps with `choice: <key>` or `choice: [keys]`. Tagged
+// rows and steps show only while one of their keys is selected; untagged ones
+// always show. recipe.js does the toggling; the build just emits the hooks.
+export function choiceKeys(v) {
+  if (v == null || v === '') return [];
+  return (Array.isArray(v) ? v : [v]).map(x => String(x).trim()).filter(Boolean);
+}
+function choiceAttr(v) {
+  const keys = choiceKeys(v);
+  return keys.length ? ` data-choice="${escapeHtml(keys.join(' '))}"` : '';
+}
+// The keys selected when the cook has not picked anything yet. Nutrition is
+// computed against this selection too, so the numbers match the default page.
+export function defaultChoiceKeys(fm) {
+  const out = new Set();
+  for (const g of ((fm.choices && fm.choices.groups) || [])) {
+    for (const o of (g.options || [])) if (o && o.default) out.add(String(o.key));
+  }
+  return out;
+}
+// Resolve a `recipe: 'recipes/<slug>'` reference on an ingredient row or step.
+function resolveRecipeRef(ref, entriesByPath) {
+  if (!ref || !entriesByPath) return null;
+  const s = String(ref).replace(/^pages\//, '').replace(/\.html$/, '');
+  return entriesByPath.get(`pages/${s}.html`) || null;
+}
+
+export function renderChoices(fm) {
+  const c = fm.choices;
+  if (!c || !Array.isArray(c.groups) || !c.groups.length) return '';
+  const heading = c.heading || 'Choose your options';
+  const intro = c.intro ? `<p class="choices-intro">${escapeHtml(c.intro)}</p>` : '';
+  const presets = (c.presets || []).filter(p => p && p.label && Array.isArray(p.keys));
+  const presetHtml = presets.length
+    ? `<div class="choices-presets">
+        <span class="choices-label">Quick picks</span>
+        ${presets.map(p => `<button type="button" class="choice-preset" data-preset="${escapeHtml(p.keys.join(' '))}"${p.note ? ` title="${escapeHtml(p.note)}"` : ''}>${escapeHtml(p.label)}</button>`).join('\n        ')}
+        <button type="button" class="choice-preset choice-preset-ghost" data-choices-all>Show everything</button>
+      </div>`
+    : '';
+  const groupsHtml = c.groups.map(g => {
+    const one = g.select === 'one';
+    const hint = g.hint ? ` <span class="choices-hint">${escapeHtml(g.hint)}</span>` : '';
+    const chips = (g.options || []).map(o => {
+      const on = !!o.default;
+      const note = o.note ? `<span class="choice-note">${escapeHtml(o.note)}</span>` : '';
+      return `<button type="button" class="choice-chip" data-choice-key="${escapeHtml(o.key)}"${on ? ' data-default="1"' : ''} aria-pressed="${on ? 'true' : 'false'}"><span class="choice-label">${escapeHtml(o.label || o.key)}</span>${note}</button>`;
+    }).join('');
+    return `
+      <div class="choices-group" data-select="${one ? 'one' : 'many'}" role="group" aria-label="${escapeHtml(g.label || '')}">
+        <h3 class="choices-group-head">${escapeHtml(g.label || '')}${hint}</h3>
+        <div class="choices-chips">${chips}</div>
+      </div>`;
+  }).join('');
+  return `
+    <span class="section-anchor" id="choose"></span>
+    <section class="recipe-choices" data-choices hidden>
+      <div class="section-head"><h2>${escapeHtml(heading)}</h2></div>
+      ${intro}
+      ${presetHtml}
+      ${groupsHtml}
+      <p class="choices-foot" data-choices-summary>The ingredients, shopping list, and method below show only what you picked.</p>
+    </section>`;
+}
+
 function relPath(fromPath, toPath) {
   const fromParts = fromPath.split('/').slice(0, -1);
   const toParts = toPath.split('/');
@@ -590,7 +657,7 @@ export function renderRecipeHero(fm, slug, category, opts = {}) {
     </header>`;
 }
 
-export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
+export function renderIngredientsTable(fm, currentPath, ingredientBySlug, entriesByPath) {
   if (!fm.ingredients || !fm.ingredients.length) return '';
 
   // Strip leading measurement-paren from a note when the parenthetical is
@@ -619,6 +686,11 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
     if (ing.slug && page) {
       const href = relPath(currentPath, page.path);
       label = `<a class="ing-link" href="${escapeHtml(href)}">${label}</a>`;
+    }
+    const recipeTarget = resolveRecipeRef(ing.recipe, entriesByPath);
+    if (recipeTarget) {
+      const href = relPath(currentPath, recipeTarget.path);
+      label = `<a class="ing-link ing-link-recipe" href="${escapeHtml(href)}">${escapeHtml(ing.item)}</a> <a class="ing-recipe-tag" href="${escapeHtml(href)}">see recipe</a>`;
     }
     // Density + imperial preference resolution order (most specific wins):
     //   1. Per-line override on the recipe ingredient row
@@ -661,7 +733,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
       : '';
     const idAttr = ing.id ? ` data-ing-id="${escapeHtml(ing.id)}"` : '';
 
-    const dataAttrs = `data-qty="${escapeHtml(qtyData)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${idAttr}${packAttrs}${deriveAttrs}` + (isScalable ? ' data-scalable="1"' : '');
+    const dataAttrs = `data-qty="${escapeHtml(qtyData)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${idAttr}${packAttrs}${deriveAttrs}${choiceAttr(ing.choice)}` + (isScalable ? ' data-scalable="1"' : '');
 
     // Pack rows render as "N × <pack label>" in both shop and mise views — a
     // can is always counted in cans, never in ml. recipe.js keeps the count
@@ -703,7 +775,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug) {
   // section order, not in cooking-phase order. Derived rows drop out — their
   // grams already roll up into the parent pack.
   const shopAggregates = aggregateForShop(classified.filter(r => r.role !== 'derived'));
-  const shopHtml = renderShopSections(shopAggregates, currentPath);
+  const shopHtml = renderShopSections(shopAggregates, currentPath, entriesByPath);
   const itemCount = shopAggregates.length;
 
   // Mise breakdown = plain + derived rows, grouped by phase. Hides packs that
@@ -845,7 +917,11 @@ function stripPrepClause(text) {
 function shopDisplayName(ing, page) {
   const fm = page && (page._fm || page.fm);
   if (fm && fm.title) return fm.title;
-  return stripPrepClause(String(ing.item || '')).trim();
+  // Purpose notes like "(for the zuke marinade)" describe one use; a merged
+  // shopping row covers every use, so drop them from the shopping name.
+  return stripPrepClause(String(ing.item || ''))
+    .replace(/\s*\((?:for|to)\b[^)]*\)/gi, '')
+    .trim();
 }
 
 function aggregateForShop(rows) {
@@ -868,6 +944,7 @@ function aggregateForShop(rows) {
         allOptional: true,
         section: sectionFor(r),
         contributors: [],
+        parts: [],
       };
       groups.set(key, g);
       order.push(g);
@@ -877,11 +954,15 @@ function aggregateForShop(rows) {
     else if (ing.qty) g.nonNumericQtys.push(String(ing.qty));
     if (!ing.optional) g.allOptional = false;
     g.contributors.push(r);
+    // Per-contributor quantities keyed by choice, so the client can re-total
+    // a merged row (e.g. soy for the glaze + soy for the table) when the cook
+    // deselects one of the options that needed it.
+    g.parts.push({ c: choiceKeys(ing.choice), q: q != null ? q : 0 });
   }
   return order;
 }
 
-function renderShopSections(aggregates, currentPath) {
+function renderShopSections(aggregates, currentPath, entriesByPath) {
   if (!aggregates.length) return '';
   const bySection = new Map();
   for (const g of aggregates) {
@@ -894,13 +975,13 @@ function renderShopSections(aggregates, currentPath) {
     if (!items || !items.length) continue;
     items.sort((a, b) => shopDisplayName(a.ing, a.page).localeCompare(shopDisplayName(b.ing, b.page)));
     const head = `<h3 class="ing-group-head ing-shop-section" data-shop-section="${escapeHtml(key)}">${escapeHtml(label)} <span class="ing-shop-section-count">${items.length}</span></h3>`;
-    const rows = items.map(g => renderShopAggregateRow(g, currentPath)).join('');
+    const rows = items.map(g => renderShopAggregateRow(g, currentPath, entriesByPath)).join('');
     out.push(`${head}<ol class="ing-list ing-list-shop-section">${rows}\n      </ol>`);
   }
   return out.join('\n');
 }
 
-function renderShopAggregateRow(g, currentPath) {
+function renderShopAggregateRow(g, currentPath, entriesByPath) {
   const ing = g.ing;
   const page = g.page;
   const role = g.role;
@@ -914,6 +995,14 @@ function renderShopAggregateRow(g, currentPath) {
     const href = relPath(currentPath, page.path);
     label = `<a class="ing-link" href="${escapeHtml(href)}">${label}</a>`;
   }
+  const recipeTarget = resolveRecipeRef(ing.recipe, entriesByPath);
+  if (recipeTarget) {
+    const href = relPath(currentPath, recipeTarget.path);
+    label = `<a class="ing-link ing-link-recipe" href="${escapeHtml(href)}">${escapeHtml(displayName)}</a> <a class="ing-recipe-tag" href="${escapeHtml(href)}">see recipe</a>`;
+  }
+  const choiceParts = (g.parts || []).some(p => p.c.length)
+    ? ` data-choice-parts="${escapeHtml(JSON.stringify(g.parts))}"`
+    : '';
 
   // Pull density + imperial pref from the first contributor's row (per-row
   // override beats the page default). All contributors share a slug so these
@@ -943,7 +1032,7 @@ function renderShopAggregateRow(g, currentPath) {
       (pack.size_g  != null ? ` data-pack-size-g="${pack.size_g}"`  : '') +
       (pack.size_label ? ` data-pack-label="${escapeHtml(pack.size_label)}"` : '')
     : '';
-  const dataAttrs = `data-qty="${escapeHtml(qtyData)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${packAttrs}` + (isScalable ? ' data-scalable="1"' : '');
+  const dataAttrs = `data-qty="${escapeHtml(qtyData)}" data-unit="${escapeHtml(unit)}"${densityAttr}${impPrefAttr}${packAttrs}${choiceParts}` + (isScalable ? ' data-scalable="1"' : '');
 
   let qtyCol;
   if (role === 'pack' && pack && (pack.size_ml || pack.size_g) && pack.size_label) {
@@ -967,7 +1056,7 @@ function renderShopAggregateRow(g, currentPath) {
         </li>`;
 }
 
-export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredientBySlug) {
+export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredientBySlug, entriesByPath) {
   if (!fm.steps || !fm.steps.length) return '';
   const relTo = relPrefixFor(currentPath);
   const stepImages = images && images.steps ? images.steps : {};
@@ -999,6 +1088,11 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
         // it in print and hides it on screen.
         body += ` <a class="step-tech" href="${escapeHtml(href)}"><span class="step-tech-prefix">Technique: </span>${escapeHtml(techTitle)}</a>`;
       }
+    }
+    const stepRecipe = resolveRecipeRef(step.recipe, entriesByPath);
+    if (stepRecipe) {
+      const href = relPath(currentPath, stepRecipe.path);
+      body += ` <a class="step-tech step-recipe" href="${escapeHtml(href)}"><span class="step-recipe-prefix">Recipe: </span>${escapeHtml(stepRecipe.title || step.recipe)}</a>`;
     }
     // The time pill doubles as a one-tap timer launcher when the duration is
     // a live cooking window (≤ 4 h). Anything longer is a marinade / overnight
@@ -1032,7 +1126,7 @@ export function renderSteps(fm, currentPath, techniqueBySlug, images, ingredient
     // step's duration without re-parsing the inner timer button.
     const timeAttr = step.time_min ? ` data-time-min="${Number(step.time_min)}"` : '';
     return `
-      <li class="step-item${imgHtml ? ' has-image' : ''}"${timeAttr}>
+      <li class="step-item${imgHtml ? ' has-image' : ''}"${timeAttr}${choiceAttr(step.choice)}>
         <span class="step-num">${stepNum}</span>
         <div class="step-body">${body}${time}</div>
         ${imgHtml}
@@ -1162,8 +1256,13 @@ export function renderBeforeYouStart(fm) {
 
 export function renderSubstitutions(fm, opts = {}) {
   if (!fm.substitutions || !fm.substitutions.length) return '';
+  // On recipe pages the note often carries a quantity ("use 540 ml water")
+  // that must follow the servings scaler like step prose does. Ingredient and
+  // equipment pages have no scaler, so their notes stay plain.
+  const scalable = !opts.context && opts.scaleQuantities;
+  const noteHtml = (t) => scalable ? wrapStepQuantities(t, fm, opts.ingredientBySlug, null) : escapeHtml(t);
   const items = fm.substitutions.map(s => `
-        <li><strong>${escapeHtml(s.for)}</strong> → ${escapeHtml(s.use)}${s.note ? ` <span class="sub-note">${escapeHtml(s.note)}</span>` : ''}</li>`).join('');
+        <li><strong>${escapeHtml(s.for)}</strong> → ${escapeHtml(s.use)}${s.note ? ` <span class="sub-note">${noteHtml(s.note)}</span>` : ''}</li>`).join('');
   const blurb = opts.context === 'ingredient'
     ? 'What to reach for when this ingredient is unavailable. Each row names the use case so the swap is judged in context.'
     : opts.context === 'equipment'
@@ -1180,7 +1279,7 @@ export function renderSubstitutions(fm, opts = {}) {
  * Modifications: pivots that change the dish's character (protein, regional,
  * dietary, texture). Cards with a kind chip + the technique change spelled out.
  */
-export function renderModifications(fm) {
+export function renderModifications(fm, ingredientBySlug) {
   if (!fm.modifications || !fm.modifications.length) return '';
   const KIND_LABEL = {
     regional: 'Regional',
@@ -1199,7 +1298,7 @@ export function renderModifications(fm) {
           ${chip}
           <span class="mod-arrow"><span class="mod-for">${escapeHtml(m.for)}</span><span class="mod-arrow-glyph" aria-hidden="true">→</span><span class="mod-to">${escapeHtml(m.to)}</span></span>
         </div>
-        <p class="mod-how">${escapeHtml(m.how)}</p>
+        <p class="mod-how">${wrapStepQuantities(m.how, fm, ingredientBySlug, null)}</p>
       </li>`;
   }).join('');
   return `
@@ -1317,10 +1416,13 @@ export function renderRecipeBody(fm, slug, category, opts) {
   const preludeHtml = renderBeforeYouStart(fm);
   if (preludeHtml) { sections.push(preludeHtml); sidebarLinks.push({ id: 'before-you-start', label: 'Before You Start' }); }
 
-  const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug);
+  const choicesHtml = renderChoices(fm);
+  if (choicesHtml) { sections.push(choicesHtml); sidebarLinks.push({ id: 'choose', label: (fm.choices && fm.choices.toc) || 'Choose' }); }
+
+  const ingHtml = renderIngredientsTable(fm, `pages/${category}/${slug}.html`, ingredientBySlug, entriesByPath);
   if (ingHtml) { sections.push(ingHtml); sidebarLinks.push({ id: 'ingredients', label: 'Ingredients' }); }
 
-  const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images, ingredientBySlug);
+  const stepsHtml = renderSteps(fm, `pages/${category}/${slug}.html`, techniqueBySlug, images, ingredientBySlug, entriesByPath);
   if (stepsHtml) { sections.push(stepsHtml); sidebarLinks.push({ id: 'execution', label: 'Method' }); }
 
   if (safetyHtml) { sections.push(safetyHtml); sidebarLinks.push({ id: 'safety', label: 'Safety' }); }
@@ -1330,10 +1432,10 @@ export function renderRecipeBody(fm, slug, category, opts) {
 
   // Modifications (pivots) come BEFORE substitutions (1:1 swaps): pivots are
   // higher-leverage and likelier what a returning cook is scanning for.
-  const modHtml = renderModifications(fm);
+  const modHtml = renderModifications(fm, ingredientBySlug);
   if (modHtml) { sections.push(modHtml); sidebarLinks.push({ id: 'modifications', label: 'Modifications' }); }
 
-  const subHtml = renderSubstitutions(fm);
+  const subHtml = renderSubstitutions(fm, { scaleQuantities: true, ingredientBySlug });
   if (subHtml) { sections.push(subHtml); sidebarLinks.push({ id: 'substitutions', label: 'Substitutions' }); }
 
   const hmHtml = renderHomemadeAlternatives(fm, `pages/${category}/${slug}.html`, entriesByPath);

@@ -3621,6 +3621,9 @@ body.cmd-palette-open { overflow: hidden; }
    can't do that reliably. */
 
 @media print {
+  /* Choice picker is an on-screen control; the card prints the current selection. */
+  .recipe-choices { display: none !important; }
+  .ing-recipe-tag { display: none; }
 
   /* ── Page box ──────────────────────────────────────────────────────── */
   /* A folio in the outer corner. Page 2 of a printed recipe is otherwise
@@ -5555,3 +5558,78 @@ input, textarea { caret-color: var(--accent); }
 /* 7. Section heads: the rule beneath is enough; drop the accent dash. */
 .section-head::after { display: none; }
 .recipe-prelude { border: 1px solid var(--rule); }
+
+/* ── Recipe choices (pick-your-own picker) ─────────────────────────
+   Rendered hidden by the build and revealed by recipe.js, so a no-JS
+   reader sees every option. Rows and steps the cook deselects get the
+   [hidden] attribute; author display rules would otherwise override it. */
+.recipe-ingredients [hidden],
+.recipe-steps [hidden],
+.recipe-choices[hidden] { display: none !important; }
+
+.recipe-choices {
+  border: 1px solid var(--rule);
+  border-radius: var(--r-3);
+  background: var(--bg-elev);
+  padding: var(--s-4);
+  margin: var(--s-5) 0;
+}
+.recipe-choices .section-head { margin-top: 0; }
+.choices-intro { color: var(--ink-soft); font-size: 15px; line-height: 1.55; margin: 0 0 var(--s-3); max-width: 62ch; }
+.choices-presets {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2);
+  padding-bottom: var(--s-3); margin-bottom: var(--s-3);
+  border-bottom: 1px solid var(--rule-soft);
+}
+.choices-label {
+  font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint);
+  margin-right: var(--s-1);
+}
+.choice-preset {
+  font-family: var(--font-sans); font-size: var(--t-small);
+  background: var(--accent-soft); color: var(--accent-deep);
+  border: 1px solid transparent; border-radius: 999px;
+  padding: 6px 12px; cursor: pointer;
+  transition: border-color var(--d-fast), background var(--d-fast);
+}
+.choice-preset:hover { border-color: var(--accent); }
+.choice-preset[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.choice-preset-ghost { background: transparent; color: var(--ink-soft); border-color: var(--rule); }
+.choices-group { margin-top: var(--s-3); }
+.choices-group-head {
+  font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+  color: var(--ink); margin: 0 0 var(--s-2);
+}
+.choices-hint { font-weight: 400; color: var(--ink-faint); margin-left: .35em; }
+.choices-chips { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.choice-chip {
+  display: inline-flex; flex-direction: column; align-items: flex-start;
+  font-family: var(--font-sans); font-size: var(--t-small); text-align: left;
+  background: var(--bg); color: var(--ink-soft);
+  border: 1px solid var(--rule); border-radius: var(--r-2);
+  padding: 7px 12px; cursor: pointer; min-height: 40px;
+  transition: border-color var(--d-fast), background var(--d-fast), color var(--d-fast);
+}
+.choice-chip:hover { border-color: var(--ink-faint); }
+.choice-chip[aria-pressed="true"] {
+  background: var(--accent-soft); color: var(--ink);
+  border-color: var(--accent);
+}
+.choice-chip[aria-pressed="true"] .choice-label::before { content: '✓ '; color: var(--accent); }
+.choice-note { font-size: 12px; color: var(--ink-faint); margin-top: 2px; }
+.choices-foot { font-size: 13px; color: var(--ink-faint); margin: var(--s-3) 0 0; }
+
+/* Ingredient rows and steps that point at another recipe (sushi rice for
+   hand rolls): a visible "see recipe" tag so the link is not mistaken for
+   an ordinary ingredient crosslink. */
+.ing-recipe-tag {
+  display: inline-block; margin-left: .4em;
+  font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  color: var(--accent); border: 1px solid currentColor; border-radius: 999px;
+  padding: 0 7px; line-height: 18px; vertical-align: 1px;
+}
+.ing-recipe-tag:hover { background: var(--accent-soft); text-decoration: none; }
+.step-recipe { color: var(--accent); border-bottom-color: var(--accent); }
+.step-recipe-prefix { font-weight: 600; }
