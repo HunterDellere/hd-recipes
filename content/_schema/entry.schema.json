@@ -103,6 +103,8 @@
               "size_label": { "type": "string" }
             }
           },
+          "choice": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }], "description": "Pick-your-own: show this row only while one of these keys (declared in fm.choices) is selected." },
+          "recipe": { "type": "string", "description": "Recipe path like 'recipes/sushi-rice' when this row is made from another recipe. Renders the row as a link with a 'see recipe' tag." },
           "derive_from": { "type": "string", "description": "Marks this row as a derived split of another ingredient row (referenced by its id). Derived rows show only in the per-phase mise breakdown — their grams come out of the parent pack and are not double-counted in shopping list or nutrition." }
         }
       }
@@ -116,6 +118,8 @@
           "text": { "type": "string" },
           "technique": { "type": "string", "description": "Optional techniques/<slug>.md to crosslink" },
           "time_min": { "type": "integer" },
+          "choice": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }], "description": "Pick-your-own: show this step only while one of these keys (declared in fm.choices) is selected." },
+          "recipe": { "type": "string", "description": "Recipe path like 'recipes/sushi-rice' for a step carried out by following another recipe. Renders a 'Recipe:' link chip." },
           "image": { "type": "string" }
         }
       }
@@ -123,6 +127,52 @@
     "techniques": { "type": "array", "items": { "type": "string" }, "description": "Slugs in techniques/" },
     "equipment": { "type": "array", "items": { "type": "string" }, "description": "Slugs in equipment/" },
     "notes": { "type": "string" },
+    "choices": {
+      "type": "object",
+      "description": "Pick-your-own options. Renders a picker of toggle chips above the ingredients; ingredient rows and steps tagged with `choice` show only while one of their keys is selected, and merged shopping rows re-total. Nutrition uses the default selection.",
+      "properties": {
+        "heading": { "type": "string" },
+        "intro": { "type": "string" },
+        "toc": { "type": "string", "description": "Sidebar label. Defaults to 'Choose'." },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "options"],
+            "properties": {
+              "label": { "type": "string" },
+              "hint": { "type": "string" },
+              "select": { "type": "string", "enum": ["one", "many"], "description": "'one' = exactly one option (radio); 'many' = any number (default)." },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["key", "label"],
+                  "properties": {
+                    "key": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+                    "label": { "type": "string" },
+                    "note": { "type": "string" },
+                    "default": { "type": "boolean" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "presets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "keys"],
+            "properties": {
+              "label": { "type": "string" },
+              "note": { "type": "string" },
+              "keys": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
     "before_you_start": {
       "description": "Prep coordination and scheduling notes the cook needs BEFORE starting mise-en-place. Use for long-lead steps (steaming sticky rice, soaking beans 8 hours, chilling oil for spherification, proofing dough overnight) and parallel-track instructions (start the rice now so it's done when the meatballs are seared). Renders as a callout above mise. Accepts a single paragraph string OR an array of bullet strings.",
       "oneOf": [

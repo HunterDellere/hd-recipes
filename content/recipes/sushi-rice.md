@@ -36,6 +36,17 @@ safety_notes:
     ref: 'safety/cross-contamination-and-time#the-danger-zone-40-f-to-140-f-4-c-to-60-c'
     why: 'Cooked rice is a classic Bacillus cereus risk in the danger zone. The vinegar seasoning drops the pH toward 4.2 to 4.6, which is why sushi shops hold rice at room temperature, but a home cook cannot verify pH, so treat the 4-hour window as a hard limit and discard rice that has sat out longer.'
 
+choices:
+  heading: 'Sweetener'
+  toc: 'Sweetener'
+  intro: 'Sugar is traditional. The sugar substitute option swaps in allulose, which dissolves, glosses, and tastes like sugar without counting as added sugar. The ingredients and steps update to match.'
+  groups:
+    - label: 'Sweeten the seasoning with'
+      select: 'one'
+      options:
+        - { key: 'sugar', label: 'Sugar', note: 'traditional', default: true }
+        - { key: 'substitute', label: 'Sugar substitute', note: 'allulose or a monk fruit blend' }
+
 ingredients:
   - group: 'Phase 1, rice'
     item: 'Japanese short-grain rice'
@@ -69,6 +80,13 @@ ingredients:
     qty: 30
     unit: 'g'
     note: '(2½ tbsp)'
+    choice: 'sugar'
+  - group: 'Phase 2, seasoning (awasezu)'
+    item: 'allulose'
+    qty: 40
+    unit: 'g'
+    note: '(3½ tbsp; allulose is about 70% as sweet as sugar, so it takes a little more. If you use a monk fruit and allulose blend labeled 1:1 with sugar, use 30 g instead.)'
+    choice: 'substitute'
   - group: 'Phase 2, seasoning (awasezu)'
     item: 'fine sea salt'
     slug: 'fine-sea-salt'
@@ -83,6 +101,10 @@ steps:
     time_min: 30
   - text: 'Make the awasezu while the rice soaks. Combine the 90 ml rice vinegar, 30 g sugar, and 9 g fine sea salt in a small saucepan and warm over low heat, stirring, just until the crystals dissolve, about 1 minute. Do not let it simmer: acetic acid is volatile, and boiled vinegar loses the bright top notes you are seasoning with. (A microwave works too: 20 seconds, then stir.) Set aside.'
     time_min: 2
+    choice: 'sugar'
+  - text: 'Make the awasezu while the rice soaks. Combine the 90 ml rice vinegar, 40 g allulose, and 9 g fine sea salt in a small saucepan and warm over low heat, stirring, just until the crystals dissolve, about 1 minute. Do not let it simmer: acetic acid is volatile, and boiled vinegar loses the bright top notes you are seasoning with. (A microwave works too: 20 seconds, then stir.) Taste a drop: it should read clearly sweet and sour together. Allulose blends vary; if it tastes thin, add 5 g / 1 tsp more and stir to dissolve. Set aside.'
+    time_min: 2
+    choice: 'substitute'
   - text: 'Cook. Pull out the 5 g kombu square just before cooking (cooked kombu goes slick and can turn the rice faintly bitter). Rice cooker: run the sushi or white-rice setting. Stovetop: cover the saucepan, bring to a boil over medium-high (you will hear it rattle and see steam jet from the lid, about 6 minutes), then drop to the lowest heat and cook 13 minutes without lifting the lid.'
     time_min: 20
   - text: 'Rest, covered and off heat, for 10 minutes. The rest lets residual steam finish the surface of each grain and equalizes moisture from the bottom of the pot to the top. Meanwhile, wipe the inside of a wide, shallow bowl (a wooden hangiri is ideal; a wide glass or ceramic bowl or a sheet pan works) with a towel dampened with water so the rice does not stick to it.'
@@ -116,7 +138,7 @@ modifications:
 substitutions:
   - for: 'rice vinegar, sugar, and salt'
     use: 'seasoned rice vinegar (sushi vinegar)'
-    note: 'Use 120 ml of bottled seasoned rice vinegar and skip the sugar and salt. Brands vary; most are sweeter than this recipe, so taste and add a pinch of fine sea salt if it reads candy-like.'
+    note: 'Use 120 ml of bottled seasoned rice vinegar and skip the sugar and salt. Brands vary; most are sweeter than this recipe, so taste and add a pinch of fine sea salt if it reads candy-like. Seasoned vinegar contains sugar, so it does not work with the sugar substitute option.'
   - for: 'Japanese short-grain rice'
     use: 'Calrose (California medium-grain)'
     note: 'Same japonica family and the most widely available option in US supermarkets. Slightly softer; use 540 ml water. Long-grain rice (jasmine, basmati) lacks the amylopectin to cohere and does not work.'
@@ -132,6 +154,8 @@ notes: |
   Why drier than table rice. The roughly 115 ml of awasezu is additional liquid that the grain surfaces absorb after cooking. Rice cooked at the normal table ratio and then seasoned turns soft and sticky. The 1.05 × volume water ratio here leaves room for the vinegar.
 
   The seasoning ratio. This awasezu is 20% of the raw rice weight in vinegar, with sugar at a third of the vinegar and salt at about a tenth. That is a middle-of-the-road home ratio: assertive enough to stand up to soy, nori, and rich fillings in hand rolls. Edo-style sushi shops run less sugar and more salt; many American restaurants run noticeably sweeter. Adjust the sugar to taste once you have made it once, but keep the salt; under-salted sushi rice is the most common reason homemade sushi tastes flat.
+
+  Sugar substitutes. Allulose is the best stand-in here. It is a rare sugar that tastes like sugar, dissolves completely in warm vinegar, and is hygroscopic like sucrose, so it gives the rice the same gloss and slight tack. It is about 70% as sweet, which is why the substitute option uses 40 g. Monk fruit sweeteners blended with allulose also work at their labeled 1:1 rate. Avoid erythritol-heavy blends: erythritol tastes cooling and can recrystallize into a faint grit as the rice cools. Pure stevia and pure monk fruit are too concentrated to measure accurately at this scale and leave a bitter finish.
 
   Why hot rice, warm seasoning. Starch granules on the surface of freshly cooked rice are swollen and open; they take up seasoning in the first minute and then begin to seal as they cool. Pour vinegar on cool rice and it slides off and pools. Warming the awasezu just enough to dissolve the sugar keeps the temperature of the rice up during seasoning.
 
