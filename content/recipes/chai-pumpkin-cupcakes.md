@@ -8,7 +8,7 @@ title: 'Chai pumpkin cupcakes'
 desc: 'Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream cheese.'
 metaDesc: 'Pumpkin cupcakes with chai-infused milk and pan-roasted pumpkin. Brown butter cream cheese frosting. Yields 12.'
 tags: ['cake', 'comfort', 'holiday']
-updated: '2026-04-26'
+updated: '2026-11-14'
 
 servings: 12
 yield_note: '12 cupcakes'
@@ -99,8 +99,8 @@ ingredients:
     unit: 'g'
     note: '(⅓ cup)'
   - group: 'Wet'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 5
     unit: 'g'
     note: '(1 tsp)'
@@ -160,7 +160,7 @@ steps:
   - text: 'Heat oven to 350°F (175°C). Line a 12-cup muffin tin.'
   - text: 'Whisk 190 g / 1½ cups all-purpose flour, 4 g / 1 tsp baking powder, 3 g / ½ tsp baking soda, and 3 g / ½ tsp fine sea salt in a medium bowl.'
     time_min: 1
-  - text: 'In a large bowl, whisk the cooled roasted pumpkin, 110 g / ½ cup oil, 2 large eggs, 110 g / ½ cup packed dark brown sugar, 80 g / ⅓ cup maple syrup, 5 g / 1 tsp vanilla extract, and the cooled chai milk until smooth.'
+  - text: 'In a large bowl, whisk the cooled roasted pumpkin, 110 g / ½ cup oil, 2 large eggs, 110 g / ½ cup packed dark brown sugar, 80 g / ⅓ cup maple syrup, 5 g / 1 tsp vanilla bean paste, and the cooled chai milk until smooth.'
     time_min: 2
   - text: 'Pour wet into dry. Switch to a spatula and fold gently until no flour streaks remain. The batter can be a touch lumpy.'
     time_min: 2
@@ -173,6 +173,9 @@ steps:
     time_min: 4
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'all-purpose flour'
     use: '1:1 gluten-free blend'
     note: 'King Arthur Measure for Measure works. The roasted pumpkin gives enough structure for GF.'

@@ -8,7 +8,7 @@ title: 'Ube dark chocolate swirl brownies'
 desc: 'A fudgy 70% dark chocolate brownie base ribboned with a tangy ube-halaya-and-cream-cheese swirl, baked so the violet veins stay distinct against the near-black crumb. The bitterness of the dark chocolate is the foil the sweet, faintly yam-vanilla ube needs; the cream cheese cuts both with acid and keeps the swirl from reading as one more sweet layer. A shiny crackle top from whisking the eggs and sugar hard before the chocolate goes in.'
 metaDesc: 'Ube dark chocolate swirl brownies: a fudgy 70% chocolate base ribboned with a tangy ube halaya cream-cheese swirl. Bitter chocolate against sweet violet yam, crackle top, distinct marbled veins.'
 tags: ['baked', 'sweet', 'comfort', 'make-ahead']
-updated: '2026-05-29'
+updated: '2026-11-14'
 
 servings: 16
 yield_note: 'one 20 cm / 8-inch square pan, 16 brownies'
@@ -89,8 +89,8 @@ ingredients:
     prep: 'room temperature'
     note: '(3 large)'
   - group: 'Brownie base'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 5
     unit: 'g'
     note: '(1 tsp)'
@@ -119,7 +119,7 @@ steps:
     time_min: 6
   - text: 'Melt the 170 g / 6 oz chopped dark chocolate and the 140 g / 10 tbsp butter together gently, in 30-second microwave bursts stirred between, or over a water bath, until smooth. Let it cool for 5 minutes so it does not cook the eggs in the next step.'
     time_min: 5
-  - text: 'In a separate large bowl, whisk the 3 room-temperature eggs, the 200 g / 1 cup granulated sugar, and the 5 g / 1 tsp vanilla extract hard by hand or on medium-high for 2 to 3 minutes until pale, thick, and falling in ribbons. This aeration is what gives a fudgy brownie its shiny, papery crackle top; skip it and the top bakes matte.'
+  - text: 'In a separate large bowl, whisk the 3 room-temperature eggs, the 200 g / 1 cup granulated sugar, and the 5 g / 1 tsp vanilla bean paste hard by hand or on medium-high for 2 to 3 minutes until pale, thick, and falling in ribbons. This aeration is what gives a fudgy brownie its shiny, papery crackle top; skip it and the top bakes matte.'
     time_min: 4
   - text: 'Pour the cooled chocolate-butter into the egg ribbon and fold until just combined and glossy. Sift the 75 g / ⅔ cup flour, the 25 g / ¼ cup dutch-process cocoa, and the 3 g / ½ tsp fine sea salt over the top and fold until the last streak of dry just disappears. The batter is thick and dark; do not overmix past combined or the brownies bake cakey instead of fudgy.'
     time_min: 3
@@ -148,6 +148,9 @@ modifications:
     kind: 'texture'
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'ube halaya'
     use: 'mashed cooked purple sweet potato + sweetened condensed milk (2:1 by weight) + 5 ml ube extract'
     note: 'For the cook without Filipino groceries: cook and rice Stokes Purple or Okinawan purple sweet potato, weigh 60 g, and combine with 30 g sweetened condensed milk and 5 ml ube extract. The swirl reads more sweet-potato-earthy; the extract is mandatory here so the violet survives against the dark crumb.'
@@ -163,7 +166,7 @@ homemade_alternatives:
     recipe_slug: 'recipes/ube-halaya'
     why: 'Homemade halaya brings a fresher, brighter yam note and less cooked-condensed-milk caramel, which reads through clearly in a swirl set against bitter dark chocolate where the ube has to assert itself.'
 
-homemade_exempt: ['cream cheese', 'granulated sugar', 'large egg yolk', 'ube extract (optional, for color reinforcement)', 'dark chocolate (70%)', 'unsalted butter', 'large eggs', 'vanilla extract', 'all-purpose flour', 'dutch-process cocoa powder', 'fine sea salt']
+homemade_exempt: ['cream cheese', 'granulated sugar', 'large egg yolk', 'ube extract (optional, for color reinforcement)', 'dark chocolate (70%)', 'unsalted butter', 'large eggs', 'vanilla bean paste', 'all-purpose flour', 'dutch-process cocoa powder', 'fine sea salt']
 
 notes: |
   Why dark chocolate, not milk. Ube halaya is sweet, around 35 to 45% sugar, and faintly vanilla-yam. Paired with a sweet milk-chocolate or even a mild semisweet base, the whole pan collapses into undifferentiated sweetness and the ube loses its identity. A bitter 70% base plus dutch cocoa gives the brownie a near-black, genuinely bitter backbone, and bitterness is exactly the foil that lets the sweet violet ube read as a distinct flavor rather than more of the same. The contrast is the entire point of the pairing, so do not soften the base to make it "more approachable."

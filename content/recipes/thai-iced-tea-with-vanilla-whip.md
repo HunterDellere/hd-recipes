@@ -8,7 +8,7 @@ title: 'Thai iced tea with salted vanilla whip'
 desc: 'Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted vanilla cream that floats and slowly cascades.'
 metaDesc: 'Thai iced tea with toasted whole spices, dark brown sugar, and a salted vanilla whipped cream float. No food dye, no mix.'
 tags: []
-updated: '2026-04-26'
+updated: '2026-11-14'
 
 servings: 2
 time:
@@ -75,8 +75,8 @@ ingredients:
     unit: 'g'
     note: '(1 tbsp)'
   - group: 'Sweetener and aromatics'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 2.5
     unit: 'g'
     note: '(½ tsp)'
@@ -127,7 +127,7 @@ steps:
     time_min: 4
   - text: 'Strain through a fine sieve into a heatproof pitcher. Don''t squeeze the leaves; that releases tannins.'
     time_min: 1
-  - text: 'Whisk in 13 g / 1 tbsp dark brown sugar and 40 g / 2 tbsp sweetened condensed milk while still hot. Then stir in 2.5 g / ½ tsp vanilla extract, 1 g / ¼ tsp almond extract, and 1 g / ¼ tsp orange blossom water (added off-heat to preserve the volatiles).'
+  - text: 'Whisk in 13 g / 1 tbsp dark brown sugar and 40 g / 2 tbsp sweetened condensed milk while still hot. Then stir in 2.5 g / ½ tsp vanilla bean paste, 1 g / ¼ tsp almond extract, and 1 g / ¼ tsp orange blossom water (added off-heat to preserve the volatiles).'
     time_min: 2
   - text: 'Chill the base in the fridge until cold (or shock in the freezer for 20 minutes). A cold base means the ice doesn''t melt instantly.'
     time_min: 20
@@ -137,6 +137,9 @@ steps:
     time_min: 2
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'salted vanilla whip'
     use: '+ pinch of instant coffee powder'
     note: '"Dirty" mocha-style finish.'

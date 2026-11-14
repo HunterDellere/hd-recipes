@@ -8,7 +8,7 @@ title: 'Midnight velvet mini cake with strawberry and balsamic caviar'
 desc: 'A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finished with strawberry meringue buttercream, balsamic pearls, and tempered chocolate shards.'
 metaDesc: 'Mini chocolate cake (two 4-inch rounds) with bloomed Dutch cocoa, strawberry meringue buttercream, agar balsamic caviar, and tempered chocolate shards.'
 tags: ['cake', 'weekend-project']
-updated: '2026-04-26'
+updated: '2026-11-14'
 
 servings: 2
 yield_note: 'one two-layer 4-inch cake; serves 2 generously'
@@ -110,8 +110,8 @@ ingredients:
     qty: 1
     unit: 'each'
   - group: 'Cocoa sponge: wet'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 2.5
     unit: 'g'
     note: '(½ tsp)'
@@ -194,6 +194,9 @@ steps:
     time_min: 5
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'plain batter'
     use: '+ ⅓ cup toasted chopped hazelnuts'
     note: 'Ferrero-Rocher-adjacent flavor that pairs with the strawberry.'

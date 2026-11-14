@@ -1,5 +1,183 @@
 [
   {
+    "path": "pages/ingredients/vanilla-bean-paste.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Vanilla bean paste",
+    "desc": "Vanilla extract suspended in a syrup with the scraped seeds of the pod. Same flavor as a whole bean, a fraction of the price, and you get the visible black flecks.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "vanilla-bean-paste",
+    "updated": "2026-11-14",
+    "added": "2026-04-26",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 38,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/ingredients/vanilla-extract.html",
+    "type": "ingredient",
+    "category": "ingredients",
+    "title": "Vanilla extract",
+    "desc": "Cured vanilla pods steeped in ethanol. Vanillin is the headline aromatic; the 250+ supporting compounds are what separates real extract from synthetic.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "vanilla-extract",
+    "updated": "2026-11-14",
+    "added": "2026-04-26",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "jar",
+      "primaryTag": null,
+      "usedInCount": 1,
+      "hasNutrition": true
+    }
+  },
+  {
+    "path": "pages/recipes/chai-pumpkin-cupcakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chai pumpkin cupcakes",
+    "desc": "Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream cheese.",
+    "tags": [
+      "cake",
+      "comfort",
+      "holiday"
+    ],
+    "status": "complete",
+    "_slug": "chai-pumpkin-cupcakes",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 22,
+      "total_min": 90,
+      "active_min": 40
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "ground Ceylon cinnamon",
+        "optional": false
+      },
+      {
+        "item": "ground ginger",
+        "optional": false
+      },
+      {
+        "item": "ground cardamom",
+        "optional": false
+      },
+      {
+        "item": "ground allspice",
+        "optional": false
+      },
+      {
+        "item": "ground cloves",
+        "optional": false
+      },
+      {
+        "item": "fresh ginger",
+        "slug": "ginger",
+        "optional": true
+      },
+      {
+        "item": "Assam tea, loose leaf",
+        "slug": "assam-tea",
+        "optional": false
+      },
+      {
+        "item": "pumpkin puree",
+        "optional": false
+      },
+      {
+        "item": "avocado oil or light olive oil",
+        "optional": false
+      },
+      {
+        "item": "large eggs, room temp",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar, packed",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "maple syrup",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "cream cheese, brick-style, cold",
+        "optional": false
+      },
+      {
+        "item": "powdered sugar, sifted",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-04-26",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "whisk",
+      "totalMinutes": 90,
+      "diffLabel": "medium",
+      "timeLead": "1 h 30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 40,
+      "filterMinutes": 40
+    }
+  },
+  {
     "path": "pages/recipes/chocolate-stout-cake.html",
     "type": "recipe",
     "category": "recipes",
@@ -274,6 +452,835 @@
       "timeMode": "total",
       "activeMinutes": 35,
       "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/individual-decadent-chocolate-cakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Individual decadent chocolate cakes",
+    "desc": "Two 4-inch chocolate cakes built on a chocolate-butter emulsion and bloomed Dutch cocoa, with brown sugar for moisture and a turbinado crackle top. No frosting: the cake itself is the payload.",
+    "tags": [
+      "cake",
+      "weekend-project",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "individual-decadent-chocolate-cakes",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 26,
+      "total_min": 56,
+      "active_min": 25
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "Dutch-process cocoa powder",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "hot brewed espresso (or strong coffee)",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate, chopped",
+        "slug": "dark-chocolate",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large eggs, room temp",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar, packed",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "turbinado or demerara sugar",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-cocoa",
+      "chocolate-butter-emulsion"
+    ],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-05-09",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "whisk",
+      "totalMinutes": 56,
+      "diffLabel": "medium",
+      "timeLead": "56 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/midnight-velvet-mini-cake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Midnight velvet mini cake with strawberry and balsamic caviar",
+    "desc": "A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finished with strawberry meringue buttercream, balsamic pearls, and tempered chocolate shards.",
+    "tags": [
+      "cake",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "midnight-velvet-mini-cake",
+    "course": "dessert",
+    "difficulty": "hard",
+    "servings": 2,
+    "time": {
+      "prep_min": 60,
+      "cook_min": 25,
+      "total_min": 180,
+      "active_min": 90
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh or frozen strawberries",
+        "optional": false
+      },
+      {
+        "item": "fresh lemon juice",
+        "optional": false
+      },
+      {
+        "item": "honey or maple syrup",
+        "optional": true
+      },
+      {
+        "item": "strawberry reduction (from above)",
+        "optional": false
+      },
+      {
+        "item": "aged balsamic vinegar",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "agar agar powder",
+        "optional": false
+      },
+      {
+        "item": "neutral oil, frozen 45+ minutes",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate (60–70% cacao)",
+        "slug": "dark-chocolate",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa powder",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "hot brewed coffee",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "optional": false
+      },
+      {
+        "item": "buttermilk (or kefir)",
+        "optional": false
+      },
+      {
+        "item": "avocado oil",
+        "optional": false
+      },
+      {
+        "item": "large egg, room temp",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "optional": false
+      },
+      {
+        "item": "sea salt",
+        "optional": false
+      },
+      {
+        "item": "large egg whites",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, cubed and cool",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "freeze-dried strawberries, pulverized",
+        "optional": false
+      },
+      {
+        "item": "sea salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-04-26",
+    "_card": {
+      "swatchIndex": 7,
+      "swatchGlyph": "whisk",
+      "totalMinutes": 180,
+      "diffLabel": "hard",
+      "timeLead": "3 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 90,
+      "filterMinutes": 90
+    }
+  },
+  {
+    "path": "pages/recipes/molten-chocolate-lava-cakes.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Molten chocolate lava cakes",
+    "desc": "Two 4-inch molten chocolate cakes built on brown butter and 70% dark chocolate, lifted by a ribbon-stage egg foam with an extra yolk for a custard-thick core, and baked hot and fast so the rim sets while the center stays liquid. About 30 minutes start to finish, one saucepan and one bowl.",
+    "tags": [
+      "cake",
+      "weeknight",
+      "quick",
+      "make-ahead",
+      "baked",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "molten-chocolate-lava-cakes",
+    "cuisine": "French",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 2,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 12,
+      "total_min": 30,
+      "active_min": 18
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter, softened, for the pans",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa powder, for dusting",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate (70% cacao), finely chopped",
+        "slug": "dark-chocolate",
+        "optional": false
+      },
+      {
+        "item": "instant espresso powder",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "large eggs, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "large egg yolks, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "slug": "flaky-salt",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean ice cream",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter",
+      "chocolate-butter-emulsion"
+    ],
+    "equipment": [
+      "digital-scale",
+      "instant-read-thermometer",
+      "heavy-saucepan"
+    ],
+    "added": "2026-10-29",
+    "_card": {
+      "swatchIndex": 13,
+      "swatchGlyph": "olive",
+      "totalMinutes": 30,
+      "diffLabel": "medium",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 18,
+      "filterMinutes": 18
+    }
+  },
+  {
+    "path": "pages/recipes/sticky-toffee-pudding.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Sticky toffee pudding",
+    "desc": "A soft, dark sponge made with Medjool dates softened in boiling water and baking soda, sweetened with dark muscovado, then soaked while warm in a muscovado, butter and cream toffee sauce. The British pub classic: the sponge should be moist enough to drink up the sauce without turning to mush.",
+    "tags": [
+      "pudding",
+      "cake",
+      "baked",
+      "comfort",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "sticky-toffee-pudding",
+    "cuisine": "British",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 9,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 40,
+      "total_min": 75,
+      "active_min": 30
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "Medjool dates, pitted",
+        "optional": false
+      },
+      {
+        "item": "boiling water",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, softened",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "dark muscovado sugar",
+        "slug": "muscovado-sugar",
+        "optional": false
+      },
+      {
+        "item": "large eggs, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, for the sauce",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "dark muscovado sugar, for the sauce",
+        "slug": "muscovado-sugar",
+        "optional": false
+      },
+      {
+        "item": "heavy cream",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "flaky salt",
+        "slug": "flaky-salt",
+        "optional": false
+      },
+      {
+        "item": "cold heavy cream, for pouring",
+        "slug": "heavy-cream",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "creaming-butter-sugar"
+    ],
+    "equipment": [
+      "digital-scale",
+      "heavy-saucepan",
+      "20 cm / 8-inch square baking pan",
+      "hand mixer (or a wooden spoon)"
+    ],
+    "added": "2026-10-11",
+    "_card": {
+      "swatchIndex": 8,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 75,
+      "diffLabel": "medium",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/thai-iced-tea-no-dye.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Thai iced tea (no dye)",
+    "desc": "Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, low astringency, evaporated milk float.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "thai-iced-tea-no-dye",
+    "cuisine": "Thai",
+    "course": "drink",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 10,
+      "total_min": 35,
+      "active_min": 15
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "loose-leaf black tea (Assam, Ceylon, or English Breakfast)",
+        "slug": "assam-tea",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, lightly crushed",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "whole cloves",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "optional": false
+      },
+      {
+        "item": "sweetened condensed milk",
+        "slug": "sweetened-condensed-milk",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "almond extract",
+        "optional": true
+      },
+      {
+        "item": "ice cubes",
+        "optional": false
+      },
+      {
+        "item": "evaporated milk (or half and half)",
+        "slug": "evaporated-milk",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-04-26",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 35,
+      "diffLabel": "easy",
+      "timeLead": "35 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/thai-iced-tea-with-vanilla-whip.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Thai iced tea with salted vanilla whip",
+    "desc": "Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted vanilla cream that floats and slowly cascades.",
+    "tags": [],
+    "status": "complete",
+    "_slug": "thai-iced-tea-with-vanilla-whip",
+    "cuisine": "Thai",
+    "course": "drink",
+    "difficulty": "easy",
+    "servings": 2,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 10,
+      "total_min": 60,
+      "active_min": 20
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "filtered water",
+        "optional": false
+      },
+      {
+        "item": "loose-leaf black tea (Assam or Ceylon)",
+        "slug": "assam-tea",
+        "optional": false
+      },
+      {
+        "item": "star anise",
+        "slug": "star-anise",
+        "optional": false
+      },
+      {
+        "item": "green cardamom pods, crushed",
+        "optional": false
+      },
+      {
+        "item": "cinnamon stick",
+        "slug": "cinnamon-stick",
+        "optional": false
+      },
+      {
+        "item": "whole cloves",
+        "optional": false
+      },
+      {
+        "item": "orange peel",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "optional": false
+      },
+      {
+        "item": "sweetened condensed milk",
+        "slug": "sweetened-condensed-milk",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar (or turbinado)",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "almond extract",
+        "optional": false
+      },
+      {
+        "item": "orange blossom water",
+        "optional": false
+      },
+      {
+        "item": "heavy cream, very cold",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "powdered sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "crushed or pebble ice",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-04-26",
+    "_card": {
+      "swatchIndex": 11,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/ube-dark-chocolate-swirl-brownies.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Ube dark chocolate swirl brownies",
+    "desc": "A fudgy 70% dark chocolate brownie base ribboned with a tangy ube-halaya-and-cream-cheese swirl, baked so the violet veins stay distinct against the near-black crumb. The bitterness of the dark chocolate is the foil the sweet, faintly yam-vanilla ube needs; the cream cheese cuts both with acid and keeps the swirl from reading as one more sweet layer. A shiny crackle top from whisking the eggs and sugar hard before the chocolate goes in.",
+    "tags": [
+      "baked",
+      "sweet",
+      "comfort",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "ube-dark-chocolate-swirl-brownies",
+    "cuisine": "Filipino-American",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 16,
+    "time": {
+      "prep_min": 25,
+      "cook_min": 35,
+      "total_min": 180,
+      "active_min": 25
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "cream cheese",
+        "optional": false
+      },
+      {
+        "item": "ube halaya",
+        "slug": "ube-halaya",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "large egg yolk",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "ube extract (optional, for color reinforcement)",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate (70%)",
+        "slug": "dark-chocolate",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "dutch-process cocoa powder",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [],
+    "added": "2026-05-29",
+    "_card": {
+      "swatchIndex": 10,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 180,
+      "diffLabel": "medium",
+      "timeLead": "25 min",
+      "timeAnnotation": "· 3 h rest",
+      "timeMode": "active",
+      "activeMinutes": 25,
+      "filterMinutes": 25
     }
   },
   {
@@ -1504,123 +2511,6 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/molten-chocolate-lava-cakes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Molten chocolate lava cakes",
-    "desc": "Two 4-inch molten chocolate cakes built on brown butter and 70% dark chocolate, lifted by a ribbon-stage egg foam with an extra yolk for a custard-thick core, and baked hot and fast so the rim sets while the center stays liquid. About 30 minutes start to finish, one saucepan and one bowl.",
-    "tags": [
-      "cake",
-      "weeknight",
-      "quick",
-      "make-ahead",
-      "baked",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "molten-chocolate-lava-cakes",
-    "cuisine": "French",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 12,
-      "total_min": 30,
-      "active_min": 18
-    },
-    "updated": "2026-10-29",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "unsalted butter, softened, for the pans",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "Dutch-process cocoa powder, for dusting",
-        "slug": "dutch-process-cocoa",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "dark chocolate (70% cacao), finely chopped",
-        "slug": "dark-chocolate",
-        "optional": false
-      },
-      {
-        "item": "instant espresso powder",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "large eggs, room temperature",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "large egg yolks, room temperature",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "flaky sea salt",
-        "slug": "flaky-salt",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean ice cream",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "brown-butter",
-      "chocolate-butter-emulsion"
-    ],
-    "equipment": [
-      "digital-scale",
-      "instant-read-thermometer",
-      "heavy-saucepan"
-    ],
-    "added": "2026-10-29",
-    "_card": {
-      "swatchIndex": 13,
-      "swatchGlyph": "olive",
-      "totalMinutes": 30,
-      "diffLabel": "medium",
-      "timeLead": "30 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 18,
-      "filterMinutes": 18
     }
   },
   {
@@ -8702,132 +9592,6 @@
       "timeMode": "total",
       "activeMinutes": 70,
       "filterMinutes": 70
-    }
-  },
-  {
-    "path": "pages/recipes/sticky-toffee-pudding.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Sticky toffee pudding",
-    "desc": "A soft, dark sponge made with Medjool dates softened in boiling water and baking soda, sweetened with dark muscovado, then soaked while warm in a muscovado, butter and cream toffee sauce. The British pub classic: the sponge should be moist enough to drink up the sauce without turning to mush.",
-    "tags": [
-      "pudding",
-      "cake",
-      "baked",
-      "comfort",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "sticky-toffee-pudding",
-    "cuisine": "British",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 9,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 40,
-      "total_min": 75,
-      "active_min": 30
-    },
-    "updated": "2026-10-11",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "Medjool dates, pitted",
-        "optional": false
-      },
-      {
-        "item": "boiling water",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "slug": "baking-soda",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, softened",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "dark muscovado sugar",
-        "slug": "muscovado-sugar",
-        "optional": false
-      },
-      {
-        "item": "large eggs, room temperature",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "slug": "baking-powder",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, for the sauce",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "dark muscovado sugar, for the sauce",
-        "slug": "muscovado-sugar",
-        "optional": false
-      },
-      {
-        "item": "heavy cream",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "flaky salt",
-        "slug": "flaky-salt",
-        "optional": false
-      },
-      {
-        "item": "cold heavy cream, for pouring",
-        "slug": "heavy-cream",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "creaming-butter-sugar"
-    ],
-    "equipment": [
-      "digital-scale",
-      "heavy-saucepan",
-      "20 cm / 8-inch square baking pan",
-      "hand mixer (or a wooden spoon)"
-    ],
-    "added": "2026-10-11",
-    "_card": {
-      "swatchIndex": 8,
-      "swatchGlyph": "skillet",
-      "totalMinutes": 75,
-      "diffLabel": "medium",
-      "timeLead": "1 h 15 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 30,
-      "filterMinutes": 30
     }
   },
   {
@@ -25595,114 +26359,6 @@
       "timeMode": "active",
       "activeMinutes": 20,
       "filterMinutes": 20
-    }
-  },
-  {
-    "path": "pages/recipes/ube-dark-chocolate-swirl-brownies.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Ube dark chocolate swirl brownies",
-    "desc": "A fudgy 70% dark chocolate brownie base ribboned with a tangy ube-halaya-and-cream-cheese swirl, baked so the violet veins stay distinct against the near-black crumb. The bitterness of the dark chocolate is the foil the sweet, faintly yam-vanilla ube needs; the cream cheese cuts both with acid and keeps the swirl from reading as one more sweet layer. A shiny crackle top from whisking the eggs and sugar hard before the chocolate goes in.",
-    "tags": [
-      "baked",
-      "sweet",
-      "comfort",
-      "make-ahead"
-    ],
-    "status": "complete",
-    "_slug": "ube-dark-chocolate-swirl-brownies",
-    "cuisine": "Filipino-American",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 16,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 35,
-      "total_min": 180,
-      "active_min": 25
-    },
-    "updated": "2026-05-29",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "cream cheese",
-        "optional": false
-      },
-      {
-        "item": "ube halaya",
-        "slug": "ube-halaya",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "large egg yolk",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "ube extract (optional, for color reinforcement)",
-        "optional": false
-      },
-      {
-        "item": "dark chocolate (70%)",
-        "slug": "dark-chocolate",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "dutch-process cocoa powder",
-        "slug": "dutch-process-cocoa",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-05-29",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 180,
-      "diffLabel": "medium",
-      "timeLead": "25 min",
-      "timeAnnotation": "· 3 h rest",
-      "timeMode": "active",
-      "activeMinutes": 25,
-      "filterMinutes": 25
     }
   },
   {
@@ -63328,121 +63984,6 @@
     }
   },
   {
-    "path": "pages/recipes/individual-decadent-chocolate-cakes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Individual decadent chocolate cakes",
-    "desc": "Two 4-inch chocolate cakes built on a chocolate-butter emulsion and bloomed Dutch cocoa, with brown sugar for moisture and a turbinado crackle top. No frosting: the cake itself is the payload.",
-    "tags": [
-      "cake",
-      "weekend-project",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "individual-decadent-chocolate-cakes",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 2,
-    "time": {
-      "prep_min": 15,
-      "cook_min": 26,
-      "total_min": 56,
-      "active_min": 25
-    },
-    "updated": "2026-05-09",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "Dutch-process cocoa powder",
-        "slug": "dutch-process-cocoa",
-        "optional": false
-      },
-      {
-        "item": "hot brewed espresso (or strong coffee)",
-        "optional": false
-      },
-      {
-        "item": "dark chocolate, chopped",
-        "slug": "dark-chocolate",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "large eggs, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "dark brown sugar, packed",
-        "slug": "dark-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "slug": "baking-soda",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "slug": "baking-powder",
-        "optional": false
-      },
-      {
-        "item": "turbinado or demerara sugar",
-        "optional": false
-      },
-      {
-        "item": "flaky sea salt",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "blooming-cocoa",
-      "chocolate-butter-emulsion"
-    ],
-    "equipment": [
-      "digital-scale"
-    ],
-    "added": "2026-05-09",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "whisk",
-      "totalMinutes": 56,
-      "diffLabel": "medium",
-      "timeLead": "56 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 25,
-      "filterMinutes": 25
-    }
-  },
-  {
     "path": "pages/recipes/individual-fluffy-chocolate-cakes.html",
     "type": "recipe",
     "category": "recipes",
@@ -69153,25 +69694,6 @@
     }
   },
   {
-    "path": "pages/ingredients/vanilla-extract.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Vanilla extract",
-    "desc": "Cured vanilla pods steeped in ethanol. Vanillin is the headline aromatic; the 250+ supporting compounds are what separates real extract from synthetic.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "vanilla-extract",
-    "updated": "2026-04-29",
-    "added": "2026-04-26",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "jar",
-      "primaryTag": null,
-      "usedInCount": 9,
-      "hasNutrition": true
-    }
-  },
-  {
     "path": "pages/ingredients/white-miso.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -70681,25 +71203,6 @@
     }
   },
   {
-    "path": "pages/ingredients/vanilla-bean-paste.html",
-    "type": "ingredient",
-    "category": "ingredients",
-    "title": "Vanilla bean paste",
-    "desc": "Vanilla extract suspended in a syrup with the scraped seeds of the pod. Same flavor as a whole bean, a fraction of the price, and you get the visible black flecks.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "vanilla-bean-paste",
-    "updated": "2026-04-26",
-    "added": "2026-04-26",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "jar",
-      "primaryTag": null,
-      "usedInCount": 32,
-      "hasNutrition": true
-    }
-  },
-  {
     "path": "pages/recipes/brown-butter-cacio-e-pepe.html",
     "type": "recipe",
     "category": "recipes",
@@ -70856,146 +71359,6 @@
       "timeMode": "total",
       "activeMinutes": 12,
       "filterMinutes": 12
-    }
-  },
-  {
-    "path": "pages/recipes/chai-pumpkin-cupcakes.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chai pumpkin cupcakes",
-    "desc": "Pumpkin cupcakes with the spice infused into the milk like a real chai, then frosted with brown butter cream cheese.",
-    "tags": [
-      "cake",
-      "comfort",
-      "holiday"
-    ],
-    "status": "complete",
-    "_slug": "chai-pumpkin-cupcakes",
-    "course": "dessert",
-    "difficulty": "medium",
-    "servings": 12,
-    "time": {
-      "prep_min": 25,
-      "cook_min": 22,
-      "total_min": 90,
-      "active_min": 40
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "whole milk",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "ground Ceylon cinnamon",
-        "optional": false
-      },
-      {
-        "item": "ground ginger",
-        "optional": false
-      },
-      {
-        "item": "ground cardamom",
-        "optional": false
-      },
-      {
-        "item": "ground allspice",
-        "optional": false
-      },
-      {
-        "item": "ground cloves",
-        "optional": false
-      },
-      {
-        "item": "fresh ginger",
-        "slug": "ginger",
-        "optional": true
-      },
-      {
-        "item": "Assam tea, loose leaf",
-        "slug": "assam-tea",
-        "optional": false
-      },
-      {
-        "item": "pumpkin puree",
-        "optional": false
-      },
-      {
-        "item": "avocado oil or light olive oil",
-        "optional": false
-      },
-      {
-        "item": "large eggs, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "dark brown sugar, packed",
-        "slug": "dark-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "maple syrup",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "cream cheese, brick-style, cold",
-        "optional": false
-      },
-      {
-        "item": "powdered sugar, sifted",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-04-26",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "whisk",
-      "totalMinutes": 90,
-      "diffLabel": "medium",
-      "timeLead": "1 h 30 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 40,
-      "filterMinutes": 40
     }
   },
   {
@@ -71708,155 +72071,6 @@
     }
   },
   {
-    "path": "pages/recipes/midnight-velvet-mini-cake.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Midnight velvet mini cake with strawberry and balsamic caviar",
-    "desc": "A two-layer 4-inch chocolate cake bloomed with hot coffee, filled with strawberry reduction, finished with strawberry meringue buttercream, balsamic pearls, and tempered chocolate shards.",
-    "tags": [
-      "cake",
-      "weekend-project"
-    ],
-    "status": "complete",
-    "_slug": "midnight-velvet-mini-cake",
-    "course": "dessert",
-    "difficulty": "hard",
-    "servings": 2,
-    "time": {
-      "prep_min": 60,
-      "cook_min": 25,
-      "total_min": 180,
-      "active_min": 90
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "fresh or frozen strawberries",
-        "optional": false
-      },
-      {
-        "item": "fresh lemon juice",
-        "optional": false
-      },
-      {
-        "item": "honey or maple syrup",
-        "optional": true
-      },
-      {
-        "item": "strawberry reduction (from above)",
-        "optional": false
-      },
-      {
-        "item": "aged balsamic vinegar",
-        "optional": false
-      },
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "agar agar powder",
-        "optional": false
-      },
-      {
-        "item": "neutral oil, frozen 45+ minutes",
-        "optional": false
-      },
-      {
-        "item": "dark chocolate (60–70% cacao)",
-        "slug": "dark-chocolate",
-        "optional": false
-      },
-      {
-        "item": "Dutch-process cocoa powder",
-        "slug": "dutch-process-cocoa",
-        "optional": false
-      },
-      {
-        "item": "hot brewed coffee",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "buttermilk (or kefir)",
-        "optional": false
-      },
-      {
-        "item": "avocado oil",
-        "optional": false
-      },
-      {
-        "item": "large egg, room temp",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking soda",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "optional": false
-      },
-      {
-        "item": "sea salt",
-        "optional": false
-      },
-      {
-        "item": "large egg whites",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, cubed and cool",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "freeze-dried strawberries, pulverized",
-        "optional": false
-      },
-      {
-        "item": "sea salt",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-04-26",
-    "_card": {
-      "swatchIndex": 7,
-      "swatchGlyph": "whisk",
-      "totalMinutes": 180,
-      "diffLabel": "hard",
-      "timeLead": "3 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 90,
-      "filterMinutes": 90
-    }
-  },
-  {
     "path": "pages/recipes/sichuan-dandan-mian.html",
     "type": "recipe",
     "category": "recipes",
@@ -72041,220 +72255,6 @@
       "timeMode": "total",
       "activeMinutes": 15,
       "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/recipes/thai-iced-tea-no-dye.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Thai iced tea (no dye)",
-    "desc": "Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, low astringency, evaporated milk float.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "thai-iced-tea-no-dye",
-    "cuisine": "Thai",
-    "course": "drink",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 5,
-      "cook_min": 10,
-      "total_min": 35,
-      "active_min": 15
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "water",
-        "optional": false
-      },
-      {
-        "item": "loose-leaf black tea (Assam, Ceylon, or English Breakfast)",
-        "slug": "assam-tea",
-        "optional": false
-      },
-      {
-        "item": "star anise",
-        "slug": "star-anise",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods, lightly crushed",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "whole cloves",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar",
-        "optional": false
-      },
-      {
-        "item": "sweetened condensed milk",
-        "slug": "sweetened-condensed-milk",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "almond extract",
-        "optional": true
-      },
-      {
-        "item": "ice cubes",
-        "optional": false
-      },
-      {
-        "item": "evaporated milk (or half and half)",
-        "slug": "evaporated-milk",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-04-26",
-    "_card": {
-      "swatchIndex": 11,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 35,
-      "diffLabel": "easy",
-      "timeLead": "35 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 15,
-      "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/recipes/thai-iced-tea-with-vanilla-whip.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Thai iced tea with salted vanilla whip",
-    "desc": "Spiced black tea sweetened with brown sugar and condensed milk, finished with a soft-peak salted vanilla cream that floats and slowly cascades.",
-    "tags": [],
-    "status": "complete",
-    "_slug": "thai-iced-tea-with-vanilla-whip",
-    "cuisine": "Thai",
-    "course": "drink",
-    "difficulty": "easy",
-    "servings": 2,
-    "time": {
-      "prep_min": 10,
-      "cook_min": 10,
-      "total_min": 60,
-      "active_min": 20
-    },
-    "updated": "2026-04-26",
-    "diet": [
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "item": "filtered water",
-        "optional": false
-      },
-      {
-        "item": "loose-leaf black tea (Assam or Ceylon)",
-        "slug": "assam-tea",
-        "optional": false
-      },
-      {
-        "item": "star anise",
-        "slug": "star-anise",
-        "optional": false
-      },
-      {
-        "item": "green cardamom pods, crushed",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "whole cloves",
-        "optional": false
-      },
-      {
-        "item": "orange peel",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "optional": false
-      },
-      {
-        "item": "sweetened condensed milk",
-        "slug": "sweetened-condensed-milk",
-        "optional": false
-      },
-      {
-        "item": "dark brown sugar (or turbinado)",
-        "slug": "dark-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "vanilla extract",
-        "slug": "vanilla-extract",
-        "optional": false
-      },
-      {
-        "item": "almond extract",
-        "optional": false
-      },
-      {
-        "item": "orange blossom water",
-        "optional": false
-      },
-      {
-        "item": "heavy cream, very cold",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "powdered sugar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "optional": false
-      },
-      {
-        "item": "vanilla bean paste",
-        "slug": "vanilla-bean-paste",
-        "optional": false
-      },
-      {
-        "item": "crushed or pebble ice",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-04-26",
-    "_card": {
-      "swatchIndex": 11,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 60,
-      "diffLabel": "easy",
-      "timeLead": "1 h",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 20,
-      "filterMinutes": 20
     }
   },
   {

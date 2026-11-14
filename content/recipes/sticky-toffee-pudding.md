@@ -8,7 +8,7 @@ title: 'Sticky toffee pudding'
 desc: 'A soft, dark sponge made with Medjool dates softened in boiling water and baking soda, sweetened with dark muscovado, then soaked while warm in a muscovado, butter and cream toffee sauce. The British pub classic: the sponge should be moist enough to drink up the sauce without turning to mush.'
 metaDesc: 'Sticky toffee pudding: Medjool dates softened with baking soda, dark muscovado sponge, and a butter-cream toffee sauce poured over while warm. British classic.'
 tags: ['pudding', 'cake', 'baked', 'comfort', 'make-ahead']
-updated: '2026-10-11'
+updated: '2026-11-14'
 
 servings: 9
 yield_note: 'one 20 cm / 8-inch square pan, 9 portions, with about 500 ml / 2 cups sauce'
@@ -68,8 +68,8 @@ ingredients:
     unit: 'g'
     note: '(2 large eggs)'
   - group: 'Sponge'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 5
     unit: 'ml'
     note: '(1 tsp)'
@@ -132,7 +132,7 @@ steps:
   - text: 'Beat the 85 g / 6 tbsp softened butter with the 175 g / ¾ cup dark muscovado sugar using a hand mixer or a wooden spoon until lighter in color and fluffy, about 3 minutes with a mixer. Muscovado is damp and clumpy; press out any lumps against the side of the bowl as you go.'
     technique: 'creaming-butter-sugar'
     time_min: 4
-  - text: 'Beat in the 100 g / 2 eggs one at a time, then the 5 ml / 1 tsp vanilla extract. If the mixture looks curdled, add a spoonful of the flour from the next step; it will come back together once all the flour is in.'
+  - text: 'Beat in the 100 g / 2 eggs one at a time, then the 5 ml / 1 tsp vanilla bean paste. If the mixture looks curdled, add a spoonful of the flour from the next step; it will come back together once all the flour is in.'
     time_min: 2
   - text: 'Whisk the 175 g / 1⅓ cups all-purpose flour, the 8 g / 2 tsp baking powder and the 2 g / ⅓ tsp fine sea salt together in a separate bowl. Fold it into the butter mixture with a wooden spoon or metal spoon until just combined, then fold in the mashed dates and all their soaking liquid. The batter will be loose and wet, closer to a thick pancake batter than a cake batter; that is correct, and it is what keeps the pudding moist.'
     time_min: 3
@@ -163,6 +163,9 @@ modifications:
     kind: 'regional'
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'dark muscovado sugar'
     use: 'dark brown sugar plus 1 tsp molasses per 175 g'
     note: 'Acceptable in both the sponge and the sauce. The flavor is sweeter and less mineral, and the color is lighter.'
@@ -170,7 +173,7 @@ substitutions:
     use: 'Deglet Noor dates'
     note: 'Drier and less caramel-like. Soak them 30 minutes instead of 20 and mash thoroughly.'
 
-homemade_exempt: ['Medjool dates, pitted', 'boiling water', 'baking soda', 'unsalted butter, softened', 'dark muscovado sugar', 'large eggs, room temperature', 'vanilla extract', 'all-purpose flour', 'baking powder', 'fine sea salt', 'unsalted butter, for the sauce', 'dark muscovado sugar, for the sauce', 'heavy cream', 'flaky salt', 'cold heavy cream, for pouring']
+homemade_exempt: ['Medjool dates, pitted', 'boiling water', 'baking soda', 'unsalted butter, softened', 'dark muscovado sugar', 'large eggs, room temperature', 'vanilla bean paste', 'all-purpose flour', 'baking powder', 'fine sea salt', 'unsalted butter, for the sauce', 'dark muscovado sugar, for the sauce', 'heavy cream', 'flaky salt', 'cold heavy cream, for pouring']
 
 notes: |
   What the baking soda does. Soaking the dates in boiling water with baking soda raises the pH, which softens the fruit quickly so it melts into the batter, and speeds Maillard browning, which is why the sponge bakes up so dark. The soda also neutralizes some acidity in the dates and muscovado, and reacts in the oven to add lift alongside the baking powder. Do not increase it: more soda gives a soapy taste and a greenish cast.

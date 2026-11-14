@@ -8,7 +8,7 @@ title: 'Individual decadent chocolate cakes'
 desc: 'Two 4-inch chocolate cakes built on a chocolate-butter emulsion and bloomed Dutch cocoa, with brown sugar for moisture and a turbinado crackle top. No frosting: the cake itself is the payload.'
 metaDesc: 'Decadent individual chocolate cakes baked in two 4-inch pans. Chocolate-butter emulsion, bloomed cocoa, fudge-textured crumb, no frosting needed.'
 tags: ['cake', 'weekend-project', 'comfort']
-updated: '2026-05-09'
+updated: '2026-11-14'
 
 servings: 2
 yield_note: 'two 4-inch individual cakes'
@@ -76,8 +76,8 @@ ingredients:
     unit: 'g'
     note: '(¼ cup)'
   - group: 'Phase 3, wet'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 4
     unit: 'g'
     note: '(1 tsp)'
@@ -121,7 +121,7 @@ steps:
   - text: 'Combine the 110 g / 4 oz chopped dark chocolate, 85 g / 6 tbsp butter, and 1.5 g / ¼ tsp fine sea salt in a heatproof bowl over a pan of barely simmering water (or microwave in 20-second bursts, stirring between). Stir slowly with a spatula until fully smooth and glossy: the cocoa butter and dairy fat must form a stable emulsion, not separate. Off heat. Stir in the cocoa bloom from step 2; the paste loosens immediately and the color goes near-black.'
     technique: 'chocolate-butter-emulsion'
     time_min: 5
-  - text: 'In a medium bowl, whisk the 2 eggs, 65 g / ⅓ cup granulated sugar, 50 g / ¼ cup dark brown sugar, and 4 g / 1 tsp vanilla extract until the mixture lightens visibly and runs in a smooth ribbon off the whisk, about 60 seconds. The dark brown sugar is doing two jobs: molasses adds bitterness that bridges to the cocoa, and the hygroscopic invert sugars keep the crumb moist for days.'
+  - text: 'In a medium bowl, whisk the 2 eggs, 65 g / ⅓ cup granulated sugar, 50 g / ¼ cup dark brown sugar, and 4 g / 1 tsp vanilla bean paste until the mixture lightens visibly and runs in a smooth ribbon off the whisk, about 60 seconds. The dark brown sugar is doing two jobs: molasses adds bitterness that bridges to the cocoa, and the hygroscopic invert sugars keep the crumb moist for days.'
     time_min: 2
   - text: 'Pour the warm chocolate-butter mass (about 230 g) into the egg mixture in a slow stream while whisking constantly. The chocolate must be warm but not hot; above 50°C / 120°F it will scramble the eggs. Whisk just until uniform and glossy.'
     time_min: 2
@@ -154,6 +154,9 @@ modifications:
     kind: 'texture'
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'dark chocolate (70% cacao)'
     use: 'bittersweet 60% chocolate'
     note: 'Sweeter and lower in cocoa solids. Drop the granulated sugar by 10 g to compensate, or the cake will taste candy-sweet.'

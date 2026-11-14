@@ -45,7 +45,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 
 <div class="filters">
   <input type="search" id="filter-q" placeholder="Filter title…" />
-  <select id="filter-cat"><option value="">All categories</option><option value="recipes">recipes</option><option value="ingredients">ingredients</option><option value="hubs">hubs</option><option value="techniques">techniques</option><option value="explore">explore</option><option value="safety">safety</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option></select>
+  <select id="filter-cat"><option value="">All categories</option><option value="ingredients">ingredients</option><option value="recipes">recipes</option><option value="hubs">hubs</option><option value="techniques">techniques</option><option value="explore">explore</option><option value="safety">safety</option><option value="cuisines">cuisines</option><option value="equipment">equipment</option></select>
   <select id="filter-status"><option value="">Any status</option><option value="complete">complete</option><option value="draft">draft</option><option value="stub">stub</option></select>
   <select id="filter-review"><option value="">Any review</option><option value="verified">verified</option><option value="pending">pending</option><option value="needs-work">needs-work</option><option value="missing">missing</option></select>
 </div>
@@ -53,6 +53,36 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
 <table id="entries-table">
   <thead><tr><th>Title</th><th>Category</th><th>Type</th><th>Status</th><th>Review</th><th>Updated</th><th>Findings</th><th>Nutrition</th></tr></thead>
   <tbody>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/vanilla-bean-paste.html">Vanilla bean paste</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
+      <td><a href="../../pages/ingredients/vanilla-extract.html">Vanilla extract</a></td>
+      <td>ingredients</td>
+      <td>ingredient</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/chai-pumpkin-cupcakes.html">Chai pumpkin cupcakes</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/chocolate-stout-cake.html">Chocolate stout cake</a></td>
       <td>recipes</td>
@@ -65,6 +95,76 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/chocolate-texas-sheet-cake.html">Chocolate Texas sheet cake</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/individual-decadent-chocolate-cakes.html">Individual decadent chocolate cakes</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/midnight-velvet-mini-cake.html">Midnight velvet mini cake with strawberry and balsamic caviar</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/molten-chocolate-lava-cakes.html">Molten chocolate lava cakes</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td><span class="pill warn">1 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/sticky-toffee-pudding.html">Sticky toffee pudding</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td><span class="pill warn">3 FDC</span></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/thai-iced-tea-no-dye.html">Thai iced tea (no dye)</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/thai-iced-tea-with-vanilla-whip.html">Thai iced tea with salted vanilla whip</a></td>
+      <td>recipes</td>
+      <td>recipe</td>
+      <td><span class="pill st-complete">complete</span></td>
+      <td><span class="pill rv-missing">missing</span></td>
+      <td>2026-11-14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
+      <td><a href="../../pages/recipes/ube-dark-chocolate-swirl-brownies.html">Ube dark chocolate swirl brownies</a></td>
       <td>recipes</td>
       <td>recipe</td>
       <td><span class="pill st-complete">complete</span></td>
@@ -172,16 +272,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td>2026-11-03</td>
       <td></td>
       <td><span class="pill warn">6 FDC</span></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/molten-chocolate-lava-cakes.html">Molten chocolate lava cakes</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-10-29</td>
-      <td></td>
-      <td><span class="pill warn">1 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/roasted-butternut-squash-salad-with-radicchio-and-balsamic.html">Roasted butternut squash salad with radicchio, pecans, and balsamic</a></td>
@@ -782,16 +872,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td>2026-10-11</td>
       <td></td>
       <td><span class="pill warn">2 FDC</span></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/sticky-toffee-pudding.html">Sticky toffee pudding</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-10-11</td>
-      <td></td>
-      <td><span class="pill warn">3 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/swedish-meatballs-kottbullar-with-cream-gravy.html">Swedish meatballs (köttbullar) with cream gravy</a></td>
@@ -2482,16 +2562,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td>2026-05-29</td>
       <td></td>
       <td><span class="pill warn">2 FDC</span></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/ube-dark-chocolate-swirl-brownies.html">Ube dark chocolate swirl brownies</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-05-29</td>
-      <td></td>
-      <td><span class="pill warn">1 FDC</span></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/ube-halaya-mug-cake.html">Ube halaya mug cake</a></td>
@@ -7744,16 +7814,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/individual-decadent-chocolate-cakes.html">Individual decadent chocolate cakes</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-05-09</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/individual-fluffy-chocolate-cakes.html">Individual fluffy chocolate cakes</a></td>
       <td>recipes</td>
       <td>recipe</td>
@@ -8644,16 +8704,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
-      <td><a href="../../pages/ingredients/vanilla-extract.html">Vanilla extract</a></td>
-      <td>ingredients</td>
-      <td>ingredient</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-04-29</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
       <td><a href="../../pages/ingredients/white-miso.html">White miso (shiro)</a></td>
       <td>ingredients</td>
       <td>ingredient</td>
@@ -9193,16 +9243,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td></td>
       <td></td>
     </tr>
-    <tr data-status="complete" data-review="missing" data-category="ingredients" data-type="ingredient">
-      <td><a href="../../pages/ingredients/vanilla-bean-paste.html">Vanilla bean paste</a></td>
-      <td>ingredients</td>
-      <td>ingredient</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-04-26</td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/brown-butter-cacio-e-pepe.html">Brown butter cacio e pepe</a></td>
       <td>recipes</td>
@@ -9215,16 +9255,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/brown-butter-sugar-cookies.html">Brown butter sugar cookies</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-04-26</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/chai-pumpkin-cupcakes.html">Chai pumpkin cupcakes</a></td>
       <td>recipes</td>
       <td>recipe</td>
       <td><span class="pill st-complete">complete</span></td>
@@ -9314,16 +9344,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
       <td></td>
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/midnight-velvet-mini-cake.html">Midnight velvet mini cake with strawberry and balsamic caviar</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-04-26</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/sichuan-dandan-mian.html">Sichuan dandan mian</a></td>
       <td>recipes</td>
       <td>recipe</td>
@@ -9335,26 +9355,6 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr>
     <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
       <td><a href="../../pages/recipes/smashed-cucumber-wood-ear-salad.html">Smashed cucumber and wood ear salad</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-04-26</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/thai-iced-tea-no-dye.html">Thai iced tea (no dye)</a></td>
-      <td>recipes</td>
-      <td>recipe</td>
-      <td><span class="pill st-complete">complete</span></td>
-      <td><span class="pill rv-missing">missing</span></td>
-      <td>2026-04-26</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr data-status="complete" data-review="missing" data-category="recipes" data-type="recipe">
-      <td><a href="../../pages/recipes/thai-iced-tea-with-vanilla-whip.html">Thai iced tea with salted vanilla whip</a></td>
       <td>recipes</td>
       <td>recipe</td>
       <td><span class="pill st-complete">complete</span></td>
@@ -10115,7 +10115,7 @@ th { background: #f5edd6; font-size: 12px; text-transform: uppercase; letter-spa
     </tr></tbody>
 </table>
 
-<p class="gen">Generated 2026-11-14T23:07:19.693Z</p>
+<p class="gen">Generated 2026-11-14T23:09:37.708Z</p>
 
 <script>
 (function () {

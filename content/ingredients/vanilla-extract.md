@@ -10,7 +10,7 @@ metaDesc: 'Vanilla extract: alcohol-extracted vanillin plus hundreds of minor ar
 tags: []
 density_g_per_ml: 0.88
 imperial_pref: 'tsp'
-updated: '2026-04-29'
+updated: '2026-11-14'
 
 usda_fdc_id: 170276
 
@@ -23,22 +23,19 @@ about: |
 
   Heat behavior matters and is often mishandled. The vanillin itself is reasonably heat-stable, but the volatile top notes (the minor chorus) flash off above ~100 °C. In baked goods this is rarely a problem because the dough or batter structure traps and preserves enough of the heavier compounds for the bake to read correct. In stovetop applications (custards, pastry cream, ice cream base, simple syrups), heating the extract reduces what the cook is paying for; the standard practice is to add extract off-heat after cooking, with the residual warmth of the dish sufficient to integrate it without driving off aromatics. The same logic applies to alcohol-based applications (eggnog, panna cotta with set gelatin); cold-folding preserves more of what makes real extract worth using.
 
-  Imitation vanilla is synthetic vanillin alone, typically derived from guaiacol (a coal-tar or lignin byproduct) or from fermented eugenol. It nails the headline note and misses the chorus entirely. In applications where vanilla is a background note (chocolate cakes, brownies, dishes with strong competing flavors), imitation works adequately and saves significant cost; in applications where vanilla is the lead (custards, buttercreams, vanilla ice cream), imitation reads as flat and one-dimensional. The decision is application-driven, not snobbery-driven.
+  Imitation vanilla is synthetic vanillin alone, typically derived from guaiacol (a coal-tar or lignin byproduct) or from fermented eugenol. It nails the headline note and misses the chorus entirely. Even where vanilla sits behind a strong flavor (chocolate cakes, brownies, spiced bakes), those secondary compounds are what round off bitterness and lengthen the finish, so the cost saving is a real flavor loss. This site defaults to vanilla bean paste in every application and treats real extract as the fallback when paste is not on hand; imitation is not recommended.
 
   Buying notes: extract grades are Single-Fold (the legal US standard, ≥13.35 oz pods per gallon of solvent) and Double-Strength or 2x (twice the bean concentration; halve the quantity in recipes if using). Origin matters audibly. Madagascar (Bourbon) vanilla is the most common and reads richest, with classic "vanilla" character. Tahitian vanilla (V. tahitensis) is more floral, fruitier, and lower in vanillin; better in fruit-forward applications. Mexican vanilla can be excellent but is often adulterated with coumarin-bearing tonka extracts; only buy from reputable sources. Indonesian and Indian vanillas have been catching up in quality and are worth seeking. Avoid anything labeled "vanilla flavor" without "extract"; that label permits synthetic vanillin.
 
 storage: 'Dark cupboard, tightly capped. Indefinite shelf life; the ethanol preserves the extract against microbial spoilage. Failure mode is slow oxidation of the aromatic minor compounds when the bottle is left uncapped or in light, which dulls the chorus over years. Refrigeration is unnecessary and can cause cloudy precipitates from natural compounds dropping out of solution. The extract grows more concentrated over time as ethanol slowly evaporates through any imperfect seal; old bottles often read fuller.'
 
 substitutions:
-  - for: 'vanilla extract (visible-vanilla applications, ice cream, panna cotta, frosting)'
-    use: 'vanilla bean paste'
-    note: '1:1 by volume. Same extracted flavor base plus visible seeds. Better wherever the seeds will read on the plate. Slightly thicker viscosity; integrates fine in cold or warm liquids.'
   - for: 'vanilla extract (long-cooked or heated preparations, custards from scratch)'
     use: 'whole vanilla pod'
     note: 'About 1 split pod per tablespoon of extract. Split lengthwise, scrape seeds into the cooking liquid, steep the pod in the milk or cream during heating, then remove. Yields the deepest, freshest flavor; the spent pod can be dried and used for vanilla sugar.'
-  - for: 'vanilla extract (heavy-flavored bakes, brownies, chocolate cakes)'
-    use: 'imitation vanilla'
-    note: '1:1, but only where vanilla is a background note. Saves cost dramatically. Wrong in custards, buttercreams, vanilla ice cream, or anywhere the vanilla is supposed to lead.'
+  - for: 'vanilla extract (any application, visible or not, including chocolate cakes and brownies)'
+    use: 'vanilla bean paste'
+    note: '1:1 by volume, and the preferred form everywhere. Higher aromatic load than extract, and the syrup base holds up better under baking heat. Worth the modest cost even where vanilla is a supporting note.'
   - for: 'vanilla extract (alcohol-free applications, religious or dietary)'
     use: 'glycerin-based vanilla extract'
     note: 'Sold by Frontier and a few specialty brands. Uses food-grade glycerin instead of ethanol; the extracted aromatic profile is similar but slightly less efficient at pulling minor compounds, so flavor is somewhat lighter. Use 1:1.'

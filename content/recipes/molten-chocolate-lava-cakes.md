@@ -8,7 +8,7 @@ title: 'Molten chocolate lava cakes'
 desc: 'Two 4-inch molten chocolate cakes built on brown butter and 70% dark chocolate, lifted by a ribbon-stage egg foam with an extra yolk for a custard-thick core, and baked hot and fast so the rim sets while the center stays liquid. About 30 minutes start to finish, one saucepan and one bowl.'
 metaDesc: 'Molten chocolate lava cakes in two 4-inch pans: brown butter, 70% dark chocolate, espresso, ribbon-whipped eggs, 12 minutes at 425°F for a liquid center. Weeknight-fast.'
 tags: ['cake', 'weeknight', 'quick', 'make-ahead', 'baked', 'comfort']
-updated: '2026-10-29'
+updated: '2026-11-14'
 
 servings: 2
 yield_note: 'two 4-inch cakes, one per person; scale to 1 serving for a single pan (1 egg + 1 yolk)'
@@ -65,8 +65,8 @@ ingredients:
     unit: 'g'
     note: '(½ tsp)'
   - group: 'Phase 2, brown butter and chocolate'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 2
     unit: 'g'
     note: '(½ tsp)'
@@ -119,7 +119,7 @@ steps:
   - text: 'Melt the 100 g / 7 tbsp butter in a small light-colored saucepan over medium heat. It foams, the foam subsides, and the milk solids on the bottom turn amber and smell of toasted hazelnut, about 4 to 5 minutes. Pull the pan off the burner the moment it reaches amber; the solids go from brown to burnt within 20 seconds.'
     technique: 'brown-butter'
     time_min: 5
-  - text: 'Let the brown butter stand off heat for 2 minutes so it drops below the scorch range for chocolate. Add the 120 g / 4¼ oz chopped dark chocolate and leave it untouched for 1 minute, then stir slowly with a wooden spoon until smooth and glossy. Dissolve the 1 g / ½ tsp instant espresso powder in the 2 g / ½ tsp vanilla extract and stir it in. The mixture should read 45 to 50°C (113 to 122°F): warm to the touch, not hot. If any chocolate remains unmelted, set the saucepan over the lowest heat for 10-second bursts.'
+  - text: 'Let the brown butter stand off heat for 2 minutes so it drops below the scorch range for chocolate. Add the 120 g / 4¼ oz chopped dark chocolate and leave it untouched for 1 minute, then stir slowly with a wooden spoon until smooth and glossy. Dissolve the 1 g / ½ tsp instant espresso powder in the 2 g / ½ tsp vanilla bean paste and stir it in. The mixture should read 45 to 50°C (113 to 122°F): warm to the touch, not hot. If any chocolate remains unmelted, set the saucepan over the lowest heat for 10-second bursts.'
     technique: 'chocolate-butter-emulsion'
     time_min: 4
   - text: 'In a medium bowl, beat the 2 room-temperature eggs, 2 egg yolks, 50 g / ¼ cup granulated sugar, and 1.5 g / ¼ tsp fine sea salt with an electric hand mixer on high for 3 to 4 minutes (or a balloon whisk for about 6). Stop at the ribbon stage: the mixture is pale, roughly tripled, and a trail dropped from the beaters holds on the surface for 3 seconds. This foam is the only lift the cake gets, and the dissolved salt seasons the chocolate from the inside.'
@@ -153,6 +153,9 @@ modifications:
     kind: 'dietary'
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'dark chocolate (70% cacao)'
     use: '60 to 64% bittersweet chocolate'
     note: 'Sweeter and softer. Cut the granulated sugar to 35 g so the cake does not read as candy. Avoid chocolate chips: their stabilizers resist melting into a smooth emulsion.'

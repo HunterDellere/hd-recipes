@@ -8,7 +8,7 @@ title: 'Thai iced tea (no dye)'
 desc: 'Small-batch Thai iced tea built on whole spices and loose-leaf black tea — no orange food coloring, low astringency, evaporated milk float.'
 metaDesc: 'Homemade Thai iced tea without artificial color. Spice decoction, gentle off-heat tea steep, condensed milk sweetener, evaporated milk float.'
 tags: []
-updated: '2026-04-26'
+updated: '2026-11-14'
 
 servings: 2
 time:
@@ -65,8 +65,8 @@ ingredients:
     unit: 'g'
     note: '(2 tbsp)'
   - group: 'Sweetener and finish'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 2.5
     unit: 'g'
     note: '(½ tsp)'
@@ -94,7 +94,7 @@ steps:
     time_min: 5
   - text: 'Strain through a fine sieve into a heatproof jar. Discard the spent leaves and spices.'
     time_min: 1
-  - text: 'While still steaming hot, whisk in sugar and condensed milk until fully dissolved. Stir in vanilla and almond extracts.'
+  - text: 'While still steaming hot, whisk in sugar and condensed milk until fully dissolved. Stir in the 2.5 g / ½ tsp vanilla bean paste and the almond extract.'
     time_min: 2
   - text: 'Cool to room temperature (about 20 minutes), or chill rapidly in the fridge or freezer.'
     time_min: 20
@@ -104,6 +104,9 @@ steps:
     time_min: 1
 
 substitutions:
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract'
+    note: '1:1 by volume. Fallback only: you lose the seeds and some aromatic depth.'
   - for: 'condensed milk'
     use: 'sweetened condensed coconut milk'
     note: 'Dairy-free version. Use full-fat coconut milk for the float, too.'
