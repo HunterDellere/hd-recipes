@@ -14,7 +14,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 38,
+      "usedInCount": 42,
       "hasNutrition": true
     }
   },
@@ -175,6 +175,100 @@
       "timeMode": "total",
       "activeMinutes": 40,
       "filterMinutes": 40
+    }
+  },
+  {
+    "path": "pages/recipes/chocolate-mug-cake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Chocolate mug cake",
+    "desc": "A single-serving, eggless chocolate cake mixed and microwaved in one mug in under five minutes, with a square of dark chocolate pushed into the center to melt into a molten core. The cocoa is bloomed in warm milk right in the mug first, and the bake stops while the top is still faintly damp, which is the whole difference between tender and rubbery.",
+    "tags": [
+      "cake",
+      "sweet",
+      "quick",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "chocolate-mug-cake",
+    "cuisine": "American",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 1,
+    "time": {
+      "prep_min": 3,
+      "cook_min": 2,
+      "total_min": 6,
+      "active_min": 4
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar, packed",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate, 60 to 70%",
+        "slug": "dark-chocolate",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-cocoa"
+    ],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-11-14",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 6,
+      "diffLabel": "easy",
+      "timeLead": "6 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 4,
+      "filterMinutes": 4
     }
   },
   {
@@ -452,6 +546,222 @@
       "timeMode": "total",
       "activeMinutes": 35,
       "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/flourless-chocolate-cake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Flourless chocolate cake",
+    "desc": "A dense, fudgy, naturally gluten-free chocolate cake made from melted dark chocolate, butter, sugar, eggs, and a little cocoa, stirred together in one bowl with no whipping. Pulled from the oven while the center is barely set, it bakes into something between a brownie and a truffle, and it is better the next day.",
+    "tags": [
+      "cake",
+      "sweet",
+      "baked",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "flourless-chocolate-cake",
+    "cuisine": "French",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 10,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 25,
+      "total_min": 120,
+      "active_min": 15
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter, for the pan",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa, for the pan",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate, 60 to 70%, chopped",
+        "slug": "dark-chocolate",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, cubed",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "eggs, large, room temp",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "flaky sea salt",
+        "slug": "flaky-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "chocolate-butter-emulsion"
+    ],
+    "equipment": [
+      "digital-scale",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-11-14",
+    "_card": {
+      "swatchIndex": 13,
+      "swatchGlyph": "olive",
+      "totalMinutes": 120,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "· 2 h rest",
+      "timeMode": "active",
+      "activeMinutes": 15,
+      "filterMinutes": 15
+    }
+  },
+  {
+    "path": "pages/recipes/hot-fudge-pudding-cake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Hot fudge pudding cake",
+    "desc": "A self-saucing chocolate cake: a stiff cocoa batter goes into the pan, dark brown sugar and cocoa are scattered on top, and hot water is poured over everything without stirring. In the oven the cake rises through the sugar syrup and the syrup sinks underneath, thickening into a hot fudge sauce. One dish, no frosting, pantry staples only.",
+    "tags": [
+      "cake",
+      "pudding",
+      "sweet",
+      "baked",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "hot-fudge-pudding-cake",
+    "cuisine": "American",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 35,
+      "total_min": 60,
+      "active_min": 12
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "dark chocolate, chopped",
+        "slug": "dark-chocolate",
+        "optional": false
+      },
+      {
+        "item": "dark brown sugar, packed",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "hot water or hot brewed coffee",
+        "slug": "water",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-cocoa"
+    ],
+    "equipment": [
+      "digital-scale"
+    ],
+    "added": "2026-11-14",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 12,
+      "filterMinutes": 12
     }
   },
   {
@@ -1284,6 +1594,113 @@
     }
   },
   {
+    "path": "pages/recipes/wacky-cake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Wacky cake",
+    "desc": "The egg-free, dairy-free chocolate cake from American wartime rationing, mixed directly in the baking pan. Vinegar and baking soda do all the lifting, oil keeps the crumb soft for days, and blooming the cocoa in hot coffee before it hits the flour turns a thrift cake into a genuinely deep chocolate one.",
+    "tags": [
+      "cake",
+      "sweet",
+      "baked",
+      "comfort",
+      "make-ahead"
+    ],
+    "status": "complete",
+    "_slug": "wacky-cake",
+    "cuisine": "American",
+    "course": "dessert",
+    "difficulty": "easy",
+    "servings": 9,
+    "time": {
+      "prep_min": 10,
+      "cook_min": 32,
+      "total_min": 75,
+      "active_min": 10
+    },
+    "updated": "2026-11-14",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "item": "hot brewed coffee or hot water",
+        "optional": false
+      },
+      {
+        "item": "Dutch-process cocoa",
+        "slug": "dutch-process-cocoa",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "white wine vinegar or apple cider vinegar",
+        "slug": "white-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar, packed",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "blooming-cocoa"
+    ],
+    "equipment": [
+      "digital-scale",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-11-14",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 75,
+      "diffLabel": "easy",
+      "timeLead": "10 min",
+      "timeAnnotation": "· 1 h rest",
+      "timeMode": "active",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
     "path": "pages/recipes/gari-pickled-ginger.html",
     "type": "recipe",
     "category": "recipes",
@@ -1749,7 +2166,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -14335,7 +14752,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "drop",
       "primaryTag": null,
-      "usedInCount": 12,
+      "usedInCount": 13,
       "hasNutrition": false
     }
   },
@@ -56277,7 +56694,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 156,
+      "usedInCount": 158,
       "hasNutrition": true
     }
   },
@@ -57080,7 +57497,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 10,
+      "usedInCount": 11,
       "hasNutrition": false
     }
   },
@@ -67758,7 +68175,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 3
+      "usedInCount": 4
     }
   },
   {
@@ -69226,7 +69643,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 74,
+      "usedInCount": 77,
       "hasNutrition": true
     }
   },
@@ -69283,7 +69700,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 105,
+      "usedInCount": 107,
       "hasNutrition": true
     }
   },
@@ -69323,7 +69740,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 13,
+      "usedInCount": 14,
       "hasNutrition": true
     }
   },
@@ -69384,7 +69801,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": "egg",
-      "usedInCount": 111,
+      "usedInCount": 112,
       "hasNutrition": true
     }
   },
@@ -69441,7 +69858,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -69749,7 +70166,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 53,
+      "usedInCount": 55,
       "hasNutrition": true
     }
   },
@@ -69924,7 +70341,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 23
+      "usedInCount": 24
     }
   },
   {
@@ -70494,7 +70911,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 41
+      "usedInCount": 44
     }
   },
   {
@@ -70909,7 +71326,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 18,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -70928,7 +71345,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -70987,7 +71404,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 9,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -71027,7 +71444,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 13,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -71046,7 +71463,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 210,
+      "usedInCount": 214,
       "hasNutrition": true
     }
   },
@@ -71084,7 +71501,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 132,
+      "usedInCount": 135,
       "hasNutrition": true
     }
   },
@@ -72288,7 +72705,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 5
+      "usedInCount": 8
     }
   },
   {
