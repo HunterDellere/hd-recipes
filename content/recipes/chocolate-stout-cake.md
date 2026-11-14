@@ -74,8 +74,8 @@ ingredients:
     unit: 'each'
     note: '(50 g)'
   - group: 'Phase 1, cake'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 4
     unit: 'g'
     note: '(¾ tsp)'
@@ -133,7 +133,7 @@ steps:
   - text: 'In a small saucepan over medium-low heat, warm the flat stout (6 tbsp / 90 g) with the remaining butter (5½ tbsp / 85 g) until the butter melts and the liquid steams, about 3 minutes; do not boil, which drives off the stout''s volatile hop and roast aromatics. Off heat, whisk in the Dutch-process cocoa (¼ cup + 1 tbsp / 25 g), granulated sugar (½ cup / 100 g), and dark brown sugar (3 tbsp / 35 g) until smooth and glossy. The hot liquid blooms the cocoa, and the stout''s roasted-barley compounds stack onto the cocoa''s so the bitterness registers as chocolate depth rather than beer. Cool 5 minutes, until warm but not hot to the touch.'
     technique: 'blooming-cocoa'
     time_min: 8
-  - text: 'In a small bowl, whisk the sour cream (3½ tbsp / 50 g), the egg (1 large / 50 g), and vanilla extract (¾ tsp / 4 g) until smooth, then whisk into the cocoa mixture. The sour cream brings lactic acid for the soda and milk fat for a close, damp crumb.'
+  - text: 'In a small bowl, whisk the sour cream (3½ tbsp / 50 g), the egg (1 large / 50 g), and vanilla bean paste (¾ tsp / 4 g) until smooth, then whisk into the cocoa mixture. The sour cream brings lactic acid for the soda and milk fat for a close, damp crumb.'
     time_min: 2
   - text: 'Whisk the all-purpose flour (¾ cup / 90 g), baking soda (½ tsp / 3 g), and fine sea salt (¼ tsp / 1.5 g) together, then add to the wet and whisk only until no dry streaks remain. The batter is loose and shiny. Overmixing develops gluten and tunnels the crumb.'
     time_min: 2
@@ -170,10 +170,10 @@ substitutions:
     use: 'full-fat Greek yogurt (same weight)'
     note: 'Slightly tangier and leaner; the crumb is a touch less rich.'
   - for: 'vanilla bean paste'
-    use: 'vanilla extract (½ tsp / 2 g)'
-    note: 'Fine in a pinch; the frosting is never heated, so paste reads more clearly.'
+    use: 'vanilla extract (same amount as the paste in each phase)'
+    note: '1:1 by volume. Fine in a pinch, but you lose the seeds and some aromatic depth, most noticeably in the frosting, which is never heated.'
 
-homemade_exempt: ['dry Irish stout, flat', 'unsalted butter, plus a little for the pans', 'Dutch-process cocoa', 'granulated sugar', 'dark brown sugar, packed', 'sour cream, room temp', 'egg, large, room temp', 'vanilla extract', 'all-purpose flour', 'baking soda', 'fine sea salt', 'full-fat block cream cheese, room temp', 'powdered sugar, sifted', 'vanilla bean paste', 'heavy cream, cold']
+homemade_exempt: ['dry Irish stout, flat', 'unsalted butter, plus a little for the pans', 'Dutch-process cocoa', 'granulated sugar', 'dark brown sugar, packed', 'sour cream, room temp', 'egg, large, room temp', 'all-purpose flour', 'baking soda', 'fine sea salt', 'full-fat block cream cheese, room temp', 'powdered sugar, sifted', 'vanilla bean paste', 'heavy cream, cold']
 
 notes: |
   What the stout is doing. Dry Irish stout is brewed with roasted unmalted barley, which carries the same pyrazine and furan roast compounds as coffee and cocoa. Used as the liquid, it plays the role coffee plays in most chocolate cakes: it amplifies the chocolate without announcing itself. The alcohol mostly bakes off; what stays is roast, a faint malt sweetness, and a mild acidity that helps the soda. Warm it gently with the butter rather than boiling, so the aromatics survive into the batter.

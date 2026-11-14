@@ -96,8 +96,8 @@ ingredients:
     unit: 'each'
     note: '(100 g)'
   - group: 'Phase 1, cake'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 5
     unit: 'g'
     note: '(1 tsp)'
@@ -131,8 +131,8 @@ ingredients:
     unit: 'g'
     note: '(about 3⅓ cups)'
   - group: 'Phase 2, icing'
-    item: 'vanilla extract'
-    slug: 'vanilla-extract'
+    item: 'vanilla bean paste'
+    slug: 'vanilla-bean-paste'
     qty: 5
     unit: 'g'
     note: '(1 tsp)'
@@ -157,14 +157,14 @@ steps:
   - text: 'In a medium saucepan, bring the remaining butter (1 cup / 225 g), brewed coffee (1 cup / 240 g), and Dutch-process cocoa (⅓ cup / 30 g) to a full boil over medium heat, whisking. Boiling is the bloom: the near-100°C liquid swells the cocoa''s starch and frees the fat-bound aromatics that stay dusty in a cold batter, and the coffee''s roasted pyrazines overlap with the cocoa''s so the chocolate reads deeper, not coffee-flavored.'
     technique: 'blooming-cocoa'
     time_min: 4
-  - text: 'Pour the boiling cocoa mixture over the dry ingredients and whisk until smooth. The heat partially gelatinizes the flour starch, which is why this cake bakes fudgy and dense-crumbed rather than fluffy. In a small bowl, whisk the buttermilk (½ cup / 120 g), the eggs (2 large / 100 g), and vanilla extract (1 tsp / 5 g), then whisk into the warm batter in one addition until no streaks remain. The batter will be thin and pourable.'
+  - text: 'Pour the boiling cocoa mixture over the dry ingredients and whisk until smooth. The heat partially gelatinizes the flour starch, which is why this cake bakes fudgy and dense-crumbed rather than fluffy. In a small bowl, whisk the buttermilk (½ cup / 120 g), the eggs (2 large / 100 g), and vanilla bean paste (1 tsp / 5 g), then whisk into the warm batter in one addition until no streaks remain. The batter will be thin and pourable.'
     time_min: 3
   - text: 'Pour into the prepared pan, tilt to level, and bake 18 to 22 minutes, until the center springs back and a tester comes out with a few moist crumbs, or the center reads 205°F (96°C). A sheet this thin overshoots fast; pull it at the first clean spring-back.'
     time_min: 20
   - text: 'While the cake bakes, brown the butter for the icing: melt the unsalted butter (½ cup / 115 g) in a light-colored saucepan over medium heat and cook, swirling, until the foam subsides and the milk solids turn hazelnut brown, 4 to 6 minutes. Time it so the butter finishes as the cake comes out.'
     technique: 'brown-butter'
     time_min: 6
-  - text: 'Off heat, whisk the Dutch-process cocoa (¼ cup / 22 g) into the brown butter, then the whole milk (7 tbsp / 105 g); it will sputter. Return to medium heat just until it bubbles at the edges. Off heat, whisk in the sifted powdered sugar (about 3⅓ cups / 400 g), vanilla extract (1 tsp / 5 g), and fine sea salt (¼ tsp / 1.5 g) until glossy, then stir in the chopped pecans. The extra tablespoon of milk replaces the water lost while browning.'
+  - text: 'Off heat, whisk the Dutch-process cocoa (¼ cup / 22 g) into the brown butter, then the whole milk (7 tbsp / 105 g); it will sputter. Return to medium heat just until it bubbles at the edges. Off heat, whisk in the sifted powdered sugar (about 3⅓ cups / 400 g), vanilla bean paste (1 tsp / 5 g), and fine sea salt (¼ tsp / 1.5 g) until glossy, then stir in the chopped pecans. The extra tablespoon of milk replaces the water lost while browning.'
     time_min: 3
   - text: 'Pour the hot icing over the hot cake immediately and spread it to the edges with an offset spatula in a few strokes. Warm crumb plus hot icing lets the surface fudge into the top of the cake; icing a cool cake leaves a separate, crackly shell. Sprinkle with flaky sea salt (2 pinches / 1 g) while it is still wet.'
     time_min: 2
@@ -196,11 +196,14 @@ substitutions:
   - for: 'buttermilk'
     use: '½ cup / 120 g whole milk with 1½ tsp lemon juice or white vinegar'
     note: 'Rest 5 minutes to clabber. Same acid for the soda, slightly thinner body.'
+  - for: 'vanilla bean paste'
+    use: 'vanilla extract (same amount in each phase)'
+    note: '1:1 by volume. Fine in a pinch, but you lose the seeds and some aromatic depth, most noticeably in the icing.'
   - for: 'pecan halves'
     use: 'walnuts'
     note: 'More tannic and bitter. Toast the same way; the brown-butter icing softens the edge.'
 
-homemade_exempt: ['unsalted butter, plus a little for the pan', 'brewed coffee', 'Dutch-process cocoa', 'all-purpose flour', 'granulated sugar', 'baking soda', 'baking powder', 'fine sea salt', 'ground cinnamon', 'buttermilk', 'eggs, large, room temp', 'vanilla extract', 'pecan halves', 'unsalted butter', 'whole milk', 'powdered sugar, sifted', 'flaky sea salt, to finish']
+homemade_exempt: ['unsalted butter, plus a little for the pan', 'brewed coffee', 'Dutch-process cocoa', 'all-purpose flour', 'granulated sugar', 'baking soda', 'baking powder', 'fine sea salt', 'ground cinnamon', 'buttermilk', 'eggs, large, room temp', 'vanilla bean paste', 'pecan halves', 'unsalted butter', 'whole milk', 'powdered sugar, sifted', 'flaky sea salt, to finish']
 
 notes: |
   Why boil the base. Every Texas sheet cake starts by boiling butter, liquid, and cocoa, and the step is doing more than melting. Hot liquid blooms the cocoa, and pouring it over the flour pre-gelatinizes some of the starch, so the batter bakes into a dense, moist, almost brownie-adjacent crumb in a 20-minute bake. Hot coffee in place of water is the cheapest depth upgrade in chocolate baking: its roast compounds overlap with cocoa''s and amplify it.
