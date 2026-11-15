@@ -1,5 +1,164 @@
 [
   {
+    "path": "pages/recipes/thunder-tea-rice.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Thunder tea rice (lei cha)",
+    "desc": "The Hakka one-bowl meal: a dark green soup of green tea, Thai basil, mint, laksa leaf, cilantro, toasted sesame and peanuts, pounded to a paste and loosened with hot water, poured over jasmine rice crowned with separately stir-fried long beans, choy sum, golden tofu, sweet-salty preserved radish and roasted peanuts. Bitter, herbal and nutty in the soup; salty, sweet and crunchy on the rice.",
+    "tags": [
+      "hakka",
+      "malaysian",
+      "chinese",
+      "rice",
+      "bowl",
+      "tea",
+      "soup",
+      "herbaceous",
+      "umami",
+      "vegan",
+      "vegetarian"
+    ],
+    "status": "complete",
+    "_slug": "thunder-tea-rice",
+    "cuisine": "Malaysian Hakka",
+    "course": "lunch",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 35,
+      "total_min": 75,
+      "active_min": 60
+    },
+    "updated": "2026-11-15",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "jasmine rice",
+        "slug": "jasmine-rice",
+        "optional": false
+      },
+      {
+        "item": "water, for the rice",
+        "optional": false
+      },
+      {
+        "item": "raw skinless peanuts",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "white sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "chopped sweet preserved radish (chai poh)",
+        "slug": "preserved-radish",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "firm tofu",
+        "slug": "firm-tofu",
+        "optional": false
+      },
+      {
+        "item": "long beans",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "choy sum",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the toppings",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "loose-leaf green tea",
+        "slug": "green-tea-leaves",
+        "optional": false
+      },
+      {
+        "item": "Thai basil leaves",
+        "slug": "thai-basil",
+        "optional": false
+      },
+      {
+        "item": "mint leaves",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "laksa leaf (Vietnamese coriander, daun kesum)",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the paste",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "white pepper",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "hot water, for the soup",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "mortar-pounding",
+      "shallow-frying",
+      "steeping-tea"
+    ],
+    "equipment": [
+      "wok",
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-15",
+    "_card": {
+      "swatchIndex": 6,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 75,
+      "diffLabel": "medium",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
     "path": "pages/ingredients/vanilla-bean-paste.html",
     "type": "ingredient",
     "category": "ingredients",
@@ -4874,7 +5033,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 16
+      "usedInCount": 17
     }
   },
   {
@@ -13504,7 +13663,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "cup",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": true
     }
   },
@@ -28991,7 +29150,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 2,
+      "usedInCount": 3,
       "hasNutrition": false
     }
   },
@@ -56194,7 +56353,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 20,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -56277,7 +56436,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 156,
+      "usedInCount": 157,
       "hasNutrition": true
     }
   },
@@ -56790,7 +56949,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 35,
+      "usedInCount": 36,
       "hasNutrition": true
     }
   },
@@ -57144,7 +57303,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": false
     }
   },
@@ -61431,7 +61590,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 37
+      "usedInCount": 38
     }
   },
   {
@@ -61561,7 +61720,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 14
+      "usedInCount": 15
     }
   },
   {
@@ -61934,7 +62093,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 72,
+      "usedInCount": 73,
       "hasNutrition": true
     }
   },
@@ -62108,7 +62267,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 8,
+      "usedInCount": 9,
       "hasNutrition": true
     }
   },
@@ -62541,7 +62700,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 19,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -62587,7 +62746,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 1,
+      "usedInCount": 2,
       "hasNutrition": false
     }
   },
@@ -67934,7 +68093,7 @@
       "swatchIndex": 12,
       "swatchGlyph": "grain",
       "primaryTag": null,
-      "usedInCount": 30,
+      "usedInCount": 31,
       "hasNutrition": true
     }
   },
@@ -69422,7 +69581,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 271,
+      "usedInCount": 272,
       "hasNutrition": true
     }
   },
@@ -69730,7 +69889,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 29,
+      "usedInCount": 30,
       "hasNutrition": true
     }
   },
@@ -71084,7 +71243,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 132,
+      "usedInCount": 133,
       "hasNutrition": true
     }
   },
@@ -71122,7 +71281,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 280,
+      "usedInCount": 281,
       "hasNutrition": true
     }
   },
@@ -72464,7 +72623,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 1
+      "usedInCount": 2
     }
   },
   {

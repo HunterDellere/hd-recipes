@@ -1,5 +1,164 @@
 [
   {
+    "path": "pages/recipes/thunder-tea-rice.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Thunder tea rice (lei cha)",
+    "desc": "The Hakka one-bowl meal: a dark green soup of green tea, Thai basil, mint, laksa leaf, cilantro, toasted sesame and peanuts, pounded to a paste and loosened with hot water, poured over jasmine rice crowned with separately stir-fried long beans, choy sum, golden tofu, sweet-salty preserved radish and roasted peanuts. Bitter, herbal and nutty in the soup; salty, sweet and crunchy on the rice.",
+    "tags": [
+      "hakka",
+      "malaysian",
+      "chinese",
+      "rice",
+      "bowl",
+      "tea",
+      "soup",
+      "herbaceous",
+      "umami",
+      "vegan",
+      "vegetarian"
+    ],
+    "status": "complete",
+    "_slug": "thunder-tea-rice",
+    "cuisine": "Malaysian Hakka",
+    "course": "lunch",
+    "difficulty": "medium",
+    "servings": 4,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 35,
+      "total_min": 75,
+      "active_min": 60
+    },
+    "updated": "2026-11-15",
+    "diet": [
+      "vegan",
+      "vegetarian",
+      "dairy-free",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "item": "jasmine rice",
+        "slug": "jasmine-rice",
+        "optional": false
+      },
+      {
+        "item": "water, for the rice",
+        "optional": false
+      },
+      {
+        "item": "raw skinless peanuts",
+        "slug": "peanuts",
+        "optional": false
+      },
+      {
+        "item": "white sesame seeds",
+        "slug": "sesame-seeds",
+        "optional": false
+      },
+      {
+        "item": "chopped sweet preserved radish (chai poh)",
+        "slug": "preserved-radish",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "firm tofu",
+        "slug": "firm-tofu",
+        "optional": false
+      },
+      {
+        "item": "long beans",
+        "slug": "yardlong-bean",
+        "optional": false
+      },
+      {
+        "item": "choy sum",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "garlic",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the toppings",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "loose-leaf green tea",
+        "slug": "green-tea-leaves",
+        "optional": false
+      },
+      {
+        "item": "Thai basil leaves",
+        "slug": "thai-basil",
+        "optional": false
+      },
+      {
+        "item": "mint leaves",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "laksa leaf (Vietnamese coriander, daun kesum)",
+        "optional": false
+      },
+      {
+        "item": "cilantro, leaves and tender stems",
+        "slug": "cilantro",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the paste",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "white pepper",
+        "slug": "white-pepper",
+        "optional": false
+      },
+      {
+        "item": "hot water, for the soup",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "mortar-pounding",
+      "shallow-frying",
+      "steeping-tea"
+    ],
+    "equipment": [
+      "wok",
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-15",
+    "_card": {
+      "swatchIndex": 6,
+      "swatchGlyph": "bowl",
+      "totalMinutes": 75,
+      "diffLabel": "medium",
+      "timeLead": "1 h 15 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
     "path": "pages/recipes/chocolate-stout-cake.html",
     "type": "recipe",
     "category": "recipes",
@@ -2923,209 +3082,6 @@
       "timeMode": "active",
       "activeMinutes": 60,
       "filterMinutes": 60
-    }
-  },
-  {
-    "path": "pages/recipes/chunky-beef-and-bean-chili.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Chunky beef and bean chili",
-    "desc": "Store-bought chili-cut beef, salted ahead and browned in bacon fat, braised with a purée of toasted ancho, guajillo, and chipotle in adobo, then finished with kidney beans and a masa-thickened gravy. A shorter braise than a whole-chuck chili because the pieces are small, and a lid on the pot because chili-cut packs often include leaner round.",
-    "tags": [
-      "beef",
-      "stew",
-      "braise",
-      "spicy",
-      "smoky",
-      "one-pot",
-      "make-ahead",
-      "freezer-friendly",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "chunky-beef-and-bean-chili",
-    "cuisine": "American",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 35,
-      "cook_min": 175,
-      "total_min": 210,
-      "active_min": 65
-    },
-    "updated": "2026-10-17",
-    "diet": [
-      "nut-free"
-    ],
-    "ingredients": [
-      {
-        "item": "chili-cut beef",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "dried ancho chiles",
-        "slug": "dried-mexican-chiles",
-        "optional": false
-      },
-      {
-        "item": "dried guajillo chiles",
-        "slug": "dried-mexican-chiles",
-        "optional": false
-      },
-      {
-        "item": "cumin seeds",
-        "slug": "cumin-seeds",
-        "optional": false
-      },
-      {
-        "item": "boiling water, for soaking",
-        "optional": false
-      },
-      {
-        "item": "chipotle chiles in adobo, with sauce",
-        "slug": "chipotle-in-adobo",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "Mexican oregano",
-        "slug": "mexican-oregano",
-        "optional": false
-      },
-      {
-        "item": "beef broth, for blending",
-        "optional": false
-      },
-      {
-        "item": "thick-cut bacon",
-        "slug": "bacon",
-        "optional": false
-      },
-      {
-        "item": "neutral oil, if needed",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "yellow onion",
-        "slug": "yellow-onion",
-        "optional": false
-      },
-      {
-        "item": "poblano pepper",
-        "slug": "poblano-pepper",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, for the vegetables",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "tomato paste",
-        "slug": "tomato-paste",
-        "optional": false
-      },
-      {
-        "item": "Mexican lager or amber beer",
-        "optional": false
-      },
-      {
-        "item": "canned whole tomatoes",
-        "slug": "canned-san-marzano-tomatoes",
-        "optional": false
-      },
-      {
-        "item": "beef broth, for the braise",
-        "optional": false
-      },
-      {
-        "item": "Worcestershire sauce",
-        "slug": "worcestershire-sauce",
-        "optional": false
-      },
-      {
-        "item": "dark brown sugar",
-        "slug": "dark-brown-sugar",
-        "optional": false
-      },
-      {
-        "item": "cooked dark red kidney beans, drained",
-        "optional": false
-      },
-      {
-        "item": "masa harina",
-        "slug": "masa-harina",
-        "optional": false
-      },
-      {
-        "item": "cool water, for the masa",
-        "optional": false
-      },
-      {
-        "item": "apple cider vinegar",
-        "slug": "apple-cider-vinegar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt, to adjust",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "sharp cheddar",
-        "optional": false
-      },
-      {
-        "item": "sour cream",
-        "slug": "sour-cream",
-        "optional": false
-      },
-      {
-        "item": "scallions",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "limes",
-        "slug": "lime",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "dry-toasting",
-      "lardon-rendering",
-      "maillard-sear",
-      "blooming-aromatics",
-      "deglazing"
-    ],
-    "equipment": [
-      "dutch-oven",
-      "digital-scale",
-      "cast-iron skillet",
-      "blender"
-    ],
-    "added": "2026-10-17",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "skillet",
-      "totalMinutes": 210,
-      "diffLabel": "medium",
-      "timeLead": "1 h 5 min",
-      "timeAnnotation": "· 2 h rest",
-      "timeMode": "active",
-      "activeMinutes": 65,
-      "filterMinutes": 65
     }
   }
 ]
