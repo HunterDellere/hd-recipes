@@ -1911,6 +1911,25 @@ export function renderSafetyNotes(fm, currentPath) {
     </aside>`;
 }
 
+/**
+ * Optional cooking timeline for a hub whose members are cooked together
+ * (a holiday meal). Each block is a time window with ordered tasks.
+ *   plan: [{ when: 'The day before', items: ['...', '...'] }]
+ */
+function renderHubPlan(fm) {
+  const blocks = (fm.plan || []).filter(b => b && b.when && Array.isArray(b.items) && b.items.length);
+  if (!blocks.length) return '';
+  const html = blocks.map(b => `
+      <h3 class="hub-plan-when">${escapeHtml(String(b.when))}</h3>
+      <ul class="recipe-prelude-list">${b.items.map(i => `<li>${escapeHtml(String(i))}</li>`).join('')}</ul>`).join('');
+  return `
+    <section class="recipe-prelude-section hub-plan">
+      <div class="section-head"><h2>Game plan</h2><p class="section-blurb">When to make each part, so everything lands hot at the same time.</p></div>
+      <div class="recipe-prelude">${html}
+      </div>
+    </section>`;
+}
+
 export function renderHubBody(fm, slug, category, entriesByPath) {
   const members = (fm.members || []).map(m => {
     const target = entriesByPath.get(m.slug) || entriesByPath.get(`pages/${m.slug}.html`);
@@ -1939,7 +1958,7 @@ export function renderHubBody(fm, slug, category, entriesByPath) {
       ${fm.desc ? `<p class="topic-hero-desc">${escapeHtml(fm.desc)}</p>` : ''}
     </header>
     <div class="hub-cards">${members}
-    </div>
+    </div>${renderHubPlan(fm)}
   </main>
 </div>`;
 }

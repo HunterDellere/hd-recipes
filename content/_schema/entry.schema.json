@@ -265,6 +265,18 @@
         }
       },
       "description": "For hub pages: curated recipe collections"
+    },
+    "plan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["when", "items"],
+        "properties": {
+          "when": { "type": "string" },
+          "items": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        }
+      },
+      "description": "For hub pages: an optional cooking timeline for making the members together (a holiday meal). Each block names a time window and the tasks in it, in order."
     }
   }
 }
