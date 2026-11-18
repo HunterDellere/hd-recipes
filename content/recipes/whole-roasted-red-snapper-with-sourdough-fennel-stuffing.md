@@ -11,7 +11,7 @@ tags: ['fish', 'seafood', 'roast', 'holiday', 'share-plate', 'herbaceous', 'citr
 updated: '2026-11-18'
 
 servings: 6
-yield_note: 'two fish of 1.1 to 1.4 kg each plus a small dish of extra stuffing; serves 8 to 10 alongside a second main'
+yield_note: 'two fish of 1.1 to 1.4 kg each plus a dish of extra stuffing; serves 8 to 10 alongside a second main'
 time:
   prep_min: 45
   cook_min: 40
@@ -29,7 +29,7 @@ source:
 safety_notes:
   - for: 'snapper pulled at 57 °C / 135 °F (below the USDA published-safe 63 °C / 145 °F for fish)'
     ref: 'safety/seafood-doneness#cooking-targets-for-fin-fish'
-    why: 'Restaurant practice pulls lean whole fish at just-set so the flake stays moist; carryover during the 5-minute rest adds 2 to 3 degrees. Cooks who are pregnant, immunocompromised, very young, or elderly should roast to 63 °C. The stuffing inside the cavity must also reach 63 °C / 145 °F, because it has absorbed raw fish juices; probe its center separately.'
+    why: 'Restaurant practice pulls lean whole fish at just-set so the flake stays moist; carryover during the 5-minute rest adds 2 to 3 degrees. Cooks who are pregnant, immunocompromised, very young, or elderly should roast to 63 °C. The stuffing inside the cavity must reach 74 °C / 165 °F, the food-safety standard for stuffing cooked inside fish, because it absorbs raw fish juices. It goes in hot so it gets there in time; probe its center separately.'
 
 before_you_start:
   - 'The day before: cut the sourdough into 2 cm cubes and leave them spread on a sheet pan, uncovered, overnight to stale. Dry bread absorbs the brown butter and fish juices without collapsing into paste. If you forget, toast the cubes at 150 °C / 300 °F for 20 to 25 minutes until dry but not colored.'
@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 20
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal; about 0.8% of whole-fish weight, which is roughly 1.5% of the edible flesh)'
+    note: '(7 tsp Diamond Crystal; about 0.8% of whole-fish weight, which is roughly 1.5% of the edible flesh)'
 
   - group: 'Phase 2, stuffing'
     item: 'sourdough bread, staled'
@@ -195,12 +195,12 @@ ingredients:
     note: '(2 tbsp chopped)'
 
 steps:
-  - text: 'Dry-brine the fish. Pat both fish (2500 g total) bone-dry inside and out, then cut 3 diagonal slashes 1 cm deep on each side, down to but not through the bone. Season the outside, the slashes, and the cavity with the 20 g / 2 tbsp kosher salt. Lay the fish on a rack over a sheet pan and refrigerate uncovered for 30 to 60 minutes. The salt dissolves into surface moisture, diffuses into the flesh, and loosens the myosin so the flesh holds water during roasting. The rack lets the skin dry so it blisters instead of steaming.'
+  - text: 'Dry-brine the fish. Pat both fish (2500 g total) bone-dry inside and out, then cut 3 diagonal slashes 1 cm deep on each side. Season the outside, the slashes, and the cavity with the 20 g / 7 tsp kosher salt. Lay the fish on a rack over a sheet pan and refrigerate uncovered for 30 to 60 minutes. The salt dissolves into surface moisture, diffuses into the flesh, and loosens the myosin so the flesh holds water during roasting. The rack lets the skin dry so it blisters instead of steaming.'
     technique: 'dry-brining'
     time_min: 45
-  - text: 'Heat the oven. Set one rack in the lower-middle position and heat the oven to 220 °C / 425 °F. Line a half sheet pan with parchment paper. Butter a small 1 L (1 quart) baking dish for the extra stuffing.'
+  - text: 'Heat the oven. Set one rack in the lower-middle position and heat the oven to 220 °C / 425 °F. Line a half sheet pan with parchment paper. Butter a 2 L (8 inch square) baking dish for the extra stuffing with 10 g / 2 tsp of the stuffing butter.'
     time_min: 2
-  - text: 'Brown the butter for the stuffing. Melt the 115 g / 8 tbsp butter in a wide 30 cm / 12-inch skillet over medium heat. Swirl as it foams. After 4 to 5 minutes the milk solids sink and turn amber, and the butter smells of toasted hazelnut. Pull the pan off the heat at the first deep-amber color, because the solids go from brown to burnt in about 20 seconds.'
+  - text: 'Brown the butter for the stuffing. Melt the remaining 105 g / 7 tbsp stuffing butter in a wide 30 cm / 12-inch skillet over medium heat. Swirl as it foams. After 4 to 5 minutes the milk solids sink and turn amber, and the butter smells of toasted hazelnut. Pull the pan off the heat at the first deep-amber color, because the solids go from brown to burnt in about 20 seconds.'
     technique: 'brown-butter'
     time_min: 5
   - text: 'Sweat the aromatics and melt the anchovy. Return the pan to medium-low heat. Add the 300 g / 1 bulb diced fennel, 120 g / 2 ribs diced celery, 100 g / 2 shallots diced shallot, and 3 g / 1 tsp kosher salt. The salt draws water from the vegetables so they soften without browning. Sweat, stirring with a wooden spoon, for 8 to 10 minutes until the fennel is translucent and tender. Add the 15 g / 4 cloves minced garlic and the 15 g / 4 to 5 fillets chopped anchovy, and stir for 1 minute. The anchovy dissolves into the fat and becomes a savory depth (free glutamate and inosinate), not a fishy flavor.'
@@ -211,11 +211,11 @@ steps:
     time_min: 3
   - text: 'Build the stuffing. In a large bowl, combine the 300 g / 6 cups dried sourdough cubes with the hot vegetable mixture and every bit of the butter. Add the 6 g / 2 tbsp lemon zest, 15 g / ½ cup chopped parsley, 8 g / ¼ cup chopped dill, 5 g / 2 tbsp chopped fennel fronds, and 2 g / 1 tsp black pepper. Fold with the wooden spoon until the liquid is absorbed. The cubes should be damp through but still hold their shape. Taste a cube: it should be seasoned enough to eat as it is, because the fish juices dilute it in the oven. If it tastes flat, add salt a pinch at a time.'
     time_min: 5
-  - text: 'Stuff the fish. Lay the fish diagonally on the lined sheet pan, head to tail. Fill each cavity loosely with stuffing, about 250 g / 2 cups per fish. Do not pack it: tight stuffing does not heat through before the fish overcooks. Put the remaining stuffing in the buttered baking dish.'
+  - text: 'Stuff the fish. Lay the fish diagonally on the lined sheet pan, head to tail. The stuffing must be hot when it goes in, at least 60 °C / 140 °F; if it has cooled or was made ahead, rewarm it covered in the buttered dish in the heating oven first. Fill each cavity loosely with hot stuffing, about 250 g / 2 cups per fish. Do not pack it: tight stuffing does not heat through before the fish overcooks. Put the remaining stuffing in the buttered baking dish.'
     time_min: 5
   - text: 'Oil and top. Rub the 30 g / 2 tbsp olive oil over the skin of both fish. Tuck 2 or 3 of the 120 g / 1 lemon slices into the slashes and lay the rest over the top of each fish.'
     time_min: 2
-  - text: 'Roast. Put the sheet pan on the lower-middle rack and the dish of extra stuffing beside it or on the rack above. Roast for 30 to 40 minutes. Start checking at 28 minutes. Insert an instant-read thermometer into the thickest part of the fish, just behind the head and close to the spine. Pull the fish at 57 °C / 135 °F. The visual cue: the eye has turned fully white, the dorsal fin pulls out with little resistance, and the flesh in the deepest slash is opaque and flakes when pressed. Probe the center of the stuffing too; it must read 63 °C / 145 °F. The extra stuffing is done when its top is crisp and golden, after 25 to 30 minutes.'
+  - text: 'Roast. Put the sheet pan on the lower-middle rack and the dish of extra stuffing beside it or on the rack above. Roast for 30 to 40 minutes. Start checking at 28 minutes. Insert an instant-read thermometer into the thickest part of the fish, just behind the head and close to the spine. Pull the fish at 57 °C / 135 °F. The visual cue: the eye has turned fully white, the dorsal fin pulls out with little resistance, and the flesh in the deepest slash is opaque and flakes when pressed. Probe the center of the cavity stuffing too; it must read 74 °C / 165 °F. If the fish is ready first, spoon the cavity stuffing into the baking dish and return the dish to the oven until it reads 74 °C. The extra stuffing is done when its top is crisp and golden, after 25 to 30 minutes.'
     technique: 'high-heat-dry-roasting'
     time_min: 35
   - text: 'Rest and make the sauce. Rest the fish on the pan for 5 minutes; carryover heat brings the flesh to about 60 °C. Meanwhile, melt the 85 g / 6 tbsp butter in a small saucepan over medium heat and cook it to amber, 3 to 4 minutes. Add the 25 g / 2 tbsp capers; they sputter and crisp in 30 seconds. Take the pan off the heat and add the 45 g / 3 tbsp lemon juice. It foams hard, so stand back. Stir in the 5 g / 2 tbsp chopped parsley. Taste: the sauce should be sharp enough to make you blink, because it seasons rich fish and buttery bread at once. If it is flat, add more lemon juice.'
@@ -230,11 +230,11 @@ equipment: ['instant-read-thermometer', 'wire-rack-and-sheet-pan', 'fish-spatula
 modifications:
   - for: 'whole fish'
     to: 'two thick skin-on fillets with the stuffing baked separately'
-    how: 'Use 2 skin-on snapper, striped bass, or halibut fillets of 600 to 700 g each, at least 2.5 cm thick. Salt them at 1% of their weight 30 minutes ahead. Bake all the stuffing in a 2 L (8 x 8 inch) buttered dish at 220 °C / 425 °F for 25 to 30 minutes until crisp on top. Lay the fillets skin-side up on an oiled, parchment-lined sheet pan and roast on the rack above for 12 to 15 minutes, to 55 °C / 131 °F. Serve the fillets over spoonfuls of stuffing with the same brown-butter caper sauce. There are no bones to deal with at the table, but the stuffing loses the fish juices that a cavity gives it, so moisten it with an extra 60 g / ¼ cup stock.'
+    how: 'Use 2 skin-on snapper, striped bass, or halibut fillets of 600 to 700 g each, at least 2.5 cm thick. Salt them at 1% of their weight 30 minutes ahead. Bake all the stuffing in a 23 x 33 cm / 9 x 13 inch buttered dish at 220 °C / 425 °F for 25 to 30 minutes until crisp on top. Lay the fillets skin-side up on an oiled, parchment-lined sheet pan and roast on the rack above for 12 to 15 minutes, to 55 °C / 131 °F. Serve the fillets over spoonfuls of stuffing with the same brown-butter caper sauce. There are no bones to deal with at the table, but the stuffing loses the fish juices that a cavity gives it, so moisten it with an extra 60 g / ¼ cup stock.'
     kind: 'occasion'
   - for: 'stuffing direction'
     to: 'Gulf Coast crab stuffing'
-    how: 'Reduce the sourdough to 200 g / 4 cups and fold 225 g / 8 oz picked lump crab meat into the finished stuffing, with 1 beaten egg to bind it. Omit the dill and add 2 g / ½ tsp cayenne. The crab makes the dish richer and more expensive; the stuffing must still reach 63 °C / 145 °F in the cavity.'
+    how: 'Reduce the sourdough to 200 g / 4 cups and fold 225 g / 8 oz picked lump crab meat into the finished stuffing, with 1 beaten egg to bind it. Omit the dill and add 2 g / ½ tsp cayenne. The crab makes the dish richer and more expensive; the stuffing must still reach 74 °C / 165 °F in the cavity.'
     kind: 'regional'
 
 substitutions:
@@ -274,7 +274,7 @@ pairings:
     reason: 'Peppery greens and sharp fruit cut the butter in the stuffing and sauce.'
 
 notes: |
-  Why snapper. Red snapper has firm, lean, large-flaked white flesh and a thick skin that holds the fish together when stuffed and roasted. A 1.1 to 1.4 kg fish is the size where the cavity holds a meaningful amount of stuffing, and where the flesh reaches 57 °C at about the same time the stuffing reaches 63 °C. Much larger fish overcook at the tail before the center is done; smaller fish hold too little stuffing to matter.
+  Why snapper. Red snapper has firm, lean, large-flaked white flesh and a thick skin that holds the fish together when stuffed and roasted. A 1.1 to 1.4 kg fish is the size where the cavity holds a meaningful amount of stuffing, and where the flesh is done at about the same time as hot stuffing in the cavity reaches 74 °C. Much larger fish overcook at the tail before the center is done; smaller fish hold too little stuffing to matter.
 
   Why the stuffing works inside a fish. As the fish roasts, its juices and the melted collagen from the skin and bones drain into the cavity. The dry bread absorbs them. That is the same mechanism that makes stuffing cooked inside a turkey taste better than dressing baked in a dish. The extra dish of stuffing gives the crisp, browned texture that the cavity cannot, so the table gets both.
 
@@ -282,5 +282,5 @@ notes: |
 
   Acid and fat balance. The stuffing carries 115 g of brown butter and the sauce another 85 g. Lemon zest in the stuffing, lemon slices on the fish, and lemon juice and capers in the sauce keep that fat from reading heavy. If the plate feels rich, the fix is more lemon at the table, not less butter.
 
-  Make ahead. Stale the bread the day before. Make the stuffing up to 6 hours ahead and refrigerate it covered; let it stand 20 minutes at room temperature before stuffing so the center of the cavity heats in time. Never stuff the fish ahead.
+  Make ahead. Stale the bread the day before. Make the stuffing up to 6 hours ahead and refrigerate it covered; rewarm it covered in the oven to at least 60 °C before stuffing so the cavity reaches 74 °C in time. Never stuff the fish ahead.
 ---

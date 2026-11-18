@@ -11,12 +11,12 @@ tags: ['lamb', 'roast', 'holiday', 'make-ahead', 'umami']
 updated: '2026-11-18'
 
 servings: 6
-yield_note: 'serves 6 as the only main (about 5 ribs each); serves 8 to 10 alongside a second main, at 2 to 3 ribs per person'
+yield_note: 'serves 6 as the only main (2 to 3 ribs each); serves 8 to 10 alongside a second main, at 2 to 3 ribs per person'
 time:
   prep_min: 40
   cook_min: 45
   total_min: 805
-  active_min: 50
+  active_min: 75
 difficulty: 'medium'
 cuisine: 'French'
 course: 'dinner'
@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; about 0.75% of the bone-in weight, which works out to roughly 1% of the edible meat)'
+    note: '(4¼ tsp Diamond Crystal; about 0.75% of the bone-in weight, which works out to roughly 1% of the edible meat)'
 
   - group: 'Phase 2, cranberry mostarda (1 to 7 days ahead)'
     item: 'fresh or frozen cranberries'
@@ -108,7 +108,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
 
   - group: 'Phase 3, herb crust (up to 1 day ahead)'
     item: 'homemade breadcrumbs (dried, coarse) or panko'
@@ -189,14 +189,14 @@ ingredients:
     note: '(½ tsp, for the cut faces)'
 
 steps:
-  - text: 'The night before, dry-brine. Pat the 1600 g / 2 racks of lamb dry with paper towels. If the fat cap is thicker than 3 mm, trim it down; a thick cap will not render in a 20-minute roast and eats as a waxy layer. Score the fat in a 1 cm crosshatch, cutting through the fat but not into the meat. Season all sides, including between the frenched bones, with the 12 g / 1 tbsp kosher salt. Set the racks fat-side up on a wire rack over a sheet pan and refrigerate uncovered 12 to 24 hours. The salt first draws moisture out, then the brine diffuses back into the muscle and dissolves part of the myosin, so the eye seasons through and holds more juice under heat; the uncovered rest dries the fat cap so it browns instead of steaming.'
+  - text: 'The night before, dry-brine. Pat the 1600 g / 2 racks of lamb dry with paper towels. If the fat cap is thicker than 3 mm, trim it down; a thick cap will not render in a 20-minute roast and eats as a waxy layer. Score the fat in a 1 cm crosshatch, cutting through the fat but not into the meat. Season all sides, including between the frenched bones, with the 12 g / 4¼ tsp kosher salt. Set the racks fat-side up on a wire rack over a sheet pan and refrigerate uncovered 12 to 24 hours. The salt first draws moisture out, then the brine diffuses back into the muscle and dissolves part of the myosin, so the eye seasons through and holds more juice under heat; the uncovered rest dries the fat cap so it browns instead of steaming.'
     technique: 'dry-brining'
     time_min: 720
-  - text: 'Make the mostarda (1 to 7 days ahead). In a small saucepan, combine the 10 g / 1 tbsp yellow mustard seeds, the 10 g / 1 tbsp brown mustard seeds, the 120 g / ½ cup red wine vinegar, and the 60 g / ¼ cup water. Let the seeds soak 10 minutes off heat while you mince the 50 g / 1 large shallot; the head start lets the seed coats begin to hydrate. Add the shallot, the 150 g / ⅔ cup packed light brown sugar, and the 2 g / ½ tsp kosher salt, and bring to a simmer over medium heat, stirring with a wooden spoon until the sugar dissolves.'
+  - text: 'Make the mostarda (1 to 7 days ahead). In a small saucepan, combine the 10 g / 1 tbsp yellow mustard seeds, the 10 g / 1 tbsp brown mustard seeds, the 120 g / ½ cup red wine vinegar, and the 60 g / ¼ cup water. Let the seeds soak 10 minutes off heat while you mince the 50 g / 1 large shallot; the head start lets the seed coats begin to hydrate. Add the shallot, the 150 g / ⅔ cup packed light brown sugar, and the 2 g / ¾ tsp kosher salt, and bring to a simmer over medium heat, stirring with a wooden spoon until the sugar dissolves.'
     time_min: 15
   - text: 'Add the 340 g / 12 oz cranberries and the orange zest (about 3 g / 1 tbsp). Simmer over medium heat, stirring every minute, until roughly half the berries have burst and the liquid thickens to a loose syrup that coats the spoon, 8 to 10 minutes. Leave half the berries whole; the mix of intact fruit and jammy pulp is the texture of a mostarda, not a smooth sauce. Cranberries are rich in pectin, and the syrup will set noticeably as it cools, so stop while it still looks a little loose.'
     time_min: 10
-  - text: 'Bloom the mustard powder cold. While the berries cook, whisk the 6 g / 2½ tsp dry mustard powder into the orange juice (about 60 g / ¼ cup) in a small bowl until smooth, and let it stand 10 minutes. Dry mustard has no heat until water wakes up its enzyme (myrosinase), which converts the seed glucosinolates into the volatile isothiocyanate that gives mustard its bite. Heat above about 60 °C kills that enzyme, so the powder goes in cold and is added to the pot off the heat. Take the saucepan off the burner, let it cool 5 minutes, then stir in the bloomed mustard. Taste: it should be sweet first, then sharply sour, then a nasal heat. If it tastes only sweet, add red wine vinegar 5 g / 1 tsp at a time. Cool, transfer to a glass jar, press a round of parchment onto the surface, lid it, and refrigerate at least 12 hours (up to 7 days).'
+  - text: 'Bloom the mustard powder cold. While the berries cook, whisk the 6 g / 2½ tsp dry mustard powder into the orange juice (about 60 g / ¼ cup) in a small bowl until smooth, and let it stand 10 minutes. Dry mustard has no heat until water wakes up its enzyme (myrosinase), which converts the seed glucosinolates into the volatile isothiocyanate that gives mustard its bite. Heat above about 60 °C kills that enzyme, so the powder goes in cold and is added to the pot off the heat. Take the saucepan off the burner and let the mostarda cool until it reads below 50 °C / 120 °F, 15 to 20 minutes (spread it on a plate to speed this up), then stir in the bloomed mustard. Stirred into hotter fruit, the mustard loses most of its heat. Taste: it should be sweet first, then sharply sour, then a nasal heat. If it tastes only sweet, add red wine vinegar 5 g / 1 tsp at a time. Cool, transfer to a glass jar, press a round of parchment onto the surface, lid it, and refrigerate at least 12 hours (up to 7 days).'
     time_min: 15
   - text: 'Make the crust (up to 1 day ahead). In a bowl, rub the 2 g / 2 tsp lemon zest and the 12 g / 3 grated garlic cloves into the 60 g / 1 cup breadcrumbs with your fingertips, so the zest oils and garlic juice are absorbed by the crumb rather than clumping. Add the 30 g / ½ cup grated parmigiano, the 15 g / ½ cup chopped parsley, the 3 g / 1 tbsp minced rosemary, the 2 g / 2 tsp thyme leaves, and the 2 g / 1 tsp black pepper. Drizzle in the 30 g / 2 tbsp olive oil and toss until the crumb looks like damp sand and holds a loose clump when squeezed. Do not salt it: the brined lamb and the parmigiano carry enough.'
     time_min: 10
@@ -220,7 +220,7 @@ equipment: ['heavy-cast-iron-skillet', 'instant-read-thermometer', 'wire-rack-an
 modifications:
   - for: 'cost (two racks run 60 to 90 USD)'
     to: 'boneless leg of lamb, butterflied and rolled'
-    how: 'Buy a 1.8 to 2 kg / 4 to 4½ lb boneless leg (typically a third to half the price per kg of rack). Open it flat, trim thick fat seams, salt with 15 g / 4 tsp kosher salt inside and out the night before, and refrigerate uncovered. Next day, spread 15 g / 1 tbsp dijon and half the herb crust inside, roll, and tie with butcher''s twine every 3 cm. Sear all sides in the cast iron (8 to 10 minutes), brush the outside with the remaining 30 g / 2 tbsp dijon, press on the rest of the crust, and roast at 220 °C / 425 °F for 20 minutes, then drop to 175 °C / 350 °F until the center reads 54 °C / 129 °F, 35 to 50 minutes more. Rest 15 minutes (a larger roast carries over 5 to 8 °C) and slice 1 cm thick. The leg has more chew and more lamb flavor than the rack; the mostarda works the same way.'
+    how: 'Buy a 1.8 to 2 kg / 4 to 4½ lb boneless leg (typically a third to half the price per kg of rack). Open it flat, trim thick fat seams, salt with 15 g / 1¾ tbsp kosher salt inside and out the night before, and refrigerate uncovered. Next day, spread 15 g / 1 tbsp dijon and half the herb crust inside, roll, and tie with butcher''s twine every 3 cm. Sear all sides in the cast iron (8 to 10 minutes), brush the outside with the remaining 30 g / 2 tbsp dijon, press on the rest of the crust, and roast at 220 °C / 425 °F for 20 minutes, then drop to 175 °C / 350 °F until the center reads 54 °C / 129 °F, 35 to 50 minutes more. Rest 15 minutes (a larger roast carries over 5 to 8 °C) and slice 1 cm thick. The leg has more chew and more lamb flavor than the rack; the mostarda works the same way.'
     kind: 'protein'
   - for: 'crust direction'
     to: 'pistachio and mint crust'

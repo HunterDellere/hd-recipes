@@ -13,9 +13,9 @@ updated: '2026-11-18'
 servings: 8
 yield_note: 'one 23 x 33 cm / 9 x 13 inch dish; 8 side portions on a holiday table, 6 as a heavier side'
 time:
-  prep_min: 35
+  prep_min: 55
   cook_min: 85
-  total_min: 135
+  total_min: 155
   active_min: 40
 difficulty: 'medium'
 cuisine: 'French'
@@ -27,7 +27,7 @@ source:
   note: 'Hasselback potatoes are whole potatoes sliced accordion-style and roasted so the fanned edges crisp. The gratin version stands individual slices upright in a cream bath, which gives the same crisp-edge effect across a whole dish and makes it portionable for a crowd.'
 
 before_you_start:
-  - 'Make-ahead path for a one-oven holiday: bake the gratin fully earlier in the day (it needs about 85 minutes at 190 °C / 375 °F), let it rest uncovered at room temperature for up to 4 hours, then re-crisp it on the top rack for 15 minutes at 220 °C / 425 °F while the mains rest. The re-crisp restores the edges and reheats the center through; the dish tastes better this way than straight from the first bake, because the cream has fully set.'
+  - 'Make-ahead path for a one-oven holiday: bake the gratin fully earlier in the day (it needs about 85 minutes at 190 °C / 375 °F), let it rest uncovered at room temperature for no more than 2 hours (the food-safety limit for a cream and cheese dish), then re-crisp it on the top rack for 15 to 20 minutes at 220 °C / 425 °F while the mains roast. If it must wait longer, cool it and refrigerate it, then reheat it covered at 190 °C / 375 °F until the center reads 74 °C / 165 °F, 35 to 45 minutes, and uncover for the last 10 minutes. The re-crisp restores the edges and reheats the center through; the dish tastes better this way than straight from the first bake, because the cream has fully set.'
   - 'Do not rinse the potato slices. The surface starch released by slicing is what thickens the cream into a sauce that clings; rinsed slices give a thin, weeping gratin.'
   - 'Plan at least 15 minutes of rest after any bake before cutting. Straight from the oven the cream is too loose to portion.'
 
@@ -56,7 +56,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 20
     unit: 'g'
-    note: '(5 tsp Diamond Crystal; about 1% of the potato weight, which is the whole seasoning load for the dish)'
+    note: '(7 tsp Diamond Crystal; about 1% of the potato weight, which is the whole seasoning load for the dish)'
   - group: 'Phase 1, infused cream'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -113,7 +113,7 @@ ingredients:
     note: '(¼ tsp)'
 
 steps:
-  - text: 'Infuse the cream. Combine 600 g / 2½ cups heavy cream, 20 g / 5 smashed garlic cloves, 6 g / 8 thyme sprigs, 20 g / 5 tsp kosher salt, 2 g / 1 tsp black pepper, and 1 g / ¼ tsp grated nutmeg in a small saucepan. Bring to a bare simmer over medium heat, then pull off the heat, cover with a lid, and steep 15 minutes. Heat speeds the extraction of the fat-soluble aromatics in garlic and thyme into the butterfat; steeping off the boil keeps the garlic sweet rather than sharp. Strain into a large bowl, pressing on the garlic, and stir in 8 g / 1½ tsp sherry vinegar. Taste it: the cream should taste distinctly salty, almost too salty, because it seasons 2 kg of bland potato.'
+  - text: 'Infuse the cream. Combine 600 g / 2½ cups heavy cream, 20 g / 5 smashed garlic cloves, 6 g / 8 thyme sprigs, 20 g / 7 tsp kosher salt, 2 g / 1 tsp black pepper, and 1 g / ¼ tsp grated nutmeg in a small saucepan. Bring to a bare simmer over medium heat, then pull off the heat, cover with a lid, and steep 15 minutes. Heat speeds the extraction of the fat-soluble aromatics in garlic and thyme into the butterfat; steeping off the boil keeps the garlic sweet rather than sharp. Strain into a large bowl, pressing on the garlic, and stir in 8 g / 1½ tsp sherry vinegar. Taste it: the cream should taste distinctly salty, almost too salty, because it seasons 2 kg of bland potato.'
     time_min: 20
   - text: 'Preheat the oven to 190 °C / 375 °F with a rack in the center. Rub a 23 x 33 cm / 9 x 13 inch baking dish (ceramic or glass) with 15 g / 1 tbsp softened butter.'
     time_min: 2
@@ -127,7 +127,7 @@ steps:
     time_min: 40
   - text: 'Bake uncovered. Remove the foil and scatter the reserved 50 g / ½ cup gruyère and 25 g / ¼ cup parmigiano over the top. Bake another 35 to 45 minutes, until the exposed edges are deep golden-brown and frilled, the cream bubbles thickly at the sides, and a knife slides through the center with no resistance. Pale edges mean more time; the Maillard browning on the slice edges and the cheese is where most of the flavor lives.'
     time_min: 40
-  - text: 'Rest. Let the gratin stand 15 minutes before cutting. The starch-thickened cream sets as it cools a few degrees; cut too early and the portions slump into a puddle. If following the make-ahead path, rest it uncovered up to 4 hours at room temperature, then re-crisp 15 minutes on the top rack at 220 °C / 425 °F.'
+  - text: 'Rest. Let the gratin stand 15 minutes before cutting. The starch-thickened cream sets as it cools a few degrees; cut too early and the portions slump into a puddle. If following the make-ahead path, rest it uncovered no more than 2 hours at room temperature, then re-crisp 15 to 20 minutes on the top rack at 220 °C / 425 °F.'
     time_min: 15
   - text: 'Finish. Scatter 6 g / 3 tbsp sliced chives and 1 g / ¼ tsp flaky salt over the top just before serving. Taste an edge and a center piece: if the center reads heavy, a few extra drops of sherry vinegar on the table are the correction, not more salt.'
     time_min: 1
@@ -175,5 +175,5 @@ notes: |
 
   The vinegar. Cream plus cheese plus potato is all fat and starch, which is why many gratins eat heavy after two bites. A small dose of sherry vinegar in high-fat cream does not curdle it (the fat coats the casein and protects it) and makes the whole dish taste brighter without tasting sour.
 
-  Holding. Covered in the fridge, leftovers keep 3 days and re-crisp well at 220 °C / 425 °F for 20 minutes.
+  Holding. Covered in the fridge, leftovers keep 3 days. Reheat covered at 190 °C / 375 °F until the center reads 74 °C / 165 °F, then uncover for 10 minutes to re-crisp.
 ---

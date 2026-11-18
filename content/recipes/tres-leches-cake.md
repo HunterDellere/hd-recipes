@@ -5,7 +5,7 @@ status: 'complete'
 content_review: 'pending'
 
 title: 'Tres leches cake'
-desc: 'A butterless, separated-egg sponge baked in a 9 x 13 pan, pierced all over and soaked overnight with evaporated milk, sweetened condensed milk and cinnamon-steeped whole milk. The open, dry crumb drinks almost its own weight in milk and stays cake rather than turning to pudding. A crème fraîche whipped cream on top cuts the sweetness.'
+desc: 'A butterless, separated-egg sponge baked in a 9 x 13 pan, pierced all over and soaked overnight with evaporated milk, sweetened condensed milk and cinnamon-steeped whole milk. The open, dry crumb drinks more than its own weight in milk and stays cake rather than turning to pudding. A crème fraîche whipped cream on top cuts the sweetness.'
 metaDesc: 'Tres leches cake: separated-egg sponge soaked overnight in evaporated, condensed and cinnamon-steeped whole milk, topped with crème fraîche whipped cream. Made a day ahead.'
 tags: ['cake', 'sweet', 'make-ahead', 'holiday', 'baked']
 updated: '2026-11-18'

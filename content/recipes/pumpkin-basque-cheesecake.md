@@ -13,9 +13,9 @@ updated: '2026-11-18'
 servings: 10
 yield_note: 'one 23 cm / 9 inch cake; 10 to 12 slices'
 time:
-  prep_min: 15
+  prep_min: 45
   cook_min: 65
-  total_min: 445
+  total_min: 475
   active_min: 15
 difficulty: 'easy'
 cuisine: 'Spanish (Basque)'
@@ -27,10 +27,15 @@ source:
   url: ''
   note: 'The Basque original has no flavoring beyond sugar and cream. The pumpkin and spice are an American holiday adaptation; the method is unchanged apart from more starch and a longer bake for the wetter batter.'
 
+safety_notes:
+  - for: 'Soft, barely set center (pulled at about 65 °C / 150 °F, below the 71 °C / 160 °F USDA guidance for egg dishes)'
+    ref: 'safety/egg-doneness'
+    why: 'The center is a just-set egg custard and is meant to stay soft. It holds above 60 °C / 140 °F for several minutes from residual heat, but never reaches the 71 °C single-reading number. For pregnancy, immunocompromise, the very young or the very old, use pasteurized in-shell eggs; the cake bakes identically.'
+
 before_you_start:
   - 'Set the cream cheese, eggs and cream on the counter 1 to 2 hours ahead. Cold cream cheese leaves lumps, and beating them out whips in air, which makes the cake rise, crack and sink.'
   - 'Bake it 1 to 2 days ahead. It needs 2 hours to cool at room temperature and at least 4 hours in the fridge before slicing; the flavor is better on the second day.'
-  - 'Use plain canned pumpkin purée, not pumpkin pie filling, which is already sweetened and spiced.'
+  - 'Use plain canned pumpkin purée, not pumpkin pie filling, which is already sweetened and spiced. Cook it down first (step 2) and let it cool; it needs 20 minutes to come back to room temperature.'
 
 ingredients:
   - group: 'Batter'
@@ -109,15 +114,17 @@ ingredients:
 steps:
   - text: 'Line the pan. Heat the oven to 220 °C / 425 °F (conventional, not convection) with a rack in the middle. Crumple two 40 cm / 16 inch squares of parchment into tight balls and flatten them out. Press them, one crossed over the other, into a 23 cm / 9 inch springform pan at least 7.5 cm / 3 inches deep, so the paper stands 5 cm / 2 inches above the rim. Set the pan on a sheet pan to catch any leaks.'
     time_min: 5
+  - text: 'Cook down the pumpkin. Spread the 425 g / 15 oz pumpkin purée in a wide skillet over medium heat and cook, stirring with a wooden spoon, until it darkens slightly and has lost about 75 g of water, 6 to 8 minutes; it should weigh about 350 g. Spread it on a plate to cool to room temperature. Pumpkin is about 90% water, and removing some of it is what lets the center set firm enough to slice.'
+    time_min: 28
   - text: 'Beat the cream cheese and sugars. In a large bowl, beat the 907 g / 2 lb cream cheese with the 200 g / 1 cup granulated sugar, the 100 g / ½ cup dark brown sugar, the 4 g / ¾ tsp fine sea salt, the 4 g / 1½ tsp cinnamon, the 2 g / 1 tsp ginger, the 1 g / ½ tsp nutmeg and the 0.3 g pinch of cloves on low speed with the paddle, about 2 minutes, until completely smooth and the sugar no longer feels gritty. Scrape the bowl and paddle.'
     time_min: 3
-  - text: 'Add the pumpkin and eggs. Mix in the 425 g / 15 oz pumpkin purée on low until even. Add the 300 g / 6 eggs one at a time on low, letting each disappear before the next. Keep the speed low the whole time: the aim is to combine, not to whip. Air in the batter puffs in the oven and then collapses into a dense ring.'
+  - text: 'Add the pumpkin and eggs. Mix in the cooled, cooked-down pumpkin (from the 425 g / 15 oz can) on low until even. Add the 300 g / 6 eggs one at a time on low, letting each disappear before the next. Keep the speed low the whole time: the aim is to combine, not to whip. Air in the batter puffs in the oven and then collapses into a dense ring.'
     time_min: 4
-  - text: 'Finish the batter. Mix in the 240 g / 1 cup heavy cream and the 8 g / 1½ tsp vanilla bean paste on low. Sift the 30 g / ¼ cup flour over the surface and mix just until it disappears. Pumpkin purée is about 90% water, so this cake needs nearly twice the flour of the plain version to slice cleanly; more than this turns it cakey. Pour the batter into the lined pan.'
+  - text: 'Finish the batter. Mix in the 240 g / 1 cup heavy cream and the 8 g / 1½ tsp vanilla bean paste on low. Sift the 30 g / ¼ cup flour over the surface and mix just until it disappears. Even cooked down, the pumpkin adds water, so this cake needs nearly twice the flour of the plain version to slice cleanly; more than this turns it cakey. Pour the batter into the lined pan.'
     time_min: 2
   - text: 'Bake 60 to 70 minutes. The top will puff, then go deep mahogany and nearly black in patches; that scorch is the flavor, bitter caramel against the sweet spiced custard, so do not pull it early for color. It is done when the outer 5 cm / 2 inches are set and the center still wobbles like a loose jelly when you nudge the pan, about 65 °C / 150 °F in the center on an instant-read thermometer. The 100 g / ½ cup dark brown sugar colors the top faster than in the plain cake; if it is black all over by 45 minutes, lower the oven to 200 °C / 400 °F for the rest of the bake.'
     time_min: 65
-  - text: 'Cool and chill. Cool the cake in its pan on a wire rack 2 hours. It will sink and wrinkle as it settles. Then refrigerate it in the pan, covered with an inverted plate, at least 4 hours or up to 2 days.'
+  - text: 'Cool and chill. Cool the cake in its pan on a wire rack 2 hours. It will sink and wrinkle as it settles. Then refrigerate it in the pan, covered with an inverted plate, at least 4 hours or up to 4 days.'
     time_min: 360
   - text: 'Serve. Take the cake out of the fridge 1 hour before serving. Release the ring, lift the cake onto a plate by its parchment, and peel the paper from the sides. Slice with a long thin knife dipped in hot water and wiped between cuts.'
     time_min: 5

@@ -11,11 +11,11 @@ tags: ['turkey', 'meatballs', 'roast', 'holiday', 'make-ahead', 'umami', 'comfor
 updated: '2026-11-18'
 
 servings: 8
-yield_note: 'about 40 meatballs of 35 g, 5 per person beside a second main, with about 1 L / 4 cups gravy'
+yield_note: 'about 48 meatballs of 35 g, 6 per person beside a second main, with about 1 L / 4 cups gravy'
 time:
   prep_min: 40
   cook_min: 45
-  total_min: 100
+  total_min: 190
   active_min: 60
 difficulty: 'medium'
 cuisine: 'American'
@@ -36,7 +36,7 @@ before_you_start:
   - 'This is a make-ahead dish. Roast the meatballs and make the gravy the day before, cool them together, and refrigerate up to 2 days. The meatballs absorb gravy overnight and reheat more evenly than freshly cooked ones hold.'
   - 'Bloom the gelatin in the cold milk first, before you touch the bread. Gelatin sprinkled into warm liquid clumps and never disperses.'
   - 'Chill the shaped meatballs 20 minutes before roasting. Ground turkey is soft and sticky at room temperature, and cold meatballs keep their round shape on the sheet pan.'
-  - 'On the day, reheat on the stovetop, not in the oven: covered, over low heat, 30 to 40 minutes. That leaves the oven free for the other dishes.'
+  - 'On the day, reheat on the stovetop, not in the oven: covered, over medium-low heat, 45 to 60 minutes. The time fields cover both days: about 90 minutes of cooking, 1 hour of cooling, and the reheat. That leaves the oven free for the other dishes.'
 
 ingredients:
   - group: 'Phase 1, panade'
@@ -123,7 +123,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2½ tsp Diamond Crystal; about 0.8% of the meat, because the soy and parmigiano bring the rest)'
+    note: '(3½ tsp Diamond Crystal; about 0.8% of the meat, because the soy and parmigiano bring the rest)'
   - group: 'Phase 3, meatballs'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -176,7 +176,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal, to taste)'
+    note: '(¾ tsp Diamond Crystal, to taste)'
   - group: 'Phase 4, brown butter gravy'
     item: 'black pepper (gravy)'
     slug: 'black-pepper'
@@ -199,31 +199,31 @@ steps:
   - text: 'Sweat the aromatics. Melt the 15 g / 1 tbsp butter in a small skillet over medium-low heat. Add the 60 g / 2 shallots and a pinch of the kosher salt and cook, stirring with a wooden spoon, until soft and translucent but not browned, about 4 minutes. Add the 12 g / 3 cloves garlic for the last 30 seconds. Scrape into the panade bowl and let it cool 5 minutes; hot shallots would start cooking the egg and meat on contact.'
     technique: 'sweating'
     time_min: 6
-  - text: 'Mix the meatballs. To the panade bowl add the 100 g / 2 eggs, 60 g / ⅔ cup parmigiano, 8 g / 3 tbsp chopped sage, 2 g / 2 tsp thyme, 15 g / 1 tbsp soy sauce, 2 g / 2 tsp lemon zest, 10 g / 2½ tsp kosher salt and 2 g / 1 tsp black pepper. Whisk with a fork until uniform. Add the 1200 g / 2⅔ lb ground turkey and mix with your hand, fingers spread, just until no streaks of panade remain, about 45 seconds. Stop there: the salt is already pulling sticky myosin out of the meat, and that is enough bind. Longer mixing gives a springy, sausage-like texture.'
+  - text: 'Mix the meatballs. To the panade bowl add the 100 g / 2 eggs, 60 g / ⅔ cup parmigiano, 8 g / 3 tbsp chopped sage, 2 g / 2 tsp thyme, 15 g / 1 tbsp soy sauce, 2 g / 2 tsp lemon zest, 10 g / 3½ tsp kosher salt and 2 g / 1 tsp black pepper. Whisk with a fork until uniform. Add the 1200 g / 2⅔ lb ground turkey and mix with your hand, fingers spread, just until no streaks of panade remain, about 45 seconds. Stop there: the salt is already pulling sticky myosin out of the meat, and that is enough bind. Longer mixing gives a springy, sausage-like texture.'
     technique: 'myosin-extraction'
     time_min: 5
-  - text: 'Test the seasoning. Pinch off a 10 g piece, flatten it, and cook it in the small skillet over medium heat 1 minute per side. Taste. It should taste of sage and turkey first, then savory, with no flatness at the back. If it is flat, add up to 2 g / ½ tsp more kosher salt to the mix and fold it in with 5 strokes.'
+  - text: 'Test the seasoning. Pinch off a 10 g piece, flatten it to 5 mm, and cook it in the small skillet over medium heat 2 minutes per side, until no pink remains. Taste. It should taste of sage and turkey first, then savory, with no flatness at the back. If it is flat, add up to 2 g / ¾ tsp more kosher salt to the mix and fold it in with 5 strokes.'
     time_min: 3
-  - text: 'Shape and chill. Line two rimmed sheet pans with foil and brush each with half of the 20 g / 1½ tbsp neutral oil. Wet your hands and roll the mixture into 35 g balls, about 4 cm / 1½ inches across, setting them 2 cm apart. You should have about 40. Refrigerate the pans 20 minutes while the oven heats to 230 °C / 450 °F with racks in the upper and lower thirds.'
+  - text: 'Shape and chill. Line two rimmed sheet pans with parchment and brush each with half of the 20 g / 1½ tbsp neutral oil. Wet your hands and roll the mixture into 35 g balls, about 4 cm / 1½ inches across, setting them 2 cm apart. You should have about 48. Refrigerate the pans 20 minutes while the oven heats to 230 °C / 450 °F with racks in the upper and lower thirds.'
     time_min: 25
-  - text: 'Roast. Roast both pans 12 to 15 minutes, swapping and rotating the pans halfway, until the meatballs are well browned on top and bottom and the largest one reads 74 °C / 165 °F in the center. High, dry heat gives Maillard browning on all sides without the hour of batch-frying 40 meatballs on the stovetop. Transfer the meatballs to a wide braiser or Dutch oven. Leave the browned juices on the foil.'
+  - text: 'Roast. Roast both pans 12 to 15 minutes, swapping and rotating the pans halfway, until the meatballs are well browned on top and bottom and the largest one reads 74 °C / 165 °F in the center. High, dry heat gives Maillard browning on all sides without the hour of batch-frying 40 meatballs on the stovetop. Transfer the meatballs to a wide braiser or Dutch oven. Leave the browned juices on the parchment.'
     technique: 'high-heat-dry-roasting'
     time_min: 15
-  - text: 'Recover the fond. Pour 120 g / ½ cup of the chicken stock onto one sheet pan, scrape the browned juices loose with a wooden spatula, then tip that liquid onto the second pan and scrape again. Pour it all into a measuring jug. This liquid is part of the 880 g / 3½ cups of stock that goes into the gravy, not extra; the other 120 g / ½ cup of stock is held back for reheating.'
+  - text: 'Recover the fond. Pour 120 g / ½ cup of the chicken stock onto one sheet pan, scrape the browned juices loose with a wooden spatula, then tip that liquid onto the second pan and scrape again. Pour it through a fine sieve into a measuring jug and let it stand 2 minutes, then spoon off the turkey fat that rises; the gravy gets its fat from the brown butter. This liquid is part of the 880 g / 3½ cups of stock that goes into the gravy, not extra; the other 120 g / ½ cup of stock is held back for reheating.'
     technique: 'deglazing'
     time_min: 3
-  - text: 'Brown the butter and fry the sage. In a 3 L saucepan over medium heat, melt the 60 g / 4 tbsp gravy butter. Lay in the 4 g / 12 sage leaves and fry until they stop sizzling and turn crisp and dark green, about 1 minute. Lift them onto a paper towel and salt them with a pinch from the 2 g / ½ tsp gravy salt. Keep cooking the butter, swirling, until the milk solids turn amber and smell of toasted hazelnut, 2 to 3 minutes more. The sage has flavored the fat on its way through.'
+  - text: 'Brown the butter and fry the sage. In a 3 L saucepan over medium heat, melt the 60 g / 4 tbsp gravy butter. Lay in the 4 g / 12 sage leaves and fry until they stop sizzling and turn crisp and dark green, about 1 minute. Lift them onto a paper towel and salt them with a pinch from the 2 g / ¾ tsp gravy salt. Keep cooking the butter, swirling, until the milk solids turn amber and smell of toasted hazelnut, 2 to 3 minutes more. The sage has flavored the fat on its way through.'
     technique: 'brown-butter'
     time_min: 4
   - text: 'Make the roux. Whisk the 40 g / ⅓ cup flour into the brown butter and cook over medium-low heat, whisking, until it smells of toasted biscuit and darkens one shade, about 3 minutes. Cooking the flour in fat removes its raw-cereal taste and toasts a little more flavor into the gravy.'
     time_min: 3
   - text: 'Build the gravy. Whisk in the deglazing liquid and the rest of the 880 g / 3½ cups gravy stock in three additions, whisking smooth before each addition, so no lumps form. Add the 15 g / 1 tbsp gravy soy sauce and the 1 g / ½ tsp black pepper. Bring to a simmer and cook 8 to 10 minutes, whisking now and then, until it coats a spoon and a line drawn through it on the spoon holds. The soy adds the glutamate and some of the color that a roast turkey carcass gives a traditional gravy.'
     time_min: 10
-  - text: 'Finish and season. Off the heat, stir in the 10 g / 2 tsp apple cider vinegar. Taste, then add the remaining gravy kosher salt (up to 2 g / ½ tsp) only if it tastes flat. The vinegar should not read as sour; it should make the gravy taste brighter and less heavy. Pour the gravy over the meatballs in the braiser and turn them to coat.'
+  - text: 'Finish and season. Off the heat, stir in the 10 g / 2 tsp apple cider vinegar. Taste, then add the remaining gravy kosher salt (up to 2 g / ¾ tsp) only if it tastes flat. The vinegar should not read as sour; it should make the gravy taste brighter and less heavy. Pour the gravy over the meatballs in the braiser and turn them to coat.'
     time_min: 2
-  - text: 'Cool and store (the day before). Let the meatballs cool in the gravy, uncovered, no longer than 1 hour, then cover the braiser with its lid and refrigerate up to 2 days. Keep the 12 fried sage leaves (4 g) in a dry jar with a paper towel at room temperature. The gravy will set firm in the fridge from the gelatin in the meat and stock; that is expected.'
+  - text: 'Cool and store (the day before). Cool fast: a deep, heavy pot stays warm in the center for hours, which lets bacteria grow in cooked poultry. Spread the meatballs and gravy in two shallow dishes or sheet pans no more than 5 cm / 2 inches deep, and refrigerate them uncovered as soon as they stop steaming, within 2 hours of cooking. Cover once cold and keep up to 2 days. Keep the 12 fried sage leaves (4 g) in a dry jar with a paper towel at room temperature. The gravy will set firm in the fridge from the gelatin in the meat and stock; that is expected.'
     time_min: 60
-  - text: 'Reheat on the day. Pour the 120 g / ½ cup held-back chicken stock around the meatballs. Cover and set over low heat 30 to 40 minutes, gently turning the meatballs with a wooden spoon every 10 minutes, until the gravy is loose and simmering at the edges and the center of the largest meatball reads 74 °C / 165 °F. If the gravy is still too thick to pour, add water 30 g / 2 tbsp at a time. Hold on the lowest heat, covered, until serving.'
+  - text: 'Reheat on the day. Scrape the meatballs and gravy into the wide braiser and pour the 120 g / ½ cup held-back chicken stock around them. Cover and set over medium-low heat 45 to 60 minutes, stirring gently from the bottom with a wooden spoon every 10 minutes so the gravy does not scorch, until the gravy is loose and simmering at the edges and the center of the largest meatball reads 74 °C / 165 °F. If the gravy is still too thick to pour, add water 30 g / 2 tbsp at a time. Hold covered on low heat, at or above 60 °C / 140 °F, until serving.'
     time_min: 40
   - text: 'Serve. Scatter the 10 g / ⅓ cup chopped parsley and the fried sage leaves over the top and serve from the braiser, with the cranberry mostarda alongside. The mostarda supplies the cranberry and the sharp acid that the gravy leaves out on purpose.'
     time_min: 2

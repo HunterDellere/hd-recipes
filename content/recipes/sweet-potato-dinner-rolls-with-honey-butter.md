@@ -111,7 +111,7 @@ ingredients:
     note: '(½ tsp)'
 
 steps:
-  - text: 'Roast the sweet potato. Prick the 300 g / 1 medium sweet potato a few times with a fork, set it on a foil-lined sheet pan, and roast at 200 °C / 400 °F until it collapses when squeezed and syrup leaks from the holes, 50 to 60 minutes. Roasting, not boiling, concentrates the sugars and keeps the flesh dry, so the dough does not turn sticky. Cool, peel, and mash 200 g / ¾ cup of the flesh smooth with a fork.'
+  - text: 'Roast the sweet potato. Prick the 300 g / 1 medium sweet potato a few times with a fork, set it on a foil-lined sheet pan, and roast at 200 °C / 400 °F until it collapses when squeezed and syrup leaks from the holes, 40 to 60 minutes depending on size. Roasting, not boiling, concentrates the sugars and keeps the flesh dry, so the dough does not turn sticky. Cool, peel, and mash 200 g / ¾ cup of the flesh smooth with a fork.'
     time_min: 60
   - text: 'Mix. In a stand mixer bowl, whisk the 450 g / 3½ cups plus 2 tbsp bread flour, 7 g / 2¼ tsp instant yeast and 9 g / 1½ tsp fine sea salt. Add the 200 g mashed sweet potato, the 120 g / ½ cup warm milk, the 50 g / 1 egg and the 30 g / 1½ tbsp dough honey. Mix with the dough hook on low until no dry flour remains, about 2 minutes.'
     time_min: 3
@@ -125,7 +125,7 @@ steps:
     time_min: 15
   - text: 'Second rise. Cover and let the rolls rise until puffy and touching, and a fingertip press springs back slowly, 45 to 60 minutes. Or refrigerate the covered pan overnight (up to 16 hours) and let it stand at room temperature 60 to 90 minutes the next morning. Heat the oven to 190 °C / 375 °F with a rack in the center for the last 20 minutes.'
     time_min: 60
-  - text: 'Bake. Brush the tops gently with the 50 g / 1 egg wash and sprinkle with the 2 g / ½ tsp flaky salt for the tops. Bake 20 to 24 minutes, until deep golden and the center roll reads 90 °C / 195 °F. The sugars from the sweet potato and honey brown fast; if the tops are dark by 15 minutes, lay a sheet of foil loosely over them.'
+  - text: 'Bake. Beat the 50 g / 1 egg for the wash with 15 g / 1 tbsp water and brush the tops gently with it and sprinkle with the 2 g / ½ tsp flaky salt for the tops. Bake 20 to 24 minutes, until deep golden and the center roll reads 90 °C / 195 °F. The sugars from the sweet potato and honey brown fast; if the tops are dark by 15 minutes, lay a sheet of foil loosely over them.'
     time_min: 22
   - text: 'Make the honey butter while the rolls bake. Beat the 115 g / 1 stick softened butter with the 40 g / 2 tbsp honey and the 2 g / ½ tsp flaky salt with a wooden spoon until pale and fluffy, about 2 minutes. The salt is what makes it taste of butter and not only of honey.'
     time_min: 3

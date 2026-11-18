@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, roast'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -120,7 +120,7 @@ steps:
     time_min: 15
   - text: 'Cut the squash. Trim both ends of the 1600 g / 4 delicata squash, halve them lengthwise, and scrape out the seeds with a metal spoon. Cut each half crosswise into 1.5 cm / ⅝ inch half-moons. Do not peel: delicata skin is thin enough to turn tender in the oven, and it holds each slice together.'
     time_min: 10
-  - text: 'Season. Toss the slices in a large bowl with the 45 g / 3 tbsp olive oil, 8 g / 2 tsp kosher salt and 1 g / ½ tsp black pepper. Salting before roasting draws a little surface moisture that evaporates in the first minutes and seasons the flesh through.'
+  - text: 'Season. Toss the slices in a large bowl with the 45 g / 3 tbsp olive oil, 8 g / 2¾ tsp kosher salt and 1 g / ½ tsp black pepper. Salting before roasting draws a little surface moisture that evaporates in the first minutes and seasons the flesh through.'
     time_min: 2
   - text: 'Roast. Take the hot pans out and spread the squash in one layer, cut faces down and not touching. Crowded slices steam instead of browning, so use both pans. Roast 15 minutes, until the undersides are deep golden. Flip each slice with a thin metal spatula, swap the pans between racks, and roast 8 to 12 minutes more, until a paring knife slides through the skin without resistance.'
     technique: 'high-heat-dry-roasting'

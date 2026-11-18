@@ -144,6 +144,9 @@ ingredients:
     note: '(a scant ¼ tsp, scattered over the topping before baking)'
 
 steps:
+  - text: 'Toast the pecans. Spread the 70 g / ¾ cup pecans on a small sheet pan and toast at 175 °C / 350 °F (a toaster oven is fine) until fragrant and a shade darker, about 8 minutes. Cool and chop them to pea size.'
+    technique: 'dry-toasting'
+    time_min: 10
   - text: 'Brown the butter. Melt the 170 g / 12 tbsp butter in a light-colored saucepan over medium heat. It foams as the water boils off (about 3 minutes), then the foam thins and the milk solids sink and begin to toast. Swirl constantly. Pull it off the heat when the solids are hazelnut-brown and the butter smells of toffee and toasted nuts, 5 to 7 minutes total. Scrape it, solids and all, into a medium bowl; the solids carry most of the flavor. Cool 10 minutes, until warm rather than hot.'
     technique: 'brown-butter'
     time_min: 17

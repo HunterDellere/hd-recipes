@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 1, vinaigrette (up to 3 days ahead)'
     item: 'dijon mustard'
     slug: 'dijon-mustard'
@@ -127,7 +127,7 @@ ingredients:
     note: '(4 oz log)'
 
 steps:
-  - text: 'Macerate the shallot. In a 500 ml glass jar, combine the 30 g / 3 tbsp minced shallot, the 45 g / 3 tbsp apple cider vinegar, and the 3 g / ¾ tsp kosher salt. Let stand 10 minutes. The acid and salt draw water out of the shallot cells and convert the harsh thiosulfinates into a milder, sweeter allium note, so the shallot reads as seasoning rather than raw onion bite.'
+  - text: 'Macerate the shallot. In a 500 ml glass jar, combine the 30 g / 3 tbsp minced shallot, the 45 g / 3 tbsp apple cider vinegar, and the 3 g / 1 tsp kosher salt. Let stand 10 minutes. The acid and salt draw water out of the shallot cells and convert the harsh thiosulfinates into a milder, sweeter allium note, so the shallot reads as seasoning rather than raw onion bite.'
     time_min: 10
   - text: 'Build the vinaigrette. Add the 10 g / 2 tsp dijon mustard, the 8 g / 1½ tsp white miso, the 15 g / 2 tsp maple syrup, and the 1 g / ½ tsp black pepper to the jar and stir with a fork until the miso fully dissolves into the vinegar with no lumps. Pour in the 90 g / 6 tbsp extra-virgin olive oil, close the lid, and shake hard for 20 seconds until the dressing turns opaque and slightly thickened. The mustard mucilage and miso proteins hold the emulsion for several minutes at a time; it will separate in the fridge and reshake cleanly.'
     technique: 'vinaigrette-emulsion'
@@ -141,7 +141,7 @@ steps:
     time_min: 5
   - text: 'Assemble undressed. Pile the 225 g / 8 oz dry arugula loosely in a wide serving bowl. Tuck the dressed pear slices through the greens, then scatter the 120 g / ¾ cup pomegranate arils, the 115 g / 4 oz crumbled goat cheese, and the toasted almonds over the top. Keep the cheese cold until this point; warm chèvre smears into the leaves instead of holding as crumbs.'
     time_min: 3
-  - text: 'Dress at the table. Shake the remaining vinaigrette (about 175 g / ¾ cup), pour two-thirds of it around the edge of the bowl, and toss with two large spoons, lifting from the bottom, 6 or 7 turns. Taste a leaf with pear and cheese: it should be bright, peppery, and salted. Add the rest of the dressing only if the leaves look dry. Serve within 10 minutes.'
+  - text: 'Dress at the table. Shake the remaining vinaigrette (about 185 g / ¾ cup), pour about half of it (90 g / ⅓ cup) around the edge of the bowl, and toss with two large spoons, lifting from the bottom, 6 or 7 turns. Taste a leaf with pear and cheese: it should be bright, peppery, and salted. Add the rest of the dressing only if the leaves look dry. Serve within 10 minutes.'
     time_min: 2
 
 techniques: ['vinaigrette-emulsion', 'dry-toasting']

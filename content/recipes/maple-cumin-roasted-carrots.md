@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, roast'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -117,12 +117,12 @@ ingredients:
 steps:
   - text: 'Preheat. Set racks in the upper and lower thirds of the oven, put two rimmed sheet pans on them, and heat the oven to 220 °C / 425 °F.'
     time_min: 15
-  - text: 'Season the carrots. In a large bowl toss the 1200 g / 2½ lb carrots with 30 g / 2 tbsp olive oil, 8 g / 2 tsp kosher salt, and 1 g / ½ tsp black pepper. Salting now draws a little surface moisture that evaporates in the oven and concentrates the sugars at the surface, where they caramelize.'
+  - text: 'Season the carrots. In a large bowl toss the 1200 g / 2½ lb carrots with 30 g / 2 tbsp olive oil, 8 g / 2¾ tsp kosher salt, and 1 g / ½ tsp black pepper. Salting now draws a little surface moisture that evaporates in the oven and concentrates the sugars at the surface, where they caramelize.'
     time_min: 3
   - text: 'Roast. Pull the hot pans out, spread the carrots in a single layer split between them with space between pieces (crowding makes them steam), cut sides down. Roast 20 to 25 minutes, swapping the pans between racks halfway, until the undersides are deeply browned and a knife meets slight resistance at the thickest point.'
     technique: 'high-heat-dry-roasting'
     time_min: 22
-  - text: 'Make the glaze while the carrots roast. Toast 6 g / 2 tsp cumin seeds in a dry skillet over medium heat, shaking the pan, until a shade darker and fragrant, about 90 seconds. Grind them in a mortar. In a small bowl whisk the ground cumin with 45 g / 2 tbsp maple syrup, 25 g / 1½ tbsp white miso, 15 g / 1 tbsp olive oil, and 3 g / 1 tsp Aleppo pepper until smooth.'
+  - text: 'Make the glaze while the carrots roast. Toast 6 g / 2 tsp cumin seeds in a dry skillet over medium heat, shaking the pan, until a shade darker and fragrant, about 90 seconds. Grind them in a mortar. In a small bowl whisk the ground cumin with 45 g / 2 tbsp maple syrup, 25 g / 1½ tbsp white miso, 15 g / 1 tbsp olive oil, and 3 g / 1 tsp Aleppo pepper until smooth. In the same dry skillet, toast the 50 g / ⅓ cup pistachios over medium heat, shaking the pan, until fragrant and lightly golden, 3 to 4 minutes; cool and chop them roughly.'
     technique: 'dry-toasting'
     time_min: 4
   - text: 'Glaze late. Drizzle the glaze over the carrots on the pans and toss with tongs to coat. Return to the oven 6 to 8 minutes, until the glaze bubbles and turns glossy and dark at the edges. The glaze goes on late on purpose: maple and miso sugars burn bitter if they spend the full roast at 220 °C.'
