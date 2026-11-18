@@ -90,7 +90,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp)'
+    note: '(1 tsp)'
   - group: 'Phase 2, season and dry-fry'
     item: 'neutral oil'
     qty: 15
@@ -110,7 +110,7 @@ steps:
     time_min: 100
   - text: 'Drain the pork into a strainer set over a bowl (reserve the broth for soup). Discard the aromatics. Let the pork cool 10 minutes until you can handle it. While it is still warm, shred each strip by hand or pulse in a stand mixer with the paddle attachment on low for 60 seconds; the goal is fine, separated strands, not a paste. Pulled too cold and the meat fights the shred; warm pork gives easily.'
     time_min: 15
-  - text: 'Heat a wide, heavy wok or skillet over medium-low. Add the 15 ml / 1 tbsp neutral oil and the shredded pork. Spread into a single layer. Cook 5 minutes without stirring to begin driving moisture off the bottom layer. Once the pork is dry to the touch, stir in the 30 ml / 2 tbsp light soy, 8 ml / ½ tbsp dark soy if using, 25 g / 2 tbsp granulated sugar, 3 g / ½ tsp kosher salt, and 0.5 g / ¼ tsp white pepper.'
+  - text: 'Heat a wide, heavy wok or skillet over medium-low. Add the 15 ml / 1 tbsp neutral oil and the shredded pork. Spread into a single layer. Cook 5 minutes without stirring to begin driving moisture off the bottom layer. Once the pork is dry to the touch, stir in the 30 ml / 2 tbsp light soy, 8 ml / ½ tbsp dark soy if using, 25 g / 2 tbsp granulated sugar, 3 g / 1 tsp kosher salt, and 0.5 g / ¼ tsp white pepper.'
     time_min: 8
   - text: 'Continue dry-frying over medium-low heat for 30 to 45 minutes total, stirring every 90 seconds with two wooden spatulas to keep the strands separated and to expose new surface area to the pan. The pork passes through three stages: wet (sticky, dark, glistening) at minute 5; tacky-dry (loose strands, deep brown, beginning to lighten) at minute 20; and floss (pale tan, dry to the touch, fluffy, the strands separate cleanly) at minute 30 to 45. Pull when the floss is fully dry and lifts in a cloud when you shake the pan.'
     time_min: 35

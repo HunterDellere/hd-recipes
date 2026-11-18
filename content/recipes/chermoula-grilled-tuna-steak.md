@@ -103,7 +103,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; seasons the whole batch of paste)'
+    note: '(1¾ tsp Diamond Crystal; seasons the whole batch of paste)'
 
   - group: 'Phase 2, the tuna'
     item: 'yellowfin tuna steaks'
@@ -125,7 +125,7 @@ steps:
   - text: 'Toast and grind the spice. In a dry skillet over medium heat, toast the 4 g / 2 tsp cumin seeds for about 60 to 90 seconds, agitating, until fragrant and a shade darker. Grind them with the 3 g / 1 tsp ground coriander in a mortar or spice grinder. Toasting the cumin whole rather than using pre-ground is the single biggest flavor upgrade here; the aroma is sharper and nuttier.'
     technique: 'dry-toasting'
     time_min: 3
-  - text: 'Pound the chermoula. In a mortar (or pulse in a small processor), work the 12 g / 4 cloves garlic with a pinch of the salt to a paste, then add the 30 g / 1 bunch cilantro and 15 g / ½ bunch parsley and pound to a coarse green paste. Work in the ground cumin-coriander, the 4 g / 2 tsp sweet paprika, the 1 g / ½ tsp smoked paprika, the 1 g / ½ tsp red pepper flakes, and the remaining 5 g / 1¼ tsp salt total. Stir in the 30 g / 1 lemon of juice and the 70 g / 5 tbsp olive oil until it loosens into a spoonable sauce.'
+  - text: 'Pound the chermoula. In a mortar (or pulse in a small processor), work the 12 g / 4 cloves garlic with a pinch of the salt to a paste, then add the 30 g / 1 bunch cilantro and 15 g / ½ bunch parsley and pound to a coarse green paste. Work in the ground cumin-coriander, the 4 g / 2 tsp sweet paprika, the 1 g / ½ tsp smoked paprika, the 1 g / ½ tsp red pepper flakes, and the remaining 5 g / 1¾ tsp salt total. Stir in the 30 g / 1 lemon of juice and the 70 g / 5 tbsp olive oil until it loosens into a spoonable sauce.'
     technique: 'mortar-pounding'
     time_min: 6
   - text: 'Split and marinate. Spoon half the chermoula into a separate bowl and set aside, this is the raw finishing sauce, do not let it touch the fish. Coat both 340 g / 12 oz tuna steaks all over with the other half and let them sit 30 minutes at cool room temperature. The lemon lightly firms the surface and the spice paste penetrates; do not go past 45 minutes or the acid starts to mush the exterior.'

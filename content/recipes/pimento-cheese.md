@@ -88,7 +88,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp; less if your cheddar is salty)'
+    note: '(¾ tsp; less if your cheddar is salty)'
 
 steps:
   - text: 'In a large bowl, beat the 230 g softened cream cheese alone with a wooden spoon or hand mixer for 60 seconds until smooth, loose, and pliable. If the cream cheese is still cold and lumpy at this stage, microwave the bowl 10 seconds at 50 percent power and try again.'

@@ -172,7 +172,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; tasted in at the end)'
+    note: '(1 tsp Diamond Crystal; tasted in at the end)'
 
   - group: 'Phase 4, serving'
     item: 'sliced cucumber'
@@ -202,7 +202,7 @@ steps:
   - text: 'Add the 200 g coarse-ground peanuts to the bumbu. Toss to coat in the spiced oil; the peanuts will sizzle and toast slightly more in the residual fat for 60 seconds. Then add the 15 g / 1 tbsp tamarind paste, 20 g / 1½ tbsp palm sugar, 30 g / 2 tbsp kecap manis, and 300 ml / 1¼ cups hot water. Stir to combine. Reduce heat to low and simmer 8 to 10 minutes, stirring frequently, until the sauce thickens to a pourable but coating consistency (it should fall off a spoon in a thick ribbon, not a stream). The peanuts hydrate and the starches release from the ground peanut to body the sauce.'
     technique: 'reduction'
     time_min: 11
-  - text: 'Taste the sauce, adjust with the 3 g / ½ tsp kosher salt and adjust acid (more tamarind if flat, more palm sugar if too sharp). Hold at room temperature until serving. The sauce will tighten on standing; thin with hot water (1 tbsp at a time) before serving if needed.'
+  - text: 'Taste the sauce, adjust with the 3 g / 1 tsp kosher salt and adjust acid (more tamarind if flat, more palm sugar if too sharp). Hold at room temperature until serving. The sauce will tighten on standing; thin with hot water (1 tbsp at a time) before serving if needed.'
     time_min: 2
   - text: 'Thread the marinated chicken onto soaked skewers, 4 to 5 cubes per skewer, pressed close together (close-packed chicken produces a juicier center, spaced-out chicken dries out faster). About 16 skewers from 700 g chicken.'
     time_min: 10

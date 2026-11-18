@@ -90,7 +90,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 9
     unit: 'g'
-    note: '(2¼ tsp Diamond Crystal; over the skin, into the slashes, and inside the cavity)'
+    note: '(3¼ tsp Diamond Crystal; over the skin, into the slashes, and inside the cavity)'
   - group: 'Phase 1, the fish and cavity'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -163,7 +163,7 @@ ingredients:
 steps:
   - text: 'Pull the 1400 g / 1 whole striped bass from the fridge 20 to 30 minutes before roasting to temper, and set the oven to 225°C / 440°F with a rack in the upper third. Verify the fishmonger scaled and gutted the fish and removed the gills. Rinse the cavity, and scrape any dark blood line along the inside of the spine with the back of a small spoon; the blood line carries the strongest fishy flavor and is the main source of "fishy fish" complaints. Pat the fish completely dry inside and out, since a wet skin steams instead of crisping.'
     time_min: 5
-  - text: 'With a sharp knife, cut three diagonal slashes 1.5 cm deep into the flesh on each side of the fish, from the gill plate to the tail. The slashes do three jobs: they let the heat reach the spine evenly so the thick back cooks in step with the thin belly, they open channels for the salt and oil, and they give a visual doneness cue (the flesh in the slashes opaques first). Rub the 9 g / 2¼ tsp kosher salt over the skin on both sides, into the slashes, and inside the cavity. Grind the 1 g / ½ tsp black pepper over the skin.'
+  - text: 'With a sharp knife, cut three diagonal slashes 1.5 cm deep into the flesh on each side of the fish, from the gill plate to the tail. The slashes do three jobs: they let the heat reach the spine evenly so the thick back cooks in step with the thin belly, they open channels for the salt and oil, and they give a visual doneness cue (the flesh in the slashes opaques first). Rub the 9 g / 3¼ tsp kosher salt over the skin on both sides, into the slashes, and inside the cavity. Grind the 1 g / ½ tsp black pepper over the skin.'
     time_min: 4
   - text: 'Stuff the cavity. Lay in the ~50 g / sliced lemon rounds (half the 100 g lemon), the 20 g / 5 smashed garlic cloves, the ~20 g fennel fronds (reserved from the 80 g fennel bulb), the 6 g / 6 thyme sprigs, and the 8 g / small bunch parsley. Pack it loosely; the aromatics perfume the flesh from the inside and steam the cavity as the fish roasts. Rub the 30 g / 2 tbsp extra-virgin olive oil over the skin on both sides and work a little into the slashes so the skin renders and browns rather than drying out.'
     time_min: 4

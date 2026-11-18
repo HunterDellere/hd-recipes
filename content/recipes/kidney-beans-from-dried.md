@@ -60,7 +60,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 2, boil and simmer'
     item: 'yellow onion'
     slug: 'yellow-onion'
@@ -92,7 +92,7 @@ steps:
     time_min: 480
   - text: 'Drain and rinse. Drain the beans, discard the soaking water, and rinse them well. They should have roughly doubled in size with no wrinkles; a few that stay small and hard are old beans and can be picked out.'
     time_min: 3
-  - text: 'Boil hard for 10 minutes. Put the beans in a heavy 5 L pot with the 2000 ml / 8 cups cold cooking water, the 6 g / 1½ tsp kosher salt for cooking, the 200 g halved onion, the 12 g / 3 smashed garlic cloves, the 2 bay leaves, and the 5 g kombu. Bring to a full rolling boil over high heat and keep it there for 10 minutes, skimming off the foam. This step is not optional: it is what destroys the phytohaemagglutinin in kidney beans, and a gentle simmer does not reach it reliably.'
+  - text: 'Boil hard for 10 minutes. Put the beans in a heavy 5 L pot with the 2000 ml / 8 cups cold cooking water, the 6 g / 2¼ tsp kosher salt for cooking, the 200 g halved onion, the 12 g / 3 smashed garlic cloves, the 2 bay leaves, and the 5 g kombu. Bring to a full rolling boil over high heat and keep it there for 10 minutes, skimming off the foam. This step is not optional: it is what destroys the phytohaemagglutinin in kidney beans, and a gentle simmer does not reach it reliably.'
     time_min: 20
   - text: 'Simmer gently. Lower the heat until only a few small bubbles break the surface, partly cover with the lid ajar, and cook 45 to 90 minutes, stirring gently every 20 minutes and topping up with hot water so the beans stay covered by at least 2 cm. A hard boil past the first 10 minutes tumbles the beans and splits their skins. Fresh beans finish in about 45 minutes; beans that have sat in the pantry for a year or more can take twice as long.'
     time_min: 75

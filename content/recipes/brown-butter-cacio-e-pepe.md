@@ -31,7 +31,7 @@ ingredients:
     item: 'kosher salt'
     qty: 25
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal)'
+    note: '(3 tbsp Diamond Crystal)'
   - group: 'Pasta water'
     item: 'water'
     qty: 1500
@@ -66,7 +66,7 @@ ingredients:
     note: '(7 oz dried)'
 
 steps:
-  - text: 'Set 1500 ml / 6 cups water in a 4-quart pot to boil with 25 g / 2 tbsp kosher salt. Taste it: it must be aggressively saline, like the sea. This water seasons the pasta from the inside out.'
+  - text: 'Set 1500 ml / 6 cups water in a 4-quart pot to boil with 25 g / 3 tbsp kosher salt. Taste it: it must be aggressively saline, like the sea. This water seasons the pasta from the inside out.'
     time_min: 8
   - text: 'Melt 60 g / 4 tbsp unsalted butter in a wide stainless skillet over medium-low. Cook past the foaming stage until milk solids turn deep amber and the pan smells like toasted hazelnut, ~4 minutes. Pull off heat.'
     technique: 'brown-butter'

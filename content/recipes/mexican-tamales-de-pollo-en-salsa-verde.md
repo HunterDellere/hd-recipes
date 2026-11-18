@@ -69,7 +69,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; for the poaching liquid)'
+    note: '(1½ tbsp Diamond Crystal; for the poaching liquid)'
   - group: 'Phase 2, the chicken filling'
     item: 'bay leaf'
     slug: 'bay-leaf'
@@ -129,7 +129,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(3½ tsp Diamond Crystal)'
   - group: 'Phase 4, the masa dough'
     item: 'lard (manteca)'
     slug: 'lard'

@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; ~1% of the fish by weight, the dry-brine ratio for lean white fish)'
+    note: '(1½ tsp Diamond Crystal; ~1% of the fish by weight, the dry-brine ratio for lean white fish)'
 
   - group: 'Phase 2, the oil poach'
     item: 'extra-virgin olive oil'
@@ -133,7 +133,7 @@ ingredients:
     note: '(½ tsp; for the table, the macro-flake hits the tongue first against the long umami of the sauce)'
 
 steps:
-  - text: 'Dry-brine, 30 minutes ahead. Pat the two 200 g halibut fillets fully dry on both sides with paper towels, lean white fish weeps if it goes into the oil wet. Sprinkle the 4 g / 1 tsp Diamond Crystal kosher salt evenly across both sides of both fillets, roughly 1 percent of the fish by weight. Set the fillets on a wire rack over a small tray and refrigerate uncovered for 30 minutes. The salt draws surface moisture in the first 10 minutes, then the salinity gradient flips and carries the salt into the flesh; the flake firms and seasons through the cross-section rather than sitting only on the surface. By the end the fillet feels slightly tackier and firmer than raw.'
+  - text: 'Dry-brine, 30 minutes ahead. Pat the two 200 g halibut fillets fully dry on both sides with paper towels, lean white fish weeps if it goes into the oil wet. Sprinkle the 4 g / 1½ tsp Diamond Crystal kosher salt evenly across both sides of both fillets, roughly 1 percent of the fish by weight. Set the fillets on a wire rack over a small tray and refrigerate uncovered for 30 minutes. The salt draws surface moisture in the first 10 minutes, then the salinity gradient flips and carries the salt into the flesh; the flake firms and seasons through the cross-section rather than sitting only on the surface. By the end the fillet feels slightly tackier and firmer than raw.'
     technique: 'dry-brining'
     time_min: 30
   - text: 'Build the bath and bring it to temperature. Choose a narrow saucepan or a small high-sided sauté pan, just wide enough to hold both fillets in a single layer; a narrow vessel means less oil to cover them. Add the 600 g / 2¾ cups extra-virgin olive oil, the 16 g / 4 smashed garlic cloves (skins on), the 6 g / zest of 1 lemon in wide strips, the 4 g / 4 thyme sprigs, the 1 bay leaf, and the 2 g / ½ tsp cracked black peppercorns. Set over the lowest heat with an instant-read probe in the oil and bring it slowly to 62 to 64 °C, which takes 8 to 12 minutes; the aromatics infuse during this climb. Do not rush it over high heat, garlic that fries at 140 °C turns the whole bath toasty-bitter and overshoots the target.'

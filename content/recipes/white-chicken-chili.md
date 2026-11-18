@@ -81,7 +81,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Phase 3, build the pot'
     item: 'garlic cloves'
     slug: 'garlic'
@@ -182,7 +182,7 @@ steps:
   - text: 'Brown the chicken while the chiles steam. Pat the chicken dry. Heat the 15 ml / 1 tbsp neutral oil in a large Dutch oven over medium-high heat until it shimmers. Lay in the thighs in a single layer, in two batches if needed, and brown on one side only, about 5 minutes, without moving them. Transfer to a plate browned side up. The thighs finish cooking in the broth; browning one side builds the fond without drying them out.'
     technique: 'maillard-sear'
     time_min: 12
-  - text: 'Cook the aromatics. Lower the heat to medium. Add the 250 g diced onion and the 2 g / ½ tsp kosher salt for the onion and cook 6 minutes, scraping up the fond, until soft and translucent. Add the 20 g minced garlic, 3 g / 1½ tsp ground cumin, 2 g / 1 tsp ground coriander, and 2 g / 2 tsp Mexican oregano and stir 1 minute until fragrant.'
+  - text: 'Cook the aromatics. Lower the heat to medium. Add the 250 g diced onion and the 2 g / ¾ tsp kosher salt for the onion and cook 6 minutes, scraping up the fond, until soft and translucent. Add the 20 g minced garlic, 3 g / 1½ tsp ground cumin, 2 g / 1 tsp ground coriander, and 2 g / 2 tsp Mexican oregano and stir 1 minute until fragrant.'
     technique: 'blooming-aromatics'
     time_min: 7
   - text: 'Simmer the chicken. Pour in the 750 ml / 3 cups chicken stock, scrape the bottom clean, and add the chopped chiles. Return the chicken and its juices. Bring to a simmer, lower the heat so it bubbles gently, cover, and cook 20 to 25 minutes, until the thighs are tender and register at least 80 °C / 175 °F. Thighs are better taken past the usual 74 °C: their collagen keeps softening and they shred more easily.'

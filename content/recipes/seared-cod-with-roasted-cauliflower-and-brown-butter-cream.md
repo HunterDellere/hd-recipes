@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal)'
+    note: '(1¾ tsp Diamond Crystal)'
   - group: 'Phase 1, roast the cauliflower'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -77,7 +77,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 2, sear the cod'
     item: 'all-purpose flour, for dredging'
     slug: 'all-purpose-flour'
@@ -151,12 +151,12 @@ ingredients:
     note: '(2 tbsp chopped)'
 
 steps:
-  - text: 'Heat the oven to 230C / 450F. Toss the 600 g cauliflower florets with the 30 g / 2 tbsp olive oil, 5 g / 1¼ tsp kosher salt, and 1 g / ¼ tsp black pepper directly on a rimmed sheet pan, then turn the florets cut-face-down in a single uncrowded layer. The dry, high heat caramelizes the brassica sugars and drives off the sulfurous volatiles that low, wet cooking releases.'
+  - text: 'Heat the oven to 230C / 450F. Toss the 600 g cauliflower florets with the 30 g / 2 tbsp olive oil, 5 g / 1¾ tsp kosher salt, and 1 g / ¼ tsp black pepper directly on a rimmed sheet pan, then turn the florets cut-face-down in a single uncrowded layer. The dry, high heat caramelizes the brassica sugars and drives off the sulfurous volatiles that low, wet cooking releases.'
     technique: 'high-heat-dry-roasting'
     time_min: 5
   - text: 'Roast 25 to 30 minutes, undisturbed for the first 18 to 20 so the cut faces build an unbroken brown crust, then a single toss to color the second face. The florets are done when the cut faces are deep mahogany and a paring knife slides through the stem with no resistance. Hold them in the warm oven while you finish the fish.'
     time_min: 28
-  - text: 'While the cauliflower roasts, prep the cod. Pat the 340 g cod fillets bone dry, season both sides with the 3 g / ¾ tsp kosher salt, and let them sit 10 minutes, then pat once more (the salt pulls a film of moisture you want gone before the sear). If using, dredge the fillets in the 20 g / 2½ tbsp flour and shake off all but a thin veil.'
+  - text: 'While the cauliflower roasts, prep the cod. Pat the 340 g cod fillets bone dry, season both sides with the 3 g / 1 tsp kosher salt, and let them sit 10 minutes, then pat once more (the salt pulls a film of moisture you want gone before the sear). If using, dredge the fillets in the 20 g / 2½ tbsp flour and shake off all but a thin veil.'
     time_min: 10
   - text: 'Heat the 14 g / 1 tbsp neutral oil in a wide stainless skillet over medium-high until it shimmers and the first wisp of heat rises. Lay the cod presentation-side down, press each fillet flat for 10 seconds for full contact, then sear undisturbed 3 to 4 minutes to a deep gold crust. Flip and cook 1 to 2 minutes more to 52 to 54C internal. Transfer to a plate; the fish climbs to its final doneness by carryover while you build the sauce.'
     technique: 'maillard-sear'

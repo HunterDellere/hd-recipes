@@ -48,7 +48,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 15
     unit: 'g'
-    note: '(1 tbsp; for the blanch water)'
+    note: '(1¾ tbsp; for the blanch water)'
 
   - group: 'Phase 2, herb oil'
     item: 'fresh cilantro leaves and tender stems, finely chopped'
@@ -78,7 +78,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp)'
+    note: '(1 tsp)'
 
   - group: 'Phase 3, base dressing'
     item: 'light soy sauce'

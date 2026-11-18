@@ -94,7 +94,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 14
     unit: 'g'
-    note: '(1¼ tbsp Diamond Crystal; 1.5% of chicken weight)'
+    note: '(1¾ tbsp Diamond Crystal; 1.5% of chicken weight)'
   - group: 'Phase 1, the seven-spice marinade'
     item: 'whole-milk plain yogurt'
     slug: 'yogurt'

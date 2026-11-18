@@ -94,7 +94,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; salt in stages, taste before final addition)'
+    note: '(2¾ tsp Diamond Crystal; salt in stages, taste before final addition)'
   - group: 'Phase 3, the broth'
     item: 'fresh-ground black pepper'
     slug: 'black-pepper'

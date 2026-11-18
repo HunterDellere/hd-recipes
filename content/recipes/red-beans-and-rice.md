@@ -126,7 +126,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp; added at the end after tasting; the hock contributes most of the salt)'
+    note: '(1½ tsp; added at the end after tasting; the hock contributes most of the salt)'
   - group: 'Phase 5, finish and serve'
     item: 'green onions, thin-sliced'
     qty: 40
@@ -167,7 +167,7 @@ steps:
     time_min: 3
   - text: 'Add andouille and finish. Stir in the 300 g sliced andouille coins. Simmer uncovered 25 to 30 more minutes; the sausage warms through and contributes its fat to the gravy, the pot reduces slightly, and the consistency thickens further. Fish out the ham hock with tongs. Pull the meat off the bone with a fork; chop into bite-sized pieces and stir back into the pot. Discard the bone and any cartilage.'
     time_min: 28
-  - text: 'Taste and adjust. Fish out the 3 bay leaves. Taste the beans. The dish should read deeply savory with an obvious smoke layer, a warm slow heat, and a creamy thick body. Salt should register as seasoning, not as salt. Add the 4 g / 1 tsp kosher salt by the half-teaspoon, tasting between additions; some hocks are saltier than others. If the gravy is too thick, splash in hot water 60 g at a time; if too thin, simmer uncovered 5 to 10 more minutes.'
+  - text: 'Taste and adjust. Fish out the 3 bay leaves. Taste the beans. The dish should read deeply savory with an obvious smoke layer, a warm slow heat, and a creamy thick body. Salt should register as seasoning, not as salt. Add the 4 g / 1½ tsp kosher salt by the half-teaspoon, tasting between additions; some hocks are saltier than others. If the gravy is too thick, splash in hot water 60 g at a time; if too thin, simmer uncovered 5 to 10 more minutes.'
     time_min: 3
   - text: 'Serve over rice. Mound 120 g / ~½ cup cooked rice in the center of each wide soup bowl. Ladle 250 to 300 g of beans around (not over) the rice. Scatter the 40 g sliced green onions and 12 g chopped parsley over the surface. Each diner adds hot sauce from the table to their preference and stirs the rice into the beans at the bowl. Crusty French bread or cornbread on the side is the traditional accompaniment for mopping the last of the gravy.'
     time_min: 3

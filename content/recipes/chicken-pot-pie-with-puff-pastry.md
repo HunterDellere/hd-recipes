@@ -225,7 +225,7 @@ steps:
     time_min: 3
   - text: 'Build the velouté. Add the 950 ml hot poaching liquid about 240 ml / 1 cup at a time, stirring well after each addition until smooth before adding more. Bring to a simmer and cook, stirring often and scraping the bottom, for 5 minutes; the starch fully swells only once the sauce simmers, and it should end up thick enough to coat a spoon heavily. Stir in the 120 ml / ½ cup heavy cream, 3 g / 1 tbsp thyme leaves, and 1 g / ½ tsp ground black pepper.'
     time_min: 8
-  - text: 'Finish and season. Take the pot off the heat. Fold in the pulled chicken, the 150 g / 1 cup frozen peas, the 15 ml / 1 tbsp lemon juice, and the 10 g / ¼ cup chopped parsley. Taste and add up to 2 g / ½ tsp kosher salt. The filling should taste slightly over-seasoned and noticeably bright on its own, because the pastry lid mutes it at the table. If it tastes flat, a little more lemon juice usually fixes it before more salt does.'
+  - text: 'Finish and season. Take the pot off the heat. Fold in the pulled chicken, the 150 g / 1 cup frozen peas, the 15 ml / 1 tbsp lemon juice, and the 10 g / ¼ cup chopped parsley. Taste and add up to 2 g / ¾ tsp kosher salt. The filling should taste slightly over-seasoned and noticeably bright on its own, because the pastry lid mutes it at the table. If it tastes flat, a little more lemon juice usually fixes it before more salt does.'
     time_min: 3
   - text: 'Fill and rest. Spread the filling into a 23 x 33 cm (9 x 13 inch) or 3-quart baking dish; it should come to within 1 cm of the rim. Set the dish on a sheet pan to catch drips and let it stand 10 minutes. Steam rising off just-boiled filling melts the butter in the pastry before the oven can set it, and melted layers bake flat.'
     time_min: 10

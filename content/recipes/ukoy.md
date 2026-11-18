@@ -115,7 +115,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; ½ tsp table salt)'
+    note: '(1½ tsp Diamond Crystal; ½ tsp table salt)'
 
   - group: 'Phase 4, frying'
     item: 'neutral oil for frying'
@@ -130,7 +130,7 @@ steps:
     time_min: 12
   - text: 'In a large bowl, toss 170 g / 6 oz mung bean sprouts with 225 g / 8 oz carrot matchsticks and 225 g / 8 oz sweet potato matchsticks until evenly distributed. Set aside.'
     time_min: 3
-  - text: 'In a medium bowl, whisk 265 ml / 9 fl oz ice-cold water with 170 g / 1 cup white rice flour and 4 g / 1 tsp kosher salt until smooth. The batter should pour like heavy cream, thin enough to coat each strand of vegetable, thick enough to cling. Cold water keeps the starch granules from pre-gelatinizing; warm batter goes gummy and the fritters fry stodgy.'
+  - text: 'In a medium bowl, whisk 265 ml / 9 fl oz ice-cold water with 170 g / 1 cup white rice flour and 4 g / 1½ tsp kosher salt until smooth. The batter should pour like heavy cream, thin enough to coat each strand of vegetable, thick enough to cling. Cold water keeps the starch granules from pre-gelatinizing; warm batter goes gummy and the fritters fry stodgy.'
     time_min: 2
   - text: 'Pour the batter over the vegetables. Fold with a spatula until every matchstick and sprout is evenly coated. The mixture looks underbatered, that is correct; ukoy is held together by the fried shell, not by the batter volume.'
     time_min: 2

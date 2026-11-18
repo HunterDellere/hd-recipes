@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; ~0.8% of the steak by weight, salted just before grilling for surface seasoning and crust)'
+    note: '(1½ tsp Diamond Crystal; ~0.8% of the steak by weight, salted just before grilling for surface seasoning and crust)'
   - group: 'Phase 1, beef'
     item: 'neutral oil (high smoke point: refined avocado or grapeseed)'
     slug: 'neutral-oil'
@@ -152,7 +152,7 @@ steps:
   - text: 'Make the toasted glutinous-rice powder (khao khua). In the same dry skillet over medium-low heat, add 25 g / 2 tbsp raw glutinous rice. Toast 6 to 8 minutes, shaking the pan every 30 seconds, until the grains turn from chalk-white to even amber and smell like popcorn and toasted bread. The color cue is the whole grain reading the same medium-amber, not patchy white-and-brown. Cool 2 minutes, then pound in a stone mortar to a coarse powder, texture between sand and fine sea salt, never a fine flour. The pounded grain holds its texture and slurries the dressing; a spice-grinder flour goes dusty and loses the signature grit. Yields 15 g / 2 tbsp khao khua. Set aside.'
     technique: 'mortar-pounding'
     time_min: 10
-  - text: 'Temper and season the steak. Pat the 500 g sirloin fully dry on both sides. Rub a thin film of the 8 g / ½ tbsp neutral oil over both faces, then season both sides evenly with the 4 g / 1 tsp kosher salt right before it goes on the grill. Salting at the grate (rather than a long dry-brine) keeps the surface dry enough to char fast on a lean cut while still seasoning the crust.'
+  - text: 'Temper and season the steak. Pat the 500 g sirloin fully dry on both sides. Rub a thin film of the 8 g / ½ tbsp neutral oil over both faces, then season both sides evenly with the 4 g / 1½ tsp kosher salt right before it goes on the grill. Salting at the grate (rather than a long dry-brine) keeps the surface dry enough to char fast on a lean cut while still seasoning the crust.'
     time_min: 3
   - text: 'Build a hot fire. Heat a charcoal grill to high (coals ashed-over and you can hold a hand 10 cm above the grate for only 2 to 3 seconds) or a gas grill to its highest setting with the lid down for 10 minutes. Lean sirloin needs a fast, hard char; a moderate fire gray-cooks the surface before any crust forms and the open grain dries out. Scrape the grate clean and wipe it with an oiled, folded paper towel held in tongs.'
     time_min: 10

@@ -90,7 +90,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp; for seasoning vegetables)'
+    note: '(1½ tsp; for seasoning vegetables)'
   - group: 'Phase 5, finishing'
     item: 'black pepper, cracked'
     slug: 'black-pepper'

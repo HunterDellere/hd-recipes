@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; ~1% of cucumber weight, pulls surface water through osmosis in 10 minutes)'
+    note: '(1½ tsp Diamond Crystal; ~1% of cucumber weight, pulls surface water through osmosis in 10 minutes)'
   - group: 'Phase 1, the cucumber salad (start first, takes 15 minutes)'
     item: 'rice vinegar, unseasoned'
     slug: 'rice-vinegar'
@@ -99,7 +99,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; 1% by weight, the standard dry-brine ratio for poultry)'
+    note: '(2¼ tsp Diamond Crystal; 1% by weight, the standard dry-brine ratio for poultry)'
   - group: 'Phase 2, dry-brine and dust the chicken (10 minutes)'
     item: 'cornstarch'
     slug: 'cornstarch'
@@ -188,11 +188,11 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Start the cucumbers. Lay the 400 g cucumbers on a cutting board and smash each one along its length with the broad side of a heavy knife or a rolling pin until the skin fractures and the cucumber splits open. Tear them apart by hand into rough 3 cm pieces, irregular shapes are correct. Transfer to a colander or sieve set over a bowl, scatter with the 4 g / 1 tsp kosher salt, toss to coat, and let drain at room temperature for 10 to 15 minutes while you prep the rest. The cucumber will release 30 to 50 g of water; that water is what you do not want in the salad.'
+  - text: 'Start the cucumbers. Lay the 400 g cucumbers on a cutting board and smash each one along its length with the broad side of a heavy knife or a rolling pin until the skin fractures and the cucumber splits open. Tear them apart by hand into rough 3 cm pieces, irregular shapes are correct. Transfer to a colander or sieve set over a bowl, scatter with the 4 g / 1½ tsp kosher salt, toss to coat, and let drain at room temperature for 10 to 15 minutes while you prep the rest. The cucumber will release 30 to 50 g of water; that water is what you do not want in the salad.'
     time_min: 15
   - text: 'Mix the cucumber dressing. In a serving bowl, whisk together the 20 g / 4 tsp rice vinegar, the 5 g / 1 tsp toasted sesame oil, the 4 g / 1 small clove microplane-grated garlic, the 4 g / 2 tsp gochugaru, and the 4 g / 1 tsp granulated sugar until the sugar dissolves. Let stand at room temperature 5 minutes so the raw garlic mellows into the acid.'
     time_min: 1
-  - text: 'Dry-brine and dust the chicken. Pat the 600 g chicken tenderloins fully dry with paper towels. Lay them flat in a shallow bowl or rimmed plate. Toss with the 6 g / 1½ tsp kosher salt, the 6 g / 1 tbsp grated ginger, and the 10 g / 2 tsp light soy sauce. Massage briefly so every tender is evenly coated. Let stand at room temperature for 5 to 8 minutes; the ginger protease starts breaking down the surface proteins while the salt draws a thin layer of moisture into the meat. Then scatter the 20 g / 3 tbsp cornstarch over the tenders and toss to coat each one in a thin even film. The surface should look matte and slightly tacky, not floury-white. If pockets of dry cornstarch persist, drizzle a teaspoon of water in and toss again.'
+  - text: 'Dry-brine and dust the chicken. Pat the 600 g chicken tenderloins fully dry with paper towels. Lay them flat in a shallow bowl or rimmed plate. Toss with the 6 g / 2¼ tsp kosher salt, the 6 g / 1 tbsp grated ginger, and the 10 g / 2 tsp light soy sauce. Massage briefly so every tender is evenly coated. Let stand at room temperature for 5 to 8 minutes; the ginger protease starts breaking down the surface proteins while the salt draws a thin layer of moisture into the meat. Then scatter the 20 g / 3 tbsp cornstarch over the tenders and toss to coat each one in a thin even film. The surface should look matte and slightly tacky, not floury-white. If pockets of dry cornstarch persist, drizzle a teaspoon of water in and toss again.'
     technique: 'velveting'
     time_min: 8
   - text: 'Mix the glaze. In a small bowl, whisk together the 45 g / 3 tbsp gochujang, the 30 g / 1½ tbsp honey, the 15 g / 1 tbsp rice vinegar, the 10 g / 2 tsp light soy sauce, the 5 g / 1 tsp toasted sesame oil, and the 8 g / 2 cloves of grated garlic until smooth and pourable. The texture should be the consistency of ketchup; if it is paste-stiff, thin with a teaspoon of water.'

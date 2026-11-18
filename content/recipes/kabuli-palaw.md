@@ -95,7 +95,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; for the braise)'
+    note: '(1½ tbsp Diamond Crystal; for the braise)'
   - group: 'Phase 2, the lamb gharma (braise)'
     item: 'water'
     qty: 1000
@@ -193,7 +193,7 @@ steps:
   - text: 'Start the soak and the braise. Rinse and soak the 600 g basmati (30 to 60 minutes, then drain). Meanwhile, pat the 1000 g lamb dry. Heat the 75 g / 5 tbsp oil in a heavy pot over medium-high and brown the lamb hard on all sides, 8 to 10 minutes, working in batches so it sears rather than steams. Remove the lamb.'
     technique: 'maillard-sear'
     time_min: 12
-  - text: 'Build the gharma. Lower the heat to medium and add the 350 g chopped onion to the same pot. Cook 12 to 15 minutes, stirring, until deep golden-brown; this browning is the flavor and color foundation of the broth. Add the 15 g minced garlic, the 5 cracked cardamom pods, 5 cloves, 5 g cinnamon stick, and 4 g / 1½ tsp cumin seeds; bloom 45 seconds until fragrant. Return the lamb, add the 12 g / 1 tbsp kosher salt and the 1000 ml / 4 cups water, bring to a simmer, cover, and braise on low 60 to 90 minutes until the lamb is fork-tender.'
+  - text: 'Build the gharma. Lower the heat to medium and add the 350 g chopped onion to the same pot. Cook 12 to 15 minutes, stirring, until deep golden-brown; this browning is the flavor and color foundation of the broth. Add the 15 g minced garlic, the 5 cracked cardamom pods, 5 cloves, 5 g cinnamon stick, and 4 g / 1½ tsp cumin seeds; bloom 45 seconds until fragrant. Return the lamb, add the 12 g / 1½ tbsp kosher salt and the 1000 ml / 4 cups water, bring to a simmer, cover, and braise on low 60 to 90 minutes until the lamb is fork-tender.'
     technique: 'blooming-aromatics'
     time_min: 80
   - text: 'Make the burnt-sugar color. In a small dry saucepan over medium heat, melt the 24 g / 2 tbsp sugar without stirring until it turns a deep mahogany brown and just begins to smoke, 3 to 5 minutes; the goal is dark and slightly bitter, one shade before burnt. Stand back and add the 60 ml / ¼ cup hot water (it will sputter violently), swirl to dissolve into a dark syrup, and pull off the heat. This caramel is what gives palaw its amber-brown grains.'

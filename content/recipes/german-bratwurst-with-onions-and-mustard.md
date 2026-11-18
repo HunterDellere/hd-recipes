@@ -79,7 +79,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp)'
+    note: '(1 tsp)'
 
   - group: 'Phase 3, the sear and finish'
     item: 'neutral oil (for the iron skillet sear)'

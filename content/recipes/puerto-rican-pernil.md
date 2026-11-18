@@ -54,7 +54,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal; 1% by weight of the pork)'
+    note: '(3½ tbsp Diamond Crystal; 1% by weight of the pork)'
   - group: 'Phase 1, the pork and marinade (12 hours ahead)'
     item: 'dried oregano (Puerto Rican or Mediterranean)'
     slug: 'dried-oregano'

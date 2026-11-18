@@ -54,7 +54,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal, in three additions)'
+    note: '(2¾ tsp Diamond Crystal, in three additions)'
   - group: 'Filling (the day before)'
     item: 'sweet paprika (pimentón dulce, not smoked)'
     slug: 'hungarian-paprika'
@@ -141,9 +141,9 @@ steps:
     time_min: 20
   - text: 'Cook the onions. Melt the 40 g / 3 tbsp lard in a wide skillet over medium heat. Add the 600 g diced onions and 3 g / ¾ tsp of the kosher salt; the salt draws out water so they soften without browning. Cook, stirring with a wooden spoon, for 12 to 15 minutes until soft, sweet, and translucent with no color. The onion is what keeps the filling moist, so it should be fully soft before the beef goes in.'
     time_min: 15
-  - text: 'Cook the beef. Turn the heat to medium-high, push the onions to the edges, and add the 600 g diced beef with another 3 g / ¾ tsp kosher salt. Stir and cook only until the cubes are no longer pink on the outside and are releasing juice, 4 to 5 minutes. The beef will finish cooking in the oven; cooking it hard here dries it out.'
+  - text: 'Cook the beef. Turn the heat to medium-high, push the onions to the edges, and add the 600 g diced beef with another 3 g / 1 tsp kosher salt. Stir and cook only until the cubes are no longer pink on the outside and are releasing juice, 4 to 5 minutes. The beef will finish cooking in the oven; cooking it hard here dries it out.'
     time_min: 5
-  - text: 'Season off the heat. Take the pan off the burner and stir in the 8 g / 1 tbsp sweet paprika, 4 g / 2 tsp cumin, 2 g / 1 tsp red pepper flakes, 1 g / 1 tsp oregano, and 1 g / ½ tsp black pepper. The residual heat blooms the spices in the fat; paprika burns and turns bitter over direct heat. Taste and add up to the remaining 2 g / ½ tsp kosher salt. The filling should taste slightly too salty and too spiced while warm, because cold filling inside pastry reads milder.'
+  - text: 'Season off the heat. Take the pan off the burner and stir in the 8 g / 1 tbsp sweet paprika, 4 g / 2 tsp cumin, 2 g / 1 tsp red pepper flakes, 1 g / 1 tsp oregano, and 1 g / ½ tsp black pepper. The residual heat blooms the spices in the fat; paprika burns and turns bitter over direct heat. Taste and add up to the remaining 2 g / ¾ tsp kosher salt. The filling should taste slightly too salty and too spiced while warm, because cold filling inside pastry reads milder.'
     technique: 'blooming-aromatics'
     time_min: 3
   - text: 'Chill. Spread the filling in a glass dish, cool to room temperature, cover with a fitted lid or beeswax wrap, and refrigerate at least 4 hours, ideally overnight. It should be firm, with the fat set white around the meat.'

@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; ~1% of trimmed squash weight)'
+    note: '(2¼ tsp Diamond Crystal; ~1% of trimmed squash weight)'
   - group: 'Phase 1, hard-roasted delicata'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -80,7 +80,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; for the cooking water)'
+    note: '(2¼ tsp Diamond Crystal; for the cooking water)'
 
   - group: 'Phase 3, massaged kale'
     item: 'lacinato kale (Tuscan / dinosaur kale)'
@@ -100,7 +100,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for the massage)'
+    note: '(¾ tsp Diamond Crystal; for the massage)'
 
   - group: 'Phase 4, maple-cider vinaigrette'
     item: 'apple cider vinegar, unfiltered'
@@ -132,7 +132,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Phase 4, maple-cider vinaigrette'
     item: 'extra-virgin olive oil'
     slug: 'extra-virgin-olive-oil'
@@ -165,7 +165,7 @@ steps:
   - text: 'Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs to preheat for at least 10 minutes; the 700 g / 2 medium squash worth of half-moons must hiss on contact when added. Cold pan plus cold squash means 15 minutes spent climbing to roasting temperature and the squash steams before it browns. The thin edible skin of delicata is what differentiates this dish from a butternut version; the skin caramelizes into a savory chewy band around each half-moon and is the structural reason the dish reads as roasted-vegetable-salad rather than mashed-squash-salad.'
     technique: 'high-heat-dry-roasting'
     time_min: 12
-  - text: 'While the oven heats, scrub the 700 g / 2 medium delicata squash, halve lengthwise, scoop the seeds with a spoon, and slice into 1 cm half-moons (skin on, no peeling). On a wide bowl or directly on a sheet of parchment, toss the half-moons with the 20 g / 1½ tbsp olive oil, the 6 g / 1½ tsp kosher salt, and the 1 g / ¼ tsp cracked black pepper until every piece is glossed. Pooled oil at the bottom of the bowl means too much, drag the pieces through it.'
+  - text: 'While the oven heats, scrub the 700 g / 2 medium delicata squash, halve lengthwise, scoop the seeds with a spoon, and slice into 1 cm half-moons (skin on, no peeling). On a wide bowl or directly on a sheet of parchment, toss the half-moons with the 20 g / 1½ tbsp olive oil, the 6 g / 2¼ tsp kosher salt, and the 1 g / ¼ tsp cracked black pepper until every piece is glossed. Pooled oil at the bottom of the bowl means too much, drag the pieces through it.'
     time_min: 8
   - text: 'Pull the preheated sheet pan from the oven and tip the dressed squash onto it in a single layer, cut faces down where possible. The half-moons should sizzle audibly. Spread so each piece has 1 to 2 cm of clear pan around it; if it does not fit, use a second preheated pan. Crowded vegetables steam each other and the surface stays wet. Roast 22 to 28 minutes without disturbing for the first 18 minutes; at 18 minutes flip one piece to check the underside, which should be deep mahogany. Flip all pieces with a thin spatula and return for 4 to 8 minutes until the flesh is yielding at a fork and the second side has color too. Pull and rest on the pan; the residual heat finishes the cook.'
     technique: 'high-heat-dry-roasting'
@@ -173,11 +173,11 @@ steps:
   - text: 'While the squash roasts, build the farro pilaf. In a 3-quart heavy saucepan over medium heat, warm the 10 g / 2 tsp olive oil. Add the 200 g / 1 cup dry semi-pearled farro and toast in the dry oil, stirring constantly, for 90 to 120 seconds until the grains darken one shade and smell distinctly nutty. The dry-toast is what differentiates farro pilaf from farro boiled-in-water; the surface of each grain hits Maillard temperature and develops the popcorn-aromatic compounds that boiled farro lacks.'
     technique: 'dry-toasting'
     time_min: 3
-  - text: 'Add the 800 ml / 3⅓ cups water and the 6 g / 1½ tsp kosher salt to the toasted farro. Bring to a boil, reduce to a bare simmer, cover loosely, and cook 25 to 30 minutes for semi-pearled (50+ minutes for whole; check the package). The grains should be tender with a slight chew at the center, not mushy. Drain off any excess water in a fine-mesh sieve and spread the farro on a wide plate or sheet pan to cool to warm-not-hot. Hot farro on the platter wilts the kale and breaks the dressing; warm farro picks up the vinaigrette without collapsing the structure.'
+  - text: 'Add the 800 ml / 3⅓ cups water and the 6 g / 2¼ tsp kosher salt to the toasted farro. Bring to a boil, reduce to a bare simmer, cover loosely, and cook 25 to 30 minutes for semi-pearled (50+ minutes for whole; check the package). The grains should be tender with a slight chew at the center, not mushy. Drain off any excess water in a fine-mesh sieve and spread the farro on a wide plate or sheet pan to cool to warm-not-hot. Hot farro on the platter wilts the kale and breaks the dressing; warm farro picks up the vinaigrette without collapsing the structure.'
     time_min: 28
-  - text: 'While the farro cooks, massage the kale. Place the 150 g / 1 medium bunch stripped-and-ribboned lacinato kale in a wide bowl. Add the 10 g / 2 tsp lemon juice and the 2 g / ½ tsp kosher salt. With clean hands, scrunch and rub the kale leaves between your palms for 60 to 90 seconds; the volume drops by half, the leaves turn a deeper green, and the texture goes from leathery-stiff to tender-pliant. The acid plus the salt plus mechanical bruising breaks down the cell walls (the same chemistry as a quick salt cure on a fish fillet); the kale becomes salad-edible rather than chewing-jaw-edible.'
+  - text: 'While the farro cooks, massage the kale. Place the 150 g / 1 medium bunch stripped-and-ribboned lacinato kale in a wide bowl. Add the 10 g / 2 tsp lemon juice and the 2 g / ¾ tsp kosher salt. With clean hands, scrunch and rub the kale leaves between your palms for 60 to 90 seconds; the volume drops by half, the leaves turn a deeper green, and the texture goes from leathery-stiff to tender-pliant. The acid plus the salt plus mechanical bruising breaks down the cell walls (the same chemistry as a quick salt cure on a fish fillet); the kale becomes salad-edible rather than chewing-jaw-edible.'
     time_min: 2
-  - text: 'Build the maple-cider vinaigrette. In a small bowl or jar, combine the 30 g / 2 tbsp apple cider vinegar, the 15 g / 1 tbsp maple syrup, the 12 g / 2 tsp whole-grain mustard, the 15 g / 1 small microplaned shallot, and the 2 g / ½ tsp kosher salt. Whisk vigorously to dissolve the salt and integrate the mustard. Stream in the 80 g / ¼ cup + 1 tbsp olive oil in a thin steady drizzle while whisking constantly; the vinaigrette tightens as the oil emulsifies into the acid base. Whisk for 20 to 30 seconds after the last of the oil; the dressing should ribbon off the whisk and slowly settle back into the surface. Taste; the dressing should read sweet-acid-mustard in that order, fully salted; if flat, more salt.'
+  - text: 'Build the maple-cider vinaigrette. In a small bowl or jar, combine the 30 g / 2 tbsp apple cider vinegar, the 15 g / 1 tbsp maple syrup, the 12 g / 2 tsp whole-grain mustard, the 15 g / 1 small microplaned shallot, and the 2 g / ¾ tsp kosher salt. Whisk vigorously to dissolve the salt and integrate the mustard. Stream in the 80 g / ¼ cup + 1 tbsp olive oil in a thin steady drizzle while whisking constantly; the vinaigrette tightens as the oil emulsifies into the acid base. Whisk for 20 to 30 seconds after the last of the oil; the dressing should ribbon off the whisk and slowly settle back into the surface. Taste; the dressing should read sweet-acid-mustard in that order, fully salted; if flat, more salt.'
     technique: 'vinaigrette-emulsion'
     time_min: 3
   - text: 'Toast the 60 g / ½ cup raw skin-on hazelnuts on a small sheet pan in the same 230 °C oven (the temperature is hotter than ideal for nuts but the squash was already pulled, drop the oven to 175 °C / 350 °F if you have time, or just watch closely) for 8 to 10 minutes until the skins crack and the flesh smells distinctly toasted. Wrap the hot nuts in a clean kitchen towel and rub vigorously for 30 seconds; most of the papery skins slough off (some residual is fine, the bitterness is in the bulk skin not the wisps). Cool 2 minutes and chop roughly. The skin-rub step is the single biggest difference between a hazelnut salad that reads sweet-and-toasted and one that reads bitter-and-tannic.'

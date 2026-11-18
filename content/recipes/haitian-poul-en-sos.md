@@ -94,7 +94,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(3 tsp Diamond Crystal)'
+    note: '(1½ tbsp Diamond Crystal)'
   - group: 'Phase 2, the chicken (marinate 4 to 24 hours)'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
@@ -149,7 +149,7 @@ ingredients:
 steps:
   - text: 'Make the epis. Combine all of Phase 1 (30 g parsley, 80 g scallions, 25 g garlic, 80 g green pepper, 4 g thyme, 8 g Scotch bonnet, 30 ml lime juice, 30 ml oil) in a blender or food processor. Pulse until you have a coarse green paste, scraping down once or twice. The paste should look like a chunky pesto, not a smooth puree. Yields about 250 g; you will use about 120 g in the marinade and the rest keeps 2 weeks refrigerated for future use.'
     time_min: 5
-  - text: 'Rub the 1200 g chicken with the 12 g / 3 tsp salt, 3 g / 1½ tsp pepper, and 120 g of the fresh epis. Massage into the skin and under any loose skin flaps. Refrigerate 4 to 24 hours.'
+  - text: 'Rub the 1200 g chicken with the 12 g / 1½ tbsp salt, 3 g / 1½ tsp pepper, and 120 g of the fresh epis. Massage into the skin and under any loose skin flaps. Refrigerate 4 to 24 hours.'
     time_min: 5
   - text: 'Day of: scrape most of the epis off the chicken back into the marinade bowl (the wet paste burns aggressively during the sear); reserve the scraped-off epis for the braise. Pat the chicken pieces dry with paper towels. Heat the 30 ml / 2 tbsp neutral oil in a wide deep skillet or shallow Dutch oven over medium-high heat. Sear the chicken in 2 batches, skin-side down first, 5 to 6 minutes per side until deep gold. Transfer to a plate; reserve.'
     technique: 'maillard-sear'

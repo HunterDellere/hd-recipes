@@ -81,7 +81,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Phase 2, chicken and onions'
     item: 'water (for deglazing the onions)'
     qty: 60
@@ -180,7 +180,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal, to taste)'
+    note: '(¾ tsp Diamond Crystal, to taste)'
   - group: 'Phase 5, season and serve'
     item: 'fukujinzuke (soy-pickled vegetable relish)'
     qty: 60
@@ -196,7 +196,7 @@ steps:
   - text: 'Sear the chicken. Heat a 5 to 6 quart Dutch oven over medium-high heat, add the 15 g / 1 tbsp neutral oil, and lay in the chicken in one layer (two batches if it crowds). Sear without moving for 3 minutes until the underside is deep golden, turn, and sear 2 minutes more. It will not be cooked through; that happens in the simmer. Move the chicken to a plate, leaving the fat and browned fond in the pot.'
     technique: 'maillard-sear'
     time_min: 7
-  - text: 'Caramelize the onions. Lower the heat to medium, add the 15 g / 1 tbsp butter, the 500 g / 2 large sliced onions, and the 2 g / ½ tsp kosher salt. The salt draws water out of the onions, which dissolves the chicken fond. Cook, stirring every 2 to 3 minutes with a wooden spoon, for about 30 minutes. Each time a brown film builds on the bottom of the pot, add a splash (about 15 ml / 1 tbsp) of the 60 ml / ¼ cup water and scrape it up; the browned sugars go back into the onions. Stop when the onions are a soft, jammy, deep amber and have shrunk to roughly a quarter of their raw volume. These onions are most of the sweetness and depth in the finished sauce, so do not rush them over high heat, which scorches the edges before the centers soften.'
+  - text: 'Caramelize the onions. Lower the heat to medium, add the 15 g / 1 tbsp butter, the 500 g / 2 large sliced onions, and the 2 g / ¾ tsp kosher salt. The salt draws water out of the onions, which dissolves the chicken fond. Cook, stirring every 2 to 3 minutes with a wooden spoon, for about 30 minutes. Each time a brown film builds on the bottom of the pot, add a splash (about 15 ml / 1 tbsp) of the 60 ml / ¼ cup water and scrape it up; the browned sugars go back into the onions. Stop when the onions are a soft, jammy, deep amber and have shrunk to roughly a quarter of their raw volume. These onions are most of the sweetness and depth in the finished sauce, so do not rush them over high heat, which scorches the edges before the centers soften.'
     technique: 'deglazing'
     time_min: 30
   - text: 'Cook the rice while the onions caramelize. Bring the soaked rice and its 600 ml / 2½ cups water to a boil over high heat with the lid on (about 5 minutes; listen for the rattle and watch for steam). Turn the heat to the lowest setting and cook 13 minutes without lifting the lid, then turn the heat off and let it steam, still covered, 10 minutes more. Fluff with a rice paddle by cutting and folding, and keep covered until serving.'
@@ -212,7 +212,7 @@ steps:
     time_min: 1
   - text: 'Thicken the curry. Ladle about 240 ml / 1 cup of the simmering liquid from the pot into the roux and whisk until smooth and lump-free; the roux will seize at first, then loosen into a thick, glossy paste. Turn the heat under the pot to low and stir the loosened roux back in. Simmer 10 minutes, stirring the bottom with the wooden spoon every minute or so, since the thickened sauce sticks and scorches easily. The flour starch needs this time at a simmer to swell fully and lose its raw taste. The curry is ready when it coats the spoon thickly and slides off slowly in a ribbon.'
     time_min: 10
-  - text: 'Season and finish. Stir in the 18 g / 1 tbsp soy sauce, then taste. The sauce should read savory, gently sweet from the onions and apple, and warm rather than hot. Add up to the 2 g / ½ tsp kosher salt if it tastes flat; homemade unsalted stock usually needs all of it. Turn off the heat and stir in the 15 g / 1 tbsp Worcestershire sauce last: its vinegar and tamarind give the finishing acidity that keeps the rich sauce from tasting heavy, and adding it off the heat keeps that acidity bright. Let the curry stand 10 minutes, during which it thickens a little more.'
+  - text: 'Season and finish. Stir in the 18 g / 1 tbsp soy sauce, then taste. The sauce should read savory, gently sweet from the onions and apple, and warm rather than hot. Add up to the 2 g / ¾ tsp kosher salt if it tastes flat; homemade unsalted stock usually needs all of it. Turn off the heat and stir in the 15 g / 1 tbsp Worcestershire sauce last: its vinegar and tamarind give the finishing acidity that keeps the rich sauce from tasting heavy, and adding it off the heat keeps that acidity bright. Let the curry stand 10 minutes, during which it thickens a little more.'
     time_min: 11
   - text: 'Serve. Spoon about 250 g / 1¼ cups rice onto one side of each wide, shallow plate and ladle the curry beside it, so each bite can take as much sauce as the eater wants. Put 15 g / 1 tbsp fukujinzuke at the edge of each plate if using; its sweet-salty crunch and acidity cut through the sauce.'
     time_min: 3

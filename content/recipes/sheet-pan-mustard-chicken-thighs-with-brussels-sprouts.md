@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 9
     unit: 'g'
-    note: '(2¼ tsp Diamond Crystal; about 1% of the chicken weight)'
+    note: '(3¼ tsp Diamond Crystal; about 1% of the chicken weight)'
 
   - group: 'Phase 2, the mustard-maple glaze'
     item: 'dijon mustard'
@@ -101,7 +101,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp; for the sprouts)'
+    note: '(1 tsp; for the sprouts)'
 
   - group: 'Phase 4, finish'
     item: 'apple cider vinegar'
@@ -111,12 +111,12 @@ ingredients:
     note: '(2 tsp; the bright acid that cuts the schmaltz at the end)'
 
 steps:
-  - text: 'At least 4 hours ahead (overnight is better), pat the 900 g / 6 thighs bone-dry and salt them all over with the 9 g / 2¼ tsp kosher salt, working a little under the skin. Set them skin-up on a rack over a tray and refrigerate uncovered. The salt seasons the meat and the dry air dehydrates the skin so it crisps rather than steams.'
+  - text: 'At least 4 hours ahead (overnight is better), pat the 900 g / 6 thighs bone-dry and salt them all over with the 9 g / 3¼ tsp kosher salt, working a little under the skin. Set them skin-up on a rack over a tray and refrigerate uncovered. The salt seasons the meat and the dry air dehydrates the skin so it crisps rather than steams.'
     technique: 'dry-brining'
     time_min: 240
   - text: 'Thirty minutes before cooking, pull the thighs out to lose the fridge chill. Preheat the oven to 220 °C / 425 °F. Whisk the glaze: the 45 g / 3 tbsp dijon, the 30 g / 2 tbsp maple syrup, the 15 g / 1 tbsp olive oil, the 9 g / 3 cloves grated garlic, the 2 g / 2 tsp thyme leaves, and the 1 g / ½ tsp black pepper into a smooth paste.'
     time_min: 30
-  - text: 'Toss the 680 g / 1.5 lb halved sprouts with the 15 g / 1 tbsp olive oil and the 3 g / ¾ tsp kosher salt, and spread them cut-face down in a single layer across a rimmed sheet pan. Set a wire rack over the pan (or simply nestle the thighs among the sprouts if you have no rack). Coat the thighs all over with the mustard-maple glaze, getting it under and over the skin, and arrange them skin-up on the rack directly above the sprouts so the rendering fat drips onto them.'
+  - text: 'Toss the 680 g / 1.5 lb halved sprouts with the 15 g / 1 tbsp olive oil and the 3 g / 1 tsp kosher salt, and spread them cut-face down in a single layer across a rimmed sheet pan. Set a wire rack over the pan (or simply nestle the thighs among the sprouts if you have no rack). Coat the thighs all over with the mustard-maple glaze, getting it under and over the skin, and arrange them skin-up on the rack directly above the sprouts so the rendering fat drips onto them.'
     time_min: 8
   - text: 'Roast at 220 °C / 425 °F for 30 to 35 minutes. The chicken fat renders down onto the sprouts and bastes them while the dry oven heat crisps and lacquers the glazed skin to deep amber. The sprouts caramelize in the schmaltz against the maple in the drippings. Do not open the oven before 25 minutes; the skin needs uninterrupted dry heat to crisp.'
     technique: 'maillard-sear'

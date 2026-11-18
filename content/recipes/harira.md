@@ -131,7 +131,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 14
     unit: 'g'
-    note: '(1¼ tbsp Diamond Crystal total; in layers)'
+    note: '(1¾ tbsp Diamond Crystal total; in layers)'
 
   - group: 'Phase 3, the tomato base and braising liquid'
     item: 'canned crushed tomatoes (or 500 g fresh ripe, grated)'
@@ -204,7 +204,7 @@ steps:
     time_min: 5
   - text: 'Simmer covered 60 minutes, stirring every 15 minutes, until the lamb is fork-tender and the soup has integrated.'
     time_min: 60
-  - text: 'Add the 100 g lentils and the cooked chickpeas. Continue simmering covered 25 to 30 minutes until the lentils are tender (no chalk in the bite). Add the remaining 6 g / 1½ tsp kosher salt. Taste; the soup should read deeply spiced, lamb-savory, with tomato body and a faint warming cinnamon-ginger note. Adjust salt and pepper.'
+  - text: 'Add the 100 g lentils and the cooked chickpeas. Continue simmering covered 25 to 30 minutes until the lentils are tender (no chalk in the bite). Add the remaining 6 g / 2¼ tsp kosher salt. Taste; the soup should read deeply spiced, lamb-savory, with tomato body and a faint warming cinnamon-ginger note. Adjust salt and pepper.'
     time_min: 28
   - text: 'Make the tedouira: in a small bowl, whisk the 50 g flour with the 200 g cold water until completely smooth (no lumps; the slurry should look like thin pancake batter). Whisking is structural; lumps in the slurry produce lumps in the soup.'
     time_min: 3

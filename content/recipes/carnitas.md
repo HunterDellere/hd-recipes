@@ -95,7 +95,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 18
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; the structural cure-and-seasoning, distributed through the long cook)'
+    note: '(2¼ tbsp Diamond Crystal; the structural cure-and-seasoning, distributed through the long cook)'
 
   - group: 'Phase 2, the taco assembly'
     item: 'corn tortillas (4 inch / 10 cm)'

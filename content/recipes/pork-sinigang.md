@@ -47,7 +47,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; for the initial pork simmer)'
+    note: '(3½ tsp Diamond Crystal; for the initial pork simmer)'
   - group: 'Phase 1, pork simmer'
     item: 'yellow onion, quartered'
     slug: 'yellow-onion'
@@ -139,7 +139,7 @@ ingredients:
     note: '(2 tbsp in a small dish, often spiked with chopped chili (sawsawan); diners drizzle over pork pieces for extra salt)'
 
 steps:
-  - text: 'Build the pork base. Place the 1200 g pork ribs (and belly, if using a mix), 2500 ml / 10 cups water, 10 g / 2 tsp kosher salt, and 150 g quartered yellow onion in a stockpot. Bring to a bare simmer over medium heat. Skim the gray foam that rises in the first 10 minutes (this is denatured blood protein, removing it keeps the broth clear). Reduce heat to maintain a gentle simmer, partially covered (lid cracked), for 45 to 60 minutes until the pork is fork-tender and just-shy-of-falling-off-the-bone.'
+  - text: 'Build the pork base. Place the 1200 g pork ribs (and belly, if using a mix), 2500 ml / 10 cups water, 10 g / 3½ tsp kosher salt, and 150 g quartered yellow onion in a stockpot. Bring to a bare simmer over medium heat. Skim the gray foam that rises in the first 10 minutes (this is denatured blood protein, removing it keeps the broth clear). Reduce heat to maintain a gentle simmer, partially covered (lid cracked), for 45 to 60 minutes until the pork is fork-tender and just-shy-of-falling-off-the-bone.'
     technique: 'simmering'
     time_min: 60
   - text: 'While the pork simmers, soak the 80 g tamarind pulp in 240 ml / 1 cup of the hot pork broth (ladled from the pot) for 15 minutes. Then mash the softened tamarind through a fine mesh sieve over a bowl, pushing the pulp through with the back of a spoon and leaving the seeds and fiber behind. You should have about 200 ml of thick, deeply-sour tamarind extract. Discard the seeds and fiber.'

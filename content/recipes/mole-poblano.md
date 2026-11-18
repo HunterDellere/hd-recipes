@@ -197,7 +197,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; adjust to taste at the end)'
+    note: '(1½ tbsp Diamond Crystal; adjust to taste at the end)'
 
 steps:
   - text: 'Stage every ingredient on a sheet pan before turning on heat. Mole has five toasting phases across twenty-plus ingredients; mid-cook ingredient hunting is the structural failure mode. Set out the 40 g ancho, 30 g mulato, 20 g pasilla, 6 g chipotle morita, 60 g almonds, 40 g peanuts, 35 g sesame (reserving 5 g for garnish), 30 g pepitas, 50 g raisins, 100 g plantain rounds, 30 g torn tortilla, 200 g chopped onion, 30 g whole garlic cloves, 200 g halved tomatoes, 100 g tomatillos, and the spice quartet (5 g canela, 1 g cloves, 3 g black pepper, 1 g allspice, 2 g cumin seeds, 2 g oregano).'

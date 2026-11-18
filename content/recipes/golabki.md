@@ -87,7 +87,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; salt the filling generously, the cabbage is bland and absorbs salt)'
+    note: '(2¾ tsp Diamond Crystal; salt the filling generously, the cabbage is bland and absorbs salt)'
   - group: 'Phase 2, the filling'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -147,7 +147,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; the sauce needs salting, the stock typically does not contribute enough)'
+    note: '(1½ tsp Diamond Crystal; the sauce needs salting, the stock typically does not contribute enough)'
   - group: 'Phase 3, the sauce and bake'
     item: 'granulated sugar'
     slug: 'granulated-sugar'
@@ -172,11 +172,11 @@ steps:
   - text: 'Cook the onion for the filling. In a small skillet, melt the 30 g / 2 tbsp butter over medium heat. Add the 200 g / 1 large diced yellow onion and cook 6 to 8 minutes, stirring every 2 minutes, until soft and just golden. Spread on a plate to cool fully (5 to 10 minutes); hot onion starts cooking the pork as it sits.'
     technique: 'sweating'
     time_min: 12
-  - text: 'In a large bowl, combine the 700 g / 1½ lb ground pork, the cooled par-cooked rice (about 200 g cooked weight), the cooled sautéed onion, the 1 egg, the 8 g / 2 tsp kosher salt, the 4 g / 1¼ tsp black pepper, the 5 g / 2 tsp paprika, the 12 g / 3 tbsp dill, the 10 g / 2 tbsp parsley, and the 10 g / 3 cloves microplaned garlic. Mix thoroughly with your hands for 60 to 90 seconds; the mixture should be uniform and slightly tacky.'
+  - text: 'In a large bowl, combine the 700 g / 1½ lb ground pork, the cooled par-cooked rice (about 200 g cooked weight), the cooled sautéed onion, the 1 egg, the 8 g / 2¾ tsp kosher salt, the 4 g / 1¼ tsp black pepper, the 5 g / 2 tsp paprika, the 12 g / 3 tbsp dill, the 10 g / 2 tbsp parsley, and the 10 g / 3 cloves microplaned garlic. Mix thoroughly with your hands for 60 to 90 seconds; the mixture should be uniform and slightly tacky.'
     time_min: 5
   - text: 'Form the rolls. Preheat the oven to 165 °C / 325 °F. Take one cabbage leaf, rib-side down. Place 60 to 70 g (about 3 tbsp) of filling near the rib end. Fold the rib end over the filling, fold in the two sides, and roll up tightly toward the tip of the leaf, like a small burrito. Place seam-side down. Repeat with the remaining leaves; you should get 12 to 14 rolls.'
     time_min: 15
-  - text: 'Make the sauce. In a bowl, whisk together the 800 g / 2 cans crushed whole peeled tomatoes, the 500 ml / 2 cups stock, the 30 g / 2 tbsp tomato paste, the 4 g / 1 tsp kosher salt, and the 6 g / 1½ tsp sugar. Taste and adjust; the sauce should read clearly tomatoey, lightly salted, with the sweetness barely registering as a balance to the acid.'
+  - text: 'Make the sauce. In a bowl, whisk together the 800 g / 2 cans crushed whole peeled tomatoes, the 500 ml / 2 cups stock, the 30 g / 2 tbsp tomato paste, the 4 g / 1½ tsp kosher salt, and the 6 g / 1½ tsp sugar. Taste and adjust; the sauce should read clearly tomatoey, lightly salted, with the sweetness barely registering as a balance to the acid.'
     time_min: 3
   - text: 'Assemble for baking. Tear or chop any leftover cabbage leaves (the inner small ones that did not separate cleanly) and spread across the bottom of a 6 to 7 quart Dutch oven; this layer prevents the rolls from sticking and burning. Arrange the cabbage rolls seam-side down in the pot in a tight single layer; if needed, stack a second layer on top. Tuck the 2 bay leaves between the rolls. Pour the tomato sauce over the rolls; the sauce should come about three-quarters of the way up the rolls. If the rolls are not nearly submerged, add a splash more stock.'
     time_min: 10

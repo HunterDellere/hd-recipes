@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; for the fillets)'
+    note: '(1 tsp Diamond Crystal; for the fillets)'
   - group: 'Phase 1, the fish'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -132,7 +132,7 @@ ingredients:
     note: '(1 tbsp)'
 
 steps:
-  - text: 'Preheat the oven to 220°C / 425°F with a sheet pan on the middle rack. Let it come fully to temperature, 15 minutes past the indicator beep, while you build the packets; the packet must meet a saturated hot oven or it will not puff. Pat the 240 g / 2 pompano fillets bone-dry on both sides and season each with the 3 g / ¾ tsp kosher salt and the 1 g / ½ tsp black pepper, divided between them. Set aside while you build the base.'
+  - text: 'Preheat the oven to 220°C / 425°F with a sheet pan on the middle rack. Let it come fully to temperature, 15 minutes past the indicator beep, while you build the packets; the packet must meet a saturated hot oven or it will not puff. Pat the 240 g / 2 pompano fillets bone-dry on both sides and season each with the 3 g / 1 tsp kosher salt and the 1 g / ½ tsp black pepper, divided between them. Set aside while you build the base.'
     time_min: 5
   - text: 'Build the umami base. In a skillet over medium-low heat, melt 28 g / 2 tbsp of the 42 g butter (reserve the rest for the parchment and to dot the packets). Add the 40 g / 1 minced shallot and a pinch of the salt and sweat until translucent and soft, 4 to 5 minutes, without browning; browning pushes the base into the wrong register. Add the 9 g / 3 cloves minced garlic and the 6 g / 2 minced anchovy fillets and cook 60 seconds, mashing the anchovy until it dissolves into the fat. The anchovy is the glutamate spine of the dish and will read as savory depth, not as fish.'
     time_min: 6

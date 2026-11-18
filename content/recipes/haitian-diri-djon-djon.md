@@ -99,7 +99,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
 steps:
   - text: 'Place the 20 g dried djon djon in a heatproof bowl. Cover with the 900 ml hot water. Steep 25 to 30 minutes; the water will turn from clear to deep inky black. Strain through a fine-mesh sieve into a measuring cup, pressing the mushrooms gently to release the dark liquid. Reserve the liquid (you should have about 800 ml). Discard the spent mushrooms (or reserve 30 g, rough chopped, to fold back into the rice for textural body if desired).'
@@ -111,7 +111,7 @@ steps:
     time_min: 1
   - text: 'Add the 400 g / 2 cups rinsed rice. Toast in the aromatic oil 90 seconds, stirring, until the grains turn from translucent to opaque white and smell faintly nutty.'
     time_min: 2
-  - text: 'Add the reserved 800 ml djon djon liquid (the rice now turns deep inky grey on contact), the 100 g frozen peas, and the 8 g / 2 tsp salt. Stir once to distribute. Float the whole intact 12 g Scotch bonnet on top.'
+  - text: 'Add the reserved 800 ml djon djon liquid (the rice now turns deep inky grey on contact), the 100 g frozen peas, and the 8 g / 2¾ tsp salt. Stir once to distribute. Float the whole intact 12 g Scotch bonnet on top.'
     time_min: 1
   - text: 'Bring to a hard boil over high heat, uncovered. Once boiling, reduce heat to the lowest setting, cover tightly (use a kitchen towel between the pot and the lid if the seal is loose), and cook 18 minutes without lifting the lid.'
     time_min: 18

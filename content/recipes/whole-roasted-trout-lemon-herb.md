@@ -90,7 +90,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 7
     unit: 'g'
-    note: '(1¾ tsp Diamond Crystal; over the skin, into the slashes, and inside both cavities)'
+    note: '(2½ tsp Diamond Crystal; over the skin, into the slashes, and inside both cavities)'
   - group: 'Phase 1, the fish and cavity'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -136,7 +136,7 @@ ingredients:
 steps:
   - text: 'Pull the 600 g / 2 whole trout from the fridge 15 to 20 minutes ahead to temper, and set the oven to 230°C / 450°F with a rack in the upper third. Verify the fishmonger scaled and gutted the fish and removed the gills. Rinse each cavity and scrape any dark blood line along the inside of the spine with the back of a small spoon; the blood line carries the strongest fishy flavor and is the main source of "fishy fish" complaints. Pat both fish completely dry inside and out, since a wet skin steams instead of crisping.'
     time_min: 5
-  - text: 'With a sharp knife, cut three diagonal slashes 1 cm deep into the flesh on each side of both fish, from the gill plate to the tail. On a thin trout the slashes do two jobs: they open channels for the salt and oil, and they give a visual doneness cue, since the flesh in the slashes opaques first. Keep them shallow, 1 cm at most, because a trout fillet runs only 1 to 2 cm thick and a deep cut reaches the spine. Rub the 7 g / 1¾ tsp kosher salt over the skin on both sides, into the slashes, and inside both cavities. Grind the 1 g / ½ tsp black pepper over the skin.'
+  - text: 'With a sharp knife, cut three diagonal slashes 1 cm deep into the flesh on each side of both fish, from the gill plate to the tail. On a thin trout the slashes do two jobs: they open channels for the salt and oil, and they give a visual doneness cue, since the flesh in the slashes opaques first. Keep them shallow, 1 cm at most, because a trout fillet runs only 1 to 2 cm thick and a deep cut reaches the spine. Rub the 7 g / 2½ tsp kosher salt over the skin on both sides, into the slashes, and inside both cavities. Grind the 1 g / ½ tsp black pepper over the skin.'
     time_min: 4
   - text: 'Stuff the cavities. Divide the ~60 g / lemon rounds (one of the two lemons), the 16 g / 4 smashed garlic cloves, the 10 g / dill fronds, the 8 g / parsley, and the 4 g / thyme sprigs between the two fish, packing each cavity loosely. The aromatics perfume the flesh from the inside and steam the cavity as the fish roasts, and the lemon slices keep the cavity walls moist. Rub the 28 g / 2 tbsp extra-virgin olive oil over the skin of both fish and work a little into the slashes so the skin renders and browns rather than drying out.'
     time_min: 4

@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal)'
+    note: '(1½ tbsp Diamond Crystal)'
 
   - group: 'Phase 2, the green goddess dressing'
     item: 'whole-milk Greek yogurt'
@@ -157,7 +157,7 @@ ingredients:
     note: '(⅓ cup; the salty-tangy contrast against the creamy herb dressing)'
 
 steps:
-  - text: 'Cook the farro. Bring 1500 ml / 6 cups of water to a boil with the 12 g / 1 tbsp kosher salt. Add the 200 g / 1 cup pearled farro. Simmer uncovered 20 to 25 minutes until tender with a discernible bite. Drain in a sieve and spread on a sheet pan to cool completely (8 to 10 minutes), or refrigerate to speed cooling.'
+  - text: 'Cook the farro. Bring 1500 ml / 6 cups of water to a boil with the 12 g / 1½ tbsp kosher salt. Add the 200 g / 1 cup pearled farro. Simmer uncovered 20 to 25 minutes until tender with a discernible bite. Drain in a sieve and spread on a sheet pan to cool completely (8 to 10 minutes), or refrigerate to speed cooling.'
     time_min: 30
   - text: 'While the farro cooks, prep the salad vegetables. Cut the 300 g cucumber into 1 cm dice. Slice the 40 g scallions thinly on the bias. Measure out the 100 g peas. Wash and dry all herbs (for both the dressing and the garnish).'
     time_min: 8

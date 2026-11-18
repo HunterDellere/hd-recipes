@@ -85,7 +85,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; the visible top salt that defines the chain version)'
+    note: '(1 tsp Diamond Crystal; the visible top salt that defines the chain version)'
   - group: 'Phase 2, the garlic butter brush'
     item: 'garlic powder'
     qty: 2

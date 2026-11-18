@@ -105,7 +105,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 14
     unit: 'g'
-    note: '(1¼ tbsp Diamond Crystal; add in layers)'
+    note: '(1¾ tbsp Diamond Crystal; add in layers)'
   - group: 'Phase 3, the braise base'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'

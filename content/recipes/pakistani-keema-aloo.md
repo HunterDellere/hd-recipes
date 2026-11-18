@@ -117,7 +117,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal)'
+    note: '(1½ tbsp Diamond Crystal)'
 
   - group: 'Phase 5, tomato and braise'
     item: 'ripe tomato, finely diced (or canned crushed tomato)'
@@ -166,7 +166,7 @@ steps:
     time_min: 2
   - text: 'Brown the keema. Push the onion base to the sides; add the 700 g ground beef into the cleared center. Break it up with a wooden spoon and cook 6 to 8 minutes over medium-high heat, stirring frequently, until the beef has released its juices, the juices have evaporated, and the beef is starting to brown at the edges. Do not skip the browning step; the Maillard reaction on the beef is structural to the depth of the dish, and unbrowned keema reads as boiled meat in gravy.'
     time_min: 8
-  - text: 'Add the ground spices. Reduce heat to medium-low. Add the 8 g / 1 tbsp ground coriander, 5 g / 2 tsp Kashmiri chili powder, 2 g / ½ tsp turmeric, half (2 g / 1 tsp) of the garam masala, and the 12 g / 1 tbsp salt. Stir-fry 60 to 90 seconds, splashing with 2 tbsp water if the spices threaten to scorch. The ghee should pool slightly red-orange at the edges (the visual marker of the bhuna).'
+  - text: 'Add the ground spices. Reduce heat to medium-low. Add the 8 g / 1 tbsp ground coriander, 5 g / 2 tsp Kashmiri chili powder, 2 g / ½ tsp turmeric, half (2 g / 1 tsp) of the garam masala, and the 12 g / 1½ tbsp salt. Stir-fry 60 to 90 seconds, splashing with 2 tbsp water if the spices threaten to scorch. The ghee should pool slightly red-orange at the edges (the visual marker of the bhuna).'
     technique: 'red-oil-rendering'
     time_min: 2
   - text: 'Add the 300 g diced tomato. Cook 5 to 6 minutes over medium heat, stirring occasionally, until the tomato has fully broken down and the mixture looks pasty with visible ghee pooling around the edges.'

@@ -40,7 +40,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; salt the chicken at least 30 minutes before cooking, dry-brining the skin for better browning)'
+    note: '(1½ tbsp Diamond Crystal; salt the chicken at least 30 minutes before cooking, dry-brining the skin for better browning)'
   - group: 'Phase 1, the chicken'
     item: 'fresh-ground black pepper'
     slug: 'black-pepper'
@@ -104,7 +104,7 @@ ingredients:
     note: '(1 lemon, cut into 4 wedges)'
 
 steps:
-  - text: 'Salt the 1200 g chicken pieces with the 12 g / 1 tbsp salt and 2 g / 1 tsp black pepper, rubbing under and over the skin. Let rest uncovered on a rack in the refrigerator at least 30 minutes (or up to 24 hours; the dry-brine pulls moisture out of the skin and lets it crisp dramatically better during the sear).'
+  - text: 'Salt the 1200 g chicken pieces with the 12 g / 1½ tbsp salt and 2 g / 1 tsp black pepper, rubbing under and over the skin. Let rest uncovered on a rack in the refrigerator at least 30 minutes (or up to 24 hours; the dry-brine pulls moisture out of the skin and lets it crisp dramatically better during the sear).'
     time_min: 30
   - text: 'Heat the 150 ml / ⅔ cup olive oil in a wide heavy skillet or shallow Dutch oven (a 30 cm / 12 in cast iron is ideal) over medium-high heat until shimmering. Pat the chicken pieces dry with paper towels (the dry-brine has surfaced moisture; pat it off for a clean sear).'
     time_min: 4

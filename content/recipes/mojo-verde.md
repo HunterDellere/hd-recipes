@@ -61,7 +61,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; the coarse crystals act as a structural abrasive in the mortar and dissolve as the sauce is mounted)'
+    note: '(1½ tsp Diamond Crystal; the coarse crystals act as a structural abrasive in the mortar and dissolve as the sauce is mounted)'
   - group: 'The spice and balance'
     item: 'sherry vinegar (or white wine vinegar)'
     qty: 25
@@ -78,7 +78,7 @@ ingredients:
 steps:
   - text: 'In a small dry skillet over medium heat, toast the 3 g / 1½ tsp cumin seeds for 60 to 90 seconds, shaking the pan continuously, until fragrant and slightly darker. Transfer to a spice grinder or mortar and grind to a fine even powder; the toast deepens the volatile aromatic compounds and is the structural difference between a vibrant mojo verde and a flat one.'
     time_min: 2
-  - text: 'In the bowl of a food processor (4 to 7 cup capacity), combine the 50 g / 1¼ cups cilantro, 60 g / ½ medium green bell pepper (chopped), 12 g / 3 garlic cloves, the ground toasted cumin, and the 4 g / ¾ tsp salt. Pulse 8 to 10 times in 1-second bursts, scraping the sides between pulses, until the mixture is reduced to a coarse-medium paste with no visible whole leaves but with structural texture preserved.'
+  - text: 'In the bowl of a food processor (4 to 7 cup capacity), combine the 50 g / 1¼ cups cilantro, 60 g / ½ medium green bell pepper (chopped), 12 g / 3 garlic cloves, the ground toasted cumin, and the 4 g / 1½ tsp salt. Pulse 8 to 10 times in 1-second bursts, scraping the sides between pulses, until the mixture is reduced to a coarse-medium paste with no visible whole leaves but with structural texture preserved.'
     time_min: 3
   - text: 'Add the 25 g / 5 tsp sherry vinegar; pulse 3 to 4 times to integrate. With the motor running on continuous low, drizzle in the 120 g / ½ cup plus 2 tbsp olive oil through the feed tube in a slow steady stream over about 20 seconds; the oil incorporates into the herb-and-pepper suspension and the sauce takes on a glossy unified appearance. Do not over-process; mojo verde is meant to retain visible herb and pepper structure, not become a smooth slurry.'
     time_min: 2

@@ -123,7 +123,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; the kraut already carries salt, taste before adding)'
+    note: '(¾ tsp Diamond Crystal; the kraut already carries salt, taste before adding)'
 
   - group: 'Phase 3, the cook and finish'
     item: 'water (for boiling the pierogi)'
@@ -135,7 +135,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal; lightly salted boil)'
+    note: '(3½ tbsp Diamond Crystal; lightly salted boil)'
   - group: 'Phase 3, the cook and finish'
     item: 'unsalted butter (for the pan-fry finish)'
     slug: 'butter'
@@ -175,13 +175,13 @@ steps:
   - text: 'Add the 500 g / 2½ cups drained chopped sauerkraut, the chopped porcini, the 3 g / 1 tsp lightly crushed caraway, the 1 bay leaf, the 2 g / ¾ tsp black pepper, and 200 ml / ¾ cup of the reserved porcini soaking liquid (save the rest for another use or discard). Stir to combine. Simmer uncovered over medium-low heat for 30 to 35 minutes, stirring every 5 minutes, until the kraut has softened, the liquid has fully reduced, and the filling is dry enough to hold its shape when pressed with a spoon. The dry finish is structural; wet filling tears pierogi during folding.'
     technique: 'simmering'
     time_min: 35
-  - text: 'Pull from heat. Discard the bay leaf. Taste; the filling should read tangy from the kraut, deeply umami from the porcini, slightly aromatic from the caraway. Add the 2 g / ½ tsp kosher salt if it reads flat. Spread on a wide plate or sheet pan to cool to room temperature, 30 to 45 minutes (or refrigerate to speed; chill at least 20 minutes). Hot filling tears the dough.'
+  - text: 'Pull from heat. Discard the bay leaf. Taste; the filling should read tangy from the kraut, deeply umami from the porcini, slightly aromatic from the caraway. Add the 2 g / ¾ tsp kosher salt if it reads flat. Spread on a wide plate or sheet pan to cool to room temperature, 30 to 45 minutes (or refrigerate to speed; chill at least 20 minutes). Hot filling tears the dough.'
     time_min: 35
   - text: 'Form the pierogi. Divide the rested dough in half (keep one half covered with the damp cloth to prevent drying). On a lightly floured surface, roll the first half to 2 mm thickness. Cut 7 to 8 cm rounds with a round biscuit cutter or the rim of a drinking glass. Re-roll scraps. You should get 15 to 18 rounds per half-dough batch.'
     time_min: 15
   - text: 'Place 1 heaping teaspoon (about 15 g) of cooled filling in the center of each round. Lift one edge over the filling to meet the other, forming a half-moon. Pinch the edges together firmly with your fingers, starting from one corner and working to the other, pressing out any trapped air as you go. The seal must be complete; any gap leaks filling during boiling. Optionally crimp the sealed edge with a fork or with a decorative pleat for visual interest. Place the formed pierogi on a flour-dusted sheet pan; do not let them touch (they stick). Repeat with the second half of the dough.'
     time_min: 25
-  - text: 'Bring the 4000 ml / 4 liters water to a hard rolling boil in a large pot with the 30 g / 2 tbsp kosher salt. Drop the pierogi in batches of 10 to 12 (do not crowd). They sink at first, then rise to the surface within 60 to 90 seconds. Once they have all risen, simmer for another 2 to 3 minutes; the dough sets fully and the filling heats through. Lift out with a slotted spoon and transfer to a colander to drain briefly, then to a plate lightly oiled to prevent sticking. Repeat in batches until all pierogi are boiled.'
+  - text: 'Bring the 4000 ml / 4 liters water to a hard rolling boil in a large pot with the 30 g / 3½ tbsp kosher salt. Drop the pierogi in batches of 10 to 12 (do not crowd). They sink at first, then rise to the surface within 60 to 90 seconds. Once they have all risen, simmer for another 2 to 3 minutes; the dough sets fully and the filling heats through. Lift out with a slotted spoon and transfer to a colander to drain briefly, then to a plate lightly oiled to prevent sticking. Repeat in batches until all pierogi are boiled.'
     technique: 'poaching'
     time_min: 15
   - text: 'For the butter-onion finish: in a wide heavy skillet over medium heat, melt the 80 g / 5½ tbsp butter. Add the 200 g / 1 large diced yellow onion (the finish onion) and cook 10 to 12 minutes, stirring every 2 minutes, until deep golden brown and soft. The slow caramelization is structural; rushed onions read bitter and pale.'

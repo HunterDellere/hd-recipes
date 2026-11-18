@@ -52,7 +52,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; ~1% of the pork weight)'
+    note: '(2¼ tsp Diamond Crystal; ~1% of the pork weight)'
   - group: 'Phase 1, pork'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'

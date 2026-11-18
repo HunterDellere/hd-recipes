@@ -42,7 +42,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, the chicken'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
@@ -115,7 +115,7 @@ ingredients:
     note: '(small handful)'
 
 steps:
-  - text: 'Season the 1200 g chicken with the 8 g / 2 tsp salt and 3 g / 1½ tsp pepper. Rest 15 minutes at room temperature.'
+  - text: 'Season the 1200 g chicken with the 8 g / 2¾ tsp salt and 3 g / 1½ tsp pepper. Rest 15 minutes at room temperature.'
     time_min: 15
   - text: 'Render the bacon. Heat a heavy-bottomed Dutch oven over medium heat. Add the 80 g diced bacon; render 5 to 6 minutes until crispy with 30 to 60 ml of rendered fat in the pot. Lift the crispy bacon out with a slotted spoon to a paper-towel-lined plate; reserve for topping. Leave the rendered fat in the pot.'
     time_min: 6

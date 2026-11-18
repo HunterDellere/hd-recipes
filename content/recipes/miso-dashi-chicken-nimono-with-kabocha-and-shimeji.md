@@ -23,7 +23,7 @@ course: 'dinner'
 diet: ['dairy-free']
 
 before_you_start:
-  - 'Optional but recommended brine: dissolve 30 g / 2 tbsp kosher salt in 1 L / 4 cups cold water and soak the thighs 30 to 45 minutes, then pat dry. Because the seasoning here is gentle (dashi and miso, not a salt-heavy braise), a short brine meaningfully deepens the chicken without making the finished simmer salty. If you brine, hold back the optional finishing salt and taste first.'
+  - 'Optional but recommended brine: dissolve 30 g / 3½ tbsp kosher salt in 1 L / 4 cups cold water and soak the thighs 30 to 45 minutes, then pat dry. Because the seasoning here is gentle (dashi and miso, not a salt-heavy braise), a short brine meaningfully deepens the chicken without making the finished simmer salty. If you brine, hold back the optional finishing salt and taste first.'
   - 'Make the dashi first, or cold-steep the kombu in the water for several hours ahead for a rounder extraction. Dashi is the entire backbone of this dish; there is no browning to fall back on if the stock is weak.'
   - 'Never boil the kombu or hold the dashi above a bare simmer once the katsuobushi is in; above roughly 60 to 65°C kombu turns slimy and bitter and katsuobushi goes sour and fishy. Restraint is the technique.'
   - 'Steam Japanese short-grain rice to finish with the nimono; wash it until the water runs clear, then rest it after cooking.'
@@ -57,7 +57,7 @@ ingredients:
     slug: 'chicken-thigh'
     qty: 900
     unit: 'g'
-    prep: 'patted dry; if not brined, salt lightly with 4 g / ¾ tsp kosher salt'
+    prep: 'patted dry; if not brined, salt lightly with 4 g / 1½ tsp kosher salt'
     note: '(about 5 to 6 thighs. Boneless skin-on thighs are common in Japanese home cooking and work well here)'
 
   - group: 'Phase 3, the simmer'

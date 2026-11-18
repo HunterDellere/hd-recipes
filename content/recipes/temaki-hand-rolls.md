@@ -293,7 +293,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
     choice: 'chicken'
   - group: 'Meat, egg, and tofu'
     item: 'neutral oil (for searing the chicken)'

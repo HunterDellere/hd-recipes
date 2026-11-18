@@ -76,7 +76,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2½ tsp Diamond Crystal; for the rub, salts the meat as it rests)'
+    note: '(3½ tsp Diamond Crystal; for the rub, salts the meat as it rests)'
   - group: 'Phase 1, the yaji spice rub'
     item: 'Maggi seasoning powder (or bouillon powder, optional)'
     qty: 4
@@ -124,7 +124,7 @@ steps:
     time_min: 12
   - text: 'Grind the cooled peanuts in a spice grinder or food processor in 5 to 10 second pulses until the texture is somewhere between coarse cornmeal and fine sand. Do not over-grind or the peanuts release oil and form peanut butter; the yaji needs a dry powder consistency. If it does start to clump, that is fine, the meat sticking helps the rub adhere.'
     time_min: 3
-  - text: 'In a small bowl, combine the ground peanuts with the 15 g / 2 tbsp sweet paprika, the 6 g / 2 tsp cayenne, the 6 g / 2 tsp ground ginger, the 8 g / 1 tbsp onion powder, the 5 g / 1½ tsp garlic powder, the 1 g / ¼ tsp ground cloves, the 10 g / 2½ tsp kosher salt, and the 4 g / 1 tsp Maggi powder if using. Mix thoroughly with a fork. The yaji should be a uniform terracotta-orange powder with a strong peanut-and-chili aroma. Reserve about one-third of the yaji (roughly 50 g) in a small bowl for the table as dipping spice; the rest is the rub.'
+  - text: 'In a small bowl, combine the ground peanuts with the 15 g / 2 tbsp sweet paprika, the 6 g / 2 tsp cayenne, the 6 g / 2 tsp ground ginger, the 8 g / 1 tbsp onion powder, the 5 g / 1½ tsp garlic powder, the 1 g / ¼ tsp ground cloves, the 10 g / 3½ tsp kosher salt, and the 4 g / 1 tsp Maggi powder if using. Mix thoroughly with a fork. The yaji should be a uniform terracotta-orange powder with a strong peanut-and-chili aroma. Reserve about one-third of the yaji (roughly 50 g) in a small bowl for the table as dipping spice; the rest is the rub.'
     time_min: 3
   - text: 'Prepare the beef. Pull the partially frozen 700 g / 1½ lb beef from the freezer and slice against the grain into 4 to 5 mm thick strips, 8 to 10 cm long. The partially frozen meat slices cleanly; fully thawed meat tears under a knife.'
     time_min: 8

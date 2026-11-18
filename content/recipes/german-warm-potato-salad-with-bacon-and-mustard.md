@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal; the boiling water should taste like mild sea water at roughly 2 percent salinity, the seasoning has to penetrate through the skin)'
+    note: '(3½ tbsp Diamond Crystal; the boiling water should taste like mild sea water at roughly 2 percent salinity, the seasoning has to penetrate through the skin)'
   - group: 'Phase 1, boil the potatoes'
     item: 'water'
     qty: 3000
@@ -107,7 +107,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; tasted in at the end; the bacon and stock both contribute salt, the additional salt is calibrated to the finished dressing not added blind)'
+    note: '(1 tsp Diamond Crystal; tasted in at the end; the bacon and stock both contribute salt, the additional salt is calibrated to the finished dressing not added blind)'
   - group: 'Phase 4, build the warm dressing'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -137,7 +137,7 @@ ingredients:
     note: '(¼ cup chopped; the green-herbal counterpoint to the rendered-fat-and-vinegar base; do not substitute curly parsley, the leaf texture is wrong)'
 
 steps:
-  - text: 'Cold-water start the potatoes. Place the 1000 g / 8 to 10 scrubbed waxy potatoes (skin on, whole) in a wide pot. Cover with 3000 ml / 12 cups cold water and add the 30 g / 2 tbsp kosher salt and the 2 bay leaves. The water should cover the potatoes by 4 cm; the cold-water start cooks the potato evenly from outside to center, which is critical for a salad cut where every slice has to read the same texture. A hot-water drop produces a cooked outside and underdone center, which slices unevenly and falls apart.'
+  - text: 'Cold-water start the potatoes. Place the 1000 g / 8 to 10 scrubbed waxy potatoes (skin on, whole) in a wide pot. Cover with 3000 ml / 12 cups cold water and add the 30 g / 3½ tbsp kosher salt and the 2 bay leaves. The water should cover the potatoes by 4 cm; the cold-water start cooks the potato evenly from outside to center, which is critical for a salad cut where every slice has to read the same texture. A hot-water drop produces a cooked outside and underdone center, which slices unevenly and falls apart.'
     time_min: 4
   - text: 'Set the pot over medium-high heat. Bring the 3000 ml pot of water to an active simmer (small surface bubbles, not a hard rolling boil; a hard boil agitates the potatoes against each other and chips the skin). Cook 18 to 25 minutes from the time the simmer establishes, depending on potato size; the potatoes are done when a paring knife slides through the largest one with no resistance at the center. The skin will be loose and slightly cracked at this point. Pull the pot from the heat.'
     time_min: 22
@@ -154,7 +154,7 @@ steps:
   - text: 'Return the pan to medium heat. Whisk in the 30 g / 2 tbsp dijon mustard and the 15 g / 1 tbsp whole grain mustard; the mustard mucilage will immediately start to thicken the dressing and emulsify the rendered fat into the vinegar. Whisk until the mustard is fully dispersed and the dressing reads uniform brown-amber, 30 to 45 seconds. Add the 200 g / ¾ cup + 1 tbsp warm chicken stock in three additions, whisking between each so the dressing tightens into an emulsified state rather than splitting. Add the 6 g / 1½ tsp sugar and stir to dissolve. Bring the dressing to a bare simmer; it should reduce by no more than 10 percent in volume, just enough to tighten the consistency to a pourable but coating sauce.'
     technique: 'vinaigrette-emulsion'
     time_min: 3
-  - text: 'Stream in the 30 g / 2 tbsp neutral oil while whisking; this is the supplemental fat that brings the total fat in the dressing up to roughly the volume of the vinegar-and-stock combined. The dressing should now be a glossy uniform amber, slightly viscous, and ribbon off the whisk. Taste; it should read tart-savory-bacony in that order, with the mustard and onion as background. Add the remaining ~2 g / ½ tsp kosher salt if needed (the bacon and stock both contribute salt; taste before adding) and the 2 g / ¾ tsp cracked black pepper. Pull the pan off the heat and hold warm; the dressing should not be hotter than 70 °C when it hits the potatoes (boiling-hot dressing on potato slices breaks the starch surface and produces a gluey result).'
+  - text: 'Stream in the 30 g / 2 tbsp neutral oil while whisking; this is the supplemental fat that brings the total fat in the dressing up to roughly the volume of the vinegar-and-stock combined. The dressing should now be a glossy uniform amber, slightly viscous, and ribbon off the whisk. Taste; it should read tart-savory-bacony in that order, with the mustard and onion as background. Add the remaining ~2 g / ¾ tsp kosher salt if needed (the bacon and stock both contribute salt; taste before adding) and the 2 g / ¾ tsp cracked black pepper. Pull the pan off the heat and hold warm; the dressing should not be hotter than 70 °C when it hits the potatoes (boiling-hot dressing on potato slices breaks the starch surface and produces a gluey result).'
     time_min: 2
   - text: 'Slice the potatoes. The potatoes should still be distinctly warm (40 to 50 °C internal at this point, off the colander for 15 to 20 minutes). Peel the skin off the warm potatoes with your fingers (the skin lifts away in sheets if the potato is properly cooked) and slice each into 3 to 4 mm rounds with a sharp chef knife or a mandoline. The slices need to be uniform and thin enough to absorb the dressing without falling apart; thicker slices read as boiled-potato-with-dressing rather than dressed-potato-salad. Arrange the slices in a wide shallow serving bowl (not a deep mixing bowl, the salad reads better spread thin and the slices on top do not crush the slices on the bottom).'
     time_min: 8

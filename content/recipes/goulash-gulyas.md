@@ -47,7 +47,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 1, the meat and sear'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -130,7 +130,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; the stock contributes some salt, taste before adding more)'
+    note: '(2¼ tsp Diamond Crystal; the stock contributes some salt, taste before adding more)'
 
   - group: 'Phase 5, the csipetke dumplings (optional but canonical)'
     item: 'all-purpose flour'
@@ -155,7 +155,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'In a heavy 5 to 6 quart Dutch oven over medium-high heat, melt the 40 g / 3 tbsp lard until shimmering. Pat the 800 g / 1¾ lb beef chuck chunks dry, season all sides with the 6 g / 1½ tsp kosher salt and the 2 g / ¾ tsp black pepper, and sear in two batches, 3 minutes per side, until deeply browned. Transfer the seared meat to a plate.'
+  - text: 'In a heavy 5 to 6 quart Dutch oven over medium-high heat, melt the 40 g / 3 tbsp lard until shimmering. Pat the 800 g / 1¾ lb beef chuck chunks dry, season all sides with the 6 g / 2¼ tsp kosher salt and the 2 g / ¾ tsp black pepper, and sear in two batches, 3 minutes per side, until deeply browned. Transfer the seared meat to a plate.'
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Drop the heat to medium-low. Add the 500 g / 2 large diced yellow onions to the rendered fat in the pot. Cook for 30 to 40 minutes, stirring every 4 to 5 minutes with a wooden spoon, until the onions have completely softened and turned a deep golden brown. This is the structural base of the dish; the equal-weight ratio of onion to meat plus the long cook is what gives gulyás its characteristic depth. Do not rush this phase. If the onions stick or brown too quickly, drop the heat one notch and add a splash of water.'
@@ -171,7 +171,7 @@ steps:
   - text: 'Return the seared beef and any juices on the plate to the pot. Pour in the 1800 ml / 7½ cups beef stock and add the 2 bay leaves. Bring to a vigorous simmer, then drop to low. Cover with the lid slightly ajar (1 cm gap to let steam escape) and simmer for 60 minutes, stirring every 20 minutes. The chuck will be approaching tender but not yet fully there.'
     technique: 'braising'
     time_min: 65
-  - text: 'Add the 500 g / 1 lb diced potato, the 250 g / 2 large diced carrot, and the 6 g / 1½ tsp kosher salt. Cover and simmer another 25 to 30 minutes until the potatoes are fork-tender and the meat is fully tender. The broth will have thickened slightly from the potato starch but should still read as a soup, not a stew.'
+  - text: 'Add the 500 g / 1 lb diced potato, the 250 g / 2 large diced carrot, and the 6 g / 2¼ tsp kosher salt. Cover and simmer another 25 to 30 minutes until the potatoes are fork-tender and the meat is fully tender. The broth will have thickened slightly from the potato starch but should still read as a soup, not a stew.'
     time_min: 28
   - text: 'Make the csipetke dumplings if using (Phase 5). In a small bowl, mix the 100 g / ¾ cup flour, the 1 egg, and the 2 g / ⅓ tsp salt with a fork, adding 1 to 2 tablespoons of water as needed to form a stiff dough. Knead briefly. With floured fingers, pinch off small pieces of dough about the size of a chickpea (5 to 7 mm) and drop directly into the simmering soup. They sink at first, then rise to the surface within 60 to 90 seconds. Once all the csipetke have risen, simmer another 3 to 4 minutes to cook through.'
     time_min: 12

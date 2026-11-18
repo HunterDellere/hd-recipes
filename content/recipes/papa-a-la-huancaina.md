@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 15
     unit: 'g'
-    note: '(1 tbsp; for salting the boiling water)'
+    note: '(1¾ tbsp; for salting the boiling water)'
   - group: 'Phase 1, the base'
     item: 'eggs, hard-boiled and halved'
     slug: 'eggs'

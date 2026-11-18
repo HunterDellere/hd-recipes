@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
 
   - group: 'Phase 2, garlic pangrattato'
     item: 'panko breadcrumbs'
@@ -143,7 +143,7 @@ ingredients:
     note: '(3 tbsp chopped)'
 
 steps:
-  - text: 'Heat the oven to 230C / 450F. Toss the 450 g cauliflower florets with the 30 g / 2 tbsp olive oil and 4 g / 1 tsp kosher salt on a rimmed sheet pan and turn them cut-face-down in a single layer. Roast 22 to 25 minutes, undisturbed, until the cut faces are deep brown and the stems tender. The hard dry roast is what makes cauliflower sweet and nutty instead of sulfurous.'
+  - text: 'Heat the oven to 230C / 450F. Toss the 450 g cauliflower florets with the 30 g / 2 tbsp olive oil and 4 g / 1½ tsp kosher salt on a rimmed sheet pan and turn them cut-face-down in a single layer. Roast 22 to 25 minutes, undisturbed, until the cut faces are deep brown and the stems tender. The hard dry roast is what makes cauliflower sweet and nutty instead of sulfurous.'
     technique: 'high-heat-dry-roasting'
     time_min: 24
   - text: 'Make the pangrattato while the cauliflower roasts. Warm the 15 g / 1 tbsp olive oil in a small skillet over medium, add the 40 g / ⅔ cup panko and the 6 g / 1 grated garlic clove, and toast, stirring constantly, 2 to 3 minutes until deep gold and crisp. Season with a pinch of salt, scrape onto a plate, and wipe the pan. Watch it closely; breadcrumbs go from gold to burnt in seconds.'

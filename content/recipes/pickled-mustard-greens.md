@@ -48,7 +48,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 45
     unit: 'g'
-    note: '(3 tbsp Diamond Crystal; 3% of brine weight)'
+    note: '(5¼ tbsp Diamond Crystal; 3% of brine weight)'
 
   - group: 'Aromatics, optional'
     item: 'Sichuan peppercorns'
@@ -74,7 +74,7 @@ ingredients:
 steps:
   - text: 'Wash the 1000 g mustard greens carefully. Trim any browned tips. Pull the heads apart into individual leaves so the brine can reach every surface; large heads can be halved lengthwise instead. Lay the leaves on a clean tray in a single layer and air-dry 4 hours, or until they wilt visibly and lose 10 to 15% of their weight. The wilt step concentrates flavor and reduces water that would otherwise dilute the brine.'
     time_min: 250
-  - text: 'Bring the 1500 ml / 6 cups water to a boil with the 45 g / 3 tbsp kosher salt and any optional aromatics (5 g / 2 tsp Sichuan peppercorns, 20 g sliced ginger, 4 dried chilies if using). Stir to fully dissolve the salt. Pull off heat and cool completely to room temperature; warm brine kills the lactic acid bacteria you want to encourage, and chlorinated tap water suppresses them, so cold-and-clean is the rule.'
+  - text: 'Bring the 1500 ml / 6 cups water to a boil with the 45 g / 5¼ tbsp kosher salt and any optional aromatics (5 g / 2 tsp Sichuan peppercorns, 20 g sliced ginger, 4 dried chilies if using). Stir to fully dissolve the salt. Pull off heat and cool completely to room temperature; warm brine kills the lactic acid bacteria you want to encourage, and chlorinated tap water suppresses them, so cold-and-clean is the rule.'
     time_min: 30
   - text: 'Pack the wilted greens into a clean 2-liter glass jar (a wide-mouth jar is easier to load and unload). Press them down hard with a wooden spoon as you pack to expel air; trapped air pockets harbor unwanted yeasts and molds. Pour the cooled brine over to fully submerge the greens.'
     time_min: 10

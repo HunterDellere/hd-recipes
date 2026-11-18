@@ -27,7 +27,7 @@ source:
   note: 'Catfish is the structural fish of the Mississippi delta and the obvious Louisiana candidate for blackening once redfish populations crashed under the dish''s 1980s popularity and the species was federally protected. The technique transfers directly: a screaming dry cast iron at 230 to 320 °C / 450 to 600 °F surface, a butter-dipped fillet, a dry spice dredge, a 90-second-per-side sear. What changes is the fish. Catfish runs 6 to 12% fat distributed through the flesh (not concentrated in a subcutaneous layer the way salmon or mackerel carry it), and that intramuscular fat is largely saturated and monounsaturated, so the flesh holds up to the extreme dry heat without the interior going chalky before the crust sets. The two catfish-specific moves are the salt-and-vinegar rinse to manage the freshwater geosmin back-note, and a Worcestershire spike in the butter dip to give the mild flesh a glutamate anchor under the spice.'
 
 before_you_start:
-  - 'Catfish carries a freshwater earthy back-note (the compound geosmin, accumulated through bottom-feeding biology). Well-handled farmed channel catfish in the 2020s rarely reads strongly muddy, but a salt-and-vinegar rinse cheaply insures against it: rub the fillets with 10 g / 2 tsp kosher salt and 15 g / 1 tbsp white vinegar, let sit 5 minutes, then rinse under cold water and pat bone-dry. Do this first, the fish must be fully dry before it hits the butter or the crust steams instead of chars.'
+  - 'Catfish carries a freshwater earthy back-note (the compound geosmin, accumulated through bottom-feeding biology). Well-handled farmed channel catfish in the 2020s rarely reads strongly muddy, but a salt-and-vinegar rinse cheaply insures against it: rub the fillets with 10 g / 3½ tsp kosher salt and 15 g / 1 tbsp white vinegar, let sit 5 minutes, then rinse under cold water and pat bone-dry. Do this first, the fish must be fully dry before it hits the butter or the crust steams instead of chars.'
   - 'The cast iron skillet must be heated empty over the highest heat your stove provides for 8 to 10 minutes until it is smoking aggressively and a flicked drop of water flashes to steam in under a second. A cooler skillet (the single most common home error) steams the fish in melted butter rather than blackening it. Cook outdoors on a grill side-burner or under a powerful range hood at full power; the kitchen will fill with smoke.'
   - 'Pre-position everything in a line near the stove before the spice goes on any fish: the bowl of butter, the plate of spice, the dry fillets, the spatula. Once a fillet is dredged it must hit the skillet in under 30 seconds, there is no time to fetch a tool mid-sear.'
 
@@ -37,7 +37,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; for the rinse, drawn off with the water and not part of the seasoning)'
+    note: '(3½ tsp Diamond Crystal; for the rinse, drawn off with the water and not part of the seasoning)'
   - group: 'Phase 1, geosmin rinse'
     item: 'distilled white vinegar'
     qty: 15
@@ -131,7 +131,7 @@ ingredients:
     note: '(small handful, for color and a fresh herb lift against the heavy crust)'
 
 steps:
-  - text: 'Rinse the catfish. Lay the 4 fillets in a colander and rub them all over with the 10 g / 2 tsp kosher salt and 15 g / 1 tbsp white vinegar. Let sit 5 minutes; the acid and salt mobilize the freshwater geosmin into solution. Rinse thoroughly under cold running water, then pat the fillets bone-dry on both sides with paper towels and lay them on a dry plate. The fish must read dry to the touch, any surface water steams under the spice and prevents the crust from charring.'
+  - text: 'Rinse the catfish. Lay the 4 fillets in a colander and rub them all over with the 10 g / 3½ tsp kosher salt and 15 g / 1 tbsp white vinegar. Let sit 5 minutes; the acid and salt mobilize the freshwater geosmin into solution. Rinse thoroughly under cold running water, then pat the fillets bone-dry on both sides with paper towels and lay them on a dry plate. The fish must read dry to the touch, any surface water steams under the spice and prevents the crust from charring.'
     time_min: 8
   - text: 'Make the spice blend. Combine all of Phase 2 in a small bowl: 15 g / 1½ tbsp Hungarian paprika, 6 g / 1 tbsp cayenne, 6 g / 2 tsp garlic powder, 6 g / 2 tsp onion powder, 3 g / 1½ tsp dried oregano, 3 g / 1½ tsp dried thyme, 3 g / 1½ tsp black pepper, 2 g / 1 tsp white pepper, and 6 g / 1 tsp fine sea salt. Whisk to fully blend. This yields about 50 g; you will dredge with roughly 30 g and the rest keeps 3 months in a sealed jar.'
     time_min: 3

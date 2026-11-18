@@ -92,7 +92,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; the visible top salt)'
+    note: '(1 tsp Diamond Crystal; the visible top salt)'
   - group: 'Phase 2, the garlic butter brush'
     item: 'garlic powder'
     qty: 2
@@ -121,7 +121,7 @@ steps:
     time_min: 35
   - text: 'Bake. Position racks in the upper and lower thirds and preheat to 200 °C (400 °F) for at least 15 minutes. Bake 12 to 15 minutes, swapping the pans top-to-bottom and rotating front-to-back at the 7-minute mark. Because the 21 g / 1 tbsp honey browns faster than cane sugar, start checking at minute 10: pull the breadsticks when the tops are golden-brown, the bottoms deep golden, and a probe reads 88 to 90 °C. Underbaking leaves a gummy interior; overbaking, easy to hit here, gives a hard crust and dry crumb.'
     time_min: 14
-  - text: 'Brush with garlic butter while hot. While the breadsticks bake, finish the brush you started at the beginning of the bulk rise: the 60 g / 4 tbsp melted butter whisked with the 6 g / 2 cloves pressed-and-rested garlic, the 2 g / ½ tsp garlic powder, the 1 g / ¼ tsp dried oregano, and the 1 g / ¼ tsp dried parsley flakes. The moment the breadsticks come out of the oven, brush each one generously on all surfaces, then sprinkle the 3 g / ¾ tsp kosher salt over the tops while the butter is still wet so the grains stick.'
+  - text: 'Brush with garlic butter while hot. While the breadsticks bake, finish the brush you started at the beginning of the bulk rise: the 60 g / 4 tbsp melted butter whisked with the 6 g / 2 cloves pressed-and-rested garlic, the 2 g / ½ tsp garlic powder, the 1 g / ¼ tsp dried oregano, and the 1 g / ¼ tsp dried parsley flakes. The moment the breadsticks come out of the oven, brush each one generously on all surfaces, then sprinkle the 3 g / 1 tsp kosher salt over the tops while the butter is still wet so the grains stick.'
     time_min: 4
   - text: 'Serve hot. These are a hot-from-the-oven bread; the texture compromises noticeably within 10 minutes of cooling. Serve immediately in a cloth-lined basket (the cloth holds heat) alongside marinara, a ragu, or soup. Cooled breadsticks reheat acceptably in a 175 °C oven for 4 minutes.'
     time_min: 1

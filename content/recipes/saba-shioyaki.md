@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; roughly 1.7% of the fillet weight, the furi-jio salt-grilling rate, a touch higher than a pan-sear cure because the salt also seasons skin that gets eaten)'
+    note: '(2¼ tsp Diamond Crystal; roughly 1.7% of the fillet weight, the furi-jio salt-grilling rate, a touch higher than a pan-sear cure because the salt also seasons skin that gets eaten)'
   - group: 'Phase 1, fish prep and cure'
     item: 'sake'
     slug: 'sake'
@@ -113,10 +113,10 @@ steps:
     time_min: 2
   - text: 'Prep the fillets. Run a fingernail across the 350 g / 2 saba fillets from tail to head to feel for pin-bones and pull each with tweezers in a clean draw. Pat both sides thoroughly dry. The skin must be intact and silvery; a tear lets the fillet buckle under the heat.'
     time_min: 3
-  - text: 'Score the skin. Lay each fillet skin-up and, with a sharp paring knife held at a low angle, cut a shallow cross-hatch: parallel lines about 5 mm apart, then perpendicular, just through the skin and barely into the surface fat, never into the muscle blocks. The score lets the subcutaneous fat render out and blister rather than sit trapped under the skin, and it opens a path for the 6 g / 1¼ tsp kosher salt to penetrate evenly in the next step.'
+  - text: 'Score the skin. Lay each fillet skin-up and, with a sharp paring knife held at a low angle, cut a shallow cross-hatch: parallel lines about 5 mm apart, then perpendicular, just through the skin and barely into the surface fat, never into the muscle blocks. The score lets the subcutaneous fat render out and blister rather than sit trapped under the skin, and it opens a path for the 6 g / 2¼ tsp kosher salt to penetrate evenly in the next step.'
     technique: 'fish-skin-scoring'
     time_min: 3
-  - text: 'Apply the furi-jio cure. Set the scored fillets on a wire rack over a sheet pan. Sprinkle the 6 g / 1¼ tsp kosher salt from a height of 20 to 30 cm so it lands evenly over both sides of both fillets (the high sprinkle is the furi-jio technique, it scatters the crystals in a fine even rain rather than clumps), working a little into the score lines. Rest, uncovered, in the refrigerator for 25 minutes. Within 10 minutes clear liquid beads on the surface as the salt draws water out by osmosis; by 25 minutes the surface reads tacky and the flesh has firmed visibly. Under-salted saba grills bland against its own richness; this rate seasons the eaten skin as well as the flesh.'
+  - text: 'Apply the furi-jio cure. Set the scored fillets on a wire rack over a sheet pan. Sprinkle the 6 g / 2¼ tsp kosher salt from a height of 20 to 30 cm so it lands evenly over both sides of both fillets (the high sprinkle is the furi-jio technique, it scatters the crystals in a fine even rain rather than clumps), working a little into the score lines. Rest, uncovered, in the refrigerator for 25 minutes. Within 10 minutes clear liquid beads on the surface as the salt draws water out by osmosis; by 25 minutes the surface reads tacky and the flesh has firmed visibly. Under-salted saba grills bland against its own richness; this rate seasons the eaten skin as well as the flesh.'
     technique: 'dry-brining'
     time_min: 25
   - text: 'While the fish cures, make the oroshi. Peel and grate the 200 g / 8 cm daikon section on the finest tooth of an oroshigane or a microplane, moving in a circular motion to keep the texture snowy and loose rather than stringy; grate the optional 5 g / 1 cm ginger alongside it. Pile the grated daikon into a fine sieve, let it drain 5 minutes, then press lightly with the back of a spoon to shed excess liquid. It should be moist but not wet. Keep it cold until plating.'

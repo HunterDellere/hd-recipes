@@ -39,7 +39,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; salt-purges the cubes to extract bitter alkaloids and collapse cell walls so the cubes fry without absorbing oil)'
+    note: '(1½ tbsp Diamond Crystal; salt-purges the cubes to extract bitter alkaloids and collapse cell walls so the cubes fry without absorbing oil)'
   - group: 'Phase 1, the eggplant'
     item: 'extra-virgin olive oil (for frying)'
     slug: 'extra-virgin-olive-oil'
@@ -95,7 +95,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 40
     unit: 'g'
-    note: '(3 tbsp Diamond Crystal; aggressively saline)'
+    note: '(4¾ tbsp Diamond Crystal; aggressively saline)'
   - group: 'Phase 3, pasta and finish'
     item: 'fresh basil leaves'
     slug: 'basil'
@@ -111,7 +111,7 @@ ingredients:
     note: '(about ¾ cup grated; aged pressed sheep-milk ricotta; do not substitute fresh ricotta or pecorino)'
 
 steps:
-  - text: 'Toss the 600 g / 2 medium eggplant cubes with the 12 g / 1 tbsp kosher salt in a colander set over a bowl. Let purge 45 minutes; the salt draws out water and bitter compounds, and collapses the spongy cell structure so the cubes fry without absorbing the pan of oil. After 45 minutes, rinse the cubes under cold water to remove surface salt; spread on a clean kitchen towel and blot thoroughly dry (any surface water will cause the oil to spit and the cubes will steam instead of frying).'
+  - text: 'Toss the 600 g / 2 medium eggplant cubes with the 12 g / 1½ tbsp kosher salt in a colander set over a bowl. Let purge 45 minutes; the salt draws out water and bitter compounds, and collapses the spongy cell structure so the cubes fry without absorbing the pan of oil. After 45 minutes, rinse the cubes under cold water to remove surface salt; spread on a clean kitchen towel and blot thoroughly dry (any surface water will cause the oil to spit and the cubes will steam instead of frying).'
     technique: 'salting-eggplant'
     time_min: 50
   - text: 'Heat the 120 g / ½ cup plus 2 tbsp olive oil in a wide skillet over medium-high until shimmering (about 175°C / 350°F). Fry the eggplant cubes in two batches, single layer, 6 to 7 minutes per batch, turning every 2 minutes, until each face is deeply golden-brown and the interior has collapsed to soft custardy texture. Transfer to a paper-towel-lined plate; season immediately with a small pinch of salt. Pour off all but about 30 g / 2 tbsp of the frying oil; reserve the rest for sautéing other vegetables this week.'
@@ -122,7 +122,7 @@ steps:
     time_min: 2
   - text: 'Add the 800 g / 28 oz hand-crushed San Marzano tomatoes (with juice). Bring to a vigorous simmer; reduce heat to medium-low. Simmer uncovered 20 to 25 minutes, breaking up the tomato chunks with a wooden spoon, until the sauce has reduced by about a third and the texture is jammy with visible olive oil emulsified through (not a thin watery tomato sauce). Season with the 4 g / ¾ tsp salt and taste; if the sauce reads too acidic for the tomato batch, add a pinch more salt rather than sugar (Sicilian tradition does not sweeten tomato sauce).'
     time_min: 25
-  - text: 'While the sauce reduces, bring the 4000 ml / 16 cups water to a hard boil with the 40 g / 3 tbsp salt. Add the 400 g / 14 oz rigatoni; cook 1 minute shy of package time (the pasta finishes in the sauce). When the pasta is at the 1-minute-shy mark, reserve 250 ml / 1 cup of starchy pasta water, then drain the pasta.'
+  - text: 'While the sauce reduces, bring the 4000 ml / 16 cups water to a hard boil with the 40 g / 4¾ tbsp salt. Add the 400 g / 14 oz rigatoni; cook 1 minute shy of package time (the pasta finishes in the sauce). When the pasta is at the 1-minute-shy mark, reserve 250 ml / 1 cup of starchy pasta water, then drain the pasta.'
     time_min: 12
   - text: 'Add the drained pasta and the fried eggplant cubes to the skillet with the sauce. Add 60 ml / ¼ cup of the reserved pasta water. Toss vigorously over medium heat 60 to 90 seconds until the sauce coats every tube and the eggplant has integrated into the dish. The starchy water emulsifies the olive oil and tomato into a cohesive sauce that clings to the rigatoni rather than pooling at the bottom of the bowl. Taste, adjust salt.'
     technique: 'pan-emulsion'

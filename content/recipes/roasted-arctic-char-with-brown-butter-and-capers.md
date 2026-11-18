@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; about 0.8% of the fillet weight, the dry-salt ratio for lean fish)'
+    note: '(1 tsp Diamond Crystal; about 0.8% of the fillet weight, the dry-salt ratio for lean fish)'
 
   - group: 'Phase 2, roast'
     item: 'neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)'
@@ -107,7 +107,7 @@ ingredients:
     note: '(¼ tsp; for the table, hitting the crisp skin and the cut flesh)'
 
 steps:
-  - text: 'Score and dry-salt, 30 to 45 minutes ahead. Pat the 2 char fillets dry on both sides. Lay each skin-side up and, with a sharp paring knife held at a shallow 30-degree angle, cut 4 to 5 parallel scores across the skin 1 cm apart, just through the skin and 1 to 2 mm into the surface fat, never into the muscle (you should see the pale subcutaneous fat at the bottom of each cut, no exposed flesh). The scores release skin contraction tension and open a path for the subcutaneous fat to render. Sprinkle the 3 g / ¾ tsp kosher salt evenly across the skin and flesh of both fillets, about 0.8% of their weight. Set skin-side up on a wire rack over a sheet tray and refrigerate uncovered. The salt draws surface moisture, then a dry pellicle forms in the cold air; that dry skin is what crisps in the oven instead of steaming.'
+  - text: 'Score and dry-salt, 30 to 45 minutes ahead. Pat the 2 char fillets dry on both sides. Lay each skin-side up and, with a sharp paring knife held at a shallow 30-degree angle, cut 4 to 5 parallel scores across the skin 1 cm apart, just through the skin and 1 to 2 mm into the surface fat, never into the muscle (you should see the pale subcutaneous fat at the bottom of each cut, no exposed flesh). The scores release skin contraction tension and open a path for the subcutaneous fat to render. Sprinkle the 3 g / 1 tsp kosher salt evenly across the skin and flesh of both fillets, about 0.8% of their weight. Set skin-side up on a wire rack over a sheet tray and refrigerate uncovered. The salt draws surface moisture, then a dry pellicle forms in the cold air; that dry skin is what crisps in the oven instead of steaming.'
     technique: 'fish-skin-scoring'
     time_min: 35
   - text: 'Preheat hard. Place a rimmed sheet tray on the middle rack and heat the oven to 230°C / 450°F with the tray inside. Give it a full 15 minutes so the tray itself is screaming hot; the fish will sear from below the instant it lands, which is half of how the skin crisps.'

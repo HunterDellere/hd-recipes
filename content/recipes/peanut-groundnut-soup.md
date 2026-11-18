@@ -47,7 +47,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; for seasoning the meat before the sear)'
+    note: '(2¾ tsp Diamond Crystal; for seasoning the meat before the sear)'
   - group: 'Phase 1, the protein and base'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -153,7 +153,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Pat the 800 g / chuck or chicken pieces dry with paper towels and season all sides with the 8 g / 2 tsp kosher salt and the 2 g / ¾ tsp black pepper. Heat the 30 g / 2 tbsp neutral oil in a heavy 5 to 6 quart Dutch oven over medium-high heat until shimmering, about 1 minute. Sear the meat in two batches, 3 minutes per side, until deeply browned. Transfer to a plate. The Maillard crust on the meat is the structural flavor anchor; do not crowd the pot or the meat steams instead of searing.'
+  - text: 'Pat the 800 g / chuck or chicken pieces dry with paper towels and season all sides with the 8 g / 2¾ tsp kosher salt and the 2 g / ¾ tsp black pepper. Heat the 30 g / 2 tbsp neutral oil in a heavy 5 to 6 quart Dutch oven over medium-high heat until shimmering, about 1 minute. Sear the meat in two batches, 3 minutes per side, until deeply browned. Transfer to a plate. The Maillard crust on the meat is the structural flavor anchor; do not crowd the pot or the meat steams instead of searing.'
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Drop the heat to medium. Add the 250 g / 1 large diced yellow onion to the hot pot (with the rendered meat fat still in it) and cook 6 to 8 minutes, stirring every minute, until the onion is deep golden brown.'

@@ -117,7 +117,7 @@ steps:
     time_min: 5
   - text: 'In a stand mixer, whip 2 large eggs, 150 g / ¾ cup granulated sugar, and 110 g / ½ cup packed light brown sugar on medium-high for 4 minutes until pale and ribbony. Whisk in 5 g / 1 tsp vanilla bean paste and 3 g / 1 tsp espresso powder.'
     time_min: 5
-  - text: 'Pour the cooled chocolate mix into the eggs and mix on low until combined. Add 130 g / 1 cup + 1 tbsp all-purpose flour, 4 g / 1 tsp baking powder, and 3 g / ½ tsp kosher salt; fold until almost combined.'
+  - text: 'Pour the cooled chocolate mix into the eggs and mix on low until combined. Add 130 g / 1 cup + 1 tbsp all-purpose flour, 4 g / 1 tsp baking powder, and 3 g / 1 tsp kosher salt; fold until almost combined.'
     time_min: 2
   - text: 'Fold in 145 g / 5 oz hand-chopped chocolate chunks. Cover and chill at least 4 hours, ideally overnight. The coconut oil makes the dough soft, so this chill is what stops the cookies from spreading flat.'
     time_min: 240

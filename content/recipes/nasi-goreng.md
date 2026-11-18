@@ -85,7 +85,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; tasted in at the end)'
+    note: '(¾ tsp Diamond Crystal; tasted in at the end)'
   - group: 'Phase 2, the rice base'
     item: 'neutral oil for the wok'
     slug: 'neutral-oil'
@@ -178,7 +178,7 @@ steps:
     time_min: 2
   - text: 'Drizzle the 45 g / 3 tbsp kecap manis and the 15 g / 1 tbsp light soy sauce directly over the rice. Toss for 2 to 3 minutes, scraping the bottom of the pan continuously; the kecap manis caramelizes onto the grains and the rice darkens to a deep mahogany. This is the structural color and flavor moment of the dish, the high sugar content of the kecap manis browns aggressively on direct heat. Add the 80 g shredded cabbage (if using) in the last 60 seconds to wilt just slightly.'
     time_min: 3
-  - text: 'Return the cooked shrimp (or chicken) to the pan. Add the 40 g sliced scallion and the 2 g / ½ tsp kosher salt. Toss 30 seconds to combine and warm through. Taste, the dish should read sweet-savory-front (kecap manis), with the chili heat building after, scallion-and-shallot in the background. If flat, add 5 g / 1 tsp more kecap manis; if too sweet, 5 g / 1 tsp more light soy or fish sauce.'
+  - text: 'Return the cooked shrimp (or chicken) to the pan. Add the 40 g sliced scallion and the 2 g / ¾ tsp kosher salt. Toss 30 seconds to combine and warm through. Taste, the dish should read sweet-savory-front (kecap manis), with the chili heat building after, scallion-and-shallot in the background. If flat, add 5 g / 1 tsp more kecap manis; if too sweet, 5 g / 1 tsp more light soy or fish sauce.'
     time_min: 1
   - text: 'While the rice finishes, fry the 4 topper eggs in a separate skillet. Heat 15 g / 1 tbsp neutral oil over medium-high until shimmering. Crack the eggs in one at a time, leaving space; cook 90 seconds without moving until the whites are set with crisp lacy edges and the yolk is still bright and runny. Salt the whites with a pinch as they cook.'
     time_min: 3

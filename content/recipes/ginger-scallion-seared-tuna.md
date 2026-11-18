@@ -93,7 +93,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; for the fish before searing)'
+    note: '(1 tsp Diamond Crystal; for the fish before searing)'
   - group: 'Phase 3, the tuna'
     item: 'neutral oil (for the sear)'
     slug: 'neutral-oil'
@@ -115,7 +115,7 @@ steps:
     time_min: 10
   - text: 'Mix the soy drizzle. Dissolve the 3 g / ½ tsp rock sugar in the 20 g / 4 tsp light soy sauce with a teaspoon of hot water (rock sugar needs the heat to dissolve; granulated sugar dissolves cold). Stir in the optional 2 g / ¼ tsp toasted sesame oil. Set aside.'
     time_min: 2
-  - text: 'Sear the tuna fast. Pat both 350 g / 12 oz blocks bone-dry and season all faces with the 3 g / ¾ tsp kosher salt. Heat a heavy skillet over high for 3 to 4 minutes until smoking, add the 15 g / 1 tbsp sear-oil, and swirl. Lay the first block in and sear 30 to 45 seconds per face, rolling around all four long sides plus a 15-second touch on each end, total about 3 minutes. The cooked-opaque band should creep in only 2 to 3 mm, leaving a wide cool ruby center. Sear the second block. Pull both to a board.'
+  - text: 'Sear the tuna fast. Pat both 350 g / 12 oz blocks bone-dry and season all faces with the 3 g / 1 tsp kosher salt. Heat a heavy skillet over high for 3 to 4 minutes until smoking, add the 15 g / 1 tbsp sear-oil, and swirl. Lay the first block in and sear 30 to 45 seconds per face, rolling around all four long sides plus a 15-second touch on each end, total about 3 minutes. The cooked-opaque band should creep in only 2 to 3 mm, leaving a wide cool ruby center. Sear the second block. Pull both to a board.'
     technique: 'maillard-sear'
     time_min: 4
   - text: 'Slice and plate, with the soy underneath. Rest the blocks 60 seconds to halt carryover, then slice each across the grain into 1 cm slabs. Spoon the soy drizzle across a serving plate as a thin pool, lay the tuna slices over it cut-face up (soy under the fish, not over it, so the slices do not go soggy and the ruby center shows). Pile the salted ginger-scallion relish in a neat mound on top of the slices.'

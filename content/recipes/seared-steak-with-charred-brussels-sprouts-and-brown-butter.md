@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; about 0.9% of the steak weight)'
+    note: '(1½ tsp Diamond Crystal; about 0.9% of the steak weight)'
 
   - group: 'Phase 2, the sprouts'
     item: 'brussels sprouts'
@@ -70,7 +70,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp; for the sprouts)'
+    note: '(¾ tsp; for the sprouts)'
 
   - group: 'Phase 3, sear and brown butter'
     item: 'black pepper, freshly cracked'
@@ -113,12 +113,12 @@ ingredients:
     note: '(½ tsp, for the steak at the table)'
 
 steps:
-  - text: 'The night before, pat both 225 g steaks bone-dry and lay them on a rack over a tray. Sprinkle the 4 g / 1 tsp kosher salt evenly across both sides of both steaks (roughly 0.9% of their weight) and refrigerate uncovered 12 to 24 hours. The salt seasons through the cross-section while the dry fridge air forms a tacky pellicle that sears fast.'
+  - text: 'The night before, pat both 225 g steaks bone-dry and lay them on a rack over a tray. Sprinkle the 4 g / 1½ tsp kosher salt evenly across both sides of both steaks (roughly 0.9% of their weight) and refrigerate uncovered 12 to 24 hours. The salt seasons through the cross-section while the dry fridge air forms a tacky pellicle that sears fast.'
     technique: 'dry-brining'
     time_min: 720
   - text: 'An hour before cooking, pull the steaks out to temper for 45 minutes and crack the 2 g / 1 tsp coarse black pepper onto both sides. Halve the 450 g / 1 lb sprouts, smash the 12 g / 3 garlic cloves, separate the 4 g / 4 thyme sprigs, and zest and juice half the lemon into a small bowl.'
     time_min: 45
-  - text: 'Char the sprouts first. Set a heavy 30 cm / 12-inch cast-iron skillet over medium-high heat for 4 to 5 minutes until it just smokes. Add the 15 g / 1 tbsp neutral oil, then lay the sprouts cut-face down in a single layer and season with the 2 g / ½ tsp kosher salt. Leave them undisturbed 4 to 5 minutes until the cut faces are deep brown and charred at the edges. Toss once, cook another 2 minutes to soften the domes, then scrape the sprouts (and the loose charred leaves) onto a plate. They will finish in the brown butter later; right now they should be browned and just shy of fully tender.'
+  - text: 'Char the sprouts first. Set a heavy 30 cm / 12-inch cast-iron skillet over medium-high heat for 4 to 5 minutes until it just smokes. Add the 15 g / 1 tbsp neutral oil, then lay the sprouts cut-face down in a single layer and season with the 2 g / ¾ tsp kosher salt. Leave them undisturbed 4 to 5 minutes until the cut faces are deep brown and charred at the edges. Toss once, cook another 2 minutes to soften the domes, then scrape the sprouts (and the loose charred leaves) onto a plate. They will finish in the brown butter later; right now they should be browned and just shy of fully tender.'
     technique: 'maillard-sear'
     time_min: 8
   - text: 'Sear the steaks in the same pan. Crank the heat to high and let the pan come back to smoking, 1 to 2 minutes. The film of beef-free oil and any sprout fond left behind is fine. Lay the 2 steaks down away from you so the oil sprays back, press each flat with a spatula for 5 seconds, then leave them undisturbed 90 seconds. Flip to clean pan territory and sear the second side another 90 seconds. The crust should be deep mahogany before each flip.'

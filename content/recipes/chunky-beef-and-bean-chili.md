@@ -128,7 +128,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Phase 3, brown and braise'
     item: 'tomato paste'
     slug: 'tomato-paste'
@@ -236,7 +236,7 @@ steps:
     time_min: 15
   - text: 'Blend the purée. Put the drained chiles in the blender with the toasted cumin, the 30 g / 2 chipotles in adobo with their sauce, the 25 g / 6 cloves garlic, the 2 g / 2 tsp Mexican oregano, and the 375 ml / 1½ cups blending beef broth. Blend on high for 2 full minutes until completely smooth.'
     time_min: 4
-  - text: 'Build the base. Lower the heat to medium. Add the 300 g diced onion, the 150 g diced poblano, and the 2 g / ½ tsp kosher salt for the vegetables; the salt pulls out water that lifts the fond. Cook 7 minutes, scraping the bottom with a wooden spoon, until soft and golden. Add the 30 g / 2 tbsp tomato paste and stir 2 minutes until it darkens to brick red. Pour in the chile purée and cook, stirring constantly, for 5 minutes, until it thickens to a paste that spatters. Frying the purée in the fat cooks off the raw chile edge and deepens the color.'
+  - text: 'Build the base. Lower the heat to medium. Add the 300 g diced onion, the 150 g diced poblano, and the 2 g / ¾ tsp kosher salt for the vegetables; the salt pulls out water that lifts the fond. Cook 7 minutes, scraping the bottom with a wooden spoon, until soft and golden. Add the 30 g / 2 tbsp tomato paste and stir 2 minutes until it darkens to brick red. Pour in the chile purée and cook, stirring constantly, for 5 minutes, until it thickens to a paste that spatters. Frying the purée in the fat cooks off the raw chile edge and deepens the color.'
     technique: 'blooming-aromatics'
     time_min: 15
   - text: 'Deglaze and braise. Pour in the 355 ml beer and scrape up anything still stuck to the pot. Simmer 3 minutes to cook off the alcohol. Add the 400 g hand-crushed tomatoes with their juices, the 250 ml / 1 cup braising beef broth, the 15 ml / 1 tbsp Worcestershire sauce, the 6 g / 1½ tsp dark brown sugar, and the beef with its juices. Bring to a simmer, cover with the lid slightly ajar, and move to the 150 °C / 300 °F oven. Braise 1½ to 2 hours, stirring once halfway, until a piece of beef crushes easily against the side of the pot. The oven holds the pot below a boil, which is what keeps leaner pieces from tightening and drying out.'

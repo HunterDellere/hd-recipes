@@ -91,7 +91,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2½ tsp Diamond Crystal)'
+    note: '(3½ tsp Diamond Crystal)'
   - group: 'Phase 1, the cabbage and filling'
     item: 'black pepper, cracked'
     slug: 'black-pepper'

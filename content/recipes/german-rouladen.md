@@ -72,7 +72,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 1, the rouladen assembly'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
@@ -145,7 +145,7 @@ ingredients:
     note: '(small handful)'
 
 steps:
-  - text: 'Pound the beef. Lay each 600 g portion of beef between two sheets of parchment. Pound gently with the smooth side of a meat mallet (not the spiked side) until each slice is uniformly 5 mm thick and about 12 × 20 cm. Season both sides with the 6 g / 1½ tsp salt and 3 g / 1½ tsp pepper.'
+  - text: 'Pound the beef. Lay each 600 g portion of beef between two sheets of parchment. Pound gently with the smooth side of a meat mallet (not the spiked side) until each slice is uniformly 5 mm thick and about 12 × 20 cm. Season both sides with the 6 g / 2¼ tsp salt and 3 g / 1½ tsp pepper.'
     time_min: 5
   - text: 'Assemble. Lay each beef slice flat on the cutting board. Spread 15 g / 1 tbsp Dijon mustard evenly over the surface. Lay 1 bacon slice across the short dimension. Lay 4 pickle sticks parallel to the bacon. Sprinkle about 35 g of diced onion across the surface. Starting from one short end, roll the beef tightly around the filling like a jelly roll, tucking in the sides as you go to seal the filling inside.'
     time_min: 10

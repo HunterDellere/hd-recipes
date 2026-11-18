@@ -69,7 +69,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 18
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; adjust at the end)'
+    note: '(2¼ tbsp Diamond Crystal; adjust at the end)'
   - group: 'Phase 1, the pork'
     item: 'water'
     qty: 3500

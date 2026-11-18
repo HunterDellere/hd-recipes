@@ -100,7 +100,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal, added only after tasting; you may need none)'
+    note: '(1½ tsp Diamond Crystal, added only after tasting; you may need none)'
 
   - group: 'Arroz branco (white rice)'
     item: 'long-grain white rice'
@@ -136,7 +136,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Farofa'
     item: 'farinha de mandioca (coarse cassava flour)'
@@ -160,7 +160,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
 
   - group: 'Couve à mineira (garlic collards)'
     item: 'collard greens'
@@ -185,7 +185,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
 
   - group: 'Molho apimentado (lime and chili bean sauce)'
     item: 'bean broth, ladled from the finished pot'
@@ -251,18 +251,18 @@ steps:
     time_min: 5
   - text: 'Finish the simmer. Continue simmering, lid off, for 60 to 75 minutes, scraping the bottom every 10 minutes because the thickening broth scorches easily. Add hot water 120 ml / ½ cup at a time if it gets thicker than heavy cream. It is done when the beans are creamy all the way through, the carne seca pulls into shreds, the rib meat slides off the bone, and the broth is dark and coats a spoon.'
     time_min: 70
-  - text: 'Season and rest. Remove the 4 bay leaves. Taste the broth with a bean or two. Only now add kosher salt, a pinch at a time, up to the 4 g / 1 tsp listed; with well-desalted meats you will likely need half of it, and you may need none. Take the pot off the heat, rest 20 minutes, and spoon off the excess fat that rises.'
+  - text: 'Season and rest. Remove the 4 bay leaves. Taste the broth with a bean or two. Only now add kosher salt, a pinch at a time, up to the 4 g / 1½ tsp listed; with well-desalted meats you will likely need half of it, and you may need none. Take the pot off the heat, rest 20 minutes, and spoon off the excess fat that rises.'
     time_min: 20
-  - text: 'Cook the rice (start during the final simmer). In a heavy 3 L saucepan over medium heat, warm the 20 g / 1½ tbsp neutral oil and cook the 50 g chopped onion and 8 g minced garlic for 2 minutes without browning. Add the 400 g rinsed, drained rice and stir 2 minutes until the grains turn opaque at the edges; this toasting coats the starch so the grains stay separate. Pour in the 880 ml / 3⅔ cups boiling water and the 8 g / 2 tsp kosher salt, stir once, and boil uncovered until the water drops below the surface of the rice and small craters appear, about 6 minutes. Cover, turn the heat to the lowest setting, and cook 12 minutes. Rest off the heat, covered, 10 minutes, then fluff with a fork.'
+  - text: 'Cook the rice (start during the final simmer). In a heavy 3 L saucepan over medium heat, warm the 20 g / 1½ tbsp neutral oil and cook the 50 g chopped onion and 8 g minced garlic for 2 minutes without browning. Add the 400 g rinsed, drained rice and stir 2 minutes until the grains turn opaque at the edges; this toasting coats the starch so the grains stay separate. Pour in the 880 ml / 3⅔ cups boiling water and the 8 g / 2¾ tsp kosher salt, stir once, and boil uncovered until the water drops below the surface of the rice and small craters appear, about 6 minutes. Cover, turn the heat to the lowest setting, and cook 12 minutes. Rest off the heat, covered, 10 minutes, then fluff with a fork.'
     time_min: 30
-  - text: 'Make the farofa. In a wide skillet over medium heat, melt the 60 g / 4 tbsp butter and cook the 80 g chopped onion until golden at the edges, about 5 minutes. Add the 200 g farinha de mandioca and the 3 g / ¾ tsp kosher salt and stir constantly with a wooden spoon for 5 to 7 minutes, until the flour smells toasty, turns a shade darker, and feels sandy and dry. Spread it on a plate to stop the cooking; it holds at room temperature for hours.'
+  - text: 'Make the farofa. In a wide skillet over medium heat, melt the 60 g / 4 tbsp butter and cook the 80 g chopped onion until golden at the edges, about 5 minutes. Add the 200 g farinha de mandioca and the 3 g / 1 tsp kosher salt and stir constantly with a wooden spoon for 5 to 7 minutes, until the flour smells toasty, turns a shade darker, and feels sandy and dry. Spread it on a plate to stop the cooking; it holds at room temperature for hours.'
     technique: 'dry-toasting'
     time_min: 10
   - text: 'Make the molho apimentado. Once the beans are seasoned, ladle 240 ml / 1 cup of their hot broth into a small bowl. Stir in the 45 g / 3 tbsp lime juice, the 60 g minced white onion, the 5 g minced chilies, the 8 g chopped parsley, and the 1 g / ¼ tsp kosher salt. Taste: it should be sour first, then hot, then savory. Each diner spoons it over their beans; it is the main acid on the plate.'
     time_min: 5
   - text: 'Cut the collards. Stack 6 or so stemmed leaves from the 450 g collard greens, roll them tightly into a cigar, and slice across with a sharp knife into ribbons as thin as you can manage, 2 mm or less. Thin ribbons cook in 2 minutes and stay bright and slightly crisp; thick ones need longer and turn army green.'
     time_min: 10
-  - text: 'Cook the collards, at the last minute. Heat a wide skillet over high heat with the 30 g / 2 tbsp olive oil (or bacon fat). Add the 10 g sliced garlic and stir 20 seconds until it just starts to color, then add the collards and the 3 g / ¾ tsp kosher salt. Toss constantly with tongs for 1½ to 2 minutes, only until the ribbons wilt and turn vivid green. Move them to a dish straight away, since the residual heat in the pan keeps cooking them.'
+  - text: 'Cook the collards, at the last minute. Heat a wide skillet over high heat with the 30 g / 2 tbsp olive oil (or bacon fat). Add the 10 g sliced garlic and stir 20 seconds until it just starts to color, then add the collards and the 3 g / 1 tsp kosher salt. Toss constantly with tongs for 1½ to 2 minutes, only until the ribbons wilt and turn vivid green. Move them to a dish straight away, since the residual heat in the pan keeps cooking them.'
     time_min: 3
   - text: 'Serve. Bring the feijoada to the table in its pot (or lift the meats onto a platter and the beans into a deep bowl), with the rice, collards, farofa, the molho apimentado, and the 600 g / 3 oranges sliced into rounds. The usual order on the plate: rice, beans and meats over it, collards beside, farofa scattered on top, a spoon of molho, and orange slices eaten between bites to reset the palate against the pork fat.'
     time_min: 5

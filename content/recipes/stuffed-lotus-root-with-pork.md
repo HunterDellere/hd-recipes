@@ -84,7 +84,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(¾ tsp)'
+    note: '(1½ tsp)'
   - group: 'Phase 2, pork filling'
     item: 'granulated sugar'
     slug: 'granulated-sugar'

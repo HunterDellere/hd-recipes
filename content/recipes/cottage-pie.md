@@ -105,7 +105,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, the beef braise'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
@@ -147,7 +147,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 14
     unit: 'g'
-    note: '(3½ tsp; about 6 g for the boil water, about 8 g for the finished mash)'
+    note: '(1¾ tbsp; about 6 g for the boil water, about 8 g for the finished mash)'
   - group: 'Phase 2, the mashed potato topping'
     item: 'cracked black pepper (for the mash)'
     slug: 'black-pepper'
@@ -175,12 +175,12 @@ steps:
     time_min: 7
   - text: 'Add the 30 g / 2 tbsp tomato paste; cook 2 minutes, stirring constantly, until the paste has darkened from bright red to brick red. Add the 15 g / 2 tbsp flour; stir 60 seconds to cook out the raw flour taste and start the roux.'
     time_min: 3
-  - text: 'Pour in the 150 ml / ⅔ cup red wine; scrape the fond off the pan bottom. Cook 90 seconds to reduce by half and burn off the alcohol. Add the 400 ml / 1⅔ cups beef stock, 15 ml / 1 tbsp Worcestershire, 8 g / 2 tsp salt, and 3 g / 1½ tsp pepper. Bring to a steady simmer; reduce heat to medium-low and cook 35 to 40 minutes, partially covered, stirring occasionally, until the braise has thickened into a glossy gravy that coats a spoon and the liquid level has dropped to just below the meat.'
+  - text: 'Pour in the 150 ml / ⅔ cup red wine; scrape the fond off the pan bottom. Cook 90 seconds to reduce by half and burn off the alcohol. Add the 400 ml / 1⅔ cups beef stock, 15 ml / 1 tbsp Worcestershire, 8 g / 2¾ tsp salt, and 3 g / 1½ tsp pepper. Bring to a steady simmer; reduce heat to medium-low and cook 35 to 40 minutes, partially covered, stirring occasionally, until the braise has thickened into a glossy gravy that coats a spoon and the liquid level has dropped to just below the meat.'
     technique: 'deglazing'
     time_min: 40
   - text: 'While the beef braises, add the 1000 g potato chunks to the salted boiling water. Cook 18 to 22 minutes until a knife slides through with no resistance. Drain well in a colander; let the steam evaporate for 60 seconds (excess water in the potato makes the mash gluey).'
     time_min: 22
-  - text: 'Return the drained potatoes to the empty hot pot. Add the 90 g / 6 tbsp butter; mash with a potato masher until the butter has melted into the mash. Pour in the 120 ml / ½ cup warm milk and 60 ml / ¼ cup cream; mash to a smooth thick consistency. Season with the remaining 8 g / 2 tsp salt and 2 g / 1 tsp pepper. Taste; adjust seasoning.'
+  - text: 'Return the drained potatoes to the empty hot pot. Add the 90 g / 6 tbsp butter; mash with a potato masher until the butter has melted into the mash. Pour in the 120 ml / ½ cup warm milk and 60 ml / ¼ cup cream; mash to a smooth thick consistency. Season with the remaining 8 g / 2¾ tsp salt and 2 g / 1 tsp pepper. Taste; adjust seasoning.'
     time_min: 5
   - text: 'Stir the 100 g frozen peas into the finished beef braise; cook 2 minutes to warm through. Transfer the beef braise to a 25 cm round or 20 × 30 cm rectangular baking dish; spread evenly to about 3 cm thick.'
     time_min: 4

@@ -98,7 +98,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; about 1.3% of the meat weight, the canonical salt percentage for ground-meat seasoning, calibrated for the salt the cheese contributes plus the salt in the simmering sauce)'
+    note: '(2¼ tsp Diamond Crystal; about 1.3% of the meat weight, the canonical salt percentage for ground-meat seasoning, calibrated for the salt the cheese contributes plus the salt in the simmering sauce)'
   - group: 'Phase 2, the meatball mixture'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -157,7 +157,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp; the sauce salt, separate from the meat salt, the sauce gets seasoned in its own right)'
+    note: '(1½ tsp; the sauce salt, separate from the meat salt, the sauce gets seasoned in its own right)'
   - group: 'Phase 4, the tomato sauce'
     item: 'granulated sugar'
     slug: 'granulated-sugar'
@@ -264,7 +264,7 @@ notes: |
 
   The fennel pollen variable. Fennel pollen is what makes a meatball read distinctly Italian rather than generic. The dish without fennel reads as "well-seasoned pork meatball in tomato sauce", perfectly tasty but ambiguous in cuisine. The dish with fennel reads immediately as Italian, because fennel (along with garlic, oregano, and basil) is one of the four flavor signatures of Italian sausage and southern Italian pork cooking. Fennel pollen is the upgrade, more aromatic and less bitter than ground fennel seed, but ground toasted seed is the practical substitute and is what most home cooks use. Either way, do not skip the fennel.
 
-  The 1.3% salt rule. The 6 g / 1½ tsp Diamond Crystal salt for 450 g of ground pork lands at about 1.3% of the meat weight, which is the canonical seasoning percentage for any ground-meat application (hamburgers, sausage, meatballs, terrines). Lower than 1.0% the meat reads under-seasoned regardless of how good the surrounding sauce is; higher than 1.5% the meatball reads jerky-salty. The 1.3% target accounts for the salt the parmigiano contributes (parm is about 1.5% sodium by weight, so 30 g of parm adds ~0.5 g of salt, a small but real contribution) and the salt in the simmering sauce (which seasons the meatball surface but not the interior). A digital scale and an Italian grandmother both arrive at the same answer; the scale is the easier path.
+  The 1.3% salt rule. The 6 g / 2¼ tsp Diamond Crystal salt for 450 g of ground pork lands at about 1.3% of the meat weight, which is the canonical seasoning percentage for any ground-meat application (hamburgers, sausage, meatballs, terrines). Lower than 1.0% the meat reads under-seasoned regardless of how good the surrounding sauce is; higher than 1.5% the meatball reads jerky-salty. The 1.3% target accounts for the salt the parmigiano contributes (parm is about 1.5% sodium by weight, so 30 g of parm adds ~0.5 g of salt, a small but real contribution) and the salt in the simmering sauce (which seasons the meatball surface but not the interior). A digital scale and an Italian grandmother both arrive at the same answer; the scale is the easier path.
 
   Serving choices and the spaghetti question. The Italian-American canonical pairing is spaghetti, the long-noodle-and-meatball combination on one plate is the iconic American dish, and the long noodle catches sauce in a way that complements the discrete meatball. Rigatoni and other tube pastas catch sauce inside the tube and produce a chunkier eating experience; either works. Pasta cooked al dente, tossed in a few ladles of sauce in a wide bowl before plating, then topped with meatballs and additional sauce, is the right structural order, pasta dressed only with sauce reads as a separate course from the meatballs, where pasta tossed in sauce makes the dish read as one integrated plate. Polenta is the southern Italian alternative and produces a different but equally satisfying dish. The meatball sub (described in the modifications) is the lunchroom canonical and is what every Italian-American kid learns to make from leftover Sunday-gravy meatballs the next day; it''s also the right format for a casual party.
 

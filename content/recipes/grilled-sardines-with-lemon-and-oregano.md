@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; salts the skin and the cavity)'
+    note: '(2¼ tsp Diamond Crystal; salts the skin and the cavity)'
   - group: 'Phase 1, the sardines'
     item: 'extra-virgin olive oil'
     slug: 'extra-virgin-olive-oil'
@@ -104,7 +104,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; seasons the sauce)'
+    note: '(¾ tsp Diamond Crystal; seasons the sauce)'
 
   - group: 'Phase 3, to serve'
     item: 'lemon wedges'
@@ -121,7 +121,7 @@ ingredients:
 steps:
   - text: 'Light the fire and get it ripping. Burn a full chimney of charcoal to white ash and spread it for a hot direct zone, or set a gas grill to high and close the lid for 12 to 15 minutes. The grate must be hot enough that a drop of oil flicked on it smokes instantly; sardines need that intensity to char the skin before the thin flesh overcooks. While it heats, do all the salmoriglio prep so the sauce is one whisk away.'
     time_min: 14
-  - text: 'Dry and salt the sardines. Pat the 600 g / 6 to 8 sardines bone-dry inside and out with paper towels; surface water is the enemy of crisp skin and the cause of sticking. Salt them all over with the 6 g / 1½ tsp kosher salt, working a little into the body cavity, then rub the 14 g / 1 tbsp olive oil over the skin in a thin film. The oil conducts heat into the skin and promotes Maillard browning; it is not a sauce, so keep it sparse. Let the salted fish sit 5 minutes while the grill finishes heating; the brief cure firms the flesh and draws a tacky surface that browns better.'
+  - text: 'Dry and salt the sardines. Pat the 600 g / 6 to 8 sardines bone-dry inside and out with paper towels; surface water is the enemy of crisp skin and the cause of sticking. Salt them all over with the 6 g / 2¼ tsp kosher salt, working a little into the body cavity, then rub the 14 g / 1 tbsp olive oil over the skin in a thin film. The oil conducts heat into the skin and promotes Maillard browning; it is not a sauce, so keep it sparse. Let the salted fish sit 5 minutes while the grill finishes heating; the brief cure firms the flesh and draws a tacky surface that browns better.'
     technique: 'dry-brining'
     time_min: 5
   - text: 'Oil the grate, then lay the fish on. Scrub the hot grate clean, then wipe it with an oil-soaked wad of paper towel gripped in tongs until it glistens. Lay the sardines directly over the hot zone, perpendicular to the bars so they are easy to lift, all facing the same way. Close the lid if using gas. Do not touch them for 2½ to 3 minutes; the skin needs an uninterrupted contact to set and release. Lifting early tears the skin and the fish sticks.'
@@ -129,10 +129,10 @@ steps:
     time_min: 3
   - text: 'Flip once. After 2½ to 3 minutes the first side should be blistered, charred in spots, and the fish should lift cleanly with a thin spatula; if it resists, give it 20 to 30 seconds more, it will release when the skin has crisped. Flip each sardine once and grill the second side 2 to 2½ minutes. The fish is done when the flesh at the thickest point behind the head is opaque to the bone and the dorsal fin pulls out easily, roughly 58 to 60 °C internal. A 75 to 100 g sardine cooks in 5 minutes total; oily fish forgives a little more than lean fish, but past well-done the flesh dries and the omega-rich fat oxidizes toward bitter.'
     time_min: 3
-  - text: 'Rest the fish and whisk the salmoriglio warm. Move the sardines to a warm platter to rest while you build the sauce. In a small bowl set over the residual warmth of the grill-side or a bowl of warm water, combine the 45 g / 1 lemon of juice, the 20 g / 4 tsp warm water, the 6 g / 2 cloves grated garlic, the 2 g / 2 tsp crumbled dried oregano, the optional 1 g / ¼ tsp red pepper flakes, and the 2 g / ½ tsp kosher salt. Whisk constantly while drizzling in the 75 g / ⅓ cup olive oil in a thin stream until it thickens to a loose, cloudy emulsion that coats a spoon. Whisk in the lemon zest and the 6 g / 1½ tbsp chopped parsley last. It should taste sharp and garlicky and herbal; salmoriglio is meant to be assertive, because it has rich oily fish to stand up to.'
+  - text: 'Rest the fish and whisk the salmoriglio warm. Move the sardines to a warm platter to rest while you build the sauce. In a small bowl set over the residual warmth of the grill-side or a bowl of warm water, combine the 45 g / 1 lemon of juice, the 20 g / 4 tsp warm water, the 6 g / 2 cloves grated garlic, the 2 g / 2 tsp crumbled dried oregano, the optional 1 g / ¼ tsp red pepper flakes, and the 2 g / ¾ tsp kosher salt. Whisk constantly while drizzling in the 75 g / ⅓ cup olive oil in a thin stream until it thickens to a loose, cloudy emulsion that coats a spoon. Whisk in the lemon zest and the 6 g / 1½ tbsp chopped parsley last. It should taste sharp and garlicky and herbal; salmoriglio is meant to be assertive, because it has rich oily fish to stand up to.'
     technique: 'vinaigrette-emulsion'
     time_min: 3
-  - text: 'Dress and serve hot. Spoon the warm salmoriglio generously over and around the sardines, letting it pool on the platter. Scatter the 2 g / ½ tsp flaky sea salt over the charred skin so it crackles on the tongue, and set out the 60 g / 1 lemon of wedges for squeezing. Serve at once, while the skin is still crisp and the sauce is still warm and emulsified. Eat with fingers: lift the top fillet off the spine, then peel the spine away from the bottom fillet in one piece. Grilled bread to mop the lemon-oil on the platter is the traditional and correct accompaniment.'
+  - text: 'Dress and serve hot. Spoon the warm salmoriglio generously over and around the sardines, letting it pool on the platter. Scatter the 2 g / ¾ tsp flaky sea salt over the charred skin so it crackles on the tongue, and set out the 60 g / 1 lemon of wedges for squeezing. Serve at once, while the skin is still crisp and the sauce is still warm and emulsified. Eat with fingers: lift the top fillet off the spine, then peel the spine away from the bottom fillet in one piece. Grilled bread to mop the lemon-oil on the platter is the traditional and correct accompaniment.'
     time_min: 1
 
 techniques: ['dry-brining', 'fish-skin-scoring', 'vinaigrette-emulsion']

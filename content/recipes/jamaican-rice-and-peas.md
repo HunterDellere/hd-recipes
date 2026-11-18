@@ -98,7 +98,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
 steps:
   - text: 'Soak the 200 g / 1 cup dried kidney beans in 1500 ml cold water for 8 to 12 hours (overnight is easiest). Drain.'
@@ -107,7 +107,7 @@ steps:
     time_min: 70
   - text: 'Drain the beans, reserving the bean cooking liquid. Measure the reserved liquid; combine it with the 400 ml coconut milk to total exactly 800 ml of liquid (add water if short, discard excess if over). The bean broth carries dissolved bean proteins and starch that give the rice color, body, and umami; throwing it out is the single most common error.'
     time_min: 5
-  - text: 'In the same heavy-bottomed pot (or a wide saucepan with a tight lid), combine the 400 g rinsed rice, the cooked beans, the 800 ml bean-broth-and-coconut liquid, the 4 g / 6 to 8 thyme sprigs, the 50 g smashed whole scallions, the 12 g / 3 cloves smashed garlic, the 3 g / 1 tsp whole allspice berries, and the 8 g / 2 tsp kosher salt. Stir once to distribute. Float the whole intact 12 g scotch bonnet on top; do not push it down, do not pierce it.'
+  - text: 'In the same heavy-bottomed pot (or a wide saucepan with a tight lid), combine the 400 g rinsed rice, the cooked beans, the 800 ml bean-broth-and-coconut liquid, the 4 g / 6 to 8 thyme sprigs, the 50 g smashed whole scallions, the 12 g / 3 cloves smashed garlic, the 3 g / 1 tsp whole allspice berries, and the 8 g / 2¾ tsp kosher salt. Stir once to distribute. Float the whole intact 12 g scotch bonnet on top; do not push it down, do not pierce it.'
     time_min: 3
   - text: 'Bring to a hard boil over high heat, uncovered. Once boiling, reduce heat to the lowest setting, cover tightly (use a kitchen towel under the lid if the seal is loose), and cook 18 to 20 minutes without lifting the lid. The rice is steaming under the lid; lifting the lid releases the steam and produces unevenly cooked rice.'
     time_min: 20

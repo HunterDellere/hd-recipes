@@ -48,7 +48,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for the rice massage)'
+    note: '(1 tsp Diamond Crystal; for the rice massage)'
 
   - group: 'Chicken base'
     item: 'bone-in skin-on chicken thighs'
@@ -136,7 +136,7 @@ steps:
   - text: 'Dry-brine the chicken: pat 700 g / 1.5 lb chicken thighs dry, rub all over (under and over the skin) with 8 g / 1 tbsp kosher salt and 15 g / 1 tbsp Shaoxing wine. Rest uncovered on a rack at room temperature 20 minutes while the rice prep happens. The cure firms the meat and the alcohol takes off any chicken-blood notes.'
     technique: 'dry-brining'
     time_min: 20
-  - text: 'Rinse 200 g / 1 cup jasmine rice three times until the water runs from milky to faintly hazy. Drain five minutes. Massage with 7 g / ½ tbsp neutral oil and 3 g / ½ tsp kosher salt for 30 seconds. Rest fifteen minutes.'
+  - text: 'Rinse 200 g / 1 cup jasmine rice three times until the water runs from milky to faintly hazy. Drain five minutes. Massage with 7 g / ½ tbsp neutral oil and 3 g / 1 tsp kosher salt for 30 seconds. Rest fifteen minutes.'
     time_min: 15
   - text: 'In a heavy 5-quart pot, combine 2200 ml / 9 cups cold water, the brined chicken thighs, the 20 g / smacked ginger coins, the white parts of the 4 scallions, and the 8 g / 2 tbsp optional dried scallop. Bring to a hard boil over high heat.'
     time_min: 10

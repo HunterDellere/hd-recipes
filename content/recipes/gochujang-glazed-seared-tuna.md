@@ -83,7 +83,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; seasons the fish before the glaze)'
+    note: '(1 tsp Diamond Crystal; seasons the fish before the glaze)'
   - group: 'Phase 2, the tuna'
     item: 'neutral oil (high smoke point: refined avocado, rice bran, or grapeseed)'
     slug: 'neutral-oil'
@@ -118,7 +118,7 @@ steps:
   - text: 'Toast the sesame and prep the finish. Put the 8 g / 1 tbsp white sesame seeds in a dry pan over medium heat, agitating, until pale caramel-bronze and fragrant, 3 to 4 minutes; tip onto a cool plate. Slice the 15 g / 1 to 2 scallions thin on the bias. Set both aside.'
     technique: 'dry-toasting'
     time_min: 4
-  - text: 'Salt and glaze the tuna. Pat both 350 g / 12 oz tuna blocks bone-dry, surface water steams and makes the glaze slide. Season all faces with the 3 g / ¾ tsp kosher salt. Using the brush you will discard, paint a thin even coat of glaze (from the non-reserved portion) over all four long faces and the two ends. Thin is the operative word: a thick coat scorches before the surface sets.'
+  - text: 'Salt and glaze the tuna. Pat both 350 g / 12 oz tuna blocks bone-dry, surface water steams and makes the glaze slide. Season all faces with the 3 g / 1 tsp kosher salt. Using the brush you will discard, paint a thin even coat of glaze (from the non-reserved portion) over all four long faces and the two ends. Thin is the operative word: a thick coat scorches before the surface sets.'
     time_min: 3
   - text: 'Heat the pan. Place a heavy stainless or cast-iron skillet over high heat for 3 to 4 minutes until smoking. Add the 15 g / 1 tbsp neutral oil and swirl; it should shimmer and just smoke within 5 seconds.'
     time_min: 4

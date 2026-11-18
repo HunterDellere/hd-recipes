@@ -92,7 +92,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; season to taste)'
+    note: '(2¾ tsp Diamond Crystal; season to taste)'
   - group: 'Phase 3, season and finish'
     item: 'fish sauce'
     slug: 'fish-sauce'
@@ -177,7 +177,7 @@ steps:
     time_min: 180
   - text: 'Fish out and reserve the trotters. Lift the trotter sections into a bowl with a spider or tongs. Strain the broth through a fine-mesh sieve into a clean pot, discarding the spent ginger, scallion, garlic, and peppercorns. Return the trotters to the strained broth. You should have roughly 2 L; if it reduced well past that, add hot water to bring it back.'
     time_min: 8
-  - text: 'Season the broth. Return to a gentle simmer. Add 15 ml / 1 tbsp fish sauce and 8 g / 1½ tsp kosher salt, then taste. The fish sauce is doing double duty as the glutamate backbone and part of the salt; adjust with a pinch more kosher salt until the broth tastes full and round, not flat. Season lightly on purpose, the point is to frame the sweet pork, not to bury it.'
+  - text: 'Season the broth. Return to a gentle simmer. Add 15 ml / 1 tbsp fish sauce and 8 g / 2¾ tsp kosher salt, then taste. The fish sauce is doing double duty as the glutamate backbone and part of the salt; adjust with a pinch more kosher salt until the broth tastes full and round, not flat. Season lightly on purpose, the point is to frame the sweet pork, not to bury it.'
     time_min: 5
   - text: 'Finish. Off the heat, stir in the drained 8 g wakame, 1 g / ½ tsp ground white pepper, and 5 ml / 1 tsp toasted sesame oil. Ladle into bowls, giving each a share of the soft trotter, and scatter with the 15 g / 2 tbsp sliced scallion greens.'
     time_min: 3

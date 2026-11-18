@@ -114,7 +114,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 18
     unit: 'g'
-    note: '(1½ tbsp Diamond Crystal total; in layers)'
+    note: '(2¼ tbsp Diamond Crystal total; in layers)'
   - group: 'Phase 2, the broth and lamb'
     item: 'canned crushed tomatoes (or 200 g fresh, grated)'
     slug: 'canned-san-marzano-tomatoes'

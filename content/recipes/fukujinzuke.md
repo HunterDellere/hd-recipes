@@ -57,7 +57,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp plus 1 tsp Diamond Crystal; about 2% of the vegetables)'
+    note: '(1½ tbsp plus 1 tsp Diamond Crystal; about 2% of the vegetables)'
   - item: 'Japanese soy sauce (koikuchi)'
     qty: 100
     unit: 'ml'

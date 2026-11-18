@@ -47,7 +47,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for the rice massage)'
+    note: '(1 tsp Diamond Crystal; for the rice massage)'
 
   - group: 'Pork base'
     item: 'bone-in pork shoulder steak or country-style ribs'
@@ -134,7 +134,7 @@ steps:
   - text: 'Dry-brine the pork: pat 600 g / 1.3 lb bone-in pork shoulder dry, rub all over with 8 g / 1 tbsp kosher salt and 15 g / 1 tbsp Shaoxing wine. Rest uncovered on a rack at room temperature 20 minutes while the rice prep happens. The salt draws moisture to the surface and the alcohol evaporates off any pork-blood notes.'
     technique: 'dry-brining'
     time_min: 20
-  - text: 'Rinse 200 g / 1 cup jasmine rice three times until the water runs from milky to faintly hazy. Drain five minutes. Massage with 7 g / ½ tbsp neutral oil and 3 g / ½ tsp kosher salt for 30 seconds. Rest fifteen minutes; the oil shell forces the grain to break inside-out during the simmer.'
+  - text: 'Rinse 200 g / 1 cup jasmine rice three times until the water runs from milky to faintly hazy. Drain five minutes. Massage with 7 g / ½ tbsp neutral oil and 3 g / 1 tsp kosher salt for 30 seconds. Rest fifteen minutes; the oil shell forces the grain to break inside-out during the simmer.'
     time_min: 15
   - text: 'In a heavy 5-quart pot, combine 2200 ml / 9 cups cold water, the brined pork, the 15 g / half of the ginger as smacked coins, the white parts of the 4 scallions, and the 8 g / 2 tbsp optional dried scallop. Bring to a hard boil over high heat.'
     time_min: 10

@@ -85,7 +85,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 7
     unit: 'g'
-    note: '(1¾ tsp Diamond Crystal; about 0.9 percent of the chicken weight)'
+    note: '(2½ tsp Diamond Crystal; about 0.9 percent of the chicken weight)'
   - group: 'Phase 1, marinade'
     item: 'neutral oil (for the marinade)'
     slug: 'neutral-oil'
@@ -161,7 +161,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal)'
+    note: '(1¾ tsp Diamond Crystal)'
   - group: 'Phase 3, makhani gravy'
     item: 'unsalted butter (for enriching the gravy)'
     slug: 'butter'
@@ -206,12 +206,12 @@ ingredients:
     note: '(1 tsp, to taste)'
 
 steps:
-  - text: 'Marinate. In a glass or ceramic bowl, stir together the 120 g / ½ cup Greek yogurt, 20 g / 4 tsp ginger-garlic paste, 15 ml / 1 tbsp lemon juice, 5 g / 2 tsp Kashmiri chili powder, 2 g / 1 tsp garam masala, 2 g / 1 tsp ground cumin, 1 g / ¼ tsp turmeric, 7 g / 1¾ tsp kosher salt, and 15 ml / 1 tbsp neutral oil into a thick red paste. Add the 800 g chicken pieces and turn until every surface is coated. The salt seasons the meat through and helps it hold moisture under the broiler; the yogurt and lemon tenderize the surface and give the char something to cling to. Cover with a fitted lid or a plate and refrigerate 4 to 24 hours.'
+  - text: 'Marinate. In a glass or ceramic bowl, stir together the 120 g / ½ cup Greek yogurt, 20 g / 4 tsp ginger-garlic paste, 15 ml / 1 tbsp lemon juice, 5 g / 2 tsp Kashmiri chili powder, 2 g / 1 tsp garam masala, 2 g / 1 tsp ground cumin, 1 g / ¼ tsp turmeric, 7 g / 2½ tsp kosher salt, and 15 ml / 1 tbsp neutral oil into a thick red paste. Add the 800 g chicken pieces and turn until every surface is coated. The salt seasons the meat through and helps it hold moisture under the broiler; the yogurt and lemon tenderize the surface and give the char something to cling to. Cover with a fitted lid or a plate and refrigerate 4 to 24 hours.'
     time_min: 10
   - text: 'Start the gravy. Melt the 30 g / 2 tbsp butter for the gravy base in a heavy saucepan over medium heat. Add the 4 cracked cardamom pods, 4 cloves, the 3 g / 1-inch cinnamon stick, and the 1 bay leaf; fry 30 seconds until they smell fragrant and the butter foams around them. Add the 25 g / 5 tsp ginger-garlic paste and fry, stirring with a wooden spoon, 1 minute until the raw smell is gone and it just begins to color.'
     technique: 'blooming-aromatics'
     time_min: 2
-  - text: 'Simmer the tomatoes and cashews. Add the 800 g / 28-oz can hand-crushed tomatoes, then swirl the 120 ml / ½ cup water in the can and add it. Stir in the 50 g / ⅓ cup raw cashews, 5 g / 2 tsp Kashmiri chili powder, and 5 g / 1¼ tsp kosher salt. Bring to a simmer, cover partway, and cook 20 minutes, stirring occasionally, until the tomatoes have collapsed and a cashew crushes easily against the side of the pan. Salting now lets the tomatoes season while they cook, rather than tasting salted on top.'
+  - text: 'Simmer the tomatoes and cashews. Add the 800 g / 28-oz can hand-crushed tomatoes, then swirl the 120 ml / ½ cup water in the can and add it. Stir in the 50 g / ⅓ cup raw cashews, 5 g / 2 tsp Kashmiri chili powder, and 5 g / 1¾ tsp kosher salt. Bring to a simmer, cover partway, and cook 20 minutes, stirring occasionally, until the tomatoes have collapsed and a cashew crushes easily against the side of the pan. Salting now lets the tomatoes season while they cook, rather than tasting salted on top.'
     time_min: 22
   - text: 'Heat the broiler. While the gravy simmers, set an oven rack so the top of the chicken will sit about 10 cm / 4 inches below the broiler element and heat the broiler on high for 10 minutes. Line a rimmed sheet pan with foil and set a wire rack on it.'
     time_min: 10

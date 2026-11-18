@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2½ tsp Diamond Crystal; about 0.8% of cubed weight)'
+    note: '(3½ tsp Diamond Crystal; about 0.8% of cubed weight)'
   - group: 'Phase 1, roasted squash'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -98,7 +98,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 2, balsamic-shallot vinaigrette'
     item: 'extra-virgin olive oil'
     slug: 'extra-virgin-olive-oil'
@@ -153,9 +153,9 @@ steps:
   - text: 'Set two racks in the upper and lower thirds of the oven, slide a half-sheet pan onto each, and heat to 230 °C / 450 °F for at least 15 minutes. Meanwhile peel, seed, and cube the 1600 g / 2 medium butternut squash. Peel past the first pale layer until the flesh is solid orange; the greenish band under the skin stays fibrous no matter how long it roasts.'
     technique: 'high-heat-dry-roasting'
     time_min: 15
-  - text: 'Make the vinaigrette base first so the shallot has time to mellow. In a jar, combine the 30 g / 1 medium minced shallot, the 50 g / 3 tbsp balsamic vinegar, the 15 g / 1 tbsp red wine vinegar, and the 3 g / ¾ tsp kosher salt. Let it sit at least 10 minutes while you prep. The acid and salt draw out and partially neutralize the sharp thiosulfinates, so the shallot reads sweet-allium instead of raw and hot, and the salt fully dissolves before any oil arrives to block it.'
+  - text: 'Make the vinaigrette base first so the shallot has time to mellow. In a jar, combine the 30 g / 1 medium minced shallot, the 50 g / 3 tbsp balsamic vinegar, the 15 g / 1 tbsp red wine vinegar, and the 3 g / 1 tsp kosher salt. Let it sit at least 10 minutes while you prep. The acid and salt draw out and partially neutralize the sharp thiosulfinates, so the shallot reads sweet-allium instead of raw and hot, and the salt fully dissolves before any oil arrives to block it.'
     time_min: 2
-  - text: 'In a large bowl, toss the cubed squash with the 40 g / 3 tbsp olive oil, the 10 g / 2½ tsp kosher salt, the 2 g / ½ tsp black pepper, and the 1 g / ½ tsp red pepper flakes until every face is glossed. Salting now, before heat, pulls a thin film of moisture to the surface that dissolves the salt into the flesh and evaporates within the first minutes of roasting, so the cubes season through rather than just on the crust.'
+  - text: 'In a large bowl, toss the cubed squash with the 40 g / 3 tbsp olive oil, the 10 g / 3½ tsp kosher salt, the 2 g / ½ tsp black pepper, and the 1 g / ½ tsp red pepper flakes until every face is glossed. Salting now, before heat, pulls a thin film of moisture to the surface that dissolves the salt into the flesh and evaporates within the first minutes of roasting, so the cubes season through rather than just on the crust.'
     time_min: 3
   - text: 'Pull the hot pans and divide the squash between them in a single layer, cut faces down, with a finger-width gap between cubes. It should sizzle on contact. Roast 15 minutes undisturbed, then flip with a thin metal spatula and swap the pans top to bottom. Scatter the 6 g / about 20 sage leaves over the squash, pressing them flat into the oil on the pan.'
     technique: 'high-heat-dry-roasting'

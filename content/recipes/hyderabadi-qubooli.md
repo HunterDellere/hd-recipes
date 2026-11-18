@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp; for the dal parboil water)'
+    note: '(2¼ tsp; for the dal parboil water)'
 
   - group: 'Phase 2, the rice'
     item: 'basmati rice'
@@ -169,7 +169,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp; for the masala)'
+    note: '(2¼ tsp; for the masala)'
 
   - group: 'Phase 4, the dum layering'
     item: 'saffron threads'

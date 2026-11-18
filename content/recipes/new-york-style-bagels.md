@@ -106,7 +106,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1 tsp; sprinkle sparingly, the dough is already salted)'
+    note: '(2¼ tsp; sprinkle sparingly, the dough is already salted)'
     optional: true
 
 steps:

@@ -183,7 +183,7 @@ modifications:
     kind: 'occasion'
   - for: 'dietary'
     to: 'vegan, no dairy'
-    how: 'Replace whipped feta with whipped silken-tofu base: 200 g silken tofu + 30 g olive oil + 10 g lemon juice + 8 g / 1 tbsp white miso + 4 g / 1 tsp kosher salt processed to smooth. The miso provides the glutamate that the feta brought; the texture is close.'
+    how: 'Replace whipped feta with whipped silken-tofu base: 200 g silken tofu + 30 g olive oil + 10 g lemon juice + 8 g / 1 tbsp white miso + 4 g / 1½ tsp kosher salt processed to smooth. The miso provides the glutamate that the feta brought; the texture is close.'
     kind: 'dietary'
 
 substitutions:

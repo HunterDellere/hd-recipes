@@ -61,7 +61,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal, in three additions)'
+    note: '(1½ tbsp Diamond Crystal, in three additions)'
   - group: 'Potato base'
     item: 'Portuguese chouriço (smoked, cured)'
     qty: 170
@@ -91,13 +91,13 @@ ingredients:
 steps:
   - text: 'Sweat the aromatics. Warm 30 g / 2 tbsp of the olive oil in a heavy 4 L pot over medium heat. Add the 150 g sliced onion, the 12 g sliced garlic, and 3 g / ¾ tsp of the kosher salt, and cook, stirring with a wooden spoon, until soft and translucent but not colored, about 7 minutes. Browning would sweeten and darken a soup that should taste clean.'
     time_min: 7
-  - text: 'Simmer the potatoes and chouriço. Add the 700 g sliced potatoes, the 1500 ml water, 6 g / 1½ tsp kosher salt, and the whole 170 g chouriço. Bring to a boil, then simmer partly covered for 20 minutes, until the potatoes break apart when pressed with a spoon. The whole chouriço seasons the broth with its paprika fat and smoke while staying intact enough to slice.'
+  - text: 'Simmer the potatoes and chouriço. Add the 700 g sliced potatoes, the 1500 ml water, 6 g / 2¼ tsp kosher salt, and the whole 170 g chouriço. Bring to a boil, then simmer partly covered for 20 minutes, until the potatoes break apart when pressed with a spoon. The whole chouriço seasons the broth with its paprika fat and smoke while staying intact enough to slice.'
     time_min: 22
   - text: 'Cut the collards while the potatoes cook. Cut the stems out of the 350 g collard greens. Stack about 6 leaves, roll them into a tight cigar, and with your sharpest knife slice across into threads as thin as you can, 1 mm if possible, like fine grass. The thinness is what makes the dish: threads cook in minutes and stay bright green and slightly chewy, while wide ribbons need longer and turn dull.'
     time_min: 10
   - text: 'Slice the chouriço. Lift the 170 g chouriço out of the pot and slice it into 3 mm coins on a board. Set aside.'
     time_min: 3
-  - text: 'Purée the base. Off the heat, purée the potatoes and broth with an immersion blender (or pass through a food mill) with the remaining 15 g / 1 tbsp olive oil until completely smooth. The oil emulsifies into the starch and gives the soup its silky body. Blend in short bursts; blending potatoes for a long time makes them gluey. It should be the consistency of thin cream; add hot water 60 ml / ¼ cup at a time, up to 240 ml / 1 cup, if it is thicker. Taste and add up to the last 3 g / ¾ tsp kosher salt.'
+  - text: 'Purée the base. Off the heat, purée the potatoes and broth with an immersion blender (or pass through a food mill) with the remaining 15 g / 1 tbsp olive oil until completely smooth. The oil emulsifies into the starch and gives the soup its silky body. Blend in short bursts; blending potatoes for a long time makes them gluey. It should be the consistency of thin cream; add hot water 60 ml / ¼ cup at a time, up to 240 ml / 1 cup, if it is thicker. Taste and add up to the last 3 g / 1 tsp kosher salt.'
     time_min: 4
   - text: 'Cook the greens. Bring the soup back to a simmer over medium heat, stir in the 350 g of collard threads, and cook uncovered 4 minutes, until they are tender with a little bite and still vivid green. Keep the lid off: covering traps the acids the leaves release, which turns them olive-drab. Stir in the 1 g / ½ tsp black pepper and about a third of the chouriço coins.'
     time_min: 5

@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; sprinkle on scored squid 5 minutes before frying — no longer)'
+    note: '(1½ tsp Diamond Crystal; sprinkle on scored squid 5 minutes before frying — no longer)'
   - group: 'Phase 1, squid preparation'
     item: 'Shaoxing wine'
     slug: 'shaoxing-wine'
@@ -134,10 +134,10 @@ ingredients:
     note: '(2-3 scallions)'
 
 steps:
-  - text: 'Score and prep the squid. Lay each cleaned tube flat with the inside facing up. Hold a sharp knife at a 30 to 45 degree angle and make shallow parallel cuts across the surface at 5 mm intervals (cutting only halfway through). Rotate 90 degrees and make a second set of perpendicular cuts at 5 mm intervals. Cut the scored sheet into 3 cm × 3 cm squares. Leave the tentacles whole. Pat dry with paper towels, the squid must be dry before dredging or the coating slides off. Sprinkle with 4 g / 1 tsp salt, 5 ml / 1 tsp Shaoxing, and 1 g / ½ tsp white pepper. Toss gently. Set aside 5 minutes (no longer; longer marinade toughens squid).'
+  - text: 'Score and prep the squid. Lay each cleaned tube flat with the inside facing up. Hold a sharp knife at a 30 to 45 degree angle and make shallow parallel cuts across the surface at 5 mm intervals (cutting only halfway through). Rotate 90 degrees and make a second set of perpendicular cuts at 5 mm intervals. Cut the scored sheet into 3 cm × 3 cm squares. Leave the tentacles whole. Pat dry with paper towels, the squid must be dry before dredging or the coating slides off. Sprinkle with 4 g / 1½ tsp salt, 5 ml / 1 tsp Shaoxing, and 1 g / ½ tsp white pepper. Toss gently. Set aside 5 minutes (no longer; longer marinade toughens squid).'
     technique: 'scoring-squid'
     time_min: 8
-  - text: 'Make the salt-pepper finish. Heat a small dry skillet over medium heat. Add 4 g / 2 tsp whole white peppercorns and 1 g / ½ tsp Sichuan peppercorns. Toast 60 to 90 seconds, swirling continuously, until fragrant. Transfer to a mortar; grind to a coarse powder. Combine in a small bowl with 4 g / 1 tsp fine sea salt and 0.5 g / ¼ tsp five-spice (if using). Set aside.'
+  - text: 'Make the salt-pepper finish. Heat a small dry skillet over medium heat. Add 4 g / 2 tsp whole white peppercorns and 1 g / ½ tsp Sichuan peppercorns. Toast 60 to 90 seconds, swirling continuously, until fragrant. Transfer to a mortar; grind to a coarse powder. Combine in a small bowl with 4 g / 1½ tsp fine sea salt and 0.5 g / ¼ tsp five-spice (if using). Set aside.'
     time_min: 3
   - text: 'Heat the frying oil. Pour the 1500 ml / 6 cups neutral oil into a wok or heavy pot. Heat to 175°C / 350°F (use a thermometer; the oil temperature is the variable that determines whether the squid hits the 90-second window cleanly). The oil should shimmer and a wooden chopstick dipped in should produce a steady stream of small bubbles.'
     time_min: 8

@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Chicken and marinade'
     item: 'light soy sauce (for the marinade)'
     slug: 'light-soy-sauce'
@@ -168,7 +168,7 @@ ingredients:
     note: '(3 cups cooked)'
 
 steps:
-  - text: 'Marinate. In a bowl, combine the 450 g diced chicken thigh with the 2 g / ½ tsp kosher salt, the 10 g / 2 tsp light soy sauce, and the 10 g / 2 tsp Shaoxing wine; mix by hand for 30 seconds until the meat feels tacky. Add the 8 g / 1 tbsp potato starch and the 15 ml / 1 tbsp cold water and mix until each piece wears a thin, even coat. This is the seasoning stage for the meat: the salt and soy penetrate the small dice in 15 minutes, and the starch film protects the surface in the hot wok and grabs the sauce later. Rest 15 minutes at room temperature.'
+  - text: 'Marinate. In a bowl, combine the 450 g diced chicken thigh with the 2 g / ¾ tsp kosher salt, the 10 g / 2 tsp light soy sauce, and the 10 g / 2 tsp Shaoxing wine; mix by hand for 30 seconds until the meat feels tacky. Add the 8 g / 1 tbsp potato starch and the 15 ml / 1 tbsp cold water and mix until each piece wears a thin, even coat. This is the seasoning stage for the meat: the salt and soy penetrate the small dice in 15 minutes, and the starch film protects the surface in the hot wok and grabs the sauce later. Rest 15 minutes at room temperature.'
     time_min: 16
   - text: 'Mix the sauce. In a small bowl, stir together the 18 g / 1½ tbsp granulated sugar, the 22 g / 1½ tbsp Chinkiang vinegar, the 7 g / 1¼ tsp light soy sauce, the 7 g / 1¼ tsp dark soy sauce, the 3 g / 1 tsp potato starch, the 30 ml / 2 tbsp chicken stock, and the 5 g / 1 tsp toasted sesame oil until the sugar and starch dissolve. Taste it: it should be sharply sweet-sour and slightly salty. If your vinegar is mild, add up to 5 g / 1 tsp more; the sour should lead.'
     time_min: 2

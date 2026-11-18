@@ -128,7 +128,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; pulls water out of the carrots so the pickle brine penetrates faster)'
+    note: '(¾ tsp Diamond Crystal; pulls water out of the carrots so the pickle brine penetrates faster)'
   - group: 'Phase 2, the quick carrot pickle (30 minutes ahead)'
     item: 'warm water (for the pickle)'
     qty: 60
@@ -222,7 +222,7 @@ steps:
   - text: 'Make the lemongrass marinade and start the chicken. Peel the dry outer layers off the 30 g / 3 stalks of lemongrass, trim away the upper two-thirds (the woody green), and slice the pale lower third paper-thin against the grain. Transfer the slices to a mortar with the 12 g / 3 cloves garlic and pound until reduced to a coarse paste; the fiber should break down enough that no large lemongrass shards remain. (No mortar: use a microplane on the garlic, then chop the thin-sliced lemongrass as fine as you can with a heavy knife.) Scrape the paste into a bowl. Whisk in the 30 g / 1 medium minced shallot, the 30 g / 2 tbsp fish sauce, the 20 g / 1½ tbsp palm sugar, the 10 g / 2 tsp light soy sauce, the 2 g / 1 tsp cracked black pepper, the 5 g / 1 tsp toasted sesame oil, and the 10 g / 2 tsp lime juice. Stir until the sugar dissolves. Add the 600 g chicken tenderloins, massage briefly so every piece is coated, and refrigerate 30 to 120 minutes. Past 2 hours the fish sauce starts to break down the surface texture; do not exceed 4 hours.'
     technique: 'mortar-pounding'
     time_min: 12
-  - text: 'Quick-pickle the carrot. In a small bowl, dissolve the 20 g / 1½ tbsp granulated sugar and the 2 g / ½ tsp kosher salt in the 60 g / ¼ cup warm water, then stir in the 60 g / ¼ cup rice vinegar. Tip the 200 g / 2 medium julienned carrots into the brine, press them gently below the liquid (a small plate weighed down with a glass works), and let stand at room temperature 30 to 90 minutes. The pickle is correct when the carrots have just lost their raw crunch and read translucent at the edges, still firm and bright orange at the center. Drain and reserve in the brine in the refrigerator until plating.'
+  - text: 'Quick-pickle the carrot. In a small bowl, dissolve the 20 g / 1½ tbsp granulated sugar and the 2 g / ¾ tsp kosher salt in the 60 g / ¼ cup warm water, then stir in the 60 g / ¼ cup rice vinegar. Tip the 200 g / 2 medium julienned carrots into the brine, press them gently below the liquid (a small plate weighed down with a glass works), and let stand at room temperature 30 to 90 minutes. The pickle is correct when the carrots have just lost their raw crunch and read translucent at the edges, still firm and bright orange at the center. Drain and reserve in the brine in the refrigerator until plating.'
     time_min: 3
   - text: 'Make or assemble the nuoc cham. Follow the recipe at recipes/nuoc-cham (about 5 minutes, no cook): whisk 60 g / ¼ cup fish sauce with 60 g / ¼ cup fresh lime juice, 60 g / 5 tbsp granulated sugar, and 120 g / ½ cup warm water until the sugar dissolves, then stir in 8 g / 2 cloves minced garlic and 4 g / 1 finely chopped Thai or bird-eye chili. Let stand 10 minutes for the raw aromatics to integrate. Transfer to a small pitcher or 4 individual bowls. This is the table sauce; do not toss it through the bowl, each diner spoons it over their own bowl.'
     time_min: 8

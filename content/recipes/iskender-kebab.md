@@ -75,7 +75,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, the meat marinade (4 to 12 hours ahead)'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -147,7 +147,7 @@ ingredients:
     note: '(1¼ cups; the cold counterpoint, served in a small bowl on the side)'
 
 steps:
-  - text: 'Marinate the meat (4 to 12 hours ahead): in a bowl, combine the 600 g sliced lamb, 100 g / scant ½ cup yogurt, 50 g onion juice, 30 g / 2 tbsp olive oil, 3 g / 1½ tsp cumin, 3 g / 1½ tsp pul biber, 8 g / 2 tsp kosher salt, and 2 g / 1 tsp black pepper. Turn to coat every slice. Cover and refrigerate 4 to 12 hours.'
+  - text: 'Marinate the meat (4 to 12 hours ahead): in a bowl, combine the 600 g sliced lamb, 100 g / scant ½ cup yogurt, 50 g onion juice, 30 g / 2 tbsp olive oil, 3 g / 1½ tsp cumin, 3 g / 1½ tsp pul biber, 8 g / 2¾ tsp kosher salt, and 2 g / 1 tsp black pepper. Turn to coat every slice. Cover and refrigerate 4 to 12 hours.'
     time_min: 8
   - text: 'Make the tomato sauce: melt the 30 g / 2 tbsp butter in a small saucepan over medium heat. Add the 30 g / 2 tbsp tomato paste; cook 90 seconds, stirring, until the paste deepens in color from bright red to brick-red and smells caramelized. Add the 200 g / ¾ cup crushed tomatoes, 250 g / 1 cup broth, 3 g / ½ tsp salt, and 2 g / ½ tsp sugar. Bring to a simmer; cook 8 to 10 minutes until slightly thickened (the sauce should be loose enough to ladle and pool but not watery; coats the back of a spoon and pours in a steady stream). Adjust salt. Keep warm.'
     time_min: 12

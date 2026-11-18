@@ -142,7 +142,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp; to soften the onion)'
+    note: '(¾ tsp; to soften the onion)'
 
   - group: 'Phase 5, to serve'
     item: 'lavash or pita'
@@ -171,7 +171,7 @@ steps:
     time_min: 10
   - text: 'Rest the meat. Slide the grilled lamb skewers onto a platter and rest 5 minutes, loosely tented. Resting lets the muscle fibers reabsorb the juices driven to the center by the heat; cutting or serving immediately spills them onto the plate instead of keeping them in the cube.'
     time_min: 5
-  - text: 'Make the sumac onion salad while the meat rests. Put the 150 g thinly sliced red onion in a bowl with the 2 g / ½ tsp kosher salt and scrunch it with your fingers for 20 seconds to soften and take the raw bite off. Add the 5 g / 1 tbsp sumac and 15 g chopped parsley and toss. The salad should look stained red-purple and smell tart.'
+  - text: 'Make the sumac onion salad while the meat rests. Put the 150 g thinly sliced red onion in a bowl with the 2 g / ¾ tsp kosher salt and scrunch it with your fingers for 20 seconds to soften and take the raw bite off. Add the 5 g / 1 tbsp sumac and 15 g chopped parsley and toss. The salad should look stained red-purple and smell tart.'
     time_min: 4
   - text: 'Warm the bread and assemble. Warm the 4 lavash or pita at the cooler edge of the fire for 20 to 30 seconds per side until pliable and spotted. Lay a flatbread on each plate, slide the lamb off the skewer onto the bread so the rendered juices soak in, and pile the grilled onion, pepper, and tomato alongside. Top with the sumac onions and serve with the lemon wedges to squeeze over. Eat by wrapping meat, salad, and a char of pepper in a torn piece of the juice-soaked bread.'
     time_min: 3

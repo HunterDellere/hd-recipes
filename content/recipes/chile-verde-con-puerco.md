@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 16
     unit: 'g'
-    note: '(1½ tbsp plus ½ tsp Diamond Crystal; 1% of the pork)'
+    note: '(2 tbsp plus ½ tsp Diamond Crystal; 1% of the pork)'
 
   - group: 'Phase 2, broiled salsa'
     item: 'tomatillos'

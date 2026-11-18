@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; rubbed over both faces and into the slash of each segment)'
+    note: '(1¾ tsp Diamond Crystal; rubbed over both faces and into the slash of each segment)'
 
   - group: 'Phase 2, dredge and fry'
     item: 'all-purpose flour'
@@ -120,7 +120,7 @@ ingredients:
 steps:
   - text: 'Prep the fish. The counter should have gutted the ribbon, trimmed the dorsal fin, and cross-cut it into 7 to 8 cm segments; verify and rinse each of the 450 g / about 1 fish worth of segments inside and out under cold water, scraping any dark matter from the spine cavity. Score one shallow slash into the thickest face of each segment so the salt and heat reach the spine and the flesh has somewhere to release tension instead of curling. Pat every segment completely dry, inside the cut and out.'
     time_min: 6
-  - text: 'Salt-cure. Rub the 5 g / 1¼ tsp kosher salt evenly over both faces of all the segments, working it into the slashes. Rest the salted segments on a rack, uncovered, for 15 to 20 minutes. On hairtail the cure does double duty: it firms the delicate, low-collagen flesh through surface protein denaturation so the segments hold together through the flip, and it draws cell water into beads on the surface that you will blot away for a crisp skin. Meanwhile, with the rice already started, build the dip.'
+  - text: 'Salt-cure. Rub the 5 g / 1¾ tsp kosher salt evenly over both faces of all the segments, working it into the slashes. Rest the salted segments on a rack, uncovered, for 15 to 20 minutes. On hairtail the cure does double duty: it firms the delicate, low-collagen flesh through surface protein denaturation so the segments hold together through the flip, and it draws cell water into beads on the surface that you will blot away for a crisp skin. Meanwhile, with the rice already started, build the dip.'
     time_min: 18
   - text: 'Mix the cho-ganjang dip. In a small bowl whisk the 30 g / 2 tbsp light soy sauce, the 15 g / 1 tbsp rice vinegar, and the 15 g / 1 tbsp water, then stir in the 15 g / 1 stalk minced scallion, the 4 g / 1 tsp toasted sesame oil, and the 2 g / 1 tsp crushed sesame seeds. The soy is the glutamate anchor and the rice vinegar is the finishing acid; taste and adjust so the dip reads bright and salty against the mild fish. Set aside.'
     time_min: 3

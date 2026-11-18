@@ -64,7 +64,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; the salt is half of the cure, drawing surface water and seasoning the flesh as it firms)'
+    note: '(2¾ tsp Diamond Crystal; the salt is half of the cure, drawing surface water and seasoning the flesh as it firms)'
 
   - group: 'Phase 2, the fry'
     item: 'neutral oil (canola, rice bran, or peanut)'
@@ -124,7 +124,7 @@ ingredients:
 steps:
   - text: 'Open the 600 g butterflied milkfish flat, skin-side-down, in a shallow dish or zip-top bag large enough to hold it without folding. Run your fingers across the flesh to check for any stray bones the deboner missed; pull them with tweezers. Score the thicker shoulder of the flesh with two shallow slashes so the cure penetrates evenly.'
     time_min: 5
-  - text: 'Build the cure directly on and around the fish. Scatter the 8 g / 2 tsp kosher salt evenly over the flesh side, then the 30 g / 8 cloves crushed garlic and the 6 g / 2 tsp cracked black peppercorns. Pour the 120 g / ½ cup cane vinegar over and around the fish so the flesh side sits in the marinade. The salt and acid together are the cure: salt draws surface water and seasons; the cane vinegar denatures the surface proteins, firming the dense flesh and brightening the mild meat while tempering the oily belly.'
+  - text: 'Build the cure directly on and around the fish. Scatter the 8 g / 2¾ tsp kosher salt evenly over the flesh side, then the 30 g / 8 cloves crushed garlic and the 6 g / 2 tsp cracked black peppercorns. Pour the 120 g / ½ cup cane vinegar over and around the fish so the flesh side sits in the marinade. The salt and acid together are the cure: salt draws surface water and seasons; the cane vinegar denatures the surface proteins, firming the dense flesh and brightening the mild meat while tempering the oily belly.'
     time_min: 5
   - text: 'Cover and refrigerate at least 3 hours, ideally overnight. The fish should sit flesh-side-down so the cut surface stays in contact with the 120 g / ½ cup cane vinegar marinade. Flip once at the halfway point if the fish is not fully submerged. Do not exceed about 12 hours: past that, the acid over-firms the surface into a tough, chalky cure rather than the brightened, just-firmed texture you want.'
     time_min: 180
@@ -169,7 +169,7 @@ substitutions:
     note: 'Apple cider vinegar is the most available substitute, slightly sharper and more fruit-forward; the cured fish reads a touch tarter. Coconut vinegar is the more traditional alternative and funkier. Avoid distilled white vinegar in the raw dip, where it reads harsh and metallic.'
   - for: 'kosher salt'
     use: 'fine sea salt'
-    note: 'Use about 6 g / 1 tsp fine sea salt in place of the 8 g / 2 tsp Diamond Crystal kosher salt; fine sea salt is denser per spoon, so it weighs more per unit volume. The cure works identically.'
+    note: 'Use about 6 g / 1 tsp fine sea salt in place of the 8 g / 2¾ tsp Diamond Crystal kosher salt; fine sea salt is denser per spoon, so it weighs more per unit volume. The cure works identically.'
 
 homemade_exempt: ['deboned, butterflied milkfish (bangus)', 'cane vinegar', 'neutral oil (canola, rice bran, or peanut)', 'eggs', 'steamed jasmine rice (ideally day-old, for garlic fried rice)']
 

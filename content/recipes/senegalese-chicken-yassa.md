@@ -93,7 +93,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Phase 2, browning and the onion braise'
     item: 'dijon mustard (for the sauce)'
     slug: 'dijon-mustard'
@@ -163,7 +163,7 @@ steps:
   - text: 'Brown the chicken. Heat the 30 g / 2 tbsp oil in a 5 to 6 litre Dutch oven over medium heat until it shimmers. Lay the thighs in skin side down, in two batches if they crowd, and cook without moving them for 8 to 10 minutes, until the skin is deep brown and much of the fat has rendered. Flip and brown the second side for 2 minutes. Transfer to a plate. Pour off all but about 45 g / 3 tbsp of the fat.'
     technique: 'maillard-sear'
     time_min: 20
-  - text: 'Cook down the onions. Add the drained onions and the 2 g / ½ tsp kosher salt to the pot, scraping up the brown chicken fond as they release their water. Cover and cook over medium heat for 10 minutes, stirring twice, until collapsed. Uncover and cook another 20 to 25 minutes, stirring every few minutes with a wooden spoon, until the onions are soft, jammy, and golden with browned edges. This is slower than browning plain onions: the lemon acid lowers their pH, which slows the Maillard reactions, so give them the time rather than more heat, which scorches the edges while the centers stay raw.'
+  - text: 'Cook down the onions. Add the drained onions and the 2 g / ¾ tsp kosher salt to the pot, scraping up the brown chicken fond as they release their water. Cover and cook over medium heat for 10 minutes, stirring twice, until collapsed. Uncover and cook another 20 to 25 minutes, stirring every few minutes with a wooden spoon, until the onions are soft, jammy, and golden with browned edges. This is slower than browning plain onions: the lemon acid lowers their pH, which slows the Maillard reactions, so give them the time rather than more heat, which scorches the edges while the centers stay raw.'
     time_min: 33
   - text: 'Build the sauce. Pour in the reserved marinade liquid (about 200 g / ¾ cup), the 15 g / 1 tbsp dijon mustard, the 10 g crumbled bouillon cube, the 240 g / 1 cup water, and the 0.5 g / 2 bay leaves. Stir, scraping the bottom, and bring to a boil for 1 minute; the liquid held raw chicken, and the boil makes it safe. Taste: it should be sharp, savory, and onion-sweet.'
     technique: 'deglazing'

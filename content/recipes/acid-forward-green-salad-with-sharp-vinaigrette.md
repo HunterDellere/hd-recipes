@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; dissolved into the vinegar with the shallot)'
+    note: '(¾ tsp Diamond Crystal; dissolved into the vinegar with the shallot)'
   - group: 'Phase 1, the sharp vinaigrette'
     item: 'dijon mustard'
     slug: 'dijon-mustard'
@@ -85,7 +85,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Macerate the shallot. In the bottom of a large salad bowl, stir together the 25 g / 1 small shallot fine-minced, the 30 g / 2 tbsp red wine vinegar, and the 2 g / ½ tsp kosher salt. Let it sit 10 minutes. The acid and salt soften the shallot raw bite and pull its flavor into the vinegar, which then seasons the whole dressing.'
+  - text: 'Macerate the shallot. In the bottom of a large salad bowl, stir together the 25 g / 1 small shallot fine-minced, the 30 g / 2 tbsp red wine vinegar, and the 2 g / ¾ tsp kosher salt. Let it sit 10 minutes. The acid and salt soften the shallot raw bite and pull its flavor into the vinegar, which then seasons the whole dressing.'
     time_min: 10
   - text: 'Build the vinaigrette in the bowl. Whisk the 8 g / 1 tsp dijon mustard into the macerated shallot-vinegar until smooth. Then add the 60 g / ¼ cup olive oil in a thin steady stream while whisking constantly, so the oil breaks into droplets suspended in the acid and the dressing thickens to a cohesive, slightly creamy emulsion that coats the back of a spoon. Whisk in the 1 g / ½ tsp black pepper. The 2:1 oil-to-acid ratio reads sharper than a standard vinaigrette on purpose; taste it, it should make you wince slightly on its own, because it will be tamed by the leaves.'
     technique: 'vinaigrette-emulsion'

@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; ~0.9% of the steaks by weight, the canonical dry-brine ratio)'
+    note: '(1½ tsp Diamond Crystal; ~0.9% of the steaks by weight, the canonical dry-brine ratio)'
 
   - group: 'Phase 2, sear and butter-baste'
     item: 'black pepper, freshly cracked'
@@ -135,7 +135,7 @@ ingredients:
     note: '(½ tsp; for the table; finishing salt at this scale is functional, not a garnish)'
 
 steps:
-  - text: 'The night before. Pat both 225 g steaks dry on both sides with paper towels. Lay them on a wire rack set over a small sheet pan. Sprinkle 4 g / 1 tsp Diamond Crystal kosher salt evenly across both sides of both steaks; that is roughly 0.9% of the total steak weight, the canonical dry-brine ratio. The salt will draw beads of surface moisture in the first hour (visible as fine droplets on the meat), then re-absorb over the next 6 to 8 hours as the salinity gradient flips and the brine carries the salt back into the meat. Place the rack-and-pan setup uncovered in the refrigerator for 12 to 24 hours. Uncovered is the operative word; the cold dry fridge air pulls additional surface moisture and forms a tacky pellicle on the meat that sears dramatically faster than wet meat. By the morning the steak surface should look slightly matte-tacky and the flesh should feel firmer than raw.'
+  - text: 'The night before. Pat both 225 g steaks dry on both sides with paper towels. Lay them on a wire rack set over a small sheet pan. Sprinkle 4 g / 1½ tsp Diamond Crystal kosher salt evenly across both sides of both steaks; that is roughly 0.9% of the total steak weight, the canonical dry-brine ratio. The salt will draw beads of surface moisture in the first hour (visible as fine droplets on the meat), then re-absorb over the next 6 to 8 hours as the salinity gradient flips and the brine carries the salt back into the meat. Place the rack-and-pan setup uncovered in the refrigerator for 12 to 24 hours. Uncovered is the operative word; the cold dry fridge air pulls additional surface moisture and forms a tacky pellicle on the meat that sears dramatically faster than wet meat. By the morning the steak surface should look slightly matte-tacky and the flesh should feel firmer than raw.'
     technique: 'dry-brining'
     time_min: 720
   - text: 'One hour before cooking. Pull the steaks out of the refrigerator and let them temper at room temperature for 45 to 60 minutes, still on the rack. A cold-from-the-fridge steak takes 60 to 90 seconds longer per side to reach interior temperature, which gives the surface time to overshoot into a charred-black rather than mahogany crust. Room-temperature meat (around 18 to 21 °C surface, the center still cool) gives the cleanest crust-to-interior gradient. While the steaks temper, do every cut for the pan sauce, the 50 g / 2 shallots fine-minced, the 12 g / 3 garlic cloves side-smashed with skins on, the 4 g / 4 thyme sprigs and the 1 g / ½ tsp stripped thyme leaves separated, the 30 g of cold cubed butter for basting and the 30 g of cold cubed butter for mounting in two small bowls in the refrigerator. All prep needs to be complete before the pan goes on the heat, the sear is 4 minutes total and there is no time to chop mid-cook.'
@@ -183,7 +183,7 @@ modifications:
     kind: 'regional'
   - for: 'compound butter finish (no pan sauce)'
     to: 'maître d''hôtel butter'
-    how: 'Skip phases 3 to 4 entirely. Mash together 60 g / 4 tbsp room-temperature unsalted butter, 4 g / 1 tbsp chopped fresh parsley, 4 g / 1 tsp minced shallot, 8 g / 1 tsp lemon juice, 2 g / ½ tsp kosher salt, and a few twists of black pepper. Roll into a log in parchment paper and refrigerate 30 minutes to firm. Slice 1 cm coins of the cold butter and lay one directly onto each rested steak so it melts over the surface as you carry it to the table. Faster, lower-effort, and the better choice on a true weeknight when the pan sauce''s 6 minutes is too much.'
+    how: 'Skip phases 3 to 4 entirely. Mash together 60 g / 4 tbsp room-temperature unsalted butter, 4 g / 1 tbsp chopped fresh parsley, 4 g / 1 tsp minced shallot, 8 g / 1 tsp lemon juice, 2 g / ¾ tsp kosher salt, and a few twists of black pepper. Roll into a log in parchment paper and refrigerate 30 minutes to firm. Slice 1 cm coins of the cold butter and lay one directly onto each rested steak so it melts over the surface as you carry it to the table. Faster, lower-effort, and the better choice on a true weeknight when the pan sauce''s 6 minutes is too much.'
     kind: 'occasion'
 
 substitutions:

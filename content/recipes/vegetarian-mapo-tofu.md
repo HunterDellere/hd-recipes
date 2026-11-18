@@ -88,7 +88,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 4, aromatic base'
     item: 'neutral oil'
@@ -173,7 +173,7 @@ steps:
   - text: 'Brown the mushroom duxelles. Heat a wok over high heat until lightly smoking. Add 30 ml / 2 tbsp neutral oil, the 250 g fresh shiitake dice, and the 50 g rehydrated chopped shiitake. Stir-fry continuously for 6 to 8 minutes; the mushrooms will release water in the first 2 to 3 minutes (do not drain, let it cook off). Once the water has evaporated, the mushrooms will begin to brown and crisp at the edges. Continue cooking until the granules are deeply browned, dry, and fragrant, they should look like ground meat that has been browned aggressively. Add 10 ml / 2 tsp Shaoxing and 5 ml / 1 tsp light soy. Toss 30 seconds. Transfer to a plate. The mushroom duxelles is the structural protein-substitute of the dish; under-browning produces a watery, flat result.'
     technique: 'maillard-sear'
     time_min: 8
-  - text: 'Blanch the tofu. While the mushrooms brown (or after, in parallel), bring 1500 ml / 6 cups water to a bare simmer (80°C / 175°F) with the 8 g / 2 tsp salt. Cut the 500 g silken tofu into 2 cm cubes. Slide into the salted water with a wide spatula, hold 2 minutes (do not boil), drain through a colander. Set aside.'
+  - text: 'Blanch the tofu. While the mushrooms brown (or after, in parallel), bring 1500 ml / 6 cups water to a bare simmer (80°C / 175°F) with the 8 g / 2¾ tsp salt. Cut the 500 g silken tofu into 2 cm cubes. Slide into the salted water with a wide spatula, hold 2 minutes (do not boil), drain through a colander. Set aside.'
     time_min: 4
   - text: 'Render the aromatic base. Wipe the wok and return to medium heat. Add 45 ml / 3 tbsp neutral oil. When shimmering (140 to 160°C / 285 to 320°F), add 35 g doubanjiang. Break up and stir-fry 90 seconds until the oil turns brilliant brick-red. Add 6 g crushed douchi, 12 g minced ginger, 16 g minced garlic. Stir-fry 45 seconds.'
     technique: 'red-oil-rendering'

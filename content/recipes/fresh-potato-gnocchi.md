@@ -37,7 +37,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
 
   - group: 'Phase 2, the binding'
     item: 'large egg yolk (the minimum-binding choice)'
@@ -63,7 +63,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 25
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal in 4 L water)'
+    note: '(3 tbsp Diamond Crystal in 4 L water)'
   - group: 'Phase 3, the cook'
     item: 'water'
     qty: 4000

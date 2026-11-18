@@ -51,7 +51,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; ~1% of trimmed weight)'
+    note: '(2¼ tsp Diamond Crystal; ~1% of trimmed weight)'
   - group: 'Phase 1, the cauliflower'
     item: 'ground cumin'
     slug: 'ground-cumin'
@@ -93,7 +93,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
 
   - group: 'Phase 3, the red cabbage slaw'
     item: 'red cabbage, finely shredded'
@@ -112,7 +112,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Phase 3, the red cabbage slaw'
     item: 'extra-virgin olive oil (for the slaw)'
     slug: 'extra-virgin-olive-oil'
@@ -167,16 +167,16 @@ ingredients:
 steps:
   - text: 'Heat the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs 15 minutes preheat. While the oven heats, drain the 300 g chickpeas and pat them bone-dry. Spread on a kitchen towel, top with a second, press gently to absorb every drop of surface moisture.'
     time_min: 15
-  - text: 'Prep the cauliflower. Cut the 600 g cauliflower into 2 to 3 cm florets. In a wide bowl, toss with the 25 g / 2 tbsp olive oil, the 6 g / 1½ tsp kosher salt, and the 2 g / 1 tsp ground cumin. Every floret should glisten.'
+  - text: 'Prep the cauliflower. Cut the 600 g cauliflower into 2 to 3 cm florets. In a wide bowl, toss with the 25 g / 2 tbsp olive oil, the 6 g / 2¼ tsp kosher salt, and the 2 g / 1 tsp ground cumin. Every floret should glisten.'
     time_min: 4
-  - text: 'Prep the chickpeas. In a separate bowl, toss the dry chickpeas with the 15 g / 1 tbsp olive oil, the 2 g / 1 tsp cumin, the 2 g / 1 tsp coriander, the 2 g / 1 tsp smoked paprika, and the 3 g / ¾ tsp kosher salt.'
+  - text: 'Prep the chickpeas. In a separate bowl, toss the dry chickpeas with the 15 g / 1 tbsp olive oil, the 2 g / 1 tsp cumin, the 2 g / 1 tsp coriander, the 2 g / 1 tsp smoked paprika, and the 3 g / 1 tsp kosher salt.'
     time_min: 3
   - text: 'Pull the preheated sheet pan from the oven. Tip the cauliflower onto one half of the pan and the chickpeas onto the other, both in single layers with space between pieces. The pan should sizzle audibly. Roast 22 to 25 minutes without disturbing for the first 15 minutes, then toss each side separately and finish for 8 to 10 minutes more. The cauliflower should show deep mahogany on the cut faces, the chickpeas should rattle when shaken on the pan.'
     technique: 'high-heat-dry-roasting'
     time_min: 25
-  - text: 'While the vegetables roast, massage the cabbage slaw. In a wide bowl, combine the 250 g shredded red cabbage with the 20 g / 1½ tbsp lemon juice and the 2 g / ½ tsp kosher salt. Massage with your hands for 90 seconds; the cabbage begins to release water, soften, and turn brighter pink. Let sit 5 to 10 minutes. Just before assembly, toss in the 8 g / 2 tsp olive oil and the 15 g chopped parsley.'
+  - text: 'While the vegetables roast, massage the cabbage slaw. In a wide bowl, combine the 250 g shredded red cabbage with the 20 g / 1½ tbsp lemon juice and the 2 g / ¾ tsp kosher salt. Massage with your hands for 90 seconds; the cabbage begins to release water, soften, and turn brighter pink. Let sit 5 to 10 minutes. Just before assembly, toss in the 8 g / 2 tsp olive oil and the 15 g chopped parsley.'
     time_min: 10
-  - text: 'Build the tahini sauce. In a small bowl, whisk together the 80 g / ⅓ cup tahini, the 30 g / 2 tbsp lemon juice, the 4 g / 1 clove microplaned garlic, and the 2 g / ½ tsp fine sea salt. The tahini will seize into a tight paste; this is expected. Stream in the 45 g / 3 tbsp ice water in 1 tbsp additions, whisking between each, until the sauce loosens to a thick but pourable consistency that ribbons off the whisk.'
+  - text: 'Build the tahini sauce. In a small bowl, whisk together the 80 g / ⅓ cup tahini, the 30 g / 2 tbsp lemon juice, the 4 g / 1 clove microplaned garlic, and the 2 g / ¾ tsp fine sea salt. The tahini will seize into a tight paste; this is expected. Stream in the 45 g / 3 tbsp ice water in 1 tbsp additions, whisking between each, until the sauce loosens to a thick but pourable consistency that ribbons off the whisk.'
     technique: 'tahini-emulsion'
     time_min: 2
   - text: 'Warm the pitas. Heat a dry skillet (cast iron or stainless) over medium heat. Warm each of the 4 pitas for 30 seconds per side, just until pliable and slightly steamed. Stack and cover with a damp clean kitchen towel to keep warm; cold pita tears when folded.'

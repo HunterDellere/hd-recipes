@@ -53,7 +53,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal)'
+    note: '(1½ tbsp Diamond Crystal)'
   - group: 'Phase 1, the broth base'
     item: 'bay leaf'
     slug: 'bay-leaf'

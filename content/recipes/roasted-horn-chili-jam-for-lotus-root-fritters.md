@@ -105,7 +105,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for final adjustment only, the fish sauce carries most of the salt)'
+    note: '(¾ tsp Diamond Crystal; for final adjustment only, the fish sauce carries most of the salt)'
 
 steps:
   - text: 'Char the chilies. Lay the 200 g red horn chilies and the 10 g Thai bird''s eye chilies directly over a high gas flame (or on a sheet under a broiler set to high). Turn them with tongs every 30 to 45 seconds until the skins blister and blacken in patches across the whole surface, 4 to 6 minutes total. You want the skin charred and the flesh underneath collapsed and soft, not the flesh burned through. The char is the entire reason this jam reads smoky; a raw blend would taste green and harsh by comparison.'
@@ -121,7 +121,7 @@ steps:
     time_min: 3
   - text: 'Build the sweet-salt-sour reduction. Add the 50 g shaved palm sugar and stir until it melts and coats everything, about 1 minute. Pour in the 30 g / 2 tbsp fish sauce, the strained 100 ml tamarind liquid, and the 60 ml / ¼ cup water. Bring to a simmer and reduce over medium-low, stirring often so the sugar does not catch, until the jam thickens to a sticky, spoon-coating consistency and the oil begins to pool and separate at the edges, 12 to 16 minutes. The separation is the doneness cue: it means the water has cooked off and the jam has reached jam, not sauce. Taste here and read the three axes, it should hit sweet, salty, and sour in sequence with the heat behind them.'
     time_min: 15
-  - text: 'Finish off heat and adjust. Pull the pan from the heat and stir in the 10 g / 2 tsp fresh lime juice; adding it off heat preserves its bright top-note volatiles, which boil off if cooked. Taste a cooled spoonful (hot jam reads sweeter than cooled jam). Adjust with up to 2 g / ½ tsp kosher salt if it needs grounding, a few more drops of lime if it reads flat, or a pinch more palm sugar if the heat or salt is dominant. The target is a jam where no single flavor wins; sweet, salt, sour, and smoke arrive in balance with the chili heat threaded through. Cool to room temperature before serving or jarring.'
+  - text: 'Finish off heat and adjust. Pull the pan from the heat and stir in the 10 g / 2 tsp fresh lime juice; adding it off heat preserves its bright top-note volatiles, which boil off if cooked. Taste a cooled spoonful (hot jam reads sweeter than cooled jam). Adjust with up to 2 g / ¾ tsp kosher salt if it needs grounding, a few more drops of lime if it reads flat, or a pinch more palm sugar if the heat or salt is dominant. The target is a jam where no single flavor wins; sweet, salt, sour, and smoke arrive in balance with the chili heat threaded through. Cool to room temperature before serving or jarring.'
     time_min: 3
 
 techniques: ['high-heat-dry-roasting', 'tamarind-souring', 'blooming-aromatics']

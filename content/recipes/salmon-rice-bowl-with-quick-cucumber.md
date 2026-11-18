@@ -75,7 +75,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; salts the cucumber and draws out water as it pickles)'
+    note: '(1½ tsp Diamond Crystal; salts the cucumber and draws out water as it pickles)'
   - group: 'Phase 2, the cucumber pickle (start second, 15 minutes brine)'
     item: 'toasted sesame seeds'
     slug: 'sesame-seeds'
@@ -100,7 +100,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
 
   - group: 'Phase 4, the soft-boiled eggs'
     item: 'large eggs, cold from the refrigerator'
@@ -145,9 +145,9 @@ steps:
     time_min: 30
   - text: 'Heat the oven to 220 °C / 425 °F with the rack in the upper third while the rice cooks. Line a small sheet pan with parchment paper.'
     time_min: 1
-  - text: 'Make the cucumber pickle. Slice the 300 g cucumber into 2 mm rounds. In a non-reactive bowl (glass or ceramic), combine the cucumber, the 30 g / 2 tbsp rice vinegar, the 8 g / 2 tsp granulated sugar, the 4 g / 1 tsp kosher salt, and the 3 g / 1 tsp toasted sesame seeds. Toss to combine. Let pickle 15 to 20 minutes at room temperature, tossing once at the halfway point. The cucumber releases water as it pickles, the brine dilutes slightly, and the slices become slightly translucent at the edges.'
+  - text: 'Make the cucumber pickle. Slice the 300 g cucumber into 2 mm rounds. In a non-reactive bowl (glass or ceramic), combine the cucumber, the 30 g / 2 tbsp rice vinegar, the 8 g / 2 tsp granulated sugar, the 4 g / 1½ tsp kosher salt, and the 3 g / 1 tsp toasted sesame seeds. Toss to combine. Let pickle 15 to 20 minutes at room temperature, tossing once at the halfway point. The cucumber releases water as it pickles, the brine dilutes slightly, and the slices become slightly translucent at the edges.'
     time_min: 15
-  - text: 'Roast the salmon. Pat the 600 g salmon fillets thoroughly dry. Place skin-side down on the parchment-lined pan. Brush the tops with the 10 g / 2 tsp neutral oil and season with the 4 g / 1 tsp kosher salt. Roast 10 to 12 minutes at 220 °C / 425 °F until the salmon flakes when prodded gently at the thickest point. Internal temperature should be 49 to 52 °C / 120 to 125 °F for medium-rare; the fish carries to 54 °C / 130 °F off the heat.'
+  - text: 'Roast the salmon. Pat the 600 g salmon fillets thoroughly dry. Place skin-side down on the parchment-lined pan. Brush the tops with the 10 g / 2 tsp neutral oil and season with the 4 g / 1½ tsp kosher salt. Roast 10 to 12 minutes at 220 °C / 425 °F until the salmon flakes when prodded gently at the thickest point. Internal temperature should be 49 to 52 °C / 120 to 125 °F for medium-rare; the fish carries to 54 °C / 130 °F off the heat.'
     time_min: 12
   - text: 'Soft-boil the eggs. While the salmon roasts, bring a small pot of water to a rolling boil. Using a slotted spoon, gently lower the 4 cold eggs (200 g) into the boiling water. Set a timer for exactly 7 minutes. Meanwhile, prepare an ice bath (a bowl of ice and cold water). When the timer ends, immediately transfer the eggs to the ice bath and let cool 3 minutes. Peel the eggs under running cold water (the membrane releases easier under water) and halve lengthwise; the yolks should be jammy and just set.'
     time_min: 10

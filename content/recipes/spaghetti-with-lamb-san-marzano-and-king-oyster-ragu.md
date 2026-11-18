@@ -130,7 +130,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 35
     unit: 'g'
-    note: '(3 tbsp Diamond Crystal)'
+    note: '(4¼ tbsp Diamond Crystal)'
   - group: 'Pasta water'
     item: 'water'
     qty: 3000
@@ -181,7 +181,7 @@ ingredients:
     note: '(½ tsp, to finish)'
 
 steps:
-  - text: 'Set the 3000 ml / 12 cups water to boil in a 6-quart pot with the 35 g / 3 tbsp kosher salt. Taste it once boiling: it must read aggressively saline, like the sea. This water seasons the pasta from the inside, and under-salted pasta water cannot be corrected later in the pan.'
+  - text: 'Set the 3000 ml / 12 cups water to boil in a 6-quart pot with the 35 g / 4¼ tbsp kosher salt. Taste it once boiling: it must read aggressively saline, like the sea. This water seasons the pasta from the inside, and under-salted pasta water cannot be corrected later in the pan.'
     time_min: 8
   - text: 'While the water heats, prep everything. Cut the 300 g / 10 oz king oyster mushrooms two ways: slice the fat lower stems crosswise into 1.5 cm coins and score a shallow crosshatch into each cut face, then tear the caps and thinner stems lengthwise into strands. Dice the 170 g / 1 onion small (~3 mm), mince the 18 g / 5 cloves garlic and the 2 g / 1 tbsp rosemary fine, mince the 8 g / 2 anchovy fillets to a paste, crush the 400 g / one can San Marzano tomatoes by hand into rough 1 cm shreds with their juices, grate the 60 g / ¾ cup pecorino, cube the 30 g / 2 tbsp butter cold, and zest the lemon.'
     time_min: 10

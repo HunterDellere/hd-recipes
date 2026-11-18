@@ -60,7 +60,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 2, simmer'
     item: 'white onion'
     slug: 'white-onion'
@@ -98,7 +98,7 @@ steps:
     time_min: 480
   - text: 'Drain and rinse. Drain the beans, discard the soaking water, and rinse well. The soaking water carries some of the oligosaccharides that cause gas, along with excess salt.'
     time_min: 3
-  - text: 'Bring to a boil. Put the beans in a heavy 5 L pot with the 2500 ml / 10 cups cold cooking water, the 6 g / 1½ tsp kosher salt for cooking, the 200 g halved onion, the 12 g / 3 smashed garlic cloves, the 2 bay leaves, and the 5 g kombu. Bring to a boil over high heat, boil 5 minutes, and skim off the gray foam.'
+  - text: 'Bring to a boil. Put the beans in a heavy 5 L pot with the 2500 ml / 10 cups cold cooking water, the 6 g / 2¼ tsp kosher salt for cooking, the 200 g halved onion, the 12 g / 3 smashed garlic cloves, the 2 bay leaves, and the 5 g kombu. Bring to a boil over high heat, boil 5 minutes, and skim off the gray foam.'
     time_min: 15
   - text: 'Simmer gently. Lower the heat until only a few small bubbles break the surface, partly cover with the lid ajar, and cook 60 to 90 minutes, stirring gently every 20 minutes and topping up with hot water so the beans stay covered by at least 2 cm. Keep it gentle: a hard boil tumbles the beans and splits their skins. Old beans can take up to 2 hours.'
     time_min: 75

@@ -23,8 +23,8 @@ course: 'dinner'
 diet: ['dairy-free']
 
 before_you_start:
-  - 'Optional but recommended brine: dissolve 30 g / 2 tbsp kosher salt in 1 L / 4 cups cold water and soak the thighs 30 to 45 minutes, then pat fully dry. Doubanjiang is intensely salty, so if you brine, add no further salt and taste before adjusting at the end.'
-  - 'Salt the eggplant 20 minutes ahead: toss the chunks with 6 g / 1 tsp kosher salt and rest in a colander, then blot dry. This collapses the spongy cell structure so the eggplant absorbs less oil and braises silky instead of greasy. Start this before you sear the chicken.'
+  - 'Optional but recommended brine: dissolve 30 g / 3½ tbsp kosher salt in 1 L / 4 cups cold water and soak the thighs 30 to 45 minutes, then pat fully dry. Doubanjiang is intensely salty, so if you brine, add no further salt and taste before adjusting at the end.'
+  - 'Salt the eggplant 20 minutes ahead: toss the chunks with 6 g / 2¼ tsp kosher salt and rest in a colander, then blot dry. This collapses the spongy cell structure so the eggplant absorbs less oil and braises silky instead of greasy. Start this before you sear the chicken.'
   - 'Toast and grind the Sichuan peppercorns just before cooking; their numbing aromatics (hydroxy-alpha-sanshool) fade fast once ground. Toast whole in a dry pan 60 seconds until fragrant, cool, then grind.'
   - 'Steam jasmine rice to finish alongside the braise; this dish is assertive and needs the neutral rice to balance it.'
 
@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1 tsp, drawn back out when you blot; it does not all stay in the eggplant)'
+    note: '(2¼ tsp, drawn back out when you blot; it does not all stay in the eggplant)'
 
   - group: 'Phase 2, the chicken'
     item: 'bone-in skin-on chicken thighs'

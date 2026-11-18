@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; seasons before the heat)'
+    note: '(1¾ tsp Diamond Crystal; seasons before the heat)'
   - group: 'Phase 1, the roast'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -94,7 +94,7 @@ ingredients:
 steps:
   - text: 'Put a heavy rimmed sheet pan in the oven and preheat both to 230 °C / 450 °F. Give the pan a full 10 minutes at temperature; the cut faces have to sear on contact, not warm up slowly.'
     time_min: 10
-  - text: 'Toss the 800 g / 1 large head of cauliflower florets (and the tender inner leaves) in a bowl with the 35 g / 2½ tbsp olive oil, the 5 g / 1¼ tsp kosher salt, and the 1 g / ½ tsp black pepper until every cut face is slicked with oil. Pull the hot pan out and lay the florets in a single uncrowded layer, as many cut faces flat against the metal as you can manage; they should sizzle faintly on contact. Crowding steams them, so use two pans if one will not hold a clean single layer.'
+  - text: 'Toss the 800 g / 1 large head of cauliflower florets (and the tender inner leaves) in a bowl with the 35 g / 2½ tbsp olive oil, the 5 g / 1¾ tsp kosher salt, and the 1 g / ½ tsp black pepper until every cut face is slicked with oil. Pull the hot pan out and lay the florets in a single uncrowded layer, as many cut faces flat against the metal as you can manage; they should sizzle faintly on contact. Crowding steams them, so use two pans if one will not hold a clean single layer.'
     technique: 'maillard-sear'
     time_min: 5
   - text: 'Roast undisturbed for 18 minutes. Do not stir early, the cut faces need uninterrupted contact with the hot pan to build the deep brown crust, and lifting to peek resets the clock. The loose leaves and small bits will char to crisp, which is the best part of the batch.'

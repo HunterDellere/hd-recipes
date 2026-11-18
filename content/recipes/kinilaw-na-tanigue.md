@@ -56,7 +56,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; helps the cure penetrate and draws water from the fish surface)'
+    note: '(2¼ tsp Diamond Crystal; helps the cure penetrate and draws water from the fish surface)'
   - group: 'Phase 2, cure'
     item: 'fresh ginger'
     slug: 'ginger'
@@ -98,7 +98,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(¼ tsp Diamond Crystal; tasted in at the very end)'
+    note: '(¾ tsp Diamond Crystal; tasted in at the very end)'
   - group: 'Phase 3, finish'
     item: 'freshly cracked black pepper'
     slug: 'black-pepper'
@@ -117,13 +117,13 @@ ingredients:
 steps:
   - text: 'Prep the fish. Pat the 500 g fish fillet completely dry with paper towels. Trim any bloodline (the dark red strip running down the center) with a sharp knife; the bloodline tastes metallic and grainy in cured fish. Dice into even 1.5 cm cubes; the evenness is structural to even curing, irregular pieces cure unevenly. Keep the diced fish in a stainless or glass bowl in the fridge while you build the cure.'
     time_min: 8
-  - text: 'Build the cure. Combine the 120 g / ½ cup cane vinegar, 30 g / 2 tbsp calamansi juice, 6 g / 1 tsp kosher salt, 30 g julienned ginger, and 8 g sliced chili in a wide non-reactive bowl (glass or stainless, never aluminum or reactive metals, the acid will leach metal flavors). Whisk to dissolve the salt.'
+  - text: 'Build the cure. Combine the 120 g / ½ cup cane vinegar, 30 g / 2 tbsp calamansi juice, 6 g / 2¼ tsp kosher salt, 30 g julienned ginger, and 8 g sliced chili in a wide non-reactive bowl (glass or stainless, never aluminum or reactive metals, the acid will leach metal flavors). Whisk to dissolve the salt.'
     time_min: 3
   - text: 'Submerge the fish. Add the diced fish to the cure; toss gently to ensure every piece is coated and submerged. The fish should be fully covered; if not, tilt the bowl or use a slightly smaller bowl. Refrigerate for 5 to 7 minutes only. Watch the color: the fish surface will turn from translucent-pink-to-translucent-white in 60 seconds and start to look opaque on the surface; by 5 minutes the exterior is fully opaque while the interior is still translucent. This is the kinilaw cure endpoint.'
     time_min: 7
   - text: 'Drain immediately. Pour the fish into a fine mesh strainer set over a bowl. Let the cure liquid drain off completely (about 60 seconds); do not press or squeeze the fish, you will damage the texture. Discard the drained cure liquid (or reserve, see notes on kilawin sauce). Return the drained fish to a clean bowl.'
     time_min: 2
-  - text: 'Add the 80 g sliced red onion, 80 g diced cucumber, 10 g cilantro, 2 g / ¼ tsp salt, and 2 g / ½ tsp cracked black pepper to the drained fish. Toss gently to combine. The onion and cucumber should be raw and crisp; they go in after the cure specifically to retain texture. Taste, the kinilaw should read aggressively sour-front (vinegar and citrus), salt-balanced, with the chili heat building, ginger brightness in the background, and the fish itself reading clean and slightly firm.'
+  - text: 'Add the 80 g sliced red onion, 80 g diced cucumber, 10 g cilantro, 2 g / ¾ tsp salt, and 2 g / ½ tsp cracked black pepper to the drained fish. Toss gently to combine. The onion and cucumber should be raw and crisp; they go in after the cure specifically to retain texture. Taste, the kinilaw should read aggressively sour-front (vinegar and citrus), salt-balanced, with the chili heat building, ginger brightness in the background, and the fish itself reading clean and slightly firm.'
     time_min: 2
   - text: 'Serve immediately in small bowls or on a flat plate with lime wedges on the side. Kinilaw is structurally an appetizer or a starter for a Filipino meal, traditionally served as pulutan (drinking food) with cold beer. Eat with a small spoon; the dish should be at fridge-cold temperature, the warmth of the room will dull the textural sharpness within 10 minutes.'
 

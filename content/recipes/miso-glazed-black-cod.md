@@ -75,7 +75,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; a light pre-salt 15 minutes before the marinade firms the flesh and starts drawing surface moisture, see step 1)'
+    note: '(1 tsp Diamond Crystal; a light pre-salt 15 minutes before the marinade firms the flesh and starts drawing surface moisture, see step 1)'
 
   - group: 'Phase 3, broil and finish'
     item: 'neutral oil (for the rack or foil)'
@@ -106,7 +106,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Pre-salt the fish (15 minutes before the cure). Pat the 340 g / two 6 oz black cod fillets bone-dry with paper towels on both sides. Sprinkle the 3 g / ¾ tsp kosher salt evenly over the flesh side of both fillets and let them sit on a wire rack for 15 minutes. The salt firms the surface proteins and pulls a film of moisture to the surface, which you will blot away before the marinade goes on. This light pre-salt keeps the long miso cure from leaving the flesh waterlogged and is what gives the finished fish its clean, dense flake rather than a soft, brine-soaked one.'
+  - text: 'Pre-salt the fish (15 minutes before the cure). Pat the 340 g / two 6 oz black cod fillets bone-dry with paper towels on both sides. Sprinkle the 3 g / 1 tsp kosher salt evenly over the flesh side of both fillets and let them sit on a wire rack for 15 minutes. The salt firms the surface proteins and pulls a film of moisture to the surface, which you will blot away before the marinade goes on. This light pre-salt keeps the long miso cure from leaving the flesh waterlogged and is what gives the finished fish its clean, dense flake rather than a soft, brine-soaked one.'
     technique: 'dry-brining'
     time_min: 15
   - text: 'Build the Saikyo marinade. In a bowl, whisk the 240 g / 1 cup sweet white miso, the 60 g / ¼ cup sake, the 60 g / ¼ cup mirin, and the 30 g / 2½ tbsp granulated sugar into a smooth, spreadable paste the consistency of thick yogurt. If you are using genuine Saikyo miso, cut the sugar to 15 g / 1 tbsp, it is already intensely sweet. The sake and mirin thin the dense miso so it contacts the fish evenly; the sugar and the glucose already present in the mirin are the fuel for the caramelized lacquer that forms later under the broiler.'

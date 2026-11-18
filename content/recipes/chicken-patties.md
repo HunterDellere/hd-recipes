@@ -98,7 +98,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 2, keema spices'
     item: 'fresh-ground black pepper'
     slug: 'black-pepper'

@@ -130,7 +130,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 20
     unit: 'g'
-    note: '(1½ tbsp Diamond Crystal; adjust at the end)'
+    note: '(2½ tbsp Diamond Crystal; adjust at the end)'
 
   - group: 'Phase 4, the garnish (essential, not optional)'
     item: 'fried onions (birista), store-bought or homemade'
@@ -186,7 +186,7 @@ steps:
   - text: 'Add the ground spices: 12 g / 2 tbsp ground coriander, 10 g / 1½ tbsp Kashmiri chili powder, 3 g / 1 tsp cayenne, 3 g / ¾ tsp turmeric, half (3 g) of the garam masala. Stir-fry 60 to 90 seconds, splashing with 2 to 3 tbsp water if the spices threaten to scorch. The ghee should pool red-orange at the edges.'
     technique: 'red-oil-rendering'
     time_min: 2
-  - text: 'Combine the masala with the haleem. After the haleem has simmered for 2 hours with the grains, pour the entire masala mixture (ghee, onions, spices, all of it) into the haleem pot. Stir to integrate. Add the 20 g / 1½ tbsp kosher salt. Continue simmering another 60 minutes, stirring every 10 to 15 minutes; the dish thickens, the meat gives up the last of its gelatin, and the spices integrate into the porridge.'
+  - text: 'Combine the masala with the haleem. After the haleem has simmered for 2 hours with the grains, pour the entire masala mixture (ghee, onions, spices, all of it) into the haleem pot. Stir to integrate. Add the 20 g / 2½ tbsp kosher salt. Continue simmering another 60 minutes, stirring every 10 to 15 minutes; the dish thickens, the meat gives up the last of its gelatin, and the spices integrate into the porridge.'
     time_min: 60
   - text: 'Mash and integrate. After the third hour, the meat should be falling off the bones. Remove the bones and any large meat chunks; shred the meat with two forks and return it to the pot (discard the bones). Now mash the entire pot aggressively: use a hand-held immersion blender for 30 to 60 seconds total, OR use a wooden potato masher and work it through the pot for 5 to 8 minutes, OR transfer half the dish to a stand blender, pulse 3 to 4 times, and return to the pot. The target texture is a thick uniform porridge where individual grains and meat fibers are barely visible; the dish should be smooth-but-textured, not a fully pureed soup.'
     time_min: 8

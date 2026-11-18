@@ -33,7 +33,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 40
     unit: 'g'
-    note: '(2 tbsp + 2 tsp; 2 percent by weight of cabbage; iodized salt inhibits the lacto-fermentation)'
+    note: '(4¾ tbsp + 2 tsp; 2 percent by weight of cabbage; iodized salt inhibits the lacto-fermentation)'
   - item: 'caraway seeds (optional, the German signature)'
     slug: 'caraway-seed'
     qty: 5

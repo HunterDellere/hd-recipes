@@ -102,7 +102,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Combine 60 g / ½ cup coarse chili flakes, 30 g / ¼ cup fine chili flakes, 12 g / 2 tbsp toasted sesame seeds, and 4 g / ½ tsp kosher salt in a wide heatproof bowl (metal or thick ceramic; the oil will hit 180°C and you don''t want it to crack). Set near the stove with a spider or sieve at hand. The pour happens fast.'
+  - text: 'Combine 60 g / ½ cup coarse chili flakes, 30 g / ¼ cup fine chili flakes, 12 g / 2 tbsp toasted sesame seeds, and 4 g / 1½ tsp kosher salt in a wide heatproof bowl (metal or thick ceramic; the oil will hit 180°C and you don''t want it to crack). Set near the stove with a spider or sieve at hand. The pour happens fast.'
     time_min: 3
   - text: 'In a heavy saucepan, combine 500 ml / 2 cups neutral oil with 4 star anise pods, 1 cassia or cinnamon stick, 8 g / 1 tbsp Sichuan peppercorns, 3 bay leaves, 30 g / 2-inch knob sliced fresh ginger, 4 smacked scallions, and 1 sliced shallot if using. Place over medium-low heat.'
     time_min: 2

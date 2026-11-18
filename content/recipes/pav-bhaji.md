@@ -58,7 +58,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 2, base'
     item: 'butter (unsalted, the Mumbai signature)'
@@ -132,7 +132,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp; in addition to the boiling-water salt, for the masala)'
+    note: '(2¼ tsp; in addition to the boiling-water salt, for the masala)'
   - group: 'Phase 4, tomato base'
     item: 'water'
     qty: 200

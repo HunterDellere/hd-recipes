@@ -54,7 +54,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp; added after beans are tender)'
+    note: '(2¾ tsp; added after beans are tender)'
 
 steps:
   - text: 'Stub: soak the 250 g navy beans overnight in 1500 ml cold water. Drain.'
