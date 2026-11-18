@@ -38,6 +38,18 @@ members:
   - slug: 'recipes/creme-fraiche'
     label: 'Crème fraîche'
     note: 'Made at home for the whipped cream on both desserts. Start it by Monday.'
+  - slug: 'recipes/whole-roasted-red-snapper-with-sourdough-fennel-stuffing'
+    label: 'Backup main: whole roasted red snapper with sourdough-fennel stuffing'
+    note: 'Not on the menu. The pescatarian option if a guest needs one, and the stuffing the menu otherwise leaves out. It roasts at 220 °C / 425 °F beside the lamb.'
+  - slug: 'recipes/roasted-delicata-squash-with-hot-honey-and-pepitas'
+    label: 'Backup side: roasted delicata squash with hot honey and pepitas'
+    note: 'Not on the menu. Swap it in for the carrots if they look poor; it roasts at the same temperature and also holds at room temperature.'
+  - slug: 'recipes/sweet-potato-dinner-rolls-with-honey-butter'
+    label: 'Backup bread: sweet potato dinner rolls with honey butter'
+    note: 'Not on the menu. Same schedule as the Parker House rolls: shaped Wednesday night, baked Thursday morning.'
+  - slug: 'recipes/pumpkin-basque-cheesecake'
+    label: 'Backup dessert: pumpkin Basque cheesecake'
+    note: 'Not on the menu. Replaces the tres leches if you want the pumpkin note; baked 1 to 2 days ahead, so it uses no oven on Thursday.'
 
 plan:
   - when: 'Shopping notes'
@@ -59,6 +71,12 @@ plan:
       - 'Rainbow carrots: orange carrots, or half carrots and half parsnips.'
       - 'Crème fraîche, if the home batch fails or there is no time: a store-bought tub, or sour cream for the same tang.'
       - 'Honeycrisp apples: Pink Lady, Braeburn, Jonagold or Gala. Keep the Granny Smith half.'
+  - when: 'Using a backup'
+    items:
+      - 'Snapper (adds a main): order two fish the week before and pick them up Wednesday. Make the stuffing Thursday morning. At 4:10 pm stuff the fish and roast them on the lower rack, then move the gratin re-crisp to after the fish comes out. The lamb still goes in at about 4:25 pm.'
+      - 'Delicata squash (replaces the carrots): roast it in the 3:00 to 3:45 pm slot instead of the carrots. Make the hot honey and pepitas on Tuesday.'
+      - 'Sweet potato rolls (replace the Parker House rolls): roast the sweet potato on Tuesday, then follow the same Wednesday and Thursday schedule.'
+      - 'Pumpkin Basque cheesecake (replaces the tres leches): bake it Tuesday or Wednesday. Take it out of the fridge 1 hour before dessert.'
   - when: 'By Monday 23 November'
     items:
       - 'Start the crème fraîche. It cultures 18 to 36 hours on the counter, then needs at least 12 hours in the fridge.'

@@ -841,29 +841,29 @@
     }
   },
   {
-    "path": "pages/recipes/tres-leches-cake.html",
+    "path": "pages/recipes/pumpkin-basque-cheesecake.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Tres leches cake",
-    "desc": "A butterless, separated-egg sponge baked in a 9 x 13 pan, pierced all over and soaked overnight with evaporated milk, sweetened condensed milk and cinnamon-steeped whole milk. The open, dry crumb drinks almost its own weight in milk and stays cake rather than turning to pudding. A crème fraîche whipped cream on top cuts the sweetness.",
+    "title": "Pumpkin Basque cheesecake",
+    "desc": "A crustless Basque-style cheesecake with pumpkin purée, brown sugar and warm spice, baked hot until the top scorches to near-black while the center stays soft. The bitter caramel top plays the role of a pie crust against a custard that tastes like pumpkin pie made richer.",
     "tags": [
       "cake",
-      "sweet",
+      "custard",
+      "baked",
       "make-ahead",
-      "holiday",
-      "baked"
+      "holiday"
     ],
     "status": "complete",
-    "_slug": "tres-leches-cake",
-    "cuisine": "Mexican",
+    "_slug": "pumpkin-basque-cheesecake",
+    "cuisine": "Spanish (Basque)",
     "course": "dessert",
-    "difficulty": "medium",
-    "servings": 12,
+    "difficulty": "easy",
+    "servings": 10,
     "time": {
-      "prep_min": 30,
-      "cook_min": 28,
-      "total_min": 600,
-      "active_min": 45
+      "prep_min": 15,
+      "cook_min": 65,
+      "total_min": 445,
+      "active_min": 15
     },
     "updated": "2026-11-18",
     "diet": [
@@ -872,38 +872,7 @@
     ],
     "ingredients": [
       {
-        "item": "whole milk (soak)",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "cinnamon stick, Ceylon (canela) if possible",
-        "slug": "cinnamon-stick",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter, softened (for the pan)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "baking powder",
-        "slug": "baking-powder",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "large eggs, separated",
-        "slug": "eggs",
+        "item": "full-fat cream cheese (block, not tub), room temperature",
         "optional": false
       },
       {
@@ -912,8 +881,43 @@
         "optional": false
       },
       {
-        "item": "whole milk (batter)",
-        "slug": "whole-milk",
+        "item": "dark brown sugar",
+        "slug": "dark-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "ground cinnamon",
+        "optional": false
+      },
+      {
+        "item": "ground ginger",
+        "optional": false
+      },
+      {
+        "item": "whole nutmeg, freshly grated",
+        "optional": false
+      },
+      {
+        "item": "ground cloves",
+        "optional": false
+      },
+      {
+        "item": "plain pumpkin purée",
+        "optional": false
+      },
+      {
+        "item": "large eggs, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "heavy cream, room temperature",
+        "slug": "heavy-cream",
         "optional": false
       },
       {
@@ -922,52 +926,26 @@
         "optional": false
       },
       {
-        "item": "evaporated milk",
-        "slug": "evaporated-milk",
-        "optional": false
-      },
-      {
-        "item": "sweetened condensed milk",
-        "slug": "sweetened-condensed-milk",
-        "optional": false
-      },
-      {
-        "item": "fine sea salt (soak)",
-        "slug": "fine-sea-salt",
-        "optional": false
-      },
-      {
-        "item": "heavy cream, cold",
-        "slug": "heavy-cream",
-        "optional": false
-      },
-      {
-        "item": "crème fraîche, cold",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar (topping)",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "ground cinnamon",
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
         "optional": false
       }
     ],
     "techniques": [],
-    "equipment": [],
+    "equipment": [
+      "instant-read-thermometer"
+    ],
     "added": "2026-11-18",
     "_card": {
-      "swatchIndex": 4,
-      "swatchGlyph": "chili",
-      "totalMinutes": 600,
-      "diffLabel": "medium",
-      "timeLead": "45 min",
-      "timeAnnotation": "· overnight",
+      "swatchIndex": 13,
+      "swatchGlyph": "olive",
+      "totalMinutes": 445,
+      "diffLabel": "easy",
+      "timeLead": "15 min",
+      "timeAnnotation": "· 7 h rest",
       "timeMode": "active",
-      "activeMinutes": 45,
-      "filterMinutes": 45
+      "activeMinutes": 15,
+      "filterMinutes": 15
     }
   },
   {

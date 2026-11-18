@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-18T20:08:20.687Z",
+  "generated": "2026-11-18T20:41:41.136Z",
   "summary": {
     "errors": 0,
     "warnings": 149,
-    "info": 164
+    "info": 167
   },
   "findings": [
     {
@@ -2027,6 +2027,13 @@
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/sweet-potato-dinner-rolls-with-honey-butter.md",
+      "msg": "scaling: 1 yield-coupled split(s) (\"into 15\") use a fixed count that will not move with servings",
+      "fix": "A \"divide into N\" count should track servings. Phrase it relative to yield (\"one portion per serving\") or accept that the piece count stays fixed while pieces get bigger/smaller when scaled."
+    },
+    {
       "level": "WARN",
       "category": "formatting",
       "file": "content/recipes/tacos-al-pastor.md",
@@ -2178,6 +2185,20 @@
       "category": "formatting",
       "file": "content/recipes/white-beans-braised-with-beet-greens.md",
       "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"600 to 900 mg\"",
+      "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/whole-roasted-red-snapper-with-sourdough-fennel-stuffing.md",
+      "msg": "ingredient \"whole red snapper, scaled, gutted, gills removed\" is on the list but no step appears to use it — possible orphaned ingredient",
+      "fix": "Either reference it in a step (most likely a missing instruction) or remove it from the list. Garnishes still need a \"scatter the X over the top\" step so the cook knows when to use them."
+    },
+    {
+      "level": "INFO",
+      "category": "formatting",
+      "file": "content/recipes/whole-roasted-red-snapper-with-sourdough-fennel-stuffing.md",
+      "msg": "scaling: 1 quantity range(s) in prose stay fixed when servings change — e.g. \"1.1 to 1.4 kg\"",
       "fix": "Ranges are not wrapped for scaling. If the range is a true measurement, pick a single scalable value (\"70 g\") and move the tolerance to a note; if it is guidance (\"to taste, ~3 to 4 g\"), leave it but know it will not move."
     },
     {
