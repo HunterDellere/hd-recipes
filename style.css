@@ -1526,6 +1526,9 @@ button.step-time-btn:focus-visible { outline: 2px solid var(--accent); outline-o
   line-height: 1.55;
 }
 .recipe-prelude p { margin: .5em 0; color: var(--ink); }
+.hub-plan { margin-top: 2.5rem; }
+.hub-plan-when { font-size: 15px; margin: 1.1em 0 .3em; color: var(--ink); }
+.hub-plan-when:first-child { margin-top: .2em; }
 .recipe-prelude-list { margin: .25em 0; padding-left: 1.25em; }
 .recipe-prelude-list li { margin: .4em 0; color: var(--ink); }
 

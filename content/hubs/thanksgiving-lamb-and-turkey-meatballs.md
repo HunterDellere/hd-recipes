@@ -1,0 +1,102 @@
+---
+type: 'hub'
+category: 'hubs'
+status: 'complete'
+content_review: 'pending'
+
+title: 'Thanksgiving: lamb and turkey meatballs'
+desc: 'A Thanksgiving for 8 that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds a roast rack of lamb. Two mains, three sides and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.'
+metaDesc: 'Thanksgiving menu for 8: herb-crusted rack of lamb with cranberry mostarda, turkey and sage meatballs in brown butter gravy, Hasselback gratin, roasted carrots, pear salad, apple crumble, tres leches, with a one-oven timeline.'
+tags: ['holiday']
+updated: '2026-11-18'
+
+members:
+  - slug: 'recipes/herb-crusted-rack-of-lamb-with-cranberry-mostarda'
+    label: 'Herb-crusted rack of lamb with cranberry mostarda'
+    note: 'Main 1. Two racks, about 40 minutes of hands-on cooking on the day. The mostarda is the table''s cranberry sauce for both mains, and it is made up to a week ahead.'
+  - slug: 'recipes/turkey-and-sage-meatballs-with-brown-butter-gravy'
+    label: 'Turkey and sage meatballs with brown butter gravy'
+    note: 'Main 2, the turkey and the gravy. Cooked completely the day before and reheated on the stovetop, so it never needs the oven on Thursday.'
+  - slug: 'recipes/hasselback-potato-gratin'
+    label: 'Hasselback potato gratin'
+    note: 'The rich side: a creamy center with crisp upright edges. It bakes first, then re-crisps beside the lamb.'
+  - slug: 'recipes/maple-cumin-roasted-carrots'
+    label: 'Maple-cumin roasted carrots'
+    note: 'The sweet-and-warm side. Miso for depth, lemon and pistachio to finish. Good at room temperature, which frees the oven for the lamb.'
+  - slug: 'recipes/arugula-pear-and-pomegranate-salad-with-goat-cheese'
+    label: 'Arugula, pear and pomegranate salad with goat cheese'
+    note: 'The sharp side, and the only raw, crisp thing on the table. Pepper, acid and crunch against the gratin, the gravy and the lamb fat.'
+  - slug: 'recipes/apple-crumble-with-brown-butter-oat-topping'
+    label: 'Apple crumble with brown butter oat topping'
+    note: 'The warm dessert. It goes into the oven as everyone sits down and comes out warm for dessert.'
+  - slug: 'recipes/tres-leches-cake'
+    label: 'Tres leches cake'
+    note: 'The cold dessert, baked and soaked the day before. One 9 x 13 cake gives 12 squares, so there are leftovers.'
+  - slug: 'recipes/creme-fraiche'
+    label: 'Crème fraîche'
+    note: 'Made at home for the whipped cream on both desserts. Start it by Monday.'
+
+plan:
+  - when: 'Shopping notes'
+    items:
+      - 'Ask the butcher for two frenched racks of lamb, about 800 g / 8 ribs each. With the meatballs beside it, that is 2 chops per guest.'
+      - 'Buy ground turkey from thigh meat or an 85/15 or 93/7 blend. Avoid 99% lean breast, which stays dry even with the gelatin.'
+      - 'Buy the cream for the crème fraîche as pasteurized, not ultra-pasteurized, if your store has it, and check that the buttermilk says "live cultures".'
+  - when: 'If you cannot find it'
+    items:
+      - 'Rack of lamb: a 1.6 kg / 3½ lb boneless leg of lamb, rolled and tied. Same crust, roasted at 220 °C / 425 °F to 52 °C inside, about 45 to 55 minutes. Start it at 3:55 pm and re-crisp the gratin after it comes out.'
+      - 'Ground turkey: ground chicken thigh, same weight and method.'
+      - 'Fresh sage: dried rubbed sage, 3 g / 1½ tsp in the meatballs. Skip the fried-leaf garnish.'
+      - 'Fresh cranberries: frozen cranberries work without thawing. If there are none at all, the lamb recipe gives a dried tart cherry version of the mostarda.'
+      - 'Pomegranate: 80 g / ½ cup dried cranberries or dried tart cherries in the salad.'
+      - 'Ripe Bosc pears: a crisp, sweet apple such as Honeycrisp, or a Fuyu persimmon, sliced thin.'
+      - 'Baby arugula: watercress, or a mix of frisée and baby spinach.'
+      - 'Gruyère: Comté, Emmental or an aged white cheddar.'
+      - 'Goat cheese: crumbled feta or a mild blue.'
+      - 'Rainbow carrots: orange carrots, or half carrots and half parsnips.'
+      - 'Crème fraîche, if the home batch fails or there is no time: a store-bought tub, or sour cream for the same tang.'
+      - 'Honeycrisp apples: Pink Lady, Braeburn, Jonagold or Gala. Keep the Granny Smith half.'
+  - when: 'By Monday 23 November'
+    items:
+      - 'Start the crème fraîche. It cultures 18 to 36 hours on the counter, then needs at least 12 hours in the fridge.'
+      - 'Make the cranberry mostarda (up to a week ahead). It improves for the first 2 to 3 days.'
+  - when: 'Tuesday 24 November'
+    items:
+      - 'Move the crème fraîche to the fridge once it is thick.'
+      - 'Make the salad vinaigrette, toast the almonds, and toast the pistachios for the carrots.'
+      - 'Make the crumble topping and keep it in the fridge.'
+  - when: 'Wednesday 25 November'
+    items:
+      - 'Dry-brine the lamb racks uncovered on a rack in the fridge.'
+      - 'Make the meatballs and the gravy, cool them together, and refrigerate them in the braiser.'
+      - 'Bake the tres leches sponge, soak it, and refrigerate it overnight.'
+      - 'Mix the herb crust for the lamb and refrigerate it.'
+  - when: 'Thanksgiving morning (dinner at 5 pm)'
+    items:
+      - 'Whip the crème fraîche cream for the tres leches, spread it on the cake, and return it to the fridge.'
+      - 'Peel and cut the carrots. Peel and slice the apples, toss them with the lemon juice, and refrigerate them covered with a plate.'
+      - 'Grate the gruyère and parmigiano for the gratin, and infuse the cream.'
+  - when: '1:00 to 3:00 pm'
+    items:
+      - 'Slice and assemble the gratin. Bake it at 190 °C / 375 °F, 40 minutes covered and 35 to 45 minutes uncovered, then rest it on the counter.'
+  - when: '3:00 to 3:45 pm'
+    items:
+      - 'Raise the oven to 220 °C / 425 °F. Roast the carrots with their glaze, about 32 minutes, then hold them at room temperature. Leave the lemon, pistachios and herbs for serving.'
+      - 'At 3:30, take the lamb racks and the mostarda out of the fridge to temper.'
+  - when: '3:45 to 4:15 pm'
+    items:
+      - 'Start reheating the meatballs: add the held-back stock, cover, and warm over low heat 30 to 40 minutes, turning them every 10 minutes, until the largest reads 74 °C / 165 °F. Then hold on the lowest heat.'
+  - when: '4:15 to 4:45 pm'
+    items:
+      - 'Sear the lamb racks one at a time in cast iron, coat them with dijon and the herb crust, and roast them on the upper-middle rack at 220 °C / 425 °F to 52 °C inside, 15 to 20 minutes.'
+      - 'As the lamb goes in, put the gratin on the lower rack to re-crisp for 15 to 20 minutes.'
+  - when: '4:45 to 5:00 pm'
+    items:
+      - 'Rest the lamb 10 minutes, uncovered.'
+      - 'Finish the carrots with lemon, pistachios and herbs. Slice the pears and dress the salad.'
+      - 'Scatter parsley and the fried sage over the meatballs. Put the mostarda on the table for both mains, then carve the lamb into chops and serve.'
+  - when: 'At dinner'
+    items:
+      - 'Lower the oven to 190 °C / 375 °F. Toss the apples with the sugar, cornstarch and spice, top them with the crumble, and bake while everyone eats, so it comes out warm for dessert.'
+      - 'While the crumble rests, whip its crème fraîche cream. Serve the tres leches straight from the fridge, dusted with cinnamon.'
+---
