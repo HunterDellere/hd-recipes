@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal; the parboil water should taste aggressively saline, like seawater)'
+    note: '(3½ tbsp Diamond Crystal; the parboil water should taste aggressively saline, like seawater)'
 
   - group: 'Phase 2, the saffron bloom'
     item: 'saffron threads'
@@ -102,7 +102,7 @@ ingredients:
     note: '(½ tsp; salts the yogurt-rice crust layer)'
 
 steps:
-  - text: 'Bring the 3000 ml / 12 cups water and 30 g / 2 tbsp salt to a rolling boil in a wide 5-quart pot. Drain the soaked 400 g / 2 cups basmati and add to the boiling water. Cook uncovered 4 to 6 minutes, stirring once gently, until the grains have elongated and are al dente (tender on the outside, a thin firm core when bitten, the same window as al dente pasta). Drain immediately into a fine-mesh sieve and rinse briefly with warm (not cold) water to stop the cook. The grains should look long and separate, not clumped.'
+  - text: 'Bring the 3000 ml / 12 cups water and 30 g / 3½ tbsp salt to a rolling boil in a wide 5-quart pot. Drain the soaked 400 g / 2 cups basmati and add to the boiling water. Cook uncovered 4 to 6 minutes, stirring once gently, until the grains have elongated and are al dente (tender on the outside, a thin firm core when bitten, the same window as al dente pasta). Drain immediately into a fine-mesh sieve and rinse briefly with warm (not cold) water to stop the cook. The grains should look long and separate, not clumped.'
     time_min: 8
   - text: 'While the rice parboils, grind the 0.3 g saffron threads with the 1 g pinch of sugar in a mortar to a fine red powder. Add the 30 g / 2 tbsp hot water and stir; cover with a saucer and let steep 15 to 20 minutes. The liquid will turn deep amber-orange. This bloomed saffron is the structural color carrier for the tahdig.'
     time_min: 1

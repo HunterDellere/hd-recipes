@@ -125,7 +125,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal, plus more to taste; the andouille adds significant salt, so taste at the end before adding more)'
+    note: '(2¾ tsp Diamond Crystal, plus more to taste; the andouille adds significant salt, so taste at the end before adding more)'
 
   - group: 'Phase 4, rice and liquid'
     item: 'long-grain white rice (Louisiana long-grain, basmati, or Carolina Gold)'
@@ -187,7 +187,7 @@ steps:
   - text: 'Toast the tomato paste. Push the vegetables to the edges of the pot. Drop the 30 g / 2 tbsp tomato paste into the cleared center. Toast 90 seconds, stirring the paste alone in the hot fat until it darkens from bright red-orange to brick-brown and smells deeply caramelized. The toast is structural; raw tomato paste reads tinny and flat in the finished dish. Stir the toasted paste into the Trinity.'
     technique: 'deglazing'
     time_min: 2
-  - text: 'Add spices and tomato. Add the 4 g smoked paprika, 4 g sweet paprika, 2 g oregano, 2 g thyme, 2 g cayenne, 2 bay leaves, and 8 g / 2 tsp kosher salt. Stir 30 seconds to bloom the spices in the hot fat. Add the 200 g drained diced tomatoes; stir to combine.'
+  - text: 'Add spices and tomato. Add the 4 g smoked paprika, 4 g sweet paprika, 2 g oregano, 2 g thyme, 2 g cayenne, 2 bay leaves, and 8 g / 2¾ tsp kosher salt. Stir 30 seconds to bloom the spices in the hot fat. Add the 200 g drained diced tomatoes; stir to combine.'
     time_min: 2
   - text: 'Add rice and liquid; return the protein. Add the 360 g rinsed long-grain rice to the pot; stir 60 seconds so each grain coats with the seasoned fat. Pour in the 600 ml / 2½ cups warm chicken stock, the 5 g / 1 tsp Worcestershire, and 8 g / 1½ tsp hot sauce. Stir once to evenly distribute the rice and submerge it under the liquid. Return the browned 600 g chicken and 300 g andouille (with any accumulated juices) to the pot; nestle them into the rice. Bring to a simmer over medium-high.'
     time_min: 4

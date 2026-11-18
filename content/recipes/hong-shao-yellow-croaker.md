@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; rubbed over the skin, into the slashes, and inside the cavity)'
+    note: '(1¾ tsp Diamond Crystal; rubbed over the skin, into the slashes, and inside the cavity)'
   - group: 'Phase 1, the fish and cure'
     item: 'Shaoxing wine'
     slug: 'shaoxing-wine'
@@ -148,7 +148,7 @@ ingredients:
 steps:
   - text: 'Prep the fish. The grocer should have gutted, scaled, and gilled the 450 g / 2 to 3 whole croakers; verify all three. Rinse each fish inside and out and scrape any dark blood line from the spine cavity with the back of a small spoon, the blood line carries the strongest fishy note. With a sharp knife cut three diagonal slashes 1.5 cm deep into each side through the skin to the bone; the slashes let the salt and the braise reach the spine and give the thin skin somewhere to release tension instead of curling and tearing in the pan. Pat the fish completely dry, inside and out.'
     time_min: 6
-  - text: 'Salt-and-wine cure. Rub the 5 g / 1¼ tsp kosher salt evenly over the skin, into the slashes, and inside the cavity of every fish, then splash the 15 g / 1 tbsp Shaoxing wine over the same surfaces and rub it in. Rest the fish on a rack, uncovered, 15 to 20 minutes. The salt firms the surface flesh and pulls water to the skin; the wine esters perfume the fish and the brief denaturation helps the thin skin hold together through the fry. Meanwhile, with the rice already started, prep and measure all the aromatics and the braise sauce so they are within reach.'
+  - text: 'Salt-and-wine cure. Rub the 5 g / 1¾ tsp kosher salt evenly over the skin, into the slashes, and inside the cavity of every fish, then splash the 15 g / 1 tbsp Shaoxing wine over the same surfaces and rub it in. Rest the fish on a rack, uncovered, 15 to 20 minutes. The salt firms the surface flesh and pulls water to the skin; the wine esters perfume the fish and the brief denaturation helps the thin skin hold together through the fry. Meanwhile, with the rice already started, prep and measure all the aromatics and the braise sauce so they are within reach.'
     time_min: 18
   - text: 'Build the sauce mix. In a small bowl combine the 30 g / 2 tbsp light soy sauce, the 10 g / 2 tsp dark soy sauce, the 30 g / 2 tbsp Shaoxing wine, and the 240 g / 1 cup hot water or stock; stir to blend. Keep the 20 g / 1½ tbsp crushed rock sugar separate for the caramel. Having the liquid premixed means you can deglaze the caramel in one fast pour before it scorches.'
     time_min: 2

@@ -31,7 +31,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp)'
+    note: '(2¼ tsp)'
   - item: 'light brown sugar'
     slug: 'light-brown-sugar'
     qty: 4

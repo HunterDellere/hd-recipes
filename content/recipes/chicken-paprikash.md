@@ -43,7 +43,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, the chicken'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -106,7 +106,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; taste before adding more)'
+    note: '(1½ tsp Diamond Crystal; taste before adding more)'
 
   - group: 'Phase 4, the sour cream finish'
     item: 'full-fat sour cream (at least 14% fat, ideally 18 to 20%), at room temperature'
@@ -150,7 +150,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Pat the 1200 g / 4 whole chicken legs dry and season all sides with the 8 g / 2 tsp kosher salt and the 2 g / ¾ tsp black pepper. In a heavy 5-quart Dutch oven over medium-high heat, melt the 30 g / 2 tbsp lard until shimmering. Sear the chicken in two batches, skin-side down first, 4 to 5 minutes per side, until the skin is deep golden brown. Transfer to a plate.'
+  - text: 'Pat the 1200 g / 4 whole chicken legs dry and season all sides with the 8 g / 2¾ tsp kosher salt and the 2 g / ¾ tsp black pepper. In a heavy 5-quart Dutch oven over medium-high heat, melt the 30 g / 2 tbsp lard until shimmering. Sear the chicken in two batches, skin-side down first, 4 to 5 minutes per side, until the skin is deep golden brown. Transfer to a plate.'
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Drop the heat to medium-low. Pour off all but about 3 tbsp / 40 g of the rendered chicken fat from the pot. Add the 400 g / 2 medium diced yellow onions and cook 18 to 22 minutes, stirring every 3 minutes, until deeply golden brown and very soft. The long onion cook is structural; rushing it produces shallow paprikash.'
@@ -161,7 +161,7 @@ steps:
   - text: 'Pull the pot off the burner. Sprinkle the 25 g / 3 tbsp + 1 tsp Hungarian sweet paprika and the 1 g / ¼ tsp hot paprika (if using) over the onions and stir constantly for 30 seconds, off heat. The paprika dissolves into the fat and turns the onion mass deep brick-red. Working off heat is structural; paprika scorches almost instantly on direct heat. Once integrated, return to medium-low for 10 seconds.'
     technique: 'blooming-aromatics'
     time_min: 1
-  - text: 'Add the 100 g / 1 diced peeled tomato (or the 15 g / 1 tbsp tomato paste) and stir to combine. Pour in the 400 ml / 1⅔ cups chicken stock and add the 4 g / 1 tsp kosher salt. Stir to dissolve any browned bits on the bottom of the pot.'
+  - text: 'Add the 100 g / 1 diced peeled tomato (or the 15 g / 1 tbsp tomato paste) and stir to combine. Pour in the 400 ml / 1⅔ cups chicken stock and add the 4 g / 1½ tsp kosher salt. Stir to dissolve any browned bits on the bottom of the pot.'
     time_min: 2
   - text: 'Return the seared chicken legs and any accumulated juices to the pot, nestling the pieces skin-side up into the sauce. The chicken should be mostly submerged with the tops just showing. Bring to a simmer over medium heat, then drop to low. Cover with the lid slightly ajar (1 cm gap to let steam escape) and simmer for 35 to 40 minutes, until the chicken is fully cooked (internal 75 °C / 165 °F) and tender enough to pull from the bone with light fork pressure.'
     technique: 'braising'

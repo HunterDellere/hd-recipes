@@ -74,7 +74,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; added only in the last 5 minutes of the simmer)'
+    note: '(1½ tsp Diamond Crystal; added only in the last 5 minutes of the simmer)'
 
   - group: 'Phase 2, dijon-shallot vinaigrette'
     item: 'shallot, fine-minced'
@@ -162,7 +162,7 @@ steps:
     time_min: 12
   - text: 'Rinse and cook the lentils. Rinse the 250 g / 1¼ cups lentilles vertes du Puy in a sieve until the water runs clear, picking out any small stones. Put them in a saucepan with the 1000 ml / 4 cups unsalted water, the 60 g / ½ onion half, the 6 g / 2 garlic cloves smashed, the 1 bay leaf, and the 3 g / 3 thyme sprigs. Bring to a boil, then drop to a bare simmer (a gentle tremor, not a rolling boil; a hard boil cracks the seed coats and turns the surface to mush). Simmer uncovered for 18 to 22 minutes.'
     time_min: 22
-  - text: 'Salt at the end and check for the right bite. In the last 5 minutes of the simmer, stir in the 4 g / 1 tsp kosher salt. Salting earlier toughens the seed coat and stretches the cook time; salting now seasons the interior without that penalty. The lentils are done when they are tender through but still hold a distinct, intact shape and give a slight resistance at the center on a bite, toothsome rather than soft. Start tasting at 18 minutes; Le Puy lentils go from underdone to perfect in a narrow window and overshoot into paste if walked away from.'
+  - text: 'Salt at the end and check for the right bite. In the last 5 minutes of the simmer, stir in the 4 g / 1½ tsp kosher salt. Salting earlier toughens the seed coat and stretches the cook time; salting now seasons the interior without that penalty. The lentils are done when they are tender through but still hold a distinct, intact shape and give a slight resistance at the center on a bite, toothsome rather than soft. Start tasting at 18 minutes; Le Puy lentils go from underdone to perfect in a narrow window and overshoot into paste if walked away from.'
     time_min: 5
   - text: 'Drain and dress while hot. Drain the lentils well in a sieve and pull out the spent onion half, the 2 garlic cloves, the bay leaf, and the thyme sprigs. Scrape the hot lentils straight into the bowl with the vinaigrette base. Whisking the dressing constantly, stream in the 75 g / ⅓ cup extra-virgin olive oil to build a loose emulsion (the dijon holds the oil and vinegar together), then fold the warm lentils through it. Dressing the lentils warm is the technique that defines the dish: the gelatinized starch on the hot seed surface drinks the vinaigrette into itself, where cold lentils would bead it off and read flat. Let the dressed lentils sit and absorb for 20 to 30 minutes, stirring once or twice.'
     time_min: 5

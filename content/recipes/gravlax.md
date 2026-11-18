@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 75
     unit: 'g'
-    note: '(6 tbsp Diamond Crystal; roughly 60% of the cure mix by weight, the salt does the preservation and the firming)'
+    note: '(9 tbsp Diamond Crystal; roughly 60% of the cure mix by weight, the salt does the preservation and the firming)'
   - group: 'Phase 2, the dry cure'
     item: 'granulated sugar'
     slug: 'granulated-sugar'
@@ -136,7 +136,7 @@ ingredients:
 steps:
   - text: 'Prep the fish. Run a fingertip along the centerline of the 900 g / 2 lb salmon side and pull any remaining pin bones with fish tweezers; a stray bone ruins a thin slice. Blot the flesh and skin fully dry with paper towels. Trim any thin belly flap that is dramatically thinner than the rest of the side, it cures faster and over-salts; reserve it for tartare or freeze it.'
     time_min: 10
-  - text: 'Mix the cure. Combine the 75 g / 6 tbsp kosher salt, the 50 g / ¼ cup granulated sugar, the 6 g / 1 tbsp coarsely crushed white peppercorns, and the 4 g / zest of 1 lemon in a bowl. This is a 60/40 salt-to-sugar ratio by weight: the salt firms and preserves, the sugar pulls water just as hard while keeping the flesh from going leather-stiff. Stir in the 30 g / 2 tbsp aquavit if using, the mixture will clump into a wet sand.'
+  - text: 'Mix the cure. Combine the 75 g / 9 tbsp kosher salt, the 50 g / ¼ cup granulated sugar, the 6 g / 1 tbsp coarsely crushed white peppercorns, and the 4 g / zest of 1 lemon in a bowl. This is a 60/40 salt-to-sugar ratio by weight: the salt firms and preserves, the sugar pulls water just as hard while keeping the flesh from going leather-stiff. Stir in the 30 g / 2 tbsp aquavit if using, the mixture will clump into a wet sand.'
     time_min: 3
   - text: 'Build the cure package. Lay a sheet of parchment in a glass or ceramic dish and scatter a third of the chopped 60 g / 1 bunch dill across it. Set the salmon skin-side down on the dill. Pack the salt-sugar cure evenly over the entire flesh surface, pressing it into the thick shoulder more heavily than the thin tail since thickness dictates cure time. Blanket the top with the remaining two-thirds of the 60 g / 1 bunch dill. The flesh should disappear under a green carpet.'
     time_min: 5

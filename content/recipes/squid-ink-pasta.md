@@ -64,7 +64,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; for the squid braise, the pasta water adds more)'
+    note: '(1½ tsp Diamond Crystal; for the squid braise, the pasta water adds more)'
   - group: 'Phase 1, squid braise'
     item: 'fresh ground black pepper'
     slug: 'black-pepper'
@@ -117,7 +117,7 @@ steps:
   - text: 'Begin the squid braise. Heat the 60 ml / ¼ cup olive oil in a wide heavy saucepan over medium heat. When the oil is shimmering (not smoking), add the 25 g chopped garlic and 1 g / ½ tsp red pepper flakes. Sweat 60 to 90 seconds until the garlic is pale gold and fragrant, do not brown the garlic past pale gold or it goes bitter. Add the squid rings and tentacles. Stir-fry 90 seconds; the squid will release water in the first minute, then begin to firm up. The squid is in the rubber zone right now (this is normal); the long simmer will rescue it.'
     technique: 'blooming-aromatics'
     time_min: 4
-  - text: 'Deglaze and braise. Pour in the 240 ml / 1 cup white wine. Bring to a simmer; the wine should reduce by half within 3 minutes (alcohol cooks off, the sharp wine note mellows into a savory base). Add the 400 g hand-crushed San Marzano tomatoes with their juice, 4 g / 1 tsp kosher salt, and 2 g / 1 tsp black pepper. Bring back to a simmer; reduce heat to low (the surface should tremble, not boil). Cover loosely with a lid and braise 35 minutes. The squid will progress: rubbery and contracted at 5 minutes, slightly more relaxed at 15 minutes, properly tender at 30 to 35 minutes. Test by cutting a ring with a knife, it should yield easily and the texture should read silky-tender, not chewy.'
+  - text: 'Deglaze and braise. Pour in the 240 ml / 1 cup white wine. Bring to a simmer; the wine should reduce by half within 3 minutes (alcohol cooks off, the sharp wine note mellows into a savory base). Add the 400 g hand-crushed San Marzano tomatoes with their juice, 4 g / 1½ tsp kosher salt, and 2 g / 1 tsp black pepper. Bring back to a simmer; reduce heat to low (the surface should tremble, not boil). Cover loosely with a lid and braise 35 minutes. The squid will progress: rubbery and contracted at 5 minutes, slightly more relaxed at 15 minutes, properly tender at 30 to 35 minutes. Test by cutting a ring with a knife, it should yield easily and the texture should read silky-tender, not chewy.'
     technique: 'deglazing'
     time_min: 38
   - text: 'Boil the pasta. Bring 4500 ml / 18 cups water to a rolling boil in a large pot. Add 70 g / ¼ cup kosher salt, the water must taste like the sea. Add the 400 g linguine and cook 1 minute less than the package al dente time (typically 8 to 9 minutes; check by biting a strand at minute 8). Reserve 250 ml / 1 cup of the starchy pasta water before draining. Drain the pasta but do not rinse.'

@@ -86,7 +86,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; for the lentils, taste before adding more)'
+    note: '(2¼ tsp Diamond Crystal; for the lentils, taste before adding more)'
   - group: 'Phase 3, the lentils and finish'
     item: 'lemon juice, fresh'
     slug: 'lemon'
@@ -103,7 +103,7 @@ steps:
   - text: 'Add the 30 g / 3 tbsp berbere and the 30 g / 2 tbsp tomato paste and cook 3 minutes, stirring constantly, blooming the spices in the niter kibbeh. The mixture turns from brown-onion to brick-red as the berbere hydrates in the fat. Watch closely; berbere can scorch in under 30 seconds if the heat is too high or you stop stirring.'
     technique: 'blooming-aromatics'
     time_min: 3
-  - text: 'Add the 300 g / 1½ cups rinsed split red lentils and the 900 ml / 3¾ cups water or vegetable stock and the 6 g / 1½ tsp kosher salt. Stir to combine; the mixture should be soupy at this stage. Bring to a simmer over medium heat, then drop to low. Simmer uncovered for 25 to 35 minutes, stirring every 5 minutes to prevent the lentils from sticking to the bottom, until the lentils have completely broken down and the mixture is the consistency of thick refried beans, holding the shape of a spoon-drag across the bottom of the pot.'
+  - text: 'Add the 300 g / 1½ cups rinsed split red lentils and the 900 ml / 3¾ cups water or vegetable stock and the 6 g / 2¼ tsp kosher salt. Stir to combine; the mixture should be soupy at this stage. Bring to a simmer over medium heat, then drop to low. Simmer uncovered for 25 to 35 minutes, stirring every 5 minutes to prevent the lentils from sticking to the bottom, until the lentils have completely broken down and the mixture is the consistency of thick refried beans, holding the shape of a spoon-drag across the bottom of the pot.'
     technique: 'simmering'
     time_min: 30
   - text: 'Pull from heat. Stir in the 15 g / 1 tbsp lemon juice. Taste; the dish should read deeply spiced, slightly tangy from the lemon, fully salted. If it reads flat, more salt; if too sharp, a teaspoon of additional niter kibbeh rounds the edge.'

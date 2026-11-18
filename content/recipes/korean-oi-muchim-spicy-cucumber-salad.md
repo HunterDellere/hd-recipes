@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; 1.2% of cucumber weight)'
+    note: '(2¼ tsp Diamond Crystal; 1.2% of cucumber weight)'
 
   - group: 'Dressing'
     item: 'gochugaru (Korean chili flakes, coarse)'
@@ -95,7 +95,7 @@ ingredients:
     note: '(2 tsp; sprinkled at the end)'
 
 steps:
-  - text: 'Slice and salt-cure the cucumbers. Slice the 500 g cucumbers into 3 mm half-moons (rounds halved lengthwise first, then cut crosswise). Toss with 6 g / 1 tsp kosher salt in a colander set over a bowl. Let sit 15 minutes. Osmotic water leaves the cells, the cucumbers lose 10 to 15% of their weight, and what remains has dense flavor and stays crunchy under the dressing instead of weeping water into it.'
+  - text: 'Slice and salt-cure the cucumbers. Slice the 500 g cucumbers into 3 mm half-moons (rounds halved lengthwise first, then cut crosswise). Toss with 6 g / 2¼ tsp kosher salt in a colander set over a bowl. Let sit 15 minutes. Osmotic water leaves the cells, the cucumbers lose 10 to 15% of their weight, and what remains has dense flavor and stays crunchy under the dressing instead of weeping water into it.'
     technique: 'dry-brining'
     time_min: 15
   - text: 'Mix the dressing. In a small bowl, combine 8 g / 1 tbsp gochugaru, 10 ml / 2 tsp fish sauce, 15 ml / 1 tbsp rice vinegar, 4 g / 1 tsp sugar, and 10 g grated garlic. Whisk until the gochugaru hydrates into a loose paste and the sugar dissolves. Wait 2 minutes; the gochugaru blooms in the aqueous mixture and turns from flake-dry to brick-red and glossy.'

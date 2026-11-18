@@ -81,7 +81,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(¾ tsp; adjust at the end)'
+    note: '(1½ tsp; adjust at the end)'
 
   - group: 'Phase 3, optional broth for serving'
     item: 'chicken or beef broth, warm'

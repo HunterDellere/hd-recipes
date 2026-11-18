@@ -24,7 +24,7 @@ diet: ['dairy-free']
 
 before_you_start:
   - 'Optional but recommended: a quick parboil of the chicken. Drop the thighs into boiling water 2 minutes, then drain and rinse. This Korean technique (called called for in many home versions of dak-bokkeum-tang) removes surface scum and excess fat so the finished braise is clean rather than greasy. It is separate from a brine; do not do both, the parboil already seasons the surface lightly.'
-  - 'If you would rather brine than parboil: dissolve 30 g / 2 tbsp kosher salt in 1 L / 4 cups cold water, soak the thighs 30 to 45 minutes, pat dry, and skip the parboil. Both improve the meat; the parboil makes a cleaner sauce, the brine makes juicier meat. With either, taste before adding the optional finishing salt, since the gochujang and doenjang are salty.'
+  - 'If you would rather brine than parboil: dissolve 30 g / 3½ tbsp kosher salt in 1 L / 4 cups cold water, soak the thighs 30 to 45 minutes, pat dry, and skip the parboil. Both improve the meat; the parboil makes a cleaner sauce, the brine makes juicier meat. With either, taste before adding the optional finishing salt, since the gochujang and doenjang are salty.'
   - 'Make the sauce base (the yangnyeom) before you start cooking so it is ready to add; grate the Asian pear last so it does not brown.'
   - 'Steam Korean short-grain rice to finish with the braise; this dish is eaten with rice and banchan, not over noodles.'
 

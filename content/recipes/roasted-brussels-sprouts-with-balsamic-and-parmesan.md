@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; seasons the sprouts before the heat)'
+    note: '(1½ tsp Diamond Crystal; seasons the sprouts before the heat)'
   - group: 'Phase 1, the roast'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -89,7 +89,7 @@ steps:
     time_min: 10
   - text: 'While the oven heats, reduce the balsamic. Pour the 120 g / ½ cup balsamic vinegar and the optional 10 g / 1½ tsp honey into a small saucepan and simmer over medium heat until it has reduced to roughly a third of its volume and coats the back of a spoon with a drag-line, 5 to 8 minutes. Pull it off the heat the moment it flows like warm syrup; it thickens substantially as it cools, and an over-reduced glaze sets to a hard lacquer. Set aside.'
     time_min: 8
-  - text: 'Toss the 680 g / 1.5 lb halved sprouts in a bowl with the 30 g / 2 tbsp olive oil, the 4 g / 1 tsp kosher salt, and the 1 g / ½ tsp black pepper until every cut face is slicked with oil. Pull the hot pan out, and lay the sprouts cut-face down in a single uncrowded layer; they should sizzle faintly on contact. Spacing matters: crowded sprouts steam and never crisp, so use two pans if 1.5 lb does not fit in one clean layer.'
+  - text: 'Toss the 680 g / 1.5 lb halved sprouts in a bowl with the 30 g / 2 tbsp olive oil, the 4 g / 1½ tsp kosher salt, and the 1 g / ½ tsp black pepper until every cut face is slicked with oil. Pull the hot pan out, and lay the sprouts cut-face down in a single uncrowded layer; they should sizzle faintly on contact. Spacing matters: crowded sprouts steam and never crisp, so use two pans if 1.5 lb does not fit in one clean layer.'
     technique: 'maillard-sear'
     time_min: 5
   - text: 'Roast undisturbed for 20 minutes. Do not stir or flip early; the cut face needs uninterrupted contact with the hot pan to build the deep mahogany crust, and lifting the sprouts to peek resets that clock. The loose outer leaves scattered on the pan will char to crisp chips, which is the best part of the batch.'

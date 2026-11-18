@@ -56,7 +56,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for the batter itself; the dipping sauce carries the rest of the seasoning)'
+    note: '(1 tsp Diamond Crystal; for the batter itself; the dipping sauce carries the rest of the seasoning)'
   - group: 'Phase 1, batter'
     item: 'large egg, beaten'
     slug: 'eggs'
@@ -119,7 +119,7 @@ ingredients:
     note: '(⅓ cup; soy, rice vinegar, gochugaru, scallion, sesame; mix 10 minutes ahead so the gochugaru blooms)'
 
 steps:
-  - text: 'Mix the batter. In a medium bowl, whisk together the 100 g / ¾ cup AP flour, 35 g / ¼ cup potato starch, and 3 g / ½ tsp kosher salt. Add the 50 g / 1 beaten egg and 200 ml / ⅞ cup ice-cold water; whisk just until smooth, no lumps. Stop the moment the batter is uniform; over-whisking activates gluten and produces a bready, chewy shell rather than the crisp delicate disc the dish wants. Place the bowl in the refrigerator while you prep the solids; the cold rest (10 to 15 minutes) further relaxes any gluten that did form and steepens the temperature gradient at the pan interface.'
+  - text: 'Mix the batter. In a medium bowl, whisk together the 100 g / ¾ cup AP flour, 35 g / ¼ cup potato starch, and 3 g / 1 tsp kosher salt. Add the 50 g / 1 beaten egg and 200 ml / ⅞ cup ice-cold water; whisk just until smooth, no lumps. Stop the moment the batter is uniform; over-whisking activates gluten and produces a bready, chewy shell rather than the crisp delicate disc the dish wants. Place the bowl in the refrigerator while you prep the solids; the cold rest (10 to 15 minutes) further relaxes any gluten that did form and steepens the temperature gradient at the pan interface.'
     time_min: 5
   - text: 'Prep the scallion bed. Trim the 200 g / 2 bunches scallions of the dry root tips and any wilted leaves. Cut to 26 cm lengths (slightly under the pan diameter; you want a tight raft, not stalks hanging over the edge). For thicker stalks (white base over 1 cm thick), split lengthwise so all stalks lay flat without rocking. Pat dry on paper towels; wet scallions splatter when they hit hot oil.'
     time_min: 5

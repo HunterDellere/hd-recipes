@@ -63,7 +63,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; for the brief pre-salt on the fish sections)'
+    note: '(1½ tsp Diamond Crystal; for the brief pre-salt on the fish sections)'
 
   - group: 'Phase 3, seasoning paste (yangnyeom)'
     item: 'gochugaru (Korean chili flakes)'
@@ -148,7 +148,7 @@ ingredients:
 steps:
   - text: 'Build the anchovy-kelp stock first. Put the 10 g / one 10 cm piece kombu in a pot with the 1400 ml / 6 cups water and let it steep 15 minutes off heat (a cold steep extracts the kelp glutamate without the slimy alginates a hard boil would draw out). Pinch the heads and black guts off the 25 g / 12 to 15 dried anchovies and add the cleaned bodies. Bring to a gentle simmer over medium heat; the moment it simmers, lift out the kombu (boiled kelp turns the stock bitter and slimy). Simmer the anchovies 10 minutes, then strain out and discard the anchovies. You should have about 1.2 L of clean, savory stock. Set it aside.'
     time_min: 25
-  - text: 'Prep and pre-salt the fish. If the counter did not section it, scale, gut, and pull the gills, then scrape the dark blood line from the inside of the spine cavity with a spoon (the blood line is the single biggest source of fishy flavor). Rinse and cut the whole fish crosswise into 4 cm sections through the bone with a heavy knife, splitting the head in half; keep the head and spine, they are the gelatin. Pat the pieces dry and salt them with the 4 g / 1 tsp kosher salt. Rest 10 minutes; the brief salt firms the surface and draws out a little surface water, which keeps the flesh from clouding the broth later.'
+  - text: 'Prep and pre-salt the fish. If the counter did not section it, scale, gut, and pull the gills, then scrape the dark blood line from the inside of the spine cavity with a spoon (the blood line is the single biggest source of fishy flavor). Rinse and cut the whole fish crosswise into 4 cm sections through the bone with a heavy knife, splitting the head in half; keep the head and spine, they are the gelatin. Pat the pieces dry and salt them with the 4 g / 1½ tsp kosher salt. Rest 10 minutes; the brief salt firms the surface and draws out a little surface water, which keeps the flesh from clouding the broth later.'
     time_min: 12
   - text: 'Mix the seasoning paste (yangnyeom). In a small bowl stir together the 18 g / 3 tbsp gochugaru, the 30 g / 1½ tbsp gochujang, the 20 g / 1 tbsp doenjang, the 18 g / 5 to 6 cloves minced garlic, and the 8 g / 1 tbsp minced ginger into a loose paste. Letting it sit while the radish cooks lets the gochugaru hydrate and bloom its color into the fats already in the paste.'
     time_min: 3

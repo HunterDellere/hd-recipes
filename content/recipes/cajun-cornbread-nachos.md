@@ -108,7 +108,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; light hand because the Cajun seasoning carries salt)'
+    note: '(¾ tsp Diamond Crystal; light hand because the Cajun seasoning carries salt)'
 
   - group: 'Phase 3, the crawfish-andouille smother'
     item: 'andouille sausage, sliced 8 mm thick into half-moons'
@@ -280,7 +280,7 @@ steps:
     time_min: 10
   - text: 'Off heat, fold in the 350 g crawfish tails (with their orange fat) and the 10 ml / 2 tsp lemon juice. Stir gently and let the residual heat warm the crawfish through, 2 to 3 minutes. Taste and adjust salt and cayenne; the smother should read heat-forward but not searing, and the lemon acid should cut the smoke cleanly. Fish out the bay leaf.'
     time_min: 3
-  - text: 'Cube the cooled cornbread. With a long serrated knife, trim 0.5 cm off all four crust edges (reserve and snack), then slice the cornbread into 2 cm cubes (about 120 cubes from a quarter-sheet). On a half-sheet pan lined with parchment, toss the cubes with the 45 g / 3 tbsp melted butter, 10 g / 1 tbsp Cajun seasoning, and 2 g / ½ tsp kosher salt. Spread to a single layer.'
+  - text: 'Cube the cooled cornbread. With a long serrated knife, trim 0.5 cm off all four crust edges (reserve and snack), then slice the cornbread into 2 cm cubes (about 120 cubes from a quarter-sheet). On a half-sheet pan lined with parchment, toss the cubes with the 45 g / 3 tbsp melted butter, 10 g / 1 tbsp Cajun seasoning, and 2 g / ¾ tsp kosher salt. Spread to a single layer.'
     time_min: 6
   - text: 'Toast the croutons at 200°C / 400°F for 10 to 12 minutes, tossing once at the 6-minute mark, until the cubes are deep gold on all faces and have a hollow knock when tapped. Pull and let cool 2 minutes; they crisp further as they cool.'
     time_min: 12

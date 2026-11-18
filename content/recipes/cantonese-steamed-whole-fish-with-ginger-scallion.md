@@ -64,7 +64,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; rubbed on the fish skin and inside the cavity)'
+    note: '(1½ tsp Diamond Crystal; rubbed on the fish skin and inside the cavity)'
 
   - group: 'Phase 2, soy seasoning sauce'
     item: 'light soy sauce'
@@ -128,9 +128,9 @@ ingredients:
 steps:
   - text: 'Examine the 700 g / 1 whole fish. The fishmonger should have gutted, scaled, and removed the gills; verify all three. Rinse the cavity under cold running water; scrape any dark blood line along the inside of the spine cavity with the back of a small spoon (the blood line carries the strongest fishy flavor and is the single biggest source of "fishy fish" complaints). Pat the fish completely dry inside and out with paper towels. Wet fish steams unevenly and the seasoning sauce gets diluted on the plate; dry is non-negotiable.'
     time_min: 5
-  - text: 'With a sharp paring knife, score three diagonal slashes 1 cm deep into the flesh on each side of the fish, from the gill plate to the tail. The slashes do three things: increase surface area for the brief 4 g / 1 tsp kosher-salt cure that follows, guarantee the heat penetrates evenly to the spine in the steaming window, and provide a visual cue for doneness (the flesh in the slashes opaques first). Without slashes, the thickest part of the fillet stays translucent at the spine while the thinner belly overcooks.'
+  - text: 'With a sharp paring knife, score three diagonal slashes 1 cm deep into the flesh on each side of the fish, from the gill plate to the tail. The slashes do three things: increase surface area for the brief 4 g / 1½ tsp kosher-salt cure that follows, guarantee the heat penetrates evenly to the spine in the steaming window, and provide a visual cue for doneness (the flesh in the slashes opaques first). Without slashes, the thickest part of the fillet stays translucent at the spine while the thinner belly overcooks.'
     time_min: 2
-  - text: 'Rub the 4 g / 1 tsp kosher salt over the skin on both sides and inside the cavity, working the salt into the slashes. Splash the 15 g / 1 tbsp Shaoxing wine over the same surfaces. The brief cure (about 10 minutes resting while the steamer comes up) firms the surface flesh through partial protein denaturation, draws out a small amount of surface water, and lets the wine''s aromatic esters perfume the fish. Stuff the cavity loosely with the 15 g / sliced ginger coins (from the 25 g total knob) and the 20 g / 2 bruised scallion stalks; the aromatics deodorize the cavity from the inside during the steam.'
+  - text: 'Rub the 4 g / 1½ tsp kosher salt over the skin on both sides and inside the cavity, working the salt into the slashes. Splash the 15 g / 1 tbsp Shaoxing wine over the same surfaces. The brief cure (about 10 minutes resting while the steamer comes up) firms the surface flesh through partial protein denaturation, draws out a small amount of surface water, and lets the wine''s aromatic esters perfume the fish. Stuff the cavity loosely with the 15 g / sliced ginger coins (from the 25 g total knob) and the 20 g / 2 bruised scallion stalks; the aromatics deodorize the cavity from the inside during the steam.'
     time_min: 2
   - text: 'Set up the steamer. The traditional setup is a 30 cm bamboo steamer over a wok with 3 cm of water, but a deep skillet or wok with a fitted rack and lid works (the water needs to be 2 to 3 cm below the fish plate). Bring the steaming water to a hard rolling boil over high heat; this is critical, the steaming temperature is the hard rolling boil of water (100 °C with full vapor flux, not gentle simmer). A bamboo steamer is preferred because the wood absorbs surface condensation and prevents drips of cool water onto the fish; a metal lid wrapped in a clean kitchen towel achieves the same effect.'
     technique: 'vapor-steaming'

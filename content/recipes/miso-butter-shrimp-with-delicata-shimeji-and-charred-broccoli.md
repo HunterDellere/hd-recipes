@@ -47,7 +47,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
 
   - group: 'Phase 2; vegetables'
     item: 'delicata squash'
@@ -81,7 +81,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1¾ tsp Diamond Crystal)'
 
   - group: 'Phase 3; miso-butter glaze'
     item: 'unsalted butter'
@@ -157,7 +157,7 @@ steps:
   - text: 'Heat the oven to 230°C / 450°F with a heavy rimmed sheet pan on the middle rack. The pan must be ripping hot before the squash hits it; a cold pan steams the squash; a 230°C pan gets you Maillard browning in 90 seconds.'
     time_min: 12
 
-  - text: 'Brine the shrimp. Toss 680 g / 1.5 lb shrimp with 4 g / ¾ tsp baking soda and 4 g / ¾ tsp kosher salt in a bowl. Let sit at room temperature while you prep the vegetables. The alkaline-saline cure shifts surface protein structure and locks in water; the shrimp will read snappier and juicier with no extra effort.'
+  - text: 'Brine the shrimp. Toss 680 g / 1.5 lb shrimp with 4 g / 1½ tsp baking soda and 4 g / 1½ tsp kosher salt in a bowl. Let sit at room temperature while you prep the vegetables. The alkaline-saline cure shifts surface protein structure and locks in water; the shrimp will read snappier and juicier with no extra effort.'
     time_min: 15
 
   - text: 'In a large bowl, toss 600 g / 1.3 lb delicata half-moons with 15 g / 1 tbsp avocado oil and 3 g / ½ tsp of the kosher salt. Spread on the preheated sheet pan in a single layer. Roast 12 minutes; do not stir. The flat sides need full pan contact to char; flipping early means pale, soft squash.'
@@ -166,7 +166,7 @@ steps:
   - text: 'While the squash roasts, build the glaze. In a small bowl, whisk 45 g / 3 tbsp white miso, 30 g / 2 tbsp mirin, 30 g / 2 tbsp sake, 15 g / 1 tbsp light soy sauce, 12 g / 1 tbsp grated ginger, and 12 g / 3 cloves grated garlic. The miso will fight you for ten seconds, then loosen; keep whisking. Set aside.'
     time_min: 3
 
-  - text: 'In the same vegetable bowl, toss 450 g / 1 lb broccoli (florets and bias-cut stems) and 200 g / 2 packs separated shimeji with the remaining 15 g / 1 tbsp avocado oil and 2 g / ½ tsp kosher salt. Do not crowd them; if the bowl looks soggy, blot dry with a towel before they hit the pan.'
+  - text: 'In the same vegetable bowl, toss 450 g / 1 lb broccoli (florets and bias-cut stems) and 200 g / 2 packs separated shimeji with the remaining 15 g / 1 tbsp avocado oil and 2 g / ¾ tsp kosher salt. Do not crowd them; if the bowl looks soggy, blot dry with a towel before they hit the pan.'
     time_min: 2
 
   - text: 'Pull the squash. Push it to one half of the sheet pan, scatter the 450 g / 1 lb broccoli and 200 g / 7 oz shimeji in the open half, separating the shimeji into a single layer. The shimeji must touch the pan directly; they are dry-searing first, picking up oil from the pan film, not sitting in oil. Roast 10 minutes. The broccoli florets should char at the tips; the shimeji should crisp at the cap edges and stop reading bitter.'

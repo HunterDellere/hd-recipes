@@ -98,7 +98,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp; less if your sausage is salty)'
+    note: '(1½ tsp; less if your sausage is salty)'
 
 steps:
   - text: 'Preheat oven to 230 °C / 450 °F with the rack in the upper third. Line a sheet pan with parchment.'

@@ -41,7 +41,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp; preservative effect)'
+    note: '(1½ tsp; preservative effect)'
   - item: 'water (as needed for blending)'
     qty: 30
     unit: 'ml'

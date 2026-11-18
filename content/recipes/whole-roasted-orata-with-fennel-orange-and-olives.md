@@ -68,7 +68,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 11
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal)'
+    note: '(1¼ tbsp Diamond Crystal)'
   - group: 'Phase 2, fish'
     item: 'fennel seed'
     slug: 'fennel-seed'
@@ -134,7 +134,7 @@ steps:
   - text: 'Start the fennel. Heat the oven to 220 C / 425 F. On a rimmed sheet pan toss the 600 g / 2 bulbs fennel wedges and 150 g / 1 small red onion wedges with the 40 g / 3 tbsp olive oil for the fennel and the 6 g / 2 tsp kosher salt for the fennel. Spread cut-side down and roast 20 minutes until the undersides are browned and the wedges are starting to soften.'
     technique: 'high-heat-dry-roasting'
     time_min: 20
-  - text: 'Season the fish while the fennel roasts. Season the 1100 g / 2 scored orata inside, outside, and into the slashes with the 11 g / 1 tbsp kosher salt for the fish and the zest of the 250 g orange. Fill each cavity with half the 4 g / 1½ tsp crushed fennel seed and half of the orange rounds. Rub the outside with the 14 g / 1 tbsp olive oil for the fish. Let sit at room temperature until the fennel is ready.'
+  - text: 'Season the fish while the fennel roasts. Season the 1100 g / 2 scored orata inside, outside, and into the slashes with the 11 g / 1¼ tbsp kosher salt for the fish and the zest of the 250 g orange. Fill each cavity with half the 4 g / 1½ tsp crushed fennel seed and half of the orange rounds. Rub the outside with the 14 g / 1 tbsp olive oil for the fish. Let sit at room temperature until the fennel is ready.'
     technique: 'fish-skin-scoring'
     time_min: 8
   - text: 'Make the anchovy oil. In a small saucepan over low heat, warm the 40 g / 3 tbsp olive oil for the anchovy oil with the 12 g / 4 chopped anchovy fillets, the 12 g / 3 sliced garlic cloves, and the 1 g / ½ tsp pepper flakes. Mash until the anchovies dissolve and the garlic is soft and pale gold, 3 to 4 minutes. Off heat, stir in the 10 g / 2 tsp white wine vinegar.'

@@ -85,7 +85,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 1, red chile sauce'
     item: 'lard'
     slug: 'lard'
@@ -105,7 +105,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp plus ½ tsp Diamond Crystal)'
+    note: '(1½ tbsp plus ½ tsp Diamond Crystal)'
   - group: 'Phase 2, marinate and bake'
     item: 'kosher salt, to adjust'
     slug: 'kosher-salt'
@@ -138,7 +138,7 @@ steps:
     time_min: 6
   - text: 'Soak. Put the chiles in a heatproof bowl, pour over the 1000 ml boiling water, and weigh them down with a small plate. Soak 20 minutes until soft. Drain and discard the soaking water.'
     time_min: 20
-  - text: 'Blend. Put the chiles in the blender with the 500 ml / 2 cups chicken stock, 30 g / 8 cloves garlic, 3 g / 1 tbsp Mexican oregano, 1 g / ½ tsp ground cumin, 30 ml / 2 tbsp apple cider vinegar, 15 g / 2 tsp honey, and 6 g / 1½ tsp kosher salt for the sauce. Blend on high for 2 full minutes. Press it through a medium-mesh sieve with a wooden spoon; New Mexico chile skins are tough and stay gritty otherwise.'
+  - text: 'Blend. Put the chiles in the blender with the 500 ml / 2 cups chicken stock, 30 g / 8 cloves garlic, 3 g / 1 tbsp Mexican oregano, 1 g / ½ tsp ground cumin, 30 ml / 2 tbsp apple cider vinegar, 15 g / 2 tsp honey, and 6 g / 2¼ tsp kosher salt for the sauce. Blend on high for 2 full minutes. Press it through a medium-mesh sieve with a wooden spoon; New Mexico chile skins are tough and stay gritty otherwise.'
     time_min: 8
   - text: 'Fry the sauce. Heat the 30 g / 2 tbsp lard in a large Dutch oven over medium heat until it shimmers. Pour in the sauce (it will spatter) and cook, stirring constantly, 8 to 10 minutes, until it darkens from bright red to brick red and thickens enough to coat a spoon heavily. Frying cooks off the raw, grassy edge of the chile and develops its sweetness. Take the pot off the heat and let the sauce cool completely, about 30 minutes.'
     technique: 'blooming-aromatics'

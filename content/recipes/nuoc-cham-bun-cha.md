@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
 
   - group: 'Phase 2, broth'
     item: 'hot water'
@@ -98,7 +98,7 @@ ingredients:
     note: '(1 to 2 chilies)'
 
 steps:
-  - text: 'Toss the 120 g sliced green papaya and the 50 g sliced carrot with the 4 g / 1 tsp kosher salt. Rest 15 minutes, then squeeze firmly in your hands and discard the liquid. Salting draws out water so the slices stay crisp and absorb the broth instead of diluting it.'
+  - text: 'Toss the 120 g sliced green papaya and the 50 g sliced carrot with the 4 g / 1½ tsp kosher salt. Rest 15 minutes, then squeeze firmly in your hands and discard the liquid. Salting draws out water so the slices stay crisp and absorb the broth instead of diluting it.'
     time_min: 15
   - text: 'While the vegetables drain, stir the 50 g / ¼ cup granulated sugar into the 360 g / 1½ cups hot water until fully dissolved. Add the 60 g / ¼ cup fish sauce, the 45 g / 3 tbsp rice vinegar, and the 15 g / 1 tbsp lime juice.'
     time_min: 2

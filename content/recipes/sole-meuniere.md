@@ -57,7 +57,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; split between seasoning the fish and the flour)'
+    note: '(1¾ tsp Diamond Crystal; split between seasoning the fish and the flour)'
   - group: 'Phase 1, the fish and dredge'
     item: 'white pepper, freshly ground'
     slug: 'white-pepper'
@@ -112,7 +112,7 @@ ingredients:
     note: '(¼ tsp; for the table)'
 
 steps:
-  - text: 'Pat the 320 g / 4 sole fillets bone-dry on both sides with paper towels. A dry surface is the precondition for a crust, because surface water has to boil off before the flour can brown. Season the fillets on both sides with about half of the 5 g / 1¼ tsp kosher salt and all of the 1 g / ½ tsp white pepper.'
+  - text: 'Pat the 320 g / 4 sole fillets bone-dry on both sides with paper towels. A dry surface is the precondition for a crust, because surface water has to boil off before the flour can brown. Season the fillets on both sides with about half of the 5 g / 1¾ tsp kosher salt and all of the 1 g / ½ tsp white pepper.'
     time_min: 3
   - text: 'Set up the dredge in two shallow dishes. Pour the 120 g / ½ cup whole milk into the first. In the second, whisk the 60 g / ½ cup all-purpose flour with the remaining kosher salt from the 5 g total. Dip each fillet in the milk, let the excess run off, then lay both sides into the seasoned flour. Lift and shake off all but a whisper-thin film; a heavy coat steams instead of crisping and reads gluey. Set the dredged fillets on a rack and dredge them just before frying, since the flour goes pasty if it sits wet.'
     time_min: 3

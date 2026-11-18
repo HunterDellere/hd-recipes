@@ -83,7 +83,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; seasoned in two stages)'
+    note: '(1½ tsp Diamond Crystal; seasoned in two stages)'
   - group: 'Phase 2, the broccoli'
     item: 'water, for the steam-finish'
     qty: 30

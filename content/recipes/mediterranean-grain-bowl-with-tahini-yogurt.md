@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; the cooking water should taste assertively saline)'
+    note: '(1½ tbsp Diamond Crystal; the cooking water should taste assertively saline)'
 
   - group: 'Phase 2, the roasted vegetables'
     item: 'zucchini'
@@ -82,7 +82,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 9
     unit: 'g'
-    note: '(2¼ tsp Diamond Crystal; ~1.1% of trimmed vegetable weight)'
+    note: '(3¼ tsp Diamond Crystal; ~1.1% of trimmed vegetable weight)'
   - group: 'Phase 2, the roasted vegetables'
     item: 'dried oregano'
     slug: 'dried-oregano'
@@ -118,7 +118,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
 
   - group: 'Phase 4, the tahini-yogurt sauce'
     item: 'whole-milk Greek yogurt'
@@ -185,13 +185,13 @@ ingredients:
     note: '(⅓ cup; Bulgarian or French sheep-milk feta has a creamier melt than Greek, both work)'
 
 steps:
-  - text: 'Set the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs 15 minutes of preheat. While the oven heats, bring 1500 ml / 6 cups of water to a boil with the 12 g / 1 tbsp kosher salt for the farro.'
+  - text: 'Set the oven to 230 °C / 450 °F with a heavy half-sheet pan inside on the middle rack. The pan needs 15 minutes of preheat. While the oven heats, bring 1500 ml / 6 cups of water to a boil with the 12 g / 1½ tbsp kosher salt for the farro.'
     time_min: 15
   - text: 'Add the 200 g / 1 cup pearled farro to the boiling salted water. Cook at a steady simmer, uncovered, for 20 to 25 minutes until the grains are tender but still have a discernible bite at the center. Drain in a sieve and spread on a sheet pan to stop the carryover cooking; this prevents the grains from continuing to soften into mush.'
     time_min: 25
-  - text: 'Cut the 350 g / 2 medium zucchini into 2 cm half-moons, the 250 g / 2 medium red peppers into 2 cm squares, and the 200 g / 1 large red onion into 8 root-attached wedges. In a wide bowl, toss the cut vegetables with the 35 g / 2½ tbsp olive oil, the 9 g / 2¼ tsp kosher salt, and the 2 g / 1 tsp dried oregano. Every surface should glisten.'
+  - text: 'Cut the 350 g / 2 medium zucchini into 2 cm half-moons, the 250 g / 2 medium red peppers into 2 cm squares, and the 200 g / 1 large red onion into 8 root-attached wedges. In a wide bowl, toss the cut vegetables with the 35 g / 2½ tbsp olive oil, the 9 g / 3¼ tsp kosher salt, and the 2 g / 1 tsp dried oregano. Every surface should glisten.'
     time_min: 6
-  - text: 'Drain and pat the chickpeas dry. Spread the 250 g / 1 cup chickpeas on a kitchen towel, top with a second towel, and press gently to absorb every drop of surface moisture. In a small bowl, toss the dried chickpeas with the 15 g / 1 tbsp olive oil, the 2 g / 1 tsp ground cumin, the 2 g / 1 tsp smoked paprika, and the 2 g / ½ tsp kosher salt.'
+  - text: 'Drain and pat the chickpeas dry. Spread the 250 g / 1 cup chickpeas on a kitchen towel, top with a second towel, and press gently to absorb every drop of surface moisture. In a small bowl, toss the dried chickpeas with the 15 g / 1 tbsp olive oil, the 2 g / 1 tsp ground cumin, the 2 g / 1 tsp smoked paprika, and the 2 g / ¾ tsp kosher salt.'
     time_min: 5
   - text: 'Pull the preheated sheet pan out of the oven. Tip the dressed 800 g vegetables onto one half of the pan in a single layer with space between pieces; tip the seasoned 250 g chickpeas onto the other half. The pan should sizzle audibly on contact. Roast 20 minutes without disturbing.'
     technique: 'high-heat-dry-roasting'

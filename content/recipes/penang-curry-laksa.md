@@ -63,7 +63,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 2, rempah spice paste'
     item: 'dried red chilies'
@@ -155,7 +155,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; adjust to taste at the end)'
+    note: '(1¾ tsp Diamond Crystal; adjust to taste at the end)'
 
   - group: 'Phase 4, noodles and seafood'
     item: 'shrimp, peeled and deveined'
@@ -216,7 +216,7 @@ ingredients:
     note: '(reserved from the chicken poach; 2 tbsp sliced)'
 
 steps:
-  - text: 'Poach the chicken. Place the 800 g bone-in skin-on chicken thighs, 1800 ml / 7½ cups water, 20 g bruised ginger, 30 g bruised scallion whites, and 8 g / 1½ tsp kosher salt in a pot. Bring to a bare simmer (not boil); reduce heat and hold at a tremor for 30 to 35 minutes until the chicken reads 75°C / 165°F at the bone. Skim any scum from the surface during the first 5 minutes; clear stock is the goal.'
+  - text: 'Poach the chicken. Place the 800 g bone-in skin-on chicken thighs, 1800 ml / 7½ cups water, 20 g bruised ginger, 30 g bruised scallion whites, and 8 g / 2¾ tsp kosher salt in a pot. Bring to a bare simmer (not boil); reduce heat and hold at a tremor for 30 to 35 minutes until the chicken reads 75°C / 165°F at the bone. Skim any scum from the surface during the first 5 minutes; clear stock is the goal.'
     time_min: 35
   - text: 'Pull the chicken from the broth with tongs; cool 10 minutes until safe to handle. Strain the broth through a fine sieve and reserve, you should have about 1400 ml / 6 cups; if less, top up with water. Shred the chicken meat off the bone in 1 cm strips with two forks (skin discarded or reserved for the cook). Set aside.'
     time_min: 10
@@ -226,7 +226,7 @@ steps:
   - text: 'Fry the rempah. Heat the 60 g / 4 tbsp neutral oil in a wide heavy pan or wok over medium heat. Add the rempah paste; it will sputter. Fry, stirring constantly, until the raw chili-shallot smell shifts to a deep, jammy, almost-caramelized aroma and the paste darkens from brick-orange to deep brick-red, 12 to 15 minutes. Oil will visibly separate at the edges and pool around the paste. This is the structural flavor-development step, undercooked rempah produces a thin, raw-tasting laksa; well-fried rempah is the foundation of canonical laksa depth.'
     technique: 'blooming-aromatics'
     time_min: 14
-  - text: 'Pour in the reserved 1400 ml chicken broth and bring to a simmer. Stir to dissolve the rempah into the broth; the liquid will turn a brilliant orange-red. Add the 800 ml / 2 cans coconut milk, 15 g / 1 tbsp palm sugar, and 30 g / 2 tbsp fish sauce. Bring back to a bare simmer (do not boil hard, the coconut emulsion breaks above 95°C / 200°F). Simmer gently 20 minutes to integrate; the broth should thicken to a velvety, slightly-glossy consistency that coats a spoon. Taste, add the 5 g / 1 tsp additional salt if needed; the broth should read deep-spicy-front, with coconut richness and a sweet undertone, salt-balanced. Adjust acid at the table with lime.'
+  - text: 'Pour in the reserved 1400 ml chicken broth and bring to a simmer. Stir to dissolve the rempah into the broth; the liquid will turn a brilliant orange-red. Add the 800 ml / 2 cans coconut milk, 15 g / 1 tbsp palm sugar, and 30 g / 2 tbsp fish sauce. Bring back to a bare simmer (do not boil hard, the coconut emulsion breaks above 95°C / 200°F). Simmer gently 20 minutes to integrate; the broth should thicken to a velvety, slightly-glossy consistency that coats a spoon. Taste, add the 5 g / 1¾ tsp additional salt if needed; the broth should read deep-spicy-front, with coconut richness and a sweet undertone, salt-balanced. Adjust acid at the table with lime.'
     time_min: 22
   - text: 'Add the 80 g tofu puffs to the simmering broth; they absorb broth and soften over 5 minutes. After 5 minutes, add the 300 g shrimp; they cook in 90 seconds to 2 minutes, pull the pot off heat as soon as the shrimp are pink and opaque, residual heat finishes them. The shredded chicken goes in to warm through (it is already cooked) for the last 30 seconds.'
     time_min: 7

@@ -67,7 +67,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
   - group: 'Phase 1, shrimp marinade'
     item: 'fresh lemon juice'
     qty: 8
@@ -153,7 +153,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp; for the rice cooking liquid)'
+    note: '(2¼ tsp; for the rice cooking liquid)'
 
   - group: 'Phase 6, finish'
     item: 'fresh cilantro leaves, chopped'

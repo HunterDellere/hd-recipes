@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; ~1% by weight of grated zucchini, the salt pulls water out through osmosis)'
+    note: '(1 tsp Diamond Crystal; ~1% by weight of grated zucchini, the salt pulls water out through osmosis)'
 
   - group: 'Phase 2, the panade'
     item: 'panko breadcrumbs'
@@ -118,7 +118,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; 1.2% of the meat-plus-drained-zucchini weight, the canonical meatball salt ratio)'
+    note: '(2¼ tsp Diamond Crystal; 1.2% of the meat-plus-drained-zucchini weight, the canonical meatball salt ratio)'
   - group: 'Phase 3, the meatball mix'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -170,7 +170,7 @@ ingredients:
     note: '(½ tsp)'
 
 steps:
-  - text: 'Grate the 300 g zucchini on the large holes of a box grater into a sieve set over a bowl. Toss with the 3 g / ¾ tsp kosher salt (zucchini salt only). Let drain 20 minutes, occasionally pressing down with a flexible spatula to encourage the water release. The zucchini should release 80 to 120 g of green liquid during this rest.'
+  - text: 'Grate the 300 g zucchini on the large holes of a box grater into a sieve set over a bowl. Toss with the 3 g / 1 tsp kosher salt (zucchini salt only). Let drain 20 minutes, occasionally pressing down with a flexible spatula to encourage the water release. The zucchini should release 80 to 120 g of green liquid during this rest.'
     time_min: 20
   - text: 'While the zucchini drains, make the yogurt-dill sauce. In a small bowl, whisk together the 250 g / 1 cup Greek yogurt, the 8 g / 3 tbsp chopped dill, the 15 g / 1 tbsp lemon juice, the 3 g / 1 clove microplaned garlic, the 10 g / 2 tsp olive oil, and the 2 g / ½ tsp fine sea salt. Cover and refrigerate while the meatballs cook; the rest lets the garlic mellow.'
     time_min: 3
@@ -180,7 +180,7 @@ steps:
     time_min: 5
   - text: 'Wring out the zucchini. Transfer the drained zucchini to the center of a clean kitchen towel, gather the corners, and twist hard over the sink to expel as much water as possible. You should produce another 40 to 60 g of liquid. Unfurl the towel; the zucchini should be a dense compact pile of bright-green shreds.'
     time_min: 2
-  - text: 'In a large wide bowl, combine the 500 g ground chicken thigh, the wrung-out zucchini (about 180 g), the 60 g grated yellow onion, the 12 g / 3 cloves microplaned garlic, the 12 g chopped dill, the 10 g chopped parsley, the 3 g microplaned lemon zest, the 50 g / 1 lightly beaten egg, the milk-soaked panade, the 3 g / 1½ tsp ground cumin, the 2 g / 1 tsp ground coriander, the 6 g / 1½ tsp kosher salt, and the 2 g / 1 tsp black pepper. Mix with damp hands or a sturdy wooden spoon for 60 to 90 seconds until fully incorporated and the mixture turns from loose-and-shaggy to slightly cohesive. Do not overwork; the mixture should still feel pliable, not pasted.'
+  - text: 'In a large wide bowl, combine the 500 g ground chicken thigh, the wrung-out zucchini (about 180 g), the 60 g grated yellow onion, the 12 g / 3 cloves microplaned garlic, the 12 g chopped dill, the 10 g chopped parsley, the 3 g microplaned lemon zest, the 50 g / 1 lightly beaten egg, the milk-soaked panade, the 3 g / 1½ tsp ground cumin, the 2 g / 1 tsp ground coriander, the 6 g / 2¼ tsp kosher salt, and the 2 g / 1 tsp black pepper. Mix with damp hands or a sturdy wooden spoon for 60 to 90 seconds until fully incorporated and the mixture turns from loose-and-shaggy to slightly cohesive. Do not overwork; the mixture should still feel pliable, not pasted.'
     technique: 'myosin-extraction'
     time_min: 4
   - text: 'Shape the meatballs. With damp hands, portion the mixture into 20 meatballs of about 40 g each (a slightly heaped tablespoon scoop produces the right size). Roll each between damp palms with light pressure, do not compress, and arrange on the parchment-lined pans with 3 cm of space between meatballs. Brush each meatball lightly with the 20 g / 1½ tbsp olive oil; the oil encourages surface browning during the bake.'

@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; a light pre-salt before the blanch, draws a little surface water and firms the cut faces)'
+    note: '(1½ tsp Diamond Crystal; a light pre-salt before the blanch, draws a little surface water and firms the cut faces)'
   - group: 'Phase 1, fish prep and shimofuri blanch'
     item: 'water, for the blanch'
     qty: 1000
@@ -128,7 +128,7 @@ steps:
   - text: 'Prep the fillets. Run a fingernail across the 350 g / 2 saba fillets from tail to head and pull any pin-bones with tweezers. Cut each fillet crosswise into 2 steaks (4 total) so they fit the pan in a single layer. With a sharp knife, cut a shallow cross-hatch through the skin of each piece, just into the surface fat, never into the muscle; the scores let heat and sauce reach the dense flesh and keep the skin from buckling. Pat dry.'
     technique: 'fish-skin-scoring'
     time_min: 5
-  - text: 'Pre-salt. Lay the 4 saba steaks on a rack and sprinkle the 4 g / 1 tsp kosher salt evenly over both sides. Rest 10 minutes; clear liquid beads on the surface as the salt draws water out, firming the cut faces so they hold together through the blanch and the simmer. Pat dry again.'
+  - text: 'Pre-salt. Lay the 4 saba steaks on a rack and sprinkle the 4 g / 1½ tsp kosher salt evenly over both sides. Rest 10 minutes; clear liquid beads on the surface as the salt draws water out, firming the cut faces so they hold together through the blanch and the simmer. Pat dry again.'
     technique: 'dry-brining'
     time_min: 10
   - text: 'Shimofuri blanch. Bring the 1000 ml / 4 cups water to just off a boil (fine bubbles, not a rolling churn) in a saucepan or kettle, and set a bowl of cold water beside it. Lay the salted saba steaks in a colander or sieve and ladle the hot water over them, or lower them in for 5 seconds, until the surface turns pale-opaque and gray scum and threads of coagulated blood lift off the cut faces. Immediately plunge the steaks into the cold water and rinse gently with your fingers, clearing away any clinging scum, scales, or membrane. Lift out and pat dry. This is shimofuri: the brief scald sets a protective surface and strips the lipid off-notes and blood that would otherwise cloud the miso liquid.'

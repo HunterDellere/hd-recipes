@@ -69,7 +69,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp; salt the dressing, not the sprouts directly)'
+    note: '(1 tsp; salt the dressing, not the sprouts directly)'
   - group: 'Phase 2, the vinaigrette'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -103,7 +103,7 @@ steps:
   - text: 'Toast the 60 g / ½ cup hazelnuts in a dry skillet over medium heat, shaking often, for 6 to 8 minutes until fragrant and the skins darken and loosen. Tip them onto a towel, rub off the loose skins, and let them cool. Crush them coarse with the flat of a knife or a few pulses; you want rubble, not powder.'
     technique: 'dry-toasting'
     time_min: 8
-  - text: 'Make the vinaigrette. In the bottom of a large salad bowl, whisk the zest and 30 g / 2 tbsp juice of the lemon, the 8 g / 1 tsp dijon, the 5 g / 1 tsp honey, the 3 g / ¾ tsp kosher salt, and the 1 g / ½ tsp black pepper until the salt dissolves. Stream in the 60 g / ¼ cup olive oil while whisking so the dijon emulsifies it into a smooth, glossy dressing.'
+  - text: 'Make the vinaigrette. In the bottom of a large salad bowl, whisk the zest and 30 g / 2 tbsp juice of the lemon, the 8 g / 1 tsp dijon, the 5 g / 1 tsp honey, the 3 g / 1 tsp kosher salt, and the 1 g / ½ tsp black pepper until the salt dissolves. Stream in the 60 g / ¼ cup olive oil while whisking so the dijon emulsifies it into a smooth, glossy dressing.'
     technique: 'vinaigrette-emulsion'
     time_min: 4
   - text: 'Shave the vegetables. Shave the 450 g / 1 lb trimmed sprouts paper-thin on a mandoline (use the guard) straight into the bowl, fluffing the shreds apart as you go. Shave the small shallot (30 g) just as thin and add it. Add the microplaned half of the 40 g pecorino now so it dissolves into the dressing and seasons the whole bowl.'

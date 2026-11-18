@@ -104,7 +104,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2½ tsp Diamond Crystal; added late, after beans are tender)'
+    note: '(3½ tsp Diamond Crystal; added late, after beans are tender)'
   - group: 'Phase 3, the simmer and finish'
     item: 'granulated sugar'
     slug: 'granulated-sugar'
@@ -139,7 +139,7 @@ steps:
   - text: 'Add the 60 ml / ¼ cup dry white wine; scrape the sofrito loose from the pot bottom. Cook 90 seconds until the wine has reduced and the alcohol has burned off (sniff; raw alcohol smell should be gone).'
     technique: 'deglazing'
     time_min: 2
-  - text: 'Return the drained beans to the pot, along with the 250 ml reserved bean cooking liquid. Add the 10 g / 2½ tsp salt, 5 g / 1 tsp sugar, and 2 g / 1 tsp black pepper. Stir to combine. Bring to a steady simmer, partially covered, and cook 20 to 25 minutes for the flavors to meld and the liquid to thicken. The beans should look slightly soupy with a glossy black gravy, not dry. Add more reserved bean broth if the pot looks dry.'
+  - text: 'Return the drained beans to the pot, along with the 250 ml reserved bean cooking liquid. Add the 10 g / 3½ tsp salt, 5 g / 1 tsp sugar, and 2 g / 1 tsp black pepper. Stir to combine. Bring to a steady simmer, partially covered, and cook 20 to 25 minutes for the flavors to meld and the liquid to thicken. The beans should look slightly soupy with a glossy black gravy, not dry. Add more reserved bean broth if the pot looks dry.'
     time_min: 25
   - text: 'Off heat, stir in the 15 ml / 1 tbsp red wine vinegar. The acid brightens the dish and is the structural finish; without it the beans taste flat and one-note. Taste; adjust salt and vinegar if needed. Rest covered 5 minutes before serving.'
     time_min: 5

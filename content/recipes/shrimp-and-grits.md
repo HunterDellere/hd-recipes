@@ -58,7 +58,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, the grits'
     item: 'unsalted butter, cold cubed'
     slug: 'butter'
@@ -179,7 +179,7 @@ ingredients:
     note: '(1 lemon cut into 4 wedges)'
 
 steps:
-  - text: 'Start the grits. Combine 500 ml / 2 cups whole milk, 500 ml / 2 cups water, and 8 g / 2 tsp kosher salt in a heavy 3 quart saucepan. Bring to a hard simmer over medium-high heat. Whisk in the 200 g stone-ground coarse grits in a steady stream, whisking constantly to prevent clumping. Reduce heat to low so the surface just bubbles gently. Cover with the lid offset (slight gap for steam release). Cook 45 to 55 minutes, stirring with a wooden spoon every 5 minutes to prevent the bottom from scorching, until the grits are creamy and the individual corn-grit kernels have softened from gritty to pleasantly tender (small textural bite is correct; total smoothness is overcooked). If the grits get too thick before the cook is done, splash in hot water 60 g at a time.'
+  - text: 'Start the grits. Combine 500 ml / 2 cups whole milk, 500 ml / 2 cups water, and 8 g / 2¾ tsp kosher salt in a heavy 3 quart saucepan. Bring to a hard simmer over medium-high heat. Whisk in the 200 g stone-ground coarse grits in a steady stream, whisking constantly to prevent clumping. Reduce heat to low so the surface just bubbles gently. Cover with the lid offset (slight gap for steam release). Cook 45 to 55 minutes, stirring with a wooden spoon every 5 minutes to prevent the bottom from scorching, until the grits are creamy and the individual corn-grit kernels have softened from gritty to pleasantly tender (small textural bite is correct; total smoothness is overcooked). If the grits get too thick before the cook is done, splash in hot water 60 g at a time.'
     technique: 'simmering'
     time_min: 50
   - text: 'Dry-brine the shrimp. While the grits cook, toss the 500 g shrimp with 4 g kosher salt. Let stand 30 minutes at room temperature (or up to 1 hour in the fridge if your kitchen is warm). The salt draws surface moisture out, then re-absorbs as a thin brine that seasons the flesh and primes the shrimp to sear rather than steam.'

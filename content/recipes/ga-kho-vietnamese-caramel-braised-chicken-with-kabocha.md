@@ -23,7 +23,7 @@ course: 'dinner'
 diet: ['gluten-free', 'dairy-free']
 
 before_you_start:
-  - 'Optional but recommended brine: dissolve 30 g / 2 tbsp kosher salt in 1 L / 4 cups cold water and soak the thighs 30 to 45 minutes, then pat dry. Because the salt in a kho comes from fish sauce, a short brine deepens the meat without making the sauce salty; if you brine, taste before any final fish sauce adjustment.'
+  - 'Optional but recommended brine: dissolve 30 g / 3½ tbsp kosher salt in 1 L / 4 cups cold water and soak the thighs 30 to 45 minutes, then pat dry. Because the salt in a kho comes from fish sauce, a short brine deepens the meat without making the sauce salty; if you brine, taste before any final fish sauce adjustment.'
   - 'A traditional kho marinates the chicken 20 to 30 minutes in a little fish sauce, shallot, and pepper before braising; build this window into your timing if you can, it seasons the meat from the surface in. It stacks fine after a brine since the marinade is for flavor, not salt penetration.'
   - 'The caramel (nước màu) goes from amber to acrid in seconds and the water you add to arrest it will sputter violently. Have the warm water measured and within reach before you start the sugar, keep your hand and face back when you pour it in, and do not walk away from the pan once the sugar starts to color.'
   - 'Steam jasmine rice to finish with the braise; kho is a concentrated, salty-sweet braise meant to be eaten in small amounts over a lot of plain rice.'

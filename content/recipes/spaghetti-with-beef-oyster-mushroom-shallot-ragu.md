@@ -71,7 +71,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal, for the meat-mushroom phase)'
+    note: '(2¼ tsp Diamond Crystal, for the meat-mushroom phase)'
 
   - group: 'Umami stack'
     item: 'anchovy fillets in olive oil'
@@ -120,7 +120,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 35
     unit: 'g'
-    note: '(3 tbsp Diamond Crystal)'
+    note: '(4¼ tbsp Diamond Crystal)'
   - group: 'Pasta water'
     item: 'water'
     qty: 3000
@@ -168,14 +168,14 @@ ingredients:
     note: '(½ tsp, to finish)'
 
 steps:
-  - text: 'Set the 3000 ml / 12 cups water to boil in a 6-quart pot with the 35 g / 3 tbsp kosher salt. Taste it once boiling: it must read aggressively saline, like the sea. This water seasons the pasta from the inside; under-salted pasta water cannot be corrected later in the pan.'
+  - text: 'Set the 3000 ml / 12 cups water to boil in a 6-quart pot with the 35 g / 4¼ tbsp kosher salt. Taste it once boiling: it must read aggressively saline, like the sea. This water seasons the pasta from the inside; under-salted pasta water cannot be corrected later in the pan.'
     time_min: 8
   - text: 'While the water heats, prep everything: dice the 180 g / 4 to 5 shallots small (~3 mm), mince the 18 g / 5 cloves garlic fine, mince the 12 g / 3 anchovy fillets to a paste, tear the 250 g / 9 oz oyster mushrooms into bite-sized fans by hand along the natural fiber direction (do not slice; pulled architecture is the whole point of this recipe), crush the 400 g / one can San Marzano tomatoes by hand into rough 1 cm shreds with their juices in a bowl, grate the 60 g / ¾ cup parmigiano on a microplane, cube the 30 g / 2 tbsp butter cold, zest the lemon.'
     time_min: 10
   - text: 'Heat a wide 12-inch stainless or carbon-steel skillet (not non-stick, you need fond) over high heat until a drop of water hisses and skitters. Add the 250 g / 9 oz torn oyster mushrooms in a single layer with no oil. Dry-sear undisturbed for 90 seconds; the gill surfaces will hiss and release their water. Toss once; sear another 90 seconds undisturbed. The mushrooms should shrink visibly, lose their wet sheen, and pick up scattered dark-gold spots. Transfer to a bowl. This dry-sear-first is non-negotiable: fat added too early seals in water, and you end up with grey, soggy mushrooms with no Maillard depth.'
     technique: 'maillard-sear'
     time_min: 4
-  - text: 'Return the pan to medium-high heat. Add the 30 ml / 2 tbsp olive oil; when it shimmers, add the 450 g / 1 lb ground beef in a flat thin layer. Press it down with the back of a wooden spoon and leave it undisturbed for 2 to 3 minutes; the beef must release water and cook that water off before browning can begin. Once the underside is mahogany and the surface water has evaporated, break the meat into small irregular crumbles (not a paste, leave variation in piece size) and add the 6 g / 1½ tsp kosher salt. Continue cooking, stirring occasionally, until the meat is dry, granular, and deeply browned with a brown fond setting on the pan bottom, 5 to 6 more minutes. Skipping this dry-out-then-brown step is the single most common failure point in any ground-beef ragu; what you get otherwise is grey steamed meat with no depth.'
+  - text: 'Return the pan to medium-high heat. Add the 30 ml / 2 tbsp olive oil; when it shimmers, add the 450 g / 1 lb ground beef in a flat thin layer. Press it down with the back of a wooden spoon and leave it undisturbed for 2 to 3 minutes; the beef must release water and cook that water off before browning can begin. Once the underside is mahogany and the surface water has evaporated, break the meat into small irregular crumbles (not a paste, leave variation in piece size) and add the 6 g / 2¼ tsp kosher salt. Continue cooking, stirring occasionally, until the meat is dry, granular, and deeply browned with a brown fond setting on the pan bottom, 5 to 6 more minutes. Skipping this dry-out-then-brown step is the single most common failure point in any ground-beef ragu; what you get otherwise is grey steamed meat with no depth.'
     time_min: 9
   - text: 'Push the beef to one side of the pan. In the cleared space, add the 180 g / 4 to 5 diced shallots with the rendered beef fat. Sweat 3 minutes over medium heat until translucent and soft, stirring occasionally; do not brown the shallots (browned shallots turn bitter, and you want their sugar to come forward, not their acridity). Add the 18 g / 5 cloves minced garlic and the 12 g / 3 minced anchovy fillets. Stir together for 60 seconds; the anchovy will dissolve completely into the fat and disappear. If you can still see white flecks, keep going. The pan should smell intensely savory at this point, not fishy. Anchovies in this role are a salt-and-glutamate builder, not a fish-flavor ingredient.'
     technique: 'blooming-aromatics'
@@ -236,7 +236,7 @@ substitutions:
     note: 'White wine alone reads too thin against the beef; the vinegar adds back the acid the red was contributing. Avoid sweet or oaked wines.'
   - for: 'parmigiano reggiano'
     use: 'pecorino romano'
-    note: 'Sharper, saltier. Pull the 6 g / 1½ tsp kosher salt from the meat phase back to 3 g / ¾ tsp to compensate.'
+    note: 'Sharper, saltier. Pull the 6 g / 2¼ tsp kosher salt from the meat phase back to 3 g / ¾ tsp to compensate.'
   - for: 'anchovy fillets'
     use: 'colatura di alici (Italian fermented anchovy sauce), 1 tbsp / 15 ml stirred in after the wine reduces'
     note: 'A more refined substitute that delivers the same glutamate hit with no fillet texture. Worth the upgrade if you have it in the pantry.'

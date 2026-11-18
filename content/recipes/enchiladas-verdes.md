@@ -58,7 +58,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; for the poaching liquid)'
+    note: '(1½ tbsp Diamond Crystal; for the poaching liquid)'
   - group: 'Phase 1, the chicken'
     item: 'bay leaf'
     slug: 'bay-leaf'

@@ -60,7 +60,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal; 1% by weight of pork)'
+    note: '(3½ tbsp Diamond Crystal; 1% by weight of pork)'
   - item: 'black pepper, cracked'
     slug: 'black-pepper'
     qty: 6

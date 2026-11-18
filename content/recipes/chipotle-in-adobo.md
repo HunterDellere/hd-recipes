@@ -70,7 +70,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 2, the adobo blend'
     item: 'piloncillo or dark brown sugar'
     slug: 'dark-brown-sugar'

@@ -75,7 +75,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; the filling needs aggressive salting since the dumplings are small and the yogurt is mild)'
+    note: '(1¾ tsp Diamond Crystal; the filling needs aggressive salting since the dumplings are small and the yogurt is mild)'
   - group: 'Phase 2, the filling'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -143,7 +143,7 @@ ingredients:
 steps:
   - text: 'Make the dough: in a medium bowl, whisk together the 300 g / 2½ cups flour and 4 g / ¾ tsp fine sea salt. Make a well; add the 50 g / 1 egg and 90 g cold water. Stir with a fork until shaggy, then turn onto a clean surface and knead 8 to 10 minutes until smooth, firm, and slightly elastic. The dough should feel stiffer than pasta dough (it needs to roll paper-thin without tearing). Add 1 to 2 tbsp more water only if the dough refuses to come together; dryer is better than wetter here. Wrap tightly in plastic-free beeswax wrap or a damp kitchen towel; rest 30 minutes at room temperature.'
     time_min: 12
-  - text: 'Make the filling: in a medium bowl, combine the 250 g ground lamb, the 100 g / ½ onion (grated), 5 g / 1¼ tsp kosher salt, 2 g / 1 tsp black pepper, and 1 g / ½ tsp cumin. Mix with a fork or your hands just until uniform; do not overmix or the meat tightens. The filling should look bound and slightly wet from the grated onion. Cover and refrigerate while you roll the dough.'
+  - text: 'Make the filling: in a medium bowl, combine the 250 g ground lamb, the 100 g / ½ onion (grated), 5 g / 1¾ tsp kosher salt, 2 g / 1 tsp black pepper, and 1 g / ½ tsp cumin. Mix with a fork or your hands just until uniform; do not overmix or the meat tightens. The filling should look bound and slightly wet from the grated onion. Cover and refrigerate while you roll the dough.'
     time_min: 5
   - text: 'Divide the rested dough into 4 portions. Working with one portion at a time (keep the others wrapped), roll on a lightly floured surface to a paper-thin sheet (1 to 2 mm, the thinnest you can roll without tearing; the dough should be nearly translucent). The sheet will be roughly 30 to 35 cm square. Use a pasta machine if you have one (set to 6 or 7 of 9) for consistency.'
     time_min: 8

@@ -88,7 +88,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 2, the rice (cook separately during the braise)'
     item: 'long-grain white rice (parboiled or jasmine)'
@@ -107,7 +107,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2½ tsp; the structural total salt for the mix, ~1.5% by weight of pork + rice)'
+    note: '(3½ tsp; the structural total salt for the mix, ~1.5% by weight of pork + rice)'
   - group: 'Phase 3, the seasoning (added at grind)'
     item: 'cayenne pepper'
     qty: 3

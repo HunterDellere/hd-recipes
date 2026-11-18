@@ -43,7 +43,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; seasons both sides of all 4 cutlets)'
+    note: '(2¼ tsp Diamond Crystal; seasons both sides of all 4 cutlets)'
   - group: 'Phase 1, the pork'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
@@ -98,7 +98,7 @@ ingredients:
     note: '(small handful)'
 
 steps:
-  - text: 'Pound the pork. Lay each 600 g portion of pork loin between two sheets of parchment. Pound gently with the smooth side of a meat mallet, starting from the center and working outward, until each cutlet is 5 to 7 mm thick and covers a dinner plate. Season both sides with the 6 g / 1½ tsp salt and 2 g / 1 tsp pepper.'
+  - text: 'Pound the pork. Lay each 600 g portion of pork loin between two sheets of parchment. Pound gently with the smooth side of a meat mallet, starting from the center and working outward, until each cutlet is 5 to 7 mm thick and covers a dinner plate. Season both sides with the 6 g / 2¼ tsp salt and 2 g / 1 tsp pepper.'
     time_min: 8
   - text: 'Set up the breading station. Place 3 wide shallow dishes in a row: the 90 g flour in the first; the 2 beaten eggs in the second; the 120 g breadcrumbs in the third. Have a clean plate at the end of the line for the breaded cutlets.'
     time_min: 2

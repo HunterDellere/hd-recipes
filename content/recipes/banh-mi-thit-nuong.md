@@ -128,7 +128,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1¾ tsp Diamond Crystal)'
 
   - group: 'Phase 3, assembly components'
     item: 'Vietnamese baguettes (or French baguette)'
@@ -176,7 +176,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Make the do chua. Combine the 200 g carrot and 200 g daikon in a medium bowl. Sprinkle with 5 g / 1 tsp kosher salt and toss; let sit 10 minutes (this draws excess water out of the vegetables and improves the pickle texture). Drain off any liquid and gently squeeze handfuls of the vegetables. In a separate bowl, whisk the 120 g / ½ cup rice vinegar, 120 ml / ½ cup water, and 50 g / ¼ cup sugar until the sugar dissolves. Pour the brine over the salted vegetables; toss to coat. Pack into a glass jar; the vegetables should be submerged. Refrigerate at least 1 hour, ideally 4 hours, before serving.'
+  - text: 'Make the do chua. Combine the 200 g carrot and 200 g daikon in a medium bowl. Sprinkle with 5 g / 1¾ tsp kosher salt and toss; let sit 10 minutes (this draws excess water out of the vegetables and improves the pickle texture). Drain off any liquid and gently squeeze handfuls of the vegetables. In a separate bowl, whisk the 120 g / ½ cup rice vinegar, 120 ml / ½ cup water, and 50 g / ¼ cup sugar until the sugar dissolves. Pour the brine over the salted vegetables; toss to coat. Pack into a glass jar; the vegetables should be submerged. Refrigerate at least 1 hour, ideally 4 hours, before serving.'
     time_min: 15
   - text: 'Marinate the pork. Combine the 30 g minced lemongrass, 40 g minced shallot, 20 g minced garlic, 30 g / 2 tbsp fish sauce, 15 g / 1 tbsp soy sauce, 25 g / 2 tbsp palm sugar, 15 g / 1 tbsp oil, and 3 g / 1 tsp black pepper in a large bowl. Whisk to dissolve the sugar. Add the 600 g sliced pork shoulder; toss aggressively to coat every slice. Refrigerate covered for 2 to 12 hours.'
     time_min: 8

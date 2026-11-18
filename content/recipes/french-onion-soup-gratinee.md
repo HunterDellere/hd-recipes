@@ -56,7 +56,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(1¾ tsp Diamond Crystal; salt the onions at the start, the salt extracts water and accelerates the initial sweat phase)'
+    note: '(2¾ tsp Diamond Crystal; salt the onions at the start, the salt extracts water and accelerates the initial sweat phase)'
   - group: 'Phase 1, the caramelization'
     item: 'granulated sugar (for the onions)'
     slug: 'granulated-sugar'
@@ -119,7 +119,7 @@ ingredients:
     note: '(¼ cup; a small amount sprinkled on top of the Gruyère reinforces the browning and adds a sharper note)'
 
 steps:
-  - text: 'Heat the 60 g / 4 tbsp butter and 30 g / 2 tbsp olive oil in a wide heavy-bottomed Dutch oven or 7 L pot over medium heat until the butter is melted and starting to foam. Add the 1500 g / 6 large onions (sliced) all at once; the pot will be heaped full. Sprinkle with the 8 g / 1¾ tsp salt and the 5 g / 1 tsp sugar. Stir to coat all the onions in the fat; the volume will halve within 10 minutes as the onions release water.'
+  - text: 'Heat the 60 g / 4 tbsp butter and 30 g / 2 tbsp olive oil in a wide heavy-bottomed Dutch oven or 7 L pot over medium heat until the butter is melted and starting to foam. Add the 1500 g / 6 large onions (sliced) all at once; the pot will be heaped full. Sprinkle with the 8 g / 2¾ tsp salt and the 5 g / 1 tsp sugar. Stir to coat all the onions in the fat; the volume will halve within 10 minutes as the onions release water.'
     time_min: 5
   - text: 'The caramelization (the entire technique): reduce heat to medium-low. Cook the onions 60 to 75 minutes total, stirring with a wooden spoon every 3 to 4 minutes (more frequently in the second half), scraping the bottom of the pot to release the building fond. The phases: first 15 minutes the onions are pale and watery; minutes 15 to 30 they are wilted and beginning to color at the edges; minutes 30 to 50 they are pale gold and the bottom of the pot is darkening with caramelized sugar fond; minutes 50 to 75 they transform progressively to medium gold, dark gold, light mahogany, and finally deep mahogany brown. The onions should be soft and jammy with no remaining white or pale yellow patches. The bottom of the pot will repeatedly develop a brown fond that you scrape into the onions every 3 to 4 minutes; this fond is the entire flavor of the soup.'
     technique: 'maillard-sear'

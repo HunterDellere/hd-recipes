@@ -56,7 +56,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; in addition to the cucumber salt)'
+    note: '(1½ tsp Diamond Crystal; in addition to the cucumber salt)'
   - group: 'Phase 2, the yogurt base'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -106,7 +106,7 @@ ingredients:
 steps:
   - text: 'Grate the 400 g cucumbers on the large holes of a box grater into a fine-mesh sieve set over a bowl. Toss with the 3 g / ½ tsp fine sea salt. Let drain 15 to 20 minutes; the salt pulls the cucumber water out via osmosis. After draining, press the cucumber gently against the sieve with the back of a spoon to release additional water. Discard the cucumber water (or save for cocktails). The drained cucumber should look fluffy and weigh roughly 250 g.'
     time_min: 18
-  - text: 'In a serving bowl, whisk the 500 g / 2 cups Greek yogurt until smooth. Add the 4 g / 1 tsp kosher salt and 1 g / ½ tsp black pepper; whisk again. The yogurt should be thick enough to hold a spoon-mound briefly.'
+  - text: 'In a serving bowl, whisk the 500 g / 2 cups Greek yogurt until smooth. Add the 4 g / 1½ tsp kosher salt and 1 g / ½ tsp black pepper; whisk again. The yogurt should be thick enough to hold a spoon-mound briefly.'
     time_min: 2
   - text: 'Fold in the drained cucumber, the 8 g / ¼ cup chopped mint, and the 6 g / 2 tbsp chopped dill. Stir gently with a wooden spoon; do not overmix or the dip turns runny from the cucumber bruising.'
     time_min: 2

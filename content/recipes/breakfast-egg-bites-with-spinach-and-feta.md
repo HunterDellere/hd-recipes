@@ -62,7 +62,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; the feta contributes additional salt, taste with the wilted spinach before salting heavily)'
+    note: '(1¾ tsp Diamond Crystal; the feta contributes additional salt, taste with the wilted spinach before salting heavily)'
   - group: 'Phase 2, the egg batter'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -113,7 +113,7 @@ steps:
     time_min: 5
   - text: 'Rub the muffin tin with butter. Take the 20 g / 1½ tbsp cold butter and, using your fingers, rub it generously into every well of a standard 12-cup metal muffin tin, including the top rim. Every surface that the egg might touch needs to be buttered. Set aside.'
     time_min: 3
-  - text: 'Blend the egg base. In a high-speed blender, combine the 400 g / 8 eggs, the 200 g cottage cheese, the 5 g / 1¼ tsp kosher salt, the 2 g / 1 tsp black pepper, and the 0.3 g / ¼ tsp grated nutmeg. Blend on high for 30 seconds, until completely smooth and slightly foamy on top. The cottage cheese curds should fully integrate; if any curd flecks remain visible, blend another 15 seconds.'
+  - text: 'Blend the egg base. In a high-speed blender, combine the 400 g / 8 eggs, the 200 g cottage cheese, the 5 g / 1¾ tsp kosher salt, the 2 g / 1 tsp black pepper, and the 0.3 g / ¼ tsp grated nutmeg. Blend on high for 30 seconds, until completely smooth and slightly foamy on top. The cottage cheese curds should fully integrate; if any curd flecks remain visible, blend another 15 seconds.'
     time_min: 2
   - text: 'Assemble. Divide the wilted chopped spinach, the 100 g crumbled feta, the 30 g sliced scallions, and the 5 g chopped dill across the 12 buttered muffin wells (about 7 g of spinach, 8 g of feta, 2.5 g of scallion per well). Pour the blended egg base evenly over the fillings, filling each well to about 3 mm below the rim (the eggs puff slightly during baking, the small headspace prevents overflow). Each well takes about 50 g of egg base.'
     time_min: 4

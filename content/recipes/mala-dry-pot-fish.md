@@ -55,7 +55,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(¾ tsp)'
+    note: '(1½ tsp)'
   - group: 'Phase 1, fish prep'
     item: 'cornstarch'
     qty: 20

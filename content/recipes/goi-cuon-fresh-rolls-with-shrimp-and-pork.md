@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1¾ tsp Diamond Crystal)'
 
   - group: 'Phase 2, pork'
     item: 'pork belly, skin-on'
@@ -79,7 +79,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 3, vermicelli and rolling components'
     item: 'rice vermicelli (bun), dried'
@@ -208,10 +208,10 @@ ingredients:
     note: '(2 tbsp; the canonical visual and textural finish)'
 
 steps:
-  - text: 'Poach the pork. Place the 400 g pork belly in a saucepan with the 1500 ml / 6 cups water, 20 g bruised ginger, 20 g bruised scallion whites, and 8 g / 1½ tsp kosher salt. Bring to a bare simmer; cook 30 to 35 minutes until fork-tender (the pork should yield to a chopstick poke). Pull and let cool 15 minutes; then slice into 3 mm thin slices against the grain. Refrigerate while you continue.'
+  - text: 'Poach the pork. Place the 400 g pork belly in a saucepan with the 1500 ml / 6 cups water, 20 g bruised ginger, 20 g bruised scallion whites, and 8 g / 2¾ tsp kosher salt. Bring to a bare simmer; cook 30 to 35 minutes until fork-tender (the pork should yield to a chopstick poke). Pull and let cool 15 minutes; then slice into 3 mm thin slices against the grain. Refrigerate while you continue.'
     technique: 'poaching'
     time_min: 50
-  - text: 'Poach the shrimp. Bring 1000 ml / 4 cups water with 5 g / 1 tsp salt to a hard boil. Add the 300 g shell-on shrimp; cook 90 seconds to 2 minutes until just pink and opaque. Pull immediately with a slotted spoon to an ice bath; the cold shock stops the cook and firms the texture. Once cooled (3 minutes), peel and devein the shrimp, then slice each shrimp lengthwise in half (so each shrimp produces two flat shrimp halves with the C-curve flat against the rice paper for visual signature).'
+  - text: 'Poach the shrimp. Bring 1000 ml / 4 cups water with 5 g / 1¾ tsp salt to a hard boil. Add the 300 g shell-on shrimp; cook 90 seconds to 2 minutes until just pink and opaque. Pull immediately with a slotted spoon to an ice bath; the cold shock stops the cook and firms the texture. Once cooled (3 minutes), peel and devein the shrimp, then slice each shrimp lengthwise in half (so each shrimp produces two flat shrimp halves with the C-curve flat against the rice paper for visual signature).'
     technique: 'poaching'
     time_min: 8
   - text: 'Cook the vermicelli. Bring a fresh pot of water to a hard boil. Drop in the 150 g rice vermicelli; cook 2 to 3 minutes until just tender (taste a strand). Drain immediately; rinse aggressively under cold running water for 60 seconds to stop the cook and wash off surface starch. Drain again; toss with a few drops of neutral oil to prevent clumping. Set aside.'

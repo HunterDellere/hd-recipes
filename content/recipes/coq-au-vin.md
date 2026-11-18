@@ -48,7 +48,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 16
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; salt the chicken before marinade, the salt dry-brines through the marinade and seasons the meat from inside)'
+    note: '(2 tbsp Diamond Crystal; salt the chicken before marinade, the salt dry-brines through the marinade and seasons the meat from inside)'
   - group: 'Phase 1, the overnight wine marinade'
     item: 'red Burgundy or pinot noir (full bottle, dry, medium-body)'
     qty: 750
@@ -139,7 +139,7 @@ ingredients:
     note: '(a small handful)'
 
 steps:
-  - text: 'Day 1, evening (the marinade): season the 1800 g / 4 lb chicken pieces with the 16 g / 1 tbsp salt and 2 g / 1 tsp black pepper, rubbing into all surfaces. Transfer to a large bowl or zip-top bag. Add the 750 ml / 1 bottle red Burgundy, the 200 g / 1 onion (sliced), 20 g / 5 to 6 cloves smashed garlic, and the bouquet garni. Cover or seal; refrigerate 12 to 24 hours. The wine penetrates the meat and stains it deeply purple (this is normal and the color cooks out to mahogany brown).'
+  - text: 'Day 1, evening (the marinade): season the 1800 g / 4 lb chicken pieces with the 16 g / 2 tbsp salt and 2 g / 1 tsp black pepper, rubbing into all surfaces. Transfer to a large bowl or zip-top bag. Add the 750 ml / 1 bottle red Burgundy, the 200 g / 1 onion (sliced), 20 g / 5 to 6 cloves smashed garlic, and the bouquet garni. Cover or seal; refrigerate 12 to 24 hours. The wine penetrates the meat and stains it deeply purple (this is normal and the color cooks out to mahogany brown).'
     time_min: 720
   - text: 'Day 2 (the cook): remove the chicken from the marinade; pat each piece thoroughly dry with paper towels (any surface water prevents the sear, and the wine-soaked surface is wetter than usual). Strain the marinade through a fine-mesh sieve into a saucepan, reserving the solids (onion, garlic, bouquet garni) separately. Bring the strained wine to a hard boil in the saucepan and skim off the foamy grey protein scum that rises in the first 2 minutes (this is dissolved myoglobin from the chicken; skimming clarifies the sauce). Reduce the wine by about a third (8 to 10 minutes). Reserve.'
     time_min: 12

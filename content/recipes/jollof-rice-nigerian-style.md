@@ -47,7 +47,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; salts the parboil water lightly so the rice starts seasoned)'
+    note: '(2¾ tsp Diamond Crystal; salts the parboil water lightly so the rice starts seasoned)'
 
   - group: 'Phase 2, the pepper blend (obe ata)'
     item: 'red bell peppers, stemmed and seeded, roughly chopped'
@@ -133,7 +133,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; taste before adding more, the Maggi already contributes salt)'
+    note: '(2¼ tsp Diamond Crystal; taste before adding more, the Maggi already contributes salt)'
   - group: 'Phase 3, the cook'
     item: 'water or chicken stock'
     qty: 500
@@ -141,7 +141,7 @@ ingredients:
     note: '(2 cups; for the rice simmer, supplements the obe ata liquid)'
 
 steps:
-  - text: 'Bring the 2000 ml / 8 cups water to a boil in a large pot with the 8 g / 2 tsp kosher salt. Add the rinsed 500 g / 2½ cups parboiled rice and boil for exactly 4 minutes (longer for non-parboiled rice), stirring once. Drain in a colander, rinse briefly under cold water to stop the cook, and set aside. The rice is now half-cooked; it will finish in the pepper base for another 25 to 30 minutes. This parboil is the Nigerian-method signature; it lets the rice absorb the pepper base flavor without going mushy.'
+  - text: 'Bring the 2000 ml / 8 cups water to a boil in a large pot with the 8 g / 2¾ tsp kosher salt. Add the rinsed 500 g / 2½ cups parboiled rice and boil for exactly 4 minutes (longer for non-parboiled rice), stirring once. Drain in a colander, rinse briefly under cold water to stop the cook, and set aside. The rice is now half-cooked; it will finish in the pepper base for another 25 to 30 minutes. This parboil is the Nigerian-method signature; it lets the rice absorb the pepper base flavor without going mushy.'
     time_min: 8
   - text: 'In a high-powered blender, combine the 400 g / 3 large red bell peppers, the 400 g / 4 to 5 roma tomatoes, the 12 g / 2 to 3 scotch bonnets, and 150 g / half of the 1 large red onion. Blend on high for 60 to 90 seconds to a completely smooth bright-red puree, scraping down sides as needed. This is the obe ata, the structural base of Nigerian cooking. The puree should be thick but pourable; if it is too thick to blend smoothly, add 2 to 3 tablespoons of water. Set aside.'
     time_min: 5
@@ -156,7 +156,7 @@ steps:
   - text: 'Pour the blended obe ata pepper puree into the pot and stir to combine. Bring to a vigorous simmer over medium heat, then drop to medium-low and cook uncovered for 25 to 30 minutes, stirring every 5 minutes. The puree starts watery and bright red; over the cook, the water boils off and the sauce thickens and darkens to a deep brick-red. The signal for done is when the oil visibly splits out at the edges and the sauce is the consistency of thick pizza sauce. This long reduction is non-negotiable; skipping it produces thin watery jollof with no depth.'
     technique: 'reduction'
     time_min: 28
-  - text: 'Add the 4 g / 1 Maggi cube (crumbled in) and the 6 g / 1½ tsp kosher salt. Stir to dissolve. Taste the base; it should read deeply spiced, bold, slightly hot from the scotch bonnet. Add more salt if flat.'
+  - text: 'Add the 4 g / 1 Maggi cube (crumbled in) and the 6 g / 2¼ tsp kosher salt. Stir to dissolve. Taste the base; it should read deeply spiced, bold, slightly hot from the scotch bonnet. Add more salt if flat.'
     time_min: 1
   - text: 'Add the parboiled 500 g / 2½ cups rice to the reduced pepper base and stir to coat every grain in the brick-red sauce. Pour in the 500 ml / 2 cups water or chicken stock and stir once to even out. The liquid should just barely cover the rice; if it does not, add a small splash more. Bring to a gentle simmer over medium heat.'
     time_min: 3

@@ -37,7 +37,7 @@ ingredients:
     slug: 'chicken-thigh'
     qty: 1000
     unit: 'g'
-    prep: 'patted dry, salted with 5 g / 1 tsp kosher salt 15 minutes before cooking'
+    prep: 'patted dry, salted with 5 g / 1¾ tsp kosher salt 15 minutes before cooking'
     note: '(about 6 thighs; bone and skin contribute structure to the glaze and fat to the reduction. Boneless thighs work but produce a leaner, less-glossy finished dish)'
   - group: 'Phase 1, braise'
     item: 'cane vinegar (sukang iloko or Filipino cane vinegar)'

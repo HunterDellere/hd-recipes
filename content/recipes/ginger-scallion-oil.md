@@ -46,7 +46,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
   - group: 'Aromatic paste'
     item: 'light soy sauce'
     slug: 'light-soy-sauce'
@@ -80,7 +80,7 @@ steps:
     time_min: 5
   - text: 'Mince 100 g / 8-10 stalks scallion whites and pale greens to the same fineness. Combine with the ginger in a heatproof bowl (metal or thick ceramic; the oil will hit 190°C / 375°F).'
     time_min: 5
-  - text: 'Stir 4 g / ½ tsp kosher salt and the optional 8 g / ½ tbsp light soy sauce into the aromatic paste. The salt cure pulls a tablespoon of water out of the ginger and scallion in 5 minutes, which is what allows the oil to penetrate; without the cure, the high water content steam-cooks the aromatics into a soft mush rather than the gentle deep-fry the technique calls for. Rest 5 minutes.'
+  - text: 'Stir 4 g / 1½ tsp kosher salt and the optional 8 g / ½ tbsp light soy sauce into the aromatic paste. The salt cure pulls a tablespoon of water out of the ginger and scallion in 5 minutes, which is what allows the oil to penetrate; without the cure, the high water content steam-cooks the aromatics into a soft mush rather than the gentle deep-fry the technique calls for. Rest 5 minutes.'
     technique: 'dry-brining'
     time_min: 5
   - text: 'Heat 200 ml / ¾ cup + 1 tbsp neutral oil in a small saucepan over medium-high until just smoking, about 190°C / 375°F. The visual cue: a wooden chopstick dipped in produces vigorous bubbles around it within a second. If you have a thermometer, use it; if you do not, count from the first wisp of smoke and pull within 30 seconds.'

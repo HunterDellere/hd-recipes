@@ -64,7 +64,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; the feta is very salty, so season the greens conservatively)'
+    note: '(¾ tsp Diamond Crystal; the feta is very salty, so season the greens conservatively)'
 
   - group: 'Phase 2, the filling'
     item: 'feta, crumbled'
@@ -141,7 +141,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Wilt the greens. Wash the 500 g beet greens in two changes of cold water. Warm the 30 g / 2 tbsp olive oil in a wide pot over medium-high. Add the finely chopped stems and cook 2 minutes; add the 60 g sliced scallions and the 9 g / 2 to 3 minced garlic, cook 1 minute until fragrant. Add the chopped leaves in handfuls with the 2 g / ½ tsp kosher salt, tossing each addition down, and cook 3 to 4 minutes until fully wilted and collapsed. Tip into a sieve set over a bowl and let cool enough to handle, 10 minutes.'
+  - text: 'Wilt the greens. Wash the 500 g beet greens in two changes of cold water. Warm the 30 g / 2 tbsp olive oil in a wide pot over medium-high. Add the finely chopped stems and cook 2 minutes; add the 60 g sliced scallions and the 9 g / 2 to 3 minced garlic, cook 1 minute until fragrant. Add the chopped leaves in handfuls with the 2 g / ¾ tsp kosher salt, tossing each addition down, and cook 3 to 4 minutes until fully wilted and collapsed. Tip into a sieve set over a bowl and let cool enough to handle, 10 minutes.'
     technique: 'blooming-aromatics'
     time_min: 8
   - text: 'Squeeze the greens bone-dry. This is the step the whole pie depends on. Working in two batches, gather the wilted greens into a clean kitchen towel, twist hard over the sink, and wring until almost no liquid releases; a 500 g raw bunch should give up a startling amount of water and reduce to a tight dense ball. Pull the squeezed ball apart with your fingers so the greens are loose again rather than a compressed clump. Residual water here steams the filo soggy from inside, so squeeze harder than feels necessary.'

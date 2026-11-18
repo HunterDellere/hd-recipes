@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; salts the paddles before they hit the heat, draws a film of mucilage to the surface where the heat sets it)'
+    note: '(2¼ tsp Diamond Crystal; salts the paddles before they hit the heat, draws a film of mucilage to the surface where the heat sets it)'
   - group: 'Phase 1, charred nopales'
     item: 'avocado oil or other neutral high-heat oil'
     slug: 'avocado-oil'
@@ -125,7 +125,7 @@ ingredients:
 steps:
   - text: 'Clean the 600 g / 4 to 5 nopal paddles. Hold each paddle by the stem end with a kitchen towel to protect the hand; with the back of a chef knife or a vegetable peeler, scrape off the glochid clusters (the small brown dots that hold the fine spines) and any larger spines. Both surfaces, both edges. Trim 5 mm off the thick basal nub where the paddle was attached to the plant. The paddle should now be smooth, deep green, and free of any white bumps; rinse briefly and pat dry. Glochid management is the entire failure mode of nopales cookery; a missed glochid embedded in a fingertip is hard to find and ruins the eating experience.'
     time_min: 10
-  - text: 'Score and salt the paddles. Lay each cleaned paddle flat and cut shallow 2 mm deep diagonal scores across one face at 1.5 cm intervals (a crosshatch on a thicker paddle, a single direction on a thinner one); the scoring lets the heat penetrate evenly and lets the mucilage release where it can be charred set. Season both faces of all paddles with the 6 g / 1½ tsp kosher salt and let stand 5 minutes. The salt draws a glistening film of mucilage (a heteropolysaccharide network of arabinogalactan and pectin polymers) to the surface; the same slime that boiled nopales rinse away to fix the texture, this method instead chars in place.'
+  - text: 'Score and salt the paddles. Lay each cleaned paddle flat and cut shallow 2 mm deep diagonal scores across one face at 1.5 cm intervals (a crosshatch on a thicker paddle, a single direction on a thinner one); the scoring lets the heat penetrate evenly and lets the mucilage release where it can be charred set. Season both faces of all paddles with the 6 g / 2¼ tsp kosher salt and let stand 5 minutes. The salt draws a glistening film of mucilage (a heteropolysaccharide network of arabinogalactan and pectin polymers) to the surface; the same slime that boiled nopales rinse away to fix the texture, this method instead chars in place.'
     time_min: 7
   - text: 'Heat a heavy comal, cast iron skillet, or carbon-steel griddle over medium-high heat for 3 to 4 minutes until a flick of water snaps and evaporates within 2 seconds. Brush or wipe the surface with the 10 g / 2 tsp avocado oil; just enough to gloss the metal, no pooling. Pooled oil pops and smokes once the wet paddles hit and disrupts the char. The pan should be at 230 to 260 °C / 450 to 500 °F surface; the surface oil should shimmer and barely smoke at the edges.'
     technique: 'comal-charring'

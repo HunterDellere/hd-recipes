@@ -23,7 +23,7 @@ course: 'dinner'
 diet: ['dairy-free']
 
 before_you_start:
-  - 'Optional but recommended brine: dissolve 30 g / 2 tbsp kosher salt in 1 L / 4 cups cold water and submerge the thighs 30 to 45 minutes, then pat fully dry. A short wet brine seasons the meat to the bone and buys insurance against the lean thigh edges drying during the braise. If you brine, cut the salt added during cooking to the soy alone and taste before any final salt.'
+  - 'Optional but recommended brine: dissolve 30 g / 3½ tbsp kosher salt in 1 L / 4 cups cold water and submerge the thighs 30 to 45 minutes, then pat fully dry. A short wet brine seasons the meat to the bone and buys insurance against the lean thigh edges drying during the braise. If you brine, cut the salt added during cooking to the soy alone and taste before any final salt.'
   - 'Soak the dried shiitake in 300 ml / 1¼ cups just-boiled water for at least 30 minutes before you start cooking; the soaking liquid IS the braising stock and carries most of the mushroom glutamate. Start this first, or soak overnight in cold water for a cleaner, less bitter extraction.'
   - 'Steam jasmine rice to finish 5 minutes before the braise; clay-pot chicken is served immediately, spooned over hot rice so the sauce soaks in.'
   - 'Taro is mildly irritating to handle raw (calcium oxalate raphides); peel under running water or wear gloves, and do not rub your eyes. Cooking destroys the irritant completely.'
@@ -46,7 +46,7 @@ ingredients:
     slug: 'chicken-thigh'
     qty: 1000
     unit: 'g'
-    prep: 'patted very dry, salted with 5 g / 1 tsp kosher salt if not brined'
+    prep: 'patted very dry, salted with 5 g / 1¾ tsp kosher salt if not brined'
     note: '(about 6 thighs; bone and skin give the sauce gelatin and rendered fat. Boneless thighs work but the braise is leaner)'
   - group: 'Phase 2, the chicken'
     item: 'neutral oil'

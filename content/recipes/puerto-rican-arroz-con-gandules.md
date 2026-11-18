@@ -118,7 +118,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; less if using salted stock)'
+    note: '(2¾ tsp Diamond Crystal; less if using salted stock)'
 
 steps:
   - text: 'Make the achiote oil. Heat the 45 ml / 3 tbsp neutral oil in a small saucepan over low heat. Add the 5 g whole annatto seeds; warm 4 to 5 minutes (do not exceed 80 °C / 175 °F or the seeds turn bitter). The oil should turn deep red-orange. Strain through a fine-mesh sieve, discarding the seeds. Use immediately, in a heavy-bottomed Dutch oven or caldero over medium heat.'
@@ -130,7 +130,7 @@ steps:
     time_min: 4
   - text: 'Add the 250 g drained pigeon peas, 40 g sliced olives, 10 g capers, 3 g / 1½ tsp cumin, 2 g / ¾ tsp oregano, and 2 bay leaves. Stir 1 minute to combine.'
     time_min: 2
-  - text: 'Add the 400 g / 2 cups rinsed rice; stir for 90 seconds in the orange sofrito-and-pea base until every grain is coated and the rice turns deep orange. Add the 700 ml / 3 cups water or stock and the 8 g / 2 tsp salt. Stir once to distribute.'
+  - text: 'Add the 400 g / 2 cups rinsed rice; stir for 90 seconds in the orange sofrito-and-pea base until every grain is coated and the rice turns deep orange. Add the 700 ml / 3 cups water or stock and the 8 g / 2¾ tsp salt. Stir once to distribute.'
     time_min: 2
   - text: 'Bring to a hard boil over medium-high heat, uncovered. Once boiling, stir once to lift any rice that has sunk to the bottom and ensure even distribution. Reduce heat to medium-low; let the rice cook uncovered until the liquid has reduced to just below the surface of the rice, about 8 minutes. Bubbles will rise through small craters across the rice surface.'
     time_min: 8

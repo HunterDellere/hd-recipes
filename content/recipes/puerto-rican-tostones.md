@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; for finishing)'
+    note: '(2¼ tsp Diamond Crystal; for finishing)'
 
   - group: 'Phase 2, the mojo dipping sauce'
     item: 'garlic cloves'
@@ -63,7 +63,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 2, the mojo dipping sauce'
     item: 'extra virgin olive oil'
     slug: 'extra-virgin-olive-oil'
@@ -87,7 +87,7 @@ ingredients:
 steps:
   - text: 'Peel the plantains. Cut off both ends. Score the skin lengthwise in 3 or 4 places, cutting only through the skin (not into the flesh). Lift the skin off in strips, working under hot tap water if it resists. Cut the peeled plantains crosswise into 3 cm coins (about 16 coins from 3 plantains). Drop the coins into a bowl of salted water to prevent oxidation; they will brown if exposed to air more than 5 minutes.'
     time_min: 6
-  - text: 'Make the mojo. Pound the 20 g / 5 cloves garlic with the 3 g / ¾ tsp salt in a mortar (or chop very fine on a cutting board) until you have a paste. Transfer to a small bowl. Whisk in the 60 ml / ¼ cup olive oil and 30 ml / 2 tbsp lime juice. Stir in the 5 g / 1 tbsp chopped parsley. Reserve for serving; mojo is best made fresh and used within an hour.'
+  - text: 'Make the mojo. Pound the 20 g / 5 cloves garlic with the 3 g / 1 tsp salt in a mortar (or chop very fine on a cutting board) until you have a paste. Transfer to a small bowl. Whisk in the 60 ml / ¼ cup olive oil and 30 ml / 2 tbsp lime juice. Stir in the 5 g / 1 tbsp chopped parsley. Reserve for serving; mojo is best made fresh and used within an hour.'
     time_min: 4
   - text: 'Heat the 600 ml / 2½ cups neutral oil in a deep skillet or Dutch oven to 150 °C / 300 °F (use a deep-fry thermometer; the oil should ripple gently and a wooden chopstick dipped in should produce small slow bubbles, not vigorous bubbles). The oil should be about 3 cm deep.'
     time_min: 5
@@ -97,7 +97,7 @@ steps:
     time_min: 5
   - text: 'Crank the oil to 190 °C / 375 °F (chopstick dipped in should produce vigorous fast bubbles). Fry the smashed disks in batches of 6 to 8, 2 to 3 minutes per batch, flipping once, until they are deep gold with shattering crispy edges and surface texture. Transfer to a fresh paper-towel-lined plate.'
     time_min: 8
-  - text: 'Immediately season the hot tostones with the 6 g / 1½ tsp kosher salt, sprinkled evenly from height (the salt sticks best to the freshly-fried surface). Serve immediately with the mojo dipping sauce; tostones soften within 15 minutes of frying and should be eaten hot.'
+  - text: 'Immediately season the hot tostones with the 6 g / 2¼ tsp kosher salt, sprinkled evenly from height (the salt sticks best to the freshly-fried surface). Serve immediately with the mojo dipping sauce; tostones soften within 15 minutes of frying and should be eaten hot.'
     time_min: 2
 
 techniques: ['blooming-aromatics']

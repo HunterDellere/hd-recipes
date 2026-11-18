@@ -153,7 +153,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; to taste at the end)'
+    note: '(1½ tsp Diamond Crystal; to taste at the end)'
 
   - group: 'Tacos and garnish'
     item: 'corn tortillas, 12 to 15 cm / 5 to 6 inch'
@@ -196,7 +196,7 @@ steps:
     time_min: 240
   - text: 'Separate meat, fat, and consomé. Lift the meat out with tongs onto a tray. Let the pot sit off the heat for 10 minutes so the fat rises, then ladle the red fat off the surface into a small bowl; you want about 60 g / ¼ cup for the tortillas (if made a day ahead, lift off the chilled fat disk instead). Remove the onion and bay leaves. Pull the oxtail meat from the bones and shred the chuck with two forks, discarding bones and gristle. Moisten the shredded meat with 240 ml / 1 cup of the consomé so it stays juicy.'
     time_min: 20
-  - text: 'Season the consomé. Taste the consomé. It should be rich and sippable, closer to a brothy soup than a sauce. If it tastes heavy or too concentrated, thin it with up to 500 ml / 2 cups water; if thin, simmer it uncovered for 10 to 15 minutes. Season with about 4 g / 1 tsp kosher salt, tasting as you go: a properly salted consomé makes the chiles taste fruity instead of harsh. Keep it hot over low heat.'
+  - text: 'Season the consomé. Taste the consomé. It should be rich and sippable, closer to a brothy soup than a sauce. If it tastes heavy or too concentrated, thin it with up to 500 ml / 2 cups water; if thin, simmer it uncovered for 10 to 15 minutes. Season with about 4 g / 1½ tsp kosher salt, tasting as you go: a properly salted consomé makes the chiles taste fruity instead of harsh. Keep it hot over low heat.'
     time_min: 10
   - text: 'Make the tacos. Heat a comal or large skillet over medium-high heat. Dip one side of each of the 720 g / 24 corn tortillas into the reserved red fat (or brush it on), lay it fat-side down on the comal, and pile about 45 g / 3 tbsp shredded meat on one half. Fold and cook 1 to 2 minutes per side, pressing with a metal spatula, until the tortilla is crisp and stained red at the edges. Work in batches and keep finished tacos in a low oven.'
     time_min: 25

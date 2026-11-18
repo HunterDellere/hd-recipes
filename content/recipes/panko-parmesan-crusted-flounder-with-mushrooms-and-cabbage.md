@@ -62,7 +62,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; salt the cabbage directly, it needs seasoning of its own)'
+    note: '(1 tsp Diamond Crystal; salt the cabbage directly, it needs seasoning of its own)'
   - group: 'Phase 1, butter-braised cabbage'
     item: 'apple cider vinegar'
     slug: 'apple-cider-vinegar'
@@ -114,7 +114,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; added only after the mushrooms have browned, never before, or they weep and steam)'
+    note: '(¾ tsp Diamond Crystal; added only after the mushrooms have browned, never before, or they weep and steam)'
 
   - group: 'Phase 3, the crust and fish'
     item: 'flounder fillets (or sole or fluke)'
@@ -128,7 +128,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; a light direct season, kept low because the 40 g parmigiano in the crust deposits most of the salt onto the fish surface)'
+    note: '(¾ tsp Diamond Crystal; a light direct season, kept low because the 40 g parmigiano in the crust deposits most of the salt onto the fish surface)'
   - group: 'Phase 3, the crust and fish'
     item: 'panko'
     slug: 'panko'
@@ -190,12 +190,12 @@ ingredients:
     note: '(2 tbsp; scattered over the plate for a fresh green note)'
 
 steps:
-  - text: 'Braise the cabbage first. Melt the 30 g / 2 tbsp butter in a wide lidded skillet over medium heat, add the 2 g / 1 tsp crushed caraway seed, and let it sizzle 30 seconds until fragrant. Lay the 400 g cabbage wedges cut-side down in a single layer and let them take a little color for 2 minutes. Season with the 3 g / ¾ tsp kosher salt, pour in the 80 ml / ⅓ cup water or stock, cover, and steam-braise over medium-low for 8 to 10 minutes until a knife slides through the thick core end with only slight resistance. Uncover, raise the heat, and cook off any remaining liquid so the wedges glaze in the butter. Off heat, spoon the 8 g / 1½ tsp cider vinegar over the top and turn the wedges once. Hold warm; the cabbage improves as it sits.'
+  - text: 'Braise the cabbage first. Melt the 30 g / 2 tbsp butter in a wide lidded skillet over medium heat, add the 2 g / 1 tsp crushed caraway seed, and let it sizzle 30 seconds until fragrant. Lay the 400 g cabbage wedges cut-side down in a single layer and let them take a little color for 2 minutes. Season with the 3 g / 1 tsp kosher salt, pour in the 80 ml / ⅓ cup water or stock, cover, and steam-braise over medium-low for 8 to 10 minutes until a knife slides through the thick core end with only slight resistance. Uncover, raise the heat, and cook off any remaining liquid so the wedges glaze in the butter. Off heat, spoon the 8 g / 1½ tsp cider vinegar over the top and turn the wedges once. Hold warm; the cabbage improves as it sits.'
     time_min: 14
-  - text: 'Sear the mushrooms while the cabbage braises. Heat the 12 g / 1 tbsp neutral oil in a separate skillet (cast iron or stainless) over medium-high until it shimmers. Add the 150 g torn oyster mushrooms and 100 g separated shimeji in a single layer and, critically, do not touch them or salt them for the first 2 minutes. The mushrooms release their water first; only once that water has boiled off and the pan is dry do the cut faces begin to brown. Sear 4 to 5 minutes total, tossing only after the first browning, until the edges are deep gold and the tangle has shrunk by half. Now add the 15 g / 1 tbsp butter, the 6 g / 2 sliced garlic cloves, the 1 g / ½ tsp thyme, and the 2 g / ½ tsp kosher salt; toss 60 seconds until the garlic is fragrant and the butter browns lightly. Pull off heat and hold warm.'
+  - text: 'Sear the mushrooms while the cabbage braises. Heat the 12 g / 1 tbsp neutral oil in a separate skillet (cast iron or stainless) over medium-high until it shimmers. Add the 150 g torn oyster mushrooms and 100 g separated shimeji in a single layer and, critically, do not touch them or salt them for the first 2 minutes. The mushrooms release their water first; only once that water has boiled off and the pan is dry do the cut faces begin to brown. Sear 4 to 5 minutes total, tossing only after the first browning, until the edges are deep gold and the tangle has shrunk by half. Now add the 15 g / 1 tbsp butter, the 6 g / 2 sliced garlic cloves, the 1 g / ½ tsp thyme, and the 2 g / ¾ tsp kosher salt; toss 60 seconds until the garlic is fragrant and the butter browns lightly. Pull off heat and hold warm.'
     technique: 'maillard-sear'
     time_min: 7
-  - text: 'Set up the crust and dredge the fish. In a shallow bowl combine the 60 g / 1 cup panko, the 40 g / ½ cup microplaned parmigiano, and the 1 g / ½ tsp black pepper; rub the cheese into the crumbs with your fingers so it distributes evenly. Put the 30 g / ¼ cup flour on a small plate and the beaten egg in a second shallow bowl. Season the four 400 g fillets on both sides with the 3 g / ¾ tsp kosher salt. Now crumb one side only, the smoother skinned top face of each fillet: press the top face into the flour and shake off the excess, brush that same floured face with beaten egg, then press it firmly into the panko-parmesan so a dense even layer sticks. Leave the underside completely bare. Set the dredged fillets crust-side-up on a plate.'
+  - text: 'Set up the crust and dredge the fish. In a shallow bowl combine the 60 g / 1 cup panko, the 40 g / ½ cup microplaned parmigiano, and the 1 g / ½ tsp black pepper; rub the cheese into the crumbs with your fingers so it distributes evenly. Put the 30 g / ¼ cup flour on a small plate and the beaten egg in a second shallow bowl. Season the four 400 g fillets on both sides with the 3 g / 1 tsp kosher salt. Now crumb one side only, the smoother skinned top face of each fillet: press the top face into the flour and shake off the excess, brush that same floured face with beaten egg, then press it firmly into the panko-parmesan so a dense even layer sticks. Leave the underside completely bare. Set the dredged fillets crust-side-up on a plate.'
     time_min: 6
   - text: 'Fry the fish crust-side-down. Heat the 30 g / 2 tbsp neutral oil in a wide nonstick or well-seasoned skillet over medium-high until it shimmers. Lay the fillets into the pan crust-side-down and press each gently flat with a fish spatula for 5 seconds to seat the crust against the oil. Fry undisturbed for 2½ to 3 minutes: the crust should turn deep gold and you should see the flesh at the edges turning opaque and creeping up from the bottom. When the crust is set and browned, add the 20 g / 1½ tbsp butter to the pan around the fillets and let it foam and brown; tilt and spoon the foaming butter around (not over) the crust for 30 seconds. The flesh should now be opaque nearly to the top.'
     technique: 'shallow-frying'

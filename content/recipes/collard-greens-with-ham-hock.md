@@ -83,7 +83,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; the ham hock contributes salt, taste before adding more)'
+    note: '(2¼ tsp Diamond Crystal; the ham hock contributes salt, taste before adding more)'
   - group: 'Phase 2, the greens (added after 90 min hock simmer)'
     item: 'black pepper, cracked'
     slug: 'black-pepper'

@@ -52,7 +52,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; the structural salt that helps break down the aromatics during pounding)'
+    note: '(1½ tsp Diamond Crystal; the structural salt that helps break down the aromatics during pounding)'
 
   - group: 'Phase 2, the avocado'
     item: 'ripe Hass avocados'
@@ -72,7 +72,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(¼ tsp; taste and adjust)'
+    note: '(¾ tsp; taste and adjust)'
 
 steps:
   - text: 'Pound the aromatic paste. Combine the 60 g diced white onion, 20 g diced jalapeño, 15 g chopped cilantro, and 4 g kosher salt in a molcajete (or in a wide bowl if no molcajete). Pound with the tejolote (molcajete pestle), or work with the back of a wooden spoon if using a bowl, for 60 to 90 seconds, until the mixture has broken down into a wet aromatic paste with no large pieces of onion or chile remaining. The salt is the structural abrasive that helps the paste form; the pounding releases volatile aromatics from the cilantro and the chile capsaicin that would otherwise stay locked in the cell walls. This step is the structural difference between real guacamole and chopped-avocado-with-toppings.'

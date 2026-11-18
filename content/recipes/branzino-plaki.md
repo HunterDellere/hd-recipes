@@ -38,7 +38,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 7
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2½ tsp Diamond Crystal)'
 
   - group: 'Phase 2, sauce'
     item: 'extra-virgin olive oil'
@@ -131,7 +131,7 @@ ingredients:
     note: '(1 tbsp)'
 
 steps:
-  - text: 'Salt the fish. Season the 700 g / 4 fillets on both sides with the 7 g / 2 tsp kosher salt for the fish and refrigerate, skin-side up and uncovered, while the sauce cooks. Heat the oven to 200 C / 400 F.'
+  - text: 'Salt the fish. Season the 700 g / 4 fillets on both sides with the 7 g / 2½ tsp kosher salt for the fish and refrigerate, skin-side up and uncovered, while the sauce cooks. Heat the oven to 200 C / 400 F.'
     technique: 'dry-brining'
     time_min: 3
   - text: 'Sweat the onions. In a 30 cm / 12 in oven-safe skillet or braiser, warm the 80 g / ⅓ cup olive oil over medium. Add the 300 g / 2 sliced onions with the 6 g / 2 tsp kosher salt for the sauce. Cook, stirring occasionally, 12 to 15 minutes until soft, translucent, and just turning gold at the edges. The salt draws water out so the onions soften rather than fry; this sweetness is the backbone of plaki.'

@@ -146,7 +146,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1 tsp; adjust at the end)'
+    note: '(2¼ tsp; adjust at the end)'
 
   - group: 'Phase 4, the finish'
     item: 'frozen peas'

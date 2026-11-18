@@ -76,7 +76,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 3, aromatic base (gentler than canonical mapo)'
     item: 'neutral oil'
@@ -172,7 +172,7 @@ steps:
     time_min: 10
   - text: 'Brown the pork. Heat a wok over high heat. Add 30 ml / 2 tbsp neutral oil and the marinated pork. Stir-fry, breaking into granules, for 5 to 6 minutes until the pork is no longer pink, dry, and lightly browned. Pork takes less browning than beef; pull when the granules are pale-tan rather than mahogany. Transfer to a plate.'
     time_min: 6
-  - text: 'Blanch the tofu. While the pork browns, bring 1500 ml / 6 cups water to a bare simmer (80°C / 175°F) with the 8 g / 2 tsp salt. Cut the 450 g medium-firm tofu into 2 cm cubes. Slide into the salted water, hold 90 seconds, drain through a colander.'
+  - text: 'Blanch the tofu. While the pork browns, bring 1500 ml / 6 cups water to a bare simmer (80°C / 175°F) with the 8 g / 2¾ tsp salt. Cut the 450 g medium-firm tofu into 2 cm cubes. Slide into the salted water, hold 90 seconds, drain through a colander.'
     time_min: 3
   - text: 'Render a gentler aromatic base. Wipe the wok and return to medium heat. Add 30 ml / 2 tbsp neutral oil. When shimmering, add 20 g doubanjiang. Break up and stir-fry 60 seconds (less time than canonical mapo because there is less paste, the goal is still red oil, but the dish is meant to be lighter). Add 12 g minced ginger, 16 g minced garlic, and 25 g chopped scallion whites. Stir-fry 30 seconds.'
     technique: 'red-oil-rendering'

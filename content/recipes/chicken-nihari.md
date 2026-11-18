@@ -136,7 +136,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal, plus more to taste at finish)'
+    note: '(1½ tbsp Diamond Crystal, plus more to taste at finish)'
 
   - group: 'Phase 5, braising liquid'
     item: 'water (or chicken stock for richer gravy)'
@@ -202,7 +202,7 @@ steps:
   - text: 'Bhuna the masala. Reduce heat to medium-low. Add the ginger-garlic paste from step 1; the moisture will hit the hot ghee and steam dramatically. Stir-fry 60 seconds; the rawness of the paste cooks off and the smell goes from sharp to warm. Add the 12 g ground coriander, 8 g Kashmiri chili powder, 2 g cayenne, 2 g turmeric, and 4 g ground fennel. Stir-fry 60 to 90 seconds, splashing with 1 to 2 tbsp water if the spices threaten to scorch (the spices need brief contact with hot ghee to bloom but cannot sit in dry ghee for more than a minute without burning). The kitchen smells deeply of spice; the ghee should pool slightly red-orange at the edges of the pan, the visual marker that the bhuna has worked.'
     technique: 'red-oil-rendering'
     time_min: 2
-  - text: 'Sear the chicken. Add the 1200 g chicken pieces to the masala. Toss for 3 to 4 minutes; the chicken does not need to brown deeply (it will simmer for over an hour), but the surface should turn from raw-pink to opaque-tan and pick up the masala color. Sprinkle with 12 g / 1 tbsp salt and toss.'
+  - text: 'Sear the chicken. Add the 1200 g chicken pieces to the masala. Toss for 3 to 4 minutes; the chicken does not need to brown deeply (it will simmer for over an hour), but the surface should turn from raw-pink to opaque-tan and pick up the masala color. Sprinkle with 12 g / 1½ tbsp salt and toss.'
     time_min: 4
   - text: 'Add liquid and braise. Pour in the 1200 ml / 5 cups water (or chicken stock for richer gravy). Stir to combine. Bring to a simmer over medium-high heat, then reduce to medium-low (the surface should tremble, not boil aggressively). Cover with a tight lid. Simmer 75 to 90 minutes; the chicken will cook through within the first 25 minutes but the longer simmer extracts gelatin from the bones and integrates the spices into the gravy. Stir every 20 minutes to prevent the bottom from scorching.'
     time_min: 80

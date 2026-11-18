@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; ~1% of trimmed cauliflower weight)'
+    note: '(2¾ tsp Diamond Crystal; ~1% of trimmed cauliflower weight)'
   - group: 'Phase 1, hard-roasted cauliflower'
     item: 'cumin seeds'
     slug: 'cumin-seeds'
@@ -129,7 +129,7 @@ steps:
     time_min: 12
   - text: 'Cut the 900 g / 1 large head cauliflower from the underside (where the stems hold the florets together) into 3 to 4 cm florets. Smaller pieces overcook before they brown; larger pieces stay raw at the center. Save any pale-yellow tender leaves; they crisp into something close to vegetable chips.'
     time_min: 5
-  - text: 'In a wide bowl, toss the cauliflower with the 35 g / 2½ tbsp olive oil, the 8 g / 2 tsp kosher salt, and the 3 g / 1 tsp lightly crushed cumin seeds. Every floret should glisten; pooled oil at the bottom of the bowl means too much, drag the florets through it. The crushed (not powdered) cumin holds its aromatic punch through the roast; ground cumin scorches and turns acrid.'
+  - text: 'In a wide bowl, toss the cauliflower with the 35 g / 2½ tbsp olive oil, the 8 g / 2¾ tsp kosher salt, and the 3 g / 1 tsp lightly crushed cumin seeds. Every floret should glisten; pooled oil at the bottom of the bowl means too much, drag the florets through it. The crushed (not powdered) cumin holds its aromatic punch through the roast; ground cumin scorches and turns acrid.'
     time_min: 3
   - text: 'Pull the preheated sheet pan out of the oven and tip the dressed 900 g / 1 head of cauliflower onto it in a single layer, cut faces down where possible. The florets should sizzle audibly. Spread the pieces so each has 2 to 3 cm of clear pan around it; if it does not fit, use a second preheated pan rather than crowding one. Crowded vegetables steam each other, the surface stays wet, and Maillard never starts.'
     time_min: 2

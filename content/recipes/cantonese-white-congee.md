@@ -48,7 +48,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for the rice massage)'
+    note: '(1 tsp Diamond Crystal; for the rice massage)'
 
   - group: 'Simmer'
     item: 'water'
@@ -74,7 +74,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; total, season to taste)'
+    note: '(1½ tsp Diamond Crystal; total, season to taste)'
   - group: 'Finish (per bowl)'
     item: 'light soy sauce'
     slug: 'light-soy-sauce'
@@ -103,7 +103,7 @@ ingredients:
 steps:
   - text: 'Rinse 200 g / 1 cup jasmine rice in cold water three times, swirling and pouring off the cloudy water until it runs from milky to faintly hazy. Drain in a sieve five minutes.'
     time_min: 5
-  - text: 'Massage the drained rice with 7 g / ½ tbsp neutral oil and 3 g / ½ tsp kosher salt. Work it through the grains for 30 seconds. The oil partially waterproofs the polished surface so water has to penetrate through any milling fractures, which forces the grain to break inside-out instead of swelling intact. Rest the rice fifteen minutes.'
+  - text: 'Massage the drained rice with 7 g / ½ tbsp neutral oil and 3 g / 1 tsp kosher salt. Work it through the grains for 30 seconds. The oil partially waterproofs the polished surface so water has to penetrate through any milling fractures, which forces the grain to break inside-out instead of swelling intact. Rest the rice fifteen minutes.'
     time_min: 15
   - text: 'In a heavy 4-quart pot or Dutch oven, combine the oiled rice, 2000 ml / 8½ cups cold water, the smacked 15 g / 1-inch knob ginger coins, and the optional 8 g / 2 tbsp dried scallop or dried shrimp if using. Bring to a hard boil over high heat, uncovered, stirring once after the surface starts to foam to keep grains off the bottom.'
     time_min: 12
@@ -111,7 +111,7 @@ steps:
     time_min: 60
   - text: 'After 60 minutes the rice should be fully fragmented and the liquid the consistency of single cream that coats the back of the spoon. If still loose, simmer another 10-15 minutes uncovered to drive off water; if too thick, splash in 60-100 ml / ¼-½ cup hot water. Fish out the ginger coins and the scallop or shrimp (chop the rehydrated scallop fine and stir back in for body, if you used it).'
     time_min: 12
-  - text: 'Season the pot with 4 g / ½ tsp kosher salt to start. Taste. White congee is intentionally under-seasoned at this stage because the table finish carries the rest.'
+  - text: 'Season the pot with 4 g / 1½ tsp kosher salt to start. Taste. White congee is intentionally under-seasoned at this stage because the table finish carries the rest.'
     time_min: 1
   - text: 'Ladle into bowls. Per bowl, drizzle 5 g / 1 tsp light soy sauce, a few drops (~2 g / ½ tsp) toasted sesame oil, a scatter of the sliced 4 stalks scallion (greens for color, whites if you want oniony bite), and a dust of white pepper. Stir once and eat immediately. The pot is the technique; the table is the seasoning.'
     time_min: 2

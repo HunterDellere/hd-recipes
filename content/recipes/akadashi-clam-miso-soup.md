@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 45
     unit: 'g'
-    note: '(3 tbsp Diamond Crystal; the brine mimics seawater (3% salinity) and triggers the clams to filter-feed normally, releasing their internal grit)'
+    note: '(5¼ tbsp Diamond Crystal; the brine mimics seawater (3% salinity) and triggers the clams to filter-feed normally, releasing their internal grit)'
 
   - group: 'Phase 2, the dashi'
     item: 'kombu (dried kelp)'
@@ -91,7 +91,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Purge the clams. In a wide bowl or container, dissolve the 45 g / 3 tbsp kosher salt in the 1500 ml / 6 cups cold water; the resulting 3% brine matches the salinity of seawater. Add the 600 g clams in a single layer (not piled; the clams need contact with the brine to filter-feed). Cover loosely with a kitchen towel (the clams will spit water as they purge, which is the desired behavior). Set aside in a dark cool spot (under a counter, in a corner of the kitchen away from direct light) for 30 to 45 minutes. The clams will release the grit and sand from inside their shells into the brine; you can sometimes see them visibly opening and closing during this time. After the purge, lift the clams out (do not pour through a strainer; the grit will recontaminate them), rinse under cold running water, and discard any clams that are open and do not close when tapped (those are dead and should not be cooked).'
+  - text: 'Purge the clams. In a wide bowl or container, dissolve the 45 g / 5¼ tbsp kosher salt in the 1500 ml / 6 cups cold water; the resulting 3% brine matches the salinity of seawater. Add the 600 g clams in a single layer (not piled; the clams need contact with the brine to filter-feed). Cover loosely with a kitchen towel (the clams will spit water as they purge, which is the desired behavior). Set aside in a dark cool spot (under a counter, in a corner of the kitchen away from direct light) for 30 to 45 minutes. The clams will release the grit and sand from inside their shells into the brine; you can sometimes see them visibly opening and closing during this time. After the purge, lift the clams out (do not pour through a strainer; the grit will recontaminate them), rinse under cold running water, and discard any clams that are open and do not close when tapped (those are dead and should not be cooked).'
     time_min: 40
   - text: 'Cold-soak the kombu while the clams purge. In a separate 2-quart saucepan, place the 10 g kombu square and pour over the 900 ml / 3¾ cups cold water. Let stand at room temperature for the 30 to 45 minutes that the clams are purging. The kombu hydrates and releases its glutamate slowly into the cold water; a hot start would extract the kombu but also release the slimy alginate compounds, dulling the dashi. This is the canonical Japanese cold-start kombu method.'
     time_min: 30

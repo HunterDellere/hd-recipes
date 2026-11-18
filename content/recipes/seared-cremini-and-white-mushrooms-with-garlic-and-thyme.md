@@ -78,7 +78,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp; added late, after the browning, since salt early draws water out)'
+    note: '(¾ tsp; added late, after the browning, since salt early draws water out)'
   - group: 'Phase 2, the finish'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -111,7 +111,7 @@ steps:
     time_min: 4
   - text: 'Add butter and aromatics. Drop the 30 g / 2 tbsp cold cubed butter, the 12 g / 3 smashed garlic cloves, and the 3 g / 3 sprigs thyme into the pan. The butter will foam and brown within 20 seconds; toss the mushrooms in it and let the garlic and thyme perfume the foaming butter for 60 to 90 seconds. Tilt the pan and spoon the herb butter over the mushrooms.'
     time_min: 2
-  - text: 'Season late and deglaze with soy. Add the 10 g / 2 tsp light soy sauce, the 2 g / ½ tsp kosher salt, and the 1 g / ½ tsp black pepper, and toss; the soy will sizzle and glaze the mushrooms with a savory sheen. The salt goes in now, not earlier, because salt added during the dry sear draws water out and floods the pan. Cook 30 seconds until the soy reduces to a glaze.'
+  - text: 'Season late and deglaze with soy. Add the 10 g / 2 tsp light soy sauce, the 2 g / ¾ tsp kosher salt, and the 1 g / ½ tsp black pepper, and toss; the soy will sizzle and glaze the mushrooms with a savory sheen. The salt goes in now, not earlier, because salt added during the dry sear draws water out and floods the pan. Cook 30 seconds until the soy reduces to a glaze.'
     time_min: 1
   - text: 'Finish with acid and serve. Pull off the heat, squeeze over the 1 tsp lemon juice, and toss. Pull the thyme sprigs if you left them whole. Taste: it should read deeply savory and meaty, with the lemon lifting the butter and the soy reading as depth rather than as soy. Scatter the optional 8 g parsley and serve hot, next to a steak or a piece of fish, or piled over toast or soft polenta as a plate.'
     time_min: 1

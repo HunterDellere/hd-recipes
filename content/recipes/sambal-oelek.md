@@ -38,7 +38,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; salt is non-negotiable, it both seasons and draws moisture from the chilies to start the pound)'
+    note: '(3½ tsp Diamond Crystal; salt is non-negotiable, it both seasons and draws moisture from the chilies to start the pound)'
   - group: 'Phase 1, chili paste'
     item: 'lime juice, fresh'
     slug: 'lime'
@@ -60,7 +60,7 @@ ingredients:
     note: '(2 tbsp; sets the color, deactivates raw enzymes, extends fridge life)'
 
 steps:
-  - text: 'Wear gloves. Pull the stems from the 300 g chilies, rough-chop them, and pound in a heavy mortar (or pulse in a food processor) with the 10 g / 2 tsp kosher salt until the chilies are broken down to a coarse paste with visible flesh fragments, not a smooth puree. Texture target is wet-relish, not hot-sauce. Stop and scrape down the sides; the salt draws water from the chilies and the paste tightens as you work.'
+  - text: 'Wear gloves. Pull the stems from the 300 g chilies, rough-chop them, and pound in a heavy mortar (or pulse in a food processor) with the 10 g / 3½ tsp kosher salt until the chilies are broken down to a coarse paste with visible flesh fragments, not a smooth puree. Texture target is wet-relish, not hot-sauce. Stop and scrape down the sides; the salt draws water from the chilies and the paste tightens as you work.'
     technique: 'mortar-pounding'
     time_min: 8
   - text: 'Add the 15 g / 1 tbsp lime juice and the 10 g / 2 tsp rice vinegar. Pulse or pound 30 seconds to incorporate. The vinegar drops the pH below 4, both for flavor brightness and for shelf-stability; a sambal made without acid spoils in days.'

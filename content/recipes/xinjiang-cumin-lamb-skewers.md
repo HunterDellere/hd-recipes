@@ -121,7 +121,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
 
 steps:
   - text: 'Salt the lamb. In a glass or ceramic bowl, toss the 800 g lamb cubes and the 120 g lamb fat squares with the 9 g / 1 tbsp kosher salt and the 150 g grated yellow onion until every piece is coated. Cover with a fitted lid or a plate and refrigerate for 1 to 4 hours. The salt dissolves into the onion juice, carries the onion flavor into the meat, and dissolves some of the surface protein so the lamb holds its moisture over high heat.'
@@ -129,7 +129,7 @@ steps:
   - text: 'Make the spice mix. Toast the 15 g / 2 tbsp cumin seeds in a dry skillet over medium heat, shaking the pan, for about 90 seconds, until they smell nutty and darken one shade. Tip them into a mortar and pound to a coarse powder, leaving some seeds half-cracked; the coarse pieces cling to the fat. Mix in the 8 g / 1 tbsp chili flakes, the 3 g / 1 tsp kosher salt, and the 1 g / ¼ tsp MSG. You will have about 27 g of spice mix.'
     technique: 'dry-toasting'
     time_min: 5
-  - text: 'Dress the salad. About 20 minutes before cooking, toss the 150 g sliced red onion, the 150 g halved cherry tomatoes, and the 60 g green pepper rings with the 20 g / 4 tsp rice vinegar and the 2 g / ½ tsp kosher salt. The salt and acid soften the raw onion''s bite while the lamb cooks.'
+  - text: 'Dress the salad. About 20 minutes before cooking, toss the 150 g sliced red onion, the 150 g halved cherry tomatoes, and the 60 g green pepper rings with the 20 g / 4 tsp rice vinegar and the 2 g / ¾ tsp kosher salt. The salt and acid soften the raw onion''s bite while the lamb cooks.'
     time_min: 5
   - text: 'Skewer. Scrape the grated onion off the lamb with your fingers; the onion pulp burns long before the meat is done. Thread the 800 g lamb onto 12 skewers, with one 1.5 cm square of the 120 g lamb fat after every three lean pieces, so each skewer carries about 75 g. Push the pieces snug against each other without compressing them; packed too tight, the centers steam. Brush the lean pieces lightly with the 15 g / 1 tbsp neutral oil.'
     time_min: 15

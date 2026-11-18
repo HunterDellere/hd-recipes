@@ -59,7 +59,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; ~3% of finished weight, where most dressings live)'
+    note: '(1¾ tsp Diamond Crystal; ~3% of finished weight, where most dressings live)'
 
   - group: 'Oil'
     item: 'neutral oil (peanut, grapeseed, or rice bran)'
@@ -73,7 +73,7 @@ steps:
     time_min: 2
   - text: 'Trim and finely mince the 3 g / 1 to 2 thai chilies, seeds in for full heat (seeds out for milder). Add the chili to the bowl with the ginger.'
     time_min: 1
-  - text: 'Add the 60 g / 4 tbsp lime juice, the 25 g / 1½ tbsp honey, and the 5 g / 1¼ tsp kosher salt to the ginger-and-chili bowl. Whisk vigorously for 20 to 30 seconds to dissolve the salt and the honey; the salt particles should disappear, and the honey should integrate without streaks. The mixture should look uniformly cloudy from the suspended ginger particles.'
+  - text: 'Add the 60 g / 4 tbsp lime juice, the 25 g / 1½ tbsp honey, and the 5 g / 1¾ tsp kosher salt to the ginger-and-chili bowl. Whisk vigorously for 20 to 30 seconds to dissolve the salt and the honey; the salt particles should disappear, and the honey should integrate without streaks. The mixture should look uniformly cloudy from the suspended ginger particles.'
     time_min: 1
   - text: 'Stream in the 80 g / ⅓ cup neutral oil in a thin steady drizzle while whisking constantly. The dressing tightens as the oil emulsifies into the lime-honey-ginger base; the microplaned ginger acts as the structural emulsifier (the same role mustard plays in a classic French vinaigrette), and the dressing should ribbon off the whisk and slowly settle back into the surface. Whisk for 10 to 15 seconds after the last of the oil to integrate. Taste; the dressing should read sharp-acid first, then sweet, then heat in the throat. Salt up if it tastes flat; honey up by 5 g (1 tsp) if too sharp.'
     technique: 'vinaigrette-emulsion'

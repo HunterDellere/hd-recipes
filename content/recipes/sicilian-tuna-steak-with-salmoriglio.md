@@ -58,7 +58,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 2, the tuna'
     item: 'extra-virgin olive oil'
     slug: 'extra-virgin-olive-oil'
@@ -110,15 +110,15 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; seasons the sauce)'
+    note: '(¾ tsp Diamond Crystal; seasons the sauce)'
 
 steps:
   - text: 'Fry the capers. Heat the 14 g / 1 tbsp olive oil in a small skillet over medium-high. Add the 20 g / 2 tbsp rinsed, very dry capers and fry 1 to 2 minutes, swirling, until they burst open and crisp. Scoop onto paper towel; they crisp further as they cool. Keep the caper-flavored oil for the sauce if you like. Make sure the capers are dry before they hit the oil or they will spit violently.'
     time_min: 2
-  - text: 'Salt and sear the tuna. Pat the two 340 g / 12 oz tuna steaks bone-dry and season both faces with the 3 g / ¾ tsp kosher salt. Heat the 14 g / 1 tbsp olive oil in a wide cast-iron or stainless skillet over medium-high until just smoking. Sear the steaks undisturbed about 2 minutes per face for a 2.5 cm steak, until well-browned outside and the center reads 55 to 58 °C on an instant-read thermometer. Pull them to a board to rest; they finish to a moist medium off the heat.'
+  - text: 'Salt and sear the tuna. Pat the two 340 g / 12 oz tuna steaks bone-dry and season both faces with the 3 g / 1 tsp kosher salt. Heat the 14 g / 1 tbsp olive oil in a wide cast-iron or stainless skillet over medium-high until just smoking. Sear the steaks undisturbed about 2 minutes per face for a 2.5 cm steak, until well-browned outside and the center reads 55 to 58 °C on an instant-read thermometer. Pull them to a board to rest; they finish to a moist medium off the heat.'
     technique: 'maillard-sear'
     time_min: 5
-  - text: 'Whisk the salmoriglio warm. While the tuna rests, combine the 40 g / 1 lemon of juice with the 20 g / 4 tsp warm water, the 6 g / 2 cloves grated garlic, the 2 g / 2 tsp crumbled dried oregano, and the 2 g / ½ tsp salt in a small bowl set over the warm (off-heat) pan or a bowl of warm water. Whisk constantly while drizzling in the 60 g / ¼ cup olive oil in a thin stream, until it thickens to a loose, cloudy emulsion that coats a spoon. Whisk in the lemon zest and the 6 g / 1½ tbsp chopped parsley last. It should taste sharp, garlicky, and herbal; salmoriglio is meant to be assertive.'
+  - text: 'Whisk the salmoriglio warm. While the tuna rests, combine the 40 g / 1 lemon of juice with the 20 g / 4 tsp warm water, the 6 g / 2 cloves grated garlic, the 2 g / 2 tsp crumbled dried oregano, and the 2 g / ¾ tsp salt in a small bowl set over the warm (off-heat) pan or a bowl of warm water. Whisk constantly while drizzling in the 60 g / ¼ cup olive oil in a thin stream, until it thickens to a loose, cloudy emulsion that coats a spoon. Whisk in the lemon zest and the 6 g / 1½ tbsp chopped parsley last. It should taste sharp, garlicky, and herbal; salmoriglio is meant to be assertive.'
     technique: 'vinaigrette-emulsion'
     time_min: 3
   - text: 'Dress and serve. Set each tuna steak on a warm plate and spoon the warm salmoriglio generously over and around it, letting it pool. Scatter the 20 g / 2 tbsp fried capers over the top. Serve at once while the sauce is still warm and emulsified and the capers are crisp; the warm oil-and-lemon dressing on the just-cooked fish is the entire point, so do not let it sit and slacken.'

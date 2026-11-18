@@ -61,7 +61,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(¼ tsp)'
+    note: '(¾ tsp)'
   - group: 'Glaze'
     item: 'Sichuan peppercorns, lightly toasted and crushed'
     slug: 'sichuan-peppercorns'
@@ -71,7 +71,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'In a small bowl, whisk the 20 ml / 1½ tbsp light soy, 8 ml / ½ tbsp Chinkiang vinegar, 12 g / 1 tbsp granulated sugar, 2 g / ¼ tsp kosher salt, and 2 g / 1 tsp Sichuan peppercorns if using until the sugar dissolves. The glaze is going onto hot peanuts in a single pour; pre-mixing prevents a scramble at the critical moment.'
+  - text: 'In a small bowl, whisk the 20 ml / 1½ tbsp light soy, 8 ml / ½ tbsp Chinkiang vinegar, 12 g / 1 tbsp granulated sugar, 2 g / ¾ tsp kosher salt, and 2 g / 1 tsp Sichuan peppercorns if using until the sugar dissolves. The glaze is going onto hot peanuts in a single pour; pre-mixing prevents a scramble at the critical moment.'
     time_min: 2
   - text: 'Heat the 30 ml / 2 tbsp neutral oil and the 200 g raw peanuts together in a wide, heavy skillet over medium-low. Cold-oil-and-cold-peanut start is the rule: this lets the peanuts toast through gradually rather than scorching the outside before the inside cooks. Stir every 60 seconds for the first 5 minutes, then every 30 seconds after that.'
     time_min: 7

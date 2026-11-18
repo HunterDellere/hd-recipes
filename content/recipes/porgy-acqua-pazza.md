@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; rubbed over the skin, into the slashes, and inside the cavity)'
+    note: '(1¾ tsp Diamond Crystal; rubbed over the skin, into the slashes, and inside the cavity)'
 
   - group: 'Phase 2, the broth (umami base)'
     item: 'extra-virgin olive oil'
@@ -121,7 +121,7 @@ ingredients:
     note: '(4 slices; the brodo is the point, the bread is how you eat it)'
 
 steps:
-  - text: 'Prep the porgy. Confirm the fishmonger scaled, gutted, and removed the gills; rinse the 650 g / 1 whole porgy inside and out and scrape any dark blood line from the spine cavity with the back of a small spoon (the blood line is the strongest source of fishy flavor). Pat completely dry inside and out. Cut two shallow diagonal slashes 1 cm deep into the thickest part of each side; the slashes let heat and broth reach the deep flesh evenly and give a doneness cue, since the flesh inside them opaques first. Rub the 5 g / 1¼ tsp kosher salt over the skin, into the slashes, and inside the cavity. Set the fish aside at room temperature while you build the broth.'
+  - text: 'Prep the porgy. Confirm the fishmonger scaled, gutted, and removed the gills; rinse the 650 g / 1 whole porgy inside and out and scrape any dark blood line from the spine cavity with the back of a small spoon (the blood line is the strongest source of fishy flavor). Pat completely dry inside and out. Cut two shallow diagonal slashes 1 cm deep into the thickest part of each side; the slashes let heat and broth reach the deep flesh evenly and give a doneness cue, since the flesh inside them opaques first. Rub the 5 g / 1¾ tsp kosher salt over the skin, into the slashes, and inside the cavity. Set the fish aside at room temperature while you build the broth.'
     time_min: 6
   - text: 'Grill the bread now, before the fish cooks. Toast the 160 g / 4 slices sourdough on a grill pan, under a broiler, or in a dry skillet until charred at the edges and crisp; rub one cut garlic clove (taken from the 18 g / 4 cloves below, or a spare) over each hot slice. Set the bread on the table. It needs to be ready the moment the fish is plated so it can mop the hot brodo.'
     time_min: 4

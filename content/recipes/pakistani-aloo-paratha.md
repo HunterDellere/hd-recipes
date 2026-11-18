@@ -106,7 +106,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(½ tbsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
 
   - group: 'Phase 3, cooking and finishing'
     item: 'atta flour (for dusting the work surface)'

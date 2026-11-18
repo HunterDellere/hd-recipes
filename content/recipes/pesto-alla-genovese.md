@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; the coarse crystals are structurally abrasive in the mortar and break down the garlic and basil faster than pounding alone)'
+    note: '(1 tsp Diamond Crystal; the coarse crystals are structurally abrasive in the mortar and break down the garlic and basil faster than pounding alone)'
 
   - group: 'The basil'
     item: 'fresh basil leaves (small Genovese leaves ideal; large basil works)'
@@ -80,7 +80,7 @@ ingredients:
 steps:
   - text: 'Wash the 60 g / 4 packed cups basil leaves in cold water, swirl to remove any grit, and dry thoroughly on a clean tea towel or in a salad spinner. Water clinging to the leaves breaks the emulsion at the end of the grind; the leaves must be visibly dry before they enter the mortar. Set aside while the garlic and pine nuts are processed.'
     time_min: 4
-  - text: 'In a heavy marble mortar (the canonical Ligurian vessel; a heavy ceramic or stone mortar is an acceptable substitute), pound the 6 g / 1 to 2 garlic cloves with the 3 g / ½ tsp coarse salt for 1 minute, working in slow circular grinds with the pestle, until the garlic is reduced to a smooth even paste. Add the 30 g / 3 tbsp pine nuts; continue pounding 1 to 2 minutes until the nuts are fully crushed into the garlic paste, producing a thick pale cream.'
+  - text: 'In a heavy marble mortar (the canonical Ligurian vessel; a heavy ceramic or stone mortar is an acceptable substitute), pound the 6 g / 1 to 2 garlic cloves with the 3 g / 1 tsp coarse salt for 1 minute, working in slow circular grinds with the pestle, until the garlic is reduced to a smooth even paste. Add the 30 g / 3 tbsp pine nuts; continue pounding 1 to 2 minutes until the nuts are fully crushed into the garlic paste, producing a thick pale cream.'
     technique: 'mortar-pounding'
     time_min: 3
   - text: 'Add the 60 g / 4 packed cups dried basil leaves in 3 to 4 additions (about 15 g per addition); for each addition, grind the leaves against the mortar wall in slow circular motions with the pestle (not pounding straight down; the rotating-pressure grind is the structural difference between a Genovese pesto and a bruised herb paste). Each addition takes about 90 seconds of patient grinding; the basil progressively releases its oils and the paste turns a brilliant emerald green. Total basil grinding time should be 4 to 6 minutes; the finished basil paste should be uniform and bright green with no visible leaf structure.'

@@ -53,7 +53,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 1, the beef marinade (12 hours ahead)'
     item: 'black pepper, cracked'
     slug: 'black-pepper'

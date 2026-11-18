@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
 
   - group: 'Phase 2, chile purée'
     item: 'dried ancho chiles'
@@ -106,7 +106,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
   - group: 'Phase 3, build the pot'
     item: 'yellow onion'
     slug: 'yellow-onion'
@@ -181,7 +181,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; taste first)'
+    note: '(1½ tsp Diamond Crystal; taste first)'
   - group: 'Phase 5, finish and serve'
     item: 'avocados'
     slug: 'avocado'
@@ -203,7 +203,7 @@ ingredients:
     prep: 'cut into wedges'
 
 steps:
-  - text: 'Roast the sweet potato. Heat the oven to 220 °C / 425 °F. Toss the 600 g cubed sweet potato with the 30 ml / 2 tbsp roasting oil and 4 g / 1 tsp kosher salt on a parchment-lined rimmed sheet pan and spread in a single layer with space between cubes. Roast 25 to 30 minutes, turning once, until browned at the edges and tender through. Roasting drives off surface water and caramelizes the sugars; simmered from raw, the cubes turn soft and bland and cloud the pot.'
+  - text: 'Roast the sweet potato. Heat the oven to 220 °C / 425 °F. Toss the 600 g cubed sweet potato with the 30 ml / 2 tbsp roasting oil and 4 g / 1½ tsp kosher salt on a parchment-lined rimmed sheet pan and spread in a single layer with space between cubes. Roast 25 to 30 minutes, turning once, until browned at the edges and tender through. Roasting drives off surface water and caramelizes the sugars; simmered from raw, the cubes turn soft and bland and cloud the pot.'
     technique: 'high-heat-dry-roasting'
     time_min: 30
   - text: 'Toast the chiles, cumin, and pepitas. Heat a dry cast-iron skillet over medium heat. Press the 30 g ancho chiles flat against the pan for about 15 seconds per side until fragrant and a shade darker; pull them before they smell sharp. Toast the 4 g / 2 tsp cumin seeds for 1 minute until fragrant and tip them into the blender jar. Toast the 40 g pepitas for about 3 minutes, shaking, until they puff and start to pop, then set aside for serving.'
@@ -211,7 +211,7 @@ steps:
     time_min: 6
   - text: 'Soak the chiles in the 500 ml boiling water, weighted under a small plate, for 20 minutes. Drain and discard the water. Add the chiles to the blender with the cumin, the 20 g / 1 chipotle in adobo with its sauce, and the 400 g canned tomatoes with their juices. Blend on high 2 minutes until smooth.'
     time_min: 22
-  - text: 'Brown the mushrooms while the chiles soak. Heat the 30 ml / 2 tbsp oil for the pot in a large Dutch oven over medium-high heat. Add the 340 g chopped cremini and the 2 g / ½ tsp kosher salt for the mushrooms. Cook, stirring every minute or so, about 12 minutes: first they release a lot of water, then the pot goes dry and they start to stick and turn deep brown. Wait for that brown layer on the bottom; it is the savory base of the whole chili.'
+  - text: 'Brown the mushrooms while the chiles soak. Heat the 30 ml / 2 tbsp oil for the pot in a large Dutch oven over medium-high heat. Add the 340 g chopped cremini and the 2 g / ¾ tsp kosher salt for the mushrooms. Cook, stirring every minute or so, about 12 minutes: first they release a lot of water, then the pot goes dry and they start to stick and turn deep brown. Wait for that brown layer on the bottom; it is the savory base of the whole chili.'
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Add the vegetables and aromatics. Lower the heat to medium and add the 300 g diced onion and 180 g diced red bell pepper. Cook 7 minutes, scraping the browned mushroom layer off the bottom as the vegetables release water, until soft. Add the 25 g minced garlic, 30 g / 2 tbsp tomato paste, 4 g / 2 tsp smoked paprika, and 2 g / 2 tsp Mexican oregano and stir 2 minutes until the paste darkens.'
@@ -223,7 +223,7 @@ steps:
     time_min: 30
   - text: 'Fold in the sweet potato. Gently stir in the 600 g roasted sweet potato and simmer 5 minutes, just long enough to heat through without breaking the cubes.'
     time_min: 5
-  - text: 'Finish and season. Off the heat, stir in the 30 ml / 2 tbsp lime juice. Taste and add up to 4 g / 1 tsp kosher salt; beans absorb a lot of salt, so this pot usually needs most of it. Without the lime the chili tastes heavy and muddy, so do not skip it.'
+  - text: 'Finish and season. Off the heat, stir in the 30 ml / 2 tbsp lime juice. Taste and add up to 4 g / 1½ tsp kosher salt; beans absorb a lot of salt, so this pot usually needs most of it. Without the lime the chili tastes heavy and muddy, so do not skip it.'
     time_min: 2
   - text: 'Serve in bowls topped with the 2 diced avocados, the 15 g chopped cilantro, and the toasted pepitas, with the 2 limes, in wedges, at the table.'
     time_min: 5

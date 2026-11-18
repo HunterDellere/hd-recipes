@@ -79,7 +79,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; to fine-tune the salt once the tamarind and patis are in)'
+    note: '(1½ tsp Diamond Crystal; to fine-tune the salt once the tamarind and patis are in)'
 
   - group: 'Phase 4, vegetables (longest-cook to shortest)'
     item: 'daikon radish'
@@ -151,7 +151,7 @@ steps:
   - text: 'Extract the tamarind. While the base simmers, place the 70 g tamarind pulp in a heatproof bowl with 240 ml / 1 cup hot water (ladled from the pot or from a kettle). Soak 15 minutes, then mash with a fork and push the slurry through a fine-mesh sieve into a clean bowl, scraping the underside of the sieve to capture the fruit purée and discarding the seeds and fiber. You should have roughly 200 ml of thick, deeply sour tamarind extract. (If using 35 g jarred concentrate, whisk it straight into 200 ml hot water and skip the soak.)'
     technique: 'tamarind-souring'
     time_min: 15
-  - text: 'Sour and season the broth. Stir the 200 ml tamarind extract into the pot. Add the 30 g / 2 tbsp fish sauce and the 4 g / 1 tsp kosher salt. Bring back to a simmer and taste. The broth should land clean-sour and forward, the tamarind bright, the patis salt deep behind it, no sweetness. Filipino sinigang is unapologetically sour; calibrate to where it reads sharp but not painful, then add more tamarind a tablespoon at a time if flat, or a cup of hot water if it overshoots. The broth is the dish; spend the 90 seconds to calibrate it now, before the fish dulls your read.'
+  - text: 'Sour and season the broth. Stir the 200 ml tamarind extract into the pot. Add the 30 g / 2 tbsp fish sauce and the 4 g / 1½ tsp kosher salt. Bring back to a simmer and taste. The broth should land clean-sour and forward, the tamarind bright, the patis salt deep behind it, no sweetness. Filipino sinigang is unapologetically sour; calibrate to where it reads sharp but not painful, then add more tamarind a tablespoon at a time if flat, or a cup of hot water if it overshoots. The broth is the dish; spend the 90 seconds to calibrate it now, before the fish dulls your read.'
     technique: 'tamarind-souring'
     time_min: 4
   - text: 'Cook the hardier vegetables by hardness. With the broth at a steady simmer, add the 250 g daikon half-moons and cook 5 minutes. Add the 200 g eggplant rounds; cook 3 minutes. Add the 150 g yardlong beans and the 120 g whole okra; cook 3 more minutes. Drop in the 20 g bruised green chilies. The daikon should be nearly translucent, the eggplant silky, the beans crisp-tender, the okra just-set; total accumulated vegetable simmer is about 11 minutes, daikon first and the delicate greens still to come.'

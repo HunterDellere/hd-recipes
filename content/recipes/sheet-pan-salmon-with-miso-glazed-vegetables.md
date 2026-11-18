@@ -99,7 +99,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; ~0.7% of vegetable weight, lighter than usual because the miso glaze adds significant salt)'
+    note: '(2¼ tsp Diamond Crystal; ~0.7% of vegetable weight, lighter than usual because the miso glaze adds significant salt)'
 
   - group: 'Phase 3, the salmon'
     item: 'salmon fillets, skin-on'
@@ -112,7 +112,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; salted just before cooking, the glaze adds more on top)'
+    note: '(1½ tsp Diamond Crystal; salted just before cooking, the glaze adds more on top)'
 
   - group: 'Phase 4, the finish'
     item: 'scallions, thinly sliced on the bias'
@@ -136,9 +136,9 @@ ingredients:
 steps:
   - text: 'Heat the oven to 220 °C / 425 °F with a heavy half-sheet pan inside on the middle rack. The pan needs 12 minutes of preheat. While the oven heats, mix the glaze: in a small bowl, whisk together the 60 g / ¼ cup white miso, the 30 g / 1½ tbsp honey, the 15 g / 1 tbsp rice vinegar, the 8 g / 2 tsp toasted sesame oil, the 8 g / 2 tsp microplaned ginger, and the 4 g / 1 clove microplaned garlic until smooth.'
     time_min: 12
-  - text: 'Cut the 500 g broccoli into 3 cm florets with stem attached; peel and slice any tough lower stem into 1 cm coins. Halve the 400 g baby bok choy lengthwise through the root. In a wide bowl, toss the broccoli and bok choy with the 25 g / 2 tbsp neutral oil and the 6 g / 1½ tsp kosher salt until every surface glistens.'
+  - text: 'Cut the 500 g broccoli into 3 cm florets with stem attached; peel and slice any tough lower stem into 1 cm coins. Halve the 400 g baby bok choy lengthwise through the root. In a wide bowl, toss the broccoli and bok choy with the 25 g / 2 tbsp neutral oil and the 6 g / 2¼ tsp kosher salt until every surface glistens.'
     time_min: 5
-  - text: 'Pat the 600 g salmon fillets thoroughly dry on both sides with paper towels, including the skin. Season the flesh side (not the skin) with the 4 g / 1 tsp kosher salt. Let rest at room temperature while the oven preheats; cold salmon shocks the pan and steams.'
+  - text: 'Pat the 600 g salmon fillets thoroughly dry on both sides with paper towels, including the skin. Season the flesh side (not the skin) with the 4 g / 1½ tsp kosher salt. Let rest at room temperature while the oven preheats; cold salmon shocks the pan and steams.'
     time_min: 1
   - text: 'Pull the preheated sheet pan from the oven. Tip the dressed 900 g of vegetables onto it in a single layer with bok choy cut-side down on the pan; the broccoli florets fill the gaps. The pan should sizzle audibly. Roast 10 minutes without disturbing.'
     technique: 'high-heat-dry-roasting'

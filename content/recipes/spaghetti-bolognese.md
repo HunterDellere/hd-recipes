@@ -89,7 +89,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; salt at the browning stage, not after)'
+    note: '(2¾ tsp Diamond Crystal; salt at the browning stage, not after)'
   - group: 'Phase 2, the meat'
     item: 'fresh-ground black pepper'
     slug: 'black-pepper'
@@ -149,7 +149,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal in 5 L of water)'
+    note: '(3½ tbsp Diamond Crystal in 5 L of water)'
   - group: 'Phase 5, the pasta and finish'
     item: 'parmigiano reggiano, finely grated, for finishing'
     slug: 'parmigiano-reggiano'

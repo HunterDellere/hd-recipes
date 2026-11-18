@@ -59,7 +59,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2 tsp Diamond Crystal in 1.5 L water; almost all of it stays in the pot)'
+    note: '(3½ tsp Diamond Crystal in 1.5 L water; almost all of it stays in the pot)'
   - group: 'Phase 1, the vegetables and tofu skin'
     item: 'taro'
     slug: 'taro'
@@ -295,7 +295,7 @@ ingredients:
     note: '(1½ cups dry)'
 
 steps:
-  - text: 'Peel and slice the 300 g lotus root 3 mm thick, dropping the slices straight into 1 L cold water with the 15 g / 1 tbsp distilled white vinegar; the acid slows the polyphenol oxidase that browns cut lotus. Bring 1.5 L water with the 10 g / 2 tsp kosher salt to a rolling boil, drain the lotus, blanch 90 seconds, then shock in ice water. Drain and spread on a towel to dry; wet slices spit in the wok and refuse to take the base.'
+  - text: 'Peel and slice the 300 g lotus root 3 mm thick, dropping the slices straight into 1 L cold water with the 15 g / 1 tbsp distilled white vinegar; the acid slows the polyphenol oxidase that browns cut lotus. Bring 1.5 L water with the 10 g / 3½ tsp kosher salt to a rolling boil, drain the lotus, blanch 90 seconds, then shock in ice water. Drain and spread on a towel to dry; wet slices spit in the wok and refuse to take the base.'
     technique: 'ice-bath-shock'
     time_min: 10
   - text: 'Wearing gloves, peel the 340 g taro and cut it into 12 mm batons. Steam 12 minutes until a skewer slides in with slight resistance at the center. Spread on a plate to cool uncovered so the surface dries; a dry surface is what blisters in the oil.'

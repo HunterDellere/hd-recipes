@@ -83,7 +83,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; seasons the surface just before the crust goes on)'
+    note: '(1 tsp Diamond Crystal; seasons the surface just before the crust goes on)'
   - group: 'Phase 2, the tuna and crust'
     item: 'white sesame seeds'
     slug: 'sesame-seeds'
@@ -110,7 +110,7 @@ steps:
   - text: 'Toast the sesame. Put the 25 g / 3 tbsp white sesame seeds in a dry skillet over medium heat and agitate constantly. At 60 to 90 seconds they pop softly; at 3 to 4 minutes they reach a pale caramel-bronze and smell distinctly of toasted sesame. Pull them the moment the color is right (residual pan heat keeps toasting them), and tip onto a cool plate. Stir in the 10 g / 1 tbsp black sesame seeds. Spread the mix into an even layer on the plate; this is your crust bed.'
     technique: 'dry-toasting'
     time_min: 4
-  - text: 'Salt and coat the tuna. Pat both 350 g / 12 oz tuna blocks completely dry once more with paper towel, any surface water and the sesame will not stick and the sear will steam. Season all faces of both blocks with the 3 g / ¾ tsp kosher salt. Press each block firmly into the sesame plate, rolling it so all four long faces and both ends pick up a dense, even coat; press the seeds in with your palm so they adhere. The blocks should look fully jacketed in sesame.'
+  - text: 'Salt and coat the tuna. Pat both 350 g / 12 oz tuna blocks completely dry once more with paper towel, any surface water and the sesame will not stick and the sear will steam. Season all faces of both blocks with the 3 g / 1 tsp kosher salt. Press each block firmly into the sesame plate, rolling it so all four long faces and both ends pick up a dense, even coat; press the seeds in with your palm so they adhere. The blocks should look fully jacketed in sesame.'
     time_min: 3
   - text: 'Heat the pan. Place a heavy stainless or cast-iron skillet over high heat for 3 to 4 minutes until it is genuinely smoking. Add the 15 g / 1 tbsp neutral oil and swirl to coat; it should shimmer and just begin to smoke within 5 seconds. The pan being hot enough is the entire game, a cool pan toasts the sesame slowly and the heat creeps into the center before the crust is set.'
     time_min: 4

@@ -38,7 +38,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for the brief cure)'
+    note: '(1 tsp Diamond Crystal; for the brief cure)'
 
   - group: 'Frying oil'
     item: 'neutral oil (peanut, rice bran, or canola)'
@@ -56,7 +56,7 @@ ingredients:
 steps:
   - text: 'Slice 300 g / 6-8 medium peeled shallots as thinly as possible on a mandoline; the target is 1-2 mm rings. Hand-slicing works but the unevenness produces some shallots that burn before others crisp. Lay slices on a paper towel and pat off any surface moisture.'
     time_min: 8
-  - text: 'Toss the sliced shallots with 3 g / ½ tsp kosher salt and rest 5 minutes. The brief cure pulls a small amount of surface water out, which lets the shallots fry rather than steam in the oil. Spread on a fresh paper towel and pat dry again.'
+  - text: 'Toss the sliced shallots with 3 g / 1 tsp kosher salt and rest 5 minutes. The brief cure pulls a small amount of surface water out, which lets the shallots fry rather than steam in the oil. Spread on a fresh paper towel and pat dry again.'
     technique: 'dry-brining'
     time_min: 5
   - text: 'In a heavy 2-quart saucepan or small Dutch oven, combine the dried 300 g shallots with 350 ml / 1½ cups neutral oil. The shallots should be fully submerged. Set over medium heat from cold, never from hot oil. The slow temperature ramp is the technique: shallots start to release moisture at about 80°C, brown at the surface around 130°C, and crisp through at 150°C. A cold start lets the moisture drive off in stages rather than all at once.'

@@ -46,7 +46,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2 tbsp Diamond Crystal; ~2% by weight of the radish, lower than the cabbage brine because the cubed form draws water faster)'
+    note: '(3½ tbsp Diamond Crystal; ~2% by weight of the radish, lower than the cabbage brine because the cubed form draws water faster)'
   - group: 'Phase 1, the radish salt-draw'
     item: 'granulated sugar'
     slug: 'granulated-sugar'
@@ -93,7 +93,7 @@ ingredients:
     note: '(about 5 scallions; the textural element)'
 
 steps:
-  - text: 'Salt-draw the radish. In a large non-reactive bowl, toss the 1500 g radish cubes with the 30 g / 2 tbsp coarse salt and the 15 g / 1 tbsp sugar. Massage gently for 30 seconds so the salt coats every surface. Let stand at room temperature for 30 to 45 minutes; the radish will release a meaningful pool of liquid (about 150 to 250 g) and the cubes will turn translucent at the edges and lose their stiff raw crispness for a more pliable bite. This step is structural; unsalted radish in the kimchi paste will ferment but the cubes will stay starchy-hard and the kimchi will read raw and harsh.'
+  - text: 'Salt-draw the radish. In a large non-reactive bowl, toss the 1500 g radish cubes with the 30 g / 3½ tbsp coarse salt and the 15 g / 1 tbsp sugar. Massage gently for 30 seconds so the salt coats every surface. Let stand at room temperature for 30 to 45 minutes; the radish will release a meaningful pool of liquid (about 150 to 250 g) and the cubes will turn translucent at the edges and lose their stiff raw crispness for a more pliable bite. This step is structural; unsalted radish in the kimchi paste will ferment but the cubes will stay starchy-hard and the kimchi will read raw and harsh.'
     time_min: 35
   - text: 'Drain the radish. Pour the radish-and-released-liquid into a colander. Do not rinse; the residual surface salt is part of the kimchi salinity calculation. Press the cubes gently against the colander to expel another 50 to 100 g of liquid (you should hear the cubes squeak against each other when properly drained). Return the drained radish to the bowl. The liquid that drained off can be discarded, or saved for cooking rice (it carries radish flavor and a small amount of salt).'
     time_min: 3

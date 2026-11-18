@@ -43,7 +43,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; seasons the fish just before searing)'
+    note: '(1 tsp Diamond Crystal; seasons the fish just before searing)'
   - group: 'Phase 1, the tuna'
     item: 'extra-virgin olive oil'
     slug: 'extra-virgin-olive-oil'
@@ -115,7 +115,7 @@ ingredients:
     note: '(½ lemon; the finishing acid)'
 
 steps:
-  - text: 'Salt and sear the tuna. Pat the two 340 g / 12 oz tuna steaks completely dry and season both faces with the 3 g / ¾ tsp kosher salt. Heat the 14 g / 1 tbsp olive oil in a wide stainless or cast-iron skillet over medium-high until it shimmers and just begins to smoke. Lay the steaks in and sear undisturbed for about 90 seconds per face, until each face is deep golden-brown. Pull them to a plate while the centers are still distinctly underdone; they will finish in the sauce. Do not cook them through here.'
+  - text: 'Salt and sear the tuna. Pat the two 340 g / 12 oz tuna steaks completely dry and season both faces with the 3 g / 1 tsp kosher salt. Heat the 14 g / 1 tbsp olive oil in a wide stainless or cast-iron skillet over medium-high until it shimmers and just begins to smoke. Lay the steaks in and sear undisturbed for about 90 seconds per face, until each face is deep golden-brown. Pull them to a plate while the centers are still distinctly underdone; they will finish in the sauce. Do not cook them through here.'
     technique: 'maillard-sear'
     time_min: 5
   - text: 'Build the sauce in the same pan. Lower the heat to medium. Add the 28 g / 2 tbsp olive oil, the 12 g / 4 cloves sliced garlic, the 12 g / 4 chopped anchovy fillets, and the 1 g / ½ tsp red pepper flakes. Cook 1 to 2 minutes, stirring, until the garlic is pale gold and the anchovies have dissolved into the oil; this melted-anchovy oil is the savory base, so let them break down completely.'

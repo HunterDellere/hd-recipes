@@ -53,7 +53,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
   - group: 'Phase 1, cook the dal'
     item: 'ghee (for cooking the dal)'
     slug: 'ghee'
@@ -125,7 +125,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 2, first tadka and masala'
     item: 'hot water (to loosen the dal)'
     qty: 250
@@ -189,14 +189,14 @@ ingredients:
     note: '(¼ cup)'
 
 steps:
-  - text: 'Pressure-cook the dal. Put the 200 g soaked, drained toor dal in a pressure cooker with the 750 ml / 3 cups water, 1 g / ½ tsp turmeric, 4 g / 1 tsp kosher salt, and 5 g / 1 tsp ghee. Seasoning the cooking water salts the lentils through; toor dal does not toughen from salt the way whole beans can. Stovetop cooker: cook over high heat to the first whistle, lower to medium, and cook through 4 more whistles (about 12 minutes). Electric cooker: 12 minutes at high pressure. Let the pressure release naturally for 10 minutes; the dal keeps softening as it depressurizes.'
+  - text: 'Pressure-cook the dal. Put the 200 g soaked, drained toor dal in a pressure cooker with the 750 ml / 3 cups water, 1 g / ½ tsp turmeric, 4 g / 1½ tsp kosher salt, and 5 g / 1 tsp ghee. Seasoning the cooking water salts the lentils through; toor dal does not toughen from salt the way whole beans can. Stovetop cooker: cook over high heat to the first whistle, lower to medium, and cook through 4 more whistles (about 12 minutes). Electric cooker: 12 minutes at high pressure. Let the pressure release naturally for 10 minutes; the dal keeps softening as it depressurizes.'
     time_min: 25
   - text: 'Whisk the dal smooth. Open the cooker and whisk the dal hard for 30 seconds (a wire whisk or a wooden dal ghotni both work). The grains should collapse into a creamy, pale-yellow body with a few soft flecks; if hard centers remain, the dal was undercooked, so close the lid and give it 5 more minutes at pressure.'
     time_min: 2
   - text: 'First tadka. While the dal releases pressure, heat the 20 g / 1½ tbsp ghee in a heavy saucepan or wide skillet over medium heat. Add the 3 g / 1 tsp cumin seeds and let them sizzle and darken one shade, about 30 seconds; they should smell toasty, not acrid. Blooming the seeds in fat moves their aromatic oils into the ghee, which then carries them through the whole pot.'
     technique: 'spice-tempering'
     time_min: 1
-  - text: 'Build the masala. Add the 120 g / 1 medium chopped onion and cook, stirring with a wooden spoon, until soft and golden at the edges, about 6 minutes. Add the 10 g grated ginger, 10 g / 3 cloves grated garlic, and the 5 g / 1 slit green chili; cook 1 minute until the raw garlic smell is gone. Add the 150 g / 2 chopped Roma tomatoes, 2 g / 1 tsp ground coriander, 2 g / ¾ tsp Kashmiri chili powder, and 3 g / ¾ tsp kosher salt. The salt draws water out of the tomatoes so they break down faster. Cook, stirring and mashing, until the tomatoes collapse into a jammy paste and the ghee separates and pools at the edges, about 6 minutes. That separation is the bhuna stage: the spices are cooked through and no longer taste raw.'
+  - text: 'Build the masala. Add the 120 g / 1 medium chopped onion and cook, stirring with a wooden spoon, until soft and golden at the edges, about 6 minutes. Add the 10 g grated ginger, 10 g / 3 cloves grated garlic, and the 5 g / 1 slit green chili; cook 1 minute until the raw garlic smell is gone. Add the 150 g / 2 chopped Roma tomatoes, 2 g / 1 tsp ground coriander, 2 g / ¾ tsp Kashmiri chili powder, and 3 g / 1 tsp kosher salt. The salt draws water out of the tomatoes so they break down faster. Cook, stirring and mashing, until the tomatoes collapse into a jammy paste and the ghee separates and pools at the edges, about 6 minutes. That separation is the bhuna stage: the spices are cooked through and no longer taste raw.'
     time_min: 13
   - text: 'Simmer together. Scrape the whisked dal into the masala and add the 250 ml / 1 cup hot water. Bring to a simmer and cook, stirring occasionally, 8 minutes, so the masala flavors the whole pot. Adjust with more hot water as needed: dhaba dal should pour from a ladle in a thick ribbon, thinner than porridge, thicker than soup. It thickens as it stands. Taste and add kosher salt in pinches; the dal should taste fully seasoned before the tadka goes on, since the tadka adds aroma, not salt.'
     time_min: 10

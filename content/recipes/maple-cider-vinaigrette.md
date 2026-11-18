@@ -57,7 +57,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; salt dissolves into the acid phase first, never directly into the oil)'
+    note: '(1 tsp Diamond Crystal; salt dissolves into the acid phase first, never directly into the oil)'
   - group: 'Acid phase'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -73,7 +73,7 @@ ingredients:
     note: '(½ cup + 1 tsp; ~1:3 acid to oil counting the maple in the acid phase)'
 
 steps:
-  - text: 'In a small bowl or a wide-mouth jar, combine the 45 g / 3 tbsp apple cider vinegar, the 22 g / 1½ tbsp maple syrup, the 18 g / 1 tbsp whole-grain mustard, the 22 g / 1 medium microplaned shallot, the 3 g / ¾ tsp kosher salt, and the 0.5 g / ¼ tsp cracked black pepper. Whisk vigorously for 15 to 20 seconds; the salt fully dissolves, the mustard distributes evenly, and the shallot mucilage starts to thicken the mixture. Salt always goes into the acid phase first, never into the oil phase; salt does not dissolve in oil and will read as gritty hot spots if added at the end.'
+  - text: 'In a small bowl or a wide-mouth jar, combine the 45 g / 3 tbsp apple cider vinegar, the 22 g / 1½ tbsp maple syrup, the 18 g / 1 tbsp whole-grain mustard, the 22 g / 1 medium microplaned shallot, the 3 g / 1 tsp kosher salt, and the 0.5 g / ¼ tsp cracked black pepper. Whisk vigorously for 15 to 20 seconds; the salt fully dissolves, the mustard distributes evenly, and the shallot mucilage starts to thicken the mixture. Salt always goes into the acid phase first, never into the oil phase; salt does not dissolve in oil and will read as gritty hot spots if added at the end.'
     technique: 'vinaigrette-emulsion'
     time_min: 1
   - text: 'While whisking constantly with one hand, stream in the 120 g / ½ cup + 1 tsp olive oil with the other in a thin steady drizzle (5 to 10 seconds for the full pour, not faster). The slow oil addition gives the mustard mucilage time to coat each newly-introduced droplet before the next one arrives; the vigorous whisking shears the oil into smaller droplets that stay suspended longer. The vinaigrette tightens visibly as the emulsion forms; by the time the last of the oil is in, the dressing should be opaque-amber and ribbon off the whisk.'

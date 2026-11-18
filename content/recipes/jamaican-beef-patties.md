@@ -150,7 +150,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 2, the beef filling'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
@@ -175,7 +175,7 @@ steps:
   - text: 'Add the 450 g ground beef. Break up with a wooden spoon and cook 6 to 8 minutes over medium-high, stirring occasionally, until the beef has lost all pink and the bottom of the pan has developed a brown fond. Do not stir constantly; let the beef sit and Maillard-brown on the pan bottom in patches. The fond is the structural source of the filling''s deep savor.'
     technique: 'maillard-sear'
     time_min: 8
-  - text: 'Add the 3 g / 1½ tsp allspice, 5 g / 2 tsp curry powder, 6 g / 1½ tsp salt, and 2 g / 1 tsp pepper. Stir 30 seconds to bloom the spices in the rendered beef fat. Add the 15 ml / 1 tbsp soy sauce and the 180 ml / ¾ cup water; scrape the fond off the pan bottom. Bring to a hard simmer.'
+  - text: 'Add the 3 g / 1½ tsp allspice, 5 g / 2 tsp curry powder, 6 g / 2¼ tsp salt, and 2 g / 1 tsp pepper. Stir 30 seconds to bloom the spices in the rendered beef fat. Add the 15 ml / 1 tbsp soy sauce and the 180 ml / ¾ cup water; scrape the fond off the pan bottom. Bring to a hard simmer.'
     time_min: 2
   - text: 'Sprinkle in the 60 g / ½ cup breadcrumbs while stirring; the crumbs absorb the liquid and turn the filling from loose-and-wet into a tight, scoopable paste in about 90 seconds. Cook 2 more minutes until the mixture pulls away from the sides of the pan when stirred. Transfer to a wide plate or sheet pan to cool fully (about 30 minutes; speed up with the freezer). A warm filling melts the pastry butter and produces soggy patties.'
     time_min: 5

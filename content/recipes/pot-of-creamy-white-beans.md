@@ -48,7 +48,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 2, cook'
     item: 'cold water, for cooking'
@@ -60,7 +60,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 2, cook'
     item: 'yellow onion'
     slug: 'yellow-onion'
@@ -97,18 +97,18 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; taste first)'
+    note: '(¾ tsp Diamond Crystal; taste first)'
 
 steps:
-  - text: 'Brine-soak. Dissolve the 8 g / 2 tsp kosher salt for the soak in the 1000 ml / 4 cups cold soaking water in a large bowl. Add the 250 g rinsed cannellini, cover with a plate, and leave at room temperature 8 to 24 hours. The brine softens the skins so they stay intact and tender while the insides turn creamy.'
+  - text: 'Brine-soak. Dissolve the 8 g / 2¾ tsp kosher salt for the soak in the 1000 ml / 4 cups cold soaking water in a large bowl. Add the 250 g rinsed cannellini, cover with a plate, and leave at room temperature 8 to 24 hours. The brine softens the skins so they stay intact and tender while the insides turn creamy.'
     time_min: 480
   - text: 'Drain and rinse. Drain the beans, discard the soaking water, and rinse well. Fully soaked cannellini are plump and smooth; any still wrinkled need another hour.'
     time_min: 3
-  - text: 'Boil 10 minutes. Put the beans in a heavy pot with the 1500 ml / 6 cups cold cooking water, the 3 g / ¾ tsp kosher salt for cooking, the 100 g halved onion, the 12 g / 3 smashed garlic cloves, the 20 g Parmesan rind, the 1 bay leaf, and the 30 ml / 2 tbsp olive oil. Bring to a full boil and keep it there for 10 minutes, skimming the foam. This destroys the lectin in white kidney beans; it is short enough not to damage the skins.'
+  - text: 'Boil 10 minutes. Put the beans in a heavy pot with the 1500 ml / 6 cups cold cooking water, the 3 g / 1 tsp kosher salt for cooking, the 100 g halved onion, the 12 g / 3 smashed garlic cloves, the 20 g Parmesan rind, the 1 bay leaf, and the 30 ml / 2 tbsp olive oil. Bring to a full boil and keep it there for 10 minutes, skimming the foam. This destroys the lectin in white kidney beans; it is short enough not to damage the skins.'
     time_min: 20
   - text: 'Cook at a tremor. Lower the heat until the surface barely moves, with only an occasional bubble, partly cover, and cook 45 to 75 minutes, stirring gently once or twice and topping up with hot water if the level drops to the beans. A rolling boil past the first 10 minutes tears the thin skins and turns the pot to mash. The olive oil coats the beans and calms the surface of the water, which also helps keep the skins whole.'
     time_min: 60
-  - text: 'Check and season. Taste five beans; all should be uniformly creamy with no chalky core and tender skins. Taste the liquid and add up to 2 g / ½ tsp kosher salt if it tastes flat. For a thicker, creamier liquid, crush a ladleful of beans against the side of the pot and stir them back in.'
+  - text: 'Check and season. Taste five beans; all should be uniformly creamy with no chalky core and tender skins. Taste the liquid and add up to 2 g / ¾ tsp kosher salt if it tastes flat. For a thicker, creamier liquid, crush a ladleful of beans against the side of the pot and stir them back in.'
     time_min: 5
   - text: 'Cool in the liquid. Fish out the onion, garlic skins, the 1 bay leaf, and what is left of the rind. Let the beans cool in their liquid; they absorb it and improve over the first 24 hours. Refrigerate within 2 hours, still submerged.'
     time_min: 10

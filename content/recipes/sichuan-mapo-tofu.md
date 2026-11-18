@@ -73,7 +73,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
 
   - group: 'Phase 3, aromatic base'
     item: 'neutral oil'
@@ -163,7 +163,7 @@ steps:
   - text: 'Brown the beef. Heat a wok over high heat until lightly smoking. Add 30 ml / 2 tbsp neutral oil and the 150 g ground beef. Stir-fry continuously, breaking the meat up with a spatula into fine granules. Cook 5 to 7 minutes; the beef will release water in the first 2 minutes (do not drain, let it cook off), then begin to brown. Pull when the granules are deep mahogany, the surface is dry, and the kitchen smells of toasted beef. This is "ma chao" technique and it is non-negotiable; a pale or grey beef base produces a pale or grey final dish. Add 10 ml / 2 tsp Shaoxing wine and 5 ml / 1 tsp light soy. Toss 30 seconds. Transfer to a plate.'
     technique: 'maillard-sear'
     time_min: 7
-  - text: 'Blanch the tofu. While the beef browns, bring the 1500 ml / 6 cups water to a bare simmer (80°C / 175°F, small bubbles at the edges, no rolling boil) in a wide saucepan with the 8 g / 2 tsp salt dissolved. Cut the 500 g silken tofu into 2 cm cubes very carefully (a paring knife with a wet blade works best; do not press hard). Slide the cubes into the salted water with a wide spatula. Hold at 80°C for 2 minutes (do not boil, boiling will fracture the silken curd). Drain through a wide colander. Set aside. The blanch firms the surface proteins so the cubes hold shape under the sauce, and pre-seasons the tofu from the inside.'
+  - text: 'Blanch the tofu. While the beef browns, bring the 1500 ml / 6 cups water to a bare simmer (80°C / 175°F, small bubbles at the edges, no rolling boil) in a wide saucepan with the 8 g / 2¾ tsp salt dissolved. Cut the 500 g silken tofu into 2 cm cubes very carefully (a paring knife with a wet blade works best; do not press hard). Slide the cubes into the salted water with a wide spatula. Hold at 80°C for 2 minutes (do not boil, boiling will fracture the silken curd). Drain through a wide colander. Set aside. The blanch firms the surface proteins so the cubes hold shape under the sauce, and pre-seasons the tofu from the inside.'
     time_min: 5
   - text: 'Render the aromatic base. Wipe the wok and return to medium heat. Add the 45 ml / 3 tbsp neutral oil. When the oil is shimmering (140 to 160°C / 285 to 320°F, before smoking), add the 35 g doubanjiang. Break it up immediately with the spatula and stir-fry 90 seconds, until the oil turns brilliant brick-red and smells of toasted chili-bean paste. Add the 6 g crushed douchi, 12 g minced ginger, and 16 g minced garlic. Stir-fry 45 seconds; do not exceed medium heat or the aromatics scorch.'
     technique: 'red-oil-rendering'

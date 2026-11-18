@@ -126,7 +126,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 10
     unit: 'g'
-    note: '(2½ tsp Diamond Crystal; in layers, with the preserved lemon adding more salt later)'
+    note: '(3½ tsp Diamond Crystal; in layers, with the preserved lemon adding more salt later)'
   - group: 'Phase 3, the chicken and braise'
     item: 'water'
     qty: 200

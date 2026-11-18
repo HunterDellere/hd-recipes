@@ -59,7 +59,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
   - group: 'Phase 1, batter base'
     item: 'soy sauce (Japanese koikuchi shoyu)'
     slug: 'light-soy-sauce'

@@ -75,7 +75,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 18
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal)'
+    note: '(2¼ tbsp Diamond Crystal)'
   - group: 'Phase 1, simmer the brisket'
     item: 'water'
     qty: 3000
@@ -162,7 +162,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1 tsp; adjust at the end)'
+    note: '(2¼ tsp; adjust at the end)'
 
   - group: 'Phase 3, the finish'
     item: 'pimento-stuffed Spanish olives'

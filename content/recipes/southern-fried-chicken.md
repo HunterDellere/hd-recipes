@@ -54,7 +54,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 30
     unit: 'g'
-    note: '(2½ tbsp Diamond Crystal; ~1.9% of the chicken weight, the structural brine ratio)'
+    note: '(3½ tbsp Diamond Crystal; ~1.9% of the chicken weight, the structural brine ratio)'
   - group: 'Phase 1, overnight buttermilk brine'
     item: 'hot sauce (Crystal or Louisiana Gold)'
     qty: 30
@@ -91,7 +91,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; the dredge needs aggressive seasoning since most of it falls off in the fry)'
+    note: '(1½ tbsp Diamond Crystal; the dredge needs aggressive seasoning since most of it falls off in the fry)'
   - group: 'Phase 2, seasoned dredge flour'
     item: 'sweet paprika'
     qty: 6
@@ -138,7 +138,7 @@ ingredients:
     note: '(~5 cups; enough to fill a 30 cm cast-iron skillet to 2.5 cm / 1 inch depth; peanut oil is the canonical Southern fry oil for its high smoke point and mild flavor)'
 
 steps:
-  - text: 'Overnight brine. Whisk together 1000 ml / 4 cups buttermilk, 30 g / 2½ tbsp kosher salt, 30 g / 2 tbsp hot sauce, 20 g / 6 cloves smashed garlic, and 4 g / 1 tsp cracked black peppercorns in a large bowl until the salt dissolves. Add the 1600 g chicken pieces; submerge under the brine, pressing down to fully cover. Cover and refrigerate 12 to 24 hours. The salt penetrates through to the bone, the buttermilk lactic acid hydrolyzes surface proteins (reading as more tender meat without going mushy), and the brine seasons the chicken throughout its mass.'
+  - text: 'Overnight brine. Whisk together 1000 ml / 4 cups buttermilk, 30 g / 3½ tbsp kosher salt, 30 g / 2 tbsp hot sauce, 20 g / 6 cloves smashed garlic, and 4 g / 1 tsp cracked black peppercorns in a large bowl until the salt dissolves. Add the 1600 g chicken pieces; submerge under the brine, pressing down to fully cover. Cover and refrigerate 12 to 24 hours. The salt penetrates through to the bone, the buttermilk lactic acid hydrolyzes surface proteins (reading as more tender meat without going mushy), and the brine seasons the chicken throughout its mass.'
     technique: 'dry-brining'
     time_min: 720
   - text: 'Drain the chicken. Lift the chicken pieces out of the brine; let excess buttermilk drip off but do not pat dry. The buttermilk coating IS the dredge adhesive; a dry surface produces a thin, patchy crust. Place the brined chicken on a wire rack while you mix the dredge.'

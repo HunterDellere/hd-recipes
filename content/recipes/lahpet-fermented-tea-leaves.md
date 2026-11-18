@@ -51,7 +51,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; the 2.5% ferment-safety brine, do not reduce)'
+    note: '(2¾ tsp Diamond Crystal; the 2.5% ferment-safety brine, do not reduce)'
   - group: 'Phase 2, the brine and pack'
     item: 'garlic, peeled'
     slug: 'garlic'
@@ -78,7 +78,7 @@ steps:
     time_min: 15
   - text: 'Rinse out the bitterness. Tip the softened leaf into a bowl of cool water, swish, and drain; repeat twice more with fresh water. Raw green tea leaf is aggressively astringent and tannic, and these rinses pull out the harshest catechins so the ferment starts from a cleaner base. Squeeze the rinsed leaf firmly in your hands or in a clean towel to wring out as much water as you can, the drier the leaf, the more concentrated and stable the ferment.'
     time_min: 5
-  - text: 'Pound and salt. Transfer the squeezed leaf to a mortar, or chop it coarsely on a board, and pound or press it into a rough, cohesive paste, this bruises the cells and releases the juices the lactic bacteria will feed on. Work in the 8 g / 2 tsp kosher salt, the crushed 6 g / 2 cloves garlic if using, and the 15 g / 1 tbsp lime juice, kneading until the leaf feels slick and wet and the salt has fully dissolved into the released liquid. The mixture should be glossy and just barely weeping brine when squeezed.'
+  - text: 'Pound and salt. Transfer the squeezed leaf to a mortar, or chop it coarsely on a board, and pound or press it into a rough, cohesive paste, this bruises the cells and releases the juices the lactic bacteria will feed on. Work in the 8 g / 2¾ tsp kosher salt, the crushed 6 g / 2 cloves garlic if using, and the 15 g / 1 tbsp lime juice, kneading until the leaf feels slick and wet and the salt has fully dissolved into the released liquid. The mixture should be glossy and just barely weeping brine when squeezed.'
     time_min: 8
   - text: 'Pack airtight under pressure. Press the salted leaf hard into a small, scrupulously clean glass jar, tamping down with a spoon or muddler to drive out air pockets, until the leaf is compacted and its own brine rises to just cover the surface. The leaf MUST sit below the liquid line. If it does not weep enough brine to submerge itself, top with a teaspoon or two of 2.5% salt water (2.5 g salt per 100 ml). Lay a small water-filled zip bag or a clean weight directly on the surface to hold the leaf down.'
     time_min: 3

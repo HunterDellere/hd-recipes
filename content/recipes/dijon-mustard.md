@@ -77,7 +77,7 @@ steps:
     time_min: 5
   - text: 'After the soak the seeds should be plump and squashable between two fingers. If they still feel hard at the core, give it another 12 hours; undersoaked seeds blend gritty.'
     time_min: 1
-  - text: 'Transfer the entire mixture (seeds plus any unabsorbed liquid) to a high-speed blender or food processor. Add 30 ml / 2 tbsp apple cider vinegar, 6 g / 1 tsp kosher salt, and 6 g / 1 tsp honey if using.'
+  - text: 'Transfer the entire mixture (seeds plus any unabsorbed liquid) to a high-speed blender or food processor. Add 30 ml / 2 tbsp apple cider vinegar, 6 g / 2¼ tsp kosher salt, and 6 g / 1 tsp honey if using.'
     time_min: 2
   - text: 'Blend on high for 60–90 seconds. The mixture will go from gritty paste to thick, smooth mustard with the consistency of softened butter. Scrape down the sides twice. If it seizes or refuses to move, splash in 15 ml / 1 tbsp more cold water and keep going. The texture should be spreadable, not stiff.'
     time_min: 2

@@ -46,7 +46,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp)'
+    note: '(2¼ tsp)'
   - item: 'white pepper'
     slug: 'white-pepper'
     qty: 1

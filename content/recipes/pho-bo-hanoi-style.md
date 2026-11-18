@@ -196,7 +196,7 @@ steps:
     time_min: 300
   - text: 'Pull the brisket at the 2-hour mark. The brisket is fully cooked at this point (about 90°C / 195°F internal). Lift out with tongs; transfer to a bowl, cover and refrigerate (chilled brisket slices more cleanly than warm). Continue simmering the bones, oxtail, onion, ginger, and spice packet for the remaining 3 hours.'
     time_min: 2
-  - text: 'Finish the broth. At the 4.5-hour mark, add the 30 g rock sugar, 60 g / 4 tbsp fish sauce, and 15 g / 1 tbsp kosher salt to the simmering broth. Stir to dissolve. Simmer 30 more minutes to integrate the seasoning. The broth should be a deep amber color, clear, with visible droplets of fat on the surface and a strong smell of star anise and beef.'
+  - text: 'Finish the broth. At the 4.5-hour mark, add the 30 g rock sugar, 60 g / 4 tbsp fish sauce, and 15 g / 1¾ tbsp kosher salt to the simmering broth. Stir to dissolve. Simmer 30 more minutes to integrate the seasoning. The broth should be a deep amber color, clear, with visible droplets of fat on the surface and a strong smell of star anise and beef.'
     time_min: 30
   - text: 'Strain. Pour the broth through a fine-mesh sieve lined with cheesecloth into a clean pot. Discard the bones, spice packet, charred aromatics; reserve any meat clinging to the bones for the bowls. You should have about 4500 ml / 19 cups of finished broth. Skim excess surface fat with a ladle, leaving a thin layer of clear amber fat (the canonical pho fat slick).'
     time_min: 10

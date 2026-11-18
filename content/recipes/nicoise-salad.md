@@ -51,7 +51,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal)'
+    note: '(1½ tsp Diamond Crystal)'
   - group: 'Phase 1, oil-poached tuna'
     item: 'bay leaf'
     slug: 'bay-leaf'
@@ -181,7 +181,7 @@ ingredients:
     note: '(small handful, torn at the last second)'
 
 steps:
-  - text: 'Pull the 400 g / 14 oz tuna loin from the fridge 30 minutes before cooking and rub it with the 4 g / 1 tsp kosher salt. The salt initiates surface cure while the loin warms toward 18 °C; an ice-cold loin entering 60 °C oil drops the bath temperature past the target window.'
+  - text: 'Pull the 400 g / 14 oz tuna loin from the fridge 30 minutes before cooking and rub it with the 4 g / 1½ tsp kosher salt. The salt initiates surface cure while the loin warms toward 18 °C; an ice-cold loin entering 60 °C oil drops the bath temperature past the target window.'
     technique: 'dry-brining'
     time_min: 30
   - text: 'In a small saucepan that fits the loin snugly, combine the 500 g / 2 cups extra-virgin olive oil, the 2 bay leaves, the 4 g lemon zest strips, and the 2 smashed garlic cloves. Bring the oil to 60 °C / 140 °F over low heat, monitoring with an instant-read thermometer. The aromatics infuse during the climb.'

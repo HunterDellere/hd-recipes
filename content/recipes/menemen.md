@@ -69,7 +69,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; in layers)'
+    note: '(1½ tsp Diamond Crystal; in layers)'
   - group: 'Phase 1, the pepper-tomato base'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'

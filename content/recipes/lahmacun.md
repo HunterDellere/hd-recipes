@@ -125,7 +125,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 2, the topping paste'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -172,7 +172,7 @@ steps:
     time_min: 3
   - text: 'Transfer the processed vegetables to a fine-mesh sieve set over a bowl and press gently with the back of a spoon for 2 minutes to drain excess water. This step is structural; too-wet topping steams the dough underneath and produces a soggy lahmacun. Discard the drained liquid (or save for a soup base).'
     time_min: 3
-  - text: 'In a medium bowl, combine the drained vegetable mixture with the 250 g ground lamb, 20 g / 4 tsp tomato paste, 4 g / 2 tsp pul biber, 3 g / 1½ tsp cumin, 2 g / 1 tsp paprika, 8 g / 2 tsp kosher salt, 2 g / 1 tsp black pepper, and 15 g / 1 tbsp olive oil. Mix with your hands or a wooden spoon until uniform and slightly sticky. The texture should be like a wet meatball mixture, just loose enough to spread thinly with the back of a spoon. Refrigerate while the oven preheats.'
+  - text: 'In a medium bowl, combine the drained vegetable mixture with the 250 g ground lamb, 20 g / 4 tsp tomato paste, 4 g / 2 tsp pul biber, 3 g / 1½ tsp cumin, 2 g / 1 tsp paprika, 8 g / 2¾ tsp kosher salt, 2 g / 1 tsp black pepper, and 15 g / 1 tbsp olive oil. Mix with your hands or a wooden spoon until uniform and slightly sticky. The texture should be like a wet meatball mixture, just loose enough to spread thinly with the back of a spoon. Refrigerate while the oven preheats.'
     time_min: 4
   - text: 'Preheat the oven to its maximum temperature (260°C / 500°F or higher) with a baking stone or steel on the upper-middle rack for at least 45 minutes.'
     time_min: 45

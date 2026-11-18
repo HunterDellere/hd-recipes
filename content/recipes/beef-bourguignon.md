@@ -55,7 +55,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(2½ tsp Diamond Crystal; salt the beef cubes 30 minutes ahead, the dry-brine penetrates the surface and improves the sear)'
+    note: '(1½ tbsp Diamond Crystal; salt the beef cubes 30 minutes ahead, the dry-brine penetrates the surface and improves the sear)'
   - group: 'Phase 1, the lardons and brown the beef'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -146,7 +146,7 @@ ingredients:
     note: '(a small handful; bright fresh herb finish to cut the rich gelatinous sauce)'
 
 steps:
-  - text: 'Salt the 1500 g / 3.3 lb beef chuck cubes with the 12 g / 2½ tsp salt and 2 g / 1 tsp black pepper 30 minutes ahead. Pat the surface dry with paper towels (any surface water prevents the sear). Toss in the 25 g / 3 tbsp flour to coat lightly. Preheat the oven to 160°C / 325°F. Set a 6 to 7 L heavy-bottomed Dutch oven over medium heat.'
+  - text: 'Salt the 1500 g / 3.3 lb beef chuck cubes with the 12 g / 1½ tbsp salt and 2 g / 1 tsp black pepper 30 minutes ahead. Pat the surface dry with paper towels (any surface water prevents the sear). Toss in the 25 g / 3 tbsp flour to coat lightly. Preheat the oven to 160°C / 325°F. Set a 6 to 7 L heavy-bottomed Dutch oven over medium heat.'
     time_min: 35
   - text: 'Render the lardons: add the 200 g / 7 oz cubed bacon to the cold Dutch oven; set over medium-low heat. Render slowly 8 to 10 minutes, stirring occasionally, until the lardons are deeply golden and crispy and the fat has rendered out to about 60 g of rendered fat in the pan. Remove the crispy lardons with a slotted spoon to a paper-towel-lined plate; reserve. Pour off all but about 30 g of the rendered fat; reserve the rest in a small heatproof bowl for the garnish sauté.'
     technique: 'lardon-rendering'

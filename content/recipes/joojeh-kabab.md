@@ -75,7 +75,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; 1.5% of chicken weight, the dry-brine ratio that seasons through the meat overnight)'
+    note: '(1½ tbsp Diamond Crystal; 1.5% of chicken weight, the dry-brine ratio that seasons through the meat overnight)'
   - group: 'Phase 1, the marinade'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -120,7 +120,7 @@ steps:
     time_min: 1
   - text: 'Grate the 150 g / 1 onion on the large holes of a box grater into a fine-mesh sieve set over a bowl; press hard with a spoon to extract the juice. Reserve 60 g of onion juice; discard the pulp.'
     time_min: 5
-  - text: 'In a large bowl, combine the 60 g onion juice, 150 g / ⅔ cup yogurt, 45 g / 3 tbsp olive oil, 30 g / 2 tbsp lemon juice, 12 g / 1 tbsp kosher salt, 2 g / 1 tsp black pepper, and two-thirds of the bloomed saffron liquid (reserve the remaining third for the basting butter). Whisk until uniform; the marinade should look pale gold-orange and smell of onion and saffron.'
+  - text: 'In a large bowl, combine the 60 g onion juice, 150 g / ⅔ cup yogurt, 45 g / 3 tbsp olive oil, 30 g / 2 tbsp lemon juice, 12 g / 1½ tbsp kosher salt, 2 g / 1 tsp black pepper, and two-thirds of the bloomed saffron liquid (reserve the remaining third for the basting butter). Whisk until uniform; the marinade should look pale gold-orange and smell of onion and saffron.'
     time_min: 3
   - text: 'Add the 800 g chicken cubes and turn to coat every piece. Cover and refrigerate 4 to 24 hours (8 to 12 is the structural sweet spot). The yogurt enzymes work over hours; the surface color develops as the saffron penetrates.'
     time_min: 1

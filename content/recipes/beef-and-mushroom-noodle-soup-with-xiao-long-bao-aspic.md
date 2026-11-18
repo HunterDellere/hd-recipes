@@ -62,7 +62,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; salt the beef once the water has cooked off and the grind is starting to brown)'
+    note: '(1½ tsp Diamond Crystal; salt the beef once the water has cooked off and the grind is starting to brown)'
 
   - group: 'Phase 3, aromatic bloom'
     item: 'fresh ginger, peeled and sliced into 3 mm coins'
@@ -184,7 +184,7 @@ ingredients:
 steps:
   - text: 'At least 1 hour ahead, ideally 4 to 8 hours, drop the 20 g dried shiitake into a small bowl with the 250 ml cold water and cover with a small plate to keep the mushrooms submerged. The cold soak hydrolyzes the shiitake to its full umami potential and produces the aromatic soaking liquid that joins the broth in Phase 4. The minimum useful soak is 30 minutes in 60 C water; the maximum useful soak is overnight in cold water.'
     time_min: 60
-  - text: 'Heat a heavy 4-quart Dutch oven or wide stainless pot over medium-high heat for 2 minutes until water flicked on the surface sizzles immediately. Add the 15 g / 1 tbsp neutral oil and tilt to coat. Add the 454 g ground beef in a single mass without breaking it up; let it sear undisturbed for 90 seconds so the bottom face builds a hard mahogany crust. Then break the beef apart with a wooden spoon or potato masher into rough 1 cm pebbles and continue cooking 5 to 7 minutes, stirring occasionally. The beef releases its water in the first 2 minutes (the pan will look pale and steamy); keep going past that point until the water has fully evaporated and the meat starts to fry in its own rendered fat. Season with the 4 g / 1 tsp kosher salt once the meat is dry and browning, never before. The visual cue for "done" is grit-dark pebbles with deep brown fond stuck to the pot bottom. About 8 minutes total from when the beef hit the pan.'
+  - text: 'Heat a heavy 4-quart Dutch oven or wide stainless pot over medium-high heat for 2 minutes until water flicked on the surface sizzles immediately. Add the 15 g / 1 tbsp neutral oil and tilt to coat. Add the 454 g ground beef in a single mass without breaking it up; let it sear undisturbed for 90 seconds so the bottom face builds a hard mahogany crust. Then break the beef apart with a wooden spoon or potato masher into rough 1 cm pebbles and continue cooking 5 to 7 minutes, stirring occasionally. The beef releases its water in the first 2 minutes (the pan will look pale and steamy); keep going past that point until the water has fully evaporated and the meat starts to fry in its own rendered fat. Season with the 4 g / 1½ tsp kosher salt once the meat is dry and browning, never before. The visual cue for "done" is grit-dark pebbles with deep brown fond stuck to the pot bottom. About 8 minutes total from when the beef hit the pan.'
     technique: 'maillard-sear'
     time_min: 10
   - text: 'Push the beef to one side of the pot. Tilt the pot slightly so the rendered beef fat pools on the empty side. Drop the 25 g sliced ginger, 16 g / 4 smashed garlic cloves, 30 g smashed scallion whites, 1 star anise pod, and 1.5 g / 1/2 tsp Chinese five-spice powder directly into the pooled fat. Bloom for 60 to 90 seconds, stirring constantly, until the aromatics smell sharply fragrant and the five-spice has darkened a shade. The bloom is the single most important flavor moment in the recipe; cold-five-spice added to broth tastes dusty, oil-bloomed five-spice tastes red-braise-warm.'

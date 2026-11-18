@@ -95,7 +95,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; less if your Cajun seasoning is high in salt)'
+    note: '(2¾ tsp Diamond Crystal; less if your Cajun seasoning is high in salt)'
   - group: 'Phase 2, the holy trinity and seasoning'
     item: 'black pepper, cracked'
     slug: 'black-pepper'

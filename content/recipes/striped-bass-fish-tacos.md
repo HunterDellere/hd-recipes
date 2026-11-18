@@ -71,7 +71,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; salts the cabbage to weep)'
+    note: '(1 tsp Diamond Crystal; salts the cabbage to weep)'
 
   - group: 'Phase 2, lime crema'
     item: 'sour cream'
@@ -104,7 +104,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal)'
+    note: '(¾ tsp Diamond Crystal)'
 
   - group: 'Phase 3, the fish and rub'
     item: 'striped bass fillet, skinless'
@@ -137,7 +137,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal)'
+    note: '(1¾ tsp Diamond Crystal)'
   - group: 'Phase 3, the fish and rub'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -187,14 +187,14 @@ ingredients:
     note: '(2 limes in wedges, for the table)'
 
 steps:
-  - text: 'Make the slaw first. In a large bowl, toss the 300 g / shaved green cabbage and the 50 g / ¼ red onion with the 3 g / ¾ tsp kosher salt and let it sit 20 to 30 minutes. The salt draws water out of the cell walls so the cabbage softens into a pliable crunch instead of staying raw and stiff. After it weeps, squeeze out the excess liquid by the handful, then toss with the 30 g / juice of 1 lime, the 15 g / 1 tbsp neutral oil, and the 15 g / ½ cup chopped cilantro. Taste and refrigerate; it should be tart and crunchy.'
+  - text: 'Make the slaw first. In a large bowl, toss the 300 g / shaved green cabbage and the 50 g / ¼ red onion with the 3 g / 1 tsp kosher salt and let it sit 20 to 30 minutes. The salt draws water out of the cell walls so the cabbage softens into a pliable crunch instead of staying raw and stiff. After it weeps, squeeze out the excess liquid by the handful, then toss with the 30 g / juice of 1 lime, the 15 g / 1 tbsp neutral oil, and the 15 g / ½ cup chopped cilantro. Taste and refrigerate; it should be tart and crunchy.'
     time_min: 8
-  - text: 'Make the lime crema. Whisk the 120 g / ½ cup sour cream with the 40 g / 2½ tbsp mayonnaise until smooth and loose, then stir in the 30 g / zest and juice of 1 lime, the 3 g / 1 grated garlic clove, and the 2 g / ½ tsp kosher salt. The mayonnaise thins the sour cream to a drizzle and adds an egg-yolk savory depth that plain sour cream lacks. Refrigerate so the lime and garlic bloom into the dairy while you grill.'
+  - text: 'Make the lime crema. Whisk the 120 g / ½ cup sour cream with the 40 g / 2½ tbsp mayonnaise until smooth and loose, then stir in the 30 g / zest and juice of 1 lime, the 3 g / 1 grated garlic clove, and the 2 g / ¾ tsp kosher salt. The mayonnaise thins the sour cream to a drizzle and adds an egg-yolk savory depth that plain sour cream lacks. Refrigerate so the lime and garlic bloom into the dairy while you grill.'
     time_min: 4
   - text: 'Heat the grill to high and clean the grate. Give a gas grill 10 to 15 minutes on high, or build a charcoal bed and let it ash over until you cannot hold a hand above the grate for more than 2 seconds. A ripping-hot, clean grate is what sears a release crust on the fish; a cool or dirty grate grabs the flesh and tears it. Oil the grate with a folded paper towel dipped in a film of oil, held in tongs, just before the fish goes on.'
     technique: 'grilling'
     time_min: 12
-  - text: 'Rub the fish. Pat the 560 g / striped bass strips bone-dry, since surface water steams and blocks the char. In a small bowl, combine the 4 g / 2 tsp ground cumin, the 4 g / 2 tsp smoked paprika, the 5 g / zest of 1 lime, the 5 g / 1¼ tsp kosher salt, and the 1 g / ½ tsp black pepper. Coat the strips with the 15 g / 1 tbsp neutral oil so the rub adheres, then dust the rub evenly over all sides and press it on.'
+  - text: 'Rub the fish. Pat the 560 g / striped bass strips bone-dry, since surface water steams and blocks the char. In a small bowl, combine the 4 g / 2 tsp ground cumin, the 4 g / 2 tsp smoked paprika, the 5 g / zest of 1 lime, the 5 g / 1¾ tsp kosher salt, and the 1 g / ½ tsp black pepper. Coat the strips with the 15 g / 1 tbsp neutral oil so the rub adheres, then dust the rub evenly over all sides and press it on.'
     time_min: 4
   - text: 'Grill the fish. Lay the 560 g / striped bass strips on the hot oiled grate perpendicular to the bars and leave them undisturbed for 3 to 4 minutes, until a char crust forms and the strips release cleanly without sticking. Flip once with a thin spatula and grill 2 to 3 minutes more, until the flesh turns fully opaque and flakes at a gentle press. Cook the fish through to opaque-and-flaky; striped bass sets into clean large flakes the moment it loses translucency, so pull it the instant it flakes rather than holding it over the heat and drying the flake out.'
     technique: 'grilling'

@@ -78,7 +78,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; seasons the pork shoulder before searing. The kraut, kielbasa, and bacon all carry salt; do not over-salt at the start)'
+    note: '(2¼ tsp Diamond Crystal; seasons the pork shoulder before searing. The kraut, kielbasa, and bacon all carry salt; do not over-salt at the start)'
   - group: 'Phase 2, the meats'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -152,7 +152,7 @@ steps:
     time_min: 25
   - text: 'In a heavy 6 to 8 quart Dutch oven over medium heat, render the 150 g / 5 oz bacon for 8 to 10 minutes, stirring every 2 minutes, until crisp and the fat has rendered out (about 4 to 6 tbsp of bacon fat in the pot). The rendered fat is the cooking medium for everything that follows.'
     time_min: 9
-  - text: 'Push the rendered bacon to one side. Pat the 600 g / 1¼ lb pork shoulder chunks dry, season with the 6 g / 1½ tsp kosher salt and the 3 g / 1 tsp black pepper, and sear in the bacon fat in two batches, 3 minutes per side, until deeply browned on all surfaces. Transfer the seared pork to a plate, leaving the bacon and rendered fat in the pot.'
+  - text: 'Push the rendered bacon to one side. Pat the 600 g / 1¼ lb pork shoulder chunks dry, season with the 6 g / 2¼ tsp kosher salt and the 3 g / 1 tsp black pepper, and sear in the bacon fat in two batches, 3 minutes per side, until deeply browned on all surfaces. Transfer the seared pork to a plate, leaving the bacon and rendered fat in the pot.'
     technique: 'maillard-sear'
     time_min: 12
   - text: 'Add the 250 g / 1 large diced yellow onion to the pot and cook 8 to 10 minutes, stirring every 2 minutes, until deep golden brown and soft. The slow caramelization is the structural base of the stew.'

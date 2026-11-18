@@ -55,7 +55,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; for the meat seasoning)'
+    note: '(2¼ tsp Diamond Crystal; for the meat seasoning)'
   - group: 'Phase 1, the meat broth'
     item: 'water'
     qty: 800
@@ -121,7 +121,7 @@ ingredients:
     note: '(about 4 cups packed fresh, or 1 frozen 250 g block; the green folded in at the end, see substitutions for the canonical bitter leaf)'
 
 steps:
-  - text: 'In a heavy 6-quart stockpot, combine the 700 g / 4 to 5 chicken thighs (or beef chuck), the 100 g / half of the diced onion (the half not reserved for Phase 3), the 4 g / 1 Maggi cube crumbled in, the 6 g / 1½ tsp kosher salt, and the 800 ml / 3⅓ cups water. Bring to a boil, then drop to a low simmer and cook covered for 30 minutes for chicken, 60 minutes for beef. The meat should be tender and the broth should be flavorful.'
+  - text: 'In a heavy 6-quart stockpot, combine the 700 g / 4 to 5 chicken thighs (or beef chuck), the 100 g / half of the diced onion (the half not reserved for Phase 3), the 4 g / 1 Maggi cube crumbled in, the 6 g / 2¼ tsp kosher salt, and the 800 ml / 3⅓ cups water. Bring to a boil, then drop to a low simmer and cook covered for 30 minutes for chicken, 60 minutes for beef. The meat should be tender and the broth should be flavorful.'
     time_min: 35
   - text: 'Add the 150 g / 2 fillets smoked fish (broken into pieces) and the 10 g / 1 tbsp crayfish powder to the meat broth. Simmer covered for another 15 minutes; the smoked fish releases its funk into the broth and softens. Do not stir aggressively; the smoked fish breaks apart easily and you want some recognizable pieces in the finished soup.'
     technique: 'simmering'

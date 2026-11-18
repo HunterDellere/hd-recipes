@@ -123,7 +123,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; for the protein, only if needed)'
+    note: '(¾ tsp Diamond Crystal; for the protein, only if needed)'
   - group: 'Phase 5, finish'
     item: 'shichimi tōgarashi'
     qty: 2

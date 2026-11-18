@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; ~1% of trimmed cube weight)'
+    note: '(2¼ tsp Diamond Crystal; ~1% of trimmed cube weight)'
   - group: 'Phase 1, hard-roasted sweet potato'
     item: 'ground cumin'
     slug: 'ground-cumin'
@@ -100,7 +100,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp; canned beans are typically already salted; taste first and pull back if the rinsed beans already read salt-forward)'
+    note: '(¾ tsp; canned beans are typically already salted; taste first and pull back if the rinsed beans already read salt-forward)'
 
   - group: 'Phase 4, chipotle-lime vinaigrette'
     item: 'chipotle in adobo (chiles plus sauce)'
@@ -139,7 +139,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 2
     unit: 'g'
-    note: '(½ tsp Diamond Crystal; dissolves into the lime phase before the oil goes in)'
+    note: '(¾ tsp Diamond Crystal; dissolves into the lime phase before the oil goes in)'
   - group: 'Phase 4, chipotle-lime vinaigrette'
     item: 'extra-virgin olive oil'
     slug: 'extra-virgin-olive-oil'
@@ -187,7 +187,7 @@ steps:
   - text: 'Heat the oven to 230 °C / 450 °F with a rimmed sheet pan inside. The hot pan is structural; the 700 g / 2 sweet potato cubes laid on a cold pan steam under their own moisture for the first 5 minutes and never develop the deep caramelized edges that the dish depends on. A preheated pan starts the Maillard reaction at the cube-metal interface from the moment of contact.'
     technique: 'high-heat-dry-roasting'
     time_min: 12
-  - text: 'In a wide bowl, toss the 700 g / 2 sweet potato cubes with the 22 g / 1½ tbsp olive oil, the 6 g / 1½ tsp kosher salt, the 2 g / 1 tsp ground cumin, and the 2 g / 1 tsp smoked paprika. Use clean hands; rub the spices and oil into every face of every cube. The oil and spice film should be uniform; bare patches of cube will read pale and unseasoned next to the well-coated faces.'
+  - text: 'In a wide bowl, toss the 700 g / 2 sweet potato cubes with the 22 g / 1½ tbsp olive oil, the 6 g / 2¼ tsp kosher salt, the 2 g / 1 tsp ground cumin, and the 2 g / 1 tsp smoked paprika. Use clean hands; rub the spices and oil into every face of every cube. The oil and spice film should be uniform; bare patches of cube will read pale and unseasoned next to the well-coated faces.'
     time_min: 4
   - text: 'Pull the hot sheet pan from the oven; spread the seasoned cubes in a single layer with at least 1 cm between cubes. Crowding traps steam and prevents the char; if the cubes do not fit on one pan with breathing room, use two pans on staggered racks and rotate at the halfway point. Roast 22 to 25 minutes total: do not stir or flip for the first 14 minutes (the underside develops the deep mahogany char in the un-disturbed initial contact); flip with a thin spatula at minute 14 and roast another 8 to 11 minutes until the second side is also deeply browned and the cube is tender at the center when pierced with a paring knife. Pull to a wide plate to cool; do not stack hot cubes on each other, the steam softens the char.'
     technique: 'high-heat-dry-roasting'
@@ -196,7 +196,7 @@ steps:
     time_min: 6
   - text: 'Macerate the red onion. In a small bowl, combine the 80 g / ½ medium diced red onion with 30 g / 2 tbsp lime juice (additional, separate from the dressing). Press the onion gently with the back of a spoon so the lime juice fully wets every dice. Let stand 5 to 10 minutes while the rest of the components come together. The lime acid denatures the onion sulfur compounds (allyl propyl disulfide and related volatiles) and shifts the onion from sharp-and-aggressive to tart-and-mild; the dice also turns a brighter pink-magenta from the anthocyanins reacting with the acid.'
     time_min: 8
-  - text: 'Build the dressing. In a small bowl or wide-mouth jar, mince together 1 to 1½ chipotle chiles and 1 tbsp of the adobo sauce on a cutting board with a chef knife until uniform paste, ~24 g total. Scrape into the bowl. Add the 45 g / 3 tbsp lime juice, the 14 g / 2 tsp honey, the 6 g / 2 cloves microplaned garlic, the 1 g / ½ tsp ground cumin, and the 2 g / ½ tsp kosher salt. Whisk vigorously for 15 to 20 seconds; the salt dissolves into the lime acid, the garlic mucilage starts to thicken the mixture, and the chipotle-adobo paste distributes evenly. Salt always goes into the acid phase first; salt does not dissolve in oil and reads as gritty hot spots if added at the end.'
+  - text: 'Build the dressing. In a small bowl or wide-mouth jar, mince together 1 to 1½ chipotle chiles and 1 tbsp of the adobo sauce on a cutting board with a chef knife until uniform paste, ~24 g total. Scrape into the bowl. Add the 45 g / 3 tbsp lime juice, the 14 g / 2 tsp honey, the 6 g / 2 cloves microplaned garlic, the 1 g / ½ tsp ground cumin, and the 2 g / ¾ tsp kosher salt. Whisk vigorously for 15 to 20 seconds; the salt dissolves into the lime acid, the garlic mucilage starts to thicken the mixture, and the chipotle-adobo paste distributes evenly. Salt always goes into the acid phase first; salt does not dissolve in oil and reads as gritty hot spots if added at the end.'
     technique: 'vinaigrette-emulsion'
     time_min: 2
   - text: 'While whisking constantly with one hand, stream in the 75 g / ⅓ cup olive oil with the other in a thin steady drizzle (5 to 8 seconds for the full pour, not faster). The chipotle-adobo paste is the emulsifier here, replacing the mustard role; the adobo carries enough tomato-vinegar mucilage and pepper-pulp pectin to coat the oil droplets. The dressing tightens visibly into an opaque rust-orange emulsion; by the time the last of the oil is in, it should ribbon off the whisk. Whisk an additional 15 to 20 seconds. Taste; it should read smoky-acidic-sweet in that order, fully salted, with the cumin and garlic as background. If it reads flat, more salt; if it tastes only acidic, more honey; if it reads only sweet, more lime; if it lacks the smoke, more chipotle.'
@@ -205,7 +205,7 @@ steps:
   - text: 'Toast the 50 g / ⅓ cup pepitas. In a small dry skillet over medium heat, toast the seeds for 3 to 4 minutes, agitating the pan every 30 seconds. The seeds will pop audibly (like miniature popcorn), turn from olive-green to mottled tan-brown, and release a pronounced toasted-pumpkin-seed aroma. Pull immediately when the popping subsides and the color is set; the window from perfect to scorched is about 30 seconds. Tip onto a plate to cool; the seeds crisp further as they cool.'
     technique: 'dry-toasting'
     time_min: 4
-  - text: 'Season the beans. In a wide bowl, toss the 250 g drained-weight black beans (from 1 × 425 g / 15 oz can drained and rinsed in hot water) with the 1 g / ½ tsp ground cumin and the 2 g / ½ tsp kosher salt. The hot-water rinse warms the beans enough to bloom the cumin without active heat; cold beans straight from the colander leave the cumin reading raw and dusty.'
+  - text: 'Season the beans. In a wide bowl, toss the 250 g drained-weight black beans (from 1 × 425 g / 15 oz can drained and rinsed in hot water) with the 1 g / ½ tsp ground cumin and the 2 g / ¾ tsp kosher salt. The hot-water rinse warms the beans enough to bloom the cumin without active heat; cold beans straight from the colander leave the cumin reading raw and dusty.'
     time_min: 2
   - text: 'Compose the salad. In a wide shallow serving bowl or platter (not a deep mixing bowl, the salad reads better spread thin), layer in this order: the 250 g seasoned black beans across the bottom, the warm 620 g roasted sweet potato cubes on top, the 200 g charred corn scattered across, the 80 g macerated red onion drained from its lime soak (reserve the soak liquid for another dressing or discard), the 20 g chopped cilantro. Drizzle two-thirds of the dressing across the top; toss gently with a large spoon, 4 to 6 turns, just enough to coat without crushing the cubes or breaking the beans. The salad should glisten with the dressing without pooling at the bottom of the bowl.'
     time_min: 3

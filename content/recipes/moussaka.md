@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 18
     unit: 'g'
-    note: '(1½ tbsp Diamond Crystal)'
+    note: '(2¼ tbsp Diamond Crystal)'
   - group: 'Phase 1, the eggplant'
     item: 'extra-virgin olive oil (for searing)'
     slug: 'extra-virgin-olive-oil'
@@ -169,7 +169,7 @@ ingredients:
     note: '(⅓ tsp; the cheese brings significant salt; taste before adding)'
 
 steps:
-  - text: 'Lay the 1200 g / 3 to 4 eggplants (sliced 1 cm thick) on two large rimmed sheet pans in single layers. Sprinkle both sides of each slice with the 18 g / 1½ tbsp salt total (about 4 to 5 g per pan). Let purge 45 minutes; brown beads of bitter alkaloid water will form on the surface. After 45 minutes, blot every slice thoroughly dry with paper towels (any surface water causes oil-spitting during the sear).'
+  - text: 'Lay the 1200 g / 3 to 4 eggplants (sliced 1 cm thick) on two large rimmed sheet pans in single layers. Sprinkle both sides of each slice with the 18 g / 2¼ tbsp salt total (about 4 to 5 g per pan). Let purge 45 minutes; brown beads of bitter alkaloid water will form on the surface. After 45 minutes, blot every slice thoroughly dry with paper towels (any surface water causes oil-spitting during the sear).'
     technique: 'salting-eggplant'
     time_min: 50
   - text: 'While the eggplant purges, make the lamb ragù. Heat the 30 g / 2 tbsp olive oil in a wide Dutch oven over medium heat. Add the 250 g / 1 large onion (finely diced); sweat 6 to 7 minutes until translucent and soft. Add the 20 g / 5 to 6 cloves minced garlic; cook 90 seconds until fragrant and pale gold.'

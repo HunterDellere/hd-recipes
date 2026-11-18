@@ -144,7 +144,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 8
     unit: 'g'
-    note: '(2 tsp Diamond Crystal)'
+    note: '(2¾ tsp Diamond Crystal)'
   - group: 'Phase 2, the kıymalı topping'
     item: 'black pepper, freshly cracked'
     slug: 'black-pepper'
@@ -184,7 +184,7 @@ steps:
   - text: 'Place the dough in a bowl lightly oiled with the 15 g / 1 tbsp olive oil; turn to coat. Cover with a damp towel and rise at warm room temperature 90 minutes, until doubled and visibly puffed.'
     technique: 'bulk-fermentation'
     time_min: 90
-  - text: 'While the dough rises, make the topping: in a large bowl, combine the 400 g ground lamb, 200 g / 1 onion (diced), 100 g / ½ bell pepper (diced), 100 g / 1 small tomato (diced), 20 g chopped parsley, 15 g / 1 tbsp tomato paste, 3 g / 1½ tsp pul biber, 2 g / 1 tsp cumin, 8 g / 2 tsp kosher salt, and 2 g / 1 tsp black pepper. Mix with your hands until uniform; the texture should be wet, loose, and pourable (not a tight meatball mixture; the topping needs to spread thin on the dough). Refrigerate until ready to top.'
+  - text: 'While the dough rises, make the topping: in a large bowl, combine the 400 g ground lamb, 200 g / 1 onion (diced), 100 g / ½ bell pepper (diced), 100 g / 1 small tomato (diced), 20 g chopped parsley, 15 g / 1 tbsp tomato paste, 3 g / 1½ tsp pul biber, 2 g / 1 tsp cumin, 8 g / 2¾ tsp kosher salt, and 2 g / 1 tsp black pepper. Mix with your hands until uniform; the texture should be wet, loose, and pourable (not a tight meatball mixture; the topping needs to spread thin on the dough). Refrigerate until ready to top.'
     time_min: 8
   - text: 'Preheat the oven to its maximum temperature (260°C / 500°F or higher) with a baking stone or steel on the middle rack for at least 45 minutes. The stone must be fully heat-soaked or the bottom of the pide will not crisp.'
     time_min: 45

@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 11
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; about 1% of fish weight)'
+    note: '(1¼ tbsp Diamond Crystal; about 1% of fish weight)'
 
   - group: 'Phase 2, spice rub'
     item: 'ground coriander'
@@ -171,7 +171,7 @@ ingredients:
 steps:
   - text: 'Heat the oven to 230 C / 450 F with a rack in the upper third. Give it a full 20 minutes; crisp skin depends on the oven being at temperature when the fish goes in.'
     time_min: 20
-  - text: 'Dry-brine the fish. Season the 1100 g / 2 scored branzino inside the cavity, outside, and into the slashes with the 11 g / 1 tbsp kosher salt. Set on a rack, uncovered, for 20 minutes. The salt dissolves into surface moisture, diffuses into the outer flesh, and the skin dries as it sits; pat dry again with paper towels just before rubbing.'
+  - text: 'Dry-brine the fish. Season the 1100 g / 2 scored branzino inside the cavity, outside, and into the slashes with the 11 g / 1¼ tbsp kosher salt. Set on a rack, uncovered, for 20 minutes. The salt dissolves into surface moisture, diffuses into the outer flesh, and the skin dries as it sits; pat dry again with paper towels just before rubbing.'
     technique: 'dry-brining'
     time_min: 20
   - text: 'Build the bed while the fish brines. On a rimmed sheet pan toss the 200 g / 1 sliced red onion and 300 g / 2 cups cherry tomatoes with the 28 g / 2 tbsp olive oil for the bed and the 3 g / 1 tsp kosher salt. Spread into two fish-length strips. Roast alone for 8 minutes so the onion starts to soften and the tomato skins split before the fish joins them; the fish cooks faster than raw onion.'

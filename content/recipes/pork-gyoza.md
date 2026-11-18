@@ -45,7 +45,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp; will be discarded with the cabbage water; do not count toward filling salt)'
+    note: '(2¼ tsp; will be discarded with the cabbage water; do not count toward filling salt)'
 
   - group: 'Phase 2, pork filling'
     item: 'ground pork (80/20 fat ratio, do not use lean ground pork)'
@@ -99,7 +99,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; for the filling itself)'
+    note: '(1½ tsp Diamond Crystal; for the filling itself)'
   - group: 'Phase 2, pork filling'
     item: 'white pepper'
     slug: 'white-pepper'

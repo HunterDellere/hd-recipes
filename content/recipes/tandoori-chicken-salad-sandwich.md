@@ -48,7 +48,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 20
     unit: 'g'
-    note: '(1½ tbsp Diamond Crystal; aggressive seasoning of the poaching liquid is the salt-pathway into the meat)'
+    note: '(2½ tbsp Diamond Crystal; aggressive seasoning of the poaching liquid is the salt-pathway into the meat)'
   - group: 'Phase 1, the poached chicken'
     item: 'bay leaf'
     slug: 'bay-leaf'
@@ -107,7 +107,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; taste before adding more, the poached chicken brings residual salt)'
+    note: '(1 tsp Diamond Crystal; taste before adding more, the poached chicken brings residual salt)'
   - group: 'Phase 2, the tandoori mayo'
     item: 'fresh-ground black pepper'
     slug: 'black-pepper'

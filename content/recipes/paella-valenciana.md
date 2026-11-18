@@ -70,7 +70,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; season the protein before browning)'
+    note: '(1½ tbsp Diamond Crystal; season the protein before browning)'
 
   - group: 'Phase 3, the sofrito and the rice'
     item: 'ferraura green beans (or flat Romano beans), cut into 4 cm pieces'
@@ -123,7 +123,7 @@ ingredients:
 steps:
   - text: 'Bring the 1500 ml / 6¼ cups chicken stock to a hard simmer in a saucepan; add the 0.5 g / ½ tsp saffron threads. Hold at a hard simmer for the entire cook (you will ladle this hot stock into the rice pan in two additions). The saffron blooms in the hot stock throughout the cook and turns it a deep orange.'
     time_min: 5
-  - text: 'Season the 700 g / 1½ lb chicken and 400 g / 14 oz rabbit pieces with the 12 g / 1 tbsp salt. Heat the 60 g / ¼ cup olive oil in a 38 cm / 15 in paella pan over medium-high heat (use a paella ring or split the heat across 2 burners). Add the protein, skin-side down where applicable, in a single layer. Brown 6 to 8 minutes per side until both sides are deeply golden. Remove the protein to a plate; reserve.'
+  - text: 'Season the 700 g / 1½ lb chicken and 400 g / 14 oz rabbit pieces with the 12 g / 1½ tbsp salt. Heat the 60 g / ¼ cup olive oil in a 38 cm / 15 in paella pan over medium-high heat (use a paella ring or split the heat across 2 burners). Add the protein, skin-side down where applicable, in a single layer. Brown 6 to 8 minutes per side until both sides are deeply golden. Remove the protein to a plate; reserve.'
     technique: 'maillard-sear'
     time_min: 15
   - text: 'Reduce heat to medium. Add the 200 g / 7 oz ferraura green beans (cut into 4 cm pieces) to the same pan; sauté 5 to 6 minutes until lightly browned at the edges and just-tender.'

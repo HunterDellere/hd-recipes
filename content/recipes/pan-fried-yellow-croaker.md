@@ -44,7 +44,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal; rubbed over the skin, into the slashes, and inside the cavity)'
+    note: '(2¼ tsp Diamond Crystal; rubbed over the skin, into the slashes, and inside the cavity)'
 
   - group: 'Phase 2, dredge and fry'
     item: 'all-purpose flour'
@@ -140,7 +140,7 @@ ingredients:
 steps:
   - text: 'Prep the fish. The grocer should have gutted, scaled, and gilled the 450 g / 3 whole croakers; verify all three. Rinse each fish inside and out under cold water and scrape any dark blood line from the spine cavity with the back of a small spoon, the blood line carries the strongest fishy note. With a sharp knife cut two or three diagonal slashes 1 cm deep into each side of every fish through the skin to the flesh; the slashes let the salt and heat reach the spine and give the skin somewhere to release tension instead of curling. Pat the fish completely dry, inside and out.'
     time_min: 6
-  - text: 'Salt-cure. Rub the 6 g / 1½ tsp kosher salt evenly over the skin of all three fish, working it into the slashes and the cavities. Rest the salted fish on a rack, uncovered, for 15 to 20 minutes. The salt seasons the flesh and draws surface moisture into beads on the skin; this is the cure that makes a crisp skin possible. Meanwhile, with the rice already started, build the dip.'
+  - text: 'Salt-cure. Rub the 6 g / 2¼ tsp kosher salt evenly over the skin of all three fish, working it into the slashes and the cavities. Rest the salted fish on a rack, uncovered, for 15 to 20 minutes. The salt seasons the flesh and draws surface moisture into beads on the skin; this is the cure that makes a crisp skin possible. Meanwhile, with the rice already started, build the dip.'
     time_min: 18
   - text: 'Mix the cho-ganjang dip. In a small bowl whisk the 30 g / 2 tbsp light soy sauce, the 15 g / 1 tbsp rice vinegar, and the 15 g / 1 tbsp water, then stir in the 15 g / 1 stalk minced scallion, the 3 g / 1 clove grated garlic, the 2 g / 1 tsp gochugaru, the 4 g / 1 tsp toasted sesame oil, the 2 g / 1 tsp crushed sesame seeds, and the 8 g / ½ green chili if using. The soy is the glutamate anchor and the rice vinegar is the finishing acid; taste and adjust so the dip reads bright and salty, not flat. Set aside.'
     time_min: 3

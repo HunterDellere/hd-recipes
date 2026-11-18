@@ -50,7 +50,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 7
     unit: 'g'
-    note: '(2 tsp Diamond Crystal; about 1.4% of the fish weight, seasons and lightly firms the flesh before frying)'
+    note: '(2½ tsp Diamond Crystal; about 1.4% of the fish weight, seasons and lightly firms the flesh before frying)'
   - group: 'Phase 1, the fish and fry'
     item: 'all-purpose flour'
     slug: 'all-purpose-flour'
@@ -170,7 +170,7 @@ ingredients:
     note: '(half a loaf; to mop the vinegar-infused oil, non-negotiable)'
 
 steps:
-  - text: 'Salt and dredge the fish. Cut the 500 g / 1 lb mackerel fillets crosswise into 6 cm pieces and pat very dry on paper towels. Season all sides with the 7 g / 2 tsp kosher salt and let sit 10 minutes; the salt firms the surface protein so the dredge adheres and the flesh stays intact in the fry. Spread the 60 g / ½ cup all-purpose flour on a plate. Just before frying, dredge each piece in the flour and shake off all but a whisper; a thick coat turns gummy in the marinade rather than crisp.'
+  - text: 'Salt and dredge the fish. Cut the 500 g / 1 lb mackerel fillets crosswise into 6 cm pieces and pat very dry on paper towels. Season all sides with the 7 g / 2½ tsp kosher salt and let sit 10 minutes; the salt firms the surface protein so the dredge adheres and the flesh stays intact in the fry. Spread the 60 g / ½ cup all-purpose flour on a plate. Just before frying, dredge each piece in the flour and shake off all but a whisper; a thick coat turns gummy in the marinade rather than crisp.'
     technique: 'dry-brining'
     time_min: 12
   - text: 'Fry the fish to set, not to brown hard. Heat the 120 g / ½ cup frying olive oil in a wide skillet over medium-high until it shimmers and a flour speck sizzles on contact, about 180°C / 355°F. Lay the fish in skin-side down, working in two batches so the pan is not crowded, and fry 90 seconds per side until the flour crust is set and pale gold and the flesh is just cooked through. This is a shallow fry to firm and seal the fish, not a deep golden fry; the marinade does the rest of the flavor work. Lift each piece to the non-reactive serving dish (glass or ceramic) and arrange in a single snug layer. Pour off and discard the spent frying oil, but do not wipe the pan; the browned flour fond stays.'

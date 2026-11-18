@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; for salting the scored skin and the flesh side)'
+    note: '(1½ tsp Diamond Crystal; for salting the scored skin and the flesh side)'
   - group: 'Phase 1, the fish'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -120,7 +120,7 @@ ingredients:
 steps:
   - text: 'Build the reduction first, before the fish, since it can sit while you sear. In a small saucepan combine the 30 g / 1 minced shallot, the 120 g / ½ cup dry white wine, and the 30 g / 2 tbsp white wine vinegar. Simmer over medium heat until the liquid reduces to about 2 tbsp of syrupy, intensely sour-aromatic liquid with the shallot suspended in it, 6 to 8 minutes. If using the 30 g / 2 tbsp heavy cream, stir it in now and simmer 1 minute more; the cream is a stabilizer that makes the butter mount far more forgiving. Pull the pan off the heat and let it cool to barely warm, the temperature of the reduction governs the emulsion, and a reduction too hot will break the butter into oil.'
     time_min: 8
-  - text: 'Salt the fish. Just before cooking, blot the scored skin one more time, then season the skin side of both 340 g / 2 fillets evenly with about half the 4 g / 1 tsp kosher salt, pressing it into the scores. Salt at the last moment on the skin side: salt applied early draws moisture to the surface and defeats the crisping. Leave the flesh side unseasoned for now.'
+  - text: 'Salt the fish. Just before cooking, blot the scored skin one more time, then season the skin side of both 340 g / 2 fillets evenly with about half the 4 g / 1½ tsp kosher salt, pressing it into the scores. Salt at the last moment on the skin side: salt applied early draws moisture to the surface and defeats the crisping. Leave the flesh side unseasoned for now.'
     time_min: 2
   - text: 'Heat the 14 g / 1 tbsp neutral oil in a heavy stainless or cast-iron skillet over medium-high until it shimmers and just begins to wisp smoke. Lay the fillets in skin-side-down, away from you, and immediately press each one flat with a fish spatula or a flat lid for the first 20 to 30 seconds. Fillets curl the instant the skin hits heat as the skin-side collagen contracts faster than the flesh; the press holds the skin in full flat contact so it renders evenly instead of buckling and crisping only at the high points. Once they lie flat on their own, ease the pressure but keep them moving as little as possible.'
     technique: 'maillard-sear'

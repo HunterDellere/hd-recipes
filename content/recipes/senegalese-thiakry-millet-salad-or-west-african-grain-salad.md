@@ -54,7 +54,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; salts the cooking water, not added after)'
+    note: '(1½ tsp Diamond Crystal; salts the cooking water, not added after)'
 
   - group: 'Phase 2, lime-macerated red onion'
     item: 'red onion'
@@ -107,7 +107,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal)'
+    note: '(1 tsp Diamond Crystal)'
   - group: 'Phase 3, ginger-lime-honey vinaigrette'
     item: 'neutral oil (peanut, grapeseed, or rice bran)'
     slug: 'neutral-oil'
@@ -157,14 +157,14 @@ steps:
   - text: 'In a 3-quart heavy saucepan with a tight-fitting lid, warm the 10 g / 2 tsp neutral oil over medium heat. Add the drained millet and toast in the dry oil, stirring constantly with a wooden spoon or spatula, for 90 to 120 seconds until the grains darken one shade and the smell turns distinctly popcorn-grain. The dry-toast is what separates a pilaf-style millet that reads aromatic from a boiled-in-water millet that reads cleanly cooked but flat. Pull from heat the moment the popcorn note is fully developed; another 30 seconds and the toast goes bitter.'
     technique: 'dry-toasting'
     time_min: 3
-  - text: 'Add the 400 ml / 1⅔ cups water and the 4 g / 1 tsp kosher salt to the toasted millet. Bring to a hard boil over high heat, stirring once to break up any clumps, then drop the heat to a bare simmer (the lowest setting where bubbles still break the surface). Cover tightly and cook 18 to 22 minutes; do not lift the lid during the cook. At 18 minutes, listen at the lid; if you hear sizzle, the water is gone, pull from heat. If you still hear gentle bubbling, give it another 2 to 4 minutes.'
+  - text: 'Add the 400 ml / 1⅔ cups water and the 4 g / 1½ tsp kosher salt to the toasted millet. Bring to a hard boil over high heat, stirring once to break up any clumps, then drop the heat to a bare simmer (the lowest setting where bubbles still break the surface). Cover tightly and cook 18 to 22 minutes; do not lift the lid during the cook. At 18 minutes, listen at the lid; if you hear sizzle, the water is gone, pull from heat. If you still hear gentle bubbling, give it another 2 to 4 minutes.'
     time_min: 22
   - text: 'Off heat, leave the covered pot to rest for 10 minutes; the lid traps steam that finishes hydrating the kernels and lets the crumb separate cleanly when forked. After the rest, uncover and immediately fluff the millet with a fork; rake the fork through in straight lines without stirring (stirring compacts the grain into porridge). The cooked millet should be light, fluffy, separated kernels with a faint chewy bite. Spread on a wide plate or sheet pan to cool to warm-not-hot; hot millet on the platter wilts the herbs and breaks the dressing.'
     time_min: 12
   - text: 'While the millet rests, macerate the red onion. In a small bowl, combine the 80 g / ½ medium-onion worth of slivered red onion with the 15 g / 1 tbsp lime juice and the 1 g / ¼ tsp kosher salt. Toss to coat and leave at room temperature for 15 minutes. The acid plus salt knocks down the raw allium sulfur compounds and softens the texture; the onion goes from white-raw to pink-translucent and the bite becomes pleasant rather than aggressive.'
     technique: 'acid-milk-sour'
     time_min: 15
-  - text: 'Build the vinaigrette. In a small bowl or jar, combine the 12 g / 1 tbsp microplaned ginger, the 45 g / 3 tbsp lime juice, the 18 g / 1 tbsp honey, the 2 g / 1 small minced thai chili, and the 3 g / ¾ tsp kosher salt. Whisk to dissolve the salt and honey. Stream in the 60 g / ¼ cup neutral oil in a thin steady drizzle while whisking constantly; the dressing tightens as the oil emulsifies into the lime-and-honey base. The microplaned ginger acts as a structural particulate stabilizer; the dressing will not hold the emulsion as long as a mustard-based vinaigrette but will stay integrated for 20 to 30 minutes. Taste; the dressing should read sharp-acid up front, then sweet, then heat in the throat; if flat, more salt; if too sharp, another small pinch of honey.'
+  - text: 'Build the vinaigrette. In a small bowl or jar, combine the 12 g / 1 tbsp microplaned ginger, the 45 g / 3 tbsp lime juice, the 18 g / 1 tbsp honey, the 2 g / 1 small minced thai chili, and the 3 g / 1 tsp kosher salt. Whisk to dissolve the salt and honey. Stream in the 60 g / ¼ cup neutral oil in a thin steady drizzle while whisking constantly; the dressing tightens as the oil emulsifies into the lime-and-honey base. The microplaned ginger acts as a structural particulate stabilizer; the dressing will not hold the emulsion as long as a mustard-based vinaigrette but will stay integrated for 20 to 30 minutes. Taste; the dressing should read sharp-acid up front, then sweet, then heat in the throat; if flat, more salt; if too sharp, another small pinch of honey.'
     technique: 'vinaigrette-emulsion'
     time_min: 4
   - text: 'Toast the peanuts. In a small dry skillet over medium-low heat, place the 60 g / ½ cup raw skin-on peanuts and toast, shaking the pan every 10 to 15 seconds, for 8 to 10 minutes until the skins darken slightly and the peanuts smell distinctly nutty. The pan should be hot enough that you hear a faint crackle but not so hot that you smell anything burnt; medium-low is the right setting. Transfer the toasted peanuts immediately to a plate to stop the carryover cook, cool 2 minutes, and chop roughly into halves and rough quarters; whole peanuts read awkward in the salad, dust-fine reads like sand.'

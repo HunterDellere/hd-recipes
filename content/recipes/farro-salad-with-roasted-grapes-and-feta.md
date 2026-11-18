@@ -49,7 +49,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 12
     unit: 'g'
-    note: '(1 tbsp Diamond Crystal; salts the cooking water so the grain seasons from the inside)'
+    note: '(1½ tbsp Diamond Crystal; salts the cooking water so the grain seasons from the inside)'
   - group: 'Phase 1, farro'
     item: 'bay leaf'
     slug: 'bay-leaf'
@@ -151,7 +151,7 @@ ingredients:
     note: '(¼ cup loosely packed; the bright top note that reads against the roasted fruit)'
 
 steps:
-  - text: 'Start both tracks at once. Set the oven to 220 °C / 425 °F. Bring the 1500 ml / 6 cups water to a boil in a medium pot with the 12 g / 1 tbsp kosher salt and the 1 bay leaf. While the oven preheats, spread the 60 g / ½ cup walnuts on a small dry tray and toast in the heating oven for 6 to 8 minutes until fragrant and one shade darker, then pull and cool; toasting hydrolyzes the surface tannins and develops nutty pyrazines, raw walnuts read astringent and flat here. Set the cooled nuts aside to chop later.'
+  - text: 'Start both tracks at once. Set the oven to 220 °C / 425 °F. Bring the 1500 ml / 6 cups water to a boil in a medium pot with the 12 g / 1½ tbsp kosher salt and the 1 bay leaf. While the oven preheats, spread the 60 g / ½ cup walnuts on a small dry tray and toast in the heating oven for 6 to 8 minutes until fragrant and one shade darker, then pull and cool; toasting hydrolyzes the surface tannins and develops nutty pyrazines, raw walnuts read astringent and flat here. Set the cooled nuts aside to chop later.'
     time_min: 8
   - text: 'Cook the farro. When the water boils, add the rinsed 200 g / 1 cup farro and cook uncovered at a steady simmer, pasta-style in the abundant water, for 25 to 30 minutes until the grains are tender with a distinct chew at the center (al dente, not blown out). Drain in a sieve, discard the bay leaf, and let the farro steam-dry in the sieve for 2 minutes so the surface is not waterlogged. Tip into a wide bowl; keep it warm.'
     time_min: 28

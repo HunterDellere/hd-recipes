@@ -65,7 +65,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 4
     unit: 'g'
-    note: '(1 tsp Diamond Crystal; rubbed on the fish skin and inside the cavity)'
+    note: '(1½ tsp Diamond Crystal; rubbed on the fish skin and inside the cavity)'
 
   - group: 'Phase 2, soy seasoning sauce'
     item: 'light soy sauce'
@@ -136,7 +136,7 @@ ingredients:
 steps:
   - text: 'Examine and clean the 650 g / 1 whole flounder. The fishmonger should have gutted, scaled, and removed the gills; verify all three. Rinse the cavity under cold running water and scrape any dark blood line along the inside of the spine with the back of a small spoon (the blood line carries the strongest fishy flavor and is the main source of "fishy fish" complaints). Pat the fish completely dry inside and out. Wet fish steams unevenly and dilutes the seasoning sauce on the plate; dry is non-negotiable.'
     time_min: 5
-  - text: 'Score and cure. With a sharp paring knife, cut three shallow diagonal slashes 5 mm deep into the flesh on each side of the flounder, from the gill plate to the tail. Keep them shallow, the flesh is thin and deep cuts on a flatfish tear it apart. Rub the 4 g / 1 tsp kosher salt over both sides and inside the cavity, working it into the slashes, then splash the 15 g / 1 tbsp Shaoxing wine over the same surfaces. Stuff the cavity loosely with the 15 g / sliced ginger coins and the 20 g / 2 bruised scallion stalks. Let the fish cure about 10 minutes while the steamer comes up; the brief cure firms the surface, draws out a little surface water, and lets the wine esters perfume the fish.'
+  - text: 'Score and cure. With a sharp paring knife, cut three shallow diagonal slashes 5 mm deep into the flesh on each side of the flounder, from the gill plate to the tail. Keep them shallow, the flesh is thin and deep cuts on a flatfish tear it apart. Rub the 4 g / 1½ tsp kosher salt over both sides and inside the cavity, working it into the slashes, then splash the 15 g / 1 tbsp Shaoxing wine over the same surfaces. Stuff the cavity loosely with the 15 g / sliced ginger coins and the 20 g / 2 bruised scallion stalks. Let the fish cure about 10 minutes while the steamer comes up; the brief cure firms the surface, draws out a little surface water, and lets the wine esters perfume the fish.'
     time_min: 3
   - text: 'Set up the steamer. Bring 3 cm of water to a hard rolling boil over high heat in a wok with a bamboo steamer, or in a deep skillet with a fitted rack and lid. The steaming temperature is the hard rolling boil of water, full vapor flux at 100°C, not a gentle simmer. A bamboo steamer is preferred because the wood absorbs surface condensation and prevents drips of cool water onto the fish; a metal lid wrapped in a clean kitchen towel does the same.'
     technique: 'vapor-steaming'

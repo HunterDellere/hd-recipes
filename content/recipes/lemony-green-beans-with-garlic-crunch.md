@@ -91,7 +91,7 @@ ingredients:
     optional: true
 
 steps:
-  - text: 'Bring a large pot of water to a hard boil with 15 g / 1 tbsp kosher salt; it should taste like seawater. Set a bowl of ice water nearby.'
+  - text: 'Bring a large pot of water to a hard boil with 15 g / 1¾ tbsp kosher salt; it should taste like seawater. Set a bowl of ice water nearby.'
     time_min: 6
   - text: 'Drop the beans in the boiling water. Boil 3–5 minutes, until tender with a slight snap. Pull one and bite.'
     time_min: 4

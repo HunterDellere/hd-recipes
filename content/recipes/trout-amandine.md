@@ -56,7 +56,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 5
     unit: 'g'
-    note: '(1¼ tsp Diamond Crystal; split between seasoning the fish and the flour)'
+    note: '(1¾ tsp Diamond Crystal; split between seasoning the fish and the flour)'
   - group: 'Phase 1, the fish and dredge'
     item: 'black pepper, freshly ground'
     slug: 'black-pepper'
@@ -109,7 +109,7 @@ ingredients:
     note: '(2 tbsp chopped)'
 
 steps:
-  - text: 'Pat the 280 g / 2 trout fillets bone-dry on both sides with paper towels and run a finger down each to check for stray pin bones; pull any you find. A dry surface is the precondition for a crust, because surface water has to boil off before the flour can brown. Season the fillets on both sides with about half of the 5 g / 1¼ tsp kosher salt and all of the 1 g / ½ tsp black pepper.'
+  - text: 'Pat the 280 g / 2 trout fillets bone-dry on both sides with paper towels and run a finger down each to check for stray pin bones; pull any you find. A dry surface is the precondition for a crust, because surface water has to boil off before the flour can brown. Season the fillets on both sides with about half of the 5 g / 1¾ tsp kosher salt and all of the 1 g / ½ tsp black pepper.'
     time_min: 3
   - text: 'Set up the dredge in two shallow dishes. Pour the 120 g / ½ cup whole milk into the first. In the second, whisk the 60 g / ½ cup all-purpose flour with the remaining kosher salt from the 5 g total. The milk dip is optional but worth it: it wets the surface evenly so the flour grabs in a thin, continuous coat rather than patchy clumps, and the milk sugars contribute to browning. Dip each fillet in the milk, let the excess run off, then press both sides into the seasoned flour. Lift and shake off all but a whisper-thin film; a heavy coat steams instead of crisping. Set the dredged fillets on a rack.'
     time_min: 3

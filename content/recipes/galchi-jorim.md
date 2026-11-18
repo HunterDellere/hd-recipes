@@ -70,7 +70,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 3
     unit: 'g'
-    note: '(¾ tsp Diamond Crystal; a light cure to firm the delicate flesh before braising)'
+    note: '(1 tsp Diamond Crystal; a light cure to firm the delicate flesh before braising)'
 
   - group: 'Phase 4, the yangnyeom (sauce base)'
     item: 'gochugaru (Korean red chili flakes)'
@@ -165,7 +165,7 @@ ingredients:
 steps:
   - text: 'Build the anchovy-kelp stock. Put the 500 ml / 2 cups water, the 5 g / one 5 cm square kombu, and the 10 g / about 8 dried anchovies into a small pot. Bring to a bare simmer over medium, then pull the 5 g kombu the moment fine bubbles climb the sides (a hard boil on kombu turns the broth slick and slightly bitter). Simmer the anchovies 8 minutes more, then strain. You want about 450 ml of clean, savory stock; it carries inosinate from the anchovies and glutamate from the kombu, the umami floor the braise is built on.'
     time_min: 15
-  - text: 'Cure the fish. Lay the 500 g hairtail segments on a board, salt both sides with the 3 g / ¾ tsp kosher salt, and let them sit 10 minutes while you cut the radish. The brief cure firms the delicate flesh through surface protein denaturation and draws off a little weeping water, so the segments hold together in the braise instead of shredding. Pat them dry again right before they go in the pot.'
+  - text: 'Cure the fish. Lay the 500 g hairtail segments on a board, salt both sides with the 3 g / 1 tsp kosher salt, and let them sit 10 minutes while you cut the radish. The brief cure firms the delicate flesh through surface protein denaturation and draws off a little weeping water, so the segments hold together in the braise instead of shredding. Pat them dry again right before they go in the pot.'
     time_min: 10
   - text: 'Lay the radish bed. Peel the 400 g daikon and cut it into 1.5 cm thick coins or half-moons. Arrange them in a single tight layer across the bottom of a wide heavy pot or deep skillet; this is the base, and it braises longest, so it has to sit in the liquid the whole time. The radish is not a garnish here, it is half the dish, drinking the sauce and turning translucent and sweet as it cooks.'
     time_min: 5

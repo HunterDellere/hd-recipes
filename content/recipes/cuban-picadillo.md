@@ -80,7 +80,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 6
     unit: 'g'
-    note: '(1½ tsp Diamond Crystal)'
+    note: '(2¼ tsp Diamond Crystal)'
   - group: 'Phase 2, the beef and braise'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
@@ -144,7 +144,7 @@ steps:
   - text: 'Increase heat to medium-high. Add the 500 g ground beef. Break it up with a wooden spoon and cook 6 to 7 minutes, stirring occasionally, until the beef has lost all pink and the bottom of the pan has developed a brown fond. Do not stir constantly; let the beef sit and Maillard-brown in patches. The fond is the structural source of the dish''s depth.'
     technique: 'maillard-sear'
     time_min: 7
-  - text: 'Drain off all but about 30 ml / 2 tbsp of the rendered beef fat (an 80/20 ground beef yields about 60 ml of fat at this stage). Season the beef with the 6 g / 1½ tsp salt and 2 g / 1 tsp pepper. Push the beef to the edges of the pan; add the 15 g / 1 tbsp tomato paste to the center; cook 90 seconds, stirring the paste in place until it darkens from bright red to brick red. Stir the bloomed paste into the beef.'
+  - text: 'Drain off all but about 30 ml / 2 tbsp of the rendered beef fat (an 80/20 ground beef yields about 60 ml of fat at this stage). Season the beef with the 6 g / 2¼ tsp salt and 2 g / 1 tsp pepper. Push the beef to the edges of the pan; add the 15 g / 1 tbsp tomato paste to the center; cook 90 seconds, stirring the paste in place until it darkens from bright red to brick red. Stir the bloomed paste into the beef.'
     time_min: 3
   - text: 'Add the 240 g tomato sauce, 80 ml / ⅓ cup white wine, and 120 ml / ½ cup water. Scrape the fond off the pan bottom with a wooden spoon. Bring to a steady simmer, partially covered, and cook 12 to 15 minutes. The liquid should reduce by about a third and the picadillo should look saucy but not soupy.'
     time_min: 15

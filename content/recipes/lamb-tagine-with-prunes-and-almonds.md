@@ -63,7 +63,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 14
     unit: 'g'
-    note: '(1¼ tbsp Diamond Crystal; in layers, 8 g on the lamb 30 min ahead, 6 g in the braise)'
+    note: '(1¾ tbsp Diamond Crystal; in layers, 8 g on the lamb 30 min ahead, 6 g in the braise)'
 
   - group: 'Phase 2, the spice base'
     item: 'extra-virgin olive oil'

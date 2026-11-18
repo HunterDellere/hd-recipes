@@ -89,7 +89,7 @@ ingredients:
     slug: 'kosher-salt'
     qty: 14
     unit: 'g'
-    note: '(3½ tsp Diamond Crystal; salts the goat through the marinade)'
+    note: '(1¾ tbsp Diamond Crystal; salts the goat through the marinade)'
   - group: 'Phase 1, the overnight marinade'
     item: 'black pepper, cracked'
     slug: 'black-pepper'
