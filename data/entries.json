@@ -4,7 +4,7 @@
     "type": "hub",
     "category": "hubs",
     "title": "Thanksgiving: lamb and turkey meatballs",
-    "desc": "A Thanksgiving for 8 that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds a roast rack of lamb. Two mains, three sides and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
+    "desc": "A Thanksgiving for 8 that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds a roast rack of lamb. Two mains, three sides, soft rolls and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
     "tags": [
       "holiday"
     ],
@@ -15,9 +15,9 @@
     "_card": {
       "swatchIndex": 13,
       "swatchGlyph": "stack",
-      "memberCount": 8,
+      "memberCount": 9,
       "memberMix": {
-        "recipes": 8
+        "recipes": 9
       }
     }
   },
@@ -750,6 +750,116 @@
       "timeMode": "total",
       "activeMinutes": 20,
       "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/parker-house-rolls.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Parker House rolls",
+    "desc": "Sixteen soft, buttery, fold-over dinner rolls from a honey-and-milk enriched dough with a tangzhong (cooked flour-milk paste), which keeps the crumb tender for a full day after baking. Each round of dough is rolled into an oval, brushed with butter, and folded so the roll bakes with a pull-apart seam, then finished with more butter and flaky salt.",
+    "tags": [
+      "bread",
+      "baked",
+      "holiday",
+      "make-ahead",
+      "weekend-project",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "parker-house-rolls",
+    "cuisine": "American",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 50,
+      "cook_min": 22,
+      "total_min": 960,
+      "active_min": 50
+    },
+    "updated": "2026-11-18",
+    "diet": [
+      "vegetarian",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "whole milk, room temperature",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "egg, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, softened",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted (for brushing)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "flaky salt",
+        "slug": "flaky-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "enriched-dough",
+      "bulk-fermentation"
+    ],
+    "equipment": [
+      "stand-mixer",
+      "instant-read-thermometer",
+      "digital-scale"
+    ],
+    "added": "2026-11-18",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 960,
+      "diffLabel": "medium",
+      "timeLead": "50 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 50,
+      "filterMinutes": 50
     }
   },
   {
@@ -6024,7 +6134,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 9
+      "usedInCount": 10
     }
   },
   {
@@ -15553,7 +15663,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "drop",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": false
     }
   },
@@ -57166,7 +57276,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 37,
+      "usedInCount": 38,
       "hasNutrition": true
     }
   },
@@ -63046,7 +63156,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 17,
+      "usedInCount": 18,
       "hasNutrition": true
     }
   },
@@ -63523,7 +63633,7 @@
       "swatchIndex": 5,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 18,
+      "usedInCount": 19,
       "hasNutrition": true
     }
   },
@@ -69034,7 +69144,7 @@
     "_card": {
       "swatchIndex": 1,
       "swatchGlyph": "grain",
-      "usedInCount": 8
+      "usedInCount": 9
     }
   },
   {
@@ -70501,7 +70611,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 109,
+      "usedInCount": 110,
       "hasNutrition": true
     }
   },
@@ -70602,7 +70712,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": "egg",
-      "usedInCount": 113,
+      "usedInCount": 114,
       "hasNutrition": true
     }
   },
@@ -70967,7 +71077,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 55,
+      "usedInCount": 56,
       "hasNutrition": true
     }
   },
@@ -71712,7 +71822,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 44
+      "usedInCount": 45
     }
   },
   {
@@ -72264,7 +72374,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 212,
+      "usedInCount": 213,
       "hasNutrition": true
     }
   },

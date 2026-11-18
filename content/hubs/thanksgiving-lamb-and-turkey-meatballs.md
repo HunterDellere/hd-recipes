@@ -5,8 +5,8 @@ status: 'complete'
 content_review: 'pending'
 
 title: 'Thanksgiving: lamb and turkey meatballs'
-desc: 'A Thanksgiving for 8 that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds a roast rack of lamb. Two mains, three sides and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.'
-metaDesc: 'Thanksgiving menu for 8: herb-crusted rack of lamb with cranberry mostarda, turkey and sage meatballs in brown butter gravy, Hasselback gratin, roasted carrots, pear salad, apple crumble, tres leches, with a one-oven timeline.'
+desc: 'A Thanksgiving for 8 that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds a roast rack of lamb. Two mains, three sides, soft rolls and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.'
+metaDesc: 'Thanksgiving menu for 8: herb-crusted rack of lamb with cranberry mostarda, turkey and sage meatballs in brown butter gravy, Hasselback gratin, roasted carrots, pear salad, Parker House rolls, apple crumble, tres leches, with a one-oven timeline.'
 tags: ['holiday']
 updated: '2026-11-18'
 
@@ -26,6 +26,9 @@ members:
   - slug: 'recipes/arugula-pear-and-pomegranate-salad-with-goat-cheese'
     label: 'Arugula, pear and pomegranate salad with goat cheese'
     note: 'The sharp side, and the only raw, crisp thing on the table. Pepper, acid and crunch against the gratin, the gravy and the lamb fat.'
+  - slug: 'recipes/parker-house-rolls'
+    label: 'Parker House rolls'
+    note: 'The bread, and something for the gravy. Shaped Wednesday night, baked Thursday morning while the oven is free, rewarmed for 5 minutes before dinner.'
   - slug: 'recipes/apple-crumble-with-brown-butter-oat-topping'
     label: 'Apple crumble with brown butter oat topping'
     note: 'The warm dessert. It goes into the oven as everyone sits down and comes out warm for dessert.'
@@ -71,8 +74,10 @@ plan:
       - 'Make the meatballs and the gravy, cool them together, and refrigerate them in the braiser.'
       - 'Bake the tres leches sponge, soak it, and refrigerate it overnight.'
       - 'Mix the herb crust for the lamb and refrigerate it.'
+      - 'Make the roll dough, shape the rolls, and refrigerate them overnight under a fitted lid or an inverted sheet pan.'
   - when: 'Thanksgiving morning (dinner at 5 pm)'
     items:
+      - 'Take the rolls out of the fridge to proof 60 to 90 minutes, then bake them and cool them on a rack. Hold them under a clean tea towel. Finish baking by noon so the oven is free for the gratin.'
       - 'Whip the crème fraîche cream for the tres leches, spread it on the cake, and return it to the fridge.'
       - 'Peel and cut the carrots. Peel and slice the apples, toss them with the lemon juice, and refrigerate them covered with a plate.'
       - 'Grate the gruyère and parmigiano for the gratin, and infuse the cream.'
@@ -92,7 +97,7 @@ plan:
       - 'As the lamb goes in, put the gratin on the lower rack to re-crisp for 15 to 20 minutes.'
   - when: '4:45 to 5:00 pm'
     items:
-      - 'Rest the lamb 10 minutes, uncovered.'
+      - 'Rest the lamb 10 minutes, uncovered. While it rests, rewarm the rolls in the oven for 5 minutes and brush them with the remaining melted butter.'
       - 'Finish the carrots with lemon, pistachios and herbs. Slice the pears and dress the salad.'
       - 'Scatter parsley and the fried sage over the meatballs. Put the mostarda on the table for both mains, then carve the lamb into chops and serve.'
   - when: 'At dinner'

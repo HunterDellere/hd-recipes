@@ -731,6 +731,116 @@
     }
   },
   {
+    "path": "pages/recipes/parker-house-rolls.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Parker House rolls",
+    "desc": "Sixteen soft, buttery, fold-over dinner rolls from a honey-and-milk enriched dough with a tangzhong (cooked flour-milk paste), which keeps the crumb tender for a full day after baking. Each round of dough is rolled into an oval, brushed with butter, and folded so the roll bakes with a pull-apart seam, then finished with more butter and flaky salt.",
+    "tags": [
+      "bread",
+      "baked",
+      "holiday",
+      "make-ahead",
+      "weekend-project",
+      "comfort"
+    ],
+    "status": "complete",
+    "_slug": "parker-house-rolls",
+    "cuisine": "American",
+    "course": "bread",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 50,
+      "cook_min": 22,
+      "total_min": 960,
+      "active_min": 50
+    },
+    "updated": "2026-11-18",
+    "diet": [
+      "vegetarian",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "whole milk",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "bread flour",
+        "slug": "bread-flour",
+        "optional": false
+      },
+      {
+        "item": "instant yeast",
+        "slug": "instant-yeast",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "whole milk, room temperature",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "egg, room temperature",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, softened",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, melted (for brushing)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "flaky salt",
+        "slug": "flaky-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "enriched-dough",
+      "bulk-fermentation"
+    ],
+    "equipment": [
+      "stand-mixer",
+      "instant-read-thermometer",
+      "digital-scale"
+    ],
+    "added": "2026-11-18",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 960,
+      "diffLabel": "medium",
+      "timeLead": "50 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 50,
+      "filterMinutes": 50
+    }
+  },
+  {
     "path": "pages/recipes/tres-leches-cake.html",
     "type": "recipe",
     "category": "recipes",
@@ -858,182 +968,6 @@
       "timeMode": "active",
       "activeMinutes": 45,
       "filterMinutes": 45
-    }
-  },
-  {
-    "path": "pages/recipes/turkey-and-sage-meatballs-with-brown-butter-gravy.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Turkey and sage meatballs with brown butter gravy",
-    "desc": "Ground turkey bound with a sourdough-and-milk panade and a bloomed sheet of gelatin, so the lean meat stays juicy after roasting and a day in the fridge. The meatballs roast hard at 230 °C for browning, then sit overnight in a brown butter and sage pan gravy built on the sheet-pan drippings, soy and cider vinegar.",
-    "tags": [
-      "turkey",
-      "meatballs",
-      "roast",
-      "holiday",
-      "make-ahead",
-      "umami",
-      "comfort"
-    ],
-    "status": "complete",
-    "_slug": "turkey-and-sage-meatballs-with-brown-butter-gravy",
-    "cuisine": "American",
-    "course": "dinner",
-    "difficulty": "medium",
-    "servings": 8,
-    "time": {
-      "prep_min": 40,
-      "cook_min": 45,
-      "total_min": 100,
-      "active_min": 60
-    },
-    "updated": "2026-11-18",
-    "diet": [],
-    "ingredients": [
-      {
-        "item": "whole milk, cold",
-        "slug": "whole-milk",
-        "optional": false
-      },
-      {
-        "item": "unflavored powdered gelatin",
-        "slug": "gelatin",
-        "optional": false
-      },
-      {
-        "item": "sourdough bread, crusts removed",
-        "slug": "sourdough-bread",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter (aromatics)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "shallot, fine-minced",
-        "slug": "shallot",
-        "optional": false
-      },
-      {
-        "item": "garlic cloves, grated",
-        "slug": "garlic",
-        "optional": false
-      },
-      {
-        "item": "ground turkey, 85/15 or 93/7 thigh blend",
-        "optional": false
-      },
-      {
-        "item": "large eggs",
-        "slug": "eggs",
-        "optional": false
-      },
-      {
-        "item": "parmigiano reggiano, finely grated",
-        "slug": "parmigiano-reggiano",
-        "optional": false
-      },
-      {
-        "item": "fresh sage, finely chopped",
-        "optional": false
-      },
-      {
-        "item": "fresh thyme leaves",
-        "slug": "fresh-thyme",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "lemon zest",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper, freshly ground",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (refined avocado, rice bran, or grapeseed)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter (gravy)",
-        "slug": "butter",
-        "optional": false
-      },
-      {
-        "item": "fresh sage leaves, whole",
-        "optional": false
-      },
-      {
-        "item": "all-purpose flour",
-        "slug": "all-purpose-flour",
-        "optional": false
-      },
-      {
-        "item": "chicken stock, unsalted",
-        "optional": false
-      },
-      {
-        "item": "light soy sauce (gravy)",
-        "slug": "light-soy-sauce",
-        "optional": false
-      },
-      {
-        "item": "apple cider vinegar",
-        "slug": "apple-cider-vinegar",
-        "optional": false
-      },
-      {
-        "item": "kosher salt (gravy)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "black pepper (gravy)",
-        "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "flat-leaf parsley, chopped",
-        "slug": "parsley",
-        "optional": false
-      }
-    ],
-    "techniques": [
-      "sweating",
-      "myosin-extraction",
-      "high-heat-dry-roasting",
-      "deglazing",
-      "brown-butter"
-    ],
-    "equipment": [
-      "instant-read-thermometer",
-      "microplane"
-    ],
-    "added": "2026-11-18",
-    "_card": {
-      "swatchIndex": 1,
-      "swatchGlyph": "skillet",
-      "totalMinutes": 100,
-      "diffLabel": "medium",
-      "timeLead": "1 h 40 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 60,
-      "filterMinutes": 60
     }
   },
   {
