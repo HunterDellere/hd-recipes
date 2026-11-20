@@ -974,9 +974,12 @@ export function renderShopSections(aggregates, currentPath, entriesByPath) {
     const items = bySection.get(key);
     if (!items || !items.length) continue;
     items.sort((a, b) => shopDisplayName(a.ing, a.page).localeCompare(shopDisplayName(b.ing, b.page)));
-    const head = `<h3 class="ing-group-head ing-shop-section" data-shop-section="${escapeHtml(key)}">${escapeHtml(label)} <span class="ing-shop-section-count">${items.length}</span></h3>`;
+    // Hub lists pre-hide rows the default menu does not need (g.hidden).
+    const shown = items.filter(g => !g.hidden).length;
+    const hid = shown ? '' : ' hidden';
+    const head = `<h3 class="ing-group-head ing-shop-section" data-shop-section="${escapeHtml(key)}"${hid}>${escapeHtml(label)} <span class="ing-shop-section-count">${shown}</span></h3>`;
     const rows = items.map(g => renderShopAggregateRow(g, currentPath, entriesByPath)).join('');
-    out.push(`${head}<ol class="ing-list ing-list-shop-section">${rows}\n      </ol>`);
+    out.push(`${head}<ol class="ing-list ing-list-shop-section"${hid}>${rows}\n      </ol>`);
   }
   return out.join('\n');
 }
@@ -1049,7 +1052,7 @@ function renderShopAggregateRow(g, currentPath, entriesByPath) {
   }
 
   return `
-        <li class="ing-row${role === 'pack' ? ' ing-row-pack' : ''}" ${dataAttrs}>
+        <li class="ing-row${role === 'pack' ? ' ing-row-pack' : ''}" ${dataAttrs}${g.hidden ? ' hidden' : ''}>
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           ${qtyCol}
           <span class="ing-name">${label}${alt}${opt}</span>

@@ -74,7 +74,7 @@ function homemadeExclusions(ing, fm, keyByRecipe) {
   const direct = keyByRecipe.get(normalizeRecipeRef(ing.recipe));
   if (direct) out.add(direct);
   for (const alt of fm.homemade_alternatives || []) {
-    if (!alt || !alt.recipe_slug || String(alt.for || '').trim() !== String(ing.item || '').trim()) continue;
+    if (!alt || !alt.recipe_slug || normItem(alt.for) !== normItem(ing.item)) continue;
     const key = keyByRecipe.get(normalizeRecipeRef(alt.recipe_slug));
     if (key) out.add(key);
   }
@@ -99,13 +99,26 @@ export function aggregateHubShop(hubFm, entriesByPath, ingredientBySlug) {
   const selectedByDefault = new Set(recipes.filter(r => !r.member.backup).map(r => r.key));
   const order = [];
   const groups = new Map();
+  const rowsByKey = new Map(recipes.map(r => [r.key, shoppableRows(r.fm, ingredientBySlug)]));
+
+  // A homemade component (crème fraîche) is only worth making while a dish
+  // that uses it is on, so its parts also carry `u`: the members using it.
+  const usersOf = new Map();
+  for (const r of recipes) {
+    for (const row of rowsByKey.get(r.key)) {
+      for (const k of homemadeExclusions(row.ing, r.fm, keyByRecipe)) {
+        if (!usersOf.has(k)) usersOf.set(k, new Set());
+        usersOf.get(k).add(r.key);
+      }
+    }
+  }
+  const isOnByDefault = (part) => part.c.some(k => selectedByDefault.has(k))
+    && !(part.x || []).some(k => selectedByDefault.has(k))
+    && (!part.u || part.u.some(k => selectedByDefault.has(k)));
 
   for (const r of recipes) {
-    const defaults = defaultChoiceKeys(r.fm);
-    const rows = classifyIngredients(r.fm.ingredients || [], ingredientBySlug)
-      .filter(row => row.role !== 'derived' && rowIsDefault(row.ing, defaults))
-      .filter(row => !NOT_BOUGHT.test(normItem(row.ing.item)));
-    for (const row of rows) {
+    const users = usersOf.has(r.key) ? [...usersOf.get(r.key)] : null;
+    for (const row of rowsByKey.get(r.key)) {
       const base = toBase(row.ing.qty, row.ing.unit);
       const unitPart = row.role === 'pack' ? `pack:${(row.pack && row.pack.size_label) || ''}` : (base.unit || 'each');
       const key = `${row.role}|${mergeKeyFor(row)}|${unitPart}`;
@@ -120,21 +133,37 @@ export function aggregateHubShop(hubFm, entriesByPath, ingredientBySlug) {
         groups.set(key, g);
         order.push(g);
       }
-      const q = typeof base.qty === 'number' ? base.qty : 0;
+      const isText = typeof base.qty !== 'number';
+      const q = isText ? 0 : base.qty;
       const exclude = homemadeExclusions(row.ing, r.fm, keyByRecipe);
-      const countsByDefault = selectedByDefault.has(r.key) && !exclude.some(k => selectedByDefault.has(k));
+      // t marks a text quantity ("to taste"): it keeps the row visible
+      // while its dish is on, even though it adds nothing to the total.
+      const part = { c: [r.key], q, ...(exclude.length ? { x: exclude } : {}), ...(users ? { u: users } : {}), ...(isText ? { t: 1 } : {}) };
+      const countsByDefault = isOnByDefault(part);
       g.totalQty += q;
-      if (countsByDefault) g.defaultQty += q;
-      if (typeof base.qty !== 'number' && base.qty) g.nonNumericQtys.push(String(base.qty));
+      if (countsByDefault) { g.defaultQty += q; if (isText) g.defaultText = true; }
+      if (isText && base.qty) g.nonNumericQtys.push(String(base.qty));
       if (!row.ing.optional) g.allOptional = false;
-      g.parts.push(exclude.length ? { c: [r.key], q, x: exclude } : { c: [r.key], q });
+      g.parts.push(part);
     }
   }
 
-  // The rendered number is the default menu's total, so the page reads
-  // correctly before scripts run. Rows only backups need keep the full sum so
-  // their markup carries a unit conversion; the script hides and re-totals them.
-  return order.map(g => ({ ...g, totalQty: g.defaultQty > 0 ? g.defaultQty : g.totalQty }));
+  // The rendered number is the default menu's total, and rows the default
+  // menu does not need are emitted hidden, so the page reads correctly before
+  // (or without) scripts. Hidden rows keep the full sum so their markup still
+  // carries a unit conversion for when the script re-totals and shows them.
+  return order.map(g => ({
+    ...g,
+    totalQty: g.defaultQty > 0 ? g.defaultQty : g.totalQty,
+    hidden: g.defaultQty <= 0 && !g.defaultText,
+  }));
+}
+
+function shoppableRows(fm, ingredientBySlug) {
+  const defaults = defaultChoiceKeys(fm);
+  return classifyIngredients(fm.ingredients || [], ingredientBySlug)
+    .filter(row => row.role !== 'derived' && rowIsDefault(row.ing, defaults))
+    .filter(row => !NOT_BOUGHT.test(normItem(row.ing.item)));
 }
 
 export function renderHubShop(hubFm, currentPath, entriesByPath, ingredientBySlug) {
@@ -173,7 +202,7 @@ export function renderHubShop(hubFm, currentPath, entriesByPath, ingredientBySlu
           <summary class="ing-panel-summary">
             <span class="ing-panel-title">Shopping list</span>
             <span class="ing-panel-meta">
-              <span class="ing-panel-count"><span data-shop-count>${aggregates.length}</span> items</span>
+              <span class="ing-panel-count"><span data-shop-count>${aggregates.filter(g => !g.hidden).length}</span> items</span>
               <span class="ing-panel-chev" aria-hidden="true">▾</span>
             </span>
           </summary>
