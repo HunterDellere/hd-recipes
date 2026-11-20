@@ -190,7 +190,7 @@ related_recipes:
     why: 'The roasted, sweet alternative: caramelized squash over bitter radicchio, for a table that needs warmth more than crunch.'
 
 notes: |
-  Why this salad sits on a holiday table. Every other plate in a holiday spread tends toward fat, starch, and long cooking. This one is raw, acidic, peppery, and crisp, and it resets the palate between bites of gratin or lamb. The arugula supplies the heat (glucosinolates break down into isothiocyanates when the leaf is chewed, the same pungency family as mustard), the cider and pomegranate supply the acid, and the almonds supply crunch.
+  Why this salad sits on a holiday table. Every other plate in a holiday spread tends toward fat, starch, and long cooking. This one is raw, acidic, peppery, and crisp, and it resets the palate between bites of gratin and roast meat. The arugula supplies the heat (glucosinolates break down into isothiocyanates when the leaf is chewed, the same pungency family as mustard), the cider and pomegranate supply the acid, and the almonds supply crunch.
 
   Why white miso in the dressing. The salad needs an umami anchor, or it reads as sweet fruit on leaves. Shaved parmigiano would do the job, but a holiday table often already carries a cheese-heavy gratin, and goat cheese is already on the plate. One and a half teaspoons of white miso dissolves invisibly into the vinaigrette, adds glutamate and a faint savory roundness, and, with the dijon, helps keep the emulsion stable. Nobody tastes miso; they taste a dressing that seems more complete.
 

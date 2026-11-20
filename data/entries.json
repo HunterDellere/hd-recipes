@@ -4,7 +4,7 @@
     "type": "hub",
     "category": "hubs",
     "title": "2026 Thanksgiving",
-    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds a roast rack of lamb. Two mains, three sides, soft rolls and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
+    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds cider-glazed ribs, smoked outside or baked the day before. Two mains, three sides, soft rolls and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
     "tags": [
       "holiday"
     ],
@@ -15,10 +15,408 @@
     "_card": {
       "swatchIndex": 13,
       "swatchGlyph": "stack",
-      "memberCount": 16,
+      "memberCount": 18,
       "memberMix": {
-        "recipes": 16
+        "recipes": 18
       }
+    }
+  },
+  {
+    "path": "pages/recipes/braised-beef-chuck-with-mushrooms-and-thyme.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Braised beef chuck with mushrooms and thyme",
+    "desc": "A boneless chuck roast cut into large pieces, dry-brined, seared hard, and braised low in porter and stock with onions, garlic, tomato paste and thyme until it yields to a spoon. Browned cremini go in at the end and a splash of vinegar sharpens the sauce. Built to be cooked a day ahead and reheated on the stovetop.",
+    "tags": [
+      "beef",
+      "braise",
+      "make-ahead",
+      "one-pot",
+      "comfort",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "braised-beef-chuck-with-mushrooms-and-thyme",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "easy",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 210,
+      "total_min": 960,
+      "active_min": 60
+    },
+    "updated": "2026-11-19",
+    "ingredients": [
+      {
+        "item": "boneless beef chuck roast",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "neutral oil",
+        "slug": "neutral-oil",
+        "optional": false
+      },
+      {
+        "item": "yellow onions, sliced",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "garlic cloves, smashed",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "tomato paste",
+        "slug": "tomato-paste",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "porter or stout",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, unsalted",
+        "optional": false
+      },
+      {
+        "item": "soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "fresh thyme sprigs",
+        "slug": "fresh-thyme",
+        "optional": false
+      },
+      {
+        "item": "bay leaves",
+        "slug": "bay-leaf",
+        "optional": false
+      },
+      {
+        "item": "cremini mushrooms, quartered",
+        "slug": "cremini-mushroom",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the mushrooms",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, chopped",
+        "slug": "parsley",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining",
+      "maillard-sear",
+      "braising"
+    ],
+    "equipment": [
+      "dutch-oven",
+      "wide-skillet",
+      "instant-read-thermometer"
+    ],
+    "added": "2026-11-20",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 960,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/cider-glazed-baby-back-ribs.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cider-glazed baby back ribs",
+    "desc": "Two racks of baby back ribs, dry-brined overnight, rubbed with brown sugar, smoked paprika, mustard, fennel and sage, cooked low until a probe slides between the bones, then lacquered with a reduced apple cider and mustard glaze. Smoke them on any smoker, or slow-bake them the day before and glaze them in a hot oven, or do one rack each way.",
+    "tags": [
+      "pork",
+      "smoky",
+      "glaze",
+      "holiday",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "cider-glazed-baby-back-ribs",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 6,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 300,
+      "total_min": 1080,
+      "active_min": 60
+    },
+    "updated": "2026-11-19",
+    "ingredients": [
+      {
+        "item": "baby back pork ribs",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "black pepper, coarsely ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "dry mustard powder",
+        "optional": false
+      },
+      {
+        "item": "garlic powder",
+        "optional": false
+      },
+      {
+        "item": "fennel seed, ground",
+        "slug": "fennel-seed",
+        "optional": false
+      },
+      {
+        "item": "dried rubbed sage",
+        "optional": false
+      },
+      {
+        "item": "cayenne pepper",
+        "optional": false
+      },
+      {
+        "item": "apple or cherry wood chunks",
+        "optional": false
+      },
+      {
+        "item": "apple cider, for spritzing",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar, for spritzing",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, for the wrap",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "honey, for the wrap",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "apple cider, for the wrap",
+        "optional": false
+      },
+      {
+        "item": "apple cider, unfiltered",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "Dijon mustard, for the glaze",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, for the glaze",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "black pepper, for the glaze",
+        "slug": "black-pepper",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining",
+      "reduction"
+    ],
+    "equipment": [
+      "instant-read-thermometer",
+      "digital-scale"
+    ],
+    "added": "2026-11-20",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 1080,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/cranberry-mostarda.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cranberry mostarda",
+    "desc": "Fresh cranberries cooked into a loose syrup with brown sugar, red wine vinegar, shallot, orange and whole mustard seeds, then finished off the heat with cold-bloomed mustard powder. Sweet, sharply sour and nose-clearing, it is a cranberry sauce built for rich meats.",
+    "tags": [
+      "condiment",
+      "make-ahead",
+      "holiday",
+      "sweet"
+    ],
+    "status": "complete",
+    "_slug": "cranberry-mostarda",
+    "cuisine": "Italian-American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 25,
+      "total_min": 760,
+      "active_min": 30
+    },
+    "updated": "2026-11-19",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "yellow mustard seeds",
+        "slug": "mustard-seeds",
+        "optional": false
+      },
+      {
+        "item": "brown mustard seeds",
+        "slug": "mustard-seeds",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "shallot, fine-minced",
+        "slug": "shallot",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "fresh or frozen cranberries",
+        "optional": false
+      },
+      {
+        "item": "orange, zest and juice",
+        "slug": "orange",
+        "optional": false
+      },
+      {
+        "item": "dry mustard powder (Colman's or similar)",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "heavy-saucepan",
+      "microplane"
+    ],
+    "added": "2026-11-20",
+    "_card": {
+      "swatchIndex": 0,
+      "swatchGlyph": "olive",
+      "totalMinutes": 760,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -6816,7 +7214,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 34
+      "usedInCount": 35
     }
   },
   {
@@ -6884,7 +7282,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 13
+      "usedInCount": 14
     }
   },
   {
@@ -25082,7 +25480,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 4,
+      "usedInCount": 5,
       "hasNutrition": true
     }
   },
@@ -56622,7 +57020,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 37,
+      "usedInCount": 38,
       "hasNutrition": true
     }
   },
@@ -57214,7 +57612,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 22,
       "hasNutrition": false
     }
   },
@@ -57606,7 +58004,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 32,
+      "usedInCount": 33,
       "hasNutrition": false
     }
   },
@@ -57747,7 +58145,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 9,
+      "usedInCount": 10,
       "hasNutrition": true
     }
   },
@@ -57975,7 +58373,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 40,
+      "usedInCount": 41,
       "hasNutrition": true
     }
   },
@@ -58283,7 +58681,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 3,
+      "usedInCount": 4,
       "hasNutrition": true
     }
   },
@@ -58304,7 +58702,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 160,
+      "usedInCount": 161,
       "hasNutrition": true
     }
   },
@@ -58385,7 +58783,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 10,
+      "usedInCount": 11,
       "hasNutrition": true
     }
   },
@@ -58448,7 +58846,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 96,
+      "usedInCount": 97,
       "hasNutrition": true
     }
   },
@@ -58754,7 +59152,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 20,
+      "usedInCount": 22,
       "hasNutrition": false
     }
   },
@@ -58836,7 +59234,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 46,
+      "usedInCount": 47,
       "hasNutrition": true
     }
   },
@@ -58857,7 +59255,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -59192,7 +59590,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 108,
+      "usedInCount": 109,
       "hasNutrition": true
     }
   },
@@ -63815,7 +64213,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 74,
+      "usedInCount": 75,
       "hasNutrition": false
     }
   },
@@ -64805,7 +65203,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 49,
+      "usedInCount": 50,
       "hasNutrition": true
     }
   },
@@ -71253,7 +71651,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 79,
+      "usedInCount": 80,
       "hasNutrition": true
     }
   },
@@ -71272,7 +71670,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 184,
+      "usedInCount": 186,
       "hasNutrition": true
     }
   },
@@ -71310,7 +71708,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 113,
+      "usedInCount": 115,
       "hasNutrition": true
     }
   },
@@ -71449,7 +71847,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 277,
+      "usedInCount": 278,
       "hasNutrition": true
     }
   },
@@ -71468,7 +71866,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 18,
+      "usedInCount": 20,
       "hasNutrition": true
     }
   },
@@ -71489,7 +71887,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 83,
+      "usedInCount": 85,
       "hasNutrition": true
     }
   },
@@ -72521,7 +72919,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 48
+      "usedInCount": 50
     }
   },
   {
@@ -73149,7 +73547,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 290,
+      "usedInCount": 293,
       "hasNutrition": true
     }
   },
@@ -74391,7 +74789,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 32
+      "usedInCount": 34
     }
   },
   {
@@ -74444,7 +74842,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 141
+      "usedInCount": 142
     }
   },
   {

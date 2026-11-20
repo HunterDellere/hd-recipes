@@ -26,7 +26,7 @@ const MASS_TO_G = { g: 1, kg: 1000, mg: 0.001, oz: 28.3495, lb: 453.592 };
 // Words that change how a cook describes an item but not what they buy.
 // Used only for the merge key of rows without an ingredient-page slug;
 // the shopping row still shows the first contributor's own wording.
-const FORM_WORDS = /\b(leaves|leaf|sprigs?|fronds|unsalted|low-sodium|whole|freshly|fresh|cold)\b/g;
+const FORM_WORDS = /\b(leaves|leaf|sprigs?|fronds|unsalted|unfiltered|low-sodium|whole|freshly|fresh|cold)\b/g;
 
 // Tap water and ice are on ingredient lists but never on a shopping list.
 const NOT_BOUGHT = /^(cold |warm |hot |boiling |ice )?(water|ice)( |$)/;
@@ -42,7 +42,10 @@ function normalizeRecipeRef(ref) {
 function mergeKeyFor(row) {
   const slug = bareSlugRef(row.ing.slug);
   if (slug) return slug;
-  return normItem(row.ing.item).replace(FORM_WORDS, ' ').replace(/\s+/g, ' ').trim();
+  // "apple cider, for the wrap" and "apple cider, for spritzing" are one
+  // purchase, so a trailing purpose clause is dropped from the key.
+  return normItem(String(row.ing.item || '').replace(/,\s*for\b.*$/i, ''))
+    .replace(FORM_WORDS, ' ').replace(/\s+/g, ' ').trim();
 }
 
 function toBase(qty, unit) {
@@ -126,7 +129,7 @@ export function aggregateHubShop(hubFm, entriesByPath, ingredientBySlug) {
       if (!g) {
         g = {
           key, role: row.role, page: row.page, pack: row.pack,
-          ing: { ...row.ing, qty: base.qty, unit: base.unit, recipe: undefined },
+          ing: { ...row.ing, item: String(row.ing.item || '').replace(/,\s*for\b.*$/i, ''), qty: base.qty, unit: base.unit, recipe: undefined },
           totalQty: 0, defaultQty: 0, nonNumericQtys: [], allOptional: true,
           section: sectionFor(row), parts: [],
         };
