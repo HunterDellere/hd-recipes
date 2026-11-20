@@ -129,13 +129,13 @@ const SLUG_TO_SECTION = (() => {
 // strings are matched against the lowercased item text after trivial cleanup.
 const KEYWORD_RULES = [
   // Frozen anything wins regardless of underlying ingredient
-  { section: 'frozen', test: t => /\bfrozen\b/.test(t) },
+  { section: 'frozen', test: t => /\bfrozen\b/.test(t) && !/\bfresh or frozen\b/.test(t) },
 
   // Meat & seafood: cuts, fish, shellfish
-  { section: 'meat', test: t => /\b(chicken|turkey|duck|goose|quail|chicken breast|chicken thigh|chicken wing|drumstick|skinless|boneless)\b/.test(t) },
+  { section: 'meat', test: t => /\b(chicken|turkey|duck|goose|quail|chicken breast|chicken thigh|chicken wing|drumstick|skinless|boneless)\b/.test(t) && !/\b(stock|broth|bouillon)\b/.test(t) },
   { section: 'meat', test: t => /\b(beef|steak|brisket|short rib|sirloin|ribeye|flank|skirt|ground beef|chuck|oxtail|tri-?tip|filet|chuck eye|chuck roast)\b/.test(t) },
   { section: 'meat', test: t => /\b(pork|ground pork|pork belly|pork shoulder|pork chop|pork loin|ribs|sausage|chorizo|andouille|kielbasa|salami|prosciutto|guanciale|capicola|coppa|mortadella|pancetta|lardons?|bacon)\b/.test(t) },
-  { section: 'meat', test: t => /\b(lamb|mutton|veal|venison|rabbit|goat)\b/.test(t) },
+  { section: 'meat', test: t => /\b(lamb|mutton|veal|venison|rabbit|goat)\b/.test(t) && !/\b(cheese|ch[èe]vre|milk)\b/.test(t) },
   { section: 'meat', test: t => /\b(fish|salmon|tuna|cod|halibut|trout|snapper|sea bass|sea bream|tilapia|mahi[- ]mahi|swordfish|mackerel|sardine|sardines|monkfish|catfish|whiting|whole fish|fillet)\b/.test(t) && !/\b(anchovy|anchovies|sauce|paste|canned|tinned|dried|powder)\b/.test(t) },
   { section: 'meat', test: t => /\b(shrimp|prawn|prawns|crab|lobster|crawfish|crayfish|scallop|scallops|squid|calamari|octopus|mussel|mussels|clam|clams|oyster|oysters)\b/.test(t) && !/\bdried\b/.test(t) },
 
@@ -151,7 +151,7 @@ const KEYWORD_RULES = [
 
   // Spices & dried herbs — handle BEFORE pantry catch-all
   { section: 'spices', test: t => /\b(ground|whole|toasted|dried)\s+(cumin|coriander|cardamom|fennel|fenugreek|caraway|mustard|allspice|cloves?|nutmeg|mace|black pepper|white pepper|cinnamon|ginger|turmeric|paprika)\b/.test(t) },
-  { section: 'spices', test: t => /\b(allspice|bay leaf|cardamom pod|cinnamon stick|clove|coriander seed|cumin seed|fennel seed|fenugreek|grains of paradise|juniper|mustard seed|nigella|nutmeg|peppercorn|peppercorns|saffron|star anise|sumac|szechuan peppercorn|sichuan peppercorn|vanilla bean|vanilla pod)\b/.test(t) },
+  { section: 'spices', test: t => /\b(allspice|bay leaf|cardamom pod|cinnamon stick|clove|coriander seed|cumin seed|fennel seed|fenugreek|grains of paradise|juniper|mustard seed|nigella|nutmeg|peppercorn|peppercorns|saffron|star anise|mustard powder|dry mustard|sumac|szechuan peppercorn|sichuan peppercorn|vanilla bean|vanilla pod)\b/.test(t) },
   { section: 'spices', test: t => /\b(paprika|chili powder|chili flake|red pepper flake|cayenne|gochugaru|aleppo|urfa|kashmiri|berbere|baharat|ras el hanout|garam masala|chaat masala|tandoori masala|chinese five[- ]spice|five[- ]spice|herbes de provence|italian seasoning|cajun seasoning|old bay|jerk seasoning|za'?atar|dukkah)\b/.test(t) },
   { section: 'spices', test: t => /\b(dried (thyme|oregano|rosemary|marjoram|basil|sage|tarragon|mint|dill|parsley|chive)|dried herb|dried herbs)\b/.test(t) },
   { section: 'spices', test: t => /\bsalt\b/.test(t) && /\b(kosher|sea|table|finishing|flaky|pink|himalayan|smoked|black)\b/.test(t) },
@@ -182,7 +182,7 @@ const KEYWORD_RULES = [
   { section: 'produce', test: t => /\b(cucumber|zucchini|squash|pumpkin|delicata|kabocha|butternut|acorn|spaghetti squash|eggplant|aubergine|okra|nopal|cactus|water chestnut)\b/.test(t) },
   { section: 'produce', test: t => /\b(mushroom|button|cremini|portobello|shiitake|oyster mushroom|maitake|hen of the woods|enoki|shimeji|chanterelle|porcini|morel|king trumpet|wood ear|black fungus)\b/.test(t) && !/\bdried\b/.test(t) },
   { section: 'produce', test: t => /\b(lemon|lime|orange|grapefruit|tangerine|mandarin|clementine|calamansi|yuzu|kumquat|blood orange|meyer)\b/.test(t) && !/\b(juice|zest only|extract|paste|bottled)\b/.test(t) },
-  { section: 'produce', test: t => /\b(apple|pear|peach|plum|nectarine|cherry|cherries|grape|grapes|fig|figs|mango|papaya|pineapple|melon|watermelon|cantaloupe|honeydew|kiwi|guava|passion fruit|lychee|longan|rambutan|dragonfruit|pomegranate|persimmon|date|dates|berry|berries|strawberry|strawberries|blueberry|blueberries|raspberry|raspberries|blackberry|blackberries|banana|plantain|avocado)\b/.test(t) && !/\b(dried|jam|preserve|chutney|extract|flavored|juice only|bottled)\b/.test(t) },
+  { section: 'produce', test: t => /\b(apples?|pears?|peach|plum|nectarine|cherry|cherries|grape|grapes|fig|figs|mango|papaya|pineapple|melon|watermelon|cantaloupe|honeydew|kiwi|guava|passion fruit|lychee|longan|rambutan|dragonfruit|pomegranate|persimmon|date|dates|berry|berries|cranberry|cranberries|strawberry|strawberries|blueberry|blueberries|raspberry|raspberries|blackberry|blackberries|banana|plantain|avocado)\b/.test(t) && !/\b(dried|jam|preserve|chutney|extract|flavored|juice only|bottled|juice|sauce|canned)\b/.test(t) },
   { section: 'produce', test: t => /\b(corn|sweet corn|corn on the cob|edamame|snap pea|snow pea|green bean|long bean|yardlong|haricot vert|bean sprout|sprouts?|microgreens?)\b/.test(t) && !/\bdried\b/.test(t) },
 ];
 

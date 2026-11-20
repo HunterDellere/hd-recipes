@@ -877,7 +877,7 @@ export function renderIngredientsTable(fm, currentPath, ingredientBySlug, entrie
 // by the servings factor exactly as it does for any other row.
 const PREP_KEYWORDS = /\b(diced|minced|sliced|grated|chopped|crushed|melted|softened|toasted|julienned|cubed|halved|quartered|trimmed|peeled|seeded|cored|stemmed|deveined|cleaned|rinsed|drained|thawed|finely|coarsely|roughly|thinly|thickly|cut|torn|smashed|crumbled|shredded|cracked|broken|fresh|room temperature|cold|at room|ground|whole|picked|patted dry|for greasing|for dusting|for serving|for finishing|for garnish|optional)\b/i;
 
-function bareSlugRef(slugRef) {
+export function bareSlugRef(slugRef) {
   return slugRef ? String(slugRef).toLowerCase().replace(/^ingredients\//, '').trim() : '';
 }
 
@@ -885,7 +885,7 @@ function bareSlugRef(slugRef) {
 // uses the first contributor's original text. Strips prep clauses and
 // parentheticals so "Cajun seasoning" and "Cajun seasoning (Tony Chachere's…)"
 // hash to the same key.
-function normItem(s) {
+export function normItem(s) {
   return stripPrepClause(String(s || ''))
     .toLowerCase()
     .replace(/\([^)]*\)/g, '')
@@ -962,7 +962,7 @@ function aggregateForShop(rows) {
   return order;
 }
 
-function renderShopSections(aggregates, currentPath, entriesByPath) {
+export function renderShopSections(aggregates, currentPath, entriesByPath) {
   if (!aggregates.length) return '';
   const bySection = new Map();
   for (const g of aggregates) {
@@ -974,9 +974,12 @@ function renderShopSections(aggregates, currentPath, entriesByPath) {
     const items = bySection.get(key);
     if (!items || !items.length) continue;
     items.sort((a, b) => shopDisplayName(a.ing, a.page).localeCompare(shopDisplayName(b.ing, b.page)));
-    const head = `<h3 class="ing-group-head ing-shop-section" data-shop-section="${escapeHtml(key)}">${escapeHtml(label)} <span class="ing-shop-section-count">${items.length}</span></h3>`;
+    // Hub lists pre-hide rows the default menu does not need (g.hidden).
+    const shown = items.filter(g => !g.hidden).length;
+    const hid = shown ? '' : ' hidden';
+    const head = `<h3 class="ing-group-head ing-shop-section" data-shop-section="${escapeHtml(key)}"${hid}>${escapeHtml(label)} <span class="ing-shop-section-count">${shown}</span></h3>`;
     const rows = items.map(g => renderShopAggregateRow(g, currentPath, entriesByPath)).join('');
-    out.push(`${head}<ol class="ing-list ing-list-shop-section">${rows}\n      </ol>`);
+    out.push(`${head}<ol class="ing-list ing-list-shop-section"${hid}>${rows}\n      </ol>`);
   }
   return out.join('\n');
 }
@@ -1049,7 +1052,7 @@ function renderShopAggregateRow(g, currentPath, entriesByPath) {
   }
 
   return `
-        <li class="ing-row${role === 'pack' ? ' ing-row-pack' : ''}" ${dataAttrs}>
+        <li class="ing-row${role === 'pack' ? ' ing-row-pack' : ''}" ${dataAttrs}${g.hidden ? ' hidden' : ''}>
           <label class="ing-check"><input type="checkbox" class="ing-cb"><span class="ing-check-mark"></span></label>
           ${qtyCol}
           <span class="ing-name">${label}${alt}${opt}</span>
@@ -1930,19 +1933,42 @@ function renderHubPlan(fm) {
     </section>`;
 }
 
-export function renderHubBody(fm, slug, category, entriesByPath) {
-  const members = (fm.members || []).map(m => {
+export function renderHubBody(fm, slug, category, entriesByPath, opts = {}) {
+  const currentPath = `pages/${category}/${slug}.html`;
+  const pickable = Boolean(fm.shopping_list);
+  const renderCard = (m) => {
     const target = entriesByPath.get(m.slug) || entriesByPath.get(`pages/${m.slug}.html`);
     if (!target) return null;
-    const href = relPath(`pages/${category}/${slug}.html`, target.path);
+    const href = relPath(currentPath, target.path);
     const label = m.label || target.title || m.slug;
-    return `
+    const eyebrow = m.course || target.category;
+    const card = `
         <a class="hub-card" href="${escapeHtml(href)}" data-category="${escapeHtml(target.category)}">
-          <span class="hc-cat">${escapeHtml(target.category)}</span>
+          <span class="hc-cat">${escapeHtml(eyebrow)}</span>
           <span class="hc-title">${escapeHtml(label)}</span>
           ${m.note ? `<span class="hc-note">${escapeHtml(m.note)}</span>` : ''}
         </a>`;
-  }).filter(Boolean).join('');
+    if (!pickable || target.type !== 'recipe') return card;
+    const key = String(m.slug).replace(/^.*\//, '');
+    const on = !m.backup;
+    return `
+        <div class="hub-card-wrap">${card}
+          <button type="button" class="hub-pick" data-choice-key="${escapeHtml(key)}" data-default="${on ? '1' : '0'}" aria-pressed="${on ? 'true' : 'false'}" aria-label="Include ${escapeHtml(label)} in the shopping list">
+            <span class="hub-pick-box" aria-hidden="true"></span>
+            <span class="hub-pick-on">In shopping list</span><span class="hub-pick-off">Add to shopping list</span>
+          </button>
+        </div>`;
+  };
+  const all = fm.members || [];
+  const menu = all.filter(m => !m.backup).map(renderCard).filter(Boolean).join('');
+  const backups = all.filter(m => m.backup).map(renderCard).filter(Boolean).join('');
+  const backupHtml = backups ? `
+    <div class="section-head hub-backups-head"><h2>Backups</h2><p class="section-blurb">Not on the menu. Swap one in if a dish fails, a guest needs it, or you change your mind.</p></div>
+    <div class="hub-cards">${backups}
+    </div>` : '';
+  const cardsHtml = `
+    <div class="hub-cards">${menu}
+    </div>${backupHtml}`;
 
   return `
 <div class="shell">
@@ -1956,9 +1982,9 @@ export function renderHubBody(fm, slug, category, entriesByPath) {
       <span class="topic-hero-eyebrow">Collection</span>
       <h1 class="topic-hero-title">${escapeHtml(fm.title || slug)}</h1>
       ${fm.desc ? `<p class="topic-hero-desc">${escapeHtml(fm.desc)}</p>` : ''}
-    </header>
-    <div class="hub-cards">${members}
-    </div>${renderHubPlan(fm)}
+    </header>${pickable ? `
+    <div class="hub-picker" data-choices>${cardsHtml}
+    </div>` : cardsHtml}${opts.shopHtml || ''}${renderHubPlan(fm)}
   </main>
 </div>`;
 }

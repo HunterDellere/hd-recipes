@@ -414,6 +414,7 @@
     for (const el of shopRoot.querySelectorAll('.ing-shop-section, .ing-row')) {
       if (el.classList.contains('ing-shop-section')) {
         flush();
+        if (el.hidden) { currentSection = null; continue; }
         // The section heading carries a count chip; the label is the leading
         // text node, the chip is a child span. Read the text node directly.
         const textNode = el.firstChild;
@@ -421,6 +422,7 @@
           ? textNode.textContent.trim()
           : el.textContent.trim();
       } else {
+        if (el.hidden) continue;
         const cb = el.querySelector('.ing-cb');
         if (cb && cb.checked) continue;
         pendingLines.push(rowLine(el));
@@ -528,8 +530,19 @@
         let parts;
         try { parts = JSON.parse(row.dataset.choiceParts); } catch { return; }
         let total = 0;
-        for (const p of parts) if (isOn(p.c || [])) total += Number(p.q) || 0;
-        row.hidden = total <= 0;
+        let hasText = false;
+        // Hub parts: `x` lists keys that cancel the part (a homemade component
+        // replaces the store-bought row), `u` lists keys of which at least one
+        // must be on (the dishes that use a homemade component), and `t` marks
+        // a text quantity ("to taste") that keeps the row visible.
+        for (const p of parts) {
+          if (!isOn(p.c || [])) continue;
+          if ((p.x || []).some(k => selected.has(k))) continue;
+          if (p.u && !p.u.some(k => selected.has(k))) continue;
+          if (p.t) hasText = true;
+          total += Number(p.q) || 0;
+        }
+        row.hidden = total <= 0 && !hasText;
         if (total > 0) { row.dataset.qty = String(total); row.dataset.origQty = String(total); }
       });
       // Hide list blocks (and their heading) once every row in them is hidden.

@@ -30,6 +30,7 @@ import {
 } from './lib/recipe-render.mjs';
 import { renderFamilyContent, renderFamilyCrosslinks, familyCardArt } from './lib/family-render.mjs';
 import { displayUnit } from './lib/units.mjs';
+import { renderHubShop } from './lib/hub-shop.mjs';
 import { loadCache, computeRecipeNutrition, roundNutrition } from './lib/nutrition.mjs';
 import { computeReverseLinks, enrichEntry } from './lib/cards.mjs';
 import { computePairings } from './lib/pairings.mjs';
@@ -438,7 +439,9 @@ for (const { fm, body, slug, category, outDir, entry } of pending) {
         const recipes = cuisineRecipes.get(String(fm.title || slug).toLowerCase()) || [];
         augmentedBody = renderCuisineBody(fm, slug, category, { recipes });
       } else if (fm.type === 'hub') {
-        augmentedBody = renderHubBody(fm, slug, category, entriesByPath);
+        augmentedBody = renderHubBody(fm, slug, category, entriesByPath, {
+          shopHtml: renderHubShop(fm, `pages/${category}/${slug}.html`, entriesByPath, ingredientBySlug),
+        });
       } else if (fm.type === 'safety') {
         const referencedBy = safetyReferencedBy.get(slug) || [];
         augmentedBody = renderSafetyBody(fm, slug, category, { referencedBy });
