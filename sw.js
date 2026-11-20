@@ -16,7 +16,7 @@
  *
  * Bump VERSION when shipping a breaking change to invalidate older caches.
  */
-const VERSION = 'hdr-v16';
+const VERSION = 'hdr-v17';
 const SHELL_CACHE = `${VERSION}-shell`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 

@@ -261,11 +261,14 @@
         "properties": {
           "slug": { "type": "string" },
           "label": { "type": "string" },
-          "note": { "type": "string" }
+          "note": { "type": "string" },
+          "course": { "type": "string", "description": "Short eyebrow for the member card, e.g. 'main', 'side', 'dessert'." },
+          "backup": { "type": "boolean", "description": "Listed in the Backups section and left out of the shopping list until switched on." }
         }
       },
       "description": "For hub pages: curated recipe collections"
     },
+    "shopping_list": { "type": "boolean", "description": "For hub pages: render a combined shopping list for the member recipes, with a toggle on each recipe card." },
     "plan": {
       "type": "array",
       "items": {

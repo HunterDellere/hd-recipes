@@ -528,7 +528,13 @@
         let parts;
         try { parts = JSON.parse(row.dataset.choiceParts); } catch { return; }
         let total = 0;
-        for (const p of parts) if (isOn(p.c || [])) total += Number(p.q) || 0;
+        // `x` lists keys that cancel the part: a homemade component on a hub
+        // menu replaces the store-bought row that a recipe lists.
+        for (const p of parts) {
+          if (!isOn(p.c || [])) continue;
+          if ((p.x || []).some(k => selected.has(k))) continue;
+          total += Number(p.q) || 0;
+        }
         row.hidden = total <= 0;
         if (total > 0) { row.dataset.qty = String(total); row.dataset.origQty = String(total); }
       });

@@ -39,6 +39,7 @@ ingredients:
     note: '(5–7 lb)'
   - group: 'Turkey + dry brine'
     item: 'kosher salt'
+    slug: 'kosher-salt'
     qty: 22
     unit: 'g'
     note: '(1.5 tbsp Diamond Crystal)'
@@ -50,6 +51,7 @@ ingredients:
     note: '(1 tsp)'
   - group: 'Turkey + dry brine'
     item: 'smoked paprika'
+    slug: 'smoked-paprika'
     qty: 1
     unit: 'g'
     note: '(½ tsp)'
@@ -67,6 +69,7 @@ ingredients:
     note: '(1 tbsp)'
   - group: 'Under-skin butter'
     item: 'fresh thyme leaves'
+    slug: 'fresh-thyme'
     qty: 3
     unit: 'g'
     note: '(1 tbsp)'
@@ -79,6 +82,7 @@ ingredients:
 
   - group: 'Maple-mustard glaze'
     item: 'pure maple syrup'
+    slug: 'maple-syrup'
     qty: 80
     unit: 'g'
     note: '(⅓ cup; Grade A Dark)'
@@ -89,11 +93,13 @@ ingredients:
     note: '(2 tbsp)'
   - group: 'Maple-mustard glaze'
     item: 'Dijon mustard'
+    slug: 'dijon-mustard'
     qty: 15
     unit: 'g'
     note: '(1 tbsp)'
   - group: 'Maple-mustard glaze'
     item: 'apple cider vinegar'
+    slug: 'apple-cider-vinegar'
     qty: 15
     unit: 'g'
     note: '(1 tbsp)'
