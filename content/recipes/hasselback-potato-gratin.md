@@ -140,8 +140,8 @@ related_recipes:
     why: 'Gratin dauphinois lays the slices flat and keeps them submerged, so the whole dish reads uniformly soft and creamy with a thin bronze top; the upright Hasselback format trades some of that silkiness for a crisp, frilled ridge on every portion.'
 
 pairings:
-  - recipe: 'recipes/herb-crusted-rack-of-lamb-with-cranberry-mostarda'
-    reason: 'The cream and cheese cushion the lamb, and the mostarda acid cuts the gratin on the same fork.'
+  - recipe: 'recipes/cider-glazed-baby-back-ribs'
+    reason: 'Cream and gruyère soak up the rib juices, and the glaze acid cuts the gratin on the same fork.'
   - recipe: 'recipes/turkey-and-sage-meatballs-with-brown-butter-gravy'
     reason: 'Gravy running into creamy potatoes is the core of a Thanksgiving plate.'
 

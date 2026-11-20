@@ -34,7 +34,7 @@ safety_notes:
 before_you_start:
   - 'The day before: cut the sourdough into 2 cm cubes and leave them spread on a sheet pan, uncovered, overnight to stale. Dry bread absorbs the brown butter and fish juices without collapsing into paste. If you forget, toast the cubes at 150 °C / 300 °F for 20 to 25 minutes until dry but not colored.'
   - 'The stuffing can be fully mixed the morning of and refrigerated in a covered bowl. Stuff the fish only immediately before it goes into the oven. A stuffed raw fish that sits warm is a bacterial incubator, and the bread turns soggy.'
-  - 'Shared oven: the fish roasts at 220 °C / 425 °F, the same temperature as the rack of lamb and the roasted carrots, so they can share the oven on separate racks. Give the fish the lower-middle rack, because two fish on one sheet pan block airflow, and keep the lamb above.'
+  - 'Shared oven: the fish roasts at 220 °C / 425 °F, the same temperature as most holiday roasts and the roasted carrots, so they can share the oven on separate racks. Give the fish the lower-middle rack, because two fish on one sheet pan block airflow, and keep the other dish above.'
   - 'Buy fish that fit your pan. Two 1.1 to 1.4 kg snappers fit diagonally on a standard 46 x 33 cm (18 x 13 inch) half sheet pan. Ask the fishmonger to scale, gut, and remove the gills, and to leave the head and tail on.'
 
 ingredients:

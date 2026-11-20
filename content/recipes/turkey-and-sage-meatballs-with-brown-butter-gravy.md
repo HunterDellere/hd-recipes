@@ -246,7 +246,7 @@ substitutions:
     note: 'Same weight. Softer and slightly sweeter; the panade needs only 5 minutes to hydrate.'
   - for: 'fresh sage, finely chopped'
     use: 'dried rubbed sage'
-    note: 'Use 3 g / 1½ tsp. Skip the fried-leaf garnish and finish with more parsley instead.'
+    note: 'Use 3 g / 1¼ tbsp. Skip the fried-leaf garnish and finish with more parsley instead.'
   - for: 'light soy sauce'
     use: 'tamari'
     note: '1:1. Slightly darker and less salty-sharp.'
@@ -262,8 +262,8 @@ homemade_alternatives:
 homemade_exempt: ['whole milk, cold', 'unflavored powdered gelatin', 'sourdough bread, crusts removed', 'unsalted butter (aromatics)', 'shallot, fine-minced', 'garlic cloves, grated', 'ground turkey, 85/15 or 93/7 thigh blend', 'large eggs', 'parmigiano reggiano, finely grated', 'fresh sage, finely chopped', 'fresh thyme leaves', 'light soy sauce', 'lemon zest', 'kosher salt', 'black pepper, freshly ground', 'neutral oil (refined avocado, rice bran, or grapeseed)', 'unsalted butter (gravy)', 'fresh sage leaves, whole', 'all-purpose flour', 'light soy sauce (gravy)', 'apple cider vinegar', 'kosher salt (gravy)', 'black pepper (gravy)', 'flat-leaf parsley, chopped']
 
 pairings:
-  - recipe: 'recipes/herb-crusted-rack-of-lamb-with-cranberry-mostarda'
-    reason: 'The lamb recipe makes the cranberry mostarda, which is the sharp, sweet relish this gravy is built to sit next to.'
+  - recipe: 'recipes/cranberry-mostarda'
+    reason: 'The sharp, sweet, mustard-hot relish this gravy is built to sit next to.'
   - recipe: 'recipes/hasselback-potato-gratin'
     reason: 'Gravy over creamy potatoes is the oldest Thanksgiving pairing there is.'
 
