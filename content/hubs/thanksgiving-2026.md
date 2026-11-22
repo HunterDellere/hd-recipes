@@ -24,10 +24,10 @@ members:
     course: 'side'
     label: 'Hasselback potato gratin'
     note: 'The rich side: a creamy center with crisp upright edges. It bakes first, then re-crisps above the pork.'
-  - slug: 'recipes/cumin-roasted-carrots-with-salsa-verde'
+  - slug: 'recipes/garlic-and-thyme-roasted-carrots'
     course: 'side'
-    label: 'Cumin-roasted carrots with salsa verde'
-    note: 'The savory carrots. The plate already has two cranberry sauces, pear and pomegranate and two sweet desserts, so the carrots bring herbs, capers and lemon instead of a glaze. Good at room temperature, which frees the oven for the pork.'
+    label: 'Garlic and thyme roasted carrots'
+    note: 'The savory carrots. The plate already has two cranberry sauces, pear and pomegranate and two sweet desserts, so the carrots bring garlic, thyme and lemon instead of a glaze. Good at room temperature, which frees the oven for the pork.'
   - slug: 'recipes/arugula-pear-and-pomegranate-salad-with-goat-cheese'
     course: 'side'
     label: 'Arugula, pear and pomegranate salad with goat cheese'
@@ -91,6 +91,11 @@ members:
     backup: true
     label: 'Whole roasted red snapper with sourdough-fennel stuffing'
     note: 'The pescatarian option if a guest needs one, and the stuffing the menu otherwise leaves out. It roasts at 220 °C / 425 °F on the lower rack.'
+  - slug: 'recipes/cumin-roasted-carrots-with-salsa-verde'
+    course: 'backup side'
+    backup: true
+    label: 'Cumin-roasted carrots with salsa verde'
+    note: 'A sharper savory carrot, with parsley, mint, capers and anchovy. Same oven slot and the same hold at room temperature.'
   - slug: 'recipes/maple-cumin-roasted-carrots'
     course: 'backup side'
     backup: true
@@ -146,7 +151,6 @@ plan:
       - 'Gruyère: Comté, Emmental or an aged white cheddar.'
       - 'Goat cheese: crumbled feta or a mild blue.'
       - 'Rainbow carrots: orange carrots, or half carrots and half parsnips.'
-      - 'Anchovy fillets: 10 g / 2 tsp white miso in the salsa verde.'
       - 'Medium-grind cornmeal: medium-grind polenta, not instant.'
       - 'Freeze-dried strawberries: leave them out and make extra compote, as the tres leches page says.'
       - 'Crème fraîche, if the home batch fails or there is no time: a store-bought tub, or sour cream for the same tang.'
@@ -159,7 +163,7 @@ plan:
       - 'Turkey breast (replaces the pork): salt it Wednesday between 3:30 and 9:15 pm and refrigerate it uncovered on a rack (18 to 24 hours). On Thursday, start the gratin at 1:00 pm instead of 12:45. Take the turkey out at 2:40 pm, and at 3:00 pm make the herb butter and work it under the skin. When the carrots come out at about 3:30, roast the turkey 20 minutes at 220 °C / 425 °F, then at 165 °C / 325 °F to 65 °C inside, mixing the glaze meanwhile. Glaze and roast to 71 °C, about 4:35. Rest it 20 minutes. As it comes out, raise the oven to 220 °C and re-crisp the gratin on the top rack. Bake the cornbread before the turkey goes in, or choose the rolls. Dinner is at about 5:05.'
       - 'Beef Wellington (replaces the pork): salt the beef by 8 am Wednesday (or Tuesday night). Wednesday evening, sear it, make the duxelles, wrap it in prosciutto and duxelles, and make the jus base. On Thursday, wrap it in pastry by 3:00 pm and chill it. When the carrots come out at about 3:30, put a sheet pan in the 220 °C / 425 °F oven to heat. At 3:45 egg wash it, chill 5 minutes, wash again and score. Bake from 3:55 pm on the middle rack to 48 °C inside, checking from 4:25. Put the gratin on the top rack at 4:25, leaving room for the 14 cm tall Wellington. At 4:35 finish the jus. Rest the Wellington 10 minutes, then follow the main timeline from 4:45. With the Wellington, choose the rolls: the cornbread needs the top rack at the same time.'
       - 'Snapper (adds a pescatarian main): order two fish of 1.1 to 1.4 kg the week before, no longer than about 45 cm so both fit on a half sheet pan, and pick them up Wednesday. Cube the sourdough Wednesday and leave it out to stale. Make the stuffing Thursday morning and refrigerate it. At 3:15 pm salt the fish and refrigerate them on a rack. At 3:45 pm, once the carrots are out, rewarm the stuffing covered in its dish in the 220 °C oven to at least 60 °C. At 4:05 pm stuff the fish with the hot stuffing and roast them on the lower rack. The fish is done at 57 °C, and the stuffing in the cavity must reach 74 °C / 165 °F. With three dishes in the oven, everything takes about 5 minutes longer, so go by the thermometer and serve at about 5:10 pm.'
-      - 'Maple-cumin carrots or delicata squash (replace the savory carrots): roast them in the carrots'' 2:50 to 3:30 pm slot. For the squash, make the hot honey and toast the pepitas on Tuesday.'
+      - 'Salsa verde carrots, maple-cumin carrots or delicata squash (replace the garlic and thyme carrots): roast them in the carrots'' 2:50 to 3:30 pm slot. For the squash, make the hot honey and toast the pepitas on Tuesday.'
       - 'Sweet potato rolls (replace the bread): roast the sweet potato on Tuesday, then follow the Parker House schedule on Wednesday evening and Thursday morning. Take the butter for the honey butter out of the fridge 30 minutes before you beat it.'
       - 'Plain tres leches or pumpkin Basque cheesecake (replace the strawberry tres leches): bake the tres leches on Wednesday on the same schedule, or the cheesecake on Tuesday or Wednesday; it keeps 4 days. Take the cheesecake out of the fridge 1 hour before dessert.'
   - when: 'By Monday 23 November'
@@ -184,7 +188,6 @@ plan:
       - 'Rolls only: at about 8:30, take the rolls out of the fridge to proof 60 to 90 minutes. Bake them and cool them on a rack, then hold them under a clean tea towel. Finish by 11:30 so the oven is free.'
       - 'Scrub and cut the carrots. Peel and slice the apples, toss them with the lemon juice, and refrigerate them covered with a plate.'
       - 'Seed the pomegranate, and grate the gruyère, the parmigiano and (for the cornbread) the cheddar.'
-      - 'From 11:00, make the salsa verde without the lemon juice and keep it covered at room temperature.'
   - when: '12:15 to 2:40 pm'
     items:
       - 'Infuse the cream for the gratin.'
@@ -192,7 +195,7 @@ plan:
       - 'While the gratin bakes, from about 1:00 pm, spread the cold compote on the tres leches, whip the strawberry cream, spread it on, and return the cake to the fridge. The topping holds up to 6 hours, which covers dessert.'
   - when: '2:40 to 3:45 pm'
     items:
-      - 'Raise the oven to 220 °C / 425 °F with racks in the top and middle positions and the sheet pans inside. At about 2:50, roast the carrots 22 to 28 minutes, take them out at about 3:20 and dress them with half the salsa verde. Hold them at room temperature.'
+      - 'Raise the oven to 220 °C / 425 °F with racks in the top and middle positions and the sheet pans inside. At about 2:50, roast the carrots 22 to 28 minutes, take them out at about 3:20 and toss them with the garlic oil. Hold them at room temperature.'
       - 'At 3:15, take the pork out of the fridge. Cornbread: soak the cornmeal in the buttermilk, and at 3:25 put the cast iron skillet in the oven to heat while you brown the butter and mix the batter.'
       - 'At 3:30, start reheating the meatballs: add the held-back stock, cover, and warm over medium-low heat 45 to 60 minutes, stirring from the bottom every 10 minutes, until the largest reads 74 °C / 165 °F. Then hold them covered on low heat.'
       - 'At 3:45, take both cranberry sauces out of the fridge.'
@@ -206,7 +209,7 @@ plan:
       - 'Take out the gratin and turn the oven down to 190 °C / 375 °F. Rolls only: rewarm them loosely covered with foil for 4 to 5 minutes.'
       - 'Slice the pears and assemble the salad undressed.'
       - 'Toss the apples with the sugar, cornstarch and spice and top them with the crumble.'
-      - 'Stir the lemon juice into the rest of the salsa verde and spoon it over the carrots. Scatter parsley and the fried sage over the meatballs. Put both cranberry sauces and the jug of vinegar sauce on the table. Cut the cornbread into wedges. Dress the salad at the table.'
+      - 'Finish the carrots with the lemon juice, parsley and flaky salt. Scatter parsley and the fried sage over the meatballs. Put both cranberry sauces and the jug of vinegar sauce on the table. Cut the cornbread into wedges. Dress the salad at the table.'
   - when: 'At dinner'
     items:
       - 'As everyone sits down, put the crumble into the 190 °C oven for 45 to 55 minutes, then rest it at least 15 minutes, so it is warm for dessert.'
