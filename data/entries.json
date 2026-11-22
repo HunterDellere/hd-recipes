@@ -4,21 +4,632 @@
     "type": "hub",
     "category": "hubs",
     "title": "2026 Thanksgiving",
-    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, a sharp cranberry relish, creamy potatoes, a glazed root vegetable, an apple dessert) and adds cider-glazed ribs, smoked outside or baked the day before. Two mains, three sides, soft rolls and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
+    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, cranberry sauce, creamy potatoes, an apple dessert) and adds a bought smoked pork shoulder with a sharp vinegar sauce. Two mains, three sides, two cranberry sauces, a bread and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
     "tags": [
       "holiday"
     ],
     "status": "complete",
     "_slug": "thanksgiving-2026",
-    "updated": "2026-11-19",
+    "updated": "2026-11-22",
     "added": "2026-11-18",
     "_card": {
       "swatchIndex": 13,
       "swatchGlyph": "stack",
-      "memberCount": 18,
+      "memberCount": 23,
       "memberMix": {
-        "recipes": 18
+        "recipes": 23
       }
+    }
+  },
+  {
+    "path": "pages/recipes/cranberry-orange-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cranberry-orange sauce",
+    "desc": "The familiar whole-berry cranberry sauce, made in two stages. Two thirds of the berries cook until they burst and release their pectin, which sets the sauce. The last third goes in at the end and stays whole. Orange zest, fresh juice and a pinch of salt keep it bright rather than only sweet.",
+    "tags": [
+      "condiment",
+      "make-ahead",
+      "holiday",
+      "sweet",
+      "citrus"
+    ],
+    "status": "complete",
+    "_slug": "cranberry-orange-sauce",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 260,
+      "active_min": 20
+    },
+    "updated": "2026-11-22",
+    "diet": [
+      "vegan",
+      "gluten-free",
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "fresh or frozen cranberries",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "orange, zest and juice",
+        "slug": "orange",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [],
+    "equipment": [
+      "heavy-saucepan",
+      "microplane"
+    ],
+    "added": "2026-11-22",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 260,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "· 4 h rest",
+      "timeMode": "active",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/cumin-roasted-carrots-with-salsa-verde.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Cumin-roasted carrots with salsa verde",
+    "desc": "Carrots hard-roasted at 220 °C with toasted cumin until their edges caramelize, then dressed while warm in a salsa verde of parsley, mint, capers, anchovy, garlic and lemon. The savory version of a holiday carrot side: the carrots bring their own sweetness, and the herbs, salt and acid cut through rich mains and creamy sides.",
+    "tags": [
+      "side",
+      "roast",
+      "vegetable",
+      "holiday",
+      "herbaceous",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "cumin-roasted-carrots-with-salsa-verde",
+    "cuisine": "American",
+    "course": "side",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 50,
+      "active_min": 25
+    },
+    "updated": "2026-11-22",
+    "diet": [
+      "dairy-free",
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "carrots, rainbow or orange, medium thickness",
+        "slug": "carrot",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "cumin seeds",
+        "slug": "cumin-seeds",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, freshly ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "flat-leaf parsley, leaves and tender stems",
+        "slug": "parsley",
+        "optional": false
+      },
+      {
+        "item": "fresh mint leaves",
+        "slug": "mint",
+        "optional": false
+      },
+      {
+        "item": "capers, drained",
+        "slug": "capers",
+        "optional": false
+      },
+      {
+        "item": "anchovy fillets in oil",
+        "slug": "anchovy-fillets",
+        "optional": false
+      },
+      {
+        "item": "garlic clove",
+        "slug": "garlic",
+        "optional": false
+      },
+      {
+        "item": "lemon",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "red wine vinegar",
+        "slug": "red-wine-vinegar",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil, for the salsa verde",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": true
+      },
+      {
+        "item": "flaky salt",
+        "slug": "flaky-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-toasting",
+      "high-heat-dry-roasting"
+    ],
+    "equipment": [
+      "sheet-pan",
+      "mortar-and-pestle"
+    ],
+    "added": "2026-11-22",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 50,
+      "diffLabel": "easy",
+      "timeLead": "50 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 25,
+      "filterMinutes": 25
+    }
+  },
+  {
+    "path": "pages/recipes/jalapeno-cheddar-skillet-cornbread.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Jalapeño cheddar skillet cornbread",
+    "desc": "Buttermilk cornbread baked in a preheated cast iron skillet, so the bottom and edges fry crisp in brown butter. The cornmeal soaks in the buttermilk first for a tender crumb. Sharp cheddar, seeded jalapeño and corn kernels run through it, and honey keeps it lightly sweet.",
+    "tags": [
+      "bread",
+      "baked",
+      "holiday",
+      "side",
+      "spicy"
+    ],
+    "status": "complete",
+    "_slug": "jalapeno-cheddar-skillet-cornbread",
+    "cuisine": "American",
+    "course": "bread",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 20,
+      "cook_min": 25,
+      "total_min": 60,
+      "active_min": 20
+    },
+    "updated": "2026-11-22",
+    "diet": [
+      "vegetarian",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "yellow cornmeal, medium grind",
+        "optional": false
+      },
+      {
+        "item": "cultured buttermilk",
+        "slug": "buttermilk",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "baking soda",
+        "slug": "baking-soda",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large eggs",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "honey",
+        "slug": "honey",
+        "optional": false
+      },
+      {
+        "item": "sharp cheddar, coarsely grated",
+        "optional": false
+      },
+      {
+        "item": "jalapeños",
+        "slug": "jalapeno",
+        "optional": false
+      },
+      {
+        "item": "frozen corn kernels",
+        "optional": false
+      },
+      {
+        "item": "flaky salt",
+        "slug": "flaky-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "brown-butter"
+    ],
+    "equipment": [
+      "heavy-cast-iron-skillet"
+    ],
+    "added": "2026-11-22",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 60,
+      "diffLabel": "easy",
+      "timeLead": "1 h",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
+    }
+  },
+  {
+    "path": "pages/recipes/smoked-pork-shoulder.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Smoked pork shoulder",
+    "desc": "Pulled smoked pork shoulder finished with a cider vinegar sauce, in two versions. Buy it from a barbecue restaurant and reheat it with stock and the sauce, or dry-brine a bone-in Boston butt, smoke it at 121 °C until a probe slides in, rest it and pull it.",
+    "tags": [
+      "pork",
+      "smoky",
+      "holiday",
+      "make-ahead",
+      "weekend-project"
+    ],
+    "status": "complete",
+    "_slug": "smoked-pork-shoulder",
+    "cuisine": "American",
+    "course": "dinner",
+    "difficulty": "medium",
+    "servings": 8,
+    "time": {
+      "prep_min": 30,
+      "cook_min": 660,
+      "total_min": 2160,
+      "active_min": 60
+    },
+    "updated": "2026-11-22",
+    "diet": [
+      "dairy-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the sauce",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, coarsely ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "red pepper flakes",
+        "slug": "red-pepper-flakes",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "smoked pulled pork shoulder, unsauced",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, unsalted",
+        "optional": false
+      },
+      {
+        "item": "bone-in pork shoulder (Boston butt)",
+        "slug": "pork-shoulder",
+        "optional": false
+      },
+      {
+        "item": "kosher salt, for the dry brine",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "Dijon mustard",
+        "slug": "dijon-mustard",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar, for the rub",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "smoked paprika",
+        "slug": "smoked-paprika",
+        "optional": false
+      },
+      {
+        "item": "black pepper, for the rub",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "garlic powder",
+        "optional": false
+      },
+      {
+        "item": "dry mustard powder",
+        "optional": false
+      },
+      {
+        "item": "cayenne pepper",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar, for spritzing",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "hickory, oak or apple wood chunks",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "dry-brining"
+    ],
+    "equipment": [
+      "instant-read-thermometer",
+      "digital-scale"
+    ],
+    "added": "2026-11-22",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 2160,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "· 1 d rest",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
+    }
+  },
+  {
+    "path": "pages/recipes/strawberry-tres-leches-cake.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Strawberry tres leches cake",
+    "desc": "A separated-egg sponge soaked overnight in evaporated, condensed and whole milk, spread with a thick strawberry compote and topped with crème fraîche whipped cream colored and flavored with freeze-dried strawberry powder. Built for strawberries out of season: frozen berries cooked down and freeze-dried berries carry far more flavor than winter fresh ones.",
+    "tags": [
+      "cake",
+      "sweet",
+      "make-ahead",
+      "holiday",
+      "baked"
+    ],
+    "status": "complete",
+    "_slug": "strawberry-tres-leches-cake",
+    "cuisine": "Mexican",
+    "course": "dessert",
+    "difficulty": "medium",
+    "servings": 12,
+    "time": {
+      "prep_min": 40,
+      "cook_min": 45,
+      "total_min": 600,
+      "active_min": 60
+    },
+    "updated": "2026-11-22",
+    "diet": [
+      "vegetarian",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "frozen strawberries, unsweetened",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar (compote)",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "lemon juice",
+        "slug": "lemon",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (compote)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter, softened (for the pan)",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "baking powder",
+        "slug": "baking-powder",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "large eggs, separated",
+        "slug": "eggs",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "whole milk (batter)",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      },
+      {
+        "item": "evaporated milk",
+        "slug": "evaporated-milk",
+        "optional": false
+      },
+      {
+        "item": "sweetened condensed milk",
+        "slug": "sweetened-condensed-milk",
+        "optional": false
+      },
+      {
+        "item": "whole milk (soak)",
+        "slug": "whole-milk",
+        "optional": false
+      },
+      {
+        "item": "fine sea salt (soak)",
+        "slug": "fine-sea-salt",
+        "optional": false
+      },
+      {
+        "item": "freeze-dried strawberries",
+        "optional": false
+      },
+      {
+        "item": "heavy cream, cold",
+        "slug": "heavy-cream",
+        "optional": false
+      },
+      {
+        "item": "crème fraîche, cold",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar (topping)",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "fresh strawberries, for garnish",
+        "optional": true
+      }
+    ],
+    "techniques": [
+      "reduction"
+    ],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-22",
+    "_card": {
+      "swatchIndex": 4,
+      "swatchGlyph": "chili",
+      "totalMinutes": 600,
+      "diffLabel": "medium",
+      "timeLead": "1 h",
+      "timeAnnotation": "· overnight",
+      "timeMode": "active",
+      "activeMinutes": 60,
+      "filterMinutes": 60
     }
   },
   {
@@ -2439,7 +3050,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 41,
+      "usedInCount": 42,
       "hasNutrition": true
     }
   },
@@ -7282,7 +7893,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 14
+      "usedInCount": 15
     }
   },
   {
@@ -14823,7 +15434,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -16760,7 +17371,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "drop",
       "primaryTag": null,
-      "usedInCount": 21,
+      "usedInCount": 23,
       "hasNutrition": false
     }
   },
@@ -31079,7 +31690,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": false
     }
   },
@@ -31290,7 +31901,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "fire",
       "primaryTag": "pork",
-      "usedInCount": 7,
+      "usedInCount": 8,
       "hasNutrition": false
     }
   },
@@ -53750,7 +54361,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 26,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -57591,7 +58202,7 @@
       "swatchIndex": 9,
       "swatchGlyph": "fish",
       "primaryTag": "fish",
-      "usedInCount": 31,
+      "usedInCount": 32,
       "hasNutrition": false
     }
   },
@@ -57612,7 +58223,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": false
     }
   },
@@ -57738,7 +58349,7 @@
       "swatchIndex": 1,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": false
     }
   },
@@ -58004,7 +58615,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 33,
+      "usedInCount": 34,
       "hasNutrition": false
     }
   },
@@ -58373,7 +58984,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 41,
+      "usedInCount": 42,
       "hasNutrition": true
     }
   },
@@ -58451,7 +59062,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 124,
+      "usedInCount": 126,
       "hasNutrition": true
     }
   },
@@ -58619,7 +59230,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -58783,7 +59394,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 11,
+      "usedInCount": 12,
       "hasNutrition": true
     }
   },
@@ -58846,7 +59457,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 97,
+      "usedInCount": 98,
       "hasNutrition": true
     }
   },
@@ -59131,7 +59742,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 34,
+      "usedInCount": 36,
       "hasNutrition": false
     }
   },
@@ -59152,7 +59763,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": false
     }
   },
@@ -59255,7 +59866,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 26,
+      "usedInCount": 27,
       "hasNutrition": true
     }
   },
@@ -63856,7 +64467,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 41
+      "usedInCount": 42
     }
   },
   {
@@ -63914,7 +64525,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "fire",
-      "usedInCount": 27
+      "usedInCount": 28
     }
   },
   {
@@ -64401,7 +65012,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 26,
+      "usedInCount": 27,
       "hasNutrition": false
     }
   },
@@ -64512,7 +65123,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 131,
+      "usedInCount": 132,
       "hasNutrition": true
     }
   },
@@ -71651,7 +72262,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 80,
+      "usedInCount": 82,
       "hasNutrition": true
     }
   },
@@ -71670,7 +72281,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 186,
+      "usedInCount": 188,
       "hasNutrition": true
     }
   },
@@ -71708,7 +72319,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 115,
+      "usedInCount": 117,
       "hasNutrition": true
     }
   },
@@ -71809,7 +72420,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": "egg",
-      "usedInCount": 117,
+      "usedInCount": 119,
       "hasNutrition": true
     }
   },
@@ -71828,7 +72439,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -71847,7 +72458,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 278,
+      "usedInCount": 279,
       "hasNutrition": true
     }
   },
@@ -71866,7 +72477,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 20,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -71887,7 +72498,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 85,
+      "usedInCount": 86,
       "hasNutrition": true
     }
   },
@@ -72114,7 +72725,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 5,
+      "usedInCount": 6,
       "hasNutrition": true
     }
   },
@@ -72174,7 +72785,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 57,
+      "usedInCount": 58,
       "hasNutrition": true
     }
   },
@@ -72919,7 +73530,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 50
+      "usedInCount": 54
     }
   },
   {
@@ -73334,7 +73945,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 19,
+      "usedInCount": 21,
       "hasNutrition": true
     }
   },
@@ -73353,7 +73964,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 25,
+      "usedInCount": 26,
       "hasNutrition": true
     }
   },
@@ -73471,7 +74082,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 215,
+      "usedInCount": 217,
       "hasNutrition": true
     }
   },
@@ -73509,7 +74120,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 136,
+      "usedInCount": 138,
       "hasNutrition": true
     }
   },
@@ -73528,7 +74139,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 30,
+      "usedInCount": 31,
       "hasNutrition": true
     }
   },
@@ -73547,7 +74158,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 293,
+      "usedInCount": 296,
       "hasNutrition": true
     }
   },
@@ -74738,7 +75349,7 @@
     "_card": {
       "swatchIndex": 2,
       "swatchGlyph": "whisk",
-      "usedInCount": 24
+      "usedInCount": 25
     }
   },
   {
@@ -74789,7 +75400,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 34
+      "usedInCount": 35
     }
   },
   {
