@@ -248,8 +248,8 @@ homemade_alternatives:
 homemade_exempt: ['smoked pulled pork shoulder, unsauced']
 
 pairings:
-  - recipe: 'recipes/apricot-sauce'
-    reason: 'Apricot and pork are a classic pairing; the sweet fruit rounds out the smoke and the fat.'
+  - recipe: 'recipes/tart-cherry-sauce'
+    reason: 'Cherry and pork are a classic pairing; the sweet fruit rounds out the smoke and the fat.'
   - recipe: 'recipes/hasselback-potato-gratin'
     reason: 'Cream and gruyère soak up the pork juices and the vinegar sauce.'
   - recipe: 'recipes/jalapeno-cheddar-skillet-cornbread'

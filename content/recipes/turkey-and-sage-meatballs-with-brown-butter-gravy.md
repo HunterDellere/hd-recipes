@@ -225,7 +225,7 @@ steps:
     time_min: 60
   - text: 'Reheat on the day. Scrape the meatballs and gravy into the wide braiser and pour the 120 g / ½ cup held-back chicken stock around them. Cover and set over medium-low heat 45 to 60 minutes, stirring gently from the bottom with a wooden spoon every 10 minutes so the gravy does not scorch, until the gravy is loose and simmering at the edges and the center of the largest meatball reads 74 °C / 165 °F. If the gravy is still too thick to pour, add water 30 g / 2 tbsp at a time. Hold covered on low heat, at or above 60 °C / 140 °F, until serving.'
     time_min: 40
-  - text: 'Serve. Scatter the 10 g / ⅓ cup chopped parsley and the fried sage leaves over the top and serve from the braiser, with the apricot sauce or a cranberry sauce alongside. The fruit sauce supplies the sweetness and the touch of acid that the gravy leaves out on purpose.'
+  - text: 'Serve. Scatter the 10 g / ⅓ cup chopped parsley and the fried sage leaves over the top and serve from the braiser, with a fruit sauce such as the cranberry-orange sauce or the tart cherry sauce alongside. The fruit sauce supplies the sweetness and the touch of acid that the gravy leaves out on purpose.'
     time_min: 2
 
 techniques: ['sweating', 'myosin-extraction', 'high-heat-dry-roasting', 'deglazing', 'brown-butter']
@@ -262,8 +262,8 @@ homemade_alternatives:
 homemade_exempt: ['whole milk, cold', 'unflavored powdered gelatin', 'sourdough bread, crusts removed', 'unsalted butter (aromatics)', 'shallot, fine-minced', 'garlic cloves, grated', 'ground turkey, 85/15 or 93/7 thigh blend', 'large eggs', 'parmigiano reggiano, finely grated', 'fresh sage, finely chopped', 'fresh thyme leaves', 'light soy sauce', 'lemon zest', 'kosher salt', 'black pepper, freshly ground', 'neutral oil (refined avocado, rice bran, or grapeseed)', 'unsalted butter (gravy)', 'fresh sage leaves, whole', 'all-purpose flour', 'light soy sauce (gravy)', 'apple cider vinegar', 'kosher salt (gravy)', 'black pepper (gravy)', 'flat-leaf parsley, chopped']
 
 pairings:
-  - recipe: 'recipes/apricot-sauce'
-    reason: 'A sweet, mellow fruit sauce beside the savory gravy.'
+  - recipe: 'recipes/tart-cherry-sauce'
+    reason: 'Sweet, gently tart cherry beside the savory gravy.'
   - recipe: 'recipes/cranberry-orange-sauce'
     reason: 'Cranberry and sage gravy are the pairing a Thanksgiving table expects.'
   - recipe: 'recipes/hasselback-potato-gratin'

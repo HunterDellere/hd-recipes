@@ -4,7 +4,7 @@
     "type": "hub",
     "category": "hubs",
     "title": "2026 Thanksgiving",
-    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, cranberry sauce, creamy potatoes, an apple dessert) and adds a bought smoked pork shoulder with a sharp vinegar sauce. Two mains, three sides, apricot and cranberry sauces, a bread and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
+    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, cranberry sauce, creamy potatoes, an apple dessert) and adds a bought smoked pork shoulder with a sharp vinegar sauce. Two mains, three sides, cranberry sauce, Parker House rolls and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
     "tags": [
       "holiday"
     ],
@@ -22,20 +22,19 @@
     }
   },
   {
-    "path": "pages/recipes/apricot-sauce.html",
+    "path": "pages/recipes/brown-gravy.html",
     "type": "recipe",
     "category": "recipes",
-    "title": "Apricot sauce",
-    "desc": "Dried apricots simmered soft in water with a little brown sugar and cider vinegar, mashed to a thick, spoonable sauce and finished with butter. Sweet, mellow and golden, with just enough acid to cut rich meat. It goes with roast pork, turkey and ham, and it tastes like apricot preserves made for the dinner plate.",
+    "title": "Brown gravy",
+    "desc": "A classic brown gravy built on a butter roux cooked to the color of peanut butter, softened onion and unsalted stock, colored and seasoned with a spoonful of soy sauce. It needs no roast drippings, so it can be made days ahead, and it suits pork, turkey, meatballs and mashed potatoes.",
     "tags": [
-      "condiment",
       "make-ahead",
       "holiday",
-      "sweet",
-      "pantry"
+      "comfort",
+      "umami"
     ],
     "status": "complete",
-    "_slug": "apricot-sauce",
+    "_slug": "brown-gravy",
     "cuisine": "American",
     "course": "sauce",
     "difficulty": "easy",
@@ -44,7 +43,89 @@
       "prep_min": 5,
       "cook_min": 25,
       "total_min": 30,
-      "active_min": 10
+      "active_min": 30
+    },
+    "updated": "2026-11-24",
+    "diet": [
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "yellow onion, finely minced",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "all-purpose flour",
+        "slug": "all-purpose-flour",
+        "optional": false
+      },
+      {
+        "item": "chicken stock, unsalted",
+        "optional": false
+      },
+      {
+        "item": "light soy sauce",
+        "slug": "light-soy-sauce",
+        "optional": false
+      },
+      {
+        "item": "black pepper, finely ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "sweating"
+    ],
+    "equipment": [],
+    "added": "2026-11-24",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 30,
+      "filterMinutes": 30
+    }
+  },
+  {
+    "path": "pages/recipes/caramelized-onion-jam.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Caramelized onion jam",
+    "desc": "Yellow onions cooked slowly in butter until deep amber and soft, then simmered with brown sugar and cider vinegar until thick and spoonable. Savory and sweet at once, it goes with roast pork, turkey, burgers and cheese, and on warm bread.",
+    "tags": [
+      "condiment",
+      "make-ahead",
+      "holiday",
+      "sweet",
+      "umami"
+    ],
+    "status": "complete",
+    "_slug": "caramelized-onion-jam",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 15,
+      "cook_min": 70,
+      "total_min": 85,
+      "active_min": 30
     },
     "updated": "2026-11-24",
     "diet": [
@@ -54,7 +135,23 @@
     ],
     "ingredients": [
       {
-        "item": "dried apricots",
+        "item": "yellow onions",
+        "slug": "yellow-onion",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "slug": "extra-virgin-olive-oil",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
         "optional": false
       },
       {
@@ -72,24 +169,14 @@
         "optional": false
       },
       {
-        "item": "kosher salt",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
         "item": "black pepper, finely ground",
         "slug": "black-pepper",
-        "optional": false
-      },
-      {
-        "item": "unsalted butter",
-        "slug": "butter",
         "optional": false
       }
     ],
     "techniques": [
-      "simmering",
-      "reduction"
+      "sweating",
+      "deglazing"
     ],
     "equipment": [
       "heavy-saucepan"
@@ -98,13 +185,13 @@
     "_card": {
       "swatchIndex": 1,
       "swatchGlyph": "skillet",
-      "totalMinutes": 30,
+      "totalMinutes": 85,
       "diffLabel": "easy",
-      "timeLead": "30 min",
+      "timeLead": "1 h 25 min",
       "timeAnnotation": "",
       "timeMode": "total",
-      "activeMinutes": 10,
-      "filterMinutes": 10
+      "activeMinutes": 30,
+      "filterMinutes": 30
     }
   },
   {
@@ -207,6 +294,94 @@
       "timeMode": "active",
       "activeMinutes": 35,
       "filterMinutes": 35
+    }
+  },
+  {
+    "path": "pages/recipes/tart-cherry-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Tart cherry sauce",
+    "desc": "Frozen tart cherries simmered with sugar until they slump and release their juice, then thickened to a glossy sauce with a cornstarch slurry and finished with butter and a little vanilla. Sweet, round and gently tart, it goes with roast pork, turkey, ham and duck.",
+    "tags": [
+      "condiment",
+      "make-ahead",
+      "holiday",
+      "sweet"
+    ],
+    "status": "complete",
+    "_slug": "tart-cherry-sauce",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 15,
+      "total_min": 20,
+      "active_min": 20
+    },
+    "updated": "2026-11-24",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "frozen pitted tart cherries",
+        "optional": false
+      },
+      {
+        "item": "granulated sugar",
+        "slug": "granulated-sugar",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "cornstarch",
+        "slug": "cornstarch",
+        "optional": false
+      },
+      {
+        "item": "cold water (slurry)",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      },
+      {
+        "item": "vanilla bean paste",
+        "slug": "vanilla-bean-paste",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "simmering"
+    ],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-24",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 20,
+      "diffLabel": "easy",
+      "timeLead": "20 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 20,
+      "filterMinutes": 20
     }
   },
   {
@@ -3348,7 +3523,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 42,
+      "usedInCount": 43,
       "hasNutrition": true
     }
   },
@@ -8191,7 +8366,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 16
+      "usedInCount": 15
     }
   },
   {
@@ -8242,7 +8417,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 19
+      "usedInCount": 21
     }
   },
   {
@@ -54680,7 +54855,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 16,
+      "usedInCount": 17,
       "hasNutrition": true
     }
   },
@@ -60499,7 +60674,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 109,
+      "usedInCount": 111,
       "hasNutrition": true
     }
   },
@@ -65421,7 +65596,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 134,
+      "usedInCount": 135,
       "hasNutrition": true
     }
   },
@@ -72560,7 +72735,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 82,
+      "usedInCount": 83,
       "hasNutrition": true
     }
   },
@@ -72579,7 +72754,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 191,
+      "usedInCount": 192,
       "hasNutrition": true
     }
   },
@@ -72617,7 +72792,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 118,
+      "usedInCount": 120,
       "hasNutrition": true
     }
   },
@@ -72796,7 +72971,7 @@
       "swatchIndex": 2,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 86,
+      "usedInCount": 87,
       "hasNutrition": true
     }
   },
@@ -73828,7 +74003,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 56
+      "usedInCount": 58
     }
   },
   {
@@ -74418,7 +74593,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 138,
+      "usedInCount": 139,
       "hasNutrition": true
     }
   },
@@ -74456,7 +74631,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 299,
+      "usedInCount": 301,
       "hasNutrition": true
     }
   },
@@ -75681,7 +75856,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 37
+      "usedInCount": 38
     }
   },
   {
