@@ -1,5 +1,91 @@
 [
   {
+    "path": "pages/recipes/apricot-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Apricot sauce",
+    "desc": "Dried apricots simmered soft in water with a little brown sugar and cider vinegar, mashed to a thick, spoonable sauce and finished with butter. Sweet, mellow and golden, with just enough acid to cut rich meat. It goes with roast pork, turkey and ham, and it tastes like apricot preserves made for the dinner plate.",
+    "tags": [
+      "condiment",
+      "make-ahead",
+      "holiday",
+      "sweet",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "apricot-sauce",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 25,
+      "total_min": 30,
+      "active_min": 10
+    },
+    "updated": "2026-11-24",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried apricots",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, finely ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "simmering",
+      "reduction"
+    ],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-24",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
+    }
+  },
+  {
     "path": "pages/recipes/cranberry-shallot-agrodolce.html",
     "type": "recipe",
     "category": "recipes",
@@ -2896,300 +2982,6 @@
       "timeMode": "active",
       "activeMinutes": 15,
       "filterMinutes": 15
-    }
-  },
-  {
-    "path": "pages/recipes/temaki-hand-rolls.html",
-    "type": "recipe",
-    "category": "recipes",
-    "title": "Temaki (hand rolls)",
-    "desc": "A make-your-own sushi night: a bowl of warm seasoned sushi rice, crisp half-sheets of nori, and a spread of fish, cooked proteins, vegetables, and sauces that everyone rolls into cones at the table. Pick your fillings in the picker and the ingredients, shopping list, and method adapt to match; the notes give a protein guide, tested combinations, and the pairing logic so you can improvise.",
-    "tags": [
-      "japanese",
-      "fish",
-      "seafood",
-      "rice",
-      "share-plate",
-      "wrap"
-    ],
-    "status": "complete",
-    "_slug": "temaki-hand-rolls",
-    "cuisine": "Japanese",
-    "course": "dinner",
-    "difficulty": "easy",
-    "servings": 4,
-    "time": {
-      "prep_min": 45,
-      "cook_min": 20,
-      "total_min": 110,
-      "active_min": 60
-    },
-    "updated": "2026-11-11",
-    "diet": [
-      "pescatarian",
-      "dairy-free"
-    ],
-    "ingredients": [
-      {
-        "item": "sushi rice",
-        "optional": false
-      },
-      {
-        "item": "toasted nori sheets (yaki-nori)",
-        "slug": "nori",
-        "optional": false
-      },
-      {
-        "item": "water (for tezu hand water)",
-        "slug": "water",
-        "optional": false
-      },
-      {
-        "item": "rice vinegar (for tezu hand water)",
-        "slug": "rice-vinegar",
-        "optional": false
-      },
-      {
-        "item": "tuna (yellowfin or bigeye), sashimi-grade",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "tuna for spicy tuna, sashimi-grade",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "spicy mayo (for the spicy tuna)",
-        "optional": false
-      },
-      {
-        "item": "scallion (for the spicy tuna)",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "salmon, sashimi-grade",
-        "optional": false
-      },
-      {
-        "item": "yellowtail (hamachi), sashimi-grade",
-        "optional": false
-      },
-      {
-        "item": "sea scallops (hotate), sashimi-grade, dry-packed",
-        "optional": false
-      },
-      {
-        "item": "Kewpie mayonnaise (for spicy scallop)",
-        "slug": "mayonnaise",
-        "optional": false
-      },
-      {
-        "item": "tobiko (for spicy scallop)",
-        "optional": false
-      },
-      {
-        "item": "tuna for zuke, sashimi-grade",
-        "slug": "tuna-loin",
-        "optional": false
-      },
-      {
-        "item": "Japanese soy sauce (for the zuke marinade)",
-        "optional": false
-      },
-      {
-        "item": "mirin (for the zuke marinade)",
-        "slug": "mirin",
-        "optional": false
-      },
-      {
-        "item": "sake (for the zuke marinade)",
-        "slug": "sake",
-        "optional": false
-      },
-      {
-        "item": "cold-smoked salmon (lox-style)",
-        "optional": false
-      },
-      {
-        "item": "ikura (cured salmon roe)",
-        "optional": false
-      },
-      {
-        "item": "large shrimp, peeled and deveined",
-        "slug": "shrimp",
-        "optional": false
-      },
-      {
-        "item": "kosher salt (for the shrimp poaching water)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "shrimp tempura",
-        "optional": false
-      },
-      {
-        "item": "cooked crab meat (lump blue crab or Dungeness)",
-        "optional": false
-      },
-      {
-        "item": "Kewpie mayonnaise (for the crab)",
-        "slug": "mayonnaise",
-        "optional": false
-      },
-      {
-        "item": "salmon skin",
-        "optional": false
-      },
-      {
-        "item": "kosher salt (for the salmon skin)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "unagi kabayaki (grilled eel), with its sauce packet",
-        "optional": false
-      },
-      {
-        "item": "boneless, skin-on chicken thighs",
-        "slug": "chicken-thigh",
-        "optional": false
-      },
-      {
-        "item": "kosher salt (for the chicken)",
-        "slug": "kosher-salt",
-        "optional": false
-      },
-      {
-        "item": "neutral oil (for searing the chicken)",
-        "slug": "neutral-oil",
-        "optional": false
-      },
-      {
-        "item": "Japanese soy sauce (for the teriyaki glaze)",
-        "optional": false
-      },
-      {
-        "item": "mirin (for the teriyaki glaze)",
-        "slug": "mirin",
-        "optional": false
-      },
-      {
-        "item": "sake (for the teriyaki glaze)",
-        "slug": "sake",
-        "optional": false
-      },
-      {
-        "item": "granulated sugar (for the teriyaki glaze)",
-        "slug": "granulated-sugar",
-        "optional": false
-      },
-      {
-        "item": "tamagoyaki (Japanese rolled omelet)",
-        "optional": false
-      },
-      {
-        "item": "inari age (seasoned fried tofu pouches)",
-        "slug": "aburaage",
-        "optional": false
-      },
-      {
-        "item": "natto, with its sauce and mustard packets",
-        "optional": false
-      },
-      {
-        "item": "scallion (for the natto)",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "Japanese or Persian cucumber",
-        "slug": "cucumber",
-        "optional": false
-      },
-      {
-        "item": "ripe Hass avocado",
-        "slug": "avocado",
-        "optional": false
-      },
-      {
-        "item": "lemon (juice, to keep the avocado green)",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "lemon (wedges, for salmon and yellowtail)",
-        "slug": "lemon",
-        "optional": false
-      },
-      {
-        "item": "scallions",
-        "slug": "scallion",
-        "optional": false
-      },
-      {
-        "item": "shiso leaves",
-        "optional": false
-      },
-      {
-        "item": "kaiware (daikon radish sprouts)",
-        "optional": false
-      },
-      {
-        "item": "ripe mango",
-        "slug": "mango",
-        "optional": false
-      },
-      {
-        "item": "Japanese soy sauce (koikuchi shoyu)",
-        "optional": false
-      },
-      {
-        "item": "wasabi",
-        "optional": false
-      },
-      {
-        "item": "pickled ginger (gari)",
-        "optional": false
-      },
-      {
-        "item": "toasted sesame seeds",
-        "slug": "sesame-seeds",
-        "optional": false
-      },
-      {
-        "item": "spicy mayo (sriracha mayo)",
-        "optional": false
-      },
-      {
-        "item": "Kewpie mayonnaise (for drizzling)",
-        "slug": "mayonnaise",
-        "optional": false
-      },
-      {
-        "item": "tobiko (flying fish roe)",
-        "optional": false
-      },
-      {
-        "item": "furikake",
-        "optional": false
-      }
-    ],
-    "techniques": [],
-    "equipment": [],
-    "added": "2026-11-11",
-    "_card": {
-      "swatchIndex": 10,
-      "swatchGlyph": "bowl",
-      "totalMinutes": 110,
-      "diffLabel": "easy",
-      "timeLead": "1 h 50 min",
-      "timeAnnotation": "",
-      "timeMode": "total",
-      "activeMinutes": 60,
-      "filterMinutes": 60
     }
   }
 ]

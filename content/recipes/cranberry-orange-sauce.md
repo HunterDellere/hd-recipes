@@ -80,8 +80,8 @@ modifications:
     kind: 'occasion'
 
 pairings:
-  - recipe: 'recipes/cranberry-shallot-agrodolce'
-    reason: 'The agrodolce is savory and sharp, this sauce is sweet and mild; put both on the table and guests choose.'
+  - recipe: 'recipes/apricot-sauce'
+    reason: 'One golden and mellow, one red and tart; put both on the table and guests choose.'
   - recipe: 'recipes/turkey-and-sage-meatballs-with-brown-butter-gravy'
     reason: 'Cranberry and sage gravy are the pairing a Thanksgiving table expects.'
 

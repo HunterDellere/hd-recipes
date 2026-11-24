@@ -248,8 +248,8 @@ homemade_alternatives:
 homemade_exempt: ['smoked pulled pork shoulder, unsauced']
 
 pairings:
-  - recipe: 'recipes/cranberry-shallot-agrodolce'
-    reason: 'Sweet and sour with savory shallot, it cuts the pork fat the way the vinegar sauce does.'
+  - recipe: 'recipes/apricot-sauce'
+    reason: 'Apricot and pork are a classic pairing; the sweet fruit rounds out the smoke and the fat.'
   - recipe: 'recipes/hasselback-potato-gratin'
     reason: 'Cream and gruyère soak up the pork juices and the vinegar sauce.'
   - recipe: 'recipes/jalapeno-cheddar-skillet-cornbread'

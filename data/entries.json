@@ -4,7 +4,7 @@
     "type": "hub",
     "category": "hubs",
     "title": "2026 Thanksgiving",
-    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, cranberry sauce, creamy potatoes, an apple dessert) and adds a bought smoked pork shoulder with a sharp vinegar sauce. Two mains, three sides, two cranberry sauces, a bread and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
+    "desc": "Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, cranberry sauce, creamy potatoes, an apple dessert) and adds a bought smoked pork shoulder with a sharp vinegar sauce. Two mains, three sides, apricot and cranberry sauces, a bread and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.",
     "tags": [
       "holiday"
     ],
@@ -15,10 +15,96 @@
     "_card": {
       "swatchIndex": 13,
       "swatchGlyph": "stack",
-      "memberCount": 24,
+      "memberCount": 26,
       "memberMix": {
-        "recipes": 24
+        "recipes": 26
       }
+    }
+  },
+  {
+    "path": "pages/recipes/apricot-sauce.html",
+    "type": "recipe",
+    "category": "recipes",
+    "title": "Apricot sauce",
+    "desc": "Dried apricots simmered soft in water with a little brown sugar and cider vinegar, mashed to a thick, spoonable sauce and finished with butter. Sweet, mellow and golden, with just enough acid to cut rich meat. It goes with roast pork, turkey and ham, and it tastes like apricot preserves made for the dinner plate.",
+    "tags": [
+      "condiment",
+      "make-ahead",
+      "holiday",
+      "sweet",
+      "pantry"
+    ],
+    "status": "complete",
+    "_slug": "apricot-sauce",
+    "cuisine": "American",
+    "course": "sauce",
+    "difficulty": "easy",
+    "servings": 8,
+    "time": {
+      "prep_min": 5,
+      "cook_min": 25,
+      "total_min": 30,
+      "active_min": 10
+    },
+    "updated": "2026-11-24",
+    "diet": [
+      "vegetarian",
+      "gluten-free",
+      "nut-free"
+    ],
+    "ingredients": [
+      {
+        "item": "dried apricots",
+        "optional": false
+      },
+      {
+        "item": "water",
+        "optional": false
+      },
+      {
+        "item": "light brown sugar",
+        "slug": "light-brown-sugar",
+        "optional": false
+      },
+      {
+        "item": "apple cider vinegar",
+        "slug": "apple-cider-vinegar",
+        "optional": false
+      },
+      {
+        "item": "kosher salt",
+        "slug": "kosher-salt",
+        "optional": false
+      },
+      {
+        "item": "black pepper, finely ground",
+        "slug": "black-pepper",
+        "optional": false
+      },
+      {
+        "item": "unsalted butter",
+        "slug": "butter",
+        "optional": false
+      }
+    ],
+    "techniques": [
+      "simmering",
+      "reduction"
+    ],
+    "equipment": [
+      "heavy-saucepan"
+    ],
+    "added": "2026-11-24",
+    "_card": {
+      "swatchIndex": 1,
+      "swatchGlyph": "skillet",
+      "totalMinutes": 30,
+      "diffLabel": "easy",
+      "timeLead": "30 min",
+      "timeAnnotation": "",
+      "timeMode": "total",
+      "activeMinutes": 10,
+      "filterMinutes": 10
     }
   },
   {
@@ -8105,7 +8191,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 15
+      "usedInCount": 16
     }
   },
   {
@@ -8139,7 +8225,7 @@
     "_card": {
       "swatchIndex": 0,
       "swatchGlyph": "whisk",
-      "usedInCount": 16
+      "usedInCount": 17
     }
   },
   {
@@ -58435,7 +58521,7 @@
       "swatchIndex": 11,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 23,
+      "usedInCount": 24,
       "hasNutrition": false
     }
   },
@@ -72493,7 +72579,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 190,
+      "usedInCount": 191,
       "hasNutrition": true
     }
   },
@@ -72531,7 +72617,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 117,
+      "usedInCount": 118,
       "hasNutrition": true
     }
   },
@@ -72689,7 +72775,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 22,
+      "usedInCount": 23,
       "hasNutrition": true
     }
   },
@@ -73742,7 +73828,7 @@
     "_card": {
       "swatchIndex": 8,
       "swatchGlyph": "globe",
-      "usedInCount": 55
+      "usedInCount": 56
     }
   },
   {
@@ -74370,7 +74456,7 @@
       "swatchIndex": 7,
       "swatchGlyph": "jar",
       "primaryTag": null,
-      "usedInCount": 298,
+      "usedInCount": 299,
       "hasNutrition": true
     }
   },
