@@ -6,9 +6,9 @@ content_review: 'pending'
 
 title: '2026 Thanksgiving'
 desc: 'Thursday 26 November 2026, for 6 adults and a child. A Thanksgiving that keeps the familiar notes (turkey with sage gravy, cranberry sauce, creamy potatoes, an apple dessert) and adds a bought smoked pork shoulder with a sharp vinegar sauce. Two mains, three sides, two cranberry sauces, a bread and two desserts. One oven, with the meatballs, the cake and every sauce made before Thursday.'
-metaDesc: '2026 Thanksgiving menu for 6 adults and a child: smoked pork shoulder, turkey and sage meatballs in brown butter gravy, Hasselback gratin, savory carrots, pear salad, two cranberry sauces, cornbread or rolls, apple crumble, strawberry tres leches.'
+metaDesc: '2026 Thanksgiving menu for 6 adults and a child: smoked pork shoulder, turkey and sage meatballs in brown butter gravy, Hasselback gratin, savory carrots, pear salad, two cranberry sauces, cornbread or rolls, apple crumble, cinnamon tres leches.'
 tags: ['holiday']
-updated: '2026-11-22'
+updated: '2026-11-24'
 shopping_list: true
 
 members:
@@ -45,14 +45,14 @@ members:
     course: 'dessert'
     label: 'Apple crumble with brown butter oat topping'
     note: 'The warm dessert. It goes into the oven as everyone sits down and comes out warm for dessert.'
-  - slug: 'recipes/strawberry-tres-leches-cake'
+  - slug: 'recipes/tres-leches-cake'
     course: 'dessert'
-    label: 'Strawberry tres leches cake'
-    note: 'The cold dessert, baked and soaked the day before. Made with frozen and freeze-dried strawberries, because fresh ones are poor in November. Optional: the crumble is enough dessert on its own.'
-  - slug: 'recipes/cranberry-mostarda'
+    label: 'Tres leches cake'
+    note: 'The cold dessert, baked and soaked the day before in a cinnamon-steeped milk, with crème fraîche cream and a dusting of cinnamon. No fruit to source. Optional: the crumble is enough dessert on its own.'
+  - slug: 'recipes/cranberry-shallot-agrodolce'
     course: 'made at home'
-    label: 'Cranberry mostarda'
-    note: 'Cranberry sauce 1, for the pork and the meatballs: sharp, sweet and mustard-hot. Made up to a week ahead; it needs at least 12 hours in the fridge.'
+    label: 'Cranberry and shallot agrodolce'
+    note: 'Cranberry sauce 1, for the pork and the meatballs: sweet, then sour, with golden shallot and rosemary. No mustard and no heat. Made up to a week ahead; it needs at least 4 hours in the fridge.'
   - slug: 'recipes/cranberry-orange-sauce'
     course: 'made at home'
     label: 'Cranberry-orange sauce'
@@ -111,11 +111,11 @@ members:
     backup: true
     label: 'Sweet potato dinner rolls with honey butter'
     note: 'Same schedule as the Parker House rolls: shaped Wednesday night, baked Thursday morning.'
-  - slug: 'recipes/tres-leches-cake'
+  - slug: 'recipes/strawberry-tres-leches-cake'
     course: 'backup dessert'
     backup: true
-    label: 'Tres leches cake'
-    note: 'The plain cinnamon tres leches, if you want the cake without strawberry. Same day-before schedule.'
+    label: 'Strawberry tres leches cake'
+    note: 'The fruit version, with a frozen-strawberry compote and freeze-dried strawberry cream. Same day-before schedule, if good strawberries turn up.'
   - slug: 'recipes/pumpkin-basque-cheesecake'
     course: 'backup dessert'
     backup: true
@@ -126,25 +126,26 @@ plan:
   - when: 'Decide by Tuesday'
     items:
       - 'Bread: the cornbread (made Thursday afternoon, best with the pork) or the Parker House rolls (dough Wednesday night, baked Thursday morning, best with the gravy). On this page, switch on the one you choose and the shopping list follows.'
-      - 'Second dessert: the strawberry tres leches is baked on Wednesday. If you skip it, the crème fraîche is only needed for the crumble.'
-      - 'Second cranberry sauce: the cranberry-orange sauce takes 20 minutes and keeps 5 days. Make it if a child or a traditionalist will want a sauce without mustard heat.'
+      - 'Second dessert: the tres leches is baked on Wednesday. If you skip it, the crème fraîche is only needed for the crumble.'
+      - 'Second cranberry sauce: the cranberry-orange sauce takes 20 minutes and keeps 5 days. Make it if a child or a traditionalist will want a plain sweet sauce; the agrodolce has shallot and vinegar in it.'
   - when: 'Shopping notes'
     items:
       - 'Order the pork today or Monday: 1.4 kg / 3 lb of pulled smoked pork shoulder, unsauced, with the bark mixed in and the juices in the container. Barbecue restaurants take holiday orders days ahead and many sell out. Pick it up on Wednesday.'
       - 'Buy ground turkey from thigh meat or an 85/15 or 93/7 blend. Avoid 99% lean breast, which stays dry even with the gelatin.'
       - 'Buy the cream for the crème fraîche as pasteurized, not ultra-pasteurized, if your store has it, and check that the buttermilk says "live cultures".'
-      - 'For the tres leches, buy frozen strawberries and freeze-dried strawberries, not fresh. Fresh strawberries are only an optional garnish.'
+      - 'For the tres leches, buy a cinnamon stick for the soak, Ceylon (canela) if your store has it. For the agrodolce, buy one more large shallot and a small package of fresh rosemary.'
   - when: 'For 6 adults and a child'
     items:
       - 'No recipe needs scaling. Every dish is written for 8, and with two mains on the table that leaves a margin of about a fifth for seconds and leftovers. 1.4 kg of pulled pork is about 200 g per adult beside the meatballs, so expect leftovers.'
-      - 'For the child: the meatballs, gratin, carrots, pork and bread are the easy plate. The cranberry-orange sauce has no heat. Serve the mostarda on the side, because it has real mustard heat. The pork vinegar sauce has only ½ tsp pepper flakes and can be made without them. The jalapeños in the cornbread are seeded and mild; for no heat at all, use the mild version on the cornbread page. The Wellington jus, the coq au vin and the beef braise are made with wine or beer, and cooking removes most but not all of the alcohol; the beef recipe has an alcohol-free version.'
+      - 'For the child: the meatballs, gratin, carrots, pork and bread are the easy plate. Neither cranberry sauce has any heat: the agrodolce is savory and sharper, the cranberry-orange sauce sweet and mild. The pork vinegar sauce has only ½ tsp pepper flakes and can be made without them. The jalapeños in the cornbread are seeded and mild; for no heat at all, use the mild version on the cornbread page. The Wellington jus, the coq au vin and the beef braise are made with wine or beer, and cooking removes most but not all of the alcohol; the beef recipe has an alcohol-free version.'
   - when: 'If you cannot find it'
     items:
       - 'Smoked pork shoulder: if no restaurant can take the order, buy smoked pulled pork in tubs from a supermarket deli; if it is sauced, serve the vinegar sauce on the side. If there is none, make the braised beef chuck from the Backups.'
       - 'Ground turkey: ground chicken thigh, same weight and method.'
       - 'Fresh sage: dried rubbed sage, 3 g / 1¼ tbsp in the meatballs. Skip the fried-leaf garnish.'
-      - 'Fresh cranberries: frozen cranberries work without thawing in both sauces. If there are none at all, the mostarda recipe gives a dried tart cherry version.'
-      - 'Brown mustard seeds: use all yellow mustard seeds in the mostarda.'
+      - 'Fresh cranberries: frozen cranberries work without thawing in both sauces. If there are none at all, the agrodolce recipe gives a dried tart cherry version.'
+      - 'Fresh rosemary: 3 sprigs of fresh thyme in the agrodolce.'
+      - 'Cinnamon stick: a cassia stick works; steep it only 15 minutes, as the tres leches page says.'
       - 'Pomegranate: 80 g / ½ cup dried cranberries or dried tart cherries in the salad.'
       - 'Ripe Bosc pears: a crisp, sweet apple such as Honeycrisp, or a Fuyu persimmon, sliced thin.'
       - 'Baby arugula: watercress, or a mix of frisée and baby spinach.'
@@ -152,7 +153,6 @@ plan:
       - 'Goat cheese: crumbled feta or a mild blue.'
       - 'Rainbow carrots: orange carrots, or half carrots and half parsnips.'
       - 'Medium-grind cornmeal: medium-grind polenta, not instant.'
-      - 'Freeze-dried strawberries: leave them out and make extra compote, as the tres leches page says.'
       - 'Crème fraîche, if the home batch fails or there is no time: a store-bought tub, or sour cream for the same tang.'
       - 'Honeycrisp apples: Pink Lady, Braeburn, Jonagold or Gala. Keep the Granny Smith half.'
   - when: 'Using a backup'
@@ -165,22 +165,21 @@ plan:
       - 'Snapper (adds a pescatarian main): order two fish of 1.1 to 1.4 kg the week before, no longer than about 45 cm so both fit on a half sheet pan, and pick them up Wednesday. Cube the sourdough Wednesday and leave it out to stale. Make the stuffing Thursday morning and refrigerate it. At 3:15 pm salt the fish and refrigerate them on a rack. At 3:45 pm, once the carrots are out, rewarm the stuffing covered in its dish in the 220 °C oven to at least 60 °C. At 4:05 pm stuff the fish with the hot stuffing and roast them on the lower rack. The fish is done at 57 °C, and the stuffing in the cavity must reach 74 °C / 165 °F. With three dishes in the oven, everything takes about 5 minutes longer, so go by the thermometer and serve at about 5:10 pm.'
       - 'Salsa verde carrots, maple-cumin carrots or delicata squash (replace the garlic and thyme carrots): roast them in the carrots'' 2:50 to 3:30 pm slot. For the squash, make the hot honey and toast the pepitas on Tuesday.'
       - 'Sweet potato rolls (replace the bread): roast the sweet potato on Tuesday, then follow the Parker House schedule on Wednesday evening and Thursday morning. Take the butter for the honey butter out of the fridge 30 minutes before you beat it.'
-      - 'Plain tres leches or pumpkin Basque cheesecake (replace the strawberry tres leches): bake the tres leches on Wednesday on the same schedule, or the cheesecake on Tuesday or Wednesday; it keeps 4 days. Take the cheesecake out of the fridge 1 hour before dessert.'
+      - 'Strawberry tres leches or pumpkin Basque cheesecake (replace the tres leches): bake the strawberry version on Wednesday on the same schedule, making its compote first, or the cheesecake on Tuesday or Wednesday; it keeps 4 days. Take the cheesecake out of the fridge 1 hour before dessert.'
   - when: 'By Monday 23 November'
     items:
       - 'Order the smoked pork shoulder for Wednesday pickup.'
       - 'Start the crème fraîche. It cultures 18 to 36 hours on the counter, then needs at least 12 hours in the fridge.'
-      - 'Make the cranberry mostarda (up to a week ahead). It tastes best after 2 or 3 days.'
   - when: 'Tuesday 24 November'
     items:
       - 'Move the crème fraîche to the fridge once it is thick.'
-      - 'Make the cranberry-orange sauce and the pork vinegar sauce, and refrigerate both in jars.'
+      - 'Make the cranberry and shallot agrodolce, the cranberry-orange sauce and the pork vinegar sauce, and refrigerate them in jars. Wednesday also works for all three; each needs at least 4 hours in the fridge.'
       - 'Make the salad vinaigrette and toast the almonds.'
       - 'Toast the pecans, then make the crumble topping and keep it in the fridge.'
   - when: 'Wednesday 25 November'
     items:
       - 'Make the meatballs and the gravy. Cool them in shallow dishes and refrigerate them within 2 hours of cooking.'
-      - 'Make the strawberry compote, then bake the tres leches sponge, soak it, and refrigerate it overnight. Oven order: the meatballs first (they roast hot at 230 °C), then the cake at 175 °C.'
+      - 'Steep the cinnamon milk for the tres leches, then bake the sponge, soak it, and refrigerate it overnight. Oven order: the meatballs first (they roast hot at 230 °C), then the cake at 175 °C.'
       - 'Pick up the pork and refrigerate it within 2 hours.'
       - 'Rolls only: between 5:30 pm and midnight, make the roll dough, shape the rolls, and refrigerate them overnight under a fitted lid or an inverted sheet pan.'
   - when: 'Thanksgiving morning (dinner at 5 pm)'
@@ -192,7 +191,7 @@ plan:
     items:
       - 'Infuse the cream for the gratin.'
       - 'At 12:45, slice and assemble the gratin. Bake it at 190 °C / 375 °F, 40 minutes covered and 35 to 45 minutes uncovered, then rest it uncovered on the counter. It can wait up to 2 hours before it re-crisps.'
-      - 'While the gratin bakes, from about 1:00 pm, spread the cold compote on the tres leches, whip the strawberry cream, spread it on, and return the cake to the fridge. The topping holds up to 6 hours, which covers dessert.'
+      - 'While the gratin bakes, from about 1:00 pm, whip the crème fraîche cream for the tres leches, spread it on, and return the cake to the fridge. The topping holds up to 6 hours, which covers dessert.'
   - when: '2:40 to 3:45 pm'
     items:
       - 'Raise the oven to 220 °C / 425 °F with racks in the top and middle positions and the sheet pans inside. At about 2:50, roast the carrots 22 to 28 minutes, take them out at about 3:20 and toss them with the garlic oil. Hold them at room temperature.'
@@ -213,5 +212,5 @@ plan:
   - when: 'At dinner'
     items:
       - 'As everyone sits down, put the crumble into the 190 °C oven for 45 to 55 minutes, then rest it at least 15 minutes, so it is warm for dessert.'
-      - 'While the crumble rests, whip its crème fraîche cream. Serve the tres leches straight from the fridge, with the last of the strawberry powder dusted over it.'
+      - 'While the crumble rests, whip its crème fraîche cream. Serve the tres leches straight from the fridge, dusted with the ground cinnamon.'
 ---
