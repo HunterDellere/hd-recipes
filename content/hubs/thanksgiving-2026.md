@@ -70,8 +70,9 @@ members:
     note: 'Second sauce, option 3: a mild savory gravy for the pork, and for the gratin. 30 minutes, made up to 3 days ahead and reheated on a burner.'
   - slug: 'recipes/creme-fraiche'
     course: 'made at home'
+    backup: true
     label: 'Crème fraîche'
-    note: 'Made at home for the whipped cream on both desserts. Start it by Monday.'
+    note: 'Bought this year: one tub covers both desserts (120 g for the crumble cream, 120 g for the tres leches topping). Switch this on to make it at home instead; start it 3 days ahead.'
   - slug: 'recipes/cider-glazed-baby-back-ribs'
     course: 'backup main'
     backup: true
@@ -142,7 +143,7 @@ plan:
     items:
       - 'Order the pork today or Monday: 1.4 kg / 3 lb of pulled smoked pork shoulder, unsauced, with the bark mixed in and the juices in the container. Barbecue restaurants take holiday orders days ahead and many sell out. Pick it up on Wednesday.'
       - 'Buy ground turkey from thigh meat or an 85/15 or 93/7 blend. Avoid 99% lean breast, which stays dry even with the gelatin.'
-      - 'Buy the cream for the crème fraîche as pasteurized, not ultra-pasteurized, if your store has it, and check that the buttermilk says "live cultures".'
+      - 'Crème fraîche is bought this year: you need 240 g / 1 cup, 120 g for each dessert.'
       - 'For the tres leches, buy a cinnamon stick for the soak, Ceylon (canela) if your store has it. '
   - when: 'For 6 adults and a child'
     items:
@@ -163,7 +164,7 @@ plan:
       - 'Goat cheese: crumbled feta or a mild blue.'
       - 'Rainbow carrots: orange carrots, or half carrots and half parsnips.'
       - 'Medium-grind cornmeal: medium-grind polenta, not instant.'
-      - 'Crème fraîche, if the home batch fails or there is no time: a store-bought tub, or sour cream for the same tang.'
+      - 'Crème fraîche: sour cream for the same tang, or extra heavy cream for a plain topping.'
       - 'Honeycrisp apples: Pink Lady, Braeburn, Jonagold or Gala. Keep the Granny Smith half.'
   - when: 'Using a backup'
     items:
@@ -179,10 +180,8 @@ plan:
   - when: 'By Monday 23 November'
     items:
       - 'Order the smoked pork shoulder for Wednesday pickup.'
-      - 'Start the crème fraîche. It cultures 18 to 36 hours on the counter, then needs at least 12 hours in the fridge.'
   - when: 'Tuesday 24 November'
     items:
-      - 'Move the crème fraîche to the fridge once it is thick.'
       - 'Make the cranberry-orange sauce, the pork vinegar sauce and the second sauce if you choose one, and refrigerate them in jars. The cranberry sauce needs at least 4 hours in the fridge to set.'
       - 'Make the salad vinaigrette and toast the almonds.'
       - 'Toast the pecans, then make the crumble topping and keep it in the fridge.'
