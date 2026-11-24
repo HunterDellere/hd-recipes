@@ -80,8 +80,8 @@ modifications:
     kind: 'occasion'
 
 pairings:
-  - recipe: 'recipes/cranberry-mostarda'
-    reason: 'The mostarda is sharp and mustard-hot, this sauce is sweet and mild; put both on the table and guests choose.'
+  - recipe: 'recipes/tart-cherry-sauce'
+    reason: 'The cherry is rounder and sweeter, the cranberry tarter; put both on the table and guests choose.'
   - recipe: 'recipes/turkey-and-sage-meatballs-with-brown-butter-gravy'
     reason: 'Cranberry and sage gravy are the pairing a Thanksgiving table expects.'
 
